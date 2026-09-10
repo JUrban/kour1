@@ -1,0 +1,228 @@
+{
+  "completed_utc": "2026-09-10T21:43:21.559809+00:00",
+  "scope": "All positive words on two generators of lengths 1 through 36, modulo cyclic rotation; pairs at different lengths cannot be trace-equivalent by exponent sums.",
+  "dimension": 3,
+  "modulus": 2147483647,
+  "total_necklaces": 3933931043,
+  "candidate_pairs": 0,
+  "source_sha256": "46562bf21f299225317f232a6635522549647a38bd6bc8ad3cb4edae36fb7867",
+  "by_length": [
+    {
+      "length": 1,
+      "necklaces": 2,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 2,
+      "necklaces": 3,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 3,
+      "necklaces": 4,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 4,
+      "necklaces": 6,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 5,
+      "necklaces": 8,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 6,
+      "necklaces": 14,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 7,
+      "necklaces": 20,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 8,
+      "necklaces": 36,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 9,
+      "necklaces": 60,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 10,
+      "necklaces": 108,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 11,
+      "necklaces": 188,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 12,
+      "necklaces": 352,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 13,
+      "necklaces": 632,
+      "candidate_pairs": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "length": 14,
+      "necklaces": 1182,
+      "candidate_pairs": 0,
+      "elapsed_ms": 1
+    },
+    {
+      "length": 15,
+      "necklaces": 2192,
+      "candidate_pairs": 0,
+      "elapsed_ms": 1
+    },
+    {
+      "length": 16,
+      "necklaces": 4116,
+      "candidate_pairs": 0,
+      "elapsed_ms": 1
+    },
+    {
+      "length": 17,
+      "necklaces": 7712,
+      "candidate_pairs": 0,
+      "elapsed_ms": 6
+    },
+    {
+      "length": 18,
+      "necklaces": 14602,
+      "candidate_pairs": 0,
+      "elapsed_ms": 9
+    },
+    {
+      "length": 19,
+      "necklaces": 27596,
+      "candidate_pairs": 0,
+      "elapsed_ms": 10
+    },
+    {
+      "length": 20,
+      "necklaces": 52488,
+      "candidate_pairs": 0,
+      "elapsed_ms": 14
+    },
+    {
+      "length": 21,
+      "necklaces": 99880,
+      "candidate_pairs": 0,
+      "elapsed_ms": 41
+    },
+    {
+      "length": 22,
+      "necklaces": 190746,
+      "candidate_pairs": 0,
+      "elapsed_ms": 65
+    },
+    {
+      "length": 23,
+      "necklaces": 364724,
+      "candidate_pairs": 0,
+      "elapsed_ms": 112
+    },
+    {
+      "length": 24,
+      "necklaces": 699252,
+      "candidate_pairs": 0,
+      "elapsed_ms": 204
+    },
+    {
+      "length": 25,
+      "necklaces": 1342184,
+      "candidate_pairs": 0,
+      "elapsed_ms": 386
+    },
+    {
+      "length": 26,
+      "necklaces": 2581428,
+      "candidate_pairs": 0,
+      "elapsed_ms": 738
+    },
+    {
+      "length": 27,
+      "necklaces": 4971068,
+      "candidate_pairs": 0,
+      "elapsed_ms": 1409
+    },
+    {
+      "length": 28,
+      "necklaces": 9587580,
+      "candidate_pairs": 0,
+      "elapsed_ms": 2720
+    },
+    {
+      "length": 29,
+      "necklaces": 18512792,
+      "candidate_pairs": 0,
+      "elapsed_ms": 5223
+    },
+    {
+      "length": 30,
+      "necklaces": 35792568,
+      "candidate_pairs": 0,
+      "elapsed_ms": 10061
+    },
+    {
+      "length": 31,
+      "necklaces": 69273668,
+      "candidate_pairs": 0,
+      "elapsed_ms": 20516
+    },
+    {
+      "length": 32,
+      "necklaces": 134219796,
+      "candidate_pairs": 0,
+      "elapsed_ms": 40279
+    },
+    {
+      "length": 33,
+      "necklaces": 260301176,
+      "candidate_pairs": 0,
+      "elapsed_ms": 80332
+    },
+    {
+      "length": 34,
+      "necklaces": 505294128,
+      "candidate_pairs": 0,
+      "elapsed_ms": 152338
+    },
+    {
+      "length": 35,
+      "necklaces": 981706832,
+      "candidate_pairs": 0,
+      "elapsed_ms": 311566
+    },
+    {
+      "length": 36,
+      "necklaces": 1908881900,
+      "candidate_pairs": 0,
+      "elapsed_ms": 602801
+    }
+  ],
+  "conclusion": "No distinct cyclic representatives have the same trace under both fixed invertible matrix evaluations. Bounded computational exclusion, not a solution to 18.43."
+}

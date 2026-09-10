@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T21:42:35Z",
+  "observed_utc": "2026-09-10T21:43:21.559809+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -36,9 +36,7 @@
       "task": "18.43 positive trace words",
       "command": "bin/search_18_43 n for n=1..36",
       "output": "results/18.43-length*.log",
-      "pid": 4629,
-      "tool_session": 83410,
-      "last_observed_status": "Lengths 1..35 complete with no collision. Length 36 enumerated 1908881900 necklaces and was sorting at last process observation."
+      "last_observed_status": "completed: lengths 1..36, 3933931043 necklaces, no collision"
     },
     {
       "task": "21.52 and 21.53 involution graphs",
