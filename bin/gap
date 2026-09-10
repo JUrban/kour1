@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+exec "$project_root/gap-4.16.1/gap" -l "$project_root/gap-4.16.1" -q -b -T -m 128m -o 4g "$@"
