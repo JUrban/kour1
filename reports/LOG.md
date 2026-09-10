@@ -163,3 +163,19 @@ was launched. OR-Tools 9.15.6755 installed locally with dependency versions
 recorded. The 192--255 endomorphism block completed: 2571 groups,133 abelian,
 zero equality hits,two reverse inequalities (coprime extensions of the
 order64 examples). The order128 worker remains live.
+
+At 2026-09-10T23:00:47.099415+00:00, completed a fourth candidate resolution,21.68.
+The group B semidirect (E semidirect A4) has order2592 and an explicit
+semi-abelian chain. Its degree8 irreducible character is nonmonomial by
+an index2 obstruction in Q8 semidirect C3. GAP's complete monomiality
+test returns false. Independent Python verifies all9216 base products,
+576 quaternion representation products,9216 coset action products,and
+2592 exact induced-character values with norm1. Proof and internal audit
+are complete; novelty search and outside review remain. The order96 base
+and its SL2(3) subgroup are explicitly credited to Kida's published paper.
+
+The final19.20 block also completed:2328 groups at128,15 abelian controls,
+zero equality hits,and50 reverse inequalities. Total through255 is7011
+nontrivial groups,493 abelian controls,6518 nonabelian groups,and54 reverse
+inequalities. Every DONE marker and absence of errors was checked.
+No nonabelian equality counterexample was found.

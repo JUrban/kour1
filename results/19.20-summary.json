@@ -1,5 +1,6 @@
 {
-  "observed_utc": "2026-09-10T22:49:41.240858+00:00",
+  "observed_utc": "2026-09-10T23:00:47.099415+00:00",
+  "status": "complete through order255, excluding trivial group",
   "completed_blocks": [
     {
       "low": 2,
@@ -18,6 +19,14 @@
       "reverse_inequalities": 2
     },
     {
+      "low": 128,
+      "high": 128,
+      "checked": 2328,
+      "abelian": 15,
+      "equality_hits": 0,
+      "reverse_inequalities": 50
+    },
+    {
       "low": 129,
       "high": 191,
       "checked": 845,
@@ -34,15 +43,442 @@
       "reverse_inequalities": 2
     }
   ],
-  "completed_groups": 4683,
-  "status": "only order128 running",
-  "certified_stronger_counterexample": {
-    "group_id": [
-      64,
-      264
-    ],
-    "endomorphisms": 6074368,
-    "partial_isomorphisms": 3277312
-  },
-  "scope": "Stronger inequality is false; no equality counterexample to 19.20 found so far."
+  "completed_groups": 7011,
+  "abelian_equality_controls": 493,
+  "nonabelian_equality_hits": 0,
+  "reverse_inequalities": [
+    {
+      "group_id": [
+        64,
+        263
+      ],
+      "endomorphisms": 3276800,
+      "partial_isomorphisms": 1970176
+    },
+    {
+      "group_id": [
+        64,
+        264
+      ],
+      "endomorphisms": 6074368,
+      "partial_isomorphisms": 3277312
+    },
+    {
+      "group_id": [
+        128,
+        2156
+      ],
+      "endomorphisms": 13107200,
+      "partial_isomorphisms": 11436032
+    },
+    {
+      "group_id": [
+        128,
+        2159
+      ],
+      "endomorphisms": 12713984,
+      "partial_isomorphisms": 9338880
+    },
+    {
+      "group_id": [
+        128,
+        2160
+      ],
+      "endomorphisms": 7012352,
+      "partial_isomorphisms": 5001216
+    },
+    {
+      "group_id": [
+        128,
+        2161
+      ],
+      "endomorphisms": 12713984,
+      "partial_isomorphisms": 8188928
+    },
+    {
+      "group_id": [
+        128,
+        2186
+      ],
+      "endomorphisms": 3145728,
+      "partial_isomorphisms": 2867200
+    },
+    {
+      "group_id": [
+        128,
+        2191
+      ],
+      "endomorphisms": 4120576,
+      "partial_isomorphisms": 3095552
+    },
+    {
+      "group_id": [
+        128,
+        2192
+      ],
+      "endomorphisms": 2236416,
+      "partial_isomorphisms": 1893376
+    },
+    {
+      "group_id": [
+        128,
+        2207
+      ],
+      "endomorphisms": 2168832,
+      "partial_isomorphisms": 1753600
+    },
+    {
+      "group_id": [
+        128,
+        2213
+      ],
+      "endomorphisms": 4153344,
+      "partial_isomorphisms": 3346432
+    },
+    {
+      "group_id": [
+        128,
+        2217
+      ],
+      "endomorphisms": 7733248,
+      "partial_isomorphisms": 7665664
+    },
+    {
+      "group_id": [
+        128,
+        2223
+      ],
+      "endomorphisms": 3088384,
+      "partial_isomorphisms": 1789952
+    },
+    {
+      "group_id": [
+        128,
+        2226
+      ],
+      "endomorphisms": 3178496,
+      "partial_isomorphisms": 1972736
+    },
+    {
+      "group_id": [
+        128,
+        2237
+      ],
+      "endomorphisms": 4112384,
+      "partial_isomorphisms": 2550784
+    },
+    {
+      "group_id": [
+        128,
+        2238
+      ],
+      "endomorphisms": 2236416,
+      "partial_isomorphisms": 1905664
+    },
+    {
+      "group_id": [
+        128,
+        2240
+      ],
+      "endomorphisms": 4231168,
+      "partial_isomorphisms": 3437056
+    },
+    {
+      "group_id": [
+        128,
+        2242
+      ],
+      "endomorphisms": 2142208,
+      "partial_isomorphisms": 1425920
+    },
+    {
+      "group_id": [
+        128,
+        2245
+      ],
+      "endomorphisms": 4116480,
+      "partial_isomorphisms": 2513408
+    },
+    {
+      "group_id": [
+        128,
+        2246
+      ],
+      "endomorphisms": 4118528,
+      "partial_isomorphisms": 2411008
+    },
+    {
+      "group_id": [
+        128,
+        2251
+      ],
+      "endomorphisms": 6092800,
+      "partial_isomorphisms": 4550656
+    },
+    {
+      "group_id": [
+        128,
+        2252
+      ],
+      "endomorphisms": 2156544,
+      "partial_isomorphisms": 1808384
+    },
+    {
+      "group_id": [
+        128,
+        2253
+      ],
+      "endomorphisms": 2142208,
+      "partial_isomorphisms": 1269760
+    },
+    {
+      "group_id": [
+        128,
+        2259
+      ],
+      "endomorphisms": 4227072,
+      "partial_isomorphisms": 4087808
+    },
+    {
+      "group_id": [
+        128,
+        2261
+      ],
+      "endomorphisms": 2203648,
+      "partial_isomorphisms": 1777664
+    },
+    {
+      "group_id": [
+        128,
+        2265
+      ],
+      "endomorphisms": 3145728,
+      "partial_isomorphisms": 1757696
+    },
+    {
+      "group_id": [
+        128,
+        2266
+      ],
+      "endomorphisms": 6066176,
+      "partial_isomorphisms": 4112896
+    },
+    {
+      "group_id": [
+        128,
+        2267
+      ],
+      "endomorphisms": 2129920,
+      "partial_isomorphisms": 1464832
+    },
+    {
+      "group_id": [
+        128,
+        2268
+      ],
+      "endomorphisms": 3147776,
+      "partial_isomorphisms": 2241024
+    },
+    {
+      "group_id": [
+        128,
+        2269
+      ],
+      "endomorphisms": 8992768,
+      "partial_isomorphisms": 8839680
+    },
+    {
+      "group_id": [
+        128,
+        2272
+      ],
+      "endomorphisms": 3147776,
+      "partial_isomorphisms": 1876480
+    },
+    {
+      "group_id": [
+        128,
+        2274
+      ],
+      "endomorphisms": 5113856,
+      "partial_isomorphisms": 3376640
+    },
+    {
+      "group_id": [
+        128,
+        2275
+      ],
+      "endomorphisms": 8040448,
+      "partial_isomorphisms": 7585792
+    },
+    {
+      "group_id": [
+        128,
+        2277
+      ],
+      "endomorphisms": 4100096,
+      "partial_isomorphisms": 2172928
+    },
+    {
+      "group_id": [
+        128,
+        2278
+      ],
+      "endomorphisms": 4163584,
+      "partial_isomorphisms": 2878464
+    },
+    {
+      "group_id": [
+        128,
+        2281
+      ],
+      "endomorphisms": 8081408,
+      "partial_isomorphisms": 7841792
+    },
+    {
+      "group_id": [
+        128,
+        2283
+      ],
+      "endomorphisms": 2195456,
+      "partial_isomorphisms": 1449984
+    },
+    {
+      "group_id": [
+        128,
+        2290
+      ],
+      "endomorphisms": 6068224,
+      "partial_isomorphisms": 4016128
+    },
+    {
+      "group_id": [
+        128,
+        2292
+      ],
+      "endomorphisms": 3145728,
+      "partial_isomorphisms": 1702912
+    },
+    {
+      "group_id": [
+        128,
+        2293
+      ],
+      "endomorphisms": 2131968,
+      "partial_isomorphisms": 1662976
+    },
+    {
+      "group_id": [
+        128,
+        2294
+      ],
+      "endomorphisms": 2193408,
+      "partial_isomorphisms": 1428480
+    },
+    {
+      "group_id": [
+        128,
+        2296
+      ],
+      "endomorphisms": 1114112,
+      "partial_isomorphisms": 1088512
+    },
+    {
+      "group_id": [
+        128,
+        2298
+      ],
+      "endomorphisms": 1176576,
+      "partial_isomorphisms": 970752
+    },
+    {
+      "group_id": [
+        128,
+        2300
+      ],
+      "endomorphisms": 2134016,
+      "partial_isomorphisms": 1286144
+    },
+    {
+      "group_id": [
+        128,
+        2303
+      ],
+      "endomorphisms": 6553600,
+      "partial_isomorphisms": 4739072
+    },
+    {
+      "group_id": [
+        128,
+        2304
+      ],
+      "endomorphisms": 6258688,
+      "partial_isomorphisms": 3821568
+    },
+    {
+      "group_id": [
+        128,
+        2314
+      ],
+      "endomorphisms": 6656000,
+      "partial_isomorphisms": 6170752
+    },
+    {
+      "group_id": [
+        128,
+        2317
+      ],
+      "endomorphisms": 7003136,
+      "partial_isomorphisms": 6478848
+    },
+    {
+      "group_id": [
+        128,
+        2322
+      ],
+      "endomorphisms": 3288334336,
+      "partial_isomorphisms": 1057488896
+    },
+    {
+      "group_id": [
+        128,
+        2323
+      ],
+      "endomorphisms": 6311378944,
+      "partial_isomorphisms": 1563901952
+    },
+    {
+      "group_id": [
+        128,
+        2325
+      ],
+      "endomorphisms": 246808576,
+      "partial_isomorphisms": 240177152
+    },
+    {
+      "group_id": [
+        128,
+        2326
+      ],
+      "endomorphisms": 478941184,
+      "partial_isomorphisms": 313833984
+    },
+    {
+      "group_id": [
+        192,
+        1533
+      ],
+      "endomorphisms": 9830400,
+      "partial_isomorphisms": 5910528
+    },
+    {
+      "group_id": [
+        192,
+        1534
+      ],
+      "endomorphisms": 18223104,
+      "partial_isomorphisms": 9831936
+    }
+  ],
+  "scope": "No equality counterexample through255. Reverse inequalities disprove only the stronger conjecture; group64,264 independently certified."
 }

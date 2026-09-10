@@ -1,12 +1,12 @@
 # Current status
 
-Updated: 2026-09-10T22:49:41.240858+00:00.
+Updated: 2026-09-10T23:00:47.099415+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
-- Complete candidate resolutions: **3**: **21.106** (negative), **21.132** (construction for every prime), and **21.121(a)** (infimum not attained at p=2). All await outside review and further novelty checks.
+- Complete candidate resolutions: **4**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), and **21.68** (semi-abelian non-monomial group of order2592). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- The 21.26 Sylow-intersection search has completed through order 2000. Revalidate the remaining 19.20 worker handles in `state/jobs.json` before relying on liveness.
-- Also running: 19.20 endomorphism/partial-isomorphism counts through order 255. The published range through 63 has been reproduced: 318 groups, including 105 abelian equality controls and 213 nonabelian strict inequalities. Four blocks have now completed (2--127 and 129--255): 4,683 groups, no nonabelian equality. Only order 128 is still running.
+- Both the 21.26 Sylow-intersection search through order2000 and the 19.20 counting search through order255 have completed. No GAP search worker remains live.
+- **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
@@ -16,6 +16,8 @@ Updated: 2026-09-10T22:49:41.240858+00:00.
 **21.132:** Starting from a graded Golod nil algebra, remove the homogeneous ideal of elements annihilated by a sufficiently high algebra power. A triangular extension has zero centre and preserves a grading with finite-dimensional pieces. Its three-generated adjoint subgroup is infinite, centreless, and residually a finite p-group. Adjoining a one-dimensional zero algebra gives a four-generated Golod group with centre C_p. Proof: `research/21.132-proof.md`; audit: `research/21.132-review.md`. The exact Notebook statement permits the final direct factor. The older centreless construction has been compared; broader novelty work remains.
 
 **21.121(a):** A free product of central quotients of (Q_8 semidirect C_3) powers has 2-Jordan exponent log(24)/log(8), with no bound at the infimum. A binary simplex-code lemma controls every subgroup, giving a uniform bound for each larger exponent. Proof and audit: `research/21.121a-proof.md` and `research/21.121a-review.md`. Exact checks passed on all 11,781 subgroups of the second finite group, plus independent code and quaternion controls. Part (b) remains unresolved.
+
+**21.68:** G=B semidirect K, where K=E semidirect A4 has order96 and contains H=Q8 semidirect C3 of index4. B is the three-dimensional F3 augmentation module on K/H. The explicit abelian extension chain makes G semi-abelian. A degree8 irreducible character would, if monomial, force an index2 subgroup in H, contradicting H_ab=C3. GAP and independent rational quaternion/cyclotomic computations pass. See `research/21.68-proof.md` and `research/21.68-review.md`.
 
 ## Completed bounded searches
 
@@ -65,8 +67,8 @@ as a substantive new resolution of the intended problem.
 ## Next work
 
 1. Revalidate running jobs and certify any hits.
-2. Continue novelty and mathematical audits of all three candidate resolutions. The 2013 Timofeenko source has now been inspected.
-3. Finish the 19.20 search and investigate the equality question, using the verified reverse inequality as a structural lead.
+2. Continue novelty and mathematical audits of all four candidate resolutions.
+3. Investigate 19.20 equality beyond the completed range, using the verified reverse inequality as a structural lead.
 4. Expand beyond the initial involution graph range and continue surveying older problems.
 
 Deadline: **2026-09-12 20:56:46 UTC**. The 48-hour goal remains active. No external messages, submissions, or Git pushes have been made.

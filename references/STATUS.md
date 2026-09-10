@@ -36,7 +36,7 @@ Official page: https://kourovkanotebookorg.wordpress.com/ . Latest posted update
   pages read; the finite-group argument checked. It resolves the problem
   in full. Our special-case work is excluded; the prepared search was
   archived before a group search began. See `research/21.115-literature-audit.md`.
-- W. van Doorn, E. Judin, P. Monticone, D. Morrison, *On Some Problems from the Kourovka Notebook*, https://arxiv.org/abs/2607.17477 . Eight previously published resolutions; the supplied PDF already cites this work for several entries. Exact older problem identifiers still need extraction before surveying those issues.
+- W. van Doorn, E. Judin, P. Monticone, D. Morrison, *On Some Problems from the Kourovka Notebook*, https://arxiv.org/abs/2607.17477 . Its introduction lists eight resolutions: 3.46, 18.50, 19.25, 20.125, 21.8, 21.24, 21.147, and 21.150. All are excluded. None overlaps the four current candidate resolutions. The supplied PDF already cites this work for several entries.
 - V. Ionin, A. Semidetnov, *On Some More Problems from the Kourovka Notebook*, https://arxiv.org/abs/2608.29219v1 . Downloaded and inspected the introduction and numbered questions. Addresses Notebook 14.85, 19.94, 16.11, 17.47, and 17.32, plus three questions from other sources. These are excluded from our novelty shortlist. This is a claimed-resolution screen, not an independent audit of that paper's proofs.
 - I. Chinyere, *On the non-existence of finite groups with certain normal subgroups*, https://arxiv.org/abs/2601.01080 . Claims a negative resolution of 20.21. Excluded from new targets; abstract checked, proof not yet audited.
 - S. Kalithasan, V. Z. Thomas, *On the decidability of the integrability of finite groups*, https://arxiv.org/abs/2602.18829v1 . Proves decidability, the principal part of 21.32. Downloaded and inspected main theorem. Our independently found pullback proof is retained as a rediscovery, not a new resolution.
@@ -143,3 +143,15 @@ order64, counterexample, and the exact counts located no earlier example.
 The scope of these searches does not establish priority. The author's
 publication list confirms the final citation as Semigroup Forum111 (2025),
 538--539; the full primary paper had already been read.
+
+## Problem21.68
+
+Kida, *On semiabelian groups*, J.Group Theory28(2025),697--712,
+https://doi.org/10.1515/jgth-2024-0010 , full published copy downloaded
+from https://d-nb.info/1364524341/34 . Read Conjecture1.3, Definition2.1,
+Lemmas2.3--2.7, and Example5.5. The paper explicitly supplies the
+order96 semi-abelian group containing SL2(3); that ingredient is known.
+Our proposed new step is the abelian extension of order2592 with a
+non-monomial degree8 character. The supplied statement on PDF page177
+was visually checked. Targeted queries found no primary prior resolution,
+but this does not establish priority. See the proof and review files.
