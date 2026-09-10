@@ -5,13 +5,13 @@ Updated 2026-09-10 21:07 UTC. This is a research triage list, not an assertion t
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
 | 21.106 | Define a central generator up to inversion in H(Z) using first-order centralizer conditions. | Candidate complete negative solution committed; published-source version confirms question remains posed. Audit and refine manuscript. |
-| 21.113(a) | Recover Psi from fibers of the p'-part map using character-table power maps; decompose exactly into irreducibles. | Searching all 2,750 CTblLib ordinary tables. A negative coefficient yields a candidate counterexample; a non-hit is bounded evidence only. |
-| 21.113(b) | Test the same class function against projective indecomposable characters when decomposition matrices exist. | Follow (a) unless a counterexample already resolves the question. |
-| 21.99 | Test all orbital relations using conjugacy-class representatives whose fixed-point count differs from one. | Exact transitive-group search for degrees 2–20. Rank-two groups are settled by the derangement theorem. |
+| 21.113(a) | Recover Psi from fibers of the p'-part map using character-table power maps; decompose exactly into irreducibles. | Complete: 2,750 ordinary tables, 9,850 table/prime cases, zero skips, zero counterexamples. Bounded evidence only. |
+| 21.113(b) | Test the same class function against projective indecomposable characters when decomposition matrices exist. | Running on available Brauer tables; reconstruct ordinary coefficients to check duality calculations. |
+| 21.99 | Test all orbital relations using conjugacy-class representatives whose fixed-point count differs from one. | Complete: all 4,722 transitive groups of degrees 2–20 satisfy it. Full-element validation on 86 groups of degrees 2–8 agrees. |
 | 21.26 | Intersect conjugates of the allowed-conjugator sets for the Sylow subgroups. | Design exact inclusion-minimal intersection predicate; do not replace inclusion-minimal by minimum cardinality without proof. |
 | 21.89 | Search n with p(n) dividing n!, using recurrence and smoothness/divisibility certificates. | Deprioritized: OEIS reports exhaustive checking through two million. Small searches would duplicate known work. |
 | 21.52–53 | Automorphism groups of involution class graphs, comparing order colors and selected colors. | Potential finite graph counterexamples; small simple groups and exceptional outer automorphisms first. |
-| 21.59(a), 21.135 | Compare multisets of ordinary character degrees with multiplicity. | Table-level collision search, then construct actual groups and audit radical conditions. |
+| 21.59(a), 21.135 | Compare multisets of ordinary character degrees with multiplicity. | Complete table screen: 106 collisions, all between entries marked almost simple. Mostly apparent duplicates; no actual counterexample established. |
 | 21.132 | Finite centre in finitely generated residually finite torsion p-groups. | Apparent direct-product construction from centreless examples; inspect Golod-construction requirement and intended scope before claiming anything. |
 | 21.130 | Rainbow Hamiltonian cycles in the sum coloring of odd abelian groups. | Finite subset search possible, but avoid highly symmetric cases already checked in literature. |
 

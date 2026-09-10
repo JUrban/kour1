@@ -1,32 +1,36 @@
 {
-  "observed_utc": "2026-09-10T21:18:00Z",
+  "observed_utc": "2026-09-10T21:21:00Z",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
       "task": "21.113(a) character-table search",
-      "pid": 2940,
-      "tool_session": 99084,
       "command": "./bin/gap scripts/search_21_113.g",
       "output": "results/21.113-character-tables.log",
-      "last_observed_status": "running"
+      "last_observed_status": "completed: 2750 tables, 9850 cases, zero skips, no counterexample"
     },
     {
       "task": "21.59(a)/21.135 character-degree collisions",
-      "pid": 3157,
-      "tool_session": 76236,
       "command": "./bin/gap scripts/search_degree_collisions.g",
       "output": "results/degree-collisions.log",
-      "last_observed_status": "running"
+      "last_observed_status": "completed: 2750 tables, 106 candidate collisions, no established counterexample"
     },
     {
-      "task": "21.99 degrees 2–20",
+      "task": "21.99 degrees 2\u201320",
       "output": "results/21.99-transitive.log",
       "last_observed_status": "completed: 4631 orbital checks + 91 rank-two cases; no counterexample"
     },
     {
       "task": "21.99 independent verification",
       "output": "results/21.99-verification.txt",
-      "last_observed_status": "completed: 86 groups of degrees 2–8; all matched"
+      "last_observed_status": "completed: 86 groups of degrees 2\u20138; all matched"
+    },
+    {
+      "task": "21.113(b) projective-character search",
+      "pid": 3636,
+      "tool_session": 77773,
+      "command": "./bin/gap scripts/search_21_113_projective.g",
+      "output": "results/21.113-projective.log",
+      "last_observed_status": "running"
     }
   ]
 }
