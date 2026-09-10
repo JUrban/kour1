@@ -32,3 +32,42 @@ The deposited published Conte–Petschick version was also inspected: Question 1
 Searches on 10 September 2026 included combinations of `21.106`, `Kourovka`, `Petschick`, `concise formula`, `first-order conciseness`, and `Heisenberg`. No primary-source solution was located. A secondary problem directory also labels it open, but is not used to establish mathematical status.
 
 The Heisenberg construction in `research/21.106-proof.md` was developed during this session before reading the detailed Conte–Petschick proofs. Its use of alternating quantifiers is compatible with their positive results. No external submission, message, or priority claim has been made.
+
+## Problem 21.132
+
+The exact statement was visually checked on supplied PDF page 187. A complete
+candidate construction is now in `research/21.132-proof.md`.
+
+- M. Ershov, *Golod–Shafarevich groups: a survey*, https://arxiv.org/abs/1206.0490 .
+  Downloaded and read Theorems 2.1 and 2.4, including the countable-field homogeneous
+  nil-algebra construction. This supports the starting algebra; subsequent
+  annihilator and triangular-algebra arguments are given in our proof.
+- V. A. Sereda, A. I. Sozutov, *Associative Nil-Algebras and Golod Groups*,
+  https://doi.org/10.1007/s10469-006-0012-9 . Read the Russian original, especially
+  Theorem 1 and its proof, from https://m.mathnet.ru/php/getFT.phtml?jrnid=al&option_lang=eng&paperid=144&what=fullt .
+  They obtain a centreless Golod quotient via the Levitzki radical. The theorem
+  does not assert residual finiteness of this quotient. No such assertion is
+  assumed in our proof.
+- The associated short note, https://doi.org/10.1007/s11006-006-0121-8 , was located
+  but its full text has not yet been inspected. One download endpoint returned 403;
+  the mobile Math-Net endpoint successfully supplied the longer paper above.
+- The 2013 Timofeenko paper cited in the question is *Finite systems of generators
+  of infinite subgroups of the Golod group*, DOI 10.1515/dma-2013-034. Full text
+  still needs inspection.
+
+Searches for the exact problem number, Golod groups with finite centre, and
+nil-algebra annihilator/residual-finiteness constructions found no explicit
+resolution. This is not a proof of novelty; in particular older homogeneous
+radical results or an elementary consequence of a known centreless example may
+already give the requested construction.
+
+## Problem 18.43
+
+Read Section 4.3 of Lawton–Louder–McReynolds, *Decision problems, complexity,
+traces, and representations*, Groups Geom. Dyn. 11 (2017), 165–188,
+https://doi.org/10.4171/GGD/393 , accessible at
+https://ems.press/content/serial-article-files/29814?nt=1 . Its length-20 computation
+is mentioned in the discussion of positive trace-equivalent pairs; implementation
+details are insufficient to infer broader coverage. Our reported scope is
+explicitly positive words only. Their displayed dimension-two example also serves
+as an independent known-identity control for the code.

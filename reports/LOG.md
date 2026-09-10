@@ -37,3 +37,17 @@ Resource use at last inspection: two running GAP search processes, about one CPU
 The improved 21.113(a) search completed: 2,750 ordinary tables, 9,850 table/prime pairs, no skips and no counterexample. Started the (b) projectivity screen using Brauer/projective duality; for every available modular table it reconstructs the ordinary character multiplicities through the decomposition matrix as a separate consistency check. The A5 characteristic-2 smoke check gives PIM multiplicities [1,0,0,1].
 
 The degree-multiset screen also completed: 106 collisions involving almost-simple tables, all between entries marked almost simple. Preliminary name inspection shows mostly alternative table names or embeddings of the same familiar groups. The primed orthogonal/unitary tables merit a metadata check. No collision is currently counted as a counterexample.
+
+## 2026-09-10, 21:21–21:42 UTC
+
+Validated C++ positive-necklace enumeration and exact modular trace fingerprints for 18.43 against independent Python enumeration and matrix products: 1,602 evaluations in dimensions 2 and 3, lengths 1–12, all passed. The symbolic checker recovers a known GL2 identity and distinguishes the same pair in GL3. Searches at lengths 1–35 completed without collision; length 36 enumerated 1,908,881,900 necklaces and is sorting. At peak planning, six single-threaded workers needed at most about 62 GB of array storage. Last observed usage was one C++ worker at about 30 GB plus the GAP jobs.
+
+Wrote the elementary equivalence of the GL3 and SL3 subquestions via exponent sums and scalar normalization. The negative computation remains limited to positive words.
+
+Built and completed the first involution-class graph search for 21.52–53. During the write-up, detected that normalizing the inner permutation action is only a necessary condition for inducing the required group automorphism. Preserved the initial log, strengthened the test to construct and validate an actual automorphism on all class elements, and repeated the range. The strengthened run finished 27 group entries, 28 classes, one explicit size-cutoff skip, zero hits for either problem.
+
+Checked the primed orthogonal and unitary degree-collision metadata. These encode alternate tables/fusion maps, not new abstract groups. No nonisomorphic collision established.
+
+Developed a second complete candidate solution, for 21.132: an at most four-generated infinite residually p-finite Golod group with centre C_p for every prime p. The substantive step is a homogeneous annihilator quotient followed by a triangular nil-algebra extension with zero centre. Wrote the full argument and a requirement-by-requirement internal audit. Verified the statement visually on PDF page 187. Read the graded Golod construction in Ershov's survey and the cited Sereda–Sozutov 2006 centreless quotient theorem. Their theorem uses a different radical quotient and does not assert residual finiteness for that quotient. Novelty remains under audit; no outside review has occurred.
+
+The 21.113(b) projectivity job continues with no observed hit. Every available Brauer-table case includes a decomposition-matrix reconstruction check. All work remains local, and the overall 48-hour research goal remains active.

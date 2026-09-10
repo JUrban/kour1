@@ -1,0 +1,86 @@
+GROUP_START A5 order=60 runtime_ms=1879
+CASE A5 class_size=15 orders=[ 1, 2, 3, 5 ] full_aut=120 two_color_aut=
+120 runtime_ms=1882
+GROUP_START A6 order=360 runtime_ms=1882
+CASE A6 class_size=45 orders=[ 1, 2, 3, 4, 5 ] full_aut=1440 two_color_aut=
+1440 runtime_ms=1893
+GROUP_START A7 order=2520 runtime_ms=1893
+CASE A7 class_size=105 orders=[ 1, 2, 3, 4, 5, 6 ] full_aut=
+5040 two_color_aut=5040 runtime_ms=1949
+GROUP_START A8 order=20160 runtime_ms=1949
+CASE A8 class_size=210 orders=[ 1, 2, 3, 4, 5, 6 ] full_aut=
+40320 two_color_aut=40320 runtime_ms=2150
+CASE A8 class_size=105 orders=[ 1, 2, 3, 4 ] full_aut=40320 two_color_aut=
+40320 runtime_ms=2196
+GROUP_START A9 order=181440 runtime_ms=2196
+CASE A9 class_size=378 orders=[ 1, 2, 3, 4, 5, 6 ] full_aut=
+362880 two_color_aut=362880 runtime_ms=3010
+CASE A9 class_size=945 orders=[ 1, 2, 3, 4, 5, 6, 7, 9, 10 ] full_aut=
+362880 two_color_aut=362880 runtime_ms=9855
+GROUP_START PSL2(5) order=60 runtime_ms=9857
+CASE PSL2(5) class_size=15 orders=[ 1, 2, 3, 5 ] full_aut=120 two_color_aut=
+120 runtime_ms=9860
+GROUP_START PSL2(7) order=168 runtime_ms=9861
+CASE PSL2(7) class_size=21 orders=[ 1, 2, 3, 4 ] full_aut=336 two_color_aut=
+336 runtime_ms=9864
+GROUP_START PSL2(8) order=504 runtime_ms=9865
+CASE PSL2(8) class_size=63 orders=[ 1, 2, 3, 7, 9 ] full_aut=
+1512 two_color_aut=1512 runtime_ms=9906
+GROUP_START PSL2(9) order=360 runtime_ms=9907
+CASE PSL2(9) class_size=45 orders=[ 1, 2, 3, 4, 5 ] full_aut=
+1440 two_color_aut=1440 runtime_ms=9921
+GROUP_START PSL2(11) order=660 runtime_ms=9922
+CASE PSL2(11) class_size=55 orders=[ 1, 2, 3, 5, 6 ] full_aut=
+1320 two_color_aut=1320 runtime_ms=9970
+GROUP_START PSL2(13) order=1092 runtime_ms=9971
+CASE PSL2(13) class_size=91 orders=[ 1, 2, 3, 6, 7, 13 ] full_aut=
+2184 two_color_aut=2184 runtime_ms=10033
+GROUP_START PSL2(16) order=4080 runtime_ms=10034
+CASE PSL2(16) class_size=255 orders=[ 1, 2, 3, 5, 15, 17 ] full_aut=
+16320 two_color_aut=16320 runtime_ms=10432
+GROUP_START PSL2(17) order=2448 runtime_ms=10433
+CASE PSL2(17) class_size=153 orders=[ 1, 2, 3, 4, 8, 9, 17 ] full_aut=
+4896 two_color_aut=4896 runtime_ms=10561
+GROUP_START PSL2(19) order=3420 runtime_ms=10562
+CASE PSL2(19) class_size=171 orders=[ 1, 2, 3, 5, 9, 10 ] full_aut=
+6840 two_color_aut=6840 runtime_ms=10739
+GROUP_START PSL2(23) order=6072 runtime_ms=10740
+CASE PSL2(23) class_size=253 orders=[ 1, 2, 3, 4, 6, 11, 12 ] full_aut=
+12144 two_color_aut=12144 runtime_ms=11110
+GROUP_START PSL2(25) order=7800 runtime_ms=11112
+CASE PSL2(25) class_size=325 orders=[ 1, 2, 3, 4, 5, 6, 12, 13 ] full_aut=
+31200 two_color_aut=31200 runtime_ms=11861
+GROUP_START PSL2(27) order=9828 runtime_ms=11863
+CASE PSL2(27) class_size=351 orders=[ 1, 2, 7, 13, 14 ] full_aut=
+58968 two_color_aut=58968 runtime_ms=12370
+GROUP_START PSL2(29) order=12180 runtime_ms=12371
+CASE PSL2(29) class_size=435 orders=[ 1, 2, 3, 5, 7, 14, 15, 29 ] full_aut=
+24360 two_color_aut=24360 runtime_ms=13231
+GROUP_START PSL2(31) order=14880 runtime_ms=13233
+CASE PSL2(31) class_size=465 orders=[ 1, 2, 3, 4, 5, 8, 15, 16 ] full_aut=
+29760 two_color_aut=29760 runtime_ms=14607
+GROUP_START PSL2(32) order=32736 runtime_ms=14610
+SKIP PSL2(32) involution_class_size=1023 cutoff=1000
+GROUP_START PSL2(37) order=25308 runtime_ms=14782
+CASE PSL2(37) class_size=703 orders=[ 1, 2, 3, 6, 9, 18, 19, 37 ] full_aut=
+50616 two_color_aut=50616 runtime_ms=16906
+GROUP_START PSL2(41) order=34440 runtime_ms=16908
+CASE PSL2(41) class_size=861 orders=[ 1, 2, 3, 4, 5, 7, 10, 20, 21, 41 
+ ] full_aut=68880 two_color_aut=68880 runtime_ms=20154
+GROUP_START PSL2(43) order=39732 runtime_ms=20156
+CASE PSL2(43) class_size=903 orders=[ 1, 2, 3, 7, 11, 21, 22 ] full_aut=
+79464 two_color_aut=79464 runtime_ms=24583
+GROUP_START PSL3(2) order=168 runtime_ms=24584
+CASE PSL3(2) class_size=21 orders=[ 1, 2, 3, 4 ] full_aut=336 two_color_aut=
+336 runtime_ms=24588
+GROUP_START PSL3(3) order=5616 runtime_ms=24589
+CASE PSL3(3) class_size=117 orders=[ 1, 2, 3, 4, 6 ] full_aut=
+11232 two_color_aut=11232 runtime_ms=24668
+GROUP_START PSL3(4) order=20160 runtime_ms=24670
+CASE PSL3(4) class_size=315 orders=[ 1, 2, 3, 4, 5 ] full_aut=
+241920 two_color_aut=241920 runtime_ms=25188
+GROUP_START PSU3(3) order=6048 runtime_ms=25190
+CASE PSU3(3) class_size=63 orders=[ 1, 2, 3, 4 ] full_aut=12096 two_color_aut=
+12096 runtime_ms=25275
+DONE groups=27 classes_checked=28 classes_skipped=1 hits_21_52=0 hits_21_53=
+0 runtime_ms=25275

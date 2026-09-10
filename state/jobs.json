@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T21:21:00Z",
+  "observed_utc": "2026-09-10T21:42:35Z",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -12,7 +12,7 @@
       "task": "21.59(a)/21.135 character-degree collisions",
       "command": "./bin/gap scripts/search_degree_collisions.g",
       "output": "results/degree-collisions.log",
-      "last_observed_status": "completed: 2750 tables, 106 candidate collisions, no established counterexample"
+      "last_observed_status": "completed: 106 collisions; all entries marked almost simple; primed table metadata checked, no nonisomorphic pair established"
     },
     {
       "task": "21.99 degrees 2\u201320",
@@ -31,6 +31,20 @@
       "command": "./bin/gap scripts/search_21_113_projective.g",
       "output": "results/21.113-projective.log",
       "last_observed_status": "running"
+    },
+    {
+      "task": "18.43 positive trace words",
+      "command": "bin/search_18_43 n for n=1..36",
+      "output": "results/18.43-length*.log",
+      "pid": 4629,
+      "tool_session": 83410,
+      "last_observed_status": "Lengths 1..35 complete with no collision. Length 36 enumerated 1908881900 necklaces and was sorting at last process observation."
+    },
+    {
+      "task": "21.52 and 21.53 involution graphs",
+      "command": "./bin/gap scripts/search_21_52_53.g",
+      "output": "results/21.52-53-involution-graphs.log",
+      "last_observed_status": "completed: 27 group entries, 28 classes checked, 1 size-cutoff skip; zero hits; actual extension to group automorphisms verified"
     }
   ]
 }

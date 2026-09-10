@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-10 21:07 UTC. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-10 21:41 UTC. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -10,9 +10,10 @@ Updated 2026-09-10 21:07 UTC. This is a research triage list, not an assertion t
 | 21.99 | Test all orbital relations using conjugacy-class representatives whose fixed-point count differs from one. | Complete: all 4,722 transitive groups of degrees 2–20 satisfy it. Full-element validation on 86 groups of degrees 2–8 agrees. |
 | 21.26 | Intersect conjugates of the allowed-conjugator sets for the Sylow subgroups. | Design exact inclusion-minimal intersection predicate; do not replace inclusion-minimal by minimum cardinality without proof. |
 | 21.89 | Search n with p(n) dividing n!, using recurrence and smoothness/divisibility certificates. | Deprioritized: OEIS reports exhaustive checking through two million. Small searches would duplicate known work. |
-| 21.52–53 | Automorphism groups of involution class graphs, comparing order colors and selected colors. | Potential finite graph counterexamples; small simple groups and exceptional outer automorphisms first. |
+| 21.52–53 | Automorphism groups of involution class graphs, comparing order colors and selected colors. | Complete initial range: 27 group entries, 28 classes, one size-cutoff skip, no counterexample. Actual extension to group automorphisms checked. |
 | 21.59(a), 21.135 | Compare multisets of ordinary character degrees with multiplicity. | Complete table screen: 106 collisions, all between entries marked almost simple. Mostly apparent duplicates; no actual counterexample established. |
-| 21.132 | Finite centre in finitely generated residually finite torsion p-groups. | Apparent direct-product construction from centreless examples; inspect Golod-construction requirement and intended scope before claiming anything. |
+| 21.132 | Homogeneous annihilator quotient, triangular nil algebra, then adjoining a one-dimensional zero algebra. | Second complete candidate: at most four generators, infinite residually p-finite Golod group with centre C_p for every p. Proof and internal audit written; novelty and outside review pending. |
+| 18.43 | Exact modular trace fingerprints of positive binary necklaces, with symbolic certification for collisions. | Lengths 1–35 complete, no collision; length 36 sorting 1,908,881,900 necklaces. Independent small checks passed. |
 | 21.130 | Rainbow Hamiltonian cycles in the sum coloring of odd abelian groups. | Finite subset search possible, but avoid highly symmetric cases already checked in literature. |
 
 The index contains 1,308 main-body problem entries, including all 150 Issue 21 entries. Exactly 104 headings are starred, but partial solution markers also occur within unstarred entries. Older issues remain to be surveyed systematically. The separate solved archive is intentionally excluded from the index.
