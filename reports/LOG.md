@@ -53,3 +53,46 @@ Developed a second complete candidate solution, for 21.132: an at most four-gene
 The 21.113(b) projectivity job continues with no observed hit. Every available Brauer-table case includes a decomposition-matrix reconstruction check. All work remains local, and the overall 48-hour research goal remains active.
 
 At 2026-09-10T21:43:21.559809+00:00, the length-36 trace run was confirmed complete: 1,908,881,900 necklaces, zero collisions, 602.801 seconds. All lengths 1–36 together cover 3,933,931,043 necklaces. Validated the completion markers and zero-collision status for every retained log and wrote `results/18.43-summary.json`. The only remaining live computation is the projective-character GAP job.
+
+## 2026-09-10, 21:44–22:04 UTC
+
+The previous goal turn was concrete progress: a second candidate proof, complete
+trace searches, and committed artifacts. Revalidated the live GAP process before
+continuing. The projectivity search subsequently completed all 2,750 table entries:
+7,573 available modular cases, 2,277 unavailable Brauer cases, zero hits, and all
+decomposition-matrix reconstruction checks passed.
+
+Read the Lisi–Sabatini Sylow-intersection paper. Its two-prime result means most
+small examples are already covered theoretically. Designed an exact profile
+computation using inclusion-minimal element-set intersections and an exact union
+bound valid for every choice of Sylows. Initial orders 2–255 gave 4,188 checked
+groups, all passing the bound. Independent direct enumeration agreed for 211
+groups and 1,333 conjugator sets through order 60. Launched seven computational
+blocks for orders 256–2000 with at least three prime factors; six completed.
+Completed blocks total 63,122 groups including the initial run. The remaining
+job is advancing through the 241,004 groups of order 1920. No hit or fallback
+case has appeared so far. No agents were delegated.
+
+Read the 2013 Timofeenko source cited by 21.132, correcting its DOI to
+10.1515/dma-2013-0034. Its main construction concerns infinite subgroups of Golod
+groups; no finite-nontrivial-centre example was found. The candidate retains a
+homogeneous nil-algebra realization meeting the source convention.
+
+Developed a third complete candidate resolution, for 21.121(a). For k>=1 take
+the quotient of (Q8 semidirect C3)^(2^k-1) by the central binary simplex code,
+then form the free product of those finite groups. A code-intersection lemma
+bounds the central losses in every subgroup and yields a uniform 2-Jordan
+bound at every exponent above log(24)/log(8). The actual finite factors show
+that the bound fails at that infimum. Wrote the complete proof and an internal
+audit, and visually checked the exact Notebook statement. Part (b) is not solved.
+
+The GAP checker validates all 5 subgroup classes of the first factor and all
+614 classes (11,781 actual subgroups) of the second factor. All inequalities and
+normal-abelian-subgroup conditions passed. Independent Python code validates the
+code lemma on 4,157 disjoint-support spaces and checks the quaternion identities.
+An initial GAP function-name error was corrected before mathematical checks;
+both the failed diagnostic log and the successful DONE log are retained.
+
+Targeted novelty searches found no prior resolution of 21.121(a). All three
+candidate resolutions still await outside review and further novelty checking.
+The 48-hour goal remains active, with about 47 hours left at this checkpoint.

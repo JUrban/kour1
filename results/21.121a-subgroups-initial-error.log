@@ -1,0 +1,4 @@
+Syntax warning: Unbound global variable in scripts/verify_21_121a.g:7
+if not IsIsomorphicGroup(S,SL(2,3)) then Error("Wrong base group"); fi;
+       ^^^^^^^^^^^^^^^^^
+Error, Variable: 'IsIsomorphicGroup' must have an assigned value

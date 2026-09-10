@@ -52,8 +52,14 @@ candidate construction is now in `research/21.132-proof.md`.
   but its full text has not yet been inspected. One download endpoint returned 403;
   the mobile Math-Net endpoint successfully supplied the longer paper above.
 - The 2013 Timofeenko paper cited in the question is *Finite systems of generators
-  of infinite subgroups of the Golod group*, DOI 10.1515/dma-2013-034. Full text
-  still needs inspection.
+  of infinite subgroups of the Golod group*, DOI 10.1515/dma-2013-0034 (the extra
+  zero is confirmed by the primary archive). Downloaded the full Russian original
+  from https://m.mathnet.ru/php/getFT.phtml?jrnid=dm&option_lang=eng&paperid=1252&what=fullt .
+  Read the introductory discussion of centre and grading and the construction
+  statements in Sections 2–3. It recalls known infinite and trivial centres,
+  then constructs infinite finitely generated subgroups inside Golod groups.
+  No finite-nontrivial-centre construction was located. Its Golod realization
+  uses homogeneous nil-algebra quotients, which our construction also provides.
 
 Searches for the exact problem number, Golod groups with finite centre, and
 nil-algebra annihilator/residual-finiteness constructions found no explicit
@@ -71,3 +77,32 @@ is mentioned in the discussion of positive trace-equivalent pairs; implementatio
 details are insufficient to infer broader coverage. Our reported scope is
 explicitly positive words only. Their displayed dimension-two example also serves
 as an independent known-identity control for the code.
+
+## Problem 21.26
+
+Read Conjecture A, Theorems 1.1, 1.4, 1.5 and relevant proof passages in
+Lisi–Sabatini, *Sylow subgroups for distinct primes and intersection of nilpotent
+subgroups*, https://arxiv.org/abs/2505.21222 . This already settles groups with at
+most two prime divisors, metanilpotent odd-order groups, and sufficiently large
+symmetric and alternating groups. The last two-prime-order groups are therefore
+excluded from the extended computational search.
+
+The abstract of Burness–Huang, *On the intersections of nilpotent subgroups in
+simple groups*, https://arxiv.org/abs/2508.03479 , claims a proof for every
+non-alternating simple group. The revised Lisi–Sabatini source also cites it.
+No simple-group result from our searches will be counted as new without checking
+this work.
+
+## Problem 21.121(a)
+
+The exact definition and both subquestions were visually checked on PDF page
+185. A new candidate negative answer to (a) is written in
+`research/21.121a-proof.md`, with an all-subgroup estimate and exact finite controls.
+No claim for (b) is made.
+
+Searches for `p-Jordan exponent`, `p-Jordan infimum`, `Jordan exponent attained`,
+`21.121 Jordan`, `Shramov Jordan exponent 2026`, and combinations of simplex
+codes with quaternion groups and the Jordan property located no primary-source
+resolution. A secondary directory labels the question open, but is not used to
+establish novelty. The construction is original to this session as far as our
+current literature search shows; outside review and broader checking remain.

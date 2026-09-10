@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T21:43:21.559809+00:00",
+  "observed_utc": "2026-09-10T22:02:20.112059+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -26,11 +26,9 @@
     },
     {
       "task": "21.113(b) projective-character search",
-      "pid": 3636,
-      "tool_session": 77773,
       "command": "./bin/gap scripts/search_21_113_projective.g",
       "output": "results/21.113-projective.log",
-      "last_observed_status": "running"
+      "last_observed_status": "completed: 2750 tables, 7573 modular cases, 2277 unavailable Brauer-table cases, zero hits; all decomposition-matrix checks passed"
     },
     {
       "task": "18.43 positive trace words",
@@ -43,6 +41,29 @@
       "command": "./bin/gap scripts/search_21_52_53.g",
       "output": "results/21.52-53-involution-graphs.log",
       "last_observed_status": "completed: 27 group entries, 28 classes checked, 1 size-cutoff skip; zero hits; actual extension to group automorphisms verified"
+    },
+    {
+      "task": "21.26 exact Sylow-intersection search",
+      "tool_session": 21247,
+      "pid": 6647,
+      "command": "GAP process reading START_ORDER:=1792; END_ORDER:=2000; MIN_PRIMES:=3; Read(\"scripts/search_21_26.g\")",
+      "output": "results/21.26-orders1792-2000.log",
+      "last_observed_status": "running, processing order 1920; six parallel blocks already completed"
+    },
+    {
+      "task": "21.26 independent validation",
+      "output": "results/21.26-verification.log",
+      "last_observed_status": "completed: 211 groups, 1333 exact conjugator sets, all direct all-tuples checks agree"
+    },
+    {
+      "task": "21.121(a) subgroup verification",
+      "output": "results/21.121a-subgroups.log",
+      "last_observed_status": "completed: G1 order12, 5 subgroup classes/10 subgroups; G2 order3456, 614 subgroup classes/11781 subgroups; all passed"
+    },
+    {
+      "task": "21.121(a) independent algebra controls",
+      "output": "results/21.121a-controls.json",
+      "last_observed_status": "completed: 4157 disjoint-support spaces, quaternion and automorphism checks, PASS"
     }
   ]
 }
