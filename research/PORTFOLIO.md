@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-10 21:41 UTC. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-10T22:23:13.268158+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -16,6 +16,9 @@ Updated 2026-09-10 21:41 UTC. This is a research triage list, not an assertion t
 | 21.121(a) | Central simplex-code quotients of powers of Q8 semidirect C3, assembled by a free product. | Third complete candidate: 2-Jordan exponent log(24)/log(8) is not attained. All-subgroup bound proved; exhaustive small subgroup checks and algebra controls passed. |
 | 18.43 | Exact modular trace fingerprints of positive binary necklaces, with symbolic certification for collisions. | Lengths 1–36 complete with no collision; detailed counts in results/18.43-summary.json. Independent small checks passed. |
 | 21.130 | Rainbow Hamiltonian cycles in the sum coloring of odd abelian groups. | Finite subset search possible, but avoid highly symmetric cases already checked in literature. |
+| 13.19 | Four dihedral factors, with Q of order 256 and H of order 32, quotient D8. | Complete small counterexample and independent checks; excluded from new-solution count because Kearnes--Mayr--Ruskuc (2018) already implies a negative answer. A general finite-p-group realization is also written. |
+| 12.69 | Norm or trace from Q(i) to Q violates the literal conclusion. | Formulation inconsistency: the same example contradicts the claimed uncountable analogue. Not counted as a substantive new solution without resolving the missing qualification. |
+| 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | Exact search launched through order 255. Published Cameron 2025 source checks through order 63; that block serves as a control. |
 
 The index contains 1,308 main-body problem entries, including all 150 Issue 21 entries. Exactly 104 headings are starred, but partial solution markers also occur within unstarred entries. Older issues remain to be surveyed systematically. The separate solved archive is intentionally excluded from the index.
 

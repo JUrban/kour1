@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T22:02:20.112059+00:00",
+  "observed_utc": "2026-09-10T22:23:13.268158+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -64,6 +64,38 @@
       "task": "21.121(a) independent algebra controls",
       "output": "results/21.121a-controls.json",
       "last_observed_status": "completed: 4157 disjoint-support spaces, quaternion and automorphism checks, PASS"
+    },
+    {
+      "task": "19.20 exact counts",
+      "tool_session": 67948,
+      "command": "Five GAP blocks reading scripts/search_19_20.g",
+      "live_workers": [
+        {
+          "pid": 8752,
+          "output": "results/19.20-orders64-127.log"
+        },
+        {
+          "pid": 8754,
+          "output": "results/19.20-orders128-128.log"
+        },
+        {
+          "pid": 8755,
+          "output": "results/19.20-orders129-191.log"
+        },
+        {
+          "pid": 8756,
+          "output": "results/19.20-orders192-255.log"
+        }
+      ],
+      "last_observed_status": "2..63 complete: 318 groups, 105 abelian controls, 213 nonabelian strict inequalities. Remaining four blocks running; no equality or reverse inequality observed."
+    },
+    {
+      "task": "13.19 explicit counterexample verification",
+      "last_observed_status": "completed: GAP direct-product certificate and independent 65536-pair matrix check passed; excluded from new-solution count due to prior-result implication",
+      "outputs": [
+        "results/13.19-gap-verification.log",
+        "results/13.19-matrix-verification.json"
+      ]
     }
   ]
 }

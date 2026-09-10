@@ -4,7 +4,12 @@ Objective: solve as many previously unsolved problems in `docs/21tkt.pdf` as pos
 
 Research started 2026-09-10 20:56:46 UTC (active-goal creation). Deadline: 2026-09-12 20:56:46 UTC. Target resource limits: at most 20 computational cores and 100 GB RAM in total.
 
-One candidate complete negative solution, to Problem 21.106, is written in `research/21.106-proof.md`, with an internal audit in `research/21.106-review.md`. It awaits independent review. See `reports/STATUS.md`, `research/PLAN.md`, and `reports/LOG.md` for current evidence and next actions.
+Three complete candidate resolutions are written for 21.106, 21.132, and
+21.121(a), each with a separate internal audit. All await independent review
+and further novelty checks. An additional small counterexample to 13.19 is
+retained as a rediscovery: a prior paper already implies a negative answer.
+See `reports/STATUS.md`, `research/PLAN.md`, and `reports/LOG.md` for current
+evidence and next actions.
 
 The supplied Notebook is the 21st edition, updated through September 2026. SHA-256: `2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911`. Its searchable text was extracted with `pdftotext -layout`. Mathematical notation in extracted text must be checked against the PDF before relying on a statement.
 

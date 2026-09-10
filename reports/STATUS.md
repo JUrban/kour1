@@ -1,11 +1,12 @@
 # Current status
 
-Updated: 2026-09-10T22:02:20.112059+00:00.
+Updated: 2026-09-10T22:23:13.268158+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **3**: **21.106** (negative), **21.132** (construction for every prime), and **21.121(a)** (infimum not attained at p=2). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
 - Running computations: 21.26 Sylow-intersection search for orders 1792–2000; currently processing order 1920. Revalidate handles in `state/jobs.json` before relying on liveness.
+- Also running: 19.20 endomorphism/partial-isomorphism counts through order 255. The published range through 63 has been reproduced: 318 groups, including 105 abelian equality controls and 213 nonabelian strict inequalities. Four further blocks are running.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
@@ -27,6 +28,22 @@ Updated: 2026-09-10T22:02:20.112059+00:00.
 - **21.26:** 63,122 groups in completed blocks, all satisfying the strict exact union bound. The full range through order 1791 is covered by these checks together with the known result for orders involving at most two primes. The final block 1792–2000 is running. Independent direct enumeration agrees for all 211 non-prime-power-order groups through order 60.
 
 The index contains 1,308 main-body problem entries, all 150 Issue 21 entries. Editorial stars and later literature must be checked manually. Recent claimed resolutions of 20.21 and decidability in 21.32 are excluded from new-solution counts. Our alternate 21.32 argument is retained as a rediscovery.
+
+## Additional constructions and exclusions
+
+**13.19:** Found and verified an explicit negative example with Q of order 256,
+H of order 32, and four dihedral factors of order 8. Both groups are subdirect
+and Q/H is the irregular group D8. Independent matrix enumeration checked
+all 65,536 products and quotient-map identities. The literature audit shows
+that Kearnes--Mayr--Ruskuc (2018) already implies a negative answer, so this
+is excluded from the new-solution count. See `research/13.19-proof.md` and
+`research/13.19-review.md`. A separate self-contained realization of every
+finite p-group as such a quotient is in `research/13.19-universality.md`.
+
+**12.69:** The literal statement has an elementary norm/trace counterexample
+which also contradicts its claimed uncountable analogue. A formulation
+issue is recorded in `research/12.69-formulation-audit.md`; it is not counted
+as a substantive new resolution of the intended problem.
 
 ## Next work
 

@@ -2,6 +2,29 @@
 
 Last checked 2026-09-10. A search finding no solution is evidence only of the scope searched, not a proof of novelty. Downloaded reading copies are in ignored `references/cache/`; permanent reports cite their public sources.
 
+## Newly audited older problems
+
+- **13.19:** The supplied PDF page 67 was visually checked. Gorchakov's
+  *Quotients of subdirect products of groups* (2009),
+  https://doi.org/10.1007/s11202-009-0070-z , poses the same conjecture on
+  Russian page 801; full source read at https://emis.de/ft/10761 .
+  Kearnes--Mayr--Ruskuc, *Solvable quotients of subdirect products of perfect
+  groups are nilpotent* (2018), https://doi.org/10.1112/blms.12196 , has a
+  finite characteristic-2 construction implying a negative answer. Sections
+  3--4 and 6 were read in the institutional author manuscript dated
+  23 July 2018, https://research-repository.st-andrews.ac.uk/bitstream/10023/15796/1/Perfect10.pdf .
+  The exact implication is recorded in `research/13.19-review.md` and is
+  explicitly our inference; the paper need not name the Notebook problem.
+  Our smaller independent counterexample is excluded from the novelty count.
+- **12.69:** Visually checked page 63. Both norm and trace interpretations
+  admit an elementary counterexample, including to the asserted uncountable
+  analogue. No primary correction has been found. See the formulation audit.
+- **19.20:** Cameron, *Endomorphisms and partial isomorphisms* (2025),
+  https://doi.org/10.1007/s00233-025-10514-5 . Full two-page source read from
+  https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/31654/Cameron_2025_SF_Endomorphisms-and-partial-isomorphisms_CC.pdf?sequence=1 .
+  The nonabelian strict inequality is reported through order 63; our search
+  reproduces that range and extends to 255.
+
 ## Notebook baseline
 
 Official page: https://kourovkanotebookorg.wordpress.com/ . Latest posted update as observed: 1 September 2026, https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/09/21upd.pdf . The user PDF was created 1 September 2026 and includes the corresponding recently solved entries. It remains the authoritative statement source for this task.

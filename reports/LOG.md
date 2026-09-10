@@ -96,3 +96,37 @@ both the failed diagnostic log and the successful DONE log are retained.
 Targeted novelty searches found no prior resolution of 21.121(a). All three
 candidate resolutions still await outside review and further novelty checking.
 The 48-hour goal remains active, with about 47 hours left at this checkpoint.
+
+## 2026-09-10, 22:04 onward: older problems and a rediscovery
+
+Revalidated GAP and the live Sylow search; it continues through order 1920
+with no observed failure of the strict union bound. Surveyed older problems
+and read the precise 13.19 statement in the PDF. Constructed Q <= D8^4
+of order 256 and H normal of order 32, both subdirect, with quotient D8.
+Wrote a complete elementary matrix proof. GAP verifies independently
+generated Q and H and identifies them as SmallGroup(256,8935) and
+SmallGroup(32,46). An independent literal binary-matrix enumeration checks
+all 65,536 products/map identities and 8,192 conjugations. All pass.
+
+The novelty audit found a decisive prior implication: Kearnes--Mayr--Ruskuc
+(2018), Sections 3--4 and 6, constructs a nonabelian finite 2-group quotient
+of two subdirect groups. Checked the institutional manuscript dated
+23 July 2018 and wrote out why its quotient is a 2-group. Thus 13.19 is
+excluded from the new-solution count, despite the small counterexample.
+Also wrote a self-contained stronger realization: every finite p-group
+is a quotient of two finite subdirect p-groups, via a truncated free
+associative algebra and deleting blocks of variables. Its novelty is
+unestablished. The candidate count remains three.
+
+Problem 12.69 has a literal norm/trace counterexample which also contradicts
+its claimed uncountable analogue. Recorded this formulation issue and
+did not count it as a substantive new resolution of the intended problem.
+
+Read Cameron's 2025 endomorphism/partial-isomorphism note. It reports the
+strict inequality for nonabelian groups through order 63. Launched exact
+subgroup/quotient-type counts through order 255 in five bounded workers.
+The control block 2--63 completed with 318 groups (105 abelian), no equality
+for a nonabelian group, and no reverse inequality. Its closest ratio is
+763/734 for SmallGroup(32,49), suggesting extraspecial groups as a useful
+family for structural analysis. Four larger blocks remain live. All work
+is local; no agents, messages, submissions, or pushes.
