@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T22:31:56.858285+00:00",
+  "observed_utc": "2026-09-10T22:49:41.240858+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -71,22 +71,10 @@
         {
           "pid": 8754,
           "output": "results/19.20-orders128-128.log"
-        },
-        {
-          "pid": 8756,
-          "output": "results/19.20-orders192-255.log"
         }
       ],
-      "last_observed_status": "Three blocks complete, 2112 groups, no nonabelian equality. Two reverse inequalities at order64; group64,264 independently certified. Order128 and192..255 still running.",
+      "last_observed_status": "Four blocks complete,4683 groups,no nonabelian equality. Four reverse inequalities,including two coprime extensions at192. Only order128 still running.",
       "completed_blocks": [
-        {
-          "low": 129,
-          "high": 191,
-          "checked": 845,
-          "abelian": 114,
-          "equality_hits": 0,
-          "reverse_inequalities": 0
-        },
         {
           "low": 2,
           "high": 63,
@@ -100,6 +88,22 @@
           "high": 127,
           "checked": 949,
           "abelian": 126,
+          "equality_hits": 0,
+          "reverse_inequalities": 2
+        },
+        {
+          "low": 129,
+          "high": 191,
+          "checked": 845,
+          "abelian": 114,
+          "equality_hits": 0,
+          "reverse_inequalities": 0
+        },
+        {
+          "low": 192,
+          "high": 255,
+          "checked": 2571,
+          "abelian": 133,
           "equality_hits": 0,
           "reverse_inequalities": 2
         }
@@ -119,6 +123,14 @@
       "outputs": [
         "results/19.20-extraspecial-gap.log",
         "results/19.20-extraspecial-independent.json"
+      ]
+    },
+    {
+      "task": "21.115 coset export and solver preparation",
+      "last_observed_status": "Export complete:465 groups. Solver model controls72 PASS. No group search launched: general prior resolution located.",
+      "outputs": [
+        "results/21.115-export.log",
+        "results/21.115-model-verification.log"
       ]
     }
   ]

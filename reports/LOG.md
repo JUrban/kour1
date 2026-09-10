@@ -153,3 +153,13 @@ runner session closed. It checked 246,307 groups with no fallback or hit.
 The total is 309,429 checked groups; all satisfy the exact strict union
 bound. Combined with the known two-prime theorem, every group through
 order2000 is now covered. Only two endomorphism-count GAP workers remain.
+
+At 2026-09-10T22:49:41.240858+00:00, archived 21.115 after locating Sambale's
+8 September 2026 general resolution (arXiv:2609.09052v1). The finite proof
+was checked. Our abelian Fourier and class-two arguments are retained as
+special-case rediscoveries. The CP-SAT model passed 72 independent set
+controls; 465 group coset files were exported, but no group solver search
+was launched. OR-Tools 9.15.6755 installed locally with dependency versions
+recorded. The 192--255 endomorphism block completed: 2571 groups,133 abelian,
+zero equality hits,two reverse inequalities (coprime extensions of the
+order64 examples). The order128 worker remains live.

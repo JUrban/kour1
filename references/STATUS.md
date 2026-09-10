@@ -31,6 +31,11 @@ Official page: https://kourovkanotebookorg.wordpress.com/ . Latest posted update
 
 ## Recent papers excluded from new-solution counts
 
+- **21.115:** Benjamin Sambale, *On the complement of a union of cosets*,
+  https://arxiv.org/abs/2609.09052v1 , submitted 8 September 2026. All six
+  pages read; the finite-group argument checked. It resolves the problem
+  in full. Our special-case work is excluded; the prepared search was
+  archived before a group search began. See `research/21.115-literature-audit.md`.
 - W. van Doorn, E. Judin, P. Monticone, D. Morrison, *On Some Problems from the Kourovka Notebook*, https://arxiv.org/abs/2607.17477 . Eight previously published resolutions; the supplied PDF already cites this work for several entries. Exact older problem identifiers still need extraction before surveying those issues.
 - V. Ionin, A. Semidetnov, *On Some More Problems from the Kourovka Notebook*, https://arxiv.org/abs/2608.29219v1 . Downloaded and inspected the introduction and numbered questions. Addresses Notebook 14.85, 19.94, 16.11, 17.47, and 17.32, plus three questions from other sources. These are excluded from our novelty shortlist. This is a claimed-resolution screen, not an independent audit of that paper's proofs.
 - I. Chinyere, *On the non-existence of finite groups with certain normal subgroups*, https://arxiv.org/abs/2601.01080 . Claims a negative resolution of 20.21. Excluded from new targets; abstract checked, proof not yet audited.

@@ -1,14 +1,6 @@
 {
-  "observed_utc": "2026-09-10T22:31:02.744178+00:00",
+  "observed_utc": "2026-09-10T22:49:41.240858+00:00",
   "completed_blocks": [
-    {
-      "low": 129,
-      "high": 191,
-      "checked": 845,
-      "abelian": 114,
-      "equality_hits": 0,
-      "reverse_inequalities": 0
-    },
     {
       "low": 2,
       "high": 63,
@@ -24,10 +16,26 @@
       "abelian": 126,
       "equality_hits": 0,
       "reverse_inequalities": 2
+    },
+    {
+      "low": 129,
+      "high": 191,
+      "checked": 845,
+      "abelian": 114,
+      "equality_hits": 0,
+      "reverse_inequalities": 0
+    },
+    {
+      "low": 192,
+      "high": 255,
+      "checked": 2571,
+      "abelian": 133,
+      "equality_hits": 0,
+      "reverse_inequalities": 2
     }
   ],
-  "completed_groups": 2112,
-  "status": "order128 and 192..255 running",
+  "completed_groups": 4683,
+  "status": "only order128 running",
   "certified_stronger_counterexample": {
     "group_id": [
       64,

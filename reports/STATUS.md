@@ -1,12 +1,12 @@
 # Current status
 
-Updated: 2026-09-10T22:31:56.858285+00:00.
+Updated: 2026-09-10T22:49:41.240858+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **3**: **21.106** (negative), **21.132** (construction for every prime), and **21.121(a)** (infimum not attained at p=2). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
 - The 21.26 Sylow-intersection search has completed through order 2000. Revalidate the remaining 19.20 worker handles in `state/jobs.json` before relying on liveness.
-- Also running: 19.20 endomorphism/partial-isomorphism counts through order 255. The published range through 63 has been reproduced: 318 groups, including 105 abelian equality controls and 213 nonabelian strict inequalities. Three blocks have now completed (2--127 and 129--191): 2,112 groups, no nonabelian equality. Order 128 and orders 192--255 are still running.
+- Also running: 19.20 endomorphism/partial-isomorphism counts through order 255. The published range through 63 has been reproduced: 318 groups, including 105 abelian equality controls and 213 nonabelian strict inequalities. Four blocks have now completed (2--127 and 129--255): 4,683 groups, no nonabelian equality. Only order 128 is still running.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
@@ -41,6 +41,12 @@ gives the same totals. This is a separate partial result, not a fourth
 complete resolution of a Notebook problem.
 
 ## Additional constructions and exclusions
+
+**21.115:** A September 8 preprint by Sambale resolves the coset-union
+problem in full: https://arxiv.org/abs/2609.09052v1 . Its finite-group
+argument has been checked. Our abelian and odd-derived class-two
+arguments are retained as special-case rediscoveries; the prepared
+finite search is archived. See `research/21.115-literature-audit.md`.
 
 **13.19:** Found and verified an explicit negative example with Q of order 256,
 H of order 32, and four dihedral factors of order 8. Both groups are subdirect
