@@ -219,3 +219,16 @@ Only the16 order256 workers remain active, all revalidated. At this
 snapshot they have counted 8446 groups, with no errors and no
 equality hits. The48-hour goal remains active; no external contacts
 or Git pushes have been made.
+
+At 2026-09-10T23:51:14.219915+00:00, completed a sixth candidate resolution,10.35.
+The two-generator group <U(1),diag(2i,2)> is torsion-free and
+virtually Z^3. Every map to GL_2(Q), even with torsion image, kills
+U(2), by an elementary two-dimensional centralizer-algebra lemma.
+The exact fixed-degree statement was visually checked on PDF page40.
+All246016 bounded integer matrix pairs and exact normal-form controls
+passed. A faithful GL_3(Q) representation confirms the importance of
+the fixed degree. No prior resolution was found in targeted searches;
+novelty and outside review remain outstanding.
+
+GAP4.16.1 was also rechecked at the relocated path. 16 live GAP workers with command lines and range-specific stdout files revalidated; 12657 counts, 0 equality hits, 0 reversals, no errors at snapshot.
+The48-hour goal remains active. No external messages or pushes.

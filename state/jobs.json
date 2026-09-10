@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T23:36:22.213466+00:00",
+  "observed_utc": "2026-09-10T23:51:14.219915+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -148,7 +148,7 @@
       "output": "results/19.20-order256-ids*.log",
       "metadata": "state/19.20-order256-jobs.json",
       "progress": "results/19.20-order256-progress.json",
-      "last_observed_status": "16 live GAP worker command lines revalidated; 8446 counts, 0 equality hits, 0 reversals, no errors or completed blocks at snapshot."
+      "last_observed_status": "16 live GAP workers with command lines and range-specific stdout files revalidated; 12657 counts, 0 equality hits, 0 reversals, no errors at snapshot."
     },
     {
       "task": "19.20 odd extraspecial small controls",
@@ -161,6 +161,12 @@
       "command": "./bin/gap scripts/verify_19_20_odd_2187.g",
       "output": "results/19.20-odd-2187-gap.log",
       "last_observed_status": "completed, PASS and DONE, no errors; 66734 classes,134414 actual subgroups,13 types; End8241952876767369>PIso2607970224105603; runtime506246ms"
+    },
+    {
+      "task": "10.35 exact matrix controls",
+      "command": "python3 scripts/verify_10_35.py",
+      "output": "results/10.35-verification.json",
+      "last_observed_status": "Completed, PASS:225 normal forms,2500 product checks in two fields/degrees,246016 integer matrix pairs,4000 rational matrix pairs,field and torsion-image controls."
     }
   ]
 }

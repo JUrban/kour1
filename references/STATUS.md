@@ -155,3 +155,14 @@ Our proposed new step is the abelian extension of order2592 with a
 non-monomial degree8 character. The supplied statement on PDF page177
 was visually checked. Targeted queries found no primary prior resolution,
 but this does not establish priority. See the proof and review files.
+
+## Problem10.35
+
+The fixed-degree statement was visually checked on supplied PDF page40,
+and independently matched in the18th edition, page42, at
+https://eprints.maths.manchester.ac.uk/2087/1/18tkt.pdf . Targeted searches
+for Noskov,10.35,residually rational linear groups, and quarter-turn
+representations found no prior resolution. The group itself is familiar;
+only the proposed application and obstruction are candidates for new
+coverage. No external theorem is needed. See research/10.35-review.md
+for exact scope and remaining novelty uncertainty.
