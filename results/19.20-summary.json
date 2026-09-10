@@ -1,0 +1,40 @@
+{
+  "observed_utc": "2026-09-10T22:31:02.744178+00:00",
+  "completed_blocks": [
+    {
+      "low": 129,
+      "high": 191,
+      "checked": 845,
+      "abelian": 114,
+      "equality_hits": 0,
+      "reverse_inequalities": 0
+    },
+    {
+      "low": 2,
+      "high": 63,
+      "checked": 318,
+      "abelian": 105,
+      "equality_hits": 0,
+      "reverse_inequalities": 0
+    },
+    {
+      "low": 64,
+      "high": 127,
+      "checked": 949,
+      "abelian": 126,
+      "equality_hits": 0,
+      "reverse_inequalities": 2
+    }
+  ],
+  "completed_groups": 2112,
+  "status": "order128 and 192..255 running",
+  "certified_stronger_counterexample": {
+    "group_id": [
+      64,
+      264
+    ],
+    "endomorphisms": 6074368,
+    "partial_isomorphisms": 3277312
+  },
+  "scope": "Stronger inequality is false; no equality counterexample to 19.20 found so far."
+}

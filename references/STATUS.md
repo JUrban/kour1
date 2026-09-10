@@ -129,3 +129,12 @@ codes with quaternion groups and the Jordan property located no primary-source
 resolution. A secondary directory labels the question open, but is not used to
 establish novelty. The construction is original to this session as far as our
 current literature search shows; outside review and broader checking remain.
+
+The 19.20 follow-up found a counterexample to Cameron's stronger
+nonabelian inequality: E32-plus x C2 has End=6,074,368 and
+PIso=3,277,312. This is kept separate from the original equality question.
+Searches combining the paper title, partial isomorphisms, extraspecial,
+order64, counterexample, and the exact counts located no earlier example.
+The scope of these searches does not establish priority. The author's
+publication list confirms the final citation as Semigroup Forum111 (2025),
+538--539; the full primary paper had already been read.

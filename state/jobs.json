@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T22:23:13.268158+00:00",
+  "observed_utc": "2026-09-10T22:31:02.744178+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -71,23 +71,41 @@
       "command": "Five GAP blocks reading scripts/search_19_20.g",
       "live_workers": [
         {
-          "pid": 8752,
-          "output": "results/19.20-orders64-127.log"
-        },
-        {
           "pid": 8754,
           "output": "results/19.20-orders128-128.log"
-        },
-        {
-          "pid": 8755,
-          "output": "results/19.20-orders129-191.log"
         },
         {
           "pid": 8756,
           "output": "results/19.20-orders192-255.log"
         }
       ],
-      "last_observed_status": "2..63 complete: 318 groups, 105 abelian controls, 213 nonabelian strict inequalities. Remaining four blocks running; no equality or reverse inequality observed."
+      "last_observed_status": "Three blocks complete, 2112 groups, no nonabelian equality. Two reverse inequalities at order64; group64,264 independently certified. Order128 and192..255 still running.",
+      "completed_blocks": [
+        {
+          "low": 129,
+          "high": 191,
+          "checked": 845,
+          "abelian": 114,
+          "equality_hits": 0,
+          "reverse_inequalities": 0
+        },
+        {
+          "low": 2,
+          "high": 63,
+          "checked": 318,
+          "abelian": 105,
+          "equality_hits": 0,
+          "reverse_inequalities": 0
+        },
+        {
+          "low": 64,
+          "high": 127,
+          "checked": 949,
+          "abelian": 126,
+          "equality_hits": 0,
+          "reverse_inequalities": 2
+        }
+      ]
     },
     {
       "task": "13.19 explicit counterexample verification",
@@ -95,6 +113,14 @@
       "outputs": [
         "results/13.19-gap-verification.log",
         "results/13.19-matrix-verification.json"
+      ]
+    },
+    {
+      "task": "19.20 stronger inequality certificate",
+      "last_observed_status": "completed: E32-plus x C2 has End6074368 > PIso3277312; independent binary subgroup enumeration and GAP central-product construction agree",
+      "outputs": [
+        "results/19.20-extraspecial-gap.log",
+        "results/19.20-extraspecial-independent.json"
       ]
     }
   ]

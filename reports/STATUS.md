@@ -1,12 +1,12 @@
 # Current status
 
-Updated: 2026-09-10T22:23:13.268158+00:00.
+Updated: 2026-09-10T22:31:02.744178+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **3**: **21.106** (negative), **21.132** (construction for every prime), and **21.121(a)** (infimum not attained at p=2). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
 - Running computations: 21.26 Sylow-intersection search for orders 1792–2000; currently processing order 1920. Revalidate handles in `state/jobs.json` before relying on liveness.
-- Also running: 19.20 endomorphism/partial-isomorphism counts through order 255. The published range through 63 has been reproduced: 318 groups, including 105 abelian equality controls and 213 nonabelian strict inequalities. Four further blocks are running.
+- Also running: 19.20 endomorphism/partial-isomorphism counts through order 255. The published range through 63 has been reproduced: 318 groups, including 105 abelian equality controls and 213 nonabelian strict inequalities. Three blocks have now completed (2--127 and 129--191): 2,112 groups, no nonabelian equality. Order 128 and orders 192--255 are still running.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
@@ -28,6 +28,17 @@ Updated: 2026-09-10T22:23:13.268158+00:00.
 - **21.26:** 63,122 groups in completed blocks, all satisfying the strict exact union bound. The full range through order 1791 is covered by these checks together with the known result for orders involving at most two primes. The final block 1792–2000 is running. Independent direct enumeration agrees for all 211 non-prime-power-order groups through order 60.
 
 The index contains 1,308 main-body problem entries, all 150 Issue 21 entries. Editorial stars and later literature must be checked manually. Recent claimed resolutions of 20.21 and decidability in 21.32 are excluded from new-solution counts. Our alternate 21.32 argument is retained as a rediscovery.
+
+## Verified result adjacent to 19.20
+
+For G=(D8*D8) x C2 of order 64, |End(G)|=6,074,368 exceeds
+|PIso(G)|=3,277,312. This disproves the stronger inequality asked in
+Cameron's 2025 paper. The Notebook equality question remains unresolved.
+A complete coordinate argument and independently verified finite counts
+are in `research/19.20-stronger-counterexample.md`. The Python certificate
+enumerates all 593 subgroups without GAP; a GAP central-product realization
+gives the same totals. This is a separate partial result, not a fourth
+complete resolution of a Notebook problem.
 
 ## Additional constructions and exclusions
 

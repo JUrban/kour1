@@ -24,5 +24,5 @@ for key in RecNames(data) do
   ends:=ends+row[1]*row[2]*row[3];
   partials:=partials+row[1]^2*row[3];
 od;
-return rec(ends:=ends,partials:=partials);
+return rec(ends:=ends,partials:=partials,types:=data);
 end;;

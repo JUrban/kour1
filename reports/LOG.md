@@ -130,3 +130,20 @@ for a nonabelian group, and no reverse inequality. Its closest ratio is
 763/734 for SmallGroup(32,49), suggesting extraspecial groups as a useful
 family for structural analysis. Four larger blocks remain live. All work
 is local; no agents, messages, submissions, or pushes.
+
+At the next checkpoint the 64--127 run had found two groups with End>PIso:
+SmallGroup(64,263) and (64,264). These do not settle the Notebook equality
+question. Independently certified the second group as E32-plus x C2,
+using a binary group law and a direct presentation-based endomorphism
+count. A standalone Python checker enumerates all 374 quotient subspaces,
+all 593 subgroups, quadratic isometry classes, and automorphism orders;
+it computes End=6,074,368 and PIso=3,277,312. A separate GAP construction
+via the central product D8*D8 followed by C2 agrees exactly. Wrote the
+complete argument and the 17-type subgroup table. This refutes the
+stronger question posed in Cameron's 2025 note, while 19.20 itself stays
+open. No prior counterexample was found by the targeted search.
+
+The three completed endomorphism-count blocks cover 2,112 groups of
+orders 2--127 and 129--191. They give no nonabelian equality and the two
+reverse inequalities above. Order128 and192--255 continue. The Sylow
+job is still progressing toward completion. Goal remains active.
