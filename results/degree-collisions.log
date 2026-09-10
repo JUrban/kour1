@@ -1,0 +1,971 @@
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 3, 2 ], [ 4, 1 ], [ 5, 1 ] ] current=
+rec(
+  almost := true,
+  name := "A6M2",
+  order := 60 ) previous=[ rec(
+      almost := true,
+      name := "A5",
+      order := 60 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 4, 2 ], [ 5, 2 ], [ 6, 1 ] ] current=
+rec(
+  almost := true,
+  name := "A6.2_1M3",
+  order := 120 ) previous=[ rec(
+      almost := true,
+      name := "A5.2",
+      order := 120 ) ]
+CANDIDATE degree_multiset=[ [ 1, 4 ], [ 9, 4 ], [ 10, 2 ], [ 16, 2 ], 
+  [ 20, 1 ] ] current=rec(
+  almost := true,
+  name := "A6.2^2",
+  order := 1440 ) previous=[ rec(
+      almost := true,
+      name := "2F4(2)'M7",
+      order := 1440 ) ]
+CANDIDATE degree_multiset=[ [ 1, 4 ], [ 9, 4 ], [ 10, 2 ], [ 16, 2 ], 
+  [ 20, 1 ] ] current=rec(
+  almost := true,
+  name := "U4(3).2_3M10",
+  order := 1440 ) previous=[ rec(
+      almost := true,
+      name := "2F4(2)'M7",
+      order := 1440 ), rec(
+      almost := true,
+      name := "A6.2^2",
+      order := 1440 ) ]
+CANDIDATE degree_multiset=[ [ 1, 4 ], [ 9, 4 ], [ 10, 2 ], [ 16, 2 ], 
+  [ 20, 1 ] ] current=rec(
+  almost := true,
+  name := "M12M4",
+  order := 1440 ) previous=[ rec(
+      almost := true,
+      name := "2F4(2)'M7",
+      order := 1440 ), rec(
+      almost := true,
+      name := "A6.2^2",
+      order := 1440 ), rec(
+      almost := true,
+      name := "U4(3).2_3M10",
+      order := 1440 ) ]
+PROGRESS checked=100 runtime_ms=4631
+PROGRESS checked=200 runtime_ms=18219
+PROGRESS checked=300 runtime_ms=37259
+PROGRESS checked=400 runtime_ms=51796
+PROGRESS checked=500 runtime_ms=71960
+PROGRESS checked=600 runtime_ms=84113
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 10, 5 ], [ 11, 2 ], [ 12, 4 ] 
+ ] current=rec(
+  almost := true,
+  name := "L2(121)M3",
+  order := 1320 ) previous=[ rec(
+      almost := true,
+      name := "L2(11).2",
+      order := 1320 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 10, 5 ], [ 11, 2 ], [ 12, 4 ] 
+ ] current=rec(
+  almost := true,
+  name := "M12.2M3",
+  order := 1320 ) previous=[ rec(
+      almost := true,
+      name := "L2(11).2",
+      order := 1320 ), rec(
+      almost := true,
+      name := "L2(121)M3",
+      order := 1320 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 10, 5 ], [ 11, 2 ], [ 12, 4 ] 
+ ] current=rec(
+  almost := true,
+  name := "U3(11)M4",
+  order := 1320 ) previous=[ rec(
+      almost := true,
+      name := "L2(11).2",
+      order := 1320 ), rec(
+      almost := true,
+      name := "L2(121)M3",
+      order := 1320 ), rec(
+      almost := true,
+      name := "M12.2M3",
+      order := 1320 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 10, 5 ], [ 11, 2 ], [ 12, 4 ] 
+ ] current=rec(
+  almost := true,
+  name := "U3(11)M5",
+  order := 1320 ) previous=[ rec(
+      almost := true,
+      name := "L2(11).2",
+      order := 1320 ), rec(
+      almost := true,
+      name := "L2(121)M3",
+      order := 1320 ), rec(
+      almost := true,
+      name := "M12.2M3",
+      order := 1320 ), rec(
+      almost := true,
+      name := "U3(11)M4",
+      order := 1320 ) ]
+PROGRESS checked=700 runtime_ms=87736
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 16, 2 ], [ 17, 6 ], [ 30, 4 ], 
+  [ 34, 2 ] ] current=rec(
+  almost := true,
+  name := "S4(4)M4",
+  order := 8160 ) previous=[ rec(
+      almost := true,
+      name := "L2(16).2",
+      order := 8160 ) ]
+CANDIDATE degree_multiset=[ [ 1, 4 ], [ 16, 4 ], [ 17, 4 ], [ 34, 2 ], 
+  [ 60, 2 ], [ 68, 1 ] ] current=rec(
+  almost := true,
+  name := "S4(4).2M5",
+  order := 16320 ) previous=[ rec(
+      almost := true,
+      name := "L2(16).4",
+      order := 16320 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 9, 2 ], [ 18, 4 ], [ 19, 1 ], 
+  [ 20, 4 ] ] current=rec(
+  almost := true,
+  name := "L2(19)",
+  order := 3420 ) previous=[ rec(
+      almost := true,
+      name := "J3M3",
+      order := 3420 ) ]
+CANDIDATE degree_multiset=[ [ 1, 3 ], [ 7, 3 ], [ 8, 3 ], [ 21, 1 ], 
+  [ 27, 1 ] ] current=rec(
+  almost := true,
+  name := "A9M5",
+  order := 1512 ) previous=[ rec(
+      almost := true,
+      name := "L2(8).3",
+      order := 1512 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 15, 2 ], [ 30, 7 ], [ 31, 1 ], 
+  [ 32, 7 ] ] current=rec(
+  almost := true,
+  name := "ONM8",
+  order := 14880 ) previous=[ rec(
+      almost := true,
+      name := "L2(31)",
+      order := 14880 ) ]
+PROGRESS checked=800 runtime_ms=90112
+CANDIDATE degree_multiset=[ [ 1, 4 ], [ 20, 4 ], [ 35, 4 ], [ 64, 4 ], 
+  [ 70, 2 ], [ 90, 2 ], [ 126, 2 ] ] current=rec(
+  almost := true,
+  name := "U4(3).(2^2)_{133}M6",
+  order := 80640 ) previous=[ rec(
+      almost := true,
+      name := "L3(4).2^2",
+      order := 80640 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 12, 2 ], [ 13, 2 ], [ 26, 2 ], 
+  [ 27, 2 ], [ 32, 2 ], [ 39, 2 ], [ 52, 1 ] ] current=rec(
+  almost := true,
+  name := "L3(3).2",
+  order := 11232 ) previous=[ rec(
+      almost := true,
+      name := "2F4(2)'M2",
+      order := 11232 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 12, 2 ], [ 13, 2 ], [ 26, 2 ], 
+  [ 27, 2 ], [ 32, 2 ], [ 39, 2 ], [ 52, 1 ] ] current=rec(
+  almost := true,
+  name := "G2(3)M6",
+  order := 11232 ) previous=[ rec(
+      almost := true,
+      name := "2F4(2)'M2",
+      order := 11232 ), rec(
+      almost := true,
+      name := "L3(3).2",
+      order := 11232 ) ]
+PROGRESS checked=900 runtime_ms=92389
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 56, 2 ], [ 57, 2 ], [ 152, 2 ], 
+  [ 304, 1 ], [ 342, 6 ], [ 343, 2 ], [ 399, 2 ], [ 456, 2 ], [ 576, 3 ], 
+  [ 684, 2 ] ] current=rec(
+  almost := true,
+  name := "ONM2",
+  order := 3753792 ) previous=[ rec(
+      almost := true,
+      name := "L3(7).2",
+      order := 3753792 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 10, 3 ], [ 11, 1 ], [ 16, 2 ], 
+  [ 44, 1 ], [ 45, 1 ], [ 55, 1 ] ] current=rec(
+  almost := true,
+  name := "M11",
+  order := 7920 ) previous=[ rec(
+      almost := true,
+      name := "HSM9",
+      order := 7920 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 22, 1 ], [ 32, 1 ], [ 45, 2 ], 
+  [ 54, 2 ], [ 55, 2 ], [ 66, 2 ], [ 99, 2 ], [ 110, 1 ], [ 120, 2 ], 
+  [ 144, 2 ], [ 176, 2 ] ] current=rec(
+  almost := true,
+  name := "M12.2",
+  order := 190080 ) previous=[ rec(
+      almost := true,
+      name := "HNM12",
+      order := 190080 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 10, 3 ], [ 11, 1 ], [ 16, 2 ], 
+  [ 44, 1 ], [ 45, 1 ], [ 55, 1 ] ] current=rec(
+  almost := true,
+  name := "M12M2",
+  order := 7920 ) previous=[ rec(
+      almost := true,
+      name := "HSM9",
+      order := 7920 ), rec(
+      almost := true,
+      name := "M11",
+      order := 7920 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 21, 1 ], [ 45, 2 ], [ 55, 1 ], 
+  [ 99, 1 ], [ 154, 1 ], [ 210, 1 ], [ 231, 1 ], [ 280, 2 ], [ 385, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "McLM3",
+  order := 443520 ) previous=[ rec(
+      almost := true,
+      name := "M22",
+      order := 443520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 10, 3 ], [ 11, 1 ], [ 16, 2 ], 
+  [ 44, 1 ], [ 45, 1 ], [ 55, 1 ] ] current=rec(
+  almost := true,
+  name := "ONM11",
+  order := 7920 ) previous=[ rec(
+      almost := true,
+      name := "HSM9",
+      order := 7920 ), rec(
+      almost := true,
+      name := "M11",
+      order := 7920 ), rec(
+      almost := true,
+      name := "M12M2",
+      order := 7920 ) ]
+PROGRESS checked=1000 runtime_ms=93645
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 5, 2 ], [ 8, 2 ], [ 9, 1 ], [ 10, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "L3(4)M4",
+  order := 360 ) previous=[ rec(
+      almost := true,
+      name := "A6",
+      order := 360 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 5, 2 ], [ 8, 2 ], [ 9, 1 ], [ 10, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "L3(4)M5",
+  order := 360 ) previous=[ rec(
+      almost := true,
+      name := "A6",
+      order := 360 ), rec(
+      almost := true,
+      name := "L3(4)M4",
+      order := 360 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 3, 2 ], [ 6, 1 ], [ 7, 1 ], [ 8, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "L3(4)M7",
+  order := 168 ) previous=[ rec(
+      almost := true,
+      name := "L3(2)",
+      order := 168 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 3, 2 ], [ 6, 1 ], [ 7, 1 ], [ 8, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "L3(4)M8",
+  order := 168 ) previous=[ rec(
+      almost := true,
+      name := "L3(2)",
+      order := 168 ), rec(
+      almost := true,
+      name := "L3(4)M7",
+      order := 168 ) ]
+PROGRESS checked=1100 runtime_ms=97097
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 6, 1 ], [ 10, 2 ], [ 14, 2 ], 
+  [ 15, 1 ], [ 21, 1 ], [ 35, 1 ] ] current=rec(
+  almost := true,
+  name := "U4(3)M12",
+  order := 2520 ) previous=[ rec(
+      almost := true,
+      name := "A7",
+      order := 2520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 7, 1 ], [ 15, 1 ], [ 21, 2 ], 
+  [ 27, 1 ], [ 35, 2 ], [ 56, 1 ], [ 70, 1 ], [ 84, 1 ], [ 105, 3 ], 
+  [ 120, 1 ], [ 168, 1 ], [ 189, 3 ], [ 210, 2 ], [ 216, 1 ], [ 280, 2 ], 
+  [ 315, 1 ], [ 336, 1 ], [ 378, 1 ], [ 405, 1 ], [ 420, 1 ], [ 512, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "O8+(2)M3",
+  order := 1451520 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2)M2",
+      order := 1451520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 8, 1 ], [ 21, 2 ], [ 27, 1 ], 
+  [ 28, 1 ], [ 35, 2 ], [ 42, 1 ], [ 48, 1 ], [ 56, 1 ], [ 84, 1 ], 
+  [ 105, 1 ], [ 120, 1 ], [ 162, 1 ], [ 168, 1 ], [ 189, 1 ], [ 216, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "O8+(2)M8",
+  order := 181440 ) previous=[ rec(
+      almost := true,
+      name := "A9",
+      order := 181440 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 8, 1 ], [ 21, 2 ], [ 27, 1 ], 
+  [ 28, 1 ], [ 35, 2 ], [ 42, 1 ], [ 48, 1 ], [ 56, 1 ], [ 84, 1 ], 
+  [ 105, 1 ], [ 120, 1 ], [ 162, 1 ], [ 168, 1 ], [ 189, 1 ], [ 216, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "O8+(2)M9",
+  order := 181440 ) previous=[ rec(
+      almost := true,
+      name := "A9",
+      order := 181440 ), rec(
+      almost := true,
+      name := "O8+(2)M8",
+      order := 181440 ) ]
+PROGRESS checked=1200 runtime_ms=106878
+PROGRESS checked=1300 runtime_ms=108410
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 21, 2 ], [ 35, 4 ], [ 90, 2 ], 
+  [ 140, 2 ], [ 189, 2 ], [ 210, 2 ], [ 280, 4 ], [ 315, 4 ], [ 420, 2 ], 
+  [ 560, 3 ], [ 729, 2 ], [ 896, 2 ], [ 1280, 1 ] ] current=rec(
+  almost := true,
+  name := "U6(2)M6",
+  order := 6531840 ) previous=[ rec(
+      almost := true,
+      name := "U6(2)M5",
+      order := 6531840 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 7, 1 ], [ 15, 1 ], [ 21, 2 ], 
+  [ 27, 1 ], [ 35, 2 ], [ 56, 1 ], [ 70, 1 ], [ 84, 1 ], [ 105, 3 ], 
+  [ 120, 1 ], [ 168, 1 ], [ 189, 3 ], [ 210, 2 ], [ 216, 1 ], [ 280, 2 ], 
+  [ 315, 1 ], [ 336, 1 ], [ 378, 1 ], [ 405, 1 ], [ 420, 1 ], [ 512, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "U6(2)M9",
+  order := 1451520 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2)M2",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "O8+(2)M3",
+      order := 1451520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 7, 1 ], [ 15, 1 ], [ 21, 2 ], 
+  [ 27, 1 ], [ 35, 2 ], [ 56, 1 ], [ 70, 1 ], [ 84, 1 ], [ 105, 3 ], 
+  [ 120, 1 ], [ 168, 1 ], [ 189, 3 ], [ 210, 2 ], [ 216, 1 ], [ 280, 2 ], 
+  [ 315, 1 ], [ 336, 1 ], [ 378, 1 ], [ 405, 1 ], [ 420, 1 ], [ 512, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "U6(2)M10",
+  order := 1451520 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2)M2",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "O8+(2)M3",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "U6(2)M9",
+      order := 1451520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 21, 1 ], [ 45, 2 ], [ 55, 1 ], 
+  [ 99, 1 ], [ 154, 1 ], [ 210, 1 ], [ 231, 1 ], [ 280, 2 ], [ 385, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "U6(2)M12",
+  order := 443520 ) previous=[ rec(
+      almost := true,
+      name := "M22",
+      order := 443520 ), rec(
+      almost := true,
+      name := "McLM3",
+      order := 443520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 21, 1 ], [ 45, 2 ], [ 55, 1 ], 
+  [ 99, 1 ], [ 154, 1 ], [ 210, 1 ], [ 231, 1 ], [ 280, 2 ], [ 385, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "U6(2)M13",
+  order := 443520 ) previous=[ rec(
+      almost := true,
+      name := "M22",
+      order := 443520 ), rec(
+      almost := true,
+      name := "McLM3",
+      order := 443520 ), rec(
+      almost := true,
+      name := "U6(2)M12",
+      order := 443520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 14, 1 ], [ 64, 2 ], [ 78, 1 ], 
+  [ 91, 3 ], [ 104, 1 ], [ 168, 1 ], [ 182, 2 ], [ 273, 2 ], [ 448, 2 ], 
+  [ 546, 2 ], [ 728, 2 ], [ 729, 1 ], [ 819, 1 ], [ 832, 1 ] ] current=rec(
+  almost := true,
+  name := "O7(3)M5",
+  order := 4245696 ) previous=[ rec(
+      almost := true,
+      name := "G2(3)",
+      order := 4245696 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 7, 1 ], [ 15, 1 ], [ 21, 2 ], 
+  [ 27, 1 ], [ 35, 2 ], [ 56, 1 ], [ 70, 1 ], [ 84, 1 ], [ 105, 3 ], 
+  [ 120, 1 ], [ 168, 1 ], [ 189, 3 ], [ 210, 2 ], [ 216, 1 ], [ 280, 2 ], 
+  [ 315, 1 ], [ 336, 1 ], [ 378, 1 ], [ 405, 1 ], [ 420, 1 ], [ 512, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "O7(3)M8",
+  order := 1451520 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2)M2",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "O8+(2)M3",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "U6(2)M9",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "U6(2)M10",
+      order := 1451520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 8, 2 ], [ 27, 2 ], [ 28, 2 ], 
+  [ 42, 3 ], [ 48, 2 ], [ 56, 2 ], [ 70, 1 ], [ 84, 2 ], [ 105, 2 ], 
+  [ 120, 2 ], [ 162, 2 ], [ 168, 2 ], [ 189, 2 ], [ 216, 2 ] ] current=rec(
+  almost := true,
+  name := "O7(3)M11",
+  order := 362880 ) previous=[ rec(
+      almost := true,
+      name := "A9.2",
+      order := 362880 ) ]
+PROGRESS checked=1400 runtime_ms=119128
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 6, 1 ], [ 10, 2 ], [ 14, 2 ], 
+  [ 15, 1 ], [ 21, 1 ], [ 35, 1 ] ] current=rec(
+  almost := true,
+  name := "U3(5)M2",
+  order := 2520 ) previous=[ rec(
+      almost := true,
+      name := "A7",
+      order := 2520 ), rec(
+      almost := true,
+      name := "U4(3)M12",
+      order := 2520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 6, 1 ], [ 10, 2 ], [ 14, 2 ], 
+  [ 15, 1 ], [ 21, 1 ], [ 35, 1 ] ] current=rec(
+  almost := true,
+  name := "U3(5)M3",
+  order := 2520 ) previous=[ rec(
+      almost := true,
+      name := "A7",
+      order := 2520 ), rec(
+      almost := true,
+      name := "U4(3)M12",
+      order := 2520 ), rec(
+      almost := true,
+      name := "U3(5)M2",
+      order := 2520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 9, 2 ], [ 10, 3 ], [ 16, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "U3(5)M6",
+  order := 720 ) previous=[ rec(
+      almost := true,
+      name := "A6.2_3",
+      order := 720 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 9, 2 ], [ 10, 3 ], [ 16, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "U3(5)M7",
+  order := 720 ) previous=[ rec(
+      almost := true,
+      name := "A6.2_3",
+      order := 720 ), rec(
+      almost := true,
+      name := "U3(5)M6",
+      order := 720 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 6, 3 ], [ 7, 2 ], [ 8, 2 ] ] current=
+rec(
+  almost := true,
+  name := "L3(7)M4",
+  order := 336 ) previous=[ rec(
+      almost := true,
+      name := "L3(2).2",
+      order := 336 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 6, 3 ], [ 7, 2 ], [ 8, 2 ] ] current=
+rec(
+  almost := true,
+  name := "L3(7)M5",
+  order := 336 ) previous=[ rec(
+      almost := true,
+      name := "L3(2).2",
+      order := 336 ), rec(
+      almost := true,
+      name := "L3(7)M4",
+      order := 336 ) ]
+PROGRESS checked=1500 runtime_ms=127814
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 4, 2 ], [ 5, 2 ], [ 6, 1 ] ] current=
+rec(
+  almost := true,
+  name := "L2(25)M3",
+  order := 120 ) previous=[ rec(
+      almost := true,
+      name := "A5.2",
+      order := 120 ), rec(
+      almost := true,
+      name := "A6.2_1M3",
+      order := 120 ) ]
+PROGRESS checked=1600 runtime_ms=131732
+PROGRESS checked=1700 runtime_ms=133958
+PROGRESS checked=1800 runtime_ms=138492
+PROGRESS checked=1900 runtime_ms=145486
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 833, 1 ], [ 1105, 2 ], [ 1326, 1 ], 
+  [ 1377, 1 ], [ 21658, 1 ], [ 22932, 1 ], [ 23205, 2 ], [ 44200, 2 ], 
+  [ 63700, 1 ], [ 99450, 2 ], [ 142884, 2 ], [ 162435, 2 ], [ 183600, 2 ], 
+  [ 216580, 2 ], [ 249900, 1 ], [ 269892, 1 ], [ 270725, 1 ], [ 322218, 1 ], 
+  [ 348075, 2 ], [ 358020, 2 ], [ 519792, 1 ], [ 541450, 4 ], [ 584766, 1 ], 
+  [ 626535, 2 ], [ 812175, 2 ], [ 877149, 2 ], [ 947700, 1 ], [ 1082900, 1 ], 
+  [ 1299480, 2 ], [ 1342575, 2 ], [ 1949220, 2 ], [ 2165800, 2 ], 
+  [ 2784600, 2 ], [ 2828800, 2 ], [ 3411968, 1 ], [ 3898440, 2 ], 
+  [ 4331600, 2 ], [ 4385745, 4 ], [ 4526080, 2 ], [ 5012280, 2 ], 
+  [ 5640192, 1 ], [ 5870592, 1 ], [ 6497400, 2 ], [ 7309575, 2 ], 
+  [ 7894341, 1 ], [ 8055450, 2 ], [ 8771490, 2 ], [ 9398025, 2 ], 
+  [ 10740600, 2 ], [ 11609325, 2 ], [ 11880960, 2 ], [ 14034384, 1 ], 
+  [ 14619150, 2 ], [ 15181425, 1 ], [ 16777216, 1 ], [ 17326400, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "2E6(2)M4",
+  order := 3311126603366400 ) previous=[ rec(
+      almost := true,
+      name := "F4(2)",
+      order := 3311126603366400 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 833, 1 ], [ 1105, 2 ], [ 1326, 1 ], 
+  [ 1377, 1 ], [ 21658, 1 ], [ 22932, 1 ], [ 23205, 2 ], [ 44200, 2 ], 
+  [ 63700, 1 ], [ 99450, 2 ], [ 142884, 2 ], [ 162435, 2 ], [ 183600, 2 ], 
+  [ 216580, 2 ], [ 249900, 1 ], [ 269892, 1 ], [ 270725, 1 ], [ 322218, 1 ], 
+  [ 348075, 2 ], [ 358020, 2 ], [ 519792, 1 ], [ 541450, 4 ], [ 584766, 1 ], 
+  [ 626535, 2 ], [ 812175, 2 ], [ 877149, 2 ], [ 947700, 1 ], [ 1082900, 1 ], 
+  [ 1299480, 2 ], [ 1342575, 2 ], [ 1949220, 2 ], [ 2165800, 2 ], 
+  [ 2784600, 2 ], [ 2828800, 2 ], [ 3411968, 1 ], [ 3898440, 2 ], 
+  [ 4331600, 2 ], [ 4385745, 4 ], [ 4526080, 2 ], [ 5012280, 2 ], 
+  [ 5640192, 1 ], [ 5870592, 1 ], [ 6497400, 2 ], [ 7309575, 2 ], 
+  [ 7894341, 1 ], [ 8055450, 2 ], [ 8771490, 2 ], [ 9398025, 2 ], 
+  [ 10740600, 2 ], [ 11609325, 2 ], [ 11880960, 2 ], [ 14034384, 1 ], 
+  [ 14619150, 2 ], [ 15181425, 1 ], [ 16777216, 1 ], [ 17326400, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "2E6(2)M5",
+  order := 3311126603366400 ) previous=[ rec(
+      almost := true,
+      name := "F4(2)",
+      order := 3311126603366400 ), rec(
+      almost := true,
+      name := "2E6(2)M4",
+      order := 3311126603366400 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 78, 1 ], [ 429, 1 ], [ 1001, 1 ], 
+  [ 1430, 1 ], [ 3003, 1 ], [ 3080, 1 ], [ 10725, 1 ], [ 13650, 1 ], 
+  [ 30030, 1 ], [ 32032, 1 ], [ 43680, 1 ], [ 45045, 1 ], [ 48048, 1 ], 
+  [ 50050, 2 ], [ 75075, 3 ], [ 81081, 1 ], [ 114400, 1 ], [ 138600, 2 ], 
+  [ 150150, 1 ], [ 205920, 1 ], [ 289575, 1 ], [ 300300, 1 ], [ 320320, 1 ], 
+  [ 360855, 1 ], [ 370656, 1 ], [ 400400, 4 ], [ 450450, 2 ], [ 576576, 1 ], 
+  [ 577368, 1 ], [ 579150, 1 ], [ 582400, 2 ], [ 600600, 3 ], [ 675675, 1 ], 
+  [ 720720, 1 ], [ 800800, 1 ], [ 852930, 1 ], [ 938223, 1 ], [ 972972, 1 ], 
+  [ 982800, 2 ], [ 1201200, 1 ], [ 1360800, 1 ], [ 1372800, 1 ], 
+  [ 1441792, 1 ], [ 1791153, 1 ], [ 1876446, 1 ], [ 2027025, 1 ], 
+  [ 2050048, 1 ], [ 2316600, 1 ], [ 2402400, 1 ], [ 2555904, 2 ], 
+  [ 2729376, 1 ] ] current=rec(
+  almost := true,
+  name := "2E6(2)M8",
+  order := 64561751654400 ) previous=[ rec(
+      almost := true,
+      name := "Fi22",
+      order := 64561751654400 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 78, 1 ], [ 429, 1 ], [ 1001, 1 ], 
+  [ 1430, 1 ], [ 3003, 1 ], [ 3080, 1 ], [ 10725, 1 ], [ 13650, 1 ], 
+  [ 30030, 1 ], [ 32032, 1 ], [ 43680, 1 ], [ 45045, 1 ], [ 48048, 1 ], 
+  [ 50050, 2 ], [ 75075, 3 ], [ 81081, 1 ], [ 114400, 1 ], [ 138600, 2 ], 
+  [ 150150, 1 ], [ 205920, 1 ], [ 289575, 1 ], [ 300300, 1 ], [ 320320, 1 ], 
+  [ 360855, 1 ], [ 370656, 1 ], [ 400400, 4 ], [ 450450, 2 ], [ 576576, 1 ], 
+  [ 577368, 1 ], [ 579150, 1 ], [ 582400, 2 ], [ 600600, 3 ], [ 675675, 1 ], 
+  [ 720720, 1 ], [ 800800, 1 ], [ 852930, 1 ], [ 938223, 1 ], [ 972972, 1 ], 
+  [ 982800, 2 ], [ 1201200, 1 ], [ 1360800, 1 ], [ 1372800, 1 ], 
+  [ 1441792, 1 ], [ 1791153, 1 ], [ 1876446, 1 ], [ 2027025, 1 ], 
+  [ 2050048, 1 ], [ 2316600, 1 ], [ 2402400, 1 ], [ 2555904, 2 ], 
+  [ 2729376, 1 ] ] current=rec(
+  almost := true,
+  name := "2E6(2)M9",
+  order := 64561751654400 ) previous=[ rec(
+      almost := true,
+      name := "Fi22",
+      order := 64561751654400 ), rec(
+      almost := true,
+      name := "2E6(2)M8",
+      order := 64561751654400 ) ]
+PROGRESS checked=2000 runtime_ms=156460
+PROGRESS checked=2100 runtime_ms=159679
+PROGRESS checked=2200 runtime_ms=161887
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 78, 1 ], [ 91, 1 ], [ 105, 1 ], 
+  [ 168, 1 ], [ 182, 1 ], [ 195, 1 ], [ 260, 2 ], [ 273, 1 ], [ 546, 1 ], 
+  [ 819, 1 ], [ 910, 2 ], [ 1092, 1 ], [ 1365, 2 ], [ 1560, 2 ], [ 1638, 1 ], 
+  [ 1820, 1 ], [ 2106, 1 ], [ 2184, 1 ], [ 2457, 1 ], [ 2730, 2 ], 
+  [ 2835, 1 ], [ 4095, 2 ], [ 4368, 1 ], [ 4536, 1 ], [ 5265, 1 ], 
+  [ 5460, 3 ], [ 5824, 2 ], [ 6552, 1 ], [ 7020, 2 ], [ 7280, 3 ], 
+  [ 7371, 1 ], [ 8190, 2 ], [ 11648, 1 ], [ 14742, 1 ], [ 16380, 1 ], 
+  [ 16640, 2 ], [ 17472, 2 ], [ 17920, 2 ], [ 19683, 1 ], [ 21840, 1 ], 
+  [ 22113, 1 ] ] current=rec(
+  almost := true,
+  name := "O7(3)",
+  order := 4585351680 ) previous=[ rec(
+      almost := true,
+      name := "Fi22M3",
+      order := 4585351680 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 78, 1 ], [ 91, 1 ], [ 105, 1 ], 
+  [ 168, 1 ], [ 182, 1 ], [ 195, 1 ], [ 260, 2 ], [ 273, 1 ], [ 546, 1 ], 
+  [ 819, 1 ], [ 910, 2 ], [ 1092, 1 ], [ 1365, 2 ], [ 1560, 2 ], [ 1638, 1 ], 
+  [ 1820, 1 ], [ 2106, 1 ], [ 2184, 1 ], [ 2457, 1 ], [ 2730, 2 ], 
+  [ 2835, 1 ], [ 4095, 2 ], [ 4368, 1 ], [ 4536, 1 ], [ 5265, 1 ], 
+  [ 5460, 3 ], [ 5824, 2 ], [ 6552, 1 ], [ 7020, 2 ], [ 7280, 3 ], 
+  [ 7371, 1 ], [ 8190, 2 ], [ 11648, 1 ], [ 14742, 1 ], [ 16380, 1 ], 
+  [ 16640, 2 ], [ 17472, 2 ], [ 17920, 2 ], [ 19683, 1 ], [ 21840, 1 ], 
+  [ 22113, 1 ] ] current=rec(
+  almost := true,
+  name := "O8+(3)M2",
+  order := 4585351680 ) previous=[ rec(
+      almost := true,
+      name := "Fi22M3",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O7(3)",
+      order := 4585351680 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 78, 1 ], [ 91, 1 ], [ 105, 1 ], 
+  [ 168, 1 ], [ 182, 1 ], [ 195, 1 ], [ 260, 2 ], [ 273, 1 ], [ 546, 1 ], 
+  [ 819, 1 ], [ 910, 2 ], [ 1092, 1 ], [ 1365, 2 ], [ 1560, 2 ], [ 1638, 1 ], 
+  [ 1820, 1 ], [ 2106, 1 ], [ 2184, 1 ], [ 2457, 1 ], [ 2730, 2 ], 
+  [ 2835, 1 ], [ 4095, 2 ], [ 4368, 1 ], [ 4536, 1 ], [ 5265, 1 ], 
+  [ 5460, 3 ], [ 5824, 2 ], [ 6552, 1 ], [ 7020, 2 ], [ 7280, 3 ], 
+  [ 7371, 1 ], [ 8190, 2 ], [ 11648, 1 ], [ 14742, 1 ], [ 16380, 1 ], 
+  [ 16640, 2 ], [ 17472, 2 ], [ 17920, 2 ], [ 19683, 1 ], [ 21840, 1 ], 
+  [ 22113, 1 ] ] current=rec(
+  almost := true,
+  name := "O8+(3)M3",
+  order := 4585351680 ) previous=[ rec(
+      almost := true,
+      name := "Fi22M3",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O7(3)",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M2",
+      order := 4585351680 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 78, 1 ], [ 91, 1 ], [ 105, 1 ], 
+  [ 168, 1 ], [ 182, 1 ], [ 195, 1 ], [ 260, 2 ], [ 273, 1 ], [ 546, 1 ], 
+  [ 819, 1 ], [ 910, 2 ], [ 1092, 1 ], [ 1365, 2 ], [ 1560, 2 ], [ 1638, 1 ], 
+  [ 1820, 1 ], [ 2106, 1 ], [ 2184, 1 ], [ 2457, 1 ], [ 2730, 2 ], 
+  [ 2835, 1 ], [ 4095, 2 ], [ 4368, 1 ], [ 4536, 1 ], [ 5265, 1 ], 
+  [ 5460, 3 ], [ 5824, 2 ], [ 6552, 1 ], [ 7020, 2 ], [ 7280, 3 ], 
+  [ 7371, 1 ], [ 8190, 2 ], [ 11648, 1 ], [ 14742, 1 ], [ 16380, 1 ], 
+  [ 16640, 2 ], [ 17472, 2 ], [ 17920, 2 ], [ 19683, 1 ], [ 21840, 1 ], 
+  [ 22113, 1 ] ] current=rec(
+  almost := true,
+  name := "O8+(3)M4",
+  order := 4585351680 ) previous=[ rec(
+      almost := true,
+      name := "Fi22M3",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O7(3)",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M2",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M3",
+      order := 4585351680 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 78, 1 ], [ 91, 1 ], [ 105, 1 ], 
+  [ 168, 1 ], [ 182, 1 ], [ 195, 1 ], [ 260, 2 ], [ 273, 1 ], [ 546, 1 ], 
+  [ 819, 1 ], [ 910, 2 ], [ 1092, 1 ], [ 1365, 2 ], [ 1560, 2 ], [ 1638, 1 ], 
+  [ 1820, 1 ], [ 2106, 1 ], [ 2184, 1 ], [ 2457, 1 ], [ 2730, 2 ], 
+  [ 2835, 1 ], [ 4095, 2 ], [ 4368, 1 ], [ 4536, 1 ], [ 5265, 1 ], 
+  [ 5460, 3 ], [ 5824, 2 ], [ 6552, 1 ], [ 7020, 2 ], [ 7280, 3 ], 
+  [ 7371, 1 ], [ 8190, 2 ], [ 11648, 1 ], [ 14742, 1 ], [ 16380, 1 ], 
+  [ 16640, 2 ], [ 17472, 2 ], [ 17920, 2 ], [ 19683, 1 ], [ 21840, 1 ], 
+  [ 22113, 1 ] ] current=rec(
+  almost := true,
+  name := "O8+(3)M5",
+  order := 4585351680 ) previous=[ rec(
+      almost := true,
+      name := "Fi22M3",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O7(3)",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M2",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M3",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M4",
+      order := 4585351680 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 78, 1 ], [ 91, 1 ], [ 105, 1 ], 
+  [ 168, 1 ], [ 182, 1 ], [ 195, 1 ], [ 260, 2 ], [ 273, 1 ], [ 546, 1 ], 
+  [ 819, 1 ], [ 910, 2 ], [ 1092, 1 ], [ 1365, 2 ], [ 1560, 2 ], [ 1638, 1 ], 
+  [ 1820, 1 ], [ 2106, 1 ], [ 2184, 1 ], [ 2457, 1 ], [ 2730, 2 ], 
+  [ 2835, 1 ], [ 4095, 2 ], [ 4368, 1 ], [ 4536, 1 ], [ 5265, 1 ], 
+  [ 5460, 3 ], [ 5824, 2 ], [ 6552, 1 ], [ 7020, 2 ], [ 7280, 3 ], 
+  [ 7371, 1 ], [ 8190, 2 ], [ 11648, 1 ], [ 14742, 1 ], [ 16380, 1 ], 
+  [ 16640, 2 ], [ 17472, 2 ], [ 17920, 2 ], [ 19683, 1 ], [ 21840, 1 ], 
+  [ 22113, 1 ] ] current=rec(
+  almost := true,
+  name := "O8+(3)M6",
+  order := 4585351680 ) previous=[ rec(
+      almost := true,
+      name := "Fi22M3",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O7(3)",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M2",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M3",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M4",
+      order := 4585351680 ), rec(
+      almost := true,
+      name := "O8+(3)M5",
+      order := 4585351680 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 78, 2 ], [ 91, 2 ], [ 105, 2 ], 
+  [ 168, 2 ], [ 182, 2 ], [ 195, 2 ], [ 273, 2 ], [ 520, 1 ], [ 546, 2 ], 
+  [ 819, 2 ], [ 1092, 2 ], [ 1365, 4 ], [ 1638, 2 ], [ 1820, 3 ], 
+  [ 2106, 2 ], [ 2184, 2 ], [ 2457, 2 ], [ 2730, 4 ], [ 2835, 2 ], 
+  [ 3120, 1 ], [ 4095, 4 ], [ 4368, 2 ], [ 4536, 2 ], [ 5265, 2 ], 
+  [ 5460, 6 ], [ 5824, 4 ], [ 6552, 2 ], [ 7280, 2 ], [ 7371, 2 ], 
+  [ 11648, 2 ], [ 14040, 1 ], [ 14560, 1 ], [ 14742, 2 ], [ 16380, 3 ], 
+  [ 16640, 4 ], [ 17472, 4 ], [ 17920, 4 ], [ 19683, 2 ], [ 21840, 2 ], 
+  [ 22113, 2 ] ] current=rec(
+  almost := true,
+  name := "O8-(3)M3",
+  order := 9170703360 ) previous=[ rec(
+      almost := true,
+      name := "O7(3).2",
+      order := 9170703360 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 28, 1 ], [ 35, 3 ], [ 50, 1 ], 
+  [ 84, 3 ], [ 175, 1 ], [ 210, 3 ], [ 300, 1 ], [ 350, 1 ], [ 525, 1 ], 
+  [ 567, 3 ], [ 700, 4 ], [ 840, 3 ], [ 972, 1 ], [ 1050, 3 ], [ 1344, 3 ], 
+  [ 1400, 1 ], [ 1575, 3 ], [ 2100, 3 ], [ 2240, 3 ], [ 2268, 3 ], 
+  [ 2835, 3 ], [ 3200, 1 ], [ 4096, 1 ], [ 4200, 1 ], [ 6075, 1 ] ] current=
+rec(
+  almost := true,
+  name := "O8+(3)M11",
+  order := 174182400 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2)",
+      order := 174182400 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 28, 1 ], [ 35, 3 ], [ 50, 1 ], 
+  [ 84, 3 ], [ 175, 1 ], [ 210, 3 ], [ 300, 1 ], [ 350, 1 ], [ 525, 1 ], 
+  [ 567, 3 ], [ 700, 4 ], [ 840, 3 ], [ 972, 1 ], [ 1050, 3 ], [ 1344, 3 ], 
+  [ 1400, 1 ], [ 1575, 3 ], [ 2100, 3 ], [ 2240, 3 ], [ 2268, 3 ], 
+  [ 2835, 3 ], [ 3200, 1 ], [ 4096, 1 ], [ 4200, 1 ], [ 6075, 1 ] ] current=
+rec(
+  almost := true,
+  name := "O8+(3)M12",
+  order := 174182400 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2)",
+      order := 174182400 ), rec(
+      almost := true,
+      name := "O8+(3)M11",
+      order := 174182400 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 28, 1 ], [ 35, 3 ], [ 50, 1 ], 
+  [ 84, 3 ], [ 175, 1 ], [ 210, 3 ], [ 300, 1 ], [ 350, 1 ], [ 525, 1 ], 
+  [ 567, 3 ], [ 700, 4 ], [ 840, 3 ], [ 972, 1 ], [ 1050, 3 ], [ 1344, 3 ], 
+  [ 1400, 1 ], [ 1575, 3 ], [ 2100, 3 ], [ 2240, 3 ], [ 2268, 3 ], 
+  [ 2835, 3 ], [ 3200, 1 ], [ 4096, 1 ], [ 4200, 1 ], [ 6075, 1 ] ] current=
+rec(
+  almost := true,
+  name := "O8+(3)M13",
+  order := 174182400 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2)",
+      order := 174182400 ), rec(
+      almost := true,
+      name := "O8+(3)M11",
+      order := 174182400 ), rec(
+      almost := true,
+      name := "O8+(3)M12",
+      order := 174182400 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 2, 1 ], [ 28, 2 ], [ 50, 2 ], 
+  [ 56, 1 ], [ 100, 1 ], [ 105, 2 ], [ 175, 2 ], [ 252, 2 ], [ 300, 2 ], 
+  [ 350, 3 ], [ 525, 2 ], [ 600, 1 ], [ 630, 2 ], [ 700, 3 ], [ 972, 2 ], 
+  [ 1050, 1 ], [ 1400, 3 ], [ 1701, 2 ], [ 1944, 1 ], [ 2100, 2 ], 
+  [ 2520, 2 ], [ 2800, 1 ], [ 3150, 2 ], [ 3200, 2 ], [ 4032, 2 ], 
+  [ 4096, 2 ], [ 4200, 2 ], [ 4725, 2 ], [ 6075, 2 ], [ 6300, 2 ], 
+  [ 6400, 1 ], [ 6720, 2 ], [ 6804, 2 ], [ 8192, 1 ], [ 8400, 1 ], 
+  [ 8505, 2 ], [ 12150, 1 ] ] current=rec(
+  almost := true,
+  name := "F4(2)M8",
+  order := 1045094400 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2).3.2",
+      order := 1045094400 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 260, 4 ], [ 300, 2 ], [ 520, 2 ], 
+  [ 819, 6 ], [ 2808, 2 ], [ 4550, 2 ], [ 5460, 4 ], [ 9450, 2 ], 
+  [ 10920, 2 ], [ 17550, 2 ], [ 18200, 2 ], [ 23400, 4 ], [ 24192, 2 ], 
+  [ 27300, 2 ], [ 29120, 4 ], [ 36400, 2 ], [ 40950, 4 ], [ 46592, 6 ], 
+  [ 46800, 2 ], [ 49140, 4 ], [ 54600, 6 ], [ 58240, 2 ], [ 66339, 6 ], 
+  [ 81900, 2 ], [ 98280, 2 ], [ 109200, 2 ], [ 163800, 6 ], [ 189540, 4 ], 
+  [ 218700, 2 ], [ 232960, 4 ], [ 245700, 2 ], [ 262080, 4 ], [ 291200, 2 ], 
+  [ 332800, 8 ], [ 368550, 2 ], [ 379080, 2 ], [ 419328, 6 ], [ 465920, 8 ], 
+  [ 491400, 2 ], [ 524160, 2 ], [ 531441, 2 ], [ 582400, 2 ], [ 716800, 4 ] 
+ ] current=rec(
+  almost := true,
+  name := "O8+(3).2_1'",
+  order := 9904359628800 ) previous=[ rec(
+      almost := true,
+      name := "O8+(3).2_1",
+      order := 9904359628800 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 260, 4 ], [ 300, 2 ], [ 520, 2 ], 
+  [ 819, 6 ], [ 2808, 2 ], [ 4550, 2 ], [ 5460, 4 ], [ 9450, 2 ], 
+  [ 10920, 2 ], [ 17550, 2 ], [ 18200, 2 ], [ 23400, 4 ], [ 24192, 2 ], 
+  [ 27300, 2 ], [ 29120, 4 ], [ 36400, 2 ], [ 40950, 4 ], [ 46592, 6 ], 
+  [ 46800, 2 ], [ 49140, 4 ], [ 54600, 6 ], [ 58240, 2 ], [ 66339, 6 ], 
+  [ 81900, 2 ], [ 98280, 2 ], [ 109200, 2 ], [ 163800, 6 ], [ 189540, 4 ], 
+  [ 218700, 2 ], [ 232960, 4 ], [ 245700, 2 ], [ 262080, 4 ], [ 291200, 2 ], 
+  [ 332800, 8 ], [ 368550, 2 ], [ 379080, 2 ], [ 419328, 6 ], [ 465920, 8 ], 
+  [ 491400, 2 ], [ 524160, 2 ], [ 531441, 2 ], [ 582400, 2 ], [ 716800, 4 ] 
+ ] current=rec(
+  almost := true,
+  name := "O8+(3).2_1''",
+  order := 9904359628800 ) previous=[ rec(
+      almost := true,
+      name := "O8+(3).2_1",
+      order := 9904359628800 ), rec(
+      almost := true,
+      name := "O8+(3).2_1'",
+      order := 9904359628800 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 260, 4 ], [ 300, 2 ], [ 520, 2 ], 
+  [ 819, 2 ], [ 1638, 1 ], [ 2275, 4 ], [ 2808, 2 ], [ 4550, 1 ], 
+  [ 5460, 4 ], [ 9450, 2 ], [ 10920, 2 ], [ 17550, 2 ], [ 18200, 6 ], 
+  [ 23400, 4 ], [ 24192, 2 ], [ 27300, 2 ], [ 29120, 4 ], [ 36400, 1 ], 
+  [ 40950, 4 ], [ 46592, 2 ], [ 46800, 2 ], [ 49140, 4 ], [ 54600, 6 ], 
+  [ 58240, 2 ], [ 66339, 2 ], [ 81900, 2 ], [ 93184, 1 ], [ 98280, 2 ], 
+  [ 109200, 2 ], [ 132678, 1 ], [ 163800, 2 ], [ 184275, 4 ], [ 189540, 4 ], 
+  [ 218700, 2 ], [ 232960, 4 ], [ 245700, 2 ], [ 262080, 4 ], [ 291200, 6 ], 
+  [ 327600, 1 ], [ 332800, 4 ], [ 368550, 1 ], [ 379080, 2 ], [ 419328, 2 ], 
+  [ 465920, 4 ], [ 491400, 2 ], [ 524160, 2 ], [ 531441, 2 ], [ 582400, 1 ], 
+  [ 665600, 1 ], [ 716800, 4 ], [ 838656, 1 ], [ 931840, 1 ] ] current=rec(
+  almost := true,
+  name := "O8+(3).2_2'",
+  order := 9904359628800 ) previous=[ rec(
+      almost := true,
+      name := "O8+(3).2_2",
+      order := 9904359628800 ) ]
+PROGRESS checked=2300 runtime_ms=164272
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 102, 1 ], [ 306, 1 ], [ 680, 2 ], 
+  [ 1275, 2 ], [ 1920, 2 ], [ 2058, 1 ], [ 2550, 1 ], [ 4080, 2 ], 
+  [ 4352, 2 ], [ 6272, 2 ], [ 6528, 2 ], [ 7650, 2 ], [ 10880, 2 ], 
+  [ 11900, 2 ], [ 13720, 2 ], [ 14400, 2 ], [ 14994, 1 ], [ 15300, 1 ], 
+  [ 17493, 2 ], [ 20825, 2 ], [ 21504, 4 ], [ 22050, 2 ], [ 22950, 1 ], 
+  [ 23324, 2 ] ] current=rec(
+  almost := true,
+  name := "He.2",
+  order := 8060774400 ) previous=[ rec(
+      almost := true,
+      name := "F3+M14",
+      order := 8060774400 ) ]
+PROGRESS checked=2400 runtime_ms=171076
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 7, 1 ], [ 15, 1 ], [ 21, 2 ], 
+  [ 27, 1 ], [ 35, 2 ], [ 56, 1 ], [ 70, 1 ], [ 84, 1 ], [ 105, 3 ], 
+  [ 120, 1 ], [ 168, 1 ], [ 189, 3 ], [ 210, 2 ], [ 216, 1 ], [ 280, 2 ], 
+  [ 315, 1 ], [ 336, 1 ], [ 378, 1 ], [ 405, 1 ], [ 420, 1 ], [ 512, 1 ] 
+ ] current=rec(
+  almost := true,
+  name := "S6(2)",
+  order := 1451520 ) previous=[ rec(
+      almost := true,
+      name := "O8+(2)M2",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "O8+(2)M3",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "U6(2)M9",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "U6(2)M10",
+      order := 1451520 ), rec(
+      almost := true,
+      name := "O7(3)M8",
+      order := 1451520 ) ]
+CANDIDATE degree_multiset=[ [ 1, 1 ], [ 35, 1 ], [ 51, 1 ], [ 85, 1 ], 
+  [ 119, 1 ], [ 135, 1 ], [ 238, 1 ], [ 510, 1 ], [ 595, 2 ], [ 918, 1 ], 
+  [ 1190, 1 ], [ 1275, 1 ], [ 1512, 1 ], [ 1785, 2 ], [ 2295, 1 ], 
+  [ 2856, 2 ], [ 2975, 2 ], [ 3213, 2 ], [ 3400, 1 ], [ 3570, 3 ], 
+  [ 3808, 1 ], [ 4200, 1 ], [ 4760, 1 ], [ 5712, 1 ], [ 5950, 2 ], 
+  [ 7140, 1 ], [ 8160, 1 ], [ 8925, 2 ], [ 8960, 1 ], [ 9639, 1 ], 
+  [ 10200, 1 ], [ 11900, 2 ], [ 13056, 1 ], [ 13600, 1 ], [ 14280, 2 ], 
+  [ 14688, 1 ], [ 16065, 5 ], [ 17850, 2 ], [ 18360, 1 ], [ 19040, 1 ], 
+  [ 23800, 2 ], [ 26775, 2 ], [ 28560, 1 ], [ 28917, 1 ], [ 30464, 1 ], 
+  [ 32130, 3 ], [ 34425, 2 ], [ 34560, 1 ], [ 38080, 1 ], [ 38556, 1 ], 
+  [ 42525, 2 ], [ 43520, 1 ], [ 47600, 1 ], [ 48195, 1 ], [ 51408, 1 ], 
+  [ 53550, 1 ], [ 57120, 1 ], [ 65536, 1 ], [ 68850, 1 ] ] current=rec(
+  almost := true,
+  name := "F4(2)M4",
+  order := 47377612800 ) previous=[ rec(
+      almost := true,
+      name := "S8(2)",
+      order := 47377612800 ) ]
+CANDIDATE degree_multiset=[ [ 1, 3 ], [ 26, 3 ], [ 52, 3 ], [ 196, 3 ], 
+  [ 273, 3 ], [ 324, 3 ], [ 468, 3 ], [ 637, 3 ], [ 1053, 4 ], [ 1274, 3 ], 
+  [ 1664, 3 ], [ 2184, 3 ], [ 4096, 3 ], [ 5096, 3 ], [ 5733, 1 ], 
+  [ 6318, 1 ], [ 7371, 1 ], [ 8424, 1 ], [ 11466, 1 ], [ 11907, 1 ] ] current=
+rec(
+  almost := true,
+  name := "F4(2)M10",
+  order := 634023936 ) previous=[ rec(
+      almost := true,
+      name := "3D4(2).3",
+      order := 634023936 ) ]
+PROGRESS checked=2500 runtime_ms=174699
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 21, 2 ], [ 35, 4 ], [ 90, 2 ], 
+  [ 140, 2 ], [ 189, 2 ], [ 210, 2 ], [ 280, 4 ], [ 315, 4 ], [ 420, 2 ], 
+  [ 560, 3 ], [ 729, 2 ], [ 896, 2 ], [ 1280, 1 ] ] current=rec(
+  almost := true,
+  name := "U4(3).2_2",
+  order := 6531840 ) previous=[ rec(
+      almost := true,
+      name := "U6(2)M5",
+      order := 6531840 ), rec(
+      almost := true,
+      name := "U6(2)M6",
+      order := 6531840 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 21, 2 ], [ 35, 4 ], [ 90, 2 ], 
+  [ 140, 2 ], [ 189, 2 ], [ 210, 2 ], [ 280, 4 ], [ 315, 4 ], [ 420, 2 ], 
+  [ 560, 3 ], [ 729, 2 ], [ 896, 2 ], [ 1280, 1 ] ] current=rec(
+  almost := true,
+  name := "U4(3).2_2'",
+  order := 6531840 ) previous=[ rec(
+      almost := true,
+      name := "U6(2)M5",
+      order := 6531840 ), rec(
+      almost := true,
+      name := "U6(2)M6",
+      order := 6531840 ), rec(
+      almost := true,
+      name := "U4(3).2_2",
+      order := 6531840 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 21, 2 ], [ 70, 1 ], [ 90, 2 ], 
+  [ 140, 2 ], [ 189, 2 ], [ 210, 2 ], [ 420, 2 ], [ 560, 4 ], [ 630, 1 ], 
+  [ 729, 2 ], [ 896, 2 ], [ 1280, 1 ] ] current=rec(
+  almost := true,
+  name := "U4(3).2_3'",
+  order := 6531840 ) previous=[ rec(
+      almost := true,
+      name := "U4(3).2_3",
+      order := 6531840 ) ]
+PROGRESS checked=2600 runtime_ms=181895
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 6, 2 ], [ 7, 2 ], [ 14, 3 ], 
+  [ 21, 2 ], [ 27, 2 ], [ 42, 1 ], [ 56, 1 ], [ 64, 1 ] ] current=rec(
+  almost := true,
+  name := "G2(3)M2",
+  order := 12096 ) previous=[ rec(
+      almost := true,
+      name := "U3(3).2",
+      order := 12096 ) ]
+CANDIDATE degree_multiset=[ [ 1, 2 ], [ 20, 2 ], [ 21, 2 ], [ 28, 2 ], 
+  [ 56, 1 ], [ 84, 2 ], [ 105, 2 ], [ 125, 2 ], [ 126, 2 ], [ 252, 1 ], 
+  [ 288, 1 ] ] current=rec(
+  almost := true,
+  name := "U3(5).2",
+  order := 252000 ) previous=[ rec(
+      almost := true,
+      name := "HSM3",
+      order := 252000 ) ]

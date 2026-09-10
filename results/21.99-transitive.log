@@ -1,0 +1,72 @@
+Syntax warning: Unbound global variable in scripts/search_21_99.g:23
+        transport := List([1..n],x->RepresentativeAction(g,x,1));
+                                                         ^
+Syntax warning: Unbound global variable in scripts/search_21_99.g:28
+            fixed := Number([1..n],x->x^c=x);
+                                        ^
+DEGREE_DONE n=2 total=1 checked=0 rank_two=1
+DEGREE_DONE n=3 total=2 checked=1 rank_two=2
+DEGREE_DONE n=4 total=5 checked=4 rank_two=4
+DEGREE_DONE n=5 total=5 checked=6 rank_two=7
+DEGREE_DONE n=6 total=16 checked=18 rank_two=11
+DEGREE_DONE n=7 total=7 checked=21 rank_two=15
+DEGREE_DONE n=8 total=50 checked=64 rank_two=22
+DEGREE_DONE n=9 total=34 checked=89 rank_two=31
+PROGRESS checked=100 n=10 index=11 runtime_ms=1756
+DEGREE_DONE n=10 total=45 checked=127 rank_two=38
+DEGREE_DONE n=11 total=8 checked=130 rank_two=43
+PROGRESS checked=200 n=12 index=70 runtime_ms=2567
+PROGRESS checked=300 n=12 index=170 runtime_ms=2818
+PROGRESS checked=400 n=12 index=273 runtime_ms=5161
+DEGREE_DONE n=12 total=301 checked=425 rank_two=49
+DEGREE_DONE n=13 total=9 checked=430 rank_two=53
+DEGREE_DONE n=14 total=63 checked=489 rank_two=57
+PROGRESS checked=500 n=15 index=11 runtime_ms=10959
+DEGREE_DONE n=15 total=104 checked=589 rank_two=61
+PROGRESS checked=600 n=16 index=11 runtime_ms=17760
+PROGRESS checked=700 n=16 index=111 runtime_ms=17889
+PROGRESS checked=800 n=16 index=211 runtime_ms=18024
+PROGRESS checked=900 n=16 index=311 runtime_ms=18194
+PROGRESS checked=1000 n=16 index=411 runtime_ms=18343
+PROGRESS checked=1100 n=16 index=512 runtime_ms=18547
+PROGRESS checked=1200 n=16 index=612 runtime_ms=18760
+PROGRESS checked=1300 n=16 index=712 runtime_ms=18955
+PROGRESS checked=1400 n=16 index=813 runtime_ms=19938
+PROGRESS checked=1500 n=16 index=913 runtime_ms=21841
+PROGRESS checked=1600 n=16 index=1013 runtime_ms=23597
+PROGRESS checked=1700 n=16 index=1115 runtime_ms=25852
+PROGRESS checked=1800 n=16 index=1215 runtime_ms=28461
+PROGRESS checked=1900 n=16 index=1315 runtime_ms=30854
+PROGRESS checked=2000 n=16 index=1416 runtime_ms=34389
+PROGRESS checked=2100 n=16 index=1517 runtime_ms=37496
+PROGRESS checked=2200 n=16 index=1617 runtime_ms=41825
+PROGRESS checked=2300 n=16 index=1719 runtime_ms=46230
+PROGRESS checked=2400 n=16 index=1820 runtime_ms=51702
+PROGRESS checked=2500 n=16 index=1922 runtime_ms=58615
+DEGREE_DONE n=16 total=1954 checked=2530 rank_two=74
+DEGREE_DONE n=17 total=10 checked=2534 rank_two=80
+PROGRESS checked=2600 n=18 index=66 runtime_ms=66634
+PROGRESS checked=2700 n=18 index=166 runtime_ms=66834
+PROGRESS checked=2800 n=18 index=266 runtime_ms=67970
+PROGRESS checked=2900 n=18 index=366 runtime_ms=69584
+PROGRESS checked=3000 n=18 index=467 runtime_ms=71671
+PROGRESS checked=3100 n=18 index=568 runtime_ms=74072
+PROGRESS checked=3200 n=18 index=668 runtime_ms=77664
+PROGRESS checked=3300 n=18 index=768 runtime_ms=81880
+PROGRESS checked=3400 n=18 index=868 runtime_ms=88478
+PROGRESS checked=3500 n=18 index=968 runtime_ms=111423
+DEGREE_DONE n=18 total=983 checked=3513 rank_two=84
+DEGREE_DONE n=19 total=8 checked=3518 rank_two=87
+PROGRESS checked=3600 n=20 index=82 runtime_ms=173823
+PROGRESS checked=3700 n=20 index=182 runtime_ms=174784
+PROGRESS checked=3800 n=20 index=283 runtime_ms=178227
+PROGRESS checked=3900 n=20 index=384 runtime_ms=181574
+PROGRESS checked=4000 n=20 index=484 runtime_ms=185628
+PROGRESS checked=4100 n=20 index=584 runtime_ms=192017
+PROGRESS checked=4200 n=20 index=684 runtime_ms=200166
+PROGRESS checked=4300 n=20 index=784 runtime_ms=206780
+PROGRESS checked=4400 n=20 index=884 runtime_ms=218040
+PROGRESS checked=4500 n=20 index=984 runtime_ms=240539
+PROGRESS checked=4600 n=20 index=1084 runtime_ms=337192
+DEGREE_DONE n=20 total=1117 checked=4631 rank_two=91
+DONE checked=4631 rank_two=91

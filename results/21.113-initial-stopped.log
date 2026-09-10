@@ -1,0 +1,10 @@
+Syntax warning: Unbound global variable in scripts/search_21_113.g:31
+        values := List([1..Length(sizes)],i->values[i]/sizes[i]);
+                                                       ^^^^^
+Syntax warning: Unbound global variable in scripts/search_21_113.g:34
+        coeffs := List(Irr(t),chi->ScalarProduct(t,psi,chi));
+                                                 ^
+Syntax warning: Unbound global variable in scripts/search_21_113.g:34
+        coeffs := List(Irr(t),chi->ScalarProduct(t,psi,chi));
+                                                   ^^^
+Error, user interrupt
