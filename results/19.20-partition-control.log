@@ -1,0 +1,12 @@
+PARAMETERS start=64 end=64 start_id=263 end_id=267 skip_abelian=true log_all=true
+ORDER_START order=64 groups=267
+COUNTS id=[ 64, 263 ] end=3276800 piso=1970176
+STRONG_INEQUALITY_COUNTEREXAMPLE id=[ 64, 263 ] end=3276800 piso=1970176
+CLOSEST id=[ 64, 263 ] end=3276800 piso=1970176 ratio=481/800
+COUNTS id=[ 64, 264 ] end=6074368 piso=3277312
+STRONG_INEQUALITY_COUNTEREXAMPLE id=[ 64, 264 ] end=6074368 piso=3277312
+CLOSEST id=[ 64, 264 ] end=6074368 piso=3277312 ratio=6401/11864
+COUNTS id=[ 64, 265 ] end=282624 piso=1798656
+COUNTS id=[ 64, 266 ] end=484352 piso=1043584
+ABELIAN_SKIPPED id=[ 64, 267 ] reason=known_equality
+DONE checked=4 abelian=0 hits=0 reversed=2 skipped_abelian=1 closest=[ 64, 264 ] min_ratio=6401/11864 runtime_ms=5673

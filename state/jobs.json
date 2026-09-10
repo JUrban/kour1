@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T23:00:47.099415+00:00",
+  "observed_utc": "2026-09-10T23:20:06.835849+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -141,6 +141,14 @@
         "results/21.68-gap-verification.log",
         "results/21.68-independent-verification.json"
       ]
+    },
+    {
+      "task": "19.20 order256 exact counting",
+      "command": "python3 scripts/run_19_20_order256.py",
+      "output": "results/19.20-order256-ids*.log",
+      "metadata": "state/19.20-order256-jobs.json",
+      "progress": "results/19.20-order256-progress.json",
+      "last_observed_status": "16 GAP worker processes revalidated; 4360 counts, no errors, no equality hits, no completed blocks at snapshot."
     }
   ]
 }

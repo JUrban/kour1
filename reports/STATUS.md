@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-10T23:00:47.099415+00:00.
+Updated: 2026-09-10T23:20:06.835849+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
-- Complete candidate resolutions: **4**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), and **21.68** (semi-abelian non-monomial group of order2592). All await outside review and further novelty checks.
+- Complete candidate resolutions: **5**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), and **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- Both the 21.26 Sylow-intersection search through order2000 and the 19.20 counting search through order255 have completed. No GAP search worker remains live.
+- Both the 21.26 search through order2000 and the 19.20 search through order255 are complete. The 19.20 order256 extension is running in 16 GAP workers; all process command lines and logs were just revalidated. At this snapshot 4,360 groups have been counted, with 0 equality hits and 0 reverse inequalities.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
@@ -18,6 +18,8 @@ Updated: 2026-09-10T23:00:47.099415+00:00.
 **21.121(a):** A free product of central quotients of (Q_8 semidirect C_3) powers has 2-Jordan exponent log(24)/log(8), with no bound at the infimum. A binary simplex-code lemma controls every subgroup, giving a uniform bound for each larger exponent. Proof and audit: `research/21.121a-proof.md` and `research/21.121a-review.md`. Exact checks passed on all 11,781 subgroups of the second finite group, plus independent code and quaternion controls. Part (b) remains unresolved.
 
 **21.68:** G=B semidirect K, where K=E semidirect A4 has order96 and contains H=Q8 semidirect C3 of index4. B is the three-dimensional F3 augmentation module on K/H. The explicit abelian extension chain makes G semi-abelian. A degree8 irreducible character would, if monomial, force an index2 subgroup in H, contradicting H_ab=C3. GAP and independent rational quaternion/cyclotomic computations pass. See `research/21.68-proof.md` and `research/21.68-review.md`.
+
+**16.87(a),(b):** In the variety defined by central commutators of exponent dividing p, every relatively free group G_r has abelianization Z^r and central p-th powers of its generators. For any fewer than r selected elements, an epimorphism f:G_r -> Z vanishes on all of them. A suitable central c with f(c)>0 makes g -> g c^{f(g)} fix them exactly and fail to be onto. Thus test rank is r for every r, although the variety is nonabelian and contains Z. The proof is self-contained; exact substitution checks on 1,156 target sets passed. See `research/16.87-proof.md` and `research/16.87-review.md`.
 
 ## Completed bounded searches
 
@@ -39,8 +41,8 @@ Cameron's 2025 paper. The Notebook equality question remains unresolved.
 A complete coordinate argument and independently verified finite counts
 are in `research/19.20-stronger-counterexample.md`. The Python certificate
 enumerates all 593 subgroups without GAP; a GAP central-product realization
-gives the same totals. This is a separate partial result, not a fourth
-complete resolution of a Notebook problem.
+gives the same totals. This is a separate partial result, not a complete
+resolution of a Notebook problem.
 
 ## Additional constructions and exclusions
 
@@ -67,7 +69,7 @@ as a substantive new resolution of the intended problem.
 ## Next work
 
 1. Revalidate running jobs and certify any hits.
-2. Continue novelty and mathematical audits of all four candidate resolutions.
+2. Continue novelty and mathematical audits of all five candidate resolutions.
 3. Investigate 19.20 equality beyond the completed range, using the verified reverse inequality as a structural lead.
 4. Expand beyond the initial involution graph range and continue surveying older problems.
 

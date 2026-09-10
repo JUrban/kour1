@@ -179,3 +179,20 @@ zero equality hits,and50 reverse inequalities. Total through255 is7011
 nontrivial groups,493 abelian controls,6518 nonabelian groups,and54 reverse
 inequalities. Every DONE marker and absence of errors was checked.
 No nonabelian equality counterexample was found.
+
+At 2026-09-10T23:20:06.835849+00:00, completed a fifth candidate resolution,16.87(a),(b).
+The variety of class-two groups with commutators of exponent dividing p
+is nonabelian and nonperiodic, while its free group of rank r has test
+rank r. The central endomorphism g -> g c^f(g), with f chosen by an
+integer nullspace, supplies the lower bound for every proposed smaller
+test set. Exact generator-substitution checks passed for1,156 target
+sets,2,398 fixed elements,and3,468 homomorphism/substitution checks.
+The printed page was visually checked; a first literature audit found
+no prior resolution. Outside review and further novelty work remain.
+
+The19.20 order256 search was launched at23:05:27UTC across16workers,
+covering all56,092 group IDs and retaining every exact pair of counts.
+A short partition control matched the previously certified order64
+counts and abelian skip. All16 command lines were revalidated at this
+checkpoint; 4360 groups counted, no errors or equality hits.
+Full metadata and snapshot are recorded separately from the live logs.
