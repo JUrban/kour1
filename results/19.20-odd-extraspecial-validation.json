@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "description": "Independent GAP group realizations, endomorphism and partial-isomorphism counts, all subgroup multiplicities and automorphism orders agree.",
+  "cases": [
+    {
+      "p": 3,
+      "m": 1,
+      "r": 0,
+      "order": 27,
+      "ends": 729,
+      "partials": 1539,
+      "types_checked": 4
+    },
+    {
+      "p": 3,
+      "m": 1,
+      "r": 1,
+      "order": 81,
+      "ends": 111537,
+      "partials": 356481,
+      "types_checked": 6
+    },
+    {
+      "p": 3,
+      "m": 1,
+      "r": 2,
+      "order": 243,
+      "ends": 196101729,
+      "partials": 724354083,
+      "types_checked": 8
+    },
+    {
+      "p": 3,
+      "m": 2,
+      "r": 0,
+      "order": 243,
+      "ends": 28874961,
+      "partials": 74902563,
+      "types_checked": 7
+    },
+    {
+      "p": 5,
+      "m": 1,
+      "r": 0,
+      "order": 125,
+      "ends": 15625,
+      "partials": 33125,
+      "types_checked": 4
+    }
+  ]
+}

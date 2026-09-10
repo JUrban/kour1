@@ -1,0 +1,40 @@
+START p=3 m=1 r=0 order=27
+COUNTS p=3 m=1 r=0 order=27 end=729 piso=1539
+TYPE p=3 m=1 r=0 id=1_1 values=[ 1, 1, 1 ]
+TYPE p=3 m=1 r=0 id=27_3 values=[ 1, 1, 432 ]
+TYPE p=3 m=1 r=0 id=3_1 values=[ 13, 4, 2 ]
+TYPE p=3 m=1 r=0 id=9_2 values=[ 4, 1, 48 ]
+START p=3 m=1 r=1 order=81
+COUNTS p=3 m=1 r=1 order=81 end=111537 piso=356481
+TYPE p=3 m=1 r=1 id=1_1 values=[ 1, 1, 1 ]
+TYPE p=3 m=1 r=1 id=27_3 values=[ 9, 3, 432 ]
+TYPE p=3 m=1 r=1 id=27_5 values=[ 4, 1, 11232 ]
+TYPE p=3 m=1 r=1 id=3_1 values=[ 40, 13, 2 ]
+TYPE p=3 m=1 r=1 id=81_12 values=[ 1, 1, 23328 ]
+TYPE p=3 m=1 r=1 id=9_2 values=[ 49, 13, 48 ]
+START p=3 m=1 r=2 order=243
+COUNTS p=3 m=1 r=2 order=243 end=196101729 piso=724354083
+TYPE p=3 m=1 r=2 id=1_1 values=[ 1, 1, 1 ]
+TYPE p=3 m=1 r=2 id=243_62 values=[ 1, 1, 15116544 ]
+TYPE p=3 m=1 r=2 id=27_3 values=[ 81, 9, 432 ]
+TYPE p=3 m=1 r=2 id=27_5 values=[ 157, 40, 11232 ]
+TYPE p=3 m=1 r=2 id=3_1 values=[ 121, 40, 2 ]
+TYPE p=3 m=1 r=2 id=81_12 values=[ 36, 12, 23328 ]
+TYPE p=3 m=1 r=2 id=81_15 values=[ 4, 1, 24261120 ]
+TYPE p=3 m=1 r=2 id=9_2 values=[ 481, 130, 48 ]
+START p=3 m=2 r=0 order=243
+COUNTS p=3 m=2 r=0 order=243 end=28874961 piso=74902563
+TYPE p=3 m=2 r=0 id=1_1 values=[ 1, 1, 1 ]
+TYPE p=3 m=2 r=0 id=243_65 values=[ 1, 1, 8398080 ]
+TYPE p=3 m=2 r=0 id=27_3 values=[ 90, 0, 432 ]
+TYPE p=3 m=2 r=0 id=27_5 values=[ 40, 40, 11232 ]
+TYPE p=3 m=2 r=0 id=3_1 values=[ 121, 40, 2 ]
+TYPE p=3 m=2 r=0 id=81_12 values=[ 40, 0, 23328 ]
+TYPE p=3 m=2 r=0 id=9_2 values=[ 400, 130, 48 ]
+START p=5 m=1 r=0 order=125
+COUNTS p=5 m=1 r=0 order=125 end=15625 piso=33125
+TYPE p=5 m=1 r=0 id=125_3 values=[ 1, 1, 12000 ]
+TYPE p=5 m=1 r=0 id=1_1 values=[ 1, 1, 1 ]
+TYPE p=5 m=1 r=0 id=25_2 values=[ 6, 1, 480 ]
+TYPE p=5 m=1 r=0 id=5_1 values=[ 31, 6, 4 ]
+DONE runtime_ms=4860

@@ -196,3 +196,26 @@ A short partition control matched the previously certified order64
 counts and abelian skip. All16 command lines were revalidated at this
 checkpoint; 4360 groups counted, no errors or equality hits.
 Full metadata and snapshot are recorded separately from the live logs.
+
+At 2026-09-10T23:36:22.213466+00:00, proved closed counting formulas for exponent-p extraspecial
+groups times elementary abelian p-groups, p odd. Five small GAP models
+matched both totals and all 29 subgroup types. The full order-2187
+model then completed with 66,734 conjugacy classes and 134,414 actual
+subgroups: End=8,241,952,876,767,369 and PIso=2,607,970,224,105,603.
+All 13 multiplicities and automorphism orders match, giving a certified
+odd-order reverse inequality. This remains adjacent to the equality
+question in 19.20. None of the 60 formula cases gave equality.
+
+A Lie-algebra reduction for 21.42 led to a complete positive-grading
+argument for three-generator class-three algebras. The literature search
+then located exactly that theorem in Dekimpe--Igodt--Pouseele (2003),
+explicitly restated in Dekimpe--Deré (2014/2016). Mathieu's Proposition 6
+(2021) supplies self-similarity for each original Malcev lattice. Thus
+a negative answer follows from existing results. The full inference and
+our grading rediscovery are retained, separately from the five new
+candidates. Other triage on21.41,21.133 and countable width is recorded.
+
+Only the16 order256 workers remain active, all revalidated. At this
+snapshot they have counted 8446 groups, with no errors and no
+equality hits. The48-hour goal remains active; no external contacts
+or Git pushes have been made.

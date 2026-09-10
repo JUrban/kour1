@@ -1,0 +1,43 @@
+START order=2187
+AUT_START type=0_0 order=1
+AUT_DONE type=0_0 aut=1
+AUT_START type=0_1 order=3
+AUT_DONE type=0_1 aut=2
+AUT_START type=0_2 order=9
+AUT_DONE type=0_2 aut=48
+AUT_START type=1_0 order=27
+AUT_DONE type=1_0 aut=432
+AUT_START type=0_3 order=27
+AUT_DONE type=0_3 aut=11232
+AUT_START type=1_1 order=81
+AUT_DONE type=1_1 aut=23328
+AUT_START type=0_4 order=81
+AUT_DONE type=0_4 aut=24261120
+AUT_START type=2_0 order=243
+AUT_DONE type=2_0 aut=8398080
+AUT_START type=1_2 order=243
+AUT_DONE type=1_2 aut=15116544
+AUT_START type=0_5 order=243
+AUT_DONE type=0_5 aut=475566474240
+AUT_START type=2_1 order=729
+AUT_DONE type=2_1 aut=4081466880
+AUT_START type=1_3 order=729
+AUT_DONE type=1_3 aut=95506324992
+AUT_START type=2_2 order=2187
+AUT_DONE type=2_2 aut=23803114844160
+SUBGROUPS_DONE classes=66734
+TYPE 0_0 subgroup_count,quotient_count,aut_order=[ 1, 1, 1 ]
+TYPE 0_1 subgroup_count,quotient_count,aut_order=[ 1093, 364, 2 ]
+TYPE 0_2 subgroup_count,quotient_count,aut_order=[ 33853, 11011, 48 ]
+TYPE 0_3 subgroup_count,quotient_count,aut_order=[ 43681, 33880, 11232 ]
+TYPE 0_4 subgroup_count,quotient_count,aut_order=[ 4720, 11011, 24261120 ]
+TYPE 0_5 subgroup_count,quotient_count,aut_order=[ 40, 364, 475566474240 ]
+TYPE 1_0 subgroup_count,quotient_count,aut_order=[ 7290, 0, 432 ]
+TYPE 1_1 subgroup_count,quotient_count,aut_order=[ 32400, 0, 23328 ]
+TYPE 1_2 subgroup_count,quotient_count,aut_order=[ 4410, 0, 15116544 ]
+TYPE 1_3 subgroup_count,quotient_count,aut_order=[ 40, 0, 95506324992 ]
+TYPE 2_0 subgroup_count,quotient_count,aut_order=[ 6561, 9, 8398080 ]
+TYPE 2_1 subgroup_count,quotient_count,aut_order=[ 324, 12, 4081466880 ]
+TYPE 2_2 subgroup_count,quotient_count,aut_order=[ 1, 1, 23803114844160 ]
+PASS order=2187 end=8241952876767369 piso=2607970224105603
+DONE runtime_ms=506246

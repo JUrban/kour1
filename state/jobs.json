@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T23:20:06.835849+00:00",
+  "observed_utc": "2026-09-10T23:36:22.213466+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -148,7 +148,19 @@
       "output": "results/19.20-order256-ids*.log",
       "metadata": "state/19.20-order256-jobs.json",
       "progress": "results/19.20-order256-progress.json",
-      "last_observed_status": "16 GAP worker processes revalidated; 4360 counts, no errors, no equality hits, no completed blocks at snapshot."
+      "last_observed_status": "16 live GAP worker command lines revalidated; 8446 counts, 0 equality hits, 0 reversals, no errors or completed blocks at snapshot."
+    },
+    {
+      "task": "19.20 odd extraspecial small controls",
+      "command": "./bin/gap scripts/verify_19_20_odd_extraspecial.g",
+      "output": "results/19.20-odd-extraspecial-gap.log",
+      "last_observed_status": "completed, 5 groups, both totals and all29 subgroup types match formulas"
+    },
+    {
+      "task": "19.20 odd-order 2187 reverse inequality",
+      "command": "./bin/gap scripts/verify_19_20_odd_2187.g",
+      "output": "results/19.20-odd-2187-gap.log",
+      "last_observed_status": "completed, PASS and DONE, no errors; 66734 classes,134414 actual subgroups,13 types; End8241952876767369>PIso2607970224105603; runtime506246ms"
     }
   ]
 }

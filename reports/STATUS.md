@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-10T23:20:06.835849+00:00.
+Updated: 2026-09-10T23:36:22.213466+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **5**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), and **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- Both the 21.26 search through order2000 and the 19.20 search through order255 are complete. The 19.20 order256 extension is running in 16 GAP workers; all process command lines and logs were just revalidated. At this snapshot 4,360 groups have been counted, with 0 equality hits and 0 reverse inequalities.
+- Both the 21.26 search through order2000 and the 19.20 search through order255 are complete. The 19.20 order256 extension is running in 16 GAP workers; all process command lines and logs were just revalidated. At this snapshot 8,446 groups have been counted, with 0 equality hits and 0 reverse inequalities.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
@@ -44,7 +44,24 @@ enumerates all 593 subgroups without GAP; a GAP central-product realization
 gives the same totals. This is a separate partial result, not a complete
 resolution of a Notebook problem.
 
+The odd-order group E_(3,2) x C3^2 of order 2,187 also reverses the
+stronger inequality: End = 8,241,952,876,767,369 and
+PIso = 2,607,970,224,105,603. Closed formulas for odd-exponent extraspecial
+groups with elementary abelian direct factors are proved in
+`research/19.20-odd-extraspecial.md`. GAP independently counted all
+134,414 subgroups of this example and matched every type multiplicity
+and automorphism order. Five smaller controls also agree. None of the
+60 evaluated parameter triples gives equality.
+
 ## Additional constructions and exclusions
+
+**21.42:** A negative answer follows from the existing positive-grading
+theorem of Dekimpe--Igodt--Pouseele (2003) and Mathieu's self-similarity
+criterion (2021). The necessary implications and a self-contained
+rediscovery of the grading argument are documented in
+`research/21.42-known-consequence.md`. This literature consequence is
+kept separate from the five new-theorem candidates.
+
 
 **21.115:** A September 8 preprint by Sambale resolves the coset-union
 problem in full: https://arxiv.org/abs/2609.09052v1 . Its finite-group
