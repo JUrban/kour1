@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-10T22:31:02.744178+00:00",
+  "observed_utc": "2026-09-10T22:31:56.858285+00:00",
   "warning": "These are last-observed handles, not evidence of current liveness. Poll sessions or inspect PIDs and command lines before resuming or restarting.",
   "jobs": [
     {
@@ -44,11 +44,9 @@
     },
     {
       "task": "21.26 exact Sylow-intersection search",
-      "tool_session": 21247,
-      "pid": 6647,
       "command": "GAP process reading START_ORDER:=1792; END_ORDER:=2000; MIN_PRIMES:=3; Read(\"scripts/search_21_26.g\")",
       "output": "results/21.26-orders1792-2000.log",
-      "last_observed_status": "running, processing order 1920; six parallel blocks already completed"
+      "last_observed_status": "completed: all 309429 checked groups through order2000 pass strict union bound; final block246307 groups, no fallback or hit. Combined with known <=2-prime result, all groups through2000 covered."
     },
     {
       "task": "21.26 independent validation",

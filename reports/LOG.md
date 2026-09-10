@@ -147,3 +147,9 @@ The three completed endomorphism-count blocks cover 2,112 groups of
 orders 2--127 and 129--191. They give no nonabelian equality and the two
 reverse inequalities above. Order128 and192--255 continue. The Sylow
 job is still progressing toward completion. Goal remains active.
+
+At 2026-09-10T22:31:56.858285+00:00, the last Sylow block was confirmed complete and its
+runner session closed. It checked 246,307 groups with no fallback or hit.
+The total is 309,429 checked groups; all satisfy the exact strict union
+bound. Combined with the known two-prime theorem, every group through
+order2000 is now covered. Only two endomorphism-count GAP workers remain.

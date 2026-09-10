@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-10T22:31:02.744178+00:00.
+Updated: 2026-09-10T22:31:56.858285+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **3**: **21.106** (negative), **21.132** (construction for every prime), and **21.121(a)** (infimum not attained at p=2). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- Running computations: 21.26 Sylow-intersection search for orders 1792–2000; currently processing order 1920. Revalidate handles in `state/jobs.json` before relying on liveness.
+- The 21.26 Sylow-intersection search has completed through order 2000. Revalidate the remaining 19.20 worker handles in `state/jobs.json` before relying on liveness.
 - Also running: 19.20 endomorphism/partial-isomorphism counts through order 255. The published range through 63 has been reproduced: 318 groups, including 105 abelian equality controls and 213 nonabelian strict inequalities. Three blocks have now completed (2--127 and 129--191): 2,112 groups, no nonabelian equality. Order 128 and orders 192--255 are still running.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
@@ -25,7 +25,7 @@ Updated: 2026-09-10T22:31:02.744178+00:00.
 - **21.52–53:** 27 group entries, 28 involution classes, one explicit size-cutoff skip, no counterexample. The strengthened run verifies actual group automorphisms on every involution, correcting an insufficient normalizer-only test. See `research/21.52-53-results.md`.
 - **18.43:** All 3,933,931,043 positive necklaces of lengths 1–36 have distinct pairs of exact GL3 trace fingerprints within each length. No candidate identity found. Summary: `results/18.43-summary.json`. Independent Python checks cover enumeration and arithmetic through length 12 and recover a known GL2 identity. Any collision requires exact symbolic certification. GL3 and SL3 versions are equivalent by exponent sums and scalar normalization; this reduction is recorded in `research/18.43-plan.md`.
 
-- **21.26:** 63,122 groups in completed blocks, all satisfying the strict exact union bound. The full range through order 1791 is covered by these checks together with the known result for orders involving at most two primes. The final block 1792–2000 is running. Independent direct enumeration agrees for all 211 non-prime-power-order groups through order 60.
+- **21.26:** All 309,429 checked groups satisfy the strict exact union bound. The full range through order 2000 is covered by these checks together with the known result for orders involving at most two primes. No fallback or counterexample occurred. Independent direct enumeration agrees for all 211 non-prime-power-order groups through order 60.
 
 The index contains 1,308 main-body problem entries, all 150 Issue 21 entries. Editorial stars and later literature must be checked manually. Recent claimed resolutions of 20.21 and decidability in 21.32 are excluded from new-solution counts. Our alternate 21.32 argument is retained as a rediscovery.
 
@@ -60,7 +60,7 @@ as a substantive new resolution of the intended problem.
 
 1. Revalidate running jobs and certify any hits.
 2. Continue novelty and mathematical audits of all three candidate resolutions. The 2013 Timofeenko source has now been inspected.
-3. Finish the remaining 21.26 range and inspect any case not settled by the union bound.
+3. Finish the 19.20 search and investigate the equality question, using the verified reverse inequality as a structural lead.
 4. Expand beyond the initial involution graph range and continue surveying older problems.
 
 Deadline: **2026-09-12 20:56:46 UTC**. The 48-hour goal remains active. No external messages, submissions, or Git pushes have been made.

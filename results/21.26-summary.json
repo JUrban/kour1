@@ -1,24 +1,6 @@
 {
-  "observed_utc": "2026-09-10T22:02:20.112059+00:00",
+  "observed_utc": "2026-09-10T22:31:56.858285+00:00",
   "completed_blocks": [
-    {
-      "low": 1024,
-      "high": 1279,
-      "checked": 7916,
-      "union_bound": 7916
-    },
-    {
-      "low": 1280,
-      "high": 1535,
-      "checked": 21746,
-      "union_bound": 21746
-    },
-    {
-      "low": 1536,
-      "high": 1791,
-      "checked": 7138,
-      "union_bound": 7138
-    },
     {
       "low": 2,
       "high": 255,
@@ -42,9 +24,35 @@
       "high": 1023,
       "checked": 14857,
       "union_bound": 14857
+    },
+    {
+      "low": 1024,
+      "high": 1279,
+      "checked": 7916,
+      "union_bound": 7916
+    },
+    {
+      "low": 1280,
+      "high": 1535,
+      "checked": 21746,
+      "union_bound": 21746
+    },
+    {
+      "low": 1536,
+      "high": 1791,
+      "checked": 7138,
+      "union_bound": 7138
+    },
+    {
+      "low": 1792,
+      "high": 2000,
+      "checked": 246307,
+      "union_bound": 246307
     }
   ],
-  "completed_groups": 63122,
-  "remaining": "Orders 1792..2000 are running, currently at order 1920. All other listed blocks are complete.",
-  "scope": "Initial orders 2..255: all non-prime-power orders; subsequent blocks: at least three distinct prime factors. Orders with at most two primes are settled by known theory."
+  "completed_groups": 309429,
+  "remaining": "None: all planned blocks through order 2000 completed.",
+  "scope": "Initial orders 2..255: all non-prime-power orders; subsequent blocks: at least three distinct prime factors. Orders with at most two primes are settled by known theory.",
+  "all_choices_fallbacks": 0,
+  "counterexamples": 0
 }
