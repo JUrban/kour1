@@ -902,3 +902,17 @@ Its proper-containment N^3 example motivates the20.112 screen but
 does not settle saturation. The preprint's precise author list is
 kept distinct from the2020 publication metadata. Scope and seven
 file hashes are in the screen report and audit.
+
+
+## 7.27: maximal-rank overgroups
+
+Fulman--Guralnick, *Derangements in simple and primitive groups*
+(2003), author manuscript `durham.pdf`, entire Section3 and Section4
+through Lemma4.1 read; the component-group argument in Theorem2.3
+was checked separately. Its Theorem3.2 and exact family4 definition
+are the imported input, including simply connected groups. Initial
+arXiv and 2012 conjugacy-bounds versions are also cached, with exact
+reading scopes in `research/7.27-prior-result.md`. No claim to have
+independently reproved their classification input. Nine files are
+hash-bound in `results/7.27-prior-audit.json`. The affirmative
+consequence is excluded from the new-candidate count.

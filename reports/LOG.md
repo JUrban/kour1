@@ -1449,3 +1449,20 @@ occurred;12 cases required both normalizer-chain computations. Actual
 exit0, clean log, coverage rows and final sentinel are hash-audited.
 These computations remain exploratory, and the general question is
 unresolved. Existing n=7 workers continue; no communications or pushes.
+
+
+## 2026-09-11T15:58:42.804608+00:00 — Diagonal elements and maximal-rank overgroups
+
+Completed an affirmative deduction for7.27 using Fulman--Guralnick
+Theorem3.2. The selected diagonal element has regular n!-th power;
+this places the algebraic split torus in every remaining connected
+overgroup. Type-A root groups then give coordinate blocks. The
+argument treats all proper irreducible subgroups simultaneously and
+works in every characteristic with n fixed and q sufficiently large.
+
+The author manuscript was checked against the initial arXiv copy;
+source scopes, algebraic versus finite torus distinctions, centre
+issues, descent and an internal audit are explicit. This is recorded
+as a complete consequence of prior machinery, leaving26 possible-new
+candidates and zero outside reviews. No computation is asserted to
+prove the asymptotic theorem. Long n=7 verifiers continue locally.

@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T15:43:18.558188+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T15:58:42.804608+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 7.27 | Fulman--Guralnick bounded-rank union theorem plus regular n!-th powers. | Complete affirmative consequence for every fixed n and sufficiently large q, with coordinate blocks and density tending to one in the split torus. Prior machinery; no new count, independent review pending. |
 | 4.56(b) | Projective Euler class followed by Bass cancellation. | Isomorphic kernels follow from the classical 1964 theorem at the exact maximal-spectrum dimension bound. Literal equality qualified; part (a) untouched. No new count. |
 | 20.112 | Test saturation for the first proper-containment example F=N^3. | All 8,339 groups in orders 648,1296,1944 pass; 12 full Frattini-lift comparisons. No general proof; prime-different-from-kernel normalizer lifting remains the obstacle. |
 | 20.92(a) | Affine matrix Lazard plus a constructive polynomial inverse and weighted coefficient extraction. | Twenty-sixth complete affirmative candidate for all primes above an explicit dimension-only bound, without strong nilpotence. Exact polynomial and actual GAP controls pass. Prior machinery credited; outside review and comprehensive novelty checks pending. |

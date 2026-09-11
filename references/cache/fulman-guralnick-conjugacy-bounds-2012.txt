@@ -1,0 +1,2970 @@
+TRANSACTIONS OF THE
+AMERICAN MATHEMATICAL SOCIETY
+Volume 364, Number 6, June 2012, Pages 3023–3070
+S 0002-9947(2012)05427-4
+Article electronically published on February 7, 2012
+
+
+
+    BOUNDS ON THE NUMBER AND SIZES OF CONJUGACY
+         CLASSES IN FINITE CHEVALLEY GROUPS
+        WITH APPLICATIONS TO DERANGEMENTS
+
+
+                          JASON FULMAN AND ROBERT GURALNICK
+
+           Abstract. We present explicit upper bounds for the number and size of con-
+           jugacy classes in ﬁnite Chevalley groups and their variations. These results
+           have been used by many authors to study zeta functions associated to repre-
+           sentations of ﬁnite simple groups, random walks on Chevalley groups, the ﬁnal
+           solution to the Ore conjecture about commutators in ﬁnite simple groups and
+           other similar problems. In this paper, we solve a strong version of the Boston-
+           Shalev conjecture on derangements in simple groups for most of the families
+           of primitive permutation group representations of ﬁnite simple groups (the re-
+           maining cases are settled in two other papers of the authors and applications
+           are given in a third).
+
+
+
+                                          1. Introduction
+   One might expect that there is nothing more to be done with the study of
+conjugacy classes of ﬁnite Chevalley groups. For instance, over forty years ago Wall
+[W] determined the conjugacy classes and their sizes for the unitary, symplectic, and
+orthogonal groups. However, the formulas involved are complicated and it is not
+automatic to derive upper bounds on numbers of classes or their sizes. Moreover,
+many applications seem to require such bounds (in particular, universal explicit
+bounds of the form cq r where r is the rank of the ambient algebraic group and q is
+the size of the ﬁeld of deﬁnition). To convince the reader of this, we mention some
+places in the literature where bounds on the number of conjugacy classes in ﬁnite
+classical groups were needed:
+    (1) The work of Gluck [Gl] on convergence rates of random walks on ﬁnite
+         classical groups. His bounds were of the form cq 3r .
+    (2) The work of Liebeck and Pyber [LiP] on number of conjugacy classes in
+         arbitrary groups; for ﬁnite groups of Lie type their bound was (6q)r .
+    (3) The work of Maslen and Rockmore [MR] on computations of Fourier trans-
+         forms; they obtained a bound of q n for GL(n, q) and 8.26q n for U (n, q).
+         Our bounds are actually better than this type in several senses. We prove
+         bounds of the form q r + cq r−1 where c is explicit (and absolute) for the
+
+   Received by the editors October 16, 2009 and, in revised form, July 21, 2010.
+   2010 Mathematics Subject Classiﬁcation. Primary 20G40, 20B15.
+   Key words and phrases. Number of conjugacy classes, simple group, Chevalley groups, parti-
+tion, derangements, generating function.
+   The ﬁrst author was partially supported by National Science Foundation grants DMS 0503901,
+DMS 0802082, and National Security Agency grants MDA904-03-1-004, H98230-08-1-0133.
+   The second author was partially supported by National Science Foundation grants DMS
+0140578 and DMS 0653873.
+                                                                           2012
+                                                                           c      American Mathematical Society
+                                                              Reverts to public domain 28 years from publication
+
+                                                       3023
+3024                     JASON FULMAN AND ROBERT GURALNICK
+
+
+           groups that are the ﬁxed points of a Frobenius endomorphism and dq r for
+           any group which has socle a Chevalley group.
+       (4) Liebeck and Shalev [LS1] have used bounds in the current paper to study
+           probabilistic results about homomorphisms of certain Fuchsian groups into
+           Chevalley groups, and random walks on Chevalley groups [LS2]. Shalev
+           used these results in a crucial way to study the images of word maps [Sh].
+           Our bounds were also critical in the solution of the Ore conjecture on
+           commutators in ﬁnite simple groups [LOST].
+       (5) Our results have been used in studying various versions of Brauer’s k(GV )
+           problem [GT1] – in particular, the non-coprime version and some new re-
+           lated conjectures of Geoﬀ Robinson [R]. They were used in [GR] in ob-
+           taining new results about the commuting probability in ﬁnite groups. In
+           particular, these results will be useful in improving results of Liebeck-Pyber
+           [LiP] and Maróti [Mar] about the number of conjugacy classes in completely
+           reducible linear groups over ﬁnite ﬁelds and in permutation groups.
+   We also use our results to prove a large part of a conjecture of Boston et al. [Bo]
+and Shalev stating that the proportion of ﬁxed point free elements of a ﬁnite simple
+group in a transitive action on a ﬁnite set X with |X| > 1 is bounded away from
+zero. This immediately reduces to the case of primitive actions (and so to studying
+maximal subgroups of simple groups). This conjecture has applications to random
+generation of groups [FG4] and to maps between varieties over ﬁnite ﬁelds [GW].
+   In [FG1], the conjecture was proved for Chevalley groups of bounded rank. We
+give another proof in this paper (Theorem 7.3). So we can reduce to the case of
+classical groups. In this paper, we prove much stronger results for all primitive
+actions other than when the point stabilizer is an extension ﬁeld group, an im-
+primitive group or a subspace stabilizer. Those cases are handled in [FG2, FG3].
+Here we show that in any other primitive actions, the proportion of ﬁxed point free
+elements tends to 1 as the order of the classical group tends to ∞. Indeed, we show
+that the proportion of elements which are not ﬁxed point free in any such action
+tends to 0. See Theorem 7.7.
+   We now state some of the main results of the paper. If G is a ﬁnite group, we
+let k(G) denote the number of conjugacy classes of G. See [GLS] for background
+on Chevalley groups.
+Theorem 1.1. Let G be a connected simple algebraic group of rank r over a ﬁeld
+of positive characteristic. Let F be a Steinberg-Lang endomorphism of G with GF
+a ﬁnite Chevalley group over the ﬁeld Fq .
+       (1) q r < k(GF ) ≤ 27.2q r .
+       (2) k(GF ) ≤ q r + 68q r−1 . In particular, limq→∞ k(GF )/q r = 1 and the con-
+           vergence is uniform with respect to r.
+       (3) The number of conjugacy classes of GF that are not semisimple is at most
+           68q r−1 .
+       (4) The number of conjugacy classes of G that are F -stable is between q r and
+           27.2q r .
+   There are much better bounds on the constants in Theorem 1.1 for many of the
+families. It seems likely that the correct upper bound for part (1) is about 15.2q r
+(for Sp(2r, 2)). We do obtain this bound for the simple Chevalley groups. The
+27.2 comes from the argument in groups of type D in odd characteristic (this is
+                         BOUNDS ON CONJUGACY CLASSES                              3025
+
+
+because of the nature of the group of diagonal automorphisms). We give limiting
+values for k(GF )/q r (as r → ∞ with q ﬁxed) for each of the families of classical
+groups. In particular, we see that this ratio does not tend to 1 for q ﬁxed. See the
+tables in Section 4 for a summary of the results. There are precise formulas for
+the number of conjugacy classes for the exceptional Chevalley groups – see [Lu2]
+(and similarly, one can work out such formulas for the low rank classical groups).
+As we have already noted earlier in the introduction, the existence of an upper
+bound k(GF ) ≤ cq r where c depends on r has already been proved (and this is
+straightforward). In fact, using the results of Lusztig and others about unipotent
+classes, it is easy to prove that k(GF ) is bounded above by a monic polynomial
+in q of degree r (with r independent of q), whence for a ﬁxed r, it follows that
+k(GF )/q r → 1 as q → ∞. One of the key features of our result is that our bounds
+are of the form cq r or q r + cq r−1 with c explicit and independent of q, r, and many
+of the applications depend on this.
+   We show that one can get a similar bound for almost simple Chevalley groups
+allowing all types of outer automorphisms.
+Corollary 1.2. Let G be an almost simple group with socle S, a Chevalley group
+of rank r deﬁned over Fq .
+    (1) k(S) ≤ 15.2q r .
+    (2) k(S) ≤ q r + 30q r−1 .
+    (3) k(G) ≤ 100q r .
+   Recall that a permutation is called a derangement if it has no ﬁxed points. If
+G is a transitive group on a ﬁnite set Ω, deﬁne δ(G, Ω) to be the proportion of
+derangements in G. By an old theorem of Jordan, it follows that δ(G, Ω) > 0 if
+|Ω| > 1. By a much more recent (but still elementary) theorem [CC], δ(G, Ω) ≥
+1/|Ω| for |Ω| > 1. See Serre [Se] for many applications of Jordan’s theorem. See
+[GW] for applications of better bounds of δ(G, Ω) and bounds on derangements in
+a given coset. If Ω is the coset space G/H, we write δ(G, Ω) as δ(G, H).
+   The classical groups are those groups related to the group of isometries I(V )
+of a vector space V over a ﬁnite ﬁeld preserving some form (the 0 form, or non-
+degenerate Hermitian, alternating or quadratic forms). We consider any group
+between I = I(V ) and F ∗ (I), where F ∗ (I) is the generalized ﬁtting subgroup of I.
+Since we are considering primitive actions, the center also acts trivially and we will
+often not distinguish between the linear groups and their projective versions. In
+particular, these are groups between PSL(V ) and PGL(V ), PSU(V ) and PGU(V ),
+P Ω(V ) and PO(V ), or PSp(V ) and PCSp(V ).
+Theorem 1.3. Let G be a classical almost simple Chevalley group deﬁned over Fq
+of rank r. Let H be a maximal subgroup of G that acts irreducibly and primitively
+on the natural module and does not preserve an extension ﬁeld structure. Then
+there is a universal constant δ > 0 such that δ(G, H) > δ. Moreover, δ(G, H) → 1
+as r → ∞.
+   In fact, we prove a much stronger result than Theorem 1.3; see Theorem 7.7.
+See Theorem 7.3 for an analogous result for groups of bounded rank. We also prove
+some results about derangements in cosets of simple groups. See Section 7.
+   The three remaining families of maximal subgroups (reducible subgroups – in-
+cluding parabolic subgroups, groups preserving an extension ﬁeld structure and
+imprimitive groups) are dealt with in [FG2, FG3].
+3026                  JASON FULMAN AND ROBERT GURALNICK
+
+
+   The Boston-Shalev conjecture was proved for alternating and symmetric groups
+in [LuP]. See also [D], [DFG], and [FG3].
+   Three other results of interest that we prove and use in the preceding result are:
+Theorem 1.4. Let G be a connected simple algebraic group of rank r of adjoint type
+over a ﬁeld of positive characteristic. Let F be a Steinberg-Lang endomorphism of
+G with GF a ﬁnite Chevalley group over the ﬁeld Fq . There is an absolute constant
+A such that for all x ∈ GF ,
+                                               qr
+                             |CGF (x)| >                .
+                                          A(1 + logq r)
+   See Section 6 for bounds of the form in Theorem 1.4, with explicit constants
+in all cases. The result holds for the ﬁnite simple Chevalley groups as well except
+that if G = P SL(n, q) or P SU (n, q), then q n−1 needs to be replaced by q n−2 . The
+result also holds for orthogonal groups except that in even dimension, q r needs to
+be replaced by 2q r−1 (but only for elements outside SO).
+Theorem 1.5. Let G be a ﬁnite simple Chevalley group deﬁned over Fq of rank
+r with q a power of the prime p. The number of conjugacy classes of maximal
+                                          1/2
+subgroups of G is at most Ar(r + r 1/2 p3r + log log q) for some constant A.
+                                           1/2
+   In fact, we conjecture that the r 1/2 p3r  term can be removed above. If r is
+bounded, a much stronger result is given in [LMS].
+   We also prove the following result about conjugacy classes in a coset of a nor-
+mal subgroup that generalizes a number of results in the literature. A special
+case was recently proved in [BW]. Our proof is quite short and elementary but
+gives a stronger result (one consequence is that the number of conjugacy classes
+of semisimple elements in each coset of a simple Chevalley group in the group of
+inner-diagonal automorphisms is the same). See Section 2 for details and for other
+consequences of this.
+Theorem 1.6. Let A be a ﬁnite group with G a normal subgroup with A/G = aG
+cyclic. Let π be any set of primes containing all prime divisors of |A/G|. Then
+the number of conjugacy classes of π-elements of A in the coset aG is precisely the
+number of G-conjugacy classes of π-elements in G that are invariant under A.
+   We mention in particular one nice consequence of this. It follows that if G is
+an algebraic group in characteristic p with connected component G0 , then if G0
+has ﬁnitely many conjugacy classes of unipotent elements, then so does G. If G0
+is reductive, this is known by the work of many authors, but the passage from the
+connected case to the disconnected case is far from easy. See Corollary 2.6.
+   The organization of this paper is as follows. Section 2 studies the number of
+conjugacy classes in a given coset of a normal subgroup. In particular, we give
+a very short proof (Lemma 2.2) of a generalization of results in [BW, I] on the
+distribution of conjugacy classes over cosets of some normal subgroup. Section 3
+obtains explicit and sharp upper bounds and asymptotics for the number of conju-
+gacy classes in ﬁnite classical groups (some of these were announced in the survey
+[FG1]). This mostly involves a very careful analysis of Wall’s generating functions
+for class numbers, but we do obtain new generating functions for groups such as
+SO ± (2n, q) and Ω± (2n, q) with q odd. Section 4 tabulates some of the results from
+previous sections and summarizes corresponding results for exceptional Chevalley
+                          BOUNDS ON CONJUGACY CLASSES                              3027
+
+
+groups, due to Lübeck [Lu2] and others. In Section 5, we turn to almost simple
+groups, proving Theorem 1.1, Corollary 1.2, and some related results. Section 6
+derives explicit lower bounds on centralizer sizes (and so upper bounds on the sizes
+of conjugacy classes) in ﬁnite classical groups. In Section 7, we get upper bounds
+for the number of conjugacy classes in a maximal subgroup aside from three fam-
+ilies of maximal subgroups. We then combine those results with Theorem 6.15 to
+obtain Theorem 1.3, Theorem 7.7, and related results on derangements.
+
+                            2. Outer automorphisms
+   In this section, we prove some results about the number of conjugacy classes in
+a given coset. This will allow us to pass between various forms of our group. We
+ﬁrst recall an elementary result of Gallagher [Ga].
+Lemma 2.1. Let H, N be subgroups of the ﬁnite group G with N normal in G.
+Then
+   (1) |G : H|−1 k(H) ≤ k(G) ≤ |G : H|k(H); and
+   (2) k(G) ≤ k(N )k(G/N ).
+   The following lemma will be useful in getting some better bounds for almost
+simple groups. See also [BW, I, K] for similar but somewhat weaker results.
+   Our method of proof is entirely diﬀerent – it is shorter, more elementary and
+based on a very easy variant of what is known as Burnside’s Lemma.
+Lemma 2.2. Let N be a normal subgroup of the ﬁnite group G with G/N cyclic
+and generated by aN . Let π be a set of primes containing all prime divisors of
+|G/N |. Set α to be the number of G-invariant conjugacy classes of π-elements of
+N.
+   (1) The number of G-conjugacy classes of π-elements in the coset bN that are
+        a single N -orbit is equal to α for any coset bN .
+   (2) The number of G conjugacy classes of π-elements in the coset aN is α.
+Proof. Note that G acts on the coset bN by conjugation, and thus on the π-elements
+in that coset. We want to calculate the number of common G, N orbits on the π-
+elements of bN .
+   By a slight variation of Burnside’s Lemma (with essentially the same proof —
+see [FGS, §13]), this is the average number of ﬁxed points of an element in the
+coset aN . Let x ∈ aN . Then CG (x) ∩ ai N = xi CN (x). Let y = xe , where e ≡ 1
+mod [G : N ] and y is a π-element (this is possible since π contains all prime divisors
+of [G : N ]). Then y i N = xi N for all i, and so y i CN (x) = xi CN (x) for all i. If
+w ∈ CN (x) ≤ CN (y), then y i w is a π-element if and only if w is. Thus, the number
+of π-elements in CG (x) ∩ ai N is the number of π-elements in CN (x) – in particular,
+this number is independent of the coset. This proves (1).
+   If x ∈ aN , then G = N CG (x) and so xN = xG , whence every G-conjugacy class
+in aN is a single N -orbit. So (1) implies (2).                                      
+   This allows us to prove a generalization of part of Lemma 2.1. If π is a set of
+primes and X is a ﬁnite group, let kπ (X) be the number of conjugacy classes of
+π-elements of X.
+Lemma 2.3. Let N be a normal subgroup of the ﬁnite group G. Let π be a set
+of primes. Let xi N denote a set of representatives of the π-conjugacy classes of
+3028                  JASON FULMAN AND ROBERT GURALNICK
+
+
+G/N . Let f (xi ) denote the number of N -conjugacy classes of π-elements that are
+xi -invariant. Then
+                                  
+                                  r
+                       kπ (G) ≤         f (xi ) ≤ kπ (G/N )kπ (N ).
+                                  i=1
+
+Proof. If y ∈ G is a π-element, then yN is conjugate to xi N for some i.
+   Set Gi = N, xi  and note that every prime divisor of [Gi : N ] is in π. By Lemma
+2.2, the number of Gi conjugacy classes of π-elements in xi N is at most f (xi ) ≤
+kπ (N ). Thus, the number of G-conjugacy classes of π-elements that intersect xi N
+is at most f (xi ). This completes the proof.                                       
+
+Corollary 2.4. Let N be a normal subgroup of G with π a set of primes containing
+all prime divisors of |G/N |. If each π-element g of G satisﬁes G = N CG (g), then
+G/N is abelian and the number of π-conjugacy classes of G in any coset of N is
+kπ (N ).
+Proof. We ﬁrst show that G/N is abelian. Consider a coset xN . Let x ∈ G.
+Then xN = yN , where y is a π-element (as in the previous proof). Then [y, G] =
+[y, N CG (y)] ≤ N . Hence [G, G] ≤ N , and so G/N is abelian.
+    The hypothesis implies that every π-class of G is a single N -orbit. Applying
+Lemma 2.2 to the subgroup H := N, x shows that the number of common H, N -
+orbits on π-elements of xN is the number of common H, N -orbits on π-elements in
+N . The hypothesis implies that all G-orbits on π-elements are N -orbits, whence
+the number of conjugacy classes of π-elements in xN is kπ (N ).                 
+
+   The hypotheses apply to the case where N is a simple Chevalley group in char-
+acteristic p, and G is contained in the group of inner-diagonal automorphisms on
+N with π consisting of all primes other than p. See [S1, 2.12]. Indeed, the same
+applies to a slightly more general situation.
+Corollary 2.5. Let N be a perfect Chevalley group with N/Z(N ) simple. As-
+sume that N is normal in G, G induces inner-diagonal automorphisms of N and
+CG (N ) = Z(G) has order prime to p. Then the number of semisimple conjugacy
+classes in each coset of S in G is the same.
+
+   For example, the previous result applies to SL(n, q) < GL(n, q).
+   Another easy consequence of Lemma 2.2 is showing that the ﬁniteness of unipo-
+tent classes in a disconnected reductive group follows from the result for connected
+reductive groups. There have been several proofs of the ﬁniteness of the number of
+unipotent classes in the connected case – see [Lus1]. The result is also known for
+the disconnected case (see [Gu] for a generalization).
+
+Corollary 2.6. Let G be an algebraic group deﬁned over a ﬁnite ﬁeld L of charac-
+teristic p. Let H be its connected component. Suppose that H has ﬁnitely many con-
+jugacy classes of unipotent elements. Then G has ﬁnitely many conjugacy classes
+of unipotent elements.
+
+Proof. Let U be the variety of unipotent elements in G. So U is deﬁned over L.
+Let k be the algebraic closure of L. Suppose that H has m conjugacy classes of
+unipotent elements. Let L /L be a ﬁnite extension. By Lang’s theorem, H(L )
+                         BOUNDS ON CONJUGACY CLASSES                              3029
+
+
+has at most me conjugacy classes of unipotent elements, where e is the maximal
+number of connected components in CH (u) for u a unipotent element of H.
+    Let s be the number of conjugacy classes of p-elements in G/H (which is isomor-
+phic to G(L )/H(L )). By Lemma 2.3, G(L ) has at most sme conjugacy classes of
+p-elements.
+    Since G(k) is the union of the G(L ) as L ranges over all ﬁnite extensions of
+  
+L /L, it follows that G(k) has at most sme conjugacy classes of unipotent elements.
+    By [GLMS, Prop 1.1], it follows that the number of unipotent classes of G is the
+same as the number of G(k) classes of unipotent elements.                         
+
+  The following must surely be known, but it follows easily from Lemma 2.2.
+Corollary 2.7. Let m > 3. Then k(Am ) < k(Sm ).
+Proof. Let a be the number of Am classes that are stable under Sm . Let b be the
+number of Sm classes in Am that are not Am classes. Clearly k(Am ) = a + 2b and,
+by Lemma 2.2, k(Sm ) = 2a + b. So we only need to show that a > b. If m = 4, 5,
+the result is clear. So we show that a > b for m > 5.
+   Note that b is precisely the number of classes where all cycle lengths are distinct
+and odd. There clearly is an injection into stable classes; namely, since m > 4
+the largest cycle is odd of length j ≥ 5, so one can replace it by a product of two
+2-cycles and j − 4 ﬁxed points. The image misses an element of order 4, and so the
+injection is not surjective.                                                        
+
+  Another easy consequence of Lemma 2.2 is:
+Corollary 2.8. Let N be a normal subgroup of the ﬁnite group G. Let K be a
+subgroup of G containing N with K/N cyclic and central in G/N . Let π be a set
+of primes containing all prime divisors of |K/N |. Let Δ be the set of G-conjugacy
+classes of π-elements such that K = N CG (g). Then Δ is equally distributed among
+the cosets of N contained in K.
+Proof. Let Γ be the union of the conjugacy classes in Δ. Note that g ∈ Γ implies
+that g ∈ K.
+   Let α be the number of K-stable conjugacy classes of π-elements of N .
+   By the proof of Lemma 2.2, it follows that K has precisely α orbits on Γ ∩ gN
+for each g ∈ K. Since G/K acts freely on the K orbits on Γ, it follows that there
+are precisely α/[G : K] elements of Δ in each coset of K/N .                   
+
+    In certain cases, one can describe the conjugacy classes in a coset very nicely
+using the Shintani correspondence. See [K, §2]. We ﬁrst need some notation. Let
+G be a connected algebraic group. Let F be a Lang-Steinberg endomorphism of G
+(i.e. the ﬁxed points GF form a ﬁnite group). We ﬁrst recall the well-known result
+of Lang-Steinberg.
+Lemma 2.9. Let G be a connected linear algebraic group, and let F be a surjective
+endomorphism of G such that GF is ﬁnite. Then the map f : x → x−F x from G
+to G is surjective.
+   Note that if F is such an endomorphism of a simple connected algebraic group
+G, then we can attach a prime power q = qF of the characteristic to F . Then GF
+is said to be deﬁned over q. We write GF = G(q) (of course, there may be more
+3030                   JASON FULMAN AND ROBERT GURALNICK
+
+
+than one endomorphism associated with the same q – in particular, this is the case
+if G admits a graph automorphism). The Shintani correspondence is:
+Theorem 2.10. Let G be a connected linear algebraic group with Frobenius map
+F . Let H be the ﬁxed points of F m . We view F as an automorphism of H of
+order m. Then there is a bijection ψ between conjugacy classes in the coset F H
+and conjugacy classes in H F . Moreover, CH (F h) ∼
+                                                  = CH F (k), where ψ[F h] = [k].
+   We sketch the proof (see [S]). We may deﬁne ψ as follows. Given x in H, let
+αx be such that αx−F αx = x. Deﬁne N (x) = xF
+                                                   m−1         2
+                                                       · · · xF xF x. Set ψ(F x) =
+αx N (x)αx−1 ∈ H F . This depended upon the choice of αx , but another choice
+preserves the conjugacy class and ψ deﬁnes the desired bijection on classes. It
+is straightforward to see that this bijection has the properties described in the
+theorem.
+   Combining this theorem together with Lemma 2.2 gives:
+Corollary 2.11. Let G be a connected linear algebraic group with Frobenius map
+F . Let H be the ﬁxed points of F m . We view F as an automorphism of H of order
+m. Then k(H F ) is equal to the number of H-conjugacy classes in the coset F H
+and is also equal to the number of F -stable conjugacy classes in H.
+Proof. The previous theorem implies that the ﬁrst two quantities are equal. Lemma
+2.2 implies that the second and third quantities are equal.                     
+
+           3. Number of conjugacy classes in classical groups
+   In this section, we obtain upper bounds for k(G) with G a classical group. Sub-
+section 3.1 develops some preliminary tools. Type A groups are treated in Subsec-
+tions 3.2 and 3.3; symplectic and orthogonal groups are treated in Subsections 3.4
+and 3.5 respectively.
+
+3.1. Preliminaries. The following result of Steinberg [St1, 14.8, 14.10] gives lower
+bounds for k(G) with G a Chevalley group. See also [C, p. 102]. The inequality is
+not stated explicitly though.
+Theorem 3.1. Let G be a connected reductive group of semisimple rank r > 0. Let
+F be a Frobenius endomorphism of G associated to q. Let Z0 denote the connected
+component of the center of G. The number of semisimple conjugacy classes in GF
+is at least |Z0F |q r with equality if G is simply connected. In particular, k(GF ) > q r .
+Proof. By [St1, 14.8], the number of F -stable conjugacy classes is exactly |Z0F |q r . If
+G is simply connected, then the centralizer of any semisimple element is connected,
+whence there is a bijection between stable conjugacy classes of semisimple elements
+and semisimple conjugacy classes in GF .
+   On the other hand, every F -stable class has a representative in GF by [St1,
+14.10], and so there are at least q r semisimple conjugacy classes in GF (with equality
+in the simply connected case). Since there must be at least 1 stable class of non-
+trivial unipotent elements, the last statement follows.                                 
+   The following two asymptotic lemmas will be useful.
+Lemma 3.2 (Darboux [O]). Suppose that f (u) is analytic for |u| < r, r > 0 and
+has a ﬁnite number of simple poles on |u| = r. Let wj denote the poles, and suppose
+                                 BOUNDS ON CONJUGACY CLASSES                                      3031
+
+                   gj (u)
+that f (u) =     j 1−u/wj        with gj (u) analytic near wj . Then the coeﬃcient of un in
+f (u) is
+                                            gj (wj )
+                                                           + o(1/r n ).
+                                            j
+                                                   wjn
+
+Lemma 3.3 ([O]). Suppose that f (u) is analytic for |u| < R. Let M (r) denote
+the maximum of |f | restricted to the circle |u| = r. Then for any 0 < r < R, the
+coeﬃcient of un in f (u) has absolute value at most M (r)/r n .
+  The following lemma is Euler’s pentagonal number theorem (see for instance
+page 11 of [A1]).
+Lemma 3.4. For q > 1,
+         ∞
+                                          ∞
+                                           
+                      1                                      n(3n−1)              n(3n+1)
+               (1 −      )   =        1+        (−1)n (q −      2          + q−      2      )
+        n=1
+                      qi                   n=1
+                                            −1
+                             = 1−q               − q −2 + q −5 + q −7 − q −12 − q −15 + · · · .
+   Throughout this section
+                             quantities which can be easily re-expressed in terms of
+the inﬁnite product ∞  i=1 (1 − q i ) will often arise, and Lemma 3.4 gives arbitrarily
+                                 1
+
+accurate upper and lower bounds on these products. Hence we will state bounds like
+∞               ∞ (1− 41i )
+                  i=1 (1− 1 ) ≤ 2.4 without explicitly mentioning Euler’s pentagonal
+          1
+  i=1 (1+ 2i ) =
+                                 2i
+number theorem on each occasion.
+
+3.2. GL(n, q) and its relatives. To begin we discuss GL(n, q). By a formula of
+Feit and Fine [FF, M1], the number of conjugacy classes in GL(n, q) is the coeﬃcient
+of tn in the generating function
+                                                  ∞
+                                                   1 − ti
+                                                                   .
+                                                  i=1
+                                                         1 − qti
+
+Using clever reasoning and Euler’s pentagonal number theorem, it is proved in [MR]
+that the number of conjugacy classes of GL(n, q) is less than q n .
+   To this we add the following simple proposition.
+
+Proposition 3.5.             (1) For q ﬁxed, limn→∞ k(GL(n,q))
+                                                       qn      = 1.
+    (2) q n − q n−1 ≤ k(GL(n, q)) ≤ q n . Thus limq→∞ k(GL(n,q))
+                                                         qn      = 1, and the
+        convergence is uniform in n.
+
+Proof. The generating function for conjugacy classes of GL(n, q) gives that k(GL(n,q))
+                                                                               qn
+is the coeﬃcient of tn in
+                                 1  1 − ti /q i
+                                                      .
+                              1−t       1 − ti+1 /q i
+                                                   i≥1
+                                                 
+                                            1−t /q            i        i
+                                              i+1 /q i is analytic for |t| < q
+                                                                               1/2
+    Note that the function g(t) = i≥1 1−t                                          . (This
+follows
+         from   a basic fact in analysis that  absolute   convergence
+                                                                         of the  product
+   i (1 + ai ) is equivalent to convergence of the sum        i |ai |). Applying Lemma
+3.2 with f (t) = g(t)/(1 − t) and wj = 1 proves the ﬁrst assertion. For the second
+assertion, the upper bound on k(GL(n, q)) was mentioned earlier, and the lower
+3032                   JASON FULMAN AND ROBERT GURALNICK
+
+
+bound holds since GL(n, q) has q n − q n−1 semisimple conjugacy classes (the simi-
+larity class of a semisimple element in GL(n, q) is determined by its characteristic
+polynomial and clearly the number of monic polynomials with non-zero constant
+term is q n − q n−1 ).                                                            
+
+
+Remark. In fact, k(GL(n,q))
+                    qn      is even closer to 1 than one might suspect from Propo-
+sition 3.5. Indeed,
+                               1  1 − ti /q i      1
+                                                 −
+                              1−t 1 − t /q
+                                       i+1     i   1−t
+                                    i≥1
+
+
+is analytic for all |t| < q 1/2 (subtracting the (1 −t)−1 removed
+                                                                       the pole at t = 1).
+                                                                       Cq,
+Thus Lemma 3.3 gives that for any 0 <  < 1/2,  k(G)   qn − 1  ≤   q n(1/2−)
+                                                                                , where Cq,
+is a constant depending on q and  (which one could make explicit with more eﬀort).
+This is consistent with the fact ([BFH], [MR]) that k(GL(n, q)) is a polynomial in
+q with lead term q n and vanishing coeﬃcients of q n−1 , · · · , q  2  .
+                                                                    n+1
+
+
+
+
+   Macdonald [M1] derived formulas for the number of conjugacy classes of SL(n, q),
+P GL(n, q) and P SL(n, q) in terms of k(GL(n, q)). As these will be used below it
+is useful to recall them. Let
+                                          
+                              φr (n) = nr  (1 − p−r ),
+                                             p|n
+
+
+where the product is over primes dividing n. Thus φ1 (n) is Euler’s φ function.
+Macdonald showed that
+                                     1  
+                   k(SL(n, q)) =          φ2 (d)k(GL(n/d, q)),
+                                    q−1
+                                          d|n,q−1
+                                   1  
+                  k(P GL(n, q)) =       φ1 (d)k(GL(n/d, q)),
+                                  q−1
+                                           d|n,q−1
+
+
+and
+                                   1                                   n
+       k(P SL(n, q)) =                           φ1 (d1 )φ2 (d2 )k(GL(       , q)),
+                         (q − 1) gcd(n, q − 1)                         d1 d2
+                                                d1 ,d2
+
+
+where the sum is over all pairs of divisors d1 , d2 of q − 1 such that d1 d2 divides n.
+
+Proposition 3.6.      (1) q n−1 < k(SL(n, q)) ≤ 2.5q n−1 .
+   (2) k(SL(n, q)) ≤ q n−1 + 3q n−2 . Thus limq→∞ k(SL(n,q))
+                                                      q n−1  = 1, and the conver-
+       gence is uniform in n.
+   (3) For q ﬁxed, limn→∞ k(SL(n,q))
+                              q n−1
+                                           1
+                                       = 1−1/q .
+
+Proof. The lower bound holds by Theorem 3.1. From Macdonald’s formula for
+k(SL(n, q)) one checks that k(SL(2, q)) ≤ q + 4 and k(SL(3, q)) ≤ q 2 + q + 8 (and
+that parts (1) and (2) hold for q = 2, 3 and n ≤ 4). So assume that n ≥ 4.
+                         BOUNDS ON CONJUGACY CLASSES                                   3033
+
+
+   If q = 2, then the upper bound in part (1) follows by [MR, Lemma A.1]. So
+assume also that q ≥ 3. Since k(GL(n/d, q)) ≤ q n/d , it follows that
+                               1   
+            k(SL(n, q)) ≤                d2 q n/d
+                             q−1
+                                     d|n,q−1
+                                1
+                          ≤        [q n + (q − 1)2 (q n/2 + q n/2−1 + · · · )]
+                               q−1
+                          ≤ q n /(q − 1) + q n/2+1 .
+For q ≥ 3, n ≥ 4, this is easily seen to be at most 2.5q n−1 .
+   The upper bound in part (2) when q = 2 follows from [MR, Lemma A.1]. For
+q ≥ 3, n ≥ 6 one has that
+                       q n /(q − 1) + q n/2+1 ≤ q n−1 + 3q n−2 ,
+and one easily checks from Macdonald’s formula that k(SL(n, q)) ≤ q n−1 + 3q n−2
+for q ≥ 3, n ≤ 5.
+   For part (3), note from Macdonald’s formula that
+                  k(SL(n, q))      1              k(GL(n/d, q))
+                              =             φ2 (d)               .
+                     q n−1      1 − 1/q                qn
+                                         d|n,q−1
+
+Since q is ﬁxed, it is clear from Proposition 3.5 that only the d = 1 term contributes
+in the n → ∞ limit, yielding the result.                                            
+
+  The following corollary concerns groups between SL(n, q) and GL(n, q) or be-
+tween P SL(n, q) and P GL(n, q).
+Corollary 3.7.      (1) Suppose that SL(n, q) ⊆ H ⊆ GL(n, q), and let j denote
+       the index of H in GL(n, q). Then
+              q n−1 (q − 1)          q−1               q n + 3q n−1
+                            ≤ k(H) ≤     k(SL(n, q)) ≤              .
+                     j                j                      j
+    (2) Suppose that P SL(n, q) ⊆ H ⊆ P GL(n, q), and let j denote the index of H
+        in P GL(n, q). Then
+           q n−1          gcd(n, q − 1)                 q n−1 + 5q n−2
+                 ≤ k(H) ≤               k(P SL(n, q)) ≤                .
+              j                j                               j
+                                                                                 n−1
+Proof. Let H be as in part (1) of the corollary. Then k(H) ≥ k(GL(n,q))
+                                                                  j     ≥ q j(q−1) ,
+where the ﬁrst inequality is Lemma 2.1 and the second is the fact that GL(n, q) has
+q n−1 (q − 1) semisimple conjugacy classes. The inequality k(H) ≤ q−1 j k(SL(n, q))
+comes from Lemma 2.1, and Proposition 3.6 yields the inequality (q −1)k(SL(n, q))
+≤ q n + 3q n−1 .
+                                                                               n−1
+   Let H be as in part (2) of the corollary. Then k(H) ≥ k(P GL(n,q))
+                                                                    j      ≥ qj ,
+where the ﬁrst inequality is Lemma 2.1 and the second is the fact that P GL(n, q)
+has at least q n−1 conjugacy classes (clear from Macdonald’s formula and the fact
+that GL(n, q) has at least q n−1 (q − 1) conjugacy classes). The inequality k(H) ≤
+gcd(n,q−1)
+     j     k(P SL(n, q)) comes from Lemma 2.1,               and the inequality
+gcd(n, q − 1)k(P SL(n, q)) ≤ q n−1 + 5q n−2 follows from Macdonald’s formula for
+k(P SL(n, q)) and an analysis similar to that in Proposition 3.6.                
+3034                  JASON FULMAN AND ROBERT GURALNICK
+
+
+   We close this section with the following exact formula for the number of conju-
+gacy classes of a group H between SL(n, q) and GL(n, q). It involves the quantity
+φ2 deﬁned earlier in this section.
+Proposition 3.8. Suppose that SL(n, q) ⊆ H ⊆ GL(n, q) and let j denote the
+index of H in GL(n, q). Then
+                              1               n
+                       k(H) =       φ2 (d)k(GL( , q)).
+                              j                d
+                                      d|(j,n)
+
+Proof. As in [M1], to each conjugacy class of GL(n, q) there is associated a partition
+ν of n. To describe this recall that conjugacy classes of GL(n, q) are parametrized
+by associating to each monic irreducible polynomial p(x) over Fq with non-zero
+constant term a partition; if the partition corresponding to p(x) has mi parts of
+size i, then it contributes deg(p)mi parts of size i to the partition ν. Throughout
+the proof we let cν denote the number of conjugacy classes of GL(n, q) of type ν.
+We also let ν1 , · · · , νr denote the parts of ν.
+   Given the partition ν, we determine the number of conjugacy classes of GL(n, q)
+of type ν in H, multiply it by the number of H classes into which each such class
+splits (this number depends only on ν) and then sum over all ν. Arguing as on
+pages 33-36 of [M1] shows that the number of conjugacy classes of GL(n, q) of type
+ν in H is
+                                     gcd(j, ν1 , · · · , νr )cν
+                                                j
+and that each such class splits into gcd(j, ν1 , · · · , νr ) many H classes. Thus the
+total number of conjugacy classes of H is
+                                 1 
+                                        gcd(j, ν1 , · · · , νr )2 cν .
+                                 j
+                              |ν|=n
+
+Arguing as on pages 36-37 of [M1], this can be rewritten as
+                           1                   n
+                                   φ2 (d)k(GL( , q)).                               
+                           j                    d
+                               d|(j,n)
+
+3.3. GU (n, q) and its relatives. The paper [MR] proves that
+                                                1 + 1/q i
+                      k(GU (n, q)) ≤ q n                         ≤ 8.26q n .
+                                                     1 − 1/q i
+                                               i≥1
+
+Proposition 3.9 gives an asymptotic result.
+                                                                1+1/q i
+Proposition 3.9.      (1) For q ﬁxed, limn→∞ k(GU(n,q))
+                                                  qn    = i≥1 1−1/q    i.
+        n
+   (2) q + q n−1
+                 ≤ k(GU (n, q)) ≤ q + Aq
+                                   n     n−1
+                                             for a universal constant A; one can
+       take A = 16 for q = 2 and A = 7 for q ≥ 3. Thus limq→∞ k(GU(n,q))
+                                                                      qn    = 1,
+       and the convergence is uniform in n.
+Proof. Wall [W] shows that k(GU (n, q)) is the coeﬃcient of tn in
+                                         ∞
+                                          1 + ti
+                                                         .
+                                         i=1
+                                               1 − qti
+                             BOUNDS ON CONJUGACY CLASSES                                 3035
+
+
+Thus k(GU(n,q))
+        qn      is the coeﬃcient of tn in
+                                              ∞
+                                         1  1 + ti /q i
+                                                               .
+                                       1 − t i=1 1 − ti+1 /q i
+
+For the ﬁrst assertion, use Lemma 3.2.
+   For the second assertion, the lower bound comes from the easily proved fact
+(essentially on page 35 of [W]) that GU (n, q) has q n + q n−1 many semisimple con-
+jugacy classes. For the upper bound, the assertion when q = 2 is immediate from
+the fact that k(GU (n, q)) ≤ 8.26q n . For q ≥ 3, recall that
+                                                         1 + 1/q i
+                                 k(GU (n, q)) ≤ q n                       .
+                                                              1 − 1/q i
+                                                        i≥1
+
+Lemma 3.4 gives that
+            1 + 1/q i            1 − 1/q 2i             1              7
+                             =                  ≤                     ≤1+ ,
+                 1 − 1/q   i      (1 − 1/q i )2   (1 − 1/q − 1/q 2 )2    q
+           i≥1                   i≥1
+
+where the last inequality is an easy calculus exercise.                                    
+
+Remarks.      (1) The value of the limit in part (1) of Proposition 3.9 is 8.25...
+       when q = 2.
+   (2) As in the remark after Proposition 3.5, the convergence of k(GU(n,q))
+                                                                          qn     to
+            1+1/q i        −n(1/2−)
+         i≥1 1−1/q i is O(q           ) for any 0 <  < 1/2. Indeed, subtracting oﬀ
+       the simple pole at t = 1 from the generating function in Proposition 3.9
+       gives that
+                              ∞
+                         1  1 + ti /q i       1  1 + 1/q i
+                                            −
+                       1 − t i=1 1 − t /q
+                                      i+1 i   1−t  1 − 1/q i
+                                                                i≥1
+
+        is analytic for all |t| < q 1/2 , so the claim follows from Lemma 3.3.
+  Macdonald [M1] derived useful formulas for k(SU (n, q)), k(P GU (n, q)) and
+k(P SU (n, q)). These involve the quantity
+                                          
+                              φr (n) = nr  (1 − p−r ),
+                                                  p|n
+
+where the product is over all primes dividing n. He showed that
+                                  1     
+                k(SU (n, q)) =               φ2 (d)k(GU (n/d, q)),
+                                 q+1
+                                               d|n,q+1
+                                    1  
+                  k(P GU (n, q)) =       φ1 (d)k(GU (n/d, q)),
+                                   q+1
+                                                d|n,q+1
+
+and
+                                     1                                    n
+      k(P SU (n, q)) =                             φ1 (d1 )φ2 (d2 )k(GU (       , q)),
+                           (q + 1) gcd(n, q + 1)                          d1 d2
+                                                     d1 ,d2
+
+where the sum is over all pairs of divisors d1 , d2 of q + 1 such that d1 d2 divides n.
+3036                     JASON FULMAN AND ROBERT GURALNICK
+
+
+Proposition 3.10.      (1) q n−1 ≤ k(SU (n, q)) ≤ 8.26q n−1 .
+   (2) k(SU (n, q)) ≤ q n−1 + Aq n−2 for a universal constant A; one can take
+       A = 16 for q = 2 and A = 7 for q ≥ 3. Thus limq→∞ k(SU(n,q))
+                                                                q n−1 = 1, and
+       the convergence is uniform in n.
+                                                     1+1/q i
+   (3) For q ﬁxed, limn→∞ k(SU(n,q))
+                               q n−1
+                                          1
+                                     = (1+1/q)    i≥1 1−1/q i .
+
+Proof. The lower bound in part (1) is immediate from Theorem 3.1. The upper
+bounds in parts (1) and (2) will be proved together. For n ≤ 7 the upper bounds
+are checked directly from Macdonald’s formula for k(SU (n, q)). Next suppose that
+q = 2 and n ≥ 8. Then Macdonald’s formula for k(SU (n, q)) and the upper bound
+on k(GU (n, q)) give that
+                                 8.26  n               
+                 k(SU (n, 2)) ≤          2 + 8 · 2n/3 ≤ 8.26(2n−1 ).
+                                   3
+For q ≥ 3, we claim that k(SU (n, q)) ≤ (1 + 7/q)q n−1 , which also implies the upper
+bound in part (1). Suppose that n ≥ 8 is even (the case of odd n is similar). Then
+Macdonald’s formula and part (2) of Proposition 3.9 give that k(SU (n, q)) is at
+most
+                     q n + (q + 1)2 (q n/2 + · · · + 1)
+          (1 + 7/q)
+                                  q+1
+                                                                                      
+      ≤ (1 + 7/q) q    n−1
+                            −q n−2
+                                    + q n−3 · · · ± 1 + q n/2+1 + 2q n/2 + · · · 2q + 1
+         ≤ (1 + 7/q) · q n−1 .
+  Part (3) follows from part (1) of Proposition 3.9 and Macdonald’s formula for
+k(SU (n, q)) (argue as in the case of SL).                                   
+  Corollary 3.11 gives bounds on k(H) where H is a group between SU (n, q) and
+GU (n, q) or between P SU (n, q) and P GU (n, q).
+Corollary 3.11.      (1) Suppose that SU (n, q) ⊆ H ⊆ GU (n, q) and that j is the
+       index of H in GU (n, q). Then
+                 q n−1 (q + 1)          q+1                 q n + Aq n−1
+                               ≤ k(H) ≤      k(SU (n, q)) ≤              ,
+                        j                 j                       j
+           where A is a universal constant. One can take A = 25 for q = 2 and A = 11
+           for q ≥ 3.
+       (2) Suppose that P SU (n, q) ⊆ H ⊆ P GU (n, q) and that j is the index of H in
+           P GU (n, q). Then
+              q n−1          gcd(n, q + 1)                  q n−1 + 8q n−2
+                    ≤ k(H) ≤               k(P SU (n, q)) ≤                .
+                 j                j                                j
+                                                                               n−1
+Proof. Let H be as in part (1) of the corollary. Then k(H) ≥ k(GU(n,q))
+                                                                 j      ≥ q j(q+1) ,
+where the ﬁrst inequality is Lemma 2.1 and the second is the fact that GU (n, q)
+has q n−1 (q + 1) semisimple conjugacy classes. Lemma 2.1 gives that k(H) ≤
+ j k(SU (n, q)). The inequality (q + 1)k(SU (n, q)) ≤ q + Aq
+q+1                                                      n      n−1
+                                                                    with the stated
+A values follows from part (2) of Proposition 3.10.
+                                                                               n−1
+  Let H be as in part (2) of the corollary. Then k(H) ≥ k(P GU(n,q))j      ≥ qj ,
+where the ﬁrst inequality is Lemma 2.1 and the second is the fact that P GU (n, q)
+has at least q n−1 conjugacy classes (clear from Macdonald’s formula and the fact
+                          BOUNDS ON CONJUGACY CLASSES                                              3037
+
+
+that GU (n, q) has q n−1 (q+1) semisimple conjugacy classes). The inequality k(H) ≤
+gcd(n,q+1)
+     j     k(P SU (n, q)) comes from Lemma 2.1,               and the inequality
+gcd(n, q + 1)k(P SU (n, q)) ≤ q  n−1
+                                     + 8q n−2
+                                              follows from Macdonald’s formula for
+k(P SU (n, q)) and an analysis similar to that in Proposition 3.10.               
+
+3.4. Symplectic groups. We next consider symplectic groups. We treat the cases
+q odd and even separately.
+Theorem 3.12. Let q be odd.
+                                  ∞      (1+ 1i )4
+   (1) q n ≤ k(Sp(2n, q)) ≤ q n   i=1 (1− 1i )
+                                               q
+                                                      ≤ 10.8q n .
+                                         q
+
+   (2) k(Sp(2n, q)) ≤ q n + Aq  n−1
+                                 for a universal constant A; one can take A = 30
+       for q = 3 and A = 12 for q ≥ 5. Thus
+                                          k(Sp(2n, q))
+                            limq→∞                     = 1,
+                                              qn
+       and the convergence is uniform in n.
+                                        ∞ (1+ q1i )4
+   (3) For q ﬁxed, limn→∞ k(Sp(2n,q))
+                               q n    =   i=1 (1− 1 ) .
+                                                               qi
+
+
+Proof. The lower bound in part (1) is immediate from Theorem 3.1.
+   For q odd, Wall [W] shows that k(Sp(2n, q)) is the coeﬃcient of tn in the gener-
+ating function
+                                  ∞
+                                      (1 + ti )4
+                                                 .
+                                  i=1
+                                       1 − qti
+Rewrite this generating function as
+                             ∞
+                                     ∞
+                               1 − ti  (1 + ti )4
+                                                                .
+                             i=1
+                                   1 − qti i=1 1 − ti
+
+Since all coeﬃcients of powers of t in the second inﬁnite product are non-negative,
+it follows that
+                    
+                    n                        ∞
+                                                                              ∞
+                                                                               
+                                               1 − ti                            (1 + ti )4
+   k(Sp(2n, q)) ≤       (Coef. tn−m in                         )(Coef. tm in                  ).
+                    m=0                      i=1
+                                                    1 − qt   i
+                                                                               i=1
+                                                                                     1 − ti
+    ∞ 1−ti
+Now i=1 1−qt  i is the generating function for the number of conjugacy classes in
+
+GL(n, q). Hence the coeﬃcient of tn−m in it is at most q n−m . It follows that
+                                   n                   ∞
+                                        1                   (1 + ti )4
+              k(Sp(2n, q)) ≤ q n          (Coef. t m
+                                                     in                ).
+                                   m=0
+                                       qm               i=1
+                                                             1 − ti
+                                ∞       (1+ti )4
+Since the coeﬃcients of tm in      i=1    1−ti      are positive, it follows that
+                                     ∞                    ∞
+                                          1                    (1 + ti )4
+             k(Sp(2n, q)) ≤ q n              (Coef. t m
+                                                        in                )
+                                     m=0
+                                         q m
+                                                           i=1
+                                                                1 − ti
+                                     ∞
+                                      (1 + q1i )4
+                            = qn                         .
+                                     i=1
+                                            (1 − q1i )
+3038                       JASON FULMAN AND ROBERT GURALNICK
+
+             ∞    (1+ 1i )4
+                       q
+The term       i=1 (1− 1i )    is visibly maximized among odd prime powers q when q = 3.
+                     ∞
+                      q
+                              (1− 1 )4
+Then it becomes i=1
+                 ∞
+                        9i
+                     (1− 1 )5
+                              ≤ 10.8q n by Lemma 3.4.
+                       i=1        3i
+   The upper bound in part (2) follows from the upper bound in part (1), Lemma
+3.4, and basic calculus (argue as in the unitary case).
+   For part (3), note that k(Sp(2n,q))
+                               qn      is the coeﬃcient of tn in
+
+                                          1  (1 + ti /q i )4
+                                                               .
+                                         1−t  (1 − ti+1 /q i )
+                                                 i≥1
+
+Then use Lemma 3.2.                                                                              
+
+Remark. The value of the limit in part (3) of Theorem 3.12 is 10.7... when q = 3.
+
+   Next we treat the symplectic group in even characteristic.
+
+Theorem 3.13. Let q be even.
+       (1)
+                                                   ∞
+                                                                    (1 − t4i )
+                1+         k(Sp(2n, q))tn =                                                  .
+                                                    i=1
+                                                           (1 − t4i−2 )(1 − ti )(1 − qti )
+                     n≥1
+
+                                    ∞                4i
+       (2) q n ≤ k(Sp(2n, q)) ≤ q n i=1 (1−1/q(1−1/q     )
+                                               4i−2 )(1−1/q i )2 ≤ 15.2q .
+                                                                        n
+
+       (3) k(Sp(2n, q)) ≤ q + Aq
+                            n      n−1
+                                       for a universal constant A; one can take A = 29
+           for q = 2 and A = 5 for q ≥ 4. Thus
+                                                   k(Sp(2n, q))
+                                        limq→∞                  = 1,
+                                                       qn
+           and the convergence is uniform in n.
+                                            ∞                4i
+       (4) For q ﬁxed, limn→∞ k(Sp(2n,q))
+                                   qn     = i=1 (1−1/q(1−1/q     )
+                                                       4i−2 )(1−1/q i )2 .
+
+
+
+Proof. Wall [W] showed that
+                                                       χ(0, 1, t)
+                           1+        k(Sp(2n, q))tn = ∞             ,
+                                                       i=1 (1 − qt )
+                                                                   i
+                                 n≥1
+
+where χ is the n → ∞ limit of a recursively deﬁned function. Andrews [A2] proved
+the L-M-W conjecture that
+                                        ∞ j(j+1)
+                                           j=0 t
+                           χ(0, 1, t) = ∞             .
+                                          i=1 (1 − t )
+                                                    i
+
+
+An identity of Gauss (page 23 of [A1]) states that
+                                       ∞
+                                                          ∞
+                                                                1 − t2i
+                                             tj(j+1)/2 =                 ,
+                                       j=0                 i=1
+                                                               1 − t2i−1
+
+and the ﬁrst assertion follows.
+                             BOUNDS ON CONJUGACY CLASSES                                     3039
+
+
+  For the second assertion, combining part (1) with the same trick as in the odd
+characteristic case gives that
+                                              ∞
+                                                        (1 − 1/q 4i )
+                     k(Sp(2n, q)) ≤ q n
+                                              i=1
+                                                  (1 − 1/q i )2 (1 − 1/q 4i−2 )
+                                              ∞
+                                                        (1 − 1/24i )
+                                   ≤ qn
+                                              i=1
+                                                  (1 − 1/2i )2 (1 − 1/24i−2 )
+                                   ≤ 15.2q n .
+The last step used Lemma 3.4. The lower bound in the second assertion is imme-
+diate from Theorem 3.1.
+   The proofs of parts (3) and (4) are analogous to the proofs of parts (2) and (3)
+in the odd characteristic case.                                                  
+
+Remark. The value of the limit in part (4) of Theorem 3.13 is 15.1... when q = 2.
+
+3.5. Orthogonal groups. This section gives the results for the orthogonal groups.
+We assume that the dimension of the underlying space is at least 3 (almost all of
+the results are valid for the two dimensional case as well, but the results are trivial
+in that case and the lower bounds do not always hold because the semisimple rank
+is 0).
+   First we treat the case of even dimension with q odd.
+
+Theorem 3.14. Let q be odd.
+         n
+    (1) q2 ≤ k(O ± (2n, q)) ≤ 9.5q n .
+                          n
+    (2) k(O ± (2n, q)) ≤ q2 +Aq n−1 for a universal constant A; one can take A = 27
+        for q = 3 and A = 18 for q ≥ 5. Thus
+                                             k(O ± (2n, q))  1
+                                limq→∞                      = ,
+                                                  qn         2
+        and the convergence is uniform in n.
+    (3) For ﬁxed q,
+                           k(O ± (2n, q))
+                 limn→∞
+                                qn
+                                      ∞                           ∞
+                                                                   
+                          1
+             =       ∞                      (1 + 1/q i−1/2 )4 +       (1 − 1/q i−1/2 )4 .
+                      i=1 (1 − 1/q )
+                 4                i
+                                       i=1                         i=1
+
+Proof. For the lower bound in part (1), Theorem 3.1 gives that SO ± (2n, q) has
+at least q n semisimple classes, and at most two of these can fuse into one class
+in O ± (2n, q). For the upper bound, clearly k(O ± (2n, q)) is the sum/diﬀerence
+      +            −                 +           −
+of k(O (2n,q))+k(O
+               2
+                     (2n,q))
+                             and k(O (2n,q))−k(O
+                                            2
+                                                   (2n,q))
+                                                           . By upper bounding each of
+                                         ±
+these terms, we will upper bound k(O (2n, q)).
+   Wall [W] shows that k(O + (2n, q)) + k(O − (2n, q)) is the coeﬃcient of t2n in the
+generating function
+                                    ∞
+                                        (1 + t2i−1 )4
+                                                      .
+                                    i=1
+                                          1 − qt2i
+3040                        JASON FULMAN AND ROBERT GURALNICK
+
+
+Rewrite this generating function as
+                                   ∞
+                                            ∞
+                                     1 − t2i  (1 + t2i−1 )4
+                                                                         .
+                                   i=1
+                                         1 − qt2i i=1       1 − t2i
+
+   Arguing as in the proofs for the symplectic cases and using Lemma 3.4, the
+coeﬃcient of t2n is at most
+                       ⎛                                ⎞
+                1                    (1 + t2i−1 )4
+           qn          ⎝Coef. t2m in                    ⎠
+                   qm                       (1 − t2i )
+              m≥0                    i≥1
+                       ⎛              ⎡                                    ⎤⎞
+           qn  1 ⎝                      (1 + t2i−1 )4  (1 − t2i−1 )4
+       =                 Coef. t2m in ⎣                   +                ⎦⎠
+            2       qm                        (1 − t2i )        (1 − t2i )
+               m≥0                      i≥1                 i≥1
+               ⎡                                     ⎤
+           q n ⎣ (1 + t2i−1 )4  (1 − t2i−1 )4 ⎦
+       ≤                         +
+            2         (1 − t2i )         (1 − t2i )
+                  i≥1                        i≥1
+                                                                      |t=3−.5
+       ≤          n
+            16.3q .
+
+   Wall [W] shows that k(O + (2n, q)) − k(O − (2n, q)) is the coeﬃcient of tn in
+                                            ∞
+                                             (1 − t2i−1 )
+                                                                 .
+                                            i=1
+                                                   (1 − qt2i )
+
+Since this is analytic for t < q −1 + , Lemmas 3.3 and 3.4 imply an upper bound of
+                         ∞
+                                                     ∞
+                                                      
+                           (1 + 1/q 2i−1 )              (1 + 1/32i−1 )
+                 qn                            ≤ qn                             ≤ 2.4q n .
+                         i=1
+                             (1 − 1/q 2i−1 )          i=1
+                                                          (1 − 1/32i−1 )
+
+Combining this with the previous paragraph gives that k(O ± (2n, q)) ≤ 9.5q n .
+  For part (2), the q = 3 case is immediate from part (1). For q ≥ 5, the up-
+                 +           −
+per bound on k(O (2n,q))+k(O
+                        qn
+                               (2n,q))
+                                       in the proof of part (1) and the lower bound
+                     n
+k(O ± (2n, q)) ≥ q2 yield that k(O ± (2n, q) is at most
+                   ⎡                                              ⎤
+                 1⎣    (1 + 1/q i−1/2 4
+                                        )      (1 − 1/q i−1/2 4
+                                                                ) ⎦ 1
+                                          +                         − .
+                 2         (1 − 1/q i )            (1 − 1/q i )      2
+                          i≥1                         i≥1
+
+
+The result follows from Lemma 3.4 (as in the unitary case) and basic calculus.
+                              +            −
+  For the third assertion, k(O (2n,q))+k(O
+                                      qn
+                                             (2n,q))
+                                                     is the coeﬃcient of t2n in
+                                          ∞
+                                    1  (1 + t2i−1 /q i−1/2 )4
+                                                               .
+                                  1 − t2 i=1 1 − t2(i+1) /q i
+
+By Lemma 3.2, as n → ∞ this converges to
+                                ∞                    ∞
+                      1
+                ∞                 (1 + 1/q i−1/2 4
+                                                 )  +    (1 − 1/q i−1/2 )4 .
+                 i=1 (1 − 1/q ) i=1
+            2                i
+                                                      i=1
+                             BOUNDS ON CONJUGACY CLASSES                          3041
+
+
+Recall that k(O + (2n, q)) − k(O − (2n, q)) is the coeﬃcient of tn in
+                                    ∞
+                                        (1 − t2i−1 )
+                                                     .
+                                    i=1
+                                         (1 − qt2i )
+
+Since this is analytic for |t| < q −1/2 , it follows from Lemma 3.3 that
+                                k(O + (2n, q)) − k(O − (2n, q))
+                     limn→∞                                     = 0.                
+                                              qn
+Remark. The value of the limit in part (3) of Theorem 3.14 is 8.14... when q = 3.
+   To treat even dimensional special orthogonal groups in odd characteristic, the
+following lemma will be helpful.
+Lemma 3.15. Let q be odd and let G = SO ± (n, q). Let C = g G . Set H = O ± (n, q)
+containing G. The following are equivalent:
+     (1) C = g H .
+     (2) g leaves invariant an odd dimensional non-degenerate space W .
+     (3) Some Jordan block of g corresponding to either the polynomial z + 1 or the
+         polynomial z − 1 has odd size.
+If all Jordan blocks of g corresponding to both the polynomials z ± 1 have even size,
+then g H is the union of two conjugacy classes of G.
+Proof. Since [H : G] = 2, the last statement follows from the equivalence of the
+ﬁrst three conditions.
+    Suppose that C = g H . It follows that g centralizes some element x ∈ H \ G.
+Raising x to an odd power, we may assume that the order of x is a power of 2
+and in particular that x is semisimple. Since det x = −1, it follows that the −1
+eigenspace of x is non-degenerate and odd dimensional. Thus (2) holds.
+    Conversely, assume (2). Taking x = −1 and W on 1 on W ⊥ shows that CH (g)
+is not contained in G, whence (1) holds. Also, the subspace of W corresponding to
+either the z − 1 or z + 1 space is odd dimensional, whence some Jordan block has
+odd size. Thus (2) implies (3).
+    Finally assume (3). By induction, we may assume that g acts indecomposably
+(i.e. preserves no non-trivial orthogonal decomposition on the natural module). If
+n is odd, then clearly (2) holds. So we may assume that n is even. Replacing g by
+−g (if necessary), we may assume that g is unipotent. By [LSe1, Theorem 2.12], it
+follows that either g is a single Jordan block of odd size or has two Jordan blocks of
+even size. Since (3) holds, the latter case cannot hold. Thus, g consists of a single
+Jordan block of odd size, whence (2) holds.                                         
+Theorem 3.16. Let q be odd.
+  (1) k(SO + (2n, q)) + k(SO − (2n, q)) is the coeﬃcient of t2n in
+                3          (1 − t2i )2         1  (1 + t2i−1 )4
+                                              +                   .
+                2      (1 − t4i )2 (1 − qt2i ) 2     (1 − qt2i )
+                       i≥1                          i≥1
+                                 −
+    (2) k(SO (2n, q)) − k(SO (2n, q)) is the coeﬃcient of tn in
+              +
+
+                                        1
+                            2                       .
+                                (1 + t )(1 − qt2i )
+                                       i
+                                  i≥1
+                   ±
+    (3) q ≤ k(SO (2n, q)) ≤ 7.5q n .
+         n
+3042                    JASON FULMAN AND ROBERT GURALNICK
+
+
+       (4) k(SO ± (2n, q)) ≤ q n + Aq n−1 for a universal constant A; one can take
+           A = 20 for q = 3 and A = 8 for q ≥ 5. Thus
+                                           k(SO ± (2n, q))
+                                  limq→∞                   = 1,
+                                                qn
+           and the convergence is uniform in n.
+       (5) For ﬁxed q,
+                 k(SO ± (2n, q))
+          limn→∞
+                      qn
+          ⎡                                                                   ⎤
+            3  (1 − 1/q i )    1  (1 + 1/q i−1/2 )4   1  (1 − 1/q i−1/2 )4
+        = ⎣                   +                       +                       ⎦.
+            4  (1 − 1/q 2i )2   8      (1 − 1/q i )     8      (1 − 1/q i )
+                i≥1                      i≥1                      i≥1
+
+
+
+
+Proof. Clearly k(SO + (2n, q)) + k(SO − (2n, q)) = 2A + B, where A is the sum over
+O + (2n, q) and O − (2n, q) of the number of classes which have determinant 1 and
+split into two SO classes, and B is the sum over O + (2n, q) and O − (2n, q) of the
+number of classes which have determinant 1 and do not split into two SO classes.
+Applying Lemma 3.15 and arguing as on pages 41-42 of [W] gives that A is the
+coeﬃcient of t2n in
+                                       (1 − t2i )2
+                                                           .
+                                   (1 − t4i )2 (1 − qt2i )
+                                   i≥1
+                        4i −2
+(The factor of (1 − t ) comes from the fact that the z ± 1 partitions have only
+even parts which must occur with even multiplicity, and the other factor is pre-
+cisely Wall’s F0+ (t)). To solve for B, note that A + B is the sum over O + (2n, q)
+and O − (2n, q) of the number of classes which have determinant 1. Such classes
+correspond to elements where the z + 1 piece has even size, so arguing as on pages
+41-42 of [W] (using his notation) gives that A + B is the coeﬃcient of t2n in
+                      1 +
+                        [F (t) + F++ (−t)]F−+ (t)F0+ (t)
+                      2 ⎡+                                                    ⎤
+                      1⎣    (1 + t 2i−1 4
+                                        )       (1 − t  2i−1 2
+                                                              ) (1 + t 2i−1 2
+                                                                           ) ⎦
+                 =                         +                                    .
+                      2       (1 − qt2i )                  (1 − qt2i )
+                            i≥1                i≥1
+
+Calculating 2A + B completes the proof of the ﬁrst part of the theorem.
+   For the second assertion, apply Lemma 3.15 and argue as on pages 41-42 of [W]
+(using his notation) to conclude that the O + (2n, q) number - the O − (2n, q) number
+of conjugacy classes which have determinant 1 and split is the coeﬃcient of t2n in
+                           1                            1
+                                      −
+                                    F   (t) =                         .
+                        (1 − t4i )2   0
+                                                (1 + t2i )(1 − qt4i )
+                      i≥1                       i≥1
+
+Again applying Lemma 3.15 and arguing as on pages 41-42 of [W], one sees that
+the O + (2n, q) number - the O − (2n, q) number of conjugacy classes which have
+determinant 1 and do not split is 0. The second assertion follows.
+   The lower bound in part (3) is immediate from Theorem 3.1. For the upper
+bound, it follows from part (1) and elementary manipulations that k(SO + (2n, q))+
+                                 BOUNDS ON CONJUGACY CLASSES                          3043
+
+
+k(SO − (2n, q)) is the coeﬃcient of t2n in
+            ⎡                                              ⎤
+                    1−t 4i−2              2i       2i−1 4 
+                                                              1 − t2i
+            ⎣3                +
+                                1     (1 + t )(1 + t     ) ⎦
+                                                                       .
+              2       1−t 4i    2           (1 − t )
+                                                  4i          1 − qt2i
+                i≥1                    i≥1                         i≥1
+
+It is not diﬃcult to see that the expression in square brackets in the previous
+equation has all coeﬃcients non-negative when expanded as a power series in t (use
+the fact that the coeﬃcient of t4i−2 in (1 + t2i−1 )4 is 6). Hence one can argue as
+in Theorem 3.14 to conclude that k(SO + (2n, q)) + k(SO − (2n, q)) is at most q n
+multiplied by
+    ⎡                                                                             ⎤
+      3  1 − t4i−2    1  (1 + t2i )(1 + t2i−1 )4   1   (1 + t2i )(1 − t2i−1 )4
+    ⎣                +                             +                              ⎦
+      2     1 − t4i    4          (1 − t4i )         4          (1 − t4i )
+       i≥1                       i≥1                         i≥1
+
+evaluated at t = 3−.5 . This is at most        n
+                                       9.3q . 1
+   By part (2) and the fact that 2 i≥1 (1+ti )(1−qt2i ) is analytic for |t| < q −1 + , it
+follows from Lemma 3.3 that k(SO + (2n, q)) − k(SO − (2n, q)) is at most
+                        1                                  1
+     2q n                               ≤ 2q n
+                                                                            ≤ 5.6q n .
+            (1 − 1/q i )(1 − 1/q 2i−1 )          (1 − 1/3i )(1 − 1/32i−1 )
+        i≥1                                       i≥1
+
+This, together with the previous paragraph, completes the proof of the third asser-
+tion.
+   For part (4), the q = 3 case is immediate from part (1). For q ≥ 5, the proof of
+                           ±
+part (3) showed that k(SO qn(2n,q)) is at most
+
+                   3  1 − 1/q 2i−1   1  (1 + 1/q i )(1 + 1/q i−1/2 )4
+                                    +
+                   2    1 − 1/q 2i    4          (1 − 1/q 2i )
+                       i≥1                      i≥1
+
+                       1  (1 + 1/q i )(1 − 1/q i−1/2 )4
+                   +                                       − 1.
+                       4               (1 − 1/q 2i )
+                           i≥1
+
+Using Lemma 3.4 (as in the unitary case), the result follows from basic calculus.
+   The proof of part (5) is nearly identical to the proof of part (3) in Theorem
+3.14.                                                                             
+
+Remark. The value of the limit in part (5) of Theorem 3.16 is 4.6... when q = 3.
+  We next consider the odd dimensional case.
+Theorem 3.17. Let q be odd.
+                                    ∞                  4i 2
+    (1) q n ≤ k(SO(2n + 1, q)) ≤ q n i=1 (1−1/q(1−1/q     )
+                                                i )3 (1−1/q 4i−2 )2 ≤ 7.1q .
+                                                                          n
+
+    (2) k(SO(2n + 1, q)) ≤ q + Aq
+                             n      n−1
+                                        for a universal constant A; one can take
+        A = 19 for q = 3 and A = 8 for q ≥ 5. Thus
+                                           k(SO(2n + 1, q))
+                                  limq→∞                    = 1,
+                                                 qn
+        and the convergence is uniform in n.
+                                           
+    (3) For ﬁxed q, limn→∞ k(SO(2n+1,q))
+                                 qn      = ∞          (1−1/q 4i )2
+                                             i=1 (1−1/q i )3 (1−1/q 4i−2 )2 .
+    (4) k(O(2n + 1, q)) = 2k(SO(2n + 1, q)).
+3044                   JASON FULMAN AND ROBERT GURALNICK
+
+
+Proof. Lusztig [Lus2] proves that k(SO(2n + 1, q)) is the coeﬃcient of tn in the
+generating function
+                      ⎛              ⎞2
+                        ∞              ∞
+                      ⎝       j(j+1) ⎠                 1
+                            t                                      .
+                        j=0             i=1
+                                            (1 − t i )2 (1 − qti )
+
+
+By a result of Gauss (page 23 of [A1]), this is equal to
+                          ∞
+                                       (1 − t4i )2
+                                                                  .
+                          i=1
+                              (1 − t4i−2 )2 (1 − ti )2 (1 − qti )
+Using the same trick as in the unitary and symplectic cases one sees that
+                                      ∞
+                                                 (1 − 1/q 4i )2
+              k(SO(2n + 1, q)) ≤ q n                                     .
+                                      i=1
+                                          (1 − 1/q i )3 (1 − 1/q 4i−2 )2
+This is maximized for q = 3 for which Lemma 3.4 yields an upper bound of 7.1q n .
+   The lower bound follows by Steinberg’s result on the number of semisimple
+classes – see Theorem 3.1.
+   The second part follows from part (1) (use Lemma 3.4 as in the unitary case and
+basic calculus), and the third part is proved using the same method used for the
+symplectic groups.
+   Since O(2n + 1, q) = Z/2Z × SO(2n + 1, q), the fourth result is clear.        
+Remark. The value of the limit in part (3) of Theorem 3.17 is 7.0... when q = 3.
+   We now state similar results for the groups Ω± (n, q). The proofs of these results
+are somewhat long and are in [FG5].
+   Theorem 3.18 treats the even dimensional groups, while Theorem 3.19 treats the
+odd dimensional case.
+   It is convenient to deﬁne Ω∗ (2n, q) = Ω+ (2n, q) if q ≡ 1 mod 4 or n is even and
+  −
+Ω (2n, q) otherwise, and similarly for SO.
+   Note that for the even dimensional special orthogonal groups, one will be a direct
+product of its center and Ω, and so the answer for Ω is precisely 1/2 the answer for
+SO (these are precisely the cases not mentioned in the next result).
+Theorem 3.18. Let q be odd.
+  (1) Set j = 2 if ∗ = + and j = 1 if ∗ = −. Then k(Ω∗ (2n, q)) is the coeﬃcient
+      of t2n in
+                3               1               1  (1 + t2i−1 )4
+                                               +
+                8     (1 + t2i )2 (1 − qt2i ) 8         (1 − qt2i )
+                  i≥1                              i≥1
+                                                  
+                                    (1 + ti )2       i odd (1 − t )
+                                                                 2i
+                         3
+                       + i odd                + j                 .
+                         2 i≥1 (1 − qt4i )           i≥1 (1 − qt )
+                                                                 4i
+
+                      n
+       (2) For n ≥ 2, q2 ≤ k(Ω∗ (2n, q)) ≤ 6.8q n .
+                            n
+       (3) k(Ω∗ (2n, q)) ≤ q2 + Aq n−1 . One can take A = 16 for q = 3 and A = 8.5
+           for q ≥ 5. Thus
+                                      k(Ω+ (2n, q))  1
+                              limq→∞                = ,
+                                           qn        2
+          and the convergence is uniform in n.
+                                 BOUNDS ON CONJUGACY CLASSES                             3045
+
+
+    (4) For ﬁxed q,
+                                k(Ω∗ (2n, q))      1             k(SO ∗ (2n, q))
+                        limn→∞                  =      · lim n→∞
+                                     qn            2                   qn
+                         3              1                  1   (1 + 1/q i−1/2 )4
+                   =                                     +
+                         8   (1 + 1/q i )2 (1 − 1/q i ) 16          (1 − 1/q i )
+                           i≥1                               i≥1
+
+                           1  (1 − 1/q i−1/2 )4
+                        +                        .
+                          16      (1 − 1/q i )
+                              i≥1
+
+Remark. The value of the limits in part (4) of Theorem 3.18 is 2.3... when q = 3.
+  The following result is for odd dimensional groups.
+Theorem 3.19. Suppose that q is odd.
+  (1) k(Ω(2n + 1, q)) is the coeﬃcient of t2n in
+            
+          3 i odd (1 + ti )2    1               (1 − t8i )2
+                             +                                            .
+          4t i≥1 (1 − qt4i )    2    (1 − t8i−4 )2 (1 − t2i )2 (1 − qt2i )
+                                             i≥1
+                       n
+    (2)   For n ≥ 2, q2 ≤ k(Ω(2n + 1, q)) ≤ 7.3q n .
+                             n
+    (3)   k(Ω(2n + 1, q)) ≤ q2 + Aq n−1 . One can take A = 11 for q = 3 and A = 5.5
+          for q ≥ 5. Thus
+                                   k(Ω(2n + 1, q))  1
+                                    limq→∞         = ,
+                                         qn         2
+        and the convergence is uniform in n.
+    (4) For ﬁxed q,
+                             k(Ω(2n + 1, q))      1         k(SO(2n + 1, q))
+                       limn→∞         n
+                                                 = · limn→∞
+                                    q             2               qn
+                       1        (1 − 1/q ) 4i 2
+               =                                         .
+                       2  (1 − 1/q 4i−2 )2 (1 − 1/q i )3
+                        i≥1
+
+  In particular, we have:
+Corollary 3.20. Fix an odd prime power q. Then
+                                          k(Ω± (m, q))   1
+                                      lim               = .
+                                     m→∞ k(SO ± (m, q))  2
+   We now turn to orthogonal groups in characteristic 2. Since the odd dimen-
+sional orthogonal groups are isomorphic to symplectic groups, we need only consider
+the even dimensional case. We let SO ± (2n, q) denote the subgroup of index 2 in
+O ± (2n, q) (corresponding to viewing SO over the algebraic closure as the connected
+algebraic group with O the disconnected group just as in any other characteristic).
+Since we are in characteristic 2, SO ± (2n, q) = Ω± (2n, q).
+Theorem 3.21. Let q be even.
+  (1)
+                                                          ∞
+                                                           (1 + ti )(1 + t2i−1 )2
+          1+         tn k(O + (2n, q)) + k(O − (2n, q)) =                            .
+                                                          i=1
+                                                                   (1 − qti )
+               n≥1
+3046                       JASON FULMAN AND ROBERT GURALNICK
+
+
+       (2)
+                                qn
+                                   ≤ k(O ± (2n, q)) ≤ 15q n .
+                                 2
+                             n
+       (3) k(O ± (2n, q)) ≤ q2 +Aq n−1 for a universal constant A; one can take A = 29
+           for q = 2 and A = 9 for q ≥ 4. Thus
+                                       k(O ± (2n, q))  1
+                                  limq→∞      n
+                                                      = ,
+                                            q          2
+           and the convergence is uniform in n.
+                                   ±                     i
+                                                            )(1+1/q 2i−1 )2
+       (4) For ﬁxed q, limn→∞ k(O q(2n,q))
+                                     n     = 12 i≥1 (1+1/q(1−1/q i)         .
+
+Proof. Combining [W] and [A2] shows that k(O + (2n, q)) + k(O − (2n, q)) is the co-
+eﬃcient of tn in the generating function
+                                    ∞           2
+                                              tj
+                               ∞ j=−∞                 .
+                                 i=1 (1 − t )(1 − qt )
+                                           i        i
+
+The ﬁrst assertion now follows from the special case of Jacobi’s triple product
+identity (page 21 of [A1]):
+                               ∞
+                                             ∞
+                                              
+                                       2
+                                    tn =          (1 − t2i )(1 + t2i−1 )2 .
+                             n=−∞             i=1
+
+   Note that when the numerator of the generating function of part (1) is expanded
+as a series in t, all coeﬃcients are positive. Arguing as for the unitary and symplectic
+groups gives that
+                                                   (1 + 1/q i )(1 + 1/q 2i−1 )2
+          k(O + (2n, q)) + k(O − (2n, q)) ≤ q n
+                                                               (1 − 1/q i )
+                                                           i≥1
+                                                            (1 + 1/2i )(1 + 1/22i−1 )2
+                                                    ≤ qn
+                                                                        (1 − 1/2i )
+                                                           i≥1
+                                                    ≤ 25.6q .n
+
+
+   From [W], k(O + (2n, q)) − k(O − (2n, q)) is the coeﬃcient of tn in
+                                           ∞
+                                            1 − t2i−1
+                                                               .
+                                           i=1
+                                                    1 − qt2i
+Since this is analytic for |t| < q −1 + , Lemma 3.3 gives that k(O + (2n, q)) −
+k(O − (2n, q)) is at most
+                        ∞
+                                                     ∞
+                                                      
+                          (1 + 1/q 2i−1 )               (1 + 1/22i−1 )
+                   qn                         ≤ qn                         ≤ 4.2q n .
+                        i=1
+                            (1 − 1/q 2i−1 )           i=1
+                                                          (1 − 1/22i−1 )
+Combining this with the the previous paragraph yields the upper bound in part
+(2).
+   For the lower bound in part (2), SO ± (2n, q) is simply connected. Thus by
+Steinberg’s theorem, the number of semisimple classes is exactly q n and so there
+are at least q n /2 in O ± (2n, q) (because the index is 2, at most two classes fuse into
+one).
+   The third and fourth parts are proved by the same method as in Theorem 3.14.
+                                                                                       
+                              BOUNDS ON CONJUGACY CLASSES                                        3047
+
+
+Remark. The value of the limit in part (4) of Theorem 3.21 is 12.7... when q = 2.
+   Finally, we treat even characteristic special orthogonal groups. We let SO ± (2n, q)
+= Ω± (2n, q) denote the ﬁxed points of the Frobenius map of the algebraic group
+(note that since q is even, the algebraic group is both simply connected and of
+adjoint type). As usual, O will denote the full isometry group of the form.
+Theorem 3.22. Let q be even.
+  (1)
+                                                            
+                 2+      tn k(SO + (2n, q)) + k(SO − (2n, q))
+                              n≥1
+                                               ∞             ∞
+                           1  (1 + ti )2   3       1             1
+                   =                      +                                .
+                           2    (1 − ti )   2 i=1 (1 + ti ) i=1 (1 − qti )
+                             i odd
+
+    (2)
+                                                         ∞
+                                                          
+                                                                             1
+      2+         tn k(SO + (2n, q)) − k(SO − (2n, q)) = 2                                    .
+                                                                i=1
+                                                                      (1 + ti )(1 − qt2i )
+           n≥1
+
+    (3)
+                                 q n ≤ k(SO ± (2n, q)) ≤ 14q n .
+    (4) k(SO ± (2n, q)) ≤ q n + Aq n−1 for a universal constant A; one can take
+        A = 26 for q = 2 and A = 5 for q ≥ 4. Thus
+                                          k(SO ± (2n, q))
+                                 limq→∞                   = 1,
+                                               qn
+        and the convergence is uniform in n.
+                                 ±
+    (5) For ﬁxed q, limn→∞ k(SO qn(2n,q)) is equal to
+                                   ∞               ∞
+                 1  (1 + 1/q i )2      1       3        1
+                                               +                    .
+                 4    (1 − 1/q ) i=1 (1 − 1/q ) 4 i=1 (1 − 1/q 2i )
+                               i             i
+                   i odd
+
+Proof. For part (1), it follows from [A2] and [Lus2] that if k1 (SO ± (2n, q)) is the
+number of unipotent conjugacy classes of SO ± (2n, q), then
+                                                                     
+                      1+      tn k1 (SO + (2n, q)) + k1 (SO − (2n, q))
+                               n≥1
+                                 
+                                              3
+                           1            n2
+                           2 +    n≥1 t                 1
+                   =                       +                  − 1.
+                             i≥1 (1 − t )           (1 − t2i )
+                                       i  2   2
+                                                i≥1
+
+   We claim that a conjugacy class of O ± (2n, q) with an empty z − 1 piece splits
+in SO ± (2n, q), and that a conjugacy class of O ± (2n, q) with a non-empty z − 1
+piece splits in SO ± (2n, q) if and only if a unipotent element with that z − 1 piece
+splits in the SO (possibly of lower dimension) which contains it. Let x ∈ O ± (2n, q).
+Write V = V1 ⊥ V2 , where V1 is the kernel of (x − 1)2n . Let xi denote the element
+of O(Vi ) that is the restriction of x to Vi . Thus, the centralizer of x is the direct
+product of the centralizers of xi in O(Vi ). Working over the algebraic closure we see
+that the centralizer of x2 in O(V2 ) is isomorphic to the centralizer of some element
+of GL(d) where 2d = dim V2 . In particular, the centralizer of x2 is connected and
+3048                         JASON FULMAN AND ROBERT GURALNICK
+
+
+so is contained in SO(V2 ). Thus, if V1 = 0, the class of x splits. If V1 = 0, then the
+class of x splits if and only if the class of x1 splits in O(V1 ). This proves the claim.
+   Thus
+                                                           
+              2+       tn k(SO + (2n, q)) + k(SO − (2n, q))
+                     n≥1
+               ⎛                                                          ⎞
+                                                                           ∞
+                                                                               (1 − ti )
+          = ⎝2 +                 tn k1 (SO + (2n, q)) + k1 (SO − (2n, q)) ⎠                ,
+                                                                            i=1
+                                                                                (1 − qti )
+                           n≥1
+                       (1−t )       i
+                                                                       +
+where the term i≥1 (1−qt     i ) is the even characteristic analog of F0 (t) from page
+
+41 of Wall [W] (and is derived the same way). Plugging in the generating function
+for k1± (SO(2n, q)) and using an identity of Gauss (page 21 of [A1]) that
+                     1  n2           1                
+                       +        t =           (1 − ti )   (1 + ti )2 ,
+                     2                2 i even
+                                  n≥1                          i odd
+
+part (1) follows by elementary simpliﬁcations.
+  For part (2), arguing as in part (1) gives that
+                                                        
+              2+     tn k(SO + (2n, q)) − k(SO − (2n, q))
+                     n≥1
+               ⎛                                                        ⎞
+                                                                         ∞
+                                                                             (1 − ti )
+         = ⎝2 +                tn k1 (SO + (2n, q)) − k1 (SO − (2n, q)) ⎠                 ,
+                                                                          i=1
+                                                                              (1 − qt2i )
+                       n≥1
+                      (1−ti )                                         −
+where the term i≥1 (1−qt   2i ) is the even characteristic analog of F0 (t) from page
+
+42 of Wall [W] (and is derived the same way). Page 153 of [Lus2] gives that
+                                                             ∞
+                                                                      1
+         2+      tn k1 (SO + (2n, q)) − k1 (SO − (2n, q)) = 2                 ,
+                                                               i=1
+                                                                   (1 − t2i )
+               n≥1
+
+so part (2) follows.
+   The lower bound in part (3) is immediate from Theorem 3.1. For the upper
+bound, ﬁrst note from part (1) that k(SO + (2n, q))+k(SO − (2n, q)) is the coeﬃcient
+of tn in
+           ⎡                                              ⎤
+                  (1 + ti )2                             ∞
+                                                            
+           ⎣ 1                      1      3         1    ⎦    (1 − ti )
+                                        +                                .
+             2       (1 − t )
+                           i    (1 − t ) 2
+                                      i          (1 − t ) i=1 (1 − qti )
+                                                       2i
+                   i odd                 i≥1             i≥1
+
+Arguing as in Theorem 3.12 shows that k(SO + (2n, q)) + k(SO − (2n, q)) is at most
+q n multiplied by
+                  1  (1 + ti )2      1       3        1
+                                            +
+                  2      (1 − t )
+                               i    (1 − t ) 2
+                                          i          (1 − t2i )
+                            i odd              i≥1               i≥1
+
+evaluated at t = 1/q. This is maximized at q = 2, and is at most 15. Using the
+fact that k(SO ± (2n, q)) ≥ q n , it follows
+                                             that k(SO ± (2n, q)) ≤ 14q n .
+                                                                                     −1
+                                                        2i ) is analytic for |t| < q
+                                                   1
+   By part (2) and the fact that 2 i≥1 (1+ti )(1−qt                                     + , it
+                                                            −
+follows from Lemma 3.3 that k(SO (2n, q)) − k(SO (2n, q)) is at most
+                                         +
+
+                       1                                        1
+     2q n                                 ≤ 2q n                                 ≤ 17q n .
+            (1 − 1/q )(1 − 1/q
+                     i            2i−1 )            (1 − 1/2i )(1 − 1/22i−1 )
+         i≥1                                          i≥1
+                               BOUNDS ON CONJUGACY CLASSES                            3049
+
+
+This, together with the previous paragraph, completes the proof of the third asser-
+tion.                                                  ±
+   For part (4), the proof of part (3) yields that k(SO qn(2n,q)) is at most
+                1  (1 + 1/q i )2      1         3      1
+                                                +                  − 1.
+                2    (1 − 1/q i )   (1 − 1/q i ) 2   (1 − 1/q 2i )
+                  i odd               i≥1                  i≥1
+
+Using Lemma 3.4 (as in the unitary case), this upper bound is at most 2 + Aq for a
+universal constant A. Since k(SO ± (2n, q)) ≥ q n by part (3), the result follows.
+   The proof of part (5) is nearly identical to the proof of part (3) in Theorem
+3.14.                                                                              
+Remark. The limit in part (5) of Theorem 3.22 is 7.4... when q = 2.
+
+                          4. Tables of conjugacy class bounds
+   We tabulate some of the results in the previous section and summarize the cor-
+responding results for exceptional groups. There are exact formulas for these class
+numbers and we refer the reader to [Lu2]. See also §8.18 of [Hu] and the references
+therein.
+   Table 1 contains the results for the exceptional groups. We give a polynomial
+upper bound for each type of exceptional group (this upper bound is valid for both
+the adjoint and simply connected forms of the group).
+
+
+                    Table 1. Class numbers for exceptional groups
+
+        G                                   k(G) ≤                            Comments
+   2
+       B2 (q)                               q+3                               q = 22m+1
+   2
+       G2 (q)                               q+8                               q = 32m+1
+   G2 (q)                               q 2 + 2q + 9
+   2
+       F4 (q)                           q 2 + 4q + 17                         q = 22m+1
+   3
+       D4 (q)                       q4 + q3 + q2 + q + 6
+    F4 (q)                      q 4 + 2q 3 + 7q 2 + 15q + 31
+    E6 (q)                q + q + 2q 4 + 2q 3 + 15q 2 + 21q + 60
+                           6    5
+
+   2
+       E6 (q)             q 6 + q 5 + 2q 4 + 4q 3 + 18q 2 + 26q + 62
+    E7 (q)         q 7 + q 6 + 2q 5 + 7q 4 + 17q 3 + 35q 2 + 71q + 103
+    E8 (q)      q 8 + q 7 + 2q 6 + 3q 5 + 10q 4 + 16q 3 + 40q 2 + 67q + 112
+
+
+   In particular, we see that 1 ≤ k(G)/q r → 1 as q → ∞ in all cases in Table 1.
+Also, q r < k(G) ≤ q r + 14q r−1 and k(G) ≤ 8q r in all cases in Table 1.
+   Table 2 summarizes some of the results of the previous section on various (but
+not all) forms of the classical groups. These results all follow from the previous
+section.
+   In Table 3, we give bounds of the form Aq r + Bq r−1 . We exclude q = 2 or 3 in
+some cases – a similar bound follows from the previous table in those cases.
+3050                   JASON FULMAN AND ROBERT GURALNICK
+
+                     Table 2. Class numbers for classical groups
+
+                                   G                k(G) ≤           Comments
+                              SL(n, q)              2.5q n−1
+                              SU (n, q)         8.26q n−1
+                              Sp(2n, q)             10.8q n             q odd
+                                                            n
+                              Sp(2n, q)             15.2q              q even
+                                                            n
+                          SO(2n + 1, q)              7.1q               q odd
+                                                            n
+                           Ω(2n + 1, q)              7.3q               q odd
+                                ±                           n
+                           SO (2n, q)                7.5q               q odd
+                              Ω± (2n, q)             6.8q n             q odd
+                               ±                            n
+                              O (2n, q)              9.5q               q odd
+                      ±                 ±                  n
+                 SO (2n, q) = Ω (2n, q)              14q               q even
+                               ±                           n
+                              O (2n, q)              15q               q even
+
+
+                    Table 3. Class numbers for classical groups II
+
+                           G                        k(G) ≤               Comments
+                      SL(n, q)                q n−1 + 3q n−2
+                     P GL(n, q)               q n−1 + 5q n−2
+                      SU (n, q)               q n−1 + 7q n−2                q>2
+                     P GU (n, q)              q n−1 + 8q n−2                q>2
+                                                n              n−1
+                      Sp(2n, q)                q + 12q                    q > 3 odd
+                                                n           n−1
+                      Sp(2n, q)                q + 5q                    q > 2 even
+                                                n           n−1
+                    SO(2n + 1, q)              q + 8q                     q > 3 odd
+                                                     n            n−1
+                    Ω(2n + 1, q)            (1/2)q + 5.5q                 q > 3 odd
+                          ±                     n           n−1
+                     SO (2n, q)                q + 8q                     q > 3 odd
+                      Ω± (2n, q)            (1/2)q n + 8.5q n−1           q > 3 odd
+                       ±                             n           n−1
+                     O (2n, q)              (1/2)q + 18q                  q > 3 odd
+                ±                   ±           n           n−1
+            SO (2n, q) = Ω (2n, q)             q + 5q                    q > 2 even
+                       ±                              n         n−1
+                     O (2n, q)              (1/2)q + 9q                  q > 2 even
+
+
+              5. Conjugacy classes in almost simple groups
+   We use the results of the previous sections to obtains bounds on the class numbers
+for Chevalley groups. These bounds are close to best possible, but we improve these
+a bit in [FG5]. These bounds are used in [LOST] to ﬁnish the proof of the Ore
+conjecture and are more than suﬃcient for our proof of the Boston-Shalev conjecture
+on derangements.
+   We ﬁrst prove Theorem 1.1.
+                         BOUNDS ON CONJUGACY CLASSES                              3051
+
+
+Proof. Since the number of semisimple classes in GF is at least q r , (2) implies (3).
+Since any F -stable class intersects GF , the number of F -stable classes is at most
+k(GF ), and so (1) implies (4). Thus, it suﬃces to prove (1) and (2).
+   First assume that G has type A. Apply Theorem 3.6, Proposition 3.10, and
+Corollaries 3.7 and 3.11 to conclude that (1) and (2) hold in this case.
+   If G is exceptional, then the results follow by Table 1 in the previous section.
+   Now assume that G has type B, C or D. Since the center has order at most 4 in
+all cases, to prove (1) it suﬃces to consider any form of the group (this may alter
+the constant, but only by a bounded amount, and in fact it changes only very little).
+Moreover, in characteristic 2, the adjoint and simply connected groups are the same,
+and so there is nothing to prove. So we may assume that the characteristic of the
+ﬁeld is odd.
+   Suppose that G has type B. The results have been proved for the group of adjoint
+type with constants 7.1 and 19 respectively. Suppose that G is simply connected.
+Then k(G) ≤ 2k(Ω), whence the results hold by Theorem 3.19.
+   Next suppose that G has type C. We have already proved the result for the
+simply connected group. So assume that G is the adjoint form. Let H = Sp(2r, q).
+Then k(H/Z(H)) < k(H) ≤ 10.8q r , whence k(G) ≤ 21.6q r , and so (1) holds.
+   The number of semisimple classes in H/Z(H) is at most (q r + t)/2, where t is
+the number of H-semisimple classes invariant under multiplication by Z(H). These
+correspond to monic polynomials of degree r in x2 with the set of roots invariant
+under inversion. The number of such is q (r−1)/2 if r is odd and q r/2 if r is even.
+Thus, k(H/Z(H)) ≤ (1/2)q r + 31q r−1 . Since G/H has order 2, this implies that
+k(G) ≤ q r + 62q r−1 , and so (2) holds.
+   Finally, consider the case that G has type D (and we may assume that r ≥ 4).
+Let H = P Ω± (2r, q) be the simple group corresponding to G. Using Theorem 3.18,
+we see that k(P Ω± (2r, q)) ≤ 6.8q r , whence a straightforward argument shows that
+k(G) ≤ 4k(H) ≤ 27.2q r .
+   Arguing as in the case of type C, we see that k(P Ω± (2r, q)) ≤ (1/4)q r +16q r−1 +
+q . Thus, k(G) ≤ 4k(P Ω± (2r, q)) ≤ q r + 68q r−1 .
+ r/2
+                                                                                     
+  Note that for simply connected groups or groups of adjoint type, we can do a bit
+better (and in particular for the simple groups). This follows by the proof above.
+Corollary 5.1. Let G be a simply connected simple algebraic group of rank r over
+a ﬁeld of positive characteristic. Let F be a Steinberg-Lang endomorphism of G
+with GF a ﬁnite Chevalley group over the ﬁeld Fq . Then
+    (1) k(GF ) ≤ 15.2q r .
+    (2) k(GF ) ≤ q r + 40q r−1 .
+  Similarly, the proof of Theorem 1.1 also shows:
+Corollary 5.2. Let G be a simple algebraic group of adjoint type of rank r over a
+ﬁeld of positive characteristic. Let F be a Steinberg-Lang endomorphism of G with
+GF a ﬁnite Chevalley group over the ﬁeld Fq . Let S be the socle of GF and assume
+that S ≤ H ≤ G. Then
+    (1) k(H) ≤ 27.2q r .
+    (2) k(H) ≤ q r + 68q r−1 .
+    (3) The number of non-semisimple classes of H is at most 68q r−1 .
+  Corollary 5.2 also leads to the following result which was used in [GR].
+3052                  JASON FULMAN AND ROBERT GURALNICK
+
+
+Proposition 5.3. Let G be a ﬁnite almost simple group. Then k(G) ≤ |G|.41 .
+Proof. For all cases other than the alternating and symmetric groups, this follows
+from Corollary 5.1 together with bounds on the size of the outer automorphism
+groups and a computer computation for small cases. For the symmetric groups,  √ 2n
+the result follows without diﬃculty from the two bounds k(Sn ) ≤ √ π       eπ 3
+                                                                         6(n−1)
+([VW], p. 140) and n! ≥ (2π)1/2 nn+1/2 e−n+1/(12n+1) ([Fe], p. 52). By Corollary
+                                                                     .41
+2.7, k(An ) ≤ k(Sn ), and the two bounds also imply that k(Sn ) ≤ n!
+                                                                  2      for n ≥ 6.
+For n = 5, k(A5 ) = 5 < (60).41 and k(S5 ) = 7 < (120).41 .                      
+   The .41 gets much smaller as the rank grows (or as n grows for An ). Note that
+for G = SL(2, 2a ), k(G) is very close to |G|1/3 .
+   We now consider general almost simple Chevalley groups G. Now we have to
+deal with all types of outer automorphisms. The proof we give below shows that
+in fact for large q, k(G) is close to q r /e, where e = [Inndiag(S) : G ∩ Inndiag(S)].
+   We ﬁrst need a lemma. See [GLS] for basic results about automorphisms of
+Chevalley groups.
+Lemma 5.4. Let S be a simple Chevalley group over the ﬁeld of q elements of
+rank r ≥ 2. Let x ∈ Aut(S) with x not an inner diagonal automorphism of S. Let
+S ≤ H ≤ Inndiag(S). Then the number of x stable classes in H is at most Dq r−1
+for some universal constant D.
+Proof. We may assume that x has prime order p modulo the group of inner diagonal
+automorphisms.
+   By Corollary 5.2, it suﬃces to consider semisimple classes of S (since the number
+of non-semisimple classes is at most Aq r−1 for a universal constant A). If x is in
+the coset of a Lang-Steinberg automorphism, then Shintani descent gives a much
+better bound. In any case, the stable classes will be in bijection with those in the
+centralizer and so there are at most Cq r/2 invariant classes, whence the bound holds
+in this case.
+   The remaining cases are where x induces a graph automorphism. We lift to the
+central cover T of S and let H0 be the lift of H. It suﬃces to prove the result
+for H0 . By considering irreducible representations of T , we see that the number of
+                                     
+stable semisimple classes in T is q r , where r − 1 ≥ r  is the number of orbits of x
+on the Dynkin diagram of S. Similarly, for each x-invariant coset of H0 /T , there
+               
+are at most q r invariant classes in each of those cosets. If S is not of type A, there
+are at most 4 cosets. If S is of type A, there are at most 2 invariant cosets. Thus,
+there are at most 4q r−1 invariant semisimple classes.                               
+   We can now prove:
+Theorem 5.5. Let G be almost simple with socle S that is a Chevalley group
+deﬁned over the ﬁeld of q elements and has rank r. There is an absolute constant
+D such that k(G) ≤ q r + D(log q)q r−1 ≤ D q r .
+Proof. Let H be the subgroup of G consisting of inner diagonal automorphisms.
+Let X be the full group of inner diagonal automorphisms of S. Then X = Y F ,
+where Y is the corresponding simple algebraic group of adjoint type, and so by
+Corollary 2.5, the number of semisimple classes in H is precisely [X : H]−1 times
+the number of semisimple classes in X. The number of non-semisimple classes in
+                          BOUNDS ON CONJUGACY CLASSES                                3053
+
+
+H is at most [X : H] times the number of non-semisimple classes of X. If G is
+not of type A, then [X : H] ≤ 4, and so by Theorem 1.1, k(H) ≤ q r + Eq r−1 for
+some universal constant E. If G is of type A, we apply Corollaries 3.7 and 3.11 to
+conclude this as well.
+   First consider the case that S = P SL(2, q). So H = P SL(2, q) or P GL(2, q). If
+x ∈ G \ H, then x can be taken to be a ﬁeld automorphism of order e ≥ 2.
+   If H = P GL(2, q), the number of stable semisimple classes is q 1/e +1 and there is
+one (stable) unipotent class (the stable classes are precisely those of P GL(2, q 1/e )).
+If H = P SL(2, q), there are even fewer stable classes. Thus, the number of conju-
+gacy classes in the coset xH is at most q 1/e + 2, whence the result holds.
+   So we may assume that r > 1.
+   Let x ∈ G \ H. By the previous result, the number of x-stable classes in H is
+at most Eq r−1 for some universal constant E. Thus by Lemma 2.2, the number of
+conjugacy classes in xH is at most Eq r−1 . Since [G : H] ≤ 6 log q, it follows that
+                             k(G) ≤ q r + 6E(log q)q r−1 ,
+and the result follows.                                                                
+  With a bit more eﬀort, one can remove the log q factor in the previous result.
+Keeping track of the constants in the proof above gives Corollary 1.2.
+
+      6. Minimum centralizer sizes for the finite classical groups
+    This section gives lower bounds on centralizer sizes in ﬁnite classical groups, and
+hence upper bounds on the size of the largest conjugacy class in a ﬁnite classical
+group. Formulas for the conjugacy classes sizes go back to Wall [W], but being
+quite complicated polynomials in q eﬀort is required to give explicit bounds. The
+bounds presented here hold for all values of n and q and are also applied in [FG2]
+and [Sh].
+    The following standard notation about partitions will be used. Let λ be a par-
+tition of some non-negative integer |λ| into parts λ1 ≥ λ2 ≥ · · · . Let mi (λ) be the
+number of parts of λ of size i, and let λ be the partition dual to λ in the sense
+that λi = mi (λ) + mi+1 (λ) + · · · . It is also useful to deﬁne the diagram associated
+to λ by placing λi boxes in the ith row. We use the convention that the row index
+i increases as one goes downward. So the diagram of the partition (5441) is
+
+
+
+
+and λi can be interpreted as the size of the ith column. The notation (u)m will
+denote (1 − u)(1 − u/q) · · · (1 − u/q m−1 ). This section freely uses Lemma 3.4 from
+Section 3.
+
+6.1. The general linear groups. The following result about partitions will be
+helpful.
+Lemma 6.1. Let λ be any partition. Then for q ≥ 2,
+                         2 
+                   q i (λi )   (1/q)mi (λ) ≥ q |λ| (1 − 1/q).
+                                  i
+3054                       JASON FULMAN AND ROBERT GURALNICK
+
+                                                              2 
+Proof. Deﬁne a function f on partitions by f (λ) = q i (λi )        i (1/q)mi (λ) . Let τ
+be a partition obtained from λ by moving a box from a row of length i to a row
+of length j ≥ i + 1. The idea is to show that f (λ) ≥ f (τ ). The result then
+follows because a sequence of such moves transforms any partition into the one-row
+partition, and f evaluated
+                      2on this
+                                partition  is q |λ| (1 − 1/q).
+                                     2
+   One checks that i (λi ) − i (τi ) ≥ 2, so if i > 1, then
+             f (τ )       (1/q)mi−1 (λ)+1 (1/q)mi (λ)−1 (1/q)mj (λ)−1 (1/q)mj+1 (λ)+1
+                      ≤
+             f (λ)           q 2 (1/q)mi−1 (λ) (1/q)mi (λ) (1/q)mj (λ) (1/q)mj+1 (λ)
+                          (1 − 1/q mi−1 (λ)+1 )(1 − 1/q mj+1 (λ)+1 )
+                      =
+                             q 2 (1 − 1/q mi (λ) )(1 − 1/q mj (λ) )
+                                 1
+                      ≤                  ≤ 1,
+                          q (1 − 1/q)2
+                           2
+
+as desired. For the i = 1 case, the only diﬀerence in the above argument is that
+the term (1 − 1/q mi−1 (λ)+1 ) does not appear.                               
+  Lemma 6.2 is well known and is proved by counting the non-zero elements in a
+degree r extension of Fq by the degrees of their minimal polynomials.
+Lemma 6.2. Let N (q; d) be the number of monic degree d irreducible polynomials
+over the ﬁnite ﬁeld Fq , disregarding the polynomial z. Then
+                                
+                                    dN (q; d) = q r − 1.
+                                      d|r
+
+   Lemma 6.3 will also be needed.
+Lemma 6.3. For s ≥ 2, (1 − 1/s)s ≥ e−(1+1/s) .
+Proof.
+                                                    1     1
+                           log(1 − 1/s)s    = −1 −    − 2 − ···
+                                                   2s 3s
+                                                    1     1
+                                            ≥ −1 −    − 2 − ···
+                                                   2s 2s
+                                                        1
+                                            = −1 −
+                                                   2s(1 − 1/s)
+                                            ≥ −1 − 1/s,
+where the ﬁnal inequality uses that s ≥ 2.                                              
+Theorem 6.4. The smallest centralizer size of an element of GL(n, q) is at least
+   q n (1−1/q)
+e(1+log (n+1)) .
+         q
+
+
+Proof. It is well known that conjugacy classes of GL(n, q) are parametrized by Jor-
+dan canonical form. That is, for each monic  irreducible polynomial φ = z, one picks
+a partition λ(φ) subject to the constraint φ deg(φ)|λ(φ)| = n. The corresponding
+centralizers sizes are well known ([M2], page 181) and can be rewritten as
+                                        2 
+                         q deg(φ) i (λ(φ)i )  (1/q deg(φ) )mi (λ(φ)) .
+                           φ                      i
+
+To minimize this expression, suppose that for each polynomial φ one knows the
+size |λ(φ)| of λ(φ). Lemma 6.1 shows that λ(φ) should be taken to be a one-row
+                           BOUNDS ON CONJUGACY CLASSES                                 3055
+
+                                     |λ(φ)|·deg(φ)
+partition
+      r which would contribute q                  (1 − 1/q deg(φ) ). Letting r be such
+that        iN (q; i) ≥ n, it follows that the minimal centralizer size is at least
+    i=1
+q n ri=1 (1 − 1/q i )N (q;i) .
+   Observe that r can be taken to be the smallest integer such that q r − 1 ≥ n,
+because by Lemma 6.2
+                         
+                         r                    
+                                iN (q; i) ≥         dN (q; d) = q r − 1.
+                          i=1                 d|r
+                                                                     r                i
+Since N (q; i) ≤ q i /i, the minimum centralizer size is at least q n i=1 (1 − 1/q i )q /i .
+                                                                         n
+                                                                        q (1−1/q)
+Lemma 6.3 gives that the minimum centralizer size is at least e(1+1/2+···+1/r)       . To
+ﬁnish the proof use the bounds 1 + 1/2 + · · · + 1/r ≤ 1 + log(r) and take r =
+1 + logq (n + 1).                                                                        
+
+Remark. Since the number of conjugacy classes of GL(n, q) is less than q n , one
+might hope that the largest conjugacy class size is at most |GL(n,q)|
+                                                                cq n  , where c is a
+constant.The proof of Theorem 6.4 shows this to be untrue. Indeed, the inﬁnite
+product i (1 − 1/q i )N (q;i) vanishes. This can be seen by setting u = 1/q in the
+identity
+                      ∞
+                                                  q−1  n n
+                          (1 − ui )−N (q;i) = 1 +        u q
+                      i=1
+                                                   q
+                                                                n≥1
+
+(which holds since the coeﬃcient of un on both sides counts the number of monic
+degree n polynomials with non-vanishing constant term).
+6.2. The unitary groups. The method for the ﬁnite unitary groups is similar to
+that for GL(n, q). As usual, we view U (n, q) as a subgroup of GL(n, q 2 ).
+Lemma 6.5. Let λ be any partition. Then for q ≥ 2,
+                        2 
+                  q i (λi )  (−1/q)mi (λ) ≥ q |λ| (1 + 1/q).
+                                    i
+
+Proof. The argument is the same as for  Lemma 6.1. Using the same notation as in
+                                          2 
+that proof, except that now f (λ) = q i (λi )  i (−1/q)mi (λ) , one obtains that
+
+                f (τ )   (1 − (−1/q)mi−1 (λ)+1 )(1 − (−1/q)mj+1 (λ)+1 )
+                       ≤
+                f (λ)        q 2 (1 − (−1/q)mi (λ) )(1 − (−1/q)mj (λ) )
+                           (1 + 1/q)2
+                       ≤ 2               ≤ 1.                                             
+                         q (1 − 1/q 2 )2
+   Given a polynomial φ with coeﬃcients in Fq2 and a non-vanishing constant term,
+deﬁne a polynomial φ̃ by
+                                      z deg(φ) φq ( z1 )
+                                 φ̃ =                    ,
+                                          [φ(0)]q
+where φq raises each coeﬃcient of φ to the qth power. A polynomial φ is called
+self-conjugate if φ̃ = φ, and an element in an extension ﬁeld of Fq2 is called self-
+conjugate if its minimal polynomial over Fq2 is self-conjugate.
+Lemma 6.6. Suppose that r is odd. Then the number of non-zero non-self-conjugate
+elements in Fq2r viewed as an extension of Fq2 is q 2r − q r − 2.
+3056                    JASON FULMAN AND ROBERT GURALNICK
+
+
+Proof. Theorem 9 of [F2] shows    that the number of self-conjugate elements of degree
+i over Fq2 is 0 if i is even and is d|i μ(d)(q i/d +1) if i is odd, where μ is the Moebius
+function. Thus Moebius inversion implies that the total number of self-conjugate
+elements of Fq2r is
+                              
+                                     μ(d)(q i/d + 1) = q r + 1,
+                                i|r   d|i
+which implies the result.                                                                               
+Theorem 6.7. The smallest centralizer size of an element of U (n, q) is at least
+                  1/2
+        1−1/q 2
+q n e(2+log (n+1))      .
+           q
+
+
+Proof. For n = 1 this is clear, so suppose that n > 1. The conjugacy classes
+of U (n, q) and their sizes were determined in [W]. They are parametrized by
+the following analog of Jordan canonical form. For each monic irreducible poly-
+nomial φ = z, one picks a partition λ(φ) subject to the two constraints that
+
+  φ deg(φ)|λ(φ)| = n and λ(φ) = λ(φ̃). The corresponding centralizer sizes are
+due to Wall and can be usefully rewritten as
+                                         2 
+                          q deg(φ) i (λ(φ)i )  (−1/q deg(φ) )mi (λ(φ))
+                    φ=z,φ=φ̃                                   i
+               ⎛                                                                  ⎞
+                                                   2   
+               ·⎝             q deg(φ)       i (λ(φ)i )    (1/q deg(φ) )mi (λ(φ)) ⎠            .
+                {φ,φ̃},φ=φ̃                                i
+                                                                                      q →q 2
+
+Here the q → q 2 means (in the second product over polynomials) to replace all
+occurrences of q by q 2 . Note that the second product is over unordered conjugate
+pairs of non-self-conjugate monic irreducible polynomials.
+   Note that the bound in Lemma 6.5 is greater than q |λ| , whereas the bound
+in Lemma 6.1 is less than q |λ| . Hence the minimum size centralizer will cor-
+respond to a conjugacy class whose characteristic polynomial has only non-self-
+conjugate irreducible polynomials as factors. Let M̃ (q; i) denote the number of
+unordered pairs {φ, φ̃}, where φ is monic non-self-conjugate and irreducible of de-
+gree i with coeﬃcients in Fq2 . Then a lower bound for the smallest centralizer size
+                                                         
+is q n ri=1 (1 − 1/q 2i )M̃(q;i) , where r is such that ri=1 2iM̃ (q; i) ≥ n. Take r to be
+odd, and observe by Lemma 6.6 that
+                        r                
+                           2iM̃ (q; i) ≥      2iM̃ (q; i) = q 2r − q r − 2
+                      i=1                       i|r
+                                                                                                   2i
+and that q 2r − q r − 2 ≥ n if q r ≥ n + 1 (since n > 1). Since M̃ (q; i) ≤ q2i , the
+                                         r                q 2i
+smallest centralizer size is at least q n i=1 (1 − 1/q 2i ) 2i . Arguing as in the general
+linear case and applying Lemma 6.3 proves the theorem.                                  
+6.3. Symplectic and orthogonal groups. To begin the study of minimum cen-
+tralizer sizes in symplectic and orthogonal groups, we treat the case of elements
+whose characteristic polynomial is (z ± 1)n . This will be done by two diﬀerent
+methods. The ﬁrst approach uses algebraic group techniques and gives the best
+bounds. The second approach is combinatorial but of interest, as it involves a new
+enumeration of unipotent elements in orthogonal groups. Note that there is no need
+                          BOUNDS ON CONJUGACY CLASSES                                3057
+
+
+to consider odd dimensional orthogonal groups in even characteristic, as these are
+isomorphic to symplectic groups.
+
+Proposition 6.8.         (1) The minimum centralizer size of an element in the group
+       Sp(2n, q) with characteristic polynomial (z ± 1)2n is at least q n .
+   (2) In odd characteristic, the minimum centralizer size of an element with char-
+       acteristic polynomial (z ± 1)2n in O ± (2n, q) or (z ± 1)2n+1 in O(2n + 1, q)
+       is at least q n .
+   (3) In even characteristic, the minimum centralizer size of a unipotent element
+       of O ± (2n, q) is at least 2q n−1 .
+
+Proof. We ﬁrst work in the ambient algebraic group G and connected component
+H. Let g ∈ G(q). Let B be a Borel subgroup of H normalized by g and U its
+unipotent radical. First suppose that g ∈ H. It suﬃces to show that CU (g) has
+dimension at least r, the rank of H. Then the rational points in CU (g) have order a
+multiple of q r , as required (cf. [FG1]). The centralizer in B of a regular unipotent
+element in B has dimension exactly r in B. Since these elements are dense in U ,
+the same is true for any such element.
+   Now suppose that g is not in H. This only occurs in even characteristic with
+G an orthogonal group. Now G embeds in a symplectic group L of the same
+dimension. Let A be a maximal unipotent subgroup of L containing U . Note that
+gU contains regular unipotent elements of L, and so the subset of gU consisting of
+regular unipotent elements is dense in gU .
+   We claim that CU (g) has dimension at least r − 1. Once we have established
+that claim, it follows as above that the centralizer in H(q) of g is divisible by q r−1 ,
+as required. Since g is not in H, its centralizer in G(q) has order at least twice as
+large. Since the regular unipotent elements in gU are dense, it suﬃces to prove the
+claim for such an element.
+   Since g is a regular unipotent element of L, it follows that CL (g) = CA (g) has
+dimension r. On the other hand, we also see that the set of orthogonal groups
+containing g is a one dimensional variety. (The orthogonal groups containing g are
+in bijection with the g-invariant hyperplanes of the orthogonal module for L that do
+not contain the L ﬁxed space. Since any such hyperplane must contain the image
+of g − 1 which has codimension 2, we see the set of hyperplanes is a one dimensional
+variety.) Now CU (g) is precisely the stabilizer of the hyperplane corresponding to
+H and so has codimension at most 1 in CA (g). Thus, dim CA (g) ≥ r − 1 (in fact,
+equality holds). This proves the claim and completes the proof.                       
+
+   We now give a more combinatorial approach to lower bounding centralizer sizes
+of elements whose characteristic polynomial is (z ± 1)n ; this is complementary and
+yields diﬀerent information. A crucial step in this approach is counting the number
+of unipotent elements in symplectic and orthogonal groups. Steinberg (see [C] for
+a proof) showed that if G is a connected reductive group and F : G → G is a
+Frobenius map, then the number of unipotent elements of GF is the square of the
+order of a p-Sylow, where p is the characteristic. We remind the reader that
+                         2 n
+    (1) |Sp(2n, q)| = q n    j=1 (q
+                                    2j
+                                       − 1).
+                              2 n
+    (2) |O(2n + 1, q)| = 2q  n
+                                  j=1 (q
+                                         2j
+                                            − 1) (in odd characteristic).
+           ±              n −n n
+                           2              n−1 2j
+    (3) |O (2n, q)| = 2q        (q ∓ 1) j=1 (q − 1).
+3058                 JASON FULMAN AND ROBERT GURALNICK
+
+                                                                       2
+This implies that the number of unipotent elements in Sp(2n, q) is q 2n . However
+the orthogonal groups are not connected, so Steinberg’s theorem is not directly
+applicable. Nevertheless, in odd characteristic, unipotent elements always live in
+Ω, so Steinberg’s theorem does imply that the number of unipotent elements in
+                                           2
+O(2n+1, q) in odd characteristic is q 2n and that the number of unipotent elements
+of O ± (2n, q) in odd characteristic is q 2(n −n) .
+                                             2
+
+
+   Proposition 6.11 uses generating functions to treat orthogonal groups in even
+characteristic. Along the way we obtain a formula for the number of unipotent
+elements (this turns out not to be a power of q and seems challenging from the
+algebraic approach). Two combinatorial lemmas are needed.
+Lemma 6.9 (Euler, [A1]).
+                      ∞
+                                                    n
+                             1                 un q ( 2 )
+                          (       ) =                           .
+                      j=1
+                          1 − quj       (q n − 1) · · · (q − 1)
+                                       n≥0
+
+  To state the second lemma, we require some notation (which will be used else-
+where in this subsection as well). Given a polynomial φ(z) with coeﬃcients in Fq
+and non-vanishing constant term, deﬁne the “conjugate” polynomial φ∗ by
+                                           z deg(φ) φ( z1 )
+                                    φ∗ =                    .
+                                                φ(0)
+One calls φ self-conjugate if φ∗ = φ. Note that the map φ → φ∗ is an involution.
+We let N ∗ (q; d) denote the number of monic irreducible self-conjugate polynomials
+of degree d with coeﬃcients in Fq , and let M ∗ (q; d) denote the number of con-
+jugate pairs of monic irreducible non-self-conjugate polynomials of degree d with
+coeﬃcients in Fq .
+Lemma 6.10 ([FNP]). Let f = 1 if the characteristic is even and f = 2 if the
+characteristic is odd. Then
+                                 ∗                  ∗        (1 − t)f
+                      (1 − td )−N (q;2d) (1 − td )−M (q;d) =           ,
+                                                               1 − qt
+                   d≥1
+                                   ∗                  ∗
+                        (1 + td )−N (q;2d) (1 − td )−M (q;d) = 1 − t.
+                   d≥1
+
+   Now we can enumerate unipotent elements in even characteristic orthogonal
+groups.
+Proposition 6.11. Suppose that the characteristic is even. Then the number of
+unipotent elements of O ± (2n, q) is q 2n −2n+1 (1 + 1q ∓ q1n ).
+                                         2
+
+
+
+
+Proof. Given a group G, we let u(G) denote the proportion of elements of G which
+are unipotent. We deﬁne generating functions F ± (t) by
+                             
+               F ± (t) = 1 +    tn u(O + (2n, q)) ± u(O − (2n, q)) .
+                              n≥1
+
+There is a notion of cycle index for the orthogonal groups (see [F1] or [F2] for
+background), and the cycle indices for the sum and diﬀerence of the orthogonal
+groups factor. Setting all variables equal to 1 in the cycle index for the sum of
+                            BOUNDS ON CONJUGACY CLASSES                                 3059
+
+
+O + (n, q) and O − (n, q), it follows that
+                                  
+                                    j≥1 (1 − q 2j−1 )
+                                                t
+                     1+t      +
+                          = F (t)                     .
+                     1−t                1−t
+Let us make some comments about this equation. Here the F + (t) corresponds
+                                                                                        t
+                                                                               j≥1 (1− 2j−1 )
+to the part of the cycle index for the polynomial z − 1. The term              1−t
+                                                                                  q
+
+
+corresponds to the remaining possible factors of the characteristic polynomial. This
+follows from the combinatorial identity
+                                                               
+                       d
+                            −N ∗ (q;2d) 
+                                              td
+                                                 −M ∗ (q;d)
+                                                                 j≥1 (1 − q 2j−1 )
+                                                                             t
+                      r t
+              1 + (−1) dr                 1 − dr             =                     ,
+                        q                    q                       1−t
+     d≥1 r≥1
+
+which is a consequence of Lemma 6.10 after reversing the order of the products.
+Solving for F + (t), one ﬁnds that
+                                             1+t
+                             F + (t) =                   .
+                                         j≥1 (1 − q2j−1
+                                                    t
+                                                        )
+Taking the coeﬃcient of tn and using Lemma 6.9, it follows that
+                  u(O + (2n, q)) + u(O − (2n, q))
+                                                                             
+                                     1                              1
+                =                                           1+                  .
+                  q n−1 (1 − 1/q 2 ) · · · (1 − 1/q 2n−2 )     q(1 − 1/q 2n )
+   Next we solve for F − (t). Setting all variables equal to 1 in the cycle index for
+the diﬀerence of O + (n, q) and O − (n, q), it follows that
+                                                      t
+                              1 = F − (t)        (1 − j ).
+                                          j even
+                                                      q
+
+Here the F − (t) corresponds to the part of the cycle index for the polynomial z − 1.
+The other term on the right hand side corresponds to the remaining possible factors
+of the characteristic polynomial. This follows from the combinatorial identity
+                          d
+                               −N ∗ (q;2d) 
+                                                  td
+                                                     −M ∗ (q;d)     
+                         r t                                                   t
+                1 − (−1) dr                   1 − dr             =        (1 − j ),
+                          q                      q                 j even
+                                                                              q
+      d≥1 r≥1
+
+which is a consequence
+                           of Lemma 6.10 after reversing the order of the products.
+Thus F − (t) = j even (1 − qtj )−1 . Taking the coeﬃcient of tn and using Lemma
+6.9, it follows that
+                                                          1
+             u(O + (2n, q)) − u(O − (2n, q)) = 2n                              .
+                                              q (1 − 1/q ) · · · (1 − 1/q 2n )
+                                                        2
+
+   Having found formulas for u(O + (2n, q)) + u(O − (2n, q)) and u(O + (2n, q)) −
+u(O − (2n, q)), one now solves for u(O ± (2n, q)) giving the statement of the proposi-
+tion.                                                                               
+  Proposition 6.12 gives lower bounds on centralizer sizes for elements in symplectic
+and orthogonal groups whose characteristic polynomial is (z ± 1)n . Note that the
+bound of Proposition 6.8 was only slightly stronger.
+Proposition 6.12.           (1) The centralizer size of an element in the group Sp(2n, q)
+      whose characteristic polynomial has only factors (z ± 1)2n is at least
+      q n (1 − q12 − q14 ).
+3060                      JASON FULMAN AND ROBERT GURALNICK
+
+
+       (2) In odd characteristic, the centralizer size of an element with characteristic
+           polynomial (z ± 1)2n+1 in O(2n + 1, q) or (z ± 1)2n in O ± (2n, q) is at least
+           qn .
+       (3) In even characteristic, the centralizer size of a unipotent element in
+           O ± (2n, q) is at least q n−1 (1 − 1/q 2 − 1/q 4 ).
+Proof. For the ﬁrst assertion, suppose without loss of generality that the element
+is unipotent. By Steinberg’s theorem the total number of unipotent elements in
+                 2
+Sp(2n, q) is q 2n . Hence the sum of the reciprocals of the centralizer sizes of unipo-
+                                    2n2
+                              q
+tent elements is equal to |Sp(2n,q)| , from which it follows that the centralizer size of
+any unipotent element is at least
+         |Sp(2n, q)|
+                      = q n (1 − 1/q 2 ) · · · (1 − 1/q 2n ) ≥ q n (1 − 1/q 2 − 1/q 4 ).
+            q 2n2
+Note that the ﬁnal inequality is Lemma 3.4.
+   For the second assertion, suppose without loss of generality that the element
+is unipotent. By Steinberg’s theorem the total number of unipotent elements in
+                    2
+O(2n + 1, q) is q 2n . Thus the centralizer size of any unipotent conjugacy class of
+O(2n + 1, q) is at least
+               |O(2n + 1, q)|
+                              = 2q n (1 − 1/q 2 ) · · · (1 − 1/q 2n ) ≥ q n ,
+                    q 2n2
+where the inequality uses Lemma 3.4 and the fact that q ≥ 3. Similarly, in the even
+dimensional case with q odd, the centralizer size is at least
+            |O ± (2n, q)|
+                          = 2q n (1 − 1/q 2 ) · · · (1 − 1/q 2n−2 )(1 ∓ 1/q n ) ≥ q n .
+              q 2(n2 −n)
+   In part (3) the characteristic is even, and using the count of unipotent elements
+in Proposition 6.11, it follows that the centralizer size of any unipotent element of
+O ± (2n, q) is at least
+                               |O ± (2n, q)|
+                     q 2n2 −2n+1 (1 + 1q ∓ q1n )
+                          2qn−1
+                                  (1 − 1/q ) · · · (1 − 1/q 2n−2 )(1 ∓ 1/q n )
+                                         2
+                      =
+                                         (1 + 1/q ∓ 1/q n )
+                      ≥ q n−1 (1 − 1/q 2 ) · · · (1 − 1/q 2n−2 )
+                      ≥ q n−1 (1 − 1/q 2 − 1/q 4 ).                                    
+   Theorem 6.13 is the main result of this subsection. Note that there is no need
+to consider odd dimensional even characteristic orthogonal groups, as these are
+isomorphic to symplectic groups.
+Theorem 6.13.             (1) The centralizer size of an element of Sp(2n, q) is at least
+                                                      1/2
+                                          1 − 1/q
+                                qn                          .
+                                     2e(logq (4n) + 4)
+       (2) The centralizer size of an element of O ± (2n, q) is at least
+                                                        1/2
+                                            1 − 1/q
+                              2q n−1                          .
+                                       2e(logq (4n) + 4)
+                              BOUNDS ON CONJUGACY CLASSES                                3061
+
+
+    (3) The centralizer size of an element of SO ± (2n, q) is at least
+                                                    1/2
+                               n        1 − 1/q
+                             q                            .
+                                   2e(logq (4n) + 4)
+    (4) Suppose that q is odd. The centralizer size of an element of O(2n + 1, q) is
+        at least
+                                                  1/2
+                                      1 − 1/q
+                            qn                          .
+                                 2e(logq (4n) + 4)
+Proof. First consider the case Sp(2n, q). Wall [W] parametrized the conjugacy
+classes of Sp(2n, q) and found their centralizer sizes. As in the general linear and
+unitary cases, the formula is multiplicative with terms coming from self-conjugate
+irreducible polynomials and also conjugate pairs of non-self-conjugate irreducible
+polynomials. By Proposition 6.8 a size k partition corresponding to a polynomial
+z − 1 or z + 1 contributes at least a factor of q k/2 . As with the unitary groups, one
+sees that a partition λ from a self-conjugate irreducible polynomial φ contributes
+at least q deg(φ)·|λ|/2 and that λ associated with a pair {φ, φ̄} with φ monic non-self-
+conjugate irreducible contributes at least q deg(φ)·|λ| (1 − 1/q deg(φ) ). Then it follows
+                                                                 r                  ∗
+that a lower bound for the smallest centralizer size is q n 2i=1 (1 − 1/q i )M (q;i) ,
+                                    r
+where 2r is chosen such that 2i=1 2iM ∗ (q; i) ≥ 2n. From [FNP], if r ≥ 1, then
+          2r+1 M ∗ (q; 2r )   = 2r N (q; 2r ) − 2r N ∗ (q; 2r )
+                                 r            
+                                                 − 2r N ∗ (q; 2r ) ≥ q 2 − 2q 2 .
+                                           r−1                          r      r−1
+                              =  q2 − q2
+                               r       r−1     2r                                    r
+Note that if r ≥ 2, then q 2 − 2q 2      ≥ q2 . It follows that if r ≥ 2 and q 2 ≥ 4n,
+      2r
+then i=1 2iM ∗ (q; i) ≥ 2n. Thus we need a 2r which is at least max{4, logq (4n)},
+and one can ﬁnd such a 2r which is at most 2(logq (4n) + 4). Since M ∗ (q; i) ≤ q i /2i,
+arguing as in the general linear case proves the ﬁrst assertion of the theorem.
+   For the remaining assertions the contribution to the centralizer size coming from
+the part of the characteristic polynomial relatively prime to z 2 − 1 is the same
+for symplectic and orthogonal groups. Thus it is suﬃcient to focus on the part
+of the characteristic polynomial of the form (z − 1)a (z + 1)b , where b = 0 if the
+characteristic is even. For O ± (2n, q), the contribution must be at least q 2 −1 ,
+                                                                                  a+b
+
+
+for either the characteristic is odd and a, b have the same parity and part (2) of
+Proposition 6.8 applies, or else the characteristic is even and part (3) of Proposition
+6.8 applies. Note that if the element is not in SO, then the centralizer size is doubled
+in O, giving (3). If the element is in SO, then a and b are even. Thus, arguing as
+                                             a+b
+above, the minimum centralizer size is q 2 since a and b are both even, and (3)
+follows. For O ± (2n + 1, q), note by part (2) of Proposition 6.8 that the contribution
+                   a+b−1
+must be at least q 2 since a, b have unequal parity.                                   
+  For exceptional groups (or more generally for groups of bounded rank), we have:
+Lemma 6.14. Let G be a connected simple exceptional algebraic group with F a
+Frobenius endomorphism associated to the ﬁeld of q elements. If g ∈ GF , then
+|CGF (g)| ≥ q r /26.
+Proof. Since dim CG (g) ≥ r, it follows that |CGF (g)| ≥ (q − 1)r . Since r ≤ 8, the
+result follows for q > 2. If q = 2, the result follows by inspection (see [Lu2]). 
+3062                  JASON FULMAN AND ROBERT GURALNICK
+
+
+   Note that Theorem 1.4 is an immediate consequence of the results in this section.
+In applications, we will have to deal with simple groups as well, so we state this.
+(In all cases except for type A, the index of the simple group in the group of inner
+diagonal automorphisms is at most 4. In type A, we use the results for GL(n, q) or
+U (n, q) and divide by (q ∓ 1) gcd(q ∓ 1, n) – one factor to pass to SL or SU and
+the other factor for the center of these groups.) Thus, we have:
+Theorem 6.15. Let S be a simple Chevalley group deﬁned over the ﬁeld of q
+elements with r the rank of the ambient algebraic group. There is a universal
+constant A such that if x is an inner diagonal automorphism of S, then
+                                      qr                    q r−1
+              |CS (x)| ≥                              ≥                 .
+                           A(min{q, r})(1 + logq (r))   A(1 + logq (r))
+   The result also applies to the full orthogonal group as well. The result fails for
+other graph automorphisms and ﬁeld automorphisms.
+
+       7. Conjugacy classes of maximal subgroups and derangements
+   We want to obtain bounds on the number of conjugacy classes of maximal sub-
+groups of ﬁnite simple groups. We will then combine these results with our results
+on class numbers to obtain very strong results on the proportion of derangements
+in actions of simple and almost simple groups. We deﬁne m(G) to be the number
+of conjugacy classes of maximal subgroups of G. Aschbacher and the second author
+[AG] conjectured that m(G) < k(G) and proved this for G solvable. Note that if G
+is an elementary abelian 2-group, m(G) + 1 = k(G) = |G|.
+   A related conjecture (of Wall) is that the number of maximal subgroups of a
+ﬁnite group G is less than |G|. Wall proved this for solvable groups. See [LPS] for
+more recent results.
+   First we note the following result, which we will not require — see [LS3] and
+combine this with [LMS].
+Lemma 7.1. If G = An or Sn , then m(G) ≤ n1+o(1) .
+   It follows by [LMS] that:
+Theorem 7.2. Let G be an almost simple Chevalley group of rank r deﬁned over
+the ﬁeld of q elements. Then m(G) ≤ c(r) + 2r log log q.
+   The log log q term comes from subﬁeld groups.
+   This immediately gives a generalization of the Boston-Shalev conjecture in the
+case of bounded rank.
+Theorem 7.3. Let G be an almost simple group with socle S a Chevalley group
+of ﬁxed rank r deﬁned over Fq . Assume that G is contained in the group of inner-
+diagonal automorphisms of S. Let M(G) denote the set of maximal subgroups of
+G that do not contain a maximal torus of S. Then
+                                  
+                                 | M ∈M(G) M |
+                             lim                = 0.
+                            q→∞       |G|
+Proof. It follows by the basic results about maximal subgroups of G (cf. [FG1]) and
+Corollary 1.2 that any maximal subgroup M of G either contains a maximal torus
+of S or satisﬁes k(M ) < Cq r−1 with C a universal constant. Applying Theorem
+                         BOUNDS ON CONJUGACY CLASSES                           3063
+
+
+1.4 (with r ﬁxed) gives that for any maximal subgroup M of G not containing a
+maximal torus,
+                                                1
+                 |    M g |/|G| ≤ k(M ) · max          < O(1/q).
+                                          x∈G |CG (x)|
+                  g∈G
+
+Thus, by Theorem 7.2 and the fact that r is ﬁxed,
+                        
+                       | M ∈M(G) M |          log log q
+                                        <O              ,
+                             |G|                  q
+whence the result. Indeed, separating out the subﬁeld case shows that O(1/q) is
+an upper bound in the equation above.                                        
+  As in [FG1], this gives:
+Corollary 7.4. Let G be an almost simple group with socle S a Chevalley group
+of ﬁxed rank r deﬁned over Fq . Assume that G is contained in the group of inner-
+diagonal automorphisms of S. Let M be a maximal subgroup of G not containing
+S and set Ω = G/M . Then there exists a universal constant δ > 0 such that
+δ(G, Ω) > δ.
+Remark. An inspection of the proof shows that the result holds for the proportion
+of derangements in a given coset of S. This is no longer true if we allow ﬁeld
+automorphisms.
+   We now want to consider what happens for increasing r. In particular, it suﬃces
+to consider r > 8 and so we restrict our attention to classical groups. The maximal
+subgroups have been classiﬁed by Aschbacher [As] and we consider the families
+individually.
+   We recall Aschbacher’s theorem on maximal subgroups of classical Chevalley
+groups. We refer the reader to the description of the subgroups in [As]. See also
+[KL].
+   Let G be a classical Chevalley group with natural module V of dimension d.
+Then a subgroup H of G falls into the following nine families. In particular, a
+maximal subgroup is either in S or is maximal in one of the families Ci . We will
+write Ci (G) to denote the maximal subgroups of G that are in the family Ci . We
+let S(G) denote the maximal subgroups of G in S.
+
+                             Table 4. Aschbacher classes
+
+  C1   H preserves either a totally singular or a non-degenerate subspace of V
+  C2                 H preserves an additive decomposition of V
+  C3           H preserves an extension ﬁeld structure of prime degree
+  C4                          V is tensor decomposable for H
+  C5                  H is deﬁned over a subﬁeld of prime index
+  C6   d is a power of a prime and H normalizes a subgroup of symplectic type
+  C7                            V is tensor induced for H
+  C8              V is the natural module for a classical subgroup H
+  S      H is the normalizer of an almost simple group S and H is not in Ci
+3064                   JASON FULMAN AND ROBERT GURALNICK
+
+
+     It is easy to see (cf. [GKS] and [LPS, Lemmas 2.1, 2.4]):
+                                                                               
+Lemma 7.5. The number of conjugacy classes of maximal subgroups of G in            H∈Ci
+is at most 8r log r + r log log q.
+
+  It is straightforward to see using Corollary 1.2 and the structure of the maximal
+subgroups in Ci that:
+
+Lemma 7.6. Let M ∈ Ci (G) for i > 3. There is a universal constant C such that
+k(M ) < Cq (r+1)/2 .
+
+     The only subgroups that are close to that bound are those in C8 .
+     We will now prove:
+
+Theorem 7.7. Let G be a ﬁnite classical Chevalley group of rank r over the ﬁeld
+of q elements. Let X(G) denote the set of maximal subgroups of G contained in
+      8
+S(G) i=4 Ci (G). For r suﬃciently large,
+                           
+                          | H∈X(G) H|
+                                         < O(q −r/3 ).
+                               |G|
+   We will prove this for each of the families, and taking unions implies the result.
+We remark that the theorem applies to any subgroup G between the socle and
+the full isometry group of V . The result fails if we consider almost simple groups
+with ﬁeld automorphisms allowed (see [GMS] for examples of so-called exceptional
+permutation groups and a classiﬁcation of primitive almost simple exceptional per-
+mutation actions).
+   Of course, a trivial corollary is Theorem 1.3. Note also that our estimate implies
+that the proportion of derangements in any coset of the simple group tends to 1 as
+well for the actions considered in Theorem 7.7.
+   The idea of the proof is quite simple. Let X(G) denote a set of subgroups of G
+closed under conjugation. We want to show that the number of conjugacy classes
+of G that intersect some element of X(G) is at most c(X). Then using our results
+for centralizer sizes (or equivalently an upper bound for sizes of conjugacy classes),
+we see that
+                                        c(X)A|G|(1 + logq r)
+                          |        H| ≤
+                                                q r−1
+                             H∈X(G)
+
+or                           
+                         |    H∈X(G) H|       c(X)A(1 + logq r)
+                                          ≤                     ,
+                                 |G|               q r−1
+where A is a universal constant. So we only need show that c(X) is at most
+O(q (2/3)r−2 ) in each case.
+   We note that for a ﬁxed simple group S, the number of embeddings of S into
+G is certainly bounded from above by 2rk(Ŝ), where Ŝ is the universal cover of S
+(note that k(Ŝ) is an upper bound for the number of representations and the factor
+2r comes from the fact that we may have representations which are inequivalent
+in the simple classical group but become conjugate in the full group of isometries).
+The arguments vary slightly depending upon the family we are considering, but the
+basic idea is the same in all cases.
+                          BOUNDS ON CONJUGACY CLASSES                              3065
+
+
+Lemma 7.8. Let G be a ﬁnite classical Chevalley group of rank r over the ﬁeld of
+q elements. Let X(G) denote the set of maximal subgroups of G contained in Ci (G)
+for i > 3. Then for r suﬃciently large,
+                                  
+                                 | H∈X(G) H|
+                                               < O(q −r/3 ).
+                                      |G|
+                                                     
+Proof. By Lemmas 7.5 and 7.6, one knows that H∈X(G) H is the union of at most
+Cq (r+1)/2 (8r log r + r log log q) conjugacy classes of G. By Theorem 6.15, each class
+has size at most A|G|(1 + logq (r))/q r−1 , with A a universal constant, whence the
+result.                                                                              
+
+   We now consider S(G). It is convenient to split S(G) into 4 subclasses deﬁned
+as follows (we keep the notation as above). First recall that if S is a quasisimple
+Chevalley group in characteristic p and V is an absolutely irreducible module, then
+V = V (λ) for some dominant weight λ (in particular, the representation extends to
+the algebraic group). Write λ =      ai λi with the ai non-negative integers and the
+λi are the fundamental weights. A restricted representation is one with ai < p for
+all i. By the Steinberg tensor product theorem, every module is a tensor product
+of Frobenius twists of restricted modules (over the algebraic closure). See [J, St2]
+for details of this theory.
+    S1 S is alternating or sporadic;
+    S2 S is a Chevalley group in characteristic not dividing q;
+    S3 S is a Chevalley group in characteristic dividing q and the representation
+       is not restricted; and
+    S4 S is a Chevalley group in characteristic dividing q, and the representation
+       is restricted.
+Lemma 7.9. For r suﬃciently large, we have:
+    (1) The number of conjugacy classes of maximal subgroups in S1 (G) is at most
+                    1/4
+        O(r 1/2 e10r ); and
+    (2)
+                             
+                            | M ∈S1 (G) M |
+                                            < O(q −r/3 ).
+                                 |G|
+Proof. We may assume that r is suﬃciently large such that there are no sporadic
+groups in S1 (G) or alternating groups of degree less than 17.
+   Let d be the dimension of the natural module for our classical group. So d ≤
+2r + 1.
+   It follows by [GT1, Lemma 6] that either the module is the natural permutation
+module for the symmetric group or the dimension d of the module satisﬁes d ≥
+(m2 − 5m + 2)/2. Since d ≤ 2r + 1, this implies that, for r suﬃciently large, aside
+from the natural permutation module, m ≤ 3r 1/2 .
+   By the comments preceding Lemma 7.8, the number of embeddings of Am into G
+is at most 2rk(A m ) ≤ 4rk(Am ). Thus the number of conjugacy classes of elements
+of S1 (G) is at most
+                                 1/2
+                               
+                              3r
+                       (4r)            2k(Am ) ≤ 12r 3/2 k(A3r1/2  ).
+                              m=5
+3066                  JASON FULMAN AND ROBERT GURALNICK
+
+
+Recalling from Corollary 2.7 that k(Am ) ≤ k(Sm ), and using the bound k(Sm ) ≤
+Cm−1 exp[π(2m/3)1/2 ] which follows from the known asymptotic behavior of the
+partition function ([A1], p. 70), one concludes that the number of conjugacy classes
+                                         1/4
+of elements of S1 (G) is at most O(re5r ).
+   Excluding the natural representations, the number of conjugacy classes of each
+M ∈ S1 (G) is at most 2k(A3r1/2  ) ≤ O(r −1/2 e5r ). Thus, excluding the embed-
+                                                   1/4
+
+
+ding of Am into G via the natural module, the total number of conjugacy classes
+                                                                          1/4
+of G in the union of maximal subgroups in S1 (G) is at most O(r 1/2 e10r ).
+   Finally, consider the natural embedding of Am or Sm into G. Then m = d + 1
+or d + 2 (depending upon the characteristic). Moreover, since the representation is
+self-dual, G is either symplectic or orthogonal. Thus, there are at most 8 conjugacy
+classes of such maximal subgroups, each with at most k(S2r+3 ) classes. Thus, these
+maximal subgroups contribute at most O(r −1 exp[π(4r/3)1/2 ]) conjugacy classes of
+G.                                                                   
+   Hence the total number of conjugacy classes of G represented in M ∈S1 (G) is at
+most O(r −1 exp(4r 1/2 )). Using Theorem 6.15, which gives an upper bound for the
+size of a conjugacy class, gives the result.                                      
+Lemma 7.10. For r suﬃciently large, we have:
+  (1) The number of conjugacy classes of maximal subgroups in S2 (G) is at most
+      O(r 3 ); and
+  (2)               
+                   | M ∈S2 (G) M |
+                                   < O(r 4 (1 + logq (r))/q r−1 ).
+                        |G|
+Proof. For part (1) we argue very much as in [LPS]. Let S be the socle. By the
+results of various authors on minimal dimensions of projective representations (see
+[T, Table 2]) and Corollary 1.2, it follows that there is a universal positive constant
+A such that:
+    (a) k(M ) ≤ Ar for any M ∈ S2 (G),
+    (b) there are at most Ar possibilities for S up to isomorphism, and
+    (c) k(Ŝ) ≤ Ar for each possible S.
+   By (b) and (c), the number of conjugacy classes of maximal subgroups of G
+in S2 (G) is at most O(r 3 ) (the extra r comes from the possibility of equivalent
+representations which are not conjugate in G), and so (1) holds.
+   By (a) and (1), the number of conjugacy classes in the union of all maximal
+subgroups in S2 (G) is at most O(r 4 ). Now (2) follows by this and Theorem 6.15. 
+Lemma 7.11. For r suﬃciently large, we have:
+  (1) The number of conjugacy classes of maximal subgroups in S3 (G) is at most
+      O(2r log r); and
+  (2)                    
+                        | M ∈S3 (G) M |
+                                        < O(q −r/3 ).
+                              |G|
+Proof. Since the representation is not restricted and M is maximal, it follows by
+Steinberg’s tensor product theorem that the representation must be the tensor
+product of Frobenius twists of some restricted representation. By [GT2, Lemma
+26], NG (M ) also preserves this tensor product (over the algebraic closure).
+                            BOUNDS ON CONJUGACY CLASSES                                     3067
+
+
+   Since M is maximal, this implies that M is a classical group over a larger ﬁeld
+and that V is the tensor product of Frobenius twists of the natural module for
+the classical group (and so this module is deﬁned over the smaller ﬁeld). Thus,
+there will be at most 2r log r choices for the class of M (essentially depending upon
+writing the dimension as a power of a positive integer).
+   Indeed, let d be the dimension of the natural module. Write d = me with e > 1.
+Then the socle of M is a classical group over the ﬁeld of size q e and of rank less
+                                                             1/2
+than m. Thus, by Corollary 1.2, k(M ) ≤ O(q em ) ≤ O(q 3r ).
+                                                                1/2
+   It follows that M ∈S3 (G) M contains at most O(r log rq 3r ) conjugacy classes
+of G. Now apply Theorem 6.15 to conclude that (2) holds.                            
+Lemma 7.12. For r suﬃciently large with p the characteristic of G, we have:
+  (1) The number of conjugacy classes of maximal subgroups in S4 (G) is at most
+                 1/2
+      O(r 3/2 p3r ); and
+  (2)                     
+                         | M ∈S4 (G) M |
+                                         < O(q −r/2 ).
+                              |G|
+Proof. The restricted representations of the groups of Ree type (i.e. one of
+2
+ B2 , 2 G2 , 2 F4 ) have bounded dimension, and so we may ignore these.
+   If S is an untwisted Chevalley group over the ﬁeld of s elements, then every
+restricted representation is deﬁned over that ﬁeld and so s must be the ﬁeld size for
+the natural module for G. If S is twisted, then any representation is deﬁned over
+the ﬁeld of s elements or sd elements where d ≤ 3 (depending upon the twist).
+   It also follows by [Lu1] that the rank of S is at most 3r 1/2 .
+   Thus there are at most Dr 1/2 choices for S for an absolute constant D, and the
+                                                    1/2
+number of possible representations is at most p3r . Thus, the number of possible
+                                         1/2
+conjugacy classes is at most O(r 3/2 p3r ); the extra r comes from the possibility
+of equivalent representations not conjugate in G. This proves (1).
+                                                             1/2
+   By Corollary 1.2 and the remarks above, k(M ) ≤ O(q 3r ) for each possible M .
+                                                        1/2     1/2
+   Thus, M ∈S4 (G) M is the union of at most O(r 3/2 q 3r p3r ) conjugacy classes
+of G. Now apply Theorem 6.15 to conclude that (2) holds.                           
+   Putting the previous results together completes the proof of Theorem 7.7. The-
+orem 1.5 also follows immediately from the previous results.
+
+                                       References
+[A1]    Andrews, G., The theory of partitions, Addison-Wesley, Reading, Mass., 1976.
+        MR0557013 (58:27738)
+[A2]    Andrews, G., Partitions, q-series and the Lusztig-Macdonald-Wall conjectures, Invent.
+        Math. 41 (1977), 91-102. MR0446991 (56:5307)
+[As]    Aschbacher, M., On the maximal subgroups of the ﬁnite classical groups, Invent. Math.
+        76 (1984), 469–514. MR746539 (86a:20054)
+[AG]    Aschbacher, M. and Guralnick, R., Solvable generation of groups and Sylow subgroups
+        of the lower central series, J. Algebra 77 (1982), 189–201. MR665173 (84c:20025)
+[BFH]   Benson, D., Feit, W., and Howe, R., Finite linear groups, the Commodore 64, Euler and
+        Sylvester, Amer. Math. Monthly 93 (1986), 717-719. MR863974 (87m:05011)
+[Bo]    Boston, N., Dabrowski, W., Foguel, T., et al., The proportion of ﬁxed point free elements
+        of a transitive permutation group, Comm. Algebra 21 (1993), 3259-3275. MR1228762
+        (94e:20002)
+3068                     JASON FULMAN AND ROBERT GURALNICK
+
+
+[BW]   Britnell, J. and Wildon, M., On the distribution of conjugacy classes between cosets of
+       a ﬁnite group, Bull. London Math. Soc. 40 (2008), 897–906. MR2439655 (2009g:20057)
+[CC]   Cameron, P. and Cohen, A., On the number of ﬁxed point free elements in a permutation
+       group, Discrete Math. 106/107 (1992), 135–138. MR1181907 (93f:20004)
+[C]    Carter, R., Finite groups of Lie type: Conjugacy classes and complex characters, John
+       Wiley & Sons, New York, 1985. MR794307 (87d:20060)
+[DFG] Diaconis, P., Fulman, J., and Guralnick, R., On ﬁxed points of permutations, J. Algebraic
+       Combin. 28 (2008), 189–218. MR2420785 (2009g:20002)
+[D]    Dixon, J., Random sets which invariably generate the symmetric group, Discrete Math.
+       105 (1992), 25–39. MR1180190 (93e:20004)
+[FF]   Feit, W. and Fine, N. J., Pairs of commuting matrices over a ﬁnite ﬁeld, Duke Math. J.
+       27 (1960), 91-94. MR0109810 (22:695)
+[Fe]   Feller, W., An introduction to probability theory and its applications, second edition,
+       John Wiley & Sons, 1957.
+[FGS]  Fried, M., Guralnick, R. and Saxl, J., Schur covers and Carlitz’s conjecture, Israel J.
+       Math. 82 (1993), 157–225. MR1239049 (94j:12007)
+[F1]   Fulman, J., Random matrix theory over ﬁnite ﬁelds, Bull. Amer. Math. Soc. 39 (2002),
+       51-85. MR1864086 (2002i:60012)
+[F2]   Fulman, J., Cycle indices for the ﬁnite classical groups, J. Group Theory 2 (1999), 251-
+       289. MR1696313 (2001d:20045)
+[FG1]  Fulman, J. and Guralnick, R., Derangements in simple and primitive groups. In: Groups,
+       Combinatorics, and Geometry (Durham 2001), A. Ivanov et al., Eds., World Scientiﬁc,
+       2003. MR1994962 (2004e:20003)
+[FG2]  Fulman, J. and Guralnick, R., Derangements in ﬁnite classical groups for actions related
+       to extension ﬁeld and imprimitive subgroups, preprint.
+[FG3]  Fulman, J. and Guralnick, R., Derangements in ﬁnite classical groups for subspace ac-
+       tions, preprint.
+[FG4]  Fulman, J. and Guralnick, R., The probability of generating an irreducible subgroup,
+       preprint.
+[FG5]  Fulman, J. and Guralnick, R., Conjugacy classes in orthogonal and symplectic groups,
+       preprint.
+[FNP] Fulman, J., Neumann, P.M. and Praeger, C.E., A generating function approach to the
+       enumeration of matrices in ﬁnite classical groups, Mem. Amer. Math. Soc. 176 (2005),
+       no. 830. MR2145026 (2006b:05125)
+[Ga]   Gallagher, P., The number of conjugacy classes of a ﬁnite group, Math. Z. 118 (1970),
+       175–179. MR0276318 (43:2065)
+[Gl]   Gluck, D., Characters and random walks on ﬁnite classical groups, Adv. Math. 129
+       (1997), 46-72. MR1458412 (98g:20027)
+[GLS]  Gorenstein, D., Lyons, R. and Solomon, R., The classiﬁcation of the ﬁnite simple
+       groups. Number 3, American Mathematical Society, Providence, RI, 1998. MR1490581
+       (98j:20011)
+[GV]   Gow, R. and Vinroot, C. R., Extending real-valued characters of ﬁnite general linear and
+       unitary groups on elements related to regular unipotents, J. Group Theory 11 (2008),
+       299–331. MR2419003 (2009c:20082)
+[Gu]   Guralnick, R., Intersections of conjugacy classes and subgroups of algebraic groups, Proc.
+       Amer. Math. Soc. 135 (2007), 689–693. MR2262864 (2007i:20071)
+[GKS] Guralnick, R., Kantor, W. and Saxl, J., The probability of generating a classical group,
+       Comm. Algebra 22 (1994), 1395–1402. MR1261266 (95a:20030)
+[GLMS] Guralnick, R, Liebeck, M., Macpherson, D. and Seitz, G., Modules for algebraic groups
+       with ﬁnitely many orbits on subspaces, J. Algebra 196 (1997), 211–250. MR1474171
+       (98j:20058)
+[GMS] Guralnick, R., Müller, P. and Saxl, J., The rational function analogue of a question of
+       Schur and exceptionality of permutation representations, Mem. Amer. Math. Soc. 162
+       (2003), no. 773. MR1955160 (2004d:12005)
+[GR]   Guralnick, R. and Robinson, G., On the commuting probability in ﬁnite groups, J.
+       Algebra 300 (2006), 509–528. MR2228209 (2007g:60011)
+[GT1] Guralnick, R. and Tiep, P., The non-coprime k(GV ) problem, J. Algebra 293 (2005),
+       185–242. MR2173972 (2006g:20018)
+                             BOUNDS ON CONJUGACY CLASSES                                    3069
+
+
+[GT2]  Guralnick, R. and Tiep, P., Symmetric powers and a problem of Kollár and Larsen,
+       Invent. Math. 174 (2008), 505–554. MR2453600 (2009j:20065)
+[GW]   Guralnick, R. and Wan, D., Bounds for ﬁxed point free elements in a transitive group and
+       applications to curves over ﬁnite ﬁelds, Israel J. Math. 101 (1997), 255–287. MR1484879
+       (98j:12002)
+[Hu]   Humphreys, J., Conjugacy classes in semisimple algebraic groups, Mathematical Surveys
+       and Monographs, 43, American Math. Society, Providence, 1995. MR1343976 (97i:20057)
+[I]    Isaacs, I. M., Characters of π-separable groups, J. Algebra 86 (1984), 98–128. MR727371
+       (85h:20012)
+[J]    Jantzen, J., Representations of algebraic groups, second edition, Mathematical Sur-
+       veys and Monographs, 107, American Mathematical Society, Providence, RI, 2003.
+       MR2015057 (2004h:20061)
+[K]    Kawanaka, N., On the irreducible characters of the ﬁnite unitary groups, J. Math. Soc.
+       Japan 29 (1977), 425-449. MR0450383 (56:8678)
+[KL]   Kleidman, P. and Liebeck, M., The subgroup structure of the ﬁnite classical groups,
+       London Mathematical Society Lecture Note Series, 129, Cambridge University Press,
+       Cambridge, 1990. MR1057341 (91g:20001)
+[KR]   Kovács, L. and Robinson, G., On the number of conjugacy classes of a ﬁnite group, J.
+       Algebra 160 (1993), 441-460. MR1244923 (94m:20057)
+[LMS] Liebeck, M., Martin B., and Shalev, A., On conjugacy classes of maximal subgroups of
+       ﬁnite simple groups, and a related zeta function. Duke Math. J. 128 (2005), 541–557.
+       MR2145743 (2006b:20043)
+[LOST] Liebeck, M., O’Brien, E., Shalev, A., and Tiep, P., On the Ore conjecture, J. European
+       Math. Soc. 12 (2010), 939–1008. MR2654085 (2011e:20016)
+[LiP]  Liebeck, M. and Pyber, L., Upper bounds for the number of conjugacy classes of a ﬁnite
+       group, J. Algebra 198 (1997), 538-562. MR1489911 (99c:20023)
+[LPS]  Liebeck, M., Pyber, L. and Shalev, A., On a conjecture of G. E. Wall, J. Algebra 317
+       (2007), 184–197. MR2360145 (2009b:20048)
+[LSe1] Liebeck, M. and Seitz, G., Unipotent and nilpotent classes in simple algebraic groups
+       and Lie algebras, preprint.
+[LS1]  Liebeck, M. and Shalev, A., Fuchsian groups, ﬁnite simple groups and representation
+       varieties, Invent. Math. 159 (2005), 317–367. MR2116277 (2005j:20065)
+[LS2]  Liebeck, M. and Shalev, A, Character degrees and random walks in ﬁnite groups of Lie
+       type, Proc. London Math. Soc. 90 (2005), 61–86. MR2107038 (2006h:20016)
+[LS3]  Liebeck, M. and Shalev, A., Maximal subgroups of symmetric groups, J. Combin. Theory
+       Ser. A 75 (1996), 341–352. MR1401008 (98b:20005)
+[Lu1]  Lübeck, F., Small degree representations of ﬁnite Chevalley groups in deﬁning charac-
+       teristic, LMS J. Comput. Math. 4 (2001), 135–169. MR1901354 (2003e:20013)
+[Lu2]  Lübeck, F., http://www.math.rwth-aachen.de/∼ Frank.Luebeck/.
+[LuP]   uczak, T. and Pyber, L., On random generation of the symmetric group, Combin.
+       L
+       Probab. Comput. 2 (1993), 505–512. MR1264722 (95b:20004)
+[Lus1] Lusztig, G., On the ﬁniteness of the number of unipotent classes, Invent. Math. 34
+       (1976), 201–213. MR0419635 (54:7653)
+[Lus2] Lusztig, G., Irreducible representations of the ﬁnite classical groups, Invent. Math 43
+       (1977), 125-176. MR0463275 (57:3228)
+[M1]   Macdonald, I., Numbers of conjugacy classes in some ﬁnite classical groups, Bull. Austral.
+       Math. Soc. 23 (1981), 23-48. MR615131 (82j:20092)
+[M2]   Macdonald, I., Symmetric functions and Hall polynomials, second edition, Clarendon
+       Press, Oxford, 1995. MR1354144 (96h:05207)
+[Mar]  Maróti, A., Bounding the number of conjugacy classes in a permutation group, J. Group
+       Theory 8 (2005), 273–289. MR2137971 (2006e:20054)
+[MR]   Maslen, D. and Rockmore, D., Separation of variables and the computation of Fourier
+       transforms on ﬁnite groups. I, J. Amer. Math. Soc. 10 (1997), 169-214. MR1396896
+       (97i:20019)
+[NP]   Neumann, P.M. and Praeger, C.E., Cyclic matrices over ﬁnite ﬁelds, J. London Math.
+       Soc. 52 (1995), 263-284. MR1356142 (96j:15017)
+[O]    Odlyzko, A.M., Asymptotic enumeration methods, Chapter 22 in Handbook of Combi-
+       natorics, Volume 2. MIT Press and Elsevier, 1995. MR1373678 (97b:05012)
+3070                    JASON FULMAN AND ROBERT GURALNICK
+
+
+[R]     Robinson, G., Bounding numbers and heights of characters in p-constrained groups.
+        In: Finite Groups 2003, 307–317, Walter de Gruyter GmbH & Co. KG, Berlin, 2004.
+        MR2125082 (2006e:20017)
+[S1]    Seitz, G., Generation of ﬁnite groups of Lie type, Trans. Amer. Math. Soc. 271 (1982),
+        351–407. MR654839 (83h:20021)
+[Se]    Serre, J.-P., On a theorem of Jordan, Bull. Amer. Math. Soc. 40 (2003), 429–440.
+        MR1997347 (2004f:11040)
+[Sh]    Shalev, A., Word maps, conjugacy classes, and a non-commutative Waring-type theorem,
+        Annals Math. 170 (2009), 1383-1416. MR2600876
+[S]     Shintani, T., Two remarks on irreducible characters of ﬁnite general linear groups, J.
+        Math. Soc. Japan 28 (1976), 396-414. MR0414730 (54:2825)
+[St1]   Steinberg, R., Endomorphisms of linear algebraic groups, Mem. Amer. Math. Soc., No.
+        80, 1968. MR0230728 (37:6288)
+[St2]   Steinberg, R., Lectures on Chevalley groups, Notes prepared by John Faulkner and
+        Robert Wilson, Yale University, New Haven, Conn., 1968. MR0466335 (57:6215)
+[T]     Tiep, P., Finite groups admitting grassmannian 4-designs, J. Algebra 306 (2006), 227-
+        243. MR2271581 (2007j:20008)
+[VW]    van Lint, J.H. and Wilson, R.M., A Course in Combinatorics, Cambridge University
+        Press, Cambridge, England, 1992. MR1207813 (94g:05003)
+[W]     Wall, G. E., On the conjugacy classes in the unitary, symplectic, and orthogonal groups,
+        J. Aust. Math. Soc. 3 (1963), 1-63. MR0150210 (27:212)
+[W2]    Wall, G. E., Some applications of the Eulerian functions of a ﬁnite group, J. Aust. Math.
+        Soc. 2 (1961), 35–59. MR0125156 (23:A2461)
+
+   Department of Mathematics, University of Southern California, Los Angeles, Cal-
+ifornia 90089-2532
+   E-mail address: fulman@usc.edu
+
+   Department of Mathematics, University of Southern California, Los Angeles, Cal-
+ifornia 90089-2532
+   E-mail address: guralnic@usc.edu
+
