@@ -1,0 +1,1057 @@
+QUAS!VARIETIE S OF AUTOY~TA.    CONNECTIONS   WITH QUASIGROUPS
+
+        A, A~ Gvaramiya                                                                  UDC 5!2o57/579
+
+
+     By a (pure) automaton, we will mean a 3-sorted algebra ~ = (As G, B), where A Is a set
+of states, G a semigroup of input signals and B a set of output signals, i.eo~ external s
+states, and we assume that the automaton comes with a transition operation~ o: A x G + A,
+and an output operation, ,: A x G § B, bound by the conditions a,og~g.~=(aogl) og2, a ~ g ~ g ~ =
+(aog0~g2.  If A and B are modules over some ring K, and the operations o and * are linear,
+then ~I is called a linear automaton.     An automaton @I is called a Mur automaton if there is
+a map I:A § B such that a , g = (a ~ g)~.   It is easy to show that 9~ is a pure Mur automaton
+if, and only if, the quasi-identity X~oy~=x2oy2~ z~y=----x2~y2 holds, and a linear a u t o m a t o n ~
+is a Mur automaton if, and only if, p is a linear map, and the quasi-identity
+
+
+                                      i=l           i=l
+
+is valid, where    x~A~   ~G,   and the u i are elements of the free semigroup algebra KG I.
+     These and many other considerations      make it necessary   to construct a general theory of
+quasivarieties of automata.
+     Higgins [I] gave an invariant characteristic of varieties of many-sorted algebras (cf.
+[2] for its application to automata).  The corresponding characteristic of quasivarieties,
+that generalizes Mal'tsev's well-known theorem [3], can be found in [4]: A class of many-
+sorted algebras is a quasivariety if, and only if, it is closed relative to filtered prod-
+ucts, is hereditary and contains the identity algebra.  In our paper, this characteristic is
+applied to automata.
+     Our paper consists of three sections.  The first two are devoted to quasivarieties of
+automata.  We define classes of automata, saturated relative to input and output signals.
+These are dual concepts.
+         In Sec. I, we concern ourselves with questions about saturation relative to input sig-
+nals, and in Sec. 2, saturation relative to output signals.        It is shown that saturation
+relative to input signals is equivalent to the quasivariety being presentable by quasi-iden-
+ties that do not involve any equations relating to the semigroup.        On the other hand, quasi-
+varieties of pure automata, as well as of automata linear over a field, are saturated rela-
+tive to output signals if, and only if, it is possible to exclude from their defining quasi-
+identities all variables over the set of output signals.       Moreover, if ~   is a quasivariety
+of automata, saturated relative to input signals, and G is a semigroup, then we will let ~G
+denote the fiber consisting of all automata (J, G, B ) ~ .      Each of these G-automata can be
+viewed as a 2-sorted algebra, the elements of G being considered as operations.         The fiber
+is also a quasivariety.      We give a determination, in terms of fibers, of quasivarieties sat-
+urated relative to input signals.       This determination serves as the basis for the character-
+istic, mentioned above, of quasi varieties saturated with respect to input signals.        We con-
+sider connections between quasivarieties of automata, saturated with respect to input sig-
+n a l s , and quasivarieties of semigroups.   To each quasivariety of automata $, saturated rela-
+tive to input signals, there corresponds a quasivariety of semigroups $, consisting of all
+semigroups that admit ~ faithful representation in $.        It is shown that this correspondance
+is surjective.      A series of results, contained in the first two sections, generalize the cor-
+responding results in [5].
+     Section 3 is devoted to an application of the methods of many-sorted algebras to the
+theory of quasigroups.  This application is founded upon the concept of reversible automaton,
+viz., a triple (A, B, C) of sets of the same cardinality, with only one operation ,: A x B +
+C, invertible on both sides.  So, a reversible automaton is a 3-sorted quasigroup [6]. What
+we have in mind here is the reversibility of the automaton relative to the output function,
+        Translated from Sibirskii Matematicheskii Zhurnal,   Vol. 26, No. 3, pp.   71-30, May-June,
+!985.     Original article submitted November 16, 7983.
+
+
+               0037-4466/85/2603-0315509.50     9 1986 Plenum Publishing   Corporation              3!5
+as distinct from reversibility relative to the transition function, as considered in [7]~
+Every quasigroup Q can be considered as a regular reversible automaton (Q, Q, Q). Two quasi-
+groups Q and Q' are isotopic if, and only if, their corresponding regular reversible auto-
+mata are isomorphic.  This approach allows one to prove, for instance, the following propo-
+sitions: If @ is some variety (reap., quasivariety) of groups, then the class of all quasi-
+groups, isotopic to groups in @, is also a variety (reap., quasivariety) (a generalization
+of the corresponding results in [8, 9]); every reversible automaton (A, B, C) is isomorphic
+to some regular automaton (Q, Q, Q), where Q is a loop (as a consequence of this proposition,
+we have the well-known fact that every quasigroup is LP-isotopic to some loop [6], and the
+proposition reveals the real reason why this is so). We also give some other results about
+reversible automata.
+
+            1.   QUASIVARIETIES       OF AUTOMATA,   SATURATED RELATIVE TO INPUT SIGNALS
+     Let  ~ = (A, G, B) be a semigroup automaton, SA the semigroup of all permutations of the
+set A, Fun (A, B) the set of all mappings from A into B and S(A, B) = SA • Fun (A, B). By de-
+fining on S(A, B) the following operation
+
+
+we obtain a semigroup.
+      If ~ is a linear automaton, i.e., A and B are modules over some associative, commutative
+ring K with identity, then we have to replace S(A, B) above by the semigroup E(A, B) = E n d A •
+Hom (A, B), endowed with the analogous operation of multiplication.
+     The operations o and , define a homomorphism ~:G § S(A, B) of pure automata and a homo-
+morphism ~:@ § E(A, B) of linear automata.   The kernel equivalence of this homomorphism is
+called the kernel of the automaton ~.    An automaton with trivial kernel is called faithful.
+     Unless we indicate otherwise, the term automaton will mean a linear semigroup automaton
+over some associative, commutative ring K with identity.  However, the results below are also
+true for pure automata, as well as for group and ring automata.
+     Definition.  A class ~ of automata is said to be saturated relative to inputs if for
+every epimorphism (A, GI, B) * (A, G2, B) on inputs, the following holds: (A, GI, B ) ~ < ~ ( A , Gz,
+B ) ~ ~.
+
+     Let (A, G, ~) be a given automaton.  Every element g ~ G defines two operations: g~   §
+A and g*:A § B. For fixed semigroup G of input signals, the automaton can be considered as
+a 2-sorted system (A, B), the elements of G being viewed as operations.  The associated pair
+(A, B) will be called a G-automaton. If ~ now denotes a class of automata and G is a semi-
+group, then we will let ~   denote the class of G-automata (A, B) for which (A, G, B ) ~ (the
+fiber of G-automata from ~).
+     THEOREM I. If 9 is quasivariety of automata, saturated relative to inputs, then the
+fiber ~   is for every semigroup G a quasivariety of G-automata. Conversely, if every fiber
+~   of an hereditary class ~, saturated relative to inputs, is a quasivariety, then ~ is
+likewise a quasivariety.
+      Proof.  The quasivariety ~ contains a unit object (o, I, o), where o is the empty space,
+and I is the identity semigroup.  By mapping all the elements of G to I, we obtain an epimor-
+phism.   Since ~ is saturated, we get (o, G, o ) ~ , which means that the G-automaton (o, o) be-
+longs to ~ , i.e., each class ~G is non-empty and contains an identity object.
+     If (At, Bz) is a G-sub-automaton of a G-automaton (A, B) in ~ , then from (A, G, B) ~
+would follow (At, G, B i ) ~ . So, by definition, (Ai, B,)~ ~ , and the class ~a is seen to be
+hereditary.
+      It remains to verify that the class ~         is closed under filtered products.     Let (As,
+B=)~,     for all g ~ f , let ~) be a filter on I, and suppose that for each = ~ I G = = G .      Con-
+sider the filtered product of automata     ~ = = ( A = , G:, B:), and denote it by ~ / ~ , where ~ =
+II~w~       We have   ~/~)=(~Aa/pl, gG~/p~,NB~/pa), where           the congruence   ~ = (~l, 92, ~ )    is
+
+defined by the filter ~).          Since   ~ is a quasivariety,    ~)~.        Using the epimorphism    of
+inputs~':(iIAa/p~,II~=,~B=/pal--~/~),            and remembering    that   ~   is saturated relative to in-
+
+puts, we conclude     that g ~ .
+
+
+316
+        We will denote        Hga         by G I.    For every          g~G        we consider       the function $ ~ G ~, which
+                          9   Cr
+
+
+
+takes on the same value g for every                      ~f:        g(e) = g.              In this way, the semigroup G is embedded
+in G I as the subgroup of constant                   functions.           As s result,          the automaton    (~A~/p1,G,r[B~/p3),
+being a subautomaton          of an automaton             ~[' in      $, is also in ~.              Going over now to the G-auto-
+maton    (~Aa/pI, IIB~/93),             we see that it coincides with the filtered product,                          relative to the
+
+filter    ~), of all (A~, B~).               By definition,           this filtered product belongs               to the class     ~.
+So, ~      is a quasivarity.
+     We will now prove the converse.  Every G-fiber $~ contains an identity object (o, o).
+This is true, in particular, for the identity semigroup I, hence (o, I, o) is an identity
+object in ~.
+     If (Az, B~) is a subautomaton of a G-automaton                                      (A, B)~ then (A~, B ~ ) ~ and (A~, G, B ~ ) ~ .
+If H is a subsemigroup of G, then the sub-automaton                                      (A, H, B) belongs to $ by hypothesis.
+     We proceed to verify that ~ is closed relative to filtered products.  Suppose that we
+are given automata ~==(A=, G=, B=)(o~EI) in ~, a filter ~  on I~ and a filtered product ~ / ~
+of these    ~=:~[/~)=(IIA=/oI,
+                     k~
+                              HGa/pi,: ~ B ~ / p a ~.                     We will let G denote the Cartesian product
+
+~IG=. For every a ~ I ,       the projection G § G e defines an automaton (A~, G, B~), together with
+an epimorphism of inputs (A~, G, Be) § (A~, G, Be).         From our hypothesis of saturation, we
+deduce that (N=, G, B = ) ~ $ . We now consider the G-fiber $~. The filtered product, relative
+to ~1, of all the G-automata                  (A~, Be) then coincides with                         A~/9~, Ba/p~ , and this filtered
+product belongs       to the fiber ~5-" But this then means                                that the automaton     (HA=/pl,-G, HBa/p~)
+
+belongs    to the class            $.     We also have an epimorphism of inputs
+
+
+
+From the saturation hypothesis                  on    E we now conclude that                    ~/~)~.
+     Our next aim is to show that quasivarieties of automata, saturated relative                                           to inputs,
+can be defined by quasi-identities that do not involve any semigroup equations.
+        To this end, we proceed to define the corresponding                                   free objects.
+     First, we will define what is meant by a free linear G-automaton, G being an arbitrary
+semigroup.  Let (X, Z) be a pair of sets.   Together with the semigroup G, we will also con-
+sider the semigroup G z, obtained from G by freely adjoining an identity element.       G and G ~
+span the semigroup algebras KG and KG ~. Let X o K G i be a free KG~-module on X, X * K G a free
+KG-module on X and KZ a free K-module on Z.
+        We consider    the triple            W~=(XoKG         ~, G , X ~ K G @ K Z ) ,       and define on it the automaton opera-
+tions    o and *:
+
+                                                           (Y,x~ ~ u,) o g = Ex,. ~ u~g,
+                                               x.~Xi ~ Ui) ~ g =   ZXi ":~u~g for every         g ~ G.
+
+     It is easily verified that the G-automaton ( X o K G ~, X ~ K G @ K Z ) obtained in this manner
+is a free object, generated by the sets (X, Z), in the category of all G-auto~mta over the
+ring K.
+      Suppose now that we are given three sets (X, Y, Z), and let F = F(Y) be the free semi-
+group.   It is immediately seen that the automaton W=(XoKF ~,F, X~K~@KZ) is the free auto-
+maton, generated by the triple (X, Y, Z), in the category of all linear automata over the
+ring K.
+     THEOREM 2. A quasivariety of automata 9 can be defined by quasi-identities not involv-
+ing t~e semigroupif, and only if, the quasivariety is saturated relative to inputs.
+     Proof.  Sufficiency.  Let 9 be a quasivariety of automata, saturated relative to inputs,
+and F = F(Y) a free semigroup of countable rank.  By Theorem I, ~  is a quasivariety.  Its
+
+
+
+                                                                                                                                        317
+quasi-identities               relate to the free F-automaton                               ( X o K F ~, X *      KF@KZ),         and each is of the form
+                                                      u~=o A u~=o A ... A u~=o~v=o,                                                                                   (1)
+where the u i and v are elements of X o KF ~ or X * K ~ @ K Z ,    and the elements of Y are considered
+as constants.   We will show that this same collection of quasi-identities of the form (I),
+with variables y ~ Y , define the quasivariety ~.             First, we make a general remark.
+     Given an automaton (A, G, B) and arbitrary maps p~: X + A, P2: Y + G, p~: Z § B, we
+can extend them to a homomorphism ~: W § (A, G, B). We denote F p2 = Go. Then we have a sub-
+automaton (A, Go, B) in (A, G, B). By means of P2, we define an automaton (A, F, B):~ o f = ao
+fP2, ~ , f = ~ , fP2.   In addition, (A, F, B) + (A, Go, B) is an epimorphism of inputs.         The
+map ~'=(p~, ~z, ~ ) o f F-automata ( X o K F ' , - X ~ K F @ K Z ) and (A, B) is a homomorphism.
+       We will verify that for every element u in X ~ KF z or X ~ K F @ K Z ,                                                           we always have u p = u ~'.
+       indeed, let             u = Zx~ o ulg,, ..., y~) ~ X o KF'.              Then
+
+
+       P-1                                ~1                     P'2            lt2 )
+   .   .     .   .    .    .                   = Ex     ',             ....                                o            .   ,     =       x?        . . . .   ,   =     .
+
+
+
+
+Similarly,       if u = E x i * ui(y~ . . . . .   y~) +E%,z~ ~ X * K ~ @ K Z ,                          then     u ~ = u ~3 = ' ~ x ~     *ui(Yl .... ,Y~)~ +
+
+
+     We now return to our proof of sufficiency.         Let(A, G, B ) ~ ~. We will verify that every
+quasi-identity of the form (I), with variables g ~ Y ,        is satisfied in this automaton.  We will
+use the notation of the above remark.        Together with (A, G, B), the class ~ also contains the
+subautomatom (A, Go, B).   By the saturation property, the corresponding F-automaton (A, B)
+belongs to the fiber ~v, and the quasi-identities of the form (I), with constant Yi, there-
+fore hold in this automaton.     We now proceed from the homomorphism p:W + (A, G, B), and we
+suppose that the equations u ~ = o A u ~ = 0 A .-. Au~---~ apply, i.e., that the premises of the
+quasi-identities of form (I), with variables y ~ Y ,       are satisfied in (A, G, B).   It then fol-
+lows from our remark that we have at the same time
+
+                                                        ~1 = 0     AU2        =0        A     "'"       A ~n   = O.
+
+Since the F-automaton (A, B) belongs to the class ~F, it follows from these last equations
+        '                  p    p'                                                                  '
+
+
+
+
+that v~ = o. But then v = v        = o, and hence the quasi-identities of the form (I), with
+variables  y ~ Y , are valid in the class ~.
+     Conversely, suppose that the quasi-identities of the form (I), with variables y ~ Y ,
+hold in (A, G, B). We will show that (A, G, B ) ~ .  To do this for the quasivariety ~, or
+indeed for any axiomatizible classes, it will be sufficient to consider the case where the
+automaton (A, G, B) is finitely generated.    We take an epimorphism ~:F § G. Then we deduce
+as above   that the quasi-identities of the form (1) with constant Yi hold in (A, F, B), and
+hence (A, F, B ) ~ ~ c ;. The map (I, ~, I):(A, F, B) § (A, G, B) is an epimorphism of inputs,
+and, since ~ is saturated, we obtain (A, G, B ) ~ ~.
+     Necessity.  Suppose that the quasivariety ~ is given by quasi-identities of the form
+(I), without semigroup involvement.  We will prove that it is saturated relative to inputs.
+Suppose that we are given some epimorphism of inputs (I, v, I):(A, G, B) + (A, H, B) of two
+automata.
+     Let (A, G, B) ~ ~. ,We use the homomorphism p = (Pl~ p2, p3):W § (A, H, B) to construct
+another homomorphism p2:F + G ~ith the property p2 = p2 ~. We do this as follows.    For every
+                                                       p'
+y ~Y  we find a g ~ G such that y~2 = g- We denote y 2 = g, and define in this way a map
+  y                                                                     T
+Pz:Y + G, which can be uniquely extended to !
+                                              the desired homomorphism P2:F § G. It follows
+from the definition of p2 that p' =(pl, Pc, p3 :W § (A, G, B) is a homomorphism, and we have
+a commutative diagram
+
+                                                                 w             Y /~,(A,H,~)
+
+                                                                                   (a,g,~)
+We see that for every element u, belonging                                    to X o KF I or X * K F ~                      KZ, the equality uP = uP'
+applies.
+
+318
+        Suppose now that the following premises                                  of the implication          (I) hold in (A, H~ B):
+                                                                           ~t
+                                                                                       ...    A*#,=o,
+
+then the equations
+
+                                                        U1 ~ O ~      ~ 2 ~0       ~   ..,    ~U n =O
+
+are valid in (A, G, B), and it follows from them that v~ T = o, seeing that (A, G, B ) ~ .                                                 But,
+then vD = v~' = o is also in (A, H, B), whence (A,H,B)~.
+     Let (A, H, B ) ~ . We use the homomorphism v:W + (A, G, B) to construct a homomorphism
+~' = Dv:W + (A, H, B), and we see that the equation u~ = u~' is valid for every u belonging
+to X o KF 1 or X*KF@KZ.    By the same reasoning as above, we find that (A, G, B) ~ .
+      It will be convenient for what follows to introduce the following operators on classes 8
+of many-sorted algebras: we denote by 0~ the result of adjoining an identity algebra to @;
+$8    will denote all subalgebras of algebras in 8; and C~8 will denote all filtered products
+of algebras in 8. As in the one-sorted case [3], it can be proven that the smallest quasi-
+variety generated by the class of algebras @ is SC~Oe. We will apply this to classes of auto-
+mata.   Moreover, for these classes we introduce yet another operator, having to do with satur-
+ation:
+     V8   will be the class consisting of all automata (A, G, B) for which there exists an
+epimorphism of inputs (A, G, B) + (A, G', B) with right side in 8~
+      It is immediately verified that if 8 is a quasivariety of automata, then V O is a quasi-
+variety, saturated relative to inputs.   Thus, the quasivariety of automata~ saturated relative
+to inputs, generated by some class 8 of automata, is the class F~SC~8~=VSC~8.
+     To a given saturated quasivariety of automata, we associate a certain quasivariety of
+semigroups.  If G is some semigroup, then we can find in each quasivariety of automata, sat-
+urated relative to inputs, an automaton (A, G, B) with given semigroup G. The question
+arises of the conditions under which one can find a faithful one.  In connection with this
+question, just as for linear representations [5], we will introduce the following notation:
+If ~ is a class of semigroup automata, then ~ will denote the class of semigroups G for
+which there exists a faithful automaton (A, G, B ) ~ .
+     THEOREM 3. Let ~ be a quasivariety                                    of automata,           saturated relative      to inputs;   then
+is a quasivariety of semigroups.
+        Proof.          $    contains an identity automaton                         (o, I, O) o         Therefore,   the single-element
+semigroup belongs                 to the class ~.
+      Let G ~ }   and let H be a subsemigroup of G. Then there exists a faithful automaton
+(A, G, B ) ~ .  The automaton (A, H, B), being an automaton of a faithful automaton in X, also
+belongs       to    ~       and     in addition         is faithful.              Hence, H ~ } ,        i.e., the class    ~   is hereditary.
+        We proceed           to prove that          ~    is closed relative to filtered products.                          Let us take a sys-
+tem of semigroups G ~ 7 ~                    ~I, and f i l t e r ~              on I and form the filtered product             H G~/~. For
+each       ~f,      we have by assumption                 a faithful             automaton {~:(A~,          G~, B~) ~ ,    with   ~=]]~a/~9=
+
+(HA~/'pl,]-[G~/p~,]-~B~/Ra]belonging to                             $, since           ~      is a quasivariety.      The semigroup H G ~ / o ~
+
+coincides with              ]-~G~/~, and serves as the semigroup of input signals for the automaton
+in    ~.      We will check that the automaton                         ~         is faithful.
+     We consider, together with ~ , the automaton                                            ~[~(HA~/pI,G,]~B~/ga),where          ~ =HG~
+and we introduce a special congruence 9 on G:
+                                                                   g ~ g z "*~ I(g~, g~) ~ ~,
+where l(g~,g ~ ) : { ~ l : ( V a ~ A ~ ) a o g ~ ( ~ } = a o g ~ ( ~ ) A          a.g~(~)=a~g~(~)}.           We will verify that 9 sat-
+isfies the following four conditions:
+         I.   @acT.
+
+
+
+                                                                                                                                              319
+       By definition,     glpzg~=~fo2={oc~f:g1(o~)=g~(=)}~ff).                                     Let 1 0 2 ~          , then    Io2~_I(gl, g2),
+since g,(~) =g2(~) ~ a ~ 1 7 6               g2(=) /ka~g,(~)=a~g2(~);                        hence       7(g~, g2) Eff), being a superset
+of Ip2, and it follows           that giTg2.
+       2.   ~ lies in the kernel             of the automaton                 ~;,
+                                                                                                                                                     o
+
+       Let gl~g2.     We will show that for every                           a~IIA ~ the following equations hold:                              aog,=
+aog2 and a*g,=a*g2.       Indeed, if o~El(g~, g2), then a(o~)og~(~) ~ a(~)og2(~) and a(~)~g~(~)=
+a(cz)~g2(o~). Therefore, I(gl, g2) is a subset of the set of those = ~ I for which the indi-
+cated equations hold.    The latter set, being a superset of l(g,, g2)~ff), therefore also belongs
+to of), hence the following equations, aog,=a'og~ and a~g~=.a~gz, are valid.         From these we
+deduce the desired equations               that signify that T lies in the kernel of ~'.
+       3.   ~ is a faithful kernel.
+     We must check that if gl and g2 are not related by T, then they act differently via the
+operations o and ,. So, let l(g,,.g2)~) and ~I\](g,, gz). We can then find an c~ in A~ such
+that   a=og,(~)=f=a=og~(~) or a=~g,(o~)=f=a~g2(~).                          We select an element ~ from                         ~[A~   such that
+
+a(~)=a= for all ~l\I(g,, gz). We must show that for this ~,                                              aog~v~aog~         or    a~g,#=a*g~.       Let
+us assume the contrary. Then
+                                       (a o g,)(~)   = ( a o g ~ ) ( ~ ) = a ( ~ ) o g , ( a ) = a ( ~ ) o g~(c~),                                   (2)
+                                       (a ~ g,)(~z) = (a ~ g~)(o~) = a(o~) ~ g,(~z) = a(o~) ~ gz(o~),
+
+and all ~ for which the equations                    (2) are valid lie in l(gl, g2), for outside this set there
+can be no such equations.  Thus, if a o ~ = a ~    and a~g,=a~g~,   then the set of all ~ for
+which the equations (2) hold belongs to ~ .     Its superset l(g~, g2) must therefore also be-
+long to ~ , and it follows that gz~g2-    So, we have obtained a contradiction.
+       4.   If all automata        ~I= are faithful,                  then ~ = 02.
+       Let glrg2.     Then l(g~: g ~ ) ~ .            For      (z~-l(g,, g~), we have gl(~)                          = g2(~):    for every a , ~ A = ,
+                                       a~ o g , ( ~ ) = a~ o g~(~z)     and     a~ ~ g ~ ( ~ ) = a~ ~ g~(o~),
+
+whence, by virtue of ~I~ being faithful, we obtain the desired result.      So, the set of all
+=~!    for which gl(~) = g2(~) contains the set l(gl, g2) in ~), hence it must itself belong
+to ~ .   This, by definition, means that g ~ g 2 . Earlier, we have obtained the inclusion p ~ ,
+and now we have proved its opposite, hence r = ~2.
+     Conditions 2-4 show that the automaton                             ~     is faithful,             and this means that the class
+is closed relative to filtered products.
+     It is clear from the proof that in Theorem 3 the condition of saturation relative to
+inputs was superfluous.  However, it was inserted in the statement in order that one could
+connect to each semigroup at least one automaton, not necessarily faithful, that belongs to
+the class ~. We will now show that to each quasivariety of semigroups ~        one can associate
+a quasivariety of automata ~F, saturated relative to inputs, such that ~ = ~ .
+     We will consider all possible faithful automata (A, G, B), where G ~ .    We will denote
+the class of such automata by ~0, and we will let r    denote the quasivariety of automata,
+saturated relative to inputs, that is generated by the class ~0: I--~0(~) = V~C~o.
+       THEOREM 4.     The equality           ~=~        holds.
+      Proof. Let G ~ .         We then have a faithful regular automaton (KG I, G, KG).  This auto-
+maton, by definition,       belongs to the class ~F0, and therefore also to the quasivariety  3f, and,
+by virtue of its being faithful, we have                          G~.            Thus,         ~.~
+     Conversely, let G E ~  and               let (A, G, B) be a faithful automaton, belonging to the class
+~=VSC~o.     Since (A, G, B) is               faithful, it belongs to the class SC'~to, and is therefore a
+subautomaton of some automaton                (Ax, G~, B~) in C~0. We then deduce from the definition of
+the operator C 9 that (AI, GI,                BI) is a filtered product of automata from 1 0 : ( A ~ , G ~ , ~ ) =
+]-[(Aa=,G~=,B~=)f~ , where        ~)      is a filter on I.                   Since G ~ , ~            for all = ~ [ ,          the filtered product
+
+
+
+
+320
+G,=~G~=/~          also belongs    to the quasivariety            ~.         The subsemigroup     G of the semigroup G~
+
+likewise belongs       to   ~, hence   ~ .
+     We observe that it is possible -- for instance in the case of linear automata - that there
+does not exist a quasivariety ~ , such that ~ coincides with a given quasivariety   ~ of semi-
+groups.
+
+                                  2.   SATURATION RELATIVE TO OUTPUT SIGNALS
+     Definition.  A class $ of automata is called saturated relative to output signals, if
+the following condition holds: let (A, G, B) be some automaton and (A, G, B0) some subauto-
+maton with the same A and G. The class ~ is saturated relative to output signals if always
+                                             (A, G, B ) ~ ~ = ~ ( A ,       G, B 0 ) ~ ~.
+We will introduce yet another operator V1: V ~ consists of those automata                                (A, G, B) that
+admit a subautomaton (A, G, B0) belonging to the class ~.
+     One can verify that the smallest quasivariety of automata,                             saturated relative              to output
+signals and generated by some class ~, is the class V'SC'~.
+     We will relate the condition of saturation relative to output signals to the exclusion
+from the quasi-identities of variables from the set Z [we remind the reader that (X, Y, Z)
+is a system of free generators for the free automaton W].
+     Proposition I. If the variables in Z are absent from the quasi-identities that define
+a quasivariety X of automata, then the quasivariety is saturated relative to output signals.
+      Proof.   Suppose that ~. is defined by quasi-identities without variables from Z, let
+(A, G, B) be some automaton with subautomaton (A, G~ B0) belonging to ~.     We will show that
+(A~ G, ~ ) ~ .  To this end, we have to verify that every quasi-identity
+
+
+without variables from Z, and appearing in a presentation for the class ~, is also valid in
+(A, G, B).  Suppose that we are given a homomorphism ~ : W §             G, B), and suppose that the
+following equations hold in (A, G, B): u ~ = u ~ A u ~ = u ~ h ... A u ~ = v ~ . Since the variables in
+Z are absent from the u i and vi, these last equations are already valid in the subautomaton
+(A, G, B0).  Since the latter lies in ~, we also have u[+ 1 = v~+ !.
+     A free object in the category of pure automata                          is of the form W = (X oF ~, F~ X { F O Z ) ,
+where F = F(Y), and X, Y, Z are countable sets.
+        THEOREM 5. If 9 is a quasivariety of pure automata, saturated relative                                  to output sig-
+nals,    then it can be defined by quasi-identities without variables from Z.
+     Proof.  We will only deal with irreducible quasi-identities,                             i.e., quasi-identities
+without repetitions by transitivity of equations.
+      The premise of the quasi-identity u~=vl A ...A u ~ = u ~ u = v will be denoted by ~ , and
+we will split it into three groups: the group 55~ will be a conjunation of equations u i = zi,
+not containing any variables from Z,      ~ 2 will be the conjunction of equations of the form
+u i = zi, and ~ 3 will be the conjunction of equations of the form zi = zj. The quasi-identity
+can then be written in the form
+
+
+        COROLLARY.     u = v can belong      to one of      the      three      indicated   groups.    We c o n s i d e r     three
+cases separately.
+     I. ( u = v) ~&r        We will show that in this case the condition                       (3) is equivalent             to the
+quasi-identity
+                                                           ~   u =     v,                                                             (4)
+
+where the premise ~ is the conjunction of ~ , as well as of the equations uj = vj, whenever
+either uj = zj, vj = zj enter into the group ~ , or uj = zj, vj = zk enter Into & g ~ with
+zj = zk in    ~r
+     Suppose that an automaton (A, G, B) satisfies the quasi-identity (4). We specify a
+homomorphism p:W § (A, G, B) and require that the premise of (3) be satisfied, i.e., that in
+
+
+                                                                                                                                      321
+the specified notation the conjunction ~ = ~ A ~     h ~   be true.  But ~   is then also
+true.  Indeed, ~    is more general than both ~   and ~ .  Furthermore, if u~ = vj appears
+in @ and ~ 2 contains uj : zj, vj = zj , then uj = zj, vj = zj, whence uj = vj. Finally    if
+uj = vj appears    in ~ ,
+                       where uj = zj, vj = zk with zj = zk in ~3,              then we have uj = z ,
+v~ = z~, z~ = z~, and hence u~ = v jP.
+     So, if ~    is true in (A, G, B), then it follows that ~   is true, as well as its con-
+sequence u~ = v~.   Conversely, suppose that (3) holds in (A, G, B).  Since no variables from
+Z appear in (4), we can vary the definition of the homomorphism ~:W § (A, G, B) on these vari-
+ables as we please.   Suppose that the premise of ~   is true in (A, G, B), and suppose that
+zl, z2,...,z n constitute all the variables from Z that appear in the premise J .  We choose
+z[, z~,...,z~ so that the premise of the quasi-identity (3) is valid.
+     First, it is clear that zl, ze,...,z n enter into ~   and ~3.  If, for some z i (i = I,
+2,...,n) there is a v such that v = z i appears in ~2, then we put z~ = v ~.  If there is an
+equation z i = v' in ~ , then the premise of (4) will contain v = v', and, since the latter is
+true, we will have v~ = v '~. Thus, the definition of z~ is independent of the choice of v.
+If v is such that v = zi does not appear, but z~ does, with zj satisfying the conditions
+(z{=zj)~3, (v=z~)~z,      then we put zj = v . By the same argument, the deflnltlon of zj does
+not in this case either depend on the choice of zj and v.   For all the remaining zi, we will
+assume that the z~ arbitrarily coincide among one another.   With such an additional specifica-
+tion of ~ on the set Z, the premise of (3) will obviously hold, and therefore also the conse-
+quence u ~ = v p, which is more general than (4). So, in case I, the theorem is true, even
+without the assumption of ~ being saturated.
+      If.   (u=v)~.         The expression   (3) takes on the form
+                                         ~=~,A        ~ A ~           ~ j,
+                                                                        u=z.                           (3')
+We will consider all possible subcases here.
+      ]) ~ 2   contains the equation w = z.
+Replacing the conclusion of (3') by u = w, we get the quasi-identity
+                                                 .~t ~     u =   w,                                     (5)
+
+which is equivalent to (3').  Indeed, if (3') holds in (A, G, B ) ~   , then we have u ~ = z ~ =
+w~ for every homomorphism n:W § (A, G, B), i.e., (5) also holds.    Conversely, if (5) holds in
+(A, G, B), then u~ = w~ and w~ = z~, i.e., (3') is also valid.    This takes us to case I.
+     2) ~   contains an equation z = zi, and w = z appears in ~ = . We can convince ourselves,
+as above, that in this case (3) is equivalent to the quasi-identity ~ = ~ u = w , and this
+quasi-identity is without variables from Z.
+     3) ~   contafns z = zi, but z i is not encountered in ~ .   By virtue of (3') being ir-
+reducible, there are no equations z = zj, with j ~ i, in ~ .    We remove the equation z = z i
+from  m~, and proceed to show that the resulting quasi-identity
+                                                 ~'    ~   u=z                                          (6)
+is equivalent    to (3').
+     Let (3') hold in (A, G, B), and suppose that under some homomorphism ~:W § (A, G, B) the
+premise ,~t' of the quasi-identity (6) is true. By our construction, the variable z i does not
+appear in ~t', hence its value z~ may be chosen arbitrarily.  We put z~ = z ~, The premise of
+(3') will then be fulfilled, hence also the conclusion u~ = zD, which is more general than
+(6). The converse is obvious.
+     So, this brings us to the case where 5 ~ t ~ u = z , and z does not appear in j~t. We take an
+arbitrary homomorphism D, under which the premise of ~t is true.       The equation u~ = z~ must
+then hold.  Let b be an arbitrary element of B. Together with ~, we give ourselves a homo-
+morphism D' that coincides with ~ on all elements excep~ z:z~' = b ~ z ~. Since 5~t does not
+contain z, we can write the conditional equation 5 ~ = J ~ t . We also have u~ = u~'.   Since the
+quasi-identity ~ t = u u = z must hold under the homomorphism ~', the truth of ~t~' will imply
+the equations u~' = z~' = u~ = b, with the result that u~ can equal any element of B. But
+this is impossible if B contains more than one element.       By the saturation hypothesis, B can
+consist of any number of elements; so, case 3) cannot occur.
+
+
+
+322
+        Iii.     (g=v) ~3-                 The expression                   (3) takes on the form
+                                                                                         - ~ z~ = zj.                                                                ( 3 ~')
+
+In this solution,               two subcases are possible:
+     I) At least one of the variables                                    zi, zj appears                           in       a~2.       We will say that the equation
+v = zj appears in ~ .
+     (3 I~) can then be written in the form of a quasi-identity                                                                        s$~   u=z~,   and this takes us
+to case If.
+        2) zi, zj do not appear in                         ~2,        and         .~3 contains an equation zi = Zko
+     If zk = zj, then (3") is trivially true: The conclusion is contained in the premises.
+We therefore have to consider the case zj ~ Zk, with zk = v not appearing in ,552, else we have
+the subcase I). Then zj can also appear in J~, say in the equation ( z j = z ~ ) ~ . We will as-
+sume that this is indeed the case.  Then, by removing the equation zj = z I from ~o~. we obtain
+the quasi-identity
+                                                                                 ~"        ~ a=zj,                                                                       (7)
+where    J"     is without the variable zjo                                We will show that (7) is equivalent to (3N) 0
+        Suppose that (3") holds in (J, 6, B ) ~    and that, under the homomorphism ~ the premise
+ozZ"    of the quasi-identity (7) is valid.     By putting z~ = z~, the premise ~ of (3'~), and
+hence its conclusion z~ = z~, become true~                                               The latter is also the conclusion of                               (7).   The
+converse is obvious.
+     If zj does not appear in 55" and does not coincide with zi, then zj can be any element
+in B~ which contradicts the saturation hypothesis.
+        The analogous             theorem also holds for linear automata over a field~
+     THEOREM 6. Let ~ be a quasivariety of linear automata over a field K~ saturated rela-
+tive to output signa!s~ then it can be defined by quasi-identities not involving any variables
+from Zr
+        ]Proof.        The quasi-identities                   under consideration may be written in the form
+                                                                            ~,~ A ~% =~ ~ = v,                                                                           (8)
+where    ~      does not          contain        any variables f r o m Z, b u t ~ 2 d o e s ,           We r e c a l l     that the automaton
+W=(XoK[        ?~, F, X . K F ( g K Z )          is free in ~.      We c o n s i d e r t h e f o l l o w i n g p o s s i b l e cases:
+        I. ( u = ~ ) ~ ~             We write out all the conjunctive constituents of ~ 2 :
+
+
+
+
+where     v~ = i       xl ~9v~i, k ---- t, 2 , . . . ,   m, x~ ~ X , v~ ~ K F , Xi~ ~ K, z~ ~ Z ,
+                 {=1
+
+
+        We introduce the notation
+
+                                                                       ~j~zi=zj, ] = t , 2,.o~
+Suppose that the
+              T
+                  collection
+                      T
+                             of elements z~,.o.,Zs,...,z m from the vector space KZ contains
+the elements zl,~     s as a maximal number of linearly  independent vectors~
+        We then have a linear system
+
+                                                                                                                            b
+
+
+
+
+                                                              7 ...................... , - : .............................. ; : : ~
+                                                            lz~ = a~_~ lzl ~ ... + ~m-~z~,
+
+
+
+
+                                                                                                                                                                         323
+which we transfer to the elements v ~ . . . ,                              Vs,... , v m
+
+                                       .........                                                                           ...........                                         (9)
+
+                                             Pm = O~m--s1Pl ~- 9 9 9 J C C&rn--$sl2~.
+
+The conjunction of all the equations of (9) will be denoted by                                                                           ~.       We will show that the
+quasi-identity
+                                                             ~             A ~.=~                         = v                                                                (~0)
+is equivalent to (8).  Suppose that (Iu) holds in the automaton (A, G, B).   Suppose that we
+give ourselves a homomorphism ~:W + (A, G, B) under which the premise of (8) is satisfied,
+i.e., the conditional expression ~ % ~ A J$~ is true. By virtue of ~%~ being true, the follow-
+ing equations are satisfied:
+
+
+                                                            Z 1        ~                 X~           =       ~,
+
+
+
+                                                           I ]J[   ,
+
+                                                         Zrn                             ~z~ " v ~ .
+                                                                             i=l
+
+In addition,        the following equations hold
+
+                                            ......z.s+~...=.....~..~..~zi....~....[.:..:....~...~.z.~.....]                                                                  ( 12 )
+
+                                            Zm       ~      O~m_8iZ 1                    "~- . ..         ~- O ~ m _ ~ Z   ~
+
+and, by ( 1 1 ) ,   the equations
+
+
+                                            ..... ~ . L ~ . . . . . ! L L ~ . L : . : . . Z . . . . Z ~ L ~                 ....                                             (13)
+
+
+
+are valid as well.  But then all the equations that figure in ~ 2 are valid in (A, G, B), as
+well as the entire premise ~ % g I A ~ 2 of formula (lu) and hence also the equation u~ = v~ -- a
+conclusion for (8).
+     Conversely, suppose that (8) holds in (A, G, B). We arbitrarily extend the system of
+                 v
+vectors zl,...,z s to a basis Z' of the vector space KZ.    Consider a homomorphism ~:W + (A, G,
+B).  Since (10) does not contain any variables from Z, it is only on the variables from X and
+Y that the homomorphism ~ is of any interest: We can modify it as we please on Z.     Suppose
+that the premise of ( 1 0 ) is true under ~, i.e., the conditional expression ~   A~  ~ !s
+                                                                                         " true.
+We specify a homomorphism v:Z' § B by the rule zI,~ = u ~ , z 2,v =r~,...,zs
+                                                                     ~      '~ = u~, and we define ~ in a
+completely arbitrary way on the remaining basis elements from Z'             We will now proceed from a
+new homomorphism ~':W § (A, G, B) that only differs from ~ on variables from Z, in accordance
+                                                                                                                                                  r         i
+
+with the given rule.        We will show that the conditional                                                         expression              ~       A ~       is then true,
+                                                                                            p
+
+i.e., the premise of (8) is valid.  Indeed, ~    is more general than both the premise of (8)
+and the premise of (10).  Further, we take an arbitrary conjunctive constituent
+                                                                                     ,
+
+                                       Uj=                  ~iiZi = Z j ,                       ]=1,2,               ...,m
+                                                   ~=l
+in ~ ,     and we proceed to show that the equation
+
+
+
+
+applies.      We consider two cases.
+     I) j ~ s 9 In this case, by the definition of u ~ , zj'~' coincides with vj                                                                                   Since D
+is a homomorphism,
+
+
+
+
+324
+          2) s < j ~< m.            Let j = s + k.           We then have the relation
+
+                                                                 Zi =   (ZhiZi q- . . . -~ ~h~Zs.
+At the same time, the conjunctive constituent vj = aklVi + ... + aksVs appears in ~ = ,                                             and
+hence the equation
+
+
+holds.          No variables from Z appear in the last equation, hence p can be replaced here by ~':
+
+                                         U~   =   (Z~ID 1   -~    . . . -~ 05~sV s   -~. r         i     ~   . .   . .-}. O~l~Z s
+
+
+Since
+                                                        t                             ,                            g
+
+
+                                                                 i=l
+
+we can apply p' to both sides, and obtain the desired equation.
+                                                                          ~r
+     So, all the equations are true in ~/2 , and the premise ~ q / ~ A J g ~ is valid. Therefore,
+uP' = vP', from which uP = vP, since u, v contain no variables from Z. Thus, (10) holds in
+(A, G, B ) .
+          II. ( u = v ) ~ 5 9 2 .     In this case, we can write                          (8) in the form
+
+                                                      eg=dlAd~u=~                                      ~izl = z'.                         (14)
+                                                                                             i=l
+
+We will consider the following                     two possibilities:
+     I) z' belongs to the linear hull of the vectors Zl,.~       s. Then z' = ~lZZ + .~ + ~sZs.
+One can prove, as in Theorem 5, that the quasi-identity 5 g ~ u = ~ j u ~ + . . . + ~ v , is equivalent to
+(14), and this takes us to case I.
+     2) z' does not belong to the linear hull of the vectors zl,...,z s. Let p:W § (A, G, B)
+be an arbitrary homomorphism under which the premise of (14) is valid.   We then have, in par-
+ticular, the equations
+
+                                                                                     z~ .                                                 (15)
+The c o n c l u s i o n y uP = zy ' P m u s t; h o l d a s w e l l .  Since z' does not appear in the linear                      hull of
+the vectors           zz,...,Zs,...,Zm,          we c a n m o d i f y ~ on z ' : we d e f i n e a h o m o m o r p h i s m p ' t h a t c o i n -
+c i d e s with p on the variables from X O Y U {z~,.... z~}, but differs from p on the variable z'.
+For z ~ we can take the zero o of the space B. In addition, p' may, generally speaking, also
+differ from p on the variables zl,...,z n. Nevertheless, the conditional expression ~ coin-
+cides with ~ i , and ~   with ~/~, since (15) still holds when p is replaced by ~ . Hence, the
+premise of (14) and the conclusion uP' = z'P' = uP = o hold under the homomorphism ~'          So,
+we obtain that u p equals zero and also equals any other element of B , w h e n c e B = 0. But, this
+is impossible by the saturation hypothesis; therefore, case 2) does not occur.
+     The above procedure does not work if, instead of a field K, we proceed from a ring K.
+The following arguments will then apply.  Let B be a module over the ring K, and suppose that
+it contains two distinct elements bl and b2 such that Xbl = ~b2 for some % ~ K . We consider
+the quasi-identity
+
+
+where u, v do not contain any variables from Z, and the element %~2 ~ is distinct from the
+identity element of the ring K.  By applying the procedure that we used to prove Theorem 6
+(case II), we get the quasi-identities
+
+                                                                        {~ => s    = u,
+                                                                         a t ~ ~2u = v.
+                                                                                                                                          ( 1 7)
+
+Thus, both quasi-identities               (17) follow from (16).                However, the converse is false in general~
+Indeed,   o n e c a n d e d u c e f r o m t h e e q u a t { o n s t l v = u , X2u = v a n d t h e p r e m i s e ~g t h a t l l v =
+%iz2 a n d X i X e v = z 2 ; h o w e v e r i t d o e s n o t f o l l o w f r o m t h i s , under our current     assumptions,      that
+V   =   Z 2 9
+
+
+         On the other hand, (16) defines a saturated quasivariety g .         Indeed, let (A, G, B0) be
+a s u b a u t o m a t o n o f an automaton (A, G, B) that belongs to $. We will show that (A, G, B ) ~ .
+
+                                                                                                                                           325
+To this end, we consider a homomorphism    D:W § (A, G, B), under which the premise      i~ is true.
+Then u"EBo, since
+
+                                      U'~ ~ Xi*ui,    Ui ~ K F ~
+
+hence also z ~ B o. Thus, the premise ~ already holds in (A~ G~ B~), and the conclusion of
+(16) is therefore also valid in this automaton. So, we have established that (16) holds in
+(A, G, B).
+     We now come to the following general problem: In which cases can a quasivariety of auto-
+mata ~ be defined b y a collection of quasi-identities that splits into two groups, with one con-
+taining quasi-identities that do not admit any variables from Z, and the other consisting of
+quasi-identities that are written entirely in variables from Z?
+      In essence, the second group will determine quasivarieties of modules of output signals,
+whereas the first would only define quasivarieties of automata that are saturated relative to
+output signals.
+     We saw, in the case of a field, that every quasivariety       of automata,   saturated relative
+to output signals, has this property.
+     We observe that the concepts relating to automata being saturated relative to input and
+output signals can be carried over to arbitrary many-sorted algebras.
+
+                                    3.    REVERSIBLE AUTOMATA
+      In this section, we will consider automata (A, B, C) with a single operation of outputs
+*: A • B § C, where A, B, and C are, respectively, the sets of states, of input signals and
+of output signals.    For these automatic, the concepts of subautomaton, homomorphism~
+Cartesian product, etc., are defined in the usual manner.    The indicated automaton is said
+to be reversible if, in the equation a * b = c every pair of elements uniquely determines the
+third, i.e., knowing an output signal and a state, the given input signal is uniquely deter-
+mined; also, knowing the input and output signals, the state can be uniquely established.
+     It is obvious that the Cartesian product of reversible automata is again a reversible
+automaton.  However, a subautomaton of a reversible automaton need not be reversible~ for
+instance, the triple (A, b, C), where b ~ B ,  is a subautomaton of the reversible automaton
+(A, B, C), but it is not reversible.   It is easily seen that in a reversible automaton the
+sets A, B, and C must be of equal cardinality.    The homomorphic image of a reversible auto-
+maton is not necessarily reversible.   For instance, let (A, B, C) be a reversible automaton
+and ~3:C § C' any map.   We define an automaton (A, B, C') by putting a * b = ( a , b ) ~3, where
+the * in brackets refers to the original reversible automaton.    The resulting automaton (A,
+B, C') is the homomorphic image of (A, B, C). The set C' can be taken to consist of a single
+element, and (A, B, C') will then not always be reversible.
+     It is appropriate, in view of the above, to consider a reversible automaton as a struc-
+ture with three operations, viz., the operation , and its two inverses / and \, where a * b =
+c~=~a\c=b~=~c/b=a . In addition, the following identities hold for arbitrary elements a ~ A ,
+b~B, and c ~ C :
+                                    a,(a\c)=c;       (c/b),b=c,
+                                    a\(a,b)=b,       (a,b)/b=a.
+If the three sets A, B, and C coincide, then this defines at the same time the structure of
+a quasigroup.  A reversible automaton is a quasigroup split into three parts, i.e., a 3-
+sorted quasigroup.
+      If, on the other hand, Q is some quasigroup, then there is a corresponding regular re-
+versible automaton (Q, Q, Q).   In addition, a homotopy (resp., isotopy) of quasigroups Q § QV
+is nothing else than a homomorphism (resp., isomorphism) of the corresponding regular auto-
+mata.
+     The theory of reversible automata is close to the theory of quasigroups, however it is
+important to make the distinction.    If, for instance, a and b are arbitrary elements in A
+and B, respectively, and c = a ' b , then the triple (a, b, c) is a reversible subautomaton in
+(A, B, C), with singleton underlying sets.    Every such subautomaton of a reversible automaton
+will be called an identity reversible automaton.
+
+
+326
+     The concept of reversible automaton has applications, not only in the theory of auto-
+mata, but also in the theory of quasigroups.  We will consider some of these applications in
+this section.
+     Let Q(*) be an arbitrary quasi-group, A, B, and C three of its subsets, having the fol-
+lowing property: if we have an equation a * b = c, then
+        1)   a~A     and b ~ B      imply c ~ C ,
+       2)    a~A     and    c~C     imply b ~ B ,
+       3)     b~,,B and     c~C     imply a ~ A .
+In this case, the triple (A, B, C) can be considered as a reversible automaton.                                                Such an auto-
+maton will be called an automaton in the q~asi-group Q(*).
+     If ~ = (~, ~, y) is a homotopy of the quasigreup Q into a quasigroup Q', preserving all
+three quasigroup operations, then (Qa, Q$, QY) is obviously an automaton in the quasigroup Q'
+     One can consider, in particular, automata in groups.   Let G be a group, H a subgroup,
+and x, y ~ G . Then the triple (Hx, x-iHxy, Hxy) is an automaton in the group G:
+
+                                                         h~x 9x-~h~xy = hllhxy ~ Hxy,
+                                             if      a. x - l h 2 x y = haxy,then a = h3h-~lx ~ Hx,
+                                        if        h l x ' b = h3xy,then b = x - l h ~ l h 3 x y ~ x - l H x y .
+
+Moreover, every such automaton is isomorphic to the regular automaton (H, H, H)~ the isomor-
+phism ~ = (Pl, V2, ~3) being defined by h vx = hx, h ~2 = x-lhxy, h v3 = hxy: if hih2 = h3 then
+                                                                      ~___            ~ItlLlt2
+                                                           (hlh2) ~          hlh2xy ~ ,~1 ,2 ,
+                                                                                        ~I --I    D3
+
+
+
+
+     THEOREM 7. If (A, B, C) is an automaton in a group G('), then there exist a subgroup
+H~G    and elements z, N ~ G such that A = Hx, B = x-iHxy, C = Hxy and the automaton coincides
+with the automaton defined by the subgroup H and the elements x, y.
+     Proof.     First, we will show that if all three sets A, B, and C contain the identity
+element e G G ,   then they all coincide with each other, i.e., with some subgroup of G.
+     Indeed, b=eb~6'~             i.e., B=_C, c'=e\c=e-~c~B,                        i.e., C~_B,          and hence B = C.     One proves
+similarly that A = C.
+
+       We will now fix elements               a~A, b ~ B ,            and c--ab~C.               The map ~t=(~,, ~2, ~3):(A, B~ C ) ~ ( A a -~,
+aBb-~a -', Cb-'a-O d e f i n e d by a'V'l = a ' a - I , b ' ~ = ab'b-~a -1, c ma = c'b-*a -1 f o r e v e r y a" ~ A , b' ~ B , and
+c'~C.     is, obviously, an isomorphism, and hence (Aa -~, aBb-~a -', C6*-~a-,). is a reversible auto-
+maton in G.  But, since a ~ A , b ~ B , and c~C, it follows that e~Aa-1flaBb-*a-1~Cb=~a -i, and
+we have shown that these sets coincide with some set H, where H(-) is a subgroup of G(.).
+Thus   A = Ha, B - a-~Hab, C = Hab.
+     We have shown above that the automaton (Ha, a-~Hab, Hab) is isomorphic to the regular auto-
+maton (H, H, H), where H is a subgroup of G.  So, we may say, up to isomorphism, that all
+automata in groups are regular.
+
+     Besides the concept of an automaton in a quasigroup, we will also consider quotient auto-
+mata of quasigroups.  Let Q(*) be a quasigroup and Pz, 02, p3 three equivalence relations on
+the set Q, such that, given two equations a * b = c and a' *b' = c', we have
+        )    aPlW A bP~b~=>'cp~c',
+       2)    apla' A epic' =~ bp~b',
+       3)    bp~b' A epic' =>.ap~a'..
+       Such a triple of equivalence relations will be called an automaton equivalence in the
+quasigroup.
+      Under these conditions, the triple of sets (Q/pl, Q/02, Q/p~) define a reversible auto-
+maton, which is a quotient of Q(*).   The basic operation of this automaton is defined by the
+equa t ion
+
+                                                                                                                                        327
+                                                    [a]o 1 * [blp2 = [a ~ b]o ~.
+
+The inverses of this operation are also defined                    in the corresponding      manner.
+     Proposition 2. If p = (Pl, P2, p3) is an automaton equivalence                            in a loop Q(*), then
+pz = P2 = p3 = P is a loop congruence of Q(*).
+       Proof. Let bp2b'    Then b = ebp3eb' = b', where e is the identity element of Q(*), and
+hence p2 ~p3. Conversely, if cp3c' then the equations c = ec, c' = ec' imply cp2c', i.e.,
+P3 ~p2, and hence 02 = P3.   One can verify in an analogous manner that pz = p3, and it then
+follows from the definition of an automaton equivalence that p is a loop congruence of Q(*).
+     From Proposition 2 follows, in particular, that if G is a group, then each of its quo-
+tient automata is a regular automaton of the form (G/H, G/H, G/H), where H is a normal sub-
+group of G.
+      We will apply the above concepts              to prove the following theorem.
+     THEOREM 8. Let @ be some variety of groups and let ~ denote the class of quasigroups
+isotopic to groups in O. Then O is a variety of quasigroups.
+     Proof.   Let Q ~ O ,  and let Q1 be a subquasigroup of Q. We will show that Q ~ O .    By
+hypothesis, there is an isotopy p = (~, B, y) of a quasigroup Q with a group G ~ O .     We con-
+sider the three sets (QI, Qz, Qz ) in G.    Since QI is a subquasigroup and ~ defines an iso-
+morphism of the regular automaton (Qz, Qz, Ql) with (Q~, Q~, Q~), it follows that the latter
+triple is an automaton in the group G. By the above, the latter is isomorphic to some regular
+automaton (H, H, H), where H is a subgroup of G. Hence, the automata (Qz, Qz, QI) and
+(H, H, H) are isomorphic, and the quasigroup Ql is therefore isotopic to the group H. But,
+since H ~ O , we have Q I ~ O .
+     If p is a congruence on the quasigroup Q ~ ,   then the quotient quasigroup Q/p belongs
+to O.    Indeed, we have by assumption an isotopy ~ = (~, ~, ? ) : Q - ~ G ~ . Hence, we have an
+isomorphism of automata (Q, Q, Q) and (G, G, G). We will consider the corresponding images
+of the congruence p, i.e., (p~, pB, pY).   This is an automaton equivalence in the group G,
+and we have an isomorphism of the automata (Q/p, Q/p, Q/p) and (G/p ~, G/p B, G/pY).     As we
+already observed, pa, pB, and pY coincide among each other, and define a normal subgroup H
+of G. The automaton (Q/p, Q/p, Q/p) is then isomorphic to the regular automaton (G/H, G/H,
+G/H), from which it follows that the quasigroup Q/p is isotopic to the group G / H ~ O , and,
+consequently, Q / p ~ O .
+      We now take a collection of quasigroups Q~, i~I, belonging to the class O.    For each
+i~I   there is a group G i ~ O such that one has an isotopy ~i = (~i, ~i, Yi):Qi § Gi. Ob-
+viously,    all the isotopies ~i, i~I,             define an isotopy ~ ={~i,i~f}:I/'Qi-~IIGr                  of Cartesian
+products,    and hence        I~Qi~.
+     A class of quasigroups that is closed under arbitrary isotopies will be called ~ g v e r s a ~ .
+Theorem 8 gives us a series of universal varieties of quasigroups.
+     Given any class X of quasigroups, we let ~ denote the class of all groups in ~.    It
+is easily seen that if ~ is a variety (reap., quasivariety), then ~ is a variety (reap.,
+quasivariety).
+      THEOREM 9.        If    O   is a variety of groups,          and     O   is the corresponding    variety of quasi-
+
+groups,    then    O=O.
+                              =
+      Proof.       Let G ~ O .        Then   G~,   which means that there exists a group               G'~O     to which G
+is isotopic, and hence is isomorphic, by Albert's                        theorem [5]. So O ~ O . On the other hand~
+every group in @ is isotopic (reap., isomorphic)                         to itself, so that, by definition, O ~ O .
+But, since     O    consists of all those groups             that belong to        O,   it follows    that    O~O.
+     THEOREM 10. Let              O    be a quasivariety of graups, and O the class of quasigroups                   iso-
+topic to groups G ~ O .               Then O is a quasivariety of quasigroups.
+     Proof.  In accordance with Theorem 8, the class ~ is hereditary•  The identity quasi-
+group is obviously isotopic to the identity group, hence belongs to @ . It then remains to
+observe that isotopy carries over to filtered products.
+
+
+328
+     In the case where O is the class of all groups, the quasivariety of quasigroups ~ c a n b e
+given by the quasi-identity
+                                    X~y2 = x2y~ A x~yi =- x3yz A xiy~ = X~.ys ::~ X~y~ = x~y3,
+
+called the       BeidemeisVer o~osu2"e oondition           [6].      For varieties O        of groups, we also have the
+relation ~ = (9.
+     We now go over to the analogous results for reversible automata. Let (9 be a class of
+groups. We will let O denote the class of reversible automata (A, B, C), isomorphic to the
+regular automaton (G, G, G), where G ~ @ .
+       THEOREM 11.        I) If @    is a variety of groups, then O                  is a variety of automata.
+       2) If (9 is a quasivariety of groups, then O                       is a quasivariety of automata.
+      Proof. We will first prove I. Let (A, B, C ) ~   and let (A', B', C') be a reversible
+subautomaton of (A, B, C). By hypothesis, there exists a group G ~ ( 9 such that we have an
+isomorphism g = (Pz, We, ps):(A, B, C) § (G, G, G). As before, we will consider the triple
+(A 'pl, B 'p2, C'~3). It is an automaton in G, isomorphic to the regular automaton (H, H, H),
+where H is a subgroup of G. Hence, the automaton (A', B', C') is also isomorphic to a regu-
+lar automaton (H, H, H), where I f ~ @ .              Therefore,         (A',B', C')~O      and the class ~        is heredi-
+tary.
+     We will now suppose that (A, B, C) in O admits a quotient automaton (A/p1, B/p2, C/P3),
+and prove that the latter also belongs to O.   The isomorphism of automata p:(A, B, C) § (G,
+                                                                                U3
+G, G) induces an isomorphism of quotient automata.  The triple (p~l, P2~2,P~IIp'3  ) P2
+                                                                                     ~2isan= ~3aut~
+maton equivalence in G, since we have an isomorphism of automata. Hence            =                - p,
+where p is a congruence in the group G, defined by some n o r m a l subgroup H~ But then we con-
+clude that the automaton (A/pz, B/p2, C/p3) is isomorphic to some regular automaton (G/H,
+G/H, G/H), where G/HE@, and this shows that the class O is closed relative to homomerphic
+images.
+     It follows from the definition that the class (} is closed relative to Cartesian prod-
+ucts. We will now prove 2. Let (9 be a quasivariety of groups. We have already verified
+that the class @ is hereditary.
+       Every reversible automaton of the form (a, b, ab) is isomorphic to the regular automaton
+(e,   e,   e),   where   e~O,   hence   (a, b, ab)~().
+     Let us consider reversible automata (A~, B~, C~), i ~ I , in the class ~ .  We will let ~i = (ai,
+Bi, Yi) denote an isomorphism between (Ai, Bi, Ci) and a grouplike regular automaton (Gi, Gi,
+Gi), where G~(9, i~I. Let ~ be a filter on the set I, and let (A, B, C) be the filtered
+product, relative to ~), of all the (Ai, Bi, Ci). We will consider ac the same time the fil-
+tered product, relative to the same filter 2~, of all the groups Gi, and wewill denote it by G.
+We will show that the automaton (A, B, C) is isomorphic to (G, G, G). First of all, we ob-
+serve that the Cartesian product of the regular automata (Gi, Gi, Gi) coincides with the regu-
+lar automaton (G', G', G'), where G' is the Cartesian product of all the Gi. Suppose, more-
+over, that (A', B', C') is the Cartesian product of all the (Ai, Bi, C~). We will define a
+bijective map   = (~, @, y):(A', B', C') -+ (G',   G', G') as foilows:      for all a'~A', b'~
+]9", c'~C"         ,~we p u t a'~(i)=[a'(i)]~,b'~(i)=[b'(i)]~i         c,~(i)=[c,(i)]v~   Then,   if   ~',b'   = c ~ and
+is the operation of G, the following equations | must hold
+
+                                                    (a'-~ bT' = ='= | b'%.
+                                                  (=' \ , ' ? = (='~)-~ | ~'~,.
+                                                  (c'/b') ~   =   c,'~ | (b'~) -1,
+
+where x -z denotes the element that is the inverse of x in the group G'.                                It follows from this
+that ~ is an isomorphism.
+      Let p = (Pl, P2, P3) be the kernel congruence of the automaton (A', B ~ , C') defined by
+the filter ~), and let ~ be the congruence defined in G by the same filter. We will show
+that ~ induces an isomorphism ~ = (~, B, y) of automata (A'/oI, B'/p2, C'/p3) and (G/T, G/T,
+G/r).   It is enough, for this purpose to verify that azp!G 2 applies if, and only if, a I TG2
+applies, and similarly for P2 and p3. By definition, a~pl~ ~ applies if, and only if, the set
+
+
+                                                                                                                           329
+                 t        i
+Io= {i~l:a1(i)=a2(i)} belongs                  to ~ .        Let I 0 ~                  be given.          We will prove that a ~ T ~      ~.    We
+                                                                                                       t          t
+compute ai~ and ~    on each i~l. By definition, a'~(i)~[a1(i)]=i=[a2(i)]~i=a'~(i). This means
+that a~'~ and ~   coincides on each i~Io, hence a I ~ 2 , since [ 0 ~ .   The converse can be
+verified in the same way: from ~i T~2 follows alpine.     Similar arguments carry through for
+P2 and P3.   So, the class O' is closed relative to filtered products.
+     Remarks.  ~) The above results show that the variety of all reversible automata contains
+quite a lot of subvarieties and subquasivarieties.
+       2) It is easily seen that if two varieties                                       (reap., quasivarieties)         of groups     @~    and @2
+are distinct, then the varieties (reap., quasivarieties)   O~ and O2 of automata are likewise
+distinct.   Indeed, let G be a group belonging to O~ but not to 02. Then the regular auto-
+maton (G, G, G) belongs to O~. Suppose that (G, G, G) also belongs to O2. By hypothesis,
+we can then find a group H in 02, such that the regular automata (G, G, G) and (H, H, H) are
+isomorphic.   This means that the groups G and H are isotopic, but it is well known that G and
+H must then also be isomorphic.   So, G lies in @2, which contradicts the hypothesis.   We see
+at the same time that different varieties (reap., quasivarieties) of groups correspond to dif-
+ferent varieties (reap., quasivarieties) of quasigr.oups.
+     3) One can enrich the structure of a reversible automaton by supposing that the set of
+input signals B is a quasigroup, and that we are given a representation of this quasigroup
+on the set A of states.  In addition, this representation must be assumed to be connected to
+the corresponding operation *.
+     THEOREM 12. Every reversible automaton                                    (A, B, C) is isomorphic to some regular automaton
+(Q, Q, Q), where Q is a loop.
+       Proof.    Let (a, b, c) be an identity subautomaton of a reversible automaton (A, B, C).
+I f x, y ~ A , t h e n y * b ~ C, a \ ( y ~ b ) ~ B, x . [ a \ ( y * b)] ~ C , { x ~ [ a \ ( y ~ b)J}/b ~ A . So, by means o f t h e
+elements a ~ A        and b ~ B ,     we can define a binary operation on the set A:
+                                                         x . y = {x * [ a \ ( y ~ b)]}/b.
+In a similar manner, we see that the same pair defines the following binary operations                                                          ~ and
+[] on the sets B and C, respectively:
+                                                         x o y =      a\{[(a        ~   x)/b] ~ y},
+                                                             x [] y    =   (x/b) ~ (aky):
+It is easy to verify that A(-), B(o), and fi(D) are loops, with identify elements a, b, and c,
+respectively.
+     By using Rb and L~ (Rb:a'--~a'~b, L=:b'--~a~b" for all a ' ~ A and b ' ~ B ) ,                                           we can rewrite
+as follows the equations that determine the operations ", o, and []:
+
+                                                                                          RbL~ 1
+                                                             (X" y)nb      =       x, y
+
+                                                             (x o y)L~             xL~,~ ~ , Y,
+                                                             X   [] y ~ XRb              *yLa i
+
+
+I t f o l l o w s f r o m t h e s e l a s t e q u a t i o n s t h a t t h e a u t o m a t a (A, A, A ) , (B, B, B ) , and (C, C, C)
+are isomorphic to the reversible                         a u t o m a t o n (A, B, C ) , a n d t h e l o o p s A ( - ) , B ( o ) , and C([]) a r e
+isomorphic to each other:
+
+                                                       (X.y)'bLal=             x           oy          ,
+
+                                               (X.y)R~ = X~5 [] y~b                     ~rall         x,y~A.
+        F o r A = B = C = Q, we o b t a i n           that       the quasigroup                    Q(*)    is LP-isotopic   to the   loop Q(~).
+      Remark Inserted in Proof.  The author has proved at this point that, over an arbitrary
+ring, the condition of a quasivariety being saturated relative to output signals is equiva-
+lent to its being defined by quasi-identities that do not involve any output variables.   How-
+ever, the hereditary property of being finitely based, contained in Theorems 5 and 6, may
+fail.   As a consequence of this result, the problem mentioned on p.326 has been solved.
+
+
+
+
+330
+                                            LITERATURE CITED
+I.   p . J . Higgins, "Algebras with a scheme of operators," Math. Nachr., 27, Nos. I-2, I~5-
+     132 (1963).
+2.   B . I . Plotkin, Ts. E. Dididze, and E. M. Kublanova, "Varieties of automata, ~' Kibernetika,
+     No. I, 47-54 (1977).
+3.   A. I. Malt'sev, Algebraic Systems [in Russian], Nauka, Moscow (1970).
+4.   A . A . Gvaramiya, "Quas~varleties
+                              "   "     of many-sorted algebras, " in : Theses of Brief Communica-
+     tions, International Mathematical Conference, 1983, Warsaw, Section II, Algebra, p. 20.
+5.   B~ I. P!otkin and S. M. Vovsi, Varieties of Group Representations [in Russian], Zinatne,
+     Riga (1983)~
+6.   V . D . Belousov, Algebraic Nets and Quasigroups [in Russian]~ Shtiintsa~ Kishinev (197]).
+7.   V. M~ Glushkov, "An abstract theory of automata," Usp. Mat. Nauk, 25, No. 5, 3-62 (~96~)o
+8.   V . D . Belousov, "Balanced identities in quasigroups," Mat. Sb., 70, No. I, 55-97 (1966)~
+9.   J. Jezek and T. Kepka, "Quasigroups isotopic to a group," Comment. Mat. Univ. Carolinae,
+     ~6, No. ~, 59-76 (1975).
+
+
+
+STRONG LINEAR CONVEXITY.
+I.   DUALITY OF SPACES OF HOLOMORPHIC FUNCTIONS
+
+      S~ V. Znamenskii                                                                        UDC 5~7.55
+
+
+                                            INTRODUCTION
+      I~ Let /~ be an open set in C. The space H(.~) consists of functions w~ich are holo -o
+morphic in /~, and convergence in H(/~) by definition means uniform convergence on each com-
+pact subset of 6_~.
+     Let 6 ~ be an arbitrary set in C. We define the space H(3-) as the inductive limit of
+the spaces H(/~) over all open /~ containing ~ .      The space H0(6~) is defined as the closed
+subspace of H(6~), consisting of functions which vanish at infinity if ~ - c C ,     and is iden-
+tified with H ( ~ ) if 6 ~ c C . By H~(~') we denote the space of continuous linear functionals
+on H0(~-). For each T ~ H ~ (~-) , the formula
+
+                                         9 ~(~) = T((~_      Z)-~)                                        (~)
+defines a function   ~H0(C\6~),   the indicatrix of this functional;
+     The basic result (cf. [~, 2]) of the theory of duality of spaces of holomorphic functions
+developed in [3-5] asserts that for a set /~- from a certain class which includes all open
+and all_compact sets in C, the correspondence (I) establishes an isomorphism of spaces H~(F)
+and H0(C\6~). Examples of the use of this theorem to prove Runge~s theorem, the theorems on
+interpolation and ideals, and the theorem of Poincare--Aronszaijn on the separation of singu-
+larities are given in [2, 6].
+     Considering multidimensional analogs of the duality theorem, we shall assume that /~
+is holomorphically nonextendable, i.e., for each z ~ 6 ~ there exists an /~H(6~), which can-
+not be extended analytically to the point z. We also require that 6~ be open or a compact
+set.  These requirements on ~ will be understood in the formulations of all assertions of
+the paper.
+
+     2. A generalization of the correspondence             (I) to functions of severable variables   is
+defined in [7, p. 433] by the formula
+
+                                  ~(~) = T((~.   z~)-' 9    o. :(~ - z~)-qo                               (2)
+
+     W e find for which sets this generalization leads to a multidimensional duality theorem~
+For this we fix a set 6 ~ c C ~ and we consider the collection  ~ of points at which the in-
+dicatrices of all functionals from H*(~) are defined.      For the correspondence (2) we con-
+sider the Dirac functionals (8-functions) on H(~), using which it is easy to see that
+
+     Krasnoyarsk~  Translated from Sibirskii Matematicheskii Zhurnal, Volo 26, No. 3, pp.
+31-43, May-June, 1985.  Original article submitted January 26, 1983.
+
+
+
+              0037-4466/85/2603-0331509~         9 1986 Plenum Publishing Corporation                 331
+

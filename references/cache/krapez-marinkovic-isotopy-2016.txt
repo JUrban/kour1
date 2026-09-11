@@ -1,0 +1,504 @@
+       Commentationes Mathematicae Universitatis Carolinae
+
+
+
+
+Aleksandar Krapež; Bojan Marinković
+Isotopy invariant quasigroup identities
+
+
+Commentationes Mathematicae Universitatis Carolinae, Vol. 57 (2016), No. 4, 537–547
+
+Persistent URL: http://dml.cz/dmlcz/145946
+
+
+
+
+Terms of use:
+© Charles University in Prague, Faculty of Mathematics and Physics, 2016
+
+Institute of Mathematics of the Czech Academy of Sciences provides access to digitized
+documents strictly for personal use. Each copy of any part of this document must contain these
+Terms of use.
+
+
+                   This document has been digitized, optimized for electronic delivery and
+                   stamped with digital signature within the project DML-CZ: The Czech Digital
+                   Mathematics Library http://dml.cz
+Comment.Math.Univ.Carolin. 57,4 (2016) 537–547                                                  537
+
+
+
+
+                   Isotopy invariant quasigroup identities
+
+                      Aleksandar Krapež, Bojan Marinković
+
+
+
+        Abstract. According to S. Krstić, there are only four quadratic varieties which are
+        closed under isotopy. We give a simple procedure generating quadratic identities
+        and deciding which of the four varieties they define. There are about 37000 such
+        identities with up to five variables.
+
+        Keywords: quasigroup; 3-sorted quasigroup; homotopy; isotopy; quadratic iden-
+        tity; gemini identity; coherent identity; variety closed under isotopy (homotopy)
+        Classification: Primary 20M05; Secondary 08B99, 08A68, 03C40
+
+
+1.     Introduction
+   The notion of isotopy is a straightforward generalization of the fundamental
+algebraic notion of isomorphism. However, it does not share some basic properties
+of isomorphism:
+      • identities are not necessarily preserved under isotopies, and consequently
+      • varieties are not necessarily closed under isotopies.
+For example, the varieties of all quasigroups and all Moufang loops (in the lan-
+guage {·, \, /}) are closed under isotopies but varieties of all loops and all groups
+are not. This suggests the problem of isotopic invariance of quasigroup identities
+and varieties.
+   The variety of all quasigroups is defined by the usual four identities (Q) (see
+page 538). V.D. Belousov proved in [1] that the class GI (AI) of all (Abelian)
+group isotopes is a variety of quasigroups defined by the additional axiom:
+(GI)                             (x(y\z)/u)v ≈ x(y\(z/u)v)
+
+(AI)                                x\y(u\v) ≈ u\y(x\v)
+   The class BI of all Boolean group isotopes was defined by either of the following
+identities (E. Falconer [7]):
+(BI)                                      xy/z ≈ xz/y
+
+    DOI 10.14712/1213-7243.2015.179
+    The first author supported by the Ministry of Science and Technology of Serbia, grants ON
+174008 and ON 174026.
+    The second author supported by the Ministry of Science and Technology of Serbia, grants
+III 44006 and ON 174026.
+538                               Krapež A., Marinković B.
+
+  (1)                                (x/y)(z\x) ≈ zy
+  In the same paper she also gave the first general result:
+  Theorem 1.1. A variety V of quasigroups is closed under isotopies iff V is the
+  variety of all isotopes of loops from V .
+       The following important result was proved by S. Krstić [15]:
+  Theorem 1.2. The only quadratic quasigroup varieties closed under isotopies
+  are:
+       • the variety Q of all quasigroups;
+       • the variety GI of all group isotopes;
+       • the variety AI of all Abelian group isotopes, and
+       • the variety BI of all Boolean group isotopes.
+     A quasigroup variety is quadratic if it is defined by quadratic identities. An
+  identity s ≈ t is quadratic if every variable from s ≈ t occurs there exactly twice.
+  A group is Boolean if it is of exponent 2, i.e. if it satisfies x2 ≈ e or equivalently
+  xx ≈ yy. See Section 2 for more detailed definitions.
+     Even more important is:
+  Theorem 1.3 (S. Krstić [14]). A quadratic quasigroup identity is closed under
+  isotopies iff it is coherent.
+       A coherence is a somewhat involved notion which will be defined in Section 3.
+       It turns out that Krstić was very close to the solution of the problem:
+  Theorem 1.4 (A.A. Gvaramiya [9]). A quasigroup identity is closed under iso-
+  topies iff it is equivalent to a coherent identity.
+     This came as one of the results of the series of papers by A.A. Gvaramiya (see
+  also A.A. Gvaramiya, B.I. Plotkin [12]), which connected quasigroups with the
+  notion of ∗-reversible automata and 3-sorted quasigroups. This will be clarified
+  in Section 3.
+
+  2.    Quasigroups
+     We assume that quasigroups are algebras (S; ·, \, /) with three binary opera-
+  tions satisfying the following four axioms:
+                       x\xy ≈ y                                xy/y ≈ x
+  (Q)
+                       x(x\y) ≈ y                          (x/y)y ≈ x
+  Therefore, the class of all quasigroups is a variety. Other important quasigroup
+  varieties we shall use are loops (satisfying x\x ≈ y/y), commutative quasigroups
+  (satisfying commutativity xy ≈ yx), groups (satisfying associativity xy · z ≈ x ·
+  yz), Abelian i.e. commutative groups, Boolean groups (satisfying associativity and
+  unipotency xx ≈ yy), totally symmetric quasigroups (satisfying commutativity
+  and left symmetry x · xy ≈ y) and totally symmetric or Steiner loops.
+                         Isotopy invariant quasigroup identities                       539
+
+Definition 2.1. We can define dual operations of ·, \, /:
+            x ∗ y ≈ yx                x\\y ≈ y\x                   x//y ≈ y/x
+   They also give rise to quasigroups on S. The operations ·, \, /, ∗, \\, // are para-
+strophes of · (and of each other). In loops, we can also define a 0-ary operation
+e ≈ x\x which is a unit of the given loop (i.e. ex ≈ xe ≈ x).
+Definition 2.2. A quasigroup identity is an identity in the language L = {·, \, /}
+of the theory of quasigroups. A quasigroup identity s ≈ t is quadratic if every
+variable appears exactly twice in s ≈ t. An identity is balanced if every variable
+appears exactly once in s and once in t.
+   Let (S; ·, \, /) and (T ; ◦, \◦, ◦/) be quasigroups and let f, g, h : S −→ T be func-
+tions such that h(xy) = f (x) ◦ g(y). We say that (f, g, h) is a homotopy from
+(S; ·, \, /) to (T ; ◦, \
+                        ◦, ◦/). Homotopy is a generalization of homomorphism. If all
+three functions f, g, h are bijective, the homotopy is an isotopy. If h is the iden-
+tity mapping the isotopy is principal . Isotopy is a generalization of isomorphism.
+Every quasigroup is isotopic to some loop.
+   If an identity Eq, true in a quasigroup, is also true in all its isotopic (homotopic)
+images, we say that Eq is preserved under isotopies (homotopies). A variety
+V of quasigroups with the property that every isotope (homotopic image) of a
+quasigroup from V is also in V , is said to be closed under isotopies (homotopies).
+Sometimes, identities preserved and varieties closed under isotopies (homotopies)
+are said to be universal or isotopy (homotopy) invariant .
+Definition 2.3 (A. Krapež, M.A. Taylor [13]). A quadratic quasigroup identity
+s ≈ t is gemini if it is true in all Steiner loops.
+  The following theorem is our principal tool for handling quadratic identities.
+Combined with Theorem 1.2 it gives us a way to capture isotopically invariant
+quadratic identities.
+Theorem 2.1 (A. Krapež, M. A. Taylor [13]). A quasigroup satisfying a qua-
+dratic but not a gemini identity is isotopic to a group.
+   In an unpublished paper (see [3]), M.M. Gluchov recapitulated some known
+results on identities characterizing (Abelian) group isotopes, i.e. identities equiv-
+alent to (GI) ((AI)). He listed (AI) and five other identities (2)–(6):
+(2)                            (z/y)(x\w) ≈ (w/y)(x\z)
+(3)                             (xy1 /y2 )y3 ≈ (xy3 /y2 )y1
+(4)                               xy/(u\z) ≈ uy/(x\z)
+(5)                            x1 (x2 \x3 y) ≈ x3 (x2 \x1 y)
+(6)                            (z/y1 )y2 /y3 ≈ (z/y3 )y2 /y1
+
+The identity (2) was attributed to V.D. Belousov [1], the three identities (3)–(5)
+to A. Drápal [6] and the identity (6) to A. Tabarov (no reference). To this list
+540                                Krapež A., Marinković B.
+
+  G.B. Belyavskaya added three identities of her own:
+
+  (7)                               (z/y)\xv ≈ (z/v)\xy
+  (8)                        (z1 /(x\z2 ))\z3 ≈ (z1 /(x\z3 ))\z2
+  (9)                        z1 /((z2 /y)\z3 ) ≈ z2 /((z1 /y)\z3 )
+
+  However, (3) and (9) could be already found in S. Krstić [14] and Kh. Shahbazpour
+  [20], respectively.
+     Belyavskaya also gave two more identities equivalent to (GI):
+
+  (10)                          (z/(x\uy))\w ≈ x\u((z/y)\w)
+  (11)                          (z/(x\w))y/v ≈ z/((xy/v)\w)
+
+  As far as we know, (1) is the only published identity equivalent to (BI). Our aim
+  is to find new identities with at most five variables which characterize (GI), (AI)
+  or (BI), particularly these which are of the smallest length. For this, it is useful
+  to become familiar with 3-sorted quasigroups.
+
+  3.     3-sorted quasigroups
+     Many sorted algebras are generalizations of classical algebras, such that they
+  have several base sets with different types of objects. Typical examples are ge-
+  ometries with points, lines, planes etc.; vector spaces in which we distinguish
+  scalars and vectors; metric spaces, where we have objects and measure distances
+  between them (which are real numbers) and, closer to our subject, 3-nets with
+  three separate classes of parallel lines and a set of points of intersection of some of
+  these lines. There is a growing body of literature on the subject and we mention
+  only a few items: G. Birkhoff, D. Lipson [4], A. Petrescu [18], F.M. Sioson [21].
+  The logical framework is given for example in M. Manzano [16].
+     3-sorted quasigroups are many sorted algebras which come in two flavors. As
+  3-sorted algebras with one operation (multiplication), see among others S. Milić
+  [17], Z. Stojaković [23], V. Satyabhama [19], E. Brožı́ková [5] and a series of papers
+  by A.A. Gvaramiya ([8]–[11] etc.) where 3-sorted quasigroups were treated in the
+  guise of reversible ∗-automata. Alternatively, they are viewed as 3-sorted algebras
+  with three operations (multiplication and two divisions), see V.D. Belousov [2],
+  A.A. Gvaramiya and B.I. Plotkin [12] etc. We prefer the later type.
+     A 3-sorted quasigroup is a 3-sorted algebra (Q1 , Q2 , Q3 ; ·, \, /) where
+
+          · : Q1 × Q2 −→ Q3 ,       \ : Q1 × Q3 −→ Q2 ,         / : Q3 × Q2 −→ Q1
+
+  are three binary functions satisfying the following axioms:
+
+                          x\xy ≈ y                          xy/y ≈ x
+                        x(x\z) ≈ z                        (z/y)y ≈ z
+                            Isotopy invariant quasigroup identities                             541
+
+   Unlike usual quasigroups, in the theory of 3-sorted quasigroups we should re-
+spect sorts, so that if x is a variable of sort 1 in some expression, it should remain
+to be of sort 1 in other occurrences of the same expression as well (as in other ex-
+pressions in the same context). The term ‘coherent’ is used to state the intention
+of keeping sorts separate, i.e. that variables of sort α (α = 1, 2, 3) take values in
+Qα only. The formal definition is given below. Observing how we changed quasi-
+group axioms might help, but a few simple examples should clarify the situation
+completely.
+Example 3.1. The identity x(u\z) ≈ u(x\z) is coherent. Namely, x and u are
+variables of sort 1 and z is a variable of sort 3. It follows that terms x\z and u\z
+are both of sort 2, so terms x(u\z) and u(x\z) are both of sort 3. This consistency
+actually defines the coherence of the identity x(u\z) ≈ u(x\z).
+Example 3.2. The quasigroup term x · x is not well formed in the theory of 3-
+sorted quasigroups. It forces x to be a variable of both sorts 1 and 2 which is not
+allowed. Therefore, the question if a 3-sorted quasigroup is unipotent (satisfies
+xx ≈ yy) or idempotent (satisfies xx ≈ x) is a meaningless one.
+Example 3.3. The same applies to terms x\x and x/x and consequently the
+notion of (left, right) loop is not well defined in 3-sorted quasigroups.
+Example 3.4. Consider the following quasigroup theorems:
+
+                      x/(y\x) ≈ y                          (x/y)\x ≈ y
+
+and their consequence:
+                                 x/(y\x) ≈ (x/y)\x.
+Neither of the three identities is coherent. We can repair the first two by changing
+variables:
+                    z/(x\z) ≈ x                      (z/y)\z ≈ y
+but it does not work in the third case. No change of variables can make it coherent
+because the left and the right hand side of the identity are α-terms for two different
+values of α (see below) and that cannot be repaired.
+   The following general statement gives one of the reasons why the change of
+variables does not work in the previous example.
+Proposition 3.1. Let s1 ◦ s2 ≈ t1 ⋄ t2 be a coherent identity with ◦, ⋄ ∈ {·, \, /}.
+Then ◦ and ⋄ must be the same operation symbols.
+   In the theory of 3-sorted quasigroups we need variables of sort 1 (x, u, x1 , x2 , . . . ),
+variables of sort 2 (y, v, y1 , y2 , . . . ) and variables of sort 3 (z, w, z1 , z2 , . . . ). The
+terms are defined by:
+      • variables of sort α (α = 1, 2 or 3) are α-terms;
+      • if tα (α = 1, 2 and 3) are α-terms, then t1 ·t2 is a 3-term, t1 \t3 is a 2-term
+        and t3 /t2 is a 1-term;
+542                             Krapež A., Marinković B.
+
+        • such terms are collectively called coherent terms.
+  If s and t are both α-terms (α = 1, 2 or 3) then s ≈ t is an α-identity. An
+  identity is coherent if it is an α-identity for some α. (Strictly speaking, there
+  should be three different equality symbols ≈1 , ≈2 and ≈3 so that an α-identity
+  can be interpreted as an equality in Qα . But we prefer simplicity over logical
+  purity here.)
+     Basically, in the above definition the notion of ‘coherent terms (identities)’ is
+  just a reformulation of ‘quasigroup terms (identities) well formed in the theory of
+  3-sorted quasigroups’.
+     The class of all 3-sorted quasigroups is a variety. There is also a category Qtp
+  with objects 3-sorted quasigroups while morphisms are homotopies between them
+  (see for example A.A. Gvaramiya [11] and G. Voutsadakis [24]). Therefore, we
+  have:
+  Theorem 3.1. Coherent identities are preserved under homotopies.
+     A particularly important 3-sorted quasigroup is the monogenic 3-sorted quasi-
+  group Z = ({1}, {2}, {3}; ·, \, /) with operations defined by:
+
+                         1 · 2 = 3,     1\3 = 2,        3/2 = 1.
+
+  It is the terminal object of Qtp and is interesting because every coherent term
+  evaluates to 1,2 or 3 in Z, while every coherent equality evaluates to 1 = 1, 2 =
+  2 or 3 = 3. Therefore:
+  Theorem 3.2. A quasigroup equality is coherent iff it is valid in Z.
+    We can use this last property to generate coherent identities. This is the reason
+  why the 3-sorted quasigroup Z was introduced into the paper.
+
+  4.   Building up identities
+     For every quadratic coherent identity J, we can establish a valuation which
+  maps all variables of sort α (α = 1, 2, 3) into α. Thus, J is interpreted as a
+  coherent (but not necessarily quadratic) equality Eq on Z. However, each of 1, 2, 3
+  appears in Eq an even number of times (possibly zero times). Such equalities on
+  Z we call even. It is easy to see that the converse is also true: every even
+  equality Eq in Z is an interpretation of some quadratic coherent identity J. The
+  identity J need not be unique. However, for equalities Eq of small length, the
+  number of possible identities is also small and therefore, manageable for handling
+  by computer.
+  Example 4.1. To see why we insist on even occurrence of every element in Eq, let
+  Eq be the equality (12/(1\3))((3/2)\12) = 3 which has exactly three occurrences
+  of 1, 2 and 3 each. Replace any two occurrences of 1, 2, 3 by x, y, z in that order.
+  We get, for example, (xy/(1\z))((z/y)\x2) = 3. Whatever variables we choose to
+  replace the remaining 1, 2, 3 in that equality, we cannot get a quadratic identity.
+                        Isotopy invariant quasigroup identities                     543
+
+The same conclusion holds in general: if any of the elements 1, 2, 3 appears an
+odd number of times in Eq, it cannot give rise to a quadratic identity.
+   An equality Eq, true in Z, is even if each of elements 1, 2, 3 occurs in Eq an
+even number of times (possibly zero times). All equations we use in the rest of
+the paper are assumed to be even.
+Example 4.2. The equality 1(1\12) = 12 is true in Z and with the constant
+1 appearing four times in it while the constant 2 appears just twice. Therefore,
+the corresponding identities contain two 1-variables x, u and one 2-variable y.
+The identities depend on the ordering of appearance of the variables x, u (in the
+identity) which may be xxuu, xuxu or xuux (we use only normalized identities in
+which the first occurrence of x always comes before the first occurrence of u). So
+we have three possible identities: x(x\uy) ≈ uy, x(u\xy) ≈ uy and x(u\uy) ≈
+xy. Note that the first and the last identity may be reduced to uy ≈ uy, xy ≈ xy
+respectively, and eventually to z ≈ z.
+  Just as in the example above, in most cases we may be able to reduce identities
+obtained, using either one of the (3-sorted) quasigroup axioms, or one of the
+quasigroup theorems:
+
+(12)               z/(x\z) ≈ x                        (z/y)\z ≈ y
+
+or otherwise one of the following lemmas:
+Lemma 4.1. If ◦ is one of the operations ·, \, /, and p, q, s and t terms of appro-
+priate sorts, we have:
+
+           p◦s≈p◦t⇒s≈t                                s ◦ q ≈ t ◦ q ⇒ s ≈ t.
+
+Lemma 4.2. Let a compound term t appear twice in a coherent quadratic identity
+Eq[t] and let p be a variable not occurring in Eq[t]. Then Eq[t] is equivalent
+to Eq[p].
+  Let J be a quadratic coherent identity. There are several possibilities.
+     • The identity J can be reduced as above to the trivial identity x ≈ x (or,
+       equivalently, to y ≈ y or z ≈ z). We say that J is reducible. It is also a
+       theorem of the theory of quasigroups.
+     • The identity J can be reduced (repeatedly if necessary), but neither to
+       x ≈ x, y ≈ y nor to z ≈ z. In this case J is also reducible but is not
+       gemini.
+     • The identity J cannot be reduced by the above methods. In this case we
+       say that J is irreducible. In particular, the trivial identities x ≈ x, y ≈
+       y, z ≈ z are all irreducible.
+The above inductive descent suggests:
+Lemma 4.3. Every coherent quadratic identity is equivalent to an irreducible
+coherent quadratic identity.
+544                               Krapež A., Marinković B.
+
+      Also, we have
+  Theorem 4.1. If a coherent quadratic identity is gemini, then it is a quasigroup
+  theorem.
+     It follows that a gemini identity J can be reduced to x ≈ x (or y ≈ y or z ≈ z).
+     By Theorem 2.1, if a quasigroup satisfies an irreducible coherent quadratic
+  identity J which is not gemini, then the quasigroup is (principally) isotopic to
+  a group. Let + be that group, so
+                               
+                               x · y = f (x) + g(y)
+                               
+  (13)                           x\z = g −1 (−f (x) + z)
+                               
+                                 z/y = f −1 (z − g(y))
+                               
+
+  for some bijections f and g. Utilizing (13), we transform J into a group identity
+  J ′ which may but need not be true in all groups. If it is, then J is equivalent
+  to (GI). If it is not, by Theorem 1.2 the operation + has to be commutative:
+  (14)                                x+y =y+x
+  Using (14), we now transform J ′ into J ′′ . Again, if J ′′ is true in all Abelian groups
+  then J is equivalent to (AI). Otherwise (by Theorem 1.2 again), the operation +
+  must be unipotent:
+  (15)                                   x+x=0
+  where 0 is the unit of the group +. The final transformation of the identity J ′′ ,
+  using (15), leads to the identity 0 = 0, while J is equivalent to (BI).
+      The above algorithm is a decision procedure which determines whether J is
+  equivalent to (Q), (GI), (AI) or (BI).
+      Building equalities Eq on Z systematically, and checking corresponding iden-
+  tities J as above, we get the results presented in Tables 1 and 2.
+
+                          Number of identities equivalent to:
+                  n         (Q)      (GI)       (AI)      (BI)         Total
+                  1           3         0          0          0            3
+                  2           0         0          0          0            0
+                  3           0         0          0          6            6
+                  4           0         0         12        15           27
+                  5           0        12         42       381          435
+
+                       Table 1. Irreducible balanced identities
+
+
+     The entry n in both tables is the number of occurrences of variables in cor-
+  responding identities. The entries 6* in the Table 2 indicates 6 identities which
+  are not irreducible but are indispensable in reducing all other reducible identities.
+                            Isotopy invariant quasigroup identities                      545
+
+                           Number of identities equivalent to:
+                 n           (Q)      (GI)       (AI)      (BI)           Total
+                 1             3         0          0          0              3
+                 2            6*         0          0          0             6*
+                 3             0         0          0        39              39
+                 4             0         0        180       741             921
+                 5             0       192      4440     31491            36123
+
+      Table 2. Irreducible quadratic identities (including balanced ones)
+
+
+
+The four of them are quasigroup axioms; the remaining two are identities (12)
+included for the sake of symmetry.
+   Here we give only the list of shortest balanced identities which can serve as
+additional axioms defining Q, GI, AI and BI. The list of all 37086 irreducible
+quadratic identities is given at the web address
+http://www.mi.sanu.ac.rs/~bojanm/quasigroups/identities.zip
+  n = 1, identities defining Q:
+
+             x       ≈ x                  y    ≈ y                    z   ≈ z
+
+  n = 3, identities defining BI:
+
+ z/(x\w) ≈ w/(x\z)                  (z/y)\w     ≈    (w/y)\z          x(u\z) ≈ u(x\z)
+    xy/v ≈ xv/y                        x\uy     ≈    u\xy             (z/y)v ≈ (z/v)y
+
+   n = 4, identities defining AI (for the consistency of notation we use additional
+variables p, q, r of sorts 1, 2, 3 respectively):
+
+        z/(x\uy)      ≈     x(u\z)/y                    x\u(p\z)      ≈   p\u(x\z)
+     z/((w/y)\r)      ≈     w/((z/y)\r)                 x\(z/y)v      ≈   (xy/v)\z
+        xy/(u\z)      ≈     uy/(x\z)                    (z/y)\xv      ≈   (z/v)\xy
+        (z/y)v/q      ≈     (z/q)v/y                 (z/(x\w))\r      ≈   (z/(x\r))\w
+         x(u\py)      ≈     p(u\xy)                   (z/y)(x\w)      ≈   (w/y)(x\z)
+      (z/(x\w))y      ≈     x((w/y)\z)                   (xy/v)q      ≈   (xq/v)y
+
+  n = 5, identities defining GI:
+
+   z/(x\(w/y)v)       ≈    (z/v)y/(x\w)             x\u((z/y)\w)      ≈   (z/(x\uy))\w
+   z/((w/y)\xv)       ≈    (z/v)(x\w)/y             x\(z/y)(u\w)      ≈   (uy/(x\z))\w
+   z/((xy/v)\w)       ≈    (z/(x\w))y/v             x\(z/(u\w))y      ≈   (w/(x\z))\uy
+   xy/((z/v)\w)       ≈    x((w/y)\z)/v             (z/y)\x(u\w)      ≈   (u(x\z)/y)\w
+    x(u\(z/y)v)       ≈    (x(u\z)/y)v                x((z/y)\uv)     ≈   (xy/(u\z))v
+    x((uy/v)\z)       ≈    (xv/y)(u\z)                (z/y)(x\uv)     ≈   (z/(u\xy))v
+546                                   Krapež A., Marinković B.
+
+    G.B. Belyavskaya mentions in [3] the following unpublished result of M.M. Glu-
+  chov:
+  Theorem 4.2. There is no balanced identity with three variables characterizing
+  AI among quasigroups.
+     The theorem is verified by checking lists of irreducible identities with three
+  variables. More generally,
+  Theorem 4.3. There is no quadratic identity with less than three (four, five)
+  variables characterizing BI (AI, GI) among quasigroups.
+      On the other hand,
+  Theorem 4.4 (F.N. Sokhatskii [22]). The following nonquadratic and noncoher-
+  ent identity with four variables:
+
+                                   (x(u\z)/u)v ≈ x(u\(z/u)v)
+
+  is equivalent to (GI).
+      The following related problem can be formulated:
+  Problem 4.1. Find axiom system for Q (GI, AI, BI) with the smallest number
+  of axioms.
+
+                                           References
+   [1] Belousov V.D., Balanced identities in quasigroups, Mat. Sbornik 70 (112) (1966), 55–97
+       (Russian).
+   [2] Belousov V.D., Algebraic Nets and Quasigroups, Ştiinca, Kishinev, 1971 (Russian).
+   [3] Belyavskaya G.B., Parastrophically equivalent identities characterizing quasigroups isotopic
+       to abelian groups, Quasigroups Related Systems 22 (2014), no. 1, 19–32.
+   [4] Birkhoff G., Lipson J.D., Heterogeneous algebras, J. Combinatorial Theory 8 (1970), 115–
+       133.
+   [5] Brožı́ková E., On universal quasigroup identities, Math. Bohem. 117 (1992), no. 1, 20–32.
+   [6] Drápal A., On multiplication groups of relatively free quasigroups isotopic to abelian groups,
+       Czechoslovak Math. J. 55(130) (2005), 61–87.
+   [7] Falconer E., Isotopy invariants in quasigroups, Trans. Amer. Math. Soc. 151 (1970), no. 2,
+       511–526.
+   [8] Gvaramiya A.A., Automata and quasigroups, Soobshch. Akad. Nauk Gruzin. SSR 114
+       (1984), no. 3, 481–484 (Russian).
+   [9] Gvaramiya A.A., Quasivarieties of automata. Connections with quasigroups, Sibirsk. Mat.
+       Zh. 26 (1985), no. 3, 11–30 (Russian); http://dx.doi.org/10.1007/BF00968618; English
+       translation: Siberian Math. J. 26 (1985), 315–331, DOI: 10.1007/BF00968618
+  [10] Gvaramiya A.A., Quasigroup classes that are invariant under isotopy, and abstract classes
+       of invertible automata, Dokl. Akad. Nauk SSSR 282 (1985), no. 5, 1047–1051 (Russian);
+       English translation: Soviet. Math. Dokl. 31 (1985), 545–549.
+  [11] Gvaramiya A.A., Category of quasigroups with homotopies, C.R. Acad. Bulgare Sci. 38
+       (1985), no. 6, 663–666.
+  [12] Gvaramiya A.A., Plotkin B.I., The homotopies of quasigroups and universal algebras, in
+       A. Romanowska, J.D.H. Smith (eds.), Universal Algebra and Quasigroup Theory (Jadwisin,
+       1989), Res. Expo. Math., 19, Heldermann, Berlin, 1992, pp. 89–99.
+                            Isotopy invariant quasigroup identities                                547
+
+[13] Krapež A., Taylor M.A. Gemini functional equations on quasigroups, Publ. Math. Debrecen
+     47 (1995), no. 3–4, 281-292.
+[14] Krstić S., Quadratic quasigroup identities, PhD thesis (Serbocroatian), University of Bel-
+     grade, 1985, http//elibrary.matf.bg.ac.rs/handle/123456789/182/phdSavaKrstic.pdf,
+     (accessed May 5, 2015).
+[15] Krstić S., On quasigroup varieties closed under isotopies, Publ. Inst. Math. (Beograd)
+     (N.S.) 39(53) (1986), 89–95.
+[16] Manzano M., Extensions of First Order Logic, Cambridge Tracts in Theoretical Computer
+     Science, 19, Cambridge University Press, Cambridge, New York, 2005.
+[17] Milić S., On GD–groupoids with applications to n–ary quasigroups, Publ. Inst. Math.
+     (Beograd) (N.S.) 13(27) (1972), 65–76.
+[18] Petrescu A., Certain questions of the theory of homotopy of universal algebras, in Con-
+     tributions to universal algebra (Colloq. Math. Soc. Janos Boylai Vol. 17), North Holland,
+     Amsterdam, 1977, pp. 341–355.
+[19] Satyabhama V., Generalized distributivity equation on GD-groupoids, Mat. Vesnik 29
+     (1977), no. 1, 137–146.
+[20] Shahbazpour Kh., An hyperidentity concerning the quasigroup identities isotopy closure to
+     abelian group, Austral. J. Basic Appl. Sci. 3(4), (2009).
+[21] Sioson F.M., On generalized algebras, Portugal. Math. 25 (1966), 67–90.
+[22] Sokhatskii F.N., On isotopes of groups II , Ukrain. Mat. Zh. 47 (1995), no. 12, 1692–1703
+     (Ukrainian); English translation: Ukrainian Math. J. 47 (1995), no. 12, 1935–1948.
+[23] Stojaković Z., Generalized entropy on GD–groupoids with application to quasigroups of
+     various arities, Mat. Vesnik 24 (1972), no. 1, 159–166.
+[24] Voutsadakis G., Categorical models and quasigroup homotopies, Theory Appl. Categ. 11
+     (2003), no. 1, 1–14.
+
+Matematički institut SANU, Kneza Mihaila 36, 11001 Beograd, Serbia
+E-mail: sasa@mi.sanu.ac.rs
+        bojanm@mi.sanu.ac.rs
+
+                      (Received October 21, 2015, revised March 21, 2016)
+

@@ -1,0 +1,303 @@
+{
+  "status": "PASS_94_CONTROLS",
+  "latin": [
+    {
+      "n": 1,
+      "latin_squares": 1,
+      "factorial_identity_assignments": 1
+    },
+    {
+      "n": 2,
+      "latin_squares": 2,
+      "factorial_identity_assignments": 8
+    },
+    {
+      "n": 3,
+      "latin_squares": 12,
+      "factorial_identity_assignments": 108
+    },
+    {
+      "n": 4,
+      "latin_squares": 576,
+      "factorial_identity_assignments": 9216
+    }
+  ],
+  "affine": [
+    {
+      "p": 2,
+      "m": 1,
+      "order": 2,
+      "left_zero_orbit": [
+        1
+      ],
+      "left_zero_orbit_length": 1,
+      "axiom_checks": 16,
+      "independent_product_checks": 4,
+      "boolean_identity_checks": 8,
+      "monogenic_closure_order": 2,
+      "closure_rounds": 2
+    },
+    {
+      "p": 2,
+      "m": 2,
+      "order": 4,
+      "left_zero_orbit": [
+        2,
+        1
+      ],
+      "left_zero_orbit_length": 2,
+      "axiom_checks": 64,
+      "independent_product_checks": 16,
+      "boolean_identity_checks": 64,
+      "monogenic_closure_order": 4,
+      "closure_rounds": 3
+    },
+    {
+      "p": 2,
+      "m": 3,
+      "order": 8,
+      "left_zero_orbit": [
+        4,
+        2,
+        1
+      ],
+      "left_zero_orbit_length": 3,
+      "axiom_checks": 256,
+      "independent_product_checks": 64,
+      "boolean_identity_checks": 512,
+      "monogenic_closure_order": 8,
+      "closure_rounds": 3
+    },
+    {
+      "p": 2,
+      "m": 4,
+      "order": 16,
+      "left_zero_orbit": [
+        8,
+        4,
+        2,
+        1
+      ],
+      "left_zero_orbit_length": 4,
+      "axiom_checks": 1024,
+      "independent_product_checks": 256,
+      "boolean_identity_checks": 4096,
+      "monogenic_closure_order": 16,
+      "closure_rounds": 4
+    },
+    {
+      "p": 2,
+      "m": 5,
+      "order": 32,
+      "left_zero_orbit": [
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "left_zero_orbit_length": 5,
+      "axiom_checks": 4096,
+      "independent_product_checks": 1024,
+      "boolean_identity_checks": 32768,
+      "monogenic_closure_order": 32,
+      "closure_rounds": 4
+    },
+    {
+      "p": 2,
+      "m": 6,
+      "order": 64,
+      "left_zero_orbit": [
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "left_zero_orbit_length": 6,
+      "axiom_checks": 16384,
+      "independent_product_checks": 4096,
+      "boolean_identity_checks": 262144,
+      "monogenic_closure_order": 64,
+      "closure_rounds": 5
+    },
+    {
+      "p": 2,
+      "m": 7,
+      "order": 128,
+      "left_zero_orbit": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "left_zero_orbit_length": 7,
+      "axiom_checks": 65536,
+      "independent_product_checks": 16384,
+      "boolean_identity_checks": 2097152,
+      "monogenic_closure_order": 128,
+      "closure_rounds": 5
+    },
+    {
+      "p": 3,
+      "m": 1,
+      "order": 3,
+      "left_zero_orbit": [
+        1
+      ],
+      "left_zero_orbit_length": 1,
+      "axiom_checks": 36,
+      "independent_product_checks": 9,
+      "boolean_identity_checks": 0,
+      "monogenic_closure_order": 3,
+      "closure_rounds": 2
+    },
+    {
+      "p": 3,
+      "m": 2,
+      "order": 9,
+      "left_zero_orbit": [
+        3,
+        1
+      ],
+      "left_zero_orbit_length": 2,
+      "axiom_checks": 324,
+      "independent_product_checks": 81,
+      "boolean_identity_checks": 0,
+      "monogenic_closure_order": 9,
+      "closure_rounds": 3
+    },
+    {
+      "p": 3,
+      "m": 3,
+      "order": 27,
+      "left_zero_orbit": [
+        9,
+        3,
+        1
+      ],
+      "left_zero_orbit_length": 3,
+      "axiom_checks": 2916,
+      "independent_product_checks": 729,
+      "boolean_identity_checks": 0,
+      "monogenic_closure_order": 27,
+      "closure_rounds": 4
+    },
+    {
+      "p": 5,
+      "m": 1,
+      "order": 5,
+      "left_zero_orbit": [
+        1
+      ],
+      "left_zero_orbit_length": 1,
+      "axiom_checks": 100,
+      "independent_product_checks": 25,
+      "boolean_identity_checks": 0,
+      "monogenic_closure_order": 5,
+      "closure_rounds": 3
+    },
+    {
+      "p": 5,
+      "m": 2,
+      "order": 25,
+      "left_zero_orbit": [
+        5,
+        1
+      ],
+      "left_zero_orbit_length": 2,
+      "axiom_checks": 2500,
+      "independent_product_checks": 625,
+      "boolean_identity_checks": 0,
+      "monogenic_closure_order": 25,
+      "closure_rounds": 4
+    }
+  ],
+  "separators": [
+    {
+      "generator_size_bound": 1,
+      "identity_length": 1,
+      "witness_dimension": 2,
+      "witness_order": 4,
+      "initial_basis_position": 0,
+      "final_basis_position": 1
+    },
+    {
+      "generator_size_bound": 2,
+      "identity_length": 2,
+      "witness_dimension": 3,
+      "witness_order": 8,
+      "initial_basis_position": 0,
+      "final_basis_position": 2
+    },
+    {
+      "generator_size_bound": 3,
+      "identity_length": 6,
+      "witness_dimension": 5,
+      "witness_order": 32,
+      "initial_basis_position": 0,
+      "final_basis_position": 1
+    },
+    {
+      "generator_size_bound": 4,
+      "identity_length": 24,
+      "witness_dimension": 5,
+      "witness_order": 32,
+      "initial_basis_position": 0,
+      "final_basis_position": 4
+    },
+    {
+      "generator_size_bound": 5,
+      "identity_length": 120,
+      "witness_dimension": 7,
+      "witness_order": 128,
+      "initial_basis_position": 0,
+      "final_basis_position": 1
+    },
+    {
+      "generator_size_bound": 6,
+      "identity_length": 720,
+      "witness_dimension": 7,
+      "witness_order": 128,
+      "initial_basis_position": 0,
+      "final_basis_position": 6
+    },
+    {
+      "generator_size_bound": 7,
+      "identity_length": 5040,
+      "witness_dimension": 11,
+      "witness_order": 2048,
+      "initial_basis_position": 0,
+      "final_basis_position": 2
+    },
+    {
+      "generator_size_bound": 8,
+      "identity_length": 40320,
+      "witness_dimension": 11,
+      "witness_order": 2048,
+      "initial_basis_position": 0,
+      "final_basis_position": 5
+    },
+    {
+      "generator_size_bound": 9,
+      "identity_length": 362880,
+      "witness_dimension": 11,
+      "witness_order": 2048,
+      "initial_basis_position": 0,
+      "final_basis_position": 1
+    },
+    {
+      "generator_size_bound": 10,
+      "identity_length": 3628800,
+      "witness_dimension": 11,
+      "witness_order": 2048,
+      "initial_basis_position": 0,
+      "final_basis_position": 10
+    }
+  ],
+  "scope": "Finite formula controls; the general obstruction is proved in prose."
+}

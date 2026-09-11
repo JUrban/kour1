@@ -1860,3 +1860,29 @@ The full raw-data whitespace check in the preceding 6.47 commit
 reported GAP's retained trailing spaces; the authored research, scripts
 and reports pass the separate whitespace check. No raw output was
 altered to silence that diagnostic. All work remains local.
+
+
+## 2026-09-11T21:59:08.441959+00:00 — Candidate 34: finite translation obstruction for 9.4
+
+Every finite quasigroup satisfies a factorial identity for its left
+translations. Coordinate-shift isotopes of finite elementary abelian
+groups violate any proposed bound. This gives a complete negative
+candidate under ordinary variety generation, and also for quasivarieties
+and pseudovarieties. A separate infinite monogenic example verifies
+the local-finiteness obstruction. The trivial generating group is
+explicitly excluded.
+
+The 20-point internal review checks the quantifiers, isotopy direction,
+division signs, finite-family extension and generation conventions.
+Gvaramiya1985 Section 3 was read, including its separate ordinary
+quasigroup and three-sorted theorems; pp.326 and 328 were visually
+checked. The relevant 2016 definitions were also checked. No exact
+prior answer was found in the limited search; novelty is not asserted.
+
+Controls and the 18-file replay auditor both exit 0. They cover all
+591 Latin squares of orders 1--4, 12 affine models, 93,252 axiom checks,
+2,396,744 Boolean identity checks and ten finite separating witnesses.
+The candidate count is 34, all awaiting outside review. The latest
+n=7 snapshot at 21:52:32 UTC has 20,130,000 checked nodes, six live
+workers and zero completed shards. The 6.47 order-64 bounded jobs
+remain active; timeouts are retained. All work remains local.

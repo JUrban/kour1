@@ -4,6 +4,8 @@ Last checked 2026-09-11. A search finding no solution is evidence only of the sc
 
 ## Newly audited older problems
 
+- **9.4:** Gvaramiya1985, [primary PDF](https://link.springer.com/content/pdf/10.1007/BF00968618.pdf), Section 3 pp.326--330 read, pp.326 and 328 visually checked. Theorems 8 and 10 treat ordinary quasigroups; Theorem 11 separately treats reversible automata. Krapez--Marinkovic2016 pp.537--538 definitions read and viewed. These establish the convention, not priority for the factorial-translation obstruction. Falconer1970 PDF unavailable (403); Drapal2005 searched only. See `research/9.4-proof.md`.
+
 - **15.65, unitary cyclic component:** Fulman--Neumann--Praeger2005,
   [DOI 10.1090/memo/0830](https://doi.org/10.1090/memo/0830),
   Theorem2.1.9 and Lemma1.3.12 provide the product and count polynomials.
