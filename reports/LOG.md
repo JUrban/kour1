@@ -1975,3 +1975,33 @@ existing 4-GiB ceiling. Late-evening source triage records why the
 16.90 BMN-generation and 5.36 uniform-rank steps remain unavailable.
 All 35 candidates await outside review and further priority checks.
 No external communications or pushes have occurred.
+
+
+## 2026-09-11T23:24:29.106557+00:00 — 13.42: non-locally-nilpotent tensor completion
+
+Candidate 36 constructs an explicit Z[t]-group from the rational rank-two
+class-three BCH group and the additive group algebra Q[Q]. A conjugation-
+equivariant function is additive on commuting pairs because the first
+three Lie coordinates of commuting elements are proportional. This gives
+a scalar action factoring through t^2, while the scalar ring Z[t] itself
+is an integral domain and the ordinary target group is torsion-free.
+Every original A-group axiom is proved, including cross-commutation in
+the conditional product law. The universal completion contains a fixed
+pair whose r-fold commutator maps to (T-1)^r for all r.
+
+The 17-file audit has actual exit zero and replays the controls: ten
+generic coordinate variables, 15 truncated words, 81 scalar monomials,
+75 exact model elements, 525 commuting pairs, 5,250 conditional-product
+checks, and 64 nonzero commutators. Original source Definitions 1 and 2
+and universal existence are the specialized prior input; their exact
+pages and the Notebook question were read and viewed. Limited searches
+found recent restricted class-two work but no exact prior construction.
+Independent review and novelty remain pending.
+
+The separate 14.89(b) investigation located the exact prior answer in
+Jaikin-Zapirain2000 Corollary3.1. The complete DVI text was read; failed
+PDF conversion is disclosed and its invalid output excluded. This is
+not a candidate increment. The 23:23:15 UTC n=7 snapshot records
+22,390,000 checked nodes, six live workers, zero completed shards and
+31,422,196 KiB combined RSS. No new GAP worker was needed for 13.42.
+All work remains local; no communications or pushes have occurred.

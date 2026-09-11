@@ -1,0 +1,1297 @@
+              Exponential groups 2:
+       Extensions of centralizers and tensor
+           completion of CSA–groups
+                         by
+         Myasnikov A.G., Remeslennikov V.N.
+    This is the second article in the series of papers by the authors on the
+theory of exponential groups. In the first one [15] we discussed foundations
+of this theory. Definitions necessary for independent understanding of the
+present article are given in the introduction and the first section. The the-
+ory of exponential groups begins with results of A.Mal’cev [11], P.Hall [7],
+G.Baumslag [4] and R.Lyndon [9]. The axiomatic notion of an exponential
+group was introduced by R.Lyndon (1960). In [13] a new axiom was added
+to Lyndon’s definition to obtain a new notion of an exponential group. The
+refined version is more convenient because it coincides exactly with the no-
+tion of a module over a ring in the abelian case, whereas abelian exponential
+groups after Lyndon provide a far wider class.
+    Recall the main definition from [13].
+    Let A be an arbitrary associative ring with identity and G a group. Fix
+an action of the ring A on G, i.e. a map G × A → G. The result of the action
+of α ∈ A on g ∈ G is written as g α . Consider the following axioms:
+
+  1. g 1 = g, g 0 = 1, 1α = 1 ;
+
+  2. g α+β = g α · g β , g αβ = (g α )β ;
+
+  3. (h−1 gh)α = h−1 g α h;
+
+  4. [g, h] = 1 =⇒ (gh)α = g α hα .
+
+Definition 1 Groups with axioms 1)–4) are called A–groups.
+
+   As usual, one can introduce the notions of A–torsion, finitely A-generated
+group, A–homomorphism, A–isomorphism, and so on.
+   Our interest to the theory of exponential groups is motivated by the fol-
+lowing circumstances. First, many natural classes of groups are A–groups.
+
+                                            1
+For example, unipotent groups over a field k of zero characteristic are k–
+groups, pro-p-groups are exponential groups over the ring of p–adic integers,
+etc. (see [15] for examples). Second, the notion of an A–group is a natural
+generalization of the notion of a module over a ring in the category of non-
+commutative groups. Third, this notions allows one to define for an arbitrary
+group G its largest ring of scalars A(G), over which G is an A(G)–group. The
+last notion is an exact analog of the notion of the centroid for rings and al-
+gebras (see [13] for details) and plays an important part in many questions.
+Finally, the notion of an A–exponential group is helpful in investigation of
+model–theoretic problems for noncommutative groups [14]. Let us illustrate
+this on example of universally free group, i.e. groups that has the same uni-
+versal theory as a nonabelian free group (see [17] for details). The study of
+these groups plays a key part in creating model theory of free groups. Here
+we formulate a principal problem for universally free groups.
+    Conjecture Every finitely generated universally free group is a subgroup
+of a free Z[x]–group, where Z[x] is the ring of polynomials in an indeterminate
+x with integer coefficients.
+    This problem requires a detailed study of Z[x]–free groups and their sub-
+groups.
+    The present article will be devoted to the general theory of tensor A–
+completions of groups with an emphasis on A–free groups..
+    G.Baumslag was the first who introduced the Q–completion F Q of a free
+group F and, what is more important, described it using free products with
+amalgamation. It allowed him to establish some properties of the group F Q .
+We develope his approach and apply it for arbitrary rings A of characterisric
+0 and groups from a very wide class.
+    One of the key notions in the theory of A–groups is the notion of tensor
+A–completion. The case where a group G is a subgroup of its A–completion
+GA (i.e. G is A–faithful) is of a particular interest. In section 2 we prove that
+the class FA of all A–faithful groups is universally axiomatizable and closed
+under subgroups, direct products and direct limits, and, in the case when A is
+an integral domain of characteristic zero, contains all residually torsion–free
+nilpotent groups. For arbitrary groups it is difficult to give a good construc-
+tive description of their A–completion. In sections 5–7 we study the class of
+CSA–groups, for which a good and concrete description of tensor completion
+exists. The class of CSA–groups is quite wide, it is universally axiomatizable,
+
+                                       2
+closed under free products, direct limits and extensions of centralizers (basic
+facts concerning these constructions are given in sections 3–4); moreover it
+contains abelian, free, hyperbolic torsion–free groups and groups acting freely
+on Λ–trees and universally free groups. For CSA–groups the construction of
+tensor completion of a group G is obtained as an iterated tree extension
+of centralizers of the initial group G. In particular, any torsion–free CSA–
+group is faithful over any ring A with a torsion–free additive group A+ . In
+the last section we apply the obtained results to the study of basic properties
+of A–free groups. In particular, canonical and reduced forms of elements in
+A–free groups are introduced, and then commuting and conjugate elements
+are described. We finish the paper by formulating some open problems on
+this area.
+    The results of this article are partially contained in preprints [2, 16].
+
+
+1     Tensor completions and free A–groups
+The basic operation in the class of A–groups is the operation of tensor com-
+pletion. Here we give a particular case of this construction (see [15] for
+the general definition). Later on we always assume that the ring A and its
+subring A0 have a common identity element.
+
+Definition 2 Let G be an A0 –group and A0 a subring of A. Then an A–
+group GA is called a tensor A–completion of the group G if GA satisfies the
+following universal property:
+
+    1. there exists an A0 –homomorphism λ : G → GA such that λ(G) A–
+       generates GA , i.e. hλ(G)iA = GA
+
+    2. for any A–group H and an A0 –homomorphism ϕ : G → H there exists
+       the unique A–homomorphism ψ : GA → H such that λ ◦ ψ = ϕ.
+
+   If G is an abelian A0 –group, then the group GA is also abelian, i.e. it is
+an A–module. GA satisfies the same universal property as the tensor product
+G ⊗A0 A of the A0 –module G and the ring A. Therefore GA ≃ G ⊗A0 A
+
+Theorem 1 [15] Let G be an A0 –group and A0 a subring of A. Then there
+exists a tensor completion GA , and it is unique up to an A–isomorphism.
+
+
+                                      3
+Every group is a Z–group, so one can consider A–completions of arbitrary
+groups for each ring of characteristic zero, i.e. Z ≤ A.
+    Let us formulate the notion of a free A-group. Let A be an associative
+ring with identity, charA = 0, and X an arbitrary set.
+
+Definition 3 An A-group FA (X) with the set of A-generators X is said to
+be a free A-group with base X, if for every A-group G an arbitrary mapping
+φ0 : X 7→ G can be extended to an A-homomorphism φ : FA (X) 7→ G.
+
+   The set X is called the set of free A-generators of FA (X). The cardinality
+of X is called the rank of the group FA (X).
+
+Theorem 2 For every X and A there exists a free A-group FA (X); moreover
+it is unique up to A-isomorphism and FA (X) is the tensor A-completion
+F (X)A of the group F (X).
+
+    2 Let F (X) be a free group in the ordinary sense and let φ0 : X 7→ G
+be an arbitrary mapping from X to an A-group G. Then φ0 induces a ho-
+momorphism φ1 : F (X) 7→ G by a property of a free group. Moreover, the
+latter mapping induces an A-homomorphism φ : (F (X))A 7→ G. Conse-
+qently, (F (X))A is a free A-group with base X. Uniqueness follows from the
+uniqueness of the tensor completion. 2
+
+
+2    Faithful A–completion
+Usually one can construct the A–completion of a group G step by step, on
+each stage creating an extension of a group by defining an action of A on
+some elements, and then closing the process. Intermediate groups obtained
+along this construction are partial A–groups. Following [15], let us remind
+the definition of a partial A–group.
+
+Definition 4 A group G is a partial A–group iff g α is defined for some
+g ∈ G, α ∈ A, and axioms 1)–4) hold wherever the action is defined (this
+means, in particular, that if both sides of equalities 1)–4) are defined, then
+they are equal to each other).
+
+
+
+                                      4
+    Let G be a partial A–group. One can define an A–completion of a partial
+A–group G in exactly the same way as in definition 1 (considering λ and
+φ to be partial A–homomorphisms). In particular, if A0 is a subring of A,
+then any A0 –group is also a partial A–group. So, consideration of tensor
+completions of partial A–groups covers the case of tensor A–completion of
+A0 –groups from section 1.
+Definition 5 A partial A–group G is called faithful (over A), if the canonical
+homomorphism of partial A–groups λ : G −→ GA is injective.
+
+Remark 1   1. A partial A–group G is faithful iff G is A–embeddible into
+   some A–group H.
+
+  2. A group G is faithful over A iff G is residually faithful over A.
+
+In [1] it was shown that the operation of tensor completion commutes with
+the operation of direct product and direct limit:
+
+                  (⊕Gi )A ≃A ⊕GA
+                               i ,       (lim Gi )A ≃A lim GA
+                                                            i
+                                          −→          −→
+
+Using these statements and the remark above, one can obtain the following
+propositions:
+Propostion 1 Let FA be a class of all A–faithful partial A–groups. Then:
+  1. FA is closed under direct products;
+
+  2. FA is closed under direct limits.
+2 Let λi : Gi −→ GA  i be canonical homomorphisms. By the properties above,
+(⊕Gi )A ≃ ⊕GA  i , and if λ = ⊕λi is the direct sum of λi , then the canonical
+                       A
+map λ : ⊕Gi −→ ⊕Gi is injective iff each λi is injective. This implies 1).
+   Let G = lim−→ Gi . Then, as mentioned above, GA = lim−→ GA           i . If
+              A
+λi : Gi → Gi is the canonical embedding, then there exists a canonical
+embedding
+                          λ : lim Gi −→ lim GAi = G
+                                                   A
+                            −→            −→
+
+So G = lim−→ Gi is A–faithful.                                              2
+    The following proposition shows that the property of being faithful is a
+local property.
+
+                                      5
+Propostion 2 Let G be a partial A–group. Then G is faithful iff every
+finitely generated subgroup of G is faithful.
+2 Let {Gi , i ∈ I} be the set of all finitely generated partial A–subgroups of
+G. Then G = lim−→ Gi , and the statement follows from proposition 1.        2
+Propostion 3 Let FA be the class of all faithful partial A–groups. Then:
+  1. FA is closed under the operation of taking subgroups;
+  2. FA is closed under ultraproducts;
+  3. FA is universally axiomatizible.
+    2 1) is evident by the remark above. To prove 2), one can consider instead
+of the group G the many-sorted structure A(G, A) = hG, GA , Ai with the
+group operations on G and GA , ring operations on A, operations of action
+of A on G (partial) and on GA , and the canonical map λ : G −→ GA . In
+A(G, A) the notion of faithfulness is evidently axiomatizible by one sentence:
+g 6= 1 =⇒ λ(g) 6= 1. Instead of the ultraproduct of groups ΠGi /D over an
+ultrafilter D one can consider the corresponding ultraproduct ΠA(Gi , A)/D.
+By the Scolem Theorem, ΠGi /Di is a faithful group over the ultrapower
+ΠA/D of the ring A over D. But there is the diagonal embedding of A into
+ΠA/D. So ΠGi /D is a subgroup of the A–group ΠGA       i /D.
+    3) is a corollary of 1) and 2).                                         2.
+    For quite a wide class of rings A we can claim that torsion–free nilpotent
+groups are faithful over A.
+Propostion 4 Let G be a torsion–free nilpotent group, and A an integral
+domain of characteristic 0. Then G is faithful over A.
+    2 Let A∗ = A ⊗ Q be the tensor completion of the ring A over Q.
+Then A∗ is a binomial domain (i.e. it contains all binomial coefficients (an ),
+a ∈ A, n ∈ N ). It is known [7] that every torsion–free nilpotent group G
+has an A∗ –completion in the sense of P. Hall. So G is embeddible into an
+A∗ –group, and hence into an A–group. By remark 1 G is faithful over A. 2
+Theorem 3 Let G be a residually torsion-free nilpotent group. Then G is a
+faithful group over any integral domain A of characteristic 0. In particularly,
+free groups, free solvable groups and free polynilpotent groups are faithful over
+any integral domain of characteristic 0.
+
+                                        6
+2 The first statement follows from proposition 5 and the remark above.
+Those concrete groups are residually torsion–free nilpotent: see, for example,
+[10] and [8].                                                               2
+    Finally, let us consider some examples of non–faithful groups.
+Example 1 Let G be a simple group containing an element of finite or-
+der. Then G is not faithful over the field of rational numbers Q. Moreover,
+GQ = 1. Indeed, any Q–group has no elements of finite order, so G is not
+a subgroup of GQ . But in this case the homomorphism λ : G −→ GQ has a
+nontrivial kernel. So the simplicity of G implies that λ(G) = 1, but GQ is
+generated by λ(G). Therefore, GQ = 1.
+
+Example 2 Let G be a torsion–free group with non–unique extraction of
+roots. Then G is not faithful over Q, since GQ has unique extraction of
+roots.
+
+
+3    Extensions of centralizers
+In the following we will use a construction of free extension of centralizers of
+a given group G. Let us describe this construction.
+    Let G be a group. The centralizer of an element v ∈ G is denoted by
+CG (v).
+    If G = hX | Ri is a presentation of G, Y is a set of words in X and t is
+a new letter (not in X), then by hG, t | [Y, t] = 1i we will denote the group
+with the representation hX, t | R, [y, t]iy∈Y .
+    Now we will define, perhaps, the simplest case of centralizer extension.
+
+Definition 6 The group G(v, t) = hG, t | [CG (v), t] = 1i is called the direct
+of rank 1 extension of the centralizer of the elememt v.
+
+   It is easy to see that G(v, t) can be obtained from G by an HNN-extension
+with respect to the identity isomorphism CG (v) → CG (v) :
+
+                   G(v, t) = hG, t | t−1 at = a, a ∈ CG (v)i,
+
+or as a free product with amalgamation:
+
+                    hG ∗ (CG (v) × hti) | CG (v) = CG (v)φ i
+
+                                       7
+with amalgamation by the canonical monomorphism φ : CG (v) → CG (v)×hti.
+    We will consider also the following much more general construction of
+free centralizer extensions.
+
+Definition 7 Let G be a group, CG (v) = C the centralizer of an element v
+from G, and φ : C −→ H a monomorphism of groups such that φ(v) ∈ Z(H).
+Then the group
+                     G(v, H) = hG ∗ H | C = C φ i
+is called an extension of the centralizer CG (v) by the group H with respect to
+φ.
+
+    Some particular cases of this construction are of special interest. We will
+classify them with respect to the type of the embedding φ : C → H. So the
+extension is central iff C φ ≤ Z(H); direct iff H = C φ × B; abelian iff H is an
+abelian group.
+
+Propostion 5 The following statements are true:
+
+  1. there exist the canonical embeddings λG : G −→ G(v, H) and
+     λH : H −→ G(v, H);
+
+  2. CG(v,H) (v) ≥ H;
+
+  3. the group G(v, H) has the following universal property: for any group
+     homomorphisms ψG : G −→ N and ψH : H −→ N compatible on C
+     and C φ there exists a unique homomorphism ψ : G(v, H) −→ N such
+     that the following diagram is commutative:
+                              λG                  λH
+                     G             - G(v, H) ¾             H
+                         @                                   ¡
+                           @                                ¡
+                             @                           ¡
+                               @               ψ        ¡
+                               ψG@                   ¡ψ H
+                                   @                ¡
+                                       @           ¡
+                                        R ?¡
+                                        @  ª
+                                           N
+
+
+
+                                       8
+   Now we will describe a construction which allows one to extend a set of
+centralizers at once.
+
+Definition 8 Let C = {Ci = CG (vi ) | i ∈ I} be a set of centralizers in the
+group G. Suppose φi : Ci −→ Hi is an embedding of Ci into Hi such that
+φi (v) ∈ Z(Hi ), i ∈ I. We can form a graph of groups
+                                                   Hi
+                                     Ci ©©©        ..
+                                       ©            .
+                                    ©©
+                                 ©©    Cj
+                             G                     Hj
+                                                   ..
+                                                    .
+
+
+
+    The fundamental group of this graph is called a tree extension of central-
+izers from C and is denoted by G(C, H, Φ), where H = {Hi | i ∈ I}, Φ =
+{φi | i ∈ I}.
+
+    Again, we will consider central, direct and abelian extensions correspond-
+ing to the type of monomorphisms from Φ.
+    By definition, the group G(C, H, Φ) is the union (direct limit) of the
+chain of groups
+                                              φα
+                 G = G0 ,→ G1 ,→ · · · ,→ Gα ,→ Gα+1 ,→ · · ·
+
+where the set of centralizers C = {Cα | α < λ} is well ordered, G =
+G0 , Gα+1 = Gα (vα+1 , Hα+1 ), φα : Gα −→ Gα+1 is the canonical embed-
+ding from proposition 5, and Gγ = lim−→ Gα (here α < γ) for a limit ordinal
+γ.
+
+Remark 2 The properties of tree extensions of centralizers are similar to
+those of ordinary extensions of centralizers: there exist the canonical embed-
+dings of G and Hi into G(C, H, Φ); the centralizer of vi in G(C, H, Φ) contains
+the group Hi and the group G(C, H, Φ) has the corresponding universal prop-
+erty. Moreover, groups G(C, H, Φ) for different well-orderings have the same
+universal property, so they are isomorphic.
+
+                                      9
+    Finally, we introduce one more construction: the iterated tree extension
+of centralizers.
+    Let G be a group, C = {CG (vi ) | i ∈ I} a set of centralizers in G, and
+Φ = {φi : CG (vi ) → Hi } a set of embeddings of these centralizers. Then
+one can construct the group G1 = G(C, H, Φ) and consider again the set of
+centralizers C1 in G1 , the set of embeddings Φ1 , and the corresponding set
+of groups H1 . As above, the group G2 = G1 (C1 , H1 , Φ1 ) can be constructed.
+We can repeat this process using induction on ordinals: if a group Gα has
+been constructed for some ordinal α and the set of centralizers Cα in Gα ,
+the set of groups Hα and the corresponding set of embeddings Φα have been
+chosen, then
+                            Gα+1 = Gα (Cα , Hα , Φα ),
+                                Gγ = lim
+                                      −→
+                                         Gα ,
+                                      α<γ
+
+for a limit ordinal γ. Thus, for any ordinal δ, starting from a given group G,
+we can obtain the group Gδ by iterating the process above.
+
+Definition 9 The group Gδ is called an iterated tree extension of centralizers
+up to level δ.
+
+Remark 3 Any iterated tree extension of centralizers can be obtained by
+transfinite induction using operations of extension of centralizers and direct
+limits. The group G is embeddible in Gδ , and Gδ has a universal property
+similar to that in proposition 5
+
+
+4    Canonical forms of elements in groups which
+     are obtained by abelian extension of cen-
+     tralizers
+In this section we will consider canonical and reduced forms of elements of
+groups constructed by extensions of centralizers. Of course, there are general
+theorems about canonical forms in amalgamated free products, but we need
+some special concrete forms corresponding to this particular situation.
+    Let G be a group, v ∈ G an element such that CG (v) = C is a maximal
+abelian subroup of G, and φ : C ,→ A an embedding of C into some fixed
+
+                                     10
+abelian group A. In exponential groups it will be convenient to use an ex-
+ponential writing for elements of C and A. Namely, A ≃ v A = {v a | a ∈ A},
+C ≃ v C = {v c | c ∈ C}, in particular, hvi ≃ v Z = {v n | n ∈ Z}. Consider the
+group G∗ which is obtained from G by A-extension of the centralizer C:
+                                                                       φ
+                        G∗ = G(v, A) = hG ∗ v A | v C = v C i
+
+with respect to the embedding φ.
+    Denote by S some system of right representatives of A by C. Then v S
+is a system of right representatives of v A by v C . Fix any system R of right
+representatives of G by v C ≃ C. For g ∈ G we denote by ḡ the representative
+of g in this fixed system of representatives. Clearly, g = v c ḡ for some c ∈ C.
+From general theory of free products with amalgamation we know that every
+element g ∈ G∗ can be written in the form
+
+                                 g = g1 v a1 · · · gn v an gn+1                            (1)
+
+ai ∈ A, gi ∈ G. Moreover, any element g ∈ G∗ admits a unique decomposi-
+tion of the following type, which is called a canonical form of g:
+
+                                 g = hg1 v s1 . . . gn v sn gn+1
+
+where h ∈ v C , gi ∈ R, si ∈ S, si 6= 0 and gi 6= 1 (except, maybe, g1 , gn+1 ).
+We suppose here that g itself is a canonical form for g ∈ G.
+   Any product of type (1) (or, more precisely, any sequence (g1 , v1a1 , g2 , . . . , v an , gn+1 ))
+can be reduced to a canonical form by the following rewriting process:
+
+    • if an ∈ C, then
+
+                 g1 v1a1 · · · gn v an gn+1 → g1 v a1 · · · gn−1 v an−1 (gn v an gn+1 ),
+
+      so we get a shorter decomposition of g and can apply induction;
+
+    • if an 6∈ C, then
+
+                    g1 v a1 · · · gn v an gn+1 −→ g1 v a1 · · · (gn v k+t )v sn g n+1 ,
+
+      where an = k + sn , gn+1 = v t g n+1 , k, t ∈ C, sn ∈ S;
+
+
+                                               11
+   • if (gn v k+t ) ∈ C, then
+
+       g1 v a1 . . . v an−1 (gn v k+t )v sn g n+1 −→ g1 v a1 . . . (gn−1 gn v k+t )v an−1 +sn g n+1 ,
+
+     and we get a shorter decomposition of g. After that the process is
+     performed by induction.
+   • if gn v k+t 6∈ C, then one can apply the rewriting process to g1 v a1 · · · v an−1 gn v k+t ,
+     keeping the tail unchanged.
+    It is easy to see that these transformations carry g to the canonical form.
+    It is more convenient to use the reduced form of elements of G∗ . By
+definition, an element g is in reduced form
+
+                                 g = g1 v a1 . . . gn v an gn+1                                   (2)
+
+if ai 6∈ C, i = 1, . . . , n, gj 6∈ C, j = 2, . . . , n.
+     From the rewriting process it is clear that a form of type (1) is reduced
+iff the number n is minimal through all decompositions of g of type (1).
+
+Propostion 6 Let
+                                 g = u1 v a1 . . . um v am um+1
+                                 g = w1 v b1 . . . wn v bn wn+1
+be two reduced forms of an element g. Then:
+  1. m = n and a1 = b1 + k1 , . . . , am = bm + km for some ki ∈ C;
+  2. um+1 = v tm wm+1 , um = v tm−1 wm v −tm −km ,                   . . . , u1 = w1 v −t1 −k1 for
+     some tj ∈ C, j = 1, . . . , m.
+
+2 By the rewriting process. 2
+    For a direct extension of a centralizer C by a group H (i.e. when A =
+C ⊕ H), the group H is itself a system of representatives of A by C (H = S).
+In this case it is very convenient to use semicanonical forms of elements.
+    By definition, a reduced form (2)
+
+                                    g = g1 v s1 · · · v sn gn+1
+
+is semicanonical, iff 1 6= si ∈ S for all i.
+    From proposition 6 one can easily deduce the following
+
+                                                12
+Corollary 1 Any two semicanonical forms of g can be transformed from
+one to another by a finite sequence of commutations of the form v s v t = v t v s ,
+where t ∈ C, s ∈ S.
+
+   Suppose now that the notions of canonical, semicanonical and reduced
+forms of elements of the group G are already introduced. In this case one
+can extend them to the group G∗ .
+   We will say that canonical (semicanonical, reduced) forms of an element
+
+                             g = hg1 v a1 · · · v an gn+1
+
+agree with those on G, iff the elements h, g1 , . . . , gn+1 , v are in canonical
+(semicanonical, reduced) forms in the group G.
+   Now we are able to introduce the corresponding forms of elements of tree
+and iterated tree extensions of centralizers.
+   Let G∗ be the union of a chain of groups
+
+                      G = G0 ,→ G1 ,→ · · · ,→ Gα ,→ · · ·
+
+where every Gα+1 is obtained from Gα by extension of centralizers, and Gγ =
+lim→ Gα for a limit ordinal γ. Then the notions of canonical (semicanonical,
+reduced) forms are introduced on Gα+1 agreeably with those on Gα . For a
+limit ordinal γ these forms are inherited form all the previous terms of the
+chain. Then canonical (semicanonical, reduced) forms on the group G∗ are
+well–defined.
+
+
+5     Groups with conjugately separated maxi-
+      mal abelian subgroups
+In this section we introduce the class of CSA∗ –groups which will play a
+fundamental role in our investigation of A-free groups, tensor completions
+and groups with length functions. This class is quite wide; for example, it
+contains all torsion-free hyperbolic groups, all groups acting freely on Λ–trees,
+and all universally free groups.
+
+Definition 10 A subgroup H of a group G is called conjugately separated
+(or malnormal) if H ∩ H x = 1 for any x ∈ G \ H.
+
+                                         13
+Definition 11 A group G is called a CSA-group if all its maximal abelian
+subgroups are conjugately separated.
+
+   It is clear that every abelian group is a CSA–group.
+   The following proposition gives us some intuition about CSA-groups.
+
+Propostion 7 Let G be a CSA-group. Then the following statements are
+true:
+
+  1. (SA–property) if M1 and M2 are distinct maximal abelian subgroups of
+     G, then M1 ∩ M2 = 1;
+
+  2. any maximal abelian subgroup of G coincides with its normalizer.
+
+   2
+   1) If 1 6= x ∈ M1 ∩M2 and y ∈ M2 \M1 , then x ∈ M1y ∩M1 , so M1y ∩M1 6= 1.
+   2) is evident. 2
+
+Definition 12 A group G is called commutative transitive if the relation “a
+commutes with b” is transitive on the set G \ 1;
+
+Remark 4 The following conditions are equivalent to one another:
+
+  1. a group G has SA-property;
+
+  2. a group G is commutative transitive;
+
+  3. in a group G the centralizer of any nontrivial element is abelian.
+
+Remark 5 Proposition 7 shows that the class CSA is a subclass of the class
+of groups with transitive commutation. The following example proves that
+CSA is a proper subclass of these classes.
+
+2 Let G be a free metabelian group. Then all proper centralizers of G are
+commutative. But G has a normal abelian subgroup, so it is not a CSA–
+group.                                                                 2
+   In fact, the transitivity of commutation is a very strong property and
+implies some other interesting features. We collect them in the following
+
+
+                                     14
+Propostion 8 Let G be a group such that commutation is an equivalence
+relation on G \ {1}. Then
+
+  1. the centralizer of any nontrivial element of G is a maximal abelian
+     subgroup of G; conversely, any maximal abelian subgroup of G 6= 1 is a
+     centralizer of some nontrivial element;
+
+  2. if G is torsion–free, then for x, y ∈ G xn = y m =⇒ [x, y] = 1;
+     xn = y n =⇒ x = y;
+
+  3. if G is nonabelian, then its center is trivial;
+
+  4. if G is nonabelian, then it is indecomposable into a nontrivial direct
+     product.
+
+2 1), 3) and 4) are quite evident. The second implication in 2) is a corollary
+of the first one. Let us prove the first claim of 2).
+    Suppose xn = y m . Then the neighboring terms in the sequence x, xm , y n , y
+are nontrivial and commute pairwise; by transitivity of commutation we ob-
+tain [x, y] = 1.                                                               2
+
+Remark 6 G is a CSA-group iff all its centralizers of nontrivial elements
+are abelian and conjugately separated (see statement 1 of proposition 8).
+
+    Thus, CSA is a property of centralizers. Let us consider a typical situ-
+ation of conjugate unseparability. A cyclic subgroup hyi = M < G is not
+conjugately separated iff there is some x ∈ G such that M x ∩ M 6= 1, or,
+equivalently, x and y satisfy the identity x−1 y r x = y s for some integers r
+and s. One-relator groups with this relation have a special name and play a
+crucial role in what follows. Groups of the form
+
+                  Gr,s = ha, b | a−1 br a = bs i, r, s ∈ Z, r > 0,
+
+are called Baumslag – Solitar groups [5]. We will need the following properties
+of these groups:
+
+   • if r = s = 1, then Gr,s ≃ Z × Z is an abelian group;
+
+
+
+
+                                        15
+   • if r = 1 and s 6= 1, then Gr,s is nonabelian solvable and for s 6= −1
+                                                       1
+                      G1,s = ha, b | a−1 ba = bs i ≃ Z[ ] >¢Z
+                                                       s
+     where Z ≃ hai, Z[ 1s ] ≃ n.cl(b) - the normal closure of hbi;
+     for s = −1
+                      G1,s = ha, b | a−1 ba = b−1 i ≃ hbi >¢hai.
+
+   • if r > 1, | s |> 1, then Gr,s is a nonsolvable group and [a−1 ba, b] 6= 1
+     (see, for example, [10, p.281]). The case r > 1, s = ±1 coincides with
+     the second one after renaming the generators.
+   In the following proposition we collect some properties of CSA–groups.
+Propostion 9 Let G be a nonabelian CSA–group. Then
+  1. centralizers of nontrivial elements of G are abelian and coincide with
+     maximal abelian subgroups of G (in particular, commutation is transi-
+     tive);
+
+  2. G has no nontrivial normal abelian subgroups;
+
+  3. G has a trivial center;
+
+  4. G is directly indecomposable;
+
+  5. G has no non–abelian solvable subgroups;
+
+  6. G has no nonabelian Baumslag – Solitar subgroups;
+
+  7. if G is torsion–free, then G is a D–group, i.e. the operations of extract-
+     ing roots in G are defined uniquely.
+2 1) is follows from item 3) of proposition 7 and item 1) of proposition 8.
+2) is clear, and 3) is a corollary of 2). 4) follows from 1) and item 4) of
+proposition 8. In proposition 10 below it will be proved that a subgroup
+of a CSA–group is again a CSA–group. So to prove 5) one only needs to
+prove that a non–abelian solvable group is not a CSA–group. But the last
+statement follows from 2). To prove 6), it suffices to prove that a non–abelian
+Baumslag–Solitar group Gr,s is not a CSA–group. If r = 1 and s 6= 1, then
+
+                                      16
+Gr,s is nonabelian solvable (see remarks before the proposition), and hence by
+5) it is not a CSA–group. If r > 1 and | s |> 1, then [a−1 ba, b] 6= 1. Suppose
+now that Gr,s is a CSA–group, then commutation on nontrivial elements of
+G must be transitive. In the sequence a−1 ba, a−1 br a, bs , b all neighbours
+commute, but the first and the last elements do not - a contradiction with
+the transitivity of commutation. 7) follows from item 3) of proposition 7 and
+item 2) of proposition 8.                                                    2
+
+Propostion 10        1. The class of groups CSA is finitely universally axiom-
+    atizible.
+
+  2. The class CSA is closed under ultraproducts.
+
+  3. The class CSA is closed under taking subgroups.
+
+    2 To prove 1) it suffices to write down the conditions of commutativity
+of centralizers and their conjugate separation by universal formulas. This is
+straightforward. 2) follows from the fact that this class is axiomatizible. 3)
+follows from the universal axiomatization of this class.                    2
+    Free groups are principal examples of nonabelian CSA-groups. The fol-
+lowing results show that the class CSA contains almost all groups which are
+“close” to free groups.
+
+Propostion 11 Let G be a torsion-free group such that the centralizer of
+any nontrivial element is cyclic. Then G is a CSA-group.
+
+   2 Let G satisfy conditions of Proposition 11. Then proper centralizers
+of G are abelian (in particular, commutation is transitive on G \ {1}), and
+by remark 4 we only need to prove that these centralizers are conjugately
+separated. Consider any maximal abelian subgroup M of G; M = hyi.
+Suppose that for some x ∈ G \ M we have M ∩ M x 6= 1. This means that
+x−1 y s x = y r for some integers s, r. Let us denote z = x−1 yx. Then z s = y r
+and by proposition 8 [z, y] = 1. So z ∈ hyi and x−1 yx = y p for some integer p.
+Therefore the subgroup hx, yi is a quotient group of the Baumslag – Solitar
+group G1,p ≃ ha, b | a−1 ba = bp i (see remarks before proposition 9) under
+the epimorphism φ : a 7→ x, b 7→ y. We know that G1,p = n.clhbi >¢hai,
+where n.clhbi ≃ Z[ p1 ], hai ≃ Z. Suppose that b1 an ∈ kerφ, i.e. y1 xn = 1, y1 ∈
+
+                                       17
+n.cl(y). Then in the sequence y, y1 , xn , x neighbours commute, and hence by
+transitivity of commutation [y, x] = 1 (but this contradicts to our choice of
+x and y) or else y1 or xn is trivial. The last case implies that y1 = 1, n = 0.
+Hence hx, yi ≃ G1,p - a contradiction, because Z[ p1 ] is a subgroup of G1,p and
+is not cyclic.                                                                 2
+
+Propostion 12        1. Any torsion-free hyperbolic group is a CSA-group.
+
+    2. Any group acting freely on a Λ-tree is a CSA-group.
+
+    3. Any universally free group is a CSA-group.
+
+    2 It is known (see, for example, [6]) that the centralizer of any element
+of infinite order in a hyperbolic group G has a cyclic subgroup of finite index
+(i.e. the stabilizer is virtually cyclic). So we only need to prove that any
+torsion-free virtually cyclic group H is infinite cyclic. It is clear that H
+is finitely generated and all subgroups of H are also virtually cyclic. By
+induction on the number of generators of H, we may assume that H is 2-
+generated, H = ha, bi and moreover hbi ¢ H, am ∈ hbi, a−1 ba = bn , for some
+                                         m
+n, m. This implies b = a−m bam = bn . Therefore 1 = nm . Hence n = ±1
+and [a, b] = 1 or [a2 , b] = 1. In the first case H is abelian torsion–free and
+virtually cyclic, therefore H is a cyclic group. In the second case a2 is a
+central element of H, and so is the element a2m = bk for some integer k.
+But a−1 bk a = b−k , and hence bk = b−k , which contradicts to the torsion–free
+condition on G.
+    Statement 2) is proved in [3, corollary 1.9].                             2
+   In [17] it was proved that every universally free group acting freely on
+some Λ-tree. Now 3) follows from 2).                                      2
+
+
+6     Preservation of the CSA–property under
+      free products, direct limits, and abelian ex-
+      tensions of centralizers
+In this section we will prove that the CSA–property is preserved under free
+products and abelian extensions (tree extensions or iterated tree extensions)
+
+                                      18
+of centralizers for groups without elements of order 2 (non-abelian CSA
+groups automatically do not contain elements of order 2). In any case it
+is preserved under direct limits.
+
+Definition 13 The subclass CSA∗ of CSA consists of all groups without el-
+ements of order 2.
+
+Remark 7 Any non-abelian CSA-group is also CSA∗ -group.
+
+2 If G is non-abelian CSA-group and u2 = 1 for some nontrivial u ∈ G, then
+the normal closure of u in G is also non-abelian (otherwise it would contradict
+to CSA-property). Hence, there are two noncommutative involutions in G,
+they generate non-abelian metabelian subgroup of G - contradiction with
+CSA-property.       2
+
+Theorem 4 The class CSA∗ is closed under free products.
+
+2 Let G1 and G2 be CSA∗ –groups and G = G1 ∗ G2 . First of all, G has
+no elements of order two if G1 and G2 do not (see [10, cor. 4.4.5]). By the
+Kurosh Subgroup Theorem a maximal abelian subgroup M of the group G
+has one of the following two types:
+  a) M ≤ Ggi for some g ∈ G, i = 1, 2.
+
+  b) M = hzi is an infinite cyclic group generated by an element z of cycli-
+     cally reduced length kzk ≥ 2.
+By definition, kzk = min{| y | | y is cyclically reduced and conjugate to
+z}. Clearly, kzk ≥ 2 iff z 6∈ Ggi for any g ∈ G, i = 1, 2. We claim that
+all centralizers of nontrivial elements in G are abelian and, consequently,
+commutation in G \ {1} is transitive. Indeed, let 1 6= a ∈ G, b, c ∈ CG (a).
+There are maximal abelian subgroups M, N < G with a, b ∈ M and a, c ∈ N .
+We have the following cases:
+                                                                −1
+  1. M < Gxi , N < Gyi , i = 1, 2, x, y ∈ G. Then Gi ∩ Gxy  i     6= 1, hence
+        −1               x     y           x
+     xy ∈ Gi , and Gi = Gi . So a, b, c ∈ Gi . But since Gi is a CSA–group,
+     it follows that [b, c] = 1.
+
+  2. The case M < Gxi , N < Gyj , i 6= j is impossible.
+
+                                      19
+   3. The case M = hzi with kzk ≥ 2, N < Gxi is impossible, because a ∈ M
+      implies kak ≥ 2, and on the other hand, a ∈ N implies kak = 1.
+
+   4. M = hzi, N = hyi, kzk ≥ 2, kyk ≥ 2. Then a = z n = y l . So y l ∈ Z(H),
+      where H = hz, yi. By the Kurosh subgroup theorem, H is a free
+      product H = F ∗ (∗Gαi ), where F is a free group. Since H has a
+      nontrivial centre, it equals to one of the factors. If H = F , then H
+      is cyclic, and [z, y] = 1. Therefore [b, c] = 1. The case H < Gαi is
+      impossible because kzk ≥ 2.
+
+This proves that CG (a) is abelian.
+    Suppose that M ≤ Ggi , then M is conjugately separated iff its automor-
+                  −1
+phic image M g is conjugately separated. Conjugating by g −1 if necessary,
+we may assume that M ≤ Gi . It is a well-known property of free prod-
+ucts (see [10, cor. 4.1.5]) that if x is not in Gi , then Gxi ∩ Gi = 1. Hence if
+M x ∩M 6= 1, then x ∈ Gi , but Gi is a CSA-group, therefore x ∈ M . Now sup-
+pose that M = hzi and kzk ≥ 2. If M x ∩ M 6= 1, then x−1 z n x = z m for some
+n and m. Hence kz n k = kz m k. But it is easy to see that kz n k =| n | ·kzk,
+and the equality above implies that | m |=| n |. In the case n = m we have
+[x, z n ] = 1, and by transitivity of commutation [x, z] = 1. Consequently,
+x ∈ hzi. Assume now that n = −m. In this case x−1 z n x = z −n , which im-
+plies x−2 z n x2 = z n . So [x2 , z n ] = 1, and by transitivity [x, z] = 1, as above.
+2
+   The following theorem plays the main part in the rest of the paper.
+
+Theorem 5 The class CSA∗ is closed under extensions of centralizers by
+abelian groups without elements of order 2.
+
+2 Let G be a CSA∗ –group, C = CG (v) the centralizer of an element v ∈ G,
+and φ : C ,→ A an embedding of C into an abelian group A which has no
+elements of order two. We need to prove that the extension G(v, A) is also
+a CSA∗ –group. The group G(v, A) has no elements of order two ([10, cor.
+4.4.5]). Therefore it remains to check the CSA–property. Before proving
+this, we establish a lemma which describes centralizers in the group G(v, A).
+
+Lemma 1 Let x ∈ G(v, A). Then:
+
+   1. if x ∈ Gg , then C(x) ≤ Gg ;
+
+                                         20
+  2. if x ∈ Ag , then C(x) = Ag ;
+
+  3. if kxk ≥ 2, then C(x) = hzi and kzk ≥ 2.
+
+   2 We will use the following description of commuting elements in free
+products with amalgamation (see [10]): [x, y] = 1 iff one of the following
+conditions holds:
+   • x or y belongs to some conjugate of the amalgamated subgroup C =
+     CG (v);
+
+   • neither x nor y is in a conjugate of C, but x is in a conjugate of a factor
+     (G or A), then y is in the same conjugate of the factor;
+
+   • neither x nor y is in a conjugate of a factor, then x = g −1 cgz n , y =
+     g −1 c∗ gz m , where c, c∗ ∈ C, and g −1 cg, g −1 c∗ g and z commute pairwise.
+   Let us consider these three possible cases.
+    Suppose that x ∈ C g , y ∈ G(v, A), and [x, y] = 1. We can assume
+(conjugating by g −1 if necessary) that x ∈ C. Let y = cg1 a1 . . . gn an be the
+canonical form of y, where c ∈ C, gi are right representatives of G mod C,
+ai are right representatives of A mod C, and gn 6= 1. Then xy = yx implies
+
+              xcg1 a1 . . . gn an = cg1 a1 . . . gn an x = cg1 a1 . . . gn xan
+
+Hence gn x = x1 gn for some x1 ∈ C or gn xgn−1 = x1 . But G is a CSA-group
+and C is its nontrivial centralizer – a contradiction. Therefore if [x, y] = 1,
+then y = can ∈ A. And we have case 2) of the lemma.
+     Suppose that x belongs to a conjugate of a factor G or A, but not to C.
+Then y is in the same factor, and we have case 1) or 2) of the lemma.
+     Finally, suppose that kxk ≥ 2 and [x, y] = 1 for y ∈ G(v, A). Then
+x = g −1 cgz n , y = g −1 c∗ gz m , kzk ≥ 2, and z, g −1 cg and g −1 c∗ g commute in
+pairs. Conjugating by g −1 , we reduce the problem to the case x = cz1n , y =
+c∗ z1m , z1 = gzg −1 . If c 6= 1 or c∗ 6= 1, then z1 ∈ A according to the proof
+above, but this contradicts the condition kzk ≥ 2. So c = 1, c∗ = 1 and we
+have the case 3) of the lemma.           2
+
+Corollary 2    1. All centralizers of nontrivial elements of the group G(v, A)
+    are abelian, and the group G(v, A) is commutative transitive;
+
+                                            21
+  2. The cenralizer of the element v in the group G(v, A) is exactly the
+     subgroup A.
+
+Corollary 3 A maximal abelian subgroup of G(v, A) can be of one of the
+following three types:
+
+  1. M g , where M is a maximal abelian subgroup of G, M 6= C f (M is not
+     conjugate to C) and g ∈ G(v, A);
+
+  2. Ag , g ∈ G(v, A);
+
+  3. hzi, where kzk ≥ 2.
+
+   The following lemma describes conjugated elements in the group G(v, A).
+
+Lemma 2 Let g be a cyclically reduced element of G(v, A). Then:
+
+  a) if g is conjugate to an element h in some factor, then g and h are in
+     the same factor and are conjugate in it;
+
+  b) if g is conjugate to a cyclically reduced element p1 · · · pn , where n ≥
+     2, then g can be obtained by cyclically permuting p1 , . . . pn and then
+     conjugating by an element from C.
+
+     2 There is a description of conjugated elements in arbitrary free products
+with amalgamation [10]. In a general situation, one has our cases a), b) and
+one more. Namely, g is conjugate to some c ∈ C. In this case, according to
+the description in [10], there are elements ci ∈ C such that in the sequence
+c, c1 , . . . , cn , g consecutive terms are conjugate in a factor. In our case the
+factor A is abelian, therefore g and c are conjugate in G.                       2
+     Proof of the theorem. Let N = M g be a maximal abelian subgroup of G
+of the type 1). We need to prove that N x ∩ N 6= 1 =⇒ x ∈ N for any x ∈
+G(v, A). Conjugating if necessary, we can assume that N = M ≤ G. Suppose
+that there exist nontrivial elements f, h ∈ M such that f x = h. According
+to statement a) above, f y = h for some y ∈ G. But then M ∩ M y 6= 1, and
+consequently y ∈ M and f = h (because G is a CSA–group). This implies
+that [f, x] = 1 and x ∈ G. Hence x ∈ M .
+     Now let N = Ag , g ∈ G(v, A). Again, we can consider only the case
+N = A. Suppose that A ∩ Ax 6= 1 for some x ∈ G(v, A). Then f x = h for
+
+                                        22
+some f, h ∈ A. If f or h is not in C = CG (v), then by lemma 2 a) f and h
+are conjugate in A, but A is abelian, so f = h. If both g and h are in C,
+then they are both in A and G, and we can apply a) as before.
+    Let N = hzi be an infinite cyclic group, kzk ≥ 2. Suppose that N ∩ N x 6=
+1. Then (z n )x = z m for some integers m and n. Now we are in the case b)
+of the description. To finish the proof in this case, one can repeat word by
+word the proof from the last part of theorem 4.                             2
+
+Theorem 6 The class CSA is closed under direct limits.
+
+2 Let G = {Gi , φij , I} be an inductive system of CSA–groups Gi , i ∈ I,
+and G∗ = lim−→ Gi . The following lemma describes centralizers of nontrivial
+elements in G∗ .
+
+Lemma 3 Let G∗ = lim−→ Gi be a direct limit of CSA–groups Gi , i ∈ I. If
+M is a maximal abelian subgroup of G∗ , then for any i ∈ I Mi = Gi ∩ M is
+either maximal abelian in Gi or trivial. Moreover, M = lim−→ Mi
+
+2 First of all, commutation is transitive on G∗ \ {1}. Indeed, any three
+elements x, y, z ∈ G∗ are in some Gi , but Gi is a CSA–group.
+    Let Mi be nontrivial. If Mi is not maximal in Gi , then [Mi , x] = 1 for
+some x 6∈ Mi . Let us prove that x ∈ M . By transitivity of commutation, M
+is a centralizer of some element z ∈ G. There exists k such that i < k and
+x, z ∈ Gk . From transitivity of commutation we deduce that [x, z] = 1, and
+therefore x ∈ M , which contradicts to the condition x 6∈ Mi . The equality
+M = lim−→ Mi is evident.                                                  2
+   Let us continue the proof of theorem 6.
+   Suppose that M is a maximal abelian subgroup of G∗ , and for some
+f ∈ G∗ M ∩ M f 6= 1. Then x = y f for some x, y ∈ M . We can choose
+k ∈ I such that x, y, f ∈ Gk and therefore Mk ∩ Mkf 6= 1 in Gk . Hence
+f ∈ Mk < M . This proves that G∗ is a CSA–group.                    2
+
+Theorem 7 The class CSA∗ is closed under tree abelian extensions of cen-
+ralizers and iterated tree abelian extensions of centralizers by abelian groups
+without elements of order 2.
+
+2 By definition, a tree (iterated tree) extensions of centralizers of a group G
+is constructed by transfinite induction on ordinals: G = G0 < G1 < · · · <
+
+                                      23
+Gα < · · · . Following this construction, it suffices to prove by induction that
+every term of this chain lies in the class CSA∗ if the initial group G belongs
+to CSA∗ . For a nonlimit ordinal, this was proved in theorem 5, for a limit
+ordinal in theorem 6.                                                         2
+
+
+7     Tensor completion of CSA–groups
+In [15], using general category theory, we proved that for any group G and
+any ring A the tensor completion GA exists, but we did not point out any
+idea of what this construction is explicitly.
+    In this section we, following the method of G. Baumslag [4], describe the
+explicit construction of a tensor completion of an arbitrary CSA∗ –group G
+using extensions of centralizers. In fact, GA appears as an iterated tree ex-
+tension of centralizers in G for a very wide class of rings A. In particular,
+GA is again a CSA∗ –group, and we obtain a lot of information about it.
+Moreover, we can apply the technique of amalgameted free products to in-
+vestigate GA . Thus, one has the canonical and reduced forms of elements in
+GA , descriptions of commuting and conjugating elements, elements of finite
+order and so on.
+   We will construct the A–completion of a group G step by step, on each
+stage obtaining partial A–groups.
+    Abelian case
+    In the abelian case the construction of tensor completion is very similar
+to ordinary tensor multiplication by the ring A (one only needs to make the
+existing partial action of A on M agree with the action of A on M ⊗ A).
+    Let M be a partial right A–module (i.e. a partial abelian A–group). Let
+us consider the ordinary tenzor product M ⊗Z A of abelian group M by the
+ring A over Z. Then the tensor A-completion of the partial A-module M
+can be obtained by factorizing M ⊗Z A by all relations of the type (xα, β) −
+(x, β)α, x ∈ M, α, β ∈ A.
+    The following proposition is a copy of the corresponding result from the
+theory of modules.
+Propostion 13     1. Let M be a torsion–free abelian group, and A a ring
+    with a torsion–free additive group. Then i : M −→ M ⊗ A is injective,
+    and M ⊗ A is torsion–free.
+
+                                      24
+  2. Let M be a partial A–module without elements of order 2, and A a ring
+     whose additive group has no elements of order 2. Then M ⊗ A has no
+     elements of order 2.
+
+   Non-abelian case
+    Before getting into details for the noncommutative case, we will briefly
+describe the plan of an attack. By the definition of an A–group, the cen-
+tralizers of GA must be A–modules. This gives us a hint. The main idea is
+to extend all centralizers of G up to A–modules, adding a minimal number
+of new relations. Centralizers in a CSA–group are abelian, and we already
+know their A–completions. But we need to have this tensor completion of
+given maximal abelian subgroups M of G agree with all the other elements.
+The best way to do that is to extend the centralizers of G by the A–module
+M ⊗ A under the canonical monomorphism i : M −→ M ⊗ A. Then, using
+conjugate separation of the subgroup M , we can extend the action of A on
+M ⊗ A to all conjugates of M (in order to satisfy axiom 3 of an A–group,
+according to which the action of A on G commutes with all conjugations).
+To make this plan work, we need to put some natural restrictions on G and
+A, namely, to assume that the homomorphism i : M −→ M ⊗ A is injective,
+and A+ contains no elements of order 2 (i.e. A+ is a CSA∗ –group).
+    Before proving the main theorem, let us describe the construction of com-
+plete tensor extension of centralizers of G by the ring A. We will assume that
+G is a non-abelian CSA–group and all maximal abelian subgroups of G are
+faithful over the ring A.
+    Let C = {Ci , i ∈ I} be the set of all centralizers of G which satisfies the
+following conditions (S):
+   • any C ∈ C is not an A–module (as a partial abelian A–subgroup in G);
+   • any two centralizers from C are not conjugate in G;
+   • any centralizer in G which is not an A–module is conjugate to an ele-
+     ment of C.
+Then we can form the set HA = {Ci ⊗ A | i ∈ I} and the set of canonical
+embeddings ΦA = {φi : Ci ,→ Ci ⊗ A | i ∈ I}. Consider the tree extension of
+centralizers of this special type:
+                        G∗ = G(C, HA , ΦA ) = G(C, A)
+
+                                      25
+Now we can iterate this construction up to level ω:
+
+                 G = G(0) < G(1) < G(2) < · · · < G(n) < · · ·             (3)
+
+where G(n+1) = G(n) (Cn , A), and the set Cn of centralizers in the group G(n)
+satisfies the condition (S).
+                            S
+Definition 14 The union n∈ω G(n) of the chain (3) is called complete ten-
+sor extension of centralizers of G by the ring A.
+
+Theorem 8 Let A ≥ Z be a ring without additive elements of order 2, and
+let a nonabelian partial A–group G be a CSA–group. If all maximal abelian
+subgroups of G are faithful over A, then the tensor completion of G by A is
+the complete tensor extension of centralizers of G by the ring A.
+
+2 Let us prove by induction on n that each group G(n) from the chain (3)
+meets the conditions of the theorem and satisfies some special universal prop-
+erty. So now we will focus our attention on the tree extension of centralizers
+G∗ = G(C, A), which was described above.
+    By the construction of a tree extension (see section 2), G∗ is the union of
+the chain of groups
+
+               G = G0 ,→ G1 ,→ · · · ,→ Gα ,→ · · · ,→ Gδ = G∗
+
+where the set of centralizers C = {Cα | α < δ} is well-ordered, Cα = CG (vα ),
+and by definition:
+   Gα+1 = Gα (vα , Cα ⊗ A);
+         S
+   Gγ = α<γ Gα for a limit ordinal γ.
+
+Lemma 4 For any 1 6= g ∈ G the centralizer CG∗ (g) of g in G∗ is isomor-
+phic to CG (g) ⊗ A.
+
+    2 By the choice of the set C the centralizer CG (g) is conjugate in G to
+some centralizer Cα = CG (vα ) ∈ C, or CG (g) is an A–module in G. In the
+first case, the centralizer CG (vα ) has to be extended exactly once on the
+level α, and by corollary 2 of lemma 1, the extended centralizer is equal to
+Cα ⊗ A = CG∗ (vα ). Therefore the centralizer CG∗ (g) in G∗ is conjugate to
+CG∗ (vα ), and hence CG∗ (g) ≃ CG (g) ⊗ A. In the second case CG (g) is an
+A–module, so CG∗ (g) ≃ CG (g) ⊗ A.                                        2
+
+                                      26
+Lemma 5 G∗ is a partial A–group, and the action of A on G is defined in
+G∗ .
+
+    2 By lemma 4, in the group G∗ the centralizer M = CG∗ (g) of any
+nontrivial element g ∈ G is isomorphic to the group CG (g) ⊗ A which has
+a canonial structure of an A–module. Using this isomorphism, the action
+of A on CG (g) ⊗ A can be induced on M . By theorem 7, G∗ is a CSA–
+group, hence M is conjugately separated, and we can extend this action
+correctly to all conjugates of M in G∗ to satisfy axiom 3) from the definition
+of an A–group. All maximal abelian subgroups in G∗ are separated, so the
+intersections M1 ∩ M2 are trivial, and we have a well–defined action of A
+on the group G and all its conjugates. Moreover, axioms 1)–4) from the
+definition of an A–group hold in G∗ .                                        2
+
+Lemma 6 G∗ is a CSA–group, and all its maximal abelian subgroups are
+faithful over A.
+
+    2 From the general theory of free products with amalgamation (see [10])
+we know that elements of finite order lie in conjugates of factors. By propo-
+sition 13, the tensor completion M ⊗ A of any maximal abelian subgroup M
+of G has no elements of order 2. Therefore by transfinite induction on the
+construction of the tree extension G∗ we conclude that G∗ has no elements of
+order 2. G∗ is a CSA–group by theorem 7. Moreover, each abelian subgroup
+of G∗ is either an A–module, or infinite cyclic. In both cases, they are faithful
+over A.                                                                        2
+
+Lemma 7 The group G∗ has the following universal property with respect to
+the canonical embedding i : G ,→ G∗ : for any A–group H and any partial
+A–homomorphism f : G −→ H there exists a partial A–homomorphism
+f ∗ : G∗ −→ H such that f = f ∗ ◦ i.
+
+   2 Let M be a maximal abelian subgroup of G, and M ∈ C. Then f (M )
+generates an abelian A–subgroup N in H. Using the universal property of
+tensor completion for abelian groups, we can find a homomorphism ψM :
+M ⊗ A −→ N such that f = ψM ◦ iM , where iM : M ,→ M ⊗ A is the
+canonical embedding. By proposition 8, there exists f ∗ : G∗ −→ H with the
+property f = f ∗ ◦ i.                                                   2
+
+
+                                       27
+    Proof of the theorem. Let G(n+1) = (G(n) )∗ , G0 = G, where G∗ is defined
+                           S
+as above. Then the union n∈ω G(n) = G ⊗ A is the tensor A–completion of
+G. Indeed, G ⊗ A is a partial A–group as a union of partial A–groups, but
+an action of A on G ⊗ A is defined everywhere: if x ∈ G ⊗ A, then x ∈ G(n) ,
+and hence by lemma 5 the action of A on x is defined in G(n+1) . So G ⊗ A
+is an A–group.
+    To prove that G ⊗ A is a tensor completion of G, we need to verify the
+corresponding universal property. Let H be an A–group and f : G −→ H a
+homomorphism. Using lemma 7, we can extend f to an A–homomorphism
+                                                           S
+fn∗ : G(n) −→ H of partial A–groups. But then f ∗ = n<ω fn is an A–
+homomorphism such that f = f ∗ ◦ i, where i is the canonical embedding
+i : G −→ G ⊗ A.                                                             2
+
+Corollary 4 Let G be a non-abelian CSA–group and A ≥ Z a ring without
+additive elements of order 2. Then G is faithful over A iff each its abelian
+subgroup is faithful over A.
+
+Corollary 5 Let G be an A–faithful non-abelian CSA–group and A a ring
+without additive elements of order 2. Then the tensor A–completion of G is
+also a CSA–group.
+
+Theorem 9 Let G be a torsion–free CSA–group and A a ring with a torsion–
+free additive group A+ . Then GA is a torsion–free CSA–group, and the
+canonical map i : G −→ GA is injective. In particular, this is true for a
+hyperbolic torsion–free group G, a group G acting freely on a Λ–tree, and a
+universally free group G.
+
+2 A corollary of the previous theorem and proposition 12.                  2
+
+
+8    A–free groups
+In this section we investigate some basic properties of A–free groups. First
+of all we establish some properties of F A as a CSA–group, then introduce
+canonical forms of elements of F A and describe commuting elements and
+conjugate elements in F A .
+    Let A be a ring with a torsion–free additive group A+ , and FA (X) an
+A–free group with base X. From theorem 2 we know that FA (X) is the
+
+                                     28
+A–completion of the ordinary free group F (X) = F . The group F is a CSA–
+group, and all maximal abelian subgroups of F are faithful over A (because
+they are infinite cyclic), therefore the A–completion F A is the complete tensor
+extension of centralizers of F (theorem 8), and we can apply results of sections
+4 and 5 to F A . In the case A = Q G.Baumslag obtained similar results for
+the group F Q .
+Theorem 10 Let FA (X) be a non–abelian A–free group. Then
+  1. the canonical mapping F −→ FA (X) is injective;
+
+  2. FA (X) is a torsion–free group with conjugately separated maximal abelian
+     subgroups;
+
+  3. FA (X) has no nonabelian solvable subgroups;
+
+  4. FA (X) has no nonabelian Baumslag – Solitar subgroups;
+
+  5. FA (X) has trivial center and is directly undecomposable
+   2 From theorem 8 and proposition 9.                                         2
+   By theorem 8, the group FA (X) is the union of the chain of subgroups:
+
+                     F = F (0) < F (1) < · · · < F (n) < · · ·
+
+where F (n+1) = F (n) (Cn , A), and the set Cn of centralizers in F (n) satisfies
+the condition (S), i.e. any centralizer from Cn is infinite cyclic, no two of
+them are conjugate, and any cyclic centralizer in F (n) is conjugate to one
+from Cn . If C(v) = hvi ∈ Cn , then the element v is called a root element
+of level n; Vn is the set of all root elements of level n such that only one
+generator of the subgroup hvi belongs to Vn ; V = ∪n∈ω Vn . The level function
+ν : FA (X) −→ ω is defined by the rule:
+
+                       ν(g) = n ⇐⇒ g ∈ F (n) \ F (n−1) ,
+
+the number ν(g) is said to be the level of the element g.
+   Let us describe normal forms of elements of FA (X).
+   By section 4, if ν(g) = n, then g can be written in reduced form:
+
+                        g = u1 v1a1 u2 v2a2 · · · um vm
+                                                      am
+                                                         um+1 ,              (4)
+
+                                          29
+where ai ∈ A\Z, vi ∈ Vn , ν(ui ) < n, and if vi = vi+1 , then ui 6∈ viZ . Moreover,
+we can assume that the elements u1 , . . . , um+1 are also in reduced form as
+elements of F (n−1) . This leads us to an explicit reduced form of g. Similarly,
+following section 4, one can introduce canonical and semicanonical forms of
+elements and their explicit analogs.
+
+Propostion 14 Let g and h be in reduced form (4):
+  g = u1 via11 · · · um viamm um+1 , h = w1 vjb11 · · · wk vibkk wk+1 .
+  Then g = h if and only if
+   a) m = k and is = js , as = bs + ns for some ns ∈ Z, s = 1, . . . , k;
+                                          t
+   b) um+1 = vitmm wm+1 , um = vim−1
+                                  m−1
+                                         wm vi−t
+                                               m
+                                                 m −nm
+                                                       , . . . , u1 = w1 vi−t
+                                                                           1
+                                                                              1 −n1
+                                                                                    , where
+      ns is as in 1),ts ∈ Z, s = 1, . . . , m.
+
+Propostion 15 Suppose that g and h are in reduced form as in proposi-
+tion 14 and as = bs for all s. Then g = h iff g can be obtained from h by a
+finite number of commutations of the type v a v t = v t v a , a ∈ A, v ∈ Vn , t ∈ Z.
+
+The following proposition gives us a description of commuting elements in
+FA (X) which is completely analogous to the case of ordinary free groups.
+
+Propostion 16 Let FA (X) be a nonabelian A–free group. Then:
+   1. elements x, y ∈ FA (X) commute if x = z a , y = z b for some z ∈ FA (X)
+      and a, b ∈ A;
+
+   2. centralizers in FA (X) are exactly free A–modules of rank 1.
+
+    2 By theorem 8, FA (X) is the complete tensor extension of centralizers
+by the ring A. According to this construction, if g ∈ FA (X) is an element of
+level α, then by lemma 4 C(g) ≃ Z ⊗Z A ≃ A, and the centralizer C(g) is
+not extended on the next levels. Hence 2) is proved, and 1) follows from 2).
+2
+   The reduced form (4) of an element g is called cyclically reduced if any
+cyclic permutation of this form is also reduced.
+
+Theorem 11 Let g be a cyclically reduced element from the A–free group
+FA (X). Then
+
+                                               30
+    1. if g is conjugate to an element h, then h has the same level as g, and
+       the level of the conjugating element is not greater than that of g;
+
+    2. if g is conjugate to a cyclically reduced element p1 · · · pn , n ≥ 2, of level
+       k, then g can be obtained by permuting p1 , . . . , pn cyclically and then
+       conjugating by a root element of level k − 1.
+
+    2 Follows from lemma 2 from section 6 and the construction of the com-
+plete tensor extensions of centralizers of F .                          2
+
+
+9      Open problems
+Question 1 Using extensions of centralizers, construct the A–completions
+of free solvable groups and groups of the type F/[N, N ] (these groups are not
+CSA–groups).
+
+Question 2 Prove that the A–completion of a free nonabelian nilpotent (solv-
+able) group can be non–nilpotent (non–solvable).
+
+   The affirmative answer to question 3 will show the necessity to define the
+notion of A–completion relatively to a variety of groups.
+Question 3 Describe the tensor A–completion relatively to the varieties of
+nilpotent and solvable groups.
+Let us mention that Hall’s A–completion of a nilpotent group could be dif-
+ferent from that involved in question 4.
+   Finally we formulate some algorithmic problems for free A–groups over
+an effective [18] integral domain A of characteristic 0.
+Question 4 Prove that in the A–free group F A the word problem and the
+conjugacy problem are algorithmically decidable.
+
+Question 5 Is the Diophantine problem over an A–free group decidable?
+
+Question 6 Is the universal theory of an A–free group decidable?
+
+If the domain A is residually Z, then the answres to questions 5, 6 and 7 are
+affirmative.
+
+                                          31
+References
+ [1] Amaglobeli M.G. On commutativity of the functor of tensor completion
+     with basic group operations. Omsk University, N7, 1992, p.1–11.
+
+ [2] Amaglobeli M.G., Remeslennikov V.N. Exponential groups: faithful A–
+     completion. Omsk University, N11, Omsk, 1993, p. 1–20 (in Russian).
+
+ [3] Bass H. Groups acting on non–archimedian trees. Arboreal group theory,
+     1991, p. 69–130.
+
+ [4] Baumslag G. Some aspects of groups with unique roots. Acta Math.,
+     1960-, 104, p. 217–303.
+
+ [5] Baumslag G., Solitar D. Some two–generator one–relator non–Hopfian
+     groups. Bull. Amer. Math. Soc. 68 (1962), p. 199–201.
+
+ [6] Ghys E., P. de la Harpe Sur les groupes hyperboliques d’apres Mikhael
+     Gromov. Progress in Mathematics, v. 83, 1990.
+
+ [7] Hall P. Nilpotent groups. Canad. Math. Congress, Edmonton, 1957.
+
+ [8] Hartley B. The residual nilpotence of wreath products. Proc. London
+     Math. Soc., 20 (1970), 365–392.
+
+ [9] Lyndon R. Groups with parametric exponents. Trans. Amer. Math. Soc.
+     – 1960 –v. 96 – p. 518–533.
+
+[10] Magnus W., Karras A., Solitar D. Combinatorial group theory. Inter-
+     science publ., 1966, p. 1–444.
+
+[11] Mal’cev A.I. Torsion free nilpotent groups. Izv. AN SSSR, Ser. Math.
+     – 1949 – 13, N3, p. 201–212.
+
+[12] Mal’cev A.I. On free solvable groups. Dokl. Ac. Nauk SSSR, 1960, v.
+     130, N3, p. 495–498.
+
+[13] Myasnikov A.G. Centroid of a group and its links with endomorphisms
+     and rings of scalars. Nova Journal of Algebra and Geometry, 1994 (to
+     appear).
+
+
+                                    32
+[14] Myasnikov A.G. Model–theoretic problems of algebra. Dissertation,
+     Omsk, 1992.
+
+[15] Myasnikov A.G., Remeslennikov V.N. Exponential groups I: foundations
+     of the theory and tensor completion. Siberian Math. J., 1994, v.5.
+
+[16] Myasnikov A.G., Remeslennikov V.N. Exponential groups: iterated tree
+     extensions of centralizers. Omsk University, N18, Omsk, 1994, p. 1–30.
+
+[17] Remeslennikov V.N. E–free groups. Siberian Math. J.– 1989– v.30, N6,
+     p. 153–157.
+
+[18] Rabin M.O. Computable algebra, general theory and theory of com-
+     putable fields. Trans. Amer. Math. Soc., 1960, 95, N2, p. 341–360.
+
+
+
+
+                                    33
+
