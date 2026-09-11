@@ -27,14 +27,19 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('n', type=int)
     parser.add_argument('--shards', type=int, default=6)
+    parser.add_argument('--workspace-gib', type=int, default=8)
     parser.add_argument('--output-prefix')
     args = parser.parse_args()
-    assert 1 <= args.shards <= 10  # At most80GiB combined GAP workspace ceilings.
+    assert 1 <= args.shards <= 10
+    assert 1 <= args.workspace_gib <= 32
+    assert args.shards*args.workspace_gib <= 84  # <=90.2 GB; allow process overhead below100GB.
     n = args.n
     certificate = ROOT/f'results/20.100-n{n}-certificate.g.gz'
     prefix = Path(args.output_prefix) if args.output_prefix else ROOT/f'results/20.100-n{n}'
     prefix = prefix.resolve()
     generator_log = ROOT/f'results/20.100-n{n}-generator.log'
+    print(json.dumps({'status': 'CHECKING_CERTIFICATE_INTEGRITY', 'n': n,
+                      'shards': args.shards, 'workspace_gib_each': args.workspace_gib}), flush=True)
     completed = [json.loads(line) for line in generator_log.read_text().splitlines()
                  if line.startswith('{') and 'CERTIFICATE_COMPLETE_PENDING_VERIFICATION' in line]
     assert len(completed) == 1
@@ -52,6 +57,16 @@ def main():
             node_count += line.startswith(b'CheckNode(')
         assert line == f'FinishProof({node_count});\n'.encode()
     assert node_count == expected['states']
+    integrity_path = Path(str(prefix)+'-integrity.json')
+    assert not integrity_path.exists(), 'preserve any previous integrity report'
+    integrity = {'status': 'INTEGRITY_CHECKED_PENDING_MATHEMATICAL_VERIFICATION',
+                 'observed_utc': datetime.now(timezone.utc).isoformat(),
+                 'n': n, 'prime_bound': n+1, 'states': node_count,
+                 'leaves': expected['leaves'], 'edges': expected['edges'],
+                 'certificate_sha256': digest, 'uncompressed_sha256': uncompressed.hexdigest(),
+                 'shards': args.shards, 'workspace_gib_each': args.workspace_gib}
+    integrity_path.write_text(json.dumps(integrity, indent=2)+'\n')
+    print(json.dumps(integrity), flush=True)
     processes, handles, jobs = [], [], []
     env = dict(os.environ, OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1')
     checker = ROOT/'scripts/verify_20_100_shard.g'
@@ -67,7 +82,7 @@ def main():
             log = Path(f'{prefix}-shard{index}-verifier.log')
             handle = log.open('w')
             command = [str(ROOT/'gap-4.16.1/gap'), '-l', str(ROOT/'gap-4.16.1'),
-                       '-q', '-b', '-T', '-m', '128m', '-o', '8g', '-c',
+                       '-q', '-b', '-T', '-m', '128m', '-o', f'{args.workspace_gib}g', '-c',
                        f'ProofShardIndex:={index};ProofShardCount:={args.shards};',
                        str(checker), str(certificate)]
             handle.write(json.dumps({'certificate_sha256': digest, 'checker_sha256': checker_digest,
@@ -78,11 +93,18 @@ def main():
             processes.append(process)
             handles.append(handle)
             jobs.append({'index': index, 'pid': process.pid, 'log': str(log), 'command': command})
-        state_path.write_text(json.dumps({'started_utc': datetime.now(timezone.utc).isoformat(),
-                                         'jobs': jobs, 'certificate_sha256': digest}, indent=2)+'\n')
+        state = {'started_utc': datetime.now(timezone.utc).isoformat(),
+                 'jobs': jobs, 'certificate_sha256': digest,
+                 'uncompressed_sha256': uncompressed.hexdigest(),
+                 'workspace_gib_each': args.workspace_gib,
+                 'runner_sha256': sha256(Path(__file__)),
+                 'controller_pid': os.getpid(), 'status': 'VERIFYING'}
+        state_path.write_text(json.dumps(state, indent=2)+'\n')
         print(json.dumps({'status': 'VERIFYING_SHARDS', 'n': n, 'jobs': jobs}), flush=True)
-        for process in processes:
-            assert process.wait() == 0
+        for process, job in zip(processes, jobs):
+            job['returncode'] = process.wait()
+            state_path.write_text(json.dumps(state, indent=2)+'\n')
+            assert job['returncode'] == 0
     finally:
         for process in processes:
             if process.poll() is None:
@@ -117,6 +139,9 @@ def main():
                'checker_sha256': checker_digest, 'shards': rows, 'totals': totals,
                'completed_utc': datetime.now(timezone.utc).isoformat()}
     summary_path.write_text(json.dumps(summary, indent=2)+'\n')
+    state['status'] = 'VERIFIED'
+    state['completed_utc'] = summary['completed_utc']
+    state_path.write_text(json.dumps(state, indent=2)+'\n')
     print(json.dumps(summary, indent=2), flush=True)
 
 

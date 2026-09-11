@@ -1,0 +1,4 @@
+{"certificate_sha256": "63fedef4dfca36a5fc7c12b3f5bad577c4250a6fe12fba1ac908207f4b90238c", "checker_sha256": "a5e698d9e27d17096eff7898f93781edd607db41d47b7b500d1a0783416f29de", "command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "14g", "-c", "ProofShardIndex:=1;ProofShardCount:=2;", "/project/scripts/verify_20_100_shard.g", "/project/results/20.100-n4-certificate.g.gz"]}
+START n=4 prime_bound=5
+PASS_SHARD n=4 index=1 shards=2 total_nodes=227 checked_nodes=113 leaves=
+29 edges=504 relation_implications=1874 cpu_ms=91

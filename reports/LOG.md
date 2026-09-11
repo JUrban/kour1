@@ -1066,3 +1066,36 @@ No n=7 proof or completed certificate is claimed. Next work should
 prefer structural composite-class arguments or other unresolved entries
 over repeating completed small catalogues. All artifacts and commits
 remain local. The48-hour goal is active, ending2026-09-12 20:56:46 UTC.
+
+## 2026-09-11T11:39:59.169233+00:00 — Completed n=7 generation and a limit of the14.3 tests
+
+The20.100 generator exited zero with42,891,332 states,5,435,268 leaves
+and786,577,344 edges. Full gzip preflight and a separate full reporter
+read pass. The canonical summary now reports VERIFYING: six independent
+GAP workers, started11:12:29 UTC, and no completed shard. The unchanged
+mathematical checker is bound to the full certificate by both hashes.
+Six14GiB workspace ceilings give84GiB combined, about90.2GB before
+process overhead. The earlier generator and other main searches are
+finished. A two-worker n=4 integration run exits zero with unchanged
+mathematical counts; a seven-by-fourteen-GiB request is rejected before
+artifacts. All19 prior adverse reporter controls pass. A new progress
+snapshot checks live commands/stdout, hashes, partition state and RSS
+without repeatedly decompressing the complete certificate. No n=7 proof
+is counted until every worker and the aggregate pass.
+
+For14.3, the central product of semidihedral16 with Dic3 identifies
+their central involutions and gives SmallGroup(96,123). Its central
+nonsquare passes both real-character and odd-class-root criteria,
+so those criteria are jointly insufficient to force a central square.
+Nevertheless a degree-four character with field Q(sqrt(-2)) forces
+every central integral unit to be symmetric: its scalar and inverse
+are algebraic integers, hence units in that imaginary quadratic field,
+whose only units are plus or minus one. The group, character and
+number-field arguments are written with a logical audit. Independent
+GAP checks on the actual96-element group, including21 direct
+Frobenius--Schur indicators, pass with actual exit0. This is a positive
+example and a limitation of a method, not a new complete resolution.
+
+The complete-candidate count remains21, with outside review and further
+novelty checks pending. All artifacts and commits remain local. The
+48-hour goal remains active through2026-09-12 20:56:46 UTC.

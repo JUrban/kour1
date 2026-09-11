@@ -1,0 +1,56 @@
+{
+  "started_utc": "2026-09-11T11:10:04.788980+00:00",
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 77010,
+      "log": "/project/results/20.100-n4-memory-integration-shard0-verifier.log",
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "14g",
+        "-c",
+        "ProofShardIndex:=0;ProofShardCount:=2;",
+        "/project/scripts/verify_20_100_shard.g",
+        "/project/results/20.100-n4-certificate.g.gz"
+      ],
+      "returncode": 0
+    },
+    {
+      "index": 1,
+      "pid": 77011,
+      "log": "/project/results/20.100-n4-memory-integration-shard1-verifier.log",
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "14g",
+        "-c",
+        "ProofShardIndex:=1;ProofShardCount:=2;",
+        "/project/scripts/verify_20_100_shard.g",
+        "/project/results/20.100-n4-certificate.g.gz"
+      ],
+      "returncode": 0
+    }
+  ],
+  "certificate_sha256": "63fedef4dfca36a5fc7c12b3f5bad577c4250a6fe12fba1ac908207f4b90238c",
+  "uncompressed_sha256": "c5c9cea0bf4ed489450ac8ff92ae9b608a2d233c086e0234706f83088e29a629",
+  "workspace_gib_each": 14,
+  "runner_sha256": "ab8477c2267f6b0984176ea470aa7325ec1797508bac4cc63b2d702608522095",
+  "controller_pid": 77009,
+  "status": "VERIFIED",
+  "completed_utc": "2026-09-11T11:10:06.691926+00:00"
+}
