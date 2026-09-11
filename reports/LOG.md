@@ -490,3 +490,11 @@ new-priority claims, consistently with previous rediscoveries. No
 exact earlier published tensor-square answer was located in the limited
 search; this does not establish novelty. The working candidate count
 remains13, all pending outside review and further literature work.
+
+## 2026-09-11T04:02:07.259346+00:00 — 19.108 first possible order and a general orbit lemma
+
+Confirmed GAP4.16.1 remains available. Wilde2013 already covers all odd groups through p^9 and characters through degree p^3, so no duplicate small-group screen was launched. The exact C27-square action search finishes with571 subgroup classes and1,596 regular orbits, zero failures. Independent integer reconstruction and174,312 exact Fourier sums agree; nine actual affine groups give197 matching character values and eight known p=2 violating elements. The initial assertion stop due to the documented permissive size option is retained and excluded.
+
+The computed invariance led to a proof for every odd prime: an orbit of size p^4 in (Z/p^3)^2 is invariant under p^2 translations. Combined with Wilde's prior theorems this proves the support-order bound for groups of order p^10 with an abelian normal subgroup of size at least p^6, including nonsplit extensions. The full problem and novelty remain open; complete-candidate count stays13.
+
+Order256 snapshot: 48,699 counts,0 equalities,89 reversals,8 live,8 complete ranges; all log checks PASS.

@@ -414,3 +414,13 @@ not audited. Our Clifford argument and finite controls are independent
 of the detailed Schur-cover presentation theorem. Both tensor-square
 answers are retained as prior-theorem consequences with no new-priority
 claim, not as assertions that the cited papers explicitly resolve19.9.
+
+## 19.108
+
+Wilde2013, https://arxiv.org/abs/1307.5780 : introductory theorems,
+Lemma2.7 with proof, and Section4's proof of TheoremC read; external
+character-five theorem not independently audited. PDF/text cached.
+Malle--Navarro--Tiep2026, https://arxiv.org/abs/2605.04513 : introduction
+read; its single-power codegree conjecture is distinct from19.108.
+The new working orbit lemma and its partial consequence have no
+established novelty and do not resolve the full Notebook question.

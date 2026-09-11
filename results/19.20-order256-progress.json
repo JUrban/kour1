@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-11T03:30:26.154096+00:00",
+  "observed_utc": "2026-09-11T04:02:07.120145+00:00",
   "workers": [
     {
       "low": 1,
@@ -37,17 +37,17 @@
       "low": 7013,
       "high": 10518,
       "pid": 12131,
-      "live_gap": true,
-      "stdout_matches_range_log": true,
-      "counted": 3081,
+      "live_gap": false,
+      "stdout_matches_range_log": false,
+      "counted": 3505,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
-      "done": false,
-      "last_counted_id": 10093
+      "done": true,
+      "last_counted_id": 10518
     },
     {
       "low": 10519,
@@ -117,17 +117,17 @@
       "low": 24543,
       "high": 28048,
       "pid": 12144,
-      "live_gap": true,
-      "stdout_matches_range_log": true,
-      "counted": 3448,
+      "live_gap": false,
+      "stdout_matches_range_log": false,
+      "counted": 3503,
       "equalities": 0,
       "reversals": 2,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
-      "done": false,
-      "last_counted_id": 27993
+      "done": true,
+      "last_counted_id": 28048
     },
     {
       "low": 28049,
@@ -135,7 +135,7 @@
       "pid": 12152,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 1377,
+      "counted": 1549,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -143,7 +143,7 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 29425
+      "last_counted_id": 29597
     },
     {
       "low": 31555,
@@ -151,7 +151,7 @@
       "pid": 12156,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 2408,
+      "counted": 2709,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -159,7 +159,7 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 33962
+      "last_counted_id": 34263
     },
     {
       "low": 35061,
@@ -167,7 +167,7 @@
       "pid": 12159,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 2411,
+      "counted": 2715,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -175,7 +175,7 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 37471
+      "last_counted_id": 37775
     },
     {
       "low": 38567,
@@ -183,7 +183,7 @@
       "pid": 12160,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 2457,
+      "counted": 2760,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -191,7 +191,7 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 41023
+      "last_counted_id": 41326
     },
     {
       "low": 42073,
@@ -199,7 +199,7 @@
       "pid": 12166,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 1792,
+      "counted": 2108,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -207,7 +207,7 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 43864
+      "last_counted_id": 44180
     },
     {
       "low": 45579,
@@ -215,7 +215,7 @@
       "pid": 12172,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 2591,
+      "counted": 2892,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -223,7 +223,7 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 48169
+      "last_counted_id": 48470
     },
     {
       "low": 49085,
@@ -231,7 +231,7 @@
       "pid": 12171,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 2631,
+      "counted": 2931,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -239,7 +239,7 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 51715
+      "last_counted_id": 52015
     },
     {
       "low": 52591,
@@ -247,21 +247,21 @@
       "pid": 12174,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 2631,
+      "counted": 3003,
       "equalities": 0,
-      "reversals": 83,
+      "reversals": 85,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 55222
+      "last_counted_id": 55594
     }
   ],
-  "total_counted": 45851,
+  "total_counted": 48699,
   "total_equalities": 0,
-  "total_reversals": 87,
-  "live_workers": 10,
-  "completed_workers": 6,
+  "total_reversals": 89,
+  "live_workers": 8,
+  "completed_workers": 8,
   "all_log_checks_pass": true
 }

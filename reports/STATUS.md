@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-11T03:34:52.160784+00:00.
+Updated: 2026-09-11T04:02:07.258247+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **13**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), and **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T03:30:26.154096+00:00, the order256 extension has 45,851 counts, zero equality hits, 87 reversals, 10 verified live workers and 6 completed ranges. All log checks pass.
+- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T04:02:07.120145+00:00, the order256 extension has 48,699 counts, zero equality hits, 89 reversals, 8 verified live workers and 8 completed ranges. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
@@ -86,6 +86,8 @@ and automorphism order. Five smaller controls also agree. None of the
 
 ## Additional constructions and exclusions
 
+**19.108 partial theorem:** For every odd prime p, the support-order divisibility holds for groups of order p^10 having an abelian normal subgroup of order at least p^6. An elementary orbit lemma proves the extension beyond Wilde's prior bounds; nonsplit extensions are included. The p=3 screen covers 571 subgroup classes and 1,596 regular orbits, with independent integer replay, 174,312 exact Fourier sums and nine actual character controls. The full question remains unresolved; no novelty claim or extra complete-candidate count. See `research/19.108-partial.md` and `research/19.108-review.md`.
+
 **19.9(a),(b):** Complete deductions from prior theorems: Sp(10,Z) has a non-residually-finite universal central extension, so its finitely generated tensor square is nonlinear; every B_n tensor B_n, n>=4, embeds in GL_(1+n(n-1)/2+2^n)(Q(q,t)) using its Clifford-detected Hopf kernel. Exact rational controls and26 independent GAP spin-matrix cases pass. The deductions are retained as prior-theorem consequences and excluded from the13-candidate new-priority count; no earlier explicit tensor-square answer or novelty is asserted. See `research/19.9-proof.md` and `research/19.9-review.md`.
 
 
@@ -148,7 +150,7 @@ as a substantive new resolution of the intended problem.
 ## Next work
 
 1. Revalidate running jobs and certify any hits.
-2. Continue novelty and mathematical audits of all eleven candidate resolutions.
+2. Continue novelty and mathematical audits of all thirteen candidate resolutions.
 3. Investigate 19.20 equality beyond the completed range, using the verified reverse inequality as a structural lead.
 4. Expand beyond the initial involution graph range and continue surveying older problems.
 
