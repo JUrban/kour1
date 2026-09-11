@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T13:37:36.216447+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T13:59:10.577429+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 21.55 | Hall–Higman exponent bound and characteristic-p unipotent matrices. | Negative prior consequence for every p>=5: at p=7 the upper limit is at most 1/log_2(7)<1. Printed logarithm base verified; exact asymptotic value not claimed. Excluded from new priority. |
 | 17.87 | Universal central extension of a perfect group of intermediate growth. | Complete prior consequence: finitely generated group of intermediate growth with H1=H2=0. Finite-generation, universal-extension and arbitrary-central-kernel growth proofs retained. Excluded from possible new priority. |
 | 16.68 / 16.69(b) | Restrict Thom almost laws to SO(3), and use zero exponent sums to remove quaternion scalar factors. | Prior negative deductions for SO(3,R) and all nonzero quaternions; explicit Re lower bound 7/8. Excluded from the new count. The PSL2 cases and 16.69(a) remain unresolved here. |
 | 16.46 | Fix an order-three conjugacy representative and solve four independent involution constraints in each finite target. | All 19 targets A5–A8 and PSL2(q), prime powers 4<=q<=31, admit no nontrivial homomorphism. Independent literal permutations match A5–A7 with 35,904 relator checks. General question unresolved; no novelty claim. |

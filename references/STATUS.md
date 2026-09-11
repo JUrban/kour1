@@ -790,3 +790,26 @@ abstract only, https://www.degruyterbrill.com/journal/key/jgth/11/3/html?lang=en
 It states countable amalgam suffices. Full text not obtained; not
 needed for the 19.3(e) proof. Third-party authorship snippets were
 not trusted over the primary journal issue.
+
+
+## 21.55 and the afternoon source scope
+
+The printed page 175 was visually checked. Hall–Higman (1956),
+https://doi.org/10.1112/plms/s3-6.1.1 , Theorem A's odd-prime
+Sylow-exponent bound implies the negative result in
+`research/21.55-prior-result.md`. The original full proof was not
+obtained. Its precise statement was checked in Gross (1965),
+https://msp.org/pjm/1965/15-4/pjm-v15-n4-p11-s.pdf , printed page
+1221 and beginning of 1222, and Khukhro (2009),
+https://eprints.maths.manchester.ac.uk/2079/1/EART131.pdf ,
+introduction's definition and Section 2 Theorem 1 with its historical
+explanation, pages 264–265. Neither later proof was fully audited.
+The deduction requires no irreducibility assumption. No new count.
+
+Detailed reading limits for Rossi–Sambale 2021 (19.33),
+Gonçalves–Nasybullov 2017/2019 (19.34),
+Bhattacharyya–Halder–Lazarovich–Mj 2026 (19.42), and
+Güloğlu–Ercan June 2026 (21.56), plus the shorter 19.22,
+19.26 and 19.30 leads, are in
+`research/triage-2026-09-11-afternoon.md`. No general conclusion
+was imported after removing an additional source hypothesis.

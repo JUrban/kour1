@@ -1,0 +1,27 @@
+{
+  "observed_utc": "2026-09-11T13:59:10.577429+00:00",
+  "status": "PRIOR_NEGATIVE_DEDUCTION",
+  "problem": "21.55",
+  "answer": "negative as printed: limsup m_n(7)/log_2(n) <= 1/log_2(7) < 1",
+  "scope": "All fixed characteristics p>=5 excluded; no claim of a sharp asymptotic limit or result for p=2,3.",
+  "imported_theorem": "Hall-Higman Theorem A; precise odd-prime statement checked in Gross 1965 and Khukhro 2009, original 42-page proof not obtained.",
+  "logical_audit_points": 10,
+  "new_candidates_added": 0,
+  "externally_reviewed": false,
+  "reading_scope": [
+    "research/21.55-prior-result.md",
+    "research/triage-2026-09-11-afternoon.md"
+  ],
+  "sha256": {
+    "docs/21tkt.pdf": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911",
+    "references/cache/notebook-page175-2155.png": "723ebbf13e90b34127a3bfb49906f938855fe865dcb92ec3758d4d5f57eea41a",
+    "references/cache/gross-2-length-1965.pdf": "7caf6e387a98861f38fa0d4bcd943edd81171ae8b13f7fec8dca25cea10f4775",
+    "references/cache/khukhro-p-length-survey-2009.pdf": "39641025777c1f423de4e435e6cfcc2956c55ae6868e1efc6bf633020ef95026",
+    "references/cache/rossi-sambale-restrictions-2021.pdf": "fdc041fb5b3f3fc198cf97c6a5d1b88ba2aa13667b0d3295e4615a8f7b74daa5",
+    "references/cache/goncalves-nasybullov-twisted-2017.pdf": "b049f39f2d779748e4c2ab694db8537526f037676abdde1f8087231d5ebfbb9f",
+    "references/cache/bhattacharyya-halder-lazarovich-mj-fibers-2026.pdf": "cddb12b90c66eb8b2bf6d1bcf82afd1c0f2115624080d58f961f0b3a113b1236",
+    "research/21.55-prior-result.md": "85ede9aa9c4d2d2cd5a550d2dcccaf465d09ded9f5d7145fed746721b71337a5",
+    "research/21.55-review.md": "25a8bf366e184ad3c58b54c6604d0ee83781c588d954b574bd045076109e02d0",
+    "research/triage-2026-09-11-afternoon.md": "bfcb37884729886f4e6ae335e2ef63446d09a056b510fedf3ed7e7a71833158f"
+  }
+}

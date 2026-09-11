@@ -1308,3 +1308,27 @@ At 13:32 UTC all six 20.100 n=7 verification workers were live,
 with 5,320,000 nodes checked and 8,164,596 KiB combined RSS.
 No shard had finished. All work and commits remain local; the
 48-hour goal continues through 2026-09-12 20:56:46 UTC.
+
+
+## 2026-09-11T13:59:10.577429+00:00 — Hall–Higman refutes the printed 21.55 normalization
+
+For every p-element in GL(n,p^f), (x-I)^n=0, so its order divides
+p^ceil(log_p(n)). Hall–Higman's non-Fermat odd-prime exponent
+bound therefore gives m_n(7^f)<=ceil(log_7(n)), and the proposed
+ratio has upper limit at most 1/log_2(7)<1. The coarser theorem
+also rules out every p>=5. The printed base 2 was visually
+confirmed. Exact source hypotheses and a ten-point logical audit
+are recorded; the original long Hall–Higman proof is imported.
+This is a prior-theorem consequence, excluded from the 24 possible
+new resolutions, all still pending outside review and novelty work.
+
+Recorded detailed source reading scopes for 19.22, 19.26, 19.30,
+19.33, 19.34, 19.42 and 21.56. The 2026 finite-fiber and fixing-size
+papers retain additional hypotheses; no general answer is claimed.
+Published character-restriction searches already cover substantial
+small-group and simple-group ranges, so no redundant run was started.
+
+At 13:53 UTC all six 20.100 n=7 GAP verification workers were live,
+with 6,040,000 nodes checked and 9,214,196 KiB combined RSS.
+No shard had completed. Work and commits remain local; the active
+48-hour goal continues through 2026-09-12 20:56:46 UTC.
