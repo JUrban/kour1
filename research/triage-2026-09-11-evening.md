@@ -103,3 +103,87 @@ The earlier detailed Issue13 exclusions in
 `older-triage-2026-09-11.md` still apply, notably to13.3,13.14--15,
 13.17,13.30,13.51 and13.54. Repeating those incomplete routes does
 not produce additional candidates.
+
+## Issue 14 follow-up, 19:15 UTC
+
+- **14.101:** Amelio's periodic-quotient construction does not provide
+  the requested saturation by finite simple groups of bounded Lie rank.
+  Definition 4.47 requires the initial group to contain no subgroup of
+  order four; finite nonabelian simple factors violate this requirement.
+  Definition 4.47, Remark 5.13 and Theorem 6.7 were checked in the cached
+  v2 source already used for 10.62. Shlepkin's 2018 rank-one result,
+  DOI 10.1007/s10469-018-9480-y, is a prior positive special case; only
+  its primary abstract was read. The indexed p.290 discussion of
+  Lytkina--Mazurov, *Characterizations of Simple Linear Groups in the
+  Class of Periodic Groups* (2017), also distinguishes the locally
+  finite case from a possible non-locally-finite counterexample. Its
+  proof was not audited. The 2008 Lytkina--Tukhvatullina--Filippov
+  paper, DOI 10.1007/s11202-008-0031-y, was located only as a citation.
+- **14.97:** The Sysak factorization theorem was already identified in
+  `triage-2026-09-11-midday.md`; rediscovering it adds no result. A small
+  GAP experiment also refuted the proposed obstruction that a q-subgroup
+  can never be contained in the product of two finite p-subgroups for
+  distinct primes: S4 has such a C2 inside a product of two C3 subgroups.
+  This experiment was not retained as a formal certificate and is not
+  used in any proof. It only abandons that proposed obstruction.
+- **14.68:** Known nonlinearizable actions of connected reductive
+  groups do not automatically furnish a nonlinearizable polynomial
+  involution. Likewise, birational involutions over nonclosed fields
+  do not answer this polynomial question over C. The Numdam metadata
+  for *Linearizing some Z/2Z actions on affine space* (1990) was located,
+  but no general theorem was established here.
+- **14.12:** No applicable primary theorem resolving conjugacy
+  separability of all braid groups was found. Older discussion of B3
+  and new work on subgroup membership do not settle the general case.
+- **14.21:** The ordinary-word equations here differ from the pro-p
+  word equations of 17.105. The indexed p.751 passage of *Strong
+  conciseness and equationally Noetherian groups*, Annali di Matematica
+  Pura ed Applicata 205 (2026), 749--758, concerns conciseness in
+  completions of dense equationally Noetherian groups; it does not
+  assert that those completions are equationally Noetherian. Only the
+  indexed passage, not its proof, was consulted.
+- **14.16:** Embedding a group with infinite verbal width in a group of
+  intermediate growth need not preserve verbal width. A possible route
+  through central extensions of the Grigorchuk group would need both
+  an intermediate-growth proof and a lower bound for ambient word
+  length of the relevant central elements; neither was supplied.
+- **14.67:** The elementary argument with a central commutator set
+  adds no general case beyond known normal-commutator-set results
+  (Yadav, arXiv:0905.2674, Lemma 2.1; abstract and indexed introduction
+  only). The existing bounded search and prime-class proof remain the
+  substantive work on this question in this repository.
+
+These are scope checks and abandoned routes, not additional solutions.
+
+## Issue 15 source boundaries, 19:20 UTC
+
+- **15.3:** Isaacs--Loukaki--Moreto, *Homogeneous products of characters*,
+  author-hosted https://www.uv.es/amoquin/13.pdf, already covers p-groups
+  and p-special characters; its introduction reports that a counterexample
+  to Isaacs's irreducible-product conjecture must have Fitting height at
+  least four. Only the introduction and theorem statements were read.
+- **15.77:** Banakh's survey arXiv:1111.1015v1, section 8, gives the
+  relevant result under GCH and under a sufficient Erdos--Rado partition
+  relation. It explicitly distinguishes the ZFC question. The survey
+  contains no proofs. Its full section 8 was read here, not the original
+  Gryshko--Khelif proofs. The PDF and extracted text are cached.
+- **15.94:** Chen--Lodha, arXiv:2510.26073v2 (1 December 2025), proves
+  normal rank greater than one for a free product of nontrivial
+  left-orderable groups. The abstract and author-hosted introduction
+  explicitly leave the arbitrary three-factor assertion unresolved.
+  The 36-page proof was not audited; the result cannot be applied after
+  silently discarding the orderability hypotheses.
+- **15.63:** Donghi Lee, arXiv:0802.0584, and the more recent work
+  arXiv:2512.13967 concern rank two for the decision algorithm; the
+  primary abstract of the former and indexed discussion of the latter
+  do not provide an arbitrary-rank algorithm. A length-reducing
+  Whitehead move need not preserve positivity without a separate proof.
+- **15.102:** The published root classifications for words x^k y^l do
+  not settle arbitrary words outside the commutator subgroup. A normal
+  root's abelianization is restricted, but this does not bound the
+  length or the number of conjugacy classes of the roots.
+- **15.64:** A possible uniform bound for actions via bounded-dimensional
+  automorphism groups would require a uniform bound on conjugacy orbits
+  inside the actual automorphism subgroup. Conjugacy in the ambient GL
+  alone is insufficient. No such general theorem or counterexample was
+  obtained in this screen.
