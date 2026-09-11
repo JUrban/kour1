@@ -1332,3 +1332,35 @@ At 13:53 UTC all six 20.100 n=7 GAP verification workers were live,
 with 6,040,000 nodes checked and 9,214,196 KiB combined RSS.
 No shard had completed. Work and commits remain local; the active
 48-hour goal continues through 2026-09-12 20:56:46 UTC.
+
+
+## 2026-09-11T14:31:10.119041+00:00 — Complete affirmative candidate for 19.56
+
+The hyperfocal theorem supplies primary-input Sylow generation in a
+perfect group. The order hypothesis then centralizes the Frattini
+subgroup of a smallest nonsoluble example. In its minimal-simple
+central quotient, explicit local matrix subgroups give a restricted
+commutator mapping to an involution. Baer–Suzuki and an abelian cyclic
+preimage produce a forbidden pair. No quotient inheritance or closure
+of commutator values under powers is assumed. Fourteen logical audit
+points and exact source-reading limits are recorded.
+
+All 586 groups through order64 plus seven named cases were checked:
+159,220 primary-input pairs and843 Sylow generation equalities pass.
+The 24 matrix examples,17,472 Suzuki additive identities and three
+central lifts pass. Seven independently constructed Python groups
+agree exactly, with176,580 multiplication entries and twelve extra
+prime-field controls. The initial trivial-group run failed despite
+GAP returning OS status zero; its script/log/record are preserved and
+excluded. The final clean run, completion markers, hashes and coverage
+all pass.
+
+Monakhov's soluble restricted theorem and ordinary-commutator theorem,
+and Bastos–Monetta's unrestricted coprime theorem and local strategy,
+are credited. None of the inspected statements directly gives the
+Notebook's weaker hypothesis. The portfolio now has25 complete
+candidates; outside review and further priority checking remain pending.
+
+At14:21 UTC all six20.100 n=7 workers were live, with7,010,000 nodes
+checked and10,343,156 KiB combined RSS. No shard had completed.
+The 48-hour goal remains active through2026-09-12 20:56:46 UTC.

@@ -813,3 +813,23 @@ Güloğlu–Ercan June 2026 (21.56), plus the shorter 19.22,
 19.26 and 19.30 leads, are in
 `research/triage-2026-09-11-afternoon.md`. No general conclusion
 was imported after removing an additional source hypothesis.
+
+
+## 19.56 restricted coprime commutators
+
+Exact reading scopes and primary-source links are recorded in
+`research/19.56-review.md`, with25 files hash-bound by the summary.
+The published Broto–Castellana–Grodal–Levi–Oliver Lemma2.2 and full
+proof on3804 give the needed hyperfocal theorem. Thompson's exact
+minimal-simple list is checked in primary Bastos–Monetta Theorem17
+and Guo–Revin; the original AMS download returned403, and the full
+classification is imported. Bray–Bäärnhielm page1 supplies the Suzuki
+matrix realization, checked directly. Guralnick–Malle page1 gives
+the exact Baer–Suzuki statement; its classical proof is imported.
+
+All four pages of both Monakhov2017 papers and all fifteen pages of
+Bastos–Monetta arXiv:1811.10025v1 were read. Their related theorems
+and proof strategies are credited, with input/output restrictions
+distinguished. Bastos–Monetta's local subgroup result is prior.
+Li–Lei–Gao2022 was read in full and does not supply the exact
+restricted hypothesis. Broader priority checking remains pending.

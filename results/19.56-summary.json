@@ -1,0 +1,1068 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-09-11T14:30:10.353702+00:00",
+  "problem": "19.56",
+  "conclusion": "Complete affirmative candidate under even the primary-output-only inequality",
+  "small_group_cases": 586,
+  "named_cases": [
+    [
+      "S3",
+      6,
+      3,
+      12,
+      true,
+      true,
+      [
+        [
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ]
+      ],
+      []
+    ],
+    [
+      "A4",
+      12,
+      4,
+      48,
+      true,
+      true,
+      [
+        [
+          2,
+          4,
+          4,
+          4
+        ],
+        [
+          3,
+          3,
+          1,
+          1
+        ]
+      ],
+      []
+    ],
+    [
+      "S4",
+      24,
+      12,
+      240,
+      false,
+      false,
+      [
+        [
+          2,
+          8,
+          4,
+          4
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ]
+      ],
+      [
+        3,
+        2,
+        3
+      ]
+    ],
+    [
+      "A5",
+      60,
+      60,
+      2280,
+      false,
+      false,
+      [
+        [
+          2,
+          4,
+          4,
+          4
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          5,
+          5,
+          5,
+          5
+        ]
+      ],
+      [
+        3,
+        2,
+        3
+      ]
+    ],
+    [
+      "SL2_5",
+      120,
+      119,
+      3688,
+      false,
+      false,
+      [
+        [
+          2,
+          8,
+          8,
+          8
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          5,
+          5,
+          5,
+          5
+        ]
+      ],
+      [
+        4,
+        5,
+        10
+      ]
+    ],
+    [
+      "PSL2_7",
+      168,
+      168,
+      18480,
+      false,
+      false,
+      [
+        [
+          2,
+          8,
+          8,
+          8
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          7,
+          7,
+          7,
+          7
+        ]
+      ],
+      [
+        3,
+        7,
+        3
+      ]
+    ],
+    [
+      "A6",
+      360,
+      360,
+      83520,
+      false,
+      false,
+      [
+        [
+          2,
+          8,
+          8,
+          8
+        ],
+        [
+          3,
+          9,
+          9,
+          9
+        ],
+        [
+          5,
+          5,
+          5,
+          5
+        ]
+      ],
+      [
+        3,
+        2,
+        3
+      ]
+    ]
+  ],
+  "group_cases": 593,
+  "hyperfocal_checks": 843,
+  "primary_input_pairs": 159220,
+  "satisfying_cases": 582,
+  "violating_cases": 11,
+  "matrix_cases": [
+    [
+      "odd_PSL2",
+      3,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      5,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      7,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      9,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      11,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      13,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      17,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      19,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      23,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      25,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      27,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      31,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      49,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      81,
+      8,
+      24
+    ],
+    [
+      "odd_PSL2",
+      125,
+      8,
+      24
+    ],
+    [
+      "even_PSL2",
+      4,
+      3,
+      4
+    ],
+    [
+      "even_PSL2",
+      8,
+      7,
+      8
+    ],
+    [
+      "even_PSL2",
+      16,
+      3,
+      16
+    ],
+    [
+      "even_PSL2",
+      32,
+      31,
+      32
+    ],
+    [
+      "even_PSL2",
+      64,
+      3,
+      64
+    ],
+    [
+      "PSL3",
+      3,
+      4,
+      12
+    ],
+    [
+      "Suzuki",
+      8,
+      7,
+      8
+    ],
+    [
+      "Suzuki",
+      32,
+      31,
+      32
+    ],
+    [
+      "Suzuki",
+      128,
+      127,
+      128
+    ]
+  ],
+  "suzuki_additive_checks": 17472,
+  "central_lift_cases": [
+    [
+      5,
+      120,
+      4,
+      3,
+      4,
+      5,
+      5,
+      5,
+      4
+    ],
+    [
+      7,
+      336,
+      4,
+      3,
+      4,
+      3,
+      3,
+      3,
+      4
+    ],
+    [
+      9,
+      720,
+      4,
+      3,
+      4,
+      3,
+      3,
+      3,
+      4
+    ]
+  ],
+  "independent_python": {
+    "status": "PASS",
+    "groups": [
+      {
+        "row": [
+          "S3",
+          6,
+          3,
+          12,
+          true,
+          true,
+          [
+            [
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              3,
+              3,
+              3
+            ]
+          ]
+        ],
+        "violation_pairs": 0,
+        "explicit_example": null,
+        "multiplication_entries": 36
+      },
+      {
+        "row": [
+          "A4",
+          12,
+          4,
+          48,
+          true,
+          true,
+          [
+            [
+              2,
+              4,
+              4,
+              4
+            ],
+            [
+              3,
+              3,
+              1,
+              1
+            ]
+          ]
+        ],
+        "violation_pairs": 0,
+        "explicit_example": null,
+        "multiplication_entries": 144
+      },
+      {
+        "row": [
+          "S4",
+          24,
+          12,
+          240,
+          false,
+          false,
+          [
+            [
+              2,
+              8,
+              4,
+              4
+            ],
+            [
+              3,
+              3,
+              3,
+              3
+            ]
+          ]
+        ],
+        "violation_pairs": 48,
+        "explicit_example": {
+          "a": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "b": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "x": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "y": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "u": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "v": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "input_orders": [
+            2,
+            3,
+            3,
+            2
+          ],
+          "output_orders": [
+            3,
+            2,
+            3
+          ]
+        },
+        "multiplication_entries": 576
+      },
+      {
+        "row": [
+          "A5",
+          60,
+          60,
+          2280,
+          false,
+          false,
+          [
+            [
+              2,
+              4,
+              4,
+              4
+            ],
+            [
+              3,
+              3,
+              3,
+              3
+            ],
+            [
+              5,
+              5,
+              5,
+              5
+            ]
+          ]
+        ],
+        "violation_pairs": 2280,
+        "explicit_example": {
+          "a": [
+            0,
+            1,
+            3,
+            4,
+            2
+          ],
+          "b": [
+            0,
+            2,
+            1,
+            4,
+            3
+          ],
+          "x": [
+            0,
+            1,
+            3,
+            4,
+            2
+          ],
+          "y": [
+            1,
+            0,
+            2,
+            4,
+            3
+          ],
+          "u": [
+            0,
+            1,
+            3,
+            4,
+            2
+          ],
+          "v": [
+            0,
+            3,
+            4,
+            1,
+            2
+          ],
+          "input_orders": [
+            3,
+            2,
+            3,
+            2
+          ],
+          "output_orders": [
+            3,
+            2,
+            3
+          ]
+        },
+        "multiplication_entries": 3600
+      },
+      {
+        "row": [
+          "SL2_5",
+          120,
+          119,
+          3688,
+          false,
+          false,
+          [
+            [
+              2,
+              8,
+              8,
+              8
+            ],
+            [
+              3,
+              3,
+              3,
+              3
+            ],
+            [
+              5,
+              5,
+              5,
+              5
+            ]
+          ]
+        ],
+        "violation_pairs": 5520,
+        "explicit_example": {
+          "a": [
+            0,
+            1,
+            4,
+            0
+          ],
+          "b": [
+            0,
+            1,
+            4,
+            2
+          ],
+          "x": [
+            0,
+            2,
+            2,
+            0
+          ],
+          "y": [
+            1,
+            3,
+            4,
+            3
+          ],
+          "u": [
+            0,
+            2,
+            2,
+            0
+          ],
+          "v": [
+            3,
+            3,
+            2,
+            4
+          ],
+          "input_orders": [
+            4,
+            3,
+            4,
+            5
+          ],
+          "output_orders": [
+            4,
+            5,
+            10
+          ]
+        },
+        "multiplication_entries": 14400
+      },
+      {
+        "row": [
+          "PSL2_7",
+          168,
+          168,
+          18480,
+          false,
+          false,
+          [
+            [
+              2,
+              8,
+              8,
+              8
+            ],
+            [
+              3,
+              3,
+              3,
+              3
+            ],
+            [
+              7,
+              7,
+              7,
+              7
+            ]
+          ]
+        ],
+        "violation_pairs": 17808,
+        "explicit_example": {
+          "a": [
+            0,
+            1,
+            6,
+            0
+          ],
+          "b": [
+            0,
+            1,
+            6,
+            2
+          ],
+          "x": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "y": [
+            3,
+            5,
+            5,
+            4
+          ],
+          "u": [
+            0,
+            1,
+            6,
+            2
+          ],
+          "v": [
+            0,
+            2,
+            3,
+            6
+          ],
+          "input_orders": [
+            3,
+            2,
+            7,
+            3
+          ],
+          "output_orders": [
+            2,
+            7,
+            7
+          ]
+        },
+        "multiplication_entries": 28224
+      },
+      {
+        "row": [
+          "A6",
+          360,
+          360,
+          83520,
+          false,
+          false,
+          [
+            [
+              2,
+              8,
+              8,
+              8
+            ],
+            [
+              3,
+              9,
+              9,
+              9
+            ],
+            [
+              5,
+              5,
+              5,
+              5
+            ]
+          ]
+        ],
+        "violation_pairs": 83520,
+        "explicit_example": {
+          "a": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            3
+          ],
+          "b": [
+            0,
+            1,
+            3,
+            2,
+            5,
+            4
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            3
+          ],
+          "y": [
+            0,
+            2,
+            1,
+            3,
+            5,
+            4
+          ],
+          "u": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            3
+          ],
+          "v": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3
+          ],
+          "input_orders": [
+            3,
+            2,
+            3,
+            2
+          ],
+          "output_orders": [
+            3,
+            2,
+            3
+          ]
+        },
+        "multiplication_entries": 129600
+      }
+    ],
+    "odd_matrix_controls": [
+      [
+        3,
+        1,
+        1,
+        [
+          2,
+          2,
+          1,
+          0
+        ]
+      ],
+      [
+        5,
+        0,
+        2,
+        [
+          3,
+          4,
+          3,
+          1
+        ]
+      ],
+      [
+        7,
+        2,
+        3,
+        [
+          2,
+          1,
+          0,
+          4
+        ]
+      ],
+      [
+        11,
+        1,
+        3,
+        [
+          7,
+          7,
+          6,
+          3
+        ]
+      ],
+      [
+        13,
+        0,
+        5,
+        [
+          2,
+          3,
+          2,
+          10
+        ]
+      ],
+      [
+        17,
+        0,
+        4,
+        [
+          10,
+          11,
+          10,
+          6
+        ]
+      ],
+      [
+        19,
+        1,
+        6,
+        [
+          3,
+          3,
+          2,
+          15
+        ]
+      ],
+      [
+        23,
+        2,
+        8,
+        [
+          16,
+          15,
+          14,
+          6
+        ]
+      ],
+      [
+        31,
+        4,
+        13,
+        [
+          8,
+          5,
+          4,
+          22
+        ]
+      ],
+      [
+        43,
+        1,
+        16,
+        [
+          8,
+          8,
+          7,
+          34
+        ]
+      ],
+      [
+        59,
+        1,
+        23,
+        [
+          41,
+          41,
+          40,
+          17
+        ]
+      ],
+      [
+        101,
+        0,
+        10,
+        [
+          55,
+          56,
+          55,
+          45
+        ]
+      ]
+    ],
+    "multiplication_entries": 176580
+  },
+  "gap_process": {
+    "command": [
+      "bin/gap",
+      "scripts/verify_19_56.g"
+    ],
+    "started_utc": "2026-09-11T14:20:55.255444+00:00",
+    "finished_utc": "2026-09-11T14:21:17.725957+00:00",
+    "returncode": 0,
+    "elapsed_seconds": 22.470450861379504,
+    "script_sha256": "657dd267ea545ee87e6e778d36f005486459dc9f69c83a9d7486eb294d5e08b4",
+    "log_sha256": "d84c3fdedd2689d1e77db3bcee5a8b27f8e71fb472b918faf83853ae1ed1bc21"
+  },
+  "excluded_initial_run": {
+    "record": {
+      "command": [
+        "bin/gap",
+        "scripts/verify_19_56.g"
+      ],
+      "started_utc": "2026-09-11T14:20:09.220437+00:00",
+      "finished_utc": "2026-09-11T14:20:11.154048+00:00",
+      "returncode": 0,
+      "elapsed_seconds": 1.9335367558524013,
+      "script_sha256": "9b640e2137517566bf453ce98f25f7c79bccb40eef3e782743c1d62d29d5c82f",
+      "log_sha256": "abbd6a7b29afe1655dcf0d4d54b8d0efd9befbdd8025374143adcca5a22e37bc"
+    },
+    "status": "FAILED",
+    "reason": "GAP reported an invalid prime and did not complete, despite OS returncode zero"
+  },
+  "scope": "General proof imports hyperfocal, minimal-simple classification and Baer-Suzuki. Bounded controls corroborate only the checked constructions. Outside review and broader priority checking pending.",
+  "sha256": {
+    "research/19.56-proof.md": "268d7443fa9d520c1584f629d28e6993e033e5d1e6e5914dadbacd2fe67ceb4d",
+    "research/19.56-review.md": "c9c2b29913b6be7484cd3bd5618619891dd4cecc763c598f98d418112e9c9db1",
+    "research/19.56-plan.md": "da30093b6d8a14d0a5830f56a7d2921672d46ffc7f5ef2e94014a2e3aeac905d",
+    "scripts/verify_19_56.g": "657dd267ea545ee87e6e778d36f005486459dc9f69c83a9d7486eb294d5e08b4",
+    "scripts/verify_19_56.py": "fbd5e21a441f47b5584474fc763ee69899cf3c0daa1ae9ed2a90e881f7e9ac28",
+    "scripts/summarize_19_56.py": "da5c57c8c84dd5bcc199d1fa51fd98a40cabf8cff41c2080ae5bf73249e9faeb",
+    "results/19.56-gap.log": "d84c3fdedd2689d1e77db3bcee5a8b27f8e71fb472b918faf83853ae1ed1bc21",
+    "results/19.56-gap-run.json": "cadcca508c032ec6af1779198a157bc2cc38a9e56a44683c90c370ac2f6f2fd1",
+    "results/19.56-python.json": "56fdaf9d1cd047af660d3ea6e13662094a299f2dddb5d61f997f509ea284276a",
+    "results/19.56-python.log": "56fdaf9d1cd047af660d3ea6e13662094a299f2dddb5d61f997f509ea284276a",
+    "results/19.56-initial-control.g": "9b640e2137517566bf453ce98f25f7c79bccb40eef3e782743c1d62d29d5c82f",
+    "results/19.56-initial-gap.log": "abbd6a7b29afe1655dcf0d4d54b8d0efd9befbdd8025374143adcca5a22e37bc",
+    "results/19.56-initial-gap-run.json": "af1d7b95fa970aa66d855260b56e683f6bc45a4b5902752afc398103012bbc08",
+    "bin/gap": "02e405c0f80821b91bb0da7b3d43f611c7faca424f8c9ea760dfb5222d975a2d",
+    "docs/21tkt.pdf": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911",
+    "references/cache/notebook-page139-1956.png": "ed40cd0f046480e979821fb5ab84772f4bd2b867da6463f2808b4108513005eb",
+    "references/cache/bcglo-extensions-published.pdf": "5ae5c95430ee013a57b113b37f5e3f0af4521d8a89b86a627a1de65fcd9260d5",
+    "references/cache/broto-castellana-grodal-levi-oliver-extensions.pdf": "b107032682da8d410ea6c1d75738235362ef82d9ab8a354b06bbd88a98d78c0c",
+    "references/cache/bray-baarnhielm-suzuki-2017.pdf": "788f32bcf326bbfe77503daa9abf6e51f2a37bb79de9ab5f87c2f90096b73d63",
+    "references/cache/guralnick-malle-variations-baer-suzuki.pdf": "957baea3aff09ad82c9cf6a1a8ccf6fc9f976e35b7413c82e2c78453df7353f5",
+    "references/cache/guo-revin-minimal-nonsolvable.pdf": "4f8a5581f79d99e7d64558992f40f8aadb1317dd76ae460f4a07125a677e71fe",
+    "references/cache/monakhov-derived-nilpotency-2017.pdf": "24f797d6eea576d22cbee86f05fa98e8b88511921514ce23ccd709138c82a0a0",
+    "references/cache/monakhov-star-metanilpotency-2017.pdf": "cbc9c7cf445c47d433d5cbcebce4dfe8fddddd5a7af29c48959fa7d058d2ef38",
+    "references/cache/bastos-monetta-coprime-2018.pdf": "0debb773f315490eaec166539833ebe71de48bd47d04d41cc2048f03c0a463c2",
+    "references/cache/li-lei-gao-products-2022.pdf": "cd0855e2fb6459b2dcc18c2ebe7bf190fed7f52dc6b4b34cbc0f527ca4249f39"
+  }
+}
