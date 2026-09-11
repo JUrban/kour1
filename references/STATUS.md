@@ -323,3 +323,37 @@ The standard multiple HNN and tree statements were checked in
 https://arxiv.org/abs/2512.10800 . See research/17.101-review.md for
 exact reading scope, failed full-text downloads, and search limitations.
 Novelty remains unconfirmed.
+
+## Problems17.100,17.124,18.18,18.20,18.24,18.44
+
+17.124: Jayadevan, https://arxiv.org/abs/2609.10281v1 , submitted
+9 September2026, claims the exact affirmative theorem. Read primary
+abstract, Section1/Theorem1.1, Section2's classical inputs, and the
+start of Section3. Remaining proof and Lean files unaudited; classify
+as a prior claim and exclude from new-result priority.
+
+18.44: Jones--Keller2020,
+https://link.springer.com/article/10.1007/s10231-020-00970-x ,
+Theorem1.2 explicitly resolves the exact Notebook question. Primary
+abstract and introduction read; complete publisher HTML cached but
+full proof not audited. Later Çınarcı--Keller2023/2024 generalizations
+were screened only through abstracts and initial material. Exact
+scope is in research/18.44-known-resolution.md.
+
+18.20: Belonogov2005 primary abstract and metadata read at
+https://www.mathnet.ru/php/archive.phtml?jrnid=smj&option_lang=eng&paperid=965&wshow=paper .
+It states the same conjecture and partial results. Full proof unaudited;
+the finite screen and orthogonality observations carry no novelty claim.
+
+17.100: Malle--Späth https://arxiv.org/abs/1506.07690 was located as
+relevant background, but only the primary abstract and selected search
+excerpts were inspected. No classification theorem was imported to
+claim a full solution.
+
+18.18: visually checked the exact printed page119; the new note proves
+only the first requested nonenumerability assertion, with no novelty
+claim. The original Mal'cev proof has not been audited in this pass.
+
+18.24: sources and exact limited reading scope are listed in
+research/triage-2026-09-11.md. Minimum attainment does not establish
+the required half-defect equality. No resolution is claimed.

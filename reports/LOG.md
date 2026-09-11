@@ -393,3 +393,38 @@ Python tree and module controls pass, as do independent GAP Laurent
 controls after correcting a finite-field versus polynomial zero mismatch
 in the verifier. Internal audit written; novelty and outside review
 remain pending. The48-hour goal remains active, with local commits only.
+
+## 2026-09-11, 02:26--02:44 UTC
+
+Completed two exact character-library screens. For17.100, all2,750
+ordinary tables were considered,215 simple entries supplied12,606
+eligible pairs, and none vanished. A different simplicity criterion
+agrees on all2,750 tables; eight actual-group tables supplied72 direct
+controls, all PASS. Most library cases follow already from the elementary
+nonvanishing of odd-degree characters on2-elements; the limited reach
+of the remaining320 nonabelian-simple pairs is explicit.
+
+For18.20, all33,810,661 unequal-degree pairs in2,750 tables were checked
+without a counterexample. Independent enumeration of every class
+partition on ten actual groups agrees on129 pairs, including16 positive
+controls. The exact two-ratio reduction and an orthogonality identity
+are written. A summary parser initially missed GAP-wrapped lines;
+whitespace normalization fixed the parser, and all completion and
+count-consistency checks now PASS. The mathematical searches were
+unchanged. No general resolution is inferred from either screen.
+
+Wrote a common-centralizer reduction proving the first nonenumerability
+assertion in18.18, under the cofinite meaning of almost all. The assertion
+about the complement remains unresolved. No novelty claim is made.
+
+Located Jayadevan's9 September2026 exact prior claim for17.124 and
+Jones--Keller2020 Theorem1.2 explicitly resolving18.44. Reading scope
+and exclusions are recorded. No Lean audit or full proof verification
+of those papers is claimed; no18.44 orbit search was launched.
+
+Order256 snapshot 2026-09-11T02:44:56.521555+00:00: 40,693 groups,
+0 equality hits, 85 reverse inequalities,
+12 live GAP workers and 4 completed ranges, all checks PASS.
+The count of complete candidate resolutions remains11, all awaiting
+outside review and further novelty checks. The48-hour goal remains
+active; no external messages or Git pushes.
