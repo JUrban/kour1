@@ -187,3 +187,32 @@ These are scope checks and abandoned routes, not additional solutions.
   inside the actual automorphism subgroup. Conjugacy in the ambient GL
   alone is insufficient. No such general theorem or counterexample was
   obtained in this screen.
+
+
+## Late Issue 15 boundaries, 20:42 UTC
+
+- **15.93:** Ben-Ezra--Zelmanov, *On Pro-2 Identities of 2x2 Linear
+  Groups*, arXiv:1910.05805v2 (7 October 2020), supplies a characteristic-2
+  analogue of the older odd-prime matrix theorem. The abstract, full
+  introduction, and Sections 2.1--2.2 were read in text; the 40-page proof
+  was not audited. The cached filename uses the 2019 first-submission
+  year, but its contents are v2. Neither the involution-centralizer
+  hypothesis nor a Lie polynomial identity has been shown here to yield
+  a 2x2 representation or a pro-p group identity. Thus this source does
+  not settle the general question. Primary source:
+  https://arxiv.org/abs/1910.05805v2 .
+- **15.95:** The regular-normal-subgroup case has a self-contained
+  coset-counting proof in `15.95-regular-normal-case.md`, including
+  nonabelian regular subgroups. No regular normal subgroup is supplied
+  in the general case. No new complete candidate is counted.
+- **15.96:** The published statement of Makarenko--Khukhro's 2003
+  largely-splitting theorem bounds the class of H' in terms of the
+  *already given derived length* of H. That dependency does not provide
+  the requested bound in terms of generator number and automorphism
+  order. Only the abstract and bibliography were read at this stage:
+  https://geodesic.mathdoc.fr/item/AL_2003_42_3_a2/ .
+- **15.100--15.101:** The periodic-quotient theorem used in the 10.62
+  packet assumes a tame starting group, excluding a Klein four subgroup.
+  It therefore cannot directly preserve the subgroup required in 15.100.
+  Absence of Klein four subgroups alone gives no local-finiteness theorem
+  for an involution centralizer and does not settle 15.101.

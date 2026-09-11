@@ -1748,3 +1748,19 @@ supply a fixed11- or13-cycle word for every triangle parameter. Source
 auditing is in progress; no new complete candidate is counted yet. The
 20:12 UTC certificate snapshot verifies six live workers and17,790,000
 checked nodes, with no completed shard. All work remains local.
+
+
+## 2026-09-11T20:45:33.228798+00:00 — Two restricted deductions and late Issue 15 boundaries
+
+The regular-normal-subgroup case of 15.95 has a direct proof by counting
+fixed-point elements in each coset of the regular subgroup. No existence
+of such a normal subgroup is established for the general question.
+The June 2026 Di Bartolo--Ersoy--Falcone paper settles the periodic
+residually finite case of 10.59. Its full proof is audited, with a direct
+replacement for the power-automorphism step in its Tarski exclusion.
+The metadata omission of the essential p-prime hypothesis is retained
+as a source-boundary warning. Nine hashes bind the source and deduction.
+Neither result increases the 31-candidate count. The 15.92 mathematical
+packet is drafted; its fifth independent GAP diagram control is still
+running. Nearby pro-p identity and splitting-automorphism scope limits
+are added to the triage record. No outside communication or push.

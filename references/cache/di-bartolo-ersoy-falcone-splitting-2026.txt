@@ -1,0 +1,332 @@
+                                            A RESIDUALLY FINITE ANALOGUE OF KEGEL’S THEOREM
+                                                      ON SPLITTING AUTOMORPHISMS
+
+
+                                                    ALFONSO DI BARTOLO, KIVANÇ ERSOY, AND GIOVANNI FALCONE
+arXiv:2604.01011v2 [math.GR] 11 Jun 2026
+
+
+
+
+                                                    Abstract. Thompson proved that every finite group admitting a fixed-point-
+                                                    free automorphism of prime order is nilpotent, and Kegel showed that the
+                                                    same conclusion holds for finite groups admitting a splitting automorphism of
+                                                    prime order. Motivated by these results, Sozutov asked whether a p′ -group
+                                                    admitting a splitting automorphism of prime order is locally nilpotent if
+                                                                                                      p−1
+                                                                                  ⟨g, g φ , . . . , g φ     ⟩
+                                                    is nilpotent for every g ∈ G [7, Problem 10.59]. We prove that if G is a
+                                                    periodic residually finite p′ -group admitting a splitting automorphism of prime
+                                                    order p then G is nilpotent of class bounded in terms of p. This gives an
+                                                    affirmative answer, for residually finite groups, to the problem of Sozutov. We
+                                                    also prove that a possible counterexample to Sozutov’s problem cannot be a
+                                                    Tarski monster.
+
+
+
+
+                                                                                1. Introduction
+                                              Let G be a group and let α ∈ Aut(G). An automorphism α is called fixed-point-
+                                           free if CG (α) = 1. For finite groups, every fixed-point-free automorphism α of order
+                                           n satisfies
+                                                                                   2        n−1
+                                                                             xxα xα · · · xα    =1
+                                           for all x ∈ G (see [13, 10.5.1]). This led Gorchakov to introduce the notion of a
+                                           splitting automorphism.
+                                           Definition 1.1. Let G be a group. An automorphism α of order n is called a
+                                           splitting automorphism if
+                                                                              2         n−1
+                                                                      gg α g α · · · g α    =1
+                                           for every g ∈ G.
+                                              An element a ∈ G is called an anticentral element of G if
+                                                                                       aG′ = aG
+                                           (see [10] or [2]). It is easy to see that if a ∈ G is anticentral, then conjugation
+                                           by a induces a splitting automorphism of G′ . Moreover, if α is a fixed-point-free
+                                           automorphism of a finite group G, then α is an anticentral element of the semidirect
+                                           product
+                                                                               H = G ⋊ ⟨α⟩.
+                                           Rowley observed that every finite group admitting a fixed-point-free automorphism
+                                           is solvable [14, Theorem]. Later, Ladisch proved that every finite group containing
+
+                                             2020 Mathematics Subject Classification. Primary 20E36; 20F50; Secondary 20D45; 20F28.
+                                             Key words and phrases. residually finite group, periodic group, splitting automorphism, Tarski
+                                           monster.
+                                                                                               1
+2          ALFONSO DI BARTOLO, KIVANÇ ERSOY, AND GIOVANNI FALCONE
+
+
+an anticentral element is solvable (see [10]). On the other hand, [2] provides exam-
+ples of finite non-solvable groups admitting splitting automorphisms. Indeed, the
+second author proved in [3] that a finite group admitting a splitting automorphism
+of odd order is solvable. In addition, Jabara proved in [5] that every finite group
+admitting a splitting automorphism of order 4 is solvable. For nilpotency, the situ-
+ation is more restrictive. The existence of splitting automorphisms imposes strong
+restrictions on the structure of a group. Thompson proved that every finite group
+admitting a fixed-point-free automorphism of prime order is nilpotent [16], while
+Kegel showed that every finite group admitting a splitting automorphism of prime
+order is nilpotent [6]. Moreover, by results of Higman [4] and Kreknin–Kostrikin [9],
+there exists a function f such that every finite group admitting a fixed-point-free
+automorphism of prime order p is nilpotent of class at most f (p).
+   Motivated by these results, Sozutov asked the following question.
+Problem 1.2. [7, Sozutov, Problem 10.59] Is a p′ -group G locally nilpotent if it
+admits a splitting automorphism φ of prime order p such that all subgroups of the
+form
+                                                    p−1
+                               ⟨g, g φ , . . . , g φ ⟩
+are nilpotent?
+  Our first main result gives a positive answer in the periodic residually finite case,
+and in fact implies bounded nilpotency class.
+Theorem 1.3. There is a natural valued function f such that if G is a periodic
+residually finite p′ -group admitting a splitting automorphism φ of prime order p
+then G is nilpotent of class at most f (p).
+   As an immediate consequence, Sozutov’s problem has a positive answer for resid-
+ually finite groups.
+Corollary 1.4. Let G be a periodic residually finite p′ -group admitting a splitting
+automorphism φ of prime order p such that
+                                                      p−1
+                                  ⟨g, g φ , . . . , g φ     ⟩
+is nilpotent for every g ∈ G. Then G is nilpotent.
+  Our second main result shows that a possible counterexample to Problem 1.2
+cannot be a Tarski monster.
+Theorem 1.5. Let G be a p′ -group admitting a splitting automorphism φ of order
+p. Assume that
+                                                      p−1
+                                  ⟨g, g φ , . . . , g φ     ⟩
+is nilpotent for every g ∈ G. Then G is not isomorphic to a Tarski monster.
+   One of the most important results in the theory of locally finite groups is the
+following:
+Theorem 1.6 (Hall–Kulatilaka). Every infinite locally finite group contains an
+infinite abelian subgroup.
+  However, existence of a periodic residually finite analogue of Theorem 1.6 is still
+unknown. In particular, A. Mann asked the following:
+               A RESIDUALLY FINITE ANALOGUE OF KEGEL’S THEOREM                       3
+
+
+Problem 1.7. [7, A. Mann, Problem 11.56] Does every infinite residually finite
+group contain an infinite abelian subgroup? Does every infinite residually finite
+p-group contain an infinite abelian subgroup? The same questions are valid for
+infinite centralizers.
+    If there is an infinite residually finite group whose all centralizers are finite,
+it must contain no involutions by [15]. Hence, every finite subgroup is solvable.
+However, since periodic solvable groups are locally finite and locally finite groups
+have infinite abelian subgroups, in such a counterexample every solvable subgroup
+is finite. That means if there is a periodic residually finite group with finite cen-
+tralizers, there is also a non-solvable finitely generated example. Since the possible
+counterexamples of both of the problems lead us to this direction, we may formulate
+an intermediate problem weaker than problems by Sozutov and Mann.
+Problem 1.8. Can a hypothetical counterexample to Problem 1.7 admit a splitting
+automorphism?
+
+                                  2. Preliminaries
+   We collect some basic facts that will be used later.
+Proposition 2.1. Let G be a group, and let φ ∈ Aut(G) be a splitting automor-
+phism of order n. Then CG (φ) has exponent dividing n.
+Proof. If x ∈ CG (φ), then
+                                                  n−1
+                                x = xφ = · · · = xφ     .
+                 n−1
+Now, x.xφ · · · xφ     = 1 implies xn = 1.                                          □
+
+Proposition 2.2. [8, 7.1.3 Lemma]
+    (1) If G is finite and φ is fixed-point-free, then φ is a splitting automorphism.
+    (2) If G is periodic and contains no nontrivial element whose order divides n,
+        then every splitting automorphism of order n is fixed-point-free.
+  The following result shows that on the contrary to finite groups, fixed-point-free
+automorphisms and splitting automorphisms have different natures.
+Theorem 2.3. [11] Let G be a periodic group with a fixed-point-free automorphism
+of order 2. Then G is abelian without elements of order 2.
+Remark 2.4. In infinite groups, in contrast to the finite case, the relationship
+between fixed-point-free automorphisms and splitting automorphisms is far less di-
+rect. For example, the free group of rank 2 admits a fixed-point-free automorphism
+of order 2, whereas every group admitting a splitting automorphism of order 2 is
+abelian.
+Proposition 2.5. Let G be a group, let φ ∈ Aut(G) have finite order n and let
+M ⊴ G be of finite index. Then there exists a φ-invariant normal subgroup N ⊴ G
+of finite index with N ≤ M . In particular, φ induces an automorphism of G/N .
+Moreover, if φ is a splitting automorphism of G, then the induced automorphism
+on G/N is also splitting.
+4            ALFONSO DI BARTOLO, KIVANÇ ERSOY, AND GIOVANNI FALCONE
+
+
+Proof. Set
+                                          n−1
+                                          \
+                                  N=            φi (M ).
+                                          i=0
+                i
+Since each φ (M ) is a normal subgroup of finite index in G, the subgroup N is also
+normal and of finite index.
+   Moreover,
+                                    n−1
+                                    \
+                            φ(N ) =     φi+1 (M ) = N,
+                                       i=0
+since φn = 1. Thus N is φ-invariant, and therefore φ induces an automorphism φ
+of G/N .
+   If φ is a splitting automorphism of G, then
+                                                 n−1
+                                 g gφ · · · gφ           =1
+for every g ∈ G. Passing to the quotient modulo N , we obtain
+                                                          n−1
+                          (gN )(gN )φ · · · (gN )φ                 = N.
+Hence φ is a splitting automorphism of G/N .                                      □
+
+                    3. Some properties of Tarski monsters
+   We now collect the facts about Tarski monsters that will be needed in the sequel.
+In particular, all Tarski monsters appearing in this section are periodic, hence
+infinite, two-generated simple p-groups. For the details of their construction, see
+[12].
+Proposition 3.1. Let G be a Tarski monster. There is no nontrivial automorphism
+φ ∈ Aut(G) of order n such that, for every g ∈ G, the subgroup
+                                                         n−1
+                                 ⟨g, g φ , . . . , g φ         ⟩
+is nilpotent.
+Proof. Let G be a Tarski monster and suppose, for a contradiction, that there exists
+a non-trivial automorphism φ ∈ Aut(G) of order n such that for every g ∈ G the
+subgroup
+                                                        n−1
+                            Kg := ⟨g, g φ , . . . , g φ     ⟩
+is nilpotent.
+   Fix 1 ̸= g ∈ G. If Kg = G, then G is nilpotent, which is impossible since G is
+an infinite simple group. Hence Kg is a proper subgroup of G. By definition of
+a Tarski monster, every proper nontrivial subgroup of G is cyclic of prime order.
+Therefore Kg = ⟨g⟩, and in particular g φ ∈ ⟨g⟩.
+   Since this holds for every g ∈ G, it follows that φ is a power automorphism of
+G.
+   By [1], every power automorphism of G is central, that is,
+                          x−1 xφ ∈ Z(G)          for all x ∈ G.
+                                 φ
+Since Z(G) = 1, it follows that x = x for all x ∈ G, so φ = idG , contradicting the
+assumption that φ is non-trivial.
+   Therefore no such automorphism exists.                                        □
+              A RESIDUALLY FINITE ANALOGUE OF KEGEL’S THEOREM                     5
+
+
+Remark 3.2. The direct analogue of Proposition 3.1 for groups merely involving
+a Tarski monster is false in general; see Example 3.4.
+Remark 3.3. Unlike the finite case, infinite non-solvable groups can have splitting
+automorphisms of prime order. Let G be a Tarski monster p-group. By [12], every
+proper nontrivial subgroup of G has order p, where p is a suitably large prime. Fix
+a nontrivial g ∈ G. For every x ∈ G, one has
+                                           p−1
+                            xxg · · · xg         = (xg −1 )p = 1.
+Thus every inner automorphism of a Tarski monster p-group induced by a nontrivial
+element is a splitting automorphism of order p.
+Example 3.4. Let p be a sufficiently large prime, and let H be a Tarski monster
+of exponent p. Let A be a cyclic group of prime order q such that p | q − 1. Then A
+admits a fixed-point-free automorphism α of order p. Set G = H × A, and define
+                       (h, a)φ = (h, aα )            (h ∈ H, a ∈ A).
+Then φ is a splitting automorphism of order p of the infinite finitely generated
+group G. Moreover, for every (h, a) ∈ G, the subgroup
+                                                             p−1
+                           ⟨(h, a), (h, a)φ , . . . , (h, a)φ      ⟩
+is a finite cyclic group. However, G is not nilpotent.
+
+                     4. The proof of the main theorem
+Proof of Theorem 1.3. Let c = c(p) denote the bound for the nilpotency class of a
+finite group admitting a fixed-point-free automorphism of order p, which exists by
+[4]. We claim that
+                                    γc+1 (G) = 1.
+    Suppose, for a contradiction, that γc+1 (G) ̸= 1, and choose
+                                   1 ̸= x ∈ γc+1 (G).
+Since G is residually finite, there exists a normal subgroup M ⊴ G of finite index
+such that x ∈
+            / M . Set
+                                         p−1
+                                         \
+                                   N=        φi (M ).
+                                             i=0
+By Proposition 2.5, the subgroup N is normal, of finite index, and φ-invariant.
+Moreover, x ∈  / N , since N ≤ M .
+   Again by Proposition 2.5, the automorphism φ induces a splitting automorphism
+φ on the finite quotient G/N . Since G is a p′ -group, the quotient G/N is also a
+finite p′ -group. We now show that φ is fixed-point-free.
+   Let yN ∈ CG/N (φ). Then
+                                   (yN )φ = yN,
+and hence
+                             i
+                       (yN )φ = yN    for all i = 0, 1, . . . , p − 1.
+Since φ is a splitting automorphism of G/N , we have
+                                                 2          p−1
+                       (yN )(yN )φ (yN )φ · · · (yN )φ            = N.
+Therefore,
+                                      (yN )p = N.
+6           ALFONSO DI BARTOLO, KIVANÇ ERSOY, AND GIOVANNI FALCONE
+
+
+As G/N is a finite p′ -group, it contains no nontrivial element of order dividing p.
+It follows that yN = N . Thus
+                                        CG/N (φ) = 1,
+so φ is fixed-point-free.
+   By [4], the finite group G/N is nilpotent of class at most c. Hence
+                                       γc+1 (G/N ) = 1,
+and therefore
+                                        γc+1 (G) ≤ N.
+But x ∈ γc+1 (G) and x ∈
+                       / N , a contradiction. This proves that
+                                        γc+1 (G) = 1.
+Consequently, G is nilpotent of class at most c, as required.                                 □
+   Clearly, the proof of Corollary 1.4 follows immediately from Theorem 1.3 and
+the proof of Theorem 1.5 follows from Proposition 3.1.
+
+                                   Acknowledgments
+   We gratefully dedicate this paper to the memory of Otto H. Kegel, who guided
+all three of us with remarkable generosity, wisdom and mathematical vision. His
+encouragement and example left a deep mark on our work and on our lives as group
+theorists.
+   The second author would also like to thank Nesin Mathematics Village, where
+part of this work was carried out, for its hospitality and excellent research atmo-
+sphere.
+   The first and third authors were supported by UNIPA-FFr 2026. The second
+author was supported by Next Generation EU (NRRP) project ISP5G+, program
+SERICS, Investment 7PE00000014- CUP D33C22001300002.
+
+                                        References
+ [1] C. D. H. Cooper. Power automorphisms of a group. Mathematische Zeitschrift, 107(5):335–
+     356, 1968.
+ [2] K. Ersoy. Infinite groups with an anticentral element. Communications in Algebra,
+     40(12):4627–4638, 2012.
+ [3] K. Ersoy. Finite groups with a splitting automorphism of odd order. Arch. Math., 106(5):401–
+     407, 2016.
+ [4] G. Higman. Groups and rings having automorphisms without nontrivial fixed elements. J.
+     Lond. Math. Soc., 32:321–334, 1957.
+ [5] E. Jabara. Gruppi che ammettono un automorfismo 4-spezzante. Rendiconti del Circolo
+     Matematico di Palermo. Series II, 45(1):84–92, 1996.
+ [6] O. H. Kegel. Die nilpotenz der Hp -gruppen. Mathematische Zeitschrift, 75:373–376, 1961.
+ [7] E. Khukhro and V. D. Mazurov, editors. Unsolved Problems in Group Theory: The Kourovka
+     Notebook. Sobolev Institute of Mathematics, Novosibirsk, 21 edition, 2026.
+ [8] E. I. Khukhro. Nilpotent Groups and Their Automorphisms, volume 8 of De Gruyter Expo-
+     sitions in Mathematics. Walter de Gruyter, Berlin, New York, 1993.
+ [9] V. A. Kreknin and A. I. Kostrikin. Lie algebras with a regular automorphism. Sov. Math.,
+     Dokl., 4:355–358, 1963.
+[10] F. Ladisch. Groups with anticentral elements. Communications in Algebra, 36(8):2883–2894,
+     2008.
+[11] B. H. Neumann. On the commutativity of addition. Journal of the London Mathematical
+     Society, s1-15(3):203–208, 1940.
+               A RESIDUALLY FINITE ANALOGUE OF KEGEL’S THEOREM                                7
+
+
+[12] A. Y. Ol’shanskii. Geometry of Defining Relations in Groups, volume 70 of Mathematics and
+     Its Applications (Soviet Series). Kluwer Academic Publishers Group, Dordrecht, 1991.
+[13] D. J. S. Robinson. A Course in the Theory of Groups, volume 80 of Graduate Texts in
+     Mathematics. Springer, New York, 2 edition, 1996.
+[14] P. Rowley. Finite groups admitting a fixed-point-free automorphism group. Journal of Alge-
+     bra, 174(2):724–727, 1995.
+[15] V. P. Shunkov. On periodic groups with an almost regular involution. Algebra Logic, 11:260–
+     272, 1973.
+[16] J. G. Thompson. Finite groups with fixed-point-free automorphisms of prime order. Proceed-
+     ings of the National Academy of Sciences of the United States of America, 45(4):578–581,
+     1959.
+
+  Dipartimento di Matematica e Informatica, Università degli Studi di Palermo, Via
+Archirafi 34, 90123 Palermo, Italy
+  Email address: alfonso.dibartolo@unipa.it
+
+  Institut für Mathematik, Freie Universität Berlin, Arnimallee 7, 14195 Berlin, Ger-
+many
+  Email address: ersoy@zedat.fu-berlin.de
+
+  Dipartimento di Matematica e Informatica, Università degli Studi di Palermo, Via
+Archirafi 34, 90123 Palermo, Italy
+  Email address: giovanni.falcone@unipa.it
+
