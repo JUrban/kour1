@@ -1,0 +1,199 @@
+        A new family of modules with 2-dimensional
+                      1-cohomology
+
+                                   John N. Bray,
+                         School of Mathematical Sciences,
+                        Queen Mary, University of London,
+                                  Mile End Road,
+                                  London E1 4NS
+                          E-mail: J.N.Bray@qmul.ac.uk.
+
+                                      27th July 2007
+
+
+                                          Abstract
+
+         It is known that for finite simple groups it is possible for a faithful absolutely
+     irreducible module to have 1-cohomology of dimension at least 3. However, even
+     faithful absolutely irreducible modules with 2-dimensional 1-cohomology are rare.
+     We exhibit a new infinite family of such modules.
+
+
+
+1    Introduction
+Over the past few decades, a number of first cohomology groups have been computed,
+see for example [1, 2, 8, 5, 6]. The first cohomology group H1 (G; M ) of a group G at a
+module M has two fundamental interpretations: first, it parametrises the complements
+of M in the split extension M :G of M by G; and second, it parametrises the extensions
+of M by the trivial G-module. In what follows we assume that M is a faithful absolutely
+irreducible module for G, since dim H1 (G; M ) can be made arbitrarily large if either of
+these conditions fails.
+In most cases which have been calculated up to now, H1 (G; M ) has dimension 0 or 1, and
+in the few remaining cases it has dimension 2 or 3. The known examples of 3-dimensional
+1-cohomology are given in Bray and Wilson [4] and Scott [9]. The two examples of [4] are
+explicit, whilst despite the infinitude of examples in [9], the results therein do not allow
+one to give an explicit example of a module with 3-dimensional 1-cohomology.
+
+                                               1
+2                                                                               John N. Bray
+
+The results of this paper were discovered when I was carrying out a systematic calcula-
+tion of 1-cohomologies (and 2-cohomologies) of (absolutely) irreducible modules of sim-
+ple (and almost simple) groups, in connection with the Web-Atlas project [10]. Many
+of the 2-dimensional 1-cohomologies seen have an exceptional feel to them, such as
+dim H1 (A6 ; F34 ) = 2 (the smallest such example). During the course of this search I found
+that dim H1 (L3 (7); F355 ) = 2, while for other irreducible L3 (7)-modules the 1-cohomology
+is at most 1-dimensional. This looked odd, especially when you compare the complex-
+ity of the Sylow 3-subgroup (32 ) with that of the Sylow 7-subgroup (7+1+2 ), and led
+to the Main Theorem. The smallest example which is part of this series, namely that
+dim H1 (L3 (4); F319 ) = 2, was discovered earlier but somehow did not raise any eyebrows.
+
+Main Theorem. Let n ⩾ 3, let p be a prime such that p | n, let q be a prime power such
+that q ≡ 1 (mod p), and let k be a field of characteristic p. Then dimk H1 (Ln (q); M ) = 2
+                                                                                n −1
+where M is a certain absolutely irreducible kLn (q)-module of dimension qq−1         − 2. We
+obtain M as the non-trivial composition factor of the permutation module of degree
+q n −1
+ q−1
+       for Ln (q) over k, corresponding to the action of SLn (q) on the projective points (or
+hyperplanes) of the natural n-dimensional Fq SLn (q)-module.
+
+In addition to the above family of cross characteristic examples, the following examples
+of 2-dimensional 1-cohomology in defining characteristic are also known. Cline, Jones,
+                                                    ε
+Parshall and Scott [8, 5] give the examples of Ω4m    (q) for q even, q > 2 and m ⩾ 2 acting
+on a module M of dimension 2m(4m − 1) − 2, where M is the non-trivial composition
+factor of Λ2 (V ), with V being a natural module of Ω4m     ε
+                                                              (q). They also point out that
+                                                        3
+the ‘corresponding’ (i.e. 26-dimensional) module of D4 (q) for q even, q > 2 also has 2-
+dimensional 1-cohomology. The above results probably hold when q = 2. For the groups
+  +
+Ω4m (2), m ⩾ 2 see [8, 5], while we have done explicit computations for the relevant
+              −
+modules of Ω4m   (2) for 4m ∈ {8, 12, 16, 20, 24, 28} and 3 D4 (2). In all cases, a subquotient
+of the tensor square of the natural module exhibits the 2-dimensional 1-cohomology.
+Other than the above families of examples we know explicitly of only finitely many faithful
+absolutely irreducible modules for which the 1-cohomology is at least 2-dimensional.
+
+
+2     Proof of the Main Theorem
+Firstly, we establish some notation. The Atlas [7] notation is used for group structures,
+with Eq denoting an elementary abelian group of order q. For G a group and k a field,
+we also use k to denote the trivial kG-module. If V , U and W are modules, we write
+V ∼= U.W to mean that V has a submodule (isomorphic to) U and V /U ∼       = W ; and we
+         ∼             ∼
+write V = U · W if V = U.W and U does not have a complement isomorphic to W . The
+standard results we quote here can be found, for example, in Benson’s book [3] (which
+states them in more generality).
+Our example involves a certain module of Ln (q) in characteristic p, where n ⩾ 3, p | n and
+q ≡ 1 (mod p). We first recall some well-known facts about the groups Ln (q) = PSLn (q)
+2-dimensional 1-cohomology                                                                           3
+
+and SLn (q). Firstly, for n ⩾ 2 and (n, q) 6= (2, 2) or (2, 3) the groups Ln (q) are simple and
+the groups SLn (q) are perfect and quasi-simple. Secondly, the Schur multiplier of SLn (q)
+is always trivial, except for the cases (n, q) = (2, 4), (2, 9), (3, 2), (3, 4) or (4, 2), and the
+r0 -part of the Schur multiplier of SLn (q) is always trivial where r is the prime such that
+r | q.
+It is known that the stabiliser of a projective point (i.e. 1-space) in SLn (q) is a subgroup
+H of shape Eq n−1 :GLn−1 (q), which contains a subgroup Eq n−1 :SLn−1 (q) ∼      = ASLn−1 (q)
+to index q − 1. We note that H need not be isomorphic to AGLn−1 (q); in particular,
+we have non-isomorphism in the cases of interest.1 Since n and n − 1 are coprime, the
+subgroup of scalars of SLn (q) intersects the said subgroup ASLn−1 (q) trivially, and thus
+the image of this subgroup in any of the images C.Ln (q) of SLn (q) is still isomorphic
+to ASLn−1 (q). Thus any non-trivial representation of SLn (q) restricts faithfully to the
+subgroup ASLn−1 (q).
+So now let n ⩾ 3, p | n, p | (q − 1), G ∼       = SLn (q), H ∼  = Eq n−1 :GLn−1 (q) (the point
+stabiliser), and let k be a field of characteristic p. Let P be the permutation module over
+k of G on the cosets of H. Thus P is obtained by inducing the trivial kH-module up
+to G. Since Z(G) ⩽ H, Z(G) acts trivially on P , and thus P is a (permutation) module
+                                            n −1
+for Ln (q). The dimension of P is m := qq−1      . Permutation modules for transitive groups
+have a unique trivial submodule, U say, generated by the all 1s vector u = m
+                                                                                  P
+                                                                                     i=1 ei ; and
+a uniquePtrivial quotient, whose Pm kernel is the augmentation submodule, W say, where
+W = { m        a e
+            i=1 i i : a i ∈ k  |   i=1 ai = 0 }. We have U ⩽ W since p | m, and we let
+M := W/U . Now SLn (q) is perfect and so there are no non-split modules of type k · k
+for SLn (q), and thus M has no trivial submodules or quotients. From Clifford Theory
+we find that a faithful representation of ASLn−1 (q) in characteristic p has dimension at
+least q n−1 − 1, since SLn−1 (q) has a single orbit on non-zero vectors of (the dual of) its
+                                                   n −1
+natural module. But 2(q n−1 − 1) > dim M = qq−1         − 2 and so M is absolutely irreducible.
+Therefore P is a uniserial module of shape k · M · k.
+Now SLn (q) is perfect, and so dim H1 (SLn (q); k) = 0, and dim H2 (SLn (q); k) is the p-rank
+of the Schur multiplier of SLn (q), which is 0. Now dim H1 (H; k) = 1, which is the p-
+rank of H/H 0 . The Eckmann–Shapiro Lemma then implies that dim H1 (SLn (q); P ) = 1.
+A well-known long exact sequence of cohomologies, applied to the permutation module
+P ∼= k · M · k, with (trivial) submodule U ∼
+                                           = k and quotient Q ∼= M · k is given below. The
+dimensions of these cohomology groups for SLn (q) are given below. (The dimensions for
+Ln (q) differ from these, and also depend on whether the p-part of q − 1 is greater than
+the p-part of n.)
+       0 → H0 (k) → H0 (P ) → H0 (Q) → H1 (k) → H1 (P ) → H1 (Q) → H2 (k) → · · ·
+       0     1        1         0        0        1       a(= 1)     0
+
+   1
+    We note that the action of GLn−1 (q) on Eq n−1 is the [dual of] the tensor product of the natural
+representation and the determinant representation. As a result H ∼ = Eq n−1 :GLn−1 (q) is isomorphic to
+AGLn−1 (q) if and only if H has trivial centre, which is if and only if (n, q − 1) = 1. In the cases of
+interest, we have (n, q − 1) 6= 1, and thus H ∼
+                                              6 AGLn−1 (q).
+                                               =
+4                                                                            John N. Bray
+
+We are interested in a := dim H1 (SLn (q); Q), and the emboldened figures, which we
+justified earlier, ensure that a = 1. There is no module k · k for SLn (q) and thus
+dim H1 (SLn (q); M ) = 2. But any module M · k for SLn (q) actually represents the quo-
+tient group Ln (q), since k is not a submodule of M ⊗ k ∗ ∼= M . (Alternatively, note that
+the centraliser algebra of the module M · k consists just of scalar matrices. Thus central
+elements of SLn (q) act as scalars on M · k, and since they act trivially on the quotient k
+of this, they act trivially on M · k.) Therefore we conclude that dim H1 (Ln (q); M ) = 2,
+thus completing the proof of the Main Theorem.
+The corresponding construction does not work when n = 2 (and thus p = 2). This
+is because the module M is not absolutely irreducible, splitting into two (absolutely
+irreducible) non-isomorphic summands of dimension 21 (q −1). This splitting always occurs
+over F4 , and will even occur over F2 if q ≡ ±1 (mod 8). The above argument gives
+dim H1 (L2 (q); M ) = 2, and thus each constituent of M has 1-dimensional 1-cohomology.
+
+
+Acknowledgements
+
+We gratefully acknowledge the support of EPSRC grant GR/S41319. Robert Wilson has
+made suggestions that have improved the exposition of this paper.
+
+
+References
+ [1] G. W. Bell. On the cohomology of the finite special linear groups. I, II. J. Algebra
+     54 (1978), 216–238, 239–259.
+
+ [2] G. W. Bell. Cohomology of degree 1 and 2 of the Suzuki groups. Pacific J. Math. 75
+     (1978), 319–329.
+
+ [3] D. J. Benson. Representations and Cohomology. I: Basic representation theory of
+     finite groups and associative algebras. Second edition. Cambridge studies in advanced
+     mathematics 30. Cambridge University Press (1998).
+
+ [4] J. N. Bray and R. A. Wilson. Examples of 3-dimensional 1-cohomology for absolutely
+     irreducible modules of finite simple groups. Submitted.
+
+ [5] E. Cline, B. Parshall and L. Scott. Cohomology of finite groups of Lie type. I. Inst.
+     Hautes Études Sci. Publ. Math. 45 (1975), 169–191.
+
+ [6] E. Cline, B. Parshall and L. Scott. Cohomology of finite groups of Lie type. II. J.
+     Algebra 45 (1977), 182–198.
+
+ [7] J. H. Conway, R. T. Curtis, S. P. Norton, R. A. Parker and R. A. Wilson. An ATLAS
+     of Finite Groups. Clarendon Press, Oxford (1985; reprinted with corrections 2003).
+2-dimensional 1-cohomology                                                             5
+
+ [8] W. Jones and B. Parshall. On the 1-cohomology of finite groups of Lie type. Pro-
+     ceedings of the Conference on Finite Groups (Univ. Utah, Park City, Utah, 1975),
+     pp. 313–328. Academic Press, New York, 1976.
+
+ [9] L. L. Scott. Some new examples in 1-cohomology. J. Algebra 260 (2003), 416–425.
+
+[10] R. A. Wilson, S. J. Nickerson and J. N. Bray. Atlas of Finite Group Representations.
+     http://brauer.maths.qmul.ac.uk/Atlas/v3/.
+

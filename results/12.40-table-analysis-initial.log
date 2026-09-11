@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/project/scripts/analyze_12_40_tables.py", line 80, in <module>
+    data = run()
+           ^^^^^
+  File "/project/scripts/analyze_12_40_tables.py", line 61, in run
+    assert not unrepresented, ('catalogue entries without any row',unrepresented)
+           ^^^^^^^^^^^^^^^^^
+AssertionError: ('catalogue entries without any row', {'Alt(2)'})

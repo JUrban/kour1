@@ -1946,3 +1946,32 @@ associative outputs. No general solution or candidate increment is claimed.
 The 22:23:25 UTC n=7 snapshot has 20,920,000 checked nodes, six live workers,
 zero completed shards and 29,329,140 KiB combined RSS. Candidate count remains
 34. Original timeout records and all earlier frozen packets are preserved.
+
+
+## 2026-09-11T22:56:27.950961+00:00 — 12.40: no bound with fixed Sylow order
+
+Candidate 35 gives irreducible 2-Brauer degrees with arbitrary exact
+2-part 2^k, k>=3, in PSL_6(5^a), a odd, while every group-order
+2-part is 8192. The projective-heart irreducibility is prior work
+credited to Bray2007. Its precise hypotheses and argument were read
+and the relevant pages viewed. The arithmetic lifting proof uses
+only powers of five and does not invoke primes in progressions.
+
+The 37-file auditor passes with actual exit zero. It replays 510
+lifts, eight exact integer group orders and degrees, 16,383 root
+candidates, 32,766 exponent candidates, and all 352,440 table degrees.
+Three actual projective GAP modules have the expected absolutely
+irreducible factors. The original 2,750-name table screen has 7,573
+available and 2,277 unavailable tables, and passes with actual exit
+zero. The first independent coverage audit failed on the rowless
+trivial Alt(2); its script, failure log and transparently reconstructed
+process record are retained. GAP metadata output continuations are
+retained and decoded explicitly. No mathematical result was edited.
+
+The latest n=7 snapshot, 22:43:04 UTC, has 21,390,000 checked nodes,
+six live workers, zero completed shards and 30,202,612 KiB combined
+RSS. The table screen and module checks ran sequentially under the
+existing 4-GiB ceiling. Late-evening source triage records why the
+16.90 BMN-generation and 5.36 uniform-rank steps remain unavailable.
+All 35 candidates await outside review and further priority checks.
+No external communications or pushes have occurred.
