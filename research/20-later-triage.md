@@ -43,6 +43,19 @@ lead from this portion of the triage.
 
 ## Other scope cautions
 
+- **20.91:** Sela, [Diophantine Geometry over Groups X](https://arxiv.org/abs/1012.0044),
+  Theorem8.1 explicitly proves that a free product of stable groups is
+  stable. The introduction and the start of Section8 were read; the long
+  proof was not audited. This covers PSL2(Z)=C2*C3 but does not by itself
+  settle SL2(Z)=C4*_C2 C6 or arbitrary virtually free groups. Neither
+  stability under arbitrary finite extensions nor definability of an
+  arbitrary finite-index subgroup has been established here. No answer
+  to any of the three printed subquestions was obtained.
+- **20.100:** The exact source and its bounded cyclic searches are now
+  recorded in `20.100-reduction.md`. The new route proves every torsion-free
+  case and reduces the general fixed-n question to finite abelian groups.
+  Complete finite relation certificates for n=4,5 pass a separate integer
+  presentation checker; n=6 and7 are still being processed.
 - Stability in20.91 is model-theoretic stability. Search results about
   permutation stability, stable cylinders or Morse subgroups are
   unrelated and cannot settle the question.

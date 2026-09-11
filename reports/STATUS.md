@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-11T05:09:01.073246+00:00.
+Updated: 2026-09-11T05:34:26.163888+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **15**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), and **20.90** (a two-generator infinite profinite CA-group mapping onto A5). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T05:09:01.073246+00:00, the order256 extension has 53,054 counts, zero equality hits, 179 reversals, 6 verified live workers and 10 completed ranges. All log checks pass.
+- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T05:34:26.163888+00:00, the order256 extension has 54,018 counts, zero equality hits, 238 reversals, 3 verified live workers and 13 completed ranges. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
@@ -92,6 +92,17 @@ and automorphism order. Five smaller controls also agree. None of the
 60 evaluated parameter triples gives equality.
 
 ## Additional constructions and exclusions
+
+**20.100 partial results:** A positive-length argument proves the assertion
+for every torsion-free group, without commutativity or unique roots. The
+general conjecture at each fixed n reduces to finite abelian groups, with
+counterexample order bounded by p_n*n^(n-1). Exact
+finite certificates now prove the all-group cases n=4,5: independent GAP
+Smith-normal-form checks verify227 and10,493 nodes, with430,298 relation
+implications. The n=6 certificate is complete but its independent check is
+running; n=7 generation is running with explicit bounds. The full arbitrary-n
+conjecture and novelty remain open. See `research/20.100-reduction.md` and
+`research/20.100-review.md`; complete-candidate count remains15.
 
 **20.108(c):** Caranti--Tsang2023 Theorem1.1 already gives a group of order3^10 with GL4(3) inside T(G), hence prime divisor5 outside p(p-1)=6. Prior affirmative result, excluded from new priority; see `research/20.108c-known-consequence.md`. This corrects our earlier provisional status for(c).
 

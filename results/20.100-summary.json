@@ -1,0 +1,49 @@
+{
+  "observed_utc": "2026-09-11T05:35:47.137630+00:00",
+  "results": [
+    {
+      "n": 4,
+      "states": 227,
+      "leaves": 51,
+      "edges": 1056,
+      "uncompressed_sha256": "c5c9cea0bf4ed489450ac8ff92ae9b608a2d233c086e0234706f83088e29a629",
+      "relation_implications": 3953,
+      "status": "VERIFIED"
+    },
+    {
+      "n": 5,
+      "states": 10493,
+      "leaves": 1736,
+      "edges": 87570,
+      "uncompressed_sha256": "ecedb5130dcac78fe523ff9c7a3c1387824d074f813efad141dc1f961ab2ca83",
+      "relation_implications": 426345,
+      "status": "VERIFIED"
+    },
+    {
+      "n": 6,
+      "states": 265104,
+      "leaves": 48758,
+      "edges": 3245190,
+      "uncompressed_sha256": "d7874f87c95915c891d579212783912387a482c176eecf8519b5a51af3fb083e",
+      "status": "VERIFYING",
+      "verified_live_pids": [
+        43528
+      ]
+    },
+    {
+      "n": 7,
+      "status": "GENERATING",
+      "verified_live_pids": [
+        43634
+      ],
+      "last_progress": {
+        "states": 1140000,
+        "leaves": 232424,
+        "edges": 19058959,
+        "seconds": 404.759,
+        "peak_rss_kib": 410256
+      }
+    }
+  ],
+  "all_log_checks_pass": true
+}

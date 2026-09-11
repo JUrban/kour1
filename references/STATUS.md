@@ -4,6 +4,16 @@ Last checked 2026-09-11. A search finding no solution is evidence only of the sc
 
 ## Newly audited older problems
 
+- **20.100:** Sun,
+  [On permutations of {1,...,n} and related topics, v6](https://arxiv.org/abs/1811.10503v6),
+  24 March2021. Theorem1.4 and its full proof, Conjecture4.1 and Remark4.1
+  read; exact supplied Notebook page162 visually checked. The source
+  proves n<=3 and the torsion-free abelian case, and reports bounded
+  cyclic searches for n=4,...,9. Our arbitrary torsion-free theorem,
+  finite abelian counterexample bound p_n*n^(n-1), and all-group n=4,5
+  relation certificates are recorded in `research/20.100-reduction.md`.
+  Limited searches found no matching all-group result; priority remains
+  unconfirmed. The general conjecture is not counted as resolved.
 - **20.90:** The supplied page160 was visually checked. Shumyatsky,
   [arXiv:1809.04462v1](https://arxiv.org/abs/1809.04462v1), Problem1.2,
   is the exact question; introduction and Section5.3 examples read.

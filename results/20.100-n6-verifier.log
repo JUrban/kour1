@@ -1,0 +1,15 @@
+START n=6 prime_bound=7
+CHECK nodes=10000 edges=107520 cpu_ms=34231
+CHECK nodes=20000 edges=220845 cpu_ms=70082
+CHECK nodes=30000 edges=338145 cpu_ms=107374
+CHECK nodes=40000 edges=454485 cpu_ms=144277
+CHECK nodes=50000 edges=573735 cpu_ms=183528
+CHECK nodes=60000 edges=697065 cpu_ms=225330
+CHECK nodes=70000 edges=817905 cpu_ms=266187
+CHECK nodes=80000 edges=940830 cpu_ms=308131
+CHECK nodes=90000 edges=1064625 cpu_ms=350291
+CHECK nodes=100000 edges=1185465 cpu_ms=391793
+CHECK nodes=110000 edges=1309815 cpu_ms=434558
+CHECK nodes=120000 edges=1431210 cpu_ms=476420
+CHECK nodes=130000 edges=1552710 cpu_ms=518437
+CHECK nodes=140000 edges=1675695 cpu_ms=561230

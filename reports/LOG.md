@@ -569,3 +569,42 @@ count is15, with zero externally reviewed new solutions.
 GAP4.16.1 remains available. At05:09:01UTC the order256 search has53,054
 counts,0 equalities,179 reversals,6 verified live workers and10 completed
 ranges; all log checks PASS. No external messages or pushes were made.
+
+## 2026-09-11T05:34:26.163888+00:00 — Structural reduction and certified new fixed-n cases of20.100
+
+Proved the assertion for arbitrary torsion-free groups using positive
+lengths on commensurable cyclic subgroups; unique roots and commutativity
+are unnecessary. The full fixed-n problem reduces to finite abelian
+groups. A graph of selected two-variable relations then shows any failure
+has a finite abelian counterexample of order at most p_n*n^(n-1), where
+p_n is the first prime greater than n+1. Thus each fixed-n assertion is
+decidable by a finite computation.
+
+The Python certificate generator refutes all potential collision patterns
+at n=4 and5. An independent GAP checker uses integer presentation matrices
+and localized Smith-normal-form membership, verifies the transformations
+and unimodularity, and checks every child implication. The certificates
+have227 and10,493 nodes, with1,056 and87,570 collision branches and a total
+of430,298 verified relation implications. These are all-group fixed-n
+proofs, with no group-order search cutoff. Sun2021's prior results are
+n<=3 and torsion-free abelian groups, with higher-n bounded cyclic searches.
+Novelty of the extensions remains unconfirmed; the full arbitrary-n
+conjecture is unresolved, so complete-candidate count stays15.
+
+The final n=6 certificate has265,104 nodes and3,245,190 branches; its
+independent verification is running in GAP PID43528. The n=7 generator
+is running in PID43634 with a10-million-state/two-hour bound. Both commands
+and stdout destinations were revalidated. The authoritative summary is
+`results/20.100-summary.json`; no inference of completion is made from
+process intent or a partial log.
+
+Independent exact controls pass on1,000 Klein bottle lists and400 mixed
+Heisenberg/Klein bottle lists, checking69,760 assignments. Distinct roots
+sharing a square are included. Allowing the excluded order5 yields the
+expected C5 four-element counterexample; all24 assignments fail. The GAP
+checker also rejects a deliberately false equality leaf.
+
+20.91 remains unresolved: Sela's Theorem8.1 concerns free products, not
+arbitrary finite extensions or finite amalgams. At05:34:26UTC the19.20
+order256 search has54,018 counts,0 equalities,238 reverse inequalities,
+3 verified live workers and13 completed ranges; all checks PASS.
