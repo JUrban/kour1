@@ -1904,3 +1904,27 @@ index. This is a corrected research direction, not a new candidate.
 Kopytov2013/2014 also announces the finite-generation case relevant
 to 8.24, without a full proof in the two-page note. Candidate count
 remains 34. The 6.47 bounded extension and n=7 verifiers continue.
+
+
+## 2026-09-11T22:13:36.543949+00:00 — 6.47 extension complete: 21 cases, 12 explicit timeouts
+
+The prescribed 33-job extension completed with actual outer exit 0
+and its completion sentinel. All 21 completed GAP processes have
+actual exit 0, clean logs and sentinels. SmallGroup(32,9), (32,11),
+and all ten selected order-64 cases time out with actual exit -9.
+They carry no associativity conclusion. The 21 complete cases cover
+622 normalized operations and 18,926,930 triples. Of 88 associative
+outputs, 86 have explicit power-map isomorphisms and two are abelian
+with the same exponent; all therefore belong to the original variety.
+
+The 158-file auditor replays these controls and both intermediate
+classification snapshots, and reruns the unchanged 52-file pilot
+auditor. It passes with actual exit 0. Combined completed coverage
+is 26 groups, 911 normalized functions, 98 associative outputs and
+19,449,882 triples. No general answer or new candidate is claimed.
+A separate vector enumeration is being considered to avoid the
+large direct-product bottleneck; frozen inputs and logs are preserved.
+
+The n=7 snapshot at 22:08:08 UTC has 20,550,000 checked nodes, six
+live workers, zero completed shards and 28,860,148 KiB combined RSS.
+Candidate count remains 34. All work is local.

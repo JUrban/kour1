@@ -1,0 +1,277 @@
+{
+  "status": "PASS_EXPLICIT_CERTIFICATE_CHECKS",
+  "cases": [
+    {
+      "n": 6,
+      "id": 1,
+      "operations": [
+        {
+          "function_index": 0,
+          "power_map_isomorphisms": [
+            1
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 21,
+          "power_map_isomorphisms": [
+            5
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        }
+      ],
+      "all_variety_memberships_certified": true,
+      "controls_file": "results/6.47-pilot-6-1-controls.json"
+    },
+    {
+      "n": 16,
+      "id": 7,
+      "operations": [
+        {
+          "function_index": 0,
+          "power_map_isomorphisms": [
+            1
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 7,
+          "power_map_isomorphisms": [
+            5
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 11,
+          "power_map_isomorphisms": [
+            7
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 12,
+          "power_map_isomorphisms": [
+            3
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        }
+      ],
+      "all_variety_memberships_certified": true,
+      "controls_file": "results/6.47-extension-16-7-controls.json"
+    },
+    {
+      "n": 16,
+      "id": 8,
+      "operations": [
+        {
+          "function_index": 0,
+          "power_map_isomorphisms": [
+            1
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 7,
+          "power_map_isomorphisms": [
+            5
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 10,
+          "power_map_isomorphisms": [
+            3
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 13,
+          "power_map_isomorphisms": [
+            7
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        }
+      ],
+      "all_variety_memberships_certified": true,
+      "controls_file": "results/6.47-extension-16-8-controls.json"
+    },
+    {
+      "n": 16,
+      "id": 9,
+      "operations": [
+        {
+          "function_index": 0,
+          "power_map_isomorphisms": [
+            1
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 7,
+          "power_map_isomorphisms": [
+            5
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 11,
+          "power_map_isomorphisms": [
+            7
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 12,
+          "power_map_isomorphisms": [
+            3
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        }
+      ],
+      "all_variety_memberships_certified": true,
+      "controls_file": "results/6.47-extension-16-9-controls.json"
+    },
+    {
+      "n": 27,
+      "id": 3,
+      "operations": [
+        {
+          "function_index": 0,
+          "power_map_isomorphisms": [
+            1
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 1,
+          "power_map_isomorphisms": [
+            2
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 2,
+          "power_map_isomorphisms": [],
+          "abelian": true,
+          "variety_membership_certified": true,
+          "certificate": "abelian_with_same_exponent"
+        }
+      ],
+      "all_variety_memberships_certified": true,
+      "controls_file": "results/6.47-extension-27-3-controls.json"
+    },
+    {
+      "n": 27,
+      "id": 4,
+      "operations": [
+        {
+          "function_index": 0,
+          "power_map_isomorphisms": [
+            1,
+            4,
+            7
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 1,
+          "power_map_isomorphisms": [],
+          "abelian": true,
+          "variety_membership_certified": true,
+          "certificate": "abelian_with_same_exponent"
+        },
+        {
+          "function_index": 2,
+          "power_map_isomorphisms": [
+            2,
+            5,
+            8
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        }
+      ],
+      "all_variety_memberships_certified": true,
+      "controls_file": "results/6.47-extension-27-4-controls.json"
+    },
+    {
+      "n": 32,
+      "id": 10,
+      "operations": [
+        {
+          "function_index": 0,
+          "power_map_isomorphisms": [
+            1
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 7,
+          "power_map_isomorphisms": [
+            5
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 10,
+          "power_map_isomorphisms": [
+            3
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        },
+        {
+          "function_index": 13,
+          "power_map_isomorphisms": [
+            7
+          ],
+          "abelian": false,
+          "variety_membership_certified": true,
+          "certificate": "explicit_power_map_isomorphism"
+        }
+      ],
+      "all_variety_memberships_certified": true,
+      "controls_file": "results/6.47-extension-32-10-controls.json"
+    }
+  ]
+}
