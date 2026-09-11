@@ -1237,3 +1237,24 @@ At 12:44 UTC all six 20.100 n=7 GAP shards were verified live, with
 3,670,000 nodes checked and about 6.04 million KiB combined RSS. No
 shard had completed. Full-certificate hash binding still passes.
 The 48-hour goal remains active; all work and commits remain local.
+
+## 2026-09-11T13:03:32.629553+00:00 — Complete prior consequence for 17.87
+
+Let P be the infinite simple finite-index derived subgroup of
+Nekrashevych's explicit 2018 intermediate-growth group. Its universal
+central extension U=Fprime/[F,R] is perfect and finitely generated.
+A second universal extension, the central commutator argument and
+universality prove H2(U,Z)=0. A direct block-counting proof shows that
+central extensions with finitely generated total group preserve
+subexponential growth even for infinitely generated kernels, a special
+case of Zheng 2020. The quotient P excludes polynomial growth.
+
+This settles the printed construction request as a short consequence
+of prior ingredients; no new priority or outside review is claimed.
+The complete new-candidate count remains 24. Source reading scopes,
+exact hashes and a ten-point logical audit are retained. Early-afternoon triage
+also records the full/stable linear-group distinction in 16.94, the
+finite/torsion distinction in 17.31, RCWA presentation limits, and
+the literal all-groups-variety exception to 17.85. No false general
+conclusion is imported from those leads. The 48-hour goal continues
+and the six 20.100 n=7 verification workers are preserved.

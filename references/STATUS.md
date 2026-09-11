@@ -689,3 +689,24 @@ Proposition 2.6, Lemmas 2.7–2.8 and their displayed proofs read.
 Full paper not audited. Elkasapy–Thom https://arxiv.org/abs/1207.5596
 and Jezernik–Sánchez DOI 10.1016/j.jalgebra.2021.08.014: primary
 abstracts only. No unrestricted noncompact surjectivity theorem imported.
+
+## Problem 17.87
+
+Nekrashevych, *Palindromic subshifts and simple periodic groups of
+intermediate growth*, Annals 187 (2018), 667–719,
+https://annals.math.princeton.edu/wp-content/uploads/annals-v187-n3-p02-p.pdf ,
+DOI 10.4007/annals.2018.187.3.2: introduction, Theorems 1.1–1.2,
+full Section 8.1 definition and Theorem 8.1, Proposition 8.8 proof,
+and portions of the final simplicity argument read. The full
+fragmentation, periodicity and growth proofs remain unaudited.
+Theorem 8.1 supplies the published perfect intermediate-growth seed.
+
+Zheng, https://arxiv.org/abs/2001.07814v1 : initial definitions,
+full Lemma 3.1 proof with Claim 3.2, and Example 3.4 read. No finite
+generation condition on the FC-central kernel is present. Our needed
+central special case is proved by block counting. Full paper not
+audited. The Hopf formula was previously checked in Section 2 of
+Bardakov–Lavrenov–Neshchadim for 19.9. Exact group-theoretic universal
+extension and superperfectness arguments are written in the note.
+Printed page 113 visually checked; hashes and reading limits retained.
+The answer is excluded from the possible-new-priority count.

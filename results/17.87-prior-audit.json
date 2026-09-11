@@ -1,0 +1,43 @@
+{
+  "observed_utc": "2026-09-11T13:03:32.629553+00:00",
+  "status": "PRIOR_THEOREM_DEDUCTION",
+  "problem": "17.87",
+  "answer": "affirmative, with trivial integral Schur multiplier",
+  "new_candidate": false,
+  "construction": "Universal central extension U=Fprime/[F,R] of P=[B,B], with B from Nekrashevych 2018 Section 8.1.",
+  "sources": [
+    {
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v187-n3-p02-p.pdf",
+      "doi": "10.4007/annals.2018.187.3.2",
+      "read": "Introduction and Theorems 1.1-1.2; full Section 8.1 construction and Theorem 8.1; Proposition 8.8 proof; portions of final simplicity argument. Full fragmentation, periodicity and growth proofs not audited."
+    },
+    {
+      "url": "https://arxiv.org/abs/2001.07814v1",
+      "read": "Initial definitions, Lemma 3.1 full proof and Claim 3.2, Example 3.4. Rest of paper not audited. Central special case proved directly in the note."
+    },
+    {
+      "url": "https://arxiv.org/abs/1710.02330",
+      "doi": "10.4310/HHA.2019.v21.n1.a12",
+      "read": "Hopf and exterior-square formulas in Section 2, already used in the recorded 19.9 audit. Full paper not audited."
+    }
+  ],
+  "checks": [
+    "Exact printed question visually read",
+    "Finite-index perfect seed",
+    "Central kernel without rank restriction",
+    "Finite generation of perfect central extension",
+    "Second central extension composition justified by perfectness",
+    "Hopf kernel trivial via universality and section",
+    "Block-counting bound for all radii, correct order of limits",
+    "Nonpolynomial quotient excludes polynomial growth"
+  ],
+  "sha256": {
+    "docs/21tkt.pdf": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911",
+    "references/cache/notebook-page113.png": "7d7440f6ca8c2b6fce0271bc9d6d447fe272dff1959088111bea0371bf41e344",
+    "references/cache/nekrashevych-palindromic-2018.pdf": "17856d47be5990695f985999dde4f7b789e8a81dc9fb16696da0c09b644fa5bb",
+    "references/cache/zheng-fc-central-2020.pdf": "c2e7330d926dfb958888c30934808bc7be1d8a10233a6c8b9fd9eeb2312d95d8",
+    "references/cache/bardakov-lavrenov-neshchadim-2019.pdf": "fe0f10ddcad94dd001791b7e17037a99625df2253b97230733bcae003d7e7d70",
+    "research/17.87-prior-result.md": "1fbff9dbaeca3b991cc08df6aa964a66324ec2ce97c0addd33aa8c94c9a25d5a",
+    "research/17.87-review.md": "eecbf4811c6d4201f3cd8e25112a2ee95157b558d832d5320874d93618cacdb5"
+  }
+}
