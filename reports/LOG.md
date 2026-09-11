@@ -1700,3 +1700,34 @@ were committed as c9499f0. At19:16 UTC all six n=7 workers remained
 live with16,270,000 checked nodes; no complete shard or n=7 proof.
 All work remains local, the48-hour goal remains active, and outside
 review and further priority checks remain required for all31 candidates.
+
+
+## 2026-09-11T19:52:25.821478+00:00 — Extend candidate31 to every classical component of15.65
+
+The analytic obstruction now covers all full U, Sp, O odd, and O+/-
+cyclic and semisimple limits, including both fixed characteristic
+parities. It also treats squarefree characteristic polynomial, resolving
+the source/Notebook definition discrepancy in either convention. The
+cyclic zero is the same quadratic root as before. For semisimple limits,
+explicit alternating-series bounds isolate a zero of the reciprocal
+unitary-order series in(-3/5,-1/2). A zero-free disc for all higher
+factors and a separate positive degree-one linear-group factor prevent
+cancellation. Nonconstant-exponent monodromy handles prefactor zeros
+and the integral-exponent values in the regular semisimple case.
+
+Twenty-three GAP groups give563 paired class tests and69 exact finite
+probability comparisons. The final GAP and outer Python runs exit0,
+with clean completion sentinels. The first GAP run's obsolete-API
+messages and the initial Python table assertion failure are preserved.
+Independent binomial and logarithmic series agree through degree12.
+159 of160 published coefficients match; the odd symplectic SS t^9
+entry-195 conflicts with the exact product and the source's orthogonal
+row and ratio identity, all of which give-193. This is a documented
+source discrepancy, not a discarded failed check or a proof premise.
+
+The original15-file unitary packet remains frozen. The extension has
+a separate proof, review, source images, controls, and hash auditor.
+No new candidate number is added:31 now covers the whole question.
+Priority and independent review remain pending. At19:50 UTC all six
+n=7 workers remain live, with17,150,000 verified nodes and24,160,500KiB
+combined RSS. No shard is complete and no n=7 proof is claimed.

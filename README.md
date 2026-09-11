@@ -12,6 +12,9 @@ of 17.34 is also retained as a consequence of an existing amalgamation theorem
 and excluded from the new-candidate count.
 The 14.22 examples use infinitely generated torsion-free linear
 coefficient groups, as permitted by the printed question.
+Candidate31 now covers all the stated classical limits in Problem15.65;
+the original unitary cyclic packet and its complete extension are retained
+separately.
 See `reports/STATUS.md`, `research/PLAN.md`, and `reports/LOG.md` for current
 evidence and next actions.
 
