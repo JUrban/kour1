@@ -57,3 +57,18 @@ not provide an embedding of Z wr Z.
   candidates with unbounded exponent cannot have only finitely many
   automorphism orbits. No suitable example has been constructed.
 - 11.46 and 21.40: no new result; further primary-literature work needed.
+
+## Further older-problem screen near midnight
+
+- 10.35 produced a complete candidate, recorded separately.
+- 16.28(a) produced a complete candidate over an algebraic closure
+  of F_5(t); (b) is a consequence of existing class-product results.
+- 17.85 literally permits the variety of all groups, whose free
+  groups have torsion-free integral homology in every degree. This
+  trivial observation is not counted as a substantive solution;
+  an intended proper-variety qualification needs checking.
+- 15.89: a graph with leaves can have invertible adjacency on all
+  functions, but fails vertex transitivity. This does not yield a
+  counterexample to the actual question.
+- 11.30: the quarter-turn group from10.35 has an index-four Z^3
+  subgroup and does not by itself give a rank discrepancy.

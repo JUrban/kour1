@@ -166,3 +166,13 @@ representations found no prior resolution. The group itself is familiar;
 only the proposed application and obstruction are candidates for new
 coverage. No external theorem is needed. See research/10.35-review.md
 for exact scope and remaining novelty uncertainty.
+
+## Problem16.28
+
+The exact page99 was visually checked. Guralnick--Malle--Tiep2013,
+https://doi.org/10.1016/j.aim.2012.11.005 , Lemma2.3(b) already
+implies a negative answer to(b); this is excluded from new coverage.
+The introduction, lemma, and opening Section5 arguments were read
+in the author PDF. The candidate for(a) uses an additional scalar
+fiber construction. See research/16.28-review.md for search scope,
+field assumptions, and remaining formulation/novelty uncertainty.

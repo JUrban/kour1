@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-10T23:51:14.219915+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T00:04:28.615824+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -17,6 +17,7 @@ Updated 2026-09-10T23:51:14.219915+00:00. This is a research triage list, not an
 | 21.68 | Abelian extension of E semidirect A4 with a nonmonomial character induced from Q8 semidirect C3. | Fourth complete candidate: order2592; GAP and independent exact character checks passed. |
 | 16.87(a),(b) | Central powers and integer nullspaces produce noninvertible endomorphisms fixing any fewer than r elements. | Fifth complete candidate: a nonabelian nonperiodic variety has free test rank r at every finite rank. Exact substitution certificate passed; review pending. |
 | 10.35 | Quarter-turn semidirect product and a centralizer-algebra obstruction in degree two. | Sixth complete candidate: torsion-free subgroup of GL_2(C) not residually GL_2(Q), even allowing torsion images. Exact matrix controls passed; novelty and outside review pending. |
+| 16.28(a) | Keep a nonclosed class square in a separate infinite-order scalar fiber of every higher power. | Seventh complete candidate over an algebraic closure of F_5(t); field and reducibility assumptions explicit. GAP and Python controls passed. Part (b) is a prior-literature consequence. |
 | 21.42 | Positive gradings of three-generator class-three Malcev Lie algebras. | Negative answer follows from existing 2003 grading and 2021 self-similarity results; independent grading derivation retained as a rediscovery. Excluded from new-theorem count. |
 | 18.43 | Exact modular trace fingerprints of positive binary necklaces, with symbolic certification for collisions. | Lengths 1–36 complete with no collision; detailed counts in results/18.43-summary.json. Independent small checks passed. |
 | 21.130 | Rainbow Hamiltonian cycles in the sum coloring of odd abelian groups. | Finite subset search possible, but avoid highly symmetric cases already checked in literature. |

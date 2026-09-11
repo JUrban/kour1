@@ -232,3 +232,22 @@ novelty and outside review remain outstanding.
 
 GAP4.16.1 was also rechecked at the relocated path. 16 live GAP workers with command lines and range-specific stdout files revalidated; 12657 counts, 0 equality hits, 0 reversals, no errors at snapshot.
 The48-hour goal remains active. No external messages or pushes.
+
+At 2026-09-11T00:04:28.615824+00:00, completed a seventh candidate,16.28(a).
+A closed trace-one class in SL_2 has nonclosed square, with -I a
+missing limit point. Appending a central point at a transcendental
+scalar coordinate produces a closed set for which every power n>=2
+retains that nonclosed square in a distinct closed fiber. The base
+field is an algebraic closure of F_5(t), allowed by the printed
+statement. The example also embeds in SL_4. The part(b) conclusion
+already follows from Guralnick--Malle--Tiep2013Lemma2.3(b), so that
+part is a known-result consequence, excluded from new coverage.
+The proof, assumptions, internal audit, and exact GAP/Python
+certificates are recorded. Novelty and outside review remain.
+
+16 live workers revalidated by command line and range-specific stdout; 15191 counts, 0 equality hits, 4 reverse inequalities; all log-format, uniqueness, range, and error checks passed.
+The first four reverse inequalities in the order256 range occur at
+IDs53042--53045. These are not equality hits or complete answers to
+19.20. A reusable read-only process/log snapshot script now records
+actual count comparisons and validates unique IDs and ranges.
+The48-hour goal remains active; no external contacts or pushes.

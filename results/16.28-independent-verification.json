@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-10T23:57:14.737395+00:00",
+  "finite_fields": [
+    {
+      "prime": 5,
+      "group_order": 120,
+      "trace_one_set_size": 20,
+      "all_square_products_checked": 400,
+      "finite_square_size": 95,
+      "diagonal_factorizations": 3,
+      "minus_identity_absent": true
+    },
+    {
+      "prime": 7,
+      "group_order": 336,
+      "trace_one_set_size": 56,
+      "all_square_products_checked": 3136,
+      "finite_square_size": 335,
+      "diagonal_factorizations": 5,
+      "minus_identity_absent": true
+    },
+    {
+      "prime": 11,
+      "group_order": 1320,
+      "trace_one_set_size": 110,
+      "all_square_products_checked": 12100,
+      "finite_square_size": 1199,
+      "diagonal_factorizations": 9,
+      "minus_identity_absent": true
+    },
+    {
+      "prime": 13,
+      "group_order": 2184,
+      "trace_one_set_size": 182,
+      "all_square_products_checked": 33124,
+      "finite_square_size": 2183,
+      "diagonal_factorizations": 11,
+      "minus_identity_absent": true
+    }
+  ],
+  "tagged_product_controls": [
+    {
+      "power": 1,
+      "tagged_product_size": 21
+    },
+    {
+      "power": 2,
+      "tagged_product_size": 116
+    },
+    {
+      "power": 3,
+      "tagged_product_size": 236
+    },
+    {
+      "power": 4,
+      "tagged_product_size": 356
+    },
+    {
+      "power": 5,
+      "tagged_product_size": 476
+    },
+    {
+      "power": 6,
+      "tagged_product_size": 596
+    },
+    {
+      "power": 7,
+      "tagged_product_size": 716
+    },
+    {
+      "power": 8,
+      "tagged_product_size": 836
+    },
+    {
+      "power": 9,
+      "tagged_product_size": 956
+    },
+    {
+      "power": 10,
+      "tagged_product_size": 1076
+    },
+    {
+      "power": 11,
+      "tagged_product_size": 1196
+    },
+    {
+      "power": 12,
+      "tagged_product_size": 1316
+    }
+  ],
+  "limitation": "Finite arithmetic and exact word checks only; no inference of Zariski density from a finite field.",
+  "script_sha256": "201baa35ecc29fb1d6c3f95f1c7a860a2ee9b587dd100edb594d6962e682216d"
+}
