@@ -453,3 +453,16 @@ Malle--Navarro--Tiep2026, https://arxiv.org/abs/2605.04513 : introduction
 read; its single-power codegree conjecture is distinct from19.108.
 The new working orbit lemma and its partial consequence have no
 established novelty and do not resolve the full Notebook question.
+
+## 11.116
+
+Shevrin2012, *Semigroups with certain finiteness conditions and Chernikov
+groups*, Algebra and Discrete Mathematics13(2),299--306:
+https://admjournal.luguniv.edu.ua/index.php/adm/article/download/706/239 .
+Complete eight-page survey read and cached. Page302 defines Chernikov
+groups, page304 confirms order dimension and the product-of-chains
+equivalence, page306 credits the prior necessity theorem and poses the
+exact sufficiency question11.116 as open. Older proofs cited by the survey
+were not audited. Limited English/Russian problem-number and topic searches
+on11September2026 found no later resolution; priority remains unestablished.
+The new working proof is elementary and proves sufficiency with bound2r[G:D].

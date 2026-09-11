@@ -1,15 +1,17 @@
 # Current status
 
-Updated: 2026-09-11T06:05:06.014179+00:00.
+Updated: 2026-09-11T06:14:41.257028+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
-- Complete candidate resolutions: **15**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), and **20.90** (a two-generator infinite profinite CA-group mapping onto A5). All await outside review and further novelty checks.
+- Complete candidate resolutions: **16**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), and **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T06:05:06.014179+00:00, the order256 extension has 54,559 counts, zero equality hits, 307 reversals, 3 verified live workers and 13 completed ranges. All log checks pass.
+- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T06:14:41.257028+00:00, the order256 extension has 54,746 counts, zero equality hits, 327 reversals, 3 verified live workers and 13 completed ranges. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
+
+**11.116:** An explicit digit bijection turns every coset in a quasicyclic p-group into an integer interval. Subgroups of a product of quasicyclic groups at distinct primes split into primary factors, so their cosets become boxes. Every subgroup of a finite extension is encoded by its finitely many coset fibers. This gives order dimension at most2r[G:D], without a splitting assumption. All40,000 exact coset comparisons and242,344 actual GAP subgroup comparisons pass. Shevrin2012 states the converse as open and supplies the prior necessity direction. See `research/11.116-proof.md` and `research/11.116-review.md`; novelty and outside review remain pending.
 
 **20.90:** The closure of two explicit matrices in SL2(F4[[t]]) is infinite, has abelian centralizers, and reduces onto A5. A separate four-generator example SL2(Z2[omega])/{I,-I} has centralizers which are abelian or pro-2. Both give the required non-prosoluble profinite CN-group. The matrix arguments are complete; independent GAP/Python checks pass, including252 algebra centralizers and all65,536 matrices over the mod-4 companion ring. The characteristic-two CA lemma is prior work, explicitly credited. See `research/20.90-proof.md`, `research/20.90-2adic-proof.md` and `research/20.90-review.md`; novelty and outside review remain pending.
 
@@ -102,7 +104,7 @@ Smith-normal-form checks verify227,10,493 and265,104 nodes, with a total
 of19,524,681 relation implications. The n=7 generator is running with
 explicit bounds. The full arbitrary-n
 conjecture and novelty remain open. See `research/20.100-reduction.md` and
-`research/20.100-review.md`; complete-candidate count remains15.
+`research/20.100-review.md`; complete-candidate count is16 from the separately resolved entries.
 
 **20.108(c):** Caranti--Tsang2023 Theorem1.1 already gives a group of order3^10 with GL4(3) inside T(G), hence prime divisor5 outside p(p-1)=6. Prior affirmative result, excluded from new priority; see `research/20.108c-known-consequence.md`. This corrects our earlier provisional status for(c).
 

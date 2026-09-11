@@ -1,0 +1,349 @@
+Algebra and Discrete Mathematics                                  SURVEY ARTICLE
+Volume 13 (2012). Number 2. pp. 299 – 306
+c Journal “Algebra and Discrete Mathematics”
+
+
+
+
+  Semigroups with certain finiteness conditions
+            and Chernikov groups∗
+                                 L. N. Shevrin
+
+                        Communicated by V. V. Kirichenko
+
+
+       Dedicated to the 100th birthday of Sergei Nikolaevich Chernikov
+
+           A b s t r ac t . The main purpose of this short survey is to show
+        how groups of special structure, which are accepted to be called
+        Chernikov groups, appeared in the considerations of semigroups
+        with certain finiteness conditions. A structure of groups with several
+        such conditions has been described (they turned out to be special
+        types of Chernikov groups). Lastly, a question concerning some
+        special type of Chernikov groups is recalled; this question was raised
+        by the author more than 35 years ago, and it is still open.
+
+
+
+    1. Introduction. One of the main lines in investigations of the
+present writer was devoted to study of semigroups with finiteness con-
+ditions. I recall that, given a class of algebraic systems, by a finiteness
+condition is meant any property which is possessed by all finite sys-
+tems of this class. In the works of the mentioned line, such conditions
+were formulated in terms of subsemigroups or in terms of the lattice of
+subsemigroups of a semigroup. When describing a structure of systems
+with a non-trivial finiteness condition, one should clarify, so to say, a char-
+acter and a degree of “deviations” from the property of being a finite
+system. Applying to the semigroups having been considered, the revealed
+   ∗
+    English version of the paper published in Russian in the book “Algebra and Linear
+Inequalities. To the Centennial of the Birthday of S. N. Chernikov”, Ekaterinburg, 2012.
+Supported by the Russian Foundation for Basic Research, grant 10-01-00524.
+    Key words and phrases: finiteness condition, epigroup, finitely assembled semi-
+group, Chernikov group.
+300               S e m i g ro u p s a n d C h e r n i kov g ro u p s
+
+
+deviations almost always took place in their maximal subgroups. A key
+general result obtained by the author was a result giving a complete re-
+duction to the group case; it will be formulated below. Thereby a further
+clearing the structure of semigroups under consideration or exact interre-
+lations between classes of such semigroups required either references to
+known results about groups or obtaining new group-theoretic results or,
+if there was success neither in the former nor in the latter, raising open
+questions concerning groups. All these three situations occurred in reality
+in a massive of effected investigations. A detailed presentation of the
+relevant rather rich material is given in Chapter IV of the monographs [1]
+and [2] (the latter is not simply an English translation of the former but
+its revised and enlarged version), and the interested reader is referred to
+this chapter. The main purpose of this paper is to narrate briefly how
+groups of special structure, which are accepted to be called Chernikov
+groups (see a definition in Section 3 below), appeared in the considerations
+mentioned. At the end of the paper, I want to recall a question concerning
+some special type of Chernikov groups; this question was raised by the
+author more than 35 years ago, and it is still open.
+
+    2. Reduction Theorem. It is assumed that the reader is acquainted
+with more or less standard algebraic notions used in the paper. I give
+only definitions of several notions which are not well-known. An element
+of a semigroup is called a group element if it is contained in a subgroup
+of the given semigroup. A semigroup is called an epigroup if for any of its
+elements some power of this element is a group element. A semigroup is
+called finitely assembled if it has finitely many non-group elements and
+finitely many idempotents. Thereby a semigroup S is finitely assembled
+if and only if it has finitely many maximal subgroups, say, G1 , . . . , Gn
+(as is known, maximal subgroups are mutually disjoint), and the set
+S \ (G1 ∪ . . . ∪ Gn ) is finite. If here all groups G1 , . . . , Gn possess some
+property θ (in other words, are θ-groups), then we say that S is finitely
+assembled from θ-groups. Any finitely assembled semigroup is obviously
+an epigroup.
+    By a basis of a semigroup S we mean an irreducible, i.e. minimal,
+generating set of S.
+    We need the following requirements which may be satisfied for
+a semigroup-theoretic property θ:
+   A) any subsemigroup of a θ-semigroup is a θ-semigroup;
+   B) any θ-semigroup has no unique infinite basis;
+   C) any semigroup covered by a finite set of θ-subsemigroups is itself
+       a θ-semigroup.
+                           L. N. Shevrin                                301
+
+     A general result mentioned in Section 1 is formulated as follows.
+     Let θ be a finiteness condition satisfying the requirements A)–C) listed
+above. An epigroup is a θ-semigroup if and only if it is finitely assembled
+from θ-groups.
+     This statement (let us call it Reduction Theorem) gives, under highly
+general requirements on a property θ, a description of θ-epigroups effect-
+ing a complete reduction to groups. This reduction, in particular, can
+be taken into account when constructing counter-examples for proving
+the distinction between some finiteness conditions examined. Namely,
+if, for some properties θ1 and θ2 embraced by Reduction Theorem, there
+exists a θ1 -semigroup S which is not a θ2 -semigroup, then, according
+to this theorem, S necessarily contains a subgroup which is a θ1 -group
+but not a θ2 -group; therefore it is clear that a search of corresponding
+counter-examples has to be done only for groups.
+     A general scheme given in Reduction Theorem embraces many concrete
+finiteness conditions. And for each of them the fulfillment of requirement A)
+is practically always trivial; requirement B) is often fulfilled even in
+a stronger variant: any θ-semigroup has no infinite basis at all (and usually
+it is easy to see); only verification of the fulfillment of requirement C),
+as a rule, is not straightforward and sometimes turns out to be rather
+non-trivial.
+     Note that semigroups with the conditions being studied are in most
+cases automatically periodic, so, in concrete formulations for such cases,
+there is no need to mention the requirement for the semigroup under
+consideration to be an epigroup (since any periodic semigroup is an
+epigroup). Furthermore, since any subsemigroup of a periodic group is
+a subgroup, in formulations for these cases we may mention groups with
+the same condition applying to subgroups. A typical example of such
+a situation is presented by the minimal condition (for subsemigroups and,
+respectively, for subgroups). In accordance with one of the common terms,
+we shall call corresponding semigroups and groups artinian. Artinian
+semigroups are obviously periodic, so a concrete version of Reduction
+Theorem for them looks as follows.
+     A semigroup is artinian if and only if it is finitely assembled from
+artinian groups.
+
+    3. On artinian groups. S. N. Chernikov in his group-theoretic
+works devoted considerable attention to artinian groups. He revealed
+a special type of such groups having a very distinct structure; the term
+“Chernikov group” for such a group has become common for a long time
+(Chernikov in his papers used the term “extremal group”). A group
+302              S e m i g ro u p s a n d C h e r n i kov g ro u p s
+
+
+is called a Chernikov group if it is an extension of a direct product
+of finitely many quasicyclic groups by a finite group. (For the sake of
+accuracy, it is worth noting that with zero quantity of quasicyclic factors
+in a Chernikov group we obtain merely a finite group.) Chernikov has
+found, in particular, that any locally soluble artinian group is necessarily
+a Chernikov group; the same takes place under a weaker condition, namely
+the minimal condition for abelian subgroups. The interested reader can
+find the proofs of the corresponding results in [3], Chapter 4, Section 2,
+in [4], Section 24, or in [5], Section 3.4. Related results concerning groups
+with one or another of the minimal conditions were obtained later by
+some pupils of S. N. Chernikov. The most principal of them is a result
+by V. P. Shunkov (1970) proving that a locally finite artinian group is
+a Chernikov group (the same result was obtained also by O. H. Kegel and
+B. A. F. Wehrfritz in the same year). Shunkov has established a stronger
+result that a locally finite group with the minimal condition for abelian
+subgroups is a Chernikov group; it gave the answer to one question posed
+by Chernikov in 1959.
+    The last result increased the interest to an old question whether in gen-
+eral artinian groups are exhausted by Chernikov groups; this question was
+posed by Chernikov as long ago as in 1940. Counter-examples were con-
+structed only at the junction of the 1970s and 1980s by A. Yu. Ol’shanskii
+owing to the effective technique of geometric methods in combinatorial
+group theory (see his monograph [6]). Among them infinite groups whose
+proper subgroups have prime orders (and in the known examples of such
+groups these orders either distinct or the same). In [1] and [2] we called
+any such infinite group an Ol’shanskii group. The existence of Ol’shanskii
+groups allowed to obtain answers to certain other questions which were
+open for a long time.
+
+     4. On groups of finite breadth. Chernikov groups appeared also
+when the author of the present paper considered a number of other
+finiteness conditions which were not considered for groups before. The
+first of such conditions is finiteness of breadth. The notion of breadth came
+from lattice theory, and the initial definition is given in lattice-theoretic
+terms as applied to the lattice of subsemigroups of a semigroup and the
+lattice of subgroups of a group (as it was already noted, one may read
+more widely in Chapter IV of [1] or [2]). However there is an equivalent
+condition that can be formulated in terms of generating sets. Namely,
+a semigroup [group] is of breadth b if and only if for any b + 1 of its
+elements at least one belongs to the subsemigroup [subgroup] generated
+by the others, and b is the least number with this property. The property
+                           L. N. Shevrin                                303
+
+of being a semigroup of finite breadth is embraced by the scheme given
+in Reduction Theorem, and it easy to ascertain that semigroups and
+groups of finite breadth are periodic. Therefore, according to this theorem,
+a semigroup is of finite breadth if and only is it is finitely assembled from
+groups of finite breadth.
+    Note that this reduction had been proved by the author separately
+for the property of having finite breadth and for several other finiteness
+conditions in the paper “Certain finiteness conditions in the theory of
+semigroups” (Izv. AN SSSR. Ser. Matem., 1965) published before a general
+reduction scheme was found, which took place considerably later. Before
+that paper the author published the paper “Semigroups of finite breadth”
+(In: “Theory of semigroups and its applications”, Saratov Univ., 1965),
+where semigroups and groups satisfying this condition and some related
+conditions were first studied.
+    What can one say about groups of finite breadth? Some general prop-
+erties of such groups had been revealed in the paper “Semigroups of finite
+breadth” mentioned. Among other properties, it was established there that
+any Chernikov group has finite breadth, and for abelian groups (as well as
+for groups of a certain wider class) finiteness of breadth is equivalent to
+the property of being an artinian group. Examples of groups showing dif-
+ference of these two properties were unknown, which impelled the author
+to pose two questions about the fulfillment of possible implications con-
+necting these finiteness conditions. These questions were formulated in the
+paper “Semigroups of finite breadth” and were included in a list of seven
+open questions about possible implications between several finiteness
+conditions given in the paper “Certain finiteness conditions in the theory
+of semigroups” mentioned above. They were included also in the first edi-
+tion of “Kourovka Notebook (Unsolved problems of group theory)”, 1965;
+these are questions 1.81 a) and b). Counter-examples giving negative
+answers to them were constructed in the 1980s by Ol’shanskii’s pupils
+G. S. Deryabina and S. V. Ivanov. Note that Ol’shanskii groups did not
+give answers to these questions; indeed, any Ol’shanskii group is artinian
+and has breadth 2. Soon Ivanov and V. N. Obraztsov (also Ol’shanskii’s
+pupil) constructed examples of groups giving negative answers to a num-
+ber of other questions about possible implications between the finiteness
+conditions (and their combinations) considered by the author; see details
+and references in Chapter IV of [1] or [2], an indication to the solution
+of the first two question of the author is also given in [6].
+    Taking into account known properties of groups of finite breadth and
+the result by Shunkov mention above, one can prove that a locally finite
+group has finite breadth if and only if it is a Chernikov group. So for
+304               S e m i g ro u p s a n d C h e r n i kov g ro u p s
+
+
+locally finite groups finiteness of breadth and the property of being an
+artinian group are equivalent.
+    The author have also established that a locally finite group has at
+most countable the subgroup lattice if and only if it is a Chernikov group.
+    In view of Reduction Theorem we obtain the following consequence
+from the group-theoretic results given above. The following conditions for
+a locally finite semigroup S are equivalent: (1) S is artinian, (2) S has
+finite breadth, (3) S has at most countable the subsemigroup lattice, (4) S is
+finitely assembled from Chernikov groups.
+
+    5. Three more lattice finiteness conditions. The first two of the
+conditions considered below distinguish special types of Chernikov groups
+in the class of all groups; the third one distinguishes a special type
+of such groups in the class of locally finite groups. We start with necessary
+definitions concerning partially ordered sets. We call a partially ordered set
+(poset) narrow if in it any antichain is finite. If the powers of such a poset P
+are bounded by a natural number, then P is said to be of finite width and
+the greatest power of antichains is called the width of P . The dimension
+of a poset hP, ⩽i is the least cardinal number δ such that the relation ⩽ is
+the set intersection of δ linear orders on P (or, equivalent, P is embedded
+in a direct product of δ chains).
+    When considering semigroups [groups] with just the listed restrictions
+on the subsemigroup [subgroup] lattice, let us arrange to transfer the pred-
+icate in the corresponding term from the lattice mentioned to a semigroup
+[group] itself. So, we shall speak about narrow semigroups and groups as
+well as about semigroups and groups of finite width. Note that the term
+“narrow” as applied to lattices, semigroups and groups was introduced
+in [2], while in the monograph [1] and two preceding works, where narrow
+semigroups and groups were considered (a supplement to the paper “Semi-
+groups of finite breadth”, 1971, and the survey “Semigroups and their
+subsemigroup lattices” written jointly with A. J. Ovsyannikov, 1983),
+instead of the adjective “narrow” the prefix N F was used (which was
+definitely less successful), i.e. the terms “N F -lattice”, “N F -semigroup”,
+“N F -group” appeared there.
+    As to the property of having finite dimension, it is advisable to speak
+not “semigroups of finite dimension” but “semigroups of finite lattice
+dimension” (and the same for groups); the reason is that the first term
+for groups and semigroups was used in literature in another sense, see
+comments in Chapter IV of [1] or [2].
+    5.1. Narrow semigroups and groups. The property of being a nar-
+row semigroup is embraced by the general reduction scheme described in
+                           L. N. Shevrin                                 305
+
+Section 2, and it is easy to ascertain that narrow semigroups are periodic
+and artinian. An exhaustive description of infinite narrow groups is given
+by the following theorem.
+     An infinite group is a narrow group if and only if it is the direct
+product of a finite group and finitely many quasicyclic groups for distinct
+primes not dividing the order of the finite factor.
+     Note that in the proof of this theorem some results of Chernikov’s
+paper “Infinite groups with finite layers” (Matem. Sb., 1948) are essentially
+used.
+     As it is seen, narrow groups represent a special type of Chernikov
+groups and, in particular, have finite breadth. In view of Reduction
+Theorem we obtain that any narrow semigroup is a semigroup of finite
+breadth. It is worth noting that this implication cannot be deduced
+only from lattice-theoretic considerations; indeed, there exist examples
+of narrow lattices which are not of finite breadth.
+     5.2. Semigroups and groups of finite width. From definitions it
+directly follows that any semigroup of finite width is a narrow semigroup.
+But the property of being a semigroup of finite width is not embraced
+by our general reduction scheme; namely, requirement C) is not fulfilled
+for this property (there exist counter-examples). However requirements A)
+and B) are obviously fulfilled. Then, in view of the necessity part of Reduc-
+tion Theorem (I did not distinguish it separately above), any semigroup
+of finite width is finitely assembled from groups of finite width. This nec-
+essary condition is not sufficient for the given property (counter-examples
+exist), so the search of a necessary and sufficient condition is retained as
+an unsolved problem.
+     An exhaustive description of infinite groups of finite width is given
+by the following theorem based naturally on the theorem from Section 5.1.
+     An infinite group is a group of finite width if and only if it is the
+direct product of a finite group and a quasicyclic group for some prime
+not dividing the order of the finite factor.
+     5.3. Semigroups and groups of finite lattice dimension. It can
+be proved that any lattice of finite dimension has finite breadth (which
+is not greater than dimension), therefore any semigroup [group] of finite
+lattice dimension is a semigroup [group] of finite breadth and, in particular,
+periodic. The property of being a semigroup of finite lattice dimension
+is embraced by our general reduction scheme, so, in view of Reduction
+Theorem, a semigroup is of finite lattice dimension if and only if it is
+finitely assembled from groups of finite lattice dimension.
+     The problem of describing arbitrary groups of finite lattice dimension
+seems unrealistic; I may note in this connection that any Ol’shanskii group
+306                S e m i g ro u p s a n d C h e r n i kov g ro u p s
+
+
+is of lattice dimension 2. However for locally finite groups, the problem
+indicated, in all likelihood, can be solved in an exhaustive way. This claim
+is explained by the following theorem together with a hypothesis attached
+to it.
+    Any locally finite group of finite lattice dimension is an extension
+of a direct product of finitely many quasicyclic groups for distinct primes
+by a finite group.
+    Hypothesis: the converse statement is valid as well, i.e. any group
+of the indicated structure is of finite lattice dimension.
+    The formulated result was obtained by the author in the mid 1970s
+and reported (together with the hypothesis) in a special course “Periodic
+semigroups” that was being delivered at Ural State University those years.
+It was announced (again with the hypothesis) in “Abstracts of the XI
+All-Union Symposium on Group Theory”, 1989, and its proof was first
+published in [1]. A question about the validity of this hypothesis was in-
+cluded in the 11th edition of “Kourovka Notebook”, 1990 (question 11.116)
+as well as in the monographs [1] and [2] (question 13.10.4). It is still open.
+                                   References
+[1] Shevrin L. N., Ovsyannikov A. J. Semigroups and Their Subsemigroup Lattices.
+    Sverdlovsk, Ural University Press, Part 1, 1990, Part 2, 1991 (in Russian).
+[2] Shevrin L. N., Ovsyannikov A. J. Semigroups and Their Subsemigroup Lattices.
+    Dordrecht, Kluwer Academic Publishers, 1996.
+[3] Chernikov S. N. Groups with Given Properties of System of Subgroups, Moscow,
+    Nauka, 1980 (in Russian).
+[4] Kargapolov M. I., Merzlyakov Yu. I. Fundamentals of the Theory of Groups. 3rd
+    edition, Moscow, Nauka, 1982 (in Russian). English transl. of the 2nd edition:
+    New-York, Springer-Verlag, 1979.
+[5] Robinson D. J. S. Finiteness Conditions and Generalized Soluble Groups. Parts 1, 2.
+    Berlin, Springer-Verlag, 1972.
+[6] Ol’shanskii A. Yu. Geometry of Defining Relations in Groups. Moscow, Nauka,
+    1989 (in Russian). English transl.: Dordrecht, Kluwer Academic Publishers, 1991.
+
+
+                         C o n tac t i n f o r m at i o n
+Lev N. Shevrin                Institute of Mathematics and Computer Science,
+                              Ural Federal University, Lenina 51,
+                              620083 Ekaterinburg, Russia
+                              E-Mail: Lev.Shevrin@usu.ru
+
+Received by the editors: 07.05.2012
+and in final form 18.05.2012.
+

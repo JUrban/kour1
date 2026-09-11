@@ -623,3 +623,33 @@ with5,790,000 states at observation and its original10-million-state and
 two-hour bounds. No incomplete certificate is counted or staged.
 The19.20 order256 snapshot has54,559 counts,0 equalities,307 reversals,
 3 verified live workers and13 completed ranges; all log checks pass.
+
+## 2026-09-11T06:14:41Z — Candidate affirmative resolution of11.116
+
+A digit-place reversal gives a fixed bijection C_(p^infinity)->N_0 under
+which every coset of every subgroup is an interval. Distinct-prime primary
+factors turn all cosets in D into boxes. The fibers of every H<=G in the
+[G:D] fixed cosets are empty or cosets of H intersect D. Endpoint inclusion
+therefore embeds the whole subgroup lattice in2r[G:D] chains; explicit
+coordinate-priority linear orders realize its order. Finite groups are
+handled separately. The proof covers nonsplit extensions and infinite H.
+
+The source statement was visually checked. Shevrin2012's entire eight-page
+survey confirms the definition, exact order-dimension convention, and the
+prior necessity theorem, while stating our sufficiency assertion as open.
+Limited later searches found no resolution; novelty remains unconfirmed.
+The proof and a separate internal audit are written. Complete candidate
+count is now16; externally reviewed new solutions remain0.
+
+Python passes2,056 finite coset encodings and40,000 exact quasicyclic coset
+comparisons, including whole-group cosets, with negative controls for
+ordinary numerical order and repeated-prime diagonal subgroups. GAP passes
+all792 subgroups,2,176 fibers and242,344 ordered pairs across six actual
+groups, including generalized quaternion, mixed-prime and nonabelian
+quotient cases. It checks both coordinate inclusion and the intersection
+of the constructed linear orders. No failed initial run occurred.
+
+The20.100 n=7 generator remains live at7,250,000 states with its original
+10-million-state/two-hour bound; n=4,5,6 remain fully verified. The19.20
+order256 snapshot has54,746 counts,0 equalities,327 reversals,3 verified
+live workers and13 completed ranges. No pushes or external messages.
