@@ -380,3 +380,16 @@ independent tensor proof repairing an unjustified source step) and
 limitations are explicit. The portfolio remains ten complete candidates.
 
 Order256 snapshot 2026-09-11T02:06:12.707134+00:00: 36,335 counted, 0 equality hits, 84 reverse inequalities, 12 live workers, 4 completed ranges, all checks PASS. The goal remains active through2026-09-12 20:56:46 UTC.
+
+At 2026-09-11T02:22:25.751324+00:00, completed the eleventh candidate resolution,17.101.
+A multiple HNN extension and an induced-module quotient extend any set
+of isomorphisms between subrepresentations. The Bass–Serre tree and a
+finite-support leaf argument prove injectivity of the original module.
+Countable iteration gives a homogeneous extension without changing the
+coefficient ring, valid even over commutative rings with non-split module
+inclusions. The exact question and the ordinary-induction obstacle were
+confirmed in Aladova--Gvaramia--Plotkin2012, Definition5.8/Problem5.11.
+Python tree and module controls pass, as do independent GAP Laurent
+controls after correcting a finite-field versus polynomial zero mismatch
+in the verifier. Internal audit written; novelty and outside review
+remain pending. The48-hour goal remains active, with local commits only.

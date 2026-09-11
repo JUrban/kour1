@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-11T02:06:12.707134+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T02:22:25.751324+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -25,6 +25,7 @@ Updated 2026-09-11T02:06:12.707134+00:00. This is a research triage list, not an
 | 16.60 | Tensor flip and the projection onto invariant vectors bound twisted involutions. | Full affirmative result already claimed in May2026. Independent direct argument retained, with a source proof gap identified and repaired. Excluded from new-candidate count. |
 | 17.25(b) | Substitute27/7 in Kim--Koberda Theorem1.4(1). | Prior affirmative consequence. Full computational proof not audited; part(a) remains unresolved here. |
 | 17.33 | Affine virtually abelian groups with finite abelianization and local embeddings in powers of the Klein bottle group. | Tenth complete candidate: the quasivariety has infinite axiomatic rank. Finite-presentation and local-map proofs are explicit; exact Python and independent GAP controls pass. Novelty and outside review pending. |
+| 17.101 | Multiple HNN extension with a module quotient indexed by the Bass–Serre tree. | Eleventh complete candidate affirmative answer over every fixed commutative coefficient ring. The tree proves injectivity and stable letters persist through the homogeneous union. Exact controls pass; novelty and outside review pending. |
 | 17.34 | A class-preserving PBW module gives a strong self-amalgam over a divisible subgroup. | Independent proof retained, but the answer already follows from the fixed-class filtered Lie amalgamation theorem of d'Elbee--Muller--Ramsey--Siniora (2023/2024). Excluded from the new-candidate count. |
 | 21.42 | Positive gradings of three-generator class-three Malcev Lie algebras. | Negative answer follows from existing 2003 grading and 2021 self-similarity results; independent grading derivation retained as a rediscovery. Excluded from new-theorem count. |
 | 18.43 | Exact modular trace fingerprints of positive binary necklaces, with symbolic certification for collisions. | Lengths 1–36 complete with no collision; detailed counts in results/18.43-summary.json. Independent small checks passed. |

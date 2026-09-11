@@ -309,3 +309,17 @@ research/17.25b-known-consequence.md.
 the SU(3) circle-amalgamation experiments do not establish the general
 Notebook assertion. Associated repository and seminar descriptions were
 also screened, but full proofs and code remain unaudited.
+
+## Problem17.101
+
+Aladova--Gvaramia--Plotkin, *Logic in representations of groups* (2012),
+https://alglog.org/51-60/51/51N1-1.pdf , Definition5.8 and Problem5.11
+match the Notebook exactly and leave the embedding question open there.
+The introduction, Section2.1, and the relevant Section5.2 discussion
+were read; the remaining theory was not fully audited. The proposed
+module quotient addresses the stated difficulty with ordinary induction.
+Gvaramia--Plotkin2004 Section1.1 also confirms the fixed-ring category.
+The standard multiple HNN and tree statements were checked in
+https://arxiv.org/abs/2512.10800 . See research/17.101-review.md for
+exact reading scope, failed full-text downloads, and search limitations.
+Novelty remains unconfirmed.
