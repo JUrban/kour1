@@ -1007,3 +1007,24 @@ The14.24 deduction also makes the asymmetry explicit: its reverse
 minimal conjugator norm is two, while the forward minimum is r. The
 proof and updated hash are retained. Main ongoing computations now use
 two CPUs, plus the negligible audit watcher, within the resource limits.
+
+## 2026-09-11T10:41:00.060326+00:00 — Completed19.20 coverage through511
+
+The last job finished while the audit watcher was being launched.
+All356 jobs and the controller exited successfully. The watcher ran
+both final audits immediately and exited zero at10:39:27 UTC.
+All29,700 extension IDs are covered exactly; all514 abelian skips match
+the independent classification-based reconstruction. The extension
+has29,186 nonabelian counts, zero equalities, and58 reversals.
+
+The three disjoint completed ranges therefore cover every one of the
+91,774 nonabelian groups through order511: zero equality cases and
+469 reverse inequalities. All source-summary hashes agree. This does
+not solve the arbitrary finite-group equality question. The final
+logs, state and audits are now retained locally.
+
+The20.100 n=7 generator remains the only main running computation,
+with39,160,000 visited states at10:40 UTC and no completed proof
+certificate. The21 complete new candidates still await outside review
+and further novelty checks. No pushes or outside communications.
+The research deadline remains2026-09-12 20:56:46 UTC.

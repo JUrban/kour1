@@ -9948,7 +9948,7 @@
       "order": 384,
       "low": 19969,
       "high": 20169,
-      "status": "running",
+      "status": "completed",
       "output": "/project/results/19.20-extension-order384-ids19969-20169.log",
       "command": [
         "/project/gap-4.16.1/gap",
@@ -9969,7 +9969,8 @@
         "scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318",
         "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"
       },
-      "pid": 69368
+      "pid": 69368,
+      "returncode": 0
     }
   ],
   "warning": "Recorded state is not liveness evidence; snapshot checks /proc command and stdout."

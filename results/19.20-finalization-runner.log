@@ -1,0 +1,45 @@
+WAIT_FOR_FINAL_AUDIT 2026-09-11T10:39:26.563609+00:00
+{
+  "observed_utc": "2026-09-11T10:39:26.808544+00:00",
+  "status": "COMPLETE_BOUNDED_SEARCH",
+  "catalogue_groups": 29700,
+  "jobs": 356,
+  "completed_jobs": 356,
+  "live_workers": 0,
+  "all_log_checks_pass": true,
+  "counted": 29186,
+  "skipped_abelian": 514,
+  "equalities": 0,
+  "reversals": 58
+}
+{
+  "status": "COMPLETE_BOUNDED_SEARCH",
+  "observed_utc": "2026-09-11T10:39:27.205482+00:00",
+  "orders": [
+    257,
+    511
+  ],
+  "total_library_groups": 29700,
+  "nonabelian_counted": 29186,
+  "independently_reconstructed_abelian": 514,
+  "nonabelian_equalities": 0,
+  "reverse_inequalities": 58,
+  "abelian_log_sha256": "3ebbe129f9a92115e52011e9650ba3bf95ecff48a104e48b872b510604cf9434",
+  "scope": "All nonabelian SmallGroups entries of orders257 through511. All skipped abelian IDs independently reconstructed from partitions of prime exponents. No conclusion for arbitrary finite groups."
+}
+{
+  "status": "COMPLETE_NONABELIAN_COVERAGE_THROUGH_ORDER_511",
+  "observed_utc": "2026-09-11T10:39:27.268191+00:00",
+  "nonabelian_counted": 91774,
+  "nonabelian_equalities": 0,
+  "reverse_inequalities": 469,
+  "initial_abelian_equality_controls": 493,
+  "independently_reconstructed_abelian_skips": 536,
+  "source_summaries": {
+    "results/19.20-summary.json": "a6dbb409751518bb8aeb41a874f8f12f0542377984ea0fa62fd0c87d28310b7d",
+    "results/19.20-order256-summary.json": "a8c7df5fed42ed487200e02932363cd0e98c4d936b48c9ee52e4bf0343e91478",
+    "results/19.20-orders257-511-summary.json": "a819551c9a1aadca6ff9be9b196a61e59c5502ff7b041605d641f435c12b6060"
+  },
+  "scope": "Every nonabelian group through order511 is in the covered SmallGroups catalogue. This is exact bounded computational evidence, not a proof of the general equality question. Separate larger structural examples are not included in these totals."
+}
+FINAL_AUDITS_PASS 2026-09-11T10:39:27.273611+00:00
