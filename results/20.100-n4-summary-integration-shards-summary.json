@@ -1,0 +1,47 @@
+{
+  "status": "VERIFIED",
+  "n": 4,
+  "prime_bound": 5,
+  "certificate_sha256": "63fedef4dfca36a5fc7c12b3f5bad577c4250a6fe12fba1ac908207f4b90238c",
+  "uncompressed_sha256": "c5c9cea0bf4ed489450ac8ff92ae9b608a2d233c086e0234706f83088e29a629",
+  "checker_sha256": "a5e698d9e27d17096eff7898f93781edd607db41d47b7b500d1a0783416f29de",
+  "shards": [
+    {
+      "n": 4,
+      "index": 0,
+      "shards": 3,
+      "total_nodes": 227,
+      "checked_nodes": 76,
+      "leaves": 20,
+      "edges": 336,
+      "relation_implications": 1281
+    },
+    {
+      "n": 4,
+      "index": 1,
+      "shards": 3,
+      "total_nodes": 227,
+      "checked_nodes": 76,
+      "leaves": 19,
+      "edges": 342,
+      "relation_implications": 1269
+    },
+    {
+      "n": 4,
+      "index": 2,
+      "shards": 3,
+      "total_nodes": 227,
+      "checked_nodes": 75,
+      "leaves": 12,
+      "edges": 378,
+      "relation_implications": 1403
+    }
+  ],
+  "totals": {
+    "checked_nodes": 227,
+    "leaves": 51,
+    "edges": 1056,
+    "relation_implications": 3953
+  },
+  "completed_utc": "2026-09-11T07:36:47.521269+00:00"
+}

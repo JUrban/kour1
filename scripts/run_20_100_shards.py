@@ -101,6 +101,7 @@ def main():
         metadata = json.loads(log.splitlines()[0])
         assert metadata['certificate_sha256'] == digest and metadata['checker_sha256'] == checker_digest
         matches = re.findall(pattern, ' '.join(log.split()))
+        assert log.count('PASS_SHARD') == 1
         assert len(matches) == 1
         values = list(map(int, matches[0]))
         assert values[:4] == [n, job['index'], args.shards, node_count]

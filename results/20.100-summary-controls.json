@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "controls": [
+    "actual_three_part_proof",
+    "actual_single_checker",
+    "fixture_replays_verified_counts",
+    "all_parts_without_aggregate_not_verified",
+    "partial_parts_not_verified",
+    "reused_pid_rejected",
+    "aggregate_with_missing_part_rejected",
+    "duplicate_pass_rejected",
+    "wrong_partition_rejected",
+    "stale_certificate_hash_rejected",
+    "error_after_pass_rejected",
+    "aggregate_count_tampering_rejected",
+    "uncompressed_hash_tampering_rejected",
+    "changed_checker_rejected",
+    "aggregate_without_launch_state_rejected",
+    "completed_certificate_without_checker_pending",
+    "bounded_stop_not_verified",
+    "unexplained_stop_not_verified",
+    "counterexample_requires_verification"
+  ],
+  "count": 19,
+  "scope": "Status evidence and corruption controls; no new mathematical certificate."
+}
