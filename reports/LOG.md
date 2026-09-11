@@ -1543,3 +1543,21 @@ sentinel and exit0; the corrected local-variable run is clean and0.
 At17:02:42 UTC the six n=7 certificate workers remained live with
 12,400,000 total checked nodes and17,640,692KiB combined RSS. No
 shard was complete. Work and commits remain local only.
+
+
+## 2026-09-11T17:15:50.515703+00:00 — Later triage and definition checks
+
+Recorded unresolved9.1,8.4,9.65 and neighboring routes in
+`research/triage-2026-09-11-late-afternoon.md`. Corrected two
+potentially misleading research notes: Cameron's base-two version
+of9.70 is equivalent to the Notebook stabilizer-order alternative;
+the weaker condition concerns a regular induced constituent with
+a possible kernel. The downloaded source is the1975 proceedings
+chapter, not the1981 Bulletin survey. Cameron's current page dated
+May2026 still lists the base-two conjecture.
+
+For10.8, Schneider--Thom2018 explicitly warns that the natural UEB
+group-ring multiplication is jointly continuous exactly for SIN
+groups. Dobrowolski2015 supplies a non-Hausdorff action obstruction,
+but no reduction from an arbitrary ring embedding to that particular
+permutation module was obtained. No additional result is counted.

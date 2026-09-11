@@ -976,3 +976,15 @@ prior context; the general cyclic-coset coordinate criterion is proved
 without importing them. Four PDF/text pairs and five source images
 are retained. Exact reading limits and priority caveats are in the
 audit; the full packet is bound in `results/9.45-summary.json`.
+
+
+## Later scope checks
+
+Exact source limits for9.1,9.70 and10.8 are recorded in
+`research/triage-2026-09-11-late-afternoon.md`. The downloaded CWI
+file is the1975 combinatorial-group-theory proceedings; only the
+Cameron subrank passage was read. The current Cameron conjecture
+page is dated13May2026. Schneider--Thom2018 was consulted for UEB
+convolution and its explicit SIN restriction, and Dobrowolski2015
+for the stated incompatible action on a direct-sum group. Neither
+topological construction was claimed to settle the general10.8.
