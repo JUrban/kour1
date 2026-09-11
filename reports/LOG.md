@@ -340,3 +340,15 @@ Order256 snapshot 2026-09-11T01:20:27.451407+00:00: 30,421 groups,
 0 equality hits, 82 reverse inequalities,
 14 live workers and 2 completed ranges, all checks PASS.
 The48-hour goal remains active. No external messages or pushes.
+
+At 2026-09-11T01:28:19.632094+00:00, completed the16.14 search through order256.
+All58,760 groups were covered:55,177 satisfy the rank bound, and
+3,583 have explicit noncentral involutions excluding the hypothesis.
+Every witness was independently reconstructed and tested;340 direct
+small-group controls also pass. An elementary parity argument proves
+the exponent-four subclass, including central direct factors. No
+complete solution or novelty claim is made. The definitions in Kuhn
+and Jezernik differ at p=2 and were checked before importing results.
+No order512 search was launched. The portfolio remains nine complete
+candidates pending novelty and outside review. The48-hour goal remains
+active, and only local files and Git commits have been written.

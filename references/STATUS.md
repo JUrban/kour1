@@ -265,3 +265,15 @@ were not audited. The2004 StudiaLogica paper was located at abstract
 level only. No prior perfect central-product example or resolution was
 found in a limited English/Russian search. Exact reading scope and
 public links are in research/16.20-review.md. Novelty remains pending.
+
+## Problem 16.14
+
+Jezernik, *On p-central groups*, https://arxiv.org/abs/1209.3467 ,
+introduction read; his p=2 hypothesis is Omega_2(G)<=Z(G), stronger
+than the printed question. Kuhn, *Primitives and central detection
+numbers in group cohomology*, https://arxiv.org/abs/math/0612133 ,
+introduction and selected Section9 examples read; his definition does
+match central involutions, but d_0 and d_1 are cohomological numbers.
+Full proofs were not audited. Initial exact-problem/rank searches did
+not locate a resolution. The bounded search and elementary exponent-four
+proof carry no novelty claim. See research/16.14-plan.md for scope.

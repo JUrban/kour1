@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-11T01:22:03.231079+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T01:28:19.632094+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -19,6 +19,7 @@ Updated 2026-09-11T01:22:03.231079+00:00. This is a research triage list, not an
 | 10.35 | Quarter-turn semidirect product and a centralizer-algebra obstruction in degree two. | Sixth complete candidate: torsion-free subgroup of GL_2(C) not residually GL_2(Q), even allowing torsion images. Exact matrix controls passed; novelty and outside review pending. |
 | 16.28(a) | Keep a nonclosed class square in a separate infinite-order scalar fiber of every higher power. | Seventh complete candidate over an algebraic closure of F_5(t); field and reducibility assumptions explicit. GAP and Python controls passed. Part (b) is a prior-literature consequence. |
 | 14.22 | Finite coefficient supports and torsion-free amalgams separate a radical commutator from every finite isolated closure. | Eighth complete candidate, with G=Q or the nonabelian linear group Q * Z. Both groups are infinitely generated; exact polynomial-matrix and normal-form controls pass. Novelty and outside review pending. |
+| 16.14 | Central involutions versus generator rank; quadratic squaring for exponent four. | All58,760 groups through order256 checked, no counterexample; 3,583 explicit exclusion witnesses replayed and340 direct small controls pass. Exponent-four positive subclass proved. General question unresolved; no novelty claim. |
 | 16.20 | Finite central products of perfect groups realize every normal subgroup as a dominion. | Ninth complete candidate affirmative answer. A group of order 44,029,440 has the 15-element modular nondistributive dominion lattice; a seven-factor variant also gives exactly M3 if every target quasivariety must contain A. GAP and independent binary controls pass; novelty and outside review pending. |
 | 17.34 | A class-preserving PBW module gives a strong self-amalgam over a divisible subgroup. | Independent proof retained, but the answer already follows from the fixed-class filtered Lie amalgamation theorem of d'Elbee--Muller--Ramsey--Siniora (2023/2024). Excluded from the new-candidate count. |
 | 21.42 | Positive gradings of three-generator class-three Malcev Lie algebras. | Negative answer follows from existing 2003 grading and 2021 self-similarity results; independent grading derivation retained as a rediscovery. Excluded from new-theorem count. |
