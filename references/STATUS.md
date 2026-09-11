@@ -466,3 +466,20 @@ exact sufficiency question11.116 as open. Older proofs cited by the survey
 were not audited. Limited English/Russian problem-number and topic searches
 on11September2026 found no later resolution; priority remains unestablished.
 The new working proof is elementary and proves sufficiency with bound2r[G:D].
+
+## 12.56 and 13.12
+
+12.56 uses Droms' graph-group rigidity theorem (1987), whose original AMS
+PDF returned 403. The exact attribution and the stronger Laurence theorem
+were checked in the introduction and Theorem 4.1 of Gutierrez--Piggott,
+*Rigidity of graph products of abelian groups* (2008),
+https://doi.org/10.1017/S0004972708000105 . PDF/text cached locally; full
+rigidity proof not independently audited. The elementary counting deduction
+is written separately and its novelty is not established.
+
+13.12 is exactly Carette, *The automorphism group of accessible groups*,
+Theorem 6.3: https://arxiv.org/abs/0810.0043v3 ; published in 2011 at
+https://doi.org/10.1112/jlms/jdr029 . Introduction, Theorem 1.1, Lemmas
+6.1--6.2 and the complete proof of Theorem 6.3 read. Earlier structural
+proofs and cited inputs remain unaudited. Version 3 corrects Section 4.
+PDF/text cached locally. Exclude this problem from new-result priority.

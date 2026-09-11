@@ -688,3 +688,26 @@ The19.20 order256 search has55,003 counts,0 equalities,345 reversals,
 3 verified live workers and13 completed ranges; all log checks pass.
 Older unsuccessful leads and scope pitfalls are saved in
 research/older-triage-2026-09-11.md. The48-hour goal remains active.
+
+## 2026-09-11T06:48:58Z — Resumed n=7 and older-problem findings
+
+The original n=7 generator stopped at its explicit 10-million-state bound.
+Its closed gzip was fully read, with 9,999,993 complete consecutive nodes
+and no root footer; hash and stop evidence are preserved in the bounded
+summary. The original file and log were renamed, then a new process resumed
+that prefix with a 30-million-state / 7,200-second bound. It has completed
+loading and reached 10.78 million states. No n=7 proof is claimed.
+
+For 12.56, graph counting and the classical Droms/Laurence rigidity theorem
+prove F(n)=n^(Theta(n)), with explicit bounds on log F(n). A derivation and
+separate internal review are saved. This is a quantitative partial answer;
+priority is not established and it does not increase the candidate count.
+For 13.12, Carette's exact prior Theorem 6.3 answers the whole question
+affirmatively. Its proof and scope were checked and the exclusion recorded.
+
+GAP 4.16.1 is revalidated. A first version-print invocation had a shell
+printf escaping error, corrected using a literal heredoc; no research
+calculation was affected. The order-256 search has 55,320 counts, no equality
+hits, 357 reversals, two verified live workers and 14 completed ranges.
+All live-log checks pass. Sixteen complete candidates remain pending review.
+The goal remains active, with no pushes or external communications.

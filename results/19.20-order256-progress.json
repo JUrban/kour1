@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-11T06:25:22.623421+00:00",
+  "observed_utc": "2026-09-11T06:48:58.079711+00:00",
   "workers": [
     {
       "low": 1,
@@ -135,7 +135,7 @@
       "pid": 12152,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 2542,
+      "counted": 2758,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -143,7 +143,7 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 30590
+      "last_counted_id": 30806
     },
     {
       "low": 31555,
@@ -197,17 +197,17 @@
       "low": 42073,
       "high": 45578,
       "pid": 12166,
-      "live_gap": true,
-      "stdout_matches_range_log": true,
-      "counted": 3436,
+      "live_gap": false,
+      "stdout_matches_range_log": false,
+      "counted": 3506,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
-      "done": false,
-      "last_counted_id": 45508
+      "done": true,
+      "last_counted_id": 45578
     },
     {
       "low": 45579,
@@ -247,21 +247,21 @@
       "pid": 12174,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 3463,
+      "counted": 3494,
       "equalities": 0,
-      "reversals": 341,
+      "reversals": 353,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 56056
+      "last_counted_id": 56089
     }
   ],
-  "total_counted": 55003,
+  "total_counted": 55320,
   "total_equalities": 0,
-  "total_reversals": 345,
-  "live_workers": 3,
-  "completed_workers": 13,
+  "total_reversals": 357,
+  "live_workers": 2,
+  "completed_workers": 14,
   "all_log_checks_pass": true
 }

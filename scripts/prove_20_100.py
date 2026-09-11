@@ -152,6 +152,10 @@ def main():
                     else:
                         counts["edges"] += len(pairs)
                     output.write(line)
+                    if len(done) % 100000 == 0:
+                        print(json.dumps({"status": "LOADING_PREFIX", "n": n,
+                                          "completed_nodes": len(done),
+                                          "seconds": time.monotonic()-started}), flush=True)
                 counts["states"] = len(done)
             print(json.dumps({"status": "RESUMED_PREFIX", "n": n, "prime_bound": bound,
                               "source": str(resume), "source_had_root_footer": finished,
