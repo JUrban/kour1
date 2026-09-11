@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "group_order": 12,
+  "quaternion_basis_associativity_checks": 64,
+  "positive_norm_and_inverse_controls": 6561,
+  "faithful_group_product_checks": 144,
+  "quaternion_reduction_product_checks": 256,
+  "group_algebra_elements": 4096,
+  "group_algebra_idempotents": 52,
+  "matrix_quotient_idempotents": 8,
+  "semisimple_quotient_dimension": 5,
+  "radical_power_dimensions": [
+    7,
+    2,
+    1,
+    0
+  ],
+  "projective_indecomposable_controls": [
+    {
+      "module": "trivial_cover",
+      "dimension": 4,
+      "corner_dimension": 4,
+      "corner_radical_dimension": 3,
+      "composition_factors_1_and_2": [
+        4,
+        0
+      ]
+    },
+    {
+      "module": "two_dimensional_cover",
+      "dimension": 4,
+      "corner_dimension": 2,
+      "corner_radical_dimension": 1,
+      "composition_factors_1_and_2": [
+        0,
+        2
+      ]
+    }
+  ],
+  "explicit_nonliftable_idempotent_coefficients": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "note": "No finite test establishes division over Q; the positive norm formula in the proof does."
+}

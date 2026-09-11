@@ -792,3 +792,40 @@ equality hits and 357 reverse inequalities. Actual commands and stdout
 remain verified. Prior 7.31 was resolved affirmatively by Li--Zhu2024;
 its theorem and Section 3 proof were read and the exclusion recorded.
 No pushes or external communications. The 48-hour goal remains active.
+
+## 2026-09-11T08:10:16.295646+00:00 — Candidate counterexample to 21.60 and completed 19.20 range
+
+For G=C3 semidirect C4 with inversion action at p=2, every simple
+F2G-module is a reduction of a simple QG-module. Thus every module class,
+not just the projective indecomposables, satisfies the positive condition
+printed in21.60. Nevertheless Z_(2)G maps onto a rational division
+quaternion order O with J(O)=2O and O/2O=M2(F2). The nontrivial matrix
+idempotents cannot lift. The resulting negative proof is self-contained,
+with a positive norm proving division and an explicit rational simple lift.
+
+This also conflicts with Proposition3.3 in the source preprint. Its
+claimed general Ext^1 reduction isomorphism fails already for two trivial
+C2-lattices over Z_(2); the source display was visually checked and the
+obstruction documented. This is a mathematical discrepancy explicitly
+addressed in the review, not an unexamined use of a conflicting theorem.
+Exact prior searches found no matching resolution, but novelty remains
+unconfirmed. Complete candidate count is now19, all pending outside review.
+
+Both initial verification runs pass. Python checks6,561 norm/inverse
+examples, all144 group products, all256 products of the reduced quaternion
+algebra and all4,096 modular group-algebra elements. GAP independently
+constructs SmallGroup(12,1), its quotient and matrix modules, all52
+idempotents, radical powers7,2,1,0 and both four-dimensional projective
+indecomposables. No broad character-table scan was needed.
+
+All16 order256 workers for19.20 have completed. The final audit matches
+every omitted ID with the22 abelian groups independently constructed from
+partitions of8. There are56,070 nonabelian counts, zero equalities and357
+reversals at order256. Together with the earlier range, this is62,588
+nonabelian groups through256, with zero equalities and411 reversals. The
+completion evidence and all log hashes are committed as16e2886. This
+remains bounded evidence, not a general resolution.
+
+The n=7 generator for20.100 remains active at21.73million visited states
+in the08:02 snapshot. No n=7 proof is claimed. No pushes or external
+communications; the48-hour goal remains active.
