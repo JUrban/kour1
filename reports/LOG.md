@@ -512,3 +512,11 @@ GAP4.16.1 is available. Order256 snapshot at04:21:21UTC:49,939 counts,0 equaliti
 Enumerate all oracle-X finite-generator presentations, take their countable free product, and apply an explicit three-generator HNN construction preserving the X-c.e. relator stream. The HNN associated subgroup isomorphism is certified by a retraction to a rank-two free group, and every generator is eliminated by a fixed computable word. Direct embedding in this universal group proves one direction with one factor and zero extra relators; normal-closure proof enumeration proves the full converse. Mikaelian's prior two-generator theorem provides another route. The Notebook page152 was visually checked. This is a standard-construction consequence, excluded from the13 possible-new-priority entries.
 
 Started an exhaustive20.52 odd-order search through1727: an elementary bound |G|<=27m makes this a complete decision range for m<=64. No conclusion pending output and independent verification. Also started a bounded20.30 character-table screen.
+
+## 2026-09-11T04:39:52.383506+00:00 — Fourteenth complete candidate:20.108(a),(b)
+
+Tsang's2025 theorem leaves SmallGroup(605,5) as one of two specific exceptions. For G=F_11^2:C5 with eigenvalues3,9, the full automorphism group acts trivially on C5, and the full holomorph has an explicit coordinate form. The permutation theta(x,y,k)=(y,3^(-k)x,2k) normalizes it and has an order4 coset. The elementary proof resolves(a) and(b) affirmatively; part(c) remains unresolved.
+
+GAP independently identifies the group, centre and regularity, matches holomorph order7,320,500 to automorphism order12,100, verifies all normalizer generators and checks index4. Python checks all13,200 invertible matrices against four quotient units, all605 points for seven generators and8,000 further parameter choices. The deliberately omitted multiplier fails, as expected. A higher-dimensional family gives unbounded even coset orders; four parameter sets with orders4,6,12,16 pass5,939 affine-basis checks. Full proof and internal review written. Limited searches found no earlier explicit certificate, but novelty and outside review remain pending. Candidate count is now14.
+
+At04:36:28UTC the order256 search has50,952 counts,0 equalities,124 reversals,8 live and8 completed ranges; all checks PASS.

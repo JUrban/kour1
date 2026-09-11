@@ -4,8 +4,8 @@ Objective: solve as many previously unsolved problems in `docs/21tkt.pdf` as pos
 
 Research started 2026-09-10 20:56:46 UTC (active-goal creation). Deadline: 2026-09-12 20:56:46 UTC. Target resource limits: at most 20 computational cores and 100 GB RAM in total.
 
-Thirteen complete candidate resolutions are written for 21.106, 21.132,
-21.121(a), 21.68, 16.87(a),(b), 10.35, 16.28(a), 14.22, 16.20, 17.33, 17.101, 18.76, and 18.92(a),(b), each with a
+Fourteen complete candidate resolutions are written for 21.106, 21.132,
+21.121(a), 21.68, 16.87(a),(b), 10.35, 16.28(a), 14.22, 16.20, 17.33, 17.101, 18.76, 18.92(a),(b), and 20.108(a),(b), each with a
 separate internal audit. All await independent review
 and further novelty checks. An additional small counterexample to 13.19 is
 retained as a rediscovery: a prior paper already implies a negative answer. The independent positive proof
