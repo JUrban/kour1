@@ -1028,3 +1028,15 @@ with39,160,000 visited states at10:40 UTC and no completed proof
 certificate. The21 complete new candidates still await outside review
 and further novelty checks. No pushes or outside communications.
 The research deadline remains2026-09-12 20:56:46 UTC.
+
+## 2026-09-11T10:52:35.636471+00:00 — GAP recheck and prior answer to14.59
+
+Confirmed the user-provided GAP4.16.1 installation through bin/gap.
+The20.100 n=7 generator remains verified live, with40,540,000 states
+at10:50 UTC and no complete certificate. The complete Tent2016 paper
+was read and its construction checked against printed14.59: countable
+sharp3-transitivity, torsion-free two-point stabilizers and no Klein
+four subgroup give a negative answer. This is credited prior work and
+the new-candidate count stays21. Beginning14.67 structural reduction
+and a bounded exact search; no general resolution is claimed.
+All work remains local, with no push or outside communication.

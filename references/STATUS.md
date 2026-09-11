@@ -586,3 +586,15 @@ additional new complete resolution is claimed. The primary abstract
 https://doi.org/10.1093/imrn/rnaf311 was also read; it gives a reduction
 and special cases for Out(F_n), not an imported general Aut(F_n)
 algorithm here. Word and matrix controls are retained.
+
+## Problem 14.59
+
+Tent, *Sharply 3-transitive groups*, Advances in Mathematics286(2016),
+722–728, https://doi.org/10.1016/j.aim.2015.09.018 , primary publisher
+PDF https://ivv5hpp.uni-muenster.de/u/tent/sharp3_advances.pdf . The full
+seven-page paper was read. Theorem2.1 and the preserved fixed-point
+properties give the precise negative deduction in14.59-prior-result.md.
+The absence of Klein four subgroups excludes every PGL2(K) in
+characteristic two except S3, excluded by infinitude. The external
+sharply2-transitive theorem in Corollary2.3 is unnecessary here and
+was not audited. Supplied page78 visually checked; no new priority.

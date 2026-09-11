@@ -14,6 +14,12 @@ Updated: 2026-09-11T10:41:00.060326+00:00.
 - **14.2 restricted searches complete:** 16,146,897 rational pairs give682 integral swaps, all monomial;21,646 degree-changing permutations in249 individual conductor blocks give no integral maps. Independent matrix and actual-group controls pass. General question unresolved.
 - **14.3 combined criteria complete:** all2,750 table names satisfy the required factorization; real characters exclude2,739 names and odd-class roots exclude the13 remaining elements in11 names. Actual-group controls pass. Normal Sylow2 case proved; general problem unresolved, no novelty claim.
 
+**14.59:** Negative by Tent2016 Theorem2.1. The countable construction
+has trivial three-point stabilizers and torsion-free two-point
+stabilizers, and its absence of Klein four subgroups excludes the
+proposed projective linear groups. Full source read and exact deduction
+written; excluded from the new-candidate count.
+
 ## Candidate proofs
 
 **21.107:** The countable group of finite subsets of N under symmetric
