@@ -47,3 +47,53 @@ quasicyclic subgroup in one common interval ordering, then retain every
 fiber of every subgroup in the finitely many cosets of the normal divisible
 subgroup. This avoids any need to choose compatible realizers separately
 for a sequence of finite subgroup lattices.
+
+## Further 12th--15th Issue triage
+
+12.56 now has a quantitative counting partial, and 13.12 is excluded by
+Carette's exact prior theorem; see the separate notes. 14.72 now has a
+complete candidate with a fully computed invariant ring; its success relies
+on keeping proper stabilizers distinct from the full fixed locus.
+
+- **13.54 / 6.55:** The Notebook's Frobenius-group definition requires a
+  splitting G=F semidirect H and the stated kernel description. A malnormal
+  finite subgroup in a free product alone does not supply that structure.
+- **13.3:** Closing a countable subset of a free basis under an idempotent
+  retraction yields a projective retract. It does not establish that the
+  inclusion is a relative free-product factor in an arbitrary variety.
+- **13.17:** Finite-dimensional Engel/Kolchin arguments do not apply to
+  infinite-dimensional irreducible modules. Unitizing a nil associative
+  algebra over Q does not fix this: the nil ideal lies in the Jacobson
+  radical and acts trivially on irreducible unital modules.
+- **13.51:** The arbitrary-family internal-join convention used in 18.92
+  cannot replace the ambient lattice operations in an embedding problem.
+- **14.6:** An older Notebook edition marked the Poznansky route as solved,
+  whereas the supplied edition lists progress only. That search hit is
+  insufficient to override the current statement; no resolution claimed.
+- **14.14:** Prior Culler/Duncan--Howie bounds give the minimum possible
+  commutator length of powers in free groups. Finding this minimum does not
+  classify all admissible pairs. Bereznyuk's 2023 abstract concerns the
+  minimum; its full proof was not read or imported.
+- **14.44:** Reid's primary abstract, https://arxiv.org/abs/0810.5494 ,
+  already excludes soluble counterexamples below order 2000 and of Fitting
+  height at most two. A fresh small-group scan would duplicate that bound.
+- **14.84:** Ordinary free-group primitive inheritance uses a free-factor
+  theorem unavailable in arbitrary varieties. For finite relatively free
+  groups, injective endomorphisms are automorphisms, so part (a) has no
+  examples in locally finite varieties. Neither general part is resolved.
+- **15.30:** Direct products of perfect groups realize arbitrary finite
+  abelian multipliers in unrestricted finite groups. Finite p-groups cannot
+  use this step: their nontrivial abelianizations add tensor-product terms
+  to the multiplier. No p-group realization theorem established.
+- **15.47:** Regular elementary-abelian affine examples automatically have
+  k dividing n-1, and with n a prime power they satisfy the required
+  congruence. They do not provide the requested contrary parameters.
+- **15.52:** Bounds for centreless automorphism towers do not apply to
+  arbitrary finite groups. Transfinite termination does not establish a
+  uniform finite-order bound along the ordinary finite stages.
+- **15.84:** The three parabolics at parameters 3 have a parabolic word
+  A^(-1)BC, since its trace is 2+abc-ab-ac-bc. Moving all three positive
+  parameters below 3 changes this word to an elliptic element near that
+  boundary. Thus an asserted open discrete Schottky neighbourhood would
+  be unjustified. Infinite-order ellipticity alone also does not prove
+  an abstract relation. No free triple was obtained.

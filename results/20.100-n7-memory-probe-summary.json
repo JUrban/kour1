@@ -1,0 +1,24 @@
+{
+  "status": "RESOURCE_MEASUREMENT_ONLY",
+  "source": "results/20.100-n7-bounded-certificate.g.gz",
+  "source_compressed_sha256": "92711a114ee530247dfd3725b4c579b474c803d8a6fc8fe68eebe911e72437aa",
+  "gap_version": "4.16.1",
+  "measurements": [
+    {
+      "nodes": 100000,
+      "reachable_bytes": 20453968,
+      "cpu_ms": 4066
+    },
+    {
+      "nodes": 500000,
+      "reachable_bytes": 102589792,
+      "cpu_ms": 23446
+    },
+    {
+      "nodes": 1000000,
+      "reachable_bytes": 205051944,
+      "cpu_ms": 52518
+    }
+  ],
+  "limitations": "Reachable state-object bytes only; excludes GAP baseline, row cache, Smith workspaces and garbage-collection headroom. Not a proof check."
+}

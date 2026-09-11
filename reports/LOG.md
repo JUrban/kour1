@@ -736,3 +736,22 @@ The n=7 generator remains live at 13.15 million states; no n=7 proof is
 claimed. Order-256 search: 55,483 counts, zero equalities, 357 reversals,
 one verified live worker and 15 completed ranges. All log checks pass.
 No external communications or pushes; the 48-hour goal remains active.
+
+## 2026-09-11T07:08:17Z — Checkpoint and verification resource measurement
+
+The 17th candidate, 14.72, is committed with its explicit global invariant
+ring, internal review and independent finite-field controls. Added an
+explicit no-localization-torsion sentence to the invariant-ring proof.
+Unsuccessful 12th--15th Issue leads and their scope pitfalls are saved.
+
+A resource-only GAP probe retains one million n=7 state objects, measuring
+205,051,944 reachable bytes after 52.5 CPU seconds. This is not proof
+verification and excludes the checker workspaces and runtime overhead.
+The extrapolation and limits are documented before the planned larger
+independent check. The bounded incomplete gzip stays preserved locally;
+only its hash/stop evidence is committed, not an active or final proof.
+
+The n=7 generator is verified live at 13.68 million visited states.
+The order-256 search has 55,523 counts, no equalities, 357 reversals,
+one verified live worker and 15 completed ranges. All log checks pass.
+The 48-hour goal remains active; about 37 hours 48 minutes remain.
