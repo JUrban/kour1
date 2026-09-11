@@ -1,0 +1,1919 @@
+                  R ENDICONTI
+                                    del
+S EMINARIO M ATEMATICO
+         della
+U NIVERSITÀ DI PADOVA
+
+
+F ELIX L EINEN
+Existentially closed LX-groups
+Rendiconti del Seminario Matematico della Università di Padova,
+tome 75 (1986), p. 191-226
+<http://www.numdam.org/item?id=RSMUP_1986__75__191_0>
+
+
+
+
+   © Rendiconti del Seminario Matematico della Università di Padova, 1986, tous
+   droits réservés.
+   L’accès aux archives de la revue « Rendiconti del Seminario Matematico
+   della Università di Padova » (http://rendiconti.math.unipd.it/) implique l’accord
+   avec les conditions générales d’utilisation (http://www.numdam.org/conditions).
+   Toute utilisation commerciale ou impression systématique est constitutive
+   d’une infraction pénale. Toute copie ou impression de ce fichier doit conte-
+   nir la présente mention de copyright.
+
+
+
+
+                 Article numérisé dans le cadre du programme
+               Numérisation de documents anciens mathématiques
+                            http://www.numdam.org/
+                    Existentially Closed Lx- Groups.
+                               FELIX LEINEN (*)
+
+
+
+
+1. Introduction.
+
+
+    Lot SD be a class of groups.                 is existentially closed (e.c.)
+in D, if every system of finitely many equations and inequations with
+coefficients from G, which has a solution in some D-supergroup of G,
+can already be solved in G. If SD is closed under forming subgroups
+
+(D - SID), and if ~ is inductive (i.e., unions of ascending chains of
+D-groups are again D-groups), then every p-group of cardinality N
+is contained in an e.c. p-group of cardinality maxfn, ~o} (cf. J. Hirsch-
+feld and W. H. Wheeler [8], Proposition I.1.3).
+    The aim of this paper is the investigation of the structure of e.c.
+L3i-groups, where 3i is a group class satisfying certain closure proper-
+ties and where L3i denotes the class of all locally-X-groups. This is
+motivated by results of P. Hall [3]            (cf.also O. H. Kegel and
+B. A. F. Wehrfritz [13], Chapter 6) and B. Maier [17] about e.c. groups
+in the classes La- of all locally finite groups and La, of all locally finite
+p-groups. For any class 3i the class L3i is inductive. If 3i =               it
+can be shown by transfinite induction on the cardinality of the ZX-
+
+groups, that LX is the smallest inductive group class containing X.
+    We will always consider classes 3i satisfying
+
+(1) ~ S~ P3i (~ is closed under forming subgroups and exten-
+         =      =
+
+
+
+    sions ; cf. D. J. S. Robinson [21], ~ 1.1),
+as    well   as some   of the following properties:
+
+(2)    cartesian powers of finitely generated (f.g.) X-groups are 3i-groups ;
+
+      (*) Indirizzo dell’A.: Paul-Gerhardt-Str. 7, 6200 Wiesbaden (Germ. Fed.).
+192
+
+
+(2’) direct powers of f.g. £-groups are ~-groups ;
+(3) N - Q3i (3i is closed under forming homomorphic images).
+3i = X3i implies, that 3i contains the cyclic group Cm of order m e N U
+U       if and only if there exists an 3i-group containing an element
+of order m. We denote by nx the set of all primes p such that C~ E 3i.
+Then torsion elements of L3i-groups           are   always RX-elements.
+      Examples for 3i are provided by the following classes:
+(g~:           class of all soluble groups, whose torsion-elements                 are
+               R-elements ( (1 ), (2);     L6n);
+                                             =
+
+
+
+
+6:             class of all soluble groups ( (1 ), (2), (3); L3i     =
+
+
+
+
+$n:            class of all (periodic) n-groups ((1), (2’), (3);                 ~),i
+               class of all locally finite n-groups ( (1 ), (2 ), (3); L3i   =
+
+
+
+
+       u 6):   class of all locally finite-soluble n-groups         ( (1 ), (2), (3 ) ;i
+
+    The greatest problem when investigating e.c. L3i-groups is the
+construction of supergroups, in which useful systems of equations
+and inequations are solvable and which are still contained in the
+class L3i. Our main tool will be the embedding of e.c. LX-groups
+into certain subgroups of regular wreath products; in Section 4 a
+new technique for the embedding of countable groups into unrestricted
+wreath products will be developed.
+    By P. Hall [3], Theorem 1 (cf. also A. Macintyre and S. Shelah [16],
+§ 1.4) and by B. Maier [17], Satz 2 there exist up to isomorphism
+exactly one countable, e.c. LF-group ULF and exactly one countable,
+e.c. LFp-group Ep. Both are verbally complete (P. Hall [3], 92.1;
+B. Maier [17], Satz 7). In Section 2 we will therefore pursue the ques-
+tion, which e.c. L3i-groups are verbally complete. Assuming (1) it
+will be shown that every periodic, e.c. EX-group is verbally complete
+(Theorem 2.1), whereas (1) and (2) imply, that an e.c. L3i-group G
+is verbally complete, if and only if for every g E G and every r E N
+there exists an         such that hr = g (Theorem 2.7). The latter
+holds for example, if ~~ is the set of all primes (Theorem 2.8).
+    In any verbally complete group .H~ we have V(H)           for every
+                                                                   _
+
+
+
+verbal subgroup V(H). But the rule V on the class of all groups is
+functorial and coradical (cf. p. 202 for definitions), and assuming (1)
+                                                                        193
+
+
+and (2) we can show, that ~c(G) = G for a functorial, coradical rule t
+on L3i and for every e.c. L3E-group G, if there exists a finite x-group If
+such that           1. Correspondingly, (1) and (2’) imply r(G) = 1
+for a functorial, radical rule r on L3E, if there exists a finite 3i-group F
+with t(F)"* .F’ (Theorem 3.4). Hence, the behaviour of these rules
+for e.c. LX-groups depends heavily on their behaviour for finite 3e-
+groups. In particular, the Baer-radical of every e.c. LX-group is trivial,
+if (1), (2’) and         hold, and the Hirsch-Plotkin-radical is trivial
+too for (1), (2’) and           (Theorem 3.1). Section 3 will end with
+some remarks about characteristically simple, e.c. LX-groups.
+
+    In Section 4 we will study the structure of the normal subgroups
+of countable, e.c. L3i-groups. There, we will always assume (1), (2)
+and (3). The restriction to countable groups arises from the use of
+the above-mentioned new embedding technique into unrestricted
+wreath products. However, in the case that 3i is a class of locally
+finite groups, we will be able to show in a subsequent paper, that
+some of the results of Section 4 even hold for e.c. LX-groups of arbi-
+
+trary cardinality.
+    The first result (Theorem 4.7) is the most important one: Every
+countable, e.c. ZX-group G has a unique chief series, i.e., the lattice
+of all normal subgroups is totally ordered by inclusion. The normal
+closures         E G, are exactly the normal subgroups occurring as
+the groups M in the chief factors             If IT is a non-trivial normal
+subgroup   of G  with             for all g E G, then .K is e.c. in G, i.e.,
+every system   of finitely many equations and inequations with coeffi-
+cients from ~, which is solvable in G, can already be solved in K
+(Theorem 4.8). In particular, every automorphism of .Is’, which is
+induced by an inner automorphism of G, is locally inner. In Theorems
+4.9 and 4.10 certain results on how G acts on its chief factors by conjuga-
+tion will be obtained.
+    During the rest of Section 4 w e will assume in addition to (1),
+(2), (3), that for every g c G there exists a verbal subgroup of the nor-
+mal closure ~gG~, which is different from ~gG~. This holds for example,
+if * =
+         6 or 3i =           C~), since the chief factors of locally soluble
+groups    are always   abelian.   Under these conditions we will prove
+a second remarkable fact (Theorem 4.11). The order-type of the
+
+unique chief series of G is the order of the rationals, i.e., the chief
+factors .lVl/N of G can be indexed with the rationals in such a way,
+that ql    q2 « Mq1     Nq2 for all ql, q2 E Q. Hence, the structure
+of the normal subgroup lattice of G can be described as follows. Every
+194
+
+
+q e Q corresponds with a chief factor Mq/Nq,y while every r E RBQ
+corresponds with a normal subgroup Kr satisfying ql r C q2 «
+C Hr Nq2. A further result is that for any proper subnormal sub-
+group of G there exists a chief factor               such that
+Hence the defect of the subnormal subgroups of G is bounded by 2,
+if * is a class of locally soluble groups.
+    Section 5 contains some remarks about the automorphism group
+of a countable, e.c. L3E-group G. Assuming (1) we will construct for
+every possible order 2No locally inner automorphisms of this order
+for G (Theorem 5.1). Moreover, the existence of locally inner auto-
+morphisms of finite order, whose product has infinite order, will be
+established. This implies that the amalgamation property fails in
+the class of all countable, e.c. LX-groups, if every X-group is periodic.
+Finally assuming (1), (2) and (3)-we will show that periodic auto-
+morphisms of a countable, e.c. LX-group, which centralize every
+chief factor, are locally inner (Theorem 5.3).
+    In contrast to the situation              L7J’P or X === La it will be
+noted in Section 6, that there exist 2No non-isomorphic, countable,
+     L@z-groups, if n is an infinite set of primes.
+    The results of this paper were part of the author’s doctoral thesis [15]
+at Albert-Ludwigs-Universität Freiburg i. Br.
+
+    NOTATION. As far as basic definitions are concerned the reader
+is referred to B. Huppert [10] and D. J. S. Robinson [21].
+    The following symbols will be used:
+
+
+               cyclic group of order m;
+               B. Maier’s unique countable, e.c. La,-group;
+               P. Hall’s unique countable, e.c. La-group;
+               sets of natural numbers, integers, rationals, real num-
+               bers ;
+               cardinality of the group G, order of the element g;
+               subgroup, normal subgroup;
+                U is isomorphic to a subgroup of G;
+               group generated by the set A ;
+                commutator ( = x-1 y-1 xy) ;
+               centralizer and normalizer of U in G;
+                                                                                         195
+
+
+                     centre of G, commutator subgroup of G;
+
+                     embedding of U into G;
+                     restriction of the map 8 toU;
+                     kernel and image of the homomorphism o ;
+                     the map f takes the value y everywhere.
+
+
+
+2. Verbal completeness.
+
+    A group G is said to be            complete, if for every non-trivial
+word w(x1, ... ,   and for every element g e G there exist gl, ... , gv e G
+such that g      =
+                      ...,    By P. Hall [3], ~ 2.1 and B. Maier [17],
+Satz 7 the groups ULF           are verbally complete. Using Lemma 7
+of P. Hall [3] we can show that every periodic, e.c. ZK-group is verbally
+complete.
+    THEOREM 2.1.              ~’~     Then f or every torsion-element
+                                          =
+
+
+
+g o f an e.c. Lx-group G and tor every non-trivial word
+there exist gl’ ...y~e ~ such that g     ... ,
+                                              =  In             every
+periodic, e.c.                     verbally
+    In the proof of Theorem 2.1 we will make use of the
+(regular) wreath product A Wr B of two groups A and B; if AB denotes
+the group of all maps f : jB 2013~ A (under component-wise multiplica-
+tion ( f ~g)(b)  f(b) . g(b)), then the group A
+                 =
+                                                                 is the set ~(b,
+f AB~
+  e        with  multiplication      rule  (b1, /i)(&#x26;2? ~2 ) ( bl b2 , f ij f2 ), where
+                                                                 _
+
+
+
+                    Hence the wreath product A Wr B is a semi-direct
+product of the base-group                                            by the top graup
+~(b, 1): B~
+         b  E   ~J  B.    As usual, the diacgonal     of   A   Wr    B is {(I, f a) : a e A~,
+where f a(b) = a for all b e B, and the l-component of A yYr B is
+                   where
+
+
+
+
+For UA and VB the subgroup                                 f(b’)   1                   =
+
+
+
+for all                   of A Wr B will also be denoted by
+ U Wr V.
+   Now suppose N ~a G and let 0: G -&#x3E; GIN be the canonical epi-
+196
+
+
+morphism. Then there     exist so-called Krasner-Kaloujnine-embed-
+dings G - N Wr GIN, which are given as follows: Choose a counter-
+map 0*:          i.e., a map 0* assigning to each element of GIN
+a preimage under 0; then a Krasner-Kaloujnine-embedding ~: G ~
+~ N Wr      is defined            (gO, f g), where f g(ho) [(gh)=
+
+
+
+. g.
+
+    PROOF OF THEOREM 2.1. Fix any g E G of finite order m and any
+word W(Xl, ..., x,,) =1= 1. Then Lemma 7 of P. Hall [3] ensures the
+existence of a finite, nilpotent Rx-group A         =
+                                                     ... ,  such that
+w   =
+      w(a,, ...,    is an element of order m in the centre Z(A) of A.
+Because of w E Z(A) a Krasner-Kaloujnine-embedding ~: A ~ W1 =
+-
+    w)                carries w into the diagonal of W1. Identifying
+w E ~w~ with g E G we can regard W1 as the subgroup ~g~ Wr
+of W2     =
+           G Wr            and a as an embedding of A into W2 . Now
+identify G with the diagonal of W2 in the obvious way. Because of
+3E == sae == P3E the group W2 is an LX-supergroup of the e.c. L3i-
+group G, and the equation g w(x,, ... , xv) has the solution       ... ,
+
+ayd in W2.       0
+
+    Although the class L(fÿ31 r1 ~) of all locally finite-nilpotent n-groups
+is not closed with respect to forming extensions, Theorem 2.1 has the
+following
+       COROLLARY 2.2.   Every e.c. L(fÿ31 r1 %)-group is verbally complete.
+   PROOF. Let G be an                           and choose w(x1,..., x,,) =1= 1.
+By  B. Maier  [17],  Satz      5 the  group G  is  a direct product of e.c.
+
+La-,-groups G,, p  E 7&#x26;. Hence for any g E  G  there exist p1, ..., Pk C n
+and gi e                              By Theorem 2.1 we get         ...~
+
+
+
+
+       Next we will consider group classes containing also non-periodic
+groups.
+
+   THEOREM 2.3. Let 3i = 83i      =     in the case Coo c- X        satisfy (2).
+Then every element o f an e.c. L2e-group is a commutator.
+
+    PROOF. By Theorem 2.1 we can restrict our attention to the case
+that Coo E X. Let G be any                  let E denote the local system
+of all f.g. subgroups of G, and define W to be the union of the subgroups
+                                                                            197
+
+
+      Coo, S E E, of the wreath product G Wr Coo. Then W is an L3E-
+group. By identifying G with the diagonal of G Wr Coo we have G W.
+Because of P. M. Neumann [20], Corollary 5.3 every element of the
+base group of S Wr          E Z, is a commutator. Hence the equation
+g = [Xl’ X2] has a solution for every g E G in the LX-supergroup W
+of G.          0
+
+     If   Y = ~wi(xl, ..., x,,~): i E I~ is a non-empty set of non-trivial
+words, then Y(G) _               gv,): i E I, g,~ E G&#x3E; is called the verbal
+                                 ...,
+
+subgroup   of the  group G  generated by Tr. Every verbal subgroup
+is characteristic. For example, all terms of the lower central series
+and the derived series of G are verbal subgroups (generated by a single
+word). Theorem 2.1 gives us G V(G) for every periodic, e.c. L3i-
+                                        =
+
+
+
+
+group G and all non-trivial sets V of words. This can be generalized
+as   follows.
+
+    THEOREM 2.4. Let 3C satisfy (1), (2) and          0. Then G = V(G)
+for every            G and  all non-trivial sets V of words.
+     PROOF. By Theorem 2.1 every torsion-element of G is contained
+in   V’(G). Hence it suffices to prove Lemma 2.5. Q
+     LEMMA 2.5. Z~ 3E==:~==jp3e and                           case
+let 3E satisfy (2). Then every finite subset of an e.c. L~-group G is con-
+tained in the normal closure o f an element of order p in G. In particular,
+every element of G is a product of elements of order p in G.
+
+   PROOF. Identify G with the 1-component of the L3E-group W =
+-  G Wr 01). By H. Neumann and J. Wiegold [19], Lemma 2.9 the
+commutator subgroup G’ of G is contained in the normal closure of
+the top group of W, and by Theorem 2.3 we have G’ - G.     C(
+
+     With respect to Theorems 2.~., 2.3, and 2.4 we pose the
+
+    QUESTION. Is every e.e.                   verbally complete,          satis-
+fies (1) and (2) ~
+   We now try to approach an answer to this question by using the
+idea of the proof of Theorem 2.1. At first we need a pendant to
+P. Hall [3], Lemma 7 for elements of infinite order.
+
+      LEMMA 2.6. For every non-trivial word         W(Xl’’’.’ xv) there exists
+a    torsion-free, nilpotent group A    =
+                                        ... ,          such that every factor
+ 198
+
+
+of the lower central series of A is free abelian of f inite rank and such
+that w(ai, ..., av) is a non-trivial element in the last term of the lower
+central series of A.
+
+    PROOF. Consider the free group F in generators x,, ..., xv. By
+well-known theorems of W. Magnus and E. Witt (cf. B. Huppert
+and N. Blackburn [11], Theorems VIII.11.12 and VIII.11.15) the
+intersection of the terms F        hl ~ .F’2 ~ ... of the lower central series
+                                       =
+
+
+
+of F is trivial, while the factors             are free abelian of finite rank.
+Choose          with       x,) E                   and let A = F/Fz+1, ai                  =
+
+
+
+                 0
+
+   A group G is n-divisible (for a set n of primes), if for every g E G
+and every n-number r E N there exists an h E G such that hr = g. In
+the case that ~z is the set of all primes we call G divisible. Clearly,
+every verbally complete group is divisible. Assuming (1) and (2)
+we can now prove a converse for e.c. LX-groups.
+
+
+     THEOREM 2.7.                  satisfy (1 ) and (2).       Then for every e.c. LX-
+group G the following three conditions are equivalent :
+
+        (a) G is verbally complete.
+        (b) G is divisible.
+        (c) For every g E G o f in f inite order and f or every r E ~T there exists
+an h E G such that hr        =
+                                 g.
+
+    PROOF. We only have to show that (c) implies (a). Fix g E G and
+w(x,, ... , xv) =1= 1. If g has finite order, then Theorem 2.1 ensures the
+existence of g,, ..., gv E G such that g       W(gl’ ..., gy). Otherwise, let A
+                                                     =
+
+
+
+be the group given by Lemma 2.6. Denote the last non-trivial term
+of the lower central series of .A by A*. Then w            w( a1, ... , av) E
+                                                               =
+
+
+
+As a subgroup of A* the preimage T in A* of the torsion-subgroup
+                                                                  s
+
+of            is free abelian of finite rank, i.e., T = X ti&#x3E;, where o(ti) = oo.
+                                                               i=l
+
+     Suppose, s &#x3E; 2.   Since               is    periodic,       there exist   integers
+m1, m2, r1, r, with t       =    Wrl and tm22   =
+                                                     Wr2. Hence wrlr2 E        n t2&#x3E; = 1,
+contradicting o(w) = oo. Therefore, T == (~ is infinite cyclic, and
+w = tr for some r E N.
+   By (c) there exists an h E G with hr = g. Now, proceeding as in
+the proof of Theorem 2.1, we can identify G with the diagonal of
+W = G Wr A/T and find a Krasner-Kaloujnine-embedding (1: Â c-+
+                                                                         199
+
+
+~   T Wr         ~h~ Wr             such that h = tl1. Hence the equa-
+tion g =           xv) has the solution
+                 ... ,                        ... , ay a in yV, and we only
+
+have to show that G,           is an LX-subgroup of W.
+    Because of o(g)     oo we have 000 E x.
+                         =                     Since A*IT is torsion-free
+and f.g.,     has a finite series with free abelian factors of finite rank.
+Hence, X     =
+                  implies that A/T is an X-group. Now, let Wo be a
+f.g. subgroup  of        G). Then there exist hl, ... hk E G such that
+Wo«Aa,hl,...,hk).    Since                       for   every a E A,   where
+             it follows that
+But V is an x-group by (1) and (2).          0
+
+    Theorem 2.7 shows that the main problem when trying to prove
+the verbal completeness of a non-periodic,                      is the
+solution of the equation g = xr for every torsion-free g E G and every
+r E N. If we identify G with the diagonal of W        G Wr Cr, such a
+                                                        =
+
+
+
+solution is given in TF by the element (c, f), where Cr = c~ and
+
+
+
+
+But under which conditions will G, (c, f) be an LX-group?                As-
+suming (1 ) this will be the case, if ~c~ contains every prime.
+    THEOREM 2.8. Let N satisfy (1 ) and (2). I f nx is the set of all primes,
+then every              is verbally complete.
+
+   Otherwise, the above method only enables us to show that every
+e.c.L3i-group is nx-divisible. However, the following theorem should
+be noted at this point.
+
+    THEOREM 2.9. Denote by LWn the class of all locally nilpotent groups,
+whose torsion-subgroup is a n-group, and let n’ be the set of all primes
+not contained in n. Then every                 is
+
+   PROOF. By M.I. Kargapolov [12], Theorem every LRR-group
+can be embedded into a n’-divisible      This holds in parti-
+cular for e.c. L9?,,-groups. 0
+
+    Unfortunately, the proof of Kargapolov’s theorem cannot be
+transferred to other group classes, since it makes use of the fact, that
+every f.g. %n-group is residually a finite n-group (cf. K. W. Gruen-
+berg [2]).
+200
+
+
+
+
+3. Some characteristic subgroups.
+
+
+    Assuming (1), (2) and n_x =,- 0, Theorem 2.4 states that V(G) G        =
+
+
+for every e.c. L3i-group G and every non-trivial set V of words. Since
+the verbal subgroups are characteristic, we will now pursue the ques-
+tion, whether there exist other rules C attaching to each EX-group H
+a characteristic subgroup C(H) such that C(G)        G or C(G)
+                                                          =       1 for=
+
+
+
+every e.c. LX-group G. At first, B. Maierls result [17], Hilfsatz 2
+saying that the Fitting-radical of E,, is trivial can be generalized as
+follows.
+
+    THEOREM 3.1. Let N satisf y (1), (2’) and :rtx ~ 0. Then the Baer-
+radical of every                    G is trivial. The Hirsch-Plotkin-radical
+of G is trivial too, if Inx&#x3E;2.
+    In the proof of Theorem 3.1 we will make use of the restricted
+(regular) wreath product A wr B of two groups A and B, which is
+just the subgroup                 f (b’ ) ~ 1 for finitely many b’ E B~
+of the unrestricted wreath product A Wr B. All remarks of p. 195
+concerning notation apply correspondingly. We will also use the follow-
+ing two lemmata.
+   LEMMA 3.2.                                    contains the finite group F,
+then every torsion element g of an e.c. EX-group G is contained in a charac-
+teristically simple, locally finite subgroup ZTg of G, which contains an
+isomorphic image of F and has trivial Baer-radical.
+       PROOF.  Consider the LX-supergroup GXF            of G.   Since G is an
+e.c.   LX-group, this gives us an embedding e1 : g&#x3E;          with gei ==
+                                                                             g.
+Let .H’ = Im (!1.
+    Next, we will construct a finite subgroup Go of G with
+Let e    go, gl, ..., gn be the elements of H. Clearly, .8’0
+         =
+                                                               H is a finite
+                                                                 =
+
+
+
+subgroup    of  G   with  go E Ho . Suppose by induction,    that  we have
+found a finite subgroup            of G with         and go,..., gk-l E
+for some k n. Because of P. Hall [3], Lemma 7, there exists a finite,
+nilpotent nz-group A       =
+                              (aI, ~3~ such that a [a1, a2~ is an element
+                                                     ==
+
+
+
+of order        in the centre of A. Proceeding as in the proof of Theo-
+rem 2.1 we can identify G with the diagonal of Wl               G Wr
+                                                                 =
+
+
+and find an embedding or: A. ~ (gk) Wr                       with au     g~.
+                                                                           =
+
+
+But W1 is an L3E-supergroup of G containing the finite subgroup
+                                                                      201
+
+
+                satisfying                                     and
+               This  gives us   an    embedding
+with                                 Let H,, Im On. Then
+                                               =
+
+
+
+              and                           as well as
+
+Finally, the above construction yields .~’~ c .Hn . Let Go =
+    Now, we will construct a chain                    of finite subgroups
+of G with         Go wr       wr Go), where         is the 1-component
+of the top group 1 wr                                         Assume by
+induction, that     has already been obtained. Identify G in the natural
+way with the 1-component of the top group of W2        =
+                                                          Go wr (G wr Go).
+By (1) and (2’), W2 is an LX-supergroup of G containing the finite
+subgroup Go wr        wr Go). Since G is an                     this gives
+us Gn, and the chain is constructed.
+
+    Let Ug be the commutator subgroup of the union
+Since every Gn is finite,       must be locally finite. Moreover, it can
+be shown, that V is isomorphic to the generalized restricted (regular)
+wreath product Wr         which has been introduced by P. Hall in [4]
+(cf. F. Leinen   [15], ~ II.2  for details). Therefore, by P. Hall [4],
+Theorem D, the group Ug is characteristically simple. We also have
+gE           V’=
+                   U9 and                Finally, P. Hall [4], Theorem B
+yields that the Baer-radial of V is trivial, and since every subnormal
+subgroup of Ug is subnormal in V, the Baer-radical of         is contained
+in the Baer-radical of V.     C7
+
+    LEMMA 3.3. Let N satisfy (1), ( 2’ ) and         Then the normale
+closure of any non-trivial element of an e. c..L~-group G contains a
+,non-trivial element of finite order.
+
+  PROOF. Let p E xz and C, - c~. Identify G with the top group of
+W = ( C~ wr G) E L3E. If f ~ : G -~ Cp denotes the map given by
+
+
+
+
+then                          for every g E        where
+202
+
+Hence (1, tg) is an element of order p in the normal closure of g in W.
+This can be expressed by two equations and one inequation with
+coefficient g c G. 13
+    PROOF OF THEOREM 3.1. Denote by B and N the rules assigning
+to each group its Baer-radical B(H) and its Hirsch-Plotkin-radica~l
+N(H). Since B(G) « G and N(G) a G, Lemma 3.3 yields that it
+suffices to show that B(G) and N(G) cannot contain any non-trivial
+torsion element. Therefore, choose g E GB1   of finite order. By
+Lemma 3.2 we obtain a subgroup Ug of G with g E Ug and B( Ug) = 1.
+Hence, g~ n B(G) c Ug n B(G) cB( Ug) = 1 and 9 f/= B(G).
+    Now let p, q E nx be distinct primes. Then Lemma 3.2 gives a
+characteristically simple, locally finite subgroup Ug of G containing g
+and an isomorphic image of .F’ =                 Suppose, N( Ug)     Ug .=
+
+
+
+Then Ug is the direct product of its primary components, and by
+choice of .F’ there are two different, non-trivial primary components
+in Ug . But this contradicts the characteristic simplicity of Ug . Hence
+              and N( Ug)   1. Now g~ r1
+                           =                          r1 N(G)                ==
+
+
+
+- 1.      C7
+
+      Let V be an arbitrary class of groups, and let r be a rule assigning
+to each ID-group S a subgroup r(S) of ~S’. Then the rule r on V is said
+to be radical (coradical), if t(T) r1             (resp.       r(T))
+                                                               for any
+two D-groups S and T with 8 T. The rule r on V is functorial, if
+(r($)) oc =        for any isomorphism a : 8 -       of the 2)-group S.
+(In  this   case r(8) is characteristic in S. ) Examples  for functorial,
+radical rules on the class of all groups are the rules B, N and Z.,,,
+        assigning to each group H the Baer-radical B(H) , the Hirsch-
+Plotkin-radical N(H) and the n-th term Zn(H) of the upper central
+series. Examples for functorial, coradical rules on the class of all
+groups are the rules V ( V’ a non-trivial set of words) assigning to each
+group H the verbal subgroup V(H).
+
+    THEOREM 3.4. Let 3i satisfy (1) and (2’), and let r be a rule on the
+class .L~.
+
+        (a)       functorial and radical, and if there exists a finite
+F with           F, then x(G) 1 for every
+                               =                               G.
+
+      (b) In the case         let 3E satisfy (2) too. If r is functorial, and
+coradical, and  if there exists  a finite            F with ac(.F’)       then
+     = G for every e.c..L~-group G.
+                                                                          203
+
+
+   PROOF. (a) Since T is functorial, Lemma 3.3 yields that it is enough
+to show that r(G) contains no non-trivial element of finite order. Let
+g E GB1 be any torsion element. By Lemma 3.2 the element g is con-
+tained in a characteristically simple subgroup Ug of G, which contains
+an isomorphic copy F of F too. Hence                       F. There-
+fore               (otherwise                            would be a
+contradiction). Since Ug is characteristically simple, this implies
+~( ~I9) = 1. But then                                    and     t(G).
+      (b) By Lemma 2.5 we only have to show that r(G) contains
+every torsion element of G. Let g E       be of finite order. Again g
+is contained in a characteristically simple subgroup Ug of G with
+
+
+
+
+    If 2E is a class of locally finite groups, V. Stingl has shown in [22],
+Satz 9 and Bemerkung 10 (a), that (because of 3C - 8*) every func-
+torial, radical (coradical) rule on the class of all finite X-groups can
+be continued to a functorial, radical (coradical) rule r on ZX in such
+a way that
+
+
+
+
+for every L3i-group H, where ~g denotes the local system of all finite
+subgroups of H. Examples for such rules are:
+OR(H) : the maximal normal R-subgroup of H;
+S(H) : the maximal normal, locally soluble subgroup of H;
+N(H) : the maximal normal, locally nilpotent subgroup of H;
+On (H) : the minimal normal subgroup of H with         a n-group ;
+i%(H) : the minimal normal subgroup of H with            a locally
+         soluble group ;
+
+N(H) :   the minimal normal subgroup of I~ with          H¡Ñ(H) a locally
+         nilpotent group. (cf. V. Stingl [22], Folgerung 11).
+In this case Theorem 3.4 has the
+
+   COROLLARY 3.5. Let 3i be a class of locally f inite groups satisfying (1 )
+and (2’), and let r be ac functorial, radical (coradical) rule on L3E satis-
+204
+
+
+fying (*).   Then either r(G)   =   1   or r(G)   =   G holds for every e.c. EX-
+group G.
+
+    PROOF. If there exists a finite 3i-group T’ with r(F) ~ F (resp.
+       1), then Theorem 3.4 yields r(G) 1 (resp. r(G) G) for every
+                                                  =              =
+
+
+
+e.c. EX-group G.   Otherwise (*) implies
+
+
+
+
+   In [17], Satz 7 B. Maier has shown that E:p is characteristically
+simple, and by O. H. Kegel and B. A. F. Wehrfritz [13], Theorem 6.1
+every e.c. La--group is simple. With regard to these facts and the above
+statements we pose the
+
+    QUESTION. Under which conditions is an e.c. L~-group, where 3E
+is a class of locally finite groups, characteristically simple?
+
+    Using the classification of all finite, simple groups in connection
+with O. H. Kegel and B. A. F. Wehrfritz [13], Theorem 4.8 it can
+be shown easily, that locally finite, e.c. L3i-groups are in general
+not simple: If X satisfies (1), and if there exists such a simple group,
+then nz must be the set of all primes (cf. F. Leinen [15], Satz 111.2.8).
+    With regard to the above question it should also be noted, that
+S. Thomas has constructed in [23]           non-isomorphic, e.c. groups
+of cardinality N, in each of the classes Lgn and            r’1 6), which
+admit only locally inner automorphisms. Each of these groups is
+characteristically simple, if and only if it is simple. Therefore, the
+above question can in general only have a positive answer for countable,
+e.c. L3i-groups.
+    However, we can obtain characteristically simple LX-groups by
+considering the e.c. objects in the class             of all pairs (G, A),
+where G is an L£-group and where A Aut (G) . In this class inclusion
+is defined as follows: (G, A) C (H, B), if and only if         and
+where .A. leaves G invariant and acts faithfully on G. If 3E == /STE,
+then every (LX)Aut-pair is contained in an e.c. (LX)Aut-pair by J. Hirsch-
+feld and W. H. Wheeler [8], Proposition 1.1.3. Here, (G, A) is e.c.
+in (L3i)AUt, if every system of finitely many equations and inequations
+with coefficients from G U A and unknowns, which are group elements
+                                                                       205
+
+
+or automorphisms, can be solved in (G, A), whenever it has a solution
+in  some (LX)Aut-superpair of (G, A).
+    For the investigation of e.c. (Lae)Aut-pairs (G, A.) we have to con-
+struct LX-supergroups H of G with the property, that the auto-
+morphisms from A can be continued to automorphisms of H in a
+way, which gives an embedding A ~ Aut (.g). Fortunately, all wreath
+product constructions made in Sections 2 and 3 can still be used,
+since C. H. Houghton shows in [9], 3.1 and 3.2 how to continue auto-
+morphisms when identifying G with the 1-component, diagonal or
+top group of a wreath product. Therefore, all theorems of Sections 2
+and 3 hold literally for groups G occurring in an e.c.
+(G, A). Moreover, by embedding G in a natural way into the generalized
+restricted wreath product Wr Gz (cf. P. Hall [4]), the following theorem
+can be proved (for details cf. F. Leinen [15], Section V).
+
+
+     THEOREM 3.6.           satisfy (1) and (2’); in the case Coo    let Y-
+satisfy (2) too.   Then every group G occurring in an e.c.
+(G, A) is characteristically simple.
+   In particular, the assumptions of Theorem 3.6 ensure that every
+L*-group H can be embedded into a characteristically simple ZX-
+group G with |G|    =               But in general a group G occurring
+in an e.c.             (G, A) is not an e.c. EX-group.
+
+4. Chief factors and normal subgroups of the countable groups.
+
+      During this section * will always be a group class satisfying (1),
+(2) and (3). Please note, that 3E = 83i 9K implies ny ~ 0. In the case
+                                        =
+
+
+
+C,,,,,c- 3C the set ny will even contain every prime. In particular, Theo-
+rems 2.1 and 2.8 yield, that every                    is verbally complete.
+Hence, G has no proper normal subgroup with soluble factor group.
+Correspondingly, the Baer-radical of G is trivial by Theorem 3.1,
+and G contains no non-trivial, soluble subnormal subgroup. Also,
+G cannot have a proper subgroup of finite index or a non-trivial,
+finite normal subgroup (cf. proof of Theorem 4.11 (b)).
+   The aim of this section is to find out more about the normal sub-
+groups of e.c. LY-groups G. If        G, then G can be embedded into
+N Wr G/N by a Krasner-Kalouj nine- embedding. Unfortunately, this
+wreath product will in general not be an L3i-group. But since especially
+N Wr        contains solutions for many systems of equations and
+206
+
+
+inequations, we will try to modify the Krasner-Kaloujnine-embedding
+in order to obtain an embedding of G into an LX-subgroup of a similar
+wreath product.
+     The following generalization can be found in G. Higman [7]. Let
+0: G ---~ .H’ be a group homomorphism with N     = Kern0. Then 8~ :
+is a countermap for 0, if (gOh) 0* 0  =    hO* 0 for all g E G and all hE H.
+Choosing such . a countermap 0* (this is always possible) the map
+                      defined by                 where
+ g - hO* for all         becomes a so-called standard embedding.
+    Next, denote by GAG the split extension of G by itself, where G
+acts on itself via conjugation, i.e., let                             h E G},
+where multiplication is given by (g1, hl ) ~ (g2 , h2 ) _ (gl g2 ,         If
+              with             we write   UÂV for the subgroup {(~,~):
+v E V, u E U} of GAG. Now we can establish our modification of the
+
+Krasner-Kaloujnine-embedding.
+    CONSTRUCTION 4.1..Let G       =
+                                      U Gn, where            is an ascending
+                                      nEN
+chain of subgroups o f G, let 0: G- H be a homomorphism with N              =
+
+
+-
+   KernO, and let (11: G1 ~ (Gl r1 N) Wr H be the standard embedding
+with respect to a countermap 0:: H -~ 01 for 0     Identifying (G1 r1 N)
+                                                     s
+
+
+
+Wr H in the natural way with the subgroup ((G1 n           Wr H of the
+wreath product        Wr H we will continue dl to an embedding (1: G ~
+
+
+    Therefore, we follow the proof o f G. Higman [7], Lemma 1 in order
+to obtain    successively countermaps 6n+1: .g’-~        for            n E N,
+
+such that the map          H - Gn+1, given by hO:+1      =
+                                                            h8n ’ haW (for all
+h E H), is constant on each of the cosets Gn 8 . h, h E H. Then we define
+inductively maps pn: H -~ Gn, n E 1~T, by pl = 1 and pn+1(h) == (hcvn)-1.
+-p,,(h) for all h E H. Denoting the standard embedding of Gn into (Gn n N)
+Wr H with respect to 0: by dn : g t-+ (go, fn) we can now define o~ as follows.
+
+
+
+
+    Straightforward calculations yield, that c~: G -~ W is a well-defined
+embedding                      Also, assuming (1) and (2), W will be
+an LX-subgroup of          Wr H, if H is an LX-group and if the groups
+Gn,         are f.g. X-groups. Therefore, we can use Construction 4.1
+in order to investigate the structure of countable, e.c. LX-groups.
+    We will now establish some technical lemmata, which will be
+needed for later applications of Construction 4.1.
+                                                                             207
+
+
+     LEMMA 4.2. In the notation o f 4.1 the following statements hold for
+each g E G n""-.N :
+
+         (a) If gO has in f inite order, then gf1 is conjugate in (GnÂGn) Wr H
+to   ( g8, 1).
+        (b) If gO has finite order m, and i f T is a right transversal of g8~
+in H, then the element z    =
+                               (1, s) E (GnÂGn) Wr H, where             =
+
+
+
+f or all t E T, 0 r m - 1, conjugates gf1 onto (gO, 8g), where
+
+
+
+
+    PROOF. (b) is shown by straightforward calculation. Similarly,
+(a) can be proved by choosing a right transversal T of         in H and
+z    (1, s) (GnÂGn)
+     =     E          Wr H, where           s9r(t)
+                                                 = for all t E  T, r E Z;
+then (ga)Z    (gO, 1 ).
+                 =       C(
+
+    LEMMA 4.3. (a) I f b E BB1 is o f in f inite order, then every element x
+of the base group of W A Wr B is contained in the normal closure
+                             =
+
+
+
+(b~
+         (b) If b E BB1           finite order m, if T is a right transversal of
+       in
+b&#x3E; B,   and  i f (b, f) E=W    A Wr B satisfies f(b’)
+                                                         =    1 for all b’ E BBT,
+then every commutator x       =
+                                    [Xl’ X2] of two  elements Xl’ X2 of the base
+group of     W’ is   contained   in the  normal  closure (b, f)W).
+   PROOF. (a) is a consequence of P. M. Neumann [20], Lemma 5.2.
+For the proof of (b) choose Xl (1, f 1), X2 (1, f 2) and decompositions
+                                   =            =
+
+
+
+              where
+
+Then                       and (b) can be shown by proving [[(b, f),
+
+
+
+    COROLLARY 4.4. In the notation o f 4.1 the following holds: If X
+denotes the base group of (GAG) Wr H, then for every g E GBN and all
+Xl’ X2 E X r1 W the commutator [Xl’ X2] is contained in the normal closure
+gow&#x3E;.
+208
+
+   PROOF. Choose n E N such that g E Gn and Xl’ X2 E (GnÂGn) Wr H.
+Then apply Lemmata 4.2 and 4.3.     C~
+
+        LEMMA 4.5. In the notation of 4.1 the following statements hold for
+an y verbally complete group G:
+
+      (a) I f       ... , x,) is a non-trivial word, and i f (1, (1, f)) is an
+
+element of the base group of             Wr           Wr H such that f(H)
+is finite, then there exist v1,..., Vv E W with (1, (1, f))      =
+                                                                  w( v1, ... , v,)
+and v1, ..., Vv E (gaW) for every g E GBN.
+
+       (b) I f V is a non-trivial set o f words, and i f (1, s) is an element
+of the  base group of         Wr .H~ such that s(H) is finite, then (1, s) E
+E   V(gaW») f or every g E GBN.
+    PROOF. (a) By the verbal completeness there exist for every
+g’E f(H) elements y9~1, ..., yg’V E G such that g’ - W(yg’I’ ..., y9,v). For
+1 c j c v define     H -~ G by Ij (h)      =
+                                             if f (h)    g’. Clearly,
+                                                           =
+
+
+
+is finite, and the Vi == (1, (1,     E W satisfy (1, (1, f ) ) w(v1,
+                                                                 =
+                                                                         vy).
+                                                                            ... ,
+
+If X denotes the base group of              Wr .g, the above argument
+shows, that each Vi is a commutator of two elements of X m W. Hence
+we have VI’ ... , Vv E (gaW) for each g E GBN by Corollary 4.4.
+
+
+          (b) For s   =
+                          ( f l, f 2) we can find similarly elements v11,
+                                    I
+
+
+
+
+   Before we start to investigate countable, e.c. LX-groups by using
+the Construction 4.1, we need the notion of a chief series, which is
+due to P. Hall [5].
+   Let I be a totally ordered set. A
+of pairs of (normal) subgroups .lVli, Ni of an arbitrary group G is a
+(normal) series of order-type I in G, if
+
+
+
+
+The         are the factors of E.   The normal series E’ ==          Lj):
+~ J}Eis called a normal ref inement of 2~ if there exists for every j E J
+an      such that                      A chief series is a normal series,
+which coincides with each of its normal refinements. The factors
+                                                                          209
+
+
+of a chief series are called chief factors. An application of Zorll’s Lemma
+yields,y that every normal series has a normal refinement, which is
+a chief series.     In particular, every group G has at least one chief
+series.
+    If I denotes the Dedekind-completion of            define the Dedekind-
+completion of the normal series E == {(Mi, Ni) :                 to be E -
+          Li) : I e 7}~ where
+                                   if i is not maximal in 7y
+
+
+                                   otherwise;
+                                   if i is not minimal in I ,1
+
+
+                                   otherwise .
+
+The following lemma can be established easily.
+
+     LEMMA 4.6.                     Li): i E 11 is the Dedekind-completion
+of the normal series ~ _                       in G, then:
+
+
+
+
+Moreover, the Xi and .Li are normal subgroups of G; and i f 2: refines
+a normal series Lo in G, then every non-trivial, proper subgroup of G
+appearing in one of the pairs of E, is also contained in one pair of ~.
+    We are now able to formulate and prove the main result of this
+section.
+    THEOREM 4.7. Let X satisfy (1), (2) and (3). If MjN is a chief
+factor of a countable,               G, then there exist for every non-trivial
+word w(x1,..., xv) and every h E N elements gl, ..., g, E M such that
+h   =
+     w(g.,     g,). Moreover, 11T =
+             ... ,                         for every g E            In parti-
+cular, G has exactly one chief series, and the normal subgroups of G form
+a   chain.
+
+     PROOF. Fix h E N and g E                 Choose   an   ascending chain
+         of f.g. subgroups of G with       G1 = (h) and G = U Gn.         Let
+                                                                 nEN
+8 : G - GIN be the canonical epimorphism, and let           G1 ~ G1 Wr GIN
+210
+
+be the standard embedding with respect to the countermap 6 i --- 1
+for 8 ¡a1. Applying Construction 4.1 we obtain an embedding c~: G -
+TV = U [(GnÂGn) Wr
+          nEN
+                              where W E         Now ho    (1, (1, f ))
+                                                                 =
+
+
+
+
+with            By Lemma 4.5 there exist V1,..., v, E               such that
+ha    w(v1, ... , vy).
+      =                  This  can  be  expressed by + 1 equations with
+                                                       v
+coefficients hd,               Since G is e.c. in        we obtain gl, 9v E
+             with h = w(gl, ..., gy).
+    This works for every h E N; hence                    But as a chief factor
+MIN   is  a minimal      normal   subgroup   of G/N,  and  we get ~1 ==
+
+
+
+    Assume,   there    exist chief factors M1/N1  and         with g E M1""’N1
+
+= N2. Hence, for every g E G there exists exactly one chief factor
+       such that g E          and G must have a unique chief series 1:.
+If 1            then the unique chief series in G must refine the normal
+          qq G,
+series ~(G, .g), (K, 1)} in G. Therefore, .I~ appears in one of the pairs
+of the Dedekind-completion El and the normal subgroups of G must
+form a chain (cf. Lemma 4.6).        0
+    Theorem 4.7 shows, that every countable, e.c. LX-group G contains
+in a certain sense the least number of normal subgroups; for the normal
+closure ~ga~, g E G, will always appear as the group M in some chief
+factor        (just refine {(G, ~gG~), (~gG~, 1)~ to a chief series !).
+    In the case X = Lg Theorem 4.7 becomes trivial, since the e.c.
+LF-groups are simple (cf. p. 204). Concerning the question posed
+on p. 204. Theorem 4.7 yields a necessary condition: If a countable,
+e.c. LX-group G is characteristically simple, then G cannot have a
+
+proper minimal or a non-trivial maximal normal subgroup.
+    The next theorem will give us some information about the struc-
+ture of the normal subgroups, which are not the normal closure of
+an    element.
+    THEOREM 4.8. Let N satisfy (1), (2) and (3). If              is a chief
+factor of a countable, e.c. EX-group G, then every system of finitely many
+equations and inequations with coefficients from N, which is solvable
+in some LX-supergroup of G, has already a solution in every verbal sub-
+group of                    for every non-trivial ~ a G with       ~gG~ f or
+all g E G the following statements hold :
+
+       (a) Every system of finitely many equations and inequations with
+coefficients from K, which is solvable in some LX-supergroup of G, has
+already a solution in K.
+                                                                            211
+
+
+     (b) Every normal subgroup of K is a normal subgroup in G. In
+           K has exactly one chief series, and the normal subgroups
+of K form a chain.
+      (c) Each automorphism of K, which is induced             by conjugation
+with some element from G, is locally inner.
+
+    PROOF. Let!7 be a system of finitely many equations and inequa-
+tions with coefficients hl, ..., hk E N, which is solvable in some L3i-
+supergroup of G. Since G is e.c. in       there exists a solution u1, ..., u,
+in G. Choose g E M$N and w(x1,..., xv) =1= 1. Let                      be an
+ascending chain of f.g. subgroups of G with G1 ==              ... , hk~ and
+G = U On. Denote by 0: G- GIN the canonical epimorphism and
+     nEN
+by                         the standard embedding with respect to
+                     Apply Construction 4.1 in order to obtain an embed-
+
+
+
+
+        (i) the system Ya with coefficients                            has the
+solution                      and
+
+       (ii) by   Lemma      4.5   there   exist
+such that
+
+
+
+The statements (i), (ii) and (iii) can be expressed as a system of finitely
+many equations and inequations with coefficients         h1 d, ... , hkl1 E Gel,
+which is solvable in yY’. Hence there must already exist elements
+giL 7 - -.7 91 c- G, which solve ~ and which are contained in               for
+every set V of words containing w(x1, ..., xv). Clearly, _M = ~gG~ by
+Theorem 4.7.
+
+     (cc) Now let ~ be a system of finitely many equations and ine-
+quations with coefficients from K, which is solvable in some L3i-
+supergroup of G. Denote the set of coefficients by Ho . Because of
+K # gG&#x3E; for all g E G Theorem 4.7 implies KG0&#x3E;
+                                                     0
+                                                         :A
+                                                            K. If h E   0
+
+then                             for the unique chief factor          of G
+with h E .MBN. ]E]Eence, Y must have a solution in if I~ by the above
+argumentation.
+212
+
+
+     (b)                 For any             there exist elements
+and Z1, ..., lk e L   with g lg11lg22      =
+                                                Hence g
+                                                  ...
+                                                                       lgk is an
+                                                                        =       ...
+
+
+
+
+equation   with   coefficients g,    ... , lkEK  and  a solution   in G.   By (a)
+there exist hl , ... , hk         such that g              Zkk e L. Therefore
+                                                            =     ...
+
+
+
+
+      (c) Fix g E G. If .Ko is a finite subset of K, the equations hx                           =
+
+
+
+         E go, with coefficients h, hg E   u Kg 0 C .K form a finite system
+with solution x     g in G. Hence, (a) yields an v E .g such that hv
+                           =                                             hg                 =
+
+
+
+for all
+
+   With regard to Theorem 4.8. (c) it should be noted, that every
+countable, e.c. L3E-group G acts faithfully on each of its non-trivial
+normal subgroups N by conjugation: For Theorem 4.7 yields Ca(N) N
+or            and since the Baer-radical of G is trivial by Theorem 3.1,
+every abelian normal subgroup of G must be trivial; hence, N           1                     =
+
+
+
+or    CG(N)       =   1.
+      We will         now        investigate, how G acts on its chief factors by
+conjugation.
+      THEOREM 4.9. Let N satisfy (1 ), (2) and (3), and let                           be a chief
+factor of     a   countable,       e.c.   EX-group G.
+
+in f inite.
+       (b) Suppose, MIN is not torsion-free abelian, or every torsion-
+free divisible abelian group is an X-group. Denote by t :
+- Aut (M/N) the canonical embedding via conjugation and assume
+the existence of Xl’ X2 E             with        r1 N    1    ~x2~ r1 N. If
+                                                                  =         =
+
+
+
+there exists an 0153 E Aut         with (xl.N ) a    x2 N such that the sub-
+                                                             =
+
+
+
+group       1m í) o f Aut (MIN) is an                then there already exists
+g E G with xi      X2. =
+
+
+
+
+        (c) Any            two    elements     Xl’ x2 E mN (m E M~N) of         equal       order
+satisfying                 r1 N = 1 = ~x2~ r1 N are        conjugate in G.
+      PROOF. Denote factor groups and cosets modulo N by bars.
+
+        ( a) Theorem 4.7 yields                     M or 11 5-                  In the first
+case we       have                               Now, assume                          Fix
+with Z5                             If is the chief factor of G satisfying
+                                              by Theorem 4.7. Fix
+and                    Then the equation mx    mg with coefficients m, mg c
+                                                        =
+                                                                           213
+
+
+          has the solution x = g. Therefore Theorem 4.8 ensures
+the existence of hE M1 such that              Now, h E
+and mY     mh
+           =     m. This holds for every g E G and every m E M.
+                 ==
+
+
+
+Hence                      _                   _       _
+
+
+
+
+   In the case       Z(G) we have           Z(M) 0 =     and since G
+does not contain a proper normal subgroup of finite index,
+  Aut (M) yields         1 -   00.
+
+
+     (b) At first we will embed G into an EX-group H, in which the
+images of xl and x2 are conjugate. In the case              1 we choose
+                                                              =
+
+
+
+H =            and the embedding :               then (X1T)a       =
+
+
+
+   Now let CG(1~1 ) ~ 1. Denote by        0153, Im    the subgroup of
+the holomorph of M, which is generated by M and 0153, Im r). If
+0: G -       .L denotes the canonical epimorphism, and if
+is anascending chain of f.g. subgroups of G with          X2) and
+G = U Gne then the standard embedding 0’1: G1 ~ (GI r1 M) Wr .L
+     nEN                                               _
+
+
+
+
+with respect to the countermap 8i - 1 (for 0 rOl) can be continued
+to an embedding 0’: I -                   «, Im T») Wr L by modifying
+Construction 4.1 in the following         Instead of the maps p": L - Gn
+of Construction 4.1 use the maps qn : L - 0153, Im i), given by qn(l)        =
+
+
+
+                    for all         then define for all g E Gn, n E N, the
+embedding 0’:            by gf1 ===     sg) E     0153, Im T&#x3E;) Wr L, where
+
+
+
+
+for all l E L.
+   By choice of 0: we have xid       =
+                                         (1,
+                                          (1,   with f-xi e for i   1, 2.
+                                                                       =
+
+
+
+Hence            X2C1, where 0153* == (1, s) e W is given
+                 -
+                                                                  ((Xy 1).
+We choose                &#x3E; and have to show H G -LX.
+
+   Let Ho be a finite subset of H; choose n E N with Ho c (Gnd,
+Then                                                              and it suffi-
+ces to show     e ZX. The base group of Wo is the split extension of a
+cartesian power of 1¥ by a cartesian power of
+Because of            1 we obtain from (a), that M is abelian. If if
+is not torsion-free, then Tf must be elementary- abelian, and every
+cartesian power of     is an 3i-group by (2). If M is torsion-free, then
+ill must be divisible, and every cartesian power of M is an X-group
+by assumption. Since (2) ensures, that every cartesian power of the
+f.g. -T-group                           is an 3E-group
+214
+
+
+yields that the base group of Wo is an X-group. But then       E LX.
+Hence we have shown, that there exists an embedding of G into an
+EX-group H, in which the images of xl and x2 are conjugate.
+   Denote by yi : G - H the composition of the canonical epimorphism
+G -~ G and the above embedding G ~ g. Then Construction 4.1
+gives an embedding                                     where VE .L~.
+
+Because of (si) r1 N = 1      ~x2~ r1 N and Lemma 4.2, the elements
+                                   =
+
+
+         =
+             1,, 2, conjugate in
+                          are
+
+Moreover, we have           1}«(X*,l) (x21p, 1). Hence, the equation
+                                            -
+
+
+
+
+        x2r¡ with coefficients        x2r¡ E G?7 is solvable in T~’, and
+there must already exist g E G w ith xi      x2 .
+                                                =
+
+
+
+
+      (c) Because of x1N = mN = x2N              we   can   follow the   proof of
+(b) with  g = G/M and a* =  1. 0
+
+    It should be noted, that the assumption ~x~ n N         1 of Theorem 4.9
+                                                             =
+
+
+
+is always met, if xN E M/N has infinite order.
+    Every abelian chief factor            of a countable, e.c. LY-group G
+is an elementary-abelian p-group or a torsion-free divisible abelian
+group. Hence,           is a vector space over GF(p) or Q. In the following
+theorem we will prove, that there exists for every coset mN, 1n E
+of the abelian chief factor             an element YE .M with yN = mN
+and y&#x3E; n N =  1.  Therefore   Theorem   4.9 yields, that any two one-
+dimensional subspaces               and m2N&#x3E; of the vector space
+are transposed onto one another by conjugation with an element
+of GIN, if and only if the image B of                      under tIle cano-
+nical embedding into Aut(MfN) is contained in an LX-subgroup of
+Aut(M/N), which contains an automorphism « such that
+-
+   m2N&#x3E;. In particular, GIN acts transitively on the one-dimensional
+subspaces of             if and only if there exists an L*-subgroup of
+              which contains B and acts transitively on 3f/jV.
+
+     THEOREM 4.10. Let Y, satis f y(1), (2) and (3), and let lYl /N be a
+chief factoi- of countable,
+                      a             e. c.   G such that V(M) =,4 M for
+a non-trivial set V of words. Then N = V ( M), and the following holds :
+
+
+      (a) If gN E MfN%1 is of infinite order, then every element con-
+tained i1~ gN has infinite order, and any two elements of gN are conjugate
+in G.
+
+        (b) I f gN E                  o f finite order m, then gN contains for
+every                     m, which is a multiple of m, an element of order m,
+                                                                        215
+
+
+    any two elements of orde~° m, which are contained in gN, are conjugate
+in G.
+
+   PROOF. Clearly N is a maximal normal subgroup of M, while the
+normal subgroup        of M contains N by Theorem 4.8. Hence
+N =
+
+         (a) Follows from Theorem 4.9. (c).
+      (~) Because of       Cm E EN the group G contains an element z
+of order m. Choose 1 ~      ..., xv) E V", and let   be an ascending
+chain of f.g. subgroups of G with Gl = g~ and G = U Gn : Denote
+                                                            nEN
+by 0: G -¿. GIN the canonical epimorphism, and define the counter-
+map
+where T is a right transversal of         in GIN. Then Construction 4.1
+gives     an    embedding
+
+
+
+
+Moreover f(GfN) is finite by choice of 8~ .       Hence Lemma 4.5 yields
+
+
+
+
+Now (i),  (ii), (iii), and (iv) can be expressed as a system of finitely
+many equations and inequations with coefficient ga E Ga, which is
+solvable in 1V. Hence there must exist elements g, g,,         g, E G such
+                                                            ... ,
+
+that o(g)     1n and gl, ... , g, E (gaG) and g =
+               =
+                                                        g) - It follows
+that g = g - w(gl,      g,)-l g.
+                      ... ,    E         =
+                                              gN. As in (ac) any two ele-
+ments of order m, which are contained in gN, are conjugate in G.         11
+
+       Please   note, that the above condition V~(.M) ~ .M is equivalent
+to                 1 for every chief factor   MJN of a countable, e.c. LX-
+group.
+
+    THEOREM 4.11. Let ~ satisfy (1 ), (2) and (3), and let G be a countable,
+e.c. L2E-group such that f or every chief factor       of G there exists a
+non-trivial set of words VM with             M. Then the following hold :
+216
+
+
+     (a) For any two chief factors M1/N1 and M2/N2 of G with
+and for any prime p E tlx there exists a chief factor M/N in G with
+                 which contains an element of order p.
+
+      (b) The order-type of the unique chief series of G is the ordei- of
+the rationals.
+
+      (e) If M/N is a chief factor of G, then (a), (b), (c) of Theorem 4.8,
+hold for N in the role of K.
+
+        (d) If InxI =1= 1, then every central chief factor of G is
+      (e) I f ~ contains every torsion-free, divisible, abelian group, then
+there exists no central chief factor in G.
+
+      (f) For every proper subnormal subgroup 8 of G there exists a
+chief factor M/N in G satisfying N S C~ M.
+   PROOF.                                                               IfM1==N2
+would hold, then Theorem 4.10 would yield Ni =                       for i   1, ~,
+                                                                             =
+
+
+
+and we would get the contradiction                                 ==              ==
+
+
+-
+      VMl(M1) ==              N2. Hence,           N2. Choose g E
+Then, by    Theorem     4.7, the unique    chief  factor M;/N7 in G with
+              satisfies                          Similarly, there exists a
+chief factor M*IN* in G such that
+    Fix h E           and let p E 7rx be any prime. Because of Lemma 2.5
+there exists x E G of order p with h E xG&#x3E;. Therefore the system
+
+
+
+
+with coefficient               has a solution in G (for some kEN).
+By  Theorem  4.8 there exists already a solution in M:, i.e., there exists
+an y e .M2 such that h e         and o(y)    p. Let M/N be the chief
+                                              =
+
+
+
+factor of G with                   Then
+                                             But the element yN e 1Vl/N
+                                               .
+
+
+
+
+has order p.
+
+        (b) Suppose, G has      a   minimal normal      subgroup ~. Then
+            1. Choose p E ny and 1 ~=          ...,    E VM.              P. Hall [3],
+Lemma 7 there exists        a   finite p-group A =         ... , a2v&#x3E; such that
+1 ~ 2v([a1, a2J, ..., a2v]) E Z(A). Identify G in the obvious way
+with the top group and A with the 1-component of the L*-group
+W = A Wr G. Because of Lemma 4.3 we have [a1,        ... ,
+                                                                          217
+
+
+E       for some g E            Since G is e.c. in ZX, there must already
+exist gl, ..., gv E ~gG~ with 1- =A W(gl’ ..., gv). This yields the contradic-
+tion 1 ~ ~v(gl, ... , gv) E Y~M( ~gG~ ) =
+                                        Vm(M) 1. Hence G has no mini-
+                                              =
+
+
+
+mal normal subgroup.
+    Correspondingly, G has no maximal normal subgroup, since other-
+wise          =1= G would contradict the verbal completeness of G. To-
+gether  with     (a) we obtain, that the order-type of the unique chief
+series of G must be a dense linear order without endpoints. But the
+number of chief factors of G cannot be greater than the number of
+elements of G. Hence, the order-type is countable too. Now a well-
+known theorem of Cantor yields that the order-type must be the order
+of the rationals.
+
+          (c) Follows from (a).
+          (d) Suppose, there exists a central chief factor    in G, which
+is not torsion-free. Then                for some              Because of
+ae== Q~ and         1 there exists q E         Denote by D the diagonal
+and by X the base group of IT == C, Wr Cq . The top group Y of K
+is a q-group acting on the abelian p-group X via conjugation, and there-
+fore X = [Y, X]X CX(Y) = [Y, X] XD (cf. H. Kurzweil [14], Satz
+7.13). Here, [ Y, X] and D are nontrivial, Y-invariant subgroups
+of X. Let Xo be a minimal Y-invariant subgroup of X, which is con-
+tained in [ Y, X]. Because of Cgo( Y) CX( Y) n Xo c D r’1 [ Y, X] =1, the
+group Y acts non-trivially on Xo via conjugation. Let U = ~Xo, Y)
+and
+    Now, a standard embedding Ti: GIN 4-          Wr       with respect
+to some  countermap for the canonical epimorphism 8 :
+maps the central subgroup          of G/N onto the diagonal of
+Wr        Identifying MfN with Z we can regard MfN Wr                as
+a subgroup of g    U Wr
+                     =         and ~1 as an embedding into .g. Define
+T2: U 4- H by VT2   (1,
+                      =    where        for all v E U. Clearly,
+    By Theorem 4.10 there exists             with order p. Let
+be an ascending chain of f.g. subgroups of G with         ~g~ and G        =
+
+
+
+-
+   U Gn . Denote by 0:            the composition of the canonical
+    nEN
+epimorphism G - GIN and the embedding z1: G/N ~--~ ..8. Then a
+standard embedding d1:     Wr H with respect to some counter-
+map for 8 IG1 can be continued to
+
+by Construction 4.1. Now,
+                               The group V can be described by finitely
+218
+
+
+many equations and inequations with coefficients in                 c Ga.   Hence,
+there must already exist an embedding Q:                          with         ~g~.
+   But Xo o is a minimal normal subgroup of 1Io.                                 r)
+                 and                 imply              1 and==
+
+
+In particular we have            (Xoe)NIN,  and   every coset mN, m E
+E         contains exactly one element from .Xo ~. Since      acts non-
+trivially on     via conjugation, G/N  must act non-trivially MfN
+                                                             on                 ==
+
+
+==             via conjugation. This contradiction to M/N c Z(G jN)
+shows, that        has to be torsion-free.
+
+      (e) Suppose, there exists a central chief factor        in G. By
+assumption, N contains a torsion-free group. Hence, nx is the set
+of all primes. Now (d) implies, that         is torsion-free. But then
+       is isomorphic to the additive group of Q, and
+is a non-trivial automorphism of infinite order on MIN. Now Theo-
+rem 4.9 gives an element in G/N, which acts non-trivially on M/N
+
+by conjugation. This contradicts
+      ( f ) Choose 8 ==               ...   with m ~ 2 minimal. Sup-
+pose, that there exists no chief factor MfN with      M. Then Theo-
+rem 4.8 yields ~’2a G, in contradiction to the choice of m. Hence,
+
+81 == M for some chief factor MIN. We will show N c ~’k for 1
+     Assume by induction, that we have                     for some
+Suppose              N.  Then             gives      N, and   (c) yields         G,
+in contradiction to the choice of m. Hence, there exists x E
+     Fix g E N and denote by 6 : G - GfN the canonical epimorphism.
+Let T be a right transversal of                    in GIN, and choose 1 0
+=1= w(x1, ... , xv) E       From the verbal completeness of G we obtain ele-
+ments             E G, 1 c j c 2v, such that gl =       Y2]’ ... ,        Y2vJ) and
+                                      satisfy g [91, 921. Because of (c) we
+                                              =
+
+
+
+can even assume,                                                   be an ascending
+chain of f.g. subgroups of G with
+and G = U Gn . In the case                   _ ,u oo define a countermap
+                                                                                 8i
+           nEN
+
+
+
+
+otherwise choose       6i arbitrarily.  Now the standard embedding
+                               with respect to 6i can be continued to
+                                           by Construction 4.1.
+                                                                         219
+
+
+   First, we consider the case o(s0) = p oo. Then xd =               (1, fx)),
+where
+
+
+
+
+Hence, fz(H) is finite, and Lemma 4.5 yields elements
+
+
+
+
+Every w = (1, s) from the base group of (G2ÀG2) ~%r G/N c W has
+a unique decomposition w = w(1) w(tt), where W(i) (1, s~i~) is given by
+                                    ...
+                                                      _
+
+
+
+
+It follows,y that
+
+
+
+
+Moreover, we have
+          y
+
+
+
+
+The statements (i) to (vi) can be expressed as finitely many equations
+with coefficients xor, ga E Gc~ and solution in W. Therefore we obtain
+elements x, h1, ... , h2p, E G such that x c- x - T~’M(xG~), h1, ... , h2p, E
+E           and
+
+
+
+
+Now                    implies x E xN 9       and
+220
+
+
+      Next, consider the case o(xO)
+                                 =   00. Here,               We decom-
+pose every w    _
+                   (1, s) from the base group of
+
+
+
+where
+
+
+
+
+Then similar considerations as in the case o(xO) = It    oo yield g E
+
+   This works for every g E N. Hence,                   As 8 is a proper
+subnormal subgroup of G, we have N          S    M.     0
+                                          0    0
+
+    Concerning Theorem 4.11 (a) it should be noted, that a corres-
+ponding result for chief factors with an element of infinite order cannot
+be proved by the above method, since we cannot express with finitely
+many equations and inequations, that an element has infinite order.
+    Part (b) shows, that under the assumptions of Theorem 4.11 every
+countable, e.c. EX-group G contains exactly three kinds of normal
+subgroups : Firstly the normal closures ~g°’~, g E G, which correspond
+to the groups M in the chief factors         by Theorem 4.7; secondly
+the verbal subgroups                which are exactly the groups N in
+the chief factors          and finally the normal subgroups .g, which
+do not occur in any chief factor. The latter give the pairs (K, K) E
+E          where Za denotes the unique chief series of G (cf. Lemma 4.6),
+and if we index the chief factors M/N with the rationals q E Q in such
+a way, that ql C q2 «
+                          M,,l C Nq2’ then we can find for every .K an
+irrational number r such that ql r        q2 =&#x3E;       C Nq2.
+    With regard to Theorem 4.11. (d) please note, that In,        = 1 if
+and only if every LX-group is a p-group.
+    Part ( f ) can be used to obtain a bound on the defect of the sub-
+normal subgroups, if we know something about the chief factors.
+    In order to prove the results of this section for uncountable, e.c.
+LX-groups one could of course try to generalize Construction 4.1.
+Can we find for any homomorphism 8: G -* H an embedding cr: G 4-
+y U [(SÄ8)
+    SEI
+                             Wr H, where denotes a local system
+of f.g. subgroups of G~ The main difficulty when trying this arises
+from the fact, that 27 will in general not be totally ordered by inclu-
+sion. Although we can choose E in such a way that it contains a minimal
+                                                                     221
+
+
+member    So, it is not clear whether we can continue a standard
+embedding                  Wr H to embeddings                 Wr H,
+8 E I, satisfying        Up for all      with T’ ~ ~’.
+   In a subsequent paper we will develop other methods to prove
+some of the results of this section for uncountable, e.c. EX-groups,
+where 3E C La.
+
+
+5. The automorphisxn groups of the countable groups.
+
+    An automorphism a of a group G is called locally inner, if there
+exists for every finite subset of G an element g E G satisfying f9 =foe
+for all f E 1~’. By O. H. Kegel and B. A. F. Wehrfritz [13], Theorem 6.1
+every automorphism of an e.c. La--group is locally inner.
+    Assume X = ~X    =         Then every automorphism a of an e.c.
+LX-group G       with o(a) RX-number must be locally inner (consider
+                          a
+the LX-supergronp G, a&#x3E; in the holomorph of G ! ). Conversely, if G
+is periodic, the order of every locally inner automorphism of G must
+be a n3c-number or infinite. We will show now, that every countable,
+e.c. LX-group has the maximal number of locally inner automorphisms.
+
+
+    THEOREM 5.1. Let * =         =        and let G be a countable, e.c.
+Lx-group. Then G has 2No locally inner automorphisms of order m for
+every                m and f or m
+                                =   oo. Moreover, for any
+there exist locally inner automorphism al and a2 of order m with o(aia2)
+                                                                     -
+
+
+
+00.
+
+
+    PROOF. Consider the case ~~ ~ ~ first. Let        be a sequence
+of RX-numbers with           Let           be an ascending chain of
+f.g. subgroups of G with G = U Gn . We will construct an ascending
+                               nEN
+chain          of f.g. subgroups of G and elements                 such
+that the following holds (with      1) for every
+                                     =
+222
+
+
+
+
+Assume by induction, that .Hn_1 has been constructed. Choose               a
+
+nx-number           and V’n =
+                              0,. wr where °pn   d&#x3E; and OAn
+                                                       =                  =
+
+
+
+c&#x3E;. Define f :      °pn by
+
+
+
+Then VI (c-1, 1) and V2 (c,
+         =                 =       are elements in V n with               _
+
+
+
+- o(v2) = An and                   Considering the LX-supergroup
+GX Vn of G we therefore obtain elements            satisfying (b), (c)
+and                gng,~)
+                     ...
+                               Next, identify G in the obvious way
+with the 1-component of G wr          No element of the top group com-
+mutes with an element of              Hence,y there must already exist
+        satisfying   [~~~]=~1        and [x, hn~ ~ 1 for all
+         and all                                           }.Now choose
+
+   We assign to every                                the map    aa : G --~ G,
+which is defined as follows:
+   For every g E .Hn let        =          where
+
+
+
+
+Using the properties (a) to (e) it can be shown easily, that every a,5,
+is a locally inner automorphism of G, and that the assignment 6 -+ aa
+is one-to-one. If we choose           with         then every aa will have
+infinite order, whereas the choice In= m for all n E N will ensure
+that every     has order m. In the latter case oco a1 is an automorphism
+of infinite order (here 0 (resp. 1) denotes the map 6 == 0 (resp. 6 = 1)).
+    Finally, consider the             ~6. Here, we can construct similarly
+the chain           and the elements          E .gn such that the following
+holds for every n e N:
+                                                                           223
+
+
+                                                                  and
+
+
+
+(cf. F. Leinen [15], p. 101 for details of construction.) Now the result
+will follow in the same way as in the case nx =1= ~.      0
+
+    It should be noted, that          =       cannot be proved for
+uncountable, e.c. L3i-groups G, since S. Thomas has shown in [23],
+that 0 implies the existence of e.c.      and
+all of whose automorphisms are inner.
+
+     COROLLARY                     class of periodic groups with 3E == SY,  =
+
+
+         Then there exist countable, e.c.            G, H, U and embeddings
+(!1: U ~ G, (!2: U - H such that no                 can be generated by iso-
+
+morphic copies        and H r¡2 of G resp. H, where           =
+                                                                       (*)
+    PROOF. Choose any countable, e.c. L3i-group U. Theorem 5.1
+yields automorphisms 01531 and a2 of U with             =  oo and such that
+
+the subgroups U, ai) and ( U, (X2) of the holomorph of U are countable
+L3i-groups. By J. Hirschfeld and W. H. Wheeler [8], Proposition 1.1.3
+there exist embeddings            ~ U,   ~ G and (!2: U, (X2)           into
+countable, e.c. LX-groups     G and H.     in
+                                       Now, any group       W  =      Hn2&#x3E;
+with       U  =
+                 ~02~2 ~’ U the element        ((X2(!21]2) induces an auto-
+morphism of infinite order on             =         W. Hence, W cannot
+be periodic.    D
+
+    If we assume in addition to the situation in Corollary 5.2, that
+there exists a unique countable, e.c. IN-group, then R. Grossberg
+and S. Shelah [1], Theorem 23 yields that 2No       implies, that no
+e.c. LX-group of cardinality N1 can contain an isomorphic copy of
+
+every e.c. LX-group of cardinality     This applies in particular to
+X = LF and X = LFp.
+   Now assume (1), (2) and (3), and let G be a countable, e.c. IN-
+group. Then there exists a unique chief series L == f (mi .Ni) : i E 1}
+in G by Theorem 4.7, and every automorphism of G must pass the
+pairs of E onto one another. Hence,
+
+
+
+    (*) Added in proof: LX is not a variety by [3], Lemma 7 ; the negation
+of Corollary 5.2 holds for varieties by B. JONSSON, Amalgamation of pure
+embeddings, Algebra Univ., 19 (1984), pp. 266-268.
+224
+
+
+               (mN) a m.llT for every (M, N) E ~ and every mE M)
+                           =
+
+
+
+are    two normal subgroups of Aut(G) with                    The
+factor group                 can be embedded canonically into the
+cartesian product fl            while an embedding of
+                     1EI
+into the group of all order-preserving permutations of the index
+set I is defined by 0153. Inv(E) H where
+for all i E I. Moreover, we note
+
+     THEOREM 5.3..Let ~ satisfy (1),1 (2), (3), and let G be a countable,
+                 with chief series E. Then every automorphism a E Stab(.E)
+o f finite order  is locally inner.
+
+   PROOF. Because of 3E = S3i      =
+                                       Q3E every chief factor of G is an
+L3i-group. By P. Hall         and  B. Hartley [6], Lemma 4 the group
+            must therefore have a series             E J} with LX-factors.
+Then ~(a~             (a)               is a series in     with 3E-factors,
+and a&#x3E; must be a finite X-group. But now o(a) must be a RX-number,
+and « is locally inner.        0
+
+   Because of Theorem 5.3 it could be conjectured, that every auto-
+morphism of Stab(E) is locally inner. But this cannot be proved
+with the above method, since an extension of the                        G
+by 000 will in general not be an ZX-group (choose for example N    =
+
+
+
+However, in the case 2E =         it will be shown in a subsequent paper,
+that Stab(E) coincides with the set of all locally inner automorphisms
+of
+
+
+
+6. The number of countable, e.c. -LG5,,-groups.
+
+      In contrast to the situation for N - Lij and 3i =      the following
+theorem holds.
+   THEOREM 6.1.         is an in f inite set of primes, then there exist
+non-isomorphic, countable  e.c. LS,,-groups.
+
+   PROOF. Since every countable LGR-group can be embedded into
+a countable, e.c. L6n-group by J. Hirschfeld and W. H. Wheeler [8],
+Proposition 1.1.3, it suffices to establish the existence of 2No non-
+isomorphic, f.g.               Define Ga
+                                           = ((IT cj Coo)
+                                               ’  ~
+                                                    Wr
+                                                   VEG
+                                                           Wr Coo for
+
+every l1 ç   n.   Then B. H. Neumann and H. Neumann have shown
+                                                                                 225
+
+
+in [18], p. 470, that GQ contains a two-generator subgroup Hj with
+             But     is an Go-group containing an element of order p
+
+for every p E d.     Hence,                for all or, T      with   cr =1= r.    0
+
+    It should be noted that the idea of the proof cannot be used, if
+X is a class of La-groups, since there exist only countably many finite
+groups.
+
+
+
+
+                                 REFERENCES
+
+
+ [1] R. GROSSBERG - S. SHELAH, On universal locally finite groups, Israe
+     J. Math., 44 (1983), pp. 289-302.
+ [2] K. W. GRUENBERG, Residual properties of infinite soluble groups, Proc.
+     London Math. Soc. (3), 7 (1957), pp. 29-62.
+ [3] P. HALL, Some constructions for locally finite groups, J. London Math.
+     Soc., 34 (1959), pp. 305-319.
+ [4] P. HALL, Wreath powers and characteristically simple groups, Proc. Camb.
+     Phil. Soc., 58 (1962), pp. 170-184.
+ [5] P. HALL, On non-strictly simple groups, Proc. Camb. Phil. Soc., 59 (1963),
+     pp. 531-553.
+ [6] P. HALL - B. Hartley, The stability group of a series of subgroups, Proc.
+     London Math. Soc. (3), 16 (1966), pp. 1-39.
+ [7] G. HIGMAN, Amalgams of p-groups, J. Algebra, 1 (1964), pp. 301-305.
+ [8] J. HIRSCHFELD - W. H. WHEELER, Forcing, arithmetic, division rings,
+     Berlin-Heidelberg-New York, 1975.
+ [9] C. H. HOUGHTON, On the automorphism groups of certain wreath products,
+     Publ. Math. Debrecen, 9 (1962), pp. 307-313.
+[10] B. HUPPERT, Endliche Gruppen I, Berlin-Heidelberg-New York, 1967.
+[11] B. HUPPERT - N. BLACKBURN, Finite groups II, Berlin-Heidelberg-
+     New York, 1982.
+[12] M. I. KARGAPOLOV, On the 03C0-completion of locally nilpotent groups, Algebra
+     i Logika, 1 (1962), Vol. 1, pp. 5-13; (Russian) MR #27-1511.
+[13] O. H. KEGEL - B. A. F. WEHRFRITZ, Locally finite groups, Amsterdam-
+     London, 1973.
+[14] H. KURZWEIL, Endliche Gruppen, Berlin-Heidelberg-New York, 1977.
+[15] F. LEINEN, Existenziell abgeschlossene Lx-Gruppen, Dissertation zur
+     Erlangung des Doktorgrades, Albert-Ludwigs-Universität Freiburg i.
+     Br., 1984.
+[16] A. MACINTYRE - S. SHELAH, Uncountable universal locally finite groups,
+     J. Algebra, 43 (1976), pp. 168-175.
+226
+
+
+[17] B. MAIER, Existenziell abgeschlossene lokal endliche p-Gruppen, Arch.
+     Math., 37 (1981), pp. 113-128.
+[18] B. H. NEUMANN - H. NEUMANN, Embedding theorems for groups, J. Lon-
+     don Math. Soc., 34 (1959), pp. 465-479.
+[19] H. NEUMANN - J. WIEGOLD, Linked products and linked embeddings
+     of groups, Math. Z., 73 (1960), pp. 1-19.
+[20] P. M. NEUMANN, On the structure of standard wreath products of groups,
+     Math. Z., 84 (1964), pp. 343-373.
+[21] D. J. S. ROBINSON, Finiteness conditions and generalized soluble groups,
+     Parts 1 &#x26; 2, Berlin-Heidelberg-New York, 1972.
+[22] V. STINGL, Radikale und koradikale Regeln, Rend. Sem. Mat. Univ.
+     Padova, 72 (1984), pp. 343-355.
+[23] S. THOMAS, Complete existentially closed locally finite groups, Arch. Math.
+     44 (1985), pp. 97-109.
+
+
+      Manoscritto pervenuto in redazione il 30 ottobre 1984.
+

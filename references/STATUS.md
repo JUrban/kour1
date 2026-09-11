@@ -916,3 +916,14 @@ reading scopes in `research/7.27-prior-result.md`. No claim to have
 independently reproved their classification input. Nine files are
 hash-bound in `results/7.27-prior-audit.json`. The affirmative
 consequence is excluded from the new-candidate count.
+
+
+## 8.78: the periodic locally nilpotent class
+
+Leinen1986, *Existentially closed LX-groups*, printed191--194 read
+in full; page192 visually checked. The exact uniqueness theorem is
+explicitly attributed there to Maier1981 Satz2. The original Maier
+proof was not read, and is an imported boundary. The extension and
+restricted-product deduction are written in `research/8.78-prior-result.md`.
+The locally soluble class is not claimed settled. Six files are
+hash-bound in `results/8.78-prior-audit.json`.

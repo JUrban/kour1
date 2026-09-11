@@ -1466,3 +1466,20 @@ issues, descent and an internal audit are explicit. This is recorded
 as a complete consequence of prior machinery, leaving26 possible-new
 candidates and zero outside reviews. No computation is asserted to
 prove the asymptotic theorem. Long n=7 verifiers continue locally.
+
+
+## 2026-09-11T16:20:57.114239+00:00 — Countable universal periodic locally nilpotent group
+
+Completed the last named case of8.78 from Maier1981: each countable
+locally finite p-group embeds in its unique countable existentially
+closed extension type, and the restricted product over primes is
+universal and remains countable periodic locally nilpotent. The
+extension schedule and primary decomposition are proved explicitly.
+Leinen1986 pages191--194 and the exact theorem on page192 were
+checked, with the latter visually checked. Maier's original proof
+is an imported input and was not read. Locally soluble8.78 remains
+unresolved; possible-new count stays26, outside reviews0.
+
+The six n=7 GAP workers remain live. At16:18 UTC they reported
+10,970,000 nodes collectively and15,625,460KiB combined RSS; no shard
+was yet complete. The certificate hash continues to match.
