@@ -1673,3 +1673,30 @@ are recorded. No new complete candidate; the count remains30.
 The18:49 UTC n=7 snapshot verifies all six workers live and records
 15,600,000 checked nodes. No shard has completed and no n=7 proof
 is claimed. All large certificates and live logs remain preserved.
+
+
+## 2026-09-11T19:29:02.509591+00:00 — Candidate 31: unitary cyclic limit is not rational
+
+Problem15.65 has a complete negative candidate for its unitary cyclic
+component. The first product in FNP2005 Theorem2.1.9 is holomorphic
+near t=1/q=0. Removing the degree-one self-conjugate factor leaves a
+nonzero holomorphic product throughout |t|<3/4. The omitted factor
+has a zero of its base at alpha=(1-sqrt(5))/2 with exponent alpha,
+which gives a nonintegral local power and rules out rationality. The
+identity theorem justifies passing from prime-power values to the germ.
+No assertion about irrationality of individual probabilities is made.
+
+Exact logarithmic series calculations agree through degree80 and match
+the published first13 coefficients. Independent GAP enumeration checks
+14 full unitary groups and426 conjugacy classes against the finite
+generating formula; minimal-polynomial and power-matrix-rank tests
+agree throughout. Both processes exit0, logs are clean, and sentinels
+are present. The15-file audit binds proof, review, inputs and controls.
+The source's different definition of separable is recorded explicitly;
+the cyclic result does not depend on correcting the Notebook.
+
+Earlier Issue14/15 scope checks and the19.20 duplicate-screen crosslink
+were committed as c9499f0. At19:16 UTC all six n=7 workers remained
+live with16,270,000 checked nodes; no complete shard or n=7 proof.
+All work remains local, the48-hour goal remains active, and outside
+review and further priority checks remain required for all31 candidates.

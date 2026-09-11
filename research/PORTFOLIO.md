@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T18:09:17.393481+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T19:29:02.509591+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 15.65, unitary cyclic component | Analytic continuation of the FNP product in inverse field size; isolate the degree-one factor. | Thirty-first complete candidate: C(U;q) is not rational, even allowing complex coefficients. Irrational local exponent proved; remainder convergence and prime-power identity argument explicit. All 14 GAP cases and degree80 series controls pass. Other components, priority and outside review remain open here. |
 | 9.45 | Centered cyclic cosets and integer tests for orthogonal rank-one summands. | Twenty-eighth complete candidate: necessary and sufficient coordinate divisibility/count criterion in every dimension, returning the orthogonal basis in O(mn+n^2) arithmetic work. All 3,520 exact cases and GAP HNF/box controls pass; prior n=2 and decomposition methods credited. Novelty and outside review pending. |
 | 9.47 | Clopen containment selectors and the Dow--Watson scattered compact counterexample. | Twenty-seventh complete negative candidate. Exact positive class also characterized and realized in discrete abelian groups. Both topological source arguments expanded in full; connection novelty and outside review pending. |
 | 9.55 | Apply Weiss rigidity to the double-action group-ring lattice. | Negative prior consequence; every augmented Z_p-algebra automorphism factors through an integral unit and a group automorphism. Exact input, permutation-basis argument and composition order audited; no new count. |

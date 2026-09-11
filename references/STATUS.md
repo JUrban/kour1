@@ -4,6 +4,16 @@ Last checked 2026-09-11. A search finding no solution is evidence only of the sc
 
 ## Newly audited older problems
 
+- **15.65, unitary cyclic component:** Fulman--Neumann--Praeger2005,
+  [DOI 10.1090/memo/0830](https://doi.org/10.1090/memo/0830),
+  Theorem2.1.9 and Lemma1.3.12 provide the product and count polynomials.
+  Their relevant statements, short generating-function proofs and source
+  pages23,39,40 were checked; original conjugacy classification imported.
+  The new analytic continuation/nonrationality argument is in
+  `research/15.65-proof.md`. Britnell--Fulman2005 integrality/parity
+  supplies a separate control only. Detailed reading and novelty limits
+  are in `research/15.65-review.md`.
+
 - **13.39(f):** Brady--Ciobanu--Martino--O Rourke (2009),
   https://doi.org/10.1090/S0002-9947-08-04639-4 , main power-equation
   theorem and complete main proof read in the author manuscript.

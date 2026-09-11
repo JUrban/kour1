@@ -1,0 +1,1033 @@
+                                                                           SYMMETRY AND COLORINGS:
+                                                                       SOME RESULTS AND OPEN PROBLEMS, II
+
+                                                                                             TARAS BANAKH
+
+
+                                                 Abstract. We survey some principal results and open problems related to colorings of geometric and algebraic
+arXiv:1111.1015v1 [math.CO] 3 Nov 2011
+
+
+
+
+                                                 objects endowed with symmetries. We concentrate the exposition on the maximal symmetry numbers msr (X) of
+                                                 such objects.
+
+
+
+
+                                                                                            1. Introduction
+                                            In this paper we give a survey of principal results and open problems related to colorings and symmetry. The
+                                         paper can be considered as an update of the earlier surveys [14] and [16], written more than 10 years ago. It can
+                                         also serve as lecture notes of the cycle of 16 lectures delivered by the author in Silesian University (Poland) in
+                                         the fall Semester of 2011. The paper contains no proofs. Our aim is to describe the general picture of the theory
+                                         and refer to original papers for proofs of mentioned results.
+                                            The subject discussed in this paper traces its history back to S.Sidon who posed in 1931 the following problem
+                                         related to the Additive Number Theory [37]: given a subset A ⊂ N and a number n ∈ N estimate the quantity of
+                                         solutions (x, y) ∈ A × A of the equation x + y = n. Observe that this is essentially a question about symmetric
+                                         subsets of A: it is easy to see that the set S(n) = {x ∈ A : n − x ∈ A} is symmetric with respect to the point n/2
+                                         and its cardinality is just equal to the quantity of pairs (x, y) ∈ A × A with x + y = n. Thus the Sidon question
+                                         can be reformulated in terms of symmetry: given a subset A ⊂ N estimate the size of a maximal symmetric
+                                         subset of A. This observation is of crucial importance since symmetric subsets can be naturally defined for many
+                                         algebraic and geometric objects.
+                                            We shall treat symmetry using the methods of Ramsey Theory. Ramsey Theory is a science about pieces of
+                                         order in chaos. A typical Ramsey result says that for any partition of certain highly organized object X into
+                                         pieces one of the pieces still contains a relatively large subobject with high organization, see [21]. Instead of
+                                         partitions into r pieces, it is more convenient to speak about colorings of X in r colors. Then subsets that lie in
+                                         the pieces of the partition are colored by the same color and are called monochromatic.
+                                            A typical example of a Ramsey-theoretic result is the Van der Waerden Theorem saying that for any finite
+                                         partition N = A1 ∪ · · · ∪ Ar of the set N, one of the pieces of the partition contains arbitrarily long arithmetic
+                                         progressions, see [21]. In the chromatic terminology this theorem says that for any finite coloring of N there are
+                                         arbitrarily long monochromatic arithmetic progressions.
+                                            In this paper we shall treat the symmetry by Ramsey-theoretic methods and for colorings of geometric or
+                                         algebraic objects X, shall look for “large” monochromatic subsets which are symmetric (so, in a sense have
+                                         some inner structure). The “largeness” of subsets of such object X will be evaluated with help of a “measure”
+                                         µ : dom(µ) → [µ(∅), µ(X)] defined on a σ-algebra dom(µ) of subsets of X, while symmetric subsets will be defined
+                                         by fixing a family S of measure-preserving bijective transformations of X, called admissible symmetries of X. For
+                                         such a triple X = (X, µ, S) (called a symmetry measure space) we shall evaluate the maximal symmetry numbers
+                                         msr (X) equal to the maximal measure of a symmetric subset that can be found in each measurable r-coloring
+                                         of X. In subsequent sections we shall calculate or evaluate this maximal symmetry number msr (X) for various
+                                         symmetry measure spaces X = (X, µ, S) that naturally appear in Geometry and Algebra.
+
+                                                                                    2. Symmetry Measure spaces
+                                            In this section we introduce the notion of a symmetry measure space X = (X, µ, S). This is a triple consisting
+                                         of a set X, a measure µ on X and a family S of bijective measure-preserving transformations of X, called
+                                         admissible symmetries of X.
+
+                                            1991 Mathematics Subject Classification. 05D10, 20F99, 28C99, 52C10.
+                                            Key words and phrases. coloring, symmetry, measure, cardinality, asymptotic dimension, monochromatic subset, symmetric
+                                         subset, group, metric space.
+                                                                                                      1
+2                                                   TARAS BANAKH
+
+
+   By a measure on X we understand any monotone function µ : dom(µ) → [µ(∅), µ(X)] defined on a σ-algebra
+dom(µ) of subsets of X and taking values in a complete linearly ordered set [µ(∅), µ(X)] with minimal element
+µ(∅) and maximal element µ(X). The completeness of [µ(∅), µ(X)] means that each subset A ⊂ [µ(∅), µ(X)] has
+the exact lower and upper bounds inf(A) and sup(A). The monotonicity of µ means that µ(A) ≤ µ(B) for any
+subsets A ⊂ B that belong to the σ-algebra dom(µ). The pair (X, µ) will be called a measure space. Elements of
+the σ-algebra dom(µ) are called µ-measurable (or just measurable) subsets of the measure space (X, µ).
+   The other component of a symmetry measure space is a family S of bijective transformations of X, called
+admissible symmetries (or just symmetries) of X. We assume that the family S is symmetric in the sense that
+s−1 ∈ S for each S, and that each admissible symmetry s ∈ S is measure-preserving in the sense that for
+any subset A ∈ dom(µ) its image s(A) belongs to the σ-algebra dom(µ) and has measure µ(s(A)) = µ(A). A
+symmetry s : X → X is called involutive if s−1 = s, i.e., s ◦ s coincides with the identity transformation idX of
+X.
+   A subset A ⊂ X of a symmetry measure space (X, µ, S) is called symmetric (more precisely, S-symmetric) if
+A = s(A) for some symmetry s ∈ S. This notion is trivial if S contains the identity transformation of X (in
+which case, each subset of X is S-symmetric). So, as a rule we shall assume that S does not contain the identity
+transformation idX of X, but the case S = {idX } is not completely excluded.
+   Observe that for any set A ⊂ X and an admissible symmetry s the intersection
+                                                   \
+                                                       sn (A)
+                                                       n∈Z
+
+is the largest {s}-symmetric subset of A. If the symmetry s is involutive, then this intersection
+                                                                                        T         coincides with
+A ∩ s(A). If the set A belongs to the σ-algebra dom(µ) of µ-measurable sets then the set n∈Z sn (A) also belongs
+to dom(µ).
+
+                3. The maximal symmetry numbers msr (X) of a symmetry measure space X
+  In this section, for each symmetry measure space X = (X, µ, S) we define its maximal symmetry numbers
+msr (X) parametrized by cardinal numbers r.
+  First we define the maximal symmetry number ms(A) of a measurable subset A of X. By definition,
+                         ms(A) = sup{µ(B) : B is a µ-measurable S-symmetric subset of A}
+is the maximal measure of a µ-measurable S-symmetric subset of A. It is clear that
+                                                       T n      
+                                         ms(A) = sup µ    s (A) ,
+                                                        s∈S     n∈Z
+        T      n
+where         s (A) is the maximal {s}-symmetric subset of A. If each admissible symmetry s ∈ S is involutive,
+        n∈Z
+then
+                                              ms(A) = sup µ(A ∩ s(A)).
+                                                         s∈S
+    Next, for every cardinal number r put
+                                         msr (A) = inf sup ms(χ−1 (i)),
+                                                      χ:A→r i∈r
+
+where the infimum is taken over all µ-measurable colorings χ : A → r of A. The µ-measurability of χ means that
+each color class χ−1 (i), i ∈ r, belongs to the σ-algebra dom(µ) of µ-measurable sets. The maximal symmetry
+number msr (A) takes its values in the linearly ordered set [µ(∅), µ(X)].
+   If we want to specify the measure µ and the family of symmetries S, then we shall use the expanded form
+msr (A, µ, S) instead of msr (A). Also for a symmetry measure space X = (X, µ, S) the maximal symmetry
+numbers msr (X, µ, S) will be denoted by msr (X).
+   The definition of the number msr (A) implies that
+      • for any a < msr (A) and each measurable r-coloring of A there is a monochrome S-symmetric measurable
+        subset B ⊂ A with measure µ(B) > a;
+      • for any b > msr (A) there is a measurable r-coloring of A without monochrome S-symmetric measurable
+        subset B ⊂ A of measure µ(B) ≥ b.
+   The maximal symmetry number msr (A, µ, S) is monotone with respect to r, A, and S in the sense that
+                                            msr (A, µ, S) ≤ msr′ (A′ , µ, S ′ )
+                                            SYMMETRY AND COLORINGS                                                 3
+
+
+for any cardinals r ≥ r′ , measurable sets A ⊂ A′ , and families S ⊂ S ′ of admissible symmetries.
+   This inequality can be also derived from the following general fact:
+Proposition 3.1. For two symmetry measure spaces X = (X, µX , SX ) and Y = (Y, µY , SY ) the inequality
+msr (X) ≤ msr (Y) holds for every cardinal r provided there is a function f : X → Y such that
+     • for any µY -measurable subset B ⊂ Y the preimage f −1 (B) is µX -measurable and has measure µX (f −1 (B)) ≤
+       µY (B);
+     • for any admissible symmetry sX ∈ SX there is an admissible symmetry sY ∈ SY such that sY ◦f = f ◦sX .
+
+                     4. The maximal symmetry number of some geometric objects
+  In this section we shall evaluate the maximal symmetry numbers msr (X) of some symmetry measure spaces
+X that naturally appear in Geometry. Among typical spaces of this sort let us mention spheres and balls in
+Euclidean spaces. We shall give upper and lower bound for such symmetry measure spaces having geometric
+nature.
+  The following general theorem proved in [15] gives a typical upper bound for the maximal symmetry numbers
+msr (X) of compact subsets of connected Riemannian manifolds, endowed with their canonical measure and
+canonical metric.
+Theorem 4.1 ([15]). Let M be a Riemannian manifold, endowed with its canonical Borel measure µ and the
+canonical metric d. Let X be a compact subset of M and S be the family of all non-identity isometries f : M → M
+such that f (X) = X. Then
+                                                     µ(X)
+                                     msr (X, µ, S) ≤        for all r ∈ N,
+                                                      r2
+which means that for every ε > 0 there is a measurable r-coloring of X without monochromatic S-symmetric
+subsets of measure ≥ µ(X)
+                       r 2 + ε.
+
+    The lower bound µ(X)r 2 ≤ msr (X) can be proved for symmetry measure spaces X = (X, µ, S) with sufficiently
+rich family of admissible symmetries, in particular, for spaces having rotational or spherical symmetries.
+    To define spaces with such symmetries, we first introduce the symmetry measure structure on n-dimensional
+spheres S n and cylinders S n × [0, a]. We endow the n-dimensional sphere S n = {x ∈ Rn+1 : kxk = 1} with a
+unique probability Borel measure µ, invariant under the action of the group O(n+1) of orthogonal transformations
+of the Euclidean space Rn+1 . For the family of admissible symmetries there are many natural choices. The largest
+is the family I \ {id} of all non-identity isometries of S n . This family contains the subfamily R consisting of all
+reflections of S n with respect to the hyperplanes passing through the center of the sphere.
+Theorem 4.2 ([15]). For every r, n ∈ N we get
+                                                                      1
+                                      msr (S n , R) = msr (S n , I \ {id}) =
+                                                                        .
+                                                                     r2
+Moreover, for each measurable coloring of S n by r ≥ 2 colors there is a monochromatic R-symmetric subset
+A ⊂ S n of measure µ(A) > r12 .
+   A similar result is true for cylinders S n × (a, b) over spheres, and suitable images of such cylinders. Here we
+endow the interval (a, b) with the Lebesgue measure and the trivial family {id} of admissible symmetries.
+   The cylinder S n × (a, b) will be considered as a symmetry measure space endowed with the product measure
+λ and the family R × {id} of admissible symmetries. So, each admissible symmetry of S n × (a, b) is of the form
+                                             s × id : (x, t) 7→ (s(x), t)
+for some reflection s ∈ R. Geometrically, this means that admissible symmetries of the cylinder S n × (a, b) are
+reflections with respect to the hyperplanes in Rn+1 × R that contain the axis {0} × R.
+   We say that a symmetry measure space X = (X, µ, S) has S n -symmetry if the measure µ takes its values in
+the real line R and there is a function f : S n × (0, µ(X)) → X such that
+    (1) for any µ-measurable subset B ⊂ X the set f −1 (B) is λ-measurable and has measure λ(f −1 (B)) = µ(B);
+    (2) for any reflection r ∈ R × {id} of the cylinder S n × (0, µ(X)) there is an admissible symmetry s ∈ S such
+        that s ◦ f = f ◦ r.
+4                                                 TARAS BANAKH
+
+
+These conditions imply that µ(∅) = λ(f −1 (∅)) = 0, so [µ(∅), µ(X)] = [0, µ(X)] ⊂ R.
+    We shall say that a symmetry measure space X has rotation symmetry (resp. spherical symmetry) if X has
+S 1 -symmetry (resp. S 2 -symmetry).
+    Since the sphere S 2 has rotational symmetry, each symmetry measure space with spherical symmetry has
+rotation symmetry. Observe that all spheres and balls in the spaces Rn , n ≥ 3, have spherical symmetry.
+Theorem 4.3 ([15]). If a symmetry measure space X = (X, µ, S) has rotation symmetry, then msr (X) ≥ µ(X)
+                                                                                                     r2
+for every r ∈ N.
+    This theorem can be derived from the following more precise fact, proved in [15] and [16]:
+Proposition 4.4. If a symmetry measure space X = (X, µ, S) with µ(X) = 1 has:
+    • rotation symmetry, then each µ-measurable subset A ⊂ X contains an S-symmetric subset B ⊂ A of
+      measure µ(B) ≥ µ(A)2 ;
+    • spherical symmetry, then each µ-measurable subset A ⊂ X of measure 0 < µ(A) < 1 contains an S-
+      symmetric subset B ⊂ A of measure µ(B) > µ(A)2 .
+    The circle
+                                   S 1 = {z ∈ C : |z| = 1} = {eiϕ : 0 ≤ ϕ < 2π}
+on the complex plane has no spherical symmetry but by Theorem 4.2 still has the stronger Ramsey property
+stated in Proposition 4.4: each subset A ⊂ S 1 of measure 0 < A < 1 = µ(S 1 ) contains an R-symmetric subset
+B ⊂ A of measure µ(B) > µ(A)2 .
+   In contrast, the 2-dimensional ball B 2 ⊂ R2 and the cylinder S 1 × [0, 1] do not have this stronger property. A
+counterexample is given by the subset
+                                        
+                                  A = (eiϕ , t) ∈ S 1 × [0, 1] : πt ≤ ϕ < π + πt
+of measure 21 which contains no symmetric subset of measure > 41 . Applying to A the measure-preserving
+transformation                                                                 p
+                                     f : S 1 × [0, 1] → D, f : (eiϕ , t) 7→ eiϕ t/π
+                                                                 √
+of the cylinder S 1 × [0, 1] onto the disk D = {z ∈ C : |z| ≤ 1/ π} of unit area, we get the subset
+                                        F = {reiϕ : r2 π 2 ≤ ϕ < r2 π 2 + π}
+of the disc D bounded by the Fermat spiral ϕ = r2 π 2 . The set F has area 21 but contains no axially symmetric
+subset of measure > 14 . By its form it resembles one of the congruent pieces in the famous Yin-Yang symbol:
+
+
+
+
+  This property of F was used in the paper [17] devoted to finding the canonical form of the Yin-Yang symbol.
+  A measurable subset A of the disk D = {z ∈ C : π|z|2 ≤ 1} of unit area will be called equilibrial if A has area
+λ(A) = 21 and for any axial symmetry s : D → D of the disc the maximal {s}-symmetric subset A ∩ s(A) of A
+has area λ(A ∩ s(A)) = 14 .
+Definition 1. A curve β in the disc D will be called a Yin-Yang curve if it has the following 5 properties:
+   (1) β separates D into two congruent equilibrial pieces A and −A; √
+   (2) β meets each concentric circle Ca = {z ∈ C : |z| = a}, 0 < a ≤ 1/ π, in   √ two opposite points;
+   (3) β has one-point intersection with each radius Rϕ = {reiϕ : 0 < r ≤ 1/ π}, ϕ ∈ [0, 2π);
+   (4) the curve β is smooth (i.e., has a regular C ∞ -parametrization);
+   (5) the curve β is algebraic in polar coordinates (i.e., its points satisfy a polynomial equation P (r, ϕ) = 0).
+                                           SYMMETRY AND COLORINGS                                                  5
+
+
+Theorem 4.5 ([17]). Up to the congruence the Fermat spiral β = {reiϕ ∈ D : π 2 r2 = ϕ} is a unique Yin-Yang
+curve.
+
+                           5. Maximal symmetry numbers msr (X) of G-spaces
+  In this section we study the maximal symmetry numbers msr (X) for a measure space (X, µ) endowed with a
+measure-preserving action of a group G.
+  By an action of G on X we understand a function α : G × X → X, α : (g, x) 7→ gx, such that
+     • g(hx) = (gh)x for any g, h ∈ G and x ∈ X;
+     • 1x = x for all x ∈ X.
+Here by 1 we denote the neutral element of the group G.
+   An action α : G × X → X of a group G on a measure space (X, µ) is called measure-preserving if for any
+element g ∈ G the left shift lg : X → X, lg : x 7→ gx, is measure-preserving in the sense that for any µ-measurable
+subset A ⊂ X its shift gA is µ-measurable and has measure µ(gA) = µ(A).
+   A measure space X endowed with a measure-preserving action α of a group G will be called a measure G-space.
+   Each measure G-space (X, µ,    α) will be considered as a symmetry measure space X = (X, µ, S) whose family
+of admissible symmetries S = lg : g ∈ G \ {1} consists of left shifts by non-identity elements of the group G.
+By msr (X) we shall denote the maximal symmetry number of that symmetry measure space.
+   Below I denotes the interval [0, 1] endowed with the standard Lebesgue measure λ. For every compact topo-
+logical group G we consider the cylinder G × I as a left G-space (with the action g · (h, t) = (gh, t) for g ∈ G and
+(h, t) ∈ G × I) endowed with the product measure µ × λ, where µ is the Haar measure on G.
+Theorem 5.1 ([14]). Let X be a compact metrizable space endowed with a σ-additive Borel probability measure
+µ and a continuous measure-preserving action of a finite group G. The for every finite number r,
+    (1) msr (X) ≥ msr (G × I);
+    (2) msr (X) = msr (G × I, r) if the measure µ is atomless and |G · x| = |G| for µ-almost all x ∈ X.
+   Thus the problem of calculating msr (X) reduces to calculating the maximal symmetry numbers msr (G × I)
+of cylinder over finite groups G. Below D2n is a dihedral group, i.e., the group of all isometries of the regular
+n-gon. For n = 2 the dihedral group D2n coincides with the Kleinian group (isomorphic to Z2 × Z2 ).
+   The following unexpected result belongs to Ya.Vorobets and is taken from [14].
+Theorem 5.2.        (1) For any subgroup H of a finite group G we have msr (H × I) ≤ msr (G × I) for every
+       r ∈ N.
+   (2) msr (Zn × I) = 0 for every n, r > 1.
+  (3) For every prime number p
+                                p−1
+          • ms2 (D2p × I) = p2 +2p−2 ,
+          • ms3 (D2p × I) = 3p21+6 and
+          • msr (D2p ) = 0 if r ≥ 4.
+  (4) For any n, r > 1 msr (D2n ) = msr (D2p ), where p is the minimal prime number dividing n;
+  (5) If r = 2k for some k ≥ 0, then msr (Zn2 × I) = r12 · 22n −1
+                                                               −r
+                                                             n
+                                                                  for every n > k.
+   Theorems 5.1 and 5.2 allow us to classify the maximal symmetry numbers msr (X) for all compact subsets X of
+positive Lebesgue measure in the plane, endowed with the family S = Iso(X) \ {id} of all nonidentity isometries
+of X.
+Theorem 5.3 ([14]). For every compact subset X ⊂ R2 of positive Lebesgue measure and every r ≥ 2 we have
+               
+                 1
+                r2 ,             if the group Iso(X) is infinite;
+     msr (X) = msr (D2n × I, r), if Iso(X) is isomorphic to the dihedral group D2n for some n ≥ 2;
+               
+               
+                 0,               otherwise.
+  Theorem 5.3 suggests the following
+Problem 5.4. Classify maximal symmetry numbers msr (X) of compact subsets X of positive Lebesgue measure
+in Rn for n > 2. In particular, calculate msr (X) for all regular convex polyhedra X in Rn for n > 2. Calculate
+ms2 (T ) (or equivalently, ms2 (S4 × I)) for the regular tetrahedron T in R3 .
+6                                                  TARAS BANAKH
+
+
+  Observe that the last statement of Theorem 5.2, Theorem 4.1, and known results on classification of regular
+polyhedra [18, 12.6] imply the following asymptotic estimation first noticed by Ya.Vorobets.
+Proposition 5.5. If m ≥ 2 and r = 2k for some k ∈ N, then
+                                          1                  1 2m − r
+                                            2
+                                              ≥ msr (X, r) ≥ 2 m      .
+                                          r                 r 2 −1
+for every regular convex polyhedron of dimension dim X ≥ 2m − 1.
+   Maximal symmetry numbers ms2 (X, S) of the finite sets X of vertices of regular polyhedra in R3 endowed with
+the counting measure µ : A 7→ |A| and various families S of admissible symmetries were calculated by I. Kluka
+in [31] and are presented in the following table, in which
+      • S ± is the family of non-identity isometries of X;
+      • S + is the family of non-identity orientation-preserving isometries of X;
+      • S − is the family of orientation-reversing isometries of X;
+      • S2± is the family of non-identity involutive isometries of X;
+      • S2+ is the family of non-identity involutive orientation-preserving isometries of X;
+      • S2− is the family of involutive orientation-reversing isometries of X.
+
+                       X        tetrahedron octahedron cube          icosahedron dodecahedron
+                      |X|            4           6       8                12          20
+                  ms2 (X, S ± )      2           3       4                 5          7
+                  ms2 (X, S2± )      2           3       4                 5          7
+                  ms2 (X, S − )      2           3       3                 4          6
+                  ms2 (X, S2− )      2           3       3                 5          6
+                  ms2 (X, S + )      2           3       3                 4          6
+                  ms2 (X, S2+ )      2           2       2                 4          6
+
+  Observe that ms2 (X, S) ≥ |X|  4 for all families of admissible symmetries S from this table. In particular,
+ms2 (X, S2+ ) ≥ |X|
+                 4  for every regular polyhedron X in R3 . We do not know if the same inequality holds for the
+          n
+spheres S .
+Question 5.6. Is msr (S n , S2+ ) = r12 for n, r > 1? More precisely, does for every measurable r-coloring of the
+n-dimensional sphere S n there exist a monochromatic subset of measure ≥ r12 , symmetric with respect to some
+line passing through the center of the sphere?
+   It can be shown that msr (S 2 , S2+ ) ≥ 2r12 for every r ∈ N (use arguments analogous to those from [7]). Moreover,
+Theorems 5.2(2) implies that
+                                                        1                                          1
+                     ms2 (S 2 , S2+ ) ≥ ms2 (S 2 , V) =     and ms3 (S 2 , S2+ ) ≥ ms3 (S 2 , V) ≥    ,
+                                                        6                                          18
+                                                                 ◦
+where V is the 3-element set consisting of rotations on 180 around 3 pairwise orthogonal axes passing through
+the center of the sphere S 2 .
+
+                   6. The maximal symmetry numbers msr ([0, 1]) of the interval [0, 1]
+   In this section we consider one of the most difficult and challenging open problems related to our subject —
+evaluating the maximal symmetry numbers msr (I) for the unit interval I = [0, 1] in the real line R endowed with
+the Lebesgue measure µ and the family S = {sc : c ∈ R} of central symmetries sc : x 7→ 2c − x.
+   The number msr (I) is tightly connected with the maximal symmetry numbers msr (n) of finite ordinals n =
+{0, 1, . . . , n − 1} considered as subsets of integers Z endowed with the counting measure µ : A 7→ |A| and the
+family S̃ = {s̃c : c ∈ Z} of admissible symmetries s̃c : x 7→ c − x. So, msr (n) is equal to the maximal number
+                                                                                           e
+k ∈ N such that for every r-coloring of the ordinal n = {0, . . . , n − 1} there exists an S-symmetric monochromatic
+subset A ⊂ n of cardinality |A| ≥ k.
+   Note that the function msr (n) resembles the well known Van der Waerden function Wr (n) assigning to each n
+and r the maximal k such that for every r-coloring of n = {0, . . . , n − 1} there exists a monochromatic arithmetic
+progression of length k. Since each arithmetic progression is a symmetric set, we get Wr (n) ≤ msr (n) for any
+n, r ∈ N. It is know that for a given r ≥ 2 the Van der Waerden function Wr (n) very slowly approaches the
+                                             SYMMETRY AND COLORINGS                                                   7
+
+
+infinity as n → ∞. In the contract, the function msr (n) grows linearly on n, that is, for every r ∈ N there exists
+a positive limit lim msr (n)/n. It turns out that this limit is equal to the maximal symmetry number msr (I) of
+                n→∞
+the unit interval I = [0, 1]. Let us recall that msr (I) is equal to the least upper bound of ε > 0 such that for every
+measurable r-coloring of I there exists a monochromatic symmetric subset A ⊂ I of Lebesgue measure λ(A) ≥ ε.
+   The exact values of the maximal symmetry numbers msr (I) are not known. We merely have some lower and
+upper bounds for these numbers. Lower bounds for msr (I) can be derived from known lower bounds for the
+function ∆ : [0, 1] → [0, 1] assigning to each ε ∈ [0, 1] the number
+                ∆(ε) = inf{ms(A) : A ⊂ I is a measurable subset of Lebesgue measure λ(A) ≥ ε}.
+The function ∆(ε) was introduced and studied by Martin and O’Bryant in [33] and [34]. In particular, they
+proved that
+                                       ∆(ε) ≥ S · ε2 for every ε ∈ [0, 1]
+where                                                              R1
+                                      kf ∗ f k∞            supx∈R | 0 f (t)f (x − t)dt|
+                         S = inf                = inf             R1           2
+                             f ∈L1(I)   kf k21    f ∈L1(I)           |f (t)|dt
+                                                                       0
+and L1 (I) denote the space of measurable functions f : R → R with supp(f ) = {x ∈ R : f (x) 6= 0} ⊂ [0, 1] and
+R1
+ 0 |f (t)|dt < ∞.
+   The exact value of the constant S is not known. Many authors proved lower and upper bounds for S, see [33],
+[34], [35]. At the moment the best bounds
+                                                 0.6374 ≤ S ≤ 0.7549
+are due to Matolsci and Venuesa [35]. The lower bound for the number S implies √ the following lower bound for
+the numbers msr (I), which improves the earlier lower bound msr (I) ≥ 1/(r2 + r r2 − r) proved in [15] and [16].
+Theorem 6.1. msr (I) ≥ ∆( 1r ) ≥ S/r2 ≥ 0.6374/r2 for all r ∈ N.
+   Upper bounds for the maximal symmetry numbers msr (I) are obtained by the technique of blurred colorings,
+created in [15] and [16]. To define such colorings we first look at ordinary colorings from a bit different point of
+view.
+   Observe that every (measurable) r-coloring χ : X →P   r of a space X can be identified with the collection {χi }i∈r
+of (measurable) functions χi : X → {0, 1} such that i∈r χi ≡ 1 and χi (x) = 1 iff χ(x) = i for x ∈ X. By a
+           Prblurred r-coloring of X we understand a collection {χi }i∈r of (measurable) functions χi : X → [0, 1]
+(measurable)
+such that i=1 χi ≡ 1.
+   Now assume that X = (X, µ, S) is a symmetry measure space whose admissible isometries s ∈ S are involutive.
+In this case the maximal symmetry number msr (X) is equal to
+                                                     Z
+                                          inf sup sup χi (x)χi (s(x))dµ,
+                                             χ i∈r s∈S
+                                                         X
+where the infimum is taken over all measurable r-colorings χ = {χi }i∈r of X. Taking this infimum over all
+measurable blurred r-colorings of X, we obtain the definition of the blurred maximal symmetry number bmsr (X).
+Clearly, bmsr (X) ≤ msr (X).
+   In particular, we can consider the blurred maximal symmetry numbers bmsr (n) and bmsr ([0, 1]) of discrete and
+continuous intervals (on the discrete interval n we consider the counting measure µ : A 7→ |A|). The following
+theorem proved in [15, §6] and [16] describes interplay between the blurred and ordinary maximal symmetry
+numbers.
+Theorem 6.2. Let r ∈ N. Then
+   (1) msr (I) = lim msr (n)/n = inf msr (n)/n;
+                  n→∞                n∈N
+    (2) bmsr (I) = lim bmsr (n)/n = inf bmsr (n)/n;
+                   n→∞                 n∈N
+    (3) bmsr (n) ≤ msr (n) for every n ∈ N;
+    (4) bmsr (I) = msr (I) if r > 1;
+    (5) S/r2 ≤ msr (I) < 1/r2 for r > 1;
+    (6) lim r2 · msr (I) = inf r2 · msr (I) = S′ for some constant S′ such that S ≤ S′ < 65 ;
+        r→∞                r∈N
+                             5
+    (7) 0.15935 ≤ ms2 (I) < 24 = 0.20833...
+8                                                 TARAS BANAKH
+
+
+   For small n the values ms2 (n) can be easily found by routine computer calculations. On the other hand, the
+                                                                                           5
+values bms2 (n) are not known even for small n > 3. For n = 4 we know that bms2 (4) ≤ 24     and this explains
+                   5
+why the constant 24 had appeared in Theorem 6.2. Answers (even particular) to the following problems would
+be very interesting.
+Problem 6.3. Calculate the values bmsr (n) (at least for small n and r = 2).
+Problem 6.4. Calculate the values msr (I) (at least for r = 2).
+Problem 6.5. Calculate or evaluate the constant S′ from Theorem 6.2(6). Is S′ > S?
+Problem 6.6. How quickly do the sequences {msr (n)/n}∞                   ∞
+                                                     n=1 and {bmsr (n)/n}n=1 converge to their limit msr (I) =
+bmsr (I)?
+
+             7. The maximal symmetry numbers msr (G) of compact topological groups
+   In this section we shall study the maximal symmetry numbers of symmetry measure spaces having Algebraic
+nature. Namely, we shall study the maximal symmetry numbers msr (G) of compact topological groups G.
+   It is well-known that each compact topological group G possesses a unique translation-invariant Borel prob-
+ability measure µ : dom(µ) → [0, 1] called the Haar measure. This measure determines the σ-algebra dom(µ)
+of µ-measurable subsets, which includes all Borel subsets of G. Subsets that belong to dom(µ) will be called
+measurable.
+   Each group G will be endowed with the family of admissible symmetries
+                                                 S = {sc : c ∈ G}
+containing involutive transformations
+                                                 sc : x 7→ cx−1 c,
+called central symmetries of the group G.
+   For an Abelian group G we shall also consider the wider family
+                                                 Se = {s̃c : c ∈ G}
+of symmetries
+                                                  s̃c : x 7→ c − x
+called quasi-central symmetries of G.
+   If the Abelian group G is 2-divisible (which means that the equation x + x = a has a solution in G for each
+a ∈ G), then Se = S.
+   For an Abelian compact topological group G by msr (G) and ms̃r (G) we shall denote the maximal symmetry
+numbers of the symmetry spaces (G, µ, S) and (G, µ, S). e These numbers take their values in the interval [0, 1].
+   Since each central symmetry sc , c ∈ G, is involutive, for any measurable subset A ⊂ G the set A ∩ sc (A) is the
+largest measurable {sc }-symmetric subset of A. The regularity of the Haar measure µ implies that the measure
+µ(A ∩ sc (A)) continuously depends on c, so
+                                        ms(A) = max{µ(A ∩ sc (A)) : c ∈ G}
+is attainable by the compactness of G.
+   This implies that for any measurable r-coloring of a compact topological group G there is a monochromatic
+measurable S-symmetric subset A ⊂ G of Haar measure µ(A) ≥ msr (G) and msr (G) is the largest real number
+with that property. A similar result holds for the maximal symmetry number ms̃r (G).
+   The maximal symmetry numbers msr (G) and ms̃r (G) of compact Abelian groups G were evaluated in [15].
+Below by G2 = {x ∈ G : x + x = 0} we denote the closed subset of element of order 2 in G.
+Theorem 7.1. Let r ≥ 2 be integer and G be a compact Abelian group with Haar measure µ.
+   (1) r12 ≤ msr (G) ≤ ms̃r (G).
+   (2) If G is finite, then
+                            1                 1     1    1            p
+                              2
+                                < ms̃ r (G) ≤   2
+                                                  +     −   2
+                                                              µ(G2 ) + 3 2 ln(2r|G|)/|G|;
+                            r                 r      r    r
+                                            1     1   1
+                                                        
+   (3) If G is infinite, then ms̃r (G) ≤ r2 + r − r2 µ(G2 ).
+                                            SYMMETRY AND COLORINGS                                                  9
+
+
+  The lower bounds in this theorem can be derived from the following proposition proved by the method of
+Harmonic Analysis in [15, §2].
+Proposition 7.2. Any measurable subset A of a compact Abelian group G contains a measurable S-symmetric
+                                                                                            e
+subset B ⊂ A of Haar measure µ(B) ≥ µ(A)2 . If 0 < µ(A) < 1, then A contains a measurable S-symmetric
+                                        2
+subset B ⊂ A of Haar measure µ(B) > µ(A) .
+  Theorem 7.1 can be completed by the following theorem of Yu.Zelenyuk [51].
+Theorem 7.3. Let G be a finite Abelian group.
+   (1) If G contains a subgroup isomorphic to Zn4 for some n ∈ N, then msr (G) = r12 for r = 2n .
+   (2) If G contains no element of order 4, then ms2 (G) > 41 .
+  This theorem suggests the following open:
+Problem 7.4. Given an integer number r, detect Abelian groups G with msr (G) = r12 .
+   The evaluation of the maximal symmetry numbers msr (G) of non-commutative compact topological groups
+is much more difficult and still remains an unfinished task. We shall give some partial answer for finite and
+connected groups.
+   We start with the case of finite group G. To estimate the number msr (G), consider the following numbers:
+                                     p               √                             √
+                       k(G) = min | g 2 |, k0 (G) = | 1|, and k1 (G) = min | g|,
+                                 g∈G                                           g∈2G\{1}
+                                                                           √
+                                                           2
+where 1 is the neutral element of the group G, 2G = {g : g ∈ G} ⊂ G and g = {x ∈ G : x2 = g} for g ∈ G.
+Let also m(G) be the maximal cardinality of a subgroup of G, contained in the set 2G.
+Theorem 7.5 ([6]). For every finite group G and every r ∈ N we have the estimates:
+                                      (G)
+                                             p
+  (1) msr (G) ≤ r12 + ( r1 − r12 ) k0|G|  + 3 2 ln(2r|G|)/|G|;
+    (2) msr (G) ≥ k(G)m(G)
+                     |G|   · r12 ;
+    (3) msr (G) ≥ k1 (G)m(G)
+                       |G|
+                             1
+                             r2 +
+                                  k0 (G)−k1 (G) 1
+                                       |G|      r;
+                  1
+    (4) msr (G) ≥ r2 of the group G has odd cardinality |G|.
+   Similar lower and upper bound were also obtained by M.Korostenski and Yu.Zelenyuk in [32].
+   For some groups (for example, dihedral groups) the third item of Theorem 7.5 gives a better lower bound than
+                                                                                                  |G|
+the second one. For any finite Abelian group G we have m(G) = |2G| and k(G) = |B(G)| = m(G)            and thus
+            1
+msr (G) ≥ r2 (which agrees with Theorem 7.1). The last statement of Theorem 7.5 follows from the third one
+and the observation (due to I.V.Protasov) that each finite group G of odd order |G| has 2G = G, m(G) = |G|
+and k(G) = k0 (G) = k1 (G) = 1. Yet, for Abelian groups of odd order we have the strict lower bound that follows
+from Theorem 7.1(2):
+Theorem 7.6. Each finite Abelian group G of odd cardinality has the maximal symmetry numbers msr (G) =
+ms̃r (G) > r12 for all finite r ≥ 2.
+   The proof of this fact exploits the Fourrier transformation, which does not work properly in the non-Abelian
+case. So, the following problem appears naturally:
+Question 7.7. Is msr (G) > r12 for every group G of odd order and every r > 1?
+   Surprisingly, but for non-commutative groups of even order the inequality msr (G) ≥ r12 does not hold anymore:
+it was noticed in [6] that msr (Q8 ) = 81 < 212 , where Q8 = {±1, ±i, ±j, ±k} is the group of quaternions. Nonetheless
+the following question (related to Theorem 8.3) remains open.
+Question 7.8 ([6]). Does for every ε > 0 and r > 1 there exist a finite group G with msr (G) < ε?
+   Next, we evaluate the maximal symmetry numbers msr (G) of non-commutative connected compact topological
+groups. We begin with connected Lie groups.
+Theorem 7.9 ([7]). If r ∈ N and G is a compact connected Lie group, then
+                             1   k(G)               1                            p
+                               ·        ≤ msr (G) ≤ 2 ,        where k(G) = min | g 2 |.
+                             r2 2dim(G)            r                         g∈G
+10                                                  TARAS BANAKH
+
+
+  It is interesting to note that k(Tn ) = 2n for the n-th power of the circle T = {z ∈ C : |z| = 1} and thus
+Theorem 5.2 gives the exact value for msr (Tn ). For arbitrary connected compact group we have a weaker lower
+bound.
+Theorem 7.10 ([7]). If r ∈ N and G is a non-degenerate connected compact group, then
+                                        1     1                1
+                                          ·       ≤ msr (G) ≤ 2 .
+                                       r2 2dim G               r
+Question 7.11 ([7]). Is there a connected compact group G with msr (G) < r12 for some r ∈ N? In particular,
+what is the value of ms2 (SO(3))? What is the value of ms2 (S 3 ) where S 3 is the multiplicative group of quaternions
+with unit norm?
+                                                 1
+     Note that Theorems 7.9 yields the estimate 16 ≤ ms2 (S 3 ) ≤ 41 .
+
+                           8. The cardinal symmetry numbers MS+
+                                                              r (G) of groups
+
+   In this section we consider symmetry measure spaces X = (X, card, S) endowed with the cardinal-valued
+measure card : P(X) → [0, |X|] defined on the σ-algebra P(X) of all subsets of X and assigning to each subset
+A ⊂ X its cardinality card(A) = |A|. A bit more informative is the measure card+ : P(X) → [1, |X|+ ] assigning
+to A ⊂ X the successor |A|+ of the cardinality |A| of A.
+   We shall be interested in the maximal symmetry numbers msr (G, card, S) and msr (G, card+ , S) of groups G
+endowed with the family S = {sc : c ∈ G} of central symmetries sc : x 7→ cx−1 c. These symmetry Ramsey
+numbers will be denoted by MSr (G) and MS+    r (G), respectively, and will be referred to as cardinal symmetry
+numbers of G. It is easy to see that
+                                          MSr (G) ≤ MS+                +
+                                                      r (G) ≤ (MSr (G)) .
+
+  It follows from the definition that MS+ r (G) is equal to the maximal cardinal κ such that for each cardinal
+λ < κ any each r-coloring of G there is a monochromatic S-symmetric subset A ⊂ G of cardinality |A| > λ.
+  For each finite group G we get
+                                     MS+
+                                       r (G) = 1 + MSr (G) = 1 + |G| · msr (G).
+
+So, now we shall concentrate on infinite groups G. We start with the following result of Protasov [38].
+Theorem 8.1. For any infinite Abelian group G and a finite cardinal r the cardinal symmetry numbers MSr (G)
+and MS+
+      r (G) are infinite.
+
+     This theorem follows from its more precise version taken from [14]:
+Theorem 8.2. If r, n are natural numbers, then for every r-coloring of an Abelian group G of cardinality
+|G| ≥ r2 n there exists an S-symmetric monochromatic subset A ⊂ G of cardinality |A| ≥ n.
+   A similar result holds also for finite non-commutative groups. Below π(n) is the function assigning to each n
+the quantity of prime numbers not exceeding n.
+Theorem 8.3. If r, n are natural numbers, then for every r-coloring of a finite group G with |G| > r2 (n!)π(n)
+there exists a symmetric monochromatic subset A ⊂ G of cardinality |A| > n.
+   This theorem follows from Theorem 8.2 and the known fact stating that each finite group G with |G| > (n!)π(n)
+contains an Abelian subgroup H of cardinality |H| > n. In its turn, this fact can be easily derived from the
+Silov Theorem 11.1 and Theorem 16.2.6 of [30]. Note that in contrast to Theorem 8.2, Theorem 8.3 says nothing
+about infinite groups.
+Problem 8.4 (Protasov). Are the cardinals MSr (G) and MS+     r (G) infinite for every infinite group G and every
+finite cardinal r? Equivalently, is it true that for every finite coloring of an infinite group G there exist a
+monochromatic symmetric subset A ⊂ G of arbitrary large finite cardinality?
+   Note that this problem does not reduce to the Abelian case since there exist infinite periodic groups containing
+no big Abelian subgroups (for example, for every odd d ≥ 665 and every m ≥ 2 the free Bernside group B(m, d)
+is infinite and contains no Abelian subgroup of cardinality > d, see [1]). In the meantime, by the theorem of
+Kargapolov-Hall-Kulatilani (see [36]), each locally finite infinite group does contain an infinite Abelian subgroup
+and thus for locally finite groups Problem 8.4 has affirmative answer.
+                                           SYMMETRY AND COLORINGS                                                11
+
+
+   Next, given an Abelian group G, we detect numbers r for which the cardinal symmetry number MS+          r (G) is
+uncountable. Observe that the cardinal MS+r (G) is uncountable if and only if for each r-coloring of G there is an
+infinite monochromatic symmetric subset of G.
+   To describe numbers r with uncountable MSr (G) we need to recall the definition of p-ranks rp (G) of an Abelian
+group. For a non-negative integer p ≥ 0 by the p-rank of an abelian group G we understand the largest cardinal
+number κ such that the direct sum ⊕α∈κ Zp of κ many copies of the cyclic group Zp is isomorphic to a subgroup
+of the group G. For p = 0 we assume that the group Z0 = Z is infinite cyclic.
+Theorem 8.5 ([14]). For an Abelian group G and a cardinal number r the cardinal MS+
+                                                                                  r (G) is uncountable if
+and only if one of the following conditions is satisfied:
+   (1) r ≤ r0 (G) and the group G is finitely-generated;
+   (2) r ≤ r0 (G) + 1 and the group G is countable, infinite-generated, and has finite 2-rank r2 (G);
+   (3) r ≤ max{log |G|, r2 (G)} and the group G is uncountable or has infinite 2-rank r2 (G).
+   In this theorem for a cardinal number κ we put log(κ) = min{λ : κ ≤ 2λ }.
+   Since MS+            +                                                                                 +
+             r (G) ≤ |G| , Theorems 8.1 and 8.5 yield the complete description of the cardinal function MSr (G)
+for countable Abelian groups G. For uncountable Abelian groups G there is a non-trivial upper bound for
+MS+ r (G), proved by I.Protasov [41]:
+
+Theorem 8.6. For any uncountable Abelian group G with r2 (G) < |G| and every cardinal r ≥ 2 we have
+MS+           +
+  r (G) ≤ MS2 (G) ≤ |G|, which follows from the fact that the group G admits a 2-coloring of G without
+monochromatic S-symmetric subsets of cardinality |G|.
+  This theorem is not true for non-commutative groups because of the following example due to Yu.Gryshko
+and A.Khelif [29].
+Example 8.7. For any infinite field K of characteristic 6= 2, the special linear group G = SL(K) has cardinal
+symmetry number MS+             +
+                   2 (G) = |G| , which means that for any 2-coloring of the group G = SL(K) there is a
+monochromatic symmetric subset of cardinality |G|.
+
+Problem 8.8. Let G = SL(K) for an infinite field K. Is MS+          +
+                                                         r (G) = |G| for all finite cardinals r?
+
+  Uncountable groups G with MS+
+                              2 (G) ≤ |G| were characterized by Yu.Gryshko and A.Khelif in [29].
+
+Theorem 8.9. An uncountable group G has MS+       2 (G) ≤ |G| if and only if the subgroup L(G) = {(x, y) ∈ G × G :
+xy ∈ [G, G]} can be written as the union L(G) = ∪H of a linearly ordered chain H of subgroups such that for
+any subgroup H ∈ H we get |H| < |G| and |{x ∈ G : ∃(u, v) ∈ H x2 = uv}| < |G|. If the cardinal |G| is regular,
+then the latter condition is equivalent to |{x ∈ G : x2 = a}| < |G| for all a ∈ [G, G].
+   Lower estimates for the cardinal symmetry numbers MSr (G) of uncountable groups G can be proved using
+Erdös-Rado partition relations for ordinals.
+   Let us recall that for ordinals κ, λ, a cardinal r, and a natural number n, the symbol κ → (λ)nr means that
+for any r-coloring of the set [k]n of n-element subsets of κ there is a subset Λ ⊂ κ of order type λ such that the
+subset [Λ]n is monochrome, see [20].
+   The following theorem was announced by T.Banakh and I.Protasov in [14] and proved by Yu.Gryshko and
+A.Khelif in [29].
+Theorem 8.10. If κ, λ, r are cardinals such that κ → (λ+1)2r then any uncountable Abelian group G of cardinality
+|G| ≥ κ has cardinal symmetry number MS+      r (G) > λ, which means that for any r-coloring of G there is a
+monochrome symmetric subset of cardinality ≥ λ.
+   It follows from the famous Erdös-Rado stepping up lemma [20] that (2<κ )+ → (κ + 1)2r for every cardinals
+r < κ ≥ ℵ0 , where 2<κ = sup{2τ : 2τ : τ < κ}. This observation and Theorem 8.10 imply
+Theorem 8.11. For every infinite cardinal κ, and a cardinal r < κ, any Abelian group G of cardinality |G| > 2<κ
+has cardinal symmetry number MS+r (G) > κ.
+
+  Observe that GCH, the Generalized Continuum Hypothesis, is equivalent to the assumption that the equality
+κ = 2<κ holds for all infinite cardinals κ. Then Theorem 8.6 and Corollary 8.11 imply the following GCH-theorem:
+12                                                   TARAS BANAKH
+
+
+Theorem 8.12. Under GCH, for any uncountable Abelian group G we get
+                                     
+                                          +
+                                     |G|
+                                            if r < |G| = r2 (G),
+                             +
+                          MSr (G) = |G|      if r < |G| and r2 (G) < |G|,
+                                     
+                                     
+                                       1     if r ≥ |G|.
+   We do not know if this result is true in ZFC. The following theorem of I.Protasov suggests a positive answer
+to this question.
+Proposition 8.13. For any uncountable Abelian group G with r2 (G) < |G| the equality MS+
+                                                                                       r (G) = |G| holds for
+every r ∈ {2, 3}.
+     This proposition can be easily derived from the next modification of Lemma 1 of [41].
+Lemma 8.14. Let G be an infinite Abelian group, k < |G|, and H ⊂ G be a subgroup with |H| ≤ k. For every
+k-coloring χ : G → k of the group G one of the following statements holds:
+      (1) G contains a monochromatic symmetric subset of cardinality ≥ k;
+      (2) there exists g ∈ G such that χ(2H + g) ∩ χ(2H − g) = ∅.
+   In contrast to the Abelian case, the problem of calculation of the cardinal symmetry numbers MS+r (G) of
+non-commutative groups is much less studied. Definitive answers (due to Yu.Gryshko and A.Khelif) are known
+only for r = 2.
+Theorem 8.15 ([29]). If an infinite group G has cardinal symmetry number MS+
+                                                                           2 (G) ≤ ℵ0 , then G is countable
+and is either locally finite or virtually cyclic.
+     Let us recall that a group G is called
+        • locally finite if each finitely-generated subgroup of G is finite;
+        • virtually cyclic if G contains a cyclic subgroup of finite index.
+     The paper [29] contains also a characterization of locally finite and virtually cyclic groups G with MS+
+                                                                                                            2 (G) ≤ ℵ0 .
+
+Theorem 8.16. A countable locally finite group G has cardinal symmetry √ number MS+2 (G) ≤ ℵ0 if and only if
+for any element a ∈ [G, G] in the commutator subgroup [G, G] of G the set a = {x ∈ G : x2 = a} is finite.
+Theorem 8.17. A virtually cyclic group G with normal cyclic subgroup H of finite index has cardinal symmetry
+number MS+  2 (G) ≤ ℵ0 if and only if either G coincides with the centralizer CH = {g ∈ G : ∀h ∈ H gh = hg}
+of H or else there is an element g ∈ G whose square g 2 does not belong to the subgroup generated by the set
+[G, G] ∪ {c2 : c ∈ CH }.
+  Theorem 8.15 implies that the free group F2 with two generators has uncountable cardinal symmetry number
+MS+
+  2 (F2 ), which means that for each 2-coloring of F2 there is an infinite monochromatic symmetric subset of F2 .
+
+Problem 8.18. Is MS+
+                   r (F2 ) uncountable for any finite cardinal r?
+
+
+                    9. The dimension symmetry numbers mdsr (X) of some metric spaces
+   In this section we consider the maximal symmetry numbers of metric spaces X endowed with the (non-additive)
+measure asdim : P(X) → Z ∪ {+∞} assigning to each subset A ⊂ X its asymptotic dimension asdim(A).
+   We say that for an integer number n ≥ −1, a subset A of a metric space (X, d) has asymptotic dimension
+asdim(A) ≤ n if for each finite real number ε there is a cover U of A with finite mesh(U) = sup diam(U ) such
+                                                                                                    U∈U
+that for some bounded subset B ⊂ X and each point x ∈ X \ B the ε-ball B(x, ε) = {y ∈ X : d(x, y) < ε}
+centered at x meets at most n + 1 elements of the cover U.
+   The asymptotic dimension asdim(A) of A ⊂ X is equal to the smallest integer number n ≥ −1 such that
+asdim(A) ≤ n. If such number n does not exist, then we put asdim(A) = ∞. It follows that a subset A ⊂ X is
+bounded if and only if asdim(A) = −1.
+   It is clear that asdim(A) ≤ asdim(B) for any subsets A ⊂ B of X. Thus the asymptotic dimension can be
+considered as a (non-additive) measure asdim : P(X) → [−1, ∞]. This measure is idempotent in the sense that
+asdim(A ∪ B) = max{asdim(A), asdim(B)} for all subsets A, B ⊂ X, see [43].
+                                           SYMMETRY AND COLORINGS                                                13
+
+
+   Assume that a metric space X is given with a family S of admissible symmetries that preserve the asymptotic
+dimension of subsets of X. This happens if each admissible symmetry s ∈ S is a quasi-isometry in the sense that
+there is a finite positive constant C such that
+                             1
+                               dX (x, x′ ) − C ≤ dY (f (x), f (x′ )) ≤ C · dX (x, x′ ) + C
+                             C
+for all x, x′ ∈ X.
+   In this case the triple X = (X, asdim, S) is a symmetry measure space whose maximal symmetry number
+msr (X, asdim, S) will be called the dimension symmetry number of (X, S) and will denoted by mdsr (X, S) or
+mdsr (X) if the family S of admissible symmetries is clear from the context. In some cases (for example for the
+hyperbolic plane) it is necessary to restrict the domain of the definition of the measure asdim to the σ-algebra
+Borel of Borel subsets of X. In this case we obtain a symmetry measure space (X, asdim|Borel, S) whose maximal
+symmetry number msr (X, asdim|Borel, S) will be denoted by mdsB                           B
+                                                                     r (X, S) or just mdsr (X) if the family S of
+admissible symmetries is clear from the context.
+   It is clear that mdsr (X) ≤ mdsBr (X) for any r ∈ N. If the metric space X is discrete, then each subset of X is
+Borel and hence mdsr (X) = mdsB   r (X).
+   It follows from the definition of mdsB                                    B
+                                         r (X) that for each number n ≤ mdsr (X) and each Borel r-coloring of X
+there is a monochromatic S-symmetric subset S ⊂ X of asymptotic dimension asdim(S) ≥ n, and mdsB           r (X) is
+the smallest number with that property.
+   Since a subset A of a metric space X is unbounded if and only if asdim(A) ≥ 0, the space X has dimension
+symmetry number mdsB      r (X) ≥ 0 if and only if for any Borel r-coloring, the space X contains an unbounded
+monochromatic S-symmetric subset. If all bounded subsets in X are finite, then mdsB    r (X) = mdsr (X) ≥ 0 if and
+only if MSr (X) is infinite.
+   First we discuss the dimension symmetry numbers mdsr (Rn ) and mdsB            n
+                                                                              r (R ) of the Euclidean spaces R
+                                                                                                                 n
+                                           n
+endowed with the family S = {sc : c ∈ R } of central symmetries sc : x 7→ 2c − x.
+   The Euclidean space Rn contains the discrete subspace Zn , endowed with the induced Euclidean metric and
+the family S = {sc : c ∈ Zn } of central symmetries.
+Theorem 9.1 ([9]). For any natural numbers n, r we get
+                                mdsr (Rn ) = mdsB   n           n
+                                                r (R ) = mdsr (Z ) = n − r + 1.
+
+This follows from the following facts:
+   (1) for any r-coloring of Zn there is a monochromatic S-symmetric subset of asymptotic dimension ≥ n−r+1;
+   (2) there is a Borel r-coloring of Rn without monochromatic S-symmetric subsets of asymptotic dimension
+       > n − r + 1.
+    Next, we consider the dimension symmetry numbers mdsr (H2 ) and mdsB          2
+                                                                             r (H ) of the hyperbolic plane H
+                                                                                                                2
+                                           2
+endowed with the family S = {sc : c ∈ H } of central symmetries. For each point c ∈ H2 the central symmetry
+sc : H2 → H2 assigns to each point x ∈ H2 the unique point sc (x) ∈ H2 such that c is the midpoint of the segment
+[x, sc (x)].
+    The following unexpected result proved in [10] shows that by its Ramsey-theoretic properties, the hyperbolic
+plane substantially differs from its Euclidean counterpart.
+Theorem 9.2. For any r ∈ N we get mdsB    2
+                                      r (H ) ≥ 0, which means that for any Borel r-coloring of the hyperbolic
+plane H there is an unbounded monochromatic symmetric subset A ⊂ H2 .
+       2
+
+
+  We do not know if this theorem remains true for arbitrary (not necessary Borel) colorings of H2 .
+Problem 9.3. Is mdsr (H2 ) ≥ 0 for any r ≥ 2?
+   The answer to this problem is affirmative for r = 2. This follows from the subsequent theorem that can be
+proved by analogy with Theorem 3.1 of [10]:
+Theorem 9.4. The family S = {sc : c ∈ H2 } of central symmetries of the hyperbolic plane H2 contains a
+3-element subfamily S ′ such that for the any 2-coloring of H2 there is a monochromatic S ′ -subset A ⊂ H2 of
+asymptotic dimension asdim(A) = 2. Consequently, mds2 (H2 ) = 2.
+  A bit weaker result holds also for the Euclidean plane R2 :
+14                                                    TARAS BANAKH
+
+
+Theorem 9.5. The family S = {sc : c ∈ R2 } of central symmetries of the Euclidean plane R2 contains a 3-
+element subfamily S ′ such that for each 2-coloring of R2 there is a monochromatic S ′ -symmetric subset A ⊂ R2
+of asymptotic dimension asdim(A) ≥ 1.
+     This theorem is a particular case of the following result proved in [9]:
+Theorem 9.6. For every finite numbers r ≤ n, the family S = {sc : c ∈ Zn } of central symmetries of Zn contains
+a finite subfamily S ′ ⊂ S of cardinality |S ′ | < 2n such that for any r-coloring of Zn there is a monochromatic
+S ′ -symmetric subset A ⊂ Zn of asymptotic dimension asdim(A) ≥ n − r + 1.
+
+                        10. Centerpole numbers cλr (X) of symmetry measure spaces
+    Theorems 9.4–9.6 motivate the following definition. Let X = (X, µ, S) be a symmetry measure space, r be
+a cardinal, and λ be an element of the linearly ordered set [µ(∅), µ(X)]. A subfamily S ′ ⊂ S will be called
+(r, λ)-centerpole if for any measurable r-coloring of X there is a monochromatic S ′ -symmetric subset A ∈ dom(µ)
+of measure µ(A) ≥ λ. The minimal cardinality |S ′ | of a (r, λ)-centerpole subset S ′ ⊂ S will be denoted by cλr (X)
+and called the (r, λ)-centerpole number of X. If no (r, λ)-centerpole set exists (which happens if λ > msr (X)),
+then we put cλk (X) = ∞ and assume that ∞ is greater than any cardinal.
+    Observe that the symmetry Ramsey number msr (X) can be expressed via the centerpole numbers by the
+formula:
+                                                                    +
+                                     msr (X) = sup{κ : ∀λ < κ cλr (X) < ∞}.
+    Now we consider the following general problem:
+Problem 10.1. Given a symmetry measure space X = (X, µ, S) calculate its (r, λ)-centerpole numbers cλr (X).
+     We shall partly answer this question for Euclidean space Rn and their discrete subspaces Zn , viewed as
+symmetry measure spaces endowed with the measure asdim and the family S = {sc : c ∈ X} of central symmetries.
+In fact, some information on the centerpole numbers cλr (X) is available only for λ = 0.
+     Observe that for a symmetry measure space X = (X, µ, S) the centerpole number c0r (X) is equal to the smallest
+cardinality |S ′ | of a subfamily S ′ ⊂ S such that for each r-coloring of X there is an unbounded monochromatic
+S ′ -symmetric subset A ⊂ X. Here we remark that a subset A ⊂ X has asymptotic dimension asdim(A) ≥ 0 if
+and only if it is unbounded.
+     In the following theorem we present all available information on exact values of the centerpole numbers c0r (Rn )
+and c0r (Zn ) of the metric spaces Rn and Zn .
+Theorem 10.2 ([8]).           (1) c01 (Rn ) = c01 (Zn ) = 1 for any n ≥ 1;
+        0   n       0   n
+  (2) c2 (R ) = c2 (Z ) = 3 for any n ≥ 2;
+  (3) c03 (Rn ) = c03 (Zn ) = 6 for any n ≥ 3;
+  (4) 8 ≤ c04 (Rn ) ≤ c04 (Zn ) ≤ 12 for any n ≥ 4;
+  (5) c04 (R4 ) = c04 (Z4 ) = 12;
+     For larger numbers r ≤ n we merely have some lower and upper bounds proved in [8]:
+Theorem 10.3 ([8]). For any r ≤ n we have the following bounds:
+                                                           
+   (1) c0r (Rn ) ≤ c0r (Zn ) ≤ c0r (Zr ) ≤ 2r − 1 − max r−1
+                                                        s−1 ;
+                                                  s≤r−2
+   (2) c0r (Rr ) ≥ 12 (r2 + 3r − 4);
+   (3) c0r (Rn ) ≥ r + 4;
+   (4) c0r (Rn ) < c0r+1 (Rn+1 ) and c0r (Zn ) < c0r (Zn+1 ).
+                                 
+  The binomial coefficient rs in statement (1) is equal to s!(n−s)!
+                                                              k!
+                                                                    if s ∈ {0, . . . , r} and zero otherwise. By
+                         n           n
+Theorem 9.1, mdsr (R ) = mdsr (Z ). We do not know if the same is true for the centerpole numbers.
+Problem 10.4. Is c0r (Rn ) = c0r (Zn ) for all r ≤ n?
+   Since each central symmetry sc : x 7→ 2c − x of Rn can be identified with its fixed point c we can identify
+k-centerpole subsets with subsets of Rn and study their geometric structure. We shall say that a subset C ⊂ Rn
+is r-centerpole if the family of central symmetries SC = {sc : c ∈ C} is (r, 0)-centerpole, which means that
+msr (Rn , asdim, SC ) ≥ 0. The following theorem proved in [3] and [8] describes the geometry of r-centerpole sets
+for small r.
+                                                SYMMETRY AND COLORINGS                                                       15
+
+
+Theorem 10.5.            (1) A subset C ⊂ Rn , n ≥ 1, is 1-centerpole if and only if C is not empty.
+   (2) A finite subset C ⊂ Rn , n ≥ 2, is 2-centerpole if and only if C contains a triangle, i.e., a 3-element
+       subset {a, b, c} that does not lie on a line.
+   (3) A 6-element subset C ⊂ R3 is 3-centerpole if and only if C is an affine octahedron, i.e., C = {c + e1 , c −
+       e1 , c + e2 , c − e2 , c + e − 3, c − e3 } for some point c ∈ Rn and some linearly independent vectors e1 , e2 , e3
+       in Rn .
+   (4) There is a finite 3-centerpole subset of R3 which does not contain any affine octahedron.
+                                                                                              
+   (5) A subset C ⊂ Rn is (r + 1)-centerpole if it contains an affine copy of the rs -sandwich Ξrs for some
+       s ≤ r − 2.
+         
+  The rs -sandwich Ξrs mentioned in the preceding theorem is a special subset of Zr+1 , defined as follows.
+  Let 2 = {0, 1} and 2r be the discrete r-cube in Zr ⊂ Rr . For any real number s consider the subsets
+                                                 X r                                 Xr
+                                                                        
+                          2r<s = (xi ) ∈ 2r :        xi < s and 2r>s = (xi ) ∈ 2r :      xi > s
+                                               i=1                                       i=1
+called the s-slices of the r-cube 2r . The subset
+                                                                                
+                                Ξrs = {−1} × 2r<s ∪ {0} × 2r<r ∪ {1} × 2r>s
+                                                                    
+of Z × Zr is called the rs -sandwich. In [8] it is proved that the rs -sandwich is a (r + 1)-centerpole set in Zr+1
+for every s ≤ r − 2. The minimal cardinality
+                                                                          
+                                         min |Ξrs | = 2r+1 − 1 − max rs
+                                             s≤r−2                      s≤r−2
+
+of such sandwiches yields the upper bound from Theorem 10.3(1).
+   Observe that
+       • Ξ0−2 = {(1, 0)} is a singleton in Z × Z0 = Z × {0};
+       • Ξ1−1 = {(0, 1), (1, 0), (1, 1)} is the unit square without a vertex in Z2 ;
+       • Ξ20 = {(0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)} is the unit cube without two opposite vertices
+          in Z3 ;
+       • Ξ30 is the unit cube without two opposite vertices in Z4 ;
+       • Ξ31 is a 12-element subset of Z4 whose slices {−1} × 23−1, {0} × 23<3 and {1} × 23>1 have 1, 7 and 4 points,
+          respectively.
+   It is interesting to observe that the sandwich
+       • Ξ0−2 is affinely equivalent to a singleton in R1 ;
+       • Ξ1−1 is affinely equivalent to any triangle ∆ = {a, b, c} in R2 ;
+       • Ξ20 is affinely equivalent to an octahedron ∆ ∪ (x − ∆) where ∆ ⊂ R2 is a triangle centered at zero and
+          x ∈ R3 does not belong to the linear hull of the triangle ∆;
+       • Ξ31 is affinely equivalent to (x − ∆) ∪ ∆ ∪ (x + ∆) where ∆ = {a, b, c, d} is a tetrahedron centered in zero
+          and x ∈ R4 does not belong to the linear hull of ∆.
+   In [3] it was proved that for r ≤ 3 any two r-centerpole subsets of Rr of cardinality c0r (Rr ) are affinely
+equivalent.
+                                                                                                       
+Problem 10.6. Is each 12-element 4-centerpole set in R4 affinely equivalent to the 31 -sandwich Ξ31 ?
+Problem 10.7. Calculate the (5,0)-centerpole number c05 (R5 ) of the Euclidean space R5 . Theorem 10.3 yields
+the bounds 18 ≤ c05 (R5 ) ≤ c05 (Z5 ) ≤ 25.
+  Observe that the upper bound for c0r (Rr ) in Theorem 10.3 has exponential growth while the lower bound has
+polynomial growth.
+                                                           ∞
+Problem 10.8. What is the growth of the sequence c0r (Rr ) r=1 ? Exponential or polynomial?
+   The proof of Theorem 9.1 implies that c0r (Rn ) ≤ cλr (Rn ) < 2n for any finite nonnegative number r, λ, n with
+r + λ ≤ n + 1. So, we have some lower and upper bounds for the centerpole numbers cλr (Rn ). It would be nice
+to improve these bounds or find exact values of these centerpole numbers.
+Problem 10.9. Calculate or evaluate the centerpole numbers cλr (Rn ) for various numbers r, λ and n.
+   Concerning the centerpole numbers cλr (H2 ) of the hyperbolic plane, we know their values only for r ≤ 2:
+16                                                 TARAS BANAKH
+
+
+Theorem 10.10. cλ1 (H2 ) = 1 and cλ2 (H2 ) = 3 for any λ ∈ {0, 1, 2}.
+    For r > 2 we have some information on the centerpole numbers c0r (Hn , asdim|Borel, S) of the n-dimensional
+hyperbolic space Hn endowed with the measure asdim|Borel defined on the σ-algebra Borel of Borel subsets of Hn .
+This centerpole number will be denoted by Bc0r (Hn ). Observe that Bc0r (Hn ) is equal to the smallest cardinality
+|S ′ | of a subfamily S ′ ⊂ S = {sc : c ∈ Hn } such that for each Borel r-coloring of H2 there is an unbounded
+monochromatic S ′ -symmetric subset A ⊂ Hn .
+Theorem 10.11. 3 ≤ Bc0r (Hn ) ≤ non(M) for any numbers r, n ≥ 2.
+  Here non(M) denotes the smallest cardinality of a non-meager subset of the real line R. It is known that
+ℵ1 ≤ non(M) ≤ c and the position of the cardinal non(M) on the interval [ℵ1 , c] depends on Set-Theoretic
+Axioms, see [44].
+
+                       11. Dimension symmetry and centerpole numbers of groups
+   In this section we study the dimension symmetry numbers mdsr (G) and centerpole numbers cλr (G) of groups
+G, considered as symmetry measure spaces (G, asdim, S) endowed with the family S = {sc : c ∈ G} of central
+symmetries sc : x 7→ cx−1 x, and the (non-additive) measure asdim : P(G) → [−1, ∞] assigning to each subset
+A ⊂ G its asymptotic dimension asdim(A), defined as follows.
+   We say that a subset A of a group G has asymptotic dimensionSasdim(A) ≤ n for some n ≥ −1 if for each
+finite subset F ⊂ G there is a cover U of A with finite mesh(U) = U∈U U −1 U such that for some finite subset
+B ⊂ G and each point x ∈ G \ B the set xF meets at most n + 1 sets of the family U.
+   We write asdim(A) = n if asdim(A) ≤ n but asdim(A) 6≤ n − 1. If asdim(A) 6≤ n for all n ∈ N, then we write
+asdim(A) = ∞. This definition implies that a subset A ⊂ G is finite if and only if asdim(A) = −1.
+   To shorten notations, by mdsr (G) we shall denote the maximal symmetry number msr (G, asdim, S) of the
+symmetry measure space (G, asdim, S) and call it the dimension symmetry number of G. Observe that mdsr (G) ≥
+0 if and only if MS+r (G) ≥ ℵ1 . Because of that, Theorem 8.5 imply the following characterization:
+
+Theorem 11.1. An infinite Abelian group G has dimension symmetry number mdsr (G) ≥ 0 for some cardinal
+r ≥ 1 if and only if one of the following conditions is satisfied:
+    (1) r ≤ r0 (G) and the group G is finitely-generated;
+    (2) r ≤ r0 (G) + 1 and the group G is countable, infinite-generated, and has finite 2-rank r2 (G);
+    (3) r ≤ max{log |G|, r2 (G)} and the group G is uncountable or has infinite 2-rank r2 (G).
+     In the same way we can reformulate Theorems 8.15–8.17 of Yu. Gryshko and A. Khelif.
+Problem 11.2. Given an (Abelian) group G calculate or evaluate its dimension symmetry numbers mdsr (G).
+     A similar problem can be asked for the centerpole numbers cλr (G) of the symmetry measure spaces (G, asdim, S).
+Problem 11.3. Given a group G calculate or evaluate its centerpole numbers cλr (G).
+   Some information on the centerpole numbers c0r (G) of abelian groups G can be derived from Theorems 10.2
+and 10.3. Much less is known about the centerpole numbers of non-commutative groups, in particular, of the free
+group F2 with two generators.
+Problem 11.4. Has the free group F2 finite centerpole numbers c0r (F2 ) for all r ∈ N?
+   For r = 2 the answer to this problem is affirmative. Analyzing the proof of Theorem 1 of [29], one can see
+that c02 (F2 ) ≤ 4.
+Problem 11.5. Is c02 (F2 ) equal to 4, 3, or 2?
+                                                  SYMMETRY AND COLORINGS                                                           17
+
+
+                                                          References
+[1] S.I. Adian, Bernside problem and identities in groups, Nauka, Moscow, 1975.
+[2] T. Banakh, Solution of certain Protasov’s problems on combinatorics of colorings, U sviti matematyky, 3:1 (1997) 8–11 (in
+ Ukrainian).
+[3] T. Banakh, On a combinatorial group invariant related to partitions of Abelian groups, Matem. Zametki, 64:3 (1998) 341–350
+ (in Russian); English transl. in: Math. Notes 64:3-4 (1998) 295–302.
+[4] T. Banakh, On asymmetric colorings of abelian groups in: Paul Erdos and his mathematics (Budapest, 1999), Janos Bolyai
+ Math. Soc., Budapest, (1999) 30–32.
+[5] T. Banakh, Solution of a problem on the coloring of the discrete plane, U sviti matematyky, 5:2 (1999) 20–22 (in Ukrainian).
+[6] T. Banakh, Symmetric subsets and colorings of finite groups, Visnyk Kyiv Univ. 4 (1999) 12–17.
+[7] T. Banakh, Symmetric subsets and colorings of compact connected groups, Ukr. Mat. Zhurn. 53 (2001) 694–697 (in Ukrainian);
+ English transl. in: Ukrainian Math. J. 53:5 (2001) 804–808.
+[8] T. Banakh, O. Chervak, Centerpole sets for colorings of abelian groups, J. Algebraic Combin. 34:2 (2011) 267–300.
+[9] T. Banakh, O. Chervak, On monochromatic symmetric subsets of large asymptotic dimension in colorings of groups, in prepa-
+ ration.
+[10] T. Banakh, A. Dudko, D. Repovš, Symmetric monochromatic subsets in colorings of the Lobachevsky plane, Discrete Math.
+ Theor. Comput. Sci. 12:1 (2010) 12–20.
+[11] T.O. Banakh, I.Ya. Kmit, O.V. Verbitsky, On asymmetric colorings of integer grids, Ars Combinatoria, 62 (2002) 257–271.
+[12] T.O. Banakh, I.V. Protasov, On symmetry of colorings of regular polygons, U sviti matematyky, 3:3 (1997), 9–15 (in Ukrainian).
+[13] T.O. Banakh, I.V. Protasov, Asymmetric partitions of Abelian groups, Mat. Zametki 66:1 (1999) 10–19 (in Russian); English
+ transl. in: Math. Notes 661-2 (1999) 8–15 (2000).
+[14] T. Banakh, I. Protasov. Symmetry and colorings: some results and open problems, Izv. Gomel Univ. Voprosy Algebry. 2001.
+ Issue 4(17). P.5-16 (available at: http://arxiv.org/abs/0901.3356).
+[15] T.O. Banakh, Ya.B.Vorobets, O.V.Verbitsky, Ramsey problems for spaces with symmetries, 64:6 (2000), 3–40. (in Russian);
+ transl. in: Izv. Math. 64:6 (2000) 1091–1127.
+[16] T.O. Banakh, O.V. Verbitsky, Ya.B. Vorobets, A Ramsey Treatment of Symmetry (a survey), Electronic J. Combin. 7:1 (2000)
+ R52. – 25p. (www.combinatorics.org).
+[17] T. Banakh, O. Verbitsky, Ya. Vorobets, Fermat’s spiral and the line between Yin and Yang, Amer. Math. Monthly 117:9 (2010)
+ 786–800.
+[18] M. Berger, Geometry, I, II, Springer-Verlag, 1987.
+[19] J. Cilleruelo, I. Ruzsa, C. Vinuesa, Generalized Sidon sets, Adv. Math. 225:5 (2010) 2786–2807.
+[20] P. Erdös, A. Haijnal, A. Máté, R. Rado, Combinatorial set theory: partition relations for cardinals, North-Holland Publishing
+ Co., Amsterdam, 1984.
+[21] R. Graham, B. Rothschild, J. Spencer, Ramsey Theory, A Wiley-Interscience Publ. John Wiley & Sons, Inc., New York, 1990.
+[22] Yu. Grishko, Symmetric subsets and the coloring of finite abelian groups, Visn. Kyiv. Univ. Ser. Fiz.-Mat. Nauki (1999), no. 3,
+ 200–202 (in Ukrainian).
+[23] Yu. Grishko, I.V. Protasov, Symmetric colorings of finite abelian groups, Dopov. Nats. Akad. Nauk Ukr. Mat. Prirodozn. Tekh.
+ Nauki (2000), no. 1, 32–33.
+[24] Yu. Grishko, On monochromatic symmetric subsets in 2-colorings of groups, Mat. Metodi Fiz.-Mekh. Polya 44:3 (2001) 17–19
+ (in Ukrainian).
+[25] Yu. Grishko, On symmetric colorings of finite cyclic groups, Visn. Kyiv. Univ. Ser. Fiz.-Mat. Nauki 2002, no. 2, 22–26 (in
+ Ukrainian).
+[26] Yu. Gryshko, Monochrome symmetric subsets in 2-colorings of groups, Electron. J. Combin. 10 (2003), R28, 8 pp.
+[27] Yu. Grishko, On asymmetrically decomposable groups, Mat. Zametki 74:3 475–478 (in Russian); English transl. in: Math. Notes
+ 74:3-4 (2003) 450–452.
+[28] Yu. Gryshko, Symmetric colorings of regular polygons, Ars Combin. 78 (2006) 277–281.
+[29] Yu. Gryshko, A. Khelif, Monochrome symmetric subsets of colored groups, J. Combin. Theory Ser. A. 112:2 (2005) 212–221.
+[30] M.I. Kargapolov, Yu.I. Merzliakov, Fundamenta of group theory, Nauka, Moscow, 1977.
+[31] I. Kluka, Colorings and symmetry of regular polygons and polyhedra, Small Academy of Sciences, Lviv, 2010 (in Ukrainian).
+[32] M. Korostenski, Yu.Zelenyuk, Ramsey functions for symmetric subsets in compact abelian groups, Quaest. Math. 33:2 (2010)
+ 161–169.
+[33] G. Martin, K. O’Bryant, The symmetric subset problem in continuous Ramsey theory, Experiment. Math. 16:2 (2007) 145–165.
+[34] G. Martin, K. O’Bryant, The supremum of autoconvolutions, with applications to additive number theory, Illinois J. Math. 53:1
+ (2009) 219–235.
+[35] M. Matolcsi, C. Vinuesa, Improved bounds on the supremum of autoconvolutions, J. Math. Anal. Appl. 372:2 (2010) 439–447.e2.
+18                                                       TARAS BANAKH
+
+
+[36] G.A. Noskov, V.N. Remeslennikov, V.A. Romankov, Infinite groups, Itogi Nauki i Tekhniki. Algebra, Topology, Geometry, 17,
+ VINITI, Moscow, (1979) 65–157.
+[37] C. Pomerance, A. Sárközy, Combinatorial Number Theory, in: Handbook of Combinatorics (R.Graham et al. eds.), Elsevier
+ Science B.V. (1995), 967–1018.
+[38] I.V. Protasov, Asymmetrically decomposable abelian groups, Mat. Zametki, 59 (1996) 468–471 (in Russian); English transl. in:
+ Math. Notes 59:3-4 (1996), 336–338.
+[39] I.V. Protasov, Resolvability of groups, Mat. Stud. 9:2 (1998) 130–148.
+[40] I.V. Protasov, Some problems in combinatorics of colorings, U sviti matematyky, 1 (1995) p.61 (in Ukrainian).
+[41] I.V. Protasov, Monochromatic symmetrical subsets in colorings of Abelian groups, Dopovidi AN Ukrainy (1999), No.11. 54–57.
+[42] I.V. Protasov, Selective survey on subset combinatorics of groups, Ukr. Mat. Visn. 7:2 (2010) 220–257; English transl. in: J.
+ Math. Sci. (N. Y.) 174:4 (2011), 486–514.
+[43] J. Roe, Lectures on coarse geometry, Amer. Math. Soc., Providence, RI, 2003.
+[44] J. Vaughan, Small uncountable cardinals and topology, in: Open problems in topology, 195-218, North-Holland, Amsterdam,
+ 1990.
+[45] O. Verbitsky, Symmetric subsets of lattice paths, Integers (2000), A5, 16 pp.
+[46] O. Verbitsky, Ramseyan variations on symmetric subsequences, Algebra Discrete Math. (2003), no. 1, 111–124.
+[47] O. Verbitsky, Structural properties of extremal asymmetric colorings, Algebra Discrete Math. (2003), no. 4, 92–117.
+[48] O. Verbitsky, T. Banakh, Ya. Vorobets, Ramsey-type problems for structures with symmetries, Fifth Czech-Slovak Intern. Symp.
+ on Combinatorics, Graph Theory, Algorithms and Appl., Charles Univ., Prague, KAM-DIAMATA. Series 98-400 (1998) p.105.
+[49] Ye. Zelenyuk, Yu. Zelenyuk, Transformations and colorings of groups, Canad. Math. Bull. 50:4 (2007) 632–636.
+[50] Yu. Zelenyuk, The number of symmetric colorings of the quaternion group, Symmetry, 2 (2010) 69–75.
+[51] Yu. Zelenyuk, Monochrome symmetric subsets in colorings of finite Abelian groups, Symmetry, 3 (2011) 126–133.
+[52] Yu. Zelenyuk, Symmetric colorings of finite groups, Groups St Andrews in Bath, LMS Lecture Note Series, 388 (2011) 580–590.
+
+     Ivan Franko University of Lviv (Ukraine) and Jan Kochanowski University in Kielce (Poland)
+     E-mail address: tbanakh@yahoo.com
+
