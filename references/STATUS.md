@@ -670,3 +670,22 @@ corrected proof unaudited and not imported. Symmetric-group interpretation
 is credited as classical; our fixed finite-model sentence is proved in
 full. Exact question and centralizer searches found no complete prior
 answer, without establishing novelty. See `18.18-review.md`.
+
+## Problems 16.68 and 16.69(b)
+
+Thom, *Convergent sequences in discrete groups*,
+https://arxiv.org/abs/1003.4093v3 , DOI 10.4153/CMB-2011-155-3:
+operator-norm definitions, full Lemma 2.1, Proposition 3.1 and Lemma 3.2
+proofs, Corollaries 3.3–3.4 and Remarks 3.5–3.6 read. Entire paper not
+audited. Corollary 3.3 is the sole imported theorem; quantitative
+Remark 3.6 is unnecessary. Exact SO(3) and quaternion deductions are
+written, including the zero exponent sums needed for nonunit inputs.
+Printed page 102 visually checked; source and page hashes retained.
+Both answers are excluded from the new-candidate count.
+
+Gordeev–Kunyavskii–Plotkin, https://arxiv.org/abs/1808.02303v1 ,
+DOI 10.1070/RM9838: Theorem 2.2(i) statement and attribution paragraph,
+Proposition 2.6, Lemmas 2.7–2.8 and their displayed proofs read.
+Full paper not audited. Elkasapy–Thom https://arxiv.org/abs/1207.5596
+and Jezernik–Sánchez DOI 10.1016/j.jalgebra.2021.08.014: primary
+abstracts only. No unrestricted noncompact surjectivity theorem imported.

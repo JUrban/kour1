@@ -1222,3 +1222,18 @@ outside review remain pending. The complete candidate count is now 24.
 The 20.100 n=7 independent verification continues; no n=7 theorem is
 claimed. All work and commits remain local, with the 48-hour goal active
 through 2026-09-12 20:56:46 UTC.
+
+## 2026-09-11T12:46:39.767646+00:00 — Prior compact word-map consequences
+
+Recorded exact negative deductions for the SO(3,R) case of 16.68 and
+16.69(b) from Thom Corollary 3.3. The quaternion argument first proves
+both exponent sums vanish; central positive scalars then cancel, and
+the norm estimate forces real part at least 7/8 for every nonzero pair.
+These are prior results, excluded from the 24 complete new candidates.
+The supplied page, source reading limits and cached hashes are retained.
+The two PSL2 cases and real trace question remain unresolved here.
+
+At 12:44 UTC all six 20.100 n=7 GAP shards were verified live, with
+3,670,000 nodes checked and about 6.04 million KiB combined RSS. No
+shard had completed. Full-certificate hash binding still passes.
+The 48-hour goal remains active; all work and commits remain local.

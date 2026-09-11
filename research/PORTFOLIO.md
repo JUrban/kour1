@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T12:33:35.539956+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T12:46:39.767646+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 16.68 / 16.69(b) | Restrict Thom almost laws to SO(3), and use zero exponent sums to remove quaternion scalar factors. | Prior negative deductions for SO(3,R) and all nonzero quaternions; explicit Re lower bound 7/8. Excluded from the new count. The PSL2 cases and 16.69(a) remain unresolved here. |
 | 16.46 | Fix an order-three conjugacy representative and solve four independent involution constraints in each finite target. | All 19 targets A5–A8 and PSL2(q), prime powers 4<=q<=31, admit no nontrivial homomorphism. Independent literal permutations match A5–A7 with 35,904 relator checks. General question unresolved; no novelty claim. |
 | 16.9 | Convert palindromes to reflections in an index-two free-product extension, then minimize noncrossing unmatched positions. | Twenty-third complete candidate affirmative algorithm, cubic time with minimum factors. Direct deletion enumeration, 36,558 exhaustive free words and 36,698 actual GAP witnesses pass. Dyer deletion theorem credited; outside review and further novelty checks pending. |
 | 14.67 | Replace normalized nilpotent subgroups by Fitting subgroups of centralizer overgroups; use the prime-degree affine action. | Prime minimal-class-size case proved for arbitrary finite groups. All groups through511 covered with zero hits and67,289 direct controls passing. General question and novelty unresolved. |
