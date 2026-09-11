@@ -1632,3 +1632,19 @@ Recorded bounded source checks and obstacles for10.71,11.8,11.19,
 11.23,11.49,11.61,11.63 and11.113 in the evening triage note.
 No special-case centralizer theorem, degree set without multiplicities,
 or associated-graded Lie argument is mistaken for the general target.
+
+
+## 2026-09-11T18:33:44.400837+00:00 — Problem 11.18 bounded exploration archived
+
+No resolution is claimed. The four coset enumerations and four ACE runs
+reproduce only the known G(2,2)=1; other final outcomes are workspace
+limits. The exact canonical-matrix screen reaches period10 and finds
+only the known tenth-root factor at periods5,10. All final process
+records have actual clean exit0 and completion sentinels. Earlier failed
+runs remain retained and excluded. Independent Python replay matches
+24 permutation orbits and corrects the opposite composition convention
+in the source examples. The53-file hash audit passes.
+
+At18:33:11 UTC all six n=7 workers were live with15,170,000 checked
+nodes and21,534,964KiB combined RSS; zero completed shards.
+All work remains local; complete candidate count30, outside reviews0.
