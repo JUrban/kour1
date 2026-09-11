@@ -1134,3 +1134,18 @@ each had checked250,000 nodes, collectively1.5million, with about3GB
 combined actual RSS. No shard or n=7 proof has completed. The48-hour
 goal remains active through2026-09-12 20:56:46 UTC. All work and Git
 commits remain local, without pushes or outside communications.
+
+## 2026-09-11T11:55:05.953010+00:00 — Retained exploratory scope and progress checkpoint
+
+Recorded the limited primary-source readings and failed shortcuts for
+14.97,15.11,15.9 and15.22 so future passes do not reuse unproved steps.
+For19.20, proved coprime direct-product multiplicativity of both counts
+and searched the85,260 explicitly recorded group counts for reciprocal
+coprime ratios. There are70,983 distinct nonunit ratios,417 reverse
+groups and no such pair. The input hashes and exact available-record
+coverage are retained; this is not full enumeration of all products.
+
+The latest20.100 snapshot at2026-09-11T11:55:05.900210+00:00 verifies all six
+workers live with no completed shard. The complete-candidate count
+remains22, with15.89 the latest addition. No pushes or outside
+communications; the48-hour goal remains active.
