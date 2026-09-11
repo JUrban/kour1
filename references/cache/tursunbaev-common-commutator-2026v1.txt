@@ -1,0 +1,307 @@
+                                                   Subgroups of free groups with the same commutator subgroup
+
+                                                                                   TURSUNBAEV ARTUR
+
+
+                                                 Abstract. We prove that any two subgroups of a free group with the same nontrivial commuta-
+                                                 tor subgroup are equal.This yields an affirmative answer to Shpilrain’s Problem F15: normality
+                                                 of [R, R] in a free group F implies normality of the noncyclic subgroup R. No restrictions on
+                                                 ranks or indices are imposed.
+arXiv:2609.06755v1 [math.GR] 6 Sep 2026
+
+
+
+
+                                                                                    1. Introduction
+                                             In 1990, V. E. Shpilrain posed, in the 11th edition of The Kourovka Notebook, the question of
+                                          whether normality of the commutator subgroup of a noncyclic subgroup of a free group implies
+                                          normality of the subgroup itself; see [7, Problem 11.124]. This question was subsequently restated
+                                          as Problem F15 in the book by Kapovich, Myasnikov, and Shpilrain [6, Problem F15, p. 10].
+                                             The motivation comes from the classical Auslander–Lyndon theorem: if N and M are normal
+                                          subgroups of a nonabelian free group and N ′ ≤ M ′ , then N ≤ M . The normality assumption
+                                          is essential here: Dunwoody [5, p. 153] constructed subgroups N, M ≤ F such that M ◁ F ,
+                                          N ′ ≤ M ′ , but N ≰ M . Thus, the normality assumption on N cannot simply be omitted from
+                                          the Auslander–Lyndon theorem.
+                                             In this context, Shpilrain’s problem has the following precise formulation: if F is a noncyclic
+                                          free group, R ≤ F is a noncyclic subgroup, and
+                                                                                            R′ ◁ F,
+                                          must we have
+                                                                                            R ◁ F?
+                                            In this paper, we answer this question in the affirmative. Throughout, we use the convention
+                                                                           [a, b] = a−1 b−1 ab,        H ′ = [H, H].
+                                          Theorem 1.1. Let F be a free group of arbitrary rank, and let H, K ≤ F . If
+                                                                                        H ′ = K ′ ̸= 1,
+                                          then H = K.
+                                          Corollary 1.2 (F15). Let F be a free group, and let R ≤ F be a noncyclic subgroup. Then
+                                                                                  R′ ◁ F     =⇒        R ◁ F.
+                                          Derivation of the corollary from the theorem. The subgroup R is free and noncyclic, so R′ =
+                                                                                                                                    ̸ 1.
+                                          For every f ∈ F , normality of R′ gives
+                                                                                (f −1 Rf )′ = f −1 R′ f = R′ .
+                                          Theorem 1.1 implies f −1 Rf = R. Hence R ◁ F .                                                          □
+                                            Another immediate consequence of the main theorem is the equality
+                                                                                     NF (H ′ ) = NF (H)
+                                          for every noncyclic subgroup H of a free group F .
+                                             The main theorem can also be formulated as the assertion that the map
+                                                                                           H 7−→ H ′
+                                          is injective on the set of subgroups H ≤ F with H ′ ̸= 1.
+                                                                                               1
+                    2. Classical results and the finite-index case
+Proposition 2.1 (Auslander–Lyndon). Let E be a noncyclic free group.
+   (a) If 1 ̸= N ◁ E, then the action of E/N on N/N ′ by conjugation is faithful. In other words,
+       if g ∈ E and [N, g] ≤ N ′ , then g ∈ N .
+   (b) If N1 , N2 ◁ E and N1′ ≤ N2′ , then N1 ≤ N2 . In particular, N1′ = N2′ implies N1 = N2 .
+  These are Theorems 1 and 3 of [1, pp. 929 and 931], respectively. Neither statement requires
+the rank to be finite.
+Lemma 2.2. Let E be a noncyclic free group, and let H ≤ E satisfy [E : H] < ∞ and D = H ′ ◁E.
+Then H ◁ E.
+Proof. Set                          \
+                  C = coreE (H) =         g −1 Hg,         Ω = E/C,           P = H/C.
+                                    g∈E
+The group Ω is finite. Normality of D and the inclusion D ≤ H imply D ≤ C. Hence C ′ ≤ D ≤ C.
+  All modules in this proof are right modules. Consider
+                         V = (C/C ′ ) ⊗ Q,           W = (D/C ′ ) ⊗ Q ≤ V.
+Conjugation defines a right QΩ-module structure on V , and normality of D makes W a submodule.
+For a subgroup B ≤ Ω, let IB denote the augmentation ideal of QB.
+  The five-term exact sequence in homology [3, p. 47] for the extension C ◁ H yields an exact
+sequence
+                       H2 (P ; Q) −→ VP −→ H1 (H; Q) −→ H1 (P ; Q) −→ 0.
+Since P is finite, both outer homology terms vanish, giving an isomorphism
+                                   VP = V /V IP ∼
+                                                = H1 (H; Q).
+The kernel of the homomorphism C/C ′ → H/H ′ is
+                                     (C ∩ H ′ )/C ′ = D/C ′ .
+Since Q is a flat Z-module, the kernel of the natural map V → H1 (H; Q) is W . On the other
+hand, by the preceding isomorphism, this kernel is V IP . Therefore,
+                                             W = V IP .                                     (2.1)
+  We show that V contains a direct QΩ-summand isomorphic to QΩ. Indeed, if rank E = n < ∞,
+the relation module exact sequence for C ◁ E has the form
+                               0 −→ V −→ (QΩ)n −→ IΩ −→ 0.
+A more general form of this sequence can be found, for example, in Blackburn [4, p. 470].
+  The semisimplicity of QΩ and the decomposition QΩ ∼   = Q ⊕ IΩ give
+                                     V ∼= Q ⊕ (QΩ)n−1 .
+Here n ≥ 2. If rank E = ∞, choose a finite subset of a free basis whose images generate Ω, and
+one further basis element x. Replacing x by xw−1 for a suitable word w in the chosen finite
+subset yields a free basis X of E containing an element x ∈ C.
+  For this basis, the relation module exact sequence has the form
+                                             ∂
+                                  M
+                      0 −→ V −→       ey QΩ −
+                                            → IΩ −→ 0,       ∂(ey ) = ȳ − 1.
+                                 y∈X
+
+Since x ∈ C, we have ∂(ex ) = 0, and hence
+                                                                       
+                                                          M
+                              V = ex QΩ ⊕ V ∩                     ey QΩ .
+                                                         y∈X\{x}
+
+Thus, in this case as well, V contains a direct QΩ-summand isomorphic to QΩ.
+                                                     2
+  In either case, choose a direct summand U ∼
+                                            = QΩ and write
+                                               V = U ⊕ U0 .
+Let π : V → U denote the corresponding QΩ-linear projection. By (2.1), we obtain
+                                π(W ) = π(V IP ) = π(V )IP = U IP .
+Since W is a QΩ-submodule, its image U IP is stable under right multiplication by elements
+of Ω. Under the identification U ∼ = QΩ, it follows that J = QΩIP is also stable under right
+multiplication by elements of Ω.
+   As a Q-vector space, QΩ/J has a basis indexed by the left cosets ωP . Indeed, J is spanned by
+all differences ωp − ω, where ω ∈ Ω and p ∈ P . For p ∈ P and ω ∈ Ω, stability of J under right
+multiplication by elements of Ω gives
+                                            (p − 1)ω ∈ J,
+whence
+                                    pωP = ωP,            ω −1 pω ∈ P.
+Thus P ◁ Ω, and hence H ◁ E.                                                                     □
+
+                                3. Chains in Schreier graphs
+  Fix a free basis X of the free group E. For H ≤ E, let ΓH denote the Schreier graph with
+vertices Hg and positively oriented edges
+                                           x
+                                      Hg −
+                                         → Hgx,             x ∈ X.
+For an oriented edge e, let o(e) and t(e) denote its initial and terminal vertices, respectively.
+  See the classical exposition of the Reidemeister–Schreier method in [2, §2.3].
+  Every word w over the alphabet X ±1 determines a unique path starting at each vertex of ΓH .
+Reading a fixed word defines a permutation of the vertex set of ΓH .
+  Let w ∈ H. The corresponding path starting at the vertex H is closed. Let
+                                         σH (w) ∈ C1 (ΓH ; Z)
+denote its 1-chain, where C1 (ΓH ; Z) is the free abelian group on the positively oriented edges of
+ΓH . The coefficient of an edge in σH (w) is the number of times it is traversed in the positive
+direction minus the number of times it is traversed in the opposite direction. Free reduction of
+the word does not change this chain.
+   For u, v ∈ H, we have
+                                    σH (uv) = σH (u) + σH (v),
+so this defines a homomorphism
+                                      σH : H −→ C1 (ΓH ; Z).
+  The standard identification
+                                           π1 (ΓH , H) ∼
+                                                       =H
+and passage to the abelianization give
+                                               ker σH = H ′ .                                 (3.1)
+Indeed, since ΓH is a graph,
+                               H1 (ΓH ; Z) = Z1 (ΓH ; Z) ⊆ C1 (ΓH ; Z),
+a closed path has zero homology class if and only if its associated 1-chain is zero.
+Lemma 3.1 (On a central coset). Let H ≤ E, D = H ′ ◁ E, and suppose that there exists
+c ∈ H \ D such that
+                                      cD ∈ Z(E/D).
+Then [E : H] < ∞. More precisely, for any word of length ℓ representing c with respect to the
+basis X, we have [E : H] ≤ ℓ.
+                                                     3
+Proof. For every g ∈ E, we have
+                                        gcg −1 c−1 ∈ D = H ′ .
+Thus gcg −1 ∈ H, and the path corresponding to the word c and starting at the vertex Hg is
+closed. The path in ΓH corresponding to the word gcg −1 and starting at H has the form
+                                                g · c · g −1 ,
+where the chains of the segments g and g −1 cancel each other.
+  Moreover, gcg −1 and c have the same image in H/H ′ . Consequently, the chain of the closed
+path corresponding to the word c and starting at an arbitrary vertex Hg is
+                                            α = σH (c) ̸= 0.
+                                    / H ′ and (3.1).
+The fact that α ̸= 0 follows from c ∈
+  Fix a positively oriented edge e whose coefficient in α is nonzero. Since the chain of every closed
+path corresponding to the word c is α, each such path traverses e in one of the two directions.
+  Write
+                                    c = s1 · · · sℓ ,        sj ∈ X ±1 ,
+and set uj−1 = s1 · · · sj−1 . Let the edge e be labeled by x ∈ X. If the j-th step of the path
+starting at a vertex v traverses e in the positive direction, then sj = x and
+                                             vuj−1 = o(e).
+
+If e is traversed in the opposite direction, then sj = x−1 and
+                                             vuj−1 = t(e).
+Consequently,
+         V (ΓH ) ⊆ { o(e)u−1                                 −1
+                          j−1 : 1 ≤ j ≤ ℓ, sj = x } ∪ { t(e)uj−1 : 1 ≤ j ≤ ℓ, sj = x
+                                                                                    −1
+                                                                                       }.
+
+Thus, each j corresponds to at most one initial vertex, and hence
+                                      [E : H] = |V (ΓH )| ≤ ℓ.
+                                                                                                   □
+
+
+                                  4. Intersection dichotomy
+Lemma 4.1. Let H, K ≤ F and H ′ = K ′ = D ̸= 1. Then
+                                  H=K            or         H ∩ K = D.
+Proof. The subgroup D is normal in both H and K, so
+                                          D ◁ E := ⟨H, K⟩.
+  Suppose that there exists c ∈ (H ∩ K) \ D. The subgroups H/D and K/D are abelian and
+generate E/D. Since cD belongs to both, it centralizes H/D and K/D, and hence
+                                            cD ∈ Z(E/D).
+  Lemma 3.1, applied to H ≤ E and K ≤ E, gives
+                                  [E : H] < ∞,              [E : K] < ∞.
+By Lemma 2.2, both subgroups are normal in E. Then Proposition 2.1(b), applied to H, K ◁ E,
+gives H = K.
+                      ̸ K, then H ∩ K ⊆ D. The reverse inclusion is clear, so H ∩ K = D. □
+   Consequently, if H =
+                                                        4
+ 5. Finiteness of the family of subgroups with a common commutator subgroup
+Lemma 5.1. Let D ≤ F and d ∈ D \ D′ . Then there exists a finite set T ⊂ F \ D with the
+following property:
+                    D ≤ H ≤ F, H ∩ T = ∅ =⇒ d ∈          / H ′.                    (5.1)
+Proof. Fix a free basis X of F and choose a word representing d. The corresponding closed path
+in ΓD starting at the vertex D has a nonzero 1-chain σD (d) by (3.1).
+   Let
+                                        Db1 , . . . , Dbm
+be all the distinct vertices of this path; for each of them, choose a representative bi among the
+prefixes of the chosen word. Set
+                                T = { bi b−1
+                                          j : 1 ≤ i, j ≤ m, i ̸= j }.
+
+Since the cosets Db1 , . . . , Dbm are pairwise distinct, we have
+                                             T ∩ D = ∅.
+   Let D ≤ H and H ∩ T = ∅. The natural map
+                                  p : ΓD −→ ΓH ,       Dg 7−→ Hg,
+is injective on the vertices of the chosen path: the equality Hbi = Hbj would imply bi b−1
+                                                                                        j ∈ H,
+contradicting H ∩ T = ∅.
+   Let
+                                   p# : C1 (ΓD ; Z) −→ C1 (ΓH ; Z)
+denote the induced homomorphism on 1-chains.
+   The map p is also injective on the positively oriented edges occurring in the chosen path.
+Indeed, both endpoints of each such edge belong to the chosen set of vertices, and a positively
+oriented edge of a Schreier graph is uniquely determined by its initial vertex and label. Since
+p preserves labels and orientations, distinct edges in the support of σD (d) have distinct images.
+Therefore,
+                                     σH (d) = p# σD (d) ̸= 0.
+                      / H ′.
+By (3.1), we obtain d ∈                                                                        □
+Lemma 5.2. For every nontrivial subgroup D ≤ F , the set
+                                    R(D) = {H ≤ F : H ′ = D}
+is finite.
+Proof. By the Nielsen–Schreier theorem, D is free; since D ̸= 1, we have D/D′ =
+                                                                              ̸ 1. Choose
+d ∈ D \ D′ and a finite set T as in Lemma 5.1.
+  If H ∈ R(D), then D = H ′ ≤ H and d ∈ H ′ . By (5.1), we have H ∩ T ̸= ∅.
+  If H, K ∈ R(D) and H =   ̸ K, then Lemma 4.1 gives H ∩ K = D. Since T ∩ D = ∅, the sets
+H ∩ T , H ∈ R(D), are pairwise disjoint. Hence
+                                         |R(D)| ≤ |T | < ∞.
+                                                                                               □
+
+                                6. Proof of the main theorem
+Proof of Theorem 1.1. Let D = H ′ = K ′ ̸= 1. By Lemma 5.2, the family R(D) is nonempty and
+finite. Set
+                                         E = NF (D).
+Every subgroup S ∈ R(D) is contained in E, since S normalizes its commutator subgroup S ′ = D.
+The group E acts by conjugation on R(D): for g ∈ E, we have
+                                      (g −1 Sg)′ = g −1 Dg = D.
+                                                   5
+Let                                               \
+                                          L=             NE (S)
+                                                S∈R(D)
+be the kernel of this action. Then L ◁ E and [E : L] < ∞. Set m = [E : L]. By Lagrange’s
+theorem,
+                                    gm ∈ L     (g ∈ E).                            (6.1)
+  Suppose that H ̸= K. Then Lemma 4.1 gives
+                                              H ∩ K = D.                                            (6.2)
+Choose k ∈ K \ D and set q = k m . Since K/D = K/K ′ is a free abelian group, q ∈
+                                                                                / D. By (6.1),
+we have
+                                        q ∈ K ∩ L,        q∈
+                                                           / D.                                     (6.3)
+For h ∈ H, set p = hm . Then p ∈ H ∩ L. Since q ∈ L, the element q normalizes H, and hence
+[p, q] ∈ H. On the other hand, p ∈ L normalizes K, and q ∈ K, so [p, q] ∈ K. By (6.2), we obtain
+                                          [hm , q] = [p, q] ∈ D.
+  Conjugation by q induces an automorphism α of the group
+                                          A = H/D = H/H ′ .
+In additive notation, the relation [hm , q] ∈ D means that
+                                 mα(a) = α(ma) = ma               (a ∈ A).
+Since A is a free abelian group, it is torsion-free. Thus α(a) = a for all a ∈ A, that is,
+                                           [H, q] ≤ D = H ′ .                                       (6.4)
+  Consider
+                                          E0 = ⟨H, q⟩.
+The group E0 is free and noncyclic, since H ′ ̸= 1. As q ∈ L, we have H ◁ E0 . Therefore,
+Proposition 2.1(a), applied to H ◁ E0 , together with (6.4), gives q ∈ H. But q ∈ K, so (6.2)
+yields q ∈ D, contradicting (6.3). Hence H = K.                                            □
+Corollary 6.1 (Normalizers). For every noncyclic subgroup H of a free group F , we have
+                                          NF (H ′ ) = NF (H).
+Proof. The inclusion NF (H) ≤ NF (H ′ ) is clear: if g normalizes H, then
+                                      g −1 H ′ g = (g −1 Hg)′ = H ′ .
+If g ∈ NF (H ′ ), then
+                                         (g −1 Hg)′ = H ′ ̸= 1,
+and Theorem 1.1 gives g −1 Hg = H.                                                                     □
+
+                                             References
+[1] M. Auslander, R. C. Lyndon, Commutator subgroups of free groups, American Journal of Mathematics 77
+    (1955), no. 4, 929–931. DOI: 10.2307/2372606.
+[2] W. Magnus, A. Karrass, D. Solitar, Combinatorial Group Theory: Presentations of Groups in Terms of
+    Generators and Relations, 2nd rev. ed., Dover Publications, New York, 1976.
+[3] K. S. Brown, Cohomology of Groups, Graduate Texts in Mathematics, vol. 87, Springer-Verlag, New York,
+    1982.
+[4] N. Blackburn, Note on a theorem of Magnus, Journal of the Australian Mathematical Society 10 (1969),
+    469–474.
+[5] M. J. Dunwoody, On verbal subgroups of free groups, Archiv der Mathematik 16 (1965), 153–157. DOI:
+    10.1007/BF01220015.
+[6] I. Kapovich, A. Myasnikov, V. Shpilrain, Combinatorial Group Theory: Open Problems on Infinite Groups,
+    Walter de Gruyter, Berlin–Boston, 2026. Problem F15, p. 10.
+[7] The Kourovka Notebook. Unsolved Problems in Group Theory, 11th expanded ed., edited by V. D. Mazurov,
+    Institute of Mathematics, Siberian Branch of the USSR Academy of Sciences, Novosibirsk, 1990.
+                                                    6
+St. Petersburg State University, Universitetskii pr. 28, St. Petersburg 198504, Russia
+Email address: tursunbaev.art@gmail.com
+
+
+
+
+                                            7
+

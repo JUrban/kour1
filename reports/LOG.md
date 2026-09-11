@@ -1648,3 +1648,13 @@ in the source examples. The53-file hash audit passes.
 At18:33:11 UTC all six n=7 workers were live with15,170,000 checked
 nodes and21,534,964KiB combined RSS; zero completed shards.
 All work remains local; complete candidate count30, outside reviews0.
+
+
+## 2026-09-11T18:36:29.466370+00:00 — Problem 11.124 prior result checked
+
+Tursunbaev's September6 preprint settles the exact normality question
+for arbitrary-rank free groups. All mathematical proofs were read;
+the key rational-module and final cancellation pages were visually
+checked. The original classical dependencies remain imported. The
+result is excluded from the30-candidate count. Neither derived-subgroup
+inclusion nor the different11.115 question follows automatically.
