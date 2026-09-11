@@ -1,0 +1,32 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=288;;END_ORDER:=288;;START_ID:=1025;;END_ID:=1045;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=288 end=288 start_id=1025 end_id=1045 skip_abelian=true log_all=true
+ORDER_START order=288 groups=1045
+COUNTS id=[ 288, 1025 ] end=1116 piso=238464
+CLOSEST id=[ 288, 1025 ] end=1116 piso=238464 ratio=6624/31
+COUNTS id=[ 288, 1026 ] end=22516 piso=956160
+CLOSEST id=[ 288, 1026 ] end=22516 piso=956160 ratio=239040/5629
+COUNTS id=[ 288, 1027 ] end=11840 piso=327744
+CLOSEST id=[ 288, 1027 ] end=11840 piso=327744 ratio=5121/185
+COUNTS id=[ 288, 1028 ] end=82688 piso=10455552
+COUNTS id=[ 288, 1029 ] end=14112 piso=33880320
+COUNTS id=[ 288, 1030 ] end=27136 piso=336384
+CLOSEST id=[ 288, 1030 ] end=27136 piso=336384 ratio=657/53
+COUNTS id=[ 288, 1031 ] end=1159168 piso=24691968
+COUNTS id=[ 288, 1032 ] end=366592 piso=4582656
+COUNTS id=[ 288, 1033 ] end=55296 piso=3368448
+COUNTS id=[ 288, 1034 ] end=280576 piso=10879488
+COUNTS id=[ 288, 1035 ] end=4788 piso=609408
+COUNTS id=[ 288, 1036 ] end=49588 piso=1503360
+COUNTS id=[ 288, 1037 ] end=184320 piso=302496768
+COUNTS id=[ 288, 1038 ] end=98496 piso=302478336
+COUNTS id=[ 288, 1039 ] end=1736704 piso=21159936
+CLOSEST id=[ 288, 1039 ] end=1736704 piso=21159936 ratio=2583/212
+COUNTS id=[ 288, 1040 ] end=368181248 piso=2973745152
+CLOSEST id=[ 288, 1040 ] end=368181248 piso=2973745152 ratio=181503/22472
+COUNTS id=[ 288, 1041 ] end=552960 piso=102961152
+COUNTS id=[ 288, 1042 ] end=149472 piso=101164032
+COUNTS id=[ 288, 1043 ] end=320864256 piso=946077696
+CLOSEST id=[ 288, 1043 ] end=320864256 piso=946077696 ratio=401/136
+COUNTS id=[ 288, 1044 ] end=1048576000 piso=5209325568
+ABELIAN_SKIPPED id=[ 288, 1045 ] reason=known_equality
+DONE checked=20 abelian=0 hits=0 reversed=0 skipped_abelian=1 closest=[ 288, 1043 ] min_ratio=401/136 runtime_ms=39160
