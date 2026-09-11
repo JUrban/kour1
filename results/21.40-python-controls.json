@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "rational_unipotent_root_towers": 72,
+  "largest_root_entry_denominator": 59604644775390625,
+  "nontrivial_finite_order_root_controls": 24,
+  "triangular_algebras": [
+    {
+      "dimension": 1,
+      "trace_rank": 1,
+      "radical_dimension": 0,
+      "n": 1,
+      "radical_power_dimensions": [
+        0
+      ]
+    },
+    {
+      "dimension": 3,
+      "trace_rank": 2,
+      "radical_dimension": 1,
+      "n": 2,
+      "radical_power_dimensions": [
+        1,
+        0
+      ]
+    },
+    {
+      "dimension": 6,
+      "trace_rank": 3,
+      "radical_dimension": 3,
+      "n": 3,
+      "radical_power_dimensions": [
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "dimension": 10,
+      "trace_rank": 4,
+      "radical_dimension": 6,
+      "n": 4,
+      "radical_power_dimensions": [
+        6,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "dimension": 15,
+      "trace_rank": 5,
+      "radical_dimension": 10,
+      "n": 5,
+      "radical_power_dimensions": [
+        10,
+        6,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "dimension": 21,
+      "trace_rank": 6,
+      "radical_dimension": 15,
+      "n": 6,
+      "radical_power_dimensions": [
+        15,
+        10,
+        6,
+        3,
+        1,
+        0
+      ]
+    }
+  ],
+  "A5_times_Q": {
+    "dimension": 18,
+    "trace_rank": 17,
+    "radical_dimension": 1,
+    "distinct_quotient_tuples": 60,
+    "sampled_group_elements": 300,
+    "S5_orbit_sizes_on_A5": [
+      1,
+      15,
+      20,
+      24
+    ],
+    "infinite_example_automorphism_orbit_upper_bound": 8
+  },
+  "unipotent_generators_negative_control": "PASS",
+  "note": "Finite exact controls; the arbitrary-group theorem rests on the written proof."
+}

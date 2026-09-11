@@ -100,6 +100,19 @@ on keeping proper stabilizers distinct from the full fixed locus.
 
 ## Scope checks from the next literature pass
 
+- **7.31:** Li--Zhu2024 Theorem1.1 already answers the question. The
+  proposed automorphism search was not started; see the separate note.
+- **6.38(b):** The supplied archive already records Zyubin2006's
+  counterexample to the related irreducibility conjecture in part(a).
+  The primary publisher abstract, DOI10.1007/s10469-006-0028-1, explicitly
+  identifies6.38, but its full proof was not read. Moreover, the archive's
+  already acknowledged characteristic-two monomial exception meets every
+  GL2 conjugacy class over a quadratically closed field and is not a
+  parabolic subgroup in the usual flag-stabilizer sense. Thus neither this
+  elementary example nor a proposed generic free-product construction is
+  counted as a new resolution. The apparent relation between the archived
+  and remaining formulations needs care.
+
 - **15.36:** An exact published negative answer was found in Shakhova2018.
   The primary abstract and Notebook page87 were checked; see the separate
   `15.36-prior-claim.md` note for the limited reading scope.

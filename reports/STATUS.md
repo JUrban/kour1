@@ -1,15 +1,17 @@
 # Current status
 
-Updated: 2026-09-11T07:08:17.570389+00:00.
+Updated: 2026-09-11T07:53:51.331519+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
-- Complete candidate resolutions: **17**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups), and **14.72** (a smooth affine surface with a smooth fixed Cartier divisor but singular cyclic quotient). All await outside review and further novelty checks.
+- Complete candidate resolutions: **18**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups), **14.72** (a smooth affine surface with a smooth fixed Cartier divisor but singular cyclic quotient), and **21.40** (a normal nilpotent subgroup of finite index in every rational linear group with finitely many automorphism orbits). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T07:08:17.570389+00:00, the order256 extension has 55,523 counts, zero equality hits, 357 reversals, 1 verified live worker and 15 completed ranges. All log checks pass.
+- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T07:48:13.119361+00:00, the order256 extension has 55,944 counts, zero equality hits, 357 reversals, 1 verified live worker and 15 completed ranges. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
+
+**21.40:** Finitely many automorphism orbits give arbitrarily deep roots of a positive power of each element. A bounded-degree algebraic-integer argument forces every matrix eigenvalue to be a root of unity. The finite set of integer traces then gives a normal torsion-free nilpotent subgroup of class at most n-1 and index at most (2n+1)^(n^2). The proof is self-contained and covers infinitely generated groups. Exact Python and independent GAP controls pass, including the nonsoluble finite-orbit example A5 times Q. See `research/21.40-proof.md` and `research/21.40-review.md`; novelty and outside review remain pending.
 
 **14.72:** An explicit smooth affine surface over C admits an order-four cyclic action whose entire fixed scheme is an affine line and a smooth Cartier divisor. Its invariant ring is exactly `C[a,v,d]/(v^2-(a-1)d)`, singular at `(1,0,0)`. The two points above that node have a proper order-two stabilizer, so they are outside the full fixed locus. Both affine charts and the all-degree invariant-ring computation are proved. Exact normal forms and independent GAP checks on 2,955 surface points and 817 orbits pass. See `research/14.72-proof.md` and `research/14.72-review.md`; novelty and outside review remain pending.
 
@@ -97,6 +99,11 @@ and automorphism order. Five smaller controls also agree. None of the
 
 ## Additional constructions and exclusions
 
+**7.31:** Li--Zhu2024 Theorem1.1 gives the affirmative answer, including
+the full automorphism group. The exact statement and its Section3 proof
+were read; the representation and classification inputs remain unaudited.
+Excluded from new priority; see `research/7.31-known-resolution.md`.
+
 **15.36:** Shakhova2018 explicitly states the exact negative answer: some
 finite G have L(qG) of infinite axiomatic rank. The primary publisher
 abstract and the printed question were checked; the full proof remains
@@ -114,9 +121,9 @@ counterexample order bounded by p_n*n^(n-1). Exact
 finite certificates now prove the all-group cases n=4,5,6: independent GAP
 Smith-normal-form checks verify227,10,493 and265,104 nodes, with a total
 of19,524,681 relation implications. The n=7 generator resumed its closed 9,999,993-node incomplete prefix
-and has passed 13.68 million visited states, with explicit bounds. The full arbitrary-n
+and has passed 19.66 million visited states at 07:48 UTC, with explicit bounds. The full arbitrary-n
 conjecture and novelty remain open. See `research/20.100-reduction.md` and
-`research/20.100-review.md`; complete-candidate count is17 from the separately resolved entries.
+`research/20.100-review.md`; complete-candidate count is18 from the separately resolved entries.
 
 **20.108(c):** Caranti--Tsang2023 Theorem1.1 already gives a group of order3^10 with GL4(3) inside T(G), hence prime divisor5 outside p(p-1)=6. Prior affirmative result, excluded from new priority; see `research/20.108c-known-consequence.md`. This corrects our earlier provisional status for(c).
 

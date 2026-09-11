@@ -755,3 +755,40 @@ The n=7 generator is verified live at 13.68 million visited states.
 The order-256 search has 55,523 counts, no equalities, 357 reversals,
 one verified live worker and 15 completed ranges. All log checks pass.
 The 48-hour goal remains active; about 37 hours 48 minutes remain.
+
+## 2026-09-11T07:53:51.331519+00:00 — Candidate affirmative solution to 21.40 and reporter integration
+
+A self-contained argument proves that a subgroup of GL(n,Q) with finitely
+many automorphism orbits has a normal torsion-free nilpotent subgroup of
+class at most n-1 and index at most (2n+1)^(n^2). The key steps are actual
+root towers from an abstract automorphism, bounded-degree algebraic
+integers forcing root-of-unity eigenvalues, and the trace-pairing radical
+in the rational span of the group. An explicit finite-module argument
+proves the ideal bound R^n=0 without a finite-generation assumption on G.
+The exact question was visually checked on page 173. Related primary
+papers were inspected with their hypothesis and reading limits recorded;
+novelty and outside review remain pending. Candidate count is now 18.
+
+Python passes 72 rational Jordan root identities and 24 finite-order root
+identities. Both Python and GAP compute the trace radicals in triangular
+algebras through degree six and in the actual infinite finite-orbit
+example A5 times Q, whose algebra has dimension 18, radical dimension 1,
+and finite quotient of order 60. GAP independently checks Aut(A5), 546
+trace pairings and 25 additional Jordan root identities. Negative controls
+exclude the stronger whole-group-solubility and generator-only trace claims.
+
+The 20.100 reporter now recognizes partitioned independent checks and
+requires complete coverage plus validated aggregate evidence. All 19
+status/corruption controls pass. One initially failing negative control
+exposed a partial duplicate PASS_SHARD marker; the runner and reporter
+now reject it. A fresh n=4 three-part integration run and a direct replay
+through the reporter pass with 227 nodes and 3,953 relation implications.
+This infrastructure is committed separately as b810372 and proves no
+additional fixed-n case.
+
+The last search snapshot has n=7 at 19.66 million visited states, still
+generating, and 55,944 order-256 groups checked for 19.20, with zero
+equality hits and 357 reverse inequalities. Actual commands and stdout
+remain verified. Prior 7.31 was resolved affirmatively by Li--Zhu2024;
+its theorem and Section 3 proof were read and the exclusion recorded.
+No pushes or external communications. The 48-hour goal remains active.
