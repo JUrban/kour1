@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-11T08:19:07.133077+00:00",
+  "observed_utc": "2026-09-11T08:46:18.700275+00:00",
   "results": [
     {
       "n": 4,
@@ -32,14 +32,13 @@
       "n": 7,
       "status": "GENERATING",
       "verified_live_pids": [
-        47564
+        59847
       ],
       "last_progress": {
-        "states": 24160000,
-        "leaves": 3302552,
-        "edges": 438006314,
-        "seconds": 6264.113,
-        "peak_rss_kib": 12108844
+        "status": "LOADING_PREFIX",
+        "n": 7,
+        "completed_nodes": 6300000,
+        "seconds": 340.5244758296758
       }
     }
   ],

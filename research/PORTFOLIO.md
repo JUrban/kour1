@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T08:10:16.295646+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T08:48:07.659647+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 4.55 | Rational descent of projectives on four distinct rays of a+d=b+c. | Twentieth complete candidate: Z_(5)[3.A7] has a rank-55,440 projective with incompatible indecomposable refinements. GAP independently reconstructs all relevant modular data from a permutation module; Python field/matrix controls pass. Schur indices are allowed; novelty and outside review pending. |
 | 21.60 | All modular simples lift, but a quotient quaternion order has nonliftable idempotents. | Nineteenth complete candidate: SmallGroup(12,1) at p=2 satisfies the positive Grothendieck condition but Z_(2)G is not semiperfect. Exact Python/GAP controls pass; the source Ext-lifting gap is audited. Novelty and outside review pending. |
 | 21.40 | Deep matrix roots force root-of-unity eigenvalues; finite trace tuples give a nilpotent kernel. | Eighteenth complete candidate: every rational linear finite-automorphism-orbit group has a normal torsion-free nilpotent subgroup of finite index, with explicit bounds. Exact Python/GAP controls pass; novelty and outside review pending. |
 | 14.72 | A cyclic order-four action on a line bundle over an affine elliptic curve, with explicit affine equations. | Seventeenth complete candidate: smooth irreducible affine surface, smooth fixed Cartier divisor, singular quotient v^2=(a-1)d. Exact ring and GAP point/orbit controls pass; novelty and outside review pending. |

@@ -854,3 +854,33 @@ A6September2026 preprint gives the exact prior affirmative claim for
 11.124. Its full proof was read, and the earlier recovery lead is now
 excluded from new priority. No outside communications or pushes.
 About36hours37minutes remain in the active48-hour goal.
+
+## 2026-09-11T08:48:07.659647+00:00 — Twentieth candidate and preserved search checkpoint
+
+Problem4.55 has a complete candidate negative proof for G=3.A7,p=5.
+Four modular multiplicities satisfy a+d=b+c. Rational descent after
+multiplication by168 gives projectives on four different rays; equal
+reductions give a rank55,440 isomorphism with incompatible indecomposable
+refinements. This addresses uniqueness itself and allows arbitrary Schur
+indices. The actual group, ordinary table, twelve faithful modular
+irreducibles and fourteen decomposition rows were independently checked
+by GAP. Python independently verifies the field arithmetic, order7560
+matrix group, absolute irreducibility, and all28,561 bounded multiplicity
+vectors. Both final controls pass. The first Python run rejected invalid
+JSON formatting before any mathematical check; the export was corrected.
+Proof, review, scripts and matrix evidence are retained. Novelty and
+outside review remain pending.
+
+The n=7 generator for20.100 stopped at its explicit time bound, leaving
+26,317,076 closed nodes. After its exit, the second incomplete prefix was
+preserved and fully read with consecutive IDs and hashes verified. A
+new one-CPU continuation started at08:40 UTC with60-million-state and
+18,000-second bounds. It remains incomplete and is loading the prefix.
+The old prefix remains intact; no partial certificate is a proof.
+
+The19.20 extension has completed292 of356 jobs at08:46 UTC, with13,922
+nonabelian counts,505 abelian skips, zero equalities and four reversals.
+All eight live workers and all logs pass the provenance checks. The
+4.55 table screen is exploratory and still incomplete; the proved
+example was audited separately. No pushes or outside communications.
+About36hours10minutes remain in the active48-hour goal.
