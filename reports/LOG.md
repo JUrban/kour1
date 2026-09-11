@@ -1258,3 +1258,29 @@ finite/torsion distinction in 17.31, RCWA presentation limits, and
 the literal all-groups-variety exception to 17.85. No false general
 conclusion is imported from those leads. The 48-hour goal continues
 and the six 20.100 n=7 verification workers are preserved.
+
+## 2026-09-11T13:24:27.614301+00:00 — Exact prior answers and the root-amalgam audit
+
+Located and recorded Sela Theorem 8.1 for 17.48 and Wilkens's 2017
+main theorem explicitly answering 18.56. The source reading scopes
+are limited: no independent full audit of either long proof, and no
+algorithmic inference from Sela's noncanonical reduction for 17.117.
+
+An independently considered unbounded-root amalgam proved to be
+Allenby's exact 2000 Theorem 4. For generators a_n with a_n^n=z,
+lambda(G)=mu(G)=H=<z>, an infinite cyclic group. This gives prior
+negative answers to 19.4(a),(b) and 19.5. A separate coset-exponent
+argument checks the essential lower bound for arbitrary subgroups.
+All six pages of Allenby were read, with its older upper-bound input
+explicitly remaining an imported theorem. Azarian's 2011 survey both
+reproduces this theorem and lists the later Notebook questions.
+
+Printed pages 110,123,132 were visually checked; source and artifact
+hashes, a ten-point audit, and further triage limits are retained.
+No new complete candidate is added: the count remains 24, all pending
+outside review and broader novelty checking. The 48-hour goal remains
+active through 2026-09-12 20:56:46 UTC; work and commits remain local.
+
+At 13:23 UTC all six 20.100 n=7 verification workers remain live,
+with 4,970,000 nodes checked and 7,824,116 KiB combined resident
+memory. No shard has finished; the certificate remains unproved.

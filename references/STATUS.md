@@ -710,3 +710,40 @@ Bardakov–Lavrenov–Neshchadim for 19.9. Exact group-theoretic universal
 extension and superperfectness arguments are written in the note.
 Printed page 113 visually checked; hashes and reading limits retained.
 The answer is excluded from the possible-new-priority count.
+
+## Problems 17.48 and 18.56
+
+Sela, https://arxiv.org/abs/1012.0044v1: introduction, Theorem 6.3
+and initial proof, Section 8 introduction and Theorems 8.1–8.2,
+the final parameter-removal step for Theorem 8.1, and Theorem 8.7
+with its proof read. Theorem 8.1 is the exact affirmative prior
+answer to 17.48. Full resolution and stability arguments unaudited.
+No algorithm establishing 17.117 is imported.
+
+Wilkens, https://doi.org/10.1515/jgth-2016-0035: primary indexed
+abstract, introduction, main theorem and introductory corollary read.
+The source explicitly answers 18.56 affirmatively. Full proof not
+audited. The exact-index-four consequence of its at-most-four bound
+is explained in `17.48-18.56-prior-results.md`. Both printed questions
+were visually checked; both results are excluded from new priority.
+
+## Problems 19.4 and 19.5, with nearby leads
+
+Allenby, Houston Journal of Mathematics 26 (2000), 463–468,
+https://www.math.uh.edu/~hjm/restricted/pdf26(3)/03ALLENBY.pdf:
+all six pages read. Theorem 4 gives the exact unbounded-root
+counterexample to 19.4(a),(b) and 19.5. Theorem 1 and the local
+unbounded-degree argument in Theorem 4 were checked; the 1999
+upper-bound dependency in Theorem 2 remains unread. Example 7 was
+read but is not imported. Tang's older group construction is credited
+in Section 5. A direct lower-bound check and exact Notebook
+deductions are in `19.4-19.5-prior-results.md`.
+
+Azarian, International Journal of Algebra 5 (2011), 1–15,
+https://www.m-hikari.com/ija/ija-2011/ija-1-4-2011/azarianIJA1-4-2011.pdf:
+Sections 1–5 and relevant references read. Its Theorem 3.17 already
+reproduces Allenby's exact counterexample theorem; Questions 5.1 and
+5.4 nevertheless list the assertions subsequently printed as 19.4
+and 19.5. Other statements in the survey are source leads until their
+needed deductions and original reading scopes are recorded. No
+new-priority claim is made for this family of observations.

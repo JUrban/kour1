@@ -102,3 +102,93 @@ Other scanned Issue 17 entries remain unresolved here. In particular,
 finite Engel-group experiments do not supply a non-Engel infinite
 example, and a faithful representation in a larger matrix degree does
 not meet the rank-two SL2(C) requirement of 17.107.
+
+## 17.48, 17.115, 17.117 and 17.124
+
+Sela's Theorem 8.1 gives the exact affirmative prior answer to 17.48;
+the noncanonical reduction in Theorem 6.3 was not shown effective.
+17.117 remains unresolved here. See `17.48-18.56-prior-results.md`.
+
+Samuel Poss, *The Frattini Subgroup of Locally Free Groups*, Math.
+Z. 141 (1975), 199–204, was located in primary bibliographic metadata
+at https://eudml.org/doc/172167. The full text was not obtained.
+Its title alone does not answer 17.115; nonabelianity is essential
+because the additive group Q is locally cyclic and has no maximal
+subgroups. No implication from the unread paper was imported.
+
+The exact September 2026 prior claim for 17.124 was encountered again;
+it is already recorded in `17.124-prior-claim.md`. No duplicate result
+or new reading of its formalization is counted.
+
+## 18.35: separation, discrimination and surjectivity
+
+The publisher-indexed Proposition 36 and Theorem 37 of the
+2014 paper, *The Relatively Free Groups F(Nc meet A2) Satisfy
+Noncentral Commutative Transitivity*,
+https://doi.org/10.1155/2014/379030, were read, including their local
+proof discussion. Theorem 37 addresses finitely generated metabelian
+groups and discrimination by homomorphisms. The supplied 18.35 has
+no finite-generation hypothesis and requires surjective maps onto
+the rank-two free metabelian group. These differences have not been
+removed. The full paper and the definitions earlier in that paper
+were not audited; no conclusion for 18.35 is claimed.
+
+## 18.48: existing residue-class permutation coverage
+
+Bardakov–Iskra, https://arxiv.org/abs/2409.13341v1, states the exact
+possible orders 1,2,3,4,6,12 for products of two horizontal class
+transpositions. Only the primary abstract was read. It explicitly
+describes this as a partial answer, not a general resolution.
+
+Kohl's primary https://stefan-kohl.github.io/preprints/cycles.pdf
+was read through the definitions, intersection classification, and
+selected displayed table rows. The installed RCWA examples and data
+already cover the ten known nontrivial finite orders through 60,
+along with infinite order. CHANGES.md records a 2025 correction to
+one database entry, from order 12 to 60. These data were inspected,
+not recomputed. No extra search was launched. The general 18.48
+remains unresolved here.
+
+## 18.56, 18.78 and 18.83
+
+Wilkens 2017 explicitly settles 18.56; see the separate prior-result
+note. There is no reason to duplicate the older small-group search.
+
+Passman's cached *Character Theory and Group Rings*, Section 2,
+definitions and Lemmas 2.1–2.7 with their proofs were read. A simple
+twisted algebra need not be central simple over the initial field.
+The Galois-conjugacy issue in the characteristic-zero case remains
+unresolved. No general answer to 18.78 was established.
+
+For 18.83, countability does not supply an automatic answer by citing
+the stronger uncountable-cofinality version of the Bergman property.
+Poor–Rinot's primary paper https://papers.assafrinot.com/paper60.pdf
+and 2025 slides https://www.dmg.tuwien.ac.at/fb8/2025_slides/Poor.pdf
+were consulted at the indexed introduction/definition level only.
+The absence of countable n-Shelah groups is a uniform-bound statement,
+not a solution of the question allowing the bound to depend on an
+infinite generating set. No new theorem is claimed.
+
+## 19.1–19.5: substantial older literature found
+
+Allenby 2000, Theorem 4, is an exact prior root-amalgam counterexample
+to 19.4(a),(b) and 19.5. The full deduction and a direct lower-bound
+check are in `19.4-19.5-prior-results.md`. The six-page source was read;
+its older upper-bound dependency has not yet been audited.
+
+Azarian 2011, Sections 1–5 and the relevant reference entries, were
+read. The survey reproduces the root-amalgam theorem and also lists
+the same assertions among its questions. It further points to known
+lower-near-Frattini results for the knot groups in 19.1 and several
+cases of 19.3. These are leads for exact prior deductions; their
+original proofs still need inspection before a detailed report.
+
+For the literal 19.2, a finite normal subgroup H is always contained
+in lambda(G): adjoining it changes a subgroup's index by at most
+|H|. Also G cannot nearly split over finite H with the printed
+conditions [G:N]=infinity and [G:HN]<infinity, since [HN:N]<=|H|.
+Thus, whenever psi(G) exists, both sides of the proposed equivalence
+are false. For arbitrary groups psi(G) need not exist; the question's
+use of this notation needs qualification. The same index obstruction
+makes the hypothesis of 19.3(g) impossible. These are formulation
+observations, excluded from new-result counting.
