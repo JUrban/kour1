@@ -97,6 +97,8 @@ Updated 2026-09-11T17:06:25.266932+00:00. This is a research triage list, not an
 | 19.108 | A p-adic orbit-fiber argument forces support vanishing on order-p^3 elements. | Proved partial theorem for every odd p: groups of order p^10 with an abelian normal subgroup of size at least p^6 satisfy the divisibility. All571 subgroup classes and1,596 regular orbits at p=3 verified independently. General question unresolved; novelty unconfirmed. |
 | 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | All91,774 nonabelian groups through order511 checked: zero equality cases and469 reverse inequalities. Latest356 jobs and514 independent abelian-ID reconstructions pass. Separate structural counterexamples remain certified; general equality question unresolved. |
 
+| 10.62 | Amelio periodic quotient of C2*C2*C2 with a prescribed odd triple relation. | Twenty-ninth candidate: infinite perfect exponent-2p group with no subgroup of order four; all involutions form one generating class and have pairwise products of odd order. Geometric theorem imported; application audited and finite controls pass. Novelty and outside review pending. |
+
 The index contains 1,308 main-body problem entries, including all 150 Issue 21 entries. Exactly 104 headings are starred, but partial solution markers also occur within unstarred entries. Older issues remain to be surveyed systematically. The separate solved archive is intentionally excluded from the index.
 
 ## Exact reduction for 21.113(a)

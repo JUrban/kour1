@@ -988,3 +988,18 @@ page is dated13May2026. Schneider--Thom2018 was consulted for UEB
 convolution and its explicit SIN restriction, and Dobrowolski2015
 for the stated incompatible action on a direct-sum group. Neither
 topological construction was claimed to settle the general10.8.
+
+
+## 10.62: periodic quotients with involutions
+
+Amelio, arXiv:2509.11958v2 (submitted16September2025; PDF dated17September),
+is the exact imported source. Theorem6.7, Proposition6.1, their inductive
+construction and Remark6.8 supply the quotient and the prescribed short
+relation. Definition4.46 and Proposition5.36 control order-four subgroups.
+Ten source pages and the Notebook p.43 were visually checked. Full reading
+limits, the v1/v2 distinction, the positive-delta definition check, and the
+unread geometric dependencies are in `research/10.62-review.md`.
+Amelio--Andre--Tent2312.16992v1 was consulted for the older translation-
+subgroup restriction. The AMS request for Glauberman--Mann--Segev2015
+returned403, so its full theorem is not claimed as read. Searches did not
+find an exact prior10.62 consequence; priority remains unresolved.

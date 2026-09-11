@@ -1561,3 +1561,26 @@ group-ring multiplication is jointly continuous exactly for SIN
 groups. Dobrowolski2015 supplies a non-Hausdorff action obstruction,
 but no reduction from an arbitrary ring embedding to that particular
 permutation module was obtained. No additional result is counted.
+
+
+## 2026-09-11T17:34:57.076226+00:00 — Problem 10.62 periodic candidate
+
+Recorded the twenty-ninth candidate: apply Amelio's 2025 Theorem 6.7 to
+C2*C2*C2, rescale so abc is selected in the first quotient, and impose its
+p-th power. Every finite stage is tame. A finite multiplication-table
+lifting lemma excludes order-four subgroups in the limit, so every product
+of distinct involutions has odd order p. The odd triple relation eliminates
+the remaining quotient of order two and makes the group perfect.
+
+The source v2 and the exact Notebook page were visually checked. The
+geometric theorem is imported; the application has a 26-point internal
+audit. A positive-delta overlap calculation avoids a zero-hyperbolicity
+strict-inequality convention. GAP checks 200 presentation abelianizations,
+eight literal C2 assignments and21,318 dihedral pairs, actual exit0 and a
+clean completion sentinel. No finite calculation is claimed to certify the
+infinite quotient theorem. Novelty and outside review remain pending.
+
+At17:24:47 UTC the six n=7 workers remained verified live, with13,020,000
+total checked nodes and18,475,764KiB combined RSS; no shard was complete.
+The earlier index-two obstruction in the Amelio--Andre--Tent framework was
+avoided by using Amelio's newer theorem, not silently assumed absent.

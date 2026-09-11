@@ -1,0 +1,968 @@
+--- v1
+
++++ v2
+
+@@ -7,7 +7,7 @@
+
+                                                     Abstract. We construct here the first known examples of non-split sharply 2-transitive groups
+                                                     of bounded exponent in odd positive characteristic for every large enough prime p ≡ 3 (mod 4).
+                                                     In fact, we show that there are countably many pairwise non-isomorphic countable non-split
+-arXiv:2509.11958v1 [math.GR] 15 Sep 2025
++arXiv:2509.11958v2 [math.GR] 16 Sep 2025
+ 
+ 
+ 
+@@ -52,7 +52,7 @@
+
+                                            (that is, products of two distinct involutions) form a conjugacy class. In this case, we define the
+                                            characteristic of G ↷ X to be the order of a translation if this order is finite (in which case it
+ 
+-                                             Date: September 16, 2025.
++                                             Date: September 17, 2025.
+                                              The author was supported by the German Research Foundation (DFG) under Germany’s Excellence Strategy
+                                            EXC 2044–390685587, Mathematics Münster: Dynamics–Geometry–Structure and by CRC 1442 Geometry: Defor-
+                                            mations and Rigidity.
+@@ -172,7 +172,9 @@
+
+ and the difficulties in the presence of even torsion come, among others, from the fact that the
+ algebraic structure of finite subgroups of free Burnside groups is more intricate in this case: every
+ finite subgroup of a free Burnside group of odd order is cyclic, while infinite Burnside groups of
+-even exponent contain arbitrarily long chains of direct products of finite dihedral groups.
++even exponent contain arbitrarily long chains of direct products of finite dihedral groups. For
++further reading on the Burnside problem, see, for example, [Adi79; Ols89; Iva92; DG08; Cou14;
++Cou21; ART23].
+    As already observed above, sharply 2-transitive groups contain plenty of involutions, and one
+ of the challenges we have to face is to keep these involutions under control when taking small
+ cancellation quotients (and it is in order to maintain this control that we need to restrict ourselves
+@@ -181,17 +183,17 @@
+
+    In the 1910’s, Dehn proved that for the fundamental group of a closed orientable surface of
+ genus at least two the word problem is solvable. His work involved negative curvature, and was
+ a precursor for small cancellation theory. Small cancellation conditions were formulated explicitly
+-for the first time by Tartakovskii in 1949. Then, small cancellation theory was developed notably
++for the first time by Tartakovskii in 1947. Then, small cancellation theory was developed notably
+ by Greendlinger in the early 1960’s and by Lyndon and Schupp around the same time to study
+ groups given by group presentations where defining relations have small overlaps with each other.
+ However, the geometric origins of small cancellation theory were gradually forgotten in favour of
+ combinatorial and topological methods. According to Gromov, ‘the role of curvature was reduced
+ to a metaphor (algebraists do not trust geometry)’, and he proposed to return to the geometric
+-sources of small cancellation theory. This point of view appears in [Gro01] and [DG08], and was
+-further developed extensively in the work of Coulon (see for example [Cou11], [Cou14], [Cou16]
+-and [Cou21]). In this article, we will develop a further adaptation of the methods of Coulon, as
+-was already done in [AAT23].
+-
++sources of small cancellation theory. This point of view appears in Gromov’s paper [Gro01], and
++was then developed extensively by Delzant and Gromov in [DG08], by Arzhantseva and Delzant
++in [AD08], by Coulon in [Cou11; Cou14; Cou16b; Cou21], by Cantat, Lamy and de Cornulier in
++[CLC13], and by Dahmani, Guirardel and Osin in [DGO17] (see also [Cou16a]). In this article, we
++will develop a further adaptation of the methods of Coulon, as was already done in [AAT23].
+ Structure of the paper. In Section 2, we give some preliminaries about sharply 2-transitive
+ groups and we introduce two classes of groups (a modification of the ones from [AAT23]) that will
+ be key when proving Theorem 1.1. In Section 3, we give a proof of Theorems 1.1 and 1.3, assuming
+@@ -200,7 +202,6 @@
+
+ introduce some background on hyperbolic spaces and group actions on them. Later, in Section
+ 5 we introduce the small cancellation framework that will be applied iteratively in Section 6 to
+ obtain partial periodic quotients of groups with some negative curvature features.
+-
+ Acknowledgement. The author would like to thank Simon André, Rémi Coulon and Katrin Tent
+ for several helpful and stimulating discussions on the topics of this paper.
+ 
+@@ -217,12 +218,12 @@
+
+     • T RS for the set of translations of S, and
+                            (2)
+     • for a pair (r, s) ∈ IG , Dr,s for ⟨r, s⟩.
+-  Moreover, for a subgroup H ≤ G, we put NG (H) for the normalizer of H in G, and for g ∈ G
++
++                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                                5
++
++
++   Moreover, for a subgroup H ≤ G, we put NG (H) for the normalizer of H in G, and for g ∈ G
+ we put Cen(g) for the centralizer of g in G. Furthermore, for a prime number p we will write Fp
+-
+-                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                                5
+-
+-
+ for the finite field with p elements. Also, for n ≥ 2 we will write Cn for the cyclic group of order
+ n and Dn for the dihedral group of order 2n
+ Definition 2.1. An action of a group G on a set X is sharply 2-transitive if for every two ordered
+@@ -269,17 +270,17 @@
+
+ of bounded exponent. The conditions defining class WST (p, q1 , q2 ) are similar to those for class
+ ST (p) in [AAT23] (as well as those considered in [RT19; AT23; AG22]), modified to obtain groups
+ of bounded exponent. In order to be able to take small cancellation quotients as discussed in
++
++6                                          MARCO AMELIO
++
++
+ Section 1, we introduce as well class WST ′ (p, q1 , q2 ) (similar to class ST ′ (p) in [AAT23]), whose
+-
+-6                                          MARCO AMELIO
+-
+-
+ elements are pairs composed of a group G and a tree X endowed with an action of G satisfying a
+ number of technical assumptions that will allow us to take the aforementioned quotients.
+    We begin by reintroducing in Definition 2.7 two concepts from [AAT23] to classify pairs of
+ distinct involutions of a group that will be key in the inductive steps necessary to prove Theorem
+ 1.1: pairs of p-minimal and p-affine type. Intuitively, these two classes can be thought of in
+-                                                         (2)
++                                                           (2)
+ the following way: for a pair of involutions (r, s) ∈ IG , the automorphisms of Dr,s induced by
+ conjugation by some element of G are as few as possible (only inner automorphisms of Dp ) in case
+ the pair is of p-minimal type, and as many as possible (the whole group Aut(Dp )) in case the pair
+@@ -289,21 +290,21 @@
+
+      • We say that the pair (r, s) is of p-minimal type if |rs| = p and NG (⟨rs⟩) = Dr,s .
+      • We say that the pair (r, s) is of p-affine type if Dr,s is contained in a subgroup H of G
+        isomorphic to AGL(1, Fp ).
+-                           (2)
++                            (2)
+ Remark 2.8. Let (r, s) ∈ IG .
+-   (1) Since ⟨rs⟩ is a characteristic subgroup of Dr,s , we have that NG (Dr,s ) ≤ NG (⟨rs⟩). In
+-       particular, if the pair is of p-minimal type we have that NG (Dr,s ) = Dr,s .
+-   (2) It is a known fact that AGL(1, Fp ) has a unique subgroup D isomorphic to Dp and that
+-       every involution of AGL(1, Fp ) is contained in this subgroup D. Therefore, if the pair
+-       (r, s) is of p-affine type, then the isomorphism from H onto AGL(1, Fp ) as in Definition 2.7
+-       induces an isomorphism from Dr,s onto D (so in particular |rs| = p), and H acts sharply
+-       2-transitively on IDr,s . Furthermore, if no non-trivial element of G centralizes r and s
+-       then NG (Dr,s ) = H, so NG (Dr,s ) ∼    = AGL(1, Fp ) (since H already acts 2-transitively by
+-       conjugation on IDr,s ). From this discussion together with the fact that every pair of distinct
+-       involutions of Dp generate the whole subgroup, it also follows that AGL(1, Fp ) ∼  = Aut(Dp ).
+-                               (2)
+-   (3) Clearly, if (r, s) ∈ IG is of p-affine (respectively, p-minimal) type, then so is every conju-
+-       gate of (r, s).
++    (1) Since ⟨rs⟩ is a characteristic subgroup of Dr,s , we have that NG (Dr,s ) ≤ NG (⟨rs⟩). In
++        particular, if the pair is of p-minimal type we have that NG (Dr,s ) = Dr,s .
++    (2) It is a known fact that AGL(1, Fp ) has a unique subgroup D isomorphic to Dp and that
++        every involution of AGL(1, Fp ) is contained in this subgroup D. Therefore, if the pair
++        (r, s) is of p-affine type, then the isomorphism from H onto AGL(1, Fp ) as in Definition 2.7
++        induces an isomorphism from Dr,s onto D (so in particular |rs| = p), and H acts sharply
++        2-transitively on IDr,s . Furthermore, if no non-trivial element of G centralizes r and s
++        then NG (Dr,s ) = H, so NG (Dr,s ) ∼    = AGL(1, Fp ) (since H already acts 2-transitively by
++        conjugation on IDr,s ). From this discussion together with the fact that every pair of distinct
++        involutions of Dp generate the whole subgroup, it also follows that AGL(1, Fp ) ∼  = Aut(Dp ).
++                                (2)
++    (3) Clearly, if (r, s) ∈ IG is of p-affine (respectively, p-minimal) type, then so is every conju-
++        gate of (r, s).
+   We are ready to introduce now the auxiliary notions of a weakly sharply 2-transitive group of
+ characteristic p and of one such group of (q1 , q2 )-almost bounded exponent.
+ Definition 2.9. Let G be a group, p be an odd prime number such that p ≡ 3 (mod 4), q1 and
+@@ -326,12 +327,12 @@
+
+              of E centralizes an involution).
+ Remark 2.10. Notice that a weakly sharply 2-transitive group of characteristic p of (q1 , q2 )-almost
+ bounded exponent for odd integers q1 and q2 contains no subgroup of order 4: indeed, Cq1 and
++
++                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                                 7
++
++
+ C2q2 clearly contain no subgroups of order 4. Meanwhile, the order of AGL(1, Fp ) is p(p − 1), and
+ since p ≡ 3 (mod 4), this is an integer not divisible by 4.
+-
+-                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                                 7
+-
+-
+ Remark 2.11. The following observation justifies the terminology: if G is weakly sharply 2-
+                                                                                               (2)
+ transitive of characteristic p, has no translation of infinite order and every pair (r, s) ∈ IG is
+@@ -381,13 +382,13 @@
+
+ the introduction of class WST ′ (p, q1 , q2 ). As was stated before, in Section 3 we will outline the
+ construction of non-split sharply 2-transitive groups of characteristic p of bounded exponent by a
+ sequence of HNN-extensions that will ensure that every pair of distinct involutions is conjugate.
++
++8                                            MARCO AMELIO
++
++
+ More concretely, we will take HNN-extensions of groups in class WST (p, q1 , q2 ) conjugating pairs
+ of distinct involutions that were not conjugate in the base group. However, in doing this, we
+ will create elements of infinite order, some of which will be translations. In particular, a pair of
+-
+-8                                            MARCO AMELIO
+-
+-
+ involution whose product gives such translation cannot possibly be conjugate to a pair generating
+ a finite dihedral group, and such a group will clearly not be of bounded exponent. Therefore, we
+ need to take a ‘controlled quotient’ in order to come back to WST (p, q1 , q2 ). Geometric small
+@@ -422,24 +423,24 @@
+
+ Let (r, s) and (r′ , s′ ) be pairs in IG with (r, s) of p-affine type and (r′ , s′ ) of p-minimal type (so
+ that both Dr,s and Dr′ ,s′ are isomorphic to Dp ). Then the following holds.
+     (1) Let G∗ = G ∗ Z and X the Bass-Serre tree of the splitting of G∗ as an HNN-extension of
+-         G with trivial associated subgroups. Then, the pair (G∗ , X) is in class WST ′ (p, q1 , q2 ).
++        G with trivial associated subgroups. Then, the pair (G∗ , X) is in class WST ′ (p, q1 , q2 ).
+     (2) Let G∗ be the following HNN-extension:
+                                      ⟨G, t | t−1 rt = r′ , t−1 st = s′ ⟩,
+-       (an HNN-extension of G with associated subgroups Dr,s and Dr′ ,s′ ). Let X be the Bass-
+-       Serre tree of this splitting of G∗ . Then, the pair (G∗ , X) is in class WST ′ (p, q1 , q2 ).
++         (an HNN-extension of G with associated subgroups Dr,s and Dr′ ,s′ ). Let X be the Bass-
++         Serre tree of this splitting of G∗ . Then, the pair (G∗ , X) is in class WST ′ (p, q1 , q2 ).
+ Moreover, the group G∗ has the following additional properties.
+-  (1’) In case (1), G∗ contains a translation of infinite order and translation length at most 2.
+-  (2’) In case (1), G∗ contains an element of infinite order that is not a translation, that has
+-       translation length 1 and that centralizes no involution.
+-  (3’) In case (2), if |Dr,s ∩ Dr′ ,s′ | = 2, then G∗ contains an element of infinite order (which is
+-       not a translation), that has translation length 1 and that centralizes an involution.
++    (1’) In case (1), G∗ contains a translation of infinite order and translation length at most 2.
++    (2’) In case (1), G∗ contains an element of infinite order that is not a translation, that has
++         translation length 1 and that centralizes no involution.
++    (3’) In case (2), if |Dr,s ∩ Dr′ ,s′ | = 2, then G∗ contains an element of infinite order (which is
++         not a translation), that has translation length 1 and that centralizes an involution.
++
++                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                             9
++
++
+    We will show in Subsection 3.1 that at some point of the inductive process carried out to
+ construct non-split sharply 2-transitive groups of bounded exponent, we will indeed find ourselves
+ taking HNN-extensions of groups satisfying the conditions of Property (3’) of Proposition 3.1.
+-
+-                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                             9
+-
+-
+    The next proposition shows how to ‘come back’ to class WST (p, q1 , q2 ) by taking a quotient of
+ a group in WST ′ (p, q1 , q2 ) (for example, after applying Proposition 3.1).
+ Proposition 3.2. Let (G, X) be a pair in class WST ′ (p, q1 , q2 ) for some prime p and odd numbers
+@@ -488,13 +489,13 @@
+
+ as an HNN-extension of G with trivial associated subgroups. Since G is in class WST (p, q1 , q2 ),
+ Proposition 3.1 gives that the pair (G∗ , X) is in class WST ′ (p, q1 , q2 ). Furthermore, G∗ contains
+ translations of infinite order and of translation length at most 2, and an element of infinite order
++
++10                                                 MARCO AMELIO
++
++
+ that is not a translation, that has translation length 1 and that centralizes no involution. Write
+ G00 = Ḡ∗ , where Ḡ∗ is the group obtained from the pair (G∗ , X) by applying Proposition 3.2. In
+ particular, Consequence (2) of this proposition implies that, since (the isomorphic image in G∗ of)
+-
+-10                                                 MARCO AMELIO
+-
+-
+ G is elliptic by its action on X, G embeds into G00 . Furthermore, Consequence (5) gives that G00
+ contains non-commuting translations, and Consequence (6) implies that G00 contains an element g
+ that is not a translation, centralizes no involution and has order q1 .
+@@ -502,48 +503,45 @@
+
+    We now fix a pair of involutions (r, s) ∈ IG0 of p-affine type, and we enumerate all pairs of
+                                                           0
+                    (2)
+-involutions in IG0 as {(r0λ , sλ0 ) : λ < γ}. We will build inductively a sequence of groups Gα                   0 for
++involutions in IG0 as {(r0λ , sλ0 ) : λ < γ}. We will build inductively a sequence of groups Gα                  0 for
+                      0
+-α < γ. For a successor ordinal α + 1, suppose that Gα            0   has   already    been   built,  that this group  is
+-in class WST (p, q1 , q2 ), that G00 embeds in Gα       0 , that g   is  not  a translation     in  this group,  that  g
+-                                   α                              β β
++α < γ. For a successor ordinal α + 1, suppose that Gα           0   has  already     been   built,  that this group  is
++in class WST (p, q1 , q2 ), that G00 embeds in Gα      0 , that g   is  not  a translation     in  this group,  that  g
++                                   α                             β β
+ centralizes no involution of G0 , and that every pair (r0 , s0 ) : β < α is of p-affine type. Consider
+-                                                                       α+1
++                                                                      α+1
+ the pair (r0α , sα
+-                 0 ). If this pair is of p-affine type, we put G0            = Gα 0 . If it is of p-minimal type, we
++                 0 ). If this pair is of p-affine type, we put G0          = Gα  0 . If it is of p-minimal type, we
+ set
+-                                         ∗             −1
+-                                   (Gα           α
+-                                      0 ) = ⟨G0 , t|t     rt = r0α , t−1 st = sα 0 ⟩.
++                                         ∗            −1
++                                   (Gα          α
++                                      0 ) = ⟨G0 , t|t    rt = r0α , t−1 st = sα 0 ⟩.
+ This is a well-defined HNN-extension since both Dr,s and Dr0 ,s0 are isomorphic to Dp . Clearly
+-                                                                             α  α
++                                                                            α  α
+ 
+                           ∗
+-G00 embeds into (Gα                                           α α
++G00 embeds into (Gα                                          α α
+                        0 ) and in this group the pair (r0 , s0 ) is of p-affine type. Moreover, by Lemma
+-                    α ∗                           ′
++                    α ∗                          ′
+ 3.1 the pair ((G0 ) , X) is in class WST (p, q1 , q2 ) (where X is the Bass-Serre tree of the HNN-
+ extension). Thus, Remark 2.18 gives that N(Gα0 )∗ (⟨g⟩) is elliptic, and therefore g is not a translation
+-                                            ∗                                                                       α ∗
+-and centralizes no involution of (Gα     0 ) . Now, by Proposition 3.2, there is a quotient (G0 ) of (G0 )
+-                                                                                                          α ∗
+-                                                                                                                       ∗
+-such that this group is in class WST (p, q1 , q2 ). In addition, since (the isomorphic image in (Gα                 0)
+-                                                                                                                    α ∗
+-of) G00 is elliptic by its action on X, then it embeds into (Gα            ∗
+-                                                                        0 ) . Similarly, the subgroup H of (G0 )
+-isomorphic to AGL(1, Fp ) containing Dr0 ,s0 is finite and therefore elliptic, and thus it embeds into
+-                                                α   α
+-
+-                             α α                                                                      λ λ
+-(Gα   ∗                                                          α ∗
++                                            ∗                                                                      α ∗
++and centralizes no involution of (Gα                                                                     α ∗
++                                         0 ) . Now, by Proposition 3.2, there is a quotient (G0 ) of (G0 )
++                                                                                                                      ∗
++such that this group is in class WST (p, q1 , q2 ). In addition, since (the isomorphic image in (Gα                0)
++      0                                                                α ∗                                         α ∗
++of) G0 is elliptic by its action on X, then it embeds into (G0 ) . Similarly, the subgroup H of (G0 )
++isomorphic to AGL(1, Fp ) containing Dr0α ,sα0 is finite and therefore elliptic, and thus it embeds into
++                             α α                                                                     λ λ
++(Gα   ∗                                                         α ∗
+    0 ) . In particular, (r0 , s0 ) is of p-affine type in (G0 ) , and thus every pair (r0 , s0 ) of distinct
+ involutions is of p-affine type for λ ≤ α. Moreover, Consequence (4) of Proposition 3.2 implies that
+-g is not a translation and centralizes no involution in this group. Set then Gα+1               0     = (Gα  ∗
+-                                                                                                           0) .
++g is not a translation and centralizes no involution in this group. Set then Gα+1              0     = (Gα  ∗
++                                                                                                          0) .
+                                        α
+-                                              S      β
+-   If α is a limit ordinal, we set G0 =            G0 . By Remark 3.3 this group is in class WST (p, q1 , q2 ),
++                                              S β
++   If α is a limit ordinal, we set G0 =           G0 . By Remark 3.3 this group is in class WST (p, q1 , q2 ),
+                                              β<α
+                                                                 β β
+ G00 embeds into Gα  0 and every pair of distinct involutions (r0 , s0 ) for β < α is of p-affine type.
+@@ -561,19 +559,18 @@
+
+                                               (2)
+ G00 : we enumerate the pairs (riβ , sβi ) of IG0 and conjugate pairs of p-minimal type to the pair of
+                                                 i
+-p-affine type (r, s). Assume that at step α + 1 we have built a group Gα    i in class WST (p, q1 , q2 )
+-                                                                                   β β
+-such that Gα                                             0
+-              0 embeds into it (and therefore so does G0 ), such that every pair (ri , si ) is of p-affine
++p-affine type (r, s). Assume that at step α + 1 we have built a group Gα         i in class WST (p, q1 , q2 )
++such that Gα  0 embeds  into it (and therefore    so does G 0
++                                                            0 ), such that every pair (riβ , sβi ) is of p-affine
+            α
+ type in Gi for β < α, and such that g is not a translation and centralizes no involution in this
+ group. If at this step we need to take an HNN-extension, Propositions 3.1 and 3.2 ensure that we
+-can construct a group Gα+1 i   with the same properties as we mentioned for Gα    i and with (r
+-                                                                                                    α α
+-                                                                                                  Si , siλ)
+-                                                                                          0
+-of p-affine type. Finally, when taking unions at the limit steps and when taking Gi+1 =               Gi ,
+-                                                                                                              λ<γ
++can construct a group Gα+1 i    with the same properties as we mentioned for Gα        i and with (r
++                                                                                                           α α
++                                                                                                         Si , siλ)
++                                                                                                 0
++of p-affine type. Finally, when taking unions at the limit steps and when taking Gi+1 =                      Gi ,
++                                                                                                             λ<γ
+ Remark 3.3 ensures that G0i+1 is in class WST (p, q1 , q2 ). Furthermore, G0i (and thus also G00 )
+ embeds into G0i+1 , g is not a translation and centralizes no involution of G0i+1 , and in this group
+                (2)
+@@ -582,20 +579,20 @@
+
+ construction that the cardinality of G0i+1 is the maximum of the cardinality of G and ℵ0 .
+    Notice that the group G∗ has a dihedral subgroup of infinite order containing the involution r
+ (take for example Dr,t−1 rt , where t is the generator of the Z factor of the free product). The image
++
++                 NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                                 11
++
++
+ of this pair in G00 , which we denote by (r, r′ ), is necessarily of p-minimal type by Consequence (3)
+ of Proposition 3.2. Now, the pair (r, r′ ) is guaranteed to be of p-affine type (and thus, conjugate
+ to (r, s)) in G02 , which implies that one of the HNN-extensions considered until this step, in fact,
+-
+-                 NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                                 11
+-
+-
+ satisfied Condition (3’) of Proposition 3.1. Thus, by Consequence (7) of Proposition 3.2 there is
+ some β < γ such that Gβ1 contains an element g ′ contained in a subgroup isomorphic to C2q2 which
+ is not a translation. Then, an argument using normalizers, Consequence (4) of Proposition 3.2
+ (analogous to the one used for g) gives that, throughout all of the induction process, g ′ is contained
+-                  S 0 to C2q2 and is not a translation.
++                     S 0 to C2q2 and is not a translation.
+ in a subgroup isomorphic
+-   Set now G =       Gi . By Remark 3.3 this group is in class WST (p, q1 , q2 ). We claim that this
++   Set now G =         Gi . By Remark 3.3 this group is in class WST (p, q1 , q2 ). We claim that this
+                   i∈N
+                                                                                                      (2)
+ group satisfied the announced properties. In fact, every pair of involutions (r′ , s′ ) ∈ IG is of
+@@ -617,6 +614,7 @@
+
+ a subgroup isomorphic to C2q2 follows directly from the fact that G is in class WST (p, q1 , q2 ).
+ Finally, once again by construction we have that the cardinality of G is the maximum of the
+ cardinality of G and ℵ0 . Thus, G is a group as claimed by Theorem 3.4.                               □
++
+ 3.2. Non-split non-periodic sharply 2-transitive groups with bounded exponent stabi-
+ lizers. In this subsection we will prove Theorem 1.3. For the sake of completeness, we restate it
+ here.
+@@ -639,44 +637,35 @@
+
+ definability and a model of a first-order theory.
+    The key result is the very well-known model-theoretic Compactness theorem. We say that a set
+ of first order sentences Σ (over a language L ) is consistent if it has a model. We say that such
++
++12                                           MARCO AMELIO
++
++
+ a set of sentences is finitely satisfiable if every finite subset of Σ is consistent. The Compactness
+ Theorem says that these two notions actually coincide.
+ Theorem 3.7. Compactness Theorem, (see for example [TZ12, Theorem 2.2.1]). Let Σ be a set
+ of first order sentences. Then, Σ is consistent if and only if it is finitely satisfiable.
+-
+-12                                           MARCO AMELIO
+-
+-
+     We exhibit in Lemmas 3.8 to Lemma 3.11 a series of first-order properties (in the language of
+ groups LGrp = {·, e}, where the inverse function −1 is definable) that will allow us to produce
+ non-periodic groups with the desired properties. The first order sentences defining each of these
+ properties are not explicitly stated, but they can be easily constructed with some elementary
+ first-order logic (the interested reader may check the first chapters of [TZ12]).
+-
+ Lemma 3.8. The property of a group G of being non-split sharply 2-transitive of characteristic p
+ is definable.
+-
+      Call φnssh2tr (p) the first-order sentence provided by Lemma 3.8.
+-
+ Lemma 3.9. The property of a group G of having centralizers of involutions of exponent at most
+ a given positive integer n is definable. Furthermore, it is also definable if we ask the centralizers
+ of involutions to contain an element of a given order n′ .
+-
+      Call φexp(Cinv) (n, n′ ) the first-order sentence provided by Lemma 3.9.
+-
+ Lemma 3.10. The property of a group G of having an element of order larger than a given n ∈ N
+ is definable. Moreover, if we add the extra condition that the element centralizes no involution, it
+ is still a first-order property.
+-
+      Call φ′exp (n) and φexp (n) the first and second first-order sentences provided by Lemma 3.10.
+-
+ Lemma 3.11. The following property of a group G is definable: there is an element g ∈ G that is
+ not a translation, centralizes no involution and if it has order larger than a given positive integer
+ n, then its order is at least another given integer n′ > n.
+-
+      Call φexp ninv (n, n′ ) the first-order sentence provided by Lemma 3.11.
+      We are now ready to prove Theorem 3.5.
+-
+ Proof of Theorem 3.5. We denote by Σ′ (p, q2 ) the set of first-order sentences built as follows. First,
+ it contains the axioms for groups. It also contains the sentences φnssh2tr (p) and φexp(Cinv) (p(p −
+ 1)q2 , q2 ). Notice that any group satisfying this set of sentences will be non-split sharply 2-transitive
+@@ -699,11 +688,12 @@
+
+ characteristic p, with centralizers of involutions of exponent at most p(p − 1)q2 and containing
+ an element of order q2 centralizing an involution. By construction, since this group contains
+ φexp ninv (p(p − 1), q1 ) for all positive integers q1 , then any element not centralizing an involution
++
++                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                              13
++
++
+ or contained in a subgroup embedding into AGL(1, Fp ) has infinite order. Since this group also
+ satisfies the sentence φexp (p(p − 1)), one such element of G exists, and thus G is non-periodic. □
+-
+-                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                              13
+-
+ 
+                       4. Hyperbolic metric spaces and group actions
+    In this section, we recall some concepts from metric geometry. We begin with a brief overview on
+@@ -711,11 +701,10 @@
+
+ Chapter 2]). In Subsection 4.2 we recall some properties of Gromov-hyperbolic spaces, and in
+ Subsection 4.3 we study the actions by isometries of groups on these spaces. Finally, in Section 4.4
+ we study some invariants of a group action on a hyperbolic space, some of them appearing in
+-[Cou16, Section 3.5], and some other newly defined in this article. We closely follow the exposition
+-by Coulon in [Cou16, Sections 2 and 3].
++[Cou16b, Section 3.5], and some other newly defined in this article. We closely follow the exposition
++by Coulon in [Cou16b, Sections 2 and 3].
+    For a metric space X and two points x and x′ of X, we will denote by dX (x, x′ ) (or eventually
+ just d(x, x′ ) if the metric space is clear from the context) the distance between x and x′ .
+-
+ 4.1. Length metric spaces and quasi-geodesics. For this subsection fix a metric space (X, d).
+ By a path in X we mean a continuous map γ : I −→ X, where I ⊆ R is an interval (possibly
+ consisting of a single point).
+@@ -728,7 +717,7 @@
+
+                                     Σ(Y ) =         d(γ(yi−1 ), γ(yi )).
+                                               i=1
+ 
+-     • The length Ld (γ) of γ with respect to d is
++      • The length Ld (γ) of γ with respect to d is
+                            Ld (γ) = sup{Σ(Y ) : Y is a partition of [a, b]}.
+ Definition 4.2. Let (X, d) be connected by rectifiable paths. The intrinsic metric dℓ on X is
+                     dℓ (x, y) = inf{Ld (γ) : γ : [a, b] −→ X, γ(a) = x, γ(b) = y}.
+@@ -739,8 +728,8 @@
+
+   We now recall the concepts of a quasi-isometric embedding and of a quasi-geodesic.
+ Definition 4.3. Let X1 and X2 be two metric spaces, ℓ, L ≥ 0 and k ≥ 1, f : X1 −→ X2 a map.
+      • The map f is a (k, ℓ)-quasi-isometric embedding if for every x, y ∈ X1 we have:
+-                     1
+-                       dX (f (x), f (y)) − ℓ ≤ dX1 (x, y) ≤ kdX2 (f (x), f (y)) + ℓ.
++                      1
++                        dX (f (x), f (y)) − ℓ ≤ dX1 (x, y) ≤ kdX2 (f (x), f (y)) + ℓ.
+                      k 2
+      • If it also holds that for every x2 ∈ X2 there is some x1 ∈ X1 such that dX2 (f (x1 ), x2 ) ≤ ℓ,
+        then f is a (k, ℓ)-quasi-isometry.
+@@ -825,7 +814,7 @@
+
+ 
+ 4.2.1. Quasi-convex and strongly quasi-convex subsets. We now define the concepts of a quasi-
+ convex subset of a metric space and of a strongly quasi-convex subset of a hyperbolic length space.
+-For a more comprehensive overview, see [Cou16, Subsection 2.3].
++For a more comprehensive overview, see [Cou16b, Subsection 2.3].
+    For a subset Y of a metric space X, we write Y α (respectively, Y +α ) for the open (respectively,
+ closed) α-neighbourhood of Y .
+ Definition 4.13. Let X be a metric space, α ≥ 0. A subset Y of X is α-quasi-convex if for every
+@@ -891,7 +880,7 @@
+
+    For a group G acting by isometries on a hyperbolic length space X, we denote by ∂G the set of
+ accumulation points of G · x in ∂X (note again that this definition does not depend on the choice of
+ x). Then either one (and hence every) orbit of G is bounded or ∂G is non-empty (see for example
+-[Cou16, Proposition 3.5]).
++[Cou16b, Proposition 3.5]).
+    Recall that if g is an isometry of X, then g is of one of the following types:
+       • elliptic, i.e. ∂⟨g⟩ is empty,
+       • parabolic, i.e. ∂⟨g⟩ has exactly one element, or
+@@ -901,8 +890,8 @@
+
+ Lemma 4.23. [CDP06, Chapitre 10, Proposition 6.6] The points g −∞ and g +∞ are the only points
+ of ∂X fixed by g.
+      Conversely, we have the following well-known lemma.
+-Lemma 4.24. [Cou16, Proposition 3.6] If ∂G has at least two points, then G contains a loxodromic
+-isometry.
++Lemma 4.24. [Cou16b, Proposition 3.6] If ∂G has at least two points, then G contains a loxo-
++dromic isometry.
+ 
+                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                         17
+ 
+@@ -942,11 +931,11 @@
+
+    We now introduce the concept of an l-nerve of an isometry g. It can be thought of as a ‘nice’
+ g-invariant bi-infinite quasi-geodesic that can be used to simplify some arguments (see for example
+ the proof of Proposition 4.52).
+-Definition 4.30. (see [Cou16, Definition 3.3]) Let g be an isometry of X and l ≥ 0. We say that
++Definition 4.30. (see [Cou16b, Definition 3.3]) Let g be an isometry of X and l ≥ 0. We say that
+ a path γ : R −→ X is an l-nerve of g if there is some number T such that [g] ≤ T ≤ [g] + l, γ is a
+ T -local (1, l)-quasi-geodesic and for every t ∈ R we have that γ(t + T ) = g · γ(t). The parameter
+ T is called the fundamental length of γ.
+-  We collect some facts about l-nerves of an isometry that appeared in [Cou16].
++  We collect some facts about l-nerves of an isometry that appeared in [Cou16b].
+ Lemma 4.31. Let g be an isometry of X. Then, for every l > 0, there exists an l-nerve of g.
+ Moreover, if [g] > LS δ and l ≤ 105 δ, then an l-nerve γ is (l + 8δ)-quasi-convex. Furthermore, γ
+ joins the accumulation points of ⟨g⟩ at ∂X.
+@@ -958,7 +947,7 @@
+
+ 
+ 
+    The next result relates the axis and the cylinder of a loxodromic isometry (see [Cou14, Lemmas
+-2.32 and 2.33] and [Cou16, Lemma 3.13]).
++2.32 and 2.33] and [Cou16b, Lemma 3.13]).
+ Lemma 4.33. Let g be a loxodromic isometry of X, Ag the axis of g and Yg the cylinder of g.
+      (1) Let Y be a g-invariant α-quasi-convex subset of X. Then, Yg is contained in the (α + 42δ)-
+          neighbourhood of Y . In particular, Yg ⊆ A+52δ
+@@ -1003,12 +992,12 @@
+
+ though this result is stated for geodesic spaces, this also holds for length spaces (see [Cou21,
+ Proposition 5.6]).
+ 
+-                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                         19
+-
+-
+-   The next two lemmas are the structural properties of an acylindrical action that will be the most
+-relevant in the proof of our main result. Lemma 4.40 is stated in [Cou16] for the most general case
+-of a WPD action.
++                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF BOUNDED EXPONENT                            19
++
++
++  The next two lemmas are the structural properties of an acylindrical action that will be the
++most relevant in the proof of our main result. Lemma 4.40 is stated in [Cou16b] for the most
++general case of a WPD action.
+ Lemma 4.39. [Osi16, Theorem 1.1] Let G be a group acting acylindrically by isometries on a
+ hyperbolic metric space. Then G has no parabolic subgroup.
+ Lemma 4.40. Let G be a group acting acylindrically on a hyperbolic length space X. Then, every
+@@ -1025,15 +1014,15 @@
+
+ among the loxodromic elements of MG (⟨h⟩)).
+    The next lemma relates the cylinder of a loxodromic isometry with the characteristic subset of
+ finite subgroups normalized by this element.
+-Lemma 4.41. [Cou16, Lemma 3.33] Let G be a group with a WPD action by isometries on a
++Lemma 4.41. [Cou16b, Lemma 3.33] Let G be a group with a WPD action by isometries on a
+ hyperbolic length space X. Let g be a loxodromic element of G and H a subgroup fixing the set
+ {g ±∞ } pointwise. Let F be the maximal normal finite subgroup of H. Then, the cylinder Yg is
+ contained in the 51δ-neighbourhood of the characteristic subset CF .
+ 4.4. Invariants of the group action. Fix now a group G acting acylindrically on a δ-hyperbolic
+ space X. In order to control the order of the torsion we are imposing in the quotients that we can
+-obtain with the small cancellation results in Section 5.2, we need to control certain invariants of
+-the action of the group in our hyperbolic space. The first of them, rinj (Q, X), already appeared in
+-the small cancellation assumptions in [Cou16], [Cou21] and [AAT23]. For the sake of completeness,
++obtain with the small cancellation results in Section 5.2, we need to control certain invariants of the
++action of the group in our hyperbolic space. The first of them, rinj (Q, X), already appeared in the
++small cancellation assumptions in [Cou16b], [Cou21] and [AAT23]. For the sake of completeness,
+ we will reintroduce it. The other invariants, τ (G, X) and Ω(G, X), are modifications of ν(G, X)
+ and A(G, X) (respectively) from the aforementioned papers designed to deal with even torsion,
+ under the additional assumption that the even order elements of the group are in some sense ‘mild’,
+@@ -1044,7 +1033,7 @@
+
+ Definition 4.43. The invariant ν(G, X) (or simply ν) is the smallest positive integer m satisfying
+ the following property: let g and h be two isometries of G with h loxodromic. If g, h−1 gh,...,
+ h−ν ghν generate an elliptic subgroup, then g and h generate an elementary subgroup of G.
+-   The proof of Lemma 6.12 in [Cou16] yields the following bound for ν(G, X) for acylindrical
++   The proof of Lemma 6.12 in [Cou16b] yields the following bound for ν(G, X) for acylindrical
+ actions with positive injectivity radius.
+ Lemma 4.44. Assume the action of G on X is acylindrical and with positive injectivity radius.
+ Call L and M the parameters in the definition of an acylindrical action (Definition 4.37) corre-
+@@ -1090,7 +1079,7 @@
+
+ of notation, we will now introduce a new parameter, τ (G, X), which will be key to control Ω(G, X)
+ (a modified version of the parameter A(G, X)).
+ Definition 4.49. The parameter τ is defined as τ (G, X) = max{ν(G, X), 3}.
+-Proposition 4.50. (Compare [Cou16, Proposition 3.41]) Let G be a group acting acylindrically
++Proposition 4.50. (Compare [Cou16b, Proposition 3.41]) Let G be a group acting acylindrically
+ on a hyperbolic space X. Suppose that the action is tame and that ν(G, X) is finite. Let g and h be
+ two elements of G with h loxodromic and let m ≥ τ be an integer such that g, h−1 gh, . . . , h−m ghm
+ generate an elementary subgroup of G. Then, g and h generate an elementary subgroup of G.
+@@ -1129,7 +1118,7 @@
+
+                                              (g0 ,...,gτ )∈A′
+ 
+    The next two results are an adaptation to our context of Proposition 3.44 and Corollary 3.45
+-(respectively) of [Cou16]. The statements and the proofs are almost identical, modulo putting
++(respectively) of [Cou16b]. The statements and the proofs are almost identical, modulo putting
+ τ in place of ν and Ω(G, X) in place of A(G, X) when appropriate. However, for the sake of
+ completeness, we include proofs for both results.
+ Proposition 4.52. Let g and h be two elements of G generating a non-elementary subgroup.
+@@ -1234,8 +1223,8 @@
+
+ 
+                                    5. Small cancellation theory
+     The goal of this section is to introduce, adapt and redevelop some of the small cancellation
+-methods from [Cou16] and [Cou21]. As a remainder, the key difference between the three settings
+-is in the approach to control even torsion in the group under consideration. In [Cou16], the groups
++methods from [Cou16b] and [Cou21]. As a remainder, the key difference between the three settings
++is in the approach to control even torsion in the group under consideration. In [Cou16b], the groups
+ are assumed to contain no elements of even order, and the goal is to obtain odd order periodic
+ quotients of these groups. Meanwhile, in [Cou21], the situation is quite the opposite: the goal is to
+ obtain even order periodic exponents of groups (with the largest power of 2 dviding the exponent
+@@ -1289,12 +1278,12 @@
+
+    Since the hyperbolic length space X embeds into the cone-off Ẋ, we will identify it with its image
+ under this embedding. Notice, however, that this embedding will not be, in general, isometric (or
+ even quasi-isometric). The cone-off is naturally endowed with a metric induced by the length
+-structure on Ẋ induced by the length structures on X and Z(Y ) for all Y ∈ Y (see [Cou16, Section
+-4.2]).
++structure on Ẋ induced by the length structures on X and Z(Y ) for all Y ∈ Y (see [Cou16b,
++Section 4.2]).
+    The following lemma gives conditions under which the cone-off is hyperbolic, with certain control
+ over the hyperbolicity constant. For this purpose, we introduce a parameter that controls the
+ overlap between the elements of Y. We write
+-                                               diam Y1+5δ ∩ Y2+5δ .
++                                              diam Y1+5δ ∩ Y2+5δ .
+                                                                    
+                              ∆(Y) = sup
+                                         Y1 ̸=Y2 ∈Y
+@@ -1313,15 +1302,15 @@
+
+                   cosh(µ(t)) = cosh2 (ρ) − sinh2 (ρ)cos min {π,            }
+                                                                    sinh(ρ)
+ for all t ≥ 0. The map µ has the following properties that will be used later.
+-Lemma 5.4. [Cou16, Proposition 4.2] The map µ is continuous, concave (down) and non-decreasing.
+-Furthermore, the following properties hold.
+-                                                       
+-                                      1            1
+-     • For all t ≥ 0, we have: t −         1+              t3 ≤ µ(t) ≤ t, and
+-                                      24       sinh2 (ρ)      
+-                                                          µ(t)
+-     • for all t ∈ [0, π sinh(ρ)], we have: t ≤ π sinh           .
+-                                                            2
++Lemma 5.4. [Cou16b, Proposition 4.2] The map µ is continuous, concave (down) and non-
++decreasing. Furthermore, the following properties hold.
++                                                        
++                                       1            1
++      • For all t ≥ 0, we have: t −         1+              t3 ≤ µ(t) ≤ t, and
++                                       24       sinh2 (ρ)      
++                                                           µ(t)
++      • for all t ∈ [0, π sinh(ρ)], we have: t ≤ π sinh           .
++                                                             2
+ Lemma 5.5. [Cou14, Lemma 5.8] For every x, x′ ∈ X we have:
+                                 µ(dX (x, x′ )) ≤ dẊ (x, x′ ) ≤ dX (x, x′ ).
+ Lemma 5.6. [Cou14, Lemma 5.7] Let v be the apex of a cone Z(Y ) for some Y ∈ Y. Then,
+@@ -1338,7 +1327,7 @@
+
+ of G on the cone-off as follows. Let Y ∈ Y and x = (y, r) be a point on the cone Z(Y ). For g ∈ G
+ we define g · x = g · (y, r) = (g · y, r) ∈ Z(g · Y ). It follows from the definition of the metric of Ẋ
+ that this action is an isometry on Ẋ.
+-   The next result uses techniques from [Cou16, Proposition 4.10] for WPD actions on hyperbolic
++   The next result uses techniques from [Cou16b, Proposition 4.10] for WPD actions on hyperbolic
+ length spaces, and from [DGO17, Proposition 5.40] for acylindrical actions on hyperbolic geodesic
+ spaces.
+ Lemma 5.7. If the action of G on X is acylindrical, then so is the induced action on Ẋ.
+@@ -1360,7 +1349,7 @@
+
+                                    dX (b, g · b) ≤ π sinh(300δ̇),
+ so the number of elements g satisfying this property is, indeed, at most M ′ .                        □
+ 5.2. The small cancellation theorem. In this subsection, we will state a small cancellation
+-theorem, following closely the expositions in [Cou16] and [AAT23] for a WPD action of a group
++theorem, following closely the expositions in [Cou16b] and [AAT23] for a WPD action of a group
+ without 2-torsion, and in [Cou21] for the more general setting of a gentle action. Throughout this
+ section, fix a group G with a non-elementary acylindrical action on a δ-hyperbolic length space
+ X, and fix a parameter ρ ∈ R (to be thought of as a very large distance). Consider a family Q of
+@@ -1382,7 +1371,7 @@
+
+ 
+ 
+    We now set the space X    b = Ẋ/K. This will be a metric space on which G     b naturally acts by
+-isometries (see [Cou16, Section 5.1]). We write ζ : Ẋ −→ X for the projection map and v(Q) for
++isometries (see [Cou16b, Section 5.1]). We write ζ : Ẋ −→ X for the projection map and v(Q) for
+                                                                b
+ the subset of Ẋ consisting of the apices of the cones Z(Y ) for (H, Y ) ∈ Q. Let vb(Q) denote its
+           b We will also call the elements of vb(Q) apices. For an element g ∈ G (respectively,
+@@ -1510,7 +1499,7 @@
+
+ and that is central in Stab(bv )). One such element cannot exist if n is odd.
+    In view of the previous remark, some of the structural results from [Cou21] do not directly
+ adapt to the setting of this article. Throughout the rest of the present section, we will retrieve
+-results from [Cou16] that are needed later in this article, providing no proof here whenever the
++results from [Cou16b] that are needed later in this article, providing no proof here whenever the
+ proof given in that article works without any further change in our setting. We will also prove
+ different versions of the results from [Cou21] whenever necessary, as well as new results specific to
+ our setting.
+@@ -1901,7 +1890,7 @@
+
+    We now start the study of the invariants of the action of G
+                                                              b on X.
+                                                                   b
+-Proposition 5.35. (Compare [Cou16, Proposition 5.27]) Suppose that the action of G on X is
++Proposition 5.35. (Compare [Cou16b, Proposition 5.27]) Suppose that the action of G on X is
+ tame. Then, the invariant ν(G,
+                             b X)
+                                b is bounded from above by max{ν(G, X), 3}.
+@@ -2045,12 +2034,12 @@
+
+                                                                        b X)
+                                                                           b is at most τ (G, X).
+ 
+-  The next result appears as Proposition 5.29 in [Cou16]. As it was explained before, the small
++  The next result appears as Proposition 5.29 in [Cou16b]. As it was explained before, the small
+ cancellation assumptions in that context are not exactly the same as in this article. However, the
+ proof of that result works verbatim for our case.
+ 
+-Proposition 5.38. [Cou16, Proposition 5.29] Let m be an integer, gb0 , . . . gbm be elements of G
+-                                                                                                b of
++Proposition 5.38. [Cou16b, Proposition 5.29] Let m be an integer, gb0 , . . . gbm be elements of G
++                                                                                                 b of
+ translation length at most LS δ.
+                               b Then one of the following holds:
+     (1) There is vb ∈ vb(Q) such that gbi ∈ Stab(bv ) for every i ∈ {0, . . . , m}.
+@@ -2063,9 +2052,9 @@
+
+                                                                                              b
+ 
+    The next corollary allows us to control the parameter Ω(G,
+-                                                           b X)
++                                                            b X)
+                                                               b in terms of Ω(G, X) and τ (G, X).
+-It is a direct adaptation of Corollary 5.30 in [Cou16], modulo replacing A by Ω and ν by τ when
++It is a direct adaptation of Corollary 5.30 in [Cou16b], modulo replacing A by Ω and ν by τ when
+ appropriate. For the sake of completeness, we include the proof.
+ 
+ Corollary 5.39. The invariant Ω(G,
+@@ -2105,7 +2094,7 @@
+
+    Definition 5.40, Lemma 5.41 and Corollary 5.42 appear in [AAT23] as Definition 4.22, Lemma
+ 4.23 and Corollary 4.24 (for the more general case of a WPD action, here the reader may replace
+ ‘non-elliptic’ for ‘loxodromic’). We include the statements here. The proofs of the results work
+-exactly as in the reference (thus, in particular, as in Proposition 5.31 of [Cou16]).
++exactly as in the reference (thus, in particular, as in Proposition 5.31 of [Cou16b]).
+ Definition 5.40. Let Q′ be a subset of G and Q     b ′ its image in G.
+                                                                     b We say that Q′ is stable with
+                                                                                          b ′ . Suppose
+@@ -2117,7 +2106,7 @@
+
+ loxodromic elements of G. However, the more general results from Section 6 may be useful when
+ trying to impose torsion only on a reduced subset of elements of G, as is in the case of [AAT23]
+ (where the family Q′ is taken to be the loxodromic translations of G).
+-Lemma 5.41. (Compare [Cou16, Proposition 5.31]) Let Q′ be a stable subset of G. Denote by l
++Lemma 5.41. (Compare [Cou16b, Proposition 5.31]) Let Q′ be a stable subset of G. Denote by l
+ the infimum over the asymptotic translation length in X of loxodromic elements of Q′ that do not
+                                                                         b ′ . If every preimage of gb in
+ belong to Stab(Y ) for (H, Y ) ∈ Q. Let gb be a non-elliptic element of Q
+@@ -2219,11 +2208,11 @@
+
+ Proposition 6.1 at every step of the construction. For this purpose, we need control over the
+ elliptic subgroups normalized by loxodromic elements, both in the group G and in the quotient G.
+                                                                                                b
+-In the setting of [Cou16] and [Cou21], this is accomplished by the parameters e(G, X) and µ(E)
++In the setting of [Cou16b] and [Cou21], this is accomplished by the parameters e(G, X) and µ(E)
+ (plus an assumption on the structure of dihedral pairs) respectively. In our case, Assumption (1)
+ will play this role.
+ 
+-Proof. The proof closely follows the proofs of Proposition 6.1 in [Cou16] and of Proposition 4.25
++Proof. The proof closely follows the proofs of Proposition 6.1 in [Cou16b] and of Proposition 4.25
+ in [AAT23]. We include some details of the proof, focusing on the construction of the space Xb for
+ later reference, and we will refer to the aforementioned proofs whenever parts of this proof work
+ exactly as in those cases.
+@@ -2390,7 +2379,7 @@
+
+ set of all loxodromic elements of G, which will indeed be a strongly stable family. However, this
+ result can be useful when trying to impose torsion only on a certain subset of elements of G, as is
+ the case in [AAT23]. Thus, we will keep this more general version.
+-Theorem 6.7. (Compare [Cou16, Theorem 6.9] and [AAT23, Theorem 4.28]) Let X be a δ-
++Theorem 6.7. (Compare [Cou16b, Theorem 6.9] and [AAT23, Theorem 4.28]) Let X be a δ-
+ hyperbolic length space, and let G be a group acting acylindrically and non-elementarily by isome-
+ tries on X. We suppose that the action is tame. Let Q be a conjugation invariant strongly stable
+ family of elements of G. We assume, in addition, that the invariants τ (G, X) and Ω(G, X) are
+@@ -2410,7 +2399,7 @@
+
+ Gi by adding new relations of the form hnh for h a loxodromic element of the image of Q in Gi
+ that is primitive in Gi and nh ∈ N (as prescribed by Proposition 6.1). The group Ḡ will be the
+ limit of this sequence.
+-     Even though most of the proof is similar to those of Theorem 6.9 in [Cou16] and Theorem 4.28
++     Even though most of the proof is similar to those of Theorem 6.9 in [Cou16b] and Theorem 4.28
+ in [AAT23], we include a proof here for the sake of completeness.
+      Keeping the same notation for the constants LS , ρ0 and δ1 as in Proposition 6.1, write τ0 =
+ τ (G, X). Let G0 = G, Q0 = Q and X0 = λ′ X where λ′ is the greatest real number such that
+@@ -3275,69 +3264,87 @@
+
+              of odd positive characteristic. Accepted for publication in International Mathematics
+              Research Notices. 2023. arXiv: 2312.16992 [math.GR].
+ 
+-                                         REFERENCES                                          55
+-
+-
+-[AG22]  Simon André and Vincent Guirardel. “Finitely generated simple sharply 2-transitive
+-        groups”. In: (2022). arXiv: 2212.06020 [math.GR].
+-[AT23]  Simon André and Katrin Tent. “Simple sharply 2-transitive groups”. In: Trans. Amer.
+-        Math. Soc. 376.6 (2023), pp. 3965–3993. issn: 0002-9947,1088-6850. doi: 10 . 1090 /
+-        tran/8846. url: https://doi.org/10.1090/tran/8846.
+-[BBI22] Dmitri Burago, Yuri Burago, and Sergei Ivanov. A course in metric geometry. Vol. 33.
+-        American Mathematical Society, 2022.
+-[BH13]  Martin R Bridson and André Haefliger. Metric spaces of non-positive curvature. Vol. 319.
+-        Springer Science & Business Media, 2013.
++                                          REFERENCES                                            55
++
++
++[AD08]   Goulnara Arzhantseva and Thomas Delzant. “Examples of random groups”. In: preprint
++         2011 (2008).
++[Adi79]  S. I. Adian. The Burnside problem and identities in groups. Translated from the Russian
++         by John Lennox and James Wiegold. English. Vol. 95. Ergeb. Math. Grenzgeb. Springer-
++         Verlag, Berlin, 1979.
++[AG22]   Simon André and Vincent Guirardel. “Finitely generated simple sharply 2-transitive
++         groups”. In: (2022). arXiv: 2212.06020 [math.GR].
++[ART23] Agatha Atkarskaya, Eliyahu Rips, and Katrin Tent. The Burnside problem for odd
++         exponents. 2023. arXiv: 2303.15997 [math.GR].
++[AT23]   Simon André and Katrin Tent. “Simple sharply 2-transitive groups”. In: Trans. Amer.
++         Math. Soc. 376.6 (2023), pp. 3965–3993. issn: 0002-9947,1088-6850. doi: 10 . 1090 /
++         tran/8846. url: https://doi.org/10.1090/tran/8846.
++[BBI22]  Dmitri Burago, Yuri Burago, and Sergei Ivanov. A course in metric geometry. Vol. 33.
++         American Mathematical Society, 2022.
++[BH13]   Martin R Bridson and André Haefliger. Metric spaces of non-positive curvature. Vol. 319.
++         Springer Science & Business Media, 2013.
+ [Bow08] Brian H Bowditch. “Tight geodesics in the curve complex”. In: Inventiones mathematicae
+-        171.2 (2008), pp. 281–300.
+-[Bur02] William Burnside. “On an unsettled question in the theory of discontinuous groups”.
+-        In: Quart. J. Pure and Appl. Math. 33 (1902), pp. 230–238.
++         171.2 (2008), pp. 281–300.
++[Bur02]  William Burnside. “On an unsettled question in the theory of discontinuous groups”.
++         In: Quart. J. Pure and Appl. Math. 33 (1902), pp. 230–238.
+ [CDP06] Michel Coornaert, Thomas Delzant, and Athanase Papadopoulos. Géométrie et théorie
+-        des groupes: les groupes hyperboliques de Gromov. Vol. 1441. Springer, 2006.
+-[Cou11] Rémi Coulon. “Asphericity and small cancellation theory for rotation families of groups”.
+-        In: Groups, Geometry, and Dynamics 5.4 (2011), pp. 729–765.
+-[Cou14] Rémi Coulon. “On the geometry of Burnside quotients of torsion free hyperbolic groups”.
+-        In: International Journal of Algebra and Computation 24.03 (2014), pp. 251–345.
+-[Cou16] Rémi B Coulon. “Partial periodic quotients of groups acting on a hyperbolic space”. In:
+-        Annales de l’Institut Fourier. Vol. 66. 5. 2016, pp. 1773–1857.
+-[Cou21] Rémi Coulon. Infinite periodic groups of even exponents. 2021. arXiv: 1810 . 08372
+-        [math.GR].
+-[DG08]  Thomas Delzant and Misha Gromov. “Mesoscopic curvature and very small cancellation
+-        theory. (Courbure mésoscopique et théorie de la toute petite simplification.)” French.
+-        In: J. Topol. 1.4 (2008), pp. 804–836. issn: 1753-8416. doi: 10.1112/jtopol/jtn023.
++         des groupes: les groupes hyperboliques de Gromov. Vol. 1441. Springer, 2006.
++[CLC13] Serge Cantat, Stéphane Lamy, and Yves de Cornulier. “Normal subgroups in the Cre-
++         mona group”. English. In: Acta Math. 210.1 (2013), pp. 31–94. issn: 0001-5962. doi:
++         10.1007/s11511-013-0090-1.
++[Cou11]  Rémi Coulon. “Asphericity and small cancellation theory for rotation families of groups”.
++         In: Groups, Geometry, and Dynamics 5.4 (2011), pp. 729–765.
++[Cou14]  Rémi Coulon. “On the geometry of Burnside quotients of torsion free hyperbolic groups”.
++         In: International Journal of Algebra and Computation 24.03 (2014), pp. 251–345.
++[Cou16a] Rémi Coulon. Small cancellation theory: a geometric approach (after F. Dahmani, V.
++         Guirardel, D. Osin, and S. Cantat, S. Lamy). French. Paris: Société Mathématique de
++         France (SMF), 2016, 1–33, ex. isbn: 978-2-85629-836-7.
++[Cou16b] Rémi B Coulon. “Partial periodic quotients of groups acting on a hyperbolic space”. In:
++         Annales de l’Institut Fourier. Vol. 66. 5. 2016, pp. 1773–1857.
++[Cou21]  Rémi Coulon. Infinite periodic groups of even exponents. 2021. arXiv: 1810 . 08372
++         [math.GR].
++[DG08]   Thomas Delzant and Misha Gromov. “Mesoscopic curvature and very small cancellation
++         theory. (Courbure mésoscopique et théorie de la toute petite simplification.)” French.
++         In: J. Topol. 1.4 (2008), pp. 804–836. issn: 1753-8416. doi: 10.1112/jtopol/jtn023.
+ [DGO17] François Dahmani, Vincent Guirardel, and Denis Osin. Hyperbolically embedded sub-
+-        groups and rotating families in groups acting on hyperbolic spaces. Vol. 245. 1156. Amer-
+-        ican Mathematical Society, 2017.
+-[DK18]  Cornelia Druţu and Michael Kapovich. Geometric group theory. Vol. 63. American
+-        Mathematical Soc., 2018.
+-[Gro01] Misha Gromov. Mesoscopic curvature and hyperbolicity. English. Providence, RI: Amer-
+-        ican Mathematical Society (AMS), 2001, pp. 58–69. isbn: 0-8218-2750-2.
+-[HO16]  Michael Hull and Denis Osin. “Transitivity degrees of countable groups and acylindrical
+-        hyperbolicity”. In: Israel Journal of Mathematics 216.1 (2016), pp. 307–353.
+-[Iva94] Sergei V Ivanov. “The free Burnside groups of sufficiently large exponents”. In: Inter-
+-        national Journal of Algebra and Computation 4.01n02 (1994), pp. 1–308.
+-[Jab18] Enrico Jabara. “On sharply 2-transitive groups with point stabilizer of exponent 2 n.
+-        3”. In: Communications in Algebra 46.2 (2018), pp. 544–551.
+-[Jor72] Camille Jordan. “Recherches sur les substitutions”. In: Journal de Mathématiques Pures
+-        et Appliquées 17 (1872), pp. 351–367.
+-[Ker74] William Kerby. On infinite sharply multiply transitive groups. 6. Vandenhoeck & Ruprecht,
+-        1974.
+-[KM14]  EI Khukhro and VD Mazurov. “Unsolved problems in group theory. The Kourovka
+-        notebook”. In: arXiv preprint arXiv:1401.0300 (2014).
+-[Lys96] I. G. Lysenok. “Infinite Burnside groups of even exponent”. English. In: Izv. Math. 60.3
+-        (1996), pp. 453–654. issn: 1064-5632. doi: 10.1070/IM1996v060n03ABEH000077.
+-[May06] Peter Mayr. “Sharply 2-transitive groups with point stabilizer of exponent 3 or 6”. In:
+-        Proceedings of the American Mathematical Society 134.1 (2006), pp. 9–13.
+-[Maz90] VD Mazurov. “2-Transitive permutation groups”. In: Siberian Mathematical Journal
+-        31.4 (1990), pp. 615–617.
+-
+-56                                           REFERENCES
+-
+-
++         groups and rotating families in groups acting on hyperbolic spaces. Vol. 245. 1156. Amer-
++         ican Mathematical Society, 2017.
++[DK18]   Cornelia Druţu and Michael Kapovich. Geometric group theory. Vol. 63. American
++         Mathematical Soc., 2018.
++[Gro01]  Misha Gromov. Mesoscopic curvature and hyperbolicity. English. Providence, RI: Amer-
++         ican Mathematical Society (AMS), 2001, pp. 58–69. isbn: 0-8218-2750-2.
++[HO16]   Michael Hull and Denis Osin. “Transitivity degrees of countable groups and acylindrical
++         hyperbolicity”. In: Israel Journal of Mathematics 216.1 (2016), pp. 307–353.
++[Iva92]  Sergei V. Ivanov. “On the Burnside problem on periodic groups”. English. In: Bull. Am.
++         Math. Soc., New Ser. 27.2 (1992), pp. 257–260. issn: 0273-0979. doi: 10.1090/S0273-
++         0979-1992-00305-1.
++
++56                                          REFERENCES
++
++
++[Iva94]     Sergei V Ivanov. “The free Burnside groups of sufficiently large exponents”. In: Inter-
++            national Journal of Algebra and Computation 4.01n02 (1994), pp. 1–308.
++[Jab18]     Enrico Jabara. “On sharply 2-transitive groups with point stabilizer of exponent 2 n.
++            3”. In: Communications in Algebra 46.2 (2018), pp. 544–551.
++[Jor72]     Camille Jordan. “Recherches sur les substitutions”. In: Journal de Mathématiques Pures
++            et Appliquées 17 (1872), pp. 351–367.
++[Ker74]     William Kerby. On infinite sharply multiply transitive groups. 6. Vandenhoeck & Ruprecht,
++            1974.
++[KM14]      EI Khukhro and VD Mazurov. “Unsolved problems in group theory. The Kourovka
++            notebook”. In: arXiv preprint arXiv:1401.0300 (2014).
++[Lys96]     I. G. Lysenok. “Infinite Burnside groups of even exponent”. English. In: Izv. Math. 60.3
++            (1996), pp. 453–654. issn: 1064-5632. doi: 10.1070/IM1996v060n03ABEH000077.
++[May06]     Peter Mayr. “Sharply 2-transitive groups with point stabilizer of exponent 3 or 6”. In:
++            Proceedings of the American Mathematical Society 134.1 (2006), pp. 9–13.
++[Maz90]     VD Mazurov. “2-Transitive permutation groups”. In: Siberian Mathematical Journal
++            31.4 (1990), pp. 615–617.
+ [NA69]      P. S. Novikov and S. I. Adyan. “On infinite periodic groups. I–III”. English. In: Math.
+             USSR, Izv. 2 (1969), pp. 209–236, 241–480, 665–685. issn: 0025-5726. doi: 10.1070/
+             IM1968v002n01ABEH000637.
+ [Neu40]     Bernhard Hermann Neumann. “On the commutativity of addition”. In: Journal of the
+             London Mathematical Society 1.3 (1940), pp. 203–208.
++[Ols89]     A Yu Olshansky. “Geometriya opredelyayushchikh sootnosheniy v gruppakh [Geometry
++            of defining relations in groups]”. In: M.: Nauka (1989).
+ [Osi16]     Denis Osin. “Acylindrically hyperbolic groups”. In: Transactions of the American Math-
+             ematical Society 368.2 (2016), pp. 851–888.
+ [RST17]     Eliyahu Rips, Yoav Segev, and Katrin Tent. “A sharply 2-transitive group without
+@@ -3367,6 +3374,10 @@
+
+      Marco Amelio
+      Universität Münster
+      Einsteinstraße 62
+-     48149 Münster, Germany.
+-     E-mail address: mamelio@uni-muenster.de
+-
++
++                                    REFERENCES   57
++
++
++48149 Münster, Germany.
++E-mail address: mamelio@uni-muenster.de
++

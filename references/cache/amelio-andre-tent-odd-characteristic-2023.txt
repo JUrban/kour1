@@ -1,0 +1,2119 @@
+                                                NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE
+                                                                   CHARACTERISTIC
+
+                                                                     MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+                                                   Abstract. It is well-known that every sharply 2-transitive group of characteristic 3 splits.
+arXiv:2312.16992v1 [math.GR] 28 Dec 2023
+
+
+
+
+                                                   Here we construct the first examples of non-split sharply 2-transitive groups in odd positive
+                                                   characteristic p, for sufficiently large primes p. Furthermore, we show that any group without
+                                                   2-torsion can be embedded into a non-split sharply 2-transitive group of characteristic p for
+                                                   all sufficiently large primes p, yielding 2ℵ0 many pairwise non-isomorphic countable non-split
+                                                   sharply 2-transitive groups in any sufficiently large characteristic.
+
+
+
+
+                                                                                       1. Introduction
+
+                                              Let n ≥ 1 be an integer, and let G be a group acting on a set X with at least n elements. The
+                                           action is said to be sharply n-transitive if for any two n-tuples of distinct elements (x1 , . . . , xn )
+                                           and (y1 , . . . , yn ) of X n there exists a unique element g ∈ G such that g · xi = yi for 1 ≤ i ≤ n. A
+                                           group G is called sharply n-transitive if there is a set X with at least n elements on which G acts
+                                           sharply n-transitively.
+                                              Clearly every group acts sharply 1-transitively on itself by left multiplication. On the other
+                                           hand, for n ≥ 4, there are only ﬁnitely many sharply n-transitive groups, and moreover these
+                                           groups are necessarily ﬁnite and completely classiﬁed. Indeed, Jordan proved in [Jor72] that the
+                                           only ﬁnite sharply n-transitive groups for n ≥ 4 are the symmetric groups Sn and Sn+1 , the
+                                           alternating group An+2 , and the Mathieu groups M11 and M12 for the cases n = 4 and n = 5
+                                           respectively. Furthermore, Tits proved in [Tit52, Chapitre IV, Théorème I] that there are no
+                                           inﬁnite sharply n-transitive groups for n ≥ 4. Zassenhaus gave a complete classiﬁcation of the
+                                           ﬁnite sharply n-transitive groups for the cases n = 2 and n = 3 in [Zas35a] and [Zas35b]. For
+                                           n = 2 and n = 3 there do exist also inﬁnite sharply n-transitive groups: for a skew-ﬁeld K, the
+                                           aﬃne group AGL(1, K) ∼         = K+ ⋊ K ∗ acts sharply 2-transitively on K, and for any (commutative)
+                                           ﬁeld K, the projective linear group P GL(2, K) acts sharply 3-transitively on the projective line.
+                                           These groups are inﬁnite whenever K is inﬁnite.
+                                              Until recently, it was an open question whether a sharply 2-transitive group G necessarily splits
+                                           in the form A ⋊ H for some non-trivial normal abelian subgroup A (in which case we simply say
+                                           that G is split ). The ﬁrst examples of non-split sharply 2-transitive groups were exhibited by Rips,
+                                           Segev and Tent in [RST17] and by Rips and Tent in [RT19]. Then, the ﬁrst examples of inﬁnite
+                                           simple sharply 2-transitive groups were constructed by André and Tent in [AT23] and by André
+                                           and Guirardel in [AG22] (with additional properties, in particular ﬁnite generation).
+                                              An important feature associated with a sharply 2-transitive group action is its characteristic,
+                                           which we deﬁne as follows. Recall that an element of order 2 in a group is called an involution,
+                                           and a product of two distinct involutions will be called a translation. Let G y X be a sharply 2-
+                                           transitive group action. It is easy to see that G has involutions, and that involutions form a unique
+                                           conjugacy class. Moreover, if involutions have ﬁxed points, the action G y X is G-equivariant
+
+                                              Date: December 29, 2023.
+                                              The first and third authors, and the second author until September 2023, were supported by the German
+                                           Research Foundation (DFG) under Germany’s Excellence Strategy EXC 2044–390685587, Mathematics Münster:
+                                           Dynamics–Geometry–Structure and by CRC 1442 Geometry: Deformations and Rigidity.
+                                                                                                 1
+2                              MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+to the action of G by conjugation on the set of involutions of G, and therefore the translations
+form a conjugacy class. In this case we deﬁne the characteristic of G y X to be the order of
+a translation if this order is ﬁnite (in which case it is necessarily a prime number ≥ 3), or as 0
+in case this order is inﬁnite. If involutions have no ﬁxed points, we say that the action G y X
+has characteristic 2. Thus, sharply 2-transitive group actions in characteristic 2 are fundamentally
+diﬀerent from those in other characteristics (note in particular that the examples in [RST17] show
+that in characteristic 2 the action by conjugation of G on itself need not be 2-transitive on the class
+of involutions). Notice that when K is a ﬁeld, the characteristic of AGL(1, K) y K coincides with
+that of K in the usual sense. We often say that the group G is sharply 2-transitive of characteristic
+p without referring to the underlying action G y X; this is not ambiguous in characteristic 6= 2
+since the underlying action is unique (up to G-equivariant bijection).
+   The examples in [RST17] (in characteristic 2) and in [RT19; AT23; AG22] (in characteristic
+0) show the class of sharply 2-transitive groups to be wild. By a well-known result due to Kerby
+(see [Ker74, Theorem 9.5]) every sharply 2-transitive group in characterstic 3 splits. On the other
+hand, the question of the existence of non-split sharply 2-transitive groups in characteristic p > 3,
+which we address in this paper for any prime p suﬃciently large, had remained completely open
+until now.
+   The main diﬃculty in constructing non-split sharply 2-transitive groups in characteristic p > 3
+comes from the fact that the methods used so far in order to construct non-split sharply 2-transitive
+groups have proceeded through HNN-extensions, which create translations of inﬁnite order. There-
+fore, since all the translations have order p in a sharply 2-transitive group of characteristic p > 2,
+in order to obtain sharply 2-transitive groups in characteristic p, we will have to add new relations
+of the form (ij)p = 1 for distinct involutions i, j. This will be achieved by taking small cancellation
+quotients similar to the quotients used in the solution of the famous Burnside problem about the
+existence of inﬁnite ﬁnitely generated groups of ﬁnite exponent (posed by Burnside in [Bur02]), in
+order to guarantee that any translation has order p. This makes the construction in odd positive
+characteristic considerably more complicated than in characteristic 2 and 0. Moreover, it is worth
+pointing out that the construction of inﬁnite ﬁnitely generated groups of even exponent is noto-
+riously more diﬃcult than the construction of inﬁnite ﬁnitely generated groups of odd exponent,
+due to the presence of involutions. As already observed above, sharply 2-transitive groups contain
+plenty of involutions, and one of the challenges we have to face is to keep these involutions under
+control when taking small cancellation quotients. We then obtain the following result (see Theorem
+2.17 and Corollary 2.18 for stronger versions of this statement, in particular the existence of 2ℵ0
+many pairwise non-isomorphic countable non-split sharply 2-transitive groups in any characteristic
+p ≥ p′ ).
+Theorem 1.1. There exists a prime number p′ such that any group without 2-torsion embeds into
+a non-split sharply 2-transitive group of characteristic p, for every prime number p ≥ p′ .
+    The methods used in this article, based on Coulon’s paper [Cou16b], will necessarily yield a
+very large value for p′ . The existence of non-split sharply 2-transitive groups of characteristic p for
+small values of p ≥ 5 remains an open question and seems to bear similarities to the famous open
+question of the existence of ﬁnitely generated inﬁnite groups of small ﬁnite exponent.
+    As a side-remark we note that being a non-split sharply 2-transitive group of characteristic
+p 6= 2 is expressible by a ﬁrst-order sentence in the language of groups. Hence by the Compactness
+Theorem, we recover the existence of non-split sharply 2-transitive groups of characteristic 0 as a
+consequence of Theorem 1.1.
+
+    Note that a group could a priori be simultaneously of characteristic 2 and p 6= 2 (although there are no known
+examples).
+    However, the strategy of the proof in positive characteristic is based on the strategy used in [RT19] in charac-
+teristic 0, with additional work to obtain translations of finite order. So this does not actually yield a new proof in
+characteristic 0.
+          NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                      3
+
+
+   Note that any group embeds into a non-split sharply sharply 2-transitive group of characteristic
+2 and that any group not containing 2-torsion can be embedded into a non-split sharply 2-transitive
+group of characteristic 0, and even in the centralizer of an involution in such a group (see [AT23]).
+Theorem 1.1 shows that a similar phenomenon occurs in (large) prime characteristic.
+   The proof of our main result has its roots in [RT19], but a new step has to be added in the
+iterative construction in order to solve the diﬃculty mentioned above: given a group action with
+trivial 2-point stabilizers we inductively consider HNN-extensions to obtain a sharply 2-transitive
+action, but the main point of the paper is concerned with the diﬃculty of taking the appropriate
+quotients to obtain positive characteristic p by killing p-powers of products of distinct involutions
+of inﬁnite order, for some uniform prime p.
+
+Structure of the paper. In Section 2 we deﬁne two classes of groups that form the framework
+for our construction, and we give the proof of Theorem 1.1 (and more generally of Theorem 2.17
+and Corollary 2.18), assuming two technical propositions whose proofs are postponed to Sections
+5 and 6. In Section 3 we recall background on hyperbolic metric spaces and on actions of groups
+by isometries on these spaces. Although most of the deﬁnitions and results given in this section
+are well-known in the context of geodesic metric spaces, we have to work in the more general
+context of length metric spaces, and we explain how to adapt the proofs when necessary (see also
+Appendix A). Then, in Section 4, we introduce the geometric small cancellation methods that will
+be crucial to prove Theorem 1.1. These geometric small cancellation methods were introduced by
+Gromov in [Gro01], and further developed by Delzant and Gromov in [DG08], and then notably
+by Arzhantseva and Delzant in [AD08], by Coulon in [Cou11; Cou14; Cou16b], by Cantat and
+Lamy in [CLC13] (to prove that the Cremona group is not simple) and by Dahmani, Guirardel
+and Osin in [DGO17]; see also [Cou16a]. These methods proved useful to create various exotic
+quotients of groups exhibiting some kind of negative curvature, among which Burnside quotients
+of hyperbolic groups (i.e. inﬁnite quotients of hyperbolic groups of ﬁnite exponent). In particular,
+these methods were used to answer the Burnside problem, originally solved by Adian and Novikov
+in [NA69] by means of complicated combinatorial techniques (see also [Adi79; Ols89; Iva92; Lys96;
+DG08; Cou14; Cou21; ART23]).
+
+Acknowledgement. For the Burnside quotients we use results from [Cou16b] and we are very
+grateful to Rémi Coulon for several helpful conversations and for his enthusiasm for this project.
+
+                        2. Preliminaries and outline of the proof
+   We start by ﬁxing some notation and terminology. Recall that for a group G, an involution is
+an element r ∈ G of order two, and a translation is a product rs ∈ G of two distinct involutions r
+and s. For an element g ∈ G, we write |g| for its order. We will use the following convention: for
+g, h ∈ G, the conjugate of h by g is g −1 hg. In this paper, a pair of elements or of subgroups of a
+group G always refers to an ordered pair.
+Notation. Let G be a group and S ⊆ G an arbitrary subset.
+    • We write I(S) = {r : r ∈ S, |r| = 2} for the set of involutions of S.
+    • We write T r(S) = {rs : rs ∈ S, r, s ∈ I(G), r 6= s} for the set of translations of S.
+    • We write I(S)(2) = {(r, s) : r, s ∈ I(S), r 6= s} for the set of (ordered) pairs of distinct
+      involutions of S.
+    • For involutions r 6= s of G, we write Dr,s = hr, si (note that this group is dihedral of order
+      2|rs|, possibly inﬁnite).
+    • We write O(G) for the set of natural numbers that are orders of elements of G, that is,
+                                O(G) = {n ∈ N : ∃g ∈ G , |g| = n}.
+Note that the sets I(G) and T r(G) are invariant under conjugation. Note also that I(S) = I(G)∩S
+and T r(S) = T r(G) ∩ S.
+4                          MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+   Given a sharply 2-transitive group action G y X, it is easy to see that the set I(G) is non-
+empty: for any pair of distinct points x, y ∈ X, there is an element r of G swapping x and y. Since
+r2 ﬁxes both x and y, by the uniqueness condition we must have r2 = 1. Similarly, it is easy to see
+that all involutions are conjugate. In particular, either every involution has a (necessarily unique)
+ﬁxed point, or no involution has a ﬁxed point.
+   If G acts sharply 2-transitively on a set X such that involutions of G have ﬁxed points, there is
+a G-equivariant bijection I(G) −→ X given by r 7−→ Fix(r), where G acts on I(G) by conjugation
+(see e.g. Lemma 3.1 in [Ten16]).
+   Hence, if involutions in a sharply 2-transitive group have ﬁxed points, we may assume that the
+group acts by conjugation on its set of involutions. An immediate consequence of this lemma is
+the fact that in a sharply 2-transitive group where involutions have ﬁxed points, all translations
+are conjugate. Recall that in this case we deﬁne the characteristic of a sharply 2-transitive group
+in relation to the order of translations (we refer to the introduction).
+   Notice that the characteristic of a sharply 2-transitive group is necessarily 0 or a prime number
+p (since otherwise the subgroup generated by a translation t of order m · m′ with m, m′ > 1 would
+contain a translation of order m that cannot be conjugate to t) and the case p = 2 occurs if and
+only if involutions are ﬁxed-point free (since two involutions with diﬀerent ﬁxed points cannot
+commute).
+   From now on, for a prime number p we will write Fp for the ﬁnite ﬁeld with p elements. Also,
+for n ≥ 2 we will write Cn for the cyclic group of order n and Dn for the dihedral group of order
+2n, that is, the group given by the presentation
+                            Dn = hr, s | r2 = s2 = (rs)n = 1i =∼ Cn ⋊ C2 .
+   We now introduce two classes, denoted ST (p) and ST ′ (p), which will be used in the construction
+of groups as in Theorem 1.1. The conditions for the class of groups ST (p) are comparable to
+those for the classes considered in [RT19; AT23; AG22], but in order to take small cancellation
+quotients as explained in the introduction, we will introduce a class ST ′ (p) whose elements are
+pairs composed of a group G and a tree X endowed with an action of G satisfying a number of
+technical assumptions that will allow us to apply the results from [Cou16b].
+Notation. Given a subgroup H of a group G, we write NG (H) for the normalizer of H in G, and
+Cen(g) for the centralizer of an element g in G.
+Definition 2.1. Let G be a group, (r, s) a pair in I(G)(2) , p an odd prime number.
+     • We say that (r, s) is a pair of p-minimal type if |rs| = p and NG (hrsi) = Dr,s .
+     • We say that (r, s) is a pair of p-affine type if Dr,s is contained in a subgroup H of G
+       isomorphic to AGL(1, Fp ).
+Remark 2.2. It is not hard to see that AGL(1, Fp ) has a unique subgroup D isomorphic to Dp ,
+and that I(D) = I(AGL(1, Fp )). Therefore, the isomorphism between H (as in Deﬁnition 2.1)
+and AGL(1, Fp ) induces an isomorphism between Dr,s and D. It follows that H normalizes Dr,s
+and that H acts sharply 2-transitively on I(Dr,s ) = I(H) by conjugation. Note in particular that
+|rs| = p. Moreover, if (r, s) ∈ I(G)(2) is of p-aﬃne type and no nontrivial element of G centralizes
+both r and s, then in fact NG (Dr,s ) coincides with H, and thus is isomorphic to AGL(1, Fp ), since
+the subgroup H ⊆ NG (Dr,s ) acts already 2-transitively by conjugation on I(Dr,s ) .
+Remark 2.3. Clearly, if (r, s) ∈ I(G)(2) is of p-minimal type (respectively, of p-aﬃne type), then
+so is every conjugate of (r, s).
+Definition 2.4. Let G be a group, p be an odd prime number. We will say that G is almost
+sharply 2-transitive of characteristic p if it satisﬁes the following conditions.
+    (1) Every translation is either of order p or of inﬁnite order, and every pair (r, s) ∈ I(G)(2)
+        such that rs is of order p is either of p-minimal type or of p-aﬃne type.
+    (2) The (normal) subgroup N = hT r(G)i contains no involution.
+           NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                          5
+
+
+    (3) The set of pairs (r, s) ∈ I(G)(2) of p-aﬃne type is non-empty and G acts transitively on it
+        by conjugation.
+    (4) For every pair (r, s) ∈ I(G)(2) the subgroup Cen(rs) is cyclic and generated by a transla-
+        tion.
+Remark 2.5. If G is an almost sharply 2-transitive group of of characteristic p, Condition (3)
+implies that I(G) is non-empty. Condition (1) implies that no two distinct involutions commute
+(that would yield a translation of order 2). In addition, by Condition (4) no non-trivial element of
+G centralizes two distinct involutions: suppose one such g ∈ G centralizes involutions r 6= s ∈ I(G).
+Then g ∈ Cen(rs) = hhi for some h ∈ G. If rs has order p, we can choose h = rs and we see that
+rgr−1 = g −1 6= g, a contradiction. Otherwise rs has inﬁnite order and we have g m ∈ hrsi ⊂ Cen(rs)
+for some m ∈ Z∗ , so again rg m r−1 = g −m 6= g m , a contradiction.
+   We now introduce the concept of a quasi-malnormal pair of subgroups of a given group, and
+we relate in Lemma 2.7 this concept to the case where the subgroups in consideration are ﬁnite
+dihedral of order 2p.
+Definition 2.6. Let G be a group. A subgroup K of G is said to be quasi-malnormal if for all
+g ∈ G\K we have |K ∩g −1 Kg| ≤ 2. A pair of subgroups (K, K ′ ) of G is said to be quasi-malnormal
+if K is quasi-malnormal and for all g ∈ G we have |K ∩ g −1 K ′ g| ≤ 2.
+Lemma 2.7. Let G a group. Let (r, s) ∈ I(G)(2) be a pair of p-minimal type and (r′ , s′ ) ∈ I(G)(2)
+be a pair of p-affine type. Then the pair (Dr,s , Dr′ ,s′ ) is quasi-malnormal.
+Proof. We ﬁrst prove that Dr,s is quasi-malnormal. Suppose that there is some g ∈ G\Dr,s such
+that |Dr,s ∩ (g −1 Dr,s g)| > 2. Then, this intersection must have order p or 2p, and in any case
+both subgroups have the same translations, that is, hrsi = g −1 hrsig. Namely, g normalizes hrsi,
+contradicting the assumption that (r, s) is a pair of p-minimal type.
+   Then, let us prove that Dr,s ∩ (g −1 Dr′ ,s′ g) has order at most 2. Assume towards a contradiction
+that |Dr,s ∩ g −1 Dr′ ,s′ g| > 2. Since a conjugate of a pair of p-aﬃne type is still of p-aﬃne type, we
+can assume without loss of generality that g = 1. Then hrsi = hr′ s′ i. But hr′ s′ i is a characteristic
+subgroup of Dr′ ,s′ , so the subgroup H ∼   = AGL(1, Fp ) of NG (Dr′ ,s′ ) also normalizes hr′ s′ i = hrsi,
+contradicting the assumption that (r, s) is a pair of p-minimal type.                                    
+Remark 2.8. In fact, a pair (r, s) ∈ I(G)(2) is of p-minimal type if and only if the subgroup Dr,s
+is quasi-malnormal. Indeed, if there exists some g ∈ NG (hrsi)\Dr,s , then Dr,s ∩ (g −1 Dr,s g) has
+order at least p and thus Dr,s is not quasi-malnormal.
+  Now we are ready to introduce the class ST (p).
+Definition 2.9 (Class ST (p)). Let G be a group. We will say that G belongs to the class ST (p) if
+it is almost sharply 2-transitive of characteristic p with all translations of order p (i.e. no translation
+has inﬁnite order).
+Remark 2.10. Clearly AGL(1, Fp ) ∈ ST (p), so in particular this class is non-empty. Furthermore,
+if G is in ST (p) and every pair (r, s) ∈ I(G)(2) is of p-aﬃne type, then G is sharply 2-transitive of
+characteristic p 6= 2.
+   Our construction of non-split sharply 2-transitive groups starts from a group in ST (p) and
+proceeds inductively by using HNN-extensions to conjugate pairs of p-minimal type to pairs of
+p-aﬃne type. Furthermore, we will prove that the sharply 2-transitive groups that we construct
+contain non-commuting translations. The following theorem implies that these groups will not
+split.
+Theorem 2.11 (see [Neu40]). Let G be a sharply 2-transitive group. Then G splits if and only
+if T r(G) ∪ {1} is an abelian subgroup (which is normal since the set of translations is invariant
+under conjugation).
+6                           MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+    The cornerstone of the inductive process is the following result.
+Proposition 2.12. Let p be an odd prime number and let G be an almost sharply 2-transitive
+group of characteristic p.
+    (1) Let (r, s), (r′ , s′ ) ∈ I(G)(2) with (r, s) of p-affine type, and (r′ , s′ ) of p-minimal type, so
+        Dr,s and Dr′ ,s′ are isomorphic to Dp . Then the HNN-extension
+                                  G∗ = hG, t | t−1 rt = r′ , t−1 st = s′ i
+         is almost sharply 2-transitive of characteristic p.
+     (2) Let H be a non-trivial group without 2-torsion. Then G∗ = G ∗ H is almost sharply
+         2-transitive of characteristic p.
+   However, in both cases of Proposition 2.12, even if G ∈ ST (p), we have G∗ ∈    / ST (p) since G∗
+contains translations of inﬁnite order. Thus, in order to eventually obtain a sharply 2-transitive
+group of characteristic p, in particular a group where all translations have order p, we need to take
+partial periodic quotients (see Theorem 4.28) of the (normal) subgroup generated by translations.
+To that purpose, we now introduce a new class ST ′ (p). Deﬁnition 2.13 below involves Theorem
+4.28, which is stated together with the necessary background in Section 4 following work of Coulon
+(see [Cou16b]).
+Definition 2.13 (Class ST ′ (p)). Let G be a group acting by isometries on a (simplicial) tree X.
+Write N = hT r(G)i and Q = T r(G). We say that (G, X) belongs to the class ST ′ (p) if G is almost
+sharply 2-transitive of characteristic p and the following conditions are satisﬁed.
+   (1’) The action of G on X is non-elementary and acylindrical (see Deﬁnition 3.28), and thus it
+        is WPD (see Deﬁnition 3.31).
+   (2’) The action is such that e(N, X) = 1, rinj (Q, X) ≥ 1, ν(N, X) ≤ 5 and A(N, X) = 0
+        (see Subsection 4.1 for the deﬁnitions of the parameters), and the prime number p is at
+        least n1 (the constant provided by Theorem 4.28 for these values of the parameters and
+        hyperbolicity constant δ = 0).
+   (3’) Every translation of inﬁnite order is loxodromic for its action on X.
+   (4’) A ﬁnite subgroup of G normalized by a loxodromic element has order at most 2.
+   We will sometimes say that G belongs to the class ST ′ (p) with no mention of the space X if
+this is not necessary. We will prove in Section 5 that a group in class ST ′ (p) in fact satisﬁes the
+hypotheses of Theorem 4.28 (that is, that the family Q is strongly stable, see Deﬁnition 4.26).
+   We will show in Section 6 the following reﬁnement of Proposition 2.12.
+Proposition 2.14. If G ∈ ST (p), then for G∗ as in Proposition 2.12 we have (G∗ , X) ∈ ST ′ (p)
+where X is the Bass-Serre tree associated with the decomposition of G∗ as an HNN-extension or
+as a free product.
+   This allows us to take appropriate quotients to return to ST (p). Namely, we will show in Section
+5 the following result.
+Proposition 2.15. If (G, X) belongs to ST ′ (p), then G has a quotient Ḡ ∈ ST (p) such that the
+images of pairs of distinct involutions of p-affine type (respectively, of p-minimal type) will again
+be of p-affine type (respectively, of p-minimal type), any subgroup of G that is elliptic for the action
+on X projects to an isomorphic image in Ḡ, and O(G) = O(Ḡ).
+    We will need the following easy observation.
+Remark 2.16. Notice that if a group G is the union of an inﬁnite chain of subgroups Hm , m ∈ N,
+all of them belonging to the class ST (p), then so does G. Moreover, if for all m, m′ ∈ N we have
+O(Hm ) = O(Hm′ ), then O(G) = O(H0 ).
+   Propositions 2.14 and 2.15 are the tools used in the proof our main result, i.e. the following
+stronger version of Theorem 1.1.
+           NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                            7
+
+
+Theorem 2.17 (The Embedding Theorem). There exists a prime number p′ with the following
+property. If G ∈ ST (p) for a prime number p ≥ p′ and if H has no 2-torsion, then G and H embed
+into a non-split sharply 2-transitive group G of characteristic p with O(G) = O(G) ∪ O(H) and of
+cardinality equal to the maximum of ℵ0 and the cardinalities of G and H.
+Proof. Let n1 be the constant involved in Deﬁnition 2.13, Condition (2’). Let p′ be the smallest
+odd prime number such that p′ ≥ n1 , and let p ≥ p′ be a prime number. Let G ∈ ST (p)
+and H be a group without 2-torsion. By Proposition 2.14 applied to G∗ = G ∗ H we see that
+(G∗ , X) ∈ ST ′ (p) where X is the Bass-Serre tree associated with the free product. Clearly, we
+have O(G∗ ) = O(G) ∪ O(H).
+    Let G00 = G∗ ∈ ST (p) be the group obtained from (G∗ , X) by applying Proposition 2.15. In
+particular, we have O(G∗ ) = O(G00 ). Since G and H are elliptic for their action on the Bass-Serre
+tree of the free product, G00 contains isomorphic images of these groups. Furthermore, we will
+prove that G00 contains non-commuting translations (see Lemma 5.17).
+    Now, ﬁx a pair of distinct involutions (i, j) ∈ G00 of p-aﬃne type. Enumerate all pairs of I(G00 )(2)
+as (iλ0 , j0λ ) : λ < γ. We will construct inductively Gα    0 for α < γ. For successor ordinals, suppose
+Gα0  has    already    been constructed,  that this group is in class ST (p), that G00 embeds into Gα
+                                                                                                    0 , and
+that we have O(G) = O(G0 ). Consider the pair (i0 , j0 ). If this pair is of p-aﬃne type, we set
+                                   α                         α α
+
+Gα+1
+  0     = Gα   0 . If the pair is of p-minimal type, we set
+                                    ∗              −1
+                               (Gα       α
+                                 0 ) = hG0 , t | t    jt = j0α , t−1 it = iα
+                                                                           0 i.
+
+Note that this is a well-deﬁned HNN-extension since Di,j and Diα0 ,j0α are isomorphic to Dp . Clearly,
+          ∗
+in (Gα 0 ) the pair (i0 , j0 ) is of p-aﬃne type.
+                       α α
+                                             ∗               ′
+    By Proposition 2.14, the pair ((Gα    0 ) , X) is in ST (p), with X the Bass-Serre tree of the HNN-
+                                     0                   α ∗             ∗
+extension. Moreover, clearly G0 embeds into (G0 ) , and O((Gα                     α
+                                                                      0 ) ) = O(G0 ).
+                                     α+1
+    With this in mind, we set G0 = (G0 ) as in Proposition 2.15. This group belongs to the class
+                                               α ∗
+
+ST (p), and is such that O(Gα+1    0   ) = O(Gα                     0
+                                                 0 ). Furthermore G0 embeds in G0
+                                                                                    α+1
+                                                                                        (and therefore, so
+do G and H) since it has an isomorphic image in the HNN-extension that is elliptic for its action
+on the Bass-Serre tree X. Moreover, every pair (iλ0 , j0λ ) of distinct involutions is of p-aﬃne type
+for λ ≤ α.
+                                                        β
+    For a limit ordinal α, we set Gα     0 = ∪β<α G0 . By Remark 2.16 this group is in class ST (p),
+G0 embeds into it, and is such that O(G0 ) = O(G00 ). Moreover, every pair (iλ0 , j0λ ) of distinct
+  0                                               α
+
+involutions is of p-aﬃne type for λ < α.
+    Put G01 = ∪β<γ Gβ0 . With Remark 2.16 in mind, we can deduce similar properties to the ones
+in the previous paragraph, and in this case, every pair (r, s) ∈ I(G00 )(2) is of p-aﬃne type. The
+cardinality of this group is clearly the maximum of ℵ0 and the cardinalities of G and H.
+    Now, build G0k+1 from G0k in a completely analogous way to the construction of G01 from G00 ,
+                                   α+1
+just replacing Gα   0 by Gk , G0
+                             α
+                                        by Gα+1
+                                             k    , enumerating the pairs of I(G0k ) as (iλk , jkλ ) : λ < γ,
+and conjugating pairs of p-minimal type to the pair (i, j) of p-aﬃne type. Once again, assume
+                                                      0                    0
+that the group Gα    k is in class ST (p), with Gk (and thus also G0 ) embedding into it, and with
+                0
+O(Gk ) = O(G0 ). If we need to take an HNN-extension at that step, Proposition 2.14 ensures that
+      α
+                 ∗                                                                        ′
+the pair ((Gα k ) , X), with X the Bass-Serre tree of the extension, belongs to ST (p). Moreover,
+                                   α+1                              α+1         0
+Proposition 2.15 gives that Gk belongs to ST (p) with O(Gk ) = O(G0 ), and with a completely
+analogous argument to the case k = 0 we get that G00 embeds into this group. Finally, Remark
+2.16 guarantees that G0k+1 is also in class ST (p) and that O(G0k+1 ) = O(G). By construction, G00
+embeds into G0k+1 and all pairs (r, s) ∈ I(G0k )(2) are of p-aﬃne type in this group, since they are
+conjugate to one such pair (i, j). Again, the cardinality of G0k+1 is the maximum of ℵ0 and the
+cardinalities of G and H.
+    Set now G = ∪k<ω G0k . Since every group G0k is in class ST (p) and is such that O(G0k ) = O(G00 ),
+then by Remark 2.16 G is itself in class ST (p) with O(G) = O(G00 ). Moreover, every pair
+(r, s) ∈ I(G)(2) is of p-aﬃne type: if this pair of involutions appears for the ﬁrst time in some
+8                           MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+G0m , then our construction ensures that this pair is of p-aﬃne type in G0m+1 . In particular, G is
+sharply 2-transitive of characteristic p. By construction, G00 (and thus, G and H) embeds into G,
+so it contains non-commuting translations and thus by Theorem 2.11 it is not split. Finally, the
+cardinality of this group is the maximum of ℵ0 and the cardinalities of G and H. Thus, G is a
+group as claimed by Theorem 2.17.                                                                
+    Theorem 2.17 also implies the following result.
+Corollary 2.18 (The Existence Theorem). There exists a prime number p′ such that for every
+prime number p ≥ p′ there are 2ℵ0 many pairwise non-isomorphic countable non-split sharply
+2-transitive groups of characteristic p.
+Proof. Keeping the same notation as the statement of Theorem 2.17, put G = AGL(1, Fp ) ∈ ST (p).
+We will show how to choose groups H without 2-torsion appropriately so as to obtain 2ℵ0 many
+non-isomorphic such groups. Denote by P the set of prime numbers greater than p. There are ℵ0
+many such primes, and therefore there are 2ℵ0 many subsets of P . For every S ⊆ P , write HS for
+the direct sum of the cyclic groups of order s ∈ S. Notice that the prime numbers in O(HS ) are
+precisely the ones in S. Moreover, by the choice of P , none of these primes will be in O(AGL(1, Fp )),
+since |AGL(1, Fp )| = p(p − 1), and thus the greatest prime number in O(AGL(1, Fp )) is p.
+   Consider now the group HS provided by Theorem 2.17 with H = HS . Such a group is a
+countable non-split sharply 2-transitive group of characteristic p with O(HS ) = O(AGL(1, Fp )) ∪
+O(HS ). In particular, we have O(HS ) ∩ P = S. Therefore, if S ′ 6= S ′′ are subsets of P , HS ′ ≇ HS ′′
+(since O(HS ′ ) 6= O(HS ′′ )). Since there are 2ℵ0 many distinct subsets of P , this yields the desired
+conclusion.                                                                                          
+   The remainder of this article is devoted to recalling the necessary background and developing
+the tools to complete the proof of Theorem 2.17, that is, to proving Propositions 2.14 and 2.15.
+
+                       3. Hyperbolic metric spaces and group actions
+   In this section we recall some concepts from metric geometry. We start by introducing length
+metric spaces and quasi-geodesics in Subsection 3.1 (for a more comprehensive overview, see for
+example [BBI22, Chapter 2]). In Subsection 3.2 we recall some of the basic ideas of hyperbolic
+spaces in the sense of Gromov, and in Subsection 3.3 we study the actions by isometries of groups
+on these spaces. We follow closely the exposition by Coulon in [Cou16b, Sections 2 and 3].
+   From now on, for a metric space X and two points x and x′ of X, we will write dX (x, x′ ) (or
+just d(x, x′ ) if the metric space is clear from the context) for the distance between x and x′ , unless
+diﬀerent notation is explicitly deﬁned.
+
+3.1. Length metric spaces and quasi-geodesics. For a topological space X, a path in X is a
+continuous map γ : I −→ X, where I is an interval (possibly consisting of a single point) in R.
+Definition 3.1. Let (X, d) be a metric space and let γ : [a, b] −→ X be a path. A partition of
+[a, b] is a ﬁnite collection Y = {y0 , . . . yN } ⊂ [a, b] such that a = y0 ≤ y1 ≤ · · · ≤ yN = b. The sum
+of a partition Y is deﬁned as
+                                                  XN
+                                      Σ(Y ) =         d(γ(yi−1 ), γ(yi )).
+                                              i=1
+The length of the path γ with respect to the metric d is denoted by Ld (γ) and deﬁned as
+                            Ld (γ) = sup{Σ(Y ) : Y is a partition of [a, b]}.
+Definition 3.2. Let (X, d) be a metric space connected by rectiﬁable paths (i.e. between any two
+points there is a path of ﬁnite length). Then the intrinsic metric dℓ on X is deﬁned by putting
+                     dℓ (x, y) = inf{Ld (γ) : γ : [a, b] −→ X, γ(a) = x, γ(b) = y}.
+          NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                          9
+
+
+A metric space (X, d) is said to be a length metric space (or just a length space) if dℓ = d. If
+moreover (X, d) has the property that there always exists a path γ that achieves the inﬁmum in
+the deﬁnition of dℓ , then (X, d) is called a geodesic metric space, and the path γ is called a geodesic.
+  We now recall the concepts of a quasi-isometric embedding and of a quasi-geodesic.
+Definition 3.3. Let ℓ, L ≥ 0 and k ≥ 1, and let X1 and X2 be two metric spaces. A map
+f : X1 −→ X2 is a (k, ℓ)-quasi-isometric embedding if for every two points x, y ∈ X1 we have:
+                      1
+                        dX (f (x), f (y)) − ℓ ≤ dX1 (x, y) ≤ kdX2 (f (x), f (y)) + ℓ.
+                      k 2
+We say that f is an L-local (k, ℓ)-quasi-isometric embedding if its restriction to any subset of
+diameter at most L is a (k, ℓ)-quasi-isometric embedding.
+Definition 3.4. Let X be a metric space, I ⊆ R an interval. A path γ : I −→ X that is a (k, ℓ)-
+quasi-isometric embedding is called a (k, ℓ)-quasi-geodesic. If it is an L-local (k, ℓ)-quasi-isometric
+embedding it is called an L-local (k, ℓ)-quasi-geodesic.
+Remark 3.5. Note that for k = 1 and ℓ = 0, f is a genuine isometry in Deﬁnition 3.3, and γ is a
+genuine geodesic in Deﬁnition 3.4.
+Remark 3.6. If (X, d) is a length space, then by deﬁnition of the inﬁmum, for every pair of points
+x, y ∈ X and every ℓ > 0, there exists a path γ : [a, b] → X such that d(x, y) ≤ Ld (γ) ≤ d(x, y) + ℓ.
+After reparametrizing γ (by arc length) if necessary, we can assume that a = 0 and b = Ld (γ) and
+thus that Ld (γ) = |b − a|. Hence, γ is a (1, ℓ)-quasi-geodesic (and thus it is a (k, ℓ)-quasi-geodesic
+for every k ≥ 1).
+3.2. Hyperbolic metric spaces. For a metric space X, a point x in X and a subset Y of X, we
+will write
+                                      dX (x, Y ) = inf {dX (x, y)}
+                                                    y∈Y
+
+for the distance between x and Y . Also, for a subset Y of X we will write diam(Y ) for the diameter
+of Y , that is,
+                                     diam(Y ) = sup (dX (y, y ′ )).
+                                                  y,y ′ ∈Y
+
+We will put BX (x, r) (or simply B(x, r) if the metric space X is clear by context) for the ball of
+radius r centered at x.
+Definition 3.7. Let x, y and z be three points of X. The Gromov product of x and y with respect
+to z is
+                                      1
+                            hx, yiz = {d(x, z) + d(y, z) − d(x, y)}.
+                                      2
+A metric space X is said to be δ-hyperbolic (in the sense of Gromov) if for every four points
+x, y, z, t ∈ X we have
+                                   hx, zit ≥ min{hx, yit , hy, zit } − δ.
+We will say that X is hyperbolic if it is δ-hyperbolic for some δ ≥ 0.
+Remark 3.8. For simplicity of notation, from now on we assume that the hyperbolicity constant δ
+is positive. However, notice that this is not a serious restrain: if X is δ-hyperbolic for δ ≥ 0, then
+it is δ ′ -hyperbolic for every δ ′ ≥ δ.
+    If X is a δ-hyperbolic geodesic metric space, then every geodesic triangle in X is 2δ-thin,
+that is, for every geodesic triangle in X, every side of the triangle is contained in the closed
+2δ-neighbourhood of the union of the other two sides [DK18, Lemma 11.28].
+10                           MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+3.2.1. Quasi-geodesic polygons. We now collect some useful properties of quasi-geodesic polygons
+in length spaces, similar to the δ-thin condition for triangles in geodesic spaces. We follow closely
+the exposition by Druţu and Kapovich in [DK18, Chapter 11].
+Definition 3.9. Let X be a metric space, x, y, z ∈ X. A (k, ℓ)-quasi-geodesic triangle with vertices
+x, y and z is the union of the image of three paths γx,y , γy,z and γz,x such that the initial point
+of γt,t′ is t, the endpoint is t′ and each path is a (k, ℓ)-quasi-geodesic.
+   From now on, we will not distinguish between paths (that are actually maps from an interval of
+the real line to X) from their images in X, and we will assume these paths are parametrized by
+arc length. Notice that if X is a length space, we get immediately from Remark 3.6 that for any
+x, y, z ∈ X and any ℓ > 0, there exists a (1, ℓ)-quasi-geodesic triangle with vertices x, y and z. We
+will denote one such triangle by [x, y, z]ℓ and its sides by [x, y]ℓ , [y, z]ℓ and [x, z]ℓ respectively.
+   In a similar way, we can deﬁne a (k, ℓ)-quasi-geodesic n-gon for n ≥ 4. As in geodesic spaces,
+one such n-gon is said to be α-thin if every side is contained in the closed α-neighbourhood of the
+other n − 1 sides.
+   Lemma 3.10 below shows how, even though quasi-geodesics between two points may not be
+unique in a hyperbolic length space, they cannot go too far away from one another. This result is
+well-known in the context of geodesic spaces. Since we couldn’t ﬁnd a proof in the literature for
+length spaces, we include a proof of this result in Appendix A.
+Lemma 3.10. Let X be a δ-hyperbolic metric space, let x, y ∈ X. Let γ be a (1, ℓ)-quasi-geodesic
+connecting x to y for ℓ ≥ 0. Let p ∈ X be a point such that
+                                  d(x, p) + d(p, y) ≤ d(x, y) + 2δ + 3ℓ.
+Then, d(p, γ) ≤ 4δ + 8ℓ.
+Lemma 3.11. Let X be a δ-hyperbolic metric space and let [x, y, p]ℓ be a (1, ℓ)-quasi-geodesic
+triangle. Then, this triangle is (4δ + 8ℓ)-thin.
+Proof. Let z ∈ [x, y]ℓ , we need to prove that it is (4δ+8ℓ)-close to [y, p]ℓ ∪[x, p]ℓ . By δ-hyperbolicity,
+we have
+                                  hx, yip ≥ min({hx, zip , hy, zip }) − δ.
+Without loss of generality, we may consider that
+                                          hx, yip ≥ hx, zip − δ,
+i.e. that
+                              d(y, p) − d(x, y) ≥ d(z, p) − d(x, z) − 2δ.
+We will show that z is (4δ + 8l)-close to [y, p]ℓ . By combining the last inequality with the fact that,
+since z ∈ [x, y]ℓ we have
+                                   d(x, y) − d(x, z) ≥ d(y, z) − 3ℓ,
+we obtain
+                                 d(y, z) + d(z, p) ≤ d(y, p) + 3ℓ + 2δ.
+By Lemma 3.10, we obtain that d(z, [y, p]ℓ ) ≤ 4δ + 8ℓ.                                               
+   Notice that the bound shown may not be the optimal one. We immediately obtain the following
+corollary.
+Corollary 3.12. Let X be a δ-hyperbolic length space. Then every (1, ℓ)-quasi-geodesic n-gon is
+(4(n − 2)δ + 8(n − 2)ℓ)-thin.
+   Corollary 3.12 and the following lemma are proved in a completely analogous way to the case of
+geodesic n-gons in geodesic spaces (see for example [DK18, Section 11.1]), that is, by triangulating
+the n-gon by n−3 (1, ℓ)-quasi-geodesic diagonals joining a given vertex to the non-adjacent vertices
+of the n-gon.
+          NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                       11
+
+
+Lemma 3.13. Let X be a δ-hyperbolic length space, [p, q, r, s]ℓ a (1, ℓ)-quasi-geodesic quadrangle
+with d(p, q) = d(r, s). Then, for any pair of points x ∈ [p, q]ℓ and y ∈ [r, s]ℓ with d(p, x) = d(s, y)
+we have that
+                          d(x, y) ≤ 5 max({d(s, p) , d(q, r)}) + 16δ + 38ℓ.
+3.2.2. Quasi-convex and strongly quasi-convex subsets. We now deﬁne the concepts of a quasi-
+convex subset of a metric space and of a strongly quasi-convex subset of a hyperbolic length space.
+For a more comprehensive overview, see [Cou16b, Subsection 2.3].
+   For a subset Y of a metric space X, we write Y α (respectively, Y +α ) for the open (respectively,
+closed) α-neighbourhood of Y .
+Definition 3.14. Let X be a metric space, α ≥ 0. A subset Y of X is α-quasi-convex if for every
+pair of points y, y ′ ∈ Y and every point x ∈ X we have that
+                                       d(x, Y ) ≤ hy, y ′ ix + α.
+Remark 3.15. If X is a geodesic space, the usual deﬁnition of an α-quasi-convex subset Y is that
+every geodesic joining two points of Y is contained in Y +α . If X is a δ-hyperbolic geodesic space,
+a subset is α-quasi-convex in the usual sense if and only if it is (α + 4δ)-quasi-convex in the sense
+of Deﬁnition 3.14.
+Definition 3.16. Let X be a δ-hyperbolic length space, α ≥ 0. Let Y be a subset of X connected
+by rectiﬁable paths. Denote by dY the length metric on Y induced by the restriction of the length
+structure on X to Y (see [BBI22, Section 2] for the precise deﬁnition of a length structure). The
+subset Y is said to be strongly quasi-convex if it is 2δ-quasi-convex and for every pair of points
+y, y ′ ∈ Y we have that
+                                   dY (y, y ′ ) ≤ dX (y, y ′ ) + 8δ.
+Definition 3.17. Let X be a δ-hyperbolic length space, Y a subset of X. The hull of Y , denoted
+by hull(Y ), is the union of all (1, δ)-quasi-geodesics joining two points of Y .
+Lemma 3.18. [Cou14, Lemma 2.15] Let X be a δ-hyperbolic length space, Y a subset of X. The
+hull of Y is 6δ-quasi-convex.
+3.2.3. The boundary at infinity. Let X be a δ-hyperbolic metric space, and x ∈ X. A sequence
+(yn )n∈N is said to converge to infinity if hym , ym′ ix tends to inﬁnity as m and m′ tend to inﬁnity.
+Note that by hyperbolicity this does not depend on the choice of x. The set S of sequences
+converging to inﬁnity is endowed with a relation R ⊆ S 2 deﬁned as follows: two sequences (yn )n∈N
+and (zn )n∈N in S are related if
+                                          lim hyn , zn ix = +∞.
+                                        n→∞
+Again hyperbolicity gives that this is in fact an equivalence relation.
+Definition 3.19. Let X be a hyperbolic metric space, S the set of sequences of points of X
+converging to inﬁnity. The boundary at infinity of X, denoted as ∂X, is the quotient of S by the
+equivalence relation R.
+   This deﬁnition does not depend on the choice of the base point x since X is hyperbolic. We will
+write [(xm )m∈N ] for the equivalence class of the sequence (xm )m∈N . For a subset Y of X, we will
+write ∂Y for the set of elements of ∂X that are limits of sequences of points of Y .
+   By construction, if a group G acts by isometries on a hyperbolic space X this action extends in
+a natural way to an action on the boundary ∂X: for η = [(xm )m∈N ] ∈ ∂X, put g ·η = [(g ·xm )m∈N ].
+3.3. Group actions on hyperbolic spaces. For a group G acting by isometries on a hyperbolic
+metric space X, we denote by ∂G the set of accumulation points of G · x in ∂X (note again that
+this deﬁnition does not depend on the choice of x). Then either one (and hence every) orbit of G
+is bounded or ∂G is non-empty (see for example [Cou16b, Proposition 3.4]).
+   Recall that if g is an isometry of X, then g is of one of the following types:
+12                          MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+        • elliptic, i.e. ∂hgi is empty,
+        • parabolic, i.e. ∂hgi has exactly one element, and
+        • loxodromic, i.e. ∂hgi has exactly two elements.
+     For a loxodromic isometry g, the two elements of ∂hgi are
+                          g −∞ = [(g −m · x)m∈N ] and g +∞ = [(g m · x)m∈N ].
+They are the only points of ∂X ﬁxed by g (see [CDP06, Chapitre 10, Proposition 6.6]). Conversely
+we have the following well-known lemma.
+Lemma 3.20. [Cou16b, Proposition 3.6] Let G be a group acting by isometries on a hyperbolic
+metric space X. If ∂G has at least two points, then G contains a loxodromic isometry.
+   Next we introduce two concepts of translation lengths that can be used, among other things, to
+give a characterization of loxodromic isometries.
+Definition 3.21. Let X be a hyperbolic metric space, g an isometry of X. The translation length
+of g, denoted by [g]X (or simply [g] if the metric space X is clear from the context) is
+                                   [g]X = inf{d(x, g · x) : x ∈ X}.
+The asymptotic translation length of g, denoted by [g]∞                ∞
+                                                       X (or simply [g] ) is
+                                                  1
+                                   [g]∞
+                                      X = n→+∞
+                                            lim     d(x, g n · x).
+                                                  n
+   Once again, notice that the deﬁnition of the asymptotic translation length does not depend on
+the choice of x. These two concepts are related as follows:
+Lemma 3.22. [CDP06, Chapitre 10, Propositions 6.3 and 6.4] Let X be a δ-hyperbolic metric
+space, g an isometry of X. Then, the quantities [g] and [g]∞ satisfy
+                                      [g]∞ ≤ [g] ≤ [g]∞ + 32δ,
+and g is loxodromic if and only if [g]∞ > 0.
+3.3.1. The axis of an isometry. We now introduce the concepts of the axis of an isometry and
+the cylinder of a loxodromic isometry, which will play an important role in the small cancellation
+results introduced in Section 4. For a hyperbolic length space X and two distinct points ζ and η
+of ∂X, we say that a path γ : R −→ X joins ζ and η if
+                               {[(γ(−m))m∈N ], [(γ(m))m∈N ]} = {ζ, η}.
+Definition 3.23. Let X be a hyperbolic metric space, g be an isometry of X. The axis of g,
+denoted as Ag is the set
+                             {x ∈ X : d(x, g · x) < [g] + 8δ}.
+   Note that the axis is deﬁned for any isometry of G, not necessarily a loxodromic one.
+   In the following, let LS ∈ N be such that every LS δ-local (1, 105 δ)-quasi-geodesic is a (global)
+(2, 105 δ)-quasi-geodesic, and there is a bound for the Hausdorﬀ distance between any two such
+quasi-geodesics.
+   Such a number LS exists and does not depend on δ by [Cou16b, Proposition 2.6 and Corollary
+2.7].
+Definition 3.24. Let X be a δ-hyperbolic length space, g a loxodromic isometry of X. We denote
+by Γg the union of all LS δ-local (1, δ)-quasi-geodesics joining g −∞ and g +∞ . The cylinder of g,
+denoted as Yg is the open 20δ-neighbourhood of Γg .
+   The next result relates the axis and the cylinder of a loxodromic isometry (see [Cou14, Lemmas
+2.32 and 2.33] and [Cou16b, Lemma 3.13]).
+Lemma 3.25. Let X be a δ-hyperbolic length space, g a loxodromic isometry of X, Ag the axis of
+g and Yg the cylinder of g. Then Ag ⊆ Yg , Yg ⊆ A+52δ
+                                                 g    and Yg is a strongly quasi-convex subset of
+X.
+          NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                      13
+
+
+3.3.2. Elementary subgroups. Let X be a hyperbolic metric space, and let G be a group acting on
+X by isometries. Let H be a subgroup of G. We say that H is elementary if ∂H has at most two
+points. Otherwise, we say it is non-elementary. We say that an elementary subgroup H is
+      • elliptic if its orbits are bounded (equivalently, if ∂H is empty),
+      • parabolic if ∂H has exactly one point, or
+      • loxodromic if ∂H has exactly two points.
+   Notice that any ﬁnite subgroup of G is elliptic. We can associate to an elliptic subgroup a set
+of ‘almost ﬁxed points’ in the sense of the following deﬁnition.
+Definition 3.26. Let F be an elliptic subgroup of G. The characteristic set of F is
+                             CF = {x ∈ X : ∀g ∈ F, d(g · x, x) ≤ 11δ}.
+Lemma 3.27. [Cou16b, Corollary 3.27] Let F be an elliptic subgroup of G. The characteristic set
+CF is 9δ-quasi-convex.
+3.3.3. Acylindrical group actions. Recall that a group is hyperbolic if and only if it acts properly
+and cocompactly by isometries on a hyperbolic metric space. In recent years, many interesting
+results were obtained for groups that admit a (non-elementary) action on a hyperbolic metric
+space by isometries satisfying a weaker condition. One of the two weaker conditions that will be
+considered in this paper is acylindricity. This notion goes back to Sela’s paper [Sel97], where it
+was considered for groups acting on trees. In the context of general metric spaces, the following
+deﬁnition was introduced by Bowditch in [Bow08].
+Definition 3.28. Let G be a group acting by isometries on a δ-hyperbolic metric space X. The
+action is said to be acylindrical if for every ε ≥ 0 there exist M, L > 0 such that for every x, y ∈ X
+with d(x, y) ≥ L we have:
+                           |{g ∈ G : d(x, g · x) ≤ ε, d(y, g · y) ≤ ε}| ≤ M.
+Remark 3.29. By [DGO17, Proposition 5.31] it suﬃces to check this condition for ε = 100δ. Even
+though this result is stated for geodesic spaces, this also holds for length spaces (see [Cou21,
+Proposition 5.6]).
+  The following lemma, which is an immediate consequence of [Osi16, Theorem 1.1], will play an
+important role in the proof of our main result.
+Lemma 3.30. Le G be a group acting acylindrically by isometries on a hyperbolic metric space.
+Then G has no parabolic subgroup.
+3.3.4. Weakly properly discontinuous group actions. We now deﬁne a weakening of acylindricity,
+namely weak proper discontinuity. This notion was introduced by Bestvina and Fujiwara in [BF02].
+Definition 3.31. Let G be a group acting by isometries on a metric space X, and let h ∈ G be
+a loxodromic element. The isometry h is said to satisfy the weak proper discontinuity property
+(WPD property) if for every x ∈ X and every ε ≥ 0 there exist n ∈ N, M > 0 such that
+                       |{g ∈ G : d(x, g · x) ≤ ε, d(hn · x, ghn · x) ≤ ε}| ≤ M.
+The action is said to be weakly properly discontinuous (WPD) if every loxodromic element satisﬁes
+the WPD property.
+Remark 3.32. Clearly, an acylindrical action is also WPD.
+  The following lemma will be crucial (see [Cou16b, Section 3]).
+Lemma 3.33. Let G be a group with a WPD action by isometries on a hyperbolic length space
+X. Then every loxodromic subgroup H of G is contained in a unique maximal loxodromic subgroup
+of G, namely the setwise stabilizer of the pair ∂H ⊂ ∂G, denoted by MG (H). Moreover, MG (H)
+(and thus H) are virtually cyclic.
+14                         MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+   Recall that an inﬁnite virtually cyclic group H maps either onto Z or onto D∞ , with ﬁnite
+kernel (which is the unique maximal normal ﬁnite subgroup of H). In the ﬁrst case, we say that
+H is of cyclic type, and in the second case we say that H is of dihedral type. An element of H
+is called primitive if it maps to an element of Z (in the ﬁrst case) or of D∞ (in the second case)
+that has inﬁnite order and does not admit a proper root. This terminology can be extended to
+a loxodromic element h of G: the element h is called primitive if it is primitive as an element of
+the virtually cyclic subgroup MG (hhi) (equivalently, h has minimal asymptotic translation length
+among the loxodromic elements of MG (hhi)).
+   The next lemma relates the cylinder of a loxodromic isometry with the characteristic subset of
+ﬁnite subgroups normalized by this element.
+Lemma 3.34. [Cou16b, Lemma 3.33] Let G be a group with a WPD action by isometries on a
+hyperbolic length space X. Let g be a loxodromic element of G and H a subgroup fixing the set
+{g ±∞ } pointwise. Let F be the maximal normal finite subgroup of H. Then, the cylinder Yg is
+contained in the 51δ-neighbourhood of the characteristic subset CF .
+
+                              4. Geometric small cancellation
+   In the 1910s, Dehn proved that for the fundamental group of a closed orientable surface of
+genus at least two the word problem is solvable. His work involved negative curvature, and was a
+precursor for small cancellation theory. Small cancellation conditions were formulated explicitely
+for the ﬁrst time by Tartakovskii in 1949. Then, small cancellation theory was developed notably
+by Greendlinger in the early 1960s and by Lyndon and Schupp around the same time to study
+groups given by group presentations where deﬁning relations have small overlaps with each other.
+However, the geometric origins of small cancellation theory have gradually been forgotten in favour
+of combinatorial and topological methods. According to Gromov, “the role of curvature was reduced
+to a metaphor (algebraists do not trust geometry)”, and he proposed to return to the geometric
+sources of small cancellation theory. This point of view appears in [Gro01] and [DG08], and was
+further developed extensively in the work of Coulon.
+   In this section we introduce and adapt the small cancellation results proved in [Cou16b]. We
+start by deﬁning in Subsection 4.1 some invariants of a WPD group action on a hyperbolic metric
+space (for a more comprehensive overview, see [Cou16b, Section 3.5]). Then, in Subsection 4.2 we
+introduce the cone-off construction (see also [Cou16b, Section 4]), that will play a central role when
+we state Theorem 4.15 in Subsection 4.3 and Proposition 4.25 and Theorem 4.28 in Subsection 4.4,
+which are the small cancellation results used to prove Proposition 2.15.
+4.1. Invariants of a Group Action. Throughout this subsection we ﬁx a group G with a WPD
+action by isometries on a hyperbolic space X. We introduce the invariants rinj (Q, X) (for a subset Q
+of G), e(G, X), ν(G, X) and A(G, X). They will play the role of the small cancellation parameters
+in Subsection 4.3.
+Definition 4.1. Let Q be a subset of G. The injectivity radius of Q is
+                                               ∞
+                           rinj (Q, X) = inf{[g]   : g ∈ Q, g loxodromic}.
+Definition 4.2. The invariant e(G, X) is the least common multiple of |F ⋊ Aut(F )| where F
+runs over the maximal normal ﬁnite subgroup of all maximal loxodromic subgroups of G.
+Remark 4.3. Notice that if all loxodromic subgroups of G are cyclic, then we will get e(G, X) = 1.
+Definition 4.4. The invariant ν(G, X) (or simply ν) is the smallest positive integer m satisfying
+the following property: let g and h be two isometries of G with h loxodromic. If g, h−1 gh,...,
+h−m ghm generate an elementary subgroup which is not loxodromic, then g and h generate an
+elementary subgroup of G.
+   The proof of Lemma 6.12 in [Cou16b] yields the following bound for ν(G, X) for acylindrical
+actions with positive injectivity radius.
+           NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                            15
+
+
+Lemma 4.5. Assume the action of G on X is acylindrical and with positive injectivity radius. Call
+L and M the parameters in the definition of an acylindrical action (Definition 3.28) corresponding
+to ε = 97δ, and put M ′ as the smallest positive integer such that M ′ rinj (G, X) ≥ L. Then,
+ν(G, X) ≤ M ′ + M .
+Definition 4.6. Assume the action of G on X has ﬁnite parameter ν = ν(G, X).
+  For g1 , . . . , gm ∈ G we put
+                                                                               
+                              A(g1 , . . . , gm ) = diam A+13δ
+                                                          g1   ∩ . . . ∩ A+13δ
+                                                                          gm     .
+We denote by A the set of (ν +1)-tuples (g0 , . . . , gν ) such that g0 , . . . , gν generate a non-elementary
+subgroup of G and for all j ∈ {0, . . . , ν} we have [gj ] ≤ LS δ. We deﬁne
+                                A(G, X) =         sup      ({A (g0 , . . . , gν )}).
+                                             (g0 ,...,gν )∈A
+
+Remark 4.7. Notice that if G acts on a δ-hyperbolic metric space X and λX is a rescaling of X
+(that is, a metric space with the same underlying set and distances multiplied by λ), then λX is a
+λδ-hyperbolic metric space endowed with an action of G and invariants rinj (Q, λX) = λrinj (Q, X)
+for any subset Q of G, e(G, λX) = e(G, X), ν(G, λX) = ν(G, X) and A(G, λX) = λA(G, X).
+4.2. The Cone-Off Construction. In this subsection we introduce the cone-off construction
+over certain families of subspaces of a metric space, and explain how to extend the action of
+a group on the metric space to an action on the cone-oﬀ. This construction will allow us to
+iteratively apply the Small Cancellation Theorem introduced in Subsection 4.3. For the rest of this
+section, we ﬁx a number ρ > 0.
+Definition 4.8. Let X be a metric space. The cone over X of radius ρ, denoted by Zρ (X) (or,
+if the value of ρ is clear by context, simply Z(X)) is the topological quotient of X × [0, ρ] by the
+equivalence relation identifying all points of the form (x, 0), x ∈ X.
+   The equivalence class of (x, 0) is called the apex of the cone. The cone over X is endowed with
+a metric characterized as follows (see [BH13, Chapter I.5, Proposition 5.9]). Let x = (y, r) and
+x′ = (y ′ , r′ ) be two points of Z(X), then
+                                                                                          
+                            ′                  ′                  ′            dX (y, y ′ )
+           cosh(dZ(X) (x, x )) = cosh(r) cosh(r ) − sinh(r) sinh(r )cos min π,                 .
+                                                                                sinh(ρ)
+   In addition, if X is a length space, then so is Z(X). An action by isometries of a group G over
+X naturally extends to an action by isometries on Z(X) as follows: for x = (y, r) in Z(X) and
+g ∈ G, put g · x = (g · y, r). Note that in this case the apex of Z(X) is a global ﬁxed point.
+   We can compare the original metric space X with its cone Z(X) by deﬁning a comparison map
+ψ : X −→ Z(X) such that x 7−→ (x, ρ).
+   Now we are ready to introduce the cone-oﬀ construction.
+Definition 4.9. Let X be a hyperbolic length space, Y a collection of strongly quasi-convex subsets
+of X. For Y ∈ Y, denote by dY the metric on Y given by the length structure on Y induced by
+the length structure of X, by Z(Y ) the cone over Y (endowed with the distance dY ) of radius ρ
+and by ψY the corresponding comparison map.
+   The cone-off of radius ρ over X relative to Y, denoted by Ẋρ (Y) (or simply Ẋ if ρ and Y are
+clear by context) is the quotient of the disjoint union of X and the Z(Y ) for all Y ∈ Y by the
+equivalence relation that, for all Y ∈ Y and y ∈ Y , identiﬁes y with ψY (y) ∈ Z(Y ).
+   Since the hyperbolic length space X embeds into the cone-oﬀ Ẋ, we will identify it with its
+image under this embedding. The cone-oﬀ is naturally endowed with a metric given by the length
+structure on Ẋ induced by the length structures on X and Z(Y ) for all Y ∈ Y [Cou16b, Section
+4.2].
+16                          MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+  The following lemma gives conditions under which the cone-oﬀ is hyperbolic, with certain control
+over the hyperbolicity constant. For this purpose, we introduce a parameter that controls the
+overlap between the elements of Y. We write
+                                                                 
+                            ∆(Y) = sup       diam Y1+5δ ∩ Y2+5δ .
+                                        Y1 6=Y2 ∈Y
+
+     Following Coulon, we denote by δ the hyperbolicity constant of the hyperbolic plane.
+Lemma 4.10. [Cou14, Proposition 6.4] There exist positive numbers δ0 , ∆0 and ρ0 that satisfy
+the following property. Let X be a δ-hyperbolic space with δ ≤ δ0 . Let Y be a family of strongly
+quasi-convex subsets of X with ∆(Y) ≤ ∆0 . Let ρ ≥ ρ0 . Then the cone-off Ẋρ (Y) is δ̇-hyperbolic,
+with δ̇ = 900δ.
+   For the remainder of this subsection, we ﬁx a length space X and a family Y as in Deﬁnition 4.9.
+   Lemmas 4.12 and 4.13 provide some insight on how the metric on Ẋ relates to the metric
+on X and to the cones Z(Y ). In order to state the ﬁrst of these results, we introduce the map
+µ : R≥0 −→ R≥0 characterized by
+                                                                         
+                                       2           2                   t
+                    cosh(µ(t)) = cosh (ρ) − sinh (ρ)cos min π,
+                                                                   sinh(ρ)
+for all t ≥ 0. The map µ has the following properties that will be used further down.
+Lemma 4.11. [Cou16b, Proposition 4.2] The map µ is continuous, concave (down) and non-
+decreasing. Furthermore, the following hold.
+                                                        
+                                       1            1
+      • For all t ≥ 0, we have: t −        1+               t3 ≤ µ(t) ≤ t, and
+                                       24       sinh2 (ρ)      
+                                                           µ(t)
+      • for all t ∈ [0, π sinh(ρ)], we have: t ≤ π sinh          .
+                                                             2
+Lemma 4.12. [Cou14, Lemma 5.8] For every x, x′ ∈ X we have:
+                                µ(dX (x, x′ )) ≤ dẊ (x, x′ ) ≤ dX (x, x′ ).
+Lemma 4.13. [Cou14, Lemma 5.7] Let v be the apex of a cone Z(Y ) for some Y ∈ Y. Then,
+BẊ (v, ρ) = Z(Y )\Y .
+4.2.1. Group action on the cone-off. For the remainder of Section 4, we ﬁx real numbers ρ ≥
+max({ρ0 , 1010 δ, 1020 LS δ}), δ ≤ δ0 , a δ-hyperbolic length space X, a family Y of strongly quasi-
+convex subsets of X with ∆(Y) ≤ ∆0 , where ρ0 , δ0 and ∆0 are the parameters provided by
+Lemma 4.10.
+   Consider a group G acting by isometries on X, and acting on the family Y by left translation,
+that is, such that g · Y ∈ Y for all Y ∈ Y. We can extend this action by homogeneity to an action
+of G on the cone-oﬀ, as follows. Let Y ∈ Y and x = (y, r) be a point of the cone Z(Y ). For g ∈ G
+we deﬁne g · x = g · (y, r) = (g · y, r) ∈ Z(g · Y ). It follows from the deﬁnition of the metric of Ẋ
+that this action is an isometry on Ẋ.
+   The next result uses techniques from [Cou16b, Proposition 4.10] for WPD actions on hyperbolic
+length spaces, and from [DGO17, Proposition 5.40] for acylindrical actions on hyperbolic geodesic
+spaces.
+Lemma 4.14. If the action of G on X is acylindrical, then so is the induced action on Ẋ.
+Proof. We will apply Remark 3.29. The action on X is acylindrical, therefore, there are positive
+numbers L′ and M ′ such that, for all x, x′ ∈ X, if dX (x, x′ ) is at least L′ , then there are at most
+M ′ elements moving x and x′ less than π sinh(300δ̇). We will show that we can take M ′ and L′ +4ρ
+as the parameters M and L of Remark 3.29.
+    Now, let a, b ∈ Ẋ be such that d(a, b) ≥ L′ + 4ρ, and consider a (1, δ̇)-quasi-geodesic segment
+[a, b]δ̇ . If an element g ∈ G moves both a and b by less than 100δ̇, we can apply Lemma 3.13 to
+            NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                      17
+
+
+conclude that any point in this quasi-geodesic segment is moved by less than 600δ̇ by g. Further-
+more, since the diameter of the ball around an apex of the cone is 2ρ, this quasi-geodesic must
+contain points of X at distance at least L′ . Therefore, we may assume that a, b ∈ X and that we
+need to bound the number of elements of G moving a and b by at most 600δ̇. By Lemma 4.12, we
+have that
+                              µ(dX (a, g · a)) ≤ dẊ (a, g · a) ≤ 600δ̇.
+By the choice of ρ, we have that µ(dX (a, g · a)) < π sinh(ρ), and therefore Lemma 4.11 gives
+                                       dX (a, g · a) ≤ π sinh(300δ̇).
+Similarly, we obtain that
+                                       dX (b, g · b) ≤ π sinh(300δ̇),
+so the number of elements g satisfying this property is indeed at most M ′ .                          
+4.3. The Small Cancellation Theorem. In this subsection we will use the cone-oﬀ construction
+introduced in Subsection 4.2 to state a small cancellation theorem. We follow the exposition by
+Coulon in [Cou16b, Section 5] with the diﬀerence that we consider the more restricted case of
+acylindrical actions (instead of WPD ones). To simplify the statements of some results, throughout
+this subsection we will ﬁx a group G acting on a δ-hyperbolic length space X. We assume that
+this action is acylindrical and non-elementary. We consider a family Q of pairs (H, Y ) such that
+      • there exists an odd integer n ≥ 100 such that for all H we have a loxodromic element
+         h′ ∈ G such that H = hh′n i,
+      • Y is the cylinder Yh for h = h′n ,
+      • there is a normal subgroup N E G without involutions and containing the normal subgroup
+         K of G generated by the collection {H : (H, Y ) ∈ Q} such that for every pair (H, Y ) ∈ Q
+         the element h′ is a primitive loxodromic element of N , and
+      • there is an action of G on Q via g · (H, Y ) = (g −1 Hg, g −1 Y ) for g ∈ G and (H, Y ) ∈ Q.
+   We want to study the quotient G     b = G/K, and to that purpose, we will deﬁne a metric space
+ b             b
+X on which G acts. Notice ﬁrst that, since Y is a strongly quasi-convex subset of X for all
+(H, Y ) ∈ Q (see Lemma 3.25), we can construct the cone-oﬀ Ẋ of radius ρ relative to the family
+{Y : (H, Y ) ∈ Q}. The group G has a natural action on this space induced by the action of G on
+X. We deﬁne the space X    b as the quotient of Ẋ by K. This space is endowed with an action of G   b
+(see [Cou16b, Section 5.1]). We write ζ : Ẋ −→ X  b for the projection map and v(Q) for the subset
+of Ẋ consisting of the apices of the cones Z(Y ) for (H, Y ) ∈ Q. Then vb(Q) denotes its image in
+ b We will also call the elements of vb(Q) apices. For an element g ∈ G (respectively, x ∈ Ẋ), we
+X.
+will write b
+           g (respectively, x                   b (respectively, X).
+                            b) for its image in G                b
+   In order to get some desired properties of the action of G   b on X,b we need the action of G on
+X to satisfy some conditions related to the quantities ∆(Q) and T (Q), that play the role of the
+length of the largest piece and the length of the shortest relator in the usual small cancellation
+theory, and that are deﬁned as
+                    ∆(Q) = sup({diam(Y1+5δ ∩ Y2+5δ ) : (H1 , Y1 ) 6= (H2 , Y2 ) ∈ Q})
+and
+                               T (Q) = inf({[h] : h ∈ H , (H, Y ) ∈ Q}).
+  Now we can introduce the aforementioned small cancellation result. Recall that δ denotes the
+hyperbolicity constant of the hyperbolic plane.
+Lemma 4.15. There exist positive constants ρ0 , δ0 and ∆0 that are independent of X, G and Q
+such that for δ ≤ δ0 , ρ ≥ ρ0 , ∆(Q) ≤ ∆0 and T (Q) ≥ 8π sinh(ρ) the following hold.
+      (1) (see [Cou14, Proposition 6.4]) The cone-off Ẋ is a δ̇-hyperbolic length space with δ̇ = 900δ.
+                                                           b
+                                                   b is a δ-hyperbolic
+      (2) (see [Cou14, Proposition 6.7]) The space X                    length space with δb = 64·104δ.
+18                          MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+     (3) (see [Cou14, Propositions 5.14 and 5.15]) The group G    b = G/K acts by isometries on X, b
+         and this action is WPD and non-elementary.
+     (4) For every (H, Y ) ∈ Q, the projection G ։ G    b induces an isomorphism from Stab(Y )/H
+         onto the image of Stab(Y ).
+     (5) (see [Cou16b, Proposition 5.16]) The image in G     b of an elliptic (respectively parabolic,
+         loxodromic) subgroup of G is elliptic (respectively parabolic or elliptic, elementary).
+     (6) (see [Cou16b, Proposition 5.17]) Let E be an elliptic subgroup of G. The projection G ։ G  b
+         induces an isomorphism from E onto its image.
+     (7) (see [Cou16b, Proposition 5.18]) Let E   b be an elliptic subgroup of G. b Then one of the
+         following holds.
+          (a) There is an elliptic subgroup E of G (for its action on X) such that the projection
+              G։G   b induces an isomorphism from E onto E.   b
+          (b) There exists b                    b
+                           v ∈ vb(Q) such that E is contained in Stab(b v ).
+Remark 4.16. Notice that (H1 , Y1 ) 6= (H2 , Y2 ) ∈ Q implies Y1 6= Y2 since ∆(Q) is ﬁnite and the
+cylinder of a loxodromic element is unbounded. In particular, for (H, Y ) ∈ Q we must have indeed
+that H is a normal subgroup of Stab(Y ), so that point (4) of Lemma 4.15 actually makes sense.
+Moreover, this also implies that, for all vb ∈ vb(Q), if we write Y for the subset of a pair (H, Y ) ∈ Q
+such that vb is the image of the vertex corresponding to Z(Y ), then Stab(b     v) ∼
+                                                                                   = Stab(Y )/H. Note
+that Stab(bv ) is ﬁnite since Stab(Y ) is virtually cyclic inﬁnite (by Lemma 3.33) and H is inﬁnite, and
+thus has ﬁnite index in Stab(Y ). Moreover, if F is the maximal ﬁnite normal subgroup of Stab(Y ),
+then its isomorphic image Fb in Stab(b      v ) is normal in this subgroup. Furthermore, Stab(b  v )/Fb is
+isomorphic either to Dn or to Cn , and the quotient map takes the elliptic elements of Stab(Y ) into
+either the trivial element or an involution of Dn .
+                                                    b and of the action of the group G
+   We now state a number of properties of the space X                                b on it that
+will prove to be useful further forward.
+Lemma 4.17. [Cou16b, Proposition 5.8] The set vb(Q) has at least two elements.
+Lemma 4.18. [Cou16b, Corollary 5.10] Let (H, Y ) ∈ Q and v be the apex of Z(Y ). Let gb ∈ Stab(b  v)
+be such that it is not the image of an elliptic element of Stab(Y ). Then, there exists k ∈ Z such
+                               b
+that Abgk is contained in the 6δ-neighbourhood   of b
+                                                    v . In particular, b
+                                                                       v is the unique apex of vb(Q)
+fixed by gb.
+Lemma 4.19. [Cou14, Proposition 3.21] Let α ≥ 0 and d ≥ α. Let Zb be an α-quasi-convex subset
+   b We assume that, for every vb ∈ b
+of X.                                           b does not intersect B(b
+                                         v (Q), Z                                       b Then, there
+                                                                       v , ρ/20 + d + 10δ).
+exists a subset Z of Ẋ with the following properties.
+    (1) The map ζ : Ẋ −→ X    b induces an isometry from Z onto Z.  b
+    (2) For every b      b         b                                 b
+                    g ∈ G, if gb · Z lies in the d-neighbourhood of Z, then there exists a preimage g
+            g such that for every z, z ′ ∈ Z, we have that
+         of b
+                                      dẊ (g · z ′ , z) = dXb (b
+                                                               g · zb′ , zb).
+                            b induces an isomorphism from Stab(Z) onto Stab(Z).
+     (3) The projection G ։ G                                               b
+                                                                                 b The proof
+   The next result studies the structure of loxodromic subgroups in the quotient G.
+follows very closely the proof of [Cou16b, Proposition 5.26].
+Lemma 4.20. (Compare [Cou16b, Proposition 5.26]) Let E     b be a loxodromic subgroup of G,
+                                                                                         b Fb its
+maximal normal finite subgroup. Then one of the following holds.
+   (1) There exists a loxodromic subgroup E of G such that the projection G ։ G     b induces an
+       isomorphism from E onto E  b (in particular, it induces an isomorphism from the maximal
+       normal finite subgroup F of E onto Fb ).
+          NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                         19
+
+
+    (2) There exists a pair (H, Y ) in Q with the following property: there is a finite normal subgroup
+        F ′ of Stab(Y ) such that its image is a subgroup of index at most 2 in Fb. Moreover, if
+        Stab(Y ) is of cyclic type, then Fb coincides with the image of F ′ .
+
+Proof. Let E b be a loxodromic subgroup of G   b and let Fb be the maximal normal ﬁnite subgroup of
+ b Now, since E
+E.               b normalizes Fb, then C b is invariant under E. b Thus, E  b ≤ Stab(C b ). Moreover,
+                                           F                                             F
+                         b
+by Lemma 3.27, CFb is 9δ-quasi-convex.
+   Suppose now that for every vb ∈ vb(Q) we have that CFb does not intersect B(b     v , ρ/10). By the
+choice of ρ, we have that ρ/10 > ρ/20 + 19δ,   b so we can apply Lemma 4.19 to get a subgroup E
+of G such that the projection G ։ G     b induces an isomorphism from E onto E.   b Write F for the
+              b
+preimage of F in E. Note that E normalizes F . Furthermore, as the preimage of a loxodromic
+subgroup of G,b by Theorem 4.15 (5) E is loxodromic. Therefore, we are in the ﬁrst case.
+   Assume now there is some vb ∈ b   v (Q) such that CFb intersects B(bv , ρ/10). Let x
+                                                                                      b be a point in
+                                 b ∈ Fb, the triangle inequality gives
+this intersection. Then, for all u
+                 d(b
+                   v, u
+                      b · vb) ≤ d(b
+                                  v, x
+                                     b) + d(b
+                                            x, u
+                                               b·x
+                                                 b) + d(b
+                                                        u·x
+                                                          b, u v ) ≤ ρ/5 + 11δb < 2ρ.
+                                                             b·b
+Thus, since G  b acts on vb(Q) and the distance between distinct apices is at least 2ρ, then u b must be
+in Stab(bv ). Let (H, Y ) ∈ Q be a pair such that the image of the apex of its cone on X    b is vb.
+    Suppose now that Fb contains an element u  b that is not the image of an elliptic element of Stab(Y ).
+Then, by Lemma 4.18, a power u                                                           b
+                                   bk of this element has its axis contained in the 6δ-neighbourhood
+                                                                                   b
+of vb. This implies that the characteristic subset CFb is contained in the 15δ-neighbourhood of vb:
+indeed, for x ∈ CFb we have d(x, uk (x)) ≤ 11δ (by deﬁnition of CFb ), thus by Proposition 3.10 in
+[Cou16b] the distance between x and the axis of uk is at most 8.5δ; now, since the axis of uk is
+                    b
+contained in the 6δ-neighbourhood     of vb, we get d(x, vb) ≤ 14.5δ. By Lemma 3.34, the cylinder Ybg is
+                      b
+contained in the 51δ-neighbourhood     of the CFb . But Ybg has bi-inﬁnite local quasi-geodesics joining
+gb±∞ , so it is not contained in a bounded set.
+    Therefore, Fb cannot contain an element u  b that is not the image of an elliptic element of Stab(Y ).
+Now by Remark 4.16 we are in the second case.                                                          
+
+  The next result uses the techniques from [Cou16b, Proposition 5.14] for WPD actions on hy-
+perbolic length spaces, and in [DGO17, Proposition 5.33] for acylindrical actions on hyperbolic
+geodesic spaces.
+Lemma 4.21. Suppose that there exists m ∈ N such that |Stab(b
+                                                            v )| ≤ m for all vb ∈ vb(Q). Then,
+              b    b
+the action of G on X is acylindrical.
+Proof. We will apply Remark 3.29. The action of G on the cone-oﬀ Ẋ is acylindrical, therefore,
+there are positive numbers M ′ and L′ such that, for all x, x′ ∈ Ẋ, if dẊ (x, x′ ) is at least L′ , then
+there are at most M ′ elements moving x and x′ less than 100δ.   b We will show that we can take
+           ′         ′
+max{m, M } and L as the parameters M and L of Remark 3.29.
+   Now, let ba, bb ∈ X b be at distance at least L′ , and consider the set Yb = hull({a, b}). By
+                        b
+Lemma 3.18, it is a 6δ-quasi-convex               b Moreover, by Lemma 3.13, for every x
+                                       subset of X.                                               b ∈ Yb ,
+every element b     b
+               g ∈ G moving b        b                b
+                              a and b by at most 100δ will move x b by at most 600δ.    b
+   Suppose that there is vb ∈ vb(Q) lying in the closed ρ/10-neighbourhood of Yb , and let b    c ∈ Yb be
+at distance at most ρ/10 of vb. Then, we get from the triangle inequality that
+                            d(b
+                              g · vb, b
+                                      v ) ≤ 2d(b
+                                               c, b
+                                                  v ) + d(b
+                                                          g·b
+                                                            c, b             b
+                                                               c) ≤ ρ/5 + 600δ.
+Recall that ρ ≥ max({ρ0 , 1010 δ, 1020 LS δ}) and δb = 64 · 104δ. Therefore, ρ/5 + 600δb (and thus also
+  g · vb, vb)) is less than 2ρ, and this quantity is a lower bound for the distance between apices. In
+d(b
+consequence, gb ﬁxes vb, and therefore, there can only be m such elements.
+20                          MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+   Now suppose that, for all vb ∈ vb(Q), Yb does not intersect B(bv , ρ/10). By the choice of ρ, we
+have that ρ/20 + 610δ < ρ/10, thus we can apply Lemma 4.19 with d = 600δb and α = 6δ:
+                    b                                                                      b if some
+    b
+g ∈ G moves b
+b                  b                  b                                   b
+             a and b by at most 100δ, then gb · Y lies in the closed 600δ-neighbourhood of Yb (by
+                                                 b
+Lemma 3.13), and by Lemma 4.19 we can ﬁnd preimages a and b of b       a and bb respectively, with
+                                                        a, bb) ≥ L′ ,
+                                      dẊ (a, b) = dXb (b
+and such that there is a preimage g of gb in G satisfying
+                                  dẊ (g · a, a) = dXb (b
+                                                        g ·b  a) ≤ 100δb
+                                                           a, b
+and
+                                                        g · bb, bb) ≤ 100δ.
+                                  dẊ (g · b, b) = dXb (b                b
+By the choice of L , there can be at most M ′ such elements g, yielding that there can be at most
+                    ′
+
+M ′ elements b
+             g moving both b a and bb at most 100δ.
+                                                 b                                             
+
+   We now want to ﬁnd a bound for the injectivity radius of the images of certain subsets of N
+(recall that N is a normal subgroup of G that has no involution, as deﬁned at the beginning of
+Section 4.3). The following technical deﬁnition isolates the properties that a subset Q of N needs
+to have so that we can bound the injectivity radius of its image in terms of the injectivity radius of
+Q. In our applications in Section 5, we will take for G a group in class ST ′ (p) (or in an auxiliary
+class ST ′0 (p) that will be deﬁned in that section), for Q the set of translations, and for N the
+subgroup of G generated by translations.
+Definition 4.22. Let Q be a subset of N and Q    b be its image in G.
+                                                                    b We say that Q is stable with
+respect to Q if the following property is satisﬁed: let b                              b Suppose
+                                                        g be a non-elliptic element of Q.
+                                                                b
+there is a subset A of Ẋ such that the projection ζ : Ẋ −→ X induces an isometry from A onto
+the axis Abgm for some m ∈ N and the projection G ։ G      b induces an isomorphism from Stab(A)
+onto Stab(Abgm ). Let g be the preimage of b
+                                           g in Stab(A). Then g ∈ Q.
+   We will prove in Lemma 5.1 that in our setting the set of translations is stable in the sense of
+Deﬁnition 4.22 (with respect to an appropriate family Q).
+   Let us remark that being a stable subset may depend on the speciﬁc family Q we are consid-
+ering. However, if the family Q is clear by context, we may omit mentioning it explicitly. Notice
+also that a subgroup of N containing K will be a stable subset. In particular, N is a stable sub-
+set independently of the family in consideration. The next lemma slightly generalizes [Cou16b,
+Proposition 5.31].
+Lemma 4.23. (Compare [Cou16b, Proposition 5.31]) Let Q be a stable subset of N . Denote by l
+the infimum over the asymptotic translation length in X of loxodromic elements of Q that do not
+                                                                        b If every preimage of gb in
+belong to Stab(Y ) for (H, Y ) ∈ Q. Let gb be a non-elliptic element of Q.
+G is loxodromic, then we have
+                                                                
+                                                      lδb
+                                   g ]∞ ≥ min
+                                  [b                          , δb .
+                                                           b
+                                                  πsinh(26δ)
+Proof. As stated before, this lemma appears in [Cou16b] as Proposition 5.31 taking the stable
+subset Q to be the whole subgroup N . However, the proof works with no further change if we put
+Q in place of N , since we have included ad hoc in Deﬁnition 4.22 the property that we need for
+this to happen.                                                                              
+
+     From this result we immediately obtain the following corollary and the desired bound.
+Corollary 4.24. Let Q be a stable subset of N . Denote by l the infimum over the asymptotic
+translation length in X of loxodromic elements of Q that do not belong to Stab(Y ) for (H, Y ) ∈ Q.
+          NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                         21
+
+
+Then we have                                                          
+                                      b X)
+                                         b ≥ min            lδb       b
+                                rinj (Q,                             ,δ   .
+                                                                b
+                                                        πsinh(26δ)
+4.4. Small Cancellation and Partial Periodic Quotients.
+4.4.1. Small cancellation quotients (SC-quotients).
+Proposition 4.25. (Compare [Cou16b, Proposition 6.1]) There exist positive constants ρ0 , δ1
+and LS such that for every integer ν0 there is an integer n0 such that the following holds:
+   Suppose G is a group acting by isometries on a δ1 -hyperbolic length space X such that this
+action is WPD and non-elementary. Let N be a normal subgroup of G without involutions, Q a
+conjugation invariant set of elements of N , and let P be the subset of loxodromic elements h of Q
+which are primitive as elements of N and such that [h] ≤ LS δ1 . Let n1 ≥ n0 and n ≥ n1 be odd
+and suppose furthermore that:
+    (1) e(N, X) divides n,
+    (2) ν(N, X) ≤ ν0 ,
+    (3) A(N, X) ≤ 6πν0 q sinh(2LS δ1 ),
+                             LS sinh(ρ0 )
+    (4) rinj (Q, X) ≥ 2δ1   n1 sinh(26δ1 ) .
+
+   Let K = hhn : h ∈ P iG , put G  b = G/K and let N    b, Q b denote the images of N and Q under the
+quotient map. Then N    b contains no involution and there exists a δ1 -hyperbolic length space X b such
+                 b N
+that the tuple (G,  b , Q,
+                        b X)
+                           b satisfies the conditions (1) – (3) of this proposition with N   b and X b in
+place of N and X respectively.
+                                                                                             b N
+   Additionally, if Q is stable with respect to Q = {(hhn i, Yh ) : h ∈ P }, then the tuple (G, b , Q,
+                                                                                                    b X)
+                                                                                                       b
+                                b     b
+satisfies condition (4) with Q and X in place of Q and X respectively.
+   Moreover, the quotient map G → G,     b g 7→ b
+                                                g has the following properties.
+       • For g ∈ G, we have
+                                           s                            
+                                      1    4π    sinh(ρ 0 ) sinh(26δ  )
+                                                                      1 
+                             g ]∞
+                            [b  b ≤ √
+                                X
+                                                                           [g]∞
+                                                                              X.
+                                      n 1 δ1                LS
+
+      • For every non-loxodromic elementary subgroup E of G, the quotient map G → G           b induces
+                                                    b
+         an isomorphism from E onto its image E which is elementary and non-loxodromic.
+                                                                  b . Either gbn = 1 or gb is the image
+      • Let gb be an elliptic (respectively parabolic) element of N
+         of an elliptic (respectively parabolic) element of N .
+      • Let u, u′ ∈ N be such that [u] < LS δ1 and u′ is elliptic. If u  b and u b′ are conjugate in G b
+                              ′
+         then so are u and u in G.
+   Furthermore, if the action of G on X is acylindrical, and if there is some positive integer m such
+that for all h ∈ P we have |Stab(Yh )/hhn i| ≤ m, then the action of G b on X  b is also acylindrical.
+
+Proof. First of all, note that Proposition 6.1 in [Cou16b] involves three constants A0 , r0 , α that do
+not appear in Proposition 4.25 above, while Proposition 4.25 involves a constant ρ0 that does not
+appear in [Cou16b, Proposition 6.1]. This diﬀerence is purely cosmetic, since the constants A0 , r0 , α
+can be expressed explicitly in terms of LS , δ1 , ρ0 (and we refer the reader to the very beginning of
+the proof of Proposition 6.1 in [Cou16b] for the explicit formulas), and the assumptions (1) to (4)
+above are simply a rewriting of the assumptions (1) to (4) in [Cou16b, Proposition 6.1] in terms
+of ρ0 instead of A0 , r0 , α, and with Q in place of N in the case of assumption (4).
+   With this in mind the proof of Proposition 6.1 in [Cou16b] works for Proposition 4.25 modulo
+some mostly minor changes. We include some details of the proof, focusing on the construction of
+           b and we refer to the proof of Proposition 6.1 in [Cou16b] whenever parts of this proof
+the space X,
+work exactly as in that case.
+22                         MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+   Fix a positive integer ν0 . We will deﬁne a rescaling parameter λ for the space X. For a positive
+integer k, we put                          s
+                                         4π sinh(ρ0 ) sinh(26δ1 )
+                                  λk =                             .
+                                          δ1            kLS
+Now, we set the critical exponent n0 as the smallest integer greater than 100 such that for every
+integer k ≥ n0 we have
+                                               λk δ1 ≤ δ0 ,
+                     λk (6πν0 sinh(2LS δ1 ) + 118δ1 ) ≤ min{∆0 , π sinh(2LS δ1 )},
+                                                LS δ12
+                                        λk                  ≤ δ1 ,
+                                            2π sinh(26δ1 )
+and
+                                               λk ρ0 ≤ ρ0 ,
+where the parameters ρ0 , δ0 and ∆0 are the ones appearing in Lemma 4.15. Let n1 ≥ n0 and
+n ≥ n1 be an odd integer, and write λ = λn1 .
+   Let G be a group with a normal subgroup N acting on a hyperbolic space X, and let Q be a
+family of conjugation invariant elements of N . Assume that (G, N, Q, X) satisﬁes the assumptions
+of Proposition 4.25 for ν0 and n. Remember that we denote by G     b the quotient of G by the normal
+                               n
+subgroup K generated by {h : h ∈ P }, where P is as in the statement of the proposition. Since
+P ⊆ N , K is a (normal) subgroup of N , and we write N      b = N/K.
+   We consider for the rest of this proof the action of G on the rescaled space λX (unless explicitly
+stated otherwise). This is a δ-hyperbolic space with δ = λδ1 ≤ δ0 . We denote by Q the family
+Q = {(hhn i, Yh ) : h ∈ P }. We claim that this family satisﬁes ∆(Q) ≤ ∆0 and T (Q) ≥ 8π sinh(ρ0 ).
+The proof of the ﬁrst inequality works exactly as in Lemma 6.2 in [Cou16b]. For the second
+inequality, notice that by Remark 4.7, assumption (4) and the choice of n we have
+                                              8π sinh(ρ0 )   8π sinh(ρ0 )
+                             rinj (Q, λX) ≥                ≥              .
+                                                   n1             n
+Thus, since P is a subset of Q, for all h ∈ P we get [hn ]∞ = n[h]∞ ≥ 8π sinh(ρ0 ), from which the
+desired inequality follows.
+   On account of this, we can apply Lemma 4.15 to the action of G on λX and the family Q, so
+we denote by Ẋ the cone-oﬀ or radius ρ0 over X relative to the family {Y : (H, Y ) ∈ Q}, and we
+set Xb as the quotient of Ẋ by K.
+   The proof that G,b N b and X b satisfy the required properties now follows exactly as in the proof
+of Proposition 6.1 in [Cou16b].
+   In particular, the results from Lemma 4.15 to Lemma 4.24 apply to the action of G    b on X.
+                                                                                              b
+   Suppose now that G acts acylindrically on X. Then by Proposition 4.25, and the facts that
+acylindricity is preserved by rescalings and that, by Lemmas 4.14 and 4.21, the acylindricity of
+the action is also preserved by the cone-oﬀ construction (for G) and by the SC-quotient (for G,  b if
+there exists a bound for |Stab(Yh )/hh i|) respectively.
+                                        n
+
+   Finally, assume that Q is stable with respect to Q. If g is a loxodromic isometry of Q that does
+not belong to Stab(Y ) for any (H, Y ) ∈ Q, then by Lemma 3.22, its asymptotic translation length
+satisﬁes
+                                        [g]∞ ≥ λ(LS δ1 − 32δ1 ).
+The choice of LS now implies [g]∞ ≥ LS δ1 /2 and we obtained the required estimate from Corol-
+lary 4.24 and the choice of n1 .                                                                   
+   Terminology. For the remainder of the article, we call a group obtained as the quotient of a
+group G as provided by Proposition 4.25 a small cancellation quotient (or simply an SC-quotient )
+                               b Similarly, if X is the length space on which G acts, we will write
+of G, and we will denote it by G.
+b
+X for the length space on which G b acts.
+           NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                         23
+
+
+   Notice that by Proposition 4.25, the quotient group G b and the hyperbolic space X
+                                                                                    b on which it
+acts exist whether the family Q is stable with respect to Q or not. However, we want to apply
+Proposition 4.25 iteratively when proving Theorem 4.28, and for this purpose we will need to take
+               b Therefore, we need to bound the injectivity radius of Q,
+a quotient of G.                                                         b and to this purpose is
+that we need to assume the stability of Q. In particular, we will have that if Q  b is stable with
+             b                                          b
+respect to Q (where this family is constructed from Q exactly as Q was constructed from Q),
+       b N
+then (G,  b , Q,
+              b X)
+                 b satisﬁes all assumptions of Proposition 4.25. This observation also motivates
+the following strengthening of Deﬁnition 4.22 for stable families.
+Definition 4.26. Let Q be a subset of N . We say that Q is strongly stable if the following property
+holds.
+   Suppose {G b i : 0 ≤ i ≤ k} is a ﬁnite sequence of quotients obtained from G = G     b 0 by successive
+                                                             b
+applications of Lemma 4.15, where the space on which G0 acts is (a possibly rescaled version of)
+X, and the space X  bi+1 on which G b i+1 acts is (a possibly rescaled version of) the space X  b provided
+by Lemma 4.15 when we consider the action of G       bi on Xbi . Suppose furthermore that at step i the
+family Qi was built by taking the subsets Hi of G     bi to be the n-th power of a loxodromic element
+b                         b
+h in the image of Q in Gi that is primitive as an element of the image N     bi of N in Gb i , and Y is the
+cylinder of this n-th power.
+   Then the image Q   b i of Q in G
+                                  bi is stable with respect to Qi .
+
+Corollary 4.27. If the tuple (G, N, Q, X) satisfies the assumptions of Proposition 4.25 and Q is
+                               b N
+strongly stable, then so does (G, b , Q,
+                                      b X),
+                                         b and Q
+                                               b is strongly stable as well.
+
+  Thus, under the assumption that Q is strongly stable, we can indeed iterate the application of
+Proposition 4.25.
+4.4.2. Partial periodic quotients (PP-quotients).
+Theorem 4.28. (Compare [Cou16b, Theorem 6.9]) Let X be a δ-hyperbolic length space. Let G
+be a group acting by isometries on X. We suppose that this action is WPD and non-elementary.
+Let N be a normal subgroup of G without involutions, and Q be a conjugation invariant strongly
+stable subset of N . In addition we assume that e(N, X) is odd, ν(N, X) and A(N, X) are finite and
+rinj (Q, X) is positive. There exist a normal subgroup K of G contained in N and a critical exponent
+n1 that only depends on δ, ν(N, X), A(N, X) and rinj (Q, X) such that for every odd integer n ≥ n1
+which is a multiple of e(N, X) the following holds:
+     (1) if E is an elementary subgroup of G which is not loxodromic, then the projection G ։ Ḡ =
+         G/K induces an isomorphism from E onto its image;
+     (2) every non-trivial element of K is loxodromic;
+     (3) for every element ḡ of finite order in the image N̄ of N in Ḡ, either ḡ n = 1 or ḡ is the
+         image of an elliptic element of N . Moreover, for every element h in Q, either its image h̄
+         in N̄ satisfies h̄n = 1 or it is identified with the image of a non-loxodromic element of N ;
+     (4) there are infinitely many elements in N̄ which do not belong to the image of an elementary
+         non-loxodromic subgroup of G.
+  Notice that the third consequence of Theorem 4.28 implies that N̄ contains no involution since
+N contains no involution and n is odd.
+Proof of Theorem 4.28. We will obtain Theorem 4.28 by iterated applications of Proposition 4.25.
+More speciﬁcally, by putting G = G0 , and building a sequence (Gi )i∈N where we get Gi+1 from
+Gi by adding new relations of the form hn with h a loxodromic element of the image of Q in Gi
+that is primitive as an element of the image of N in this quotient. The group Ḡ in Theorem 4.28
+is deﬁned as the limit of this sequence.
+   We now give the details of the construction and refer the reader to the proof of Theorem 6.9 in
+[Cou16b] whenever parts of it work exactly as in that case.
+24                         MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+   Keeping the same notation for the constants LS , ρ0 and δ1 as in Proposition 4.25, we let
+X0 = λ′ X be a rescaled version of X where the rescaling constant λ′ is the greatest real number such
+that δ ′ ≤ δ1 and A(N, X0 ) ≤ 6πν0 sinh(2LS δ1 ). Thus, in X0 the hyperbolicity constant is δ ′ = λ′ δ,
+while the invariants satisfy e(N, X0 ) = e(N, X), ν(N, X0 ) = ν(N, X), rinj (Q, X0 ) = λ′ rinj (Q, X)
+and A(N, X0 ) = λ′ A(N, X). We write ν0 = ν(N, X). The critical exponent n1 is deﬁned as the
+smallest positive integer such that
+                                                     s
+                                                        LS sinh(ρ0 )
+                                 rinj (Q, X0 ) ≥ 2δ1
+                                                       n1 sinh(26δ1 )
+
+and
+                                       s                       
+                                   1  4π sinh(ρ0 ) sinh(26δ1 ) 
+                               1< √                               .
+                                   n 1 δ1          LS
+
+We will write c1 for the constant appearing in the ﬁrst of these equations and c2 for the constant ap-
+pearing in the second one. Notice that indeed the value of n1 only depends on δ, ν(N, X), A(N, X)
+and rinj (Q, X). Fix an odd integer n ≥ n1 that is a multiple of e(N, X). Denote by P0 the
+(conjugation invariant) set of elements h in Q0 that are loxodromic, primitive as elements of N0
+and that satisfy [h] ≤ LS δ1 . Set Q0 = {(hhn i, Yhn ) : h ∈ P0 }. Since Q is a strongly stable subset
+of N , the set Q0 is again strongly stable with respect to Q0 . Thus, by construction, and with
+N0 = N and Q0 = Q, the tuple (G0 , N0 , Q0 , X0 ) satisﬁes the assumptions of Proposition 4.25 for
+ν0 , exponent n and the family Q0 .
+    Now assume that we have constructed a group Gi acting on a hyperbolic space Xi in such a way
+that the tuple (Gi , Ni , Qi , Xi ) satisﬁes the assumptions of Proposition 4.25 for ν0 and exponent n
+(except that we do not require a priori Qi to be stable with respect to some family), where Ni
+and Qi are the images of N0 and Q0 respectively in Gi . Suppose that furthermore that for all
+0 < j ≤ i, the group Gj has been obtained as a quotient of Gj−1 by a subgroup K ′ = hh′n iGj−1
+where h is a loxodromic element of the image of Q in Gj−1 that are primitive as elements of Nj−1 .
+Denote by Pi the (conjugation invariant) set of elements h in Qi that are loxodromic, primitive as
+elements of Ni and that satisfy [h] ≤ LS δ1 . Put Qi = {(hhn i, Yhn ) : h ∈ Pi }. Since Q is a strongly
+stable subset, Qi is again strongly stable with respect to Qi , so indeed the tuple (Gi , Ni , Qi , Xi )
+satisﬁes the assumptions of Proposition 4.25 for ν0 , exponent n and Qi . Let Ki = hhn : h ∈ Pi iGi .
+By Proposition 4.25, the quotient Gi+1 = Gi /Ki acts on a hyperbolic space Xi+1 , and if we write
+Ni+1 = Ni /Ki and Qi+1 for the image of Q in Gi+1 , then the tuple (Gi+1 , Ni+1 , Qi+1 , Xi+1 )
+satisﬁes the assumptions of Proposition 4.25 for ν0 and exponent n (except that similarly we do
+not require a priori Qi+1 to be stable with respect to some family). Thus, we get a well-deﬁned
+sequence (Gi )i∈N .
+    Let Ḡ be the limit of the sequence (Gi )i∈N , so Ḡ is a quotient of G by a normal subgroup K
+contained in N . We claim that this group satisﬁes the required properties. The proofs of Properties
+(1) and (2) work exactly as in the case of Theorem 6.9 in [Cou16b]. For Property (4), it is enough
+to notice that this claim holds even for the set of all loxodromic elements of N , as is the case in
+Theorem 6.9 in [Cou16b].
+    It only remains to prove Property (3). A simple inductive argument using Proposition 4.25
+shows that if g ′ is an elliptic (respectively parabolic) element of Ni , then either g ′n = 1 or g ′ is
+the image of an elliptic (respectively parabolic) element of N . Let now ḡ be an element of ﬁnite
+order of N̄ which is not the image of an elliptic element of N . Denote by g a preimage of this
+element in N , and denote by gi the image of g in Ni . Notice that g must be loxodromic, since
+otherwise it would be a parabolic element (thus of inﬁnite order) and the projection would induce
+an isomorphism of hgi onto its image hḡi. If gi was of inﬁnite order for all i ∈ N, then ḡ would
+be of inﬁnite order, so there exists j ∈ N such that gj is of ﬁnite order. Now the ﬁrst claim of
+Property (3) follows from the second and third consequences of Proposition 4.25.
+          NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                          25
+
+
+   For the second part of this property, assume moreover that, under the notation of the previous
+paragraph, ḡ is in Q̄. By the way the sequence (Gi )i∈N was constructed, we have [gi ] ≤ (c2 )i [g].
+Therefore, there exists j ∈ N such that [gj ] < c1 = rinj (Qj , Xj ). In particular, since gj ∈ Qj , it is
+not loxodromic. It also cannot be parabolic (since once again, this would give that ḡ is of inﬁnite
+order), so it must be elliptic, and once again the desired conclusion follows from the second and
+third consequences of Proposition 4.25.                                                                 
+   Terminology. For the remainder of the article, we will call a group obtained as the quotient
+of a group G as provided by Theorem 4.28 a partial periodic quotient (or simply a PP-quotient ) of
+G, and we will denote it by Ḡ.
+
+                                  5. Proof of Proposition 2.15
+  The main purpose of this section is to prove Proposition 2.15, which we recall here.
+Proposition 2.15. Let G be a group acting on a tree X in such a way that the pair (G, X)
+belongs to ST ′ (p). Then G has a quotient Ḡ ∈ ST (p) such that the image of every pair of distinct
+involutions of p-affine type (respectively, of p-minimal type) is again of p-affine type (respectively,
+of p-minimal type), any subgroup of G that is elliptic for the action of G on X projects to an
+isomorphic image in Ḡ and O(G) = O(Ḡ).
+   In order to prove Proposition 2.15, we will apply Theorem 4.28 with N = hT r(G)i and Q =
+T r(G). The reason why we don’t simply take Q = N as in [Cou16b] is illustrated by the following
+example: if i, j, k are three (pairwise distinct) involutions of G, then (ijk)2 belongs to N and it
+may happen that (ijk)2 is primitive in N (note that ijk does not belong to N , otherwise N would
+contain an involution), but we don’t want to add the relation ((ijk)2 )p = 1 in our quotient because
+this would create a new involution, namely (ijk)p , over which we have no control (for instance,
+such an involution would have no reason to be conjugate to the other involutions), and thus this
+would break the conditions deﬁning our classes of groups.
+   In order to apply Theorem 4.28 we need to show that Q is strongly stable, and to do so we
+need to consider the intermediate small cancellation quotients obtained using Proposition 4.25.
+However, a pair (G,b X)
+                      b obtained from a pair (G, X) in ST ′ (p) does not belong to ST ′ (p) (because
+Xb is not a tree). For this reason we introduce a new auxiliary class ST ′0 (p) containing ST ′ (p), and
+we will prove that this new class is stable under the small cancellation quotients obtained using
+Proposition 4.25.
+Definition 5.1 (Class ST ′0 (p)). Let G′ be a group acting by isometries on a δ1 -hyperbolic length
+space X ′ (with δ1 the constant from Proposition 4.25). Write N ′ = hT r(G′ )i and Q′ = T r(G′ ).
+We say that (G′ , X ′ ) belongs to the class ST ′0 (p) if it satisﬁes the conditions of the class ST ′ (p)
+where Condition (2’) is replaced by Condition (2”):
+   (2”) The tuple (G′ , N ′ , Q′ , X ′ ) satisﬁes the assumptions of Proposition 4.25 for ν0 = 5 and
+        exponent p, except that Q′ is not required a priori to be stable with respect to Q′ .
+Remark 5.2. Notice that if we want to obtain a PP-quotient of a group in ST ′ (p) by iteratively
+obtaining SC-quotients of groups in ST ′0 (p), then we will need the family Q′ to be stable with
+respect to Q′ (where this family is obtained from Q′ exactly as Q is obtained from Q in Proposition
+4.25). However, we will see that this property follows directly from the other conditions deﬁning
+ST ′0 (p), so we do not need to include it explicitly in the deﬁnition above.
+  At the end of this section we will also obtain Lemma 5.17, that implies in particular that the
+sharply 2-transitive groups constructed in Theorem 2.17 do not split.
+5.1. Stability of the Class ST ′0 (p) under SC-Quotients. In this subsection we will show
+that the new class ST ′0 (p) deﬁned above is stable under SC-quotients. We ﬁx a group G′ acting
+on a hyperbolic space X ′ in such a way that the pair (G′ , X ′ ) belongs to ST ′0 (p), and we write
+26                           MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+N ′ = hT r(G′ )i and Q′ = T r(G′ ). The following result is the crucial induction step for the proof of
+Proposition 2.15.
+                                                                                                   b′ , X
+Proposition 5.3. If (G′ , X ′ ) is in class ST ′0 (p), then so is its small cancellation quotient (G    b ′)
+given by Proposition 4.25. Moreover, the image of every pair of distinct involutions of p-affine
+type (respectively, of p-minimal type) is again of p-affine type (respectively, of p-minimal type),
+and O(G′ ) = O(G  b′ ).
+   We need some preliminary lemmas. We ﬁrst give a classiﬁcation of the loxodromic subgroups
+of G′ .
+Lemma 5.4. Let E be a loxodromic subgroup of G′ . Then, E is isomorphic to one of the following
+four groups: Z, C2 × Z, D∞ or C4 ∗C2 C4 .
+Proof. By Lemma 3.33, we know that E is virtually cyclic and thus there exists a (necessarily
+normal) ﬁnite subgroup C of E such that E ≃ C ⋊ Z or E ≃ A ∗C B with [A : C] = [B : C] = 2.
+But C has order at most 2 by Condition (4’) of Deﬁnition 5.1. Moreover, by Condition (1)
+of Deﬁnition 2.4, no two involutions of G′ commute, which leads to the four possibilities listed
+above.                                                                                        
+     Note that among these four groups, only D∞ contains two distinct involutions.
+                                        b ′ . Then Stab(b
+Lemma 5.5. Let vb ∈ vb(Q) be an apex of X               v ) is isomorphic to Dp .
+Proof. Note that if h = ij ∈ N ′ is a loxodromic translation that is primitive in N ′ (where i, j
+are two distinct involutions), then the setwise stabilizer S of the pair {h±∞ } ⊂ ∂G′ contains
+two distinct involutions (namely i and j), thus by Lemma 5.4 and the subsequent remark it is
+isomorphic to D∞ . It follows that S = hi, ji since h is primitive in N ′ (and as a consequence, h
+is also primitive in G′ ). Now, let vb ∈ vb(Q) be an apex of Xb ′ . By the construction of the cone-oﬀ
+                                                     ′
+(see Section 4.3), and by our choice of the set Q , there exists a primitive loxodromic translation
+h = ij ∈ N ′ (where i, j are two distinct involutions) such that (hhp i, Yh ) belongs to Q and Stab(b
+                                                                                                    v)
+is the quotient of the setwise stabilizer of the pair {h±∞ } ∈ ∂G′ by the normal subgroup generated
+by hp . It follows from the previous paragraph that Stab({h±∞ }) = hi, j | i2 = j 2 = 1i. Therefore,
+Stab(bv ) = hi, j | i2 = j 2 = (ij)p = 1i ≃ Dp .                                                     
+     The next lemma follows easily from the previous lemma and from item (7) of Lemma 4.15.
+Lemma 5.6. Let Fb be an elliptic subgroup of Gb′ . Then one of the following holds:
+  (1) there exists an elliptic subgroup F of G′ such that the quotient map G′ ։ G   b ′ induces an
+      isomorphism from F onto F ,  b
+  (2) Fb is isomorphic to Cp or Dp .
+Proof. As a consequence of item (7) of Lemma 4.15, we only need to take care of the case when
+Fb is contained in Stab(b   v ) for some vb ∈ vb(Q). By Lemma 5.5, Stab(b        v ) is isomorphic to Dp ,
+thus Fb is either trivial or isomorphic to C2 or Cp or Dp . More precisely, there is a primitive
+loxodromic translation h ∈ N such that Stab(b       v ) is the quotient of the setwise stabilizer S of the
+pair {h±∞ } ∈ ∂G′ by the normal subgroup generated by hp . By Lemma 5.4 S is an inﬁnite
+dihedral group. We need to prove that if Fb is trivial or isomorphic to C2 , then there exists an
+elliptic subgroup F of G′ such that the projection G′ ։ G       b′ induces an isomorphism from F onto
+Fb . This is obvious if Fb is trivial, so let us assume that Fb is isomorphic to C2 , and write Fb = hii
+for some involution i of G b′ . Let g be a preimage of i in S. Note that g cannot have inﬁnite order,
+otherwise it would be mapped to an element of order 1 or p in Fb . Thus g is an involution and the
+projection G′ ։ G  b ′ induces an isomorphism from F = hgi onto Fb = hii.                               
+Lemma 5.7. Let b
+               g ∈ Stab(b
+                        v ) for some vb ∈ vb(Q) be of order > 2. Then, vb is the only apex of vb(Q)
+fixed by gb.
+           NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                              27
+
+
+Proof. Recall that there is a primitive loxodromic translation h such that Stab(b  v ) is the quotient
+of Stab(Yh ) by its subgroup normally generated by hp , and Stab(Yh ) is dihedral inﬁnite by Lemma
+5.4 (with hhi as a subgroup of index 2). In particular, the only elliptic elements of Stab(Yh ) are
+the involutions, and thus gb is not the image of an elliptic element of Stab(Yh ). Therefore, by
+Lemma 4.18, vb is the unique apex of vb(Q) ﬁxed by gb.                                              
+
+   We can now prove the following result (which is the ﬁrst part of Proposition 5.3).
+                                                         b′ , X
+Proposition 5.8. If (G′ , X ′ ) ∈ ST ′0 (p), then so is (G    b ′ ).
+
+                       b′ , X
+Proof. We verify that (G    b ′ ) satisﬁes the conditions of Deﬁnition 5.1 of ST ′0 (p).
+                    b ′ on X
+(1’): the action of G      b ′ is acylindrical.
+
+   This is a consequence of Theorem 4.25 and Lemma 5.5, since this lemma implies that for all
+h ∈ P , we have |Stab(Yh )/hhp i| = 2p.
+                                       b ′ are loxodromic for their action on X
+(3’): translations of inﬁnite order of G                                      b ′.
+                                                                                       b′ such that ij
+    Assume towards a contradiction that there exist two distinct involutions i 6= j in G
+is elliptic and has inﬁnite order. Since hiji is a subgroup of ﬁnite index of Di,j this last subgroup
+is also elliptic, and by Lemma 5.6 it must lift to an elliptic subgroup of G′ . This would yield an
+elliptic translation of G′ of inﬁnite order, contradicting Condition (3’) for the pair (G′ , X ′ ) and
+thus the assumption that it belongs to ST ′0 (p).
+                               b′ normalizes a non-trivial ﬁnite subgroup Fb of order > 2.
+(4’): no loxodromic element of G
+   This follows directly from Lemma 4.20. Indeed, since the pair (G′ , X ′ ) is in class ST ′0 (p), every
+maximal normal ﬁnite subgroup of a loxodromic subgroup of G′ is of order at most two. Moreover,
+the maximal normal ﬁnite subgroup of every Stab(Y ) for (H, Y ) ∈ Q is trivial, since it contains
+two involutions and thus by Lemma 5.4 it has to be isomorphic to D∞ .
+                                                b′ , X
+Remark 5.9. Since we have proved that the pair (G    b ′ ) satisﬁes Condition (4’) of Deﬁnition 2.13
+and Condition (1) of Deﬁnition 2.4, the loxodromic subgroups of G    b′ also satisfy the classiﬁcation
+exhibited in Lemma 5.4.
+                 b′ , N
+(2”): the tuple (G    b ′, Q
+                           b′ , X
+                                b ′ ) satisﬁes the assumptions of Proposition 4.25 for ν0 = 5 and expo-
+nent p (except that Q b ′ is not required a priori to be stable with respect to a family Q b′ ).
+
+   It only remains to be proved that Q′ is stable with respect to Q to get the bound on the
+injectivity radius of Qb ′ . Let gb be a loxodromic element of the image Q   b ′ of Q′ in G
+                                                                                          b′ . As a non-
+trivial image of a translation, it is itself a loxodromic translation. As such, for every m ∈ N we will
+have that Stab(Abgm ) is the maximal loxodromic subgroup containing b     g. By Remark 5.9, this has to
+be an inﬁnite dihedral group. Thus, if we have a subset A of Ẋ such that the projection G′ ։ G
+                                                                    ′                                 b′
+induces an isomorphism from Stab(A) onto Stab(Abg ), then Stab(A) is an inﬁnite dihedral group
+                                                         m
+
+and thus the preimage g of b   g in Stab(A) is a translation of inﬁnite order. Thus, g ∈ Q′ and indeed
+              ′
+the family Q is stable with respect to Q.
+                     b′ , X
+   We now show that (G    b ′ ) is almost sharply 2-transitive of characteristic p.
+
+(4): for (b           b′ )(2) , Cen(b
+          r , sb) ∈ I(G             r sb) is cyclic and generated by a translation.
+          b′ , X
+   Since (G    b ′ ) satisﬁes Condition (3’) a translation rbsb either has ﬁnite order or is loxodromic.
+       b
+   Let h ∈ Cen(b    r sb). If rbsb is of ﬁnite order, then b
+                                                           h cannot be loxodromic since (G   b′ , X
+                                                                                                  b ′ ) satisﬁes
+Condition (4’), namely no loxodromic element of G           b normalizes a non-trivial ﬁnite subgroup of
+                                                             ′
+
+                                                    b
+order > 2. Also, if rbsb is of ﬁnite order and h is elliptic, then so is E     r sb, b
+                                                                          b = hb     hi since it contains hb  hi
+as a ﬁnite index subgroup. We now distinguish four cases.
+28                                  MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+   Case 1 : Drb,bs is loxodromic. Then b    h is in the maximal loxodromic subgroup containing Drb,bs . By
+Remark 5.9, this subgroup is isomorphic to D∞ , where the centralizer of any translation is cyclic
+and generated by a translation.
+   Case 2 : Drb,bs is elliptic and does not lift. Then there is some vb ∈ vb(Q) with Drb,bs = Stab(b          v ),
+                                                                        b
+and vb is the unique apex ﬁxed by rbsb by Lemma 5.7. Since h normalizes the subgroup hb              r sbi we get
+b
+h ∈ Stab(b  v ), and in this subgroup the centralizer of any translation is cyclic and generated by a
+translation.
+   Case 3 : Drb,bs is elliptic and lifts, but E   b does not lift. Note that E    b is elliptic (indeed, rbsb has
+ﬁnite order, b  h is necessarily elliptic and hb  hi has ﬁnite index in E).  b Then there is some vb ∈ vb(Q)
+       b
+with E ⊂ Stab(b       v ). But Stab(b
+                                    v ) is isomorphic to Dp , where the centralizer of any translation is
+cyclic and generated by a translation.
+   Case 4 : Drb,bs is elliptic and lifts, and E b lifts. Let r, s denote two involutions of G′ such that Dr,s
+is a lift of Drb,bs , and let g be the preimage of rbsb in a preimage E of E.    b Notice that, since g maps
+                        b
+to an element of N in the quotient, then we must have g ∈ N . Now, g and rs are elliptic elements
+of N such that their images are conjugate in G         b ′ , so by the fourth consequence of Proposition 4.25,
+they are conjugate in G . In particular, g is a translation centralized by the preimage h of b
+                             ′
+                                                                                                         h. Since
+G′ satisﬁes Condition (4), we get that h is in the cyclic subgroup Cen(g), and the claim follows.
+
+(1): every translation is either of order p or of inﬁnite order, and every pair (b           b ′ )(2) such
+                                                                                 r , sb) ∈ I(G
+that rbsb has order p is either of p-aﬃne type or of p-minimal type.
+     First, let us prove that the the order of a translation of G                 b ′ is either p or inﬁnite. Assume towards
+a contradiction that i, j ∈ G           b are involutions such that ij has ﬁnite order 6= p. Then by Lemma 5.6
+                                          ′
+
+the group generated by i and j must lift to G′ , contradicting Condition (1) for G′ .
+     Then, let (b  r , sb) ∈ I(G  b′ )(2) be such that rbsb has order p, and let us prove that (b                    r , sb) is either of
+p-aﬃne type or of p-minimal type. Note that the subgroup Drb,bs is elliptic. We distinguish three
+cases.
+     Case 1 : the subgroup Drb,bs does not lift. Then by Lemma 5.6 there is some vb ∈ vb(Q) such that
+Drb,bs = Stab(b    v ). By Lemma 5.7, vb is the only apex ﬁxed by rbsb, and thus NGb′ (hb                         r sbi) is contained
+in Stab(b   v ). But note that Drb,bs is contained in NGb′ (hb             r sbi) since hb   r sbi is a characteristic subgroup of
+Drb,bs . Thus, NGb′ (Drbsb) = Drb,bs , and therefore (b        r , sb) is of p-minimal type.
+     Case 2 : the subgroup Drb,bs lifts and it has a preimage of p-aﬃne type. Let Dr,s be such a
+preimage for involutions r, s ∈ G′ , then, by Remark 2.2 the normalizer NG′ (Dr,s ) is isomorphic
+to AGL(1, Fp ), and in particular it is elliptic in G′ . Thus, the projection induces an isomorphism
+from NG′ (Dr,s ) onto its image H, which contains Drb,bs , so (b                      r , sb) is itself of p-aﬃne type.
+     Case 3 : the subgroup Drb,bs lifts and all its preimages are of p-minimal type. Let us assume
+towards a contradiction that Drb,bs is not of p-minimal type, that is, that there is some element
+b
+h ∈ NGb (hb  r sbi)\Drb,bs . Notice that b    h cannot be loxodromic, otherwise it would normalize the subgroup
+ r sbi of order > 2, contradicting Condition (4’) for (G
+hb                                                                        b′ , Xb ′ ). Therefore, b     h is elliptic, and since hb    hi
+                                            b    b
+is a ﬁnite index subgroup of E = hh, rbsbi, this subgroup is also elliptic.
+        b lifts, let r, s denote two involutions of G′ such that Dr,s is a lift of Drb,bs , and let g (respectively
+     If E
+h) be the preimage of rbsb (respectivley b             h) in a preimage E of E.          b Since g maps to an element of N             b′
+                                                     ′                                                             ′
+in the quotient, we must have g ∈ N . Now, g and rs are elliptic elements of N such that their
+images are conjugate in G          b ′ , so by the last consequence of Proposition 4.25 they are conjugate in G′ .
+In particular, g is a translation. Let a ∈ G′ be such that r′ = a−1 ra and s′ = a−1 sa and g = r′ s′ .
+Recall that by assumption all the preimages of (b                 r , sb) are of p-minimal type, so (r, s) and thus (r′ , s′ )
+are of p-minimal type. It follows that h is in Dr ,s′ . Moreover, since both rs and r′ s′ are preimages
+                                                                 ′
+
+of rbsb in G′ , then b   a is an element of G     b ′ centralizing the translation rbsb, and by Condition (4) proved
+above, b  a belongs to hb     r sbi. In particular, the images of r′ and s′ in G                    b′ are contained in Drb,bs , and
+therefore so is b    h, contradicting our initial assumption that b                  h does not belong to Drb,bs .
+            NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                                     29
+
+
+  If Eb does not lift, then by item (7) of Lemma 4.15 there is some vb ∈ vb(Q) such that E         b is
+contained in Stab(b  v ), and by Lemma 5.7 the apex vb is the only apex ﬁxed by hb   r sbi. Hence the
+normalizer of hb                                                                 b ⊂ Stab(b
+               r sbi ﬁxes vb, in particular Drb,bs ﬁxes vb. By Lemma 5.6 we have E          v ) = Drb,bs .
+          b
+Therefore h belongs to Drb,bs , contradicting our assumption.
+     b ′ contains no involution.
+(2): N
+   This is contained in Proposition 4.25.
+                                 b′ )(2) of p-aﬃne type is non-empty and G
+(3): the set of pairs (r, s) ∈ I(G                                       b′ acts transitively on it.
+
+     Since G′ contains a subgroup isomorphic to AGL(1, Fp ), and since the projection from G′ onto
+ b ′
+G induces an isomorphism from any elliptic subgroup onto its image, the group G                     b′ contains a
+subgroup isomorphic to AGL(1, Fp ) as well, and thus the set of pairs of involutions of p-aﬃne type
+of G b′ is non-empty.
+     Let now (b r, bs) and (b                              b′ )(2) of p-aﬃne type. By Lemma 5.6, any subgroup
+                              r′ , sb′ ) be two pairs of I(G
+of G b′ isomorphic to AGL(1, Fp ) lifts, and thus there are pairs (r, s) and (r′ , s′ ) of I(G′ )(2) of p-aﬃne
+type lifting (b               r′ , sb′ ) respectively. Since Condition (3) holds for G′ , there exists g ∈ G such
+                 r , sb) and (b
+that g rg = r and g −1 sg = s′ . Denoting by b
+         −1            ′
+                                                               g the image of g in Gb′ , we get bg −1 rbgb = rb′ and
+  −1         ′
+g sbgb = sb .
+b
+     Hence G b ′ is almost sharply 2-transitive and we have established Proposition 5.8.                           
+
+   The proof of Condition (2”) in Proposition 5.8 shows that, as it was stated before, the stability
+of the family Q′ with respect to Q′ follows from the other conditions of Deﬁnition 5.1. In fact, it
+also shows the following result.
+Corollary 5.10. If (G′ , X ′ ) belongs to ST ′0 (p), then Q′ is strongly stable.
+   We ﬁnish the proof of Proposition 5.3 by showing the remaining statements in the following two
+lemmas.
+                       b′ ).
+Lemma 5.11. O(G′ ) = O(G
+Proof. Let g ∈ G′ be an element of ﬁnite order. In particular, g is elliptic. By the second
+consequence of Proposition 4.25, the projection G′ ։ G          b ′ induces an isomorphism from hgi onto
+ g i, so |g| = |b
+hb                          ′
+                g| and O(G ) ⊆ O(G    b ).
+                                       ′
+
+                        b
+    Conversely, if gb ∈ G is of ﬁnite order, then it is elliptic, hence by Lemma 5.6 either there is g ∈ G′
+                          ′
+
+such that the projection induces an isomorphism from hgi onto hb                              g| ∈ O(G′ ), or
+                                                                          g i, in which case |b
+                                               ′
+ g i is isomorphic to Cp . However, since G is almost sharply 2-transitive, it contains a translation
+hb
+of order p, so we obtain O(G    b′ ) ⊆ O(G′ ).                                                             
+
+Lemma 5.12. The images of pairs of distinct involutions of p-affine type (respectively, of p-
+minimal type) are again of p-affine type (respectively, of p-minimal type).
+
+Proof. Notice now that for a pair (r, s) ∈ I(G′ )(2) of p-aﬃne type, the projection G′ ։ G                b ′ induces
+an isomorphism from NG (Dr,s ) onto its image (since this subgroup is ﬁnite by Remark 2.2), and
+                                  ′
+
+thus its image (b    r , sb) will be itself of p-aﬃne type.
+    Moreover, suppose that a pair (r, s) of p-minimal type maps in the quotient to a pair (b               r , sb) of p-
+                                                          b ′
+aﬃne type. By Lemma 5.6, any subgroup of G isomorphic to AGL(1, Fp ) lifts, thus there is a pair
+(r′ , s′ ) ∈ I(G′ )(2) of p-aﬃne type lifting (b  r , sb). However, in this case, rs and r′ s′ are elliptic elements
+       ′
+of N such that their images are conjugate in G             b′ , so they must themselves be conjugate, say by an
+element g ∈ G . But then, we would have |Dr,s ∩ g −1 Dr′ ,s′ g| ≥ p, contradicting Lemma 2.7.
+                   ′
+                                                                                                                      
+
+   This ﬁnishes the proof of Proposition 5.3.
+30                              MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+5.2. Stability of the Classes under PP-Quotients. We are ready to prove Proposition 2.15.
+Recall that throughout this section, we ﬁx (G, X) ∈ ST ′ (p). By Corollary 5.10 we can apply
+Proposition 4.28 and obtain a quotient Ḡ as the limit of iterated applications of Proposition 5.8.
+It remains to prove that Ḡ is almost sharply 2-transitive of characteristic p.
+   We now state an easy remark that will allow us to lift relations in the partial periodic quotient
+Ḡ to relations in some intermediate small cancellation quotient (Gbm , X
+                                                                        bm ).
+
+Remark 5.13. Let ḡ (1) , ..., ḡ (a) ∈ Ḡ be such that ḡ (1) ...ḡ (a) = 1. Then, there exist m ∈ N and
+              (i)                     (i)                                                     b m of G such
+preimages gbm of the elements ḡm (for 1 ≤ i ≤ a) in the small cancellation quotient G
+       (1)   (a)
+that gbm ...b
+            gm = 1.
+   Moreover, for all m ∈ N, the small cancellation quotient pair (G  bm , X
+                                                                          bm ) is obtained by apply-
+ing m times Proposition 5.3, so this pair is in class ST ′0 (p), and the images of pairs of distinct
+involutions of p-aﬃne type (respectively, of p-minimal type) will be themselves of p-aﬃne type
+(respectively, of p-minimal type). The following lemma shows that this is still true after taking the
+limit of the sequence.
+Lemma 5.14. The images in the partial periodic quotient Ḡ of pairs of distinct involutions of
+p-affine type (respectively, of p-minimal type) will be themselves of p-affine type (respectively, of
+p-minimal type). Moreover, the images of pairs of involutions that generate a loxodromic subgroup
+will be of p-minimal type.
+Proof. Notice ﬁrst that, by construction, all translations of Ḡ will be of order p (by consequence (3)
+of Theorem 4.28).
+    Let (r, s) ∈ I(G)(2) be a pair of p-aﬃne type. Then, by the ﬁrst consequence of Theorem 4.28,
+the projection G ։ Ḡ induces an isomorphism from NG (Dr,s ) onto its image (since by Remark 2.2
+this subgroup is isomorphic to AGL(1, Fp )), so the pair (r̄, s̄) will be of p-aﬃne type.
+    Let (r, s) ∈ I(G)(2) be a pair of p-minimal type. Suppose that there is some element ḡ ∈
+NḠ (hr̄s̄i)\Dr̄,s̄ . In particular, ḡ conjugates r̄s̄ to (r̄s̄)l for some l ∈ {1, . . . , p − 1}. Therefore, there
+is some m ∈ N such that a preimage gbm of ḡ in G         b m conjugates a preimage rbm sbm of r̄s̄ to (b      rm sbm )l .
+Clearly gbm cannot be in Drbm ,bsm (since that would yield ḡ ∈ Dr̄,s̄ ). That is, (b              rm , sbm ) is not of
+p-minimal type, and this is a contradiction to Proposition 5.3, since this implies that the images
+in Gbm of pairs of p-minimal type of G are themselves of p-minimal type.
+    Let (r, s) ∈ I(G)(2) be a pair of involutions generating a loxodromic subgroup. Then, there is
+some m ∈ N such that Drbm ,bsm ∼      = D∞ and Drbm+1 ,bsm+1 ∼     = Dp . Thus, there must be some b        v ∈ vb(Qm )
+such that Drbm+1 ,bsm+1 ⊂ Stab(b       v ). Now, Stab(b  v) ∼ = p D  ,  so D r
+                                                                             bm+1 ,b
+                                                                                   sm+1    =  Stab(bv ).   Lemma     5.7
+readily implies that Drbm+1 ,bsm+1 is of p-minimal type, and then an argument completely analogous
+to the one in the previous paragraph yields that the pair (r̄, s̄) is of p-minimal type itself.                       
+
+     We also note the following easy fact.
+Lemma 5.15. O(G) = O(Ḡ).
+Proof. Let g ∈ G be an element of ﬁnite order. In particular, g is elliptic. By the ﬁrst consequence
+of Theorem 4.28, the projection G ։ Ḡ induces an isomorphism from hgi onto hḡi, so |g| = |ḡ| and
+O(G) ⊆ O(Ḡ).
+    Conversely, let ḡ ∈ Ḡ be an element of ﬁnite order. By Remark 5.13, there is some m ∈ N and
+a preimage b gm of ḡ in G bm such that |ḡ| = |b
+                                                gm |. Now, by applying Lemma 5.11 m times, we get
+|ḡ| ∈ O(G).                                                                                      
+
+     We can now establish the following result.
+Proposition 5.16. The partial periodic quotient Ḡ is an almost sharply 2-transitive group of
+characteristic p.
+            NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                                       31
+
+
+Proof. We verify the conditions from Deﬁnition 2.4.
+
+(1): every translation is either of order p or of inﬁnite order, and every pair (r̄, s̄) ∈ I(Ḡ)(2) such
+that r̄s̄ is of order p is either of p-minimal type or of p-aﬃne type.
+
+   This is an immediate consequence of Lemma 5.14 since every pair of I(G)(2) is either of p-minimal
+type, of p-aﬃne type, or generates a loxodromic subgroup.
+
+(3): the set of pairs (r̄, s̄) ∈ I(Ḡ)(2) of p-aﬃne type is non-empty and Ḡ acts transitively on it.
+
+   Since the image of a pair of involutions of p-aﬃne type is of p-aﬃne type, there will be one such
+pair in Ḡ.
+   Fix now two pairs (r̄, s̄), (r̄′ , s̄′ ) ∈ I(Ḡ)(2) of p-aﬃne type. There is some m ∈ N and preim-
+                  ′
+ages rbm , b
+           sm , rbm , sb′m of r̄, s̄, r̄′ , s̄′ respectively such that rbm sbm and rbm
+                                                                                     ′ ′
+                                                                                       sbm have order p. Now, by
+Lemma 5.14, the pairs (b          rm , sbm ), (b  rm , sbm ) must be of p-aﬃne type (otherwise (r̄, s̄) and (r̄′ , s̄′ )
+                                                   ′     ′
+
+would be of p-minimal type), so there must be an element b                   gm conjugating one pair to the other
+       bm is in class ST ′0 (p)), and the image ḡ of gbm in Ḡ conjugates (r̄, s̄) to (r̄′ , s̄′ ).
+(since G
+
+(4): let r̄s̄ be a translation of the partial periodic quotient Ḡ. Then, Cen(r̄s̄) = hr̄s̄i.
+
+   Assume towards a contradiction that, for a pair (r̄, s̄) ∈ I(Ḡ)(2) , we have an element ḡ ∈
+Cen(r̄s̄)\hr̄s̄i. By Remark 5.13, there are m, m′ ∈ N such that some preimages rbm and sbm′ of r̄
+and s̄ are involutions in G  bm and Gbm′ respectively. By the second consequence of Proposition 4.25,
+this relations will be preserved for all n ≥ m, n′ ≥ m′ . Moreover, there exists l ∈ N such that
+a preimage rbl sbl of r̄s̄ commutes with some preimage b  gl of ḡ, and once again this relation will be
+preserved for all n′′ ≥ l. Take now m′′ = max({m, m′ , l}). Then, in G    b m′′ we have an element b   gm′′
+                                                     gm′′ cannot be in hb
+centralizing the translation rbm′′ sbm′′ . Moreover, b                   rm′′ sbm′′ i, since otherwise this
+relation would still hold for their images ḡ and r̄s̄ in Ḡ. This contradicts the fact that the pair
+ b m′′ , X
+(G       bm′′ ) belongs to class ST ′ (p).
+                                     0
+
+(2): the subgroup hT r(Ḡ)i contains no involution.
+
+   Suppose towards a contradiction that there are involutions r̄(1) , s̄(1) , ..., r̄(i) , s̄(i) for i ∈ N such
+that r̄(1) s̄(1) ...r̄(i) s̄(i) is an involution. By Remark 5.13, there are mj , m′j ∈ N, 1 ≤ j ≤ i such
+                                  (j)  (j)           b m′ of r̄(j) and s̄(j) respectively are involutions, and
+                                             bmj and G
+that some preimages rbmj , sb ′ in G
+                                  mj                       j
+
+this will remain the case for all nj ≥ mj , n′j ≥ m′j . Moreover, there is some m′′ ∈ N such that
+                    (1) (1)     (i) (i)       bm′′ of r̄(1) s̄(1) ...r̄(i) s̄(i) is an involution, and this will remain
+some preimage rbm′′ sbm′′ ...b rm′′ sbm′′ in G
+the case for all n ≥ m . Put m = max({m1 , m′1 , ..., mi , m′i , m′′ }), then we get an element in
+                     ′′     ′′            ′′′
+
+hT r(Gbm′′′ )i that is an involution, and this is a contradiction to the fact that the pair (G                     bm′′′ )
+                                                                                                           bm′′′ , X
+is in class ST ′0 (p).                                                                                                 
+
+   Hence, the group Ḡ is almost sharply 2-transitive of characteristic p. Moreover, by construction,
+Ḡ has no translation of inﬁnite order, and thus it belongs to the class ST (p). This ﬁnishes the
+proof of Proposition 2.15.
+   We end this section with the following result, which implies (by Theorem 2.11) that the groups
+constructed in Theorem 2.17 do not split.
+
+Lemma 5.17. Ḡ contains non-commuting translations.
+
+Proof. Consequence (4) of Theorem 4.28 implies in particular that N̄ is inﬁnite. Since this subgroup
+is generated by translations of Ḡ, and in this group the centralizer of every translation is cyclic of
+order p (by Condition (4) of the deﬁnition of class ST (p)) then N̄ must have a pair of translations
+that do not commute.                                                                                 
+32                           MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+                                    6. Proof of Proposition 2.14
+     In this section we prove Proposition 2.14, which we recall for convenience.
+Proposition 2.14. Let p be an odd prime number and let G be a group in ST (p).
+   (1) Let (r, s), (r′ , s′ ) ∈ I(G)(2) with (r, s) of p-affine type, and (r′ , s′ ) of p-minimal type and
+                                   G∗ = hG, t | trt−1 = r′ , tst−1 = s′ i.
+    (2) Let H be a non-trivial group without 2-torsion and G∗ = G ∗ H.
+Let X denote the corresponding Bass-Serre tree. Then (G∗ , X) belongs to ST ′ (p).
+     We ﬁrst observe the following general result.
+Lemma 6.1. Let G be a group and let (K, K ′ ) be a quasi-malnormal pair (see Definition 2.6)
+of isomorphic subgroups of G. Let α : K → K ′ be an isomorphism, and consider the group
+G∗ = hG, t | tkt−1 = α(k)i. Let X be the corresponding Bass-Serre tree. Then stabilizers of paths
+with at least three edges in X have order at most two.
+Proof. Let v denote the vertex of X ﬁxed by G. Let [v1 , v2 , v3 , v4 ] be a path of length 3 in the tree
+X (with d(vi , vi+1 ) = 1). We will prove that the (global) stabilizer of this path has order at most 2.
+Since G∗ acts transitively on the (non-oriented) edges of X, we can assume that [v2 , v3 ] = [v, t−1 v]
+or [v2 , v3 ] = [t−1 v, v]. Without loss of generality, suppose that [v2 , v3 ] = [v, t−1 v]. The stabilizer of
+this edge is G ∩ t−1 Gt = K. Since the vertices v1 and v2 = v are adjacent, there exists an element
+g ∈ G such that v1 = gt−1 v or v1 = gtv, thus the stabilizer of the path [v1 , v2 , v3 ] is gKg −1 ∩ K or
+gK ′ g −1 ∩ K, hence it has order at most 2 since the pair (K, K ′ ) is quasi-malnormal.                     
+Proof of Proposition 2.14. We treat both cases uniformly, so let G ∈ ST (p), and let G∗ denote
+either the HNN extension or the free product deﬁned in Proposition 2.14, let X denote the corre-
+sponding Bass-Serre tree and deﬁne Q = T r(G∗ ) and N = hT r(G)i. We need to show that G is
+almost sharply 2-transitive of characteristic p and satisﬁes the conditions given in Deﬁnition 2.13
+for ST ′ (p).
+  To see that G∗ is almost sharply 2-transitive of characteristic p, we ﬁrst verify Condition (4’) of
+Deﬁnition 2.13 of ST ′ (p) as this condition will be used in the proof of almost sharply 2-transitivity.
+(4’): no loxodromic element of G∗ normalizes a non-trivial ﬁnite subgroup of order > 2.
+   Let F be a ﬁnite subgroup of G∗ of order > 2. We will prove that NG∗ (F ) is elliptic in the
+Bass-Serre tree X. First, note that the ﬁxed-point set Y ⊂ X of F is preserved by NG∗ (F ).
+   If G∗ = G ∗ H, then Y is a point, and thus NG∗ (F ) ﬁxes this point as well.
+   If G∗ is the HNN extension deﬁned in Proposition 2.14 then, by Lemmas 2.7 and 6.1, the subtree
+Y has diameter at most two. If Y is a point, then NG∗ (F ) ﬁxes this point. If Y has diameter one,
+then it consists of two vertices joined by an edge e, and NG∗ (F ) ﬁxes the edge e as well. If Y has
+diameter two, then NG∗ (F ) ﬁxes the midpoint of this subtree.
+     We now show that G∗ is almost sharply 2-transitive as deﬁned in Deﬁnition 2.4.
+(1): every translation is either of order p or of inﬁnite order, and every pair (r, s) ∈ I(G∗ )(2) such
+that rs has order p is either of p-aﬃne type or of p-minimal type.
+   Let g = rs be a translation, where r, s denote two distinct involutions of G∗ . If r and s have
+a common ﬁxed in the tree X, then their product g is contained in a conjugate of G, and thus it
+has order p and it is either of p-aﬃne type or of p-minimal type since G belongs to ST (p) (and
+by Condition (4’) above, the normalizer of the subgroup it generates is elliptic). If r and s do not
+have a common ﬁxed point, then g is loxodromic (and thus it has inﬁnite order).
+(2): the subgroup N ∗ = hT r(G∗ )i contains no involution.
+  First, suppose that G∗ = G ∗ H, where H has no involution, as in Proposition 2.14. Assume
+towards a contradiction that there is an involution in N ∗ , or equivalently, an odd number of
+           NON-SPLIT SHARPLY 2-TRANSITIVE GROUPS OF ODD POSITIVE CHARACTERISTIC                             33
+
+
+involutions r1 , . . . , rk of G∗ such that r1 · · · rk = 1. Since H has no involution, every ri is conjugate
+to an involution of G. Let π ⋆ : G∗ ։ G denote the map obtained by killing the free factor H. Then
+π ⋆ (r1 · · · rk ) = 1, and π ⋆ (r1 · · · rk ) is a product of an odd number of involutions in G, contradicting
+the assumption that N has no involution (since G belongs to ST (p)).
+    Then, suppose that G∗ is the HNN extension deﬁned in Proposition 2.14. The argument is the
+same as in the previous case, but a bit more involved. Assume towards a contradiction that there
+is an involution in N ∗ , or equivalently, an odd number of involutions r1 , . . . , rk of G∗ such that
+r1 · · · rk = 1. Consider the quotient of G∗ by the normal subgroup generated by the stable letter
+                                                                        ∗
+t of the HNN extension, that is, the group G′ = G∗ /htiG , and call π ⋆ : G∗ ։ G′ the quotient
+                          ′
+map. Notice that G can also be obtained as the quotient of G by the relations k = α(k), that is
+G′ ∼ = G/hk −1 α(k) : k ∈ KiG . We will identify these isomorphic groups, and call π : G ։ G′ the
+quotient map. Note that the kernel of π is contained in N = hT r(G)i. By assumption G belongs
+to ST (p), thus N contains no involution. Hence no involution of G is mapped to the identity by π.
+Furthermore, the restriction of π ⋆ to G coincides with π, and every involution of G∗ is conjugate
+to an involution of G. Therefore, no involution of G∗ is mapped to the identity by π ⋆ . Thus, the
+image π ⋆ (r1 ...rk ) is a (trivial) product of an odd number of involutions of G′ . Moreover, every
+preimage of π ⋆ (r1 ...rk ) in G will be a product of an odd number of involutions. That is, there is
+an involution in N = hT r(G)i, and we arrive at a contradiction.
+(3): the set of pairs (r, s) ∈ I(G∗ )(2) of p-aﬃne type is non-empty and G∗ acts transitively on it.
+   First, note that this set is non-empty since G is contained in G∗ . Then, if (r, s) ∈ I(G∗ )(2) is of
+p-aﬃne type then hr, si is ﬁnite, thus it is elliptic in the tree X. It follows that hr, si is contained
+in a conjugate of G, and the conclusion follows from the fact that G belongs to ST (p).
+(4): for (r, s) ∈ I(G∗ )(2) , Cen(rs) is cyclic and generated by a translation.
+   If rs is elliptic then its centralizer is elliptic in the tree X by Condition (4’) above, and the
+conclusion follows from the fact that G belongs to ST (p).
+   If rs is loxodromic then it is contained in a (unique) maximal loxodromic subgroup of G∗ ,
+which is isomorphic to D∞ (indeed, exactly as in Remark 5.9, since G∗ satisﬁes Condition (1)
+and Condition (4’), every loxodromic subgroup of G∗ is isomorphic to Z or C2 × Z or D∞ or
+C4 ∗C2 C4 , and D∞ is the only group in this list that contains two distinct involutions), and thus
+the centralizer of rs is cyclic inﬁnite, generated by a translation.
+   It is left to verify Conditions (1’)–(3’) of Deﬁnition 2.13 of ST ′ (p).
+(1’): the action of G∗ on X is acylindrical (and non-elementary).
+   If G∗ is the HNN extension deﬁned in Proposition 2.14, then by Lemma 2.7 and Lemma 6.1
+stabilizers of paths with at least three edges in X have order at most two. If G∗ = G∗H, stabilizers
+of edges are trivial. In both cases, one easily sees that the action of G∗ on X is acylindrical, and
+the fact that the action is non-elementary is clear.
+(2’): e(N, X) = 1, rinj (Q, X) ≥ 1, ν(N, X) ≤ 5 and A(N, X) = 0.
+   Note that since the space X is 0-hyperbolic, it follows from Lemma 3.22 that [g]∞ = [g] for all
+g ∈ G∗ , and thus rinj (Q, X) = inf({[g] : g ∈ Q, g loxodromic}). Hence, since X is a simplicial tree,
+we immediately get rinj (Q, X) ≥ 1 (in fact, it can be proved that rinj (Q, X) = 2).
+   Then, let us prove that ν(N, X) ≤ 5. The parameters of the deﬁnition of an acylindrical action
+(see Deﬁnition 3.28) corresponding to ε = 97δ can be taken to be L = 3 and M = 2 in the case
+where G∗ is the HNN extension deﬁned in Proposition 2.14 (since stabilizers of paths with at least
+three edges in X have order at most two), and L = M = 1 in the case where G∗ = G ∗ H. In both
+cases, the bound ν(N, X) ≤ 5 follows readily from Lemma 4.5.
+   To see that e(N, X) = 1, by Remark 4.3 it is suﬃcient to prove that every loxodromic subgroup
+E of N is cyclic. As in the proof of Condition (4), we have that E is isomorphic to one of the
+34                             MARCO AMELIO, SIMON ANDRÉ & KATRIN TENT
+
+
+following four groups: Z, C2 × Z, D∞ or C4 ∗C2 C4 . But N ∗ has no involution (by Condition (2)),
+and thus E is necessarily isomorphic to Z.
+   Last, let us prove that A(N, X) = 0. First notice that, since our space X is 0-hyperbolic, the
+axis of an element g is the set Ag = {x ∈ X : d(x, g · x) = [g]}. Also, since ν = ν(N, X) is ﬁnite,
+we are looking at tuples (g0 , . . . , gν ) of elements with [gi ] = 0 for all i ∈ {0, . . . , ν} (that is, tuples
+of elliptic elements) such that they do not generate an elementary subgroup. In this case, Agi is
+just the ﬁxed-point set of gi , and A(g0 , . . . , gν ) = diam(Ag0 ∩ · · · ∩ Agν ) is the diameter of the
+intersection of their ﬁxed-point sets. If all these elliptic elements have a ﬁxed point in common,
+then every element of hg0 , . . . , gν i will also ﬁx this point, and therefore, they would generate an
+elementary subgroup. That is, we only need to consider tuples (g0 , . . . , gν ) of elliptic elements such
+that Ag0 ∩ · · · ∩ Agν = ∅. Thus, A(g0 , . . . , gν ) = 0, and therefore, A(N, X) = 0.
+(3’): translations of inﬁnite order of G∗ are loxodromic for their action on X.
+   Let g = rs be a translation, where r, s denote two distinct involutions of G∗ . If r and s have a
+common ﬁxed point v ∈ X, then their product g ﬁxes v as well. Hence g is contained in a conjugate
+of G (namely the stabilizer of v in G∗ ), and thus it has order p since G belongs to ST (p). If r and
+s do not have a common ﬁxed point, then g is loxodromic (and thus it has inﬁnite order).
+     This ﬁnishes the proof of Proposition 2.14 and thus of Theorem 1.1.                                       
+
+                                 Appendix A. Proof of Lemma 3.10
+   In this appendix we include the proof of Lemma 3.10. For the sake of completeness, we will also
+restate this result.
+Lemma A.1. Let X be a δ-hyperbolic metric space, x, y ∈ X. Let γ be a (1, ℓ)-quasi-geodesic
+connecting x to y for ℓ ≥ 0. Let p ∈ X be a point such that
+(1)                                 d(x, p) + d(p, y) ≤ d(x, y) + 2δ + 3ℓ.
+Then, d(p, γ) ≤ 4δ + 8ℓ.
+Proof. Without loss of generality, we can assume that d(x, p) ≤ d(y, p). If we have d(x, p) ≥ d(x, y),
+then we get that d(y, p) ≤ 2δ + 3ℓ and we are done. Similarly, if we assume d(y, p) ≥ d(x, y), then
+we get that d(x, p) ≤ 2δ + 3ℓ.
+   Now, assume that
+                                 max({d(x, p), d(y, p)}) < d(x, y).
+Take a point z ∈ γ such that
+(2)                                    d(p, y) ≤ d(z, y) ≤ d(p, y) + ℓ.
+Since X is δ-hyperbolic, we have that
+(3)                                 hx, yip ≥ min{hx, zip , hy, zip } − δ.
+Combining Deﬁnition 3.7 with the second inequality of (2) we get
+                         1                                          1                     ℓ
+(4)      hx, zip − hy, zip =
+                           (d(x, p) − d(x, z) − d(y, p) + d(y, z)) ≤ (d(x, p) − d(x, z)) + .
+                         2                                          2                     2
+Now, inequality (1) and the second inequality of (2) give
+(5)                    d(x, p) − 2δ − 3l ≤ d(x, y) − d(y, p) ≤ d(x, y) − d(y, z) + ℓ,
+and this together with the triangle inequality imply
+(6)                                    d(x, p) − 2δ − 3ℓ ≤ d(x, z) + ℓ.
+Therefore, inequalities (4) and (6) yield
+                                                                 5
+(7)                                       hx, zip − hy, zip ≤ δ + ℓ.
+                                                                 2
+                                             REFERENCES                                      35
+
+
+From inequalities (3) and (7) we get
+                                                      5
+(8)                                hx, yip ≥ hx, zip − ℓ − 2δ.
+                                                      2
+Inequality (8) together with Deﬁnition 3.7 yield
+                           d(y, p) − d(x, y) ≥ d(z, p) − d(x, z) − 5ℓ − 4δ,
+and thus
+(9)                        d(y, p) − d(x, y) + d(x, z) ≥ d(z, p) − 5ℓ − 4δ.
+Also, since z ∈ γ we have that
+                                   d(x, z) + d(z, y) ≤ d(x, y) + 3ℓ,
+and in consequence,
+(10)                              d(x, z) − d(x, y) ≤ −d(z, y) + 3ℓ.
+Therefore, combining inequalities (9) and (10) we obtain
+(11)                             d(y, p) − d(z, y) ≥ d(z, p) − 8ℓ − 4δ.
+The ﬁrst inequality of (2) and inequalitiy (11) imply that d(z, p) ≤ 8ℓ + 4δ.                
+
+                                            References
+[AD08]     Goulnara Arzhantseva and Thomas Delzant. “Examples of random groups”. In: preprint
+           2011 (2008).
+[Adi79]    S. I. Adian. The Burnside problem and identities in groups. Translated from the Russian
+           by John Lennox and James Wiegold. English. Vol. 95. Ergeb. Math. Grenzgeb. Springer-
+           Verlag, Berlin, 1979.
+[AG22]     Simon André and Vincent Guirardel. “Finitely generated simple sharply 2-transitive
+           groups”. In: (2022). arXiv: 2212.06020 [math.GR].
+[ART23]    Agatha Atkarskaya, Eliyahu Rips, and Katrin Tent. The Burnside problem for odd
+           exponents. 2023. arXiv: 2303.15997 [math.GR].
+[AT23]     Simon André and Katrin Tent. “Simple sharply 2-transitive groups”. In: Trans. Amer.
+           Math. Soc. 376.6 (2023), pp. 3965–3993. issn: 0002-9947,1088-6850. doi: 10.1090/tran/8846.
+           url: https://doi.org/10.1090/tran/8846.
+[BBI22]    Dmitri Burago, Yuri Burago, and Sergei Ivanov. A course in metric geometry. Vol. 33.
+           American Mathematical Society, 2022.
+[BF02]     Mladen Bestvina and Koji Fujiwara. “Bounded cohomology of subgroups of mapping
+           class groups”. In: Geometry & Topology 6.1 (2002), pp. 69–89.
+[BH13]     Martin R Bridson and André Haeﬂiger. Metric spaces of non-positive curvature. Vol. 319.
+           Springer Science & Business Media, 2013.
+[Bow08]    Brian H Bowditch. “Tight geodesics in the curve complex”. In: Inventiones mathematicae
+           171.2 (2008), pp. 281–300.
+[Bur02]    William Burnside. “On an unsettled question in the theory of discontinuous groups”.
+           In: Quart. J. Pure and Appl. Math. 33 (1902), pp. 230–238.
+[CDP06]    Michel Coornaert, Thomas Delzant, and Athanase Papadopoulos. Géométrie et théorie
+           des groupes: les groupes hyperboliques de Gromov. Vol. 1441. Springer, 2006.
+[CLC13]    Serge Cantat, Stéphane Lamy, and Yves de Cornulier. “Normal subgroups in the Cre-
+           mona group”. English. In: Acta Math. 210.1 (2013), pp. 31–94. issn: 0001-5962. doi:
+           10.1007/s11511-013-0090-1.
+[Cou11]    Rémi Coulon. “Asphericity and small cancellation theory for rotation families of groups”.
+           In: Groups, Geometry, and Dynamics 5.4 (2011), pp. 729–765.
+[Cou14]    Rémi Coulon. “On the geometry of Burnside quotients of torsion free hyperbolic groups”.
+           In: International Journal of Algebra and Computation 24.03 (2014), pp. 251–345.
+36                                      REFERENCES
+
+
+[Cou16a] Rémi Coulon. Small cancellation theory: a geometric approach (after F. Dahmani, V.
+         Guirardel, D. Osin, and S. Cantat, S. Lamy). French. Paris: Société Mathématique de
+         France (SMF), 2016, 1–33, ex. isbn: 978-2-85629-836-7.
+[Cou16b] Rémi B Coulon. “Partial periodic quotients of groups acting on a hyperbolic space”. In:
+         Annales de l’Institut Fourier. Vol. 66. 5. 2016, pp. 1773–1857.
+[Cou21]  Rémi Coulon. Infinite periodic groups of even exponents. 2021. arXiv: 1810.08372 [math.GR].
+[DG08]   Thomas Delzant and Misha Gromov. “Mesoscopic curvature and very small cancellation
+         theory. (Courbure mésoscopique et théorie de la toute petite simpliﬁcation.)” French.
+         In: J. Topol. 1.4 (2008), pp. 804–836. issn: 1753-8416. doi: 10.1112/jtopol/jtn023.
+[DGO17] François Dahmani, Vincent Guirardel, and Denis Osin. Hyperbolically embedded sub-
+         groups and rotating families in groups acting on hyperbolic spaces. Vol. 245. 1156. Amer-
+         ican Mathematical Society, 2017.
+[DK18]   Cornelia Druţu and Michael Kapovich. Geometric group theory. Vol. 63. American
+         Mathematical Soc., 2018.
+[Gro01]  Misha Gromov. Mesoscopic curvature and hyperbolicity. English. Providence, RI: Amer-
+         ican Mathematical Society (AMS), 2001, pp. 58–69. isbn: 0-8218-2750-2.
+[Iva92]  Sergei V. Ivanov. “On the Burnside problem on periodic groups”. English. In: Bull. Am.
+         Math. Soc., New Ser. 27.2 (1992), pp. 257–260. issn: 0273-0979. doi: 10.1090/S0273-0979-1992-00305-1.
+[Jor72]  Camille Jordan. “Recherches sur les substitutions”. In: Journal de Mathématiques Pures
+         et Appliquées 17 (1872), pp. 351–367.
+[Ker74]  William Kerby. On infinite sharply multiply transitive groups. 6. Vandenhoeck & Ruprecht,
+         1974.
+[Lys96]  I. G. Lysenok. “Inﬁnite Burnside groups of even exponent”. English. In: Izv. Math. 60.3
+         (1996), pp. 453–654. issn: 1064-5632. doi: 10.1070/IM1996v060n03ABEH000077.
+[NA69]   P. S. Novikov and S. I. Adyan. “On inﬁnite periodic groups. I–III”. English. In: Math.
+         USSR, Izv. 2 (1969), pp. 209–236, 241–480, 665–685. issn: 0025-5726. doi: 10.1070/IM1968v002n01ABEH000
+[Neu40]  Bernhard Hermann Neumann. “On the commutativity of addition”. In: Journal of the
+         London Mathematical Society 1.3 (1940), pp. 203–208.
+[Ols89]  A Yu Olshansky. “Geometriya opredelyayushchikh sootnosheniy v gruppakh [Geometry
+         of deﬁning relations in groups]”. In: M.: Nauka (1989).
+[Osi16]  Denis Osin. “Acylindrically hyperbolic groups”. In: Transactions of the American Math-
+         ematical Society 368.2 (2016), pp. 851–888.
+[RST17] Eliyahu Rips, Yoav Segev, and Katrin Tent. “A sharply 2-transitive group without
+         a non-trivial abelian normal subgroup”. In: J. Eur. Math. Soc.(JEMS) 19.10 (2017),
+         pp. 2895–2910.
+[RT19]   Eliyahu Rips and Katrin Tent. “Sharply 2-transitive groups of characteristic 0”. In:
+         Journal für die reine und angewandte Mathematik (Crelles Journal) 2019.750 (2019),
+         pp. 227–238.
+[Sel97]  Zlil Sela. “Acylindrical accessibility for groups”. English. In: Invent. Math. 129.3 (1997),
+         pp. 527–565. issn: 0020-9910. doi: 10.1007/s002220050172.
+[Ten16]  Katrin Tent. “Inﬁnite sharply multiply transitive groups”. In: Jahresbericht der Deutschen
+         Mathematiker-Vereinigung 118.2 (2016), pp. 75–85.
+[Tit52]  Jacques Tits. “Généralisations des groupes projectifs basées sur leurs propriétés de
+         transitivité”. In: Mémoires de la Classe des Sciences 27 (1952).
+[Zas35a] Hans Zassenhaus. “Kennzeichnung endlicher linearer Gruppen als Permutationsgrup-
+         pen”. In: Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg.
+         Vol. 11. Springer. 1935, pp. 17–40.
+[Zas35b] Hans Zassenhaus. “Über endliche Fastkörper”. In: Abhandlungen aus dem mathematis-
+         chen Seminar der Universität Hamburg. Vol. 11. Springer. 1935, pp. 187–220.
+                                      REFERENCES   37
+
+
+Marco Amelio
+Universität Münster
+Einsteinstraße 62
+48149 Münster, Germany.
+E-mail address: mamelio@uni-muenster.de
+
+Simon André
+Sorbonne Université and Université Paris Cité
+CNRS, IMJ-PRG
+F-75005 Paris, France.
+E-mail address: simon.andre@imj-prg.fr
+
+Katrin Tent
+Universität Münster
+Einsteinstraße 62
+48149 Münster, Germany.
+E-mail address: tent@wwu.de
+
