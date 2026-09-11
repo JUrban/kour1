@@ -1,6 +1,6 @@
 # Literature status and provenance
 
-Last checked 2026-09-10. A search finding no solution is evidence only of the scope searched, not a proof of novelty. Downloaded reading copies are in ignored `references/cache/`; permanent reports cite their public sources.
+Last checked 2026-09-11. A search finding no solution is evidence only of the scope searched, not a proof of novelty. Downloaded reading copies are in ignored `references/cache/`; permanent reports cite their public sources.
 
 ## Newly audited older problems
 
@@ -36,7 +36,7 @@ Official page: https://kourovkanotebookorg.wordpress.com/ . Latest posted update
   pages read; the finite-group argument checked. It resolves the problem
   in full. Our special-case work is excluded; the prepared search was
   archived before a group search began. See `research/21.115-literature-audit.md`.
-- W. van Doorn, E. Judin, P. Monticone, D. Morrison, *On Some Problems from the Kourovka Notebook*, https://arxiv.org/abs/2607.17477 . Its introduction lists eight resolutions: 3.46, 18.50, 19.25, 20.125, 21.8, 21.24, 21.147, and 21.150. All are excluded. None overlaps the four current candidate resolutions. The supplied PDF already cites this work for several entries.
+- W. van Doorn, E. Judin, P. Monticone, D. Morrison, *On Some Problems from the Kourovka Notebook*, https://arxiv.org/abs/2607.17477 . Its introduction lists eight resolutions: 3.46, 18.50, 19.25, 20.125, 21.8, 21.24, 21.147, and 21.150. All are excluded. None overlaps the current candidate resolutions. The supplied PDF already cites this work for several entries.
 - V. Ionin, A. Semidetnov, *On Some More Problems from the Kourovka Notebook*, https://arxiv.org/abs/2608.29219v1 . Downloaded and inspected the introduction and numbered questions. Addresses Notebook 14.85, 19.94, 16.11, 17.47, and 17.32, plus three questions from other sources. These are excluded from our novelty shortlist. This is a claimed-resolution screen, not an independent audit of that paper's proofs.
 - I. Chinyere, *On the non-existence of finite groups with certain normal subgroups*, https://arxiv.org/abs/2601.01080 . Claims a negative resolution of 20.21. Excluded from new targets; abstract checked, proof not yet audited.
 - S. Kalithasan, V. Z. Thomas, *On the decidability of the integrability of finite groups*, https://arxiv.org/abs/2602.18829v1 . Proves decidability, the principal part of 21.32. Downloaded and inspected main theorem. Our independently found pullback proof is retained as a rediscovery, not a new resolution.
@@ -207,3 +207,19 @@ applicable, with compactness covering arbitrary dimension. The inference
 to17.34 is written explicitly in research/17.34-known-consequence.md.
 Their5September2026 successor arXiv:2609.05789v1 was also screened,
 but is not needed for this implication from the earlier theorem.
+
+## Problem 14.22
+
+The supplied PDF page 75 was visually checked. The printed hypotheses
+permit infinitely generated torsion-free linear coefficient groups.
+Read introductory definitions in Kharlampovich--Myasnikov (1998),
+https://web.stevens.edu/algebraic/alexeim/Publications/All_files_new/pp1_34.pdf ,
+and the general topology definitions and Section 6 in
+Baumslag--Myasnikov--Remeslennikov (1999),
+https://web.stevens.edu/algebraic/alexeim/Publications/All_files_new/FINAL_AL_51_38.pdf .
+The former uses normal isolated closure; the latter defines the general
+Zariski topology and uses ordinary normal closure in its Section 6
+Nullstellensatz. These distinctions are documented in the proof audit.
+The negative examples over Q and Q * Z were not found in the searched
+literature. This is a limited search finding, not a priority claim.
+See `research/14.22-review.md` for exact reading scope and search terms.

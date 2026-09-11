@@ -291,3 +291,22 @@ remain necessary for every candidate.
 The order256 search snapshot at00:26:52UTC has20,555counts,0equality
 hits,62reverse inequalities,16liveworkers,allchecksPASS.
 The48-hour goal remains active, with no external communications or pushes.
+
+At 2026-09-11T00:47:45.470414+00:00, completed an eighth candidate resolution,14.22.
+The coefficient-support argument over Q uses a torsion-free amalgam
+to separate a radical commutator from every finite normal isolated
+closure. A second example over the nonabelian linear group Q * Z
+includes a direct SL_2(Q(t)) embedding and a polynomial proof of
+irreducibility. The groups are infinitely generated, which the printed
+statement allows; no claim for a finitely generated variant is made.
+The primary definitions were checked, all exact controls pass, and a
+separate internal audit records the remaining novelty uncertainty.
+This is a new eighth candidate, distinct from the earlier excluded17.34.
+
+GAP4.16.1 was rechecked at /project/bin/gap, including |S4|=24. An
+initial shell-generated smoke-test string had an embedded-newline
+syntax error; the corrected literal heredoc passed. No research job
+was affected. The48-hour goal remains active. No external messages
+or Git pushes have been made.
+
+Order256 snapshot 2026-09-11T00:47:45.332946+00:00: 24,693 groups, 0 equality hits, 80 reverse inequalities, 15 live workers, 1 completed range, all checks PASS.
