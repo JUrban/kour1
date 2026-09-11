@@ -1099,3 +1099,38 @@ example and a limitation of a method, not a new complete resolution.
 The complete-candidate count remains21, with outside review and further
 novelty checks pending. All artifacts and commits remain local. The
 48-hour goal remains active through2026-09-12 20:56:46 UTC.
+
+## 2026-09-11T11:52:42.047116+00:00 — Twenty-second candidate: a four-regular counterexample to15.89
+
+On G=C3*C2, S={aba,aba^2,a^2ba,a^2ba^2} is an inverse-closed
+four-element generating set with no identity or repetition. Its Cayley
+graph is infinite, connected, simple and vertex-transitive. For right
+translations U=R_a+R_a^2 and B=R_b, the adjacency is U B U, while
+U^2=U+2I and B^2=I. Thus (U-I)B(U-I)/4 is an inverse on every
+complex-valued function, since it is a sum of only nine translations.
+Zero is therefore not an eigenvalue, answering the printed question
+negatively. The supplied page94 was visually checked.
+
+Python checks exact free-product convolution,1,500 local coordinate
+identities and a removed-edge negative control. Independent GAP uses
+integer projective matrices, both inverse products, and actual finite
+Cayley graphs of orders12,60,168 with63,936 identity-matrix entries.
+Both processes exited zero. The complete proof, internal audit, all
+control artifacts and a hash-binding summarizer are retained.
+
+The zig-zag product is credited to Reingold--Vadhan--Wigderson2002;
+Definition3.1 and the matrix factorization were read directly. The
+finite-factor invertibility discussion in Cavaleri--D Angeli--Donno2019
+was also read and credited. Trofimov2024 examples8.4--8.5 were checked
+again; they do not supply this complex vertex-transitive counterexample.
+The primary abstract of the2025 follow-up was located, but its full
+paper was not obtained. No general novelty claim follows from these
+limited checks. The complete-candidate count is now22, all awaiting
+outside review and further priority work. The earlier positive
+dihedral subclass remains valid.
+
+The20.100 n=7 verifier remains live in all six partitions. At11:47 UTC
+each had checked250,000 nodes, collectively1.5million, with about3GB
+combined actual RSS. No shard or n=7 proof has completed. The48-hour
+goal remains active through2026-09-12 20:56:46 UTC. All work and Git
+commits remain local, without pushes or outside communications.

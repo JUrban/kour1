@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-09-11T11:52:41.981168+00:00",
+  "group": "C3*C2",
+  "degree": 4,
+  "inverse_support": 9,
+  "python": {
+    "status": "PASS",
+    "degree": 4,
+    "inverse_support": 9,
+    "tested_vertices": 50,
+    "basis_coordinate_checks": 1500,
+    "distinct_power_controls": 101,
+    "omitted_edge_rejected": true,
+    "adjacency": {
+      "aba": "1",
+      "aba^2": "1",
+      "a^2ba": "1",
+      "a^2ba^2": "1"
+    },
+    "inverse": {
+      "aba": "1/4",
+      "aba^2": "1/4",
+      "ab": "-1/4",
+      "a^2ba": "1/4",
+      "a^2ba^2": "1/4",
+      "a^2b": "-1/4",
+      "ba": "-1/4",
+      "ba^2": "-1/4",
+      "b": "1/4"
+    },
+    "scope": "Finite-support identities and controls. The infinite graph and all-functions conclusion rest on the separate proof."
+  },
+  "gap": {
+    "projective_two_sided_products": 2,
+    "finite_graph_orders": [
+      12,
+      60,
+      168
+    ],
+    "finite_identity_entries": 63936
+  },
+  "process_evidence": "Python and GAP actual exit statuses0 were observed through the execution tool; this summarizer additionally checks all retained markers and counts.",
+  "scope": "Complete candidate negative answer to15.89. The proof covers all functions; finite controls are not extrapolated to infinity. Outside review and further novelty checking pending.",
+  "sha256": {
+    "research/15.89-proof.md": "8a40b5e87648b67a8caa42dd1a30366df0e0edfd6b0274066284f759d98a3d9a",
+    "research/15.89-review.md": "96b89d1d55dc644e25b3143e5b7994c34b7b630445db75193b96a1538ee291e5",
+    "scripts/verify_15_89_free_product.py": "f751b639db847895ee570215791704edb57ace56ccfd03d221068822220652de",
+    "scripts/verify_15_89_free_product.g": "f4f03883a70445c7acc9fafd3a91981c93f21f05db59ab47b2b6ffa745051bfc",
+    "scripts/summarize_15_89_free_product.py": "7961b4d9186b058a6fca82f809529171950c1f3af87142fb88ac17166b6f0d0c",
+    "results/15.89-free-product-python.json": "fb88d9ae0fc81b676012e27fc5b4b6bbcdf72dae639b7fa6a4987b733116b6cb",
+    "results/15.89-free-product-python.log": "fb88d9ae0fc81b676012e27fc5b4b6bbcdf72dae639b7fa6a4987b733116b6cb",
+    "results/15.89-free-product-gap.log": "0d919195e7ba1ed16bf59a042f1f92de4fd6dfa3ff34195b20706d6d613e3eb7",
+    "references/cache/trofimov-adjacency-2022.pdf": "6cc6d9c6525e39ab16c10e8ada167bcff9444f3641e8926325c94cdb78707a38",
+    "references/cache/rvw-zigzag-2002.pdf": "63e6fb950eaa0b0236bc9bf32a7f0ce755a1f7830d8307eb0681685378402cef",
+    "references/cache/cavaleri-dangeli-donno-2019.pdf": "1291dc0c84817601ea27c8d988f85c0f339763237fda4ae13b93f37c771da384",
+    "docs/21tkt.pdf": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911"
+  }
+}

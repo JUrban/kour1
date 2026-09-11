@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "degree": 4,
+  "inverse_support": 9,
+  "tested_vertices": 50,
+  "basis_coordinate_checks": 1500,
+  "distinct_power_controls": 101,
+  "omitted_edge_rejected": true,
+  "adjacency": {
+    "aba": "1",
+    "aba^2": "1",
+    "a^2ba": "1",
+    "a^2ba^2": "1"
+  },
+  "inverse": {
+    "aba": "1/4",
+    "aba^2": "1/4",
+    "ab": "-1/4",
+    "a^2ba": "1/4",
+    "a^2ba^2": "1/4",
+    "a^2b": "-1/4",
+    "ba": "-1/4",
+    "ba^2": "-1/4",
+    "b": "1/4"
+  },
+  "scope": "Finite-support identities and controls. The infinite graph and all-functions conclusion rest on the separate proof."
+}

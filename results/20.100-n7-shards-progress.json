@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-11T11:35:55.503288+00:00",
+  "observed_utc": "2026-09-11T11:47:10.472271+00:00",
   "n": 7,
   "verifier_mode": "sharded",
   "shard_count": 6,
@@ -26,12 +26,12 @@
       "returncode": null,
       "last_progress": {
         "index": 0,
-        "checked_nodes": 170000,
-        "last_id": 1019995,
-        "edges": 2834538,
-        "cpu_ms": 1365785
+        "checked_nodes": 250000,
+        "last_id": 1499995,
+        "edges": 4210647,
+        "cpu_ms": 2069927
       },
-      "rss_kib": 401972
+      "rss_kib": 514612
     },
     {
       "index": 1,
@@ -40,12 +40,12 @@
       "returncode": null,
       "last_progress": {
         "index": 1,
-        "checked_nodes": 170000,
-        "last_id": 1019996,
-        "edges": 2830212,
-        "cpu_ms": 1367872
+        "checked_nodes": 250000,
+        "last_id": 1499996,
+        "edges": 4204263,
+        "cpu_ms": 2075269
       },
-      "rss_kib": 402936
+      "rss_kib": 515576
     },
     {
       "index": 2,
@@ -54,12 +54,12 @@
       "returncode": null,
       "last_progress": {
         "index": 2,
-        "checked_nodes": 170000,
-        "last_id": 1019997,
-        "edges": 2829624,
-        "cpu_ms": 1339655
+        "checked_nodes": 250000,
+        "last_id": 1499997,
+        "edges": 4205439,
+        "cpu_ms": 2042399
       },
-      "rss_kib": 414260
+      "rss_kib": 515124
     },
     {
       "index": 3,
@@ -68,12 +68,12 @@
       "returncode": null,
       "last_progress": {
         "index": 3,
-        "checked_nodes": 170000,
-        "last_id": 1019998,
-        "edges": 2832606,
-        "cpu_ms": 1368115
+        "checked_nodes": 250000,
+        "last_id": 1499998,
+        "edges": 4209849,
+        "cpu_ms": 2076920
       },
-      "rss_kib": 403492
+      "rss_kib": 515108
     },
     {
       "index": 4,
@@ -82,12 +82,12 @@
       "returncode": null,
       "last_progress": {
         "index": 4,
-        "checked_nodes": 170000,
-        "last_id": 1019999,
-        "edges": 2840943,
-        "cpu_ms": 1336891
+        "checked_nodes": 250000,
+        "last_id": 1499999,
+        "edges": 4214406,
+        "cpu_ms": 2037140
       },
-      "rss_kib": 413744
+      "rss_kib": 514096
     },
     {
       "index": 5,
@@ -96,14 +96,14 @@
       "returncode": null,
       "last_progress": {
         "index": 5,
-        "checked_nodes": 170000,
-        "last_id": 1020000,
-        "edges": 2831430,
-        "cpu_ms": 1359833
+        "checked_nodes": 250000,
+        "last_id": 1500000,
+        "edges": 4207056,
+        "cpu_ms": 2058206
       },
-      "rss_kib": 401984
+      "rss_kib": 513600
     }
   ],
-  "verified_live_rss_kib": 2438388,
+  "verified_live_rss_kib": 3088116,
   "scope": "Progress snapshot. A complete certificate has no proof status until every shard and the aggregate pass. Integrity is bound to the prior full gzip read by the checked compressed SHA256."
 }

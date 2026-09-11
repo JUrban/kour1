@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-11T11:07:14.465738+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T11:51:35.643632+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -70,7 +70,7 @@ Updated 2026-09-11T11:07:14.465738+00:00. This is a research triage list, not an
 | 21.130 | Rainbow Hamiltonian cycles in the sum coloring of odd abelian groups. | Finite subset search possible, but avoid highly symmetric cases already checked in literature. |
 | 13.19 | Four dihedral factors, with Q of order 256 and H of order 32, quotient D8. | Complete small counterexample and independent checks; excluded from new-solution count because Kearnes--Mayr--Ruskuc (2018) already implies a negative answer. A general finite-p-group realization is also written. |
 | 12.69 | Norm or trace from Q(i) to Q violates the literal conclusion. | Formulation inconsistency: the same example contradicts the claimed uncountable analogue. Not counted as a substantive new solution without resolving the missing qualification. |
-| 15.89 | Exact two-by-two Laurent matrix for infinite-dihedral Cayley graphs. | Proved positive subclass for every finite inverse-closed generating set. Independent exact controls pass; the general vertex-transitive problem remains unresolved. No novelty claim. |
+| 15.89 | A four-element connection set in C3*C2 has adjacency U B U with an explicit finite inverse. | Twenty-second complete candidate, negative: infinite connected simple four-regular Cayley graph has no zero eigenvalue even on all functions. Python normal forms, GAP projective matrices and63,936 finite-matrix entries pass. Zig-zag construction credited; outside review and novelty of the consequence pending. |
 | 11.46(a) | Finite E-groups of class three. | August 2026 preprint arXiv:2608.07275v1 claims a construction of order 3^84. Primary abstract read, full proof unaudited; exclude from new-target priority. |
 | 19.108 | A p-adic orbit-fiber argument forces support vanishing on order-p^3 elements. | Proved partial theorem for every odd p: groups of order p^10 with an abelian normal subgroup of size at least p^6 satisfy the divisibility. All571 subgroup classes and1,596 regular orbits at p=3 verified independently. General question unresolved; novelty unconfirmed. |
 | 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | All91,774 nonabelian groups through order511 checked: zero equality cases and469 reverse inequalities. Latest356 jobs and514 independent abelian-ID reconstructions pass. Separate structural counterexamples remain certified; general equality question unresolved. |

@@ -282,7 +282,7 @@ The negative examples over Q and Q * Z were not found in the searched
 literature. This is a limited search finding, not a priority claim.
 See `research/14.22-review.md` for exact reading scope and search terms.
 
-## Problem 15.89: partial dihedral result
+## Problem 15.89: dihedral subclass and later complete counterexample
 
 Trofimov, *On adjacency operators of locally finite graphs*,
 https://arxiv.org/abs/2208.01926v3 , published in Izvestiya: Mathematics
@@ -294,8 +294,23 @@ positive-characteristic vertex-transitive examples do not resolve the
 Notebook's complex vertex-transitive question. The English download
 failed with 403; the Russian preprint is cached. Our exact Laurent
 polynomial proof covers every finite-valency connected Cayley graph
-of the infinite dihedral group. This is a subclass result with no
-novelty claim, and it is excluded from the complete-candidate count.
+of the infinite dihedral group. The dihedral result is a subclass with no novelty claim. The later
+C3*C2 graph in `research/15.89-proof.md` supplies a complete negative
+candidate: its four-neighbour adjacency operator has an explicit inverse
+on all functions. Outside review and further priority checking remain.
+
+For that construction, Reingold--Vadhan--Wigderson2002,
+https://doi.org/10.2307/3062153, Definition3.1 and the three-matrix
+factorization on printed pages170 and172--173 were read directly.
+The zig-zag product is credited prior work; its expansion proofs are
+not needed. Cavaleri--D'Angeli--Donno2019,
+https://arxiv.org/abs/1811.09836, Section2 finite-graph conventions and
+Lemma3.5 with its proof were read; its finite-matrix invertibility
+observation is also credited. The infinite simple vertex-transitive
+example and its all-functions conclusion are proved separately.
+The primary abstract of Trofimov2025 on countable eigenvalue-set
+complements was read, but its full paper was not obtained. See the
+new internal review for precise source scope and search limitations.
 
 ## Problem 11.46(a): recent prior claim
 

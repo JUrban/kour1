@@ -1,9 +1,9 @@
 # Current status
 
-Updated: 2026-09-11T11:39:00+00:00.
+Updated: 2026-09-11T11:51:35.643632+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
-- Complete candidate resolutions: **21**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups), **14.72** (a smooth affine surface with a smooth fixed Cartier divisor but singular cyclic quotient), **21.40** (a normal nilpotent subgroup of finite index in every rational linear group with finitely many automorphism orbits), **21.60** (an order-twelve counterexample to the semiperfectness criterion), **4.55** (non-unique indecomposable projective decompositions over Z_(5)[3.A7]), and **21.107** (a countable resolvable group without an expansive sequence). All await outside review and further novelty checks.
+- Complete candidate resolutions: **22**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups), **14.72** (a smooth affine surface with a smooth fixed Cartier divisor but singular cyclic quotient), **21.40** (a normal nilpotent subgroup of finite index in every rational linear group with finitely many automorphism orbits), **21.60** (an order-twelve counterexample to the semiperfectness criterion), **4.55** (non-unique indecomposable projective decompositions over Z_(5)[3.A7]), **21.107** (a countable resolvable group without an expansive sequence), and **15.89** (a four-regular infinite Cayley graph with invertible adjacency on all functions). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
 - Latest prior-result audit: 14.59 is negative by Tent2016; the exact countable-action deduction is retained. Earlier published consequences for 5.15, 12.11, 13.39(f), and14.15 remain excluded from new priority.
 - The 21.26 search through order2000 and the 19.20 search through order511 are complete. Exact ID coverage and all completion records pass.
@@ -29,6 +29,8 @@ cases. General question and novelty remain unresolved. See
 `research/14.67-prime-class.md` and `research/14.67-review.md`.
 
 ## Candidate proofs
+
+**15.89:** Twenty-second complete candidate: on G=C3*C2, the connection set {aba,aba^2,a^2ba,a^2ba^2} gives an infinite connected simple four-regular Cayley graph. Its adjacency operator U B U has inverse (U-I)B(U-I)/4 on all complex-valued functions, so zero is not an eigenvalue. Free-product Python and independent projective-matrix GAP checks pass, together with63,936 finite-matrix identity entries. The zig-zag construction is prior and credited; novelty of this consequence and outside review remain pending. See `research/15.89-proof.md` and `research/15.89-review.md`. The earlier positive dihedral subclass remains valid.
 
 **21.107:** The countable group of finite subsets of N under symmetric
 difference, with open subgroups consisting of the finite subsets of a
@@ -155,9 +157,9 @@ general conjecture at each fixed n reduces to finite abelian groups, with
 counterexample order bounded by p_n*n^(n-1). Exact
 finite certificates now prove the all-group cases n=4,5,6: independent GAP
 Smith-normal-form checks verify227,10,493 and265,104 nodes, with a total
-of19,524,681 relation implications. The earlier n=7 continuation stopped with26,317,076 closed nodes, preserved as an audited incomplete gzip. The08:40 UTC continuation finished loading that prefix and is actively generating new nodes; see the timestamped live count above. The full arbitrary-n
+of19,524,681 relation implications. The earlier n=7 continuation stopped with26,317,076 closed nodes, preserved as an audited incomplete gzip. The08:40 UTC continuation has completed42,891,332 nodes and exited zero. Six independent GAP workers are checking the complete certificate; all must pass before n=7 is a proof. The full arbitrary-n
 conjecture and novelty remain open. See `research/20.100-reduction.md` and
-`research/20.100-review.md`; complete-candidate count is21 from the separately resolved entries.
+`research/20.100-review.md`; complete-candidate count is22 from the separately resolved entries.
 
 **20.108(c):** Caranti--Tsang2023 Theorem1.1 already gives a group of order3^10 with GL4(3) inside T(G), hence prime divisor5 outside p(p-1)=6. Prior affirmative result, excluded from new priority; see `research/20.108c-known-consequence.md`. This corrects our earlier provisional status for(c).
 
@@ -193,7 +195,7 @@ unaudited. Excluded from new-result priority; see
 
 **17.25(b):** Kim--Koberda, arXiv:1901.06375v4, Theorem1.4(1), already gives27/7 in the required interval. Excluded from new coverage; part(a) remains unresolved here. Full computational proof unaudited; see `research/17.25b-known-consequence.md`.
 
-**15.89:** Proved the positive infinite-dihedral Cayley subclass by an exact Laurent-polynomial coefficient argument. All complex values occur as adjacency eigenvalues on unrestricted functions, for every finite inverse-closed generating set. The general vertex-transitive problem remains unresolved. Search and independent controls pass; no novelty claim is made. See `research/15.89-dihedral.md`.
+
 
 **11.46(a):** The August 2026 preprint https://arxiv.org/abs/2608.07275v1 claims a finite E-group of class three. Its primary abstract was read, but the full proof was not audited. Excluded from new-target priority; no independent verification is claimed.
 
