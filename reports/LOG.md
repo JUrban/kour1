@@ -1379,3 +1379,19 @@ not the familiar integer or rational matrix-group problems. It is
 a prior consequence and leaves25 possible-new candidates unchanged.
 The12-page original CWI preprint was read in full; the final1980
 typeset version was not obtained. All work remains local.
+
+
+## 2026-09-11T14:48:13.116022+00:00 — Exponent qualification for 20.18 and source triage
+
+The class-two collection identity proves exp(G') divides 2^(k-1)
+whenever exp(G) divides 2^k. The printed universal exact-derived-
+exponent request therefore fails at p=2. The other convention makes
+the derived condition redundant and is already asserted in Budkin
+2020; only its primary abstract was read. A sharp unitriangular
+example, ten-point logical audit and PDF image are retained. This
+formulation qualification leaves 25 possible-new candidates unchanged.
+
+Recorded further source limits for 20.19 and older leads. In particular,
+a lattice in a product of trees does not automatically supply the
+free or hyperbolic group required in 20.19. The active 48-hour goal
+continues, with no outside communications or pushes.

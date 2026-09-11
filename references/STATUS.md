@@ -850,3 +850,14 @@ typeset text was not obtained. The 1999 handbook statement and
 corrected general bound were only seen in an indexed publisher
 excerpt. No claim about Z or Q is made. Seven source/proof files
 are hash-bound in `results/19.60-coefficient-audit.json`.
+
+
+## 20.18 and later-afternoon triage
+
+Printed page 150 was visually checked and cached. Budkin 2020,
+https://www.mathnet.ru/eng/smj6049 , DOI 10.1134/S0037446620060038,
+was read only at primary abstract and bibliographic-record level.
+The full proof is not imported into the independent class-two
+exponent obstruction. Exact versus dividing exponent is explicit.
+Further source scopes, including the conditional free anti-torus
+route to 20.19, are in `research/triage-2026-09-11-later-afternoon.md`.

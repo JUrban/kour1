@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T14:37:19.259794+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T14:48:13.116022+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 20.18 | Class-two collection identity bounds the derived exponent at p=2. | Exact-derived-exponent reading is impossible; divisibility-only reading is already asserted in Budkin 2020. Formulation qualification, excluded from new priority; odd-prime exact-exponent question untouched. |
 | 19.60 | Embed the roots-of-unity problem in diag(a,a^-1) over a computable Euclidean domain F[t]. | Prior negative consequence for arbitrary computable PIDs, already at d=2,m=1. No conclusion for Z or Q, and no new-candidate increment. |
 | 19.56 | Hyperfocal generation, central Frattini quotient and explicit minimal-simple local subgroups. | Twenty-fifth complete affirmative candidate, even with the inequality restricted to primary outputs. GAP 593 cases and independent Python controls pass; prior related results credited. Outside review and further novelty checking pending. |
 | 21.55 | Hall–Higman exponent bound and characteristic-p unipotent matrices. | Negative prior consequence for every p>=5: at p=7 the upper limit is at most 1/log_2(7)<1. Printed logarithm base verified; exact asymptotic value not claimed. Excluded from new priority. |
