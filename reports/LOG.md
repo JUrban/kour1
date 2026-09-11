@@ -352,3 +352,5 @@ and Jezernik differ at p=2 and were checked before importing results.
 No order512 search was launched. The portfolio remains nine complete
 candidates pending novelty and outside review. The48-hour goal remains
 active, and only local files and Git commits have been written.
+
+Order256 snapshot 2026-09-11T01:28:53.922504+00:00: 31,819 counted, 0 equality hits, 82 reverse inequalities, 13 live workers, 3 completed ranges, all checks PASS.
