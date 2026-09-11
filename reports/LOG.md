@@ -653,3 +653,25 @@ The20.100 n=7 generator remains live at7,250,000 states with its original
 10-million-state/two-hour bound; n=4,5,6 remain fully verified. The19.20
 order256 snapshot has54,746 counts,0 equalities,327 reversals,3 verified
 live workers and13 completed ranges. No pushes or external messages.
+
+## 2026-09-11T06:22:29Z — Larger-certificate continuation and verification controls
+
+Added exact certificate-prefix resumption. Prefixes of113 nodes at n=4 and
+5,000 nodes at n=5 reproduce the independently verified complete files
+byte for byte. An actual bounded stop at n=4 with46 completed nodes also
+resumes to the same proof. New bounded runs explicitly report incomplete
+status and omit the root footer. The current n=7 process still uses its
+original loaded code and has not been restarted or modified.
+
+Added a GAP checker that partitions nodes and stores component states with
+a fixed presentation cache. Three parts at n=4 and5 reproduce every count
+from the original verifier. The runner checks common hashes, every part's
+completion, disjoint coverage and aggregate counts before writing VERIFIED.
+A n=4 integration check passes. A deliberately false cross-part implication
+is rejected by the root's part; the valid leaf's part passes locally,
+confirming that a local PASS_SHARD is insufficient. Six planned workers
+have8GiB workspace ceilings each, within the overall resource budget.
+
+The n=7 generator was still live at8,510,000 visited states. No additional
+fixed-n result is claimed. Candidate count remains16 from11.116 and the
+earlier entries. See research/20.100-computation.md for continuation details.

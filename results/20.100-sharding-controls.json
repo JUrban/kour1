@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "sharded_checks": [
+    {
+      "n": 4,
+      "status": "PASS",
+      "totals": [
+        227,
+        51,
+        1056,
+        3953
+      ],
+      "matches_original_verifier": true
+    },
+    {
+      "n": 5,
+      "status": "PASS",
+      "totals": [
+        10493,
+        1736,
+        87570,
+        426345
+      ],
+      "matches_original_verifier": true
+    }
+  ],
+  "bounded_resume_byte_identical": true,
+  "partial_shard_pass_is_not_a_complete_proof": true,
+  "cross_shard_false_implication_rejected": true,
+  "runner_hash_and_coverage_aggregation": "PASS"
+}

@@ -1,0 +1,69 @@
+{
+  "started_utc": "2026-09-11T06:22:27.417591+00:00",
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 46474,
+      "log": "/project/results/20.100-n4-runner-control-shard0-verifier.log",
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "8g",
+        "-c",
+        "ProofShardIndex:=0;ProofShardCount:=3;",
+        "/project/scripts/verify_20_100_shard.g",
+        "/project/results/20.100-n4-certificate.g.gz"
+      ]
+    },
+    {
+      "index": 1,
+      "pid": 46475,
+      "log": "/project/results/20.100-n4-runner-control-shard1-verifier.log",
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "8g",
+        "-c",
+        "ProofShardIndex:=1;ProofShardCount:=3;",
+        "/project/scripts/verify_20_100_shard.g",
+        "/project/results/20.100-n4-certificate.g.gz"
+      ]
+    },
+    {
+      "index": 2,
+      "pid": 46476,
+      "log": "/project/results/20.100-n4-runner-control-shard2-verifier.log",
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "8g",
+        "-c",
+        "ProofShardIndex:=2;ProofShardCount:=3;",
+        "/project/scripts/verify_20_100_shard.g",
+        "/project/results/20.100-n4-certificate.g.gz"
+      ]
+    }
+  ],
+  "certificate_sha256": "63fedef4dfca36a5fc7c12b3f5bad577c4250a6fe12fba1ac908207f4b90238c"
+}

@@ -12,6 +12,7 @@ from pathlib import Path
 import gzip
 import hashlib
 import json
+import re
 import resource
 import time
 
@@ -21,6 +22,7 @@ def main():
     parser.add_argument("n", type=int)
     parser.add_argument("--prime-bound", type=int)
     parser.add_argument("--certificate", required=True)
+    parser.add_argument("--resume-certificate", help="Reuse completed nodes from an earlier certificate prefix")
     parser.add_argument("--max-states", type=int, default=2000000)
     parser.add_argument("--seconds", type=int, default=1800)
     args = parser.parse_args()
@@ -113,8 +115,47 @@ def main():
 
     path = Path(args.certificate)
     path.parent.mkdir(parents=True, exist_ok=True)
+    resume = Path(args.resume_certificate) if args.resume_certificate else None
+    if resume:
+        assert resume.resolve() != path.resolve(), "preserve the original prefix in a separate file"
     with gzip.open(path, "wt", encoding="ascii") as output:
         output.write(f"StartProof({n},{bound});\n")
+        if resume:
+            with gzip.open(resume, "rt", encoding="ascii") as previous:
+                assert next(previous) == f"StartProof({n},{bound});\n"
+                finished = False
+                for line in previous:
+                    if line.startswith("FinishProof("):
+                        assert line == f"FinishProof({len(done)});\n"
+                        finished = True
+                        assert previous.read() == ""
+                        break
+                    match = re.match(r"CheckNode\((\d+),", line)
+                    assert match and int(match.group(1)) == len(done)+1
+                    start, depth, end = match.end(), 0, None
+                    assert line[start] == "["
+                    for position in range(start, len(line)):
+                        if line[position] == "[":
+                            depth += 1
+                        elif line[position] == "]":
+                            depth -= 1
+                            if depth == 0:
+                                end = position+1
+                                break
+                    assert end and line[end] == "," and line.endswith(");\n")
+                    raw = re.sub(r"(-?\d+/\d+)", r'"\1"', line[start:end])
+                    state = tuple((m, tuple(Fraction(w) for w in ws)) for m, ws in json.loads(raw))
+                    assert sum(len(ws) for m, ws in state) == n and state not in done
+                    done[state] = len(done)+1
+                    if line[end+1:].startswith("[],"):
+                        counts["leaves"] += 1
+                    else:
+                        counts["edges"] += len(pairs)
+                    output.write(line)
+                counts["states"] = len(done)
+            print(json.dumps({"status": "RESUMED_PREFIX", "n": n, "prime_bound": bound,
+                              "source": str(resume), "source_had_root_footer": finished,
+                              **counts, "seconds": time.monotonic()-started}), flush=True)
 
         def solve(state):
             nonlocal counterexample
@@ -151,6 +192,11 @@ def main():
 
         try:
             root = solve(tuple((0, (Fraction(1),)) for _ in range(n)))
+        except TimeoutError:
+            print(json.dumps({"status": "INCOMPLETE_BOUND_REACHED", "n": n,
+                              "prime_bound": bound, "completed_nodes": len(done),
+                              **counts, "seconds": time.monotonic()-started}), flush=True)
+            return
         except ValueError:
             assert counterexample is not None
             print(json.dumps({"status": "COUNTEREXAMPLE", "n": n, "prime_bound": bound,
