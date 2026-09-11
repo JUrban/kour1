@@ -1,0 +1,71 @@
+{
+  "problem": "16.95",
+  "status": "PASS",
+  "exhaustive_GL_counts": {
+    "1": 1,
+    "2": 6,
+    "3": 168,
+    "4": 20160
+  },
+  "independent_cyclicity_controls": 22347,
+  "cyclic_controls": 19010,
+  "unordered_bases": 28082408,
+  "permuted_matrices_tested": 50718594,
+  "dimensions": [
+    {
+      "n": 1,
+      "bases": 1,
+      "expected": 1,
+      "tests": 1,
+      "max_tests": 1,
+      "hits": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "n": 2,
+      "bases": 3,
+      "expected": 3,
+      "tests": 4,
+      "max_tests": 2,
+      "hits": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "n": 3,
+      "bases": 28,
+      "expected": 28,
+      "tests": 37,
+      "max_tests": 4,
+      "hits": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "n": 4,
+      "bases": 840,
+      "expected": 840,
+      "tests": 1204,
+      "max_tests": 10,
+      "hits": 0,
+      "elapsed_ms": 0
+    },
+    {
+      "n": 5,
+      "bases": 83328,
+      "expected": 83328,
+      "tests": 130770,
+      "max_tests": 34,
+      "hits": 0,
+      "elapsed_ms": 45
+    },
+    {
+      "n": 6,
+      "bases": 27998208,
+      "expected": 27998208,
+      "tests": 50586578,
+      "max_tests": 155,
+      "hits": 0,
+      "elapsed_ms": 18305
+    }
+  ],
+  "scope": "All invertible binary matrices in dimensions1..6, modulo column permutations. Bounded evidence only."
+}

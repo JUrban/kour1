@@ -289,3 +289,23 @@ also read. Full details and search limitations are in
 research/17.33-review.md. No earlier resolution surfaced in this limited
 search; novelty remains unconfirmed. The candidate proof is elementary
 and does not depend on importing those theorems.
+
+## Problems16.60,16.95,17.18,17.25
+
+16.60: https://arxiv.org/abs/2605.23195v1 , Theorem3.1 is the full
+prior affirmative claim. Introduction, Lemmas2.19--2.20 and Theorem3.1
+read. A direct proof repairing the identified scalar Cauchy--Schwarz
+gap is retained; the rest of the paper is unaudited.
+
+16.95: https://arxiv.org/abs/1606.02238v2 explicitly withdraws the
+purported proof (14 November2017). Primary abstract and withdrawal
+notice read. The faulty full proof was not audited.
+
+17.25(b): https://arxiv.org/abs/1901.06375v4 , Theorem1.4(1),
+already supplies27/7. Exact reading limitations are documented in
+research/17.25b-known-consequence.md.
+
+17.18: https://arxiv.org/abs/2304.08365 , primary abstract read only;
+the SU(3) circle-amalgamation experiments do not establish the general
+Notebook assertion. Associated repository and seminar descriptions were
+also screened, but full proofs and code remain unaudited.

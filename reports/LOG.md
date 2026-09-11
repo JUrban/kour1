@@ -367,3 +367,14 @@ the predicted finite quotient. The internal audit records every key
 logical implication and the limited primary-literature review. Novelty
 and outside review remain pending. Only local files and commits were
 created; the48-hour goal remains active.
+
+At 2026-09-11T01:57:45.521066+00:00, retained the completed16.95 binary search through
+dimension6:28,082,408 unordered bases,50,718,594 permutation tests,
+no counterexample. All22,347 independent all-vector Krylov controls
+pass. This is bounded evidence, not a general solution. The prior
+Dixon proof was withdrawn, as explicitly stated on its primary page.
+
+Recorded exclusions16.60 (May2026 full affirmative claim, plus an
+independent tensor proof repairing an unjustified source step) and
+17.25(b) (Kim--Koberda Theorem1.4(1) at27/7). Their exact reading
+limitations are explicit. The portfolio remains ten complete candidates.

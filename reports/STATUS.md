@@ -33,6 +33,8 @@ Updated: 2026-09-11T01:55:56.226842+00:00.
 
 ## Completed bounded searches
 
+- **16.95:** All invertible binary matrices through dimension6 covered modulo column permutations:28,082,408 unordered bases and50,718,594 cyclicity tests, no counterexample. All22,347 independent Krylov controls pass. Dixon2016 was explicitly withdrawn in2017; it does not resolve the problem. See `research/16.95-plan.md`.
+
 - **16.14:** All58,760 groups of orders2,4,...,256 checked, with no counterexample. The rank bound holds in55,177; each of the other3,583 has an explicit noncentral involution. Every witness was replayed, and340 independent small controls pass. An elementary exponent-four subclass proof is in `research/16.14-exponent4.md`; the general question remains unresolved and no novelty claim is made.
 
 - **21.99:** All 4,722 transitive groups of degrees 2–20 satisfy the conjecture: 4,631 orbital checks and 91 rank-two cases. Independent full-element verification agrees for all 86 groups of degrees 2–8.
@@ -66,6 +68,10 @@ and automorphism order. Five smaller controls also agree. None of the
 60 evaluated parameter triples gives equality.
 
 ## Additional constructions and exclusions
+
+**16.60:** The full affirmative answer is stated in Yerrapati--Dixit--Shukla, arXiv:2605.23195v1, Theorem3.1. A direct tensor-projection argument verifies the bound and repairs an unjustified scalar Cauchy--Schwarz step in the source. Excluded from new coverage; see `research/16.60-known-consequence.md` for exact reading scope.
+
+**17.25(b):** Kim--Koberda, arXiv:1901.06375v4, Theorem1.4(1), already gives27/7 in the required interval. Excluded from new coverage; part(a) remains unresolved here. Full computational proof unaudited; see `research/17.25b-known-consequence.md`.
 
 **15.89:** Proved the positive infinite-dihedral Cayley subclass by an exact Laurent-polynomial coefficient argument. All complex values occur as adjacency eigenvalues on unrestricted functions, for every finite inverse-closed generating set. The general vertex-transitive problem remains unresolved. Search and independent controls pass; no novelty claim is made. See `research/15.89-dihedral.md`.
 
