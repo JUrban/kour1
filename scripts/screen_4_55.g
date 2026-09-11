@@ -17,14 +17,18 @@ end;
 Screen455 := function()
 local names, nam, t, p, b, d, n, cg, constraints, mat, r, support,
       fs, i, f, orb, orbs, df, parity, rank, rankaxis, axes, v,
-      tables, available, complexhits, parityhits, gp, frob;
+      tables, available, complexhits, parityhits, gp, frob, tableindex;
 names:=AllCharacterTableNames();
+if not IsBound(START_TABLE455) then START_TABLE455:=1;fi;
+Print("START range=",START_TABLE455,"..",Length(names),"\n");
 tables:=0; available:=0; complexhits:=0; parityhits:=0;
-for nam in names do
+for tableindex in [START_TABLE455..Length(names)] do
+  nam:=names[tableindex];
   t:=CharacterTable(nam); tables:=tables+1;
   cg:=GaloisMat(Irr(t)).generators;
   fs:=Indicator(t,2);
-  for p in Set(FactorsInt(Size(t))) do
+  # FactorsInt(1)=[1]; the trivial group has no modular primes.
+  for p in Filtered(Set(FactorsInt(Size(t))),IsPrimeInt) do
     b:=t mod p;
     if b=fail then continue; fi;
     d:=DecompositionMatrix(b);
@@ -59,11 +63,13 @@ for nam in names do
     fi;
   od;
   if tables mod 100=0 then
-    Print("PROGRESS tables=",tables," available=",available,"\n");
+    Print("PROGRESS tables=",tables," last_index=",tableindex,
+          " available=",available,"\n");
   fi;
 od;
 Print("DONE tables=",tables," available=",available," rationality_hits=",
-      complexhits," parity_hits=",parityhits,"\n");
+      complexhits," parity_hits=",parityhits,
+      " range=",START_TABLE455,"..",Length(names),"\n");
 end;
 Screen455();
 QUIT;
