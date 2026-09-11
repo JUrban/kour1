@@ -646,3 +646,27 @@ controlled family was read in Frid's Example 1. Printed Notebook page 97
 visually checked. Neither reflection deletion nor interval DP is claimed
 as new. The index-two conversion and algorithm remain under priority
 review; limited searches do not establish novelty.
+
+## Problem 18.18
+
+Malcev, *Undecidability of the elementary theory of finite groups*,
+Doklady Akademii Nauk SSSR 138:4 (1961), 771–774,
+https://www.mathnet.ru/php/getFT.phtml?jrnid=dan&option_lang=eng&paperid=25080&what=fullt :
+introduction, Theorem 1 statement, Theorem 2 statement and undecidability
+deduction, final Theorem 3 statement and finite-group consequence read.
+Coding constructions and external ring/group correspondence unaudited.
+Web PDF accessible; separate local download HTTP 403. This is the sole
+imported theorem in the complete candidate. Counterexample enumeration
+converts its undecidability conclusion to the exact non-enumerability
+premise already recalled in the Notebook. Printed page 119 visually
+checked again.
+
+Shelah, *First order theory of permutation groups*,
+https://shelah.logic.at/papers/24/ , DOI 10.1007/BF02762670:
+introduction, interpretation definitions, Lemma 2.1 statement and proof
+hint read. It credits McKenzie and sets finite sets aside. Opening
+statement of the associated 1973 errata read; full classification and
+corrected proof unaudited and not imported. Symmetric-group interpretation
+is credited as classical; our fixed finite-model sentence is proved in
+full. Exact question and centralizer searches found no complete prior
+answer, without establishing novelty. See `18.18-review.md`.

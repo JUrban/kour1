@@ -1,0 +1,60 @@
+CLASS_START order=120 class=10
+CLASS_CENTRALIZER size=1
+CLASS_STARS count=5 quadruples=5
+CLASS_START order=720 class=15
+CLASS_CENTRALIZER size=1
+CLASS_STARS count=6 quadruples=30
+CLASS_START order=5040 class=21
+CLASS_CENTRALIZER size=1
+CLASS_STARS count=7 quadruples=105
+CLASS_START order=40320 class=28
+CLASS_CENTRALIZER size=1
+CLASS_STARS count=8 quadruples=280
+CLASS_START order=362880 class=36
+CLASS_CENTRALIZER size=1
+CLASS_STARS count=9 quadruples=630
+CLASS_START order=720 class=15
+CLASS_CENTRALIZER size=1
+CLASS_STARS count=6 quadruples=30
+CLASS_START order=24 class=6
+CLASS_CENTRALIZER size=1
+CLASS_STARS count=0 quadruples=0
+CLASS_START order=24 class=3
+CLASS_CENTRALIZER size=4
+CLASS_START order=12 class=3
+CLASS_CENTRALIZER size=4
+CLASS_START order=60 class=15
+CLASS_CENTRALIZER size=1
+CLASS_START order=360 class=45
+CLASS_CENTRALIZER size=1
+CLASS_START order=10 class=5
+CLASS_CENTRALIZER size=1
+CLASS_STARS count=1 quadruples=5
+CLASS_START order=120 class=1
+CLASS_CENTRALIZER size=120
+CLASS_START order=240 class=1
+CLASS_CENTRALIZER size=240
+CLASS_START order=240 class=10
+CLASS_CENTRALIZER size=2
+CLASS_START order=240 class=10
+CLASS_CENTRALIZER size=2
+CLASS_START order=240 class=15
+CLASS_CENTRALIZER size=2
+CLASS_START order=240 class=15
+CLASS_CENTRALIZER size=2
+PASS_SIGMA positives=[ [ 5, [ true, "PASS", 10, 5, 5 ] ], [ 6, [ true, "PASS", 15, 6, 30 ] ], [ 7, [ true, "PASS", 21, 7, 105 ] ], [ 8, [ true, "PASS", 28, 8, 280 ] ], [ 9, [ true, "PASS", 36, 9, 630 ] ], [ 6, [ true, "PASS", 15, 6, 30 ] ] ] negatives=[ [ "S4", [ false, "vertices", 6, 0, 0 ] ], [ "S4", [ false, "centralizer", 3, 0, 0 ] ], [ "A4", [ false, "centralizer", 3, 0, 0 ] ], [ "A5", [ false, "three_endpoints", 15, 3, 3 ] ], [ "A6", [ false, "three_endpoints", 45, 3, 3 ] ], [ "D10", [ false, "vertices", 5, 1, 5 ] ], [ "SL2_5", [ false, "centralizer", 1, 0, 0 ] ], [ "S5xC2", [ false, "centralizer", 1, 0, 0 ] ], [ "S5xC2", [ false, "centralizer", 10, 0, 0 ] ], [ "S5xC2", [ false, "centralizer", 10, 0, 0 ] ], [ "S5xC2", [ false, "centralizer", 15, 0, 0 ] ], [ "S5xC2", [ false, "centralizer", 15, 0, 0 ] ] ]
+CENTRALIZER_CASE order=1 id=1
+CENTRALIZER_CASE order=2 id=1
+CENTRALIZER_CASE order=3 id=1
+CENTRALIZER_CASE order=4 id=1
+CENTRALIZER_CASE order=4 id=2
+CENTRALIZER_CASE order=5 id=1
+CENTRALIZER_CASE order=6 id=1
+CENTRALIZER_CASE order=6 id=2
+CENTRALIZER_CASE order=7 id=1
+CENTRALIZER_CASE order=8 id=1
+CENTRALIZER_CASE order=8 id=2
+CENTRALIZER_CASE order=8 id=3
+CENTRALIZER_CASE order=8 id=4
+CENTRALIZER_CASE order=8 id=5
+PASS_CENTRALIZERS groups=14 padded_cases=28 rows=[ [ 1, 1, 5, 1 ], [ 1, 1, 6, 1 ], [ 2, 1, 11, 2 ], [ 2, 1, 12, 2 ], [ 3, 1, 21, 3 ], [ 3, 1, 22, 3 ], [ 4, 1, 35, 4 ], [ 4, 1, 36, 4 ], [ 4, 2, 35, 4 ], [ 4, 2, 36, 4 ], [ 5, 1, 53, 5 ], [ 5, 1, 54, 5 ], [ 6, 1, 75, 6 ], [ 6, 1, 76, 6 ], [ 6, 2, 75, 6 ], [ 6, 2, 76, 6 ], [ 7, 1, 101, 7 ], [ 7, 1, 102, 7 ], [ 8, 1, 131, 8 ], [ 8, 1, 132, 8 ], [ 8, 2, 131, 8 ], [ 8, 2, 132, 8 ], [ 8, 3, 131, 8 ], [ 8, 3, 132, 8 ], [ 8, 4, 131, 8 ], [ 8, 4, 132, 8 ], [ 8, 5, 131, 8 ], [ 8, 5, 132, 8 ] ]

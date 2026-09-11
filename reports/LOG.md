@@ -1186,3 +1186,39 @@ no completed n=7 proof. All work and commits remain local. The active
 ## 2026-09-11T12:22:32.934799+00:00 — Bounded exclusions for 16.46
 
 All 19 listed finite targets completed, with 9288 conjugacy-reduced A,B pairs and 21648 cube-compatible triples, and no nontrivial homomorphism. The exact reduction uses the independence of C,D,E,F; it allows coinciding images. K has trivial abelianization, verified from its 22 relators. Independent Python literal permutations match every recorded count for A5,A6,A7 and perform 35,904 expanded-relator checks. Both processes exited zero; coverage and hash audits pass. Printed page 101 was visually checked. These are bounded exclusions only, with no new complete candidate or novelty claim. The complete count remains 23.
+
+## 2026-09-11T12:33:35.539956+00:00 — Twenty-fourth candidate: both assertions of 18.18
+
+Completed the previously missing complement reduction. An explicit fixed
+first-order sentence reconstructs points from four mutually noncommuting
+involutions and their incidence sets, and its finite models are exactly
+S_n for n>=5. A trivial-common-centralizer axiom makes the reconstructed
+action faithful; all transpositions then force the full symmetric group.
+Separately, two permutations on H x {0,...,|H|-1} have common centralizer
+exactly the left regular H. Padding with a larger symmetric orbit gives
+that centralizer in every S_n after 2|H|^2+3. These are self-contained
+lemmas, without a classification theorem.
+
+For input phi, (not sigma) or (exists a,b not phi^C(a,b)) is cofinite
+exactly when phi fails in some finite group. Together with the earlier
+universal-centralizer reduction, Malcev non-enumerability proves both
+assertions. The witness H is needed only in the correctness proof,
+not in the effective sentence transformation. The interpretation of
+almost all is explicitly cofinite up to isomorphism, not density.
+
+GAP verifies six positive incidence cases, twelve negative involution
+classes, and all 14 base plus 28 padded centralizers for groups of orders
+through eight. Independent Python literal permutations, 3,624 group-table
+associativity checks and exact point-image propagation agree. Both final
+processes exit zero. Two earlier GAP control runs were stopped incomplete;
+diagnostics exposed redundant negative-case enumeration, replaced by an
+exact three-endpoint rejection. Their logs and source hashes are retained
+and excluded from pass evidence. The final summarizer audits markers,
+counts, independent agreement and artifact hashes.
+
+The primary Malcev theorem and the limited classical permutation-theory
+reading are recorded precisely. Further priority checking and independent
+outside review remain pending. The complete candidate count is now 24.
+The 20.100 n=7 independent verification continues; no n=7 theorem is
+claimed. All work and commits remain local, with the 48-hour goal active
+through 2026-09-12 20:56:46 UTC.

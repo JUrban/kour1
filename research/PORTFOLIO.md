@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-11T12:12:57.818053+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T12:33:35.539956+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -41,7 +41,7 @@ Updated 2026-09-11T12:12:57.818053+00:00. This is a research triage list, not an
 | 18.76 | Explicit crossed extension over a division closure of k[F2 x F2]. | Complete internally checked negative candidate. Group-ring controls in five characteristics and 27 GAP obstruction checks PASS; novelty and outside review pending. |
 | 17.100 | Odd-degree characters on odd-size classes. | Full library screen:215 simple-table entries,12,606 pairs, no counterexample. Alternate simplicity criterion and eight actual-group controls PASS. General problem unresolved. |
 | 17.124 | Effective enumeration of ordinary metabelian presentations. | Prior9 September2026 claim by Jayadevan; exact main theorem read, full proof and Lean files unaudited. Exclude from new-result priority. |
-| 18.18 | Interpret arbitrary finite H as a common centralizer in H x S_n. | Proves nonenumerability of the cofinite theory. Its complement remains unresolved; partial result, no novelty claim. |
+| 18.18 | Define the finite symmetric groups by a fixed sentence and realize every finite group as a common centralizer in all sufficiently large S_n. | Twenty-fourth complete candidate: both the cofinite finite-group theory and its complement are non-enumerable. Explicit first-order and centralizer proofs; independent Python/GAP controls pass. Cofinite interpretation, outside review and further novelty checks explicit. |
 | 18.20 | At most two projective ratios between character rows. | All33,810,661 unequal-degree pairs in2,750 tables checked, no hit;129 exhaustive partition controls PASS. General conjecture unresolved. |
 | 18.44 | Extremal orbit size with exactly two largest orbits. | Exact prior affirmative theorem: Jones--Keller2020 Theorem1.2. Full proof unaudited; excluded from new-result priority. |
 | 21.106 | Define a central generator up to inversion in H(Z) using first-order centralizer conditions. | Candidate complete negative solution committed; published-source version confirms question remains posed. Audit and refine manuscript. |
