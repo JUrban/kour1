@@ -1584,3 +1584,14 @@ At17:24:47 UTC the six n=7 workers remained verified live, with13,020,000
 total checked nodes and18,475,764KiB combined RSS; no shard was complete.
 The earlier index-two obstruction in the Amelio--Andre--Tent framework was
 avoided by using Amelio's newer theorem, not silently assumed absent.
+
+
+## 2026-09-11T17:48:51.651117+00:00 — 10.32 conditional cycle-product route
+
+Recorded the remaining mixed-parity exponent case and an explicit unproved
+class-product lemma. All3,621 exact coefficients for15 eligible (n,q)
+pairs through degree25 are positive on odd classes. A5 is independently
+covered by two elements of order dividing3, correcting a printed auxiliary
+claim in Malcolm2017 Remark2.6 (visually checked). The logarithmic
+consequence with c>8 is conditional on the class-product lemma;10.32
+is not counted. Plan, bounded transcript and actual clean exit0 retained.
