@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-11T15:22:40.163265+00:00",
+  "gap_actual_group_elements": 17667,
+  "gap_constructive_inverse_inputs": 303,
+  "gap_field_results": [
+    [
+      5,
+      625,
+      4,
+      400,
+      [
+        0,
+        1,
+        0,
+        1
+      ],
+      101,
+      [
+        [
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    ],
+    [
+      7,
+      2401,
+      3,
+      2058,
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      101,
+      [
+        [
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    ],
+    [
+      11,
+      14641,
+      10,
+      0,
+      [],
+      101,
+      [
+        [
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    ]
+  ],
+  "python_literal_entries": 23328,
+  "python_symbolic_examples": 3,
+  "initial_failed_control_retained": true,
+  "scope": "Complete candidate proof; internal controls pass; outside review and novelty pending.",
+  "sha256": {
+    "research/20.92a-plan.md": "3cd012d1d705cd309d7232a264cab34e1e4f4a50303fd979c680b8db8e078df9",
+    "research/20.92a-proof.md": "b5da35351c2262f66a37706a9019fefebbfd4416265e9e8f60bf41b44035aa15",
+    "research/20.92a-review.md": "1d35f1349dd952e813194eff168efe123be9c5991f2f0c3f988ed4dab3ab5f9c",
+    "scripts/verify_20_92a.py": "471ba7a68b4b95ab6276591ef237867ea4f90449bc5089f75258def40f440b2d",
+    "scripts/verify_20_92a.g": "fbadabe81d53273d149336b9305199155a80499b5571777cdd0c143c3ca90045",
+    "scripts/summarize_20_92a.py": "3c55391cfa638f25d6d388dd5eb33859d4f090f2b0355cb76c73e6fd6011fbe6",
+    "scripts/20.92a-initial-control.py": "732c63ccadb9f4f271876889de770f2a22ace107c596a2fdb29671dbe794a2a6",
+    "results/20.92a-python.json": "3d261e2dd068925bfb76cd4ecf6d9c94a7255c07be023be596d6cd7765a0c7dc",
+    "results/20.92a-python.log": "f95a6e851d091110510c911b6be51e6e51fc9a7e9e3312ce0d3d469454ac4efa",
+    "results/20.92a-python-run.json": "b295bcd04fdf899953af2436887fc8d63c786120259f9023c83338a44608b7a7",
+    "results/20.92a-gap.log": "f655b1a17d15f908c4bfc1d8c4fd16122797a989f4f49068cd0e0c64f5574d0e",
+    "results/20.92a-gap-run.json": "7c5033e0301798cfdb50700a9ce3ae7a30b1e3a2dd3b96cc423f76fffd919247",
+    "results/20.92a-initial-python.log": "da85c7165152a5eef97e2f296708d26141e6a8cf83eeb71ce9d6ab73cbbf5570",
+    "results/20.92a-initial-python-run.json": "cb54a6e5bad1ac2f7b62cace048b9bafcef948a2ba284ad79ebf23142cce323e",
+    "docs/21tkt.pdf": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911",
+    "bin/gap": "02e405c0f80821b91bb0da7b3d43f611c7faca424f8c9ea760dfb5222d975a2d",
+    "references/cache/notebook-page161-2092.png": "4cf4a15791779af580c09c526eededaf2443822114cebde73e090cd59f9fc397",
+    "references/cache/lazard-nilpotent-groups-lie-rings-1954.pdf": "21adb76ae0fe0e31410856601380d63d2b50f0e8da37a1d9f6658d61d44b090f",
+    "references/cache/lazard-nilpotent-groups-lie-rings-1954.txt": "5c91548412bc5a283cd44130ef38b5c808ebf8b25c46fcb66ecbaaf1bdfc9ac9",
+    "references/cache/trappeniers-lazard-braces-2024.pdf": "6d3944a1289d669ab5ec9d17289df38a2fc3597b021abb75898be023c9251991",
+    "references/cache/trappeniers-lazard-braces-2024.txt": "c3126915b1673b709933fe5e7ad42c4d9d50159b31427b603fcab6f08bff0b0e",
+    "references/cache/trappeniers-lazard-braces-2024-v3.pdf": "d8edcd5ee3e82c70613f951966dcc6bdec7e46aa6fb336216f83eb29eb731238",
+    "references/cache/trappeniers-lazard-braces-2024-v3.txt": "2d427fb9522d209f39eaf4c0417604bcab961fe1f1e70338d9d01c5c72f38f41",
+    "references/cache/puljic-smoktunowicz-zenouz-braces-p4-2022.pdf": "c8965d468fa8741b164baee02d1e162f673abbd6cdd13edb8392147e29a8b1a1",
+    "references/cache/puljic-smoktunowicz-zenouz-braces-p4-2022.txt": "54ffaa59f698691b56a97c05f537020e5377aaaca47c74ca389789c0d554cbae"
+  }
+}

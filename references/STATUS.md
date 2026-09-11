@@ -872,3 +872,17 @@ https://d-nb.info/1342125495/34 , all nine pages read. Its partial
 20.86 bounds and weaker-conjecture reduction are distinguished in
 `research/20.86-source-triage.md`. Halasi et al. and Shumyatsky
 reading scopes are in the later-afternoon triage file.
+
+
+## 20.92(a): affine Lazard and bounded polynomial averaging
+
+Primary Lazard 1954 pp.176-180 supply the subgroup correspondence.
+Current Trappeniers arXiv:2406.02475v3 was checked against its live
+version history; its Section 6 averaging still requires the strong
+filtration. The residual-correction proof is credited to the same
+paper's Proposition 5.5 (v1 Proposition 8.10). PSNZ 2022 Section 5
+affine generators and Example 7.2 supply directly verified controls
+outside right nilpotence. Exact reading scopes and source limits are
+in `research/20.92a-review.md`; cached PDFs/text and Notebook page161
+are hash-bound by `results/20.92a-summary.json`. Smoktunowicz 2022
+was consulted at primary abstract and attribution level only.

@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T14:57:31.983735+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T15:22:40.102887+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 20.92(a) | Affine matrix Lazard plus a constructive polynomial inverse and weighted coefficient extraction. | Twenty-sixth complete affirmative candidate for all primes above an explicit dimension-only bound, without strong nilpotence. Exact polynomial and actual GAP controls pass. Prior machinery credited; outside review and comprehensive novelty checks pending. |
 | 20.80 | Lu 2025 Theorem A. | Exact prior affirmative result; all five pages read, short sufficiency proof checked with an explicit sign correction. No new count. |
 | 20.18 | Class-two collection identity bounds the derived exponent at p=2. | Exact-derived-exponent reading is impossible; divisibility-only reading is already asserted in Budkin 2020. Formulation qualification, excluded from new priority; odd-prime exact-exponent question untouched. |
 | 19.60 | Embed the roots-of-unity problem in diag(a,a^-1) over a computable Euclidean domain F[t]. | Prior negative consequence for arbitrary computable PIDs, already at d=2,m=1. No conclusion for Z or Q, and no new-candidate increment. |

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/project/scripts/verify_20_92a.py", line 210, in <module>
+    check('associative_truncated_polynomials', associative)]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/project/scripts/verify_20_92a.py", line 128, in check
+    assert bracket == left(vector), 'pre-Lie identity on basis'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: pre-Lie identity on basis

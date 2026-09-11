@@ -1,0 +1,1690 @@
+                                            A LAZARD-TYPE CORRESPONDENCE AND APPLICATIONS
+                                                   TO SKEW BRACES AND POST-LIE RINGS
+
+                                                                                S. TRAPPENIERS
+
+
+                                                   Abstract. Through a Hopf algebraic approach, we develop a framework for
+                                                   formal differentiation and integration and prove a correspondence theorem
+arXiv:2406.02475v1 [math.RA] 4 Jun 2024
+
+
+
+
+                                                   that comprises the Lazard correspondence, the Malcev correspondence and
+                                                   the formal integration of complete connected Lie algebras with characteristic
+                                                   0. We then apply this theory to obtain a correspondence theorem for classes
+                                                   of left nilpotent skew braces on a nilpotent group and left nilpotent post-Lie
+                                                   rings on a nilpotent Lie ring.
+
+
+
+
+                                                                               1. Introduction
+                                             In 1954, Lazard proved a correspondence between Lie rings and groups satisfying
+                                          certain completeness conditions [21]. The nowadays better known version of this,
+                                          although more restrictive than the original version, states that for pk a prime power,
+                                          there is a bijective correspondence between nilpotent Lie rings of order pk and
+                                          nilpotency class at most p − 1, and nilpotent groups of order pk of nilpotency
+                                          class at most p − 1. In particular, one finds a correspondence between groups of
+                                          order pk and nilpotent Lie rings of order pk for k < p. This has proved to be
+                                          very useful in the classification of finite p-groups, see for example [25]. Lazard’s
+                                          ideas built upon earlier work by Malcev [22], who proved a correspondence between
+                                          nilpotent rational Lie algebras and nilpotent radicable torsionfree groups. Quillen
+                                          extended Malcev’s result to arbitrary field of characteristic 0 [28], his technique is
+                                          now generally referred to as formal integration.
+                                             Pre-Lie algebras, also called left-symmetric algebras, arose as early as in 1881
+                                          in the work of Cayley [11], only to resurface again 80 years later in the works of
+                                          Vinberg [40] and Koszul [20]. See [9] for a survey on pre-Lie algebras. One of
+                                          the motivations to study pre-Lie algebras comes from geometry, as they appear
+                                          naturally in the study of regular affine actions of Lie groups [19]. More recently,
+                                          the notion of a post-Lie algebra was introduced in the works of Valette [39], see also
+                                          [15]. For R a commutative ring, a post-Lie R-algebra is a Lie R-algebra a together
+                                          with an R-bilinear map ⊲ : a × a → a satisfying:
+                                          (1.1)                        x ⊲ [y, z] = [x ⊲ y, z] + [y, x ⊲ z],
+                                          (1.2)                        [x, y] ⊲ z = (x, y, z)⊲ − (y, x, z)⊲ ,
+                                          with (x, y, z)⊲ := x ⊲ (y ⊲ z) − (x ⊲ y) ⊲ z. If a is abelian, then (a, ⊲) is a pre-Lie
+                                          R-algebra. A post-Lie Z-algebra, respectively pre-Lie Z-algebra is called a post-Lie
+                                          ring, respectively pre-Lie ring.
+                                             Braces were introduced in 2006 by Rump [29, 30] in the study of the set-
+                                          theoretical Yang–Baxter equation. They were subsequently generalized by Guarnieri
+                                          and Vendramin to skew braces [18]. A skew brace is a triple (A, ·, ◦) with A a set
+
+                                              2020 Mathematics Subject Classification. 17B69, 20N99, 20F19, 20F40.
+                                              Key words and phrases. post-Lie algebra, pre-Lie algebra, brace, skew brace, left nilpotent,
+                                          nilpotent group, Lazard correspondence.
+                                                                                         1
+2                                   S. TRAPPENIERS
+
+
+and (A, ·) and (A, ◦) group structures such that
+                           a ◦ (b · c) = (a ◦ b) · a−1 · (a ◦ b),
+holds for all a, b, c ∈ A. Here a−1 denotes the inverse of a in (A, ·). When (A, ·)
+is abelian, then (A, ·, ◦) is called a brace. For braces, the notation (A, +, ◦) is also
+common (in fact, this is also the case for skew braces, but to avoid any possible
+confusion we will abstain from using + for a non-abelian group operation). Skew
+braces are essentially the same as bijective 1-cocycles of groups or regular subgroups
+of the holomorph of a group. In this sense, they have already been studied in a
+geometric framework in the form of regular affine actions of Lie groups on vector
+spaces [3, 24] long before their current definition. Since pre-Lie algebras played
+an important role there, some connection between skew braces and pre-Lie rings is
+to be expected. This was indeed first stated by Rump [31] for R-braces, he also
+gave an idea of how to use the Lazard correspondence for the finite case. Bachiller
+then used techniques similar to the ones that Rump alluded to in order to give
+a counterexample of a conjecture on braces [4], starting from a counterexample
+by Burde [8] to a question by Milnor [24] (note that the first counterexample to
+Milnor’s question was given earlier by Benoist [6]).
+   Smoktunowicz proved that the construction of the group of flows, as defined
+for pre-Lie algebras in [2], could be adapted to left nilpotent pre-Lie rings of prime
+power order pk , with k +1 < p, in order to obtain braces [36] with the same additive
+structure. Here, a post-Lie algebra (a, ⊲) is left nilpotent if there exists some n such
+that an = 0 where a1 = a and ai+1 is the subgroup of (a, +) generated by a ⊲ b
+for a ∈ a, b ∈ ai , right nilpotency is defined analogously. Similarly, a skew brace
+(A, ·, ◦) is left nilpotent if there exists some n such that An = 1, where A1 = A and
+Ai+1 is the subgroup of (A, ·) generated by the elements a ∗ b = a−1 · (a ◦ b) · b−1
+for all a ∈ A, b ∈ Ai , right nilpotency is defined analogously. Recall that a skew
+brace of prime power order is always left nilpotent [12]. It is not immediately clear
+whether this construction is invertible, as only an inverse construction is given
+in the case of strongly nilpotent braces of order pk , with k + 1 < p, and with
+strong nilpotency index at most p − 1. Here strong nilpotency is equivalent to the
+structures being both left and right nilpotent [33]. This correspondence was used
+to classify all strongly nilpotent braces of order p4 , for p > 55 , in [26] while the
+non-strongly nilpotent ones were classified earlier in [27]. In [35], a construction is
+given starting from a brace (A, +, ◦) of order pk , with k + 1 < p, in order to obtain
+a pre-Lie ring structure with additive group (A, +)/{a ∈ A | p2 a = 0}. Although
+the strong nilpotency condition is no longer present, one can not hope that this
+yields a correspondence as we quotient by a non-trivial subgroup.
+   Recently, Bai, Guo, Sheng and Tang showed how from a regular affine action of
+a Lie group onto another Lie group, one obtains a post-Lie algebra through differ-
+entiation [5] (note that, although not explicitly stated in this way, this construction
+also appears in [10]). This extended the earlier techniques to obtain a pre-Lie al-
+gebra in the case that the latter group is Rn . Conversely, also in [5] a construction
+by formal integration was given which yields a skew brace structure starting from
+a post-Lie algebra of characteristic 0 and with some completeness conditions.
+   A common idea is present in the earlier mentioned works of Malcev, Lazard and
+Quillen: starting from a Lie ring g we want to embed it into an algebra A, moreover
+the exponential and logarithmic map exp and log should be defined on (subsets of)
+A and in this way exp(g) is a group (with some additional structure). This group
+structure is then transferred onto a since log(exp(a)) = a. The first goal of this
+paper is to introduce a general theory where precisely this idea can be applied.
+The second goal is then to define post-Lie algebras and skew braces in this context
+and give a uniform treatment of formal differentiation and integration, yielding a
+           LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                         3
+
+
+correspondence between these two structures. The exact definitions can be found
+in the respective sections, but the following overview should give a general intuition
+as to how we approach this. In particular, note that the analogy with the approach
+taken in [28, 41].
+    In Section 2 we introduce the main actors of this paper, i.e. sequences of rings
+R and modules over such sequences. We prove the necessary properties of this
+category of modules which allow us to define R-algebras, Lie R-algebras, co R-
+algebras and Hopf R-algebras.
+    We next proceed in Section 3 to prove that if R has a certain divisibility property,
+then the Poincarré-Birkhoff-Witt theorem holds in our context.
+    By introducing a completion operation in Section 4 we can then also obtain
+the Poincarré-Birkhoff-Witt theorem in the complete setting and moreover also the
+Milnor-Moore theorem is proved under the earlier divisibility condition on R.
+    In Section 5, we then introduce the notion of an R-group. They are naturally
+obtained as the grouplike elements of a (complete) Hopf R-algebra. By defining the
+exponential and logarithmic map on complete Hopf R-algebras we are able to obtain
+a Lazard-type correspondence between complete Lie R-algebras and complete R-
+groups under some natural conditions.
+    In Section 6 and Section 7 we introduce the notion of post-Lie R-algebras and
+skew R-braces. In particular, we prove if (A, ·, ◦) is a left nilpotent skew brace and
+(A, ·) is a nilpotent group, then also (A, ◦) is a nilpotent group. This result was
+previously only known for finite skew braces [12, Theorem 4.8]. In fact we have a
+stronger result, for which we first have to introduce a new notion of nilpotency.
+    Let (A, ·, ◦) be a skew brace, define inductively L1 (A) = A and Li+1 (A) the
+subgroup of (A, ·) generated by all elements of the form a ∗ b = a−1 · (a ◦ b) · b−1 and
+a · b · a−1 · b−1 for a ∈ A, b ∈ Li (A). Note Li (A) is the left hand version of the series
+Rn (A, A) as defined in [1]. By induction, one sees that the Li (A) are a descending
+chain of normal subgroups of (A, ·). We now define L-nilpotency of skew braces,
+which for braces clearly coincides with left nilpotency.
+Definition 1.1. A skew brace (A, ·, ◦) is L-nilpotent if there Lk+1 (A) = 1 for some
+k ≥ 0. The minimal such k, if it exists, is the L-nilpotency class of A.
+   We can now give a more precise formulation of our results which imply the earlier
+claim.
+Lemma 1.2. Let (A, ·, ◦) be a skew brace. Then A is L-nilpotent if and only if A
+is left nilpotent and (A, ·) is a nilpotent group.
+Theorem 1.3. Let (A, ·, ◦) be an L-nilpotent skew brace of class k. Then (A, ◦) is
+nilpotent of class at most k and the k-th term in the lower central series of (A, ◦)
+is contained in Ann(A).
+   Recall that
+                 Soc(A) := {a ∈ A | a ◦ b = a + b = b + a for all b ∈ A},
+                 Fix(A) := {a ∈ A | b ◦ a = b + a for all b ∈ A},
+              Ann(A) := Soc(A) ∩ Fix(A).
+   In Section 8 we first prove that the exp and log give a correspondence between
+certain derivations and automorphisms of Lie R-algebras, mimicking the geometric
+correspondence given by integration and differentiation. We then prove the cor-
+respondence between post-Lie R-algebras and skew R-braces under the necessary
+completeness and divisibility condition. In particular, we obtain an extension of
+Smoktunowicz’s correspondence on pre-Lie rings and braces of prime power order.
+Before formulating this result, we introduce the notion of L-nilpotency.
+4                                   S. TRAPPENIERS
+
+
+   Let (a, ⊲) be a post-Lie ring. Inductively define L1 (a) = a and Li+1 (a) the
+subgroup of (a, +) generated by all elements of the form a ⊲ b and [a, b] where
+a ∈ A, b ∈ Li (A). One easily verifies that Li (a) gives a descending filtration of
+ideals of the Lie ring a. We now are ready to define L-nilpotency, which for pre-Lie
+rings is the same as left nilpotency.
+Definition 1.4. A post-Lie ring (a, ⊲) is L-nilpotent if Lk+1 (a) = 0 for some k ≥ 0.
+The minimal such k, if it exists, is the L-nilpotency class of (a, ⊲).
+  We are now ready to formulate the result, which will follow as a somewhat direct
+application of the more technical correspondence in Theorem 8.19.
+Theorem 1.5. Let p be a prime and k < p. There is a bijective correspondence
+between post-Lie rings (a, ⊲) of L-nilpotency class k such that (a, +) is a p-group
+and skew braces (A, ·, ◦) of L-nilpotency class k such that (A, ·) is a p-group.
+   In particular, there is a bijective correspondence between skew braces of size pk
+and L-nilpotent post-Lie rings of size pk .
+   This correspondence is explicitly described in Proposition 8.14 and Proposi-
+tion 8.17. The proof of Theorem 1.5 is given at the end of Section 8.
+   We further discuss how our notion of completeness relates to the classical notion
+of completeness for finite dimensional pre-Lie algebras defined in [19] and to the
+notion of completeness as coined in [5] and how our constructions related to the
+ones in [2, 5, 36].
+   In [5] the authors propose to find a suitable differentiation and formal integra-
+tion theory for finite skew braces and post-Lie rings. On the one hand, the idea of
+considering the logarithm of function as a differentiation, which is the principal ap-
+proach in this paper, does prove to be fruitful. On the other hand, some techniques
+used by Smoktunowicz in [34, 36] could also be seen as an discrete version of differ-
+entiation. Therefore, in Section 9 we motivate why this is the case and we give an
+application to skew braces that extends an application by Smoktunowicz. We end
+by emphasizing a possible advantage of this technique and ask whether this could
+possibly lead to a relaxation on the nilpotency condition imposed by the exponent
+of the group in [36, Theorem 13]. In particular, this could lead to applications to
+braces of size 2k , whereas up until now all of the known constructions are trivial
+when p = 2.
+
+                         2. The category of R-modules
+    In what follows, R will always denote a sequence of commutative rings
+                          d0         d1        d2         d3
+                    R0         R1         R2         R3        ...
+
+where di : Ri → Ri+1 are ring homomorphisms. All rings are assumed to be unital,
+but we do not exclude the case 0 = 1. For a ring R we denote by R the constant
+sequence where Ri = R and di = idR for all i ≥ 0.
+Definition 2.1. An R-module is an abelian group M with a descending filtration
+of subgroups M0 ⊇ M1 ⊇ ... such that for every i ≥ 0, Mi is a Ri -module such that
+moreover r ·i m = di (r) ·i+1 m for all r ∈ Ri and m ∈ Mi+1 .
+   An R-submodule N of an R-module M is a subgroup of M with filtration Ni =
+N ∩ Mi such that Ni is a Ri -submodule of Mi for all i ≥ 0. Given a submodule N
+we define the quotient module M/N as the quotient M/N (as an abelian group)
+with filtration (M/N )i = (Mi + N )/N and the natural R-module structure coming
+from the isomorphism (Mi + N )/N ∼    = Mi /(N ∩ Mi ).
+          LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                        5
+
+
+   A homomorphism of R-modules is a map f : M → N such that for all i ≥ 0,
+f (Mi ) ⊆ Ni and the restrictions f : Mi → Ni are Ri -module homomorphisms. The
+ring of all R-module homomorphisms of M is denoted EndR (M ).
+   The category of R-modules is denoted R Mod.
+   Note that because of the compatibility condition, we can denote all module
+actions by juxtaposition without any possible confusion. Another way to see an R-
+module is as follows: Let M be an abelian group with a descending filtration. For
+i ≥ 0, define Endf (Mi ) as all group endomorphisms of Mi which map Mj into itself
+for j ≥ i, hence we get restriction maps Endf (Mi ) → Endf (Mi+1 ). An R-module
+is then a family of ring homomorphisms (ρi : Ri → Endf (Mi ))i≥0 such that the
+following diagram commutes.
+                            d0                 d1              d2
+                  R0                R1                 R2            ...
+                    ρ0                ρ1                ρ2
+
+               End(M0 )          End(M1 )           End(M2 )         ...
+
+Example 2.2. For R a ring, an R-module is simply a filtered R-module.
+Example 2.3. Given an Ri module M , for some i ≥ 0, we can make M into an
+R-module by setting Mj = M for j ≤ i and Mj = 0 for j > i. For j ≤ i, r ∈ Rj
+and m ∈ M we then define rm = di−1 . . . dj (r)m. In particular, this makes the
+rings Ri themselves into R-modules.
+Example 2.4. Let R∞ be the direct limit of the sequence R. Then similar to the
+previous example the ring homomorphisms Ri → R∞ give R∞ a natural R-module
+structure where R∞ where the filtration is constant.
+Lemma 2.5. Let (Mj )j∈J be a family of R-modules.
+                                            Q        Then the           (Mj )j∈J
+                                                           Q product of Q
+in the category R Mod exists and is given by j∈J Mj where ( j∈J Mj )i = j∈J (Mj )i
+and the R-structure is defined componentwise. AlsoQ the coproduct of (Mj )j∈J in
+the category R Mod exists and is the submodule of j∈J Mj of elements with finite
+                          L
+support, which we denote j∈J Mj .
+Definition 2.6. A filtered set is a set X together with a filtration X0 ⊇ X1 ⊇
+X2 ⊇ .... A map f : X → Y between filtered sets is a homomorphism if f (Xi ) ⊆ Yi
+for all i ≥ 0. The category of filtered sets is denoted Setf .
+  For X a filtered set, we define the degree function deg : X → N ∪ {∞} as
+deg(x) = sup{i ≥ 0 | x ∈ Xi }.
+Lemma 2.7. The forgetful functor R Mod → Setf : M 7→ M admits a left adjoint.
+Proof. For a filtered set X consider the R-module
+                                       M
+                               RX =       Rdeg(x) x,
+                                         x∈X
+
+where Ri and R∞ are given the R-module structure as in Example 2.3 and Ex-
+ample 2.4. One easily checks that this defines a functor that is left adjoint to the
+forgetful functor R Mod → Setf .                                                  
+
+Definition 2.8. A homomorphism of filtered sets f : X → Y is
+   (1) degree preserving if f −1 (Yi ) = Xi for all i ≥ 0. Note that this is equivalent
+       to deg(m) = deg(f (m)) for all x ∈ X.
+   (2) a regular surjection if the restriction fi : Xi → Yi is surjective for all i ≥ 0.
+6                                   S. TRAPPENIERS
+
+
+    Regular surjections are important since in the category R Mod it is not true that
+every bijective homomorphism f : M → N is an isomorphism. Indeed, the inverse
+map f −1 is only a homomorphism of R-modules if f −1 (Ni ) ⊆ Mi for all i ≥ 0, so
+if f is regular.
+Lemma 2.9. Let f : M → N be a homomorphism of R-modules. Then the follow-
+ing are equivalent:
+    (1) f is an isomorphism,
+    (2) f is an injective regular surjection.
+Definition 2.10. Let M, N, P be R-modules. A map b : M × N → P is bilinear if
+    (1) b(Mi , Nj ) ⊆ Pi+j for all i, j ≥ 0,
+    (2) The maps
+                           b(−, n) : M → P : m 7→ b(m, n),
+        and
+                           b(m, −) : N → P : n 7→ b(m, n),
+        are R-module homomorphisms for every m ∈ M, n ∈ N .
+Proposition 2.11. Let M, N be R-modules, there exists an R-module M ⊗ N and
+bilinear map ⊗ : M ×N → M ⊗N such that for every R-module P and bilinear map
+b : M × N → P , there exists a unique R-module homomorphism b : M ⊗ N → P
+such that b = b⊗.
+                                                       S
+Proof. Consider the set X = M × N with filtration Xk = i+j=k Mi × Nj and let
+F = RX. We define M ⊗ N as F/I where I is the R-submodule of F generated by
+              {(m1 + m2 , n) − (m1 , n) − (m2 , n) | m1 , m2 ∈ M, n ∈ N }
+              ∪{(m, n1 + n2 ) − (m, n1 ) − (m, n2 ) | m ∈ M, n1 , n2 ∈ N }
+                    ∪{r(m, n) − (rm, n) | r ∈ Ri , m ∈ Mi , n ∈ N }
+                   ∪{r(m, n) − (m, rn) | r ∈ Rj , m ∈ M, n ∈ Nj }.
+It is now easily seen that the universal property is satisfied.                    
+
+  As usual, for m ∈ M, n ∈ N we will denote the image ⊗(m, n) in M ⊗ N as
+m ⊗ n. We can define sM,N : M ⊗ N → N ⊗ M as the R-linear map such that
+sM,N (m ⊗ n) = n ⊗ m. It is straightforward to verify the following proposition.
+Proposition 2.12. (R Mod, ⊗, R0 , s) is symmetric monoidal additive category.
+Definition 2.13. Consider the symmetric monoidal additive category (R Mod, ⊗, R0 , s),
+    (1) an monoid in this category is called an R-algebra. We denote the category
+        of R-algebras by R Alg.
+    (2) a comonoid in this category is called a co R-algebra. The comultiplication
+        and the counit of a co R-algebra will be denoted by ∆ and ε. When
+        evaluating ∆ in specific elements, we will use Sweedler notation.
+    (3) a Lie algebra object in this category is called a Lie R-algebra. We denote
+        the category of Lie R-algebras by R Lie.
+    (4) a Hopf monoid in this category is called a Hopf R-algebra. We denote the
+        category of Hopf R-algebras by R Hopf. The antipode of a Hopf R-algebra
+        we be denoted by S.
+Example 2.14. Considering the original ring structure on the R-module R0 makes
+it into an R-algebra.
+          LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                       7
+
+
+Example 2.15. Let H be a filtered algebra (in the classical sense) over some field F,
+then H is an F-algebra. Note that every algebra can be made into a filtered algebra
+by choosing the constant filtration. The same construction applies to (filtered) Lie
+and Hopf-algebras over fields.
+Example 2.16. Let M be an R-module. The ring EndR (M ) of R-linear endo-
+morphisms of M has a natural filtration given by
+                   EndR (M )i = {f | f (Mj ) ⊆ Mj+i for all j ≥ 0},
+and a natural R-module structure given by (rf )(m) = rf (m) for all r ∈ Ri , f ∈
+EndR (M )i and m ∈ M . This makes EndR (M ) into an R-algebra.
+   Let H be a Hopf R-algebra H. An element x ∈ H is primitive if ∆(x) =
+1⊗x+x⊗1. The set of primitive elements of H is denoted P(H). One easily verifies
+that P(H) is a sub R-module of H and that the operation [x, y] = xy − yx makes
+P H into a Lie R-algebra. In this way we obtain a functor P : R Hopf → R Lie.
+   Given M ∈ R Mod,
+                  L∞ define      T 0 (M ) = R0 and T i+1 (M ) = M ⊗ T i (M ). We
+                           i
+consider T (M ) = i=0 T (M ) as an R-algebra with the canonical multiplication
+and unit. One easily verifies the following property.
+Proposition 2.17. The functor R Mod → R Alg : M 7→ T (M ) is left adjoint to
+the functor P : R Alg → R Mod : H 7→ H.
+    It follows directly from Proposition 2.17 that there exists a unique R-algebra
+homomorphism ∆ : T (M ) → T (M ) ⊗ T (M ) satisfying ∆(m) = m ⊗ 1 + 1 ⊗ m. Let
+ε : T (M ) → R0 be the projection onto T 0 (M ) = R0 , and let S : T (M ) → T (M ) be
+the unique anti-automorphism such that S(m) = −m for m ∈ M . Considering this
+extra structure on T (M ) is easily seen to make it into a (co-commutative) Hopf
+R-algebra which satisfies the following property.
+Proposition 2.18. The functor R Mod → R Hopf : M 7→ T (M ) is left adjoint to
+the functor P : R Hopf → R Mod : H 7→ P(H).
+Proposition 2.19. The functor P : R Hopf → R Lie admits a left adjoint U :
+R Lie → R Hopf .
+
+Proof. Let g be a Lie R-algebra and let I be the ideal of T (g) generated by
+                          {x ⊗ y − y ⊗ x − [x, y] | x, y ∈ L}.
+Then I is a Hopf ideal as ∆(x ⊗ y − y ⊗ x − [x, y]) ∈ I ⊗ T (L) + T (L) ⊗ I and
+S(x ⊗ y − y ⊗ x − [x, y]) = y ⊗ x − x ⊗ y − [y, x] ∈ I. We define U(g) = T (g)/I.
+This construction is easily seen to be functorial and from the universal property of
+T (g) it follows that also U(g) satisfies the required universal property.        
+Example 2.20. Let M be an R-module and consider it as an abelian Lie R-algebra.
+We define S(M ) = U(M ), hence S(M ) = T (M )/I with I the Lideal generated by
+                                                              ∞    i
+{mn − nm | m, n ∈ M }. Equivalently we may see S(M ) as       i=0 S (M ) where
+ 0               i        i
+S (M ) = R0 and S (M ) = T (M )/Mi with Mi the R-submodule generated by
+          {x1 ⊗ · · · ⊗ xk − xσ(1) ⊗ · · · ⊗ xσ(k) | x1 , . . . , xk ∈ M, σ ∈ Σk }.
+
+                         3. Divisible sequences of rings
+Definition 3.1. A sequence of commutative rings R is said to be divisible if k is
+invertible in Rk for every k > 0.
+Example 3.2. Let Q0 = Z and for i ≥ 1 let Qk denote the subring of Q consisting
+            n
+of fraction m where all prime divisors of m are at most k. So
+                        n                          n
+        Q1 = Z, Q2 = { k | n ∈ Z, k ∈ N}, Q3 = { k l | n ∈ Z, k, l ∈ N}, . . .
+                       2                         2 3
+8                                       S. TRAPPENIERS
+
+
+Then Q : Q0 → Q1 → Q2 → . . . is a divisible sequence of rings, where all homo-
+morphisms are simply the inclusion.
+   It is easily seen that for R a divisible sequence, there exist unique homomor-
+phisms ιi : Qi → Ri compatible with the maps of Q and R. Hence, every R-module
+is a Q-module.
+
+Example 3.3. Let R be a ring of non-zero characteristic and let p denote the
+smallest prime number dividing char R. Note that 1, ..., p − 1 are invertible in R
+but p is not. We define Re as the sequence R0 = ... = Rp−1 = R and 0 = Rp = ...
+with di = idR for 0 ≤ i < p − 1. Then Re is a divisible sequence and R-modules
+                                                                     e          are
+precisely the R-modules M such that Mp = 0.
+
+Definition 3.4. A filtered set X is connected if X0 = X1 . An R-module or Lie
+R-algebra is connected if its underlying filtered set is connected. A Hopf R-algebra
+H is connected if H1 = ker ε.
+
+    We are now able to prove the Poincarré-Birkhoff-Witt theorem in our setting.
+
+Theorem 3.5. Let R be divisible and g a connected Lie R-algebra. Then there
+exists an isomorphism of co R-algebras φ : S(g) → U (g) and φ restricted to g =
+S 1 (g) is the canonical map.
+
+Proof. We denote the symmetric group on {1, . . . , k} as Σk . For readability, we also
+write S = S(g), T i = T i (g) and T = T (g). Consider the R-linear homomorphism
+                                                   1 X
+                    ψ : S → T : x1 · · · xk 7→         xσ(1) · · · xσ(k) ,
+                                                   k!
+                                                      σ∈Σk
+
+which is well-defined as any product of k elements in L is contained in Tk and k
+is invertible in Rk . We also use the notation σ(x1 · · · xk ) = xσ(1) · · · xσ(k) , and we
+extend this linearly to obtain an action of Σk on T k .
+    Let I denote the ideal of T (g) generated by {xy − yx − [x, y] | x, y ∈ L}. We
+claim that T = ψ(S) ⊕ I, which indeed implies that ψ yields an isomorphism
+S → T /I ∼ = U(g). We inductively define maps ρn : T n → T , as
+                                                 1 X
+                       ρ0 (r) = r, ρn (w) =          σ(w) + fσ (w)
+                                                 n!
+                                                    σ∈Σn
+
+for r ∈ R0 and w ∈ T n (g). For σ ∈ Σk , we define the R-linear homomorphism
+fσ : T n 7→ T n−1 in the following way:
+     (1) fid (w) = 0,
+     (2) for an adjacent transposition σ = (j j + 1) ∈ Σk ,
+
+                fσ (x1 . . . xn ) = ρn−1 (x1 . . . xj−1 [xj , xj+1 ]xj+2 . . . xn ).
+
+     (3) For each σ ∈ Σn we fix a decomposition σ = σl(σ) · · · σ1 where σi are
+         adjacent transpositions. Note that one can for example always take the
+         unique decomposition of minimal length which is lexicographically minimal,
+         so we do not require the axiom of choice or any variation thereof. We define
+                                                     P
+         pσ0 = id,, pσi+1 = σi+1 pσi , and f (σ, w) = l(σ)       σ
+                                                       i=1 fσi (pi−1 (w)).
+Combining these maps ρn we obtain an R-module endomorphism ρ : T → T .
+   We claim that ρ(T ) ⊆ ψ(S), (id −ρ)(T ) ⊆ I and ρ2 = ρ, which is sufficient
+to conclude that T = ψ(S) ⊕ I. The first inclusion follows inductively from the
+definition. For the second inclusion, clearly (id −ρ)(T n ) = 0 for n ∈ {0, 1}. For
+            LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                                                    9
+
+
+n > 1, σ ∈ Σn with decomposition σl(σ) · · · σ1 and w ∈ T n we find
+                                                                       l(σ)
+                                                                       X
+            w − σ(w) − f (σ, w) = pσ0 (w) − pσl(σ) (w) −                      fσi (pi−1 (w))
+                                                                        i=1
+                                           l(σ)
+                                           X
+                                       =          pσi−1 (w) − pσi (w) − fσi (pi−1 (w)) ∈ I,
+                                           i=1
+
+as w − τ (w) − fτ (w) ∈ I for any adjacent transposition τ . Hence, (id −ρ)(w) ∈ I.
+   As ρ behaves as the identity on T 0 and T 1 , clearly ρ2 = ρ on T 0 ⊕ T 1. Let n > 1,
+for any adjacent transposition σ ∈ Σn and w ∈ T n , we find that fσ (w) = −fσ (σ(w))
+hence
+ X                 1 X                              1 X
+      fσ (τ (w)) =       fσ (τ (w)) + fσ (τ (w)) =         fσ (τ (w)) + fσ (στ (w)) = 0,
+                   2                                2
+τ ∈Σn                    τ ∈Σn                                     τ ∈Σn
+
+which consequently holds for any σ ∈ Σn . We conclude that
+            1 X                              1   X
+ρn (ψ(w)) =        σ(ψ(w)) + fσ (ψ(w)) =              στ (w) + fσ (τ (w)) = ψ(w).
+            n!                             (n!)2
+                  σ∈Σn                                            σ,τ ∈Σn
+
+                         2
+Which proves that ρ = ρ. From the above we conclude that T = ψ(S) ⊕ I, thus ψ
+yields an isomorphism of R-modules φ : S → U(g).
+   We conclude by proving that φ is a co R-algebra homomorphism. Clearly φ is
+compatible with the co-unit maps. Also, (φ ⊗ φ)∆S (r) = ∆U (g) φ(r) for r ∈ T 0 . We
+will use the following convention when working in some      Q algebra A: for I ⊆ {1, ..., n}
+with |I| = k and elements ai ∈ A, i ∈ I, then by i∈I ai we mean the product
+ai1 · · · aik where i1 < ... < ik . By I c we mean {1, ..., n} \ I. For x1 , . . . , xn ∈ g,
+                                                  !                 !
+                                    X         Y              Y
+  (φ ⊗ φ)(∆S (x1 · · · xn )) =             φ    xi ⊗ φ           xi
+                                  I⊆{1,..,n}          i∈I                i∈I
+                                                                          /
+                                                                                !                             
+                             X         1       1              X Y                          X Y
+                     =                                                  xσ(i)       ⊗                   xτ (j) 
+                                      |I|! (n − |I|)!
+                         I⊆{1,..,n}                          σ∈ΣI i∈I                    τ ∈ΣI c j∈I c
+                                                                               !                             
+                              n                    
+                       1 X            X            n        X Y                          X Y
+                     =                                                 xσ(i)       ⊗                   xτ (j)  ,
+                       n!                          k
+                             k=1 I⊆{1,..,n},                σ∈ΣI i∈I                    τ ∈ΣI c j∈I c
+                                   |I|=k
+                                                 
+which equals n!     1
+                         times the sum of nk (xi1 · · · xik ) ⊗ (xj1 · · · xjn−k ) with 1 ≤ k ≤ n
+and (i1 , ..., ik , j1 , ..., jn−k ) all possible permutations of (1, ..., n). On the other hand,
+                                                        n
+                                           1 X Y
+           ∆U(g) (φ(x1 · · · xn )) =               ∆(xσ(i) )
+                                           n!  i=1
+                                             σ∈Σn
+                                                        n
+                                        1 X Y
+                                      =            (xσ(i) ⊗ 1 + 1 ⊗ xσ(i) )
+                                        n!
+                                           σ∈Σn i=1
+                                        1 X        X       Y            Y
+                                      =                   ( xσ(i) ) ⊗ (       xσ(i) ).
+                                        n!                                  c
+                                             σ∈Σn I⊆{1,...,n} i∈I                       i∈I
+
+For (i1 , ..., ik , j1 , ..., jn−k ) a permutation of (1, ..., n) and
+                                                                   Q any choice of QI with |I| = k,
+there is precisely one permutation σ ∈ Σn such that ( i′ ∈I xσ(i′ ) )⊗( j ′ ∈I c xσ(j ′ ) ) =
+(xi1 · · · xik ) ⊗ (xj1 · · · xjn−k ). So the summand (xi1 · · · xik ) ⊗ (xj1 · · · xjn−k ) appears
+precisely nk times in the latter sum, which proves that (φ ⊗ φ)∆S = ∆U (g) φ. 
+10                                     S. TRAPPENIERS
+
+
+                            4. Complete Hopf R-algebras
+   We can naturally consider an R-module M as a topological space where the
+base of the topology is given by {m + Mi | m ∈ M, i ≥ 0}. With this topology,
+homomorphism of R-modules are automatically continuous. Note that if Mi = 0
+for some i, then we obtain the discrete topology on M .
+                                                  T∞
+Definition 4.1. An R-module M is complete if i=0 Mi = 0 and it is complete
+with respect to the above topology. The full subcategory of R Mod consisting of
+complete R-modules is denoted R Modc .
+     One easily verifies that
+        (                                ∞
+                                                                                             )
+                                         Y
+ M̂ =     (m1 + M1 , m2 + M2 , ...) ∈          M/Mi | mi+1 + Mi = mi + Mi for i ≥ 0 ,
+                                         i=1
+                            Q∞
+ is a sub R-module of i=1 M/Mi which is complete and the image of the R-module
+ homomorphism M → M̂ : m 7→ (m + M1 , m + M2 , . . .) is dense in M̂ . Moreover, if
+ M is complete then M ∼        = M̂ . This construction can easily be extended to a functor
+ˆ· : R Mod → R Modc in the natural way. For two complete R-modules M and N ,
+ we define M ⊗N   ˆ as M    \  ⊗ N.
+ Proposition 4.2. The category (R Modc , R0 , ⊗,       ˆ ŝ) is a symmetric monoidal addi-
+ tive category and the functor ˆ· : R Mod → R Modc is symmetric monoidal additive.
+ Proof. We will prove that for any M, N ∈ R Mod, M         \   ⊗ N is canonically isomorphic
+ to M̂ ⊗ˆ N̂ , as this is easily seen to imply the associativity of ⊗.ˆ Note that we have a
+ natural homomorphism f1 : M ⊗ N → M̂ ⊗ N̂ , hence also a natural homomorphism
+ f2 : M \ ⊗ N → M̂ ⊗    ˆ N̂ .
+     Define M̂ × N̂ → M      \ ⊗ N by mapping ((mi )i , (ni )i )to ((mi ⊗ ni ))i for (mi )i ∈ M̂
+ and (ni )i ∈ N̂ which is easily seen to be a well-defined bilinear map of R-modules.
+ From the universal property we get a homomorphism g1 : M̂ ⊗ N̂ → (M                \ ⊗ N ) and
+ thus also a homomorphism g2 : M̂ ⊗               \
+                                           ˆ N̂ → M  ⊗ N.
+     Note that the canonical image of M ⊗ N into M       \ ⊗ N is dense. Also its canonical
+ image into M̂ ⊗ N̂ is dense, hence the same is true for its canonical image in M̂ ⊗        ˆ N̂ .
+ Moreover, on the canonical images of M ⊗ N in M̂ ⊗          ˆ N̂ and M \ ⊗ N , g2 and f2 are
+ mutually inverse. Because these canonical images are dense, it follows that f2 and
+ g2 are mutually inverse and the desired canonical isomorphism follows.
+     It is clear that the R-module R0 is complete and from the definition of ⊗              ˆ it
+ is clear that ˆ· yields a monoidal functor. Also the additivity is clear of both the
+ category and the functor follow easily.                                                       
+Definition 4.3. Consider the symmetric monoidal additive category (R Modc , ⊗,  ˆ R0 , ŝ),
+   (1) a monoid in this category is called a complete R-algebra. We denote the
+       category of complete R-algebras by R Algc ,
+   (2) a comonoid in this category is called a co R-algebra,
+   (3) a Lie algebra object in this category is called a complete Lie R-algebra. We
+       denote the category of complete Lie R-algebras by R Liec ,
+   (4) a Hopf monoid in this category is called a complete Hopf R-algebra. We
+       denote the category of complete Hopf R-algebras by R Hopf c .
+   In particular, ˆ· yields a functor R Hopf → R Hopf c and we define Û : R Liec →
+         c
+R Hopf as the composition of ˆ      · after U.
+                               \
+   We also define Ŝ(M ) as S(M ). If M is connected one easily verifies that Ŝ(M ) ∼
+                                                                                     =
+Q∞       k                 k          \k (M ). The following version of the Poincarré-
+  k=0 Ŝ   (M ) where   Ŝ   (M ) =  S
+Birkhoff-Witt theorem is now a straightforward corollary of Theorem 3.5.
+           LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                          11
+
+
+Theorem 4.4. Let R be divisible and g a complete connected Lie R-algebra. Then
+there exists an isomorphism of complete co R-algebras φ : Ŝ(g) → Û(g) and φ
+restricted to L = Ŝ 1 (g) is the canonical map.
+   For a complete Hopf R-algebra H, an element x ∈ H is primitive if ∆(x) =
+  ˆ + x⊗1
+1⊗x     ˆ and we denote the set of primitive elements as P(H). As the primitive
+                                                            ˆ mapping h ∈ H
+elements are precisely the kernel of the R-linear map H → H ⊗H
+            ˆ − h⊗1,
+to ∆(h) − 1⊗h       ˆ we find that P(H) is closed hence complete. We therefore
+obtain a functor P : R Hopf c → R Liec .
+Lemma 4.5. Let R be divisible and let M be a complete connected R-module, then
+P Ŝ(M ) = Ŝ 1 (M ).
+Proof. The elements of Ŝ 1 (M ) are clearly primitive. Let π : Ŝ(M ) → Ŝ(M ) be the
+                                    Q∞
+projection onto Ŝ 1 (M ) and θ : i=1 Ŝ i (M ) → Ŝ(M ) the R-module homomorphism
+which maps w ∈ Ŝ i (M ) to 1i w, where the connectedness of M is crucial to assure
+that this is well-defined. At last, we define
+                       ∞
+                       Y               ∞
+                                       Y
+                   ψ:      Ŝ i (M ) →   Ŝ i (M ) : h 7→ θ(h(1) π(h(2) )).
+                       i=1            i=1
+                                i
+Then ψ(a) = a for any a ∈ Ŝ (M ) with i > 0, hence ψ = id. Also ψ(x) =P     π(x) for
+                                                                              ∞
+a primitive element x ∈ H. In particular, for any primitive element x = k=1 xk
+                                      P∞
+with xk ∈ Ŝ k (M ), we find that x1 = k=1 xk , hence we find that x ∈ Ŝ 1 (M ). 
+Lemma 4.6. Let R be divisible, g be a complete connected Lie R-algebra, C a
+complete co R-algebra and f : Û(g) → C a homomorphism of co R-algebras. If the
+restriction f : P Û(g) → P C is degree preserving, then f is injective.
+Proof. By Theorem 4.4 we may replace Û(g) by Ŝ(g), recall that P Ŝ(g) = Ŝ 1 (g)
+by Lemma 4.5. We write Ŝ = Ŝ(g) and Ŝ i = Ŝ i (g) Assume that f : P Ŝ → C is
+degree preserving but that f is non-injective. Let I = ker f , hence it is a non-trivial
+coideal of Ŝ.
+   Let π, θ, ψ be as defined in the proof of Lemma 4.5 and let µ : Ŝ ⊗ Ŝ → Ŝ(g)
+denote the multiplication. Let d be maximal such that I ⊆ Ŝd , so in particular
+d ≥ 1. Then
+                      ˆ id)(I ⊗
+       I = ψ(I) ⊆ µ(π ⊗       ˆ Ŝ + Ŝ ⊗I)        ˆ Ŝ + Ŝ 1 ⊗
+                                        ˆ ⊆ µ(Ŝd1 ⊗           ˆ Ŝd ) ⊆ Ŝd1 + Sd+1 .
+
+Take a ∈ I any element of degree d, we can write a = a1 + a2 with a1 ∈ Ŝd1 and
+a2 ∈ Sd+1 . As deg(a) ≥ min{deg(a1 ), deg(a2 )} and deg(a2 ) > d, we find that
+deg(a1 ) = d. However, we now find
+            deg(a2 ) > deg(a1 ) = deg(f (a1 ) = deg(−f (a2 )) = deg(f (a2 )),
+which is impossible.                                                                      
+    A complete R-algebra A is generated by a subset X ⊆ A (which we consider as a
+filtered set by setting Xi = X ∩ Ai ) if for each i ≥ 0, Ai is the closed sub R-module
+generated by
+                        {x1 · · · xr | k1 + ... + kr = i, xi ∈ Xki },
+where for i = 0, we also include the empty product 1 in this set. A complete Hopf
+R-algebra H is primitively generated if P(H) generates the complete R-algebra H.
+    The full subcategory of R Hopf c consisting of primitively generated complete
+connected Hopf R-algebras is denoted R Hopf c,c      pg . Clearly T̂ (M ) is primitively gen-
+erated and connected, and if f : T̂ (M ) → H is a regular surjective homomorphism
+of complete Hopf R-algebras, then also H is primitively generated and connected.
+12                                 S. TRAPPENIERS
+
+
+The full subcategory of R Liec consisting of complete connected Lie R-algebras is
+denoted R Liec,c . We are now ready to prove the Minor-Moore theorem in our
+setting.
+Theorem 4.7. Let R be divisible, then the functors Û and P define an equivalence
+of the categories R Liec,c and R Hopf c,c
+                                      pg .
+
+Proof. One easily verifies that we can indeed restrict the functors Û and P to R Liec,c
+and R Hopf c,cpg .
+    Let g ∈ R Liec,c , then the natural homomorphism f : L → P ÛL an isomorphism
+by Theorem 4.4 and Lemma 4.5.
+    Let H be a primitively generated complete connected Hopf R-algebra, then the
+canonical homomorphism of Hopf R-algebras f : Û P(H) → H is a surjection which
+is regular as both Hopf R-algebras are primitively generated. The injectivity follows
+from Lemma 4.6 as f restricts to the isomorphism P(g) → P Û(g). We conclude
+that f is injective and thus it is an isomorphism by Lemma 2.9.                       
+
+5. The Lazard correspondence for Lie R-algebras and Lie R-groups
+Definition 5.1. Let R be a commutative ring. An R-group is a group G with a
+map R × G → G : (r, g) 7→ g r satisfying for all r, s ∈ R, g, h ∈ G
+   (1) g 1 = g,
+   (2) g r+s = g r g s ,
+   (3) g rs = (g r )s ,
+   (4) hg r h−1 = (hgh−1 )r (where h−1 denotes the inverse of h).
+A homomorphism of f : G → H of R-groups is a group homomorphism such that
+moreover f (g r ) = f (g)r for all g ∈ G, r ∈ R.
+   Note that R-groups were also defined in [41], but their definition has the extra
+restriction that the Hall-Petresco formula should hold. However, we will impose
+a similar condition for R-groups later on in the form of (G3). We can make the
+following easy observations in an R-group G, for r ∈ R, g ∈ G:
+     (1) g 0 = g 0 g 0 hence g 0 = 1,
+     (2) 1 = g 0 = g r g −r hence g −r is the inverse of g r ,
+     (3) for every n = 1 + . . . + 1 ∈ R, the element g n is necessarily the n-th power
+         of g in G.
+In particular, every group has a unique Z-group structure.
+Proposition 5.2. Let G be a group and let Qk be as in Example 3.2 Then G is
+Qk -group if and only if for every g ∈ G and every prime p ≤ k there exists a unique
+h ∈ G such that hp = g. Moreover, any group has at most one possible Q-group
+structure.
+                                                                      1
+Proof. Assume that G is a Qk -group and p ≤ k then clearly (g p )p = g. If h is
+                                             1     1
+any element such that hp = g, then h = (hp ) p = g p , which proves the uniqueness.
+Conversely, assume that for every g and p ≤ k there exists a unique h such that
+hp = g. Then in particular for every n whose prime divisors are at most k, we
+                                                                   √
+can find a unique h such that hn = g, we denote this element n g. The unique
+                                                      q    √
+Qk -group structure should necessarily be given by g r := r g q . One easily verifies
+that G indeed becomes a Qk -group.                                                 
+Definition 5.3. A filtered group is a group G together with a descending filtration
+of normal subgroups G = G0 ⊇ G1 ⊇ ... such that [Gi , Gj ] ⊆ Gi+j for all i, j ≥ 1,
+where [−, −] denotes the group theoretic commutator. A homomorphism of filtered
+groups f : G → H is a group homomorphism such that f (Gi ) ⊆ Hi .
+          LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                        13
+
+                                    T
+   A filtered group G is complete if Gi = {e} and it is complete with respect to
+the topology generated by the base {gGi | g ∈ G, i ≥ 1}. A filtered group is G
+connected if G0 = G1 .
+
+Definition 5.4. An R-group is a filtered group G such that
+  (G1) Gi is an Ri -group for every i ≥ 1,
+  (G2) for any i ≥ 0, r ∈ Ri and g ∈ Gi , g r = g di (r) ,
+  (G3) (gh)r Gi+1 = g r hr Gi+1 , for all i ≥ j ≥ 0, g ∈ Gi , h ∈ Gj , r ∈ Rj .
+A homomorphism of R-groups f : G → H is a homomorphism of filtered groups
+such that f : Gi → Hi is a Ri -group homomorphism for all i ≥ 0. The category of
+complete connected R-group is denoted R Grc,c .
+
+Example 5.5. Let G be a group and define G0 = G1 = G and Gi+1 = [G, Gi ] for
+i ≥ 1. Then G has a unique Z-group structure.
+
+Proposition 5.6. Let G be a filtered group. Then G is Q-group if and only if for
+every i ≥ 1, every g ∈ Gi and every prime p ≤ i, there exists a unique element
+h ∈ Gi such that hp = g.
+   If moreover G is torsion, then G is a Q-group if and only if gcd(|g|, i) = 1 for
+all i ≥ 1, g ∈ Gi , where |g| denotes the order of g. Moreover, every subgroup of
+G is a sub R-group and the automorphisms of G as a Q-group coincide with the
+automorphisms of G as a filtered group.
+
+Proof. The first part follows directly from Proposition 5.2 and an easy verification
+of (G3).
+    Let g ∈ Gi , if |g| is coprime to p as then by Bezout’s theorem there exists some
+r, s such that 1 = rp + s|g|, hence (g r )p = g and g r ∈ Gi . If hp = g for some other
+h ∈ Gi , then since |h| is coprime to p, we find |g| = |hp | = |h| thus h = (hp )r = g r .
+Conversely, if for some i ≥ 1, p ≤ i and g ∈ Gi , p divides |g|, then without loss of
+generality |g| = p. If h ∈ Gi is such hp = g, then also (hg)p hence the uniqueness
+is not satisfied.                                                                     
+                                                                      P∞
+   Let A be a complete R-algebra with R divisible. Then exp(a) := i=0 i!1 ai is a
+                                                             P∞
+well-defined element of 1+A1 for any a ∈ A1 . Also, log(a) := i=1 1i (−1)i+1 (a−1)i
+is a well-defined element of A1 for any a ∈ 1 + A1 .
+   For a complete Hopf R-algebra H an element g ∈ H is grouplike if ∆(g) = g ⊗g.ˆ
+The set of grouplike elements of H is denoted G(H). Note that this immediately
+implies that gS(g) = S(g)g = 1 hence G(H) is a group.
+
+Theorem 5.7. Let R be divisible and H be a complete R-algebra, then exp and
+log yield bijections between the sets 1 + Hi and Hi for all i ≥ 1. If moreover H
+is a complete connected Hopf R-algebra then this bijection restricts to a bijection
+between G(H) and P(H).
+
+Proof. The first part of the statement is straightforward to verify. Now assume that
+H is a complete Hopf R-algebra and let g ∈ G(H). As ∆ is an R-algebra morphism,
+we find for any grouplike element g ∈ H that ∆(log(g)) = log(∆(g)) = log(g ⊗g), ˆ
+where on the right hand side we consider the logarithm of ∆(g) in H ⊗H. Theˆ
+usual rule for a logarithm of a commuting product, which is readily verified to also
+hold in our algebraic setting, now yields
+                     ˆ
+  ∆(log(g)) = log((g ⊗1)(1 ˆ
+                           ⊗g))         ˆ + log(1⊗g)
+                                = log(g ⊗1)      ˆ = log(g)⊗1
+                                                           ˆ + 1⊗
+                                                                ˆ log(g).
+
+Hence, we find that log(g) ∈ P(A).
+14                                 S. TRAPPENIERS
+
+
+   If we start with a primitive element x ∈ P(A), we use an argument similar to
+the one above to get
+                               ˆ + 1⊗x)
+              ∆(exp(x)) = exp(x⊗1   ˆ = exp(x⊗1)
+                                             ˆ exp(1⊗x)
+                                                    ˆ
+                                   ˆ
+                          = (exp(x)⊗1)(1 ˆ exp(x)) = exp(x)⊗
+                                         ⊗                 ˆ exp(x).
+We conclude that exp(x) ∈ G(H).                                                       
+Lemma 5.8. Let R be divisible and let H be a complete connected Hopf R-algebra.
+Let i, j ≥ 1, x ∈ Hi , y ∈ Hj , then
+         log(exp(x) exp(y) exp(x)−1 exp(y)−1 ) + Hi+j+1 = [x, y] + Hi+j+1 .
+Proof. Note that every product of elements of {x, y} of length at least three con-
+taining at least one occurrence of x and y is contained in Hi+j+1 .
+   In particular, x exp(y) + Hi+j+1 = x + xy + Hi+j+1 and xk exp(y) + Hi+j+1 =
+ k
+x + Hi+j+1 for k > 1. So
+                                          1      1
+      exp(x) exp(y) + Hi+j+1 = (1 + x + x2 + x3 + ...) exp(y) + Hi+j+1
+                                          2      3!
+                                                    1      1
+                              = exp(y) + x + xy + x2 + x3 + ... + Hi+j+1
+                                                    2      3!
+                              = exp(x) + exp(y) + xy − 1 + Hi+j+1
+and in the above x can be exchanged for −x and y for −y. This means that
+ exp(x) exp(y) exp(−x) exp(−y) + Hi+j+1
+        = (exp(x) + exp(y) + xy − 1)(exp(−x) + exp(−y) + xy − 1) + Hi+j+1
+        = 1 + exp(x) exp(−y) + xy − exp(x) + exp(y) exp(−x) + 1 + xy − exp(y)
+                + xy + xy − xy − exp(−x) − exp(−y) − xy + 1 + Hi+j+1
+        = 1 + xy − yx + Hi+j+1
+        = exp([x, y]) + Hi+j+1                                                         
+Proposition 5.9. Let R be divisible and let H be a complete connected Hopf R-
+algebra. Then G(H) is a complete R-group if we set G(H)i = G(H) ∩ (1 + Hi )
+and g r = exp(r log(g)) for g ∈ G(H)i and r ∈ Ri . Moreover, exp(x + P(H)i ) =
+exp(x) G(H)i , for all i ≥ 1 hence exp and log are homeomorphisms between P(H)
+and G(H).
+Proof. For simplicity let us denote G = G(H). Clearly 1 + Hi is closed under
+multiplication, hence Gi is closed under multiplication. It is clear from the definition
+that if g ∈ Gi , then also g r ∈ Gi for r ∈ Ri , so in particular g −1 ∈ Gi . One easily
+sees that (G1) and (G2) hold.
+   As exp(x + Hi ) ⊆ exp(x) + Hi and log(exp(x) + Hi ) ⊆ x + Hi for any x ∈ P(H),
+we find indeed that exp(x + P(H)i ) = exp(x)Gi . We conclude that exp and log are
+homeomorphisms between P(H) and G so in particular G is complete.
+   The fact that [Gi , Gj ] ⊆ Gi+j follows from Lemma 5.8.
+   We conclude by proving that (G3) holds. Let i ≥ j ≥ 0, g ∈ Gi , h ∈ Gj and
+r ∈ Rj , because g and h commute in H/Hi+1 we find
+          (gh)r + Hi+1 = exp(r log(g) + r log(h)) + Hi+1 = g r hr + Hi+1 .            
+Lemma 5.10.S∞Let G be an R-group generated by X ⊆ G, then |G| ≤ max{|X|, α, ℵ0 }
+where α = | i=1 Ri |.
+Proof. Let A0 = X and define inductively Bi as the group generated by Ai and
+Ai+1 = {br | b ∈ B, r ∈ Rdeg b }. If we let H be the union of the chain A0 ⊆ B0 ⊆
+A1 ⊆ B1 ⊆ ..., then H is a sub R-group of G. Note that |Bi | ≤ max{|Ai |, ℵ0 }. Also,
+           LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                          15
+
+
+|Ai+1 | ≤ α|Bi |. In particular, |Ai | ≤ max{|X|, α, ℵ0 }, hence |H| ≤ max{|X|, α, ℵ0 }
+and thus |G| ≤ max{|X|, α, ℵ0 }.                                                    
+
+Proposition 5.11. The forgetful functor R Gr → Setf : G 7→ G has a left adjoint
+F : Setf → R Gr.
+Proof. By the adjoint functor theorem (see for example [7, Section 3]) it is sufficient
+to prove that the category R Gr is complete, locally small and the solution set
+condition is satisfied by the forgetful functor.                         Q
+    Let (Gi )Q
+             i∈I be a family
+                          Qof R-groups. Then usual product of groups i∈I Gi , with
+filtration ( i∈I Gi )k = i∈I (Gi )k and the R-group structure defined pointwise is
+an R-group which clearly is a product in R Gr. Given two R-groups G and H and
+homomorphisms φ, ψ : G → H, one easily verifies that E = {g ∈ G | φ(g) = ψ(g)}
+is an R-subgroup of G, the injection map E → G is the equalizer of ψ and φ.
+The two above facts combined prove that R Gr is a complete category. Since the
+forgetful functor is faithful, R Gr is locally small.
+    We now prove that the forgetful functor satisfies the solution set condition. Let
+X be a filtered set and consider the class GX consisting of all pairs (G, f ) where
+G is an R-group, f : X → G a homomorphism of filtered sets and f (X) generates
+G as an R-group. Two pairs (G, f ), (H, g) ∈ GX are said to be isomorphic if there
+exists an R-group isomorphism φ : G → H such that g = φf . Proving that the
+forgetful functor satisfies the solution set condition amounts to proving that the
+isomorphism classes of GX form a set. It follows from Lemma 5.10 that for any
+(G, f ) ∈ GX , G has cardinality at most max{|X|, α, ℵ0 }. As for every set Y of a
+given cardinality the cardinality of all possible group structures on Y is bounded
+                  2
+above by |Y ||Y | , the cardinality of all possible filtrations on Y is bounded above
+by |N|2|Y | and for a given group structure and filtration on Y the number of R-
+group structures is bounded above by |Y ||Y |α . We conclude that the class GX is
+essentially small.                                                                   
+
+   Let gLbe a Lie R-algebra. Its associated graded Lie R-algebra is the R-module
+gr g := ∞  i=1 gi /gi+1 , with [x + gdeg(x)+1 , y + gdeg(y)+1 ] = [x, y] + gdeg(x)+deg(y)+1 .
+One easily verifies that this is indeed a Lie R-algebra and that this construction is
+functorial.
+   Similarly, starting from G an R-group we can construct its associated graded Lie
+R-algebra. First note that Gi /Gi+1 becomes an Ri -module by setting gGi+1 +
+hGi+1 = ghGi+1 and r(gGi+1 ) = g r Gi+1         L,∞so it becomes an R-module as de-
+scribed in Example 2.3. We define gr G := i=1 Gi /Gi+1 , and set [gGi+1 , hGj+1 ] =
+ghg −1 h−1 Gi+j+1 . It is a classic result, that [−, −] is a Lie bracket, which is more-
+over R-bilinear as for r ∈ Ri we have
+            [rgGi+1 , hGj+1 ] = g r hg −r h−1 Gi+j+1 = g r (hg −1 h−1 )r Gi+j+1
+                              = (ghg −1 h−1 )r Gi+j+1 = r[g, h]Gi+j+1 ,
+since (ghg −1 h−1 )r (hgh−1 )r Gi+j+1 = g r Gi+j+i by (G3). Once again it is easily
+verified that this construction is functorial.
+Proposition 5.12. Let R be divisible and let H be a complete connected Hopf
+R-algebra, then
+                 φ : gr P(H) → gr G(H) : x + P(H)i 7→ exp(x) G(H)i ,
+is an isomorphism of Lie R-algebras.
+Proof. By earlier observations in Proposition 5.9, the map φ is clearly well-defined,
+bijective and degree preserving. Also for r ∈ Ri and y ∈ P(H) with deg(y) = d
+16                                 S. TRAPPENIERS
+
+
+we find exp(x)r exp(y) + Hd+1 = rx + y + Hd+1 hence φ is a homomorphism of R-
+modules, thus an isomorphism because of the earlier observation that it is bijective
+and degree preserving. At last, it follows from Lemma 5.8 that φ is a Lie R-algebra
+isomorphism.                                                                      
+Lemma 5.13. Let f : G → H be a homomorphism of complete R-groups, then
+  (1) f is degree preserving if and only if gr f is injective,
+  (2) f is a regular surjection if and only if gr f is surjective.
+Proof. The first claim is easily seen to hold. Also, it is clear that if f is a regular
+surjection, then gr f is surjective.
+   Assume that f is such that gr f is surjective. We will show that f (Gi ) = Hi
+for any i ≥ 1. Let h ∈ Hi . As gr f is surjective, there exists some g1 ∈ Gi such
+that h−1 f (g1 ) ∈ Hi+1 . Subsequently, there also exists some g2 ∈ Gi+1 such that
+h−1 f (g1 )f (g2 ) ∈ Gi+2 . We can continue this process in order to obtain
+                                                                      Q      gj ∈ Gi+j
+such that h−1 f (g1 · · · gj ) ∈ Hi+j . In particular, the limit g = ∞  i=1 j satisfies
+                                                                            g
+h−1 f (g). At last, note that Gi is closed hence g ∈ Gi .                            
+   We denote the category of connected filtered sets by Setcon
+                                                           f . We define the
+                    con          c,c                \
+functor R[[−]] : Setf → R Hopf pg as R[[X]] = T (RX), recall that RX was
+defined in Lemma 2.7 and that RX is connected because X is.
+Lemma 5.14. Let R be divisible. We have the following adjunctions of functors:
+  (1) The functor P R[[−]] : Setcon
+                                f   → R Liec,c is left adjoint to the forgetful
+                   c,c     con
+      functor R Lie → Setf .
+  (2) The functor G R[[−]] : Setcon
+                                 f  → R Grc,c is left adjoint to the forgetful
+                   c,c     con
+      functor R Gr → Setf .
+Proof. The first claim follows directly from Lemma 2.7, Proposition 2.18 and The-
+orem 4.7.
+   Let X be a connected filtered set and let G = F    \ (X) be the completion of
+the free R-group generated by X, which is easily seen to be the free complete
+connected R-group generated by X. Then there exists a unique homomorphism
+f : G → G R[[X]] mapping x ∈ X to exp(x). By the first part of the statement
+we obtain a Lie R-algebra homomorphism u : P R[[X]] → gr G mapping x to
+xGdeg(x)+1 , hence also a Lie R-algebra homomorphism gr u : gr P R[[X]] → gr G
+mapping x + P(R[[X]])deg(x)+1 to xGdeg(x)+1 by the functoriality of gr. Now up
+to the isomorphism gr P R[[X]] ∼= gr G R[[X]] in Proposition 5.12, we find that gr u
+and gr f are mutually inverse hence f is an isomorphism by Lemma 5.13.            
+Corollary 5.15. Let R be divisible and let X be filtered set, then P(R[[X]]), respec-
+tively G(R[[X]]), is generated by X as a closed Lie R-algebra, respectively closed
+R-group.
+Proof. This follows directly from the freeness of P R[[X]] and G R[[X]].             
+Corollary 5.16. Let R be divisible and let H be a complete connected Hopf R-
+algebra. Consider {x, y} with filtration {x, y}1 = {x, y} and {x, y}i = ∅ for i > 1.
+There exists some P (x, y) in the free Lie R-algebra on {x, y} such that
+                            log(exp(a) exp(b)) = P (a, b),
+for all a, b ∈ P(H).
+   Also, there exist Q(x, y), R(x, y) in the free Q-group on {x, y}, such that
+           exp(log(a) + log(b)) = Q(a, b), exp([log(a), log(b)] = R(a, b),
+for all a, b ∈ G(H).
+            LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                                               17
+
+
+Proof. This follows directly from Corollary 5.15.                                                               
+Remark 5.17. It is well-known, see for example [14], that
+                     1          1                           1
+   P (x, y) = x + y + [x, y] + ([x, [x, y]] + [y, [y, x]]) − [y, [x, [x, y]]] + . . .
+                     2         12                           24
+where further terms involve iterated brackets of order at least 5. This formula is
+known as the Baker-Campbell-Hausdorff formula. Also
+                                     1            1                    1                   1
+          Q(g, h) = xy[x, y]− 2 [g, [g, h]] 12 [g, [g, [g, h]]]− 24 [h, [h, [g, h]]] 24 · · · ,
+and
+                                 1            1                 1                 1                  1
+ R(g, h) = [g, h][g, [g, h]] 2 [h, [g, h]] 2 [g, [g, [g, h]]] 3 [h, [g, [g, h]]] 4 [h, [h, [g, h]]] 3 · · · ,
+where in this case [a, b] = aba−1 b−1 and further factors involve iterated brackets of
+order at least 5.
+Lemma 5.18. Let M be a complete R-module, then EndR (M ) is a complete R-
+module.
+                T∞                       T∞
+Proof. Clearly i=0 EndR (M ) = 0 since i=0 Mi = 0. Given a P sequence f0 , f1 , ...
+                                                               ∞
+                                              (M ) as f (m) = i=0 fi (m) which
+where fi ∈ EndR (M )i , we can define f ∈ EndRP
+                                               ∞
+is well-defined since M is complete. Then f = i=0 fi .                          
+  Let H be a Hopf R-algebra and h ∈ H. We define adh : H → H : a 7→ ha − ah
+and for h ∈ G(H) we define conjh : H → H : a 7→ hah−1 .
+Lemma 5.19. Let R be divisible and let H be a complete connected Hopf R-algebra.
+Then exp(adx ) = conjexp(x) in EndR (H) for x ∈ P(H).
+Proof. One easily verifies that φ : H → EndR (H) given by φh (y) = h(1) yS(h(2) )
+is a well-defined homomorphism of R-algebras. For x a primitive element we now
+find exp(adx ) = exp(φx ) = φexp(x) = conjexp(x) which proves the statement.  
+Proposition 5.20. Let R be divisible and let H be a complete connected Hopf R-
+algebra. Then there is a correspondence between closed sub Lie R-algebras of P(H)
+and closed sub R-groups of G(H). This correspondence restricts to closed ideals of
+P(H) and closed normal sub R-groups of G(H).
+Proof. Consider the set X = {x, y} with filtration X1 = X, Xi = ∅ for i > 1.
+For a, b ∈ P(H), consider the unique Hopf R-algebra homomorphism R[[X]] →
+H mapping x 7→ a and y 7→ b. By Corollary 5.15 we find that exp maps the
+closed sub Lie R-algebra generated by a, b to the closed sub R-group generated by
+exp(a), exp(b). This proves the first part of the statement.
+   The second part now follows directly by Lemma 5.19.                          
+   Let g be a complete connected Lie R-algebra. Then G Û(g) = exp(g) is a
+complete R-group by Proposition 5.9. We transfer the R-group structure onto g
+through exp and log, and denote this new group operation by BCH, so BCH(g, h) =
+log(exp(g) exp(h)) and g r = rg. By Corollary 5.16 we find that this construction is
+functorial and thus we obtain a functor Laz : R Liec,c → R Grc,c .
+Theorem 5.21. Let R be divisible. The functors Laz : R Liec,c → R Grc,c and
+Laz−1 : R Grc,c → R Liec,c yield an equivalence of categories, where Laz(g) = (g, ·)
+with
+               x · y = BCH(x, y), rx = xr for x, y ∈ g, r ∈ Rdeg(x) ,
+and Laz(G) = (G, +, [−, −]) with
+         x + y = Q(x, y), [x, y] = R(x, y), xr = rx for x, y ∈ G, r ∈ Rdeg(x) .
+18                                   S. TRAPPENIERS
+
+
+Proof. From the previous discussion we know that Laz is a well-defined functor.
+   If G is complete connected R-group such that G = Laz(g) for some complete
+connected Lie R-algebra g, then by Corollary 5.16 it follows that Laz−1 (G) = g.
+We show that every complete connected R-group G is isomorphic to Laz(g) for
+some complete connected Lie R-algebra g. By Lemma 5.14 there exists a regu-
+lar surjection Laz(P R[[G]]) → G. Hence G ∼  = Laz(P R[[G]])/N for some nor-
+mal sub R-group N of Laz(P R[[G]]). However, by Proposition 5.20 we find that
+Laz(P R[[G]])/N = Laz(P R[[G]]/N ). At last, note that also Laz−1 is functo-
+rial.                                                                           
+
+                               6. Post-Lie R-algebras
+Lemma 6.1. Let (a, ⊲) be a post-Lie ring. Then (a, ⊲) is L-nilpotent if and only if
+(a, ⊲) is left nilpotent and a is a nilpotent Lie ring.
+Proof. From the definition of Li (a) it is clear that if (a, ⊲) is L-nilpotent then it is
+left nilpotent and a is a nilpotent Lie ring.
+   Conversely, assume that (a, ⊲) is left nilpotent and a is a nilpotent Lie ring. Let
+a = a1 ⊇ ... ⊇ ad = 0 denote the lower central series of a and let c be such that
+ac+1 = 1. If we assume that Li (a) ⊆ ak for some i, k ≥ 1, then [Li (a), a] ⊆ ak+1
+hence Li+1 (a) ⊆ (a ⊲ Li (a)) + ak+1 . In particular, Li+c (a) ⊆ ac+1 + ak+1 = ak+1 .
+We now conclude by induction that Lkc+1 (a) = ad = 1.                                  
+
+Definition 6.2. A post-Lie R-algebra is a Lie R-algebra a together with a map
+⊲ : a × a → a such that
+     (P 1) La ∈ EndR (a) for all a ∈ a, where La : a → a : b 7→ a ⊲ b,
+     (P 2) (a + b) ⊲ c = a ⊲ c + b ⊲ c for all a, b, c ∈ a,
+     (P 3) Lra = rLa for all a ∈ ai , r ∈ Ri whenever La ∈ EndR (M )i ,
+     (P 4) ⊲ satisfies (1.1) and (1.2).
+If a is abelian, then (a, ⊲) is a pre-Lie R-algebra.
+   A homomorphism of post-Lie R-algebras f : (a, ⊲) → (b, ⊲) is a map that respects
+the Lie R-algebra structure and moreover f (a ⊲ b) = f (a) ⊲ f (b) for all a, b ∈ a.
+   A sub Lie R-algebra I of (a, ⊲) is
+      (1) a left ideal if x ⊲ y ∈ I for all x ∈ a, y ∈ I,
+      (2) a strong left ideal if it is a left ideal and it is an ideal of a,
+      (3) an ideal if it is a strong left ideal and moreover I is an ideal of a◦ .
+Example 6.3. Let (a, ⊲) be a post-Lie R-algebra. Then (a, ⊲) is a post-Lie R-
+algebra for the filtration a0 = a, ai = Li (a) for i ≥ 1.
+Example 6.4. Let (a, ⊲) be a post-Lie R-algebra, then
+                        Fix(a) := {a ∈ a | b ⊲ a = 0 for all b ∈ a},
+is a left ideal and
+                    Soc(a) := {a ∈ a | a ⊲ b = [a, b] = 0 for all b ∈ a}
+is an ideal. For the latter statement, note that for a ∈ Soc(a) and b, c ∈ a, it follows
+from (1.1) that 0 = b ⊲ [a, c] = [b ⊲ a, c] and from (1.2) that 0 = [a, b] ⊲ c = −(b ⊲ a) ⊲ c
+hence b ⊲ a ∈ Soc(a). As {b, a} = b ⊲ a, Soc(a) is an ideal.
+Definition 6.5. Let g be a Lie R-algebra. A map δ ∈ EndR (g) is a derivation
+if δ([x, y]) = [δ(x), y] + [x, δ(y)] for all x, y ∈ g. We define Der(g) as the set of
+all derivations of g, which are easily seen to form a sub Lie R-algebra of EndR (g)
+under the usual commutator Lie bracket.
+          LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                         19
+
+
+Lemma 6.6. Let g be a Lie R-algebra, then the direct product of R-modules
+aff(g) := g ⊕ Der(g) together with Lie bracket
+                     [(g, δ), (h, χ)] = ([g, h] + δ(h) − χ(g), [δ, χ]),
+is a Lie R-algebra. We denote the projection onto g by prg .
+Definition 6.7. Let a be a Lie R-algebra, a sub Lie R-algebra g of aff(a) is t-
+surjective, respectively t-bijective if pra : g → a is surjective, respectively bijective.
+Proposition 6.8. Let a be a Lie R-algebra. Then there is a bijective correspon-
+dence between maps ⊲ : a × a → a making (a, ⊲) into a post-Lie R-algebra and
+t-bijective sub Lie R-algebras of aff(a).
+Proof. Let a be a Lie R-algebra and ⊲ : a × a → a any map. The maps La : a →
+a : b 7→ a ⊲ b, for a ∈ a, are contained in EndR (a) if and only if (P 1) holds. The
+La are derivations of a if and only if (1.1) holds. Suppose that all of the previous
+assumptions are satisfied and consider g = {(x, Lx ) | x ∈ a} ∈ aff(a). Conditions
+(P 2) and (P 3) are satisfied precisely if g is a sub R-module of aff(a). We see that
+g is a sub Lie R-algebra if L[x,y]+x⊲y−y⊲x = [Lx , Ly ] which is equivalent to (1.2).
+This proves the correspondence.                                                    
+
+Corollary 6.9. Let (a, ⊲) be a post-Lie R-algebra. We obtain a new Lie R-algebra
+structure a◦ on a with filtration a◦i = {a ∈ ai | La ∈ Der(a)i } and Lie bracket
+                             {a, b} := [a, b] + a ⊲ b − b ⊲ a.
+Remark 6.10. Note that the at first somewhat artificial definition of a post-Lie
+R-algebra becomes more natural when we remark that (P 1) − (P 3) state precisely
+that a◦ × a → a is an R-bilinear map.
+Proof. Let g be the associated t-bijective sub Lie R-algebra of aff(a) as in Propo-
+sition 6.8. The statement follows by transferring the Lie R-algebra structure of g
+onto a through the bijection pra : g → a.                                        
+
+Definition 6.11. Let (a, ⊲) be a post-Lie R-algebra, then (a, ⊲) is
+    (1) connected if both a and a◦ are connected Lie R-algebras,
+    (2) complete if both a and a◦ are complete Lie R-algebras.
+The category of complete connected post-Lie R-algebras is denoted R PLAc,c .
+Example 6.12. Let (a, ⊲) be a post-Lie R-algebra, then the associated post-Lie
+R-algebra as in Example 6.3 is connected. If (a, ⊲) is L-nilpotent, it is complete.
+    Let F be a field of characteristic 0 and (a, ⊲) be a finite dimensional pre-Lie F-
+algebra. Then the classical definition of completeness, as coined in [19], is that for
+every a ∈ a, the map ra : a → a : b 7→ b + a ⊲ b is a bijection. However, if a◦ is
+nilpotent, then [32, Proposition 2] states that all maps ra are bijective if and only
+if left multiplication maps La are nilpotent. By Engel’s theorem, this is equivalent
+with the existence of some n such that La1 · · · Lan = 0 for all a1 , . . . , an ∈ a. It
+follows that this notion of completeness coincides with what we call left nilpotency.
+Therefore, a pre-Lie F-algebra (a, ⊲) with a◦ nilpotent is complete if and only if
+its associated pre-Lie F -algebra (as in Example 6.3) is complete. Note that the
+condition that all La are nilpotent also appears in [10, Theorem 3.1].
+Theorem 6.13. Let (a, ⊲) be an L-nilpotent post-Lie ring of class k. Then a◦ is
+nilpotent of class at most k and the k-th term in the lower central series of a◦ is
+contained in Ann(a), where Ann(a) := Soc(a) ∩ Fix(a).
+20                                 S. TRAPPENIERS
+
+
+Proof. Let (a, ⊲) be L-nilpotent of class k and consider it as a post-Lie Z-algebra.
+Then a◦k+1 ⊆ ak+1 = 0, hence in particular a◦ is nilpotent of class at most k.
+Also, since a◦k = ak ∩ {a ∈ a | La ∈ EndR (a)k } but EndR (a)k = 0 and clearly
+ak ∈ Z(a) ∩ Fix(a), the statement follows.                                        
+
+                                 7. Skew R-braces
+   We start by noting that one can prove Lemma 1.2 using almost the same proof
+as for Lemma 6.1.
+Definition 7.1. A skew R-brace is an R-group (A, ·) with an additional group
+structure (A, ◦) such that
+   (S1) a ◦ (b · c) = (a ◦ b) · a−1 · (a ◦ c),
+   (S2) a ∗ b ∈ Ai+1 and λa (br ) = λa (b)r for a ∈ A, b ∈ Ai , r ∈ Ri ,
+where we define a ∗ b = a−1 · (a ◦ b) · b−1 and λa (b) = a−1 · (a ◦ b). An R-brace is an
+skew R-brace with an abelian additive group. A homomorphism of skew R-braces
+f : (A, ·, ◦) → (B, ·, ◦) is a map such that f : (A, ·) → (B, ·) is a homomorphism of
+R-groups and f : (A, ◦) → (B, ◦) is a group homomorphism.
+   A sub R-group I of (A, ·) is
+     (1) a sub skew R-brace if I is a subgroup of (A, ◦),
+     (2) a left ideal if λa (b) ∈ I for all a ∈ A, b ∈ I,
+     (3) a strong left ideal if I is a left ideal and also a normal subgroup of (A, ·),
+     (4) an ideal if I is a strong left ideal and also a normal subgroup of (A, ◦).
+Example 7.2. Let (A, ·, ◦) be a skew brace, then the filtration A0 = A, Ai = Li (A)
+for i ≥ 1 makes it into a skew Z-brace.
+Example 7.3. Let (A, ·, ◦) be an R-brace, see [16, Definition 2], and consider the
+associated Z-brace as in Example 7.2. Then Li (A) is a sub R-modules of A for every
+i ≥ 1, since a ∗ (rb) = r(a ∗ b) for r ∈ R, a, b ∈ A. In this way the obtained Z-brace
+has a natural R-brace structure. Conversely, any R-brace becomes an R-brace if
+we simply forget the filtration.
+Definition 7.4. For G an R-group, we define Aut(G) as all R-group automor-
+phisms of G. We define a filtration Aut(G)i by
+                  Aut(G)i = {f | f (g)g −1 ∈ Gi+j , for all g ∈ Gj }
+Remark 7.5. In Definition 7.1 it follows from (S1) that λa (b · c) = λa (b) · λa (c),
+hence (S2) can be rephrased as λa ∈ Aut(A, ·)1 .
+Lemma 7.6. Let G be an R-group, then Hol(G) := G ⋊ Aut(G) with Hol(G)i =
+Gi ⋊ Aut(G)i is a filtered group. We denote the projection onto G by prG .
+Definition 7.7. Let G be an R-group. A subgroup H ≤ Hol(G) is transitive,
+respectively regular, if prG : H → G is surjective, respectively bijective.
+Remark 7.8. Note that if we consider the natural action of Hol(G) on G, i.e. (g, λ) ·
+h = gλ(h), then transitive subgroups of Hol(G) are precisely the ones such that the
+associated action is transitive.
+Proposition 7.9. Let (A, ·) be an R-group. There is a bijective correspondence
+between group structures (A, ◦) making (A, ·, ◦) into a skew R-brace and regular
+subgroups of Hol(A, ·).
+Proof. We only sketch the proof, as this is a slight variation of [18, Theorem 4.2].
+Let (A, ◦) be a group operation such that (A, ·, ◦) is a skew R-brace. Define G =
+{(a, λa ) | a ∈ A} ≤ Hol(A), then G is a regular subgroup of Hol(A). Conversely,
+          LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                   21
+
+
+if G is a regular subgroup of Hol(A), we transfer the group structure of G onto A
+with the help of the bijection prA : G → A and we denote this new group operation
+by ◦. Then (A, ·, ◦) becomes a skew R-brace.                                    
+
+Corollary 7.10. Let (A, ·, ◦) be a skew R-brace. Then (A, ◦) with the filtration
+(A, ◦)i = Ai ∩ {a ∈ A | λa ∈ Aut(A)i } is a filtered group.
+Proof. Let G be the associated regular subgroup of Hom(A, ·) as in Proposition 7.9
+with filtration coming from Hom(A, ·). Transferring the filtration of G onto (A, ◦)
+through the isomorphism (A, ◦) → G : a 7→ (a, λa ) now yields the statement.     
+
+Definition 7.11. Let (A, ·, ◦) be a skew R-brace, then (A, ·, ◦) is
+   (1) connected if both (A, ·) and (A, ◦) are connected filtered groups,
+   (2) complete if both (A, ·) and (A, ◦) are complete filtered groups.
+Example 7.12. Let (A, ·, ◦) be a skew brace, then the associated skew Z-brace as
+in Example 7.2 is connected. If (A, ·, ◦) is L-nilpotent, it is complete. The same
+applies for the R-braces as obtained in Example 7.3.
+  The proof of Theorem 1.3 similar to the proof of Theorem 6.13.
+
+   8. A Lazard correspondence for post-Lie R-algebras and skew
+                             R-braces
+Definition 8.1. For g a Lie R-algebra we define Aut(g) as the set of all Lie R-
+algebra automorphisms with filtration Aut(g)i = Aut(g) ∩ (id + EndR (g)i ).
+Definition 8.2. For a filtered set X we define X + as the connected filtered subset
+consisting of all elements of X1 . The same notation is used also for R-modules and
+R-groups.
+Lemma 8.3. Let R be divisible and let g be a complete Lie R-algebra. Then
+Aut(g)i = exp(Der(g)i ) for i ≥ 1. In particular, the group Aut(g)+ has a canon-
+ical R-group structure such that exp : Laz(Der(g)+ ) → Aut(g)+ is an R-group
+isomorphism.
+Proof. Let X = {x} with the filtration X1 = X, X2 = ∅ and let R[[x]] := R[[X]].
+For any R-module homomorphism φ : R[[x]] → EndR (g) the set
+                S = {h ∈ R[[x]] | [−, −](φh(1) ⊗ φh(2) ) = φh [−, −]}
+is a closed sub R-algebra of R[[x]]. As {x} and {exp(x)} generate R[[x]] as a
+closed sub R-algebra, we find that φx ∈ Der(g)i if and only if φexp(x) ∈ Aut(g)i .
+For any element f of EndR (g)1 there exists a unique R-algebra homomorphism
+R[[x]] → EndR (H) mapping x to f , so for every element g ∈ 1 + EndR (g)1 there
+exists a unique R-algebra homomorphism R[[x]] → EndR (H) mapping exp(x) to
+g. This implies for any i ≥ 1 that δ ∈ Der(g)i if and only if exp(δ) ∈ Aut(g)i . 
+
+Lemma 8.4. Let R be divisible and let g be a complete Lie R-algebra. Then
+Aut(Û(g))i = exp(Der(Û (g))i ) for i ≥ 1. In particular, the group Aut(Û(g))+ has
+a canonical R-group structure such that exp : Laz(Der(Û(g))+ ) → Aut(Û (g))+ is
+an R-group isomorphism.
+Proof. The proof is analogous to the proof of Lemma 8.3.                          
+
+Lemma 8.5. Let R be divisible and let g be a complete connected Lie R-algebra,
+then Aut(g) = Aut(Laz(g)).
+22                                         S. TRAPPENIERS
+
+
+Proof. We know by Theorem 5.21 that automorphisms of g and G coincide. It
+remains to verify that the filtrations coincide. Denote H = Û(g), let x, y ∈ P(H)
+and denote d = deg(x + y). Then [x, y] + Hd+1 = [x, y] − [x + y, y] + Hd+1 = Hd+1 ,
+hence x + y + Hd+1 = BCH(x, y) + Hd+1 by Remark 5.17. In particular, for
+δ ∈ Der(g)+ we find deg(BCH(exp(δ)(x), −x)) = deg(exp(δ)(x) − x), thus the
+degree of exp(δ) in Aut(Laz(g)) equals the degree of exp(δ) − id in EndR (g), which
+is easily seen to equal the degree of δ in EndR (g) (or equivalently in Der(g)+ ). 
+Proposition 8.6. Let R be divisible and let a be a complete connected Lie R-
+algebra, then
+             γ : Laz(aff(a)+ ) → Hol(Laz(a))+ : (a, δ) 7→ (V (a, δ), exp(δ)),
+with V (a, δ) = pra (BCH((a, δ), (0, −δ))) is an isomorphism of filtered groups.
+   In particular, Hol(Laz(a))+ has an R-group structure such that f is an isomor-
+phism of R-groups.
+Proof. We will work inside of H = Û(aff(a)+ ) and we identify a and Der(a)+
+with their corresponding sub Lie R-algebras of aff(a)+ = P(H). Note that by
+Lemma 5.19 and Lemma 8.3 the map
+      f : exp(a) exp(Der(a)+ ) → Hol(Laz(a))+ : exp(a, 0) exp(0, δ) 7→ (a, exp(δ))
+is a filtered group isomorphism.
+   Let (a, δ) ∈ aff(a)+ , then log(exp(a, δ) exp(0, −δ)) + aff(a)+ = aff(a)+ , hence
+exp(a, δ) exp(0, −δ) ∈ exp(a). We conclude that
+           exp(a, δ) = (exp(a, δ) exp(0, −δ)) exp(0, δ) ∈ exp(a) exp(Der(a)+ ),
+meaning that
+     Laz(aff(a)+ ) → exp(a) exp(Der(a)+ ) : (a, δ) 7→ (exp(a, δ) exp(0, −δ)) exp(0, δ),
+is an R-group isomorphism. Composing this isomorphism with f we find indeed
+that γ is an isomorphism of groups.                                       
+Remark 8.7. We can explicitly write γ −1 (a, λ) = (U (a, λ), log(λ)), where U (a, λ) =
+pra (P ((a, λ), (0, λ−1 ))) with P as in Corollary 5.16. The proof for this is analogous
+to the one of Proposition 8.6.
+Definition 8.8. If R is a divisible sequence of rings then a skew R-brace (A, ·, ◦)
+is strict if the corresponding regular subgroup of Hol(A, ·) is a sub R-group, with
+the R-group structure of Hol(A, ·) as in Proposition 8.6.
+     The following example shows that there exist R-braces that are not strict.
+Example 8.9. Let R be a commutative ring of characteristic different from 2 and
+f : (R, +) → (R, +) a group endomorphism. Then the sequence R = R → R →
+R → 0 → ... is divisible. On M = R ⊕ R we consider the filtration M0 = M1 = M ,
+M2 = R ⊕ 0, Mi = 0 for i ≥ 3, with the canonical R-module structure coming from
+the R-module structure. On M we define
+                     (x1 , y1 ) ◦ (x2 , y2 ) = (x1 + x2 + f (y1 )y2 , y1 + y2 ),
+which is easily verified to be a group structure. Also
+ (x1 , y1 )◦((x2 , y2 ) + (x3 , y3 )) = (x1 + x2 + x3 + f (y1 )(y2 + y3 ), y1 + y2 + y3 )
+             = (x1 + x2 + f (y1 )y2 , y1 + y2 ) − (x1 , y1 ) + (x1 + x3 + f (y1 )y3 , y1 + y3 )
+             = (x1 , y1 ) ◦ (x2 , y2 ) − (x1 , y1 ) + (x1 , y1 ) ◦ (x3 , y3 ),
+and λ(x1 ,y1 ) (x2 , y2 ) = (x2 + f (y1 )y2 , y2 ), hence λ(x,y) ∈ Aut+ (M ) meaning that
+(M, +, ◦) is an R-brace. We find log(λ(a,b) )(x, y) = (f (b)y, 0) and thus λr(a,b) is
+             LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                        23
+
+
+given by (x, y) 7→ (x + rf (b)y, y). Hence, λr(a,b) = λ(c,d) if and only if rf (b) = f (d),
+hence λ(M ) is a sub R-group of Aut(M )+ if and only if f (R) is a left ideal of
+R. Note that λ(M ) being a sub R-group of Aut(M )+ is a necessary condition for
+(M, +, ◦) to be strict.
+Proposition 8.10. Let R be divisible, let a be a complete connected Lie R-algebra
+and set A = Laz(a). Then γ yields a bijective correspondence between closed sub
+Lie R-algebras g of aff(a)+ and closed sub R-groups G of Hol(A)+ . Moreover,
+pra : g → a is injective, respectively surjective, if and only if prA : γ(g) → A is
+injective, respectively surjective.
+Proof. The first part follows directly from Proposition 5.20 and Proposition 8.6.
+    Assume that g is a closed Lie R-algebra of aff(a) such that pra : g → a is
+not injective. As this map is R-linear, this means that there exists some non-zero
+element δ ∈ g∩Der+ (a). But then clearly V (δ) = BCH(δ, −δ) = 0 = V (0), meaning
+that V is not injective on g and thus prA : γ(g) → A is not injective.
+    Conversely, assume that there exist (a, λ), (a, λ′ ) ∈ γ(g) with λ 6= λ′ . Then
+(a, λ)−1 (a, λ′ ) = (0, λ−1 λ′ ) ∈ f (g). Hence there exists some (b, δ) ∈ aff(a) with
+δ 6= 0 such that V (b, δ) = 0 hence b = 0.
+    Assume that pra : g → a is surjective. We claim that prA γ = V : g → a is
+surjective. Since prA and γ are continuous, the set V (g) is closed in a. Assume that
+there exists some a ∈ A\prA γ(g), then there exists a d such that V (g)∩(a+ad ) 6= ∅
+but V (g)∩(a+ad+1) = ∅. Let (b, δ) ∈ g such that V (b, δ) ∈ a+ad and let (b′ , δ ′ ) ∈ g
+such that b′ = BCH(−V (b, δ), a). Since b′ ∈ ad , we have
+(8.1)            b′ + ad+1 = V (b′ , δ ′ ) + ad+1 = exp(δ)(V (b′ , δ ′ )) + ad+1 .
+Hence
+        V (BCH((b, δ), (b′ , δ ′ ))) + ad+1 = BCH(V (b, δ), exp(δ)V (b′ , δ ′ )) + ad+1
+                                          = BCH(V (b, δ), BCH(−V (b, δ), a)) + ai+1
+                                          = a + ad+1 ,
+where the first equality follows from the fact that γ is a group homomorphism. We
+find BCH(−V (BCH((b, δ), (b′ , δ ′ ))), a) ∈ a + ad+1 , which is a contradiction.
+   Conversely, assume that V (g) = a. Clearly pra (g) is closed in a because pra is
+continuous. Assume that there exists some a ∈ a \ pra (g) and let d be such that
+pra (g) ∩ (a + ad ) 6= ∅ but pra (g) ∩ (a + ad+1 ) = ∅. Choose (b, δ) ∈ g such that
+b ∈ ad and choose (b′ , δ ′ ) ∈ g such that V (b′ , δ ′ ) = b − a. Using (8.1) we find
+                    pra (h + h′ ) + ad+1 = b + V (h′ ) + ad+1 = a + ad+1 ,
+hence pra (h + h′ ) ∈ a + ad+1 , which is a contradiction.                                
+Remark 8.11. Transitive subgroups of the holomorph of a finite group play an
+essential role in the theory of Hopf–Galois structures, see for example [13, 38, 23].
+Although in general Hol+ (A) is a strict subgroup of Hol(A) one can prove that if
+A is a p-group then there exists a finite filtration of A such that A is connected
+and Hol(A)+ is a Sylow p-subgroup of Hol(A). If |A| = pk for k < p, then such a
+filtration has length at most p so we can see A as a Z/p^  k Z-group. Hence in such
+
+a case, we can classify all regular p-groups of Hol(A) by classifying the t-surjective
+sub Lie rings of aff(Laz−1 (A)).
+Definition 8.12. Let R be divisible and let (A, ·, ◦) be a complete connected skew
+R-brace. Then (A, ·, ◦) is strict if it associated regular subgroup G of Hol(A, ·)+ is
+a sub R-group, with the R-group structure as in Proposition 8.6, in this case we
+transfer the R-group structure of G onto (A, ◦) through their canonical bijection. A
+24                                  S. TRAPPENIERS
+
+
+sub skew R-brace of (A, ·, ◦) is strict if it is a sub R-group of (A, ◦). The category
+of strict complete connected skew R-braces is denoted R SBc,c,s .
+Lemma 8.13. Let R be divisible and let (A, ·, ◦) be a strict complete connected
+skew R-brace. Then every left ideal is a strict sub skew R-brace.
+Proof. Let I be a left ideal of (A, ·, ◦). Since a ◦ b = a · λa (b), it is always true that
+a left ideal is a sub skew R-brace. It remains to show that it is strict, which is
+equivalent to I ′ = {(x, λx ) | x ∈ I} being a sub R-group of Hol(A, ·)+ . However,
+I ′ = G ∩ (I ⋊ Aut(A, ·)+ ) where G is the associated regular subgroup of Hol(A, ·)+ .
+By assumption, G is a sub R-group. It is easily verified that γ −1 (I ⋊ Aut(A, ·)+ ) =
+I ⊕ Der(a)+ ≤ aff(a)+ with a = Laz(A, ·). Since I ⊕ Der(a)+ is a closed sub R-
+algebra of aff(a)+ , we find that I ⋊ Aut(A, ·)+ is a sub R-group of Hol(A, ·). We
+conclude that I ′ is an intersection of two sub R-groups, hence it is a sub R-group
+itself.                                                                                  
+
+Proposition 8.14. Let R be divisible and let (a, ⊲) be a complete connected post-Lie
+R-algebra. Then
+                          W : a → a : a 7→ V (a, La ),
+is a bijective map and S(a, ⊲) = (a, ·, ◦) with (a, ·) = Laz(a), a◦b = a·exp(LΩ(a) )(b)
+is a strict complete connected skew R-brace, where Ω := W −1 . Moreover, W :
+Laz(a◦ ) → (a, ◦) is an R-group isomorphism.
+Proof. Let (a, ⊲) be a complete connected post-Lie R-algebra and let g be the
+regular sub Lie R-algebra of aff(a)+ associated to (a, ⊲). Then W is a bijection
+since it is the composition of the bijections a → g : a 7→ (a, La ) and V : g → a,
+recall that the latter is a bijection by Proposition 5.20.
+   By Proposition 5.20 we find that γ(g) is a closed regular sub R-group of Hol(Laz(a))+ ,
+thus we obtain a strict complete connected skew R-brace (a, ·, ◦) where (a, ·) =
+Laz(a). Also a ◦ b = a · λa (b) where λa ∈ Aut(a) is uniquely determined by
+(a, λa ) ∈ γ(g). Since γ(a) = {(W (a), exp(La )) | a ∈ a} we find λa = exp(LΩ(a) ).
+   Also, W : Laz(a◦ ) → (a, ◦) is a group isomorphism because it is the composition
+of the group homomorphisms Laz(a◦ ) → Laz(g) : a 7→ (a, La ), γ : Laz(g) → γ(g)
+and pra : γ(g) → (a, ◦).                                                            
+
+Remark 8.15. With the help of the explicit formula in Remark 5.17 find that
+              1         1          1         1
+ W (a) = a + La (a) + L2a (a) + [a, La (a)] + (La ([a, La (a)]) + L3a (a)) + ...
+              2         6          12        24
+where further terms are of order at least 5.
+   We now explain how the above construction is related to the formal integration
+as described by Bai, Guo, Sheng and Tang in [5]. Let F be a field of characteristic
+0. Then Bai, Guo, Sheng and Tang proved that to any connected complete post-Lie
+F-algebra (a, ⊲) one can associate a skew brace (a, ·, ◦) where
+                     a · b = BCH(a, b), a ◦ b = a · exp(LΩ′ (a) )(b).
+We first note that in our terminology their notion of a connected complete post-
+Lie F-algebra is a connected complete post-Lie F-algebra (a, ⊲) such that moreover
+ai ⊲ aj ⊆ ai+j , or equivalently, such that the filtrations on a and a◦ coincide. This
+is indeed a more restrictive notion, as for example if ai = 0 for some i, then ai−1 is
+contained in the socle hence Soc(a, ⊲) 6= 0. In [17, Section 3] an example is given
+of a left-nilpotent pre-Lie R-algebra with trivial socle, so its associated pre-Lie R-
+algebra, as in Example 6.3, is complete and connected in our sense but not in the
+sense of [5].
+          LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                     25
+
+
+   We quickly recall their construction: starting from a complete post-Lie F-algebra
+(a, ⊲) such that a◦i = ai for all i ≥ 0 and consider the universal enveloping algebra
+U(a). On U(a) we define a new multiplication ∗ which for a ∈ a, b ∈ U (a) is given
+by a ∗ b = ab + δa (b), where δa is the unique derivation of U(a) with δa (z) = a ⊲ z
+for z ∈ a. In this way, (U (a), ∗) now becomes an F-algebra. This operation is
+then extended to the completion Û(a) and (Û(a), ∗) filtration is thus a complete
+F-algebra. For a ∈ a, we define Ω′ (a) = log∗ exp(a), where the exponential map
+with respect to the usual multiplication in Û(a) is first applied, followed by the
+logaritmic map in (Û(a), ∗).
+   We prove that W (a) = log exp∗ (a), which implies that Ω = Ω′ and thus that
+our construction coincides with the one in [5]. Consider the two F-algebra homo-
+morphisms s, t : Û(a◦ ) → Û(aff(a)) given by s(a) = (a, La ) and t(a) = (0, La ). We
+define
+                     φ : Û(a◦ ) → Û(aff(a)) : a 7→ s(a(1 ))t(S(a(2) )).
+Then φ(g) ∈ Û(a) ⊆ Û (aff(a)) for any grouplike element g ∈ G Û(a◦ ), hence the
+image of φ is contained in U(a◦ ) since the grouplike elements span Û(a◦ ). Note
+that for a ∈ a◦ , b ∈ Û(a◦ ),
+                     φ(ab) = φ(a(1) )t(a(2) )(φ(b)) = φ(a) ∗ φ(b).
+Hence
+                   exp∗ φ(a) = φ exp(a) = exp(a, La ) exp(0, La )−1
+thus log exp∗ (a) = W (a).
+   In the pre-Lie case we have a more explicit description of W which coincides
+with the one in [2] and [36].
+Proposition 8.16. Let RPbe divisible and let (a, ⊲) be a complete connected pre-Lie
+                         ∞    1 k−1
+R-algebra. Then W (a) = k=1 k!  La (a).
+Proof. We claim that under the above assumptions, if we consider (a, ⊲) as a com-
+plete connected post-Lie Q-algebra as in Example 6.3, W ′ coincides with the map
+W defined in Theorem 8.19 and thus that both constructions coincide in this case.
+   Define the R-module M = R0 ⊕ a and consider the degree preserving Lie R-
+algebra homomorphism ρ : aff(a) → EndR (M ) as ρ(a,δ) (r, b) = (0, ra + a ⊲ b).
+Similarly, define κ : Hol(Laz(a)) → EndR (M ) as κ(a,λ) (r, b) = (r, ra + λ(b)) and
+note that this is a degree preserving homomorphism of filtered groups. Then,
+exp(ρ(a,0) ) = κ(a,0) and exp(ρ(0,δ) ) = κ(0,exp(δ)) , hence γ = ρ exp κ−1 . Since
+κ(a,λ) (1, 0) = a, we find that
+                                                          ∞
+                                                          X 1
+                (0, W (a)) = exp(ρ(a,La ) )(1, 0) = (0,              Lak−1 (a)).    
+                                                                k!
+                                                          k=1
+
+Proposition 8.17. Let R be divisible and let (A, ·, ◦) be a strict complete connected
+skew R-brace. Then
+                             Ω : A 7→ A : a 7→ U (a, λa ),
+is a bijection and L(A, ·, ◦) = (Laz−1 (A, ·), ⊲) with a ⊲ b = log(λW (a) )(b), is a
+complete connected post-Lie R-algebra, where W := Ω−1 . Moreover, Ω : (A, ◦) →
+a◦ is a Lie R-algebra isomorphism, where (a, ⊲) = L(A, ·).
+Proof. Let (A, ·, ◦) be a strict complete connected skew R-brace and let G be the
+associated regular sub R-group of Hol(A, ·)+ . Then Ω is a bijection since it is the
+composition of the bijections A 7→ G : a 7→ (a, λa ) and U : G → A with U as in
+Remark 8.7. The fact that U is bijective, follows from Proposition 5.20.
+   By Proposition 5.20 we find that γ −1 (G) is a closed regular sub Lie R-algebra
+of aff(Laz−1 (A, ·))+ , thus we obtain a complete connected post-Lie R-algebra
+26                                   S. TRAPPENIERS
+
+
+(Laz−1 (A, ·), ⊲). We find a ⊲ b = La where La is uniquely determined by the
+fact that (a, La ) ∈ γ −1 (G). Since γ −1 (G) = {(Ω(a), log(λa )) | a ∈ A} we find that
+La = log(λΩ−1 (a) ).
+   Also, Ω is (A, ◦) → L(A, ·, ◦)◦ is an isomorphism of Lie R-algebras since it is the
+composition of the isomorphisms (A, ◦) → G : a 7→ (a, λa ), γ 1 : G → γ −1 (G) and
+prA : γ −1 (G) → Laz−1 (A, ·).                                                       
+
+Proposition 8.18. Let R be P
+                           divisible and let (A, +, ◦) be a strict complete con-
+                             ∞
+nected R-brace. Then Ω(a) = k=1 k1 (−1)k+1 λak−1 (a).
+Proof. Using the same notation as in the proof of Proposition 8.16, we find that
+ρ(a,δ) (1, 0) = (0, a) hence
+                                                      ∞
+                                                      X 1
+             (0, Ω(a)) = log(κ(a,λa ) )(1, 0) = (0,             (−1)k+1 λak−1 (a)).   
+                                                            k
+                                                      k=1
+
+   This formal differentiation actually coincides (under the necessary assumptions)
+with the geometric construction in [5, Theorem 4.3] (or in [10, Section 3]). Let
+(a, ⊲) be a finite dimensional complete connected post-Lie F-algebra. Recall from
+[5, Theorem 4.3] that for a skew brace (G, ·, ◦) such that (G, ·) and (G, ◦) are Lie
+groups and the map a 7→ (a, λa ) is smooth (or in the original formulation, a post-
+Lie group) the authors define a post-Lie structure on g, the Lie algebra associated
+to (G, ·), by starting with the map λ : G → Aut(G, ·) : a 7→ λa , which yields
+the map ρ : G → Aut(g) : a 7→ dλa . Subsequently, differentiating yields a map
+dρ : g → Der(g) and we define
+                                   a ⊲′ b = (dρ)a (b).
+   Let (G, ·, ◦) = S(a, ⊲) for a finite dimensional complete connected post-Lie R-
+algebra (a, ⊲), then (G, ·) is an algebraic group so in particular it is a Lie group
+and a is isomorphic to the Lie algebra associated to (G, ·) such that under this
+identification, the exponential map a → G is just the identity. Thus, under this
+identification of (G, ·) and a we have λg = ρg . Hence, b 7→ a ⊲′ b is the differential
+of the map λ : a 7→ exp(LΩ(a) )(b). We first determine dΩ. Since ΩW = id, it is
+                                                                         P∞
+sufficient to determine dW . By Remark 8.15, we find W (a) = ta + i=2 ti ai for
+some values ai ∈ a, hence
+                                                 X∞
+                                     d
+                          dW (a) =          ta +     ti ai = a,
+                                     dt t=0      i=2
+
+from which we conclude that dΩ = id. The map exp(L) : a → Aut(a) : a 7→ exp(La )
+has differential
+                                      d
+                     d(exp(L))(a) =         exp(Lta ) = La .
+                                     dt t=0
+We conclude that (dλ)a = La and thus a ⊲′ b = a ⊲ b, which proves the statement.
+Theorem 8.19. Let R be divisible, then
+             S : R PLAc,c → R SBc,c,s and L : R SBc,c,s → R PLAc,c ,
+are mutually inverse functors. The map Ω associated to a complete connected post-
+Lie R-algebra (a, ⊲) coincides with the map Ω associated to S(a, ⊲).
+   Closed sub post-Lie R-algebras of (a, ⊲) and closed strict sub skew R-braces of
+S(a, ⊲) coincide and moreover, closed left ideals, closed strong left ideals and closed
+ideals of (a, ⊲) and S(a, ⊲) coincide.
+          LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                        27
+
+
+Proof. It is clear that S and L are mutually inverse constructions and that their
+associated maps Ω coincide. We prove the functoriality of S, the proof for L is
+analogous.
+   Let f : (a, ⊲) → (b, ⊲) be a homomorphism of complete connected post-Lie R-
+algebras and set (a, ·, ◦) = S(a, ⊲) and (b, ·, ◦) = S(b, ⊲). Then by Theorem 5.21
+f : (a, ·) → (b, ·) is an R-group homomorphism. As W is an isomorphism between
+Laz(a◦ ) and (a, ◦), it is sufficient to proof f W = W f in order to conclude that f :
+(a, ◦) → (b, ◦) is a group homomorphism. Note that f ′ (a, La ) = (f (a), Lf (a) ) yields
+a homomorphism between the closed sub Lie R-algebras a ⊕ {La | a ∈ a} ≤ aff(a)+
+and b ⊕ {Lb | b ∈ b} ≤ aff(b)+ . In particular, we find that
+                     f W (a) = f pra BCH((a, La )(0, −La ))
+                             = prb f ′ BCH((a, La )(0, −La ))
+                             = prb BCH((f (a), Lf (a) (0, −Lf (a) ))
+                             = W f (a).
+   The equivalence of closed sub post-Lie R-algebras and closed strict sub skew
+R-braces is a direct corollary of Theorem 8.19. In particular, note that for b a
+closed sub post-Lie R-algebra of (a, ⊲) this implies that on the set b, the map Wb
+belonging to (b, ⊲) coincides with the map W belonging to (a, ⊲), so in particular
+W (b) = b.
+   Clearly the closed sub Lie R-algebras of a invariant under {Lx | x ∈ a} and
+{exp(Lx ) | x ∈ a} coincide, which yields the equivalence of closed left ideals. Taking
+into account Proposition 8.10, the equivalence of closed strong left ideals follows.
+   Let b be a strong left ideal of (a, ⊲). As W : Laz(a◦ ) → (A, ◦) is a group
+isomorphism, we find that b is an ideal of a◦ if and only if W (b) is a normal sub
+R-group of (A, ◦). If we recall that W (b) = b, the equivalence of ideals of (a, ⊲)
+and S(a, ⊲) follows.                                                                 
+Remark 8.20. Recall that a skew brace (A, +, ◦) is square-free if a ∗ a for all a ∈ A.
+Similarly, we say that a post-Lie ring (a, ⊲) is square-free if a ⊲ a = 0 for all a ∈ a.
+Note that the property of being square-free is preserved by the functors S and L and
+in particular, W = Ω = id in this case. Therefore these classes behave particularly
+well and eliminate most of the computations involved.
+Example 8.21. Let R be a divisible sequence and let A be a connected complete
+R-algebra. Then A is a pre-Lie algebra for a ⊲ b = ab and it is well-known that the
+associated group of flows is given by a ◦ b = a + ab + b. We can verify this directly:
+clearly W (a) = exp(a) − 1, hence Ω(a) = log(1 + a), where we for simplicity we
+work in the Dorroh extension R0 ⊕ A. We now find
+                     a ◦ b = a + exp(Llog(1+a) )(b) = a + ab + b.
+Conversely, just working in (A, +, ◦) we recover the original multiplication as
+        a ⊲ b = log(λW (a) )(b) = log(L1+W (a) )(b) = a + log(Lexp(a) )(b) = ab.
+Recall that this is precisely the well-known correspondence between two-sided braces
+and Jacobson radical rings [30].
+  The following result extends [37, Proposition 15, Lemma 17].
+Proposition 8.22. Let R be divisible, let (A, ·, ◦) be a complete connected skew
+R-brace and let n be an integer, then {an | a ∈ A} = {a◦n | a ∈ A} and {a ∈ A |
+an = 1} = {a ∈ A | a◦n = 1} and these sets are closed ideals of (A, ·, ◦).
+Proof. We prove the statement for the first set, the second part is analogous. Let
+(a, ⊲) be the complete post-Lie R-algebra such that (A, ·, ◦) = S(a, ⊲). Then na is a
+28                                  S. TRAPPENIERS
+
+
+closed ideal of (a, ⊲), hence it is also a closed ideal of (A, ·, ◦) by Theorem 8.19. Now
+as (A, ·) = Laz(a), we find na = {an | a ∈ A}. Also, as W : Laz(a◦ ) → (A, ◦) is
+an R-group isomorphism we find W (na) = {a◦n | a ∈ A}, but as W maps any sub
+post-Lie R-algebra to itself, we conclude that {an | a ∈ A} = {a◦n | a ∈ A}.            
+Proposition 8.23. Let R be divisible and let (a, ⊲) be a complete connected post-Lie
+R-algebra. Then Fix(a, ⊲) = Fix(S(a, ⊲)), Soc(a, ⊲) = Soc(S(a, ⊲)) and Ann(a, ⊲) =
+Ann(S(a, ⊲)). In particular, if a is nilpotent, then (a, ⊲) is right nilpotent if and
+only if S(a, ⊲) is right nilpotent.
+Proof. The first part of the statement follows from the fact that W (a) = a whenever
+a ⊲ a = 0, which in particular is the case when a ∈ Fix(a, ⊲) or a ∈ Soc(a, ⊲). The
+second part of the statement now follows from [1, Lemma 5.3 and Lemma 5.4] and
+the analogous statement for post-Lie algebras.                                    
+     We are now ready to prove Theorem 1.5.
+Proof of Theorem 1.5. Let (a, ⊲) be a post Lie p-ring of L-nilpotency class k. We
+can consider (a, ⊲) as a complete connected post-Lie Z-algebra as in Example 6.3.
+Since k < p, it follows from a similar argument as used in the proof of Proposi-
+tion 5.6 that this filtration also makes (a, +) into a Q-module and the bilinear map
+a◦ × a → a is also a bilinear map of Q-modules. We conclude that (a, ⊲) becomes
+a complete post-Lie Q-algebra.
+   Conversely, let (A, ·, ◦) be a skew p-brace of L-nilpotency class k. By Example 7.2
+we find that the filtration Li (A) makes it into a complete connected skew Z-brace.
+From Proposition 5.6 it follows that (A, ·, ◦) is a strict complete connected skew
+Q-brace.
+   The first part of the statement now follows from Theorem 8.19 and the observa-
+tion that the order of an element is preserved by the Lazard correspondence.
+   At last, recall that any skew brace of order pk is left nilpotent by [12, Proposition
+4.4] hence it is L-nilpotent.                                                          
+
+               9. Differentiation in non-zero characteristic
+   Recall that a primitive n-th root of unity of a ring R is an element ξ ∈ R such
+that ξ n = 1 and ξ k − 1 not a zero divisor for 1 ≤ k < n.
+Lemma 9.1. Let R be a ring, let M, N be R-modules, ξ ∈ R a primitive n-th root
+of unity where n is invertible in R, and f : M → N a map such that for every
+m ∈ M there exist elements α0 , ..., αd ∈ N , with d < n, such that
+                       f (rm) = α0 + rα1 + r2 α2 + ... + rd αd .
+       P n−1
+Then n1 i=0 ξ ik f (ξ −i m) = αk for all 1 ≤ k ≤ d.
+Proof. Evaluating the formula yields
+                         n−1                  n−1 d
+                       1 X ik               1 X X i(k−j)
+                             ξ f (ξ −i m) =           ξ  αj )
+                       n i=0                n i=0 j=0
+                                       = fk
+     Pn−1 i(k−j)
+since i=0 ξ      fj equals 0 for j 6= k and it equals nfk for j = k.                   
+   The above map should be seen as a discrete version of taking the k-th directional
+derivative through m and then evaluating at 0. Therefore, it seems justified to
+introduce the notation
+                                            n−1
+                                          1X i
+                       df : M → N : m 7→        ξ f (ξ −i m).
+                                          n i=0
+           LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                              29
+
+
+Although not stated explicitly, it is clear that this differentiation technique plays a
+prominent role in [34, 36]. We can extend the formula of [36, Theorem 12] to the
+skew brace setting.
+Proposition 9.2. Let pk be a prime power, ξ ∈ Z/pk Z a primitive p − 1-th root
+of unity. Let (A, ·, ◦) be a skew brace such that (A, ·) has exponent pk together and
+moreover (A, ·) is a filtered group with finite filtration A = A0 = A1 ⊇ ... ⊇ Ap = 1
+and such that Ai ∗ Aj ⊆ Ai+j for all i, j ≥ 1. Then
+                                            p−2
+                                            X
+                                   a⊲b=           ξ i λξ−i a (b),
+                                            i=0
+
+for all a, b ∈ A where the sum is taken in Laz−1 (A, ·).
+Proof. Set R = Z/pk Z. It is straightforward to verify that (A, ·, ◦) with the natural
+                                                 e
+filtration is a strict complete connected skew R-brace,     the strictness follows from
+                                      e
+the fact that every subgroup of an R-group                 e
+                                               is a sub R-group.      By Theorem 8.19
+we know that (A, ·, ◦) = S(a, ⊲) for some complete connected post-Lie R-algebrae
+(a, ⊲). Consider the map λP: a →  P∞EndR (a) : a 7→ λa . From Proposition 8.14 we
+                                         1
+find λta = exp(LW (ta) ) = k=0 i=1 k!i!    LkLi−1 (ta) , but by the assumption on the
+                                                      ta
+filtration we find that all powers tj disappear for j ≥ p and the degree 1 term is
+tLa , hence the assumptions for Lemma 9.1 are satisfied and we find dλ(a) = La
+which concludes the proof.                                                      
+   Note that a filtration as in Proposition 9.2 exists precisely if A{p} = 1 where
+ {1}
+A     = A and A{k+1} is the subgroup of (A, ·) generated by all a ∗ b and aba−1 b−1
+where a ∈ A{i} , b ∈ A{k+1−i} , 1 ≤ i ≤ k. For braces this is precisely the chain of
+ideals A[k] used to define strong nilpotency as in [33].
+   We remark that there is one potential advantage of the above way of differenti-
+ating when working over characteristic pk ; namely that we can have terms of degree
+more that p, whereas in the formulas for exp and log these terms are not allowed
+since the coefficients of degree p or more do not exist. Indeed, the field Fpn for
+example has a primitive (pn − 1)-th root of unity. In particular, this means that
+there are possible uses in the case p = 2. It would be very interesting to see whether
+this idea of differentiation indeed has some meaningful application in such cases.
+In particular, the following question is natural to ask:
+                                                                     n
+Question 9.3. Let (A, +, ◦) be an Fpn -brace such that A[p −1] = 1 and let ξ be a
+primitive (pn − 1)-th root of unity in Fpn . Does the operation
+                                                  n
+                                       pX −2
+                                     1
+                              a⊲b= n         ξ i λa (ξ −i b),
+                                  p − 1 i=0
+yield a pre-Lie Fpn -algebra on (A, +)?
+
+                                   Acknowledgements
+   The author was supported by Fonds Wetenschappelijk Onderzoek – Vlaanderen,
+via a PhD Fellowship fundamental research (1160524N) and a Senior Research
+Project (G004124N), and by Vrije Universiteit Brussel via the project OZR3762.
+
+                                        References
+ [1] E. Acri, R. Lutowski, and L. Vendramin. Retractability of solutions to the Yang–Baxter
+     equation and p-nilpotency of skew braces. Internat. J. Algebra Comput., 30(01):91–115, 2020.
+ [2] A. A. Agrachev and R. V. Gamkrelidze. Chronological Algebras and Nonstationary Vector
+     Fields. J. Sov. Math., 17:1650–1675, 1981.
+30                                      S. TRAPPENIERS
+
+
+ [3] L. Auslander. Simply transitive groups of affine motions. Amer. J. Math., 99(4):809–826,
+     1977.
+ [4] D. Bachiller. Counterexample to a conjecture about braces. Journal of Algebra, 453:160–176,
+     2016.
+ [5] C. Bai, L. Guo, Y. Sheng, and R. Tang. Post-groups, (Lie-)Butcher groups and the
+     Yang–Baxter equation. Mathematische Annalen, 2023.
+ [6] Y. Benoist. Une nilvariété non affine. J. Differential Geom., 41(1):21–52, 1995.
+ [7] F. Borceux. Handbook of Categorical Algebra. Encyclopedia of Mathematics and its Applica-
+     tions. Cambridge University Press, 1994.
+ [8] D. Burde. Affine structures on nilmanifolds. Internat. J. Math., 7(5):599–616, 1996.
+ [9] D. Burde. Left-symmetric algebras, or pre-lie algebras in geometry and physics. Open Math-
+     ematics, 4(3):323–357, 2006.
+[10] D. Burde, K. Dekimpe, and S. Deschamps. Affine actions on nilpotent Lie groups. Forum
+     Mathematicum, 21(5):921–934, 2009.
+[11] Cayley. On the Analytical Forms Called Trees. Amer. J. Math., 4(1-4):266–268, 1881.
+[12] F. Cedó, A. Smoktunowicz, and L. Vendramin. Skew left braces of nilpotent type. Proceedings
+     of the London Mathematical Society, 118(6):1367–1392, 2019.
+[13] L. N. Childs. On the Hopf Galois theory for separable field extensions. Communications in
+     Algebra, 17(4):809–825, 1989.
+[14] S. Cicalò, W. A. De Graaf, and M. Vaughan-Lee. An effective version of the Lazard corre-
+     spondence. Journal of Algebra, 352(1):430–450, 2012.
+[15] C. Curry, K. Ebrahimi-Fard, and H. Munthe-Kaas. What is a post-Lie algebra and why is it
+     useful in geometric integration. In F. A. Radu, K. Kumar, I. Berre, J. M. Nordbotten, and
+     I. S. Pop, editors, Numerical Mathematics and Advanced Applications ENUMATH 2017,
+     pages 429–437, Cham, 2019. Springer International Publishing.
+[16] I. Del Corso. Module braces: relations between the additive and the multiplicative groups.
+     Annali di Matematica Pura ed Applicata, 202(6):3005–3025, 2023.
+[17] D. Fried. Distality, completeness, and affine structures. Journal of Differential Geometry,
+     24(3):265–273, 1986.
+[18] L. Guarnieri and L. Vendramin. Skew braces and the Yang-Baxter equation. Math. Comp.,
+     86(307):2519–2534, 2017.
+[19] H. Kim. Complete left-invariant affine structures on nilpotent Lie groups. Journal of Differ-
+     ential Geometry, 24(3):373–394, 1986.
+[20] J.-L. Koszul. Domaines bornés homogènes et orbites de groupes de transformations affines.
+     Bull. Soc. Math. France, 89:515–533, 1961.
+[21] M. Lazard. Sur les groupes nilpotents et les anneaux de Lie. Annales scientifiques de l’École
+     normale supérieure, 71(2):101–190, 1954.
+[22] A. I. Malcev. Nilpotent torsion-free groups. Izv. Akad. Nauk SSSR Ser. Mat., 13:201–212,
+     1949.
+[23] I. Martin-Lyons and P. J. Truman. Skew bracoids. Journal of Algebra, 638:751–787, 2024.
+[24] J. Milnor. On fundamental groups of complete affinely flat manifolds. Advances in Math.,
+     25(2):178–187, 1977.
+[25] M. F. Newman, E. A. O’Brien, and M. R. Vaughan-Lee. Groups and nilpotent Lie rings
+     whose order is the sixth power of a prime. Journal of Algebra, 278(1):383–401, 2004.
+[26] D. Puljić. Classification of braces of cardinality $pˆ4$. pages 1–18, 2022.
+[27] D. Puljić, A. Smoktunowicz, and K. Nejabati Zenouz. Some braces of cardinality p4 and
+     related Hopf-Galois extensions. New York Journal of Mathematics, 28:494–522, 2022.
+[28] D. Quillen. Rational Homotopy Theory. The Annals of Mathematics, 90(2):205, 1969.
+[29] W. Rump. Modules over braces. Algebra Discrete Math., -(2):127–137, 2006.
+[30] W. Rump. Braces, radical rings, and the quantum Yang-Baxter equation. J. Algebra,
+     307(1):153–170, 2007.
+[31] W. Rump. The brace of a classical group. Note di Matematica, 34(1):115–144, 2014.
+[32] D. Segal. The structure of complete left-symmetric algebras. Mathematische Annalen,
+     293(1):569–578, 1992.
+[33] A. Smoktunowicz. On Engel groups, nilpotent groups, rings, braces and the Yang-Baxter
+     equation. Trans. Amer. Math, 370(9):6535–6564, 2018.
+[34] A. Smoktunowicz. A new formula for Lazard’s correspondence for finite braces and pre-Lie
+     algebras. Journal of Algebra, 594:202–229, 2022.
+[35] A. Smoktunowicz. From pre-Lie rings back to braces. pages 1–24, 2022.
+[36] A. Smoktunowicz. On the passage from finite braces to pre-Lie rings. Advances in Mathe-
+     matics, 409:108683, 2022.
+[37] A. Smoktunowicz. On the passage from finite braces to pre-Lie rings. arXiv:2202.00085v3,
+     2022.
+           LAZARD CORRESPONDENCE, SKEW BRACES AND POST-LIE RINGS                             31
+
+
+[38] L. Stefanello and S. Trappeniers. On the connection between Hopf–Galois structures and
+     skew braces. Bulletin of the London Mathematical Society, 2023.
+[39] B. Vallette. Homology of generalized partition posets. Journal of Pure and Applied Algebra,
+     208(2):699–725, 2007.
+[40] E. B. Vinberg. The theory of homogeneous convex cones. Trudy Moskov. Mat. Obšč., 12:303–
+     358, 1963.
+[41] R. Warfield. Nilpotent Groups. Lecture Notes in Mathematics. Springer, 1976.
+
+   Department of Mathematics and Data Science, Vrije Universiteit Brussel, Pleinlaan
+2, 1050 Brussels, Belgium
+   Email address: senne.trappeniers@vub.be
+   URL: https://sites.google.com/view/sennetrappeniers/
+

@@ -1,0 +1,1243 @@
+             New York Journal of Mathematics
+                           New York J. Math. 28 (2022) 494–522.
+
+
+   Some braces of cardinality 𝒑𝟒 and related
+           Hopf-Galois extensions
+ D. Puljić, A. Smoktunowicz and K. Nejabati Zenouz
+
+        Abstract. We describe all 𝔽𝑝 -braces of cardinality 𝑝4 which are not right
+        nilpotent. The constructed braces are solvable and prime, and contain a non-
+        zero strongly nilpotent ideal. We use the constructed braces to construct ex-
+        amples of finitely dimensional pre-Lie algebras which are left nilpotent but
+        not right nilpotent. We also explain some well known results about the cor-
+        respondence between braces and Hopf-Galois extensions using the notion of
+        Hopf-Galois extensions associated to a given brace. This can be applied to the
+        constructed 𝔽𝑝 -braces.
+
+
+
+                                        Contents
+  1. Introduction                                                                             494
+  2. Background information                                                                   496
+  3. Groups and braces                                                                        497
+  4. Braces whose multiplicative group is XV                                                  498
+  5. The braces are well-defined                                                              507
+  6. All braces                                                                               511
+  7. Some properties of the constructed braces                                                514
+  8. Braces whose multiplicative group is XIV                                                 515
+  9. Conclusions and applications                                                             519
+  References                                                                                  520
+
+
+1. Introduction
+   In 2005, W. Rump introduced braces as a generalisation of Jacobson radical
+rings in order to help study involutive set-theoretic solutions of the Yang-Baxter
+equation. Since then braces have been studied solely for their algebraic prop-
+erties and have been linked to other research areas. For example, T. Gateva-
+Ivanova showed that braces are in correspondence with braided groups with an
+involutive braiding operator in [10]. Braces have also been shown to be equiv-
+alent to some objects in group theory such as bijective 1-cocycles and regular
+  Received September 15, 2021.
+  2010 Mathematics Subject Classification. 16W35, 16T25, 81R50.
+  Key words and phrases. Braces, Hopf-Galois extensions.
+  The second author is supported by the EPSRC grants EP/V008129/1 and EP/R034826/1.
+
+                                                                                 ISSN 1076-9803/2022
+
+                                             494
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS           495
+
+subgroups of the holomorph and they have been studied in connection to flat
+manifolds, quantum integrable systems, etc. Further, skew braces were intro-
+duced in [11], as a generalisation of braces, and D. Bachiller followed to discover
+that there is a connection between skew braces and Hopf-Galois theory which
+was further studied in [21].
+   The above evidences the value of classifying braces, which is a direction re-
+search has taken in recent years. Braces with cyclic additive groups were classi-
+fied in [14, 15] and braces of size 𝑝𝑞 and 𝑝2 𝑞 for primes 𝑝 and 𝑞 were classified
+in [1] and [9], respectively. All braces of cardinality 𝑝3 have been described by
+D. Bachiller [2] and all skew braces of the same size by K. Nejabati Zenouz [13].
+In [22] L. Vendramin suggested that the problem of classification of braces of
+order 𝑝𝑛 could be tackled by considering 𝔽-braces, which is the framework of
+this paper.
+   The general aim of our paper is to develop ring theoretic themes in the main
+calculations of characterising the braces as opposed to more group theoretic
+themes. Our method of choice is constructing braces using generators and re-
+lations. Notice that some other methods of constructing braces, for example by
+linking two homomorphisms of abelian and multiplicative groups, were con-
+sidered in [2, 13]. When constructing braces it is often difficult to check if the
+brace compatibility condition, 𝑎◦(𝑏 + 𝑐) + 𝑎 = 𝑎◦𝑏 + 𝑎◦𝑐, holds, because of
+the large amount of choices for 𝑎, 𝑏, 𝑐. This problem is particularly pertinent
+for braces which are not right nilpotent. Indeed, several methods exist for char-
+acterising all right nilpotent braces of cardinality 𝑝𝑛 , such as an extension by
+the socle [2], and by using the group of flows of pre-Lie algebras [17, 20]. How-
+ever, these methods are not available to characterise braces which are not right
+nilpotent. On the other hand, it was mentioned on page 22 of [22] that braces
+with additive group 𝐶𝑝5 , for 𝑝 = 2, 3, pose a special difficulty for the GAP pack-
+age. In this paper we construct all braces of cardinality 𝑝4 which are not right
+nilpotent and whose additive group is 𝐶𝑝4 . We hope that similar methods could
+be applied in future to help with GAP calculations for braces of cardinality 𝑝5
+and 𝑝6 . Problem 2.18 from [22], which asks to compute automorphisms groups
+of skew left braces of size 𝑝𝑛 , could also be related for the special case of 𝑛 = 4.
+A motivation for aforementioned investigations was mentioned in [2] “for any
+brace structure that we can determine, we are also computing a solution to the
+Yang-Baxter equation. Another important thing about braces is their connec-
+tion with other algebraic structures. For all these reasons, a classification of all
+finite braces of finite order is wanted.”
+   We also partially answer a question asked in [22], namely the characterisa-
+tion of all skew braces of cardinality 𝑝𝑛 (Problem 2.14, [22]). Our main result is
+Theorem 6.3, which describes all 𝔽𝑝 -braces of cardinality 𝑝4 which are not right
+nilpotent. Our results hold for 𝑝 > 3 and braces of cardinality 𝑝4 for 𝑝 = 2, 3
+can be calculated using the GAP package. Notice that finite 𝔽𝑝 -braces are ex-
+actly skew braces whose additive group is 𝐶𝑝𝑛 (see the Background Information
+496             D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+section below for more details). We also investigate connections of our results
+with Hopf-Galois extensions.
+
+2. Background information
+   Recall that a set 𝐴 with binary operations + and ∗ is a left brace if (𝐴, +)
+is an abelian group and the following version of distributivity combined with
+associativity holds:
+               (𝑎 + 𝑏 + 𝑎 ∗ 𝑏) ∗ 𝑐 = 𝑎 ∗ 𝑐 + 𝑏 ∗ 𝑐 + 𝑎 ∗ (𝑏 ∗ 𝑐),               (1)
+                        𝑎 ∗ (𝑏 + 𝑐) = 𝑎 ∗ 𝑏 + 𝑎 ∗ 𝑐
+for all 𝑎, 𝑏, 𝑐 ∈ 𝐴. Moreover, (𝐴, ◦) is a group, where we define
+                              𝑎◦𝑏 = 𝑎 + 𝑏 + 𝑎 ∗ 𝑏.
+   In what follows, we will use the definition in terms of operation ‘◦’ presented
+in [6] (see [16] for the original definition): a set 𝐴 with binary operations of
+addition +, and multiplication ◦ is a brace if (𝐴, +) is an abelian group, (𝐴, ◦)
+is a group and for every 𝑎, 𝑏, 𝑐 ∈ 𝐴
+                           𝑎◦(𝑏 + 𝑐) + 𝑎 = 𝑎◦𝑏 + 𝑎◦𝑐.
+Circle algebras related to braces were introduced by Catino and Rizzo in [5].
+A special case of circle algebras are radical circle algebras. Notice that radical
+circle algebras satisfy the definition 2 from [17], and hence radical circle alge-
+bras are exactly right 𝔽-braces. To obtain the corresponding brace, we change
+the multiplication to the opposite multiplication in our brace, 𝑎◦𝑏 → 𝑏◦𝑎. We
+now recall definition 2 from [17], which we state for left braces, as it was origi-
+nally stated for right braces.
+Definition 2.1. Let 𝔽 be a field. We say that a left brace 𝐴 is an 𝔽-brace if its
+additive group is an 𝔽-vector space such that 𝑎 ∗ (𝛼𝑏) = 𝛼(𝑎 ∗ 𝑏) for all 𝑎, 𝑏 ∈ 𝐴,
+𝛼 ∈ 𝔽. Here 𝑎 ∗ 𝑏 = 𝑎◦𝑏 − 𝑎 − 𝑏.
+   Notice that finite left 𝔽𝑝 -braces are exactly braces whose multiplicative group
+is 𝐶𝑝𝑛 , where 𝐶𝑝 is the cyclic group of cardinality 𝑝. Indeed, if 𝐴 is an 𝔽𝑝 -brace
+then it is a vector space over 𝔽𝑝 , hence 𝑝𝑎 = 0𝑎 = (𝑝 − 𝑝)𝑎 = 𝑝𝑎 − 𝑝𝑎 = 0𝐴
+where 0𝐴 is the identity of the additive group (𝐴, +), and 𝑝𝑎 is the multiplica-
+tion of 𝑝 ∈ 𝔽𝑝 and 𝑎 ∈ 𝐴 in our vector space. Note that 1𝑎 = 𝑎 for 1 ∈ 𝔽𝑝 by
+the definition of a vector space. Therefore, every element in (𝐴, +) has order
+at most 𝑝, and since (𝐴, +) is abelian it follows that (𝐴, +) is 𝐶𝑝𝑛 . On the other
+hand, let (𝐴, +, ◦) be a brace whose additive group is 𝐶𝑝𝑛 , then we can define
+1𝑎 = 𝑎 for 1 ∈ 𝔽𝑝 and 𝑎 ∈ 𝐴, and it gives a well defined 𝔽𝑝 -brace. Observe that
+the compatibility relation 𝑏 ∗ (𝑖𝑎) = 𝑖(𝑏 ∗ 𝑎) holds in this brace for integers 𝑖,
+because 𝑏 ∗ (𝑖𝑎) = 𝑏 ∗ (𝑎 + … + 𝑎) = 𝑎 ∗ 𝑏 + 𝑎 ∗ 𝑏 + … + 𝑎 ∗ 𝑏 = 𝑖(𝑎 ∗ 𝑏)
+by the brace relation 𝑥 ∗ (𝑦 + 𝑧) = 𝑥 ∗ 𝑦 + 𝑥 ∗ 𝑧. Since 𝑎 ≠ 0 has the additive
+order 𝑝, then 𝑝𝑎 = 𝑎 + 𝑎 + … 𝑎 = 0, hence 𝐴 is an 𝔽𝑝 -brace.
+   In [16], Rump introduced left nilpotent and right nilpotent braces and radical
+chains 𝐴𝑖+1 = 𝐴 ∗ 𝐴𝑖 and 𝐴(𝑖+1) = 𝐴(𝑖) ∗ 𝐴 for a left brace 𝐴, where 𝐴 =
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS             497
+
+𝐴1 = 𝐴(1) . Recall that a left brace 𝐴 is left nilpotent if there is a number 𝑛
+such that 𝐴𝑛 = 0, where inductively 𝐴𝑖 consists of sums of elements 𝑎 ∗ 𝑏 with
+𝑎 ∈ 𝐴, 𝑏 ∈ 𝐴𝑖−1 . A left brace 𝐴 is right nilpotent if there is a number 𝑛 such that
+𝐴(𝑛) = 0, where 𝐴(𝑖) consists of sums of elements 𝑎 ∗ 𝑏 with 𝑎 ∈ 𝐴(𝑖−1) , 𝑏 ∈ 𝐴.
+Strongly nilpotent braces and the chain of ideals 𝐴[𝑖] of a brace 𝐴 were defined
+                                           ∑𝑖
+in [18]. Define 𝐴[1] = 𝐴 and 𝐴[𝑖+1] = 𝑗=1 𝐴[𝑗] ∗ 𝐴[𝑖+1−𝑗] . A left brace 𝐴 is
+strongly nilpotent if there is a number 𝑛 such that 𝐴[𝑛] = 0, where 𝐴[𝑖] consists
+of sums of elements 𝑎 ∗ 𝑏 with 𝑎 ∈ 𝐴[𝑗] , 𝑏 ∈ 𝐴[𝑖−𝑗] for all 0 < 𝑗 < 𝑖.
+   All braces and 𝔽𝑝 -braces considered in this paper are left braces.
+
+3. Groups and braces
+   In Example 2 in [16], Rump gave an example of a right brace which is right
+but not left nilpotent. By taking the opposite multiplication in this brace, we
+obtain a left brace of cardinality 24 which is left but not right nilpotent. More-
+over, this brace is an 𝔽2 -brace as it is a vector space over 𝔽2 . In this section, we
+show that for a prime number 𝑝 > 3, multiplicative groups of left 𝔽𝑝 -braces of
+cardinality 𝑝4 which are not right nilpotent are isomorphic to either group XIV
+or group XV described below.
+   We first recall a result of David Bachiller from [3].
+Theorem 3.1 (Lemma 2.5.1, [3]). Let 𝑝 be a prime number, and let (𝐵, +, ◦) be
+a finite left brace with (𝐵, +) isomorphic to 𝐶𝑝𝑚 . Assume 𝑚 + 1 ≤ 𝑝. Then, the
+order of each non-trivial element in the multiplicative group (𝐵, ◦) is equal 𝑝.
+   Therefore, every element in the multiplicative group of any 𝔽𝑝 -brace of car-
+dinality 𝑝4 for 𝑝 > 3 has order 𝑝. In [4], Burnside described all groups of
+cardinality 𝑝4 for prime 𝑝 > 3.
+   Notice that if a brace 𝐴 of cardinality 𝑝4 has an abelian multiplicative group
+(𝐴, ◦) then it is a ring, and hence it is both left and right nilpotent [6]. Therefore,
+a left nilpotent 𝔽𝑝 -brace which is left but not right nilpotent has a non-abelian
+multiplicative group. Therefore, using the list from pages 100, 101 from [4], we
+have the following possibilities of non-abelian groups of cardinality 𝑝4 in which
+each element has order 𝑝.
+       ∙ (Group XIV) Group (with multiplication ◦) generated by elements 𝑃,
+         𝑄, 𝑅, 𝑆 which is the direct product of the group generated by 𝑄 and the
+         group generated by elements 𝑃, 𝑅, 𝑆. Moreover, 𝑃◦𝑅 = 𝑅◦𝑃, 𝑃◦𝑆 =
+         𝑆◦𝑃, 𝑄◦𝑃 = 𝑃◦𝑄 and 𝑅◦𝑆 = 𝑆◦𝑅◦𝑃.
+       ∙ (Group XV) Group (with multiplication ◦) generated by elements 𝑃, 𝑄,
+         𝑅, 𝑆 with 𝑃 being in the centre of this group, and the centre of this group
+         consists of elements 𝑃𝑖 . Moreover, 𝑅◦𝑄 = 𝑄◦𝑅 and 𝑄◦𝑆 = 𝑆◦𝑄◦𝑃 and
+         𝑅◦𝑆 = 𝑆◦𝑅◦𝑄.
+Observe that group XIV has centre of cardinality 𝑝2 and group 𝑋𝑉 has centre
+of cardinality 𝑝, where by centre we mean the set of elements which commute
+under operation ◦ with all elements in 𝐴.
+498              D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+  We shall let 𝑝 be a prime number larger than 3. The aim of this paper is to
+characterise all not right nilpotent 𝔽𝑝 -braces of cardinality 𝑝4 . We describe our
+method for groups of cardinality 𝑝𝑛 for any 𝑛, as we hope that our approach
+could be perhaps applied in some other situations.
+     ∙ Let 𝐺 be a group of order 𝑝𝑛 and 𝑔1 , 𝑔2 , … , 𝑔𝑛 be its generators. Let
+       𝑓1 , 𝑓2 , … , 𝑓𝑛 be the defining relations of our group 𝐺.
+     ∙ We will characterise 𝔽𝑝 -braces 𝐴 for which 𝐴 = 𝔽𝑝 𝑔1 +𝔽𝑝 𝑔2 +…+𝔽𝑛 𝑔𝑛 .
+                               ∑
+     ∙ We write 𝑔𝑖 ∗ 𝑔𝑗 = 0<𝑘≤𝑛 𝛼𝑖,𝑗,𝑘 𝑔𝑘 where 𝛼𝑖,𝑗,𝑘 ∈ 𝔽𝑝 are unknown. As
+       usual 𝑎 ∗ 𝑏 = 𝑎◦𝑏 − 𝑎 − 𝑏 in our brace.
+     ∙ We substitute these equations in the relations 𝑓1 , 𝑓2 , … , 𝑓𝑛 as well as
+       in the relations 𝑓𝑖 ∗ 𝑔𝑗 for 𝑖, 𝑗 ≤ 𝑛 and find 𝛼𝑖,𝑗,𝑘 such that the above
+       equations hold. This gives necessary conditions for our brace to be well-
+       defined.
+     ∙ To check if the brace is well-defined, we proceed as follows: We consider
+       the linear space 𝐵 = 𝔽𝑝 𝑔1′ +… 𝔽𝑝 𝑔𝑛′ for some elements 𝑔1′ , 𝑔2′ , … , 𝑔𝑛′ from
+       some set 𝑋. We define maps
+                                                ∑
+                             𝜆𝑔𝑖 (𝑔𝑗′ ) = 𝑔𝑗′ +   𝛼𝑖,𝑗,𝑘 𝑔𝑘′ .
+                                            0<𝑘≤𝑛
+
+      ∙ Next, we define maps 𝜆𝑔 for 𝑔 ∈ 𝐺 inductively by using the formula
+        𝜆𝑔◦ℎ (𝑏) = 𝜆𝑔 (𝜆ℎ (𝑏)) for 𝑏 ∈ 𝐵. To construct a well defined brace, we
+        then use Theorem 2.1 from [8] with the cocycle 𝑓(𝑔) = 𝜆𝑔 (1)−1. Notice
+        that, to be able to apply Theorem 2.1, we need to show that 𝑓 ∶ 𝐺 → 𝐵
+        is a bijective cocycle. In our case it is done in section 5.3.
+      ∙ In this way, we can construct all 𝔽𝑝 -braces with multiplicative group 𝐺
+        and generators 𝑔1′ , 𝑔2′ , … , 𝑔𝑛′ and such that 𝐺 = 𝔽𝑝 𝑔1′ + … + 𝔽𝑝 𝑔𝑛′ (see
+        Section 6 for a method).
+      ∙ For braces with multiplicative group XV, we can show that we can as-
+        sume that 𝐴 = 𝔽𝑝 𝑔1 + … + 𝔽𝑝 𝑔𝑛 , provided that the brace is not right
+        nilpotent. This then implies that we constructed all not right nilpotent
+        braces with the multiplicative group 𝐺.
+      ∙ We also show that all 𝔽𝑝 -braces with multiplicative group XIV are right
+        nilpotent, and hence strongly nilpotent. Braces of cardinality 𝑝4 for 𝑝 =
+        2, 3 can be calculated using the GAP package.
+
+4. Braces whose multiplicative group is XV
+  Let (𝐺, ◦) be the group XV, so the free group generated by elements 𝑃, 𝑄, 𝑅, 𝑆
+subject to relations
+                                𝑄◦𝑆 = 𝑆◦𝑄◦𝑃,
+                                    𝑄◦𝑅 = 𝑅◦𝑄,
+                      𝑃◦𝑆 = 𝑆◦𝑃, 𝑃◦𝑄 = 𝑄◦𝑃, 𝑃◦𝑅 = 𝑅◦𝑃,
+                                   𝑅◦𝑆 = 𝑆◦𝑅◦𝑄.
+                             𝑃𝑝 = 𝑄𝑝 = 𝑅𝑝 = 𝑆 𝑝 = 1𝐺 .
+      SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS         499
+
+Let (𝐴, +, ◦) be a brace whose multiplicative group is 𝐺. As usual we have
+𝑔◦ℎ = 𝑔 ∗ ℎ + 𝑔 + ℎ.
+  We assume that 𝐴 is not right nilpotent. We recall a result of Rump [16].
+Theorem 4.1 ([16]). If 𝐴 is a brace of a cardinality 𝑝𝑛 for some prime number
+𝑝 and some natural 𝑛, then 𝐴𝑛+1 = 0 where 𝐴1 = 𝐴 and 𝐴𝑖+1 = 𝐴 ∗ 𝐴𝑖 .
+  We get the following Corollary.
+Corollary 4.2. Let 𝐴 be a brace of cardinality 𝑝4 . If 𝐴4 ≠ 0, then 𝐴𝑖 ∕𝐴𝑖+1 has
+cardinality 𝑝 for 𝑖 = 1, ..., 4.
+Proof. Notice that if 𝐴𝑖 ∕𝐴𝑖+1 has cardinality smaller than 𝑝, then 𝐴𝑖 = 𝐴𝑖+1 ,
+since 𝐴𝑖 is an abelian group under the operation +. Suppose that 𝐴𝑖 = 𝐴𝑖+1 for
+some 𝑖. Then 𝐴𝑖 = 𝐴𝑖+1 = 𝐴 ∗ 𝐴𝑖+1 for some 𝑖 < 4. Then 𝐴𝑖 = 𝐴 ∗ 𝐴𝑖 =
+𝐴 ∗ 𝐴𝑖+1 = 𝐴𝑖+2 . Continuing in this way we get that 𝐴𝑖 = 𝐴4 = 𝐴5 = 0,
+which is a contradiction, since we assumed that 𝐴𝑛 ≠ 0. Now we find a chain
+of subgroups of index at least 𝑝 given by 𝐴4 ⊂ 𝐴3 ⊂ 𝐴2 ⊂ 𝐴 which implies that
+𝐴𝑖 ∕𝐴𝑖+1 has cardinality 𝑝 since the size of 𝐴 is 𝑝4 .                      
+Notation 4.3. Let (𝐴, +, ◦) be a brace. For an element 𝑎 ∈ 𝐴 we will denote
+by 𝑎−1 an element in 𝐴 such that 𝑎◦𝑎−1 = 1 = 0. Similarly, by 𝑎𝑛 , sometimes
+written at 𝑎𝑛◦ , we will denote the product of 𝑛 elements 𝑎 under the operation ◦.
+  Note that in any brace the identity element 0 of the additive group (𝐴, +)
+coincides with the identity element 1 of the multiplicative group (𝐴, ◦).
+
+4.1. Some supporting lemmas. Recall that the 𝜆 map in a brace (𝐴, +, ◦) is
+defined for 𝑎, 𝑏 ∈ 𝐴 by
+                         𝜆𝑎 (𝑏) = 𝑎 ∗ 𝑏 + 𝑏 = 𝑎◦𝑏 − 𝑎.
+It is known that
+                              𝜆𝑎◦𝑏 (𝑐) = 𝜆𝑎 (𝜆𝑏 (𝑐)) .
+Lemma 4.4. Let 𝐴 be an 𝔽𝑝 -brace of cardinality 𝑝4 . Then for 𝑎, 𝑏, 𝑐 ∈ 𝐴 we have
+       ( −1 −1        )
+        𝑎 ◦𝑏 ◦𝑎◦𝑏 ∗ 𝑐 = 𝑎 ∗ (𝑏 ∗ 𝑐) − 𝑏 ∗ (𝑎 ∗ 𝑐)
+                               + 𝑎 ∗ (𝑏 ∗ (𝑎 ∗ 𝑐)) + 𝑏 ∗ (𝑏 ∗ (𝑎 ∗ 𝑐))
+                               − 𝑏 ∗ (𝑎 ∗ (𝑏 ∗ 𝑐)) − 𝑎 ∗ (𝑎 ∗ (𝑏 ∗ 𝑐)) .
+Proof. Note we have 𝐴5 = 0. Now using properties of 𝜆 and the formula
+       𝜆𝑎−1 (𝑏) = 𝑏 − 𝑎 ∗ 𝑏 + 𝑎 ∗ (𝑎 ∗ 𝑏) − 𝑎 ∗ (𝑎 ∗ (𝑎 ∗ 𝑏)) for 𝑎, 𝑏 ∈ 𝐴
+the result follows by computation.                                              
+  Recall that in group XV we have the relation
+                              𝑄 = 𝑅−1 ◦𝑆 −1 ◦𝑅◦𝑆.
+Now, Lemma 4.4 implies the following.
+500               D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+Corollary 4.5. Let 𝑝 > 3 be a prime. Let (𝐴, +, ◦) be a brace whose multiplicative
+group is the group XV. Then
+                              𝑄 ∗ 𝐴𝑖 ⊆ 𝐴𝑖+2 , 𝑄 ∈ 𝐴2 .
+Moreover,
+                              𝑄 ∗ 𝑄 ∈ 𝑄 ∗ 𝐴2 ⊆ 𝐴4 .
+      Furthermore, using the relation in group XV
+                                𝑃 = 𝑄−1 ◦𝑆 −1 ◦𝑄◦𝑆,
+Lemma 4.4, and Corollary 4.5 we have the following corollary.
+Corollary 4.6. Let (𝐴, +, ◦) be a brace whose multiplicative group is the group
+XV. Then
+                              𝑃 ∗ 𝐴𝑖 ⊆ 𝐴𝑖+3 , 𝑃 ∈ 𝐴3 .
+Therefore,
+𝑃 ∗ 𝑃 = 0, 𝑄 ∗ 𝑃 = 0, 𝑃 ∗ 𝑄 = 0, 𝐴 ∗ 𝑃 = 𝑃 ∗ 𝐴 ⊆ 𝐴4 , 𝑃 ∗ 𝐴2 = 𝐴2 ∗ 𝑃 = 0.
+Proposition 4.7. Let 𝑝 > 3 be a prime. Let (𝐴, +, ◦) be a brace which is not right
+nilpotent with multiplicative group XV. Then 𝐴4 ≠ 0 and
+                                      𝑃 ∉ 𝐴4 .
+Moreover, 𝐴2 is a brace of cardinality 𝑝3 and 𝐴3 is a brace of cardinality 𝑝2 , so
+                                  𝐴3 = 𝔽𝑝 𝑃 + 𝐴4 .
+Proof. Observe first that 𝑃 ∗ 𝑎 = 𝑎 ∗ 𝑃 for any 𝑎 ∈ 𝐴 since 𝑃 is central in
+(𝐴, ◦). Recall 𝑃 ∈ 𝐴3 , so 𝑃 ∗ 𝐴 = 𝐴 ∗ 𝑃 ⊆ 𝐴4 . Therefore, 𝐴4 = 0 implies
+that 𝐼 = 𝔽𝑝 𝑃 is an ideal in 𝐴 and 𝐼 ∗ 𝐴 = 𝐴 ∗ 𝐼 = 0. Notice that 𝐴∕𝐼 has
+cardinality 𝑝3 , and it is known that this implies that 𝐴∕𝐼 is right nilpotent [3].
+Now 𝐴 ∗ 𝐼 = 𝐼 ∗ 𝐴 = 0 implies that 𝐴 is right nilpotent. This contradicts the
+assumption that 𝐴 is not right nilpotent.
+   We will now show that 𝑃 ∉ 𝐴4 . If 𝑃 ∈ 𝐴4 , then 𝐴 ∗ 𝑃 ⊆ 𝐴5 = 0, and since 𝑃
+is central, we have 𝑃 ∗ 𝐴 = 0. Therefore, reasoning similarly to above, 𝐼 = 𝔽𝑝 𝑃
+is an ideal in 𝐴 and 𝐴∕𝐼 is right nilpotent. Therefore, 𝑃 ∉ 𝐴4 .
+   Notice that, by Corollary 4.2, 𝐴4 ≠ 0 implies 𝐴𝑖 ∕𝐴𝑖+1 is one dimensional
+vector space for 𝑖 = 1, 2, 3, 4. It follows that 𝐴2 is a brace of cardinality 𝑝3 and
+𝐴3 has cardinality 𝑝2 , so 𝐴3 = 𝔽𝑝 𝑃 + 𝐴4 .                                        
+Proposition 4.8. Let 𝑝 > 3 be a prime. Let (𝐴, +, ◦) be a brace which is not right
+nilpotent with multiplicative group XV and let 𝑎 ∈ 𝐴4 . Then
+                                    𝑎 ∗ 𝑄 = 𝑃𝛼 ,
+for some 1 ≤ 𝛼 ≤ 𝑝.
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS           501
+
+Proof. Consider the element 𝑒 = 𝑎−1 ◦𝑄−1 ◦𝑎◦𝑄 where the inverses are taken
+in the group (𝐴, ◦). Notice that since 𝑄 ∗ 𝐴𝑖 ⊆ 𝐴𝑖+2 and by Lemma 4.4 we get
+                              𝑒 ∈ 𝐴3 , 𝑒 ∗ 𝐴𝑖 ⊆ 𝐴𝑖+3 .
+For 𝑟 ∈ 𝐴 denote
+                            𝐸𝑟 = 𝑒−1 ◦𝑟−1 ◦𝑒◦𝑟.
+Now using similar reasoning as before we get
+                           𝐸𝑟 ∈ 𝐴4 , 𝐸𝑟 ∗ 𝐴 ⊆ 𝐴5 = 0.
+Since 𝐸𝑟 ∈ 𝐴4 , then 𝐴 ∗ 𝐸𝑟 = 0. This implies that 𝔽𝑝 𝐸𝑟 is an ideal in 𝐴.
+Therefore, if 𝐸𝑟 ≠ 0, then 𝐴∕𝔽𝑝 𝐸𝑟 is a brace of cardinality 𝑝3 or less, and hence
+it is right nilpotent by [3]. This implies that 𝐴 is right nilpotent. Since we only
+consider not right nilpotent braces, this is impossible. Therefore, 𝐸𝑟 = 0. This
+holds for every 𝑟 ∈ 𝑅, so it follows that 𝑒 is in the centre of group (𝐴, ◦). Because
+the group (𝐴, ◦) is group 𝑋𝑉, it follows that 𝑒 = 𝑃𝑖 for some natural number
+𝑖. Therefore, by writing 𝑒 as sums of products of 𝑄 and 𝑎 and using the fact
+that 𝐴 ∗ 𝑎 = 0 since 𝑎 ∈ 𝐴4 we get 𝑎 ∗ 𝑄 = 𝑃𝛼 , for some 0 ≤ 𝛼 < 𝑝 (since
+𝐴3 ∗ 𝐴3 = 𝐴3 ∗ (𝔽𝑝 𝑃 + 𝐴4 ) = 𝑃 ∗ 𝐴3 = 0).                                         
+Proposition 4.9. Let 𝑝 > 3 be a prime. Let (𝐴, +, ◦) be an 𝔽𝑝 -brace which is not
+right nilpotent with multiplicative group XV. Suppose that 𝑅 ∉ 𝐴2 and 𝑄 ∉ 𝐴3 .
+Then there exist element 𝑆̄ ∈ 𝐴4 such that the mapping 𝑓 ∶ (𝐴, ◦) → (𝐴, ◦) given
+by 𝑓(𝑃) = 𝑃, 𝑓(𝑄) = 𝑄, 𝑓(𝑅) = 𝑅, 𝑓(𝑆) = 𝑆̄ is an automorphism of the group
+(𝐴, ◦).
+Proof. Observe that the mapping 𝑓 ∶ 𝐺 ⟶ 𝐺 of the group 𝐺 = (𝐴, ◦) defined
+on generators of 𝐺 by
+             𝑓(𝑅) = 𝑅, 𝑓(𝑄) = 𝑄, 𝑓(𝑃) = 𝑃, 𝑓(𝑆) = 𝑆◦𝑅𝑖 ◦𝑄𝑗 ◦𝑃𝑘
+is a group homomorphism for any 𝑖, 𝑗, 𝑘.
+   Observe that since 𝑅 ∉ 𝐴2 , then for some 𝑖 the element 𝑆2 ∶= 𝑆◦𝑅𝑖 will
+belong to 𝐴2 (because by Corollary 4.6 we have that 𝐴∕𝐴2 has dimension 1 as
+an 𝔽𝑝 -vector space). Notice also that since 𝑄 ∉ 𝐴3 , then for some 𝑗 element
+𝑆3 ∶= 𝑆2 ◦𝑄𝑗 will belong to 𝐴3 .
+   We know that 𝑃 ∈ 𝐴3 and 𝑃 ∉ 𝐴4 . Consequently, for some 𝑘 we have that
+element 𝑆4 = 𝑆3 ◦𝑃𝑘 will be in 𝐴4 . Therefore, 𝑆◦𝑅𝑖 ◦𝑄𝑗 ◦𝑃𝑘 ∈ 𝐴4 . We can now
+define 𝑆̄ = 𝑆◦𝑅𝑖 ◦𝑄𝑗 ◦𝑃𝑘 .
+   It remains to show that 𝑓 is an automorphism, so the kernel of 𝑓 is trivial.
+This follows because the image of a non-trivial element 𝑃𝛼 ◦𝑄𝛽 ◦𝑅𝛾 ◦𝑆 𝜉 will be
+a non-trivial element (alternatively, it is easy to give the formula for the inverse
+map 𝑓 −1 ).                                                                       
+4.2. The case when 𝑹 ∈ 𝑨𝟐 .
+Lemma 4.10. Let 𝑝 > 3 be a prime. Let (𝐴, +, ◦) be an 𝔽𝑝 -brace whose multi-
+plicative group is the group XV. If 𝑅 ∈ 𝐴2 , then 𝐴2 is a commutative brace.
+502             D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+Proof. Suppose that 𝑅 ∈ 𝐴2 so 𝑃, 𝑄, 𝑅 ⊆ 𝐴2 . Since the set {𝑃𝑖 ◦𝑄𝑗 ◦𝑅𝑡 ∶
+0 < 𝑖, 𝑗, 𝑡 ≤ 𝑝} has cardinality 𝑝3 and is contained in 𝐴2 it follows that 𝐴2 =
+{𝑃𝑖 ◦𝑄𝑗 ◦𝑅𝑡 ∶ 0 < 𝑖, 𝑗, 𝑡 ≤ 𝑝}, by Proposition 4.7. Therefore, (𝐴2 , ◦) is com-
+mutative (since 𝑃, 𝑄, 𝑅 commute with each other). It follows that (𝐴, +, ∗) is a
+commutative ring by [6].                                                      
+Lemma 4.11. Let (𝐴, +, ◦) be a brace which is not right nilpotent with multi-
+plicative group XV. If 𝑅 ∈ 𝐴2 , then 𝑄 ∗ 𝑄 = 0.
+Proof. Notice that from the relation
+                                 𝑅◦𝑆 = 𝑆◦𝑅◦𝑄
+we get
+                      𝑅 ∗ 𝑆 = 𝑆 ∗ 𝑅 + 𝑆 ∗ 𝑄 + 𝑅 ∗ 𝑄 + 𝑄.
+therefore,
+         𝑄 ∗ (𝑅 ∗ 𝑆) = 𝑄 ∗ (𝑆 ∗ 𝑅) + 𝑄 ∗ (𝑆 ∗ 𝑄) + 𝑄 ∗ (𝑅 ∗ 𝑄) + 𝑄 ∗ 𝑄
+         𝑄 ∗ (𝑅 ∗ 𝑆) = 𝑄 ∗ (𝑆 ∗ 𝑅) + 𝑄 ∗ 𝑄 ∈ 𝐴4 since 𝑄 ∈ 𝐴2 .                (2)
+We have also the group relation 𝑄◦𝑅 = 𝑅◦𝑄, therefore
+                            (𝑄◦𝑅) ∗ 𝑆 = (𝑅◦𝑄) ∗ 𝑆,
+which implies that 𝑄 ∗ (𝑅 ∗ 𝑆) = 𝑅 ∗ (𝑄 ∗ 𝑆). Now
+                           𝑄 ∗ 𝑆 ∈ 𝐴 3 = 𝔽𝑃 𝑃 + 𝐴 4 ,
+so 𝑅 ∗ (𝑄 ∗ 𝑆) ∈ 𝔽𝑃 𝑃 ∗ 𝑅 = 0. Thus substituting in (2) we find
+             0 = 𝑅 ∗ (𝑄 ∗ 𝑆) = 𝑄 ∗ (𝑅 ∗ 𝑆) = 𝑄 ∗ (𝑆 ∗ 𝑅) + 𝑄 ∗ 𝑄,
+since we have assumed 𝑅 ∈ 𝐴2 , we have that 𝑄 ∗ (𝑆 ∗ 𝑅) = 0, so 𝑄 ∗ 𝑄 = 0. 
+Proposition 4.12. Let (𝐴, +, ◦) be an 𝔽𝑝 -brace which is not right nilpotent with
+multiplicative group XV. If 𝑅 ∈ 𝐴2 , then 𝑄 ∈ 𝐴3 .
+Proof. Suppose on the contrary that 𝑄 ∉ 𝐴3 . Recall that, by Corollaries 4.5
+and 4.6 and Proposition 4.7, 𝑄 ∈ 𝐴2 , 𝑃 ∈ 𝐴3 , 𝑃 ∉ 𝐴4 . Hence,
+                            𝐴2 = 𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝐴4 .
+In group XV we have the relation
+                                𝑄◦𝑆 = 𝑆◦𝑄◦𝑃,
+hence 𝑄 ∗ 𝑆 = 𝑆 ∗ 𝑄 + 𝑆 ∗ 𝑃 + 𝑃, by Corollary 4.6. We also have the relation
+𝑅◦𝑆 = 𝑆◦𝑅◦𝑄, so
+                      𝑅 ∗𝑆 =𝑆 ∗𝑅+𝑆 ∗𝑄+𝑅 ∗𝑄+𝑄
+(notice that 𝑆 ∗ (𝑅 ∗ 𝑄) = 𝑆 ∗ (𝑄 ∗ 𝑅) ∈ 𝑆 ∗ 𝐴4 ⊆ 𝐴5 = 0). Also, we have the
+relation
+                           (𝑅◦𝑆) ∗ 𝑆 = (𝑆◦𝑅◦𝑄) ∗ 𝑆,
+hence,
+                𝑅 ∗ (𝑆 ∗ 𝑆) = 𝑆 ∗ (𝑅 ∗ 𝑆) + 𝑆 ∗ (𝑄 ∗ 𝑆) + 𝑄 ∗ 𝑆.
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS          503
+
+  Observe that 𝑅 ∗ (𝑆 ∗ 𝑆) ⊆ 𝐴2 ∗ 𝐴2 . Recall that 𝐴2 is a commutative ring by
+Lemma 4.10 and 𝐴2 = 𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝐴4 , hence
+  𝐴2 ∗ 𝐴2 = 𝐴2 ∗ (𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝐴4 ) ⊆ 𝔽𝑝 𝑄 ∗ 𝑄 + 𝔽𝑝 𝐴2 ∗ 𝑃 + 𝐴2 ∗ 𝐴4 = 0
+(since 𝑄 ∗ 𝑄 = 0 by Lemma 4.11 and 𝐴2 is commutative). Next, by the above
+we have
+              𝑆 ∗ (𝑅 ∗ 𝑆) = 𝑆 ∗ (𝑆 ∗ 𝑅 + 𝑆 ∗ 𝑄 + 𝑅 ∗ 𝑄 + 𝑄).
+Therefore,
+      𝑆 ∗ 𝑄 + 𝑄 ∗ 𝑆 = −(𝑆 ∗ (𝑆 ∗ 𝑅) + 𝑆 ∗ (𝑆 ∗ 𝑄) + 𝑆 ∗ (𝑄 ∗ 𝑆)) ⊆ 𝐴4 .
+Recall from the beginning of this proof that 𝑄 ∗ 𝑆 − 𝑆 ∗ 𝑄 = 𝑆 ∗ 𝑃 + 𝑃, so
+                                         −𝑃
+                                 𝑆∗𝑄∈       + 𝐴4 .
+                                          2
+                     𝑃
+Therefore, 𝑄 ∗ 𝑆 ∈ + 𝐴4 .
+                    2
+  Recall the relation
+                      (𝑄◦𝑆) ∗ 𝑆 = (𝑆◦𝑄◦𝑃) ∗ 𝑆.
+Hence, 𝑄 ∗ (𝑆 ∗ 𝑆) = 𝑆 ∗ (𝑄 ∗ 𝑆) + 𝑃 ∗ 𝑆, and by the above
+                      𝑄 ∗ (𝑆 ∗ 𝑆) ⊆ 𝑄 ∗ 𝐴2 ⊆ 𝐴2 ∗ 𝐴2 = 0,
+                             𝑃             𝑆∗𝑃               3
+and 𝑆 ∗ (𝑄 ∗ 𝑆) ∈ 𝑆 ∗ ( + 𝐴4 ) =              . Therefore, 𝑆 ∗ 𝑃 = 0. Hence
+                              2             2             2
+𝑃 ∗ 𝐴 = 𝐴 ∗ 𝑃 = 0 so 𝔽𝑝 𝑃 is an ideal in 𝐴. Consequently, 𝐴∕𝔽𝑝 𝑃 is right
+nilpotent, so 𝐴 is right nilpotent, a contradiction.                     
+
+4.3. The case when 𝑸 ∈ 𝑨𝟑 .
+Theorem 4.13. Let 𝑝 > 3 be a prime number. Let 𝐴 be an 𝔽𝑝 -brace whose mul-
+tiplicative group (𝐴, ◦) is the group XV. Suppose that 𝑄 ∈ 𝐴3 . Then 𝐴 is a right
+nilpotent brace.
+Proof. Notice that the set of all products 𝑃𝑖 ◦𝑄𝑗 has cardinality 𝑝2 , and we know
+from Proposition 4.7 that 𝐴3 = 𝐴 ∗ (𝐴 ∗ 𝐴) has cardinality 𝑝2 . Moreover,
+𝑃𝑖 ◦𝑄𝑗 ∈ 𝐴3 (where 𝑃𝑗 = 𝑃◦ ⋯ ◦𝑃, where 𝑃 appears 𝑗 times in this product).
+So 𝐴3 = {𝑃𝑖 ◦𝑄𝑗 ∶ 𝑖, 𝑗 ≤ 𝑝}. Since 𝐴4 ⊆ 𝐴3 , it follows that there are integers 𝑖, 𝑗
+and 0 ≠ 𝐸 ∈ 𝐴4 such that
+                                    𝐸 = 𝑃𝑖 ◦𝑄𝑗 .
+  We will now consider two cases.
+  Case 1. Either 𝑆 ∈ 𝐴2 or both 𝑆, 𝑅 ∉ 𝐴2 . Because 𝐴∕𝐴2 has dimension 1.
+Then there is 0 < 𝑗 ≤ 𝑝 such that
+                                   𝑆◦𝑅𝑗 ∈ 𝐴2 .
+Denote 𝑍 = 𝑆◦𝑅𝑗 .
+  By the group relations, we have
+                                 𝑄◦𝑍 = 𝑍◦𝑄◦𝑃.
+504              D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+Recall that 𝑄 ∗ 𝑃 = 0, so
+
+                            𝑄 ∗ 𝑍 = 𝑍 ∗ 𝑄 + 𝑍 ∗ 𝑃 + 𝑃.
+
+Notice 𝑄 ∗ 𝑍 ∈ 𝑄 ∗ 𝐴2 ⊆ 𝐴4 and 𝑍 ∗ 𝑄 ⊆ 𝑍 ∗ 𝐴3 ⊆ 𝐴4 , 𝑍 ∗ 𝑃 ⊆ 𝑍 ∗ 𝐴3 ⊆ 𝐴4 ,
+so
+                                     𝑃 ∈ 𝐴4 .
+But 𝑃 ∈ 𝐴4 implies that 𝐴 is nilpotent, as shown previously.
+  Case 2. Suppose 𝑆 ∈ 𝐴, 𝑆 ∉ 𝐴2 and 𝑅 ∈ 𝐴2 .
+  Observe that the group relation
+
+                                  𝑄◦𝑆 = 𝑆◦𝑄◦𝑃
+
+implies
+                            𝑄 ∗ 𝑆 = 𝑆 ∗ 𝑄 + 𝑆 ∗ 𝑃 + 𝑃,
+since 𝑄 ∗ 𝑃 = 0 by Corollary 4.6. Therefore,
+
+             𝑆 ∗ (𝑄 ∗ 𝑆) = 𝑆 ∗ (𝑆 ∗ 𝑄) + 𝑆 ∗ (𝑆 ∗ 𝑃) + 𝑆 ∗ 𝑃 = 𝑆 ∗ 𝑃
+
+since
+                      𝑆 ∗ (𝑆 ∗ 𝑄) ⊆ 𝑆 ∗ (𝑆 ∗ 𝐴3 ) ⊆ 𝐴5 = 0.
+Observe now that we also have a relation
+
+                            (𝑄◦𝑆) ∗ 𝑆 = (𝑆◦𝑄◦𝑃) ∗ 𝑆,
+
+which implies 𝑄 ∗ (𝑆 ∗ 𝑆) = 𝑆 ∗ (𝑄 ∗ 𝑆) + 𝑃 ∗ 𝑆. By the above, 𝑄 ∗ (𝑆 ∗
+𝑆) = 𝑆 ∗ (𝑄 ∗ 𝑆) + 𝑃 ∗ 𝑆 = 2𝑆 ∗ 𝑃 (since 𝑃 ∗ 𝑆 = 𝑆 ∗ 𝑃). Notice that if
+𝑆 ∗ 𝑃 = 0 then 𝑃 ∗ 𝐴 = 𝐴 ∗ 𝑃 = 0 and similarly as in previous section it
+implies that 𝐴 is right nilpotent. If 𝑆 ∗ 𝑃 ≠ 0, then 𝑄 ∗ (𝑆 ∗ 𝑆) ≠ 0. Notice that
+𝐴2 = 𝔽𝑝 𝑅 + 𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝐴4 . Therefore,
+
+        𝑄 ∗ (𝑆 ∗ 𝑆) ⊆ 𝑄 ∗ 𝐴2 = 𝔽𝑝 𝑄 ∗ 𝑅 + 𝔽𝑝 𝑄 ∗ 𝑄 + 𝔽𝑝 𝑄 ∗ 𝑃 = 𝔽𝑝 𝑄 ∗ 𝑅,
+
+since 𝑄 ∈ 𝐴3 . It follows that 𝑄 ∗ 𝑅 ≠ 0.
+   Note that because 𝑅◦𝑄 = 𝑄◦𝑅 we get 𝑄 ∗ 𝑅 = 𝑅 ∗ 𝑄 ≠ 0. Observe that by
+the above there are 𝑖, 𝑗 such that 𝑄𝑖 ◦𝑃𝑗 = 𝐸 ∈ 𝐴4 , where 𝑖 is a natural number
+not divisible by 𝑝, since 𝑃 ∉ 𝐴4 , as 𝑃 ∈ 𝐴4 would imply that 𝐴 is a right
+nilpotent brace (for example by the first Lemma in Section 8). Observe that it
+follows that 𝐸 ∗ 𝑅 = (𝑄𝑖 ◦𝑃𝑗 ) ∗ 𝑅 = 𝑖(𝑄 ∗ 𝑅) ≠ 0 (since 𝑃 ∗ 𝑅 ⊆ 𝑃 ∗ 𝐴2 = 0).
+On the other hand, since 𝑅, 𝑃, 𝑄 ∈ 𝐴2 and 𝐴2 has cardinality 𝑝3 then 𝐴2 is
+commutative. Therefore, 𝐸 ∗ 𝐴2 = 𝐴2 ∗ 𝐸 ⊆ 𝐴2 ∗ 𝐴4 ⊆ 𝐴5 = 0, which is a
+contradiction. Notice that 𝑅 ∈ 𝐴2 so 𝐸 ∗ 𝐴2 = 0 gives 𝐸 ∗ 𝑅 = 0. However, we
+have shown that 𝐸 ∗ 𝑅 is not zero above. This gives a contradiction.          
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS                    505
+
+4.4. The case when 𝑺 ∈ 𝑨𝟒 .
+Proposition 4.14. Let 𝑝 > 3 be a prime number. Let 𝐴 be an 𝔽𝑝 -brace whose
+multiplicative group (𝐴, ◦) is the group XV. Then (𝐴, ◦) is generated by elements
+𝑃, 𝑄, 𝑅, 𝑆 which satisfy relations from group XV. Moreover, the following relations
+hold for 𝑎 ∈ {𝑃, 𝑄, 𝑅, 𝑆}.
+    (1)
+                   𝑄◦𝑆 = 𝑆◦𝑄◦𝑃, (𝑄◦𝑆) ∗ 𝑎 = (𝑆◦𝑄◦𝑃) ∗ 𝑎
+    (2)
+                       𝑄◦𝑅 = 𝑅◦𝑄, (𝑄◦𝑅) ∗ 𝑎 = (𝑅◦𝑄) ∗ 𝑎
+    (3)
+                      𝑃◦𝑆 = 𝑆◦𝑃, 𝑃◦𝑄 = 𝑄◦𝑃, 𝑃◦𝑅 = 𝑅◦𝑃,
+(𝑃◦𝑆) ∗ 𝑎 = (𝑆◦𝑃) ∗ 𝑎 = 0, (𝑃◦𝑄) ∗ 𝑎 = (𝑄◦𝑃) ∗ 𝑎 = 0, (𝑃◦𝑅) ∗ 𝑎 = (𝑅◦𝑃) ∗ 𝑎
+    (4)
+                    𝑅◦𝑆 = 𝑆◦𝑅◦𝑄, (𝑅◦𝑆) ∗ 𝑎 = (𝑆◦𝑅◦𝑄) ∗ 𝑎
+    (5)
+   𝑃𝑝 = 𝑄𝑝 = 𝑅𝑝 = 𝑆 𝑝 = 0, (𝑃𝑝 ) ∗ 𝑎 = (𝑄𝑝 ) ∗ 𝑎 = (𝑅𝑝 ) ∗ 𝑎 = (𝑆 𝑝 ) ∗ 𝑎 = 0
+Proof. It follows from the fact that group XV is the multiplicative group (𝐴, ◦)
+of our brace. Recall that 0 is the identity element of the additive group (𝐴, +)
+and also the identity element of the multiplicative group (𝐴, ◦) (these identity
+elements coincide in every brace).                                            
+Proposition 4.15. Let 𝑝 > 3 be a prime number. Let (𝐴, +, ◦) be an 𝔽𝑝 -brace
+which is not right nilpotent with multiplicative group XV. Then (𝐴, ◦) is generated
+by elements 𝑃, 𝑄, 𝑅, 𝑆 which satisfy relations from group XV. In addition, we have
+the following.
+    (1) 𝑆 ∈ 𝐴4 , 𝑃 ∈ 𝐴3 , 𝑃 ∉ 𝐴4 , 𝑄 ∈ 𝐴2 . Moreover, 𝑄 ∗ 𝐴𝑖 ⊆ 𝐴𝑖+2 , 𝑃 ∗ 𝐴𝑖 ⊆
+         𝐴𝑖+3 .
+    (2) 𝑄 ∉ 𝐴3 , 𝑅 ∈ 𝐴, 𝑅 ∉ 𝐴2 .
+    (3) 𝑄 ∗ 𝑃 = 0, 𝑃 ∗ 𝑃 = 0, 𝑆 ∗ 𝑃 = 0, 𝑅 ∗ 𝑃 = 𝑦𝑆 for some 𝑦 ∈ 𝔽𝑝 with
+         𝑦 ≠ 0.
+    (4) 𝑄 ∗ 𝑆 = 0, 𝑃 ∗ 𝑆 = 0, 𝑆 ∗ 𝑆 = 0, 𝑅 ∗ 𝑆 = 0.
+    (5) 𝑄 ∗ 𝑄 = 𝛼𝑆, 𝑃 ∗ 𝑄 = 0, 𝑆 ∗ 𝑄 = 𝛾𝑃, 𝑅 ∗ 𝑄 = 𝑧1 𝑃 + 𝑧𝑆 for some
+         𝛼, 𝛾, 𝑧, 𝑧1 ∈ 𝔽𝑝 .
+    (6) 𝑄 ∗ 𝑅 = 𝑧1 𝑃 + 𝑧𝑆, 𝑃 ∗ 𝑅 = 𝑦𝑆 for some 𝑧, 𝑧1 , 𝑦 ∈ 𝔽𝑝 with 𝑦 ≠ 0.
+    (7) 𝑆 ∗ 𝑅 = 𝑗 ′ 𝑄 + 𝑖 ′ 𝑃 + 𝑘 ′ 𝑆, 𝑅 ∗ 𝑅 = 𝑗𝑄 + 𝑖𝑃 + 𝑘𝑆 for some 𝑗, 𝑗 ′ , 𝑖, 𝑖 ′ , 𝑘, 𝑘 ′ ∈
+         𝔽𝑝 .
+    (8) 𝛾 = −1.
+    (9) 𝛼 = −𝑦.
+   (10) 𝑗 ′ = −1.
+   (11) 𝑧1 = 0 and 𝑗 = 0.
+   (12) 2𝑧 = 𝑦, 𝑖 ′ = 1, 𝑘 ′ = −𝑧.
+Proof.        (1) It follows from Corollary 4.5, Proposition 4.7, Proposition 4.9.
+506                D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+       (2) It follows from Proposition 4.12 and Theorem 4.13.
+       (3) It follows from Corollary 4.5 that 𝑄 ∗ 𝑃, 𝑃 ∗ 𝑃, 𝑆 ∗ 𝑃 ∈ 𝐴5 = 0 (since
+           𝑆 ∗ 𝑃 = 𝑃 ∗ 𝑆 as 𝑆◦𝑃 = 𝑃◦𝑆). Moreover, 𝑅 ∗ 𝑃 ∈ 𝐴4 = 𝔽𝑝 𝑆, which
+           gives the conclusion.
+       (4) It follows from the fact that 𝑆 ∈ 𝐴4 so 𝐴 ∗ 𝑆 = 0.
+       (5) By Corollary 4.5, we have that 𝑃 ∗ 𝑄 ∈ 𝐴5 = 0, 𝑄 ∗ 𝑄 ∈ 𝐴4 = 𝔽𝑝 𝑆.
+           Similarly, since 𝑄 ∈ 𝐴2 , then 𝑅 ∗ 𝑄 ∈ 𝐴3 = 𝔽𝑝 𝑃 + 𝔽𝑝 𝑆, by item 1
+           above. The fact that 𝑆 ∗ 𝑄 = 𝛾𝑃 follows from Proposition 4.8.
+       (6) Since 𝑃 is central in the group XV it follows that 𝑃 ∗ 𝑅 = 𝑅 ∗ 𝑃 = 𝑦𝑆
+           by item 3 above. Similarly, 𝑄 ∗ 𝑅 = 𝑅 ∗ 𝑄 since 𝑄◦𝑅 = 𝑅◦𝑄, and the
+           result follows from item 5 above.
+       (7) Notice that 𝑆 ∗ 𝑅, 𝑅 ∗ 𝑅 ∈ 𝐴2 = 𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝔽𝑝 𝑆 by item 1.
+       (8) Consider the relation
+                                   𝑆◦𝑄◦𝑃 = 𝑄◦𝑆.
+           It can be rewritten as 𝑆 ∗ 𝑄 + 𝑃 + 𝑆 ∗ 𝑃 = 𝑄 ∗ 𝑆 = 0 since 𝑄 ∗ 𝑆 ⊆ 𝐴 ∗
+           𝐴4 ⊆ 𝐴5 = 0. This gives 𝛾 = −1.
+       (9) Consider the relation
+                             (𝑅◦𝑆) ∗ 𝑄 = (𝑆◦𝑅◦𝑄) ∗ 𝑄.
+           We get 𝑄 ∗ 𝑄 + 𝑆 ∗ (𝑅 ∗ 𝑄) = 𝑅 ∗ (𝑆 ∗ 𝑄), hence 𝛼 = −𝑦.
+      (10) Consider the relation (𝑆◦𝑄◦𝑃) ∗ 𝑅 = (𝑄◦𝑆) ∗ 𝑅 which is an implica-
+           tion of one of the group relations in group XV. We can rewrite it as
+                          𝑆 ∗ (𝑄 ∗ 𝑅) + 𝑃 ∗ 𝑅 = 𝑄 ∗ (𝑆 ∗ 𝑅).
+           This implies −𝑦 = −𝛼𝑗 ′ . We know that 𝑦 ≠ 0 since 𝐴 is not right
+           nilpotent, and 𝛼 = −𝑦, hence 𝑗 ′ = −1.
+      (11) We will first show that 𝑗 = −𝑧1 . Consider the group relation 𝑄◦𝑅 =
+           𝑅◦𝑄, it implies (𝑄◦𝑅) ∗ 𝑅 = (𝑅◦𝑄) ∗ 𝑅. This implies 𝑄 ∗ (𝑅 ∗ 𝑅) =
+           𝑅 ∗ (𝑄 ∗ 𝑅), hence 𝑗𝛼 = 𝑧1 𝑦. Since 𝑦 ≠ 0 and 𝑦 = −𝛼 we get 𝑧1 = −𝑗.
+               We will now to show that 𝑧1 = 0. Consider the relation (𝑆◦𝑅◦𝑄) ∗
+           𝑅 = (𝑅◦𝑆) ∗ 𝑅. This implies 𝑆 ∗ (𝑅 ∗ 𝑅) + 𝑄 ∗ 𝑅 + 𝑅 ∗ (𝑄 ∗ 𝑅) = 𝑅 ∗
+           (𝑆 ∗ 𝑅) since 𝑆 ∗ (𝑄 ∗ 𝑅) ⊆ 𝐴5 = 0. We can consider the component
+           corresponding to 𝑃 in this equation. This implies −𝑗 + 𝑧1 = 𝑗 ′ 𝑧1 , and
+           since 𝑗 ′ = −1 we get 𝑗 = 2𝑧1 . Since we previously showed that 𝑧1 = −𝑗
+           it follows that 𝑧1 = 𝑗 = 0.
+      (12) Consider the equation 𝑆 ∗ (𝑅 ∗ 𝑅) + 𝑄 ∗ 𝑅 + 𝑅 ∗ (𝑄 ∗ 𝑅) = 𝑅 ∗ (𝑆 ∗ 𝑅)
+           from the previous sub-point. Comparing the component at 𝑆 in this
+           equation we get 𝑧 = 𝑧𝑗 ′ + 𝑖 ′ 𝑦, hence 2𝑧 = 𝑖 ′ 𝑦.
+               We will now show that 𝑖 ′ = 1 hence 2𝑧 = 𝑦. We will now consider
+           the relation
+                                    𝑆◦𝑅◦𝑄 = 𝑅◦𝑆.
+           This implies
+                           𝑆 ∗𝑅+𝑆 ∗𝑄+𝑅 ∗𝑄+𝑄=0
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS                507
+
+        since 𝑆 ∗ (𝑅 ∗ 𝑄) ⊆ 𝑆 ∗ 𝐴3 = 0 and 𝑅 ∗ 𝑆 ⊆ 𝐴 ∗ 𝐴4 = 𝐴5 = 0.
+        Comparing the component at 𝑃 in this equation we get 𝑖 ′ −1 = 0, hence
+        𝑖 ′ = 1, as required. Comparing component at 𝑆 we get 𝑘 ′ + 𝑧 = 0 hence
+        𝑘′ = −𝑧.
+                                                                             
+Remark 4.16. A general comment on Proposition 4.15 to explain the approach.
+In first subpoint we show that
+                            𝐴 = 𝔽𝑝 𝑃 + 𝔽𝑝 𝑅 + 𝔽𝑝 𝑆 + 𝔽𝑝 𝑄
+and then so we can write each product, for example 𝑄 ∗ 𝑄 as 𝑖𝑃 + 𝑗𝑅 + 𝑘𝑆 + 𝑙𝑄
+for some 𝑖, 𝑗, 𝑘, 𝑙 in 𝔽𝑝 . Next we substitute it to the equations, which need to hold
+in the brace, listed in Theorem 4.13, and then list the consequences.
+
+5. The braces are well-defined
+5.1. The map 𝝀. We now consider how our operation ∗ looks in our brace.
+In the previous section we showed that if (𝐴, +, ◦) is brace which is not right
+nilpotent whose group (𝐴, ◦) is the group XV, then
+                  𝑃 ∗ 𝑃 = 0, 𝑃 ∗ 𝑄 = 0, 𝑃 ∗ 𝑅 = 𝑦𝑆, 𝑃 ∗ 𝑆 = 0,
+              𝑄 ∗ 𝑃 = 0, 𝑄 ∗ 𝑄 = −𝑦𝑆, 𝑄 ∗ 𝑅 = 2−1 𝑦𝑆, 𝑄 ∗ 𝑆 = 0,
+           𝑅 ∗ 𝑃 = 𝑦𝑆, 𝑅 ∗ 𝑄 = 2−1 𝑦𝑆, 𝑅 ∗ 𝑅 = 𝑖𝑃 + 𝑘𝑆, 𝑅 ∗ 𝑆 = 0,
+        𝑆 ∗ 𝑃 = 0, 𝑆 ∗ 𝑄 = −𝑃, 𝑆 ∗ 𝑅 = −𝑄 + 𝑃 − 2−1 𝑦𝑆, 𝑆 ∗ 𝑆 = 0.
+where 𝑦, 𝑖, 𝑘 ∈ 𝔽𝑝 with 𝑦 ≠ 0.
+  Therefore, we get the formulas for the 𝜆 maps in 𝐴, where 𝜆𝑎 (𝑏) = 𝑎 ∗ 𝑏 + 𝑏.
+               𝜆𝑃 (𝑃) = 𝑃, 𝜆𝑃 (𝑄) = 𝑄, 𝜆𝑃 (𝑅) = 𝑅 + 𝑦𝑆, 𝜆𝑃 (𝑆) = 𝑆,
+         𝜆𝑄 (𝑃) = 𝑃, 𝜆𝑄 (𝑄) = 𝑄 − 𝑦𝑆, 𝜆𝑄 (𝑅) = 𝑅 + 2−1 𝑦𝑆, 𝜆𝑄 (𝑆) = 𝑆,
+    𝜆𝑅 (𝑃) = 𝑃 + 𝑦𝑆, 𝜆𝑅 (𝑄) = 𝑄 + 2−1 𝑦𝑆, 𝜆𝑅 (𝑅) = 𝑅 + 𝑖𝑃 + 𝑘𝑆, 𝜆𝑅 (𝑆) = 𝑆,
+     𝜆𝑆 (𝑃) = 𝑃, 𝜆𝑆 (𝑄) = 𝑄 − 𝑃, 𝜆𝑆 (𝑅) = 𝑅 − 𝑄 + 𝑃 − 2−1 𝑦𝑆, 𝜆𝑆 (𝑆) = 𝑆.
+  Let (𝐵′ , +) be the abelian group generated by elements 𝑄′ , 𝑃′ , 𝑅′ , 𝑆 ′ , 1 where
+every element has order 𝑝, so 𝑝𝑄′ = 𝑝𝑄′ = 𝑝𝑅′ = 𝑝𝑆 ′ = 𝑝1 = 0. Therefore,
+                      𝐵′ = 𝔽𝑝 𝑃′ + 𝔽𝑝 𝑄′ + 𝔽𝑝 𝑅′ + 𝔽𝑝 𝑆 ′ + 𝔽𝑝 1,
+where 1 is some element of 𝐵.
+   Let (𝐵, +) be the subgroup of (𝐵′ , +) generated by elements 𝑃′ , 𝑄′ , 𝑅′ , 𝑆 ′ . De-
+fine the homomorphisms 𝜆𝑃 , 𝜆𝑄 , 𝜆𝑅 , 𝜆𝑆 from (𝐵′ , +) to (𝐵′ , +) by using the table
+for 𝜆 maps in 𝐵 above, and by setting 𝜆𝑔 (1) = 𝑔′ + 1 for 𝑔 ∈ {𝑃, 𝑄, 𝑅, 𝑆}.
+   So we have the following relations which depend on parameters 𝑖, 𝑘, 𝑦 ∈ 𝔽𝑝
+with 𝑦 ≠ 0 given below.
+            𝜆𝑃 (𝑃′ ) = 𝑃′ , 𝜆𝑃 (𝑄′ ) = 𝑄′ , 𝜆𝑃 (𝑅′ ) = 𝑅′ + 𝑦𝑆 ′ , 𝜆𝑃 (𝑆 ′ ) = 𝑆 ′ ,
+                                    𝜆𝑃 (1) = 𝑃′ + 1,
+508                   D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+
+
+
+        𝜆𝑄 (𝑃′ ) = 𝑃′ , 𝜆𝑄 (𝑄′ ) = 𝑄′ − 𝑦𝑆 ′ , 𝜆𝑄 (𝑅′ ) = 2−1 𝑦𝑆 ′ + 𝑅′ , 𝜆𝑄 (𝑆 ′ ) = 𝑆 ′ ,
+                                         𝜆𝑄 (1) = 𝑄′ + 1,
+
+
+            𝜆𝑅 (𝑃′ ) = 𝑃′ + 𝑦𝑆 ′ ,𝜆𝑅 (𝑄′ ) = 𝑄′ + 2−1 𝑦𝑆 ′ , 𝜆𝑅 (𝑅′ ) = 𝑖𝑃′ + 𝑘𝑆 ′ + 𝑅′ ,
+                                  𝜆𝑅 (𝑆 ′ ) = 𝑆 ′ , 𝜆𝑅 (1) = 𝑅′ + 1,
+
+
+             𝜆𝑆 (𝑃′ ) = 𝑃′ , 𝜆𝑆 (𝑄′ ) = 𝑄′ − 𝑃′ , 𝜆𝑆 (𝑅′ ) = 𝑅′ − 𝑄′ + 𝑃′ − 2−1 𝑦𝑆 ′ ,
+                                   𝜆𝑆 (𝑆 ′ ) = 𝑆 ′ , 𝜆𝑆 (1) = 𝑆 ′ + 1.
+Theorem 5.1. Let 𝑝 > 3 be a prime number and 𝑖, 𝑘, 𝑦 ∈ 𝔽𝑝 with 𝑦 ≠ 0.
+Let (𝐵′ , +) and (𝐵, +) be defined as above. Then both (𝐵′ , +) and (𝐵, +) are
+linear spaces over the field 𝔽𝑝 . Let linear maps 𝜆𝑔 ∶ (𝐵′ , +) ⟶ (𝐵′ , +) for
+𝑔 ∈ {𝑅, 𝑄, 𝑃, 𝑆} be defined by lines 1-4 above. Then the following relations hold
+for any 𝑎 ∈ 𝐵′ .
+    (1)
+                           𝜆𝑄 (𝜆𝑆 (𝑎)) = 𝜆𝑆 (𝜆𝑄 (𝜆𝑃 (𝑎))),
+      (2)
+                                     𝜆𝑄 (𝜆𝑅 (𝑎)) = 𝜆𝑅 (𝜆𝑄 (𝑎)),
+      (3)
+      𝜆𝑃 (𝜆𝑆 (𝑎)) = 𝜆𝑆 (𝜆𝑃 (𝑎)), 𝜆𝑃 (𝜆𝑄 (𝑎)) = 𝜆𝑄 (𝜆𝑃 (𝑎)), 𝜆𝑃 (𝜆𝑅 (𝑎)) = 𝜆𝑅 (𝜆𝑃 (𝑎)),
+      (4)
+                                  𝜆𝑅 (𝜆𝑆 (𝑎)) = 𝜆𝑆 (𝜆𝑅 (𝜆𝑄 (𝑎))),
+      (5)
+                              𝑝          𝑝          𝑝          𝑝
+                            𝜆𝑃 (𝑎) = 𝜆𝑄 (𝑎) = 𝜆𝑅 (𝑎) = 𝜆𝑆 (𝑎) = 𝑎.
+Therefore, the maps 𝜆𝑔 ∶ (𝐵′ , +) ⟶ (𝐵′ , +) defined inductively using the for-
+mula
+                            𝜆𝑔◦𝑔′ (𝑎) = 𝜆𝑔 (𝜆𝑔′ (𝑎))
+for 𝑔, 𝑔′ ∈ (𝐺, ◦) and 𝑎 ∈ (𝐵′ , +) are well defined automorphisms of 𝐵′ . More-
+over, maps 𝜆𝑔 ∶ 𝐵 ⟶ 𝐵 with the domain restricted to 𝐵 are automorphisms of
+(𝐵, +).
+Proof. To check these properties we will present the 𝜆 maps in matrix form,
+and the above properties can be checked by multiplying the matrices 𝑀𝑔 . Write
+the matrices of the linear maps 𝜆𝑔 for 𝑔 ∈ {𝑅, 𝑄, 𝑃, 𝑆} in the base 𝑒1 = 1, 𝑒2 =
+𝑅′ , 𝑒3 = 𝑄′ , 𝑒4 = 𝑃′ , 𝑒5 = 𝑆 ′ where 𝑒𝑖 denotes the vector with all entries zero
+except of the 𝑖-th entry which is 1. Therefore, we have matrices 𝑀𝑖 of dimension
+5 such that 𝜆𝑔 (𝑒𝑗 ) = 𝑀𝑔 𝑒𝑗 for each 𝑔 ∈ {𝑅, 𝑄, 𝑃, 𝑆} where 𝑒1 = 1, 𝑒2 = 𝑅′ , 𝑒3 =
+𝑄′ , 𝑒4 = 𝑃′ , 𝑒5 = 𝑆 ′ .
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS             509
+
+  We have the matrices
+
+            ⎡1     0    0   0 0⎤                            ⎡1   0  0 0 0⎤
+            ⎢0     1    0   0 0⎥                            ⎢0   1  0 0 0⎥
+       𝑀𝑃 = ⎢0     0    1   0 0⎥                      𝑀𝑄 = ⎢1    0  1 0 0⎥
+            ⎢                  ⎥                            ⎢            ⎥
+            ⎢1     0    0   1 0⎥                            ⎢0   0  0 1 0⎥
+                                                                −1
+            ⎣0     𝑦    0   0 1⎦                            ⎣0 2 𝑦 −𝑦 0 1⎦
+            ⎡1     0     0    0 0⎤                        ⎡1    0   0 0 0⎤
+            ⎢1     1     0    0 0⎥                        ⎢0    1   0 0 0⎥
+       𝑀𝑅 = ⎢0     0     1    0 0⎥                   𝑀𝑆 = ⎢0   −1   1 0 0⎥
+            ⎢                    ⎥                        ⎢              ⎥
+            ⎢0     𝑖     0    1 0⎥                        ⎢0    1  −1 1 0⎥
+            ⎣0     𝑘    2−1 𝑦 𝑦 1⎦                              −1
+                                                          ⎣1 −2 𝑦 0 0 1⎦
+observe now that, by direct calculation, we have
+                       𝑀𝑄 𝑀𝑆 = 𝑀𝑆 𝑀𝑄 𝑀𝑃 , 𝑀𝑄 𝑀𝑅 = 𝑀𝑅 𝑀𝑄 ,
+
+              𝑀𝑃 𝑀𝑆 = 𝑀𝑆 𝑀𝑃 , 𝑀𝑃 𝑀𝑄 = 𝑀𝑄 𝑀𝑃 , 𝑀𝑃 𝑀𝑅 = 𝑀𝑅 𝑀𝑃 ,
+
+                                    𝑀𝑅 𝑀𝑆 = 𝑀𝑆 𝑀𝑅 𝑀𝑄 ,
+                                𝑝        𝑝       𝑝       𝑝
+                            𝑀𝑃 = 𝑀𝑄 = 𝑀𝑅 = 𝑀𝑆 = 𝐼𝑑,
+where 𝐼𝑑 is the identity matrix. This proves the first part of our theorem.
+   We can now define maps 𝜆𝑔 ∶ (𝐵′ , +) ⟶ (𝐵′ , +) inductively, using the
+formula
+                                    𝜆𝑔◦𝑔′ (𝑎) = 𝜆𝑔 (𝜆𝑔′ (𝑎)),
+for 𝑔, 𝑔′ ∈ (𝐺, ◦) and 𝑎 ∈ (𝐵′ , +). Observe that the maps 𝜆𝑔 are group ho-
+momorphisms of (𝐵′ , +) so they are linear maps over the field 𝔽𝑝 , so 𝜆𝑔 (𝑎 +
+𝑏) = 𝜆𝑎 (𝑏) + 𝜆𝑔 (𝑏). This is because they are defined as compositions of maps
+𝜆𝑃 , 𝜆𝑄 , 𝜆𝑅 , 𝜆𝑆 which are homomorphisms of (𝐵′ , +), so
+            𝜆𝑃 (𝑎 + 𝑏) = 𝜆𝑃 (𝑎) + 𝜆𝑃 (𝑏), 𝜆𝑄 (𝑎 + 𝑏) = 𝜆𝑄 (𝑎) + 𝜆𝑄 (𝑏),
+            𝜆𝑅 (𝑎 + 𝑏) = 𝜆𝑅 (𝑎) + 𝜆𝑅 (𝑏), 𝜆𝑆 (𝑎 + 𝑏) = 𝜆𝑆 (𝑎) + 𝜆𝑆 (𝑏).
+  Notice that maps 𝜆𝑃 , 𝜆𝑄 , 𝜆𝑅 , 𝜆𝑆 are linear maps and can be represented by
+matrices, therefore their compositions are also linear maps. Consequently, for
+any 𝑔, ℎ, 𝑗 ∈ 𝐺
+               𝜆(𝑔◦ℎ)◦𝑗 = 𝜆𝑔◦ℎ 𝜆𝑗 = (𝜆𝑔 𝜆ℎ )𝜆𝑗 = 𝜆𝑔 (𝜆ℎ 𝜆𝑗 ) = 𝜆𝑔◦(ℎ◦𝑗) .
+   We will now show that maps 𝜆𝑔 are automorphisms of 𝐵′ . Notice that the
+images of maps 𝜆𝑃 , 𝜆𝑄 , 𝜆𝑅 , 𝜆𝑆 are subsets of (𝐵′ , +), and that the kernels of these
+maps are zero. Therefore, the maps 𝜆𝑃 , 𝜆𝑄 , 𝜆𝑅 , 𝜆𝑆 with the domain restricted to
+(𝐵, +) as maps from (𝐵, +) to (𝐵, +) are automorphisms of (𝐵, +). It follows that
+maps 𝜆𝑔 with the domain restricted to (𝐵, +) for 𝑔 ∈ 𝐺 are also automorphisms
+of (𝐵, +) because they are compositions of maps 𝜆𝑃 , 𝜆𝑄 , 𝜆𝑅 , 𝜆𝑆 .                  
+510               D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+5.2. The map f. Let 𝐵, 𝐵′ and maps 𝜆𝑔 ∶ (𝐵′ , +) ⟶ (𝐵′ , +) be defined as in
+Theorem 5.1 for some 𝑖, 𝑘, 𝑦 ∈ 𝔽𝑝 with 𝑦 ≠ 0 and 𝑝 > 3. We will consider
+(𝐵, +) as a set 𝐵. Define the map 𝑓 ∶ 𝐺 ⟶ 𝐵 by
+
+                                 𝑓(𝑔) = 𝜆𝑔 (1) − 1,
+
+for 𝑔 ∈ (𝐺, ◦).
+
+Theorem 5.2. Let 𝐵, 𝐵′ and maps 𝜆𝑔 ∶ (𝐵′ , +) ⟶ (𝐵′ , +) be defined as in
+Theorem 5.1 for some 𝑖, 𝑘, 𝑦 ∈ 𝔽𝑝 with 𝑦 ≠ 0 and 𝑝 > 3. Then the map 𝑓 ∶
+𝐺 ⟶ 𝐵 defined as
+                                 𝑓(𝑔) = 𝜆𝑔 (1) − 1
+for 𝑔 ∈ (𝐺, ◦) is a bijective function from 𝐺 to 𝐵.
+
+Proof. We will now show that 𝑓 is a bijective function. Observe that groups 𝐺
+and (𝐵, +) have the same cardinality, so to show that 𝑓 is a bijective function it
+suffices to show that 𝑓 is injective.
+   Suppose on the contrary that 𝑓 is not bijective. Then we would have 𝑓(𝑔) =
+𝑓(ℎ) for some 𝑔, ℎ ∈ 𝐺. This implies 𝜆𝑔 (1) = 𝜆ℎ (1). Let 𝑔′ = ℎ−1 ◦𝑔 so 𝜆𝑔′ (1) =
+1. Every element of 𝐺 can be written as a product of elements of some powers of
+elements 𝑃, 𝑄, 𝑅, 𝑆. Therefore, there are some integers 0 ≤ 𝛼, 𝛽, 𝛾, 𝜉 < 𝑝 such
+that
+                                𝑔′ = 𝑅𝛾 ◦𝑄𝛽 ◦𝑃𝛼 ◦𝑆 𝜉 .
+  Notice that it follows from Theorem 5.1 (using the fact that 𝜆𝑎◦𝑏 (𝑐) = 𝜆𝑎 𝜆𝑏 (𝑐)
+several times) that 𝜆𝑅𝛾 ◦𝑄𝛽 ◦𝑃𝛼 ◦𝑆𝜉 (1)−1 = 𝛾𝑅′ +𝐶 where 𝐶 ∈ 𝔽𝑝 𝑄′ +𝔽𝑝 𝑃′ +𝔽𝑝 𝑆 ′ ,
+hence
+                               𝜆𝑔′ (1) − 1 = 𝛾𝑅′ + 𝐶.
+Notice that 𝜆𝑔′ (1) = 1 implies 𝛾 = 0, so
+
+                                  𝑔′ = 𝑄𝛽 ◦𝑃𝛼 ◦𝑆 𝜉 .
+
+  Notice that it follows from Theorem 5.1 (using the fact that 𝜆𝑎◦𝑏 (𝑐) = 𝜆𝑎 𝜆𝑏 (𝑐)
+several times) that 𝜆𝑄𝛽 ◦𝑃𝛼 ◦𝑆𝜉 (1) − 1 = 𝛽𝑄′ + 𝐷 where 𝐷 ∈ 𝔽𝑝 𝑃′ + 𝔽𝑝 𝑆 ′ , hence
+
+                               𝜆𝑔′ (1) − 1 = 𝛽𝑄′ + 𝐷.
+
+Notice that 𝜆𝑔′ (1) = 1 implies 𝛽 = 0, so
+
+                                    𝑔′ = 𝑃𝛼 ◦𝑆 𝜉 .
+
+   Observe now that by Theorem 5.1 we get 𝜆𝑔′ (1) = 𝜆𝑃𝛼 ◦𝑆𝜉 (1) = 𝛼𝑃′ + 𝜉𝑆 ′ + 1.
+Therefore, 𝜆𝑔′ (1) = 1 implies 𝜆 = 𝜉 = 0, so 𝑔′ = 𝑔◦ℎ−1 is the identity element
+in 𝐺 ′ , and so 𝑔 = ℎ as required.                                             
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS           511
+
+5.3. Bijective cocycles and braces.
+Definition 5.3. Let (𝐺, ◦) be a group, (𝐻, +) be an abelian group, 𝑝 ∶ 𝐺 ⟶
+Aut(𝐻) be an action and 𝑓 ∶ 𝐺 ⟶ 𝐻 be such that for 𝑔, ℎ ∈ 𝐺 we have
+                             𝑓(𝑔◦ℎ) = 𝑓(𝑔) + 𝑝𝑔 (𝑓(ℎ)).
+Then 𝑓 is a 1-cocycle with respect to 𝑝𝑔 .
+   The following result is known (cf. Jespers, Cedó, Okninski, Rio [8, Theorem
+2]).
+Theorem 5.4 (Theorem 2, [8]). Let (𝐺, ◦) be a group, (𝐻, +) be an abelian group,
+𝑝𝑔 be an automorphism of 𝐻 for each 𝑔 in 𝐺, and 𝑓 ∶ 𝐺 ⟶ 𝐻 be a bijective 1-
+cocycle with respect to 𝑝. Define an operation on 𝐺 for 𝑔, ℎ ∈ 𝐺 by
+                             𝑔 + ℎ = 𝑓 −1 (𝑓(𝑔) + 𝑓(ℎ)) .
+Then (𝐺, ◦, +) is a brace.
+Theorem 5.5. Let 𝑝 > 3 be a prime number. Let (𝐺, ◦) be the group XV, and
+let automorphisms of (𝐵, +), given by 𝜆𝑔 ∶ (𝐵, +) ⟶ (𝐵, +), be defined as in
+Theorem 5.1 for fixed 𝑦, 𝑖, 𝑘. Then the group (𝐺, ◦) with the addition defined as
+                             𝑔 + ℎ = 𝑓 −1 (𝑓(𝑔) + 𝑓(ℎ)) ,
+where 𝑓 is defined as in Theorem 5.2, is a brace.
+Proof. By Theorem 5.4, it suffices to show that the map 𝑓 is a bijective cocycle
+with respect to the map
+                                    𝑝𝑔 = 𝜆𝑔 .
+By Theorem 5.2, 𝑓 is a bijective function. To show that 𝑓 is a cocycle, we need
+to show that
+                           𝑓(𝑔◦ℎ) = 𝑓(𝑔) + 𝑝𝑔 (𝑓(ℎ)).
+By using the formula
+                               𝑓(𝑔) = 𝜆𝑔 (1) − 1,
+the left hand side becomes 𝑓(𝑔◦ℎ) = 𝜆𝑔◦ℎ (1) − 1 and the right hand side be-
+comes
+                             (         )
+          𝑓(𝑔) + 𝑝𝑔 (𝑓(ℎ)) = 𝜆𝑔 (1) − 1 + 𝜆𝑔 (𝜆ℎ (1) − 1) = 𝜆𝑔◦ℎ (1) − 1
+since 𝜆𝑎◦𝑏 (1) = 𝜆𝑎 (𝜆𝑏 (1)) by the definition of 𝜆, and 𝜆𝑔 (𝑥 + 𝑦) = 𝜆𝑔 (𝑥) + 𝜆𝑔 (𝑦)
+since 𝜆 is a automorphism of (𝐵′ , +) by Theorem 5.1.                              
+
+6. All braces
+   In this section, we show that in Theorem 5.5 we constructed all the 𝔽𝑝 -braces
+which are not right nilpotent with multiplicative group XV.
+   We will refer to the Multiplicative Table. The following set of rules will be
+called the Multiplicative Table.
+                 𝑃 ∗ 𝑃 = 0, 𝑃 ∗ 𝑄 = 0, 𝑃 ∗ 𝑅 = 𝑦𝑆, 𝑃 ∗ 𝑆 = 0,
+512               D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+              𝑄 ∗ 𝑃 = 0, 𝑄 ∗ 𝑄 = −𝑦𝑆, 𝑄 ∗ 𝑅 = 2−1 𝑦𝑆, 𝑄 ∗ 𝑆 = 0,
+            𝑅 ∗ 𝑃 = 𝑦𝑆, 𝑅 ∗ 𝑄 = 2−1 𝑦𝑆, 𝑅 ∗ 𝑅 = 𝑖𝑃 + 𝑘𝑆, 𝑅 ∗ 𝑆 = 0,
+          𝑆 ∗ 𝑃 = 0, 𝑆 ∗ 𝑄 = −𝑃, 𝑆 ∗ 𝑅 = −𝑄 + 𝑃 − 2−1 𝑦𝑆, 𝑆 ∗ 𝑆 = 0.
+   Notice, that using the formulas 𝜆𝑎 (𝑏) = 𝑎 ∗ 𝑏 + 𝑏 we can write the Multi-
+plicative Table in the following form.
+                𝜆𝑃 (𝑃) = 𝑃, 𝜆𝑃 (𝑄) = 𝑄, 𝜆𝑃 (𝑅) = 𝑅 + 𝑦𝑆, 𝜆𝑃 (𝑆) = 𝑆,
+          𝜆𝑄 (𝑃) = 𝑃, 𝜆𝑄 (𝑄) = 𝑄 − 𝑦𝑆, 𝜆𝑄 (𝑅) = 𝑅 + 2−1 𝑦𝑆, 𝜆𝑄 (𝑆) = 𝑆,
+      𝜆𝑅 (𝑃) = 𝑃 + 𝑦𝑆, 𝜆𝑅 (𝑄) = 𝑄 + 2−1 𝑦𝑆, 𝜆𝑅 (𝑅) = 𝑅 + 𝑖𝑃 + 𝑘𝑆, 𝜆𝑅 (𝑆) = 𝑆,
+       𝜆𝑆 (𝑃) = 𝑃, 𝜆𝑆 (𝑄) = 𝑄 − 𝑃, 𝜆𝑆 (𝑅) = 𝑅 − 𝑄 + 𝑃 − 2−1 𝑦𝑆, 𝜆𝑆 (𝑆) = 𝑆.
+We can obtain the Multiplicative Table by putting 𝑎 ∗ 𝑏 = 𝜆𝑎 (𝑏) − 𝑏.
+Theorem 6.1. Let 𝑝 > 3 be a prime number. Let (𝐴, +, ◦) be the brace con-
+structed in Theorem 5.5 for fixed 𝑖, 𝑘, 𝑦 ∈ 𝔽𝑝 with 𝑦 ≠ 0. Then (𝐴, +, ◦) satisfies
+the Multiplicative Table above for the same 𝑖, 𝑘, 𝑦.
+Proof. Let 𝑓(𝑔) = 𝜆𝑔 (1) − 1 be defined as in Theorem 5.5. Recall that maps
+𝜆𝑔 ∶ 𝐵′ → 𝐵′ were defined in Theorem 5.1. By Theorem 5.1 functions 𝜆𝑔
+satisfy relations from above Theorem 5.1. Each of them is of the form 𝜆𝑔 (ℎ′ ) =
+𝛼1 𝑅′ + 𝛼2 𝑄′ + 𝛼3 𝑃′ + 𝛼4 𝑆 ′ , for some 𝑔 ∈ {𝑃, 𝑄, 𝑅, 𝑆}, ℎ′ ∈ {𝑃′ , 𝑄′ , 𝑅′ , 𝑆 ′ } and
+𝛼1 , 𝛼2 , 𝛼3 , 𝛼4 ∈ 𝔽𝑝 . Let ℎ ∈ 𝐺 be such that 𝜆ℎ (1) − 1 = ℎ′ . Notice, that our
+relation can be written as
+        (𝜆𝑔◦ℎ (1) − 1) − (𝜆𝑔 (1) − 1) = 𝜆𝑔 (𝜆ℎ (1) − 1)
+         = 𝛼1 (𝜆𝑅 (1) − 1) + 𝛼2 (𝜆𝑄 (1) − 1) + 𝛼3 (𝜆𝑃 (1) − 1) + 𝛼4 (𝜆𝑆 (1) − 1).
+Since 𝜆𝑔 (1) − 1 = 𝑓(𝑔), we can write it as
+              𝑓(𝑔◦ℎ) − 𝑓(𝑔) = 𝛼1 𝑓(𝑅) + 𝛼2 𝑓(𝑄) + 𝛼3 𝑓(𝑃) + 𝛼4 𝑓(𝑆).
+So we know that function 𝑓 ∶ 𝐺 ⟶ 𝐵 used in Theorem 5.5 satisfies the above
+relation. Because 𝑓 ∶ 𝐺 ⟶ 𝐵 is a bijective function, we can apply the map 𝑓
+to both sides of this relation to obtain an equivalent relation
+        𝑓 −1 (𝑓(𝑔◦ℎ) − 𝑓(𝑔)) = 𝑓 −1 (𝛼1 𝑓(𝑅) + 𝛼2 𝑓(𝑄) + 𝛼3 𝑓(𝑃) + 𝛼4 𝑓(𝑆)) .
+Using the formula for addition in brace (𝐴, +, ◦) from Theorem 5.5, we find
+that the relation
+                    𝑔◦ℎ − 𝑔 = 𝛼1 𝑅 + 𝛼2 𝑄 + 𝛼3 𝑃 + 𝛼4 𝑆
+holds in brace 𝐴. In this way, we can obtain all relations from the Multiplicative
+Table.                                                                          
+Theorem 6.2. Let 𝑃, 𝑄, 𝑅, 𝑆 be elements of some set 𝒮. Let (𝐴, +, ◦) be an 𝔽𝑝 -
+brace such that 𝐴 = 𝔽𝑝 𝑅 + 𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝔽𝑝 𝑆 as a linear 𝔽𝑝 -space. Suppose
+that elements 𝑃, 𝑄, 𝑅, 𝑆 satisfy the relations from the Multiplicative Table for fixed
+𝑖, 𝑘, 𝑦 ∈ 𝔽𝑝 with 𝑦 ≠ 0 and 𝑝 > 3. Then the following holds.
+      SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS             513
+
+   (1) 𝑃, 𝑄, 𝑅, 𝑆 satisfy the defining relations of the group XV. So the following
+       holds.
+    𝑄◦𝑆 = 𝑆◦𝑄◦𝑃, 𝑄◦𝑅 = 𝑅◦𝑄, 𝑃◦𝑆 = 𝑆◦𝑃, 𝑃◦𝑄 = 𝑄◦𝑃, 𝑃◦𝑅 = 𝑅◦𝑃,
+                   𝑅◦𝑆 = 𝑆◦𝑅◦𝑄, 𝑃𝑝 = 𝑄𝑝 = 𝑅𝑝 = 𝑆 𝑝 = 0.
+   (2) Every element from 𝔽𝑝 𝑅 + 𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝔽𝑝 𝑆 can be written in an unique
+       way as 𝑅𝛼 ◦𝑄𝛽 ◦𝑃𝛾 ◦𝑆 𝜉 for some 𝛼, 𝛽, 𝛾, 𝜉 ≤ 𝑝.
+   (3) The multiplication of any two elements from 𝔽𝑝 𝑅 + 𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝔽𝑝 𝑆 is
+       uniquely determined. Therefore, 𝐴 is uniquely determined by the Multi-
+       plicative Table and by elements 𝑖, 𝑘, 𝑦.
+   (4) The group (𝐴, ◦) is generated as a group by elements 𝑃, 𝑄, 𝑅, 𝑆 and it sat-
+       isfies the relations of group XV, and it has 𝑝4 elements, hence it is group
+       XV.
+   (5) The brace (𝐴, +, ◦) is not right nilpotent.
+Proof.      (1) It follows from Theorem 5.1, since maps 𝜆𝑃 , 𝜆𝑄 , 𝜆𝑅 , 𝜆𝑆 defined
+       as 𝜆𝑔 (ℎ) = 𝑔◦ℎ − 𝑔 in brace 𝐴 have an analogous matrix form as maps
+       𝜆𝑃 , 𝜆𝑄 , 𝜆𝑅 , 𝜆𝑆 from 𝐵′ to 𝐵′ in Theorem 5.1. It also follows by a direct
+       calculation.
+   (2) Let 𝑎 = 𝛼𝑅 + 𝛽𝑄 + 𝛾𝑃 + 𝜉𝑆 for some 𝛼, 𝛽, 𝛾, 𝜉 ∈ 𝔽𝑝 . Notice that
+       𝑄, 𝑃, 𝑆 ∈ 𝐴2 , by the Multiplicative Table. Consider the element 𝑎1 =
+       𝑅𝑝−𝛼 ◦𝑎. It follows that 𝑎1 = −𝛼𝑅 + 𝑎 + 𝑐 for 𝑐 ∈ 𝐴2 (by the formula
+       (𝑑◦𝑏) ∗ 𝑎 = 𝑑 ∗ 𝑎 + 𝑑 ∗ (𝑏 ∗ 𝑎) + 𝑏 ∗ 𝑎 applied several times). Notice
+       that since 𝑃, 𝑄, 𝑆 ∈ 𝐴2 it follows that 𝑅 ∉ 𝐴2 as otherwise 𝐴 = 𝐴2 ,
+       hence 𝐴 = 𝐴2 = 𝐴 ∗ 𝐴2 = 𝐴3 , so 𝐴 = 𝐴5 = 0. Consequently,
+       𝐴2 = 𝔽𝑝 𝑄 + 𝔽𝑝 𝑃 + 𝔽𝑝 𝑆. Therefore,
+                              𝑎1 = 𝛽 ′ 𝑄 + 𝛾′ 𝑃 + 𝜉 ′ 𝑆,
+       for some 𝛽 ′ , 𝛾′ , 𝜉 ′ ∈ 𝔽𝑝 .
+                                               ′
+          Consider the element 𝑎2 = 𝑄𝑝−𝛽 ◦𝑎1 . It follows that 𝑎2 ∈ −𝛽 ′ 𝑄 +
+       𝑎1 + 𝐴3 + 𝐴 ∗ 𝑎1 ⊆ 𝐴3 (since 𝑃, 𝑆 ∈ 𝐴3 and 𝐴 ∗ 𝐴2 = 𝐴3 ). Notice
+       that 𝑃, 𝑆 ∈ 𝐴3 , hence 𝑄 ∉ 𝐴3 as otherwise 𝐴2 = 𝐴3 = 𝐴4 = 𝐴5 = 0.
+       Therefore, 𝑎2 = 𝛾′′ 𝑃 + 𝜉 ′′ 𝑆 for some 𝛾′′ , 𝜉 ′′ ∈ 𝔽𝑝 . By the Multiplicative
+                                                                          ′′   ′′
+       Table 𝑃 ∗ 𝑃 = 𝑃 ∗ 𝑆 = 𝑆 ∗ 𝑃 = 𝑆 ∗ 𝑆 = 0, so 𝑎2 = 𝑃𝛾 ◦𝑆 𝜉 , and
+                                      ′ ′′  ′′
+       consequently 𝑎 = 𝑅𝛼 ◦𝑄𝛽 ◦𝑃𝛾 ◦𝑆 𝜉 . This concludes the proof.
+   (3) Let 𝑎, 𝑏 ∈ 𝔽𝑝 . By item 2 above we can write 𝑎 = 𝑅𝛼 ◦𝑄𝛽 ◦𝑃𝛾 ◦𝑆 𝜉 for
+       some 𝛼, 𝛽, 𝛾, 𝜉 ≤ 𝑝. Then
+                   𝑎 ∗ 𝑏 + 𝑏 = 𝜆𝑎 (𝑏) = 𝜆𝑅𝛼 (𝜆𝑄𝛽 (𝜆𝑃𝛾 (𝜆𝑆𝜉 (𝑏))),
+       and it can be calculated using the Multiplicative Table to give a concrete
+       element from 𝔽𝑝 𝑅+𝔽𝑝 𝑄+𝔽𝑝 𝑃+𝔽𝑝 𝑆. This determines uniquely a brace
+       (𝐴, +, ◦).
+   (4) Consider the subgroup 𝐴′ of (𝐴, ◦) generated by elements 𝑅, 𝑄, 𝑃, 𝑆.
+       Then by item 2 above, we have that 𝐴′ has cardinality 𝑝4 , so 𝐴′ = (𝐴, ◦).
+514              D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+          By item 1 above, 𝐴′ satisfies all the relations of group XV, which con-
+          cludes the proof (since 𝐴′ has the same cardinality as group XV).
+                                                                     −1
+      (5) Observe that by Multiplicative Table we obtain (𝑆 ∗ 𝑄) ∗ ( 𝑅) = 𝑆, so
+                                                                        𝑦
+         𝐴 cannot be right nilpotent.
+                                                                                  
+Theorem 6.3. Let 𝑝 > 3 be a prime number. Let (𝐴, +, ◦) an 𝔽𝑝 -brace which is
+not right nilpotent with multiplicative group (𝐴, ◦) being the group XV. Then the
+𝔽𝑝 -brace 𝐴 is isomorphic to some brace constructed in Theorem 5.5.
+Proof. Let (𝐴, +, ◦) be an 𝔽𝑝 -brace which is not right nilpotent with multi-
+plicative group (𝐴, ◦) being the group XV. Then (𝐴, +, ◦) satisfies the relations
+from the Multiplicative Table by Proposition 4.15 for some 𝑖, 𝑘, 𝑦 ∈ 𝔽𝑝 , 𝑦 ≠ 0.
+   Let 𝐵 be the brace constructed in Theorem 5.5 for the same 𝑖, 𝑘, 𝑦. Then 𝐵
+satisfies the same Multiplicative Table as 𝐴, by Theorem 6.1. By Theorem 6.2,
+item 3, braces which satisfy the same Multiplicative Table coincide, so 𝐴 and 𝐵
+are isomorphic braces.                                                         
+
+7. Some properties of the constructed braces
+   Recall that a brace is called prime if product of any two non-zero ideals in
+this brace is non-zero.
+Proposition 7.1. Let 𝑝 > 3 be a prime number. Let 𝐴 be a brace constructed in
+Theorem 5.5 for fixed 𝑦, 𝑖, 𝑘 ∈ 𝔽𝑝 with 𝑦 ≠ 0. Then 𝐴 is a prime brace. Moreover,
+𝐴 contains a non-zero strongly nilpotent (i.e., both right and left nilpotent) ideal
+𝐴2 .
+Proof. A non-zero ideal 𝐼 in 𝐴 contains a non-zero element 𝑐 = 𝛼1 𝑅 + 𝛼2 𝑄 +
+𝛼3 𝑃 + 𝛼4 𝑆 for some 𝛼1 , 𝛼2 , 𝛼3 , 𝛼4 ∈ 𝔽𝑝 . If 𝑐 ∉ 𝐴4 , then when multiplying 𝑐
+from the left several times by either 𝑅 or 𝑄 we obtain some non-zero element
+in 𝐴4 , hence 𝐼 contains 𝑆 ∈ 𝐴4 . Since every ideal containing 𝑆 contains 𝑄, 𝑃
+we get that 𝐴2 ⊆ 𝐼 (since 𝑆 ∗ 𝑄 = −𝑃, 𝑆 ∗ 𝑅 = −𝑄 + 𝑃 − 2−1 𝑦𝑆). Notice that
+𝐴2 ∗ 𝐴2 ≠ 0 since 𝑄 ∗ 𝑄 ≠ 0, so 𝐴 is a prime brace, as every product of non-
+zero ideals in 𝐴 is non-zero. Moreover, (𝐴2 ∗ 𝐴2 ) ∗ 𝐴2 = 𝐴2 ∗ (𝐴2 ∗ 𝐴2 ) = 0,
+so 𝐴2 is a strongly nilpotent ideal in 𝐴.                                      
+Example 7.2. Consider a vector space 𝑉 spanned by the elements 𝑃, 𝑄, 𝑅, 𝑆 over
+the field 𝔽𝑝 with 𝑝 elements, with multiplication that satisfies
+                    (𝑎 + 𝑏)𝑐 = 𝑎𝑐 + 𝑏𝑐 and 𝑎(𝑏 + 𝑐) = 𝑎𝑏 + 𝑎𝑐
+for all 𝑎, 𝑏, 𝑐 in 𝑉. Furthermore, the following relations hold in 𝑉.
+      𝑃𝑆 = 𝑆𝑆 = 𝑄𝑆 = 𝑅𝑆 = 𝑃𝑃 = 𝑆𝑃 = 𝑄𝑃 = 𝑃𝑄 = 𝑅𝑄 = 𝑄𝑅 = 0,
+      𝑅𝑅 = 𝑗𝑃 + 𝑘𝑆, 𝑄𝑄 = −𝑦𝑆, 𝑅𝑃 = 𝑦𝑆, 𝑆𝑄 = −𝑃, 𝑃𝑅 = 𝑦𝑆, 𝑆𝑅 = −𝑄,
+where 𝑗, 𝑘, and non-zero 𝑦 are arbitrary elements from 𝔽𝑝 . Now, it is easily checked
+that this defines a pre-Lie algebra by verifying that
+                       (𝐴𝐵)𝐶 − 𝐴(𝐵𝐶) = (𝐵𝐴)𝐶 − 𝐵(𝐴𝐶)
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS           515
+
+is satisfied for any 𝐴, 𝐵, 𝐶 ∈ {𝑃, 𝑄, 𝑅, 𝑆}. Hence 𝑉 is an example of a pre-Lie
+algebra which is left nilpotent and not right nilpotent.
+   The relations in 𝑉 were obtained using the formula found in [20] for obtain-
+ing a pre-Lie algebra from a strongly nilpotent 𝔽𝑝 -brace to the brace defined in
+Theorem 5.5, and some relations were guessed as to avoid large calculations.
+
+8. Braces whose multiplicative group is XIV
+  In this section, we will show that all 𝔽𝑝 -braces whose multiplicative group is
+XIV are right nilpotent and strongly nilpotent provided that 𝑝 is a prime num-
+ber larger than 3. Recall that 𝔽𝑝 is the field of cardinality 𝑝.
+
+Lemma 8.1. Let 𝐴 be an 𝔽𝑝 -brace of cardinality 𝑝4 , where 𝑝 > 3 is a prime
+number. Let 𝑖 be such that 𝐴𝑖+1 = 0 and suppose there is 0 ≠ 𝑐 ∈ 𝐴𝑖 such that
+𝑐◦𝑎 = 𝑎◦𝑐 for all 𝑎 ∈ 𝐴. Then 𝐴 is a right nilpotent brace.
+Proof. Observe that 𝑐 ∗ 𝑐 = 0 hence 𝑐𝑗 = 𝑗𝑐 for 𝑗 = 1, 2, … , 𝑝. Denote 𝔽𝑝 𝑐 =
+{𝑐𝑗 ∶ 𝑗 = 1, 2, … , 𝑝} by 𝐼. Then 𝐼 is an ideal in brace 𝐴, and 𝐼 ∗ 𝐴 = 𝐴 ∗ 𝐼 = 0,
+since 𝐼 = {𝑐𝑗 ∶ 𝑗 = 1, 2, … , 𝑝} and 𝑐𝑗 is a central element in 𝐴 for every 𝑗 (recall
+that 𝑐𝑗 = 𝑐◦ ⋯ ◦𝑐). Notice that 𝐴∕𝐼 has cardinality not exceeding 𝑝3 , hence
+𝐴∕𝐼 is a right nilpotent brace by [2]. Now 𝐴 ∗ 𝐼 = 0 yields that 𝐴 is a right
+nilpotent brace.                                                                   
+Lemma 8.2. Let 𝐴 be an 𝔽𝑝 -brace of cardinality 𝑝4 , where 𝑝 > 3 is a prime
+number. Suppose that the multiplicative group (𝐴, ◦) is the group XIV. Denote by
+𝑊 = {𝑃𝑖 ◦𝑄𝑗 ∶ 𝑖, 𝑗 = 1, 2, … , 𝑝}. Suppose that 𝐴 is not a right nilpotent brace.
+Then the following holds.
+   (1) 𝐴3 ≠ 0.
+   (2) Suppose that 𝑄 ∈ 𝐴2 . If 𝐴4 = 0 and 𝐴3 ≠ 0, then the cardinality of 𝐴2 is
+       𝑝3 and 𝐴2 = 𝑊 + 𝐴3 . Moreover 𝐴3 ∗ 𝐴2 = 0.
+   (3) Suppose that 𝑄 ∈ 𝐴2 . If 𝐴5 = 0 and 𝐴4 ≠ 0, then the cardinality of 𝐴2 is
+       𝑝3 and 𝐴2 = 𝑊 + 𝐴4 . Moreover, 𝐴4 ∗ 𝐴2 = 0.
+Proof.       (1) follows from Lemma 8.1, since 𝑃 = 𝑅−1 ◦𝑆 −1 ◦𝑅◦𝑆 ∈ 𝐴2 by
+        Lemma 4.4 and 𝑃 is a central element in (𝐴, ◦).
+    (2) Notice that since 𝑄 ∈ 𝐴2 , then 𝑊 ⊆ 𝐴2 . By Lemma 8.1, we have
+        𝑊 ∩ 𝐴3 = 0, since 𝑊 consists of central elements. Therefore, 𝑊 +
+        𝐴3 , 𝐴3 ◦𝑊 ⊆ 𝐴2 , and since 𝐴2 ≠ 𝐴 and 𝑊 + 𝐴3 has cardinality 𝑝3 , it
+        follows that 𝐴2 has cardinality 𝑝3 and 𝐴2 = 𝑊 + 𝐴3 = 𝐴3 ◦𝑊.
+           Observe now that
+     𝐴3 ∗ 𝐴2 = 𝐴3 ∗ (𝑊 + 𝐴3 ) = 𝐴3 ∗ 𝑊 + 𝐴3 ∗ 𝐴3 = 𝑊 ∗ 𝐴3 ⊆ 𝐴4 = 0.
+    (3) Notice that since 𝑄 ∈ 𝐴2 , then 𝑊 ⊆ 𝐴2 . By Lemma 8.1, we have
+        𝑊 ∩ 𝐴4 = 0, since 𝑊 consists of central elements. Therefore, 𝑊 +
+        𝐴4 , 𝐴4 ◦𝑊 ⊆ 𝐴2 , and since 𝐴2 ≠ 𝐴 and 𝑊 + 𝐴4 has cardinality 𝑝3 , it
+        follows that 𝐴2 has cardinality 𝑝3 and 𝐴2 = 𝑊 + 𝐴4 = 𝐴4 ◦𝑊.
+516              D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+             Observe now that
+       𝐴4 ∗ 𝐴2 = 𝐴4 ∗ (𝑊 + 𝐴4 ) = 𝐴4 ∗ 𝑊 + 𝐴4 ∗ 𝐴4 = 𝑊 ∗ 𝐴4 ⊆ 𝐴5 = 0.
+                                                                             
+Lemma 8.3. Let 𝐴 be an 𝔽𝑝 -brace of cardinality 𝑝4 , where 𝑝 > 3 is a prime
+number. Suppose that the multiplicative group (𝐴, ◦) is the group XIV. Suppose
+that 𝐴 is not a right nilpotent brace. Suppose that 𝑄 ∈ 𝐴2 and 𝑅 ∉ 𝐴2 . Then
+𝑃 ∗ 𝑅 = 𝑅 ∗ 𝑃 = 0.
+Proof. Notice that 𝐴∕𝐴2 has cardinality 𝑝, by Lemma 8.2. Therefore, 𝑆◦𝑅𝑖 ∈
+𝐴2 for some 𝑖, since 𝑅 ∉ 𝐴2 . Let 𝑊 be as in Lemma 8.2. By Lemma 8.2, we have
+𝑆◦𝑅𝑖 = 𝑐◦𝑤 for some 𝑤 ∈ 𝑊 and some 𝑐 ∈ 𝐴𝑖 where 𝐴𝑖+1 = 0. Therefore,
+𝑆 ′ = 𝑆◦𝑅𝑖 ◦𝑤−1 ∈ 𝐴𝑖 (where 𝐴𝑖+1 = 0). Recall that 𝑤 is a central element, so
+𝑅◦𝑆 ′ = 𝑆 ′ ◦𝑅◦𝑃. This implies that
+                  0 = 𝑆 ′ ∗ 𝑅 + 𝑆 ′ ∗ 𝑃 + 𝑆 ′ ∗ (𝑅 ∗ 𝑃) + 𝑅 ∗ 𝑃 + 𝑃.
+Notice that 𝑆 ′ ∗ 𝐴2 = 0 by Lemma 8.2, so 𝑆 ′ ∗ 𝑅 + 𝑅 ∗ 𝑃 + 𝑃 = 0.
+   Observe now that (𝑅◦𝑆 ′ ) ∗ 𝑅 = (𝑆 ′ ◦𝑅◦𝑃) ∗ 𝑅. Therefore, 𝑅 ∗ (𝑆 ′ ∗ 𝑅) =
+𝑅 ∗ (𝑃 ∗ 𝑅) + 𝑃 ∗ 𝑅, since 𝑆 ′ ∗ 𝐴2 = 0. Substituting 𝑆 ′ ∗ 𝑅 = −(𝑅 ∗ 𝑃 + 𝑃)
+in the left hand side we get 𝑅 ∗ (𝑅 ∗ 𝑃) + 𝑅 ∗ 𝑃 = 0, so 𝜆𝑅 (𝑅 ∗ 𝑃) = 0, hence
+𝑅 ∗ 𝑃 = 0, as the map 𝜆𝑎 (𝑏) = 𝑎 ∗ 𝑏 + 𝑏 is an invertible map in any brace. 
+Lemma 8.4. Let 𝐴 be an 𝔽𝑝 -brace of cardinality 𝑝4 , where 𝑝 > 3 is a prime
+number. Suppose that the multiplicative group (𝐴, ◦) is the group XIV. Suppose
+that 𝐴 is not right nilpotent. Suppose that 𝑄 ∈ 𝐴2 and 𝑅 ∈ 𝐴2 . Then 𝑆 ∉ 𝐴2 and
+𝑃 ∗ 𝑆 = 𝑆 ∗ 𝑃 = 0.
+Proof. Notice that 𝑆 ∉ 𝐴2 as otherwise (𝐴, ◦) would be generated by elements
+from 𝐴2 implying 𝐴 = 𝐴2 , which is impossible as then
+                     𝐴 = 𝐴2 = 𝐴 ∗ 𝐴2 = 𝐴3 = 𝐴4 = 𝐴5 = 0.
+      Notice that 𝑅 ∈ 𝐴2 implies that 𝑅 = 𝑎◦𝑤 for some 𝑎 ∈ 𝐴𝑖 , 𝑤 ∈ 𝑊, where
+𝐴𝑖+1 = 0, by Lemma 8.2. Therefore, 𝑅′ = 𝑅◦𝑤−1 ∈ 𝐴𝑖 . Notice that since 𝑤 is
+central in the group (𝐴, ◦), we get 𝑅′ ◦𝑆 = 𝑆◦𝑅′ ◦𝑃. Consequently, 𝑅′ ∗ 𝑆 = 𝑆 ∗
+𝑃 + 𝑃 since 𝐴 ∗ 𝑅′ = 0 and 𝑅′ ∗ 𝑃 ⊆ 𝑅′ ∗ 𝐴2 = 0 by Lemma 8.2.
+  Observe now that (𝑅′ ◦𝑆) ∗ 𝑆 = (𝑆◦𝑅′ ◦𝑃) ∗ 𝑆, hence
+𝑅′ ∗ (𝑆 ∗ 𝑆) = 𝑆 ∗ (𝑅′ ∗ 𝑆)+𝑆 ∗ (𝑅′ ∗ (𝑃 ∗ 𝑆))+𝑆 ∗ (𝑃 ∗ 𝑆)+𝑅′ ∗ (𝑃 ∗ 𝑆)+𝑃 ∗ 𝑆.
+Recall that 𝑅′ ∗ 𝐴2 = 0 and 𝐴 ∗ 𝑅′ = 0 by Lemma 8.2; consequently,
+                      0 = 𝑆 ∗ (𝑅′ ∗ 𝑆) + 𝑃 ∗ 𝑆 + 𝑆 ∗ (𝑃 ∗ 𝑆).
+Substituting 𝑅′ ∗ 𝑆 = 𝑆 ∗ 𝑃 + 𝑃 in the right hand side we get
+                    0 = 𝑆 ∗ (𝑆 ∗ 𝑃 + 𝑃) + 𝑃 ∗ 𝑆 + 𝑆 ∗ (𝑃 ∗ 𝑆),
+therefore 2𝜆𝑆 (𝑆 ∗ 𝑃) = 0, so 𝑆 ∗ 𝑃 = 0.                                     
+      SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS          517
+
+Proposition 8.5. Let 𝐴 be an 𝔽𝑝 -brace of cardinality 𝑝4 , where 𝑝 > 3 is a prime
+number. Suppose that the multiplicative group (𝐴, ◦) is the group XIV. Suppose
+that 𝐴 is not a right nilpotent brace. Then 𝑄 ∉ 𝐴2 .
+
+Proof. Suppose on the contrary that 𝑄 ∈ 𝐴2 . If 𝑅 ∉ 𝐴2 , then 𝑃 ∗ 𝑅 = 0
+by Lemma 8.3. Observe that 𝐴 = 𝔽𝑝 𝑅 + 𝐴2 , since 𝐴∕𝐴2 has cardinality 𝑝, by
+Lemma 8.2. Observe now that for 𝑥, 𝑦 ∈ 𝐴 we have (𝑃◦𝑥) ∗ 𝑦 = (𝑥◦𝑃) ∗ 𝑦,
+and by Lemma 4.4 we get
+
+             𝑃 ∗ (𝑥 ∗ 𝑦) = 𝑥 ∗ (𝑃 ∗ 𝑦) ⊆ 𝑥 ∗ (𝑃 ∗ (𝔽𝑝 𝑅 + 𝐴2 ))
+                           = 𝑥 ∗ 𝑃 ∗ (𝐴2 ) ⊆ 𝑥 ∗ 𝐴4 ⊆ 𝐴5 = 0
+
+(since 𝑃 = 𝑅−1 ◦𝑆 −1 ◦𝑅◦𝑆 is in group 𝑋𝐼𝑉). Consequently, 𝑃 ∗ 𝐴2 = 0, and
+since 𝑃 ∗ 𝑅 = 0, then 𝑃 ∗ 𝐴 = 0. Since 𝑃 is a central element, we get that
+𝐼 = 𝔽𝑝 𝑃 is an ideal in 𝐴. By [2], every brace of cardinality not exceeding 𝑝3 is
+right nilpotent, hence 𝐴∕𝐼 is right nilpotent. Now 𝐴 ∗ 𝑃 = 0 yields that 𝐴 is
+right nilpotent.
+   Suppose now that 𝑅 ∈ 𝐴2 . Then by Lemma 8.4 we have that 𝑆 ∉ 𝐴2 , 𝑆 ∗
+𝑃 = 𝑃 ∗ 𝑆 = 0. Observe that 𝐴 = 𝔽𝑝 𝑆 + 𝐴2 , since 𝐴∕𝐴2 has cardinality 𝑝, by
+Lemma 8.2. Observe now that for 𝑥, 𝑦 ∈ 𝐴 we have (𝑃◦𝑥) ∗ 𝑦 = (𝑥◦𝑃) ∗ 𝑦,
+and by Lemma 4.4 we get
+
+             𝑃 ∗ (𝑥 ∗ 𝑦) = 𝑥 ∗ (𝑃 ∗ 𝑦) ⊆ 𝑥 ∗ (𝑃 ∗ (𝔽𝑝 𝑆 + 𝐴2 ))
+                           = 𝑥 ∗ 𝑃 ∗ (𝐴2 ) ⊆ 𝑥 ∗ 𝐴4 ⊆ 𝐴5 = 0
+
+(since 𝑃 = 𝑅−1 ◦𝑆 −1 ◦𝑅◦𝑆 is in group XIV). Consequently, 𝑃 ∗ 𝐴2 = 0, and
+since 𝑃 ∗ 𝑆 = 0, then 𝑃 ∗ 𝐴 = 0. Since 𝑃 is a central element, we get that
+𝐼 = 𝔽𝑝 𝑃 is an ideal in 𝐴. By [2] every brace of cardinality not exceeding 𝑝2 is
+right nilpotent, hence 𝐴 ∗ 𝑅 is right nilpotent. Now 𝐴 ∗ 𝑃 = 0 yields that 𝐴 is
+right nilpotent.                                                              
+
+Proposition 8.6. Let 𝐴 be an 𝔽𝑝 -brace of cardinality 𝑝4 , where 𝑝 > 3 is a prime
+number. Suppose that the multiplicative group (𝐴, ◦) is the group 𝑋𝐼𝑉. Suppose
+that 𝑄 ∉ 𝐴2 . Then 𝐴 is a right nilpotent brace.
+
+Proof. Notice that 𝑃 ∈ 𝐴2 by Lemma 4.4, since 𝑃 = 𝑅−1 ◦𝑆 −1 ◦𝑅◦𝑆 in the group
+XIV. By Lemma 8.2 we have that 𝐴∕𝐴2 has cardinality 𝑝, so 𝑆◦𝑄𝑖 ∈ 𝐴2 , 𝑅◦𝑄𝑗 ∈
+𝐴2 , for some 𝑖, 𝑗, since 𝑄 ∉ 𝐴2 . We have now the following cases.
+   Case 1. 𝑃 ∉ 𝐴3 , 𝐴4 ≠ 0. Notice that this implies that 𝐴2 ∕𝐴3 has cardinality
+𝑝, and so there are 𝑘, 𝑙 such that 𝑆 ′ = 𝑆◦𝑄𝑖 ◦𝑃𝑘 ∈ 𝐴3 and 𝑅′ = 𝑅◦𝑄𝑗 ◦𝑃𝑙 ∈ 𝐴3 .
+Notice that since 𝑄, 𝑃 are central elements we get 𝑃 = 𝑅′−1 ◦𝑆 ′−1 ◦𝑅′ ◦𝑆 ′ , hence
+by Lemma 4.4 we have 𝑃 ∈ 𝐴4 . By Lemma 8.1 we find that 𝐴 is right nilpotent.
+   Case 2. 𝑃 ∉ 𝐴3 , 𝐴4 = 0. Denote by 𝑆 ′ = 𝑆◦𝑄𝑖 ∈ 𝐴2 , 𝑅′ = 𝑅◦𝑄𝑗 ∈
+𝐴 . We know that 𝑅′ , 𝑆 ′ ∈ 𝐴2 . Notice that since 𝑄 is central we get 𝑃 =
+  2
+
+𝑅′−1 ◦𝑆 ′−1 ◦𝑅′ ◦𝑆 ′ , hence by Lemma 4.4 we have 𝑃 ∈ 𝐴3 . By Lemma 8.1 we
+find that 𝐴 is right nilpotent.
+518             D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+   Case 3. 𝑃 ∈ 𝐴3 . Notice that 𝐴4 ≠ 0 and 𝑃 ∉ 𝐴4 by Lemma 8.2 since 𝑃 is
+central. By Corollary 4.2 we have 𝐴𝑖 ∕𝐴𝑖+1 has cardinality 𝑝 for 𝑖 = 1, 2, 3, 4.
+Therefore, 𝐴3 = 𝔽𝑝 𝑃 + 𝐴4 and 𝐴 = 𝔽𝑝 𝑄 + 𝐴2 .
+   Suppose that there are 𝑅′ , 𝑆 ′ such that 𝑅′ ◦𝑆 ′ = 𝑆 ′ ◦𝑅′ ◦𝑃, and either 𝑆 ′ ∈
+𝐴 , 𝑅′ ∈ 𝐴4 or 𝑆 ′ ∈ 𝐴4 and 𝑅′ ∈ 𝐴2 . We will show that 𝑃 ∗ 𝑄 = 0.
+  2
+
+   Suppose first that 𝑆 ′ ∈ 𝐴4 and 𝑅′ ∈ 𝐴2 . Observe that
+
+                          (𝑅′ ◦𝑆 ′ ) ∗ 𝑄 = (𝑆 ′ ◦𝑅′ ◦𝑃) ∗ 𝑄,
+
+hence 𝑃 ∗ 𝑄 = 0, because 𝑆 ′ ∗ 𝑄 = 𝑄 ∗ 𝑆 ′ ∈ 𝐴5 = 0,
+
+                      𝐴 ∗ (𝑃 ∗ 𝑄) ⊆ 𝐴 ∗ (𝑄 ∗ 𝑃) ⊆ 𝐴5 = 0,
+
+ 𝑆 ′ ∗ (𝑅′ ∗ 𝑄) = 𝑆 ′ ∗ (𝑄 ∗ 𝑅′ ) ⊆ 𝑆 ′ ∗ 𝐴3 = 𝑆 ′ ∗ (𝔽𝑝 𝑃 + 𝐴4 ) = 𝔽𝑝 (𝑆 ′ ∗ 𝑃) = 0,
+
+since 𝑆 ′ ∗ 𝑃 = 𝑃 ∗ 𝑆 ′ ⊆ 𝐴5 = 0.
+   Suppose now that 𝑆 ′ ∈ 𝐴2 and 𝑅′ ∈ 𝐴4 . Observe that (𝑅′ ◦𝑆 ′ ) ∗ 𝑄 =
+(𝑆 ◦𝑅′ ◦𝑃) ∗ 𝑄, hence 𝑃 ∗ 𝑄 = 0 since 𝑅′ ∗ 𝑄 = 𝑄 ∗ 𝑅′ ∈ 𝐴5 = 0,
+  ′
+
+
+                 𝐴 ∗ (𝑃 ∗ 𝑄) ⊆ 𝐴 ∗ (𝑄 ∗ 𝑃) ⊆ 𝐴 ∗ 𝐴4 ⊆ 𝐴5 = 0,
+
+𝑅′ ∗ (𝑆 ′ ∗ 𝑄) = 𝑅′ ∗ (𝑄 ∗ 𝑆 ′ ) ⊆ 𝑅′ ∗ 𝐴3 = 𝑅′ ∗ (𝔽𝑝 𝑃 + 𝐴4 ) = 𝔽𝑝 (𝑅′ ∗ 𝑃) = 0,
+
+since 𝑅′ ∗ 𝑃 = 𝑃 ∗ 𝑅′ ⊆ 𝐴5 = 0.
+   We will now show that 𝑃 ∗ 𝑄 = 0 implies that 𝐴 is a right nilpotent brace.
+Observe that 𝑃 ∗ 𝐴 = 𝑃 ∗ (𝐹𝑝 𝑄 + 𝐴2 ) = 𝑃 ∗ 𝐴2 , so we need to show that 𝑃 ∗
+𝐴2 = 0. Notice that (𝑃◦𝑥) ∗ 𝑦 = (𝑥◦𝑃) ∗ 𝑦 since 𝑃 is central. Consequently,
+
+             𝑃 ∗ (𝑥 ∗ 𝑦) = 𝑥 ∗ (𝑃 ∗ 𝑦) = 𝑥 ∗ (𝑃 ∗ (𝔽𝑝 𝑄 + 𝐴2 ))
+                            = 𝔽𝑝 𝑥 ∗ (𝑃 ∗ 𝑄) + 𝑥 ∗ (𝑃 ∗ (𝐴2 )) = 0,
+
+since 𝑃 ∗ 𝐴2 ⊆ 𝐴4 by Corollary 4.6, and 𝑃 ∗ 𝑄 = 𝑄 ∗ 𝑃 ∈ 𝐴4 .
+   We will now show that it is possible to find such 𝑅′ , 𝑆 ′ . We know that 𝑅◦𝑄𝑗
+and 𝑆◦𝑄𝑖 are both in 𝐴2 . Suppose that 𝑅◦𝑄𝑗 ∈ 𝐴3 . Then 𝑅◦𝑄𝑗 ◦𝑃𝑘 ∈ 𝐴4 for
+some 𝑘, and we can take 𝑅′ = 𝑅◦𝑄𝑗 ◦𝑃𝑘 and 𝑆 ′ = 𝑆◦𝑄𝑖 (since 𝑃, 𝑄 are central).
+If 𝑆◦𝑄𝑖 ∈ 𝐴3 , then 𝑆◦𝑄𝑖 ◦𝑃𝑘 ∈ 𝐴4 for some 𝑘, and we can take 𝑆 ′ = 𝑆◦𝑄𝑖 ◦𝑃𝑘
+and 𝑅′ = 𝑅◦𝑄𝑗 .
+   If 𝑆◦𝑄𝑖 , 𝑅◦𝑄𝑗 ∉ 𝐴3 , then (𝑆◦𝑄𝑖 )◦(𝑅◦𝑄𝑗 )𝑡 ∈ 𝐴3 for some 𝑡, and then
+
+                             (𝑆◦𝑄𝑖 )◦(𝑅◦𝑄𝑗 )𝑡 ◦𝑃𝑘 ∈ 𝐴4
+
+for some 𝑘. Therefore, we can take 𝑆 ′ = (𝑆◦𝑄𝑖 )◦(𝑅◦𝑄𝑗 )𝑡 ◦𝑃𝑘 and 𝑅′ = 𝑅◦𝑄𝑗 .
+Observe that 𝑅′ ◦𝑆 ′ = 𝑆 ′ ◦𝑅′ ◦𝑃, as required.                           
+
+Corollary 8.7. Let 𝐴 is an 𝔽𝑝 -brace for a prime number 𝑝 > 3. If the multiplica-
+tive group of 𝐴 is isomorphic to the group XIV, then 𝐴 is right nilpotent.
+       SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS           519
+
+9. Conclusions and applications
+   In this section, we give some motivation for constructing concrete example of
+braces of a given cardinality. Two main applications of braces are set-theoretic
+solutions and Hopf-Galois extensions. The connection between braces and
+Hopf-Galois extensions was first observed by David Bachiller in [3]. This topic
+was subsequently investigated in [21], [12] and many other papers by Truman,
+Kohl, Byott, Childs and others. The following exposition follows the above lit-
+erature on the topic.
+9.1. Hopf-Galois extensions corresponding to a brace. All Hopf-Galois
+structures of type (𝐴, +) arise as regular subgroups of Hol(𝐴, +), cf. [3, 2, 12, 13]
+for relevant definitions and further details. Now for each brace (𝐴, +, ◦) we
+have that (𝐴, ◦) embeds in Hol(𝐴, +) as a regular subgroup through the map
+                     𝑚 ∶ (𝐴, ◦) ⟶ Hol(𝐴, +), 𝑎 ⟼ 𝑎𝜆𝑎 .
+Isomorphic braces correspond to regular subgroups which are conjugate by an
+element of Aut(𝐴, +) inside Hol(𝐴, +). On the other hand, each regular sub-
+group 𝐺 ⊂ Hol(𝐴, +) gives a bijection
+                         𝜓 ∶ 𝐺 ⟶ (𝐴, +), 𝑔 ⟼ 𝑔(0),
+through which we can define a multiplication on (𝐴, +) by
+                                 (                )
+                         𝑎◦𝑏 = 𝜓 𝜓 −1 (𝑎)𝜓 −1 (𝑏)
+which yields a brace (𝐴, +, ◦).
+  Therefore, given a brace (𝐴, +, ◦) and an automorphism 𝛾 ∈ Aut(𝐴, +), we
+can create, another isomorphic brace (𝐴, +, ◦𝛾 ) by embedding
+                         𝑚
+               (𝐴, ◦)         𝐺 ⊂ Hol (𝐴, +)
+
+                                     ≀ 𝐶𝛾
+
+                                                 𝜓
+                                𝐺𝛾 = 𝛾𝐺𝛾−1              (𝐴, +).
+
+The new circle operation is through
+                                      (               )
+                             𝑎◦𝛾 𝑏 = 𝜓 𝜓−1 (𝑎)𝜓−1 (𝑏)
+in terms of holomorph. This corresponds to defining
+                              𝑎◦𝛾 𝑏 = 𝛾−1 (𝛾(𝑎)◦𝛾(𝑏))
+as in this case (𝐴, +, ◦) and (𝐴, +, ◦𝛾 ) are isomorphic as braces, so they corre-
+spond to regular subgroups inside holomorph which are conjugate by 𝛾.
+   Now if 𝛾 ∈ Aut(𝐴, +, ◦), then (𝐴, +, ◦) and (𝐴, +, ◦𝛾 ) are the same and
+that means 𝐺𝛾 = 𝐺 inside the holomorph. For a brace (𝐴, +, ◦) and for each
+coset representative 𝛾 ∈ Aut(𝐴, +)∕Aut(𝐴, +, ◦), we find a distinct Hopf-Galois
+structure (𝐴, +, ◦𝛾 ). As we move through the braces with additive group (𝐴, +),
+we get all the Hopf-Galois structures of type (𝐴, +).
+520                D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+  Therefore, we can summarise on how to construct Hopf-Galois extensions
+corresponding to a given brace as follows:
+    (1) Let (𝐴, +, ◦) be a brace.
+    (2) Let 𝛾𝑖 be the automorphisms of the abelian group (𝐴, +).
+    (3) Check which 𝛾𝑖 are also automorphisms of the whole brace (𝐴, +, ◦).
+    (4) We find coset representatives of Aut(𝐴, +)∕Aut(𝐴, +, ◦) and call them
+        𝜉1 , 𝜉2 , …. Recall that 𝛼 and 𝛽 are the same in Aut(𝐴, +)∕Aut(𝐴, +, ◦) iff
+        𝛼 = 𝛽𝛾 for some 𝛾 ∈ Aut(𝐴, +, ◦) (so 𝛼(𝑎) = 𝛽(𝛾(𝑎)) for all 𝑎 ∈ 𝐴).
+    (5) For the automorphisms 𝜉𝑖 of the group (𝐴, +) from our list above we
+        find the brace (𝐴𝜉𝑖 , +, ◦𝜉𝑖 ), with the same set 𝐴𝜉𝑖 as the set 𝐴 and with
+        the same addition and with the multiplication
+                               𝑎◦𝜉𝑖 𝑏 = 𝜉𝑖−1 (𝜉𝑖 (𝑎)◦𝜉𝑖 (𝑏)).
+      (6) For the brace 𝐴𝜉𝑖 the corresponding Hopf-Galois extension is the regu-
+          lar subgroup (𝑎, 𝜆𝑎 ) (denoted above as 𝑎𝜆𝑎 ) of the holomorph Hol(𝐴, +)
+          where
+                                  𝜆𝑎 (𝑏) = 𝑎◦𝜉𝑖 𝑏 − 𝑎.
+Since we now know how to construct Hopf-Galois extensions corresponding to
+the given brace, we can now obtain all Hopf-Galois extensions of type (𝐴, +)
+with Galois group 𝐺. Following the beginning of this chapter, it can be sum-
+marised in the following way.
+    (1) Find all non-isomorphic braces (𝐵, +, ◦) whose additive group (𝐵, +) is
+         isomorphic to the group (𝐴, +) and whose multiplicative group (𝐵, ◦) is
+         isomorphic to 𝐺.
+    (2) We list these non-isomorphic braces as 𝐵1 , 𝐵2 , …. All these braces have
+         the same additive group, which is isomorphic to (𝐴, +), and the same
+         multiplicative group, which is isomorphic to 𝐺.
+    (3) For each brace 𝐵𝑖 from our list we will construct corresponding Hopf-
+         Galois extensions.
+    (4) To get all Hopf-Galois extensions of type (𝐴, +) with Galois group 𝐺
+         we need to collect all the Hopf-Galois extensions constructed for every
+         brace 𝐵𝑖 . All these Hopf-Galois extensions are distinct.
+The above reasoning can be applied to any brace, so in particular can be applied
+to all braces constructed in our paper. This would involve some calculations
+to characterise automorphisms of the constructed braces, so we omitted the
+calculations and only explained the main ideas in this chapter.
+
+References
+      [1] Acri, Emiliano; Bonatto Marco. Skew braces of size 𝑝𝑞. Comm. Alge-
+          bra 48 (2020), no. 5, 1872–1881. MR4085764, Zbl 1437.16027, arXiv:1908.03228,
+          doi: 10.1080/00927872.2019.1709480. 495
+      [2] Bachiller, David. Classification of braces of order 𝑝3 . J. Pure Appl. Alge-
+          bra 219 (2015), no. 8, 3568–3603. MR3320237, Zbl 1312.81099, arXiv:1407.5224,
+          doi: 10.1016/j.jpaa.2014.12.013. 495, 515, 517, 519
+     SOME BRACES OF CARDINALITY 𝑝4 AND RELATED HOPF-GALOIS EXTENSIONS                    521
+
+ [3] Bachiller, David. Counterexample to a conjecture about braces. J. Al-
+     gebra 453 (2016), 160–176. MR3465351, Zbl 1338.16022, arXiv:1507.02137,
+     doi: 10.1016/j.jalgebra.2016.01.011. 497, 500, 501, 519
+ [4] Burnside, William. Theory of groups of finite order. EBook, 40395. Project Gutenberg,
+     Urbana, Illinois, 2012. xv+456 pp. https://www.gutenberg.org/ebooks/40395. 497
+ [5] Catino, Francesco; Rizzo Roberto. Regular subgroups of the affine group and rad-
+     ical circle algebras. Bull. Aust. Math. Soc. 79 (2009), no. 1, 103–107. MR2486886, Zbl
+     1184.20001, doi: 10.1017/S0004972708001068. 496
+ [6] Cedó, Ferran; Jespers Eric; Okniński, Jan. Braces and the Yang–Baxter equa-
+     tion. Comm. Math. Phys. 327 (2014), no. 1, 101–116. MR3177933, Zbl 1287.81062,
+     arXiv:1205.3587, doi: 10.1007/s00220-014-1935-y. 496, 497, 502
+ [7] Cedó, Ferran; Jespers Eric; Okniński, Jan. Primitive set-theoretic solutions
+     of the Yang–Baxter equation. Commun. Contemp. Math. (2022). arXiv:2003.01983,
+     doi: 10.1142/S0219199721501054.
+ [8] Cedó, Ferran; Jespers Eric; del Rio, Ángel. Involutive Yang–Baxter groups.
+     Trans. Amer. Math. Soc. 362 (2010), no. 5, 2541- 2558. MR2584610, Zbl 1188.81115,
+     arXiv:0803.4054, doi: 10.1090/S0002-9947-09-04927-7. 498, 511
+ [9] Dietzel, Carsten. Braces of order 𝑝2 𝑞. J. Algebra. Appl. 20 (2021), no.
+     8, Paper No. 2150140. 24 pp. MR4297324, Zbl 07411750, arXiv:1801.06911,
+     doi: 10.1142/S0219498821501401. 495
+[10] Gateva-Ivanova, Tatiana. Set-theoretic solutions of the Yang–Baxter equation, braces
+     and symmetric groups. Adv. Math. 338 (2018), 649–701. MR3861714, Zbl 1437.16028,
+     arXiv:1507.02602, doi: 10.1016/j.aim.2018.09.005. 494
+[11] Guarnieri, Leandro; Vendramin, Leandro. Skew braces and the Yang–Baxter
+     equation. Math. Comp.86, (2017), no. 307, 2519–2534. MR3647970, Zbl 1371.16037,
+     arXiv:1511.03171, doi: 10.1090/mcom/3161. 495
+[12] Nejabati Zenouz, Kayvan. Skew braces and Hopf–Galois structures of Heisenberg
+     type. J. Algebra 524 (2019), 187–225. MR3905210, Zbl 1444.16049, arXiv:1804.01360,
+     doi: 10.1016/j.jalgebra.2019.01.012. 519
+[13] Nejabati Zenouz, Kayvan. On Hopf-Galois Structures and Skew Braces of Order 𝑝3 .
+     Ph.D. thesis. The University of Exeter, 2018. 495, 519
+[14] Rump, Wolfgang. Classification of cyclic braces. J. Pure. Appl. Algebra 209 (2007), no.
+     3, 671–685. MR2298848, Zbl 1170.16031, doi: 10.1016/j.jpaa.2006.07.001. 495
+[15] Rump, Wolfgang. Classification of cyclic braces. II. Trans. Amer. Math. Soc. 372 (2019),
+     no. 1, 305–328. MR3968770, Zbl 1417.81140, doi: 10.1090/TRAN/7569. 495
+[16] Rump, Wolfgang. Braces, radical rings, and the quantum Yang–Baxter equa-
+     tion. J. Algebra 307 (2007), no. 1, 153–170. MR2278047, Zbl 1115.16022,
+     doi: 10.1016/j.jalgebra.2006.03.040. 496, 497, 499
+[17] Rump, Wolfgang. The brace of a classical group. Note. Mat. 34 (2014), no. 1, 115-144.
+     MR3291816, Zbl 1344.14029, doi: 10.1285/I15900932V34N1P115. 495, 496
+[18] Smoktunowicz, Agata. On Engel groups, nilpotent groups, rings, braces and
+     the Yang–Baxter equation. Trans. Amer. Math. Soc. 370 (2018), no. 9, 6535–6564.
+     MR3814340, Zbl 1440.16040, arXiv:1509.00420, doi: 10.1090/tran/7179. 497
+[19] Smoktunowicz, Agata. Algebraic approach to Rump’s results on relations be-
+     tween braces and pre-Lie algebras. J. Algebra. Appl. (2020). arXiv:2007.09403,
+     doi: 10.1142/S0219498822500542.
+[20] Smoktunowicz, Agata. A new formula for Lazard’s correspondence for finite braces
+     and pre-Lie algebras. J. Algebra 594 (2022), 202–229. MR4353236, Zbl 07459375,
+     arXiv:2011.07611, doi: 10.1016/j.jalgebra.2021.11.027. 495, 515
+[21] Smoktunowicz, Agata; Vendramin, Leandro. On skew braces (with an appendix
+     by N. Byott and L. Vendramin) J. Comb. Algebra 2 (2018), no. 1, 47–86. MR3763907, Zbl
+     1416.16037, arXiv:1705.06958, doi: 10.4171/JCA/2-1-3. 495, 519
+522              D. PULJIĆ, A. SMOKTUNOWICZ AND K. NEJABATI ZENOUZ
+
+  [22] Vendramin, Leandro. Problems on skew left braces. Adv. Group Theory Appl. 7 (2019),
+       15–37. MR3974481, Zbl 1468.16050, arXiv:1807.06411, doi: 10.32037/agta-2019-003. 495
+
+(D. Puljić) School of Mathematics, The University of Edinburgh, James Clerk Maxwell
+Building, The Kings Buildings, Mayfield Road EH9 3JZ, Edinburgh, UK
+s1557452@sms.ed.ac.uk
+
+(A. Smoktunowicz) School of Mathematics, The University of Edinburgh, James Clerk
+Maxwell Building, The Kings Buildings, Mayfield Road EH9 3JZ, Edinburgh, UK
+A.Smoktunowicz@ed.ac.uk
+
+(K. Nejabati Zenouz) School of Computing and Mathematical Sciences, The Univer-
+sity of Greenwich, Queen Mary’s Building, Park Row, SE10 9LS, London, UK
+K.NejabatiZenouz@greenwich.ac.uk
+This paper is available via http://nyjm.albany.edu/j/2022/28-19.html.
+

@@ -1,0 +1,1079 @@
+                                             A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND
+                                                              SKEW BRACES
+
+                                                                                 S. TRAPPENIERS
+
+
+                                                    Abstract. We develop a Lazard correspondence between post-Lie rings and
+arXiv:2406.02475v3 [math.RA] 18 Oct 2024
+
+
+
+
+                                                    skew braces that satisfy a natural completeness condition. This is done through
+                                                    a thorough study of how the Lazard correspondence behaves on semi-direct
+                                                    sums of Lie rings. In particular, for a prime p and k < p, we obtain a corre-
+                                                    spondence between skew braces of order pk and left nilpotent post-Lie rings
+                                                    of order pk on a nilpotent Lie ring. This therefore extends results by Smok-
+                                                    tunowicz.
+
+
+
+
+                                                                                1. Introduction
+                                              In 1954, Lazard proved a correspondence between Lie rings and groups satisfying
+                                           certain completeness and divisibility conditions [23]. This built upon earlier work
+                                           by Malcev [24]. The nowadays better known version of the Lazard correspondence,
+                                           although more restrictive than the original version, states that for pk a prime power,
+                                           there is a bijective correspondence between nilpotent Lie rings of order pk and
+                                           nilpotency class at most p − 1, and nilpotent groups of order pk of nilpotency class
+                                           at most p − 1. In particular, one finds a correspondence between groups of order
+                                           pk and nilpotent Lie rings of order pk for k < p. This has proved to be very useful
+                                           in the classification of finite p-groups, see for example [27].
+                                              Pre-Lie algebras, also called left-symmetric algebras, arose as early as in 1881
+                                           in the work of Cayley [12], only to resurface again 80 years later in the works of
+                                           Vinberg [41] and Koszul [22]. See [8] for a survey on pre-Lie algebras. One of
+                                           the motivations to study pre-Lie algebras comes from geometry, as they appear
+                                           naturally in the study of regular affine actions of Lie groups [21]. More recently,
+                                           the notion of a post-Lie algebra was introduced in the works of Vallette [40], see also
+                                           [16]. For R a commutative ring, a post-Lie R-algebra is a Lie R-algebra a, whose
+                                           Lie bracket we denote by [−, −], together with an R-bilinear map ⊲ : a × a → a
+                                           satisfying:
+                                           (1.1)                        x ⊲ [y, z] = [x ⊲ y, z] + [y, x ⊲ z],
+                                           (1.2)                        [x, y] ⊲ z = (x, y, z)⊲ − (y, x, z)⊲ ,
+                                           with (x, y, z)⊲ := x ⊲ (y ⊲ z) − (x ⊲ y) ⊲ z. If a is abelian, then (a, ⊲) is a pre-Lie
+                                           R-algebra. A post-Lie Z-algebra, respectively pre-Lie Z-algebra, is called a post-Lie
+                                           ring, respectively a pre-Lie ring. For a post-Lie R-algebra (a, ⊲), define
+                                           (1.3)                          {a, b} := [a, b] + a ⊲ b − b ⊲ a.
+                                           It follows directly from (1.1) and (1.2) that this defines a second Lie R-algebra
+                                           structure on the underlying R-algebra a. We will denote this Lie R-algebra by a◦ .
+                                              Braces were introduced in 2006 by Rump [30, 31] in the study of the set-
+                                           theoretical solutions to the Yang–Baxter equation. They were subsequently gener-
+                                           alized by Guarnieri and Vendramin to skew braces [18]. A skew brace is a triple
+
+                                              2020 Mathematics Subject Classification. 20N99, 17D25, 20F40.
+                                              Key words and phrases. post-Lie ring, pre-Lie ring, brace, skew brace, left nilpotent, Lazard
+                                           correspondence.
+                                                                                          1
+2                                   S. TRAPPENIERS
+
+
+(A, ·, ◦) with A a set and (A, ·) and (A, ◦) group structures such that
+                           a ◦ (b · c) = (a ◦ b) · a−1 · (a ◦ b),
+holds for all a, b, c ∈ A. Here a−1 denotes the inverse of a in (A, ·). When (A, ·)
+is abelian, then (A, ·, ◦) is called a brace. For braces, the notation (A, +, ◦) is also
+common (in fact, this is also the case for skew braces, but to avoid any possible
+confusion we will abstain from using + for a non-abelian group operation). Skew
+braces are essentially the same as bijective 1-cocycles of groups or regular subgroups
+of the holomorph of a group. In this sense, they were already being studied in a
+geometric framework in the form of regular affine actions of Lie groups on vector
+spaces [3, 26] long before they were formally introduced. Since pre-Lie algebras
+played an important role there, some connection between skew braces and pre-Lie
+rings is to be expected. This was indeed first stated by Rump [32] for R-braces.
+Bachiller then used the Lazard correspondence to construct a counterexample of a
+conjecture on braces [4], starting from a counterexample by Burde [7] to a question
+by Milnor [26] (note that the first counterexample to Milnor’s question was given
+earlier by Benoist [6]).
+   Smoktunowicz proved that the construction of the group of flows, as defined
+for pre-Lie algebras in [2], could be adapted to left nilpotent pre-Lie rings of prime
+power order pk , with k +1 < p, in order to obtain braces [37] with the same additive
+structure. Here, a post-Lie ring (a, ⊲) is left nilpotent if there exists some n such
+that an = 0 where a1 = a and ai+1 is the subgroup of (a, +) generated by a ⊲ b
+for a ∈ a, b ∈ ai , right nilpotency is defined analogously. Similarly, a skew brace
+(A, ·, ◦) is left nilpotent if there exists some n such that An = 1, where A1 = A and
+Ai+1 is the subgroup of (A, ·) generated by the elements a ∗ b = a−1 · (a ◦ b) · b−1
+for all a ∈ A, b ∈ Ai , right nilpotency is defined analogously. Recall that a skew
+brace of prime power order is always left nilpotent [13]. It is not immediately clear
+whether Smoktunowicz’s construction is invertible, an inverse construction is given
+only in the case of strongly nilpotent braces of order pk , with k + 1 < p, and with
+strong nilpotency index at most p − 1. Here strong nilpotency is equivalent to
+the structures being both left and right nilpotent [35]. This correspondence was
+used to classify all strongly nilpotent braces of order p4 , for p > 55 , in [28] while
+the non-strongly nilpotent ones of this order were classified earlier in [29]. In [34],
+Shalev and Smoktunowicz give a construction that starts from a brace (A, +, ◦) of
+order pk , with k + 1 < p, in order to obtain a pre-Lie ring with additive group
+(A, +)/{a ∈ A | p2 a = 0}. Although the strong nilpotency condition is no longer
+present, one can not hope that this yields a correspondence as a quotient by a
+non-trivial subgroup is taken.
+   Recently, Bai, Guo, Sheng and Tang showed how from a regular affine action of
+a Lie group onto another Lie group, one obtains a post-Lie algebra through differ-
+entiation [5] (note that, although not explicitly stated in this way, this construction
+also appears in [9]). This extended the earlier techniques to obtain a pre-Lie alge-
+bra in the case that the latter group is Rn . Conversely, also in [5] a construction
+by formal integration was given to construct a skew brace starting from a post-Lie
+algebra of characteristic 0 and with some completeness conditions.
+   In Section 2 we recall the necessary information on the Lazard correspondence,
+and some basic notions on post-Lie rings and skew braces. In Sections 3 and 4 we
+introduce the notion of filtered post-Lie rings and filtered skew braces. For both
+structures we define the property of being Lazard in a natural way. We construct
+a natural filtration on any post-Lie ring or skew brace. As a consequence, we prove
+that if (A, ·, ◦) is a left nilpotent skew brace and (A, ·) is a nilpotent group, then
+also (A, ◦) is a nilpotent group; see Lemma 4.11 and Theorem 4.12. This result was
+previously proved by Cedó, Smoktunowicz and Vendramin for finite skew braces
+       A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                     3
+
+
+[13, Theorem 4.8]. The introduction of a new notion of nilpotency for skew braces,
+coined L-nilpotency, is essential in our proof and also provides a natural upper
+bound on the nilpotency class of (A, ◦) in this case.
+   In Section 5 we first prove that the exponential and logarithmic maps give a
+correspondence between certain derivations and automorphisms of Lazard Lie rings,
+mimicking the geometric correspondence given by integration and differentiation.
+We then prove the final correspondence between Lazard post-Lie rings and Lazard
+skew braces, its most general formulation is given in Theorem 5.9 and the version for
+finite structures in Theorem 5.12. A more restrictive version of this correspondence,
+although arguably the most interesting for classification purposes, is the following.
+Theorem 1.1. Let p be a prime and k < p. There is a bijective correspondence
+between skew braces of size pk and left nilpotent post-Lie rings of size pk whose
+underlying Lie ring is nilpotent. This correspondence restricts to braces of size pk
+and left nilpotent pre-Lie rings of size pk .
+    This correspondence is explicitly described in Propositions 5.7 and 5.8. In par-
+ticular, the brace associated to a pre-Lie ring is precisely the one obtained by the
+group of flows construction as in [37]. Therefore, Theorem 1.1 effectively extends
+Smoktunowicz’s correspondence [37, Theorem 14] which imposed stronger nilpo-
+tency conditions. This provides an affirmative answer to [37, Question 1] and [20,
+Problem 20.92 b)]. When Proposition 5.7 is applied to post-Lie algebras over a
+field of characteristic 0, one recovers the formal integration by Bai, Guo, Sheng and
+Tang [5, Theorem 5.22] with less restrictive conditions.
+    In [5, Section 5.2] the authors propose the problem of finding a suitable differen-
+tiation and formal integration theory for finite skew braces and post-Lie rings. One
+such approach is precisely the one using the exponential and the logarithmic map
+as in Section 5. On the other hand, a technique used by Smoktunowicz in [36, 37]
+could also be seen as an discrete differentiation. In Section 6 we motivate this and
+we give an application to skew braces that extends a result of Smoktunowicz.
+
+                                 2. Preliminaries
+   We first recall the precise statement of the Lazard correspondence together with
+some useful related results. Although we use slightly different terminology, all of
+the statements regarding the Lazard correspondence follow from the treatment in
+[19, 23].
+   For a group G and P a set of prime numbers, G is P -divisible if for every element
+g ∈ G and every n whose prime divisors are contained in P , there exists a unique
+                                                               1
+h ∈ G such that hn = g. This unique element is denoted g n . If G is an abelian
+group and its group operation is denoted by +, then we use the notation n1 g.
+   A filtered group is a group G with a filtration of normal subgroups
+                              G = G0 ⊇ G1 ⊇ G2 ⊇ ...
+such that [Gi , Gj ] ⊆ Gi+j . Any subgroup H of a filtered group G has a natural
+filtration given by Hi = H ∩ Gi . We endow a filtered group with the topology with
+base {gGi | g ∈ G, i ≥ 1}. A homomorphism of filtered groups f : G → H is a
+group homomorphism such that f (Gi ) ⊆ Hi . A filtered group G is complete if it is
+Hausdorff and complete as topological space. A Lazard group is a complete filtered
+group G such that G0 = G1 and Gi is Pi -divisible for every i ≥ 1, where Pi is the
+set of all primes less than or equal to i.
+Example 2.1. On any group G one obtains a natural filtration by setting G0 =
+G1 = G and Gi+1 = [G, Gi ] for i ≥ 1. If there exists some k such that Gk+1 = {1}
+(meaning that G is nilpotent) then the induced topology is discrete hence complete.
+4                                            S. TRAPPENIERS
+
+
+If we moreover assume that G is a p-group for some prime k < p, then G is easily
+seen to be a Lazard group since every p-group is Pi -divisible for i < p. However,
+note that any Pp -divisible p-group is necessarily trivial.
+    Similarly, a filtered Lie ring is a Lie ring a with a filtration of ideals
+                                         a = a0 ⊇ a1 ⊇ a2 ⊇ ...
+such that [ai , aj ] ⊆ ai+j for all i, j ≥ 1. A homomorphism of filtered Lie rings
+f : a → b is a Lie ring homomorphism such that f (ai ) ⊆ bi . We endow a filtered
+group with the topology with base {x + ai | x ∈ a, i ≥ 1}. A filtered Lie ring is
+complete if its underlying additive group (with the same filtration) is complete. A
+Lazard Lie ring is a Lie ring whose underlying additive group is Lazard.
+Example 2.2. On any Lie ring a one obtains a natural filtration by setting a0 =
+a1 = a and ai+1 = [a, ai ] for i ≥ 1. If there exists some k such that ak+1 = {1}
+(meaning that a is nilpotent) then the induced topology is discrete hence complete.
+If (a, +) is a p-group for k < p then a is Lazard.
+   The benefit of working in a complete Lie ring a is that the Baker-Campbell-
+Hausdorff (BCH) formula can be evaluated in any two elements. Recall that this
+formula originates in Lie theory and its first terms are given by
+                            1         1                       1
+(2.1) BCH(x, y) = x+ y + [x, y]+ ([x, [x, y]]+ [y, [y, x]])− [y, [x, [x, y]]]+ . . . ,
+                            2        12                       24
+where higher terms are of order at least 5. The prime divisors of the denominator
+of coefficients of order n only involve primes ≤ n, which indeed ensures that these
+are well-defined in a. The element BCH(x, y), for x, y ∈ a, is then interpreted as
+limk→∞ BCHk (x, y) where BCHk is obtained by truncating the formula at order k.
+Note in particular that if x, y ∈ a commute, then BCH(x, y) = x + y. In particular,
+BCH(x, −x) = 0 and BCH(x, x) = 2x.
+    Similarly, in a Lazard group A, one can evaluate formal infinite products of
+commutators as long as their order goes to infinity and as long as the fractional
+powers involve only primes ≤ n for commutators of order n. Two examples of such
+formulae are the first and second inverse BCH formula (see also [15], [19]), whose
+first terms are
+                                         1             1                    1                  1
+(2.2)          P (g, h) = gh[g, h]− 2 [g, [g, h]] 12 [g, [g, [g, h]]]− 24 [h, [h, [g, h]]] 24 · · · ,
+and
+(2.3)
+                              1             1                  1                  1                  1
+  Q(g, h) = [g, h][g, [g, h]] 2 [h, [g, h]] 2 [g, [g, [g, h]]] 3 [h, [g, [g, h]]] 4 [h, [h, [g, h]]] 3 · · · ,
+where in this case [g, h] is the group theoretic commutator ghg −1 h−1 and further
+factors involve iterated brackets of order at least 5.
+Theorem 2.3. Let a be a Lazard Lie ring, then Laz(a) := (a, BCH) is a Lazard
+group with respect to the same filtration. If f : a → b is a homomorphism of Lazard
+Lie rings, then f : Laz(a) → Laz(b) is a homomorphism of Lazard groups.
+   Conversely, let A be a Lazard group. Then Laz−1 (A) := (A, +, [−, −]), where
+a + b := P (a, b) and [a, b] := Q(a, b), is a Lazard Lie ring with respect to the
+same filtration. This construction is also functorial. Laz and Laz−1 are inverse
+constructions.
+Corollary 2.4. Let a be a Lazard Lie ring, then the Lazard sub Lie rings of a and
+Lazard subgroups of Laz(a) coincide. Also, Lazard ideals of a and Lazard normal
+subgroups of Laz(a) coincide.
+       A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                      5
+
+
+  A filtered ring R is a ring together with a descending filtration of ideals
+                                 A0 ⊇ A1 ⊇ A2 ⊇ . . .
+such that Ai Aj ⊆ Ai+j . A filtered ring R is Lazard if its underlying additive group
+is Lazard. If on a Lazard ring we consider the commutator bracket, then we obtain
+a Lazard Lie ring. Note that a Lazard ring is necessarily non-unital, but one can
+adjoin a unit to obtain the Dorroh extension R′ = Z ⊕ R with filtration R0′ = R′ ,
+Ri′ = {0} ⊕ Ri for i ≥ 1. Then the exponential
+                               ∞                n
+                              X    1 k         X    1 k
+                    exp(a) =         a = lim          a ∈1+R
+                                  k!      n→∞      k!
+                               k=0              k=0
+is well-defined for a ∈ R. Similarly, for any a ∈ 1 + R the logarithm
+                     ∞                             n
+                     X          1                 X          1
+           log(a) =     (−1)k+1 (a − 1) = lim        (−1)k+1 (a − 1) ∈ R
+                                k           n→∞              k
+                    k=1                           k=1
+is a well-defined element and exp and log are mutually inverse. Then the Baker-
+Campbell-Hausdorff formula is obtained as BCH(a, b) = log(exp(a) exp(b)). Simi-
+larly, P (g, h) = exp(log(g)+log(h)) and Q(g, h) = exp(log(g) log(h)−log(h) log(g))
+where we evaluate P and Q in the Lazard group 1 + R. Explicitly we have the fol-
+lowing result.
+Proposition 2.5. Let a be a Lazard Lie ring embedding in a Lazard ring R. Then
+exp(a) is a Lazard group for the filtration exp(a)i = exp(ai ) and exp : Laz(a) →
+exp(a) is an isomorphism of Lazard groups.
+   Let a be a filtered Lie ring. We define End(a) as the ring of endomorphisms of
+the underlying additive group (a, +). We have a natural filtration on End(a) given
+by
+                            End(a)j = {f | f (ai ) ⊆ ai+j },
+which makes End(a) into a filtered ring. If a is complete, then also End(a) is easily
+seen to be complete. Let End(a)+ denote the filtered subring of End(a) consisting
+of all elements in End(a)1 . If a is Lazard, then it follows directly that End(a)+ is
+Lazard.
+Remark 2.6. Note that although the difference between End(a)+ and End(a)1 is
+subtle, we consider End(a)1 simply as an ideal of End(a) while End(a)+ is seen as
+a filtered ring on its own. Throughout this paper we use a similar notation for any
+filtered ring, group or Lie ring to indicate the filtered substructure consisting of all
+elements contained in the second term in the filtration.
+  For a a filtered Lie ring and a ∈ a, we denote by ada the adjoint map b 7→ [a, b].
+Clearly, ad : a → End(a) : a 7→ ada is a homomorphism of filtered Lie rings, where
+on End(a) we consider the commutator bracket.
+Lemma 2.7. Let a be a Lazard Lie ring, then BCH(a, BCH(b, −a)) = exp(ada )(b)
+for all a, b ∈ g.
+   At last, we fix some notation and recall some important substructures of post-Lie
+rings and skew braces.
+   Let (a, ⊲) be a post-Lie ring and a ∈ a. We obtain a new Lie bracket on the
+abelian group a by defining {a, b} := [a, b] + a ⊲ b − b ⊲ a. This Lie ring is denoted
+by a◦ . We will denote left multiplication by a as La , so La (b) = a ⊲ b. Note that
+(1.2) states precisely that a◦ → End(a) : a 7→ La is a Lie ring homomorphism.
+Definition 2.8. Let (a, ⊲) be a post-Lie ring. A sub Lie ring I of (a, ⊲) is
+     • a sub post-Lie ring if I is closed under the operation ⊲,
+6                                    S. TRAPPENIERS
+
+
+      • a left ideal if x ⊲ y ∈ I for all x ∈ a, y ∈ I,
+      • a strong left ideal if it is a left ideal and it is an ideal of a,
+      • an ideal if it is a strong left ideal and moreover I is an ideal of a◦ .
+Example 2.9. Let (a, ⊲) be a post-Lie ring, then the fix
+                       Fix(a) := {a ∈ a | b ⊲ a = 0 for all b ∈ a},
+is a left ideal. The socle
+                   Soc(a) := {a ∈ a | a ⊲ b = [a, b] = 0 for all b ∈ a},
+and annihilator
+              Ann(a) := {a ∈ a | a ⊲ b = b ⊲ a = [a, b] = 0 for all b ∈ a},
+are ideals. For the latter statement, note that for a ∈ Soc(a) and b, c ∈ a, it follows
+from (1.1) that 0 = b ⊲ [a, c] = [b ⊲ a, c] and from (1.2) that 0 = [a, b] ⊲ c = −(b ⊲ a) ⊲ c
+hence b ⊲ a ∈ Soc(a). As {b, a} = b ⊲ a, Soc(a) and Ann(a) are ideals.
+  Let (A, ·, ◦) be a skew brace. Then we define λa (b) := a−1 · (a ◦ b) and in this
+way we obtain an action of (A, ◦) on (A, ·) by automorphisms
+                             λ : (A, ◦) → Aut(A, ·) : a 7→ λa .
+Note that the operation a ∗ b := a−1 · (a ◦ b) · b−1 can also be expressed as λa (b) · b−1 .
+Definition 2.10. Let (A, ·, ◦) be a skew brace. A subgroup I of (A, ·) is
+     • a sub skew brace if I is a subgroup of (A, ◦),
+     • a left ideal if λa (b) ∈ I for all a ∈ A, b ∈ I,
+     • a strong left ideal if I is a left ideal and also a normal subgroup of (A, ·),
+     • an ideal if I is a strong left ideal and also a normal subgroup of (A, ◦).
+Example 2.11. Let (A, ·, ◦) be a skew brace, then the fix
+                    Fix(A) := {a ∈ A | b ◦ a = b + a for all b ∈ A},
+is a left ideal of A. The socle
+               Soc(A) := {a ∈ A | a ◦ b = a + b = b + a for all b ∈ A},
+and the annihilator
+           Ann(A) := {a ∈ A | b ◦ a = a ◦ b = a + b = b + a for all b ∈ A},
+are ideals of A.
+
+                             3. Filtered post-Lie rings
+Definition 3.1. A filtered post-Lie ring is a post-Lie ring (a, ⊲) together with a
+filtration ai , i ≥ 0, of the Lie ring a where each ai is a strong left ideal.
+   Let a be a filtered Lie ring. We define Der(a) as the set of all derivations
+of a contained in End(a), these form a sub Lie ring of End(a) under the usual
+commutator Lie bracket. Thus they have a natural filtration Der(a)i = End(a)i ∩
+Der(a). Let δ : g → Der(a) be a homomorphism of filtered Lie rings. We define the
+semi-direct sum a ⊕δ g as the direct sum of the additive groups together with the
+bracket
+                   [(a, x), (b, y)] = ([a, b] + δx (b) − δy (a), [x, y]).
+It is well-known that this makes a ⊕δ g into a Lie ring. The proof of the following
+statement is straightforward; the fact that this is indeed a filtration follows directly
+from the Jacobi identity.
+       A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                           7
+
+
+Lemma 3.2. Let a, g be filtered Lie rings and δ : g → Der(a) a filtered Lie ring
+homomorphism. Then a⊕δ g is a filtered Lie ring for the filtration (a⊕δ g)i = ai ⊕δ gi .
+If moreover a and g are Lazard rings then a ⊕δ g is a Lazard ring.
+   In particular, we will be interested in the semidirect sum aff(a) := a ⊕δ Der(a)
+where δ = idDer(a) and its sub Lie ring aff(a)+ = a+ ⊕ Der(a)+ . If a is Lazard, then
+so is Der(a)+ since it is closed in End(a), and therefore also aff(a)+ is Lazard.
+Definition 3.3. Let a be a Lie ring, a sub Lie ring g of aff(a) is t-surjective,
+respectively t-bijective if the projection pra : aff(a) → a to pra : g → a restricted to
+g yields a surjective, respectively bijective, map from g to a.
+Proposition 3.4. Let a be a filtered Lie ring. Then there is a bijective correspon-
+dence between operations ⊲ : a × a → a making (a, ⊲) into a filtered post-Lie ring
+and t-bijective sub Lie rings of aff(a).
+Proof. This proof is a slight variation of the proof of [10, Proposition 2.12]. We
+therefore only give a sketch of the correspondence.
+   If (a, ⊲) is a filtered post-Lie ring then {(a, La ) | a ∈ a} is its associated t-bijective
+sub Lie ring of aff(a), where La (b) = a ⊲ b. Since the filtration on a consists of left
+ideals we find indeed that the maps La are contained in End(a).
+   Conversely, if we are given a t-bijective sub Lie ring g of aff(a) then we define
+a ⊲ b as La (b) where La is the unique endomorphism of a satisfying (a, La ) ∈ g. In
+this way (a, ⊲) is a filtered post-Lie ring. Since the maps La respect the filtration
+on a we find that ai is a left ideal for each i ≥ 0.                                        
+  Recall that for every post-Lie ring (a, ⊲) we can define the Lie ring a◦ with the
+same underlying additive structure as a and Lie bracket given by (1.3).
+Corollary 3.5. Let (a, ⊲) be a filtered post-Lie ring. Then a◦ is a filtered Lie ring
+for the filtration a◦i = {a ∈ ai | La ∈ Der(a)i }.
+Proof. Let g be the associated t-bijective sub Lie ring of aff(a) as in Proposition 3.4.
+Then it is easily verified that the bijection pra : g → a◦ is a Lie ring homomorphism.
+By transferring the filtration from g onto a◦ the statement follows.                  
+Definition 3.6. Let (a, ⊲) be a filtered post-Lie ring, then (a, ⊲) is Lazard if both
+a and a◦ are Lazard Lie rings.
+   We now construct a natural minimal filtration on a post-Lie ring (a, ⊲). Induc-
+tively define L1 (a) as a and Li+1 (a) as the subgroup of (a, +) generated by all
+elements of the form a ⊲ b and [a, b] where a ∈ A, b ∈ Li (A). One easily verifies
+that Li (a) gives a descending filtration of strong left ideals (a, ⊲).
+Lemma 3.7. Let (a, ⊲) be a post-Lie ring, then setting a0 = a and ai = Li (a) for
+i ≥ 1 makes (ai , ⊲) into a filtered post-Lie ring.
+Proof. It is straightforward to see that the ai form a descending chain of strong
+left ideals. It remains to show that [Li (a), Lj (a)] ⊆ Li+j (a) for all i, j ≥ 1. Let
+h = {La | a ∈ a} ≤ Der(a) and consider the semi-direct sum t = a ⊕δ h where
+δ : h → Der(a) is the inclusion map. Then we find [(a, Lb ), (c, 0)] = ([a, c] + b ⊲ c).
+It follows that [t, t] = L2 (a) × [h, h]. For a Lie ring g we introduce the following
+notation for iterated commutators: γ 1 (g) = g and [γ i+1 (g) = [g, γ i (g)]. Then the
+previous equality can be rewritten as γ 2 (t) = L2 (a) × γ 2 (h) and by induction one
+finds γ i (t) = Li (a) × γ i (h). It is well-known that [γ i (t), γ j (t)] ⊆ γ i+j (t), so in
+particular
+       [Li (a), Lj (a)] × {0} = [Li (a) × {0}, Lj (a) × {0}] ⊆ Li+j (a) × γ i+j (h),
+thus [Li (a), Lj (a)] ⊆ Li+j (a).                                                          
+8                                   S. TRAPPENIERS
+
+
+  The above constructed filtration naturally yields a notion of nilpotency, which
+we coin L-nilpotency. Note that for pre-Lie rings this is the same as left nilpotency.
+Definition 3.8. A post-Lie ring (a, ⊲) is L-nilpotent if Lk+1 (a) = 0 for some k ≥ 0.
+The minimal such k, if it exists, is the L-nilpotency class of (a, ⊲).
+Lemma 3.9. Let (a, ⊲) be a post-Lie ring. Then (a, ⊲) is L-nilpotent if and only if
+(a, ⊲) is left nilpotent and a is a nilpotent Lie ring.
+Proof. From the definition of Li (a) it is clear that if (a, ⊲) is L-nilpotent then it is
+left nilpotent and a is a nilpotent Lie ring.
+   Conversely, assume that (a, ⊲) is left nilpotent and a is a nilpotent Lie ring.
+Let a = γ 1 (a) ⊇ ... ⊇ γ d (a) = {0} denote the lower central series of a and let c
+be such that ac+1 = {0} (recall that this is the left derived series defined in the
+introduction). Assume Li (a) ⊆ γ k (a) for some i, k ≥ 1, then [Li (a), a] ⊆ γ k+1 (a)
+hence Li+1 (a) ⊆ (a ⊲ Li (a)) + γ k+1 (a). In particular,
+                        Li+c (a) ⊆ ac+1 + γ k+1 (a) = γ k+1 (a).
+We now conclude by induction that Lkc+1 (a) ⊆ γ k+1 (a) = 1.                           
+
+Theorem 3.10. Let (a, ⊲) be an L-nilpotent post-Lie ring of class k. Then a◦ is
+nilpotent of class at most k and the k-th term in the lower central series of a◦ is
+contained in Ann(a).
+Proof. Let (a, ⊲) be L-nilpotent of class k and consider it as a filtered post-Lie ring
+with its canonical filtration. Then a◦k+1 ⊆ ak+1 = 0, so in particular a◦ is nilpotent
+of class at most k. Also, since a◦k = ak ∩ {a ∈ a | La ∈ End(a)k } but End(a)k = 0
+and clearly ak ∈ Z(a) ∩ Fix(a), the statement follows.                                
+
+   We end this section by relating L-nilpotency to the notion of transitivity (also
+called completeness) for pre-Lie algebras, as defined in [21]. Let F be a field of
+characteristic 0 and (a, ⊲) be a finite dimensional pre-Lie F-algebra. Recall that
+(a, ⊲) is transitive if for every a ∈ a, the map
+                              ra : a → a : b 7→ b + a ⊲ b,
+is a bijection. However, if a◦ is nilpotent, then this is equivalent to the left mul-
+tiplication maps La being nilpotent for all a ∈ a [33, Proposition 2]. By Engel’s
+theorem, this is equivalent with the existence of some n such that La1 · · · Lan = 0
+for all a1 , . . . , an ∈ a. It follows that transitivity coincides with L-nilpotency, or
+equivalently with the fact that its associated filtered pre-Lie ring is Lazard. Indeed,
+the divisibility condition is trivially satisfied, as ak = 0 for some k ≥ 0, also a◦k = 0
+and thus also the completeness follows for both a and a◦ . Note that the condition
+that all La are nilpotent also appears in [9, Theorem 3.1].
+
+                             4. Filtered skew braces
+Definition 4.1. A filtered skew brace is a skew brace (A, ·, ◦) together with a
+descending chain of strong left ideals Ai such that it is a filtration for (A, ·)
+Definition 4.2. Let G be a filtered group. By Aut(G) we denote the filtered group
+automorphisms of G and we define a filtration by
+                  Aut(G)i = {f | f (g)g −1 ∈ Gi+j , for all g ∈ Gj }.
+Lemma 4.3. Let G be a filtered group, then Aut(G) is a filtered group.
+       A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                         9
+
+
+Proof. Consider the semidirect product T = G ⋊ Aut(G). We identify G and
+Aut(G) with the subgroups G × {1} and {1} × Aut(G). Note that the subgroups
+Gi are normal in T . By assumption, [Aut(G)i , [Aut(G)j , Gk ]] ⊆ Gi+j+k , so by
+the Hall-Witt identity we find that [Gk , [Aut(G)i , Aut(G)j ]] ⊆ Gi+j+k and thus we
+conclude that [Aut(G)i , Aut(G)j ] ⊆ Aut(G)i+j .                                   
+Lemma 4.4. Let A, G be filtered groups and λ : G → Aut(A) a homomorphism
+of filtered groups. Then the semidirect product A ⋊λ G is a filtered group for the
+filtration (A ⋊λ G)i = Ai ⋊λ Gi is a filtered group.
+Proof. Since we are working in a semi-direct product we find that
+               [Ai ⋊λ Gi , Aj ⋊λ Gj ] = [Ai , Aj ][Ai , Gj ][Aj , Gi ][Gi , Gj ],
+where we identitify A and G with the corresponding subgroup of A ⋊ G. Clearly
+[Ai , Aj ] ⊆ Ai+j and [Gi , Gj ] ⊆ Gi+j . Since λ is a homomorphism of filtered group,
+also [Ai , Gj ] ⊆ Ai+j and [Aj , Gi ] ⊆ Ai+j which concludes the proof.             
+   Let A be a filtered group. We will particularly be interested in the holomorph
+of A, which by definition is the semi-direct product Hol(A) := A ⋊ Aut(A).
+Definition 4.5. Let A be a filtered group. A subgroup G ≤ Hol(A) is transitive,
+respectively regular, if prG : H → G is surjective, respectively bijective.
+   Note that if we consider the natural action of Hol(G) on G, i.e. (g, λ)·h = gλ(h),
+then transitive subgroups of Hol(G) are precisely the ones such that the associated
+action is transitive. Regular subgroups are precisely the ones that induces a regular
+(or also called simply transitive) action.
+Proposition 4.6. Let (A, ·) be a filtered group. There is a bijective correspondence
+between group structures (A, ◦) making (A, ·, ◦) into a filtered skew brace and regular
+subgroups of Hol(A, ·).
+Proof. The proof is only a slight variation of the proof of [18, Theorem 4.2], therefore
+we only give a sketch. Let (A, ◦) be a group operation such that (A, ·, ◦) is a filtered
+skew brace. Define G = {(a, λa ) | a ∈ A} ≤ Hol(A) then G is a regular subgroup
+of Hol(A). Note that Ai are strong left ideals so indeed λa respects this filtration
+for all a ∈ A.
+   Conversely, if G is a regular subgroup of Hol(A), we transfer the group structure
+of G onto A with the help of the bijection prA : G → A (or equivalently a ◦ b =
+a + λa (b) with λa the unique map such that (a, λa ) ∈ G) and we denote this new
+group operation by ◦. Then (A, ·, ◦) becomes a skew brace and by assumption the
+maps λa preserve the filtration Ai , hence the Ai are strong left ideals.             
+Corollary 4.7. Let (A, ·, ◦) be a filtered skew brace. Then (A, ◦) with the filtration
+(A, ◦)i = Ai ∩ {a ∈ A | λa ∈ Aut(A)i } is a filtered group.
+Proof. Let (A, ·, ◦) be a filtered skew brace and let G be the associated regular
+subgroup of Hol(A, ·) as in Proposition 4.6. Then Gi = G ∩ Hol(A, ·)i makes G
+into a filtered group. Transferring this filtration of G onto (A, ◦) through the
+isomorphism (A, ◦) → G : a 7→ (a, λa ) now yields the statement.               
+   The notion of a Lazard skew brace is now the natural one.
+Definition 4.8. Let (A, ·, ◦) be a filtered skew brace, then (A, ·, ◦) is Lazard if
+both (A, ·) and (A, ◦) are Lazard groups.
+   We now introduce a natural minimal filtration on skew braces. For (A, ·, ◦)
+a skew brace, define inductively L1 (A) = A and Li+1 (A) the subgroup of (A, ·)
+generated by all elements of the form a ∗ b := a−1 · (a ◦ b) · b−1 and a · b · a−1 · b−1 for
+10                                   S. TRAPPENIERS
+
+
+a ∈ A, b ∈ Li (A). Note that Li (A) is the left hand version of the series Rn (A, A)
+as defined in [1]. By induction, one sees that the Li (A) form a descending chain
+of strong left ideals of A. Also, note that if A is a brace, then Li (A) = Ai , so we
+recover the left derived series.
+Lemma 4.9. Let (A, ·, ◦) be a skew brace. Then setting A0 = A and Ai = Li (A)
+for i ≥ 1 makes (A, ·, ◦) into a filtered skew brace.
+Proof. The proof is almost word for word the same as Lemma 3.7. The only non-
+trivial part of the statement is that [Li (A), Lj (A)] ⊆ Li+j (A) for all i, j ≥ 1. Let
+                             H = {λa | a ∈ A} ≤ Aut(A, ·),
+and consider the semi-direct product T = (A, ·) ⋊β H where β : H → Aut(A, ·)
+is the inclusion map. Then we find [(a, λb ), (c, 1)] = ([a, c] + b ∗ c, 1). It follows
+that [T, T ] = L2 (A) × [H, H]. For a group G we define its lower central series as
+γ 1 (G) = G and [γ i+1 (G) = [g, γ i (G)]. Then the previous equality can be rewritten
+as γ 2 (T ) = L2 (A) × γ 2 (H) and by induction one finds γ i (T ) = Li (A) × γ i (H). It
+is well-known that [γ i (T ), γ j (T )] ⊆ γ i+j (T ), so in particular
+      [Li (A), Lj (A)] × {0} = [Li (a) × {0}, Lj (a) × {0}] ⊆ Li+j (a) × γ i+j (h),
+thus [Li (a), Lj (a)] ⊆ Li+j (a).                                                         
+   The canonical filtration introduced above leads to a natural notion of L-nilpotency
+of skew braces, which for braces coincides with left nilpotency.
+Definition 4.10. A skew brace (A, ·, ◦) is L-nilpotent if there Lk+1 (A) = 1 for
+some k ≥ 0. The minimal such k, if it exists, is the L-nilpotency class of A.
+  The proof of the following two is completely analogous to those of Lemma 3.9
+and Theorem 3.10.
+Lemma 4.11. Let (A, ·, ◦) be a skew brace. Then A is L-nilpotent if and only if A
+is left nilpotent and (A, ·) is a nilpotent group.
+Theorem 4.12. Let (A, ·, ◦) be an L-nilpotent skew brace of class k. Then (A, ◦)
+is nilpotent of class at most k and the k-th term in the lower central series of (A, ◦)
+is contained in Ann(A).
+
+     5. A correspondence between post-Lie rings and skew braces
+  Let a be a filtered Lie ring. We define Aut(a) as all filtered Lie ring automor-
+phisms of a and Aut(a)i = Aut(a) ∩ End(a)i for i ≥ 0.
+Lemma 5.1. Let a be a Lazard Lie ring. Then Aut(a)i = exp(Der(a)i ) for all
+i ≥ 1. In particular, exp : Laz(Der(a)+ ) → Aut(a)+ is a group isomorphism and
+thus Aut(a)+ is a Lazard group.
+Proof. Clearly exp(End(a)i ) = 1 + End(a) Pinfor i ≥ 1. Let δ ∈ Der(a)1 and x, y ∈ a.
+By induction one finds that δ n ([a, b]) = j=0 nj [δ j (a), δ n−j (b)] for n ≥ 0, hence
+                        ∞ X i                            ∞ X ∞
+                       X       1 n j                      X        1 j
+      exp(δ)([a, b]) =               [δ (a), δ n−j (b)] =              [δ (a), δ i (b)]
+                       n=0 j=0
+                               n!  j                      i=0 j=0
+                                                                  i!j!
+                     = [exp(δ)(a), exp(δ)(b)].
+Conversely, let δ ∈ End(a)1 such that exp(δ) ∈ Aut(a). We will prove by induction
+on k that
+                      δ([a, b]) ∈ [δ(a), b] + [a, δ(b)] + ai+j+k ,
+       A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                         11
+
+                                                                              T∞
+for all a ∈ ai , b ∈ aj which implies that δ([a, b]) − [δ(a), b] − [a, δ(b)] ∈ k=0 = {0}
+and thus δ ∈ Der(a). For k = 1, the statement is trivial. Assume that it holds for
+some k ≥ 1. We prove by induction on n that
+                                     n  
+                                    X   n j
+(5.1)                 δ n ([a, b] ∈        [δ (a), δ n−j (b)] + ai+j+k+1
+                                    j=0
+                                        j
+for a ∈ ai , b ∈ aj and n ≥ 2. By assumption,
+                           δ([a, b]) ∈ [δ(a), b] + [a, δ(b)] + ai+j+k ,
+so by applying δ on both sides we find
+                    δ 2 ([a, b]) ∈ δ([δ(a), b]) + δ([a, δ(b)]) + ai+j+k+1 .
+By assumption,
+                    δ([δ(a), b]) ∈ [δ 2 (a), b] + [δ(a), δ(b)] + ai+j+k+1 ,
+                    δ([a, δ(b)]) ∈ [δ(a), δ(b)] + [a, δ 2 (b)] + ai+j+k+1 ,
+so indeed (5.1) holds for n = 2. Similarly it follows that (5.1) holds for n ≥ 2. We
+then use (5.1) to obtain
+                                          ∞ X n
+                                         X            1
+   exp(δ)([a, b]) ∈ [a, b] + δ([a, b]) +                    [δ j (a), δ n−j (b)] + ai+j+k+1 ,
+                                         n=2 j=0
+                                                 j!(n − j)!
+while also
+                                                  ∞ X ∞
+                                                 X        1 j
+                   [exp(δ)(a), exp(δ)(b)] =                   [δ (a), δ i (b)].
+                                                 i=0 j=0
+                                                         i!j!
+Since exp(δ)([a, b]) = [exp(δ)(a), exp(δ)(b)] we find δ([a, b]) ∈ [δ(a), b] + [a, δ(b)] +
+ai+j+k+1 . We conclude that indeed exp(Der(a)i ) = Aut(a)i . The last part of the
+statement now follows from Proposition 2.5.                                             
+Lemma 5.2. Let a be a Lazard Lie ring, then Aut(a) = Aut(Laz(a)) as filtered
+groups.
+Proof. We know by Theorem 2.3 that automorphisms of a and Laz(a) coincide. It
+remains to verify that the filtrations coincide. Let x, y ∈ a such that x+y ∈ ai \ai+1 ,
+then
+                   [x, y] + ai+1 = [x, y] − [x + y, y] + ai+1 = ai+1 ,
+hence x + y + ai+1 = BCH(x, y) + ai+1 and thus BCH(x, y) ∈ ai \ ai+1 . We conclude
+that x + y ∈ ai if and only if BCH(x, y) ∈ ai . In particular, for Aut(a) and x ∈ ai
+we find BCH(φ(x), −x) ∈ ai+j if and only if φ(x) − x ∈ ai+j . We conclude that
+indeed Aut(a)i = Aut(Laz(a))i .                                                      
+Proposition 5.3. Let a, g be Lazard Lie rings and δ : g → Der(a) a homomorphism
+of filtered Lie rings. Then there is a unique filtered group isomorphism
+                           γ : Laz(a ⊕δ g) → Laz(a) ⋊λ Laz(g),
+such that γ(a, 0) = (a, 0) and γ(0, x) = (0, x), where λ : Laz(g) → Aut(Laz(a)) is
+given by λx = exp(δx ).
+Proof. Consider the split short exact sequence of Lazard Lie rings
+                       0           a         a ⊕δ g          g          0.
+The functoriality of Laz then yields a short exact sequence of Lazard groups
+
+             1         Laz(a)            Laz(a ⊕δ g)             Laz(g)           1.
+Together with Lemma 2.7 this proves the statement.                                         
+12                                      S. TRAPPENIERS
+
+
+   We continue with the same setting as Proposition 5.3. Since a × {0} is a normal
+subgroup of both Laz(a ⊕δ g) and Laz(a) ⋊λ Laz(g) and γ(a × {0}) = a × {0}, we
+find that γ does not affect the second component. Define V : a × g → a as pra γ,
+thus γ(a, x) = (V (a, x), x). Then in Laz(a) ⋊λ Laz(g) we find
+
+ (V (a, x), 0) = (V (a, x), x)(0, x)−1 = γ(a, x)γ(0, x)−1 = γ(BCH((a, x), (0, −x))),
+from which we conclude that V (a, x) = pra BCH((a, x), (0, −x)). From (2.1) we
+find
+                    1        1          1             1
+(5.2) V (a, x) = a + δx (a) + δx2 (a) + [a, δx (a)] + (δx ([a, δx (a)]) + δx3 (a)) + ...
+                    2        6         12            24
+where further terms are of order at least 5.
+   Similarly, we define U : a × g → a as U = pra γ −1 hence γ −1 (a, x) = (U (a, x), x).
+We find U (a, x) = pra (P ((a, λ), (0, λ−1 ))) with P as in (2.2). Explicitly the terms
+of order less than 5 are given by
+                                               1                            1
+(5.3)         U (a, λ) = a(aλ−1 (a)−1 )− 2 (aλ(a)a−2 λ−1 (a)a−1 ) 12
+                                                                                          1
+                           (aλ(a)λ2 (a)λ(a)−2 aλ(a)−1 λ−1 (a)−1 a2 λ(a−1 )a−1 )− 24
+                                                                                1
+                           (λ2 (a)λ(a)−1 aλ(a)−1 aλ−1 (a)−1 aλ(a)−1 ) 24 · · ·
+
+In the case that a is abelian we have more explicit formulae.
+
+Lemma 5.4. Let a, g be Lazard Lie rings and δ : g → Der(a) a homomorphism of
+filtered Lie rings. Let V, U : a × g → a be as defined above. If a is abelian, then
+                                       ∞
+                                       X 1
+(5.4)                     V (a, x) =           δ k−1 (a),
+                                             k! x
+                                       k=1
+                                        ∞
+                                       X     1
+(5.5)                     U (a, x) =           (−1)k+1 (λx − id)k−1 (a).
+                                             k
+                                       k=2
+
+Proof. Consider the abelian group M = Z ⊕ a with filtration Mi = 0 ⊕ ai for i ≥ 1.
+Let R = End(M )+ and define
+
+                               ρ : a ⊕δ g → R : (a, x) 7→ ρ(a,x) ,
+
+as ρ(a,x) (n, b) = (0, na + δx (b)). Then ρ is a Lie ring homomorphism, indeed for
+a, b, c ∈ a, x, y ∈ g, n ∈ Z, we have
+     (ρ(a,x) ρ(b,y) − ρ(b,y) ρ(a,x) )(n, c) = ρ(a,x) (0, nb + δy (c)) − ρ(b,y) (0, na + δx (c))
+                                             = (0, δx (nb) + δx δy (c) − δy (na) − δy δx (c))
+                                             = (0, n(δx (b) − δy (a)) + δ[x,y] (c))
+                                             = ρ(δx (b)−δy (a),[x,y])
+                                             = ρ[(a,x),(b,y)].
+
+By Proposition 2.5 we find that
+                       κ : Laz(aff(a)+ ) → idM +R : (a, x) 7→ κ(a,x) ,
+
+with κ(a,x) = exp(ρ(a,x) ) is a group homomorphism. It also follows directly from
+the definition of κ that
+                                                     ∞
+                                                     X 1
+                              κ(a,x) (1, 0) = (1,             δ k−1 (a)),
+                                                            k! x
+                                                     k=1
+        A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                         13
+
+
+so in particular κ(a,0) (1, 0) = (1, a) and κ(0,x) (1, 0) = (1, 0). We now obtain (5.2)
+from
+                          (1, V (a, δ)) = κ(V (a,x),0) (1, 0)
+                                       = κBCH((a,x),(0,−x))(1, 0)
+                                       = κ(a,x) κ(0,−x) (1, 0)
+                                               ∞
+                                               X 1
+                                       = (1,           δ k−1 (a)).
+                                                     k! x
+                                               k=1
+
+Next we prove (5.3). Since κ is a group homomorphism, so is f = κγ −1 . Thus
+κ(U(a,x),x) = f (a, x) = f (a, 0)f (0, λ) = κ(a,0) κ(0,x) and therefore
+                (0, U (a, x)) = ρ(U(a,x),x) (1, 0) = log(κ(a,0) κ(0,x) )(1, 0).
+We obtain (5.3) since (κ(a,0) κ(0,x) − id)k (1, 0) = (0, (λx − id)k−1 (a)) for k ≥ 1.      
+   We now consider a particular case of the above. Let a be a Lazard Lie ring,
+then by Proposition 5.3 we have a Lazard group isomorphism γ : Laz(aff(a)+ ) →
+Laz(a) ⋊ Laz(Der(a)+ ). Identifying Laz(Der(a)+ ) with Aut(a)+ as in Lemma 5.1
+and Aut(a)+ with Aut(Laz(a))+ we find an isomorphism
+                           γ : Laz(aff(a)+ ) → Hol(Laz(a))+ ,
+such that γ(a, 0) = (a, 0) and γ(0, δ) = (0, exp(δ)).
+Proposition 5.5. Let a be a Lazard Lie ring. Then γ yields a bijective corre-
+spondence between Lazard sub Lie rings g of aff(a)+ and Lazard subgroups G of
+Hol(Laz(a))+ . Moreover, pra : g → a is injective, respectively surjective, if and
+only if pra : γ(g) → a is injective, respectively surjective.
+Proof. The first part follows directly from Theorem 2.3 and Proposition 5.3.
+   Assume that g is a Lazard sub Lie ring of aff(a) such that pra : g → a is not
+injective. Then there exists some non-zero element (0, δ) ∈ g. But then clearly
+γ(0, δ) = (0, exp(δ)) ∈ γ(g) and thus pra : γ(g) → A is not injective.
+   Conversely, assume that there exist (a, λ), (a, λ′ ) ∈ γ(g) with λ 6= λ′ . Then
+(a, λ)−1 (a, λ′ ) = (0, λ−1 λ′ ) ∈ γ(g). Hence γ −1 (0, λ−1 λ′ ) = (0, log(λ−1 λ′ )) ∈ g and
+thus pra : g → a is not injective.
+   Assume that pra : g → a is surjective. Since prA and γ are continuous, the set
+pra γ(g) = V (g) is closed in a. Assume that there exists some a ∈ a \ V (g), then
+there exists a d such that V (g) ∩ (a + ad ) 6= ∅ but X ∩ (a + ad+1 ) = ∅. Let (b, δ) ∈ g
+such that V (b, δ) ∈ a + ad . By assumption there exists some δ ′ ∈ Der(a)+ such that
+(−V (b, δ) + a, δ ′ ) ∈ g. Since −V (b, δ) + a ∈ ad , we have
+             −V (b, δ) + a + ad+1 = V (−V (b, δ) + a, δ ′ ) + ad+1
+(5.6)
+                                     = exp(δ)(V (−V (b, δ) + a, δ ′ )) + ad+1 .
+Hence
+  V (BCH((b, δ), (−V (b, δ) + a,δ ′ ))) + ad+1
+                                   = BCH(V (b, δ), exp(δ)V (−V (b, δ) + a, δ ′ )) + ad+1
+                                   = BCH(V (b, δ), −V (b, δ) + a) + ad+1
+                                   = a + ad+1 ,
+where the first equality follows from the fact that γ is a group homomorphism. We
+conclude that V (g) ∩ (a + ad+1 ) 6= ∅ which is a contradiction.
+   Conversely, assume that V (g) = a. Clearly pra (g) is closed in a because pra is
+continuous. Assume that there exists some a ∈ a \ pra (g) and let d be such that
+pra (g) ∩ (a + ad ) 6= ∅ but pra (g) ∩ (a + ad+1 ) = ∅. Choose (b, δ) ∈ g such that
+14                                   S. TRAPPENIERS
+
+
+b ∈ a + ad . By assumption there exists some (b′ , δ ′ ) ∈ g such that V (b′ , δ ′ ) = a − b
+and using (5.6) we find a − b = V (b′ , δ ′ ) = b′ . We thus obtain the contradiction
+                        pra ((b, δ) + (b′ , δ ′ )) + ad+1 = a + ad+1 .                    
+Remark 5.6. Transitive subgroups of the holomorph of a finite group play an es-
+sential role in the theory of Hopf–Galois structures, see for example [14, 25, 39].
+One can prove that for any finite p-group A there exists a filtration of A such that
+Hol(A)+ is a Sylow p-subgroup of the usual holomorph of A (just considered as a
+group without a filtration). If |A| = pk for k < p, then such a filtration has length
+at most p, so A is a Lazard group and so is any subgroup of Hol(A)+ . Hence in
+such a case, it follows from Proposition 5.5 that we can classify all regular p-groups
+of the holomorph of A up to conjugation by classifying the t-surjective sub Lie rings
+of aff(Laz−1 (A))+ .
+Proposition 5.7. Let (a, ⊲) be a Lazard post-Lie ring. Then
+                               W : a → a : a 7→ V (a, La )
+is a bijective map and S(a, ⊲) = (a, ·, ◦) with a·b = BCH(a, b), a◦b = a·exp(LΩ(a) )(b)
+is a Lazard skew brace, where Ω := W −1 . Moreover, W : Laz(a◦ ) → (a, ◦) is an
+isomorphism of filtered groups.
+   If a is abelian, then
+                                           ∞
+                                          X    1 k−1
+                               W (a) =           L    (a).
+                                              k! a
+                                           k=1
+
+Proof. Let (a, ⊲) be a Lazard post-Lie ring and let g be the regular Lazard sub Lie
+ring of aff(a)+ associated to (a, ⊲) as in Proposition 3.4. Then W is a bijection
+since it is the composition of the bijections a → g : a 7→ (a, La ) and V : g → a,
+recall that the latter is a bijection by Proposition 5.5. In the case that a is abelian,
+the explicit formula of W follows from Lemma 5.4.
+    By Proposition 5.5 we find that γ(g) is a regular Lazard subgroup of Hol(Laz(a))+ ,
+thus we obtain a Lazard skew brace (a, ·, ◦) where (a, ·) = Laz(a). Also a ◦ b =
+a · λa (b) where λa ∈ Aut(a) is uniquely determined by the fact that (a, λa ) ∈ γ(g).
+Since γ(a) = {(W (a), exp(La )) | a ∈ a} we find λa = exp(LΩ(a) ).
+    Also, W : Laz(a◦ ) → (a, ◦) is a group isomorphism because it is the composition
+of the group homomorphisms Laz(a◦ ) → Laz(g) : a 7→ (a, La ), γ : Laz(g) → γ(g)
+and pra : γ(g) → (a, ◦).                                                              
+    Note that in the case that a is abelian, one obtains the group of flows as in [2]. It
+is less trivial to see how the above construction is related to the formal integration
+as described by Bai, Guo, Sheng and Tang in [5]. Let F be a field of characteristic
+0. Then Bai, Guo, Sheng and Tang proved that to any connected complete post-Lie
+F-algebra (a, ⊲) one can associate a skew brace (a, ·, ◦) where
+                     a · b = BCH(a, b), a ◦ b = a · exp(LΩ′ (a) )(b).
+We first note that in our terminology their notion of a connected complete post-Lie
+F-algebra is a Lazard post-Lie F-algebra (a, ⊲) such that moreover ai ⊲ aj ⊆ ai+j , or
+equivalently, such that a◦i = ai for all i ≥ 0. Note that under this extra assumption,
+if ai = 0 for some i, then ai−1 is contained in the socle hence Soc(a, ⊲) 6= 0. In
+[17, Section 3] an example is given of a left nilpotent pre-Lie R-algebra with trivial
+socle, so it can be given a filtration which makes it a Lazard Lie R-algebra but not
+a connected complete R-algebra in the sense of Bai, Guo, Sheng and Tang.
+   We quickly recall their construction: Let (a, ⊲) be a connected complete post-Lie
+F-algebra (a, ⊲) and consider the universal enveloping algebra U(a) together with
+the filtration where U(a)0 = U(a) and U(a)i is the subspace generated by x1 · · · xn
+       A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                      15
+
+
+where xj ∈ adj such that d1 +· · ·+dn = i. This makes U(a) into a filtered F-algebra.
+On U(a) we define a new multiplication ⋆ which for a ∈ a, b ∈ U(a) is given by
+a ⋆ b = ab + δa (b), where δa is the unique derivation of U(a) with δa (z) = a ⊲ z
+for z ∈ a. In this way, (U(a), ⋆) becomes a filtered F-algebra (where we keep the
+same filtration as before). This operation is then extended to the completion Û (a)
+with respect to the filtration in order to obtain a complete F-algebra (Û(a), ⋆). For
+a ∈ a, we define Ω′ (a) = log⋆ exp(a), where the exponential map with respect to
+the usual multiplication in Û(a) is first applied, followed by the logaritmic map in
+(Û(a), ⋆).
+   Recall that a embeds into Û(a). One sees that ρ : aff(a) → End(Û (a)), given
+by ρ(a,δ) (b) = ab + δ(b) is a homomorphism of filtered Lie F-algebras. Here we do
+not distinguish between a derivation δ of a and its unique extension to a derivation
+of Û(a). Clearly, a ⋆ b = ρ(a,La ) (b) for all a ∈ a and b ∈ Û(a), thus exp⋆ (a) =
+exp(ρ(a,La ) )(1). Since derivations map 1 to 0, also
+                       exp⋆ (a) = exp(ρ(a,La ) ) exp(ρ(0,−La ) )(1),
+where exp⋆ denotes the exponential in (Û (a), ⋆). By Proposition 2.5 and the defi-
+nition of W , we find
+                     exp(ρ(a,La ) ) exp(ρ(0,−La ) ) = exp(ρ(W (a),0) ),
+thus exp⋆ (a) = exp(W (a)). We conclude that Ω = Ω′ .
+Proposition 5.8. Let (A, ·, ◦) be a Lazard skew brace. Then
+                              Ω : A 7→ A : a 7→ U (a, λa ),
+is a bijection and L(A, ·, ◦) = (Laz−1 (A, ·), ⊲) with a⊲b = log(λW (a) )(b), is a Lazard
+Lie ring, where W := Ω−1 . Moreover, Ω : (A, ◦) → a◦ is an isomorphism of filtered
+Lie rings, where (a, ⊲) = L(A, ·).
+   If (A, ·) is abelian, then
+                                 ∞
+                                 X  1
+                          Ω(a) =      (−1)k+1 (λa − id)k−1 (a).
+                                    k
+                                 k=2
+
+Proof. Let (A, ·, ◦) be Lazard skew brace and let G be the associated regular Lazard
+subgroup of Hol(A, ·)+ . Then Ω is a bijection since it is the composition of the
+bijections A 7→ G : a 7→ (a, λa ) and U : G → A with U . The fact that U is
+bijective, follows from Proposition 5.5.
+   From Proposition 5.5 it also follows that γ −1 (G) is a Lazard sub Lie ring of
+aff(Laz−1 (A, ·))+ , thus we obtain a Lazard post-Lie ring (Laz−1 (A, ·), ⊲). We find
+a ⊲ b = La where La is uniquely determined by the fact that (a, La ) ∈ γ −1 (G).
+Since γ −1 (G) = {(Ω(a), log(λa )) | a ∈ A} we find that La = log(λΩ−1 (a) ).
+   Also, Ω is (A, ◦) → L(A, ·, ◦)◦ is an isomorphism of filtered Lie rings since it is
+the composition of the isomorphisms (A, ◦) → G : a 7→ (a, λa ), γ 1 : G → γ −1 (G)
+and prA : γ −1 (G) → Laz−1 (A, ·).                                                  
+Theorem 5.9. The constructions in Proposition 5.7 and Proposition 5.8 are mu-
+tually inverse and functorial. The map Ω associated to a Lazard post-Lie ring (a, ⊲)
+coincides with the map Ω associated to S(a, ⊲).
+   Lazard sub post-Lie rings of (a, ⊲) and Lazard sub skew braces of S(a, ⊲) coincide
+and moreover, Lazard left ideals, Lazard strong left ideals and Lazard ideals of (a, ⊲)
+and S(a, ⊲) coincide.
+Proof. It is straightforward to verify that S and L are mutually inverse construc-
+tions and that their associated maps Ω coincide. We prove the functoriality of S,
+the proof for L is analogous. Let f : (a, ⊲) → (b, ⊲) be a homomorphism of Lazard
+16                                 S. TRAPPENIERS
+
+
+post-Lie rings and set (a, ·, ◦) = S(a, ⊲) and (b, ·, ◦) = S(b, ⊲). Let Wa and Wb
+denote their respective maps W . Then by Theorem 2.3 f : (a, ·) → (b, ·) is a homo-
+morhism of Lazard groups. As W is an isomorphism between Laz(a◦ ) and (a, ◦),
+it is sufficient to proof f Wa = Wb f in order to conclude that f : (a, ◦) → (b, ◦) is a
+group homomorphism. This equality follows direct from the fact that f La = Lf (a) f
+for all a ∈ a.
+    The equivalence of Lazard post-Lie rings and Lazard sub skew braces is a direct
+corollary of Theorem 5.9. In particular, note that for b a Lazard sub post-Lie ring
+of (a, ⊲) we have Wb (b) = Wa (b). In particular, Wa (b) = b.
+    Clearly the Lazard sub Lie rings of a invariant under {Lx | x ∈ a} and the ones
+invariant under {exp(Lx ) | x ∈ a} coincide, which yields the equivalence of Lazard
+left ideals. Taking into account Theorem 2.3, the equivalence of Lazard strong left
+ideals follows.
+    Let b be a Lazard strong left ideal of (a, ⊲). As W : Laz(a◦ ) → (A, ◦) is a
+group isomorphism, we find that b is an ideal of a◦ if and only if W (b) is a normal
+subgroup of (A, ◦). Since W (b) = b, the equivalence of Lazard ideals of (a, ⊲) and
+S(a, ⊲) follows.                                                                      
+
+Remark 5.10. Recall that a skew brace (A, +, ◦) is square-free if a ∗ a = 0 for all
+a ∈ A. Similarly, we say that a post-Lie ring (a, ⊲) is square-free if a ⊲ a = 0 for
+all a ∈ a. Note that the property of being square-free is preserved by S and L and
+W = Ω = id in this case. Therefore these classes behave particularly well under
+the correspondence and eliminate most of the computations involved.
+   The construction L coincides (under the necessary assumptions) with the geo-
+metric construction in [5, Theorem 4.3] (or in [9, Section 3]). We shortly recall
+this construction. Let (G, ·, ◦) be a skew brace such that (G, ·) and (G, ◦) are
+Lie groups and the map a 7→ (a, λa ) is smooth. One defines a post-Lie structure
+on g, the Lie algebra associated to (G, ·), by starting with the group homomor-
+phism λ : G → Aut(G, ·) : a 7→ λa , which naturally yields a group homomor-
+phism α : G → Aut(g) : a 7→ dλa . Subsequently, differentiation yields a map
+dα : g → Der(g) and (g, ⊲′ ) is a post-Lie algebra where a ⊲′ b = (dα)a (b).
+   Let (a, ·, ◦) = S(a, ⊲) for a finite dimensional Lazard Lie R-algebra (a, ⊲). Then
+(a, ·) is a Lie group and its associated Lie algebra associated is isomorphic to a such
+that under this identification, the exponential map a → (a, ·) is just the identity.
+Thus, under this identification of (a, ·) and a we have λg = αg . Hence, b 7→ a ⊲′ b
+is the differential of the map λ : a 7→ exp(LΩ(a) )(b). We first determine dΩ. Since
+ΩW = id, it is sufficient to determine dW . By (5.2), we find dW = id hence also
+dΩ = id. The differential of the map exp(L) : a → Aut(a) : a 7→ exp(La ) in a ∈ a is
+                                         d
+                       d(exp(L))(a) =           exp(Lta ) = La .
+                                         dt t=0
+We conclude that (dλ)a = La and thus a ⊲′ b = a ⊲ b.
+Example 5.11. Let A be a Lazard ring and let La denote left multiplication by
+a. Then A+ is a Lazard pre-Lie algebra for a ⊲ b = ab and it is well-known that the
+associated group of flows is given by a ◦ b = a + ab + b. We can verify this directly:
+clearly W (a) = exp(a) − 1, hence Ω(a) = log(1 + a). We now find
+                     a ◦ b = a + exp(Llog(1+a) )(b) = a + ab + b.
+Conversely, starting from the brace (A, +, ◦) we find Ω(a) = log(1 + a) and thus
+W (a) = exp(a) − 1. we recover the original multiplication as
+        a ⊲ b = log(λW (a) )(b) = log(L1+W (a) )(b) = a + log(Lexp(a) )(b) = ab.
+       A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                        17
+
+
+Recall that this is precisely the classical correspondence between two-sided braces
+and Jacobson radical rings [31].
+Theorem 5.12. Let pn be a prime power and k < p. There is a bijective cor-
+respondence between post-Lie rings of size pn and L-nilpotency class k, and skew
+braces of size pn and L-nilpotency class k.
+Proof. Let (a, ⊲) be a post-Lie ring of size pn and L-nilpotency class k. With its
+canonical filtration (a, ⊲) is a Lazard post-Lie ring since both a and a◦ are p-groups
+with ap = a◦p = {0}. By Theorem 5.9 we obtain a Lazard skew brace of size pn and
+L-nilpotency class k,
+   Conversely, let (A, ·, ◦) be a skew brace of size pn and L-nilpotency class k. Then
+with its canonical filtration it becomes a Lazard skew brace since (A, ·) and (A, ◦)
+are p-groups and Ap = (A, ◦)p = {1}. By Theorem 5.9 we obtain a Lazard post-Lie
+ring of size pn and L-nilpotency class k.                                           
+   We are now ready to prove Theorem 1.1.
+Proof of Theorem 1.1. Recall that any skew brace of order pk is left nilpotent by
+[13, Proposition 4.4]. Also, if a skew brace or post-Lie ring of order pk is L-nilpotent,
+its L-nilpotency class clearly can not exceed k. The statement now follows from
+Theorem 5.12, keeping in mind the characterisation of L-nilpotency in Lemmas 3.9
+and 4.11.                                                                              
+   Let (A, ·, ◦) be a skew brace and a ∈ A. For an integer n we denote the n-th
+power of a in (A, ·) by an and its n-th power in (A, ◦) is denoted by a◦n . The
+following result extends Proposition 15 and Lemma 17 of [38].
+Proposition 5.13. Let (A, ·, ◦) be a Lazard skew brace and let n be an integer,
+then {an | a ∈ A} = {a◦n | a ∈ A} and {a ∈ A | an = 1} = {a ∈ A | a◦n = 1}, and
+these sets are Lazard ideals of (A, ·, ◦).
+Proof. We prove the statement for the first set, the second part is analogous. Let
+(a, ⊲) = L(A, ·, ◦). Then it is straightforward to see that na is a Lazard ideal of (a, ⊲),
+hence it is also a Lazard ideal of (A, ·, ◦) by Theorem 5.9. Since (A, ·) = Laz(a),
+we find na = {an | a ∈ A}. Also, as W : Laz(a◦ ) → (A, ◦) is a group isomorphism
+we find W (na) = {a◦n | a ∈ A}, but since W maps any Lazard sub post-Lie ring
+to itself, we conclude that {an | a ∈ A} = {a◦n | a ∈ A}.                                
+Proposition 5.14. Let (a, ⊲) be a Lazard post-Lie ring. Then the fix of (a, ⊲) coin-
+cides with that of S(a, ⊲), and similarly for the socle and annihilator. In particular,
+if a is nilpotent, then (a, ⊲) is right nilpotent if and only if S(a, ⊲) is right nilpotent.
+Proof. The first part of the statement follows from the fact that W (a) = a whenever
+a ⊲ a = 0 or λa (a) = a, which in particular is the case when a is contained in the
+fix or socle. The second part of the statement now follows from Lemmas 5.3 and
+5.4 of [1] and the analogous statement for post-Lie rings.                        
+
+            6. Formal differentiation through roots of unity
+   Let n ≥ 1. Recall that a primitive n-th root of unity of a ring R is an element
+ξ ∈ R such that ξ n = 1 and ξ k − 1 not a zero divisor for 1 ≤ k < n. It is well
+known that the finite field of prime power order Fpn has a primitive pn − 1-th root
+of unity. Also, Z/pn Z always contains a primitive p − 1-th root of unity.
+   Let R be a commutative ring and let M, N be R-modules. We say that a map
+f : M → N is a homogeneous polynomial of degree k if f (rm) = rk f (m) for all
+r ∈ R, m ∈ M . A map f : M → N is polynomial of degree less than k if it can be
+                      Pk−1
+written as a sum f = i=0 fi where fi is a homogeneous polynomial of degree i.
+18                                      S. TRAPPENIERS
+
+
+Lemma 6.1. Let R be a ring and let M, N be R-modules. Let ξ ∈ R be a primitive
+n-th root of unity where n is invertible in R and let f : M → N be a polynomial of
+                                                           Pn−1
+degree less than n, with homogeneous decomposition f = i=0 fi . Then
+                                  n−1
+                                1 X jk
+                                      ξ f (ξ −j m) = fk (m)
+                                n j=0
+for all 0 ≤ k < n and m ∈ M .
+Proof. Evaluating the formula yields
+                    n−1                  n−1 n−1
+                  1 X jk               1 X X j(k−i)
+                        ξ f (ξ −j m) =           ξ  fi (m) = fk (m)
+                  n j=0                n i=0 j=0
+           Pn−1 j(k−i)
+since n1    j=0 ξ      equals 0 if i 6= k and it equals 1 if i = k.                  
+   For k = 1, it makes sense to see the above manipulation as taking the directional
+derivative of f through m and subsequently evaluating at 0. Therefore, in the above
+setting, it seems justified to introduce the notation
+                                                    n−1
+                                                 1X i
+                          df : M → N : m 7→            ξ f (ξ −i m).
+                                                 n i=0
+Although the analogy is not explicitly mentioned, this technique plays a prominent
+role in [36, 37]. The following proposition extends [37, Theorem 12].
+Proposition 6.2. Let pk be a prime power, ξ ∈ Z a primitive (p − 1)-th root of
+unity modulo pk . Let (A, ·, ◦) be a filtered skew brace of order pk such that Ap = {1}
+and such that Ai ∗ Aj ⊆ Ai+j for all i, j ≥ 1. Let (a, ⊲) = L(A, ·, ◦), then
+                                               p−2
+                                           1 X i
+                               a⊲b=                ξ λξ−i a (b),
+                                         p − 1 i=0
+
+where the sum is taken in Laz−1 (A, ·).
+Proof. It is clear that (A, ·, ◦) with the given filtration is a Lazard skew brace.
+By Theorem 5.9 we know that (A, ·, ◦) = S(a, ⊲) for some Lazard post-Lie ring
+(a, ⊲). In particular, a has a natural structure of a Z/pk Z-module since |a| = pk .
+Since W (ai ) = ai , it follows from Lemma 5.1 that the assumption on the filtration
+translates to ai ⊲ aj ⊆ ai+j for all i, j ≥ 1.
+   Consider the map λ : a → End(a) : a 7→ λa . We claim that λ is polynomial of
+degree less than p − 1 and that moreover its degree 1 component is La . Indeed,
+from Proposition 5.7 we find
+                                  ∞ X∞                     ∞ X∞
+                                 X        1 k              X      1 ki k
+         λta = exp(LW (ta) ) =                LLi−1 (ta) =            t LLi−1 (a) .
+                                    i=1
+                                         k!i!   ta
+                                                             i=1
+                                                                 k!i!     a
+                                 k=0                        k=0
+
+Clearly Li−1
+          a (a) ∈ ai . By the earlier mentioned condition on the filtration it follows
+that LkLi−1 (a) (b) ∈ Aki+1 for all b ∈ a, so LkLi−1 (a) = 0 for ki ≥ p − 1. Therefore,
+        a                                        a
+λ is polynomial of degree less than p − 1 and its degree 1 component is La . From
+Lemma 6.1 we obtain dλ(a) = La which concludes the proof.                       
+   Note that a filtration as in Proposition 6.2 exists precisely if A{p} = {1} where
+ {1}
+A     = A and A{k+1} is the subgroup of (A, ·) generated by all a ∗ b and aba−1 b−1
+where a ∈ A{i} , b ∈ A{k+1−i} , 1 ≤ i ≤ k. For braces this is precisely the chain of
+ideals A[k] used to define strong nilpotency as in [35].
+   Remark that even when R has characteristic pn , the degree of the polynomial
+functions considered in Lemma 6.1 are not directly bounded by p. On the other
+        A LAZARD CORRESPONDENCE FOR POST-LIE RINGS AND SKEW BRACES                               19
+
+
+hand, in the formulae for exp and log no terms of degree p or more are allowed.
+It is therefore natural to ask whether the nilpotency condition in Proposition 6.2
+can be relaxed under the assumption that an appropriate root of unity is present.
+More precisely, the following question is natural to ask:
+Question 6.3. Let (A, +, ◦) be an Fpn -brace (as in [11, Definition 2]) such that
+   n
+A[p ] = 1 and let ξ ∈ Fpn be a primitive (pn − 1)-th root of unity. Does the
+operation
+                                                  n
+                                        pX −2
+                                      1
+                               a⊲b= n         ξ i λξ−i a (b),
+                                   p − 1 i=0
+yield a pre-Lie Fpn -algebra structure on the Fpn -algebra (A, +)?
+
+                                    Acknowledgements
+   The author was supported by Fonds Wetenschappelijk Onderzoek – Vlaanderen
+[1160524, G004124N], and by the Vrije Universiteit Brussel [OZR3762].
+   The author would also like to express his gratitude to Agata Smoktunowicz for
+some interesting discussions which contributed to the clarity of the exposition in
+this paper.
+
+                                         References
+ [1] E. Acri, R. Lutowski, and L. Vendramin. Retractability of solutions to the Yang-Baxter
+     equation and p-nilpotency of skew braces. Internat. J. Algebra Comput., 30(1):91–115, 2020.
+ [2] A. A. Agrachev and R. V. Gamkrelidze. Chronological Algebras and Nonstationary Vector
+     Fields. J. Sov. Math., 17:1650–1675, 1981.
+ [3] L. Auslander. Simply transitive groups of affine motions. Amer. J. Math., 99(4):809–826,
+     1977.
+ [4] D. Bachiller. Counterexample to a conjecture about braces. J. Algebra, 453:160–176, 2016.
+ [5] C. Bai, L. Guo, Y. Sheng, and R. Tang. Post-groups, (Lie-)Butcher groups and the Yang-
+     Baxter equation. Math. Ann., 388(3):3127–3167, 2024.
+ [6] Y. Benoist. Une nilvariété non affine. J. Differential Geom., 41(1):21–52, 1995.
+ [7] D. Burde. Affine structures on nilmanifolds. Internat. J. Math., 7(5):599–616, 1996.
+ [8] D. Burde. Left-symmetric algebras, or pre-Lie algebras in geometry and physics. Cent. Eur.
+     J. Math., 4(3):323–357, 2006.
+ [9] D. Burde, K. Dekimpe, and S. Deschamps. Affine actions on nilpotent Lie groups. Forum
+     Math., 21(5):921–934, 2009.
+[10] D. Burde, K. Dekimpe, and K. Vercammen. Affine actions on Lie groups and post-Lie algebra
+     structures. Linear Algebra Appl., 437(5):1250–1263, 2012.
+[11] F. Catino, I. Colazzo, and P. Stefanelli. Skew left braces with non-trivial annihilator. J.
+     Algebra Appl., 18(2):1950033, 23, 2019.
+[12] Cayley. On the Analytical Forms Called Trees. Amer. J. Math., 4(1-4):266–268, 1881.
+[13] F. Cedó, A. Smoktunowicz, and L. Vendramin. Skew left braces of nilpotent type. Proc. Lond.
+     Math. Soc. (3), 118(6):1367–1392, 2019.
+[14] L. N. Childs. On the Hopf Galois theory for separable field extensions. Comm. Algebra,
+     17(4):809–825, 1989.
+[15] S. Cicalò, W. A. de Graaf, and M. Vaughan-Lee. An effective version of the Lazard corre-
+     spondence. J. Algebra, 352:430–450, 2012.
+[16] C. Curry, K. Ebrahimi-Fard, and H. Munthe-Kaas. What is a post-lie algebra and why is it
+     useful in geometric integration. In F. A. Radu, K. Kumar, I. Berre, J. M. Nordbotten, and
+     I. S. Pop, editors, Numerical Mathematics and Advanced Applications ENUMATH 2017,
+     pages 429–437, Cham, 2019. Springer International Publishing.
+[17] D. Fried. Distality, completeness, and affine structures. J. Differential Geom., 24(3):265–273,
+     1986.
+[18] L. Guarnieri and L. Vendramin. Skew braces and the Yang-Baxter equation. Math. Comp.,
+     86(307):2519–2534, 2017.
+[19] E. I. Khukhro. p-automorphisms of finite p-groups, volume 246 of London Mathematical
+     Society Lecture Note Series. Cambridge University Press, Cambridge, 1998.
+20                                     S. TRAPPENIERS
+
+
+[20] E. I. Khukhro and V. D. Mazurov, editors. The Kourovka notebook. Sobolev Institute of
+     Mathematics. Russian Academy of Sciences. Siberian Branch, Novosibirsk, 20th edition, 2022.
+     Unsolved problems in group theory, September 2024 update.
+[21] H. Kim. Complete left-invariant affine structures on nilpotent Lie groups. J. Differential
+     Geom., 24(3):373–394, 1986.
+[22] J.-L. Koszul. Domaines bornés homogènes et orbites de groupes de transformations affines.
+     Bull. Soc. Math. France, 89:515–533, 1961.
+[23] M. Lazard. Sur les groupes nilpotents et les anneaux de Lie. Ann. Sci. École Norm. Sup. (3),
+     71:101–190, 1954.
+[24] A. I. Malcev. Nilpotent torsion-free groups. Izv. Akad. Nauk SSSR Ser. Mat., 13:201–212,
+     1949.
+[25] I. Martin-Lyons and P. J. Truman. Skew bracoids. J. Algebra, 638:751–787, 2024.
+[26] J. Milnor. On fundamental groups of complete affinely flat manifolds. Adv. Math., 25(2):178–
+     187, 1977.
+[27] M. F. Newman, E. A. O’Brien, and M. R. Vaughan-Lee. Groups and nilpotent Lie rings
+     whose order is the sixth power of a prime. J. Algebra, 278(1):383–401, 2004.
+[28] D. Puljić. Classification of braces of cardinality p4 . J. Algebra, 660:1–33, 2024.
+[29] D. Puljić, A. Smoktunowicz, and K. Nejabati Zenouz. Some braces of cardinality p4 and
+     related Hopf-Galois extensions. New York J. Math., 28:494–522, 2022.
+[30] W. Rump. Modules over braces. Algebra Discrete Math., (2):127–137, 2006.
+[31] W. Rump. Braces, radical rings, and the quantum Yang-Baxter equation. J. Algebra,
+     307(1):153–170, 2007.
+[32] W. Rump. The brace of a classical group. Note Mat., 34(1):115–144, 2014.
+[33] D. Segal. The structure of complete left-symmetric algebras. Math. Ann., 293(3):569–578,
+     1992.
+[34] A. Shalev and A. Smoktunowicz. From braces to pre-Lie rings. Proc. Amer. Math. Soc.,
+     152(4):1545–1559, 2024.
+[35] A. Smoktunowicz. On Engel groups, nilpotent groups, rings, braces and the Yang-Baxter
+     equation. Trans. Amer. Math, 370(9):6535–6564, 2018.
+[36] A. Smoktunowicz. A new formula for Lazard’s correspondence for finite braces and pre-Lie
+     algebras. J. Algebra, 594:202–229, 2022.
+[37] A. Smoktunowicz. On the passage from finite braces to pre-Lie rings. Adv. Math., 409:Paper
+     No. 108683, 33, 2022.
+[38] A. Smoktunowicz. On the passage from finite braces to pre-Lie rings. arXiv:2202.00085v3,
+     2022.
+[39] L. Stefanello and S. Trappeniers. On the connection between Hopf-Galois structures and skew
+     braces. Bull. Lond. Math. Soc., 55(4):1726–1748, 2023.
+[40] B. Vallette. Homology of generalized partition posets. J. Pure Appl. Algebra, 208(2):699–725,
+     2007.
+[41] E. B. Vinberg. The theory of homogeneous convex cones. Trudy Moskov. Mat. Obšč., 12:303–
+     358, 1963.
+
+   Department of Mathematics and Data Science, Vrije Universiteit Brussel, Pleinlaan
+2, 1050 Brussels, Belgium
+   Email address: senne.trappeniers@vub.be
+   URL: https://sites.google.com/view/sennetrappeniers/
+

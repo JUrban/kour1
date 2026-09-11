@@ -1409,3 +1409,27 @@ abelian-normal-subgroup bounds do not settle 20.86 or 20.75–76.
 At 14:55 UTC the six 20.100 n=7 workers were all live, having
 checked 8,150,000 nodes with combined RSS 12,153,076 KiB. No shard
 had completed, and no n=7 proof is claimed. Work remains local.
+
+
+## 2026-09-11T15:22:40.102887+00:00 — Candidate 26: uniform large-prime brace average
+
+Completed a proof of 20.92(a): classical affine matrix Lazard gives
+a pre-Lie product on the original additive space, and k residual
+corrections give a polynomial inverse for the exponential translation
+map. Its dimension-only degree bound lets the printed base-2 average
+extract precisely the linear term, without strong nilpotence.
+Trappeniers' correspondence, correction and Fourier techniques are
+explicitly credited; part (b) is not counted again.
+
+The 20-point internal audit and controls pass: 17,667 actual affine
+group elements, 303 inverse inputs, three formal polynomial examples
+and 23,328 literal modular entries. Non-right-nilpotent examples and
+small-prime averaging discrepancies are retained. An initial
+associative-control indexing error was caught, repaired, and its
+failed evidence preserved. All 25 packet files are hash-bound.
+There are now 26 complete candidates, none externally reviewed;
+comprehensive novelty verification remains pending.
+
+At 15:16 UTC all six n=7 GAP verifiers were live at 8,880,000 nodes
+and combined RSS 13,228,276 KiB. No shard had completed. Work remains
+local, with no pushes or outside communications.
