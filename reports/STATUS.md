@@ -1,17 +1,17 @@
 # Current status
 
-Updated: 2026-09-11T04:39:52.383506+00:00.
+Updated: 2026-09-11T04:47:34.468983+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **14**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), and **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T04:36:28.840963+00:00, the order256 extension has 50,952 counts, zero equality hits, 124 reversals, 8 verified live workers and 8 completed ranges. All log checks pass.
+- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T04:46:20.516534+00:00, the order256 extension has 51,632 counts, zero equality hits, 143 reversals, 8 verified live workers and 8 completed ranges. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
 
-**20.108(a),(b):** G=F_11^2 semidirect C5 with diagonal weights3,9 is centreless. Its full holomorph is determined explicitly, and theta(x,y,k)=(y,3^(-k)x,2k) normalizes it while theta^2 lies outside it. Hence T(G) contains C4. GAP identifies SmallGroup(605,5) and independently checks the full holomorph order; Python checks every invertible matrix and8,000 permutation cases. A general family gives unbounded element orders in these quotients, with5,939 additional basis checks. This was an explicit unresolved exception in Tsang's2025 paper. Part(c) remains unresolved; novelty and outside review pending. See `research/20.108-proof.md` and `research/20.108-review.md`.
+**20.108(a),(b):** G=F_11^2 semidirect C5 with diagonal weights3,9 is centreless. Its full holomorph is determined explicitly, and theta(x,y,k)=(y,3^(-k)x,2k) normalizes it while theta^2 lies outside it. Hence T(G) contains C4. GAP identifies SmallGroup(605,5) and independently checks the full holomorph order; Python checks every invertible matrix and8,000 permutation cases. A general family gives unbounded element orders in these quotients, with5,939 additional basis checks. This was an explicit unresolved exception in Tsang's2025 paper. Part(c) is already affirmative by Caranti--Tsang2023; novelty of(a),(b) and outside review remain pending. See `research/20.108-proof.md` and `research/20.108-review.md`.
 
 **21.106:** A parameter-free formula defines exactly the two central generators in the integral Heisenberg group, a residually finite group. Its value set is finite but generates an infinite subgroup. The self-contained proof and internal audit are in `research/21.106-proof.md` and `research/21.106-review.md`. Exact arithmetic and finite-quotient sanity checks passed; the infinite claim rests on the proof.
 
@@ -40,6 +40,9 @@ Updated: 2026-09-11T04:39:52.383506+00:00.
 **18.92(a),(b):** Let F_S be the formation of all finite groups whose prime divisors lie in S. Taking finite prime sets plus the set of all primes yields a complete lattice whose only compact element is its bottom. Five selected F_S give the non-modular pentagon N5. Both use internal joins in the chosen family, as explicitly defined in the Notebook and checked in a primary formation-theory source. All finite lattice controls pass; the infinite assertion has an explicit chain proof. See `research/18.92-proof.md` and `research/18.92-review.md`. Novelty and outside review remain pending.
 
 ## Completed bounded searches
+
+- **20.30:** All2,750 CTblLib entries screened,340 perfect centreless entries, zero counterexamples. All nine actual-group conjugacy-orbit controls pass. General question unresolved; see `research/20.30-search.md`.
+- **20.52:** All2,845 odd-order groups through1727 checked, including1,719 nonabelian groups. Every m<=64 occurs, with86 independent actual-group controls passing. This repeats a known existence range; Buckley--MacHale2013 already covers every m<=256. See `research/20.52-plan.md` and `research/20-later-triage.md`.
 
 - **18.114:** All2,468 soluble irreducible library entries over F5 through dimension6 processed;2,421 eligible, including2,352 noncyclic. No noncyclic equality;57 independent affine controls and37 commuting-pair checks pass. The indexed affine-constructor cache bug was diagnosed; all initial invalid runs were excluded and replaced. See `research/18.114-plan.md`.
 
@@ -87,6 +90,8 @@ and automorphism order. Five smaller controls also agree. None of the
 60 evaluated parameter triples gives equality.
 
 ## Additional constructions and exclusions
+
+**20.108(c):** Caranti--Tsang2023 Theorem1.1 already gives a group of order3^10 with GL4(3) inside T(G), hence prime divisor5 outside p(p-1)=6. Prior affirmative result, excluded from new priority; see `research/20.108c-known-consequence.md`. This corrects our earlier provisional status for(c).
 
 **20.33:** Complete affirmative consequence of effective HNN embeddings. An explicit three-generator X-c.e.-presented universal group contains every finitely generated X-c.e.-presented group. Both directions, presentation elimination and the absence of any extra oracle are proved. Mikaelian's prior theorem improves the generator bound to two. Excluded from new priority; see `research/20.33-known-consequence.md` and `research/20.33-review.md`.
 

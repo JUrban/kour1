@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-11T03:29:20.650865+00:00",
+  "observed_utc": "2026-09-11T03:56:22.593240+00:00",
   "warning": "Last observed state only; revalidate process command lines before relying on liveness.",
   "jobs": [
     {
@@ -21,9 +21,10 @@
     {
       "low": 7013,
       "high": 10518,
-      "status": "running",
+      "status": "completed",
       "output": "/project/results/19.20-order256-ids7013-10518.log",
-      "pid": 12131
+      "pid": 12131,
+      "returncode": 0
     },
     {
       "low": 10519,
@@ -60,9 +61,10 @@
     {
       "low": 24543,
       "high": 28048,
-      "status": "running",
+      "status": "completed",
       "output": "/project/results/19.20-order256-ids24543-28048.log",
-      "pid": 12144
+      "pid": 12144,
+      "returncode": 0
     },
     {
       "low": 28049,

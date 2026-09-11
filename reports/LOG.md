@@ -520,3 +520,13 @@ Tsang's2025 theorem leaves SmallGroup(605,5) as one of two specific exceptions. 
 GAP independently identifies the group, centre and regularity, matches holomorph order7,320,500 to automorphism order12,100, verifies all normalizer generators and checks index4. Python checks all13,200 invertible matrices against four quotient units, all605 points for seven generators and8,000 further parameter choices. The deliberately omitted multiplier fails, as expected. A higher-dimensional family gives unbounded even coset orders; four parameter sets with orders4,6,12,16 pass5,939 affine-basis checks. Full proof and internal review written. Limited searches found no earlier explicit certificate, but novelty and outside review remain pending. Candidate count is now14.
 
 At04:36:28UTC the order256 search has50,952 counts,0 equalities,124 reversals,8 live and8 completed ranges; all checks PASS.
+
+## 2026-09-11T04:47:34.468983+00:00 — Complete20.30/52 checks and prior answer to20.108(c)
+
+The20.30 screen completed on all2,750 ordinary tables:340 eligible perfect centreless entries and zero failures. Independent explicit conjugacy-orbit enumeration agrees with all nine actual-group class lists and eligibility checks. The20.52 search completed on2,845 groups of all odd orders through1727, including1,719 nonabelian groups. Every m<=64 occurs; all86 independent actual-group counts agree with the recorded IDs. The summary parser validates all rows and completion markers; one wrapped Monster-table line required a whitespace correction in the parser. No search output or mathematical result changed.
+
+Buckley--MacHale2013 was read in full: their results already cover every m<=256 and include the order bound. The20.52 work is therefore bounded verification only. Malle--Navarro--Tiep2026 was checked for scope and supplies a reduction and partial results for20.115, not a full solution.
+
+A further primary-source check settles the earlier uncertainty on20.108(c): Caranti--Tsang2023 Theorem1.1 explicitly gives GL4(3) inside T(G) for a group of order3^10, so5 divides |T(G)| although it does not divide6. This is prior work and does not change the14-candidate count. The separate centreless construction for(a),(b) remains a possible-new-priority candidate. The primary theorem and corollary were read, but the full p-group construction was not independently audited.
+
+At04:46:20UTC the order256 search has51,632 counts,0 equalities,143 reversals,8 live and8 completed ranges; all log checks PASS.

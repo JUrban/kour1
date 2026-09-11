@@ -1,10 +1,12 @@
 # Candidate portfolio
 
-Updated 2026-09-11T04:39:52.383506+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T04:47:34.468983+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
-| 20.108(a),(b) | An explicit permutation exchanges two eigenspaces and changes the quotient exponent. | Fourteenth complete candidate: centreless SmallGroup(605,5) has an order4 element in T(G). Full holomorph classified; independent GAP/Python checks PASS. General family gives unbounded element orders. Part(c), novelty and outside review remain open. |
+| 20.30 | Largest class versus group order on perfect centreless tables. | All2,750 entries,340 eligible, zero hits; nine independent actual-group controls PASS. Bounded evidence only. |
+| 20.52 | Order bound27m makes each fixed deficiency a finite search. | All2,845 odd-order groups through1727 checked; every m<=64 occurs,86 controls PASS. Prior2013 examples cover every m<=256; no new result. |
+| 20.108(a),(b) | An explicit permutation exchanges two eigenspaces and changes the quotient exponent. | Fourteenth complete candidate: centreless SmallGroup(605,5) has an order4 element in T(G). Full holomorph classified; independent GAP/Python checks PASS. General family gives unbounded element orders. Part(c) is prior affirmative work of Caranti--Tsang2023. Novelty of(a),(b) and outside review remain open. |
 | 20.33 | Universal free product plus an explicit effective three-generator HNN embedding. | Complete affirmative standard-construction consequence, with full oracle bookkeeping and converse. Prior two-generator refinement also checked. Excluded from new priority. |
 | 20.8 | Explicit rank3 equalizer construction and every principal core image. | Complete negative prior-construction consequence. All five vertex partitions prove the intermediate-rank condition; independent Python/GAP controls PASS. Excluded from new priority. |
 | 20.11 | Subgroup rigidity plus bounded-rank chain and intersection limits. | Complete affirmative prior-theorem deductions for all four assertions, including infinite-rank ambient groups and infinitely generated bottom subgroup. Outside review pending; excluded from new priority. |
