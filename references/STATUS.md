@@ -626,3 +626,23 @@ The separate14.67-prime-class.md proof covers arbitrary finite groups
 under the exact prime minimal-class-size hypothesis, with no assertion
 of novelty or of extending the precise full scope of that unread paper.
 The supplied Notebook page79 was visually checked.
+
+## Problem 16.9
+
+Frid, *Small palindromic lengths in free groups and word equations with
+antimorphisms*, https://arxiv.org/abs/2512.10024v1 : introduction,
+definitions, both small-length theorem statements, initial word-equation
+lemmas and complete Theorem 1 proof read. Theorem 2 proof not audited.
+Lotz, *Powers of Coxeter elements with unbounded reflection length*,
+https://arxiv.org/abs/2406.05218v1 : initial definitions, Theorems 1.19–1.20,
+adjacent examples and deletion-set definition, and algorithm discussion
+after Remark 2.16 read. Theorem 1.20 explicitly attributes reflection
+length by deletion to Dyer 2001, DOI 10.1090/S0002-9939-01-05876-2.
+Original AMS full text returned HTTP 403 and was not read. Our special
+free-product proof is self-contained. Saarela's institutional PDF
+https://www.utupub.fi/bitstream/handle/10024/162254/palindromes.pdf?isAllowed=y&sequence=1
+was read for the introduction and group/monoid definitions only; the
+controlled family was read in Frid's Example 1. Printed Notebook page 97
+visually checked. Neither reflection deletion nor interval DP is claimed
+as new. The index-two conversion and algorithm remain under priority
+review; limited searches do not establish novelty.

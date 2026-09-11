@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T11:51:35.643632+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T12:12:57.818053+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 16.9 | Convert palindromes to reflections in an index-two free-product extension, then minimize noncrossing unmatched positions. | Twenty-third complete candidate affirmative algorithm, cubic time with minimum factors. Direct deletion enumeration, 36,558 exhaustive free words and 36,698 actual GAP witnesses pass. Dyer deletion theorem credited; outside review and further novelty checks pending. |
 | 14.67 | Replace normalized nilpotent subgroups by Fitting subgroups of centralizer overgroups; use the prime-degree affine action. | Prime minimal-class-size case proved for arbitrary finite groups. All groups through511 covered with zero hits and67,289 direct controls passing. General question and novelty unresolved. |
 | 14.59 | Tent2016 sharply 3-transitive amalgam construction; finite subgroups exclude PGL2. | Exact prior negative deduction, even with countable action and infinite torsion-free two-point stabilizers. Complete source read; excluded from new priority. |
 | 14.24 | Compare integral fixed lattices for conjugate automorphisms of norms3 and2. | Exact minimum conjugator norm r in rank2r-1, deduced from the prior14.23 family. Rank-uniform negative result only; fixed-rank question unresolved.11,172 word checks pass. |

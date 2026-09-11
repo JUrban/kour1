@@ -1149,3 +1149,36 @@ The latest20.100 snapshot at2026-09-11T11:55:05.900210+00:00 verifies all six
 workers live with no completed shard. The complete-candidate count
 remains22, with15.89 the latest addition. No pushes or outside
 communications; the48-hour goal remains active.
+
+## 2026-09-11T12:12:57.818053+00:00 — Twenty-third candidate: exact palindromic length for 16.9
+
+The free basis embeds by x_i=s_i s_0 in the free product of n+1
+involutions. Multiplying a palindrome by s_0 gives precisely a
+reflection. Alternating the basis-inverting automorphism yields the
+exact formula pl(w)=min(r(w),r(w s_0)). A self-contained noncrossing
+pairing proof identifies reflection length with the fewest deleted
+positions needed to leave an identity word. Interval dynamic programming
+therefore computes the exact minimum in cubic time and quadratic
+storage, and its traceback returns a minimum palindrome factorization.
+The source statement on printed page 97 and every algebraic convention
+were audited.
+
+Python compares the pairing recurrence with all deletion subsets for
+9,841 involution words, then checks all 36,558 reduced free words in the
+stated rank/length ranges against the separate Frid two-palindrome
+criterion. Known exact families and 100 longer random inputs bring the
+witness count to 36,698. Independent GAP evaluates all witnesses in an
+actual free group of rank 22, checks reduced palindrome factors and
+products, and confirms the parity lower bounds. Both processes exit
+zero. The separate summary checks exact exhaustive input coverage,
+markers, counts and source/artifact hashes.
+
+The reflection deletion principle is prior Dyer work, read as reproduced
+in Lotz 2024 and credited. Its original AMS proof was unavailable;
+our needed special case is proved directly. Frid 2025 discusses the
+general algorithm question and supplies the two-factor comparison.
+Further novelty checks and outside review are pending. The complete
+candidate count is now 23; no externally reviewed new solution is
+claimed. The six long-running 20.100 n=7 GAP partitions continue, with
+no completed n=7 proof. All work and commits remain local. The active
+48-hour goal ends 2026-09-12 20:56:46 UTC.

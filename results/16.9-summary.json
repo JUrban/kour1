@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-09-11T12:12:03.753360+00:00",
+  "problem": "16.9",
+  "conclusion": "Complete candidate affirmative algorithm",
+  "word_operations": "O(L^3)",
+  "stored_integers": "O(L^2)",
+  "python": {
+    "status": "PASS",
+    "brute_deletion_words": 9841,
+    "exhaustive_free_words": 36558,
+    "frid_two_factor_checks": 36558,
+    "special_cases": 40,
+    "random_long_cases": 100,
+    "gap_witness_cases": 36698,
+    "maximum_exhaustive_factor_length": 8,
+    "distributions": {
+      "(2, 0)": 1,
+      "(2, 1)": 320,
+      "(2, 2)": 5000,
+      "(2, 3)": 7304,
+      "(2, 4)": 488,
+      "(2, 5)": 8,
+      "(3, 0)": 1,
+      "(3, 1)": 372,
+      "(3, 2)": 5784,
+      "(3, 3)": 13176,
+      "(3, 4)": 4056,
+      "(3, 5)": 48
+    },
+    "seconds": 4.152791873551905
+  },
+  "gap": {
+    "cases": 36698,
+    "palindrome_letters": 310658,
+    "ambient_rank": 22,
+    "parity_lower_bounds": 36698
+  },
+  "exact_input_coverage": true,
+  "process_evidence": "Python and GAP actual exit statuses zero were observed through the execution tool. This report separately checks retained completion markers and exhaustive input coverage.",
+  "scope": "The self-contained proof supplies arbitrary-input minimality. GAP checks witnesses and parity lower bounds, not independent minimum length in every case. Outside review and further priority checks pending.",
+  "sha256": {
+    "research/16.9-proof.md": "622706dae5f3b1ee28400e0320fa325db0e80b806ca2d41b2092a5fdf8984554",
+    "research/16.9-review.md": "c3fc76b83a968b801cca791c0955067169b9fe8e019d1745a43755affa2be97b",
+    "scripts/palindromic_length.py": "3fb7014e73598f1f7919fb1d59d4a055add6a53e6aaedbd60dfc9dcf6fc1cd82",
+    "scripts/verify_16_9.py": "d1ddbd8d0a86c17af94f46a5663d1b406eca92c82100ed53e5afc934de1de384",
+    "scripts/verify_16_9.g": "ff90a0b4e92a08672003aac9ffd2131e83474903b9f96487f020535e566562a0",
+    "scripts/summarize_16_9.py": "c44cd481598da7f258aee849ae4b46cf5e1aa9d8020a931234ad0f0bab722ab3",
+    "results/16.9-python-summary.json": "ab2025083a58523ac798f47cbfee177cc35c29ee8bc7c5e042a40b99dcf088bf",
+    "results/16.9-python.log": "7e1f4d4fb91eba2b2b4b4a5093b52d85ad2b7866ecb14a73e2a8be50cb92d4f9",
+    "results/16.9-witnesses.g": "b00dca4f45890cfdf61529458a5ae66df4259be609f1b3aa4bf78d17a3677b9d",
+    "results/16.9-gap.log": "34f8270789fc71e58da7f629f84ed533d5d3a13ed88e25b2311d95c4e9dfe81f",
+    "references/cache/frid-small-palindromic-2025.pdf": "d31110f70ec400b05e71a51afc48a9a3447abaeb2303cf20a1b33dd00111b3bd",
+    "references/cache/lotz-reflection-length-2024.pdf": "21f3b8342599b5845a16ed3730524ff41aa1040725fb3e3f8e9a420914033dc3",
+    "docs/21tkt.pdf": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911"
+  }
+}
