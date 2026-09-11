@@ -223,3 +223,28 @@ Nullstellensatz. These distinctions are documented in the proof audit.
 The negative examples over Q and Q * Z were not found in the searched
 literature. This is a limited search finding, not a priority claim.
 See `research/14.22-review.md` for exact reading scope and search terms.
+
+## Problem 15.89: partial dihedral result
+
+Trofimov, *On adjacency operators of locally finite graphs*,
+https://arxiv.org/abs/2208.01926v3 , published in Izvestiya: Mathematics
+88:3 (2024), 542--589, DOI 10.4213/im9408e, explicitly discusses 15.89.
+Read the Russian introduction, selected propagator statements, and the
+examples in Sections 8.1--8.5. Full general proofs were not audited.
+His complex-field counterexamples without vertex transitivity and his
+positive-characteristic vertex-transitive examples do not resolve the
+Notebook's complex vertex-transitive question. The English download
+failed with 403; the Russian preprint is cached. Our exact Laurent
+polynomial proof covers every finite-valency connected Cayley graph
+of the infinite dihedral group. This is a subclass result with no
+novelty claim, and it is excluded from the complete-candidate count.
+
+## Problem 11.46(a): recent prior claim
+
+Dai--Deng--Shi--Wu--Yang, *A Finite E-Group of Nilpotency Class Three*,
+https://arxiv.org/abs/2608.07275v1 , submitted 7 August 2026. The primary
+abstract was read; the full nine-page paper and its finite certificate
+have not been audited. It claims that the known group of order 3^84
+is an E-group, using a closure calculation on 9,841 projective points.
+Exclude this from new-target priority pending fuller literature review;
+we do not claim to have independently verified that published claim.

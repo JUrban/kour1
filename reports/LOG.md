@@ -310,3 +310,14 @@ was affected. The48-hour goal remains active. No external messages
 or Git pushes have been made.
 
 Order256 snapshot 2026-09-11T00:47:45.332946+00:00: 24,693 groups, 0 equality hits, 80 reverse inequalities, 15 live workers, 1 completed range, all checks PASS.
+
+At 2026-09-11 01:25 UTC, retained a proved positive subclass of 15.89:
+every complex number is an adjacency eigenvalue for every connected
+finite-valency Cayley graph of the infinite dihedral group. A binary
+coefficient induction rules out a nonzero constant Laurent determinant.
+The exact search checked 2,796,202 reflection polynomials; all 4,094
+constant determinants were zero. Independent convolution and 7,000
+neighbor-action controls passed. This is not a full Notebook solution
+and has no novelty claim. Trofimov's 2024 paper was compared with
+explicit reading limitations. A new August 2026 E-group preprint was
+also located; 11.46(a) is excluded from new-target priority on that basis.

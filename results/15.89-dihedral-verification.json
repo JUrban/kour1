@@ -1,0 +1,34 @@
+{
+  "problem": "15.89",
+  "status": "PASS",
+  "independent_exhaustion": [
+    {
+      "radius": 1,
+      "pairs": 2,
+      "constant_determinants": 2
+    },
+    {
+      "radius": 2,
+      "pairs": 16,
+      "constant_determinants": 4
+    },
+    {
+      "radius": 3,
+      "pairs": 128,
+      "constant_determinants": 8
+    },
+    {
+      "radius": 4,
+      "pairs": 1024,
+      "constant_determinants": 16
+    },
+    {
+      "radius": 5,
+      "pairs": 8192,
+      "constant_determinants": 32
+    }
+  ],
+  "exact_neighbor_actions": 7000,
+  "cpp_log_ranges_validated": 11,
+  "scope": "Dihedral Cayley subclass only; general claim rests on the written proof."
+}
