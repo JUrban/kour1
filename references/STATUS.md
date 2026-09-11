@@ -176,3 +176,23 @@ The introduction, lemma, and opening Section5 arguments were read
 in the author PDF. The candidate for(a) uses an additional scalar
 fiber construction. See research/16.28-review.md for search scope,
 field assumptions, and remaining formulation/novelty uncertainty.
+
+## Problem17.34
+
+The supplied PDF page108 was visually checked. Shakhova2015,
+https://www.mathnet.ru/eng/mzm10471 , Theorem1 proves c<=2 and
+explicitly calls it a partial resolution of17.34 on Russian page937.
+Read the introduction, preliminaries, theorem proof and following
+corollary. The candidate argument extends to every c and does not
+count the already known class-two case as new. Budkin2018,
+https://www.mathnet.ru/eng/smj3008 , treats Q and two additional
+generators in arbitrary subquasivarieties; the full N_c setting is
+different. Bergman's pre-1973 all-Lie dominion theorem and PBW proof
+were visually read; fixed nilpotency class is an additional issue.
+Reid1970 was identified but not retrieved in full. See the detailed
+source audit and limitations in research/17.34-review.md.
+
+Bahturin--Olshanskii arXiv:2208.09527v1, Theorem2.8 and Lemma3.1,
+and Suciu DOI10.4171/EMSS/74, Section6.2, were read for the
+Malcev/BCH correspondence and arbitrary nilpotent-group completion.
+The proof's subgroup and class-bound arguments are explicit.

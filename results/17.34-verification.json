@@ -1,0 +1,261 @@
+{
+  "method": "exact rational tensor-presentation quotient; no assumed PBW basis",
+  "cases": [
+    {
+      "name": "abelian_noncoordinate",
+      "lie_dimension": 3,
+      "class_bound": 1,
+      "subalgebra_dimension": 1,
+      "tensor_dimension": 3,
+      "relations_processed": 4,
+      "relation_rank": 1,
+      "module_dimension": 2,
+      "derivative_rank": 2,
+      "target_lower_central_dimensions": [
+        5,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 0,
+      "seconds": 0.001,
+      "status": "PASS"
+    },
+    {
+      "name": "heisenberg_trivial",
+      "lie_dimension": 3,
+      "class_bound": 2,
+      "subalgebra_dimension": 0,
+      "tensor_dimension": 12,
+      "relations_processed": 21,
+      "relation_rank": 6,
+      "module_dimension": 6,
+      "derivative_rank": 3,
+      "target_lower_central_dimensions": [
+        9,
+        5,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.08,
+      "status": "PASS"
+    },
+    {
+      "name": "heisenberg_all",
+      "lie_dimension": 3,
+      "class_bound": 2,
+      "subalgebra_dimension": 3,
+      "tensor_dimension": 12,
+      "relations_processed": 33,
+      "relation_rank": 12,
+      "module_dimension": 0,
+      "derivative_rank": 0,
+      "target_lower_central_dimensions": [
+        3,
+        1,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.038,
+      "status": "PASS"
+    },
+    {
+      "name": "heisenberg_nonideal",
+      "lie_dimension": 3,
+      "class_bound": 2,
+      "subalgebra_dimension": 1,
+      "tensor_dimension": 12,
+      "relations_processed": 25,
+      "relation_rank": 9,
+      "module_dimension": 3,
+      "derivative_rank": 2,
+      "target_lower_central_dimensions": [
+        6,
+        3,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.059,
+      "status": "PASS"
+    },
+    {
+      "name": "heisenberg_nonhomogeneous",
+      "lie_dimension": 3,
+      "class_bound": 2,
+      "subalgebra_dimension": 1,
+      "tensor_dimension": 12,
+      "relations_processed": 25,
+      "relation_rank": 9,
+      "module_dimension": 3,
+      "derivative_rank": 2,
+      "target_lower_central_dimensions": [
+        6,
+        3,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.062,
+      "status": "PASS"
+    },
+    {
+      "name": "heisenberg_central",
+      "lie_dimension": 3,
+      "class_bound": 2,
+      "subalgebra_dimension": 1,
+      "tensor_dimension": 12,
+      "relations_processed": 25,
+      "relation_rank": 7,
+      "module_dimension": 5,
+      "derivative_rank": 2,
+      "target_lower_central_dimensions": [
+        8,
+        4,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.06,
+      "status": "PASS"
+    },
+    {
+      "name": "heisenberg_ideal",
+      "lie_dimension": 3,
+      "class_bound": 2,
+      "subalgebra_dimension": 2,
+      "tensor_dimension": 12,
+      "relations_processed": 29,
+      "relation_rank": 10,
+      "module_dimension": 2,
+      "derivative_rank": 1,
+      "target_lower_central_dimensions": [
+        5,
+        2,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.048,
+      "status": "PASS"
+    },
+    {
+      "name": "free2_class3_nonideal",
+      "lie_dimension": 5,
+      "class_bound": 3,
+      "subalgebra_dimension": 1,
+      "tensor_dimension": 155,
+      "relations_processed": 891,
+      "relation_rank": 148,
+      "module_dimension": 7,
+      "derivative_rank": 4,
+      "target_lower_central_dimensions": [
+        12,
+        9,
+        6,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.217,
+      "status": "PASS"
+    },
+    {
+      "name": "free2_class3_nonhomogeneous",
+      "lie_dimension": 5,
+      "class_bound": 3,
+      "subalgebra_dimension": 2,
+      "tensor_dimension": 155,
+      "relations_processed": 922,
+      "relation_rank": 149,
+      "module_dimension": 6,
+      "derivative_rank": 3,
+      "target_lower_central_dimensions": [
+        11,
+        8,
+        5,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.214,
+      "status": "PASS"
+    },
+    {
+      "name": "free2_class3_nonabelian_subalgebra",
+      "lie_dimension": 5,
+      "class_bound": 3,
+      "subalgebra_dimension": 3,
+      "tensor_dimension": 155,
+      "relations_processed": 953,
+      "relation_rank": 151,
+      "module_dimension": 4,
+      "derivative_rank": 2,
+      "target_lower_central_dimensions": [
+        9,
+        6,
+        4,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.165,
+      "status": "PASS"
+    },
+    {
+      "name": "free2_class3_central",
+      "lie_dimension": 5,
+      "class_bound": 3,
+      "subalgebra_dimension": 1,
+      "tensor_dimension": 155,
+      "relations_processed": 891,
+      "relation_rank": 142,
+      "module_dimension": 13,
+      "derivative_rank": 4,
+      "target_lower_central_dimensions": [
+        18,
+        14,
+        9,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 400,
+      "seconds": 0.277,
+      "status": "PASS"
+    },
+    {
+      "name": "filiform_class4_nonhomogeneous",
+      "lie_dimension": 5,
+      "class_bound": 4,
+      "subalgebra_dimension": 2,
+      "tensor_dimension": 780,
+      "relations_processed": 6172,
+      "relation_rank": 770,
+      "module_dimension": 10,
+      "derivative_rank": 3,
+      "target_lower_central_dimensions": [
+        15,
+        12,
+        9,
+        5,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 0,
+      "seconds": 0.862,
+      "status": "PASS"
+    },
+    {
+      "name": "filtered_class4_deformation",
+      "lie_dimension": 5,
+      "class_bound": 4,
+      "subalgebra_dimension": 2,
+      "tensor_dimension": 780,
+      "relations_processed": 6172,
+      "relation_rank": 770,
+      "module_dimension": 10,
+      "derivative_rank": 3,
+      "target_lower_central_dimensions": [
+        15,
+        12,
+        9,
+        5,
+        0
+      ],
+      "rational_bch_homomorphism_checks": 0,
+      "seconds": 0.934,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "limitations": "Finite sanity checks, not a proof for all Lie algebras."
+}

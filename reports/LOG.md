@@ -251,3 +251,25 @@ IDs53042--53045. These are not equality hits or complete answers to
 19.20. A reusable read-only process/log snapshot script now records
 actual count comparisons and validates unique IDs and ranges.
 The48-hour goal remains active; no external contacts or pushes.
+
+At 2026-09-11T00:21:58.405270+00:00, completed an eighth candidate resolution,17.34.
+The augmentation-ideal module I/(U(L)h+I^(c+1)) separates any Lie
+subalgebra by a cocycle whose semidirect target remains of class <=c.
+Malcev completion and BCH give the stated dominion result for arbitrary
+divisible subgroups, with no rank bound. Thirteen exact tensor-algebra
+presentations verify kernels, actions, cocycles and lower central series;
+4,000 rational BCH homomorphism identities also pass. The construction
+was checked against nonideal and nonhomogeneous subalgebras.
+
+Shakhova2015 explicitly solved c<=2 as a partial answer to17.34; that
+prior result is credited and the new candidate scope is all c. Budkin2018
+concerns arbitrary subquasivarieties, a stronger target restriction.
+Bergman's all-Lie-algebra PBW theorem was compared. Reid's related full
+text remains unread after retrieval failures; no result from it is used.
+Modern primary accounts of the Malcev/BCH facts were read. Further
+novelty checking and outside review remain.
+
+GAP4.16.1 is working at the supplied relocated path. All16 order256
+workers were revalidated; 19,168 exact counts,0 equality hits,25 reverse
+inequalities,all log checks PASS. The48-hour goal remains active.
+No external messages or Git pushes have been made.
