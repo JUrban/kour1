@@ -1,0 +1,1964 @@
+                                                                    Groups acting freely on Λ-trees
+arXiv:0911.0209v4 [math.GR] 2 Nov 2011
+
+
+
+
+                                                         Olga Kharlampovich∗              Alexei Myasnikov†            Denis Serbin
+                                                                                   September 23, 2011
+
+
+                                                                                          Abstract
+                                                    A group is called Λ-free if it has a free Lyndon length function in an ordered abelian group
+                                                Λ, which is equivalent to having a free isometric action on a Λ-tree. A group has a regular
+                                                free length function in Λ if and only if it has a free isometric action on a Λ-tree so that all
+                                                branch points belong to the orbit of the base point. In this paper we prove that every finitely
+                                                presented Λ-free group G can be embedded into a finitely presented group with a regular free
+                                                length function in Λ so that the length function on G is preserved by the embedding. Next,
+                                                we prove that every finitely presented group G   e with a regular free Lyndon length function in
+                                                Λ has a regular free Lyndon length function in Rn ordered lexicographically for an appropriate
+                                                n and can be obtained from a free group by a series of finitely many HNN-extensions in which
+                                                associated subgroups are maximal abelian and length isomorphic.
+
+
+                                         1      Introduction
+                                         This is the fourth paper in a series, where we investigate non-Archimedean group actions, length
+                                         functions and infinite words. In [28] Lyndon introduced real-valued length functions as a tool to
+                                         carry over Nielsen cancelation theory from free groups to a more general setting (see also [29]).
+                                         Some results in this direction were obtained in [20, 21, 19, 34, 2]. In [6] Chiswell described a crucial
+                                         construction which shows that a group with a real-valued length function has an action on an R-tree,
+                                         and vice versa. Later, Morgan and Shalen realized that a similar construction holds for an arbitrary
+                                         group with a Lyndon length function which takes values in an arbitrary ordered abelian group Λ
+                                         (see [33]). In particular, they introduced Λ-trees as a natural generalization of R-trees which they
+                                         studied in relation with Thurston’s Geometrization Program. Thus, actions on Λ-trees and Lyndon
+                                         length functions with values in Λ are two equivalent languages describing the same class of groups.
+                                         In the case when the action is free (the stabilizer of every point is trivial) we call groups in this class
+                                         Λ-free. We refer to the book [7] for a detailed discussion on the subject.
+                                             One of the major events in combinatorial group theory in 1970’s was the development of Bass-
+                                         Serre theory. We refer to the book [36], where Serre laid down fundamentals of the theory of
+                                         groups acting freely on simplicial trees. In particular, Bass-Serre theory makes it possible to extract
+                                         information about the structure of a group from its action on a simplicial tree. Alperin and Bass [1]
+                                         developed the initial framework of the theory of group actions on Λ-trees and stated the fundamental
+                                         research goals: find the group theoretic information carried by an action (by isometries) on a Λ-tree;
+                                         generalize Bass-Serre theory to actions on arbitrary Λ-trees.
+                                             A joint effort of several researchers culminated in a description of finitely generated groups acting
+                                         freely on R-trees [4, 13], which is now known as Rips’ theorem: a finitely generated group acts freely
+                                         on an R-tree if and only if it is a free product of free abelian groups and surface groups (with an
+                                         exception of non-orientable surfaces of genus 1, 2, and 3). The key ingredient of this theory is the
+                                             ∗ Supported by NSERC grant
+                                             † Supported by NSERC grant
+
+
+
+
+                                                                                               1
+Groups with regular free length functions in Λ                                                         2
+
+
+so-called “Rips machine”, the idea of which comes from Makanin’s algorithm for solving equations
+in free groups (see [30]). The Rips machine appears in applications as a general tool that takes a
+sequence of isometric actions of a group G on some “negatively curved spaces” and produces an
+isometric action of G on an R-tree as the Gromov-Hausdorff limit of the sequence of spaces. Free
+actions on R-trees cover all Archimedean actions, since every group acting freely on a Λ-tree for an
+Archimedean ordered abelian group Λ also acts freely on an R-tree.
+    In the non-Archimedean case there are only partial results for particular choices of Λ. First of all,
+in [3] Bass studied finitely generated groups acting freely on Λ0 ⊕ Z-trees with respect to the right
+lexicographic order on Λ0 ⊕ Z. In this case it was shown that the group acting freely on a Λ0 ⊕ Z-tree
+splits into a graph of groups with Λ0 -free vertex groups and maximal abelian edge groups. Next,
+Guirardel (see [18]) obtained the structure of finitely generated groups acting freely on Rn -trees
+(with the lexicographic order). In [25] the authors described the class of finitely generated groups
+acting freely and regularly on Zn -trees in terms of HNN-extensions of a very particular type. The
+importance of regular actions becomes clear from the results of [26], where we proved that a finitely
+generated group acting freely on a Zn -tree is a subgroup of a finitely generated group acting freely
+and regularly on a Zm -tree for m ⩾ n, and the paper [9], where is was shown that a group acting
+freely on a Λ-tree (for arbitrary Λ) can always be embedded in a length-preserving way into a group
+acting freely and regularly on a Λ-tree.
+    In this paper we give a partial solution (for finitely presented groups) of the following main
+problem of the Alperin-Bass program.
+    Problem. Describe finitely presented (finitely generated) Λ-free groups for an arbitrary ordered
+abelian group Λ.
+    Nowadays, the geometric method of group actions seems much more in use than the length
+functions, even though the Nielsen theory still gives very powerful results (see the discussion in
+[25]). There are several reasons for this. Firstly, the Lyndon’s abstract axiomatic approach to
+length functions is less intuitive than group actions. Secondly, the current development of the
+abstract Nielsen theory is incomplete and insufficient — one of the principal notions of complete
+actions and regular length functions were not in use until recently. Thirdly, and this is crucial, an
+abstract analog of the Rips machine for length functions with values in R (or an arbitrary Λ) was not
+introduced or developed enough to be used easily in applications. Notice, that in the case of Λ = Z
+the completeness and regularity come for free, so there was no need for axiomatic formalization and
+it went mostly unnoticed. The regularity axiom appeared first in [31, 32] as a tool to deal with
+length functions in Zn (with respect to the lexicographic order). On the other hand, an analog of
+the Rips machine for Λ = Z did exist for a long time — the original Makanin-Razborov process [35]
+for solving equations in free groups. But it was not recognized as such until [23, 24], where it was
+used systematically to get splittings of groups.
+    Introduction of infinite Λ-words in [32] gives another approach to group actions. Every group
+admitting a faithful representation by Λ-words acts freely on a Λ-tree. The converse is proved in
+[6]. Formulation of the regularity axiom is another important ingredient. This axiom ensures that
+the group is complete with respect to the Gromov’s inner product, that is, the Gromov’s product
+of two elements of the group can be realized as the length of a particular element of the group (not
+only as an abstract length). In the language of actions this means that all branch points belong to
+the orbit of the base point. This allows one to use the Nielsen cancelation argument, very similar
+to the case of a free group. The regularity (completeness) condition is crucial for the existence of
+Makanin-Razborov type processes over groups with Λ-length functions.
+    In this paper we prove the following results.
+Theorem 1. Any finitely presented regular Λ-free group G can be represented as a union of a finite
+series of groups
+                                  G1 < G2 < · · · < Gn = G,
+Groups with regular free length functions in Λ                                                         3
+
+
+where
+    1. G1 is a free group,
+    2. Gi+1 is obtained from Gi by finitely many HNN-extensions in which associated subgroups are
+       maximal abelian and the associated isomorphisms preserve the length induced from Gi .
+Theorem 2. Let G be a finitely presented regular Λ-free group. Then G is a torsion-free toral
+relatively hyperbolic biautomatic group with a quasi-convex hierarchy (see [39] for the definition of a
+quasi-convex hierarchy).
+Proof. It follows from the description of the structure of G that each Gi is toral relatively hyperbolic.
+(It also follows from [18] and Theorem 3 since G acts freely on Rn -tree.) From [38] it follows that
+G is biautomatic. Now by [5] centralizers are regular and quasi-convex in biautomatic groups. So
+the associated subgroups in Gi are quasiconvex in Gi . If they are not conjugate, then they are
+centralizers in Gi+1 and therefore quasiconvex there. If they are conjugate, then the HNN-extension
+is equivalent to an extension of the centralizer of one of them (denote it by A). The centralizer
+C =< A, t|[a, t] = 1, a ∈ A > is quasiconvex in Gi+1 and A is a direct summand of C, therefore A
+is quasiconvex in C and in Gi+1 .
+Corollary 1. Let G be a finitely presented regular Λ-free group. Then the following algorithmic
+problems are decidable in G:
+    • the Word and Conjugacy Problems;,
+    • the Diophantine Problem (decidability of arbitrary equations in G).
+   Indeed, decidability of equations follows from [10]. Results of Dahmani and Groves [11] imply
+the following two corollaries.
+Corollary 2. Let G be a finitely presented regular Λ-free group. Then:
+    • G has a non-trivial abelian splitting and one can find such a splitting effectively,
+    • G has a non-trivial abelian JSJ-decomposition and one can find such a decomposition effec-
+      tively.
+Corollary 3. The isomorphism problem is decidable in the class of finitely presented groups that
+act regularly and freely on some Λ-tree.
+Theorem 3. Any finitely presented regular Λ-free group G is Rn -free for an appropriate n ∈ N,
+where Rn is ordered lexicographically.
+Theorem 4. Any finitely presented Λ-free group can be isometrically embedded into a finitely pre-
+sented regular Λ-free group.
+Corollary 4. Any finitely presented Λ-free group G is Rn -free for an appropriate n ∈ N and lexi-
+cographically ordered Rn .
+    Our main conjecture about Λ-free groups is still open.
+Conjecture 1. Any finitely presented Λ-free group G is Zk -free for an appropriate k ∈ N and
+lexicographically ordered Zk .
+
+
+2     Length functions, actions, infinite words
+Here we introduce basic definitions and notations which are to be used throughout the whole paper.
+Groups with regular free length functions in Λ                                                           4
+
+
+2.1    Lyndon length functions and free actions
+Let G be a group and Λ an ordered abelian group. Then a function l : G → Λ is called a (Lyndon)
+length function on G if the following conditions hold:
+(L1) ∀ g ∈ G : l(g) ⩾ 0 and l(1) = 0;
+(L2) ∀ g ∈ G : l(g) = l(g −1 );
+(L3) ∀ g, f, h ∈ G : c(g, f ) > c(g, h) → c(g, h) = c(f, h),
+      where c(g, f ) = 21 (l(g) + l(f ) − l(g −1 f )).
+Sometimes we refer to length functions with values in Λ as to Λ-length functions. Observe, that
+the word length function on a finitely generated group (with respect to a fixed finite generating set)
+usually is not a Lyndon length function. In this paper we consider length functions only of Lyndon
+type.
+   Notice that c(g, f ) may not be defined in Λ (if l(g) + l(f ) − l(g −1 f ) is not divisible by 2), so in
+the axiom (L3) we assume that Λ is canonically embedded into a divisible ordered abelian group
+ΛQ = Λ ⊗Z Q (see [32] for details).
+   It is not difficult to derive the following two properties of length functions from the axioms (L1)–
+(L3):
+    • ∀ g, f ∈ G : l(gf ) ⩽ l(g) + l(f );
+    • ∀ g, f ∈ G : 0 ⩽ c(g, f ) ⩽ min{l(g), l(f )}.
+A length function l : G → Λ is called free if it satisfies the following two axioms.
+
+(L4) ∀ g, f ∈ G : c(g, f ) ∈ Λ.
+(L5) ∀ g ∈ G : g 6= 1 → l(g 2 ) > l(g).
+
+    As we have mentioned in the introduction group actions on Λ-trees provide a geometric counter-
+part to Λ-length functions. To explain we need the following definitions, which we also use later in
+the text.
+    Let X be a non-empty set and Λ an ordered abelian group. A Λ-metric on X is a mapping
+p : X × X −→ Λ such that for all x, y, z ∈ X:
+(M1) p(x, y) ⩾ 0 and p(x, y) = 0 if and only if x = y,
+(M2) p(x, y) = p(y, x),
+(M3) p(x, y) ⩽ p(x, z) + p(y, z).
+If the axioms (M1)–(M3) are satisfied then the pair (X, p) is an Λ-metric space. If (X, p) and
+(X ′ , p′ ) are Λ-metric spaces, an isometry from (X, p) to (X ′ , p′ ) is a mapping f : X → X ′ such that
+p(x, y) = p′ (f (x), f (y)) for all x, y ∈ X.
+    For elements a, b ∈ Λ the closed segment [a, b] is defined by
+
+                                         [a, b] = {c ∈ A | a ⩽ c ⩽ b}.
+
+More generally, a segment in an Λ-metric space is the image of an isometry α : [a, b] → X for some
+a, b ∈ Λ. The endpoints of the segment are α(a), α(b). A segment with endpoints x, y ∈ X is
+denoted by [x, y]. An Λ-metric space (X, p) is geodesic if for all x, y ∈ X, there is a segment in X
+with endpoints x, y.
+    An Λ-tree is an Λ-metric space (X, p) such that:
+Groups with regular free length functions in Λ                                                                      5
+
+
+(T1) (X, p) is geodesic,
+(T2) if two segments of (X, p) intersect in a single point, which is an endpoint of both, then their
+     union is a segment,
+(T3) the intersection of two segments with a common endpoint is also a segment.
+    We say that a group G acts on a Λ-tree X if it acts on X by isometries, i.e. there exists an
+embedding of G into Isom(X). An action of G on X is termed free if for every 1 6= g ∈ G neither
+g, nor g 2 has a fixed point in X.
+    If G acts on a Λ-tree (X, p) and x ∈ X then one can associate to this action a function lx : G → Λ
+so that lx (g) = p(x, gx) for every g ∈ G. It is not hard to check that lx is a Lyndon length function.
+Moreover, if the action of G on X is free then lx is a free length function. The converse is also true,
+that is, every action of a group G on a Λ-tree arises from some Lyndon Λ-length function.
+Theorem 5. [6, 33] Let G be a group and l : G → Λ a Lyndon length function satisfying (L4).
+Then there are a Λ-tree (X, p), an action of G on X and a point x ∈ X such that l = lx .
+
+    For elements g1 , . . . , gn ∈ G we write
+
+                                                 g = g1 ◦ · · · ◦ gn
+
+if g = g1 · · · gn and l(g) = l(g1 ) + · · · + l(gn ). Also, for α ∈ Λ we write g = g1 ◦α g2 if g = g1 g2 and
+c(g1−1 , g2 ) < α.
+    A length function l : G → Λ is called regular if it satisfies the regularity axiom:
+(L6) ∀ g, f ∈ G, ∃ u, g1 , f1 ∈ G:
+
+                                      g = u ◦ g1 & f = u ◦ f1 & l(u) = c(g, f ).
+
+    Many examples of groups with regular free length functions are given in [25].
+
+2.2     Regular actions
+In this subsection we give a geometric characterization of group actions that come from regular
+length functions. The four lemmas below were proved in [25], but for convenience of the reader we
+give the proofs here too.
+Definition 1. Let G act on a Λ-tree Γ. The action is regular with respect to x ∈ Γ if for any
+g, h ∈ G there exists f ∈ G such that [x, f x] = [x, gx] ∩ [x, hx].
+Lemma 1. [25] Let G act on a Λ-tree (Γ, d). Then the action of G is regular with respect to x ∈ Γ
+if and only if the length function lx : G → Λ based at x is regular.
+Proof. By definition, the length function lx is regular if for every g, h ∈ G there exists f ∈ G such
+that g = f g1 , h = f h1 , where lx (f ) = c(g, h) and lx (g) = lx (f ) + lx (g1 ), lx (h) = lx (f ) + lx (h1 ).
+     Suppose the action of G is regular with respect to x. Then for g, h ∈ G there exists f ∈ G such
+that [x, f x] = [x, gx] ∩ [x, hx]. We have [x, gx] = [x, f x] ∪ [f x, gx], [x, hx] = [x, f x] ∪ [f x, hx] and
+[f x, gx] = [x, (f −1 g)x] = lx (f −1 g), [f x, hx] = [x, (f −1 h)x] = lx (f −1 h). Taking g1 = f −1 g, h1 =
+f −1 h we have lx (g) = lx (f ) + lx (g1 ), lx (h) = lx (f ) + lx (h1 ). Finally, since c(g, h) = 21 (lx (g) + lx(h) −
+lx (g −1 h)) and lx (g −1 h) = d(x, (g −1 h)x) = d(gx, hx) = d(f x, gx) + d(f x, hx) we get lx (f ) = c(g, h).
+     Suppose that lx is regular. Then from g = f ◦ g1 , h = f ◦ h1 it follows that [x, gx] = [x, f x] ∪
+[f x, gx], [x, hx] = [x, f x] ∪ [f x, hx]. lx (f ) = c(g, h) = 21 (lx (g) + lx (h) − lx (g −1 h)), so 2d(x, f x) =
+d(x, gx) + d(x, hx) − d(x, (g −1 h)x) = d(x, gx) + d(x, hx) − d(gx, hx). In other words,
+
+      d(gx, hx) = d(x, gx) + d(x, hx) − 2d(x, f x) = (d(x, gx) − d(x, f x)) + (d(x, hx) − d(x, f x))
+Groups with regular free length functions in Λ                                                            6
+
+
+                                         = d(f x, gx) + d(f x, hx)
+which is equivalent to [x, f x] = [x, gx] ∩ [x, hx].
+Lemma 2. Let G act minimally on a Λ-tree Γ. If the action of G is regular with respect to x ∈ Γ
+then all branch points of Γ are G-equivalent.
+Proof. From minimality of the action it follows that Γ is spanned by the set of points Gx = {gx |
+g ∈ G}.
+    Now let y be a branch point in Γ. It follows that there exist (not unique in general) g, h ∈ G
+such that [x, y] = [x, gx] ∩ [x, hx]. From regularity of the action it follows that there exists f ∈ G
+such that y = f x. Hence, every branch point is G-equivalent to x and the statement of the lemma
+follows.
+Lemma 3. Let G act on a Λ-tree Γ. If the action of G is regular with respect to x ∈ Γ then it is
+regular with respect to any y ∈ Gx.
+Proof. We have to show that for every g, h ∈ G there exists f ∈ G such that [y, f y] = [y, gy] ∩ [y, hy].
+Since y = tx for some t ∈ G then we have to prove that [tx, (f t)x] = [tx, (gt)x]∩[tx, (ht)x]. The latter
+equality is equivalent to [x, (t−1 f t)x] = [x, (t−1 gt)x] ∩ [x, (t−1 ht)x] which follows from regularity of
+the action with respect to x.
+Lemma 4. Let G act freely on a Λ-tree Γ so that all branch points of Γ are G-equivalent. Then the
+action of G is regular with respect to any branch point in Γ.
+Proof. Let x be a branch point in Γ and g, h ∈ G. If g = h then [x, gx] ∩ [x, hx] = [x, gx] and g is
+the required element. Suppose g 6= h. Since the action is free then gx 6= hx and we consider the
+tripod formed by x, gx, hx. Hence, y = Y (x, gx, hx) is a branch point in Γ and by the assumption
+there exists f ∈ G such that y = f x.
+
+2.3    Infinite words and length functions
+In this subsection at first we recall some notions from the theory of ordered abelian groups (for
+all the details refer to the books [16] and [27]) and then following [32] describe the construction of
+infinite words.
+    Let Λ be a discretely ordered abelian group with the minimal positive element 1. It is going to
+be clear from the context if we are using 1 as an element of Λ, or as an integer. Let X = {xi | i ∈ I}
+be a set. Put X −1 = {x−1 i  | i ∈ I} and X ± = X ∪ X −1 . A Λ-word is a function of the type
+
+                                            w : [1, αw ] → X ± ,
+
+where αw ∈ Λ, αw ⩾ 0. The element αw is called the length |w| of w.
+   By W (Λ, X) we denote the set of all Λ-words. Observe, that W (Λ, X) contains an empty Λ-word
+which we denote by ε.
+   Concatenation uv of two Λ-words u, v ∈ W (Λ, X) is a Λ-word of length |u| + |v| and such that:
+                                    
+                                       u(a)       if 1 ⩽ a ⩽ |u|
+                        (uv)(a) =
+                                       v(a − |u|) if |u| < a ⩽ |u| + |v|
+
+    A Λ-word w is reduced if w(β + 1) 6= w(β)−1 for each 1 ⩽ β < |w|. We denote by R(Λ, X) the
+set of all reduced Λ-words. Clearly, ε ∈ R(Λ, X). If the concatenation uv of two reduced Λ-words u
+and v is also reduced then we write uv = u ◦ v.
+    For u ∈ W (Λ, X) and β ∈ [1, αu ] by uβ we denote the restriction of u on [1, β]. If u ∈ R(Λ, X)
+and β ∈ [1, αu ] then
+                                            u = uβ ◦ ũβ ,
+Groups with regular free length functions in Λ                                                     7
+
+
+for some uniquely defined ũβ .
+    An element com(u, v) ∈ R(Λ, X) is called the (longest ) common initial segment of Λ-words u
+and v if
+                                u = com(u, v) ◦ ũ, v = com(u, v) ◦ ṽ
+for some (uniquely defined) Λ-words ũ, ṽ such that ũ(1) 6= ṽ(1).
+    Now, we can define the product of two Λ-words. Let u, v ∈ R(Λ, X). If com(u−1 , v) is defined
+then
+                           u−1 = com(u−1 , v) ◦ ũ, v = com(u−1 , v) ◦ ṽ,
+for some uniquely defined ũ and ṽ. In this event put
+
+                                           u ∗ v = ũ−1 ◦ ṽ.
+
+The product ∗ is a partial binary operation on R(Λ, X).
+   An element v ∈ R(Λ, X) is termed cyclically reduced if v(1)−1 6= v(|v|). We say that an element
+v ∈ R(Λ, X) admits a cyclic decomposition if v = c−1 ◦ u ◦ c, where c, u ∈ R(Λ, X) and u is
+cyclically reduced. Observe that a cyclic decomposition is unique (whenever it exists). We denote
+by CR(Λ, X) the set of all cyclically reduced words in R(Λ, X) and by CDR(Λ, X) the set of all
+words from R(Λ, X) which admit a cyclic decomposition.
+   Let IΛ index the set of all convex subgroups of Λ. IΛ is linearly ordered (see, for example, [7]):
+i < j if and only if Λi < Λj , and              [
+                                            Λ=      Λi .
+                                                  i∈IΛ
+
+We say that g ∈ G has the height i ∈ IΛ and denote ht(g) = i if |g| ∈ Λi and |g| ∈
+                                                                                 / Λj for any j < i.
+  Below we refer to Λ-words as infinite words usually omitting Λ whenever it does not produce any
+ambiguity.
+  The following result establishes the connection between infinite words and length functions.
+
+Theorem 6. [32] Let Λ be a discretely ordered abelian group and X be a set. Then any subgroup
+G of CDR(Λ, X) has a free Lyndon length function with values in Λ – the restriction L|G on G of
+the standard length function L on CDR(Λ, X).
+   The converse of the theorem above is also true.
+Theorem 7. [8] Let G have a free Lyndon length function L : G → Λ, where Λ is a discretely ordered
+abelian group. Then there exists a set X and a length preserving embedding φ : G → CDR(Λ, X),
+that is, |φ(g)| = L(g) for any g ∈ G.
+Corollary 5. [8] Let G have a free Lyndon length function L : G → Λ, where Λ is an arbitrary
+ordered abelian group. Then there exists an embedding φ : G → CDR(Λ′ , X), where Λ′ = Z ⊕ Λ
+is discretely ordered with respect to the right lexicographic order and X is some set, such that,
+|φ(g)| = (0, L(g)) for any g ∈ G.
+     Theorem 6, Theorem 7, and Corollary 5 show that a group has a free Lyndon length function if
+and only if it embeds into a set of infinite words and this embedding preserves the length. Moreover,
+it is not hard to show that this embedding also preserves regularity of the length function.
+Theorem 8. [22] Let G have a free regular Lyndon length function L : G → Λ, where Λ is an
+arbitrary ordered abelian group. Then there exists an embedding φ : G → R(Λ′ , X), where Λ′ is a
+discretely ordered abelian group and X is some set, such that, the Lyndon length function on φ(G)
+induced from R(Λ′ , X) is regular.
+Groups with regular free length functions in Λ                                                             8
+
+
+3     Generalized equations
+From now on we assume that G = hX | Ri is a finitely presented group which acts freely and regularly
+on a Λ-tree, where Λ is a discretely ordered abelian group, or, equivalently, G can be represented by
+Λ-words over some alphabet Z and the length function on G induced from CDR(Λ, Z) is regular.
+Let us fix the embedding ξ : G ֒→ CDR(Λ, Z) for the rest of this section.
+
+3.1     The notion of a generalized equation
+Definition 2. A combinatorial generalized equation Ω (which is convenient to visualize as shown
+on the picture below)
+
+
+                                         1   2       3               ρ ρ+1
+
+                                                             λ
+                                                 λ
+                                                         µ
+                                                                 µ
+
+
+
+
+                                Figure 1: A typical generalized equation.
+
+    consists of the following objects.
+
+    1. A finite set of bases M = BS(Ω). The set of bases M consists of 2n elements M =
+       {µ1 , . . . , µ2n }. The set M comes equipped with two functions: a function ε : M → {1, −1}
+       and an involution ∆ : M → M (that is, ∆ is a bijection such that ∆2 is an identity on M).
+       Bases µ and µ = ∆(µ) are called dual bases. We denote bases by letters µ, λ, etc.
+    2. A set of boundaries BD = BD(Ω) = {1, 2, . . . , ρ + 1}, that is, integer points of the interval
+       I = [1, ρ + 1]. We use letters i, j, etc. for boundaries.
+    3. Two functions α : BS → BD and β : BS → BD. We call α(µ) and β(µ) the initial and
+       terminal boundaries of the base µ (or endpoints of µ). These functions satisfy the following
+       conditions: for every base µ ∈ BS: α(µ) < β(µ) if ε(µ) = 1 and α(µ) > β(µ) if ε(µ) = −1.
+    4. A set of boundary connections (p, λ, q), where p is a boundary on λ (that is a number between
+       α(λ) and β(λ)) and q on λ̄. In this case we say that p and q are λ-tied. If (p, λ, q) is a
+       boundary connection then (q, λ, p) is also a boundary connection. (The meaning of boundary
+       connections will be explained in the transformation (ET5)).
+
+    With a combinatorial generalized equation Ω one can canonically associate a system of equations
+in variables h = (h1 , . . . , hρ ) (variables hi are also called items). This system is called a generalized
+equation, and (slightly abusing the terminology) we denote it by the same symbol Ω, or Ω(h) speci-
+fying the variables it depends on. The generalized equation Ω consists of the following two types of
+equations.
+
+    1. Each pair of dual bases (λ, λ) provides an equation
+
+                        [hα(λ) hα(λ)+1 . . . hβ(λ)−1 ]ε(λ) = [hα(λ) hα(λ)+1 . . . hβ(λ)−1 ]ε(λ) .
+
+       These equations are called basic equations.
+Groups with regular free length functions in Λ                                                                    9
+
+
+   2. Every boundary connection (p, λ, q) gives rise to a boundary equation
+
+                                 [hα(λ) hα(λ)+1 · · · hp−1 ] = [hα(λ) hα(λ)+1 · · · hq−1 ],
+
+      if ε(λ) = ε(λ) and
+                                 [hα(λ) hα(λ)+1 · · · hp−1 ] = [hq hq+1 · · · hα(λ)−1 ]−1 ,
+
+      if ε(λ) = −ε(λ).
+
+Remark 1. We assume that every generalized equation comes from a combinatorial one.
+    Given a generalized equation Ω(h) one can define the group of Ω(h)
+
+                                                GΩ = hh | Ω(h)i.
+
+Definition 3. Let Ω(h) = {L1 (h) = R1 (h), . . . , Ls (h) = Rs (h)} be a generalized equation in vari-
+ables h = (h1 , . . . , hρ ). A set U = (u1 , . . . , uρ ) ⊆ R(Λ, Z) of nonempty Λ-words is called a solution
+of Ω if:
+   1. all words Li (U ), Ri (U ) are reduced,
+   2. Li (U ) = Ri (U ), i ∈ [1, s].
+   Observe that a solution U of Ω(h) defines a homomorphism ξU : GΩ → R(Λ, Z) induced by the
+mapping hi → ui , i ∈ [1, ρ] since after this substitution all the equations of Ω(h) turn into identities
+in R(Λ, Z).
+   If we specify a particular solution U of a generalized equation Ω then we use a pair (Ω, U ).
+Definition 4. A cancelation table C(U ) of a solution U = (u1 , . . . , uρ ) is defined as follows
+
+            C(U ) = {hǫi hσj | there is cancelation in the product uǫi ∗ uσj , where ǫ, σ = ±1}.
+
+Definition 5. A solution U + of a generalized equation Ω is called consistent with a solution U if
+C(U + ) ⊆ C(U ).
+
+3.2     From a finitely presented group to a generalized equation
+Recall that G = hX | Ri is finitely presented and let X = {x1 , . . . , xn } and R = {r1 (X), . . . , rm (X)}.
+Adding, if necessary, auxiliary generators, we can assume that every relator involves at most three
+generators.
+     Since ξ is a homomorphism it follows that after the substitution xi → ξ(xi ), i ∈ [1, n] all products
+ri (ξ(X)), i ∈ [1, m] cancel out. Hence, we have finitely many cancellation diagrams over CDR(Λ, Z),
+which give rise to a generalized equation Ω corresponding to the embedding ξ : G ֒→ CDR(Λ, Z).
+     The precise definition and all the details concerning cancellation diagrams over CDR(Λ, Z) can
+be found in [22]. Briefly, a cancellation diagram for ri (ξ(X)) can be viewed as a finite directed tree
+Ti in which every positive edge e has a label λe so that every occurrence xδ , δ ∈ {−1, 1} of x ∈ X
+in ri corresponds to a reduced path eǫ11 · · · eǫkk , where ǫi ∈ {−1, 1}, in Ti and ξ(xδ ) = λǫe11 ◦ . . . ◦ λǫekk .
+In other words, each λe is a piece of some generator of G viewed as a Λ-word. Moreover, we assume
+that |λe | is known (since we know the homomorphism ξ).
+     Now we would like to construct a generalized equation Ωi corresponding to Ti . Denote by X(Ti )
+all generators of G which appear in ri . Next, consider a segment J in Λ of length
+                                                   X
+                                                         |ξ(x)|
+                                                  x∈X(Ti )
+Groups with regular free length functions in Λ                                                                                  10
+
+
+
+           [x,y] = 1                            y -1                                                               λ3 λ3
+                                x -1
+                                                                                     λ1                       λ2           λ4
+
+                                                                                     λ1                       λ2           λ4
+                        y          x                                                             λ5 λ5
+
+
+
+
+                                            1        2   3         4   5        6        7       8        9
+
+                                                             λ2                     λ4
+                                                λ3                                                   λ3
+                                                                           λ1
+
+                                                                  λ2                λ5
+                                                λ4                         λ5                        λ1
+
+
+
+                                                              x                              y
+
+
+  Figure 2: From the cancellation diagram for the relation [x, y] = 1 to the generalized equation.
+
+
+which is naturally divided by the lengths of ξ(x), x ∈ X(Ti ) into subsegments with respect to
+any given order on X(Ti ). Since every ξ(x), x ∈ X(Ti ) splits into at least one reduced product
+λǫe11 ◦ . . . ◦ λǫekk , every such splitting gives a subdivision of the corresponding subsegment of J. Hence,
+we subdivide J using all product representations of all ξ(x), x ∈ X(Ti ). As a result we obtain a
+subdivision of J into ρi items whose endpoints become boundaries of Ωi . Observe that each λe
+appears exactly twice in the products representing some ξ(x), x ∈ X(Ti ) and each such entry covers
+several adjacent items of J. This pair of entries defines a pair of dual bases (λe , λe ). Hence,
+
+                                 Mi = BS(Ωi ) = {λe , λe | e ∈ E(Ti )}.
+
+ǫ(λe ) depends on the sign of λe in the corresponding product representing a variable from X(Ti )
+(similarly for λe ).
+    In the same way one can construct Ti and the corresponding Ωi for each ri , i ∈ [1, m]. Combining
+all combinatorial generalized equations Ωi , i ∈ [1, m] we obtain the equation Ω with items h1 , . . . , hρ
+and bases M = ∪i Mi . By definition
+
+                                       GΩ = hh1 , . . . , hρ | Ω(h1 , . . . , hρ )i.
+
+At the same time, since each item can be obtained in the form
+
+                                   (λǫi11 ◦ . . . ◦ λǫikk ) ∗ (λδj11 ◦ . . . ◦ λδjll )−1 ,
+
+it follows that GΩ can be generated by M with the relators obtained by rewriting Ω(h1 , . . . , hρ ) in
+terms of M.
+    It is possible to transform the presentation hh1 , . . . , hρ | Ωi into hX | Ri using Tietze transfor-
+mations as follows. From the cancellation diagrams constructed for each relator in R it follows that
+Groups with regular free length functions in Λ                                                             11
+
+
+xi = wi (h1 , . . . , hρ ) = wi (h), i ∈ [1, n]. Hence
+
+                     hh1 , . . . , hρ | Ωi ≃ hh1 , . . . , hρ , X | Ω ∪ {xi = wi (h), i ∈ [1, n]}i.
+
+Next, from the cancellation diagrams it follows that R is a set of consequences of Ω∪{xi = wi (h), i ∈
+[1, n]}, hence,
+
+                   hh1 , . . . , hρ | Ωi ≃ hh1 , . . . , hρ , X | Ω ∪ {xi = wi (h), i ∈ [1, n]} ∪ Ri.
+
+Finally, since the length function on G is regular, for each hi there exists a word ui (X) such that
+hi = ui (ξ(X)) and all the equations in Ω ∪ {xi = wi (h), i ∈ [1, n]} follow from R after we substitute
+hi by ui (X) for each i. It follows that
+
+                              hh1 , . . . , hρ , X | Ω ∪ {xi = wi (h), i ∈ [1, n]} ∪ Ri
+
+      ≃ hh1 , . . . , hρ , X | Ω ∪ {xi = wi (h), i ∈ [1, n]} ∪ R ∪ {hj = uj (X), j ∈ [1, ρ]}i ≃ hX | Ri.
+It follows that G ≃ GΩ .
+    Let B be the standard CW 2-complex for G corresponding to the presentation hM | Ω(M)i. Let
+C(Ω) be a CW 2-complex obtained from GΩ by creating for each relator a polygon with boundary
+labeled by this relator and gluing these polygons together along edges labeled by the same letter.
+C(Ω) may have several vertices. If we add arcs joining all the vertices in C(Ω) we obtain a CW
+complex D(Ω) which has the same fundamental group as B (namely, G).
+Lemma 5. G is a free product of π1 (C(Ω)) and, possibly, a free group.
+Proof. Follows from the construction.
+Remark 2. Let G    e be a finitely presented group with a free length function in Λ (not necessary
+                                                        b with a free regular length function in Λ by
+regular). It can be embedded isometrically in the group G
+[9]. That group can be embedded in R(Λ′ , X). When we make a generalized equation Ω for G,      e we
+                                                   b                                      b
+have to add only finite number of elements from G. Let G be a subgroup generated in G by G and  e
+these elements. Then G is the quotient of GΩ containing G e as a subgroup.
+
+
+4     Elimination process
+In this section at first we introduce transformations of combinatorial generalized equations, then we
+show how they can be applied to “simplify” the given equation Ω and to extract information about
+the structure of the corresponding group GΩ .
+
+4.1     Elementary transformations
+In this subsection we describe elementary transformations of generalized equations. Let (Ω, U ) be a
+generalized equation together with a solution U . An elementary transformation (ET) associates to
+a generalized equation (Ω, U ) a generalized equation (Ω1 , U1 ) and an epimorphism π : GΩ → GΩ1
+such that for the solution U1 the following diagram commutes
+                                                            π✲
+                                                    GΩ              GΩ1
+
+                                                  ξU
+                                                              ξU1
+                                                    ❄✠
+                                                 R(Λ, Z)
+
+    One can view (ET) as a mapping ET : (Ω, U ) → (Ω1 , U1 ).
+ Groups with regular free length functions in Λ                                                                                                                        12
+
+
+(ET1) (Cutting a base (see Fig. 3)). Let λ be a base in Ω and p an internal boundary of λ (that is,
+      p 6= α(λ), β(λ)) with a boundary connection (p, λ, q). Then we cut the base λ at p into two
+      new bases λ1 and λ2 , and cut λ at q into the bases λ1 and λ2 .
+
+                  1       2       3       4       5       6       7       8        9   1        2       3       4       5       6        7        8       9
+
+
+                              λ                                                                λ1
+                                                                                                            λ2
+
+
+                                                              λ                                                                     λ1
+                                                                                                                                             λ2
+
+
+
+
+                                                  Figure 3: Elementary transformation (ET1).
+
+(ET2) (Transfering a base (see Fig. 4)). If a base λ of Ω contains a base µ (that is, α(λ) ⩽ α(µ) <
+      β(µ) ⩽ β(λ)) and all boundaries on µ are λ-tied by boundary some connections then we
+      transfer µ from its location on the base λ to the corresponding location on the base λ.
+
+          1   2       3       4       5       6       7       8       9       10       1            2       3       4       5       6        7        8       9   10
+                                          µ                                                                                     µ
+                          µ
+                                                                                                                                         µ
+
+                          λ                                                                                     λ
+
+                                                          λ                                                                                      λ
+
+
+
+
+                                                  Figure 4: Elementary transformation (ET2).
+
+(ET3) (Removal of a pair of matched bases (see Fig. 5)). If the bases λ and λ are matched (that is,
+      α(λ) = α(λ), β(λ) = β(λ)) then we remove λ, λ from Ω.
+
+
+          1   2       3       4       5       6       7       8       9       10           1        2       3       4       5       6        7        8       9   10
+
+
+                  λ                                               µ                                                                                       µ
+                                  µ                                                                                     µ
+
+
+                  λ
+
+
+
+
+                                                  Figure 5: Elementary transformation (ET3).
+
+       Remark 3. Observe, that Ω and Ω1 , where Ω1 = ET i(Ω) for i ∈ {1, 2, 3} have the same
+       set of variables h and the bijection hi → hi , i ∈ [1, ρ] induces an isomorphism GΩ → GΩ1 .
+       Moreover, U is a solution of Ω if and only if U is a solution of Ω1 .
+ Groups with regular free length functions in Λ                                                                                                                          13
+
+
+(ET4) (Removal of a lone base (see Fig. 6)). Suppose, a base λ in Ω does not intersect any other
+      base, that is, the items hα(λ) , . . . , hβ(λ)−1 are contained only inside of the base λ.
+
+
+                  1       2       3           4       5           6       7       8       9       10                       1       2       3    4      5        6
+
+
+                                                                                              µ                                                            µ
+                                                              µ
+                                                                                                                                       µ
+                                          λ
+
+                                                                              λ
+
+
+
+
+                                                  Figure 6: Elementary transformation (ET4).
+
+      Suppose also that all boundaries in λ are λ-tied, that is, for every i (α(λ) < i ⩽ β(λ) − 1) there
+      exists a boundary b(i) such that (i, λ, b(i)) is a boundary connection in Ω. Then we remove
+      the pair of bases λ and λ together with all the boundaries α(λ) + 1, . . . , β(λ) − 1 (and rename
+      the rest β(λ) − α(λ) − 1 of the boundaries correspondingly).
+      We define the isomorphism π : GΩ → GΩ1 as follows:
+
+                                                              π(hj ) = hj if j < α(λ) or j ⩾ β(λ)
+                                                               
+                                                                  hb(i) · · · hb(i)−1 ,   if ε(λ) = ε(λ),
+                                                      π(hi ) =
+                                                                  hb(i) · · · hb(i−1)−1 , if ε(λ) = −ε(λ)
+      for α + 1 ⩽ i ⩽ β(λ) − 1.
+
+              1       2       3       4           5       6           7       8       9   10           1   2       3   4       5       6       7 8 9       10       11
+
+
+                  λ                                                                                            λ
+
+
+                                                              λ                                                                                        λ
+
+
+
+
+              1       2       3       4           5       6           7       8       9   10           1   2       3   4       5       6       7 8 9       10       11
+
+
+                          λ                                                                                    λ
+
+
+
+                                                                          λ                                                                      λ
+
+
+
+
+                                                  Figure 7: Elementary transformation (ET5).
+ Groups with regular free length functions in Λ                                                          14
+
+
+(ET5) (Introduction of a boundary (see Fig. 7)). Suppose a point p in a base λ is not λ-tied.
+      The transformation (ET5) λ-ties it. To this end, denote by uλ the element of CDR(Λ, Z)
+      corresponding to λ and let u′λ be the beginning of this word ending at p. Then we perform
+      one of the following two transformations according to where the end of u′λ on λ is situated:
+
+        (a) If the end of u′λ on λ is situated on the boundary q then we introduce the boundary
+            connection (p, λ, q). In this case the corresponding isomorphism π : GΩ → GΩ1 is induced
+            by the bijection hi → hi , i ∈ [1, ρ]. (If we began with the group G̃ with non-regular length
+            function as in Remark 2 this is the only place where π : GΩ → GΩ1 may be a proper
+            epimorphism, but its restriction on G̃ is still an isomorphism.)
+        (b) If the end of u′λ on λ is situated between q and q + 1 then we introduce a new boundary q ′
+            between q and q + 1 (and rename all the boundaries), and also introduce a new boundary
+            connection (p, λ, q ′ ). In this case the corresponding isomorphism π : GΩ → GΩ1 is induced
+            by the map π(h) = h, if h 6= hq , and π(hq ) = hq′ hq′ +1 .
+
+ 4.2    Derived transformations and auxiliary transformations
+ In this section we define complexity of a generalized equation and describe several useful “derived”
+ transformations of generalized equations. Some of them can be realized as finite sequences of ele-
+ mentary transformations, others result in equivalent generalized equations but cannot be realized
+ by finite sequences of elementary moves.
+     A boundary is open if it is an internal boundary of some base, otherwise it is closed. A section
+ σ = [i, . . . , i + k] is said to be closed if the boundaries i and i + k are closed and all the boundaries
+ between them are open.
+     Sometimes it will be convenient to subdivide all sections of Ω into active (denoted AΣΩ ) and
+ non-active sections. For an item h denote by γ(h) the number of bases containing h. An item h is
+ called free is it meets no base, that is, if γ(h) = 0. Free variables are transported to the very end of
+ the interval behind all items in Ω and they become non-active.
+
+ (D1) (Closing a section). Let σ be a section of Ω. The transformation (D1) makes the section σ
+      closed. Namely, (D1) cuts all bases in Ω through the end-points of σ.
+ (D2) (Transporting a closed section). Let σ be a closed section of a generalized equation Ω. We
+      cut σ out of the interval [1, ρΩ ] together with all the bases on σ and put σ at the end of the
+      interval or between any two consecutive closed sections of Ω. After that we correspondingly
+      re-enumerate all the items and boundaries of the latter equation to bring it to the proper
+      form. Clearly, the original equation Ω and the new one Ω′ have the same solution sets and
+      their coordinate groups are isomorphic
+ (D3) (Moving free variables to the right). Suppose that Ω contains a free variable hq in an active
+      section. Here we close the section [q, q+1] using (D1), transport it to the very end of the interval
+      behind all items in Ω using (D2). In the resulting generalized equation Ω′ the transported
+      section becomes a non-active section.
+ (D4) (Deleting a complete base). A base µ of Ω is called complete if there exists a closed section σ
+      in Ω such that σ = [α(µ), β(µ)].
+       Suppose µ is an active complete base of Ω and σ is a closed section such that σ = [α(µ), β(µ)].
+       In this case using (ET5), we transfer all bases from µ to µ, then using (ET4) we remove the
+       lone base µ together with the section σ.
+ (D5) (Finding the kernel). We will give a definition of eliminable base for an equation Ω that does
+      not have any boundary connections. An active base µ ∈ AΣΩ is called eliminable if at least
+      one of the following holds
+Groups with regular free length functions in Λ                                                              15
+
+
+      (a) µ contains an item hi with γ(hi ) = 1,
+      (b) at least one of the boundaries α(µ), β(µ) is different from 1, ρ + 1 and does not touch any
+          other base (except for µ).
+
+     The process of finding the kernel works as follows. We cut the bases of Ω along all the boundary
+     connections thus obtaining the equation without boundary connections, then consequently re-
+     move eliminable bases until no eliminable base is left in the equation. The resulting generalized
+     equation is called the kernel of Ω and we denote it by Ker(Ω). It is easy to see that Ker(Ω)
+     does not depend on a particular removal process. Indeed, if Ω has two different eliminable
+     bases µ1 , µ2 , and deletion of µi produces an equation Ωi then by induction (on the number of
+     eliminations) Ker(Ωi ) is uniquely defined for i = 1, 2. Obviously, µ1 is still eliminable in Ω2 ,
+     as well as µ2 is eliminable in Ω1 . Now eliminating µ1 and µ2 from Ω2 and Ω1 we get one and
+     the same equation Ω0 . By induction, Ker(Ω1 ) = Ker(Ω0 ) = Ker(Ω2 ) hence the result. We
+     say that an item hi belongs to the kernel (hi ∈ Ker(Ω)), if hi belongs to at least one base in
+     the kernel. Notice that the kernel can be empty.
+     Also, for an equation Ω by Ω we denote the equation which is obtained from Ω by deleting all
+     free variables. Obviously,
+                                         GΩ = GΩ ∗ F (Y ),
+     where Y is the set of free variables in Ω.
+     Let us consider what happens in this process on the group level.
+     We start with the case when just one base is eliminated. Let µ be an eliminable base in
+     Ω = Ω(h1 , . . . , hρ ). Denote by Ω1 the equation resulting from Ω by eliminating µ.
+
+      (a) Suppose hi ∈ µ and γ(hi ) = 1. Then the variable hi occurs only once in Ω - precisely
+          in the equation sµ = 1 corresponding to the base µ. Therefore, in the group GΩ the
+          relation sµ = 1 can be written as hi = w, where w does not contain hi . Using Tietze
+          transformations we can rewrite the presentation of GΩ as GΩ′ , where Ω′ is obtained from
+          Ω by deleting sµ and the item hi . It follows immediately that
+
+                                                     GΩ1 ≃ GΩ′ ∗ hhi i
+
+          and
+                                                GΩ ≃ GΩ′ ≃ GΩ1 ∗ F (B)                                     (1)
+          for some free group F (B).
+      (b) Suppose now that µ satisfies case (b) above with respect to a boundary i. Then in the
+          equation sµ = 1 the variable hi−1 either occurs only once, or it occurs precisely twice and
+          in this event the second occurrence of hi−1 (in µ) is a part of the subword (hi−1 hi )±1 . In
+          both cases it is easy to see that the tuple
+
+                                       (h1 , . . . , hi−2 , sµ , hi−1 hi , hi+1 , . . . , hρ )
+
+          generates G. Therefore, by eliminating the relation sµ = 1 we can rewrite the presentation
+          of GΩ in the generators Y = (h1 , . . . , hi−2 , hi−1 hi , hi+1 , . . . , hρ ). Observe also that any
+          other equation sλ = 1 (λ 6= µ) of Ω either does not contain the variables hi−1 , hi , or it
+          contains them as parts of the subword (hi−1 hi )±1 , that is, any such a word sλ can be
+          expressed as a word wλ (Y ) in terms of the generators Y . This shows that
+
+                                        GΩ ≃ hY | {wλ (Y ) | λ 6= µ}i ≃ GΩ′ ,
+Groups with regular free length functions in Λ                                                            16
+
+
+          where Ω′ is a generalized equation obtained from Ω1 by deleting the boundary i. Denote
+          by Ω′′ an equation obtained from Ω′ by adding a free variable z to the right end of Ω′ . It
+          follows now that
+                                           GΩ1 ≃ GΩ′′ ≃ GΩ ∗ hzi
+          and
+                                                 GΩ ≃ GΩ′ ∗ F (K)                                        (2)
+          for some free group F (K).
+
+     By induction on the number of steps in the process we obtain the following lemma.
+     Lemma 6. If Ω is a generalized equation, then
+
+                                            FΩ ≃ FKer(Ω) ∗ F (K)
+
+     where F (K) is a free group on K.
+
+     Proof. Let
+                                    Ω = Ω0 → Ω1 → · · · → Ωl = Ker(Ω)
+     be a linear elimination process. It is easy to see (by induction on l) that for every j = 0, . . . , l−1
+
+                                             Ker(Ωj ) = Ker(Ωj ).
+
+     Moreover, if Ωj+1 is obtained from Ωj as in the case (b) above, then (in the notations above)
+
+                                            Ker(Ωj )1 = Ker(Ω′j ).
+
+     Now the statement of the lemma follows from the remarks above and equalities (1) and (2).
+
+(D6) (Linear elimination). Suppose that in Ω there is hi in an active section with γ(hi ) = 1 and
+     such that |hi | is comparable with the length of the active section. In this case we say that Ω
+     is linear in hi .
+     If Ω is linear in hi in an active section such that both boundaries i and i + 1 are closed then
+     we remove the closed section [i, i + 1] together with the lone base using (ET4).
+     If there is no such hi but Ω is linear in some hi in an active section such that one of the
+     boundaries i, i + 1 is open, say i + 1, and the other is closed, then we perform (ET5) and µ-tie
+     i + 1 through the only base µ it intersects. Next, using (ET1) we cut µ in i + 1 and then we
+     delete the closed section [i, i + 1] by (ET4).
+     Suppose there is no hi as above but Ω is linear in some hi in an active section such that
+     both boundaries i and i + 1 are open. In addition, assume that there is a closed section σ
+     containing exactly two (not matched) bases µ1 and µ2 , such that σ = σ(µ1 ) = σ(µ2 ) and in
+     the generalized equation Ω e (see the derived transformation (D3)) all the bases obtained from
+     µ1 , µ2 by (ET1) in constructing Ωe from Ω, do not belong to the kernel of Ω.
+                                                                                e Here, using (ET5),
+     we µ1 -tie all the boundaries inside of µ1 , then using (ET2) we transfer µ2 onto µ1 , and remove
+     µ1 together with the closed section σ using (ET4).
+     Suppose now that Ω satisfies the first assumption of the previous paragraph and does not
+     satisfy the second one. In this event we close the section [i, i + 1] using (D1) and remove it
+     using (ET4).
+Groups with regular free length functions in Λ                                                        17
+
+
+      Lemma 7. Suppose that the process of linear elimination continues infinitely and there is a
+      corresponding sequence of generalized equations
+
+                                          Ω → Ω1 → · · · → Ωk → · · · .
+
+      Then
+      (a) ([23], Lemma 15) The number of different generalized equations that appear in the process
+          is finite. Therefore some generalized equation appears in this process infinitely many
+          times.
+       (b) ([23], Lemma 15) If Ωj = Ωk , j < k then π(j, k) is an isomorphism, invariant with
+           respect to the kernel, namely π(j, k)(hi ) = hi for any variable hi that belongs to some
+           base in Ker(Ω).
+       (c) The interval for the equation Ωj can be divided into two disjoint parts, each being the union
+           of closed sections, such that one part is a generalized equation Ker(Ω) and the other part
+           is non-empty and corresponds to a generalized equation Ω′ , such that GΩ′ = F (K) is a
+           free group on variables K and GΩ = GKer(Ω) ∗ F (K).
+
+      Proof. We will only prove the third statement. In the process of linear elimination we do not
+      remove or cut variables hi that belong to the kernel. Since we do not cut variables that belong
+      to the kernel, we can remove parts of bases that cover some of these variables only finitely
+      many times. Therefore, bases that are cut in the process belong to the part of the interval
+      that is disjoint from the Ker(Ω). Together with Lemma 6 this proves the third statement.
+
+(D7) (Tietze cleaning). This transformation consists of four transformations performed consecu-
+     tively
+       (a) linear elimination: if the process of linear elimination goes infinitely we replace the equa-
+           tion by its kernel,
+      (b) deleting all pairs of matched bases,
+       (c) deleting all complete bases,
+      (d) moving all free variables to the right.
+(D8) (Entire transformation). We need a few definitions. A base µ of the equation Ω is called a
+     leading base if α(µ) = 1. A leading base is said to be maximal (or a carrier base) if β(λ) ⩽ β(µ)
+     for any other leading base λ. Let µ be a carrier base of Ω. Any active base λ 6= µ with
+     β(λ) ⩽ β(µ) is called a transfer base (with respect to µ).
+      Suppose now that Ω is a generalized equation with γ(hi ) ⩾ 2 for each hi in the active part of Ω
+      and such that |hi | is comparable with the length of the active part. Entire transformation is a
+      sequence of elementary transformations which are performed as follows. We fix a carrier base
+      µ of Ω. We transfer all transfer bases from µ onto µ. Now, there exists some i < β(µ) such that
+      h1 , . . . , hi belong to only one base µ, while hi+1 belongs to at least two bases. Applying (ET1)
+      we cut µ along the boundary i + 1. Finally, applying (ET4) we delete the section [1, i + 1].
+
+4.3    Complexity of a generalized equation and Delzant-Potyagailo com-
+       plexity c(G) of a group G
+Denote by ρA the number of variables hi in all active sections of Ω, by nA = nA (Ω) the number of
+bases in all active sections of Ω, by ν ′ the number of open boundaries in the active sections, and by
+σ ′ the number of closed boundaries in the active sections.
+Groups with regular free length functions in Λ                                                     18
+
+
+    For a closed section σ ∈ ΣΩ denote by n(σ), ρ(σ) the number of bases and, respectively, variables
+in σ.                                                 X
+                                    ρA = ρA (Ω) =         ρ(σ),
+                                                     σ∈AΣΩ
+                                                      X
+                                     nA = nA (Ω) =           n(σ).
+                                                     σ∈AΣΩ
+
+   The complexity of the generalized equation Ω is the number
+                                            X
+                              τ = τ (Ω) =        max{0, n(σ) − 2}.
+                                            σ∈AΣΩ
+
+   Notice that the entire transformation (D5) as well as the cleaning process (D4) do not increase
+complexity of equations.
+   Below we recall Delzant-Potyagailo’s result (see [12]). A family C of subgroups of a torsion-free
+group G is called elementary if
+ (a) C is closed under taking subgroups and conjugation,
+ (b) every C ∈ C is contained in a maximal subgroup C ∈ C,
+ (c) every C ∈ C is small (does not contain F2 as a subgroup),
+ (d) all maximal subgroups from C are malnormal.
+G admits a hierarchy over C if the process of decomposing G into an amalgamated product or an
+HNN-extension over a subgroup from C, then decomposing factors of G into amalgamated products
+and/or HNN-extensions over a subgroup from C etc. eventually stops.
+Proposition 1. ([12]) If G is a finitely presented group without 2-torsion and C is a family of
+elementary subgroups of G then G admits a hierarchy over C.
+Corollary 6. If G is a finitely presented Λ-free group then G admits a hierarchy over the family of
+all abelian subgroups.
+   There is a notion of complexity of a group G defined in [12] and denoted by c(G). We will only
+use the following statement that follows from there.
+Proposition 2. ([12]) If G is a finitely presented Λ-free group. Let Γ be an abelian decomposition
+of G as a fundamental group of a graph of groups with more than one vertex and with each edge
+group being maximal abelian at least in one of its vertex groups. Then for each vertex group Gv ,
+c(Gv ) < c(G).
+
+4.4    Rewriting process for Ω
+In this section we describe a rewriting process (elimination process) for a generalized equation Ω
+corresponding to G. Performing the elimination process we eventually detect a decomposition of
+G as a free product or (if it is freely indecomposable) as the fundamental group of a graph of
+groups with vertex groups of three types: QH vertex groups, abelian vertex groups (corresponding
+to periodic structures, see below), non-QH, non-abelian vertex groups (we will call them weakly
+rigid meaning that we do not split them in this particular decomposition). We also can detect
+splitting of G as an HNN-extension with stable letter infinitely longer than generators of the abelian
+associated subgroups. After obtaining such a decomposition we continue the elimination process
+with the generalized equation corresponding to free factors of G or to weakly rigid subgroups of G
+(we will show that this generalized equation can be naturally obtained from the generalized equation
+Groups with regular free length functions in Λ                                                       19
+
+
+Ω. The Delzant-Potyagailo complexity of factors in a free decomposition and complexity of weakly
+rigid subgroups is smaller than the complexity of G (denoted c(G)) [12]. In the case of an HNN
+extension we will show that the complexity τ of the generalized equation corresponding to a weakly
+rigid subgroup is smaller that the complexity of Ω.
+    We assume that Ω is in standard form, namely, that transformations (ET3), (D3) and (D4) have
+been applied to Ω and that on each step we apply them to the generalized equation before applying
+any other transformation.
+    Let Ω be a generalized equation. We construct a path T (Ω) (with associated structures), as a
+directed path oriented from the root v0 , starting at v0 and proceeding by induction on the distance
+n from the root.
+    We start with a general description of the path T (Ω). For each vertex v in T (Ω) there exists
+a unique generalized equation Ωv associated with v. The initial equation Ω is associated with the
+root v0 , Ωv0 = Ω. In addition there is a homogeneous system of linear equations Σv with integer
+coefficients on the lengths of variables of Ωv . We take Σv0 to be empty. For each edge v → v ′ (here v
+and v ′ are the origin and the terminus of the edge) there exists an isomorphism π(v, v ′ ) : GΩv → GΩ′v
+associated with v → v ′ .
+    If
+                                        v0 → v1 → · · · → vs → u
+is a dubpath of T (Ω), then by π(v, u) we denote composition of corresponding isomorphisms
+
+                                  π(v, u) = π(v, v1 ) ◦ · · · ◦ π(vs , u).
+
+    If v → v ′ is an edge then there exists a finite sequence of elementary or derived transformations
+from Ωv to Ωv′ and the isomorphism π(v, v ′ ) is a composition of the isomorphisms corresponding
+to these transformations. We also assume that active (and non-active) sections in Ωv′ are naturally
+inherited from Ωv , if not said otherwise. Recall that initially all sections are active.
+    Suppose the path T (Ω) is constructed by induction up to a level n and suppose v is a vertex at
+distance n from the root v0 . We describe now how to extend the path from v. The construction of
+the outgoing edge at v depends on which case described below takes place at the vertex v. There
+are three possible cases.
+
+   • Linear case: there exists hi in the active part such that |hi | is comparable with the length
+     of the active part and γ(hi ) = 1.
+   • Quadratic and almost quadratic case: γ(hi ) = 2 for all hi in the active part such that
+     |hi | is comparable with the length of the active part.
+   • General JSJ case: γ(hi ) ⩾ 2 for all hi in the active part such that |hi | is comparable with
+     the length of the active part, and there exists such hi that γ(hi ) > 2.
+
+4.4.1   Linear case
+We apply Tietze cleaning (D7) at the vertex vn if it is possible. We re-write the system of linear
+equations Σvn in new variables and obtain a new system Σvn+1 .
+                                       (1)                       (2)
+    If Ωvn+1 splits into two parts, Ωvn+1 = Ker(Ωvn ) and Ωvn+1 that corresponds to a free group
+                                                  (2)
+F (K), then we put the free group section Ωvn+1 into a non-active part and thus decrease the
+complexity. It may happen that the kernel is empty, then the process terminates.
+    If it is impossible to apply Tietze cleaning (that is γ(hi ) ⩾ 2 for any hi in the active part of Ωv
+comparable to the length of the active part), we apply the entire transformation.
+    Termination condition: Ωv does not contain active sections. In this case the vertex v is called
+a leaf or an end vertex.
+Groups with regular free length functions in Λ                                                         20
+
+
+4.4.2    Quadratic case
+Suppose Ωv satisfies the condition γi ⩽ 2 for each hi in the active part and γi = 2 for each hi in the
+active part comparable with the length of the active part. First of all, we fill in all the h′i s in the
+active part such that γi = 1 by new (infinitely short) bases µ such that µ covers a new variable that
+we add to the non-active part.
+     We apply the entire transformation (D8), then apply Tietze cleaning (D7), if possible, then again
+apply entire transformation, etc. In this process we, maybe, will remove some pairs of matching
+bases decreasing the complexity. Eventually we either end up with empty active part or the process
+will continue infinitely, and the number of bases in the active part will be constant. Let α0 + 1 be
+the leftmost boundary that belongs to a base not participating in the process.
+     Let us analyze the structure of GΩv in this case. Let σ be a section in the active part σ =
+[h1 , . . . , hα0 ]. If σ is not closed, then cutting the second base at α0 we make σ a closed section.
+Let F1 be a free group with basis {h1 , . . . , hα0 }. If σ contains an open boundary j then we can
+consider a new generalized equation Ω′v obtained from Ωv by replacing the product hj−1 hj by a
+new variable h′j−1 and represent GΩv = GΩ′v ∗ hhj i. Therefore we can suppose that σ does not
+contain open boundaries. We say that µ is a quadratic base if σ contains µ and µ, otherwise µ
+is a quadratic-coefficient base. Denote the set of quadratic-coefficient bases by C. Suppose that
+σ contains quadratic bases. Let F1 /σ be the quotient of F1 over the normal closure of elements
+h[α(µ), β(µ)]h[α(µ), β(µ)]−1 . Let M be a set that contains exactly one representative of each pair
+of double bases on σ and contains also each base µ such that µ ∈ σ and µ̄ ∈       / σ. If we identify each
+base on σ with its double then the product h1 · · · hi can be written as a product of bases from M
+in exactly two different ways: µi1 · · · µik and µj1 · · · µjt . Then F1 /σ is isomorphic to the quotient
+of the free group F (M) over the relation µi1 · · · µik = µj1 · · · µjt . Every element of M occurs in
+this relation at most twice. Applying an automorphism of F (M) identical on C, we can obtain
+another basis X ∪ T ∪ C of this group such that in this basis the relation has form of a standard
+quadratic equation in variables from X with coefficients in F (C) (see [29], Section 1.7). Note that
+the variables from T do not participate in any relations. The quadratic equation corresponding to
+σ can be written in the standard form with coefficients expressed in terms of non-active variables.
+     Here we have to give some definitions.
+Definition 6. A standard quadratic equation over the group G is an equation of the one of the
+following forms (below d, ci are nontrivial elements from G):
+                              n
+                              Y            m
+                                           Y
+                                [xi , yi ]   zi−1 ci zi d = 1,          n, m ⩾ 0, m + n ⩾ 1;          (3)
+                              i=1             i=1
+
+                                 n
+                                 Y           m
+                                             Y
+                                       x2i         zi−1 ci zi d = 1,   n, m ⩾ 0, n + m ⩾ 1,           (4)
+                                 i=1         i=1
+
+where c1 , . . . , cm , d are coefficients.
+    Let W be a strictly quadratic word over a group G. Then there is a G-automorphism f ∈
+AutG (G[X]) such that W f is a standard quadratic word over G.
+    To each quadratic equation one can associate a punctured surface. For example, the orientable
+surface associated to equation 3 will have genus n and m + 1 punctures.
+    Put
+                                          κ(S) = |X| + 1,
+Definition 7. Let S = 1 be a standard quadratic equation over a group G which has a solution
+in G. The equation S(X) = 1 is regular if κ(S) ⩾ 4 (equivalently, the Euler characteristic of the
+corresponding punctured surface is at most −2) and there is a non-commutative solution of S(X) = 1
+in G, or it is an equation of the type [x, y]d = 1, or [x1 , y1 ][x2 , y2 ] = 1.
+Groups with regular free length functions in Λ                                                                21
+
+
+   If the quadratic equation corresponding to σ is regular, then GΩv has a presentation as a funda-
+mental group of a graph of groups with QH-subgroup corresponding to this equation. (For example,
+the QH-subgroup corresponding to the standard equation (3) has the presentation
+                                                                          n
+                                                                          Y                  m+1
+                                                                                             Y
+                       hx1 , y1 , . . . , xn , yn , p1 , . . . , pm+1 |         [xi , yi ]         pi = 1i,
+                                                                          i=1                i=1
+
+and the edge groups are hpi i, i = 1, . . . , m + 1.)
+    If the equation is not regular and there are quadratic bases, then GΩv splits as an HNN-extension
+over an abelian subgroup. If there are infinitely small hi ’s in the quadratic part such that γ(hi ) = 1
+then GΩ′v splits as a free product of the group of the generalized equation on the non-quadratic part
+(obtained by removing the quadratic part and all bases that have doubles in quadratic part) and a
+free group.
+    We say that a base participates in the infinite process of entire transformation if it participates
+infinitely many times as a leading or transfer base.
+Lemma 8. If σ has quadratic-coefficient bases, and the entire transformation goes infinitely, then
+after a finite number of steps there will be quadratic bases that have length infinitely larger than all
+participating quadratic coefficient bases.
+Proof. After finite number of steps quadratic-coefficient bases can only be used as transfer bases
+(otherwise quadratic bases would be leaving σ, and this cannot happen infinitely many times).
+Every time such a base of length ℓ used as a transfer base, the length of the quadratic part decreases
+by ℓ. For the process to go infinitely, ℓ must be infinitely less than the length of the quadratic part.
+Therefore there is a quadratic base that have length infinitely larger than all participating quadratic
+coefficient bases.
+   If σ does not have quadratic-coefficient bases then GR(Ωv ) splits as a free product with one factor
+being a closed surface group or a free group.
+   We move σ into a non-active part and thus decrease the complexity τ . Eventually in this case
+we will make the active part empty.
+
+4.4.3   Almost Quadratic case
+In this case γi = 2 for all hi in the active part such that |hi | is comparable with the length of the
+active part (some short bases may be covered once or more than twice). This case is, actually, a part
+of the case considered in the next subsection, but we consider it separately to make the subdivision
+into the cases depend only on γi for the variables hi of the maximal height.
+    We apply the transformation (D1) to close quadratic sections that begin with bases of the max-
+imal height and put them in front of the interval. This may increase the complexity by two times
+the number of closed sections that we put in front of the interval applying (D1). Then we apply
+the entire transformation. Every time when the content of one of the closed sections in front of the
+interval is moved to the other closed section, the complexity decreases by two. If the process goes
+infinitely then eventually the number of quadratic bases of maximal height does not decrease. After
+a finite number of steps participating quadratic-coefficient bases can only be used as transfer bases.
+And, therefore, there will be participating quadratic bases that have length infinitely larger than all
+participating quadratic coefficient bases.
+    We fill in all the h′i s in the active part such that γi = 1 by new (infinitely short) bases µ such
+that µ covers a new free variable in the non-active part appearing only once. Then we work with
+the quadratic part the same way as in the quadratic case. We repeat the described transformation
+until there is no quadratic base on the active part that has length comparable with the length
+of the remaining active part. Then we consider the remaining generalized equation in the active
+Groups with regular free length functions in Λ                                                      22
+
+
+part. We remove from the active part doubles of all quadratic coefficient bases that belong to non-
+active part (doing this we may create new boundaries). We will, certainly remember the relations
+corresponding to these pairs of bases. In this case the remaining generalized equation has smaller
+complexity. Relations corresponding to the quadratic sections that we made non-active show that
+GΩ is an HNN-extension of the subgroup generated by the variables in the active part and (maybe)
+a free group.
+    Removing these double bases we have to add equations to Σvi+1 that guarantee that the associated
+cyclic subgroups are generated by elements of the same length.
+
+4.4.4   General JSJ-case
+Generalized equation Ωv satisfies the condition γi ⩾ 2 for each hi in the active part such that |hi |
+is comparable with the length of the active part, and γi > 2 for at least one hi . First of all, we
+fill in all the h′i s in the active part such that γi = 1 by new (infinitely short) bases with doubles
+corresponding to free variables in the non-active part. We apply the transformation (D1) to close
+the quadratic part and put it in front of the interval.
+
+(a) QH-subgroup case. Suppose that the entire transformation of the quadratic part (D8) goes
+infinitely. Then the quadratic part of Ωv (or the initial section from the beginning of the quadratic
+part until the first base on the quadratic part that does not participate in the entire transformation)
+corresponds to a QH-vertex or to the representation of GΩ as an HNN-extension, and there is a
+quadratic base (on this section) that is infinitely longer than all the quadratic coefficient bases (on
+this section). We work with the quadratic part the same way as in the quadratic case until there is no
+quadratic base satisfying the condition above. Then we make the quadratic section non-active, and
+consider the remaining generalized equation where we remove doubles of all the quadratic coefficient
+bases. We certainly have to remember that the bases that we removed express some variables in
+the quadratic part (that became non-active) in the variables in the active part. We have to add an
+equation to Σvi+1 that guarantees that the associated cyclic subgroups are generated by elements
+of the same length. In this case the subgroup of GΩ that is isomorphic to the coordinate group of
+the new generalized equation in active part is a vertex group in an abelian splitting of GΩ and has
+smaller Delzant–Potyagailo complexity.
+
+(b) QH-shortening
+Lemma 9. Suppose that the quadratic part of Ω does not correspond to the HNN-splitting of GΩ
+(there are only quadratic coefficient bases), or, we cannot apply the entire transformation to the
+quadratic part infinitely. In this case either GΩ is a non-trivial free product or, applying the auto-
+morphism of GΩ , one can replace the words corresponding to the quadratic bases in the quadratic part
+by such words that in the new solution H + of Ω the length of the quadratic part is bounded by some
+function f1 (Ω) times the length of the non-quadratic part. Solution H + can be chosen consistent
+with H.
+Proof. We apply entire transformation to the quadratic part. This corresponds to a sequence of
+Tietze transformations of generators of GΩ . Since the entire transformation does not go infinitely,
+some of the bases will eventually be transferred to the non-quadratic part (therefore, their length is
+bounded by the length of the non-quadratic part). If not all of them are transferred, then reincar-
+nations of some of the other participating bases must form matching pairs giving a representation
+of GΩ as a free product.
+    If there is a matching pair, we replace GΩ by the group obtained by removing a cyclic free
+factor corresponding to a matching pair. We also replace Ω by the generalized equation obtained by
+removing the matching pair. The Delzant–Potyagailo complexity decreases.
+Groups with regular free length functions in Λ                                                           23
+
+
+(c) Abelian splitting: short shift.
+Proposition 3. Suppose Ωv satisfies the following condition: the carrier base µ of the equation Ωv
+intersects with its dual µ (form an overlapping pair) and is at least twice longer than |α(µ) − α(µ)|.
+Then GΩv either splits as a fundamental group of a graph of groups that has a free abelian vertex
+group or splits as an HNN-extension with abelian associated subgroups.
+    The proof uses the technique of so-called periodic structures introduced by Razborov in his Ph.D
+thesis and almost repeats the proof given in [23] to show that the coordinate group of a generalized
+equation splits in this case as a fundamental group of a graph of groups that has a free abelian vertex
+group or splits as an HNN-extension with abelian associated subgroups. Nevertheless, we have to
+adjust the proof to the case of infinite non-Archimedean words. For convenience of the reader we
+give a detailed proof of the proposition.
+    We construct an auxiliary equation Ω  b v (which does not occur in T (Ω)) as follows. Firstly, we
+add a new constant non-active section [ρv + 1, ρv + 2] to the right of all sections in Ωv (in particular,
+hρv +1 is a new free variable). Secondly, we introduce a new pair of bases (λ, λ) such that
+                       α(λ) = 1, β(λ) = β(µ), α(λ) = ρv + 1, β(λ) = ρv + 2.
+                                    b v by (ET4): deleting λ together with the closed section
+Notice that Ωv can be obtained from Ω
+[ρv + 1, ρv + 2]. Let
+                                      bv : GΩv → GΩ
+                                      π           bv
+
+                                                                      b v , but now λ is the carrier
+be the isomorphism induced by (ET4). General JSJ-case still holds for Ω
+                   b
+base. Applying to Ωv the entire transformation we obtain a new vertex Ωv′ together with the
+isomorphism
+                                             b v → GΩv′ .
+                                      ηv′ : GΩ
+     As a culmination of the above process of adding auxiliary edges we get a generalized equation
+Ω′ , which consists of finitely many closed sections σ1 , . . . , σp such that there exists an overlapping
+pair (µi , µi ) for each σi , i ∈ [1, p].
+     Let σ = σi0 , where i0 ∈ [1, p] have the overlapping pair (µ, µ) such that
+                                 |[α(µ), α(µ)]| = max |[α(µi ), α(µi )]|.
+                                                  i∈[1,p]
+
+Without loss of generality we can assume i0 = 1, that is, σ = [1, β(µ)].
+   A periodic structure on Ω′ is a pair hP, Ri, where
+  1. P is a set consisting of some items hi , some bases λ, and some closed sections σ from Ω′ such
+     that the following conditions are satisfied:
+       (a) if hi ∈ P and hi ∈ λ then λ ∈ P,
+       (b) if λ ∈ P, then λ ∈ P,
+       (c) if λ ∈ P and λ ∈ σ, then σ ∈ P,
+       (d) there exists a function X mapping the set of closed sections from P into {−1, +1} such
+           that for every λ, σ1 , σ2 ∈ P, the condition that λ ∈ σ1 and λ ∈ σ2 implies ε(λ) · ε(λ) =
+           X (σ1 ) · X (σ2 ).
+  2. R is an equivalence relation on the set of boundaries B belonging to closed sections from P (if
+     a boundary l belongs to two closed section σlef t (l) = [i, l], σright (l) = [l, j] from P then instead
+     of l we add to B formal copies llef t , lright of l, which are boundaries of σlef t (l) and σright (l)
+     respectively), defined as follows: if λ ∈ P then
+                                α(λ) ∼R α(λ), β(λ) ∼R β(λ) if ε(λ) = ε(λ)
+                               α(λ) ∼R β(λ), β(λ) ∼R α(λ) if ε(λ) = −ε(λ).
+Groups with regular free length functions in Λ                                                      24
+
+
+   We call items, bases and sections long if they belong to P (the rest items, bases and sections of
+Ω′ are called short respectively).
+   A period is just a cyclically reduced Λ-word u. A reduced infinite word w is called u-periodic for
+a period u if w−1 ∗ u ∗ w = v, where |u| = |v|. Since u is cyclically reduced it follows that either
+w−1 ∗ u = w−1 ◦ u, or u ∗ w = u ◦ w. We are going to distinguish two cases of periodicity:
+  1. w is unbounded u-periodic if ht(w) ⩾ ht(u),
+  2. w is bounded u-periodic if ht(w) = ht(u) and w = uk ◦ u1 , where k ⩾ 2 and u = u1 ◦ u2 .
+Observe that in both cases w begins with a power of u, but in the former case the power is unbounded,
+while in the latter case it is bounded (hence the terms used).
+Lemma 10. Let w1 , w2 ∈ CDR(Λ, Z), where |w1 | ⩾ |w2 |, be u-periodic for some period u ∈
+CDR(Λ, Z). Assume that w1−1 ∗ u ∗ w1 = v1 , w2−1 ∗ u ∗ w2 = v2 . If w1−1 ∗ w2 is defined in CDR(Λ, Z)
+then w2 cancels completely in this product. Moreover, w1−1 ∗ w2 is v1−1 -periodic.
+Proof. Follows from the definition of u-periodic words.
+Lemma 11. If w ∈ CDR(Λ, Z) is both u- and v-periodic for some periods u, v ∈ CDR(Λ, Z) then
+[u, v] = 1. In particular, u is unbounded v-periodic if ht(u) > ht(v).
+Proof. If ht(u) = ht(v) then commutativity follows from Lemma 3.3 [22] since powers of u and v have
+a common initial segment of length greater than |u| + |v|. If ht(u) > ht(v) then from v-periodicity of
+w it follows that u is v-periodic. Now, since w contains any natural power of u as an initial subword
+it follows that the terminal subword of u of length |v| must coincide with v and commutativity
+follows.
+
+   Let U be a solution of the equation Ω′ , where hi → Ui . According to our assumption, Xµ is P -
+periodic, where P = U [1, α(µ)]. Since µ and µ are products of items then every Ui , i ∈ [α(µ), β(µ)],
+such that |Ui | ⩾ 2|P |, is Qi -periodic, where Qi is a Λ-word such that |Qi | = |P |. Moreover, we can
+associate with U a periodic structure P(U, P ) = hP, Ri as follows. We construct P as a union of the
+chain of sets
+                                           P1 ⊆ P1 ⊆ · · · ⊆ Pk ,
+where k ∈ N. To construct P0 we add to it σ1 and all Q-periodic items h ∈ σ1 , where |Q| = |P |,
+together with any base λ (and its dual) containing h. Now, assume that Pi is constructed. If there
+exists a base λ ∈ Pi such that λ ∈ σj then we set
+
+Pi+1 = Pi ∪ {σj } ∪ {h, λ ∈ σj | h is a Q − periodic item where |Q| = |P |, λ is a base containing h}.
+
+Since Ω′ contains only finitely many closed sections then this process stops.
+Lemma 12. Let U be a solution of the equation Ω′ and P(U, P ) be a periodic structure corresponding
+to U . Then every base (item) λ ∈ P is Qλ -periodic, where |Qλ | = |P | and Qλ is conjugate to P in
+G.
+Proof. It is enough to prove the statement for bases - the argument for items is similar. We are
+going to use the induction on k, where k is the number of sections in P
+    By our assumption (short shift) we have µ ∈ P. It follows that any base λ ∈ σ1 , such that
+|λ| ⩾ 2|P |, is Qλ -periodic, where |Qλ | = |P |. Moreover, if w = U [α(µ), αλ] then w ∈ G and
+w−1 ∗ P ∗ w = Qλ . Hence, all bases from P1 have the properties stated in the lemma.
+    Suppose we have the statement of the lemma for all bases from Pk−1 . By definition, Pk is
+obtained from Pk−1 by adding a section σk , such that there exists λ ∈ Pk−1 and λ ∈ σk , as well as all
+appropriate items and bases of σk . Observe that since µk is Q-periodic, where Q = U [α(µk ), α(µk )],
+Groups with regular free length functions in Λ                                                                          25
+
+
+it follows that λ is Q′ -periodic, where |Q′ | = |Q| and Q′ is conjugate to Q by means of g ∈ G. At
+the same time, by the induction hypothesis, λ is Qλ -periodic, where |Qλ | = |P |. Hence, by Lemma
+11 we have [Q′ , Qλ ] = 1 and it follows that [Q, g −1 ∗ Qλ ∗ g] = 1, where |g −1 ∗ Qλ ∗ g| = |P |. Now,
+since |P | ⩾ |Q| and |µk | ⩾ |λ| it follows that µk is g −1 ∗ Qλ ∗ g-periodic. The statement of the lemma
+for all bases in σk of the length at least 2|P | follows automatically now.
+
+
+Remark 4. From the construction of P(U, P ) and Lemma 12 it follows that if σi ∈ P with an
+overlapping pair (µi , µi ) and if l ∈ [α(σi ), β(σi )] then there exists a period Ql conjugate in G either
+to P or P −1 such that
+
+  (i) if ht([α(σi ), l]) > ht(P ) then U [α(σi ), l] has any natural power of Ql as a terminal subword,
+ (ii) if ht([l, β(σi )]) > ht(P ) then U [1, β(σi )] has any natural power of Ql as an initial subword,
+(iii) if ht([α(σi ), l]) ⩽ ht(P ) then U [α(σi ), l] = Q′′ ◦ Qkl l , where Ql = Q′ ◦ Q′′ ,
+
+ (iv) if ht([l, β(σi )]) ⩽ ht(P ) then U [1, β(σi )] = Qkl l ◦ Q′ , where Ql = Q′ ◦ Q′′ .
+Lemma 13. P(U, P ) corresponding to a solution U of Ω′ is a periodic structure on Ω′ .
+Proof. Parts 1(a), 1(b) and 1(c) of the definition of periodic structure hold by construction.
+    Set X (σ1 ) = 1. If there is a base λ ∈ σ1 such that λ ∈ σ2 then we set X (σ2 ) = ε(λ)ε(λ). Observe
+that the sign of X (σ2 ) is well-defined since if there exists another base λ1 ∈ σ1 such that λ1 ∈ σ2
+and ε(λ)ε(λ) 6= ε(λ1 )ε(λ1 ) then it follows that there exists a group element conjugating P into P −1 ,
+which is impossible. Hence 1(d) holds.
+    By Remark 4 if two boundaries l1 , l2 belong to sections from P then there exist Ql1 , Ql2 conjugate
+in G either to P or P −1 such that some of the conditions listed in the remark hold. Thus, we define
+a relation R as follows: l1 ∼R l2 if and only if Ql1 = Ql2 , and part 2 follows immediately.
+
+
+   Now let us fix a nonempty periodic structure hP, Ri. Item (d) allows us to assume (after replacing
+the variables hi , . . . , hj−1 by h−1                  −1
+                                         j−1 , . . . , hi  on those sections [i, j] ∈ P for which X ([i, j]) = −1) that
+ε(µ) = 1 for all µ ∈ P. For a boundary k, we will denote by (k) the equivalence class of the relation
+R to which it belongs.
+    Let us construct an oriented graph Γ whose set of vertices is the set of R-equivalence classes. For
+each long hk we introduce an oriented edge e leading from (k) to (k + 1) and an inverse edge e−1
+leading from (k + 1) to (k). This edge e is assigned the label h(e) = hk (respectively, h(e−1 ) = h−1                  k ).
+For every path r = e±1     1  · · · e ±1
+                                      s   in the     graph  Γ, we denote  by  h(r)  its label h(e ±1
+                                                                                                  1  ) · · · h(e ±1
+                                                                                                                 j  ).
+   The periodic structure hP, Ri is called connected, if the graph Γ is connected. Suppose first that
+hP, Ri is connected. We can also suppose that each boundary of Ω′ is a boundary between two
+bases.
+Lemma 14. Let U be a solution of Ω′ and hP, Ri = P(U, P ). If p is a path in the graph Γ from (i)
+to (j) then U [p]−1 ∗ Qi ∗ U [p] = Qj in G.
+Proof. If p = hi1 · · · hik then all products between Uj , j ∈ {i1 , . . . , ik } are defined and the required
+result follows from Lemma 10.
+Lemma 15. Let U be a solution of Ω′ and hP, Ri = P(U, P ). If c1 , c2 are cycles in the graph Γ at
+the vertex v = (k) then [U [c1 ], U [c2 ]] = 1 in G.
+Groups with regular free length functions in Λ                                                           26
+
+
+Proof. Assume at first that (k) = (1). There exists a loop c at (1) such that U [c] = P . By Lemma
+14 U [p]−1 ∗ P ∗ U [p] = P in G for every path p from (1) to (1), so [U [c1 ], P ] = [U [c2 ], P ] = 1 and
+from the CSA-property of G the required follows.
+   If (k) 6= (1) then, since Γ is connected it follows that there exists a path p from v to v0 . Moreover,
+by Lemma 14 we have U [p]−1 ∗ Qk ∗ U [p] = P in G. So, by the CSA-property commutativity of
+cycles at (k) follows from commutativity of cycles at (1) which is already proved.
+
+
+   Ω′ is called periodized with respect to a given periodic structure hP, Ri if for every two cycles
+c1 and c2 with the same initial vertex in the graph Γ there is a relation [h(c1 ), h(c2 )] = 1 in GΩ′ .
+Observe that according to Lemma 15 Ω′ is periodized with respect to P(U, P ) for any solution U .
+    Let Γ0 be the subgraph of the graph Γ having the same set of vertices and consisting of the edges
+e whose labels do not belong to P. Choose a maximal sub-forest T0 in the graph Γ0 and extend it
+to a maximal sub-forest T of the graph Γ. Since hP, Ri is connected by assumption, it follows that
+T is a tree. Let v0 be an arbitrary vertex of the graph Γ and r(v0 , v) the (unique) path from v0 to
+v all of whose vertices belong to T . For every edge e = (v, v ′ ) not lying in T , we introduce a cycle
+ce = r(v0 , v)e(r(v0 , v ′ ))−1 . Then the fundamental group π1 (Γ, v0 ) is generated by the cycles ce (see,
+for example, the proof of Proposition 3.2.1 [29]).
+    Furthermore, the set of elements
+
+                                     {h(e) | e ∈ T } ∪ {h(ce ) | e 6∈ T }                               (5)
+
+forms a basis of the free group with the set of generators {hk | hk ∈ σ}. If λ ∈ P, then (β(λ)) =
+(β(λ)), (α(λ)) = (α(λ)) by the definition of R and, consequently, the word
+
+                                      h[α(λ), β(λ)] h[α(λ), β(λ)]−1
+
+is the label of a cycle c′ (λ) from π1 (Γ, (α(λ))). Let c(λ) = r(v0 , (α(λ))) c′ (λ) r(v0 , (α(λ)))−1 . Then
+
+                            h(c(λ)) = u h[α(λ), β(λ)] h[α(λ), β(λ)]−1 u−1 ,                             (6)
+
+where u is a certain word. Since c(λ) ∈ π1 (Γ, v0 ), it follows that c(λ) = bλ ({ce | e 6∈ T }), where bλ
+is a certain word in the indicated generators which can be effectively constructed (see Proposition
+3.2.1 [29]).
+    Let b̃λ denote the image of the word bλ in the abelianization of π(Γ, v0 ). Denote by Ze the free
+                                                          P                                e its subgroup
+abelian group consisting of formal linear combinations e6∈T ne c̃e (ne ∈ Z), and by B
+                                                                                         e
+generated by the elements b̃λ (λ ∈ P) and the elements c̃e (e 6∈ T, h(e) 6∈ P). Let A = Z/     e B,
+                                                                                                  e T (A)e
+the torsion subgroups of the group A,e and Z e1 the preimage of T (A) e in Z.
+                                                                           e The group Z/    e Ze1 is free,
+therefore, there exists a decomposition of the form
+                                 e=Z
+                                 Z e1 ⊕ Ze2 , B
+                                              e⊆Z
+                                                e1 , |Z
+                                                      e1 : B|
+                                                           e < ∞.                                       (7)
+                                                                        (1)   (2)
+ Note that it is possible to express effectively a certain basis ec , ec of the group Z        e in terms of
+ the generators e   ce so that for the subgroups Z e1 and Z e2 generated respectively by ec and ec(2) , the
+                                                                                           (1)
+
+ relation (7) holds. It suffices, for instance, to look through the bases one by one, using the fact
+ that under the condition Ze = Z     e1 ⊕ Ze2 the relations Be ⊆ Ze1 , |Ze1 : B|
+                                                                              e < ∞ hold if and only if the
+ generators of the groups B   e and Z e1 generate the same linear subspace over Q, and the latter is easily
+ verified algorithmically. Notice, that a more economical algorithm can be constructed by analyzing
+ the proof of the classification theorem for finitely generated abelian groups. By Proposition 1.4.4
+ [29], one can effectively construct a basis c(1) , c(2) of the free (non-abelian) group π1 (Γ, v0 ) so that
+ec(1) , ec(2) are the natural images of the elements c(1) , c(2) in Z.
+                                                                    e
+Groups with regular free length functions in Λ                                                               27
+
+
+     Now assume that hP, Ri is an arbitrary periodic structure on Ω′ , not necessarily connected. Let
+Γ1 , . . . , Γr be the connected components of the graph Γ. The labels of edges of the component Γi
+form in Ω′ a union of closed sections from P. Moreover, if a base λ ∈ P belongs to such a section,
+then its dual λ also does by definition of periodic structure. Therefore, by taking for Pi the set
+of labels of edges from Γi belonging to P, sections to which these labels belong, and bases λ ∈ P
+belonging to these sections, and restricting in the corresponding way the relation R, we obtain a
+periodic connected structure hPi , Ri i with the graph Γi .
+     The notation hP ′ , R′ i ⊆ hP, Ri means that P ′ ⊆ P and the relation R′ is a restriction of the
+relation R. In particular, hPi , Ri i ⊆ hP, Ri in the situation described in the previous paragraph.
+Since Ω′ is periodized, the periodic structure must be connected.
+     Let e1 , . . . , em be all the edges of the graph Γ from T − T0 . Since T0 is the spanning forest of the
+graph Γ0 , it follows that h(e1 ), . . . , h(em ) ∈ P. Let F (Ω′ ) be a free group generated by the variables
+of Ω′ . Consider in the group F (Ω′ ) a new basis
+                                Y = {t, {h(e) | e ∈ T }, h(c(1) ), h(c(2) )},
+where variables t̄ do not belong to the closed sections from P. Let vi be the initial vertex of the
+edge ei . We introduce new variables u(i) = {uie | e ∈  / T, e ∈ / P}, z (i) = {zie | e ∈
+                                                                                        / T, e ∈
+                                                                                               / P} for
+1 ⩽ i ⩽ m, as follows
+                               uie = h(r(v0 , vi ))−1 h(ce ) h(r(v0 , vi )),                        (8)
+                                           h(ei )−1 uie h(ei ) = zie .                                      (9)
+   Without loss of generality we can assume v0 = (1).
+Lemma 16. Let Ω′ be periodized with respect to a periodic structure hP, Ri. Let K be the subgroup
+of GΩ′ generated by
+                         Y0 = {t, {h(e) | e ∈ T0 }, h(c(1) ), u(i) , z (i) , i ∈ [1, m]}.
+If |c(2) | = s ⩾ 1 then the group GΩ′ splits as a fundamental group of a graph of groups with two ver-
+tices, where one vertex group is K and the other is a free abelian group generated by h(c(2) ), h(c(1) ).
+The corresponding edge group is generated by h(c(1) ). The other edges are loops at the vertex with
+vertex group K, have stable letters h(ei ), i ∈ [1, m], and associated subgroups hui i, hz i i. If c(2) = ∅
+then there is no vertex with abelian vertex group.
+Proof. We are going to study in more detail how the variables h(ei ), i ∈ [1, m] can participate in
+the equations from Ω′ rewritten in the set of variables Y .
+    If hk does not lie on a closed section from P, or hk ∈       / P, but e ∈ T (where h(e) = hk ), then hk
+belongs to the basis Y and is distinct from each of h(e1 ), . . . , h(em ). Now let h(e) = hk , hk ∈       / P
+and e ∈  / T . Then e = r1 ce r2 , where r1 , r2 are paths in T . Since e ∈ Γ0 , h(ce ) belongs to hc(1) i
+modulo commutation of cycles. The vertices (k) and (k + 1) lie in the same connected component
+of the graph Γ0 and, hence, they are connected by a path s in the forest T0 . Furthermore, r1 and
+s r2−1 are paths in the tree T connecting the vertices (k) and v0 . Consequently, r1 = s r2−1 . Thus,
+e = s r2−1 ce r2 and hk = h(s) h(r2 )−1 h(ce ) h(r2 ). The variable h(ei ), i ∈ [1, m] can occur in the
+right-hand side of the expression obtained (written in the basis Y ) only in h(r2 ) and at most once.
+Moreover, the sign of this occurrence (if it exists) depends only on the orientation of the edge ei
+with respect to the root v0 of the tree T . If r2 = r2′ ei±1 r2′′ then all the occurrences of the variable
+h(ei ) in the words hk written in the basis Y , with hk ∈      / P, are contained in the occurrences of words
+of the form h(ei )∓1 h((r2′ )−1 ce r2′ ) h(ei )±1 , that is, in occurrences of the form h(ei )∓1 h(c) h(ei )±1 ,
+where c is a certain cycle of the graph Γ starting at the initial vertex of the edge e±1     i .
+    Therefore all the occurrences of h(ei ), i ∈ [1, m] in the equations corresponding to λ ∈       / P are of
+the form h(e−1 i ) h(c) h(e i ). Also,  h(e i ) does not  occur  in the  equations corresponding  to λ ∈ P in
+the basis Y . The system Ω′ is equivalent to the following system in the variables Y :
+                                  uie = h(r(v0 , vi ))−1 h(ce ) h(r(v0 , vi )),
+Groups with regular free length functions in Λ                                                          28
+
+
+                                           h(ei )−1 uie h(ei ) = zie ,
+                                                   [uie1 , uie2 ] = 1,
+                                    [h(c1 ), h(c2 )] = 1, c1 , c2 ∈ c(1) , c(2) ,
+                                                      ψ(Y0 ) = 1,
+                                           (2)
+where ψ(Y0 ) does not contain h(ei ), c̄ . Let K = Gψ . Then to obtain GΩ we first take an HNN-
+extension of the group K with abelian associated subgroups generated by u(i) and z (i) and stable
+letters h(ei ), and then extend the centralizer of the image of hc(1) i by the free abelian subgroup
+generated by the images of c(2) .
+
+
+   Proposition 3 now follows from Lemma 16.
+
+(d) Abelian splitting: long shift. If Ω does not satisfy the conditions of (a)—(c), we perform
+QH-shortening, then apply the entire transformation and then, if possible, the transformation (D7).
+Lemma 17. Let
+                                         v1 → v2 → · · · → vr → · · ·
+be an infinite path in T (Ω). Then there exists a natural number N such that all the generalized
+equations in vertices vn , n ⩾ N satisfy the general JSJ-case (d).
+Proof. Indeed, the Tietze cleaning either replaces the group by its proper free factor or decreases the
+complexity. Every time when the case (a) holds we replace G by some vertex group in a non-trivial
+abelian splitting of G. This can be done only finitely many times [12]. Every time when case (c)
+takes place, we decrease the complexity.
+Proposition 4. The general JSJ case (d) cannot be repeated infinitely many times.
+Proof. Consider an infinite path
+
+                                        r = v1 → v2 → · · · → vm · · ·                                (10)
+
+We have τv′ i = τv′ .
+   Denote by µi the carrier base of the equation Ωvi . The path (10) will be called µ-reducing if
+µ1 = µ, and either µ2 does not overlap with its double or they overlap but |µ| ⩽ 2|α(µ) − α(µ̄)|, and
+µ occurs in the sequence µ1 , . . . , µm−1 at least twice.
+   The path (10) is called prohibited if it can be represented in the form
+
+                                                 r = r1 s1 · · · rl sl r′ ,                           (11)
+
+such that for some sequence of bases η1 , . . . , ηl the following three properties hold:
+ (1) every base occurring at least once in the sequence µ1 , . . . , µm−1 occurs at least 4n(1 + f1 (Ωv2 ))
+     times in the sequence η1 , . . . , ηl , where n is the number of pairs of bases in equations Ωvi ,
+ (2) the path ri is ηi -reducing,
+ (3) every transfer base of some equation of path r is a transfer base of some equation of path r′ .
+Groups with regular free length functions in Λ                                                           29
+
+
+Every infinite path contains a prohibited subpath. Indeed, let ω be the set of all bases occurring
+in the sequence µ1 , . . . , µm , . . . infinitely many times, and ω
+                                                                   e the set of all bases, that are transfer
+bases of infinitely many equations Ωvi . If one cuts out some finite part in the beginning of this
+infinite path, one can suppose that all the bases in the sequence µ1 , . . . , µm , . . . belong to ω and
+each base that is a transfer base of at least one equation, belongs to ω      e . Such an infinite path for
+any µ ∈ ω contains infinitely many non-intersecting µ-reducing finite subpaths. Hence, it is possible
+to construct a subpath (11) of this path satisfying the first two conditions in the definition of a
+prohibited subpath. Making r′ longer one obtains a prohibited subpath.
+    Suppose we have a prohibited path (10). As before, let µi denote the carrier base of Ωvi , and
+ω = {µ1 , . . . , µm−1 } and ωe denote the set of such bases which are transfer bases for at least one
+equation in (10). By ω1 denote the set of such bases µ for which either µ or µ belongs to ω ∪ ω       e . By
+ω2 denote the set of all the other bases. Let
+
+                                          α(ω) = min( min α(µ), j),
+                                                          µ∈ω2
+
+where j is the boundary between active and non-active sections.
+   Let
+                                      Xµ ⊜ U [α(µ), β(µ)].
+If (Ωvi , U ) corresponds to a vertex in the sequence (10) then denote
+                                                         α(ω)−1
+                                                          X
+                                               |Uω | =            |Ui |,                               (12)
+                                                          i=1
+
+                                                      X
+                                         ψω (U ) =          |Xµ | − 2|U |ω .                           (13)
+                                                     µ∈ω1
+
+    We call ψω (U ) the excess of Ω. Since the case (a) is not applicable, ψω (U ) ⩾ 0 and is comparable
+with the length of the section [1, α(ω)]. Consider the quadratic part of Ω  e v1 which is situated to the
+left of α(ω). Let A be the length of the quadratic part and B be the length of the non-quadratic
+part.
+Lemma 18. Suppose there exists a function f1 (Ωv1 ) such that we have an inequality
+
+                                                     A ⩽ Bf1 .                                         (14)
+
+Then there is a function f2 (Ωv1 ) such that
+
+                                                |Uω | ⩽ ψω (U )f2 .                                    (15)
+
+Proof. |Uω | = A + B ⩽ (1 + f1 )B ⩽ (1 + f1 )ψω (U ), because B ⩽ ψω (U ).
+   From the definition of the process it follows that all the words U (i) [1, ρi + 1] are the ends of the
+word U (1) [1, ρ1 + 1], that is
+                                                   .
+                                 U (1) [1, ρ1 + 1] = ui U (i) [1, ρi + 1].                           (16)
+On the other hand any base µ ∈ ω2 participates in these transformations neither as a carrier base,
+nor as a transfer base. Hence, U (1) [α(ω), ρ1 + 1] is the end of the word U (i) [1, ρi + 1], that is,
+                                                      .
+                                    U (i) [1, ρi + 1] = vi U (1) [α(ω), ρ1 + 1].                       (17)
+
+So we have
+                  |Uω(i) | − |Uω(i+1) | = |vi | − |vi+1 | = |ui+1 | − |ui | = |Xµ(i)
+                                                                                  i
+                                                                                     | − |Xµ(i+1)
+                                                                                             i
+                                                                                                  |.   (18)
+Groups with regular free length functions in Λ                                                                  30
+
+
+In particular (13), (18) imply that ψω (U (1) ) = ψω (U (2) ) = . . . = ψω (U (m) ) = ψω . Denote the
+number (18) by δi .
+                                                           Pm−1
+    Let the path (10) be µ-reducing. Estimate d(Um ) = i=1 δi from below. First notice that if
+µi1 = µi2 = µ for i1 < i2 and µi 6= µ for i1 < i < i2 then
+                                          iX
+                                           2 −1
+
+                                                  δi ⩾ |U i1 +1 [1, α(µi1 +1 )]|.                              (19)
+                                          i=i1
+
+Indeed, if i2 = i1 +1 then δi1 = d(U (i1 ) [1, α(µ)] = d(U (i1 +1) [1, α(µ)]. If i2 > i1 +1 then µi1 +1 6= µ and
+µ is a transfer base in the equation Ωvi1 +1 . Hence, δi1 +1 + |U (i1 +2) [1, α(µ)]| = |U (i1 +1) [1, α(µi1 +1 )]|.
+Now (19) follows from
+                                        iX
+                                         2 −1
+
+                                                δi ⩾ |U (i1 +2) [1, α(µ)]|.
+                                          i=i1 +2
+
+So, if the bases µ2 and µ2 do not intersect in the equation Ωv2 then (19) implies that
+                         m−1
+                         X
+                               δi ⩾ |U (2) [1, α(µ2 )]| ⩾ |Xµ(2)
+                                                              2
+                                                                 | ⩾ |Xµ(2) | = |Xµ(1) | − δ1 ,
+                         i=1
+
+which implies that
+                                                   m−1
+                                                   X             1 (1)
+                                                          δi ⩾    |X |.                                        (20)
+                                                    i=1
+                                                                 2 µ
+We obtain the same inequality if µ2 overlaps with µ2 but |µ2 | ⩽ 2|α(µ2 ) − α(µ2 )|.
+    Suppose now that the path (10) is prohibited. Hence, it can be represented in the form (11).
+                                     P            (m)
+From the definition (13) we have       µ∈ω1 d(Xµ ) ⩾ ψω . So, at least for one base µ ∈ ω1 the
+                (m)      1                         (m) .      (m)
+inequality d(Xµ ) ⩾ 2n     ψω holds. Because Xµ = (Xµ )±1 , we can suppose that µ ∈ ω ∪ ω           e.
+Let m1 be the length of the path r1 s1 · · · rl sl in (11). If µ ∈ ω e then by the third part of the
+definition of a prohibited path there exists m1 ⩽ i ⩽ m such that µ is a transfer base of Ωvi . Hence,
+     (m )         (i)       (i)        (m)      1
+d(Xµi 1 ) ⩾ d(Xµi ) ⩾ d(Xµ ) ⩾ d(Xµ ) ⩾ 2n         ψω . If µ ∈ ω then take µ instead of µi . We proved
+the existence of a base µ ∈ ω such that
+                                                                   1
+                                                   |Xµ(m1 ) | ⩾      ψω .                                      (21)
+                                                                  2n
+                                                                                                  (i)   (m )
+By the definition of a prohibited path, the inequality (20) and the inequality d(Xµ ) ⩾ d(Xµ 1 ) (1 ⩽
+i ⩽ m1 ), we obtain
+                                   mX1 −1                    
+                                                      1
+                                          δi ⩾ max      ψω , 1 (4nf2 ).                          (22)
+                                    i=1
+                                                     4n
+
+By (18) the sum in the left part of the inequality (22) equals dω (U (1) ) − dω (U (m1 ) ). Hence,
+                                                      
+                                               1
+                             |Uω(1) | ⩾ max      ψω , 1 (4nf2 ) = ψω f2 ,
+                                              4n
+which, in case of the inequality (14), contradicts (15). This contradiction was obtained from the sup-
+position that there are prohibited paths (10). Hence there are no prohibited paths. The proposition
+is proved.
+
+
+   Proof of Theorem 1. We perform the elimination process for the generalized equation Ω = Ωv0
+corresponding to G. If the process goes infinitely we obtain one of the following:
+Groups with regular free length functions in Λ                                                      31
+
+
+    • free splitting of G with at least on non-trivial free factor (4.4.1) and, maybe, some surface
+      group factor (4.4.2),
+    • a decomposition of G as the fundamental group of a graph of groups with QH-vertex groups
+      corresponding to quadratic sections (4.4.4 (a)),
+    • decomposition of G as the fundamental group of a graph of groups with abelian vertex groups
+      corresponding to periodic structures ( see Proposition 3 in 4.4.4 (c)) and HNN-extensions with
+      stable letters infinitely longer than the generators of the abelian associated subgroups (4.4.4
+      (c)).
+Then we continue the elimination process with the generalized equation Ωv0 where the active part
+corresponds to weakly rigid subgroups. In the case of an HNN-extension the complexity τ (Ωv1 ) is
+smaller than τ (Ωv0 ). In the other cases the Delzant–Potyagailo complexity of weakly rigid subgroups
+is smaller by Proposition 2. Therefore this procedure stops. At the end we obtain some generalized
+equation Ωvf in with all non-active sections. Continuing the elimination process till the end, we
+obtain a complete system of linear equations with integer coefficients Σcomplete on the lengths of
+items hi ’s that is automatically satisfied, therefore the associated maximal abelian subgroups are
+length-isomorphic.
+    Notice that if Gi+1 = GΩvi+1 is obtained as the fundamental group of a graph of groups with
+two vertices, where Gi is one vertex group and the other vertex is a QH-vertex, then one can also
+obtain Gi+1 from Gi by taking a free product of Gi and a free group and then the HNN-extension
+with cyclic associated subgroups. If Gi+1 is an amalgamated product of Gi and a free abelian group
+then it can be obtained from Gi as a series of extensions of centralizers.
+    This completes the proof of Theorem 1.
+                                                                                                   
+Remark 5. If we begin with the group G   e mentioned in Remark 2 with free but not necessary regular
+length function in Λ then in the Elimination process we work with the generalized equation Ω and
+add a finite number of elements from G.  b Thus we got an embedding of G  e in a group that can be
+represented as a union of a finite series of groups
+
+                                     G1 < G2 < · · · < Gn = G,
+
+where
+    1. G1 is a free group,
+    2. Gi+1 is obtained from Gi by finitely many HNN-extensions in which associated subgroups are
+       maximal abelian and length isomorphic as subgroups of Λ.
+Remark 6. As a result of the Elimination process, the equation Ωvf in (we will denote it Ωf in ) is
+defined on the multi-interval I, that is, a union of closed sections which have a natural hierarchy: a
+section σ1 is smaller than a section σ2 if the largest base on σ2 is infinitely larger than the largest
+base on σ1 .
+    The lengths of bases satisfy the system of linear equations Σcomplete .
+
+
+5     Proof of Theorems 3 and 4
+Suppose G, as above, is a Λ-free group with a regular action. Let Ω be a generalized equation
+for G corresponding to the union of closed sections I, G = hM | Ω(M)i. Consider the Cayley
+graph X = Cay(G, M) of G with respect to the generators M. Assign to edges of Cay(G, M) their
+lengths in Λ and consider edges as closed intervals in Λ of the corresponding length. For each relation
+Groups with regular free length functions in Λ                                                                  32
+
+
+between bases of Ω, λi1 · · · λik = λj1 · · · λjm (without cancelation) there is a loop in X labeled by
+this relation. Then the path on the boundary of this loop labeled by λi1 · · · λik has the same length
+in Λ as the path labeled by λj1 · · · λjm . If x is a point on the path λi1 · · · λik at the distance d ∈ Λ
+from the beginning of the path, and x′ is a point on the path λj1 · · · λjm at the distance d from
+the beginning, then we say that x and x′ are in the same leaf. In other words, after we substitute
+generators in M by their infinite word representations, we “fold” loops into segments. We consider
+the equivalence relation between points of X generated by all such pairs x ∼ x′ . Equivalence classes
+of this relation are called leaves. We also glue an arc isometric to a unit interval between each x
+and x′ . Let F be the foliation (the set of leaves). One can define a foliated complex Σ = Σ(X, F )
+associated to X as a pair (X, F ). We define a metric space T (X) as follows. The paths in Σ can
+travel vertically (along the leaves) and horizontally (along the intervals in Λ). The length of a path γ
+in Σ(X, F ) (denoted kγk) is the sum of the lengths of horizontal intervals in γ. The pseudo-distance
+d between two points of Σ is defined as the length of a minimal path between them. A metric space
+T is obtained from Σ by identifying points at pseudo-distance 0. We extend naturally the left action
+of G on X to the action on T .
+Lemma 19.        (1) T is a Λ-tree.
+ (2) The left action of G on T is free.
+Proof. We will prove the second statement first. Suppose x is a vertex of X, g ∈ G. Then gx is also
+a vertex of X. If d(gx, x) = 0 in Σ, then x and gx are in the same leaf. Hence, there is a vertical
+path x ∼ x1 ∼ · · · ∼ xk = gx that uses relations from Ω(M)
+
+   R1 : p11 q11 = p12 µ1 q12 ,     R2 : p21 µ1 q21 = p22 µ2 q22 ,      ...,   Rk : pk1 µk−1 qk1 = pk2 qk2 ,
+
+where all pij , qij are products of some bases (G is generated by bases from M); x is a vertex between
+p11 and q11 , xi is a vertex on µi , xk is a vertex between pk2 and qk2 . Then µi = µi1 µi2 , where
+
+ℓ(p11 ) = ℓ(p12 µ11 ), ℓ(p21 µ11 ) = ℓ(p22 µ21 ), . . . , ℓ(pi1 µ(i−1)1 ) = ℓ(pi2 µi1 ), ℓ(pk1 µ(k−1)1 ) = ℓ(pk2 ).
+
+   Since relations are coming from the generalized equation Ω, p11 and p12 µ11 are the same infinite
+words, as well as pi1 µ(i−1)1 and pi2 µi1 are the same infinite words for i = 2, . . . , k−1, and pk1 µ(k−1)1
+                                                          −1
+and pk2 are the same infinite words. Therefore µ11 = p12      p11 = p−1                       −1
+                                                                     21 p22 µ21 , µ21 = p31 p32 µ31 , . . . ,
+             −1             −1        −1          −1
+µ(k−1)1 = pk1 pk2 and p12 p11 = p21 p22 . . . pk1 pk2 .
+   Then p−1               −1                                    −1          −1
+            k2 pk1 · · · p12 p11 = 1 in G. But the element pk2 pk1 · · · p12 p11 ∈ G takes gx ∈ X to
+                −1            −1
+x ∈ X, hence pk2 pk1 · · · p12 p11 gx = x. Therefore gx = x and g = 1.
+   If x is not a vertex of X, then x is a point on some edge of X labeled by µ0 and joining some x0
+and x0 µ0 , while gx, by translation in the Cayley graph, is a point on the edge of X labeled by µ0
+and joining gx0 and gx0 µ0 . There is a vertical path x ∼ x1 ∼ · · · ∼ xk = gx that uses relations of
+Ω(M)
+
+R1 : p11 µ0 q11 = p12 µ1 q12 ,     R2 : p21 µ1 q21 = p22 µ2 q22 ,      ...,   Rk : pk1 µk−1 qk1 = pk2 µ0 qk2 .
+
+Let y be a vertex of X belonging to one of the loops R1 , . . . , Rk and nearest to the leaf joining x
+and gx. Suppose y belongs to the loop R2 and it is a vertex between p21 and µ1 . Then there is a
+leaf joining y and gy that uses the relations R2 , . . . , Rk , R1 , and we can show that g = 1 as above.
+    Now we prove that T is a Λ-tree. Suppose, we have a loop γ in Σ beginning at x, which is a
+vertex of X (x ∈ V X). We are going to show that the image of this loop becomes degenerate in T (if
+we remove all subpaths of the form pp−1 from the image of γ we get a point). Notice that the image
+of any closed horizontal path in Σ is degenerate in T , so in the loop we can replace a horizontal
+subpath joining any two vertices y, z ∈ V X by any other horizontal path joining y and z. Represent
+γ = γ1 γ2 , where γ1 is a sequence of vertical and horizontal paths between x and another vertex y
+Groups with regular free length functions in Λ                                                      33
+
+
+
+
+                                                      or
+
+
+
+
+                                    Figure 8: Replacing γ1 by γ3
+
+
+of X, and γ2 is a horizontal path between y and x such that if there is a horizontal subpath p at
+the end of γ1 then p does not contain another vertex z ∈ V X. We can use induction on the number
+of vertical components in γ1 , the case of zero vertical components being trivial. We can replace the
+path γ1 by a path γ3 of equal or shorter length with the same image in T such that each vertical
+subpath of γ3 is passing through some vertex of X (see Figure 8).
+
+                                                 z5              z3
+
+
+
+
+                                                           γ5
+                                            z2
+
+
+                               γ4
+
+
+                                       z1        z4
+
+
+
+                             Figure 9: Getting rid of a vertical subpath
+
+    Let z1 ∈ V X be the first vertex of γ2 . Suppose the last vertical part of γ3 begins with z5 , ends
+with z4 and is passing through z2 ∈ V X. Then the image in T of the circle at z2 consisting of
+the vertical path from z2 to z4 (see Figure 9) and the corresponding horizontal path from z4 to z2
+(denote it γ4 ) is degenerate. The image of the circle at z2 consisting of the vertical path from z2 to
+z5 and the horizontal path z2 , z3 , z5 is also degenerate. Denote by γ5 the horizontal path between z3
+Groups with regular free length functions in Λ                                                      34
+
+
+and z2 . We now replace γ2 by γ5 γ4−1 γ2 and γ1 by the part of γ1 from x to z3 . The image of this path
+in T is degenerate by induction because it has less vertical subpaths. Therefore, T is a Λ-tree.
+    Similarly, we can construct a Λ-tree where G acts freely beginning not with the original gen-
+eralized equation Ω but with a generalized equation obtained from Ω by the application of the
+Elimination process. In this case we may have closed sections with some items hi with γ(hi ) = 1.
+Then to construct the Cayley graph of G in the new generators we cover items hi with γ(hi ) = 1
+by bases without doubles. (These bases were previously removed at some stages of the Elimination
+process as matching pairs).
+    Proof of Theorem 3. We begin by considering the union of the smallest closed sections, see
+Remark 6. Denote the union of these sections by σ. The group H of the generalized equation
+corresponding to their union is a free product of free groups, free abelian groups and closed surface
+groups. Notice that for those sections for which γ(hi ) = 1 for some maximal height items, these
+items hi are also products of some bases because initially every item is a product of bases. We can
+assume the following:
+
+  1. For all closed sections of σ such that γ(hi ) = 2 for all items of the maximal height, the
+     number of bases of maximal height cannot be decreased using entire transformation or similar
+     transformation applied from the right of the section (right entire transformation);
+  2. For all closed sections of σ where we apply linear elimination, the number of bases of maximal
+     height cannot be decreased using the transformations as above as well as transformation (E2)
+     (transfer) preceded by creation of necessary boundary connections as in (E5) (denote it (E25 )),
+     (E3) and first two types of linear elimination (D6) (denote it (D61,2 ));
+
+    Indeed, if we can decrease the number of bases of maximal height using the transformations
+described above then we just do this and continue. Since these transformations do not change the
+total number of bases we can also assume that they do not decrease the number of bases of second
+maximal height etc. We now re-define the lengths of bases belonging to σ in Rk . We are going to
+show that all components of the length of every base can be made zeros except for the components
+which appear to be maximal in the lengths of bases from σ.
+    Let Ωσ be the generalized equation corresponding to the sections from σ. Let H be the group of
+the equation H = hMσ | Ωσ (M )i.
+    Denote by Λ1 the minimal convex subgroup of Λ containing lengths of all bases in σ, and by
+Λ′ a maximal convex subgroup of Λ1 not containing lengths of maximal height bases in σ (it exists
+by Zorn’s lemma). Then the quotient Λ1 /Λ′ is a subgroup of R. Denote by ℓ̂ the length function
+in R on this quotient induced from ℓ. We consider elements of Λ′ as infinitesimals. Denote by Tb
+the R-tree constructed from T by identifying points at zero distance (see [7], Theorem 2.4.7). Then
+H acts on Tb. Denote by kγkR the induced length of the path γ in Tb, and by dR (x̄, ȳ) the induced
+distance.
+    However, the action of H on Tb is not free. The action is minimal, that is, there is no non-empty
+proper invariant subtree. Notice that the canonical projection f : T → Tb preserves alignment, and
+the pre-image of the convex set is convex. The pre-image of a point in Tb is an infinitesimal subtree
+of T .
+Lemma 20. The action of H on Tb is superstable: for every non-degenerate arc J ⊂ Tb with non-
+trivial fixator, and for every non degenerate subarc S ⊂ J, one has Stab(S) = Stab(J).
+   The proof is the same as the proof of Fact 5.1 in [18].
+Lemma 21. Let σ1 be a closed section on the lowest level corresponding to a closed surface group
+and the lengths of the bases satisfy some system of linear equations Σ. Then one can define the
+lengths of bases in σ1 in Rk .
+Groups with regular free length functions in Λ                                                     35
+
+
+Proof. Denote by Mσ+ the set of bases (on all the steps of the process of entire transformation
+applied to the lowest level) with non-zero oldest component and by Mσ0 the rest of the bases
+(infinitesimals). Denote by ℓ̂ the projection of the length function ℓ to Λ1 /Λ′ as before. Then
+λ ∈ Mσ+ if and only if ℓ̂(λ) > 0. We apply the entire transformation to σ1 . If we obtain an
+overlapping pair or an infinitesimal section, where the process goes infinitely, we declare it non-
+active and move to the right. This either decreases, or does not change the number of bases in the
+active part. Therefore, we can assume that the process goes infinitely and the number of bases in
+Mσ+ never decreases. Therefore bases from Mσ0 are only used as transfer bases.
+    We will show that the stabilizer of a pre-image of a point, an infinitesimal subtree T0 of T is
+generated by some elements in Mσ0 . An element h from H belongs to such a stabilizer if ℓ̂(h) = 0.
+If some product of bases not only from Mσ0 has infinitesimal length (denote this product by g), then
+the identity and g belong to leaves at the infinitesimal distance δ in Σ. Therefore using elementary
+operations we can obtain a base of length δ. Denote by Λ′′ the minimal convex subgroup of Λ
+containing all elements of the same height as bases from Mσ0 .
+    This implies the following lemma which we need to finish the proof of lemma 21.
+Lemma 22. Let σ 1 be the projection of the quadratic section σ1 to Λ1 /(Λ′′ ∩Λ1 ). Suppose the process
+of entire transformation for σ1 goes infinitely and the number of bases in Mσ+ never decreases. Then
+the process of entire transformation for σ 1 goes infinitely too and the number of bases in Mσ+ never
+decreases.
+    If ℓ(g) ∈ Λ′ then g is a product of bases in Mσ0 and ℓ(g) ∈ Λ′′ .
+    This lemma implies that there is no element in H infinitely larger than all bases in Mσ0 , but
+infinitely smaller than all bases in Mσ+ .
+    Therefore, we can make all components of the lengths of bases in M zeros except for those
+which are maximal components of some bases in M. Since M is a finite set, the number of such
+components is finite, and the length is defined in Rk for some k not larger than the number of pairs
+of bases.
+    Let σ be a closed section corresponding to infinite linear elimination process for a free group as
+in Lemma 7 (c). We cover (for technical reasons) items hi with γ(hi ) = 1 by bases without doubles.
+(These bases were removed at some stages of the Elimination process as matching pairs).
+Lemma 23. Let σ be a closed section corresponding to infinite linear elimination process for a free
+group as in Lemma 7 (c). Let σ be the projection of section σ to Λ1 /Λ′′ . Suppose the process of
+linear elimination on σ goes infinitely and some generalized equation Ω′ (with the minimal possible
+number of bases) appears in this process infinitely many times. Then the process of linear elimination
+on σ goes infinitely. Moreover, suppose for any base µ with ℓ̂(µ) = 0 obtained by elementary
+transformations, ℓ(µ) ∈ Λ′′ . If H = hMσ | Ωσ (Mσ )i, and g ∈ H, ℓ̂(g) = 0 then ℓ(g) ∈ Λ′′ .
+Proof. The first statement holds because the steps that we make in the process depend only on the
+situation of bases of maximal height. If some product g of bases not only from Mσ0 has infinitesimal
+length, then the identity and g belong to leaves at the infinitesimal distance δ in Σ. Therefore using
+elementary operations we can obtain a base µ of length comparable to δ. Therefore δ ∈ Λ′′ .
+Lemma 24. Let σ be a closed section corresponding to infinite linear elimination process for a free
+group. Suppose the process of linear elimination on σ goes infinitely and some generalized equation Ω
+(with the minimal possible number of bases) appears in this process infinitely many times. Suppose all
+items have length in R. Then applying elementary transformations we cannot decrease the difference
+k between the number of items and the total number of basic and boundary equations. This difference
+is the rank of the free group that is the coordinate group of Ω.
+Groups with regular free length functions in Λ                                                           36
+
+
+Proof. Every equation Ω′ that is obtained from Ω by elementary operations has the free group of
+rank k as the coordinate group. If we cut bases of Ω′ along boundary connections and start removing
+eliminable bases, we have to remove them all. Every time when we remove eliminable base we express
+one item in terms of the others. There must be k items left at the end.
+    Lemma 24 implies that if σ is a closed section corresponding to infinite linear elimination process
+for a free group, then a base µ with ℓ̂(µ) = 0 can only be obtained by elementary transformations
+from bases in Mσ0 . Therefore, by Lemma 23, if H = hMσ | Ωσ (Mσ )i, and g ∈ H, ℓ̂(g) = 0 then
+ℓ(g) ∈ Λ′′ .
+    Finally, if a finitely generated abelian group H acts freely on a Λ-tree, then it is isometrically
+embedded into Λ (see, for example, [3]).
+Lemma 25. ([7],LLemma      L 1.1.6) If H is a finitely generated ordered abelian group, it has a decom-
+position H = Λ1 . . . Λk for some k ≥ 0, where the ordering is the lexicographic ordering and
+Λ1 , . . . Λk are subgroups of R.
+   Therefore, H has a free basis h1 , . . . hk such that ht(h1 ) > . . . ht(hk ). We can now make all the
+components in the length of the basis elements zeros except those corresponding to ht(h1 ), . . . , ht(hk ).
+This defines a free length function in Rn on H. The new lengths of elements in H satisfy the same
+system of linear equations as their lengths in Λ.
+   Using induction on the number of levels obtained in the Elimination process, we similarly prove
+the statement of Theorem 3.
+   The points of an Rn -tree, where G acts freely are the leaves in the foliation corresponding to the
+new length of bases in Rn . The new lengths of bases are exactly their Lyndon lengths. 
+   Proof of Theorem 4. Notice that in the case when G       e is a finitely presented group with a free
+length function in Λ (not necessary regular) it can be embedded in the group with a free regular
+length function in Λ by Remark 2. That group can be embedded in R(Λ′ , X). When we make a
+                          e we have to add only a finite number of elements from R(Λ′ , X). We run
+generalized equation for G,
+the elimination process for this generalized equation as we did in the proof of Theorem 1 and obtain
+a group G as in Remark 5, where G   e is embedded, and then redefine the length of elements of G in
+Rn as above. Therefore G acts freely and regularly on a Rn -tree. The theorem is proved.
+   Moreover, using Lemmas 22 and 23, and induction one shows that the length function in Rn and
+in Λ defined on G is regular. Therefore we proved Theorem 4.
+Remark 7. If G  e is a finitely presented group which has a free (not necessary regular) length function
+in Λ, then it acts freely on a Λ-tree, and one can construct, as in [4], a foliated band complex with
+measured foliation with horizontal measure in Λ.
+
+
+References
+ [1] R. Alperin and H. Bass, Length functions of group actions on Λ-trees. Combinatorial group
+     theory and topology, (Ed. S. M. Gersten and J. R. Stallings), Annals of Math. Studies 111,
+     265–378. Princeton University Press, 1987.
+ [2] R. Alperin and K. Moss, Complete trees for groups with a real length function. J. London Math.
+     Soc. (2) 31, 1985, 55–68.
+ [3] H. Bass Groups acting on non–archimedian trees. Arboreal group theory, 1991, 69–130.
+ [4] M. Bestvina and M. Feighn, Stable actions of groups on real trees. Invent. Math., 121 no. 2
+     (1995), 287–321.
+ [5] M. R. Bridson and A. Haefliger, Metric spaces of non-positive curvature. Springer, 1999.
+Groups with regular free length functions in Λ                                                   37
+
+
+ [6] I. Chiswell, Abstract length functions in groups. Math. Proc. Cambridge Philos. Soc., 80 no. 3
+     (1976), 451–463.
+ [7] I. Chiswell, Introduction to Λ-trees. World Scientific, 2001.
+ [8] I. Chiswell, A-free groups and tree-free groups. Algorithms, Languages, Logic (Ed. A. Borovik),
+     Contemp. Math., Amer. Math. Soc. 378 (2005), 79–86.
+ [9] I. Chiswell and T. Muller, Embedding theorems for tree-free groups. Under consideration for
+     publication in Math. Proc. Camb. Phil. Soc.
+[10] F. Dahmani, Existential questions in (relatively) hyperbolic groups. Israel J. Math 173 (2009),
+     91–124.
+[11] F. Dahmani and D. Groves, The Isomorphism Problem for Toral Relatively Hyperbolic Groups.
+     Publ. Math., Inst. Hautes Etudes Sci. 107 no. 1 (2008), 211–290.
+[12] T. Delzant and L. Potyagailo, Accessibilité hiérarchique des groupes de présentation finie.
+     (French) Topology 40 no. 3 (2001), 617–629.
+[13] D. Gaboriau, G. Levitt and F. Paulin, Pseudogroups of isometries of R and Rips’ Theorem on
+     free actions on R-trees. Israel. J. Math., 87 (1994), 403–428.
+[14] D. Gaboriau and G. Levitt and F. Paulin, Pseudogroups of isometries of R: reconstruction of
+     free actions on R-trees. Ergodic Theory Dynam. Systems 15 (1995), 633–652.
+[15] D. Gildenhuys, O. Kharlampovich and A. Myasnikov, CSA-groups and separated free construc-
+     tions. Bull. Austral. Math. Soc., 52 no. 1 (1995), 63–84.
+[16] A. M. W. Glass, Partially ordered groups. Series in Algebra, 7, World Scientific, 1999.
+[17] D. Groves, Limit groups for relatively hyperbolic groups, II: Makanin-Razborov diagrams. Geom.
+     Topol. 9 (2005), 2319-2358.
+[18] V. Guirardel, Limit groups and groups acting freely on Rn -trees. Geom. Topol., 8 (2004), 1427–
+     1470.
+
+[19] N. Harrison, Real length funtions in groups. Trans. Amer. Math. Soc. 174 (1972), 77–106.
+[20] A. H. M. Hoare, On length functions and Nielsen methods in free groups. J. London Math. Soc.
+     (2) 14 (1976), 188–192.
+[21] A. H. M. Hoare, Nielsen method in groups with a length function. Math. Scand. 48 (1981),
+     153–164.
+[22] B. Khan, A. Myasnikov and D. Serbin, On positive theories of groups with regular free length
+     functions. Internat. J. Algebra and Comput. 17 no. 1 (2007), 1–26.
+[23] O. Kharlampovich and A. Myasnikov, Irreducible affine varieties over a free group. II: Systems
+     in triangular quasi-quadratic form and description of residually free groups. J. of Algebra 200
+     no. 2 (1998), 517–570.
+[24] O. Kharlampovich and A. Myasnikov, Implicit function theorems over free groups. J. of Algebra
+     290 no. 1 (2005), 1–203.
+
+[25] O. Kharlampovich, A. Myasnikov, V. Remeslennikov and D. Serbin Groups with free regular
+     length functions in Zn . ArXiv:0907.2356, Trans. Amer. Math. Soc., in print.
+Groups with regular free length functions in Λ                                                   38
+
+
+[26] O. Kharlampovich, A. Myasnikov and D. Serbin, Regular completions of Zn -free groups.
+     Preprint, 2011.
+[27] V. Kopytov and N. Medvedev, Right-ordered groups. Siberian School of Algebra and Logic.
+     Consultants Bureau, New York, 1996.
+[28] R. Lyndon, Length functions in groups. Math. Scand. 12 (1963), 209–234.
+[29] R. C. Lyndon and P. E. Schupp, Combinatorial group theory. Ergebnisse der Mathematik und
+     ihrer Grenzgebiete 89, Springer-Verlag, Berlin, Heidelberg, New York, 1977.
+[30] G. S. Makanin, Equations in a free group. (Russian), Izv. Akad. Nauk SSSR, Ser. Mat., 46
+     (1982), 1199–1273 (transl. in Math. USSR Izv. 21 (1983)).
+[31] A. Myasnikov and V. Remeslennikov, Length functions on free exponential groups. Proc. N 26.
+     IITPM SO RAN, Omsk, 1996, 1–34.
+[32] A. Myasnikov, V. Remeslennikov and D. Serbin, Regular free length functions on Lyndon’s free
+     Z[t]-group F Z[t] , Algorithms, Languages, Logic (Ed. A. Borovik), Contemp. Math., Amer. Math.
+     Soc. 378 (2005), 37–77.
+[33] J. Morgan and P. Shalen, Valuations, Trees, and Degenerations of Hyperbolic Structures, I.
+     Annals of Math, 2nd Ser., 120 no. 3. (1984), 401–476.
+[34] D. Promislow, Equivalence classes of length functions on groups. Proc. London Math. Soc (3)
+     51 (1985), 449–477.
+[35] A. Razborov, On systems of equations in a free group. Math. USSR Izvestiya 25 no. 1 (1985),
+     115–162.
+[36] J.-P. Serre, Trees. New York, Springer, 1980.
+[37] A. Schrijver, Theory of linear and integer programming. New-York, John Wiley and Sons, 1998.
+[38] D. Y. Rebbechi, Algorithmic properties of relatively hyperbolic groups, PhD Thesis, Univ. Cali-
+     fornia, Davis, 2001. http://front.math.ucdavis.edu/math.GR/0302245.
+
+[39] D. Wise The structure of groups with a quasiconvex hierarchy, preprint
+

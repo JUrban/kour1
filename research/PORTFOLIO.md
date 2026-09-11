@@ -99,6 +99,9 @@ Updated 2026-09-11T18:09:17.393481+00:00. This is a research triage list, not an
 | 10.32 | Positive-genus long-cycle products, a classical even-target cover, and a missing-prime estimate. | Thirtieth complete candidate: n>=max(1126,16 log(rad(abs(rs)))) suffices for symmetric-group universality with at least one odd exponent; every c>8 works asymptotically. All6,143 witnesses independently replayed. Priority and outside review pending. |
 | 10.62 | Amelio periodic quotient of C2*C2*C2 with a prescribed odd triple relation. | Twenty-ninth candidate: infinite perfect exponent-2p group with no subgroup of order four; all involutions form one generating class and have pairwise products of odd order. Geometric theorem imported; application audited and finite controls pass. Novelty and outside review pending. |
 
+| 12.9(b) | KMS finite-rank abelian subgroup theorem and the union of an ascending chain. | Prior affirmative consequence under finite presentation; part(a) remains unresolved here. No new count. |
+| 11.15 | Audit of Brandl1981 commutator-power words. | The naive odd-prime sequence already fails in SL(2,p^2); no new explicit sequence found. |
+
 The index contains 1,308 main-body problem entries, including all 150 Issue 21 entries. Exactly 104 headings are starred, but partial solution markers also occur within unstarred entries. Older issues remain to be surveyed systematically. The separate solved archive is intentionally excluded from the index.
 
 ## Exact reduction for 21.113(a)
