@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-11T13:03:32.629553+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T13:37:36.216447+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -37,6 +37,8 @@ Updated 2026-09-11T13:03:32.629553+00:00. This is a research triage list, not an
 | 20.8 | Explicit rank3 equalizer construction and every principal core image. | Complete negative prior-construction consequence. All five vertex partitions prove the intermediate-rank condition; independent Python/GAP controls PASS. Excluded from new priority. |
 | 20.11 | Subgroup rigidity plus bounded-rank chain and intersection limits. | Complete affirmative prior-theorem deductions for all four assertions, including infinite-rank ambient groups and infinitely generated bottom subgroup. Outside review pending; excluded from new priority. |
 | 19.9(a),(b) | Universal symplectic central extension; Clifford detection of the braid Hopf kernel. | Complete deductions: negative(a), affirmative(b), with explicit braid representation bound. Both are prior-theorem consequences, excluded from the new-priority count. Exact Clifford and26 GAP spin controls PASS; outside review pending. |
+| 19.1, 19.3 | Cyclic-amalgam upper bounds, retractions, Hall free factors and a cable abelianization argument. | Prior affirmative deductions for 19.3(a),(b),(c),(e),(f) and standard nontrivial 19.1 knot constructions. Source errors and proper/degenerate conventions explicit; no new count. Part 19.3(d) remains unresolved here. |
+| 19.6 | Audit the published nilpotent and residually finite containment statements. | Part (a) is explicitly stated in Allenby 2005 Section 4(7), specific proof adaptation unaudited. Part (b) remains unresolved here; stronger-hypothesis and countable-amalgam prior results do not settle it. |
 | 19.4(a),(b), 19.5 | Infinitely many cyclic factors with unbounded common root degrees. | Exact prior negative answers from Allenby 2000 Theorem 4: lambda=mu=psi equals the infinite cyclic amalgam. Direct lower-bound proof and source audit written; excluded from new priority. |
 | 18.56 | Core-2 finite 2-groups. | Exact prior affirmative theorem of Wilkens 2017 explicitly answering the problem. Main statement read; long proof unaudited. |
 | 17.48 | Stability of a free product. | Exact prior affirmative theorem of Sela 2010, Theorem 8.1. Selected statements and proof portions read; full proof unaudited. No decidability inference for 17.117. |

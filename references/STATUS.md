@@ -734,7 +734,8 @@ https://www.math.uh.edu/~hjm/restricted/pdf26(3)/03ALLENBY.pdf:
 all six pages read. Theorem 4 gives the exact unbounded-root
 counterexample to 19.4(a),(b) and 19.5. Theorem 1 and the local
 unbounded-degree argument in Theorem 4 were checked; the 1999
-upper-bound dependency in Theorem 2 remains unread. Example 7 was
+upper-bound dependency in Theorem 2 has now been read, with its
+earlier dependencies only partly audited. Example 7 was
 read but is not imported. Tang's older group construction is credited
 in Section 5. A direct lower-bound check and exact Notebook
 deductions are in `19.4-19.5-prior-results.md`.
@@ -747,3 +748,45 @@ reproduces Allenby's exact counterexample theorem; Questions 5.1 and
 and 19.5. Other statements in the survey are source leads until their
 needed deductions and original reading scopes are recorded. No
 new-priority claim is made for this family of observations.
+
+## Problems 19.1, 19.3 and 19.6
+
+Allenby 1999, https://www.math.uh.edu/~hjm/restricted/pdf25(3)/01ALLENBY.pdf:
+all five pages read and local arguments examined. Theorems 3–4
+supply the finite-cyclic equality and cyclic upper bound. Earlier
+ordinary-Frattini dependencies not all independently audited.
+
+Allenby 2005, https://www.math.uh.edu/~hjm/restricted/pdf31(4)/02allenby.pdf:
+all seven pages read. Theorem 1's finite-index ending examined;
+its initial 1978 normal-form argument remains imported. Corollary (b)
+is used for 19.3(e). Section 4(7) explicitly states the nilpotent-factor
+assertion in 19.6(a), but that item's cited 1978 proof/adaptation is
+not independently audited. No new priority is claimed.
+
+Allenby–Tang–Tang 1980, DOI 10.4153/CMB-1980-007-0: Section 5,
+Theorems 5.1–5.5 and Lemma 5.4 with their proofs read. Knot-group
+splittings and abelianization are imported, with standard nontrivial
+construction conventions explicit. The abelian intersection lemma is
+reproved in the note; the topological source dependencies are unaudited.
+
+Azarian 1993, https://www.math.uh.edu/~hjm/restricted/archive/v019n4/0499AZARIAN.pdf,
+and 1994, https://www.math.uh.edu/~hjm/restricted/archive/v020n3/0555AZARIAN.pdf:
+both papers read in full. Earlier normal-form proofs cited as analogous
+are not thereby audited. The 1994 pages 558–559 were visually checked:
+the arbitrary-extension/direct-product step and the torus-knot relation
+are wrong as printed. Neither is imported in the new notes. The
+1993 lower assertion for 19.3(d) does not imply the upper assertion
+without an additional existence argument.
+
+Kapovich–Myasnikov, https://arxiv.org/abs/math/0202285v1:
+Section 8 definitions and Proposition 8.3, Lemma 8.10, Theorem 8.11
+and Corollary 8.13 with their proofs read. Full paper unaudited.
+The classical Hall free-factor theorem is used; its graph-completion
+argument is also summarized directly. The extra excluded-element
+version is unnecessary for this deduction.
+
+Allenby 2008, DOI 10.1515/JGT.2008.024: primary issue-page indexed
+abstract only, https://www.degruyterbrill.com/journal/key/jgth/11/3/html?lang=en .
+It states countable amalgam suffices. Full text not obtained; not
+needed for the 19.3(e) proof. Third-party authorship snippets were
+not trusted over the primary journal issue.

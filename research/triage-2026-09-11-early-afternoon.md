@@ -174,14 +174,18 @@ infinite generating set. No new theorem is claimed.
 Allenby 2000, Theorem 4, is an exact prior root-amalgam counterexample
 to 19.4(a),(b) and 19.5. The full deduction and a direct lower-bound
 check are in `19.4-19.5-prior-results.md`. The six-page source was read;
-its older upper-bound dependency has not yet been audited.
+the original 1999 upper-bound proof has since been read and its
+local argument examined, with earlier dependencies partly unaudited.
 
 Azarian 2011, Sections 1–5 and the relevant reference entries, were
 read. The survey reproduces the root-amalgam theorem and also lists
 the same assertions among its questions. It further points to known
 lower-near-Frattini results for the knot groups in 19.1 and several
-cases of 19.3. These are leads for exact prior deductions; their
-original proofs still need inspection before a detailed report.
+cases of 19.3. Follow-up reading and exact deductions now appear in
+`19.1-19.3-prior-results.md` and its audit. They cover the standard
+nontrivial knot constructions and 19.3(a),(b),(c),(e),(f), with proper
+amalgam and degeneracy conventions explicitly stated. These are prior
+results, not additions to the 24-candidate count.
 
 For the literal 19.2, a finite normal subgroup H is always contained
 in lambda(G): adjoining it changes a subgroup's index by at most
@@ -192,3 +196,30 @@ are false. For arbitrary groups psi(G) need not exist; the question's
 use of this notation needs qualification. The same index obstruction
 makes the hypothesis of 19.3(g) impossible. These are formulation
 observations, excluded from new-result counting.
+
+## 19.6(a): an exact prior assertion; (b) still unresolved here
+
+Allenby 2005, Section 4, page 1004, item (7), explicitly states
+mu(A *_H B)<=H when A and B are nilpotent groups, with no finite
+generation assumption. This is exactly the proper-amalgam assertion
+in 19.6(a). Its reference is Allenby–Tang 1978, Theorem 5.1, for
+the ordinary Frattini result; the section says the same proofs or
+easy adaptations give the upper near-Frattini versions. The whole
+seven-page 2005 paper was read, but the cited 1978 proof and the
+adaptation for this particular item have not been independently
+audited. Record an exact prior assertion, not a new proof or candidate.
+
+The same paper's Section 5(3) still lists the residually finite case
+with H satisfying an identity, matching 19.6(b), as a remaining
+conjecture. Its Section 4 proves several stronger-hypothesis cases,
+which must not be silently substituted for the unrestricted question.
+
+Allenby 2008, J. Group Theory 11, 415–420, DOI
+10.1515/JGT.2008.024: the primary journal issue's indexed abstract
+states that countable H suffices for both upper near-Frattini and
+ordinary Frattini containment. Full text was not obtained. This
+is a useful boundary on remaining searches, but is not used in the
+written 19.3(e) deduction, which instead uses the checked 2005
+corollary and Hall's theorem. The primary issue credits Allenby
+alone; third-party search metadata incorrectly or ambiguously adds
+Wilson, so it is not used for authorship.

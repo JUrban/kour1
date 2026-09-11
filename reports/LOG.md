@@ -1284,3 +1284,27 @@ active through 2026-09-12 20:56:46 UTC; work and commits remain local.
 At 13:23 UTC all six 20.100 n=7 verification workers remain live,
 with 4,970,000 nodes checked and 7,824,116 KiB combined resident
 memory. No shard has finished; the certificate remains unproved.
+
+## 2026-09-11T13:37:36.216447+00:00 — Near-Frattini source audit and further prior deductions
+
+Recorded prior affirmative deductions for 19.3(a),(b),(c),(e),(f),
+using Allenby 1999–2005, an explicit retraction argument, and Hall's
+finite-index free-factor theorem. The free-factor argument covers
+arbitrary free-group ranks. For standard nontrivial product/cable
+knots in 19.1, cyclic upper bounds and a checked abelian pushout
+identity give psi=1. Proper-amalgam and degenerate-knot conventions
+are explicit. Two errors in unrelated 1994 proof arguments were
+confirmed visually and excluded from the deductions.
+
+Allenby 2005 Section 4(7) already states the exact nilpotent assertion
+in 19.6(a); its specific older proof adaptation remains unaudited.
+The general 19.3(d) and 19.6(b) cases remain unresolved here. The
+original 1999 upper-bound dependency for the earlier root-amalgam
+note has now been read; earlier ordinary-Frattini dependencies remain
+partly unaudited. No additional candidate is counted: 24 remain,
+all awaiting outside review and broader novelty checks.
+
+At 13:32 UTC all six 20.100 n=7 verification workers were live,
+with 5,320,000 nodes checked and 8,164,596 KiB combined RSS.
+No shard had finished. All work and commits remain local; the
+48-hour goal continues through 2026-09-12 20:56:46 UTC.
