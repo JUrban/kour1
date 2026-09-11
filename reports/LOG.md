@@ -675,3 +675,16 @@ have8GiB workspace ceilings each, within the overall resource budget.
 The n=7 generator was still live at8,510,000 visited states. No additional
 fixed-n result is claimed. Candidate count remains16 from11.116 and the
 earlier entries. See research/20.100-computation.md for continuation details.
+
+## 2026-09-11T06:25:22Z — Checkpoint
+
+Sixteen complete candidates are documented; latest11.116 and all-group
+20.100 n=6 evidence are committed. The n=7 generator's actual command and
+stdout remain verified, with8,880,000 visited states and its original
+10-million-state bound. If it reaches the bound, reuse the completed prefix
+as documented rather than discard its completed proof nodes. The new
+partitioned checker has passed its controls but has not yet run at n=7.
+The19.20 order256 search has55,003 counts,0 equalities,345 reversals,
+3 verified live workers and13 completed ranges; all log checks pass.
+Older unsuccessful leads and scope pitfalls are saved in
+research/older-triage-2026-09-11.md. The48-hour goal remains active.
