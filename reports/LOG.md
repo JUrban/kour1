@@ -1182,3 +1182,7 @@ candidate count is now 23; no externally reviewed new solution is
 claimed. The six long-running 20.100 n=7 GAP partitions continue, with
 no completed n=7 proof. All work and commits remain local. The active
 48-hour goal ends 2026-09-12 20:56:46 UTC.
+
+## 2026-09-11T12:22:32.934799+00:00 — Bounded exclusions for 16.46
+
+All 19 listed finite targets completed, with 9288 conjugacy-reduced A,B pairs and 21648 cube-compatible triples, and no nontrivial homomorphism. The exact reduction uses the independence of C,D,E,F; it allows coinciding images. K has trivial abelianization, verified from its 22 relators. Independent Python literal permutations match every recorded count for A5,A6,A7 and perform 35,904 expanded-relator checks. Both processes exited zero; coverage and hash audits pass. Printed page 101 was visually checked. These are bounded exclusions only, with no new complete candidate or novelty claim. The complete count remains 23.
