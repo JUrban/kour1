@@ -77,3 +77,29 @@ Lie ideals alone would not prove normal generation in the group.
 
 All status searches are bounded discovery checks. No absence of a
 search hit is interpreted as proof of novelty or continued openness.
+
+## Issue13 follow-up,18:50 UTC
+
+- **13.31:** Recent primary abstracts confirm active work on the greedy
+  base-size problem. Del Valle--Roney-Dougal, arXiv:2503.23964,
+  proves the conjecture for primitive symmetric/alternating groups
+  apart from one class of possible exceptions. Huang--Roney-Dougal,
+  arXiv:2605.16032 (15 May2026), proves it for diagonal-type groups.
+  Del Valle, arXiv:2408.14139, proves equality of greedy and minimum
+  base sizes for all almost simple primitive groups with sporadic
+  socle. Only the primary abstracts and publisher introduction excerpts
+  were read; no proof audit or full resolution is claimed.
+- **13.53:** Sozutov--Alexandrova2017 already proves that every g works
+  for an infinite locally graded p-group. The finite-quotient argument
+  is checked in `13.53-prior-partial.md`. The unrestricted problem
+  remains unresolved here.
+- **13.57:** Coprime centralizer lifting followed by a fixed-point-free
+  automorphism theorem applies only when p does not divide |G|. It
+  cannot settle the p-group case. Existing bounds depending on the
+  number or rank of fixed points also do not give a bound in terms
+  of p alone when the fixed subgroup is merely required to be central.
+
+The earlier detailed Issue13 exclusions in
+`older-triage-2026-09-11.md` still apply, notably to13.3,13.14--15,
+13.17,13.30,13.51 and13.54. Repeating those incomplete routes does
+not produce additional candidates.

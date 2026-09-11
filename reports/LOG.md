@@ -1658,3 +1658,18 @@ the key rational-module and final cancellation pages were visually
 checked. The original classical dependencies remain imported. The
 result is excluded from the30-candidate count. Neither derived-subgroup
 inclusion nor the different11.115 question follows automatically.
+
+## 2026-09-11T19:01:28.279431+00:00 — Prior-result boundaries and structural follow-ups
+
+Committed the12.9(b) chain-condition deduction and11.15 Brandl source
+audit as aa28c7f. The further13.53 source packet includes a checked
+finite-quotient proof of the known locally graded p-group case.
+The11.115 relation-module criterion proves the finite-index and
+primitive-element cases, with the general missing step explicit.
+A read-only19.20 ratio search finds no reciprocal pair among85,343
+retained IDs; exact fractions, duplicate checks and all input hashes
+are recorded. No new complete candidate; the count remains30.
+
+The18:49 UTC n=7 snapshot verifies all six workers live and records
+15,600,000 checked nodes. No shard has completed and no n=7 proof
+is claimed. All large certificates and live logs remain preserved.
