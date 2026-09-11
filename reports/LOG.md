@@ -468,3 +468,25 @@ parser totals are2,468 processed and2,421 eligible.
 New19.9 arguments are being written and audited separately.
 Order256 snapshot: 45,851 counts,0 equalities,
 87 reversals,10 live and6 completed ranges; allPASS.
+
+## 2026-09-11T03:34:52.160784+00:00 — Complete derived answers to both parts of19.9
+
+Part(a) is negative for Sp(10,Z): its tensor square is its universal
+central extension, identified with Deligne's non-residually-finite
+topological-cover pullback. A short perfect-lift lemma proves finite
+generation before Malcev's theorem is applied.
+
+Part(b) is affirmative for all n>=4. The diagonal Z factor splits
+explicitly, and a rational Clifford representation detects the C2
+Hopf kernel of the exterior square. Combined with the faithful braid
+representation this gives degree1+n(n-1)/2+2^n over Q(q,t). All exact
+rational controls and26 independent spin-matrix cases pass. The first
+GAP check was stopped at expensive n=7 characteristic-zero group-order
+recognition; its18-case prefix is preserved as incomplete. The final
+26-case bounded scope completed with160 distant commutator checks.
+
+Both are short prior-theorem consequences, retained separately from
+new-priority claims, consistently with previous rediscoveries. No
+exact earlier published tensor-square answer was located in the limited
+search; this does not establish novelty. The working candidate count
+remains13, all pending outside review and further literature work.

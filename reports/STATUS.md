@@ -1,6 +1,6 @@
 # Current status
 
-Updated: 2026-09-11T03:31:49.898392+00:00.609296+00:00.
+Updated: 2026-09-11T03:34:52.160784+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **13**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), and **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations). All await outside review and further novelty checks.
@@ -85,6 +85,9 @@ and automorphism order. Five smaller controls also agree. None of the
 60 evaluated parameter triples gives equality.
 
 ## Additional constructions and exclusions
+
+**19.9(a),(b):** Complete deductions from prior theorems: Sp(10,Z) has a non-residually-finite universal central extension, so its finitely generated tensor square is nonlinear; every B_n tensor B_n, n>=4, embeds in GL_(1+n(n-1)/2+2^n)(Q(q,t)) using its Clifford-detected Hopf kernel. Exact rational controls and26 independent GAP spin-matrix cases pass. The deductions are retained as prior-theorem consequences and excluded from the13-candidate new-priority count; no earlier explicit tensor-square answer or novelty is asserted. See `research/19.9-proof.md` and `research/19.9-review.md`.
+
 
 **18.111:** Frigerio--Sisto2023 Theorem1.2 gives the exact prior negative answer with a finitely generated example. Introductory statement and conventions read; full proof unaudited. See `research/18.111-known-resolution.md`; excluded from new-result priority.
 

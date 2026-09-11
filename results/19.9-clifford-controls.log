@@ -1,0 +1,7 @@
+PASS n=4 clifford_dimension=16 claimed_tensor_dimension=23
+PASS n=5 clifford_dimension=32 claimed_tensor_dimension=43
+PASS n=6 clifford_dimension=64 claimed_tensor_dimension=80
+PASS n=7 clifford_dimension=128 claimed_tensor_dimension=150
+PASS n=8 clifford_dimension=256 claimed_tensor_dimension=285
+PASS n=9 clifford_dimension=512 claimed_tensor_dimension=549
+ALL PASS {'squares': 33, 'adjacent': 27, 'distant': 56, 'conjugated_relators': 960, 'associativity': 480, 'left_regular_columns': 1008}

@@ -396,3 +396,21 @@ do not settle the whole Notebook question.
 conventions give the exact prior negative answer. Full proof remains
 unaudited. Ascari--Milizia2207.03972 primary abstract only read.
 See research/18.111-known-resolution.md for precise reading scope.
+
+## Problem19.9: two derived answers
+
+See `research/19.9-proof.md` for complete implications and exact sources.
+Bardakov--Lavrenov--Neshchadim2019, arXiv1710.02330v2, Section2,
+Proposition3.1 and the two open-question statements read. Deligne1978's
+original first-page theorem visually read from his IAS publication
+archive. Benson--Campagnolo--Ranicki--Rovi2018 page4071, Lemma6.11
+and the stable-rank homology table identify the relevant universal
+central extension; Funar--Pitsch2004.04129 Theorem1.2 and Remark1.4
+confirm the rank qualification. Akita--Kawasaki--Satoh2024 Sections1--2
+provide braid homology and Schur-cover pullback statements. Krammer2002
+primary abstract confirms faithful braid representation dimension and
+coefficient ring. Full proofs of these established major inputs were
+not audited. Our Clifford argument and finite controls are independent
+of the detailed Schur-cover presentation theorem. Both tensor-square
+answers are retained as prior-theorem consequences with no new-priority
+claim, not as assertions that the cited papers explicitly resolve19.9.

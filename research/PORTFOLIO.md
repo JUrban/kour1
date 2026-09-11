@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T03:31:49.898392+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T03:34:52.160784+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 19.9(a),(b) | Universal symplectic central extension; Clifford detection of the braid Hopf kernel. | Complete deductions: negative(a), affirmative(b), with explicit braid representation bound. Both are prior-theorem consequences, excluded from the new-priority count. Exact Clifford and26 GAP spin controls PASS; outside review pending. |
 | 18.114 | IRREDSOL equality screen over F5. | All2,468 soluble entries through dimension6 processed;2,421 eligible, zero noncyclic hits. All57 independent controls pass. Indexed affine-constructor cache bug diagnosed; invalid runs excluded. |
 | 18.111 | Quasi-isometrically trivial cyclic central extensions. | Exact prior negative theorem: Frigerio--Sisto2023 Theorem1.2. Introductory theorem read; full proof unaudited; excluded from new priority. |
 | 18.92(a),(b) | Encode intersection-closed families of prime sets by formations of all finite S-groups. | Complete affirmative candidates under the explicitly printed internal-join convention; infinite compactness proof and finite N5 controls pass. Novelty and outside review pending. |
