@@ -354,3 +354,16 @@ candidates pending novelty and outside review. The48-hour goal remains
 active, and only local files and Git commits have been written.
 
 Order256 snapshot 2026-09-11T01:28:53.922504+00:00: 31,819 counted, 0 equality hits, 82 reverse inequalities, 13 live workers, 3 completed ranges, all checks PASS.
+
+At 2026-09-11T01:55:56.226842+00:00, completed the tenth candidate resolution,17.33.
+The affine group Gamma_n has no nontrivial homomorphism to the Klein
+bottle group K, but every subgroup on fewer than n generators embeds
+in a finite power of K. Its explicit finite presentation gives a Horn
+sentence separating it from q(K), proving no finite bound on the
+variables of a quasiidentity basis can suffice. The printed statement
+was visually checked. Python exact controls and an independent GAP
+presentation computation passed, including SmallGroup(256,26974) as
+the predicted finite quotient. The internal audit records every key
+logical implication and the limited primary-literature review. Novelty
+and outside review remain pending. Only local files and commits were
+created; the48-hour goal remains active.

@@ -277,3 +277,15 @@ match central involutions, but d_0 and d_1 are cohomological numbers.
 Full proofs were not audited. Initial exact-problem/rank searches did
 not locate a resolution. The bounded search and elementary exponent-four
 proof carry no novelty claim. See research/16.14-plan.md for scope.
+
+## Problem 17.33
+
+The printed statement on page108 was visually checked. Budkin2007,
+https://www.mathnet.ru/eng/al305 , was compared through the family
+definition and Theorem1; its finite-chain conclusion does not answer
+the variable-bound question. Theorem2 was only partly read. Budkin1991's
+introduction and definitions and Polushin2011's primary abstract were
+also read. Full details and search limitations are in
+research/17.33-review.md. No earlier resolution surfaced in this limited
+search; novelty remains unconfirmed. The candidate proof is elementary
+and does not depend on importing those theorems.
