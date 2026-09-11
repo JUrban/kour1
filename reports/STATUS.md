@@ -1,14 +1,14 @@
 # Current status
 
-Updated: 2026-09-11T10:41:00.060326+00:00.
+Updated: 2026-09-11T11:07:14.465738+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **21**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups), **14.72** (a smooth affine surface with a smooth fixed Cartier divisor but singular cyclic quotient), **21.40** (a normal nilpotent subgroup of finite index in every rational linear group with finitely many automorphism orbits), **21.60** (an order-twelve counterexample to the semiperfectness criterion), **4.55** (non-unique indecomposable projective decompositions over Z_(5)[3.A7]), and **21.107** (a countable resolvable group without an expansive sequence). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- Latest prior-result audit: 5.15 (affirmative), 12.11 (negative), and 13.39(f) (negative in rank at least two) follow from published theorems; detailed deductions are saved and excluded from new priority. An exact August prior claim for 11.46(a) and further known ranges for 8.3 are also recorded.
+- Latest prior-result audit: 14.59 is negative by Tent2016; the exact countable-action deduction is retained. Earlier published consequences for 5.15, 12.11, 13.39(f), and14.15 remain excluded from new priority.
 - The 21.26 search through order2000 and the 19.20 search through order511 are complete. Exact ID coverage and all completion records pass.
 - **19.20 complete:** all91,774 nonabelian groups through order511, zero equality cases and469 reverse inequalities. All356 jobs in the latest extension completed;514 omitted abelian IDs were independently reconstructed and matched exactly. The initial493 abelian equality controls remain retained. The arbitrary-group equality question is unresolved.
-- **20.100 n=7 active:** at10:40 UTC the verified generator has reached39,160,000 visited states, with peak RSS about20.7GiB. No completed n=7 certificate or proof is claimed.
+- **20.100 n=7 active:** at11:06 UTC the verified generator has reached42,710,000 visited states, with peak RSS about21.8GiB. No completed n=7 certificate or proof is claimed.
 - **4.55 exploratory screen complete:** all2,750 installed table names and7,573 available modular cases are covered by two disjoint audited ranges. Flags remain exploratory; the separate3.A7 proof supplies the candidate resolution.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 - **14.2 restricted searches complete:** 16,146,897 rational pairs give682 integral swaps, all monomial;21,646 degree-changing permutations in249 individual conductor blocks give no integral maps. Independent matrix and actual-group controls pass. General question unresolved.
@@ -19,6 +19,14 @@ has trivial three-point stabilizers and torsion-free two-point
 stabilizers, and its absence of Klein four subgroups excludes the
 proposed projective linear groups. Full source read and exact deduction
 written; excluded from the new-candidate count.
+
+**14.67:** Proved the prime minimal-class-size case for arbitrary finite
+groups, with internal logical audit. The bounded search covers every
+group through order511:721 centreless groups,14,500 eligible classes,
+29,989 overgroups and zero counterexamples; the other cases have
+nontrivial centre. Independent controls cover67,289 literal subgroup
+cases. General question and novelty remain unresolved. See
+`research/14.67-prime-class.md` and `research/14.67-review.md`.
 
 ## Candidate proofs
 
@@ -147,9 +155,9 @@ general conjecture at each fixed n reduces to finite abelian groups, with
 counterexample order bounded by p_n*n^(n-1). Exact
 finite certificates now prove the all-group cases n=4,5,6: independent GAP
 Smith-normal-form checks verify227,10,493 and265,104 nodes, with a total
-of19,524,681 relation implications. The n=7 continuation stopped at its time bound with26,317,076 closed nodes, preserved and fully read as an incomplete gzip. A further continuation started at08:40 UTC with a60-million-state /18,000-second bound and is loading that prefix. The full arbitrary-n
+of19,524,681 relation implications. The earlier n=7 continuation stopped with26,317,076 closed nodes, preserved as an audited incomplete gzip. The08:40 UTC continuation finished loading that prefix and is actively generating new nodes; see the timestamped live count above. The full arbitrary-n
 conjecture and novelty remain open. See `research/20.100-reduction.md` and
-`research/20.100-review.md`; complete-candidate count is20 from the separately resolved entries.
+`research/20.100-review.md`; complete-candidate count is21 from the separately resolved entries.
 
 **20.108(c):** Caranti--Tsang2023 Theorem1.1 already gives a group of order3^10 with GL4(3) inside T(G), hence prime divisor5 outside p(p-1)=6. Prior affirmative result, excluded from new priority; see `research/20.108c-known-consequence.md`. This corrects our earlier provisional status for(c).
 

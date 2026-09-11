@@ -1,0 +1,20 @@
+{
+  "status": "EXITED_PENDING_AUDIT",
+  "started_utc": "2026-09-11T10:56:25.247109+00:00",
+  "seconds_bound": 3600,
+  "first_order": 2,
+  "last_order": 511,
+  "command": [
+    "/project/bin/gap",
+    "/project/scripts/search_14_67.g"
+  ],
+  "output": "/project/results/14.67-search.log",
+  "source_sha256": {
+    "scripts/run_14_67.py": "23846a3bed6d297e97b343ca8c5fdf62be539c07ff7904a13d59120fe1bfe001",
+    "scripts/search_14_67.g": "0aadc55630a3cb53f71f348364c22e86fd01571d2b6e3c64642748dff2b48ca4",
+    "scripts/lib_14_67.g": "d2dd5b6eed5bdd6fc0743879fbc9c1bd54db23ac84ee67567413ab33c80f77b4"
+  },
+  "pid": 75473,
+  "returncode": 0,
+  "ended_utc": "2026-09-11T10:57:59.180821+00:00"
+}

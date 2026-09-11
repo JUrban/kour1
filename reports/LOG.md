@@ -1040,3 +1040,29 @@ four subgroup give a negative answer. This is credited prior work and
 the new-candidate count stays21. Beginning14.67 structural reduction
 and a bounded exact search; no general resolution is claimed.
 All work remains local, with no push or outside communication.
+
+## 2026-09-11T11:07:14.465738+00:00 — Prime-class theorem and completed14.67 search
+
+The14.67 search exited zero at10:57:59 UTC. Its independent catalogue
+and final coverage audit pass:92,803 nontrivial groups through511,
+58,967 prime-power cases covered theoretically,33,836 other IDs
+processed, including721 centreless groups. All14,500 eligible classes
+and29,989 overgroups pass. Independent direct controls exited zero:
+147 groups,1,966 element classes,67,289 literal subgroup cases,
+1,321 positive and645 negative predicate controls.
+
+A complete partial theorem now proves14.67 whenever the minimum
+nonidentity class size is prime, without a solubility hypothesis.
+The proof uses a cyclic regular conjugacy action, an outer-automorphism
+argument and a last-vector calculation in characteristic r. The exact
+hypotheses and eleven logical checkpoints were audited. Moretó2023
+already states a related soluble prime case in its primary abstract;
+its full proof was unavailable, so no novelty or new complete candidate
+is asserted. The complete new-candidate count remains21.
+
+At11:06 UTC the20.100 n=7 generator remains verified live with
+42,710,000 visited states and about21.8GiB peak RSS.
+No n=7 proof or completed certificate is claimed. Next work should
+prefer structural composite-class arguments or other unresolved entries
+over repeating completed small catalogues. All artifacts and commits
+remain local. The48-hour goal is active, ending2026-09-12 20:56:46 UTC.

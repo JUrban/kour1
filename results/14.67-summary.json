@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETE_BOUNDED_SEARCH",
+  "observed_utc": "2026-09-11T11:07:15.158321+00:00",
+  "first_order": 2,
+  "last_order": 511,
+  "gap_version": "4.16.1",
+  "search": {
+    "catalogue": 92803,
+    "prime_power_skipped": 58967,
+    "enumerated": 33836,
+    "centre_skipped": 33115,
+    "checked": 721,
+    "eligible_classes": 14500,
+    "overgroups": 29989,
+    "hits": 0
+  },
+  "independent_controls": {
+    "groups": 147,
+    "element_classes": 1966,
+    "literal_subgroup_cases": 67289,
+    "positive": 1321,
+    "negative": 645,
+    "eligible_failures": 0
+  },
+  "prime_class_groups": 625,
+  "prime_class_eligible_classes": 13718,
+  "composite_class_groups": 96,
+  "sha256": {
+    "scripts/lib_14_67.g": "d2dd5b6eed5bdd6fc0743879fbc9c1bd54db23ac84ee67567413ab33c80f77b4",
+    "scripts/search_14_67.g": "0aadc55630a3cb53f71f348364c22e86fd01571d2b6e3c64642748dff2b48ca4",
+    "scripts/verify_14_67.g": "ad90b4cd2e0c546d15ba17854b2633bdb80908daedbc0fe37ccf363d9078f735",
+    "scripts/run_14_67.py": "23846a3bed6d297e97b343ca8c5fdf62be539c07ff7904a13d59120fe1bfe001",
+    "scripts/catalogue_14_67.g": "e3d51dde7db120865cabef0c5845b80230c9da6dfe01caa2ad08ec82411c22cd",
+    "scripts/summarize_14_67.py": "2032304ee04dfc5e8bb527a054affbe892fbc1597b5a9c68e0f0b1af175b2875",
+    "results/14.67-search.log": "eaf9f0860a5ad90f579b2e9ef4cb62153236f8be7a58edffdcd448acd8891fab",
+    "results/14.67-controls.log": "f2f976e4ff4e045638fdb0c40eec9df797a6c3f3db637e5bb5fbc7ddf2bc7b57",
+    "results/14.67-catalogue.log": "6e3d1631baeb07881777be75d86a84f68c80b266a679bfd76ab08a47e6349fd8",
+    "results/14.67-runner.log": "1153698e7b1548efeaeda0f4117266699b438c01ec55816beeffea4f47eb5f27",
+    "state/14.67-search.json": "1153698e7b1548efeaeda0f4117266699b438c01ec55816beeffea4f47eb5f27",
+    "bin/gap": "02e405c0f80821b91bb0da7b3d43f611c7faca424f8c9ea760dfb5222d975a2d",
+    "research/14.67-search-plan.md": "03bfe0669d39b0f03e200d6a7134d157a5458d4e2a4a9f79fef5d84c563688fc",
+    "research/14.67-prime-class.md": "6e1d919964abc21d5d6b60ee08ca839c328307643d99fa499dcaf8dec72429a5",
+    "research/14.67-review.md": "85bdc2835d56638ca8a815ab02b299103b55f3bbd6780d869dfdcc3a1221af29",
+    "references/cache/notebook-page79.png": "2a3cac635be825ac8559f5bf8eca8f971805a96ae2aaa76e2c28e4b9c864a7da"
+  },
+  "limitation": "All groups through511 satisfy the assertion, with nontrivial-centre cases covered theoretically. General question and novelty unresolved. A separate all-group prime-class-size proof is retained as a partial theorem."
+}

@@ -598,3 +598,16 @@ The absence of Klein four subgroups excludes every PGL2(K) in
 characteristic two except S3, excluded by infinitude. The external
 sharply2-transitive theorem in Corollary2.3 is unnecessary here and
 was not audited. Supplied page78 visually checked; no new priority.
+
+## Problem 14.67
+
+Moretó, *Conjugacy classes of small size in solvable groups*,
+Communications in Algebra51(2023),3051–3055,
+https://doi.org/10.1080/00927872.2023.2176510 . Primary publisher
+abstract, author publication list and institutional metadata read.
+The abstract states the soluble prime-class case and a chief-rank-two
+case; the full proof and Example2.6 were not accessible or audited.
+The separate14.67-prime-class.md proof covers arbitrary finite groups
+under the exact prime minimal-class-size hypothesis, with no assertion
+of novelty or of extending the precise full scope of that unread paper.
+The supplied Notebook page79 was visually checked.
