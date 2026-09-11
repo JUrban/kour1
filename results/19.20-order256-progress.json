@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-11T04:46:20.516534+00:00",
+  "observed_utc": "2026-09-11T06:05:06.014179+00:00",
   "workers": [
     {
       "low": 1,
@@ -135,7 +135,7 @@
       "pid": 12152,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 1790,
+      "counted": 2373,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -143,55 +143,55 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 29838
+      "last_counted_id": 30421
     },
     {
       "low": 31555,
       "high": 35060,
       "pid": 12156,
-      "live_gap": true,
-      "stdout_matches_range_log": true,
-      "counted": 3147,
+      "live_gap": false,
+      "stdout_matches_range_log": false,
+      "counted": 3506,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
-      "done": false,
-      "last_counted_id": 34701
+      "done": true,
+      "last_counted_id": 35060
     },
     {
       "low": 35061,
       "high": 38566,
       "pid": 12159,
-      "live_gap": true,
-      "stdout_matches_range_log": true,
-      "counted": 3127,
+      "live_gap": false,
+      "stdout_matches_range_log": false,
+      "counted": 3506,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
-      "done": false,
-      "last_counted_id": 38187
+      "done": true,
+      "last_counted_id": 38566
     },
     {
       "low": 38567,
       "high": 42072,
       "pid": 12160,
-      "live_gap": true,
-      "stdout_matches_range_log": true,
-      "counted": 3193,
+      "live_gap": false,
+      "stdout_matches_range_log": false,
+      "counted": 3506,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
-      "done": false,
-      "last_counted_id": 41759
+      "done": true,
+      "last_counted_id": 42072
     },
     {
       "low": 42073,
@@ -199,7 +199,7 @@
       "pid": 12166,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 2544,
+      "counted": 3228,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
@@ -207,39 +207,39 @@
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 44616
+      "last_counted_id": 45300
     },
     {
       "low": 45579,
       "high": 49084,
       "pid": 12172,
-      "live_gap": true,
-      "stdout_matches_range_log": true,
-      "counted": 3341,
+      "live_gap": false,
+      "stdout_matches_range_log": false,
+      "counted": 3506,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
-      "done": false,
-      "last_counted_id": 48919
+      "done": true,
+      "last_counted_id": 49084
     },
     {
       "low": 49085,
       "high": 52590,
       "pid": 12171,
-      "live_gap": true,
-      "stdout_matches_range_log": true,
-      "counted": 3322,
+      "live_gap": false,
+      "stdout_matches_range_log": false,
+      "counted": 3506,
       "equalities": 0,
       "reversals": 0,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
-      "done": false,
-      "last_counted_id": 52406
+      "done": true,
+      "last_counted_id": 52590
     },
     {
       "low": 52591,
@@ -247,21 +247,21 @@
       "pid": 12174,
       "live_gap": true,
       "stdout_matches_range_log": true,
-      "counted": 3136,
+      "counted": 3396,
       "equalities": 0,
-      "reversals": 139,
+      "reversals": 303,
       "all_ids_in_range": true,
       "unique_ids": true,
       "counts_well_formed": true,
       "errors": false,
       "done": false,
-      "last_counted_id": 55729
+      "last_counted_id": 55989
     }
   ],
-  "total_counted": 51632,
+  "total_counted": 54559,
   "total_equalities": 0,
-  "total_reversals": 143,
-  "live_workers": 8,
-  "completed_workers": 8,
+  "total_reversals": 307,
+  "live_workers": 3,
+  "completed_workers": 13,
   "all_log_checks_pass": true
 }

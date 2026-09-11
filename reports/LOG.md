@@ -608,3 +608,18 @@ checker also rejects a deliberately false equality leaf.
 arbitrary finite extensions or finite amalgams. At05:34:26UTC the19.20
 order256 search has54,018 counts,0 equalities,238 reverse inequalities,
 3 verified live workers and13 completed ranges; all checks PASS.
+
+## 2026-09-11T06:05:06Z — Independent all-group certificate for20.100 at n=6 passes
+
+The GAP verifier has completed:265,104 nodes,48,758 forced-equality leaves,
+3,245,190 branches and19,094,383 relation implications, with1,113,806 CPU
+milliseconds. The saved summary rechecks the complete gzip, node count,
+footer, compressed hash, uncompressed hash and final verifier counts.
+The all-group cases n=4,5,6 are now certified; the full arbitrary-n problem
+remains open, and complete-problem candidate count remains15.
+
+The n=7 generator is still live (PID43634, command and stdout checked),
+with5,790,000 states at observation and its original10-million-state and
+two-hour bounds. No incomplete certificate is counted or staged.
+The19.20 order256 snapshot has54,559 counts,0 equalities,307 reversals,
+3 verified live workers and13 completed ranges; all log checks pass.
