@@ -1731,3 +1731,20 @@ No new candidate number is added:31 now covers the whole question.
 Priority and independent review remain pending. At19:50 UTC all six
 n=7 workers remain live, with17,150,000 verified nodes and24,160,500KiB
 combined RSS. No shard is complete and no n=7 proof is claimed.
+
+
+## 2026-09-11T20:20:11.627590+00:00 — A separating-kernel route for15.92
+
+A general bounded-support criterion now has an internal proof: a fixed
+nontrivial word of uniformly bounded support in alternating quotients of
+unbounded degree forces continuum many nonisomorphic quotients residually
+finite alternating. The argument uses a marked limit, a finitary normal
+closure, elementary finite-subgroup averaging, and recursive kernel
+witnesses. It does not infer normal-kernel independence from the number
+of maximal subgroups. The conditional periodic-chain route is retained.
+
+Conder's1980 Oxford thesis has just been obtained and its Chapter5 may
+supply a fixed11- or13-cycle word for every triangle parameter. Source
+auditing is in progress; no new complete candidate is counted yet. The
+20:12 UTC certificate snapshot verifies six live workers and17,790,000
+checked nodes, with no completed shard. All work remains local.
