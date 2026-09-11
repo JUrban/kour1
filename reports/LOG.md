@@ -439,3 +439,14 @@ All five exact group-ring control batches and all 27 GAP matrix controls
 pass. Proof and internal audit committed; novelty and outside review
 remain open. Order256 search snapshot: 42,348 counted, zero equalities,
 85 reversals, 12 live and four complete ranges, all log checks PASS.
+
+## 2026-09-11T03:04:53.609296+00:00 — Thirteenth candidate: both parts of 18.92
+
+A family of formations indexed by finite prime sets plus all primes
+has only its bottom compact, hence is not algebraic. A five-member
+family indexed by selected prime sets gives N5. The exact internal-join
+convention was checked visually in the Notebook and in a primary
+formation-theory source. All32 finite subfamilies and65 modular-law
+cases checked, with the one intended failure and1,296 positive Boolean
+controls. Complete proofs and internal audit; novelty and outside
+review remain open.

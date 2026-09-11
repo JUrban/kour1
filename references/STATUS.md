@@ -369,3 +369,14 @@ unaudited and unused. Neumann's original 1949 publisher PDF returned
 403; metadata only checked. The exact candidate and limited English/
 Russian novelty search are documented in research/18.76-review.md.
 No prior exact resolution located; novelty remains unconfirmed.
+
+## Problem 18.92
+
+Printed page128 visually checked. Tsarev--Kukharev institutional
+preprint, https://elib.sfu-kras.ru/bitstream/handle/2311/142250/preprint-3.pdf?isAllowed=y&sequence=1 ,
+Definition1.1 and Section2.2 read, confirming quotient/subdirect
+closure and joins internal to the chosen complete family. PDF/text
+cached. The later composition-formation proof is unaudited and unused.
+Exact-number and broader English/Russian searches found no earlier
+exact answer; novelty remains unconfirmed. Elementary prime-set
+examples and limitations are in research/18.92-proof.md and review.
