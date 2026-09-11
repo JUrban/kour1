@@ -547,3 +547,18 @@ August2026 preprint were read. Its claim addresses a corrected
 prescription. The main closure proof and the final published version
 of the original construction remain unaudited. See
 research/21.123-prior-claim.md for exact sources and caveats.
+
+## Problems14.2 and14.3
+
+Hertweck, *Isomorphisms between centers of integral group rings*,
+https://arxiv.org/abs/math/0612436v1 , DOI10.1090/S0002-9939-08-09252-6:
+abstract, introduction, Lemma1, Lemmas4--5, and Section3 through Remark8
+read, including the class-sum correspondence proof. Nilpotent proof not
+audited. The exact restricted search and its limits are in14.2-search-plan.md.
+
+Bakshi--Maheshwary--Passi, *Group rings and the RS-property*,
+https://arxiv.org/abs/1805.08965v1 , DOI10.1080/00927872.2018.1498876:
+introduction, complete Theorem13 statement and proof, and Corollary14
+read. Its norm exact sequence is weaker than14.3. Remaining proof not
+audited. Exact square obstruction and partial positive cases are in
+14.3-reduction.md. Supplied Notebook page72 contains both questions.

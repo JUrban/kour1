@@ -1,0 +1,48 @@
+{
+  "status": "COMPLETE_RESTRICTED_SWAP_AND_BLOCK_SCREENS",
+  "gap_version": "4.16.1",
+  "ctbllib_version": "1.3.11",
+  "swaps": {
+    "tables": 2750,
+    "rational_rows": 148739,
+    "pairs": 16146897,
+    "conductor_matched": 465670,
+    "integral_swaps": 682,
+    "nonmonomial": 0
+  },
+  "independent_controls": {
+    "groups": 10,
+    "element_products": 33572,
+    "pairs": 76,
+    "integral_swaps": 19,
+    "nonintegral_swaps": 57,
+    "multiplicativity_checks": 503
+  },
+  "blocks": {
+    "tables": 2750,
+    "blocks": 249,
+    "tested": 21646,
+    "integral": 0,
+    "nonmonomial": 0
+  },
+  "independent_block_controls": {
+    "groups": 3,
+    "tested": 174,
+    "integral": 9,
+    "nonintegral": 165,
+    "degree_changed": 0
+  },
+  "sha256": {
+    "scripts/search_14_2.g": "5f3087023edd8b6a885b9eb7563f4098034b712fa903ff374625e56ab4c09d88",
+    "scripts/verify_14_2.g": "0a021af3d70ad1114ffb7b9d2fff923e0cd12fdec6fcb9c58141fff6070e8d1c",
+    "results/14.2-rational-swaps.log": "9f152a66381192bff345d101cbc859620dda693ff58534e8785d160647ae1a6f",
+    "results/14.2-controls.log": "5dc592761ab1dd17cc84412a591f4d36ae74609a2e1e689266fa7fee696a41b4",
+    "results/14.2-table-manifest.log": "2fbd5098e4f69670600eeef41255596983e387a492db95265f72919266f98a96",
+    "references/cache/hertweck-centres-2006.pdf": "b53ea6602fae44c971b5a1923f33d7766abcbb79f1b9ca5c233c7c8bf5421c04",
+    "results/14.2-blocks.log": "a3c5a1f15d66d7054fcaa0801efd5bee3f1197348202327b3fc24a674683f041",
+    "results/14.2-block-controls.log": "e308568b0a2a03a5bdc3dcd0f0d309f657d88f09bf959ffd2d0be685cb1ba506",
+    "scripts/search_14_2_blocks.g": "5067dddff61506feacc80ac8aa86671b227d238345f74ba67bae6c30ddd7e4a6",
+    "scripts/verify_14_2_blocks.g": "a7bedcdb650cf49f475ec9f285719d64e9aa792c728544e4cb0a3a70d782c5e5"
+  },
+  "limitation": "Only rational idempotent transpositions and, if reported, degree-changing permutations within one mixed-degree conductor block of size at most six in tables with at most 100 classes. Coordinated changes in different blocks and nonrational components are not covered. Table names can represent isomorphic groups. No general solution or novelty claim."
+}

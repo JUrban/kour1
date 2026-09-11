@@ -1,9 +1,11 @@
 # Candidate portfolio
 
-Updated 2026-09-11T09:50:04.026747+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T10:13:21.687327+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 14.2 | Integral permutations of rational primitive central idempotents. | Complete restricted pair and single-block screens on2,750 table names: no nonmonomial map. Full coverage audit and independent controls pass; general conjecture unresolved. |
+| 14.3 | Detect nonsquare central values of u(u*)^-1 using real characters and parity of conjugacy classes. | Exact obstruction and nilpotent positive case proved without novelty claim. Real-character table screen in progress; flags are not units or counterexamples. |
 | 13.39(f) | Apply Brady--Ciobanu--Martino--O Rourke's power-equation theorem to fourth roots. | Negative prior-theorem consequence for every nonabelian free Q-group; the rank-one exception and all theorem hypotheses are explicit. Other subparts untouched. |
 | 5.15 | Transfer non-primitive-recursive decision complexity using Kharlampovich--Myasnikov--Sapir Theorem 4.21. | Affirmative prior-theorem consequence; reduction and diagonal-set argument written. Excluded from new priority. |
 | 12.11 | Apply Fima--Le Maître--Moon--Stalder Proposition 8.33 to a countable tree-group amalgam. | Negative prior-theorem consequence even with both edge indices three; exact common-normal-subgroup condition checked. Excluded from new priority. |

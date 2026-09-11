@@ -941,3 +941,28 @@ locally; live and incomplete certificates remain explicitly unproved.
 
 No push or outside communication. The48-hour research goal remains active
 until2026-09-12 20:56:46 UTC.
+
+## 2026-09-11T10:13:21.687327+00:00 — Completed integral-centre screens and square-obstruction analysis
+
+For14.2, all2,750 named tables and16,146,897 rational-character pairs
+were screened;682 integral swaps are all monomial. The single-block
+extension covers249 mixed-degree conductor blocks and21,646 degree-changing
+permutations, with no integral maps. Both processes exited zero. Independent
+full-matrix inversion controls and503 actual class-product checks pass.
+The complete ordered manifest, totals, scripts and raw-log hashes are
+audited. These restricted exclusions do not solve the general problem.
+
+For14.3, the exact obstruction is q(u)=u(u*)^-1 modulo squares of Z(G).
+A real-character condition and an odd-conjugacy-class square-root condition
+are proved. The latter gives finite nilpotent groups as a positive subclass,
+without a novelty assertion. The primary2018 RS-property paper proves the
+weaker norm exact sequence; its Theorem13 proof was fully read, and it is
+not misclassified as the requested factorization. The table screen remains
+in progress. The complete-candidate count stays21.
+
+At10:12 UTC,19.20 has348/356 completed jobs,28,081 nonabelian counts,
+511 abelian skips, zero equality hits and33 reversals; eight workers remain
+verified live. The20.100 n=7 generator has35.16million visited states and
+about19.5GiB RSS, with no complete certificate. Both provenance audits pass.
+All work stays local; no push or outside communication. Goal deadline
+remains2026-09-12 20:56:46 UTC.
