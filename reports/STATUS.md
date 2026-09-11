@@ -84,6 +84,8 @@ and automorphism order. Five smaller controls also agree. None of the
 
 ## Additional constructions and exclusions
 
+**18.111:** Frigerio--Sisto2023 Theorem1.2 gives the exact prior negative answer with a finitely generated example. Introductory statement and conventions read; full proof unaudited. See `research/18.111-known-resolution.md`; excluded from new-result priority.
+
 **18.18:** A common-centralizer interpretation proves that the cofinite
 theory of finite groups is not computably enumerable. The question
 about its complement remains unresolved here. Partial result only,

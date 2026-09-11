@@ -380,3 +380,19 @@ cached. The later composition-formation proof is unaudited and unused.
 Exact-number and broader English/Russian searches found no earlier
 exact answer; novelty remains unconfirmed. Elementary prime-set
 examples and limitations are in research/18.92-proof.md and review.
+
+## Problems18.77,18.87,18.111
+
+18.77: Passman primary author-hosted charprob.pdf, Definition1.1,
+Lemmas1.2–1.3, Problem1.4, and Proposition1.5 statement read. The e=1,2
+positive cases are prior results; e>=p counterexamples are described.
+No general resolution imported; details in the current triage note.
+
+18.87: only primary arXiv abstracts2303.13240 and2309.09096 read.
+Their solvable subclasses and obstructions within metabelian groups
+do not settle the whole Notebook question.
+
+18.111: Frigerio--Sisto2023 primary Theorem1.2 and introductory
+conventions give the exact prior negative answer. Full proof remains
+unaudited. Ascari--Milizia2207.03972 primary abstract only read.
+See research/18.111-known-resolution.md for precise reading scope.
