@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETE_COMBINED_CRITERION_SCREEN",
+  "tables": 2750,
+  "real_criterion_passed": 2739,
+  "real_criterion_flags": {
+    "4.A6.2_3": [
+      2
+    ],
+    "12.A6.2_3": [
+      4,
+      5,
+      6
+    ],
+    "2F4(2)'.2N2": [
+      2
+    ],
+    "P1/G2/L1/V1/ext4": [
+      35
+    ],
+    "P1/G2/L1/V2/ext4": [
+      35
+    ],
+    "4.L2(25).2_3": [
+      3
+    ],
+    "4.L2(49).2_3": [
+      3
+    ],
+    "4.L2(81).2_3": [
+      3
+    ],
+    "4.L2(81).4_2": [
+      2
+    ],
+    "2.[2^9]:5:4": [
+      2
+    ],
+    "M11N2": [
+      2
+    ]
+  },
+  "odd_root_rejections": 13,
+  "combined_surviving_elements": 0,
+  "independent_controls": {
+    "groups": 19,
+    "indicator_checks": 187,
+    "nonsquares": 84,
+    "real_rejected": 81,
+    "odd_root_rejected": 3,
+    "surviving_elements": 0
+  },
+  "sha256": {
+    "results/14.3-real-character-screen.log": "660cbaa077787ebe802ac7f9d8f2d84178a423ee1602d26dbcac98f753b57479",
+    "results/14.3-refinement.log": "cdadfcf54712a59409da9ec6230f4835214dcb8603b9604a662978a4cd8431ce",
+    "results/14.3-controls.log": "39a590b778d1700e5df51e3a5699f75b9fa5f8ebe7c85def4f76a93ba43b3517",
+    "scripts/screen_14_3.g": "67bfe535c123bdfe9856bf40c9e0cfba8ebdd7537c7855bca93db52fb9b3752d",
+    "scripts/refine_14_3.g": "9558bb5b5fd963100a12a5655e2853f82e246a180199c35b5d9b7c7534189c46",
+    "scripts/verify_14_3.g": "e564c54c20057a083eb95a279ae6fe46af9d74cecd55c6f101d8f6066cb1f180",
+    "references/cache/bakshi-maheshwary-passi-rs-2018.pdf": "de0832a3ea292e3537744dde80c926257fb9cb74aa71bde0dadcdaf121585397",
+    "research/14.3-reduction.md": "fa0f599f08c58e23b14b8d9b1ddbeceeb01cda3d01e8801922a25b578f0a98a6"
+  },
+  "limitation": "The proved necessary conditions imply the desired factorization for the finite groups represented by these table names. Tables may duplicate isomorphism types. No arbitrary-group conclusion or novelty claim; this is not enumeration of central units."
+}

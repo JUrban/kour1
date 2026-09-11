@@ -562,3 +562,27 @@ introduction, complete Theorem13 statement and proof, and Corollary14
 read. Its norm exact sequence is weaker than14.3. Remaining proof not
 audited. Exact square obstruction and partial positive cases are in
 14.3-reduction.md. Supplied Notebook page72 contains both questions.
+
+## Problem14.15
+
+Genevois--Horbez, https://arxiv.org/abs/2002.01388 , DOI10.1112/topo.12203:
+abstract, introductory discussion, Theorem1.1 and Corollary1.2 read;
+full geometric proof unaudited. Bestvina--Bromberg--Fujiwara,
+https://msp.org/agt/2019/19-1/agt-v19-n1-p12-s.pdf ,
+DOI10.2140/agt.2019.19.477: definitions, Theorems1.1,1.3,2.1,2.2
+and full proof of1.3 read. Imported extension machinery unaudited.
+The exact fixed-rank implication is in14.15-prior-result.md; excluded
+from new priority. Supplied page74 visually checked.
+
+## Problem14.24: rank-uniform reading only
+
+The official Notebook-hosted28August2026 note
+https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/08/kourovka_14_23_uniform_counterexample.pdf
+was read in full (three pages). Supplied page75 credits it to
+O.Kharlampovich; the source PDF itself has no author line. From its
+family,14.24-uniform.md derives an exact minimal conjugator norm r
+for input norms3 and2 in rank2r-1. No fixed-rank impossibility or
+additional new complete resolution is claimed. The primary abstract
+https://doi.org/10.1093/imrn/rnaf311 was also read; it gives a reduction
+and special cases for Out(F_n), not an imported general Aut(F_n)
+algorithm here. Word and matrix controls are retained.

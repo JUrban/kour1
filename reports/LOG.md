@@ -966,3 +966,28 @@ verified live. The20.100 n=7 generator has35.16million visited states and
 about19.5GiB RSS, with no complete certificate. Both provenance audits pass.
 All work stays local; no push or outside communication. Goal deadline
 remains2026-09-12 20:56:46 UTC.
+
+## 2026-09-11T10:35:54.108802+00:00 — Central-unit criteria and fixed-rank versus uniform distinctions
+
+The14.3 combined criteria are complete on all2,750 named tables.
+Real characters exclude all central nonsquares in2,739 names; all13
+survivors in11 names fail the odd-class square-root test.19 actual-group
+controls,187 independent Frobenius--Schur indicators, and84 central
+nonsquare checks pass. The parity proof also gives every finite group
+with a normal Sylow2-subgroup. General14.3 remains unresolved.
+
+The fixed-rank answer to14.15 is infinity by two published theorems;
+the exact deduction and a quasimorphism lower bound are retained.
+For14.24, the prior14.23 family has a conjugate of norm two and an
+exact minimal conjugator norm r in rank2r-1. This disproves a rank-uniform
+bound, while leaving the fixed-rank question unresolved. All11,172
+GAP generator equations and38 fixed-lattice controls pass. Attribution
+and quantifiers are explicit; the complete new-candidate count stays21.
+
+The19.20 extension is down to two live jobs, with354/356
+completed and29,173 nonabelian counts at10:34 UTC. No equality
+hit has appeared. All514 abelian IDs were reconstructed independently
+from partitions of prime exponents; the final full-coverage checker is
+prepared but must await the last two jobs. The20.100 n=7 generator
+continues with no completed certificate. All actions remain local,
+with no push or outside communication. The48-hour goal remains active.

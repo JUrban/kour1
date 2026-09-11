@@ -177,3 +177,24 @@ on keeping proper stabilizers distinct from the full fixed locus.
   hyperbolic group does not establish that its kernel is free. Iterating
   extensions with free kernels also does not establish a free total kernel.
   No such step is asserted here.
+
+## Additional14th-Issue checks,10:15--10:30 UTC
+
+- **14.15:** Exact prior-theorem deduction now retained in14.15-prior-result.md:
+  all fixed-rank commutator-width suprema are infinite. The geometry and
+  extension theorems are imported with explicit reading limits.
+- **14.5:** Peng's primary author manuscript atarXiv:2310.08269 was
+  downloaded; introduction and Theorems1.1--1.3 read. Its already-noted
+  resolutions are14.4(b) and14.5(d). Equal cardinalities of arbitrary
+  infinite chains do not follow from the finite Jordan--Hoelder property.
+  No answer to14.5(a),(c) was obtained.
+- **14.26:** The earlier convention warning still applies. An alternating
+  infinite-support sequence in an unrestricted wreath product gives a
+  Klein-bottle subgroup, but this is not an example in a restricted
+  wreath product. No answer is claimed.
+
+- **14.24:** The prior14.23 chain automorphism is conjugate to a norm-two
+  product of Nielsen maps by a prefix basis. Abelian fixed lattices prove
+  the minimum conjugator norm is exactly r in rank2r-1. The full deduction
+  and its rank-quantifier caveat are in14.24-uniform.md. This supplies no
+  contradiction to a rank-dependent recursive bound.
