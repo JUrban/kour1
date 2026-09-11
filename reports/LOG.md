@@ -1618,3 +1618,17 @@ as proof of the unbounded statement or the imported source theorems.
 At18:05:18 UTC all six n=7 workers were live with14,360,000 checked
 nodes and20,175,092KiB combined RSS, zero completed shards. Candidate
 priority and outside review remain pending; all work remains local.
+
+
+## 2026-09-11T18:16:45.760594+00:00 — Coefficient obstruction and evening triage
+
+The literal11.5 assertion fails over Z[sqrt(-5)], with G infinite cyclic.
+An explicit idempotent presents the nonprincipal ideal used in a rank-two
+projective module; evaluation at z=1 and the determinant line prove
+nonfreeness. The printed coefficient assumption was visually checked.
+This classical coefficient obstruction is not added to the30 candidates.
+
+Recorded bounded source checks and obstacles for10.71,11.8,11.19,
+11.23,11.49,11.61,11.63 and11.113 in the evening triage note.
+No special-case centralizer theorem, degree set without multiplicities,
+or associated-graded Lie argument is mistaken for the general target.
