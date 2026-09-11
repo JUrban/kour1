@@ -1032,3 +1032,15 @@ The resulting n>=max(1126,16 log m) deduction has a complete internal
 audit. The weaker interval conjectured in the initial plan is not
 claimed proved. Bounded priority searches found no exact resolution
 but do not establish novelty; this may be a known consequence.
+
+
+## Ordered-group follow-up: 5.25 and 8.24
+
+Bludov--Kopytov--Rhemtulla2009 Example 3.1 explicitly answers 5.25
+negatively. Introduction and the example pp.168--171 read; pp.170--171
+viewed. Formula (17) has an apparent sign misprint relative to (11);
+the local repair is recorded, and omitted module consistency checks
+remain unaudited. No new result is counted. Kopytov2013/2014 announces
+the finitely generated locally indicable finite-rank theorem relevant
+to 8.24. Both pages read and viewed, but no complete proof is given
+in that note. See the respective research reports for primary URLs.

@@ -1886,3 +1886,21 @@ The candidate count is 34, all awaiting outside review. The latest
 n=7 snapshot at 21:52:32 UTC has 20,130,000 checked nodes, six live
 workers and zero completed shards. The 6.47 order-64 bounded jobs
 remain active; timeouts are retained. All work remains local.
+
+
+## 2026-09-11T22:07:50.352443+00:00 — 5.25 exact prior counterexample located
+
+The 2009 Bludov--Kopytov--Rhemtulla paper explicitly answers 5.25.
+Its Example 3.1 gives a totally orderable group of derived length three
+with exponent-two abelianization. The relevant construction and order
+argument were read; omitted module consistency checks remain unaudited.
+A local sign discrepancy in formula (17) was detected visually and
+reconciled with formula (11) and the subsequent square formula.
+
+The earlier metabelian positive proof is retained. The contemplated
+finite-extension lemma is false: a finitely generated nonmetabelian
+subgroup of the example has a metabelian normal subgroup of finite
+index. This is a corrected research direction, not a new candidate.
+Kopytov2013/2014 also announces the finite-generation case relevant
+to 8.24, without a full proof in the two-page note. Candidate count
+remains 34. The 6.47 bounded extension and n=7 verifiers continue.
