@@ -1,0 +1,54 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=300;;END_ORDER:=300;;START_ID:=1;;END_ID:=49;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=300 end=300 start_id=1 end_id=49 skip_abelian=true log_all=true
+ORDER_START order=300 groups=49
+COUNTS id=[ 300, 1 ] end=500 piso=900
+CLOSEST id=[ 300, 1 ] end=500 piso=900 ratio=9/5
+COUNTS id=[ 300, 2 ] end=3756 piso=9900
+COUNTS id=[ 300, 3 ] end=11252 piso=48900
+ABELIAN_SKIPPED id=[ 300, 4 ] reason=known_equality
+COUNTS id=[ 300, 5 ] end=2028 piso=11700
+COUNTS id=[ 300, 6 ] end=5876 piso=38700
+COUNTS id=[ 300, 7 ] end=10816 piso=105600
+COUNTS id=[ 300, 8 ] end=825 piso=1800
+COUNTS id=[ 300, 9 ] end=8112 piso=37200
+COUNTS id=[ 300, 10 ] end=1600 piso=3600
+COUNTS id=[ 300, 11 ] end=23104 piso=169200
+ABELIAN_SKIPPED id=[ 300, 12 ] reason=known_equality
+COUNTS id=[ 300, 13 ] end=1532 piso=18900
+COUNTS id=[ 300, 14 ] end=2652 piso=72300
+COUNTS id=[ 300, 15 ] end=5004 piso=12300
+COUNTS id=[ 300, 16 ] end=900 piso=5100
+COUNTS id=[ 300, 17 ] end=93756 piso=187500
+COUNTS id=[ 300, 18 ] end=12500 piso=22500
+COUNTS id=[ 300, 19 ] end=2300 piso=10500
+COUNTS id=[ 300, 20 ] end=281252 piso=922500
+ABELIAN_SKIPPED id=[ 300, 21 ] reason=known_equality
+COUNTS id=[ 300, 22 ] end=725 piso=34200
+COUNTS id=[ 300, 23 ] end=1676 piso=81300
+COUNTS id=[ 300, 24 ] end=1476 piso=71100
+COUNTS id=[ 300, 25 ] end=2416 piso=156000
+COUNTS id=[ 300, 26 ] end=3184 piso=50400
+COUNTS id=[ 300, 27 ] end=5904 piso=217200
+COUNTS id=[ 300, 28 ] end=600 piso=3600
+COUNTS id=[ 300, 29 ] end=2328 piso=12000
+COUNTS id=[ 300, 30 ] end=47028 piso=187500
+COUNTS id=[ 300, 31 ] end=3828 piso=105900
+COUNTS id=[ 300, 32 ] end=1400 piso=7800
+COUNTS id=[ 300, 33 ] end=6776 piso=49800
+COUNTS id=[ 300, 34 ] end=140876 piso=562500
+COUNTS id=[ 300, 35 ] end=11276 piso=154500
+COUNTS id=[ 300, 36 ] end=9408 piso=130800
+COUNTS id=[ 300, 37 ] end=3200 piso=31800
+COUNTS id=[ 300, 38 ] end=250816 piso=1508400
+COUNTS id=[ 300, 39 ] end=17696 piso=588600
+COUNTS id=[ 300, 40 ] end=14416 piso=217200
+COUNTS id=[ 300, 41 ] end=20016 piso=49200
+COUNTS id=[ 300, 42 ] end=20625 piso=45000
+COUNTS id=[ 300, 43 ] end=20001 piso=78600
+COUNTS id=[ 300, 44 ] end=2400 piso=10800
+COUNTS id=[ 300, 45 ] end=188112 piso=562800
+COUNTS id=[ 300, 46 ] end=40000 piso=90000
+COUNTS id=[ 300, 47 ] end=5200 piso=30000
+COUNTS id=[ 300, 48 ] end=563104 piso=2782800
+ABELIAN_SKIPPED id=[ 300, 49 ] reason=known_equality
+DONE checked=45 abelian=0 hits=0 reversed=0 skipped_abelian=4 closest=[ 300, 1 ] min_ratio=9/5 runtime_ms=15226

@@ -1,0 +1,37 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=270;;END_ORDER:=270;;START_ID:=1;;END_ID:=30;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=270 end=270 start_id=1 end_id=30 skip_abelian=true log_all=true
+ORDER_START order=270 groups=30
+COUNTS id=[ 270, 1 ] end=3650 piso=11070
+CLOSEST id=[ 270, 1 ] end=3650 piso=11070 ratio=1107/365
+COUNTS id=[ 270, 2 ] end=702 piso=1350
+CLOSEST id=[ 270, 2 ] end=702 piso=1350 ratio=25/13
+COUNTS id=[ 270, 3 ] end=18226 piso=98550
+ABELIAN_SKIPPED id=[ 270, 4 ] reason=known_equality
+COUNTS id=[ 270, 5 ] end=6318 piso=12150
+COUNTS id=[ 270, 6 ] end=18954 piso=76950
+COUNTS id=[ 270, 7 ] end=3510 piso=9450
+COUNTS id=[ 270, 8 ] end=1260 piso=4050
+COUNTS id=[ 270, 9 ] end=540 piso=1890
+COUNTS id=[ 270, 10 ] end=1350 piso=16470
+COUNTS id=[ 270, 11 ] end=720 piso=3510
+COUNTS id=[ 270, 12 ] end=6084 piso=26730
+COUNTS id=[ 270, 13 ] end=2052 piso=7290
+COUNTS id=[ 270, 14 ] end=6102 piso=86670
+COUNTS id=[ 270, 15 ] end=3384 piso=24030
+COUNTS id=[ 270, 16 ] end=32810 piso=99630
+COUNTS id=[ 270, 17 ] end=3650 piso=24030
+COUNTS id=[ 270, 18 ] end=164026 piso=886950
+COUNTS id=[ 270, 19 ] end=18226 piso=154710
+ABELIAN_SKIPPED id=[ 270, 20 ] reason=known_equality
+COUNTS id=[ 270, 21 ] end=7290 piso=15390
+COUNTS id=[ 270, 22 ] end=1350 piso=1890
+CLOSEST id=[ 270, 22 ] end=1350 piso=1890 ratio=7/5
+COUNTS id=[ 270, 23 ] end=511758 piso=984150
+COUNTS id=[ 270, 24 ] end=7290 piso=104490
+COUNTS id=[ 270, 25 ] end=18954 piso=153090
+COUNTS id=[ 270, 26 ] end=11070 piso=119070
+COUNTS id=[ 270, 27 ] end=54702 piso=284310
+COUNTS id=[ 270, 28 ] end=2657210 piso=5314410
+COUNTS id=[ 270, 29 ] end=13286026 piso=47042370
+ABELIAN_SKIPPED id=[ 270, 30 ] reason=known_equality
+DONE checked=27 abelian=0 hits=0 reversed=0 skipped_abelian=3 closest=[ 270, 22 ] min_ratio=7/5 runtime_ms=11971

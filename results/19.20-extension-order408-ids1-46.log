@@ -1,0 +1,53 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=408;;END_ORDER:=408;;START_ID:=1;;END_ID:=46;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=408 end=408 start_id=1 end_id=46 skip_abelian=true log_all=true
+ORDER_START order=408 groups=46
+COUNTS id=[ 408, 1 ] end=680 piso=1224
+CLOSEST id=[ 408, 1 ] end=680 piso=1224 ratio=9/5
+COUNTS id=[ 408, 2 ] end=3480 piso=6936
+COUNTS id=[ 408, 3 ] end=10408 piso=33864
+ABELIAN_SKIPPED id=[ 408, 4 ] reason=known_equality
+COUNTS id=[ 408, 5 ] end=1944 piso=8568
+COUNTS id=[ 408, 6 ] end=5544 piso=28968
+COUNTS id=[ 408, 7 ] end=12960 piso=83232
+COUNTS id=[ 408, 8 ] end=18560 piso=83232
+COUNTS id=[ 408, 9 ] end=14976 piso=109344
+COUNTS id=[ 408, 10 ] end=11964 piso=78132
+COUNTS id=[ 408, 11 ] end=19452 piso=156468
+COUNTS id=[ 408, 12 ] end=15364 piso=122196
+COUNTS id=[ 408, 13 ] end=15100 piso=131172
+COUNTS id=[ 408, 14 ] end=561 piso=2244
+COUNTS id=[ 408, 15 ] end=7764 piso=41412
+COUNTS id=[ 408, 16 ] end=7776 piso=27744
+COUNTS id=[ 408, 17 ] end=14700 piso=68340
+COUNTS id=[ 408, 18 ] end=13920 piso=27744
+COUNTS id=[ 408, 19 ] end=7596 piso=29172
+COUNTS id=[ 408, 20 ] end=2108 piso=7140
+COUNTS id=[ 408, 21 ] end=2176 piso=4896
+COUNTS id=[ 408, 22 ] end=3332 piso=11220
+COUNTS id=[ 408, 23 ] end=2720 piso=4896
+COUNTS id=[ 408, 24 ] end=2108 piso=6324
+COUNTS id=[ 408, 25 ] end=21628 piso=176868
+COUNTS id=[ 408, 26 ] end=21632 piso=122400
+COUNTS id=[ 408, 27 ] end=42436 piso=311508
+COUNTS id=[ 408, 28 ] end=41632 piso=135456
+COUNTS id=[ 408, 29 ] end=21436 piso=123828
+ABELIAN_SKIPPED id=[ 408, 30 ] reason=known_equality
+COUNTS id=[ 408, 31 ] end=1836 piso=3060
+CLOSEST id=[ 408, 31 ] end=1836 piso=3060 ratio=5/3
+COUNTS id=[ 408, 32 ] end=1428 piso=2244
+CLOSEST id=[ 408, 32 ] end=1428 piso=2244 ratio=11/7
+COUNTS id=[ 408, 33 ] end=1176 piso=8568
+COUNTS id=[ 408, 34 ] end=3112 piso=25704
+COUNTS id=[ 408, 35 ] end=6272 piso=94656
+COUNTS id=[ 408, 36 ] end=986 piso=7548
+COUNTS id=[ 408, 37 ] end=15610 piso=151164
+COUNTS id=[ 408, 38 ] end=10440 piso=180336
+COUNTS id=[ 408, 39 ] end=4704 piso=32640
+COUNTS id=[ 408, 40 ] end=12448 piso=107712
+COUNTS id=[ 408, 41 ] end=87808 piso=1318656
+COUNTS id=[ 408, 42 ] end=1224 piso=10608
+COUNTS id=[ 408, 43 ] end=75264 piso=443904
+COUNTS id=[ 408, 44 ] end=30464 piso=78336
+COUNTS id=[ 408, 45 ] end=186112 piso=1697280
+ABELIAN_SKIPPED id=[ 408, 46 ] reason=known_equality
+DONE checked=43 abelian=0 hits=0 reversed=0 skipped_abelian=3 closest=[ 408, 32 ] min_ratio=11/7 runtime_ms=13650

@@ -1,0 +1,24 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=405;;END_ORDER:=405;;START_ID:=1;;END_ID:=16;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=405 end=405 start_id=1 end_id=16 skip_abelian=true log_all=true
+ORDER_START order=405 groups=16
+ABELIAN_SKIPPED id=[ 405, 1 ] reason=known_equality
+ABELIAN_SKIPPED id=[ 405, 2 ] reason=known_equality
+COUNTS id=[ 405, 3 ] end=10935 piso=110565
+CLOSEST id=[ 405, 3 ] end=10935 piso=110565 ratio=91/9
+COUNTS id=[ 405, 4 ] end=6075 piso=15795
+CLOSEST id=[ 405, 4 ] end=6075 piso=15795 ratio=13/5
+ABELIAN_SKIPPED id=[ 405, 5 ] reason=known_equality
+COUNTS id=[ 405, 6 ] end=2025 piso=2835
+CLOSEST id=[ 405, 6 ] end=2025 piso=2835 ratio=7/5
+COUNTS id=[ 405, 7 ] end=8505 piso=128385
+COUNTS id=[ 405, 8 ] end=5265 piso=13365
+COUNTS id=[ 405, 9 ] end=14985 piso=58725
+COUNTS id=[ 405, 10 ] end=2835 piso=10125
+ABELIAN_SKIPPED id=[ 405, 11 ] reason=known_equality
+COUNTS id=[ 405, 12 ] end=557685 piso=1782405
+COUNTS id=[ 405, 13 ] end=120285 piso=142155
+CLOSEST id=[ 405, 13 ] end=120285 piso=142155 ratio=13/11
+COUNTS id=[ 405, 14 ] end=20655 piso=42525
+COUNTS id=[ 405, 15 ] end=26245 piso=43098885
+ABELIAN_SKIPPED id=[ 405, 16 ] reason=known_equality
+DONE checked=11 abelian=0 hits=0 reversed=0 skipped_abelian=5 closest=[ 405, 13 ] min_ratio=13/11 runtime_ms=4213

@@ -41,6 +41,9 @@ a complete candidate affirmative proof and an internal review.
   free group needs a proof, especially for infinitely generated R. Arguments
   using finite core graphs or finite-index commensurators do not by themselves
   cover the stated arbitrary subgroup. No normality theorem established.
+  Update at08:18: Tursunbaev's6September2026 preprint now supplies an
+  exact prior affirmative claim. The full proof was read; see
+  `11.124-prior-claim.md`. This lead is excluded from new priority.
 
 For11.116, the decisive observation was to encode every coset of every
 quasicyclic subgroup in one common interval ordering, then retain every

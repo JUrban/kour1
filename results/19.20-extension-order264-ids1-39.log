@@ -1,0 +1,46 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=264;;END_ORDER:=264;;START_ID:=1;;END_ID:=39;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=264 end=264 start_id=1 end_id=39 skip_abelian=true log_all=true
+ORDER_START order=264 groups=39
+COUNTS id=[ 264, 1 ] end=440 piso=792
+CLOSEST id=[ 264, 1 ] end=440 piso=792 ratio=9/5
+COUNTS id=[ 264, 2 ] end=1464 piso=2904
+COUNTS id=[ 264, 3 ] end=4360 piso=13992
+ABELIAN_SKIPPED id=[ 264, 4 ] reason=known_equality
+COUNTS id=[ 264, 5 ] end=5760 piso=34848
+COUNTS id=[ 264, 6 ] end=7808 piso=34848
+COUNTS id=[ 264, 7 ] end=6528 piso=45408
+COUNTS id=[ 264, 8 ] end=5124 piso=33132
+COUNTS id=[ 264, 9 ] end=8364 piso=64812
+COUNTS id=[ 264, 10 ] end=6796 piso=52140
+COUNTS id=[ 264, 11 ] end=6604 piso=54780
+COUNTS id=[ 264, 12 ] end=363 piso=1452
+COUNTS id=[ 264, 13 ] end=3444 piso=17292
+COUNTS id=[ 264, 14 ] end=3456 piso=11616
+COUNTS id=[ 264, 15 ] end=6348 piso=28380
+COUNTS id=[ 264, 16 ] end=5856 piso=11616
+COUNTS id=[ 264, 17 ] end=3348 piso=12540
+COUNTS id=[ 264, 18 ] end=1364 piso=4620
+COUNTS id=[ 264, 19 ] end=1408 piso=3168
+COUNTS id=[ 264, 20 ] end=2156 piso=7260
+COUNTS id=[ 264, 21 ] end=1760 piso=3168
+COUNTS id=[ 264, 22 ] end=1364 piso=4092
+COUNTS id=[ 264, 23 ] end=9244 piso=73260
+COUNTS id=[ 264, 24 ] end=9248 piso=50688
+COUNTS id=[ 264, 25 ] end=17956 piso=128700
+COUNTS id=[ 264, 26 ] end=17440 piso=55968
+COUNTS id=[ 264, 27 ] end=9124 piso=51612
+ABELIAN_SKIPPED id=[ 264, 28 ] reason=known_equality
+COUNTS id=[ 264, 29 ] end=1188 piso=1980
+CLOSEST id=[ 264, 29 ] end=1188 piso=1980 ratio=5/3
+COUNTS id=[ 264, 30 ] end=924 piso=1452
+CLOSEST id=[ 264, 30 ] end=924 piso=1452 ratio=11/7
+COUNTS id=[ 264, 31 ] end=638 piso=4884
+COUNTS id=[ 264, 32 ] end=6538 piso=62964
+COUNTS id=[ 264, 33 ] end=4392 piso=75504
+COUNTS id=[ 264, 34 ] end=42112 piso=552288
+COUNTS id=[ 264, 35 ] end=792 piso=6864
+COUNTS id=[ 264, 36 ] end=36096 piso=185856
+COUNTS id=[ 264, 37 ] end=19712 piso=50688
+COUNTS id=[ 264, 38 ] end=82432 piso=705408
+ABELIAN_SKIPPED id=[ 264, 39 ] reason=known_equality
+DONE checked=36 abelian=0 hits=0 reversed=0 skipped_abelian=3 closest=[ 264, 30 ] min_ratio=11/7 runtime_ms=11169

@@ -1,0 +1,15 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=510;;END_ORDER:=510;;START_ID:=1;;END_ID:=8;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=510 end=510 start_id=1 end_id=8 skip_abelian=true log_all=true
+ORDER_START order=510 groups=8
+COUNTS id=[ 510, 1 ] end=4350 piso=8670
+CLOSEST id=[ 510, 1 ] end=4350 piso=8670 ratio=289/145
+COUNTS id=[ 510, 2 ] end=1326 piso=2550
+CLOSEST id=[ 510, 2 ] end=1326 piso=2550 ratio=25/13
+COUNTS id=[ 510, 3 ] end=21678 piso=75990
+COUNTS id=[ 510, 4 ] end=850 piso=1530
+CLOSEST id=[ 510, 4 ] end=850 piso=1530 ratio=9/5
+COUNTS id=[ 510, 5 ] end=13010 piso=42330
+COUNTS id=[ 510, 6 ] end=3842 piso=11730
+COUNTS id=[ 510, 7 ] end=65026 piso=378930
+ABELIAN_SKIPPED id=[ 510, 8 ] reason=known_equality
+DONE checked=7 abelian=0 hits=0 reversed=0 skipped_abelian=1 closest=[ 510, 4 ] min_ratio=9/5 runtime_ms=3363

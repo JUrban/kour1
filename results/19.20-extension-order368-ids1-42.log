@@ -1,0 +1,48 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=368;;END_ORDER:=368;;START_ID:=1;;END_ID:=42;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=368 end=368 start_id=1 end_id=42 skip_abelian=true log_all=true
+ORDER_START order=368 groups=42
+COUNTS id=[ 368, 1 ] end=4240 piso=8464
+CLOSEST id=[ 368, 1 ] end=4240 piso=8464 ratio=529/265
+ABELIAN_SKIPPED id=[ 368, 2 ] reason=known_equality
+COUNTS id=[ 368, 3 ] end=9216 piso=33856
+COUNTS id=[ 368, 4 ] end=9024 piso=33856
+COUNTS id=[ 368, 5 ] end=17300 piso=83720
+COUNTS id=[ 368, 6 ] end=34596 piso=200008
+COUNTS id=[ 368, 7 ] end=16932 piso=133768
+COUNTS id=[ 368, 8 ] end=16960 piso=33856
+COUNTS id=[ 368, 9 ] end=8496 piso=33856
+COUNTS id=[ 368, 10 ] end=36864 piso=135424
+COUNTS id=[ 368, 11 ] end=9600 piso=93472
+COUNTS id=[ 368, 12 ] end=33888 piso=101568
+COUNTS id=[ 368, 13 ] end=18432 piso=313536
+COUNTS id=[ 368, 14 ] end=13652 piso=74520
+COUNTS id=[ 368, 15 ] end=8500 piso=47288
+COUNTS id=[ 368, 16 ] end=13252 piso=63480
+COUNTS id=[ 368, 17 ] end=8836 piso=56856
+COUNTS id=[ 368, 18 ] end=33920 piso=111136
+ABELIAN_SKIPPED id=[ 368, 19 ] reason=known_equality
+COUNTS id=[ 368, 20 ] end=2944 piso=13984
+COUNTS id=[ 368, 21 ] end=2208 piso=4416
+ABELIAN_SKIPPED id=[ 368, 22 ] reason=known_equality
+COUNTS id=[ 368, 23 ] end=1104 piso=1472
+CLOSEST id=[ 368, 23 ] end=1104 piso=1472 ratio=4/3
+COUNTS id=[ 368, 24 ] end=2300 piso=5704
+COUNTS id=[ 368, 25 ] end=1196 piso=2760
+COUNTS id=[ 368, 26 ] end=828 piso=4232
+COUNTS id=[ 368, 27 ] end=73664 piso=470304
+COUNTS id=[ 368, 28 ] end=85504 piso=541696
+COUNTS id=[ 368, 29 ] end=153152 piso=1276960
+COUNTS id=[ 368, 30 ] end=19936 piso=170016
+COUNTS id=[ 368, 31 ] end=90848 piso=1058368
+COUNTS id=[ 368, 32 ] end=14656 piso=161920
+COUNTS id=[ 368, 33 ] end=37408 piso=365056
+COUNTS id=[ 368, 34 ] end=41408 piso=259072
+COUNTS id=[ 368, 35 ] end=271360 piso=541696
+COUNTS id=[ 368, 36 ] end=78528 piso=467360
+ABELIAN_SKIPPED id=[ 368, 37 ] reason=known_equality
+COUNTS id=[ 368, 38 ] end=25024 piso=46368
+COUNTS id=[ 368, 39 ] end=10304 piso=16928
+COUNTS id=[ 368, 40 ] end=5152 piso=8096
+COUNTS id=[ 368, 41 ] end=3489792 piso=34668544
+ABELIAN_SKIPPED id=[ 368, 42 ] reason=known_equality
+DONE checked=37 abelian=0 hits=0 reversed=0 skipped_abelian=5 closest=[ 368, 23 ] min_ratio=4/3 runtime_ms=9600

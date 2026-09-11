@@ -1,0 +1,22 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=390;;END_ORDER:=390;;START_ID:=1;;END_ID:=12;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=390 end=390 start_id=1 end_id=12 skip_abelian=true log_all=true
+ORDER_START order=390 groups=12
+COUNTS id=[ 390, 1 ] end=1110 piso=6630
+CLOSEST id=[ 390, 1 ] end=1110 piso=6630 ratio=221/37
+COUNTS id=[ 390, 2 ] end=4758 piso=25350
+CLOSEST id=[ 390, 2 ] end=4758 piso=25350 ratio=325/61
+COUNTS id=[ 390, 3 ] end=4902 piso=39390
+COUNTS id=[ 390, 4 ] end=1830 piso=5070
+CLOSEST id=[ 390, 4 ] end=1830 piso=5070 ratio=169/61
+COUNTS id=[ 390, 5 ] end=2550 piso=5070
+CLOSEST id=[ 390, 5 ] end=2550 piso=5070 ratio=169/85
+COUNTS id=[ 390, 6 ] end=1014 piso=1950
+CLOSEST id=[ 390, 6 ] end=1014 piso=1950 ratio=25/13
+COUNTS id=[ 390, 7 ] end=12678 piso=44070
+COUNTS id=[ 390, 8 ] end=650 piso=1170
+CLOSEST id=[ 390, 8 ] end=650 piso=1170 ratio=9/5
+COUNTS id=[ 390, 9 ] end=7610 piso=24570
+COUNTS id=[ 390, 10 ] end=2938 piso=8970
+COUNTS id=[ 390, 11 ] end=38026 piso=219570
+ABELIAN_SKIPPED id=[ 390, 12 ] reason=known_equality
+DONE checked=11 abelian=0 hits=0 reversed=0 skipped_abelian=1 closest=[ 390, 8 ] min_ratio=9/5 runtime_ms=3999

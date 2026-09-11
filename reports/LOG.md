@@ -829,3 +829,28 @@ remains bounded evidence, not a general resolution.
 The n=7 generator for20.100 remains active at21.73million visited states
 in the08:02 snapshot. No n=7 proof is claimed. No pushes or external
 communications; the48-hour goal remains active.
+
+## 2026-09-11T08:19:48.826056+00:00 — New bounded search and prior-work checkpoint
+
+Nineteen complete candidates are committed, including the new21.40
+and21.60 proofs and their audits. The19.20 order256 computation is
+fully aggregated, and all remaining controller logs/state are preserved.
+A new eight-worker search covers the29,700 catalogue groups of orders
+257–511 in356 disjoint jobs, using the unchanged exact counting kernel.
+Each worker has a4GiB workspace cap. The33-hour limit leaves time before
+the overall deadline; incomplete jobs cannot produce a complete summary.
+At08:19 UTC,249 jobs are complete,4,160 nonabelian groups counted,
+457 abelian IDs skipped, and no equality or reversal found. All log,
+source-hash and process-identity checks pass. Completed logs are committed;
+active logs remain local and are not treated as final evidence.
+
+The n=7 generator for20.100 has reached24.16million states at08:19 UTC,
+remaining under its30million-state /7,200-second continuation bound.
+It is still generating. If the bound is reached, preserve the closed
+incomplete prefix and resume as documented; no unchecked n=7 result
+may be promoted to a proof.
+
+A6September2026 preprint gives the exact prior affirmative claim for
+11.124. Its full proof was read, and the earlier recovery lead is now
+excluded from new priority. No outside communications or pushes.
+About36hours37minutes remain in the active48-hour goal.

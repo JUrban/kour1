@@ -1,0 +1,40 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=450;;END_ORDER:=450;;START_ID:=1;;END_ID:=34;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=450 end=450 start_id=1 end_id=34 skip_abelian=true log_all=true
+ORDER_START order=450 groups=34
+COUNTS id=[ 450, 1 ] end=2050 piso=4950
+CLOSEST id=[ 450, 1 ] end=2050 piso=4950 ratio=99/41
+COUNTS id=[ 450, 2 ] end=5634 piso=14850
+COUNTS id=[ 450, 3 ] end=50626 piso=307350
+ABELIAN_SKIPPED id=[ 450, 4 ] reason=known_equality
+COUNTS id=[ 450, 5 ] end=50706 piso=133650
+COUNTS id=[ 450, 6 ] end=900 piso=3150
+COUNTS id=[ 450, 7 ] end=16884 piso=75150
+COUNTS id=[ 450, 8 ] end=18250 piso=36450
+CLOSEST id=[ 450, 8 ] end=18250 piso=36450 ratio=729/365
+COUNTS id=[ 450, 9 ] end=455626 piso=2239650
+ABELIAN_SKIPPED id=[ 450, 10 ] reason=known_equality
+COUNTS id=[ 450, 11 ] end=6886 piso=78750
+COUNTS id=[ 450, 12 ] end=3978 piso=108450
+COUNTS id=[ 450, 13 ] end=7506 piso=18450
+COUNTS id=[ 450, 14 ] end=1350 piso=7650
+COUNTS id=[ 450, 15 ] end=140634 piso=281250
+COUNTS id=[ 450, 16 ] end=51250 piso=123750
+COUNTS id=[ 450, 17 ] end=10150 piso=48150
+COUNTS id=[ 450, 18 ] end=1265626 piso=5793750
+ABELIAN_SKIPPED id=[ 450, 19 ] reason=known_equality
+COUNTS id=[ 450, 20 ] end=2448 piso=80550
+COUNTS id=[ 450, 21 ] end=32806 piso=765450
+COUNTS id=[ 450, 22 ] end=14634 piso=220050
+COUNTS id=[ 450, 23 ] end=15012 piso=107550
+COUNTS id=[ 450, 24 ] end=11628 piso=557550
+COUNTS id=[ 450, 25 ] end=25218 piso=122850
+COUNTS id=[ 450, 26 ] end=12150 piso=68850
+COUNTS id=[ 450, 27 ] end=1265706 piso=2531250
+COUNTS id=[ 450, 28 ] end=22500 piso=78750
+COUNTS id=[ 450, 29 ] end=3600 piso=60750
+COUNTS id=[ 450, 30 ] end=421884 piso=1428750
+COUNTS id=[ 450, 31 ] end=456250 piso=911250
+COUNTS id=[ 450, 32 ] end=91150 piso=360450
+COUNTS id=[ 450, 33 ] end=11390626 piso=42221250
+ABELIAN_SKIPPED id=[ 450, 34 ] reason=known_equality
+DONE checked=30 abelian=0 hits=0 reversed=0 skipped_abelian=4 closest=[ 450, 8 ] min_ratio=729/365 runtime_ms=12679

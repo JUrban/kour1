@@ -1,12 +1,13 @@
 # Current status
 
-Updated: 2026-09-11T08:10:16.295646+00:00.
+Updated: 2026-09-11T08:19:48.826056+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **19**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups), **14.72** (a smooth affine surface with a smooth fixed Cartier divisor but singular cyclic quotient), **21.40** (a normal nilpotent subgroup of finite index in every rational linear group with finitely many automorphism orbits), and **21.60** (an order-twelve counterexample to the semiperfectness criterion). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
 - The 21.26 search through order2000 and the 19.20 search through order256 are complete. Exact ID coverage and all completion records pass.
 - **19.20 complete:** all62,588 nonabelian groups through order256, zero equality hits and411 reverse inequalities. The order256 extension covers56,070 nonabelian groups and has357 reversals; the22 omitted abelian IDs were independently reconstructed and matched exactly. The initial493 abelian equality controls remain retained. The arbitrary-group equality question is unresolved.
+- **19.20 extension active:** orders257–511 have29,700 library groups. At08:19 UTC, eight verified GAP workers have completed249 of356 jobs, with4,160 nonabelian counts,457 abelian skips, zero equalities and zero reversals. All log checks pass. The run has a33-hour bound and remains incomplete.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
@@ -101,6 +102,8 @@ and automorphism order. Five smaller controls also agree. None of the
 
 ## Additional constructions and exclusions
 
+**11.124:** Tursunbaev, arXiv2609.06755v1, submitted6September2026, gives an exact prior affirmative claim. The full preprint was read; imported classical inputs and outside review remain pending. Excluded from new priority; see `research/11.124-prior-claim.md`.
+
 **7.31:** Li--Zhu2024 Theorem1.1 gives the affirmative answer, including
 the full automorphism group. The exact statement and its Section3 proof
 were read; the representation and classification inputs remain unaudited.
@@ -123,7 +126,7 @@ counterexample order bounded by p_n*n^(n-1). Exact
 finite certificates now prove the all-group cases n=4,5,6: independent GAP
 Smith-normal-form checks verify227,10,493 and265,104 nodes, with a total
 of19,524,681 relation implications. The n=7 generator resumed its closed 9,999,993-node incomplete prefix
-and has passed 21.73 million visited states at 08:02 UTC, with explicit bounds. The full arbitrary-n
+and has passed 24.16 million visited states at 08:19 UTC, with explicit bounds. The full arbitrary-n
 conjecture and novelty remain open. See `research/20.100-reduction.md` and
 `research/20.100-review.md`; complete-candidate count is19 from the separately resolved entries.
 

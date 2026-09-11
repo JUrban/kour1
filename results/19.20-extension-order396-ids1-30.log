@@ -1,0 +1,36 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=396;;END_ORDER:=396;;START_ID:=1;;END_ID:=30;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=396 end=396 start_id=1 end_id=30 skip_abelian=true log_all=true
+ORDER_START order=396 groups=30
+COUNTS id=[ 396, 1 ] end=1804 piso=4356
+CLOSEST id=[ 396, 1 ] end=1804 piso=4356 ratio=99/41
+COUNTS id=[ 396, 2 ] end=2196 piso=4356
+CLOSEST id=[ 396, 2 ] end=2196 piso=4356 ratio=121/61
+COUNTS id=[ 396, 3 ] end=19604 piso=87516
+ABELIAN_SKIPPED id=[ 396, 4 ] reason=known_equality
+COUNTS id=[ 396, 5 ] end=14400 piso=171072
+COUNTS id=[ 396, 6 ] end=1089 piso=2376
+COUNTS id=[ 396, 7 ] end=5184 piso=17424
+COUNTS id=[ 396, 8 ] end=4400 piso=16632
+COUNTS id=[ 396, 9 ] end=40000 piso=301752
+ABELIAN_SKIPPED id=[ 396, 10 ] reason=known_equality
+COUNTS id=[ 396, 11 ] end=19764 piso=39204
+COUNTS id=[ 396, 12 ] end=792 piso=2772
+COUNTS id=[ 396, 13 ] end=6552 piso=22572
+COUNTS id=[ 396, 14 ] end=16060 piso=32076
+COUNTS id=[ 396, 15 ] end=176420 piso=637956
+ABELIAN_SKIPPED id=[ 396, 16 ] reason=known_equality
+COUNTS id=[ 396, 17 ] end=1892 piso=19404
+COUNTS id=[ 396, 18 ] end=19612 piso=86724
+COUNTS id=[ 396, 19 ] end=7776 piso=76428
+COUNTS id=[ 396, 20 ] end=107712 piso=920304
+COUNTS id=[ 396, 21 ] end=5324 piso=33264
+COUNTS id=[ 396, 22 ] end=26884 piso=538164
+COUNTS id=[ 396, 23 ] end=22084 piso=231264
+COUNTS id=[ 396, 24 ] end=5643 piso=16632
+COUNTS id=[ 396, 25 ] end=46656 piso=156816
+COUNTS id=[ 396, 26 ] end=2376 piso=7128
+COUNTS id=[ 396, 27 ] end=13896 piso=78408
+COUNTS id=[ 396, 28 ] end=32912 piso=96624
+COUNTS id=[ 396, 29 ] end=353632 piso=1949904
+ABELIAN_SKIPPED id=[ 396, 30 ] reason=known_equality
+DONE checked=26 abelian=0 hits=0 reversed=0 skipped_abelian=4 closest=[ 396, 2 ] min_ratio=121/61 runtime_ms=10712

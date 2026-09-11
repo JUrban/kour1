@@ -1,0 +1,47 @@
+{"command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "4g", "-c", "START_ORDER:=280;;END_ORDER:=280;;START_ID:=1;;END_ID:=40;;SKIP_ABELIAN:=true;;LOG_ALL:=true;;", "/project/scripts/search_19_20.g"], "source_hashes": {"scripts/search_19_20.g": "7b6a34e9163b58b0248b3c464ae8070783414cd7d14048136dd0e3547b906318", "scripts/lib_19_20.g": "fbcf2d3c4b0648cc1fa87d6e50fc923133d594c029b8430a365caf596ac7ccd5"}}
+PARAMETERS start=280 end=280 start_id=1 end_id=40 skip_abelian=true log_all=true
+ORDER_START order=280 groups=40
+COUNTS id=[ 280, 1 ] end=728 piso=1400
+CLOSEST id=[ 280, 1 ] end=728 piso=1400 ratio=25/13
+COUNTS id=[ 280, 2 ] end=1000 piso=1960
+COUNTS id=[ 280, 3 ] end=4904 piso=16520
+ABELIAN_SKIPPED id=[ 280, 4 ] reason=known_equality
+COUNTS id=[ 280, 5 ] end=504 piso=1680
+COUNTS id=[ 280, 6 ] end=2952 piso=13440
+COUNTS id=[ 280, 7 ] end=6656 piso=39200
+COUNTS id=[ 280, 8 ] end=7200 piso=39200
+COUNTS id=[ 280, 9 ] end=6912 piso=52640
+COUNTS id=[ 280, 10 ] end=5436 piso=36820
+COUNTS id=[ 280, 11 ] end=7956 piso=67060
+COUNTS id=[ 280, 12 ] end=7564 piso=63700
+COUNTS id=[ 280, 13 ] end=7004 piso=62020
+COUNTS id=[ 280, 14 ] end=2540 piso=11620
+COUNTS id=[ 280, 15 ] end=2560 piso=7840
+COUNTS id=[ 280, 16 ] end=4500 piso=18900
+COUNTS id=[ 280, 17 ] end=4000 piso=7840
+COUNTS id=[ 280, 18 ] end=2460 piso=8820
+COUNTS id=[ 280, 19 ] end=1988 piso=8260
+COUNTS id=[ 280, 20 ] end=2016 piso=5600
+COUNTS id=[ 280, 21 ] end=3388 piso=13300
+COUNTS id=[ 280, 22 ] end=2912 piso=5600
+COUNTS id=[ 280, 23 ] end=1932 piso=6580
+COUNTS id=[ 280, 24 ] end=10364 piso=85540
+COUNTS id=[ 280, 25 ] end=10368 piso=59360
+COUNTS id=[ 280, 26 ] end=20164 piso=151060
+COUNTS id=[ 280, 27 ] end=19616 piso=66080
+COUNTS id=[ 280, 28 ] end=10236 piso=60340
+ABELIAN_SKIPPED id=[ 280, 29 ] reason=known_equality
+COUNTS id=[ 280, 30 ] end=1260 piso=2100
+CLOSEST id=[ 280, 30 ] end=1260 piso=2100 ratio=5/3
+COUNTS id=[ 280, 31 ] end=980 piso=1540
+CLOSEST id=[ 280, 31 ] end=980 piso=1540 ratio=11/7
+COUNTS id=[ 280, 32 ] end=3584 piso=43400
+COUNTS id=[ 280, 33 ] end=1085 piso=5320
+COUNTS id=[ 280, 34 ] end=1568 piso=6440
+COUNTS id=[ 280, 35 ] end=7904 piso=50120
+COUNTS id=[ 280, 36 ] end=41216 piso=620480
+COUNTS id=[ 280, 37 ] end=29440 piso=125440
+COUNTS id=[ 280, 38 ] end=25088 piso=89600
+COUNTS id=[ 280, 39 ] end=91904 piso=815360
+ABELIAN_SKIPPED id=[ 280, 40 ] reason=known_equality
+DONE checked=37 abelian=0 hits=0 reversed=0 skipped_abelian=3 closest=[ 280, 31 ] min_ratio=11/7 runtime_ms=11932
