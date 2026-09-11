@@ -1,0 +1,694 @@
+{
+  "status": "PASS",
+  "pairs": 85,
+  "cases": 3520,
+  "by_dimension": {
+    "1": 24,
+    "2": 1240,
+    "3": 1171,
+    "4": 932,
+    "5": 153
+  },
+  "coverage": [
+    {
+      "n": 1,
+      "m": 1,
+      "primitive_vectors": 1,
+      "units": 1,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 2,
+      "primitive_vectors": 1,
+      "units": 1,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 3,
+      "primitive_vectors": 2,
+      "units": 2,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 4,
+      "primitive_vectors": 2,
+      "units": 2,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 5,
+      "primitive_vectors": 4,
+      "units": 4,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 6,
+      "primitive_vectors": 2,
+      "units": 2,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 7,
+      "primitive_vectors": 6,
+      "units": 6,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 8,
+      "primitive_vectors": 4,
+      "units": 4,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 9,
+      "primitive_vectors": 6,
+      "units": 6,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 10,
+      "primitive_vectors": 4,
+      "units": 4,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 11,
+      "primitive_vectors": 10,
+      "units": 10,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 12,
+      "primitive_vectors": 4,
+      "units": 4,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 13,
+      "primitive_vectors": 12,
+      "units": 12,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 14,
+      "primitive_vectors": 6,
+      "units": 6,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 15,
+      "primitive_vectors": 8,
+      "units": 8,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 16,
+      "primitive_vectors": 8,
+      "units": 8,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 17,
+      "primitive_vectors": 16,
+      "units": 16,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 18,
+      "primitive_vectors": 6,
+      "units": 6,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 19,
+      "primitive_vectors": 18,
+      "units": 18,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 20,
+      "primitive_vectors": 8,
+      "units": 8,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 21,
+      "primitive_vectors": 12,
+      "units": 12,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 22,
+      "primitive_vectors": 10,
+      "units": 10,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 23,
+      "primitive_vectors": 22,
+      "units": 22,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 1,
+      "m": 24,
+      "primitive_vectors": 8,
+      "units": 8,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 2,
+      "m": 1,
+      "primitive_vectors": 1,
+      "units": 1,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 2,
+      "m": 2,
+      "primitive_vectors": 3,
+      "units": 1,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "n": 2,
+      "m": 3,
+      "primitive_vectors": 8,
+      "units": 2,
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "n": 2,
+      "m": 4,
+      "primitive_vectors": 12,
+      "units": 2,
+      "expected": 6,
+      "actual": 6
+    },
+    {
+      "n": 2,
+      "m": 5,
+      "primitive_vectors": 24,
+      "units": 4,
+      "expected": 6,
+      "actual": 6
+    },
+    {
+      "n": 2,
+      "m": 6,
+      "primitive_vectors": 24,
+      "units": 2,
+      "expected": 12,
+      "actual": 12
+    },
+    {
+      "n": 2,
+      "m": 7,
+      "primitive_vectors": 48,
+      "units": 6,
+      "expected": 8,
+      "actual": 8
+    },
+    {
+      "n": 2,
+      "m": 8,
+      "primitive_vectors": 48,
+      "units": 4,
+      "expected": 12,
+      "actual": 12
+    },
+    {
+      "n": 2,
+      "m": 9,
+      "primitive_vectors": 72,
+      "units": 6,
+      "expected": 12,
+      "actual": 12
+    },
+    {
+      "n": 2,
+      "m": 10,
+      "primitive_vectors": 72,
+      "units": 4,
+      "expected": 18,
+      "actual": 18
+    },
+    {
+      "n": 2,
+      "m": 11,
+      "primitive_vectors": 120,
+      "units": 10,
+      "expected": 12,
+      "actual": 12
+    },
+    {
+      "n": 2,
+      "m": 12,
+      "primitive_vectors": 96,
+      "units": 4,
+      "expected": 24,
+      "actual": 24
+    },
+    {
+      "n": 2,
+      "m": 13,
+      "primitive_vectors": 168,
+      "units": 12,
+      "expected": 14,
+      "actual": 14
+    },
+    {
+      "n": 2,
+      "m": 14,
+      "primitive_vectors": 144,
+      "units": 6,
+      "expected": 24,
+      "actual": 24
+    },
+    {
+      "n": 2,
+      "m": 15,
+      "primitive_vectors": 192,
+      "units": 8,
+      "expected": 24,
+      "actual": 24
+    },
+    {
+      "n": 2,
+      "m": 16,
+      "primitive_vectors": 192,
+      "units": 8,
+      "expected": 24,
+      "actual": 24
+    },
+    {
+      "n": 2,
+      "m": 17,
+      "primitive_vectors": 288,
+      "units": 16,
+      "expected": 18,
+      "actual": 18
+    },
+    {
+      "n": 2,
+      "m": 18,
+      "primitive_vectors": 216,
+      "units": 6,
+      "expected": 36,
+      "actual": 36
+    },
+    {
+      "n": 2,
+      "m": 19,
+      "primitive_vectors": 360,
+      "units": 18,
+      "expected": 20,
+      "actual": 20
+    },
+    {
+      "n": 2,
+      "m": 20,
+      "primitive_vectors": 288,
+      "units": 8,
+      "expected": 36,
+      "actual": 36
+    },
+    {
+      "n": 2,
+      "m": 21,
+      "primitive_vectors": 384,
+      "units": 12,
+      "expected": 32,
+      "actual": 32
+    },
+    {
+      "n": 2,
+      "m": 22,
+      "primitive_vectors": 360,
+      "units": 10,
+      "expected": 36,
+      "actual": 36
+    },
+    {
+      "n": 2,
+      "m": 23,
+      "primitive_vectors": 528,
+      "units": 22,
+      "expected": 24,
+      "actual": 24
+    },
+    {
+      "n": 2,
+      "m": 24,
+      "primitive_vectors": 384,
+      "units": 8,
+      "expected": 48,
+      "actual": 48
+    },
+    {
+      "n": 2,
+      "m": 25,
+      "primitive_vectors": 600,
+      "units": 20,
+      "expected": 30,
+      "actual": 30
+    },
+    {
+      "n": 2,
+      "m": 26,
+      "primitive_vectors": 504,
+      "units": 12,
+      "expected": 42,
+      "actual": 42
+    },
+    {
+      "n": 2,
+      "m": 27,
+      "primitive_vectors": 648,
+      "units": 18,
+      "expected": 36,
+      "actual": 36
+    },
+    {
+      "n": 2,
+      "m": 28,
+      "primitive_vectors": 576,
+      "units": 12,
+      "expected": 48,
+      "actual": 48
+    },
+    {
+      "n": 2,
+      "m": 29,
+      "primitive_vectors": 840,
+      "units": 28,
+      "expected": 30,
+      "actual": 30
+    },
+    {
+      "n": 2,
+      "m": 30,
+      "primitive_vectors": 576,
+      "units": 8,
+      "expected": 72,
+      "actual": 72
+    },
+    {
+      "n": 2,
+      "m": 31,
+      "primitive_vectors": 960,
+      "units": 30,
+      "expected": 32,
+      "actual": 32
+    },
+    {
+      "n": 2,
+      "m": 32,
+      "primitive_vectors": 768,
+      "units": 16,
+      "expected": 48,
+      "actual": 48
+    },
+    {
+      "n": 2,
+      "m": 33,
+      "primitive_vectors": 960,
+      "units": 20,
+      "expected": 48,
+      "actual": 48
+    },
+    {
+      "n": 2,
+      "m": 34,
+      "primitive_vectors": 864,
+      "units": 16,
+      "expected": 54,
+      "actual": 54
+    },
+    {
+      "n": 2,
+      "m": 35,
+      "primitive_vectors": 1152,
+      "units": 24,
+      "expected": 48,
+      "actual": 48
+    },
+    {
+      "n": 2,
+      "m": 36,
+      "primitive_vectors": 864,
+      "units": 12,
+      "expected": 72,
+      "actual": 72
+    },
+    {
+      "n": 2,
+      "m": 37,
+      "primitive_vectors": 1368,
+      "units": 36,
+      "expected": 38,
+      "actual": 38
+    },
+    {
+      "n": 2,
+      "m": 38,
+      "primitive_vectors": 1080,
+      "units": 18,
+      "expected": 60,
+      "actual": 60
+    },
+    {
+      "n": 2,
+      "m": 39,
+      "primitive_vectors": 1344,
+      "units": 24,
+      "expected": 56,
+      "actual": 56
+    },
+    {
+      "n": 2,
+      "m": 40,
+      "primitive_vectors": 1152,
+      "units": 16,
+      "expected": 72,
+      "actual": 72
+    },
+    {
+      "n": 3,
+      "m": 1,
+      "primitive_vectors": 1,
+      "units": 1,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 3,
+      "m": 2,
+      "primitive_vectors": 7,
+      "units": 1,
+      "expected": 7,
+      "actual": 7
+    },
+    {
+      "n": 3,
+      "m": 3,
+      "primitive_vectors": 26,
+      "units": 2,
+      "expected": 13,
+      "actual": 13
+    },
+    {
+      "n": 3,
+      "m": 4,
+      "primitive_vectors": 56,
+      "units": 2,
+      "expected": 28,
+      "actual": 28
+    },
+    {
+      "n": 3,
+      "m": 5,
+      "primitive_vectors": 124,
+      "units": 4,
+      "expected": 31,
+      "actual": 31
+    },
+    {
+      "n": 3,
+      "m": 6,
+      "primitive_vectors": 182,
+      "units": 2,
+      "expected": 91,
+      "actual": 91
+    },
+    {
+      "n": 3,
+      "m": 7,
+      "primitive_vectors": 342,
+      "units": 6,
+      "expected": 57,
+      "actual": 57
+    },
+    {
+      "n": 3,
+      "m": 8,
+      "primitive_vectors": 448,
+      "units": 4,
+      "expected": 112,
+      "actual": 112
+    },
+    {
+      "n": 3,
+      "m": 9,
+      "primitive_vectors": 702,
+      "units": 6,
+      "expected": 117,
+      "actual": 117
+    },
+    {
+      "n": 3,
+      "m": 10,
+      "primitive_vectors": 868,
+      "units": 4,
+      "expected": 217,
+      "actual": 217
+    },
+    {
+      "n": 3,
+      "m": 11,
+      "primitive_vectors": 1330,
+      "units": 10,
+      "expected": 133,
+      "actual": 133
+    },
+    {
+      "n": 3,
+      "m": 12,
+      "primitive_vectors": 1456,
+      "units": 4,
+      "expected": 364,
+      "actual": 364
+    },
+    {
+      "n": 4,
+      "m": 1,
+      "primitive_vectors": 1,
+      "units": 1,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 4,
+      "m": 2,
+      "primitive_vectors": 15,
+      "units": 1,
+      "expected": 15,
+      "actual": 15
+    },
+    {
+      "n": 4,
+      "m": 3,
+      "primitive_vectors": 80,
+      "units": 2,
+      "expected": 40,
+      "actual": 40
+    },
+    {
+      "n": 4,
+      "m": 4,
+      "primitive_vectors": 240,
+      "units": 2,
+      "expected": 120,
+      "actual": 120
+    },
+    {
+      "n": 4,
+      "m": 5,
+      "primitive_vectors": 624,
+      "units": 4,
+      "expected": 156,
+      "actual": 156
+    },
+    {
+      "n": 4,
+      "m": 6,
+      "primitive_vectors": 1200,
+      "units": 2,
+      "expected": 600,
+      "actual": 600
+    },
+    {
+      "n": 5,
+      "m": 1,
+      "primitive_vectors": 1,
+      "units": 1,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "n": 5,
+      "m": 2,
+      "primitive_vectors": 31,
+      "units": 1,
+      "expected": 31,
+      "actual": 31
+    },
+    {
+      "n": 5,
+      "m": 3,
+      "primitive_vectors": 242,
+      "units": 2,
+      "expected": 121,
+      "actual": 121
+    }
+  ]
+}

@@ -959,3 +959,20 @@ Proposition5.4 passages; the exact limits are in the internal audit.
 Protasov2018 survey scopes and discovery-only sources are also
 recorded there. Twenty files are bound in `results/9.47-summary.json`.
 Novelty of the9.47 connection and external review remain pending.
+
+
+## 9.45: orthogonal bases and decomposition
+
+Bardakov1998 explicitly gives the full two-dimensional answer to9.45
+and a general sufficient condition. Its introduction and Proposition2
+were visually checked; Section4 read, earlier sections examined as
+detailed in `research/9.45-review.md`. CGG2015v1 and the published
+2017 paper were checked for the binary/ternary scope, and published
+Claims3.1--3.2 were read for their normalized-dual integrality method.
+Hemkemeier--Vallentin's ECCC revision1 is from11September2006, not
+1998; its Section4.3 credits Eichler/Kneser and uses a complete bounded
+generating set. That section was visually checked on p.4. These are
+prior context; the general cyclic-coset coordinate criterion is proved
+without importing them. Four PDF/text pairs and five source images
+are retained. Exact reading limits and priority caveats are in the
+audit; the full packet is bound in `results/9.45-summary.json`.

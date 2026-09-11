@@ -1519,3 +1519,27 @@ topological proof. There are27 complete candidates and0 outside
 reviews. At16:34:59 UTC all six n=7 verifiers remained live, with
 11,500,000 nodes checked and16,316,148KiB combined RSS. Local work
 and local commits only; no communication or push.
+
+
+## 2026-09-11T17:06:25.266932+00:00 — Candidate28: coordinate criterion for9.45
+
+Every orthogonal rank-one summand is represented by a centered cyclic
+coset vector, with at most two half-coordinate ties. Membership of
+its normalized dual vector is exactly two integer-divisibility tests.
+All passing lines are automatically perpendicular; n passing lines
+therefore give a lattice basis. The resulting coordinate-only test
+takes O(mn) arithmetic work for denominator m. The full proof and
+28-point internal audit are written. Bardakov's prior n=2 answer,
+CGG's normalized-dual method and classical decomposition context are
+credited. Historical priority and outside review remain pending.
+
+Independent exact searches agree on3,520 cases (599 positive). GAP
+checks1,198 HNF basis equalities and independently examines291,330
+box points in274 cases. The incorrect handwritten m=6 residue was
+corrected after both searches rejected it; the failed log is retained.
+A first GAP run with unbound-global warnings was rejected despite its
+sentinel and exit0; the corrected local-variable run is clean and0.
+
+At17:02:42 UTC the six n=7 certificate workers remained live with
+12,400,000 total checked nodes and17,640,692KiB combined RSS. No
+shard was complete. Work and commits remain local only.

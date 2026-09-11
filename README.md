@@ -4,7 +4,7 @@ Objective: solve as many previously unsolved problems in `docs/21tkt.pdf` as pos
 
 Research started 2026-09-10 20:56:46 UTC (active-goal creation). Deadline: 2026-09-12 20:56:46 UTC. Target resource limits: at most 20 computational cores and 100 GB RAM in total.
 
-Twenty-seven complete candidate resolutions are recorded in
+Twenty-eight complete candidate resolutions are recorded in
 [`reports/STATUS.md`](reports/STATUS.md), each with a separate internal
 audit. All await independent review and further novelty checks. An additional small counterexample to 13.19 is
 retained as a rediscovery: a prior paper already implies a negative answer. The independent positive proof

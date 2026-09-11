@@ -38,7 +38,10 @@ the 21 complete candidates awaiting independent review.
   Orthogonal integer bases are not limited to coordinate axes: primitive
   Pythagorean two-dimensional frames already give nontrivial examples.
   A finite basis enumeration would be an algorithm but does not yet supply
-  the useful coordinate characterization requested. No candidate counted.
+  the useful coordinate characterization requested. No candidate counted at
+  that stage. Update at17:05 UTC: the splitting-vector method now gives
+  an explicit O(mn) coordinate criterion in every dimension; see
+  `9.45-proof.md` and its audit (candidate28).
 - **9.76:** The centralizer of a nilpotent element in an infinite-dimensional
   nil algebra can be infinite-dimensional; this alone does not establish
   that its intersection with the finitely generated adjoint Golod subgroup
