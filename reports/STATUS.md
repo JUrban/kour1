@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-11T03:04:53.609296+00:00.
+Updated: 2026-09-11T03:31:49.898392+00:00.609296+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **13**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), and **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- Both the 21.26 search through order2000 and the 19.20 search through order255 are complete. The 19.20 order256 extension has 12 live GAP workers and 4 completed ranges; process command lines, range-specific stdout files, and logs were revalidated. At the 2026-09-11T03:04:06.137623+00:00 snapshot, 42,966 groups have been counted, with 0 equality hits and 85 reverse inequalities. All log checks pass.
+- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T03:30:26.154096+00:00, the order256 extension has 45,851 counts, zero equality hits, 87 reversals, 10 verified live workers and 6 completed ranges. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
@@ -38,6 +38,8 @@ Updated: 2026-09-11T03:04:53.609296+00:00.
 **18.92(a),(b):** Let F_S be the formation of all finite groups whose prime divisors lie in S. Taking finite prime sets plus the set of all primes yields a complete lattice whose only compact element is its bottom. Five selected F_S give the non-modular pentagon N5. Both use internal joins in the chosen family, as explicitly defined in the Notebook and checked in a primary formation-theory source. All finite lattice controls pass; the infinite assertion has an explicit chain proof. See `research/18.92-proof.md` and `research/18.92-review.md`. Novelty and outside review remain pending.
 
 ## Completed bounded searches
+
+- **18.114:** All2,468 soluble irreducible library entries over F5 through dimension6 processed;2,421 eligible, including2,352 noncyclic. No noncyclic equality;57 independent affine controls and37 commuting-pair checks pass. The indexed affine-constructor cache bug was diagnosed; all initial invalid runs were excluded and replaced. See `research/18.114-plan.md`.
 
 - **17.100:** All2,750 CTblLib tables screened;215 simple-table entries
   yield12,606 eligible character/class pairs, with no counterexample.

@@ -450,3 +450,21 @@ formation-theory source. All32 finite subfamilies and65 modular-law
 cases checked, with the one intended failure and1,296 positive Boolean
 controls. Complete proofs and internal audit; novelty and outside
 review remain open.
+
+## 2026-09-11T03:31:49.898392+00:00 — Completed18.114 screen and diagnosed library cache error
+
+All2,468 soluble IRREDSOL entries through dimension6 processed;2,421
+have order prime to5. Allseven equality cases are cyclic, and none of
+the2,352 noncyclic cases attains equality. All57 independent affine
+permutation controls and37 commuting-pair controls pass. The indexed
+PrimitivePcGroup constructor reuses guardian data across incompatible
+complements; the second of two reproducible calls returns order800
+instead of1200. Initial runs are retained as invalid diagnostics. Every
+counted run uses the matrices directly and asserts the affine order.
+The completed-log parser validates counts and all completion markers.
+A preliminary commentary mental total was incorrect; the authoritative
+parser totals are2,468 processed and2,421 eligible.
+
+New19.9 arguments are being written and audited separately.
+Order256 snapshot: 45,851 counts,0 equalities,
+87 reversals,10 live and6 completed ranges; allPASS.

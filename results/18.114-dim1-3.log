@@ -1,0 +1,51 @@
+BEGIN dimension=1 field=5
+GROUP n=1 d=1 k=1 order=1 cyclic=true affine_classes=5 ms=0
+GROUP n=1 d=1 k=2 order=2 cyclic=true affine_classes=4 ms=0
+GROUP n=1 d=1 k=3 order=4 cyclic=true affine_classes=5 ms=0
+DONE_DIM n=1 total=3 eligible=3 equalities=2 hits=0
+BEGIN dimension=2 field=5
+GROUP n=2 d=1 k=1 order=32 cyclic=false affine_classes=20 ms=12
+GROUP n=2 d=1 k=2 order=16 cyclic=false affine_classes=16 ms=19
+GROUP n=2 d=1 k=3 order=16 cyclic=false affine_classes=13 ms=14
+GROUP n=2 d=1 k=4 order=8 cyclic=false affine_classes=14 ms=16
+GROUP n=2 d=1 k=5 order=8 cyclic=false affine_classes=8 ms=16
+GROUP n=2 d=1 k=6 order=48 cyclic=false affine_classes=20 ms=20
+GROUP n=2 d=1 k=7 order=24 cyclic=false affine_classes=16 ms=30
+GROUP n=2 d=1 k=8 order=12 cyclic=false affine_classes=14 ms=18
+GROUP n=2 d=1 k=9 order=12 cyclic=false affine_classes=8 ms=33
+GROUP n=2 d=1 k=10 order=24 cyclic=false affine_classes=13 ms=23
+GROUP n=2 d=1 k=11 order=6 cyclic=false affine_classes=13 ms=15
+GROUP n=2 d=1 k=12 order=96 cyclic=false affine_classes=20 ms=11
+GROUP n=2 d=1 k=13 order=48 cyclic=false affine_classes=16 ms=8
+GROUP n=2 d=1 k=14 order=24 cyclic=false affine_classes=8 ms=19
+GROUP n=2 d=2 k=1 order=3 cyclic=true affine_classes=11 ms=0
+GROUP n=2 d=2 k=2 order=6 cyclic=true affine_classes=10 ms=0
+GROUP n=2 d=2 k=3 order=8 cyclic=true affine_classes=11 ms=0
+GROUP n=2 d=2 k=4 order=12 cyclic=true affine_classes=14 ms=0
+GROUP n=2 d=2 k=5 order=24 cyclic=true affine_classes=25 ms=0
+DONE_DIM n=2 total=19 eligible=19 equalities=1 hits=0
+BEGIN dimension=3 field=5
+GROUP n=3 d=1 k=1 order=384 cyclic=false affine_classes=65 ms=41
+GROUP n=3 d=1 k=2 order=192 cyclic=false affine_classes=55 ms=25
+GROUP n=3 d=1 k=3 order=48 cyclic=false affine_classes=28 ms=34
+GROUP n=3 d=1 k=4 order=96 cyclic=false affine_classes=38 ms=37
+GROUP n=3 d=1 k=5 order=96 cyclic=false affine_classes=32 ms=49
+GROUP n=3 d=1 k=6 order=24 cyclic=false affine_classes=32 ms=29
+GROUP n=3 d=1 k=7 order=192 cyclic=false affine_classes=40 ms=20
+GROUP n=3 d=1 k=8 order=192 cyclic=false affine_classes=37 ms=19
+GROUP n=3 d=1 k=9 order=48 cyclic=false affine_classes=40 ms=42
+GROUP n=3 d=1 k=10 order=48 cyclic=false affine_classes=28 ms=31
+GROUP n=3 d=1 k=11 order=48 cyclic=false affine_classes=25 ms=28
+GROUP n=3 d=1 k=12 order=12 cyclic=false affine_classes=28 ms=22
+GROUP n=3 d=1 k=13 order=96 cyclic=false affine_classes=29 ms=35
+GROUP n=3 d=1 k=14 order=96 cyclic=false affine_classes=23 ms=45
+GROUP n=3 d=1 k=15 order=24 cyclic=false affine_classes=38 ms=27
+GROUP n=3 d=1 k=16 order=24 cyclic=false affine_classes=26 ms=28
+GROUP n=3 d=1 k=17 order=372 cyclic=false affine_classes=55 ms=21
+GROUP n=3 d=1 k=18 order=186 cyclic=false affine_classes=32 ms=21
+GROUP n=3 d=1 k=19 order=93 cyclic=false affine_classes=25 ms=22
+GROUP n=3 d=3 k=1 order=31 cyclic=true affine_classes=35 ms=0
+GROUP n=3 d=3 k=2 order=62 cyclic=true affine_classes=64 ms=0
+GROUP n=3 d=3 k=3 order=124 cyclic=true affine_classes=125 ms=0
+DONE_DIM n=3 total=22 eligible=22 equalities=1 hits=0
+DONE total=44 eligible=44 equalities=4 noncyclic_hits=0

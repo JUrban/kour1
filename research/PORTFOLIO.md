@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T03:04:53.609296+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T03:31:49.898392+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 18.114 | IRREDSOL equality screen over F5. | All2,468 soluble entries through dimension6 processed;2,421 eligible, zero noncyclic hits. All57 independent controls pass. Indexed affine-constructor cache bug diagnosed; invalid runs excluded. |
 | 18.111 | Quasi-isometrically trivial cyclic central extensions. | Exact prior negative theorem: Frigerio--Sisto2023 Theorem1.2. Introductory theorem read; full proof unaudited; excluded from new priority. |
 | 18.92(a),(b) | Encode intersection-closed families of prime sets by formations of all finite S-groups. | Complete affirmative candidates under the explicitly printed internal-join convention; infinite compactness proof and finite N5 controls pass. Novelty and outside review pending. |
 | 18.76 | Explicit crossed extension over a division closure of k[F2 x F2]. | Complete internally checked negative candidate. Group-ring controls in five characteristics and 27 GAP obstruction checks PASS; novelty and outside review pending. |

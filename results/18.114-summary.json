@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "field": 5,
+  "dimensions": [
+    {
+      "n": 1,
+      "total": 3,
+      "eligible": 3,
+      "equalities": 2,
+      "noncyclic_hits": 0,
+      "cyclic": 3
+    },
+    {
+      "n": 2,
+      "total": 19,
+      "eligible": 19,
+      "equalities": 1,
+      "noncyclic_hits": 0,
+      "cyclic": 5
+    },
+    {
+      "n": 3,
+      "total": 22,
+      "eligible": 22,
+      "equalities": 1,
+      "noncyclic_hits": 0,
+      "cyclic": 3
+    },
+    {
+      "n": 4,
+      "total": 509,
+      "eligible": 501,
+      "equalities": 1,
+      "noncyclic_hits": 0,
+      "cyclic": 12
+    },
+    {
+      "n": 5,
+      "total": 48,
+      "eligible": 9,
+      "equalities": 1,
+      "noncyclic_hits": 0,
+      "cyclic": 9
+    },
+    {
+      "n": 6,
+      "total": 1867,
+      "eligible": 1867,
+      "equalities": 1,
+      "noncyclic_hits": 0,
+      "cyclic": 37
+    }
+  ],
+  "total": 2468,
+  "eligible": 2421,
+  "cyclic": 69,
+  "equalities": [
+    {
+      "n": 1,
+      "d": 1,
+      "k": 1,
+      "order": 1,
+      "cyclic": true,
+      "classes": 5,
+      "ms": 0
+    },
+    {
+      "n": 1,
+      "d": 1,
+      "k": 3,
+      "order": 4,
+      "cyclic": true,
+      "classes": 5,
+      "ms": 0
+    },
+    {
+      "n": 2,
+      "d": 2,
+      "k": 5,
+      "order": 24,
+      "cyclic": true,
+      "classes": 25,
+      "ms": 0
+    },
+    {
+      "n": 3,
+      "d": 3,
+      "k": 3,
+      "order": 124,
+      "cyclic": true,
+      "classes": 125,
+      "ms": 0
+    },
+    {
+      "n": 4,
+      "d": 4,
+      "k": 12,
+      "order": 624,
+      "cyclic": true,
+      "classes": 625,
+      "ms": 0
+    },
+    {
+      "n": 5,
+      "d": 5,
+      "k": 9,
+      "order": 3124,
+      "cyclic": true,
+      "classes": 3125,
+      "ms": 0
+    },
+    {
+      "n": 6,
+      "d": 6,
+      "k": 37,
+      "order": 15624,
+      "cyclic": true,
+      "classes": 15625,
+      "ms": 0
+    }
+  ],
+  "noncyclic_hits": 0,
+  "independent_controls": 57,
+  "noncyclic_positive_controls": 3,
+  "commuting_pair_controls": 37,
+  "scope": "IRREDSOL soluble irreducible subgroups only, n=1,...,6",
+  "excluded_logs": "All *-invalid-cache.log files are invalid diagnostic runs."
+}

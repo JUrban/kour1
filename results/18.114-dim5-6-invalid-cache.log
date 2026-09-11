@@ -1,0 +1,174 @@
+     ● G  GAP 4.16.1 of 2026-08-23
+  ● ●  A  https://www.gap-system.org
+     ● P  Architecture: x86_64-pc-linux-gnu-default64-kv11
+ Configuration:  gmp 6.3.0, GASMAN, readline
+ Loading the library and packages ...
+ Packages:   AClib 1.4, Alnuth 4.0.2, AtlasRep 2.1.12, AutoDoc 2026.06.30, 
+             AutPGrp 1.12.0, Browse 1.8.23, CaratInterface 2.3.11, 
+             CRISP 1.4.11, Cryst 4.1.32, CrystCat 1.1.13, CTblLib 1.3.11, 
+             FactInt 1.7.0, FGA 1.5.0, Forms 1.3.0, GAPDoc 1.6.10, 
+             genss 1.6.10, IO 4.10.0, IRREDSOL 1.4.6, LAGUNA 3.10.1, 
+             orb 5.1.0, PackageManager 1.6.4, Polenta 1.3.11, Polycyclic 2.18, 
+             PrimGrp 4.0.3, RadiRoot 2.10, recog 1.5.1, ResClasses 4.7.4, 
+             SmallGrp 1.7.0, Sophus 1.27, SpinSym 1.5.2, StandardFF 1.0, 
+             TomLib 1.2.11, TransGrp 3.6.5, utils 0.98
+ Try '??help' for help. See also '?copyright', '?cite' and '?authors'
+BEGIN dimension=5 field=5
+GROUP n=5 d=5 k=1 order=11 cyclic=true affine_classes=295 ms=0
+GROUP n=5 d=5 k=2 order=22 cyclic=true affine_classes=164 ms=0
+GROUP n=5 d=5 k=3 order=44 cyclic=true affine_classes=115 ms=0
+GROUP n=5 d=5 k=4 order=71 cyclic=true affine_classes=115 ms=0
+GROUP n=5 d=5 k=5 order=142 cyclic=true affine_classes=164 ms=0
+GROUP n=5 d=5 k=6 order=284 cyclic=true affine_classes=295 ms=0
+GROUP n=5 d=5 k=7 order=781 cyclic=true affine_classes=785 ms=0
+GROUP n=5 d=5 k=8 order=1562 cyclic=true affine_classes=1564 ms=0
+GROUP n=5 d=5 k=9 order=3124 cyclic=true affine_classes=3125 ms=0
+DONE_DIM n=5 total=48 eligible=9 equalities=1 hits=0
+BEGIN dimension=6 field=5
+GROUP n=6 d=1 k=1 order=196608 cyclic=false affine_classes=1960 ms=1329
+GROUP n=6 d=1 k=2 order=98304 cyclic=false affine_classes=2720 ms=3473
+GROUP n=6 d=1 k=3 order=49152 cyclic=false affine_classes=1900 ms=2670
+GROUP n=6 d=1 k=4 order=98304 cyclic=false affine_classes=1550 ms=1181
+GROUP n=6 d=1 k=5 order=98304 cyclic=false affine_classes=1250 ms=886
+GROUP n=6 d=1 k=6 order=24576 cyclic=false affine_classes=2720 ms=3028
+GROUP n=6 d=1 k=7 order=49152 cyclic=false affine_classes=1960 ms=1248
+GROUP n=6 d=1 k=8 order=24576 cyclic=false affine_classes=2825 ms=2197
+GROUP n=6 d=1 k=9 order=49152 cyclic=false affine_classes=1408 ms=1599
+GROUP n=6 d=1 k=10 order=49152 cyclic=false affine_classes=1372 ms=1091
+GROUP n=6 d=1 k=11 order=12288 cyclic=false affine_classes=1408 ms=1559
+GROUP n=6 d=1 k=12 order=12288 cyclic=false affine_classes=1399 ms=777
+GROUP n=6 d=1 k=13 order=24576 cyclic=false affine_classes=968 ms=1274
+GROUP n=6 d=1 k=14 order=98304 cyclic=false affine_classes=1088 ms=804
+GROUP n=6 d=1 k=15 order=98304 cyclic=false affine_classes=1022 ms=791
+GROUP n=6 d=1 k=16 order=98304 cyclic=false affine_classes=1040 ms=869
+GROUP n=6 d=1 k=17 order=98304 cyclic=false affine_classes=1010 ms=789
+GROUP n=6 d=1 k=18 order=24576 cyclic=false affine_classes=1088 ms=696
+GROUP n=6 d=1 k=19 order=24576 cyclic=false affine_classes=1067 ms=748
+GROUP n=6 d=1 k=20 order=24576 cyclic=false affine_classes=1040 ms=667
+GROUP n=6 d=1 k=21 order=24576 cyclic=false affine_classes=1037 ms=673
+GROUP n=6 d=1 k=22 order=49152 cyclic=false affine_classes=820 ms=608
+GROUP n=6 d=1 k=23 order=49152 cyclic=false affine_classes=808 ms=691
+GROUP n=6 d=1 k=24 order=49152 cyclic=false affine_classes=700 ms=562
+GROUP n=6 d=1 k=25 order=49152 cyclic=false affine_classes=688 ms=555
+GROUP n=6 d=1 k=26 order=12288 cyclic=false affine_classes=1510 ms=1321
+GROUP n=6 d=1 k=27 order=12288 cyclic=false affine_classes=1507 ms=973
+GROUP n=6 d=1 k=28 order=24576 cyclic=false affine_classes=992 ms=934
+GROUP n=6 d=1 k=29 order=24576 cyclic=false affine_classes=784 ms=648
+GROUP n=6 d=1 k=30 order=24576 cyclic=false affine_classes=776 ms=718
+GROUP n=6 d=1 k=31 order=12288 cyclic=false affine_classes=1408 ms=930
+GROUP n=6 d=1 k=32 order=12288 cyclic=false affine_classes=608 ms=612
+GROUP n=6 d=1 k=33 order=12288 cyclic=false affine_classes=544 ms=490
+GROUP n=6 d=1 k=34 order=12288 cyclic=false affine_classes=767 ms=728
+GROUP n=6 d=1 k=35 order=12288 cyclic=false affine_classes=616 ms=557
+GROUP n=6 d=1 k=36 order=12288 cyclic=false affine_classes=643 ms=497
+GROUP n=6 d=1 k=37 order=6144 cyclic=false affine_classes=784 ms=762
+GROUP n=6 d=1 k=38 order=3072 cyclic=false affine_classes=608 ms=368
+GROUP n=6 d=1 k=39 order=3072 cyclic=false affine_classes=524 ms=316
+GROUP n=6 d=1 k=40 order=12288 cyclic=false affine_classes=712 ms=806
+GROUP n=6 d=1 k=41 order=12288 cyclic=false affine_classes=631 ms=494
+GROUP n=6 d=1 k=42 order=12288 cyclic=false affine_classes=659 ms=489
+GROUP n=6 d=1 k=43 order=6144 cyclic=false affine_classes=752 ms=624
+GROUP n=6 d=1 k=44 order=6144 cyclic=false affine_classes=482 ms=375
+GROUP n=6 d=1 k=45 order=6144 cyclic=false affine_classes=466 ms=381
+GROUP n=6 d=1 k=46 order=49152 cyclic=false affine_classes=880 ms=701
+GROUP n=6 d=1 k=47 order=49152 cyclic=false affine_classes=728 ms=604
+GROUP n=6 d=1 k=48 order=24576 cyclic=false affine_classes=1088 ms=810
+GROUP n=6 d=1 k=49 order=24576 cyclic=false affine_classes=568 ms=470
+GROUP n=6 d=1 k=50 order=24576 cyclic=false affine_classes=637 ms=550
+GROUP n=6 d=1 k=51 order=24576 cyclic=false affine_classes=572 ms=499
+GROUP n=6 d=1 k=52 order=24576 cyclic=false affine_classes=896 ms=739
+GROUP n=6 d=1 k=53 order=24576 cyclic=false affine_classes=472 ms=419
+GROUP n=6 d=1 k=54 order=24576 cyclic=false affine_classes=559 ms=492
+GROUP n=6 d=1 k=55 order=24576 cyclic=false affine_classes=524 ms=461
+GROUP n=6 d=1 k=56 order=12288 cyclic=false affine_classes=728 ms=498
+GROUP n=6 d=1 k=57 order=6144 cyclic=false affine_classes=568 ms=462
+GROUP n=6 d=1 k=58 order=6144 cyclic=false affine_classes=475 ms=322
+GROUP n=6 d=1 k=59 order=6144 cyclic=false affine_classes=472 ms=320
+GROUP n=6 d=1 k=60 order=6144 cyclic=false affine_classes=451 ms=302
+GROUP n=6 d=1 k=61 order=24576 cyclic=false affine_classes=740 ms=569
+GROUP n=6 d=1 k=62 order=24576 cyclic=false affine_classes=697 ms=622
+GROUP n=6 d=1 k=63 order=12288 cyclic=false affine_classes=640 ms=439
+GROUP n=6 d=1 k=64 order=12288 cyclic=false affine_classes=446 ms=367
+GROUP n=6 d=1 k=65 order=12288 cyclic=false affine_classes=592 ms=459
+GROUP n=6 d=1 k=66 order=12288 cyclic=false affine_classes=431 ms=384
+GROUP n=6 d=1 k=67 order=24576 cyclic=false affine_classes=548 ms=465
+GROUP n=6 d=1 k=68 order=24576 cyclic=false affine_classes=475 ms=520
+GROUP n=6 d=1 k=69 order=12288 cyclic=false affine_classes=592 ms=446
+GROUP n=6 d=1 k=70 order=12288 cyclic=false affine_classes=386 ms=342
+GROUP n=6 d=1 k=71 order=12288 cyclic=false affine_classes=544 ms=439
+GROUP n=6 d=1 k=72 order=12288 cyclic=false affine_classes=371 ms=352
+GROUP n=6 d=1 k=73 order=6144 cyclic=false affine_classes=799 ms=732
+GROUP n=6 d=1 k=74 order=3072 cyclic=false affine_classes=602 ms=415
+GROUP n=6 d=1 k=75 order=3072 cyclic=false affine_classes=560 ms=329
+GROUP n=6 d=1 k=76 order=6144 cyclic=false affine_classes=752 ms=577
+GROUP n=6 d=1 k=77 order=6144 cyclic=false affine_classes=340 ms=292
+GROUP n=6 d=1 k=78 order=6144 cyclic=false affine_classes=752 ms=634
+GROUP n=6 d=1 k=79 order=1536 cyclic=false affine_classes=376 ms=234
+GROUP n=6 d=1 k=80 order=6144 cyclic=false affine_classes=398 ms=371
+GROUP n=6 d=1 k=81 order=6144 cyclic=false affine_classes=370 ms=367
+GROUP n=6 d=1 k=82 order=3072 cyclic=false affine_classes=436 ms=314
+GROUP n=6 d=1 k=83 order=3072 cyclic=false affine_classes=284 ms=230
+GROUP n=6 d=1 k=84 order=12288 cyclic=false affine_classes=640 ms=440
+GROUP n=6 d=1 k=85 order=12288 cyclic=false affine_classes=592 ms=448
+GROUP n=6 d=1 k=86 order=12288 cyclic=false affine_classes=344 ms=297
+GROUP n=6 d=1 k=87 order=12288 cyclic=false affine_classes=308 ms=301
+GROUP n=6 d=1 k=88 order=12288 cyclic=false affine_classes=640 ms=414
+GROUP n=6 d=1 k=89 order=12288 cyclic=false affine_classes=592 ms=492
+GROUP n=6 d=1 k=90 order=3072 cyclic=false affine_classes=392 ms=270
+GROUP n=6 d=1 k=91 order=3072 cyclic=false affine_classes=332 ms=249
+GROUP n=6 d=1 k=92 order=12288 cyclic=false affine_classes=448 ms=372
+GROUP n=6 d=1 k=93 order=12288 cyclic=false affine_classes=400 ms=372
+GROUP n=6 d=1 k=94 order=12288 cyclic=false affine_classes=419 ms=331
+GROUP n=6 d=1 k=95 order=12288 cyclic=false affine_classes=374 ms=341
+GROUP n=6 d=1 k=96 order=6144 cyclic=false affine_classes=440 ms=304
+GROUP n=6 d=1 k=97 order=6144 cyclic=false affine_classes=368 ms=370
+GROUP n=6 d=1 k=98 order=6144 cyclic=false affine_classes=298 ms=246
+GROUP n=6 d=1 k=99 order=6144 cyclic=false affine_classes=244 ms=240
+GROUP n=6 d=1 k=100 order=6144 cyclic=false affine_classes=338 ms=285
+GROUP n=6 d=1 k=101 order=6144 cyclic=false affine_classes=274 ms=243
+GROUP n=6 d=1 k=102 order=6144 cyclic=false affine_classes=368 ms=294
+GROUP n=6 d=1 k=103 order=6144 cyclic=false affine_classes=244 ms=235
+GROUP n=6 d=1 k=104 order=6144 cyclic=false affine_classes=800 ms=511
+GROUP n=6 d=1 k=105 order=1536 cyclic=false affine_classes=388 ms=284
+GROUP n=6 d=1 k=106 order=3072 cyclic=false affine_classes=608 ms=345
+GROUP n=6 d=1 k=107 order=3072 cyclic=false affine_classes=436 ms=303
+GROUP n=6 d=1 k=108 order=1536 cyclic=false affine_classes=952 ms=297
+GROUP n=6 d=1 k=109 order=1536 cyclic=false affine_classes=376 ms=202
+GROUP n=6 d=1 k=110 order=1536 cyclic=false affine_classes=374 ms=215
+GROUP n=6 d=1 k=111 order=1536 cyclic=false affine_classes=398 ms=252
+GROUP n=6 d=1 k=112 order=768 cyclic=false affine_classes=436 ms=205
+GROUP n=6 d=1 k=113 order=384 cyclic=false affine_classes=752 ms=194
+GROUP n=6 d=1 k=114 order=768 cyclic=false affine_classes=400 ms=241
+GROUP n=6 d=1 k=115 order=1536 cyclic=false affine_classes=376 ms=202
+GROUP n=6 d=1 k=116 order=1536 cyclic=false affine_classes=374 ms=200
+GROUP n=6 d=1 k=117 order=768 cyclic=false affine_classes=608 ms=197
+GROUP n=6 d=1 k=118 order=768 cyclic=false affine_classes=436 ms=177
+GROUP n=6 d=1 k=119 order=6144 cyclic=false affine_classes=568 ms=358
+GROUP n=6 d=1 k=120 order=3072 cyclic=false affine_classes=770 ms=313
+GROUP n=6 d=1 k=121 order=3072 cyclic=false affine_classes=392 ms=230
+GROUP n=6 d=1 k=122 order=3072 cyclic=false affine_classes=602 ms=301
+GROUP n=6 d=1 k=123 order=3072 cyclic=false affine_classes=332 ms=218
+GROUP n=6 d=1 k=124 order=6144 cyclic=false affine_classes=338 ms=353
+GROUP n=6 d=1 k=125 order=3072 cyclic=false affine_classes=448 ms=244
+GROUP n=6 d=1 k=126 order=1536 cyclic=false affine_classes=440 ms=208
+GROUP n=6 d=1 k=127 order=768 cyclic=false affine_classes=640 ms=201
+GROUP n=6 d=1 k=128 order=768 cyclic=false affine_classes=484 ms=183
+GROUP n=6 d=1 k=129 order=1536 cyclic=false affine_classes=356 ms=177
+GROUP n=6 d=1 k=130 order=1536 cyclic=false affine_classes=338 ms=176
+GROUP n=6 d=1 k=131 order=1536 cyclic=false affine_classes=362 ms=180
+GROUP n=6 d=1 k=132 order=3072 cyclic=false affine_classes=392 ms=220
+GROUP n=6 d=1 k=133 order=1536 cyclic=false affine_classes=568 ms=228
+GROUP n=6 d=1 k=134 order=1536 cyclic=false affine_classes=388 ms=177
+GROUP n=6 d=1 k=135 order=3072 cyclic=false affine_classes=349 ms=312
+GROUP n=6 d=1 k=136 order=1536 cyclic=false affine_classes=338 ms=168
+GROUP n=6 d=1 k=137 order=3072 cyclic=false affine_classes=332 ms=257
+GROUP n=6 d=1 k=138 order=1536 cyclic=false affine_classes=460 ms=184
+GROUP n=6 d=1 k=139 order=1536 cyclic=false affine_classes=388 ms=209
+GROUP n=6 d=1 k=140 order=3072 cyclic=false affine_classes=265 ms=221
+GROUP n=6 d=1 k=141 order=1536 cyclic=false affine_classes=422 ms=255
+GROUP n=6 d=1 k=142 order=768 cyclic=false affine_classes=484 ms=223
+GROUP n=6 d=1 k=143 order=384 cyclic=false affine_classes=800 ms=203
+GROUP n=6 d=1 k=144 order=768 cyclic=false affine_classes=400 ms=167
+GROUP n=6 d=1 k=145 order=24576 cyclic=false affine_classes=728 ms=775
+GROUP n=6 d=1 k=146 order=24576 cyclic=false affine_classes=704 ms=600
+GROUP n=6 d=1 k=147 order=6144 cyclic=false affine_classes=704 ms=675
