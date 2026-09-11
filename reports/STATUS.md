@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-11T01:55:56.226842+00:00.
+Updated: 2026-09-11T02:06:12.707134+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **10**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), and **17.33** (infinite axiomatic rank of the Klein bottle quasivariety). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- Both the 21.26 search through order2000 and the 19.20 search through order255 are complete. The 19.20 order256 extension has 13 live GAP workers and 3 completed ranges; process command lines, range-specific stdout files, and logs were revalidated. At the 2026-09-11T01:28:53.922504+00:00 snapshot, 31,819 groups have been counted, with 0 equality hits and 82 reverse inequalities. All log checks pass.
+- Both the 21.26 search through order2000 and the 19.20 search through order255 are complete. The 19.20 order256 extension has 12 live GAP workers and 4 completed ranges; process command lines, range-specific stdout files, and logs were revalidated. At the 2026-09-11T02:06:12.707134+00:00 snapshot, 36,335 groups have been counted, with 0 equality hits and 84 reverse inequalities. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 

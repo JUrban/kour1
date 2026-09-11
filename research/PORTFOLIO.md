@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-11T01:55:56.226842+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T02:06:12.707134+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -33,7 +33,7 @@ Updated 2026-09-11T01:55:56.226842+00:00. This is a research triage list, not an
 | 12.69 | Norm or trace from Q(i) to Q violates the literal conclusion. | Formulation inconsistency: the same example contradicts the claimed uncountable analogue. Not counted as a substantive new solution without resolving the missing qualification. |
 | 15.89 | Exact two-by-two Laurent matrix for infinite-dihedral Cayley graphs. | Proved positive subclass for every finite inverse-closed generating set. Independent exact controls pass; the general vertex-transitive problem remains unresolved. No novelty claim. |
 | 11.46(a) | Finite E-groups of class three. | August 2026 preprint arXiv:2608.07275v1 claims a construction of order 3^84. Primary abstract read, full proof unaudited; exclude from new-target priority. |
-| 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | Certified counterexample to the stronger inequality at order64, with independent counts. Equality question still open; all7,011 groups through255 complete with zero nonabelian equality hits and54 reverse inequalities. Order256 snapshot: 31,819 counts, 0 equality hits, 82 reverse inequalities, 13 live workers and 3 completed ranges; all checks pass. |
+| 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | Certified counterexample to the stronger inequality at order64, with independent counts. Equality question still open; all7,011 groups through255 complete with zero nonabelian equality hits and54 reverse inequalities. Order256 snapshot: 36,335 counts, 0 equality hits, 84 reverse inequalities, 12 live workers and 4 completed ranges; all checks pass. |
 
 The index contains 1,308 main-body problem entries, including all 150 Issue 21 entries. Exactly 104 headings are starred, but partial solution markers also occur within unstarred entries. Older issues remain to be surveyed systematically. The separate solved archive is intentionally excluded from the index.
 
