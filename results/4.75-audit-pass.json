@@ -1,0 +1,11 @@
+{
+  "observed_utc": "2026-09-11T21:07:44.340931+00:00",
+  "command": [
+    "python3",
+    "scripts/audit_4_75.py"
+  ],
+  "actual_exit_code": 0,
+  "output": "PASS_1062_PACKET 27 hashes; 21318 finite pairs; geometry imported\nPASS_475_PACKET 13 hashes; frozen dependency passed; elementary deduction and imported geometry require mathematical review\n",
+  "summary_sha256": "be439250687a896a2a82fff92f825b39f9250386851db22ad27222dcb0199ef4",
+  "scope": "Recorded after observing actual tool process completion. Integrity and retained finite controls, not a machine proof of geometry."
+}

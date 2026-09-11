@@ -1790,3 +1790,24 @@ The complete-candidate count is now 32. No priority certification or
 independent outside review is claimed. The 20:48 UTC n=7 snapshot shows
 six live workers and 18,610,000 checked nodes; no shard is complete.
 The 48-hour goal remains active and all work remains local.
+
+
+## 2026-09-11T21:07:44.340931+00:00 — Candidate 33: central images of involutions in 4.75
+
+The unchanged 10.62 construction also supplies a negative answer to
+4.75. Every 2-subgroup has exponent two and cannot contain a Klein
+four subgroup, so every Sylow 2-subgroup is C2. Normal generation by
+each involution and perfectness exclude its central image in every
+quotient where it survives, in particular modulo the odd-order radical.
+The elementary deduction has a 14-point internal audit. The exact
+Notebook page and Durakov's earlier restricted theorem were visually
+checked; all mathematical text in that five-page prior paper was read.
+No involution-centralizer hypothesis is asserted and 15.54 is not settled.
+
+The 13-file packet auditor passes with actual exit 0 and invokes the
+unchanged 27-file 10.62 auditor successfully. The candidates share that
+geometric dependency, including its imported estimates and outside-review
+limitations. The complete-candidate count is 33, with priority pending.
+At 2026-09-11T21:04:14.334975+00:00, all six n=7 workers are live, with
+18,990,000 checked nodes and 26,880,756 KiB combined RSS.
+No shard is complete. All work remains local and the 48-hour goal is active.

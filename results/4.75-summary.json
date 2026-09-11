@@ -1,0 +1,27 @@
+{
+  "problem": "4.75",
+  "candidate_number": 33,
+  "status": "complete negative candidate, sharing imported geometric dependency with 10.62",
+  "outside_reviews": 0,
+  "novelty": "pending",
+  "updated_utc": "2026-09-11T21:07:08.397942+00:00",
+  "result": "For every sufficiently large odd prime p, an infinite three-generated perfect group of exponent 2p has all Sylow 2-subgroups cyclic of order two, and every involution is noncentral modulo the largest normal 2-prime subgroup.",
+  "dependency": "results/10.62-summary.json",
+  "new_argument": "An exponent-two subgroup with no Klein four subgroup has order at most two. A normally generating element of a perfect group cannot have nontrivial central image in a quotient.",
+  "computation_scope": "No new finite controls; the frozen dependency controls and hashes are checked, not the infinite geometric theorem.",
+  "sha256": {
+    "docs/21tkt.pdf": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911",
+    "research/4.75-plan.md": "b82d721a5d82b1924d5d488c4fce70dc66497cb806ab2d2ffaa66591ce8cd4ba",
+    "research/4.75-proof.md": "7e756145846ffe73a547ce5e8261113ce351605d20e09d253394f95ed3c43ec9",
+    "research/4.75-review.md": "c84a2c597c75f122f5fb808ccb47e1cb1806049cec6cf2980b7dbc68063d1906",
+    "results/10.62-summary.json": "2d145093d53a035a533dba70a60788b6db103c2134dea324caa82ce493a39583",
+    "research/10.62-proof.md": "9b95d9c52c7ba2150035eb5d2279107af909dd09dceec1e9bb2096383e0563eb",
+    "research/10.62-review.md": "68b2e868c94757f4214ea62cdbb8479d88b29acb4a33f05b4fe623be8ab72238",
+    "scripts/audit_10_62.py": "1008b09c944203596730e34cc8f05be0aee762b666dca3271d7d1d624079b3a5",
+    "scripts/audit_4_75.py": "fab32d28ff1cb057da09cea950c88f998c01d91ad74bfd90d4897c2743b0ffea",
+    "references/cache/notebook-4.75-p14.png": "d0f871e15d181b4c4ade3e2d6a77593764a2340cc777d92af3002b43eba3662f",
+    "references/cache/durakov-2-rank-one-2019.pdf": "f8793733293804a217207b1e893dab058ef297a2c435a5c471ed20bb94effe1b",
+    "references/cache/durakov-2-rank-one-2019.txt": "62942a3cfb160941fb5d08eb3439fa30771342bbdd1d472615f32631bebde4ea",
+    "references/cache/durakov-2-rank-one-2019-p65.png": "b512e8f271b6328a74ac5a1bfdfcf1e64e6368e75f27aff32731218a0600f6ef"
+  }
+}

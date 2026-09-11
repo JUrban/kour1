@@ -4,7 +4,7 @@ Objective: solve as many previously unsolved problems in `docs/21tkt.pdf` as pos
 
 Research started 2026-09-10 20:56:46 UTC (active-goal creation). Deadline: 2026-09-12 20:56:46 UTC. Target resource limits: at most 20 computational cores and 100 GB RAM in total.
 
-Thirty-two complete candidate resolutions are recorded in
+Thirty-three complete candidate resolutions are recorded in
 [`reports/STATUS.md`](reports/STATUS.md), each with a separate internal
 audit. All await independent review and further novelty checks. An additional small counterexample to 13.19 is
 retained as a rediscovery: a prior paper already implies a negative answer. The independent positive proof
@@ -15,7 +15,9 @@ coefficient groups, as permitted by the printed question.
 Candidate31 now covers all the stated classical limits in Problem15.65;
 the original unitary cyclic packet and its complete extension are retained
 separately. Candidate 32 proves the alternating-residual quotient assertion
-of Problem 15.92 for every triangle parameter r>6.
+of Problem 15.92 for every triangle parameter r>6. Candidate 33 gives a
+negative answer to 4.75 using the group already constructed for 10.62;
+those two candidates share the same geometric existence dependency.
 See `reports/STATUS.md`, `research/PLAN.md`, and `reports/LOG.md` for current
 evidence and next actions.
 
