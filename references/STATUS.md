@@ -357,3 +357,15 @@ claim. The original Mal'cev proof has not been audited in this pass.
 18.24: sources and exact limited reading scope are listed in
 research/triage-2026-09-11.md. Minimum attainment does not establish
 the required half-defect equality. No resolution is claimed.
+
+## Problem 18.76
+
+Sakarovitch, https://perso.telecom-paristech.fr/jsaka/PUB/Files/HBWA.pdf ,
+Definition 28 and Theorems 21–22 plus their application and historical
+notes read. Bergman, https://math.berkeley.edu/~gbergman/papers/kG_in_D.pdf ,
+Section 1 read on bi-orderable group algebras and their Mal'cev--Neumann
+division-ring embedding. Both PDF/text files cached; later machinery
+unaudited and unused. Neumann's original 1949 publisher PDF returned
+403; metadata only checked. The exact candidate and limited English/
+Russian novelty search are documented in research/18.76-review.md.
+No prior exact resolution located; novelty remains unconfirmed.

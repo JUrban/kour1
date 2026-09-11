@@ -428,3 +428,14 @@ Order256 snapshot 2026-09-11T02:44:56.521555+00:00: 40,693 groups,
 The count of complete candidate resolutions remains11, all awaiting
 outside review and further novelty checks. The48-hour goal remains
 active; no external messages or Git pushes.
+
+## 2026-09-11T02:59:43.105493+00:00 — Twelfth candidate: 18.76
+
+Constructed a nonsplit extension of D_add by F2 x F2 over a countable
+division closure of its group algebra. The explicit iterated semidirect
+product proves existence, and the four lift equations prove nonsplitting
+in every characteristic. Primary division-ring hypotheses audited.
+All five exact group-ring control batches and all 27 GAP matrix controls
+pass. Proof and internal audit committed; novelty and outside review
+remain open. Order256 search snapshot: 42,348 counted, zero equalities,
+85 reversals, 12 live and four complete ranges, all log checks PASS.

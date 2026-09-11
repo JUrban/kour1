@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T02:44:56.647756+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T02:59:43.105493+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 18.76 | Explicit crossed extension over a division closure of k[F2 x F2]. | Complete internally checked negative candidate. Group-ring controls in five characteristics and 27 GAP obstruction checks PASS; novelty and outside review pending. |
 | 17.100 | Odd-degree characters on odd-size classes. | Full library screen:215 simple-table entries,12,606 pairs, no counterexample. Alternate simplicity criterion and eight actual-group controls PASS. General problem unresolved. |
 | 17.124 | Effective enumeration of ordinary metabelian presentations. | Prior9 September2026 claim by Jayadevan; exact main theorem read, full proof and Lean files unaudited. Exclude from new-result priority. |
 | 18.18 | Interpret arbitrary finite H as a common centralizer in H x S_n. | Proves nonenumerability of the cofinite theory. Its complement remains unresolved; partial result, no novelty claim. |
