@@ -248,3 +248,20 @@ have not been audited. It claims that the known group of order 3^84
 is an E-group, using a closure calculation on 9,841 projective points.
 Exclude this from new-target priority pending fuller literature review;
 we do not claim to have independently verified that published claim.
+
+## Problem 16.20
+
+Primary definition confirmed by Shakhova2005, p.239,
+https://www.mathnet.ru/eng/al108 , and Budkin2008, pp.542--543,
+https://www.mathnet.ru/eng/al374 : the domain group need not belong
+to each target quasivariety. The printed PDF page98 was visually read.
+Budkin2007, https://www.mathnet.ru/eng/al7 , Section3 was read with
+Theorems5--7 and their hypotheses. Page40 states that embedding M3
+was then unknown. Theorem6 assumes the natural map is a lattice
+anti-homomorphism, which is not asserted for our construction. Section4's
+radical and representation construction was compared as well. The2008
+introduction was read and its remaining text screened; its full proofs
+were not audited. The2004 StudiaLogica paper was located at abstract
+level only. No prior perfect central-product example or resolution was
+found in a limited English/Russian search. Exact reading scope and
+public links are in research/16.20-review.md. Novelty remains pending.

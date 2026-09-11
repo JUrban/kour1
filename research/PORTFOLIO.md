@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-11T00:47:45.470414+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T01:22:03.231079+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -19,6 +19,7 @@ Updated 2026-09-11T00:47:45.470414+00:00. This is a research triage list, not an
 | 10.35 | Quarter-turn semidirect product and a centralizer-algebra obstruction in degree two. | Sixth complete candidate: torsion-free subgroup of GL_2(C) not residually GL_2(Q), even allowing torsion images. Exact matrix controls passed; novelty and outside review pending. |
 | 16.28(a) | Keep a nonclosed class square in a separate infinite-order scalar fiber of every higher power. | Seventh complete candidate over an algebraic closure of F_5(t); field and reducibility assumptions explicit. GAP and Python controls passed. Part (b) is a prior-literature consequence. |
 | 14.22 | Finite coefficient supports and torsion-free amalgams separate a radical commutator from every finite isolated closure. | Eighth complete candidate, with G=Q or the nonabelian linear group Q * Z. Both groups are infinitely generated; exact polynomial-matrix and normal-form controls pass. Novelty and outside review pending. |
+| 16.20 | Finite central products of perfect groups realize every normal subgroup as a dominion. | Ninth complete candidate affirmative answer. A group of order 44,029,440 has the 15-element modular nondistributive dominion lattice; a seven-factor variant also gives exactly M3 if every target quasivariety must contain A. GAP and independent binary controls pass; novelty and outside review pending. |
 | 17.34 | A class-preserving PBW module gives a strong self-amalgam over a divisible subgroup. | Independent proof retained, but the answer already follows from the fixed-class filtered Lie amalgamation theorem of d'Elbee--Muller--Ramsey--Siniora (2023/2024). Excluded from the new-candidate count. |
 | 21.42 | Positive gradings of three-generator class-three Malcev Lie algebras. | Negative answer follows from existing 2003 grading and 2021 self-similarity results; independent grading derivation retained as a rediscovery. Excluded from new-theorem count. |
 | 18.43 | Exact modular trace fingerprints of positive binary necklaces, with symbolic certification for collisions. | Lengths 1–36 complete with no collision; detailed counts in results/18.43-summary.json. Independent small checks passed. |
@@ -27,7 +28,7 @@ Updated 2026-09-11T00:47:45.470414+00:00. This is a research triage list, not an
 | 12.69 | Norm or trace from Q(i) to Q violates the literal conclusion. | Formulation inconsistency: the same example contradicts the claimed uncountable analogue. Not counted as a substantive new solution without resolving the missing qualification. |
 | 15.89 | Exact two-by-two Laurent matrix for infinite-dihedral Cayley graphs. | Proved positive subclass for every finite inverse-closed generating set. Independent exact controls pass; the general vertex-transitive problem remains unresolved. No novelty claim. |
 | 11.46(a) | Finite E-groups of class three. | August 2026 preprint arXiv:2608.07275v1 claims a construction of order 3^84. Primary abstract read, full proof unaudited; exclude from new-target priority. |
-| 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | Certified counterexample to the stronger inequality at order64, with independent counts. Equality question still open; all7,011 groups through255 complete with zero nonabelian equality hits and54 reverse inequalities. Order256 is running in16 workers. |
+| 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | Certified counterexample to the stronger inequality at order64, with independent counts. Equality question still open; all7,011 groups through255 complete with zero nonabelian equality hits and54 reverse inequalities. Order256 snapshot: 30,421 counts, 0 equality hits, 82 reverse inequalities, 14 live workers and 2 completed ranges; all checks pass. |
 
 The index contains 1,308 main-body problem entries, including all 150 Issue 21 entries. Exactly 104 headings are starred, but partial solution markers also occur within unstarred entries. Older issues remain to be surveyed systematically. The separate solved archive is intentionally excluded from the index.
 

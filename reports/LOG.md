@@ -311,7 +311,7 @@ or Git pushes have been made.
 
 Order256 snapshot 2026-09-11T00:47:45.332946+00:00: 24,693 groups, 0 equality hits, 80 reverse inequalities, 15 live workers, 1 completed range, all checks PASS.
 
-At 2026-09-11 01:25 UTC, retained a proved positive subclass of 15.89:
+At 2026-09-11 01:20 UTC, retained a proved positive subclass of 15.89:
 every complex number is an adjacency eigenvalue for every connected
 finite-valency Cayley graph of the infinite dihedral group. A binary
 coefficient induction rules out a nonzero constant Laurent determinant.
@@ -321,3 +321,22 @@ neighbor-action controls passed. This is not a full Notebook solution
 and has no novelty claim. Trofimov's 2024 paper was compared with
 explicit reading limitations. A new August 2026 E-group preprint was
 also located; 11.46(a) is excluded from new-target priority on that basis.
+
+At 2026-09-11T01:22:03.231079+00:00, completed the ninth candidate resolution,16.20.
+The finite perfect central-product construction makes every normal
+subgroup a dominion. Its full dominion family is modular and has a
+nondistributive central diamond. The smaller example has order
+44,029,440 and exactly15 normal subgroups, independently constructed
+and enumerated in GAP. A seven-factor variant also covers the stricter
+convention requiring A in every target quasivariety, giving exactly M3.
+All factor, binary-code, quotient-support, and lattice checks pass.
+The printed page and primary definition were checked. Budkin2007's
+conditional semidistributivity theorem was compared carefully; it does
+not impose an extra condition on the Notebook question. No prior
+resolution surfaced in the limited search. Internal audit is written;
+novelty and external review remain pending.
+
+Order256 snapshot 2026-09-11T01:20:27.451407+00:00: 30,421 groups,
+0 equality hits, 82 reverse inequalities,
+14 live workers and 2 completed ranges, all checks PASS.
+The48-hour goal remains active. No external messages or pushes.

@@ -1,0 +1,106 @@
+{
+  "problem": "16.20",
+  "status": "PASS",
+  "primes": [
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29
+  ],
+  "simple_orders": [
+    168,
+    660,
+    1092,
+    2448,
+    3420,
+    6072,
+    12180
+  ],
+  "group_order": 599766788342131458048000,
+  "binary_code": [
+    0,
+    11,
+    21,
+    30,
+    38,
+    45,
+    51,
+    56,
+    71,
+    76,
+    82,
+    89,
+    97,
+    106,
+    116,
+    127
+  ],
+  "code_dimension": 4,
+  "centre_order": 8,
+  "normal_subgroups_by_proved_classification": 199,
+  "normal_interval_above_H": 154,
+  "factor_supports_tested": 2609,
+  "endomorphism_supports": [
+    0,
+    127
+  ],
+  "restricted_centre_dominions": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      6,
+      7
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  ],
+  "modular_identities_checked": 584430,
+  "nondistributive_witness": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      6,
+      7
+    ]
+  ],
+  "scope": "Small GAP factors and exhaustive binary controls; full group proof is structural."
+}
