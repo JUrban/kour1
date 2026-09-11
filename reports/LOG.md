@@ -1497,3 +1497,25 @@ needed. The exact criterion was read in BKL2020 Remark1.8 and
 visually verified; Scott1990 was read in full for attribution.
 Original Weiss and Roggenkamp--Scott proofs were not independently
 read. This is prior work, keeping26 possible-new candidates.
+
+
+## 2026-09-11T16:36:08.630092+00:00 — Candidate27: scattered compact obstruction for9.47
+
+The original Protasov1986 Lemma2 supplies the missing containment
+neighborhood fact. After reading its antecedent in Komarov--Protasov
+1981, expanded the compact-family proof in full: an assumed failure
+creates an infinite closed discrete family inside a compact space.
+Thus every compact family of noncompact subgroups has a clopen
+selector. Dow--Watson1990 supplies a height-four compact without one;
+its full topology, almost-disjoint coding, derived sets and diagonal
+contradiction are now written explicitly. The counterexample itself
+is prior and credited; the connection to9.47 is a possible-new
+application pending novelty checks. The positive direction is also
+proved using a discrete abelian group and both Vietoris subbases.
+
+Twenty-seven audit points and exact source reading scopes are
+recorded. No finite computation is substituted for this uncountable
+topological proof. There are27 complete candidates and0 outside
+reviews. At16:34:59 UTC all six n=7 verifiers remained live, with
+11,500,000 nodes checked and16,316,148KiB combined RSS. Local work
+and local commits only; no communication or push.

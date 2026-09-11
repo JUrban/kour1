@@ -1,0 +1,271 @@
+COMPACTNESS               IN T H E      LATTICE          OF    SUBGROUPS
+OF     A TOPOLOGICAL                GROUP
+
+          Yu.    A.   Komarov         and    I.   V.    Protasov                                                             UDC 519.46
+
+
+          The study of topological groups with r e s p e c t to the p r o p e r t i e s of s y s t e m s of t h e i r closed subgroups is one
+of the main directions of the algebraic theory of topological groups. In this connection, as the defining r e s t r i c -
+tions, as a rule we choose suitable analogs of r e s t r i c t i o n s f r o m the domain of d i s c r e t e groups. Basing on the
+topology of a group G, we can introduce a topology in the lattice ~ (G) of its closed subgroups, which, in its
+t u r n , opens up new possibilities for the study of groups with r e s p e c t to the p r o p e r t i e s of the topologized s y s -
+tems of their closed subgroups. Since even in the case of a discrete group G the topology in ~ (6)" is, in gen-
+e r a l , nontrivial, in this way there a r i s e new results in the theory of discrete groups also.
+       Let G be a topological group, ~e (6) be the lattice of its closed subgroups that is equipped with the E -
+topology (see [1]). The s t r u c t u r e of locally compact groups with a compact lattice ~e (6) (the EK-groups) has
+been studied m [1]. Let us denote the families of the monothetic, the Abelian, and the n o r m a l subgroups f r o m
+~e (6) by 9~ (6), ~ (6), and 9} (6) , r e s p e c t i v e l y , and the families of the compact and the noncompact subgroups
+from ~e (6) by ~ (6} and n~ (6), r e s p e c t i v e l y .
+      We retain the t e r m i n o l o g y and the notation of [1]; in p a r t i c u l a r , in the sequel only closed subgroups of a
+topological group will be cMied its subgroups. All the c o n s i d e r e d topological groups, unless stated otherwise,
+are supposed to be locally compact.
+
+1.     Compact        Subsets      of ~(6)
+      LEMMA 1. Let ~ be a compact set of compact subgroups f r o m ~E(6).                         Then all subgroups from ~ are
+contained in a compact subset F of G.
+        Proof.    Let U be a compact neighborhood of the identity.               Since ~ is compact, the covering {D, (HU), HE~}
+                                                                                                                                  n
+
+contains a finite subcovering{D~(HiU), . . . , DI(HnU)}. Then each subgroup from ~ is contained in F = UHhU.
+                                                                                                                                 k~l
+
+
+      LEMMA 2, Let a noncompact subgroup H be a limit point of a subset ~ of ~s (G). If {} does not contain
+any infinite discrete closed subset, then H is a limit point of the set of subgroups from ~ that are contained
+in H.
+      Proof. Assuming that no subgroup from ~ is contained in H, we construct an infinite discrete closed
+subset of ~.
+        Let us observe that for each neighborhood ~ of the subgroup H the set F =                        U   (X\H) is noncompact.
+                                                                                                       xe~a~
+     the c o n t r a r y case, we choose an h E H and a neighborhood V of the identity such that F rl Vh = ~                    and
+FNFV!I=~.     L e t X E~IT~RI~D2(Vh) and xEXflVh. Since F O V h = ~ , i t f o l l o w s t h a t x E H .              If zEX~H, then
+zx EFVh, and, on the other hand, zx EX~H ~_F, which contradicts the relation Y NFVh -=~.
+     Let U be a compact neighborhood of the identity, H i be an arbitrary subgroup from ~ , and xIEHx\H.
+We take a compact neighborhood V I of x I that is disjoint from H. Since H~G~V~I H is a limit point of the
+subs et ~1 =~}NDI(G~VI). Since U ( X \ H ) is not compact, we can choose H 2 from ~1 such that x2Ul~xxU=~
+                                    xe~,
+for a certain x 2 E H2. Let V2 be a compact neighborhood of x 2 such that Vz NH----~. Let us set ~}e=~1-NIJI(G'~Ve} and
+choose Ha E~2 such that x3Uf]xIU~- ~ and x~(]Nx~U= ~ for a certain x 3 E H3. Continuing this process, we construct
+a sequence of subgroups {Hi}, a sequence of elements {xi}, and a sequence of their neighborhoods {Vi} such that
+x~EHi\H and V~(I H -~ Z for each natural number i and H~ ~ D~(V~)for k >i and x~UNx~U---~K~ for i a j.
+
+     Kiev State University. Translated from Ukrainskii Matematicheskii Zhurnal, Vol, 33, No. 2, pp. 184-
+189, March-April, 1981. Original article submitted June 15, 1979.
+
+
+
+
+                         0041-5995/81/3302-0145507.50              9 1981 Plenum Publishing Corporation                                  145
+        L e t us set ~ = {H1..... H ..... }. Since the n e i g h b o r h o o d D2(Vn) of the group Hn contains only a finite n u m -
+b e r of s u b g r o u p s f r o m ~ , it follows that ~ is d i s c r e t e . Suppose that K E ~ , but K ~ .                          Since Hk~D2(V~)for
+any k > i, it follows that x f ~ K , i = 1, 2 . . . . .              By c o n s t r u c t i o n , the set {x 1. . . . . x n . . . . } is c l o s e d ; h o w e v e r ,
+the n e i g h b o r h o o d D~(G~{xl ..... x ..... }) of the s u b g r o u p K does not contain any s u b g r o u p f r o m 9. T h e r e f o r e
+   = ~ , and the [ e m m a is p r o v e d .
+       C O R O L L A R Y 1. If a n o n c o m p a c t s u b g r o u p H is a l i m i t point of a c o m p a c t s u b s e t ~ of ~ ( G ) , then it is
+a limit point of the set of those s u b g r o u p s f r o m ~ that a r e contained in it.
+       C O R O L L A R Y 2. L e t ~ be a l i n e a r l y o r d e r e d (by inclusion) set of n o n c o m p a c t s u b g r o u p s of G. If ~ is
+contained in a c o m p a c t s u b s e t of ~z(6), then it is w e l l - o r d e r e d . In p a r t i c u l a r , G s a t i s f i e s the m i n i m a [ i t y c o n -
+dition f o r n o n ~ o m p a c t s u b g r o u p s f r o m a c o m p a c t s u b s e t ~ of L~ (6).
+       P r o o f . L e t ~ be an a r b i t r a r y s u b s e t of ~. We n u m b e r the s u b g r o u p s of ~ b y indices f r o m a c e r t a i n
+set J and a s s u m e that H = ~ - ] H ~ r          We l e t a > ~ i f H ~ H ~ .    Since ~ is c o m p a c t , the n e t {Ha}, h E J , has
+                                        aEJ
+
+an a d h e r e n t point K. It follows f r o m L e m m a 4 of [1] that H ~ K. Suppose that H ~ K and x E K \ H . We take a
+c o m p a c t n e i g h b o r h o o d V of the point x that is disjoint f r o m H. L e t us o b s e r v e that H~(1V,~ ~ f o r any a E J ,
+o t h e r w i s e t h e r e would e x i s t a 8 E J such that H~D,~ (V) f o r any a > 8. The c e n t e r e d s y s t e m of c l o s e d s e t s
+{H~ N V}, ~ E ], has a c o m m o n point g E V N H since V is c o m p a c t . This c o n t r a d i c t s the a s s u m p t i o n that V N H ---- ~ .
+T h e r e f o r e K = H. Since n~(6) is c l o s e d in the E - t o p o l o g y , it follows that H is n o n c o m p a c t and we can d i r e c t l y
+use C o r o l l a r y 1 of L e m m a 2.
+           R e m a r k 1. If a n o n c o m p a c t s u b g r o u p H is a limit point of a sequence of n o n c o m p a c t s u b g r o u p s {}In}, then
+H is a limit point f o r t h o s e s u b g r o u p s of the s e q u e n c e which a r e c o n t a i n e d in it. Indeed, on a s s u m i n g the c o n -
+t r a r y , we can suppose that H,,\H=/= ~ f o r any n a t u r a l n u m b e r n. L e t U be a c o m p a c t n e i g h b o r h o o d of the iden-
+tity. Using the n o n c o m p a c t n e s s of H~,\H, we can e a s i l y c o n s t r u c t a sequence {Xn} of e l e m e n t s of G such that
+x~,EH~\H : and x~UNx~4J= ~ f o r i ~ j. The set X = {x~ . . . . . Xn . . . . } is c l o s e d ; h o w e v e r the n e i g h b o r h o o d
+D~iff:~.X} of the s u b g r o u p H does not contain any s u b g r o u p Hn.
+        L E M M A 3.       L e t H and X b e , r e s p e c t i v e l y , a n o n c o m p a c t and a c o m p a c t s u b g r o u p of a topological g r o u p
+G. If ~ = {x-~Hx, x EX} is contained in a c o m p a c t s u b s e t of ~e (6), then it is finite.
+       P r o o f . At f i r s t , we show that ~ is c l o s e d in ~e(G). L e t F be an a d h e r e n t point of ~ and suppose that
+{xhtHxa}, a e J , is a net of s u b g r o u p s f r o m ~ that c o n v e r g e s to F. The net {xa}, ~ E J , has a subnet {xfl},
+8 E J1, that c o n v e r g e s to a c e r t a i n x ~ X. If y = x - t h x E x - t H x , but y ~ F , then by virtue of r e g u l a r i t y of the
+space G t h e r e exist open s e t s U and V such that F ~ U, g E V a n d U N V = ~ .                    Then, s t a r t i n g f r o m a c e r t a i n
+81 ~ J~, we have x~i,ix/~ ~ D~(U), and s t a r t i n g f r o m a c e r t a i n fi2 E Jr, x~;hx/~ E V, which c o n t r a d i c t s the choice of
+U and V. T h e r e f o r e x-~Hx~F. F u r t h e r , let f ~ F and {xT}, ~/ E J~, be a subnet of {xfl}, fl E J~, such that
+{XTtHHTx~/}, 7 ~ J2 and h./ ~ H f o r e a c h ~/ E J~, c o n v e r g e s t o f . Then f = x-~h~x, w h e r e ht E H and f E x - t H x .
+Hence F ~_ x-~Hx a n d , finally, F = x-~Hx.
+          L e t us suppose that ~ is infinite and y-~HHy is a limit point of 9. By virtue of C o r o l l a r y 1 of L e m m a 2,
+t h e r e e x i s t s a s u b g r o u p z-~HzE~ such that z-~Hz~g-~Hg and z-~Hz ~ y - ~ H y . But then we can e a s i l y c o n s t r u c t
+an infinite d e c r e a s i n g chain of s u b g r o u p s f r o m ~, which c o n t r a d i c t s C o r o l l a r y 2 of L e m m a 2.
+         C O R O L L A R Y . L e t H be a n o n c o m p a c t s u b g r o u p of a totally d i s c o n n e c t e d group G and U be an open c o m -
+p a c t subgroup. If a c o m p a c t s u b s e t F of ~ ( 6 ) contains {x-lHx, x E U} and also all those s u b g r o u p s of X which
+contain H, then H is open.
+          P r o o f . By L e m m a 3, H is n o r m a l i z e d by a c e r t a i n open s u b g r o u p V of U. T h e r e f o r e HF is a subgroup
+f o r e a c h s u b g r o u p F of V, and the c o r o l l a r y follows i m m e d i a t e l y f r o m C o r o l l a r y 2 of L e m m a 2.
+
+2.    Compactness                o f ~0~(6), 92(6) , a n d ~ ( 6 )
+        The t o p o l o g i c a l group G is not a s s u m e d to be locally c o m p a c t in T h e o r e m s 1 and 2.
+        T H E O R E M 1. ~ ( G i         is c o m p a c t in the E - t o p o l o g y if and only if ~ ( G ) is c o m p a c t .
+         P r o o f . Suppose that ~ ( 6 ) is c o m p a c t and let {Ha}, a E J , be an a r b i t r a r y set of s u b g r o u p s of G. The
+n e t {Ha} , a E J, has a subnet {Hfi}, 8 E J1, that S - c o n v e r g e s to a c e r t a i n s u b g r o u p H (see [2]). We show that
+{Hfl}, 8 E Jl~ c o n v e r g e s to H in the E - t o p o l o g y . By virtue of the definitions of S - c o n v e r g e n c e and the E - t o p o l -
+o g y , it is sufficient to v e r i f y that f o r e a c h open set U ~ H t h e r e e x i s t s a 80 ~ J[ s u c h that H~ ~ U f o r a[[ fl > 80.
+
+
+
+146
+Let us a s s u m e the c o n t r a r y . Then there exist an open set U 0 that contains H and a subnet {H7}, 7 E J2, of the
+net {H~}, fi ~ J1, such that H7 is not contained in U0 for any 7 E J2. We select an element h~/ g U0 from each
+subgroup H7 . Since ~ (6) is p r e c o m p a c t , the net {(-~}}, y E J2, has a subnet {(-~}}, w E J3, that c o n v e r g e s in
+the E-topology to a certain subgroup K. It follows from the definition of the E-topology that K is not contained
+in U 0. Since each net of subgroups that is convergent in the E-topology is S - c o n v e r g e n t , the net {<"~}, w E J3,
+S - c o n v e r g e s to K. Since (h~) ~ H r for each w E J3, it follows that K ~ H. We have obtained a contradiction
+with the fact that K is not contained in U 0.
+         COROLLARY 1. ~(G)            is c o m p a c t in the E-topology if and only if 3E(6) is compact.
+       Proof. Since ~ ( 6 ) ~ 9~(G),: n e c e s s i t y of the condition follows f r o m Theorem 1.      Sufficiency of the con-
+dition follows from L e m m a 2 of [1].
+         COROLLARY 2.          If G is locally compact and ~(G) is compact in the E-topology, then G is compact.
+        Proof. It follows f r o m T h e o r e m 1 that ~e (6) is compact. If G is not compact, then by L e m m a 10 of [1]
+it contains a subgroup A that is isomorphic to either Cp~ o r Rp. By L e m m a 3 of [1], ~AE~(G). However
+   (G) = ~J~(6): T h e r e f o r e G is compact.
+      COROLLARY 3. If G is a totally disconnected locally compact group, then ~ ( 6 ) is compact in the E -
+topology if and only if G is compact.
+          Proof. Compactness of G under the condition of c o m p a c t n e s s of ~(G) follows f r o m C o r o l l a r y 2. The
+converse follows f r o m the fact that if a net {x~}, ~ E J, of elements of a totally disconnected c o m p a c t group
+converges to x, then the net of subgroups {<xc~}}, c~ E J , converges in the E-topology to <x} (see the proof of
+T h e o r e m 1 in [3]).
+      R e m a r k 2. In general, c o m p a c t n e s s of G does not imply c o m p a c t n e s s of ~0~ (6). As an example, we can
+take an a r b i t r a r y connected compact Abelian group of weight g r e a t e r than the cardinality of the continuum.
+        A topological group G is said to be c r a m p e d (see [4]) if each subset of pairwise noncomparable subgroups
+f r o m ~ (G)' is finite.
+         THEOREM 2.          The lattice ge (6) of each compactly coverable c r a m p e d group G is compact.
+        Proof. By virtue of T h e o r e m 1, it is sufficient to verify that ~ ( 6 ) is compact. Let {(--~}}, c~ E J, be
+an a r b i t r a r y net of monothetic subgroups of G. We select f r o m it a subnet {{-'~-fl}}, fi E Jr, that S - c o n v e r g e s to
+a certain subgroup X. If all subgroups <x/3 } starting f r o m a certain index are contained in X, then the net
+{(-~fi}}, fl E Ji, converges to X in the E-topology also. Otherwise there would exist a subnet {(-~T}}, ~/ E J2,
+such that no subgroup <x~/> is contained in X. Since G is c r a m p e d and the net {(--xT)}, ~/ E J2, S - c o n v e r g e s to
+X, we can find a To E J2 such that (x~) ~(x~0 ) for all ~/ > ~/0. Since S-convergence is equivalent to convergence
+in the E-topology in the lattice ~((x~0)) of the c o m p a c t group <x~/0}, the net ~{~T}}' T E J2, converges to X in
+the E-topology.
+
+         COROLLARY.          The lattice 3e(G) of each locally compact c r a m p e d group G is compact.
+           Proof,    This c o r o l l a r y follows from the fact that each locally compact c r a m p e d group can be compactly
+c o v e r e d [4].
+         R e m a r k 3. Since ~e(G) is compact for each compact group G, c o m p a c t n e s s of the lattice ~ e (G) does not
+imply that G is c r a m p e d . However in the case of a noncompact locally compact group G, by virtue of [1, 4],
+c o m p a c t n e s s of ~e (G) is equivalent to c r a m p e d n e s s of G. [t is interesting to prove this fact without using the
+description of locally compact groups with compact lattice ge (G) and also of locally compact c r a m p e d groups.
+     THEOREM 3.             If G is a nilpotent group, then ~(G) is compact in the E-topology if and only if              s       is
+compact.
+           Proof. Since ~(6) is closed in 3e(6) [1, L e m m a 2], the sufficiency of the condition is obvious. Let us
+prove the n e c e s s i t y of the condition. We observe that if gt(G) is compact in the E - t o p o l o g y , then gt (H) and
+N(G/N), where H is a central and N is a n o r m a l subgroup of G, are compact [1, L e m m a s 2 and 5]. T h e r e f o r e ,
+it is natural to c a r r y out the proof by induction on the degree of nilpotence of G. The t h e o r e m is obvious for
+Abelian groups. It follows f r o m the r e s u l t s of [5] and C o r o l l a r y 2 of L e m m a 2 that G can be compactly covered.
+F u r t h e r , we a s s u m e that G is not compact and Z is the c e n t e r of G.
+        Let us suppose that G is a totally disconnected p - g r o u p and let us consider two c a s e s .
+
+
+
+
+                                                                                                                                   147
+           I) G/Z is not compact.  By the induction hypothesis and Theorem                                      4 of [I], G/Z      is isomorphic          to either
+ Cp~     or Rp. Since Z is central, it follows that G is Abel[an.
+          2) G/Z       is compact.          Then     Z is isomorphic            to either Cpoc or Rp, and, by Corollary                 2 of Lemma            2, G/Z
+ is finite.       Let al, .... a n be representatives                   of cosets of G modulo         Z and Z ~ Cp~.             The subgroup          N = (al,...,
+ a n } is finite and normal in Z; moreover,    G = ZN.                            Further, G/Z N N'~ (Z/Z (l N) X (N/Z N N). Since Z/Z N N ~_-Cp,,
+ and N/ZNN       is a nilpotent p-group, we necessarily                           have N-----ZI]N and G -~ Cp~ (otherwise, the center of
+ G/Z(IN would have a noncompact                        lattice of subgroups).            The case Z ~ Rp is reduced                to the one considered            by
+ factorization by an open compact                     subgroup of Z.
+          Thus,      if G is totally disconnected,                 then a Sylow p-subgroup           of G is either isomorphic              to Cpr       or Rp or it
+ is compact.          Using     Corollary        2 of Lemma            2, we conclude     that ~E (G) is compact.
+          Let us assume that the connected component G O # e. Factoring G by a certain subgroup of Go, we can
+ assume     that G o ~- T. By what we have proved above, ~(G/G0) is compact.      Let G/G o'~ C ~ X... XC ~ X K,
+                                                                                                                                           Pl                 Pn
+P~, . . . . Pn b e d i f f e r e n t p r i m e n u m b e r s , K be f i n i t e , and the o r d e r of K b e n o t d i v i s i b l e b y Pl, . . . . Pn. L e t M
+denote the i n v e r s e i m a g e in G of a s u b g r o u p i s o m o r p h i c to C ~ X -.- X r ~, and N denote the i n v e r s e i m a g e of a
+                                                                                             Pl           Pit
+
+s u b g r o u p i s o m o r p h i c to K. Since G o is c e n t r a l and M / G 0 is the union of a s e q u e n c e of c y c l i c s u b g r o u p s , it
+f o l l o w s that M is A b e l [ a n . F u r t h e r , N =6oUGob~U...UGob,,,, w h e r e , s i n c e G O is d i v i s i b l e and c e n t r a l , we can
+a s s u m e t h a t b 1. . . . , b m a r e e l e m e n t s of f i n i t e o r d e r . Since N h a s o n l y a f i n i t e n u m b e r of e l e m e n t s of o r d e r n
+f o r e a c h n a t u r a l n u m b e r n, the e l e m e n t s b ~ , . . . , b m a r e c o n t a i n e d in a f i n i t e n o r m a l s u b g r o u p N 1 of G and
+G = MN 1. Since M n o r m a l i z e s N~ a n d d o e s n o t have any s u b g r o u p of f i n i t e i n d e x , it f o l l o w s that M c e n t r a l i z e s
+Nt. T h e r e f o r e , M is c e n t r a l in G and ~ ( M ) ~ ~ ( 6 ) . H o w e v e r Go_~ M , and t h e r e f o r e ~e (M) i s n o t c o m p a c t
+[1, T h e o r e m 4]; we h a v e o b t a i n e d a c o n t r a d i c t i o n w i t h the c o m p a c t n e s s of ~(G). T h e c a s e G/Go~ RpXK i s
+c o n s i d e r e d in the s a m e m a n n e r .
+
+           R e m a r k 4. T h e o r e m 3 c a n n o t be e x t e n d e d e i t h e r to s o l v a b l e o r to Z A - g r o u p . L e t G be the s e m i d i r e c t
+p r o d u c t of a d i s c r e t e q u a s i c y c l i e g r o u p F with a g r o u p of s e c o n d o r d e r . Since e a c h n o r m a l s u b g r o u p of G is
+e i t h e r c o n t a i n e d in F o r c o i n c i d e s with G, it f o l l o w s t h a t ~ (G) is c o m p a c t in the E - t o p o l o g y . H o w e v e r , ! ~ (G)
+is n o t c o m p a c t .
+
+3.     Compactness                  o f ~(G), ~ ( G ) ,          and    n~(G)
+         T H E O R E M 4. ~ (G)             is c o m p a c t in the E - t o p o l o g y if and only if G i s the e x t e n s i o n of an E K - g r o u p by
+m e a n s of a p u r e g r o u p .
+
+             P r o o f . L e t ~(G) b e c o m p a c t and K(G) b e the s e t of c o m p a c t e l e m e n t s of G. By L e m m a 2 of [1] and
+T h e o r e m 1, e a c h c o m p a c t l y c o v e t a b l e s u b g r o u p of G i s an E K - g r o u p . B y v i r t u e of T h e o r e m 3 of [6], it is
+s u f f i c i e n t to show t h a t K(G) is a s u b g r o u p . L e t us c o n s i d e r the f o l l o w i n g two c a s e s :
+
+      I) ~(G)rI~(G) ~_~(G). By L e m m a 1, K(G) is c o n t a i n e d in a c o m p a c t s e t a n d , b y v i r t u e of [7], in a c o m ,
+pact normal subgroup.
+
+         2) 93l (G) N ~ (G) c o n t a i n s a n o n c o m p a c t s u b g r o u p H. It f o l l o w s f r o m C o r o l l a r y 1 of L e m m a 2 that the s e t
+of c o m p a c t e l e m e n t s is d e n s e in H. By L e m m a 2 of [1], H i s A b e l [ a n . T h e r e f o r e , H c a n b e c o m p a c t l y c o v e r e d
+and i s , c o n s e q u e n t l y , an E K - g r o u p . A g a i n t h e r e a r e two p o s s i b i l i t i e s :
+          2a) H c o n t a i n s a s u b g r o u p A -~ Cp~o.           L e t x ~ K(:G). By L e m m a 3, H is n o r m a l i z e d b y a s u b g r o u p X of
+( x ) of finite index. Since ( H , X ) = HX can b e c o m p a c t l y c o v e r e d , it f o l l o w s b y T h e o r e m 4 of [1] t h a t x h a s a
+f i n i t e o r d e r n. L e t us s e t ~ = {g-~ ( x ) g, g EG}. It f o l l o w s f r o m the p r o o f of L e m m a 8 of [1] t h a t e a c h a d h e r e n t
+p o i n t of ~ c o n t a i n s a t m o s t n e l e m e n t s .     Therefore       ~ ~ ~(G) a n d , b y L e m m a 1, U g - ' x g         is c o m p a c t ,    using
+[7], we c o n c l u d e t h a t K(G) i s a s u b g r o u p .                                                               ~a
+            2b) H c o n t a i n s a s u b g r o u p B ~- Rp. L e t us s u p p o s e t h a t g - t B g ~ B f o r a c e r t a i n g ~ G. By L e m m a 3, a
+n o n t r i v i a l s u b g r o u p Y of g - l B g n o r m a l i z e s B. Since B can b e c o m p a c t l y c o v e r e d , Y is an E K - g r o u p . By
+T h e o r e m 4 of [1], Y ~ B and g-lBg[IB=/=e. If g - t B g : B , then (g-IBg, B}/(g-IBgNB) c o n t a i n s two d i f f e r e n t
+s u b g r o u p s t h a t a r e i s o m o r p h i c to Cp~o, w h i c h c o n t r a d i c t s 2a). T h e r e f o r e B is n o r m a l in G. L e t F b e an open
+c o m p a c t s u b g r o u p of B. Since e a c h c o m p a c t e l e m e n t of G, a c t i n g b y c o n j u g a t i o n s on B , f i x e s F , F is n o r m a l
+in ( K ( G ) } . Since ( K ( G ) } / F c o n t a i n s a s u b g r o u p t h a t i s i s o m o r p h i c to Cpr it is a d i s c r e t e E K - g r o u p . Hence
+
+
+
+
+148
+it follows immediately that (K(G)} : K(G), and n e c e s s i t y of the condition is proved.
+       Sufficiency of the condition fellows f r o m L e m m a 5 of [1].
+     COROLLARY. ~ (6) is compact in the E-topology if and only if G is the extension of a compact group
+by means of a pure group.
+       Proof.    This c o r o l l a r y follows f r o m the description of an EK-group and Theorem 4.
+          A topological group G with the set n} (G) compact in the E-topology is called an ES-group. Since n~ (6)
+is closed in ge (6), each E K - g r o u p is an ES-group. Another example of E S - g r o u p s is the Schmidt topological
+group, i . e . , a noncompact group, all p r o p e r subgroups of which are compact. M o r e o v e r , it follows f r o m
+C o r o l l a r y 2 of L e m m a 2 that each noncompact ES-group contains a Schmidt subgroup. Therefore description
+of an ES-group is possible only up to a Schmidt group. Let us recall that Abelian Schmidt groups are exhausted
+by Cp~ and Rp.
+      THEOREM 5. The following types of groups exhaust the c l a s s of the E S - g r o u p s that do not contain non-
+Abelian Schmidt subgroups:
+       1) compact groups;
+      2) C ~ X . . . X Coy X K, where p~ . . . . .   Pn are different prime n u m b e r s , K is finite   and the o r d e r of K is
+           Pl
+not divisible by Pl, ...'% Pn;
+       3) finite extensions of Cp~o and pp.
+     THEOREM 6. If a discrete ES-group G contains a non-Abelian Sehmidt subgroup H, then H is n o r m a l
+and G/H is an E K - g r o u p .
+
+                                                 LITERATURE             CITED
+I.     I. V. Protasov, "Topological groups with compact lattice of closed subgroups," Sib. Mat. Zh., "20,
+       No. 2, 378-385 (1979).
+2.     [. V. Protasov, "On local theorems in the theory of topological groups," Dokl. Akad. Nauk SSSR, 24_22,
+       No. 4, 777-779 (1978).
+3.     I. V. Protasov and V. S. Charin, "On projection of topological groups," Mat. Zametki, 2__44,No. 3, 383-
+       389 (1978).
+4.     Yu. N. Mukhin and E. N. Starukhina, "On a condition of finiteness in topological g r o u p s , " Sib. I~Iat.
+       Zh., 155, No. 3, 562-569 (1974).
+5.     V. M. Glushkov, "Locally nilpotent locally compact g r o u p s , " Tr. Mosk. Mat. Obsheh., 4, 291-332
+       (1955).
+6.     V. P. Platonov, "Periodic and compact subgroups of topological groups," Sib. Mat. Zh., 7, No. 4, 854-
+       877 (1966).
+7.     V. I. Ushakov, "Topological FC-groups," Sib. Mat. Zh., 4, No. 5, 1162-1174 (1963).
+
+
+
+
+                                                                                                                                149
+

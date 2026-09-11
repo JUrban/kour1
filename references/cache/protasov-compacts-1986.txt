@@ -1,0 +1,296 @@
+COMPACT SUBSPACES IN THE SPACE OF SUBGROUPS OF A TOPOLOGICAL GROUP
+
+       I. V. Protasov                                                                 UDC 512.546
+
+
+      Let G be a topological group, let ~ (G) be the space of its closed subgroups equipped
+with the E-topology. The open prebase of this topology is formed by the sets DI(U) = {X C ~ (G
+X ~_ U), D2(V) = {X E ~ (O): X N V ~ O } , where U and V run over all open subsets of G. The
+structure of topological groups G for which the space ~ (G) or some of its subspaces satisfy
+various compactness conditions was studied in [I-7]. At the same time, the topological struc
+ture of the space ~(G) itself or its subspaces, in particular, compact ones, has essentially
+never been studied. For instance, a characterization of compact spaces homeomorphic to s
+for a suitable topological group G is unknown (A. V. Arkhangel'skii's problem).
+     The present note the results of which have been announced in [8] obtains a compactness
+criterion for subspaces of ~(O) for an arbitrary locally compact group G. The structure of
+compact subspaces in the subspaces ~(G) and n~(G) of, respectively, compact and noncompact
+subgroups of ~(G) is studied, along with the question when is the topology of the space ~(G)
+determined by the family of its compact sets. All studied groups are assumed to be locally
+compact, and the word "subgroup" refers only to closed subgroups.
+       LEMMA i.    If ~   is a closed countably compact subspace in ~(G), then the subspace K =
+U     F is compact in G.
+
+
+     Proof. We will first show that K is compact. Suppose the contrary. Then there exist a
+compact neighborhood U of the identity of the group G and a sequence {Xn} of elements of K
+such that xiU n x i U = Z for i = j. For each natural number n we choose a subgroup F n 6 ~ in
+such a way that Xn6 Fn. By the countable compactness of ~ , the sequence of subgroups {Fn}
+has a limit point P. Since ~ is closed P 6 9 , therefore, P is a compact subgroup. By con-
+struction, the subspace X consisting of the elements of the sequence (Xn} is discrete and
+closed in G. Thus, X N PU is finite. So there exists a natural number m such that xn ~ P U
+for all n > m. But then the neighborhood DI(PU) of the subgroup P does not contain any sub-
+groups Fn, n > m. This contradicts the fact that P is a limit point of the sequence {Fn}.
+It remains to show that K is closed. Suppose that x 6 K and a directed set {x=), = 6 J , of ele-
+ments of K s             to x. For each a 6 J we choose a subgroup F = 6 ~ in such a way that x~ 6
+F~. Since K is compact, it follows from Vietoris's theorem (p. 52 in [9]) that one can choos,
+in the directed set {Fa}, ~ 6 J , a directed subfamily {F~}, ~6f, converging to some subgroup S.
+Since ~ is closed, $ 6 ~       and, therefore, S___K . It follows from the definition of the E-
+topology and the construction of the family {F~}, ~61 , that x6 S. Thus, x6 K and the lemma is
+proved.
+      LEMMA 2. Let ~ _ ~ ( G ) , H 6 ~ n n~(G). If H has a countabiy compact neighborhood in
+or the character of H in ~ is countable, then D,(H) N ~ is a neighborhood of the subgroup H
+in ~.
+     Proof. Let ~ be a countably compact neighborhood of the subgroup H in ~ 9 Suppose
+that the conclusion of the lemma is false. Then H 6~x,
+                                                    ~   where ~ I = ~ D I ( H ) . By Lemma 2 in
+[3], ~i contains an infinite discrete subspace closed in ~(O) , contrary to the countable
+compactness of ~.
+       Suppose the character of H in ~ is countable and {~n} is a base of neighborhoods of H
+in 9 .    Suppose that the conclusion of the lemma is false and choose in each neighborhood ~n
+a subgroup A n such that A n ~ H . Then the sequence {An} converges to H. Therefore, the sub-
+space ~ whose elements are the subgroups A n does not contain infinite discrete subsets
+closed in ~(G). Since H 6 ~ 2 , an application of Lemma 2 in [3] produces a contradictioD.
+
+
+     Kiev University. Translated from Ukrainskii Matematicheskii Zhurnal, Vol. 38, No. 5,
+pp. 600-605, September-October, 1986. Original article submitted February 25, 1985; revision
+submitted September 3, 1985.
+
+512               0041-5995/86/3805-0512512.50~ 1987 Plenum Publishing Corporation
+     THEOREM i.    A subspace ~     in ~ (G) is compact if and only if the following conditions
+are fulfilled:
+     i) ~   is closed;
+     2) ~   contains no infinite descending chains of noncompact subgroups;
+     3) each closed subspace ~' of ~          contains only finitely many maximal in 9' noncompact
+        subgroups;
+     4) if a closed subspace ~' of ~ contains no noncompact subgroups, then                      U   F   is compact
+         in G.                                                                                  ~'
+     Proof. Necessity. Let 9 be a compact subspace in ~(G). Condition i is obvious. Sup-
+pose that condition 2 is violated and ~ contains an infinite chain F ~ F2~... of noncompact
+subgroups. Since 9 is compact, the sequence {Fn} has a limit point F. It follows from the
+definition of the E-topology that F~_Fn for each n, and this contradicts Lemma 2. Suppose
+that condition 3 is not fulfilled and the subset 91 of noncompact subgroups maximal in 9' is
+infinite. Since ~' is compact, the subset ~i has a limit point H 6 9 ' .     By Lemma 2, there
+exists a neighborhood ~ of the subgroup H in ~', consisting of subgroups contained in H.
+Choose two distinct subgroups F~ and F 2 in ~.   Then F I ~ H , F 2 ~ H . Since H Eg", the maxi-
+mality of the subgroups F~ and F 2 in 9' implies that F~ = F 2. This contradicts the choice
+of the subgroups F l and F 2. Finally, condition 4 follows from Lemma I.
+       Sufficiency. If 9 ~ ( O ) , then the compactness of 9 follows immediately from condition~
+i, 4, and Vietoris' theorem. Suppose that ~ contains noncompact subgorups and put 9 0 = 9 .
+Condition i and Lemma 3 in [i] imply that each noncompact subgroup in 90 is contained in a
+maximal subgroup in 90. By condition 3, the number of such subgroups is finite. Let F~ .... ,
+F n be the noncompact subgroups maximal in 90. Consider an arbitrary covering of 90 with
+open sets and choose among them ~i .....~    such that FI~ ~i .....Fn6 ~n. Put ~I = 90~(~i 0 ...~ ~nl
+If ~i ~ ~(G), then, by the above, ~i is compact and, thus, ~0 is also compact. Otherwise,
+by a similar argument, we construct ~2, etc. We will show that for some natural number m
+~m ~ ( G )  and, therefore, ~0 is compact. Suppose the contrary. Then the set ~m of maximal,
+in 9m, noncompact subgroups is nonempty and, by condition 3, finite for each natural number
+m. Note that for each subgroup K m in ~,~ there exists a chain of subgroups K m ~ K m _ 1 ~ . . . ~ K o ,
+where KiC~i, i = 0, I .... ,m. So some subgroup NoE~0 is the end of infinitely many such
+chains. Among subgroups of ~, contained in N O there exists a subgroup N l through which in-
+finitely many chains pass. Continuing this argument, we construct an infinite descending
+chain of subgroups No~NI~... , contrary to condition 2. The theorem is proved.
+     COROLLARY i.     A subspace ~      in ~(G) is compact if and only if ~ is closed and countably
+compact.
+     Proof. The necessity is obvious. We will prove the sufficiency using Theorem I. Con-
+dition i is obvious. Condition 2 follows from Lemma 2 and condition 4 follows from Lemma i.
+Suppose that condition 3 is violated and ~i if the infinite subset of maximal in ~' noncom-
+pact subgroups. By virtue of its countable compactness, the subset ~i has a limit point H.
+Since ~' is closed, H 6 ~ '     By Lemma 2, 9'ND,(H) is a neighborhood of the subgroup H in
+~'. Thus, there exist subgroups FI, F2E~I, such that Fi--/=F2, Fx~_H, F ~ _ H .   Since the sub-
+groups F x and F 2 are maximal in ~' , it follows that F l = F 2, i.e., we have reached a contra-
+diction.
+     COROLLARY 2. If ~       is a compact subspace of n~(G), then [~I<~.~(~), where m(G) is the
+weight of the group G.
+      Proof. Suppose the contrary and put ~ = ~ .     Since ~ is compact, there exists a sub-
+group F ~ 6 ~ , each neighborhood of which has cardinality greater than m(G). By Lemma 2, ~
+DI(F ~) is a neighborhood of the subgroup F~ in ~x. Thus, [~D~(FO[>~(G). Let {U~,~I}
+be a base of topology of the subgroup F~ and III~(G) . Put ~ = = { H 6 9 ~ D ~ ( F ~ ) : H ~ U ~ = ~ } .
+Clearly, ~,~D,(F~)= ( U ~ = ) u {FI}~   Since ! ~ D x ( F O [ > ~ ( G ) ,   there exists ~6I, such that [ ~ [ >
+
+~(G). Since ~ is closed in 9, ~    is compact. Put ~ = ~ and choose a subgroup F 2 each
+neighborhood of which in ~= has cardinality greater than ~(G). Continuing this argument, we
+construct a descending chain of subgroups F x ~ F = ~ .... which contradicts Theorem i.
+     A topological space is said to be sparse (in Cantor's sense) if each nonempty subspace
+of it contains a point isolated in this subspace.
+
+                                                                                                               513
+       COROLLARY 3.     Each compact set ~      in n~(O) is sparse.
+     Proof. By Theorem i, ~ contains no infinite descending chains of subgroups. So each
+nonempty subspace ~i of ~ contains a subgroup F I minimal in ~i. By Lemma 2, F ! is an iso-
+lated point of the subspace ~1-
+     Sparse compact spaces possess many remarkable properties although the problem of their
+classification has not been solved (cf. [i0]). In connection with Corollary 3, the following
+question arises: is it possible to embed each sparse compact space homeomorphically in the
+subspac~ n~ (O) for an appropriate group G? Spaces of ordinals admit such a realization.
+Moreover, each compact space in the Vietoris exponent expX of a discrete space X can be em-
+bedded in n~(O). It is unknown, however, whether each sparse compact space can be realized
+in exp X.
+      It is worth noting that, for a suitable choice of a group G, each given compact space
+can be realized in the space ~(O). This follows from Tikhonov's theorem and the fact that
+the space ~(O) of the group O = T • C2 contains a segment (T is the one-dimensional torus,
+C 2 is the cyclic group of order 2, x is the symbol of the topological semidirect product).
+     The results above demonstrate a substantial difference in topological properties between
+the subspaces ~(G) and n~(O). We will give some other examples. ~(O) is locally compact for
+each group G (p. 54 in [9]); ~(O) is o-compact if the group G is o-compat [2]; ~(O) satis-
+fies the first countability axiom if the group G does. None of these statements is, gener-
+ally speaking, true for the subspace n~(G). It follows from Lemma 2 in [2] that n~(G) satis-
+fies the first countability axiom if G is a group of countable weight. Thus, for group G of
+countable weight both subspaces ~(O) and n~(O) satisfy the first countability axiom. How-
+ever, as the following theorem shows, this statement is not, generally, true for the space
+~(O). A special case of Theorem 2 is the key Lemma 3 of [6].
+     THEOREM 2. If the space ~(G) of a zero-dimensional group G is locally countably com-
+pact or satisfies the first countability axiom, then each noncompact inductively compact sub-
+group of G is open.
+     Proof. Let H be an inductively compact subgroup in n ~(G). By Lemma 2, D!(H) is a neigh
+borhood of H in ~(G) . By virtue of its inductive compactness, H belongs to the closure in
+the E-topology of the sets of its compact subgroups. Thus, DI(H) is a neighborhood of some
+compact subgroup K. By definition of the E-topology, there exist subsets U, V~,...,V n open
+in G such that K~_U, KnV1=/=~ .....KnV,=/=~ and the neighborhood ~ =DI(U) ND2(VI)N.-. nD2(Fn)
+of the subgroup K is contained in DI(H).
+       Suppose that W is an open compact subgroup in G and KW~_U.               We choose a subgroup W l in
+such a way that x - I W ~ x ~ W f o r   each x EK.   We denote by W 2 the least subgroup containing U x -~
+                                                                                                      xs
+wlx. Then P = KW 2 is an open subgroup and P C ~          .   Thus, F ~ H   and H is open.   The theorem is
+proved.
+     A natural class of topological spaces containing locally compact spaces as well as
+spaces with the dirst countability axiom is given by the k-spaces, i.e., spaces whose topo-
+logy is determined by a family of compact sets (p. 153 in [ii]). It follows from the above
+that for a group G of countable weight ~ (G) and n~ (O) are k-spaces. Is ~ (G) a k-space in
+this case? For connected solvable Lie groups it is so [7]. An affirmative answer for a
+class of groups containing all discrete and inductively pronilpotent groups of countable
+weight is given by Theorem 3 whose statement and proof are preceded by two lemmas.
+     LEMMA 3. If G is a group of countable weight, then the character of a point H in ~ (G)
+in the subspace D~(H) is countable.
+       The proof follows from the definition of a base of the E-topology.
+       LEMMA 4.     Suppose that K~_H       is a subgroup of a group G and K is compact and open in
+H.     If U x=K   is the decomposition of H into cosets relative to K, then there exists a neigh-
+          ~EJ
+borhood U of the identity of the group G such that x=KU Nx~KU = ~               for ~ ~ B.
+      Proof. Let V be an open subset in G with V N H = K. Using the compactness of K, we
+ choose neighborhoods W and U of the identity of the group G such that KW~---V andxUU-~x-~--W
+
+
+
+ 514
+for e a c h xEK. Suppose that x=KUNx~KU=/=fg. Then x klul=x~k2u2 for some k ! , k 2 E K , ul, u2EU"
+Thus, x~Ix~,=le2u~u~-lle[l =k.2k~l(klu2~-(-Vr~l)Efezk-~lW~KW~V On t h e o t h e r h a n d , x~- ! g. = E H . S i n c e V N H
+                                                                  .
+
+
+
+
+K, we h a v e x~lx=EK, i . e . ,    a = B.
+     THEOREM 3. If G is a group of countable weight and the set of its inductively compact
+subgroups is closed in s   then s     is a k-space.
+     Proof. Suppose the contrary and choose a subset ~ not closed in ~(O) such that the
+intersection of ~ with each compact set in s    is closed. Take an arbitrary subgroup FE
+~ .     S'ince ~(6) is open in s  and locally compact, FEn~(O). We consider two cases.
+        i) FE{}Nn~(O).    By Lemma 2 in [2], F6(~Nn~(G))DDI(F ). Using Lemma 3, we choose a se-
+           quence {Fn} of subgroups in ~ n n ~ ( O ) N D I (F) converging to F. The subspace ~' whose
+           elements are F and the members of the sequence {Fn} is compact and F E ~ [ ~ ' .    Thus,
+           F E ~ , contrary to its choice.
+        2) F E ~ - ~ ) .   In order to obtain a contradiction, it suffices to show, as before:, that
+              FE(~N~(G)) N DI(F). Suppose that it is not true and choose, using the regularity of
+              E(G), a neighborhood 9/ of the subgroup F such that "~N(~N~(O) NDI(F))-- fg. Since
+              F E~(G) , F is inductively compact by the hypothesis of the theorem.                      We write F in
+
+              the form 0 Fn, where F n are compact subgroups open in F and F~ c F,+l for each n.
+                       n=l                                               oo
+
+
+              We partition F into cosets relative to FI:F = ~,x~F I. Using Lemma 4, choose a neigh-
+
+              borhood U of the identity of the group G such that xiFIUNxSIU = ~                     for i ~ j.
+        We will construct, inductively, a sequence {Un} of compact neighborhoods of the identity
+of the group G in such a way that DI(FIUIU...UF~Un)N(~n~)---- ~ and U n~_U for each n. First,
+we will define U~. Suppos~ that for each neighborhood V of the identity of the group G
+D,(F~V) N ~ Q9/=/=2~ 9 It follows from Vietoris' theorem that DI(F~)~Q'~flV~=/=~. Note that
+D~(F~)~_D,(F)D~(O) and ~ N ~ ( G ) ~ . Thus, ffT--/=D~(F~)N~9/=_~ f](Dt (F) N @ ( O ) ~ ) , which contra-
+dicts the choice of the neighborhood 9/ and guarantees the possibility of defining U~.
+     Suppose that the neighborhoods Ua,... ,Un have been constructed but the neighborhood Un+,-
+cannot be chosen, i.e. , D~(F~U~U ...U FnUn U Fn+~U')~(~ ~)~ for each neighborhood U' of the
+identity of G. Then, by Vietoris' theorem, there exists a subgroup SEDt(F~U~U...UF~U~UF~+~)Q
+(~9/) 9 Since S E ~ ( G ) ~ _ _ ~ ( O ) , we have 5~FIU~U...~FnU n by the induction hypothesis.
+Let x6(Fn+IXkFn)~S and let y be an arbitrary element in (FIUIU...UFnUn)~ S. Then y = fu, wher,
+~EF~,uEU~,k~n. Furthermore, x-~y=(x-~f)u6(Fn+~\Fn)U~__(Fn+~XxFn)U. On the other hand, x-~NE
+S~__F~UU(Fn+~F~). By the choice of the neighborhood U,(F~+~Fn)U~F,U=~       Thus x-~y6Fn ~\
+F n and 9~Fn+*, i.e., S__Fn.  Thus, we have proved that SE(D~(Fn+I) N ~ ( G ) ) ~ ~,                       contrary to
+the choice of the neighborhood 9/. This completes the inductive construction.
+
+        Consider the neighborhood 9/' =DI( 0          F~U~I~          of the subgroup F.     Since F E ~ ~ ( O ) ,    there
+                                          \                /
+exists a subgroup K 6 ~ N ~ ( G )     such that K69/'.         In particular, /(c O        FiU~ .   Since K is compact
+
+there exists a natural number m such that K_~ 0 F~U~. This contradicts the fact that D~ •
+                                                 i=i
+(F~U~U ...U FmUm) N ~ N ~ = Z. The theorem is proved.
+     COROLLARY 4. The space s                of   a group G of countable weight is a k-space if one of
+these conditions is fulfilled:
+        i) G contains an open       compact normal subgroup;
+        2) the inductively compact radical of the group G contains all compact elements of G.
+     Proof. In the former case the condition that the set of inductively compact subgroups
+is closed in s   follows from Lemma 1 in [2], in the latter case it is obvious.
+
+
+                                                                                                                        515
+                                                                 LITERATURE CITED
+ i.     I. V. Protasov, "Topological groups with a compact lattice of closed semigroups," Sib.
+        Mat. Zh., 20, No. 2, 378-385 (1979).
+ 2.     I. V. Protasov, "Topological groups with a o-compact space of subgroups," Ukr. Mat. Zh.,
+        37, No. i, 93-98 (1985).
+ 3.     Yu. A. Komarov and I. V. Protasov, "Compactness in the lattice of subgroups of a topo-
+        logical group," ibid., 33, No. 2, 184-189 (1981).
+ 4.     Yu: A. Komarov and I. V. Protasov, "Compactness and discreteness in the lattice of in-
+        variant subgroups of a topological group," in: Constructive Description of Groups with
+        Given Properties of Subgroups [in Russian], inst. Mat. Akad. Nauk Ukr. SSR, Kiev (1980),
+        pp. 133-140.
+ 5.     I. V. Protasov and A. Saryev, "Topological Abelian groups with a locally compact lattice
+        of closed subgroups," Dokl. Akad. Nauk Ukr. SSR, Set. A, No. 3, 29-32 (1980).
+ 6.     A. Saryev, "Periodic topological groups with a locally compact lattice of closed sub-
+        groups," Ukr. Mat. Zh., 33, No. 2, 267-270 (1981).
+ 7.     S. P. Panasyuk, "Metrizability of the lattice of closed subgroups of solvable connected
+        Lie groups," in: The 17th All-Union Algebraic Conference. Proceedings [in Russian],
+        Part i, Inst. Mat. Akad. Nauk BSSR, Minsk (1983), p. 141.
+ 8.     I. V. Protasov, "Compactness criterion in the space of subgroups of a topological group,
+        in: The 9th All-Union Symposium in Group Theory. Proceedings [in Russian], Mosk. Pedagog
+        Inst., Moscow (1984), p. 233.
+ 9.     K. Kuratowski, Topology, Vol. 2, Academic Press (1969).
+i0.     M. M. Choban and N. K. Dodon, Theory of p-Sparsed Spaces [in Russian], Shtiintsa, Kishi-
+        nev (1979).
+ii.     A. V. Arkhangel'skii and V. I. Ponomarev, Fundamentals of General Topology in Problems
+        and Exercises [in Russian], Nauka, Moscow (1974).
+
+
+
+SMOOTHNESS IN THE PARAMETER OF AN INVARIANT TORUS OF A QUASILINEAR
+SYSTEM OF DIFFERENTIAL EQUATIONS
+
+        A. M. Samoilenko                                                                                                                   UDC 517.925
+
+
+     Many problems of the theory of nonlinear oscillations reduce to a system of differential
+equations of the form
+                       d~/dt=~+eA+efl(h)+e2Fl(%h,A,e),                             dh/dt=eHh+ef2(h)+e~F~(~,h,A,e),                                           1)
+whose r i g h t     side       is defined       i n t h e domain
+                                                       ~6Jm,      H h ] l ~ & IlAIl_<~o0, eC[0, e0]                                                          2)
+for sufficiently  s m a l l p o s i t i v e 6, e0, i s p e r i o d i c                  i n ~ = ( ~ . . . . . ~m)~ w i t h p e r i o d 2~, s t i m e s
+continuously differentiable             i n $, h = ( h i , . . . . h n ) ,              A = (A1 . . . . . An0), e and s a t i s f i e s   the con-
+ditions
+                                                          [1(0) = O, f2 (O) = 0 ,        Oh (O)/Oh = O.                                                    (3
+Here ~m        i s t h e cube o f p e r i o d s        of a function           periodic        in $ with p e r i o d        2~.
+        An i n v a r i a n t    surface     o f t h e s y s t e m ( 1 ) o f t h e form
+                                                                   h = u (~,A, e), ~ C J m ,                                                               (4)
+p e r i o d i c i n , j , j = 1, m, w i t h p e r i o d 2~ i s c a l l e d an i n v a r i a n t t o r u s o f t h e s y s t e m o f e q u a -
+t i o n s ( 1 ) o f s m o o t h n e s s e q u a l t o t h e number o f d e r i v a t i v e s w i t h r e s p e c t t o $ o f t h e f u n c t i o n
+u ( $ , A, ~ ) .           The t h e o r y o f p e r t u r b a t i o n s  o f i n v a r i a n t t o r i o f s y s t e m s o f t h e form ( 1 ) ( c f . ,
+e.g.,         [ 1 - 4 ] ) g u a r a n t e e s t h e e x i s t e n c e o f an i n v a r i a n t t o r u s ( 4 ) u n d e r t h e a s s u m p t i o n t h a t t h e
+r e a l p a r t s o f t h e e i g e n v a l u e s o f t h e m a t r i x H, assumed t o be c o n s t a n t , a r e d i f f e r e n t from
+zero.           I t f o l l o w s from t h e s e r e s u l t s t h a t f o r f i n i t e s one can a l w a y s f i x e0 so t h a t t h e
+
+     Kiev University. Translated from Ukrainskii Matematicheskii Zhurnal, Vol. 38, No. 5,
+pp. 605-618, September-October, 1986. Original article submitted March 10, 1986.
+
+
+516                  0041-5995/86/3805-                    $12.50 O 1987 Plenum Publishing Corporation
+

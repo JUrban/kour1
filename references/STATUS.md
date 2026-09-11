@@ -940,3 +940,22 @@ Scott1990 *Defect groups and the isomorphism problem* was read in
 full. Original Weiss and Roggenkamp--Scott proofs were not read.
 The full deduction and exact scope are in `research/9.55-prior-result.md`;
 eight source/proof files are hash-bound in its result audit.
+
+
+## 9.47: compact families and clopen selectors
+
+Protasov1986 pp.512--516 was read in full through references; the
+E-topology definition, Lemma2 and Theorem1 were visually checked.
+Theorem1 condition3 is maximality in each closed subfamily, resolving
+a typo in the2018 survey. Komarov--Protasov1981 setup and entire
+Section1 were read, including Lemma2 proof on pp.145--146, both
+visually checked. The compact-family lemma is expanded in full in
+the candidate proof. Dow--Watson1990 was read in full and its
+Example1 visually checked; the prior counterexample is reproved
+explicitly. No Boolean-algebra equivalence from its Lemma4 or
+Theorem3 is used. Banakh--Bonnet--Kubis arXivv2,29January2021,
+was consulted in the introduction/preliminaries and selected
+Proposition5.4 passages; the exact limits are in the internal audit.
+Protasov2018 survey scopes and discovery-only sources are also
+recorded there. Twenty files are bound in `results/9.47-summary.json`.
+Novelty of the9.47 connection and external review remain pending.
