@@ -1928,3 +1928,21 @@ large direct-product bottleneck; frozen inputs and logs are preserved.
 The n=7 snapshot at 22:08:08 UTC has 20,550,000 checked nodes, six
 live workers, zero completed shards and 28,860,148 KiB combined RSS.
 Candidate count remains 34. All work is local.
+
+
+## 2026-09-11T22:27:41.510153+00:00 — 6.47 coordinate method completes all twelve timeouts
+
+The new normal-closure orbit algorithm matches full word-vector sets and all
+associative tables from the 26 frozen GAP cases. Scalar predecessor and closure
+checks certify the new searches; forced cutoffs remain explicitly incomplete.
+The twelve formerly timed-out cases contribute 3,296 functions, 80 associative
+operations and 856,686,592 triples. All 80 outputs are isomorphic to their source
+groups: 78 via power maps and two via independently verified general permutations
+on SmallGroup(64,34). All actual exits are zero and GAP logs have clean sentinels.
+The 131-file vector auditor, including both prior packet auditors, passes with
+actual exit zero. Combined coverage is 38 groups, 4,207 functions and 178
+associative outputs. No general solution or candidate increment is claimed.
+
+The 22:23:25 UTC n=7 snapshot has 20,920,000 checked nodes, six live workers,
+zero completed shards and 29,329,140 KiB combined RSS. Candidate count remains
+34. Original timeout records and all earlier frozen packets are preserved.

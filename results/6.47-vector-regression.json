@@ -1,0 +1,578 @@
+{
+  "status": "PASS_647_VECTOR_REGRESSION",
+  "cases": [
+    {
+      "n": 6,
+      "id": 1,
+      "source": "results/6.47-pilot-6-1.json",
+      "normalized_operations": 27,
+      "associative_count": 2,
+      "triples": 5832,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 27,
+        "reachability_checks": 26,
+        "closure_edge_checks": 81,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 27,
+        "reachability_checks": 26,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 8,
+      "id": 3,
+      "source": "results/6.47-pilot-8-3.json",
+      "normalized_operations": 2,
+      "associative_count": 2,
+      "triples": 1024,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 2,
+        "reachability_checks": 1,
+        "closure_edge_checks": 6,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 2,
+        "reachability_checks": 1,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 12,
+      "id": 3,
+      "source": "results/6.47-pilot-12-3.json",
+      "normalized_operations": 256,
+      "associative_count": 2,
+      "triples": 442368,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 256,
+        "reachability_checks": 255,
+        "closure_edge_checks": 768,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 256,
+        "reachability_checks": 255,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 16,
+      "id": 6,
+      "source": "results/6.47-pilot-16-6.json",
+      "normalized_operations": 2,
+      "associative_count": 2,
+      "triples": 8192,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 2,
+        "reachability_checks": 1,
+        "closure_edge_checks": 6,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 2,
+        "reachability_checks": 1,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 2,
+      "source": "results/6.47-pilot-32-2.json",
+      "normalized_operations": 2,
+      "associative_count": 2,
+      "triples": 65536,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 2,
+        "reachability_checks": 1,
+        "closure_edge_checks": 6,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 2,
+        "reachability_checks": 1,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 16,
+      "id": 7,
+      "source": "results/6.47-extension-16-7.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 65536,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 16,
+      "id": 8,
+      "source": "results/6.47-extension-16-8.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 65536,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 16,
+      "id": 9,
+      "source": "results/6.47-extension-16-9.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 65536,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 27,
+      "id": 3,
+      "source": "results/6.47-extension-27-3.json",
+      "normalized_operations": 3,
+      "associative_count": 3,
+      "triples": 59049,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 3,
+        "reachability_checks": 2,
+        "closure_edge_checks": 9,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 3,
+        "reachability_checks": 2,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 27,
+      "id": 4,
+      "source": "results/6.47-extension-27-4.json",
+      "normalized_operations": 3,
+      "associative_count": 3,
+      "triples": 59049,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 3,
+        "reachability_checks": 2,
+        "closure_edge_checks": 9,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 3,
+        "reachability_checks": 2,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 6,
+      "source": "results/6.47-extension-32-6.json",
+      "normalized_operations": 8,
+      "associative_count": 2,
+      "triples": 262144,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 8,
+        "reachability_checks": 7,
+        "closure_edge_checks": 24,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 8,
+        "reachability_checks": 7,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 7,
+      "source": "results/6.47-extension-32-7.json",
+      "normalized_operations": 8,
+      "associative_count": 2,
+      "triples": 262144,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 8,
+        "reachability_checks": 7,
+        "closure_edge_checks": 24,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 8,
+        "reachability_checks": 7,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 8,
+      "source": "results/6.47-extension-32-8.json",
+      "normalized_operations": 8,
+      "associative_count": 2,
+      "triples": 262144,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 8,
+        "reachability_checks": 7,
+        "closure_edge_checks": 24,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 8,
+        "reachability_checks": 7,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 10,
+      "source": "results/6.47-extension-32-10.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 13,
+      "source": "results/6.47-extension-32-13.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 14,
+      "source": "results/6.47-extension-32-14.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 15,
+      "source": "results/6.47-extension-32-15.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 18,
+      "source": "results/6.47-extension-32-18.json",
+      "normalized_operations": 128,
+      "associative_count": 8,
+      "triples": 4194304,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 128,
+        "reachability_checks": 127,
+        "closure_edge_checks": 384,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 128,
+        "reachability_checks": 127,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 19,
+      "source": "results/6.47-extension-32-19.json",
+      "normalized_operations": 128,
+      "associative_count": 8,
+      "triples": 4194304,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 128,
+        "reachability_checks": 127,
+        "closure_edge_checks": 384,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 128,
+        "reachability_checks": 127,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 20,
+      "source": "results/6.47-extension-32-20.json",
+      "normalized_operations": 128,
+      "associative_count": 8,
+      "triples": 4194304,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 128,
+        "reachability_checks": 127,
+        "closure_edge_checks": 384,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 128,
+        "reachability_checks": 127,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 39,
+      "source": "results/6.47-extension-32-39.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 40,
+      "source": "results/6.47-extension-32-40.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 41,
+      "source": "results/6.47-extension-32-41.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 42,
+      "source": "results/6.47-extension-32-42.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 43,
+      "source": "results/6.47-extension-32-43.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    },
+    {
+      "n": 32,
+      "id": 44,
+      "source": "results/6.47-extension-32-44.json",
+      "normalized_operations": 16,
+      "associative_count": 4,
+      "triples": 524288,
+      "certificate_checks": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 48,
+        "complete": true
+      },
+      "cap_control": {
+        "status": "PASS_VECTOR_CERTIFICATE",
+        "nodes": 16,
+        "reachability_checks": 15,
+        "closure_edge_checks": 0,
+        "complete": false
+      }
+    }
+  ],
+  "scope": "Full vector sets and associative tables agree with 26 frozen GAP enumerations."
+}
