@@ -1,0 +1,231 @@
+PROC. SECOND          INTERNAT. CONF. THEORY OF GROUPS,                                                                        20F99
+CANBERRA       1973, pp. 22~-225.
+
+
+
+
+                                   WORDS WHICH GIVE RISE TO ANOTHERGROUP
+
+                                            OPERATION FOR A GIVEN GROUP
+
+
+                                                        C.D.H. Cooper
+
+
+
+
+                                                   I.     Introduction
+
+        For any group           G , the binary operation            x * y = yx             is a group operation,
+expressed in terms of the word                   yx , which gives a different                    (unless      G   is abelian)
+but isomorphic         group structure on the set              G .     It is natural              to ask what other group
+structures may be defined on                G     by an operation of the form
+
+                                                     x * y = W(x, y)
+
+where        W(x, y)    is a word in        x, y        (we call such words group words for                       G ) and
+whether it is possible             for the new group          (denoted by          G W I and        G       to be non-
+
+isomorphic.           If so, it might be possible to discover facts about one group by
+considering       the other - especially             if one group is abelian and the other is not.
+Thoughts       such as these have prompted this paper.
+
+        Most of the work that has been done previously on group words has been restricted
+to what we may call non-singular group words - those for which                                      G = (Gw~Y        for some
+
+group word        Y     (evaluated in       G W I"      Higman and Neumann             [8] asked whether             G ~ GW      for
+
+all non-singular             group words     W     and Hulanicki      and Swierczkowski                 [9] showed that this
+is true for periodic nilpotent                   groups of class       2 .     More recently,               Street     [ii]* not
+only extended this to "most" nilpotent                     groups of class             3    and     4       (including,    for
+example,       all finite        p-groups    of class at most          4     for       p ~ 5 ) but also gave an
+infinite       family of counter-examples,               the smallest of which has order                       602 .
+
+        In this paper we investigate non-abelian                     groups        G       for which there is a group
+word     W     (necessarily singular)             for which    GW     is abelian.               We call such groups
+
+verbally ~ e l i ~ .           Baer [2] pointed out a long time ago that if                             G    is a nilpotent
+
+group of class           2     such that     G~    has finite odd exponent                  n     and
+
+
+* I am grateful              to N.D. Gupta and P.M. Weichsel               for drawing my attention                  to this
+paper.
+222                                                                 C.D.H.          Cooper
+
+
+
+W(x, y) = xy[x, y](n-l)/2 , then                               GW     is abelian.                 This fact proved useful in a paper
+
+of Bender            [3].        We extend this here to nilpotent                              groups of class                      3 .        In addition we
+discuss,            for a general            group       G , the relationship                     between            the properties                 of     G     and
+
+GW •
+
+
+                                            2.     Nilpotent groups of class at most 3
+
+           Similar calculations                    to those of Street                   [ii] yield the following.
+
+        THEOREM I .               The group words for a nilpotent group                                         G        of class at most                  3     are
+those which are equivalent to (that is, are identical to when evaluated in                                                                               G )
+
+(i)                                                xy[x, y]r[x, y, x]-S[x, y, y]S
+
+for some integers                     r, s        satisfying the congruence
+
+(2)                                                 3s - r 2 + r (mod exp~[G',                        G]) .
+
+If     W        is such a group word for                      G ,     GW           is abelian if and only if
+
+(3)                                                     2r + 1 - 0 (mod expt G')                          .
+
+           COROLLARY.            If     G        is a nilpotent group of class at most                                      3       then        G    is verbally
+abelian if and only if                           2 ~ expt G'         ~nd           3 ~ expt[O',               G] .
+
+           From this corollary we see that if                                  G      is a finite nilpotent                         group of class at
+most        3       then it is verbally                 abelian      if and only if its Sylow subgroups                                         are regular
+p-groups.            There are, however,                  regular             p-groups         of class              4    which       are not verbally
+abelian.             For example,            if     p >_ 7     and        G        is the free product of two cyclic groups of
+order           p    then it can be shown that                       G/[G', G, G, G]                      is not verbally                     abelian,         yet it
+is a finite regular                     p-group of class                  4 .
+
+           If       GW   is abelian and the operation                              is w r i t t e n   additively,               one asks what words
+
+may be used to define a multiplication                                    making           G    into a ring.                 A related question
+was answered             in the case of associative                           rings coming from class                           2     groups         in [I],
+but,       as the next theorem shows,                        it is mere natural                   for this question                       to ask for a Lie
+ring rather than an associative                              one.
+
+           THEOREM          2.     Suppose          G    is a nilpotent group of class at most                                            3     for which an
+abelian group operation,                           + , is given by (I), (2), (3).                                   The words which produce an
+operation which is distributive over                                  +        are those equivalent to
+
+                                                        Ix, y]t[x, y, x]rt[x, y, y]rt
+
+for some integer                   t . Moreover, for any such word,                                   G       becomes a Lie ring.
+                                 Words which give rise to another group operation                                                                  223
+
+
+                                               3.        Relationship between 0                        and G W
+
+       The following theorem suggests                                    that     GW       is at least as "nice" a group as
+and leads one to make the following conjecture:
+
+        CONJECTURE              GW       is contained in the variety generated by                                     G .
+
+        THEOREM        3.       Suppose              G        is a group and               W    is a group word for             G .      ~1~en
+
+          (i)     (normal) subgroups of                              G     are (normal] subgroups of                    GW ,
+
+         (ii)     cut(G) <_ aut(Ow)                       ,
+
+        (iii)     elements have the same order in                                      G       as in    @W "
+
+         (iv)     the descending central series and derived series descend at least as
+                  quickly in                   GW        as in       G     and the ascending central series and
+
+                  Fitting series ascend at least as quickly in                                              GW    as in        G ,
+
+          (v)     if        G        is abelian, nilpotent or soluble so is                                    GW .
+
+        These facts are not surprising and are easily proved                                                (of. Street [ii], Theorem
+i).    A little less obvious are the following which proceed in the opposite direction.
+
+        THEOREM        4.        Suppose             G        is a group and               W    is a group word for             G .      Then
+
+          (i)     if        G        is locally nilpotent,                       characteristic subgroups of                    GW      are
+
+                  characteristic subgroups of                                    G ,
+
+         (ii)     if        G        is finite,                G    and     GW     have the same Sylow subgroups and the
+
+                  same Fitting series,
+
+        (iii)     if        G        is finite, and                  GW     is nilpotent or soluble then so is                           G .
+
+
+                                                4.        F i n i t e verbally abelian groups
+
+        Suppose that                 G    is a finite verbally abelian group.                                  Theorem 4 ( i i i )       shows that
+G     must be nilpotent                  and Theorem 1 (Corollary)                             gives examples of verbally abelian
+groups up to class                       3 .    Theorem 3 (iii) shows that the abelian group                                       GW    must be
+
+unique up to isomorphism.                            The following               facts are obvious             for finite abelian groups
+and may be extended to finite verbally abelian groups using Theorems                                                           3 and 4.
+
+        THEOREM 5.               Suppose             G        is a finite verbally abelian group.                           %~nen
+
+          (i)     for all integers                            n ,    {g I gn = l~               and     {gn I g ~ G}         are
+                  characteristic subgroups of                                    G , and all elements which have                        n'th
+                  roots have the same number of them,
+224                                                  C.D.H. Cooper
+
+
+                                                                                   6
+        (ii)    if           e    is an automorphism of     G   such that      H       =   H   for all
+
+                subgroups             H , then   e   has the form     x ~ xn       for some integer            n ,
+
+       (iii)    G        is conformal\with Cthat is, has the same number of elements of
+                each order as) some abelian group.
+
+       We now return to the original motive for studying group words - knowing some-
+thing about         GW       we might be able to translate it back to the "not-so-nice" group
+
+G .    We have done this to a small extent in being able to show by Theorem 1
+(Corollary) that (i) - (iii) of Theorem 5 hold for finite                              p-groups of class less
+than    min(p, 4) .               However such groups are precisely the finite regular                   p-groups of
+class at most            3       and (i) - (iii) of Theorem 5 are already known for all finite
+regular    p-groups              (see [7] for (i), [5] for (ii), [4] for (iii)).                  So purely as a
+tool, group words have not (as yet) justified their existence.                                 However they raise a
+number of interesting questions about themselves.                      For example, the fact that finite
+verbally abelian                 p-groups have very similar arithmetic properties to finite regular
+p-groups suggests that perhaps they are in fact always regular (as we pointed out
+above, the converse is false).
+
+
+
+
+                                                      References
+
+ [I]    J.C. Ault and J.F. Watters, "Circle groups of nilpotent rings", Amer. Math.
+               Monthly 80 (1973), 48-52.
+
+ [2]    Reinhold Baer, "Groups with abelian central quotient group", Trans. Amer. Math.
+               Soc. 44 (1938), 357-386.               FdM64,68.
+
+ [3]   Helmut Bender, "iJber den grSssten                 p'-Normalteiler in               p-auflSsbaren Gruppen",
+               Arch. der Math. ]8 (1967), 15-16.                  MR35#4303.
+
+ [4]   C.D.H. Cooper, "Conformality and                  p-isomorphism in finite nilpotent groups", J.
+               Austral. Math. Soc. 7 (1967), 165-171.                  MR35#4304.
+
+ [5]    Christopher D.H. Cooper, "Power automorphisms of a group", Math. Z. ]07 (1968),
+               335-356.             MR38#4550.
+
+ [6]    S. Fajtlowicz, "On fundamental operations in groups", J. Austral. Math. Soc. ]4
+               (1972), 445-447.
+
+ [7]   Marshall Hall, Jr., The theory of groups (The Macmillan Co., New York, 1959).
+               MR21#1996.
+
+ [8]   Graham Higman and B.H. Neumann, "Groups as groupoids with one law", Publ. Math.
+               Debrecen 2 (1952), 215-221.                MR]5,284.
+
+ [9]   A. Hulanicki and S. Swierczkowski, "On group operations other than                                 xy     or
+               yx ", Publ. Math. Debrecen 9 (1962), 142-148.                       MR25#5101.
+                     Words which give rise to another group operation                 225
+
+
+[i0] Hanna Neumann, "On a question of Kert~sz", Publ. Math. Debrecen 8 (1961),
+            75-78.    MR24#AI303.
+
+[Ii]   Anne Penfold Street, "Subgroup-determining functions on groups", Illinois J.
+           Math. ]2 (1968), 99-120.     M-R36#3885.
+
+
+
+Macquarie University,
+North Ryde, NSW 2113.
+

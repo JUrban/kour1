@@ -1,0 +1,119 @@
+{
+  "status": "PASS_BOUNDED_PILOT",
+  "cap": 4096,
+  "cases": [
+    {
+      "n": 6,
+      "id": 1,
+      "actual_returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 180,
+      "elapsed_seconds": 2.9252043776214123,
+      "clean_log": true,
+      "sentinel": true,
+      "observed_utc": "2026-09-11T21:17:24.420083+00:00",
+      "sha256": {
+        "results/6.47-pilot-6-1.g": "8faac1a2ea481a8c2f460a2ac1167cca79aef6e4615b6f2f0fe63db0d232c899",
+        "results/6.47-pilot-6-1.log": "248b4cc2b8778c5f48afdfef40b93e5a680d93790ae10905ec6a1c79bbf915d6",
+        "scripts/export_6_47.g": "e69e504adb4519b0726c8fb5dbc26b9e5de2d21b9bcd0bb06e93d439bcb8a0e5"
+      },
+      "status": "EXPORTED",
+      "associative_count": 2,
+      "normalized_count": 27
+    },
+    {
+      "n": 8,
+      "id": 3,
+      "actual_returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 180,
+      "elapsed_seconds": 2.9256989574059844,
+      "clean_log": true,
+      "sentinel": true,
+      "observed_utc": "2026-09-11T21:17:27.356613+00:00",
+      "sha256": {
+        "results/6.47-pilot-8-3.g": "2ef014778468fe07959fc8d93ae0a2004ebd8cf0acfaa3559121e4533b64c81a",
+        "results/6.47-pilot-8-3.log": "a2ba81f92829fde3d2aea8bb868f813792b71bc49f6af26836e7760a664c3b3b",
+        "scripts/export_6_47.g": "e69e504adb4519b0726c8fb5dbc26b9e5de2d21b9bcd0bb06e93d439bcb8a0e5"
+      },
+      "status": "EXPORTED",
+      "associative_count": 2,
+      "normalized_count": 2
+    },
+    {
+      "n": 12,
+      "id": 3,
+      "actual_returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 180,
+      "elapsed_seconds": 2.975935809314251,
+      "clean_log": true,
+      "sentinel": true,
+      "observed_utc": "2026-09-11T21:17:30.338245+00:00",
+      "sha256": {
+        "results/6.47-pilot-12-3.g": "ae3cabe103b7a26175384eb053f03d8742c01ec38329e5b90edff98b102cca5b",
+        "results/6.47-pilot-12-3.log": "47b175d1093ad6f8d5df02bd68073a69389f7a1c3fec9b553fb8dec7af21f623",
+        "scripts/export_6_47.g": "e69e504adb4519b0726c8fb5dbc26b9e5de2d21b9bcd0bb06e93d439bcb8a0e5"
+      },
+      "status": "EXPORTED",
+      "associative_count": 2,
+      "normalized_count": 256
+    },
+    {
+      "n": 16,
+      "id": 6,
+      "actual_returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 180,
+      "elapsed_seconds": 6.538291574455798,
+      "clean_log": true,
+      "sentinel": true,
+      "observed_utc": "2026-09-11T21:17:36.924121+00:00",
+      "sha256": {
+        "results/6.47-pilot-16-6.g": "860df9ebc4c31a734d2c74d218fcaad27689ced4460187c8941b98f7990e4bb3",
+        "results/6.47-pilot-16-6.log": "3c62f0688fdab0054e66f2f7f7862fe746000ee4e737e3888eb6e1e05f813a0e",
+        "scripts/export_6_47.g": "e69e504adb4519b0726c8fb5dbc26b9e5de2d21b9bcd0bb06e93d439bcb8a0e5"
+      },
+      "status": "EXPORTED",
+      "associative_count": 2,
+      "normalized_count": 2
+    },
+    {
+      "n": 24,
+      "id": 3,
+      "actual_returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 180,
+      "elapsed_seconds": 5.936404915526509,
+      "clean_log": true,
+      "sentinel": true,
+      "observed_utc": "2026-09-11T21:17:42.875350+00:00",
+      "sha256": {
+        "results/6.47-pilot-24-3.g": "8839e2a8a7fe0d10eb44fb701b3ce9f53d223c17280097fe8af84256612beb26",
+        "results/6.47-pilot-24-3.log": "eaa2d06900ea72644af7d4c2f1aaffe002403e904f51e70b81cc64ab2d1562ee",
+        "scripts/export_6_47.g": "e69e504adb4519b0726c8fb5dbc26b9e5de2d21b9bcd0bb06e93d439bcb8a0e5"
+      },
+      "status": "SKIP_CAP"
+    },
+    {
+      "n": 32,
+      "id": 2,
+      "actual_returncode": 0,
+      "timed_out": false,
+      "timeout_seconds": 180,
+      "elapsed_seconds": 5.83609732799232,
+      "clean_log": true,
+      "sentinel": true,
+      "observed_utc": "2026-09-11T21:17:48.713339+00:00",
+      "sha256": {
+        "results/6.47-pilot-32-2.g": "abb72f78da5aae4cb59a2e58ce227479970abdb205651cf77bb1e901f57aa693",
+        "results/6.47-pilot-32-2.log": "403b636c0ab40e26795e177d53c7d329805339195c85b451bba784107face77e",
+        "scripts/export_6_47.g": "e69e504adb4519b0726c8fb5dbc26b9e5de2d21b9bcd0bb06e93d439bcb8a0e5"
+      },
+      "status": "EXPORTED",
+      "associative_count": 2,
+      "normalized_count": 2
+    }
+  ],
+  "scope": "Associativity and elementary controls only; no variety nonmembership claimed."
+}

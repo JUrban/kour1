@@ -1811,3 +1811,28 @@ limitations. The complete-candidate count is 33, with priority pending.
 At 2026-09-11T21:04:14.334975+00:00, all six n=7 workers are live, with
 18,990,000 checked nodes and 26,880,756 KiB combined RSS.
 No shard is complete. All work remains local and the 48-hour goal is active.
+
+
+## 2026-09-11T21:32:11.597332+00:00 — 6.47 pilot frozen; 5.25 metabelian partial
+
+The exact binary word-function pilot covers five finite groups: all 289
+normalized functions and 522,952 associativity triples. Each group has
+only its original and opposite multiplication. SmallGroup(24,3) exceeds
+the cap with 8,192 normalized functions and is explicitly omitted. Six
+actual GAP processes and the outer runner exit 0; the initial NumPy-path
+failure is retained with actual exit 1. The 52-file auditor replays all
+exported tables and passes with actual exit 0.
+
+A self-contained class-two identity-transfer proof is recorded. Cooper's
+1974 conjecture and class-three classification were checked against the
+full paper and rendered pages; the S3 computation is explicitly a
+rediscovery of Płonka2013. The class-three-to-five extension remains live
+and is not included in this frozen packet. Completed additional class-three
+operations checked so far have explicit power-map isomorphisms; order-27
+abelian outputs satisfy the variety conclusion. Neither partial result
+increases the 33-candidate count.
+
+Problem5.25 is affirmative for metabelian bi-orderable groups, by finite
+order of conjugation on the derived subgroup. The reduction for higher
+derived length is recorded as unproved. All six n=7 certificate verifiers
+remain in progress. No external communications or pushes.
