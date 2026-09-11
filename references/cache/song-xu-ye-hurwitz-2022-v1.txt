@@ -1,0 +1,585 @@
+                                                      A note on the Hurwitz problem
+                                                        and cone spherical metrics
+                                                                       Jijian Song1, Bin Xu2 and Yu Ye3
+arXiv:2210.09700v1 [math.GR] 18 Oct 2022
+
+
+
+
+                                                                                      October 19, 2022
+
+                                           1 Center for Applied Mathematics, Tianjin University.   No. 135 Yaguan Road, Tianjin
+                                           300350 China.
+                                           2,3 CAS Wu Wen-Tsun Key Laboratory of Mathematics and School of Mathematical Sci-
+
+                                           ences, University of Science and Technology of China, No. 96 Jinzhai Road, Hefei, Anhui
+                                           Province 230026 China.
+                                           1 smath@tju.edu.cn       2 bxu@ustc.edu.cn     3 yeyu@ustc.edu.cn
+
+
+
+                                           Abstract: We are motivated by cone spherical metrics on compact Riemann surfaces of
+                                           positive genus to solve a special case of the Hurwitz problem. Precisely speaking, letting
+                                           d, g and ℓ be three positive integers and Λ be the following collection of (ℓ + 2) partitions
+                                           of a positive integer d:
+
+                                                       (a1 , · · · , ap ), (b1 , · · · , bq ), (m1 + 1, 1, · · · , 1), · · · , (mℓ + 1, 1, · · · , 1),
+
+                                           where (m1 , · · · , mℓ ) is a partition of p + q − 2 + 2g, we prove that there exists a branched
+                                           cover from some compact Riemann surface of genus g to the Riemann sphere P1 with
+                                           branch data Λ. An analogue for the genus-zero case was found by the first two authors
+                                           (Algebra Colloq. 27 (2020), no. 2, 231-246), who were stimulated by such metrics on P1
+                                           and conjectured the veracity of the above statement there.
+                                           Keywords. branched cover, Hurwitz problem, cone spherical metric, one-form
+                                           2020 Mathematics Subject Classification. Primary 20B35; secondary 30F30
+
+
+                                           1     Introduction
+                                           A branched cover f of degree d > 1 from a compact Riemann surface to another one
+                                           gives a collection Λ of finitely many partitions of d of length less than d, called the
+                                           branch data of f . Moreover, Λ satisfies the celebrated Riemann-Hurwitz formula.
+                                           On the other hand, there also exist many collections of partitions of d, called excep-
+                                           tions, which satisfy Riemann-Hurwitz formula but fail to be the branch data of any
+                                           branched cover. The Hurwitz problem with a history more than 130 years asks for
+                                           enumerating branched covers with prescribed branch data with respect to some equiv-
+                                           alence relation. A simplified version of the problem is whether such a branched cover
+
+                                                                                                     1
+exists with a given branch data, which was solved [7, Proposition 3.3] in the sense that
+there exist no exception if the target surface has positive genus. We mainly focus
+in this manuscript on branched covers to the Riemann sphere P1 . In this case, both
+the original problem and the simplified version are still widely open although many
+mathematicians have already obtained a lot of understandings about both the branch
+data and the exceptions. See the classical [2, 7, 10, 11, 12, 14, 15, 17, 18, 31, 33]
+and the more recent [1, 16, 21, 22, 23, 24, 25, 26, 27, 35, 36, 32] about this problem.
+The new results we obtain are all limited to the simplified version of the Hurwitz
+problem. We use the notations in [4, 32] in this manuscript.
+    Cone spherical metrics are constant curvature +1 conformal metrics with finitely
+many cone singularities on compact Riemann surfaces. The existence problem of
+such metrics with prescribed cone singularities on compact Riemann surfaces has
+been open since Troyanov [34] proposed it formally and solved the sub-critical case
+in 1980s. Such a metric is called reducible if and only if some developing map of
+it has monodromy in U(1); otherwise, it is called irreducible. Q. Chen, W. Wang,
+Y. Wu and the second author [4] characterized reducible (cone spherical)  √      metrics
+in terms of meromorphic one-forms with simple poles and periods in −1R, called
+unitary one-forms on compact Riemann surfaces. In particular, the cone angles of
+a reducible metric are determined by the residues of poles and the multiplicities of
+zeros of a unitary one-form ([4, Theorem 1.5]).
+    A unitary one-form on P1 has residues in R \ {0} and satisfies both the residue
+theorem and the degree condition, i.e. the sum of multiplicities of its zeros equals
+the number of its simple poles minus 2. To obtain the angle constraint for reducible
+metrics with cone angles lying in 2πQ>0 on P1 , based on the draft of [4], the second
+author found in 2014 that it suffices to prove the following fact
+
+Fact 1 Let (a1 , · · · , ap ) and (b1 , · · · , bq ) be two partitions of positive integer d > 1,
+and (m1 , · · · , mℓ ) a partition of p + q − 2 > 0. Then there exists a unitary one-form
+ω on P1 such that it has the p + q residues of a1 , · · · , ap , −b1 , · · · , −bq and ℓ zeros
+with multiplicities m1 , · · · , mℓ , respectively, if and only if
+                                                             d
+                    max(m1 , · · · , mℓ ) <                                           .      (1)
+                                              GCD(a1 , · · · , ap , b1 , · · · , bq )
+
+Given such a one-form ω, the second author observed in 2014 that the solution of
+the ODE
+                                    df
+                                       =ω
+                                     f
+is a unique rational function f on P1 up to a multiple, from which the necessary
+part (1) of this fact holds. The second author reduced the sufficient part of Fact 1
+to a special case of the Hurwitz problem and solved the latter affirmatively in 2015
+joint with the first author. See [32, Theorem 1.1], i.e. Case 1 of Theorem 1.1. Then,
+taking the logarithmic differential df
+                                     f
+                                       with respect to the branched cover f : P1 → P1
+in Case 1 of Theorem 1.1, we obtain the desired one-form ω in Fact 1. Eremenko
+
+                                                  2
+[8] used this case of the Hurwitz problem solved by the first and the second authors
+and the theory of o-minimal structures to obtain the angle constraint for reducible
+metrics on P1 . Mondello-Panov [19, Theorem C] used parabolic rank two stable
+bundles to give the angle constraint for irreducible metrics on P1 a little bit earlier
+than Eremenko. Therefore, combining these, we obtain the angle constraint for cone
+spherical metrics on P1 . X. Zhu [36] used this angle constraint to find infinitely many
+new exceptions for branched covers from P1 to itself.
+    Mondello-Panov [20, Theorem A] used the technique of cutting and gluing to
+show that the Gauss-Bonnet formula is the only angle constraint for cone spherical
+metrics on compact Riemann surfaces of positive genus. Quite recently, Q. Chen,
+B. Li and the first and the second authors [3] applied Jenkins-Strebel differentials
+to finding the angle constraint for reducible metrics on compact Riemann surfaces
+of positive genus, which was reduced to an existence theorem of unitary one-forms
+with both residues and zero multiplicities prescribed. A special case of the main
+theorem we proved in [3] reads as follows.
+
+Fact 2 Let p, q, g be three positive integers, (a1 , · · · , ap ) and (b1 , · · · , bq ) be two par-
+titions of d, and (m1 , · · · , mℓ ) a partition of p + q − 2 + 2g. Then there exists a
+unitary one-form ω on some compact Riemann surface of genus g such that it has the
+p + q residues of a1 , · · · , ap , −b1 , · · · , −bq and ℓ zeros with multiplicities m1 , · · · , mℓ ,
+respectively.
+
+Roughly speaking, the positive genus in Fact 2 helps us remove the algebraic restric-
+tion (1) in Fact 1 so that the residue theorem together with the degree condition
+guarantee the
+           √ existence of ω. Nevertheless, Fact 2 is non-trivial since all the periods
+of ω lie in −1R. Motivated by Fact 2, we obtain Case 2 of the following theorem,
+whose proof is independent of this fact.
+Theorem 1.1. Let d, ℓ be two positive integers. Suppose that a collection Λ consists
+of ℓ + 2 partitions of d:
+
+      (a1 , a2 , . . . , ap ), (b1 , b2 , . . . , bq ), (m1 + 1, 1, . . . , 1), . . . , (mℓ + 1, 1, . . . , 1).
+
+Define the total branch number v(Λ) of Λ to be m1 + · · · + mℓ + (d − p) + (d − q).
+Then Λ is the branch data of a branched cover from a compact Riemann surface X
+to P1 if and only if it satisfies one of the following two conditions:
+                                                                               d
+   1. v(Λ) = 2d − 2 and max{m1 , . . . , mℓ } <                                                         ;
+                                                                GCD(a1 , . . . , ap , b1 , . . . , bq )
+   2. The total branching order v(Λ) ≥ 2d is even.
+                                              v(Λ) + 2 − 2d
+Moreover, the genus of X equals                             .
+                                                    2
+   We call a branched cover from a compact Riemann surface X to P1 a Belyi
+function on X if it has at most three branched points. Using the same argument as
+
+                                                         3
+the proof of Theorem 1.3 in [32], we could obtain from Theorem 1.1 the following
+corollary.
+
+Corollary 1.2. Let us use the notations in Theorem 1.1. Then there exists a Belyi
+function of degree ℓd on X with branch data
+
+           e = {(ℓa1 , · · · , ℓap ), (ℓb1 , · · · , ℓbq ), (m1 + 1, · · · , mℓ + 1, 1, · · · , 1)} .
+           Λ
+
+Remark 1.3. The ℓ = 1 case of Theorem 1.1 was proved by Boccara [2] which
+is another motivation to us besides Facts 1-2. We already proved the first case of
+v(Λ) = 2d − 2 in [32], where X is P1 . The necessary part of the second case follows
+from Riemann-Hurwitz. Hence, in the remaining of this note, we only need to show
+its sufficient part.
+    There exists an apparent difference between Case 1 and Case 2 in Theorem 1.1.
+It could be compared to some irregularity phenomena in enumeration geometry of
+Riemann surfaces: unstable Riemann surfaces are more irregular than stable surfaces
+[9, p.53].
+    By taking the logarithmic differential of the branched cover, Theorem 1.1 implies
+Fact 2 if max(m1 , · · · , mℓ ) < d. However, we could not obtain Fact 2 by merely using
+the theorem. Actually, we gave the proof of Fact 2 in [3] by using ribbon graphs of
+Strebel differentials. On the other hand, following Hurwitz, we apply the Riemann
+existence theorem [5, Theorem 2, p.49] to reducing Theorem 1.1 to the following
+proposition.
+
+Proposition 1.4. Let d, ℓ, g be three positive integers. If
+     
+ Λ = (a1 , a2 , . . . , ap ), (b1 , b2 , . . . , bq ), (m1 + 1, 1, . . . , 1), . . . , (mℓ + 1, 1, . . . , 1)
+
+is a collection of ℓ + 2 partitions of d with m1 + · · · + mℓ = p + q − 2 + 2g, then
+there exist ℓ + 2 permutations τ1 , τ2 , σ1 , . . . , σℓ ∈ Sd satisfying the following three
+conditions:
+
+   1. τ1 τ2 σ1 · · · σℓ = id;
+
+   2. τ1 has type of a11 a12 · · · a1p , τ2 of b11 b12 · · · b1q and σi of (mi + 1)1 1d−mi −1 for i =
+      1, 2, . . . , ℓ;
+
+   3. the subgroup generated by τ1 , τ2 , σ1 , . . . , σℓ acts transitively on the set {1, 2, · · · , d}.
+
+   We prove the above proposition in the next section. In the last section, we
+propose a question on the enumeration of branched covers in Theorem 1.1 up to
+weak and strong equivalence relations, respectively, which salutes to Hurwitz.
+
+
+
+
+                                                       4
+  2     Proof of Propostion 1.4
+  2.1     Case ℓ = 1: three partitions
+  Actually this case was proved by Boccara [2]. In this subsection, we give an alter-
+  native proof, which seems more constructive than the original one by Boccara.
+
+  Proposition 2.1. Proposition 1.4 holds true for ℓ = 1.
+
+  Proof. We use induction on d.
+      At first, note that d ≥ m1 + 1 = p + q − 2 + 2g + 1 ≥ 3. Moreover, if d = 3, then
+  Λ = {(3), (3), (3)}. We could choose τ1 = τ2 = σ = (123).
+      Then we assume that the proposition holds true for partitions of d ≤ D − 1,
+  where D ≥ 4. Recall that Λ = {(a1 , . . . , ap ), (b1 , . . . , bq ), (m1 + 1, 1, . . . , 1)} is a
+  collection of three partitions of D and 2g = m1 − p − q + 2 ≥ 2.
+
+Case 1 Suppose that there exist i and j such that ai 6= bj . Without loss of generality,
+       we assume that ap > bq and bq = min{a1 , . . . , ap , b1 , . . . , bq }.
+
+Subcase 1.1 Let m1 − 1 < D − bq . Then, applying the induction hypothesis to the
+            collection
+
+                          e = {(a1 , . . . , ap − bq ), (b1 , . . . , bq−1 ), (m1 , 1, . . . , 1)},
+                          Λ
+
+              of three partitions of D−bq , we could find three permutations τe1 , τe2 , σ        e1 ∈
+              SD−bq such that τe2 σ
+                                  e1 = τe1 = µ̃1 · · · µ̃p , where µ̃i is a cycle of length ai for
+              1 ≤ i ≤ p − 1 and µ̃p is a cycle of length (ap − bq ). Since he      τ1 , τe2 , σ
+                                                                                              e1 i acts
+              transitively on {1, 2, · · · , D − bq }, by [32, Lemma 2.10], σ     e1 and µ̃p have
+              at least one common element, say a. Then we could take
+
+                      τ2 = (D − bq + 1, D − bq + 2, . . . , D)e
+                                                              τ2 ,
+                      σ1 = σ
+                           e1 (a D),
+                                                                                        
+                      τ1 = µ̃1 · · · µ̃p−1 · (D − bq + 1, D − bq + 2, . . . , D)µ̃p (a D) .
+
+Subcase 1.2 Let m1 − 1 ≥ D − bq . Since m1 + 1 ≤ D, we have bq ≥ 2. Moreover, if
+            bq = 2, then m1 + 1 = D. By Edmonds-Kulkarni-Stong [7, Proposition
+            5.2], it holds true for Case bq = 2. Hence, we assume bq ≥ 3 and consider
+            the following new collection
+
+                 e = {(a1 , . . . , ap−1 , ap − 2), (b1 , . . . , bq−1 , bq − 2), (m1 − 1, 1, . . . , 1)}
+                 Λ
+
+              of three partitions of D − 2. Since D − bq ≤ m1 − 1 = p + q − 3 + 2g, we
+              have 2g ≥ 3 + D − bq − p − q.
+
+
+
+
+                                                      5
+             At first, it is easy to check that if max{p, q} ≤ 2, then 2g ≥ 3. On
+             the other hand, D − bq − p − q ≥ D3 − bq since p, q ≤ D3 . Therefore, if
+             max{p, q} ≥ 3, then we have
+                                                 max{p, q} · bq
+                       2g ≥ 3 + D − bq − p − q ≥ 3 +            − bq ≥ 3.
+                                                       3
+             Summing up, we always have g ≥ 2 and m1 − 2 = p + q − 2 + 2(g − 1).
+
+             By the induction hypothesis, there exist τe1 , τe2 , σ    e1 in SD−2 corresponding
+                 e
+             to Λ with σ e1 = τe1 τe2 . Let τe1 = µ̃1 · · · µ̃p , where µ̃i is a cycle of length ai
+             for 1 ≤ i ≤ p − 1 and µ̃p is a cycle of length (ap − 2). Let τe2 = ν̃1 · · · ν̃q ,
+             where ν̃i is a cycle of length bi for 1 ≤ i ≤ q − 1 and ν̃q is a cycle of length
+             (bq − 2). By the transitive property, σ      e1 and µ̃p have at least one common
+             element, say x; σ e1 and ν̃q have at least one common element, say y. At
+             last, we take
+                                              τ1 = (D, D − 1, x)e
+                                                                τ1
+                                              τ2 = τe2 (D, D − 1, y)
+                                             σ1 = τ1 τ2 ,
+             where σ1 = (D, D − 1, x)e
+                                     σ1 (D, D − 1, y) is always an (m1 + 1)-cycle in
+             SD whether x coincides with y or not.
+Case 2 Let a1 = · · · = ap = b1 = · · · = bq = k. Then we have k ≥ 3 since
+                                 p · k = D ≥ m1 + 1 = 2p − 1 + 2g.
+       Moreover, by Proposition 5.2 in [7], we could assume p = q ≥ 2 and then
+       m1 ≥ 4.
+Subcase 2.1 Let m1 − 1 ≤ D − k. Then, considering the following new collection
+                        e = {(a1 , . . . , ap−1 ), (b1 , . . . , bq−1 ), (m1 − 1, 1, . . . , 1)}
+                        Λ
+             of three partitions of D−k, we find by the induction hypothesis τe1 , τe2 , σ      e1 ∈
+                                        e
+             SD−k corresponding to Λ such that σ      e1 = τe1 τe2 . Let τe1 = µ̃1 · · · µ̃p , where
+             µ̃i is a cycle of length k for 1 ≤ i ≤ p. We claim that each µ̃i has at
+             least 2 common elements with σ    e1 . In fact, if µ̃i has exactly one common
+             elements with σ  e1 , say a, then the cycle in τe2 = τe1−1 σ  e1 containing a has
+             length greater than k. A contradiction.
+             Let x1 , xi be two common numbers lying in both µ̃1 = (x1 , x2 , . . . , xi , . . . , xk )
+             and σ e1 . Then we could take
+                τ1 = (x1 , D − k + 1)(xi , D − k + i)(D − k + 1, D − k + 2, . . . , D)e
+                                                                                      τ1 ,
+                τ2 = τe2 (D, D − 1, . . . , D − k + 1),
+                σ1 = τ1 τ2 ,
+             where σ1 = (x1 , D − k + 1)(xi , D − k + i)e
+                                                        σ1 is a cycle of length (m1 + 1).
+
+                                                   6
+Subcase 2.2 Let m1 − 1 > D − k. Then we consider the following collection
+                  e = {(a1 , . . . , ap−1 , ap − 2), (b1 , . . . , bq−1 , bq − 2), (m1 − 1, 1, . . . , 1)}
+                  Λ
+
+              of three partitions of D − 2. Since g ≥ 2, we could take the same con-
+              struction as in Subcase 1.2 except for Case Λ = {(3, 3), (3, 3), (5, 1)} for
+              which we could construct the three permutations by hand.
+
+
+
+
+ 2.2      Case ℓ > 1: more than three partitions
+ In this subsection, we will prove Case ℓ > 1 of Proposition 1.4 by induction on both
+ ℓ and m1 + · · · + mℓ − p − q. At first, we need some preliminary lemmas.
+
+ Lemma 2.2. Let 1 ≤ s, r ≤ d be two integers such that
+
+                          s + r ≥ d + 1 and            s + r ≡ d + 1(mod 2).
+
+ Then there exist an s-cycle σ1 and an r-cycle σ2 such that σ1 σ2 is a d-cycle.
+
+ Proof. If 2k = s + r − (d + 1), then 0 ≤ 2k < r. Let
+
+            σ2−1 = (r, r − 1, . . . , 2, 1)(2k + 1, 2k, . . . , 2, 1)
+                  = (r, r − 1, . . . , 2k + 2, 2k + 1, 2k − 1, . . . , 1, 2k, 2k − 2, . . . , 2)
+
+ Hence, σ2 is an r-cycle. Note that
+
+                  (1, 2, . . . , d)σ2−1 = (1, 2k + 1, 2k, . . . , 2, r + 1, r + 2, . . . , d)
+
+ Set σ1 = (1, 2k + 1, 2k, . . . , 2, r + 1, r + 2, . . . , d). Then σ1 is an s-cycle and σ1 σ2 =
+ (1, 2, . . . , d) is a d-cycle.
+
+ Lemma 2.3. Proposition 1.4 holds true if ℓ = 2 and p = q = m1 = m2 .
+
+ Proof. Case p = q = m1 = m2 = 1 follows from [7, Proposition 5.2]. We assume
+ p = q = m1 = m2 > 1 in what follows. We could derive p, q < d from (m1 + 1) ≤ d.
+ Without loss of generality, we could assume that
+
+                             a1 ≥ a2 ≥ · · · ≥ ap ,        b1 ≥ b2 ≥ · · · ≥ bq .
+
+ Then a1 ≥ 2 and b1 ≥ 2. Let
+
+ τ1 = (a1 + a2 + · · · + ap−1 + 1, a1 + a2 + · · · + ap−2 + 1, . . . , a1 + 1, 1) (1, 2, . . . , d)
+    = (1, 2, . . . , a1 ) (a1 + 1, a1 + 2, . . . , a1 + a2 ) · · · (a1 + · · · + ap−1 + 1, . . . , d)
+ τ2 = (d, d − 1, . . . , 1)(1, b1 + 1, . . . , b1 + b2 + · · · + bq−1 + 1)
+    = (d, d − 1, . . . , b1 + b2 + · · · + bq−1 + 1) · · · (b1 + b2 , . . . , b1 + 2, b1 + 1) (b1 , . . . , 2, 1)
+
+                                                       7
+Then we have the following equality relevant to the four permutations of τ1 , τ2 , σ1
+and σ2 :
+
+τ1 τ2 = (a1 + a2 + · · · + ap−1 + 1, . . . , a1 + 1, 1)(1, b1 + 1, . . . , b1 + b2 + · · · + bq−1 + 1)
+       = (a1 + a2 + · · · + ap−1 + 1, . . . , a1 + 1, 1)(12) (12)(1, b1 + 1, . . . , b1 + b2 + · · · + bq−1 + 1)
+         |                      {z                         }|                          {z                      }
+                                   σ2−1                                                    σ1−1
+
+
+Hence we complete the proof.
+
+Lemma 2.4. Proposition 1.4 holds true if ℓ = 2 and p + q = m1 + m2 .
+
+Proof. Without loss of generality, we assume that p ≥ q and m1 ≥ m2 . Moreover,
+by Lemma 2.3, we could assume p 6= q or m1 6= m2 , that is m2 < p. Consider the
+following new collection of partitions of d
+       
+  Λe = (a1 + a2 + · · · + am2 +1 , am2 +2 , . . . , ap ), (b1 , b2 , . . . , bq ), (m1 + 1, 1, . . . , 1) .
+
+Then by Proposition 2.1, we know that there exist τe1 , τ2 , σ1 corresponding to Λ              e
+such that τe1 τ2 = σ1 . In particular, τe1 is a product of mutually disjoint (p − m2 )
+                    −1
+
+cycles of lengths (a1 + a2 + · · · + am2 +1 ), am2 +2 , . . . , ap , respectively. For simplicity,
+we assume that the cycle of length (a1 + a2 + · · · + am2 +1 ) in the product is
+
+                                    (1, 2, . . . , a1 + · · · + am2 +1 ).
+
+Note that
+
+  (a1 + · · · + am2 + 1, a1 + · · · + am2 −1 + 1, . . . , a1 + 1, 1) · (1, 2, . . . , a1 + a2 + · · · + am2 +1 )
+=(1, 2, . . . , a1 )(a1 + 1, a1 + 2, . . . , a1 + a2 ) · · · (a1 + · · · + am2 + 1, . . . , a1 + · · · + am2 +1 )
+
+Set
+
+             σ2−1 = (a1 + · · · + am2 + 1, a1 + · · · + am2 −1 + 1, . . . , a1 + 1, 1),
+               τ1 = σ2−1 τe1 .
+
+Then we have τ1 τ2 σ1 σ2 = id.
+
+Lemma 2.5. Proposition 1.4 holds true for ℓ = 2 and p + q ≤ m1 + m2 .
+
+Proof. We use induction on m1 + m2 − (p + q). By Lemma 2.4, we assume it holds
+true for m1 + m2 = (p + q) + 2k. Suppose m1 + m2 − (p + q) = 2k + 2. Then
+(m1 − 1) + (m2 − 1) = (p + q) + 2k. By the induction hypothesis, there exist τ1 , τ2
+and m1 -cycle σe1 , m2 -cycle σ
+                              e2 such that τ1 τ2 = σ
+                                                   e2 σ
+                                                      e1 . Let Ai be the set of numbers
+in the cycle σ
+             ei (i = 1, 2). We choose two numbers x, y ∈ {1, 2, . . . , d} according to
+the following three cases, respectively:
+
+      • If A1 ⊆ A2 , then pick x ∈ A1 , y ∈
+                                          / A2 ;
+
+                                                     8
+       • If A2 ⊆ A1 , then pick x ∈ A2 , y ∈
+                                           / A1 ;
+
+       • If A1 * A2 and A2 * A1 , then pick x ∈ A1 \ A2 , y ∈ A2 \ A1 .
+   Then σ2 = σ
+             e2 (xy) is a (1 + m2 )-cycle, σ1 = (xy)e
+                                                    σ1 is a (1 + m1 )-cycle and
+
+                                                τ1 τ2 = σ2 σ1 .
+
+
+
+       Now we are in a position to complete the proof of Proposition 1.4.
+   Proof of Proposition 1.4. Here we use induction on ℓ and m1 + · · · + mℓ − (p + q).
+   Assume that Proposition 1.4 holds true for ℓ ≤ k − 1 (k ≥ 3) and consider the case
+   ℓ = k. Then we use induction on m1 + · · · + mℓ − (p + q).
+(Step 1) Let m1 + · · · + mℓ = p + q. Then we could assume m1 ≥ m2 ≥ · · · ≥ mℓ and
+         p ≥ q without loss of generality. Hence p > mℓ and the same argument as in
+         Lemma 2.4 works.
+
+(Step 2) Let m1 + · · · + mℓ = p + q + 2n − 2 where n > 1. Then the same argument as
+         in Lemma 2.5 shows that it holds true for m1 + · · · + mℓ = p + q + 2n.
+
+
+
+
+   3     Hurwitz numbers
+   Two branched covers f1 : X1 → Y and f2 : X2 → Y between compact Riemann
+   surfaces are said to be weakly equivalent if there exist two biholomorphic maps
+   g : X1 → X2 and g : Y → Y such that f2 ◦ e
+   e                                           g = g ◦ f1 , and strongly equivalent if the
+   set of branched points in Y is fixed once and forever and one can take g = idY . The
+   weak (strong) Hurwitz number of a branch datum is the number of weak or strong
+   equivalence classes of branched covers realizing it. The simple Hurwitz numbers are
+   those strong Hurwitz numbers with respect to branch data with form
+
+                         (2, 1, · · · , 1), · · · , (2, 1, · · · , 1), (a1 , · · · , ap ).
+
+       Long ago Mednykh in [17, 18] gave some general formulae for the computation of
+   the strong Hurwitz numbers, but the actual implementation of them is rather elabo-
+   rate in general. Lando-Zvonkin [16, Chapter 5] made a systematic exposition on how
+   to compute simple Hurwitz numbers for target P1 in terms of intersection numbers
+   on moduli spaces of curves. Moreover, they also gave enumeration of polynomial
+   rational functions P1 → P1 in terms of the Lyashko-Looijenga mapping. Monni-
+   Song-Song [21] used algebraic methods to compute the simple Hurwitz numbers
+   with respect to branch data of form {(2, 1, · · · , 1), · · · , (2, 1, · · · , 1)} for arbitrary
+   source and target Riemann surfaces and found the generating function for such sim-
+   ple Hurwitz numbers. Dubrovin-Yang-Zagier [6] gave a polynomial-time algorithm
+
+                                                        9
+of computing these simple Hurwitz numbers for target surface P1 . Quite recently,
+Petronio [28, 30] and Petronio-Sarti [29] computed explicitly the weak Hurwitz num-
+ber for certain branch data consisting of three partitions and having target surface
+P1 by using a combinatorial method based on Grothendieck’s dessin d’enfants.
+
+Question Find a neat formula for all the weak (strong) Hurwitz numbers for the
+branch data in Theorem 1.1.
+
+Acknowledgments. J.S. appreciates her hospitality during his visit in Summer
+2021 to Institute of Geometry and Physics, USTC, where he and the other two
+authors finalized this manuscript. B.X. expresses his deep gratitude to Qing Chen,
+Weibo Fu, Yi Ouyang, Mao Sheng and Michael Zieve for valuable conversations
+during the long gestation period of this work. J.S. is partially supported by National
+Natural Science Foundation of China (Grant Nos. 12001399 and 11831013). B.X.
+is supported in part by the National Natural Science Foundation of China (Grant
+Nos. 12271495, 11971450 and 12071449) and the CAS Project for Young Scientists
+in Basic Research (YSBR-001). Y.Y. is supported in part by the National Natural
+Science Foundation of China (Grant Nos. 11971449, 12131015 and 12161141001).
+
+
+References
+ [1] K. Baránski. On realizability of branched coverings on the sphere. Topol. Appl. 116 (2001),
+     279-291.
+
+ [2] G. Boccara. Cycles comme produit de deux permutations de classes données. Discrete Math.
+     58 (1982), 129-142.
+
+ [3] Q. Chen, B. Li, J. Song and B. Xu. Cone spherical metrics and quadratic differentials. in
+     preparation.
+
+ [4] Q. Chen, W. Wang, Y. Wu and B. Xu. Conformal metrics with constant curvature one
+     and finitely many conical singularities on compact Riemann surfaces, Pacific J. Math. 273:1
+     (2015) 75-100.
+
+ [5] S. Donaldson. Riemann surfaces. Oxford University Press, Oxford, 2011.
+
+ [6] B. Dubrovin, D. Yang and D. Zagier. Classical Hurwitz numbers and related combinatorics.
+     Mosc. Math. J. 17:4 (2017) 601-633.
+
+ [7] A. L. Edmonds, R. S. Kulkarni and R. E. Stong. Realizability of branched coverings of
+     surfaces. Trans. Amer. Math. Soc. 282(2) (1984), 773-790.
+
+ [8] A. Eremenko. Co-axial monodromy. Ann. Sc. Norm. Super. Pisa Cl. Sci. (5) 20:2 (2020),
+     619-634.
+
+ [9] B. Eynard. Counting surfaces. Progress in Mathematical Physics, 70. Birkhäuser/Springer,
+     2016.
+
+
+
+
+                                              10
+[10] C. L. Ezell. Branch point structure of covering maps onto nonorientable surface. Trans. Am.
+     Math. Soc. 243 (1978), 123-133.
+
+[11] G. Francis. Assembling Riemann surfaces with prescribed boundary curves and branch points.
+     Illinois J. Math. 20 (1976), 198-217.
+
+[12] S. M. Gersten. On branched coverings of the 2-sphere by the 2-sphere. Proc. Amer. Math.
+     Soc. 101 (1987), 761-766.
+
+[13] A. Hurwitz. Über Riemann’sche Flächen mit gegebenen Verzweigungspunkten. Math. Ann.
+     103 (1891), 1-60.
+
+[14] D. H. Husemoller. Ramified coverings of Riemann surfaces. Duke Math. J. 29 (1962), 167-174.
+
+[15] A. G. Khovanskii and S. Zdravskovska. Branched covers of S 2 and braid groups. J. Knot
+     Theory Ramif. 5 (1995), 55-75.
+
+[16] S. K. Lando and A. K. Zvonkin. Graphs on Surfaces and their Applications, With an appendix
+     by Don B. Zagier. Springer-Verlag, Berlin, 2004.
+
+[17] A. D. Mednykh. Nonequivalent coverings of Riemann surfaces with a given ramification type.
+     Sib. Math. Zh. 25 (1984), 120-142.
+
+[18] A. D. Mednykn. Branched covering of Riemann surfaces whose branch orders coincide with
+     the multiplicities. Comm. Algebra 18 (1990), 1517-1533.
+
+[19] G. Mondello and D. Panov, Spherical metrics with conical singularities on a 2-sphere: angle
+     constraints, Int. Math. Res. Not. IMRN 2016, no. 16, 4937-4995.
+
+[20] G. Mondello and D. Panov, Spherical surfaces with conical points: systole inequality and
+     moduli spaces with many connected components, Geom. Funct. Anal. 29:4 (2019) 1110-1193.
+
+[21] S. Monni, J. S. Song and Y. S. Song. The Hurwitz enumeration problem of branched covers
+     and Hodge integrals. J. Geom. Phys. 50 (2004), 223-256.
+
+[22] A. Okounkov and R. Pandharipande. Gromov-Witten theory, Hurwitz theory and complete
+     cycles. Ann. Math. 163 (2006), 517-560.
+
+[23] F. Pakovich. Solution of Hurwitz problem for Laurent polynomials. J. Knot Theory Ramif.
+     18 (2009), 271-302.
+
+[24] M. A. Pascali and C. Petronio. Surface branched covers and geometric 2-orbifolds. Trans.
+     Amer. Math. Soc. 361 (2009), 5885-5920.
+
+[25] M. A. Pascali and C. Petronio. Branched covers of the sphere and the prime-degree conjecture.
+     Annali di Matematica. 191 (2012), 563-594.
+
+[26] E. Pervova and C. Petronio. On the existence of branched coverings between surfaces with
+     prescribed branch data, I. Algebra Geom. Topol. 6 (2006), 1957-1985.
+
+[27] E. Pervova and C. Petronio. On the existence of branched coverings between surfaces with
+     prescribed branch data, II. J. Knot Theory Ramif. 17 (2008), 787-816.
+
+[28] C. Petronio. Explicit computation of some families of Hurwitz numbers. European Journal of
+     Combinatorics 75 (2019), 136-151.
+
+
+                                               11
+[29] C. Petronio and F. Sarti. Counting surface branched covers. Studia Sci. Math. Hungar. 56:3
+     (2019), 309-322.
+
+[30] C. Petronio. Explicit computation of some families of Hurwitz numbers, II Adv. Geom. 20:4
+     (2020), 483-498.
+
+[31] D. Singerman. Subgroups of Fuchsian groups and finite permutation groups. Bull. Lond.
+     Math. Soc. 2 (1970), 319-323.
+
+[32] J. Song and B. Xu, On rational functions with more than three branch points. Algebra Colloq.
+     27:2 (2020), 231-246. arXiv:1510.06291
+
+[33] R. Thom. L’equivalence d’une fonction différentiable et d’un polinôme. Topology 3(suppl. 2)
+     (1965), 297-307.
+
+[34] M. Troyanov, Prescribing curvature on compact surfaces with conical singularities, Trans.
+     Amer. Math. Soc. 324:2 (1991) 793-821.
+
+[35] H. Zheng. Realizability of branched covering of S 2 . Topol. Appl. 153 (2006), 2123-2134.
+
+[36] X. Zhu. Spherical conic metrics and realizability of branched covers. Proc. Amer. Math. Soc.
+     147:4 (2019) 1805–1815.
+
+
+
+
+                                               12
+

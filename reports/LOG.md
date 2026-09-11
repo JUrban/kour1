@@ -1595,3 +1595,26 @@ covered by two elements of order dividing3, correcting a printed auxiliary
 claim in Malcolm2017 Remark2.6 (visually checked). The logarithmic
 consequence with c>8 is conditional on the class-product lemma;10.32
 is not counted. Plan, bounded transcript and actual clean exit0 retained.
+
+
+## 2026-09-11T18:09:17.393481+00:00 — Problem 10.32 logarithmic candidate
+
+Recorded the thirtieth complete candidate: n>=max(1126,16 log m),
+and asymptotically every c>8, suffices for x^r y^s on S_n when at least
+one exponent is odd. The positive-genus three-partition theorem applies
+after restricting to max(support size,2q) points; transpositions use
+cycle merging. The even-target cover, signed modular roots, explicit
+prime estimates and all quantifiers are checked in a25-point audit.
+
+GAP finds6,143 actual factorization witnesses at seven eligible pairs
+through degree25; independent Python replay verifies every target type,
+all49,144 root identities and six exact rational margins. An undefined
+GAP function caused the first rejected run. The next run completed
+mathematically but emitted line continuations incompatible with JSON;
+its raw evidence is retained. The final stream export is valid and all
+checks pass, with clean actual exit0. No finite computation is presented
+as proof of the unbounded statement or the imported source theorems.
+
+At18:05:18 UTC all six n=7 workers were live with14,360,000 checked
+nodes and20,175,092KiB combined RSS, zero completed shards. Candidate
+priority and outside review remain pending; all work remains local.

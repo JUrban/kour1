@@ -1003,3 +1003,20 @@ Amelio--Andre--Tent2312.16992v1 was consulted for the older translation-
 subgroup restriction. The AMS request for Glauberman--Mann--Segev2015
 returned403, so its full theorem is not claimed as read. Searches did not
 find an exact prior10.62 consequence; priority remains unresolved.
+
+
+## 10.32: logarithmic symmetric-group power-word universality
+
+Boccara1982, as restated and reproved in Song--Xu--Ye arXiv2210.09700v2
+(6 February2024), Propositions1.4/2.1, gives the positive-genus
+three-partition theorem. Its full short proof and relevant EKS1984
+full-cycle dependency were read. Brenner--Evans--Silberger1986 Lemma5
+supplies even targets; Rosser--Schoenfeld1962 Theorems4/9 supply exact
+prime estimates. The original Boccara and Brenner1977 proofs and the
+analytic estimates are imported with explicit reading boundaries in
+`research/10.32-review.md`; inspected PDF images and sources retained.
+
+The resulting n>=max(1126,16 log m) deduction has a complete internal
+audit. The weaker interval conjectured in the initial plan is not
+claimed proved. Bounded priority searches found no exact resolution
+but do not establish novelty; this may be a known consequence.
