@@ -1483,3 +1483,17 @@ unresolved; possible-new count stays26, outside reviews0.
 The six n=7 GAP workers remain live. At16:18 UTC they reported
 10,970,000 nodes collectively and15,625,460KiB combined RSS; no shard
 was yet complete. The certificate hash continues to match.
+
+
+## 2026-09-11T16:25:00.070845+00:00 — Integral p-adic factorization for9.55
+
+Recorded a complete negative consequence of Weiss1988 Theorem2.
+The double-action lattice is free over its normal left G factor,
+and its invariants are the rank-one trivial quotient module. Weiss
+supplies a permuted integral basis; a trace argument makes that
+basis one regular G-orbit and its chosen vector an integral unit.
+Both composition orders are checked explicitly. Centrality is not
+needed. The exact criterion was read in BKL2020 Remark1.8 and
+visually verified; Scott1990 was read in full for attribution.
+Original Weiss and Roggenkamp--Scott proofs were not independently
+read. This is prior work, keeping26 possible-new candidates.

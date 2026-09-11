@@ -1,0 +1,256 @@
+    Astérisque
+
+L EONARD L. S COTT
+Defect groups and the isomorphism problem
+Astérisque, tome 181-182 (1990), p. 257-262
+<http://www.numdam.org/item?id=AST_1990__181-182__257_0>
+
+
+
+
+    © Société mathématique de France, 1990, tous droits réservés.
+    L’accès aux archives de la collection « Astérisque » (http://smf4.emath.fr/
+    Publications/Asterisque/) implique l’accord avec les conditions générales d’uti-
+    lisation (http://www.numdam.org/conditions). Toute utilisation commerciale ou
+    impression systématique est constitutive d’une infraction pénale. Toute copie
+    ou impression de ce fichier doit contenir la présente mention de copyright.
+
+
+
+
+                      Article numérisé dans le cadre du programme
+                    Numérisation de documents anciens mathématiques
+                                 http://www.numdam.org/
+                 DEFECT GROUPS AND THE ISOMORPHISM PROBLEM
+
+
+                                     by Leonard L. Scott1
+
+
+
+
+  ABSTRACT As a ring, a block may arise from more than one finite group. The resulting
+  conjugacy issue for defect groups is important for the group ring isomorphism problem and
+  for understanding block theory in general. There are even indirect structural consequences
+  for finite groups, through G. Robinson's work on the "Z—star theorem" for odd primes. A
+  positive answer to the defect group conjugacy problem is given here for the principal block
+  in the case of cyclic, T.I., Sylow p-subgroups.
+
+
+
+         In a talk at Areata [S] I raised the following question regarding defect groups: Let
+  B be a block of group rings ZpG and 2pH, where Zp denotes the ring of p—adic integers
+  and G, H are (possibly nonisomorphic) finite groups. Suppose B has defect group D in G
+  and E in H.    Identify D and E with their projections on B. Is it then true that, after
+  applying some suitable normalization process to D and E (preserving their isomorphism
+  types), these groups must then be conjugate by a unit of B? In case B is a principal block,
+  normalization should just be the familiar and innocuous projection onto the units of
+  augmentation 1, using an augmentation B -> S obtained, say, from the sum-of-coefficients
+  map SG -» S. For other blocks the correct formulation of normalization remains part of the
+  problem.
+
+
+
+
+  ^This research was supported in part by NSF, especially NSF—INT.
+
+
+S.M.F.
+Astérisque   181-182   (1990)
+
+
+
+                                               257
+                                        L.L.   SCOTT
+
+
+
+
+       As Alperin has observed, a weaker version of the question is simply to ask if the
+block determines the defect group up to isomorphism.        This allows the question to be
+meaningfully investigated over modular fields (and also, we note here, for Morita or
+derived equivalent blocks, though it remains reasonable in all these cases to hope also for a
+version describing more explicitly how the isomorphism takes place). C. Bessenrodt has
+obtained a number of interesting results in the modular context, as discussed at this
+conference.   However, for intended later applications to the ismorphism problem — Does
+ZG ~ ZH imply G is isomorphic to H? — I have focused on the version stated above. Let
+me also mention that both Roggenkamp and Weiss have expressed the view that the
+question might be formulated even more strongly, in terms of p—groups that should be
+conjugate to a subgroup of the defect group.
+       In this note I wish to present the following theorem, including a somewhat
+condensed proof.    The statement is an improvement over the result presented at this
+Luminy conference, in that I do not need to assume E is the image of D under an
+automorphism of D. The argument, however, is essentially the same.
+
+
+Theorem Let S be an unramified (and integrally closed) finite extension of TL^.     Let B be
+the principal block of group algebras SG, SH over S, for finite groups G and H. Let D and
+E be Svlow p—subgroups of G and H, respectively, and identify them with their projections
+onto B. Assume that E is normalized in the sense of mapping to 1 under the augmentation
+B -> S induced bv SG -» S (which certainly also sends D to 1).
+       Assume also that D is cyclic (which implies that E is cyclic), and that D and E are
+T.I. sets in G and H, respectively. Then D is conjugate to E in B.
+
+
+       Since every finite simple group appears to have a cyclic T.I. set Sylow subgroup for
+some prime p, I am hopeful that even this basic case might have an impact on the
+
+
+
+
+                                               258
+                  DEFECT GROUPS AND THE ISOMORPHISM               PROBLEM
+
+
+
+
+isomorphism problem for nonsolvable groups. In the solvable (or just p—constrained) case,
+Roggenkamp and I have proved that, if the Z-forms 2G/Op,(G) and ZH/Op,(H) for a
+principal block B agree, then any defect (Sylow) groups D for G and E for H, normalized in
+B as above, are conjugate by a unit of B. Indeed, the normalized projections of G and H
+on B are conjugate in this case [S]. The equality over I (rather than Zp) is only needed to
+insure, in the case Op,(G) = 1, that Op(H) maps to 1 in 2pG/Op(G). Roggenkamp and I
+would very much like to know if this already follows, if H is a group of augmentation 1
+units which is a Zp—basis in ZpG. Perhaps someone reading this article may be able to
+answer this question.
+       I would like to mention that the first version of the above theorem, the defect 1 case
+with E the image of D under an automorphism, was obtained in collaboration with
+Roggenkamp, using his explicit determinations [Ro] of the blocks involved as orders. Of
+course, the first positive answer to any kind of defect group conjugacy question was the
+p-group case Roggenkamp and I treated in [RS].
+
+
+       One ingredient in the proof of the above theorem is the following lemma, which I
+                                                         *
+found while thinking about work of G. Robinson on the Z theorem for primes p>5; the
+latter would follow from results of Robinson and a positive answer to the defect group
+conjugacy question for principal blocks [R].
+Lemma Let S be a complete p—adic domain or its residue field. Suppose B is a block of
+both SG and SH for finite groups G and H, for which B has defect groups D and E,
+respectively. Assume that B has trivial source as an SG x H—module. Let e € Cg(D) be a
+source idempotent (in the sense of Puig [P]) for B with respect to D and G, and f e Cg(E)
+a source idempotent for B with respect to E and H.
+       Then eD is conjugate bv a unit of B to fE. In particular, e is conjugate to f, and D
+is isomorphic to E.
+
+
+
+
+                                               259
+                                        L.L. SCOTT
+
+
+
+
+       Briefly, the proof is as follows: First one shows that Be is an indecomposable SH x D
+module with vertex V a diagonal copy of D in E x D . (Note Be is projective on both sides,
+while its restriction to V contains a trivial summand.     Thus V is diagonal.   If W is its
+projection onto D, then Be is projective relative to H x W , thus projective relative to B®SW
+and G x W . It follows that W = D, since e is a source idempotent.) Symmetry now gives
+an isomorphism of E with D, which may be used to make Be an SHxE—module. As such,
+it has trivial source and vertex the standard diagonal of E. Hence it is a direct summand
+of the bimodule SH, so must be isomorphic to Bf' for some primitive idempotent f' of the
+centralizer in B of E. Examination of this isomorphism gives a conjugation of f ' E to eD.
+It can now be concluded that the idempotent V has defect group E, and is thus conjugate
+to f by a unit of B normalizing E, completing the proof.
+
+       Broue noted at the conference that he has encountered similar hypotheses in his
+work on fusion—compatible isometries, except that he uses the "endo—permutation11, rather
+than the "trivial source" condition (and a "diagonal" hypothesis on the vertex of his
+Morita equivalence module, the analogue of B). The "endo—permutation" condition would
+at least suffice in the beginning of the argument above, replacing Be by Endg(Be).
+       Intellectual predecessors of the above argument include Ward [Wa] and Coleman
+[C], which concern fusion and automorphisms of p—subgroups of unit groups of group rings,
+and more modern observations of Puig dealing similarly with source algebras.            I am
+grateful to R. Sandling for pointing out to me the results in Ward's paper.
+
+
+       When D and E are T.I. sets, as in the hypothesis of the theorem, one can fairly
+easily conclude from the lemma that D is conjugate to E in B: Use the isomorphism in the
+lemma to make B and Bf into G x D modules. The lemma implies that Bf is isomorphic to
+Be^, a twist of Be by some automorphism ¡3 of D. To prove D is conjugate to E, it is
+
+
+
+
+                                             260
+                    DEFECT GROUPS AND THE ISOMORPHISM PROBLEM
+
+
+
+
+enough to show B is isomorphic to BB However, these modules have the same character
+on G x D , and they differ from the isomorphic modules Bf and B e ^ b y projectives, which are
+determined by their characters.            This proves the desired isomorphism, and thus D is
+conjugate to E in B.
+        To prove the theorem, then, one just needs to verify the trivial source hypothesis of
+the lemma. That is, one needs to check that B is a permutation module for D x E . Using
+Weiss's results [W], it suffices to check that B/BI(SE) is a permutation module for SD,
+where I(SE) is the augmentation ideal of SE.                Thus, it suffices to check that each
+nonprojective indecomposable component M of B/BI(SE) has trivial source as an
+SG—module. Certainly M has trivial source and vertex E as an SH—module, since it is a
+nonprojective indecomposable direct summand of SH/SH-I(SE) 2 SH/E.                 If S contains
+sufficient p'—roots of unity, which we may assume, the indecomposable S—free trivial
+source modules with vertex E for the normalizer N J J ( E ) are just obtained from evident
+rank 1 actions of N J J ( E ) / C J J ( E ) ,   and their reductions modulo p are the simple
+NJJ(E)—modules over the residue field.              All these indécomposables may be viewed as
+syzygies of certain degrees of the trivial module. Since E is cyclic and a T.I. set, it is easy
+to see, from Green's results on walking around the Brauer tree [G], that their Green
+correspondents, such as M, are the corresponding syzygies of the trivial module for SH.
+Conversely, every syzygy of the trivial module of appropriate degree (even, unless E has
+order 2) has trivial source. Note at this point the case where E has order 2 is trivial, since
+it implies H has a normal 2—complement, and consequently B has rank 2 as an S—module.
+Hence we may assume E has order greater tham 2, and, similarly, that D has order greater
+than 2.     Next, modifying the augmentation of SH, if necessary (without disturbing its
+restriction to SE), we may assume the augmentation B -» S induced by SG -» S agrees with
+that induced by SH -» S. Thus "syzygy of the trivial module" of any given degree now has
+
+
+
+
+                                                      261
+                                       L.L.   SCOTT
+
+
+
+
+the same meaning with respect to SG as SH, and so M also has trivial source as an
+SG-module. Q.E.D.
+       In closing let me thank Puig and his students for their early and continuing interest
+in the theorem and the defect group conjugacy question.        From Puig's point of view, a
+source algebra is an S—algebra equipped with an embedding of a defect group (or, more
+precisely, a conjugacy class of such embeddings), and a block might be regarded similarly.
+The question that we are raising here is the extent to which such an embedding is
+essentially determined by the S—algebra. The above results show this is true at least in
+some significant cases.
+                            Late note: Results of H. Blau, using the classification,
+                            make the "T.I. set" assumption in our Theorem
+                            unnecessary. Details will appear elsewhere, with a
+                            version for source algebras (of principal blocks).
+References
+[C]    D. B. Coleman, On the modular group ring of a p—group, Proc. AMS. 15 (1964),
+       511-514.
+[G]    J. A. Green, Walking around the Brauer tree, J. Austral. Math. Soc. 17, 197—213
+[P]    L. Puig, Pointed groups and construction of characters, Math. Z. 176 (1981),
+       265-292.
+
+[R]    G. Robinson, The Zp — theorem and units in blocks, preprint.
+
+[Ro]   K. Roggenkamp, Integral representations and structure of finite group rings, Les
+       Presses de l'Université de Monreal, Séminaire de Mathématiques Supérieures, 1980.
+[RS]   K. Roggenkamp and L. Scott, Isomorphisms of p—adic group rings, Annals of Math.
+       126 (1987), 593-647.
+[S]    L. Scott, Recent progress on the isomorphism problem, Proceedings of Symposia in
+       Pure Mathematics 47 (1987), 259-273.
+[Wa]   H. N. Ward, Some results on the group algebra of a group over a prime field, Mimeo
+       Notes, Harvard Univ. 1960-61.
+[W]    A. Weiss, Rigidity of p-adic p-torsion, Annals of Math. 127 (1988), 317-332.
+
+                                                    The University of Viginia
+                                                    Charlottesville, VA 22903, USA
+
+
+
+
+                                              262
+

@@ -1,0 +1,1470 @@
+                                       City Research Online
+                                   City St George’s, University of London
+
+
+
+ Citation: Boltje, R., Kessar, R. & Linckelmann, M. (2020). On Picard groups of
+ blocks of finite groups. Journal of Algebra, 558, pp. 70-101. doi:
+ 10.1016/j.jalgebra.2019.02.045
+
+ This is the accepted version of the paper.
+
+ This version of the publication may differ from the final published version. To cite
+ this item please consult the publisher's version.
+
+
+
+
+ Permanent repository link: https://openaccess.city.ac.uk/id/eprint/21526/
+
+ Link to published version: https://doi.org/10.1016/j.jalgebra.2019.02.045
+
+
+
+
+Copyright and Reuse: Copyright and Moral Rights remain with the author(s) and/or
+copyright holders. Copies of full items can be used for personal research or study,
+educational, or not-for-profit purposes without prior permission or charge, unless otherwise
+indicated, provided that the authors, title and full bibliographic details are credited, a
+hyperlink and/or URL is given for the original metadata page and the content is not changed
+in any way. For full details of reuse please refer to City Research Online policy.
+
+ City Research Online:     http://openaccess.city.ac.uk/   publications@citystgeorges.ac.uk
+     ON PICARD GROUPS OF BLOCKS OF FINITE GROUPS
+
+
+          ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+         Abstract. We show that the subgroup of the Picard group of a p-block of
+         a finite group given by bimodules with endopermutation sources modulo the
+         automorphism group of a source algebra is determined locally in terms of the
+         fusion system on a defect group. We show that the Picard group of a block over
+         a complete discrete valuation ring O of characteristic zero with an algebraic
+         closure k of Fp as residue field is a colimit of finite Picard groups of blocks over
+         p-adic subrings of O. We apply the results to blocks with an abelian defect
+         group and Frobenius inertial quotient, and specialise this further to blocks
+         with cyclic or Klein four defect groups.
+
+
+
+
+                                        February 8, 2019
+
+                                       1. Introduction
+   Throughout the paper, p is a prime number. Let O be a complete local principal
+ideal domain with residue field k of characteristic p. Assume that either O = k or
+that O has characteristic zero. By a block of OG for G a finite group we mean a
+primitive idempotent b of the center of the group algebra OG, and we call OGb a
+block algebra of OG. For B an O-algebra, we denote by Pic(B) the Picard group of
+B; that is, Pic(B) is the group of isomorphism classes of (B, B)-bimodules inducing
+a Morita equivalence, with group product induced by the tensor product over B. If
+B is symmetric (that is, B is free of finite rank as an O-module and B is isomorphic
+to its O-dual B ∗ as a (B, B)-bimodule) and if M is a (B, B)-bimodule inducing a
+Morita equivalence, then the inverse of its isomorphism class [M ] in Pic(B) is the
+class [M ∗ ] of the O-dual M ∗ of M . If G is a finite group, then OG and the block
+algebras of OG are symmetric.
+   Let G, H be finite groups, and let b, c be blocks of OG, OH, respectively. We say
+that a Morita equivalence between OGb and OHc has endopermutation source if it is
+given by an (OGb, OHc)-bimodule M which has an endopermutation OR-module as
+a source for some vertex R of M , where M is regarded as an O(G × H)-module. By
+[28, 7.4, 7.6], a Morita equivalence between OGb and OHc with endopermutation
+source induces an isomorphism α : P ∼   = Q between defect groups P and Q of b and
+c, respectively, such that the twisted diagonal subgroup ∆α = {(x, α(x)) | x ∈ P }
+is a vertex of M . Moreover, α induces an isomorphism between fusion systems of
+b and of c on P and Q, respectively (for some suitable choice of maximal Brauer
+
+    1991 Mathematics Subject Classification. 20C20, 20C11.
+    This project was initiated while the second and third authors visited the University of Cali-
+fornia, Santa Cruz, in Spring 2017. They would like to thank the Department of Mathematics
+for its support. Further work was supported by the National Science Foundation under Grant
+No. DMS-1440140 while the authors were in residence at the Mathematical Sciences Research
+Institute in Berkeley, California, during the Spring 2018 semester. The third author acknowledges
+support from EPSRC grant EP/M02525X/1.
+                                                  1
+2           ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+pairs). Set B = OGb. By [36, Proposition 9], the Morita equivalences on B with
+endopermutation source form a subgroup of Pic(B), which we will denote by E(B).
+We denote by L(B) the subgroup of E(B) of Morita equivalences given by bimodules
+with linear source, and by T (B) the subgroup of L(B) of Morita equivalences given
+by bimodules with trivial source (the fact that these are subgroups follows from
+2.6 below). If A is a source algebra of a block with defect group P , we denote by
+AutP (A) the group of algebra automorphisms of A which fix the image of P in A
+elementwise, and by OutP (A) the quotient of AutP (A) by the subgroup of inner
+automorphisms induced by conjugation with elements in (AP )× .
+    Let P be a finite p-group and V an endopermutation OP -module having an
+indecomposable direct summand with vertex P . By results of Dade [9], the in-
+decomposable direct summands of V with vertex P are all isomorphic. For any
+subgroup Q of P , denote by VQ an indecomposable direct summand of ResP              Q (V )
+with vertex Q. The tensor product of two indecomposable endopermutation OP -
+modules with vertex P has an indecomposable direct summand with vertex P ; this
+induces an abelian group structure on the set of isomorphism classes of indecompos-
+able endopermutation OP -modules. The resulting group is denoted DO (P ), called
+the Dade group of P over O.
+    Let F be a saturated fusion system on P . We denote by foc(F) the subgroup of
+P generated by elements of the form ϕ(x)x−1 , where x ∈ P and ϕ ∈ HomF (hxi, P ).
+Slightly modifying the terminology in [21, 3.3] we say that an endopermutation OP -
+module V having an indecomposable direct summand with vertex P is F-stable if
+for every isomorphism ϕ : Q → R in F between two subgroups Q, R of P we have
+VQ ∼ = ϕ VR . (In [21, 3.3] this would be the definition of F-stability for the class of V
+in DO (P )). Here ϕ VR is the OQ-module which is equal to VR as an O-module, with
+x ∈ Q acting as ϕ(x) on VR . The isomorphism classes of F-stable indecomposable
+endopermutation OP -modules with vertex P form a subgroup of DO (P ), denoted
+DO (P, F). See [21] for more details. The fusion stable linear characters of P form
+a subgroup of DO (P, F) which we identify with the group Hom(P/foc(F), O× ).
+We set OutF (P ) = AutF (P )/Inn(P ). Following the notation introduced in [1,
+1.13], we denote by Aut(P, F) the group of automorphisms of P which stabilise
+F and set Out(P, F) = Aut(P, F)/AutF (P ). The group Aut(P ) acts on DO (P ),
+with Inn(P ) acting trivially. This action restricts to an action of Aut(P, F) on the
+subgroup DO (P, F) of DO (P ), with AutF (P ) acting trivially on that subgroup,
+and hence inducing an action of Out(P, F) on DO (P, F) and its torsion subgroup
+  t
+DO   (P, F). Again by [28, 7.6], Morita equivalences with an endopermutation source
+have sources which are stable with respect to the involved fusion systems. The
+assumption that the residue field k is a splitting field for the finite groups in the
+statements below implies that the fusion systems of the blocks are saturated.
+
+
+Theorem 1.1. Let G be a finite group and O be a complete local principal ideal
+domain with residue field k of characteristic p such that k is a splitting field for all
+subgroups of G. Let b a block of OG with defect group P and source idempotent i
+in (OGb)P . Set A = iOGi and B = OGb. Denote by F the fusion system on P
+determined by A.
+
+    (i) Let M be a (B, B)-bimodule which induces a Morita equivalence and which
+        has an endopermutation module as a source. Then M is isomorphic to a
+                            PICARD GROUPS OF BLOCKS                                  3
+
+
+        direct summand of
+                                     P ×P
+                          OGi ⊗OP Ind∆ϕ   (V ) ⊗OP iOG
+        for some ϕ ∈ Aut(P, F), and some F-stable indecomposable endopermuta-
+        tion OP -module V , regarded as an O∆ϕ-module via the isomorphism P ∼ =
+        ∆ϕ sending x ∈ P to (x, ϕ(x)).
+   (ii) The correspondence sending M to the pair (V, ϕ) induces a group homomor-
+        phism Φ making the following diagram of groups commutative with exact
+        rows:
+
+   1      / OutP (A)       / E(B)        Φ          / DO (P, F) o Out(P, F)
+                               O                                 O
+
+
+   1      / OutP (A)       / L(B)        Φ     / Hom(P/foc(F), O× ) o Out(P, F)
+                               O                               O
+
+
+   1      / OutP (A)       / T (B)       Φ                 / Out(P, F)
+
+         where the upwards arrows are the inclusions.
+   (iii) The group E(B) is finite. Moreover, if Φ maps T (B) onto Out(P, F), then
+                                           t
+         Φ maps E(B) to the finite group DO  (P, F) o Out(P, F).
+  This will be proved in Section 3.
+Remark 1.2.
+(a) By a result of Puig [26, 14.9], the group OutP (A) is canonically isomorphic to
+a subgroup of the finite abelian p0 -group Hom(E, k × ), where E ∼
+                                                                 = OutF (P ) is the
+inertial quotient of b. The right column in the diagram in Theorem 1.1 depends
+only on the fusion system F on P , while the column in the middle depends on the
+source algebra structure of the block B. This is ultimately the reason for why in
+general the map Φ does not necessarily map T (B) onto Out(P, F), not even if B
+is nilpotent. See the examples in Section 7.
+(b) We have a canonical embedding OutP (A) → Pic(B) given by the correspon-
+dence sending α ∈ AutP (A) to the (B, B)-bimodule OGiα ⊗A iOG. As a conse-
+quence of a result due independently to Scott [31] and Puig [28], the image of the
+group OutP (A) in Pic(B) under this embedding is the subgroup T ∆ (B) of T (B)
+given by bimodules which induce a Morita equivalence on Mod(B) and which are
+summands of OGi ⊗OP iOG; that is, trivial source bimodules with diagonal vertex
+∆P arising in statement (i) with V = O and ϕ = IdP . More generally, an isomor-
+phism between source algebras of two blocks of (possibly different) finite groups
+induces isomorphisms between the associated diagrams of these blocks in Theorem
+1.1 (ii). See for instance [17, 4.1] for a proof of the aforementioned result of Scott
+and Puig (which we will use repeatedly).
+(c) All groups except possibly DO (P, F) in the above diagram are finite. The image
+of E(B) under Φ is not known in general, except in some special cases, including
+blocks with cyclic or Klein four defect groups; see the theorems 1.4 and 1.5 below.
+(d) Theorem 1.1 applies to O = k. In general, the canonical map E(B) → E(k⊗O B)
+is surjective (by [12, Theorem 1.13]), and its kernel is Hom(P/foc(F), O× ).
+4           ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+(e) If O = k, then the group Hom(P/foc(F), O× ) is trivial, and hence the second
+and third row in the diagram in Theorem 1.1 (ii) are equal in that case. By [19,
+Theorem 1.1, Lemma 3.15], if O has characteristic zero and contains a primitive
+|G|-th root of unity, then L(B) contains a canonical copy of the abelian p-group
+Hom(P/foc(F), O× ), and hence we have a canonical isomorphism
+                       L(B) ∼
+                            = Hom(P/foc(F), O× ) o T (B)
+compatible with the inclusion T (B) → L(B) and Φ. The subgroup of L(B) corre-
+sponding to Hom(P/foc(F), O× ) under this isomorphism is equal to the intersec-
+tion L(B) ∩ ker(Pic(B) → Pic(k ⊗O B)), and Φ restricts to the identity on this
+subgroup. It follows from the constructions in [19, Theorems 1.1, 3.1] that this
+subgroup commutes with the image of OutP (A); in other words, L(B) contains a
+canonical normal abelian subgroup isomorphic to
+                            Hom(P/foc(F), O× ) × OutP (A) .
+(f ) If P is abelian, then Out(P, F) = NAut(P ) (E)/E, where E = AutF (P ). We
+will use this identification in the statement of the next result.
+  Combining results of Puig [27], Zhou [36], Hertweck and Kimmerle [11], and
+Carlson and Rouquier [4] yields the following result. Unlike Theorem 1.1, the
+remaining results in this section require O to have characteristic zero.
+Theorem 1.3. Let G be a finite group. Suppose that char(O) = 0 and that the
+residue field k is a splitting field for the subgroups of G. Let b a block of OG with a
+nontrivial abelian defect group P . Set B = OGb, let i be a source idempotent in B P ,
+and set A = iBi. Denote by E the inertial quotient of B associated with the choice
+of i, regarded as a subgroup of Aut(P ), and suppose that E is nontrivial cyclic and
+acts freely on P \ {1}. Set NE = NAut(P ) (E)/E. We have Pic(B) = E(B), and
+there is an injective group homomorphism Ψ : Pic(B) → Hom(E, k × ) o NE which
+makes the following diagram with exact rows commutative:
+
+    1       / OutP (A)                / Pic(B)        Φ    / DO (P, F) o NE
+
+                                           Ψ
+                                                                  
+    1      / Hom(E, k × )       / Hom(E, k × ) o NE              / NE              /1
+
+where the top row is from Theorem 1.1, the bottom row is the canonical exact
+sequence, the left vertical arrow is the canonical embedding, and the right vertical
+map is the canonical surjection with kernel DO (P, F).
+   If E is trivial, then B is nilpotent; see the Example 7.1 below for details in
+that case. Note that the image of Φ need not be contained in the group NE =
+NAut(P ) (E)/E since E(B) need not be equal to T (B); see the Example 7.2. Theo-
+rem 1.3 will be proved in Section 4.
+   For the sake of completeness, we describe the Picard groups for blocks with a
+cyclic or Klein four defect group over O with char(O) = 0, since these two cases have
+some additional properties. This is for the most part well-known and a combination
+of various results in the literature, such as [30], [34], [15, 4.3, 5.6, 5.8], [14, 1.1],
+[6, 1.1], [16, §11.4]. In particular, in both of these cases, if B is not nilpotent,
+then Pic(B) is equal to T (B), and hence Im(Φ) is contained in NE , where the
+notation is as in Theorem 1.3. Furthermore, if P is cyclic, then Aut(P ) is abelian,
+                             PICARD GROUPS OF BLOCKS                                     5
+
+
+and hence the semidirect product in the last statement of Theorem 1.3 becomes a
+direct product.
+Theorem 1.4. Let G be a finite group. Suppose that char(O) = 0 and that the
+residue field k is a splitting field for the subgroups of G. Let b be a block of OG with a
+nontrivial cyclic defect group P . Set B = OGb, let i be a source idempotent in B P ,
+and set A = iBi. Denote by E the associated inertial quotient of B, and suppose
+that E is nontrivial. Let M be a (B, B)-bimodule inducing a Morita equivalence.
+Then M is a trivial source module. We have
+                       Pic(B) = T (B) =   ∼ OutP (A) × Aut(P )/E ,
+the group OutP (A) is cyclic of order dividing |E|, with generator the isomorphism
+class ΩnB⊗O B op (B), where n is the smallest positive integer such that this bimodule
+induces a Morita equivalence.
+   The fusion system F on P determined by i in the above theorem is equal to that
+of the group P o E. Since the automorphism group of P is abelian, it follows that
+Out(P, F) = Aut(P )/E. If O has characteristic zero and if two blocks with cyclic
+defect groups are Morita equivalent, then there is a Morita equivalence with en-
+dopermutation source, and hence Theorem 1.4 implies that any Morita equivalence
+between blocks over O with cyclic defect groups has endopermutation source. We
+have similar results for Klein four defect groups.
+Theorem 1.5. Let G be a finite group. Suppose that p = 2, that char(O) = 0, and
+that the residue field k is a splitting field for the subgroups of G. Let b be a block
+of OG with a Klein four defect group P . Set B = OGb, and suppose that B is not
+nilpotent. Let M be a (B, B)-bimodule inducing a Morita equivalence. Then M is
+a trivial source module. If B is Morita equivalent to OA4 , then
+                                Pic(B) = T (B) ∼  = S3 ,
+if B is Morita equivalent to the principal block of OA5 , then
+                               Pic(B) = T (B) ∼= C2 .
+   In Theorem 1.5, since B is not nilpotent, the fusion system F of B on P is that
+of the group A4 ∼ = P o C3 , and Out(P, F) ∼   = S3 /C3 ∼
+                                                        = C2 . Using the classification
+of finite simple groups via [6], it follows that every Morita equivalence between two
+non-nilpotent blocks over O with Klein four defect groups has trivial source, and
+any Morita equivalence between two nilpotent blocks with Klein four defect groups
+has linear source (and there cannot be a Morita equivalence between a nilpotent
+and non-nilpotent block with Klein four defect groups). The theorems 1.4 and 1.5
+will be proved in Section 4.
+   We say that O is a p-adic ring if O has characteristic zero and k is finite, or
+equivalently, if O is a finite extension of the ring of p-adic integers. If O is p-adic
+and if B is a block algebra of a finite group algebra over O, then Pic(B) is known
+to be finite, (see [8, Theorems (55.19), (55.25)]). We give an alternative proof of
+this fact as part of Theorem 6.2 below. If k is an algebraic closure of Fp then we
+do not know whether Pic(B) is finite, but the following result shows that if O has
+characteristic zero, then Pic(B) is the colimit of the Picard groups of blocks over
+some p-adic subrings of O; in particular, Pic(B) is a torsion group. In general, the
+p-adic subrings of O form a directed system; the colimit of this system is the union
+in O of the p-adic subrings.
+6          ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+Theorem 1.6. Suppose that k is an algebraic closure of Fp and that char(O) = 0.
+Let G be a finite group and b a central idempotent of OG. Set B = OGb.
+(i) Let M be a (B, B)-bimodule inducing a Morita equivalence on B. There exists
+a p-adic subring O0 of O such that b ∈ O0 G and such that, setting B0 = O0 Gb, we
+have M ∼ = O ⊗O0 M0 for some (B0 , B0 )-bimodule M0 inducing a Morita equivalence
+on B0 .
+(ii) The group Pic(B) is the colimit of the finite groups Pic(O0 Gb), with O0 running
+over the p-adic subrings of O such that b ∈ O0 G. In particular, all elements in
+Pic(B) have finite order.
+   We prove this theorem and related facts in Section 5. It is well known that a
+result analogous to Theorem 1.6 holds over k; see Lemma 6.5 below. On the other
+hand, unlike the situation in characteristic zero, if k is algebraically closed then it
+is known that Picard groups of block algebras over k are not in general finite.
+Remark 1.7. Two Morita equivalent blocks of finite groups via a bimodule with
+endopermutation source have isomorphic defect groups. It is an open problem at
+present whether Morita equivalent blocks always have isomorphic defect groups.
+Remark 1.8. Let P be a finite p-group and Q a normal subgroup of P . Suppose
+that char(O) = 0. Weiss’ criterion states that if M is a finitely generated OP -
+module such that ResP                                              Q
+                      Q (M ) is a free OQ-module and such that M is a permutation
+OP/Q-module, then M is a permutation OP -module. This was proved by Weiss
+in [34, Theorem 2], [35, §6] for O the ring of p-adic integers Zp , extended to finite
+extensions of Zp by Roggenkamp in [29, Theorem II], and further extended to O
+with perfect residue field in work of Puig [28, Theorem A.1.2], and for general O
+in work of McQuarrie, Symonds, and Zalesskii [22, Theorem 1.2]. Weiss’ criterion
+is a key ingredient for calculating Picard groups of block algebras of finite groups.
+In applications below, we will make use of the fact that Q-fixed points in the
+above sitation are isomorphic to cofixed points. More precisely, with the notation
+and hypotheses above, one verifies that there is an OP/Q-module isomorphism
+O ⊗OQ M ∼                              Q                           Q
+           = M Q sending 1⊗m to Tr1 (m), where m ∈ M and Tr1 (m) = y∈Q ym.
+                                                                           P
+
+          2. Tensoring bimodules with endopermutation source
+   Some calculations of Picard groups will involve stable equivalences of Morita type
+and stable Picard groups. We briefly review these notions. Let B, C be symmetric
+O-algebras such that B/J(B) and C/J(C) are separable k-algebras. Following
+terminology introduced by Broué, we say that a (B, C)-bimodule M induces a stable
+equivalence of Morita type between B and C, if M is finitely generated projective
+as a left B-module, as a right C-module, and if we have bimodule isomorphisms
+M ⊗C M ∗ ∼ = B ⊕ X for some projective B ⊗O B op -module and M ∗ ⊗B M ∼     = C ⊕Y
+for some projective C ⊗O C op -module.
+   The stable Picard group of B is the group Pic(B) of isomorphism classes in the
+stable category of (B, B)-bimodules inducing a stable equivalence of Morita type
+on B. The group structure on Pic(B) is induced by taking tensor products over B.
+Any Morita equivalence is a stable equivalence of Morita type, and hence if B has
+no nonzero projective summand as a B ⊗O B op -module, then we have an inclusion
+of groups Pic(B) ⊆ Pic(B).
+   Denoting by Ω(B) the kernel of a projective cover of B as a B ⊗O B op -module, it
+is well-known that if B has no nonzero projective summand as a B ⊗O B op -module,
+                            PICARD GROUPS OF BLOCKS                                 7
+
+
+then Ω(B) induces a stable equivalence of Morita type on B, and the image of Ω(B)
+in Pic(B) generates a cyclic central subgroup of Pic(B), which we will denote by
+hΩ(B)i. See e. g. [13, Proposition 2.9].
+   By [13, Theorem 2.1], if B and C are in addition indecomposable as algebras
+and not projective as modules over B ⊗O B op and C ⊗O C op , respectively, and if
+M induces a stable equivalence of Morita type between B and C, then M has a
+unique indecomposable nonprojective direct summand in any decomposition as a
+direct sum of indecomposable B ⊗O C op -modules.
+   For P , Q finite groups and ϕ : P → Q a group isomorphism set
+                            ∆ϕ = {(x, ϕ(x)) | x ∈ P } .
+We write ∆P instead of ∆IdP . We regard an OP -module U as an O∆ϕ-module
+with (x, ϕ(x)) acting on U as x, where x ∈ P . That is, the action of ∆ϕ on U is
+determined by the action of the first component of an element in ∆ϕ; this accounts
+for the slight asymmetry in the statements (i) and (ii) in the next Lemma. If V is an
+OQ-module, we denote by ϕ V the OP -module which is equal to V as an O-module,
+such that x ∈ P acts as ϕ(x) on V . We use similar notation for right modules and
+bimodules. We regard an O(P × Q)-module M as an (OP , OQ)-bimodule via
+xmy −1 = (x, y) · m, where x ∈ P , y ∈ Q and m ∈ M .
+Lemma 2.1. Let P , Q, R be finite groups. Let ϕ : P → Q and ψ : Q → R be
+group isomorphisms. Let V be an OP -module and W an OQ-module.
+    (i) We have an (OP , OQ)-bimodule isomorphism
+                             P ×Q
+                          Ind∆ϕ   (V ) ∼     P ×P
+                                       = (Ind∆P   (V ))ϕ−1
+
+        sending (x, y) ⊗ v to (x, ϕ−1 (y)) ⊗ v, for all x ∈ P , y ∈ Q and v ∈ V .
+   (ii) We have an (OP , OQ)-bimodule isomorphism
+                            P ×Q
+                         Ind∆ϕ   (V ) ∼       Q×Q
+                                      = ϕ (Ind∆Q (ϕ−1 V ))
+         sending (x, y) ⊗ v to (ϕ(x), y) ⊗ v, for all x ∈ P , y ∈ Q and v ∈ V .
+   (iii) We have an (OP , OR)-bimodule isomorphism
+
+            IndP ×Q           Q×R     ∼    P ×R
+               ∆ϕ (V ) ⊗OQ Ind∆ψ (W ) = Ind∆(ψ◦ϕ) (V ⊗O (ϕ W )) .
+
+Proof. The statements (i) and (ii) are straightforward verifications. Statement (iii)
+is a special case of a more general result of Bouc [2, Theorem 1.1]. One can prove
+(iii) also by first showing this for P = Q = R, ϕ = ψ = IdP (see e. g. [20, Corollary
+2.4.13]), and then using (i), (ii) to obtain the general case.                     
+
+Lemma 2.2. Let P , Q be finite groups and ϕ : P → Q a group isomorphism,
+and V a finitely generated O-free OP -module. We have an (OP , OP )-bimodule
+isomorphism
+                       IndP ×Q (V )∗ ∼
+                           ∆ϕ
+                                          Q×P
+                                     = Ind −1 (ϕ−1 (V ∗ )) .
+                                            ∆ϕ
+
+                                                        ×Q    ∗ ∼     P ×Q
+Proof. Induction and duality commute, and hence IndP                        ∗
+                                                       ∆ϕ (V ) = Ind∆ϕ (V ) as
+O(P × Q)-modules. The isomorphism P × Q ∼      = Q × P exchanging the two factors
+sends (x, ϕ(x)) ∈ ∆ϕ to (ϕ(x), x) = (ϕ(x), ϕ−1 (ϕ(x))) ∈ ∆ϕ−1 , which accounts for
+the subscript ϕ−1 in the last term in the statement of the Lemma.               
+8          ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+Lemma 2.3. Let P be a finite group and ζ : P → O× a group homomorphism.
+Denote by Oζ the OP -module O with x ∈ P acting by multiplication with ζ(x).
+Denote by τ the O-algebra automorphism of OP satisfying τ (x) = ζ −1 (x)x for all
+x ∈ P . There is an O(P × P )-module isomorphism
+                                IndP ×P     ∼
+                                   ∆P (Oζ ) = OP τ
+
+sending (x, y) ⊗ 1 to ζ(y)xy −1 for x, y ∈ P .
+Proof. This is a straightforward verification.                                    
+
+   For P , Q finite p-groups, F a fusion system on P and ϕ : P → Q a group
+isomorphism, we denote by ϕ F the fusion system on Q induced by F via the
+isomorphism ϕ. That is, for R, S subgroups of P , we have Homϕ F (ϕ(R), ϕ(S)) =
+ϕ ◦ HomF (R, S) ◦ ϕ−1 , where we use the same notation ϕ, ϕ−1 for their restrictions
+to S, ϕ(R), respectively.
+Theorem 2.4 ([28, 7.6]). Let G, H be finite groups, b, c blocks of OG, OH with
+nontrivial defect groups P , Q, respectively, and let i ∈ (OGb)P and j ∈ (OHc)Q be
+source idempotents. Denote by F the fusion system on P of b determined by i, and
+denote by G the fusion system on Q determined by j. Let M be an indecomposable
+(OGb, OHc)-bimodule with endopermutation source inducing a stable equivalence
+of Morita type.
+   Then there is an isomorphism ϕ : P → Q and an indecomposable endopermuta-
+tion OP -module V such that M is isomorphic to a direct summand of
+                                      ×Q
+                         OGi ⊗OP IndP
+                                    ∆ϕ (V ) ⊗OQ jOH
+
+as an (OGb, OHc)-bimodule. For any such ϕ and V , the following hold.
+     (i) ∆ϕ is a vertex of M and V , regarded as an O∆ϕ-module, is a source of
+         M.
+    (ii) We have ϕ F = G, and the endopermutation OP -module V is F-stable.
+   See [20, Theorem 9.11.2] for a proof of the above Theorem using the terminology
+of the present paper.
+Lemma 2.5 (cf. [24]). Let G be a finite group, b a block of OG, P a defect group
+of b, and i ∈ (OGb)P a source idempotent. Denote by F the fusion system on P
+of the block b determined by the choice of i. Let ϕ ∈ Aut(P ). The following are
+equivalent.
+     (i) We have ϕ ∈ AutF (P ).
+    (ii) We have iOG ∼ = ϕ (iOG) as (OP , OG)-bimodules.
+   (iii) As an O(P × P )-module, iOGi has an indecomposable direct summand
+                            ×P
+         isomorphic to IndP
+                          ∆ϕ (O).
+
+Proof. The equivalence of (i) and (ii) is proved as part of [20, Theorem 8.7.4], and
+the equivalence of (i) and (ii) is proved as part of [20, Theorem 8.7.1].          
+
+Lemma 2.6. Let G, H, L be finite groups, b, c, d blocks of OG, OH, OL with
+nontrivial defect groups P , Q, R, respectively. Let i, j, l be source idempotents
+in (OGb)P , (OHc)Q , (OLd)R , respectively. Let V be an indecomposable endop-
+ermutation OP -module with vertex P and W an indecomposable endopermutation
+OQ-module with vertex Q. Let ϕ : P → Q and ψ : Q → R be group isomorphisms.
+                            PICARD GROUPS OF BLOCKS                                  9
+
+
+  Let M be an indecomposable direct summand of the (OGb, OHc)-bimodule
+                                        ×Q
+                       X = OGi ⊗OP IndP
+                                      ∆ϕ (V ) ⊗OQ jOH
+
+and let N be an indecomposable direct summand of the (OHc, OLd)-bimodule
+                      Y = OHj ⊗OQ IndQ×R
+                                     ∆ψ (W ) ⊗OR lOL .
+
+Suppose that M induces a stable equivalence of Morita type between OGb and OHc,
+and suppose that N induces a stable equivalence of Morita type between OHc and
+OLd. Then the indecomposable nonprojective direct summand of the (OGb, OLd)-
+bimodule M ⊗OHc N is isomorphic to an indecomposable direct summand with vertex
+∆(ψ ◦ ϕ) of the O(G × L)-module
+                                      ×R
+                         OGi ⊗OP IndP
+                                    ∆(ψ◦ϕ) (U ) ⊗OR lOL
+
+where U is an indecomposable direct summand with vertex P of V ⊗O ϕ W .
+Proof. Identify P , Q, R via ϕ, ψ; that is, we may assume that ϕ, ψ are the identity
+maps. With this identification, the groups ∆ϕ and ∆ψ are both equal to ∆P . It
+follows from Theorem 2.4 that the source idempotents i, j, l of b, c, d, respectively,
+determine the same fusion system F on P , and that V , W are F-stable.
+   Clearly M ⊗OHc N induces a stable equivalence of Morita type, and hence its
+unique (up to isomorphism) indecomposable nonprojective summand Z induces a
+stable equivalence of Morita type, and moreover, Z is isomorphic to an indecom-
+posable summand of
+                                    X ⊗OHc Y =
+                             ×P                      P ×P
+           OGi ⊗OP IndP    ∆P (V ) ⊗OP jOHj ⊗OP Ind∆P (W ) ⊗OP lOL
+Since Z is indecomposable, we may replace the term jOHj in the middle by some
+indecomposable (OP , OP )-bimodule summand. Since Z must have a vertex of
+order at least |P |, it follows from Lemma 2.5 that we may choose that bimodule
+                                              ×P
+summand of jOHj to be isomorphic to IndP    ∆ (O) for some  ∈ AutF (P ). Thus
+Z is isomorphic to a direct summand of
+                     ×P           P ×P          P ×P
+        OGi ⊗OP IndP
+                   ∆P (V ) ⊗OP Ind∆ (O) ⊗OP Ind∆P (W ) ⊗OP lOL
+
+By Lemma 2.1, this is isomorphic to
+                                  ×P
+                     OGi ⊗OP IndP
+                                ∆ (V ⊗O ( W )) ⊗OP lOL
+
+The fusion stability of W implies that this is isomorphic to
+                                 P ×P
+                      OGi ⊗OP Ind∆   (V ⊗O W ) ⊗OP lOL
+By Lemma 2.1 again, this is isomorphic to
+                                  ×P
+                     OGi ⊗OP IndP
+                                ∆P (V ⊗O W )−1 ⊗OP lOL
+
+hence to
+                                    ×P
+                    OGi ⊗OP IndP   ∆P (V ⊗O W ) ⊗OP  lOL
+Now  ∈ AutF (P ), and hence Lemma 2.5 implies that  lOL ∼  = lOL as (OP , OL)-
+bimodules. Together it follows that Z is isomorphic to a direct summand of
+                                 P ×P
+                      OGi ⊗OP Ind∆P   (V ⊗O W ) ⊗OP lOL
+Since V , W are indecomposable endopermutation OP -modules, it follows that U
+is up to isomorphism the unique indecomposable direct summand with vertex P of
+10            ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+V ⊗O W . The fact that Z has a vertex of order |P | implies that Z is isomorphic to
+a direct summand of
+                                      P ×P
+                        OGi ⊗OP Ind∆P      (U ) ⊗OP lOL
+as claimed.                                                                      
+
+   The vertex-source pairs of an indecomposable module over a finite group algebra
+are unique up to conjugation. For the situation in Theorem 2.4, this translates to
+the following statement.
+Lemma 2.7. Let G, H be finite groups, b, c blocks of OG, OH with nontrivial de-
+fect groups P , Q, respectively, and let i ∈ (OGb)P and j ∈ (OHc)Q be source idem-
+potents. Denote by F the fusion system on P of b determined by i, and denote by G
+the fusion system on Q determined by j. Let M be an indecomposable (OGb, OHc)-
+bimodule inducing a stable equivalence of Morita type. Let ϕ, ψ : P ∼= Q be group
+isomorphisms, let V , W be indecomposable endopermutation OP -modules. Suppose
+that M is isomorphic to a direct summand of both
+                                        ×Q
+                       X = OGi ⊗OP IndP
+                                      ∆ϕ (V ) ⊗OQ jOH
+
+and
+                                     ×Q
+                   Y = OGi ⊗OP IndP ∆ψ (W ) ⊗OQ jOH .
+
+Then ϕ−1 ◦ ψ ∈ AutF (P ) and W ∼
+                               = V as OP -modules.
+Proof. Since OG, OH are symmetric algebras, we have (OGi)∗ =   ∼ iOG as (OP , OG)-
+bimodules and (jOH)∗ ∼   = OHj as (OH, OQ)-bimodules. Since the terms in Y are
+all finitely generated projective as one-sided modules, duality anticommutes with
+tensor products. We therefore have
+                   Y∗ ∼            Q×P
+                      = OHj ⊗OQ Ind∆ψ−1 (ψ−1 W ∗ ) ⊗OP iOG .
+By Theorem 2.4 we have ϕ F = G = ψ F, and the modules V , W are F-stable.
+Then W ∗ is clearly F-stable as well. By the assumptions, OGb is a summand
+of the (OGb, OGb)-bimodule M ⊗OHc M ∗ . Thus OGb is isomorphic to a direct
+summand of the bimodule
+                                 X ⊗OHc Y ∗ .
+By Lemma 2.1 and Lemma 2.6, it follows that OGb is isomorphic to a direct sum-
+mand of
+                                   ×P
+                   OGi ⊗OP IndP   ∆(ψ −1 ◦ϕ) (U ) ⊗OP iOG
+where U is an indecomposable direct summand of
+                               V ⊗O (ψ−1 ◦ϕ (W ∗ ))
+with vertex P . As an O(G × G)-module, OGb has ∆P as a vertex and a trivial
+source (for any vertex), and hence U = O. Thus the O(P × P )-module iOGi, and
+hence also the O(P × P )-module
+                                     ×P
+                       iOGi ⊗OP IndP
+                                   ∆(ψ −1 ◦ϕ) (O) ⊗OP iOGi
+                                                               P ×P
+has an indecomposable direct O(P ×P )-summand isomorphic to Ind∆P   (O). Lemma
+2.5 implies that there are α, β ∈ AutF (P ) such that
+        IndP ×P   ∼    P ×P          P ×P                  P ×P
+           ∆P (O) = Ind∆α (O) ⊗OP Ind∆(ψ −1 ◦ϕ) (O) ⊗OP Ind∆β (O)
+                           PICARD GROUPS OF BLOCKS                                11
+
+
+and hence by Lemma 2.1 we have an isomorphism of O(P × P )-modules
+                               P ×P
+                            Ind∆P   (O) ∼
+                                        = IndP ×P
+                                             ∆τ (O)
+
+where
+                               τ = β ◦ ψ −1 ◦ ϕ ◦ α .
+Thus ∆P and ∆τ are both vertices of this O(P × P )-module, hence they are
+conjugate in P × P , and this implies that τ is an inner automorphism of P . But
+then τ , α, β are all in AutF (P ), and hence so is ψ −1 ◦ ϕ = β −1 ◦ τ ◦ α−1 .
+   Finally, the fusion stability of W implies that
+                         V ⊗O (ψ−1 ◦ϕ (W ∗ )) ∼
+                                              = V ⊗O W ∗
+and this module has by the above a trivial summand, forcing W ∼
+                                                              = V.                
+
+   Given a block algebra B of a finite group algebra over O, we denote by E(B),
+L(B), T (B) the subgroups of Pic(B) of isomorphism classes of bimodules inducing
+a stable equivalence of Morita type, having endopermutation, linear, trivial source,
+respectively. The canonical group homomorphism Pic(B) → Pic(B) sends the
+subgroups E(B), L(B), T (B) to E(B), L(B), T (B), respectively.
+Lemma 2.8. Let G, H, be finite groups, B, C block algebras of OG, OH, with
+a common nontrivial defect group P . Let i, j, be source idempotents in B P , C P ,
+respectively. Suppose that B and C have the same fusion system F on P with
+respect to the choice of i and j. Let V be an indecomposable endopermutation OP -
+module with vertex P , and let M be an indecomposable (B, C)-bimodule summand
+of
+                                         ×P
+                           OGi ⊗OP IndP ∆P (V ) ⊗OP jOH
+such that M induces a Morita equivalence (resp. a stable equivalence of Morita
+type) between B and C. The following hold.
+     (i) The functor M ∗ ⊗B − ⊗B M induces group isomorphisms Pic(B) = ∼ Pic(C)
+                  ∼ E(C) (resp. group isomorphisms Pic(B) =
+         and E(B) =                                        ∼ Pic(C) and E(B) =∼
+         E(C)).
+    (ii) Suppose that V ∼= ΩnP (O) for some integer n. The functor M ∗ ⊗B − ⊗B
+         M induces group isomorphisms L(B) ∼   = L(C) and T (B) ∼ = T (C) (resp.
+         L(B) ∼
+              = L(C) and T (B) ∼ = T (C)).
+Proof. Since M and its dual M ∗ induce a Morita equivalence, it follows that the
+functor M ∗ ⊗B − ⊗B M induces a group isomorphism Pic(B) ∼   = Pic(C). It follows
+from the hypotheses on M and from Lemma 2.6 that this isomorphism preserves
+the subgroups determined by Morita equivalences with endopermutation sources,
+and hence induces a group isomorphism E(B) ∼  = E(C). If V is a Heller translate
+of O, then V is stable under any automorphism of P , and hence by the Lemmas
+2.3 and 2.6, the isomorphism E(B) ∼
+                                  = E(C) restricts to isomorphisms L(B) ∼= L(C)
+           ∼
+and T (B) = T (C). The argument for stable equivalences of Morita type is strictly
+analogous.                                                                      
+
+Remark 2.9. With the notation of Lemma 2.8, if V is not stable under Aut(P ),
+then the functor M ∗ ⊗B − ⊗B M need not induce isomorphisms L(B) ∼= L(C) or
+T (B) ∼
+      = T (C); see the examples 7.1 and 7.2 below.
+12         ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+                           3. Proof of Theorem 1.1
+   We use the notation and hypotheses as in the statement of Theorem 1.1. If P =
+{1}, then B is a matrix algebra over O. Thus Pic(B) is trivial, hence all groups in
+the diagram in (ii) are trivial, and the result is clear in that case. Assume that P
+is nontrivial. The fact that M is isomorphic to a summand of
+                                     P ×P
+                          OGi ⊗OP Ind∆ϕ   (V ) ⊗OP iOG
+
+with V and ϕ as stated in (i) follows from Puig’s result stated as Theorem 2.4
+above. This proves (i).
+   Lemma 2.7 implies that there is a well-defined map Φ from E(OGb) to DO (F, P )o
+Out(P, F) as stated. Lemma 2.6 shows that this map is a group homomorphism.
+The kernel of Φ consists of all isomorphism classes of bimodules M such that the
+corresponding pair (V, ϕ) satisfies ϕ ∈ AutF (P ) and V ∼ = O. Since ϕ iOG ∼
+                                                                           = iOG
+as (OP , OG)-bimodule whenever ϕ ∈ AutF (P ), it follows that we may choose ϕ =
+IdP . Note that IndP ×P     ∼
+                   ∆P (O) = OP as (OP , OP )-bimodules. Thus the isomorphism
+classes of bimodules M in the kernel of Φ correspond to trivial source bimodule
+summands of
+                                  OGi ⊗OP iOG .
+
+As noted in the Remark 1.2 (b), these in turn correspond bijectively to the ele-
+ments of OutP (A), via the map AutP (A) → T (B) sending α ∈ AutP (A) to the
+isomorphism class of the (B, B)-bimodule OGiα ⊗A iOG. Any bimodule of this
+form induces a Morita equivalence on B because OGi induces a Morita equivalence
+between B and A. Moreover, A is isomorphic to a direct summand of A ⊗OP A
+(cf. [20, Theorem 6.4.7]), hence the previous bimodule is isomorphic to a direct
+summand of OGi ⊗OP iOG, where we make use of the fact that α restricts to the
+identity on the image of OP in A. This shows the exactness of the first row of the
+diagram in the statement. Since by the previous argument, the image of AutP (A)
+in E(B) is contained in T (B), the remaining rows of the diagram are exact as well.
+This proves (ii).
+   For the finiteness of E(B), note first that a (B, B)-bimodule M inducing a Morita
+equivalence permutes the projective indecomposable B-modules. Thus for any
+primitive idempotent i in B, the B-module M i is projective indecomposable, hence
+of O-rank at most that of B. Since the O-rank of B also bounds the cardinality of
+a primitive decomposition of 1 in B, it follows that the O-rank of M is bounded
+in terms of the O-rank of B. Thus in particular a source of M has an O-rank
+bounded in terms of B. Moreover, endopermutation modules over a fixed p-group
+over a field of characteristic p are defined over a fixed finite field and lift to the
+ring of Witt vectors of that finite field (this is a consequence of the classification
+of endopermutation modules; see [33, Theorem 13.2, Theorem 14.2]). This implies
+that only finitely many isomorphism classes of indecomposable endopermutation
+modules arise as sources of bimodules inducing Morita equivalences of B. Since
+there are only finitely many isomorphism classes of indecomposable modules with
+a fixed vertex-source pair, the finiteness of E(B) follows. Alternatively, again using
+the above mentioned facts on endopermutation modules, one obtains the finiteness
+of E(B) as a consequence of the finiteness of Pic(B) whenever O is a p-adic ring
+(cf. [8, Theorems (55.19, (55.25)]).
+                            PICARD GROUPS OF BLOCKS                                13
+
+
+  Suppose that Φ maps T (B) onto Out(P, F). Let M be an indecomposable direct
+summand of
+                                   P ×P
+                       OGi ⊗OP Ind∆ϕ    (V ) ⊗OP iOG
+inducing a Morita equivalence, for some ϕ ∈ Aut(P, F) and some indecomposable
+endopermutation O∆ϕ-module V (which is then F-stable, when regarded as an
+OP -module, by Theorem 2.4). Since Φ is assumed to map T (B) onto Out(P, F),
+there is an indecomposable direct bimodule summand N of
+                                      ×P
+                         OGi ⊗OP IndP
+                                    ∆ϕ (O) ⊗OP iOG
+
+inducing a Morita equivalence. Since Φ is a group homomorphism, it follows that
+U = M ⊗B N ∗ is a bimodule inducing a Morita equivalence with vertex ∆P and
+source V , regarded as an OP -module. That is, the image of the class of U under
+Φ is the class of the pair (V, IdP ), hence contained in the subgroup DO (P, F). In
+other words, Φ sends the class of U to the class of V in DO (P, F). By the above,
+the group E(B) is finite, and hence the image of V in DO (P, F) has finite order.
+This proves (iii), which concludes the proof of Theorem 1.1.
+
+4. Picard groups of blocks with abelian defect and cyclic Frobenius
+                          inertial quotient
+    In this section we make the blanket assumption that the residue field k is large
+enough for the finite groups and their subgroups which arise here. This hypothesis
+is in particular needed for the Theorems 1.3, 1.4, 1.5, whose proofs are given at the
+end of this section. We need the following result of Puig.
+Theorem 4.1 ([27, 6.8]). Let G be a finite group, b a block of OG, and set B =
+OGb. Let P be a defect group of b, i ∈ B P a source idempotent of B and e the block
+of kCG (P ) satisfying BrP (i)e 6= 0. Suppose that P is nontrivial abelian. Set E =
+NG (P, e)/CG (P ) and suppose that E acts freely on P \ {1}. Set L = P o E. Then
+there is an indecomposable E-stable endopermutation OP -module V with vertex P
+and an indecomposable (B, OL)-bimodule M with the following properties.
+                                                         ×P
+(i) The bimodule M is a direct summand of OGi ⊗OP IndP ∆P (V ) ⊗OP OL.
+(ii) As an O(G × L)-module, M has vertex ∆P and source V .
+(ii) The bimodule M and its dual M ∗ induce a stable equivalence of Morita type
+between B and OL.
+   For a proof of this theorem using the notation and terminology above, see [20,
+Theorem 10.5.1]. Note that in the situation of Theorem 4.1, if the acting group E
+is abelian, then E is in fact cyclic (cf. [10, Theorem 10.3.1]). The next result we
+need is due to Carlson and Rouquier.
+Proposition 4.2 ([4, Corollary 3.3]). Let P be a nontrivial abelian p-group and E
+an abelian p0 -subgroup of Aut(P ) acting freely on P \ {1}. Set L = P o E. Denote
+by Ω the Heller operator on the category of (OL, OL)-bimodules. Any indecom-
+posable (OL, OL)-bimodule inducing a stable equivalence of Morita type on OL is
+isomorphic to Ωn (M ) for some integer n and some (OL, OL)-bimodule M inducing
+a Morita equivalence on OL. Equivalently, we have
+                          Pic(OL) = Pic(OL) · hΩ(OL)i ,
+where we identify Ω(OL) with its image in Pic(OL).
+14         ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+   As mentioned at the beginning of Section 2, the cyclic subgroup hΩ(OL)i is in the
+center of Pic(OL). We need to determine the structure of Pic(OL). The following
+result is a slight refinement of results of Y. Zhou [36, Theorem 14] and Hertweck
+and Kimmerle [11, Theorem 4.6] in the special case where the focal subgroup [P, E]
+of P in P o E is equal to P . The proof follows in part that of [15, Lemma 4.2].
+As in the aforementioned papers [36], [11], [15], the key step is an application of
+Weiss’ criterion.
+Proposition 4.3. Let P be a nontrivial abelian p-group and E an abelian p0 -
+subgroup of Aut(P ) such that [P, E] = P . Set L = P o E. Denote by F the
+fusion system of L on P . Assume that char(O) = 0. Any class in Out(OL) has
+a representative in Aut(OL) which stabilises the image of P in OL as a set, and
+any (OL, OL)-bimodule which induces a Morita equivalence has trivial source. We
+have canonical group isomorphisms
+                      Pic(OL) = T (OL)
+                              ∼
+                              = Out(OL)
+                              ∼
+                              = OutP (OL) o NAut(P ) (E)/E ,
+                    OutP (OL) ∼
+                              = Hom(E, k × ) ,
+                    Out(P, F) ∼
+                              = NAut(P ) (E)/E .
+Moreover, the inverse image of NAut(P ) (E)/E in Out(OL) consists of all classes
+of automorphisms of OL which stabilise the trivial OL-module.
+Proof. Since E is abelian, it follows that the algebra OL is basic, and hence the
+canonical map Out(OL) → Pic(OL) is a group isomorphism (cf. [20, 4.9.7]).
+Since p0 -roots of unity in k × lift uniquely to roots of unity of the same order
+in O× , it follows that the canonical map O× → k × induces a group isomorphism
+Hom(E, O× ) → Hom(E, k × ). Any group homomorphism ζ : E → O× yields an
+algebra automorphism η of O(P o E) defined by η(uy) = ζ(y)uy for all u ∈ P and
+all y ∈ E; in particular, η ∈ AutP (OL). If ζ is nontrivial, then the OL-module η O
+is nontrivial, and hence η is not inner. Thus the correspondence ζ → η induces an
+injective group homomorphism Hom(E, k × ) → OutP (OL), and by [26, 14.9] this
+is an isomorphism. Note that the above arguments show that nontrivial classes in
+OutP (OL) do not stabilise the trivial OL-module; we will make use of this fact
+later.
+   If α is any algebra automorphism of OL, then α O is a module of rank one, hence
+corresponds to a group homomorphism ζ : E → O× . Denoting by η the algebra
+homomorphism as above, it follows that η −1 ◦ α stabilises the trivial O(P o E)-
+module. Thus α = η ◦ (η −1 ◦ α) is a product of an automorphism in AutP (OL) and
+an automorphism which stabilises the trivial module.
+   It remains to show that the outer automorphism group of OL of automorphisms
+which stabilise the trivial module is canonically isomorphic to NAut(P ) (E)/E. If ψ
+is an automorphism of P which normalises E, then by elementary group theory, ψ
+extends to a group automorphism of P o E, hence to an algebra automorphism β
+of OL which stabilises the trivial module. Moreover, β normalises OutP (OL). The
+group of outer automorphisms obtained in this way intersects OutP (OL) trivially,
+as remarked earlier.
+   By a result of Coleman [5] (or by results of Puig on fusion in block source
+algebras in [24, Theorem 3.1]), any inner algebra automorphism of O(P o E) which
+                           PICARD GROUPS OF BLOCKS                                15
+
+
+stabilises P acts on P as some automorphism in E. Therefore β is inner if and only
+if ψ ∈ E, so the above correspondence yields an injective group homomorphism
+NAut(P ) (E)/E → Out(OL), and the image of this homomorphism in Out(OL)
+normalises OutP (OL) and intersects OutP (OL) trivially.
+   We need to show that the image of this group homomorphism consists of all
+classes of automorphisms which stabilise the trivial module, and this is done using
+Weiss’ criterion (see Remark 1.8 above).
+   Since [P, E] = P , it follows that no nontrivial linear character of P extends to
+L. Thus every simple kL-module lifts to a unique irreducible character, and the
+characters arising as lifts of simple kL-modules are precisely the characters having
+P in their kernel. Again since E is abelian, the left kL-module kE (with P acting
+trivially) is a direct sum of a set of representatives of the isomorphism classes
+of simple kL-modules, and hence the OL-module OE, with P acting trivially, is
+the unique lift (up to isomorphism) of kE to an O-free OL-module. Thus the
+isomorphism class of OE is stable under any algebra automorphism of OL. Note
+that OE ∼  = OL ⊗OP O. Let α ∈ Out(OL). Then the (OP , OP )-bimodule α OL is
+free as a right OP -module, and we have isomorphisms α OL ⊗OP O ∼     = α OE ∼= OE.
+This is a permutation module as a left OP -module (since P acts in fact trivially on
+this module). Weiss’ criterion implies that α OL is a permutation O(P ×P )-module.
+As an O(P × L)-module, OL is indecomposable, and hence α OL is indecomposable
+as well. Thus α OL is a trivial source O(P × L)-module, with a ‘twisted diagonal’
+vertex of the form ∆ϕ for some automorphism ϕ of P . Thus α OL is isomorphic
+to a direct summand of Ind∆ϕ    P ×L
+                                     (O) ∼
+                                         = ϕ OL, where the last isomorphism sends
+                   −1
+(u, x) ⊗ 1 to ϕ(u)x for u ∈ P and x ∈ L. Comparing ranks yields an isomorphism
+       ∼
+α OL = ϕ OL as (OP , OL)-bimodules. Any such isomorphism is in particular an
+isomorphism of right OL-modules, hence is induced by left multiplication with an
+element c in OL× . The fact that this is also a homomorphism of left OP -modules
+implies that cα(u) = ϕ(u)c for all u ∈ P . Thus after replacing α by its conjugate
+by c, we may assume that α extends ϕ. Let y ∈ E, and denote by cy the inner
+automorphism of O(P o E) given by conjugation with y. Then α ◦ cy ◦ α−1 acts
+on P as ϕ ◦ cy ◦ ϕ−1 . But α ◦ cy ◦ α−1 = cα(y) acts on P also as the automorphism
+given by conjugation with α(y). As before, any inner algebra automorphism of
+OL which stabilises P acts on P as some automorphism in E. Thus cα(y) acts
+on P as some element in E, or equivalently, ϕ normalises E. It follows from the
+above that ϕ extends to a group automorphism of L, which in turn extends to an
+algebra automorphism β, whose class is by construction in the image of the map
+NAut(P ) (E)/E → Out(P ). Since α and β induce the same action as ϕ, it follows
+that β −1 ◦ α ∈ AutP (OL). Therefore, if α stabilises the trivial OL-module, so does
+β −1 ◦ α, and hence β −1 ◦ α is inner. Equivalently, α and β have in that case the
+same image in Out(OL). The result follows.                                         
+
+
+  This Proposition shows that the last sequence in Theorem 1.1 applied to B =
+O(P o E) as above is a split short exact sequence. The hypothesis [P, E] = P is in
+particular satisfied if E is nontrivial and acts freely on P \ {1}.
+
+Corollary 4.4. Let P be a nontrivial abelian p-group and E a nontrivial cyclic p0 -
+subgroup of Aut(P ) acting freely on P \{1}. Set L = P oE. Assume that char(O) =
+0. Let M be an (OL, OL)-bimodule inducing a stable equivalence of Morita type.
+16          ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+Then M has an endotrivial source as an O(L × L)-module. In particular, we have
+Pic(OL) = E(OL).
+
+Proof. If M induces a Morita equivalence, then M has a trivial source by Propo-
+sition 4.3. Thus the Heller translates of M have as source Heller translates of the
+trivial module (for a vertex), and these are endotrivial. The result follows from
+Proposition 4.2.                                                                 
+
+Proof of Theorem 1.3. We use the notation of Theorem 1.3, and we set L = P o E.
+With the notation of Theorem 4.1, since M induces a stable equivalence of Morita
+type, it follows that the functor M ∗ ⊗B − ⊗B M induces a group isomorphism
+Pic(B) ∼= Pic(OL). By Corollary 4.4, we have Pic(OL) = E(OL). Lemma 2.8 im-
+plies that Pic(B) = E(B); in particular, we have Pic(B) = E(B). The above isomor-
+phism Pic(B) ∼ = Pic(OL) restricts to an injective group homomorphism Pic(B) →
+Pic(OL). Since Pic(B) = E(B), the group Pic(B) is a finite subgroup of Pic(OL) =
+Pic(OL)·hΩ(OL)i, where the last equality uses Proposition 4.2. We show next that
+the image of the group homomorphism
+
+                                  Pic(B) → Pic(OL)
+
+induced by M ∗ ⊗B − ⊗B M is contained in Pic(OL), hence induces an injective
+group homomorphism Ψ : Pic(B) → Pic(OL) ∼             = Hom(E, k × ) o NE , where the
+second isomorphism is from Proposition 4.3.
+   If P is not cyclic, then hΩ(OL)i is an infinite cyclic central subgroup of Pic(OL).
+Thus any finite subgroup of Pic(OL) is contained in Pic(OL). Therefore, if P is not
+cyclic, then the functor M ∗ ⊗B − ⊗B M induces an injective group homomorphism
+Pic(B) → Pic(OL).
+   If P is cyclic, this is true as well, but requires a slightly different argument since
+in that case OL is periodic as a bimodule (see e. g. [15, Lemma 4.1]), and hence
+Pic(OL) is already a finite group. If P is cyclic, then the assumption E 6= {1}
+implies that |P | ≥ 3. The algebra kL is a symmetric Nakayama algebra, and thus
+even powers of the Heller operator on kL permute the isomorphism classes of simple
+modules. It follows that every even power of the Heller operator on OL is induced
+by a Morita equivalence. Hence, in order to show that the (OL, OL)-bimodule
+M ∗ ⊗B N ⊗B M induces a Morita equivalence, we may replace N by any even Heller
+translate as a (B, B)-bimodule. Corollary 4.6 below implies we may assume that
+N ⊗B − stabilises the isomorphism classes of all finitely generated k ⊗O B-modules.
+It follows that the stable equivalence of Morita type given by M ∗ ⊗B N ⊗B M
+stabilises the isomorphism classes of all finitely generated kL-modules, hence is a
+Morita equivalence by [13, Theorem 2.1].
+   Back to the general case, it follows from Remark 1.2 (b) that the canonical
+image of OutP (A) in Pic(B) is mapped to a subgroup of Hom(E, k × ) under the
+injective group homomorphism Pic(B) → Pic(OL). This shows the commutativity
+of the left rectangle in the statement of Theorem 1.3. For the commutativity of
+the right rectangle in that diagram, let N be a (B, B)-bimodule inducing a Morita
+equivalence on B. Let U be an indecomposable endopermutation OP -module with
+vertex P and ϕ ∈ NAut(P ) (E) such that the image of [N ] in DO (P, F) o NE under
+the map Φ is equal to [U ][ϕ], where [U ] is the class of U in the Dade group and [ϕ] is
+the image of ϕ in NE . The map Ψ sends [N ] to the class of the (OL, OL)-bimodule
+                              PICARD GROUPS OF BLOCKS                                17
+
+
+N 0 = M ∗ ⊗B N ⊗B M . By Lemma 2.6 the image of [N 0 ] in DO (P, F) o NE is
+                 [V ∗ ] · [U ] · [ϕ] · [V ] = [V ∗ ⊗O U ⊗O ϕ V ] · [ϕ] = [ϕ]
+where the last equality uses the fact that Pic(OL) = T (OL) from Proposition 4.3.
+This shows the commutativity of the right rectangle in the diagram and concludes
+the proof of Theorem 1.3.                                                      
+
+    Let G be a finite group and b a block of kG with a nontrivial cyclic defect group
+P and inertial quotient E. We collect some well-known results on cyclic blocks,
+going back to Brauer, Dade, and Green. Our notation follows [15] (where proofs
+and further references can be found).
+    Set B = kGb, and denote by I a set of representatives of the conjugacy classes of
+primitive idempotents in B. We have `(B) = |E| = |I|. For any i ∈ I, the projective
+indecomposable B-module Bi has uniserial submodules Ui , Vi such that Ui + Vi =
+J(B)i and Ui ∩ Vi = soc(Bi). One may choose notation such that Ω(Ui ) ∼    = Vρ(i) for
+some ρ(i) ∈ I and Ω(Vi ) ∼ = Uσ(i) for some σ(i) ∈ I. The maps ρ, σ defined in this
+way are then permutations of I, and ρ ◦ σ is a transitive cycle on I. The Brauer
+tree of B is defined as follows. Each vertex corresponds to exactly one ρ-orbit, or
+one σ-orbit. The edges are labelled by the elements in I, in such a way that the
+edge i connects the ρ-orbit iρ of i with the σ-orbit iσ of i. The permutations ρ and
+σ induce cyclic permutations of the set of edges emanating from a fixed vertex. If
+|P | ≥ 3, then the 2|E| modules Ui , Vi , i ∈ I, are pairwise nonisomorphic, because
+they correspond to the simple k(P oE)-modules and their Heller translates through
+a stable equivalence of Morita type between B and k(P o E). In particular, if |P | ≥
+3, then the modules Ui , Vi all have period 2|E|, for any even integer n and any i ∈
+I there is j ∈ I such that Ωn (Ui ) ∼= Uj , and for any odd integer n and any i ∈ I
+there is j ∈ I such that Ωn (Ui ) ∼
+                                  = Vj .
+Proposition 4.5. Let G be a finite group and b a block of kG with a cyclic defect
+group P of order at least 3. Set B = kGb. Let n be an integer such that the (B, B)-
+bimodule M = ΩnB⊗k B op (B) induces a Morita equivalence. Then n is even. As a
+k(G × G)-module, M has vertex ∆P = {(u, u) | u ∈ P } and trivial source.
+Proof. Since the functor M ⊗B − is an equivalence, it permutes the isomorphism
+classes of simple modules in such a way that the induced permutation of the edges
+of the Brauer tree is a tree automorphism. By [12, 7.2] this automorphism stabilises
+a vertex (this is where we use that |P | ≥ 3). Thus there is a ρ-orbit or a σ-orbit
+which is stabilised by this automorphism. Suppose that the ρ-orbit iρ of an edge i is
+stabilised. Thus M ⊗B Ui ∼   = Ui0 for some i0 belonging to the ρ-orbit of i. Note that
+M ⊗B Ui = Ω (Ui ). By the above, we have Ui0 ∼
+           ∼   n
+                                                   = Ωm (Ui ) for some even integer m.
+Thus Ω  n−m        ∼
+             (Ui ) = Ui . Since Ui has period 2|E|, it follows that 2|E| divides n − m;
+in particular, n − m is even. Since also m is even, so is n. A similar argument
+applies if the Brauer tree automorphism stabilises a σ-orbit. The k(G × G)-module
+B has vertex ∆P and trivial source. Since the trivial kP -module k has period 2
+and since n is even, it follows that M has vertex ∆P and trivial source.             
+
+Corollary 4.6. Let G be a finite group and b a block of OG with a nontrivial cyclic
+defect group P . Set B = OGb. Let N be a (B, B)-bimodule inducing a Morita equiv-
+alence. Then there exists an integer n such that the bimodule N 0 = ΩnB⊗O B op (N )
+induces a Morita equivalence with the property that the functor N 0 ⊗B − stabilises
+18          ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+the isomorphism class of every finitely generated k⊗O B-module. Moreover, if |P | ≥
+3, then any integer n with this property is even.
+Proof. It follows from [15, 5.1] that there is an integer n such that N 0 = ΩnB⊗O B op (N )
+induces a Morita equivalence with the property that the functor N 0 ⊗B − stabilises
+the isomorphism class of every finitely generated k ⊗O B-module. Then the bimod-
+ule N 0 ⊗B N ∗ ∼= ΩnB⊗O B op (B) induces a Morita equivalence as well. Therefore, if
+|P | ≥ 3, then Proposition 4.5 implies that n is even.                                  
+Proof of Theorem 1.4. Let G be a finite group and b a block of OG with a nontrivial
+cyclic defect group P and nontrivial inertial quotient E. Set B = OGb. Since E
+is nontrivial, the block B is not nilpotent, and hence |P | ≥ 3. Let M be a (B, B)-
+bimodule inducing a Morita equivalence. Since Pic(B) = E(B), the vertices of M
+are twisted diagonal subgroups of P × P isomorphic to P . We need to show that
+M has a trivial source, for some vertex. Since the trivial OP -module has period
+2, it follows that M has a trivial source if and only ΩnB⊗O B op (M ) has a trivial
+source for some (and then necessarily any) even integer n. Therefore, by Corollary
+4.6 we may assume that the functor M ⊗B − stabilises the isomorphism classes of
+all finitely generated k ⊗O B-modules. By [15, 4.3, 5.6], the subgroup of Pic(B)
+of bimodules with this property is canonically isomorphic to Aut(P )/E, and by
+[15, 5.8], the bimodules with this property correspond to algebra automorphisms
+of A extending group automorphisms of P , and hence these bimodules have trivial
+source. By the Remark 1.2, the group OutP (A) corresponds to the subgroup of
+Pic(B) of isomorphism classes of bimodules of the form ΩnB⊗O B op (B), where n is
+an integer such that this bimodule induces a Morita equivalence. Note that in that
+case we have ΩnB⊗O B op (M ) ∼= ΩnB⊗O B op (B) ⊗B M ∼= M ⊗B ΩnB⊗O B op (B). Thus
+OutP (A) is indeed a direct factor of Pic(B).                                    
+Proof of Theorem 1.5. Let G be a finite group and b a non-nilpotent block of OG
+with a Klein four defect group P . Set B = OGb. Every endopermutation OP -
+module is a Heller translate of a rank one module. By [14, Theorem 1.1], B
+is Morita equivalent to either OA4 or the principal block algebra of OA5 , via a
+Morita equivalence with source a Heller translate of the trivial module. (Using the
+classification of finite simple groups it is shown in [6] that there is even a Morita
+equivalence with trivial source in these cases, but this is not needed for the present
+proof). By Lemma 2.8, we may assume that B is equal to one of these two algebras.
+Note that then B is its own source algebra.
+   If B = OA4 , the result follows from Proposition 4.3; indeed, we have OutP (B) ∼  =
+C3 , and Aut(P ) ∼ = S3 , hence Aut(P )/E ∼ = S3 /C3 ∼
+                                                     = C2 , which acts nontrivially on
+OutP (B) and hence yields Pic(B) ∼   = S3 .
+   Suppose that B is the principal block algebra OA5 b0 . As a very special case of
+Theorem 4.1, identifying OA4 to its image in this algebra, induction and restriction
+yields a splendid stable equivalence of Morita type between B and OA4 (this is well-
+known and easy to verify directly). That is, we are in a situation of Lemma 2.8
+in which V = O. By Theorem 1.3 we have an embedding Pic(B) → Pic(OA4 ) ∼             =
+C3 o C2 which maps OutP (B) to the subgroup C3 .
+   We show next that OutP (B) is trivial. Write A4 = P oE with E ∼     = C3 . We need
+to show that the nontrivial automorphisms of the form uy 7→ ζ(y)uy of OA4 (with
+ζ : E → k × a group homomorphism, u ∈ P , y ∈ E as above) do not extend to B.
+Indeed, if they did, then the three trivial source B-modules corresponding (through
+                             PICARD GROUPS OF BLOCKS                                  19
+
+
+the stable equivalence between OA4 and B) to the three linear characters of OA4
+would have to have the same rank because they would be transitively permuted
+by this automorphism group. This is not possible: the trivial character of OA4
+corresponds to the trivial character of B, while the two nontrivial characters of OA4
+correspond to B-modules of O-rank greater than 1 (because A5 has no nontrivial
+character of rank 1). Thus OutP (B) is trivial.
+   It follows that Pic(B) embeds into C2 . An automorphism of B given by con-
+jugation with an involution in S5 yields a nontrivial element in Pic(B), whence
+Pic(B) ∼= C2 .                                                                      
+
+                            5. Proof of Theorem 1.6
+   We assume in this Section that O has characteristic zero. For the description
+of Pic(B) as colimit of finite groups in Theorem 1.6, we will need the following
+lemmas. One of the key ingredients is Brauer’s Lemma 1 from [3], implying that if
+K is a field of characteristic 0 containing all p0 -order roots of unity in an algebraic
+closure, then the Schur indices over K of absolutely irreducible characters of finite
+groups are all equal to 1.
+Lemma 5.1. Let K be a field of characteristic 0 containing all roots of unity of
+order prime to p in an algebraic closure of K and let K0 be a subfield of K containing
+all algebraic elements in K. Let G be a finite group and X a finite-dimensional
+KG-module. Then there is a K0 G-module X0 such that X ∼       = K ⊗K0 X0 .
+Proof. Since KG is semisimple, we may assume that X is a simple KG-module.
+Let K 0 be a splitting field for X containing K. Let Y 0 be a simple K 0 G-module
+which is isomorphic to a direct summand of K 0 ⊗K X, and denote by ψ the char-
+acter of Y 0 . The field K(ψ) generated by the values ψ(g), g ∈ G, is contained in
+K(ζ) for some root of unity of p-power order ζ, since K contains all roots of unity
+of order prime to p. The minimal polynomial of ζ over K has algebraic numbers as
+coefficients, hence is also the minimal polynomial of ζ over K0 . Thus the restric-
+tion of field automorphisms of K(ζ) to K0 (ζ) induces an isomorphism of Galois
+groups Gal(K(ζ) : K) ∼   = Gal(K0 (ζ) : K0 ), hence an isomorphism of Galois groups
+Gal(K(ψ) : K) ∼  = Gal(K0 (ψ) : K0 ). By [3, Lemma 1], K0 (ψ) is a splitting field for
+ψ; that is, Y 0 ∼
+                = K 0 ⊗K0 (ψ) Y0 for some simple K0 (ψ)G-module Y0 ; in particular,
+Y = K(ψ) ⊗K0 (ψ) Y0 is a simple K(ψ)-module which appears in K(ψ) ⊗K X. It
+follows from [23, Ch. 3 Theorem (1.30)] that we have an isomorphism
+                           K(ψ) ⊗K X ∼
+                                                M
+                                                         σ
+                                        =                  Y
+                                          σ∈Gal(K(ψ):K)
+
+Combining the above isomorphisms yields that the K0 G-module
+                                     M
+                                               σ
+                          X0 =                   Y0
+                                    σ∈Gal(K0 (ψ):K0 )
+
+satisfies
+                       K(ψ) ⊗K0 X0 ∼
+                                   = K(ψ) ⊗K X
+and hence K ⊗K0 X0 ∼
+                   = X.                                                               
+   The following Lemma is well-known; we sketch a proof for convenience. As
+before, by a p-adic subring of O we mean a finite extension O0 of the p-adic integers
+contained in O. Note that J(O0 ) ⊆ J(O).
+20          ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+Lemma 5.2. Suppose that k is an algebraic closure of Fp . Denote by K the field
+of fractions of O. Let R be the union of all p-adic subrings of O, and let E be the
+field of fractions of R identified to its image in K. Denote by ν : K × → Z the
+π-adic valuation, where π ∈ O such that J(O) = πO.
+     (1) The field K is the completion of E and O is the completion of R with respect
+         to the topology induced by ν.
+     (2) The restriction ν|E of ν to E × is a discrete valuation with valuation ring
+         R and valuation ideal R ∩ πO.
+     (3) The field E is the algebraic closure of Qp in K.
+Proof. Let W (k) ⊆ O be the ring of Witt vectors of k in O. By the structure
+theory of complete discrete valuation rings, we have O = W (k)[π] for an element
+π satisfying a monic polynomial f (x) in W (k)[x] such that J(O) = πO (see [32,
+Chapter 2, Theorems 3, 4 and ChapterP1, Propositions 17, 18]). Every element
+of W (k) is a limit of some sequence ( 0≤i≤n ζi pi )n≥0 , where ζn ∈ W (k)× is a
+p0 -root of unity, for all n ∈ N (see proof of Theorem 3, Chapter 2 of [32]). Since
+every p0 -root of unity in W (k) lies in a finite extension of Zp contained in W (k),
+it follows that W (k) is the completion of the union of the finite extensions of Zp
+contained in W (k). Hence, by an application of Krasner’s lemma, we may assume
+that f (x) ∈ A[x], for some finite extension A of Zp contained in W (k) (see [32,
+Chapter 2, Exercises 1,2]). Consequently, π lies in a finite extension of A and hence
+in R. Since every element of O is a polynomial in π of degree at most the degree
+of f and with coefficients in W (k), it follows by the same reasoning as above that
+every element of O is a limit of a sequence of elements of R implying (1).
+    As shown above, π ∈ R. Thus the restriction of ν to E × has valuation group
+Z and ν|E is a discrete valuation. In order to show (2) we need to observe that
+R = E ∩ O. The inclusion ⊆ is trivial. For the reverse inclusion, any element
+in E ∩ O belongs to the fraction field L of some p-adic subring O0 of O with
+nonnegative valuation, hence to the valuation ring of L, and that is precisely O0 .
+    If L is a subfield of K containing Qp such that the degree of L/Qp is finite, then
+the valuation ring of L is a p-adic subring of O, and hence L is contained in E.
+Since E is the union of finite extensions of Qp , all elements in E are algebraic over
+Qp , whence statement (3).                                                           
+Proposition 5.3. Suppose that k is an algebraic closure of Fp . Denote by K the
+field of fractions of O. Let R be the union of all p-adic subrings of O, and let E be
+the field of fractions of R identified to its image in K. Let G be a finite group, b a
+central idempotent of OG, and set B = OGb. Let M be a (B, B)-bimodule inducing
+a Morita equivalence on B. There exist a p-adic subring O0 of O such that b ∈
+O0 G and an (O0 Gb, O0 Gb)-bimodule inducing a Morita equivalence on O0 Gb such
+that M ∼ = O ⊗O0 M0 .
+Proof. Let X = K ⊗O M . So, M is a full O(G × G)-lattice in X. By Lemma 5.2, E
+contains all algebraic numbers in K. Since k is an algebraic closure of Fp , it follows
+that E contains all p0 -order roots of unity in an algebraic closure of K. Hence by
+Lemma 5.1, there exists an E(G × G)-module XE such that X = K ⊗E XE . Let
+MR = XE ∩ M . By Lemma 5.2, O is the completion of R and K is the completion
+of E. Hence, by [7, Corollary 30.10], we have that M ∼   = O ⊗R MR . Let B be an
+                                                       u
+R-basis of MR . For u ∈ G × G and x, y ∈ B, let αx,y      denote the coefficient
+                                                                          P         of y
+when ux is written as an R-linear combination of elements of B. Let b = g∈G βg g,
+                             PICARD GROUPS OF BLOCKS                                   21
+
+
+βg ∈ O. Then βg ∈ R for all g ∈ G. Since every finite extension of Zp in O is
+contained in a p-adic subring of O, there exists a p-adic subring O0 of O containing
+  u
+αx,y  and containing βg for all u ∈ G × G, x, y ∈ B and all g ∈ G. Let M0 be
+the O0 -submodule of MR generated by B. Then M0 is an (O0 Gb, O0 Gb)-bimodule,
+finitely generated and free as O0 -module, satisfying MR ∼  = R ⊗O0 M0 . It follows
+that M ∼ = O ⊗O0 M0 . By [12, Lemma 4.4, Prop. 4.5] we have that M0 induces a
+Morita equivalence on O0 Gb . The result follows.                                  
+Proof of Theorem 1.6. Statement (i) follows from Proposition 5.3. Thus Pic(B) is
+the colimit of the groups Pic(O0 Gb) as stated. By [8, Theorems (55.19), (55.25)]
+(see also Theorem 6.2 below for an alternative proof) the groups Pic(O0 Gb) are
+finite, whence (ii).                                                           
+
+   6. On the finiteness and structure of Picard groups over p-adic
+                                  rings
+   In this section we provide a proof for the finiteness of Pic(B) for a block alge-
+bra B of a group algebra over a p-adic ring. We start out assuming that O has
+characteristic zero, and specialize later to the case that O is a p-adic ring. Write
+J(O) = πO for some prime element π of O. Let A be an O-algebra which is free of
+finite rank as an O-module. We use without further comment some standard facts
+relating automorphisms to Picard groups (see [8, §55 A] or [20, 2.8.16] for more
+details). If α ∈ Aut(A), then the (A, A)-bimodule Aα induces a Morita equivalence
+on mod(A), and we have Aα ∼    = A as (A, A)-bimodules if and only if α is inner. The
+map sending α to Aα induces an injective group homomorphism Out(A) → Pic(A).
+If A is basic, this is an isomorphism (see e. g. [20, 4.9.7]). In general, if M is an
+(A, A)-bimodule inducing a Morita equivalence, then M ∼   = Aα as (A, A)-bimodules
+for some α ∈ Aut(A) if and only if M ∼   = A as left A-modules. In particular, if the
+functor M ⊗A − stabilises the isomorphism classes of all simple modules, hence of
+all finitely generated projective modules, then M ∼  = Aα for some α ∈ Aut(A). It
+follows that the image of Out(A) in Pic(A) has finite index because it contains the
+subgroup of Pic(A) of Morita equivalences which stabilise the isomorphism classes
+of all simple modules.
+   Let r be a positive integer. We denote by Autr (A) the set of O-algebra automor-
+phisms of A which induce the identity on A/π r A. A trivial verification shows that
+Autr (A) is a subgroup of Aut(A). We denote by Outr (A) the image of Autr (A)
+in Out(A). The map sending α ∈ Autr (A) to the (A, A)-bimodule Aα induces a
+group isomorphism
+                       Outr (A) ∼
+                                = ker(Pic(A) → Pic(A/π r A)) ;
+see e. g. [18, 3.1]. In particular, Out1 (A) is isomorphic to the kernel of the canonical
+map Pic(A) → Pic(k ⊗O A), and Outr (A) is a normal subgroup of Out1 (A) for all
+r ≥ 1.
+   If O is a p-adic ring, G a finite group and B a block algebra of OG, then by
+a result of Hertweck and Kimmerle [11, 3.13], the group Outr (B) is trivial, for r
+large enough. The proof of [11, 3.13] uses a theorem of Weiss in [35] (restated as
+Theorem 3.2 in [11]). As a consequence of Maranda’s theorem [7, (30.14)], this
+remains true if O is not necessarily p-adic, but Maranda’s theorem leads to a larger
+bound for r. More precisely, the smallest positive integer r for which Outr (B) is
+trivial in [11, 3.13] depends only on the ring O, while the lowest bound obtained
+22         ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+from Maranda’s theorem, applied to the O(G × G)-modules B and Bα , with α ∈
+Outr (B), would be an integer r such that π r O = π|G|2 O. We give an elementary
+proof of the fact that Outr (B) is trivial for r large enough which does not require
+Weiss’ results and which slightly improves on Maranda’s bound; that is, we obtain
+a lower bound for r which depends on O and the size of a defect group of B.
+Proposition 6.1. Let G be a finite group, B a block algebra of OG and P a defect
+group of B. Let d be the positive integer such that π d O = |P |O. For any integer
+r > d the group Outr (B) is trivial.
+Proof. It suffices to show this for r = d + 1. Let α ∈ Autr (B). In order to show
+that α is inner, we need to show that the (B, B)-bimodule Bα is isomorphic to B.
+Equivalently, we need to show that Bα and B are isomorphic as O(G × G)-modules.
+By the assumptions on α, we have a bimodule isomorphism Bα /π r Bα ∼    = B/π r B; in
+particular, Bα /πBα ∼  = B/πB as k(G × G)-modules. Since p-permutation modules
+over k lift uniquely, up to isomorphism, to p-permutation modules over O, it suffices
+to show that Bα is a p-permutation O(G × G)-module. Since B is relatively P × P -
+projective, it suffices to show that Bα is a permutation O(P × P )-module.
+    The hypotheses on α imply that for any x ∈ B we have α(x) =P      x + π|P |cx , for
+some cx ∈ B. Identify the defect group P to its image in B. Set v = x∈P α(x)x−1 .
+We have
+                               α(x)x−1 = 1 + π|P |cx x−1
+for all x ∈ P . Thus
+                                  v = |P | · 1 + π|P |a
+for some a ∈ B. Set u = 1 + πa; this element is clearly invertible in B and satisfies
+|P |u = v. We are going to show that uyu−1 = α(y) for all y ∈ P . This is equivalent
+to showing that uy = α(y)u, hence to vy = α(y)v. In order to show this, fix y ∈
+P . Then
+               X                X                       X
+         vy =       α(x)x−1 y =     α(yy −1 x)x−1 y =     α(y)α(y −1 x)x−1 y .
+              x∈P              x∈P                     x∈P
+                                                  −1
+If x runs over all elements of P , then so does y x, and therefore this element is
+equal to α(y)v as required. This implies that composing α with the inner auto-
+morphism given by conjugation with u−1 yields an automorphism β which is the
+identity on P and which belongs to the same class as α in Out(B). The fact that
+u ∈ 1 + πB implies that β ∈ Aut1 (B). Since the images of α and β in Out(B) are
+equal, it follows that Bα ∼
+                          = Bβ as (B, B)-bimodules, or equivalently, as O(G × G)-
+modules. Since β is the identity on P , it follows that Bβ , and therefore also Bα , is
+a permutation O(P × P )-module (isomorphic to B as an O(P × P )-module). The
+result follows.                                                                      
+   Combining Proposition 6.1 with [18, 3.5] yields a proof of the following result,
+including the finiteness of Pic(B) in Part (ii) in the case that O is a p-adic ring.
+Theorem 6.2. Let G be a finite group and B a block algebra of OG with a defect
+group P . Set B̄ = k ⊗O B. We have a canonical exact sequence of groups
+                    1      / Out1 (B)       / Pic(B)         / Pic(B̄)
+
+with the following properties.
+(i) The group Out1 (B) has a finite p-power exponent dividing pd , where d is the
+positive integer satisfying π d O = |P |O.
+                              PICARD GROUPS OF BLOCKS                                     23
+
+
+(ii) If k is finite, then Pic(B) is finite, and Out1 (B) is a finite p-group.
+(iii) If k is an algebraic closure of Fp , then every element in Pic(B) has finite order.
+   We restate the part of [18, 3.5] required for the proof of Theorem 6.2.
+Proposition 6.3 (cf. [18, 3.5]). Let A be an O-algebra which is finitely generated
+free as an O-module. Let r be a positive integer. Suppose that the canonical map
+Z(A) → Z(A/π r A) is surjective. We have an exact sequence of groups
+               1       / Out2r (A)        / Outr (A)       / HH 1 (A/π r A) .
+
+For any integer a ≥ 0, the map Outr (A) → HH 1 (A/π r A) in this sequence sends
+the subgroup Outr+a (A) of Outr (A) to π a HH 1 (A/π r A).
+   We briefly review the construction of the map from Outr (A) → HH 1 (A/π r A)
+in Proposition 6.3. Let α ∈ Autr (A). For all a ∈ A we have α(a) = a + π r τ (a) for
+some τ (a) ∈ A. By comparing the expressions α(ab) and α(a)α(b) for any two a,
+b ∈ A, one sees that the linear map τ on A induces a derivation τ̄ on A/π r A. (For
+the ring k[[t]] instead of O and r = 1, this construction is due to Gerstenhaber; the
+derivations which arise in this way are called integrable.) It is shown in [18, 3.5]
+that the map α 7→ τ̄ sends inner automorphisms to inner derivations, hence induces
+a map Outr (A) → HH 1 (A/π r A). This is shown to be a group homomorphism. By
+construction, this map sends Outr+a (A) to π a HH 1 (A/π r A), hence has Out2r (A)
+in its kernel. It is further shown in [18, 3.5] that Out2r (A) is indeed equal to that
+kernel.
+  Block algebras satisfy the hypothesis on the surjectivity of the canonical map
+Z(A) → Z(A/π r A). We note the following consequences of Proposition 6.3.
+Corollary 6.4. Let A be an O-algebra which is finitely generated free as an O-
+module. Let r be a positive integer. Suppose that the canonical map Z(A) →
+Z(A/π r A) is surjective. The following hold.
+(i) The quotient Outr (A)/Out2r (A) is abelian of exponent dividing pr . If k is finite,
+then Outr (A)/Out2r (A) is a finite abelian p-group of exponent dividing pr .
+(ii) The quotient Outr (A)/Outr+1 (A) is abelian of exponent dividing p. If k is
+finite, then Outr (A)/Outr+1 (A) is a finite elementary abelian p-group.
+Proof. The exact sequence in 6.3 implies that the quotient Outr (A)/Out2r (A) is
+isomorphic to a subgroup of the additive abelian group HH 1 (A/π r A). This group
+is annihilated by π r , hence by pr . If k is finite, then A/π r A is a finite set, and hence
+HH 1 (A/π r A) is a finite abelian p-group of exponent dividing pr . This proves (i).
+It follows from (i) that the quotient Outr (A)/Outr+1 (A) is abelian of exponent
+dividing pr . We need to show that its exponent is at most p. Let α ∈ Autr (A). For
+a ∈ A, write α(a) = a + π r τ (a) for some τ (a) ∈ A. An easy induction shows that
+for n ≥ 1 we have αn (a) ≡ a + nπ r τ (a) modulo π r+1 A, and thus αp ∈ Autr+1 (A).
+The rest of (ii) follows as in (i).                                                        
+   One can improve the statement on the exponent in statement (i) of Corollary 6.4
+by taking ramification into account; we ignored this in the above proof and simply
+argued that if π r annihilates an O-module, then the underlying abelian group has
+exponent dividing pr . The following statement is well-known; we include a proof
+for convenience.
+24          ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+Lemma 6.5. Let k be an algebraic closure of Fp , let A be a finite-dimensional
+k-algebra, and let X be a k-basis of A. Then Pic(A) is the colimit of the finite
+groups Pic(AF ), with F running over the finite subfields of k which contain the
+multiplicative structure constants of X, where AF is the F-algebra spanned by X.
+In particular, every element in Pic(A) has finite order.
+Proof. We may assume that A is basic, and hence that Out(A) ∼         = Pic(A). Since k
+is an algebraic closure of Fp , all elements in k are algebraic, and hence any finite
+subset of k generates a finite subfield. In particular, the multiplicative constants
+of the basis X generate
+                   P        a finite subfield k0 of A. Let α ∈ Aut(A). For any x ∈
+X, write α(x) = y∈X λ(x, y)y for some coefficients λ(x, y) in k. By the above,
+these coefficients are contained in a finite subfield k1 of k, which we may choose to
+contain k0 . Thus α is the extension to A of a k1 -algebra automorphism α1 of the
+k1 -subalgebra A1 of A with k1 -basis X, and hence Pic(A) is a colimit as stated.
+Since A1 is a finite set, it follows that α1 has finite order, implying that α has finite
+order. This completes the proof.                                                       
+Proof of Theorem 6.2. Set B̄ = k ⊗O B. As mentioned above, the kernel of the
+canonical map Pic(B) → Pic(B̄) is isomorphic to Out1 (B), whence the canonical
+exact sequence as stated.
+    By 6.4, the group Out1 (B) is filtered by the normal subgroups Outi (B) such that
+the quotient of each two consecutive groups has exponent at most p. By Maranda’s
+theorem [7, (30.14)] or by Proposition 6.1 above, there exists a positive integer r
+such that Outr (B) is trivial, and then Out1 (B) has exponent dividing pr−1 . The
+statement on the exponent in (i) follows from Proposition 6.1.
+    By 6.4 again, if k is finite, then the quotients of subsequent subgroups in this
+filtration are finite elementary abelian p-groups, and hence Out1 (B) is a finite p-
+group in that case. If k is finite, then k ⊗O B is a finite set; in particular, its
+automorphism group as a k-algebra is finite. Since Out(B̄) is isomorphic to a
+subgroup of finite index in Pic(B̄), it follows that Pic(B̄) is finite, and hence so is
+Pic(B), proving (ii).
+    For statement (iii), assume that k is an algebraic closure of Fp . By (i), every
+element in Out1 (B) has finite order, and hence it suffices to show that every element
+in Pic(B̄) has finite order. The result follows from Lemma 6.5.                      
+
+                                    7. Examples
+Example 7.1. By results of Roggenkamp and Scott [30] (see also Weiss [34], [35]),
+we have a canonical group isomorphism
+                  Pic(OP ) = L(OP ) ∼
+                                    = Hom(P, O× ) o Out(P )
+This isomorphism is induced by the map Φ in Theorem 1.1 applied to OP . (The
+source algebra A in 1.1 is in that case OP , and OutP (A) is trivial). This isomor-
+phism restricts to an isomorphism
+                                T (OP ) ∼
+                                        = Out(P ) ,
+so in particular, the last horizontal map in the diagram in Theorem 1.1 is surjective.
+This need not be the case, however, for an arbitrary nilpotent block.
+   Let G be a finite group and let b be a nilpotent block of OG with a nontrivial
+defect group P . That is, the fusion system F on P determined by any choice of
+a maximal B-Brauer pair (P, e) is equal to the trivial fusion system F = FP (P ).
+                             PICARD GROUPS OF BLOCKS                                25
+
+
+Note that we have Out(P, F) = Out(P ) in that case. By the structure theory
+of nilpotent blocks from Puig [25] there is a Morita equivalence between OP and
+the block algebra B = OGb given by a (B, OP )-bimodule M with vertex ∆P and
+endopermutation source V . Then the O-dual M ∗ has vertex ∆P and endopermuta-
+tion source V ∗ . The map sending an (OP , OP )-bimodule N to M ⊗OP N ⊗OP M ∗
+induces an isomorphism
+                                Pic(OP ) ∼
+                                         = Pic(B)
+   Thus the map Φ in Theorem 1.1 applied to the nilpotent block b sends Pic(B)
+isomorphically to the subgroup
+                        [V ] · (Hom(P, O× ) o Out(P )) · [V ∗ ]
+of DO (P )oOut(P ). The source algebra A is in this case isomorphic to EndO (V )⊗O
+OP , and OutP (A) is again trivial (because the inertial quotient of B is trivial). It
+follows that the elements of Pic(B) correspond under Φ to elements in DO (P ) o
+Out(P ) of the form
+                     [V ] · [ζ] · [ϕ] · [V ∗ ] = [ζ] · [V ⊗ ϕ (V ∗ )] · [ϕ]
+where [V ], [ζ] are the classes in DO (P ) of V and of the rank 1 module determined
+by ζ ∈ Hom(P, O× ), respectively, and where [ϕ] is the class of an automorphism ϕ
+of P in Out(P ). If V is not stable under ϕ, then the commutator
+                                [V ⊗ ϕ (V ∗ )] = [[V ], [ϕ]]
+in DO (P )oOut(P ) is not trivial. In that case, the corresponding element of Pic(B)
+is given by a bimodule with ∆ϕ as a vertex and a nontrivial, and possibly non-
+linear, endopermutation source, so the class of ϕ in Out(P ) is not in the image of
+the map T (B) → Out(P ) induced by Φ. This scenario does arise; see the next
+example.
+Example 7.2. Any Morita equivalence between two O-algebras A, B given by
+an (A, B)-bimodule M and a (B, A)-bimodule N can be interpreted as a self
+Morita equivalence of the algebra A ⊗O B given by the bimodules (M ⊗O N )τ
+and τ (N ⊗O M ), where τ : A ⊗O B → B ⊗O A is the isomorphism satisfying
+τ (a ⊗ b) = b ⊗ a. Applied to block algebras of finite groups, one can use this to
+construct self Morita equivalences with endopermutation sources which need not
+be linear.
+   Let G, H be finite groups, b, c blocks of OG, OH, respectively, with a common
+defect group P . Set B = OGb and C = OHc. Then B ⊗O C is a block of G × H
+with defect group P × P .
+   Let M be a (B, C)-bimodule with vertex ∆P and endopermutation source V
+inducing a Morita equivalence between B and C. Then M ⊗O C, regarded as a
+(B ⊗O C, C ⊗O C)-bimodule, induces a Morita equivalence between B ⊗O C and
+C ⊗O C with vertex ∆(P × P ) and source V ⊗O O. Let τ be the automorphism
+of C ⊗O C defined by τ (c ⊗ c0 ) = c0 ⊗ c. Then τ restricts to an automorphism of
+P × P exchanging the two copies of P , inducing an automorphism of ∆(P × P ) in
+the obvious way (and all those restrictions of τ are again denoted by τ ).
+   Thus the (C ⊗O C, C ⊗O C)-bimodule T = (C ⊗O C)τ induces a self Morita
+equivalence with vertex
+                          ∆τ = {((u, v), (v, u)) | u, v ∈ P }
+26           ROBERT BOLTJE, RADHA KESSAR, AND MARKUS LINCKELMANN
+
+
+and trivial source. The (B ⊗O C, B ⊗O C)-bimodule
+                         (M ⊗O C) ⊗C⊗O C T ⊗C⊗O C (M ∗ ⊗O C)
+induces a self Morita equivalence of B ⊗O C with vertex ∆τ and the ∆τ -module
+V ⊗O V ∗ as a source (and this is nontrivial if V is nontrivial, and nonlinear if V is
+nonlinear).
+   Applied to a nilpotent block B with a source algebra of the form EndO (V )⊗O OP
+for some endopermutation OP -module V of rank strictly bigger than 1, the block
+C = OP (which is its own source algebra) and a Morita equivalence between B
+and C given by a bimodule with vertex ∆P and source V yields a nilpotent block
+B ⊗O OP of O(G × P ) with defect group P × P with the property that the class in
+Out(P × P ) of the automorphism of P × P exchanging the two copies of P is not
+in the image of T (B ⊗O OP ) under the map Φ from Theorem 1.1.
+
+Acknowledgement. The authors would like to thank the referees for their careful
+reading and helpful comments.
+
+                                         References
+      [1] K. Andersen, B. Oliver, and J. Ventura, Reduced, tame, and exotic fusion systems. Proc.
+          London Math. Soc. 105 (2012), 87–152.
+      [2] S. Bouc, Bisets as categories and tensor product of induced bimodules. Appl. Categor.
+          Struct. 18 (2010), 517–521.
+      [3] R. Brauer, Investigations on group characters. Ann. of Math. 42 (1941), 936–958.
+      [4] J. F. Carlson and R. Rouquier, Self-equivalences of stable module categories. Math. Z.
+          233 (2000), 165–178.
+      [5] D. B. Coleman, On the modular group ring of a p-group, Proc. AMS 15 (1964), 511–514.
+      [6] D. Craven, C. Eaton, R. Kessar and M. Linckelmann, The structure of blocks with a
+          Klein four defect group, Math. Z. 208 (2011), 441–476.
+      [7] C. W. Curtis and I. Reiner, Methods of Representation theory Vol. I, John Wiley and
+          Sons, New York, London, Sydney (1981).
+      [8] C. W. Curtis and I. Reiner, Methods of Representation theory Vol. II, John Wiley and
+          Sons, New York, London, Sydney (1987).
+      [9] E. C. Dade, Endo-permutation modules over p-groups, I, II, Ann. Math. 107 (1978),
+          459–494, 108 (1978), 317–346.
+     [10] D. Gorenstein, Finite Groups, Chelsea Publishing Company, New York (1980).
+     [11] M. Hertweck and W. Kimmerle, On principal blocks of p-constrained groups. Proc. Lon-
+          don Math. Soc. 84 (2002), 179–193.
+     [12] R. Kessar and M. Linckelmann, Descent of equivalences and character bijections. In:
+          Geometric and Topological Aspects of the Representation Theory of Finite Groups (J.
+          F. Carlson et al, eds.), Springer Proceedings in Mathematics and Statistics 242 (2018),
+          181 – 212.
+     [13] M. Linckelmann, Stable equivalences of Morita type for self-injective algebras and p-
+          groups, Math. Z. 223 (1996) 87–100.
+     [14] M. Linckelmann, The source algebras of blocks with a Klein four defect group, J. Algebra
+          167 (1994), 821–854.
+     [15] M. Linckelmann, The isomorphism problem for cyclic blocks and their source algebras,
+          Invent. Math. 125, (1996), 265–283.
+     [16] M. Linckelmann, On stable equivalences of Morita type, in: S. König and A. Zim-
+          mermann, Derived Equivalences for group Rings, Lecture Notes in Mathematics 1685,
+          Springer Verlag Berlin Heidelberg (1998), 221–232.
+     [17] M. Linckelmann, On splendid derived and stable equivalences between blocks of finite
+          groups, J. Algebra 242 (2001), 819–843.
+     [18] M. Linckelmann, Integrable derivations and stable equivalences of Morita type. Preprint
+          (2015), to appear in Proc. Edinburgh Math. Soc.
+                             PICARD GROUPS OF BLOCKS                                        27
+
+
+ [19] M. Linckelmann, On automorphisms and focal subgroups of blocks. Preprint (2016).
+ [20] M. Linckelmann, The block theory of finite groups I/II. London Math. Soc. Student Texts
+      91/92, Cambridge University Press (2018).
+ [21] M. Linckelmann and N. Mazza, The Dade group of a fusion system. J. Group Theory
+      12 (2009), 55–74.
+ [22] J. W. MacQuarrie, P. Symonds, and P. Zalesskii, Infinitely generated pseudocompact
+      modules for finite groups and Weiss’ Theorem. arXiv:1803.01740v1 (2018).
+ [23] H. Nagao and Y. Tsushima, Representations of Finite Groups, Academic Press, San
+      Diego (1989)
+ [24] L. Puig, Local fusion in block source algebras, J. Algebra 104 (1986), 358–369.
+ [25] L. Puig, Nilpotent blocks and their source algebras, Invent. Math. 93 (1988), 77–116.
+ [26] L. Puig, Pointed groups and construction of modules, J. Algebra 116 (1988), 7–129.
+ [27] L. Puig, Une correspondance de modules pour les blocs à groupes de défaut abéliens,
+      Geom. Dedicata 37 (1991), no. 1, 9–43.
+ [28] L. Puig, On the local structure of Morita and Rickard equivalences between Brauer blocks,
+      Progress in Math. 178, Birkhäuser Verlag, Basel (1999)
+ [29] K. W. Roggenkamp, Subgroup rigidity of p-adic group rings (Weiss arguments revisited).
+      J. London Math. Soc. 46 (1992), 432–448.
+ [30] K. W. Roggenkamp, L. L. Scott, Isomorphisms of p-adic group rings, Annals Math. 126
+      (1987), 593–647.
+ [31] L. L. Scott, unpublished notes (1990).
+ [32] J. P. Serre, Local fields. Graduate Texts in Mathematics 67 (1979).
+ [33] J. Thévenaz, Endo-permutation Modules, a Guided Tour, in: Group Representation
+      Theory (edts. M. Geck, D. Testerman, J. Thévenaz), EPFL Press, Lausanne (2007),
+      115–147.
+ [34] A. Weiss, Rigidity of p-adic p-torsion, Ann. Math. 127 (1988), 317–332.
+ [35] A. Weiss, Rigidity of π-adic p-torsion, Appendix to: S. K. Sehgal, Units in integral
+      group rings. Monographs and Surveys in Pure and Applied Mathematics 96, Longman
+      Scientific and technical, Harlow, Essex (1993), 309–329.
+ [36] Y. Zhou, Morita equivalences between blocks for p-solvable groups, Proc. Amer. Math.
+      Soc. 144 (2005), 3133–3142.
+
+Department of Mathematics, University of California, Santa Cruz, CA 95064, U.S.A.
+E-mail address: boltje@math.ucsc.edu
+
+Department of Mathematics, City, University of London EC1V 0HB, United Kingdom
+E-mail address: radha.kessar.1@city.ac.uk
+
+Department of Mathematics, City, University of London EC1V 0HB, United Kingdom
+E-mail address: markus.linckelmann.1@city.ac.uk
+

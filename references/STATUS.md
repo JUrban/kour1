@@ -927,3 +927,16 @@ proof was not read, and is an imported boundary. The extension and
 restricted-product deduction are written in `research/8.78-prior-result.md`.
 The locally soluble class is not claimed settled. Six files are
 hash-bound in `results/8.78-prior-audit.json`.
+
+
+## 9.55: p-adic group-ring rigidity
+
+Boltje--Kessar--Linckelmann, *On Picard groups of blocks of finite
+groups*, published2020, accepted manuscript dated8February2019,
+setup and Remark1.8 read and the latter visually checked. It gives
+the exact Z_p version of Weiss1988 Theorem2. Selected Section4
+passages were also consulted; no full-paper audit is claimed.
+Scott1990 *Defect groups and the isomorphism problem* was read in
+full. Original Weiss and Roggenkamp--Scott proofs were not read.
+The full deduction and exact scope are in `research/9.55-prior-result.md`;
+eight source/proof files are hash-bound in its result audit.
