@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-11T06:31:47.959206+00:00",
+  "observed_utc": "2026-09-11T06:51:32.737108+00:00",
   "warning": "Last observed state only; revalidate process command lines before relying on liveness.",
   "jobs": [
     {
@@ -124,9 +124,10 @@
     {
       "low": 52591,
       "high": 56092,
-      "status": "running",
+      "status": "completed",
       "output": "/project/results/19.20-order256-ids52591-56092.log",
-      "pid": 12174
+      "pid": 12174,
+      "returncode": 0
     }
   ]
 }

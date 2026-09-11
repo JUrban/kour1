@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "gap_fields": [
+    {
+      "q": 5,
+      "surface_points": 35,
+      "fixed_line_points": 5,
+      "orbits": 13,
+      "quotient_points": 25
+    },
+    {
+      "q": 13,
+      "surface_points": 91,
+      "fixed_line_points": 13,
+      "orbits": 33,
+      "quotient_points": 169
+    },
+    {
+      "q": 17,
+      "surface_points": 255,
+      "fixed_line_points": 17,
+      "orbits": 77,
+      "quotient_points": 289
+    },
+    {
+      "q": 29,
+      "surface_points": 1131,
+      "fixed_line_points": 29,
+      "orbits": 305,
+      "quotient_points": 841
+    },
+    {
+      "q": 37,
+      "surface_points": 1443,
+      "fixed_line_points": 37,
+      "orbits": 389,
+      "quotient_points": 1369
+    }
+  ],
+  "gap_totals": {
+    "surface_points": 2955,
+    "orbits": 817,
+    "fixed_points": 101,
+    "orbit_pair_controls": 11497
+  },
+  "python": {
+    "status": "PASS",
+    "localized_invariant_monomials": 1661,
+    "independent_normal_basis_images": 850,
+    "exact_ring_identities": 5,
+    "note": "Controls support the written all-degree proof, not a finite-degree substitute."
+  },
+  "sha256": {
+    "scripts/verify_14_72.py": "d32a73dd9d3e6c6e323b7f4a660b178eb3db1428c29d7eb16710838b03c32afd",
+    "scripts/verify_14_72.g": "267e4396a1ebb523dd5f6903accecf8d027665b833e583d2e2ab2ac66045fe52",
+    "results/14.72-gap-controls.log": "2c73f6f18ae9c22109d7aec3dabcb0ce773ed170fbf1e01c921d248324d88bca"
+  }
+}

@@ -483,3 +483,19 @@ https://doi.org/10.1112/jlms/jdr029 . Introduction, Theorem 1.1, Lemmas
 6.1--6.2 and the complete proof of Theorem 6.3 read. Earlier structural
 proofs and cited inputs remain unaudited. Version 3 corrects Section 4.
 PDF/text cached locally. Exclude this problem from new-result priority.
+
+## 14.72
+
+Printed page 80 visually checked: arbitrary finite cyclic group, with a
+regular fixed hypersurface specified as codimension one. Kiraly--Lutkebohmert,
+*Group actions of prime order on local normal rings*, Algebra and Number
+Theory 7 (2013), 63--74, https://doi.org/10.2140/ant.2013.7.63 : introduction
+and Theorem 2 statement read; full proof not audited. The main theorem is
+restricted to local actions of prime order. It is context only; the present
+order-four affine counterexample has a separate explicit invariant-ring
+proof. No composite-order equivalence from the source introduction is used.
+PDF/text and the Notebook image are cached. Limited English/Russian
+problem-number and topic searches found no exact prior negative answer;
+novelty remains unestablished. The new proof and audit state explicitly
+that the fixed line is a Cartier divisor, with no global principal-ideal
+claim or claim about the prime-order/local version of the question.

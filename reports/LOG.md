@@ -711,3 +711,28 @@ calculation was affected. The order-256 search has 55,320 counts, no equality
 hits, 357 reversals, two verified live workers and 14 completed ranges.
 All live-log checks pass. Sixteen complete candidates remain pending review.
 The goal remains active, with no pushes or external communications.
+
+## 2026-09-11T07:04:42Z — Candidate counterexample to 14.72
+
+Found an explicit smooth irreducible affine surface with cyclic action of
+order four over C. The three equations give two line-bundle charts over
+y^2=x^3-x. The full fixed scheme is a smooth affine line and an effective
+Cartier divisor. The global invariant ring is proved, in all degrees, to
+be C[a,v,d]/(v^2-(a-1)d), with an ordinary quadratic singularity at (1,0,0).
+Its preimage is a two-point orbit with a proper order-two stabilizer. This
+answers the printed global cyclic question negatively; it does not address
+a prime-order or local-action restriction not present in that statement.
+The codimension-one/hypersurface convention is explicit in proof and audit.
+
+Python verifies five exact identities, 1,661 invariant monomials and 850
+reverse normal-basis images. Independent GAP controls pass over five fields:
+2,955 smooth surface points, 817 orbits, 101 full fixed points and 11,497
+orbit-pair checks. Quotient gradients identify the single node in each
+field. No failed run occurred. The finite controls supplement the proof.
+Relevant 2013 prime-order literature is credited with exact reading scope;
+novelty and outside review remain pending. Complete candidate count is 17.
+
+The n=7 generator remains live at 13.15 million states; no n=7 proof is
+claimed. Order-256 search: 55,483 counts, zero equalities, 357 reversals,
+one verified live worker and 15 completed ranges. All log checks pass.
+No external communications or pushes; the 48-hour goal remains active.
