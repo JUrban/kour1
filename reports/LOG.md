@@ -1364,3 +1364,18 @@ candidates; outside review and further priority checking remain pending.
 At14:21 UTC all six20.100 n=7 workers were live, with7,010,000 nodes
 checked and10,343,156 KiB combined RSS. No shard had completed.
 The 48-hour goal remains active through2026-09-12 20:56:46 UTC.
+
+
+## 2026-09-11T14:37:19.259794+00:00 — Prior computable-coefficient obstruction for19.60
+
+A classical Stoltenberg-Hansen–Tucker field F has decidable equality
+and arithmetic but undecidable roots of unity. The computable
+Euclidean PID F[t] therefore admits no free-generation algorithm
+even for the one-matrix tuple diag(a,a^-1) in SL2. The effective
+reduction, ten-point scope audit, exact source dependencies and
+repair of an unneeded auxiliary source error are recorded. This
+settles the literal unrestricted-computable-coefficient reading,
+not the familiar integer or rational matrix-group problems. It is
+a prior consequence and leaves25 possible-new candidates unchanged.
+The12-page original CWI preprint was read in full; the final1980
+typeset version was not obtained. All work remains local.

@@ -833,3 +833,20 @@ and proof strategies are credited, with input/output restrictions
 distinguished. Bastos–Monetta's local subgroup result is prior.
 Li–Lei–Gao2022 was read in full and does not supply the exact
 restricted hypothesis. Broader priority checking remains pending.
+
+
+## 19.60 arbitrary computable coefficients
+
+Stoltenberg-Hansen–Tucker, *Computing roots of unity in fields*,
+CWI preprint IW106/79 (1979), https://ir.cwi.nl/pub/9392/9392D.pdf :
+all twelve numbered pages read, including the computable-field
+definition, all preliminary lemmas, construction and Section3 proofs.
+The undecidability lower reduction is sufficient for the diagonal
+matrix consequence. The auxiliary Lemma1.4 bound on page5 is wrong
+as printed; that line was visually checked and a valid cyclotomic
+replacement is supplied, although not needed for the lower reduction.
+The 1980 publication DOI10.1112/blms/12.6.463 is verified; its final
+typeset text was not obtained. The 1999 handbook statement and
+corrected general bound were only seen in an indexed publisher
+excerpt. No claim about Z or Q is made. Seven source/proof files
+are hash-bound in `results/19.60-coefficient-audit.json`.

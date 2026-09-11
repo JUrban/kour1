@@ -1,0 +1,23 @@
+{
+  "status": "PASS_INTERNAL_AUDIT",
+  "observed_utc": "2026-09-11T14:37:19.259794+00:00",
+  "problem": "19.60",
+  "conclusion": "Prior negative consequence for arbitrary computable coefficient PIDs; no result for Z or Q",
+  "domain": "A fixed computable Euclidean domain F[t] over a computable characteristic-zero field with undecidable roots of unity",
+  "dimension": 2,
+  "generators": 1,
+  "matrices": "diag(a,a^-1)",
+  "logical_checks": 10,
+  "computational_tests": "None; this is an effective symbolic reduction from a classical undecidability theorem",
+  "source_scope": "All twelve numbered CWI preprint pages read; final 1980 typeset article not obtained. Auxiliary erroneous degree bound excluded from needed dependencies and repaired in note.",
+  "new_candidate_increment": 0,
+  "sha256": {
+    "research/19.60-coefficient-obstruction.md": "34d75c8500a863f083f66b505cb47da9683c028261ec411bf903e4b38c1fc543",
+    "research/19.60-coefficient-review.md": "4ce8235ac71f322281ac30e4a1f33b782e03782432fe7d25e27808be71e71b45",
+    "references/cache/stoltenberg-hansen-tucker-roots-1979.pdf": "987733d372a84dfdac6e8cfa73f48ddc1032a7630aacbef086adc7a5f48448d6",
+    "references/cache/stoltenberg-hansen-tucker-roots-1979.txt": "e7f656b977277617e49888f09744525bcb6a97a1d9366ffeae54ada7964c6866",
+    "references/cache/stoltenberg-hansen-tucker-page5.png": "ccbd17641b411851d0bde183217556e6ef23d240ea78a2f9af8072fac5055da2",
+    "references/cache/notebook-page139-1956.png": "ed40cd0f046480e979821fb5ab84772f4bd2b867da6463f2808b4108513005eb",
+    "docs/21tkt.pdf": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911"
+  }
+}
