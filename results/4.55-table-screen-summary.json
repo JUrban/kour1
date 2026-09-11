@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE_EXPLORATORY_RANGES",
+  "gap_version": "4.16.1",
+  "tables": 2750,
+  "available_cases": 7573,
+  "rationality_hits": 840,
+  "parity_hits": 265,
+  "ranges": [
+    {
+      "range": "1..2600",
+      "tables": 2600,
+      "available_cases": 7051,
+      "rationality_hits": 796,
+      "parity_hits": 245,
+      "checked_text_sha256": "795ee917e991d6d13cb9258f6ae5ea4bbce4071e1596459425eaeba87c478803"
+    },
+    {
+      "range": "2601..2750",
+      "tables": 150,
+      "available_cases": 522,
+      "rationality_hits": 44,
+      "parity_hits": 20,
+      "checked_text_sha256": "9cec780c046216d12bcde96c030765e1f88c6b8aa212b834a7399ef94955d2b2"
+    }
+  ],
+  "logs": {
+    "results/4.55-table-screen-stopped.log.gz": "30a2cd5d4bdbdcea2ef005b326715df545ebb4b2f65ebe1a9ad7a76b577e56a8",
+    "results/4.55-table-screen-tail.log": "0ada2f609212189d007761597cf98563493684e7f372d823d7e207611e0d2525"
+  },
+  "screen_sha256": "f429edab54526c43e4d1948f7cf8bf0b4f50dd3f71a3f4f681def88e5337e921",
+  "exclusion": "Discard the aborted first run after its table-2600 checkpoint; the corrected run independently covers tables 2601..2750.",
+  "limitation": "Hits are exploratory constraints, not new examples or proofs. Only the separate 3.A7 candidate has undergone module reconstruction and a proof of incompatible indecomposable refinements."
+}

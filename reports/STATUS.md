@@ -1,16 +1,28 @@
 # Current status
 
-Updated: 2026-09-11T08:48:07.659647+00:00.
+Updated: 2026-09-11T09:15:45.657904+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
-- Complete candidate resolutions: **20**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups), **14.72** (a smooth affine surface with a smooth fixed Cartier divisor but singular cyclic quotient), **21.40** (a normal nilpotent subgroup of finite index in every rational linear group with finitely many automorphism orbits), **21.60** (an order-twelve counterexample to the semiperfectness criterion), and **4.55** (non-unique indecomposable projective decompositions over Z_(5)[3.A7]). All await outside review and further novelty checks.
+- Complete candidate resolutions: **21**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), **20.90** (a two-generator infinite profinite CA-group mapping onto A5), **11.116** (finite subgroup-lattice dimension for the stated Chernikov groups), **14.72** (a smooth affine surface with a smooth fixed Cartier divisor but singular cyclic quotient), **21.40** (a normal nilpotent subgroup of finite index in every rational linear group with finitely many automorphism orbits), **21.60** (an order-twelve counterexample to the semiperfectness criterion), **4.55** (non-unique indecomposable projective decompositions over Z_(5)[3.A7]), and **21.107** (a countable resolvable group without an expansive sequence). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
 - The 21.26 search through order2000 and the 19.20 search through order256 are complete. Exact ID coverage and all completion records pass.
 - **19.20 complete:** all62,588 nonabelian groups through order256, zero equality hits and411 reverse inequalities. The order256 extension covers56,070 nonabelian groups and has357 reversals; the22 omitted abelian IDs were independently reconstructed and matched exactly. The initial493 abelian equality controls remain retained. The arbitrary-group equality question is unresolved.
-- **19.20 extension active:** orders257–511 have29,700 library groups. At08:46 UTC, eight verified GAP workers have completed292 of356 jobs, with13,922 nonabelian counts,505 abelian skips, zero equalities and four reversals. All log checks pass. The run remains incomplete.
+- **19.20 extension active:** orders257–511 have29,700 library groups. At09:14 UTC, eight verified GAP workers have completed310 of356 jobs, with18,939 nonabelian counts,507 abelian skips, zero equalities and four reversals. All log checks pass. The run remains incomplete.
+- **20.100 n=7 active:** the saved 26,317,076-node prefix has loaded and generation has resumed. At09:14 UTC the live generator has reached27,300,000 visited states; no n=7 proof is claimed.
+- **4.55 exploratory screen complete:** all2,750 installed table names and7,573 available modular cases are covered by two disjoint audited ranges. Flags remain exploratory; the separate3.A7 proof supplies the candidate resolution.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
+
+**21.107:** The countable group of finite subsets of N under symmetric
+difference, with open subgroups consisting of the finite subsets of a
+free ultrafilter member, has an explicit partition into countably many
+dense sets. For any disjoint sequence of finite subsets of the group,
+the finite-fiber maximum-support map gives an open subgroup missing
+infinitely many terms. Thus no expansive sequence exists. The topology
+is standard and credited; the proof uses only ZFC and also works for
+the direct sum of copies of C3. See `research/21.107-proof.md` and its
+internal audit. Novelty and outside review remain pending.
 
 **4.55:** For G=3.A7 and p=5, the rationality condition on four modular projective multiplicities is a+d=b+c. Four distinct rays give projectives after multiplication by168 and rational descent; equal modular reductions give an isomorphism whose two sides have incompatible indecomposable refinements. The common rank is55,440. GAP independently reconstructs all12 faithful Brauer characters and14 decomposition rows from actual permutation modules; Python enumerates the7560-element matrix group and checks absolute irreducibility. See `research/4.55-proof.md` and `research/4.55-review.md`; novelty and outside review remain pending.
 
@@ -203,7 +215,7 @@ as a substantive new resolution of the intended problem.
 ## Next work
 
 1. Revalidate running jobs and certify any hits.
-2. Continue novelty and mathematical audits of all fifteen candidate resolutions.
+2. Continue novelty and mathematical audits of all twenty-one candidate resolutions.
 3. Investigate 19.20 equality beyond the completed range, using the verified reverse inequality as a structural lead.
 4. Expand beyond the initial involution graph range and continue surveying older problems.
 

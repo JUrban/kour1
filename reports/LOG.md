@@ -884,3 +884,38 @@ All eight live workers and all logs pass the provenance checks. The
 4.55 table screen is exploratory and still incomplete; the proved
 example was audited separately. No pushes or outside communications.
 About36hours10minutes remain in the active48-hour goal.
+
+## 2026-09-11T09:15:45.657904+00:00 — Countable topology counterexample and completed table screen
+
+Problem 21.107 now has a complete candidate negative proof and internal
+audit. A free ultrafilter supplies the standard coordinate-subgroup
+topology on a countable Boolean group. Support cardinality gives an
+explicit countable dense partition; the finite-fiber maximum-support
+map and one ultrafilter choice rule out every expansive sequence. The
+argument also works in exponent three. No selective ultrafilter, CH,
+or numerical verification is used. Printed page 183 was visually
+checked, and the standard Mathias topology was identified in a primary
+publisher reprint. Novelty remains unestablished. Candidate count: 21;
+externally reviewed new solutions: 0.
+
+The 4.55 screen stopped at the trivial table because FactorsInt(1)
+returns [1]. The error was corrected, its completed first 2,600-table
+range preserved, and the final 150 tables independently rerun. The
+aggregate covers 2,750 table names and 7,573 available modular cases,
+with 840 rationality flags and 265 parity flags. These are exploratory
+constraints, not new counterexamples. Both GAP processes exited; logs,
+hashes, and a reproducible aggregation checker are retained.
+
+The n=7 search for 20.100 finished loading its 26,317,076-node
+incomplete prefix after 1,562 seconds and resumed generation. At09:14
+UTC it has reached27.3million visited states, using about17GiB. The
+19.20 extension has completed310 of356 jobs and counted18,939
+nonabelian groups, with zero equality hits and four reversals. All
+process/log checks pass; both searches remain incomplete. The main
+remaining running workload uses nine CPUs, within the resource limits.
+
+A relevant August prior claim for21.123 is documented with its
+formulation caveats and unaudited main proof. Pro-p identity and
+strongly regular graph scope corrections are saved in the triage log.
+All changes remain local; no pushes or external communications. The
+48-hour goal remains active until2026-09-12 20:56:46 UTC.

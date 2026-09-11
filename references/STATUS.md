@@ -499,3 +499,22 @@ problem-number and topic searches found no exact prior negative answer;
 novelty remains unestablished. The new proof and audit state explicitly
 that the fixed line is a Cartier divisor, with no global principal-ideal
 claim or claim about the prime-order/local version of the question.
+
+## 21.107
+
+Notebook page183 visually checked. The standard linear Boolean/Mathias
+topology was verified in Sipacheva, Free Boolean Topological Groups,
+https://doi.org/10.3390/axioms4040492, using the publisher collected-volume
+reprint, printed pages85–88. Its PDF/text are cached. The full survey
+and bibliography remain unaudited. The present dense partition and
+maximum-support obstruction are proved directly; limited exact searches
+found no matching prior answer, which does not establish novelty. See
+research/21.107-review.md for reading scope.
+
+## 21.123
+
+The original arXiv:2410.20440v2 definitions and the beginning of Fraga’s
+August2026 preprint were read. Its claim addresses a corrected
+prescription. The main closure proof and the final published version
+of the original construction remain unaudited. See
+research/21.123-prior-claim.md for exact sources and caveats.

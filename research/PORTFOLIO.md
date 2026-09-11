@@ -1,9 +1,11 @@
 # Candidate portfolio
 
-Updated 2026-09-11T08:48:07.659647+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T09:15:45.657904+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 21.107 | A free ultrafilter gives an open subgroup missing infinitely many blocks of any proposed expansive sequence. | Twenty-first complete candidate: a countable Hausdorff Boolean group has an explicit countably infinite dense partition and no expansive sequence; an exponent-three variant also works. Standard topology credited, self-contained proof and logical audit complete; novelty and outside review pending. |
+| 21.123 | Compare the exact construction with an August 2026 protected-division preprint. | Relevant prior affirmative claim for an explicitly corrected prescription; original preprint definitions read, final journal text and main BCH closure proof unaudited. No new result counted. |
 | 4.55 | Rational descent of projectives on four distinct rays of a+d=b+c. | Twentieth complete candidate: Z_(5)[3.A7] has a rank-55,440 projective with incompatible indecomposable refinements. GAP independently reconstructs all relevant modular data from a permutation module; Python field/matrix controls pass. Schur indices are allowed; novelty and outside review pending. |
 | 21.60 | All modular simples lift, but a quotient quaternion order has nonliftable idempotents. | Nineteenth complete candidate: SmallGroup(12,1) at p=2 satisfies the positive Grothendieck condition but Z_(2)G is not semiperfect. Exact Python/GAP controls pass; the source Ext-lifting gap is audited. Novelty and outside review pending. |
 | 21.40 | Deep matrix roots force root-of-unity eigenvalues; finite trace tuples give a nilpotent kernel. | Eighteenth complete candidate: every rational linear finite-automorphism-orbit group has a normal torsion-free nilpotent subgroup of finite index, with explicit bounds. Exact Python/GAP controls pass; novelty and outside review pending. |
