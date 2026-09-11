@@ -1,0 +1,502 @@
+                                                              Finite groups with F-subnormal
+                                                              normalizers of Sylow subgroups
+                                                              A. F. Vasil’ev, T. I. Vasil’eva, A. G. Melchenko
+arXiv:1904.06986v1 [math.GR] 15 Apr 2019
+
+
+
+
+                                                                                      Abstract
+                                                       Let π be a set of primes and F be a formation. In this article a properties of the
+                                                   class wπ∗ F of all groups G, such that π(G) ⊆ π(F) and the normalizers of all Sylow
+                                                   p-subgroups of G are F-subnormal in G for every p ∈ π ∩ π(G) are investigated. It
+                                                   is established that wπ∗ F is a formation. Some hereditary saturated formations F for
+                                                   which wπ∗ F = F are founded.
+                                                   Keywords: finite group, Sylow subgroup, normalizer of Sylow subgroup, forma-
+                                                   tion, hereditary saturated formation, F-subnormal subgroup, K-F-subnormal sub-
+                                                   group, strongly K-F-subnormal subgroup.
+                                                   MSC2010 20D20, 20D35, 20F16
+
+                                           Introduction
+                                                 We consider only ﬁnite groups. It is well known what role is played the properties of
+                                           normalizers of the primary subgroups (local subgroups) in classiﬁcation of ﬁnite simple
+                                           non-abelian groups. In recent years, local subgroups are actively used in the study of
+                                           non-simple, in particular, soluble groups. In 1986 it was established [1] that a group
+                                           is nilpotent if the normalizers of its Sylow subgroups (brieﬂy, Sylow normalizers) are
+                                           nilpotent. Groups with supersoluble Sylow normalizers were studied in [2-4]. A series of
+                                           papers [5-9] is dedicated to the study of groups whose all the Sylow normalizers belong
+                                           to a saturated formation F.
+                                                 In this paper, we are interested in the following question. How do the properties
+                                           of embedding of Sylow normalizers into a group inﬂuence on the structure of the whole
+                                           group?
+                                                 We note the following results. Group G is nilpotent if and only if its any Sylow
+                                           normalizer coincide with G. By the well-known Glauberman’s theorem [10], if all Sylow
+                                           subgroups of a group are self-normalizing, then the group is a p-group for some prime p.
+                                                   Let H be a subgroup of a group G. Consider a chain of subgroups
+                                                                    H = H0 ≤ H1 ≤ · · · ≤ Hn−1 ≤ Hn = G.                                    (1)
+                                                According to [11], H is called P-subnormal in G if either H = G or there exists a
+                                           chain (1) such that |Hi : Hi−1 | is a prime for any i = 1, . . . , n;
+                                                According to [12], H is called K-P-subnormal in G if there exists a chain (1) such
+                                           that either Hi−1 E Hi , or |Hi : Hi−1 | is a prime for any i = 1, . . . , n.
+                                                In [13] V.S. Monakhov and V.N. Kniahina established that a group G is supersoluble
+                                           if and only if all its Sylow normalizers are P-subnormal in G.
+                                                A subgroup H is called submodular in G [14], if there exists a chain of subgroups (1)
+                                           such that Hi−1 is a modular subgroup in Hi for i = 1, . . . , s. Here the modular subgroup
+in G is a modular element in the lattice of all subgroups of G [15]. The class sU of all
+strongly supersoluble groups was studied in [16] (sU is the class of supersoluble groups,
+in which all Sylow subgroups are submodular). By [17, Theorem 3.2], if the normalizers
+of all Sylow subgroups of a group G are submodular, then G ∈ sU.
+      The concept of subnormality was generalized by T.O. Hawkes [18], L.A. Shemetkov
+[19] as follows.
+      Let F be a non-empty formation. A subgroup H is called F-subnormal in G (which
+is denoted by H F-sn G), if either H = G, or there exists a maximal chain (1) such that
+HiF ≤ Hi−1 for i = 1, . . . , n.
+      In the case when F coincides with the class N of all nilpotent groups, every N-
+subnormal subgroup is subnormal, the converse is not true in general. However, in soluble
+groups these concepts are equivalent.
+      Another generalization of subnormal subgroups was proposed by O. Kegel [21]. We
+give it according to [20, p. 236].
+      A subgroup H is called K-F-subnormal in G (which is denoted by H K-F-sn G) if
+there is a chain of subgroups (1) such either Hi−1 E Hi , or HiF ≤ Hi−1 for i = 1, . . . , n.
+      Note that a subnormal subgroup is K-F-subnormal in any group, the converse is not
+always true. For the case F = N the concepts of subnormal and K-N-subnormal subgroups
+are equivalent. If F coincides with the class U of all supersoluble groups, then the concept
+of P-subnormal subgroup is equivalent to the concept of U-subnormal and K-U-subnormal
+subgroup in the class of all soluble groups. In an arbitrary group, every U-subnormal
+(K-U-subnormal) subgroup is P-subnormal (K-P-subnormal subgroup, respectively), but
+the converse fails in general.
+      The monograph [21] reﬂects the results of many papers in which the properties of
+F-subnormal, K-F-subnormal subgroups and their applications were studied.
+      In [22] consideration of the following general problem was started. Let F be a non-
+empty formation. How F-subnormal (K-F-subnormal) Sylow subgroups influence on the
+structure of the whole group. The classes Wπ F and Wπ F were investigated in [23]; where
+Wπ F (Wπ F) is the class of all groups G, for which 1 and all Sylow p-subgroups are F-
+subnormal (respectively K-F-subnormal) in G for every p ∈ π ∩ π(G). The classes WF
+and WF (π coincides with the set of all primes) were studied in [24-27]. An interesting
+generalization of classes Wπ F and Wπ F was considered in [28].
+     Definition 1 [29]. Let F be a non-empty formation. A subgroup H of a group G is
+called strongly K-F-subnormal in G, if NG (H) is a F-subnormal subgroup in G.
+     Note that a subgroup is normal in its normalizer. Therefore every strongly K-F-
+subnormal subgroup is K-F-subnormal in any group. The converse is not true. Let S be
+a symmetric group of degree 3. By [29, theorem B. 10.9] S has an irreducible and faithful
+S-module U over the ﬁeld F7 of 7 elements. Consider the semidirect product G = [U]S.
+The group G is not supersoluble, because S is non-abelian. Since G/U is supersoluble,
+we see that H = UQ is K-U-subnormal subgroup of G, where Q is a Sylow 3-subgroup of
+G that is contained in S. Since H is supersoluble, we deduced that Q is K-U-subnormal
+in G. Note that the subgroup Q is not strongly K-U-subnormal in G. This follows from
+the fact that NG (Q) = S, but S is not normal and not U-subnormal in G.
+     Definition 2 [29]. Given a set of primes π and a non-empty formation F. Introduce
+the following class of groups: wπ∗ F is the class of all groups G, for which π(G) ⊆ π(F)
+and all its Sylow q-subgroups are strongly F-subnormal in G for every q ∈ π ∩ π(G).
+
+                                             2
+     When π = P is the set of all primes, we denote wP∗ F = w∗ F. If π(G) ⊆ π(F) and
+π ∩ π(G) = ∅, then NG (1) = G is F-subnormal in G and G ∈ wπ∗ F.
+     Problem. Let F be a hereditary saturated formation and π be some set of primes.
+     (1) Investigate how the properties of the class wπ∗ F depend on the corresponding prop-
+erties of F. In particular, find conditions under which the class wπ∗ F is also a saturated
+formation;
+     (2) Describe F for which wπ∗ F = F.
+     This paper is devoted studying for some cases of this problem.
+
+1. Preliminary results
+     We use standard notation and deﬁnitions. The appropriate information on groups
+theory and formations theory can be found in monographs [19], [20] and [30]. We recall
+some concepts signiﬁcant in the paper.
+     By P we denote the set of all primes. If π ⊆ P, then π ′ = P \ π. Let G be a
+group and p be a prime. We denote by |G| the order of G; by π(G), the set of all prime
+divisors of |G|; by Op (G), the largest normal p-subgroup of G; by Oπ (G), the largest
+normal π-subgroup of G; by Sylp (G), the set of all Sylow p-subgroups of G; by Syl(G),
+the set of all Sylow subgroups of G; by F (G), the Fitting subgroup of G, which is the
+largest normal nilpotent subgroup of G; by Fp (G), the p-nilpotent radical of G, which is
+the largest normal p-nilpotent subgroup of G; by Zp , the cyclic group of order p; by 1,
+the identity subgroup (group).
+     By lp (G) we denote the p-length of the p-soluble group G; an arithmetic length of
+the soluble group G is al(G) = Max lp (G), where p runs through all primes p ∈ π(G);
+La (n) is the class of all soluble groups G with al(G) ≤ n; La (1) is the class of all soluble
+groups G with al(G) ≤ 1.
+     In the next lemma, the some familiar properties of Sylow subgroups are collected.
+    Lemma 1.1. Let G be a group and p ∈ P. Then the following statements are true.
+    (1) If P ∈ Sylp (G) and N E G, then P ∩ N ∈ Sylp (N) and P N/N ∈ Sylp (G/N),
+moreover NG/N (P N/N) = NG (P )N/N.
+    (2) If H/N ∈ Sylp (G/N) and N E G, then H/N = P N/N for some P ∈ Sylp (G).
+    (3) If P ∈ Syl(G) and Ni E G, i = 1, 2, then
+             P ∩ N1 N2 = (P ∩ N1 )(P ∩ N2 ) and P N1 ∩ P N2 = P (N1 ∩ N2 ).
+    (4) If π(G) = {p1 , . . . , pr } and Pi ∈ Sylpi (G) for i = 1, . . . , r, then G = hP1 , . . . , Pr i.
+     Lemma 1.2 [30, lemma A.1.2] Let U, V and W be subgroups of G. Then the
+following statements are equivalent:
+     (1) U ∩ V W = (U ∩ V )(U ∩ W );
+     (2) UV ∩ UW = U(V ∩ W ).
+     Proposition 1.3. Let G be a group, P ∈ Syl(G) and Ni E G, i = 1, 2. Then
+                 NG (P ) ∩ N1 N2 = (NG (P ) ∩ N1 )(NG (P ) ∩ N2 ) and
+                     NG (P )N1 ∩ NG (P )N2 = NG (P )(N1 ∩ N2 ).
+     Proof. We proceed by induction on |G|. Let N1 and N2 be normal subgroups of
+G and P ∈ Syl(G). If N1 ∩ N2 6= 1, then there exist a minimal normal subgroup N of G,
+contained in N1 ∩ N2 . By induction
+   NG/N (P N/N) ∩ N1 /N · N2 /N = (NG/N (P N/N) ∩ N1 /N)(NG/N (P N/N) ∩ N2 /N).
+
+                                                    3
+     By Lemma 1.1(1) NG/N (P N/N) = NG (P )N/N. By the Dedekind identity, we have
+NG (P )N/N ∩ N1 N2 /N = (NG (P ) ∩ N1 N2 )N/N and NG (P )N/N ∩ Ni /N = (NG (P ) ∩
+∩ Ni )N/N for i = 1, 2.
+     Then NG (P ) ∩ N1 N2 = NG (P ) ∩ (NG (P )N ∩ N1 N2 ) = NG (P ) ∩ (NG (P ) ∩ N1 )N ·
+·(NG (P )∩N2 )N = (NG (P )∩N1 )(NG (P )∩N2 )(NG (P )∩N) = (NG (P )∩N1 )(NG (P )∩N2 ).
+     Let N1 ∩ N2 = 1. Let T = NG (P )N1 ∩ NG (P )N2 . Since P Ni E NG (P )Ni , i = 1, 2, we
+have P N1 ∩ P N2 E T . From N1 ∩ N2 = 1 and lemma 1.1(3) follows that P N1 ∩ P N2 =
+= P (N1 ∩ N2 ) = P . Therefore P E T and T = NG (P ). Then NG (P )(N1 ∩ N2 ) = NG (P ) =
+= NG (P )N1 ∩ NG (P )N2. By lemma 1.2 NG (P ) ∩ N1 N2 = (NG (P ) ∩ N1 )(NG (P ) ∩ N2 ).
+
+     Lemma 1.4. [19, lemma 3.9]. If H/K is a chief factor of a group G and p ∈
+∈ π(H/K), then G/CG (H/K) does not contain nonidentity normal p-subgroups, and
+Fp (G) ≤ CG (H/K).
+     Let F be a class of groups. By π(F) we denote the set of all prime divisors of orders of
+groups belonging to F; Fπ is the class of all π-groups belonging to F; Fp = Fπ for π = {p}.
+     We will use the following notation: G is the class of all groups, S is the class of all
+soluble groups, N is the class of all nilpotent groups, N2 is the class of all metanilpotent
+groups, NA is the class of all groups G with the nilpotent commutator subgroup G′ .
+     A minimal non-F-group is a group G such that G 6∈ F, and any proper subgroup of
+G belongs to F. A minimal non-N-group is called a Schmidt group.
+     A class of groups F is called a formation, if 1) F is a homomorph, i.e., from G ∈ F
+and N E G it follows that G/N ∈ F and 2) from Ni E G and G/Ni ∈ F (i = 1, 2) it
+ensues that G/N1 ∩ N2 ∈ F.
+     A formation F is called saturated, if from G/Φ(G) ∈ F it follows that G ∈ F. A
+formation F is called hereditary if, together with each group, F contains all its subgroups.
+By symbol GF denotes the F-residual of G; i.e., the least normal subgroup of G for which
+G/GF ∈ F.
+     A function f : P → {formations} is called a local screen. By LF (f ) we denote
+the class of all groups G with G/CG (H/K) ∈ f (p) for each chief factor H/K and each
+p ∈ π(H/K). A formation F is called local, if there exists a local screen f with F = LF (f ).
+     A screen f of a formation F is called inner if f (p) ⊆ F for each prime p. An inner
+screen f of F is called the maximal inner if, for its every inner screen h, we have h(p) ⊆
+⊆ f (p) for every prime p.
+    Lemma 1.5 [19, lemma 4.5]. Let F = LF (f ). A group G belongs to F if and only if
+G/Fp (G) ∈ f (p) for each p ∈ π(G).
+     We give some knows properties of F-subnormal and K-F-subnormal subgroups.
+    Lemma 1.6. Let F be a non-empty formation, H and K are subgroups of a group
+G, and N E G.
+    (1) If H F-sn G (H K-F-sn G) then HN/N F-sn G/N (HN/N K-F-sn G/N).
+    (2) If N ≤ H and H/N F-sn G/N (H/N K-F-sn G/N) then H F-sn G (H K-F-sn
+G).
+    (3) If H F-sn G (H K-F-sn G) then HN F-sn G (HN K-F-sn G).
+    (4) If H F-sn K (H K-F-sn K) and K F-sn G (K K-F-sn G) then H F-sn G (H
+K-F-sn G).
+
+                                             4
+     (5) If all composition factors of G belong to F then every subnormal subgroup of G
+is F-subnormal.
+     (6) Let p be a prime and let G be a p-group. If Zp ∈ F then all subgroups of G are
+F-subnormal.
+    Lemma 1.7. Let F be a non-empty hereditary formation, H ≤ G and M ≤ G.
+    (1) If H F-sn G (H K-F-sn G) then H ∩ M F-sn M (H ∩ M K-F-sn M).
+    (2) If H F-sn G and M F-sn G (H K-F-sn G and M K-F-sn G) then H ∩ M F-sn
+G (H ∩ M K-F-sn G).
+    (3) If GF ≤ H then H F-sn G (H K-F-sn G).
+    (4) If H F-sn G (H K-F-sn G) then H x F-sn G (H x K-F-sn G) for any x ∈ G.
+
+2. Properties of the Class wπ∗ F
+     Recall that the class of groups wπ∗ F is deﬁned as follows:
+     wπ∗ F = (G | π(G) ⊆ π(F) and every Sylow q-subgroup of G is strongly F-subnormal
+in G, where q ∈ π ∩ π(G)).
+     The following example shows that wπ∗ F 6= F in the general case.
+     Example 2.1. Let F = N3 be the formation of all soluble groups whose nilpotent
+length is ≤ 3. Take the symmetric group S4 = M of degree 4. By [30, theorem B.
+10.9] there exists an irreducible and faithful M-module U over the ﬁeld F3 of 3 elements.
+Consider the semidirect product G = [U]M. Note that the nilpotent length of G is 4 and
+π(G) = {2, 3}. Since S is a minimal non-N2 -subgroup, we deduced that G is minimal non-
+N3 -group. It is easy to see that the normalizers of its Sylow subgroups are F-subnormal
+subgroups in G, but G does not belong to F.
+     Definition 2.2. A class of groups F is called SH -closed, if from G ∈ F it follows
+that every Hall subgroup of G belongs to F.
+    Proposition 2.3. Let F be a non-empty formation and π ⊆ P.
+    (1) If π1 is a set of primes and π ⊆ π1 then wπ∗ 1 F ⊆ wπ∗ F.
+    (2) Nπ∩π(F) ⊆ wπ∗ F.
+    (3) wπ∗ F = wπ∩π(F)
+                  ∗
+                        F.
+          ∗
+    (4) wπ F is a homomorph.
+    (5) If a formation F1 ⊆ F then wπ∗ F1 ⊆ wπ∗ F.
+     Proof. (1): Let G ∈ wπ∗ 1 F, q ∈ π ∩ π(G) and Q be any Sylow q-subgroup of G.
+Since q ∈ π1 ∩ π(G), we have NG (Q) F-sn G. Hence wπ∗ 1 F ⊆ wπ∗ F.
+     (2): Let G ∈ Nπ∩π(F) . Then π(G) ⊆ (π ∩ π(F)) ⊆ π(F). Since NG (P ) = G for every
+P ∈ Syl(G), by deﬁnition 1 it follows that G ∈ wπ∗ F.
+     (3): From (1) it follows that wπ∗ F ⊆ w∗ π∩π(F) F.
+     Let G ∈ w∗ π∩π(F) F. Since π(G) ⊆ π(F), we have π ∩ π(F) ∩ π(G) = π ∩ π(G).
+Consequently, if q ∈ π ∩ π(G), then in G the normalizer of every Sylow q-subgroup is
+F-subnormal. So G ∈ wπ∗ F and wπ∗ F = w∗ π∩π(F) F.
+     (4): To prove that wπ∗ F is a homomorph, let G ∈ wπ∗ F, N E G and p ∈ π ∩ π(G/N).
+Consider H/N ∈ Sylp (G/N). By Lemma 1.1(2) H/N = P N/N for some Sylow p-subgroup
+P of G. From G ∈ wπ∗ F it follows that NG (P ) F-sn G. Then by Lemma 1.1(1) and Lemma
+1.6(1) NG/N (H/N) = NG (P )N/N F-sn G/N. From here and π(G/N) ⊆ π(G) ⊆ π(F) we
+have that G/N ∈ wπ∗ F. So wπ∗ F is a homomorph.
+
+                                           5
+     (5): Let G ∈ wπ∗ F1 . Then π(G) ⊆ π(F1 ) ⊆ π(F). From q ∈ π ∩ π(G) it follows that
+every Q ∈ Sylq (G) is strongly K-F1-subnormal in G. If NG (Q) = G, then NG (Q) F-sn G.
+Suppose that a maximal chain of subgroups NG (Q) = H0 < H1 < · · · < Hn = G exists
+and HiF1 ≤ Hi−1 for i = 1, . . . , n. From Hi /HiF1 ∈ F1 ⊆ F we have HiF ⊆ HiF1 ≤ Hi−1 .
+Hence NG (Q) F-sn G. So wπ∗ F1 ⊆ wπ∗ F. 
+     Theorem 2.4. Let F be a non-empty hereditary formation and π ⊆ P. Then
+     (1) F ⊆ w∗ F ⊆ wπ∗ F,
+     (2) wπ∗ F is an SH -closed formation,
+     (3) wπ∗ F = wπ∗ (wπ∗ F).
+     Proof. (1): From Lemma 1.7(3) it follows that F ⊆ w∗ F. From π ⊆ P and
+Proposition 2.3(1) we conclude that w∗ F ⊆ wπ∗ F.
+     (2): To prove SH -closure of wπ∗ F, let G ∈ wπ∗ F and let H be a Hall subgroup of G.
+Then π(H) ⊆ π(G) ⊆ π(F). Let q ∈ π ∩ π(H) and S be a Sylow q-subgroup of H. Since
+S ∈ Sylq (G), we have NG (S) F-sn G. By Lemma 1.7(1) NH (S) = (NG (S) ∩ H) F-sn H.
+Therefore H ∈ wπ∗ F.
+     By Proposition 2.3(4) wπ∗ F is a homomorph.
+     Let us proved that wπ∗ F is closed under subdirect products. Suppose that is false, and
+let G be a counterexample with |G| as small as possible. Then there exists a subgroup
+Ni E G such that G/Ni ∈ wπ∗ F, i = 1, 2, but G/N1 ∩ N2 ∈       / wπ∗ F. We note that from
+π(G/Ni ) ⊆ π(F), i = 1, 2, it follows that π(G/N1 ∩ N2 ) ⊆ π(F). By the choice of G
+we can assume that N1 ∩ N2 = 1. Let p ∈ π ∩ π(G) and R ∈ Sylp (G). Since RNi /Ni
+is a Sylow p-subgroup of G/Ni and G/Ni ∈ wπ∗ F, we have NG/Ni (RNi /Ni ) F-sn G/Ni ,
+i = 1, 2. By Lemmas 1.1(1) and 1.6(2) NG (R)Ni F-sn G, i = 1, 2. From Lemma 1.7(2) it
+follows NG (R)N1 ∩ NG (R)N2 F-sn G. From Proposition 1.3 we conclude that NG (R)N1 ∩
+∩ NG (R)N2 = NG (R)(N1 ∩ N2 ) = NG (R) F-sn G. We have the contradiction to the choice
+of G. So wπ∗ F is closed under subdirect products.
+     (3): Denote X = wπ∗ F. Let G ∈ X. Then π(G) ⊆ π(F). By (1) we have that F ⊆ X.
+Therefore π(G) ⊆ π(X). Let q ∈ π ∩ π(G) and Q ∈ Sylq (G). From G ∈ X it follows that
+NG (Q) F-sn G. Assume that NG (Q) 6= G. Then there is a maximal chain of subgroups
+NG (Q) = H0 < H1 < · · · < Hn = G such that HiF ≤ Hi−1 for i = 1, . . . , n. By (2) X is a
+formation. Therefore from Hi /HiF ∈ F ⊆ X it follows that HiX ≤ HiF ≤ Hi−1 . This means
+that NG (Q) X-sn G. If NG (Q) = G, then NG (Q) X-sn G. So G ∈ wπ∗ X and X ⊆ wπ∗ X is
+proved.
+     Suppose that X 6= wπ∗ X. Let G be the group of minimal order in wπ∗ X\X. Then
+π(G) ⊆ π(X) ⊆ π(F). Since G 6∈ X, there exists P ∈ Sylp (G) such that p ∈ π ∩ π(G)
+and NG (P ) is not F-subnormal in G. We note that NG (P ) X-sn G. Then NG (P ) 6= G
+and there exists a maximal chain of subgroups NG (P ) = H0 < H1 < · · · < Hn−1 <
+< Hn = G such that HiX ≤ Hi−1 for i = 1, . . . , n. Since NG (P ) = NHi (P ), NHi (P )HiX ≤
+Hi−1 and Hi /HiX ∈ X, we have NHi (P )HiX /HiX = NHi /HiX (P HiX /HiX ) F-sn Hi /HiX . By
+Lemma 1.6(2) NHi (P )HiX F-sn Hi for i = 1, . . . , n. Therefore HnX = GX 6⊆ NG (P ). From
+the maximality of NG (P ) in H1 it follows that NG (P ) F-sn H1 . So n 6= 1. Suppose that
+n = 2. Then by Lemma 1.7(1) NG (P ) = NG (P ) ∩ NG (P )H2X F-sn NG (P )H2X . From
+NG (P )H2X F-sn H2 we conclude that NG (P ) F-sn H2 = G. This is the contradiction with
+the choice of G. So, we can assume that n ≥ 3 and NG (P ) F-sn Hn−1 . Since NG (P )HnX ≤
+Hn−1 , by Lemma 1.7(1) we have NG (P ) = NG (P ) ∩ NG (P )HnX F-sn NG (P )HnX . From
+NG (P )HnX F-sn G it follows that NG (P ) F-sn G. This contradicts the choice of G. So
+
+                                             6
+X = wπ∗ X. 
+
+3. Formations F for which wπ∗ F = F
+        This section focuses on (2) of Problem.
+      Lemma 3.1. (1) The class La (1) is a hereditary saturated Fitting formation.
+      (2) Let G be a soluble group, Φ(G) = 1. G is a minimal non-La (1)-group if and only
+if the following statements hold:
+      1) |G| = pα q β , lp (G) = 1, lq (G) = 2, l(G) = 3;
+      2) G has precisely three conjugate classes of maximal subgroups, whose representatives
+have the following structure: Gp ⋋ G∗q , the Schmidt group, F (G) ⋋ Gp and Gq ⋋ Φ(Gp ),
+where Gq = F (G) ⋋ G∗q .
+     Proof. (1): The statement follows directly from the fact that La (1) = ∩Gp′ Np Gp′
+for all p ∈ P.
+     (2): The statement is Lemma 4.1 in [31]. 
+        Lemma 3.2. Let G be a biprimary group and let G ∈ La (1). Then G is metanilpo-
+tent.
+     Proof. Let G be a counterexample of minimal order to the statement of the lemma.
+Since N2 is a hereditary saturated formation, the group G = NM, where N is a unique
+minimal normal subgroup of G and M is a maximal subgroup of G, moreover, N is an
+abelian p-group, p is some prime, M is a Schmidt group with a normal p-subgroup. From
+Op (M) = 1 we conclude that p-length of G is 2. This contradicts the fact that G ∈ La (1).
+
+     Lemma 3.3. Let F be a non-empty hereditary formation and let G be a soluble
+group. If G ∈ La (1), G 6= NG (P ) and NG (P ) ∈ F for all P ∈ Syl(G), then G ∈ F.
+     Proof. Let G be a counterexample of minimal order to the statement of the lemma.
+Let N is a minimal normal subgroup of G. We will prove that G/N ∈ F. If G/N 6=
+= NG/N (H/N) for all H/N ∈ Syl(G/N), then G/N ∈ F by the choice of G. If G/N =
+= NG/N (H/N) for some H/N ∈ Sylq (G/N), then H/N = QN/N for some Q ∈ Sylq (G)
+and G = NG (Q)N. Since G is solvable and G 6= NG (Q), we conclude that NG (Q) is a
+maximal subgroup of G and NG (Q) ∩ N = 1. From here G/N ∼        = NG (Q) ∈ F. If K is a
+minimal normal subgroup of G and K 6= N, then G/K ∈ F. Since F is a formation, we
+deduce that G/N ∩ K ∼   = G ∈ F. This contradicts to the choice of G. Consequently N is
+the unique minimal normal subgroup of G. Since G is soluble, we conclude that N is a
+p-group. From the uniqueness of N it follows that F (G) is a p-group. By the choice of
+G imply that π(G) ≥ 2. If F (G) 6= P ∈ Sylp (G), then p ∈ π(G/F (G)). This contradicts
+with G ∈ La (1). Therefore, F (G) = P ∈ Sylp (G) and G = NG (P ). This contradiction
+completes the proof of the lemma. 
+    Theorem 3.4. Let F be a hereditary saturated formation and F ⊆ La (1). A group
+G ∈ F if and only if π(G) ⊆ π(F) and all its Sylow subgroups are strongly K-F-subnormal
+in G.
+    Proof. Necessity. Let G ∈ F. By Lemma 1.7(3) NG (S) F-sn G for any Sylow
+subgroup S of G.
+    Suﬃciency. Let G be a counterexample of minimal order and let N be a minimal
+normal subgroup of G.
+
+                                              7
+     If G = N then G is a simple group, because N is the minimal normal subgroup of G.
+     ∼
+If G = Zp then from π(G) ⊆ π(F) it follows that G ∈ F. This is the contradiction to the
+choice of G. Suppose G is a simple non-abelian group and p ∈ π(G). Let Gp ∈ Sylp (G).
+Then NG (Gp ) 6= G. From G ∈ / F it follows that GF = G. By hypothesis NG (Gp ) F-sn G.
+Then there is a maximal subgroup M of G such that NG (Gp ) ⊆ M and GF ⊆ M. This is
+the contradiction with GF = G.
+     Let N 6= G. From (1)–(2) of Lemma 1.1, (1) of Lemma 1.6 and hypothesis we have
+NG/N (H/N) F-sn G/N for all H/N ∈ Sylq (G/N). By the choice of G we obtain that
+G/N ∈ F. If K is a minimal normal subgroup of G and K 6= N, then G/K ∈ F. Since
+F is a formation, we conclude that G/N ∩ K ∼    = G ∈ F. This is the contradiction with
+the choice of G. Hence G has the unique minimal normal subgroup N. If Φ(G) 6= 1,
+then from G/Φ(G) ∈ F and saturation F it follows that G ∈ F. This contradicts our
+assumption. Therefore Φ(G) = 1. In this case N = GF and there is a maximal subgroup
+M in G such that G = NM. Consider the following cases.
+     1. N is a non-abelian group. Let p ∈ π(N) and let Gp ∈ Sylp (G). Then NG (Gp ) 6= G.
+Otherwise Gp E G and N ⊆ Gp , since N is the unique minimal normal subgroup of G.
+But then N is an abelian group. This is contradiction with the proposition.
+     Consider NG (Gp )N. Let NG (Gp )N = G. From NG (Gp ) F-sn G we deduce that there
+is a maximal subgroup W of G such that NG (Gp ) ⊆ W and N = GF ⊆ W . So we have
+the contradiction G = NG (Gp )N ⊆ W 6= G.
+     Now let NG (Gp )N 6= G. Note that Gp ∩ N = Np ∈ Sylp (N) and Np = Gp ∩ N E
+NG (Gp ) ∩ N. Since NG (Gp ) F-sn G, we see that (NG (Gp ) ∩ N) F-sn N by Lemma 1.7(1).
+Since N is a minimal normal subgroup of G, we have either N F = 1 or N F = N. The
+case N F = 1 is impossible, since N is non-abelian, and F ⊆ S. Therefore N F = N. By
+[30, proposition A.4.13(a)] N is a direct product of subgroups, each isomorphic with a
+ﬁxed simple non-abelian group. If NG (Gp ) ∩ N = N, then Np = Gp ∩ N E N. By [30,
+proposition A.4.13(b)] Np is the direct product of a subset of the non-abelian factors of N.
+This is the contradiction. If NG (Gp ) ∩ N 6= N, then there is maximal subgroup M of N
+such that NG (Gp ) ∩N ≤ M and N F ≤ M. We have the contradiction N = N F ≤ M 6= N.
+      2. N is an abelian p-group, p is some prime. From G/N ∈ F ⊆ S and N ∈ S it
+follows that G is solvable. From the uniqueness of N and Φ(G) = 1 we conclude that
+G = N ⋋ M, where GF = N = CG (N) = F (G) and M is a maximal subgroup of G, and
+moreover, M ∈ F ⊆ La (1).
+      Suppose that M is nilpotent. By Lemma 1.4 Op (M) = 1, therefore p ∩ π(M) = ∅.
+It follows that M contains a normal Sylow q-subgroup Mq for some q ∈ π(M) and q 6= p.
+Therefore Mq = Gq is a Sylow q-subgroup of the group G. From the uniqueness of N it
+follows that NG (Gq ) 6= G. Since M is a maximal subgroup of G and M ⊆ NG (Gq ), we
+have M = NG (Gq ). But this contradicts the fact that NG (Gq ) F-sn G.
+      We assume that M is non-nilpotent. Let π(G) = {p1 , p2 , . . . , pn }, where p1 = p.
+Consider the following cases.
+      i) Let n = 2. Then p ∈ π(M). By Lemma 1.4 Op (M) = 1. Since M ∈ La (1),
+by Lemma 3.2 M ∈ N2 . Therefore M/F (M) is nilpotent. We note that F (M) is a
+p2 -group. If Q ∈ Sylp2 (M), then Q is a normal subgroup of M, moreover, Q ∈ Sylp2 (G)
+and NG (Q) = M. By hypothesis NG (Q) = M F-sn G. Therefore N = GF ⊆ M and
+G = NM ⊆ M. This is the contradiction.
+     ii) Let n ≥ 3.
+
+                                             8
+       We will to show that N is a Sylow p-subgroup of G. By Hall’s theorem G =
+= G1 G2 · · · Gn , where G1 , G2 , . . . , Gn are pairwise permutable Sylow p1 -, p2 -, . . . , pn -
+subgroups of G, respectively. Let Ai = G1 Gi , where i 6= 1. Since |Ai | < |G|, NG (G1 ) ∩
+∩ Ai = NAi (G1 ) F-sn Ai and NG (Gi ) ∩ Ai = NAi (Gi ) F-sn Ai , we have Ai ∈ F. From
+|π(Ai )| = 2 by Lemma 3.2 it follows that Ai ∈ N2 . We note that N ⊆ Ai . Since N =
+= CG (N) and p1 = p, we see that F (Ai ) is a p-group. From Ai ∈ N2 it follows that
+Ai /F (Ai ) ∈ N. Then G1 /F (Ai ) E Ai /F (Ai ) and G1 E Ai . So, Gi ⊆ Ai ⊆ NG (G1 ). Hence
+G ⊆ NG (G1 ) and G1 E G. From G1 ∩ M E M and Op (M) = 1 it follows that G1 ∩ M = 1.
+So G1 = N ∈ Sylp (G).
+       Thus M is a p′ -Hall subgroup of G. Let i ∈ {2, . . . , n} and S ∈ Sylpi (M). Then
+S ∈ Sylpi (G) and NG (S) 6= M. We note that NG (S) 6= G because N = CG (N) and N is
+a p-group, p 6= pi .
+       We will to show that NG (S) ∈ F.
+       Suppose that NG (S) ∩ N = 1. Since G/N ∈ F and F is a hereditary formation, it
+follows that NG (S)N/N ∼  = NG (S)/NG (S) ∩ N ∼      = NG (S) ∈ F.
+       Suppose now that NG (S) ∩ N = D 6= 1. Then D E NG (S) and S E NG (S). We have
+S × D E NG (S) and NG (S) = (S × D) ⋋ R, where R is a {p1 , pi }′ -Hall subgroup of NG (S).
+From G ∈ S by Hall’s theorem we deduce that SR ≤ M x for some x ∈ G and there is a
+{pi }′ -Hall subgroup H from G such that DR ≤ H. From Syl(H) ⊆ Syl(G) it follows that
+NG (L) F-sn G for any L ∈ Syl(H). By Lemma 1.7(1) NH (L) = NG (L) ∩ H F-sn H. Then
+H ∈ F by the choice of G. We note that M x ∼          = M ∈ F. Since F is hereditary we have
+NG (S)/D = SR ∈ F and NG (S)/S = DR ∈ F. We obtain NG (S)/S ∩ D ∼
+             ∼                             ∼                                  = NG (S) ∈ F.
+       Consider T = NNG (S). From Lemma 1.7(1) NG (S) F-sn T . By theorem 15.10 [19]
+T ∈ F. Let h be the maximal inner local screen formation F. By Lemma 1.5 [19] it
+follows that T /Fp (T ) ∈ h(p). Because N ≤ Fp (T ) and N = CG (N), we have Op′ (T ) = 1
+and N = Fp (T ). Therefore T /N ∈ h(p). Then NG (S)N/N ∼         = NG (S)/NG (S) ∩ N ∈ h(p).
+Since F is a hereditary formation, it follows that h(p) is a hereditary formation, by the
+theorem 4.7 [19]. Then (NG (S) ∩ M)N/N ∼           = NG (S) ∩ M/NG (S) ∩ N ∩ M ∼   = NG (S) ∩
+∩ M ∈ h(p). We note that NG (S) ∩ M = NM (S). Therefore NM (S) ∈ h(p). By Lemma
+3.4 M ∈ h(p). Then G/Fp (G) ∼     = M ∈ h(p). By Lemma 1.5 G ∈ F, which contradicts the
+choice of G. 
+    Corollary 3.4.1 [13]. If the normalizers of all Sylow subgroups of a group G are
+P-subnormal, then G is supersoluble.
+     Corollary 3.4.2 [29]. A group G ∈ N2 if and only if all its Sylow subgroups are
+strongly K-N2 -subnormal in G.
+     Corollary 3.4.3 [29]. A group G ∈ NA if and only if all its Sylow subgroups are
+strongly K-NA-subnormal in G.
+     Corollary 3.4.4. A group G ∈ La (1) if and only if all its Sylow subgroups are
+strongly K-La (1)-subnormal in G.
+    Remark 3.5. Note that wπ∗ F ⊆ Wπ F. From [23, 25] it follows that WN2 = wN2 =
+= S. But w∗ N2 = N2 .
+
+
+
+
+                                                 9
+References
+      [1] M. G. Bianci, A. Gillio Berta Mayri and P. Hauck. On ﬁnite soluble groups with
+nilpotent Sylow normalizers. Arch. Math. 47 (1986) 193–197.
+      [2] V. Fedri and L. Serena. Finite soluble groups with supersoluble Sylow normalizers.
+Arch. Math. 50 (1988) 11–18.
+      [3] R. A. Bryce, V. Fedri and L. Serena. Bounds on the Fitting length of ﬁnite soluble
+groups with supersoluble Sylow normalizers. Bull. Austral. Math. Soc. 44 (1991) 19–31.
+      [4] A. Ballester-Bolinches and L. A. Shemetkov. On normalizers of Sylow subgroups
+in ﬁnite groups. Siberian Math. J. 40(1) (1999) 1–2.
+      [5] A. D’Aniello, C. De Vivo and G. Giordano. Finite groups with primitive Sylow
+normalizers. Bolletino U.M.I. 8(5-B) (2002) 235–245.
+      [6] A. D’Aniello, C. De Vivo and G. Giordano. Saturated formations and Sylow
+normalizers. Bull. Austral. Math. Soc. 69 (2004) 25–33.
+      [7] A. D’Aniello, C. De Vivo, G. Giordano and M. D. Pérez-Ramos. Saturated for-
+mations closed under Sylow normalizers. Bull. Austral. Math. Soc. 33 (2005) 2801–2808.
+      [8] L. Kazarin, A. Martı́nez-Pastor and M. D. Pérez-Ramos. On the Sylow graph of
+a group and Sylow normalizers. Israel J. Math. 186 (2011) 251–271.
+      [9] L. Kazarin, A. Martı́nez-Pastor and M. D. Pérez-Ramos. On Sylow normalizers
+of ﬁnite groups. J. Algebra Appl. 13(3) (2014) 1350116–1–20.
+      [10] G. Glaubermann. Prime-power factor groups of ﬁnite groups II. Math. Z. 117
+(1970) 46–56.
+      [11] A. F. Vasil’ev, T. I. Vasil’eva and V. N. Tyutyanov. On the ﬁnite groups of
+supersoluble type. Siberian Math. J. 51(6) (2010) 1004–1012.
+      [12] A. F. Vasil’ev, T. I. Vasil’eva and V. N. Tyutyanov. On K-P-subnormal subgroups
+of ﬁnite groups. Math. Notes. 95(4) (2014) 471–480.
+      [13] V. N. Kniahina, V. S. Monakhov. On supersolvability of ﬁnite groups with P-
+subnormal subgroups. Internat. J. of Group Theory 2(4) (2013) 21–29.
+      [14] I. Zimmermann. Submodular subgroups in ﬁnite groups. Math. Z. 202 (1989)
+545–557.
+      [15]. R. Schmidt. Subgroup Lattices of Groups (Walter de Gruyter, 1994).
+      [16] V. A. Vasilyev. Finite groups with submodular Sylow subgroups. Siberian Math.
+J. 56(6) (2015) 1019–1027.
+      [17] V. A. Vasilyev. On the inﬂuence of submodular subgroups on the structure of
+ﬁnite groups. Vestnik Vitebsk Univ. 91(2) (2016) 17–21. (In Russian)
+      [18] T. Hawkes. On formation subgroups of a ﬁnite soluble group. J. London Math.
+Soc. 44 (1969) 243–250.
+      [19] L. A. Shemetkov Formations of finite groups (Nauka, Moscow, 1987). (In Rus-
+sian)
+      [20] A. Ballester-Bolinches and L. M. Ezquerro. Classes of Finite Groups (Springer,
+2006).
+      [21] O. H. Kegel. Untergruppenverbände endlicher Gruppen, die den Subnormalteil-
+erverband echt enthalten. Arch. Math. 30(3) (1978) 225–228.
+      [22] A. F. Vasil’ev. On the inﬂuence of primary F-subnormal subgroups on the struc-
+ture of the group. Voprosy Algebry (Problems in Algebra). 8 (1995) 31–39. (In Russian)
+      [23] A. F. Vasil’ev, T. I. Vasil’eva and A. S. Vegera. Finite groups with generalized
+subnormal embedding of Sylow subgroups. Siberian Math. J. 57(2) (2016) 200–212.
+
+                                            10
+    [24] T. I. Vasil’eva and A. I. Prokopenko. Finite groups with generally subnormal sub-
+groups. Proceedings of the National Academy of Sciences of Belarus. Series of Physical-
+Mathematical Sciences. 3 (2006) 25–30. (In Russian)
+    [25] A. F. Vasil’ev and T. I. Vasil’eva. On ﬁnite groups with generally subnormal
+Sylow subgroups. PFMT 4(9) (2011) 86–91. (In Russian)
+    [26] A. S. Vegera. On local properties of the formations of groups with K-F-subnormal
+Sylow subgroups. PFMT 3(20) (2014) 53–57. (In Russian)
+    [27] V. S. Monakhov and I. L. Sokhor. Finite groups with formation subnormal pri-
+mary subgroups. Siberian Math. J. 58(4) (2017) 851–863.
+    [28] V. I. Murashka. Finite groups with given sets of F-subnormal subgroups. Asian-
+European J. Math. (2019) 2050073 (13 pages). DOI: 10.1142/S1793557120500734.
+    [29] A. F. Vasil’ev. Finite groups with strongly K-F-subnormal Sylow subgroups.
+PFMT4(37) (2018) 66–71. (In Russian)
+    [30] K. Doerk and T. Hawkes. Finite soluble groups (Walter de Gruyter, Berlin, New
+York, 1992).
+    [31] V. N. Semenchuk. Minimal non F-subgroups Algebra and Logik 18(3) (1979)
+348–382.
+
+    A. F. Vasil’ev, A. G. Melchenko
+    Francisk Skorina Gomel State University, Gomel, Belarus.
+    E-mail address: formation56@mail.ru, melchenkonastya@mail.ru
+   Т. I. Vasil’eva
+   Francisk Skorina Gomel State University, Belarusian State University of Transport,
+Gomel, Belarus.
+   E-mail address: tivasilyeva@mail.ru
+
+
+
+
+                                           11
+

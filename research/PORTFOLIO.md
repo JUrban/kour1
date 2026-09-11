@@ -1,9 +1,11 @@
 # Candidate portfolio
 
-Updated 2026-09-11T15:22:40.102887+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T15:43:18.558188+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 4.56(b) | Projective Euler class followed by Bass cancellation. | Isomorphic kernels follow from the classical 1964 theorem at the exact maximal-spectrum dimension bound. Literal equality qualified; part (a) untouched. No new count. |
+| 20.112 | Test saturation for the first proper-containment example F=N^3. | All 8,339 groups in orders 648,1296,1944 pass; 12 full Frattini-lift comparisons. No general proof; prime-different-from-kernel normalizer lifting remains the obstacle. |
 | 20.92(a) | Affine matrix Lazard plus a constructive polynomial inverse and weighted coefficient extraction. | Twenty-sixth complete affirmative candidate for all primes above an explicit dimension-only bound, without strong nilpotence. Exact polynomial and actual GAP controls pass. Prior machinery credited; outside review and comprehensive novelty checks pending. |
 | 20.80 | Lu 2025 Theorem A. | Exact prior affirmative result; all five pages read, short sufficiency proof checked with an explicit sign correction. No new count. |
 | 20.18 | Class-two collection identity bounds the derived exponent at p=2. | Exact-derived-exponent reading is impossible; divisibility-only reading is already asserted in Budkin 2020. Formulation qualification, excluded from new priority; odd-prime exact-exponent question untouched. |

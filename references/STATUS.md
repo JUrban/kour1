@@ -886,3 +886,19 @@ outside right nilpotence. Exact reading scopes and source limits are
 in `research/20.92a-review.md`; cached PDFs/text and Notebook page161
 are hash-bound by `results/20.92a-summary.json`. Smoktunowicz 2022
 was consulted at primary abstract and attribution level only.
+
+
+## 4.56(b) and 20.112
+
+Bass1964, `bass-k-theory-stable-algebra-1964.pdf`, supplies exact
+Theorem9.3 with dimension of the maximal spectrum. Semilocal/local
+rank setup and the cancellation proof were read; source scope and
+the complete application are in `research/4.56b-prior-result.md`.
+Notebook page14 was visually checked. Five source/proof files are
+hash-bound in `results/4.56b-prior-audit.json`.
+
+Vasil'ev--Vasil'eva--Melchenko arXiv:1904.06986v1 was read in full.
+Its proper-containment N^3 example motivates the20.112 screen but
+does not settle saturation. The preprint's precise author list is
+kept distinct from the2020 publication metadata. Scope and seven
+file hashes are in the screen report and audit.

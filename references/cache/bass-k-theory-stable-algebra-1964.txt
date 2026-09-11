@@ -1,0 +1,2532 @@
+P UBLICATIONS MATHÉMATIQUES DE L’I.H.É.S.
+
+
+
+
+ H YMAN BASS
+ K-theory and stable algebra
+ Publications mathématiques de l’I.H.É.S., tome 22 (1964), p. 5-60
+ <http://www.numdam.org/item?id=PMIHES_1964__22__5_0>
+
+
+
+
+      © Publications mathématiques de l’I.H.É.S., 1964, tous droits réservés.
+      L’accès aux archives de la revue « Publications mathématiques de l’I.H.É.S. » (http://
+      www.ihes.fr/IHES/Publications/Publications.html) implique l’accord avec les conditions géné-
+      rales d’utilisation (http://www.numdam.org/conditions). Toute utilisation commerciale ou im-
+      pression systématique est constitutive d’une infraction pénale. Toute copie ou impression de
+      ce fichier doit contenir la présente mention de copyright.
+
+
+
+
+                               Article numérisé dans le cadre du programme
+                             Numérisation de documents anciens mathématiques
+                                           http://www.numdam.org/
+                                      K-THEORY AND STABLE ALGEBRA
+                                                                                  by H. BASS
+
+
+                                                                                     CONTENTS                                                                                           PAGES
+INTRODUCTION.. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .               5
+
+CHAPTER I. — Stable Structure of the linear g r o u p s . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                  8
+         § i. Notation and lemmas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                               8
+         § 2. The affine group . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                         11
+         § 3. Structure of GL(A) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                           13
+         § 4. Structure in the stable range . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                  14
+         § 5. Dimension o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                      17
+
+CHAPTER II. — Stable structure of projective m o d u l e s . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                    19
+         § 6. Semi-local rings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                      19
+         § 7. Delocalization. The maximal spectrum . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                            21
+         § 8. Serre's theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                     23
+         § 9. C a n c e l l a t i o n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     25
+         § 10. Stable isomorphism t y p e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                       28
+         § 11. A stable range for GL(A), and a conjecture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                               29
+
+CHAPTER III. — The functors K . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                     31
+         § 12. K°(A) and KKA, q) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                           31
+         § 13. The exact sequence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                          33
+         § 14. Algebras . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                37
+         § 15. A filtration on K° . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                        38
+
+CHAPTER IV. — Applications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                42
+          § 16. Multiplicative inverses. Dedekind rings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                        42
+          § 17. Some remarks on algebras . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                               44
+          § 18. Finite generation of K . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                           47
+          § i9. A finiteness theorem for SL(rz, A) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                   49
+          § 20. Groups of simple homotopy types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                      53
+          § 2 1 . Subgroups of finite index in SL(n, A) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                    55
+          § 22. Some remarks on polynomial rings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                       58
+
+
+
+                                                                           INTRODUCTION
+
+      A vector space can be viewed, according to one's predilections, either as a module
+over a ring, or as a vector bundle over a space (with one point). If one seeks broad
+generalizations of the structure theorems of classical linear algebra, however, the satis-
+faction afforded by the topologists has, unhappily, no algebraic counterpart.
+
+                                                                                                                                                                                         489
+6                                         H. B A S S
+
+        Our point of departure here is the observation that the topological version of
+linear algebra is a particular case of the algebraic one. Specifically, the study of
+continuous real vector bundles over a compact X, for example, is equivalent to the study
+of finitely generated projective C(X)-modules, C(X) being the ring of continuous real
+functions on X. This connection was first pointed out by Serre [28] in algebraic geometry,
+and recently in the above form by Swan [34]. Serre even translated a theorem from
+bundle theory into pure algebra, and he invented the techniques to prove it [29] (see § 8).
+His example made it clear how to translate large portions of homotopy theory into the
+same setting, and thus discover, if not prove, an abundance of natural theorems of topo-
+logical origin.
+        What follows is the result of a first systematic attempt to exploit this idea. This
+investigation was inaugurated jointly by S. Schanuel and the author, and an
+announcement of the results of that earlier work was made in [9]. In particular, the
+topological background for the results of §§ 10-11 is pointed out there.
+         Generally speaking the method is as follows. The problem at hand is " locally
+ trivial 55 , i.e. locally it can be solved by a simple parody of classical linear algebra.
+ Furthermore, one proves an <c approximation ?? lemma which asserts the existence of
+ global data with prescribed behavior in a given local situation. Finally, in order to
+ piece these together one uses a kind of " general position 5? argument. The ability
+ to put things in general position imposes a dimensional restriction on the conclusions,
+ and thus we determine a cc stable range " for the problem.
+         The structures investigated here are those of projective modules (Chapter II)
+ and of the general linear group (Chapter I). This can be thought of as analogous to
+ the study of vector bundles on a space, and on its suspension, respectively. If we
+  (c
+     stabilize ", we are led to consider analogues of the functors K° and K1, respectively,
+ ofAtiyah and Hirzebruch [2], and a good deal of the formalism, in particular the exact
+ sequence, of that analogy is developed in Chapter III. The natural extension of the
+ functors K.\ z>2, to our algebraic context has so far evaded a definitive appearance.
+         In another direction, this point of view should be fruitful in studying other classical
+ linear groups. For example, thinking of bundles with reduced structure group, one
+  can consider non degenerate quadratic forms on projective modules, and the associated
+  orthogonal groups. K° would then be the <c Witt ring 5? , and Witt's theorem, for example,
+  is analogous to our Theorem 9.3. The local part of this theory has recently been done
+  by Klingenberg [25], but several serious problems continue to obstruct its globalization.
+         The most important applications of our machinery are to the linear groups over
+  orders in semi-simple algebras finite dimensional over the rationals (§§ 19-21). When
+  applied to ZTT, n a finite group, they give quantitative information onj. H. C. Whitehead's
+  groups of simple homotopy types [36], results which elaborate on some earlier work
+  of G. Higman [38]. They also shed some new light on the structure of SL(n, A),
+  with A the ring of integers in a number field. Most striking is the fact that, for n suitably
+   large, if H is a non central normal subgroup, then SL(TZ, A)/H is a finite central extension
+
+    490
+                           K-THEORY AND STABLE ALGEBRA                                 7
+
+of PSL(/z, A/q) for some ideal q. This information is the starting point for the proof,
+in [40], that every subgroup of finite index in SL(TZ, Z), yz>3, contains a congruence
+subgroup (see § 21).
+       The author owes most of his mathematics to Serre's genius for asking the right
+question at the right time, and he records here his gratitude for having so profited. He
+is particularly thankful also to A. Heller, who has endured long audience on th^ present
+work, and who is responsible for numerous improvements in its exposition.
+
+
+
+
+                                                                                     491
+                                         CHAPTER I
+
+          STABLE STRUCTURE OF THE LINEAR GROUPS
+
+§ i. Notation and lemmas.
+       The objectives of this chapter are Theorems 3.1 and 4.2 below, which purport
+to describe all the normal subgroups of the general linear group. We begin in this
+section by establishing notation and some general trivialities on matrices.
+       Let A be a ring. GL(72, A) is the group of invertible n by n matrices over A.
+Let e^ denote the matrix with i in the (i.j)^ coordinate, and zeroes elsewhere; we recall
+that e,f^ = 8,^,. Let a, b eA and i 4=J. Then (i + ae^ (i + be^ = i + {a + b)e^ here
+ i == i denotes the n by n identity matrix. Thus, for i and j fixed, the matrices i + ae^
+form a subgroup of GL(TZ, A) isomorphic to the additive group of A. A matrix of the
+form i + ae^, i 4=j, is called elementary, and we denote by E(??, A) the subgroup of GL(TZ, A)
+generated by all elementary matrices.
+       Now let q (possibly == A) be a two sided ideal in A. The q-congruence group is
+                          GL(7z, A, q) =ker(GL(/z, A) -^ GL(^, A/q)).
+Moreover we denote by E(TZ, A, q) the normal subgroup of E(TZ, A) generated by all
+elementary matrices in GL(TZ, A, q).
+     We shall identify GL(/z, A) with a subgroup of GL(72+m,A) by identifying
+                      a
+aeGL(^,A) with                   eGL{n+m,A). This done, we set
+                            l
+                      ^      m
+
+                GL(A, q) = U^GL(7z, A, q)      and   E(A, q) = U,E(TZ, A, q).
+When q - A we write GL(A)-GL(A, A) and E(A)=E(A,A). GL(A) is called
+the stable general linear group over A.
+      Lemma (1.1) (" Homotopy Extension "). — If A-^B is a surjective ring homo-
+morphism, then E(/z, A, q)->E(72, B, qB) is surjective for all n and q.
+      Proof, — If i + ^ - is B-elementary, and b is the image of aeA, then i+ae^
+maps onto i+be,.. (There is an abuse of notation here which one should excuse,
+in that " i " and cc e^ ?? have two senses.) This shows that E{n, A) -^E(TZ, B) is
+surjective. Now E(n, B, qB) is generated by elements T° == G~ \a with (je'E(n, B) and
+T qB-elementary;i.e. T== i +qe^ ^eqB. We can find q ' e q with image q, and cr'eE^, A)
+with image a (by the first part of the proof). Clearly (i ^-y^,) 0 lifts T°.
+       If Hi and Ha are subgroups of a group we denote by [H^, HJ the subgroup
+generated by all [Ai, h^\ =h^~lh^~lh^ with ^eH,.
+
+ 492
+                               K-THEORY AND STABLE ALGEBRA
+
+         Lemma (1.2). — ffi,J\ and k are distinct, then
+
+                                  [i—ae^ i—be^]==i+abe^.
+
+         Proof. — (i + ae^ (i + be^) (i -^,) (i -^) =
+                         (i + ae^ + ^ + abe^ (i — ae^— be^ + abe^ ==
+                             (i + ae^ + be^ + abe^ — (^.) — (be^ + abe^ + {abe^ = i + abe^.
+         Corollary (1.3). — If q and q' are ideals and 72^3, then
+                            E(72, A, qq') C[E(TZ, A, q), E(n, A, q 7 )].
+/TZ particular, E(n, A, q) = [E(^ A), E(^ A, q)J.
+      Proof. — The right side is a normal subgroup of E{n, A) which, by ( i . 2), contains
+all qq'-elementary matrices.
+       Corollary (1.4). — Suppose n>^ and let H be a subgroup of GL(/z, A) normalised
+by E(7z, A). Tjf T ^ a family of elementary matrices in H, then HDE(TZ, A, q), where q
+z'j- ^ two-sided ideal generated by the coordinates of i—T for all TGT.
+       Proof.—IfT=i+^eT then, since ^J>3, we can commutate with other elementary
+ matrices and obtain all elementary matrices of the form i + acbe^. The E(%, A)-invariant
+ subgroup generated by these, as T varies in T, is clearly E(/z, A, q).
+       Corollary (1.5). — (i) E(TZ, A) = [E^, A), E(/z, A)] /or 7^3.
+       (ii) ^ A is finitely generated as a Z-module, then E{n, A) ^ a finitely generated group
+for all n.
+       (iii) If A is finitely generated as a Z-algebra, then E{n, A) is a finitely generated group
+for all n^3.
+      Proof. — (i) is immediate from (1.3), setting q = = A = q ' .
+      (ii) Is obvious, since E(n, A) is generated by a finite number of subgroups, each
+isomorphic to the additive group of A.
+      (in) Let ^ = = i , ^ , ...,^. generate A as a ring, and consider the elementary
+matrices i +a,e^o<^i<_r, and all j^k. These generate a group which, by (1.2),
+contains all i + M^, where M is a monomial in the a,. Since A is additively generated
+by these M we catch all elementary matrices.
+      In special cases we get something for 72=2.
+         Lemme (1.6). — Suppose i =u-[-v with u and v units in A.          Then
+                             E(2,A,q)c[GL(2,A),E(2,A,q)].
+If, further, u==w2 with wecenter A, then E(2, A, q) = [E(2, A), E(2, A, q)J.
+                                                  U    0
+      Proof.—Given qeq, set b==v~lq,oL•.       , and p==        eE(2,A,q).                 Then
+         i [i—u)b     i
+[a,P]
+         o     i
+                             e[GL(2, A), E(2, A, q)J. Moreover,
+           w     o
+w~1^--     ^   ^-i eE(2,A), by Lemma 1.7 below, and [w~~\ (B] == [a, ?].
+
+                                                                                              493
+                                                                  H. B A S S
+
+      Examples. — i. If A contains a field with more than two elements, i is a sum of
+two units. Likewise if 2 is a unit in A.
+      2. If A is an integral domain containing a primitive 71th root, u, of i, then
+i + u + • . . + ^ is a unit if i 4- i is relatively prime to n. Since
+                                      i+M+...+^=i+z/(i+...4-^-i)
+
+we can write i as a sum of two units provided both i and z + i are prime to n. Such
+an i always exists unless n is a power of two.
+      3. The commutator quotient of GL(2, Z) is a group of type (2, 2), and that
+of SL(2, Z) is cyclic of order 12. More generally, the commutator quotient of
+SL(2, Z/^Z) is cyclic of order d, where d=gcd(q, 12). IfZy denotes the j^-adic integers
+then the commutator quotient of SL(2, Z^) is cyclic of order 4 for p=2, 3 for j&=3,
+and i for j&=t=2 or 3. In all of these examples E=SL.
+      4. For any ring A i is a sum of two units in M{n, A) for all n> i. For if n> i
+let B=A[a]=A[^/(/(^)), where/(^=r-^+i. Then i =a(i —a71-1) =a(i —a)^(a)
+so a and i —a are units in B. Therefore they define A-automorphisms of B^A" whose
+sum is i.
+      The next lemma plays a fundamental role in what follows.
+      Lemma (1.7) ( ( c Whitehead Lemma 5 ? ). — Let aeGL{n, A) and beGL{n, A, q).
+TA^TZ
+
+                                                ^6                    ^       0        ^
+                                                                                                                             mod E(2%, A, q)
+                                                o                     0       6        0
+
+(27^
+
+                                                                                       0
+                                                                                                                               mod E(27z, A)
+                                                                                       —b
+(The congruences hold for either left or right cosets.)
+        Proof. — Write 6 = = i + y ; y i s a n nxn matrix with coordinates in q.                                                        Let
+
+
+            0
+             ba   o
+                  I
+                                  P- oa ob                5
+                                                                          i
+                                                                      ^1= 0
+                                                                                       {ba)   -\i   5             T
+                                                                                                                         i
+                                                                                                                      2— 0
+                                                                                                                              —a~ l q
+                                                                                                                                    I
+
+                                        I                     0                                         I         0
+                             T
+                                 3=                               3           and             G=
+                                            -b-^qc1           I                                         a         i
+
+Then clearly ^=^^^eE(2n, A, q).                                   We begin by showing that aT=[B.
+                                 ^          ^                                     ba — qa        q ^ a                  q
+                      OCTi                      5             aria ^
+                                 0          I                                     —a             i   —a                 i
+                                                              a           —q+q    a                         o
+                                      (XT 1^~S=                                 =
+                                                              —a           i +q   —a                        b 5
+
+                                      -1             <2               0 ::==      a        o
+                                 <7     T2<7==                                               ;          OCT=[3.
+                                                     ba—a                 b       qa       b
+494
+                                K-THEORY AND STABLE ALGEBRA
+
+                                 b-1     o
+                                            eE(27z, A, q) and hence
+                                 o       b1
+                            ab       o       ab      o b-1      o     a     o
+                                                                                          mod E(2/z, A, q).
+                            0        I   =
+                                             0       I o        b     o     b
+
+Finally, modulo E(2/z, A), we have
+                                a    0 1          i || i      0| I
+                                o    b o          i      -I   1 0
+
+For left cosets we need only observe that all subgroups involved are invariant under
+transposition.
+     Corollary ( 1 . 8 ) . — [GL{n, A), GL{n, A, q)] CE(27?, A, q).
+      Remark, — It would be useful if one could strengthen this corollary to say:
+[GL(/z, A, q),GL(/?, A, q')]cE(27z, A, qq'), say even under the assumption that q + q ' ^ A .
+      Combining (1.3) and (1.8) we have, for ^^3,
+        E(72, A, q) - [E(^, A), E(^ A, q)] c[GL(^ A), GL(^, A, q)] cE(2^z, A, q).
+
+Letting n->co we conclude:
+      CWter^ (1.9). — E(A, q) = [E(A), E(A, q)] == [GL(A), GL(A, q)]. In particular,
+E(A)=[GL(A),GL(A)].
+      Remark. — The last conclusion is due to J. H. C. Whitehead [363 § i]. Indeed,
+essentially, everything in this section is inspired by Whitehead's procedure in [36].
+
+§ 2. The affine group.
+      Lemma ( 2 . 1 ) . — For    n>^2 the additive group generated by E(TZ, A) is the full matrix
+algebra^ M(TZ, A).
+     Proof. — It suffices to catch ae^ for all aeA, all z, j\                   If i^pj, ae^== (i +ae^) — i.
+For the diagonal elements we have, for example,
+                          ae^=(i +ae^)(i +e^)—i—ae^—e^.
+
+      Viewing A" as a right A-module we can identify GL(%, A) with Aut^A").
+      Corollary (2.2). — For ^ > 2 the E(^, A) invariant subgroups ofA^ are the qA^ where q
+ranges over all left ideals. (Note that these are not sub-A-modules.)
+      Proof. — By the Lemma we can replace E(TZ, A) by M(TZ, A). Let
+                                         a=(^, ...^JeA^
+
+and let q=SA^,. It clearly suffices to show that M(n, A)a==qA n . But the obvious
+use of coordinate projections, permutations, and left multiplications makes this evident.
+      Now Aff(7z,A) is defined to be the semi-direct product GL^^xA^ If
+(7eGL(/2, A) and oLeAn the multiplication is given by
+                                    (cr, a) (o-', a') = ((TO', era' +a) •
+
+                                                                                                         495
+12                                          H. B A S S
+
+In particular
+                                    (^a)- 1 -^- 1 ,-^)
+
+We identify GL{n, A) with GL(?z,A)xo, and A" with i x A ^               The latter is an abelian
+normal subgroup. Since
+                                  (o-, o)(i, a)(o-, o)-1^!, o-a)
+
+we see that for subgroups HcGL(;2,A) and ScA^ invariance of S under H is the
+same in both of its possible senses.
+     We shall often identify (cr, a)eAff(72, A) with eGL(n+ i, A) (viewing a
+as a column vector).     Note that this identifies E(TZ, A) x A71 with a subgroup of E(^ + 13 A).
+       Proposition (2.3). — Let H be a subgroup of Af{[n, A) with projection L in GLyz(, A).
+Then
+          (i)   [H, A-] = [L, A-] == 2^(i -^A-.
+          (ii) 7/' H is normalised by An then   [H.A^CH j-o ^ ^'j- case HnA^ trivial =>H
+^TO(2/.
+          (iii) 7/' ^^2 anrf H is normalised by E(^, A), then [H, An]==qAn /or a unique left
+ideal q.
+       Pn?o/. — (i) If (T,(B)eH, so T(=L, and a = = ( I , a ) e A n 3 then
+                                [(T,[B),(I,a)]=(I,(I-T- l )a).
+
+       (i) => (ii) is trivial, and (iii) is a consequence of (2.2).
+       We shall use this proposition to show that, under suitable conditions, a subgroup
+HcGL(7z, A) normalized by E(TZ, A) contains E(7z, A, q) for some q+o. By (i .4) it
+will be sufficient to show that H contains a single non trivial elementary matrix. Of
+course we assume n J> 3 in order to invoke ( i . 4).
+       Suppose first that there is a (?eH and a unit z/e center A, such that a=^u.i,
+but a—u.i has a zero row or column. We first apply the following:
+        Remark. — Since Z is a Euclidean ring E(TZ, Z) =SL{n, Z) for all n^>2. Hence
+every cc permutation 5? (i.e. a matrix with one non zero coordinate equal to ± i in each
+row and column) of determinant i lies in E(TZ, Z). By specialization, every such permu-
+tation lies in E(^, A) for any A.
+       Now back to a and u above. We can conjugate with a permutation in E(TZ, A)
+and assume a—u.i has either the last row or column zero; say the last row. Then
+a == ucs' with i =(= or' eAff(% — i, A). Since commutating with o- neglects u we can use (2.3)
+to produce lots of elementary matrices (in the last column). If the last column of CT—u. i
+vanishes we transpose the above argument.
+        Before proceeding further with our problem, let us compute the centralizer of
+^T= i -}-ae^\aeA}. Given o-, let a be the first column ofo- and (B the second row of o"1.
+Then cmy""^ i +a^B. Hence, if (TT==TCT we have (x.a^==ae^. If a==i we conclude
+
+496
+                                K-THEORY AND STABLE ALGEBRA                            13
+
+           n
+that a==( . | and (B== (o, u~1, o, ..., o).    Then allowing general a we find uau~l==a
+         W
+so that z/ecenterA.      Now changing e^ to ^, we can already record the following:
+      Corollary (2.4). — If n^2, the centrali^er of E(TZ, A) consists oj all matrices u.i
+with u a unit in the center of A..
+      Continuing our argument above, our objective is:
+      Lemma (2.5). — Let ^j>3 and H a subgroup of GL(TZ, A) normalised by E(TZ, A).
+If H contains a non central element a with some coordinate ^ero, then   H3E(7z,A,q)   for
+some q 4= o.
+      Proof. — After conjugating <r with a permutation in E(TZ, A) we can make a^ or
+                        h\
+a^ zero, where a == ( ; j is the first column of <r. If a commutes with all T == i + ae^
+                       W
+then a has the same first column as u. i for some z/ecenter A, by the last paragraph,
+and this case was handled already above. Hence we may assume ^T can be chosen
+so that p = cn-cr"" \~14= i. Then p^^T^+aT? where ^==a^~1, and (B is the second
+row of cr~1 (see computation above).
+      Case i. ^=o. Then ay has zero last row, so p^T^-l-ay and r~1 have the
+same last row. Hence we have i 4= p eA{f(n — i. A) and we can use (2.3) to get elementary
+matrices.
+      Case 2. <2i==o. Then the first rows of p and r~ 1 agree, so p is not central and
+has an off diagonal zero (since T"~1 has first row (i, —a, o, ..., o)). Hence we can
+replace (T by p and obtain Case i again.
+
+§ 3. Structure of GL(A).
+
+      Theorem (3.1) (Stable Structure Theorem.)
+      Let A be any ring and GL(A) the stable general linear group over A (see § i for
+definition).
+      a) For all two-sided ideals q,
+                       E(A, q) = [E(A), E(A, q)] - [GL(A), GL(A, q)].
+
+       b) A subgroup HcGL(A) is normalised by E(A)<=>/or some (necessarily unique) q,
+
+                                     E(A,q)cHcGL(A,q).
+H is then automatically normal in GL(A).
+       c) If A->B       is a surjective ring homomorphism and if H is normal in GL(A), the
+image of H is normal in GL(B).        (Note that GL(A)-^GL(B)     need not be surjective.)
+     Proof. — a) is just (1.9). c ) is a consequence of b) since the image ofH will be
+normalized by the image ofE(A), which, by ( i . i), is E(B). Moreover, the uniqueness
+                                                                                       497
+14                                           H. B A S S
+
+of q and normality ofH in part b ) both follows from [GL(A), H] =E(A, q) CH, which
+is a consequence of a ) .
+      It remains to prove that if HcGL(A) is normalized by E(A), and if q
+is the ideal generated by the coordinates of i — T for all reH, then E(A, q) CH.
+Let H^==HnGL(/z, A) and let q^ be the ideal generated by all coordinates of i — T ,
+reH^. Viewing H^ cAtt^n + i, A) it follows from (2.3) and (i .4) that ti^+i contains
+enough elementary matrices to capture E(/z + i, A, qj. Hence
+                        HDU,E(^ + i, A, qj = U,E(A, qj =E(A, q).
+
+§ 4. Structure in the stable range.
+      One would like to recover the stable structure theorem for GL(^, A), 72<oo.
+Fortunately a sufficient condition for this can be formulated as a very simple axiom,
+one which we will verify in a rather general setting in Chapter II (Corollary 6.5 and
+Theorem 11. i).
+      Definition, — Let oc== (a^y . . ., a^) be an element of the right A-module A\ We
+call a unimodular (in A^ if 2^A<^ == A. This is clearly equivalent to the existence of a
+linear functional /: A^A such that y(a) == i. Let n>_ i; we say n defines a stable range
+yorGL(A)if,forall r>n, given a = = ( ^ , ...,^.) unimodular in A7', there exist b^ . . . , ^ _ ^
+in A such that (a^+^i^r? • • "> ^ r - i + ^ r - i^r) ls unimodular in A7'"1.
+      Examples. — If A is a semi-local ring, then n = i defines a stable range. If A is
+a Dedeking ring n = 2 works. If A is the coordinate ring of a rf dimensional affine
+algebraic variety, e.g. if A is a polynomial ring in d variables over a field, then n=d-\-1
+defines a stable range for GL(A).
+       Lemma (4.1). — If n defines a stable range for GL(A) it does likewise for      GL(A/q)
+for all ideals q.
+       Proof.—Suppose r>n. Writing A'=A/q, suppose a' == {a[, . . ., a[} is unimodular
+in (A')^ say i ==2^. Lift t\ and a[ to ^ and ^ in A, so i ==^t^+q with ^eq. Then
+(^i, . . ., ^, ^eA 7 ' 4 " 1 is unimodular; so, by hypothesis, there exist c^eA such that
+(^i + q<7, . . ., ^ + ^r?) ls unimodular. Replacing a^ by ^ + ^3 then, we can assume a
+is unimodular. Again by hypothesis there exist b^eA rendering
+                                  (a^+b^a,, . . ., ^,_i+*,-A)
+
+unimodular. The images, V^ of the b^ in A' now satisfy our requirements.
+     Theorem (4.2). — Suppose n defines a stable range for GL(A).
+     For r>n and for all ideals q:
+       a) The orbits of E(r, A, q) on the unimodular elements of Ar are the congruence classes
+modulo q.    In particular E(r, A) is transitive,
+       b) GL(r, A, q) =GL(TZ, A, q)E(r, A, q).
+       c) E(r, A, q)   is a normal subgroup of GL(r, A).
+       For r>max(7z, 2):
+       d) E(r, A, q) = [E(r, A), E(r, A, q)] - [E(r, A), GL(r, A, q)J for all ideals q.
+
+ 498
+                                    K-THEORY AND STABLE ALGEBRA                                         i-
+
+       e) If HcGL(r, A) is normalised by E(r, A), then, for a unique ideal q, E(r, A, q) CH
+ and the image of H in GL(r, A/q) lies in the center.
+       For r;>max(27z, 3), and for all ideals q:
+       f) E(r, A, q) - [GL(r, A), GL(r, A, q)].
+         Proof, -a) We first show that if a =(^, . . .,^) = ( i + < 7 i , <7^ . . . , ^ ) is unimodular,
+  with <7,eq, then there is a reE(r, A, q) such that r a = ( i , o , . . . , o ) . Writing i as
+ a left linear combination of a^ . . ., ^ and multiplying this equation on the left by
+ q, = a,, the coefficient of a, in the new equation is a right multiple, say q, of q,, and hence
+ in q. Thus a, is in the left ideal generated by a^ . . ., a,^ <^, so (^, . .r., ^, ^)
+ is unimodular. Our hypotheses now say that we can find a[=a,-\-b,qa,, i<^i<r—i
+ such that (^,...^;-i) is unimodular. Set ^= i +^\b^eE(r, A/q), ^nd write
+ (^, . . . , < - i ) = ( i + y i , ...,y;-i). Then ^ e q , i ^ ^ r — i , and
+                                     Tia=(i+^, ...,^_i,^).
+
+ Writing i as a left linear combination of a[, . . ., ^, and left multiplying this equation
+ ^ ^i—§^ we can write q[—q^==^i^ ^^ ^^^^ Then if
+                                     T,=i+2^^EE(r,A,q),
+we have r ^ a = ( i + ^ , . . . , ^ ; _ , , ^ ) . I f a = = i - ^ then a^^= (i, ^, . . .^;_,, ^).
+Let T3 = i — (^i + . . . + ^-i^-i)i + ^i); then T3(7T2Tia == p = (i, o, . . ., o), and
+T3eE(r,A, q). The presence of a, which need not belong to E(r, A, q), is harmless,
+since o-^^p. Hence T^CT-^CTT^GEO-, A, q) solves our problem.
+         Now for the general case. Setting q =A, the case above was already general, and
+we have thus shown that E(r, A) is transitive. Now let q be arbitrary, and a=(B mod q
+unimodular elements ofA^ We can find oeE(r, A) so that a(3 = (i, o, . . ., o). Since
+era FEE op mod q the argument above provides a reE(r, A, q) with T(7a=c7(B; hence
+(T^TCTOC^P.
+
+      b) Given aeGL{r, A, q), the last column of^is congruent, mod q, to (o, . . ., o, i).
+Hence, by part a) above, there is a ^eE(r, A, q) such that T^==                                  with
+                                1
+^eGL(r- i , A , q ) , acqA'- .        Set ^==                  eE(r, A, q); then
+                                                   -a^ 1
+
+                                TgT^ ==-          eGL(r-i,A,q).
+
+By induction we can continue reducing until reaching GL(/z, A, q).
+     c ) E(r, A, q) is generated by all T^CT-^CT with T q-elementary and (jeE(r, A).
+Given aeGL(r, A) we must show a-^aeE^, A, q). But a-V^^: ((B-1^)0, where
+p=a°~ 1 . Since (by definition) E(r, A, q) is normalized by E(r, A), it suffices to show
+EB-^peE^, A, q). By part b) we can write P==yp, with yeGL^, A) and peE(r, A).
+Again, then, it suffices to show y-^yeE^, A, q).             Write y = ^       ° , <-eGL(r—i, A),
+and     =i+?^,?eq.
+
+                                                                                                  49P
+i6                                                H. B A S S
+                                                                              i        o
+          Case i. i or j is == r, say z === r. Then T =                                    , ^eqAr       1
+                                                                                                             so y^ 1==
+                                                                                                                             tc -i
+which is clearly in E(r,A,q). Similarly for j==r.
+      Case 2. ^J<y. Let a be the ^ column of c and 6 the j^ row of c""1. Then
+ba=o, being the (^j)^ coordinate of c~lc=l (recall z=t=j). One sees easily that
+         I + dqb o                            0
+      1
+yTY"" ==             . Let TI=              1     eE(r,A, q), and
+         0         I           qb{i +aqb )-   I
+                                                  i           a
+                                          G ==z                    eE(r, ^
+                                                  0            I
+
+We conclude by showing that (TiYTy'^eE^ A, q).
+                                    i    —a I                                     0       i -\-aqb       0 i            fl
+                                    0     I qb{i+aqb)-1                           i 0                    1 0            I
+
+                                    i    —a I + <^                  0  i           a
+                                    0     i qb                       i 0           I
+
+                                    i    —a I             (2             i          a—a              I        0
+                                    qb    i 0             I              qb       i + yba            qb       i 5
+since ba=o.
+      d ) Using r^>3 we have, from (1.3)3
+                     E(r, A, q) = [E(r, A), E(r, A, q)] c[E(r, A), GL(r, A, q)].
+Let T = i + a ^ . be one of the generators of E(r,A).                                          Suppose, for some a, that
+[T°,GL(r,A,q)]cE(r,A,q). Then
+[T, GL(r, A, q)] = [r0, GL(r, A, q)0]0-^ [r0, GL(r, A, q)]0-^^ A, ^'^-E^ A, q).
+Being free thus to choose o, we can transform T and assume T = i + ^ r ? * Now by
+part b), using r>n, GL(r, A, q) =GL(r—i, A, q)E(r, A, q), so it suffices to check that
+                                                          cC       o
+                                                                   0                                                            I    0
+[r,GL(r-i,A, q)]cE(r,A,q).                Let y                           eGL(r—i, A, q), and write T==
+                                                          o
+                                                          0         iI                                                          t    I
+Then
+                                              1
+                                I        0 c-         0        I     0 C              0       I                0
+                     [^ T] ==   —t       I 0          I        t     I 0              I       t{c—i)           i    •
+
+
+
+
+This is in E(r, A, q) since c= i mod q.
+      f) Since GL(r, A) = GL{n, A)E(r, A) and GL(r, A, q) == GL(n, A, q)E(r, A, q)
+there remains only, by virtue of part d ) , to show that [GL(^, A), GL(/?, A, q)] cE(r, A, q).
+But this follows from (1.8)3 since r>_2n.
+      e) We begin by showing that if H contains a non central element, CT, then
+HDE^A.q') for some q'+o. By (2.5) it suffices to produce, in H, a non central
+                                                            K\
+element with at least one coordinate zero. Let a = i . j be the first column of o-.
+                                                            W
+Since r>n, our hypothesis on n permits us to add multiples ofa^ to the other coordinates
+
+500
+                                K-THEORY AND STABLE ALGEBRA                                     ;-
+
+ and render them unimodular.        This can be accomplished by conjugating <r with a matrix
+
+ of the form   ^r-1       ^ eE(r, A), so we can reduce to the case where (^, .. ., a,_,)
+
+ unimodular.  We can then write a,=d^+ ... +^_^_,, so that if X = Ir - 1                   °
+                                                                  d                        r
+                                        laA
+ where d== [d^, .. ., d,_^, we have X-^ ; .
+                                             \o /
+       Now in the paragraph preceding Corollary 2.4 we showed that if (T commutes
+ with all T = i + ae^, then a has only one non zero coordinate, so we can finish with (2.5).
+ Hence we may assume there is such a T for which p=aw-^-1^ i.              Let (3 denote the
+                      1                 1
+ second row of a- and Y=apr- .              Then (just as in the proof of (2.5)) we have
+ (TTCT ^i+aap, so p==T~ l +aY.
+      We now claim that p is not central.           Otherwise   p=u.i    with   yecenterA
+by (2.4). With X as above, the last row of (X- ^y is zero, so that X- 1? == X- ^l + (X^a)-^
+and X-'T-1 have the same last row. Since i—T- 1 is concentrated in the upper
+left 2 x 2 corner, and i—X- 1 in the last row, we see, using r^, that the (r, ^'"coordinate
+of X ^ 1 is i. But the same coordinate of «X-1 is u. This shows that p central => p = i,
+contrary to our choice of T.
+     Now consider X- l pX=X- l T- l X+ (X-YXyX). This is a non central element of H
+whose last row agrees with that of \-l^-l\= i —saS, where e is the first column of X- 1
+
+and 8 is the second row of X== ^-1          ^ . Hence 8 has only one non zero coordinate
+
+ (using r>2), so the last row of X-^-^ has at most two non zero coordinates. We
+conclude then that X-^X has some coordinate zero, and again we finish with (2.5).
+       For the proof of e ) now, choose q maximal so that E(r, A, q) CH. Our problem
+is to show that the image, H', of H in GL(r, A/q) lies in the center of GL(r, A/q).
+Since E(r, A) normalizes H, H' is normalized by the image ofE(r, A), which, by ( i . i),
+is E(r, A/q). Hence ifH' is not central Lemma 4.1 permits us to apply the first part
+of our argument to H' and conclude that E(r, A/q, q'/q) CH' for some q'+q. Then
+the inverse image, L==HGL(r, A, q), of H'contains E(r,A,q'). By part d) now
+E(r, A, q') = [E(r, A), E(r, A, q')] c[E(r, A), L] C
+                           C[E(r, A), HJ[E(r, A), GL(r, A, q)]^ [E(r, A), H]E(r, A, q) CH,
+contradicting the maximality of q.
+
+§ 5. Dimension o.
+
+      Corollary 6.5 tells us that n= i defines a stable range for GL(A) when A is semi-
+local, and it is in precisely this case that the restrictions r^3 intervene effectively.
+The following refinements can be made:
+     Proposition (5.1). — Suppose n=i         defines a stable range for GL(A) (e. g. A can
+be any semi-local ring).
+
+                                                                                          501
+                                                                                      3
+18                                        H. B A S S
+
+       a) If A is commutative, then, for all ideals q and all rj> 2,
+
+                     E(r, A, q) =SL(r, A, q)(=SL(r, A)nGL(r, A, q)).
+
+In particular E(r, A) =SL(r, A).
+      b) Suppose i == w2 + y z^A ^ aW y z/nz^ ZTZ ^ center of A.        TT^TZ, /or all r^ 2,
+                E(r, A, q) = [E(r, A), E(r, A, q)] = [GL(r, A), GL(r, A, q)].
+
+       proof: _ a) Clearly E(r, A, q) CSL(r, A). Now an element of GL(r, A, q) is,
+by (4.2) b ) , reducible modulo E(r, A, q) to GL(i,A, q), i.e. to a unit, and that unit
+is evidently the determinant of the original matrix. This proves a ) .
+       b ) For r > 3 b ) is just parts d ) and/) of Theorem 4.2. However, the proof there
+uses r > 3 only to invoke (1.3) and conclude that E(r, A, q) == [E(r, A), E(r, A, q)].
+Our hypothesis permits us to use (1.6) instead for the same purpose when r = 2 .
+       As a consequence of part a) above and (1.1) we have:
+       Corollary (5.2). — Let q be an ideal in the commutative ring A for which A/q is
+semi-local. Then, for all q'3q, E(r, A, q') -> SL(r, A/q, q'/q) is surjective for all r. In
+particular, SL(r, A) -> SL(r, A/q) is surjective.
+       Remarks. — i. For local rings some further refiniments of our results can be found
+in Klingenberg [24].
+       2. Let GL(r, A, q)' be the inverse image in GL(r, A) of the center ofGL(r, A/q).
+ One would like the following converse to part e ) of Theorem 4.2: If
+                                 E(r,A,q)cHcGL(r,A,q)'
+
+then H is normal. This would follow from: E(r, A, q) = [GL(r, A), GL(r, A, q)']. For
+a commutative local ring this follows from (4.2) f), since GL(r, A, q)' is then generated
+by GL(r, A, q) and the center of GL(r, A). Klingenberg's proof of this for non commu-
+tative A appears to contain a gap, due to the erroneous equation, e< gJ(a~lb'~la) = i
+on p. 77 of [24].
+      3. If A is the ring of integers in a number field then n = i defines a stable range
+for GL(A). Our results in this setting are, to some extent, well known. For example,
+the last part of Corollary 5.2 (familiar to function theorists for A = Z ) and condi-
+tion (4.2) b) for q = A were known long ago by Hurwitz. Moreover, Brenner [13]
+recognized (4.2) b) for A==Z. However the commutator formulae appear to have
+escaped notice even for A = Z . They turn out to be essential in the proof (see § 21)
+that every subgroup of finite index in SL(n, Z), 7Z>3, contains a congruence subgroup.
+ The discovery of the generality of these formulae lies ultimately in J. H. C. Whitehead's
+ work on simple homotopy types [36].
+
+
+
+
+ 502
+                                        CHAPTER II
+
+         STABLE STRUCTURE OF PROJECTIVE MODULES
+
+§ 6. Semi-local rings.
+     Let A be a ring. Throughout this chapter, <c A-module ?9 means right A-module,
+and " ideal ?? , unqualified, means two-sided ideal. Let P be an A-module, and aeP.
+We write P*=-Hom^(P, A) and define
+                                o(a)-Op(a)-{/(a)|/GP}.
+o(a) is a left ideal in A, and it is clear that o(oc) =A if, and only if, the homomorphism
+g : A-^P, g{a) ==oia, has a left inverse. In this case we call a a unimodular element of P.
+       Lemma (6.1). — Let o- : Q^P be a homomorphism of A-modules with Q^ finitely
+generated and projective. Then or has a left inverse (i.e. is a monomorphism onto a direct
+summand) if, and only if, cr* : P*->Q* is an epimorphism.
+       Proof. — G has a left inverse => a* has a right inverse => (T** has a left inverse => cr
+has a left inverse, since Q^=== Q** is reflexive. Moreover, (T* has a right inverse OCT*
+is an epimorphism, since Q* is projective.
+       Denote by rad A the Jacobson radical of A.
+       Corollary (6.2). — Let a, T : Q—P as in (6.1)3 and assume Im(o-—-r)CP.radA.
+Then a has a left inverse o T does.
+       Proof. — Let /eIm((7—T)*cQ;; then /(Q) Crad A. Since Q if finitely generated
+and projective this implies that /erad A. Q*. Hence Im a* Cim T* + rad A. Q*. Since Q*
+is finitely generated, Nakayama's Lemma tells us that a* surjective =>T* surjective.
+Using (6.1) now, this completes the proof.
+       Definition. — Call A semi-l^cal if A/rad A is an Artin ring. It follows then that
+A/rad A is a finite product of full matrix algebras over division rings.
+       For the balance of this section, A always denotes a semi-local ring. The lemmas which
+follow contain the <( zero dimensional 5? case of the general results to follow.
+       If S is a subset of an A-module, P, denote by (S) the submodule generated by S.
+We shall say
+                                       /-rank^(S;P).>r
+if (S) contains a direct summand of P isomorphic to A^ We will suppress the
+subscript " A ?? when A is fixed by the context. In what follows A is a fixed semi-local
+ring, and P denotes an A-module.
+      Corollary (6.3). — /-rank(S; P) =/-rank((S) +P.rad A; P).
+                                                                                           503
+20                                       H. B A S S
+
+      Proof. — If y-rank((S)+P.rad A$ P)^r there is a homomorphism a : A^P
+having a left inverse, and with Im crC(S) +P.radA. Hence we can find T : A^P
+with ImTC(S) and Im(cr—r)CP.radA. By (6.2) T has then also a left inverse,
+soy-rank(S; P)^y. The reverse inequality is obvious.
+      The following simple result will play a fundamental role in what follows.
+      Lemma (6.4). — If be A and a is a left ideal such that AbJ^a=A, then b-\-a
+contains a unit.
+        Proof. — Since units in A/rad A lift automatically to units in A we may assume A
+is semi-simple. Passing then to a simple factor we can reduce to the case A=Endj)(V),
+where V is a finite dimensional right vector space over a division ring D. In this case a
+can be described as the set of endomorphisms which annihilate some subspace, W, of V
+ (a == Ac, e2 == e, and W = ker e). The fact that Ab + a = A guarantees that ker b n W == o.
+Write V^W^W'==&W©U. Now we can clearly construct an automorphism u such
+that z / | W = = 6 | W and ^(W')=U. (Note that W^W=>W'^U.) Since a==u—b
+annihilates W, a^a and we're done.
+      Corollary (6.5). — n== i defines a stable range for GL(A) (in the sense of § 4).
+      Proof. — By definition, we must show that if Aa^+. . . +A^=A, r > i , then we
+can add multiples of^to a^, . . ., a^_^ so that the resulting r— i elements still generate
+the unit left ideal. Let b=a^ and a==Aa^+ .. . +Aa/, then (6.4) provides us with a
+unit u = a^ + b^ +. • . + b,a,. Hence ue {A{a^ + b,a,) + Aa^ +. .. + A^_i), as required.
+      The following is a technical little argument with two important corollaries: Let a
+and (B be unimodular in (BA®P. Writing a = ( B 6 + a p we have A==o(a) =A6+o(ap).
+By (6.4) u==b+a is a unit for some fleo(ap). Let / be an endomorphism of (BA<3P
+such that /(P) ==o,/(P) CjBA, and f{^p)=^a. The existence of/follows from the
+definition of o(ap) =0p(ap). If ( p i = i + / then (pi(a) =;Bz/+ap. Now let g be the
+endomorphism killing P such that ^((B) == —apM~ 1 , and set ^2==I+gf I^ ( P =: =?2?l
+then (i) 9(a)=pz/, (ii) 9 leaves invariant all submodules containing (BA+aA, and (iii)
+since f2==o=:g2y 9 ls an automorphism.
+      Corollary (6.6). — A®P^A®P'=>P^P'.
+      proof. — Using the hypothesized isomorphism to identify the two modules, we can
+write pA©P = aAOP'. With the 9 constructed above we have, from (i), cp(aA) = (BA, so
+                   P^(iBA©P)/pA=(p(aAeP / )/9(aA)^(aA®P')/aA^P'.
+
+       Corollary (6.7). — If M is a submodule of P, then
+                       /-ran^A^M; A^P) =r+/-rank(M; P).
+
+      Proof. — It suffices to treat the case r = = i . Moreover, the left side is clearly at
+least as large as the right.
+      Let oci, . . . . oc,£pA®M be a basis for a free direct summand of pA©P. (P is
+assumed unimodular here of course.) Now construct <p as above with a==oci. By (ii)
+above (p(a,)e(BA®M also, ^<z<,s, so we can replace a, by 9(0,) and, by (i), reduce to
+
+604
+                               K-THEORY AND STABLE ALGEBRA                                      21
+
+the case (BA == o^A. But then we can subtract multiples of ai from ocg, . . ., a, and further
+render o c 2 , . . . , a , e M . Thus, /-rank(pA®P)>^/.rank(M;P)>j—i, as required.
+      Corollary (6.8). — If a ^ ^ ^few^, aW S fl ^A^ o/ P, then
+                              /-rank(S, a; P)^i +/-rank(S; P).
+           Proof. — Suppose /-rank(S, a; P)>:r; i.e. there is a (T : A'-^P with a
+ left inverse, and I m c r C ( S ) + a A . Let /:A®P->P by /(^)=aa+^. Then
+ I m ( / | ( A ® ( S ) ) ) = a A + ( S ) D l m a , so we can find g : A^AOP such that a==fg
+ and Im^CA®(S). The left invertibility of a implies that of g, and hence
+/-rank(A®(S); A®P)^r. The present Corollary now follows from the proceeding one.
+          Lemma (6.9). — Suppose o^, . . . , a ^ e P and
+                               /-rank(ai, ..., a,.; P) =t<_s<r.
+Then we can find Pi, .. ., Pg of the form
+                                 P,=a,+S,>,a,^,,        ^<_i<_s,
+
+such that /-rank(pi, . .., (Bg; P) ==t.
+      Proof. — We induce on t, the case t==o being trivial. If t>o we can
+write P=pA®P' with p a unimodular element of P in ( a i , . . . , a , ) . Writing
+^i^^i+^-i then, with a^'eP', we must have 2^A==A. By (6.4) (applied to the
+opposite ring of A, since we are now dealing with right ideals) we can find a unit
+u = &i + S,>i^i,- Set (B^ --= oci + ^j>i^ij = P^ + Pi. Then pi is unimodular in P (since
+Meo(Pi)), so P==piA®Pi for some Pi. Write a,==p^+y,, ^ePi, i^'^r. Note next
+that (a^, a.2, . .., a^) = (Pi, 03, . . ., a^) = (pi, Vg, . . ., Yr)- Hence, we conclude from (6.7)
+that /-rank(v2, ..., Yr5 P!) == ^ — I • Ky induction, we can find
+                                 ^ == Tz + ^zY^ 2 ^^^
+such that /-rank(82, . . ., 8,; P^) ==t—i. Writing
+                     ^=a,+^.>,a^,=Pi(^+^.>,^.) +8,,                 2^^,
+we see that (Ri, pg, . . ., pj = (Pi, §23 • • •? S8)5 and this clearly solves our problem.
+
+§ 7. Delocalization. The maximal spectrum.
+     As a basic reference for the material of this section, we refer to Bourbaki [12]
+or Grothendieck [22, Ch. o].
+     Let A be a commutative ring and
+                                         X==max(A),
+the topological space whose points are the maximal ideals of A, and whose closed sets
+are the sets of all maximal ideals containing a given subset of A.
+      If M is an A-module and ^eX {x is a maximal ideal in A) we let M^A^^M
+denote the localization of M at x. Further, define
+                            supp M(=suppxM) ={xeX\M^o],
+
+                                                                                              505
+22                                         H. B A S S
+
+The topology in X is better described, for our purposes, as follows: the closed sets in X
+are precisely those of the form supp M where M is some finitely generated A-module.
+      Let A be a finite A-algebra (i.e. finitely generated as an A-module). If P is a
+A-module, P^ is a module over the A^-algebra, A^., and our finiteness condition on A gua-
+rantees that A^ is semi-local, for all xeX. Hence, if S is a subset ofP, we can consider
+f-rank^(S; PJ, as defined in § 6. (Here we are confusing S with its image in P^, but
+this should cause no difficulty.) We now define
+                          /-rank^S; P) = inf^/-rank^(S; PJ,
+and
+                                /-rank^(P)-/-rank^(P;P).
+
+When A is fixed, we shall suppress the subscript.             Since the definition is local,
+(6.7) immediately yields:
+      Corollary (7.1). — If M is a submodule of the A-module P,
+                         /-ran^CM; A^P) ==r+/-rank(M; P).
+
+      More generally, we define the (< singularities 55 of ScP by
+                            F,(S; P) ={^X|/-rank^(S; PJ<j}.
+
+Thus, F o ( S ; P ) = 0 for any S, and F , ( 0 ; P ) = X for all j>o, for example. It is
+essential to our method that these sets be closed, and for this we need a " coherence 9?
+condition on P.
+      Lemma (7.2). — Suppose P is a direct summand of a direct sum of finitely presented
+A-modules.   Then, for all subsets S of P and for all j , F,(S; P)   is closed in X.
+      (Recall that a finitely presented module is the cokernel of a homomorphism A^A5.)
+      Proof.—Let xeX.—F^.(S; P). Then if Q^A^ there is a homomorphism a : Q^->P
+such that Im(jC(S) and such that ^ : Q^->P^ has a left inverse. (One simply chooses
+elements in (S) whose images in P^ are a basis for a direct summand.) It suffices now
+to show that { j ^ X j Gy has a left inverse} is open, for the latter will then be a neighborhood
+of x in X—F^.(S; P). Since Im cr is finitely generated, our hypothesis on P permits
+us to reduce this last question to the case where P itself is finitely presented. Under
+these conditions the natural homomorphism (P^—^P^)* is an isomorphism for all jyeX.
+(see [5, Lemma 3.3]); the second * here refers, of course, to the duality ofA^-modules.
+The same remark applies to the free module, Q, so that we can conclude from the
+commutative square,
+                                             Wz,
+                                       (PZ —> (0:),
+
+                                       ^            'i-
+                                       w ^ w,
+506
+                              K-THEORY AND STABLE ALGEBRA                               23
+
+an isomorphism M^coker(c^)*, where M=coker(c7*). Now we have from (6.1)
+that [j\^y has a left inverse }== [y \ (^)>li is surjective}={^[My=o}==X—suppM.
+Since M is finitely generated (being a quotient ofQ*),supp M is closed, and this completes
+the proof.
+      It is useful to note above that, since M==ooM — o for all ^, o has a left
+inverse o^y does for all jy. Applying this to a : A->P with ( j ( i ) = = a we obtain:
+      Corollary (7.3). — With P as in (7.2) and aeP, a z'j unimodular in P z/, W OTZ^ z/;
+Fi(a;P)=0.
+       Examples. — i) Lemma 7 . 2 applies, notably, when P is either projective or finitely
+presented.
+      2) The inclusion Z->Z^, (rational j^-adic integers) has a left inverse only at
+(^)emax(Z).
+      3) I f P is the Z-submodule of Q, generated by {p~l\p prime}, and if q is a fixed
+prime, then Fi(<7'~1; P) ==max(Z)—{(<7)} is not closed, whereas P is locally free (of
+rank one).
+      Finally, we recall some topological notions. In any topological space, X, a closed
+set F is called irreducible if F =t= 0 and if F = G u H with G and H closed =>F = G or H.
+We then call codim F(==codimxF) the supremum of the lengths, n, of chains,
+                                     Fo=FcFiC...cF,
+of distinct closed irreducible sets in X. For arbitrary closed F we define codim F to
+be the infimum of the codimensions of the irreducible closed subsets of F, with the
+convention codim 0 == oo. The supremum of the codimensions of non empty closed
+subsets of X will be called, dim X.
+      We call X noetherian if the closed sets satisfy the descending chain condition. In
+this case every non empty closed set F is a finite union of irreducible closed sets. Such
+a representation of F, when made irredundant, is unique up to order, and we call the
+intervening irreducible closed sets the irreducible components of F.
+      For example, if A is a commutative semi-local ring, max (A) is a finite discrete
+space, and hence a noetherian space of dimension zero. If A is only noetherian, then
+max (A) is a noetherian space of dimension ^Krull dimension A == dim spec (A).
+
+§ 8. Serre's theorem.
+
+      For the next four sections we fix the following data:
+      [ A is a commutative ring for which
+(8.1) \ X = = m a x ( A ) is a noetherian space.
+      ( A is a finite A-algebra.
+      The next theorem is a slight generalization of earlier versions. We include it
+for the sake of completeness, and also for the proof below, which is perhaps a little more
+manageable then its predecessors.
+
+                                                                                       507
+24                                         H. B A S S
+
+      Theorem (8.2). — (Serre [29]; see also [5]). Suppose P is a direct summand of a direct
+sum of finitely presented A-modules. Then, if y-rank^(P)>^== dim X, P^AOP' for some P\
+      We will derive the theorem from the two lemmas below, wherein P is always
+assumed to satisfy the coherence condition of the theorem. This assumption permits
+us to invoke (7.2) which ensures that the various <( singular sets " intervening in the
+proofs are closed. All codimensions refer to codimension in X.
+      Lemma 7. — If jf-rank P>r, there exist 04, . . ., oc^eP such that
+                            codim F, (04, ..., a,; P)^(r+ i) —j,                       all j>_o.
+      Lemma I I . — If 04, . . ., a^eP, r>i, and A:eZ, are such that
+                              codim F,.(o4, .. ., a,$ P) >k—j\                          i <_j<_r,
+then there exist ^=a^+<V^, for suitable a^eA, i^j^r—i, such that
+                              codim F,((Bi, ...,(B,_i;P)^;-;,                      i^'^-i.
+
+       Proof that I and II =^(8.2): Apply I to P, with r = = r f + i , to obtain
+04, .. ., a^eP such that codim Fy(o4, .. ., a,.; P)^(r+ i) —j for all j^o. Now, with
+k=r-}-i, apply II, (r—i)-times. The result is a single element, [BeP, such that
+codim Fi((B; P ) J > A ; — i = = r = = r f + i . Since r f = d i m X this implies Fi((B;P)=0, so,
+by (7-3)3 P ls unimodular, and this completes the proof.
+       Proof of I. — We induce on r, the case r==o being trivial. Suppose 04, . . ., a^
+have been constructed as in the lemma, and we want <^r+i (assuming y-rank P > r + i).
+For o^j<r, let {D^} be the ^largest" irreducible components of F^(ai, . . . , a ^ ; P ) ,
+i.e. those of smallest codimension, ( y + 1 ) — ( j + 1 ) - Of course there may be none,
+but that's all the better. Since codimFy(ai, . . .,OL/, P)>{r+ i) —j.D^c^F^ai, . . .,a,;P)
+for all v. It follows (since Dy^ is irreducible) that we can choose
+                         x ( j , v)eD,,-[F^, . . ., a,; P)uU^D,J.
+
+ Since x{j\ v)eF,^, ^F, we have/-rank^^.^(ai, . . ., a,; P^(,^) =j^r, for o<jXr, and
+ allv. It follows now from our hypothesis on P and (6.7) that we can choose Py^^P such that
+/-rank^^(ai, ..., a,, P,,; P^,,))>J+ i. Since x(j, v) are (clearly) all distinct, we can
+ write i ==2,^ in A, with e^=S^^ mod x(h, [L). Setting a^^=2^p^,, we
+ have a^i=P^mod.v(j,^) so, by (6.3), /-rank^.^(ai, ..., a,+i; P,;(^))J>J+ i, o^j^r.
+ Hence A:O", v)^F^i(ai, . . ., a,+i; P) (by definition) so also D,,4:F^(ai, . . ., a,^; P).
+ On the other hand, F^(ai, . . ., a^^; P) CF^i(ai, . . ., a,; P), and since the former
+ contains no component of extreme codimension of the latter, we conclude, as desired,
+ codim F,+,(ai, .... a^,; P)^(r+ i) -U+ i) + i - (^+2) -(j+ i), o^^r. For the
+ remaining values ofj, Fo = 0 has infinite codimension, and if j> r, (r + 2) — 0 + i) ^o?
+ whereas all codimensions are ^>o.
+       Proof of II. — For o^j'<r let {D,v} be the irreducible components of
+ F._^(oci, ..., a,.; P) of lowest possible codimension, k—(j+ i). Then
+                                     D,^F,(ai, . . . , a , ; P )
+
+5^
+                             K-THEORY AND STABLE ALGEBRA
+                                                                                            25
+so we can find
+                        x ( j , v)eD,,-[F,(ai, . . ., a,; P) uU^D,J;
+
+thus /-rank^.^(ai, . .., a,; P^)) ==j<r, for o<,j<r. By (6.9) we can find elements
+^Aco.v) such that, if P^-a.+a^eP^^^, we have
+                         /-rank^.^((B^, . . ., (B(,_^; P^.^) ==j.
+
+If we modify our choice of^, modulo the radical ofA^.^ we can even choose the a,,eA,
+and hence p,,,eP. This is permissible by (6.3). Now choose ^, = 8^ ^mod ^(T, ^
+as in the proof of I, set a,==^a^e^ and put p,==a,+a^, i^<r-i. Since
+(B,=[B,,mod ^0, v) we have, by (6.3) again, /-rank^.^, . .., (B^; P^.^) ^ o^j^r,
+all v. The form of the (B's makes it evident that ((B^ .... (B^, a,) = (a^, . .., a,_,, a,),
+so it follows from (6.8) that F,((Bi, . . ., (B^,; P) cF,^,(a,, . .., a,; P). Since we have
+arranged that the former contains no irreducible components of lowest possible
+codimension, A : — ( j + i ) , of the latter, we conclude, as desired, that
+                   codim F,(pi, ..., (B^; P)>k-(j+ i) + i ==k-j\                    o^j<r.
+
+      Counterexamples. — i) To see the necessity of the coherence condition in Serre's
+Theorem, we can let P=Q©Q, where Qis the Z-submodule of the rationals generated
+^ {P~1\P prime}. Here/-rankz(P) = 2 and dimmax(Z)=i, but P has no projective
+direct summands.
+       2) The following example of Serre shows that P can even be made finitely
+generated and locally free. Let X be a Cantor set on the real line andj/ a point of X
+which is a limit point from both the left and right in X. Set DQ={X<==X\X^ y},
+DI ={xeX\x<jy}. With A= G(X), the ring of continuous real valued functions on X,
+it is well known that max(A)==X and is hence of dimension zero. Moreover A is
+locally a field so that A-modules are locally free. Let a, be the ideal of functions
+vanishing on D,, z=o, i, and let P= (A/do)®(A/ai). Since supp A/a,=Di_, we see
+that P is locally free of rank one except at {^}== D^nDi, where it has rank two. Hence,
+if P had a free direct summand, the complementary summand would have support {j}.
+If
+    (/o^/i) 6 ? were in this summand, /,eA/a,=C(Di_,), /, would be a function on Di_,
+vanishing everywhere except, perhaps, atj\ Since y is a limit in D^_,, /, has to vanish
+also atj/, and hence /,=o. Thus the complement would have to be zero, and we have
+a contradiction.
+
+§ 9. Cancellation.
+
+       A, X, and A are as in (8.1). " Cancellation 5? refers to Theorem 9.3 below.
+       Theorem (9.1). — Let Q and P be protective A-modules, a a left ideal, and
+a=aQ+apeQ©P an element such that o(a)+a==A. (See § 6 for definition of o(a).)
+Suppose, moreover, that /-rank P>d== dim X. Then there is a homomorphism f: Q^P
+such that o(/(aQ)+ap)+a==A.
+
+                                                                                          509
+                                                                                      4
+26                                       H. B A S S
+
+        Proof. — We induce on d, and the case d=o will be subsumed in the general
+induction step.
+        Our hypothesis makes Serre's theorem available, to the effect that P=p / A(DP'
+for some unimodular [B'eP; say ocp=== (B'6+a'. Then O((XQ)+A64-o(a')+a==A. Let
+FI, . . . , F g be the irreducible components of X, and choose ^eF^—U.^F., i^'^.
+Modulo the product of the x^ A is a semi-local ring, so we can apply (6.4) to find
+a^-\-a' -{-ceo{c(.q) +o(oc') +0- such that the image of b-\-a^-\-a'-\-c is a unit in A modulo
+the x^ and hence already in A^ , i<^i<^s. Let ^ be an endomorphism of P such
+that ^(P') =o,^(P / )C(B'A, and g{^)==^a\ The existence of g follows from the
+definition of o(a') (§ 6). If cr=ip-|-^ then o- is an automorphism (since ^^o)
+and (7ap=(B'(6+a') +a'. Setting p^o-'^P') and ^=G~l(oLf)eP^==(J~l^Pf) we have
+P=(BA®PI and ap= ^(b+a') +ai. Now choose/i : Q-^pACP such that /i(ocQ) = (B^Q;
+again, f^ exists by the definition of o(aQ). Putting b^ == a^ -\- b + a ' , then, we have
+(*)                               /i(^)+ap=(B6i+ai,
+
+and & i + ^ is a unit in A^ , i^'^. If dim X==o then X = { ^ i , . . ., ;vJ, and we're
+done. In general, we can find a teA belonging to none of the ^ such that tA CAb-^ + d.
+(E. g. semi-localize at ^, . . . , A : g , solve ( ^ + ^ ) ^ = I 5 and clear denominators.)
+      Let A*==A/A^, A*=A/A^, a* == image of a in A*, etc. Then X^nw^A*) is
+a closed subset of X containing no x^ hence no F^, so dim X^dim X. Hence,
+using (7.1) we have y-rank^=P^ ^ y-rank^P^ =y-rank^ P — i > dim X — i ^dim X*.
+Consider y* =aQ+a^EQ*®P^. Since A=o(ao) +A&i + o(ai) + a we have, over A*,
+o(y*) + A*^ + a* == A*. Putting this together we are in a position to apply our induction
+hypothesis to Y*eQ*®P^ and the left ideal A^+ci*, the result being a homomorphism
+h* : Q*->P^ such that O^OCQ + o^) + A*^ + a* == A*. Since Q is project! ve we can cover A*
+with an h : Q->PiCP.
+      Now, for the theorem we take f=fi+h: Q^(BA®Pi=P. It remains to show
+that b + a = A , where b=o(/aQ+ap). By (*) above we have
+         /aQ+ap=(AaQ+/iaQ)+ap-AaQ+(^i+a,)=P&i+(AaQ+ai)epA®Pi.
+
+It is thus evident that A^Cb, and that o(AaQ+oci)Cb. But since P^ is projective it
+follows that the image of o(AocQ+ai) in A* is O^OCQ+O^). By construction of h* this
+together with A*^ + a* generates A*. Back in A, then, o(AaQ + a^) + Ab-^ + a + At == A.
+But At CAb^ + a so we have b + a^ O(A(XQ + ai) + Ab-^ + a = A, as required.
+       Let P be a A-module. Recall that an element oceP is unimodular if there is
+an /eP*=Hom^(P, A) for which / a = = i . We shall similarly call /eP* unimodular if
+there is an aeP for which yix=== i (i.e. if^is surjective). Further, we shall find it useful
+sometimes to identify P with Hom^fA, P); i.e. we identify oceP with g^ : A->P defined
+by ^(a)==--a<2. Thus, if f: P—^A we can compose, OL/: P->P; a/ is defined by
+ (a/)p==a(/p) for peP. An endomorphism T of P will be called a transvection if T = ip+o/,
+where aeP,/eP*,ya = o, and either a or y is unimodular. T is then necessarily an auto-
+
+ 510
+                                K-THEORY AND STABLE ALGEBRA                                           27
+
+morphism, since (a/)2 == o. If q is an ideal in A we call T a q-transvection if Im(o/) CPq.
+      Denote by GL(P) the group of A-automorphisms ofP, and by E(P) the subgroup
+generated by the transvections. More generally, if q is an ideal, let E(P, q) be the
+subgroup generated by the q-transvections. Suppose T = i + vf is a q-transvection
+and <reGL(P). Then r° == (T~ ^(T == i + (^~l^)(f^) is clearly again a q-transvection;
+hence E(P, q) is a normal subgroup of GL(P). The next result should be compared
+with Theorem 4.2 a).
+      Theorem (9.2). — Let M be a A-module which has a projective direct summand of
+y-rank>rf+ I (rf==dim X). Then for any ideal q in A, the orbits of E(M, q) operating on
+the unimodular elements of M are precisely the congruence classes mod q. In particular^
+E(M) is transitive on the unimodular elements.
+      Proof. — By hypothesis, M^P'ON with P' projective and /-rank ?'>(/+i.
+By Serre's theorem (twice), P' == pA®yA®Pi with p and y unimodular.
+      Let q be an ideal in A. We will first show that if a is a unimodular element of M
+and if a==(B mod Mq, then there is a reE(M, q) such that ra=jB.
+      With P=pACPi we have M==vA®PeN. Write a ^ y ^ + ^ + ' ^ N - since
+a s peP mod q, we have yeq. There is an h: M->A with A a = = i , by assumption,
+so we can write
+(*)                                 i ==h^==(h^)q+h^+h^.
+
+Let a = y r + a p + a N with r=q(h^}q. To see that a is also unimodular, we first note
+that o(a) ==Ar+o(ap) +o(a^). Left multiplying (*) by q, then, we find ^eo(oc), so
+that o(oc) D Aq + o(ocp) + o(a^) = o(a) == A.
+     Now we apply Theorem 9.1 above to Q=yA, P, Yy+ocpeQ®P, and a=o(a^).
+The result is an /: Q—P such that o((/y)r+ap) +0(0^) =A. Let &i= (/y)^(Ay)ePq,
+and let g^ : M->A by ^i(y) == i and g^(P@'N)=o. Then TI= IM+SI<?I£E(M, q),
+and Tla==Y ( 7+ a p+ a N e T^®P®N, where ap== (yY) r + a p• ^e have arranged above
+that o(ocp) +o(a^) ==A, so a p + a ^ is unimodular. Hence we can find an A' : M->A
+with h'\oLy + a^) = i, and such that A'(y)==o.
+     Write a p = p 6 + a i e P = = p A © P i . Since T i a = ( B m o d M q (recall T i = i ^ m o d q ) we
+have
+ (**)                                 (B(6—i)+oci+a^Mq,
+and in particular, i — & < = q . Thus, if g2=={^—b)—q)hf : M->A, Im g^^q, so
+^2==IM+Y<§ ^ 2^E(M, q). T 2 T i a = = Y ( i — ^ ) + a p + a N . Let a= i^+ P^eE(M); then
+      c;T2Tia==Y(i—&)+(ap+P(i—6))+ocN=T(i—&)+P+ai+aNeYA©(BA®Pi®N.
+
+Let ^3 : M->A by ^3?=! and ^(yAePieN) ==o, and let 83== — ( y ( i —b) +001+0^),
+which, by (**), is in (ker^q. Then Tg= 1^+83^3 eE(M, q) and T3<jT2Tia = P. The
+presence of a, which need not belong to E(M, q), is harmless because (T"~ 1? === P — (B^iP == (B,
+so that T=G~ l T3(7T2TleE(M, q) solves our problem.
+
+                                                                                                     522
+28                                       H. B A S S
+
+        Now for the general case, we note first (taking q = A ) that we have shown E(M)
+to be transitive on unimodular elements. Suppose given arbitrary unimodular elements a
+and a 7 in M with assa'modMq. Choose creE(M) with cra'=p (p as above). Then
+CTOC = era' == (B mod Mq so the argument above produces a reE(M, q) with T(ya=<7a'.
+Finally, (j'^cra^a' does the trick.
+       Theorem (9.3) ( <( Cancellation 5 ? ). — Let M. be a A-module which has a projective
+direct summand of y-rank></=dim X, and let Q be a finitely generated projective module.
+Then, if M' is another A-module,
+                               QeM^Q©M' => M^M'.
+      Proof. — Since Q^Qf^A" for some n and Q' we can reduce, by induction on 72,
+to the case Q^=A. Then using the given isomorphism to identify A€)M with A®M'
+we can write (3A®M == aAOM' with P and oc unimodular. (BA<9M satisfies the hypo-
+thesis of (9.2)3 so there is a T£GL((BA®M) with ra=p. Hence
+               M^(pA®M)/iBA=T(aA®M: / )/T(aA)^(aAeM')/aA^M / .
+
+       Remarks. — i) If M satisfies the coherence condition in Serre's Theorem, and
+if y-rankM>2rf, then M has a free direct summand ^A^4'1 (by Serre's Theorem),
+and hence M fulfills the hypothesis of (9.3) above.
+       2) If d==o then A is semi-local, and (6.6) gives the conclusion of (9.3) with
+no restrictions on M. If d==i and A==A is commutative, then for M projective no
+further hypothesis is needed. For one can reduce this case further so that spec (A) is
+connected and M is finitely generated (using [6]). Then one applies Serre's Theorem
+to make M and M' each a direct sum of a free module and a projective module of
+rank one. The desired isomorphism then follows by taking suitable exterior powers
+ (see [29, no. 8]).
+       However, for d==i and A non commutative, (9.3) gives the best possible result
+even for M projective and finitely generated (see Swan [33]). For d>i (9.3) is best
+possible even with A = A commutative. For if A=='R[x,jy, ^], ^ 2 +J ;2 +^ 2 = i? is the
+ algebraic coordinate ring of the real 2-sphere, and if P=A 3 /(^,^3 ^)A is the projective
+A-module corresponding to the tangent bundle on S2, then P is not free, whereas
+ A®P^A®A2 (see Swan [34, Example i]).
+
+§ 10. Stable isomorphism type.
+      Keep A, X, and A as above (see (8.1)). The Proposition which follows is merely
+a reformulation of a special case of the preceding results. We include it for the sake of
+putting in evidence the faithfulness of the analogy between the present theory, and its
+topological source (see Introduction).
+      Proposition ( 1 0 . 1 ) . — Let P^(A) denote the isomorphism types of finitely generated
+projective A-modules P, such that P^A^, for all xeX.        Let f^ : P^(A) -> P^i(A) be the
+map induced by ®A.    Then, if dimX=rf:
+
+512
+                               K-THEORY AND STABLE ALGEBRA                                 29
+
+     1. (Serre's Theorem) j^ is surjective for n>d.
+     2. (Cancellation)^ is infective for n>d.
+     Of course our theorems are much more general. For example, one could formulate
+a similar result for all finitely presented modules, relative toy-rank. Thus, calling M
+and N " stably isomorphic 33 if Q®M^Q®N for some finitely generated projective
+module Q, we see that stable isomorphism == isomorphism for semi-local rings (6.6),
+and more generally also for M projective of y-rank> d, or finitely presented ofy-rank> 2d.
+     In a special case of some interest we can make a mild improvement in Serre's
+Theorem for non projective modules.
+         Proposition (10.2). — Let A. be a Dedekind ring of characteristic ^ero and n a finite
+group.    If M is a finitely generated torsion free An-module of y-rank^>i, then M=P®N
+with P a projective An-module locally free of rank one.
+       Proof. — With L the field of quotients of A let A be a maximal order of LTC
+containing ATT, and let a be the annihilator of the A-module A/ATT. Characteristic zero
+guarantees a 4= o. If we semi-localize at the maximal ideals containing a we obtain
+a free summand of M (Serre's Theorem in dimension zero) generated, say, by aeM.
+Let P be the A-pure submodule of M generated by oeATT; this is automatically an
+ATT-submodule. Then o—^P->M->M/P-^o is an exact sequence of torsion free
+Arc-modules which splits at all maximal ideals containing a. At all others it splits auto-
+matically because ATT there agrees with the hereditary ring A. Hence the sequence
+splits — its is an element of Ext^(M/P, P) which vanishes at all localizations. P, being
+locally projective, is projective.
+       Finally, since L®^P is LTc-free of rank one, a theorem of Swan [32] (see also [5])
+guarantees that P is locally free of rank one.
+       Remark. — Short of the last sentence, and its special conclusion, it is clear that we
+have invoked only very general properties of ATC.
+         Corollary (10.3). — With A and TC as above, if M is a finitely generated torsion free
+Arc-module of y-rankj>2, and Q, a finitely generated projective An-module, then
+                                  QeM^QCM' => M^M'.
+      This Corollary responds to a question of Swan [32] and Swan himself has shown
+it to be best possible [33]. He shows, moreover [33, Theorem 2], using a result of
+Eichler [19], that if A is a maximal order in a semi-simple algebra over a number field,
+then one can always cancel projectives unless R®zA has a quaternion factor.
+
+ § ii. A stable range for GL(A), and a conjecture.
+       We keep A, X, and A fixed as in (8.1).
+        Theorem (11.1). — If 6?=dimX, then r f + i defines a stable range for GL(A),
+ in the sense of § 4. Hence, the conclusions of Theorem 4.2 are valid for A with n == d + I.
+        Proof. — We must show that if r>^+ i and if S^A^==A, then there exist
+ ^ • • • ^ r - i ^ such that ^^{A{a,+b^)==A.
+                                                                                            513
+30                                          H. B A S S
+
+      Note first that a = ( ^ , . . . , ^ , ) is unimodular in A'=Ar~l@^A, Q= (o, . . . , o , i ) ;
+a=a'+(Bfl,. Since /-rank Ar~l=r—l>d+ i>dim X we can apply (9.1) and obtain
+/: [BA-.A'-1 such that y: +/(pfl,) is unimodular. Then /P= (&i, . . ., 6,_i, o) solves
+ our problem.
+      Let q be an ideal in A, and write, in the notation of Chapter I, § i,
+                                 G/q)=GL(r,A,q)/E(r,A,q).
+Let
+                                      /:G,(q)->G^(q)
+be induced by the inclusions.      We obtain a direct sequence of sets with base points, and
+                                 U^mG,(q)=GL(A,q)/E(A,q),
+
+which, by (3.1) a) is an abelian group.
+      With this notation we can now translate parts of (4.2) in such a way as to exhibit
+the (partial) analogy with Proposition 10.1.
+      Proposition (11.2). — Suppose dim X==rf. Then for all ideals q, we have:
+      a) ((4.2) c ) ) G,(q) is a group for r>d+i.
+      b) ((4.2) b)) /,:G,(q)->G^(q) is surjective for r;>rf+i.
+      c ) ((4.2) f)) G^(q) is an abelian group for r ^ > 2 ( r f + i ) and ^3.
+      The missing link here is an assertion that/,, becomes injective. Our prevailing
+topological analogy suggests quite explicitly in this regard, the following,
+      Conjecture. — Under the conditions of (11.2) fy : G/q)-^G^^(q) is injective
+for r > r f + i . In terms of matrix groups this says, for r > r f + i ,
+                            E(r+ i, A, q)nGL(r, A, q) =E(r, A, q).
+        When A is a division ring (so d==o) it is the affirmative solution of essentially
+ this problem which constitutes Dieudonne's theory ofnon commutative determinants [17].
+ Klingenberg [24] has generalized his solution to local rings (still rf==o), although
+ Klingenberg's proof is not valid when q == A. On the other hand it works in any ring
+ provided qCradA. This procedure of axiomatically constructing determinants (see
+ Artin [i, Chap. V], for a good exposition) runs into severe computational difficulties
+ if one tries to generalize it naively.
+        The interest in the conjecture above stems from more than a simple love of symmetry.
+ One can consult § 20 below and [7, § i] for some rather striking consequences of its
+ affirmative solution.
+
+
+
+
+ 514
+                                     CHAPTER III
+
+
+                              THE FUNCTORS K
+
+§ 12. K°(A) and K^A, q).
+    Let A be a ring and ^=^(A) the category of finitely generated projective right
+A-modules, and A-homomorphisms. Let
+                                 y=y^:obj^->K°(A)
+solve the universal problem for maps into an abelian group which satisy
+      (A) (Additivity) If o->P'—^P—^P / '->o is an exact sequence (as A-modules) then
+                                    yP^yP'+yP".
+
+       Uniqueness of (y^, K°(A)) is the usual formality, and existence follows by reducing
+the free abelian group generated by isomorphism types of obj Qfi by the relations dictated
+by (A).
+      Let T be an infinite cyclic group with generator t. We build now a new category,
+^[T] ==^[t, F^], whose objects are A-automorphisms, a, of modules P=dom aeobj ^.
+If a'eAut^P') is another, a morphism, a-xx', is an A-homomorphism, f: P->P',
+such that ya==ay.
+      If aeAut^(P) then a defines an A-representation ofT on P, t acting as a. In this
+sense we can think of ^[TJ as a category of A[T]=A[^, f^J-modules, and as such
+we may speak of " exact sequences " of a's.
+      Let q be an ideal in A (possibly q==A) and let ^q[T] be the full subcategory
+of ^[T] whose objects are those a for which " 0 = 1 mod q 5 ? ; i.e. if P=dom a, we
+require that a®^A/q === i on P®^A/q.
+      We define the group K^A, q) by letting
+                                W,:obj^[T]-^K l (A,q)
+solve the universal problem for maps into an abelian group which satisfy
+      (A) (Additivity) If o-xx^a-^a^o is exact then W^a^WqOc' 4-W^a".
+      (M) (Multiplicativity) If d o m a = d o m ( B then W^ap ==W^a+W^.
+      Existence and uniqueness are clear by a remark analogous to that above for K°.
+Although we have no need for this fact, the reader will be able to determine easily that K1
+is unaltered if we relax (A) to apply only to split exact sequences.
+      When q = = A we call K\A) =K1(A, A) the " Whitehead group " of A, and
+W==W^ the <( Whitehead determinant 3? .
+
+                                                                                        515
+32                                      H. B A S S
+
+     Let a be a automorphism in ^[T] and Peobj ffl. Then (M) implies W^p==o,
+so (A) further implies that W^(<x®ip) =W^a.
+     If aeGL(^,A, q^GL^^^Aut^A^ then we can regard aeobj ^[T]. With
+our convention, GL{n, A) cGL{n+m, A), a is identified with aCi^m. The last para-
+graph shows that Wq respects this convention, and hence we have a map, also denoted Wq,
+                     W,: GL(A, q) = U^GL(^ A, q) -^(A, q),
+which, by (M), is a homomorphism. Suppose aeGL(A, q) and (BeGL(A). Then
+a^p-1^, so W^a^W^p^ap). This means that [GL(A), GL(A, q)] =E(A, q) Cker W,,
+so we have an induced homomorphism
+                            f:GL{A,q)IE{A,q)->K\A,q).
+
+      Proposition (12. i). — The inclusions GL(TZ, A, q)Cobj ^^t, r"1] induce an isomorphism
+                            ^GHA.q^A.q^K^A.q).
+      Proof. — Let aeobj ^[T], P==dom a. We can find a Qsuch that P®Q^^An
+(some n). This isomorphism induces an isomorphism a®iQ^a^eGL(7z, A, q). With Q^
+fixed a^ varies in its conjugacy class in GL{n, A), so its image in G=GL(A, q)/E(A, q)
+doesn't change. If we replace Q by QOA", o^ is replaced by a conjugate of
+oc^i^m, and again its image in G is unaffected. Finally, if POQ^A^ then
+QeA^CLePeQ'^A^Q', so we see that the image of o^ in G is independent of Q.
+We define thus a map
+                                      ^:obj^[T]->G,
+
+and we propose to show that g is additive and multiplicative. Once shown, the uni-
+versality of W^ produces a unique homomorphism K^A, q)->G, which is manifestly
+an inverse fory.
+      g is multiplicative. For if dom a==P==dom (B an isomorphism PeiQ^A" induces
+a®iQ^,p©lQ^, and a(B®iQ^aA.
+      g is additive. Let o-^a'-^a-^a^-^o be an exact sequence, with domains P',
+P, P", respectively. Choose Q' and Q" with isomorphisms P / ®Q'^A n ^P // ®Q / '.
+Since the exact sequence induces P^P'®?", we can choose an isomorphism
+P©Q;®Q"^An®An compatible with the direct sum of the given sequence with
+O->IQ»-^IQ,®IQ,,->IQ,/->O. With these isomorphisms, we have a^iQ^a^, a"®!^,,^^',
+and a®iQ^Q,^a^==                                  Wq
+
+      Since the second factor is manifestly in £(272, A, q), and since
+                                    ^     °L ^n
+                                                                          mod E(27z, A, q),
+                                    o        0
+
+
+by the Whitehead Lemma (1.7)3 we see that a^ and a^' do indeed agree in G, as
+required.
+516
+                             K-THEORY AND STABLE ALGEBRA                                33
+
+      Suppose H is a normal subgroup of GL(A). Then, by Theorem 3.1,
+E(A, q)cHcGL(A, q) for a unique q, and H/E(A, q) is, via Proposition 12.1 above,
+a subgroup of K^A, q). Conversely any subgroup of K^A, q) defines in this way
+a normal subgroup of GL(A). Thus we see that a determination of all normal subgroups
+ofGL(A) is equivalent to a determination of all subgroups of K^A, q), for all q.
+     Finally we note that K° and K1 are functors. If <p : A-.B is a ring homomorphism,
+then ®^B : ^(A) -^(B) induces
+                                   ^.•K^A^K^B).
+I f q is an ideal in A and q' an ideal o f B containing <p(q), then ®^ig induces
+                                 ^K^A.q^K^B.q').
+Note that the isomorphism of Proposition 12.1 is an isomorphism of functors.
+
+§ 13. The exact sequence.
+
+      Let 9 : A->B be a ring homomorphism. If P and/are a right A-module and
+A-homomorphism, we shall abbreviate PB=P®^B, and /B==/®^ig.
+      Our objective is to construct a relative group, K°(A, y), which will fit into an
+exact sequence (Theorem 13. i, below). To this end we manufacture the category ^(^)
+whose objects are triples, a= (P, a, Q,), with P, Qeobj ^(A) (i.e. finitely generated
+projective right A-modules) and a a B-isomorphism, PB->QB. If o' == (P', a', Q;) is
+another such triple, a morphism CT'-^G- is a pair, (/, g), of A-homomorphisms, /: P'->P
+and g : Q'->Q,, making
+                                         P'B -a^ Q'B
+
+                                    /B             gB
+
+
+                                         PB -^> QB
+
+commutative. We call af^a(r^Gf (( exact 55 if P^P^P" and Q'-^Q^Q"
+are both exact sequences of A-modules.
+       Note that the objects of ^(9) are a groupoid. Thus, if G = = ( P , a , P ' ) and
+CT' = (P', a', P") then we write (T'(T==(P, a'a, P").
+       Now we define K°(A, 9) by letting
+                                 Rrobj^Op^K^A.q))
+
+solve the universal problem for maps into an abelian group which satisfy:
+      (A) (Additivity) If o->(T/->o•-^<7"->o is exact then
+                                     RG^RO'+RCT".
+     (M)    (Multiplicativity)   If G'G is defined then
+                                    R(7'<7=R(7'+RCT.
+
+
+                                                                                       517
+                                                                                   5
+34                                      H. B A S S
+
+     We need to know K°(A, 9) in some detail, and it will be convient to introduce
+some provisional terminology for this purpose. A triple T == (P, (B, P) will be called
+an " automorphism 5? . Since (BeAut^PB), WgpeK^B) is defined, and we shall write
+WgT^WgP in this case. T p = = ( P , i p , P ) will be called an cc identity ". Since
+TpTp==Tp, (M) implies
+(1)                                      Rrp=o.
+If there is an exact sequence
+(2)                                O^TP-^(T->TQ->O,
+then (A) further implies RCT==O.
+     Let peGL(B)=U^GL(^B); say peGL^, B) =AutB(A n B).                 Then
+                                ^(A^p.A^eobj^).
+
+Viewing (BeGL(7z+m, B) replaces CT by o-Oi^m, so RCT is unaltered.         Hence we have
+a well defined map
+(3)                                 GL(B)->K°(A,9),
+which is a homomorphism, by (M). Now if P is elementary, then a appears in an exact
+sequence of type (2), with P^A71-1, Q/==A. Hence E(B) is in the kernel of (3), so (3)
+induces a homomorphism
+                          8 : K^B) =GL(B)/E(B)->K°(A, 9).
+       Let T==(P, P, P) be an automorphism. If WgT^o then, by Proposition 12.1,
+we can find a Q so that TOTQ^A^ y, A71), with y^^ B), and hence RT=O. Now
+if (T, G'eobj ^(9) write
+                                           <7^(7
+
+
+if there exist identities, T and T', and an automorphism e with WBS=O, such that
+((jOT^^CT'eT'). A tedious, but straightforward, exercise shows that ^ is an equi-
+valence relation. Our earlier remarks show that CT^CT'^RCT^RO'. Hence, if
+                             R' : obj ^(cp)->G=obj ^(cp)/-
+is the natural projection, then R=AR' for a unique h : G-^K°(A, 9). An easy check
+shows that ^ respects <9, so that ® induces on G the structure of a monoid, with neutral
+element the class of the identities, and relative to which h is clearly a homomorphism.
+       We propose to show that a) G is a group, and that R' is b) additive and c ) multipli-
+cative. Once shown, the universality ofR produces a homomorphism h' : K°(A, cp)-^G
+which is clearly an inverse for h. This isomorphism will permit us to conclude:
+ (4)     Every element of K°(A, 9) has the form R(T, creobj ^(<p). RG==OOG^O.
+       a) G is a group.    Given (7==(P,a,QJ, let a ' = (Q, —a"1, P).         Then
+
+                           ^©^(P®^, °^_i              ^,P®QJ.
+
+ 518
+                               K-THEORY AND STABLE ALGEBRA
+                                                                                                           35
+
+It follows from the Whitehead Lemma (1.7) (using the fact that PB^QB)                                    that
+WB((T®(/)=O.
+     b) R' is additive. Let o—o-'-xr-W—o be exact. If CT' == (P', a', Q') and
+^'-(P^oc^O"), then ^^^^(P'eP'^a,^®^"), where
+                         a         Y _ a             o ip^        .^-i.
+                                                                 (a 7
+                                                                      )-^
+                         o     a                                               ^fa'Qa'nc.
+                                       o         a     o                P"B
+
+Since WB£==O we have a^a^a", as required.
+     c ) R ' i s multiplicative. Suppose (7=(P,a,P') and a'= (P', a', P").                           We must
+show CT'(7^CT®(7'. From the commutative diagram
+
+                                            PB             P'B
+
+                                      IpB                      (-lp)B
+
+
+                                            PB             P'B
+
+we    see   that    (T^--(J=(P, —a, P').              Hence        it        will   suffice   for us to show
+((^©Tp,)^-- (7)0(7'.
+
+                                                           aa            o
+                             cr'CTQTp/^PQP', p==
+                                                           o        ip/B
+                                                                                p^epn
+and
+                                                           o            a'
+                         (—^©^'^(Pep^Y-                      —a         o
+                                                                               p^epn
+                                     == ((7'(7®Tp,)£,
+
+
+where £= (P®P', y-^ P®P'). Since PB^P'B it follows from the Whitehead
+Lemma (1.7) that W^==o, and this completes the proof of c ) , hence also of (4).
+     Finally, we define a homomorphism
+                                      rf:K°(A,(p)->K°(A)
+by rf(R(P, a, Q)) =Y^P—Y^Q. It is clear that d is well defined.
+     Theorem (13.1). — Let 9 : A->B be a ring homomorphism. Then the sequence
+
+                        K\A) -^(B) ^K°(A, 9) -^K°(A) XK°(B)
+^ exact.    If 9 : A-^A/q is the natural map, then
+
+                   K\A, q^K^A^K^A/q^K^A, ^-^K^^-^K^A/q)
+u exact.
+      (In the second sequence, K°(A, q) = K°(A, y), and d^ is induced by the inclusion
+GL(A,q)cGL(A).)
+      Proof. — Exactness at K°(A).
+                    9°</(R(P, a, Q,.)) =9 0 (YAP-YAQ,) -TBPB-YBQB^O
+
+                                                                                                         519
+36                                       H. B A S S
+
+(since a : PB^QB). Suppose p^TA1^-^^) =YB PB —TBQ B =°- Then there exists an
+a : PBCB^QBQB" for some n, and hence YAP—nQ^^W^A^ a, (^©A^).
+      Exactness at K°(A, 9). If (BeGL(7z, B) then
+                    rf8(W^) =rf(R(A1, (B, A-)) =Y^AW-^An=o.
+
+Suppose rf(R(P, a, Q^—YAP—YAO^ 0 - Then P^P'^QPP' for some P', and we
+can even arrange POP'^A^ Hence (POP', aCipB, OOP^^A", (3, A") for some
+peGL(^B) and R(P, a, QJ =8(WB(jB)).
+     Exactness at K^B). If aeGL(^A), then S^W^a) =8(WB<pa) =R(A n , aB, A^
+(note 9a=aB). But the commutative square
+                                             (xr
+                                     A nTl     '     A nT»
+                                     A^              A^B
+
+                                 aB                       l.nB
+
+
+
+                                     A^B ^ A^
+
+shows that R(A^ aB, A^ =o. Now suppose |BeGL(^ B) and S(WBP)==O. Then,
+by (4) above, (T= (A^ (B, A^^/o. This means that cOrp^e for some automorphism e,
+with Wg£==o. We can add an identity to both sides and further assume P=A W
+and e== (A""^, y^ A^^). Then the isomorphism cr^T^m^e is given by isomorphisms
+/, geGLi{n + m^ A) making
+                                                   )1.M
+                                 "Dn+w                    Bn+^
+
+
+
+
+                                fB                           ^B
+
+
+
+                                 'Dn+m                    'Dn+m
+
+
+
+commutative. Hence, in GL^+m, B), p == (^^"^(p./)- Since Wgy=o we have
+WBP=WB(9(5- 1 /)) == 9 1 (W^- 1 /)).
+      Now suppose 9 : A->A/q.
+      Exactness at K^A). If aeGL(A, q) then (p^i(Wc,a) -^(W^a) =W^(ya) -o,
+since 900 = = i . Suppose aeGL(A) and y^W^a) ==W^q(9a) =o. Then 9a£E(A/q),
+so it follows by Homotopy Extension ( 1 . 1 ) that there is an eeE(A) with 92 ==90.
+Hence ocs-^eGI^A, q) and ^=^^~1) -^(W^ocs-1)).
+      If we knew how to define, and extend the exact sequence to, K2 the next result
+would be an immediate corollary.
+      Proposition (13.2). — Suppose A=Ao®q (as abelian group) with Ag a subring and q
+an ideal. Then there are split exact sequences
+                          o-^K^A, q) ^K^A) ^K^Ao) -^o,                       z==o, i.
+ 520
+                           K-THEORY AND STABLE ALGEBRA                                37
+
+      Proof. — Let <p : A-^A() be the retraction with kernel q. Since 9 has a
+right inverse, so does 9', z==o, i. Hence the Proposition follows from (13.1)
+provided we show K^A, cO—^K^A) has a left inverse. If aeGL(A), a==aoai
+where ao==(paeGL(Ao), and a^= ((pa^aeGL^A, q). If also (BeGL(A) then
+(oc(B)i ^(ap)-^ = ((pp)-1^)-1^ == (^r^P = [<p(B, ar-1]^^-1? = [Po. a^aA-
+Now [^ar^KGI^GHA.q^^A.q). Hence W,(a(B)i=W,ai+W^, and
+we have constructed a homomorphism GL(A)-^K1(A, q) whose restriction to GL(A, q)
+is W(p This clearly induces the required retraction K1(A)->K.1(A, q).
+       Examples. — i) If A is a local ring (e.g. a field) then K°(A)=Z, and K^A)
+is the commutator quotient group of A* == GL (i, A). The latter is due to Dieudonne [ 17]
+for division rings, and to Klingenberg [24] in general.
+       2) If qCradA (Jacobson radical) and 9 : A-»A/q, then <p1 is easily seen to be
+surjective, and <p° to be injective (see Lemma 18. i below). Hence K.°(A, q) ==o. The
+methods of Klingenberg [24] adapt without essential change to compute K^A, q) also
+in this case. In case A is q-adic complete, or if (p has a right inverse, then 9° is even
+an isomorphism.
+       3) The following remark is often useful. Let A be semi-local and P, Qeobj ^(A).
+Then YA^YAQ^^Q.- For TA^TAO. implies PCA^QCA" for some n, so our
+conclusion follows from (6.6) by induction on n.
+       4) In § 16 we describe in detail the exact sequence associated \yith the embedding
+of a Dedeking ring in its field of quotients.
+
+§ 14. Algebras*
+     Tensor products endow our functors with various ring and module structures,
+and it is convenient to record these circumstances now.
+     Let A be a commutative ring, A and A' A-algebras, and q an ideal in A. If
+Pe^(A) and P'e^(A') then P'^Pe^A^A), and this induces a pairing,
+(i')                          K^A^xK^-^K^A'®^).
+If ae^(A)q[^, t~1], then ip^ae^A'^A)^^^, F1] and this induces a pairing
+(2')                     K^A') xK^A, q^K^A'®^ A'®q).
+      Taking A ' = = A = A in (i'), K°(A) becomes a ring. Then with A'=-A in (i')
+and (2'), K°(A) and K^A, q) become K° (A)-modules. Moreover, the pairings are
+K° (A)-bilinear, so they define
+(1)                         K°(AO(X)KO(A)K°(A) -^(A'O^A)
+and
+(2)                    KW^K^A, q) -^(A'c^A, A'®q).
+These structures have the obvious naturality properties with respect to A-algebra
+homomorphisms.
+                                                                                      521
+38                                      H. B A S S
+
+       In order to treat K° and K1 simultaneously we shall sometimes consider the following
+situation. Let q be an ideal in A. For an A-algebra, A, write
+                             K*(A, qA) =K\A)@K\A, qA).
+
+K*(A, qA) is/as noted above, a K°(A)-module.         Moreover, (2) above gives us
+                  K^A, q^^K^A^K^A, qA) ^K^AOO^A, q®A).
+
+Hence, if we view K^A, q) as a graded ring, zero in degrees >2, then K*(A, qA)
+is a graded K*(A, q)-module.
+      Finally, if A->B is a homomorphism of commutative rings, then B®^ induces
+K*(A, q)->K*(B®^A, B®q). In case B is finitely generated and projective as an
+A-module, then there is an obvious " restriction 3? functor
+                           ^(B^B^^J^A)^ r1],
+and this induces a homomorphism K*(B®^A, B®q)-^K*(A, q) which, following the
+one above, gives the homothetie of K*(A, q) defined by Y^(B)(=K°(A).
+
+§ 15. A filtration on K°.
+
+      There seem to be several cc geometrically reasonable " nitrations on K° (under
+suitable circumstances). We choose one here with the properties needed for our
+applications.
+      Let A be a commutative noetherian ring, and X==max(A). All modules and
+A-algebras will be understood finitely generated as A-modules. Let A be an A-algebra.
+We shall consider complexes,
+                                C:...->P,->P,_^...
+
+of right A-modules which are finite and projective (i.e. P^ is projective, and==o for
+almost all i). Then -/(C) =^(C) ==^{—i)\^P,eK°{A) is defined. Our finiteness
+conditions guarantee that H(C) is a finitely generated A-module, so supp H(C) is a
+closed subset of X. Since localization, being exact, commutes with homology, we see
+that
+                       supp H(G) ={^eX|H(G),+ 0}
+                                     =[xeyL\C^ is not acyclic}.
+
+     Definition. — K°(A)^ consists of all i;eK°(A) with the following property:
+Given Y closed in X, there is a complex G, as above, such that 7(G)=^, and
+codimy(Ynsupp H(C))^z.
+     Proposition (15.1). — The K°(A)^ are subgroups of K°(A) which satisfy:
+     1) K^o-K^DK^iDK^A)?...
+     2) IfF is another A-algebra the pairing
+                            T : K^^Ko^r^K^A^r)                                   [see § 14)
+522
+                             K-THEORY AND STABLE ALGEBRA                                  39
+
+induces
+                              K^A^K^F^K^A®^)^,.
+
+In particular, K°(A) is a filtered ring, and K°(A) a filtered K°(A) -module.
+      3) 77^ filtration is natural with respect to homomorphisms of A-algebras.
+      4) K°(A),=o for z>dimX.
+      A very useful consequence of this Proposition is
+      Corollary (15.2). — If d=dimX, then K^A^+^o.
+      Proof of 15.1. — K^A,) is a subgroup because the support of a direct sum is the
+union of the supports, and the codimension of a (finite) union is the infimum of the
+codimensions.
+      1) follows from the definition.
+     2) Let ^K°(A)^7]eK°(r),, and let Y be closed in X. Choose C' over A
+with ^(C')=^ and codin^Ynsupp H(C'))^z. Choose C" over F with Xr^O^
+and codimYnsuppH(c')(Y n suppH(G')nsuppH(G' / ))^J. Then, if C^C^C" over
+A®^r, it is clear that XA®^!^) =T(^®7^). Moreover the inequality above implies
+codimY(Ynsupp H(C')nsupp H^^^+j. Hence we can conclude by showing
+that supp H(C)Csupp I^C^nsupp H^C"). But if, say, C^ is acyclic, then it is
+homotopic to zero (a finite acyclic complex of projective modules), so likewise for
+c^c^c,.
+      3) Let / : A — ^ r be a homomorphism of A-algebras, and ^eK^A),; we want
+f^eK^r),. Given Y, choose C over A with y^(C) =S and codin^Ynsupp H(C))^'.
+Since fQ^=t^^®AY} it suffices to note that supp N(0®^) Csupp H(C). But if C^
+is acyclic it is homotopic to zero, so likewise for C^O^ ^ = (C^A^a:-
+      4) Take Y==X in the definition.
+      Proposition (15.3). — K°(A)i= D ker(K°(A)-^K°(AJ).
+      proof.—If ^K°(A)i and Y=={^} then ^=^{C) with codimY(Ynsupp H(G))>i.
+This implies ^^suppH(G), so C^ is acyclic. But then the image of ^ in K°(AJ is
+XA^CJ-O.
+      Conversely, given ^ = YAP—YAQ.EK•0(A)3 to belong to the right side of our equation
+means YA^= ^AyQ^x ^or au x'> a^ then by (6.6) (see Example 3) in § 14), P^Q^.
+Now, given Y closed in X, let Y^, . . ., Yg be the irreducible components ofY, and choose
+^eY^—U^Y^.. Then, if we reduce modulo the product of the ^, P and Q become
+isomorphic. Lift such an isomorphism to /: Q—^P$ then f^ is an isomorphism,
+I< ^< s
+  l !l ' Let C be the complex withy the differential in degree i, and zero in all degrees
++ o or i. Then ^(C) = (-1)\^+ (-i^P-S. Since Y^supp H(C), i^i<s,
+codimy(Ynsupp H(C))^i, as required.
+      Proposition 15.3 gives a description of the first term of the filtration which behaves
+well without any finiteness assumptions on A, as we shall see below.
+      Let A be now an arbitrary commutative ring, and let spec (A) denote its prime
+
+                                                                                        623
+40                                       H. B A S S
+
+ideal spectrum (Zariski topology).     If Peobj ^(A) and ^espec(A), then P^ is a free
+Ap-module of rank pp(^),
+                                      pp : spec(A)—^Z.
+
+It is easy to see that pp is continuous (for the discrete topology on Z).
+       Let C(A) denote the ring of all continuous functions from spec (A) to Z. Since pp
+is (clearly) additive and multiplicative in P it induces a ring homomorphism
+                                      p:K°(A)^C(A).
+
+p even has a right inverse cp. To define (p, suppose f: spec(A)—^Z is continuous, and
+let ^K.^-==f~l(n). Since spec (A) is quasi-compact, X^=0 for almost all n. Now disjoint
+decompositions spec (A) = U^Xyp all X^ open, correspond, bijectively, to decomposi-
+tions i =^en °f !as a sum °^ orthogonal idempotents, almost all zero (see e.g. [30,
+Chap. I]). Define cp(/) =Z^/(^)y^(A^); 9 is clearly the desired right inverse to p.
+      We shall use 9 to identify C(A) with a subring of K°(A). Thus,
+                                    K°(A)=C(A)©J(A),
+
+where J(A) ==kerp.      Suppose ^=^AP~fAQJ=3(A}'         Then p^ pp—-pQ=o.        Thus
+                                           P  ^0
+                                           - x—L
+                                                ^x
+
+
+for all A:espec(A). Conversely, if P^CL for all A:emax(A), then we see by localizing
+in two steps that P^Q,, for all ;vEspec(A), so ^—^Q^JW'
+       Let us summarize:
+       Proposition (15.4). — Let A be an arbitrary commutative ring and let
+                                           1             0
+Then
+                             ^^n^ -^-^ ^-
+                                     K°(A)=C(A)®J(A),
+
+where C(A) is isomorphic to the ring of all continuous functions from spec (A) to Z. J(A) is
+both the nil and Jacob son radical of K°(A).
+       proof. — It remains to prove the last assertion, and it clearly suffices to show that
+every ^ == yP — yQeJ (A) is nilpotent. If A were noetherian and of finite Krull dimension
+this would follow from (15.2) and (15.3). In general, however, ^ is induced from a
+finitely generated subring of A, and such a subring is of the latter type. Hence our
+conclusion is a consequence of the following lemma:
+       Lemma.— If f: B->A is a homomorphism of commutative rings, then (/^"^(A^Dj^B),
+ with equality if f is injective.
+       proof. — If ^eJ(B) we want /°(^EJ(A); i.e. if ^espec(A) we want /°(^ to
+ go to oin K°(AJ. But B-^A-^A, is the same as B->B^A^, where ^==/~ l (^)espec(B)
+ and ^ goes to o in K°(B^).
+       Conversely, if ^K°(B) we want to show /°(^EJ(A) =>^eJ(B). Thus, given
+
+ 524
+                              K-THEORY AND STABLE ALGEBRA                                      41
+
+^espec(B), we must show that ^ the image of ^ in K°(B^, is zero. Let S=/(B—^);
+since / is injective, this multiplicative set in A does not contain zero. Moreover
+
+                                        B -^ A
+
+
+                                        B. ^ S-A
+
+ is commutative. If S-^ is the image of/°(^) in K^S-^A), then S-1^ = (S~1/)0^ ).
+ Since B^ is local, ^=%GZ=K°(B^, and hence also S-^^eK^S^A). But our
+hypothesis implies that this n vanishes in K° of any localization of S~1A, and hence
+n==o as desired.
+       Nowforany ^eK°(A) we can write S = p ^ + ( ^ — p ^ ) , with p^eG(A), ^-p^eJ(A).
+We shall call p^ the mnA of S, and often identify it with a function from spec (A) to Z.
+In particular, p(YP)==pp is the " r a n k " of the projective module, P. Expressions
+like " rank ^r ", reZ, make sense now, where we think of r as a constant function.
+If P is a projective A-module, rank P^r is equivalent to "/-rank PJ>r " in the sense
+o f § 7.
+       Proposition (15.5). — Let A. be a commutative ring and P a finitely generated projective
+A-module. Then the following conditions are equivalent:
+       a) P is faithful.
+       b) rank P^ i.
+       c) Every K°{A) -module annihilated by y^P is torsion.
+       d) I^YA? generates the unit ideal in Q®^^)-
+       Proof. — a)ob) because P is locally free, and a finitely generated projective module
+is faithful if, and only if, it is locally non zero.
+       b) => c ) . Since pp is everywhere positive and bounded, there is a function /eC(A)
+with /pp = n>o. Hence /yP == n +j, with jeJ(A) nilpotent. Thus, modulo yP. K°(A),
+n is nilpotent, so ^e^'P.'KP^A) for some m>_o.
+       c ) ^ b ) . IfA:espec(A) and P^=o, then K°(AJ^Z is a K° (A)-module annihilated
+by yP.
+       c ) o d ) is evident.
+      Proposition (15.6). — Let A be a commutative ring for which max (A) is a noetherian
+space of dimensioned. Then, if ^eK°(A) has rank>_d, ^=yP for some P.            If rank P>d
+W y P ^ y Q , then P^Q,.
+     Proof. — We can write ^ == YQ—yA^ Then ?Q = p^ + n>^d + TZ. Hence, by Serre's
+Theorem (8.2), Q^PeA", so ^=^V.
+     If YP=rQ. for some P and Q, then POP'^QeP' for some projective P'. If
+rankP>rf we can invoke the Cancellation Theorem (9.3) and conclude that P^Q,.
+
+
+
+
+                                                                                             Ri)C
+                                                                                             t)w0
+
+                                                                                         6
+                                         CHAPTER IV
+
+
+                                   APPLICATIONS
+
+§ 16. Multiplicative inverses.         Dedekind rings.
+       Throughout this section all modules are finitely generated right modules.
+       Proposition ( 1 6 . 1 ) . — Let A be a commutative ring with max(A) a noetherian space
+of dimension   d<co,   and let A be a finite A-algebra.   If P is a projective A-module such
+that   I^YA^   generates   Q®zK°(A)     as a (QOOzK0 (A)) -module, then there is a projective
+A-module Q^ such that Q®^P is A-free.
+      Proof. — I^YA^ is a Q®K°(A) multiple of i®-^? and ^ choosing n large
+we can solve I®YA An== ^^(YA^ with •^K°(A). Hence TA An — 7 ^TA P is a torsion
+element in K°(A). If then we replace n by a multiple of n, we can achieve YA^= ^ • TA?-
+Let A:£max(A); K°(AJ^Z and the image there of T) is (p-^)W (see § ^ for the
+definition ofp). The equation above together with (6.6) (see also Example 3) in § 13)
+implies that A^ (p7]) (x) . P^ and this evidently implies (?•/]) [x) >o. Thus, if we replace n
+by a further multiple, if necessary, we can achieve pv]^>rf. It then follows from (15.6)
+that ^=YAQ.? fo1' some projective A-module Q. Our equation above then becomes
+Y^(An) =YA(Q (X) AP)• Since, by this time, n>d, we can invoke the Cancellation
+Theorem (9.3) and conclude that QOO^P^A^ as desired.
+       Corollary (16.2). — Let A be any commutative ring and P a faithful projective A-module.
+Then Q®^ is A-free for some projective A-module Q^.
+      Proof. — Since P is induced from a finitely generated subring of A, it suffices to
+solve our problem there, so we may assume A a noetherian ring of finite Krull dimension.
+We can now invoke (16.1) provided i^yP generates Q®K°(A), but the latter is
+a consequence of (15.4).
+      Let A be a commutative ring and m the class of faithful projective A-modules.
+Write P^Q if P^A^^Q®^^ for some n, m>o. Then ^ is an equivalence relation
+respecting ®^ so that
+                                         M(A)==m/—
+is an abelian monoid with neutral element the class of the free modules.      Corollary 16.2
+says that M(A) is even a group.
+       Proposition (16.3). — Let A be a commutative ring for which max(A) is a finite
+dimensional noetherian space.   Then
+                            M(A) =GL(i, Q^K°(A))/GL(i, %).
+
+526
+                            K-THEORY AND STABLE ALGEBRA                                   43
+
+       Proof. — Let us write B =-- Q®zK°(A), and B* = GL(i, B). If Pern, let (JiP denote
+its class in M(A). By (15.4) i®^Pey', let 7TP denote its class in B*/Q;. Evidently
+f: M(A)^B*/Q* by y(piP)=7rP is a well defined homomorphism. Suppose 7 r P = i ;
+i.e. i®yPeQ;. Since K°(A) =C(A)®J(A) (15.4),we have B= (Q®C(A))®(Q®J(A)),
+and writing yP==pp4-(YP—pp) we see that I®Y P = I(x) Pp E Q*• Hence %(yP—pp)==o
+for some n>o, so 7^YP==Y(A n ®P) =meZ. Choosing n sufficiently large we conclude
+from (15.6) that A^P^A^, so [jiP==i. This shows that^is a monomorphism.
+       To see that / is surjective consider an element of B*. Modulo Q* we can assume
+it has the form i®^ with ^eK°(A) of rank ,> dim max (A). Hence S^yP for some P
+by (15.6), and the class of 2; mod Q* is 7rP=/(piP).
+       The classical Steinitz-Ghevalley theory [15] of modules over a Dedekind ring
+furnishes a familiar setting in which to illustrate the general shape of our theory.
+       We consider finitely generated torsion free (hence projective) modules P, over
+a Dedekind ring A. First P^a®F, a an ideal and F free — Serre's Theorem. If
+POA^P'eA then P^P'; if we required rank Pj> 2 this would be the Cancellation
+Theorem. The stronger conclusion here is possible only because of commutativity.
+If a and b are non zero ideals, a<3b^A®(ab). As an equation in K°(A) we recover
+thisfromthenilpotencyofJ(A) (Proposition 15.4): ( i — Y < ' 0 ( 1 — ^ h ) = o in K°(A).
+We indicate below (Proposition 16.4) how to recover the actual isomorphism, as well
+as a variety of similar identities.
+       With these facts we see easily that, as a ring, K°(A)^Z®J(A) withJ(A) an ideal
+of square zero, additively isomorphic to the ideal class group G of A. Alternatively,
+if I is the augmentation ideal of the integral group ring ZG, then K°(A)^ZG/I 2 as
+ an augmented ring.
+       Let 9 : A—^L be the inclusion of A in its field of quotients. We propose now
+ to interpret the exact sequence
+                       K^A^K^L^K^A, ^->K°{A)^K°(L).
+
+The composite K^A^K^L^Z is the augmentation, cc rank 55 , with kernel J(A)^G.
+Next we recall that K°(A, 9) is built out of triples (P, a, QJ with P and Q^ A-projective,
+and oc : L®^P^L®^Q^ an L-isomorphism. Using the description of K°(A, 9) given
+in § 13 one can show easily that every element is represented by a triple (a, u, A)
+with a an ideal and z/eL*, viewed as a homothetie of L. Moreover, the fractional
+ideal au is an invariant which defines an isomorphism of K°(A, <p) with the group of
+fractional ideals in L.
+       With this identification, K^A, <p)->G^ker <p° assigns to each ideal its class.
+Moreover, K^L)—>L*, and K^L^—^K^A, y) assigns to ueL* the principal ideal Au.
+Thus, the kernel is A* == GL (i, A) == Im (p1. Finally, ker (p1 = SL (A) /E (A) is the commu-
+tator quotient group of SL(A). We shall see in § 19 that if A is the ring of integers in
+a (finite) algebraic number field, then this group is finite.
+                                                                                          527
+44                                          H. B A S S
+
+      Now let A be any commutative ring. If P is an A-module, and n a non negative
+integer, let nP denote a direct sum of n copies of P, and P0" a tensor product of n copies
+of P. Also, if CHs another A-module, write P+Q/=P®Q, and PO^P^d- with
+these conventions, if /(Ti, . . ., TJ -S^^T^. . .T^eZ[Ti, . . ., TJ is a polynomial
+with non negative coefficients, and if Pi, . . . , P^ are A-modules, we can write
+                             /Yp         p^—y/,              p®1!      p0^
+                            J ^ l ? • • • ? ^J —^i...^ 1 -!         " '^n    •
+
+       Proposition (16.4). — Let A be a commutative ring such that max(A) is a noetherian
+space of dimension <n.    Then, if Pi, . . ., P^ are invertible A-modules and if S,(Ti, . .., TJ
+is the i111 elementary symmetric function, we have
+                            SS,(PI,...,PJ=SS,(PI,...,PJ.
+                           i even                    t odd
+
+       proof. — i —yP,eJ(A) for all i, so II^i(i —yPJ "=0 by (15.2). Thus the equation
+is valid after applying y to it. Since the ranks of the two sides of the equation exceed
+dim max (A), (15.6) permits us to remove the y.
+
+§ 1 7 . Some remarks on algebras.
+      For a ring A let A-mod and mod-A denote the categories of left, respectively,
+right, A-modules. A generator for such a category is a module whose homomorphic
+images suffice to generate any other module.
+      Let E be a right A-module and put F=Hom^(E,E) and E*==Hom^(E, A).
+We are in the situation (pE^,^Ep), and there are natural bimodule homomorphisms:
+                                           E^pE-^A.
+(i)                                        E^E^r
+Moreover, we shall consider the functors:
+                                    E*®? : r-mod-> A-mod.
+w
+                                    E®^ : A-mod ->r-mod
+The following basic result is due essentially to Morita [26], although the best exposition
+of these, and other matters in this section, is in Gabriel [21, Chapter V, § i].
+      Theorem (Morita). — Let A. be a ring, E a right A-module, r=Hom^(E, E), and
+E*=Hom^(E, A). Then the following conditions are equivalent:
+      a) E is a finitely generated projective generator for mod-A.
+      b) The homomorphisms (i) are isomorphisms. (It suffices that they be epimorphisms.)
+      c) The composites of the functors (2) are each naturally equivalent to the identity functors.
+       In this case q<->Eq defines a bijection between the two-sided ideals of A and the
+F-A-submodules of E.
+      Conversely, if A and F are rings and A-mod is equivalent to F-mod, then any such
+equivalence is isomorphic to one as in (2) above, with E determined up to F-A-isomorphism.
+ Thus, the situation above is entirely symmetric with respect to E and E* and to A and F.
+
+ 528
+                              K-THEORY AND STABLE ALGEBRA                                    45
+
+       Now let A be a commutative ring and A an A-algebra. Then, in the above
+setting, A-mod is an " A-category 95 (i.e. all the Horn's are A-modules), likewise for
+the A-algebra F, and the functors in (2) are cc A-functors ' 5 (i.e. induce A-hornornorphisrns
+on the Horn's). The converse part of the Morita Theorem remains true also in this
+sense, provided the given equivalence from A-mod to F-mod is assumed to be an A-functor.
+If A-mod and F-mod are A-equivalent we shall call A and F Morita equivalent,
+denoted A^^F.
+      Let E be a finitely generated, projective right A-module. It is easy to see (e.g. using
+Proposition 15.5) that E is then a generator for mod-A o E is faithful. Using the Morita
+Theorem we then see that, if r==Hom^(E, E), r®^A^Hom^(E®^A, E®^A)^A. In
+this situation we shall write A^^F^A) and call the two algebras Brauer equivalent.
+      Suppose A^^V, say A'=Hom^(P,P) with P a finitely generated projective
+generator for mod-A. Can we show that A^gA', i.e. that the two equivalence relations
+are the same ? Suppose there is a faithful, finitely generated, projective A-module Q,
+such that Q^P^A^A^A. Then we have
+A^Hom^Q, Q)®^A'^Hom^(Q®^P, QO^P)^
+                              ^ Hom,^, A^Honi^, A^A^A.
+Thus, modulo the existence ofQ, ^^ and ~g agree. On the other hand, Proposition 16. i
+gives a criterion for the existence of Q^ which we will verify under suitable conditions
+below.
+       Let A be an A-algebra, A° the opposite algebra, and A6 = A®^A°. To avoid
+confusion we shall use E to denote A viewed as a right A-module. A is called an A^umqya
+algebra (= central separable algebra in [4], see also [21, Chapter V, § i]) if it satisfies the
+following equivalent conditions:
+       (i) A is a projective generator for A^mod.
+       (ii) a) E is a faithful, finitely generated, projective A-module.
+            b) A'^Hom^E, E) as A-algebras.
+       In this case every ideal of A has the form qA for some ideal q o f A [4, Corollary 3.2].
+      We propose now to consider the K*(A, q)-module K*(A, qA), with A an Azumaya
+algebra. For this purpose we use the diagram of functors
+
+
+                                         t
+                                     mod-A
+
+                                             ^
+                                                        t
+                                                     mod-A
+
+                                                            ®(A®AA e ) (A ® AE)
+
+
+                       mod-A ^ mod-A" ^ mod^A®^),
+
+in which, by the Morita Theorem and condition (ii) a) above, the vertical arrows are
+equivalences. We obtain thus K*(A, q)-homomorphisms
+
+(*)                         K*(A,qA)-^K*(A,q)^K*(A,qA),                    •
+                                                                                           529
+46                                         H. B A S S
+
+To compute them, let M be a right A-module.             Then
+
+                 (M®^)®^^^(A®^E)-(M®^A)^(A e ®^E)-M®^E.
+
+It follows that gf is the homothetie defined by YA(E)£K°(A). Next we note that
+(M®^A O )®^E^M®^(A.®^A O )®^E^M®JE^M (as A-modules), recalling that E = A
+viewed as a left A6-, right A-module. Hence f is the " restriction " map obtained
+by viewing A-modules as A-modules. In particular, ^(E) elm{f).
+        Now by Proposition 15.5, i®y^(P) is a unit in Q®zK°(A) for any faithful,
+finitely generated, projective module P. Hence, using (ii) a ) , we see that Q®/ and
+0®§f are isomorphisms, and we have proved:
+         Theorem (17.1). — Let A be a commutative ring and A an A^umaya A-algebra.
+Then for all ideals q in A, Q®^K*(A, qA) is a free Q®zK*(A, q) -module generated
+by I®YAP f07' anjy finitely generated faithful projective A-module P.
+         Using Proposition 16.1 and the discussion above we further obtain:
+         Corollary (17.2). — Let A be a commutative ring for which max (A) is a finite dimensional
+noetherian space, and let A be an A^umqya A-algebra. Then:
+         1) If P is a faithful, finitely generated, projective A-module, there is an A-module Q^ of
+the same type, for which P®AQ, ^ a free A-module.
+         2) The class of A in the Brauer group of A (see [4]) depends only on the A-category
+A-mod.
+         Theorem 17.1 is not very useful for computing K°(A) since, in number theoretic
+contexts, all the interesting invariants are torsion. On the other hand the theorem is
+no longer true if we remove the " Q®z "• r^0 see ^^^ ^et ^^Q^A/^) wltn P a
+prime ==. — i mod 4, let I denote the ideal group of F, P the subgroup of principal ideals,
+and P'^CP those principal ideals generated by totally positive elements. If A is the
+ring of integers in F, then -y^AeP, ^P4'. For if ^/pA had a totally positive generator
+there would be a unit in A of norm — i , and by [23, p. 288] there is no such unit.
+Hence [P : P4']^, in fact, =2. Let 2 be the standard quaternion algebra over F
+and A a maximal order in S. Then S is unramified except at oo, so A is an Azumaya
+A-algebra. On the other hand, Eichler [19] has completely determined K°(A) (see
+ Swan [33, Theorem 2]). Namely, K^A^Z^I/P 4 -. Hence K°(A) is not isomorphic
+to K°(A)^Z®I/P (see § 16). This example was pointed out by Serre.
+         A further amusing example in this connection is the following: Let S be the
+quaternion algebra over Q^ ramified at p and oo, p a prime == — i mod 4 and sufficiently
+large (e.g. p==~ii will do). 2 has a basis i, i,j, k with z ^ — • l ^ j 2 = k 2 = — p , and
+ ij == k == —ji. The result of Eichler-Swan quoted above shows that, if A is a maximal
+ order in S, then M(^, A) is a principal ideal ring for all 7^2. On the other hand,
+ according to Eichler [183 Satz 2], the class number of A itself is > i .
+         Finally suppose A is a field and A is a central simple A-algebra. Then K°(A)^Z,
+ so if B is any field extension of A, K^A)—^^®^) is a monomorphism. What
+
+530
+                               K-THEORY AND STABLE ALGEBRA                                  47
+
+about K1? Dieudonne [17] shows that K^A) is the commutator quotient group
+of A*=GL(i, A). Therefore, if B is a splitting field for A, we have homomorphisms
+                                 A^K^A^K^B^A^B*,
+
+and it is easy to see that the resulting map A^-^B* is the reduced norm (see Bourbaki,
+ [n, § 12]) and has image, therefore, in A*. Combining these remarks with the fact
+that every field is contained in a splitting field, we have:
+       Proposition (17 • 3 )• — V^ is a central separable algebra over afield A, K^A) -^K^B^A)
+is a monomorphism for all field extensions B if, and only if, the commutator subgroup of A* is
+the kernel of the reduced norm,
+       By a theorem of Wang [35], this is the case if A is a number field.
+
+§ 18. Finite generation of K.
+
+    We propose to show (Theorem 18.6 below) that if A is a finite Z-algebra, then
+K^A; q) is a finitely generated abelian group for all ideals q.
+      Lemma (18. i). — a) Let A. be a ring.   IfN is an ideal in rad A, then K°(A) ->K°(A/N)
+is a monomorphism, and even an isomorphism if A is N-adic complete (e.g. if N is nilpotent).
+      b) If A is a semi-local ring, K°(A) is a free abelian group of finite rank.
+      Proof. — a) Suppose Y^P—YAQ.£ker(K°(A)->K°(A/N)). After adding a free
+module to P and Q, we can assume that P/PN^Q/QN. Such an isomorphism lifts
+to a homomorphism /: P-»Q,. /is surjective mod N, hence surjective, by Nakayama.
+Hence ker/, being a direct summand of P, is finitely generated. Since ker/ is zero
+mod N, it too is zero, by Nakayama.
+      Suppose now that A is N-adic complete, and let P be a projective (A/N)-module,
+say PCQ^A/N)^ If F^Hom^A^ A1) ==M(n, A), then r/Nr=M(^, A/N). Let
+ceF/Nr be an idempotent projection onto P. Since F is (NF)-adic complete, e lifts
+to an idempotent e'eT (see e.g., [16, Lemma 77.4]). Now P ' = = I m c ' is a direct
+summand of A" covering P, so YA/N? is th^ image of YA?'-
+      b) If A is semi-local, A/rad A is a finite product of simple Artin rings. Hence
+K°(A/rad A) is free abelian, of rank equal to the number of simple factors of A/rad A.
+By a) K°(A)->K° (A/rad A) is injective, so our conclusion follows.
+      Proposition (18.2). — Let A be a noetherian integral domain of Krull dimension one
+with field of quotients L.   Let A be a finite A-algebra, N the nil radical of A, and T the
+torsion A-submodule o/A/N. Then N is nilpotent, T is a semi-simple Artin ring, and A/N = T x F
+(product of rings), where Y is an A-order in the semi-simple L-algebra L®^F.
+      Proof. — L®^N is a nil, hence nilpotent, ideal in the finite dimensional L-algebra
+LOO^A. Hence some power of N lies in the torsion submodule of A and is therefore a
+nil ideal of finite length. Therefore some further power of N is zero.
+      For the rest we may assume N=o, i.e. A==A/N. Regard T as an A-algebra,
+possibly without identity. If J == rad T, J can be described as the intersection of all
+
+                                                                                          531
+48                                           H. B A S S
+
+kery, where/is a T-homomorphism into a simple right T-module 85 such that ST=S.
+(Note that S must be an A-module, and ^ compatible with this structure, in particular.)
+Suppose g : T->T is a right T-endomorphism and f: T-^S as above. Then fg : T->S
+so J^ker^; i.e. g{J)Ckerf. Letting f vary we see that g{J) Cj. Now letting g be
+left multiplication by an. element of A we see that J is a left A-ideal (using the obvious
+fact that T is an ideal of A). Similarly, J is a right ideal. However, T has finite length
+as an A-algebra, so J is nilpotent. But A now has no nilpotent ideals 4= o, so J = o.
+Hence T is semi-simple, so it has an identity element, e. If aeA, then aeeT so ae == eae.
+Similarly ea=eae, so e is central. Thus A = T x F where r = = ( i — < ? ) A . Since F is
+torsion free with zero nil radical, rcL®^F, and L®^F is a semi-simple L-algebra.
+     Lemma (18.3). — Let A. be a ring and N a nilpotent ideal finitely generated as a
+^-module. Then, for all n>^ i, every subgroup of GL(n, A, N) is a finitely generated group.
+       Proof. — Induction on m, where N771 == o, reduces us immediately to the case N2 = o.
+Then GL(n, A, N) consists of all i+a where a is an nXn matrix with coordinates in N.
+If i+a' is another, then (i +a){i +0') == i + (^+0, so GL(72,A,N)^N (the additive
+group).
+      Theorem 18.7 below will be proved by a reduction to the following classical
+results:
+      Lemma (18.4). — Let A be an order in a finite semi-simple (^algebra 2=Q®zA.
+      o) (Jordan-Zassenhaus, see [37]).         If M is a finitely generated ^-module, there are
+only finitely many isomorphism types of finitely generated A-submodules of M.
+        i) (See Siegel [31] or Borel-Harish-Chandra [9]) GL(TZ, A) is finitely generated
+for all n>_ i.    Moreover, ifL is simple, the subgroup of elements of reduced norm i in GL(n, A)
+is likewise finitely generated.
+       Proposition (18.5). — Let A be a finite Zi-algebra, and let q be an ideal in A.      Then
+GL{n, A, q)      is finitely generated for all n^i.
+      proof. — If N is the nil radical of A, then GL(n, A, q)->GL(n, A/N, q(A/N)) is
+surjective, and GL{n, A, q)nGL(^, A, N) is finitely generated by (18.3). Hence we
+can reduce to the case N=o. Then A = T x F as in (18.2) and GL{n, A, q) splits
+likewise into a product. It suffices then to treat T and F separately, and T, being finite,
+causes no problem. The result for F is a consequence of SiegeFs theorem above
+(see Lemma 19.4 below).
+      Theorem (18.6). — Let A be a finite Z-algebra and q an ideal in A.           Then K°(A)
+and K^A, q) are finitely generated abelian groups.
+       Proof. — Since dim max(Z) == i it follows from (11.2) b) that K^A, q) is a
+homomorphic image of GL(2, A, q), and (18.5) says the latter is finitely generated.
+Now for K° :
+       Let N be the nil radical of A and write A / N = T x F asin(i8.2). Then.by (18.1),
+K^A^K^A/N^K^T^K^r) is an isomorphism, and K°(T) is free abelian of
+finite rank. It remains to show K°(r) finitely generated. Let F be a maximal order
+in Q®r containing F. Then P is hereditary [3], so every projective F'-module is
+
+532
+                               K-THEORY AND STABLE ALGEBRA                                         49
+
+isomorphic to a direct sum of right ideals [14, Chap. I, Theorem 5.3]. By Jordan-
+Zassenhaus (18.4, o)) there are only finitely many of these, up to isomorphism, so K°(r")
+is finitely generated. Now F has finite index, say m, in F'. Let S be the multiplicative
+set of integers prime to m. Then S"1? is semi-local, so K^S""1]^) is free abelian of
+finite rank (18.1, b}). It will be sufficient for the theorem, therefore, to show that the
+homomorphism
+                               K^^-^K^r^CK^S-T),
+
+induced by the inclusions, has finite kernel H. Let ypP—yp^eH; we may assume
+n>_2. Then Vr^^r?) -Tr'^) and Ys-i^"11') -Ys-r^"11^)- Since r' and
+S""1? are algebras over rings with maximal spectra of dimensions i and o, respectively,
+and since 72^2, (15.6) tells us that P^pr^fT^ and S-^P^S-1]^.
+      Let ^emax(Z). If mex then P^ is a localization of S^P, hence free. If m^x
+then P^ is a localization of P^pF, hence free. Thus P^ is free of rank n for all A:emax(Z),
+so we can apply Serre's Theorem (8.2) and write P^Q®?1"1, with Q^ locally free
+of rank one, by (6.6). But then Qis isomorphic to an ideal in F, and again, byjordan-
+Zassenhaus (18.4, o)), there are only finitely many such Q, up to isomorphism. Since
+YpP—Yr^^TrQ-—Tr^ tms P^Y^ H 1s finite, as claimed.
+
+§ 19. A finiteness theorem for SL (n, A).
+       Let S == 11^ with S, a central simple algebra over a finite algebraic
+number field C^. The reduced norms (see [n, § 12]) give homomorphisms
+GL {n, S,) -> C^ = GL (i, C,) (compatible with the inclusions GL {n) C GL (n + i)), and
+their product defines a homomorphism GL(^, S)->C*, where G= 11^= center 2.
+We shall call this also the reduced norm, and denote its kernel by SL(n, S). If A is
+an order in S and q an ideal in A we shall write SL{n, A) =GL(/z, A)nSL(^, S), and
+SL(TZ, A, q) =GL(^, A, q)nSL(7z, S).
+       Theorem (19.1). — Let S be a semi-simple algebra finite over Q^, let A be an order in S,
+and let SL(TZ, A) denote the elements of reduced norm one in GL(TZ, A) (in the sense defined above).
+Then there is an integer 7Zo==7Zo(2) such that, for all n^n^ and for all ideals q in A,
+SL(TZ, A, q)/E(/z, A, q) is finite.
+       We shall begin by deriving a reformulation of this theorem which will be useful
+in its proof. The next two sections are devoted to some of its applications.
+     Lemma (19.2). — If q is an ideal in A, there is another ideal q' for which qnq'==o
+and A/(q + q7) is finite.
+      Proof.—S=qS<9S', being semi-simple, and q^S'nA clearly serves our purpose.
+      Lemma (19.3). — If q and q' are ideals with qnq'=o, then
+                        GL(n, A, q + q') == GL(n, A, q) x GL(^, A, q')
+(direct product)^ and similarly for     SL(TZ, A, q+q') and E(7z, A, q+c|').         In particular^
+K^A, q+q') =K\A, q)@K\A, q').
+                                                                                                  533
+                                                                                              7
+50                                          H. B A S S
+
+       Proof. — If i +q+q'eGL(n, A, q + q ' ) , where q and q ' have coordinates in q
+and q , respectively, then i + ? + ? ' = ( I + <?) ( I + ?') £GL(^, A, q) x GL(TZ, A, q'), since
+      7
+
+qq' == o = ^'^. The conclusion for SL follows from the factorwise definition of SL, and
+for E it follows by applying the reasoning above to its generators.
+      Lemma (19.4). — GL(TZ, A, q) and SL{n, A, q) are finitely generated groups for all n
+and q.
+      Proof. — Lemmas 19.2 and 19.3 permit us to assume A/q is finite, in which case
+GL{n, A, q) has finite index in GL(^, A), so it suffices to show the latter finitely gene-
+rated. If r is a maximal order containing A, then mFcA for some m>Q, so
+GL(n, r, m'T) cGL{n, A), showing that GL{n, A) has finite index in GL{n, F). Since F
+is a product of maximal orders in the simple factors of S, finite generation of GL{n, F)
+follows from Siege? s theorem (Lemma 18.4, i)). Exactly the same proof applies to SL.
+      Now consider the direct system.
+         . . . SL(/z, A, q)/E(7z, A, q) -.SL{n + i, A, q)/E(^ + i, A, q) ->... with limit
+                                        SL(A,q)/E(A,q).
+Thanks to Theorem 11. i we can apply Theorem 4.2 to A with n == 2. Hence we know
+from (4.2,^)) that the maps above are surjective for n>_2, and, from (4.2,^)
+and (19.4), that the terms are finitely generated abelian groups for ^4. Consequently,
+since finitely generated abelian groups are noetherian, the system stabilizes; i.e. the
+maps are eventually all isomorphisms. (Indeed, the conjecture of § 11 alleges they
+aie isomorphisms already for n>3. If true, one could take Uo==^ in Theorem 19.1,
+as the proof will show.)
+       By the theorem ofWang [35] (see Proposition 17.3) SL{n, S) is the commutator
+subgroup of GL{n, S), and, by Dieudonne [17] (see Proposition 5.1,^) the latter
+is just E(n, S) for n>_2. Thus the reduced norm induces a monomorphism
+                                   K^^GLC^/E^)-^.
+
+Moreover, the inclusion GL(A, q) CGL(S) induces an exact sequence
+                    o^SL(A, q)/E(A, q)->GL(A, q)/E(A, q)^GL(S)/E(S)
+                                               II           II
+                                           Ki(A,q)————^(2)
+
+The next corollary summarizes some of these remarks:
+      Corollary (19.5). — The following conditions on A and q are equivalent:
+      (i) There exists an ^o^ 2 sucft ^ SL^o, A, q)/E(%o? A, q) is finite (resp. trivial).
+      (ii) For the same n^, SL(%, A, q)/E(7z, A, q) is finite (resp. trivial) for all n>^n^.
+      (iii) SL(A, q)/E(A, q) is finite (resp. trivial).
+      (iv) K^A, q^IC^S) has finite (resp. trivial) kernel.
+      Remark, — As noted above, the conjecture of § 11 asserts that HQ == 3 already suffices
+in the corollary.
+534
+                               K-THEORY AND STABLE ALGEBRA                                         51
+
+      Except for the dependence ot HQ only on S, Theorem 19. i is now seen to be contained
+in the following result, of which the last assertion has already been noted above.
+       Theorem (19.6). — Let A be an order a semi-simple algebra S, finite, over Q^, with
+center C. Then, for any ideal q in A,
+                                        K^A.q^K1^)
+
+has finite kernel, and its image is isomorphic to the image of GL(2, A, q) in C* under the reduced
+norm.
+      The following sequence of lemmas will permit various reductions in the proof of
+this theorem.
+     Lemma (19.7). — Let G be a group and R a normal subgroup.                  Then, if TT=G/R
+and G/[G,G] are finite, so also is G/[G, R].
+       Proof. — R/[G, R]->G/[G, G] has finite image, so it suffices to see that it has
+finite kernel. But this is just the second map in the exact sequence
+                                 H,(Tc)-^Ho(7T,Hi(R))->Hi(G)
+which comes from the Hochschild-Serre spectral sequence in homology with integral
+coefficients (see [14, XVI, § 6, (4^)]) for the group extension i —^R—G—^TT—^I. Since TT
+is finite, so is H^rr), and this proves the lemma.
+      Corollary (19.8). — If A/q is finite, then so also is E(TZ, A)/E(TZ, A, q) for all n>_^.
+      proof. — Put G==E(^,A) and R==GL(TZ, A, q)nE(^, A). Then G/R is finite,
+and G==[G,G], b y ( i . 5 , ( i ) ) . By (4.2, d)} E{n, A, q) = [G, R], so the corollary now
+follows from (19.7).
+      Corollary (19.9). — If, for some ^o^3? SL(7?o, A)/E(^o, A)                     is finite, then
+SL{n, A, q)/E(/z, A, q) is finite for all q and all H^HQ.
+       Proof. — By (19.2) and (19.3) the conclusion above for all q follows once we know
+it for q with A/q finite, so we now assume this. If H^HQ, then the finiteness of
+SL(7z, A)/E(^, A) follows from our hypothesis and (19.5)5 and that of E(^, A)/E(/z, A, q)
+from (19.8) above. Hence SL(^, A)/E(7z, A, q) is finite, and this proves the corollary.
+      Lemma (19.10). — Let A and A' be two orders in 2, and let q be an ideal in A for
+which A/q is finite. Then there is an ideal q' in A' with A'I q' finite such that, for all n]>_^,
+E^A'.qOcE^A.q).
+      Proof. — mACA for some m>o, so q^ == AmqmA is a A' ideal contained in q,
+and clearly A'/qi is finite. Let H=GL(^, A, q^) ==G'L(n, A, q^). Then from (i .3)
+(using 7^>3) and (4.2,^)) (using ^4) we have :
+                       E{n, A, qf) C[E(TZ, A', q,), E(n, A, q^)] C[H, H]
+                                   cE(7z,A,qi)cE(7z,A,q).
+Hence q' = (q^) 2 serves our purpose.
+       Corollary ( 1 9 . 1 1 ) . — If, for some order A' in S, K 1 (A / )—>-K 1 (S) has finite kernel,
+then there is an n^ such that, for all n^n^, for all orders A, and for all ideals q in A,
+SL{n, A, q)/E(7z, A, q) is finite.
+
+                                                                                                  536
+52                                         H. B A S S
+
+       Proof. — Our hypothesis and. (19.5) imply SL(^o, A^/E^o, A') is finite for some
+^o^S? so our conclusions for A' follow from (19.9). Taking ^0^4? we can B-Pply
+Lemma 19.10 to any other A, and conclude that E(^o, A', q') cE(^o5 A) for some q'
+with A'/q' finite. Since SL^o, A')/E(^o, A, q 7 ) is finite, E(7Zo, A)nSL(/Zo, A') has
+finite index in SL(^o, A)nSL(7Zo, A'). But the latter contains SL^o, AnA'), which
+has finite index in SL^o, A). Therefore SL(^o, A)/E(/ZO, A) is finite, and the corollary
+now follows from (19.9).
+       Corollary 19.11 reduces Theorems 19.1 and 19.6 to showing that K^A)—^!^^
+has a finite kernel for some A. Since K^A) is a finitely generated abelian group
+(Theorem 18.6), we need only show the kernel is torsion, and for this the following crite-
+rion is useful. It is here that K1 effectively intervenes in the proof.
+       Proposition (19.12). — Let AcB        be commutative rings with B finitely generated and
+projective as an A-module.   Then, if A is a finite A-algebra, the kernel of K^A^K^B^A)
+is torsion.
+       Proof. — The nature of B provides us with a homomorphism K^B^^A^—^K^A)
+(see § 14) whose composite with the one above is the homothetie of the K° (A)-module
+K^A), defined by Y^(B)(=K°(A). The Proposition now results from (15.6), which
+tells us that anything killed by YA^) ls torsion.
+       We come now to the proof that ke^K^A^K^S)) is torsion. Passing to
+A^^ACL^Q^^ where A is the ring of integers in a splitting field L for 2, we can reduce,
+thanks to (19.12) above, to the case where S is split. By (19.11), moreover, we may
+take for A a maximal order. But then A is a product of maximal orders in the simple
+factors of S, and everything decomposes accordingly, so we reduce further to the case
+S=EndL(V), V a vector space over the number field L, and then (see [3] or [15])
+A=End^(P), with P a projective module over the ring A of integers in L. Now the
+Morita theorem (§ 17) gives us equivalences from the categories of A-modules to
+A-modules (^^P)? anc^ ^rom L-modules to S-modules (®L^)? which commute with
+the passages from A to L and A to 2, respectively. Thus we have
+                                        K^A^K^L)
+                                         II?  \\l
+                                        K^A)-.!^)
+
+commutative, and it suffices, finally, to show that ke^K^A) ^K^L)) is torsion.            Using
+(19.12) again, we see that this is a consequence of the following proposition:
+       Proposition ( 1 9 . 1 3 ) . — Let A be the ring of integers in a finite extension L of Q^,
+and let       ^eke^K^A^K.^L)).        Then there is a finite solvable extension V of L, such
+that ^ke^K^A^K^B)), where B is the ring of integers in F.
+      Proof. — By ( 1 1 . 2 , ^ ) ) ^=W^oc with oc an automorphism of A2, and
+SekerfK^A^K^L)) simply means d e t o c = i . Passing to a quadratic extension F()
+ofL, with integers Bo, we can give o^ = IB„0Aa an eigenvalue. As an automorphism of F^,
+a thus has a one dimensional invariant subspace, and since Bg is a Dedekind ring, the
+
+536
+                                 K-THEORY AND STABLE ALGEBRA                                             53
+
+latter contracts to a direct summand PQ of B^. Po is invariant under o^, and, having
+rank one, PO^CI, a an ideal in Bo. Since the class group ofB^ is torsion (even finite)
+(^==(0) is principal for some A>o. Let F=Fo(\/^) have integers B. Then
+P==B®^P(^aB^B, and P is invariant under (B== ig®^ao== IB®^OC. If we choose a
+basis for B2 the first member of which generates P, then (B is represented by a matrix of
+the form
+                                u x      U 0 I      U 1^
+                                      0    V     0    V   0       I
+
+The second factor is manifestly in E(2, B). Since det (B= i, we have v=u~1, so the
+first factor lies also in E(2, B) by the Whitehead lemma (1.7). Therefore
+W^igOO^a) =Wg([B) =o, as required.
+       Remarks. — i) Theorems 19.1 and 19.6 are probably valid also for semi-simple
+algebras over a function field in one variable over a finite field. The proof above has
+two ingredients which are not known, to my knowledge, in that case. One is Wang's
+theorem. However, this can be circumvented easily since the discrepancy between E(7z, S)
+and SL{n, S) is easily shown to be a torsion group for semi-simple algebras over any
+field. The second point, which I don't know how to supply or outmaneuver, is the
+finite generation of SL(^, A), say for n>_^ (1). Similarly, this is the only point requiring
+attention if one works throughout, say, with orders in S over a ring of the form Z[y~1],
+for some neZi.
+       2) Theorem 19.6 suggests an obvious analogue for K°. Namely, one can ask
+that K^A^K^S;) have finite kernel. Jan Strooker (Utrecht thesis) has pointed out
+that a necessary and sufficient condition for this is that every projective A-module P,
+for which Q®zP is S-free, be locally free. He gives examples for which this fails.
+
+§ 20. Groups of simple hoxnotopy types.
+
+       Theorem (20.1). — Let S be a finite semi-simple ^-algebra with q simple factors, and
+suppose R®QS has r simple factors. Then, if A is an order in 2 and q is an ideal in A,
+K^A, q) is a finitely generated abelian group of rank<_r—q, and =r—q if A/q is finite.
+       Theorem (20.2). — In the above setting the following conditions are equivalent:
+       1) K^A) is finite.
+      2) K^A, q) is finite for all q.
+      3) An irreducible ^-module remains irreducible under scalar extension from Q^ to R.
+      4) The center of each simple factor of 2 is either Q, or an imaginary quadratic extension
+ofQ..
+    Proof of (20. i). — By (19.2) and (19.3) we can assume A/q is finite. Let F be
+a maximal order containing A. Then GL(TZ, A, q) CGL(^, A) cGL{n, F) are both
+
+     (1) This has recently been established by O'Meara (On the finite generation of linear groups over Hasse
+domains, to appear) for commutative A.
+                                                                                                        637
+54                                           H. B A S S
+
+subgroups of finite index, for all n. Thus K^A, q^K^F) has finite cokernel.
+By (19.6), moreover, the maps K^A, q^K.^r^K1^) both have finite kernel.
+Hence rank K^A, q) =rank K^F).
+       Now F is a product of maximal orders in the simple factors of 2, and K^F) splits
+accordingly. Since the function r—q likewise adds over the simple factors we can
+reduce to the case where E is simple (i.e. q = i), say with center L. R®JL == center R^nS
+has the same number r of simple factors as R^qS, and we want to show that
+rankK^F)^—!. We know from (19.6) that rank K^F) is the rank of the image
+UCL* of GL(F) under the reduced norm. If A denotes the integers in L, then F
+being integral over A implies UcA*. On the other hand A^cr^GI^i, F), so
+(A^CU, where [S:L]=7z 2 . Hence rank U = rank A*. By the Dirichlet Unit
+Theorem, rankA*==r—i, and this completes the proof.
+       Proof of (20.2). — The equivalence of i), 2)3 and 3) is an immediate consequence
+of the above theorem, and that of 3) and 4) is trivial.
+       If TT; is a finite group then ZTT is an order in the semi-simple algebra QTT, so we may
+apply the preceding results. Viewing ±7rCGL(i, Zrr) CGL(ZTT), it makes sense to
+write K^ZTT)/ db7r, with a minor abuse of notation. J. H. C. Whitehead showed [36]
+that if X and Y are finite simplicial complexes of the same homotopy type and funda-
+mental group TT, then the simplicial homotopy equivalences from X to Y, modulo the
+simple homotopy equivalences, are classified by invariants which live in ^(ZTT)/^^.
+Herein lies the principal interest of the next result, which elaborates on some earlier
+work of G. Higman [38]:
+      Corollary (20.3). — Let n be a finite group, r the number of irreducible real representations
+of TT, and q the number of irreducible rational representations of n.   Then the commutator quotient
+group of GL(ZTI;) is a finitely generated abelian group of rank r—q.
+      There are well known group theoretic interpretations of r and q : q is the number
+ofconjugacy classes of cyclic subgroups ofrr (Artin). Write a^b in-n: if a is conjugate
+to A^. Then r is the number of ^ classes (Berman-Witt). Both of these results can
+be found in Gurtis-Reiner [16, Theorem, 42.8].
+      Examples. — i) If TT is abelian, then r==q if, and only if, n has exponent 4 or 6.
+For each simple factor of Qrc is a cyclotomic field of rP1 roots of unity, where 7z|exp7r.
+These fields are either Q^ itself or totally imaginary. They have degree <_2 precisely
+when n\ 4 or 6.
+      2) The rationals are a splitting field for the symmetric groups and Q/ ^/— i) for the
+quaternions. Hence the Whitehead group is finite in these cases. For groups with this
+property the results of the next section can be used to give a crude bound on its order.
+It is not inconceivable that it even be trivial.
+      3) Ifrr is cyclic of order n, then TT has S(^) irreducible Q^ representations, S{n) =the
+number of divisors of n. n has [72/2] + i irreducible R representations, where [x] = the
+integral part of x. Hence the Whitehead group has rank [/z/2] 4- i—8(^) in this
+case.
+638
+                                  K-THEORY AND STABLE ALGEBRA                                    55
+
+      4) In [7] it is shown that the Whitehead group is trivial when n is free abelian.
+Milnoi has asked whether it is always a finitely generated abelian group ifn is. It seems
+reasonable, though difficult to show, that K^A) is finitely generated for A any finitely
+generated commutative ring over Z with no nilpotent elements. The same statement
+for K° would generalize the Mordell-Weil Theorem.
+
+§ 21. Subgroups of finite index in SL(n, A).
+       Does every subgroup of finite index in SL(n, Z) contain a congruence subgroup,
+SL(/z, Z, §Z), for some q>o? The answer is easily seen to be cc no 3? for n==2, as
+was already known to Klein. For 7zJ>3, however, the solution is affirmative; a proof
+is outlined in [40]. The method consists of an application of the present results to reduce
+the problem to a (rather formidable) cohomological calculation. The latter, in turn,
+ depends heavily on some recent results of Lazard on analytic groups over j^-adic fields.
+       I shall summarize here, in a form adapted to this method, the information provided
+by the present material.
+       Let A be an order in a simple algebra S, finite over Q^. We introduce the
+following abbreviations in our notation:
+                                   S=SL(/2,A)          E=E(/z,A);
+for each ideal q,
+                        S,==SL(7z,A,q), E,=E(7z,A,q), and F,=EnS,.
+         Theorem ( 2 1 . 1 ) . — For   n>^2 center S = center E is isomorphic to the (cyclic) group
+     1
+of rp roots of unity in the center of A.     For 7^>3, a non central subgroup of S normalised by E
+contains Eq for some q =t= o, and E/E^ is finite. Hence a normal subgroup of E is either finite
+or of finite index, and the same is true of S as soon as S/E is finite. The latter holds for all
+sufficiently large n.
+       Proof. — By (2.4) an element of GL{n, A), n>_2, centralized by E, has the form u. i,
+with ^ecenter A. Being in S means u71 == i, and it then follows from (1.7) that u. i cE.
+Since center Ac center 2, a field, the n^ roots of unity form a cyclic group.
+       The rest of the theorem is an immediate consequence of (4.2, e } ) , (19.8) and (19. i).
+       To avoid some technical difficulties we shall henceforth assume A is commutative,
+i.e. 2 is a number field.
+       We shall be speaking o f " profinite ?? (== compact, totally disconnected) groups,
+and their cohomology, for which we give Serre's notes [39] as a general reference. If H
+is any group we denote by H its completion in the topology defined by all subgroups
+of finite index. Since each of the latter contains a normal subgroup of finite index we
+can describe H by
+                                          H = Imi^finite11/1^ •
+
+
+This defines a functor from groups (and homomorphisms) to profinite groups (and conti-
+nuous homomorphisms) which evidently preserves epimorphisms.
+                                                                                                539
+56                                               H. B A S S
+
+      On the other hand, S and E above can be completed also in the " congruence
+topology " defined by taking the S^, resp. F(? q=t=o, as a basis for neighborhoods of
+the identity. By Corollary 5.2 the inclusion ECS induces isomorphisms
+                                      •E/F^S/S^SL(7z,A/q),
+for each q 4= o. Since this group splits uniquely according to the primary decomposition
+ofq, and since lim^ SL{n, A/q^ == SL(^, \) for q prime, we conclude that S and E have
+the same congruence completion, 11=                    Fl         SL(^,A^).   We shall write
+                                                   q prime, + 0
+
+                             G=ker(S-^II)           and           Co=ker(E^II).
+The question discussed above asks whether the congruence and profinite topologies
+in S coincide, i. e. whether C = o.
+        Theorem (21.2). — (i) There is a commutative diagram with exact rows,
+
+                                     i -^ C -> S -> n -> i
+                                            t          t           II
+                                     i -» Go -> E -> n -> i.
+Here H == lmi^(,E/F,=lim^oS/S,=
+          <          <
+                                                   n         SL(re,Aj.
+              ——               ——               q prime,+0
+        (ii) For   7^>3
+                            Co = Urn, ^ oW,           and          C == Urn, ^ .(S^),
+
+and the maps in both of these projective systems are all surjective.
+        (iii) For ^>3, GoCcenterE. For ^>4, CCcenterS, and E->S is a monomorphism.
+        (iv) Consider the following conditions:
+        a) S,/E,={i} for all q.
+        b) A non central normal subgroup of S contains S^ for some q+o.
+        c) A subgroup of finite index in S contains Sq for some q=t=o.
+        d) C={i}.
+       e) (SJE,)={I} for all q.
+       For n^3 we have a)ob) =>c)od)oe), and for n>_^ they are all equivalent.       Similarly^
+they are all equivalent for n>_^ if we substitue E, Fq, and Co for S, S^, a/zrf C, respectively.
+       (v) Writing S=S(^), G=C(7z), ^., ^0 ^TZO^ ^z'r dependence on n, the inclu-
+sions   S (n — i) C S (n)    and   E (n — i) C E (n)        induce homomorphisms        G (n — i)—^C(n)   and
+Co{n—i)->Go(7z)        which are surjective for      ^3.
+        Proof. — Part (i) is contained in the remarks preceding the theorem.
+        It is immediate from (21.1) above that
+(*)                                         E=Um^E/E,                                             for ^3,
+
+and this makes it evident that Co == lim^ ^ o^q/Eq.                     S->S/E^ induces S-»(S/E^)-^i,
+and hence S—^lim^o(S/E^).              It follows from (si'.i) again that this is injective.              It
+
+540
+                             K-THEORY AND STABLE ALGEBRA                                     57
+
+is surjective since the image is (clearly) dense, and § is compact.     Since S/Sq is finite
+for q + o it is now evident that
+                            C = ker(Um, ^(S/E,)->Um^ ^S/S,)
+
+admits the description in (ii). The last part of (ii) follows once we show that, if o=h qCq',
+then F^/E^F^/Eq' and S^/E^->S^/E^ are surjective. This means simply that
+F^Eq, = F^ and S^E^ == Sq.. The first of these equations is a consequence of the second,
+and the second is contained in Corollary 5.2.
+       For 7?>3 we know from (4.2, d}) that [E, FJ ==E^, so it follows from (ii) that
+Go C center E. If n>_^ then from (4.2,^) we have [S, Sj ==E^, so it follows similarly
+from (ii) that CCcenter S. To show that E->S is a monomorphism it suffices, by (*)
+above, to show that S/E^ is separated in its profinite topology. But for 72^4, S/E.
+is a central extension of a finite group S/S^ by a finitely generated abelian group
+S^/E^, using (4.2, f)) and (19.4), and such a group is clearly separated. This proves (iii).
+       Now for (iv). Assume n>_y
+       a J o b ) follows from (21.1) and (ii).
+       b) =>c) since a subgroup of finite index contains a normal subgroup of finite
+index, and the center of S is finite.
+       c ) o d ) since c ) asserts the coincidence of the profinite and congruence topologies.
+       d ) o e ) follows from (ii).
+       If 7z>4, then S^/Eq is a finitely generated abelian group, as already noted in
+the last paragraph, so d)=>a).
+       The proof for E is parallel, but the last point is simplified since FJE(, is even
+finite already for %>3.
+       For part (v) it suffices, by compactness, to show that C(n—i)->G(n) has a dense
+image for ^3, and similarly for Go. Denseness means that G{n—i) projects onto
+every finite quotient of C{n). But it follows from (ii) that every finite quotient of C{n)
+has the form S^)/H with E,(n)cH. By (4.2,^), S^) =S,(/z- i)E,(7z) =S^-i)H,
+so S^{n—i)/HnS^(7z—i) coming from C(n—i) maps onto Sq(^)/H, as required.
+ The proof for Co is identical, after replacing S and S^ by E and Fq, respectively.
+       In [40] it is shown that, when A=Z, H^I^), Q,/Z) ==o (cohomology in the
+sense of [39]), and on this basis that C(n) = o for n>_^. (By virtue of (21.2, (iv)) this
+is equivalent to E^==S(^ for all q>o. For 5^5 this had been shown by Brenner [13]
+ by direct calculation.)
+       In the general case one knows only the following result, which Serre has proved
+ using recent results ofLazard and of Steinberg (Colloque de Bruxelles, 1962).
+       Theorem (21.3) (Serre, unpublished) H^n, Q^/Z) is finite.
+       Plugging this into the argument of [40], and using the information in (21.1)
+ and (21.2) above, one obtains:
+       Corollary (21.4). — Go is a finite group for ^^3, and C is finite for n large enough,
+so that S/E is finite.
+
+                                                                                             541
+                                                                                         8
+58                                          H. B A S S
+
+§ 22. Some remarks on polynomial rings.
+        Let A be commutative and noetherian, and let B=A[^, . . . , ^J with
+^i, • • • 9 ^ n ( ^ 1 ) indeterminates. Grothendieck has shown that, if A is regular, the
+homomorphism K^A)—^^) is an isomorphism (see [29] or [7]). It follows that
+if P is a projective B-module, then YBP^TB^^AQJ ^or tne projective A-module
+Q^=P/(^ . . .^ ^)P. Now this equation in K°(B) can be replaced by the isomorphism
+P^B®^Q,, provided rank P> dim max (B) (Proposition 15.6). At this point the
+unpleasant fact emerges that dim max(B) ==dim spec(B) =nJ^dim spec(A). Thus, for
+example, if A is local (so dim max (A) ==o), dim max(A[^]) can be arbitrarily large.
+In any event, we can record the following conclusion, using the fact that:
+        A is regular and dim spec (A) ==d o global dim A=d.
+      Theorem (22.1). — Let A be a commutative noetherian ring of global dimension d, and
+let B = A [^, . . ., ^], the ^ being indeterminates.   Then a projective ^-module of rank > d-\- n
+has the form B®^Q^ for some projective A-module Q,.
+       If A is a field we see that projective B-modules of rank>7? are free, but we can't
+conclude this if A is only local. However, we can make a very small compensation
+in this case (Corollary 22.3 below). For here, in the equation YB^^YB^^AQJ? 0.^1
+be free, so we can conclude that POB^B^ for some r, s\ we want P to be free. If we
+write (PQB^^QB^B7'"'1^ and apply induction, we are reduced to showing, under
+suitable hypotheses, that PQB^B^P^B^1. It is easy to see (cf. proof of the Cancel-
+lation Theorem, 9.3) that this conclusion is equivalent to the assertion that Aut^B^
+is transitive on the unimodular elements of W.
+      Proposition (22.2). — Let A be commutative and noetherian and suppose
+                             d= dim spec (A) > dim spec(A/rad A).
+Then, if B==A[^, . . ., ^], ^ indeterminates, E(r, B) is transitive on the unimodular elements
+ofW for r>d+n.
+      Remark. — If we replace d + n above by d + n + i then this Proposition is contained
+in Theorems 11.1 and 4 . 1 , ^ 3 since dim max(B) =d+n.
+      Proof. — Suppose a=(^i, . . . , ^ ) e B r is unimodular; we seek s(=E(r, B) such
+that sa== (i, o, . . ., o). The remark above, together with our hypothesis, shows that
+this can be done if we replace A by A/rad A. It follows, using Lemma i . i, that we
+can find ^ eE (r, B) so that s^a == [a[, . . . , < ) = ( i, o, . .., o) mod rad A. B'. Since
+a[= i mod rad A.B, a maximal ideal of B containing a[ cannot contract to a maximal
+ideal of A. It follows that dim max(B/^B)<n+rf—i. Hence we can again apply
+the remark above, this time to the (unimodular) image of (^, . . ., a,) in (B/^B)7'"1,
+and transform this image into (i, o, . . ., o) with s^eE^—i, B/a^B). By Lemma i. i
+again, £3 lifts to ^eE(r— i, B), and we set £3=                  „ sE(r, B).    Then s^ioc has
+                                                            0   £<>
+
+the form {a[, i +^L ^a[, . . ., b,a[), and it is now clear how to finish with elementary
+transformations.
+542
+                                     K-THEORY AND STABLE ALGEBRA                                                     59
+
+       From the discussion preceding this proposition we derive the following corollary:
+       Corollary (22.3). — If, in Proposition 22.2, A is a regular ring for which K°{A)^Z.,
+then a projective ^-module of rank^d-\-n is free.
+       As a special case, we have the following corollary:
+       Corollary    (22.4). — If A is a semi-local principal ideal domain (so                         d^>_i)    then a
+projective A[^, . . ., t^\-module (t^ indeterminates) of rank ^>n is free.
+     This last corollary has recently been strengthened, for n ==2, by S. Endo [20],
+who shows in this case that all projective modules are free. This generalizes the theorem
+of Seshadri [27].
+
+                                                  BIBLIOGRAPHY
+
+ [i] E. ARTIN, Geometric Algebra, Interscience, n° 3 (1957).
+ [s] M. ATIYAH and F. HIRZEBRUCH, Vector bundles and homogeneous spaces, Proc. Sympos. Pure Math.,
+     Amer. Math. Soc., vol. 3 (1961), 7-38.
+ [3] M. AUSLANDER and 0. GOLDMAN, Maximal orders, Trans. Am. Math. Soc., 97 (1960), 1-24.
+ [4] —, The Brauer group of a commutative ring, Trans. Am. Math. Soc., 97 (1960), 367-409.
+ [5] H. BASS, Projective modules over algebras, Ann. Math., 73 (1961), 532-542.
+ [6] —, Big projective modules are free, ///. Journ. Math. (to appear).
+ [7] —, A. HELLER and R. SWAN, The Whitehead group of a polynomial extension, Publ. math. I.H.E.S., n° 22,
+     Paris (1964).
+ [8] — and S. SCHANUEL, The homotopy theory of projective modules. Bull. Am. Math. Soc., 68 (1962), 425-428.
+ [9] A. BOREL and HARISH-CHANDRA, Arithmetic subgroups of algebraic groups, Ann. of Math., 75 (1962), 485-535.
+[io] — and J.-P. SERRE, Le theoreme de Riemann-Roch (d'apres Grothendieck), Bull. Soc. Math. de France, 86
+      (i958), 97-136.
+[n] N. BOURBAKI, Algebre, liv. II, chap. 8 : « Modules et anneaux semi-simples », Actualites Sci. Ind., 1261,
+      Hermann (1958).
+[i2] —, Algebre commutative, chap. 1-2, Actualites Sci. Ind., 1290, Hermann (1961).
+[13] J. BRENNER, The linear homogeneous group, III, Ann. Math., 71 (1960), 210-223.
+[14] H. CARTAN and S. EILENBERG, Homological Algebra, Princeton (1956).
+[15] C. CHEVALLEY, U arithmetique dans Us algebres de matrices, Actualites Sci. Ind., 323 (1936), Paris.
+[16] C. W. CURTIS and I. REINER, Representation theory of finite groups and associative algebras, Wiley, New York (1962).
+[17] J. DIEUDONNE, Les determinants sur un corps non commutatif, Bull. Soc. Math. France, 71 (1943), 27-45.
+[18] M. EICHLER, Uber die Idealklassenzahl total definiter Quaternionenalgebren, Math. ^jeit., 43 (1937), 102-109.
+[19] —, Uber die Idealklassenzahl hyperkomplexer Systeme, Math. ^eit., 43 (1937), 481-494.
+[20] S. ENDO, Projective modules over polynomial rings (to appear).
+[21] P. GABRIEL, Des categories abeliennes, Bull. Soc. Math. France, 90 (1962), 323-448.
+[22] A. GROTHENDIECK et J. DIEUDONNE, elements de geometric algebrique, I, Publ. math. I.H.E.S., n0 4,
+      Paris (1960).
+[23] H. HASSE, ^ahlentheorie, Berlin, Akademie-Verlag (1949).
+[24] W. KLINGENBERG, Die Struktur der linearen Gruppen iiber einem nichtkommutativen lokalen Ring, Archiv
+      der Math., 13 (1962), 73-81.
+[25] —, Orthogonalen Gruppen iiber lokalen Ringen, Amer. Jour. Math., 83 (1961), 281-320.
+[26] K. MORITA, Duality for modules..., Science Reports Tok. Kyoiku Daigaku, sect. A, 6 (1958).
+ [27] C. S. SESHADRI, Triviality of vector bundles over the affine space K2, Proc. Nat. Acad. Sci. U.S.A., 44 (1958),
+      456-458.
+ [28] J.-P. SERRE, Faisceaux algebriques coherents, Ann. Math., 61 (1955), 197-278.
+ [29] —, Modules projectifs et espaces fibres a fibre vectorielle, Sem. Dubreil (1957-58), n0 23.
+ [3o] —, Algebre locale', multiplicity (redige par P. GABRIEL), Coll. de France (1957-58).
+ [31] C. L. SIEGEL, Discontinuous groups, Ann. Math., 44 (1943), 674-689.
+
+                                                                                                                     543
+60                                                H. B A S S
+
+[32] R. W. SWAN, Induced representations and prqjective modules, Ann. Math., 71 (1960), 552-578.
+[33] —, Projective modules over group rings and maximal orders, Ann. Math., 76 (1962), 55-61.
+[34] —, Vector bundles and projective modules, Trans. Am. Math. Soc., 105 (1962), 264-277.
+[35] S. WANG, On the commutator group of a simple algebra, Amer. Jour. Math., 72 (1950), 323-334.
+[36] J. H. C. WHITEHEAD, Simple homotopy types, Amer. Jour. Math., 72 (1950), i-57.
+[37] H. ZASSENHAUS, Neue Beweis der Endlichkeit der Klassenzahl..., Abh. Math. Sem. Univ. Hamburg, 12 (1938),
+      276-288.
+[38] G. HIGMAN, The units of group rings, Proc. Lond. Math. Soc., 46 (1940), 231-248.
+[39] J.-P. SERRE, Cohomologie galoisienne, cours au College de France, 1962-63, notes polycopiees.
+[40] H. BASS, M. LAZARD etJ.-P. SERRE, Sous-groupes d'indicefmi dans SL(M, Z), Bull. Am. Math. Soc. (to appear).
+
+
+
+
+                                                                             Refu Ie 15 juin 1963.
+
+
+
+
+544
+

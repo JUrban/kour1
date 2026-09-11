@@ -1433,3 +1433,19 @@ comprehensive novelty verification remains pending.
 At 15:16 UTC all six n=7 GAP verifiers were live at 8,880,000 nodes
 and combined RSS 13,228,276 KiB. No shard had completed. Work remains
 local, with no pushes or outside communications.
+
+
+## 2026-09-11T15:43:18.558188+00:00 — Cancellation consequence and a saturation screen
+
+Recorded 4.56(b)'s module-isomorphism conclusion as a consequence of
+Bass 1964 Theorem9.3. Local projectivity, the Euler-class homomorphism,
+and arbitrary free-cover kernel ranks are proved explicitly; the
+printed literal-equality issue and unresolved part(a) are separated.
+This is prior machinery, keeping the complete-candidate count at26.
+
+For 20.112, read the entire 11-page source preprint and tested F=N^3
+on all8,339 groups of orders648,1296,1944. No saturation failure
+occurred;12 cases required both normalizer-chain computations. Actual
+exit0, clean log, coverage rows and final sentinel are hash-audited.
+These computations remain exploratory, and the general question is
+unresolved. Existing n=7 workers continue; no communications or pushes.
