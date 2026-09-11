@@ -991,3 +991,19 @@ from partitions of prime exponents; the final full-coverage checker is
 prepared but must await the last two jobs. The20.100 n=7 generator
 continues with no completed certificate. All actions remain local,
 with no push or outside communication. The48-hour goal remains active.
+
+## 2026-09-11T10:39:27.384522+00:00 — Final audit handoff for19.20
+
+At10:38 UTC,355/356 jobs are complete. The remaining job has counted
+through order384 ID20167; ID20168 is still running and the last abelian
+ID has not yet been logged. There are29,185 nonabelian counts,513 skips,
+zero equalities and58 reversals. No complete through511 claim is made.
+A one-hour bounded watcher will run the independent skipped-ID audit
+and the disjoint-range aggregation when the final job exits successfully.
+It writes local results only; review and Git commit remain separate.
+The n=7 generator has38.42million states at10:35 UTC and no footer.
+
+The14.24 deduction also makes the asymmetry explicit: its reverse
+minimal conjugator norm is two, while the forward minimum is r. The
+proof and updated hash are retained. Main ongoing computations now use
+two CPUs, plus the negligible audit watcher, within the resource limits.
