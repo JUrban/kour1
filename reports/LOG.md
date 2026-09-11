@@ -498,3 +498,11 @@ Confirmed GAP4.16.1 remains available. Wilde2013 already covers all odd groups t
 The computed invariance led to a proof for every odd prime: an orbit of size p^4 in (Z/p^3)^2 is invariant under p^2 translations. Combined with Wilde's prior theorems this proves the support-order bound for groups of order p^10 with an abelian normal subgroup of size at least p^6, including nonsplit extensions. The full problem and novelty remain open; complete-candidate count stays13.
 
 Order256 snapshot: 48,699 counts,0 equalities,89 reversals,8 live,8 complete ranges; all log checks PASS.
+
+## 2026-09-11T04:22:34.989960+00:00 — Complete derived answers to20.8 and20.11
+
+For20.8, the n=3 Lei--Zhang construction gives H of rank3 in F2 and a fixed subgroup K of rank4. The independent core-image argument checks every proper intermediate subgroup, including infinitely generated ones; it does not assume every overgroup is a principal quotient. All five vertex partitions, the subgroup ranks and457 GAP word controls pass.
+
+For20.11, Jaikin-Zapirain's prior corollaries give pairwise minimum-rank intersection and join closure. The infinitely generated bottom is handled by first taking the finitely generated intersection. Chain unions and a fully stated descending Schreier-graph limit give greatest and least members for arbitrary ambient rank. Full proofs and a shared internal review are written. Both entries are prior-work consequences and excluded from the13-candidate new-priority count.
+
+GAP4.16.1 is available. Order256 snapshot at04:21:21UTC:49,939 counts,0 equalities,102 reversals,8 live and8 complete ranges; all checks PASS.

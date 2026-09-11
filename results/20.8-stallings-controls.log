@@ -1,0 +1,10 @@
+PASS g_image vertices=6 edges=8 rank=3
+PASS h_image vertices=6 edges=8 rank=3
+PASS K_domain vertices=3 edges=6 rank=4
+PASS K_image vertices=17 edges=20 rank=4
+QUOTIENT partition=(0, 0, 0) vertices=1 edges=3 rank=3
+QUOTIENT partition=(0, 0, 1) vertices=1 edges=3 rank=3
+QUOTIENT partition=(0, 1, 0) vertices=2 edges=5 rank=4
+QUOTIENT partition=(0, 1, 1) vertices=1 edges=3 rank=3
+QUOTIENT partition=(0, 1, 2) vertices=3 edges=6 rank=4
+PASS partitions=5 distinct_folded_quotients=3 fixed_generators=4

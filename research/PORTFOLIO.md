@@ -1,9 +1,11 @@
 # Candidate portfolio
 
-Updated 2026-09-11T03:34:52.160784+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T04:22:34.989960+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 20.8 | Explicit rank3 equalizer construction and every principal core image. | Complete negative prior-construction consequence. All five vertex partitions prove the intermediate-rank condition; independent Python/GAP controls PASS. Excluded from new priority. |
+| 20.11 | Subgroup rigidity plus bounded-rank chain and intersection limits. | Complete affirmative prior-theorem deductions for all four assertions, including infinite-rank ambient groups and infinitely generated bottom subgroup. Outside review pending; excluded from new priority. |
 | 19.9(a),(b) | Universal symplectic central extension; Clifford detection of the braid Hopf kernel. | Complete deductions: negative(a), affirmative(b), with explicit braid representation bound. Both are prior-theorem consequences, excluded from the new-priority count. Exact Clifford and26 GAP spin controls PASS; outside review pending. |
 | 18.114 | IRREDSOL equality screen over F5. | All2,468 soluble entries through dimension6 processed;2,421 eligible, zero noncyclic hits. All57 independent controls pass. Indexed affine-constructor cache bug diagnosed; invalid runs excluded. |
 | 18.111 | Quasi-isometrically trivial cyclic central extensions. | Exact prior negative theorem: Frigerio--Sisto2023 Theorem1.2. Introductory theorem read; full proof unaudited; excluded from new priority. |

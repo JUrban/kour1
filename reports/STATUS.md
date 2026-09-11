@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-11T04:02:07.258247+00:00.
+Updated: 2026-09-11T04:22:34.989960+00:00.258247+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **13**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), and **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T04:02:07.120145+00:00, the order256 extension has 48,699 counts, zero equality hits, 89 reversals, 8 verified live workers and 8 completed ranges. All log checks pass.
+- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T04:21:21.992011+00:00, the order256 extension has 49,939 counts, zero equality hits, 102 reversals, 8 verified live workers and 8 completed ranges. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
@@ -85,6 +85,10 @@ and automorphism order. Five smaller controls also agree. None of the
 60 evaluated parameter triples gives equality.
 
 ## Additional constructions and exclusions
+
+**20.8:** Complete negative deduction using Lei--Zhang's2026 three-generator equalizer construction. An explicit K<H<F has ranks4,3,2 and a nonidentity map H->F fixing K. All five vertex partitions of K's core graph prove that every proper intermediate subgroup has rank at least4. Independent Python and GAP rank/folding controls and457 word controls pass. Credited prior construction; excluded from the13-candidate new-priority count. See `research/20.8-known-consequence.md` and `research/20.8-11-review.md`.
+
+**20.11:** All four assertions follow from Jaikin-Zapirain's subgroup-rigidity corollaries. Explicit chain-union and descending-intersection arguments cover infinitely generated F and arbitrary-rank H as permitted by the printed statement. Complete prior-theorem deductions, excluded from new priority. See `research/20.11-known-consequence.md` and the shared review.
 
 **19.108 partial theorem:** For every odd prime p, the support-order divisibility holds for groups of order p^10 having an abelian normal subgroup of order at least p^6. An elementary orbit lemma proves the extension beyond Wilde's prior bounds; nonsplit extensions are included. The p=3 screen covers 571 subgroup classes and 1,596 regular orbits, with independent integer replay, 174,312 exact Fourier sums and nine actual character controls. The full question remains unresolved; no novelty claim or extra complete-candidate count. See `research/19.108-partial.md` and `research/19.108-review.md`.
 
