@@ -4,6 +4,25 @@ Last checked 2026-09-11. A search finding no solution is evidence only of the sc
 
 ## Newly audited older problems
 
+- **20.90:** The supplied page160 was visually checked. Shumyatsky,
+  [arXiv:1809.04462v1](https://arxiv.org/abs/1809.04462v1), Problem1.2,
+  is the exact question; introduction and Section5.3 examples read.
+  Shumyatsky--Zalesskii--Zapata,
+  [arXiv:1807.02429v1](https://arxiv.org/abs/1807.02429v1), Question2,
+  asks the stronger infinite non-prosoluble CA existence question;
+  introduction, Proposition5.4 and concluding questions read.
+  Fine--Gaglione--Rosenberger--Spellman,
+  [arXiv:1506.02636](https://arxiv.org/abs/1506.02636), Theorem3.4(1)
+  and Lemma3.6, already prove the characteristic-two field CA fact;
+  that statement and its full proof were read and are credited.
+  Mendonca--Weigel--Zapata,
+  [arXiv:2411.03880v1](https://arxiv.org/abs/2411.03880v1), introduction,
+  main theorems and Lemma2.8 read; answers other2019 questions, with
+  complete indirect consequences not yet audited. Limited exact-question
+  and matrix-group searches did not locate the new explicit profinite
+  application, but do not establish priority. Two complete constructions
+  and detailed reading scopes are in `research/20.90-proof.md` and
+  `research/20.90-2adic-proof.md`. Counted as one candidate, review pending.
 - **13.19:** The supplied PDF page 67 was visually checked. Gorchakov's
   *Quotients of subdirect products of groups* (2009),
   https://doi.org/10.1007/s11202-009-0070-z , poses the same conjecture on

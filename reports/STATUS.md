@@ -1,15 +1,17 @@
 # Current status
 
-Updated: 2026-09-11T04:47:34.468983+00:00.
+Updated: 2026-09-11T05:09:01.073246+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
-- Complete candidate resolutions: **14**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), and **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4). All await outside review and further novelty checks.
+- Complete candidate resolutions: **15**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations), **20.108(a),(b)** (a centreless group of order605 whose multiple-holomorph quotient contains an element of order4), and **20.90** (a two-generator infinite profinite CA-group mapping onto A5). All await outside review and further novelty checks.
 - Externally reviewed new solutions: 0.
-- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T04:46:20.516534+00:00, the order256 extension has 51,632 counts, zero equality hits, 143 reversals, 8 verified live workers and 8 completed ranges. All log checks pass.
+- The 21.26 search through order2000 and the 19.20 search through order255 are complete. At 2026-09-11T05:09:01.073246+00:00, the order256 extension has 53,054 counts, zero equality hits, 179 reversals, 6 verified live workers and 10 completed ranges. All log checks pass.
 - **19.20 complete:** all7,011 nontrivial groups through order255, including493 abelian equality controls and6,518 nonabelian groups. Zero nonabelian equality hits. There are54 reverse inequalities for the stronger conjecture, including the independently certified order64 example.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 
 ## Candidate proofs
+
+**20.90:** The closure of two explicit matrices in SL2(F4[[t]]) is infinite, has abelian centralizers, and reduces onto A5. A separate four-generator example SL2(Z2[omega])/{I,-I} has centralizers which are abelian or pro-2. Both give the required non-prosoluble profinite CN-group. The matrix arguments are complete; independent GAP/Python checks pass, including252 algebra centralizers and all65,536 matrices over the mod-4 companion ring. The characteristic-two CA lemma is prior work, explicitly credited. See `research/20.90-proof.md`, `research/20.90-2adic-proof.md` and `research/20.90-review.md`; novelty and outside review remain pending.
 
 **20.108(a),(b):** G=F_11^2 semidirect C5 with diagonal weights3,9 is centreless. Its full holomorph is determined explicitly, and theta(x,y,k)=(y,3^(-k)x,2k) normalizes it while theta^2 lies outside it. Hence T(G) contains C4. GAP identifies SmallGroup(605,5) and independently checks the full holomorph order; Python checks every invertible matrix and8,000 permutation cases. A general family gives unbounded element orders in these quotients, with5,939 additional basis checks. This was an explicit unresolved exception in Tsang's2025 paper. Part(c) is already affirmative by Caranti--Tsang2023; novelty of(a),(b) and outside review remain pending. See `research/20.108-proof.md` and `research/20.108-review.md`.
 
@@ -163,7 +165,7 @@ as a substantive new resolution of the intended problem.
 ## Next work
 
 1. Revalidate running jobs and certify any hits.
-2. Continue novelty and mathematical audits of all thirteen candidate resolutions.
+2. Continue novelty and mathematical audits of all fifteen candidate resolutions.
 3. Investigate 19.20 equality beyond the completed range, using the verified reverse inequality as a structural lead.
 4. Expand beyond the initial involution graph range and continue surveying older problems.
 

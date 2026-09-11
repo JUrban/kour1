@@ -530,3 +530,42 @@ Buckley--MacHale2013 was read in full: their results already cover every m<=256 
 A further primary-source check settles the earlier uncertainty on20.108(c): Caranti--Tsang2023 Theorem1.1 explicitly gives GL4(3) inside T(G) for a group of order3^10, so5 divides |T(G)| although it does not divide6. This is prior work and does not change the14-candidate count. The separate centreless construction for(a),(b) remains a possible-new-priority candidate. The primary theorem and corollary were read, but the full p-group construction was not independently audited.
 
 At04:46:20UTC the order256 search has51,632 counts,0 equalities,143 reversals,8 live and8 completed ranges; all log checks PASS.
+
+## 2026-09-11T05:09:01.073246+00:00 — Fifteenth complete candidate:20.90
+
+The closure of two explicit determinant-one matrices over F4[[t]] is an
+infinite profinite CA-group with quotient A5. An exact polynomial leading
+term proves infinitude. Two short matrix words give all elementary
+generators modulo t, and explicit commutators prove the quotient perfect.
+The centralizer argument uses the field F4((t)): nonidentity determinant-one
+matrices are nonscalar, and their matrix centralizers are commutative.
+The general constant-subgroup construction realizes every PSL2(2^m),m>=2,
+as a finite quotient of a finitely generated infinite profinite CA-group.
+
+A separate four-generator construction SL2(Z2[omega])/{I,-I} gives a compact
+2-adic analytic example. Nonzero trace gives abelian projective centralizers;
+at zero trace a determinant argument forces nonidentity unipotent reduction,
+so the strict centralizer and its possible sign extension are pro-2.
+Both constructions answer one Notebook entry, not two.
+
+Python independently checks all252 nonscalar F4 matrix centralizers,
+all59 nontrivial normal closures,256 polynomial powers and the240-element
+mod-t-squared image. GAP checks the finite group, all59 centralizers,
+generator words, perfectness and128 polynomial powers. The mod-t-squared
+image is deliberately verified not to be CN: quotient centralizers need
+not lift. A separate companion check covers all65,536 matrices over O/4O,
+all3,840 determinant-one matrices and all240 trace-zero cases. All final
+controls PASS. An initial mixed-domain GAP polynomial assertion stop was
+corrected by putting every entry in the polynomial domain; its incomplete
+finite prefix is retained and excluded from completed evidence.
+
+The characteristic-two CA fact is explicitly prior work, credited to
+Fine--Gaglione--Rosenberger--Spellman2015/2016. The2019 CA and2020 CN
+sources still pose the profinite existence questions. Limited searches
+found no explicit earlier application, but priority is not established;
+the short argument especially needs outside review. Complete candidate
+count is15, with zero externally reviewed new solutions.
+
+GAP4.16.1 remains available. At05:09:01UTC the order256 search has53,054
+counts,0 equalities,179 reversals,6 verified live workers and10 completed
+ranges; all log checks PASS. No external messages or pushes were made.

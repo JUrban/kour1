@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T04:47:34.468983+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T05:09:01.073246+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 20.90 | Closed matrix subgroups over F4[[t]], and a separate projective group over Z2[omega]. | Fifteenth complete candidate: two-generator infinite profinite CA-group onto A5; independent four-generator 2-adic CN example. Exact field-centralizer and trace arguments; all controls PASS. Classical CA lemma credited; novelty and outside review pending. |
 | 20.30 | Largest class versus group order on perfect centreless tables. | All2,750 entries,340 eligible, zero hits; nine independent actual-group controls PASS. Bounded evidence only. |
 | 20.52 | Order bound27m makes each fixed deficiency a finite search. | All2,845 odd-order groups through1727 checked; every m<=64 occurs,86 controls PASS. Prior2013 examples cover every m<=256; no new result. |
 | 20.108(a),(b) | An explicit permutation exchanges two eigenspaces and changes the quotient exponent. | Fourteenth complete candidate: centreless SmallGroup(605,5) has an order4 element in T(G). Full holomorph classified; independent GAP/Python checks PASS. General family gives unbounded element orders. Part(c) is prior affirmative work of Caranti--Tsang2023. Novelty of(a),(b) and outside review remain open. |
@@ -51,7 +52,7 @@ Updated 2026-09-11T04:47:34.468983+00:00. This is a research triage list, not an
 | 15.89 | Exact two-by-two Laurent matrix for infinite-dihedral Cayley graphs. | Proved positive subclass for every finite inverse-closed generating set. Independent exact controls pass; the general vertex-transitive problem remains unresolved. No novelty claim. |
 | 11.46(a) | Finite E-groups of class three. | August 2026 preprint arXiv:2608.07275v1 claims a construction of order 3^84. Primary abstract read, full proof unaudited; exclude from new-target priority. |
 | 19.108 | A p-adic orbit-fiber argument forces support vanishing on order-p^3 elements. | Proved partial theorem for every odd p: groups of order p^10 with an abelian normal subgroup of size at least p^6 satisfy the divisibility. All571 subgroup classes and1,596 regular orbits at p=3 verified independently. General question unresolved; novelty unconfirmed. |
-| 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | Certified counterexample to the stronger inequality at order64, with independent counts. Equality question still open; all7,011 groups through255 complete with zero nonabelian equality hits and54 reverse inequalities. Order256 snapshot at 2026-09-11T04:02:07.120145+00:00: 48,699 counts, 0 equality hits, 89 reverse inequalities, 8 live workers and 8 completed ranges; all checks pass. |
+| 19.20 | Count endomorphisms and partial isomorphisms by subgroup/quotient types and automorphism orders. | Certified counterexample to the stronger inequality at order64, with independent counts. Equality question still open; all7,011 groups through255 complete with zero nonabelian equality hits and54 reverse inequalities. Order256 snapshot at 2026-09-11T05:09:01.073246+00:00: 53,054 counts, 0 equality hits, 179 reverse inequalities, 6 live workers and 10 completed ranges; all checks pass. |
 
 The index contains 1,308 main-body problem entries, including all 150 Issue 21 entries. Exactly 104 headings are starred, but partial solution markers also occur within unstarred entries. Older issues remain to be surveyed systematically. The separate solved archive is intentionally excluded from the index.
 
