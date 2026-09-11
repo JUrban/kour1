@@ -506,3 +506,9 @@ For20.8, the n=3 Lei--Zhang construction gives H of rank3 in F2 and a fixed subg
 For20.11, Jaikin-Zapirain's prior corollaries give pairwise minimum-rank intersection and join closure. The infinitely generated bottom is handled by first taking the finitely generated intersection. Chain unions and a fully stated descending Schreier-graph limit give greatest and least members for arbitrary ambient rank. Full proofs and a shared internal review are written. Both entries are prior-work consequences and excluded from the13-candidate new-priority count.
 
 GAP4.16.1 is available. Order256 snapshot at04:21:21UTC:49,939 counts,0 equalities,102 reversals,8 live and8 complete ranges; all checks PASS.
+
+## 2026-09-11T04:26:43.795312+00:00 — Complete derived affirmative answer to20.33
+
+Enumerate all oracle-X finite-generator presentations, take their countable free product, and apply an explicit three-generator HNN construction preserving the X-c.e. relator stream. The HNN associated subgroup isomorphism is certified by a retraction to a rank-two free group, and every generator is eliminated by a fixed computable word. Direct embedding in this universal group proves one direction with one factor and zero extra relators; normal-closure proof enumeration proves the full converse. Mikaelian's prior two-generator theorem provides another route. The Notebook page152 was visually checked. This is a standard-construction consequence, excluded from the13 possible-new-priority entries.
+
+Started an exhaustive20.52 odd-order search through1727: an elementary bound |G|<=27m makes this a complete decision range for m<=64. No conclusion pending output and independent verification. Also started a bounded20.30 character-table screen.

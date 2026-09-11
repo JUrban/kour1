@@ -1,6 +1,6 @@
 # Current status
 
-Updated: 2026-09-11T04:22:34.989960+00:00.258247+00:00.
+Updated: 2026-09-11T04:26:43.795312+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
 - Complete candidate resolutions: **13**: **21.106** (negative), **21.132** (construction for every prime), **21.121(a)** (infimum not attained at p=2), **21.68** (semi-abelian non-monomial group of order2592), **16.87(a),(b)** (nonabelian, nonperiodic variety with maximal test rank at every finite rank), **10.35** (torsion-free complex matrix group not residually rational in the same degree), **16.28(a)** (a closed set with every power greater than one nonclosed), **14.22** (failure of finite isolated-radical presentation over infinitely generated torsion-free linear coefficient groups), **16.20** (a finite modular nondistributive dominion lattice), **17.33** (infinite axiomatic rank of the Klein bottle quasivariety), **17.101** (every group representation has a homogeneous extension), **18.76** (a nonsplit additive division-ring extension), and **18.92(a),(b)** (non-algebraic and non-modular complete lattices of formations). All await outside review and further novelty checks.
@@ -85,6 +85,8 @@ and automorphism order. Five smaller controls also agree. None of the
 60 evaluated parameter triples gives equality.
 
 ## Additional constructions and exclusions
+
+**20.33:** Complete affirmative consequence of effective HNN embeddings. An explicit three-generator X-c.e.-presented universal group contains every finitely generated X-c.e.-presented group. Both directions, presentation elimination and the absence of any extra oracle are proved. Mikaelian's prior theorem improves the generator bound to two. Excluded from new priority; see `research/20.33-known-consequence.md` and `research/20.33-review.md`.
 
 **20.8:** Complete negative deduction using Lei--Zhang's2026 three-generator equalizer construction. An explicit K<H<F has ranks4,3,2 and a nonidentity map H->F fixing K. All five vertex partitions of K's core graph prove that every proper intermediate subgroup has rank at least4. Independent Python and GAP rank/folding controls and457 word controls pass. Credited prior construction; excluded from the13-candidate new-priority count. See `research/20.8-known-consequence.md` and `research/20.8-11-review.md`.
 
