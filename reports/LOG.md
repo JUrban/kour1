@@ -1836,3 +1836,27 @@ Problem5.25 is affirmative for metabelian bi-orderable groups, by finite
 order of conjugation on the derived subgroup. The reduction for higher
 derived length is recorded as unproved. All six n=7 certificate verifiers
 remain in progress. No external communications or pushes.
+
+
+## 2026-09-11T21:44:27.267851+00:00 — Explicit 7.58 retraction criterion; prior boundary checked
+
+A spanning-tree change of free edge basis gives an explicit retraction
+onto the embedded kernel and the image test rho(b)=b t_q^-1. The proof
+includes arbitrary rank and variety, the exact embedding kernel, a
+preimage formula, the abelian flow reduction, and source-convention
+conversion. The literature audit found that McCool1987 explicitly
+discusses 7.58 and gives the associated conditional algorithm using
+the same free-factor structure. The result is excluded from new
+coverage. All ten source pages were read; p.140 was visually checked.
+
+Independent path-continuity checks cover 82,080 bounded free-edge cases,
+and the complete 54-element nonabelian-base model checks against the
+generated image. All controls and the 17-file replay auditor pass with
+actual exit 0. Candidate count remains 33. The last n=7 snapshot at
+21:37:54 UTC has 19,750,000 checked nodes, six live workers, zero
+completed shards, and 28,108,020 KiB combined RSS.
+
+The full raw-data whitespace check in the preceding 6.47 commit
+reported GAP's retained trailing spaces; the authored research, scripts
+and reports pass the separate whitespace check. No raw output was
+altered to silence that diagnostic. All work remains local.
