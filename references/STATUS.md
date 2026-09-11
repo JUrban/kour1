@@ -4,6 +4,35 @@ Last checked 2026-09-11. A search finding no solution is evidence only of the sc
 
 ## Newly audited older problems
 
+- **13.39(f):** Brady--Ciobanu--Martino--O Rourke (2009),
+  https://doi.org/10.1090/S0002-9947-08-04639-4 , main power-equation
+  theorem and complete main proof read in the author manuscript.
+  Earlier axis lemmas and diagrams not all audited. Surjectivity of
+  fourth powers forces a tree-free group to be abelian, giving the
+  exact negative consequence recorded in `research/13.39f-prior-result.md`.
+  Rank one is affirmative. Excluded from new priority.
+- **5.15:** Kharlampovich--Myasnikov--Sapir (2017),
+  https://doi.org/10.1007/s13373-017-0103-z , Theorem 4.21 implies an
+  affirmative answer. Theorem 4.18 and 4.21 proofs and Definition 2.2
+  read; earlier construction not fully audited. A diagonal recursive
+  set without a primitive recursive characteristic function makes the
+  implication explicit in `research/5.15-prior-result.md`. Excluded
+  from new priority; not inferred merely from a large Dehn function.
+- **12.11:** Fima--Le Maître--Moon--Stalder (2022),
+  https://doi.org/10.19086/da.37645 , Section 8.3.1 and Proposition 8.33
+  give a nondegenerate counterexample. The construction and proposition
+  proof read; its Le Boudec--Matte Bon obstruction is imported, not
+  independently audited here. The normality condition is matched
+  explicitly in `research/12.11-prior-result.md`. Excluded from new priority.
+- **11.46(a):** Exact prior affirmative claim in
+  https://arxiv.org/html/2608.07275v1 , 7 August 2026. Abstract,
+  introduction and Theorem 1.1 read; tensor proof and finite certificate
+  not audited. See `research/11.46-prior-claim.md`; no new count.
+- **8.3:** Kolesnikov--Leontiev (2022),
+  https://doi.org/10.33048/semi.2022.19.013 , Theorem 2 covers further
+  irregular parameter ranges. Primary abstract and theorem statements
+  read, main matrix proof unaudited. No general resolution or new
+  calculation here; see `research/8.3-literature-update.md`.
 - **20.100:** Sun,
   [On permutations of {1,...,n} and related topics, v6](https://arxiv.org/abs/1811.10503v6),
   24 March2021. Theorem1.4 and its full proof, Conjecture4.1 and Remark4.1

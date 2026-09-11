@@ -4,6 +4,35 @@ These are research leads and scope checks, not additional solutions.
 The successful lead in this pass is11.116, now written separately with
 a complete candidate affirmative proof and an internal review.
 
+## Additional checks at 09:30--09:50 UTC
+
+- **5.15:** Now excluded by Kharlampovich--Myasnikov--Sapir's published
+  word-problem theorem. The precise complexity implication is in
+  `5.15-prior-result.md`.
+- **8.3:** The 2022 Kolesnikov--Leontiev paper gives further necessary
+  parameter restrictions. No fresh matrix-group search was launched;
+  see `8.3-literature-update.md`.
+- **8.23:** Vasil'ev--Skresanov, https://arxiv.org/abs/1609.08322 ,
+  proves the stated dihedral-section assertion for locally finite
+  factors. Only the primary abstract was read. This does not settle
+  arbitrary factors; no finite counterexample search is justified.
+- **11.46(a):** Exact August 2026 prior claim found; see the separate
+  note. Automorphism checks cannot substitute for endomorphism checks.
+- **12.11:** A nondegenerate prior counterexample is now documented
+  using Proposition 8.33 of Fima--Le Maître--Moon--Stalder2022.
+- **12.13:** No small-index theorem for the random poset was established
+  here. The random-graph theorem does not transfer, and the primary
+  abstract https://arxiv.org/abs/2012.04376 shows that the random poset
+  does not have a generic pair. No automatic ample-generics argument.
+- **13.39(f):** The fourth-power equation gives an exact negative
+  consequence of Brady--Ciobanu--Martino--O Rourke2009. The genus-three
+  square equation would be an invalid shortcut: Martino--O Rourke's
+  primary survey, Theorem 4.3, explicitly gives that surface group a
+  free Z^2-tree action. Full deduction is in `13.39f-prior-result.md`.
+
+The three definite prior-theorem deductions above are not additions to
+the 21 complete candidates awaiting independent review.
+
 - **9.45:** The rational overlattice Za+Z^n has cyclic quotient over Z^n.
   Its dual is the congruence lattice {z in Z^n : r.z=0 mod m} when a=r/m.
   Orthogonal integer bases are not limited to coordinate axes: primitive

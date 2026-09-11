@@ -1,9 +1,14 @@
 # Candidate portfolio
 
-Updated 2026-09-11T09:15:45.657904+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-11T09:50:04.026747+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 13.39(f) | Apply Brady--Ciobanu--Martino--O Rourke's power-equation theorem to fourth roots. | Negative prior-theorem consequence for every nonabelian free Q-group; the rank-one exception and all theorem hypotheses are explicit. Other subparts untouched. |
+| 5.15 | Transfer non-primitive-recursive decision complexity using Kharlampovich--Myasnikov--Sapir Theorem 4.21. | Affirmative prior-theorem consequence; reduction and diagonal-set argument written. Excluded from new priority. |
+| 12.11 | Apply Fima--Le Maître--Moon--Stalder Proposition 8.33 to a countable tree-group amalgam. | Negative prior-theorem consequence even with both edge indices three; exact common-normal-subgroup condition checked. Excluded from new priority. |
+| 11.46(a) | Check the exact August 2026 E-group claim before an endomorphism search. | Prior claim arXiv:2608.07275v1; main theorem read, tensor proof and certificate unaudited. No new count. |
+| 8.3 | Isolate matrix-group parameters outside published regularity ranges. | Theorem 2 of Kolesnikov--Leontiev2022 excludes further triples. Main proof unaudited; no general result or new computation here. |
 | 21.107 | A free ultrafilter gives an open subgroup missing infinitely many blocks of any proposed expansive sequence. | Twenty-first complete candidate: a countable Hausdorff Boolean group has an explicit countably infinite dense partition and no expansive sequence; an exponent-three variant also works. Standard topology credited, self-contained proof and logical audit complete; novelty and outside review pending. |
 | 21.123 | Compare the exact construction with an August 2026 protected-division preprint. | Relevant prior affirmative claim for an explicitly corrected prescription; original preprint definitions read, final journal text and main BCH closure proof unaudited. No new result counted. |
 | 4.55 | Rational descent of projectives on four distinct rays of a+d=b+c. | Twentieth complete candidate: Z_(5)[3.A7] has a rank-55,440 projective with incompatible indecomposable refinements. GAP independently reconstructs all relevant modular data from a permutation module; Python field/matrix controls pass. Schur indices are allowed; novelty and outside review pending. |

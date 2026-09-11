@@ -919,3 +919,25 @@ formulation caveats and unaudited main proof. Pro-p identity and
 strongly regular graph scope corrections are saved in the triage log.
 All changes remain local; no pushes or external communications. The
 48-hour goal remains active until2026-09-12 20:56:46 UTC.
+
+## 2026-09-11T09:50:04.026747+00:00 — Three prior-theorem deductions and live search checkpoint
+
+Published theorems imply an affirmative answer to5.15 and negative answers
+to12.11 and13.39(f) in nonabelian rank. The exact deductions are written,
+with Notebook pages15,58,69 visually checked, source hashes retained,
+and imported-proof reading limits stated. The fourth-power equation,
+not the square equation, supplies the rational-group tree obstruction.
+An exact August2026 prior claim for11.46(a) is recorded without claiming
+audited tensor computations. A2022 matrix regularity theorem removes
+more8.3 parameter ranges from useful search. New-candidate count stays21.
+
+At09:47 UTC the19.20 extension has334 of356 completed jobs,24,850
+nonabelian counts,507 abelian skips, zero equality hits, and four reversals.
+Eight verified workers remain live. The20.100 n=7 generator has reached
+31.78million visited states at about18.4GiB RSS. It has no completed proof
+certificate yet. Both process/log checks pass, and the workload remains
+within the nine-CPU main-work budget. Completed logs are checkpointed
+locally; live and incomplete certificates remain explicitly unproved.
+
+No push or outside communication. The48-hour research goal remains active
+until2026-09-12 20:56:46 UTC.
