@@ -1,0 +1,29 @@
+Syntax warning: Unbound global variable in scripts/screen_16_45.g:15
+    tops := Filtered([1..Length(subs)],j->ranks[j]=rank);;
+                                          ^^^^^
+Syntax warning: Unbound global variable in scripts/screen_16_45.g:15
+    tops := Filtered([1..Length(subs)],j->ranks[j]=rank);;
+                                                   ^^^^
+Syntax warning: Unbound global variable in scripts/screen_16_45.g:16
+    abelian := Number(tops,j->IsAbelian(subs[j]));;
+                                        ^^^^
+Syntax warning: Unbound global variable in scripts/screen_16_45.g:17
+    normalphi := Number(tops,j->IsNormal(g,FrattiniSubgroup(subs[j])));;
+                                         ^
+Syntax warning: Unbound global variable in scripts/screen_16_45.g:17
+    normalphi := Number(tops,j->IsNormal(g,FrattiniSubgroup(subs[j])));;
+                                                            ^^^^
+PROGRESS_1645 order 2 completed 1 unresolved 0
+PROGRESS_1645 order 3 completed 2 unresolved 0
+PROGRESS_1645 order 4 completed 4 unresolved 0
+PROGRESS_1645 order 5 completed 5 unresolved 0
+PROGRESS_1645 order 7 completed 6 unresolved 0
+PROGRESS_1645 order 8 completed 11 unresolved 0
+PROGRESS_1645 order 9 completed 13 unresolved 0
+PROGRESS_1645 order 16 completed 27 unresolved 0
+PROGRESS_1645 order 25 completed 29 unresolved 0
+PROGRESS_1645 order 27 completed 34 unresolved 0
+PROGRESS_1645 order 32 completed 85 unresolved 0
+PROGRESS_1645 order 49 completed 87 unresolved 0
+PROGRESS_1645 order 64 completed 354 unresolved 0
+PASS_1645_PILOT

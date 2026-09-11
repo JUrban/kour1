@@ -2005,3 +2005,28 @@ not a candidate increment. The 23:23:15 UTC n=7 snapshot records
 22,390,000 checked nodes, six live workers, zero completed shards and
 31,422,196 KiB combined RSS. No new GAP worker was needed for 13.42.
 All work remains local; no communications or pushes have occurred.
+
+
+## 2026-09-11T23:38:20.105488+00:00 — 16.45 pilot and 16.14 prior deduction
+
+The 354-group p-group pilot for16.45 has a sufficient normal-Frattini
+certificate in every case. Its30,755 subgroup classes represent45,105
+subgroups. Independent multiplication-table controls reconstruct3,243
+subgroups in12 groups, verify1,146,659 associativity triples and produce
+explicit minimal bases. The26-file closed audit exits zero. The initial
+GAP process exited zero but emitted five unbound-global warnings; its
+wrapper correctly exited one. That full run is preserved. Declaring
+local variables produces a clean rerun with byte-identical data.
+Nonfaithful actions are included, as required by the exact convention.
+The general question is unresolved.
+
+Source triage located the centralizer bound inside Sambale2014's
+Theorem1.3 proof, explicitly restated by Halasi--Podoski--Pyber--Szabo.
+Putting E=Omega_1(G)<=Z(G) gives C_G(E)=G and d(E)=d(Z(G)), hence
+precisely the16.14 inequality. The relevant PDF pages were viewed.
+The underlying MacWilliams theorem remains an imported, unaudited
+premise; this is a prior deduction and not a new candidate.
+
+The 23:38:19 UTC n=7 snapshot has22,790,000 checked nodes,
+six live workers, no completed shards and32,705,268 KiB
+combined RSS. Candidate count stays36. All work remains local.

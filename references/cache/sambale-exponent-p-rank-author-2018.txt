@@ -1,0 +1,422 @@
+Exponent and p-rank of finite
+p-groups and applications
+Benjamin Sambale
+September 23, 2018
+Abstract
+We bound the order of a finite p-group in terms of its exponent and p-rank. Here the p-rank is the maximal
+rank of an abelian subgroup. These results are applied to defect groups of p-blocks of finite groups with given
+Loewy length. Doing so, we improve results in a recent paper by Koshitani, Külshammer and Sambale. In
+particular, we determine possible defect groups for blocks with Loewy length 4.
+
+Keywords: exponent, p-rank, Loewy length
+AMS classification: 20D15, 20C20
+
+1 Exponent and p-rank
+Let P be a finite p-group for a prime p. Then the exponent of P is the smallest positive integer e such that
+xe = 1 for all x ∈ P . Moreover, the p-rank of P is the maximal rank of an abelian subgroup of P . It is often
+useful to bound the order of P if its exponent and p-rank are given. Most of our notation is standard (see e. g.
+[7]). We denote a cyclic group of order n ≥ 1 by Cn . Moreover, define P m = P × . . . × P (m copies). We use
+the abbreviations Ω(P ) := Ω1 (P ) and f(P ) := f1 (P ) for a finite p-group P .
+Theorem 1.1 (Laffey [11]). Let P be a finite p-group with exponent pe , and let r be the rank of a maximal
+elementary abelian normal subgroup of P . Then |P | ≤ pk where
+(
+
+re + 2r + r2 if p = 2,
+
+k :=
+re + 2r
+if p > 2.
+r
+
+Corollary 1.2. Let P be a finite p-group with exponent pe and p-rank r. If p > 2, then |P | ≤ pre+(2) .
+For p = 2 we improve Theorem 1.1 as follows.
+Theorem 1.3. Let P be a 2-group with exponent 2e , and let r be the rank of a maximal elementary abelian
+normal subgroup of P . Then |P | ≤ 2k where
+ 
+
+r
+1
+k := r(e + 1) +
+−
+|blog2 (r)c + 1 − e| + blog2 (r)c + 1 − e .
+(1)
+2
+2
+Proof. Let E be a maximal elementary abelian normal subgroup of P of rank r. We consider C := CP (E) E P .
+Choose a maximal abelian normal subgroup A of exponent at most 4 of P which contains E. Then obviously,
+CP (A) ⊆ C. Moreover, Ω(A) = E. By a result of Alperin (see Satz III.12.1 in [7]) we have Ω2 (CP (A)) = A ⊆
+Z(CP (A)). Lemma 1 in [11] implies |CP (A)| ≤ 2re . Let x ∈ C. Then x acts trivially on E and thus also on
+A/E. It follows that x2 ∈ CP (A) and C/ CP (A) is elementary abelian. In particular, Φ(C) ⊆ CP (A). Since
+Φ(C) = f(C), we also have Φ(C) ⊆ Ωe−1 (CP (A)). Corollary 1 in [10] shows that Ωe−1 (CP (A)) has exponent
+at most 2e−1 . Hence, again by Lemma 1 in [11] we obtain |Φ(C)| ≤ 2r(e−1) .
+
+1
+
+Now we count the involutions in C. Let M be the set of all elementary abelian subgroups of C of rank r + 1
+which contain E (possibly M = ∅). For an involution x ∈ C \ E we have hE, xi ∈ M. Moreover, two distinct
+elements of M intersect in E. Since E is maximal, the action of G on M by conjugation has no fixed points.
+In particular, |M| is even. We conclude that the number γ of involutions in C satisfies γ ≡ 2r − 1 (mod 2r+1 ).
+Now a result of MacWilliams (see Theorem 37.1 in [2]) shows that |C : Φ(C)| ≤ 22r . Hence,
+|C| = |Φ(C)||C : Φ(C)| ≤ 2r(e−1)+2r = 2r(e+1) .
+Now we consider P/C ≤ Aut(E) ∼
+= GL(r, 2). Let S ≤ GL(r, 2) be the group of upper unitriangular matrices.
+r
+Then |S| = 2(2) and S ∈ Syl2 (GL(r, 2)). In particular, P/C ∼
+= S0 ≤ S. By Satz III.16.5 in [7],
+2dlog2 (r)e = exp(S) ≤ exp(S0 )|S : S0 | ≤ 2e |S : S0 |.
+r
+This gives |S0 | ≤ 2(2)+e−dlog2 (r)e whenever dlog2 (r)e ≥ e. Now assume r = 2e . Let α ∈ S be a Jordan block of
+size r. Suppose that there is x ∈ P such that xC corresponds to α. Then |hxi| = 2e and hxi ∩ C = 1. Moreover,
+α has minimal polynomial (X + 1)r . In particular, 1 + α + α2 + . . . + αr−1 6= 0. Choose a ∈ E such that
+(1 + α + α2 + . . . + αr−1 )(a) 6= 1. Then
+e
+
+e
+
+(ax)2 = a · xax−1 · x2 ax−2 · . . . · xr−1 ax1−r · x2 6= 1.
+s
+
+This contradiction shows that |S0 | ≤ 2(2)+e−blog2 (r)c−1 whenever blog2 (r)c + 1 ≥ e. The result follows.
+The last summand in Eq. (1) is only relevant if r is large compared to e. Since this will not happen in the
+applications in the next section, we note the following consequence.
+r
+
+Corollary 1.4. Let P be a finite 2-group with exponent 2e and 2-rank r. Then |P | ≤ 2r(e+1)+(2) .
+The analysis of the subgroup S ∈ Sylp (GL(r, p)) in the proof of Theorem 1.3 also applies to odd primes p. In
+e
+fact one may count the matrices α ∈ S such that (α − 1)p −1 = 0. Unfortunately, these matrices do not form
+a subgroup. However, the Jordan form of such a matrix consists only of blocks of size ≤ pe − 1. In the proof
+e
+of Theorem 1.3, |S0 | can be bounded by the order of the largest subgroup T ≤ S such that (α − 1)p −1 = 0
+r
+for all α ∈ T . Computer calculations suggest that this is a better bound than p(2)+e−blogp (r)c−1 . For example if
+p = e = 2 and r = 6, one gets |S0 | ≤ 212 instead of |S0 | ≤ 214 .
+In the following we improve the corollaries above for special cases which will play an important role in the
+second part of the paper.
+Let P be a 2-group of 2-rank r and exponent 2e . If r = 1, then Corollary 1.4 shows that |P | ≤ 2e+1 (as is
+well-known), and this bound is assumed by the quaternion group. If e = 1, then P is elementary abelian and
+satisfies |P | ≤ 2r . In case r = 2, Corollary 1.4 implies |P | ≤ 22e+3 . This can be slightly improved.
+Proposition 1.5. Let P be a 2-group with exponent 2e and 2-rank r ≤ 2. Then |P | ≤ 2r(e+1) .
+Proof. By the remark above, we may assume that r = 2 and e ≥ 2. Obviously, a metacyclic group of exponent
+2e has order at most 22e . Hence, we may assume that P is not metacyclic. By Theorem 50.1 in [3] there exists
+a metacyclic normal subgroup N E P such that CP (Ω2 (N )) ≤ N . If |P : N | ≤ 4, then we are done. Thus, by
+way of contradiction we may assume that P/N ∼
+= D8 and
+e
+
+e
+
+i
+
+N = ha, b | a2 = b2 = 1, bab−1 = a1+2 i ∼
+= C2e o C2e
+where i ∈ {2e−1 , 2e } (see Theorem 50.1 in [3]). Observe that C22e−1 ∼
+= Ωe−1 (N ) = Φ(N ) ⊆ Z(N ). Let x ∈ P such
+that x2 ∈
+/ N . Suppose that x acts trivially on Ω(N ) ∼
+= C22 by conjugation. Then it is easy to see that x must
+also act trivially on Ω2 (N )/Ω(N ) ∼
+= C22 . Then however, x2 ∈ CP (Ω2 (N )) ≤ N . This contradiction shows that
+CP (Ω(N )) < P . We can find an element y ∈ P \ CP (Ω(N )) such that y 2 ∈ N . Since Ω(N ) = fe−1 (N ), y acts
+non-trivially on N/Φ(N ). In particular, hN, yi/Φ(N ) ∼
+= D8 . Hence, let us choose an element z ∈ hN, yi such
+that z 2 ∈ N \ Φ(N ). Since all elements in N \ Φ(N ) have order 2e , we derive the contradiction |hzi| = 2e+1 .
+
+2
+
+Now we turn to the case r = 3. Here Corollary 1.4 yields |P | ≤ 23e+6 . This can be improved for e = 2 as
+follows.
+Proposition 1.6. Let P be a 2-group with exponent 4 and 2-rank 3. Then |P | ≤ 29 .
+Proof. Let E be a maximal elementary abelian normal subgroup of P . If E has rank at most 2, then the claim
+follows from Theorem 1.3. Hence, we may assume that E has rank 3. Suppose that |P | ≥ 29 . Let x ∈ P \ E
+be an involution. Then hE, xi is a group of order 24 with more than 7 involutions. Obviously, hE, xi lies in a
+subgroup of P of order 29 . However, using GAP [5] one can show that all groups of order 29 with exponent 4 and
+2-rank 3 have precisely 7 involutions. This contradiction shows that all involutions of P lie in E. In particular
+Φ(P ) = f(P ) ⊆ E. Now Theorem 37.1 in [2] implies |P | = 29 .
+By the results above we raise the following question:
+Question: Let P be a 2-group with exponent 2e and 2-rank r. Is it true that |P | ≤ 2r(e+1) ?1 ,
+A direct product of quaternion groups shows that the bound would be sharp. Moreover, a counterexample must
+have at least 213 elements.
+Next we turn to odd primes. Here a group of p-rank 1 is cyclic and therefore, Corollary 1.2 is optimal in this
+case. By Lemma 3.2 in [9], Corollary 1.2 is also optimal for e = 1, p ≥ 7 and r ≤ 3. Now let p = 3 and consider
+the group
+e
+e
+P := hx, y, a | x3 = y 3 = a3 = [x, y] = 1, axa−1 = xy −3 , aya−1 = xy −2 i
+e−1
+
+e−1
+
+of order 32e+1 . Since a acts non-trivially on hx3 , y 3 i, it follows that P has 3-rank 2. Moreover, P/hx3 , y 3 i
+has exponent 3 and P has exponent 3e . Hence, Corollary 1.2 is optimal for p = 3 and r = 2. On the other hand,
+Blackburn’s classification of the p-groups with p-rank 2 (see Satz III.12.4 in [7]) implies that Corollary 1.2 is
+not optimal for r = 2 ≤ e and p ≥ 5. For the 3-groups of 3-rank 3 we give another improvement.
+Lemma 1.7. Let P be a group of order 36 , exponent 9 and 3-rank 3 such that Z(P ) has rank 3. Then Ω(P ) =
+f(P ) ∼
+= A ≤ Aut(P ). Then A does not act faithfully on Ω(P ).
+= C33 . Let C32 ∼
+= P/f(P ) ∼
+Proof. The result can of course be achieved by computer, but we prefer to give a theoretical argument. Since
+P has 3-rank 3 and Z(P ) has rank 3, we conclude that C33 ∼
+= Ω(P ) ⊆ Z(P ). Obviously, P/Ω(P ) has exponent 3.
+By Lemma C in [13], we have P/Ω(P ) ∼
+= C33 . In particular, P has class at most 2. By Satz III.10.2 in [7], P is
+regular and thus Ω(P ) = f(P ). Write P = hx, y, zi such that Ω(P ) = hx3 , y 3 , z 3 i. Let A = ha, bi. Assume that
+A acts faithfully on Ω(P ). Since Aut(Ω(P )) ∼
+= GL(3, 3), we may regard A as a subgroup of upper unitriangular
+matrices. In particular a (x3 ) = b (x3 ) = x3 . Moreover, we may assume that a (y 3 ) = y 3 and a (z 3 ) = x3 z 3 (i. e. hai
+represents the center of the group of upper unitriangular matrices). Hence there are elements αx , αy , αz ∈ Ω(P )
+such that a x = xαx , a y = yαy and a z = xzαz . Since a3 = 1, it follows that
+3
+
+2
+
+2
+
+z = a z = a (xzαz ) = a (xαx xzαz a αz ) = xαx a αx xαx xzαz a αz a αz = x3 αx2 a αx z
+This shows that a αx = αx x−3 . Therefore, αx ≡ z −3 (mod hx3 , y 3 i). Now we consider b.
+Suppose first that b x = xβx and b y = xyβy for some βx , βy ∈ Ω(P ). Then
+xyβy b αy = b (yαy ) = ba y = ab y = a (xyβy ) = xαx yαy a βy .
+This gives the contradiction
+hx3 , y 3 i 3 b αy αy−1 = αx a βy βy−1 ∈ z −3 hx3 i.
+Hence, we may assume that the action of b on P/Ω(P ) is given by b x = xβx , b y = yβy and b z = yzβz for some
+βx , βy , βz ∈ Ω(P ). This yields
+xβx b αx = b (xαx ) = ba x = ab x = a (xβx ) = xαx a βx
+1 Shortly after this question appeared in the 19th edition of the Kourovka Notebook, Avinoam Mann pointed out that the answer
+
+is “no” according to [A. Y. Ol’shanskii, The number of generators and orders of Abelian subgroups of finite p-groups, Math.
+Notes 23 (1978), 183–185]
+
+3
+
+and
+hy 3 i 3 b αx αx−1 = a βx βx−1 ∈ hx3 i.
+Since αx ≡ z −3 (mod hx3 , y 3 i), we derive the contradiction b αx αx−1 6= 1.
+Proposition 1.8. Let P be a 3-group with exponent 9 and 3-rank 3. Then |P | ≤ 37 .
+Proof. Let E be a maximal elementary abelian normal subgroup of P . By Theorem 1.1, we may assume that
+E has rank 3. Consider C := CP (E). By a result of Alperin (see Satz III.12.1 in [7]), Ω(C) = E ⊆ Z(C). Thus,
+by Lemma 1 in [11] we have |C| ≤ 36 . Since P/C acts faithfully on E, we obtain |P/C| ≤ 33 .
+Suppose first that |C| = 36 . By way of contradiction, let us assume that there is a subgroup Q ≤ P such
+that C ≤ Q and |Q : C| = 9. Since Q/C acts faithfully on E, we obtain Q/C ∼
+= C32 . By Lemma 1.7 we have
+E = Ω(C) = f(C). Hence, Q := Q/E also acts faithfully on C := C/E. Assume first that Q has 3-rank 4.
+Then there exists an elementary abelian normal subgroup K = K/E of Q such that |K ∩ C| = 9. Hence, we
+find elements a, b ∈ K \ C such that Q = ha, b, Ci and [a, b] ∈ Ω(C) ⊆ Z(C). Since a3 , b3 ∈ Ω(C) ⊆ Z(C), it
+follows that ha, bi induces an elementary abelian subgroup A ≤ Aut(C) of order 9. However, this contradicts
+Lemma 1.7.
+Therefore, we may assume that Q has 3-rank 3. Since Q has exponent 3, one can show by computer that
+there is only one possible isomorphism type for Q. One can show further that Q is a semidirect product of C
+and a subgroup of type C32 . Thus, we find elements a, b ∈ Q \ C such that a3 , b3 , [a, b] ∈ Ω(C), and we get a
+contradiction as above.
+For the remainder of the proof we can assume that |C| = 35 and |P | = 38 . A computer calculations shows that
+there are only three possible isomorphism types for C, namely C92 × C3 , (C9 o C9 ) × C3 and a group of type
+(C9 × C3 ) o C9 . Let us consider the last case. Let A ∈ Syl3 (Aut(C)). Then one can show that the kernel of the
+canonical map A → Aut(Ω(C)) has index 3. However, this is impossible, since |P/C| = 27. Hence, there are two
+remaining isomorphism types for C. We may choose a maximal subgroup Q ≤ P such that C ≤ Q and Z(Q)
+is cyclic (choose a suitable action on Ω(C)). Suppose that Q contains a subgroup Q1 of order 36 such that the
+rank of Z(Q1 ) is 3. Then there must be another subgroup Q1 6= Q2 ≤ Q such that Q1 ∼
+= Q2 , because otherwise
+Q1 would be characteristic in Q and normal in P and we were back to the first case of the proof by setting
+E := Ω(Q1 ). Therefore, Q satisfies the following properties:
+• Q has order 37 , exponent 9, 3-rank 3 and Z(Q) is cyclic,
+• there exists a normal subgroup C E Q such that CQ (C) ⊆ C and C is isomorphic to C92 × C3 or to
+(C9 o C9 ) × C3 ,
+• for every subgroup Q1 ≤ Q of order 36 such that the rank of Z(Q1 ) is 3, there exists a subgroup Q1 6=
+Q2 ≤ Q such that Q2 ∼
+= Q1 .
+A computation yields that there are precisely 68 isomorphism types of groups with these three properties. Using
+the GrpConst package in GAP we can determine all extensions of these groups by C3 . It follows that P is not
+among them and thus cannot exist.
+There are in fact 3-groups of order 37 , exponent 9 and 3-rank 3. The results of the present section give the
+impression that there is no uniform bound on the order of a p-group in terms of exponents and p-ranks which
+is optimal for all odd primes.
+
+2 Applications
+In this section we consider p-blocks of finite groups over algebraically closed fields of characteristic p. The
+following result improves Theorem 2.3 in [9].
+Theorem 2.1. Let B be a p-block of a finite group G with defect d and Loewy length λ > 1. Then
+
+
+(λ − 1)(1 + blogp (λ − 1)c) + λ if p = 2,
+2
+d≤
+(λ − 1)blog (λ − 1)c + λ
+if p > 2.
+p
+2
+
+4
+
+Proof. The result follows from Lemma 2.2 in [9] and Corollaries 1.2 and 1.4 above.
+The p-blocks with Loewy length at most 3 are determined in [14] (see also Proposition 3.1 in [9]). In [9] we started
+the investigation of p-blocks with Loewy length 4. Using the results above we give more precise information
+now.
+Proposition 2.2. Let B be a p-block of a finite group with Loewy length 4 and defect d. Then
+
+9 if p = 2,
+
+
+
+7 if p = 3,
+d≤
+
+5 if p = 5,
+
+
+
+6 if p ≥ 7.
+Proof. For p ∈ {2, 3} apply Lemma 2.2 in [9] in combination with Propositions 1.6 and 1.8 above. For p ≥ 5 the
+claim was already shown in [9] (see remark after Proposition 3.3).
+In case p ≥ 5 we have given a short list of possible defect groups in the situation of Proposition 2.2 (see
+Proposition 3.3 and Corollary 3.5 in [9]). For p = 5 (respectively p ≡ 1 (mod 5), p ≡ 1 (mod 7)) there are
+at most 10 (respectively 11, 11) isomorphism types, and for the remaining primes p ≥ 7 we have at most 12
+possible isomorphism types. Now, using the “Small Groups Library” we can do the same for the remaining
+primes p = 2, 3. In order to reduce the number of 2-groups we apply the theory of fusion systems (see e. g.
+[1]).
+Lemma 2.3. Let f (n) be the number of 2-groups of order 2n , exponent 4 and 2-rank at most 3 which admit
+only trivial fusion systems. Then f (6) = 30, f (7) = 104, f (8) = 496 and f (9) = 933.
+Proof. Let P be a 2-group of order 2n which admits only the trivial fusion system. Then by Alperin’s Fusion
+Theorem (see Theorem I.3.5 in [1]), Aut(P ) is a 2-group and there are no candidates for essential subgroups.
+We list some necessary condition on an essential subgroup Q ≤ P for a fusion system F. Since Q is F-centric
+we have CP (Q) ⊆ Q. Since O2 (OutF (Q)) = 1, it follows that NP (Q)/Q ∈ Syl2 (OutF (Q)) acts faithfully on
+Q/Φ(Q). If Q is generated by at most 5 elements, we have |NP (Q) : Q| ≤ 4 and the possible isomorphism types
+of OutF (Q) are described in Corollary 6.12 and Lemma 6.13 in [16]. If Q happens to be normal in P , we find a
+non-trivial constrained fusion system NF (Q) on P . By Theorem III.5.10 in [1], NF (Q) is the fusion system of a
+group of order |Q||OutF (Q)|. Usually we can check by computer if there are groups with the desired properties.
+These properties suffice to determine 30 groups of order 26 which admit only the trivial fusion system. On the
+other hand, we can construct non-trivial fusion systems on the remaining groups of order 26 , exponent 4 and
+2-rank at most 3.
+For n = 7, 8 we find 104 respectively 496 groups with the given constraints. It turns out that there are no
+non-trivial fusion systems if Aut(P ) is a 2-group. Now we will show that this is also true for n = 9. A computer
+calculation (as in Proposition 1.6) shows that all groups P of order 29 , exponent 4 and 2-rank 3 satisfy C33 ∼
+=
+Ω(P ) ⊆ Z(P ). Let Q ≤ P be a candidate for an essential subgroup. Then
+P 0 ⊆ Φ(P ) = f(P ) ⊆ Ω(P ) ⊆ Z(P ) ⊆ CP (Q) ⊆ Q
+and Q E P . Hence, Q cannot be generated by three or less elements (otherwise |NP (Q) : Q| = |P : Q| > 2).
+Now suppose that Q is generated by four elements. Then Φ(Q) < Ω(P ), since otherwise P/Q acts trivially
+on Q/Φ(Q). Therefore, |Q| ≤ 26 and |P : Q| ≥ 23 . However, this contradicts Lemma 6.13 in [16]. Thus we
+have shown that Q cannot be generated by four elements. Suppose next that Q is generated by five elements.
+Then again Φ(Q) < Ω(P ) and |Q| ∈ {26 , 27 }. Since Φ(Q) < Z(P ) ⊆ Z(Q) < Q, we have a characteristic
+subgroup lying between Φ(Q) and Q. In case Z(Q) = Ω(P ) we have |Z(Q) : Φ(Q)| ≤ 4. Hence, OutF (Q)
+must act non-trivially on Q/ Z(Q) = Q/Ω(P ). However, P/Q ≤ OutF (Q) acts trivially on Q/Ω(P ). It follows
+that Ω(P ) < Z(Q). However, one can show that there are no groups Q with the given properties such that
+|Z(Q)| ≥ 24 . We conclude that Q is not generated by five or less elements. If Q is generated by more elements,
+one can show with GAP that |Z(Q)| ≤ 4. This contradicts Ω(P ) ⊆ Z(P ) ⊆ Z(Q). In summary, we proved that
+there are only trivial fusion systems on a group P of order 29 , exponent 4 and 2-rank 3, if and only if Aut(P )
+is a 2-group.
+
+5
+
+Lemma 2.4. Let B be a 2-block of a finite group with defect group D such that Z(D) is isomorphic either to
+C4 × C2 , C22 × C4 or to C42 × C2 . Then B does not have Loewy length 4.
+Proof. Let (D, b) be a maximal Brauer pair of B. Let T := NG (D, b)/ CG (Z(D)). Then we have |T | ∈ {1, 3}. In
+case T = 1 the result follows from Corollary 2.7 in [9]. Now let |T | = 3. Then Z(D) ∼
+= C22 ×C4 or Z(D) ∼
+= C42 ×C2 .
+T
+One can show by computer that the Loewy length of the centralizer algebra F Z(D) is at least 5 where F is
+an algebraically closed field of characteristic 2. Hence, again the claim follows from Corollary 2.7 in [9].
+Proposition 2.5. Let B be a 2-block of a finite group with Loewy length 4 and defect group D. Then there are
+at most 196 possible isomorphism types for D and three of them are known to occur, namely C4 , C23 and D8 .
+Proof. There are 1799 2-groups of exponent at most 4 and 2-rank at most 3. It is known that the groups C4 , C23
+and D8 do actually occur as defect groups of 2-blocks with Loewy length 4 (see [8]). Now let D be metacyclic,
+but not isomorphic to C4 or D8 . Then |D| ≤ 16 and the remark after Corollary 3.9 in [9] shows that D is not a
+defect group of a block with Loewy length 4. This excludes 14 groups from our list. The abelian groups C22 × C4
+and C42 × C2 are impossible by Lemma 2.4. Another group (minimal non-abelian of order 32) can be excluded
+by using [4]. Using the list of defect groups of order 32 in [18], we can further exclude 7 groups which can only
+correspond to nilpotent blocks (cf. Corollary 3.8 in [9]).
+Now let |D| ≥ 26 . By Lemma 2.3, 30+104+496+933 = 1563 of these groups lead to nilpotent blocks. Two more
+groups can be excluded by Lemma 2.4. Moreover, there is one group whose center is isomorphic to C42 . Here one
+can show that the image of the restriction map Aut(D) → Aut(Z(D)) is a 2-group. Hence, by Corollary 2.7 in
+[9], D is not the defect group of a block with Loewy length 4. Using the same technique we eliminate 13 more
+groups of higher order.
+Thus, altogether we have 1799 − 14 − 3 − 7 − 1563 − 16 = 196 possible defect groups for 2-blocks with Loewy
+length 4 where three of them are known to occur.
+Lemma 2.6. Let B be a 3-block of a finite group with defect group D and Loewy length 4. Then Z(D) is
+elementary abelian.
+Proof. The same argument as in Lemma 2.4 works.
+Lemma 2.7. There are (at least) 2 (respectively 13) groups of order 36 (respectively 37 ) with exponent 9 and
+3-rank at most 3 which admit only trivial fusion systems.
+Proof. Let P be a group of order 3n with exponent 9 and 3-rank at most 3. Assume that P admits only the
+trivial fusion system. Then n ≥ 6, since otherwise Aut(P ) is not a 3-group (see [12]). We may assume that
+Aut(P ) is a 3-group. We use the following algorithm in order to find possible groups P :
+(1) Make a list L of all candidates of essential subgroups of P by using Lemma 6.15 in [16].
+(2) We may assume that F is a sparse fusion system on P in the sense of [6].
+(3) By Theorem 3.5 in [6], F is constrained, i. e. there is a self-centralizing subgroup N EP such that F = NF (N ).
+Moreover, N lies in at least one member of L.
+(4) Theorem III.5.10 in [1] shows that there is a finite group G such that P ∈ Syl3 (G), N E G, G/ Z(N ) ∼
+=
+AutF (N ) and F = FP (G). In particular, Aut(N ) has no normal Sylow 3-subgroup (otherwise F would be
+controlled and thus trivial).
+(5) It follows that |N | ≥ 33 and in case |N | = 33 we have N ∼
+= C33 and n = 6.
+This gives 2 groups of order 36 and 13 groups of order 37 .
+Proposition 2.8. Let B be a 3-block of a finite group with Loewy length 4 and defect group D. Then there are
+at most 386 possible isomorphism types for D and none of them is known to occur.
+
+6
+
+Proof. There are 820 3-groups of exponent at most 9 and 3-rank at most 3. However, the three cyclic groups
+C1 , C3 and C9 cannot occur by Corollary 3.9 in [9]. Also the abelian groups C9 × C3 , C92 , C32 × C9 , C92 × C3
+and C93 cannot occur by Lemma 2.6. Using Corollary 2.7 in [9] we can exclude 411 more groups. Among the
+remaining groups, 15 lead to nilpotent blocks by Lemma 2.7. Hence, there are 820 − 8 − 411 − 15 = 386 groups
+left.
+We remark that the proof of Proposition 2.8 exhausts the known methods, i. e. in the remaining case there are
+always non-trivial fusion systems and neither Corollary 2.7 nor Corollary 3.9 in [9] applies. We add a result for
+principal blocks which was suggested by Koshitani with a different proof.
+Proposition 2.9. Let B be a principal 3-block with defect group D and Loewy length 4. Then D is not metacyclic. Moreover, |D| ≥ 34 .
+Proof. By Proposition 4.13 in [9] we may assume that D is non-abelian. Since D has exponent at most 9, it
+follows that D ∼
+= C9 oC3 or C9 oC9 . In the first case, Theorem 4.5 in [17] implies that all Cartan invariants of B
+are divisible by 3. The same holds in case |D| = 34 by Corollary 5 in [15] (cf. [17, Section 2]). Now Proposition 4.6
+in [9] gives a contradiction. The last statement follows from Propositions 4.13 and 4.14 in [9].
+
+Acknowledgment
+This work is supported by the Carl Zeiss Foundation and the Daimler and Benz Foundation. The author
+thanks Heiko Dietrich, Bettina Eick, Max Horn and Eamonn O’Brien for the assistance with computations of
+automorphism groups.
+
+References
+[1] M. Aschbacher, R. Kessar and B. Oliver, Fusion systems in algebra and topology, London Mathematical
+Society Lecture Note Series, Vol. 391, Cambridge University Press, Cambridge, 2011.
+[2] Y. Berkovich, Groups of prime power order. Vol. 1, de Gruyter Expositions in Mathematics, Vol. 46, Walter
+de Gruyter GmbH & Co. KG, Berlin, 2008.
+[3] Y. Berkovich and Z. Janko, Groups of prime power order. Vol. 2, de Gruyter Expositions in Mathematics,
+Vol. 47, Walter de Gruyter GmbH & Co. KG, Berlin, 2008.
+[4] C. W. Eaton, B. Külshammer and B. Sambale, 2-Blocks with minimal nonabelian defect groups II, J. Group
+Theory 15 (2012), 311–321.
+[5] The GAP Group, GAP – Groups, Algorithms, and Programming, Version 4.7.4 ; 2014, (http://www.
+gap-system.org).
+[6] A. Glesser, Sparse fusion systems, Proc. Edinb. Math. Soc. (2) 56 (2013), 135–150.
+[7] B. Huppert, Endliche Gruppen. I, Die Grundlehren der Mathematischen Wissenschaften, Band 134,
+Springer-Verlag, Berlin, 1967.
+[8] S. Koshitani, On the projective cover of the trivial module over a group algebra of a finite group, Comm.
+Algebra (to appear).
+[9] S. Koshitani, B. Külshammer and B. Sambale, On Loewy lengths of blocks, Math. Proc. Cambridge Philos.
+Soc. 156 (2014), 555–570.
+[10] T. J. Laffey, A lemma on finite p-groups and some consequences, Proc. Cambridge Philos. Soc. 75 (1974),
+133–137.
+[11] T. J. Laffey, Bounding the order of a finite p-group, Proc. Roy. Irish Acad. Sect. A 80 (1980), 131–134.
+
+7
+
+[12] D. MacHale and R. Sheehy, Finite groups with odd order automorphism groups, Proc. Roy. Irish Acad. Sect.
+A 95 (1995), 113–116.
+[13] A. Mann, The power structure of p-groups. II, J. Algebra 318 (2007), 953–956.
+[14] T. Okuyama, On blocks of finite groups with radical cube zero, Osaka J. Math. 23 (1986), 461–465.
+[15] G. R. Robinson, On the focal defect group of a block, characters of height zero, and lower defect group
+multiplicities, J. Algebra 320 (2008), 2624–2628.
+[16] B. Sambale, Blocks of finite groups and their invariants, Habilitationsschrift, Jena, 2013.
+[17] B. Sambale, Brauer’s Height Zero Conjecture for metacyclic defect groups, Pacific J. Math. 262 (2013),
+481–507.
+[18] B. Sambale, Further evidence for conjectures in block theory, Algebra Number Theory 7 (2013), 2241–2273.
+Benjamin Sambale
+Institut für Mathematik
+Friedrich-Schiller-Universität
+07743 Jena
+Germany
+benjamin.sambale@uni-jena.de
+
+8
+
+
