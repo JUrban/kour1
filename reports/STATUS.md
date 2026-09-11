@@ -97,6 +97,12 @@ and automorphism order. Five smaller controls also agree. None of the
 
 ## Additional constructions and exclusions
 
+**15.36:** Shakhova2018 explicitly states the exact negative answer: some
+finite G have L(qG) of infinite axiomatic rank. The primary publisher
+abstract and the printed question were checked; the full proof remains
+unaudited. Excluded from new-result priority; see
+`research/15.36-prior-claim.md`.
+
 **12.56:** The classical rigidity theorem for right-angled Artin groups gives an elementary graph-counting lower bound, proving `F(n)=n^(Theta(n))` in the printed presentation-length convention. Explicitly, `(n/4)log n-(n/2)log log n-O(n) <= log F(n) <= n log n+O(n)`. This is a quantitative partial answer, with novelty unestablished and no additional complete candidate. See `research/12.56-growth-bounds.md` and `research/12.56-review.md`.
 
 **13.12:** Carette Theorem 6.3 (2011, corrected preprint 2010) already proves that every hyperbolic group has finitely presented automorphism group. Exact theorem and its proof read; excluded from new priority. See `research/13.12-known-resolution.md`.

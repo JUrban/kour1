@@ -97,3 +97,38 @@ on keeping proper stabilizers distinct from the full fixed locus.
   boundary. Thus an asserted open discrete Schottky neighbourhood would
   be unjustified. Infinite-order ellipticity alone also does not prove
   an abstract relation. No free triple was obtained.
+
+## Scope checks from the next literature pass
+
+- **15.36:** An exact published negative answer was found in Shakhova2018.
+  The primary abstract and Notebook page87 were checked; see the separate
+  `15.36-prior-claim.md` note for the limited reading scope.
+- **13.14--15:** Budkin's2021 paper, DOI10.1007/s10469-021-09630-2,
+  concerns quasivarieties of torsion-free groups of class at most two.
+  Its primary abstract gives families without independent bases, but does
+  not answer the free class-three question13.15. Continuum cardinality of
+  lattice intervals by itself does not refute distributivity in13.14.
+  Budkin's2025 paper, DOI10.33048/semi.2025.22.072, concerns the free
+  class-three quasivariety but requires the larger quasivariety to contain
+  a torsion-free group with specified commutator relations. Its abstract
+  and introduction were read; the hypothesis was not removed, and its
+  full proof was not audited. Budkin--Shakhova2024,
+  DOI10.33048/semi.2024.21.073, concerns finite exponents and likewise
+  cannot be imported into the torsion-free question without an argument.
+- **13.30:** Cameron--Johnson's1987 paper, DOI10.1017/S0305004100067256,
+  already gives substantial non-B-group criteria. A random Cayley-graph
+  argument needs to exclude finite covers by translates of nonprincipal
+  square-root sets; that condition is not automatic in all countable
+  groups. No general answer follows from the proposed random construction.
+- **14.75:** Generating the variety of all groups supplies separating
+  homomorphisms from F2, but their images need not be the specified
+  two-generator groups. If residual membership requires epimorphisms,
+  the missing generating-pair condition is the substantive issue.
+- **15.58--59:** Projectivity of a profinite retract does not imply
+  freeness. The retract Z_p of the free rank-one profinite group is a basic
+  warning. Countable inverse-system results do not settle the stated
+  uncountable case.
+- **15.69:** Producing an infinite bounded-exponent quotient of a
+  hyperbolic group does not establish that its kernel is free. Iterating
+  extensions with free kernels also does not establish a free total kernel.
+  No such step is asserted here.
