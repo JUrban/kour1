@@ -81,3 +81,25 @@ conclusion is claimed.
   generated transformation groups does not show the new generators
   are distorted. No finitely generated all-distorted example follows
   from the construction inspected here.
+
+
+## 20.75–76 and 20.89
+
+Halasi–Podoski–Pyber–Szabo, arXiv:2305.02037v2, was cached from
+https://zhalasi.web.elte.hu/papers/19.HPPSZ_PhiA_rang.pdf . Read:
+opening definitions, Theorems 1.1 and 1.4–1.5, Example 1.3, the
+Section 3 passage containing Questions 3.1–3.11, Lemma 3.6 and its
+proof, and the proof of Theorem 1.9. Question 3.9 is exactly 20.75
+and Question 3.11 is exactly 20.76. A single maximal abelian normal
+subgroup of small rank does not bound the ranks of all abelian normal
+subgroups: Example 1.3 explicitly illustrates the difference. The
+main algebra bound and full group-rank proofs were not audited.
+
+Shumyatsky, arXiv:1610.03126v1, was cached. Read: introductory
+statements, Section 2 preliminary results, the Section 3 statements
+and proofs, and Section 4 including the complete main proof. The
+finite-by-hypercentral theorem requires every element to be almost
+Engel. The finite-generation theorem requires virtual solubility.
+Neither permits concluding that arbitrary almost Engel generators
+in an arbitrary linear group generate an almost Engel subgroup.
+No such hypothesis is silently dropped in interpreting 20.89.

@@ -1,0 +1,456 @@
+Arch. Math. 123 (2024), 9–17
+c 2024 The Author(s)
+0003-889X/24/010009-9
+published online May 29, 2024
+https://doi.org/10.1007/s00013-024-01995-x                Archiv der Mathematik
+
+
+
+
+                Sylow intersections and Frobenius ratios
+
+                  Wolfgang Knapp and Peter Schmid
+
+
+     Abstract. Let G be a finite group and p a prime dividing its order |G|, with
+     p-part |G|p , and let Gp denote the set of all p-elements in G. A well known
+     theorem of Frobenius tells us that fp (G) = |Gp |/|G|p is an integer. As
+     Gp is the union of the Sylow p-subgroups of G, this Frobenius ratio fp (G)
+     evidently depends on the number sp (G) = |Sylp (G)| of Sylow p-subgroups
+     of G and on Sylow intersections. One knows that sp (G) = 1 + kp and
+     fp (G) = 1 + (p − 1) for nonnegative integers k, , and that fp (G) < sp (G)
+     unless G has a normal Sylow p-subgroup. In order to get lower bounds
+     for fp (G) we, study the permutation character π = πp (G) of G in its
+     transitive action on Sylp (G) via conjugation (Sylow character). We will
+     get, in particular, that fp (G) ≥ sp (G)/rp (G) where rp (G) denotes the
+     number of P -orbits on Sylp (G) for any fixed P ∈ Sylp (G). One can have
+      ≥ k ≥ 1 only when P is irredundant for Gp , that is, when P is not
+                                                                     
+     contained in the union of the Q = P in Sylp (G) and so P = Q=P (P ∩Q)
+     a proper subset of P . We prove that  ≥ k when |P | ≤ |P |/p.
+
+     Mathematics Subject Classification. 20D20, 20D35.
+
+     Keywords. Sylow subgroups, Sylow character, Frobenius ratio, p-elements.
+
+
+
+
+1. Introduction. Throughout G will be a ﬁnite group and p a prime dividing
+its order |G|. By Sylow, the set Sylp (G) of Sylow p-subgroups of G is nonempty,
+and G acts transitively on it via conjugation. Let π = πp (G) denote the asso-
+ciated permutation character of G (Sylow character).
+    Fix P ∈ Sylp (G). Then |P | = |G|p equals the p-part of |G| and Sylp (G) =
+P = {P g : g ∈ G} (where P g = g −1 P g). Each P -orbit on Sylp (G) distinct
+  G
+
+from {P } has size a proper power of p. Hence the Sylow p-number sp (G) =
+|Sylp (G)| has the form sp (G) = 1 + kp for some integer k ≥ 0. The set Gp =
+        g                                                              |P |
+  g∈G P of all p-elements in G can be described as Gp = {g ∈ G : g           = 1}.
+Hence, by a theorem of Frobenius [2], fp (G) = |Gp |/|P | is an integer, called
+10                         W. Knapp and P. Schmid                     Arch. Math.
+
+
+the Frobenius p-ratio of G. The identity
+                                     1  sp (G)
+                           fp (G) =
+                                    |P |  π(x)
+                                          x∈P
+
+is basic for our purposes (see Lemma 3 below). Obviously sp (G) and       fp (G)
+remain unchanged when replacing G by G/Op (G) where Op (G) = g∈G P g
+is the greatest normal p-subgroup of G. We have P = Op (G) if and only
+sp (G) = 1 resp. fp (G) = 1.
+    We say that the Sylow p-subgroups of G are irredundant (for Gp ) provided
+none can be omitted in order to get Gp as their union. Of course this is true
+if and only if the given P ∈ Sylp (G) cannot be omitted. Thus we have irre-
+                                               
+dundancy in this sense precisely when P = Q∈Sylp (G)\{P } (P ∩ Q) is a proper
+subset of P . So P is a T.I. subset of G just when |P| = 1 and, as a rule, fp (G)
+is large when |P| is small. We call P strongly irredundant provided |P| ≤ |P |/p.
+
+
+Theorem 1. Suppose P ∈ Sylp (G) is not normal in G, so that the Sylow num-
+ber sp (G) = 1 + kp with k ≥ 1. Then the Frobenius ratio fp (G) = 1 + (p − 1)
+                                kp
+for some positive integer  < p−1  . We have  ≥ k when P is strongly irre-
+dundant, where  > k, unless |P/Op (G)| = p. Conversely, if  ≥ k, then P is
+irredundant.
+
+    Thus fp (G) ≥ p (as  ≥ 1). We call k and  the parameters of sp (G)
+                                                               kp
+and fp (G), respectively. If |G/Op (G)|p = pa , then  ≤ p−1      (1 − p1a ), with
+equality precisely when P/Op (G) is a T.I. subset of G/Op (G). Observe that
+P is strongly irredundant when P/Op (G) is cyclic or, more generally, when
+      
+P = x∈P (P ∩ Q)x for some Q ∈ Sylp (G). To see this, use that cyclic p-
+groups are uniserial, and that the normal closure of a proper subgroup of a
+ﬁnite p-group is a proper subgroup.
+    There exist groups G where sp (G) > |Gp |, and then at least one Sylow
+p-subgroup of G is redundant for Gp , and we have  < k (see the example in
+Sect. 2). One has (1 + k(p − 1))p > (1 + kp)p−1 by binomial expansion. Hence
+                p−1
+fp (G) > sp (G) p when  ≥ k ≥ 1, and it is conjectured that this inequality
+holds in general. Indeed, Gheri [3] has conﬁrmed this in the case where G is
+p-solvable, and has reduced this problem to almost simple groups. The authors
+have veriﬁed the conjecture for various such groups of small orders. It holds
+when G is a group of Lie type of characteristic p; use that then Op (G) = 1
+and that fp (G) = |G|p by a celebrated theorem of Steinberg [9].
+    Let rp (G) denote the number of P -orbits on Sylp (G), which evidently does
+not depend on the chosen P ∈ Sylp (G). If sp (G) = 1 + kp with k ≥ 1, then
+2 ≤ rp (G) ≤ 1 + k. We have rp (G) = 2 if and only if P is transitive on the
+(nonempty) set Sylp (G)\{P }, which happens when G is a Zassenhaus group of
+suitable degree. Also, rp (G) = 1+k if and only if each P -orbit on Sylp (G)\{P }
+has size p.
+Vol. 123 (2024)      Sylow intersections and Frobenius ratios                   11
+
+                                                                s (G)
+Theorem 2. Let sp (G) = 1+kp with k ≥ 1. Then fp (G) > rpp (G) . The Sylow p-
+subgroup P of G is strongly irredundant for Gp in the extreme cases rp (G) = 2
+and rp (G) = 1 + k.
+   In particular, we have strong irredundancy when k ≤ p since then rp (G) = 2
+or rp (G) = 1 + k.
+Theorem 3. Let sp (G) = 1 + kp with k ≥ 2. Then fp (G) = 1 + (p − 1) with
+ ≥ 2, and the Sylow p-subgroup P of G is irredundant for Gp if sp (G) ≤
+p(fp (G) + 2).
+   Thus fp (G) ≥ 2p − 1 when sp (G) ≥ 1 + 2p, and we certainly have irredun-
+dancy when sp (G) ≤ p(2p + 1).
+2. The Sylow character. We keep the assumptions and notations as introduced
+above. Fix P ∈ Sylp (G). We assume that P is not normal in G so that the
+Sylow number sp (G) = 1 + kp with k ≥ 1. Then the Frobenius ratio fp (G) > 1
+as well. Recall that the Sylow character π = πp (G) for the prime p is the
+permutation character of G in its action on Sylp (G) = P G (counting ﬁxed
+points). For x ∈ G, let xG = {xg : g ∈ G} denote the conjugacy class of x in
+G (so that |xG | = |G : CG (x)|).
+                                                                     r
+Lemma 1. Let N = NG (P ) be the normalizer of P in G, and let i=1 N gi P
+be the decomposition of G into double cosets mod (N, P ), say with g1 = 1.
+Then r = rp (G) is the number of P -orbits on Sylp (G) and sp (G) = |G : N | =
+    r
+1 + i=2 |P : (P ∩ P gi )|. In fact, the assignments P g → N g for g ∈ G define
+an isomorphism from the G-set Sylp (G) onto the G-set G : N = {N g : g ∈ G}
+(with G acting via multiplication from the right), and the P -sets P : (P ∩ P gi ),
+i > 1, may be identified with the P -orbits on Sylp (G) \ {P }.
+
+Proof. It is well known (and easily veriﬁed) that P G is G-isomorphic to G : N
+(see Aufg. 23 on page 32 in Huppert [5]). In particular, π is aﬀorded by the
+G-set G : N , and is induced from the 1-character of N . So the remainder is
+nothing but Mackey decomposition (see Satz V.16.9 in [5]). The intersections
+P ∩ P gi = P ∩ N gi are point stabilizers for the corresponding P -orbits, and
+are determined up to P -conjugacy.                                           
+    Note that N = NG (P ) is an abnormal subgroup of G [5, VI.11.18]; since
+                                            g
+NG (N ) = N , one also knows that N g → N   for g ∈ G deﬁnes an isomorphism
+from G : N onto N . Of course Ker(π) = g∈G N g , and π(x) ≥ 1 if and only
+                      G
+        
+if x ∈ g∈G N g . Also Op (G) is the kernel of P in its action on Sylp (G), and
+Ker(π)/Op (G) is a p -group.
+    It is an interesting open question whether sp (G) = |G : NG (P )| can be read
+oﬀ from the character table of G (Navarro). Can one then obtain in addition
+π as sum of the irreducible characters of G?
+                                                                        G
+Lemma 2. Let x ∈ P and N = NG (P ). We have π(x) = sp (G) · |x|x∩N  G|
+                                                                        |
+                                                                          and
+xG ∩ N = xG ∩ P . Moreover π(x) is the number of Sylow p-subgroups of G
+containing x (including P ), and π(x) = 1 + kx p for some nonnegative integer
+12                         W. Knapp and P. Schmid                    Arch. Math.
+
+
+kx ≤ k. If H is a normal subgroup of G, then sp (G) = sp (P H) · sp (G/H) and
+π(x) = πp (P H)(x) · πp (G/H)(Hx).
+Proof. The ﬁrst statement is well known (see Aufg. 24 on page 32 of [5]). The
+p-element x ∈ P normalizes some Sylow p-subgroup Q of G if and only if x ∈ Q
+(as Q is a p-subgroup of G of largest possible order, and Qx is a p-subgroup of
+G). Moreover xG ∩ N = xG ∩ P . We also have π(x) ≡ 1 (mod p) since each x -
+orbit on Sylp (G) has size a power of p, and since |Sylp (G)| = sp (G) = 1 + kp.
+The last statement is due to Gheri [3, Lemma 3.6]. Use here that P H/H is a
+Sylow p-subgroup of G/H with normalizer N H/H, and consider the partition
+of the set of Sylow p-subgroups of G containing x (having cardinality π(x))
+where P and Q belong to the same part if P H = QH. Since the Sylow p-
+subgroups of G/H are conjugate, there are πp (G/H)(Hx) parts with each
+part having cardinality πp (P H)(x).                                            
+                                         sp (G)
+Lemma 3. We have fp (G) = |P1 | x∈P π(x)         .
+                         
+Proof. Obviously Gp = x∈P xG . In this union, for any x ∈ P , the conjugacy
+                                                                     G
+class xG occurs with multiplicity |xG ∩ P |. Thus |Gp | = x∈P |x|x      |
+                                                                    G ∩P | . Apply
+
+the preceding lemma.                                                            
+     In view of Lemma 3, and adopting an idea of Gheri [3], we deﬁne
+                                                 1
+                       fp∗ (G) = sp (G)/   π(x) |P | .
+                                          x∈P
+Of course this again is independent of the chosen particular Sylow p-subgroup
+of G. By the arithmetic–geometric mean inequality, we have fp (G) ≥ fp∗ (G),
+and this inequality is proper since sp (G) > 1, (and π(x) = π(1) for some
+x ∈ P ). Clearly sp (G), rp (G), fp (G), and fp∗ (G) remain unchanged when
+                                     
+replacing G by G/Op (G) (or by Op (G)). Gheri [3] conjectured that always
+                p−1
+fp∗ (G) ≥ sp (G) p , and conﬁrmed this when G is p-solvable. By Lemma 2, we
+know that sp (G) = sp (P H) · sp (G/H) and fp∗ (G) = fp∗ (P H) · fp∗ (G/H) for
+any normal subgroup H of G. Arguing by induction on |G|, one thus is readily
+reduced to the case where G = P H for some minimal normal subgroup H of
+G. Here H will be a p -group when G is p-solvable, whence G p-nilpotent. This
+will be treated in Lemma 6 below.
+                     
+Lemma 4. Let P = Q∈Sylp (G)\{P } (P ∩ Q) be as introduced above. Then P is
+the subset of P consisting just of those x ∈ P for which π(x) > 1; in other
+words, π(x) = 1 if and only if x ∈ P \ P.
+Proof. This is immediate from Lemma 2.                                          
+                                                                            sp (G)
+Lemma 5. Suppose that Op (G) = 1, and let 1 = x ∈ P . Then π(x) ≤            1+p
+and hence kx ≤ k−1
+               1+p (where sp (G) = 1 + kp and π(x) = 1 + kx p are as above).
+
+Proof. We use an idea given in the proof of Proposition 2.1 in [4]. This propo-
+sition might be incorrect as it stands, its proof being not conclusive as the
+Vol. 123 (2024)            Sylow intersections and Frobenius ratios           13
+
+
+sentence following statement (∗) can only be substantiated when the p-element
+considered has order p.
+    We have π(x) ≤ π(y) if y ⊆ x . So we may let x have order p. We assert
+that there is g ∈ G such that the sets of Sylow p-subgroups of G containing
+            i
+x and xgx for i = 0, . . . , p − 1 are pairwise disjoint. Then we have 1 + p
+such sets, each of cardinality π(x) as π is a class function on G. Hence then
+π(x)(1 + p) ≤ sp (G), as desired.
+    Assume the assertion is false. Then, for every g ∈ G, there are indices
+                                                      i   −i           j−i −1
+i = i(g) = j(g) = j such that x, xg = x, xgx x or x, xgx g                  =
+     i    j   −i −1
+xgx , xgx x g are p-subgroups of G. In the latter case, j − i is not divisible
+by p. Application of a variant of the Baer–Wielandt theorem now gives us that
+x is subnormal in G, whence x ∈ Op (G) in contrast to our hypothesis.
+    The variant we mean is as follows. Let A = x be a cyclic p-subgroup of
+                                                   −1
+G. Suppose that for every g ∈ G, the join x, xgyg      is a p-group where either
+y = g or y = xi for some integer i = i(g) not divisible by p. Then we claim
+that A is subnormal in G. Arguing by induction on |G|, and assuming that the
+claim is false, by Wielandt’s Zipper Lemma (originally proved in [10, Satz 5]),
+A is contained (and subnormal) in a unique maximal subgroup M = NG (M )
+                                                                              −1
+of G. For any g ∈ G, this forces that either Ag ⊆ M (y = g), A ⊆ M g ,
+                            i −1
+and g −1 ∈ M , or that Agx g ⊆ M , (gxi g −1 )−1 ∈ M , A = x−i ⊆ M g , and
+g ∈ M . Thus, in each case, we get the contradiction G ⊆ M .                   
+Lemma 6. Suppose that G = P H is p-nilpotent, with normal p-complement
+H. Then sp (G) = |H : CH (P )| and π(x) = |CH (x) : CH (P )| for any x ∈ P .
+Moreover
+                                   1           1
+                             π(x) |P | ≤ sp (G) p ,
+                                   x∈P
+
+where we have equality if and only if CH (xp ) = H for every x ∈ P . In partic-
+                                                                   p−1
+ular, equality holds if P has exponent p, and then fp∗ (G) = sp (G) p .
+
+Proof. We have |G : NG (P )| = |H : CH (P )| and xG ∩ P = xP for x ∈ P [5,
+Satz IV.4.9]. From [5, Satz I.8.6], it follows that CG (x)H = CP (x)H, whence
+|G : CG (x)| equals |P : CP (x)| · |H : CH (x)|. Use ﬁnally that |CH (P )||P | =
+                           p
+          |CH (x)|        p−1
+   x∈P                1         by Theorem A in Navarro–Rizo [8].              
+         |CH   (xp )| p
+
+Example. For odd p the ﬁrst example where a Sylow p-subgroup is redundant
+for Gp has been given by Derek Holt, namely for G = PSL3 (7) and p = 3.
+This can be found in a post given by Mikko Korhonen in MathematicsStack-
+Exchange (2013). There one also ﬁnds the following example by Jack Schmidt
+(see also Example 2.5 in [3]):
+    Let P be elementary abelian of order pa (a ≥ 2). Let q ≡ 1 (mod p) be
+                                                              a
+a prime and let H be an elementary abelian q-group of rank pp−1 −1
+                                                                   , which is
+the number of maximal subgroups Mi of P . There is afaithful action of P
+on H such that H/CH (Mi ) has order q for each i (and i CH (Mi ) = 1). The
+corresponding semidirect product G = H · P is a p-nilpotent group satisfying
+14                             W. Knapp and P. Schmid                  Arch. Math.
+
+                                    pa−1 −1
+CH (P ) = 1 and |CH (x)| = q p−1 for any x = 1 in P , because there are
+      a−1
+just p p−1−1 maximal subgroups of P containing x. Hence sp (G) = |H| and
+            pa−1 −1
+π(x) = q      p−1     by Lemma 6. We infer that P is redundant for Gp and that
+                      p−1                                        a−1       pa −1
+fp∗ (G) =  sp (G)    . Moreover |Gp | = 1 + (pa − 1)q p . We have q p−1 >
+                       p
+
+       a       pa−1
+1 + (p − 1)q        provided q is chosen large enough compared with pa (which
+is possible by Dirichlet’s prime number theorem). In this case sp (G) > |Gp |.
+
+3. Proof of Theorem 1. Fix P ∈ Sylp (G), and let Op (G) = 1 (without loss).
+Write |P | = pa and sp (G) = 1 + kp (a ≥ 1, k ≥ 1). Let also π = πp (G). Two
+nontrivial p-elements x, y of G are said to be related provided x = y . This is
+an equivalence relation on Gp = Gp \{1}, each class having cardinality divisible
+by p − 1. Thus |Gp | = pa fp (G) − 1 = (pa − 1)fp (G) + (fp (G) − 1) is divisible
+by p − 1. Since p − 1 is a divisor of pa − 1, we get that fp (G) − 1 = (p − 1)
+for some integer , as required. Clearly  ≥ 1 (as k ≥ 1). From Lemmas 3 and
+                                                 kp
+2, it follows that fp (G) < sp (G), whence  < p−1   .
+          
+    Let P = {x ∈ P : π(x) > 1} (Lemma 4). If P is a T.I. subset of G =
+                                          
+G/Op (G), then |P| = 1 and fp (G) = 1a pa (1 + kp) − kp = 1 + kp(1 − 1a ) =
+                                              p                              p
+sp (G) − kp
+         pa takes its greatest value (in terms of sp (G) and |P |). Here p
+                                                                           a−1
+                                                                               is a
+                                 
+divisor of k (Frobenius). Let |P | > 1 in what follows, which forces that a ≥ 2.
+Using that π(x) < sp (G) for 1 = x ∈ P and π(x) = 1 for x ∈ P \ P from
+Lemma 3, we get that
+                              1  
+                   fp (G) >        |P | + (|P | − |P|)(1 + kp) .
+                             |P |
+If P is strongly irredundant, then |P| ≤ |P |/p = pa−1 (by deﬁnition), and we
+                                       
+obtain that fp (G) > 1 + kp − kp| P|
+                               |P | ≥ 1 + k(p − 1).
+    Assume that fp (G) ≥ 1+k(p−1) but that P is redundant. Then π(x) ≥ 1+p
+for each x ∈ P by Lemmas 4 and 2, whence by Lemma 3,
+                                                      1 + kp
+                            1 + k(p − 1) ≤ fp (G) ≤          .
+                                                       1+p
+                 
+It follows that k p2 −p−1 ≤ −p, which is impossible as k > 0 and p2 −p−1 >
+0.
+
+Remark. Arguing as above, one gets that |P| = 1 + m(p − 1) for some integer
+m ≥ 0 (even |P|/|P|p is of this form). This could be helpful in order to check
+whether P is strongly irredundant. Of course there are groups G where a
+Sylow p-subgroup is irredundant but not strongly irredundant, and where the
+parameters  < k. (For p = 2, such an example is provided by the symmetric
+group G = S5 , where s2 (G) = 15 (k = 7) and f2 (G) = 7 ( = 6), and where
+π(x) = 1 for any 4-cycle x ∈ G.)
+
+4. Proof of Theorem 2. Without loss let again Op (G) = 1, and let sp (G) =
+1 + kp with k ≥ 1. Fix P ∈ Sylp (G) and let π = πp (G) be the Sylow character.
+Vol. 123 (2024)      Sylow intersections and Frobenius ratios                   15
+
+
+    By the Cauchy–Frobenius–Burnside ﬁxed point formula [5, Satz V.13.4]
+                                                              1
+rp (G) = |P1 | x∈P π(x), which is greater than        x∈P π(x)
+                                                               |P |
+                                                                    by the
+arithmetic–geometric mean inequality. Consequently
+                                           sp (G)
+                        fp (G) > fp∗ (G) >        ,
+                                           rp (G)
+as desired. Clearly 2 ≤ rp (G) ≤ 1 + k, and rp (G) = 2 if and only if P is
+                                                    
+transitive on Sylp (G) \ {P }, in which case P = x∈P (P ∩ Q)x for any Q = P
+in Sylp (G).
+    Suppose that rp (G) = 1 + k. Then each P -orbit on Sylp (G) diﬀerent from
+{P } has size p. It follows that P = P/Op (G) is elementary abelian (as it acts
+faithfully on Sylp (G)\{P }). By Brodkey [1] there is Q ∈ Sylp (G) such that
+P ∩ Q = 1. But P ∩ Q is a point stabilizer for the P -action on Sylp (G) and
+|P : (P ∩ Q)| = p is the size of a P -orbit. Thus |P | = p and, therefore, P is a
+T.I. subset of G. It follows that |Gp | = (1 + kp)p − kp and fp (G) = 1 + k(p − 1).
+(In general there is no Q ∈ Sylp (G) such that P ∩ Q = Op (G); e.g. see Ito [6].)
+Remark. Let D = P ∩ Q be a Sylow intersection of largest order (P = Q ∈
+Sylp (G)). Let |P : D| = pb and |NP (D) : D| = pc (1 ≤ c ≤ b). Then the
+                                         
+contribution to fp (G) resulting from P ∪ x∈NP (D) Qx is just 1 + pc − pc−b ,
+because the 1 + pc Sylow subgroups involved intersect pairwise in D. Hence
+fp (G) > p except possibly when b = c = 1.
+5. Proof of Theorem 3. Let again Op (G) = 1 (without loss), and let sp (G) =
+1 + kp with k ≥ 2. Fix also P ∈ Sylp (G), and let |P | = pa . By Theorem 1,
+we know that fp (G) = 1 + (p − 1) for some integer  ≥ 1. As usual, we let
+π = πp (G).
+    We ﬁrst show that the parameter  ≥ 2. Otherwise  = 1 and fp (G) = p,
+and we must have a ≥ 2 (since otherwise P is a T.I. subset of G). From
+                                 sp (G)
+Lemma 5 we get that π(x) ≤ 1+p          for each x = 1 in P . Applying Lemma 3
+we obtain that
+                          1     pa − 1                      1
+            p = fp (G) ≥ a +            (1 + p) = 1 + p − a−1 > p,
+                          p        pa                     p
+which is the desired contradiction. In particular, fp (G) ≥ 1 + 2(p − 1) = 2p − 1.
+    (A diﬀerent approach can be given using the remark following Theorem 2,
+which in turn is in the spirit of [7, p. 80].)
+    Now let sp (G) ≤ p(fp (G) + 2) or, equivalently, let k < fp (G) + 2. We
+assert that then P is irredundant. Assume the assertion is false. It follows
+from Theorem 2 that we must have k ≥ 1 + p, for otherwise P were even
+strongly irredundant. From Lemmas 4 and 2, we get that π(x) ≥ 1 + p, for
+each x ∈ P . Using that π(1) = 1 + kp > 1 + p therefore Lemma 3 shows that
+                                 1 + kp         k−1            p
+             2p − 1 ≤ fp (G) <            =k−         ≤k−         .
+                                  1+p           1+p           1+p
+                              p
+Consequently k > 2p − 1 + 1+p    , whence k ≥ 2p ≥ p + 2. But this implies that
+              k−1
+fp (G) < k − 1+p ≤ k − 1 and so k ≥ fp (G) + 2, against our hypothesis.
+16                           W. Knapp and P. Schmid                       Arch. Math.
+
+
+Open Access. This article is licensed under a Creative Commons Attribution 4.0
+International License, which permits use, sharing, adaptation, distribution and re-
+production in any medium or format, as long as you give appropriate credit to the
+original author(s) and the source, provide a link to the Creative Commons licence,
+and indicate if changes were made. The images or other third party material in
+this article are included in the article’s Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the article’s
+Creative Commons licence and your intended use is not permitted by statutory regu-
+lation or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this licence, visit http://creativecommons.
+org/licenses/by/4.0/.
+Publisher’s Note Springer Nature remains neutral with regard to jurisdic-
+tional claims in published maps and institutional aﬃliations.
+
+
+                                     References
+
+ [1] Brodkey, J.S.: A note on finite groups with abelian Sylow subgroups. Proc. Amer.
+     Math. Soc. 14, 132–133 (1963)
+ [2] Frobenius, G.: Verallgemeinerung des Sylow’schen Satzes. Sitzungsberichte der
+     Königlich Preußischen Akademie der Wissenschaften, 981-993 (1895)
+ [3] Gheri, G.: On the number of p-elements in a finite group. Ann. Mat. Pura Appl.
+     4(200), 1231–1243 (2021)
+ [4] Gheri, G.: Subnormalizers and the degree of nilpotence in finite groups. Proc.
+     Amer. Math. Soc. 149, 2739–2744 (2021)
+ [5] Huppert, B.: Endliche Gruppen I. Springer, Berlin (1967)
+ [6] Ito, N.: Über den kleinsten p-Durchschnitt auflösbarer Gruppen. Arch. Math.
+     (Basel) 9, 27–32 (1958)
+ [7] Miller, G.A., Blichfeldt, H.F., Dickson, L.E.: Theory and Applications of Finite
+     Groups. Dover Publications, Inc., New York (1961)
+ [8] Navarro, G., Rizo, N.: A Brauer-Wielandt formula (with an application to char-
+     acter tables). Proc. Amer. Math. Soc. 144, 4199–4204 (2016)
+ [9] Steinberg, R.: Endomorphisms of Linear Algebraic Groups. Memoirs of the
+     American Mathematical Society, No. 80. American Mathematical Society, Prov-
+     idence, RI (1968). Revised Edition in 2016
+[10] Wielandt, H.: Kriterien für Subnormalität in endlichen Gruppen. Math. Z. 138,
+     199–203 (1974)
+
+
+
+
+Wolfgang Knapp and Peter Schmid
+Mathematisches Institut der Universität Tübingen
+Auf der Morgenstelle 10
+72076 Tübingen
+Germany
+e-mail: wolfgang.knapp@uni-tuebingen.de
+Vol. 123 (2024)     Sylow intersections and Frobenius ratios   17
+
+
+Peter Schmid
+e-mail: peter.schmid@uni-tuebingen.de
+
+
+Received: 28 November 2023
+
+Revised: 28 February 2024
+
+Accepted: 21 March 2024
+

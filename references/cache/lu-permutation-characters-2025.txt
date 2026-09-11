@@ -1,0 +1,195 @@
+                                               On permutation characters of finite groups
+
+                                                                          Jiakuan Lu
+                                                School of Mathematics and Statistics, Guangxi Normal University,
+                                                              Guilin 541006, Guangxi, P. R. China
+arXiv:2511.20171v1 [math.GR] 25 Nov 2025
+
+
+
+
+                                                                               Abstract
+                                                     Let G be a finite group and M be a maximal subgroup of G. We
+                                                 call every irreducible constituent χ of (1M )G a P-character of G with
+                                                 respect to M . In this paper, we prove that if all P-characters of G are
+                                                 monomial, then G is solvable, which solves a question posed by Qian
+                                                 and Yang.
+
+                                               Keywords: P-characters; Solvable groups.
+                                               MSC(2020): 20C15, 20D10
+
+
+                                           1     Introduction
+                                           Throughout this paper, G always denotes a finite group, p is a prime and
+                                           π is a set of some primes. As usual, let Irr(G) be the set of all irreducible
+                                           complex characters of G and cd(G) = {χ(1) | χ ∈ Irr(G)}. It is well-know
+                                           that the structure of G is heavily determined by cd(G), and there are a lot
+                                           of classical theorems on this subject. For example, see [1, 3].
+                                               Recall that χ ∈ Irr(G) is monomial if χ is induced from a linear character
+                                           of a subgroup of G, and that G is an M -group if all its irreducible characters
+                                           are monomial. We know that M -groups are solvable and that every solvable
+                                           group is contained in an M -group. More interesting results on M -groups can
+                                           be found in [2].
+                                               Let M be a maximal subgroup of G. Then G acts on the set of right cosets
+                                           of M and it induces a transitive permutation character (1M )G . Let χ be an
+                                           irreducible constituent of (1M )G . Followed by [4], we call χ a P-character of
+                                           G with respect to M , and denote by IrrP (G) the set of P-characters of G and
+                                           cdP (G) = {χ(1) | χ ∈ IrrP (G)}. If in addition |G : M | is a π-number where
+                                           π is a set of primes, then χ is called a Pπ -character. Let IrrPπ (G) be the set
+                                           of Pπ -characters of G. Clearly, if χ is a P-character of a solvable group, then
+                                           χ is a Pp -character for some prime p. Moreover, a P-character of a solvable
+                                           group is monomial and monolithic (see [4, Proposition 2.3]).
+                                               In [4], the authors posed several questions, one of which is whether G is
+                                           solvable if all P-characters of G are monomial. In the following theorem, we
+                                           give an affirmative answer.
+
+                                                                                    1
+Theorem A. Let G be a group and assume that all P-characters of G are
+monomial. Then G is solvable.
+
+    In the following theorem, we prove a π-variation of [4, Proposition 2.5].
+
+Theorem B. Let G be a π-solvable group. Then all Pπ -character degrees of
+G are π-number if and only if G has a normal π-complement.
+
+Theorem C. Let G be π-separable. If all members of Irr(G) are Pπ -characters,
+then G is a π-group.
+
+    Theorem C suggests that perhaps if G is a π-group, then IrrP (G) =
+Irr(G). However, this is false in general. An easy counterexample in a solv-
+able group is to take G to be SL(2, 3) and π = {2, 3}. Then the irreducible
+characters of degree 2 of G are not P-characters.
+    Note also that if IrrP (G) = Irr(G), then G is not necessarily solvable. As
+pointed out by G. Navarro, PSL(2, 27) is such an example.
+    By Corollary 2.6 of [4], a finite group G is nilpotent if and only if cdP (G) =
+{1}. Let G = A5 , the alternating group of degree 5. Then cdP (G) = {1, 4, 5}.
+After checking many examples, it seems reasonable to conjecture that if
+|cdP (G)| ≤ 2, then G is solvable. In this paper, however, we cannot yet
+prove it.
+
+
+2     Proofs
+Proof of Theorem A. Suppose the theorem does not hold, and let G be a
+counterexample of minimal order.
+    We first show that G is not a non-abelian simple group. Assuming that
+this result false, we derive a contradiction. Let K be a proper subgroup of
+G with the largest possible order. Then K is a maximal subgroup of G. Let
+φ be a nonprincipal P-character of G with respect to K. Note that such φ
+really exists by Frobenius Reciprocity. By assumption, φ is monomial, so we
+may assume that φ = λG , where λ is a linear character of some subgroup K1
+of G. Since
+
+                (1K )G (1) = |G : K| ≥ 1 + φ(1) = 1 + |G : K1 |,
+
+we must have that |K1 | > |K| and so K1 = G. It follows that φ is a
+nonprincipal linear character of G and thus |G : G′ | ≥ 2, a contradiction.
+    Let N be a minimal normal subgroup of G. Then N < G. Let χ ∈
+Irr(G/N ) be a P-character of G/N with respect to the maximal subgroup
+M/N . Then χ ∈ Irr(G) be a P-character of G with respect to the maximal
+
+                                        2
+subgroup M . By assumption, χ = η G , where
+                                        T η is a xlinear character of some
+subgroup M1 of G. Then N ≤ ker χ =         (ker η) ≤ ker η ≤ M1 . Thus,
+                                            x∈G
+χ ∈ Irr(G/N ) is monomial. By induction hypothesis, G/N is solvable. Then
+N is not solvable. Clearly, N is the unique minimal subgroup of G and
+Φ(G) = 1.
+    Let H be a maximal subgroup of G such that N is not contained in
+H and H has the largest possible order. Then CoreG (H) = 1. Let ψ be
+a nonprincipal P-character of G with respect to H. If ker ψ ̸= 1, then
+N ≤ ker ψ, and so ker ψ ̸≤ H. It follows that G = Hker ψ and ψH is
+irreducible. Since [ψH , 1H ] = [ψ, (1H )G ] > 0, we have that ψH = 1H . In
+particular, H ≤ ker ψ, a contradiction. So ker ψ ̸= 1.
+    Now, by assumption, we may assume that ψ = µG , where µ is a linear
+character of some subgroup H1 of G. If H1 = G, then ψ = µ is a linear con-
+stituent of (1H )G , so ψH = 1H . This implies that H ≤ ker ψ, a contradiction.
+So H1 < G. Since
+
+               (1H )G (1) = |G : H| ≥ 1 + ψ(1) = 1 + |G : H1 |,
+
+we have that |H1 | > |H|. By the choice of H,Twe get that N ≤ H1 . It follows
+that 1 ̸= N = N ′ ≤ H1′ ≤ ker µ, and N ≤       (ker µ)x = ker µG = ker ψ, a
+                                              x∈G
+contradiction. The proof is complete. □
+
+   For the proof of Theorem B, we need the following Lemma.
+
+Lemma 2.1. [4, Proposition 2.3 (2)] Let G be a solvable group and G =
+N ⋊ H, where H is a maximal subgroup of G and N is a minimal normal
+subgroup of G. Then the map Θ : χ 7→ Irr(χN ) is a bijection of Irr(1H )G
+onto the set of G-orbits of Irr(N ). Furthermore, if λ ∈ Irr(χN ), then λ is
+extendible to IG (λ), and we have χ(1) = |G : IG (λ)|, where IG (λ) is the
+inertia group of λ in G.
+
+Proof of Theorem B. Suppose that H is a normal π-complement of G,
+and let χ be a Pπ -character of G with respect to a maximal subgroup M .
+Then |G : M | is a π-number. Since H is a normal Hall π ′ -subgroup of G, we
+have that H ≤ M and G/H is a solvable π-group. By definition, since χ is
+an irreducible constituent of (1M )G , it follows that χ lies over 1M and 1H lies
+under χ. So H ≤ ker(χ) and χ(1) is a π-number, as desired.
+    Conversely, suppose that all Pπ -character degrees of G are π-number. Let
+N be a minimal normal subgroup G. By induction hypothesis, G/N has a
+normal π-complement N K/N , where K is a Hall π ′ -subgroup of G. Clearly,
+N is the unique minimal subgroup of G.
+
+                                       3
+      In what following, it is sufficient to show that N K has a normal Hall
+π ′ -subgroup.
+      Since G is π-solvable, N is a π ′ -group or elementary abelian p-group for
+some prime p ∈ π. If N is a π ′ -group, then N K is a π ′ -group and N K is a
+normal Hall π ′ -subgroup, as desired.
+      Now suppose N is an elementary abelian p-group, where p ∈ π. If Φ(G) ̸=
+1, then N ≤ Φ(G). By the Frattini argument, G = N KNG (K) = N NG (K).
+Since N ≤ Φ(G), it follows that G = NG (K), so L ⊴ G, and thus L ⊴ K.
+      Thus, we may assume that Φ(G) = 1, and N is not contained in Φ(G).
+Choose a maximal subgroup M of G such that N ̸≤ M . Then G = N ⋊ M ,
+and M is not normal in G.
+      Let λ ∈ Irr(N ). By Lemma 2.1, there exists an irreducible constitu-
+ent of (1M )G , say χ, such that λ is an irreducible constituent of χN , and
+χ(1) = |G : IG (λ)|. By the hypothesis, χ(1) is a π-number. So we may
+assume that N K ≤ T , where T = IG (λ). By Lemma 2.1 again, we see that
+λ extends to Irr(T ). As a result, λ extends to some N K. By [2, Theorem
+3.17], N K has a normal Hall π ′ -subgroup. □
+
+Proof of Theorem C. We suppose that IrrP (G) = Irr(G), and we proceed
+by induction on |G| to show that G must be a π-group. We can assume
+that |G| > 1, and we let N be minimal normal in G. Since all members of
+Irr(G/N ) are Pπ -characters, the inductive hypothesis implies that G/N is a
+π-group, and thus it suffices to show that N is a π-group.
+    Recall that a minimal normal subgroup of G must be either a π ′ -group or
+a π-group. Let χ be a Pπ -character of G with respect to a maximal subgroup
+M of G, and |G : M | be a π-number. Then M contains some Hall π ′ -group K
+of G. It follows that Oπ′ (G) ≤ K ≤ M , and so Oπ′ (G) ≤ CoreG (M ) = ker χ.
+    Now, if N is a π ′ -group, then N ⊆ ker(χ) for all χ ∈ IrrP (G) = Irr(G),
+and since N > 1, this is a contradiction. It follows that N is a π-group, as
+wanted. □
+
+Acknowledgements
+
+    The author would like to thank Gabriel Navarro for his comments on
+this paper. The author is supported by Guangxi Natural Science Foundation
+Program (2024GXNSFAA010514).
+
+
+
+
+                                       4
+References
+[1] I. M. Isaacs, Finite Group Theory, New York: American Mathematical
+   Society, Providence, 2008.
+
+[2] I. M. Isaacs, Characters of Solvable Groups, New York: American Math-
+   ematical Society, 2018.
+
+[3] O. Manz and T. R. Wolf, Representations of Solvable Groups, Cambridge
+   University Press, 1992.
+
+[4] G. Qian and Y. Yang, Permutation characters in finite solvable groups,
+   Comm. Algebra, 46(1)(2017) : 167-175.
+
+
+
+
+                                    5
+

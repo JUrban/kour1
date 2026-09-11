@@ -861,3 +861,14 @@ The full proof is not imported into the independent class-two
 exponent obstruction. Exact versus dividing exponent is explicit.
 Further source scopes, including the conditional free anti-torus
 route to 20.19, are in `research/triage-2026-09-11-later-afternoon.md`.
+
+
+## 20.80, 20.86 and related source boundaries
+
+Lu, https://arxiv.org/abs/2511.20171v1 , all five pages read.
+Theorem A is the exact missing direction in 20.80; its kernel-sign
+typo is repairable from the preceding argument. Knapp–Schmid,
+https://d-nb.info/1342125495/34 , all nine pages read. Its partial
+20.86 bounds and weaker-conjecture reduction are distinguished in
+`research/20.86-source-triage.md`. Halasi et al. and Shumyatsky
+reading scopes are in the later-afternoon triage file.

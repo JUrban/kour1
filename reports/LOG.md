@@ -1395,3 +1395,17 @@ Recorded further source limits for 20.19 and older leads. In particular,
 a lattice in a product of trees does not automatically supply the
 free or hyperbolic group required in 20.19. The active 48-hour goal
 continues, with no outside communications or pushes.
+
+
+## 2026-09-11T14:57:31.983735+00:00 — Exact prior P-character result and source boundaries
+
+Lu 2025 Theorem A answers the remaining direction of 20.80. Its
+five-page preprint was read, and the short proof was checked with
+an explicit correction to a reversed kernel sign. This is prior
+work, leaving the 25 possible-new candidates unchanged. Recorded
+why the weaker Frobenius-ratio inequality and selected maximal
+abelian-normal-subgroup bounds do not settle 20.86 or 20.75–76.
+
+At 14:55 UTC the six 20.100 n=7 workers were all live, having
+checked 8,150,000 nodes with combined RSS 12,153,076 KiB. No shard
+had completed, and no n=7 proof is claimed. Work remains local.
