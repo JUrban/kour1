@@ -1,0 +1,10 @@
+
+Error, relations
+
+Traceback (most recent call last):
+  File "/project/scripts/verify_15_92_diagrams.py", line 148, in <module>
+    main()
+  File "/project/scripts/verify_15_92_diagrams.py", line 142, in main
+    assert p.returncode==0 and '15_92_GAP_DIAGRAMS_DONE' in contents
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

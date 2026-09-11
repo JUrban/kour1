@@ -1764,3 +1764,29 @@ Neither result increases the 31-candidate count. The 15.92 mathematical
 packet is drafted; its fifth independent GAP diagram control is still
 running. Nearby pro-p identity and splitting-automorphism scope limits
 are added to the triage record. No outside communication or push.
+
+
+## 2026-09-11T20:51:56.892063+00:00 — Candidate 32: every triangle parameter in 15.92
+
+Conder's 1980 thesis supplies the exact finite-image condition: in each
+parameter class, one fixed ordinary triangle word maps to a single
+11- or 13-cycle in alternating quotients of unbounded degree. The
+bounded-support criterion and separating-kernel proof therefore give
+continuum many nonisomorphic infinite quotients residually finite
+alternating, in the strong epimorphic sense, for every r>6.
+
+All 150 table-and-join controls pass. Independent geometric reconstruction
+of the r=7 diagrams gives five exact alternating images of degrees
+78, 120, 162, 246 and 456, certified by primitivity, an 11-cycle, even
+parity and Jordan's theorem. The final GAP and outer processes exit 0
+with clean sentinels. Four general group-order calculations also pass;
+the redundant degree-456 order calculation was stopped after its
+independent primitivity certificate succeeded. Its actual GAP exit is 1,
+as is its outer exit. The initial orientation failure and the first
+auditor's incorrect expectation of raw signal status -15 are retained.
+The corrected 70-file integrity auditor passes with actual exit 0.
+
+The complete-candidate count is now 32. No priority certification or
+independent outside review is claimed. The 20:48 UTC n=7 snapshot shows
+six live workers and 18,610,000 checked nodes; no shard is complete.
+The 48-hour goal remains active and all work remains local.
