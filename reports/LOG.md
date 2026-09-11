@@ -273,3 +273,21 @@ GAP4.16.1 is working at the supplied relocated path. All16 order256
 workers were revalidated; 19,168 exact counts,0 equality hits,25 reverse
 inequalities,all log checks PASS. The48-hour goal remains active.
 No external messages or Git pushes have been made.
+
+At 2026-09-11T00:29:35.647930+00:00, reclassified17.34 as a known-result consequence.
+The broader search for filtered nilpotent Lie amalgamation found
+d’Elbée--Müller--Ramsey--Siniora, arXiv:2310.17595v3, Theorem4.35.
+Their free amalgam is explicitly strong (Definition4.14) and retains
+the given class over an arbitrary field. Applying it to two copies of
+L over h with induced filtrations, then using compactness and BCH,
+gives the full Notebook answer. The precise implication is documented.
+The prior brief provisional count of8 is corrected to7. Our PBW module
+proof remains as independently developed work, with all13 controls PASS,
+but carries no new-resolution or proof-method priority claim.
+The related5September2026 successor paper was also found; the earlier
+theorem already suffices. This illustrates why broader novelty audits
+remain necessary for every candidate.
+
+The order256 search snapshot at00:26:52UTC has20,555counts,0equality
+hits,62reverse inequalities,16liveworkers,allchecksPASS.
+The48-hour goal remains active, with no external communications or pushes.

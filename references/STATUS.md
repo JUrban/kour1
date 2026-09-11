@@ -183,8 +183,9 @@ The supplied PDF page108 was visually checked. Shakhova2015,
 https://www.mathnet.ru/eng/mzm10471 , Theorem1 proves c<=2 and
 explicitly calls it a partial resolution of17.34 on Russian page937.
 Read the introduction, preliminaries, theorem proof and following
-corollary. The candidate argument extends to every c and does not
-count the already known class-two case as new. Budkin2018,
+corollary. Our independent argument covers every c. The subsequent broader
+amalgamation search identified a prior result implying the full answer,
+so the whole problem is now excluded from the new-candidate count. Budkin2018,
 https://www.mathnet.ru/eng/smj3008 , treats Q and two additional
 generators in arbitrary subquasivarieties; the full N_c setting is
 different. Bergman's pre-1973 all-Lie dominion theorem and PBW proof
@@ -196,3 +197,13 @@ Bahturin--Olshanskii arXiv:2208.09527v1, Theorem2.8 and Lemma3.1,
 and Suciu DOI10.4171/EMSS/74, Section6.2, were read for the
 Malcev/BCH correspondence and arbitrary nilpotent-group completion.
 The proof's subgroup and class-bound arguments are explicit.
+
+The decisive prior source is d’Elbée--Müller--Ramsey--Siniora,
+https://arxiv.org/abs/2310.17595v3 , Theorem4.35. Definitions2.8--2.9,
+4.1 and4.14, the theorem and proof, and surrounding scope were read.
+Free amalgamation there includes exact intersection and permits any field.
+The induced filtration on the common subalgebra makes self-amalgamation
+applicable, with compactness covering arbitrary dimension. The inference
+to17.34 is written explicitly in research/17.34-known-consequence.md.
+Their5September2026 successor arXiv:2609.05789v1 was also screened,
+but is not needed for this implication from the earlier theorem.

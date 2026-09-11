@@ -4,11 +4,13 @@ Objective: solve as many previously unsolved problems in `docs/21tkt.pdf` as pos
 
 Research started 2026-09-10 20:56:46 UTC (active-goal creation). Deadline: 2026-09-12 20:56:46 UTC. Target resource limits: at most 20 computational cores and 100 GB RAM in total.
 
-Eight complete candidate resolutions are written for 21.106, 21.132,
-21.121(a), 21.68, 16.87(a),(b), 10.35, 16.28(a), and 17.34, each with a
+Seven complete candidate resolutions are written for 21.106, 21.132,
+21.121(a), 21.68, 16.87(a),(b), 10.35, and 16.28(a), each with a
 separate internal audit. All await independent review
 and further novelty checks. An additional small counterexample to 13.19 is
-retained as a rediscovery: a prior paper already implies a negative answer.
+retained as a rediscovery: a prior paper already implies a negative answer. The independent positive proof
+of 17.34 is also retained as a consequence of an existing amalgamation theorem
+and excluded from the new-candidate count.
 See `reports/STATUS.md`, `research/PLAN.md`, and `reports/LOG.md` for current
 evidence and next actions.
 
