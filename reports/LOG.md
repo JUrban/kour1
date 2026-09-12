@@ -2415,3 +2415,16 @@ audited lower bound remains 1,536 until all actual-table checks pass.
 The staged whitespace check reports only the compiler version command
 output ending with a blank line. That raw evidence is preserved; the
 authored source/document check excludes the compiler log.
+
+
+## 2026-09-12T04:48:37.332696+00:00 — G2 four-ring packet frozen
+
+All 135,700 carpets over F4, dual numbers, the split ring, and Z/4
+have carpet closures, with 12,492 strict enlargements. The four GAP
+children and controller exit zero (3340fb). Direct matrix controls
+verify 2,214 cases, including 146 enlargements and 142,492 states, and
+recheck all four spanning witnesses by ring Gaussian elimination
+(exit zero bbf858). The final 38-file auditor reproduces every input
+and matrix control and exits zero (47447f). No new complete candidate.
+The n7 snapshot at 04:43:09 UTC has 31,420,000 checked nodes, six live
+workers, no completed shard, and 43,897,588 KiB combined RSS.

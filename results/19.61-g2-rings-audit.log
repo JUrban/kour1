@@ -1,0 +1,17 @@
+PASS_1961_HORN_CONTROL {"label": "f2", "carpets": 64, "atoms": 8, "rules": 8, "elapsed_seconds": 0.0008747056126594543}
+PASS_1961_HORN_CONTROL {"label": "f4", "carpets": 2515, "atoms": 24, "rules": 96, "elapsed_seconds": 0.29781873617321253}
+PASS_1961_HORN_CONTROL {"label": "dual", "carpets": 6717, "atoms": 24, "rules": 88, "elapsed_seconds": 0.4643993740901351}
+PASS_1961_HORN_CONTROL {"label": "split", "carpets": 6915, "atoms": 24, "rules": 80, "elapsed_seconds": 0.343400021083653}
+PASS_1961_HORN_CONTROL {"label": "z4", "carpets": 1398, "atoms": 24, "rules": 112, "elapsed_seconds": 0.0885477364063263}
+PASS_1961_HORN_CONTROL {"label": "g2p2", "carpets": 174, "atoms": 12, "rules": 30, "elapsed_seconds": 0.005629616789519787}
+PASS_1961_HORN_CONTROL {"label": "g2p3", "carpets": 217, "atoms": 24, "rules": 120, "elapsed_seconds": 0.028405307792127132}
+PASS_1961_G2_RING_REPLAY f4
+PASS_1961_G2_RING_REPLAY dual
+PASS_1961_G2_RING_REPLAY split
+PASS_1961_G2_RING_REPLAY z4
+PASS_1961_G2_RINGS_PREPARATION_AUDIT 17 carpets=135700
+PASS_1961_G2_RING_CONTROLS g2f4 633 17749
+PASS_1961_G2_RING_CONTROLS g2dual 673 63865
+PASS_1961_G2_RING_CONTROLS g2split 709 59101
+PASS_1961_G2_RING_CONTROLS g2z4 199 1777
+PASS_1961_G2_RINGS_PACKET 38 carpets=135700 controls=2214 expanded=12492
