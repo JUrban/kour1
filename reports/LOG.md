@@ -2428,3 +2428,18 @@ recheck all four spanning witnesses by ring Gaussian elimination
 and matrix control and exits zero (47447f). No new complete candidate.
 The n7 snapshot at 04:43:09 UTC has 31,420,000 checked nodes, six live
 workers, no completed shard, and 43,897,588 KiB combined RSS.
+
+
+## 2026-09-12T04:51:17.628626+00:00 — G2(F9) prepared with faithful projective action
+
+Exact preparation finds 40,105 carpets and a complete 66,430-point
+projective orbit; it exits zero (7754fb). All root matrices preserve
+the computed seven-dimensional invariant module. Steinberg Section 3
+constructs the adjoint group by these divided powers, and Theorem 5
+makes it simple over F9. An explicit root moves the line of the second
+basis vector, so the projective orbit action is faithful. Construction
+and theorem pages were visually checked; the full earlier Chevalley
+theory remains imported. The 18-file launch manifest passes. A fresh
+preparation replay is running; the serial search has the expected
+ambient order 22,594,320,403,200. A separate four-shard control is
+being tested before splitting this larger search.
