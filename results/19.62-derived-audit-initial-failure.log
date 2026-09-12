@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/project/scripts/audit_19_62_derived.py", line 30, in <module>
+    if __name__=='__main__':run()
+                            ^^^^^
+  File "/project/scripts/audit_19_62_derived.py", line 19, in run
+    assert observation['exit_code']==0
+           ~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'exit_code'

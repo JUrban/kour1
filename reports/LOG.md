@@ -2510,3 +2510,16 @@ The final auditor fully reproduces the input, kernels and search, and
 repeats all native and matrix controls, exiting zero (81213d). General
 19.61 remains open; complete count 41. The 08:00:05 UTC n7 snapshot
 records 36,950,000 checked nodes, all six workers live and 52,348,660 KiB RSS.
+
+
+## 2026-09-12T08:17:21.673533+00:00 — derived-carpet finite screen audited
+
+The saved 19.61 inputs give 6,999 distinct derived carpets from 193,805
+original carpets across twelve type/ring cases. Every derived carpet is
+closed and passes the square-condition check. The first audit exits one
+(f2ba65) because the old C2 observation has a different schema. Its log
+is preserved; explicit handling of that schema gives a successful full
+replay (be9423). The 62-file packet binds every prior completion.
+A separate symbolic inclusion experiment finds derivations for all 2,712
+G2 targets (fe3a87); this is preliminary until explicit certificates and
+integer constants are independently checked. No complete count change.
