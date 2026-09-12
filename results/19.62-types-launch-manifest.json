@@ -1,0 +1,1080 @@
+{
+  "created_utc": "2026-09-12T08:30:55.967146+00:00",
+  "sha256": {
+    "scripts/derive_19_62_types.cpp": "d8c2cb789d553836a725730858512bb061837c8b0e01a84324a3aa0806dfcbf7",
+    "results/19.62-derive-types": "97cd5b2615b7d3a78df9f1f58a1b8cfa3281eca1a7a8506cf52bc25630fb616f",
+    "results/19.62-a2-monomial-input.json": "4ffe8bd3e073d45894881bc47c909c96fcd03908d1ea1e5f91dd1bae295b4d54",
+    "results/19.62-a2-monomial-input.txt": "f1e510adbe9f0f54797b6a9e35f598678add7c9e0db213a696168ae42811f281",
+    "results/19.62-a3-monomial-input.json": "cc8e52fe387611a93ac128ddb1f4310b655411a8cb11317b50a82cf29f154207",
+    "results/19.62-a3-monomial-input.txt": "a37dec017272861a6e54fb719699a0cc0234ba1c35f354b406cbd5c786cfd545",
+    "results/19.62-a4-monomial-input.json": "446e9ff3ef4939186a7faaf922b7b743b13a27f1acce2e182c1807848a812a8e",
+    "results/19.62-a4-monomial-input.txt": "258b907da564a4baf5a5d18fedb639e0ccd7e9af50b61f051eca61aaf87dbb0d",
+    "results/19.62-b2-monomial-input.json": "c50781a40310aa1d604f22bb048bf58bdc6cce0fc8a5aed5e31185c335786062",
+    "results/19.62-b2-monomial-input.txt": "76190157885dfd51545c1b08c5ac495cbda44b34b818fa09c02c183c62557756",
+    "results/19.62-b3-monomial-input.json": "5da0736c9077688b6fe7c844901a509dc00cbafefdfc67206f2969979e2afeb4",
+    "results/19.62-b3-monomial-input.txt": "84cd960e18fa7e36217f3eaa5dd392b740a8afa5e48f0b8b81c883cf4f6c0671",
+    "results/19.62-b4-monomial-input.json": "c8d038c37768884596e381927bba85595f0b34ba5ad35a031965e1186debeaac",
+    "results/19.62-b4-monomial-input.txt": "66067062c9e2ba8f5d38c080c59c9acb8ea79cc34de4c89dced5e5087deae7fc",
+    "results/19.62-c3-monomial-input.json": "bc04ccbd8ba18d2d52a3c059eefb57aefb06ece370a32859c6168cd49891702e",
+    "results/19.62-c3-monomial-input.txt": "ba441c4415741988ceb11079a53880d909bafb2c2d877afbc14b09f1af7c5523",
+    "results/19.62-c4-monomial-input.json": "ba16c5ae49f1b422e243a1eaaa3e6fe9d57eaa065c34ba4537a6a7ccfd3a4cea",
+    "results/19.62-c4-monomial-input.txt": "f697700f6345238479300b202ed8119b363c8dc06d51db3bb9c9126ae0b0cd4c",
+    "results/19.62-d4-monomial-input.json": "153991d24a57a822c085153288ee7d605a90fe05c7d49867f98c79d07c4c8d71",
+    "results/19.62-d4-monomial-input.txt": "b95e38d05e3354d2672dae75d2031d5188a6130248dfbf8961bc51aa5afeb3dd",
+    "results/19.62-f4-monomial-input.json": "5ec7d57f65a877d3b998cc23fee484dfff20d8251e182b8138aca8e2ccaff8d7",
+    "results/19.62-f4-monomial-input.txt": "52111632b91bdcd6c1ff7dec3b4234660b3777ae59cc98dc82c47a744d837bd0"
+  },
+  "jobs": [
+    {
+      "type": "a2",
+      "first": 1,
+      "last": 12,
+      "log": "results/19.62-a2-1-12-generation.log",
+      "certificate": "results/19.62-a2-1-12-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-a2-monomial-input.txt",
+        "1",
+        "12",
+        "results/19.62-a2-1-12-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "a3",
+      "first": 1,
+      "last": 120,
+      "log": "results/19.62-a3-1-120-generation.log",
+      "certificate": "results/19.62-a3-1-120-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-a3-monomial-input.txt",
+        "1",
+        "120",
+        "results/19.62-a3-1-120-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "a4",
+      "first": 1,
+      "last": 540,
+      "log": "results/19.62-a4-1-540-generation.log",
+      "certificate": "results/19.62-a4-1-540-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-a4-monomial-input.txt",
+        "1",
+        "540",
+        "results/19.62-a4-1-540-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b2",
+      "first": 1,
+      "last": 148,
+      "log": "results/19.62-b2-1-148-generation.log",
+      "certificate": "results/19.62-b2-1-148-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b2-monomial-input.txt",
+        "1",
+        "148",
+        "results/19.62-b2-1-148-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b3",
+      "first": 1,
+      "last": 1000,
+      "log": "results/19.62-b3-1-1000-generation.log",
+      "certificate": "results/19.62-b3-1-1000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b3-monomial-input.txt",
+        "1",
+        "1000",
+        "results/19.62-b3-1-1000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b3",
+      "first": 1001,
+      "last": 1536,
+      "log": "results/19.62-b3-1001-1536-generation.log",
+      "certificate": "results/19.62-b3-1001-1536-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b3-monomial-input.txt",
+        "1001",
+        "1536",
+        "results/19.62-b3-1001-1536-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b4",
+      "first": 1,
+      "last": 1000,
+      "log": "results/19.62-b4-1-1000-generation.log",
+      "certificate": "results/19.62-b4-1-1000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b4-monomial-input.txt",
+        "1",
+        "1000",
+        "results/19.62-b4-1-1000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b4",
+      "first": 1001,
+      "last": 2000,
+      "log": "results/19.62-b4-1001-2000-generation.log",
+      "certificate": "results/19.62-b4-1001-2000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b4-monomial-input.txt",
+        "1001",
+        "2000",
+        "results/19.62-b4-1001-2000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b4",
+      "first": 2001,
+      "last": 3000,
+      "log": "results/19.62-b4-2001-3000-generation.log",
+      "certificate": "results/19.62-b4-2001-3000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b4-monomial-input.txt",
+        "2001",
+        "3000",
+        "results/19.62-b4-2001-3000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b4",
+      "first": 3001,
+      "last": 4000,
+      "log": "results/19.62-b4-3001-4000-generation.log",
+      "certificate": "results/19.62-b4-3001-4000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b4-monomial-input.txt",
+        "3001",
+        "4000",
+        "results/19.62-b4-3001-4000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b4",
+      "first": 4001,
+      "last": 5000,
+      "log": "results/19.62-b4-4001-5000-generation.log",
+      "certificate": "results/19.62-b4-4001-5000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b4-monomial-input.txt",
+        "4001",
+        "5000",
+        "results/19.62-b4-4001-5000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b4",
+      "first": 5001,
+      "last": 6000,
+      "log": "results/19.62-b4-5001-6000-generation.log",
+      "certificate": "results/19.62-b4-5001-6000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b4-monomial-input.txt",
+        "5001",
+        "6000",
+        "results/19.62-b4-5001-6000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b4",
+      "first": 6001,
+      "last": 7000,
+      "log": "results/19.62-b4-6001-7000-generation.log",
+      "certificate": "results/19.62-b4-6001-7000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b4-monomial-input.txt",
+        "6001",
+        "7000",
+        "results/19.62-b4-6001-7000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "b4",
+      "first": 7001,
+      "last": 7176,
+      "log": "results/19.62-b4-7001-7176-generation.log",
+      "certificate": "results/19.62-b4-7001-7176-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-b4-monomial-input.txt",
+        "7001",
+        "7176",
+        "results/19.62-b4-7001-7176-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c3",
+      "first": 1,
+      "last": 1000,
+      "log": "results/19.62-c3-1-1000-generation.log",
+      "certificate": "results/19.62-c3-1-1000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c3-monomial-input.txt",
+        "1",
+        "1000",
+        "results/19.62-c3-1-1000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c3",
+      "first": 1001,
+      "last": 1644,
+      "log": "results/19.62-c3-1001-1644-generation.log",
+      "certificate": "results/19.62-c3-1001-1644-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c3-monomial-input.txt",
+        "1001",
+        "1644",
+        "results/19.62-c3-1001-1644-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c4",
+      "first": 1,
+      "last": 1000,
+      "log": "results/19.62-c4-1-1000-generation.log",
+      "certificate": "results/19.62-c4-1-1000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c4-monomial-input.txt",
+        "1",
+        "1000",
+        "results/19.62-c4-1-1000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c4",
+      "first": 1001,
+      "last": 2000,
+      "log": "results/19.62-c4-1001-2000-generation.log",
+      "certificate": "results/19.62-c4-1001-2000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c4-monomial-input.txt",
+        "1001",
+        "2000",
+        "results/19.62-c4-1001-2000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c4",
+      "first": 2001,
+      "last": 3000,
+      "log": "results/19.62-c4-2001-3000-generation.log",
+      "certificate": "results/19.62-c4-2001-3000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c4-monomial-input.txt",
+        "2001",
+        "3000",
+        "results/19.62-c4-2001-3000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c4",
+      "first": 3001,
+      "last": 4000,
+      "log": "results/19.62-c4-3001-4000-generation.log",
+      "certificate": "results/19.62-c4-3001-4000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c4-monomial-input.txt",
+        "3001",
+        "4000",
+        "results/19.62-c4-3001-4000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c4",
+      "first": 4001,
+      "last": 5000,
+      "log": "results/19.62-c4-4001-5000-generation.log",
+      "certificate": "results/19.62-c4-4001-5000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c4-monomial-input.txt",
+        "4001",
+        "5000",
+        "results/19.62-c4-4001-5000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c4",
+      "first": 5001,
+      "last": 6000,
+      "log": "results/19.62-c4-5001-6000-generation.log",
+      "certificate": "results/19.62-c4-5001-6000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c4-monomial-input.txt",
+        "5001",
+        "6000",
+        "results/19.62-c4-5001-6000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c4",
+      "first": 6001,
+      "last": 7000,
+      "log": "results/19.62-c4-6001-7000-generation.log",
+      "certificate": "results/19.62-c4-6001-7000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c4-monomial-input.txt",
+        "6001",
+        "7000",
+        "results/19.62-c4-6001-7000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "c4",
+      "first": 7001,
+      "last": 7776,
+      "log": "results/19.62-c4-7001-7776-generation.log",
+      "certificate": "results/19.62-c4-7001-7776-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-c4-monomial-input.txt",
+        "7001",
+        "7776",
+        "results/19.62-c4-7001-7776-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "d4",
+      "first": 1,
+      "last": 1000,
+      "log": "results/19.62-d4-1-1000-generation.log",
+      "certificate": "results/19.62-d4-1-1000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-d4-monomial-input.txt",
+        "1",
+        "1000",
+        "results/19.62-d4-1-1000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "d4",
+      "first": 1001,
+      "last": 1344,
+      "log": "results/19.62-d4-1001-1344-generation.log",
+      "certificate": "results/19.62-d4-1001-1344-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-d4-monomial-input.txt",
+        "1001",
+        "1344",
+        "results/19.62-d4-1001-1344-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 1,
+      "last": 1000,
+      "log": "results/19.62-f4-1-1000-generation.log",
+      "certificate": "results/19.62-f4-1-1000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "1",
+        "1000",
+        "results/19.62-f4-1-1000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 1001,
+      "last": 2000,
+      "log": "results/19.62-f4-1001-2000-generation.log",
+      "certificate": "results/19.62-f4-1001-2000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "1001",
+        "2000",
+        "results/19.62-f4-1001-2000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 2001,
+      "last": 3000,
+      "log": "results/19.62-f4-2001-3000-generation.log",
+      "certificate": "results/19.62-f4-2001-3000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "2001",
+        "3000",
+        "results/19.62-f4-2001-3000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 3001,
+      "last": 4000,
+      "log": "results/19.62-f4-3001-4000-generation.log",
+      "certificate": "results/19.62-f4-3001-4000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "3001",
+        "4000",
+        "results/19.62-f4-3001-4000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 4001,
+      "last": 5000,
+      "log": "results/19.62-f4-4001-5000-generation.log",
+      "certificate": "results/19.62-f4-4001-5000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "4001",
+        "5000",
+        "results/19.62-f4-4001-5000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 5001,
+      "last": 6000,
+      "log": "results/19.62-f4-5001-6000-generation.log",
+      "certificate": "results/19.62-f4-5001-6000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "5001",
+        "6000",
+        "results/19.62-f4-5001-6000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 6001,
+      "last": 7000,
+      "log": "results/19.62-f4-6001-7000-generation.log",
+      "certificate": "results/19.62-f4-6001-7000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "6001",
+        "7000",
+        "results/19.62-f4-6001-7000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 7001,
+      "last": 8000,
+      "log": "results/19.62-f4-7001-8000-generation.log",
+      "certificate": "results/19.62-f4-7001-8000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "7001",
+        "8000",
+        "results/19.62-f4-7001-8000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 8001,
+      "last": 9000,
+      "log": "results/19.62-f4-8001-9000-generation.log",
+      "certificate": "results/19.62-f4-8001-9000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "8001",
+        "9000",
+        "results/19.62-f4-8001-9000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 9001,
+      "last": 10000,
+      "log": "results/19.62-f4-9001-10000-generation.log",
+      "certificate": "results/19.62-f4-9001-10000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "9001",
+        "10000",
+        "results/19.62-f4-9001-10000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 10001,
+      "last": 11000,
+      "log": "results/19.62-f4-10001-11000-generation.log",
+      "certificate": "results/19.62-f4-10001-11000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "10001",
+        "11000",
+        "results/19.62-f4-10001-11000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 11001,
+      "last": 12000,
+      "log": "results/19.62-f4-11001-12000-generation.log",
+      "certificate": "results/19.62-f4-11001-12000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "11001",
+        "12000",
+        "results/19.62-f4-11001-12000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 12001,
+      "last": 13000,
+      "log": "results/19.62-f4-12001-13000-generation.log",
+      "certificate": "results/19.62-f4-12001-13000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "12001",
+        "13000",
+        "results/19.62-f4-12001-13000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 13001,
+      "last": 14000,
+      "log": "results/19.62-f4-13001-14000-generation.log",
+      "certificate": "results/19.62-f4-13001-14000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "13001",
+        "14000",
+        "results/19.62-f4-13001-14000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 14001,
+      "last": 15000,
+      "log": "results/19.62-f4-14001-15000-generation.log",
+      "certificate": "results/19.62-f4-14001-15000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "14001",
+        "15000",
+        "results/19.62-f4-14001-15000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 15001,
+      "last": 16000,
+      "log": "results/19.62-f4-15001-16000-generation.log",
+      "certificate": "results/19.62-f4-15001-16000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "15001",
+        "16000",
+        "results/19.62-f4-15001-16000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 16001,
+      "last": 17000,
+      "log": "results/19.62-f4-16001-17000-generation.log",
+      "certificate": "results/19.62-f4-16001-17000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "16001",
+        "17000",
+        "results/19.62-f4-16001-17000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 17001,
+      "last": 18000,
+      "log": "results/19.62-f4-17001-18000-generation.log",
+      "certificate": "results/19.62-f4-17001-18000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "17001",
+        "18000",
+        "results/19.62-f4-17001-18000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 18001,
+      "last": 19000,
+      "log": "results/19.62-f4-18001-19000-generation.log",
+      "certificate": "results/19.62-f4-18001-19000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "18001",
+        "19000",
+        "results/19.62-f4-18001-19000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 19001,
+      "last": 20000,
+      "log": "results/19.62-f4-19001-20000-generation.log",
+      "certificate": "results/19.62-f4-19001-20000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "19001",
+        "20000",
+        "results/19.62-f4-19001-20000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 20001,
+      "last": 21000,
+      "log": "results/19.62-f4-20001-21000-generation.log",
+      "certificate": "results/19.62-f4-20001-21000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "20001",
+        "21000",
+        "results/19.62-f4-20001-21000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 21001,
+      "last": 22000,
+      "log": "results/19.62-f4-21001-22000-generation.log",
+      "certificate": "results/19.62-f4-21001-22000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "21001",
+        "22000",
+        "results/19.62-f4-21001-22000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 22001,
+      "last": 23000,
+      "log": "results/19.62-f4-22001-23000-generation.log",
+      "certificate": "results/19.62-f4-22001-23000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "22001",
+        "23000",
+        "results/19.62-f4-22001-23000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 23001,
+      "last": 24000,
+      "log": "results/19.62-f4-23001-24000-generation.log",
+      "certificate": "results/19.62-f4-23001-24000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "23001",
+        "24000",
+        "results/19.62-f4-23001-24000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 24001,
+      "last": 25000,
+      "log": "results/19.62-f4-24001-25000-generation.log",
+      "certificate": "results/19.62-f4-24001-25000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "24001",
+        "25000",
+        "results/19.62-f4-24001-25000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 25001,
+      "last": 26000,
+      "log": "results/19.62-f4-25001-26000-generation.log",
+      "certificate": "results/19.62-f4-25001-26000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "25001",
+        "26000",
+        "results/19.62-f4-25001-26000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 26001,
+      "last": 27000,
+      "log": "results/19.62-f4-26001-27000-generation.log",
+      "certificate": "results/19.62-f4-26001-27000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "26001",
+        "27000",
+        "results/19.62-f4-26001-27000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 27001,
+      "last": 28000,
+      "log": "results/19.62-f4-27001-28000-generation.log",
+      "certificate": "results/19.62-f4-27001-28000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "27001",
+        "28000",
+        "results/19.62-f4-27001-28000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 28001,
+      "last": 29000,
+      "log": "results/19.62-f4-28001-29000-generation.log",
+      "certificate": "results/19.62-f4-28001-29000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "28001",
+        "29000",
+        "results/19.62-f4-28001-29000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 29001,
+      "last": 30000,
+      "log": "results/19.62-f4-29001-30000-generation.log",
+      "certificate": "results/19.62-f4-29001-30000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "29001",
+        "30000",
+        "results/19.62-f4-29001-30000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 30001,
+      "last": 31000,
+      "log": "results/19.62-f4-30001-31000-generation.log",
+      "certificate": "results/19.62-f4-30001-31000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "30001",
+        "31000",
+        "results/19.62-f4-30001-31000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 31001,
+      "last": 32000,
+      "log": "results/19.62-f4-31001-32000-generation.log",
+      "certificate": "results/19.62-f4-31001-32000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "31001",
+        "32000",
+        "results/19.62-f4-31001-32000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 32001,
+      "last": 33000,
+      "log": "results/19.62-f4-32001-33000-generation.log",
+      "certificate": "results/19.62-f4-32001-33000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "32001",
+        "33000",
+        "results/19.62-f4-32001-33000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 33001,
+      "last": 34000,
+      "log": "results/19.62-f4-33001-34000-generation.log",
+      "certificate": "results/19.62-f4-33001-34000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "33001",
+        "34000",
+        "results/19.62-f4-33001-34000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 34001,
+      "last": 35000,
+      "log": "results/19.62-f4-34001-35000-generation.log",
+      "certificate": "results/19.62-f4-34001-35000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "34001",
+        "35000",
+        "results/19.62-f4-34001-35000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 35001,
+      "last": 36000,
+      "log": "results/19.62-f4-35001-36000-generation.log",
+      "certificate": "results/19.62-f4-35001-36000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "35001",
+        "36000",
+        "results/19.62-f4-35001-36000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 36001,
+      "last": 37000,
+      "log": "results/19.62-f4-36001-37000-generation.log",
+      "certificate": "results/19.62-f4-36001-37000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "36001",
+        "37000",
+        "results/19.62-f4-36001-37000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 37001,
+      "last": 38000,
+      "log": "results/19.62-f4-37001-38000-generation.log",
+      "certificate": "results/19.62-f4-37001-38000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "37001",
+        "38000",
+        "results/19.62-f4-37001-38000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 38001,
+      "last": 39000,
+      "log": "results/19.62-f4-38001-39000-generation.log",
+      "certificate": "results/19.62-f4-38001-39000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "38001",
+        "39000",
+        "results/19.62-f4-38001-39000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 39001,
+      "last": 40000,
+      "log": "results/19.62-f4-39001-40000-generation.log",
+      "certificate": "results/19.62-f4-39001-40000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "39001",
+        "40000",
+        "results/19.62-f4-39001-40000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 40001,
+      "last": 41000,
+      "log": "results/19.62-f4-40001-41000-generation.log",
+      "certificate": "results/19.62-f4-40001-41000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "40001",
+        "41000",
+        "results/19.62-f4-40001-41000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 41001,
+      "last": 42000,
+      "log": "results/19.62-f4-41001-42000-generation.log",
+      "certificate": "results/19.62-f4-41001-42000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "41001",
+        "42000",
+        "results/19.62-f4-41001-42000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 42001,
+      "last": 43000,
+      "log": "results/19.62-f4-42001-43000-generation.log",
+      "certificate": "results/19.62-f4-42001-43000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "42001",
+        "43000",
+        "results/19.62-f4-42001-43000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 43001,
+      "last": 44000,
+      "log": "results/19.62-f4-43001-44000-generation.log",
+      "certificate": "results/19.62-f4-43001-44000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "43001",
+        "44000",
+        "results/19.62-f4-43001-44000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 44001,
+      "last": 45000,
+      "log": "results/19.62-f4-44001-45000-generation.log",
+      "certificate": "results/19.62-f4-44001-45000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "44001",
+        "45000",
+        "results/19.62-f4-44001-45000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 45001,
+      "last": 46000,
+      "log": "results/19.62-f4-45001-46000-generation.log",
+      "certificate": "results/19.62-f4-45001-46000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "45001",
+        "46000",
+        "results/19.62-f4-45001-46000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 46001,
+      "last": 47000,
+      "log": "results/19.62-f4-46001-47000-generation.log",
+      "certificate": "results/19.62-f4-46001-47000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "46001",
+        "47000",
+        "results/19.62-f4-46001-47000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 47001,
+      "last": 48000,
+      "log": "results/19.62-f4-47001-48000-generation.log",
+      "certificate": "results/19.62-f4-47001-48000-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "47001",
+        "48000",
+        "results/19.62-f4-47001-48000-certificate.jsonl"
+      ]
+    },
+    {
+      "type": "f4",
+      "first": 48001,
+      "last": 48048,
+      "log": "results/19.62-f4-48001-48048-generation.log",
+      "certificate": "results/19.62-f4-48001-48048-certificate.jsonl",
+      "command": [
+        "results/19.62-derive-types",
+        "results/19.62-f4-monomial-input.txt",
+        "48001",
+        "48048",
+        "results/19.62-f4-48001-48048-certificate.jsonl"
+      ]
+    }
+  ],
+  "workers": 4
+}
