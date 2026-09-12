@@ -132,3 +132,8 @@ Optimization: m=p^a suffices as well. It sends the p'-part of g to its m-th powe
 Fix alpha=1 and label the orbits of G_alpha. Choose t_gamma taking gamma to alpha. For a class representative c, the orbital containing (gamma,gamma^c) has label equal to the G_alpha-orbit of (gamma^c)^t_gamma. Conversely, if this is the orbital of (alpha,beta), a conjugate of c takes alpha to beta. Fixed-point count is constant on conjugacy classes.
 
 Thus the conjecture holds for a given permutation group exactly when representatives c with fixed-point count different from one cover every off-diagonal orbital via these pairs. Testing one conjugacy-class representative and all gamma is complete, without enumerating the group.
+
+
+## 12 September, 19:22 UTC: fresh PDF scope review
+
+All 46 original statements were freshly rendered and visually compared with the principal proofs' stated scope. No new scope discrepancy requiring withdrawal was found. The 15.76(b) result remains restricted to the full varieties of fixed derived length. See `reports/pdf-statement-review.md` and `research/triage-2026-09-12-1920.md`. This is same-agent scope review, not outside acceptance or mathematical certificate replay; the candidate total remains 46.

@@ -1,0 +1,49 @@
+{
+  "task": "Render and visually inspect original PDF statements for the 46-candidate scope review",
+  "recorded_utc": "2026-09-12T19:22:54.531190+00:00",
+  "timing_scope": "Exact process start/end timestamps were not captured; only tool-observed terminal statuses are claimed.",
+  "runs": [
+    {
+      "stage": "initial XML parse failure",
+      "start_tool_chunk": "c5171e",
+      "session_id": 11699,
+      "terminal_tool_chunk": "50a2cf",
+      "actual_exit_code": 1,
+      "stdout": "results/pdf-statement-render-initial.log",
+      "stderr": "results/pdf-statement-render-initial.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_sha256": "4eb59a009ff767eb3504c4d6e272f7638085fb7431687d18d0b65f0ed1194368",
+      "stderr_bytes": 628
+    },
+    {
+      "stage": "initial bottom bound; nine incomplete crops",
+      "start_tool_chunk": "c2dba7",
+      "session_id": 60766,
+      "terminal_tool_chunk": "cec814",
+      "actual_exit_code": 0,
+      "stdout": "results/pdf-statement-render-short-bottom.log",
+      "stderr": "results/pdf-statement-render-short-bottom.stderr",
+      "stdout_sha256": "92ee85412ad8ffb9223daa2d4cbceb885c201f18ba8e7afa4b19391e1b1c8e81",
+      "stdout_bytes": 134,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "stage": "corrected actual-page-height bound",
+      "start_tool_chunk": "ff5bfc",
+      "session_id": 50986,
+      "terminal_tool_chunk": "d653a4",
+      "actual_exit_code": 0,
+      "stdout": "results/pdf-statement-render.log",
+      "stderr": "results/pdf-statement-render.stderr",
+      "stdout_sha256": "92ee85412ad8ffb9223daa2d4cbceb885c201f18ba8e7afa4b19391e1b1c8e81",
+      "stdout_bytes": 134,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ],
+  "human_review": "All 46 final images visually read by the same agent; all complete through the author line.",
+  "mathematical_certificate_replay": false,
+  "outside_reviews": 0
+}
