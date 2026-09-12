@@ -1,0 +1,16 @@
+{
+  "recorded_utc": "2026-09-12T09:14:44.680634+00:00",
+  "attempts": [
+    {
+      "url": "https://www.vmj.ru/upload/uf/b5e/21_3_.pdf",
+      "status": 200,
+      "bytes": 2263952,
+      "sha256": "e79fe6d508f11143c27f4434e230ec27fa0cdac43d674612cf1fcb3607a42728",
+      "path": "references/cache/itarova-koibaev-2019-transvection-issue.pdf"
+    },
+    {
+      "url": "https://www.pdmi.ras.ru/znsl/2015/v435/p033.pdf",
+      "error": "HTTPSConnectionPool(host='www.pdmi.ras.ru', port=443): Max retries exceeded with url: /znsl/2015/v435/p033.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+    }
+  ]
+}
