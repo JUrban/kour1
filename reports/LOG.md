@@ -2030,3 +2030,29 @@ premise; this is a prior deduction and not a new candidate.
 The 23:38:19 UTC n=7 snapshot has22,790,000 checked nodes,
 six live workers, no completed shards and32,705,268 KiB
 combined RSS. Candidate count stays36. All work remains local.
+
+
+## 2026-09-12T00:04:36.855408+00:00 — candidate37:14.26
+
+A polynomial interpolation construction proves closure of Q(all torsion-free
+nilpotent groups) under restricted wreath products with Z. Budkin1999
+p258 explicitly confirms finite support. Nearby copies commute in a
+finite rational algebra, while dual polynomials separate their powers.
+Superdiagonal scaling and a refined central series give torsion-free
+nilpotent local models. A finite-table lemma passes to arbitrary bases
+in the quasivariety. Jennings1955 Theorem5.2 is the sole imported
+group theorem, with its exact use and reading scope documented.
+
+Four exact algebras pass110 derivation-stability checks,246 dual
+annihilations,47 separation values and the matrix/shift controls.
+An independently implemented Heisenberg wreath ball has37 elements,
+319 internal relations and666 distinct pairs, all preserved. Both
+child processes, runner and23-file replay audit actually exit zero.
+The earlier working draft and rejected index-grading idea are retained.
+No gap was identified internally; outside review and novelty remain
+pending. Complete candidate count is37.
+
+The n=7 snapshot at00:03:53 has23,550,000 checked nodes, six live
+workers and no completed shards. The16.45 extension remains live;
+its last progress reports2,300 groups and no missing sufficient
+certificate. No n=7 or general16.45 conclusion is claimed.

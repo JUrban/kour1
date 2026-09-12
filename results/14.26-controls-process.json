@@ -1,0 +1,42 @@
+{
+  "runs": [
+    {
+      "label": "polynomial",
+      "script": "scripts/check_14_26_polynomial.py",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_14_26_polynomial.py"
+      ],
+      "started_utc": "2026-09-12T00:02:12.555891+00:00",
+      "elapsed_seconds": 1.0697071123868227,
+      "returncode": 0,
+      "log": "results/14.26-polynomial-controls.log",
+      "output": "results/14.26-polynomial-controls.json",
+      "sentinel": "PASS_14_26_POLYNOMIAL",
+      "sha256": {
+        "scripts/check_14_26_polynomial.py": "2a52742fb9c87071c329604cba6dac5e2e5c3cef757d53189846055df44c6401",
+        "results/14.26-polynomial-controls.log": "800a3a285642574c86b02a7fa0c75328e81341a62d7ca06eb761629b84d20893",
+        "results/14.26-polynomial-controls.json": "ba0ce7480446daa0819386f2861e24f348b20922a66405bc04440a9ed5b910c3"
+      }
+    },
+    {
+      "label": "wreath",
+      "script": "scripts/check_14_26_wreath.py",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_14_26_wreath.py"
+      ],
+      "started_utc": "2026-09-12T00:02:13.627001+00:00",
+      "elapsed_seconds": 0.21624320931732655,
+      "returncode": 0,
+      "log": "results/14.26-wreath-controls.log",
+      "output": "results/14.26-wreath-controls.json",
+      "sentinel": "PASS_14_26_WREATH",
+      "sha256": {
+        "scripts/check_14_26_wreath.py": "cd8cfc02aaab3238fc7d5d594bbc6a2f902767ed64fe0e0cca0ad49ff4e273f9",
+        "results/14.26-wreath-controls.log": "ee673836ba1bbe7d3b6fe355591a9f2007ba3ed85e9017ae38f0c3c91af5a67f",
+        "results/14.26-wreath-controls.json": "2d7e7c4f27d4d46c59781bf54bbc29cac322520926f956e10c00477758ccbb81"
+      }
+    }
+  ]
+}

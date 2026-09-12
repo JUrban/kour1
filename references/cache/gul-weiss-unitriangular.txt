@@ -1,0 +1,1426 @@
+                                                On the dimension of matrix embeddings of torsion-free
+                                                                  nilpotent groups
+
+                                                                               Funda Gul, Armin Weiß
+arXiv:1606.02247v1 [math.GR] 7 Jun 2016
+
+
+
+
+                                                                                    March 27, 2018
+
+
+                                                                                        Abstract
+                                                    Since the work of Jennings (1955), it is well-known that any finitely generated torsion-
+                                                free nilpotent group can be embedded into unitriangular integer matrices U TN (Z) for
+                                                some N . In 2006, Nickel proposed an algorithm to calculate such embeddings. In this
+                                                work, we show that if U Tn (Z) is embedded into U TN (Z) using Nickel’s algorithm, then
+                                                N ≥ 2n/2−2 if the standard ordering of the Mal’cev basis (as in Nickel’s original paper)
+                                                is used. In particular, we establish an exponential worst-case running time of Nickel’s
+                                                algorithm.
+                                                    On the other hand, we also prove a general exponential upper bound on the dimension
+                                                of the embedding by showing that for any torsion free, finitely generated nilpotent group
+                                                the matrix representation produced by Nickel’s algorithm has never larger dimension than
+                                                Jennings’ embedding. Moreover, when starting with a special Mal’cev basis, Nickel’s
+                                                embedding for U Tn (Z) has only quadratic size. Finally, we consider some special cases
+                                                like free nilpotent groups and Heisenberg groups and compare the sizes of the embeddings.
+
+                                                Keywords. nilpotent groups, Nickel’s algorithm, Jennings’ embedding, Mal’cev basis,
+                                                unitriangular matrix group.
+
+
+                                          1    Introduction
+                                          A classical result due to Jennings [5] shows that every finitely generated torsion-free nilpotent
+                                          group (τ -group) can be embedded into some group of unitriangular matrices over the inte-
+                                          gers. Embeddings into matrix groups are desirable for various reasons: they allow to apply
+                                          the powerful tool of linear algebra to prove new results about the groups; moreover, many
+                                          computations can be performed efficiently with matrices – in particular, the word problem
+                                          for linear groups can be solved in logarithmic space [8]. Embeddings of nilpotent groups
+                                          are the basic building blocks for embeddings of polycyclic groups (see e. g. [9]), which are
+                                          of particular interest because of their possible application in non-commutative cryptography
+                                          [2]. For instance, in [12], matrix embeddings were used to break such a cryptosystem based
+                                          on the conjugacy problem in a certain class of polycyclic groups.
+                                          Since Jennings’ embedding (1955), several other descriptions of such embeddings [4, 6] have
+                                          been given and also algorithms [9, 1, 13] for computing such embeddings from a given Mal’cev
+
+                                                                                             1
+presentation. The presumably most efficient of these algorithms is due to Nickel [13]: it
+uses the multiplication polynomials associated to the Mal’cev basis in order to compute a G-
+submodule of the dual space of the group algebra QG – an approach similar to the description
+of the embedding in [6, Section 17.2]. The multiplication polynomials were first described by
+Hall [4]; they can be computed with the Deep Thought algorithm [7].
+Up to now there are no bounds known neither on the running time nor on the dimension
+of the embedding obtained by Nickel’s algorithm. In [3], a polynomial bound for both is
+claimed; however, there is a gap in the proof. Indeed, here we prove these results to be
+wrong: our main result (Theorem 3.9) establishes the lower bound of N ≥ 2n/2−2 for the
+embedding of U Tn (Z) (with the standard Mal’cev basis as in Nickel’s paper) into U TN (Z)
+computed by Nickel’s algorithm. In particular, we establish an exponential blow-up for the
+dimension, which also implies an exponential running time since the output has to be written
+down. On the other hand, we show the upper bound N ≤ 3n . Moreover, by reordering
+the Mal’cev basis of U Tn (Z), Nickel’s algorithm produces an embedding of size only O(n2 ).
+Our exponential lower bounds also imply that for breaking cryptographic systems based on
+polycyclic groups the usage of matrix embeddings (at least with the known algorithms to
+compute them) might not be feasible if the platform group is properly chosen (with nilpotent
+subgroups of high class).
+We also prove a general upper bound on Nickel’s embedding and show that for any torsion-
+free nilpotent group the dimension of Nickel’s embedding is never larger than the dimension
+obtained by Jennings’ embedding. In order to do so, we derive a general bound on the
+degree (or more precisely, weight) of the multiplication polynomials, which follows by a
+length argument on the words introduced during the collection process.
+Moreover, in Section 6 we consider other special classes of groups and compare Nickel’s
+and Jennings’ embedding: in free nilpotent groups both embeddings have approximately the
+same dimension. In contrast, for generalized Heisenberg groups, Nickel’s algorithm yields an
+embedding of linear size whereas Jennings’ embedding is quadratic. Also, for direct products
+Nickel’s algorithm behaves well – Jennings’ embedding again might lead to a large blow-up.
+Thus, although Nickel’s embedding does not allow any good upper bounds either, in many
+situations it is much superior to Jennings’ embedding in terms of the dimension of the matrix
+representation.
+Finally, in the last section we discuss some open problems related to the running time of
+Nickel’s algorithm as well as the size of matrix representations of τ -groups. We start by
+giving some basic definitions and fix our notation.
+
+
+2    Preliminaries
+By a τ -group we mean a finitely generated torsion-free nilpotent group. U Tn (Z) denotes the
+group of unitriangular (upper triangular and all diagonal entries equal to one) n × n matrices
+over the integers.
+For a, b ∈ G, the commutator of a and b is defined as [a, b] = a−1 b−1 ab. Thus, in general, we
+have the relation ab = ba[a, b].
+
+                                              2
+Let G be a τ -group. A Mal’cev basis for G is a tuple (a1 , . . . , an ) with ai ∈ G such that each
+g ∈ G can be written uniquely as a normal form g = ax1 1 · · · axnn with integers x1 , . . . , xn and
+such that
+                               G = G1 > G2 > · · · > Gn > 1
+is a central series where Gi = hai , . . . , an i. Given a Mal’cev basis (a1 , . . . , an ) and constants
+ci,j,k ∈ Z for 1 ≤ i < j < k ≤ n, a nilpotent group G is uniquely defined by the relations
+                                                            c
+                                                          i,j,j+1             c
+                                           [ai , aj ] = aj+1      · · · ani,j,n .
+
+                                                                                    ±1                ∗
+The collection process on words (sequences of letters) w ∈                          a1 , . . . , a±1
+                                                                                                  n        over the genera-
+tors is the successive application of the rewriting rules
+                                                  (ε ,ε )
+                                                    i j             (ε ,ε )
+                       ε                  ε      ci,j,j+1        c i j
+                      aj j aεi i → aεi i aj j · aj+1      · · · ani,j,n            for i < j and εi , εj ∈ { ±1 }       (1)
+
+                          (ε ,ε )                                     ε              (ε ,ε )
+where the numbers ci,j,k     i j
+                                 ∈ Z are defined by [aj j , aεi i ] = ci,j,n
+                                                                           i j
+                                                                               , i. e. the commutators are
+written with respect to the Mal’cev basis. Here, v → w for two words v and w means that
+any word of the form u1 vu2 for words u1 , u2 can be rewritten in one step to u1 wu2 . An
+arbitrary word over the generators can be written in terms of the Mal’cev basis by using the
+collection process, i. e. by successively applying the rules (1).
+Let { x1 , . . . , xn } be a set of variables. A monomial is a product of the form ω = ki=1 xei i
+                                                                                                       Q
+
+where ei ∈ N for i = 1, . . . , k. Its degree is d = ki=1P
+                                                         P
+                                                                    ei . If ei 6= 0, we say xi appears in
+the monomial ω or ω contains xi . A polynomial q = m                   j=1 aj ωj ∈ Z[x1 , . . . , xn ] is a sum
+of monomials ωj with coefficients aj ∈ Z – we require the coefficients aj to be non-zero.
+Likewise, some variable xi appears (resp. is contained) in q if it appears in some monomial
+wj with non-zero coefficient of q.
+
+
+2.1    Nickel’s Embedding
+
+Let G be τ -group and consider a Mal’cev basis (a1 , . . . , an ) for G. Since each g ∈ G can be
+written uniquely as g = ax1 1 · · · axnn with integers x1 , . . . , xn , in particular, the product of two
+elements can be written in the same fashion
+
+                                     ax1 1 · · · axnn · ay11 · · · aynn = aq11 · · · aqnn ,
+
+where the exponents q1 , . . . , qn are functions of the variables x1 , . . . , xn and y1 , . . . , yn . Hall [4]
+showed that these functions are polynomials. We call q1 , . . . , qn ∈ Z[x1 , . . . , xn , y1 , . . . , yn ] the
+multiplication polynomials for the Mal’cev basis (a1 , . . . , an ). Leedham-Green and Soicher [7]
+designed the so-called Deep Thought Algorithm to compute the multiplication polynomials
+from a given Mal’cev basis (a1 , . . . , an ) and constants ci,j,k ∈ Z for i < j < k (representing
+                            ci,j,j+1        c
+the relations [ai , aj ] = aj+1      · · · ani,j,n ). The algorithm presented in Nickel’s paper takes as
+input a Mal’cev basis together with the corresponding multiplication polynomials (computed
+by the algorithm [7]) and computes a unitriangular matrix representation for G over the
+integers.
+
+                                                                3
+To construct the representation Nickel uses the fact that the dual space
+
+                                  (QG)∗ = {f : QG → Q | f is linear}
+
+is a G-module, where G acts on (QG)∗ as follows: for g ∈ G and f ∈ (QG)∗ let f g be the
+function defined by h 7→ f (h · g−1 ) for h ∈ G.
+Identifying ax1 1 · · · axnn with x1 , . . . , xn (this is well-defined because every group element can
+be uniquely written with respect to the Mal’cev basis) and writing f (x1 , . . . , xn ) instead of
+f (ax1 1 . . . axnn ) allows us to view Q[x1 , . . . , xn ] as a subset of of (QG)∗ . The image of f ∈ (QG)∗
+under the action of g−1 = ay11 . . . aynn can be described with the help of the polynomials
+q1 , . . . , qn : for h = ax1 1 . . . axnn we have hg −1 = aq11 . . . aqnn . Therefore, applying g−1 ∈ G to
+a function f amounts to substituting the multiplication polynomials into f . If f is itself a
+polynomial, then f (q1 , . . . , qn ) is a polynomial in the variables x1 , . . . , xn and y1 , . . . , yn . For
+the proof of the following lemma, we refer to [13].
+
+Lemma 2.1 ([13]). Let f ∈ Q[x1 , . . . , xn ], then the G-submodule of (QG)∗ generated by f is
+finite-dimensional as a Q-vector space.
+
+The next lemma shows how to construct a finite dimensional faithful G-module of (QG)∗ .
+We consider the coordinate functions ti : G → Z for i = 1, . . . , n which map ax1 1 · · · axnn to xi .
+Note that ti is well-defined because each element of G can be written uniquely in the form
+ax1 1 · · · axnn . The values tgi (1) for i = 1, . . . , n determine the group element g uniquely. Thus,
+we obtain as a consequence of Lemma 2.1:
+
+Lemma 2.2 ([13]). The module M generated by t1 , . . . , tn (as a submodule of (QG)∗ ) is a
+finite dimensional faithful G-module.
+
+As a result of the Lemma 2.2, G has a matrix representation for some n ∈ N. By choosing
+the order of the basis elements properly, the matrices are of unitriangular form. In the
+following we call this Nickel’s embedding of G into U TN (Z). As part of the algorithm, Nickel
+also explains how the unitriangular presentation of G is obtained. Next we provide a brief
+explanation of the algorithm, for further details, we refer to [13].
+
+
+2.2    Nickel’s algorithm
+
+Nickel’s algorithm computes the G-module M of Lemma 2.2 – it also may be used to compute
+the G-module generated by some arbitrary list f1 , ..., fk of polynomials. Note that the span
+of a list of polynomials is a G-module if the image of each polynomial in the list under each
+generator of G is contained in the span. Therefore, for all j, we consider the restricted mul-
+                           (j)        (j)
+tiplication polynomials q1 , . . . , qn that describe the exponents of the product of a general
+element of the group and a−1   j :
+
+                                                                (j)   (j)
+                                                            q
+                                      ax1 1 · · · axnn a−1    1       qn
+                                                        j = a1 · · · an
+
+
+
+
+                                                       4
+                 (j)                                                                  (j)           (j)
+Notice that qi = xi for i < j and qjj = xj − 1. The polynomials q1 , . . . , qn can be obtained
+from the polynomials q1 , . . . , qn by setting yi = 0 for i 6= j and yj = −1. This can be denoted
+by the shorthand notation yi = −δi,j . The image of a function f ∈ QG∗ under the action of
+          (j)          (j)
+aj is f (q1 , . . . , qn ).
+The algorithm starts with the coordinate functions t1 , . . . , tn (or some other list of polynomials
+f1 , ..., fk ) and successively acts with a1 on the basis polynomials of the previous step until
+the resulting polynomial lies in the span of the previous basis polynomials. Then, all basis
+elements are acted on with a2 and so on. For a precise description as pseudocode, see
+Algorithm 2.1.
+
+
+Algorithm 2.1 Nickel’s Algorithm
+procedure MatrixRepresentation(Mal’cev basis a1 , . . . , an ,
+multiplication polynomials q1 , . . . , qn , initial polynomials f1 , . . . , fk )
+begin
+   Insert(B, {f1 , . . . , fk })
+   for j ← n downto 1 do
+       ~q(j) = [q1 (x1 , . . . xk , yi = −δi,j ), . . . , qn (x1 , . . . xk , yi = −δi,j )]
+       for each f ∈ Copy(B) do
+            repeat
+                               (j)       (j)
+                f aj ← f (q1 , . . . , qn )
+                r ← Insert(B, f aj )
+                f ← f aj
+            until r = 0                                                (∗ until f aj ∈ span(B) ∗)
+       endfor
+   endfor
+   return B
+end
+
+
+
+The algorithm uses the Insert routine, which adds a given polynomial to a basis of polynomials
+if that polynomial is not a linear combination of the basis elements. For this we fix an
+arbitrary ordering on the monomials. The leading monomial of a polynomial is the largest
+monomial with respect to that order. Insert takes as arguments a basis of polynomials ordered
+with increasing leading monomials and a polynomial f . It subtracts from f a suitable Q-
+multiple of the polynomial in the basis with the largest leading monomial such that this
+monomial does not occur in the result. This operation is iterated with all basis elements
+in decreasing order of their leading monomials. If the final polynomial is different from the
+zero polynomial, it is inserted into the basis at the appropriate place and returned by the
+procedure.
+
+
+
+
+                                                            5
+3    Embedding unitriangular matrices
+
+Our aim of this section is to derive bounds on the dimension of the embedding which is
+produced by Nickel’s algorithm when embedding of unitriangular matrices into unitriangular
+matrices. We will both prove an exponential lower and bound. First we will clarify our
+notation and collect some general facts about unitriangular matrices and the corresponding
+embedding. Let G = U Tm (Z) be the unitriangular group of m × m matrices. The group G
+has nilpotency class c = m − 1 and Hirsch length n = m(m−1)
+                                                         2   .
+For i < j let ei,j (α) be the matrix with ij-th entry α and the rest of the entries 0. We define
+si,j (α) = 1 + ei,j (α) and si,j = si,j (1). We have
+
+                                     s−1
+                                      i,j = si,j (−1),
+                              [si,j , sj,k ] = si,k ,        and
+                               [sji , sk,j ] = si,k (−1)     for i < j < k.
+
+Thus, we obtain the general commutation rules
+                                    y
+                                           x
+                                   sk,ℓ si,j
+                                                           if i 6= ℓ and j 6= k,
+                      sxi,j syk,ℓ = syk,ℓ sxi,j sxy
+                                                 i,ℓ        if j = k,                                  (2)
+                                    y x −xy
+                                   
+                                     sk,ℓ si,j sk,j         if i = ℓ,
+
+for arbitrary x, y ∈ Z. Thus, for unitriangular matrices we have a generalized collection
+process which not only operates letter by letter but which replaces factors sxi,j syk,ℓ by the re-
+spective right side of (2) – given that si,j comes on the right of sk,ℓ in the Mal’cev basis. Here,
+x and y even might not be only integers, but arbitrary polynomials with integer coefficients.
+Example 3.1. Let H = ha1 , a2 , a3 | [a1 , a3 ] = [a2 , a3 ] = 1, [a1 , a2 ] = a3 i = U T3 (Z) where
+                                                                                
+                     1 1 0                        1 0 0                        1 0 1
+              a1 =  0 1 0  ,             a2 =  0 1 1  ,             a3 =  0 1 0  .
+                     0 0 1                        0 0 1                        0 0 1
+
+Note that H is also known as th Heisenberg group and that (a1 , a2 , a3 ) is a Mal’cev basis.
+We will show that under Nickel’s embedding H is embedded into U T4 (Z). For doing that,
+we need to find a Q-basis for the H-submodule of (QH)∗ generated by {t1 , t2 , t3 } where
+ti (ax1 1 ax2 2 ax3 3 ) = xi . In order to do so, we need to take a look at the action of powers of
+
+
+
+
+                                                        6
+{a1 , a2 , a3 } over these coordinate functions. We have
+          ak
+         ti 1 (ax1 1 ax2 2 ax3 3 ) = ti (ax1 1 ax2 2 ax3 3 · a−k
+                                                              1 )
+                                = ti (ax1 1 ax2 2 · a−k   x3
+                                                     1 · a3 )
+                                = ti (ax1 1 · a−k   x2   kx2
+                                               1 · a2 · a3   · ax3 3 )
+                                = ti (ax1 1 −k ax2 2 a3x3 +kx2 )
+                                                       = t1 (ax1 1 ax2 2 ax3 3 ) − k,
+                                  
+                                   x1 − k
+                                                                                                      i = 1,
+                                = x2                   = t2 (ax1 1 ax2 2 ax3 3 ),                      i = 2,
+                                      x3 + kx2 = t3 (ax1 1 ax2 2 ax3 3 ) + kt2 (ax1 1 ax2 2 ax3 3 ),
+                                  
+                                                                                                       i = 3.
+                                  
+
+Similarly,
+                                            ak
+                                           t12 (ax1 1 ax2 2 ax3 3 ) = x1 = t1
+                                            ak
+                                           t22 (ax1 1 ax2 2 ax3 3 ) = x2 − 1 = t2 − k
+                                            ak
+                                           t32 (ax1 1 ax2 2 ax3 3 ) = x3 = t3
+                                            ak
+                                           t13 (ax1 1 ax2 2 ax3 3 ) = x1 = t1
+                                            ak
+                                           t23 (ax1 1 ax2 2 ax3 3 ) = x2 = t2
+                                            ak
+                                           t33 (ax1 1 ax2 2 ax3 3 ) = x3 − 1 = t3 − k
+
+so we have to only add the constant polynomial 1 (the constant polynomial k is a multiple of
+it) to the set {t1 , t2 , t3 } to obtain the Q-basis (t1 , t2 , t3 , 1) for the H-submodule. We obtain
+the mapping
+                                                                                          
+              1 0 0 −1                          1 0 0 0                              1 0 0 0
+            0 1 1 0                          0 1 0 0                            0 1 0 −1 
+     a1 7→ 
+            0 0 1 0 ,
+                                 
+                                               0 0 1 −1  ,
+                                        a2 7→                       
+                                                                                    0 0 1 0 .
+                                                                             a3 7→            
+
+              0 0 0 1                           0 0 0 1                              0 0 0 1
+
+Thus, H can be embedded into U T4 (Z).
+Now, let (a1 , . . . , an ) be an arbitrary Mal’cev basis of U Tm (Z) such that { ai | 1 ≤ i ≤ n } =
+{ si,j | 1 ≤ i < j ≤ m }. That means we allow any ordering of the si,j – as long as it is still a
+Mal’cev basis. To keep notation simple, we write xi,j = xk if ak = si,j – likewise for yi,j , ti,j ,
+and qi,j . For the moment we use the double indices and the single indices interchangeably.
+Let us take a look at the multiplication polynomials qi ∈ Z[x1 , . . . , xn , y1 , . . . yn ] defined by
+
+                                         ax1 1 · · · axnn · ay11 · · · aynn = aq11 · · · aqnn .
+
+These multiplication polynomials are computed by applying the generalized collection pro-
+cess. Recall that the polynomials computed by Nickel’s algorithm are in the span of these
+general multiplication polynomials after substituting the variables y1 , . . . , yn by integer val-
+ues.
+
+                                                                    7
+Lemma 3.2. Let 1 ≤ k < ℓ ≤ m and let ω be a monomial of the multiplication polynomial
+qk,ℓ (as described above). Moreover, let d denote the degree of ω. Then there are numbers
+λν ∈ { k, . . . , ℓ } for 0 ≤ ν ≤ d with λ0 = k, λd = ℓ, and λν−1 < λν for 1 ≤ ν ≤ d such that
+                                                    d
+                                                    Y
+                                               ω=         Xλν−1 ,λν                                      (3)
+                                                    ν=1
+                     
+where Xλν−1 ,λν ∈        xλν−1 ,λν , yλν−1 ,λν .
+
+Proof. The polynomials qk,ℓ can be computed by the generalized collection process – that
+means an iterative application of the commutation rules of (2). We are going to show by
+induction that (3) holds for all polynomials appearing during this process in the exponent of
+any element of the Mal’cev basis. Obviously, (3) holds in the beginning ax1 1 · · · axnn · ay11 · · · aynn
+for all the exponents xk = xi,j , yk = yi,j (with d = 1). Exchanging two commuting elements
+                                                   p        pj,k                                 p p
+does not change the property (3). Exchanging si,ji,j and sj,k    introduces a new factor si,ki,j j,k
+         −p   p
+(resp. si,k i,j j,k ). By induction, we know that (3) holds for all monomials of pi,j and pj,k .
+                                                 Q                  Q ′           
+                                                     d                  d
+Thus, every monomial of pi,j pj,k is of the form     ν=1 Xλ ν−1 ,λν  ·  ν=1 Xλ′  ,λ
+                                                                              ν−1 ν
+                                                                                   ′   for some
+λν ∈ { i, . . . , j }, λ′ν ∈ { j, . . . , k } and d, d′ ∈ N. Since λd = j = λ′0 , every monomial of pi,j pj,k
+is of the desired form (3).
+
+3.1    Upper bounds
+
+Theorem 3.3. The dimension of the embedding of U Tm (Z) produced by Nickel’s algorithm
+is bounded by 3m for every ordering of the Mal’cev basis { si,j | 1 ≤ i < j ≤ m }.
+
+Proof. The G-module generated by the coordinate functions { ti,j | 1 ≤ i < j ≤ m } can be
+obtained as the span of all polynomials qk,ℓ for 1 ≤ k < ℓ ≤ m where the variables yi,j
+are substituted by arbitrary integer values. Obviously, this is contained in the span of all
+monomials of the qk,ℓ for 1 ≤ k < ℓ ≤ m where the variables yi,j are substituted by integer
+values. If we take any monomial and substitute variables by arbitrary integer values, we
+obtain a multiple of when we substitute the same variables by 1. Thus, we may assume that
+every variable yi,j is substituted by 1.
+Hence, we simply need to count the number of different monomials of the form (3) in
+Lemma 3.2. Clearly this number does not depend on the ordering of the Mal’cev basis.
+Let
+P Nk,ℓ be the number of monomials of the form (3) with λ0 = k and λd = ℓ. Then we have
+  1≤k<ℓ≤m Nk,ℓ as an upper bound of the dimension of the embedding.
+Now, each pick of indices λν ∈ { k, . . . , ℓ } for 0 ≤ ν ≤ d with λ0 = k, λν−1 < λν and λd = ℓ
+corresponds to a d−1-element subset of { k + 1, . . . , ℓ − 1 }. Moreover, for each pick of indices
+there are precisely 2d ways to assign variables xi,j or yi,j to the Xi,j s. As d ranges from 1 to
+ℓ − k, we obtain
+                     ℓ−k                      ℓ−1−k
+                                                 X ℓ − 1 − k 
+                     X     ℓ−1−k d
+             Nk,ℓ =                  2 =2                        2d = 2(1 + 2)ℓ−1−k .
+                            d−1                            d
+                         d=1                         d=0
+
+
+                                                        8
+Thus, it follows
+              X                  X                           X           X              X
+                    Nk,ℓ = 2            3ℓ−k−1 = 2                           3i−1 ≤             3ℓ−1 ≤ 3m .
+          1≤k<ℓ≤m             1≤k<ℓ≤m                     1<ℓ≤m 1≤i<ℓ                  1<ℓ≤m
+
+
+
+
+3.2   Lower bounds
+
+For proving lower bounds, we use the Mal’cev basis for G = (a1 , a2 , . . . , an ) (which is the
+standard Mal’cev basis, see e. g. [13]) with
+                                                                               j−i−1
+                                                                                X
+                                  ak = si,j                      for k = i +          (m − ℓ).
+                                                                                ℓ=1
+
+Thus, the order of the basis elements can be depicted as follows:
+                                                             
+                               1 a1 am            ···    an
+                             
+                                 1 a2 am+1                   
+                                                              
+                                                 ..      .. 
+                             
+                                      1    a3       .     . 
+                                                 ..          
+                             
+                                            1       . a2m−3 
+                                                 ..          
+                                 0                  . am−1 
+                                                          1
+
+In particular, we have ai = si(i+1) for 1 ≤ i ≤ m − 1. From now on we will denote
+                          x                x                 x       x
+             ax1 1 ax2 2 · · · am−1
+                                 m−1 xm        2m−2
+                                    am · · · a2m−2          n−2
+                                                    · · · an−2    n−1 xn
+                                                                an−1 an
+                                          x
+                                          1,2 x23         m−1,m  x1,3    x        x
+                                                                              1,m−1   2,m   x
+                                                                                            1,m    x
+                                      = s1,2 s2,3 · · · sm−1,m  s1,3  · · · s1,m−1  s2,m  s1,m  .
+
+That means, as in the previous section, instead of variables with a single index xk we write
+the variables with two indices xi,j .
+                                                                                          ki
+Following the idea used in the embedding, we are
+                                               m going to have a look at the action of ai
+on the last coordinate function tn for 1 ≤ i ≤ 2 − 1 and provide a lower bound for the
+number of linearly independent polynomial exponents. That means we apply the generalized
+collection process to
+
+                                               ax1 1 · · · axnn · a−k
+                                                                   i .                                        (4)
+
+This can be done in two steps: first, a−k
+                                       i is moved to the left, and the respective commutators
+are introduced. In the second step, the newly introduced commutators are moved to the right
+until they remain at their correct place. It is a crucial property of a Mal’cev basis that these
+newly introduced commutators only “travel” to the right. For our purposes k = 1 in (4)
+is sufficient. To prove our result, Theorem 3.9, we will first look at the case when i = 1,
+which will be the starting point to see that there are exponentially many basis elements. The
+
+                                                         9
+reason why we look at the case i = 1, is simply because the polynomial exponent with the
+highest degree will appear in this case since a−1
+                                               1 is the element that has to “travel” over all
+              x
+the elements aj j for 2 ≤ j ≤ n in (4). So we start with
+                                         x                         x
+                        ax1 1 ax2 2 · · · am−1
+                                            m−1 xm
+                                                             an · a−1
+                                                          n−1 xn
+                                               am · · · an−1       1
+                                                x
+                                             1,2 x23                   x            x                x   x       x
+                                         = s1,2              m−1,m
+                                                s2,3 · · · sm−1,m    1,3
+                                                                   s1,3          1,m−1
+                                                                         · · · s1,m−1    2,m
+                                                                                       s2,m    1,m
+                                                                                             s1,m  · s−1
+                                                                                                      1,2 .
+
+Note that s1,2 commutes with all other elements except s2,3 , s2,4 , . . . , s2,m , and we know that
+by (2)
+                                  x              −1 x2,m x2,m
+                                 s2,j2,m s−1
+                                          1,2 = s1,2 s2,j s1,j
+for 3 ≤ j ≤ m. So, as s1,2 moves to the left in the product, the first element that it has to
+pass over and that it does not commute with is s2,m – we obtain
+                x       x           x                x             x           x         x
+                 1,2
+               s1,2    2,3
+                     s2,3          m−1,m
+                           · · · sm−1,m    1,3
+                                         s1,3          1,m−1
+                                               · · · s1,m−1    2,m
+                                                             s2,m    1,m
+                                                                   s1,m  · s−1
+                                                                            1,2
+                                            x        x             x           x                 x               x           x   +x2,m
+                                        1,2
+                                    = s1,2    2,3
+                                            s2,3          m−1,m
+                                                  · · · sm−1,m    1,3
+                                                                s1,3          1,m−1
+                                                                      · · · s1,m−1  · s−1      2,m  1,m
+                                                                                       1,2 · s2,m s1,m                                    .
+                                2,m−1                    x            2,m−1                                          x
+Next it does not commute with s2,m−1  – however, the commutator is s1,m−1   ; so, the exponent
+                                                                       m
+of s1,m does not change. Continuing this way moving up to s2,ℓ for ℓ = 2 + 1, we have, for
+example, when m is even;
+           x        x           x               x             x            x        x
+            1,2
+          s1,2    2,3
+                s2,3          m−1,m
+                      · · · sm−1,m    1,3
+                                    s1,3          1,m−1
+                                          · · · s1,m−1    2,m
+                                                        s2,m    1,m
+                                                              s1,m  · s−1
+                                                                       1,2
+                                     x          x             x            x                 x               x               x   x       +x2,ℓ
+                                    1,2
+                                = s1,2    2,3
+                                        s2,3          m−1,m
+                                              · · · sm−1,m    1,3
+                                                            s1,3          1,ℓ−1
+                                                                  · · · s1,ℓ−1  · s−1      2,ℓ         ℓ,m 1,ℓ
+                                                                                   1,2 · s2,ℓ · · · sℓ,m s1,ℓ
+                                                 x
+                                                1,m−1        +x2,m−1 x2,m x1,m +x2,m +x2,ℓ xℓ,m
+                                        · · · s1,m−1                s2,m s1,m                   .
+
+That means for the first time a non-linear polynomial appears. As s−1
+                                                                    1,2 moves further to the
+left, the exponents of s1,j ’s for 3 ≤ j < m become quite complicated to express; therefore,
+we are going to only focus on what is being added to the exponent of s1,m once s−11,2 passes
+all s2,j – we use ⋆ as a placeholder for any polynomial:
+  x         x               x           x                x     x
+   1,2
+ s1,2          m−1,m
+       · · · sm−1,m    1,3
+                     s1,3          1,m−1
+                           · · · s1,m−1    2,m
+                                         s2,m    1,m
+                                               s1,m  · s−1
+                                                        1,2
+                                                                                                                         ′
+          x1,2 x2,3          x3,4       xm−1,m ⋆          ⋆      x2,m x1,m +x2,m +P1,m
+       = s1,2 s2,3 · s−1
+                      1,2 · s3,4 · · · sm−1,m s1,3 · · · s1,m−1 s2,m s1,m
+                                                                                                                                     ′
+          x1,2           x2,3   x2,3   x3,4       xm−1,m ⋆          ⋆      x2,m x1,m +x2,m +P1,m
+       = s1,2  · s−1
+                  1,2 · s2,3 · s1,3 · s3,4 · · · sm−1,m s1,3 · · · s1,m−1 s2,m s1,m
+                                                                                                            ′
+                                                             xm−1,m ⋆                    x2,m x1,m +x2,m +P1,m
+                                                                     s1,3 · · · s⋆1,m−1 s2,m
+           x
+           1,2 −1 x2,3 x3,4   x2,3    x2,3 x3,4 x4,5
+       = s1,2    s2,3 s3,4 · s1,3  · s1,4       s4,5 · · · sm−1,m                             s1,m
+                                                                                                               ′′
+                                                                  xm−1,m ⋆                   x2,m x1,m +x2,m +P1,m
+                                                                         s1,3 · · · s⋆1,m−1 s2,m
+          x1,2 −1 x2,3 x3,4 x4,5    x2,3 x3,4 x4,5    x5,6
+       = s1,2    s2,3 s3,4 s4,5 · s1,5             · s5,6  · · · sm−1,m                          s1,m
+       = ···
+                                                                                               ′′′
+                                                                             x2,m x1,m +x2,m +P1,m
+                                                      · s⋆1,3 · · · s⋆1,m−1 s2,m
+           x
+           1,2 −1 x2,3       xm−1,m    x2,3 ···xm−1,m
+       = s1,2    s2,3 · · · sm−1,m  · s1,m                                       s1,m
+                                    · s⋆          ⋆
+          x1,2 −1 x2,3       xm−1,m                      x2,m x1,m +x2,m +x2,3 ···xm−1,m +P1,m
+       = s1,2    s2,3 · · · sm−1,m     1,3 · · · s1,m−1 s2,m s1,m                                .
+  Finally we have the polynomial exponent of s1,m , which will be denoted by q, as
+                                                                                   m−1
+                                                                                   Y
+                                                q = x1,m + x2,m +                        xi,i+1 + P1,m .
+                                                                                   i=2
+
+
+                                                                               10
+                s
+                1,2
+Note that q = t1,m  where t1,m = tn is the n-th coordinate function. Also notice that, as a
+consequence of Lemma 3.2 (with y1 = 1, yi = 0 for i > 1), P1,m does not contain
+                                                                           any linear
+monomials (and it is non-zero for m large enough). From now on, let µ = m  2 .
+
+Lemma 3.4. The subgroup generated by { si,j | j − i ≥ m − µ } is abelian.
+
+Proof. Assume si,j , sk,ℓ ∈ { si,j | j − i ≥ m − µ } do not commute. By (2), it suffices to look
+at the case j = k. Then we have
+
+                    ℓ ≥ m − µ + j ≥ m − µ + m − µ + i ≥ 2m − 2µ + 1 > m.
+
+
+
+Note that the basis elements { si,j | j − i ≥ m − µ } form a suffix of the Mal’cev basis. This
+observation leads to the following:
+
+Lemma 3.5. Among all polynomials obtained from the coordinate functions by the action of
+G, the variables xi,j for j − i ≥ m − µ appear only in linear monomials.
+
+Proof. It follows from Lemma 3.2 that variables xi,j for j − i ≥ m − µ can only occur as
+exponents of some sk,ℓ ∈ { si,j | j − i ≥ m − µ }. When moving some s−1     i,j to the left, only
+                                                              −1
+linear monomials are introduced. When commutators of si,j and something else move to the
+right, they either belong to the subgroup generated by { si,j | j − i ≥ m − µ } – and, thus, by
+the previous lemma commute with everything in that subgroup –, or they to not belong to
+that subgroup and, therefore, remain on the left of the elements { si,j | j − i ≥ m − µ } (since
+{ si,j | j − i ≥ m − µ } form a suffix of the Mal’cev basis).
+
+Next, we look at the action on the multiplication polynomials qi,j .
+
+Lemma 3.6. Let λ ∈ { 1, . . . , m − 1 } and (i, j) 6= (m − 1, m) and let g be in the subgroup
+                                                               g
+generated by { si,i+1 | 1 ≤ i ≤ λ }. Then any monomial of qi,j   which contains the variable
+                                Qm−1
+xm−1,m also contains a factor i=λ+1 xi,i+1 .
+
+Proof. For λ = m − 2, the statement is trivial. Hence, let λ + 1 < m − 1. If the variable
+                        g
+xm−1,m appears in some qi,j with (i, j) 6= (m − 1, m), it must have been first introduced as a
+                     p        xm−1,m
+commutator of some sk,ℓ and sm−1,m     for some polynomial p. In particular, ℓ = m − 1. We
+show that every monomial of p contains the variable xm−2,m−1 ; the lemma then follows by
+induction.
+Indeed, assume that there is a monomial ω in p which does not contain a variable xm−2,m−1 .
+                                                                 xm−2,m−1
+Then, in particular, sωk,ℓ cannot be written as a commutator of sm−2,m−1  . However, by the
+                                                                     ω
+ordering of the Mal’cev basis and the choice of g, this means that sk,ℓ is contained in the
+subgroup generated by { si,i+1 | i ≤ m − 3 }, which commutes with sm−1,m – a contradiction.
+
+
+
+
+                                               11
+                                           1,2           s
+Now, let us return to the polynomial q = t1,m  . As we computed above, we have q =
+              Qm−1
+x1,m + x2,m + i=2 xi,i+1 + P1,m for some polynomial P1,m which does not contain the
+          Qm−1
+monomial i=2 xi,i+1 and linear terms. We will denote
+                                m−1
+                                Y
+                           q=         xi,i+1 + P1,m ≡ q       mod linear terms.
+                                i=2
+
+Clearly q is contained in the G-module generated by { ti,j | 1 ≤ i < j ≤ m }. Later we will
+consider the action of a subgroups of G on q, but first we need to summarize some more facts
+on q.
+Lemma 3.7.
+
+    • Every monomial of q contains a variable xi,m with i > µ.
+    • In q the variable xm−1,m only appears in the monomial m−1
+                                                             Q
+                                                               i=2 xi,i+1 .
+
+Proof. By Lemma 3.2, every monomial of q must contain a variable xi,m for some i. As q
+does not contain linear monimals, we know that i > µ by Lemma 3.5. The second statement
+is a direct consequence of Lemma 3.6.
+                                                       m                   Q
+For some
+      Q  subset S ⊆  { 2, . . . , µ } (recall that µ =  2  ), we define XS =   i∈S xi,i+1 and
+wS = i∈S si,i+1 where the si,i+1 are ordered ascending by their index i in the product.
+We are going to show that the polynomials { q wS | S ⊆ { 2, . . . , µ } } are all linearly indepen-
+dent and, thus, establish an exponential lower bound for Nickel’s embedding. Computing the
+action of wS on some polynomial can be done by computing the action on the coordinate
+functions t1,2 , . . . , t1,m and then substituting the variables xi,j of q by the respective tw
+                                                                                               i,j .
+                                                                                                 S
+
+
+Therefore, let us consider the polynomials tw
+                                            i,j . Recall that we have
+                                              S
+
+
+                                                                 w         w
+                                  x           x                 t S       t S
+                                   1,2m
+                                 s1,2           1,m
+                                        · · · s1,m  · wS−1 = s1,2
+                                                               1,2         1,m
+                                                                   · · · s1,m  .
+Lemma 3.8. tw
+            i,m = ti,m for µ < i ≤ m.
+              S
+
+
+
+Proof. Let us take a look at the multiplication polynomial qi,m (x1,2 , . . . , x1,m , y1,2 , . . . , y1,m ).
+Every monomial in twi,m is obtained from a monomial in qi,m by substituting the variables yj,k
+                      S
+
+by integers. By the choice of wS , only variables yj,j+1 with j ≤ µ are substituted by non-
+zero values. Thus, a newly introduced monomial must have been obtained from a monomial
+containing a variable yj,j+1 for some j ≤ µ. By Lemma 3.2 that means new monomials can
+only be introduced to qi,m for i ≤ µ.
+
+Finally, we need the following fact, which is true because no si,i+1 is a commutator.
+                              (
+                      wS       xi,i+1 − 1 if i ∈ S
+                     ti,i+1 =                          for 1 ≤ i ≤ m − 1.                                (5)
+                               xi,i+1      otherwise
+
+Now, we are ready to prove the exponential lower bound on the dimension of Nickel’s em-
+bedding.
+
+                                                      12
+Theorem 3.9. Assume the group G = U Tm (Z) is given with with respect to the ”standard”
+Mal’cev basis described above. Then for the embedding computed by Nickel’s algorithm of G
+into U TN (Z), we have N ≥ 2⌊ 2 ⌋−1 .
+                               m
+
+
+
+
+Proof. Computing q wS means we substitute all variables xi,jQin q by the respective polyno-
+mials tw
+       i,j . Let M = { 2, . . . , m − 1 }. By (5), the monomial
+         S                                                      m−1
+                                                                i=2 xi,i+1 becomes
+                          Y                      Y                     X               Y
+                   pS =         (xi,i+1 − 1) ·         xi,i+1 =            (−1)|T |            xi,i+1 .
+                          i∈S                 i∈M \S               T ⊆S               i∈M \T
+
+As every of the pS has a unique monomial of highest degree, the set { pS | S ⊆ { 2, . . . , µ } }
+is linearly independent.
+We want to show that all these polynomials pS also appear                                wS
+                                                                   Q as summands of q . We can
+guarantee that by showing that no monomial of the form i∈M \T xi,i+1 appears as substi-
+tution of any of the otherQ monomials of q – then no cancellation can occur. By Lemma 3.7,
+every monomial of q − m−1   i=2 xi,i+1 contains a variable xi,m for some µ < i < m. More-
+over, by Lemma 3.8 every variable xi,m for Q         µ < i < m is substituted by itself. Thus, no
+monomial
+Q           appearing in a substitution of q − m−1    i=2 xi,i+1 is equal to a monomial of the form
+          x
+   i∈M \T i,i+1 .
+                                               Q
+Thus, none of the monomials of the form i∈M \T xi,i+1 for any T ⊆ { 2, . . . , µ } gets cancelled
+in the substitution of q. Therefore, also every polynomial q wS has its unique monomial of high-
+est degree in the variables x2,3 , . . . , xm−1,m , and hence, also the set { q wS | S ⊆ { 2, . . . , µ } }
+is linearly independent. Thus, we have completed the proof of Theorem 3.9.
+
+
+3.3    Reordering the Mal’cev basis
+
+If we reorder the Mal’cev basis such that si,j comes on the left of sk,ℓ if and only if j < ℓ or
+j = ℓ and i > k, that is according to the scheme
+                                                           
+                                 1 a1 a3 a6 · · ·       an
+                               
+                                    1 a2 a5           an−1 
+                                                            
+                                        1   a 4
+                                                            
+                                                        ..  ,
+                               
+                                             1           . 
+                                                            
+                                                 ..        
+                                    0               .      
+                                                                       1
+
+then Nickel’s algorithm produces an embedding of dimension n + 1. In order to see this,
+                                                             (j)
+proceed as follows: Consider the multiplication polynomials qi defined by
+                                                                 (j)         (j)
+                                                             q
+                                       ax1 1 · · · axnn a−1    1       qn
+                                                         j = a1 · · · an .
+
+Now, for aj = sk,ℓ we know that aj commutes with all elements which are on the right of
+aj in the Mal’cev basis – except elements of the ℓ-th row. To compute the multiplication
+
+
+                                                        13
+                (j)
+polynomials qi , we can move a−1
+                              j step by step to the left introducing the respective commu-
+                                                  ℓ,λ       x                ±x
+tators. As a commutator of aj = sk,ℓ and some sℓ,λ    , the element sk,λℓ,λ is introduced. Since
+sk,λ belongs to the same column as sℓ,λ (and in the Mal’cev basis there are only elements of
+the same column between the two elements), it can be moved to its correct position in the
+Mal’cev basis without introducing further commutators. Therefore, only linear and constant
+monomials occur in the multiplication polynomials. Thus, (tn , . . . , t1 , 1) is a basis of the
+G-module generated by the coordinate functions t1 , . . . , tn and all associated matrices are of
+triangular form.
+
+
+4     Jennings’ embedding
+
+For the proof of some general upper bounds for Nickel’s embedding, we need some basic
+facts about Jennings’ embedding [5]. Therefore, let us briefly describe how that embedding
+works. Let G be a τ -group with Mal’cev
+                                      basis (a1 , . . . , an ) and nilpotency class c. We denote
+Γi+1 = [Γi , G] with Γ1 = G and τi = g ∈ G ∃ k : gk ∈ Γi the isolator of Γi . The weight
+ν(g) of some g ∈ G is defined as the largest i with g ∈ τi .
+The embedding is given by the right             G on QG/I c+1
+                                   n Paction of P            o where QG is the group ring
+with rational coefficients and I =    g∈G λg g    g∈G λg = 0   is the augmentation ideal.
+We describe a basis of Jennings’ embedding according to [4, Lem. 7.3]. Set ui = 1 − ai ∈ QG
+and let M ∈ N be arbitrary. Then the set of all products v = v1 . . . vn in which each vi has
+one of the following forms,
+
+    • uri i             with ri ∈ N
+          −si
+    • uM
+       i ai             with si ∈ N \ { 0 },
+
+forms a basis of QG. For a basis element v = v1 v2 . . . vn of QG, the weight is defined as
+
+    • ν(ui ) = ν(ai )             (that means ν(ui ) = k if and only if ai ∈ τk , but ai 6∈ τk+1 ),
+                n
+                                  if all vi have the form uri i ,
+                X
+    • ν(v) =          ri ν(ui )
+                i
+                                                           −si
+    • ν(v) = M                    if at least one vi = uM
+                                                        i ai .
+
+
+Then { v | ν(v) ≥ M } is a basis of I M . That means on the other hand that { v | ν(v) ≤ c } is
+a basis of the faithful G module Q[G]/I c+1 where the action of G is the right multiplication
+and basis elements of weight greater than c are simply ignored. The matrices defined by
+the action have only integral entries and all diagonal entries are one. Moreover, if the basis
+elements are ordered according to their weight, then they are of triangular shape.
+
+
+
+
+                                                       14
+5    General upper bounds for Nickel’s algorithm
+
+Now, let G be an arbitrary τ -group with Mal’cev basis (a1 , . . . , an ). Let us again consider
+the multiplication polynomials q1 , . . . , qn ∈ Z[x1 , . . . , xn , y1 , . . . , yn ] defined by
+
+                                   ax1 1 · · · axnn · ay11 · · · aynn = aq11 · · · aqnn .                                (6)
+
+For a monomial ω = xe11 · · · xenn · y1f1 · · · ynfn , we define its weight ν(ω) to be (ei + fi )ν(ai )
+                                                                                      P
+(where ν(ai ) isPthe weight of ai ). The weight of a polynomial q is the maximal weight of its
+monomials ν( j ωj ) = maxj ν(ωj ) – thus, if all variable have weight one, the weight agrees
+with the degree of a polynomial.
+By [7, 7.4], the multiplication polynomials have degree bounded by the nilpotency class c.
+However, we need a better bound. It is straightforward to see that – at least in the case of
+unitriangular matrices – the following bound is tight.
+
+Lemma 5.1. For all i we have ν(qi ) ≤ ν(ai ).
+
+Lemma 5.1 can be derived from Osin’s theorem on subgroup distortion [14, Thm. 2.2]. Since
+a direct proof is not much longer, we give the full prove here. Actually, parts of this proof
+follow the same ideas as in [14].
+                                                                                                         ∗
+Proof. Let us consider the collection process on words w ∈ a±1               ±1
+                                                            
+                                                                1 , . . . , an                               over the gener-
+ators: that means a successive application of the rewriting rules
+                                                (ε ,ε )
+                                                  i j            (ε ,ε )
+                     ε                  ε      ci,j,j+1        c i j
+                    aj j aεi i → aεi i aj j · aj+1      · · · ani,j,n            for i < j and εi , εj ∈ { ±1 }
+
+                       (ε ,ε )
+                      i j
+where the numbers ci,j,k  ∈ Z are defined by
+
+                                                  ε                (ε ,ε )
+                                                [aj j , aεi i ] = ci,j,n
+                                                                      i j
+                                                                          ,
+
+i. e. the commutators are written with respect of the Mal’cev basis. Here aek for e ∈ Z stands
+for the word ak · · · ak with e factors ak if e is positive and for the word a−1       −1
+                                                                              k · · · ak with |e|
+factors a−1k if e is negative. Note that we do not define any cancellation rules (in particular
+a−1
+  k  a k cannot be replaced by the empty word) – hence, if a letter appears at some time during
+the collection process, it will remain there throughout the whole collection process (only the
+position may change due to the rewriting steps).
+We denote the number of occurrences of letters a±1
+                                                i  in w with |w|i . Now, consider a word ŵ
+obtained from w by any number of rewriting steps and count the appearances of letters a±1
+                                                                                        k
+for some k. Any letter a±1
+                        k in ŵ either was there already in w or it was introduced in the
+                                                                  i j                 (ε ,ε )
+collection process. In the latter case, in particular, we had ci,j,k  6= 0 for some i < j < k
+                                              ±1                                           ε
+and εi , εj ∈ { ±1 }. The number of letters ak which were introduced when exchanging aj j
+                                                                                            (ε ,ε )
+and aεi i for fixed i < j < k and εi , εj ∈ { ±1 } is bounded by ci,j,k
+                                                                     i j
+                                                                                                      times the product of
+
+
+                                                            15
+                                                  ε
+the total number of occurrences of aj j and aεi i in ŵ (this is because letters never disappear).
+Thus, we have
+                                                      (εi ,εj )
+                                            X
+                           |ŵ|k ≤ |w|k +            ci,j,k     |ŵ|i |ŵ|j                    (7)
+                                                           (ε ,ε )
+                                                             i j
+                                                          ci,j,k 6=0
+
+
+Next we are going to show the following:
+
+                                                                                 |w|ei i
+                                                              X              Y
+                                             |ŵ|k ≤ C ·                                                                        (8)
+                                                      P (e1 ,...,en )∈N
+                                                                        n    i
+                                                        i ei ν(ai )≤ν(ak )
+
+
+                                               i j      (ε ,ε )
+for some constant C (depending on the ci,j,k        and n and c). Note that (8) is a slight variation
+of the well-known fact [10, Thm. 2.3]. In order to prove (8), we procede by induction. For
+                                                                            (εi ,εj )
+ν(ak ) = 1, (8) holds trivially. Now, let ν(ak ) > 1. Note that ci,j,k                6= 0 implies that
+ν(ak ) ≥ ν(ai ) + ν(aj ) (this is a general fact – see e. g. [11, Thm. 5.3 (4)]). Therefore, we have
+by (7)
+                                   (ε ,ε )
+                      X              i j
+  |ŵ|k ≤ |w|k +                 ci,j,k  |ŵ|i |ŵ|j
+                    (ε ,ε )
+                      i j
+                   ci,j,k 6=0
+                                                                                                                           
+
+                                        (εi ,εj ) 
+                                                                                 |w|eℓ ℓ                               |w|eℓ ℓ 
+                         X                                    X              Y                      X           Y             
+        ≤ |w|k +                       ci,j,k     C ·
+                                                                                         C ·
+                                                                                           
+                                                                                                                                
+                                                                        n ℓ                                       n ℓ
+                         (i,j)                        P (e1 ,...,en )∈N                         P (e1 ,...,en )∈N
+                 ν(ai )+ν(aj )≤ν(ak )                  ℓ eℓ ν(aℓ )≤ν(ai )                        ℓ eℓ ν(aℓ )≤ν(aj )
+
+                                     |w|ei i
+                 X               Y
+        ≤ C′ ·
+           P (e1 ,...,en )∈N
+                             n i
+            i ei ν(ai )≤ν(ak )
+
+
+for some properly chosen C ′ (recall that the sums range over a constant number of indices).
+Thus, we have shown (8).
+Then starting the collection process with the word w = ax1 1 · · · axnn · ay11 · · · aynn , we obtain
+                                                     X Y
+     |qk (x1 , . . . , xn , y1 , . . . , yn )| ≤ C ·    (|xi | + |yi |)ei   for all xi , yi ∈ Z. (9)
+                                                P (e1 ,...,en )∈N
+                                                                  n i
+                                                 i ei ν(ai )≤ν(ak )
+
+
+Now, we apply a substitution φ defined by φ(xi ) = κxi z ν(ai ) and φ(yi ) = κyi z ν(ai ) for all i
+where z is a new variabe and κxi , κyi ∈ N are constants (defined below). We apply φ on both
+sides of (9) – clearly this preserves the inequality. Every monomial ω = xe11 · · · xenn · y1f1 · · · ynfn
+then becomes φ(ω) = κex11 · · · κexnn · κfy11 · · · κfynn · z ν(ω) .
+It remains to show that if a monomial ω of qk with ν(ω) = ν has non-zero coefficient, then
+the monomial z ν has non-zero coefficient in φ(qk ). Once we have established that, it follows
+that every monomial ω of qk satisfies ν(ω) ≤ ν(ak ), because the substituted polynomial on
+
+
+                                                                  16
+the right side of (9) is of degree ν(ak ) and, thus, by (9) also φ(qk ) is of degree at most ν(ak ).
+This gives the desired bound on the weights of the multiplication polynomials q1 , . . . , qn .
+Now, let M be a bound on the absolute values of all coefficients of qk and N the number of
+monomials of qk . Let B ∈ N such that B > c (the nilpotency class) and 2B > M N . We set
+           i                        n+i
+κxi = 2B and κyi = 2B . Recall that by [7, 7.4], we have ei , fi ≤ c for every monomial
+ω = xe11 · · · xenn · y1f1 · · · ynfn of qk .
+For (e1 , . . . , en , f1 , . . . , fn ) 6= (e′1 , . . . , e′n , f1′ , . . . , fn′ ) with 0 ≤ ei , fi , e′i , fi′ ≤ c, we have
+
+                                   X                         X ′ i
+                                           ei B i + fi B n+i −  ei B + fi′ B n+i ≥ B.
+                                                                                
+
+                                   i                                i
+                                                                                                                  P
+Therefore, under the same assumption, the products κex11 · · · κexnn ·κfy11 · · · κfynn = 2                           i   (ei B i +fi B n+i )
+                                     P ′ i
+     e′        e′    f′        f′
+and κx1 · · · κxn · κy1 · · · κyn = 2 i (ei B +fi B ) differ by at least a factor 2B .
+                                                ′ n+i
+          1         n      1           n
+
+Now, assume that some monomial gets cancelled by the substitution; that means, in partic-
+ular,
+                         N′
+                                e          ej,n  fj,1      fj,n
+                        X
+                            αj κxj,1
+                                  1 · · · κxn · κy1 · · · κyn   =0
+                                            j=1
+
+for some 1 ≤ N ′ ≤ N and non-zero coefficients αj ∈ Z with |αj | ≤ M and pairwise distinct
+                                                                                                      e          e1,n
+exponent vectors (ej,1 , . . . , ej,n , fj,1 , . . . , fj,n ) for j = 1, . . . , N . W. l. o. g. let κx1,1
+                                                                                                        1 · · · κxn   ·
+  f1,1     f1,n                       ej,1          ej,n     fj,1   fj,n
+κy1 · · · κyn be the maximal κx1 · · · κxn · κy1 · · · κyn . Then we have
+
+                               f       f                      N
+                      e1,1 ·κy1,1 ···κy1,n        e
+                                                              X          e            e      f             f
+                  α1 κx1      1        n
+                                           · · · κx1,n
+                                                    n    =          αj κxj,1       j,n   j,1       j,n
+                                                                         1 · · · κxn · κy1 · · · κyn
+                                                              j=2
+                                                                                  e           e        f          f
+                                                         ≤ N M max              κxj,1       j,n   j,1       j,n
+                                                                                  1 · · · κxn · κy1 · · · κyn
+                                                                    j=2,...,N
+                                                           NM e               e1,n  f1,1      f1,n
+                                                         ≤ B κx1,1   1 · · · κxn · κy1 · · · κyn
+                                                            2
+                                                            e          e1,n    f1,1     f1,n
+                                                         < κx1,1
+                                                              1 · · · κxn · κy1 · · · κyn .
+
+
+This is a contradiction since |α1 | ≥ 1. Therefore, the monomials of weight ν of qk do not all
+cancel to zero after applying φ. Hence, the monomial z ν has non-zero coefficient in φ(qk ).
+
+Theorem 5.2. Let k denote the rank of G/[G, G], and c the nilpotency class ofP    G. Then
+the matrix representation produced by Nickel’s algorithm has dimension at most c−1       i
+                                                                                   i=0 k +
+rk(Γc (G)) < 2kc . Moreover, it has never larger dimension than Jennings’ embedding [5].
+
+For fixed nilpotency class Theorem 5.2 provides a polynomial bound on the dimension on
+the embedding. Since not only the dimension, but also the number of occurring monomials
+is bounded polynomially, we obtain also a polynomial running time of Nickel’s algorithm for
+bounded nilpotency class (the Insert routine in Algorithm 2.1 can be called only at most as
+many times as there are different monomials – each call to Insert needs time polynomial in
+
+                                                                    17
+the number of bits required to represent the polynomials already in the basis and the newly
+inserted polynomial).
+
+Proof. By definition, the G-module produced by Nickel’s algorithm is the span of the mul-
+tiplication polynomials (6) where the variables y1 , . . . , yn are substituted by integer values.
+Like in the proof of Theorem 3.3, this G-module is contained in the span of the monomials of
+all the multiplication polynomials (again the variables y1 , . . . , yn are substituted by integer
+values). As every non-linear monomial of some qi has at least one variable from y1 , . . . , yn ,
+we know by Lemma 5.1 that for any non-linearP    monomial ω = xe11 · · · xenn occurring at any
+time during Nickel’s algorithm, we have ν(ω) = ei ν(ai ) ≤ c − 1.
+Now, compare this to Jennings’ embedding as described in Section 4: for every M ∈ N there
+is a canonical one-to-one    correspondence between basis elements of Z[G]/I M +1 and terms
+  e1      e
+                 P
+x1 · · · xn with
+            n
+                   ei ν(ai ) ≤ M (again I is the augmentation ideal). Now, in [9, Prop. 3.3]
+the dimension of Q[G]/I M +1 over Q was computed to be at most M          i
+                                                                   P
+                                                                     i=0 k . Since in our
+                                                                                      P casei
+all non-linear monomials have weight at most c − 1, we obtain an upper bound of c−1     i=0 k
+for the number of monomials of weight at most c − 1. As we have not counted the linear
+monomials xi for ν(ai ) = c, we have to add the rank of Γc (G) as a free abelian group. In
+order to see that the dimension is at most as large as Jennings’ embedding just observe that
+all (non-linear and linear) monomials have weight at most c. This yields also the bound
+2kc .
+
+
+6     Nickel’s and Jennings’ embedding in other classes of groups
+
+6.1     Heisenberg groups
+
+As before, let ei,j (α) for i < j be the matrix with ij-th entry α and the rest of the entries 0,
+and let si,j (α) = 1 + ei,j (α) and si,j = si,j (1). The (2m + 1)-dimensional Heisenberg group is
+defined as
+                                 G = ha1 , . . . , a2m+1 i ≤ U Tm+2 (Z)
+where                         
+                              s1,i+1
+                                                   for 1 ≤ i ≤ m,
+                          ai = si−m+1,m+2           for m + 1 ≤ i < 2m + 1,
+                              
+                               s1,m+2               for i = 2m + 1.
+                              
+
+Using the facts that
+                                                      −1
+                                    s−1
+                                     i,j = (si,j (1))    = si,j (−1),
+                    [si,j , sj,k ] = si,k , and [sj,i , sk,j ] = si,k (−1) for i < j < k,
+we can give a finite presentation of the (2m + 1)-dimensional Heisenberg group:
+
+                                      G = h a1 , . . . , a2m+1 | R i
+
+
+
+                                                     18
+with
+           R = {[ai , am+i ] = a2m+1 for 1 ≤ i ≤ m and all other pairs of aj commute}.
+Moreover, (a1 , a2 , . . . , a2m+1 ) is a Mal’cev Basis for the Heisenberg group G.
+
+Theorem 6.1. Let G be the (2m + 1)-dimensional Heisenberg group. The size of Jennings’
+embedding of G is 2m2 + 3m + 2 and the size of Nickel’s embedding it is 2m + 2. In particular,
+the size of the matrix obtained in Jennings’ embedding is larger than that of Nickel’s.
+
+Proof. We will first have a look at the size of the matrices of the image of the Heisenberg
+                                                                                x2m+1
+group under Nickel’s embedding. For simplicity we will write ax1 1 ax2 2 · · · a2m+1  = ~a~x . For
+1 ≤ j ≤ m, we have
+                              
+                    a−k
+                               xj − k
+                                                 for i = j
+                     j   ~
+                         x
+                   ti (~a ) = xi                  for i 6= j and i 6= 2m + 1
+                              
+                                x2m+1 + kxm+j for i = 2m + 1
+                              
+
+For m + 1 ≤ j ≤ 2m + 1,
+                                                    (
+                                    a−k              xj − k         for i = j
+                                   ti j (~a~x ) =
+                                                     xi             for i 6= j
+
+In order to see this, we only need to have a look at
+                                             x1   x2                x
+                                  ~a~x a−k                  2m+1 −k
+                                        j = a1 · a2 · · · a2n+1 aj .
+
+
+For 1 ≤ j ≤ m, since s1,j+1 = aj commutes with all except sj+1,m+2 = am+j and also
+           −ym+j        kym+j    kym+1
+[s−k
+  1,j+1 , sj+1,m+2 ] = s1,m+2 = a2m+1 , and, moreover, a2m+1 commutes with everything, we
+have
+                                x1 x2           x               x               x
+                     ~a~x a−k                    j            m+1          2m+1    −k
+                           j = s1,2 s1,3 · · · s1,j+1 · · · s2,m+2 · · · s1,m+2 · s1,j+1
+                                                x −k            x               x        +kxm+j
+                             = sy1,2
+                                  1 x2            j
+                                     s1,3 · · · s1,j+1         m+1
+                                                       · · · s2,m+2         2m+1
+                                                                    · · · s1,m+2                  .
+       xj
+Since sj−m+1,m+2   for m + 1 ≤ j ≤ 2m commutes with all other elements which are positioned
+on the rightside in Mal’cev basis, it follows
+                             x1 x2           xm             x           x
+                  ~a~x a−k                                 j            2m+1    −k
+                        j = s1,2 s1,3 · · · s1,m+1 · · · s1,j+1 · · · s1,m+2 · sj−m+1,m+2
+                                                            x −k                    x
+                          = sx1,2
+                               1 x2
+                                  s1,3 · · · sx1,m+1
+                                                m            j
+                                                     · · · sj−m+1,j+1         2m+1
+                                                                      · · · s1,m+2 .
+
+Finally, for j = 2m + 1, since a2m+1 = s1,m+1 is the last element in the product, we have
+                                          y1 y2           ym                y           −k
+                            ~a~x a−k                                    2m+1
+                                  2m+1 = s1,2 s1,3 · · · s1,m+1 · · · s1,m+2 .
+
+
+In conclusion, we have {t1 , t2 , . . . , t2m+1 , 1} as the Q-basis for the G-module. Hence, the size
+of the matrices under Nickel’s embedding is 2m + 2.
+
+                                                       19
+Now let us compute the size of the matrices obtained under Jennings’ embedding. First set
+ui = 1 − ai for 1 ≤ i ≤ m and vj = 1 − am+j for 1 ≤ j ≤ m and w = 1 − a2m+1 . Notice
+that ν(ui ) = ν(vi ) = 1 for all 1 ≤ i ≤ m and ν(w) = 2. Hence, the elements of the basis for
+QG/I 3 are of the following forms
+
+    • 1, w,
+
+    • ui , vi , u2i , vi2 for 1 ≤ i ≤ m,
+
+    • ui uj , vi vj for 1 ≤ i < j ≤ m or ui vj for 1 ≤ i, j ≤ m.
+
+The number of elements of the forms      ui , vi and u2i , vi2 is 4m and the number of elements of
+                                     2m
+the forms ui uj , vi vj and ui vj is 2 . As a result, the total number of basis elements is
+                                           
+                                            2m
+                                 2 + 4m +          = 2m2 + 3m + 2.
+                                              2
+
+
+
+
+6.2    Free nilpotent groups
+
+Let F (k, c) denote the free nilpotent group with k generators and nilpotency class c. For
+Nickel’s embedding we have an obvious lower bound: the Hirsch length. By Witt’s formula
+(see e. g. [4, Thm. 5.7] or [11, Thm. 5.11]), the Hirsch length is 1c kc + O( 1c kc−1 ). Theorem 5.2
+             upper bound of rk(Γc (G)) + c−1       i
+                                          P
+yields theP                                   i=0 k , which again by Witt’s formula is bounded
+               c−1
+by 1c kc + i=0 ki + O(kc/2 ) = 1c kc + kc−1 + O(kc−2 ). Thus, lower and upper bound lie only
+by a factor 1 + kc apart (plus lower order terms).
+On the other handPby [9, Prop. 6.1], we know that Jennings’ embedding of F (k, c) has
+dimension exactly ci=0 ki .
+
+
+6.3    Direct and central products
+
+Let G and H be two arbitrary τ -groups with Mal’cev bases ~a′ = (a1 , . . . , am ) and ~a′′ =
+(am+1 , . . . , an ) respectively. Then ~a = (a1 , . . . , am , am+1 , . . . , an ) is a Mal’cev basis of G × H.
+Let ti ∈ Z[x1 , . . . , xn ] with 1 ≤ i ≤ m be one of the coordinate functions defined by ~a. Then
+thi = ti for every h ∈ H – and thus also tgh             g
+                                                i = ti for every g ∈ G and h ∈ H because g and
+                               g
+h commute. Moreover, ti obviously does not depend on variables xm+1 , . . . , xn . Likewise for
+m + 1 ≤ i ≤ n, we have tgh               h                                   h
+                                  i = ti for every g ∈ G and h ∈ H and ti does not depend on
+                                        ′                         ′′
+variables x1 , . . . , xm . Thus, if Q ⊆ Z[x1 , . . . , xm ] and Q ⊆ Z[xm+1 , . . . , xn ] are the bases
+of G and H computed by Nickel’s algorithm, then Q = Q′ ∪ Q′′ ⊆ Z[x1 , . . . , xn ] is the basis
+for G × H which is computed by Nickel’s algorithm. Moreover, Q′ ∩ Q′′ = { 1 } because the
+sets of variables occurring in Q′ and Q′′ are disjoint (obviously, the constant polynomial is
+contained in both Q′ and Q′′ ). Thus, we have the following:
+
+
+                                                      20
+Proposition 6.2. Let M (resp. N ) be the dimension of Nickel’s embedding of G (resp.
+H) into U TM (Z) (resp. U TN (Z)). Then the Nickel’s embedding of G × H has dimension
+M + N − 1.
+
+Let us consider a slight generalization of the direct product: a very special type of the central
+product. The central product G ×C H of G and H is defined as G × H/ { am = an }. Of
+course, this depends on the Mal’cev bases chosen for G and H. A Mal’cev basis for the
+central product is (a1 , . . . , am−1 , am+1 , . . . , an ).
+For tgh
+     i with m 6= i 6= n the above considerations for the direct product hold also for the central
+                                                                                                           km−1
+product. It only remains to look at tgh                                                           k1
+                                                   n (x1 , . . . , xn ). If g ∈ G is of the form a1 · · · am−1 , we
+have tgn (x1 , . . . , xn ) = xn + pg (x1 , . . . , xm−1 ) for some polynomial pg .
+                                    k          k
+                                m+1
+Also, if h ∈ H is of the form am+1          n−1
+                                    · · · an−1  , we have thn (x1 , . . . , xn ) = xn +ph (xm+1 , . . . , xn−1 )
+                                                   ak
+for some polynomial ph . Moreover, tnn (x1 , . . . , xn ) = xn + k for k ∈ Z. An arbitrary
+                                                                               km−1
+element of G ×C H can be written as ghakn where g is of the form ak11 · · · am−1    and h
+                 k  m+1      k   n−1                         ghakn
+of the form am+1         · · · an−1  . Thus, we have tn              (x1 , . . . , xn ) = xn + pg (x1 , . . . , xm−1 ) +
+ph (xm+1 , . . . , xn−1 ) + k.
+Hence, if Q′ and Q′′ are the bases of G and H computed by Nickel’s algorithm, then Q =
+(Q′ ∪Q′′ )/ { xm = xn } is the basis for G×H which is computed by Nickel’s algorithm. Again,
+Q′ ∩ Q′′ = { 1 }, what leads to the following:
+
+Proposition 6.3. Let M (resp. N ) be the dimension of Nickel’s embedding of G (resp. H)
+into U TM (Z) (resp. U TN (Z)). Then the Nickel’s embedding of the central product G ×C H
+has dimension M + N − 2.
+
+Now, let us take a look at Jennings’ embedding. The following example shows that the
+dimension of the embedding of G × H is not even bounded by the product of the dimensions
+of the embeddings of G and H:
+Example 6.4. Let G = Zk = he1 , . . . , ek i for some k ∈ N and let H = Zc ⋊φ Z where
+the action Z = hai on Zc = hf1 , . . . , fc i is defined by φ(fc ) = fc and φ(fi ) = fi fi+1 for
+1 ≤ i ≤ c − 1 (we use multiplicative notation). Then G is nilpotent of class 1 and H is
+nilpotent of class c.
+The basis of the G-module produced by Jennings’ embedding is (1, 1 − e1 , . . . , 1 − ek ). For
+H theQbasis is more P  complicated. Set u0 = 1 − a and ui = 1 − fi for 1 ≤ i ≤ c. Then, the
+set { ci=0 uri i | r0 + ci=1 iri ≤ c } forms a basis
+                                                   Pof the the H-module produced by Jennings’
+                                                     c
+embedding. Now, every tuple (r1 , . . . , rc ) with i=1 iri = c defines a partition of the number
+c (i. e. a way how to write c as a sum of natural numbers). √   It is well-known that the number
+of different partitions of some number c is bounded by 2 c for some constant γ (see e. g.
+                                                              γ
+
+[15]).√ Therefore, the total number of basis elements for the embedding of H is bounded by
+c2 2γ c .
+Now, let us look at nthe basis produced for o G × H. This basis, in particular, contains all
+                       Qk     r i Pk
+elements of the form     i=0 vi    i=0 ri ≤ c   where v0 = 1− a and vi = 1− ei for 1 ≤ i ≤ k.
+
+
+                                                        21
+These terms can be identified with the set of polynomials in k + 1 variables and degree at
+most c: thus, there are at least k+c
+                                   c   many of them. If we assume that k = c, this means that
+the resulting basis
+                 √   has at least approximately 4k = 4c elements – a huge blow-up compared
+               γ
+to k + 1 and 2 .   c
+
+Note that this construction also works for central products: we simply choose G = Zk+1 and
+identify the last basis element with the central generator fc of H.
+
+
+7    Open Questions
+
+We have seen that, in general, the size of the output of Nickel’s algorithm does not depend
+polynomially on the Hirsch length of the input. However, by reordering the Mal’cev basis of
+unitriangular matrices, we could obtain a polynomial bound on the dimension of the matrix
+representation. Thus, the following remains open:
+
+    • What are tight upper and lower bounds on the dimension of Nickel’s embedding for
+      U Tm (Z)?
+
+    • Does every τ -group have a Mal’cev basis such that Nickel’s algorithm produces a matrix
+      representation of polynomial size?
+
+We conjecture that the answer is ’no’. If this conjecture is true, the following more general
+question remains open:
+
+    • Does every τ -group allow a matrix representation of polynomial (in the Hirsch length)
+      size? What is the minimal bound in terms of Hirsch length and nilpotency class?
+
+Independently of whether the answer is ’yes’ or ’no’, more precise lower and upper bounds
+on minimal matrix representations of τ -groups would be of great interest.
+Another open question is the time complexity of Nickel’s algorithm. We have seen, that it is
+not polynomial in the input size. Still the following question is of interest:
+
+    • Is the running time of Nickel’s algorithm polynomial in the dimension of the matrix
+      representation?
+
+The answer to this question is not obvious: Although the size of dimension of the embedding
+might be of polynomial size, still the number of monomials appearing during the computations
+might be exponential. In this case the running time also is exponential. There is no obvious
+reason why such a situation should not occur.
+If the nilpotency class is fixed, the dimension of the matrix representation is polynomial by
+Theorem 5.2.
+
+    • For fixed nilpotency class give a precise (polynomial) bound on the running time.
+
+
+                                             22
+References
+
+ [1] W. A. de Graaf and W. Nickel. Constructing faithful representations of finitely-generated
+     torsion-free nilpotent groups. J. Symbolic Comput., 33(1):31–41, 2002.
+
+ [2] B. Eick and D. Kahrobaei. Polycyclic groups: A new platform for cryptology? ArXiv
+     Mathematics e-prints, 2004.
+
+ [3] M. Habeeb and D. Kahrobaei. On the dimension of matrix representations of finitely
+     generated torsion free nilpotent groups. Groups Complexity Cryptology, 5(2):193–209,
+     2013.
+
+ [4] P. Hall. Nilpotent groups. Notes of lectures given at the Canadian Mathematical
+     Congress, summer seminar, University of Alberta, 12-30 August, 1957.
+
+ [5] S. A. Jennings. The group ring of a class of infinite nilpotent groups. Canad. J. Math.,
+     7:169–187, 1955.
+
+ [6] M. I. Kargapolov and J. I. Merzljakov. Fundamentals of the theory of groups, volume 62
+     of Graduate Texts in Mathematics. Springer-Verlag, New York-Berlin, 1979. Translated
+     from the second Russian edition by Robert G. Burns.
+
+ [7] C. R. Leedham-Green and L. H. Soicher. Symbolic collection using Deep Thought. LMS
+     J. Comput. Math., 1:9–24 (electronic), 1998.
+
+ [8] R. J. Lipton and Y. Zalcstein. Word problems solvable in logspace. J. ACM, 24:522–526,
+     1977.
+
+ [9] E. H. Lo and G. Ostheimer. A practical algorithm for finding matrix representations for
+     polycyclic groups. J. Symbolic Comput., 28(3):339–360, 1999.
+
+[10] J. MacDonald, A. G. Myasnikov, A. Nikolaev, and S. Vassileva. Logspace and
+     compressed-word computations in nilpotent groups. CoRR, abs/1503.03888, 2015.
+
+[11] W. Magnus, A. Karrass, and D. Solitar. Combinatorial Group Theory. Interscience
+     Publishers (New York), 1966. Reprint of the 2nd edition (1976): 2004.
+
+[12] A. Myasnikov and V. Roman’kov. A linear decomposition attack. Groups Complex.
+     Cryptol., 7(1):81–94, 2015.
+
+[13] W. Nickel. Matrix representations for torsion-free nilpotent groups by Deep Thought.
+     J. Algebra, 300(1):376–383, 2006.
+
+[14] D. V. Osin. Subgroup distortions in nilpotent groups. Comm. Algebra, 29(12):5439–5463,
+     2001.
+
+[15] W. d. A. Pribitkin.    Simple upper bounds for partition functions.      Ramanujan J.,
+     18(1):113–119, 2009.
+
+
+
+                                             23
+
