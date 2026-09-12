@@ -2319,3 +2319,18 @@ workers are live under the order768-fast prefix; the old workers were
 terminated and waited for by their controller. The source and launch
 manifest passes. The n7 snapshot at03:30:38 records29,340,000 checked
 nodes, six live verifiers, zero completed shards and41,322,228KiB RSS.
+
+
+## 2026-09-12T03:57:20.412630+00:00 — 19.61 five-ring C2 packet frozen
+
+Exact root matrices generate every commutator implication and enumerate
+all17,609 valid carpets over five rings. GAP finds3,048 enlargements and
+no failure of the carpet conditions. The independent matrix checker
+enumerates134,213 states across1,288 cases, including104 enlargements;
+an eight-element mutation rejects a false example whose initial data
+is not a carpet. All five searches and controls exit0. The36-file audit
+regenerates every input and replays the controls; its initial integer-vs-
+JSON-string histogram-key failure is retained and its corrected run
+exits0. No new complete count. The previous20.21 restart commit retains
+eight raw CR-only logs; diff-check flagged only those preserved bytes,
+and the source/document check with those raw logs excluded passed.

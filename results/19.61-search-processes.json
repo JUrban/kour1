@@ -1,0 +1,62 @@
+[
+  {
+    "ring": "f4",
+    "command": [
+      "bin/gap",
+      "-o",
+      "512m",
+      "results/19.61-f4-input.g",
+      "scripts/search_19_61.g"
+    ],
+    "returncode": 0,
+    "completed_utc": "2026-09-12T03:42:01.312316+00:00",
+    "elapsed_seconds": 5.927901530638337,
+    "log_sha256": "9da61f9ad0b20c6670eab6eef947ebfa76f0e677e32c744b7aea3a97ed1f4b30",
+    "script_sha256": "b3b1394197acef867c3326e8520da9452f02ec2bb0f41339bf84b3a3304d790b"
+  },
+  {
+    "ring": "dual",
+    "command": [
+      "bin/gap",
+      "-o",
+      "512m",
+      "results/19.61-dual-input.g",
+      "scripts/search_19_61.g"
+    ],
+    "returncode": 0,
+    "completed_utc": "2026-09-12T03:42:18.743195+00:00",
+    "elapsed_seconds": 17.429635369218886,
+    "log_sha256": "79e0bc917df3a152f1c87ae5f364b36342fd1681e10354185ed7a2c3486c4860",
+    "script_sha256": "b3b1394197acef867c3326e8520da9452f02ec2bb0f41339bf84b3a3304d790b"
+  },
+  {
+    "ring": "split",
+    "command": [
+      "bin/gap",
+      "-o",
+      "512m",
+      "results/19.61-split-input.g",
+      "scripts/search_19_61.g"
+    ],
+    "returncode": 0,
+    "completed_utc": "2026-09-12T03:42:34.466549+00:00",
+    "elapsed_seconds": 15.720685561187565,
+    "log_sha256": "fa2136d5910f8d48e184704bfb696f51e87687c007f1335a96646a85da77128b",
+    "script_sha256": "b3b1394197acef867c3326e8520da9452f02ec2bb0f41339bf84b3a3304d790b"
+  },
+  {
+    "ring": "z4",
+    "command": [
+      "bin/gap",
+      "-o",
+      "512m",
+      "results/19.61-z4-input.g",
+      "scripts/search_19_61.g"
+    ],
+    "returncode": 0,
+    "completed_utc": "2026-09-12T03:42:39.934188+00:00",
+    "elapsed_seconds": 5.465340096503496,
+    "log_sha256": "2042ce08603ec98b4fa26f7bced13fa073984dfd99fa8d67349cc32b2911b24f",
+    "script_sha256": "b3b1394197acef867c3326e8520da9452f02ec2bb0f41339bf84b3a3304d790b"
+  }
+]

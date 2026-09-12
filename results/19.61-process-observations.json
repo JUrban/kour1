@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-09-12T03:53:38.415117+00:00",
+  "preparation": {
+    "exit_code": 0,
+    "tool_chunk": "a42afe",
+    "sentinel": "PASS_1961_PREPARATION"
+  },
+  "f2_search": {
+    "exit_code": 0,
+    "tool_chunk": "4c9a15",
+    "sentinel": "PASS_1961_SEARCH f2 [ 64, 0, 0 ]"
+  },
+  "four_search_controller": {
+    "exit_code": 0,
+    "tool_chunk": "bf4905",
+    "child_records": "results/19.61-search-processes.json"
+  },
+  "independent_controls": {
+    "exit_code": 0,
+    "tool_chunk": "2d48cf",
+    "sentinel": "PASS_1961_CONTROLS"
+  }
+}
