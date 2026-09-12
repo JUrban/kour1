@@ -1,0 +1,44 @@
+{
+  "recorded_utc": "2026-09-12T03:13:27.573333+00:00",
+  "note": "Tool return codes were observed directly; this is not a subprocess-runner record. Exact completion times and elapsed durations were not recorded.",
+  "observations": [
+    {
+      "command": "bin/gap -o 2g scripts/search_20_21.g",
+      "script": "scripts/search_20_21.g",
+      "log": "results/20.21-search.log",
+      "observed_exit_code": 0,
+      "exit_tool_chunk": "27c37c",
+      "session_id": 59646,
+      "sentinel": "PASS_2021_SEARCH tested=22015",
+      "sha256": {
+        "scripts/search_20_21.g": "fd65a5bf097cdb468cfd33b8b6b07db8e1831fa906ecce31f4118c91b6eed407",
+        "results/20.21-search.log": "0cd10cfb316947621c38d3155c0dc5c606b01da23fcf08b35d6e4f1221386f8a"
+      }
+    },
+    {
+      "command": "bin/gap -o 2g scripts/control_20_21_gap.g",
+      "script": "scripts/control_20_21_gap.g",
+      "log": "results/20.21-table-export.log",
+      "observed_exit_code": 0,
+      "exit_tool_chunk": "fda6a3",
+      "session_id": 95058,
+      "sentinel": "PASS_2021_TABLE_EXPORT cases=25",
+      "sha256": {
+        "scripts/control_20_21_gap.g": "dbe36e16f987aeb44d0bbd535acdfe9e7d1e81ee8cdb182a21328ab47e5ced34",
+        "results/20.21-table-export.log": "40a57fdc6f5f998691556053b86bb002ab134af874598c6f3908e1dc68ec4d3b"
+      }
+    },
+    {
+      "command": "python3 scripts/check_20_21.py",
+      "script": "scripts/check_20_21.py",
+      "log": "results/20.21-controls.log",
+      "observed_exit_code": 0,
+      "exit_tool_chunk": "0d1eeb",
+      "sentinel": "PASS_2021_CONTROLS 25",
+      "sha256": {
+        "scripts/check_20_21.py": "7dd34d1720200fee4c7ccfa1dfaec490cfcb8686183a185e0163c831ad7b745b",
+        "results/20.21-controls.log": "d1a19a5979a16575a3c8c99c54dda5052390df1cf0b51183affa5bad22756016"
+      }
+    }
+  ]
+}

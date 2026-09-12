@@ -2265,3 +2265,15 @@ hashes pass, with no new count. A separate bounded20.21 GAP pilot
 now searches orders12,24,48,96,192,384 without using the withdrawn
 claim or the unaudited minimality reduction. Up to192 there are25
 groups with both quotient types and no matching kernel type.
+
+
+## 2026-09-12T03:14:00.519443+00:00 — 20.21 pilot frozen
+
+All22,015 catalogue groups in the six selected orders12,24,48,96,192,384
+were tested;1,241 admit C12 and123 have both quotient types. All kernel
+identifier pairs differ. The25 independent multiplication-table controls
+reconstruct43 normal subgroups of index12 and certify six nonisomorphic
+kernel pairs. A16-element coordinate mutation shows that isomorphic
+kernels with C4/V4 quotients alone are possible. The14-file audit exits0
+and replays all controls. This is bounded evidence only; no minimality
+reduction or withdrawn result is used, and the candidate count stays41.
