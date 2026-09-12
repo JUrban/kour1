@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-09-12T03:31:56.562769+00:00",
+  "stopped_previous_controller": {
+    "exit_code": 1,
+    "tool_chunk": "ccf6af",
+    "reason": "Intentional SIGTERM and cleanup; no completed result"
+  },
+  "diagnostic": {
+    "exit_code": 0,
+    "tool_chunk": "f9a5cc",
+    "command": "bin/gap -o 256m -c 'for i in [1..32] do t:=Runtime();g:=SmallGroup(768,i);Print([i,Runtime()-t,AbelianInvariants(g),IsNilpotentGroup(g)],\"\\n\");od;Print(\"PASS_2021_DIAGNOSTIC\\n\");QUIT;'"
+  },
+  "note": "Fast control return code is recorded after inspection in the run log; live fast search has no proof status.",
+  "fast_control": {
+    "exit_code": 0,
+    "exit_tool_chunk": "806b58",
+    "command": "python3 scripts/run_20_21_fast.py 96 --shards 2",
+    "totals": [
+      231,
+      31,
+      4,
+      0
+    ]
+  },
+  "fast_launch": {
+    "tool_chunk": "c294a7",
+    "exec_session": 46743,
+    "status": "RUNNING_NO_RESULT"
+  }
+}

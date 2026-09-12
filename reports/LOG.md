@@ -2306,3 +2306,16 @@ size. This yields log|F_n(G)|<=A n^c [G:N]^n and an integral limit when
 G/N has a nonabelian monolith. The partial proof and six source hashes
 are archived; general21.102 and priority remain unresolved. A broader
 early-morning triage note records unproved leads and rejected shortcuts.
+
+
+## 2026-09-12T03:33:03.146802+00:00 — exact nilpotency filter speeds20.21 extension
+
+The first32 order768 catalogue entries are nilpotent. The slow job was
+intentionally stopped, with all outputs preserved and no result claimed.
+The replacement skips nilpotent groups, which cannot have A4 quotients,
+after incrementing the unchanged C12-eligibility counter. Its two-shard
+order96 control exits0 and matches all frozen rows. Eight1GiB replacement
+workers are live under the order768-fast prefix; the old workers were
+terminated and waited for by their controller. The source and launch
+manifest passes. The n7 snapshot at03:30:38 records29,340,000 checked
+nodes, six live verifiers, zero completed shards and41,322,228KiB RSS.

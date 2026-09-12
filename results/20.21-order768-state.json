@@ -1,0 +1,190 @@
+{
+  "status": "RUNNING",
+  "order": 768,
+  "total_groups": 1090235,
+  "shards": 8,
+  "workspace_gib_each": 1,
+  "controller_pid": 216217,
+  "started_utc": "2026-09-12T03:20:09.167728+00:00",
+  "script_sha256": "367ce479e4fadd394c9cadf5804f2a0c37f9aea4e19449ddaeafbfc2d6d7426a",
+  "runner_sha256": "9d0afdda364325b462b9b601cf738515aa17ed1975280ae3902c423e157f1025",
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 216218,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=0;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-shard0.grows\";",
+        "/project/scripts/search_20_21_shard.g"
+      ],
+      "log": "results/20.21-order768-shard0.log",
+      "rows": "results/20.21-order768-shard0.grows",
+      "returncode": 1,
+      "observed_completion_utc": "2026-09-12T03:31:27.658821+00:00"
+    },
+    {
+      "index": 1,
+      "pid": 216219,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=1;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-shard1.grows\";",
+        "/project/scripts/search_20_21_shard.g"
+      ],
+      "log": "results/20.21-order768-shard1.log",
+      "rows": "results/20.21-order768-shard1.grows",
+      "returncode": null
+    },
+    {
+      "index": 2,
+      "pid": 216220,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=2;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-shard2.grows\";",
+        "/project/scripts/search_20_21_shard.g"
+      ],
+      "log": "results/20.21-order768-shard2.log",
+      "rows": "results/20.21-order768-shard2.grows",
+      "returncode": null
+    },
+    {
+      "index": 3,
+      "pid": 216221,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=3;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-shard3.grows\";",
+        "/project/scripts/search_20_21_shard.g"
+      ],
+      "log": "results/20.21-order768-shard3.log",
+      "rows": "results/20.21-order768-shard3.grows",
+      "returncode": null
+    },
+    {
+      "index": 4,
+      "pid": 216222,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=4;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-shard4.grows\";",
+        "/project/scripts/search_20_21_shard.g"
+      ],
+      "log": "results/20.21-order768-shard4.log",
+      "rows": "results/20.21-order768-shard4.grows",
+      "returncode": null
+    },
+    {
+      "index": 5,
+      "pid": 216223,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=5;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-shard5.grows\";",
+        "/project/scripts/search_20_21_shard.g"
+      ],
+      "log": "results/20.21-order768-shard5.log",
+      "rows": "results/20.21-order768-shard5.grows",
+      "returncode": null
+    },
+    {
+      "index": 6,
+      "pid": 216224,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=6;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-shard6.grows\";",
+        "/project/scripts/search_20_21_shard.g"
+      ],
+      "log": "results/20.21-order768-shard6.log",
+      "rows": "results/20.21-order768-shard6.grows",
+      "returncode": null
+    },
+    {
+      "index": 7,
+      "pid": 216225,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=7;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-shard7.grows\";",
+        "/project/scripts/search_20_21_shard.g"
+      ],
+      "log": "results/20.21-order768-shard7.log",
+      "rows": "results/20.21-order768-shard7.grows",
+      "returncode": null
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "status": "COMPLETE_NO_CANDIDATE",
+  "order": 96,
+  "total_groups": 231,
+  "shards": 2,
+  "workspace_gib_each": 1,
+  "controller_pid": 217841,
+  "started_utc": "2026-09-12T03:31:28.097515+00:00",
+  "script_sha256": "2050eeaf2227a3045ac659d62fe699cb4e77e91f1769096e5ac5885916bfb370",
+  "runner_sha256": "9c35f602bbc0f112e95d2240f77cca4b352fc4df195e473c069b7ccb88c03a2c",
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 217846,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=96;SearchIndex2021:=0;SearchShards2021:=2;SearchRows2021:=\"/project/results/20.21-order96-fast-shard0.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order96-fast-shard0.log",
+      "rows": "results/20.21-order96-fast-shard0.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:31:30.871554+00:00",
+      "sha256": {
+        "results/20.21-order96-fast-shard0.log": "97c5f95ba7a5c4009a380c70617d27d76b7e924173faa0a0a13812ada54952b2",
+        "results/20.21-order96-fast-shard0.grows": "f61981d06049506d2e5eab0598badd857373badadab8fd472766b71063ffbbc9"
+      }
+    },
+    {
+      "index": 1,
+      "pid": 217847,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=96;SearchIndex2021:=1;SearchShards2021:=2;SearchRows2021:=\"/project/results/20.21-order96-fast-shard1.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order96-fast-shard1.log",
+      "rows": "results/20.21-order96-fast-shard1.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:31:30.873729+00:00",
+      "sha256": {
+        "results/20.21-order96-fast-shard1.log": "764dad49f2bd4ded713ddea9e92251fe54cffdc67b2e84ec9deaa990fc2ba796",
+        "results/20.21-order96-fast-shard1.grows": "7f63755ede85fb0a0944969ae14fa7983c04ee3b64a4343c2dc61cbe92c79bfc"
+      }
+    }
+  ],
+  "completed_utc": "2026-09-12T03:31:30.889888+00:00",
+  "elapsed_seconds": 2.7922863690182567,
+  "totals": {
+    "tested": 231,
+    "eligible": 31,
+    "both": 4,
+    "hits": 0
+  },
+  "shard_counts": [
+    [
+      96,
+      0,
+      2,
+      116,
+      14,
+      2,
+      0
+    ],
+    [
+      96,
+      1,
+      2,
+      115,
+      17,
+      2,
+      0
+    ]
+  ]
+}
