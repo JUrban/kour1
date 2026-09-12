@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-09-12T05:03:53.262157+00:00",
+  "status": "finite diagnostic only, not a problem resolution",
+  "processes": [
+    {
+      "task": "S4 control",
+      "exit_code": 0,
+      "tool_chunk": "d567fe"
+    },
+    {
+      "task": "affine exact arithmetic",
+      "exit_code": 0,
+      "tool_chunk": "165dbd"
+    }
+  ],
+  "sha256": {
+    "research/14.97-finite-cover-diagnostic.md": "6348be428ed7c8bf5eaf6792c696c8392769e8fd065767271055869b4001d8ca",
+    "results/14.97-affine-diagnostic.json": "2c5f1ff2df369db9ad31ad1ed6607b346a70848b902bf1b19ee467ec2680a7a0",
+    "results/14.97-s4-diagnostic.log": "1f46e84abb46fb88a95e3707bb5f9465f649e892df33838738f927f668b9db9b"
+  }
+}
