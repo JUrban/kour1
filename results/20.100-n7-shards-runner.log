@@ -1,3 +1,80 @@
 {"status": "CHECKING_CERTIFICATE_INTEGRITY", "n": 7, "shards": 6, "workspace_gib_each": 14}
 {"status": "INTEGRITY_CHECKED_PENDING_MATHEMATICAL_VERIFICATION", "observed_utc": "2026-09-11T11:12:29.965348+00:00", "n": 7, "prime_bound": 8, "states": 42891332, "leaves": 5435268, "edges": 786577344, "certificate_sha256": "e1b116fa80a4b77a03256d69480b996318522c227ef48e6be7fdf62cbd8bcd8c", "uncompressed_sha256": "4c3b5dea1a375efbe672107afd6d772426c51a901118a93de289a8de91359a1f", "shards": 6, "workspace_gib_each": 14}
 {"status": "VERIFYING_SHARDS", "n": 7, "jobs": [{"index": 0, "pid": 77396, "log": "/project/results/20.100-n7-shard0-verifier.log", "command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "14g", "-c", "ProofShardIndex:=0;ProofShardCount:=6;", "/project/scripts/verify_20_100_shard.g", "/project/results/20.100-n7-certificate.g.gz"]}, {"index": 1, "pid": 77397, "log": "/project/results/20.100-n7-shard1-verifier.log", "command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "14g", "-c", "ProofShardIndex:=1;ProofShardCount:=6;", "/project/scripts/verify_20_100_shard.g", "/project/results/20.100-n7-certificate.g.gz"]}, {"index": 2, "pid": 77398, "log": "/project/results/20.100-n7-shard2-verifier.log", "command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "14g", "-c", "ProofShardIndex:=2;ProofShardCount:=6;", "/project/scripts/verify_20_100_shard.g", "/project/results/20.100-n7-certificate.g.gz"]}, {"index": 3, "pid": 77399, "log": "/project/results/20.100-n7-shard3-verifier.log", "command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "14g", "-c", "ProofShardIndex:=3;ProofShardCount:=6;", "/project/scripts/verify_20_100_shard.g", "/project/results/20.100-n7-certificate.g.gz"]}, {"index": 4, "pid": 77400, "log": "/project/results/20.100-n7-shard4-verifier.log", "command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "14g", "-c", "ProofShardIndex:=4;ProofShardCount:=6;", "/project/scripts/verify_20_100_shard.g", "/project/results/20.100-n7-certificate.g.gz"]}, {"index": 5, "pid": 77401, "log": "/project/results/20.100-n7-shard5-verifier.log", "command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "14g", "-c", "ProofShardIndex:=5;ProofShardCount:=6;", "/project/scripts/verify_20_100_shard.g", "/project/results/20.100-n7-certificate.g.gz"]}]}
+{
+  "status": "VERIFIED",
+  "n": 7,
+  "prime_bound": 8,
+  "certificate_sha256": "e1b116fa80a4b77a03256d69480b996318522c227ef48e6be7fdf62cbd8bcd8c",
+  "uncompressed_sha256": "4c3b5dea1a375efbe672107afd6d772426c51a901118a93de289a8de91359a1f",
+  "checker_sha256": "a5e698d9e27d17096eff7898f93781edd607db41d47b7b500d1a0783416f29de",
+  "shards": [
+    {
+      "n": 7,
+      "index": 0,
+      "shards": 6,
+      "total_nodes": 42891332,
+      "checked_nodes": 7148556,
+      "leaves": 904153,
+      "edges": 131132463,
+      "relation_implications": 908104898
+    },
+    {
+      "n": 7,
+      "index": 1,
+      "shards": 6,
+      "total_nodes": 42891332,
+      "checked_nodes": 7148556,
+      "leaves": 907710,
+      "edges": 131057766,
+      "relation_implications": 907589977
+    },
+    {
+      "n": 7,
+      "index": 2,
+      "shards": 6,
+      "total_nodes": 42891332,
+      "checked_nodes": 7148555,
+      "leaves": 906191,
+      "edges": 131089644,
+      "relation_implications": 907822484
+    },
+    {
+      "n": 7,
+      "index": 3,
+      "shards": 6,
+      "total_nodes": 42891332,
+      "checked_nodes": 7148555,
+      "leaves": 905729,
+      "edges": 131099346,
+      "relation_implications": 907884384
+    },
+    {
+      "n": 7,
+      "index": 4,
+      "shards": 6,
+      "total_nodes": 42891332,
+      "checked_nodes": 7148555,
+      "leaves": 905830,
+      "edges": 131097225,
+      "relation_implications": 907869092
+    },
+    {
+      "n": 7,
+      "index": 5,
+      "shards": 6,
+      "total_nodes": 42891332,
+      "checked_nodes": 7148555,
+      "leaves": 905655,
+      "edges": 131100900,
+      "relation_implications": 907911220
+    }
+  ],
+  "totals": {
+    "checked_nodes": 42891332,
+    "leaves": 5435268,
+    "edges": 786577344,
+    "relation_implications": 5447182055
+  },
+  "completed_utc": "2026-09-12T13:08:05.432891+00:00"
+}

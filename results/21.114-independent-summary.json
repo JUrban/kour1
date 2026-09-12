@@ -1,0 +1,524 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "source_id": [
+        128,
+        854
+      ],
+      "source_order": 512,
+      "quotient_order": 128,
+      "kernel_order": 4,
+      "kernel_generator": 484,
+      "derived_orders": [
+        512,
+        32,
+        2,
+        1
+      ],
+      "second_derived_witness": [
+        3,
+        184,
+        177
+      ],
+      "quotient_abelianization": 16,
+      "quotient_subgroups": 380,
+      "subgroup_distribution": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          31
+        ],
+        [
+          4,
+          4,
+          107
+        ],
+        [
+          8,
+          4,
+          64
+        ],
+        [
+          8,
+          8,
+          67
+        ],
+        [
+          16,
+          8,
+          60
+        ],
+        [
+          16,
+          16,
+          15
+        ],
+        [
+          32,
+          8,
+          20
+        ],
+        [
+          32,
+          16,
+          7
+        ],
+        [
+          64,
+          8,
+          4
+        ],
+        [
+          64,
+          16,
+          3
+        ],
+        [
+          128,
+          16,
+          1
+        ]
+      ],
+      "source_abelianization": 16,
+      "source_maximum_subgroup_abelianization": 64,
+      "source_maximizing_subgroup": [
+        0,
+        9,
+        14,
+        20,
+        29,
+        34,
+        43,
+        50,
+        66,
+        72,
+        81,
+        91,
+        100,
+        111,
+        113,
+        116,
+        125,
+        131,
+        143,
+        148,
+        157,
+        170,
+        172,
+        177,
+        186,
+        199,
+        202,
+        208,
+        226,
+        232,
+        241,
+        249,
+        256,
+        260,
+        271,
+        276,
+        284,
+        292,
+        301,
+        307,
+        309,
+        314,
+        323,
+        326,
+        335,
+        347,
+        354,
+        361,
+        370,
+        377,
+        384,
+        394,
+        399,
+        401,
+        409,
+        422,
+        425,
+        443,
+        451,
+        455,
+        474,
+        482,
+        484,
+        488
+      ],
+      "source_maximizing_subgroup_derived": [
+        0
+      ],
+      "lift_distribution": [
+        [
+          4,
+          4,
+          1
+        ],
+        [
+          8,
+          8,
+          31
+        ],
+        [
+          16,
+          8,
+          40
+        ],
+        [
+          16,
+          16,
+          67
+        ],
+        [
+          32,
+          8,
+          32
+        ],
+        [
+          32,
+          16,
+          80
+        ],
+        [
+          32,
+          32,
+          19
+        ],
+        [
+          64,
+          16,
+          54
+        ],
+        [
+          64,
+          32,
+          20
+        ],
+        [
+          64,
+          64,
+          1
+        ],
+        [
+          128,
+          8,
+          4
+        ],
+        [
+          128,
+          16,
+          19
+        ],
+        [
+          128,
+          32,
+          4
+        ],
+        [
+          256,
+          16,
+          6
+        ],
+        [
+          256,
+          32,
+          1
+        ],
+        [
+          512,
+          16,
+          1
+        ]
+      ],
+      "constructed_order": 8192,
+      "constructed_abelianization": 256,
+      "stats": {
+        "permutation_edges": 2176,
+        "table_entries": 278528,
+        "commutator_pairs": 2015745,
+        "homomorphism_products": 262144,
+        "quotient_subgroups": 380
+      }
+    },
+    {
+      "source_id": [
+        128,
+        860
+      ],
+      "source_order": 512,
+      "quotient_order": 128,
+      "kernel_order": 4,
+      "kernel_generator": 239,
+      "derived_orders": [
+        512,
+        32,
+        2,
+        1
+      ],
+      "second_derived_witness": [
+        27,
+        193,
+        259
+      ],
+      "quotient_abelianization": 16,
+      "quotient_subgroups": 396,
+      "subgroup_distribution": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          31
+        ],
+        [
+          4,
+          4,
+          123
+        ],
+        [
+          8,
+          4,
+          64
+        ],
+        [
+          8,
+          8,
+          67
+        ],
+        [
+          16,
+          8,
+          60
+        ],
+        [
+          16,
+          16,
+          15
+        ],
+        [
+          32,
+          8,
+          20
+        ],
+        [
+          32,
+          16,
+          7
+        ],
+        [
+          64,
+          8,
+          4
+        ],
+        [
+          64,
+          16,
+          3
+        ],
+        [
+          128,
+          16,
+          1
+        ]
+      ],
+      "source_abelianization": 16,
+      "source_maximum_subgroup_abelianization": 64,
+      "source_maximizing_subgroup": [
+        0,
+        3,
+        5,
+        7,
+        49,
+        51,
+        53,
+        54,
+        89,
+        90,
+        92,
+        94,
+        105,
+        106,
+        108,
+        110,
+        169,
+        170,
+        172,
+        174,
+        192,
+        194,
+        196,
+        199,
+        232,
+        235,
+        237,
+        239,
+        256,
+        259,
+        261,
+        263,
+        313,
+        315,
+        317,
+        318,
+        321,
+        323,
+        325,
+        326,
+        344,
+        347,
+        349,
+        351,
+        409,
+        410,
+        412,
+        414,
+        441,
+        443,
+        445,
+        446,
+        456,
+        458,
+        460,
+        463,
+        464,
+        466,
+        468,
+        471,
+        504,
+        506,
+        508,
+        511
+      ],
+      "source_maximizing_subgroup_derived": [
+        0
+      ],
+      "lift_distribution": [
+        [
+          4,
+          4,
+          1
+        ],
+        [
+          8,
+          8,
+          31
+        ],
+        [
+          16,
+          8,
+          40
+        ],
+        [
+          16,
+          16,
+          83
+        ],
+        [
+          32,
+          8,
+          32
+        ],
+        [
+          32,
+          16,
+          80
+        ],
+        [
+          32,
+          32,
+          19
+        ],
+        [
+          64,
+          16,
+          54
+        ],
+        [
+          64,
+          32,
+          16
+        ],
+        [
+          64,
+          64,
+          5
+        ],
+        [
+          128,
+          8,
+          4
+        ],
+        [
+          128,
+          16,
+          19
+        ],
+        [
+          128,
+          32,
+          2
+        ],
+        [
+          128,
+          64,
+          2
+        ],
+        [
+          256,
+          8,
+          4
+        ],
+        [
+          256,
+          16,
+          2
+        ],
+        [
+          256,
+          32,
+          1
+        ],
+        [
+          512,
+          16,
+          1
+        ]
+      ],
+      "constructed_order": 8192,
+      "constructed_abelianization": 256,
+      "stats": {
+        "permutation_edges": 2176,
+        "table_entries": 278528,
+        "commutator_pairs": 2020097,
+        "homomorphism_products": 262144,
+        "quotient_subgroups": 396
+      }
+    }
+  ],
+  "stats": {
+    "permutation_edges": 4352,
+    "table_entries": 557056,
+    "commutator_pairs": 4035842,
+    "homomorphism_products": 524288,
+    "quotient_subgroups": 776
+  },
+  "rejected_corruptions": [
+    "permutation",
+    "edge",
+    "kernel",
+    "map",
+    "order"
+  ],
+  "scope": "Exact permutation models, full quotient subgroup enumeration, central maps and derived series. The resulting central-product inequality is proved in the companion mathematical note."
+}

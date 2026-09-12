@@ -108,7 +108,8 @@
         "ProofShardIndex:=4;ProofShardCount:=6;",
         "/project/scripts/verify_20_100_shard.g",
         "/project/results/20.100-n7-certificate.g.gz"
-      ]
+      ],
+      "returncode": 0
     },
     {
       "index": 5,
@@ -129,7 +130,8 @@
         "ProofShardIndex:=5;ProofShardCount:=6;",
         "/project/scripts/verify_20_100_shard.g",
         "/project/results/20.100-n7-certificate.g.gz"
-      ]
+      ],
+      "returncode": 0
     }
   ],
   "certificate_sha256": "e1b116fa80a4b77a03256d69480b996318522c227ef48e6be7fdf62cbd8bcd8c",
@@ -137,5 +139,6 @@
   "workspace_gib_each": 14,
   "runner_sha256": "ab8477c2267f6b0984176ea470aa7325ec1797508bac4cc63b2d702608522095",
   "controller_pid": 77136,
-  "status": "VERIFYING"
+  "status": "VERIFIED",
+  "completed_utc": "2026-09-12T13:08:05.432891+00:00"
 }
