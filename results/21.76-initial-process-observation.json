@@ -1,0 +1,33 @@
+{
+  "observed_utc": "2026-09-12T09:45:15.947516+00:00",
+  "initial_pilot": {
+    "actual_exit_code": 0,
+    "tool_chunk": "d8b378",
+    "scope": "Original inline BFS retained as pilot JSON; exact code is reconstructed and replayed by prepare_21_76.py."
+  },
+  "first_wrapper": {
+    "actual_exit_code": 1,
+    "tool_chunk": "1f9922",
+    "start_chunk": "33b52a",
+    "session_id": 67763,
+    "reason": "GAP returned zero but its stderr contained two syntax warnings; controls did not run in this rejected wrapper."
+  },
+  "corrected_gap_and_controls": {
+    "actual_exit_code": 0,
+    "tool_chunk": "930384",
+    "start_chunk": "522504",
+    "session_id": 84444
+  },
+  "degrees": {
+    "actual_exit_code": 0,
+    "tool_chunk": "4c978e",
+    "start_chunk": "768ad0",
+    "session_id": 70781
+  },
+  "closed_pairs_download": {
+    "actual_exit_code": 0,
+    "tool_chunk": "f7c58f",
+    "start_chunk": "859e4e",
+    "session_id": 68539
+  }
+}

@@ -2617,3 +2617,22 @@ pages of Itarova--Koibaev2019 were read and printed p.28 viewed; their
 result is a partial decomposition theorem with imported net lemmas.
 The attempted 2015 download failed certificate verification and is not
 imported. Candidate count remains 43.
+
+## 2026-09-12 09:46 UTC — 21.76 complete candidate
+
+The 37-file replay passed with actual exit0 (tool chunk5bfcf5), making
+21.76 the44th complete candidate. The main construction works over
+k(x,y) for every field k and all n>=3; the alternate F9(t) construction
+uses an exact120-element finite group. Both proofs are self-contained.
+The polynomial-pair lemma is prior Koibaev2011 and credited; its full
+six-page source and two theorem/proof images were read. The2021 cited
+characteristic-zero paper was read through the web but its direct
+download returned403. Seven deliberately corrupted certificates fail;
+36,432 polynomial words,5,196 matrix-unit controls and all14,400 finite
+matrix products pass. The initial GAP warnings and rejected wrapper
+are retained. No outside review or novelty confirmation is claimed.
+
+At09:37:25 all six n7 verification workers remained live. The updated
+progress file is retained; no full n7 conclusion is claimed.
+A separate nonclosed-pair lift now looks promising for19.48; its plan
+is written, but it is not yet counted.
