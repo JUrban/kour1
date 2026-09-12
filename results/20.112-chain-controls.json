@@ -1,0 +1,27 @@
+{
+  "status": "PASS_DIRECT_CERTIFICATES",
+  "groups": 15,
+  "original_retained_cases": 12,
+  "distinct_quotient_models": 3,
+  "controls": {
+    "central_steps": 157,
+    "chain_edges": 61,
+    "maximal_cosets": 227,
+    "nilpotent_factors": 137,
+    "permutation_edges": 37152,
+    "sylow_chains": 30,
+    "table_entries": 25380864
+  },
+  "rejected_mutations": [
+    "cayley",
+    "normalizer",
+    "core",
+    "tower",
+    "missing_edge"
+  ],
+  "imported": [
+    "GAP SmallGroups catalogue labels and completeness",
+    "exact Frattini identification and quotient-model identification"
+  ],
+  "new_complete_candidates_added": 0
+}

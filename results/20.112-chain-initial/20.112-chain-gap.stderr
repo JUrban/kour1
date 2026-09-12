@@ -1,0 +1,18 @@
+Syntax warning: Unbound global variable in scripts/check_20_112_chains.g:48
+  if not ForAny(jobs20112,x->x.id=qi20112) then
+                                  ^^^^^^^
+Syntax warning: Unbound global variable in scripts/check_20_112_chains.g:57
+  Ids20112:=h->List(GeneratorsOfGroup(h),x->Position(elems20112,x)-1);;
+                                                     ^^^^^^^^^^
+Syntax warning: Unbound global variable in scripts/check_20_112_chains.g:61
+    ",\"permutations\":",List(gens20112,x->List([1..LargestMovedPoint(g20112)],i->i^x-1)),
+                                                                      ^^^^^^
+Syntax warning: Unbound global variable in scripts/check_20_112_chains.g:62
+    ",\"cayley\":",List(elems20112,x->List(gens20112,y->Position(elems20112,x*y)-1)),
+                                           ^^^^^^^^^
+Syntax warning: Unbound global variable in scripts/check_20_112_chains.g:62
+    ",\"cayley\":",List(elems20112,x->List(gens20112,y->Position(elems20112,x*y)-1)),
+                                                                 ^^^^^^^^^^
+Syntax warning: Unbound global variable in scripts/check_20_112_chains.g:75
+      tower20112:=List(FitTower20112(Image(hom20112)),x->PreImage(hom20112,x));
+                                                                  ^^^^^^^^

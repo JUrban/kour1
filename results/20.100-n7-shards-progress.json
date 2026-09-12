@@ -1,12 +1,11 @@
 {
-  "observed_utc": "2026-09-12T10:56:12.658249+00:00",
+  "observed_utc": "2026-09-12T11:17:47.757288+00:00",
   "n": 7,
   "verifier_mode": "sharded",
   "shard_count": 6,
-  "completed_shards": 3,
+  "completed_shards": 4,
   "verified_live_pids": [
     77396,
-    77399,
     77400
   ],
   "status": "VERIFYING",
@@ -23,10 +22,10 @@
       "returncode": null,
       "last_progress": {
         "index": 0,
-        "checked_nodes": 6960000,
-        "last_id": 41759995,
-        "edges": 127590393,
-        "cpu_ms": 85344448
+        "checked_nodes": 7100000,
+        "last_id": 42599995,
+        "edges": 130224507,
+        "cpu_ms": 86591548
       },
       "rss_kib": 9902644
     },
@@ -59,16 +58,15 @@
     {
       "index": 3,
       "pid": 77399,
-      "verified_live": true,
+      "verified_live": false,
       "returncode": null,
       "last_progress": {
         "index": 3,
-        "checked_nodes": 7020000,
-        "last_id": 42119998,
-        "edges": 128684724,
-        "cpu_ms": 85360545
-      },
-      "rss_kib": 9903140
+        "checked_nodes": 7140000,
+        "last_id": 42839998,
+        "edges": 130944723,
+        "cpu_ms": 86479313
+      }
     },
     {
       "index": 4,
@@ -77,10 +75,10 @@
       "returncode": null,
       "last_progress": {
         "index": 4,
-        "checked_nodes": 6450000,
-        "last_id": 38699999,
-        "edges": 118039551,
-        "cpu_ms": 85300582
+        "checked_nodes": 6550000,
+        "last_id": 39299999,
+        "edges": 119923377,
+        "cpu_ms": 86525434
       },
       "rss_kib": 9006128
     },
@@ -98,6 +96,6 @@
       }
     }
   ],
-  "verified_live_rss_kib": 28811912,
+  "verified_live_rss_kib": 18908772,
   "scope": "Progress snapshot. A complete certificate has no proof status until every shard and the aggregate pass. Integrity is bound to the prior full gzip read by the checked compressed SHA256."
 }

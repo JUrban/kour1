@@ -2686,3 +2686,13 @@ The35-file evidence replay completed with actual exit0 and terminal sentinel (to
 The complete Poss1975 PDF was finally obtained through its publisher DOI. All six pages were read and two viewed. It proves constant-embedding special cases and states one higher-rank case without proof, leaving17.115 unresolved. Both full questions remain open here. New complete candidates44, outside reviews0.
 
 n=7 snapshot 2026-09-12T10:56:12.658249+00:00: 3 shard pass markers, live PIDs [77396, 77399, 77400], status VERIFYING. No full n=7 claim before the completed aggregate.
+
+## 2026-09-12T11:17:45.887042+00:00: independent20.112 subgroup-chain audit
+
+Confirmed GAP4.16.1 and the absence of installed groups at the queried larger orders2592,2916,3888,5184,5832,7776,10368; no search there is claimed. Rechecked the12 retained cases from the original8,339-group N^3 screen, plus3 distinct quotient models, by maximal-subgroup/core/Fitting-series search.
+
+A separate Python checker reconstructs all15 groups from faithful permutations and verifies37,152 generator edges,25,380,864 products,30 complete Sylow-normalizer chains,61 maximal steps and137 nilpotent factors. Five different corruptions are rejected. The original catalogue/Frattini identifications remain GAP imports; direct positive membership of the original12 groups does not depend on the Frattini identifications.
+
+The initial GAP run returned0 with a sentinel but six syntax warnings; its wrapper correctly returned1 and its exact evidence is retained. The corrected GAP runner returned0 (7d80d3), independent Python returned0 (140c43), and the full28-file audit plus exact dual replay returned0 (59a581). General20.112 remains unresolved. New complete candidates44, outside reviews0.
+
+The report also records the elementary central-Frattini lifting case with no novelty claim. All original screen files and source hashes remain unchanged. The n=7 controller continues; at this update shard3 has ended, and workers0 and4 remain active. No aggregate proof claim.
