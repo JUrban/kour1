@@ -148,8 +148,10 @@ not a new mathematical replay of all 46 proofs. See the
 [PDF review](pdf-statement-review.md).
 
 The final-phase [selected proof reread](../research/closeout-proof-review.md)
-records exactly which longer arguments were read again and which points were
-checked. It is same-agent review. Imported classical and published results
+and [addendum](../research/closeout-proof-review-addendum.md) record complete
+rereads of selected proof texts for seventeen candidates and several partial
+proofs, with the particular points checked. This is same-agent review.
+Imported classical and published results
 remain dependencies; the per-candidate source audits distinguish a theorem
 statement read from a full source proof audited.
 
