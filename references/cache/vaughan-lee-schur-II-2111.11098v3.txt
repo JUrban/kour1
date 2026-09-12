@@ -1,0 +1,1188 @@
+                                                         Schur’s exponent conjecture II
+arXiv:2111.11098v3 [math.GR] 28 Dec 2021
+
+
+
+
+                                                                      Michael Vaughan-Lee
+                                                                           December 2021
+
+
+                                                                                Abstract
+                                                    Primoz Moravec published a very important paper in 2007 where
+                                                he proved that if G is a finite group of exponent n then the expo-
+                                                nent of the Schur multiplier of G can be bounded by a function f (n)
+                                                depending only on n. Moravec does not give a value for f (n), but
+                                                actually his proof shows that we can take f (n) = ne where e is the
+                                                order of b−n a−n (ab)n in the Schur multiplier of R(2, n). (Here R(2, n)
+                                                is the largest finite two generator group of exponent n, and we take
+                                                a, b to be the generators of R(2, n).) It is an easy hand calculation to
+                                                show that e = n for n = 2, 3, and it is a straightforward computation
+                                                with the p-quotient algorithm to show that e = n for n = 4, 5, 7. The
+                                                groups R(2, 8) and R(2, 9) are way out of range of the p-quotient algo-
+                                                rithm, even with a modern supercomputer. But we are able to show
+                                                that e ≥ n for n = 8, 9. Moravec’s proof also shows that if G is a
+                                                finite group of exponent n with nilpotency class c, then the exponent
+                                                of the Schur multiplier of G is bounded by ne where e is the order of
+                                                b−n a−n (ab)n in the Schur multiplier of the class c quotient R(2, n; c) of
+                                                R(2, n). If q is a prime power we let eq,c be the order of b−q a−q (ab)q in
+                                                the Schur multiplier of R(2, q; c). We are able to show that epk ,p2 −p−1
+                                                divides p for all prime powers pk . If k > 2 then e2k ,c equals 2 for c < 4,
+                                                equals 4 for 4 ≤ c ≤ 11, and equals 8 for c = 12. If k > 1 then e3k ,c
+                                                equals 1 for c < 3, equals 3 for 3 ≤ c < 12, and equals 9 for c = 12.
+                                                    We also investigate the order of [b, a] in a Schur cover for R(2, q; c).
+
+
+                                           1    Introduction
+                                           There is a long-standing conjecture attributed to I. Schur that the exponent
+                                           of the Schur multiplier, M(G), of a finite group G divides the exponent of G.
+                                           It is easy to show that this conjecture holds true for groups of exponent 2 and
+
+
+                                                                                     1
+exponent 3, but a counterexample in exponent 4 was found by Bayes, Kautsky
+and Wamsley [1] in 1974. The conjecture remained open for odd exponent
+until 2020, when I found counterexamples of exponent 5 and exponent 9
+[6]. It seems certain that there are counterexamples to this conjecture for
+all prime powers greater than 3, but this leaves open the question of what
+bounds on the exponent of M(G) might hold true.
+    The usual definition of the Schur multiplier of a finite group G is the
+second homology group H2 (G, Z). For computational purposes we use the
+Hopf formulation of the Schur multiplier, which is as follows. We write
+G = F/R, where F is a free group, and then
+
+                           M(G) = (R ∩ F ′ )/[F, R].
+
+If we let H = F/[F, R] then H is an infinite group, and the quotient H/H ′
+is a free abelian group with rank equal to the rank of F as a free group.
+However the centre of H contains R/[F, R] and has finite index in H. So
+the derived group H ′ = F ′ /[F, R] is finite, and M(G) is finite. It is known
+that the exponent of M(G) divides the order of G. Furthermore if G has
+exponent n and if h ∈ H ′ then hn ∈ M(G). So the quotient H ′ /M(G) has
+exponent dividing n. In particular, if G is a finite p-group then H ′ is a finite
+p-group.
+    Primoz Moravec published a very important paper [5] in 2007 in which he
+proved that if G is a finite group of exponent n then the exponent of M(G) is
+bounded by a function f (n) depending only on n. Moravec does not give an
+explicit formula for f (n), but his proof of this theorem actually shows that
+if G is a finite group of exponent n then the exponent of M(G) divides ne
+where e is the order of b−n a−n (ab)n in the Schur multiplier of R(2, n). (We
+let R(2, n) denote the largest finite 2 generator of exponent n, and we take
+the generators of R(2, n) to be a, b.)
+
+Theorem 1 (Moravec, 2007) Let b−n a−n (ab)n ∈ M(R(2, n)) have order
+e. If G is any finite group of exponent n then the exponent of M(G) divides
+ne.
+
+   We give a short proof of this theorem in Section 2. The same proof gives
+the following theorem.
+
+Theorem 2 Let R(2, n; c) be the nilpotent of class c quotient of R(2, n), and
+let en,c be the order of b−n a−n (ab)n ∈ M(R(2, n; c)). If G is any finite group
+of exponent n with class c, then the exponent of M(G) divides nen,c .
+
+
+                                       2
+   Our proof of Moravec’s theorem also gives the following corollary.
+
+Corollary 3 Let R(d, n) be the largest finite d generator group of exponent
+n. Then if d ≥ 2 the exponent of M(R(d, n)) is the order of b−n a−n (ab)n ∈
+M(R(2, n)).
+
+    Theorem 1 led me to investigate the order eq of b−q a−q (ab)q ∈ M(R(2, q))
+for prime power exponents q. (We restrict ourselves to groups of prime power
+exponent since if G is any finite group and p is any prime then the Sylow
+p-subgroup of M(G) is a subgroup of the Schur multiplier of the Sylow p-
+subgroup of G.) It is an easy hand calculation to show that eq = q for q = 2, 3.
+And it is a straightforward computation with the p-quotient algorithm [4] to
+show that eq = q for q = 4, 5, 7. Computing the groups R(2, 8) or R(2, 9)
+(or their Schur covers) is way out of the range of the p-quotient algorithm,
+even with a modern supercomputer. But I am able to show that eq ≥ q for
+q = 8, 9.
+    Theorem 2 led me to investigate the order eq,c of b−q a−q (ab)q ∈ M(R(2, q; c))
+for prime power exponents q and various c.
+
+Theorem 4 If q is a power of the prime p then eq,p2 −p−1 divides p.
+
+Theorem 5 If k > 2 then e2k ,c equals 2 for c < 4, equals 4 for 4 ≤ c ≤ 11,
+and equals 8 for c = 12.
+
+Theorem 6 If k > 1 then e3k ,c equals 1 for c < 3, equals 3 for 3 ≤ c < 12,
+and equals 9 for c = 12.
+
+   The counterexamples to Schur’s conjecture found in [1] and [6] are based
+on the following construction. Let H(q, c) be the largest four generator group
+of exponent q and nilpotency class c which is generated by a, b, c, d and
+subject to the relation
+                                [b, a][d, c] = 1.
+The Bayes, Kautsky and Wamsley example in [1] is H(4, 4) which has Schur
+multiplier of exponent 8. The element [b, a][d, c] has order 8 in the Schur
+multiplier, and in fact [b, a] has order 8 in a Schur cover of R(2, 4; 4). Sim-
+ilarly my examples in [6] are based on H(5, 9) and H(9, 9). In the Schur
+multipliers of these two groups the elements [b, a][d, c] have order 25 and 27.
+The examples “work” because [b, a] has order 25 and 27 in Schur covers of
+R(2, 5; 9) and R(2, 9; 9). It seems plausible that more generally the exponent
+of M(H(q, c)) is the order of [b, a] in a Schur cover of R(2, q; c), though I
+
+                                       3
+have no idea how to prove this in general. For this reason I have looked at
+the order of [b, a] in Schur covers of R(2, q; c) for various q, c. For example,
+[b, a] has order 32 in a Schur cover of R(2, 8; 12) so it seems to me to be
+extremely likely that M(H(8, 12)) has exponent 32, though I cannot prove it
+(yet!). This is an interesting example because all p-group counterexamples
+G to Schur’s conjecture found so far have exp M(G) = p exp G.
+     I am able to prove that M(H(q, 4)) has exponent 2q whenever q ≥ 4 is
+a power of 2. For q = 9, 27 M(H(q, 9)) has exponent 3q, and it seems very
+likely that M(H(q, 9)) has exponent 3q for all q > 3 which are powers of 3.
+Similarly for q = 5, 25 M(H(q, 9)) has exponent 5q, and it seems very likely
+that M(H(q, 9)) has exponent 5q for all q which are powers of 5.
+
+Theorem 7 If q > 4 is a power of 2, and if we let f be the order of [b, a] in
+a Schur cover of R(2, q; c) then f = q for c < 4, f = 2q for 4 ≤ c < 12, and
+f = 4q for c = 12. If G is a finite 2-group with nilpotency class less than 4
+then exp M(G) divides exp G.
+
+Theorem 8 If q > 3 is a power of 3, and if we let f be the order of [b, a] in
+a Schur cover of R(2, q; c) then f = q for c < 9, and f = 3q for c = 9. If G
+is any group of exponent q with class less than 9 then exp M(G) divides q.
+
+Theorem 9 Let q be a power of 5. If we let f be the order of [b, a] in a
+Schur cover of R(2, q; c) then f = q for c < 9, and f = 5q for c = 9. If G is
+any group of exponent q with class less than 9 then exp M(G) divides q.
+
+Theorem 10 Let q be a power of 7. If we let f be the order of [b, a] in a
+Schur cover of R(2, q; c) then f = q for c < 13, and f = 7q for c = 13. If G
+is any group of exponent q with class less than 13 then exp M(G) divides q.
+
+    Theorem 9 follows from the fact that in a Schur cover of R(2, 5) the
+element [b, a]5 is a product of commutators with entries a or b, where at least
+5 of the entries are a’s and at least 5 of the entries are b’s. Similarly Theorem
+10 follows from the fact that in a Schur cover of R(2, 7) the element [b, a]7 is
+a product of commutators with at least 7 entries a and at least 7 entries b.
+If the same pattern is repeated for higher primes p, then I would expect the
+order of [b, a] in M(R(2, pk ; c)) to be pk for c < 2p − 1 and to be pk+1 when
+c = 2p − 1.
+    The theorems above omit the exponents 2,3,4. It is easy to see that the
+Schur multiplier of a group of exponent 2 or exponent 3 has exponent 2 or
+3 (respectively). Moravec [5] proves that the Schur multiplier of a group of
+exponent 4 has exponent dividing 8.
+
+                                       4
+2      Proof of Theorem 1
+We write R(2, n) = F/R where F is the free group generated by a, b, and let
+H = F/[F, R]. (We are not assuming here that n is a prime power.) Then
+b−n a−n (ab)n ∈ M(R(2, n)). Let b−n a−n (ab)n have order e. We show that e is
+the exponent of M(R(d, n)) for all d ≥ 2, and that if G is any finite group
+of exponent n then exp(M(G)) divides ne.
+     So let G be any finite group of exponent n, let G = F/R where F is a
+free group, and let H = F/[F, R]. (Apologies for using the same notation for
+the covering group of G as I used for the covering group of R(2, n).) Let a, b
+be any two elements in H. Then the subgroup of H generated by a and b is
+a homomorphic image of the cover of R(2, n), and so b−n a−n (ab)n ∈ H ′ lies
+in the centre of H and has order dividing e. Let F be freely generated by the
+set X and let K be the subgroup of H generated by the elements xn [F, R]
+(x ∈ X). Then K is a free abelian group which intersects H ′ trivially. If w is
+an arbitrary element of F we can write w = x1 x2 . . . xk for some k and some
+x1 , x2 , . . . , xk ∈ X ∪ X −1 . Letting a = x1 and b = x2 x3 . . . xk we see that
+
+                   w n = (x1 x2 . . . xk )n = xn1 (x2 . . . xk )n b−n a−n (ab)n .
+
+Repeating this argument we see that
+
+                                       w n = xn1 xn2 . . . xnk c,
+
+where c is a product of terms of the form b−n a−n (ab)n with a, b ∈ F . So we
+see that if h ∈ H then hn is a product of an element in K and an element
+in H ′ which lies in the centre of H and has order dividing e. It follows that
+any product of nth powers in H can be expressed in the same form. Since
+K ∩ H ′ = {1} we see that this implies that any product of nth powers in H
+which lies in H ′ has order dividing e. So exp(M(R(d, n))) = e for all d ≥ 2.
+If h ∈ H ′ , then hn is an nth power which lies in H ′ , and so hne = 1. So H ′
+has exponent dividing ne, and this implies that exp(M(G)) divides ne.
+
+
+3      Some commutator calculus
+Let F be the free group of rank 2 generated by a and b. If we are working
+in the nilpotent quotient F/γk+1(F ) for some k then we pick a fixed ordered
+set of basic commutators of weight at most k. See [3, Chapter 11]. The first
+few basic commutators in our sequence are
+
+    a, b, [b, a], [b, a, a], [b, a, b], [b, a, a, a], [b, a, a, b], [b, a, b, b], [b, a, a, [b, a]].
+
+                                                   5
+If c1 , c2 , . . . , cm is our list of basic commutators of weight at most k then
+every element of F/γk+1(F ) can be written uniquely in the form
+                                  cn1 1 cn2 2 . . . cnmm γk+1(F )
+for some integers n1 , n2 , . . . , nm . From the theory of Hall collection (see [3,
+Theorem 12.3.1]), if n is any positive integer then in F/γk+1(F )
+
+                       (ab)n = an bn [b, a]( 2 ) [b, a, a]( 3 ) cn5 5 . . . cnmm
+                                            n              n
+                                                                                 (1)
+where the exponents n, n2 , n3 , n5 , . . . , nm take a very special form. If cr has
+                                
+
+weight wnthen nrn is an integral linear combination of the binomial coefficients
+    n
+n, 2 , 3 , . . . , w . Furthermore the integer coefficients which arise in these
+linear combinations are positive,      and are independent of n.
+                           n    n
+                                  
+    The exponents n, 2 , 3 , n5 , . . . , nm which arise in equation (1) are all
+polynomials in n which take integer values when n is an integer. The formula
+                            
+                             n      n(n − 1) . . . (n − r + 1)
+                                 =
+                             r                       r!
+also makes sense when n is negative. We let P = Q[t] be the ring of polynomi-
+als in an indeterminate t over the rationals Q. An integer-valued polynomial
+is a polynomial f (t) ∈ P which takes integer values whenever f (t) is evalu-
+ated at an integer n. The set of integer-valued polynomials is a subring of
+P , and is a free abelian group with basis
+                          t(t − 1)        t(t − 1) . . . (t − d + 1)
+                  1, t,            , ...,                            , ....
+                              2!                       d!
+The exponents ni which arise in equation (1) all take the form ni = fi (n)
+where fi (t) is an integer-valued polynomial of degree at most wt ci which
+does not depend on n. The polynomials f (t) ∈ P that arise in this way in
+equation (1) also satisfy f (0) = 0.
+   We rewrite equation (1) in the following form
+
+                   (ab)n = an bn [b, a]( 2 ) [b, a, a]( 3 ) c55 . . . cfmm (n)
+                                        n              n     f (n)
+                                                                                        (2)
+where the integer-valued polynomials fi (t) are independent of n. The key
+properties of these polynomials to keep in mind are that fi (0) = 0 and
+deg fi (t) ≤ wt ci .
+    We use equation (2) to get an expansion of [y n , x] for x, y ∈ F . Equation
+(2) gives
+
+y n x = x(y[y, x])n = xy n [y, x]n [y, x, y](2 ) (c4 α)f4 (n) . . . (cm α)fm (n) modulo γk+1(F )
+                                                n
+
+
+
+
+                                                6
+where α is the endomorphism of F mapping a, b to y, [y, x]. This equation
+gives
+
+    [y n , x] = [y, x]n [y, x, y](2 ) (c4 α)f4 (n) . . . (cm α)fm (n) modulo γk+1(F ).
+                                  n
+                                                                                            (3)
+
+
+4     Proof of Theorem 4
+We want to prove that if q a power of the prime p then the order of b−q a−q (ab)q
+in M(R(2, q; p2 − p − 1) divides p. The case p = 2 is covered by Theorem 5,
+and so we assume that p > 2. We write R(2, q; p2 − p − 1) = F/R, where
+F is the free group with free generators a, b. Let H = F/[F, R]. So H is
+nilpotent of class at most p2 − p, and (as we noted in the introduction) H ′
+is a finite p-group. We let c1 , c2 , . . . , cm be our list of basic commutators of
+weight at most p2 − p as described in Section 3. Let x, y ∈ H and set n = q
+in equation (3) from Section 3. Using the fact that H is nilpotent of class
+p2 − p we obtain a relation
+
+            [y, x]q [y, x, y](2) [y, x, y, y](3) (c5 α)f5 (q) . . . (cm α)fm (q) = 1,
+                              q               q
+                                                                                            (4)
+
+where α is the homomorphism from F to H mapping a, b to y, [y, x]. Recall
+that if wt ci = w then deg fi (t) ≤ w. Note that if wt ci = w then ci α is a
+commutator in x, y with w entries y. Also note that wt ci < p2 so that fi (q)
+is divisible by pq for all i. And if wt ci < p then fi (q) is divisible by q.
+    Since H is nilpotent of class at most p2 − p, if y ∈ γp−1(H) then ci α = 1
+whenever wt ci ≥ p. So if y ∈ γp−1(H) then relation (4) shows that [y, x]q is
+a product of q th powers of commutators in x, y with higher weight. First let
+y ∈ γp2 −p−1(H). Then equation (4) gives [y, x]q = 1. Since elements [y, x] of
+this form generate γp2 −p (H) this implies that γp2−p (H) has exponent q. Next
+let y ∈ γp2 −p−2(H). Then equation (4) gives [y, x]q ∈ γp2 −p (H)q = {1}. So we
+see that γp2−p−1 (H) has exponent q. We continue in this way, successively
+proving that γp2 −p−2 (H), γp2−p−3 (H), . . . have exponent q. Finally we let
+y ∈ γp−1(H) and prove that γp (H) has exponent q.
+    Now set n = pq in equation (3), and we obtain the relation.
+
+          [y, x]pq [y, x, y]( 2 ) [y, x, y, y]( 3 ) (c5 α)f5 (pq) . . . (cm α)fm (pq) = 1
+                             pq               pq
+
+
+
+
+where all the exponents fi (pq) are divisible by q, and where commutators with
+less than p entries y have exponents divisible by pq. Since all commutators
+in H with weight at least p have order dividing q, this implies that [x, y]pq
+is a product of (pq)th powers of commutators of higher weight in x, y. So
+
+                                                  7
+[x, y]pq = 1, and hence all commutators in H have order dividing pq. Since
+H has class less than p2 and γp (H) has exponent q this implies that H ′ has
+exponent dividing pq.
+    Finally consider (b−q a−q (ab)q )p = b−pq a−pq (ab)pq . Equation (2) from Sec-
+tion 3 gives
+
+              (b−q a−q (ab)q )p = [b, a]( 2 ) [b, a, a]( 3 ) c55 . . . cfmm (pq) .
+                                         pq             pq    f (pq)
+
+
+
+All the exponents in this product are divisible by q, and the exponents of
+commutators of weight less than p in the product are divisible by pq. So
+(b−q a−q (ab)q )p = 1.
+   The same argument (though easier) shows that in M(R(2, q; p − 2) the
+element b−q a−q (ab)q = 1.
+
+
+5     Proof of Theorem 5 and Theorem 7
+Let q = 2k (k > 2), and let eq,c be the order of b−q a−q (ab)q in M(R(2, q; c)).
+We want to prove that eq,c equals 2 for c < 4, equals 4 for 4 ≤ c ≤ 11, and
+equals 8 for c = 12. We also want to prove that if f is the order of [b, a] in
+a Schur cover of R(2, q; c) then f = q for c < 4, f = 2q for 4 ≤ c < 12, and
+f = 4q when c = 12.
+     Let R(2, q; 12) = F/R where F is the free group of rank two generated
+by a, b, and let H = F/[F, R]. Then H is an infinite group, but the subgroup
+haq , bq i ≤ H is a central subgroup with trivial intersection with H ′. We can
+factor this subgroup out, without impacting M(R(2, q; 12)), and we now have
+a finite 2-group. We used the p-quotient algorithm to compute this quotient
+for q = 8, 16, 32. (These were quite easy computations.) The computations
+showed that eq,c takes the values given in Theorem 5 for q = 8, 16, 32, and
+that f takes the values given in Theorem 7 for q = 8, 16, 32. We show that
+the fact that Theorem 5 and Theorem 7 hold true for q = 25 implies that
+they hold true for all exponents q = 2k with k ≥ 5.
+     We let q = 2k where k ≥ 5, and let c1 , c2 , . . . , cm be our list of basic
+commutators of weight at most 13 as described in Section 3. As in the proof
+of Theorem 4 we let x, y ∈ H and obtain a relation
+
+         [y q , x] = [y, x]q [y, x, y](2) [y, x, y, y](3) (c5 α)f5 (q) . . . (cm α)fm (q)
+                                       q               q
+                                                                                            (5)
+
+where α is the homomorphism from F to H mapping a, b to y, [y, x]. If
+wt ci = w then ci α is a commutator in x and y, with w entries y, and
+deg fi ≤ w. The binomial coefficients q2 and q3 are both divisible by 2q ,
+
+                                                8
+the binomial coefficients dq for d < 8 are divisible by 4q , and the binomial
+                              
+
+coefficients dq for d < 16 are divisible by 8q .
+    If we let y ∈ γ7 (H) then [y, x, y] ∈ γ15 (H) = {1}, so we see that [y, x]q = 1.
+Now γ8 (H) is generated by elements [y, x] with y ∈ γ7 (H), and γ8 (H) is
+abelian. So γ8 (H) has exponent q.
+    Now let y ∈ γ4 (H), and replace q by 2q in equation (5). Using the fact
+that γ8 (H) has exponent q we see that [y, x]2q = 1. So γ5 (H) is generated
+by elements of order 2q. Furthermore γ5 (H) is nilpotent of class 2, and
+γ5 (H)′ ≤ γ10 (H) has exponent q. So γ5 (H) has exponent 2q.
+    Next let y ∈ H ′ , and replace q by 4q in equation (5). We obtain [y, x]4q =
+1. So γ3 (H) is generated by elements of order 4q, and using the fact that
+γ5 (H) has exponent 2q and γ8 (H) has exponent q, we see that γ3 (H) has
+exponent 4q.
+    Finally replace q by 8q in equation (5) and we obtain [y, x]8q = 1 for all
+x, y. Using facts that γ3 (H) has exponent 4q, γ5 (H) has exponent 2q, and
+γ8 (H) has exponent q, we see that H ′ has exponent 8q.
+    Let N be the normal subgroup
+
+                     γ2 (F )8q γ3 (F )4q γ5 (F )2q γ8 (F )q γ14 (F ) < F.
+
+Then H = F/M where M = h[y q , x] : x, y ∈ F iN.
+   Next we let K be the normal subgroup
+                                            q                  q             q
+                      γ2 (F )q γ3 (F ) 2 γ5 (F ) 4 γ8 (F ) 8 γ14 (F ) < F.
+
+(The relevance of K is that if q ≥ 8 is a power of 2 then [y q , x] ∈ K for
+all x, y ∈ F .) We show that every element k ∈ K can be written uniquely
+modulo γ14 (F ) in the form
+                              q                 q         q                  q          q               q
+                                  m4                m8         m9                m41        m42             m1377
+            k = [b, a]qm3 c42          . . . c82         c94           . . . c41
+                                                                              4
+                                                                                       c42
+                                                                                        8
+                                                                                                  . . . c1377
+                                                                                                         8
+                                                                                                                    ,   (6)
+
+where m3 , m4 , . . . , m1377 are integers. (The number of basic commutators of
+weight at most 4 is 8, the number of weight at most 7 is 41, and the number
+of weight at most 13 is 1377.) First let
+                                                q                  q               q
+                         K2 = γ3 (F ) 2 γ5 (F ) 4 γ8 (F ) 8 γ14 (F ).
+
+We show that every element in γ2 (F )q can be written as [b, a]qm3 modulo K2 .
+The elements of γ2 (F )q are products of q th powers of elements in γ2 (F ). Let
+x, y ∈ γ2 (F ). Then from equation (2) in Section 3 we see that
+
+           (xy)q = xq y q [y, x](2) [y, x, x](3) (c5 α)f5 (q) . . . (c1377 α)f1377 (q)
+                                       q                       q
+
+
+
+
+                                                           9
+where α : F → F is the endomorphism mapping a, b to x, y. Now [y, x],
+and [y, x, x] ∈ γ4 (F ) and 2q and 3q are divisible by 2q . So [y, x](2) and
+                                                                           q
+
+
+
+[y, x, x](3) ∈ K . Similarly all the terms (c α)f5 (q) , . . ., (c α)f1377 (q) lie in
+          q
+                 2                                                               5                        1377
+K2 . So (xy)q = xq y q modulo K2 . This means that every product of q th
+powers of elements in γ2 (F ) can be written as the q th power of a single
+element in γ2 (F ) modulo K2 . So consider xq when x ∈ γ2 (F ). We can write
+x = [b, a]m3 g for some g ∈ γ3 (F ). Then, as we have just seen, xq = [b, a]qm3 g q
+modulo K2 , and since g q ∈ K2 this means that xq = [b, a]qm3 modulo K2 .
+                              q      q
+    Now let K3 = γ5 (F ) 4 γ8 (F ) 8 γ14 (F ). Then K2 is generated modulo K3
+by ( 2q )th powers of elements in γ3 (F ). Using the same argument as above we
+                                        q       q q
+see that if x, y ∈ γ3 (F ) then (xy) 2 = x 2 y 2 modulo K3 . So every product
+                                                              q
+of ( 2q )th powers in γ3 (F ) can be expressed modulo K3 as x 2 with x ∈ γ3 (F ).
+Let x = cm    4 m5       m8
+             4 c5 . . . c8 g, with g ∈ γ5 (F ). Then
+                                q
+                       q            m4                                      q
+                     x 2 = c42           (cm        m8
+                                           5 . . . c8 g) modulo K3
+                                            5           2
+
+                                q            q
+                                    m4           m5                                      q
+                           = c42 c52                  (cm        m8
+                                                        6 . . . c8 g) modulo K3
+                                                         6           2
+
+
+                           = ...
+                                q                     q
+                                    m4                    m8       q
+                           = c42         . . . c82             g 2 modulo K3
+                                q                     q
+                                    m4                    m8
+                           = c42         . . . c82             modulo K3 .
+                                                      q
+So every element of γ2 (F )q γ3 (F ) 2 can be expressed modulo K3 in the form
+                                                               q                     q
+                                                                   m4                    m8
+                                         [b, a]qm3 c42                     . . . c82          .
+    Continuing in this way we see that every element k ∈ K can be written
+in the form (6) modulo γ14 (F ). Since every element of F/γ14 (F ) can be
+uniquely expressed in the form
+                                         cn1 1 cn2 2 . . . cn1377
+                                                              1377
+                                                                   γ14 (F )
+for some integers n1 , n2 , . . . , n1377 , the expression (6) for k modulo γ14 (F ) is
+unique.
+    Similarly every element of N can be expressed uniquely modulo γ14 (F )
+in the form
+               [b, a]8qn3 c4qn
+                           4
+                               4
+                                 . . . c4qn
+                                        8
+                                            8 2qn9
+                                             c9 . . . c2qn
+                                                       41
+                                                           41 qn42
+                                                             c42 . . . cqn
+                                                                        1377 ,
+                                                                           1377
+
+
+
+and if k ∈ K is given by (6) then k ∈ N if and only if 8|mi for 3 ≤ i ≤ 1377.
+So K is generated by
+                                         q                 q           q                 q        q   q
+                C = {[b, a]q , c42 , . . . , c82 , c94 , . . . , c41
+                                                                  4
+                                                                     , c42
+                                                                        8
+                                                                           , . . . , c1377
+                                                                                      8
+                                                                                           }
+
+                                                                10
+modulo γ14 (F ), and all these generators have order 8 modulo N. We show
+that provided q ≥ 32 these generators commute with each other modulo
+N, so that K/N is abelian. It follows that K/N is a direct sum of 1375
+copies of the cyclic group of order 8. If k ∈ K has the form (6) then we
+let [m3 , m4 , . . . , m1377 ] be the representative vector of kN, and we think of
+this vector as an element in C81375 . Multiplying two elements of K/N corre-
+sponds to adding their representative vectors, and k ∈ N if and only if the
+representative vector of kN is zero.
+    To show that the elements in C commute with each other we first let
+c, d ∈ γ3 (F ) and consider the commutator [cr , ds ] for general r, s > 0. The
+subgroup hc, di has class at most 4 modulo N, and we expand [cr , ds ] modulo
+γ5 (hc, di). Taking x = ds we see that
+
+                            [cr , x] = [c, x]r [c, x, c](2) [c, x, c, c](3) .
+                                                         r               r
+
+
+
+
+Also
+                      [c, x] = [c, ds ] = [c, d]s [c, d, d](2) [c, d, d, d](3) .
+                                                               s                s
+
+
+
+So, modulo γ5 (hc, di),
+
+ [cr , ds ] = ([c, d]s [c, d, d](2) [c, d, d, d](3) )r ([c, d]s [c, d, d](2) , c])(2) [[c, d]s , c, c](3)
+                                 s               s                        s         r                   r
+
+
+
+
+            = [c, d]rs [c, d, d]r(2) [c, d, d, d]r(3) [c, d, c](2)s [c, d, d, c](2)(2) [c, d, c, c](3)s .
+                                   s               s             r                r   s                r
+
+
+
+
+Now assume that q ≥ 32 and let r = s = 2q then 2q divides rs and all the
+                                                                         q   q
+other exponents in the product above are divisible by q so that [c 2 , d 2 ] ∈ N.
+                         q
+So the elements in {ci2 : wt ci = 3, 4} commute with each other modulo N.
+Similarly if c ∈ γ3 (F ) and d ∈ γ5 (F ) then hc, di is nilpotent of class at most 3
+                                           q   q
+modulo N, and in the expansion of [c 2 , d 4 ] the exponent of [c, d] is divisible
+by 2q, and all the exponents of termsq
+                                            of weight 3 are divisible by q, so that
+   q     q
+[c 2 , d 4 ] ∈ N. So elements in {ci : wt ci = 3, 4} commute with elements in
+                                    2
+    q
+{ci4 : 5 ≤ wt ci ≤ 7} modulo N. If c ∈ γ3 (F ) and d ∈ γ8 (F ) then hc, di is
+nilpotent of class at most 2 modulo N, so that
+                                        q   q             q2
+                                     [c 2 , d 8 ] = [c, d] 16 ∈ N.
+
+In the same way, if c, d ∈ γ5 (F ) then hc, di is nilpotent of class at most 2
+modulo N, and
+                                        q   q             q2
+                                     [c 4 , d 4 ] = [c, d] 16 ∈ N,
+                                        q   q             q2
+                                     [c 4 , d 8 ] = [c, d] 32 ∈ N.
+
+                                                   11
+Finally, if c, d ∈ γ7 (F ) then [c, d] ∈ N, so [cr , cs ] ∈ N for all r, s. So all
+the elements in C\{[b, a]q } commute with each other modulo N (provided
+q ≥ 32).
+    It remains to show that [b, a]q commutes with elements in C. Let d ∈
+γ3 (F ) and let c = [b, a]. We obtain an expression for [dr , cs ] modulo N similar
+to the expression we obtained above for [cr , ds ] modulo N when c, d ∈ γ3 (F ).
+In this case we have γ7 (hc, di) ≤ N, so we obtain an expression involving
+basic commutators in c, d of weight at most 6. A complete list of basic
+commutators up to weight 5 is
+     c, d, [d, c], [d, c, c], [d, c, d], [d, c, c, c], [d, c, c, d], [d, c, d, d], [d, c, c, c, c],
+     [d, c, c, c, d], [d, c, c, d, d], [d, c, d, d, d], [d, c, c, [d, c]], [d, c, d, [d, c]].
+We also need the first basic commutator of weight 6: [d, c, c, c, c, c]. All the
+other basic commutators of weight 6 in c, d lie in N. We call these basic
+commutators (including [d, c, c, c, c, c]) d1 , d2 , . . . , d15 . Then
+                           [dr , cs ] = dn3 3 dn4 4 . . . dn1515 modulo N
+where n3 , n4 , . . . , n15 equal
+                          
+       s     r            s     r   s    r       s    r  s    r  s   r
+rs, r      ,      s, r        ,        ,    s, r   ,       ,       ,     s,
+       2     2            3     2 2      3       4    2 3     3 2    4
+                                                   
+   r     s           r      s       s     r    s      r       r  s     r        s
+3            +2                 +r    ,4          +2    s+3        +       s, r   .
+   2 3               2 2            3     3 2         3       2 2      2        5
+The derivation of these exponents is straightforward, but tedious, so I will
+omit it. It is easy to use a computer to check that they are correct for
+any number of r, s. Using this expression for [dr , cs ] with cs = [b, a]q it is
+straightforward to check that [b, a]q commutes with all the elements in C
+modulo N.
+     This completes our proof that K/N is a direct product of 1375 copies of
+the cyclic group of order 8.
+     We have shown that every element k ∈ K can be expressed uniquely
+modulo γ14 (F ) in the form (6) above. But there is a problem in that the co-
+efficients m3 , m4 , . . . , m1377 which appear in (6) can depend on q. To illustrate
+this, consider the following example. Let ci , cj , ck be the basic commutators
+                [b, a, a, a, a], [b, a, a, a, b], [[b, a, a, a, b], [b, a, a, a, a]].
+Then working modulo γ14 (F ) we have
+                                                   q   q   q q
+                                            q               ( −1)
+                                    (ci cj ) 4 = ci4 cj4 ck8 4      .
+
+                                                  12
+                                                                                       q
+However 8| 4q provided q ≥ 32, and so the representative vector of (ci cj ) 4 N,
+thought of as an element in C81375 , is
+
+                  [0, . . . , 0, 1, 0, . . . , 0, 1, 0, . . . , 0, −1, 0, . . . , 0]
+
+which does not depend on q.
+    To solve this
+                 problem in generality we need to investigate        the binomial
+              q                                                q
+coefficients d
+                   for 1 ≤ d ≤  13. These are all divisible by 8
+                                                                 , so we can write
+ q
+    q
+ d
+    = 8 n for some integer n. We show that n mod 8 only depends on d, and
+not on q (provided     q ≥ 32).
+    Consider 8 for example. We want to show that 8q = 8q n where n mod 8
+                q
+                                                           
+
+does not depend on q.
+ q    q 8 − 28q 7 + 322q 6 − 1960q 5 + 6769q 4 − 13 132q 3 + 13 068q 2 − 5040q
+   n=
+ 8                                       8!
+         q 22 × 3267 × q 2 + rq 3
+    =− +
+         8          27 × 315
+                                               2           2    3
+for some integer r. The fraction 2 ×3267×q
+                                       27 ×315
+                                               +sq
+                                                    is actually an integer, and
+            k
+since q = 2 with k ≥ 5 we can write this integer as qm for some integer m.
+Dividing through by q8 we have n = −1 + 8m, and so n = −1 mod 8.
+                                   q
+    For another example consider 12   , and again write this binomial coeffi-
+         q
+cient as 8 n.
+                  q         q     27 × 1024785 × q 2 + rq 3
+                    n=−         +
+                  8       3×4                   12!
+for some integer r. Multiplying both sides of this equation by 3 we have
+                                       q       q
+                                         3n = − + sq
+                                       8       4
+for some integer s. So 3n mod 8 = −2 and n mod 8 = 2.
+     The binomial coefficients dq where d is odd are all divisible by q, so can
+all be written in the form 8q n where n mod 8 = 0. The binomial coefficients
+  q
+  d
+     for d = 2, 4, 6, 10 can be handled in the same way as we dealt with the
+cases d = 8, 12.
+     Similarly the binomial coefficients dq for 1 ≤ d ≤ 7 are all divisible by 4q
+                                           
+
+and can all be written in the form 4q n where   n mod 8 does not depend on q.
+                                             q
+     And finally the binomial coefficients d for 1 ≤ d ≤ 3 are all divisible by
+q
+2
+    and can all be written in the form 2q n where n mod 8 does not depend on
+q.
+     Now we return to the issue of representing an element [y q , x] in the form
+(6) above. We need to show that provided q ≥ 32 then the representative
+
+                                                   13
+vector of [y q , x]N depends only on x, y, and not on q. We introduce the
+notation rv (kN) for the representative vector of kN when k ∈ K.
+   Equation (3) from Section 3 gives
+
+       [y q , x] = [y, x]q [y, x, y](2) [y, x, y, y](3) (c5 α)f5 (q) . . . (c1377 α)f1377 (q)
+                                     q               q
+
+
+
+
+modulo N, where α is the endomorphism of F mapping a, b to y, [y, x]. And
+so
+
+rv ([y q , x]N) = rv ([y, x]q N) + rv ([y, x, y](2) N) + . . . + rv ((c1377 α)f1377 (q) N).
+                                                 q
+
+
+
+
+We show that all the summands on the right hand side of this equation
+depend only on x, y, and not on q.
+    First consider a summand rv ((ci α)fi (q) N) where wt ci ≥ 8. From our
+analysis of binomial coefficients we know that fi (q) = n 8q for some integer n
+where n mod 8 is independent of q (provided q ≥ 32). Furthermore (ci α) ∈
+γ8 (F ) so that (ci α)q ∈ N. So
+                                                                        q
+                             (ci α)fi(q) N = (ci α)(n mod 8) 8 N.
+
+We show that rv ((ci α)fi(q) N) depends only on x, y by showing that if g ∈
+                   q
+γ8 (F ) then rv (g 8 N) depends only on g and not on q. Let
+
+                              g = cβ4242 . . . cβ1377
+                                                  1377
+                                                       modulo N,
+
+for some integers βi . Then since γ8 (F ) is abelian modulo N,
+                                       q               q
+                              q            β42             β1377
+                            g 8 = c42
+                                   8
+                                                 . . . c1377
+                                                        8
+                                                                   modulo N,
+          q
+and rv (g 8 N) equals
+                                    [0, . . . , 0, β42 , . . . , β1377 ]
+which depends on g, and not on q.
+   Next consider a summand rv ((ci α)fi (q) N) where 4 ≤ wt ci < 8. We can
+write fi (q) = n 4q for some integer n where n mod 8 is independent of q. The
+element ci α ∈ γ5 (F ) and so (ci α)2q ∈ N. So
+                                                                        q
+                             (ci α)fi(q) N = (ci α)(n mod 8) 4 N.
+
+We show that rv ((ci α)fi(q) N) depends only on x, y by showing that if g ∈
+                   q
+γ5 (F ) then rv (g 4 N) depends only on g and not on q. Let
+
+                                  g = cβ9 9 . . . cβ1377
+                                                     1377
+                                                          modulo N,
+
+                                                      14
+for some integers βi . Then
+                                                     q                 q                 q
+                                                                     4 1377 ( 4
+                                                                           h 2 ) modulo N,
+                                          q              β9           β
+                                         g 4 = c94            . . . c1377
+
+where
+                                                                                          β
+                                                                       Y
+                                                    h=                                 [cj j , cβi i ].
+                                                                  9≤i<j≤1377
+
+So                          q
+               rv (g 4 N) = [0, . . . , 0, β9 , . . . , β41 , 2β42 , . . . , 2β1377 ] + u
+                            q
+
+where u = rv (h( 2 ) N). As we have seen
+                 4
+
+
+
+                                                                   q
+
+                                                              h( 2 ) N = h− 8 N
+                                                                 4          q
+
+
+
+                                                                                                                          q
+so u depends only on h, which in turn depends only on g. So rv (g 4 N)
+depends only on g and not on q.
+   Now consider a summand rv ((ci α)fi (q) N) where wt ci = 2 or 3. We can
+write fi (q) = n 2q for some integer n where n mod 8 is independent of q. The
+element ci α ∈ γ3 (F ) and so (ci α)4q ∈ N. So
+                                                                                                          q
+                                              (ci α)fi(q) N = (ci α)(n mod 8) 2 N.
+
+We show that rv ((ci α)fi(q) N) depends only on x, y by showing that if g ∈
+                   q
+γ3 (F ) then rv (g 2 N) depends only on g and not on q. Let g = cβ4 4 h modulo
+N where
+                                h = cβ5 5 . . . cβ1377
+                                                   1377
+                                                        .
+Then from equation (2) in Section 3 we see that
+                        q                                q
+
+         g 2 = c42 h 2 [h, cβ4 4 ]( 2 ) (c4 γ)f4 ( 2 ) . . . (c1377 γ)f1377 ( 2 ) modulo N
+          q                 β4       q                   2                 q                                      q
+
+
+
+
+where γ is the endomorphism of F mapping a, b to cβ4 4 , h. If wt ci > 4 then
+ci γ ∈ γ14 (F ) and so
+                                q                             q
+
+              g 2 = c42 h 2 [h, cβ4 4 ]( 2 ) (c4 γ)f4 ( 2 ) . . . (c8 γ)f8 ( 2 ) modulo N
+               q                    β4    q                   2                    q                          q
+
+
+
+
+and                                             q
+                    q                               α4                         q                                      q
+         rv (g 2 N) = rv (c42 N) + rv (h 2 N) + . . . + rv ((c8 γ)f8 ( 2 ) N).
+                q
+                    α4
+Clearly rv (c42 N) = [0, α4 , 0, . . . , 0] depends only on g. And we can assume
+                                                                                q
+by induction on the length of the product h = cβ5 5 . . . cβ13771377
+                                                                     that rv (h 2 N)
+depends only on h, and hence only on g.
+
+                                                                           15
+    So consider the element [h, cβ4 4 ]. This element lies in γ6 (F ) so that
+[h, cβ4 4 ]2q ∈ N. Furthermore
+                        q
+                          2
+                               q q          q
+                             = ( − 1) = − modulo 2q
+                          2    4 2          4
+provided q ≥ 32. So                      q
+
+                               [h, cβ4 4 ]( 2 ) N = [h, cβ4 4 ]− 4 N
+                                         2                     q
+
+
+                   q
+
+and rv ([h, cβ4 4 ]( 2 ) N) (as we have seen above) depends only on [h, cβ4 4 ], which
+                     2
+
+
+in turn depends only on g.
+    For i = 4, 5, 6, 7, 8 ci γ ∈ γ9 (F ), so that (ci γ)q ∈ N. It is straightforward
+to see that q8 |fi ( 2q ) for i = 4, 5, 6, 7, 8, and it is also straightforward to see
+that fi ( 2q ) modulo q equals 4 8q , 6 8q , 7 8q , 5 8q , 5 8q for i = 4, 5, 6, 7, 8 provided
+                                     q                   q                      q
+q ≥ 32. It follows that (c4 γ)f4 ( 2 ) N = (c4 γ)4 8 N and rv ((c4 γ)f4 ( 2 ) N) depends
+                                                                      q
+only on c4 γ and hence only on g. Similarly rv ((ci γ)fi ( 2 ) N) depends only on
+g for i = 5, 6, 7, 8.
+               q
+    So rv (g 2 N) is a sum of vectors each of which depends only on g.
+    Finally consider the summand rv ([y, x]q N). Let [y, x] = [b, a]β h where
+h ∈ γ3 (F ). Then from equation (2) in Section 3 we see that
+
+       [y, x]q = [b, a]qβ hq [h, [b, a]β ](2) (c4 γ)f4 (q) . . . (c23 γ)f23 (q) modulo N.
+                                           q
+
+
+
+
+where γ is the endomorphism of F sending a, b to [b, a]β , h. (For i > 23
+ci γ ∈ γ14 (F )). So rv ([y, x]q N) equals
+
+    [β, 0, . . . , 0] + rv (hq N) + rv ([h, [b, a]β ](2) N) + . . . + rv ((c23 γ)f23 (q) N).
+                                                      q
+
+
+
+
+We have already shown that rv (hq N) depends only on h, and hence only on
+x, y, so consider rv ([h, [b, a]β ](2) N). Since [h, [b, a]β ] ∈ γ5 (F ) it follows that
+                                    q
+
+
+
+[h, [b, a]β ]2q ∈ N. So, as we have seen above, [h, [b, a]β ](2) N = [h, [b, a]β ]− 2 N,
+                                                                   q                      q
+
+
+
+so that rv ([h, [b, a]β ](2) N) depends only on x, y. Both
+                          q
+                                                                c4 γ and c5 γlie in γ5 (F ),
+and so c4 γ ∈ N and c5 γ ∈ N. Now f4 (q) = 3 and f5 (q) = 2q +2 3q , and
+              2q              2q                       q
+                                                         
+                                                              q
+so (c4 γ)f4 (q) N = (c4 γ)q N and (c5 γ)f5 (q) N = (c5 γ)− 2 N, and rv ((ci γ)fi (q) N)
+depends only on x, y for i = 4, 5.
+     The elements ci γ for i = 6, 7, . . . , 23 lie in γ8 (F ), and so all have order
+dividing q modulo N. And the exponents fi (q) for i = 6, 7, . . . , 23 can all be
+expressed in the form 8q ni modulo q, where ni mod 8 does not depend on q
+(provided q ≥ 32). So rv ((ci γ)fi (q) N) depends only on x, y for i = 6, 7, . . . , 23.
+     Putting all this together we see that rv ([y q , x]N) depends only on x, y,
+and not on q.
+
+                                                16
+   As we stated earlier in this section, H = F/M where
+
+                               M = h[y q , x] : x, y ∈ F iN.
+
+As x, y range over F the elements rv ([y q , x]N) generate an (additive) sub-
+group S ≤ C81375 . An element k ∈ K lies in M if and only if rv (kN) ∈ S.
+The key point is that provided q ≥ 32 the subgroup S does not depend on q.
+
+     Now consider the claim that [b, a] has order 8q in H. As stated above,
+I have used the p-quotient algorithm to confirm this for q = 8, 16, 32. For
+q ≥ 32 this is equivalent to showing that in F , [b, a]8q ∈ M and [b, a]4q ∈  / M.
+                                   8q
+We have shown above that [b, a] ∈ N. On the other hand, if q ≥ 32 then
+[b, a]4q has representative vector [4, 0, 0, . . . , 0], and since my computations
+show that [b, a]4q ∈/ M when q = 32 this implies that [4, 0, 0, . . . , 0] ∈
+                                                                           / S, and
+                 4q
+hence that [b, a] ∈  / M for any q ≥ 32.
+     Next consider the claim that b−q a−q (ab)q has order 8 in H. This is equiva-
+lent to showing that b−8q a−8q (ab)8q ∈ M and that b−4q a−4q (ab)4q ∈   / M. From
+equation (2) in Section 3 we see that
+
+       b−8q a−8q (ab)8q = [b, a]( 2 ) [b, a, a]( 3 ) c55
+                                    8q             8q   f (8q)         f        (8q)
+                                                                         1377
+                                                                 . . . c1377           modulo N,
+
+and the properties of the integer-valued polynomials fi (t) imply that
+
+                                   b−8q a−8q (ab)8q ∈ K.
+
+My computer calculations show that b−8q a−8q (ab)8q ∈ M for q = 32. So the
+representative vector of b−8q a−8q (ab)8q lies in S when q = 32. It is not really
+relevant, but the representative vector of b−8q a−8q (ab)8q is
+
+                                [4, 0, 0, 4, 4, 4, 0, 0, . . . , 0].
+
+So b−8q a−8q (ab)8q ∈ M for all q ≥ 32. The element b−4q a−4q (ab)4q also lies in
+K, and my computer calculations show that if q = 32 then b−4q a−4q (ab)4q ∈     /
+M. So the representative vector of b−4q a−4q (ab)4q does not lie in S when
+q = 32, and this implies that it does not lie in S for any q ≥ 32. So
+b−4q a−4q (ab)4q ∈
+                 / M for q ≥ 32.
+   The claims in Theorem 5 and Theorem 7 for the orders of b−q a−q (ab)q
+and [b, a] in Schur covers of R(2, q; c) for c < 12 follow similarly. We replace
+N by Nγc+2 (F ). If cr is the last basic commutator of weight c + 1 then any
+element in K/N has a unique representative vector [m3 , m4 , . . . , mr ] for all
+q ≥ 32, and the proof goes through in the same way as above.
+
+
+                                                17
+    There is a slight problem in showing that b−q a−q (ab)q is non-trivial in the
+Schur cover of R(2, q; c) since b−q a−q (ab)q ∈/ K. But we can directly calculate
+a Schur cover of R(2, q; 1) by hand, and show that b−q a−q (ab)q 6= 1 in this
+                                             q
+cover. Similarly we can show that [b, a] 2 is non-trivial in a Schur cover of
+R(2, q; 1), so that the order of [b, a] in a Schur cover of R(2, q; c) is at least q
+for any c.
+    Finally, let G be a finite 2-group with exponent q > 2 and nilpotency
+class at most 3. We show that if H is the covering group of G then H ′ has
+exponent dividing q. Our calculations with the covering group of R(2, q; 3)
+                              q
+show that [y, x]q = [y, x, x] 2 = 1 for all x, y ∈ H. Groups satisfying the 2-
+Engel identity [y, x, x] = 1 are nilpotent of class at most 3. So if h ∈ γ4 (H),
+h can be expressed as a product of terms [y, x, x] and their inverses, with
+                   q                                  q
+x, y ∈ H. So h 2 is a product of terms [y, x, x] 2 and their inverses, and
+         q
+hence h 2 = 1. This implies that γ4 (H) has exponent dividing 2q . Since H ′
+is generated by commutators which have order dividing q, and γ4 (H) has
+exponent dividing 2q , we see that that H ′ has exponent dividing q.
+
+
+6     Proofs of Theorem 6 and Theorem 8
+The proofs of Theorem 6 and Theorem 8 are essentially the same as the proofs
+of Theorem 5 and Theorem 7. Let q = 3k where k ≥ 2, let R(2, q; 12) = F/R
+where F is the free group of rank two generated by a, b, and let H = F/[F, R].
+We can use the p-quotient algorithm to show that Theorem 6 and Theorem
+8 hold true when q = 9 or 27, and we show that the fact that they hold true
+for q = 27 shows that they also hold true for higher powers of 3.
+    We let q = 3k where k ≥ 3, and let c1 , c2 , . . . , c1377 be our list of ba-
+sic commutators of weight at most 13. As in the proof of Theorem 5 and
+Theorem 7 we let x, y ∈ H and obtain a relation
+
+          [y, x]q [y, x, y](2) [y, x, y, y](3) (c5 α)f5 (q) . . . (c1377 α)f1377 (q) = 1
+                            q               q
+                                                                                           (7)
+
+where α is the homomorphism from F to H mapping a, b to y, [y, x]. If
+wt ci = w then ci α is a commutator in x and y, with w entries y, and
+deg fi ≤ w. The binomial coefficients q and 2q are both divisible by q,
+the binomial coefficients dq for d < 9 are divisible by 3q , and the binomial
+coefficients dq for d < 27 are divisible by 9q .
+    If we let y ∈ γ5 (H) then all commutators in H with 3 or more entries y
+are trivial and we obtain the relation [y, x]q [y, x, y](2) = 1. This implies that
+                                                         q
+
+
+[y, x]q = 1, and so (since γ6 (H) is nilpotent of class 2) γ6 (H) has exponent q.
+
+
+                                                18
+    Now let y ∈ γ2 (H), and replace q by 3q in equation (7). Using the fact
+that γ6 (H) has exponent q we see that [y, x]3q [y, x, y]( 2 ) = 1, which implies
+                                                          3q
+
+
+that [y, x]3q = 1, and hence that γ3 (H) has exponent 3q.
+    Finally replace q by 9q in equation (7) and using the facts that γ3 (H)
+has exponent 3q and γ6 (H) has exponent q we see that [y, x]9q = 1 for all
+x, y ∈ H, and that H ′ has exponent 9q.
+    Let N be the normal subgroup
+
+                        γ2 (F )9q γ3 (F )3q γ7 (F )q γ14 (F ) < F.
+
+Then H = F/M where M = h[y q , x] : x, y ∈ F iN.
+   Now let                            q         q
+                 K = γ2 (F )q γ3 (F ) 3 γ7 (F ) 9 γ14 (F ).
+Just as in Section 5 we can show that every element k ∈ K can be uniquely
+expressed modulo γ14 (F ) in the form
+                                                    q          q               q
+                                         q              m23        m24             m1377
+                k = [b, a]qm3 [b, a, a] 3 m4 . . . c23
+                                                    3
+                                                              c24
+                                                               9
+                                                                         . . . c1377
+                                                                                9
+                                                                                           (8)
+
+(There are 23 basic commutators ci of weight at most 6.) Similarly every
+element of N can be uniquely expressed modulo γ14 (F ) in the form
+
+                   [b, a]9qn3 [b, a, a]3qn4 . . . c3qn
+                                                   23    c24 . . . cqn
+                                                       23 qn24
+                                                                    1377 .
+                                                                       1377
+
+
+
+
+      If k ∈ K is given by equation (8) then k ∈ N if and only if 9|mi for
+i = 3, 4, . . . , 1377. And just as in Section 5 we can show that K/N is abelian
+and is a direct product of 1375 copies of the cyclic group of order 9. We
+let [m3 , m4 , . . . , m1377 ] be the representative vector for kN, and think of this
+vector as an element in C91375 . Multiplying elements of K/N corresponds to
+adding their representative vectors, and the element k lies in N if and only
+if the representative vector of kN is 0.
+      A similar argument to that given in Section 5 for binomial coefficients dq
+                                                                                    
+
+(d ≤ 13) for q a power of 2 at least as big as 32, shows that if q ≥ 27 is a
+power of 3 then all the binomial coefficients dq d ≤ 13 can be expressed in
+the form 9q n for some integer n where n mod 9 depends only on d, and not
+on q. Similarly, if q ≥ 27 is a power of 3 then all the binomial coefficients
+  q
+  d
+      d < 9 can be expressed in the form q3 n for some integer n where n mod 9
+depends    only on    d, and not on q. And finally, if q ≥ 27 is a power of 3 then
+  q                q
+    
+  1
+      = q and 2 = qn where n mod 9 = 4. Using the same argument as we
+used in Section 5, we see that if q ≥ 27 and x, y ∈ F , then [y q , x] ∈ K, and
+the representative vector of [y q , x]N depends only on x, y, and not on q. As
+
+                                             19
+we stated above, H = F/M where M = h[y q , x] : x, y ∈ F iN. The quotient
+M/N is a subgroup of K/N and the set of representative vectors of elements
+in this subgroup is a subgroup S ≤ C91375 . If k ∈ K, then k ∈ M if and only
+if the representative vector of kN lies in S.
+     The remainder of the proof of Theorem 6 goes through in the same way
+as in Section 5, as does the proof of the claims in Theorem 8 for the order of
+[b, a] in Schur covers of R(2, q; c) for various c.
+     Now let G be a finite 3-group with exponent q > 3 and class at most
+8, and let H be the covering group for G. We show that H ′ has exponent
+dividing q. We have shown that commutators in H have order dividing q, but
+we need to show that products of commutators have order dividing q. Our
+                                                                                q
+calculations with the covering group of R(2, q; 8) show that [y, x, x, x] 3 = 1
+for all x, y ∈ H. It is known that 3-Engel groups are locally nilpotent, and
+Werner Nickel’s nilpotent quotient algorithm in Magma [2] has a facility
+for computing Engel groups. The free 3-Engel group of rank 5 has class 9,
+and it is an easy calculation with the nilpotent quotient algorithm to show
+that 3-Engel groups satisfy the identity [x1 , x2 , x3 , x4 , x5 ]20 = 1. This implies
+that in a free group [x1 , x2 , x3 , x4 , x5 ]20 can be expressed as a product of
+terms [y, x, x, x] and their inverses. Now γ5 (H) is abelian and is generated
+by elements with order dividing q. So γ5 (H) has exponent dividing q, which
+is coprime to 20. So if h ∈ γ5 (H) then h can be expressed as a product of
+                                                                                  q
+terms [y, x, x, x] and their inverses (with x, y ∈ H). This implies that h 3 is
+                                  q
+a product of terms [y, x, x, x]± 3 (which are all trivial) and terms
+                                                               q
+
+                           [[y, x, x, x]±1 , [z, t, t, t]±1 ]( 2 )
+                                                               3
+
+
+
+
+which are also trivial. So γ5 (H) has exponent dividing 3q . This, combined
+with the fact that H ′ is generated by elements with order dividing q, implies
+that H ′ has exponent dividing q.
+
+
+7     Proof of Theorem 9 and Theorem 10
+To prove Theorem 9 we need to show that if q is a power of 5 then the order
+of [b, a] in a Schur cover of R(2, q; c) is q for c < 9, and 5q for c = 9. It is an
+easy calculation with the p-quotient algorithm to show that this is the case
+for q = 5, 25. We use the same argument as in Section 5 and Section 6 to
+show that this implies that the theorem holds true for all powers of 5.
+    Let q = 5k where k ≥ 2, let R(2, q; 9) = F/R where F is the free group of
+rank two generated by a, b, and let H = F/[F, R]. Let c1 , c2 , . . . , c226 be our
+
+
+                                            20
+list of basic commutators of weight at most 10. As in the last two sections
+we let x, y ∈ H and obtain a relation
+
+          [y, x]q [y, x, y](2) [y, x, y, y](3) (c5 α)f5 (q) . . . (c226 α)f226 (q) = 1
+                            q               q
+                                                                                         (9)
+
+where α is the homomorphism from F to H mapping a, b to y, [y, x]. If
+wt ci = w then ci α is a commutator in x and y, with w entries y, and
+deg fi ≤ w. The binomial coefficients dq for d < 5 are divisible by q, and
+the binomial coefficients dq for d < 25 are divisible by 5q .
+    If we let y ∈ γ2 (H) then all commutators in H with 5 or more entries y
+are trivial and we see that [y, x]q is a product of q th powers of commutators
+of higher weight in x, y. So [y, x]q = 1, and γ3 (H) has exponent q.
+    Now replace q by 5q in (9) and we obtain [y, x]5q = 1, which implies that
+γ2 (H) has exponent 5q.
+    So we let
+                           N = γ2 (F )5q γ3 (F )q γ11 (F )
+and we let                                                 q
+                                K = γ2 (F )q γ3 (F ) 5 γ11 (F ).
+Just as in Section 5 and Section 6 we can show that K/N is a direct product
+of 224 copies of the cyclic group of order 5. Every element k ∈ K can be
+uniquely expressed modulo N in the form
+                                                 q              q
+                                                     m4             m226
+                                k = [b, a]qm3 c45         . . . c226
+                                                                 5
+
+
+
+
+where 0 ≤ mi < 5 for i = 3, 4, . . . , 226. We let [m3 , m4 , . . . , m226 ] be the
+representative vector for kN, and we think of it as an element in C5224 .
+    Just as in Section 5 we can show that if x, y ∈ F then [xq , y] ∈ K, and
+the representative vector of [xq , y]N depends only on x, y, and not on q. The
+rest of the proof that the order of [b, a] in a Schur cover of R(2, q; c) is q for
+c < 9, and 5q for c = 9 goes through just as in Section 5.
+    If G is any group of exponent q = 5k (k ≥ 1) with class less than 9, and
+if H is the cover of G then commutators in H have order dividing q, and so
+(since H ′ has class at most 4) H ′ has exponent dividing q, which implies that
+M(G) has exponent dividing q.
+    The proof of Theorem 10 is almost identical to the proof of Theorem 9.
+
+
+
+
+                                                21
+References
+[1] A.J. Bayes, J. Kautsky, and J.W. Wamsley, Computation in nilpotent
+    groups (application), Proceedings of the second international confer-
+    ence on the theory of groups (Australian National Uuniversity, Can-
+    berra,1973), Springer, Berlin, 1974, pp. 82–89.
+
+[2] W. Bosma, J. Cannon, and C. Playoust, The Magma algebra system I:
+    The user language, J. Symbolic Comput. 24 (1997), 235–265.
+
+[3] M. Hall, The theory of groups, Macmillan, New York, 1959.
+
+[4] G. Havas and M.F. Newman, Applications of computers to questions like
+    those of Burnside, Lecture Notes in Mathematics, 806, Springer-Verlag,
+    Berlin, 1980, pp. 211–230.
+
+[5] Primoz Moravec, Schur multipliers and power endomorphisms of groups,
+    J. Algebra 308 (2007), 12–25.
+
+[6] Michael Vaughan-Lee, Schur’s exponent conjecture — counterexamples of
+    exponent 5 and exponent 9, Int. J. Group Theory 10 (2021), 167–173.
+
+
+
+
+                                   22
+
