@@ -1,0 +1,45 @@
+{
+  "recorded_utc": "2026-09-12T08:23:13.556440+00:00",
+  "successful_processes": [
+    {
+      "task": "monomial preparation",
+      "exit_code": 0,
+      "tool_chunk": "73a74d"
+    },
+    {
+      "task": "preliminary compilation",
+      "exit_code": 0,
+      "tool_chunk": "13615f"
+    },
+    {
+      "task": "preliminary derivations",
+      "exit_code": 0,
+      "tool_chunk": "fe3a87"
+    },
+    {
+      "task": "certificate compilation",
+      "exit_code": 0,
+      "tool_chunk": "f530db"
+    },
+    {
+      "task": "certificate generation",
+      "exit_code": 0,
+      "tool_chunk": "532b74"
+    },
+    {
+      "task": "independent certificate verification",
+      "exit_code": 0,
+      "tool_chunk": "32e71b"
+    },
+    {
+      "task": "integer polynomial constants",
+      "exit_code": 0,
+      "tool_chunk": "1e98eb"
+    }
+  ],
+  "compilation_failure": {
+    "exit_code": 1,
+    "tool_chunk": "5a96ea",
+    "reason": "misleading-indentation warning treated as error; corrected formatting"
+  }
+}

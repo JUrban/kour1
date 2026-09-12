@@ -2523,3 +2523,15 @@ replay (be9423). The 62-file packet binds every prior completion.
 A separate symbolic inclusion experiment finds derivations for all 2,712
 G2 targets (fe3a87); this is preliminary until explicit certificates and
 integer constants are independently checked. No complete count change.
+
+
+## 2026-09-12T08:25:50.093065+00:00 — universal G2 derived-carpet inclusion certified
+
+The C++ search emits 2,712 explicit integer derivations, all independently
+verified by Python: 62,835 nodes, largest proof 70 nodes, four corruptions
+rejected (32e71b). A separate Z[t,u] polynomial-matrix calculation verifies
+all 120 commutator identities and 156 constants exactly (1e98eb). The final
+packet audit replays both checks and exits zero (d954a1). Together with
+Nuzhin 2023 Theorem 1 this gives a candidate for every commutative ring
+in type G2. The full 19.62 count is not increased. The failed certificate
+compiler warning (5a96ea) and corrected zero exit (f530db) are retained.

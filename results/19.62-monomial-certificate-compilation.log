@@ -1,0 +1,8 @@
+scripts/derive_19_62_monomials.cpp: In function ‘std::array<int, 2> derive(const std::vector<Rule>&, int, const std::vector<std::pair<int, int> >&, int, std::ostream&)’:
+scripts/derive_19_62_monomials.cpp:79:9: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   79 |         if(!first_node)certificate<<',';first_node=false;
+      |         ^~
+scripts/derive_19_62_monomials.cpp:79:41: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   79 |         if(!first_node)certificate<<',';first_node=false;
+      |                                         ^~~~~~~~~~
+cc1plus: all warnings being treated as errors
