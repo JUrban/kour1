@@ -2383,3 +2383,17 @@ log and verbatim decompressed library source. Those bytes are retained
 for hash reproducibility; the source/document check excludes those two
 external evidence files. No executable or authored-document error was
 reported.
+
+
+## 2026-09-12T04:29:04.441358+00:00 — G2 four-element ring extension prepared
+
+A binary-implication closure enumerator reproduces all 18,000 frozen
+C2/G2 prime-field pilot carpets exactly (exit zero fea384). The four
+new rings have 10,479, 59,921, 47,345 and 17,955 carpets, respectively
+F4, dual numbers, split ring, and Z/4. Preparation exits zero (df8382);
+all ring operations and commutator factors are exact. Explicit fourteen-
+vector witnesses establish faithful orbit actions of degrees 4095,
+4032, 3969 and 4032. The preparation auditor reproduces every new input
+byte for byte and replays the old exhaustive controls (exit zero 420c47).
+Four 1 GiB searches are running; their observed ambient orders all match
+the validation formulas. No completed four-ring result is claimed.
