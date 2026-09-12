@@ -2211,3 +2211,17 @@ Guralnick--Malle's2014 author version was distinguished from its2013
 submission date; p.2 was viewed. Theorem1.2 has a stronger closure
 hypothesis than18.65, and the stated Ree reduction is not independently
 proved in this packet. The general conjecture remains unresolved.
+
+
+## 2026-09-12T02:35:25.922808+00:00 — prior stability theorem and withdrawn claim
+
+Kapovich's18 August2026 preprint gives19.77 via Theorem A and
+Corollary1.2, including freely reduced sphere and ball sampling.
+The statement pages3--4 were viewed; selected overlap and transfer
+proofs were read, with the rest explicitly not fully audited. No new count.
+The initially found negative20.21 claim is officially withdrawn on
+7 January2026 for an error in Section3.4. Current metadata and the
+explicit old version are archived; no result from it is used.
+The source hashes pass. Latest n7 snapshot at02:30:25 has
+27,630,000 checked nodes, six live workers, zero completed shards,
+38,955,764KiB RSS. A new coprime-product route to20.1 is under audit.

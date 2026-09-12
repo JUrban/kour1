@@ -1,0 +1,2267 @@
+                                                 SMALL CANCELLATION STABILITY AND ISOMORPHISM RIGIDITY FOR
+                                                            GENERIC FINITELY PRESENTED GROUPS
+
+
+                                                                                                            ILYA KAPOVICH
+
+
+
+                                                    Abstract. Let Fm = F (a1 , . . . , am ) with m ≥ 2, and fix q ≥ 1. For every fixed 0 < λ < 1, we prove
+                                                    that a q-tuple Wn of independent uniformly random cyclically reduced words of length n is λ-stable with
+arXiv:2608.17238v1 [math.GR] 18 Aug 2026
+
+
+
+
+                                                    probability converging to 1 exponentially fast. Namely, for every Φ ∈ Aut(Fm ), the tuple Φ(Wn ), after
+                                                    cyclic reduction and symmetrization, satisfies the C ′ (λ) small cancellation condition.
+                                                       Combining generic λ-stability with Greendlinger normal-closure rigidity and with previous results of
+                                                    Kapovich-Schupp-Shpilrain on generic Nielsen uniqueness and generic Whitehead rigidity we establish, for
+                                                    any fixed m ≥ 2, q ≥ 1, isomorphism rigidity for generic m-generator q-relator groups. Thus we show that
+                                                    two such generic groups ⟨a1 , . . . , am |r1 , . . . , rq ⟩ and ⟨a1 , . . . , am |s1 , . . . , sq ⟩ are isomorphic if and only if, after
+                                                    possibly permuting and inverting the generators a1 , . . . , am , the relator tuples (r1 , . . . , rq ) and (s1 , . . . , sq )
+                                                    are the same, up to reordering, cyclic permutations and inverting the relators. Among the applications, we
+                                                    obtain a quadratic-time algorithm that generically solves the isomorphism problem for m-generator q-relator
+                                                    groups, and show that the number of isomorphism types represented by m-generator q-relator presentations
+                                                    with cyclically reduced relators of length n is asymptotic to
+                                                                                                      (2m − 1)qn
+                                                                                                                   .
+                                                                                                     2m+q m! q! nq
+                                                        The proof of generic λ-stability relies on the use of geodesic currents and on our deterministic sufficient
+                                                    criterion for a q-tuple W in Fm to be λ-stable in terms of the components of W being sufficiently projectively
+                                                    close to filling currents.
+
+
+
+
+                                                                                                               Contents
+                                              1. Introduction                                                                                                                                   2
+                                              2. Preliminaries                                                                                                                                  7
+                                              3. Signed periodic overlaps and automorphic pieces                                                                                               11
+                                              4. Filling currents and abstract stability criteria                                                                                              15
+                                              5. Uniformly random reduced words                                                                                                                20
+                                              6. Positive Bernoulli words                                                                                                                      25
+                                              7. Generic Nielsen and Whitehead input                                                                                                           27
+                                              8. Greendlinger normal-closure rigidity                                                                                                          30
+                                              9. Isomorphism rigidity                                                                                                                          33
+                                              10. The generic rigidity class                                                                                                                   34
+                                              11. Isomorphism algorithms and enumeration                                                                                                       39
+                                              12. Disclosure of AI use                                                                                                                         41
+                                              References                                                                                                                                       41
+                                              2020 Mathematics Subject Classification. Primary 20F65, Secondary 20E05, 20F05, 20F10, 20F67, 37D99, 60B15.
+                                              Key words and phrases. free group, random cyclically reduced words, small cancellation, λ-stability, automorphisms, geodesic
+                                           currents, Whitehead algorithm, Nielsen equivalence, isomorphism rigidity.
+
+
+
+
+                                                                                                                       1
+2                                                    I. KAPOVICH
+
+
+                                                 1. Introduction
+
+1.1. Uniform automorphic small cancellation. Random and generic phenomena play a central role in
+geometric and combinatorial group theory. Gromov’s density and few-relator models initiated the study of
+groups with long random relations [Gro87, Gro93]. Several different models of genericity for finitely presented
+groups have been studied, see, for example, [Ol92, Cha95, AO96, Oll05], with word-hyperbolicity being a
+persistent common feature of these constructions. Random-group methods have also produced striking
+applications beyond hyperbolicity. Gromov used a random-group construction based on expander graphs to
+produce finitely generated groups which do not admit a uniform embedding into a Hilbert space [Gro03].
+Random groups also provide important sources of Kazhdan groups: in particular, for 1/3 < d < 1/2,
+a random group in Gromov’s density model at density d has property (T) with probability tending to
+one [Zuk03, KK13]. Random groups in the few relator model exhibit other interesting properties, such as
+bounded rank local freeness and Nielsen uniqueness, [AO96, Arz97, KS05], with applications to isomorphism
+rigidity for random one-relator groups [KSS06, KS09].
+    Throughout the paper,
+                        Fm = F (A) = F (a1 , . . . , am ),   m ≥ 2,    A = {a1 , . . . , am }.
+Whenever Xn is a sequence of nonempty finite sampling spaces, we say that subsets Yn ⊆ Xn are exponentially
+generic if there are constants C, c > 0 such that
+                                                  |Yn |
+                                              1−        ≤ Ce−cn
+                                                  |Xn |
+for every n ≥ 1. Likewise, a sequence of events En occurs with exponentially high probability if P(En ) ≥
+1 − Ce−cn for some C, c > 0 and every n ≥ 1.
+   The isomorphism-rigidity theorem of Kapovich-Schupp-Shpilrain for random one-relator groups in [KSS06]
+says, roughly, that one-relator groups Gr = ⟨a1 , . . . , am |r⟩ and Gs = ⟨a1 , . . . , am |s⟩, with long ”random”
+cyclically reduced defining relator r, s ∈ Fm , are isomorphic as groups if and only if there exists a “relabeling”
+automorphism Θ of Fm permuting and possibly inverting the generators A, such that r is a cyclic permutation
+of Θ(s±1 ). The proof of this result in [KSS06] combined three main ingredients. First, the Nielsen-uniqueness
+theorem of Kapovich–Schupp [KS05] says that, for fixed m ≥ 2 and q ≥ 1, there is an exponentially generic
+class of m-generator q-relator presentations whose groups have a single Nielsen class of m-tuples generating
+nonfree subgroups. Second, Kapovich–Schupp–Shpilrain [KSS06] gave a generic-case analysis of Whitehead’s
+algorithm in Fm : generic cyclically reduced words satisfy a strong Whitehead-minimality condition, and
+automorphic equivalence between such words reduces to relabeling and cyclic permutation. Third, Magnus’s
+classical normal-closure theorem [Mag30] says that elements r, s ∈ Fm have the same normal closure if and
+only if r is conjugate in Fm to s±1 . In the one-relator case, these three inputs turn an abstract group
+isomorphism into the explicit relation between relators needed for isomorphism rigidity.
+   For q ≥ 2 defining relators, the analogous conclusion of Magnus’s theorem is false for relator sets in
+general, and this fact was the main obstacle to extending the results of [KSS06] to random multi-relator
+quotients of free groups. Kapovich–Schupp overcame the corresponding difficulty in [KS09] for random q-
+relator quotients of the modular group M = Z2 ∗ Z3 . There the finite orders of the standard generators
+and the restricted Nielsen theory for generating pairs provide enough additional control to combine small
+cancellation with a Greendlinger-type normal-closure argument. The analogous generic multi-relator rigidity
+problem for quotients of Fm remained open. In the present paper, we overcome this difficulty by proving
+λ-stability for random q-tuples of relators in Fm , for every q ≥ 1, and combining it with Greendlinger’s
+theorem [Gre61] for symmetrized small-cancellation sets having the same normal closure. This supplies the
+required multi-relator substitute for Magnus’s theorem; the other inputs are the Nielsen-uniqueness results
+of [KS05] and the generic Whitehead-minimality and stabilizer results of [KSS06].
+   The missing ingredient is therefore a normal-closure uniqueness principle robust enough to survive arbi-
+trary automorphisms of Fm . This situation leads naturally to the stability problem studied here: whether
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                                3
+
+
+small cancellation holds uniformly throughout the automorphic orbit of a random relator tuple. The order
+of quantifiers is crucially important. For any fixed Φ ∈ Aut(Fm ) standard quasi-isometry considerations
+imply that, for any fixed 0 < λ < 1, there exists 0 < λ′ < λ such that a sufficiently long cyclically reduced
+C ′ (λ′ )-word w ∈ Fm has the property that the cyclic reduction of Φ(w) satisfies C ′ (λ), after symmetrization.
+Since for any 0 < λ′ < 1, random cyclically reduced wn ∈ Fm satisfy C ′ (λ′ ) for all large enough n, it follows
+that the cyclic reduction of Φ(wn ) satisfies C ′ (λ), after symmetrization. However, requiring that a random
+cyclically reduced word satisfies this conclusion for all Φ ∈ Aut(Fm ) makes the problem much more difficult.
+   For g ̸= 1, let ∥g∥A be the cyclically reduced length of its conjugacy class. Recall informally that a
+nontrivial element is root-free if it is not a proper power, and a tuple is root-free if each of its entries is
+root-free; a tuple is irredundant if no two distinct entries are conjugate to one another, even after inverting
+one of them.
+   In this paper we introduce and study the following new key notion. For 0 < λ < 1, we call a tuple of
+cyclically reduced words in Fm λ-stable if, after applying any automorphism of Fm and cyclically reducing,
+its symmetrization satisfies C ′ (λ). See Subsection 2.1 for the precise definitions.
+Remark 1.1 (Small cancellation versus stability). Ordinary C ′ (λ) small cancellation is far weaker than λ-
+stability. If m ≥ 3, 0 < λ ≤ 1/6, and Wn is a uniform positive word of length n in F (a2 , . . . , am ),
+then a1 Wn satisfies C ′ (λ) with exponentially high probability but is primitive, hence not λ-stable. Indeed,
+                                                                                                   ′
+the automorphic orbit of every primitive element contains a1 aN  2 , whose symmetrization fails C (λ) for all
+sufficiently large N . The phenomenon already occurs in rank two: the positive word
+                                              a5 ba3 b2 ababa2 b4 ab3
+has length 25, is root-free, and satisfies C ′ (1/6), but its image under a 7→ ab, b 7→ b has two distinct cyclic
+conjugates with common prefix (ab)4 of length 8 > 38/6.
+
+   For a root-free irredundant tuple g = (g1 , . . . , gq ), let ∆A (g) denote its supremal automorphic piece
+ratio. For each φ ∈ Out(Fm ), choose an automorphism representing φ, cyclically reduce the images of
+the components of g, and symmetrize the resulting tuple by taking all cyclic shifts of these words and their
+inverses. For every ordered pair of distinct words r, r′ in this symmetrization, let v be their maximal common
+initial segment and record the ratio
+                                                       |v|A
+                                                            .
+                                                       |r|A
+Then ∆A (g) is the supremum of these ratios over all such ordered pairs and all φ ∈ Out(Fm ), with value 0
+when no pieces occur; if g is not root-free and irredundant, we put ∆A (g) = ∞. Thus ∆A (g) measures the
+worst relative piece overlap occurring anywhere in the automorphic orbit of g, and ∆A (g) < λ implies that
+g is λ-stable. See Definition 3.2 for the formal definition.
+   For n ≥ 1, let Cn and Fn be the sets of cyclically and freely reduced words of length n over A±1 ,
+respectively. Unless stated otherwise, random choices are uniform. For a positive sequence an , we write
+Yn = OP (an ) if Yn /an is bounded in probability; explicitly, for every δ > 0 there is K > 0 such that
+P(|Yn | > Kan ) < δ for all sufficiently large n.
+Theorem A (Uniform λ-stability). Fix m ≥ 2, q ≥ 1, and 0 < λ < 1. Let
+                                             Cn = (C1,n , . . . , Cq,n )
+be an independent uniformly random q-tuple in Cnq . Then the following hold.
+(1) There are constants C, c > 0 such that, for every n ≥ 1, with probability at least 1 − Ce−cn the tuple Cn
+    is root-free, irredundant, and λ-stable.
+(2) More precisely,                                             
+                                                           log n
+                                           ∆A (Cn ) = OP           ,
+                                                             n
+4                                                   I. KAPOVICH
+
+
+    and for every fixed ε > 0 there are Cε , cε > 0 such that
+                                         P ∆A (Cn ) > ε ≤ Cε e−cε n
+                                                         
+
+    for every n ≥ 1.
+(3) If W1,n , . . . , Wq,n are independent uniformly random words in Fn and W
+                                                                            ci,n is the cyclically reduced form
+    of Wi,n , then the conclusions of parts (1)–(2) hold for
+                                             W
+                                             c n = (W
+                                                    c1,n , . . . , W
+                                                                   cq,n );
+    in particular,                                                       
+                                                                  log n
+                                            ∆A (W
+                                                c n ) = OP                    ,
+                                                                    n
+    and the corresponding fixed-scale tails are exponential.
+Corollary 1.2 (Freely reduced sphere and ball models). Fix m ≥ 2, q ≥ 1, and 0 < λ < 1.
+(1) Let
+                                           Wn = (W1,n , . . . , Wq,n )
+    be an independent uniformly random q-tuple in Fnq . Then there are constants C, c > 0 such that, for
+    every n ≥ 1, with probability at least 1 − Ce−cn the tuple Wn is root-free, irredundant, and λ-stable.
+    Moreover,                                                      
+                                                              log n
+                                         ∆A (Wn ) = OP                 ,
+                                                                n
+    and for every fixed ε > 0 there are Cε , cε > 0 such that
+                                        P ∆A (Wn ) > ε ≤ Cε e−cε n
+                                                          
+
+    for every n ≥ 1.
+(2) Let
+                                          BA (n) = {g ∈ Fm : |g|A ≤ n},
+    and let Un = (U1,n , . . . , Uq,n ) be uniformly distributed on BA (n)q (equivalently, its components are
+    independent uniformly random freely reduced words of length at most n). Then the conclusions of part (1)
+    hold with Un in place of Wn .
+
+  The deterministic core underlying these probabilistic conclusions is a finite-frequency criterion. For a
+nontrivial freely reduced word v and a nontrivial cyclically reduced word W , let (v, W )A be the number of
+nonsymmetrized cyclic occurrences of v in W , and put
+                                 ⟨v, W ⟩A = (v, W )A + (v −1 , W )A = (v ±1 , W )A .
+Let TA be the unit-edge Cayley tree of Fm with respect to A, and let ∂Fm be its Gromov boundary. A
+geodesic current on Fm is a positive locally finite Borel measure on ∂ 2 Fm = (∂Fm × ∂Fm ) \ {(ξ, ξ)} that is
+invariant under the diagonal Fm -action and the flip (ξ, ζ) 7→ (ζ, ξ). For such a current ν and a nontrivial
+freely reduced word v, the cylinder coordinate ⟨v, ν⟩A is the ν-mass of the set of oriented geodesics in TA
+containing the oriented segment [1, v]. The counting current ηW associated to a nontrivial cyclically reduced
+word W is characterized by ⟨v, ηW ⟩A = ⟨v, W ⟩A . The standard tree–current intersection form is denoted
+⟨T, ν⟩; the current ν is filling if this quantity is positive for every nontrivial tree T ∈ cvm , the length-function
+closure of Outer space. These notions are recalled in detail in Subsections 2.2–2.3.
+Theorem 1.3 (Finite-frequency stability criterion). Fix q ≥ 1 and let ν1 , . . . , νq be filling geodesic currents
+on Fm satisfying
+                                       ⟨TA , νi ⟩ = 1   (1 ≤ i ≤ q),
+and let 0 < λ < 1. Then there exist constants 0 < ε < 1 and 0 < λ′ < λ, and integers M, n0 ≥ 1, such that
+the following holds. Let
+                                            W = (W1 , . . . , Wq )
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                                5
+
+
+be a root-free irredundant tuple of nontrivial cyclically reduced words, not necessarily of equal lengths, and
+put
+                                     ℓi = ∥Wi ∥A = |Wi |A      (1 ≤ i ≤ q).
+Suppose that ℓi ≥ n0 for every i, that the symmetrization of W satisfies C ′ (λ′ ), and that, for every 1 ≤ i ≤ q
+and every nontrivial freely reduced word v with |v|A ≤ M ,
+                                            ⟨v, Wi ⟩A
+                                                      − ⟨v, νi ⟩A < ε.
+                                                ℓi
+Then
+                                                 ∆A (W) < λ.
+In particular, W is λ-stable.
+
+   Thus, for root-free irredundant tuples, a property quantified over all automorphisms of Fm follows from
+ordinary small cancellation together with finitely many local frequency inequalities normalized by the indi-
+vidual relator lengths. Theorem 1.3 is proved in Section 4.
+   We prove Theorem A in Section 5, followed by a restatement and proof of Corollary 1.2. Theorem A serves
+as the main tool to establish subsequent probabilistic results. The proof of Theorem A combines geometric
+arguments regarding Outer space, bounded backtracking and optimal Lipschitz distortion with arguments
+involving geodesic currents and the Kapovich-Lustig intersection form [KL09, KL10].
+   Proposition 3.10 provides a key deterministic bound on the length of a piece v for the symmetrized closure
+of φ(W), where W is an arbitrary irredundant root-free q-tuple of cyclically reduced words in Fm :
+                                       |v| ≤ 2ΛA (φ) ρ±
+                                                                   
+                                                      per (W) + 2m .
+
+Here ρ±per (W) records a geometrically defined upper bound for the maximum piece length for the symmetriza-
+tion of (the cyclically reduced form of) W, and ΛA (φ) is the optimal Lipschitz constant of an Fm -equivariant
+map TA → TA φ, where TA is the Cayley tree of Fm = F (A) with respect to A. Lemma lem:uniform-filling-
+neighborhood shows that for a suitably chosen neigborhood U of a filling current ν, every current η ∈ U has
+a controlled distortion under the action of arbitrary φ ∈ Out(Fm ), namely
+                                              ⟨TA , φη⟩ ≥ cΛA (φ)
+where c > 0 is some constant independent of φ and η. In particular, this inequality applies to “rational”
+currents in U corresponding to conjugacy classes in Fm . Combining these tools ultimately allows us to
+deduce Theorem 1.3.
+   Section 4 first proves the deterministic finite-frequency criterion and then derives the probabilistic master
+estimate from finite-coordinate concentration and signed-overlap tails. Section 6 then recovers λ-stability
+for independent positive Bernoulli words, allowing different strictly positive probability vectors among com-
+ponents, and records an almost-sure extension to finitely supported group random walks; see Corollary 6.4.
+
+1.2. Generic multi-relator rigidity. The preceding stability theorem, combined with Greendlinger’s
+normal-closure theorem and the Nielsen and Whitehead inputs described above, yields the generic multi-
+relator rigidity theorem. Let Rel(A) denote the finite group of signed relabeling automorphisms of Fm , that
+is, automorphisms that permute A±1 and commute with inversion. Thus
+                                               | Rel(A)| = 2m m!.
+Theorem B (Generic few-relator rigidity). Fix m ≥ 2 and q ≥ 1. For a finite tuple R = (r1 , . . . , rs ) of
+elements of Fm , write
+                                          GR = ⟨a1 , . . . , am | r1 , . . . , rs ⟩,
+and denote by ai the image of ai in GR . Here and below, “finitely specified” means that, for fixed m, q, finite
+rational auxiliary data are chosen once and for all; no uniform procedure producing these data from m and
+q is asserted. There are finitely specified subsets
+                                          Qm,q (n) ⊆ Cnq      (n ≥ 1)
+6                                                     I. KAPOVICH
+
+
+and constants C, c > 0 such that:
+(1) For every n ≥ 1, a uniform random tuple in Cnq belongs to Qm,q (n) with probability at least 1 − Ce−cn .
+    Membership in Qm,q (n) is decidable in deterministic polynomial time in n.
+(2) Every q-tuple R ∈ Qm,q (n) is irredundant, root-free, and 1/6-stable.
+(3) If R = (r1 , . . . , rq ) ∈ Qm,q (n), then GR is torsion-free, one-ended, and non-elementary hyperbolic; every
+    subgroup generated by at most m − 1 elements is free; every m-tuple generating a nonfree subgroup is
+    Nielsen-equivalent to the standard tuple (a1 , . . . , am ); and GR is co-Hopfian, meaning that every injective
+    endomorphism of GR is surjective.
+(4) If R = (r1 , . . . , rq ) ∈ Qm,q (n), then GR is complete, meaning that its center is trivial and every auto-
+    morphism of GR is inner. Its boundary is one-dimensional, connected, and has no local cut points, and
+    hence is homeomorphic to the Menger curve or the Sierpiński carpet. If q ≥ m − 1, then ∂GR is the
+    Menger curve.
+(5) Let R = (r1 , . . . , rq ) ∈ Qm,q (n), and let S = (s1 , . . . , st ) be an irredundant tuple of nontrivial elements
+    of Fm whose symmetrization of cyclically reduced representatives satisfies C ′ (1/6). Then GR ∼             = GS if
+    and only if t = q and there are Φ ∈ Aut(Fm ), σ ∈ Sym(q), signs εi ∈ {±1}, and gi ∈ Fm such that
+                                        Φ(ri ) = gi sεσ(i)
+                                                       i
+                                                           gi−1      (1 ≤ i ≤ q).
+                                                                                          ∼ GS if and only if n = n′ and
+(6) If R = (r1 , . . . , rq ) ∈ Qm,q (n) and S = (s1 , . . . , sq ) ∈ Qm,q (n′ ), then GR =
+    there are Θ ∈ Rel(A), σ ∈ Sym(q), and signs εi ∈ {±1} such that, for each i = 1, . . . , q, the word si is
+    a cyclic permutation of Θ(rσ(i) )εi .
+Remark 1.4 (Stability Conjecture). The Stability Conjecture of Kapovich–Schupp [KS05b, Conjecture 1.2]
+says the following. Fix m ≥ 2 and q ≥ 1. There exists an algorithmically recognizable generic family
+Dn ⊆ Cnq , n ≥ 1, with the following property. If σ ∈ Dn , τ ∈ Dnq ′ and Φ ∈ Aut(Fm ) satisfy
+                                                NRA (σ) = NRA (Φ(τ )) ,
+then
+                                             RA (σ) = RA (Φ(τ )).
+Theorem B directly gives this conclusion in the present few-relator model, in an exponentially generic and
+polynomial-time recognizable form. Indeed, part (1) gives the exponentially generic recognizable classes
+Qm,q (n), while part (2) says that every tuple in these classes is irredundant, root-free, and 1/6-stable. Thus,
+if
+                                       σ ∈ Qm,q (n),       τ ∈ Qm,q (n′ )
+for some n, n′ ≥ 1 and Φ ∈ Aut(Fm ), then both RA (σ) and RA (Φ(τ )) satisfy C ′ (1/6). If these two
+symmetrized sets have the same normal closure, Theorem 8.2 gives their equality. Hence Theorem B directly
+implies the Stability Conjecture (in fact with exponential genericity in the model used here).
+Remark 1.5 (Labelled Cayley graphs). Part (6) has the following equivalent labelled-graph formulation. If
+                                          R ∈ Qm,q (n),           S ∈ Qm,q (n′ ),
+then GR ∼
+        = GS if and only if there are Θ ∈ Rel(A) and a graph isomorphism
+                                            Cay(GR , A) −→ Cay(GS , A)
+that sends every oriented edge labelled a ∈ A±1 to an oriented edge labelled Θ(a). Equivalently, after
+relabelling the edge labels of the target Cayley graph by Θ−1 , the two Cayley graphs are isomorphic as
+A±1 -labelled graphs.
+
+    Section 10 proves Theorem B, using the Greendlinger normal-closure theorem from Section 8.
+                    ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                               7
+
+
+1.3. Algorithms and enumeration. The same rigidity description yields efficient isomorphism procedures
+on the generic class and an asymptotic enumeration of the resulting isomorphism types.
+Theorem C (Isomorphism algorithms). Fix m ≥ 2 and q ≥ 1. For a finite tuple U = (u1 , . . . , us ) of
+elements of Fm , write
+                                GU = ⟨a1 , . . . , am | u1 , . . . , us ⟩.
+(1) Fix R = (r1 , . . . , rq ) ∈ Qm,q (n0 ). There is a quadratic-time algorithm for the following restricted iso-
+    morphism problem. The input is a finite tuple S = (s1 , . . . , st ) of nontrivial cyclically reduced words
+    known to be irredundant and to have symmetrization satisfying C ′ (1/6); the algorithm decides whether
+    GR ∼= GS . With
+                                                         Xt
+                                                    N=      |sj |A ,
+                                                              j=1
+    the running time is O(N ). (The assumption on S can be checked within the same O(N 2 ) bound; an
+                                 2
+
+    input failing it is reported as outside the restricted problem.)
+(2) There is a linear-time algorithm which, given tuples R ∈ Cnq and S ∈ Cnq ′ known to belong to Qm,q (n) and
+    Qm,q (n′ ), respectively, decides whether GR ∼= GS . The algorithm’s running time is linear in max{n, n′ }.
+    The algorithm does not test the assumptions on R, S.
+
+   We prove Theorem C in Subsection 11.1.
+                                                                                        cr
+Theorem D (Asymptotic number of isomorphism types). Fix m ≥ 2 and q ≥ 1. For n ≥ 1 let Im,q (n) be
+the number of group isomorphism types represented by presentations
+                                               ⟨a1 , . . . , am | r1 , . . . , rq ⟩,
+where r1 , . . . , rq are cyclically reduced words of length n in Fm = F (a1 , . . . , am ). Then
+                                        cr           (2m − 1)qn
+                                       Im,q (n) ∼                               (n → ∞).
+                                                    2m+q m! q! nq
+
+  Here ∼ means that the ratio of the two quantities goes to 1 as n → ∞. We prove Theorem D in
+Subsection 11.2. For q = 1, the conclusion of Theorem D agrees with the precise one-relator asymptotic of
+Kapovich–Schupp [KS05b].
+
+1.4. Organization. Section 2 gives the preliminaries. Sections 3–4 establish the deterministic overlap esti-
+mate, the finite-frequency stability criterion, and its probabilistic consequences. Section 5 proves Theorem A
+and Corollary 1.2, and Section 6 treats positive Bernoulli words and records an almost-sure extension to
+finitely supported group random walks. Section 7 records the Nielsen and Whitehead inputs. Section 8
+proves normal-closure rigidity. Sections 9–10 prove Theorem B, and Section 11 gives the algorithms and
+enumeration.
+
+                                                  2. Preliminaries
+
+   We collect notation and standard facts used below.
+
+2.1. Free groups, cyclic words, and small cancellation.
+Convention 2.1 (Standing free-group notation). Unless explicitly stated otherwise, m ≥ 2, Fm = F (A) is
+the free group with fixed basis
+                                               A = {a1 , . . . , am },
+and TA is its unit-edge Cayley tree. We identify elements of Fm with their freely reduced words over A±1 .
+For u ∈ Fm , let |u|A be its freely reduced length, [u] its conjugacy class, and ∥u∥A the cyclically reduced
+length of [u], equivalently the translation length of u in TA . Subscripts are omitted when the basis is clear.
+8                                                 I. KAPOVICH
+
+
+A positive word is a word over A, and An denotes the set of positive words of length n. This convention
+remains in force throughout the paper unless explicitly overridden.
+Definition 2.2 (Root-free and irredundant tuples). (1) A nontrivial element g ∈ Fm is root-free if it is not
+    a proper power.
+(2) A tuple (s1 , . . . , st ) of nontrivial elements of Fm is root-free if every entry is root-free.
+(3) A tuple of nontrivial elements of Fm is irredundant if no two distinct entries are conjugate to one another
+    or to one another’s inverses.
+
+    For a set R of nontrivial cyclically reduced words in Fm , its symmetrization R consists of all cyclic
+permutations of elements of R±1 ; and such a set R is symmetrized if R = R. A nonempty word v is a piece
+of a symmetrized set R if it is a common initial segment of two distinct elements of R. The set R satisfies
+C ′ (λ) if every piece v beginning r ∈ R satisfies
+                                                  |v| < λ|r|A .
+Let g = (g1 , . . . , gq ) be a tuple of nontrivial elements of Fm , and choose cyclically reduced representatives
+ui ∈ [gi ]. We denote by RA (g) the symmetrization of the set {u1 , . . . , uq }. These conventions are consistent
+with the standard small-cancellation terminology of [LS77, Chapter V].
+   For φ ∈ Out(Fm ), define RA (φ(g)) := RA (Φ(g)) and ∥φ(gi )∥A := ∥Φ(gi )∥A using any representative
+Φ ∈ Aut(Fm ) of the outer automorphism φ. These notations are well defined because inner automorphisms
+preserve conjugacy classes.
+Definition 2.3 (λ-stability). Let 0 < λ < 1.
+(1) A set R ⊆ Fm \ {1} is λ-stable if, for every Φ ∈ Aut(Fm ), the symmetrization of cyclically reduced forms
+    of the elements of Φ(R) satisfies C ′ (λ).
+(2) A tuple is λ-stable if its underlying set is λ-stable.
+(3) A nontrivial element is λ-stable if its singleton set is λ-stable.
+
+   Let v be a nontrivial freely reduced word over A±1 and w = x0 · · · xℓ−1 a nontrivial cyclically reduced
+word of length ℓ. Put                     
+                            (v, w)A := # s ∈ Z/ℓZ : xs xs+1 · · · xs+|v|A −1 = v ,
+where subscripts are read modulo ℓ. Thus (v, w)A is the number of nonsymmetrized cyclic occurrences of v
+in w. Put
+                                 ⟨v, w⟩A := (v, w)A + (v −1 , w)A = (v ±1 , w)A .
+Thus ⟨v, w⟩A is the corresponding symmetrized cyclic occurrence count; the notation (v ±1 , w)A is shorthand
+for the displayed sum. Both quantities depend only on the cyclic word represented by w.
+    For later counting, the number of freely reduced words of length n ≥ 1 is
+                                            |Fn | = 2m(2m − 1)n−1 .
+The number of cyclically reduced words is
+                                    |Cn | = (2m − 1)n + m + (m − 1)(−1)n .                                    (1)
+                                                          ±1
+Indeed, |Cn | is the trace of the adjacency matrix on A in which a letter may be followed by every letter
+except its inverse; that matrix has eigenvalues 2m − 1, 1 with multiplicity m, and −1 with multiplicity m − 1.
+   A signed relabeling automorphism, or simply a relabeling automorphism, is an automorphism induced by
+a permutation of A±1 commuting with inversion. The finite group of such automorphisms is denoted Rel(A)
+and has order
+                                            | Rel(A)| = 2m m!.
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                              9
+
+
+2.2. Trees and Outer space. We use Culler–Vogtmann Outer space and its length-function compactifica-
+tion [CV86, CM87, CL95, Gui00, LL03, FM11]. Let cvm be the space, up to equivariant isometry, of free,
+minimal, discrete simplicial metric Fm -trees with finite quotient, and let cvm be its length-function closure.
+Its nonzero points are nontrivial minimal very small trees: tripod stabilizers are trivial and nondegenerate
+arc stabilizers are trivial or maximal cyclic; see also [GL07, Gui08]. For T ∈ cvm and g ∈ Fm , let
+                                             ∥g∥T := inf dT (x, gx)
+                                                      x∈T
+
+be the translation length. If T is free and simplicial and g ̸= 1, then g has an axis, denoted AT (g).
+  We use the standard right action of Out(Fm ) on cvm , denoted T φ, and characterized by
+                          ∥g∥T φ = ∥φ(g)∥T       (T ∈ cvm , φ ∈ Out(Fm ), g ∈ Fm ).
+Thus TA φ is the pullback of TA by φ; it may be represented by the same underlying metric tree as TA , with
+the Fm -action precomposed by any automorphism representing φ. In particular,
+                                              ∥g∥TA φ = ∥φ(g)∥A .
+Definition 2.4 (Lipschitz factor and normalized slice). Let T ∈ cvm \ {0}.
+(1) The A-Lipschitz factor of T is
+                            ΛA (T ) := inf{Lip(f ) : f : TA → T is Fm -equivariant}.
+(2) The corresponding normalized slice is
+                                       KA := {T ∈ cvm : ΛA (T ) = 1}.
+(3) For φ ∈ Out(Fm ), put
+                                             ΛA (φ) := ΛA (TA φ).
+
+   The definition of ΛA (T ) has a concrete displacement interpretation. An Fm -equivariant map f : TA → T
+is determined, after straightening the images of edges to geodesic segments, by the image x = f (1) of the
+identity vertex. Since every edge of TA /Fm has length one, the straightened map has Lipschitz constant
+                                                max dT (x, ax).
+                                                a∈A
+Consequently,
+                                         ΛA (T ) = inf max dT (x, ax).                                     (2)
+                                                   x∈T a∈A
+
+   For φ ∈ Out(Fm ), the tree TA φ lies in cvm . Passing to quotient marked graphs identifies an equivari-
+ant map TA → TA φ with a change-of-marking map between roses. In the terminology of Francaviglia–
+Martino [FM11, Definition 3.7], such a piecewise-linear map is optimal if at every vertex of its maximally
+stretched subgraph there is a legal turn, equivalently, the incident maximally stretched edge germs are not
+all mapped into one common direction. They prove that optimal maps exist and that the stretching factor
+of every optimal map realizes the minimal Lipschitz constant [FM11, Proposition 3.11]. Thus an equivariant
+optimal map f : TA → TA φ may be chosen with
+                                               Lip(f ) = ΛA (φ).
+Proposition 2.5 (Outer-space facts). The following hold.
+(1) The projectivized compactification Pcvm is compact.
+(2) The function ΛA is positive, continuous, and homogeneous on cvm \ {0}, and KA is compact.
+
+Proof. Culler–Morgan compactness [CM87, Theorem 4.5] gives part (1); see also [CL95, Gui00, LL03]. Ho-
+mogeneity of (2) is immediate, and continuity in the length-function topology is standard [CM87, FM11];
+compare [GL07, Gui08]. For positivity, if ΛA (T ) = 0, choose xk ∈ T with maxa∈A dT (xk , axk ) → 0. The
+displacement of each word at xk is bounded by its word length times this maximum, so every g ∈ Fm is
+elliptic. A finitely generated group acting on an R-tree with every element elliptic has a global fixed point,
+10                                                  I. KAPOVICH
+
+
+contradicting nontrivial minimality. Thus every projective class has a unique representative with ΛA (T ) = 1,
+and
+                                                         T
+                                              [T ] 7−→
+                                                       ΛA (T )
+is a homeomorphism Pcvm → KA , so KA is compact.                                                            □
+
+   There is also a useful finite description of the quantity in Definition 2.4. Proposition 3.15 of [FM11] says
+that the maximal stretching between two marked metric graphs is realized by a candidate loop. When the
+source is the standard rose TA /Fm , the candidates are represented by cyclically reduced words of A-length
+at most two. Hence, for T ∈ cvm ,
+                                                                                    
+                                           ∥u∥T
+                         ΛA (T ) = max           : u cyclically reduced, 1 ≤ |u|A ≤ 2 .                     (3)
+                                           |u|A
+Thus ΛA (T ) is determined by the translation lengths ∥u∥T of freely reduced words u with 1 ≤ |u|A ≤ 2.
+Since cvm is dense in cvm , the left-hand side of (3) is continuous by Proposition 2.5, and the right-hand side
+is a finite maximum of translation-length coordinates, the same formula holds for every nontrivial T ∈ cvm .
+  If T, T ′ are free, minimal, cocompact simplicial Fm -trees and f : T → T ′ is an Fm -equivariant Lipschitz
+map, its bounded-backtracking constant is
+                            BBT(f ) = sup{dT ′ (f (z), [f (x), f (y)]) : z ∈ [x, y]}.
+The map f map is a quasi-isometry, hence induces ∂T =   ∼ ∂T ′ . The following key facts records a particularly
+useful BBT (f ) estimate [BFH97, Lemma 3.1]:
+Proposition 2.6 (BBT bound). Let T, T ′ ∈ cvm (where m ≥ 2) and let f : T → T ′ be an Fm -equivariant
+Lipschitz map.
+                                         BBT(f ) ≤ Lip(f ) vol(T /Fm ),                           (4)
+where vol(T /Fm ) is the total edge length of the quotient graph.
+
+     In particular, an equivariant K-Lipschitz map TA → T ′ has bounded-backtracking constant at most mK.
+
+2.3. Geodesic currents and the intersection form. Let ∂Fm be the Gromov boundary of Fm and put
+                                   ∂ 2 Fm = (∂Fm × ∂Fm ) \ {(ξ, ξ) : ξ ∈ ∂Fm }.
+Let ι : ∂ 2 Fm → ∂ 2 Fm be the flip ι(ξ, ζ) = (ζ, ξ). We identify ∂ 2 Fm with the space of oriented bi-infinite
+geodesics in TA . A geodesic current on Fm is a positive locally finite Borel measure on ∂ 2 Fm invariant under
+the diagonal action of Fm and under ι; see [KL09, KL10]. Write Curr(Fm ) for the space of geodesic currents
+and
+                                    P Curr(Fm ) := (Curr(Fm ) \ {0})/R>0 .
+We equip Curr(Fm ) with the weak-∗ topology.
+     For ν ∈ Curr(Fm ), its support is
+                     supp(ν) = {z ∈ ∂ 2 Fm : ν(U ) > 0 for every open neighborhood U ∋ z}.
+It is a closed Fm - and ι-invariant subset of ∂ 2 Fm . The boundary action of Aut(Fm ) induces an Out(Fm )-
+action on currents, since inner automorphisms act trivially on Fm -invariant measures, and
+                                                         
+                                 supp(φν) = φ supp(ν)         (φ ∈ Out(Fm )).
+Our action conventions give φηg = ηφ(g) and
+                            ⟨TA , φη⟩ = ⟨TA φ, η⟩      (η ∈ Curr(Fm ), φ ∈ Out(Fm )).                      (5)
+Positive rescaling does not change support.
+     For 1 ̸= g ∈ Fm , let g +∞ , g −∞ ∈ ∂Fm be its attracting and repelling fixed points and put
+                                            ℓg = (g −∞ , g +∞ ) ∈ ∂ 2 Fm .
+                   ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                                 11
+
+
+The elements of Fm · ℓg ∪ Fm · ι(ℓg ) are the periodic leaves associated to [g]. If ηg is the counting current of
+[g], then
+                                        supp(ηg ) = Fm · ℓg ∪ Fm · ι(ℓg ).
+For a nontrivial freely reduced word v, let CylA (v) ⊆ ∂ 2 Fm be the cylinder of oriented geodesics containing
+the oriented segment [1, v] ⊆ TA , and put
+                                                                  
+                                            ⟨v, ν⟩A := ν CylA (v) .
+For a nontrivial cyclically reduced word w, the cyclic-occurrence notation from Section 2.1 satisfies
+                                               ⟨v, ηw ⟩A = ⟨v, w⟩A .
+The cylinder coordinates determine the weak-∗ topology on Curr(Fm ): for every ν ∈ Curr(Fm ), neighbor-
+hoods specified by finitely many inequalities
+                                             |⟨v, η⟩A − ⟨v, ν⟩A | < εv
+with nontrivial freely reduced words v and constants εv > 0 form a neighborhood basis at ν.
+  The geometric intersection form
+                                        ⟨·, ·⟩ : cvm × Curr(Fm ) −→ R≥0
+is continuous and satisfies
+                                             ⟨T, ηg ⟩ = ∥g∥T .
+A nonzero current ν is filling in Curr(Fm ) if ⟨T, ν⟩ > 0 for every nontrivial T ∈ cvm . For boundary
+trees, dual laminations, and currents, see [CHL08a, CHL08b, CHL08c]. We use the following standard
+facts [CM87, KL09, KL10, KL15].
+Proposition 2.7 (Current facts). The following hold.
+(1) The intersection form is continuous, homogeneous in the tree coordinate, and linear in the current
+    coordinate.
+(2) For every φ ∈ Out(Fm ), T ∈ cvm , ν ∈ Curr(Fm ) we have
+                                                ⟨T φ, ν⟩ = ⟨T, φν⟩.
+(3) For T ∈ cvm \ {0} and ν ∈ Curr(Fm ),
+                                     ⟨T, ν⟩ = 0    ⇐⇒      supp(ν) ⊆ L2 (T ),
+    where L2 (T ) ⊆ ∂ 2 Fm is the dual algebraic lamination of T ; this is the zero-intersection criterion
+    of [KL10, Theorem 1.1].
+
+                         3. Signed periodic overlaps and automorphic pieces
+
+  We identify signed periodic overlaps with intersections of translates of relator axes.
+Lemma 3.1 (Uniqueness of symmetrized representatives). Let g = (g1 , . . . , gq ) be a root-free irredundant
+tuple of nontrivial elements of Fm , and choose cyclically reduced representatives ui of [gi ]. If a cyclic shift of
+uεi equals a cyclic shift of uδj , where ε, δ ∈ {±1}, then i = j, ε = δ, and the starting positions agree modulo
+|ui |. Thus every member of RA (g) has a unique origin triple consisting of a component, an orientation, and
+a cyclic position.
+
+Proof. If i ̸= j, equality makes gi conjugate to gj±1 , contrary to irredundancy. If i = j and ε = δ, distinct
+starting positions give a nontrivial cyclic period, contrary to root-freeness. Finally, no nontrivial free-group
+element is conjugate to its inverse. If hgh−1 = g −1 , then h2 centralizes g. If h2 = 1, torsion-freeness
+gives h = 1 and g = g −1 ; if h2 ̸= 1, then g, h lie in the cyclic centralizer of h2 and commute. Both are
+impossible.                                                                                                    □
+12                                                   I. KAPOVICH
+
+
+Definition 3.2 (Admissibility and automorphic piece ratio). A tuple g = (g1 , . . . , gq ) of nontrivial elements
+of Fm is admissible if it is root-free and irredundant.
+     For an admissible tuple define
+                                                                                   
+                                                   |v| r ∈ RA (φ(g)),              
+                       ∆A (g) =   sup      sup        : v is a piece of RA (φ(g))     ,
+                                φ∈Out(Fm )      |r|A
+                                                        and an initial segment of r
+                                                                                    
+
+where the inner supremum is zero when there are no pieces. If g is not admissible, put ∆A (g) = ∞.
+
+     Admissibility is invariant under automorphisms, and
+                               ∆A (g) < λ      =⇒      g is admissible and λ-stable.                                (6)
+
+     Let
+                                  w = (w1 , . . . , wq ), wi = xi,0 · · · xi,ℓi −1
+be a tuple of nontrivial cyclically reduced words. Indices in the i-th component are read modulo ℓi . For
+s ∈ Z/ℓi Z, ε ∈ {+, −}, and r ∈ Z, put
+                                   ωi,+,s (r) = xi,s+r ,        ωi,−,s (r) = x−1
+                                                                              i,s−r−1 .
+
+Thus ωi,+,s is a cyclic shift of the bi-infinite periodic word wi∞ , while ωi,−,s is a cyclic shift of (wi−1 )∞ .
+Definition 3.3 (Signed periodic-overlap length). For a tuple w of nontrivial cyclically reduced words, with
+signed periodic words ωi,ε,s as above, define ρ± per (w) as follows. It is 0 if no distinct signed origins exist,
+∞ if two distinct signed periodic words agree identically, and otherwise the largest integer R ≥ 0 for which
+distinct signed origins satisfy
+                                         ωi,ε,s [0, R) = ωj,δ,t [0, R),
+where ω[0, R) denotes the word ω(0)ω(1) · · · ω(R − 1), with the empty-word convention when R = 0.
+Lemma 3.4 (Infinite signed overlap). Let w be a tuple of nontrivial cyclically reduced words. Then
+                                      ρ±
+                                       per (w) < ∞         ⇐⇒     w is admissible.
+
+Proof. Identical same-orientation shifts of one component give a nontrivial cyclic period, hence a proper
+power. Identical shifts from distinct components make their cyclic words, up to conjugacy and inversion,
+powers of a common primitive cyclic word. An exponent of absolute value greater than one violates root-
+freeness; if both exponents have absolute value one, irredundancy fails. Identical opposite-orientation shifts
+of one component would make the element conjugate to its inverse, impossible by Lemma 3.1. Thus infinite
+overlap implies nonadmissibility. Conversely, a proper power yields identical same-orientation shifts, and
+conjugate-up-to-inversion components yield identical signed periodic words after suitable shifts.           □
+Lemma 3.5 (Pieces and signed periodic overlaps). Let w = (w1 , . . . , wq ) be an admissible tuple of nontrivial
+cyclically reduced words. Let
+                                   PA (w) = max{|v| : v is a piece of RA (w)},
+where PA (w) = 0 if RA (w) has no pieces. Then:
+(1)
+                                                 PA (w) ≤ ρ±
+                                                           per (w).
+(2) If |wi |A = n for every 1 ≤ i ≤ q, then
+                                                 PA (w) = ρ±
+                                                           per (w).
+                    ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                                    13
+
+
+Proof. Let v be a piece of RA (w). Thus v is a common initial segment of two distinct members of RA (w).
+By Lemma 3.1, these two members have distinct signed origins. Their corresponding signed periodic words
+therefore have a common initial segment of length |v|, and hence |v| ≤ ρ±
+                                                                        per (w). This proves part (1).
+
+   Suppose now that |wi |A = n for every i. By admissibility and Lemma 3.4, ρ±
+                                                                             per (w) < ∞. Moreover,
+
+                                                     ρ±
+                                                      per (w) < n.
+Indeed, if two distinct signed origins had a common periodic prefix of length at least n, then the corresponding
+signed periodic words, both n-periodic, would agree identically, contrary to admissibility. Choose distinct
+signed origins realizing ρ±per (w). Since this overlap has length less than n, it is also a common initial segment
+of the corresponding two length-n members of RA (w), which are distinct by Lemma 3.1. Thus it is a piece,
+so
+                                                 PA (w) ≥ ρ± per (w).
+Together with part (1), this proves part (2).                                                                   □
+Example 3.6 (Strict inequality in Lemma 3.5). Let F2 = F (a, b) and
+                                                    w = (ab, aba).
+The tuple w is admissible. The signed periodic words
+                                   (ab)∞ = ababab · · · ,      (aba)∞ = abaaba · · ·
+have common initial segment aba of length 3, and a direct check of the finitely many signed origins shows
+that no longer common prefix occurs. Thus
+                                                     ρ±
+                                                      per (w) = 3.
+
+On the other hand, ab is a piece of RA (w), while no piece has length greater than 2; hence
+                                             PA (w) = 2 < 3 = ρ±
+                                                               per (w).
+The strict inequality occurs because the periodic overlap continues past the end of the shorter relator ab.
+
+  Let T be a free simplicial Fm -tree. For g ̸= 1, let AT (g) be its axis. For an admissible tuple g = (g1 , . . . , gq )
+put
+                                          OvT (g) = sup diam(ℓ ∩ ℓ′ ),
+where the supremum ranges over distinct lines
+                                 ℓ = hAT (gi ),      ℓ′ = h′ AT (gj ),     h, h′ ∈ Fm .
+The diameter of the empty set is zero.
+Lemma 3.7 (Pieces and intersections of axes). Let g be an admissible tuple of nontrivial cyclically reduced
+words. Every piece v of RA (g) determines two distinct translates of component axes whose intersection
+contains a segment of length |v|. Consequently,
+                                                    |v| ≤ OvTA (g).
+
+Proof. Let distinct r, r′ ∈ RA (g) have common initial segment v. By Lemma 3.1, they have distinct
+component-orientation-position triples, each determining an oriented fundamental segment on a component-
+axis translate. Translating the common initial vertex to the identity makes the two copies of v a common
+segment of these translates.
+   The underlying lines in TA are distinct. Otherwise their preferred orientations agree, since opposite
+orientations cannot read a nonempty common word. Their common line Fm -stabilizer is generated by the
+primitive root of either component, forcing distinct components to be conjugate up to inversion or, for one
+component, root-freeness to make the triples equal.                                                      □
+14                                                   I. KAPOVICH
+
+
+Lemma 3.8 (Signed periodic factors are axis overlaps). Let w be an admissible tuple of nontrivial cyclically
+reduced words. Then
+                                         OvTA (w) = ρ± per (w).
+
+Proof. For the i-th component and s ∈ Z/ℓi Z, put
+                                        pi,s = xi,0 · · · xi,s−1 ,   pi,0 = 1.
+The line p−1
+          i,s ATA (wi ) passes through the identity. In its positive translation direction its forward label is the
+one-sided restriction of ωi,+,s ; in the opposite direction its forward label is the one-sided restriction of ωi,−,s .
+   A common signed periodic factor of length R therefore gives an axis intersection of length R. For R > 0
+the lines are distinct: otherwise their agreeing orientations and first common edge force the complete signed
+periodic words to agree, contrary to admissibility. Hence
+                                                OvTA (w) ≥ ρ±
+                                                            per (w).
+
+   Conversely, orient two distinct component-axis translates compatibly on a nondegenerate intersection
+and translate its initial vertex to the identity. The oriented lines determine distinct signed origins, and the
+intersection reads a common prefix of their periodic words. An unbounded intersection would give a common
+ray and, by periodicity, identical signed periodic words, contrary to admissibility. Thus its length is at most
+ρ±
+ per (w).                                                                                                    □
+
+     We next control line intersections under equivariant Lipschitz maps.
+Lemma 3.9 (Distortion of line intersections). Let T, T ′ be free, minimal, cocompact simplicial Fm -trees,
+and let f : T → T ′ be an Fm -equivariant Lipschitz map. Put K = Lip(f ) and B = BBT(f ). Let ℓ1 , ℓ2 ⊆ T
+be distinct geodesic lines, and let ℓ′1 , ℓ′2 ⊆ T ′ be the lines whose endpoint pairs are the images of those of
+ℓ1 , ℓ2 under the boundary homeomorphism induced by f . If diam(ℓ1 ∩ ℓ2 ) < ∞, then
+                                     diam(ℓ′1 ∩ ℓ′2 ) ≤ 2K diam(ℓ1 ∩ ℓ2 ) + 4B.
+
+Proof. For distinct ξ, η ∈ ∂T and x ∈ T , let z be the projection of x to the geodesic line with endpoints ξ, η.
+Thus
+                                                  dT (x, z) = (ξ | η)x .
+Choose points pn , qn on the two rays of this line based at z and tending to ξ, η, respectively. Since z ∈ [pn , qn ],
+bounded backtracking gives                                              
+                                          dT ′ f (z), [f (pn ), f (qn )] ≤ B.
+The segments [f (pn ), f (qn )] converge on compact sets to the line with endpoints ξ ′ , η ′ . Hence that line comes
+within distance B of f (z), while
+                                           dT ′ (f (x), f (z)) ≤ KdT (x, z).
+Since a Gromov product in a tree is the distance from the basepoint to the line joining the two boundary
+points, we obtain
+                                           (ξ ′ | η ′ )f (x) ≤ K(ξ | η)x + B.                                     (7)
+   Put r = diam(ℓ1 ∩ ℓ2 ). If the lines meet, choose x ∈ ℓ1 ∩ ℓ2 ; otherwise choose on ℓ1 the endpoint of their
+bridge. For every endpoint ξ of ℓ1 and η of ℓ2 ,
+                                                     (ξ | η)x ≤ r.
+Also dT ′ (f (x), ℓ′1 ) ≤ B. Since r < ∞, both pairs of lines have disjoint endpoint sets. Let J = ℓ′1 ∩ ℓ′2 and
+project f (x) to x′ ∈ ℓ′1 . If |J| = p > 0, suitable endpoints ξ ′ of ℓ′1 and η ′ of ℓ′2 satisfy (ξ ′ | η ′ )x′ ≥ p/2.
+Changing basepoint to f (x) and using (7) gives
+                                        p/2 − B ≤ (ξ ′ | η ′ )f (x) ≤ Kr + B.
+Thus p ≤ 2Kr + 4B.                                                                                                  □
+                   ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                         15
+
+
+Proposition 3.10 (Uniform deterministic piece bound). Let w be an admissible tuple of nontrivial cyclically
+reduced words. For every φ ∈ Out(Fm ) and every piece v of RA (φ(w)),
+                                     |v| ≤ 2ΛA (φ) ρ±
+                                                                
+                                                    per (w) + 2m .                                      (8)
+The estimate applies to self-pieces and to pieces shared by different relators.
+
+Proof. Choose an automorphism Φ representing φ. By Lemma 3.7, a piece v of RA (φ(w)) gives distinct
+translates of axes of the Φ(wi ) in TA . In the pullback realization of TA φ, these are the endpoint images,
+under an optimal map TA → TA φ, of the corresponding source-axis translates. Their source intersection is
+at most ρ±per (w) by Lemma 3.8. Applying Lemma 3.9 with
+
+                                            K = ΛA (φ),        B ≤ mΛA (φ)
+from (4) in Proposition 2.6 yields
+        |v| ≤ OvTA (φ(w)) ≤ 2Kρ±                      ±                             ±
+                                                                                                
+                               per (w) + 4B ≤ 2ΛA (φ)ρper (w) + 4mΛA (φ) = 2ΛA (φ) ρper (w) + 2m .
+                                                                                                          □
+Remark 3.11. The estimate is deterministic; positivity in the earlier positive-word argument only replaced
+signed periodic overlaps by unsigned ones.
+
+                        4. Filling currents and abstract stability criteria
+
+4.1. Finite-frequency stability. Recall from Definition 2.4 that
+                                            KA = {T ∈ cvm : ΛA (T ) = 1},
+and that KA is compact by Proposition 2.5.
+  Put
+                                       ∥η∥A := ⟨TA , η⟩        (η ∈ Curr(Fm ))
+and
+                                    SA = {η ∈ Curr(Fm ) : ∥η∥A = 1}.
+Here and below, SA carries the subspace topology inherited from the weak-∗ topology on Curr(Fm ). Since
+                                                 X
+                                         ∥η∥A =     ⟨a, η⟩A > 0
+                                                         a∈A
+for every nonzero current, each projective current has a unique representative in SA .
+Lemma 4.1 (Uniform convergence on the compact slice). Let µj , µ ∈ Curr(Fm ), and suppose that µj → µ.
+Then:
+(1)
+                                    sup |⟨T, µj ⟩ − ⟨T, µ⟩| −→ 0          as j → ∞.
+                                    T ∈KA
+(2) The function
+                                                mA (η) := min ⟨T, η⟩
+                                                            T ∈KA
+      is continuous on Curr(Fm ).
+
+Proof. If (1) fails then there are ε > 0, a subsequence jk → ∞, and trees Tk ∈ KA such that
+                                               |⟨Tk , µjk ⟩ − ⟨Tk , µ⟩| ≥ ε
+for every k ≥ 1. After passing to a further subsequence, compactness of KA gives lim Tk = T for some
+                                                                                         k→∞
+T ∈ KA . Since µjk → µ, joint continuity of the intersection form gives
+                                lim |⟨Tk , µjk ⟩ − ⟨Tk , µ⟩| = |⟨T, µ⟩ − ⟨T, µ⟩| = 0
+                               k→∞
+16                                                  I. KAPOVICH
+
+
+contradicting the preceding lower bound. This proves part (1).
+     For part (2), the estimate
+                                   |mA (µj ) − mA (µ)| ≤ sup |⟨T, µj ⟩ − ⟨T, µ⟩|
+                                                            T ∈KA
+
+and part (1) give the continuity of mA .                                                                  □
+Lemma 4.2 (Uniform filling neighborhood). Let ν ∈ SA be filling. There are a neighborhood U of ν in SA
+and c > 0 such that
+      (1) We have
+                                               ⟨T, η⟩ ≥ cΛA (T )                                         (9)
+          for every η ∈ U and every nontrivial T ∈ cvm .
+      (2) For every φ ∈ Out(Fm ) we have
+                                          ⟨TA φ, η⟩ = ⟨TA , φη⟩ ≥ cΛA (φ)                              (10)
+
+Proof. Since ν is filling and KA is compact, mA (ν) > 0. Choose 0 < c < mA (ν) and a neighborhood U on
+which mA (η) > c. For T ̸= 0, the tree T /ΛA (T ) lies in KA , and homogeneity gives (9), so that part (1)
+holds.
+     For part (2), for any φ ∈ Out(Fm ), by part (1) we have
+                                  ⟨TA , φη⟩ = ⟨TA φ, η⟩ ≥ cΛA (TA φ) = cΛA (φ),
+as required.                                                                                              □
+Proposition 4.3 (Finite-frequency deterministic estimate). Fix q ≥ 1 and filling currents
+                                                  ν1 , . . . , νq ∈ SA .
+There exist an integer M ≥ 1 and constants 0 < ε < 1 and 0 < c ≤ 1 with the following property. Let
+                                                W = (W1 , . . . , Wq )
+be a tuple of nontrivial cyclically reduced words, and put
+                                     ℓi = ∥Wi ∥A = |Wi |A ,          ℓ∗ = min ℓi .
+                                                                           1≤i≤q
+
+Suppose that, for every 1 ≤ i ≤ q and every nontrivial freely reduced word v with |v|A ≤ M ,
+                                              ⟨v, Wi ⟩A
+                                                        − ⟨v, νi ⟩A < ε.                               (11)
+                                                  ℓi
+Then, for every 1 ≤ i ≤ q and every φ ∈ Out(Fm ),
+                                              ∥φ(Wi )∥A ≥ cℓi ΛA (φ).                                  (12)
+If, in addition, W is admissible, then
+                                                   2 ρ±
+                                                                   
+                                                      per (W) + 2m
+                                          ∆A (W) ≤                   .                                 (13)
+                                                           cℓ∗
+Proof. For each i, choose a neighborhood Ui ⊆ SA of νi and ci > 0 as in Lemma 4.2. Using the cylinder-
+coordinate neighborhood basis from Subsection 2.3, choose a finite nonempty set Vi of nontrivial freely
+reduced words and positive numbers εi,v , v ∈ Vi , such that
+                           {η ∈ SA : |⟨v, η⟩A − ⟨v, νi ⟩A | < εi,v for every v ∈ Vi } ⊆ Ui .
+Choose M ≥ 1 at least the length of every word in the finitely many sets Vi , and choose 0 < ε < 1 no larger
+than every εi,v . Then, for every i, the inequalities
+                                   |⟨v, η⟩A − ⟨v, νi ⟩A | < ε       (1 ≤ |v|A ≤ M )
+                   ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                              17
+
+
+for η ∈ SA imply η ∈ Ui . Put
+                                               c = min{1, c1 , . . . , cq }.
+  For 1 ≤ i ≤ q, let
+                                                          1
+                                                     ηbi =   ηW .
+                                                          ℓi i
+Since Wi is nontrivial and cyclically reduced, one has ηbi ∈ SA , and
+                                                            ⟨v, Wi ⟩A
+                                              ⟨v, ηbi ⟩A =            .
+                                                                ℓi
+Thus (11) gives ηbi ∈ Ui . For every φ ∈ Out(Fm ), equivariance and part (2) of Lemma 4.2 now give
+                                 1
+                                    ∥φ(Wi )∥A = ⟨TA φ, ηbi ⟩ ≥ ci ΛA (φ) ≥ cΛA (φ),
+                                 ℓi
+which proves (12).
+  Suppose now that W is admissible. If a piece u of RA (φ(W)) begins a relator arising from component i,
+Proposition 3.10 and (12) give
+                                   2ΛA (φ) ρ±                  2 ρ±
+                                                                              
+                           |u|                per (W) + 2m        per (W) + 2m
+                                 ≤                           ≤                   .
+                       ∥φ(Wi )∥A           cℓi ΛA (φ)                  cℓ∗
+Taking the supremum over all pieces and all φ proves (13).                                                     □
+
+Theorem 1.3 (Finite-frequency stability criterion). Fix q ≥ 1, filling currents
+                                ν1 , . . . , νq ∈ Curr(Fm )      with          ⟨TA , νi ⟩ = 1
+for 1 ≤ i ≤ q, and 0 < λ < 1. Then there exist constants 0 < ε < 1 and 0 < λ′ < λ, and integers M, n0 ≥ 1,
+such that the following holds. Let
+                                              W = (W1 , . . . , Wq )
+be a root-free irredundant tuple of nontrivial cyclically reduced words, not necessarily of equal lengths, and
+put
+                                     ℓi = ∥Wi ∥A = |Wi |A        (1 ≤ i ≤ q).
+Suppose that ℓi ≥ n0 for every i, that the symmetrization of W satisfies C ′ (λ′ ), and that, for every 1 ≤ i ≤ q
+and every nontrivial freely reduced word v with |v|A ≤ M ,
+                                              ⟨v, Wi ⟩A
+                                                        − ⟨v, νi ⟩A < ε.
+                                                  ℓi
+Then
+                                                     ∆A (W) < λ.
+In particular, W is λ-stable.
+
+Proof. Apply Proposition 4.3 to ν1 , . . . , νq , obtaining M , ε, and 0 < c ≤ 1. Choose
+                                                                  cλ
+                                                     0 < λ′ <
+                                                                   4
+and then choose n0 ≥ M so that
+                                                       4m   λ
+                                                           < .
+                                                       cn0  2
+Since c ≤ 1, one has λ′ < λ.
+  Let W satisfy the hypotheses. Proposition 4.3 gives
+                            ∥φ(Wi )∥A ≥ cℓi ΛA (φ)            (1 ≤ i ≤ q, φ ∈ Out(Fm )).                    (14)
+Fix φ ∈ Out(Fm ), and let u be a piece of RA (φ(W)) beginning a relator arising from component i. Choose
+an automorphism Φ representing φ. As in the proof of Proposition 3.10, Lemma 3.7, applied to cyclically
+18                                                  I. KAPOVICH
+
+
+reduced representatives of the Φ(Wk ), associates to u two distinct target-axis translates whose intersection
+contains a segment of length |u|. Let f : TA → TA φ be an optimal equivariant map. In the pullback
+realization of TA φ, these target lines are the endpoint images under f of distinct source-axis translates
+L1 , L2 ⊆ TA , where L1 belongs to component i and L2 belongs to a component j. Put
+                                               d = diam(L1 ∩ L2 ).
+This number is finite by Lemma 3.8.
+     We claim that
+                                                     d < λ′ ℓi .                                           (15)
+There is nothing to prove if d = 0. If d > 0, orient the source lines compatibly along their intersection and
+translate an initial vertex of the intersection to the identity. As in the proof of Lemma 3.8, the intersection
+label is then a common prefix of signed periodic words arising from Wi and Wj , with distinct signed origins.
+If
+                                                 d ≥ min{ℓi , ℓj },
+and ℓi ̸= ℓj , the full shorter cyclic word is a piece of RA (W), contradicting C ′ (λ′ ) because λ′ < 1. If
+ℓi = ℓj , the two corresponding symmetrized relators agree in all ℓi positions, contradicting Lemma 3.1.
+Hence d < min{ℓi , ℓj }. The corresponding members of RA (W) are distinct, and the full intersection label
+is therefore a piece beginning a cyclic conjugate of Wi±1 . The C ′ (λ′ ) hypothesis gives (15).
+     Apply Lemma 3.9 to the optimal map TA → TA φ. Using (4) and (15), we obtain
+                               |u| ≤ 2ΛA (φ)d + 4mΛA (φ) < 2ΛA (φ)(λ′ ℓi + 2m).
+Together with (14), this gives
+                                      |u|      2λ′   4m    2λ′   4m
+                                             <     +     ≤     +     < λ.
+                                   ∥φ(Wi )∥A    c    cℓi    c    cn0
+Taking the supremum over all pieces and all φ proves ∆A (W) < λ. The implication (6) completes the
+proof.                                                                                          □
+Remark 4.4. Theorem 1.3 is a finite-data sufficient condition, although the proof does not assert that suitable
+M , ε, λ′ , and n0 can be computed effectively from an arbitrary description of the filling currents νi .
+
+4.2. Probabilistic consequences.
+Definition 4.5 (Exponential concentration). Let µn be random currents taking values in SA , and let ν ∈ SA .
+We say that µn concentrates exponentially at ν if, for every neighborhood U of ν in SA , there are constants
+CU , cU > 0 such that
+                                         P(µn ∈ / U ) ≤ CU e−cU n
+for every n ≥ 1.
+Remark 4.6 (Why fillingness is essential). The filling hypothesis in Proposition 4.3 and Theorem 1.3 is
+essential. Let m ≥ 3, let Wn be a uniform positive word of length n in F (a2 , . . . , am ), and put
+                                                    Un = a1 Wn .
+Let ν0 ∈ SA be the current characterized by
+                            (
+                             (m − 1)−|v|A , v or v −1 is a positive word over {a2 , . . . , am },
+                ⟨v, ν0 ⟩A =
+                             0,             otherwise.
+The normalized counting currents (n + 1)−1 ηUn concentrate exponentially at ν0 in the sense of Definition 4.5:
+the Bernoulli frequencies in Wn have exponentially decaying deviation probabilities on every fixed finite
+family of cylinder coordinates, while the single letter a1 affects each fixed normalized coordinate by only
+O(1/n). The current ν0 is not filling. Indeed, it has zero intersection with the Bass–Serre tree of
+                                           Fm = ⟨a1 ⟩ ∗ F (a2 , . . . , am ),
+                     ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                          19
+
+
+because F (a2 , . . . , am ) is elliptic there.
+   The denominator conclusion fails accordingly. Each Un is primitive, since a1 7→ a1 Wn , ai 7→ ai for i ≥ 2,
+defines an automorphism. Hence some φn ∈ Out(Fm ) satisfies
+                                                       ∥φn (Un )∥A = 1.
+Because ΛA (φn ) ≥ 1, no c > 0 can satisfy
+                                                  ∥φ(Un )∥A ≥ c(n + 1)ΛA (φ)
+for all n and φ. Thus this nonstable family lacks precisely the filling-current denominator.
+
+   The next two results derive the probabilistic stability estimates from the deterministic finite-frequency
+estimate.
+Proposition 4.7 (Filling-current denominator estimate). Fix q ≥ 1 and filling currents ν1 , . . . , νq ∈ SA .
+For every n ≥ 1 and every 1 ≤ i ≤ q, let Wi,n be a random cyclically reduced word of length n, and suppose
+that
+                                                        1
+                                                ηbi,n := ηWi,n
+                                                        n
+concentrates exponentially at νi in the sense of Definition 4.5 for every i. Then there are constants
+                                                  0 < c∗ ≤ 1,     C0 , c0 > 0
+such that
+                      P (∥φ(Wi,n )∥A ≥ c∗ nΛA (φ) for all i and φ ∈ Out(Fm )) ≥ 1 − C0 e−c0 n .
+
+Proof. Choose M , ε, and c from Proposition 4.3. For 1 ≤ i ≤ q, let Vi ⊆ SA be the open neighborhood of νi
+defined by
+                                |⟨v, η⟩A − ⟨v, νi ⟩A | < ε (1 ≤ |v|A ≤ M ).
+Exponential concentration and a union bound show that all ηbi,n lie in their corresponding Vi outside an
+event of probability at most C0 e−c0 n . On the complementary event, Proposition 4.3 gives (12) for every i
+and φ. Take c∗ = c.                                                                                      □
+Theorem 4.8 (Abstract master estimate). Fix q ≥ 1. For every n ≥ 1, let Wn = (W1,n , . . . , Wq,n ) be a
+random tuple of cyclically reduced words of common length n. Suppose:
+  (A1) There are filling currents ν1 , . . . , νq ∈ SA such that, for every 1 ≤ i ≤ q, the random currents
+                                                             1
+                                                     ηbi,n := ηWi,n
+                                                             n
+       concentrate exponentially at νi in the sense of Definition 4.5;
+  (A2) There are constants D ≥ 0, C1 > 0, and 0 < θ < 1 such that, for every n ≥ 1 and every integer R
+       with 1 ≤ R ≤ n/4,
+                                          P ρ±                        D R
+                                                               
+                                                per (Wn ) ≥ R ≤ C1 n θ .                                   (16)
+Then there are constants c∗ > 0 and C0 , c0 > 0 such that the following hold.
+(1) For every n ≥ 1 and every integer R with 1 ≤ R ≤ n/4,
+                                                   
+                                          2(R + 2m)
+                           P ∆A (Wn ) >               ≤ C0 e−c0 n + C1 nD θR .                            (17)
+                                              c∗ n
+(2) One has                                                        
+                                                              log n
+                                           ∆A (Wn ) = OP              ,
+                                                                n
+     and for every fixed ε > 0 there are constants Cε , cε > 0 such that
+                                          P ∆A (Wn ) > ε ≤ Cε e−cε n
+                                                           
+
+     for every n ≥ 1.
+20                                                  I. KAPOVICH
+
+
+(3) For every fixed 0 < λ < 1, the tuple Wn is admissible and λ-stable with exponentially high probability.
+
+Proof. Choose M , ε0 , and 0 < c ≤ 1 from Proposition 4.3, and put c∗ = c. For each n, let En be the event
+that
+                                          |⟨v, ηbi,n ⟩A − ⟨v, νi ⟩A | < ε0
+for every 1 ≤ i ≤ q and every nontrivial freely reduced word v with |v|A ≤ M . Assumption (A1) and a finite
+union bound give constants C0 , c0 > 0 such that
+                                                 P(Enc ) ≤ C0 e−c0 n
+for every n ≥ 1.
+  On En ∩ {ρ±per (Wn ) < R}, the tuple is admissible by Lemma 3.4, and Proposition 4.3 gives
+
+                                           2 ρ±
+                                                             
+                                              per (Wn ) + 2m     2(R + 2m)
+                             ∆A (Wn ) ≤                        <           .
+                                                   c∗ n             c∗ n
+Combining the two exceptional-event bounds proves part (1).
+  For the first assertion of part (2), take R = ⌈K log n⌉ for all sufficiently large n, with K large enough that
+nD θR → 0; for such n one also has R ≤ n/4. This gives
+                                                                  
+                                                             log n
+                                            ∆A (Wn ) = OP             .
+                                                               n
+For fixed ε > 0, take                                             
+                                                    c∗ min{ε, 1}
+                                            Rn =                 n .
+                                                         4
+For all sufficiently large n, one has 1 ≤ Rn ≤ n/4 and
+                                                 2(Rn + 2m)
+                                                            < ε.
+                                                    c∗ n
+Since Rn grows linearly in n, the term nD θRn is exponentially small. Part (1) therefore gives the fixed-scale
+exponential estimate; enlarging Cε covers the finitely many remaining values of n. Part (3) follows from (6)
+and the fixed-scale estimate with ε = λ/2.                                                                  □
+
+                                 5. Uniformly random reduced words
+
+     Put
+                                       Σ = A±1 ,      d = |Σ| = 2m.
+We first prove the signed-overlap estimate for uniform cyclically reduced words.
+
+5.1. Signed periodic-overlap tails.
+Lemma 5.1 (Conditional coordinates in a random cyclic word). Let n ≥ 2, and let
+                                                X = X0 X1 · · · Xn−1
+be uniform in Cn , and let I ⊆ Z/nZ contain no two cyclically adjacent positions. Conditional on all coordi-
+nates Xj with j ∈
+                / I, the variables Xi , i ∈ I, are independent. Each Xi is uniform on
+                                                       −1     −1
+                                                 Σ \ {Xi−1 , Xi+1 },
+a set of cardinality at least d − 2 = 2m − 2.
+
+Proof. Condition on an outside labeling of positive probability. Since I contains no adjacent positions, each
+remaining reducedness constraint involves one variable and its fixed neighbors. Uniformity of admissible
+completions and factorization of their number give the asserted independence and conditional laws.         □
+                   ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                                   21
+
+
+Proposition 5.2 (Signed periodic-overlap tail). Fix q ≥ 1. Let Cn = (C1,n , . . . , Cq,n ) be an independent
+uniformly random tuple in Cnq . There are constants C1 > 0 and 0 < θ < 1, depending only on m, q, such
+that, for every n ≥ 1 and every integer R with 1 ≤ R ≤ n/4,
+                                        P ρ±                   2 R
+                                                        
+                                           per (Cn ) ≥ R ≤ C1 n θ .                                     (18)
+One may take θ = (2m − 2)−1/18 after enlarging C1 .
+
+Proof. Fix two distinct signed origins. Equality of their length-R prefixes imposes constraints of the form
+                                            Xu = Xv      or    Xu = Xv−1 .
+
+   If the origins lie in different components, choose at least R/3 pairwise nonadjacent positions in the relevant
+interval of the second component, discarding at most one endpoint at the cyclic cut. Conditional on the first
+component and all other coordinates of the second, Lemma 5.1 makes these constraints independent, each
+with probability at most (d − 2)−1 . Their agreement probability is therefore at most (d − 2)−R/3 , up to a
+fixed factor for small R.
+   Suppose the origins lie in one component. With equal signs, the constraints join s+r to t+r for 0 ≤ r < R,
+so every vertex has degree at most two. Distinct r give distinct ordered edges. Repetition as an unordered
+edge with reversed endpoints would imply 2(t − s) = 0 modulo n, hence t − s = n/2 and r − r′ ≡ n/2 modulo
+n, impossible for 0 ≤ r, r′ < R ≤ n/4. Thus all R edges are distinct.
+   If the signs are opposite, the constraint edges have the form
+                                         {s + r, t − r − 1},      0 ≤ r < R.
+A loop makes the event empty. Otherwise each unordered edge occurs at most twice, since an edge and one
+endpoint determine r up to interchanging the endpoints. Each cyclic position occurs at most once in each
+endpoint role, so the graph has at least R/2 distinct edges and maximum degree two.
+   Thus the constraint graph has at least R/2 edges and maximum degree two. It has a matching of size
+at least R/6; choosing one endpoint from each matching edge and then an independent set in the cyclic
+adjacency graph gives a set I of size at least R/18. Orient the corresponding matching constraints toward
+I. Their other endpoints are distinct and outside I, so after conditioning off I, each constraint prescribes a
+different coordinate. Lemma 5.1 bounds their joint probability by
+                                            (d − 2)−|I| ≤ (d − 2)−R/18 .
+
+   There are 2qn signed origins and fewer than 4q 2 n2 ordered pairs. A union bound proves the result.               □
+Corollary 5.3 (Variable-length signed-overlap tail). Fix q ≥ 1 and positive integers ℓ1 , . . . , ℓq . Let
+C1 , . . . , Cq be independent uniformly random cyclically reduced words of lengths ℓ1 , . . . , ℓq , respectively. Put
+                                                                    q
+                                                                    X
+                                            ℓ∗ = min ℓi ,      L=         ℓi .
+                                                   i
+                                                                    i=1
+For every integer R with 1 ≤ R ≤ ℓ∗ /4,
+                                 P ρ±                              2         −R/18
+                                                              
+                                    per (C1 , . . . , Cq ) ≥ R ≤ 4L (2m − 2)       .
+
+Proof. The preceding proof uses only R ≤ ℓi /4 for components containing an origin, so it applies unchanged.
+There are 2L signed origins and fewer than 4L2 ordered pairs.                                             □
+Corollary 5.4 (Exponential admissibility). Fix q ≥ 1, and let Cn be the independent uniformly random
+tuple in Cnq from Proposition 5.2. There are constants C, c > 0, depending only on m, q, such that, for every
+n ≥ 1, the tuple Cn is admissible with probability at least 1 − Ce−cn .
+
+Proof. For n ≥ 4, nonadmissibility is equivalent to ρ±
+                                                     per (Cn ) = ∞ by Lemma 3.4, and Proposition 5.2 applies
+with R = ⌊n/4⌋. Enlarging the prefactor covers n < 4.                                                     □
+22                                                I. KAPOVICH
+
+
+5.2. The uniform nonbacktracking current. Define the uniform current νA ∈ Curr(Fm ) by
+                                                   1
+                                 ⟨v, νA ⟩A =                                                             (19)
+                                             m(2m − 1)|v|−1
+for every nontrivial freely reduced word v. These coordinates satisfy ∥νA ∥A = 1. Every reduced cylinder has
+positive measure, so
+                                             supp(νA ) = ∂ 2 Fm .
+     Since νA has full support, Corollary 1.6 of [KL09] implies:
+Lemma 5.5. The current νA ∈ Curr(Fm ) is filling.
+Lemma 5.6 (Exponential current concentration). For every n ≥ 1, let Cn be uniform in Cn . Then n1 ηCn
+concentrates exponentially at νA in the sense of Definition 4.5. Moreover, for every fixed 0 < α ≤ 1 and
+every neighborhood U of νA in SA , there are constants CU , cU > 0 such that
+                                                    
+                                            1
+                                        P        / U ≤ CU e−cU N
+                                              ηC ∈
+                                            ℓ ℓ
+whenever N ≥ 1 and αN ≤ ℓ ≤ N .
+
+Proof. It suffices to control finitely many cylinder coordinates. Let (Yk ) be the stationary nonbacktracking
+chain on Σ, with uniform initial distribution and transitions
+                                                        (
+                                                          (d − 1)−1 , y ̸= x−1 ,
+                                 P(Yk+1 = y | Yk = x) =
+                                                          0,          y = x−1 .
+Then Y0 · · · Yn−1 is uniform in Fn , and conditioning on
+                                              En = {Yn−1 ̸= Y0−1 }
+gives the uniform law on Cn . For n ≥ 2, every entry of every positive transition-matrix power is at most
+(d − 1)−1 , since each later row is a convex combination of first-power rows. Hence
+                                                        d−2
+                                               P(En ) ≥        .
+                                                        d−1
+(The case n = 1 is immediate.)
+   For a reduced word v of length r, its non-wrapping occurrence count is an additive functional of the
+finite-state chain of reduced r-blocks. Thus the same applies, up to the bounded wrapping error, to the
+cyclic count (v, Cn )A . The large-deviation estimate of [KSS06, Section 5] gives exponential concentration of
+the normalized count at its stationary mean
+                                                       1
+                                                              .
+                                                  d(d − 1)r−1
+Conditioning on En changes the probability by at most the fixed factor (d − 1)/(d − 2). For v, the cyclic and
+non-wrapping occurrence counts differ by at most r−1, and the same is true for v −1 ; hence the corresponding
+symmetrized counts differ by at most 2(r − 1). Applying the large-deviation estimate to both v and v −1
+gives exponential concentration of
+                                           1             1
+                                             ⟨v, ηCn ⟩A = ⟨v, Cn ⟩A
+                                           n             n
+at
+                                              2              1
+                                                      =              ,
+                                        d(d − 1)r−1     m(2m − 1)r−1
+which is (19). Since neighborhoods specified by finitely many cylinder-coordinate inequalities form a basis
+for the current topology, a finite union bound proves exponential concentration. The finitely many values
+of n smaller than one of the block lengths occurring in such a neighborhood are absorbed by increasing
+the prefactor. For the final assertion, apply this estimate at length ℓ and use e−cℓ ≤ e−cαN whenever
+αN ≤ ℓ ≤ N .                                                                                                □
+                     ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                          23
+
+
+5.3. Uniform λ-stability for random reduced words.
+Theorem A (Uniform λ-stability). Fix m ≥ 2, q ≥ 1, and 0 < λ < 1. Let
+                                            Cn = (C1,n , . . . , Cq,n )
+be an independent uniformly random q-tuple in Cnq . Then the following hold.
+(1) There are constants C, c > 0 such that, for every n ≥ 1, with probability at least 1 − Ce−cn the tuple Cn
+    is root-free, irredundant, and λ-stable.
+(2) More precisely,                                               
+                                                             log n
+                                           ∆A (Cn ) = OP             ,
+                                                               n
+    and for every fixed ε > 0 there are Cε , cε > 0 such that
+                                          P ∆A (Cn ) > ε ≤ Cε e−cε n
+                                                         
+
+    for every n ≥ 1.
+(3) If W1,n , . . . , Wq,n are independent uniformly random words in Fn and W
+                                                                            ci,n is the cyclically reduced form
+    of Wi,n , then the conclusions of parts (1)–(2) hold for
+                                          W
+                                          c n = (W
+                                                 c1,n , . . . , W
+                                                                cq,n );
+    in particular,                                                      
+                                                                 log n
+                                          ∆A (W
+                                              c n ) = OP                     ,
+                                                                   n
+    and the corresponding fixed-scale tails are exponential.
+
+Proof. Proposition 5.2 and Lemmas 5.5–5.6 verify the hypotheses of Theorem 4.8, proving the assertions for
+Cn .
+  It remains to treat freely reduced words. Every W ∈ Fn has a unique decomposition
+                                                 W = uCu−1 ,                                              (20)
+where C is cyclically reduced. Put K = |u| and L = |C| = n − 2K.
+   Conditional on L = ℓ, the word C is uniform in Cℓ . For k = (n − ℓ)/2 ≥ 1 and fixed C = c1 · · · cℓ , a
+reduced u = x1 · · · xk gives (20) exactly when
+                                           xk ̸= c−1
+                                                  1 ,        xk ̸= cℓ .
+The two forbidden letters are distinct, so the number of such u is
+                                              (d − 2)(d − 1)k−1 ,
+independent of C. The case k = 0 is immediate.
+  Moreover, for t ≥ 1,
+                                                    d−1
+                                         P(K ≥ t) ≤       (d − 1)−t .                                    (21)
+                                                    d−2
+Indeed, use |Cn−2k | ≤ d(d − 1)n−2k−1 and the preceding count, divide by |Fn | = d(d − 1)n−1 , and extend the
+sum over k ≥ t to an infinite geometric series.
+   For the tuple, (21) puts all cyclic-reduction lengths in [n/2, n] outside an exponentially small event.
+Conditional on these lengths, the cyclic reductions are independent and uniform. Choose M , ε, and c from
+Proposition 4.3 in the case q = 1 and ν1 = νA . Uniformly for |Ci | ∈ [n/2, n], Lemma 5.6 shows that
+the corresponding finite-frequency inequalities hold simultaneously outside an exponentially small event.
+Applying the denominator conclusion of Proposition 4.3 separately to each singleton (Ci ) therefore gives
+                                  ∥φ(Ci )∥A ≥ c |Ci |ΛA (φ) ≥ (c/2)nΛA (φ)
+24                                               I. KAPOVICH
+
+
+for every i and φ on that event. Corollary 5.3 supplies the overlap estimate uniformly for R ≤ n/8. The
+proof of Theorem 4.8, with n/8 in place of n/4, then gives
+                                                                  
+                                                             log n
+                                           ∆A (Wn ) = OP
+                                                c
+                                                               n
+with exponential tails at every fixed positive scale; admissibility and λ-stability follow.          □
+Corollary 1.2 (Freely reduced sphere and ball models). Fix m ≥ 2, q ≥ 1, and 0 < λ < 1.
+(1) Let
+                                            Wn = (W1,n , . . . , Wq,n )
+     be an independent uniformly random q-tuple in Fnq . Then there are constants C, c > 0 such that, for
+     every n ≥ 1, with probability at least 1 − Ce−cn the tuple Wn is root-free, irredundant, and λ-stable.
+     Moreover,                                                      
+                                                               log n
+                                          ∆A (Wn ) = OP                 ,
+                                                                 n
+     and for every fixed ε > 0 there are Cε , cε > 0 such that
+                                         P ∆A (Wn ) > ε ≤ Cε e−cε n
+                                                           
+
+    for every n ≥ 1.
+(2) Let
+                                           BA (n) = {g ∈ Fm : |g|A ≤ n},
+     and let Un = (U1,n , . . . , Uq,n ) be uniformly distributed on BA (n)q (equivalently, its components are
+     independent uniformly random freely reduced words of length at most n). Then the conclusions of part (1)
+     hold with Un in place of Wn .
+
+Proof. For part (1), each Wi,n is conjugate to W
+                                               ci,n , and all asserted properties depend only on the component
+conjugacy classes. Apply Theorem A(3).
+   For part (2), put Ni = |Ui,n |A . Since the number of freely reduced words of length k grows like (2m − 1)k ,
+there are constants C1 , c1 > 0 such that
+                                          P(Ni < 3n/4) ≤ C1 e−c1 n .
+Conditional on Ni , the reduced word representing Ui,n is uniform in FNi . Write
+                                               Ui,n = ui Ci u−1
+                                                             i ,
+where Ci is cyclically reduced and Ki = |ui |A . The cyclic-cancellation estimate (21), uniformly in Ni , gives
+                                         P(Ki > n/8 | Ni ) ≤ C2 e−c2 n
+for suitable constants. Hence, outside an exponentially small event,
+                                    n/2 ≤ ℓi := |Ci |A ≤ n     (1 ≤ i ≤ q).
+Conditional on the ℓi , the Ci are independent and uniform in Cℓi . Uniformly for ℓi ∈ [n/2, n], Lemma 5.6
+and the componentwise denominator conclusion of Proposition 4.3 give
+                                    ∥φ(Ci )∥A ≥ cℓi ΛA (φ) ≥ (c/2)nΛA (φ)
+outside an exponentially small event, for a constant c > 0 independent of the lengths. Corollary 5.3 provides
+the overlap estimate. Repeating the argument from the proof of Theorem 4.8 gives
+                                                                         
+                                                                    log n
+                                       ∆A (C1 , . . . , Cq ) = OP
+                                                                      n
+and exponential fixed-scale tails, hence admissibility and λ-stability with exponentially high probability.
+Conjugacy invariance transfers these conclusions to Un .                                                   □
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                                25
+
+
+                                        6. Positive Bernoulli words
+
+   The abstract criterion also yields the earlier positive-word theorem without positive-specific rigidity ma-
+chinery.
+  For a strictly positive probability vector
+                                                                         X
+                                 p = (p1 , . . . , pm ),   ps > 0,           ps = 1,
+let νp be the characteristic current of the Bernoulli chain on A, equivalently the current characterized by
+                               (
+                                 pi1 · · · pir , v ε = ai1 · · · air for some ε ∈ {±1},
+                   ⟨v, νp ⟩A =
+                                 0,              v contains both positive and negative letters.
+Then ∥νp ∥A = 1, and
+                                                             −
+                                          supp(νp ) = L+A ∪ LA ,
+where L±
+       A are the positive and negative oriented line languages.
+
+Lemma 6.1 (Positive Bernoulli currents are filling). Let p = (p1 , . . . , pm ) be a strictly positive probability
+vector on A, and let νp be the current defined above. Then νp is filling in Curr(Fm ).
+
+Proof. The support contains the periodic leaves of every ai and ai aj , i < j. If ⟨T, νp ⟩ = 0, the zero-
+intersection criterion gives
+                                        ∥ai ∥T = 0,      ∥ai aj ∥T = 0.
+The fixed subtrees of the basis elements therefore intersect pairwise, and the Helly property gives a global
+fixed point, contradicting minimality of a nontrivial tree.                                               □
+Lemma 6.2 (Bernoulli current concentration). Let p = (p1 , . . . , pm ) be a strictly positive probability vector
+on A. For every n ≥ 1, let Wn = X1 · · · Xn be a positive Bernoulli word with letter distribution p. Then
+1
+n ηWn concentrates exponentially at νp in the sense of Definition 4.5.
+
+Proof. For n ≥ r, the normalized cyclic occurrence count n1 (v, Wn )A of a positive word v of length r has the
+corresponding product expectation. Changing one letter affects at most r cyclic windows, so McDiarmid’s
+inequality [McD89] gives exponential concentration. Negative coordinates follow by flip invariance, mixed-
+sign coordinates vanish, and a finite union bound over the coordinates defining a neighborhood proves
+exponential concentration in the sense of Definition 4.5. The finitely many smaller values of n are absorbed
+by increasing the prefactor.                                                                                □
+Corollary 6.3 (Positive Bernoulli stability). Fix q ≥ 1, 0 < λ < 1, and strictly positive probability vectors
+p1 , . . . , pq on A. For every n ≥ 1, let W1,n , . . . , Wq,n be independent positive Bernoulli words of length n
+with their indicated distributions, and put
+                                              Wn = (W1,n , . . . , Wq,n ).
+Then the following hold.
+(1) There are constants C, c > 0 such that, for every n ≥ 1, the tuple Wn is root-free, irredundant, and
+    λ-stable with probability at least 1 − Ce−cn .
+(2) One has                                                        
+                                                              log n
+                                           ∆A (Wn ) = OP              ,
+                                                                n
+    and for every fixed ε > 0 there are constants Cε , cε > 0 such that
+                                          P ∆A (Wn ) > ε ≤ Cε e−cε n
+                                                          
+
+    for every n ≥ 1.
+26                                                I. KAPOVICH
+
+
+Proof. Put
+                                                         m
+                                                         X
+                                         β = max               pi,s pj,s < 1.
+                                               1≤i,j≤q
+                                                         s=1
+Two prescribed positive factors from distinct components agree with probability at most β R . Within one
+component, for R ≤ n/4 the R equality constraints form a maximum-degree-two graph with R distinct edges;
+a matching of size at least R/3 gives probability at most β R/3 . Opposite signs cannot share a nonempty
+prefix, while inversion and reversal reduce two negative factors to the positive case. A union bound over
+same-sign origin pairs gives
+                                 P ρ±                                  2 2 R/3
+                                                                   
+                                     per (W1,n , . . . , Wq,n ) ≥ R ≤ q n β    .
+Lemmas 6.1 and 6.2 verify the current hypothesis of Theorem 4.8, which now gives the result.           □
+
+   We conclude this section with an almost-sure consequence for general finitely supported group random
+walks. Unlike the preceding sphere and Bernoulli models, no exponential estimate for stability itself is
+asserted here.
+Corollary 6.4 (Stability along finitely supported random walks). Let µ be a finitely supported probability
+measure on Fm such that the semigroup generated by supp(µ) is Fm . Let
+                                                Wn = X1 · · · Xn
+be the associated random walk, and let Cn be a cyclically reduced representative of the conjugacy class [Wn ].
+Then, for almost every trajectory,
+                                       ∆A (Cn ) −→ 0       (n → ∞).
+In particular, for every fixed 0 < λ < 1, the word Cn is root-free and λ-stable for all sufficiently large n,
+almost surely.
+
+Proof. Consider the standard action of Fm on its Cayley tree TA . The hypothesis on supp(µ) makes this
+action nonelementary for the random walk, and µ is admissible in the sense of [MS19, Definition 2.4]; its
+support has bounded image since it is finite. By Maher–Tiozzo [MT18, Theorem 1.4], there are constants
+L > 0, K > 0, and 0 < c < 1 such that
+                                         P ∥Wn ∥A ≤ Ln ≤ Kcn .
+                                                      
+
+Since ∥Wn ∥A = |Cn |A , Borel–Cantelli gives
+                                                  |Cn |A ≥ Ln                                            (22)
+eventually almost surely.
+   By [Kap26, Theorem D(1)], there is a filling current ν to which the random walk is adapted; thus, for
+almost every trajectory,
+                                    [ηWn ] = [ηCn ] −→ [ν]      in P Curr(Fm ).
+Normalizing by TA -length therefore gives
+                                        ηCn                ν
+                                               −→ ν̄ :=               in SA                        (23)
+                                       |Cn |A            ⟨TA , ν⟩
+almost surely, where ν̄ is filling.
+   We next use the matching estimates of Maher–Sisto. Let γn = [1, Wn ] in TA . Proposition 3.2.2 of [MS19]
+says that a self-match of any fixed positive linear size has probability tending to zero. We use its stan-
+dard quantitative form in the bounded-support case: tracing its proof through the exponential matching
+estimate [MS19, Proposition 3.2.1] (see also the proof of [CM15, Lemma 5.26]) gives, for each fixed posi-
+tive linear matching threshold, summable failure probabilities in n. Thus Borel–Cantelli applies to these
+matching events.
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                              27
+
+
+   For completeness, we indicate why this controls the overlap used here. Write the freely reduced form of
+Wn as Un Cn Un−1 , choosing Cn to be the resulting cyclic reduction. The middle copy of Cn is a fundamental
+segment of the axis of Wn and is contained in γn . By Definition 3.3, an inequality
+                                    ρ±
+                                     per (Cn ) ≥ R,     0 < R ≤ |Cn |A /4,
+including the case ρ±
+                    per (Cn ) = ∞, gives two distinct signed periodic origins agreeing for length R. Translating
+the corresponding axis segments by powers of Wn into a fundamental segment and trimming at cyclic cut
+points produces two disjoint subsegments of the middle copy of Cn , of length at least aR, which are translates
+of one another, possibly with opposite orientations, for an absolute constant a > 0. Hence γn has an (aR, 0)-
+match in the terminology of [MS19].
+  Put B = max{|s|A : s ∈ supp(µ)}. Then |γn | ≤ Bn, while (22) gives |Cn |A ≥ Ln eventually almost surely.
+Therefore, for every fixed 0 < ε < 1/4, the event
+                                              ρ±
+                                               per (Cn ) ≥ ε|Cn |A
+
+eventually implies that γn has a self-match of length at least (aεL/B)|γn |. The summable matching estimate
+and Borel–Cantelli, applied to rational ε > 0, now give
+                                                ρ±
+                                                 per (Cn )
+                                                           −→ 0                                            (24)
+                                                 |Cn |A
+almost surely. In particular, ρ±
+                               per (Cn ) < ∞ eventually, so Lemma 3.4 implies that Cn is root-free eventually.
+
+   Fix a trajectory for which (22)–(24) hold. Apply Proposition 4.3 with q = 1 and the filling current ν̄.
+By (23), its finite-frequency hypothesis holds for all sufficiently large n. Hence, for some c0 > 0 independent
+of n,
+                                                 2 ρ±
+                                                                     
+                                                     per (Cn ) + 2m
+                                    ∆A (Cn ) ≤                         −→ 0.
+                                                       c0 |Cn |A
+The final assertion follows from the definition of ∆A and λ-stability.                                       □
+
+                               7. Generic Nielsen and Whitehead input
+
+7.1. Whitehead’s algorithm and Whitehead automorphisms. We first briefly recall, mainly follow-
+ing [KSS06, Proposition 1.2 and Definition 4.2], the form of Whitehead’s algorithm for automorphic equiva-
+lence of conjugacy classes that will be used below. See also [LS77] for a detailed treatment of the topic. Put
+Σ = A±1 . A Whitehead automorphism is an automorphism Θ ∈ Aut(Fm ) of one of two types. A Whitehead
+automorphism of the first kind, or a relabeling automorphism, permutes Σ and commutes with inversion;
+these are precisely the elements of Rel(A). A Whitehead automorphism of the second kind has a multiplier
+a ∈ Σ such that, for every x ∈ Σ,
+                                         Θ(x) ∈ {x, xa, a−1 x, a−1 xa};
+necessarily Θ(a) = a. For fixed m ≥ 1 there are only finitely many Whitehead automorphisms, and they
+generate Aut(Fm ).
+   Given two cyclically reduced words u, v in Fm , Whitehead’s algorithm decides whether there exists Φ ∈
+Aut(Fm ) such that Φ([u]) = [v]. For a cyclically reduced word u, call [u] minimal in its automorphic orbit
+if ∥Φ(u)∥A ≥ ||u||A for every Φ ∈ Aut(Fm ). Whitehead’s length-reduction theorem says that if [u] is not
+minimal, then some Whitehead automorphism Θ strictly decreases its cyclic length, ||Θ(u)||A < ||u||A . Thus
+one cyclically reduces and repeatedly applies length-decreasing Whitehead automorphisms until a minimal
+representative is reached. Given two conjugacy classes, one first minimizes both; unequal minimal lengths rule
+out automorphic equivalence. If the minimal lengths agree, Whitehead’s peak-reduction theorem says that
+the two classes are automorphically equivalent exactly when their minimal representatives can be joined by a
+finite sequence of Whitehead automorphisms along which cyclic length remains constant. Since there are only
+finitely many cyclic words of a fixed length, this procedure requires only a finite search. In the terminology
+of [KSS06], minimization is the “easy part” of Whitehead’s algorithm (which runs in O(|u|2A ) time), while
+28                                                I. KAPOVICH
+
+
+the length-preserving search is the “hard part” requiring a priori exponential time in max{|u|A , |v|A }). The
+search form records the Whitehead moves and hence produces an explicit automorphism when the classes
+are equivalent. Strict minimality, recalled below, makes this second stage especially simple.
+
+7.2. Nielsen uniqueness and polynomial recognition. We first record a small algorithmic refinement
+of the readability conditions used in the Arzhantseva–Ol’shanskii method. The original complexity estimate
+in [KS05] is exponential. The point below is that, when the rank bound is fixed, a witness graph has
+uniformly bounded topological complexity, so the labels of its maximal arcs may be chosen among subwords
+of the input word. This is analogous to the subword enumeration used for the quartic recognition algorithm
+in [KS09, Lemma 3.10]; we will only need a polynomial bound here.
+   Here an A-labelled graph is an oriented graph whose oriented edges have labels in A±1 , with the reverse
+orientation carrying the inverse label. Edge counts below refer to unoriented edges, and the label of a path
+is obtained by reading its oriented edge labels in order.
+Lemma 7.1 (Polynomial recognition of fixed-rank readability). Fix m ≥ 2, an integer R ≥ 1, and a rational
+number 0 < µ ≤ 1. Let w be a nontrivial freely reduced word over A±1 , of length ℓ. Each of the following
+conditions is decidable in deterministic time polynomial in ℓ:
+(1) there exists a finite connected A-labelled graph Γ with at most µℓ unoriented edges and rank π1 (Γ) ≤ R
+    in which w labels a reduced path;
+(2) there exists such a graph Γ which, in addition, has a vertex of degree strictly less than 2m.
+(3) For fixed parameters, the µ-readability and (µ, L)-readability conditions of [KS05, Definitions 4.1–4.2]
+    are polynomial-time decidable.
+
+Proof. Suppose first that a graph Γ as in part (1) exists, and let p be a reduced path labelled by w. Replace
+Γ by the connected subgraph H consisting of the edges traversed by p. This does not increase the number
+of edges or the rank, and every edge of H is traversed by p.
+   Every degree-one vertex of H is an endpoint of p: otherwise p would have to enter that vertex and
+immediately traverse the same edge backwards. Thus H has at most two degree-one vertices. If r =
+rank π1 (H) ≤ R, the identity          X
+                                           (deg(x) − 2) = 2r − 2
+                                        x∈V (H)
+shows that the number of vertices of degree at least three is at most 2R. Mark the initial and terminal
+vertices of p and suppress every other degree-two vertex. The resulting topological graph therefore has a
+number of vertices and edges bounded by a constant depending only on R; for example, it has at most 2R + 2
+marked or branching vertices and at most 3R + 1 topological edges.
+   Choose an orientation on each topological edge. Once the reduced path p enters the interior of a maximal
+arc (a path whose internal vertices have degree two), it must continue along that arc until it reaches an
+endpoint of the arc; the initial and terminal vertices of p have already been marked. Since every edge of
+H is traversed by p, the label of every oriented topological edge is therefore a nonempty subword of w or
+w−1 . There are O(ℓ2 ) possible such labels. Since there are only finitely many topological graph types with
+marked initial and terminal vertices, and only a bounded number of topological edges depending on R alone,
+all possible labelled graphs H can therefore be enumerated in polynomial time.
+   For each candidate, expand the topological edges and check the edge and rank bounds. A finite-state
+dynamic program, propagating the possible current vertices while the letters of w are read, decides in
+polynomial time whether w labels a path in the candidate. Because w is freely reduced, any path with
+label w is automatically reduced. The expanded candidate has O(ℓ) edges, so each candidate is checked in
+polynomial time. This proves part (1).
+   For part (2), again let H be the union of the edges traversed by p. If H already has a vertex of degree
+less than 2m, the preceding enumeration applies unchanged. Otherwise the required low-degree vertex of Γ
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                              29
+
+
+lies outside H, so H is a proper subgraph of the connected graph Γ. Hence at least one edge of Γ \ H is
+incident to H, and therefore
+                                          |E(H)| + 1 ≤ |E(Γ)| ≤ µℓ.
+Attach one pendant edge, with any label, to an arbitrary vertex of H. The resulting connected labelled
+graph has the same rank as H, has at most µℓ edges, still contains the path labelled w, and has a degree-one
+vertex. Thus it suffices, for each candidate H from part (1), to check either that H already has a vertex of
+degree less than 2m or that the edge bound allows one additional pendant edge. This is again polynomial.
+   The definitions of µ-readability and (µ, L)-readability in [KS05] are precisely the two cases above with
+fixed rank bounds m − 1 and L, respectively. In the latter definition the path is not explicitly required to
+be reduced, but this is automatic when its label is the freely reduced word w.                            □
+Theorem 7.2 (Kapovich–Schupp, with polynomial recognition). Fix m ≥ 2 and q ≥ 1. There are subsets
+                                           Pm,q (n) ⊆ Cnq           (n ≥ 1)
+and constants C, c > 0 such that:
+(1) For every n ≥ 1,
+                                            |Pm,q (n)|
+                                                        ≥ 1 − Ce−cn .
+                                                |Cn |q
+(2) For every n ≥ 1, membership in Pm,q (n) is decidable in deterministic polynomial time in n.
+(3) For every n ≥ 1 and every R = (r1 , . . . , rq ) ∈ Pm,q (n), put
+                                        GR = ⟨a1 , . . . , am | r1 , . . . , rq ⟩.
+    Then GR is torsion-free, one-ended, and non-elementary hyperbolic, every subgroup generated by at
+    most m − 1 elements is free, and every m-tuple generating a nonfree subgroup is Nielsen-equivalent to
+    the standard tuple (a1 , . . . , am ), where ai denotes the image of ai in GR .
+(4) For every n ≥ 1 and every R ∈ Pm,q (n), with GR as in part (3), every nonfree subgroup of GR generated
+    by at most m elements is all of GR , every automorphism of GR lifts to an automorphism of Fm , and
+    GR is co-Hopfian.
+
+Proof. Choose fixed rational parameters λ, µ and an integer L as in the proof of [KS05, Theorem B], and take
+the corresponding Kapovich–Schupp class. The group-theoretic conclusions are those of [KS05, Theorem B].
+Their theorem is stated in the cumulative few-relator model. If
+                                                     X
+                                              Bncr =      |Cℓ |,
+                                                          1≤ℓ≤n
+
+then (1) gives Bncr ≍ |Cn | ≍ (2m − 1)n . The bad equal-length tuples lie in the bad cumulative set, while the
+cumulative ambient set has size (Bncr )q ≍ |Cn |q ; hence exponential genericity transfers to the equal-length
+sphere.
+   It remains only to improve the recognition bound stated in [KS05]. By [KS05, Definition 4.3], membership
+in the relevant class requires the C ′ (λ) condition, absence of proper-power relators, and the requirement that
+every subword of a cyclic conjugate of a relator having length at least half that relator length be neither µ-
+readable nor (µ, L)-readable. Small cancellation and proper-power detection are polynomial-time decidable.
+There are only polynomially many relevant cyclic subwords, and Lemma 7.1 tests each readability condition
+in polynomial time, with degree depending only on the fixed parameters. Thus membership in Pm,q (n)
+is polynomial-time decidable. This is the same finite-subword principle that yields the explicit quartic
+recognition bound in the modular-group setting of [KS09, Theorem A and Lemma 3.10]; no particular
+polynomial degree is needed here.
+   Part (4) follows as in [KS05]: Nielsen moves preserve generated subgroups, automorphisms send the
+standard tuple to generating tuples, and an injective endomorphism has nonfree image generated by at most
+m elements.                                                                                            □
+30                                                    I. KAPOVICH
+
+
+7.3. Generic Whitehead input. A cyclically reduced word w is strictly minimal if every non-inner White-
+head automorphism of the second kind strictly increases its cyclic length. Let Zm be the class denoted Z
+in [KSS06, Definition 8.6]. Thus its elements are strictly minimal and root-free, no nontrivial relabeling
+sends one to a conjugate of itself, and no relabeling sends one to a conjugate of its inverse. The following
+result is due to Kapovich–Schupp–Shpilrain [KSS06]:
+Theorem 7.3 (Kapovich–Schupp–Shpilrain). Fix m ≥ 2. Then the following hold.
+(1) The subsets Zm ∩ Cn are exponentially generic in Cn as n → ∞, and membership in Zm is decidable in
+    linear time.
+(2) If w ∈ Zm , then
+                                            StabOut(Fm ) ([w]) = {1}.
+(3) If u is strictly minimal and v is cyclically reduced with |u| = |v|, then [u] and [v] lie in the same
+    Out(Fm )-orbit if and only if a relabeling automorphism sends u to a cyclic shift of v.
+(4) On any pair of cyclically reduced input words for which at least one input lies in the automorphic orbit
+    of a strictly minimal word, Whitehead’s algorithm, in search form, runs in at most quadratic time in the
+    total input length. If both inputs are strictly minimal, orbit testing is linear.
+
+Proof. Theorem B, Theorem 8.5, and Proposition 8.7 of [KSS06] give genericity and the stabilizer statement.
+Sphere and cumulative exponential genericity are equivalent because |Cn | ≍ (2m − 1)n and the cumulative
+ball has comparable size. Linear membership tests strict minimality and finitely many relabeling and inverse-
+conjugacy conditions. Theorem A(3)–(5) gives the orbit and complexity claims; recording the Whitehead
+moves yields the search form.                                                                              □
+
+                                 8. Greendlinger normal-closure rigidity
+
+     For a tuple R = (r1 , . . . , rq ) of elements of a free group F = F (X), denote
+                                               NR = ⟨⟨r1 , . . . , rq ⟩⟩ ⊴ F,
+the normal closure of R in F . Similarly, for a set R ⊆ F , write NR = ⟨⟨R⟩⟩ ⊴ F .
+   We use a modern formulation, Theorem 8.2 of Greendlinger’s classic analogue [Gre61] of Magnus’s theo-
+rem. The original statement uses terminology predating standard small-cancellation language. The formu-
+lation below follows from Greendlinger’s argument; see also Proposition 6.5 of [KS09] for a similar statement
+for small-cancellation quotients of the modular group.
+   For completeness, we give a self-contained proof of Theorem 8.2 using modern small cancellation theory
+tools. We use the notation and terminology of Chapter V of [LS77]. There a planar map M is called a
+(3, 6)-map if every vertex v has degree d(v) ≥ 3 and every interior region D has degree d(D) ≥ 6. For a
+boundary region D, the quantity i(D) denotes its interior degree, that is, the number of interior edges in
+the boundary cycle ∂D. We use the standard combinatorial-disc convention that each region is a closed
+2-cell equipped with its boundary cycle; intersections and consecutive arcs below are understood on these
+boundary cycles. To a van Kampen diagram ∆ over a symmetrized presentation ⟨X | R⟩, one associates a
+connected and simply connected planar map M by suppressing degree-two vertices. Whereas the oriented
+edges of ∆ are labelled by elements of X ±1 , the edges of M are labelled by nontrivial freely reduced words
+in F (X).
+   Lemma 2.2 of Chapter V of [LS77] implies that the planar map associated to a reduced van Kampen
+diagram over a C ′ (1/6) presentation is a (3, 6)-map.
+   The following consequence is likely standard, but we include a proof because we have not found this
+precise formulation in the literature.
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                          31
+
+
+Lemma 8.1 (Region length versus boundary length). Let ∆ be a reduced van Kampen diagram over a
+C ′ (1/6) presentation ⟨X | R⟩. Suppose that ∆ contains at least two regions and has no vertices of degree
+one. Let
+                                           w = w(∆) ∈ (X ∪ X −1 )∗
+be the word, not necessarily freely reduced, labelling the boundary cycle ∂∆.
+  Then, for every region D of ∆, if µ(D) is the label of ∂D, then
+                                              |µ(D)| < |w(∆)|.
+
+Proof. We induct on the number t of regions of ∆.
+  Suppose first that t = 2, and denote the two regions by D and D′ . If D and D′ have no common boundary
+edge, then the boundary walk of ∆ traverses the entire boundary cycles of both regions and may also traverse
+one-dimensional connecting portions. Hence
+                                         |w(∆)| ≥ |µ(D)| + |µ(D′ )|.
+Thus the required strict inequality holds for both regions.
+   Suppose that D and D′ have a common boundary edge. Since ∆ is simply connected, their common
+boundary edges form a single arc: two disjoint common arcs would create a nontrivial loop in the union of
+the two closed regions. Let v be its label. Since ∆ is reduced, v is a piece. Therefore
+                                         |µ(D)|                    |µ(D′ )|
+                                   |v| <            and      |v| <          .
+                                            6                         6
+Moreover,
+                                       |w(∆)| = |µ(D)| + |µ(D′ )| − 2|v|.
+It follows that
+                                    |w(∆)| − |µ(D)| = |µ(D′ )| − 2|v| > 0,
+and, symmetrically,
+                                    |w(∆)| − |µ(D′ )| = |µ(D)| − 2|v| > 0.
+This proves the result when t = 2.
+   Now let t > 2 and assume that the conclusion holds for every reduced van Kampen diagram satisfying
+the hypotheses of the lemma and having t′ regions, where 2 ≤ t′ < t.
+   If ∆ is not a disc diagram, cut the planar complex at its cut vertices and consider the maximal disc
+subdiagrams containing regions. Distinct such disc components meet, if at all, only at cut vertices, and
+the boundary walk of ∆ is obtained by concatenating their boundary walks together with possible one-
+dimensional connecting portions, which are traversed twice. Since there is more than one disc component,
+every component containing a region has fewer than t regions, and
+                                                   X
+                                          |w(∆)| ≥     |w(∆′ )|.
+                                                         ∆′
+Let D be a region contained in a disc component ∆ . If ∆′ has one region, then
+                                                     ′
+
+                                         |µ(D)| ≤ |w(∆′ )| < |w(∆)|.
+If ∆′ has at least two regions, the inductive hypothesis gives
+                                         |µ(D)| < |w(∆′ )| ≤ |w(∆)|.
+Thus the result follows, and we may assume that ∆ is a disc diagram.
+   Let M be the planar map associated to ∆. Since M is a (3, 6)-map, Theorem 4.3 of Chapter V of [LS77]
+gives
+                                          X ∗
+                                              [4 − i(D)] ≥ 6,
+                                              M
+32                                               I. KAPOVICH
+
+
+where the sum is taken over the boundary regions D for which ∂D ∩ ∂M is a consecutive part of ∂M . Since
+t > 1, every such region has i(D) ≥ 1, and hence every positive summand is at most 3. Hence at least two
+distinct boundary regions D1 , D2 occur in this sum with
+                                      1 ≤ i(D1 ) ≤ 3,     1 ≤ i(D2 ) ≤ 3.
+
+   We first remove only the region D1 from ∆. Let p1 be the total length, in the original X ±1 -labelling, of
+the interior part of ∂D1 , and let e1 be the length of the exterior part ∂D1 ∩ ∂∆. Every edge of the associated
+map contained in the interior part of ∂D1 is labelled by a piece. Hence
+                                                      |µ(D1 )|   |µ(D1 )|
+                                          p1 < i(D1 )          ≤          .
+                                                         6          2
+Since e1 = |µ(D1 )| − p1 , we have e1 > p1 .
+   Because ∂D1 ∩ ∂M is a consecutive part of the boundary cycle of M , its complementary interior part on
+the boundary cycle of D1 is also a single consecutive arc. Thus D1 is a boundary ear: it is attached to the
+closure of the remaining disc diagram precisely along this interior arc. Deleting the open 2-cell D1 together
+with the open exterior boundary arc therefore leaves a connected and simply connected subdiagram with
+t − 1 regions. We denote this subdiagram by ∆1 . On the boundary walk, this operation replaces the exterior
+arc of length e1 by the interior attaching arc of length p1 . Thus its boundary length is
+                                          |w(∆)| − e1 + p1 < |w(∆)|.
+By construction, ∆1 is a disc van Kampen diagram with no degree-one vertices (although the label of the
+boundary cycle of ∆1 is not necessarily cyclically reduced even if the label of the boundary cycle of ∆ is
+cyclically reduced.). Since ∆ was a reduced diagram, ∆1 is also reduced. The digram ∆1 has exactly t−1 ≥ 2
+regions, contains every region of ∆ other than D1 , and satisfies
+                                              |w(∆1 )| < |w(∆)|.
+Thus the inductive hypothesis applied to ∆1 and gives, for every region D ̸= D1 of ∆,
+                                          |µ(D)| < |w(∆1 )| < |w(∆)|.
+In particular, this estimate holds for D2 .
+   A symmetric argument with removing D2 from ∆ yields |µ(D1 )| < |w(∆)|, completing the inductive
+step.                                                                                           □
+
+  The argument permits intermediate boundary labels that are not freely reduced, even when the original
+boundary label is freely and cyclically reduced.
+Theorem 8.2 (Greendlinger-type normal-closure rigidity). Let R and S be symmetrized sets of nontrivial
+cyclically reduced words in a free group F = F (X), and suppose that both R and S satisfy C ′ (1/6). If
+                                                  NR = NS ,
+then
+                                                   R = S.
+
+Proof. Suppose R ̸= S, and choose a shortest element z of the symmetric difference R △ S. After inter-
+changing the two sets, assume that z ∈ R \ S. Since z ∈ NS , there is a reduced van Kampen disc diagram ∆
+over ⟨X | S⟩ whose boundary label is z. The word z is cyclically reduced, so ∆ has no boundary spurs and
+hence no vertices of degree one. Moreover, ∆ has at least two regions: a one-region diagram would imply
+that z ∈ S, since S is symmetrized.
+   By Lemma 8.1, every region label s ∈ S occurring in ∆ satisfies |s| < |z|. The minimal choice of z
+therefore implies that every such s belongs to R ∩ S.
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                               33
+
+
+   Greendlinger’s lemma [LS77, Chapter V, Theorem 4.4] gives a boundary region of ∆ whose boundary
+shares with ∂∆ a segment labelled by a word v satisfying
+                                                         |s|
+                                                   |v| >     ,
+                                                          2
+where s ∈ R ∩ S is the label of that region. After taking suitable cyclic conjugates, and inverses if necessary,
+two elements of R, one of length |s| and the other of length |z|, have v as a common initial segment. These
+elements are distinct because |s| < |z|. Thus v is a piece for R, contradicting
+                                                               |s|   |s|
+                                                    |v| >          >
+                                                                2     6
+and the C ′ (1/6) condition for R.                                                                             □
+
+  The sets X, R, and S in Theorem 8.2 need not be finite.
+Corollary 8.3 (Irredundant tuple form). Let q, t ≥ 1 and 0 < λ ≤ 1/6. Let
+                                     R = (r1 , . . . , rq ),       S = (s1 , . . . , st )
+be irredundant tuples of nontrivial elements of Fm . Suppose that the symmetrizations of cyclically reduced
+forms of both tuples satisfy C ′ (λ). If
+                                                 NR = NS ,
+then q = t, and after a permutation of the indices every ri is conjugate in Fm to some s±1
+                                                                                        j .
+
+Proof. Choose cyclically reduced conjugates ui of the ri and vj of the sj , and let R and S be their sym-
+metrizations. Since λ ≤ 1/6, both sets satisfy C ′ (1/6), and
+                                              NR = NR = NS = NS .
+Theorem 8.2 gives R = S. The cyclic-permutation-and-inversion orbits in a symmetrized set are its sym-
+metrized relator classes. Irredundancy says that the entries of R and S represent, respectively, q and t
+distinct such classes. Hence q = t, and the asserted correspondence follows.                          □
+Remark 8.4. Root-freeness is not needed in Theorem 8.2 or Corollary 8.3. Irredundancy is needed only to
+recover the number of entries in a tuple: repetitions or duplicate conjugacy classes do not change a normal
+closure. Greendlinger’s shortest-unmatched-relator argument removes any common-length requirement.
+
+                                           9. Isomorphism rigidity
+
+  Let Fm = F (A) be as in Convention 2.1. Throughout this section, R, S are finite nontrivial tuples with
+normal closures NR , NS . We first isolate the lifting consequence of Nielsen uniqueness.
+Lemma 9.1 (Lifting an isomorphism to the free group). Let R and S be finite tuples of nontrivial elements
+of Fm , and let NR , NS ⊴ Fm be their normal closures. Put
+                                       GR = Fm /NR ,               GS = Fm /NS .
+Suppose that every generating m-tuple of GR is Nielsen-equivalent to the standard tuple (a1 , . . . , am ), where
+ai denotes the image of ai in GR . If GR ∼
+                                         = GS , then there exists Φ ∈ Aut(Fm ) such that
+                                                     Φ(NR ) = NS .
+
+Proof. Let πR : Fm → GR and πS : Fm → GS be the quotient maps and Ψ : GR → GS an isomorphism.
+The tuple
+                                     Ψ−1 (πS (a1 )), . . . , Ψ−1 (πS (am ))
+                                                                            
+
+generates GR . By Nielsen uniqueness, there is Θ ∈ Aut(Fm ) such that
+                                                 Ψ−1 ◦ πS = πR ◦ Θ.
+34                                                     I. KAPOVICH
+
+
+Taking kernels gives
+                                                     NS = Θ−1 (NR ).
+Thus Φ = Θ−1 satisfies Φ(NR ) = NS .                                                                           □
+Proposition 9.2 (Nielsen–Greendlinger isomorphism rigidity). Let 0 < λ ≤ 1/6, and let
+                                                     R = (r1 , . . . , rq )
+be an irredundant λ-stable tuple of nontrivial elements of Fm . Let NR ⊴ Fm be its normal closure and put
+                                                      GR = Fm /NR .
+Suppose that every generating m-tuple of GR is Nielsen-equivalent to the standard tuple (a1 , . . . , am ), where
+ai denotes the image of ai in GR . Let
+                                                   S = (s1 , . . . , st )
+be an irredundant tuple of nontrivial elements of Fm such that the symmetrization of cyclically reduced
+representatives of its entries satisfies C ′ (λ). Let NS ⊴ Fm be its normal closure and put
+                                                      GS = Fm /NS .
+Then
+                                                      GR ∼ = GS
+if and only if t = q and there exist Φ ∈ Aut(Fm ), a permutation σ ∈ Sym(q), signs εi ∈ {±1}, and elements
+gi ∈ Fm such that
+                                      Φ(ri ) = gi sεσ(i)
+                                                     i
+                                                         gi−1   (1 ≤ i ≤ q).
+
+Proof. If the displayed relations hold, then Φ(NR ) = NS , so Φ induces an isomorphism GR ∼
+                                                                                          = GS .
+  Conversely, suppose GR =  ∼ GS . Lemma 9.1 gives Φ ∈ Aut(Fm ) such that
+                                                      Φ(NR ) = NS .
+Choose cyclically reduced conjugates ui of Φ(ri ) and vj of sj , and put
+                                      U = (u1 , . . . , uq ),      V = (v1 , . . . , vt ).
+Then NU = NV . The tuple U is irredundant, and λ-stability of R gives C ′ (λ) for its symmetrization; the
+hypothesis on S gives the same for V . Corollary 8.3 therefore gives t = q and, after a permutation, makes
+                                εi
+every ui a cyclic conjugate of vσ(i) . Undoing the conjugations defining ui and vj gives the required elements
+gi .                                                                                                        □
+
+                                        10. The generic rigidity class
+
+     For a cyclic word w, write sht (w) for cyclic shift by t positions.
+     Fix m ≥ 2 and q ≥ 1. For n ≥ 3, let Γm,q,n be the group of transformations of Cnq generated by:
+  (i) one global relabeling Θ ∈ Rel(A);
+ (ii) a permutation of the q components;
+(iii) independent inversion of the components;
+(iv) independent cyclic shifts of the components.
+Thus every element has the form
+                                                                                 q
+                                       (r1 , . . . , rq ) 7−→ shti Θ(rσ(i) )εi     i=1
+                                                                                         ,                  (25)
+where σ ∈ Sym(q), εi ∈ {±1}, and ti ∈ Z/nZ.
+Lemma 10.1 (The obvious symmetry group). Fix m ≥ 2, q ≥ 1, and an integer n ≥ 3. Then the action of
+Γm,q,n on Cnq defined in (25) is faithful and
+                                               |Γm,q,n | = 2m+q m! q! nq .                                  (26)
+                  ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                               35
+
+
+Proof. The rotations and inversions of the individual cyclic words form a product of q dihedral groups of
+order 2n; component permutations permute these factors, while the global relabeling group has order 2m m!
+and commutes with rotations and component permutations.
+   To see faithfulness, suppose that a transformation acts identically on all tuples. Varying the components
+independently first forces the component permutation to be trivial. On each component the resulting map
+has the form
+                                                w 7−→ sht Θ(w)ε .
+                                                                 
+
+Applying it to the constant cyclic words an , for all a ∈ A±1 , shows, on each component, that either ε = 1
+and Θ = 1, or ε = −1 and Θ is the global inversion relabeling. Since Θ is global, the same alternative
+holds on every component. In the first case a positive cyclic word with no nontrivial rotational period forces
+every ti = 0. In the second case the map on the i-th component is a prescribed reflection of the n cyclic
+positions. Since n ≥ 3, choose two positions interchanged by that reflection, put different positive basis
+letters at those positions, and fill all remaining positions with one of them. The resulting word is aperiodic
+and is not fixed by the prescribed reflection. Hence the second case is impossible. Thus the action is faithful,
+and the semidirect-product description gives (26).                                                            □
+
+  Let Pm,q (n) be the Kapovich–Schupp class from Theorem 7.2. Replace it by its Γm,q,n -invariant core
+                                                  \
+                                      inv
+                                    Pm,q  (n) =       γPm,q (n).
+                                                     γ∈Γm,q,n
+
+Since |Γm,q,n | is polynomial in n, this invariant core remains exponentially generic and polynomial-time
+recognizable.
+  Fix
+                                                     1
+                                                       .
+                                                     λ0 =
+                                                    12
+The uniform current νA is invariant under Rel(A). By part (1) of Lemma 4.2, choose a Rel(A)-invariant
+neighborhood
+                                                U ⊆ SA
+of νA and a rational number 0 < c ≤ 1 such that
+                                 ⟨T, η⟩ ≥ cΛA (T )      (η ∈ U , T ∈ cvm \ {0}).                            (27)
+We may and do choose U to be defined by finitely many strict rational cylinder-coordinate inequalities.
+Indeed, first choose an invariant open filling neighborhood, then choose a neighborhood specified by finitely
+many rational cylinder-coordinate inequalities whose closure lies inside it, and intersect its finitely many
+relabeling translates. These rational inequalities and the constant c are fixed auxiliary data for the classes
+below; the membership statement does not require a uniform procedure that constructs this data from m
+and q. Accordingly, when we call the classes Qm,q (n) finitely specified, we mean that for fixed m, q this finite
+rational auxiliary data has been chosen once and for all.
+  For r ∈ Cn , put
+                                                  1
+                                                ηbr =ηr ∈ SA .
+                                                  n
+Definition 10.2 (The class Qm,q (n)). For each integer n ≥ 1, define Qm,q (n) as follows. If 1 ≤ n < 3, put
+Qm,q (n) = ∅. If n ≥ 3, a tuple
+                                         R = (r1 , . . . , rq ) ∈ Cnq
+belongs to Qm,q (n) if:
+            inv
+(Q1) R ∈ Pm,q   (n);
+(Q2) ηbri ∈ U for every i;
+(Q3)
+                                           2 ρ±
+                                                          
+                                              per (R) + 2m < cλ0 n;                                         (28)
+36                                               I. KAPOVICH
+
+
+(Q4) every ri belongs to Zm , and
+                                             StabΓm,q,n (R) = {1}.
+Lemma 10.3 (Deterministic consequences). Fix n ≥ 1 and let R ∈ Qm,q (n). Let NR ⊴ Fm be the normal
+closure of R and put GR = Fm /NR . Then:
+(1) R is admissible and λ0 -stable;
+(2) every component ri is strictly minimal and satisfies StabOut(Fm ) ([ri ]) = {1};
+(3) the conclusions of parts (3)–(4) of Theorem 7.2 hold for GR .
+
+Proof. Condition (Q3) makes ρ±   per (R) finite, so Lemma 3.4 gives admissibility. For φ ∈ Out(Fm ), condition
+(Q2) and (27) give
+                                       ∥φ(ri )∥A = n⟨TA φ, ηbri ⟩ ≥ cnΛA (φ).
+If v is a piece beginning a relator arising from component i, Proposition 3.10 and (Q3) give
+                          |v| ≤ 2ΛA (φ)(ρ±
+                                         per (R) + 2m) < λ0 cnΛA (φ) ≤ λ0 ∥φ(ri )∥A .
+
+This proves (1). Part (2) follows from (Q4) and Theorem 7.3, while (3) follows from (Q1) and Theorem 7.2.
+                                                                                                       □
+Proposition 10.4 (Genericity and effectiveness). Fix m ≥ 2 and q ≥ 1, and let Qm,q (n) be the classes from
+Definition 10.2. Then the following hold.
+(1) There are constants C, c1 > 0 such that, for every n ≥ 1,
+                                           |Qm,q (n)|
+                                                      ≥ 1 − Ce−c1 n .
+                                             |Cn |q
+(2) For every n ≥ 1, membership in Qm,q (n) is decidable in deterministic polynomial time in n.
+
+Proof. Condition (Q1) is exponentially generic by Theorem 7.2 and the polynomial-size invariant-core con-
+struction. Lemma 5.6 and a finite union bound treat (Q2). Failure of (Q3) implies
+                                                      cλ0
+                                           ρ±
+                                            per (R) ≥     n − 2m,
+                                                       2
+so Proposition 5.2 treats (Q3). The class Zm is exponentially generic by Theorem 7.3.
+   It remains to treat tuple symmetries. If every component lies in Zm , no nonidentity element of Γm,q,n
+with trivial component permutation can fix the tuple: the defining properties of Zm exclude nontrivial
+relabeling and inverse-conjugacy, while root-freeness excludes nonzero cyclic rotations. If the component
+permutation is nontrivial, a fixed tuple satisfies, for some i ̸= j, an equality between ri and a relabeling,
+inversion, and cyclic shift of rj . Since these operations preserve the uniform measure on Cn , the probability
+of any prescribed such equality is |Cn |−1 . A union bound over the polynomially many elements of Γm,q,n
+gives an exponentially small probability.
+   For effectiveness, Theorem 7.2(2) and the polynomial-size invariant-core construction show that (Q1) is
+polynomial-time decidable for fixed m, q. The finite cylinder inequalities in (Q2), signed periodic overlaps
+in (Q3), membership in Zm , and all finite symmetry checks are polynomial-time decidable as well. Thus the
+total membership test is polynomial-time.                                                                 □
+Lemma 10.5 (Essential cyclic splittings). Let G be a torsion-free hyperbolic group. Suppose that G admits
+a nontrivial graph-of-groups splitting over infinite cyclic edge groups such that every edge group has infinite
+index in each incident vertex group. Then Out(G) contains an element of infinite order.
+
+Proof. Collapse all but one edge orbit in the Bass–Serre tree. The resulting one-edge splitting retains the
+infinite-index condition and is either an amalgam
+                                                G = G1 ∗C G2
+                   ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                                    37
+
+
+or an HNN extension
+                                        G = ⟨H, t | t−1 C− t = C+ ⟩,
+where the displayed edge groups are infinite cyclic. In particular, G1 , G2 , and H are noncyclic.
+    In the amalgam case, choose 1 ̸= c ∈ C and let δ fix G1 pointwise and act on G2 by conjugation by c.
+This is the standard Dehn twist. If δ k were inner for some k ̸= 0, say δ k = ad(h), then h would centralize
+G1 . Hence h = 1: if h ̸= 1, then the cyclic centralizer CG (h) would contain the noncyclic group G1 . Thus
+δ k would be the identity. But G2 is noncyclic, whereas CG (ck ) is cyclic, so some g ∈ G2 does not commute
+with ck and
+                                             δ k (g) = ck gc−k ̸= g,
+a contradiction.
+   In the HNN case, choose 1 ̸= c ∈ C− and define δ by δ|H = id and δ(t) = ct. Since C− is cyclic, this
+preserves the defining relation. If a nonzero power δ k were inner, its conjugating element would centralize
+the noncyclic group H and hence would be trivial. This would make δ k the identity, contrary to
+                                                    δ k (t) = ck t ̸= t.
+Thus the outer class of δ has infinite order. This is the standard Dehn-twist argument; compare [GL15,
+Theorem 1.2].                                                                                       □
+
+10.1. Proof of generic few-relator rigidity.
+Theorem B (Generic few-relator rigidity). Fix m ≥ 2 and q ≥ 1. For a finite tuple R = (r1 , . . . , rs ) of
+elements of Fm , write
+                                     GR = ⟨a1 , . . . , am | r1 , . . . , rs ⟩,
+and denote by ai the image of ai in GR . There are finitely specified subsets
+                                             Qm,q (n) ⊆ Cnq          (n ≥ 1)
+and constants C, c > 0 such that:
+(1) For every n ≥ 1, a uniform random tuple in Cnq belongs to Qm,q (n) with probability at least 1 − Ce−cn .
+    Membership in Qm,q (n) is decidable in deterministic polynomial time in n.
+(2) Every q-tuple R ∈ Qm,q (n) is irredundant, root-free, and 1/6-stable.
+(3) If R = (r1 , . . . , rq ) ∈ Qm,q (n), then GR is torsion-free, one-ended, and non-elementary hyperbolic; every
+    subgroup generated by at most m − 1 elements is free; every m-tuple generating a nonfree subgroup is
+    Nielsen-equivalent to the standard tuple (a1 , . . . , am ); and GR is co-Hopfian, meaning that every injective
+    endomorphism of GR is surjective.
+(4) If R = (r1 , . . . , rq ) ∈ Qm,q (n), then GR is complete, meaning that its center is trivial and every auto-
+    morphism of GR is inner. Its boundary is one-dimensional, connected, and has no local cut points, and
+    hence is homeomorphic to the Menger curve or the Sierpiński carpet. If q ≥ m − 1, then ∂GR is the
+    Menger curve.
+(5) Let R = (r1 , . . . , rq ) ∈ Qm,q (n), and let S = (s1 , . . . , st ) be an irredundant tuple of nontrivial elements
+    of Fm whose symmetrization of cyclically reduced representatives satisfies C ′ (1/6). Then GR ∼             = GS if
+    and only if t = q and there are Φ ∈ Aut(Fm ), σ ∈ Sym(q), signs εi ∈ {±1}, and gi ∈ Fm such that
+                                        Φ(ri ) = gi sεσ(i)
+                                                       i
+                                                           gi−1      (1 ≤ i ≤ q).
+(6) If R = (r1 , . . . , rq ) ∈ Qm,q (n) and S = (s1 , . . . , sq ) ∈ Qm,q (n′ ), then GR ∼
+                                                                                          = GS if and only if n = n′ and
+    there are Θ ∈ Rel(A), σ ∈ Sym(q), and signs εi ∈ {±1} such that, for each i = 1, . . . , q, the word si is
+    a cyclic permutation of Θ(rσ(i) )εi .
+
+Proof. Proposition 10.4 gives part (1). Lemma 10.3(1) gives part (2): admissibility means root-freeness and
+irredundancy, and λ0 -stability with λ0 = 1/12 implies 1/6-stability. Lemma 10.3 together with Theorem 7.2
+gives part (3).
+38                                                  I. KAPOVICH
+
+
+  We prove completeness. Let R = (r1 , . . . , rq ) ∈ Qm,q (n) and let Ψ ∈ Aut(GR ). By Nielsen uniqueness,
+Ψ lifts to Φ ∈ Aut(Fm ) with Φ(NR ) = NR . Stability and Corollary 8.3 give a permutation σ, signs εi , and
+conjugators gi such that
+                                                          εi
+                                             Φ(ri ) = gi rσ(i) gi−1 .                                   (29)
+                     ε1
+The words r1 and rσ(1)   are strictly minimal and have the same length. Theorem 7.3(3) gives a relabeling
+                                              ε1
+Θ ∈ Rel(A) carrying r1 to a cyclic shift of rσ(1) . Hence Θ−1 Φ fixes [r1 ], and the trivial outer stabilizer of r1
+gives
+                                             [Φ] = [Θ] ∈ Out(Fm ).
+Using this in (29) shows that the global relabeling Θ, the component permutation σ, the signs εi , and
+suitable cyclic shifts define an element of Γm,q,n fixing R. Condition (Q4) makes that element trivial.
+Therefore [Φ] = 1, so every automorphism of GR is inner. The center of a non-elementary torsion-free
+hyperbolic group is trivial, and hence GR is complete.
+   Because R is root-free and satisfies C ′ (λ0 ) with λ0 < 1/6, the classical asphericity theorem for C(6) pre-
+sentations without proper-power relators [LS77, Chapter V, Theorem 13.3] makes the presentation complex
+a finite two-dimensional K(GR , 1), with
+                                               χ(GR ) = 1 − m + q.                                              (30)
+Since GR is one-ended and nonfree, Stallings–Swan gives cd(GR ) = 2, and Bestvina–Mess [BM91] gives
+dim ∂GR = 1.
+   By Lemma 10.5 and completeness, GR admits no essential splitting over an infinite cyclic subgroup, where
+“essential” means that every edge group has infinite index in each incident vertex group.
+   Since GR is one-ended, it has no splitting over a finite subgroup. As it is torsion-free, its two-ended
+subgroups are infinite cyclic, so it admits no essential splitting over a two-ended subgroup. Moreover, GR is
+not virtually cocompact Fuchsian, since in the torsion-free case this would make it a closed surface group,
+whose outer automorphism group is infinite. The boundary of a one-ended hyperbolic group is connected and
+locally connected. Bowditch’s construction underlying [Bow98, Theorem 6.2] shows that a local cut point
+would yield a nontrivial splitting over a two-ended subgroup. In the standard reduction of the canonical graph
+of groups, each cyclic vertex of this type has valence at least two; collapsing one incident edge absorbs that
+vertex into a non-two-ended vertex group while leaving another edge, and the resulting splitting is nontrivial
+and essential in the above sense. Hence ∂GR has no local cut points. Since dim ∂GR = 1, Kapovich–
+Kleiner [KK00, Theorem 1] gives the circle/Menger-curve/Sierpiński-carpet alternatives. The circle case
+is excluded by the preceding non-Fuchsian observation, leaving the Menger curve or the Sierpiński carpet.
+If q ≥ m − 1, then (30) gives χ(GR ) ≥ 0, whereas a torsion-free hyperbolic group with Sierpiński-carpet
+boundary has negative Euler characteristic by [KK00, Corollary 8]. This proves part (4).
+   For part (5), Lemma 10.3 makes R irredundant and 1/6-stable, since λ0 < 1/6, and supplies Nielsen
+uniqueness. Proposition 9.2, with parameter 1/6, gives the assertion.
+   For part (6), let R ∈ Qm,q (n) and S = (s1 , . . . , sq ) ∈ Qm,q (n′ ), and suppose GR ∼
+                                                                                          = GS . Part (5) gives Φ, σ,
+signs, and conjugators. Strict minimality of the components gives n′ ≥ n by applying Φ to a component of R,
+and n ≥ n′ by applying Φ−1 to the corresponding component of S; hence n = n′ . Applying Theorem 7.3(3)
+to one matched pair gives a relabeling Θ with the same outer class as Φ, because the source component has
+trivial outer stabilizer. The full family of relations therefore has the form
+                                               si = shti Θ(rσ(i) )εi .
+                                                                       
+
+The converse is immediate.                                                                                         □
+                   ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                              39
+
+
+                              11. Isomorphism algorithms and enumeration
+
+11.1. Isomorphism algorithms. Fix R = (r1 , . . . , rq ) ∈ Qm,q (n0 ). The parameters m, q, n0 , the tuple R,
+and the neighborhood data defining Qm,q are constants. For a comparison tuple S = (s1 , . . . , st ) put
+                                                         t
+                                                         X
+                                                   N=          |sj |A .
+                                                         j=1
+
+Lemma 11.1 (Checking the comparison promise). Fix q ≥ 1. Let S = (s1 , . . . , st ) be a finite tuple of
+words over A±1 , and let N be their total input length. In O(N 2 ) time one can determine whether all of the
+following hold:
+(1) t = q, and every sj is nontrivial and cyclically reduced;
+(2) the tuple S is irredundant;
+(3) the symmetrization of S satisfies C ′ (1/6).
+
+Proof. A linear scan checks part (1). Part (2) is checked by testing each pair for cyclic conjugacy up to
+inversion, using a doubled word. Since q is fixed after part (1) has passed, the total time is O(N 2 ).
+   For part (3), form the doubled blocks sj sj and s−1       −1
+                                                         j sj , separated by distinct fixed markers outside A
+                                                                                                             ±1
+                                                                                                                .
+A generalized suffix array and longest-common-prefix data can be built in O(N log N ) time. For each cyclic
+relator use only starting positions in the first copy of its doubled block, and cap every longest-common-
+prefix value at the length of that relator, so that no comparison runs beyond one cyclic turn. Group starts
+representing the same member of the symmetrized set and discard repetitions. There are O(N ) remaining
+starts; checking every pair for a common prefix whose length is at least one sixth of the shorter relator costs
+O(N 2 ) in total. The separating markers prevent comparisons from crossing between blocks. This condition
+is exactly the failure of the strict C ′ (1/6) inequality, so its absence is exactly C ′ (1/6).               □
+Lemma 11.2 (Search output from a fixed strictly minimal word). Let N ≥ 1, let u be a fixed strictly
+minimal cyclically reduced word, and suppose that a cyclically reduced word v of length at most N lies in the
+same Out(Fm )-orbit as u. The search form of Whitehead’s algorithm produces
+                                          Φ = Θk · · · Θ1 ,        k = O(N ),
+where the Θi are Whitehead automorphisms, Φ[u] = [v], and every prefix image Θj · · · Θ1 [u] has cyclic length
+O(N ). The search takes O(N 2 ) time.
+
+Proof. By Theorem 7.3(4), Whitehead’s algorithm takes O(N 2 ) time and records its moves. Minimize v by
+length-decreasing Whitehead moves. There are at most N such moves and all intermediate cyclic lengths are
+at most N . Since u is strictly minimal and equivalent to v, the terminal minimum is obtained from u by a
+relabeling and a cyclic shift, by Theorem 7.3(3). Start with this fixed-length move and reverse the recorded
+minimization path. This process gives the stated Whitehead word and prefix-length bound.                   □
+Lemma 11.3 (Applying a recorded search to a fixed tuple). Let N ≥ 1 and let u ∈ Fm \ {1} be fixed.
+Suppose that, for some c > 0,
+                                       
+                                    ηu
+                                T,        ≥ cΛA (T ) (T ∈ cvm \ {0}).                         (31)
+                                   ∥u∥A
+Let R = (r1 , . . . , rq ) be a fixed tuple of nontrivial elements of Fm . Suppose
+                                          Φ = Θk · · · Θ1 ,        k = O(N ),
+where the Θi are Whitehead generators. Put
+                             Φj = Θj · · · Θ1 ∈ Aut(Fm ),           φj = [Φj ] ∈ Out(Fm ),
+and suppose that every prefix image Φj [u] has cyclic length O(N ). Then cyclically reduced representatives of
+all Φ[ri ] can be computed in O(N 2 ) time.
+40                                                 I. KAPOVICH
+
+
+Proof. Taking T = TA φj in (31) gives
+                                           ∥Φj (u)∥A ≥ c∥u∥A ΛA (φj ),
+so ΛA (φj ) = O(N ). An equivariant ΛA (φj )-Lipschitz map TA → TA φj bounds translation lengths, and
+hence
+                                     ∥Φj (ri )∥A ≤ ΛA (φj )∥ri ∥A = O(N )
+for every fixed component. Apply the Whitehead generators successively to cyclically reduced representatives
+and cyclically reduce after each step. Since m is fixed, each Whitehead generator replaces every basis letter
+by a word of uniformly bounded length, and substitution followed by free and cyclic reduction is linear in
+the current word length. Thus each stage costs O(N ); there are O(N ) stages, and q is fixed.              □
+
+Theorem C (Isomorphism algorithms). Fix m ≥ 2 and q ≥ 1. For a finite tuple U = (u1 , . . . , us ) of
+elements of Fm , write
+                              GU = ⟨a1 , . . . , am | u1 , . . . , us ⟩.
+(1) Fix R = (r1 , . . . , rq ) ∈ Qm,q (n0 ). There is a quadratic-time algorithm for the following restricted iso-
+    morphism problem. The input is a finite tuple S = (s1 , . . . , st ) of nontrivial cyclically reduced words,
+    known to be irredundant and to have symmetrization satisfying C ′ (1/6); the algorithm decides whether
+    GR ∼= GS . With
+                                                         Xt
+                                                    N=      |sj |A ,
+                                                          j=1
+                                                  2
+    the running time of the algorithm is O(N ). The assumptions on S can be checked within the same
+    O(N 2 ) time bound; an input failing it is reported as outside the restricted problem.
+(2) There is a linear-time algorithm which, given tuples R ∈ Cnq and S ∈ Cnq ′ known to belong to Qm,q (n)
+    and Qm,q (n′ ), respectively, decides whether GR ∼= GS . The algorithm’s running time is linear in n′′ =
+              ′
+    max{n, n }; the algorithm does not test the assumptions on R, S.
+
+Proof. For part (1), return a negative answer if t ̸= q. If t = q, use Lemma 11.1 to verify nontriviality,
+cyclic reduction, irredundancy, and the C ′ (1/6) condition; if this verification fails, report that the input lies
+outside the promised comparison class. The first relator r1 is strictly minimal and has trivial outer stabilizer
+by (Q4). For every j and ε ∈ {±1}, run the search form of Whitehead’s algorithm on
+                                                      [r1 ], [sεj ].
+The total cost of these fixed 2q searches is O(N 2 ) by Theorem 7.3(4).
+   For each successful search, Lemma 11.2 gives a candidate Φ with a recorded Whitehead word. Condition
+(Q2) and (27) give (31) for u = r1 . Lemma 11.3 computes all Φ[ri ] in O(N 2 ) time. Compare their conjugacy
+classes, up to independent inversion and permutation, with those represented by the sj . Because q is fixed,
+this costs at most O(N 2 ).
+   A passing candidate induces an isomorphism. Conversely, if GR ∼          = GS , Theorem B(5) supplies an au-
+tomorphism carrying [r1 ] to some [sεj ]. The corresponding search succeeds. Any two candidates with this
+effect differ by an element of StabOut(Fm ) ([r1 ]), which is trivial; hence the candidate found by the algorithm
+carries the entire relator family correctly. This proves part (1).
+   For part (2), note that, since q is fixed, r∈R |r| + s∈S |s| = q(n + n′ ) ≤ 2qn′′ = O(n′′ ). To prove
+                                                P             P
+part (2), we first compare the common relator lengths n, n′ . If n ̸= n′ the GR ∼      ̸ GS by Theorem B(6). If
+                                                                                        =
+n = n′ (so that n′′ = n = n′ ), we test the fixed 2m m! relabelings, the fixed q! component permutations, the
+2q inversion choices, and the required cyclic-conjugacy relations to check whether S can be obtained from R
+as in Theorem B(6) and thus determine whether or not GR ∼         = GS . Theorem B(6) proves correctness of this
+procedure. Since   m,  q are fixed and cyclic conjugacy   is linear-time  decidable, the total time is linear in the
+input length r∈R |r| + s∈S |s| and thus linear in n′′ .
+               P           P
+                                                                                                                  □
+                    ISOMORPHISM RIGIDITY FOR FOR GENERIC FINITELY PRESENTED GROUPS                                      41
+
+
+11.2. Enumeration. The class Qm,q (n) is invariant under Γm,q,n . Indeed, (Q1) uses the invariant core; the
+neighborhood U is relabeling-invariant and counting currents are unchanged by cyclic shift and inversion;
+signed overlap is invariant under all operations in (25); and the class Zm is invariant under relabeling, cyclic
+shift, and inversion, while tuple stabilizers conjugate. By (Q4), the action on Qm,q (n) is free.
+   Put
+                                          Qn = Qm,q (n),           Bn = Cnq \ Qn .
+                                                                              cr
+Theorem D (Asymptotic number of isomorphism types). Fix m ≥ 2 and q ≥ 1. Let Im,q (n) be the
+number of group isomorphism types represented by presentations
+                                        ⟨A | r1 , . . . , rq ⟩,   (r1 , . . . , rq ) ∈ Cnq .
+Then
+                                        cr              (2m − 1)qn
+                                       Im,q (n) ∼                            (n → ∞).
+                                                       2m+q m! q! nq
+
+Proof. Proposition 10.4 gives
+                               |Qn | = |Cn |q 1 + O(e−cn ) ,           |Bn | = O(|Cn |q e−cn ).
+                                                          
+                                                                                                                      (32)
+By Lemma 10.1, every Γm,q,n -orbit in Qn has size
+                                                         2m+q m! q! nq .
+Theorem B(6) says that two tuples in Qn define isomorphic groups exactly when they lie in the same orbit.
+Hence the number of isomorphism types represented in Qn is
+                                                     |Qn |
+                                                              .
+                                                2m+q m! q! nq
+Every isomorphism type not represented in Qn has a representative in Bn , so
+                                 |Qn |          cr              |Qn |
+                               m+q         q
+                                             ≤ Im,q (n) ≤ m+q              + |Bn |.
+                             2     m! q! n                 2     m! q! nq
+                                                                              q
+                                                                                 
+Since exponential decay dominates n−q , the bad-set contribution is o |Cnnq| .
+   Finally, (1) gives |Cn | ∼ (2m − 1)n , proving the formula.                                                          □
+
+                                              12. Disclosure of AI use
+
+Preparation of this paper substantially relied on chats with ChatGPT, but the author verified all the proofs
+given, reviewed and edited the content as needed and takes full responsibility for the content of the paper.
+
+                                                         References
+[AO96] G. N. Arzhantseva and A. Yu. Ol’shanskii, Genericity of the class of groups in which subgroups with a lesser number
+    of generators are free, Mat. Zametki 59 (1996), no. 4, 489–496; English transl., Math. Notes 59 (1996), 350–355.
+[Arz97] G. N. Arzhantseva, On groups in which subgroups with a fixed number of generators are free, Fundam. Prikl. Mat. 3
+    (1997), no. 3, 675–683 (Russian).
+[BFH97] M. Bestvina, M. Feighn, and M. Handel, Laminations, trees, and irreducible automorphisms of free groups. Geom.
+    Funct. Anal. 7 (1997), no. 2, 215–244
+[BM91] M. Bestvina and G. Mess, The boundary of negatively curved groups, J. Amer. Math. Soc. 4 (1991), no. 3, 469–481.
+[Bow98] B. H. Bowditch, Cut points and canonical splittings of hyperbolic groups, Acta Math. 180 (1998), no. 2, 145–186.
+[Cha95] C. Champetier, Propriétés statistiques des groupes de présentation finie, Adv. Math. 116 (1995), no. 2, 197–262.
+[CM15] D. Calegari and J. Maher, Statistics and compression of scl, Ergodic Theory Dynam. Systems 35 (2015), no. 1, 64–110.
+[CL95] M. Cohen and M. Lustig, Very small group actions on R-trees and Dehn twist automorphisms, Topology 34 (1995),
+    no. 3, 575–617.
+[CHL08a] T. Coulbois, A. Hilion and M. Lustig, R-trees and laminations for free groups I: algebraic laminations, J. London
+    Math. Soc. (2) 78 (2008), no. 3, 723–736.
+42                                                      I. KAPOVICH
+
+
+[CHL08b] T. Coulbois, A. Hilion and M. Lustig, R-trees and laminations for free groups II: the dual lamination of an R-tree,
+     J. London Math. Soc. (2) 78 (2008), no. 3, 737–754.
+[CHL08c] T. Coulbois, A. Hilion and M. Lustig, R-trees and laminations for free groups III: currents and dual R-tree metrics,
+     J. London Math. Soc. (2) 78 (2008), no. 3, 755–766.
+[CM87] M. Culler and J. W. Morgan, Group actions on R-trees, Proc. London Math. Soc. (3) 55 (1987), no. 3, 571–604.
+[CV86] M. Culler and K. Vogtmann, Moduli of graphs and automorphisms of free groups, Invent. Math. 84 (1986), no. 1,
+     91–119.
+[FM11] S. Francaviglia and A. Martino, Metric properties of Outer space, Publ. Mat. 55 (2011), no. 2, 433–473.
+[GL07] V. Guirardel and G. Levitt, Deformation spaces of trees, Groups Geom. Dyn. 1 (2007), no. 2, 135–181.
+[GL15] V. Guirardel and G. Levitt, Splittings and automorphisms of relatively hyperbolic groups, Groups Geom. Dyn. 9 (2015),
+     no. 2, 599–663.
+[Gui00] V. Guirardel, Dynamics of Out(Fn ) on the boundary of Outer space, Ann. Sci. Ècole Norm. Sup. (4) 33 (2000), no. 4,
+     433–465.
+[Gui08] V. Guirardel, Actions of finitely generated groups on R-trees, Ann. Inst. Fourier (Grenoble) 58 (2008), no. 1, 159–211.
+[Gre61] M. Greendlinger, An analogue of a theorem of Magnus, Arch. Math. 12 (1961), 94–96.
+[Gro87] M. Gromov, Hyperbolic groups, IEssays in group theory, Math. Sci. Res. Inst. Publ. 8, Springer-Verlag, New York 1987,
+     75?263
+[Gro93] M. Gromov, Asymptotic invariants of infinite groups, in Geometric Group Theory, Vol. 2 (Sussex, 1991), London
+     Math. Soc. Lecture Note Ser. 182, Cambridge Univ. Press, Cambridge, 1993, 1–295.
+[Gro03] M. Gromov, Random walk in random groups, Geom. Funct. Anal. 13 (2003), no. 1, 73–146.
+[Kap26] I. Kapovich, Generic-case complexity of Whitehead’s algorithm, revisited, preprint, arXiv:1903.07040v3 (2026).
+[KK00] M. Kapovich and B. Kleiner, Hyperbolic groups with low-dimensional boundary, Ann. Sci. Ècole Norm. Sup. (4) 33
+     (2000), no. 5, 647–669.
+[KL09] I. Kapovich and M. Lustig, Geometric intersection number and analogues of the curve complex for free groups, Geom.
+     Topol. 13 (2009), no. 3, 1805–1833.
+[KL10] I. Kapovich and M. Lustig, Intersection form, laminations and currents on free groups, Geom. Funct. Anal. 19 (2010),
+     no. 5, 1426–1467.
+[KL15] I. Kapovich and M. Lustig, Patterson–Sullivan currents, generic stretching factors and the asymmetric Lipschitz metric
+     for Outer space, Pacific J. Math. 277 (2015), no. 2, 371–398.
+[KS05] I. Kapovich and P. Schupp, Genericity, the Arzhantseva–Ol’shanskii method and the isomorphism problem for one-
+     relator groups, Math. Ann. 331 (2005), 1–19.
+[KS05b] I. Kapovich and P. Schupp, Delzant’s T -invariant, Kolmogorov complexity and one-relator groups, Comment. Math.
+     Helv. 80 (2005), no. 4, 911–933.
+[KS09] I. Kapovich and P. E. Schupp, Random quotients of the modular group are rigid and essentially incompressible, J. Reine
+     Angew. Math. 628 (2009), 91–119.
+[KSS06] I. Kapovich, P. Schupp and V. Shpilrain, Generic properties of Whitehead’s algorithm and isomorphism rigidity of
+     random one-relator groups, Pacific J. Math. 223 (2006), no. 1, 113–140.
+[KK13] M. Kotowski and M. Kotowski, Random groups and property (T): Żuk’s theorem revisited, J. Lond. Math. Soc. (2) 88
+     (2013), no. 2, 396–416.
+[LL03] G. Levitt and M. Lustig, Irreducible automorphisms of Fn have north–south dynamics on compactified Outer space, J.
+     Inst. Math. Jussieu 2 (2003), no. 1, 59–72.
+[LS77] R. C. Lyndon and P. E. Schupp, Combinatorial Group Theory, Ergebnisse der Mathematik und ihrer Grenzgebiete,
+     Band 89, Springer-Verlag, Berlin–New York, 1977.
+[Mag30] W. Magnus, Über diskontinuierliche Gruppen mit einer definierenden Relation, J. Reine Angew. Math. 163 (1930),
+     141–165.
+[MS19] J. Maher and A. Sisto, Random subgroups of acylindrically hyperbolic groups and hyperbolic embeddings, Int. Math.
+     Res. Not. IMRN 2019, no. 13, 3941–3980.
+[MT18] J. Maher and G. Tiozzo, Random walks on weakly hyperbolic groups, J. Reine Angew. Math. 742 (2018), 187–239.
+[McD89] C. McDiarmid, On the method of bounded differences, in Surveys in Combinatorics 1989, London Math. Soc. Lecture
+     Note Ser. 141, Cambridge Univ. Press, 1989, 148–188.
+[Oll05] Y. Ollivier, A January 2005 invitation to random groups, Ensaios Matemáticos 10, Sociedade Brasileira de Matematica,
+     Rio de Janeiro, 2005
+[Ol92] A. Yu. Ol’shanskii, Almost every group is hyperbolic, Internat. J. Algebra Comput. 2 (1992), no. 1, 1–17.
+[Zuk03] A. Żuk, Property (T) and Kazhdan constants for discrete groups, Geom. Funct. Anal. 13 (2003), no. 3, 643–670.
+
+     Department of Mathematics and Statistics, Hunter College of CUNY
+     695 Park Ave, New York, NY 10065
+     http://math.hunter.cuny.edu/ilyakapo/
+     Email address: ik535@hunter.cuny.edu
+

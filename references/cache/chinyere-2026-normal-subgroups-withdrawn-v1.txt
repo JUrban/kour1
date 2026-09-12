@@ -1,0 +1,278 @@
+                                           On the non-existence of finite groups with certain normal subgroups
+                                                                                             Ihechukwu Chinyere∗
+
+                                          Department of Mathematics and Applied Mathematics, University of Pretoria, Hatfield 0028,
+                                                                         Pretoria, South Africa
+
+                                                                                               January 6, 2026
+
+
+                                                                                                    Abstract
+arXiv:2601.01080v1 [math.GR] 3 Jan 2026
+
+
+
+
+                                                    Problem 20.21 of Mazurov and Khukhro (Unsolved Problems in Group Theory: The Kourovka Notebook,
+                                                 20th Issue, 2022), contributed by M. Conder and attributed to G. Verret, asks whether there exists a finite
+                                                 group G with two normal subgroups K and L of index 12 such that K ∼         = L, but with non-isomorphic
+                                                 quotients G/K ∼ = C12 and G/L ∼ = A4 . We prove that no such finite group exists.
+
+
+                                          1      Introduction
+                                          Understanding the relationships between normal subgroups and their quotients is a central topic in finite group
+                                          theory, as it provides deep insight into the structure and composition of groups. The study of such subgroups
+                                          reveals intricate constraints on how a group can be assembled from simpler pieces. Problem 20.21 of Mazurov
+                                          and Khukhro [1] (Unsolved Problems in Group Theory: The Kourovka Notebook, 20th Issue, 2022), contributed
+                                          by M. Conder and attributed to G. Verret, asks whether there exists a finite group G with two normal subgroups
+                                          K and L, each of index 12 in G, such that K ∼   = L, but
+
+                                                                                     G/K ∼
+                                                                                         = C12        while    G/L ∼
+                                                                                                                   = A4 .
+
+                                          Our main result gives a definitive negative answer:
+
+                                          Theorem 1. There does not exist a finite group G with normal subgroups K and L such that both K and L
+                                          have index 12, are isomorphic, G/K ∼
+                                                                             = C12 , and G/L ∼
+                                                                                             = A4 .
+
+                                          This theorem demonstrates that the presence of isomorphic normal subgroups of equal index places strong
+                                          constraints on the resulting quotient groups, excluding certain combinations even when the indices coincide.
+
+
+                                          2      Preliminaries
+                                          Throughout, all groups are finite. Suppose there exists a finite group G with normal subgroups K, L◁G satisfying
+
+                                                                  [G : K] = [G : L] = 12,         G/K ∼
+                                                                                                      = C12 ,       G/L ∼
+                                                                                                                        = A4 ,     K∼
+                                                                                                                                    = L.
+
+                                          These conditions imply that K and hence L are nontrivial subgroups of G. Let
+
+                                                                                     n := |K| = |L|,          H := K ∩ L.
+
+                                          Since intersections of normal subgroups are normal, we have H ◁ G. Let f : K → L be an isomorphism, set
+
+                                                                                             X := H ∩ f (H) ≤ H.
+
+                                          Notation: Cn is the cyclic group of order n, A4 is the alternating group of order 12, V4 is the Klein four-group,
+                                          D2n the dihedral group of order 2n, Q12 the dicyclic group of order 12, and Q8 the quaternion group of order 8.
+                                          We include the following well-known result for easy reference:
+                                              ∗ Corresponding author: i.chinyere@up.ac.za;   ihechukwu@aims.ac.za
+
+
+                                                                                                        1
+Lemma 2. With the above notation, the following hold:
+
+    1. K̄ := K/H and L̄ := L/H are normal in Ḡ := G/H with trivial intersection K̄ ∩ L̄.
+    2. The natural quotient maps πK : Ḡ ↠ G/K and πL : Ḡ ↠ G/L have kernels K̄ and L̄, so that Ḡ/K̄ ∼
+                                                                                                       = G/K
+       and Ḡ/L̄ ∼
+                 = G/L.
+    3. The product KL is normal in G, with order |KL| = |K||L|/|H| = n2 /|H|.
+
+It follows from Lemma 2 that K̄ naturally embeds in Ḡ/L̄ ∼= G/L ∼ = A4 and L̄ naturally embeds in Ḡ/K̄ ∼  =
+       ∼
+G/K = C12 . We will use this fact throughout, and all subsequent references to embeddings of K̄ or L̄ refer to
+these canonical embeddings.
+
+Lemma 3. Given the above notations, H/X and f (H)/X are normal subgroups of L/X.
+
+Proof. First, we show that f (H) is normal in L. Since f is an isomorphism from K to L and H ◁ K, for any
+ℓ ∈ L = f (K) there exists k ∈ K such that f (k) = ℓ. For any h ∈ H, we have
+
+                               ℓf (h)ℓ−1 = f (k)f (h)f (k)−1 = f (khk −1 ) ∈ f (H),
+
+because khk −1 ∈ H as H ◁ K. Therefore, f (H) is closed under conjugation by all elements of L, so f (H) ◁ L.
+Next, define X := H ∩ f (H). Since both H and f (H) are normal in L, their intersection X is also normal in L.
+Finally, consider the quotients H/X and f (H)/X inside L/X. It is a standard fact that if N ◁ G and M ◁ G
+with M ⊆ N , then N/M ◁ G/M . Applying this to H and f (H) with M = X ◁ L, we conclude that H/X ◁ L/X
+and f (H)/X ◁ L/X.
+
+
+3     Proof of Theorem 1
+Suppose, for contradiction, that a finite group G satisfying the hypotheses exists.
+
+3.1       Reduction modulo H
+Consider the quotient Ḡ := G/H with normal subgroups K̄ := K/H and L̄ := L/H. We have K̄ ◁ Ḡ and
+L̄ ◁ Ḡ with trivial intersection K̄ ∩ L̄ = 1. Moreover, K̄ ,→ G/L ∼= A4 and L̄ ,→ G/K ∼ = C12 . By Lemma 2,
+K̄ is isomorphic to a normal subgroup of A4 ; hence its possible orders are determined by the normal subgroup
+structure of A4 . Hence,
+                                                                        n n no
+                               |K̄| ∈ {1, 4, 12} =⇒     |H| = |K|/|K̄| ∈ n, ,      .
+                                                                            4 12
+If |K̄| = n, then H = 1, so that K ∼
+                                   = K/H ∼  = L/f (H) ∼
+                                                      = L. But this leads to a contradiction: K/H ◁ G/L ∼
+                                                                                                        = A4 ,
+whereas L/H ◁ G/K ∼  = C12 . There is no way for a nontrivial group to be normal simultaneously in A4 and C12 ,
+so this case cannot occur. Hence,
+                                                                  nn n o
+                                    |K̄| ∈ {4, 12}  =⇒      |H| ∈     ,    .
+                                                                    4 12
+
+3.2       Possible sizes of X
+Recall that
+                                             X := H ∩ f (H) ≤ H,
+where f : K → L is an isomorphism. By the subgroup product formula,
+
+                              |X||Hf (H)| = |H| |f (H)| = |H|2 ≤ |L||X| = n|X|,
+
+so that
+                                                     |H|2
+                                                  |X| ≥   .
+                                                       n
+Moreover, since X ≤ H, the order of X must divide |H|, so we can write l|X| = |H| for some integer l ≥ 1.
+Combining these constraints gives
+
+                            |H|2 ≤ |X|n ≤ |H|n,       |X|l = |H| for some integer l.
+
+Depending on the value of |H|, we distinguish two main cases:
+
+
+                                                        2
+   1. |H| = n/4, then
+                                                          n n n n no
+                                                  |X| =      ∈   , ,  .
+                                                          4l   16 8 4
+   2. |H| = n/12, then
+                                    n    n n   n   n   n n n n n n n n no
+                           |X| =       ∈     ,   ,   ,   , , , , , , , ,          .
+                                   12l    144 132 120 108 96 84 72 60 48 36 24 12
+This gives the complete set of possible orders of X, taking into account both the subgroup product inequality
+and the divisibility constraint from X ≤ H.
+Depending on the value of |X|, we distinguish two main possibilities. Either X is a proper, possibly trivial,
+subgroup of H, so that 1 ≤ |X| < |H|, or X coincides with H, that is, |X| = |H|.
+
+3.3    Case |X| = |H|
+If |H| = n/4, then |K/H| = |L/H| = 4. Since K̄ = K/H embeds into G/L ∼       = A4 and L̄ = L/H embeds into
+      ∼                                             ∼
+G/K = C12 , we would need an isomorphism K/H = L/H. However, this is impossible: the only subgroup of
+order 4 in A4 is the Klein four-group V4 , whereas the only subgroup of order 4 in C12 is cyclic C4 . Therefore,
+no isomorphism exists between K̄ and L̄ in this case.
+If |H| = n/12, then |K/H| = |L/H| = 12. The groups of order 12 are
+
+                                            C12 , C6 × C2 , A4 , D12 , Q12 .
+
+The embeddings K̄ = K/H ,→ G/L ∼    = A4 and L̄ = L/H ,→ G/K ∼   = C12 impose strong restrictions: K/H must
+be isomorphic to a subgroup of A4 of order 12, and L/H to a subgroup of C12 of order 12. Hence K/H ∼      = A4
+and L/H ∼= C12 . However, this is impossible, since A4 ∼
+                                                       ̸ C12 . Therefore, no group of order 12 can satisfy both
+                                                        =
+embedding requirements, yielding a contradiction.
+
+3.4    Case 1 ≤ |X| < |H|
+By Lemma 3, both H/X and f (H)/X are normal in L/X. Set
+
+                            L1 := L/X,        H1 := H/X ◁ L1 ,       H2 := f (H)/X ◁ L1 .
+
+Since f : K → L is an isomorphism and H ◁ K, the first isomorphism theorem gives K/H ∼
+                                                                                     = L/f (H), and the
+Third Isomorphism Theorem yields
+
+                                   L1 /H1 ∼
+                                          = L/H    and    L1 /H2 ∼
+                                                                 = L/f (H) ∼
+                                                                           = K/H.
+
+From previous reductions, L/H ∼
+                              = C4 and K/H ∼
+                                           = V4 , so
+
+                                          L1 /H1 ∼
+                                                 = C4     and   L1 /H2 ∼
+                                                                       = V4 .
+
+Thus, L1 contains two distinct normal subgroups H1 , H2 of equal order with non-isomorphic quotients. The
+orders of L1 and H1 are
+                                |L1 | = |L|/|X| = n/|X|,   |H1 | = |H|/|X|,
+giving the finite list of possibilities displayed in Table 1.
+
+        |H|                            |L1 |                                             |H1 |
+       n/4                          4, 8, 16                                            1, 2, 4
+       n/12    12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 132, 144     3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36
+
+                             Table 1: Possible orders of L1 and H1 to check in GAP.
+
+The GAP computation in Appendix A exhaustively checks all groups of these orders and confirms that none
+admits two distinct normal subgroups of equal order, non-characteristic, with quotients C4 and V4 . Consequently,
+no group L1 arises in this manner, and therefore no finite group G satisfies the hypotheses of Theorem 1.
+
+
+
+
+                                                           3
+References
+[1] Khukhro, E. I. and Mazurov, V. D., Unsolved Problems in Group Theory. The Kourovka Notebook,
+    arXiv:1401.0300, https://doi.org/10.48550/arXiv.1401.0300.
+
+[2] The GAP Group, GAP – Groups, Algorithms, and Programming, Version 4.15.1 ; 2025, https://www.
+    gap-system.org.
+
+
+
+
+                                               4
+A     GAP Computation
+Exhaustively examines all groups of the orders listed in Table 1 and verifies that none admits two distinct normal
+subgroups H1 , H2 of equal order such that neither H1 nor H2 is characteristic in L1 with quotients C4 and V4 .
+
+CheckGroups:= function()
+    local IsCharacteristic, Listn, n, groups, L_1, found, Hc4, Hv4, h1, h2, foundPair;
+    #Test whether a subgroup is characteristic
+    IsCharacteristic:= function(G, H)
+        local A, a;
+        A:= AutomorphismGroup(G);
+        for a in GeneratorsOfGroup(A) do
+            if Image(a, H) <> H then
+                return false;
+            fi;
+        od;
+        return true;
+    end;
+    #Relevant orders of L_1 to check
+    Listn := [4,8,12,16,24,36,48,60,72,84,96,108,120,132,144];
+    for n in Listn do
+        Print("\n=== Groups of order ", n, " ===\n");
+        groups:= AllSmallGroups(n);
+        found:= false;
+        for L_1 in groups do
+            #Normal subgroups H_1 with quotient C4
+            Hc4:= Filtered(NormalSubgroups(L_1),
+                            h -> StructureDescription(L_1/h) = "C4"
+                                 and not IsCharacteristic(L_1,h));
+            #Normal subgroups H_2 with quotient V4
+            Hv4:= Filtered(NormalSubgroups(L_1),
+                            h -> StructureDescription(L_1/h) = "V4"
+                                 and not IsCharacteristic(L_1,h));
+            #Check for two distinct subgroups
+            foundPair := false;
+            for h1 in Hc4 do
+                for h2 in Hv4 do
+                    if h1 <> h2 then
+                        foundPair := true;
+                    fi;
+                od;
+            od;
+            if foundPair then
+                found:= true;
+                Print("FOUND in L_1 = ", IdGroup(L_1), " : ",
+                      StructureDescription(L_1), "\n");
+                Print("|L_1| = ", Order(L_1), "\n");
+                Print("Distinct normal non-char subgps H_1, H_2 give quotients C4 and V4\n");
+            fi;
+        od;
+        if not found then
+            Print("No group of order ", n,
+                  "admits distinct normal non-char subgps H_1, H_2 with quotients C4 and V4.\n");
+        fi;
+    od;
+end;
+CheckGroups();
+
+
+                                                        5
+
