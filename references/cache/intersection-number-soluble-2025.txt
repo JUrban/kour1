@@ -1,0 +1,362 @@
+Arch. Math. 125 (2025), 227–234
+c 2025 The Author(s)
+0003-889X/25/030227-8
+published online July 23, 2025
+https://doi.org/10.1007/s00013-025-02155-5            Archiv der Mathematik
+
+
+
+
+ On some upper bounds on the intersection number of a finite
+                      soluble group
+
+ A. Ballester-Bolinches , R.V. Borodich, and S.F. Kamornikov
+
+
+     Abstract. For a ﬁnite group G, the intersection number α(G) of G is the
+     minimal number of maximal subgroups of G whose intersection coincides
+     with Φ(G), the Frattini subgroup of G. In this paper, new upper bounds
+     on α(G) are established when G is soluble.
+
+     Mathematics Subject Classification. 20D10, 20D20, 20D35.
+
+     Keywords. Finite soluble group, Maximal subgroup, Frattini subgroup,
+     Intersection number.
+
+
+
+
+1. Introduction. All groups considered in this paper are ﬁnite.
+   If G is a group, following [5] (see also [10]), we denote by α(G) the minimal
+number of maximal subgroups of G whose intersection coincides with Φ(G);
+α(G) is called the intersection number of G (see [1]).
+   Let λ(G) be the number of chief factors in a given chief series of a group
+G. The following upper bound was shown in [5].
+
+Theorem 1 ([5, Theorem 3]). If G is a soluble group, then α(G) ≤ λ(G).
+
+    Let F (G) denote the Fitting subgroup of G, that is, the largest nilpotent
+normal subgroup of G. The following upper bound of α(G) was obtained in
+[8]. Since this paper is written in Russian, we consider it convenient to include
+the proof of that result here for the sake of completeness.
+
+Theorem 2 ([8, Theorem 1.1]). Let G be a soluble group. Assume that n is the
+length of a given G-chief series of the group F (G)/Φ(G), and k is the number
+of central G-chief factors of such a series. Then α(G) ≤ 4n − 3k.
+
+   The following example shows that the upper bound in Theorem 2 improves
+the one in Theorem 1 in some cases.
+228                     A. Ballester-Bolinches et al.                 Arch. Math.
+
+
+Example 1. Let n ≥ 2 and let p1 , p2 , . . . , pn be primes such that p1 < p2 <
+· · · < pn . Assume that G1 is a cyclic group of order p1 . For i > 1, deﬁne Gi in-
+ductively as the semidirect product Gi = [Vpi ]Gi−1 , where Vpi is a faithful and
+irreducible Gi−1 -module over the ﬁeld Fpi of pi elements (such an irreducible
+module exists by [6, Corollary B.11.8]). Then
+                        1 = G0 ⊂ G1 ⊂ · · · ⊂ Gn = G
+is a chief series of G, λ(G) = n, F (G) = Vpn−1 is a minimal normal subgroup
+of G and Φ(G) = 1. If n ≥ 5, then α(G) ≤ 4 < n, by Theorem 2.
+      Combining Theorems 1 and 2, we have:
+Corollary 1. Let G be a soluble group. Assume that n is the length of a G-chief
+series of the group F (G)/Φ(G), and k is the number of central G-chief factors
+of this series. Then
+                         α(G) ≤ min {λ(G), 4n − 3k}.
+    Let H/K be a chief factor of a group G. A subgroup A is a complement of
+H/K in G if G = AH and A ∩ H = K. We say that H/K is a Frattini chief
+factor of G if H/K is contained in the Frattini subgroup of G/K. It is clear
+that if H/K is abelian, then H/K is a non-Frattini chief factor of G if and
+only if H/K has a complement in G.
+    Let δ(G) denote the number of non-Frattini chief factors in a given chief
+series of a group G. It is well-known that δ(G) is independent of the choice of
+the chief series of G (see [6, Theorem A.9.13]).
+    It is noted in [5] that the diﬀerence α(G) − δ(G) can be arbitrarily large.
+However, as a consequence of [5, Theorem 4], we have that
+                                 α(G) ≤ 4δ(G)
+for soluble groups G.
+    This bound can be improved with the help of prefrattini subgroups.
+    Let Σ be a Hall system of a soluble group G (see [6, Chapter I, Section 1.4]).
+By [6, Theorem I.6.6], Σ reduces in exactly one member of every conjugacy
+class of maximal subgroups of G. The intersection W of all complements of the
+non-Frattini chief factors of G in a given chief series of G into which Σ reduces
+is called the prefrattini subgroup of G associated with Σ (see [4, Section 4.3] for
+details). According to [9, Theorem 1.1] (see also [3, Corollary 5]), there exist
+elements x, y ∈ G such that W ∩ W x ∩ W y = Φ(G). Consequently, we have
+                                 α(G) ≤ 3δ(G)
+for soluble groups G.
+    Our main goal here is to present a new upper bound on the intersection
+number of a soluble group in terms of the number of non-Frattini chief factors
+of the largest supersoluble quotient of the group.
+    Let Φpri (G) be the intersection of all maximal subgroups M of a group G
+such that |G : M | is a prime, with the usual convention that Φpri (G) = G if
+every maximal subgroup of G has composite index. Furthermore, we denote
+by Φcom (G) the intersection of all maximal subgroups of a group G such that
+Vol. 125 (2025) On some upper bounds on the intersection number            229
+
+
+|G : M | is composite (Φcom (G) = G if every maximal subgroup of G has
+prime index). This subgroup coincides with the subgroup LU (G) studied in
+[2], where U is the saturated formation of all supersoluble groups. According
+to [2, Corollary 3.4], Φcom (G) is a supersoluble subgroup of G.
+    Note that every group G has a smallest normal subgroup N with supersol-
+uble quotient G/N. This subgroup is denoted by GU and is called the super-
+soluble residual of the group G.
+    We prove the following:
+Theorem 3. Let G be a soluble group. Assume that m is the length of the G-
+chief series of F (G/Φcom (G)) ∩ (G/Φcom (G))U . Then
+                          α(G) ≤ 3δ(G/GU ) + 4m.
+   Denote β(G) = 3δ(G/GU ) + 4m, where m is as in Theorem 3. If G is
+supersoluble, then GU = 1 and so β(G) = 3δ(G). However, β(G) can be very
+much smaller: if G is a group as in Example 1 with p1 not dividing p2 − 1, then
+Φcom (G) = 1, GU = Vpn · · · Vp2 and m = 1. Then β(G) = 7 and 3δ(G) = 3n.
+Hence β(G) < 3n if n ≥ 3.
+   The following example shows that in some cases β(G) is smaller than
+min{λ(G), 4n − 3k}, where 4n − 3k is the bound determined in Theorem 2.
+Example 2. Let p, q, and r be three primes such that p divides q − 1 and p
+does not divide r − 1. Let A be the cyclic group of order pc for some c ≥
+1. Let Vq be an irreducible A-module over the ﬁeld of q-elements such that
+B = CA (Vq ) is the maximal subgroup of A. Then Vq is one-dimensional. Let
+Vr be an irreducible A-module over the ﬁeld of r elements with B = CA (Vr ).
+Then Vr is not one-dimensional. Let V be a direct sum of a copies of Vq
+and let W be a direct sum of b copies of Vr . Consider G = [V ⊕ W ]A, the
+corresponding semidirect product. Then GU = W, F (G) = [V ⊕ W ]B, and
+G/GU ∼ = [V ]A. Furthermore, G has a core-free maximal subgroup of composite
+index. Therefore Φcom (G) = 1. Hence β(G) = 3a+3+4b, λ(G) = a+b+c, and
+the upper bound determined in Theorem 2 is equal to 4a+4b. If we take a = 4,
+b = 1, and c = 15, it follows that β(G) = 19, λ(G) = 20, and 4a + 4b = 20.
+2. Preliminary results. We begin with an elementary lemma. Its proof is
+straightforward.
+Lemma 1. Let N be a normal subgroup of a group G.
+ (1) If N ⊆ Φpri (G), then Φpri (G/N ) = Φpri (G)/N.
+ (2) If N ⊆ Φcom (G), then Φcom (G/N ) = Φcom (G)/N.
+ (3) Φ(G/Φcom (G)) = 1.
+ (4) Φ(G) = Φpri (G) ∩ Φcom (G).
+Lemma 2. If G is a soluble group, then GU ⊆ Φpri (G) and Φpri (G)/GU =
+Φ(G/GU ).
+Proof. Let M be a maximal subgroup of G such that |G : M | = p, where p is
+a prime. Then G/CoreG (M ) is primitive, and since G is soluble, M is a com-
+plement of a G-chief factor N/CoreG (M ) in G by [6, Theorem A.15.2]. Since
+230                      A. Ballester-Bolinches et al.                   Arch. Math.
+
+
+|G : M | = |N/CoreG (M )|, it follows that N/CoreG (M ) has order p. By [6,
+Theorem A.21.1], G/CG (N/CoreG (M )) is cyclic of order dividing p − 1. Since
+CG/CoreG (M ) (N/CoreG (M )) = N/CoreG (M ), we conclude that G/CoreG (M )
+is supersoluble. Hence GU ⊆ CoreG (M ) ⊆ M and GU ⊆ Φpri (G).
+    Since G/GU is supersoluble, all maximal subgroups of G/GU have prime
+index by [6, Theorem VII.2.2]. Hence Φpri (G)/GU =Φpri (G/GU )=Φ(G/GU ).
+                                                                           
+Lemma 3. Let G be a group. Then α(G) ≤ α(G/Φpri (G)) + α(G/Φcom (G)).
+Proof. Suppose that α(G/Φpri (G)) = k. Since Φpri (G/Φpri (G)) = 1 by Lemma 1,
+there exist maximal subgroups M1 , M2 , . . . , Mk of G such that, for every
+i = 1, 2, . . . , k, |G : Mi | is prime and
+                         Φpri (G) = M1 ∩ M2 ∩ · · · ∩ Mk .
+Assume that α(G/Φcom (G)) = n. Since Φcom (G/Φcom (G)) = 1 by Lemma 1,
+there exist maximal subgroups H1 , H2 , . . . , Hn of G such that, for every j =
+1, 2, . . . , n, |G : Hj | is a composite number and
+                         Φcom (G) = H1 ∩ H2 ∩ · · · ∩ Hn .
+      Then, by Lemma 1, we have
+             Φ(G) = (M1 ∩ M2 ∩ · · · ∩ Mk ) ∩ (H1 ∩ H2 ∩ · · · ∩ Hn ).
+Hence α(G) = α(G/Φ(G)) ≤ k + n.                                                   
+Lemma 4. Let G be a soluble group. Then
+                           α(G/Φpri (G)) ≤ δ(G/GU ).
+Proof. By Lemma 2, GU ⊆ Φpri (G). Hence G/Φpri (G) is supersoluble. Since
+the derived subgroup of every supersoluble group is nilpotent, we can apply
+[5, Theorem 4.4] to conclude that α(G/Φpri (G)) ≤ δ(G/GU ).              
+Lemma 5 ([7, Theorem 1.4]). Let G be a soluble group and V a finite faithful
+G-module. If V is completely reducible, there exist v1 , v2 , v3 ∈ V such that
+CG (v1 ) ∩ CG (v2 ) ∩ CG (v3 ) = 1.
+      For abelian groups, this can be strengthened as follows.
+Lemma 6 ([5, Lemma 4.2]). Let G be an abelian group and let V be a faithful
+completely reducible G-module. Then there exists x ∈ V such that CG (x) = 1.
+Lemma 7 ([6, Lemma A.16.3]). Let G = [N ]H be a semidirect product of a
+normal subgroup N with a subgroup H.
+ (a) If n ∈ N, then H ∩ H n = CH (n).
+ (b) CoreG (H) = CH (N ).
+Lemma 8. Let G be a soluble primitive group. Let M be a maximal subgroup
+of G with CoreG (M ) = 1. Then there exist x, y, z ∈ G such that
+                            M ∩ M x ∩ M y ∩ M z = 1.
+      If G is supersoluble, there exists x ∈ G such that M ∩ M x = 1.
+Vol. 125 (2025) On some upper bounds on the intersection number                       231
+
+
+Proof. Since G is soluble and primitive, G has a unique minimal normal sub-
+group N, which is complemented by a maximal subgroup M of G. Moreover,
+N = CG (N ) and CoreG (M ) = 1. Hence M acts faithfully and irreducibly on
+N.
+   By Lemma 5, there exist x, y, z ∈ N such that
+
+                          CM (x) ∩ CM (y) ∩ CM (z) = 1.
+
+Thus, by Lemma 7, we conclude that M ∩ M x ∩ M y ∩ M z = 1.
+   If G is supersoluble, then M is abelian. By Lemma 6, there exists x ∈ N
+such that CM (x) = 1 and then M ∩ M x = 1.                               
+
+Lemma 9. Let G be a soluble group with Φcom (G) = 1. Suppose that n is the
+length of a G-chief series of the group F (G), and k is the number of cyclic
+G-chief factors of this series. Then G contains 4n − 2k maximal subgroups
+whose intersection is Φcom (G) = 1.
+
+Proof. By Lemma 1, Φ(G) = 1. Then F (G) is a direct product of minimal
+normal subgroups of G, all complemented in G by [6, Theorem A.10.6]. Assume
+that
+
+                 F (G) = (N1 × · · · × Nk ) × (Nk+1 × · · · × Nn ),
+
+where Ni is a minimal normal subgroup of G of prime order, for all i = 1, . . . , k,
+and Nj is a minimal normal subgroup of G of composite order, for every
+j ∈ {k + 1, . . . , n}.
+   Consider the following G-chief series of F (G):
+
+              1 = N0 ⊂ N1 ⊂ N1 N2 ⊂ · · · ⊂ N1 N2 · · · Nn = F (G).
+
+Assume that Mi is a maximal subgroup of G which complements the G-chief
+factor N1 N2 · · · Ni /N1 N2 · · · Ni−1 for each i = 1, . . . , n (N1 N2 . . . Ni−1 = 1 if
+i = 1). Let
+
+               X = CoreG (M1 ) ∩ CoreG (M2 ) ∩ · · · ∩ CoreG (Mn ).
+
+   Assume that X = 1 and let N be a minimal normal subgroup of G contained
+in X. Then N is contained in F (G), and there exists i ∈ {1, . . . , n} such that
+N1 N2 · · · Ni ⊆ N (N1 N2 · · · Ni−1 ). Then G = N Mi . This is impossible since
+N ⊆ Mi . Hence X = 1, and
+
+        Φcom (G) = CoreG (M1 ) ∩ CoreG (M2 ) ∩ · · · ∩ CoreG (Mn ) = 1.
+
+By Lemma 8, we have that
+                                                x       y       z
+                     CoreG (Mj ) = Mj ∩ Mj j ∩ Mj j ∩ Mj j
+
+for every j ∈ {k + 1, . . . , n}, and CoreG (Mi ) = Mi ∩ Mixi for all i = 1, . . . , k.
+Hence G contains 4(n−k)+2k = 4n−2k maximal subgroups whose intersection
+is Φcom (G) = 1.                                                                     
+232                      A. Ballester-Bolinches et al.                  Arch. Math.
+
+
+3. Proof of Theorem 2.
+Proof. We argue by induction on |G|. Assume Φ(G) = 1. Since Φ(G/Φ(G)) = 1
+and F (G/Φ(G)) = F (G)/Φ(G), the length of a G/Φ(G)-chief series of the
+group F (G/Φ(G)) is equal to n, and the number of central G/Φ(G)-chief
+factors of this series is equal to k. By induction, there exist maximal subgroups
+M1 /Φ(G), M2 /Φ(G), . . . , M4n−3k /Φ(G) of G/Φ(G) whose intersection is equal
+to 1. Then
+                       M1 ∩ M2 ∩ . . . ∩ M4n−3k = Φ(G),
+and α(G) ≤ 4n − 3k.
+   Assume Φ(G) = 1. By [6, Theorem A.10.6], F (G) = N1 · · · Nn is the prod-
+uct of minimal normal subgroups N1 , . . . , Nn of G, all complemented in G.
+Without loss of generality, we can assume that N1 , N2 , . . . , Nk are central in
+G, and Nk+1 , Nk+2 , . . . , Nn are non-central. Consider the G-chief series
+             1 = N0 ⊂ N1 ⊂ N1 N2 ⊂ · · · ⊂ N1 N2 · · · Nn = F (G)
+of F (G). Assume that Mi is a maximal subgroup of G which complements the
+G-chief factor N1 N2 · · · Ni /N1 N2 · · · Ni−1 for each i = 1, . . . , n. Denote the
+subgroup
+                 CoreG (M1 ) ∩ CoreG (M2 ) ∩ · · · ∩ CoreG (Mn )
+by X. As in Lemma 9, we have
+       CoreG (M1 ) ∩ CoreG (M2 ) ∩ · · · ∩ CoreG (Mn ) = X = 1 = Φ(G).
+By Lemma 8, we have that
+                                             x       y      z
+                    CoreG (Mj ) = Mj ∩ Mj j ∩ Mj j ∩ Mj j
+for every j ∈ {k + 1, . . . , n}. Since the subgroups M1 , M2 , . . . , Mk are normal
+in G, CoreG (Mi ) = Mi for every i = 1, 2, . . . , k.
+    Hence G contains 4(n − k) + k = 4n − 3k maximal subgroups whose inter-
+section is Φ(G). Therefore α(G) ≤ 4n − 3k, as requested.                           
+4. Proof of Theorem 3.
+Proof. By Lemmas 3 and 4, we have that
+   α(G) ≤ α(G/Φpri (G)) + α(G/Φcom (G)) ≤ δ(G/GU ) + α(G/Φcom (G)).
+    If (G/Φcom (G))U = 1, then GU is contained in Φ(G) by Lemma 2 and so G
+is supersoluble. Hence GU = 1, n = 0, α(G) ≤ 3δ(G), and the theorem holds.
+Hence we may assume that (G/Φcom (G))U = 1. Since Φ(G/Φcom (G)) = 1, it
+follows that F (G/Φcom (G)) is a direct product of minimal normal subgroups of
+G/Φcom (G), all of them complemented in G/Φcom (G) by [6, Theorem A.10.6].
+Suppose that N/Φcom (G) is a minimal normal subgroup of G/Φcom (G) con-
+tained in (G/Φcom (G))U . By Lemma 1, Φcom (G/Φcom (G)) = 1, and there-
+fore there exists a maximal subgroup of G of composite index complement-
+ing N/Φcom (G) in G/Φcom (G). In particular, N/Φcom (G) is not cyclic. As-
+sume that k is the number of cyclic G-chief factors of a G-chief series of
+F (G/Φcom (G)). Since every G-chief factor above GU is cyclic, we conclude that
+Vol. 125 (2025) On some upper bounds on the intersection number                     233
+
+
+m + k is the length of a G-chief series of F (G/Φcom (G)). Applying Lemma 9,
+we have that G has 4m+2k maximal subgroups whose intersection is Φcom (G).
+In particular, α(G/Φcom (G)) ≤ 4 m + 2k. Therefore
+             α(G) = α(G/Φ(G)) ≤ α(G/Φpri (G)) + α(G/Φcom (G))
+                      ≤ δ(G/GU ) + 4m + 2k ≤ 3δ(G/GU ) + 4m.
+                                                                                     
+
+Acknowledgements. The authors would like to thank the referee for the care-
+ful reading of the manuscript. A. Ballester-Bolinches is supported by the grant
+CIAICO/2023/007 from the Conselleria d’Educació, Universitats i Ocupació,
+Generalitat Valenciana. R.V. Borodich and S.F. Kamornikov were supported
+by the Ministry of Education of the Republic of Belarus (grant 20211749
+“Convergence-2025”).
+
+Funding Open Access funding provided thanks to the CRUE-CSIC agreement
+with Springer Nature.
+
+Open Access. This article is licensed under a Creative Commons Attribution 4.0
+International License, which permits use, sharing, adaptation, distribution and re-
+production in any medium or format, as long as you give appropriate credit to the
+original author(s) and the source, provide a link to the Creative Commons licence,
+and indicate if changes were made. The images or other third party material in
+this article are included in the article’s Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the article’s
+Creative Commons licence and your intended use is not permitted by statutory regu-
+lation or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this licence, visit http://creativecommons.
+org/licenses/by/4.0/.
+Publisher’s Note Springer Nature remains neutral with regard to jurisdic-
+tional claims in published maps and institutional aﬃliations.
+
+                                     References
+
+ [1] Archer, A.K., Bautista Serrano, H., Cook, K., Lauderdale, L.-K., Perez, Y.,
+     Villalobos, V.: On the intersection numbers of ﬁnite groups. arXiv:1907.02898v1
+     (2019)
+ [2] Ballester-Bolinches, A.: Maximal subgroups and formations. J. Pure Appl. Al-
+     gebra 61(3), 223–232 (1989)
+ [3] Ballester-Bolinches, A., Cossey, J., Kamornikov, S.F., Meng, H.: On two ques-
+     tions from the Kourovka notebook. J. Algebra 499, 438–449 (2018)
+ [4] Ballester-Bolinches, A., Ezquerro, L.M.: Classes of Finite Groups. Mathematics
+     and Its Applications, vol. 584. Springer, Dordrecht (2006)
+ [5] Burness, T.C., Garonzi, M., Lucchini, A.: Finite groups, minimal bases and the
+     intersection number. Trans. Lond. Math. Soc. 9(1), 20–55 (2022)
+ [6] Doerk, K., Hawkes, T.: Finite Soluble Groups. Walter De Gruyter, Berlin (1992)
+234                      A. Ballester-Bolinches et al.                   Arch. Math.
+
+
+ [7] Dolﬁ, S.: Large orbits in coprime actions of solvable groups. Trans. Amer. Math.
+     Soc. 360(1), 135–152 (2008)
+ [8] Kamornikov, S.F.: On a characterization of the Frattini subgroup of a ﬁnite
+     solvable group. (Russian) Tr. Inst. Mat. Mekh. 23(4), 176–180 (2017)
+ [9] Kamornikov, S.F.: Intersections of prefrattini subgroups in ﬁnite soluble groups.
+     Int. J. Group Theory 2, 1–5 (2017)
+[10] Lucchini, A.: Maximal intersections in ﬁnite groups. Mediterr. J. Math. 19(1),
+     Paper No. 34, 15 pp. (2022)
+
+
+
+A. Ballester-Bolinches
+Universitat de València
+Dr. Moliner, 50
+46100 Burjassot València
+Spain
+e-mail: Adolfo.Ballester@uv.es
+
+R.V. Borodich and S.F. Kamornikov
+Francisk Skorina State Gomel University
+104 Sovetskaya Str.
+246019 Gomel
+Belarus
+e-mail: Borodich@gsu.by
+
+S.F. Kamornikov
+e-mail: sfkamornikov@mail.ru
+
+
+Received: 26 January 2025
+
+Revised: 17 June 2025
+
+Accepted: 30 June 2025
+

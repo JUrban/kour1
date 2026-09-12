@@ -1,0 +1,2924 @@
+         FACULTAT DE MATEMÀTIQUES
+       DEPARTAMENT DE MATEMÀTIQUES
+
+
+
+
+Regular orbits of actions of finite
+  soluble groups. Applications
+
+
+
+ TESI DOCTORAL PERTANYENT AL PROGRAMA DE
+         DOCTORAT EN MATEMÀTIQUES
+
+
+       PRESENTADA PER HANGYANG MENG
+  DIRIGIDA PER ADOLFO BALLESTER BOLINCHES
+
+
+                  Juny 2019
+A mi esposa Xiaoying y a mi hijo Zhengze
+Agradecimientos
+
+    Esta tesis es fruto de un trabajo de investigación realizado durante los
+últimos tres años en el Departament de Matemàtiques de la Universitat de
+València bajo la dirección de mi tutor Adolfo Ballester Bolinches. Me gustaría
+agradecer a Adolfo no solo por su consejo, ánimo y ayuda desinteresada, sino
+también por tolerar mi carácter chino y comprender mis problemas con los
+idiomas. En el aspecto académico, aprecio su profesionalismo para brindarme
+la mejor guía posible. Sus conversaciones y experiencias vividas juntos me
+han ayudado a crecer como persona. Estoy muy orgulloso de ser un estudiante
+suyo. No soy Ramanujan, pero él es mi Hardy sin duda.
+    Me gustaría agradecer al profesor Ramón Esteban Romero por su con-
+stante apoyo y ayuda en muchos aspectos del quehacer académico. Acom-
+pañados por Ramón, también han participado en los seminarios organizados
+por Adolfo: Enrique Cosme Llópez, Paz Jiménez Seral, Mari Carmen Pedraza
+Aguilera, Vicente Pérez Calabuig y Francesca Spagnuolo, con los que he po-
+dido compartir nuestra dedicación por las matemáticas. ¡Gracias a todos!
+    Durante la realización de mi trabajo de tesis, he disfrutado de la beca
+201606890006 otorgada por China Scholarship Council, organismo que de-
+pende del Ministerio de Educación del gobierno de la República Popular
+China. Agradezco la gentileza que ha tenido dicho organismo al facilitarme
+esta ayuda económica.
+
+
+
+
+                                      v
+Contents
+
+Agradecimientos                                                              v
+
+Introducción                                                                  1
+
+Introduction                                                                  5
+
+1 Preliminaries                                                            9
+  1.1 Actions and modules . . . . . . . . . . . . . . . . . . . . . . . 9
+  1.2 Soluble S4 -free groups . . . . . . . . . . . . . . . . . . . . . . 12
+  1.3 Normalisers, prefrattini subgroups and injectors . . . . . . . . 16
+
+2 Main theorems                                                              19
+  2.1 Primitive case . . . . . . . . . . . . . . . . . . . . . . . . . . .   19
+  2.2 Regular orbits on power sets . . . . . . . . . . . . . . . . . . .     24
+  2.3 The imprimitive case . . . . . . . . . . . . . . . . . . . . . . .     32
+  2.4 Proof of Theorem A . . . . . . . . . . . . . . . . . . . . . . .       45
+  2.5 Proof of Theorem B . . . . . . . . . . . . . . . . . . . . . . . .     50
+
+3 Application I: On Gluck’s conjecture                                       55
+
+4 Application II: Intersections of subgroups                               59
+  4.1 Background results . . . . . . . . . . . . . . . . . . . . . . . . 60
+  4.2 Main results . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+
+
+
+
+                                     vii
+Introducción
+
+     A lo largo de esta tesis, todos los conjuntos, grupos, cuerpos y
+módulos considerados se suponen finitos.
+     Consideremos un grupo G actuando sobre un conjunto no vacío Ω. Deci-
+mos que la órbita de un w ∈ Ω es regular si CG (w) = {g ∈ G : wg = w} = 1;
+en este caso, dicha órbita consta de |G| elementos. El estudio de órbitas regu-
+lares de grupos lineales, es decir, órbitas regulares de acciones de subgrupos
+de GL(V ), siendo V un espacio vectorial, es importante en el desarrollo de
+muchas ramas de la teoría de grupos, incluendo los grupos resolubles, teo-
+ría de representaciones y grupos de permutaciones. De hecho, la solución de
+algunos problemas importantes en el área como el problema k(GV ) ([22])
+depende de la existencia de este tipo de órbitas. De esta forma, el proble-
+ma de la existencia de órbitas regulares es un área de investigación activa e
+interesante de la teoría de grupos.
+     Espuelas ([7, Theorem 3.1]) demostró que si G es un grupo de orden
+impar y V es un G-módulo fiel y completamente reducible de característica
+impar, entonces G tiene una órbita regular en V ⊕ V . Dolfi y Jabara ([6,
+Theorem 2]) extendieron el resultado de Espuelas al caso en el que los 2-
+subgrupos de Sylow del producto semidirecto [V ]G de V y el grupo resoluble
+G son abelianos, y Yang ([28]) demostró que el mismo resultado es cierto si 3
+no divide el orden del grupo resoluble G. Wolf ([24, Theorem A]) demuestra
+un resultado similar en el case de que G es superresoluble. En el caso de que
+G sea nilpotente, dicho resultado se puede mejorar ([20]).
+     Dolfi ([5, Theorem 1.4]), utilizando técnicas de Seress ([23, Theorem 2.1]),
+demostró que cualquier grupo resoluble G tiene una órbita regular en V ⊕
+V ⊕ V y si (|V |, |G|) = 1 o G es de orden impar, entonces G también tiene
+una órbita regular en V ⊕ V ([5, Theorems 1.1 , 1.5]).
+     Más recientemente, Yang ([29]) extiende algunos de estos resultados para
+subgrupos H de un grupo resoluble G. Demuestra que si V es un G-módulo
+fiel y completamente reducible (posiblemente de característica mixta) y si H
+es nilpotente o 3 no divide el orden de H, entonces H tiene al menos tres
+órbitas regulares en V ⊕ V . Si los 2-subgrupos de Sylow del producto semi-
+
+                                       1
+2                                                            INTRODUCCIÓN
+
+directo [V ]H son abelianos, entonces H tiene al menos dos órbitas regulares
+en V ⊕ V .
+    El primer resultado importante de nuestro trabajo de tesis proporciona
+condiciones suficientes más generales para la existencia de órbitas regulares.
+La mayor parte de los resultados anteriores son consecuencias inmediatas del
+mismo.
+Teorema A. Consideremos un grupo resoluble G, y V un G-módulo fiel y
+completamente reducible (posiblemente de característica mixta). Supongamos
+que H es un subgrupo de G tal que el producto semidirecto [V ]H es S4 -libre.
+Entonces H tiene al menos dos órbitas regulares en V ⊕ V . Además, si H es
+Γ(23 )-libre y SL(2, 3)-libre, entonces H tiene al menos tres órbitas regulares
+en V ⊕ V .
+    Recordamos que si G y X son grupos, decimos que G es X-libre si X no
+se puede obtener como un cociente de un subgrupo de G.
+    Desgraciadamente, la supersolubilidad de un subgrupo H no implica que
+V H es S4 -libre en general. Por lo tanto, el teorema A extiende todos los resul-
+tados mencionados anteriormente, excepto el teorema de Wolf [24, Theorem
+A]. En consecuencia, la pregunta de si el teorema de Wolf se verifica para ca-
+da subgrupo superresoluble de un grupo resoluble completamente reducible
+G de GL(V ) es pertinente e interesante.
+    El segundo resultado importante de nuestro trabajo responde afirmativa-
+mente a dicha pregunta.
+Teorema B. Consideremos un grupo resoluble G y V un G-módulo fiel y
+completamente reducible (posiblemente de característica mixta). Supongamos
+que H es un subgrupo superresoluble de G. Entonces H tiene al menos una
+órbita regular en V ⊕ V .
+   La primera aplicación importante los resultados anteriores se sitúa en el
+contexto de la conjetura de Gluck.
+   Consideremos un grupo G. Como es habitual, denotamos por Irr(G) el
+conjunto de todos los caracteres irreducibles complejos de G y consideramos
+b(G) = máx{χ(1) | χ ∈ Irr(G)}, el mayor grado de un carácter irreducible
+de G.
+   Gluck [9] conjeturó que si G es resoluble, entonces
+
+                              |G : F(G)| ≤ b(G)2 ,
+
+siendo F(G) el subgrupo de Fitting de G.
+    La conjetura de Gluck aún permanece todavía sin resolver y ha sido objeto
+de un muy exhaustivo estudio (ver [2, 6, 7, 24, 28]).
+INTRODUCCIÓN                                                                 3
+
+    Nuestro tercer resultado principal incluye casi todas las aportaciones co-
+nocidas a la conjetura de Gluck como casos particulares, y podría ser muy
+útil para resolver dicha conjetura en el futuro.
+
+Teorema C. Consideremos un grupo resoluble que satisface una de las si-
+guientes condiciones:
+
+  1. G es S4 -libre;
+
+  2. G/ F(G) es S4 -libre y F(G) es de orden impar;
+
+  3. G/ F(G) es S3 -libre;
+
+  4. G/ F(G) es superresoluble.
+
+Entonces la conjetura de Gluck es cierta para G.
+
+    La segunda aplicación de nuestros teoremas sobre órbitas regulares se
+localiza en el estudio de intersecciones de distinguidos subgrupos de grupos
+resolubles.
+    Dolfi [5] demostró que si π es un conjunto de números primos, el mayor
+grupo normal π-subgroup Oπ (G) de un grupo π-soluble G es la intersección
+de tres G-conjugados de un π-subgrupo de Hall H de G.
+    Este resultado extiende los teoremas anteriores de Passman [21] (caso
+|π| = 1) y Zenkov [30] (caso H es nilpotente). Por otra parte, como Mann
+hizo notar en [17], los resultados de Passman implican que el subrupo de
+Fitting de un grupo resoluble G es la intersección de tres G-conjugados de
+un inyector nilpotente H de G.
+    Teniendo en cuenta los resultados anteriores, y dada la importancia de
+los subgrupos de prefrattini y los normalizadores de sistemas en el estudio
+estructural de los grupos resolubles, las siguientes preguntas son naturales e
+interesantes:
+
+Problema 1. [19, Kamornikov, Problem 17.55] ¿Existe una constante po-
+sitiva k tal que el subgrupo Frattini Φ(G) de un grupo resoluble G es la
+intersección de k G-conjugados de cualquier subgrupo prefrattini H de G?
+
+Problema 2. [19, Shemetkov and Vasil’ev, Problem 17.39] ¿Existe una cons-
+tante positiva k tal que el hipercentro de cualquier grupo resoluble G coincide
+con la intersección de k G-conjugados de los normalizadores de de sistemas
+de G? ¿Cuál es el número mínimo con esta propiedad?
+
+   Nuestro último resultado principal proporciona soluciones generales a los
+problemas anteriores.
+4                                                           INTRODUCCIÓN
+
+Teorema D. Consideremos un grupo G y un subgrupo H de G. Supongamos
+que se cumple una de las siguientes afirmaciones.
+
+    1. H es un subgrupo F-prefrattini de G para alguna formación saturada F;
+
+    2. Φ(G) = 1 y H es un normalizador de F de G para alguna formación
+       saturada F;
+
+    3. H es un inyector de F de G para alguna clase de Fitting F.
+
+Entonces existen x, y, z ∈ G tal que H ∩H x ∩H y ∩H z = CoreG (H). Además,
+si G es S4 -libre o F está formada por grupos S3 -libres, existen x, y ∈ G tales
+que H ∩ H x ∩ H y = CoreG (H).
+
+    La tesis se organiza de la siguiente manera. En el capítulo 1, presentamos
+notación, terminología y resultados preliminares. Las demostraciones de los
+teoremas A y B fundamentan el capítulo 2. Nuestras aportaciones a la con-
+jetura de Gluck se presentan en el capítulo 3, incluida la demostración del
+teorema C y sus consecuencias. El estudio de las intersecciones de subgrupos
+de prefrattini y normalizadores de sistemas (teorema D) se presenta en el
+capítulo 4.
+Introduction
+
+    Throughout this thesis, all groups, fields and modules to be
+considered are finite, and we assume this without further comment.
+    Let G be a group and let Ω be a G-set. The element w in Ω is in a regular
+orbit if CG (w) = {g ∈ G : wg = w} = 1, i. e., the orbit of w is as large as
+possible and it has size |G|. The study of regular orbits of actions of linear
+groups, that is, regular orbits of actions of subgroups of GL(V ) on a vector
+space V plays an important role in many branches of group theory, including
+the study of soluble groups, representation theory of finite groups and finite
+permutation groups. In fact, the solution of some well-known problems such
+as the so-called k(GV )-problem ([22]) depends on the existence of such orbits.
+Consequently, the problem of the existence of regular orbits has attracted the
+attention of several authors and it is an active and interesting research area
+in group theory.
+    In order to understand and motivate what is to follow it is convenient to
+use some previous results as a model.
+    Espuelas (see [7, Theorem 3.1]) proved that if G is a group of odd order
+and V is a faithful and completely reducible G-module of odd characteristic,
+then G has a regular orbit on V ⊕ V . Dolfi and Jabara ([6, Theorem 2])
+extended Espuelas’ result to the case where the Sylow 2-subgroups of the
+semidirect product [V ]G of V and the soluble group G are abelian, and Yang
+([28]) proved that the same is true if 3 does not divide the order of the soluble
+group G. A result of Wolf ([24, Theorem A]) shows that a similar result holds
+if G is supersoluble (see also [20] for an improved result when G is nilpotent).
+    Dolfi ([5, Theorem 1.4]), reproving a result of Seress ([23, Theorem 2.1]),
+proved that any soluble group G has a regular orbit on V ⊕ V ⊕ V and if
+either (|V |, |G|) = 1 or G is of odd order, then G has also a regular orbit on
+V ⊕ V ([5, Theorems 1.1, 1.5]).
+    More recently, Yang ([29]) extend some of these results to the case when
+H is a subgroup of the soluble group G by proving that if V is a faithful
+completely reducible G-module (possibly of mixed characteristic) and if either
+H is nilpotent or 3 does not divide the order of H, then H has at least three
+
+                                       5
+6                                                          INTRODUCTION
+
+regular orbits on V ⊕ V . If the Sylow 2-subgroups of the semidirect product
+[V ]H are abelian, then H has at least two regular orbits on V ⊕ V .
+    We prove that almost all previous results are consequences of the following
+surprising theorem.
+Theorem A. Let G be a finite soluble group and V be a finite faithful com-
+pletely reducible G-module (possibly of mixed characteristic). Suppose that
+H is a subgroup of G such that the semidirect product V H is S4 -free. Then
+H has at least two regular orbits on V ⊕ V . Furthermore, if H is Γ(23 )-free
+and SL(2, 3)-free, then H has at least three regular orbits on V ⊕ V .
+    Recall that if G and X are groups, then G is said to be X-free if X cannot
+be obtained as a quotient of a subgroup of G; Γ(23 ) denotes the semilinear
+group of the Galois field of 23 elements.
+    The S4 -free hypothesis in Theorem A is not superfluous (see [6, Exam-
+ple 1]).
+    Note that the supersolubility of H does not imply that V H is S4 -free
+in general. Hence Theorem A covers all the aforementioned results except
+the theorem of Wolf [24, Theorem A]. Thus the answer to the question of
+whether or not Wolf’s theorem holds for every supersoluble subgroup of a
+finite completely reducible soluble subgroup G of GL(V ), even if the super-
+soluble subgroup is not completely reducible, is a natural next objective. Our
+second main result gives a complete answer to this question.
+Theorem B. Let G be a finite soluble group and V be a finite faithful com-
+pletely reducible G-module (possibly of mixed characteristic). Suppose that
+H is a supersoluble subgroup of G. Then H has at least one regular orbit on
+V ⊕V.
+    Our results have found an application to Gluck’s conjecture about large
+character degrees. Let G be a finite group and let Irr(G) denote the set of
+all irreducible complex characters of G and write b(G) = max{χ(1) | χ ∈
+Irr(G)}, so that b(G) is the largest irreducible character degree of G.
+    Gluck [9] conjectured that if G is soluble, then
+                             |G : F(G)| ≤ b(G)2 ,
+where F(G) is the Fitting subgroup of G. Gluck’s conjecture is still open and
+has been studied extensively (see [2, 6, 7, 24, 28]). Our third main result is
+a significant step to the solution of Gluck’s conjecture subsuming the earlier
+ones, and it could be very useful to solve Gluck’s conjecture in the future.
+Theorem C. Let G be a soluble group satisfying one of the following condi-
+tions:
+INTRODUCTION                                                                  7
+
+  1. G is S4 -free;
+
+  2. G/ F(G) is S4 -free and F(G) is of odd order;
+
+  3. G/ F(G) is S3 -free;
+
+  4. G/ F(G) is supersoluble.
+
+   Then Gluck’s conjecture is true for G.
+
+    Another interesting problem where the regular orbits play an important
+role is the study of intersections of canonical conjugate subgroups of finite
+soluble groups.
+    Dolfi [5] proved that if π is a set of primes, the largest normal π-subgroup
+Oπ (G) of a π-soluble group G is the intersection of three G-conjugates of
+a given Hall π-subgroup H of G. This result extends earlier theorems of
+Passman [21] (case |π| = 1) and Zenkov [30] (case H nilpotent). On the
+other hand, as Mann pointed out in [17], the results of Passman imply that
+the Fitting subgroup F(G) of a soluble group G is the intersection of three
+G-conjugates of a nilpotent injector H of G.
+    Due to the above results and the important role played by the system nor-
+malisers and prefrattini subgroups in the structural study of soluble groups,
+the following questions turn out to be natural and interesting:
+
+Problem 1. [19, Kamornikov, Problem 17.55] Does there exist an absolute
+constant k such that the Frattini subgroup Φ(G) of a soluble group G is the
+intersection of k G-conjugates of any prefrattini subgroup H of G?
+
+Problem 2. [19, Shemetkov and Vasil’ev, Problem 17.39] Is there a positive
+integer k such that the hypercentre of any finite soluble group coincides with
+the intersection of k system normalisers of that group? What is the least
+number with this property?
+
+    Our fourth main result provides general answers to the above two ques-
+tions.
+
+Theorem D. Let G be a finite soluble group and let H be a subgroup of G.
+Assume that one of the following statements holds.
+
+  1. H is an F-prefrattini subgroup of G for some saturated formation F;
+
+  2. Φ(G) = 1 and H is a F-normaliser of G for some saturated forma-
+     tion F;
+
+  3. H is an F-injector of G for some Fitting class F.
+8                                                          INTRODUCTION
+
+    Then there exists x, y, z ∈ G such that H ∩H x ∩H y ∩H z = CoreG (H), the
+largest normal subgroup of G contained in H. Furthermore, if G is S4 -free or
+F is composed of S3 -free groups, there exists x, y ∈ G such that H ∩H x ∩H y =
+CoreG (H).
+
+   Chapter 1 contains the basic material we need about finite groups and
+their representations. In Chapter 2 we set the scence, giving the proofs of
+Theorems A and B. Chapter 3 is about Gluck’s Conjecture and includes the
+proof of Theorem C. The study of intersections of some canonical conjugate
+subgroups and the proof of Theorem D are the main contents of Chapter 4.
+Chapter 1
+
+Preliminaries
+
+    In this chapter, we collect some definitions and basic results that are
+needed to prove our main theorems. For further details, background and
+undefined notation, we refer the reader to the books [1, 3, 11, 13, 12].
+
+
+
+1.1     Actions and modules
+    We recall again that if a group G is acting on a non-empty set Ω, an
+element w of Ω is in a regular orbit if CG (w) = {g ∈ G : wg = w} = 1, i.e.,
+the orbit of w is as large as possible and it has size |G|.
+    Let G be a group and Ω be a transitive G-set. Recall a subset ∆ ⊆ Ω is
+said to be a block if ∆g = ∆ or ∆g ∩ ∆ = ∅ holds for every g ∈ G. Clearly
+every transitive G-set Ω has a block ∆ such that 1 ≤ |∆| < |Ω| if |Ω| ≥ 2. If
+we take such block ∆ of the maximal size, then StabG (∆) is maximal in G.
+(see [1, Definition 1.1.1 and Proposition 1.1.2.]).
+
+    Let F be a field and V be a vector space over a field F. Let G be a group
+and φ a representation of G on V . Then we make V into a F G-module by
+extending linearly to F G the following G-action: v g = v φ(g) , where g ∈ G
+and v ∈ V . In this case, we say that V is a G-module over F, or G-module
+if F is understood.
+    We say that V is a G-module of mixed characteristic if V = V1 ⊕ · · · ⊕ Vn ,
+where for each i there exists a field Fi such that Vi is a G-module over Fi .
+    A G-module V is called irreducible if V 6= 0 and 0 and V are the only
+G-submodules of V ; V is said completely reducible if it is the sum of some
+irreducible modules. In this case, V is actually a direct sum of irreducible
+modules.
+
+                                       9
+10                                            CHAPTER 1. PRELIMINARIES
+
+    The following lemma is elementary and it will be used without further
+reference.
+Lemma 1. Suppose that a group G acts on a non-empty set Ω. Then:
+               S
+  1. If |Ω| − | 16=g∈G CΩ (g)| > k|G| for some non-negative integer k, then
+     G has at least k + 1 regular orbits on Ω. In particular, if k = 0, then
+     G has at least one regular orbit on Ω.
+
+     2. If G has k regular orbits on Ω, then a subgroup H of G has at least
+        |G : H|k regular orbits on Ω.
+
+   Let S be a permutation group on a set Ω. If K is a group, we denote by
+K o S the wreath product of K with S with respect to the action of S on Ω,
+that is,
+                   K o S = {(f, σ) | f : Ω → K, σ ∈ S}
+with the product (f1 , σ1 )(f2 , σ2 ) = (g, σ1 σ2 ), where g(w) = f1 (w)f2 (wσ1 ) for
+all w ∈ Ω.
+    If Y is a subgroup of K, we set Y \ = {(f, 1) ∈ K o S | f (w) ∈ Y for
+all w ∈ Ω}. It is clear that Y \ is normalised by S and Y \ S ∼         = Y o S. In
+particular, B = K \ is called the base group of K o S.
+    If W is a K-module, then we can consider G o S, where G = [W ]K is the
+semidirect product of W with K. In this case, W \ is a K o S-module with
+                                         −1     σ −1
+the action given by g (f,σ) (w) = g(wσ )f (w ) .
+    If H1 and H2 are permutation groups on the sets X1 and X2 respectively,
+then H1 o H2 = {(f, σ) | f : X2 → H1 ; σ ∈ H2 } is a permutation group on
+X1 × X2 with the action (i, j)(f,σ) = (if (j) , j σ ) (see [11, Satz I.15.3].)
+
+    We are interested here in regular orbits of a group G on completely re-
+ducible G-modules V over finite fields. Note that if K is a subfield of the field
+F and V is a completely reducible G-module over F, then V is a completely
+reducible G-module over K. Therefore, in looking for regular orbits of G on
+V , we can assume without loss of generality that F is a prime field.
+
+     An irreducible G-module V over F is called imprimitive if there is non-
+trivial decomposition of V into a direct sum of subspaces V = V1 ⊕ · · · ⊕ Vn
+(n > 1) such that the set {V1 , . . . Vn } is permuted transitively by G; otherwise
+it is called primitive. A linear group G ≤ GL(d, pk ), p a prime, is said to be
+primitive if the natural G-module is primitive.
+
+   Let G be a group and let V be a faithful G-module. Assume that V =
+V1 ⊕ ... ⊕ Vm (m ≥ 2) is a decomposition of V into a direct sum of subspaces
+1.1. ACTIONS AND MODULES                                                        11
+
+{V1 , ..., Vm } which are permuted transitively by G. Write L = NG (V1 ). Then
+|G : L| = m. Let g1 = 1, ..., gm be a right transversal of L in G. If Ω =
+{1, ..., m}, there exists a homomorphism σ : G → SΩ such that Lgi g = Lgiσ(g)
+for any g ∈ G. Let K = L/CG (V1 ) and S = σ(G). Consider the map:
+
+                          τ : G → K o S; g 7→ (hg , σg ),
+
+where hg ∈ K Ω is defined by hg (i) = gi ggi−1
+                                            σ(g) CG (V1 ) for all i ∈ Ω, and
+
+σg = σ(g) for all g ∈ G. Write Gb = K o S. Then V1Ω = {f | f : Ω → V1 a
+map} is a G-module.
+          b           Moreover:
+
+Lemma 2.        1. τ is a monomorphism.
+
+  2. The actions of G on V and τ (G) on V1Ω are equivalent.
+     b = K \ τ (G).
+  3. G
+
+  4. If W1 = {f ∈ V1Ω | f (i) = 0, ∀i 6= 1}, then Nτ (G) (W1 )/ Cτ (G) (W1 ) ∼
+                                                                             = K.
+
+Proof.     1. It is straightforward to verify that τ is a homomorphism. Let
+      g ∈ G such that τ (g) = (hg , σg ) = 1. Then gi = giσ(g) . Since hg (i) = 1
+                                            P g)gi for some a(i, g) ∈ CG (V1 ).
+      for each i, it follows that gi g = a(i,
+      Let v ∈ V andPassume that v =
+      P                                   P i wi gi , where wi ∈ V1 , and vg =
+         i wi (gi g) =   i wi a(i, g)gi =   i wi gi = v. This means that g ∈
+      CG (V ) = 1.
+
+  2. Let v = i wi gi ∈ V , where wi ∈ V1 . If we set ϕ : V −→ V1Ω , v 7−→ w,
+                 P
+      where w(i) = wi for each i ∈ Ω, it follows that ϕ is an isomorphism
+      between the vector spaces V and V1Ω such that, for every g ∈ G,
+                                       !                                  !
+                           X                  X
+              ϕ(vg) = ϕ         wi gi g = ϕ        wi (gi ggi−1
+                                                             σ(g) )giσ(g)   = w0 ,
+                           i                   i
+
+
+      where w0 (i) = wiσ(g)−1 (giσ(g)−1 ggi−1 ). Bearing in mind the natural action
+         b on V Ω , we have that ϕ(vg) = ϕ(v)τ (g) for all v ∈ V and g ∈ G.
+      of G      1
+
+                   b f ∈ K \ , α ∈ S. Since S = σ(G), there exists g ∈ G such
+   3. Let (f, α) ∈ G,
+      that σg = α. Then (f, α) = (f h−1                   \
+                                      g , 1)(hg , σg ) ∈ K τ (G), as desired.
+
+   4. This follows directly from 2.
+
+    Assume that V is a G-module as above. It is clear that if V = V1 ⊕· · ·⊕Vm
+is a minimal decomposition of V into a direct sum of subspaces which are
+12                                         CHAPTER 1. PRELIMINARIES
+
+permuted transitively by G, it follows that L is a maximal subgroup of G
+and so S is a non-trivial primitive permutation group on Ω.
+    If V is a faithful imprimitive G-module, then we may assume further that
+V1 is an irreducible L-module. Therefore if we are interested in regular orbits
+of the action of G on V , we may assume, by Lemma 2, that G is a subgroup
+of a wreath product G    b = K o S, where K is a group, W is a faithful K-
+module and S is a non-trivial primitive permutation group on a set Ω such
+that G b = K \ G and V = W Ω . In this context, a result of Wolf [25] that
+provides a formula to count the exact number of regular orbits G   b on W Ω is
+extremely useful.
+    Let Πl (Ω, S) denote the set of all partitions of length l of Ω having the
+property that the subgroup {s ∈ S | ∆si = ∆i for all i} of S is trivial. Let
+k be the number of regular orbits of K on W . Then the number of regular
+orbits of Gb on W Ω is
+                             1 X
+                                      P (k, l)|Πl (Ω, S)|,
+                            |S| 2≤l≤m
+
+where P (k, l) = k!/(k − l)! if k ≥ l and P (k, l) = 0 otherwise.
+
+     The following elementary result is also useful.
+Lemma 3. Let G be a group and V be a faithful G-module such that V =
+W1 ⊕ ... ⊕ Ws , where Wi is G-module, 1 Q
+                                        ≤ i ≤ s. If G/ CG (Wi ) has ti regular
+orbits on Wi ⊕ Wi , then G has at least si=1 ti regular orbits on V ⊕ V .
+    Let V be the Galois field GF(pn ) for some prime p and integer n. Then V
+is also a vector space over GF(p) of dimension n. Denote semi-linear group
+of V ,
+
+     Γ(V )(or Γ(q n )) = {x → axσ |a ∈ GF(pn )∗ , σ ∈ Gal(GF(pn )/ GF(p))}.
+
+
+1.2      Soluble S4-free groups
+    Let X be a group and recall that a group G is said to be X-free if X
+cannot be obtained as a quotient of a subgroup of G.
+    In this section, we show some useful characterizations of S3 -free and S4 -
+free groups, and introduce some known notations, definitions and results
+about classes of groups. Recall that a group G is said to be p-nilpotent, p a
+prime, if G has a normal Hall p0 -subgroup.
+Lemma 4. Let G be a soluble group and let H be a Hall {2, 3}-subgroup of
+G. Then G is S3 -free if and only if H is 3-nilpotent.
+1.2. SOLUBLE S4 -FREE GROUPS                                                  13
+
+Proof. If H is 3-nilpotent, then every {2, 3}-subgroup of any section of G
+is 3-nilpotent. Consequently, G is S3 -free. Conversely, assume, arguing
+by contradiction, that G is S3 -free but H is not 3-nilpotent. Then H has
+a non-3-nilpotent subgroup K of minimal order. Then every proper sub-
+group of K is 3-nilpotent. Applying [11, Satz IV. 5.4], K has a normal
+Sylow 3-subgroup P of exponent 3 and a Sylow 2-group Q of K is cyclic.
+Moreover, Φ(K) = Φ(Q) × Φ(P ), P/Φ(P ) ∼   = P Φ(K)/Φ(K) and, by [3, The-
+orem VII.6.18], QΦ(K)/Φ(K) is a cyclic group of order 2 acting faithfully
+and irreducibly on P/Φ(P ). It follows from [3, Theorem B.9.8] that P/Φ(P )
+is cyclic of order 3. Therefore K/Φ(K) ∼= S3 . This contradiction means that
+H is 3-nilpotent, as desired.
+Corollary 5. Let G be a soluble S3 -free group such that O30 (G) = 1. Then
+G is of odd order.
+Proof. Let H be a Hall {2, 3}-subgroup of G and let X be a Hall 30 -subgroup
+of G. Then H ∩ X is a Sylow 2-subgroup of G and G = HX by [3,
+Lemma A.1.6]. Hence H ∩ X E H by Lemma 4. Therefore
+
+                 (H ∩ X)G = (H ∩ X)HX = (H ∩ X)X ≤ X.
+
+This implies that (H ∩X)G is a 30 -subgroup of G and so H ∩X ≤ (H ∩X)G ≤
+O30 (G) = 1. Thus G is of odd order.
+Lemma 6. Let G be a soluble group with O20 (G) = 1. Then G is S3 -free if
+and only if G is S4 -free.
+Proof. If G is S3 -free, then clearly G is S4 -free. Now assume that the converse
+is false and derive a contradiction. Let G be a counterexample of minimal
+order. Then G is S4 -free but not S3 -free.
+    Denote X = O2 (G). Then X = F(G) since O20 (G) = 1 and, by [3,
+Theorem A.10.6], CG (X) ≤ X. Hence, for every subgroup S of G such that
+X ≤ S, we have O20 (S) = 1 and so S satisfies the hypotheses of the lemma.
+The minimal choice of G implies that S is S3 -free provided that S is a proper
+subgroup of G. In particular, by Lemma 4, G is a {2, 3}-group and every
+proper subgroup of G/X is 3-nilpotent. If G/X were 3-nilpotent, then G
+would be 3-nilpotent and so S3 -free by Lemma 4. This would contradict our
+assumption. Consequently, G/X is a minimal non-3-nilpotent group. Denote
+with bars the images in G = G/X. Then, by [11, Satz IV. 5.4], G = P Q has a
+normal Sylow 3-subgroup P of exponent 3 and a cyclic Sylow 2-subgroup Q.
+Moreover, since Φ(Q) ≤ O2 (G) = 1, we have Φ(G) = Φ(Q) × Φ(P ) = Φ(P )
+and Q is of order 2. As in Lemma 4, P /Φ(P ) is of order 3. Thus P is of
+order 3 and Φ(P ) = 1 since the exponent of P is 3. Therefore G/X ∼       = S3 .
+14                                          CHAPTER 1. PRELIMINARIES
+
+    Note that O20 (G/Φ(G)) = 1 and so G/Φ(G) satisfies the hypotheses of
+the lemma. Hence, if Φ(G) 6= 1, then G/Φ(G) is S3 -free and so it is 3-
+nilpotent by Lemma 4. Since Φ(G) is a 2-group, it follows that G is 3-
+nilpotent and so it is S3 -free by Lemma 4. This contradiction yields Φ(G) =
+1. By [3, Theorem A.10.6], X = Soc(G) is an abelian subgroup of G and
+there exists a subgroup M of G such that G = XM and X ∩ M = 1.
+Assume that X1 and X2 are two different minimal normal subgroups of G.
+Let Ti /Xi = O20 (G/Xi ). Since G/Ti is 3-nilpotent by the minimal choice
+of G, and T1 ∩ T2 ≤ O20 (G) = 1, it follows that G is 3-nilpotent. This
+contradicts our assumption. Consequently, X can be regarded as a faithful
+and irreducible M -module over the field of 2-elements. Recall that M ∼    =
+      ∼                                      ∼
+G/X = S3 , in this case, |X| = 4 and G = S4 . This final contradiction
+completes the proof of the lemma.
+Corollary 7. Let G be a soluble group and let V be a faithful G-module over
+a field F of characteristic 2. Then the semidirect product V G is S4 -free if
+and only if G is S3 -free.
+Proof. Observe that O20 (V G) ≤ CG (V ) = 1. Thus if V G is S4 -free, then G
+is S3 -free by Lemma 6. Assume that G is S3 -free and there exist subgroups
+A C B ≤ V G such that B/A ∼     = S4 . Then V B/V A ∼  = B/A(B ∩ V ) has a
+section isomorphic to S3 since A(B ∩ V )/A ≤ O2 (B/A). This means that
+G∼ = GV /V is not S3 -free. This contradiction implies that V G is S4 -free, as
+desired.
+Remark 8. The above lemma does not hold in general for non-soluble
+groups. For example, G = A5 has a subgroup h(123)ih(12)(45)i ∼
+                                                             = S3 . But G
+is S4 -free because clearly |S4 | = 24 - |G| = 60.
+     Denote by lp (G) the p-length of a group G for some prime p.
+Lemma 9. Let G be a soluble group and H is a Hall {2, 3}-subgroup of G.
+Then G is S4 -free if and only if l2 (H) ≤ 1.
+Proof. Firstly assume that G is S4 -free. Then G/ O20 (G) is S4 -free, it follows
+from Lemma 6 that G/ O20 (G) is S3 -free. By Lemma 4, the Hall {2, 3}-
+subgroup H O20 (G)/ O20 (G) of G/ O20 (G) is 3-nilpotent. Observe that H ∩
+O20 (G) ≤ O20 (H), thus H/ O20 (H) is 3-nilpotent and clearly l2 (H) ≤ 1.
+     Now assume that l2 (H) ≤ 1. Assume that G has a section isomorphic to
+S4 . Then A/B ∼  = S4 for some B C A ≤ G. Without loss of generality, we may
+assume that A ∩ H is a Hall {2, 3}-subgroup of A. Then (A ∩ H)B = A since
+|A : B| is {2, 3}-number. Then A/B = (A∩H)B/B ∼     = (A∩H)/(B ∩H) ∼        = S4 .
+But l2 (A ∩ H/B ∩ H) ≤ l2 (H) ≤ 1, which is a contradiction. Thus we have
+G is S4 -free.
+1.2. SOLUBLE S4 -FREE GROUPS                                                   15
+
+    Recall that a formation is a class of groups F which is closed under taking
+epimorphic images and subdirect products. Therefore every group G has an
+smallest normal subgroup with quotient in F. This subgroup is called the
+F-residual of G and denoted by GF . We say that F is saturated if it is closed
+under Frattini extensions.
+    A class of groups F is said to be a Fitting class if F is a class under taking
+subnormal subgroups and normal products. Therefore every group G has a
+largest normal F-subgroup called F-radical and denoted by GF .
+
+   Let Σ3 and Σ4 be the classes of soluble S3 -free groups and S4 -free groups
+respectively. It is clear that they are closed under taking subgroups and
+epimorphic images. In fact we have.
+
+Lemma 10. Let Σ be the class of groups Σ3 or Σ4 and G a group. Then:
+
+  1. If G/ O20 (G) ∈ Σ4 , then G ∈ Σ4 .
+
+  2. If G/ O30 (G) ∈ Σ3 , then G ∈ Σ3 .
+
+  3. Suppose that L, K E G such that K ≤ Φ(G) and L/K ∈ Σ. Then
+     L ∈ Σ.
+
+  4. Σ is a saturated Fitting formation which is closed under taking sub-
+     groups.
+
+Proof.    1. Assume that G/ O20 (G) ∈ Σ4 . Let H be a Hall {2, 3}-subgroup
+      of G. Then H O20 (G)/ O20 (G) is a Hall {2, 3}-subgroup of G/ O20 (G).
+      By Lemma 9, we have l2 (H O20 (G)/ O20 (G)) ≤ 1. Observe that O20 (G)∩
+      H ≤ O20 (H) and so l2 (H/ O20 (H)) ≤ 1. Thus l2 (H) ≤ 1, which implies
+      that G ∈ Σ4 by Lemma 9.
+
+   2. Let H be a Hall {2, 3}-subgroup of G. Then H O30 (G)/ O30 (G) is
+      a Hall {2, 3}-subgroup of G/ O30 (G). Then H O30 (G)/ O30 (G)) is 3-
+      nilpotent by Lemma 4, and so H/ O30 (H)) is 3-nilpotent. Thus H is
+      3-nilpotent, which implies that G ∈ Σ3 by Lemma 4.
+
+   3. Suppose that L, K E G such that K ≤ Φ(G) and L/K ∈ Σ but L ∈     / Σ3
+      (resp. Σ4 ). Choose such counterexample (G, L, K) such that |G|+|L|+
+      |K| is minimal. Let H be a Hall {2, 3}-subgroup of L.
+      Write X = O30 (L) (resp. O20 (L)) and clearly X E G. Denote with
+      bars the images in G = G/X. We have that (G, L, K) satisfies the
+      hypotheses of the lemma. Hence, if X 6= 1, it follows that L ∈ Σ3
+16                                           CHAPTER 1. PRELIMINARIES
+
+        (resp. Σ4 ). By Statement 1 (resp. Statement 2), it follows that L ∈ Σ3
+        (resp. Σ4 ), which is a contradiction. Consequently, X = 1.
+        Since K is nilpotent, we have that K is a 3-group (resp. 2-group). Let
+        T /K = O30 (L/K) (resp. O20 (L/K)). Then T EG, and T = KT1 , where
+        T1 is a Hall 30 -subgroup (resp. Hall 20 -subgroup) of T . By Frattini
+        argument, we have that G = NG (T1 )T = NG (T1 )K = NG (T1 ) since
+        K ≤ Φ(G). Thus T1 E G and so T1 ≤ X = 1. Hence T = K. By
+        Corollary 5 (resp. Lemma 6), L/K is of odd order (resp. L/K ∈ Σ3 ).
+        If L/K is of odd order and K is 3-group, we have that L is of odd
+        order and so it is S3 -free. Assume that L/K ∈ Σ3 and K is a 2-group.
+        Let H be the Hall {2, 3}-subgroup of L. Then H/K is the Hall {2, 3}-
+        subgroup of L/K. It follows from Lemma 4 that H/K is 3-nilpotent.
+        As K is a 2-group, H is 3-nilpotent. By Lemma 4, L ∈ Σ3 ⊆ Σ4 . This
+        final contradiction proves Statement 3.
+     4. We prove first that Σ is closed under taking normal products. Assume
+        that G = N1 N2 is the product of its normal subgroups N1 and N2 .
+        Suppose that N1 and N2 belong to Σ. Let H be a Hall {2, 3}-subgroup
+        of N . Then Hi = Ni ∩ H is a Hall {2, 3}-subgroup of Ni , i = 1, 2, and
+        H = H1 H2 is the normal product of H1 and H2 . Assume that Σ = Σ4 .
+        By Lemma 9, l2 (Hi ) ≤ 1, i = 1, 2. Applying [11, Hilfssatz VI.6.4(c)], it
+        follows that l2 (H) ≤ max{l2 (H1 ), l2 (H2 )} ≤ 1. Therefore G ∈ Σ4 .
+        If Σ = Σ3 , then H1 and H2 are 3-nilpotent by Lemma 4. Then H is
+        3-nilpotent too, and so G is a Σ3 -group by Lemma 4.
+        This proves that Σ is a subgroup closed Fitting class. In particular, Σ
+        is closed under direct products. Consequently, Σ is a formation as well.
+        Applying Statement 3, it follows that Σ is saturated.
+
+
+
+1.3       Normalisers, prefrattini subgroups and in-
+          jectors
+    Let F be a formation. A maximal subgroup M of a group G containing
+ F
+G is called F-normal in G; otherwise, M is said to be F-abnormal.
+    Assume that F is saturated. Then, by a well-known theorem of Gaschütz-
+Lubeseder-Schmid [3, Theorem IV.4.6], there exists a collection of formations
+F(p) ⊆ F, one for each prime p, such that F coincides with the class of all
+groups G such that if H/K is a chief factor of G, then G/CG (H/K) ∈ F(p)
+for all primes p dividing |H/K|. In this case, we say that H/K is F-central
+1.3. NORMALISERS, PREFRATTINI SUBGROUPS AND INJECTORS17
+
+in G and F is locally defined by the F(p). H/K is called F-eccentric if it is
+not F-central.
+    Note that a chief factor H/K supplemented by a maximal subgroup M
+is F-central in G if and only if M is F-normal in G.
+    Every group G has a largest normal subgroup such that every chief factor
+of G below it is F-central in G. This subgroup is called the F-hypercentre of
+G and it is denoted by ZF (G) (see [3, Section IV.6].)
+    Every soluble group G has a conjugacy class of subgroups, called F-
+injectors, which are defined to be those subgroups I of G such that if S
+is a subnormal subgroup of G, then I ∩ S is F-maximal subgroup of S ([3,
+Theorem IX.1.4]). Note that, in this case, CoreG (I) = GF .
+   In the following, we shall give a review of the definitions of F-normaliser
+and F-prefrattini subgroup of a soluble group and their cores.
+    Let Σ be a Hall system of the soluble group G (see [3, Chapter I, Sec-
+tion 1.4]). Let S p be the p-complement of G contained in Σ, and denote by
+W p (G) the intersection of all F-abnormal maximal subgroups of G contain-
+ing S p (W p (G) = G, if the set of all F-abnormal
+                                                 T maximal subgroups of G
+containing S p is empty). Then W (G, Σ, F) = p∈π(G) W p (G) is called the
+F-prefrattini subgroup of G associated to Σ. The prefrattini subgroups of G
+form a characteristic class of G-conjugate subgroups (see [1, Section 4.3] for
+an exhaustive study of prefrattini subgroups).
+    The set all F-prefrattini subgroups of a group G is denoted by Pref F (G).
+We recall some known properties about F-prefrattini subgroups. Recall that
+a subgroup X of a group G covers the section A/B of G if A ≤ XB and
+avoids A/B if X ∩ A ≤ B.
+Lemma 11 ([1, 10]). Let G be a soluble group and N a normal subgroup
+of G.
+  1. Pref F (G) is a G-conjugacy class of subgroups of G.
+  2. Pref F (G/N ) = {HN/N : H ∈ Pref F (G)}.
+  3. If H ∈ Pref F (G), then H avoids every complemented F-eccentric chief
+     factor of G and covers the rest.
+    According to [1, Proposition 4.3.17], the intersection LF (G) of all F-
+abnormal maximal subgroups of a soluble group G is the core of every F-
+prefrattini subgroup of G and LF (G)/Φ(G) = ZF (G/Φ(G)) for every group
+G.
+    The elementary properties of the subgroup LF (G) are collected in the
+following.
+18                                         CHAPTER 1. PRELIMINARIES
+
+Lemma 12. If N is a normal subgroup of a group G, then the following
+conditions hold:
+
+     1. LF (G)N/N ≤ LF (G/N ).
+
+     2. If N ≤ LF (G), then LF (G/N ) = LF (G)/N .
+
+     3. LF (G/ LF (G)) = 1.
+
+    Let F(p) be a particular family of formations locally defining F and such
+that F(p) ⊆ F for all primes p. Let π = {p : F(p) 6= ∅}. For an arbitrary
+soluble group G and a Hall system Σ of G, choose for any prime p, the p-
+complement K p = S p ∩ GF(p) of the F(p)-residualTGF(p) of G, where S p is
+the p-complement of G in Σ. Then DF (Σ) = Gπ ∩ ( p∈π NG (K p )), where Gπ
+is the Hall π-subgroup of G in Σ, is the F-normaliser of G associated to Σ.
+The F-normalisers of G are a characteristic class of G-conjugate subgroups.
+There were introduced by Carter and Hawkes and coincide with the classical
+system normalisers of Hall when F is the formation of all nilpotent groups
+(see [3, Sections V.2 and V.3] for details).
+    According to [1, Proposition 4.2.6], if D is an F-normaliser of G, then
+CoreG (D) = ZF (G).
+Chapter 2
+
+Main theorems
+
+2.1     Primitive case
+    In attaining our objective, which is to prove Theorem A and Theorem B
+for primitive modules, the following lemmas are crucial. The first one con-
+cerns primitive soluble linear groups over a field of characteristic two.
+Lemma 13. Let G be a soluble group and V be a faithful primitive G-module
+over a field F of characteristic 2. Assume that V G is S4 -free, then G has at
+least three regular orbits on V ⊕ V unless |V | = 23 and G = Γ(V ). In this
+case, G has exactly two regular orbits on V ⊕ V .
+Proof. Let A be an abelian normal subgroup of G. Since V is a primitive
+G-module and A is normal in G, then VA is a faithful and homogeneous A-
+module by Clifford’s Theorem (see [18, Theorem 0.1]). By [18, Lemma 0.5],
+A is cyclic. Then [18, Corollary 1.10] applies. Let F = F(G) be the Fitting
+subgroup of G. Then F is of odd order since V is faithful for F , and it is a
+central product F = ET of two normal subgroups E and T of G such that
+Z = E ∩ T = Soc(Z(F )) and 1 6= T = CG (E) is cyclic. Hence Z = Z(E).
+Moreover, the Sylow subgroups of E are cyclic of prime order or extraspecial
+of prime exponent. Set e2 = |F/Z|. Then 2 does not divide e.
+    Applying [29, Theorem 2.3], we have that G has at least four regular
+orbits on V ⊕ V unless e = 1, 3, 9.
+    Assume that e = 1. Then F is abelian. By [18, Corollary 2.3], G is
+isomorphic to a subgroup of Γ(V ) = Γ(2n ). If n > 3 and 0 6= v ∈ V , then
+CG (v) has at least three regular orbits on V by [24, Proposition 9]. Hence G
+has at least three regular orbits on V ⊕ V . If either n = 1 or G is of prime
+order, then G has at least three regular orbits on V ⊕ V . Suppose that 1 6= G
+is not of prime order. Then n = 3 since G is S3 -free and Γ(22 ) ∼
+                                                                 = S3 . In this
+         ∼     3
+case, G = Γ(2 ) and so G has just two regular orbits on V ⊕ V .
+
+                                      19
+20                                            CHAPTER 2. MAIN THEOREMS
+
+    Suppose that either e = 3 or e = 9. Then every Hall 30 -subgroup of E is
+contained in Z. Therefore E/Z = LZ/Z, where L is the Sylow 3-subgroup
+of E. Note that L is extra-especial since F is non-abelian.
+    Let A = CG (T ) ⊆ CG (Z). By [18, Corollary 1.10], E/Z is a completely
+reducible G/F -module and a faithful A/F -module over GF(3), the finite field
+of 3-elements. Hence O3 (A/F ) = 1. Let Q be a Sylow 2-subgroup of A. By
+Lemmas 4 and 6, every Hall {2, 3}-subgroup of G is 3-nilpotent. In particular,
+QE/Z = E/Z o QZ/Z is nilpotent. Since QF/F ≤ A/F acts faithfully on
+E/Z, we have that Q ≤ F . Consequently, Q = 1 and A is a 20 -group.
+Furthermore, A preserves the non-degenerated symplectic form with respect
+to which E/Z is a symplectic space over GF(3) (see [11, Satz III.13.7]).
+Therefore A/F is either isomorphic to a completely reducible subgroup of
+Sp(2, 3) ∼= SL(2, 3) (e = 3) or a subgroup of Sp(4, 3) (e = 9). Applying [5,
+Lemma 3.2], we conclude that |A/F | divides 3 or 5. In particular, |A : F | ≤ 5.
+    Let W be an irreducible submodule of VT . Then VT = sW for some
+positive integer s and |G : A| divides dim W by [11, Hilfssatz II.3.11]. Since
+W is faithful for T and T is cyclic, we have that |W | = 2a , where a is the
+smallest positive integer such that |T | | 2a − 1 (see [18, Example 2.7]).
+    Applying [18, Corollary 2.6], we have that dim V is divisible by e · dim W .
+Therefore, |V | = 2eab for some b > 0.
+    Suppose that a ≤ 3. Then a = 2 since 3 | |T | and T is of order 3. If
+|G/A| = 2, there exists an element g ∈ G \ A of order 2 such that G = Ahgi
+since A is 20 -group. Then T hgi ∼
+                                 = S3 , contrary to assumption. Hence G = A
+       0
+is a 2 -group. By [4, Theorem 2.2], we have G has a regular orbit on V .
+Hence G has at least |V | ≥ |W | = 4 regular orbits on V ⊕ V .
+    Assume that a ≥ 4. We next prove that F has at least a regular orbit on
+V . It is enough to prove that
+                                     [
+                              |V \         CV (S)| > 0,
+                                     S∈P
+
+
+where P be the set of all subgroups of prime order of F .
+    Let S ∈ P. Note that T acts fixed point freely on V so that CV (S) = {0}
+                                                          1
+if S ≤ T . If S is not contained in T , then |CV (S)| ≤ 2 2 aeb by [27, Lemma 2.4].
+Note that every subgroup in P not contained in T has order 3 and the number
+                                                                           3
+of such subgroups is 12 if e = 3 and 120 if e = 9. Since 23ab − 12 · 2 2 ab > 0
+                    9
+and 29ab − 120 · 2 2 ab > 0 if a ≥ 4 and b ≥ 1, it follows that F has a regular
+orbit on V . Hence CG (v) ∩ F = 1 for some v ∈ V .
+    Let C = CG (v). We may assume that C 6= 1. Note that |C| ≤ |G/F | =
+|G : A||A : F | ≤ 5a. Since |(C ∩ A)| = |(C ∩ A)F/F | ≤ |A/F | and |A/F | is
+of prime order, we can apply [27, Lemma 2.4] to conclude that there exists
+2.1. PRIMITIVE CASE                                                          21
+
+                                                                       3
+at most one subgroup S contained in C ∩ A such that | CV (S)| ≤ 2 4 aeb . For
+                                            1
+a subgroup S ⊆ C \ A, we have | CV (S)| ≤ 2 2 aeb .
+                                                        1                  3
+   Since a ≥ 4, eb ≥ 3, we have that 2aeb−1 > (5a − 1)2 2 aeb , 2aeb−2 > 2 4 aeb
+and 2aeb−2 > 10a. Therefore
+                                          1       3
+                     |V | − (|C| − 1)2 2 aeb − 2 4 aeb > 2|C|,
+
+and then                          [
+                          |V \            CV (g)| > 2|C|.
+                                 16=g∈C
+
+   Consequently, C = CG (v) has at least three regular orbits on V . This
+completes the proof of the lemma.
+
+Lemma 14. Let G be a soluble primitive group of GL(d, p), p a prime num-
+ber, and let V be the natural G-module. Assume that H is a subgroup of G
+such that the semidirect product V H is S4 -free. Then H has at least three
+regular orbits on V ⊕ V unless one of the following two cases occurs:
+
+  1. d = 2, p = 3 and H = SL(2, 3).
+
+  2. d = 3, p = 2 and H = Γ(V ) ∼
+                                = Γ(23 ).
+
+In both exceptional cases, H has just two regular orbits on V ⊕ V .
+
+Proof. Assume that p is odd. Then [5, Theorem 3.4] tells us that H ≤ G has
+at least p ≥ 3 regular orbits on V ⊕ V unless one the following cases occurs:
+
+  1. G = GL(2, 3). Then G has just one regular orbit on V ⊕ V . Observe
+     that G/Z(G) ∼  = PGL(2, 3) ∼ = S4 , thus H is a proper subgroup of G
+     since H is S4 -free. If |G : H| ≥ 3, then H has at least three regular
+     orbits on V ⊕ V . Otherwise, H = SL(2, 3) and the exceptional case 1
+     appears.
+
+  2. G = SL(2, 3). Then G has just two regular orbits on V ⊕V . Hence if H
+     is proper in G, H has at least four regular orbits on V ⊕ V . Otherwise
+     H = G = SL(2, 3) and again the exceptional case 1 emerges.
+
+  3. G = (Q8 ∗ Q8 )K ≤ GL(4, 3), where K is isomorphic to a subgroup of
+     index 1, 2 or 4 of O+ (4, 2). If O20 (H) = 1, then H is 3-nilpotent by
+     Lemmas 4 and 6. Using GAP, one can check that H has at least three
+     regular orbits on V ⊕ V .
+22                                      CHAPTER 2. MAIN THEOREMS
+
+   If O20 (H) 6= 1, then O20 (H) is isomorphic to C3 or C3 × C3 . Then H ≤
+NG (O20 (H)). One checks by GAP that H has at least three regular orbits on
+V ⊕V.
+   Suppose that p = 2. If H = G, by Lemma 13, then H has at least
+three regular orbits on V ⊕ V unless H = G = Γ(23 ) ≤ GL(3, 2). In this
+exceptional case, H has just two regular orbits on V ⊕ V .
+   Thus we can assume that H is a proper subgroup of G. By [5, Theo-
+rem 3.4], H has at least four regular orbits on V ⊕ V provided that G is not
+isomorphic to GL(2, 2), 31+2 .SL(2, 3) or 31+2 .GL(2, 3).
+   If H is a proper subgroup of G = GL(2, 2), then H is of prime order
+and there exists v ∈ V such that CH (v) = 1. Hence H has at least |V | = 4
+regular orbits on V ⊕ V .
+   Suppose that G is isomorphic to 31+2 .SL(2, 3) or 31+2 .GL(2, 3) (as a sub-
+group of GL(6, 2)). By Corollary 7, H is S3 -free. In this case, one checks by
+GAP that H has at least three regular orbits on V ⊕ V .
+
+Lemma 15. Let G be a soluble primitive group of GL(d, p), p an odd prime,
+and let V be the natural G-module. If H is a subgroup of G of odd order,
+then H has at least five regular orbits on V ⊕ V .
+
+Proof. If G is of odd order, then G has at least five regular orbits on V ⊕ V
+by [6, Proposition 3 (a)] and so does H. Thus we may assume that 2 divides
+|G|. Then |G : H| ≥ 2. By [5, Theorem 3.4] that G has at least p ≥ 3 regular
+orbits on V ⊕ V , and so H has at least six regular orbits on V ⊕ V , unless
+G is isomorphic to GL(2, 3), SL(2, 3) or (Q8 ∗ Q8 )K ≤ GL(4, 3), where K is
+isomorphic to a subgroup of index 1, 2 or 4 of O+ (4, 2).
+    Assume that G = GL(2, 3) or SL(2, 3). Then G has at least one regular
+orbit on V ⊕ V and |G : H| ≥ 8. It follows that H has at least eight regular
+orbits on V ⊕ V .
+    Assume that G = (Q8 ∗ Q8 )K ≤ GL(4, 3), where K is isomorphic to a
+subgroup of index 1, 2 or 4 of O+ (4, 2). Then H is isomorphic to a subgroup
+of C3 × C3 . Using GAP, one can check that H has a regular orbit on V and
+so H has at least |V | = 34 regular orbits on V ⊕ V .
+    The proof of the lemma is complete.
+
+     Now we deal with the supersoluble primitive cases.
+
+Lemma 16. Let G be a supersoluble group and V be a faithful primitive G-
+module over GF(2). Then G has at least four regular orbits on V ⊕ V unless
+G = Γ(V ) and |V | = 2n , 2 ≤ n ≤ 4, and in these cases, G has exactly n − 1
+regular orbits on V ⊕ V .
+2.1. PRIMITIVE CASE                                                               23
+
+Proof. Let A be the maximal abelian normal subgroup of G and clearly
+A ≤ CG (A) E G. If A < CG (A), then we can take T /A is a chief factor of G
+such that T ⊆ CG (A). Since G is supersoluble, T /A is cyclic and T = hA, xi
+for some x ∈ CG (A). Then T is an abelian normal subgroup of G, contrary
+to the choice of A. Thus A = CG (A). Since V is a primitive G-module, VA
+is homogeneous. By [18, Lemma 2.2], VA is irreducible. It follows from [18,
+Theorem 2.1] that G ≤ Γ(V ). Write |V | = 2n for some integer n ≥ 1.
+    Firstly we assume that G = Γ(V ). Equivalently, if suffices to consider the
+regular orbits of Γ(2n ) acting on the additional group of the field GF(2n ).
+Take the field automorphism σ : GF(2n ) → GF(2n ); u 7→ u2 , and the Galois
+group Gal(GF(2n )/ GF(2)) = hσi is of order n. Take x = 1, the identity
+element of the field GF(2n ) and clearly CGF(2n ) (x) = hσi, denote by C.
+                                     n
+    For each prime p dividing n, hσ p i is the unique subgroup of C with order
+                                               n                       n
+                                                                       p
+p since C is cyclic. Then we have CGF(2n ) (σ p ) = {u ∈ GF(2n )|u2 = u} is a
+                                                  n                      n        n
+subfield of GF(2n ), which is isomorphic to GF(2 p ). Thus | CGF(2n ) (σ p )| = 2 p .
+    In order to prove C has at least four regular orbits on GF(2n ) when n ≥ 5,
+it suffices to show that             X n
+                                2n −     2 p > 3n
+                                       p|n
+                                 P        n             n
+holds for n ≥ 5. Observe that p|n 2 p ≤ log2 n · 2 2 . It is not difficult to
+                        n                   n
+check that 2n − p|n 2 p > 2n − log2 n · 2 2 > 3n for n ≥ 8 and it is easy to
+                 P
+find the inequality holds for n = 5, 6, 7.
+    Thus we have proved that G ≤ Γ(V ) has at least four regular orbits on
+V ⊕ V when n ≥ 5. Now it suffice to discuss the following cases:
+    n = 1. |V | = 2 and G = 1. Then G has exactly four regular orbit on
+V ⊕V.
+    n = 2. |V | = 22 and G ≤ Γ(V ) ∼       = S3 . If G < Γ(V ), then G has a
+regular orbit on V . Then G has at least |V | = 4 regular orbits on V ⊕ V . If
+G = Γ(V ), in this case, G has exactly one regular orbit on V ⊕ V .
+    n = 3. |V | = 23 and G ≤ Γ(V ) ∼     = [C7 ]C3 . If G = Γ(V ), then G has
+exactly two regular orbits on V ⊕ V . Thus, if G < Γ(V ), G has at least four
+regular orbits on V ⊕ V .
+    n = 4. |V | = 24 and G ≤ Γ(V ) ∼    = [C15 ]C4 . If G = Γ(V ), then G has
+exactly three regular orbits on V ⊕ V . Thus, if G < Γ(V ), G has at least six
+regular orbits on V ⊕ V .
+    Thus the lemma is proved completely.
+
+Lemma 17. Let G be a soluble primitive group of GL(d, 2), and let V be the
+natural G-module. Assume that H is a supersoluble subgroup of G. Then
+24                                       CHAPTER 2. MAIN THEOREMS
+
+H has at least three regular orbits on V ⊕ V unless one of the following two
+cases occurs:
+   (a) d = 2 and H = Γ(V ) ∼  = S3 , has just one regular orbit on V ⊕ V ;
+   (b) d = 3 and H = Γ(V ) ∼ = Γ(23 ), has just two regular orbits on V ⊕ V .
+   Furthermore if H is of odd order, then H has four regular orbits on V ⊕V
+unless the case (b) occurs.
+
+Proof. If H = G, then G is a supersoluble. It follows from Lemma 16 that the
+lemma is true. Now we may assume that H < G. Thus we can assume that
+H is a proper subgroup of G. By [5, Theorem 3.4], H has at least four regular
+orbits on V ⊕ V provided that G is not isomorphic to GL(2, 2), 31+2 . SL(2, 3)
+or 31+2 . GL(2, 3).
+    If H is a proper subgroup of G = GL(2, 2) ∼= S3 , then H is of prime order
+and there exists v ∈ V such that CH (v) = 1. Hence H has at least |V | = 4
+regular orbits on V ⊕ V .
+    Suppose that G is isomorphic to 31+2 . SL(2, 3) or 31+2 . GL(2, 3) (as a
+subgroup of GL(6, 2)). In this case, one checks by GAP that H has at least
+three(four if |H| is odd) regular orbits on V ⊕ V .
+
+
+2.2     Regular orbits on power sets
+    The main goal of this section is to establish some results on regular orbits
+of permutation groups which play a crucial part in the proof of Theorem A.
+    Let S be a permutation group on a set Ω and consider the induced action
+of S on the power set P(Ω) of Ω. Following [18, Chapter II, Section 5], we
+say that a regular orbit of S on P(Ω) generated by ∆ ⊆ Ω is strong if the
+                                                 6 |Ω|
+setwise stabilizer StabS (∆) is trivial, and |∆| =  2
+                                                       .
+    It is clear that a subset ∆ of Ω generates a strong regular orbit of S on
+P(Ω) if and only if so does Ω − ∆. Then we conclude that the number of the
+strong regular orbits of S on P(Ω) is even.
+    Gluck (see [18, Theorem 5.6]) proved that a primitive soluble permutation
+group S acting on a set Ω has an strong regular orbit on P(Ω) if |Ω| > 9.
+Zhang [31] proves that in this case S has at least 8 regular orbits on P(Ω).
+    As a consequence, if S is a group of odd order, then S has at least two
+strong regular orbits on P(Ω). We can push these ideas a bit further to show
+the following:
+
+Lemma 18. Let S be a primitive soluble permutation group of odd order on
+a set Ω. Then S has at least 18 strong regular orbits on P(Ω), unless one of
+the following cases occurs:
+2.2. REGULAR ORBITS ON POWER SETS                                               25
+
+  1. |Ω| = 3 and S ∼
+                   = A3 ;
+  2. |Ω| = 5 and S ∼
+                   = C5 ;
+  3. |Ω| = 7 and S ∼
+                   = Γ(23 ).
+In the exceptional cases 1 and 3, S has exactly two strong regular orbits on
+P(Ω) and, in case 2, S has exactly 6 strong regular orbits on P(Ω).
+Proof. Assume that S is a primitive soluble permutation group of odd order
+on Ω such that (S, Ω) 6= (A3 , 3), (C5 , 5), (Γ(23 ), 7). We shall prove that S has
+at least 18 strong regular orbits on P(Ω).
+    Applying [11, Satz II.3.2], we conclude that S has a unique minimal
+normal subgroup, V say; V = CS (V ) and V is transitive and regular on Ω.
+Hence |V | = |Ω| = pm for a prime p and a positive integer m. Moreover, if H
+is the stabilizer of an element of Ω, we have that S = N H and N ∩ H = 1.
+Furthermore, |S| ≤ 21 |Ω|13/4 by [18, Corollary 3.6]. Let n(g) be the number
+of cycles of g ∈ S on Ω. Then n(g) ≤ 3|Ω|/4 by [18, Lemma 5.1] and g
+stabilizes exactly 2n(g) subsets of Ω.
+    Next consider X = P(Ω). We prove that
+                       1                      1
+                 2|Ω| − |Ω|13/4 23|Ω|/4 ≥ 18 · |Ω|13/4 ≥ 18|S|.
+                       2                      2
+It is rather easy to see that the inequality holds if |Ω| ≥ 81. In this case,
+S has at least 18 regular orbits on X. Hence we assume in the sequel that
+|Ω| ≤ 80.
+    Suppose that |Ω| = p. Then S is isomorphic to a subgroup of [Cp ]Cp−1 .
+If S is cyclic of order p, then p ≥ 7 because (S, |Ω|) 6= (A3 , 3) and (C5 , 5).
+In this case, every non-empty proper subset of Ω generates a strong regular
+orbit on P(Ω). Thus S has exactly (2p − 2)/p ≥ 18 strong regular orbits on
+P(Ω). Assume that 1 6= |H| | p − 1. Since |S| is odd, we have p ≥ 7. If p = 7,
+then |H| = 3 and so G ∼ = [C7 ]C3 ∼
+                                  = Γ(23 ), contrary to assumption. Therefore
+p ≥ 11. Let q be a prime different from p and let T be a subgroup of S of order
+q. Then T is contained in some conjugate of H, and T fixes exactly 21+(p−1)/q
+subsets of Ω. Since S contains exactly p subgroups of Porder q,1+(p−1)/q
+                                                                 it follows that
+the number of non-regular orbits of S is at most p q|(p−1) 2             . Then
+we have                  X
+                2p − p         21+(p−1)/q > 17p(p − 1) ≥ 17|S|.
+                       3≤q|(p−1)
+
+Therefore S has at least 18 regular orbits on X.
+   Suppose that |Ω| = p2 . Then p = 5 or 7 since |S| is odd. Assume that
+p = 5. Since V is a faithful H-module, H is isomorphic to a subgroup of
+26                                           CHAPTER 2. MAIN THEOREMS
+
+GL(2, 5). Hence |H| ≤ 15 and so |S| ≤ 53 · 3. In this case, n(g) ≤ 15 for any
+g ∈ S − {1}. Observe that
+
+            |X| − 215 · 53 · 3 = 225 − (215 · 53 · 3) ≥ 18 · 53 · 3 ≥ 18|S|.
+
+Now we assume that p = 7. Then |S| ≤ 32 ·73 , n(g) ≤ 28 for any g ∈ S −{1},
+and
+
+          |X| − 228 · 32 · 73 = 249 − (228 · 32 · 73 ) ≥ 18 · 32 · 73 ≥ 18|S|.
+
+In both cases, S has at least 18 regular orbits on X.
+    Suppose that |Ω| = p3 ≤ 80. Then p = 3 and H is isomorphic to an irre-
+ducible subgroup of GL(3, 3). By [18, Corollary 2.13], H can be considered
+as a subgroup of Γ(33 ) or C2 o S3 . Since H is of order odd and irreducible,
+the later case is impossible. Thus H is a subgroup of Γ(33 ) and |H| ≤ 3 · 13.
+Then |S| ≤ 34 · 13. Let g ∈ S − {1}. Assume that g has not fixed points on
+Ω. Then g is either a product of a 13-cycle and some 3-cycles or a product
+of 3-cycles. Hence n(g) ≤ 27/3 = 9. Suppose that g has at least one fixed
+point. Then g belongs to a conjugate of H. Since the action of H on Ω is
+equivalent to the action of H on V by conjugation, we have that the num-
+ber of fixed points of g is just |CV (g)|. If order of g is 3, then |CV (g)| and
+n(g) ≤ (27−3)/3+3 = 11. If order of g is 13, then n(g) ≤ (27−1)/13+1 = 3.
+Consequently, n(g) ≤ 11 for any g ∈ S − {1}. Note that
+
+          |X| − 211 · 34 · 13 = 227 − (211 · 34 · 13) ≥ 18 · 34 · 13 ≥ 18|S|.
+
+Hence S has at least 18 regular orbits on X.
+    If |Ω| = 3 and S ∼ = A3 , then S has exactly two regular orbits on X. If
+                ∼
+|Ω| = 7 and S = Γ(23 ), each element of order 7 in S is a 7-cycle and each
+element of order 3 in S is the product of two disjoint 3-cycles. Thus every two-
+element subset and every five-element subset of Ω generate a strong regular
+orbit on X and S has exactly two strong regular orbits on X. If |Ω| = 5 and
+S∼ = C5 , then S has exactly (25 − 2)/5 = 6 strong regular orbits on X. This
+completes the proof of the lemma.
+Lemma 19. Let S be a primitive soluble permutation group on a set Ω.
+Assume that S ∗ ≤ S and S ∗ acts non-transitively on Ω. Then one of the
+following occurs:
+     1. S ∗ has at least four strong regular orbits on P(Ω); or
+                                                                   0
+     2. for each S ∗ -orbit ∆ on Ω with |∆| > 4, we have O2 (S ∗ ) acts transi-
+        tively on ∆ and |Π3 (∆, S ∗ )| ≥ |S∆
+                                           ∗           ∗
+                                             |, where S∆ is the permutation group
+                                     ∗
+        induced by the action of S on ∆.
+2.2. REGULAR ORBITS ON POWER SETS                                                27
+
+Proof. It is clear that we may assume that |Ω| ≥ 5 and 1 6= S ∗ is a proper
+subgroup of S.
+    Since S is a primitive soluble permutation group on Ω, we can apply [11,
+Satz II.3.2] to conclude that S has a unique minimal normal subgroup, V
+say; V = CS (V ) and V is transitive and regular on Ω. Moreover, if H is
+the stabilizer of an element α ∈ Ω, we have that S = V H and V ∩ H = 1.
+Moreover, the action of H on Ω is equivalent to the action of H on M by
+conjugation. In particular, if β ∈ Ω, we have that CH (β) := StabH β =
+CH (v) for some v ∈ V .
+    Assume that |V | = |Ω| is a prime number, p say. Then V is a Sylow
+p-subgroup of S and so S ∗ is a p0 -group. Without loss of generality, we may
+assume that S ∗ is contained in H. Let β ∈ Ω \ {α}. Then CH (β) = CH (v)
+for some 1 6= v ∈ V . Therefore, StabH β = 1. Then if ∆1 = {β} and
+∆2 = {α, β}, it follows that StabS ∗ ∆i = 1, i = 1, 2. Then ∆1 , ∆2 , Ω \ ∆1
+and Ω \ ∆2 are in different regular orbits of S ∗ on P(Ω). Thus S ∗ has at least
+four strong regular orbits on P(Ω).
+    Consequently, we may suppose that |Ω| is not a prime. If S has a strong
+regular orbit on P(Ω), then S ∗ has at least four strong regular orbits on P(Ω)
+since |S : S ∗ | ≥ 2. Then we may assume that S has no strong regular orbit
+on P(Ω).
+    Therefore we only have to consider the exceptional cases (5) and (6) of [18,
+Theorem 5.6].
+
+  1. Suppose that (S, |Ω|) = (AΓ(23 ), 8).
+      Since S ∗ is not transitive on Ω, the length of every orbit of S ∗ on Ω is
+      at most 7.
+      Assume that S ∗ has an orbit ∆ on Ω such that |∆| = 7. Without
+      loss of generality, we may suppose that α is fixed by all elements of
+      S ∗ and so S ∗ is contained in H. By Lemma 18, H ∼          = Γ(23 ) has a
+      strong regular orbit on P(∆). Let ∆1 is a two-element subset of ∆.
+      Then StabS ∗ (∆1 ) ≤ StabH (∆1 ) = 1. Denote ∆2 = {α} ∪ ∆1 . Since
+      StabS ∗ (∆i )=1 for i = 1, 2, it follows that ∆1 , ∆2 , Ω \ ∆1 and Ω \ ∆2
+      lie in different regular orbits of S ∗ on P(Ω). Thus S ∗ has at least four
+      strong regular orbits on P(Ω).
+      Assume that S ∗ has an orbit ∆ on Ω such that |∆| = 6. Then there
+      exists β ∈ ∆ with |S ∗ : CS ∗ (β)| = 6. Hence |CS ∗ (β)| divides 22 · 7. On
+      the other hand, CS ∗ (β) ≤ CS (β) ∼    = Γ(23 ). Thus |CS ∗ (β)| divides 7. If
+                             ∗
+      |CS ∗ (β)| = 7, then |S | = 2 · 3 · 7. This is a contradiction since S has no
+      subgroup of such order. Thus CS ∗ (β) = 1. Therefore if ∆1 = {β} and
+      ∆2 = {γ, β} for some γ ∈ Ω \ ∆, it follows that StabS ∗ ∆i = 1, i = 1, 2.
+28                                           CHAPTER 2. MAIN THEOREMS
+
+        Then ∆1 , ∆2 , Ω \ ∆1 and Ω \ ∆2 are in different regular orbits of S ∗
+        on P(Ω). Thus S ∗ has at least four strong regular orbits on P(Ω).
+
+     2. Suppose that |Ω| = 9 and S is the semidirect product of C3 × C3 with
+        D8 , SD 16 , SL(2, 3) or GL(2, 3).
+        In this case, we may assume that V = C3 × C3 and S is a subgroup
+        of AGL(2, 3), the semidirect product of C3 × C3 with GL(2, 3). In
+        particular, H is a subgroup of A = GL(2, 3).
+        Since S ∗ is a {2, 3}-group acting non-transitively on Ω and |Ω| = 9, we
+        have that the length of an orbit of S ∗ on Ω with more than 4 elements
+        is either 6 or 8.
+        Suppose that S ∗ has an orbit ∆ on Ω such that |∆| = 8. Without
+        loss of generality, we may suppose that α is fixed by all elements of
+        S ∗ and so S ∗ is contained in H. If β ∈ ∆, we have that CA (β) has
+        two fixed points, β, γ say, and a orbit Γ of length 6 on ∆. Let µ ∈ Γ
+        and let ∆1 = {β},   T ∆2 = {γ, µ} and ∆3 = Γ \ {µ}.            Observe that
+                                                                 ∗        ∗
+        T
+          i StabS ∗ (∆i ) ≤  i StabH (∆ i ) = 1. Thus |Π 3 (∆, S   )| ≥ |S∆ |. Since
+                                      2 0
+           ∗                                ∗
+        |S : CS ∗ (β)| = 8, we have O (S ) acts transitively on ∆. In this case,
+        2 holds.
+        Suppose that S ∗ has an orbit ∆ on Ω such that |∆| = 6. Put Γ = Ω\∆.
+        Then S ∗ acts on Γ and S ∗ /CS ∗ (Γ) is isomorphic to a subgroup of S3 .
+        Note that CS ∗ (Γ) is also isomorphic to a subgroup of S3 . Thus |S ∗ | di-
+        vides 36. Since |∆| = 6 divides |S ∗ |, we have that |S ∗ | ∈ {6, 12, 18, 36}.
+        If |S ∗ | = 6 then S ∗ has a strong regular orbit on ∆, and so S ∗ has at
+        least four strong regular orbits on P(Ω). If |S ∗ | = 18, one can check by
+        GAP that S ∗ has at least four strong regular orbits on P(Ω). If |S ∗ | = 12
+        or 36, one can check by GAP that S ∗ satisfies Statement 2.
+
+Lemma 20. Let S be a primitive soluble permutation group on a set Ω.
+Assume that S ∗ ≤ S, S ∗ is transitive on Ω and S ∗ is S4 -free. Then either
+S ∗ has a strong regular orbit on P(Ω) or S ∗ satisfies one of the following
+statements:
+     1. |Ω| = 2 and S ∗ ∼
+                        = S2 ;
+          0
+     2. O2 (S ∗ ) acts transitively on T
+                                       the set Ω and there exists a 3-partition
+        {∆1 , ∆2 , ∆3 } of Ω such that i StabS ∗ ∆i = 1.
+Proof. We may assume that |Ω| > 2. If S has a strong regular orbit on P(Ω),
+then so does S ∗ . Thus we may assume that (S, |Ω|) is one of the exceptional
+cases of [18, Theorem 5.6].
+2.2. REGULAR ORBITS ON POWER SETS                                                 29
+
+    If |Ω| = 3 and S = S3 , then either S ∗ ∼   = C3 or S ∗ ∼= S3 . If S ∗ ∼ = C3 ,
+        ∗                                             ∗ ∼               ∗
+then S has a strong regular orbit on P(Ω). If S = S3 , then S satisfies
+Statement 2.
+    Assume that |Ω| = 4 and S = A4 or S4 . Since S ∗ is an S4 -free transitive
+                                                                        0
+subgroup of S, it follows that S ∗ ∼  = A4 , D8 or C2 × C2 . Then O2 (S ∗ ) acts
+                Ω and there exists a 3-partition {∆1 , ∆2 , ∆3 } of type (1, 1, 2)
+transitively on T
+of Ω such that i StabS ∗ (∆i ) = 1. Thus Statement 2 holds.
+    Assume that |Ω| ∈ {5, 7, 8, 9}. In this case, byT [25, Theorem 3.1], there
+exists a 3-partition {∆1 , ∆2 , ∆3 } of Ω such that i StabS ∗ ∆i = 1.
+    Assume that |Ω| = 5 and S = F10 or F20 . Then S ∗ ∼     = C5 , F10 or F20 . If
+S = C5 , then S ∗ has a strong regular orbit on P(Ω). If S ∗ ∼
+  ∗ ∼
+                                                                 = F10 , F20 , then
+  ∗
+S satisfies Statement 2.
+    Assume that |Ω| = 7 and S = F42 . Then S ∗ ∼   = C7 , F21 or F42 . If S ∗ ∼
+                                                                              = C7
+                                                               ∗ ∼
+or F21 , then S has a strong regular orbit on P(Ω). If S = F42 , then S ∗
+                ∗
+
+satisfies Statement 2.
+                                                                        0
+    If |Ω| = 8 and S = AΓ(23 ), then one can check by GAP that O2 (S ∗ ) acts
+transitively on Ω. Therefore S ∗ satisfies Statement 2.
+                                                    0
+    Assume that |Ω| = 9 and S = AGL(2, 3). If O2 (S ∗ ) is not transitive on Ω,
+then one can check by GAP that S ∗ has a strong regular orbit on P(Ω).
+Corollary 21. Let S be a primitive soluble permutation group on a set Ω.
+Assume that S ∗ ≤ S is of odd order and S ∗ is transitive on Ω. Then S ∗ has
+at least four strong regular orbits on P(Ω), unless one of the following cases
+occurs:
+   1. |Ω| = 3 and S ∗ ∼
+                      = A3 ;
+   2. |Ω| = 7 and S ∗ ∼
+                      = Γ(23 ).
+In the exceptional cases, S ∗ has just two strong regular orbits on P(Ω).
+Proof. Assume that S has a strong regular orbit on P(Ω). If S is of odd
+order, then by Lemma 18, then S has at least four strong regular orbits on
+P(Ω) unless (S, |Ω|) = (A3 , 3) or (Γ(23 ), 7). Then S ∗ has at least four strong
+regular orbits on P(Ω) unless (S ∗ , |Ω|) = (A3 , 3) or (Γ(23 ), 7). If S is of order
+even, then |S : S ∗ | ≥ 2. Since S has at least two strong regular orbits on
+P(Ω), S ∗ has at least four strong regular orbits on P(Ω).
+    If S has no strong regular orbit on P(Ω), then (S, |Ω|) is one of exceptional
+cases (2)–(9) of [18, Theorem 5.6].
+    If |Ω| = 3 and S = S3 , then S ∗ ∼= A3 . We are in case (1). If |Ω| = 4 and
+S = A4 or S4 , then S has no odd order subgroups which are transitive on Ω.
+If |Ω| = 5 and S = F10 or F20 , then S ∗ ∼= C5 and S ∗ has at least four strong
+regular orbits on P(Ω).
+30                                             CHAPTER 2. MAIN THEOREMS
+
+   Assume that |Ω| = 7 and S = F42 . Then S ∗ ∼  = C7 or Γ(23 ). If S ∗ ∼
+                                                                        = C7 ,
+       ∗                                                      ∗ ∼       3
+then S has at least four strong regular orbits on P(Ω). If S = Γ(2 ), we
+are in case (2). If |Ω| = 8 and S = AΓ(23 ), then S has no subgroup of odd
+order which is transitive on Ω.
+   Assume that |Ω| = 9 and S = AGL(2, 3). Then S ∗ is a subgroup of a
+Sylow 3-subgroup of S. It can be proved, using GAP, that S ∗ has at least
+four strong regular orbits on P(Ω).
+
+Lemma 22. Let H1 and H2 be permutation groups on the sets X1 and X2
+respectively. If H1 has 2s strong regular orbits on P(X1 ) and H2 has 2t strong
+regular orbits on P(X2 ). Then H = H1 o H2 has at least 2st strong regular
+orbits on P(X1 × X2 ). If s = 1, then H1 o H2 has exactly 2t strong regular
+orbits on P(X1 × X2 ).
+
+Proof. Assume that ∆1 , . . . , ∆s , X1 \ ∆1 , . . . , X1 \ ∆s belong to different
+strong regular orbits of H1 on P(X1 ) and that Γ1 , . . . , Γt , X2 \ Γ1 , . . . , X2 \ Γt
+belong to different strong regular orbits of H2 on P(X2 ). Let us denote
+                                      [
+                      Σij = ∆i × Γj       (X1 \ ∆i ) × (X2 \ Γj ),
+
+for 1 ≤ i ≤ s, 1 ≤ j ≤ t.
+     We prove first that StabH (Σij ) = 1. Let y ∈ X2 , we denote ε(y) =
+|{(x1 , x2 ) ∈ Σij | x2 = y}|. Since |∆i | = 6 |X1 \ ∆i |, it is clear that ε(y) = |∆i |
+(respectively, |X1 \ ∆i |) if and only if y ∈ Γj (respectively, y ∈ X2 \ Γj ).
+                                                                          f (y)
+     Let (f, σ) ∈ StabH (Σij ) and y ∈ Γj . Then (∆i ×{y})(f,σ) = ∆i ×{y σ } ⊆
+                                   f (y)
+Σij . Observe that ε(y σ ) = |∆i | = |∆i |, which implies that y σ ∈ Γj . Thus
+                                           f (y)
+σ ∈ StabH2 (Γj ) = 1. We also have ∆i = ∆i and so f (y) ∈ StabH1 (∆i ) = 1.
+Now we can argue similarly with y ∈ X2 \ Γj and conclude that f = 1. Thus
+StabH (Σij ) = 1.
+     Observe that |Σij | 6= |X1 ||X
+                                 2
+                                    2|
+                                        and so Σij generates a strong regular orbit
+of H on P(X1 × X2 ).
+                                                                 (f,σ)
+     Assume that there exists (f, σ) ∈ H such that Σij                 = Σuv for some
+indices 1 ≤ i, u ≤ s, 1 ≤ j, v ≤ t. If y ∈ X2 , then (∆i × {y})(f,σ) =
+  f (y)                      f (y)
+∆i × y σ ∈ Σuv and ∆i              = ∆u or X1 \ ∆u . This implies that i = u.
+Analogously, j = v. By using a similar argument, we can prove Σij is not
+H-conjugate to X1 × X2 \ Σuv . Thus Σij , X1 × X2 \ Σij belong to different
+strong regular orbits of H on P(X1 × X2 ). Then we conclude that H has at
+least 2st strong regular orbits on P(X1 × X2 ).
+     Assume that s = 1. We prove that the orbits generated by Σ1j , X1 × X2 \
+Σ1j are exactly the strong regular orbits of H on P(X1 × X2 ).
+2.2. REGULAR ORBITS ON POWER SETS                                             31
+                                                                  S
+    Let Φ ∈ P(X1 × X2 ) such that StabH (Φ) = 1. Then Φ = y∈X2 Φy × {y},
+where Φy = {x ∈ X1 | (x, y) ∈ Φ}. Assume there exists y0 ∈ X2 such
+that StabH1 (Φy0 ) 6= 1. Take 1 6= u ∈ StabH1 (Φy0 ) and let f ∈ H1X2 such
+that f (y) = u if y = y0 and f (y) = 1 otherwise. Then it follows that
+1 6= (f, 1) ∈ StabH (Φ) = 1. This contradiction yields StabH1 (Φy ) = 1 for
+each y ∈ X2 .
+    Since all H1 -regular orbits are generated by ∆1 and X1 \∆, it follows that
+Φy is H1 -conjugate to ∆1 or X1 \ ∆1 for each y ∈ X2 . Let B1 = {y ∈ X2 | Φy
+is H1 -conjugate to ∆1 } and B2 = {y ∈ X2 | Φy is H1 -conjugate to X1 \ ∆1 }.
+Observe that B1 ∩ B2 = ∅ and B1 ∪ B2 = X2 .
+                                                             u
+    For each y ∈ X2 , there exists uy ∈ H1 such that Φy y = ∆1 (if y ∈ B1 )
+or = X1 \ ∆1 (if y ∈ B2 ). Let g ∈ H1X2 such that g(y) = uy for each
+                   e = Φ(g,1) = (S          g(y)            S       g(y)
+yS∈ X2 . Write Φ       S             y∈B 1
+                                           Φy    × {y}) ∪ (  Sy∈B2 Φy    × {y}) =
+( y∈B1 ∆1 × {y}) ∪ ( y∈B2 (X1 \ ∆1 ) × {y}) = ∆1 × B1 (X1 \ ∆1 ) × B2 .
+    Assume that StabH2 (B1 ) 6= 1, and let 1 6= σ ∈ StabH2 (B1 ). Since B2 =
+X2 \ B1 , we have σ ∈ StabH2 (B2 ). Thus 1 6= (1, σ) ∈ StabH (Φ)  e = 1, which is
+a contradiction. Therefore B1 generates a regular orbit of H2 on X2 . Without
+loss of generality, we may assume that B1α = Γj for some α ∈ H2 . Then B2α =
+(X2 \B1 )α = X2 \Γj . So we have Φ e (1,α) = ∆1 ×Γj S(X1 \∆1 )×(X2 \Γj ) = Σ1j .
+Thus Φ is H-conjugate to Σ1j , as desired.
+
+Remark 23. If s 6= 1, H = H1 o H2 has not exactly 2st strong regular
+orbits on the power set of X1 × X2 in general. Let (H1 = h(1, 2, 3, 4, 5)i,
+X1 = {1, 2, 3, 4, 5}) and (H2 = h(1, 2, 3)i, X2 = {1, 2, 3}).
+    Note that the regular orbits generated by ∆1 = {1}, ∆2 = {1, 2}, ∆3 =
+{1, 3}, X1 \ ∆1 , X1 \ ∆2 , X1 \ ∆3 are exactly the strong regular orbits of H1
+on P(X1 ). It is also clear that H2 has exactly two strong regular orbits on
+P(X2 ), namely the ones generated by Γ1 = {1} and X2 \ Γ1 .
+    According to Lemma 22, we have that the subsets Σi1 = ∆i × Γj ∪ (X1 \
+∆i ) × (X2 \ Γ1 ), for 1 ≤ i ≤ 3, generate 6 strong regular orbits of H on
+P(X1 × X2 ). The subset
+                                  [              [
+                   Φ = ∆1 × {1}       ∆2 × {2}       ∆3 × {3}
+
+also generates a strong regular orbit on P(X1 × X2 ) and Φ does not belong
+to the orbits generated by Σi1 , 1 ≤ i ≤ 3.
+
+Definition 24. Let K denote the class of all pairs (S, d(S)) satisfying the
+following conditions:
+
+  1. S is a permutation group of degree d(S), and
+32                                          CHAPTER 2. MAIN THEOREMS
+
+     2. S ∼
+          = H1 o· · ·oHn , where Hi is either Hi ∼
+                                                 = A3 (of degree d(Hi ) = |Xi | = 3)
+              ∼       3
+        or Hi = Γ(2 ) (of degree d(Hi ) = |Xi | = 7) for each i, and n ≥ 1.
+     Applying Lemmas 18 and 22, we have:
+Corollary 25. If S is a permutation group on Ω such that (S, |Ω|) ∈ K, then
+S has exactly two regular orbits on P(Ω).
+
+
+2.3       The imprimitive case
+Lemma 26. Let K be a group and let W a faithful K-module over a field of
+prime characteristic, p say. Let S be a primitive soluble permutation group
+on an m-element set Ω, and assume that S ∗ ≤ S is transitive on Ω. Let
+b = K o S ∗ and V = W Ω . Let G be a subgroup of G
+G                                                             b = K \ G and
+                                                  b such that G
+V G is S4 -free. Then:
+     1. If K has at least five regular orbits on W ⊕ W , then G has at least five
+        regular orbits on V ⊕ V .
+
+     2. If K is of even order, K has at least three regular orbits on W ⊕ W
+        and p 6= 2, then G has at least three regular orbits on V ⊕ V .
+
+     3. If K has at least three regular orbits on W ⊕ W and p = 2, then G has
+        at least three regular orbits on V ⊕ V .
+Proof.    1. It follows from [26, Proposition 3.2(3)] since G is a subgroups
+      of K o S.
+
+     2. By [26, Proposition 3.2(2)], we may assume that m ≤ 4. If S has a
+        regular orbit on the power set of Ω, then |Π2 (Ω, S)| ≥ |S|/2. Thus, in
+        this case, K o S has at least three regular orbits on V ⊕ V by Wolf’s
+        formula and so does G. Therefore we may assume that S has not any
+        regular orbit on P(Ω) and so S is one of the first two exceptional cases
+        of [18, Theorem 5.6]. Note that S ∗ ∼     b \ is isomorphic to a quotient
+                                              = G/K
+        of G. Hence S ∗ is S4 -free.
+        Assume that |Ω| = 4 and S ∼    = A4 or S4 . Since S ∗ is a transitive on Ω,
+        it follows that S ∗ is either isomorphic to a subgroup of A4 or D8 . It
+        suffices to consider that S ∗ ∼
+                                      = A4 or D8 .
+        If S ∗ ∼
+               = A4 , we have |Π3 (Ω, S ∗ )| = 6. Thus G
+                                                       b (and so G) has at least
+        three regular orbits on V ⊕ V .
+        If S ∗ ∼
+               = D8 , we have |Π3 (Ω, S ∗ )| = 4. Thus G
+                                                       b (and so G) has at least
+        three regular orbits on V ⊕ V .
+2.3. THE IMPRIMITIVE CASE                                                      33
+
+     Assume that |Ω| = 3 and S ∼   = S3 . Since S ∗ is transitive on Ω, it follows
+     that S ∼= C3 or S3 . If S ∗ ∼
+                                 = C3 , we have |Π2 (Ω, S ∗ )| = 3 and so H has
+     at least three regular orbits on V ⊕ V .
+     Assume that S ∗ = S ∼   = S3 . In this case, we have that |Π2 (Ω, S ∗ )| = 0
+     and |Π3 (Ω, S ∗ )| = 1. Thus Gb has at least one regular orbit on V ⊕ V .
+     Since K is of even order, G b has a subgroup isomorphic to C2 o S3 and
+     so Gb is not S4 -free. Since G is S4 -free, we have that G is a proper
+     subgroup of G.b Suppose that |G   b : G| = 2. Then G C G   b and B = K \
+     is not contained in G. Let N = B ∩ G. Then N is normal in G         b and
+     |B : N | = 2. In particular, there exists a direct factor K1 of B which is
+     not contained in N . Then B = K1 N and |K1 : K1 ∩ N | = 2. Note that
+     C = (K1 ∩ N )\ is a normal subgroup of G      b contained in B such that
+     G/C
+      b    ∼
+           = C2 oS3 . Thus there exists a normal subgroup L of G b contained in
+     B such that G/L    ∼
+                   b = S4 . Therefore G    b = LG and G/G ∩ L ∼      b ∼
+                                                                  = G/L  = S4 ,
+     contrary to assumption. Consequently, |G : G| ≥ 3 and so G has at
+                                                  b
+     least three regular orbits on V ⊕ V .
+
+  3. If p = 2, we have that G is S3 -free by Corollary 7. Arguing as in case 2,
+     we conclude that G has at least three regular orbits on V ⊕ V .
+Definition 27. Let G be a group and let V a G-module such that the action
+of G on V is equivalent to the action of a subgroup X of U o S = U \ X on
+W Ω , where U is a group, W is a U -module and S is a permutation group on
+a set Ω such that (S, |Ω|) ∈ K (see Definition 24) or (S, |Ω|) = (1, 1).
+  1. We say that V of type (I) if |W | = 23 and U = Γ(W ).
+
+  2. V is said to be of type (II) if |W | = 32 and U = SL(2, 3).
+Lemma 28. Suppose that V is a G-module of type (I) or type (II) (see
+Definition 27). There exist 0 6= x ∈ V and y1 , y2 , z1 , z2 ∈ V lying in
+different CG (x)-orbits satisfying the following conditions:
+  1. CG (x) ∩ CG (yi ) = 1 for each i; and
+
+  2. CG (x) ∩ CG (zi ) is a 3-group for each i.
+Moreover, G has exactly two regular orbits on V ⊕ V .
+Proof. Without loss of generality, we may suppose that G = U o S and V =
+W Ω , U is a group, W is a U -module and S is a permutation group on a set Ω
+such that (S, |Ω|) = (1, 1) or (S, |Ω|) ∈ K, and either |W | = 23 and U = Γ(W )
+or |W | = 32 and U = SL(2, 3). Let 0 6= w ∈ W . Then CU (w) is a 3-group
+34                                                  CHAPTER 2. MAIN THEOREMS
+
+and has exactly two regular orbits on W . Then we assume that u1 , u2 belong
+to different regular orbits of CU (w) on W . In particular, CU (w) ∩ CU (ui ) = 1
+for each i. Write v1 = 0, v2 = w. Then CU (w)∩CU (vi ) = CU (w) is a 3-group.
+Observe that u1 , u2 , v1 , v2 belong to four different CU (w)-orbits. Thus the
+lemma holds when (S, |Ω|) = (1, 1).
+    Now we may assume that (S, |Ω|) ∈ K. Applying Corollary 25, we get
+that S has exactly two strong regular orbits on P(Ω). Hence, by Wolf’s
+formula, G has exactly two regular orbits on V ⊕ V . Let ∆ ⊆ Ω such that
+StabS (∆) = 1 and x ∈ V = W Ω such that x(i) = w for all i ∈ Ω. Assume
+that y1 , y2 , z1 , z2 ∈ V satisfy
+
+            y1 (i) = u1 ,      i ∈ ∆;                   y1 (i) = u2 ,       i ∈ Ω \ ∆;
+            y2 (i) = u2 ,      i ∈ ∆;                   y2 (i) = u1 ,       i ∈ Ω \ ∆;
+            z1 (i) = v1 ,      i ∈ ∆;                   z1 (i) = v2 ,       i ∈ Ω \ ∆;
+            z2 (i) = v2 ,      i ∈ ∆;                   z2 (i) = v1 ,       i ∈ Ω \ ∆.
+
+It is not difficult to see that y1 , y2 , z1 , z2 belong to different regular orbits
+of CG (x) on V . We first show that CG (x) ∩ CG (yj ) = 1 for each j. Let
+(f, σ) ∈ CG (x) ∩ CG (yj ), where f ∈ U Ω and σ ∈ S. Then
+
+                   −1       σ −1 )                 −1       σ −1 )
+              x(iσ )f (i             = x(i); yj (iσ )f (i            = yj (i), ∀i ∈ Ω.
+
+Hence f (i) ∈ CU (w) for each i. Since u1 , u2 lie in different orbits of CU (w) on
+                                                                 f (i)        f (i)
+W , we have ∆σ = ∆ and thus σ ∈ StabS (∆) = 1. Then u1 = u1 or u2 =
+u2 for each i and so f (i) ∈ CU (w)∩CU (u1 ) = 1 or f (i) ∈ CU (w)∩CU (u2 ) = 1.
+In any case, f = 1, as desired.
+    Now take (f, σ) ∈ CG (x) ∩ CG (zj ) for each j. Arguing in a similar way,
+                                                           f (i)        f (i)
+we have f (i) ∈ CU (w) for each i and σ = 1. Then v1 = y or v2 = z for
+each i and so f (i) ∈ CU (w) ∩ CU (v1 ) or f (i) ∈ CU (w) ∩ CU (v2 ). Note that
+CU (w) ∩ CU (v1 ) is a 3-group. Then (f, σ) = (f, 1) is a 3-element and thus
+CG (x) ∩ CG (zj ) is a 3-group for each j, as desired.
+
+   Let G be a group and let V a faithful G-module. Assume that there
+V = V1 ⊕ · · · ⊕ Vm (m ≥ 2) is a direct sum of subspaces which are permuted
+transitively by G. Write Ω = {1, . . . , m}, L = NG (V1 ) and N = CoreG (L).
+Then m = |G : L| and S = G/N is a permutation group on Ω induced by
+the action of G on a right transversal of L in G. We have:
+
+Lemma 29. Assume that G is soluble and V G is S4 -free. Assume further
+that V1 , as a L/CG (V1 )-module, is of type (I) or type (II) (see Definition 27).
+2.3. THE IMPRIMITIVE CASE                                                         35
+
+                        0
+   1. Suppose that O2 (S) acts transitively
+                                    T       on Ω and there exists a 3-partition
+      {∆1 , ∆2 , ∆3 } of Ω such that i StabS ∆i = 1. Then G has at least three
+      regular orbits on V ⊕ V .
+
+   2. If m ≤ 4, then G has at least three regular orbits on V ⊕ V unless
+      m = 3 and G/N ∼= C3 ; in this case, G has at least two regular orbits
+      on V ⊕ V .
+
+Proof. Applying Lemma 2, we may assume without loss of generality G is
+a subgroup of G   b = U o S, where U = L/CG (V1 ). Moreover, we have that
+Gb = U \ G, N = G ∩ U \ and NG (Wj )/CG (Wj ) ∼      = U , where Wj = {f ∈ V |
+f (i) = 0, ∀i 6= j}, j ∈ Ω.
+    Applying Lemma 28 to the pair (U, V1 ) allows us to conclude that there
+exists 0 6= x ∈ V1 such that CU (x) has four different orbits on V1 with
+representatives y1 , y2 , z1 , z2 satisfying CU (x)∩CU (yi ) = 1 and CU (x)∩CU (zi )
+is a 3-group for each i.
+                       0
+    Assume that O2 (S) actsTtransitively on Ω and there exists 3-partition
+                                                                   0
+{∆1 , ∆2 , ∆3 } of Ω such that i StabS ∆i = 1. Then 1 6= O2 (S).
+    Our first goal will be to prove the following statement:
+    (∗) Let (f, 1) be a 3-element of N for f ∈ U \ . Suppose that f (i0 ) = 1 for
+some i0 ∈ Ω. Then f = 1.
+    Let P ∈ Syl3 (N ) such that (f, 1) ∈ P . By the Frattini Argument, G =
+N NG (P ). Let ρ ∈ S be a 2-element. Then ρ determines a 2-element (g, ρ) ∈
+NG (P ). Let T = N h(g, ρ)i.
+    We show that T is S3 -free. If U -module V1 is of type (I), then p = 2
+and G is S3 -free by Corollary 7. Hence T is S3 -free. If U -module V1 is
+of type (II), then p = 3 and O20 (U ) = 1. Since N CG (Wj )/CG (Wj ) E
+NG (Wj )/CG (Wj ) ∼  = U , we have O20 (N ) ≤ ∩j CG (Wj ) = CG (V ) = 1. Then
+we have O20 (T ) ≤ O20 (N ) = 1 since T /N is a 2-group. By Lemma 6, T is
+S3 -free.
+    Since P h(g, ρ)i is {2, 3}-subgroup of T , we can apply Lemma 4 to conclude
+that P h(g, ρ)i is 3-nilpotent. Hence (f, 1)(g, ρ) = (g, ρ)(f, 1), that is,
+
+                            f (i)g(i) = g(i)f (iρ ), ∀i ∈ Ω,
+
+Therefore f (i) = 1 if and only if f (iρ ) = 1.
+            0
+    Since O2 (S) acts transitively on Ω, it follows that for each i ∈ Ω, there
+exist 2-elements ρ1 , . . . , ρs such that iρ01 ...ρs = i. Since f (i0 ) = 1, we have
+
+                  1 = f (i0 ) = f (iρ01 ) = · · · = f (iρ01 ...ρs ) = f (i),
+
+thus f (i) = 1 for each i ∈ Ω and the statement is proved.
+36                                                     CHAPTER 2. MAIN THEOREMS
+
+     Let v ∈ V such that v(i) = x for each i ∈ Ω and consider the elements
+u1 , u2 , u3 ∈ V defined by
+
+     u1 (i) = z1 ,   i ∈ ∆1 ;          u1 (i) = y1 ,     i ∈ ∆2 ;          u1 (i) = y2 ,   i ∈ ∆3 ;
+     u2 (i) = z2 ,   i ∈ ∆1 ;          u2 (i) = y1 ,     i ∈ ∆2 ;          u2 (i) = y2 ,   i ∈ ∆3 ;
+     u3 (i) = z1 ,   i ∈ ∆1 ;          u3 (i) = z2 ,     i ∈ ∆2 ;          u3 (i) = y2 ,   i ∈ ∆3 .
+
+Then we will show CG (v) ∩ CG (uj ) = 1 for all j ∈ {1, 2, 3}, and u1 , u2 and
+u3 belong to different regular orbits of CG (v) on V .
+   Let (f, σ) ∈ CG (v) ∩ CG (uj ), where f ∈ U \ and σ ∈ S. Then
+                     −1      σ −1 )                 −1       σ −1 )
+                v(iσ )f (i            = v(i); uj (iσ )f (i            = uj (i), ∀i ∈ Ω.
+                                                                           −1
+Hence f (i) ∈ CU (x) for each i. Then we have uj (iσ ), uj (i) lie in the same
+orbit of CU (x) on V1 , ∀i ∈ Ω. SinceTy1 , y2 , z1 , z2 lie in different orbits
+of CU (x) on V1 , it implies that σ ∈ i StabS (∆i ) = 1. For each i ∈ Ω,
+f (i) ∈ CU (x) ∩ CU (yi ) or CU (x) ∩ CU (zi ) for i = 1 or 2. Thus f (i) is a
+3-element for each i and clearly (f, σ) = (f, 1) is a 3-element. Let i0 ∈ ∆3 .
+          f (i )
+Then y2 0 = y2 , and so f (i0 ) ∈ CU (x) ∩ CU (y2 ) = 1. Thus f (i0 ) = 1.
+     Since (f, σ) = (f, 1) is a 3-element of N and f (i0 ) = 1 for some i0 ∈ Ω,
+it follows from Statement (∗) that f = 1. Thus CG (v) ∩ CG (uj ) = 1, j = 1,
+2, 3. Similar arguments allows us to conclude that u1 , u2 and u3 belong to
+different regular orbits of CG (v) on V . Consequently, G has at least three
+regular orbits on V ⊕ V , and the Statement 1 holds.
+     Suppose that |Ω| ≤ 4. If |Ω| = 4, then S is isomorphic to A4 , D8 , C2 × C2
+                                                           0
+since S is transitive and S4 -free. In these cases, O2 (S) acts transitively
+T Ω and S has a 3-partition {∆1 , ∆2 , ∆3 } of type (1, 1, 2) of Ω such that
+on
+   i StabS ∆i = 1. By Statement 1, G has at least three regular orbits on
+V ⊕V.
+     If |Ω| = 3, we have that S is isomorphic to S3 or C3 . Suppose that
+    ∼
+S = C3 . Then S has exactly two regular orbits on P(Ω). Hence G has two
+                                                             0
+regular orbits on V ⊕ V . If S ∼  = S3 , it follows that O2 (S) acts transitively
+T Ω and S has a 3-partition {∆1 , ∆2 , ∆3 } of type (1, 1, 1) of Ω such that
+on
+   i StabS ∆i = 1. By Statement 1, G has at least three regular orbits on
+V ⊕V.
+     If |Ω| = 2, then S ∼
+                        = S2 . Let v ∈ V such that v(i) = x for each i ∈ Ω and
+consider the elements u1 , u2 , u3 ∈ V defined by
+
+                      u1 (1) = z1 ,                                   u1 (2) = y1 ;
+                      u2 (1) = z2 ,                                   u2 (2) = y1 ;
+                      u3 (1) = y2 ,                                   u3 (2) = y1 .
+2.3. THE IMPRIMITIVE CASE                                                        37
+
+    With similar arguments to those used above, one can show that u1 , u2
+and u3 belong to different regular orbits of CG (v) on V . Consequently, G has
+at least three regular orbits on V ⊕ V .
+   In the following, we consider the imprimitive case of Theorem B.
+Lemma 30. Let S be a supersoluble primitive permutation group on a finite
+set Ω. Then we have
+  1. If |Ω| ≥ 3, then there exists a 3-partition {∆1 , ∆2 , ∆3 } of Ω such that
+     ∩i StabS ∆i = 1.
+  2. If |Ω| ≥ 5, then there exists a 3-partition {∆1 , ∆2 , ∆3 } of Ω such that
+     |∆1 | ≤ |∆2 | < |∆3 | and ∩i StabS ∆i = 1.
+Proof. Since S is a supersoluble and primitive, we have that |Ω| is a prime,
+p say, and S is a subgroup of [Cp ]Cp−1 . Now we may assume p ≥ 3. Observe
+that S is a Frobenius group, that is, CS (x) ∩ CS (y) = 1 for any distinct
+x, y ∈ Ω. Fix two distinct x, y ∈ Ω, and let ∆1 = {x}; ∆2 = {y} and
+∆3 = Ω − {x, y}. Then clearly ∩i StabS ∆i = 1 and |∆1 | ≤ |∆2 | < |∆3 | if
+p ≥ 5. Thus the lemma is proved.
+Lemma 31. Let H be a group and S be a primitive permutation group on the
+finite set Ω with |Ω| ≥ p for some prime p. Assume that G is a supersoluble
+group of G b = H o S such that H \ G = G. b Write N = H \ ∩ G and assume that
+Op (N ) = 1. If f is a p-element of H \ such that (f, 1) ∈ N and f (i0 ) = 1 for
+some i0 ∈ Ω. Then f = 1.
+Proof. Observe that S ∼    b \∼
+                         = G/H    = G/N is supersoluble. Since S is a primitive
+permutation group, we can conclude that S has the unique minimal normal
+subgroup X such that |X| = |Ω| = q for some prime q.
+    Let P ∈ Sylp (N ) such that (f, 1) ∈ P . By Frattini Argument, G =
+N NG (P ) and consequently G   b = H \ NG (P ). For any ρ ∈ X, we have that
+  q
+ρ = 1. Then it is not difficult to find a q-element (g, ρ) ∈ NG (P ). Let
+T = P h(g, ρ)i. Clearly T ≤ G is supersoluble and [(f, 1), (g, ρ)] ∈ P .
+    By hypothesis, q ≥ p. If q > p, then h(g, ρ)i C T since T has the super-
+soluble type Sylow Tower. Thus [(f, 1), (g, ρ)] ∈ P ∩ h(g, ρ)i = 1. If p = q,
+then T is a p-group. Observe that G0 ≤ F(G) since G is supersoluble. Thus
+T 0 ≤ Op (G). Then [(f, 1), (g, ρ)] ∈ T 0 ∩ N ≤ Op (G) ∩ N = Op (N ) = 1.
+    Thus we have (f, 1)(g, ρ) = (g, ρ)(f, 1), that is, f (i)g(i) = g(i)f (iρ ), ∀i ∈
+Ω. Therefore f (i) = 1 if and only if f (iρ ) = 1.
+    Recall X acts transitively on Ω. For each i ∈ Ω, there exists ρi ( depending
+on i) ∈ S such that iρ0i = i. Since f (i0 ) = 1, we have f (i) = f (iρ0i ) = 1. Thus
+f (i) = 1 for each i ∈ Ω and the statement is proved.
+38                                          CHAPTER 2. MAIN THEOREMS
+
+    Let G be a group and let V a faithful G-module.
+    We say G-module V satisfies that Property I if the following hypotheses
+hold.
+    (1) G is an odd order group and O3 (G) = 1.
+    (2) there exists 0 6= x ∈ V and CG (x) has at least four different orbits
+on V with representatives y1 , y2 , z1 , z2 satisfying CG (x) ∩ CG (yi ) = 1 and
+CG (x) ∩ CG (zi ) is a 3-group for each i.
+    We say G-module V satisfies that Property II if the following hypothe-
+ses hold.
+    (1) G is an even order group with O2 (G) = 1.
+    (2) there exists 0 6= x ∈ V and CG (x) at least three different orbits on V
+with representatives y, z1 , z2 satisfying CG (x)∩CG (y) = 1 and CG (x)∩CG (zi )
+is a 2-group for each 1 ≤ i ≤ 2.
+
+Lemma 32. Let G be a supersoluble group and V be a faithful G-module
+over GF(2). Assume that there V = V1 ⊕ ... ⊕ Vm (m ≥ 1) is a direct sum
+of subspaces which are permuted transitively by G. Let K = NG (V1 )/ CG (V1 )
+and V1 is a faithful K-module. Then we have:
+
+     1. If K has at least four regular orbits on V1 ⊕ V1 , then G has at least four
+        regular orbits on V ⊕ V .
+
+     2. If K is of even order, K has at least three regular orbits on V1 ⊕ V1 ,
+        then G has at least three regular orbits on V ⊕ V .
+
+     3. If K-module V1 satisfies Property I and G is of odd order, then G has
+        at least four regular orbits on V ⊕ V or satisfies Property I.
+
+     4. If K-module V1 satisfies Property II, then either G has three regular
+        orbits on V ⊕ V or G-module V satisfies Property II.
+
+     5. If K-module V1 satisfies Property I, then either G has three regular
+        orbits on V ⊕ V or G-module V satisfies Property I or Property II.
+
+Proof. Work by induction on m. Clearly (1) − (5) holds when m = 1. Now
+we assume that m ≥ 2. Since G acts transitively on {V1 , ..., Vm }, we can take
+a block ∆ of {V1 , ..., Vm } such that StabG (∆) is maximal in G. Without loss
+                Psmay assume that ∆ = {V1 , ..., Vs }(s ≥ 1).
+of generality, we
+    Let W1 = i=1 Vi and L = NG (W1 ). Then L = StabG (∆) is maximal
+in G. Assume that {g1 = 1, g2 , ..., gt } is a right transversal of L in G with
+t = |G : L| ≥ 2. Write Wi = W1 gi for each i. Then V = W1 ⊕ ... ⊕ Wt and
+G/N acts faithfully and primitively on {W1 , ..., Wt }, where N = CoreG (L).
+2.3. THE IMPRIMITIVE CASE                                                            39
+
+    Write H = L/ CG (W1 ). We argue that Op (N ) = 1 if Op (H) = 1 for
+some prime p. Observe that N E Lgj = NG (Wj ) for each 1 ≤ j ≤ t. Then
+N CG (Wj )/ CG (Wj )ENG (Wj )/ CG (Wj ) ∼      = H. Since Op (H) = 1, we have that
+                t
+Op (N ) ≤ ∩j=1 CG (Wj ) = 1 since V is a faithful G-module. This argument
+will be useful below.
+    Then applying Lemma 2, we may assume that G is a subgroup of G            b = HoS
+                        \           \                     Ω
+such that G = H G, N = H ∩ G and V = W1 , where S is a primitive
+               b
+permutation group on Ω = {1, ..., t}. Observe that S ∼              b \ ∼
+                                                                 = G/H      = G/N is
+supersoluble. Thus t is a prime.
+    Denote J = NH (V1 )/ CH (V1 ). Then W1 = V1 ⊕ ... ⊕ Vs is a faithful
+H-module and by [1, Theorem 1.13], L(also H) acts transitively on ∆ =
+{V1 , ..., Vs }. Write J 0 = NL (V1 ) CG (V1 )/ CG (V1 ) ≤ K. It is not difficult to
+find that the action of J on V1 is equivalent to the action of J 0 on V1 .
+    Now we will prove (1) − (5) respectively. The main step is firstly to apply
+induction on (W1 , H, V1 , J) and then to calculate the number of regular orbits
+by Wolf’s formula.
+    (1) By hypothesis, J 0 ≤ K has at least four regular orbits on V1 ⊕ V1 .
+Thus J has at least four regular orbits on V1 ⊕ V1 . Since s = m/t < m, by
+induction, H has at least four regular orbits on W1 ⊕ W1 .
+    If S has a regular orbit on the power set of Ω, then |Π2 (Ω, S)| ≥ |S|/2.
+Thus, in this case, H o S has at least four regular orbits on V ⊕ V by Wolf’s
+formula and so does G. Therefore we may assume that S has not any regular
+orbit on P(Ω) and so S is one of exceptional cases of [18, Theorem II.5.6]
+and 3 ≤ t ≤ 9. By [25, Theorem 3.1(iii)], we have |Π3 (Ω, S)| ≥ |S| for
+5 ≤ t ≤ 9, which implies G ≤ H o S has at least four regular orbits on V ⊕ V
+by Wolf’s formula. Thus we may assume that t = 3 since t is a prime. In
+this case, S ∼    = S3 . It is not difficult to calculate that |Π2 (Ω, S ∗ )| = 0 and
+|Π3 (Ω, S ∗ )| = 1. Thus G(≤ G)   b has at least four regular orbit on V ⊕ V .
+    Thus the conclusion (1) is proved.
+    (2) If J is of order odd, then so is J 0 . Since K is of order even, |K : J 0 | ≥ 2.
+Thus J 0 ( also J) has at least six regular orbits on V1 ⊕ V1 . Applying (a) on
+(W1 , H, V1 , J), H has at least four regular orbits on W1 ⊕ W1 . Applying
+(a) on (V, G, W1 , H) again, G has at least four regular orbits on V ⊕ V , as
+desired.
+    Now we assume that J is of even order, by induction, H has at least three
+regular orbits on W1 ⊕ W1 . By [26, Proposition 3.2(2)] and Wolf’s formula,
+we may assume that t ≤ 4 and S has not any regular orbit on P(Ω). Note t
+is a prime. Thus, by [18, Theorem II.5.6], we can conclude that |Ω| = 3 and
+S ∼= S3 . In this case, |Π2 (Ω, S ∗ )| = 0 and |Π3 (Ω, S ∗ )| = 1. Thus G     b has at
+least one regular orbit on V ⊕ V .
+40                                          CHAPTER 2. MAIN THEOREMS
+
+    Observe that H is of even order since J is of even order. Then G        b has a
+subgroup isomorphic to C2 o S3 and so G     b is not supersoluble. Thus we have
+that G is a proper subgroup of G.    b Suppose that |G   b : G| = 2. Then G C G      b
+              \
+and B = H is not contained in G. Let N = B ∩ G. Then N is normal in
+Gb and |B : N | = 2. In particular, there exists a direct factor H1 ∼    = H of B
+which is not contained in N . Then B = H1 N and |H1 : H1 ∩ N | = 2. Note
+that C = (H1 ∩ N )\ is a normal subgroup of G        b contained in B such that
+G/C
+ b    ∼
+      = C2 o S3 . Thus there exists a normal subgroup X of G        b contained in
+B such that G/X b    ∼
+                     = S4 . Therefore G  b = XG and G/G ∩ X ∼        = G/X
+                                                                        b     ∼
+                                                                              = S4 ,
+contrary to supposition. Consequently, |G : G| ≥ 3 and so G has at least
+                                              b
+three regular orbits on V ⊕ V . Thus the conclusion (2) is proved.
+    (3) Since K-module V1 satisfies Property I, K has at least two regular
+orbits on V1 ⊕ V1 . If J 0 is proper in K, then J 0 has at least four regular orbits
+on V1 ⊕ V1 and so does J. Applying (a) twice, G has at least four regular
+orbits on V ⊕ V .
+    Then we may assume J 0 = K. Consequently J(J 0 )-module V1 satisfies
+Property I. By induction, H has at least four regular orbits on W1 ⊕ W1
+or H-module W1 satisfies Property I. If H has at least four regular orbits
+on W1 ⊕ W1 , by (a), G has at least four regular orbits on V ⊕ V , as desired.
+    Now we assume that H-module W1 satisfies Property I. By hypothesis,
+we have O3 (H) = 1. Moreover, there exists there exists 0 6= x ∈ V1 and
+CH (x) has at least four different orbits on V1 with representatives y1 , y2 , z1 , z2
+satisfying CH (x) ∩ CH (yi ) = 1 and CH (x) ∩ CH (zi ) is a 3-group for each i.
+    Since G is of odd order, we have S is of odd order. Consequently t is
+an odd prime and t ≥ 3. By [18, Theorem II.5.6], S has a strong regular
+orbit on P(Ω). We may assume that ∆ ⊆ Ω such that StabS (∆) = 1 and
+|∆| 6= |Ω − ∆|. Take v ∈ V = W1Ω such that v(i) = x for each i ∈ Ω and
+define uj , 1 ≤ j ≤ 4 as follow:
+
+                    u1 (i) = y1 , i ∈ ∆; u1 (i) = y2 , i ∈ Ω − ∆;
+
+
+                    u2 (i) = y2 , i ∈ ∆; u2 (i) = y1 , i ∈ Ω − ∆;
+
+                    u3 (i) = y1 , i ∈ ∆; u3 (i) = z1 , i ∈ Ω − ∆;
+
+                    u4 (i) = y2 , i ∈ ∆; u4 (i) = z2 , i ∈ Ω − ∆;
+It is not difficult to find that uj , 1 ≤ j ≤ 4 lie different orbits of CG (v) on V .
+Then we will show that uj , 1 ≤ j ≤ 4 can generate regular orbits of CG (v)
+on V .
+2.3. THE IMPRIMITIVE CASE                                                                41
+
+   Let (f, σ) ∈ CG (v) ∩ CG (uj ) for 1 ≤ j ≤ 4, where f ∈ H \ and σ ∈ S.
+Then
+                 −1    σ −1             −1    σ −1
+             v(iσ )f (i ) = v(i); uj (iσ )f (i ) = uj (i), ∀i ∈ Ω.
+Hence we have that f (i) ∈ CH (x) for each i ∈ Ω. Since y1 , y2 , z1 , z2 lie in
+different CH (x)-orbit in V . Thus σ ∈ StabS (∆) = 1.
+    Thus we conclude that f (i) ∈ CH (x) ∩ CH (yj ) or CH (x) ∩ CH (zk ) for each
+i ∈ Ω, where j, k = 1 or 2. Thus f (i) is a 3-element of H for each i. Moreover,
+take any i0 ∈ ∆, we have f (i0 ) ∈ CH (x) ∩ CH (y1 ) or CH (x) ∩ CH (y2 ) and we
+can conclude that f (i0 ) = 1.
+    Thus (f, σ) = (f, 1) ∈ H \ ∩ G = N is a 3-element and f (i0 ) = 1 for
+some i0 ∈ ∆. Recall that |Ω| = t ≥ 3 and we can argue O3 (N ) = 1 since
+O3 (H) = 1 by hypothesis. Applying Lemma 31(the case p = 3), we can
+conclude that f = 1. It implies that CG (v) ∩ CG (uj ) = 1 for 1 ≤ j ≤ 4, as
+desired. Thus G has at least four regular orbits on V ⊕ V , as desired. Thus
+the conclusion (3) is proved.
+    (4) Since K-module V1 satisfies Property II, we may assume that
+    • K is an even order group with O2 (K) = 1.
+    • there exists 0 6= x0 ∈ V1 and three different CK (x0 )-orbits with repre-
+sentatives y 0 , z10 , z20 satisfying CK (x0 ) ∩ CK (y 0 ) = 1 and CK (x0 ) ∩ CK (zi0 ) is a
+2-group for each i.
+    If J 0 is of odd order, then J 0 is proper in K. Then J 0 has at least two
+regular orbits on V ⊕ V and CJ 0 (x0 ) ∩ CJ 0 (zi0 ) is a 2-group for each i, which
+implies that J 0 has at least four regular orbits on V1 ⊕V1 and so is J. Applying
+(1) twice, G has at least four regular orbits on V ⊕ V .
+    Thus we may assume J 0 is of even order. If |K : J 0 | ≥ 3, then J 0 (also
+J) has at least three regular orbits on V1 ⊕ V1 . It follows from (2) that
+H has at least three regular orbits on W1 ⊕ W1 . Observe that |H| is even
+since |J| is even, applying (2) again, G has at least three regular orbits on
+V ⊕ V . Now we may assume that |K : J 0 | ≤ 2. Consequently J 0 C K and
+O2 (J 0 ) ≤ O2 (K) = 1. Then J(J 0 )-module V1 satisfies Property II.
+    By induction, H has at least three regular orbits on W1 ⊕W1 or H-module
+W1 satisfies Property II. If H has at least three regular orbits on W1 ⊕ W1 ,
+since |H| is even, then G has at least three regular orbits on V ⊕ V by (2),
+as desired.
+    Now we assume that H-module W1 satisfies Property II.
+    • H is an even order group with O2 (H) = 1.
+    • Then there exists 0 6= x ∈ W1 and three different CH (x)-orbits with
+representatives y, z1 , z2 satisfying CH (x) ∩ CH (y) = 1 and CH (x) ∩ CH (zi ) is
+a 2-group for each i.
+    Firstly we consider the case |Ω| = t ≥ 5. By Lemma 30, there exists
+42                                             CHAPTER 2. MAIN THEOREMS
+
+a 3-partition {∆1 , ∆2 , ∆3 } of Ω such that 3i=1 StabS (∆i ) = 1 and |∆1 | ≤
+                                            T
+|∆2 | < |∆3 |. Take v ∈ V = W1Ω such that v(i) = x for each i ∈ Ω. Consider
+the elements uj ∈ V , where 1 ≤ j ≤ 3, defined by
+
+            u1 (i) = y, i ∈ ∆1 ; u1 (i) = z2 , i ∈ ∆2 ; u1 (i) = z1 , i ∈ ∆3 ;
+
+            u2 (i) = z1 , i ∈ ∆1 ; u2 (i) = y, i ∈ ∆2 ; u2 (i) = z2 , i ∈ ∆3 ;
+            u3 (i) = z2 , i ∈ ∆1 ; u3 (i) = z1 , i ∈ ∆2 ; u3 (i) = y, i ∈ ∆3 ;
+    Since y, z1 , z2 lie in different orbits of CH (x) on W1 and |∆1 | ≤ |∆2 | <
+|∆3 |, it is not difficult to find u1 , u2 and u3 lie in different orbits of CG (v) on
+V . Then we will show that uj , 1 ≤ j ≤ 3 can generate regular orbit of CG (v)
+on V .
+    Let (f, σ) ∈ CG (v) ∩ CG (uj ) for 1 ≤ j ≤ 3, where f ∈ H \ and σ ∈ S.
+Then
+                    −1    σ −1               −1   σ −1
+                v(iσ )f (i ) = v(i); uj (iσ )f (i ) = uj (i), ∀i ∈ Ω.
+Hence we have that f (i) ∈ CH (x) for each i ∈ Ω. Since y, z1 , z2 lie in different
+CH (x)-orbit in V . Thus σ ∈ StabS (∆) = 1.
+    Thus we conclude that f (i) ∈ CH (x) ∩ CH (y) or CH (x) ∩ CH (zk ) for each
+i ∈ Ω, where k = 1 or 2. Thus f (i) is a 2-element of H for each i. Moreover,
+Considering in uj for a fixed j, we can find i0 (depending on j) ∈ ∆j such
+that f (i0 ) ∈ CH (x) ∩ CH (y). we can conclude that f (i0 ) = 1.
+    Thus (f, σ) = (f, 1) ∈ H \ ∩ G = N is a 2-element and f (i0 ) = 1 for
+some i0 ∈ Ω. Recall that |Ω| = t ≥ 5 and we can argue O2 (N ) = 1 since
+O2 (H) = 1 by hypothesis. Applying Lemma 31(the case p = 2), we can
+conclude that f = 1. It implies that CG (v) ∩ CG (uj ) = 1 for 1 ≤ j ≤ 3, as
+desired. Thus G has at least three regular orbits on V ⊕ V , as desired.
+    Recall that |Ω| = t is a prime. Thus we only consider the case t = 2 or 3.
+    Assume that t = 3. In this case, S = S3 or h(123)i. Take v ∈ V = W Ω
+such that v(i) = x for each i ∈ Ω. Consider the elements uj ∈ V , where
+1 ≤ j ≤ 3, defined by
+
+                         u1 (1) = y, u1 (2) = z1 , u1 (3) = z2 ;
+
+                         u2 (1) = y, u2 (2) = y, u2 (3) = z1 ;
+                         u3 (1) = y, u3 (2) = y, u3 (3) = z2 ;
+With similar arguments to those used above, one can show that u1 , u2 and
+u3 belong to different orbits of CG (v) on V and CG (v) ∩ CG (u1 ) = 1. Now
+we will prove that CG (v) ∩ CG (uj ) is 2-group for j = 2, 3.
+   Let (f, σ) ∈ CG (v) ∩ CG (uj ) for j = 2, 3, where f ∈ H \ and σ ∈ S. Hence
+we have that f (i) ∈ CH (x) for each i ∈ Ω. Since y, z1 , z2 lie in different
+2.3. THE IMPRIMITIVE CASE                                                         43
+
+CH (x)-orbit in V . Thus 3σ = 3 and consequently σ ∈ h(12)i. Moreover,
+f (1), f (2) ∈ CH (x) ∩ CH (y) = 1 and f (3) ∈ CH (x) ∩ CH (zj ) for some j is a
+2-group. Thus (f, σ)2 = (g, 1), where g(1) = g(2) = 1 and g(3) = f (3)2 is a
+2-element. Then we can conclude that (f, σ) is a 2-element, as desired.
+    Observe that O2 (G/N ) ∼ = O2 (S) = 1 and consequently O2 (G) ≤ O2 (N ) =
+1. Furthermore, G is of even order since H is of even order. Thus G-module
+V satisfies Property II, as desired.
+    Finally we assume that |Ω| = 2 and S ∼     = S2 . Take v ∈ V such that
+v(i) = x for each i ∈ Ω and consider the elements u1 , u2 , u3 ∈ V defined by
+
+                              u1 (1) = z1 , u1 (2) = y;
+
+                              u2 (1) = z2 , u2 (2) = y;
+                              u3 (1) = z1 , u3 (2) = z2 ;
+With similar arguments to those used above, one can show that u1 , u2 and u3
+belong to different orbits of CG (v) on V and CG (v) ∩ CG (uj ) = 1 for j = 1, 2,
+CG (v) ∩ CG (u3 ) is 2-group.
+    We will discuss it in the following two cases: O2 (G) = 1 or O2 (G) 6= 1. If
+O2 (G) = 1, then, in addition that G is of even order, we can conclude that
+G-module V satisfies Property II, as desired.
+    Now we assume that O2 (G) 6= 1. Then O2 (G)                 N since O2 (N ) = 1.
+                    ∼
+Since now G/N = S2 , we have that G = N O2 (G) and N ∩O2 (G) = O2 (N ) =
+1. Consequently [N, O2 (G)] = 1 and G      b = H \ O2 (G).
+    Take v ∈ V such that v (1) = 0 and v 0 (2) = x. Now we claim that
+             0                     0
+
+CG (v 0 ) ∩ CG (u1 ) = 1. Let (f, σ) ∈ CG (v 0 ) ∩ CG (u1 ), where f ∈ H \ and σ ∈ S.
+Then σ = 1 and (f, σ) = (f, 1) ∈ G ∩ H \ = N . Consequently f (2) ∈ CH (x) ∩
+CH (y) = 1. Now take ρ = (12) ∈ S, we can find a element (g, ρ) ∈ O2 (G)
+for some g ∈ H \ since G    b = H \ O2 (G). Since [N, O2 (G)] = 1, we have that
+(f, 1)(g, ρ) = (g, ρ)(f, 1). Consequently f (2ρ ) = g(2)−1 f (2)g(2) = 1, that is,
+f (1) = 1. Thus we have that f = 1, as claimed.
+    We can observe that (v, u1 ), (v, u2 ) and (v 0 , u1 ) lie in different regular
+orbits of G on V ⊕V , as desired. Thus the conclusion (4) is proved completely.
+    (5) Since K-module V1 satisfies Property I, K has at least two regular
+orbits on V1 ⊕ V1 . If J 0 is proper in K, then J 0 has at least four regular
+orbits on V1 ⊕ V1 and so does J. By (1), H has at least four regular orbits
+on W1 ⊕ W1 . Applying (1) again, G has at least four regular orbits on
+V ⊕ V .Thus we may assume J 0 = K. Consequently J(J 0 )-module V1 satisfies
+Property I.
+    When H is of even order, by induction, H has at least three regular orbits
+on W1 ⊕ W1 or H-module W1 satisfies Property I or Property II. Since
+44                                              CHAPTER 2. MAIN THEOREMS
+
+H is of even order, clearly H-module W1 does not satisfy Property I. If H
+has at least three regular orbits on W1 ⊕ W1 , then it follows from (b) that
+G has at least three regular orbits on V ⊕ V , as desired. If H-module W1
+satisfies Property II, then we can conclude that G has at least three regular
+orbits on V ⊕ V or H-module W1 satisfies Property II, as desired. When
+H is of odd order, applying (3) on (W1 , H, V1 , J), then we can conclude that
+H-module W1 satisfies Property I or H has at least four regular orbits on
+W1 ⊕ W1 . If the latter case holds, then it follows from (1) that G has at least
+four regular orbits on V ⊕ V , as desired.
+    Thus we only consider the case that H-module W1 satisfies Property I.
+Then we have
+    • H is an odd order group and O3 (H) = 1.
+    • There exists 0 6= x ∈ W1 and three different CH (x)-orbits with repre-
+sentatives y1 , y2 , z1 , z2 satisfying CH (x) ∩ CH (yi ) = 1 and CH (x) ∩ CH (zi ) is
+a 3-group for each i.
+    Firstly we consider the case |Ω| = t T      ≥ 3. By Lemma 30, there exists a
+3-partition {∆1 , ∆2 , ∆3 } of Ω such that 3i=1 StabS (∆i ) = 1.
+    Take v ∈ V = W1Ω such that v(i) = x for each i ∈ Ω. Consider the
+elements uj ∈ V , where 1 ≤ j ≤ 3, defined by
+            u1 (i) = y1 , i ∈ ∆1 ; u1 (i) = y2 , i ∈ ∆2 ; u1 (i) = z1 , i ∈ ∆3 ;
+            u2 (i) = y1 , i ∈ ∆1 ; u2 (i) = y2 , i ∈ ∆2 ; u2 (i) = z2 , i ∈ ∆3 ;
+            u3 (i) = y1 , i ∈ ∆1 ; u3 (i) = z1 , i ∈ ∆2 ; u3 (i) = z2 , i ∈ ∆3 ;
+     Since y1 , y2 , z1 , z2 lie in different orbits of CH (x) on W1 , it implies that
+u1 , u2 and u3 lie in different orbits of CG (v) on V . Then we will show that
+uj , 1 ≤ j ≤ 3 can generate regular orbits of CG (v) on V . Let (f, σ) ∈
+CG (v) ∩ CG (uj ) for 1 ≤ j ≤ 3, where f ∈ H \ and σ ∈ S. Then we have that
+f (i) ∈ CH (x) for each i ∈ Ω. Since y1 , y2 , z1 , z2 lie in different CH (x)-orbit in
+V , we have that σ ∈ StabS (∆) = 1.
+     Thus we conclude that f (i) ∈ CH (x) ∩ CH (yl ) or CH (x) ∩ CH (zk ) for each
+i ∈ Ω, where k, l = 1 or 2. Thus f (i) is a 3-element of H for each i ∈ Ω.
+Moreover, Take any element i0 ∈ ∆1 such that f (i0 ) ∈ CH (x) ∩ CH (y1 ) = 1.
+     Thus (f, σ) = (f, 1) ∈ H \ ∩ G = N is a 3-element and f (i0 ) = 1 for
+some i0 ∈ Ω. Recall that |Ω| = t ≥ 3 and we can argue O3 (N ) = 1 since
+O3 (H) = 1 by hypothesis. Applying Lemma 31(the case p = 3), we can
+conclude that f = 1. It implies that CG (v) ∩ CG (uj ) = 1 for 1 ≤ j ≤ 3, as
+desired. Thus G has at least three regular orbits on V ⊕ V , as desired.
+     Now we assume that |Ω| = 2 and S ∼          = S2 . Let v ∈ V such that v(i) = x
+for each i ∈ Ω and consider the elements u1 , u2 , u3 ∈ V defined by
+                                u1 (1) = y1 , u1 (2) = y2 ;
+2.4. PROOF OF THEOREM A                                                              45
+
+                               u2 (1) = y1 , u2 (2) = y1 ;
+                               u3 (1) = y2 , u3 (2) = y2 ;
+Clearly uj , 1 ≤ j ≤ 3 lie in different orbits of CG (v) on V . Then we will show
+that CG (v) ∩ CG (u1 ) = 1 and CG (v) ∩ CG (uj ) is 2-group for j = 2, 3.
+    Let (f, σ) ∈ CG (v) ∩ CG (uj ), 1 ≤ j ≤ 3. We have that f (1), f (2) ∈
+CH (x) ∩ CH (y1 ) or CH (x) ∩ CH (y2 ). Thus we can conclude that f (1) =
+f (2) = 1 and consequently f = 1. When j = 1, σ = 1; and when j = 2, 3,
+we have σ = (12). Thus CG (v) ∩ CG (u1 ) = 1 and CG (v) ∩ CG (uj ) is 2-group
+for j = 2, 3, as desired.
+    We will discuss it in the following two cases: O2 (G) = 1 or O2 (G) 6= 1.
+If O2 (G) = 1, then, in addition that G is of even order since G/N ∼     = S2 , we
+can conclude that G-module V satisfies Property II, as desired.
+    Now we assume that O2 (G) 6= 1. Clearly O2 (H) = 1 since H is of odd
+order. Thus we can argue that O2 (N ) = 1. Since G/N ∼            = S2 , we have
+that G = N O2 (G) and N ∩ O2 (G) = 1. Consequently [N, O2 (G)] = 1 and
+Gb = H \ O2 (G).
+    Take v 0 ∈ V such that v 0 (1) = x and v 0 (2) = 0. Define u0j ∈ V, 1 ≤ j ≤ 2
+as follows:
+
+                               u01 (1) = y1 , u01 (2) = z1 ;
+                               u02 (1) = y1 , u02 (2) = z2 ;
+    Now we claim that CG (v 0 ) ∩ CG (u0j ) = 1, 1 ≤ j ≤ 2. Let (f, σ) ∈
+CG (v 0 ) ∩ CG (uj ), where f ∈ H \ and σ ∈ S.
+    Then σ = 1 and (f, σ) = (f, 1) ∈ G ∩ H \ = N . Consequently f (1) ∈
+CH (x) ∩ CH (y1 ) = 1.
+    Now take ρ = (12) ∈ S, we can find a element (g, ρ) ∈ O2 (G) for
+some g ∈ H \ since G     b = H \ O2 (G). Since [N, O2 (G)] = 1, we have that
+(f, 1)(g, ρ) = (g, ρ)(f, 1). Consequently f (1ρ ) = g(1)−1 f (1)g(1) = 1, that is,
+f (2) = f (1ρ ) = 1. Thus we have that f = 1, as claim.
+    We can observe that (v, u1 ), (v 0 , u01 ) and (v 0 , u02 ) lie in different regular
+orbits of G on V ⊕V , as desired. Thus the conclusion (5) is proved completely.
+
+
+
+2.4      Proof of Theorem A
+   We prove:
+Theorem 33 (Theorem A). Let G be a soluble group and let V be a faithful
+completely reducible G-module, possibly of mixed characteristic. Suppose that
+46                                            CHAPTER 2. MAIN THEOREMS
+
+H is a subgroup of G such that the semidirect product [V ]H is S4 -free. Then
+H has at least two regular orbits on V ⊕ V . Furthermore, if H is Γ(23 )-free
+and SL(2, 3)-free, then H has at least three regular orbits on V ⊕ V .
+    Our proof depends heavily on some results which are of independent in-
+terest. The first one concerns the odd case.
+Theorem 34. Let G be a soluble group and let V be an irreducible and
+faithful G-module over GF(p), p an odd prime. If H ≤ G and H is of odd
+order, then H has at least five regular orbits on V ⊕ V .
+Proof. We argue by induction on |G|. By Lemma 15, we may assume that
+V is an imprimitive G-module. Assume that V = V1 ⊕ · · · ⊕ Vm (m ≥ 2)
+is a direct sum of subspaces which are permuted transitively by G. Write
+Ω = {1, . . . , m}, L = NG (V1 ) and N = CoreG (L). Then m = |G : L| and
+S = G/N is a permutation group on Ω induced by the action of G on a right
+transversal of L in G. By Lemma 2, we may assume without loss of generality
+G is a subgroup of G   b = U o S, where U = NG (V1 )/CG (V1 ) and L = NG (V1 )
+is a maximal subgroup of G and V = V1Ω . Since V is G-irreducible, we may
+also assume that V1 is L-irreducible.
+    Let A = (L ∩ H) CG (V1 )/CG (V1 ). Then the triple (L, A, V1 ) satisfies the
+hypotheses of the theorem. By induction, A has at least five regular orbits
+on V1 ⊕ V1 .
+    Assume that {V11 , . . . , V1t } is the H-orbit of V1 in {V1 , . . . , Vm }, t = |H :
+L ∩ H|. Let W = V11 ⊕ · · · ⊕ V1t . It is clear that we may assume t ≥ 2.
+Therefore, by Lemma 2, H/CH (V1 ) is isomorphic to a subgroup X of the
+wreath product A o T = A\ X, where T is a transitive permutation group on
+Ω1 = {1, . . . , t} and the action H/CH (V1 ) on W is equivalent to the action
+of X on V1Ω1 . By [18, Corollary 5.7], T has an strong regular orbit on P(Ω1 ).
+By Lemma 26, H has at least five regular orbits on W ⊕ W . Thus H has at
+least five regular orbits on V ⊕ V .
+Lemma 35. Let G be a soluble group and V be an irreducible and faithful
+G-module over GF(p), where p is a prime and p ≥ 5. Then G has at least
+five regular orbits on V ⊕ V .
+Proof. We suppose that the theorem is false and derive a contradiction. Let
+G be a counterexample of minimal order. If V is a primitive G-module, it
+follows from [5, Theorem 3.4] that either G has at least p ≥ 5 regular orbits on
+V ⊕V . Now we assume V is an imprimitive G-module. Let V = V1 ⊕· · ·⊕Vm
+(m ≥ 2) and G permutes {V1 , . . . , Vm }. Without loss of generality, G is a
+subgroup of G b = U o S, where U = NG (V1 )/CG (V1 ) and L = NG (V1 ) is
+a maximal subgroup of G, S ∼   = G/N is a primitive permutation group on
+2.4. PROOF OF THEOREM A                                                               47
+
+Ω = {1, . . . , m}, where N = CoreG (L), and V = V1Ω . Moreover, V1 is an
+irreducible and faithful U -module. By induction, U has at least five regular
+orbits on V1 ⊕ V1 . It follows from [26, Proposition 3.2(3)] that G has at least
+five regular orbits on V ⊕ V .
+    The following important result provides the key to prove Theorem A.
+
+Theorem 36. Let G be a soluble group and V be an irreducible and faithful,
+G-module over GF(p). If H ≤ G and V H is S4 -free, then either H has at
+least three regular orbits on V ⊕ V or V , as H-module, is of type (I) or
+type (II) (see Definition 27).
+
+Proof. We suppose that the theorem is false and derive a contradiction. Let
+G be a counterexample of minimal order. If V is a primitive G-module, it
+follows from Lemma 14 that either H has at least three regular orbits on
+V ⊕ V or the H-module V of type (I) or type (II). This contradicts the
+choice of G. Consequently, V is an imprimitive G-module. Then, repeating
+the arguments of the first part of the proof of Theorem 34 and using the
+same notation, we may assume without loss of generality G is a subgroup
+of Gb = U o S, where U = NG (V1 )/CG (V1 ) and L = NG (V1 ) is a maximal
+subgroup of G, S ∼      = G/N , N = CoreG (L), and V = V1Ω . Moreover, V1 is an
+irreducible L-module.
+    Let A = (L ∩ H) CG (V1 )/CG (V1 ). Then the triple (L, A, V1 ) satisfies the
+hypotheses of the theorem. The minimal choice of G implies that either A
+at least three regular orbits on V1 ⊕ V1 or V1 , as A-module, is of type (I) or
+type (II).
+    Let {V11 , . . . , V1t } be the H-orbit of V1 in {V1 , . . . , Vm }, t = |H : L ∩ H|.
+Let W = V11 ⊕ · · · ⊕ V1t . If we may assume t ≥ 2, then, by Lemma 2,
+H/CH (W ) is isomorphic to a subgroup X of the wreath product AoT = A\ X,
+where T is a transitive permutation group on Ω1 = {1, . . . , t} and the action
+H/CH (W ) on W is equivalent to the action of X on V1Ω1 .
+    Write S ∗ = HN/N ≤ S. Assume that S ∗ is not transitive on Ω. Our
+next aim is to prove that in this case S ∗ has at least four strong regular
+                                                                               0
+orbits on P(Ω). Suppose not. By Lemma 19, either |Ω1 | ≤ 4 or O2 (S ∗ ) acts
+transitively on Ω1 and Π3 (Ω1 , T ) ≥ |T |.
+    If |Ω1 | = 1, then W = V1 and H/CH (W ) has at least two regular orbits
+on W ⊕ W . Now we may assume that |Ω1 | = t ≥ 2.
+    If the A-module V1 is of type (I) or type (II), then, by Lemma 29, we
+have that H/CH (W ) has at least two regular orbits on W ⊕ W .
+    Assume that A at least three regular orbits on V1 ⊕V1 . If Π3 (Ω1 , T ) ≥ |T |,
+then H/CH (W ) has at least three regular orbits on W ⊕W by Wolf’s formula.
+Assume that |Ω1 | ≤ 4. If p = 2 or, p 6= 2 and A is of order even, then
+48                                         CHAPTER 2. MAIN THEOREMS
+
+H/CH (W ) has three regular orbits on W ⊕ W by Lemma 26. If p 6= 2 and
+A is of order odd, then H/CH (W ) has five regular orbits on W ⊕ W by
+Lemma 34.
+    Consequently, in both cases, H/CH (W ) has at least two regular orbits
+on W ⊕ W . This implies that H has at least four regular orbits on V ⊕ V ,
+contrary to assumption.
+    Thus S ∗ has at least four regular orbits on P(Ω). Let Li = NG (Li ) and
+Hi = (Li ∩ H)CG (Vi )/CG (Vi ) for all i ∈ {1, . . . , m}. Note that A = H1 and
+L = L1 . Arguing as before, we conclude that Hi has at least two regular
+orbits on Vi ⊕ Vi for all i ∈ {1, . . . , m}.
+    Choose ui , vi ∈ Vi ⊕Vi generating two different regular Hi -orbits on Vi ⊕Vi
+for all i ∈ {1, . . . , m}. Note that these elements can be chosen to satisfy the
+following property: if Vi = Vjh for some h ∈ H, then ui = uhj and vi = vjh . In
+particular, we have that ui , vj are not H-conjugate for all i, j ∈ {1, . . . , m}.
+    Assume that ∆ ⊆ Ω lies in a regular orbit of S ∗ on P(Ω). This means
+that StabS ∗ (∆) = 1. We may assume that ∆ = {1, . . . , s}, s < m. Let
+x = u1 + · · · + us + vs+1 + · · · + vn . Then CH (x) ≤ StabH (∆) ≤ N since
+StabS ∗ (∆) = 1. This implies that CH (x) ≤ CN (ui ) ≤ CH (Vi ), 1T≤ i ≤ s, and
+CH (x) ≤ CN (vj ) ≤ CH (Vj ), s + 1 ≤ j ≤ m. Hence CH (x) ⊆ i CG (Vi ) = 1
+and x lies in an H-regular orbit on V ⊕ V .
+    Therefore every regular orbit of S ∗ on P(Ω) determines a regular orbit
+of H on V ⊕ V . In particular, H has at least four regular orbits on V ⊕ V .
+This contradicts the choice of G.
+    Consequently, S ∗ acts transitively on Ω. Then Ω = Ω1 , S ∗ = T , V = W .
+We may assume that X = H and so H is a subgroup of H          b = A o T = A\ H.
+    If A had at least three regular orbits on V1 ⊕ V1 , then H would have
+at least three regular orbits on V ⊕ V by Lemmas 26 and 34. This would
+contradict the choice of G. Therefore, V1 is an A-module of type (I) or (II).
+    Assume that T has a strong regular orbit on P(Ω). Since, by Lemma 28,
+A has two regular orbits on V1 ⊕ V1 , it follows that H b has at least two regular
+orbits on V ⊕ V by Wolf’s formula. If |H      b : H| ≥ 2, then H would have at
+least four regular orbits on V ⊕ V , against the choice of G. Thus H = H.       b
+    Assume that T has even order. If V1 is of type (I), 3 divides |A| and
+so H has a subgroup isomorphic to C3 o C2 . In particular, H is not S3 -free.
+This contradicts our assumption since H is S3 -free by Lemma 7. If V1 is of
+type (II), then H has a subgroup isomorphic to SL(2, 3) o C2 which has a
+section isomorphic to S4 , which is not the case. Therefore |T | is odd. In this
+case, we can apply Corollary 21 to conclude that T has at least four strong
+regular orbits on P(Ω), and so H has at least four regular orbits on V ⊕ V
+by Wolf’s formula, unless (T, d(T )) = (A3 , 3) or (Γ(23 ), 7). In any case we
+2.4. PROOF OF THEOREM A                                                         49
+
+have (T, d(T )) ∈ K and the H-module V is of type (I) or (II), a conclusion
+which contradicts our choice of G.
+    Consequently, T has not strong regular orbits on P(Ω). By Lemma 20,
+                                  0
+either |Ω| = 2, T ∼ = S2 or O2 (S ∗ ) actsTtransitively on Ω and there exists
+3-partition {∆1 , ∆2 , ∆3 } of Ω such that i StabS ∆i = 1. We can then apply
+Lemma 29 to conclude that H has at least three regular orbits on V ⊕ V .
+This is the desired contradiction.
+    The Proof of Theorem A. We argue by induction on |G| + |H| + |V |.
+Assume that V is not an irreducible G-module. Then there exist non-zero
+G-submodules V1 and V2 such that V = V1 ⊕ V2 . Clearly, Vi is a faithful,
+completely reducible G/CG (Vi )-module, i = 1, 2. Since HCG (Vi )/CG (Vi )
+satisfies the hypotheses of the theorem, we conclude that H CG (Vi )/CG (Vi )
+has at least two regular orbits on Vi ⊕Vi , i = 1, 2. Moreover, if H is Γ(23 )-free
+and SL(2, 3)-free, then HCG (Vi )/CG (Vi ) has three regular orbits on Vi ⊕ Vi
+for each i. Therefore we may assume that V is an irreducible G-module over
+GF(p) for some prime p. Applying Theorem 36 we conclude that either H
+has at least three regular orbits on V ⊕ V or V , as H-module, is of type (I)
+or type (II). In the latter case, H has at least two regular orbits on V ⊕ V
+by Lemma 28. Note that if H is Γ(23 )-free and SL(2, 3)-free, then H-module
+V is not of type (I) or type (II), and so H has at least three regular orbits
+on V ⊕ V by Theorem 36.
+
+   We now draw a series of conclusions from Theorem A.
+
+Corollary 37 ([29]). Let G be a soluble group acting completely reducibly
+and faithfully on an odd order module V . Suppose that H is a subgroup of
+G. If H is nilpotent or 3 - |H|, then H has at least three regular orbits on
+V ⊕ V . If the Sylow 2-subgroup of the semidirect product V H is abelian, then
+H has at least two regular orbits on V ⊕ V .
+
+Corollary 38 (see [5, Theorem 1.1]). Let G be a soluble group and V be a
+faithful completely reducible G-module. Suppose that (|G|, |V |) = 1. Then G
+has at least two regular orbits on V ⊕ V .
+
+Proof. Arguing by induction on |V | + |G|, we may assume that V is an
+irreducible and faithful G-module over GF(p) for some prime p.
+    Applying Lemma 35, we may assume that p = 2 or 3. In both cases, V G
+is S4 -free. From Theorem 36, G has at least two regular orbits on V ⊕ V
+when p = 2, 3.
+   Our next corollary shows that Theorem A of [24] holds for supersoluble
+subgroups of a soluble group provided that |V | is odd.
+50                                        CHAPTER 2. MAIN THEOREMS
+
+Corollary 39. Let G be a soluble group acting completely reducibly and faith-
+fully on an odd order module V . If H is a supersoluble subgroup of G, then
+H has at least two regular orbits on V ⊕ V .
+
+Proof. Note that H is S4 -free. Since V is of odd order, HV is S4 -free. By
+Theorem A, H has at least two regular orbits on V ⊕ V .
+
+
+2.5      Proof of Theorem B
+     We prove:
+
+Theorem 40 (Theorem B). Let G be a finite soluble group and V be a fi-
+nite faithful completely reducible G-module (possibly of mixed characteristic).
+Suppose that H is a supersoluble subgroup of G. Then H has at least one
+regular orbit on V ⊕ V .
+
+     The following theorem is crucial.
+
+Theorem 41. Let G be a soluble group and let V be an irreducible and
+faithful G-module over GF(2). If H is a odd order supersoluble group of G,
+then H has at least four regular orbits on V ⊕ V or H-module V satisfies
+Property I.
+
+Proof. We argue by induction on |G|. By Lemma 17, H has four regular
+orbits on V ⊕ V or |V | = 23 , H = Γ(V ) ∼   = [C7 ]C3 . The later case satisfies
+Property I, as desired. Now we may assume that V is an imprimitive G-
+module. Assume that there V = V1 ⊕ ... ⊕ Vm (m ≥ 2) is a direct sum of
+subspaces which are permuted transitively by G. If we do this so that m is
+as small as possible, then we can assume that L = NG (V1 ) is maximal in G,
+and we observe also that L acts irreducibly on V1 . Write U = L/ CG (V1 ) and
+V1 is a faithful, irreducible U -module.
+    Assume that Ω1 , ..., Ωs (s ≥ 1) are the all H-orbit in {V1 , ..., Vm }. Write
+Wj = ΣW ∈Ωj W . Firstly We claim that H/ CH (Wj ) has at least four regular
+orbits on Wj ⊕ Wj or H/ CH (Wj )-module Wj satisfies Property I for each
+j.
+    Without loss of generality, we only consider the case j = 1 and assume
+that Ω1 = {V1 , ..., Vt }, t = |H : L ∩ H|. Write W = W1 , K = H/ CH (W1 )
+and J = NK (V1 )/ CK (V1 ).
+    Now we claim that K has at least four regular orbits on W ⊕ W or
+K-module W satisfies Property I. Observe that the action of J on V1 is
+equivalent to the action of (L ∩ H) CG (V1 )/ CG (V1 )(denote by A) ≤ U on
+V1 . Then the triple (U, A, V1 ) satisfies the hypotheses of the theorem. By
+2.5. PROOF OF THEOREM B                                                        51
+
+induction, A(also J) has at least four regular orbits on V1 ⊕ V1 or A(also
+J) -module V1 satisfies Property I. If J has at least four regular orbits on
+V1 ⊕ V1 , then it follows from Lemma 32(a) that K has at least four regular
+orbits on W ⊕ W , as claim. If J-module V1 satisfies Property I, since |H|
+is odd, then it follows from Lemma 32(c) that K has at least four regular
+orbits on W ⊕ W or K-module W satisfies Property I, as claim.
+    Thus H/ CH (Wj ) has at least two regular orbits on Wj ⊕ Wj for each
+1 ≤ j ≤ s. If s ≥ 2, then H has at least four regular orbits on V ⊕ V
+by Lemma 3, as desired. Now we may assume that s = 1, that is, H acts
+transitively on {V1 , ..., Vm }. Thus H = K and W = V , and consequently H
+has at least four regular orbits on V ⊕V or H-module V satisfies Property I.
+The theorem is proved.
+
+Theorem 42. Let G be a soluble group and V be an irreducible and faithful,
+G-module over GF(2). If H is a supersoluble subgroup of G, then either
+H has at least three regular orbits on V ⊕ V or V , as H-module, satisfies
+Property I or Property II.
+
+Proof. Work by induction on |GV |. If V is a primitive G-module, it follows
+from Lemma 16 that either H has at least three regular orbits on V ⊕ V or
+H-module V satisfies
+    (1) |V | = 22 and H = Γ(V ) ∼  = S3 ; or
+                3                  ∼
+    (2) |V | = 2 and H = Γ(V ) = [C7 ]C3 .
+    It is not difficult to find that the case (1) satisfies Property II and the
+case (2) satisfies Property I, as desired. Consequently, we assume that V is
+an imprimitive G-module. Then there V = V1 ⊕ ... ⊕ Vm (m ≥ 2) is a direct
+sum of subspaces which are permuted transitively by G. If we do this so that
+m is as small as possible, then we can assume that L = NG (V1 ) is maximal in
+G, and we observe also that L acts irreducibly on V1 . Write U = L/ CG (V1 )
+and V1 is a faithful, irreducible U -module.
+    Assume that Ω1 , ..., Ωs (s ≥ 1) are the all H-orbit in {V1 , ..., Vm }. Write
+Wj = ΣW ∈Ωj W .
+    Firstly We claim that H/ CH (Wj ) has at least three regular orbits on
+Wj ⊕ Wj or H/ CH (Wj )-module Wj satisfies Property I or Property II for
+each j.
+    Without loss of generality, we only consider the case j = 1 and as-
+sume that Ω1 = {V1 , ..., Vt }, t = |H : L ∩ H|. Write W = W1 , K =
+H/ CH (W1 ) and J = NK (V1 )/ CK (V1 ). Then W is a faithful H-module.
+Observe that the action of J on V1 is equivalent to the action of (L ∩
+H) CG (V1 )/ CG (V1 )(denoted byA) ≤ U on V1 . Then the triple (U, A, V1 )
+satisfies the hypotheses of the theorem. By induction, either A( also J)
+52                                         CHAPTER 2. MAIN THEOREMS
+
+has at least three regular orbits on V1 ⊕ V1 or A( alsoJ)-module V1 satisfies
+Property I or Property II.
+    If J-module V1 satisfies Property I, it follows from Lemma 32(5) that
+our claim holds. If J-module V1 satisfies Property II, it follows from
+Lemma 32(4) that our claim holds. Now we assume that J has at least
+three regular orbits on V1 ⊕ V1 . If J is of even order, then K has at least
+three regular orbits on W ⊕ W by Lemma 32(2). If J is of odd order, then
+A is of odd order and the triple (U, A, V1 ) satisfies the hypotheses of Theo-
+rem 41. Thus A(also J) has at least four regular orbits on V1 ⊕ V1 or A(also
+J) -module V1 satisfies Property I. If J has at least four regular orbits on
+V1 ⊕ V1 , then K has at least four regular orbits on W ⊕ W by Lemma 32(1),
+as claim. If J-module V1 satisfies Property I, then, by Lemma 32(5) again,
+our claim holds.
+    Now we have proven that H/ CH (Wj ) has at least three regular orbits on
+Wj ⊕ Wj or H/ CH (Wj )-module Wj satisfies Property I or Property II for
+each 1 ≤ j ≤ s. In particular, H/ CH (Wj ) has at least one regular orbits
+on Wj ⊕ Wj for each 1 ≤ j ≤ s. If there exists some j ∈ {1, ..., s} such
+that H/ CH (Wj ) has at least three regular orbits on Wj ⊕ Wj , then we can
+conclude that H has at least three regular orbits on V ⊕ V by Lemma 3, as
+desired.
+    Now we can assume that H/ CH (Wj )-module Wj satisfies Property I or
+Property II for each 1 ≤ j ≤ s. Thus if s = 1, then V , as H-module,
+satisfies Property I or Property II, as desired. Thus s ≥ 2.
+    Take C = {1 ≤ j ≤ s : H/ CH (Wj )-module Wj satisfies Property II};
+    Firstly we assume that C = ∅. Then H/ CH (Wj )-module Wj satisfies
+Property I for each 1 ≤ j ≤ s. It implies that H/ CH (Wj ) has at least two
+regular orbits on Wj ⊕ Wj . Since s ≥ 2, then we can conclude that H has at
+least four regular orbits on V ⊕ V by Corollary 3, as desired.
+    Now we assume that C =      6 ∅, then, without loss of generality, we may
+assume that C = {1, ..., l} for some 1 ≤ l ≤ s.
+    Write Kj = H/ CH (Wj ). For j = 1, we have
+    • K1 is an even order group and O2 (K1 ) = 1.
+    • Then there exists 0 6= x1 ∈ V1 and CK1 (x1 ) has three different orbits
+on V1 with representations y1 , z1 , z2 such that CK1 (x1 ) ∩ CK1 (y1 ) = 1 and
+CK1 (x1 ) ∩ CK1 (zi ) is a 2-group for i = 1, 2.
+    Recall that Kj has at least one regular orbit on Vj ⊕Vj for each 2 ≤ j ≤ s.
+We can assume that CKj (xj ) ∩ CKj (yj ) = 1 for some xj , yj ∈ Vj .
+    Thus we can conclude that CH (xj )∩CH (yj ) ⊆ CH (Wj ) for each 1 ≤ j ≤ s
+and Xi / CH (WP  1 ) is a 2-group,
+                               Ps where Xi = CHP    (x1 ) ∩ CH (zi ) for i = 1,
+                                                                             P2.s
+                    s                                  s
+    Write v = i=1 xi , u = i=1 yi , w1 = z1 + i=2 yi and w2 = z1 + i=2 yi .
+It is not difficult to find that u, w1 , w2 lie in different orbits of CH (v) on V .
+2.5. PROOF OF THEOREM B                                                             53
+
+Moreover, we have
+                               s
+                               \                            s
+                                                            \
+         CH (v) ∩ CH (u) =         CH (xj ) ∩ CH (yj ) ⊆          CH (Wj ) = 1;
+                             j=1                            j=1
+
+
+and
+                           s                        s
+                                 CH (Wj ) ∼
+                           \                        \
+CH (v) ∩ CH (wi ) ⊆ Xi ∩                  = (Xi ∩         CH (Wj )) CH (W1 )/ CH (W1 )
+                           j=2                      j=2
+
+
+   is a 2-group for i = 1, 2.
+   On the other hand, H is of even order since H/ CH (Wj ) is of even order.
+Moreover, for each j ∈ C, we have that H/ CH (Wj ) is an even order group
+and O2 (H/ CH (Wj )) = 1; and for each j ∈ {1, ..., s} − C, we have that
+H/ CH (Wj ) is an odd order group. Thus O2 (H) ≤ ∩si=1 CH (Wj ) = 1. Thus
+H-module V satisfies Property II, as desired. Thus the theorem is proved
+completely.
+    The Proof of Theorem B. Assume that the theorem is false and let
+(G, H, V ) be the counterexample such that |G|+|H|+|V | minimal. Firstly we
+can claim that V is an irreducible G-module. Assume not; let V = V1 ⊕ V2 ,
+where 0 6= Vi is a G-module. Then Vi is a faithful, completely reducible
+G/ CG (Vi )-module. Observe that H CG (Vi )/ CG (Vi ) satisfies the hypotheses.
+Thus by the choice of (G, H, V ), H CG (Vi )/ CG (Vi ) has at least one regular
+orbit on Vi ⊕ Vi . Thus H has at least one regular orbits on V ⊕ V , against
+the choice of (G, H, V ). Thus V is an irreducible G-module over the field
+of characteristic p for some prime p. Then V is a completely reducible G-
+module over GF(p), the filed of p elements. Arguing as above, we may assume
+that V is an irreducible, faithful G-module over GF(p). If p is odd, then it
+follows from Corollary 39 that H has at least two regular orbits on V ⊕ V .
+Thus we may assume that p = 2. It follows from Theorem 42 that H has at
+least three regular orbits on V ⊕ V , or H-module V satisfies Property I or
+Property II. In all these cases above, we can conclude that H has at least
+one regular orbit on V ⊕ V and the main theorem is completely proved.
+54   CHAPTER 2. MAIN THEOREMS
+Chapter 3
+
+Application I: On Gluck’s
+conjecture
+
+    Suppose that a group H acts on an abelian group A. Then H acts on the
+set A? = Irr(A) of all complex characters of A: for any χ ∈ A? and h ∈ H,
+                                      −1
+χh is defined by setting χh (a) = χ(ah ), a ∈ A.
+Lemma 43. Suppose that a group H acts on an abelian group A. Then
+
+  1. CH (A) = CH (A? ).
+  2. If A = A1 × · · · × An and Ai is H-invariant, then (A1 )? × · · · × (An )?
+     i and A? are H-isomorphic.
+  3. If A is a completely reducible H-module, then A? is a completely re-
+     ducible H-module.
+                                                                                    −1
+Proof.    1. Let h ∈ CH (A) and any χ ∈ A? . Then χh (a) = χ(ah ) =
+      χ(a), ∀a ∈ A. Thus χh = χ and so h ∈ CH (A? ). On the other hand, for
+      any h ∈ CH (A? ) and any a ∈ A, we have
+                    −1               −1
+              χ(ah a−1 ) = χ(ah )χ(a)−1
+                              = χh (a)χ(a)−1 = χ(a)χ(a)−1 = 1, ∀χ ∈ A? .
+              −1
+     Thus ah a−1 ∈
+                         T
+                             χ∈A? Ker χ = 1 and so h ∈ CH (A).
+
+  2. Let
+        ϕ : (A1 )? × · · · × (An )? −→ A∗ ; (χ1 , . . . , χn ) 7→ χ(a) = Πni=1 χi (ai ),
+     where a = Πni=1 ai ∈ A and ai ∈ Ai . It is not difficult to verify that ϕ is
+     a group-isomorphism. Now we show that it is an H-isomorphism. For
+
+                                           55
+56                 CHAPTER 3. APPLICATION: GLUCK’S CONJECTURE
+
+        any (χ1 , . . . , χn ) ∈ (A1 )? × · · · × (An )? , h ∈ H, a = Πni=1 ai ∈ A and
+        ai ∈ Ai , we have
+                                             n
+                                                         −1                          −1
+                                             Y
+                                h
+               ϕ((χ1 , . . . , χn ) )(a) =         χi (ahi ) = ϕ((χ1 , . . . , χn ))(ah )
+                                             i=1
+                                       = ϕ((χ1 , . . . , χn ))h (a).
+
+        Then we have ϕ((χ1 , . . . , χn )h ) = ϕ((χ1 , . . . , χn ))h , as desired.
+
+     3. Suppose that A = A1 × · · · × An for some irreducible H-modules Ai , for
+        each 1 ≤ i ≤ n. Then, by (2), (A1 )? × · · · × (An )? ∼
+                                                              =H A? . Since Ai is
+        an irreducible H-module, we have (Ai )? is an irreducible H-module by
+        [18, Proposition 12.1]. Thus A? is a completely reducible H-module.
+
+
+Lemma 44. Assume that a group X acts on an abelian group U and let
+G = [U ]X be the corresponding semidirect product. Then |X : CX (λ)| ≤ b(G)
+for each λ ∈ U ? .
+
+Proof. For each λ ∈ U ? = Irr(U ), given χ ∈ Irr(G, λ) we have that χ(1) ⩾
+|G : CG (λ)| by Theorem [12, Theorem 19.3]. Since U is abelian, we have
+U ⊆ CG (λ) and so CG (λ) = U CX (λ). Thus |X : CX (λ)| = |G : CG (λ)| ≤
+χ(1) ≤ b(G), as desired.
+     We are now ready to prove our third main result.
+
+Theorem 45 (Theorem C). Let G be a soluble group satisfying one of the
+following conditions:
+
+     1. G is S4 -free;
+
+     2. G/ F(G) is S4 -free and F(G) is of odd order;
+
+     3. G/ F(G) is S3 -free;
+
+     4. G/ F(G) is supersoluble.
+
+Then Gluck’s conjecture is true for G.
+
+Proof. Set U = F(G)/Φ(G) and V = U ? = Irr(U ). According to [3, Theo-
+rem A.10.6], there exists a subgroup X of G = G/Φ(G) such that G = U X
+and U ∩ X = 1 and U is a faithful completely reducible X-module. By
+Lemma 43, V is a faithful completely reducible X-module. Let U1 be the
+Hall 20 -subgroup and let U2 be the Sylow 2-subgroup of U . Then U = U1 ×U2 .
+                                                                             57
+
+Applying Lemma 43, we have that W = W1 ⊕ W2 , where Wi = (Ui )? , is X-
+isomorphic to V , and CX (Wi ) = CX (Ui ), i = 1, 2.
+    With the above observations in mind, the burden lies in proving that X
+has a regular orbit on W ⊕ W .
+    Assume that G is S4 -free. Since U2 X/CX (U2 ) is S4 -free, we have that
+X/CX (W2 ) = X/CX (U2 ) is S3 -free by Corollary 7. Applying again this
+corollary, we have that W2 X/CX (W2 ) is S4 -free. Since X/CX (W1 ) is S4 -free,
+we have W1 X/CX (W1 ) is S4 -free as W1 is 20 -group. By Theorem A that
+X/CX (Wi ) has at least two regular orbits on Wi ⊕ Wi , i = 1, 2. This implies
+that X has a regular orbit on W ⊕ W .
+    If G satisfies Statement (2), then W2 = 1 and W = W1 . Since X is S4 -
+free, W X is S4 -free. It follows from Theorem A that X has a regular orbit
+on W ⊕ W .
+    Assume that G satisfies Statement (3). Since X is S3 -free, we have
+X/CX (W2 ) is S3 -free. It follows from Corollary 7 that W2 X/CX (W2 ) is
+S4 -free. Since X/CX (W1 ) is S4 -free, we have W1 X/CX (W1 ) is S4 -free since
+W1 is 20 -group. Thus Wi X/CX (Wi ) is S4 -free for both i = 1, 2. It follows
+from Theorem A that X/CX (Wi ) has at least two regular orbits on Wi ⊕ Wi ,
+i = 1, 2. Thus X has a regular orbit on W ⊕ W .
+    Assume that G/ F(G) is supersoluble. Then X is supersoluble and V is
+a faithful, completely reducible X-module. By Theorem B, X has a regular
+orbit on V ⊕ V .
+    Thus X has a regular orbit on V ⊕ V in all cases. Then there exists
+λ ∈ V such that |CX (λ)| ≤ |X|1/2 . Consequently |X|1/2 ≤ |X : CX (λ)|. By
+Lemma 44, we have that |X|1/2 ≤ b(G/Φ(G)). Thus |G : F(G)| = |X| ≤
+b(G)2 .
+    We derive now some results related to Gluck’s conjecture. The first one
+is part of [2, Theorem 7].
+Corollary 46. Let G be a soluble group and let H be a π-Hall subgroup of
+G, where π = π(F(G)). Then |G : H| ≤ b(G)2 .
+Proof. Let K be a Hall π 0 -subgroup of G. Since (|K|, |U |) = 1, we have
+CK (U ) ≤ CK (F(G)) ≤ K ∩ F(G) = 1. Thus U and V are faithful completely
+reducible K-modules. By Lemma 44, |G : H| = |K| ≤ b(G)2 .
+   The second one is part of [2, Corollary 2].
+Corollary 47. Let G be a soluble group. If |G/ F(G)| is not divisible by 6,
+then Gluck’s conjecture holds.
+Corollary 48. [29, Theorem 4.6] Let G be a soluble group. Then |G :
+F(G)|30 ≤ b(G)2 .
+58             CHAPTER 3. APPLICATION: GLUCK’S CONJECTURE
+
+Proof. Let K be a 30 -Hall subgroup of X. Clearly KV is S4 -free, by Theo-
+rem A, K has a regular orbit on V ⊕ V . Thus there exists λ ∈ V such that
+                1
+| CK (λ)| ≤ |K| 2 . By Lemma 44,
+                 1
+              |K| 2 ≤ |K : CK (λ)| ≤ |X : CX (λ)| ≤ b(G/Φ(G)).
+
+Consequently |G : F(G)|30 = |K| ≤ b(G)2 .
+   Our last result of this chapter generalises a theorem of T. M. Keller and
+Y. Yang [16, Theorem 1.2] by replacing the nilpotent residual by the residual
+with respect to the saturated formation Σ3 of all S3 -free groups.
+
+Theorem 49. Let G be a soluble group and V a faithful completely reducible
+G-module, possibly of mixed characteristic. Let M be the largest orbit size in
+the action of G on V . Then
+
+                               |G : GΣ3 | ≤ M 2 .
+
+Proof. Let H be a Σ3 -projector of G. Then GΣ3 H = G and H ∈ Σ3 . Then
+H is S3 -free and clearly HV is S4 -free. By Theorem A, H has a regular orbit
+on V ⊕ V . It implies that |CH (v)| ≤ |H|1/2 for some v ∈ V . Let MH be the
+largest orbit size of H on V . Then it follows that |H| ≤ |H : CH (v)|2 ≤ MH2 .
+Hence clearly |G/GΣ3 | ≤ |H| ≤ MH2 ≤ M 2 , as desired.
+Chapter 4
+
+Application II: Intersections of
+subgroups
+
+    This chapter has as its main theme the study of intersections of normalis-
+ers and prefrattini subgroups of finite soluble groups associated to saturated
+formations and intersections of injectors associated to Fitting classes. It pro-
+vides answers to two questions raised by Kamornikov and Shemetkov and
+Vasil’ev in the Kourovka Notebook [19].
+
+Problem 1. [19, Kamornikov, Problem 17.55] Does there exist an absolute
+constant k such that the Frattini subgroup Φ(G) of a soluble group G is the
+intersection of k G-conjugates of any prefrattini subgroup H of G?
+
+Problem 2. [19, Shemetkov and Vasil’ev, Problem 17.39] Is there a positive
+integer k such that the hypercentre of any finite soluble group coincides with
+the intersection of k system normalisers of that group? What is the least
+number with this property?
+
+   The main results of the chapter can be summarised in the following the-
+orem.
+
+Theorem 50 (Theorem D). Let G be a soluble group and let H be a subgroup
+of G. Assume that one of the following statements holds.
+
+  1. H is an F-prefrattini subgroup of G for some saturated formation F;
+
+  2. Φ(G) = 1 and H is a F-normaliser of G for some saturated forma-
+     tion F;
+
+  3. H is an F-injector of G for some Fitting class F.
+
+                                      59
+60 CHAPTER 4. APPLICATION: INTERSECTIONS OF SUBGROUPS
+
+    Then there exists x, y, z ∈ G such that H ∩H x ∩H y ∩H z = CoreG (H), the
+largest normal subgroup of G contained in H. Furthermore, if G is S4 -free or
+F is composed of S3 -free groups, there exists x, y ∈ G such that H ∩H x ∩H y =
+CoreG (H).
+
+Corollary 51 ([17]). If I is a nilpotent injector of a soluble group G, then
+(G, I, F(G)) is a 3-conjugate system.
+
+
+4.1     Background results
+   In the sequel, F will be a saturated formation. We begin with an elemen-
+tary observation which will be used throughout the chapter.
+
+Lemma 52 ([3, Lemma A.16.3]). Let G = N H be a semidirect product of a
+normal subgroup N with a subgroup H.
+   (a) If n ∈ N , then H ∩ H n = CH (n),
+   (b) CoreG (H) = CH (N ).
+
+   Our next lemmas turn out to be crucial in the proof of our results about
+prefrattini subgroups.
+
+Lemma 53. Let N be a minimal normal subgroup of a soluble group G.
+Assume that M is an F-abnormal maximal subgroup of G complementing N
+in G. Then Pref F (G) = g∈G Pref F (M g ).
+                       S
+
+Proof. Since F-prefrattini subgroups of G are conjugate in G, it suffices to
+show that Pref F (M ) ⊆ Pref F (G).
+    Let H = W (M, ΣM , F) be the F-prefrattini subgroup of M associated to
+the Hall system ΣM of M . Let p be the prime dividing the order of N and
+let P be the Sylow p-subgroup of M in Σ. Then Σ = ΣM ∪ {P N } is a Hall
+system of G.
+    Let 1 = A0 ≤ A1 ≤ · · · ≤ An = M be a chief series of M , and let
+{Ai /Ai−1 | i ∈ I} be the set of all complemented F-eccentric
+                                                     T        chief factors in
+this series. By [1, Proposition 4.3.6], H = W (Σ) = i∈I Mi , where Mi is a
+maximal subgroup of M , complementing Ai /Ai−1 in G, into which the Hall
+system ΣM reduces, i ∈ I. Consider the following chief series of G:
+
+              1 ≤ N = A0 N ≤ A1 N ≤ · · · ≤ An N = M N = G
+
+   Then Ai N/Ai−1 N is a complemented F-eccentric chief factor of G if and
+only if Ai /Ai−1 is a complemented F-eccentric chief factor of M . Moreover,
+N is an F-eccentric chief factor of G which is complemented by M , and Σ
+4.2. MAIN RESULTS                                                           61
+
+reduces into M . Thus {N, Ai /Ai−1 | i ∈ I} is the set of all complemented
+F-eccentric chief factors in the above chief series.
+    On the other hand, Mi N is a maximal subgroup of G complementing
+Ai N/Ai−1 N in G and                T Mi N for all i ∈ I. T
+                     T Σ reduces into                     Applying [1, Propo-
+sition 4.3.6], M ∩ ( i∈I Mi N ) = i∈I Mi (M ∩ N ) = i∈I Mi = H is the
+F-prefrattini subgroup of G associated to Σ.
+
+Remark 54. Under the hypotheses of Lemma 53, (H ∩H m )N = HN ∩H m N
+for all m ∈ M .
+
+Proof. HN ∩ H m N = (H ∩ H m N )N = (H ∩ M ∩ H m N )N and M ∩ H m N =
+H m (M ∩ N ) = H m .
+
+Lemma 55. Let N be a minimal normal subgroup of a soluble group G.
+Assume that M is an F-abnormal maximal subgroup of G complementing N
+in G. Then LF (G) = CLF (M ) (N ).
+
+Proof. By Lemma 53, we have:
+                         \
+                LF (G) = {H : H ∈ Pref F (G)}
+                         \\
+                       =     {H : H ∈ Pref F (M g )}
+                              g∈G
+                              \
+                          =         LF (M )g = CoreG (LF (M )).
+                              g∈G
+
+
+    Since LF (G)∩N ≤ M ∩N = 1, we have LF (G) ≤ CLF (M ) (N ). On the other
+hand, since CLF (M ) (N ) is normalised by M and centralised by N , we have
+that CLF (M ) (N ) is normal in G and hence CLF (M ) (N ) ≤ CoreG (LF (M )) =
+LF (G).
+
+Lemma 56 ([5, Theorem 1.4]). Let G be a soluble group and V a finite faith-
+ful G-module. If V is completely reducible (possibly of mixed characteristic),
+then there exist v1 , v2 , v3 ∈ V such that CG (v1 ) ∩ CG (v2 ) ∩ CG (v3 ) = 1.
+
+
+4.2     Main results
+   We have considered convenient to give the following definition.
+
+Definition 57. A 3-tuple (G, X, Y ) is said to be a k-conjugate system if G
+is a group, X, Y are subgroups of T   G with Y = CoreG (X), and there exist k
+elements g1 , . . . , gk such that Y = ki=1 X gi .
+62 CHAPTER 4. APPLICATION: INTERSECTIONS OF SUBGROUPS
+
+   Assume we are trying to prove a result of the following type: Let G
+be a soluble group and let H be an F-prefrattini subgroup of G. Then
+(G, H, LF (G)) is a k-conjugate system.
+   Assume the statement is false. Thus there would exist a counterexample
+G of minimal order. Let H be an F-prefrattini subgroup of G such that
+(G, H, LF (G)) is not a k-conjugate system. Then:
+   (i) LF (G) = 1. In particular, Φ(G) = 1.
+    For suppose that X is a minimal normal subgroup of G contained in
+LF (G). Then H/X is an F-prefrattini subgroup of G by Lemma 11. There-
+fore, because |G/X| < |G|, it follows that (G/X, H/X, LF (G/X)) is a k-
+conjugate system. Since LF (G/X) = LF (G)/X by Lemma 12, we have that
+(G, H, LF (G)) is a k-conjugate system, giving a contradiction. Thus State-
+ment (i) must hold.
+   Also (ii) There exists a minimal normal subgroup N and an F-abnormal
+maximal subgroup M containing H of G such that G = M N and M ∩ N = 1
+and (M, H, LF (M )) is a k-conjugate system.
+   Let N be the minimal normal subgroup of G. Then N is a p-group for
+some prime p. By Statement (i), N is not contained in LF (G) = 1 and so
+there exists an F-abnormal maximal subgroup of M such that G = N M
+and N ∩ M = 1. By Lemma 53, we may assume that H is an F-prefrattini
+subgroup of M . Again by choice of G, (M, H, LF (M )) Tis a k-conjugate system
+and therefore there exist m1 , . . . , mk ∈ M such that ki=1 H mi = LF (M ).
+    (iii) Assume that N is a p-group for some prime p and L = LF (M ). Then
+N is a faithful completely reducible L-module over GF(p), the finite field of
+p-elements.
+    Clearly N is an irreducible M -module over GF(p). By [3, Theorem B.7.3],
+N is a completely reducible L-module. By Lemma 55 and Statement (i),
+CL (N ) = 1 and so N is faithful for L.
+   Let T = LN . Then CoreT (L) = 1. Moreover:
+   (iv) (T, L, 1) is not a k-conjugate system.
+   Assume                                         Let n1 , . . . , nk ∈ N such
+          that (T, L, 1) is a k-conjugate system. T
+that i=1 L = 1. We consider the subgroup D = ki=1 H mi ni . Then
+    Tk    ni
+
+
+
+
+                  k
+                  \                   k
+                                      \                  k
+                                                         \
+             D≤         H mi ni N =         H mi N = (       H mi )N = LN
+                  i=1                 i=1            i=1
+4.2. MAIN RESULTS                                                                 63
+
+by Remark 54. Then
+                                        k
+                                        \
+                 D = D ∩ LN =                 H mi ni ∩ LN
+                                        i=1
+                        k
+                        \                              k
+                                                       \
+                                 mi           ni
+                    =       (H        ∩ LN )       =         Lni = 1 = LF (G).
+                        i=1                            i=1
+
+Therefore (G, H, LF (G)) is a k-conjugate system, against our supposition.
+    The next two theorems subsume the main result of [15] and give a com-
+plete answer to a general version of Question 1.
+
+Theorem 58. Let H be an F-prefrattini subgroup of a soluble group G. Then
+(G, H, LF (G)) is a 4-conjugate system.
+
+Proof. Assume that the result is not true and let G be a counterexample of
+minimal order such that (G, H, LF (G)) is not a 4-conjugate system. Then
+Statements (i)–(iv) hold for k = 4. By Statement (iii), N is a faithful com-
+pletely reducible L-module over GF(p) for some prime p. By Lemma 56,
+there exist v1 , v2 , v3 ∈ N such that CL (v1 ) ∩ CL (v2 ) ∩ CL (v3 ) = 1. It implies
+that L ∩ Lv1 ∩ Lv2 ∩ Lv3 = 1 by Lemma 52. Thus (T, L, 1) is a 4-conjugate
+system, contrary to Step (iv).
+
+Theorem 59. Let H be an F-prefrattini subgroup of a soluble group G.
+Assume that either G is S4 -free or F is composed of S3 -free groups. Then
+(G, H, LF (G)) is a 3-conjugate system.
+
+Proof. Suppose, arguing by contradiction, that (G, H, LF (G)) is not a 3-
+conjugate system. Let us choose G a counterexample of least order. Then
+Statements (i)–(iv) hold for k = 3. By Statement (iii), L ∩ N = 1 and
+N is a faithful completely reducible L-module over GF(p) for some prime
+p. If G is S4 -free, then LN is S4 -free. Assume that F is composed of S3 -
+free groups. Recall that L = LF (M ), by [1, Proposition 4.3.17], L/Φ(M ) =
+ZF (M/Φ(M )). Let X be the class of all soluble S3 -free groups. By Lemma 10,
+X is a subgroup-closed saturated formation. Since F ⊆ X by hypothesis,
+it follows that ZF (M/Φ(M )) ≤ ZX (M/Φ(M )). By [3, Theorem IV.6.15],
+ZX (M/Φ(M )) ∈ X. Thus L/Φ(M ) = ZF (M/Φ(M )) is S3 -free. Then, by
+Lemma 10, L is S3 -free. If p is odd, then LN is S4 -free by Lemma 6 and if
+p = 2, then LN is S4 -free by Corollary 7. In both cases, we can apply Theo-
+rem A to conclude that there exist v1 , v2 ∈ N such that CL (v1 ) ∩ CL (v2 ) = 1.
+Thus, by Lemma 52, (T, L, 1) is a 3-conjugate system, contrary to State-
+ment (iv).
+64 CHAPTER 4. APPLICATION: INTERSECTIONS OF SUBGROUPS
+
+    If F = N, the formation of all nilpotent groups, then LF (G) = L(G)
+is the intersection of all self-normalising maximal subgroups of G. It is a
+characteristic nilpotent subgroup of G that was introduced by Gaschütz in
+[8]. If F is the trivial formation, then LF (G) = Φ(G), the Frattini subgroup
+of G. Hence:
+Corollary 60 ([14]). If G is soluble and H is an N-prefrattini subgroup of
+G, then (G, H, L(G)) is a 3-conjugate system.
+Corollary 61 ([15]). If G is soluble and H is a prefrattini subgroup of G,
+then (G, H, Φ(G)) is a 3-conjugate system.
+    The proof of our next theorem depends on a nice result about factori-
+sations of prefrattini subgroups proved in [10, Theorem 4.1] (see [1, Theo-
+rem 4.3.32]).
+Lemma 62. If D is an F-normaliser and W is a prefrattini subgroup of a
+soluble group G, both associated to the Hall system Σ of G, then D and W
+permute and DW is the F-prefrattini subgroup of G associated to Σ.
+Theorem 63. Let D be an F-normaliser of a soluble group G. If Φ(G) = 1,
+then (G, D, ZF (G)) is a 4-conjugate system.
+Proof. Let D be the F-normaliser of G associated to the Hall system Σ.
+Assume that H is the F-prefrattini subgroup of G associated to Σ. Then,
+by Lemma 62, we have D ≤ H. Since Φ(G) = 1, it follows by [1, Proposi-
+tion 4.3.17] that LF (G) = ZF (G). By Theorem 58, we have that (G, H, ZF (G))
+is a 4-conjugate system. Hence
+
+                        ZF (G) ≤ D ∩ Dx ∩ Dy ∩ Dz
+                               ≤ H ∩ Hx ∩ Hy ∩ Hz
+                               = ZF (G).
+
+Thus (G, D, ZF (G)) is a 4-conjugate system.
+Theorem 64. Let D be an F-normaliser of a soluble subgroup G such that
+Φ(G) = 1. Assume that either G is S4 -free or F is composed of S3 -free groups.
+Then (G, D, ZF (G)) is a 3-conjugate system.
+Proof. Assume that Σ is the Hall system of G to which D is associated.
+Let H be the F-prefrattini subgroup of G associated to Σ. By Theorem 59,
+(G, H, LF (G)) is a 3-conjugate system. Since D ≤ H by Lemma 62 and
+LF (G) = ZF (G) by [1, Proposition 4.3.17], it follows that (G, D, ZF (G)) is a
+3-conjugate system.
+4.2. MAIN RESULTS                                                              65
+
+    Recall that if F = N is the formation of all nilpotent groups, then the N-
+normalisers of a soluble group G are exactly the system normalisers of G and
+ZN (G) = Z∞ (G) is the hypercentre of G. Therefore the answer of Question 2
+for groups with trivial Frattini subgroup is contained in the following:
+
+Corollary 65. Let G be a soluble group with Φ(G) = 1. If D is a system
+normaliser of G, then (G, D, Z∞ (G)) is a 3-conjugate system.
+
+    Our next example shows that (G, D, Z∞ (G)) is not a 2-conjugate system
+in general.
+
+Example 1. Let D be the dihedral group of order 8. Then D has an ir-
+reducible and faithful module V of dimension 2 over the field of 3-elements
+such that CD (v) 6= 1 for all v ∈ V . Let G = V o D be the corresponding
+semidirect product. Then D is a system normaliser of G and Z∞ (G) = 1. By
+[3, Lemma A.16.3], D ∩ Dv = CD (v) 6= 1 for all v ∈ V . Hence (G, D, Z∞ (G))
+is not a 2-conjugate system.
+
+   Our last theorem has Mann’s result ([17]) as starting point and analyses
+the intersections of injectors associated to Fitting classes of soluble groups.
+
+Theorem 66. Let F be a Fitting class and let I be an F-injector of a soluble
+group G. Then (G, I, GF ) is a 4-conjugate system. Furthermore, if either G
+is S4 -free or F is composed of S3 -free groups, then (G, I, GF ) is a 3-conjugate
+system.
+
+Proof. Let R = CoreG (I) = GF . We prove that (G, I, R) is a 4-conjugate
+system by induction on the order of G. Let F be the normal subgroup of
+G such that F/R = F(G/R), the Fitting subgroup of G/R. Clearly, F ∩ I
+is contained in R. Hence F ∩ I = R. On the other hand, by [3, Theo-
+rem IX.1.5], I is an F-injector of F I. Thus R ≤ S = (F I)F is contained
+in I. Assume that R is a proper subgroup of S and let N/R be a minimal
+normal subgroup of F I/R contained in S/R. Then N belongs to F and so
+N is contained in R. This is a contradiction yields S = R. If F I were
+a proper subgroup of G, (F I, I, R) would be a 4-conjugate system. Hence
+(G, I, R) would be a 4-conjugate system and the result would follow. There-
+fore we may assume that G = F I. Let M be the normal subgroup of G such
+that M/R = Φ(G/R). Then G/M = (IM/M )(F/M ). Applying [3, The-
+orem A.10.6], F/M = Soc(G/M ) is a self-centralising normal subgroup of
+G/M . In particular, F/M is a completely reducible G/M -module (possibly
+of mixed characteristic). By Lemma 56, there exist v1 M, v2 M, v3 M ∈ F/M
+such that CIM/M (v1 M ) ∩ CIM/M (v2 M ) ∩ CIM/M (v3 M ) = 1. It implies that
+I ∩ I v1 ∩ I v2 ∩ I v3 ≤ R by Lemma 52. Thus (G, I, R) is a 4-conjugate system.
+66 CHAPTER 4. APPLICATION: INTERSECTIONS OF SUBGROUPS
+
+    Assume that either G is S4 -free or F is composed of S3 -free groups. If
+G is S4 -free, then G/M = (IM/M )(F/M ) is S4 -free. By Theorem A, there
+exist v1 M, v2 M ∈ F/M such that CIM/M (v1 M ) ∩ CIM/M (v2 M ) = 1.
+    Suppose that F is composed of S3 -free groups. Denote with bars the
+images in G = G/M = IF . Since I ∈ F, I is S3 -free. Let A be the Hall 20 -
+subgroup of F . It follows that IA is S4 -free. Let B be the Sylow 2-subgroup
+of F . By Corollary 7, IB/CI (B) is S4 -free. Then we can apply Theorem A
+to conclude that there exist a1 M, a2 M ∈ A and b1 M, b2 M ∈ B such that
+CI (a1 M ) ∩ CI (a2 M ) ⊆ CI (A) and CI (b1 M ) ∩ CI (b2 M ) ⊆ CI (B). Let vi =
+ai + bi , i = 1, 2. Then CI (v1 M ) ∩ CI (v2 M ) ⊆ CI (A) ∩ CI (B) = CI (F ) = 1.
+    In both cases, we conclude that (G, I, R) is a 3-conjugate system by
+Lemma 52. This completes the proof of the theorem.
+
+Corollary 67 ([17]). If I is a nilpotent injector of a soluble group G, then
+(G, I, F(G)) is a 3-conjugate system.
+Bibliography
+
+ [1] A. Ballester-Bolinches and L. M. Ezquerro. Classes of Finite Groups,
+     volume 584 of Mathematics and Its Applications. Springer, Dordrecht,
+     2006.
+
+ [2] J. P. Cossey, Z. Halasi, A. Maróti, and H. N. Nguyen. On a conjecture
+     of Gluck. Math. Z., 279:1067–1080, 2015.
+
+ [3] K. Doerk and T. Hawkes. Finite soluble groups, volume 4 of De Gruyter
+     Expositions in Mathematics. Walter de Gruyter & Co., Berlin, 1992.
+
+ [4] S. Dolfi. Intersections of odd order Hall subgroups. Bull. London Math.
+     Soc., 37(1):61–66, 2005.
+
+ [5] S. Dolfi. Large orbits in coprime actions of solvable groups. Trans.
+     Amer. Math. Soc., 360(1):135–152, 2008.
+
+ [6] S. Dolfi and E. Jabara. Large character degrees of solvable groups with
+     abelian Sylow 2-subgroups. J. Algebra, 313(2):687–694, 2007.
+
+ [7] A. Espuelas. Large character degrees of groups of odd order. Illinois J.
+     Math., 35(3):499–505, 1991.
+
+ [8] W. Gaschütz. Über die Φ-Untergruppe endlicher Gruppen. Math. Z.,
+     58:160–170, 1953.
+
+ [9] D. Gluck. The largest irreducible character degree of a finite group.
+     Canad. J. Math., 37(3):442–415, 1985.
+
+[10] T. Hawkes. Analogues of Prefrattini subgroups. In Proc. Internat. Conf.
+     Theory of Groups (Canberra, 1965), pages 145–150. Gordon and Breach,
+     New York, 1967.
+
+[11] B. Huppert. Endliche Gruppen I, volume 134 of Grund. Math. Wiss.
+     Springer Verlag, Berlin, Heidelberg, New York, 1967.
+
+                                     67
+68                                                         BIBLIOGRAPHY
+
+[12] B. Huppert. Character theory of finite groups, volume 25 of De Gruyter
+     Expositions in Mathematics. Walter de Gruyter, 1998.
+
+[13] B. Huppert and N. Blackburn. Finite Groups II, volume 242 of Grund.
+     Math. Wiss. Springer-Verlag, Berlin, Heidelberg, New York, 1982.
+
+[14] S. F. Kamornikov. One characterization of the Gaschütz subgroup of a
+     finite soluble group. Fundam. Prikl. Mat., 20:65–75, 2015. Russian.
+
+[15] S.F. Kamornikov. Intersections of prefrattini subgroups in finite soluble
+     groups. Int. J. Group Theory, 6(2):1–5, 2017.
+
+[16] T. M. Keller and Y. Yang. Abelian quotients and orbit sizes of solvable
+     linear groups. Israel J. Math., 211:23–44, 2016.
+
+[17] A. Mann. The intersection of Sylow subgroups. Proc. Amer. Math. Soc.,
+     53(2):262–264, 1975. Addendum: ibidem Vol. 62, No. 1, p. 188 (1977).
+
+[18] O. Manz and T.R. Wolf. Representations of Solvable Groups, volume
+     185 of Mathematical Society Lecture Note Series. Cambridge University
+     Press, London, 1993.
+
+[19] V. D. Mazurov and E. I. Khukhro, editors. Unsolved problems in Group
+     Theory: The Kourovka Notebook. Russian Academy of Sciences, Siberian
+     Branch, Institute of Mathematics, Novosibirsk, Russia, 17 edition, 2010.
+
+[20] A. Moretó and T. R. Wolf. Orbit sizes, character degrees and Sylow
+     subgroups. Adv. Math., 184(1):18–36, 2004. Erratum: ibid., no. 2,
+     page 409.
+
+[21] D. S. Passman. Groups with normal, solvable Hall p0 -subgroups. Trans.
+     Amer. Math. Soc., 123(1):99–111, 1966.
+
+[22] P. Schmid. The solution of the k(GV )-problem, volume 4 of ICP Ad-
+     vanced Texts in Mathematics. Imperial College Press, London, 2007.
+
+[23] Á. Seress. The minimal base size of primitive solvable permutation
+     groups. J. London Math. Soc., 53(2):243–255, 2006.
+
+[24] T. R. Wolf. Large orbits of supersolvable linear groups. J. Algebra,
+     215:235–247, 1999.
+
+[25] T. R. Wolf. Regular orbits of induced modules of finite groups. In C. Y.
+     Ho, P. Sin, P. H. Tiep, and A. Turull, editors, Finite Groups 2003.
+     Proceedings of the Gainesville conference on finite groups. March 6–12,
+BIBLIOGRAPHY                                                               69
+
+    2003. In honour of John Thompson to this 70th birthday, pages 389–399,
+    Berlin, 2004. Walter de Gruyter.
+
+[26] Y. Yang. Orbits of the actions of finite solvable groups. J. Algebra,
+     321:2012–2021, 2009.
+
+[27] Y. Yang. Regular orbits of finite primitive solvable groups. J. Algebra,
+     323:2735–2755, 2010.
+
+[28] Y. Yang. Large character degrees of solvable 30 -groups. Proc. Amer.
+     Math. Soc., 139(9):3171–3173, 2011.
+
+[29] Y. Yang. Large orbits of subgroups of solvable linear groups. Israel J.
+     Math., 199(1):345–362, 2014.
+
+[30] V. I. Zenkov. Intersections of nilpotent subgroups in finite groups. Fun-
+     dam. Prikl. Mat., 2(1):1–92, 1996.
+
+[31] J. Zhang. Finite groups with few regular orbits on the power set. Algebra
+     Colloq., 4(4):471–480, 1997.
+

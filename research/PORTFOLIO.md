@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-12T16:46:14.104631+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-12T17:12:33.711961+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 17.39 | Extend an extraspecial odd-p group by an involution fixing one isotropic half. | Complete negative candidate: exact minimum d+1 system normalizers in a centerless supersoluble metabelian group of order 2p^(2d+1), with Frattini order p. Seven independent/native full intersection-state searches and the 25-file replay pass. The prior theorem assumes trivial Frattini subgroup. Priority and outside review pending. |
 | 20.124 | Use a level-lowering endomorphism with image F' and an invertible difference map. | Partial affirmative result for every infinite rank, with an explicit finite-product operator. GAP and independent free-word controls pass. Finite rank remains unresolved; no complete-count increment or priority claim. |
 | 20.89 / 19.83 | Characterize scalar layers; separate finite sinks by finite quotients. | Partial affirmative results for triangularizable and torsion-free linear groups. Finitely many almost Engel elements generate a finite-by-nilpotent subgroup; each minimal sink generates a finite subgroup. GAP/Python controls pass; finite sink subgroups need not be ambient normal. General closure remains unresolved; no complete-count increment or priority claim. |
 | 20.89 /19.83 prior cases | Commuting endomorphisms of the derived subgroup; finite characteristic kernels. | Metabelian closure is a verified rediscovery, and virtually abelian closure a prior-theorem consequence. Exact dihedral classification and26-file replay pass; no new candidate or priority claim. |

@@ -1,0 +1,588 @@
+Accepted Manuscript
+
+On two questions from the Kourovka Notebook
+
+
+A. Ballester-Bolinches, John Cossey, S.F. Kamornikov, H. Meng
+
+
+
+
+PII:              S0021-8693(17)30672-5
+DOI:              https://doi.org/10.1016/j.jalgebra.2017.12.014
+Reference:        YJABR 16502
+
+To appear in:     Journal of Algebra
+
+Received date:    5 July 2017
+
+
+
+Please cite this article in press as: A. Ballester-Bolinches et al., On two questions from the Kourovka Notebook, J. Algebra
+(2018), https://doi.org/10.1016/j.jalgebra.2017.12.014
+
+
+This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are
+providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting
+proof before it is published in its final form. Please note that during the production process errors may be discovered which could
+affect the content, and all legal disclaimers that apply to the journal pertain.
+          On two questions from the Kourovka
+                      Notebook
+    A. Ballester-Bolinches∗          John Cossey†           S. F. Kamornikov‡
+                                     H. Meng §
+
+
+                                      Abstract
+            The aim of this paper is to give answers to some questions con-
+        cerning intersections of system normalisers and prefrattini subgroups
+        of ﬁnite soluble groups raised by the third author, Shemetkov and
+        Vasil’ev in the Kourovka Notebook [10]. Our approach depends on
+        results on regular orbits and it can be also used to extend a result
+        of Mann [9] concerning intersections of injectors associated to Fitting
+        classes.
+            Mathematics Subject Classiﬁcation (2010): 20D10, 20D20
+            Keywords: ﬁnite groups, soluble groups, formations, Fitting classes,
+        prefrattini subgroups, normalisers, injectors
+
+
+1       Introduction
+The ﬁrst part of this paper has as its main theme the study of intersections
+of normalisers and prefrattini subgroups of ﬁnite soluble groups associated
+to saturated formations, and provides answers to two questions raised by
+the third author and Shemetkov and Vasil’ev in the Kourovka Notebook
+[10]. Hence all groups to be considered here are ﬁnite, and we assume this
+without further comment.
+    ∗
+     Departament de Matemàtiques, Universitat de València, 46100 Burjassot, València,
+Spain, email: Adolfo.Ballester@uv.es
+   †
+     Australian National University, Canberra, ACT 2601, Australia, email:
+John.Cossey@anu.edu.au
+   ‡
+     Department of Mathematics, Francisk Skorina Gomel State University, Gomel 246019,
+Belarus, email: sfkamornikov@mail.ru
+   §
+     Departament de Matemàtiques, Universitat de València, 46100 Burjassot, València,
+Spain, email: hangyangmenges@gmail.com
+
+
+
+                                           1
+     In order to understand and motivate what is to follow it is convenient to
+use theorems of Dolﬁ, Passman and Zenkov as a model. Dolﬁ [3] proved that
+if π is a set of primes, the largest normal π-subgroup Oπ (G) of a π-soluble
+group is the intersection of three G-conjugates of a given Hall π-subgroup H
+of G. This result extends earlier theorems of Passman [12] (case |π| = 1) and
+Zenkov [13](case H nilpotent). On the other hand, as Mann pointed out in
+[9], the results of Passman imply that the Fitting subgroup F(G) of a soluble
+group G is the intersection of three G-conjugates of a nilpotent injector H
+of G.
+     Bearing in mind the above results and the important role played by the
+system normalisers and prefrattini subgroups in the structural study of sol-
+uble groups, the following questions turn out to be natural and interesting:
+
+Question 1. [10, Kamornikov, Problem 17.55] Does there exist an absolute
+constant k such that the Frattini subgroup Φ(G) of a soluble group G is the
+intersection of k G-conjugates of any prefrattini subgroup H of G?
+
+Question 2. [10, Shemetkov and Vasil’ev, Problem 17.39] Is there a positive
+integer k such that the hypercentre of any ﬁnite soluble group coincides with
+the intersection of k system normalisers of that group? What is the least
+number with this property?
+
+    Recall that a formation is a class of groups F which is closed under taking
+epimorphic images and such that every group G has an smallest normal
+subgroup with quotient in F. This subgroup is called the F-residual of G
+and denoted by GF . A maximal subgroup M of a group G containing GF is
+called F-normal in G; otherwise, M is said to be F-abnormal.
+    We say that F is saturated if it is closed under Frattini extensions. In
+such case, by a well-known theorem of Gaschütz-Lubeseder-Schmid [2, The-
+orem IV.4.6], there exists a collection of formations F(p) ⊆ F, one for each
+prime p, such that F coincides with the class of all groups G such that if
+H/K is a chief factor of G, then G/ CG (H/K) ∈ F(p) for all primes p divid-
+ing |H/K|. In this case, we say that H/K is F-central in G and F is locally
+deﬁned by the F(p). H/K is called F-eccentric if it is not F-central.
+    Note that a chief factor H/K supplemented by a maximal subgroup M
+is F-central in G if and only if M is F-normal in G.
+    Every group G has a largest normal subgroup such that every chief factor
+of G below it is F-central in G. This subgroup is called the F-hypercentre of
+G and it is denoted by ZF (G) (see [2, Section IV.6]).
+    Our ﬁrst main theorem subsumes the main result of [8] and gives a com-
+plete answer to a general version of Question 1. It provides a beautiful
+
+
+                                      2
+description of the intersection of four (in some cases three) F-prefrattini sub-
+groups of a soluble group introduced by Hawkes in [6], where F is a saturated
+formation. If F is the trivial formation, then these subgroups coincide with
+the prefrattini subgroups formulated by Gaschütz in [5].
+   In order to state it, we consider convenient to give some deﬁnitions.
+Deﬁnition 3. A 3-tuple (G, X, Y ) is said to be a k-conjugate system if G
+is a group, X, Y are subgroups ofG with Y = CoreG (X), and there exist k
+elements g1 , ..., gk such that Y = ki=1 X gi .
+    Let Σ be a Hall system of the soluble group G (see [2, Chapter I, Sec-
+tion 1.4]). Let S p be the p-complement of G contained in Σ, and denote by
+W p (G) the intersection of all F-abnormal maximal subgroups of G contain-
+ing S p (W p (G) = G, if the set of all F-abnormal
+                                                 maximal subgroups of G
+containing S p is empty). Then W (G, Σ, F) = p∈π(G) W p (G) is called the
+F-prefrattini subgroup of G associated to Σ. The F-prefrattini subgroups of
+G form a characteristic class of G-conjugate subgroups (see [1, Section 4.3]
+for an exhaustive study of F-prefrattini subgroups).
+    According to [1, Proposition 4.3.17], the intersection LF (G) of all F-
+abnormal maximal subgroups of a soluble group G is the core of every F-
+prefrattini subgroup of G and LF (G)/Φ(G) = ZF (G/Φ(G)) for every group
+G. In fact, we have:
+Theorem A. Let F be a saturated formation and let H be an F-prefrattini
+subgroup of a soluble group G. Then (G, H, LF (G)) is a 4-conjugate system.
+Furthermore, if either G is S4 -free or F is composed of S3 -free groups, then
+(G, H, LF (G)) is a 3-conjugate system.
+    Recall that a group X is Sn -free if the symmetric group of degree n does
+not appear as a quotient of any subgroup of X.
+    If F = N, the formation of all nilpotent groups, then LF (G) = L(G)
+is the intersection of all self-normalising maximal subgroups of G. It is a
+characteristic nilpotent subgroup of G that was introduced by Gaschütz in
+[4]. If F is the trivial formation, then LF (G) = Φ(G), the Frattini subgroup
+of G. Hence:
+Corollary 4 ([7]). If G is soluble and H is an N-prefrattini subgroup of G,
+then (G, H, L(G)) is a 3-conjugate system.
+Corollary 5 ([8]). If G is soluble and H is a prefrattini subgroup of G, then
+(G, H, Φ(G)) is a 3-conjugate system.
+    To describe our second main result, we shall give a review of the deﬁnition
+of the F-normalisers of a soluble group.
+
+                                       3
+    Let F(p) be a particular family of formations locally deﬁning F and such
+that F(p) ⊆ F for all primes p. Let π = {p : F(p) = ∅}. For an arbitrary
+soluble group G and a Hall system Σ of G, choose for any prime p, the p-
+complement K p = S p ∩ GF(p) of the F(p)-residualGF(p) of G, where S p is
+the p-complement of G in Σ. Then DF (Σ) = Gπ ∩ ( p∈π NG (K p )), where Gπ
+is the Hall π-subgroup of G in Σ, is the F-normaliser of G associated to Σ.
+The F-normalisers of G are a characteristic class of G-conjugate subgroups.
+There were introduced by Carter and Hawkes and coincide with the classical
+system normalisers of Hall when F is the formation of all nilpotent groups
+(see [2, Sections V.2 and V.3] for details).
+    According to [1, Proposition 4.2.6], if D is an F-normaliser of G, then
+CoreG (D) = ZF (G). We prove:
+
+Theorem B. Let F be a saturated formation and let D be an F-normaliser of
+a soluble group G such that Φ(G) = 1. Then (G, D, ZF (G)) is a 4-conjugate
+system. Furthermore, if either G is S4 -free or F is composed of S3 -free groups,
+then (G, D, ZF (G)) is a 3-conjugate system.
+
+    Recall that if F = N is the formation of all nilpotent groups, then the N-
+normalisers of a soluble group G are exactly the system normalisers of G and
+ZN (G) = Z∞ (G) is the hypercentre of G. Therefore the answer of Question 2
+for groups with trivial Frattini subgroup is contained in the following:
+
+Corollary 6. Let G be a soluble group with Φ(G) = 1. If D is a system
+normaliser of G, then (G, D, Z∞ (G)) is a 3-conjugate system.
+
+    Our next example shows that (G, D, Z∞ (G)) is not a 2-conjugate system
+in general.
+
+Example 7. Let D be the dihedral group of order 8. Then D has an ir-
+reducible and faithful module V of dimension 2 over the ﬁeld of 3-elements
+such that CD (v) = 1 for all v ∈ V . Let G = V  D be the corresponding
+semidirect product. Then D is a system normaliser of G and Z∞ (G) = 1. By
+[2, Lemma A.16.3], D ∩ Dv = CD (v) = 1 for all v ∈ V . Hence (G, D, Z∞ (G))
+is not a 2-conjugate system.
+
+   Our third main theorem has Mann’s result as starting point and analyses
+the intersections of injectors associated to Fitting classes of soluble groups.
+A class of groups F is said to be a Fitting class if F is a class under taking
+subnormal subgroups and such that every group G has a largest normal F-
+subgroup called F-radical and denoted by GF . Every soluble group G has
+a conjugacy class of subgroups, called F-injectors, which are deﬁned to be
+those subgroups I of G such that if S is a subnormal subgroup of G, then
+
+                                       4
+I ∩ S is F-maximal subgroup of S ([2, Theorem IX.1.4]). Note that, in this
+case, CoreG (I) = GF . We prove:
+Theorem C. Let F be a Fitting class and let I be an F-injector of a soluble
+group G. Then (G, I, GF ) is a 4-conjugate system. Furthermore, if either G
+is S4 -free or F is composed of S3 -free groups, then (G, I, GF ) is a 3-conjugate
+system.
+Corollary 8 ([9]). If I is a nilpotent injector of a soluble group G, then
+(G, I, F(G)) is a 3-conjugate system.
+
+
+2     Background results
+The notation and terminology agree with the books [1, 2], and we refer the
+reader to them for results on formations.
+   In the sequel, F will be a saturated formation.
+   We begin with an elementary observation which will be used throughout
+the paper.
+Lemma 9 ([2, Lemma A.16.3]). Let G = N H be a semidirect product of a
+normal subgroup N with a subgroup H.
+   (a) If n ∈ N , then H ∩ H n = CH (n),
+   (b) CoreG (H) = CH (N ).
+    The elementary properties of the subgroup LF (G) are collected in the
+following.
+Lemma 10. If N is a normal subgroup of a group G, then the following
+conditions hold:
+    1. LF (G)N/N ≤ LF (G/N ).
+
+    2. If N ≤ LF (G), then LF (G/N ) = LF (G)/N .
+
+    3. LF (G/ LF (G)) = 1.
+   The set all F-prefrattini subgroups of a group G is denoted by Pref F (G).
+   We begin by recalling some known properties about F-prefrattini sub-
+groups.
+   Recall that a subgroup X of a group G covers the section A/B of G if
+A ≤ XB and avoids A/B if X ∩ A ≤ B.
+Lemma 11 ([1, 6]). Let G be a soluble group and N a normal subgroup of
+G.
+
+                                        5
+  1. Pref F (G) is a G-conjugacy class of subgroups of G.
+
+  2. Pref F (G/N ) = {HN/N : H ∈ Pref F (G)}.
+
+  3. If H ∈ Pref F (G), then H avoids every complemented F-eccentric chief
+     factor of G and covers the rest.
+
+   Our next result turns out to be crucial in the proof of Theorem A.
+
+Lemma 12. Let N be a minimal normal subgroup of a soluble group G.
+Assume that M is an F-abnormal
+                              maximal subgroup of G complementing N
+in G. Then Pref F (G) = g∈G Pref F (M g ).
+
+Proof. Since F-prefrattini subgroups of G are conjugate in G, it suﬃces to
+show that Pref F (M ) ⊆ Pref F (G).
+    Let H = W (M, ΣM , F) be the F-prefrattini subgroup of M associated to
+the Hall system ΣM of M . Let p be the prime dividing the order of N and
+let P be the Sylow p-subgroup of M in Σ. Then Σ = ΣM ∪ {P N } is a Hall
+system of G.
+    Let 1 = A0 ≤ A1 ≤ ... ≤ An = M be a chief series of M , and let
+{Ai /Ai−1 |i ∈ I} be the set of all complemented F-eccentric
+                                                            chief factors in
+this series. By [1, Proposition 4.3.6], H = W (Σ) = i∈I Mi , where Mi is a
+maximal subgroup of M , complementing Ai /Ai−1 in G, into which the Hall
+system ΣM reduces, i ∈ I. Consider the following chief series of G:
+
+              1 ≤ N = A0 N ≤ A1 N ≤ ... ≤ An N = M N = G
+
+    Then Ai N/Ai−1 N is a complemented F-eccentric chief factor of G if and
+only if Ai /Ai−1 is a complemented F-eccentric chief factor of M . Moreover,
+N is an F-eccentric chief factor of G which is complemented by M , and Σ
+reduces into M . Thus {N, Ai /Ai−1 |i ∈ I} is the set of all complemented
+F-eccentric chief factors in the above chief series.
+    On the other hand, Mi N is a maximal subgroup of G complementing
+Ai N/Ai−1 N in G andΣ reduces into   Mi N for all i ∈ I. Applying [1, Pro-
+position 4.3.6], M ∩ ( i∈I Mi N ) = i∈I Mi (M ∩ N ) = i∈I Mi = H is the
+F-prefrattini subgroup of G associated to Σ.
+
+
+Remark 13. Under the hypotheses of Lemma 12, (H ∩H m )N = HN ∩H m N
+for all m ∈ M .
+
+Proof. HN ∩ H m N = (H ∩ H m N )N = (H ∩ M ∩ H m N )N and M ∩ H m N =
+H m (M ∩ N ) = H m .
+
+                                     6
+Lemma 14. Let N be a minimal normal subgroup of a soluble group G.
+Assume that M is an F-abnormal maximal subgroup of G complementing N
+in G. Then LF (G) = CLF (M ) (N ).
+
+Proof. By Lemma 12, we have:
+                        
+               LF (G) = {H : H ∈ Pref F (G)}
+                         
+                      =      {H : H ∈ Pref F (M g )}
+                             g∈G
+                             
+                         =         LF (M )g = CoreG (LF (M )).
+                             g∈G
+
+
+    Since LF (G)∩N ≤ M ∩N = 1, we have LF (G) ≤ CLF (M ) (N ). On the other
+hand, since CLF (M ) (N ) is normalised by M and centralised by N , we have
+that CLF (M ) (N ) is normal in G and hence CLF (M ) (N ) ≤ CoreG (LF (M )) =
+LF (G).
+   The following facts about S3 -free groups are quite useful.
+
+Lemma 15 (see [11, Lemma 1]). Let G be a soluble group and let H be a
+Hall {2, 3}-subgroup of G. Then G is S3 -free if and only if H is 3-nilpotent.
+
+Lemma 16 (see [11, Lemma 2]). Let G be a soluble group with O2 (G) = 1.
+Then G is S3 -free if and only if G is S4 -free.
+
+Corollary 17. Let G be a soluble S3 -free group such that O3 (G) = 1. Then
+G is of odd order.
+
+Proof. Let H be a Hall {2, 3}-subgroup of G and let X be a Hall 3 -subgroup
+of G. Then H ∩ X is a Sylow 2-subgroup of G and G = HX by [2,
+Lemma A.1.6]. Hence H ∩ X  H by Lemma 15. Therefore
+
+                (H ∩ X)G = (H ∩ X)HX = (H ∩ X)X ≤ X.
+
+This implies that (H ∩X)G is a 3 -subgroup of G and so H ∩X ⩽ (H ∩X)G ⩽
+O3 (G) = 1. Thus G is of odd order.
+
+Lemma 18. Let G be a group and L, K  G such that K ⩽ Φ(G). If L/K
+is a soluble S3 -free group, then L is a soluble S3 -free group.
+
+Proof. Assume that (G, L, K) satisﬁes the hypotheses but L is not a soluble
+S3 -free group. Choose such counterexample (G, L, K) such that |G|+|L|+|K|
+is minimal. Let H be a Hall {2, 3}-subgroup of L.
+
+                                         7
+    Write X = O3 (L). Then X  G. Denote with bars the images in G =
+G/X. We have that (G, L, K) satisﬁes the hypotheses of the lemma. Hence, if
+X = 1, it follows that L is a soluble S3 -free group. Since H is a Hall {2, 3}-
+subgroup of L, we can apply Lemma 15 to conclude that H = HX/X ∼              =
+H/H ∩ X is 3-nilpotent. Then H/ O3 (H) is 3-nilpotent since H ∩ X ⩽
+O3 (H). Thus H is 3-nilpotent and so L is S3 -free by Lemma 15, which is a
+contradiction. Consequently, X = 1.
+    Since O3 (K) ⩽ O3 (L) = 1 and K is nilpotent, we have that K is a
+3-group. Let T /K = O3 (L/K). Then T  G. By [2, Theorem A.11.3],
+T = KT1 , where T1 is a Hall 3 -subgroup of T . The Frattini Argument
+for Hall subgroups implies that G = NG (T1 )T = NG (T1 )K = NG (T1 ) since
+K ⩽ Φ(G). Thus T1  G and so T1 ⩽ O3 (L) = 1. Hence O3 (L/K) = 1. By
+Corollary 17, L/K is of odd order. Thus the order of L is odd and so it is
+S3 -free. This ﬁnal contradiction proves the lemma.
+    Combining Lemmas 15 and 18, we have:
+
+Corollary 19. The class of all soluble S3 -free groups is a subgroup-closed
+saturated formation.
+
+   Recall that a regular orbit of the action of the group G on a set X is an
+orbit with |G| elements. Clearly G has a regular orbit on X if and only if
+there exists x ∈ X such that CG (x) = 1. Considering the natural action of
+G on X × X, we have that G has a regular orbit on X × X if and only if
+there exist x, y ∈ X such that CG (x) ∩ CG (y) = 1.
+   The proofs of our main theorems strongly depend on the following results.
+
+Lemma 20 ([3, Theorem 1.4]). Let G be a soluble group and V a ﬁnite faith-
+ful G-module. If V is completely reducible (possibly of mixed characteristic),
+then there exist v1 , v2 , v3 ∈ V such that CG (v1 ) ∩ CG (v2 ) ∩ CG (v3 ) = 1.
+
+Lemma 21 (see [11, Theorem A]). Suppose that G is a soluble group and
+V is a ﬁnite, faithful and completely reducible G-module (possibly of mixed
+characteristic). Let H be a subgroup of G such that the semidirect
+                                                                   product
+V H is S4 -free. Then H has at least two regular orbits on V   V.
+
+
+3    Proof of Theorem A
+Assume we are trying to prove a result of the following type: Let G be a sol-
+uble group and let H be an F-prefrattini subgroup of G. Then (G, H, LF (G))
+is a k-conjugate system.
+
+
+                                       8
+    Assume the statement is false. Thus there would exist a counterexample
+G of minimal order. Let H be an F-prefrattini subgroup of G such that
+(G, H, LF (G)) is not a k-conjugate system. Then:
+    (i) LF (G) = 1. In particular, Φ(G) = 1.
+    For suppose that X is a minimal normal subgroup of G contained in
+LF (G). Then H/X is an F-prefrattini subgroup of G by Lemma 11. There-
+fore, because |G/X| < |G|, it follows that (G/X, H/X, LF (G/X)) is a k-
+conjugate system. Since LF (G/X) = LF (G)/X by Lemma 10, we have that
+(G, H, LF (G)) is a k-conjugate system, giving a contradiction. Thus State-
+ment (i) must hold.
+    Also (ii) There exists a minimal normal subgroup N and an F-abnormal
+maximal subgroup M containing H of G such that G = M N and M ∩ N = 1
+and (M, H, LF (M )) is a k-conjugate system.
+    Let N be the minimal normal subgroup of G. Then N is a p-group for
+some prime p. By Statement (i), N is not contained in LF (G) = 1 and so
+there exists an F-abnormal maximal subgroup of M such that G = N M
+and N ∩ M = 1. By Lemma 12, we may assume that H is an F-prefrattini
+subgroup of M . Again by choice of G, (M, H, LF (M  )) is a k-conjugate system
+and therefore there exist m1 , ...mk ∈ M such that ki=1 H mi = LF (M ).
+    (iii) Assume that N is a p-group for some prime p and L = LF (M ). Then
+N is a faithful completely reducible L-module over GF(p), the ﬁnite ﬁeld of
+p-elements.
+    Clearly N is an irreducible M -module over GF(p). By [2, Theorem B.7.3],
+N is a completely reducible L-module. By Lemma 14 and Statement (i),
+CL (N ) = 1 and so N is faithful for L.
+    Let T = LN . Then CoreT (L) = 1. Moreover:
+    (iv) (T, L, 1) is not a k-conjugate system.
+    Assume
+      k      that (T, L, 1) is a k-conjugate system. Let n1 , ..., nk ∈ N such
+that i=1 L = 1. We consider the subgroup D = ki=1 H mi ni . Then
+             ni
+
+
+                   
+                   k                       
+                                           k                       
+                                                                   k
+                             m i ni                   mi
+             D≤          H            N=         H         N =(          H mi )N = LN
+                   i=1                     i=1                     i=1
+
+by Remark 13. Then
+                                           
+                                           k
+                D = D ∩ LN =                   H mi ni ∩ LN
+                                        i=1
+                      
+                      k                                    
+                                                           k
+                                 mi              ni
+                  =         (H        ∩ LN )          =          Lni = 1 = LF (G).
+                      i=1                                  i=1
+
+Therefore (G, H, LF (G)) is a k-conjugate system, against our supposition.
+
+                                                      9
+Theorem 22. Let H be an F-prefrattini subgroup of a soluble group G. Then
+(G, H, LF (G)) is a 4-conjugate system.
+
+Proof. Assume that the result is not true and let G be a counterexample of
+minimal order such that (G, H, LF (G)) is not a 4-conjugate system. Then
+Statements (i)-(iv) hold for k = 4. By Statement (iii), N is a faithful com-
+pletely reducible L-module over GF(p) for some prime p. By Lemma 20,
+there exist v1 , v2 , v3 ∈ N such that CL (v1 ) ∩ CL (v2 ) ∩ CL (v3 ) = 1. It implies
+that L ∩ Lv1 ∩ Lv2 ∩ Lv3 = 1 by Lemma 9. Thus (T, L, 1) is a 4-conjugate
+system, contrary to Step (iv).
+
+Theorem 23. Let H be an F-prefrattini subgroup of a soluble group G. As-
+sume that either G is S4 -free or F is composed of S3 -free groups. Then
+(G, H, LF (G)) is a 3-conjugate system.
+
+Proof. Suppose, arguing by contradiction, that (G, H, LF (G)) is not a 3-
+conjugate system. Let us choose G a counterexample of least order. Then
+Statements (i)-(iv) hold for k = 3. By Statement (iii), L ∩ N = 1 and
+N is a faithful completely reducible L-module over GF(p) for some prime
+p. If G is S4 -free, then LN is S4 -free. Assume that F is composed of S3 -
+free groups. Recall that L = LF (M ), by [1, Proposition 4.3.17], L/Φ(M ) =
+ZF (M/Φ(M )). Let X be the class of all soluble S3 -free groups. By Co-
+rollary 19, X is a subgroup-closed saturated formation. Since F ⊆ X by
+hypothesis, it follows that ZF (M/Φ(M )) ⩽ ZX (M/Φ(M )). By [2, The-
+orem IV.6.15], ZX (M/Φ(M )) ∈ X. Thus L/Φ(M ) = ZF (M/Φ(M )) is S3 -free.
+Then, by Lemma 18, L is S3 -free. If p is odd, then LN is S4 -free and if p = 2,
+then LN is S4 -free by Lemma 16. In both cases, we can apply Lemma 21 to
+conclude that there exist v1 , v2 ∈ N such that CL (v1 ) ∩ CL (v2 ) = 1. Thus, by
+Lemma 9, (T, L, 1) is a 3-conjugate system, contrary to Statement (iv).
+
+
+4     Proof of Theorem B
+The proof of Theorem B depends on a nice result about factorisations of
+prefrattini subgroups proved in [6, Theorem 4.1] (see [1, Theorem 4.3.32]).
+
+Lemma 24. If D is an F-normaliser and W is a prefrattini subgroup of a
+soluble group G, both associated to the Hall system Σ of G, then D and W
+permute and DW is the F-prefrattini subgroup of G associated to Σ.
+
+Theorem 25. Let D be an F-normaliser of a soluble group G. If Φ(G) = 1,
+then (G, D, ZF (G)) is a 4-conjugate system.
+
+
+                                         10
+Proof. Let D be the F-normaliser of G associated to the Hall system Σ.
+Assume that H is the F-prefrattini subgroup of G associated to Σ. Then,
+by Lemma 24, we have D ≤ H. Since Φ(G) = 1, it follows by [1, Proposi-
+tion 4.3.17] that LF (G) = ZF (G). By Theorem A, we have that (G, H, ZF (G))
+is a 4-conjugate system. Hence
+
+
+                         ZF (G) ≤ D ∩ Dx ∩ Dy ∩ Dz
+                                ≤ H ∩ Hx ∩ Hy ∩ Hz
+                                = ZF (G).
+Thus (G, D, ZF (G)) is a 4-conjugate system.
+Theorem 26. Let D be an F-normaliser of a soluble subgroup G such that
+Φ(G) = 1. Assume that either G is S4 -free or F is composed of S3 -free
+groups. Then (G, D, ZF (G)) is a 3-conjugate system.
+Proof. Assume that Σ is the Hall system of G to which D is associated.
+Let H be the F-prefrattini subgroup of G associated to Σ. By Theorem
+A, (G, H, ZF (G)) is a 3-conjugate system. Since D ≤ H by Lemma 24 and
+LF (G) = ZF (G) by [1, Proposition 4.3.17], it follows that (G, D, ZF (G)) is a
+3-conjugate system.
+
+
+5    Proof of Theorem C
+Let R = CoreG (I) = GF . We prove that (G, I, R) is a 4-conjugate system by
+induction on the order of G. Let F be the normal subgroup of G such that
+F/R = F(G/R), the Fitting subgroup of G/R. Clearly, F ∩ I is contained
+in R. Hence F ∩ I = R. On the other hand, by [2, Theorem IX.1.5], I is an
+F-injector of F I. Thus R ≤ S = (F I)F is contained in I. Assume that R is
+a proper subgroup of S and let N/R be a minimal normal subgroup of F I/R
+contained in S/R. Then N belongs to F and so N is contained in R. This is
+a contradiction yields S = R. If F I were a proper subgroup of G, (F I, I, R)
+would be a 4-conjugate system. Hence (G, I, R) would be a 4-conjugate
+system and the result would follow. Therefore we may assume that G = F I.
+Let M be the normal subgroup of G such that M/R = Φ(G/R). Then
+G/M = (IM/M )(F/M ). Applying [2, Theorem A.10.6], F/M = Soc(G/M )
+is a self-centralising normal subgroup of G/M . In particular, F/M is a
+completely reducible G/M -module (possibly of mixed characteristic). By
+Lemma 20, there exist v1 M, v2 M, v3 M ∈ F/M such that CIM/M (v1 M ) ∩
+CIM/M (v2 M ) ∩ CIM/M (v3 M ) = 1. It implies that I ∩ I v1 ∩ I v2 ∩ I v3 ≤ R by
+Lemma 9. Thus (G, I, R) is a 4-conjugate system.
+
+                                      11
+    Assume that either G is S4 -free or F is composed of S3 -free groups. If
+G is S4 -free, then G/M = (IM/M )(F/M ) is S4 -free. By Lemma 21, there
+exist v1 M, v2 M ∈ F/M such that CIM/M (v1 M ) ∩ CIM/M (v2 M ) = 1.
+    Suppose that F is composed of S3 -free groups. Denote with bars the
+images in G = G/M = IF . Since I ∈ F, I is S3 -free. Let A be the Hall 2 -
+subgroup of F . It follows that IA is S4 -free. Let B be the Sylow 2-subgroup
+of F . By Lemma 16, IB/ CI (B) is S4 -free. Then we can apply Lemma 21
+to conclude that there exist a1 M, a2 M ∈ A and b1 M, b2 M ∈ B such that
+CI (a1 M ) ∩ CI (a2 M ) ⊆ CI (A) and CI (b1 M ) ∩ CI (b2 M ) ⊆ CI (B). Let vi =
+ai + bi , i = 1, 2. Then CI (v1 M ) ∩ CI (v2 M ) ⊆ CI (A) ∩ CI (B) = CI (F ) = 1.
+    In both cases, we have that (G, I, R) is a 3-conjugate system by Lemma 9.
+This completes the proof of the theorem.
+
+
+Acknowledgements
+The ﬁrst and fourth authors have been supported by the grant MTM2014-
+54707-C3-1-P from the Ministerio de Economía y Competitividad, Spain,
+and FEDER, European Union.
+
+
+References
+ [1] A. Ballester-Bolinches and L. M. Ezquerro. Classes of Finite Groups,
+     volume 584 of Mathematics and its Applications. Springer, New York,
+     2006.
+
+ [2] K. Doerk and T. Hawkes. Finite Soluble Groups, volume 4 of De Gruyter
+     Expositions in Mathematics. Walter de Gruyter, Berlin, New York, 1992.
+
+ [3] S. Dolﬁ. Large orbits in coprime actions of solvable groups. Trans.
+     Amer. Math. Soc., 360(1):135–152, 2008.
+
+ [4] W. Gaschütz. Über die Φ-Untergruppe endlicher Gruppen. Math. Z.,
+     58:160–170, 1953.
+
+ [5] W. Gaschütz. Praefrattinigruppen. Arch. Math., 13:418–426, 1962.
+
+ [6] T. Hawkes. Analogues of Prefrattini subgroups. In Proc. Internat. Conf.
+     Theory of Groups (Canberra, 1965), pages 145–150. Gordon and Breach,
+     New York, 1967.
+
+
+
+
+                                       12
+ [7] S. F. Kamornikov. One characterization of the gaschütz subgroup of
+     a ﬁnite soluble group. Fundamentalnaya i Prikladnaya Mathematica,
+     20:65–75, 2015. Russian.
+
+ [8] S.F. Kamornikov. Intersections of prefrattini subgroups in ﬁnite soluble
+     groups. Int. J. Group Theory, 6(2):1–5, 2017.
+
+ [9] A. Mann. The intersection of Sylow subgroups. Proc. Amer. Math. Soc.,
+     53(2):262–264, 1975. Addendum: ibidem Vol. 62, No. 1, p. 188 (1977).
+
+[10] V. D. Mazurov and E. I. Khukhro, editors. Unsolved problems in Group
+     Theory: The Kourovka Notebook. Russian Academy of Sciences, Siberian
+     Branch, Institute of Mathematics, Novosibirsk, Russia, 17 edition, 2010.
+
+[11] H. Meng, A. Ballester-Bolinches, and R. Esteban-Romero. On large
+     orbits of subgroups of linear groups. Preprint.
+
+[12] D. S. Passman. Groups with normal, solvable Hall p -subgroups. Trans.
+     Amer. Math. Soc., 123(1):99–111, 1966.
+
+[13] V.I. Zenkov. Intersections of nilpotent subgroups in ﬁnite groups. Fun-
+     dam. Prikl. Mat., 2(1):1–92, 1996.
+
+
+
+
+                                     13
+
