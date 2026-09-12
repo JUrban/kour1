@@ -1,0 +1,1261 @@
+                                                                                                           17B38, 20D08 (MSC2020)
+
+                                                               Rota—Baxter operators on groups
+                                                                   Valeriy G. Bardakov, Vsevolod Gubarev
+
+                                                                                   Abstract
+arXiv:2103.01848v2 [math.GR] 2 May 2021
+
+
+
+
+                                                   Theory of Rota—Baxter operators on rings and algebras has been developed
+                                               since 1960. Recently, L. Guo, H. Lang, Y. Sheng [arXiv:2009.03492] have deﬁned the
+                                               notion of Rota—Baxter operator on a group. We provide some general constructions
+                                               of Rota—Baxter operators on a group. Given a map on a group, we study its
+                                               extensions to a Rota—Baxter operator. We state the connection between Rota—
+                                               Baxter operators on a group and Rota—Baxter operators on an associated Lie ring.
+                                               We describe Rota—Baxter operators on sporadic simple groups.
+                                                   Keywords: Rota—Baxter operator, Rota—Baxter group, simple group, sporadic
+                                               group, factorization.
+
+
+                                          1    Introduction
+                                              Rota—Baxter operators for commutative algebras ﬁrstly appear in the paper of
+                                          G. Baxter [3] in 1960. Since that time the theory of Rota—Baxter operators has been
+                                          developed by diﬀerent authors including J.-C. Rota, L. Guo, C. Bai, and K. Ebrahimi-
+                                          Fard, see details in the monograph [13]. Maybe, the most important role of Rota—Baxter
+                                          operators is their connections to Yang—Baxter equation [4, 21], Loday algebras [2, 12],
+                                          double Poisson algebras [10, 20] and others.
+                                              In September 2020 [14], L. Guo, H. Lang, Y. Sheng deﬁned the notion of Rota—Baxter
+                                          operator (RB-operator, short) on a group. A map B : G → G is called a Rota—Baxter
+                                          operator (of weight 1) if B(g)B(h) = B(gB(g)hB(g)−1) for all g, h ∈ G. A group G with
+                                          a Rota—Baxter operator B is called a Rota—Baxter group.
+                                              The main motivation of [14] to introduce this new notion is following. Given a Rota—
+                                          Baxter Lie group (G, B), then the tangent map of B at the identity is a Rota—Baxter
+                                          operator of weight 1 on the Lie algebra of the Lie group G. If a crossed homomorphism φ
+                                          from a group G to itself is invertible, then φ−1 is an RB-operator on G [14]. Some basic
+                                          examples and properties of Rota—Baxter groups were also stated in the pioneer work [14].
+                                              In November 2020 [9], M. Goncharov introduced the notion of a Rota—Baxter operator
+                                          on a cocommutative Hopf algebra as a combination of both Rota—Baxter operators on
+                                          a group and on a Lie algebra. In particular, every such Rota—Baxter operator on the
+                                          Hopf algebra k[G] arises as a linear extension of an RB-operator deﬁned on a group G.
+                                              The main goal of the current work is to give diﬀerent constructions of Rota—Baxter
+                                          operators on a group. We provide constructions via factorizations, homomorphisms,
+                                          projections, direct products, and ones deﬁned by exact formulas (see §4–6). In particular,
+                                          we state in Proposition 5.1 that any homomorphism from a group to its abelian subgroup
+                                          is a Rota—Baxter operator. In [1, 5, 11], RB-operators on kn , a sum of n copies of a ﬁeld k
+                                          considered as a commutative k-algebra, were studied. In Theorem 6.3 we construct by
+                                          an RB-operator R on kn an RB-operator B on Gn = G × G × . . . × G for a given group G.
+
+
+                                                                                       1
+    We study extensions of maps on a given group to an RB-operator and extensions
+of Rota—Baxter groups (see §7–8). We ﬁnd the necessary (Lemma 7.5) and suﬃcient
+conditions (Theorem 7.7) under which a map β on a group G can be extended to an
+RB-operator on G.
+    Let G be a group, it is well-known
+                                    L that by its lower central series Gn , n = 1, 2, . . .,
+one can associate Lie ring L(G) = n≥1 Gn /Gn+1. We prove that by any RB-operator B
+on G such that B(Gn ) ⊂ Gn for all n ≥ 1, we may deﬁne the RB-operator of weight 1
+on L(G) (Proposition 9.1).
+    It is natural to ask about complete description of RB-operators on a given group G.
+Naturally, one should do such classiﬁcation up to action of automorphisms of G (see
+Lemma 2.9) and up to involution ˜ (see Lemma 2.8). We make the following step in
+the direction of classiﬁcation of RB-operators on ﬁnite simple groups: we describe RB-
+operators on all sporadic simple groups.
+    Let us give short outline of the work. In §2, we give required preliminaries on
+Rota—Baxter operators on groups. In §3, we consider the induced on a group G by an
+RB-operator B new group product g ◦ h = gB(g)hB(g)−1. The group GB = hG, ◦i was
+deﬁned in [14].
+    In §4, we study constructions of RB-operators appeared due to exact factorizations
+(double and triple) of groups and properties of such constructions.
+    In §5, we give constructions of RB-operators involved homomorphisms, projections
+and some exact formulas. We ﬁnd RB-operators on n-abelian groups (Proposition 5.2)
+and on 2-step nilpotent groups (Corollary 5.5). In §6, we study RB-operators on direct
+products of groups.
+    In §7, we study extensions of a given map β on a group G to an RB-operator B on G.
+Applying the necessary condition, we construct and study the auxiliary group Ḡβ . In §8,
+the problems concerning extensions of Rota—Baxter groups are posted.
+    In §9, we ﬁnd a connection between RB-operators on a group and RB-operators on
+its associated Lie ring.
+    In §10, we state that on a simple group G without ﬁxed-point-free automorphisms
+every Rota—Baxter operator with trivial kernel has the form B(g) = g −1 (Theorem 10.1).
+Applying this result and the list of all factorizations of sporadic groups [8], we describe
+all RB-operators on all sporadic simple groups in Theorem 10.4.
+
+
+2    Preliminaries
+   Let A be an algebra over a ﬁeld k. A linear operator R on A is called a Rota—Baxter
+operator of weight λ ∈ k if
+
+                         R(x)R(y) = R(R(x)y + xR(y) + λxy).                            (2.1)
+
+for all x, y ∈ A. An algebra endowed with a Rota—Baxter operator is called a Rota—
+Baxter algebra.
+    Let us consider an analogue of Rota—Baxter operator of weights ±1 on a group.
+
+
+
+                                             2
+Definition 2.1 ([14]). Let G be a group.
+  a) A map B : G → G is called a Rota—Baxter operator of weight 1 if
+
+                            B(g)B(h) = B(gB(g)hB(g)−1)                              (2.2)
+
+for all g, h ∈ G.
+    b) A map C : G → G is called a Rota—Baxter operator of weight −1 if
+
+                             C(g)C(h) = C(C(g)hC(g)−1g)
+
+for all g, h ∈ G.
+
+   A group endowed with a Rota—Baxter operator is called a Rota—Baxter group (RB-
+group).
+
+Lemma 2.2. If C : G → G is a Rota—Baxter operator of weight −1 on a group G, then
+             e
+the operator C(g) = gC(g −1), g ∈ G, is also a Rota—Baxter operator of weight −1.
+
+   In [14] it was proved that if B is a Rota—Baxter operator of weight 1 on a group G,
+then the map C(g) = B(g −1 ) is an Rota—Baxter operator of weight −1. Another con-
+nection between Rota—Baxter operators of weights 1 and −1 gives
+
+Proposition 2.3. If B : G → G is Rota—Baxter operator of weight 1 on a group G, then
+the operator C(g) = gB(g), g ∈ G, is a Rota—Baxter operator of weight −1 on G.
+
+Proof. One needs to check (2.2). By the deﬁnition of C it is equivalent to
+
+                           gB(g)hB(h) = C(gB(g)hB(g)−1),
+
+i. e.,
+                          B(g)B(h) = B(gB(g)hB(g)−1).
+   Hence, we have a bijection between Rota—Baxter operators of weight 1 and −1 on
+a group G. To the end of the paper we will consider only Rota—Baxter operators of
+weight 1 and will call them simply Rota—Baxter operators (RB-operators).
+
+Example 2.4. Let G be a group. Then
+  a) the map B0 (g) = e is an RB-operator on G,
+  b) the map B−1 (g) = g −1 is an RB-operator on G.
+
+    We will call the Rota—Baxter operators B0 and B−1 as elementary RB-operators.
+A group G is called RB-elementary, if any RB-operator on G is elementary. It is evident
+that every cyclic group of prime order is elementary. Other examples of elementary
+groups will be given in the last section.
+    Given a group G, we use the usual notation of the commutator [g, h] = g −1 h−1 gh for
+g, h ∈ G; the commutator subgroup [H, L] for subgroups H, L of G is a subgroup that is
+generated by the set of commutators {[h, l] | h ∈ H, l ∈ L}.
+    Let us state some elementary facts about RB-operators.
+
+
+                                           3
+Lemma 2.5. If B : G → G is a Rota—Baxter operator on a group G, then
+  a) B(e) = e;
+  b) B(g)B(g −1) = B([g −1, B(g)−1 ]);
+  c) B(g)B(B(g)) = B(gB(g));
+  d) B(g)−1 = B(B(g)−1 g −1 B(g)) for any g ∈ G.
+
+Proof. a) It follows from (2.2) considered with g = h = e.
+   b) It follows from (2.2) considered with h = g −1 .
+   c) It follows from (2.2) considered with h = B(g).
+   d) It follows from the equalities
+
+ B(g)B(B(g)−1g −1B(g))=B(gB(g)B(g)−1g −1 B(g)B(g)−1)=B(gg −1) = B(e) = e. (2.3)
+
+Lemma is proved.
+    In [14] it was noted (without proof) that given a group G and a Rota—Baxter oper-
+ator B on G the sets ker B and Im B are subgroups of G. Let us write down the proof
+for convenience.
+
+Lemma 2.6 ([14]). Let B be a Rota—Baxter operator on a group G. Then
+  a) ker B is a subgroup of G,
+  b) Im B is a subgroup of G.
+
+Proof. a) We have B(e) = e by Lemma 2.5a. Let g, h ∈ ker B, then by (2.2)
+
+               B(g −1 ) = B(g)B(g −1) = B(gB(g)g −1B(g)−1) = B(e) = e,
+                      e = B(g)B(h) = B(gB(g)hB(g)−1) = B(gh).
+
+   b) Directly by (2.2) we have that if g, h ∈ Im B, then gh ∈ Im B. Suppose that
+g ∈ Im B, then g −1 ∈ Im B by Lemma 2.5d.
+   When a Rota—Baxter operator B on a group G is invertible, i. e., the map B −1 : G →
+G exists, then B −1 is a crossed homomorphism from G to itself [14]. The following result
+can be useful in attempt to construct RB-operators B on a given group with ker B 6= {e}.
+
+Lemma 2.7. Let B be a Rota—Baxter operator on a group G. If B(g) = e for some
+g ∈ G, then B(h) = B(gh) for any h ∈ G. In particular, if
+                                      a
+                                 G=      ker(B)gi
+                                         i∈I
+
+is the decomposition of G in the disjoint union of cosets, then B(x) = B(y) if x and y lie
+in the same coset.
+
+Proof. It follows from (2.2) considered with such g and h.
+   The following claim gives a possibility to construct new RB-operators from the known
+ones.
+
+
+                                               4
+Lemma 2.8 ([14]). Let B be a Rota—Baxter operator on a group G. Then the operator
+e
+B(g) = g −1 B(g −1) is also a Rota—Baxter operator on a group G.
+                                                     e
+                   f0 = B−1 . It is easy to see that B
+                                                     e = B.
+    In particular, B
+    The following observation is very important when one is interested on the classiﬁcation
+of all RB-operators on a given group.
+
+Lemma 2.9. Let B be a Rota—Baxter operator on a group G. Let ϕ be an automorphism
+of G. Then B (ϕ) = ϕ−1 Bϕ is a Rota—Baxter operator on a group G.
+
+Proof. The following equalities imply the statement,
+
+    ϕ(B (ϕ) (g)B (ϕ) (h)) = ϕ(ϕ−1 (B(ϕ(g)))ϕ−1(B(ϕ(h)))) = B(ϕ(g))B(ϕ(h))
+       = B(ϕ(g)B(ϕ(g))ϕ(h)B(ϕ(g))−1) = ϕϕ−1 Bϕ(gϕ−1B(ϕ(g))hϕ−1 (B(ϕ(g))−1))
+                                                   = ϕ(B (ϕ) (gB (ϕ) (g)h(B (ϕ) (g))−1 )).
+
+   Thus, we may describe Rota—Baxter operators on a group up to conjugation with its
+automorphism.
+
+Lemma 2.10. Let G be a group, let ϕ be an automorphism ϕ of G and let B be
+a Rota—Baxter operator on G. Then (B)      g
+                                   e (ϕ) = B (ϕ) .
+
+
+Proof. We have
+
+ e (ϕ) (g) = ϕ−1 (B(ϕ(g))))
+(B)               e                                                            g
+                            = ϕ−1 ((ϕ(g))−1B((ϕ(g))−1)) = g −1 B (ϕ) (g −1 ) = B (ϕ) (g).
+
+
+    Let (G, B) and (G′ , B ′ ) be Rota—Baxter groups. A map Φ : G → G′ is a Rota—Baxter
+group homomorphism if Φ is a group homomorphism such that ΦB = B ′ Φ.
+    A group G is called factorizable if G = HL for some its subgroups H and L. The
+expression G = HL is called a factorization of G. If additionally H ∩ L = {e}, then such
+factorization is called exact. If H and L are proper subgroups of G, we call a factorization
+G = HL as a proper one.
+
+
+3      Rota—Baxter induced group
+     In [14] a new binary operation ◦ : G → G on a Rota—Baxter group (G, B) was deﬁned.
+
+Proposition 3.1 ([14]). Let (G, ·, B) be a Rota—Baxter group.
+  a) The pair (G, ◦) with the product
+
+                                  g ◦ h = gB(g)hB(g)−1,                                      (3.1)
+
+where g, h ∈ G, is also a group.
+   b) The operator B is a Rota—Baxter operator on the group (G, ◦).
+   c) The map B : (G, ◦) → (G, ·) is a homomorphism of Rota—Baxter groups.
+
+
+                                              5
+   We will denote the group (G, ◦) as GB .
+   Given a group G and a Rota—Baxter operator B on G, consider a map B+ on G
+deﬁned as follows, B+ (g) = gB(g) [14]. Note that B+ is a group homomorphism from
+GB to G. Lemma 2.5c says that B+ B = BB+ .
+
+Example 3.2. Let G be a group with a Rota—Baxter operator B.
+  a) If B = B0 , then
+                         g ◦ h = gB0 (g)hB0 (g)−1 = gh.
+Hence, both products ◦ and · coincide.
+   b) If B = B−1 , then
+
+                                 g ◦ h = gB−1 (g)hB−1 (g)−1 = hg.
+
+Hence, (G, ◦) is a group with the opposite product.
+   c) If G is abelian, then g ◦ h = g · h for all g, h ∈ G.
+
+    In [14], L. Guo, H. Lang, and Yu. Sheng proved the results analogous to the ones
+stated by M.A. Semenov-Tyan-Shanskii for Lie algebras [21].
+
+Proposition 3.3 ([14]). If (G, B) is an RB-group, then
+  a) ker(B) and ker(B+ ) are normal in GB ;
+  b) ker(B) ✂ Im (B+ ) and ker(B+ ) ✂ Im (B) in G;
+  c) We have the isomorphism of quotient groups
+
+                              Im (B+ )/ ker(B) ∼
+                                               = Im (B)/ ker(B+ );                                   (3.2)
+
+   d) We have the factorization
+
+                                        G = Im (B+ )Im (B).                                          (3.3)
+
+   Let us ﬁnd the exact formulas for words written in terms of the operation ◦ in GB .
+Given an integer k, denote by a◦(k) the kth power of a under the product ◦.
+
+Proposition 3.4. Let (G, B) be a Rota—Baxter group. If A is a subset of G and
+                              ◦(k )    ◦(k )            ◦(k )
+                       w = ai1 1 ◦ ai2 2 ◦ . . . ◦ ais s ,      aij ∈ A, kj ∈ Z,
+
+is presented by a word under the operation ◦, then
+
+ w=(ai1 B(ai1 ))k1 (ai2 B(ai2 ))k2 . . . (ais B(ais ))ks B(ais )−ks B(ais−1 )−ks−1 . . . B(ai1 )−k1 . (3.4)
+
+In particular, a◦(k) = (B+ (a))k (B(a))−k for every integer k and a◦(−1) = B(a)−1 a−1 B(a).
+
+Proof. Firstly, it is easy to show by induction on n ∈ N that a◦(n) = (B+ (a))n (B(a))−n .
+Indeed, for n = 0 we have e = e. The induction step follows from the equalities
+
+               a◦(n) = a ◦ (a◦(n−1) ) = aB(a)a◦(n−1) B(a)−1 = (aB(a))n B(a)−n .
+
+
+                                                    6
+One can check directly that B(a)−1 a−1 B(a) is the inverse element to a in the group GB .
+Now, again by induction on n ∈ N and by Lemma 2.5d we compute
+
+    a◦(−n) = a◦(−1) ◦ (a◦(−(n−1)) )
+     = B(a)−1 a−1 B(a)B(B(a)−1 a−1 B(a))(aB(a))−(n−1) B(a)n−1 (B(B(a)−1 a−1 B(a)))−1
+                               = (aB(a))−1 (aB(a))−(n−1) B(a)n−1 B(a)1 = (aB(a))−n B(a)n .
+                     ◦(k )            ◦(k )
+   Denote w ′ = ai2 2 ◦ . . . ◦ ais s . Applying that B is a homomorphism from GB to G,
+we get
+        ◦(k )                                   ◦(k )        ◦(k )
+w = ai1 1 ◦w ′ = (B+ (ai1 ))k1 (B(ai1 ))−k1 B(ai1 1 )w ′ B(ai1 1 )−1 = (B+ (ai1 ))k1 w ′(B(ai1 ))−k1 .
+
+Thus, by induction on s we derive the formula (3.4).
+
+
+4      Constructions via factorizations
+     The next example allows us to construct non-elementary RB-operators.
+
+Example 4.1 ([14]). Let G be a group. Given an exact factorization G = HL, a map
+B : G → G deﬁned as follows,
+                                  B(hl) = l−1
+is a Rota—Baxter operator on G.
+
+   Let us call such Rota—Baxter operator on G as a splitting Rota—Baxter operator.
+Note that in this case GB ∼
+                          = H × L and B+ (hl) = h.
+Proposition 4.2. Let G be a group and let B : G → G be an RB-operator on G. Then
+B is a splitting Rota—Baxter operator on G if and only if B(gB(g)) = e for all g ∈ G.
+
+Proof. Suppose that B is a splitting RB-operator on G with subgroups H and L. Take
+g = hl, where h ∈ H and l ∈ L. Then
+
+                        B(gB(g)) = B(hlB(hl)) = B(hll−1 ) = B(h) = e.
+
+   Conversely, suppose that B(gB(g)) = e for all g ∈ G. Let us prove that G =
+ker(B)Im (B) and this factorization is exact. Firstly, let a ∈ ker(B) ∩ Im (B). Then
+B(a) = e and there exists g ∈ G such that a = B(g). By the assumption, we have e =
+B(gB(g)) = B(ga). Since ga, a ∈ ker(B), by Lemma 2.6a we conclude that g ∈ ker(B).
+So, a = e.
+   Secondly, let g ∈ G. The equality B(gB(g)) = e implies that gB(g) = a ∈ ker(B).
+Thus, g = ab, where b = B(g)−1 ∈ Im (B) by Lemma 2.6b.
+
+Remark 4.3. By Lemma 2.5, the condition B(gB(g)) = e is equivalent to the relation
+B(g)B 2(g) = e or B 2 (g) = B(g)−1. It means that if B is a splitting RB-operator, then
+B inverts all elements of Im (B).
+
+                                                 7
+   Let us extend Example 4.1 on some triple factorizations.
+Proposition 4.4. Let G be a group such that G = HLM, where H, L, and M are
+subgroups of G with pairwise trivial intersection. Let C be a Rota—Baxter operator
+on L. Moreover, [H, L] = [C(L), M] = e. Then the map B : G → G deﬁned by the
+formula
+                                B(hlm) = C(l)m−1
+is a Rota—Baxter operator on G.
+Proof. Let h, h′ ∈ H, l, l′ ∈ L, and m, m′ ∈ M. Then
+
+  C(l)C(l′ )m−1 m′−1 = C(l)m−1 C(l′ )m′−1 = B(hlm)B(h′ l′ m′ )
+            = B(hlmB(hlm)h′ l′ m′ B(hlm)−1 ) = B(hlmC(l)m−1 h′ l′ m′ mC(l)−1 )
+               = B(hlC(l)mm−1 h′ l′ C(l)−1 m′ m) = B(hh′ lC(l)l′ C(l)−1 m′ m)
+                                                          = C(lC(l)l′ C(l)−1 )m−1 m′−1 ,
+which is fulﬁlled by (2.2).
+    Let us call a Rota—Baxter operator on G = HLM deﬁned by Proposition 4.4 with
+the help of C as a triangular-splitting one. Note that GB ∼
+                                                          = H × LC × M op , where M op
+is the set M with the opposite product m ∗ m′ = m′ m.
+Corollary 4.5. Let G = ha, bi be two generated 2-step nilpotent group. Put c = [b, a].
+Then G = haihcihbi and for any integer k the map
+                              B(aα cβ bγ ) = ckβ b−γ ,   α, β, γ ∈ Z,
+is an RB-operator on G.
+   Given a splitting RB-operator B on a group G, we have an exact factorization
+                                       G = ker(B)Im (B).                                   (4.1)
+It is easy to see that if G is abelian, then there exists a non-splitting RB-operator B on G
+such that (4.1) is fulﬁlled. Indeed, if G is a direct sum of abelian subgroups: G = H × L,
+then any map hl 7→ ϕ(l), where ϕ is an endomorphism of L, deﬁnes an RB-operator on G
+satisfying (4.1).
+     The next claim generalizes this observation.
+Proposition 4.6. Given a semidirect product G = H ⋊ L, let C be a Rota—Baxter
+operator on L. Then a map B : G → G deﬁned by the formula B(hl) = C(l), where
+h ∈ H and l ∈ L, is a Rota—Baxter operator.
+Proof. We state the claim by the following computations for h, h′ ∈ H and l, l′ ∈ L,
+                                   B(hl)B(h′ l′ ) = C(l)C(l′ ),
+                                                                  −1 −1
+  B(hlB(hl)h′ l′ B(hl)−1 ) = B(hlC(l)h′ l′ C(l)−1 ) = B(hh′C(l) l lC(l)l′ C(l)−1 )
+                                                      = C(lC(l)l′ C(l)−1 ) = C(l)C(l′ ).
+   Note that GB ∼
+                = H ⋊ LC .
+
+                                                 8
+5    Constructions via homomorphisms, projections, and
+     exact formulas
+   When G is an abelian group, then B is a Rota—Baxter operator on G if and only if
+B is an endomorphism of G.
+
+Proposition 5.1. a) Let (G, B) be a Rota—Baxter group and B be an automorphism
+of G. Then G is abelian.
+   b) If G a group and H is its abelian subgroup, then any homomorphism (or antiho-
+momorphism) B : G → H is a Rota—Baxter operator.
+
+Proof. Suppose that a Rota—Baxter operator B : G → G is an endomorphism, then
+
+        B(g)B(h) = B(gB(g)hB(g)−1) = B(g)B 2 (g)B(h)(B 2 (g))−1,                    g, h ∈ G.
+
+It is equivalent to the relation
+                                        [B 2 (g), B(h)] = e.                                     (5.1)
+Hence, b) is true. The proof for the case when B is an antihomomorphism from G to H
+is analogous.
+    If further B is an automorphism, then G is an abelian group by (5.1).
+   The following several constructions of Rota—Baxter operators work only for groups
+very close to abelian ones.
+   Given an integer k, a group G is called k-abelian [18] if (gh)k = g k hk for all g, h ∈ G.
+
+Proposition 5.2. Let G be a group, and ﬁx a natural n. A map B : G → G deﬁned as
+follows B(g) = g n is a Rota—Baxter operator on G if and only if G is (n + 1)-abelian.
+
+Proof. Given g, h ∈ G, the identity (2.2) for the map B(x) = xn has the form
+
+         g n hn = (g n+1hg −n )n = g n+1hg −n g n+1 hg −n g n+1 . . . hg −n = g n (gh)n g −n .
+
+So, it is equivalent to the equality (gh)n = hn g n or to the following one:
+
+                                (hg)n+1 = h(gh)n g = hn+1 g n+1.
+
+It means that B is a Rota—Baxter operator on G if and only if G is (n + 1)-abelian.
+   Since every k-abelian group is also (1−k)-abelian group, we may represent the induced
+product in GB as follows
+
+                  g ◦ h = gg nhg −n = g n+1hn+1 h−n g −n = (gh)n+1(hg)−n .
+
+Remark 5.3. The statement of Proposition 5.2 in “if” direction follows from Proposi-
+tion 5.1, since the nth power of a (n + 1)-abelian group G lies in Z(G) [15].
+
+Proposition 5.4. Let G be a group. Then a map B(x) = g −1x−1 g is a Rota—Baxter
+operator on G if and only if [g, G] ⊂ Z(G).
+
+                                                  9
+Proof. Suppose that B(x) = g −1 x−1 g is a Rota—Baxter operator on G. It means that
+
+          g −1x−1 y −1 g = g −1 (xg −1 x−1 gyg −1xg)−1 g = g −1 g −1x−1 gy −1g −1xgx−1 g
+
+for all x, y ∈ G. This equality is equivalent to the following one,
+
+                                x−1 y −1 = [g, x]x−1 y −1[g, x−1 ].
+
+Denote s = x−1 y −1, then we have [x, g]s = [g, x−1 ] for all x, s ∈ G. Fixing x ∈ G, we
+conclude that [g, x] ∈ Z(G) for every x ∈ G.
+   Conversely, suppose that g ∈ G such an element that [g, x] ∈ Z(G) for every x ∈ G.
+By the previous part, it is enough to state that [x, g] = [g, x−1 ] for all x, s ∈ G. Since
+
+             [g, x−1 ] = g −1 xgx−1 = x−1 g −1 xg[g −1xg, x−1 ] = [x, g] · [xg , x−1 ],
+
+we have to prove that [xg , x−1 ] = e. Denote c = [g, x−1 ]. We get it by the formulas
+
+             [xg , x−1 ] = [[g, x−1 ]x, x−1 ] = [cx, x−1 ] = x−1 c−1 xcxx−1 = e.
+
+   Given a group G with an element g such that [g, G] ⊂ Z(G), we may compute the
+product of GB , where B(x) = g −1 x−1 g:
+
+          x ◦ y = xB(x)yB(x)−1 = xg −1 x−1 gyg −1xg = yxg −1 x−1 gg −1xg = yx,
+
+so this product coincides with the product induced by the RB-operator B−1 .
+Corollary 5.5. Let G be a 2-step nilpotent group, g ∈ G, then the map Bg (x) = g −1 x−1 g
+is a Rota—Baxter operator.
+   It is evident that this map Bg is a bijection. Denote by RB(G) the set of all Rota—
+Baxter operators on G. Hence, we have a map ϕ : G/[G, G] → RB(G) deﬁned as follows,
+ϕ(g) = Bg .
+   Let us try to construct a Rota—Baxter operator by the formula B(g) = agb with the
+help of some ﬁxed a and b. In comparison to Proposition 5.4 we allow a and b be not
+necessary inverse to each other, however we do not inverse g.
+Corollary 5.6. Let G be a group, and ﬁx a, b ∈ G. A map B : G → G deﬁned as follows
+B(g) = agb, is a Rota—Baxter operator on G if and only if G is abelian and b = a−1 ,
+i. e., B = id.
+Proof. If G is abelian, then every endomorphism of G is a Rota—Baxter operator on G,
+including the identity map.
+    Conversely, suppose that a map B on G deﬁned by the formula B(g) = agb is a Rota—
+Baxter operator on G. Since B(e) = e, we have b = a−1 . Thus, B is an automorphism
+of G and by Proposition 5.1a we have that G is abelian, and so B = id.
+Definition 5.7. A Rota—Baxter group (G, B) has the deep m (m is a natural number
+or ω) if it is a minimal such that
+
+                     G > B(G) > B 2 (G) > · · · > B m (G) = B m+1 (G).
+
+                                                10
+   Note that the RB-group (G, B−1 ) has deep 0 and the RB-group (G, B), where |G| > 1,
+B = B0 or B is splitting, has deep 1.
+   The following example shows that there are RB-groups of inﬁnite deep.
+Example 5.8. Let (Z, +) be the inﬁnite cycle group and B : Z → Z, B(x) = 2x for any
+x ∈ Z. Then (Z, B) is a Rota—Baxter group and it has the deep ω since
+                                                                   \
+                                                                   ∞
+                                    2                      ω
+             Z > B(Z) = 2Z > B (Z) = 4Z > · · · > B (Z) =                B k (Z) = 0.
+                                                                   k=1
+
+    If Fn = hx1 , x2 , . . . , xn i is a free non-abelian group, then we can deﬁne its projection
+π1 : Fn → hx1 i by
+                                    π1 (x1 ) = x1 , π1 (xi ) = e, i 6= 1.
+Then Fn = ker(π1 )hx1 i and for any integer k the map B(g) = π1 (g)k is a Rota—Baxter
+operator on Fn . The following proposition generalizes this observation.
+Proposition 5.9. Let G = K ∗ L be a free product with abelian L and π1 : G → L
+be a projection on the second component. Then for any endomorphism χ of L the map
+B(g) = χ(π1 (g)) is a Rota—Baxter operator on G.
+Question 5.10. Let G be a group and H be its a proper subgroup. Under which
+conditions there is a Rota—Baxter operator B such that B(G) = H? In particular, if
+F is a free non-abelian group, is there an RB-operator on F such that its image is the
+commutator subgroup F ′ of F ?
+
+
+6    Constructions via direct products
+    Using RB-operators on some groups, we can deﬁne RB-operators on direct products
+of these groups, it follows from
+Proposition 6.1. Let G be a group such that G = H × L.
+   a) Let BH be a Rota—Baxter operator on H and let BL be a Rota—Baxter operator
+on L. Then a map B : G → G deﬁned by the formula B(hl) = BH (h)BL (l), where h ∈ H
+and l ∈ L, is a Rota—Baxter operator.
+   b) If L is abelian and |L| > 2, then there exists a non-splitting Rota—Baxter operator
+on G.
+Proof. a) Straightforward.
+    b) On the contrary, suppose that every Rota—Baxter operator on G is splitting.
+Deﬁne a Rota—Baxter operator B(ψ) on G with the help of an automorphism ψ of L as
+follows, B(ψ)((h, l)) = ψ(l), by Proposition 5.1 it is a Rota—Baxter operator on G. By
+Proposition 4.2, we should have B(lB(l)) = ψ(l)ψ 2 (l) = e for all l ∈ L. Take ψ = id,
+so we have l2 = e for all l ∈ L. Since L is abelian, we get that L is a direct sum of
+copies of Z2 . By the condition |L| > 2, so we may ﬁnd nonzero and diﬀerent l1 , l2 ∈ L.
+Let us consider an automorphism ψ of L which interchanges l1 and l2 and does not
+change all other elements. It is easy to see that B(ψ) is non-splitting. We arrive at
+a contradiction.
+
+                                               11
+   It is easy to check that the following example gives Rota—Baxter operators on Gn ,
+below we will generalize it.
+Example 6.2. Let Gn = G × G × . . . × G. Then the following maps from Gn to Gn
+
+                      B((g1 , . . . , gn )) = (e, g1 , g2 g1 , g3 g2 g1 , . . . , gn−1gn−2 . . . g1 ),
+               e 1 , . . . , gn )) = (g −1 , g −1g −1, g −1 g −1g −1 , . . . , g −1g −1 g −1 . . . g −1)
+               B((g                    1      2   1     3    2   1              n   n−1 n−2         1
+
+are Rota—Baxter operators.
+    These Rota—Baxter operators may be extended to the ones on the inﬁnite Cartesian
+product of G.
+    Let R be a Rota—Baxter operator of weight 1 on the direct sum of ﬁelds (considered
+as associative algebra) kn = ke1 ⊕ ke2 ⊕ . . . ⊕ ken , where ei ej = δij ei . A linear operator
+         Pn
+R(ei ) =    rik ek , rik ∈ k, is an RB-operator of weight 1 on kn if and only if the following
+           k=1
+conditions are satisﬁed [1, 5]:
+   (1) rii = 0 and rik ∈ {0, 1} or rii = −1 and rik ∈ {0, −1} for all k 6= i;
+   (2) if rik = rki = 0 for i 6= k, then ril rkl = 0 for all l 6∈ {i, k};
+   (3) if rik 6= 0 for i 6= k, then rki = 0 and rkl = 0 or ril = rik for all l 6∈ {i, k}.
+   Moreover, we may suppose that the matrix of R is upper-triangular [5, 11].
+Theorem 6.3. Let Gn = G × G × . . . × G and let k be a ﬁeld. Let R be a Rota—Baxter
+                                                           P
+                                                           n
+operator of weight 1 on ke1 ⊕ ke2 ⊕ . . . ⊕ ken , R(ei ) =   rik ek , and the matrix of R is
+                                                                                i=1
+upper-triangular. Deﬁne a map B : Gn → Gn as follows,
+                                                                                      r
+                         B((g1 , . . . , gn )) = (t1 , . . . , tn ),   ti = girii gi−1
+                                                                                    i−1 i
+                                                                                          . . . g1r1i .             (6.1)
+
+Then B is a Rota—Baxter operator on Gn .
+Proof. Write down the left and right hand sides of (2.2) for B, where g = (g1 , . . . , gn )
+and h = (h1 , . . . , hn ):
+                                                                    rn−1 n                      rn−1 n             
+  B(g)B(h) = g1r11 hr111 , g2r22 g1r12 hr222 hr112 , . . . , gnrnn gi−1    . . . g1r1n hrnnn hi−1       . . . hr11n , (6.2)
+                                                                                  rn−1 n             
+                    B(gB(g)hB(g)−1) = tr111 , tr222 tr112 , . . . , trnnn tn−1            . . . tr11n ,               (6.3)
+
+where
+
+                        t1 = g1 g1r11 h1 g1−r11 ,      t2 = g2 g2r22 g1r12 h2 g1−r12 g2r22 ,     ...,
+                                              r                                  −r
+                           tn = gn gnrnn gn−1
+                                           n−1 n
+                                                 . . . g1r1n hn g1−r1n . . . gn−1n−1 n gn−rnn .
+
+   Let us prove by induction on i = 1, . . . , n that the i-coordinates of (6.2) and (6.3) are
+equal. For i = 1, we have                                     r11
+                             g1r11 hr111 = g1 g1r11 h1 g1−r11      ,
+since when r11 = 0 it is trivial equality e = e, and when r11 = −1 we get g1−1h−1
+                                                                               1  =
+        −1
+(h1 g1 ) .
+
+                                                             12
+   Suppose that we have proved that i-coordinates of (6.2) and (6.3) are equal for all
+i < k, where 2 ≤ k ≤ n. Let us prove the equality
+                                       r                          r                            r
+                                girii gi−1
+                                        i−1 i
+                                              . . . g1r1i hri ii hi−1
+                                                                   i−1 i
+                                                                         . . . hr11i = tri ii ti−1
+                                                                                                i−1 i
+                                                                                                      . . . tr11i
+
+for i = k. If rii = 0, then we may apply the induction hypothesis for i − 1 and for the
+coeﬃcients rs′ i−1 = rsi . If rii = −1, then we again apply the induction hypothesis for
+i − 1 and for the coeﬃcients rs′ i−1 = rsi to derive that
+         r                                 r                                    −r                 r
+    tri ii ti−1
+             i−1 i
+                   . . . tr11i = (gi gi−1gi−1
+                                           i−1 i
+                                                 . . . g1r1i hi g1−r1i . . . gi−1i−1 i gi )−1 ti−1
+                                                                                                i−1 i
+                                                                                                      . . . tr11i
+                                  r                                       −r         r                   r
+                       = gi−1 gi−1
+                                i−1 i
+                                      . . . g1r1i h−1 −r1i
+                                                   i g1    . . . gi−1i−1 i gi−1
+                                                                             i−1 i
+                                                                                   . . . g1r1i hi−1
+                                                                                                 i−1 i
+                                                                                                       . . . hr11i
+                                                                                          r                         r
+                                                                               = girii gi−1
+                                                                                         i−1 i
+                                                                                               . . . g1r1i hri ii hi−1
+                                                                                                                    i−1 i
+                                                                                                                          . . . hr11i .
+
+Remark 6.4. Analogously to [11], we may state that GnB ∼
+                                                       = Gn .
+Corollary 6.5. We may slightly modify (6.1) as follows. Let ψ2 , . . . , ψn ∈ Aut(G). Then
+a map P : Gn → Gn deﬁned by the formula
+
+                                                P ((g1, . . . , gn )) = (t1 , . . . , tn ),
+                                                              r                 r                       
+                       t1 = g1r11 ,        ti = girii ψi gi−1
+                                                           i−1 i        i−2 i
+                                                                 ψi−1 gi−2    . . . ψ2 g1r1i                  , i ≥ 2,
+
+is a Rota—Baxter operator on Gn .
+Proof. Deﬁne an automorphism ϕ of Gn as follows,
+                                                                                                                
+               ϕ((g1 , g2 , g3 , . . . , gn )) = g1 , ψ2−1 (g2 ), ψ2−1 ψ3−1 (g3 ), . . . , ψ2−1 . . . ψn−1 (gn ) .
+
+By Lemma 2.9 we have that B (ϕ) is a Rota—Baxter operator on Gn , where B is deﬁned
+by (6.1). Note that P = B (ϕ) .
+Corollary 6.6. Given a group G = H × H × L for some L and a non-trivial group H,
+the map B : G → G deﬁned as follows, B((h1 , h2 , l)) = (e, h1 , e) is a non-splitting Rota—
+Baxter operator.
+Proof. Applying Example 6.2 and Proposition 5.1, we conclude that B is a Rota—Baxter
+operator on G. Denote g = (h1 , h2 , l). Since B(gB(g)) = (e, h1 , eL ) is not the identity
+of G when h1 6= e, the operator B is not splitting by Proposition 4.2.
+
+
+7        Extensions of maps to RB-operators
+   In the previous sections we have considered some possibilities to construct RB-
+operators on groups. In general case we formulate
+Question 7.1. Let G = hAi be a group generated by a set A = {ai | i ∈ I}. Suppose that
+U = {ui }i∈I is a subset of G with the same cardinality as A. Under which conditions
+the map β : A → U, ai 7→ ui , i ∈ I, can be (uniquely) extended to an RB-operator
+B : G → G?
+
+                                                                      13
+   Suppose at ﬁrst that we know that (G, B) is an RB-group. What is a minimal subset
+M ⊆ G such that the values B(m) for all m ∈ M uniquely deﬁne the values B(g) for all
+elements of G?
+   The next theorem gives the answer on this question.
+
+Theorem 7.2. Let G be a group, let A = {ai }i∈I be some its subset, and let B an
+RB-operator on G.
+   a) We can ﬁnd the values of B on all elements of the subgroup hAiB ≤ (G, ◦) by the
+values B(ai ), ai ∈ A. The image B(hAiB ) is generated by elements B(ai ), i ∈ G.
+   b) If A is a generating set of GB , then the values B on A uniquely deﬁne the values
+of B on all elements of G.
+Proof. a) By assumption (G, B) is a Rota—Baxter group and B(ai ) = ui , i ∈ I. Suppose
+that an element g of hAiB is presented by some word
+                                ◦(k )     ◦(k )            ◦(k )
+                       w = ai1 1 ◦ ai2 2 ◦ . . . ◦ ais s ,           aij ∈ A, kij ∈ Z.
+
+Since B is a homomorphism from GB to G, we conclude that
+                          ◦(k )  ◦(k )        ◦(k ) 
+                B(w) = B ai1 1 B ai2 2 . . . B ais s = uki11 uki22 . . . ukiss .
+
+Hence, we can ﬁnd the values of B on the group that is generated by the set A under the
+product ◦.
+   b) If the set hAiB is equal G, then we can ﬁnd all values B(g), g ∈ G by the values
+B(ai ), ai ∈ A.
+    Now we consider a question on construction of RB-operators on an arbitrary group G.
+In this case we do not know generating set of GB , anyway we can take a generating set
+of G and deﬁne a map β on this set. Let G = hAi be a group generated by a set
+A = {ai | i ∈ I}. Suppose that U = {ui }i∈I is a subset of G with the same cardinality
+as A and the map β : A → U is deﬁned by β(ai ) = ui , i ∈ I.
+    Let us construct a group Ḡβ . To do this, we take a set of letters Ā = {āi | i ∈ I}
+which does not intersect with A and has the same cardinality as A. Let hĀi be a free
+group with basis Ā. We denote the operation in this group by ◦. Any element of hĀi can
+be uniquely presented by a reduced word of the form
+                                             ◦(k )      ◦(k )            ◦(k )
+                                     w = āi1 1 ◦ āi2 2 ◦ . . . ◦ āis s ,
+
+where āij ∈ Ā, kij ∈ Z \ {0}. Deﬁne a map β̄ : hĀi → G by the rule
+
+                       β̄(w) = β(ai1 )k1 β(ai2 )k2 . . . β(ais )ks = uki11 uki22 . . . ukiss .
+
+It is easy to see that this map is a homomorphism of hĀi to hUi.
+    Deﬁne a map π : hĀi → G by the formula
+
+   π(w) = (ai1 β(ai1 ))k1 (ai2 β(ai2 ))k2 . . . (ais β(ais ))ks β(ais )−ks β(ais−1 )−ks−1 . . . β(ai1 )−k1 .
+
+The following lemma clariﬁes the connection between these two maps.
+
+                                                        14
+Lemma 7.3. Let w, w ′ ∈ hĀi, then
+  a) π(w ◦(−1) ) = β̄(w)−1π(w)−1 β̄(w),
+  b) π(w ◦ w ′ ) = π(w)β̄(w)π(w ′)β̄(w)−1,
+  c) π((w ′)◦(−1) ◦ w ◦ w ′ ) = β̄(w ′)−1 π(w ′)−1 π(w)β̄(w)π(w ′)β̄(w)−1 β̄(w ′).
+
+Proof. a) For the word
+                                              ◦(k )         ◦(k )                 ◦(k )
+                                      w = āi1 1 ◦ āi2 2 ◦ . . . ◦ āis s
+its inverse equals
+                                             ◦(−ks )         ◦(−k     )               ◦(−k1 )
+                               w ◦(−1) = āis            ◦ āis−1 s−1 ◦ . . . ◦ āi1            ,
+and
+
+π(w ◦(−1) )=(ais β(ais ))−ks (ais−1 β(ais−1 ))−ks−1 . . . (ai1 β(ai1 ))−k1 β(ai1 )k1 β(ai2 )k2 . . . β(ais )ks .
+
+Hence,
+                  π(w ◦(−1) ) = β(ais )−ks . . . β(ai1 )−k1 π(w)−1β(ai1 )k1 . . . β(ais )ks .
+   b) Given a word
+                                                 ◦(l )      ◦(l )             ◦(l )
+                                      w ′ = āj1 1 ◦ āj2 2 ◦ . . . ◦ ājt t ,
+we compute
+                                         ◦(k )                ◦(k )       ◦(l )             ◦(l )
+                           w ◦ w ′ = āi1 1 ◦ . . . ◦ āis s ◦ āj1 1 ◦ . . . ◦ ājt t
+and
+
+  π(w ◦ w ′ ) = (ai1 β(ai1 ))k1 . . . (ais β(ais ))ks · (aj1 β(aj1 ))l1 . . . (ajt β(ajt ))lt
+                                                          · β(ajl )−lt . . . β(aj1 )−l1 · β(ais )−ks . . . β(ai1 )−k1 .
+
+Hence,
+
+π(w◦w ′) = π(w)β(ai1 )k1 . . . β(ais )ks π(w ′)·β(ais )−ks . . . β(ai1 )−k1 = π(w)β̄(w)π(w ′)β̄(w)−1.
+
+   c) Take the product (w ′ )◦(−1) ◦ w ◦ w ′ and ﬁnd
+
+  π((w ′)◦(−1) ◦ w ◦ w ′ ) = β(ajl )−lt . . . β(aj1 )−l1 (π(w ′)−1 π(w)β(ai1 )k1 . . . β(ais )ks π(w ′)
+                              · β(ais )−ks . . . β(ai1 )−k1 )β(aj1 )l1 . . . β(ajt )lt
+                                               = β̄(w ′ )−1 π(w ′)−1 π(w)β̄(w)π(w ′)β̄(w)−1β̄(w ′ ).
+
+   Let R = {w ∈ hĀi | π(w) = e}. Then from the previous lemma it follows
+
+Lemma 7.4. The set R is a subgroup of hĀi. Suppose that β̄ satisﬁes the following
+implication
+                        π(w) = π(w ′) ⇒ β̄(w) = β̄(w ′),                      (7.1)
+in particular, ker(π) ⊆ ker(β̄), then R is normal in hĀi.
+
+Lemma 7.5. Suppose that for some elements w, w ′ ∈ hĀi such that π(w) = π(w ′ ), we
+have β̄(w) 6= β̄(w ′ ), then β has no an extension to an RB-operator on G.
+
+                                                            15
+Proof. Suppose that B is an extension of β to an RB-operator B on G and
+                        ◦(k )      ◦(k )          ◦(k )                ◦(l )     ◦(l )           ◦(l )
+                w = āi1 1 ◦ āi2 2 ◦ . . . ◦ āis s ,         w ′ = āj1 1 ◦ āj2 2 ◦ . . . ◦ ājt t .
+
+Consider two elements in GB :
+                        ◦(k )      ◦(k )          ◦(k )                ◦(l )    ◦(l )            ◦(l )
+                 u = ai1 1 ◦ ai2 2 ◦ . . . ◦ ais s ,           u′ = aj1 1 ◦ aj2 2 ◦ . . . ◦ ajt t .
+
+   Then
+
+         B(u) = β(ai1 )k1 . . . β(ais )ks = β̄(w) 6= β̄(w ′) = β(aj1 )l1 . . . β(ajt )lt = B(u′).
+
+On the other hand,
+                                  B(u) = B(π(w)) = B(π(w ′)) = B(u′ ),
+a contradiction.
+    If R = ker(π) is a normal subgroup of hĀi, then we can deﬁne a group Ḡβ = hĀi/R.
+Denote by [w] the element of Ḡβ that is presented by the word w. The product in Ḡβ
+is deﬁned by the rule [w] ◦ [w ′ ] = [w ◦ w ′ ]. Then Ḡβ is generated by [ai ], i ∈ I, and is
+deﬁned by the relations [w] = [w ′ ] for all words
+                        ◦(k )       ◦(k )         ◦(k )                 ◦(l )    ◦(l )            ◦(l )
+                w = āi1 1 ◦ āi2 2 ◦ . . . ◦ āis s ,         w ′ = āj1 1 ◦ āj2 2 ◦ . . . ◦ ājt t
+
+such that π(w) = π(w ′ ), i. e., the following relation holds in G:
+
+  (ai1 β(ai1 ))k1 (ai2 β(ai2 ))k2 . . . (ais β(ais ))ks β(ais )−ks β(ais−1 )−ks−1 . . . β(ai1 )−k1
+              = (aj1 β(aj1 ))l1 (aj2 β(aj2 ))l2 . . . (ajt β(ajt ))lt β(ajl )−lt β(ajt−1 )−lt−1 . . . β(aj1 )−l1 .
+
+    If condition (7.1) is satisﬁed, then the homomorphism β̄ : hĀi → hUi ≤ G induces
+the homomorphism Ḡβ → hUi, which we denote by the same symbol β̄. Also, the map
+π : hĀi → G induces the map Ḡβ → G, which we denote by π̄. It is easy to see that
+Im (π) = Im (π̄).
+    In the following example we apply Lemma 7.5.
+Example 7.6. Let
+
+                                G = s1 , s2 | s21 = s22 = e, s1 s2 s1 = s2 s1 s2
+
+be the symmetric group S3 on 3 symbols.
+   a) If we take the map β : {s1 , s2 } → {s1 , s2 } such that s1 7→ s1 , s2 7→ s2 , then it has
+an extension to the RB-operator B−1 (g) = g −1 on S3 . Let us ﬁnd the group Gβ . Let hĀi
+be a free group with basis Ā = {t1 , t2 }. We have a map π : hĀi → G that is deﬁned by
+the formula
+                   ◦(k )  ◦(l )          ◦(k )  ◦(l ) 
+                π t1 1 ◦ t2 1 ◦ . . . ◦ t1 s ◦ t2 s = s−l  s −ks
+                                                         2 s1    . . . s−l1 −k1
+                                                                        2 s1 .
+
+In this case R = {w ∈ hĀi | π(w) = e} is normal in hĀi and the product in Gβ is opposite
+to the product in G.
+
+                                                          16
+   b) Note that the group S3 can be also generated by the elements τ1 = s1 , τ2 = s2 ,
+and τ3 = s1 s2 s1 . Put
+
+                                β(τ1 ) = τ1 ,      β(τ2 ) = τ2 ,      β(τ3 ) = τ2 τ1
+
+and take hĀi be a free group with basis Ā = {t1 , t2 , t3 }. Then
+
+     π(t1 ◦ t1 ) = π(t2 ◦ t2 ) = π(t3 ◦ t1 ) = e,           π(t1 ◦ t2 ◦ t1 ) = π(t2 ◦ t1 ◦ t2 ) = τ1 τ2 τ1 ,
+   π(t1 ◦ t2 ) = π(t2 ◦ t3 ) = π(t3 ◦ t3 ) = τ2 τ1 ,        π(t2 ◦ t1 ) = π(t3 ◦ t2 ) = π(t1 ◦ t3 ) = τ1 τ2 .
+
+Hence, π(hĀi) = S3 .
+   On the other hand,
+                                      e = β̄(t1 ◦ t1 ) 6= β̄(t3 ◦ t1 ) = t2 .
+It means that the condition of Lemma 7.5 does not hold and we can not extend the map β
+to a Rota—Baxter operator on S3 .
+    Now we can formulate the main result of the present section.
+Theorem 7.7. Let G = hAi be a group generated by a set A = {ai | i ∈ I}. Suppose that
+U = {ui }i∈I is a subset of G with the same cardinality as A and β : A → U, β(ai ) = ui ,
+i ∈ I. If condition (7.1) is satisﬁed and the map π̄ : Ḡβ → G is bijective, then β can be
+extended to an RB-operator on G and GB is isomorphic to Ḡβ .
+Proof. Construct the RB-operator B on G. Let g ∈ G. Since π̄ is invertible on G, there
+exists a unique element ḡ ∈ Ḡβ such that π̄(ḡ) = g. Suppose that ḡ = [w], where
+                                                ◦(k )    ◦(k )             ◦(k )
+                                      w = āi1 1 ◦ āi2 2 ◦ . . . ◦ āis s
+
+is a word in the free group hĀi. Then we put
+
+                        B(g) = B(π̄(ḡ)) = B(π(w)) = β̄(w) = uki11 uki22 . . . ukiss .
+
+By condition (7.1) this map is deﬁned on [w] and does not depend on the choice of w.
+   Let us prove that B is an RB-operator on G. For g ′ ∈ G there exists a word
+                                                 ◦(l )   ◦(l )             ◦(l )
+                                       w ′ = āj1 1 ◦ āj2 2 ◦ . . . ◦ ājt t
+
+such that π(w ′) = π̄([w ′ ]) = g ′ . Then B(g ′ ) = ulj11 ulj22 . . . uljtt .
+   On the other hand, by Lemma 7.3b
+
+                                   π(w ◦ w ′ ) = π(w)β̄(w)π(w ′)β̄(w)−1
+
+and we have
+
+  B(gB(g)g ′B(g)−1) = B(π(w ◦ w ′ )) = β̄(w ◦ w ′ ) = β̄(w)β̄(w ′ )
+                                                          = uki11 uki22 . . . ukiss · ulj11 ulj22 . . . uljtt = B(g)B(g ′).
+
+Hence, B is indeed an RB-operator on G.
+
+                                                         17
+   The next proposition shows that the condition (7.1) is not suﬃcient for existence of
+an RB-operator extending given map β.
+Proposition 7.8. Consider the symmetric group S3 . Then
+   a) the map β : s1 7→ s1 , s2 7→ e deﬁnes the group Ḡβ and this group is isomorphic to
+Z2 × Z2 .
+   b) There is no an RB-operator on S3 extending β.
+Proof. a) Take a free group ht1 , t2 i. Then we can ﬁnd
+
+                  π(t1 ◦ t1 ) = π(t2 ◦ t2 ) = e,        π(t1 ◦ t2 ) = π(t2 ◦ t1 ) = s2 s1 .
+
+From equalities
+
+                   β̄(t1 ◦ t1 ) = β̄(t2 ◦ t2 ) = e,        β̄(t1 ◦ t2 ) = β̄(t2 ◦ t1 ) = s1
+
+it follows that (7.1) holds and we can deﬁne
+
+       Ḡβ = h[t1 ], [t2 ] | [t1 ] ◦ [t1 ] = [t2 ] ◦ [t2 ] = e, [t1 ] ◦ [t2 ] = [t2 ] ◦ [t1 ]i ∼
+                                                                                               = Z2 × Z2 .
+
+Hence, the map β does not deﬁne a group operation on the set S3 .
+   b) Suppose that such RB-operator B exists. Since B(s2 ) = e, then by Lemma 2.7
+
+                                 B(s1 s2 ) = B(s2 s1 s2 ) = B(s1 s2 s1 ).
+
+We arrive at a contradiction by the following equalities,
+
+      s1 B(s1 s2 ) = B(s1 )B(s1 s2 ) = B(s1 · s1 · s1 s2 · s1 ) = B(s1 s2 s1 ) = B(s1 s2 ).
+
+   Now we consider RB-operators on free non-abelian groups. In this case we do not
+need to deﬁne groups hĀi and Ḡβ . We can deﬁne a new operation ◦ directly on the free
+group.
+   The following proposition shows that in some cases we can reconstruct RB-operators
+by its values on a basis of a free group.
+Proposition 7.9. Let F be a free group with a basis A = {ai }i∈I . Then
+   a) the map β : ai 7→ e for all i ∈ I has the unique extension to an RB-operator. This
+operator is the trivial one, B0 (g) = e, g ∈ F .
+   b) the map β : ai 7→ a−1 i  for all i ∈ I has the unique extension to an RB-operator.
+This operator is B−1 (g) = g −1 , g ∈ F .
+Proof. a) Suppose that B is an extension of β to an RB-operator on F . Below we use
+                                                                 ◦(k)
+the notation of the operation ◦ in sense of (3.1). In this case ai    = aki , and hence
+    ◦(k)
+B(ai ) = e for all i ∈ I, k ∈ Z. If
+                                            ◦(k )     ◦(k )           ◦(k )
+                                    w = ai1 1 ◦ ai2 2 ◦ . . . ◦ ais s ,
+
+where aij ∈ A, kij ∈ Z, is an arbitrary word, then
+                                    ◦(k )  ◦(k )    ◦(k ) 
+                      B(w) = B ai1 1 B ai2 2 . . . B ais s = e.
+
+                                                      18
+Let us show that in this case GB is also generated by A. It follows from the equality
+          ◦(k )     ◦(k )           ◦(k )
+  w = ai1 1 ◦ ai2 2 ◦ . . . ◦ ais s
+      = (ai1 B(ai1 ))k1 (ai2 B(ai2 ))k2 . . . (ais B(ais ))ks B(ais )−ks B(ais−1 )−ks−1 . . . B(ai1 )−k1
+                                                                                                  = aki11 aki22 . . . akiss .
+    b) The proof is similar.
+Question 7.10. Find Rota—Baxter operators on free non-abelian groups. In particular,
+is it true that any map β deﬁned on a basis of a free group can be extended to an
+RB-operator on this group?
+   The following example shows that the values of β on the generators of Fn do not
+deﬁne values of β on all elements of Fn .
+Example 7.11. Let F2 = ha, bi be the free group of rank 2. Put β(a) = a, β(b) = e.
+By Proposition 5.9, there exists an RB-operator on F2 which is extension of the map β.
+This operator is the homomorphism B : F2 → hai that is deﬁned on the generators as
+follows, B(a) = β(a) = a, B(b) = β(b) = e. Let us denote the product in F2 as · and the
+product in (F2 )B as ◦. We try do deﬁne the operation ◦ on F2 applying only the map β.
+We have
+                             a◦(k) = ak ,      β(a◦(k) ) = β(a)k = ak ,           k ∈ Z,
+                                b◦(l) = bl ,    β(b◦(l) ) = β(b)l = e,          l ∈ Z.
+For words of syllable length two we have
+                       a◦(k) ◦ b◦(l) = a2k bl a−k ,      b◦(l) ◦ a◦(k) = bl ak ,      k, l ∈ Z.
+By Proposition 3.4 for word of an arbitrary length we have
+                                                                                                                   P
+   w = a◦(k1 ) ◦ b◦(l1 ) ◦ a◦(k2 ) ◦ b◦(l2 ) ◦ . . . ◦ a◦(ks ) ◦ b◦(ls ) = a2k1 bl1 a2k2 bl2 . . . a2ks bls a−         ki
+                                                                                                                            .
+We can ﬁnd                                                     P
+                                                                   ki
+                                                  β(w) = a              .
+Hence, we can construct extension
+                                P of β to the subgroup S = h{a, b}, ◦i generated by a
+and b in FB . So, ker(β) = {w | ki = 0} is the normal closure of b in S.
+   Hence, S is not equal to F2 . In particular, ab does not lie in S.
+   Let us add a new generator ab to the set {a, b} and put
+                                     β1 (a) = β1 (ab) = a,              β1 (b) = e.
+Then in the group T = h{a, b, ab}, ◦i we have by Proposition 3.4
+                                     (ab)◦(m) = (aba)m a−m ,                m ∈ Z.
+In particular, ab, a−1 b−1 ∈ T , and the group T consists of elements
+
+  a◦(k1 ) ◦ b◦(l1 ) ◦ (ab)◦(m1 ) ◦ a◦(k2 ) ◦ b◦(l2 ) ◦ (ab)◦(m2 ) ◦ . . . ◦ a◦(ks ) ◦ b◦(ls ) ◦ (ab)◦(ms )
+                                                                                                              P
+                                     = a2k1 bl1 (aba)m1 a2k2 bl2 (aba)m2 . . . a2ks bls (aba)ms a−             (ki +m1 )
+
+
+for integers ki , li , mi . It is easy to check that T 6= F2 .
+
+                                                          19
+Question 7.12. Is it true that the group (F2 )B from this example is not ﬁnitely gener-
+ated?
+
+   In Example 7.11 we have deﬁned β on the group h{a, b}, ◦i that is a subset of F2 . We
+have seen that β has a non-trivial kernel and its image is not equal to F2 .
+
+Question 7.13. Is there an RB-group (G, B) such that B is a surjective map with
+a non-trivial kernel?
+
+
+8    Extensions of RB-groups
+    If (G, B) is an RB-group, then an RB-group (H, BH ) is called an RB-subgroup of
+(G, B), if H is a subgroup of G and BH is the restriction of B to H. We can deﬁne
+a short exact sequence of RB-groups
+
+                        1 → (H, BH ) → (G, B) → (L, BL ) → 1,                      (8.1)
+
+where (H, BH ) is an RB-subgroup of (G, B) and there is an epimorphism of RB-groups
+(G, B) → (L, BL ) such that BL is induced by B. We say that (G, B) is an extension of
+(H, BH ) by (L, BL ).
+   As in the case of groups we can formulate
+
+Question 8.1. Let (H, BH ) and (L, HL ) be two RB-groups. Find all RB-groups (G, B)
+for which there exists the short exact sequence (8.1)?
+
+   By Proposition 6.1, such RB-groups (G, B) exist.
+   Recall the construction of wreath product (see, for example, [16]). Let H and L be
+groups, Fun(L, H) and fun(L, H) are Cartesian and direct sums of copies H indexed
+by elements of L. It means that Fun(L, H) is the group of all functions L → H and
+fun(L, H) is its subgroup of functions with a ﬁnite support. For f ∈ Fun(L, H), l ∈ L,
+the function f l is deﬁned by the rule f l = f (lx), x ∈ L. The map
+                         ˆl : Fun(L, H) → Fun(L, H),   f 7→ f l ,
+
+is an automorphism of Fun(L, H), which sends fun(L, H) to itself, and the maps
+
+                L → Aut(Fun(L, H)),      L → Aut(fun(L, H)),        l 7→ ˆl,
+
+are isomorphic embeddings. The Cartesian wreath product H¯≀L = L · Fun(L, H) is
+a group with multiplication
+                                                     ′
+                              lf · l′ f ′ = ll′ · f l f ′ .
+The direct wreath product is the group H ≀ L = L · fun(L, H).
+   It is natural to formulate
+
+Question 8.2. Let G = H ≀ L be a direct wreath product or G = H¯≀L be a Cartesian
+wreath product of H and L. What RB-operators can be deﬁned on G?
+
+
+                                          20
+    Particular answer on this question gives
+Proposition 8.3. Let G be a Cartesian or direct wreath product of groups H and L.
+Then
+   a) the map B(lf ) = f −1 deﬁnes an RB-operator on G;
+   b) if L is abelian and ϕ is any endomorphism of L, then the map B(lf ) = lϕ deﬁnes
+an RB-operator on G;
+   c) if action of L on Fun(L, H) (correspondingly, on fun(L, H)) is trivial and BL and
+BH are RB-operators on L and on Fun(L, H) (on fun(L, H) respectively), then the map
+B(lf ) = BL (l)BH (f ) deﬁnes an RB-operator on G.
+Proof. a) Since G has exact factorization G = L · Fun(L, H) or G = L · fun(L, H), then
+the result follows from Example 4.1.
+   b) Follows from Proposition 5.1b.
+   c) Follows from Proposition 6.1.
+   Non-trivial examples of RB-operators on Fun(L, H) and on fun(L, H) can be found
+by Theorem 6.3.
+   It is well-known that any extension of a group H by a group L can be embedded into
+the Cartesian wreath product H¯≀L, it is the Frobenius embedding.
+   For extensions of RB-groups we can formulate
+Question 8.4. Is it true that any RB-extension of (H, BH ) by (L, BL ) can be embedded
+into an RB-group (H¯≀L, B) for some an RB-operator B on H¯≀L?
+    By analogy with extension and lifting problems for automorphism groups of exten-
+sions, we can formulate
+Question 8.5. Suppose that
+                                 1→H→G→L→1
+is a short exact sequence of groups.
+    a) Extension problem. Let (H, BH ) be an RB-group. Does there exist an RB-group
+(G, B) such that (H, BH ) is its RB-subgroup?
+    b) Lifting problem. Let (L, BL ) be an RB-group. Do there exist an RB-group (G, B)
+and an epimorphism (G, B) → (L, BL ) such that BL is induced by B?
+
+
+9     Connection with associated Lie ring
+   The main motivation of the authors L. Guo et al. [14] to introduce Rota—Baxter
+operators on groups was the connection with Rota—Baxter operators on Lie algebras,
+when the initial group is Lie one. Let us consider another known construction of Lie ring
+by a given (not necessary Lie) group.
+   Let G be a group, consider its lower central series Gi , i = 1, 2, L
+                                                                      . . ., where G1 = G
+and Gi+1 = [G, Gi ]. The associated graded abelian group L(G) = n≥1 Gn /Gn+1 has
+the structure of Lie ring under the product [xGi+1 , yGj+1] = [x, y]Gi+j+1, where [x, y] is
+usual commutator.
+
+                                            21
+Proposition 9.1. Let G be a group and let B be a Rota—Baxter operator on G such that
+B(Gn ) ⊂ Gn for all n ≥ 1. Then R deﬁned as R(xGi+1 ) = B(x)Gi+1 is a Rota—Baxter
+operator of weight 1 on the Lie ring L(G).
+
+Proof. Given h ∈ Gi and g ∈ Gi+1 , it is easy to check by Lemma 2.5d that B(h)−1 B(hg) ∈
+Gi+1 , so R is well-deﬁned. Let x ∈ Gi and y ∈ Gj . We have to state the equality
+
+  [R(xGi+1 ), R(yGj+1)] = R([R(xGi+1 ), yGj+1] + [xGi+1 , R(yGj+1)] + [xGi+1 , yGj+1]),
+
+which equals in terms of B to the following one,
+
+     B(x)−1 B(y)−1 B(x)B(y)Gi+j+1 = B([B(x), y] + [x, B(y)] + [x, y])Gi+j+1.            (9.1)
+
+Applying the commutator properties and the fact that Gi+j /Gi+j+1 is abelian, we may
+rewrite the inner expression inside the brackets from the right-hand side of (9.1) modulo
+Gi+j+1 as follows,
+
+ [B(x), y] + [x, B(y)] + [x, y]
+       = [B(x), y]B(y) + [x, B(y)]B(x) + [x, y]B(y)B(x) + [B(x), B(y)] + [B(y), B(x)]
+      = [x, yB(y)]B(x) + [B(x), yB(y)] + [B(y), B(x)] = [xB(x), yB(y)] + [B(y), B(x)].
+
+The formula (9.1) is a consequence of the equalities fulﬁlled in G
+
+ B(y)B(x)B([xB(x), yB(y)] · [B(y), B(x)])
+              = B(yB(y)xB(y)−1)B([xB(x), yB(y)] · [B(y), B(x)])
+             = B yB(y)xB(y)−1B(y)B(x)(xB(x))−1 (yB(y))−1xB(x)yB(y)
+                                                           
+                     × B(y)−1 B(x)−1 B(y)B(x)B(x)−1 B(y)−1
+           = B(yB(y)xB(x)B(x)−1 x−1 B(y)−1y −1 xB(x)yB(x)−1 B(y)B(y)−1)
+                                  = B(yB(y)B(y)−1y −1xB(x)yB(x)−1 ) = B(x)B(y).
+
+Example 9.2. Let G be a 2-step nilpotent group and B is an RB-operator on G deﬁned
+as in Proposition 5.4. Then by Proposition 9.1 we get an RB-operator R : L(G) → L(G),
+where L(G) = G/[G, G] ⊕ [G, G]. It is easy to verify that R = −id.
+
+
+10     Rota—Baxter operators on ﬁnite simple groups
+   Given a group G, an automorphism ψ of G is called ﬁxed-point-free, if ψ(g) = g
+implies g = e. Let us state a group analogue of Proposition 2.21 from [6] proven for Lie
+algebras (see also [4]).
+
+Theorem 10.1. Let G be a ﬁnite non-abelian simple group. Let B be a Rota—Baxter
+operator on G such that ker B = {e}. Then B(g) = g −1 .
+
+
+
+                                            22
+Proof. Since B is a homomorphism from GB to G with trivial kernel, we conclude that
+GB ∼= G, and GB is also simple. Suppose that ker(B+ ) 6= GB , where B+ (g) = gB(g) is
+a homomorphism from GB to G. By simplicity of GB , we obtain that ker B+ = {e}. So,
+we have an automorphism ϕ = B −1 B+ of the simple group GB . Note that ϕ is a ﬁxed-
+point-free. Indeed, g = ϕ(g) = B −1 (gB(g)) would imply the equality B(g) = gB(g), i. e.,
+g = e. By [19], a ﬁnite group admitting a ﬁxed-point-free automorphism is solvable. We
+have a contradiction.
+Corollary 10.2. Let G be a ﬁnite group and let B be an RB-operator on G. If the
+group GB is non-abelian simple, then B is elementary and G ∼
+                                                           = GB .
+Proof. Since ker B is a normal subgroup of GB and GB is simple, we have two cases:
+either ker B = G or ker B = {e}. If ker B = G, then B is elementary and G ∼
+                                                                          = GB . If
+                     ∼
+ker B = {e}, then G = GB by Theorem 10.1.
+Corollary 10.3. Let G be a ﬁnite non-abelian simple group. If G is not factorizable,
+then G is RB-elementary.
+Proof. Let B be a nonelementary Rota—Baxter operator on such a group G. By Theo-
+rem 10.1 we have a proper factorization (3.3), it is a contradiction.
+   List of ﬁnite simple non-factorizable groups is presented in [17, Table 4.1]. It includes
+some ﬁnite groups of Lie type (classical and exceptional) and 15 sporadic groups. We are
+going to describe all Rota—Baxter operators on all sporadic groups.
+
+                    Table: exact factorizations of sporadic groups [8]
+                         G        A                  B
+                       M11       M10                 Z11
+                                M9 .2             Z11 ⋊ Z5
+                       M12       M11         A4 , D12 , Z6 × Z2
+                                M9 .2             PSL2 (11)
+                       M23       M22                 Z23
+                              Z23 ⋊ Z11      PΣL3 (4), 24 ⋊ A7
+                       M24       M23      A4 × Z2 , D24 , D8 ⋊ Z3
+                                 M23                 S4
+                                 M23                 B24
+                              PSL2 (23)      PΣL3 (4), 24 ⋊ A7
+
+Theorem 10.4. Let G be a sporadic simple group. If G = M22 or G is not a Mathieu
+group, then G has only elementary RB-operators. If G ∈ {M11 , M12 , M23 , M24 }, then all
+RB-operators on G are splitting (see Table).
+Proof. Our main tool in the proof is the list of all factorizations of sporadic groups [8].
+Suppose that B is a nonelementary RB-operator on G. Thus, ker B 6= {e} and ker(B+ ) 6=
+{e} by Corollary 10.3. We have a factorization (3.3). Suppose that one of the factors
+in (3.3) is simple. We may assume that Im (B) is simple, otherwise we consider B    e and
+     e Since ker B+ is a normal subgroup of Im (B), we conclude that ker B+ = Im (B).
+Im (B).
+
+                                            23
+By (3.2), Im B+ = ker B. The last equality due to Proposition 4.2 implies that B is
+splitting.
+    Suppose initially that a factorization (3.3) is exact. Since |G| = | ker B| · |Im B|, we
+again get the equality ker B+ = Im (B), and so B is splitting.
+    Now, we look through all factorizations of sporadic groups. In Tables 1 and 2 [8] we
+have only one non-exact factorization with both non-simple factors, it is
+
+                            He = (Sp(4, 4).2) · (72 ⋊ SL2 (7)).
+
+Let Im (B) = Sp(4, 4).2 and Im (B+ ) = 72 ⋊SL2 (7), then | ker B| = |He|/|Im (B)| = 2058.
+Since |Im (B+ )| = 8 · 2058, we get by (3.2) that ker(B+ ) is a subgroup of Im (B) of
+index 8. Analyzing maximal subgroups of Sp(4, 4) [7], we conclude that this case for
+a Rota—Baxter operator B is not possible.
+
+
+Acknowledgments
+    Authors are grateful to participants of the seminar “ Évariste Galois” at Novosibirsk
+State University for fruitful discussions. The second author is grateful to Alexey Staro-
+letov for the helpful discussions.
+    Vsevolod Gubarev is supported by the Program of fundamental scientiﬁc researches
+of the Siberian Branch of Russian Academy of Sciences, I.1.1, project 0314-2019-0001.
+    Valery G. Bardakov is supported by Ministry of Science and Higher Education of
+Russia (agreement No. 075-02-2020-1479/1).
+    The results of §3, §5, §7, and §8 are supported by Ministry of Science and Higher
+Education of Russia (agreement No. 075-02-2020-1479/1), while the results of §4, §6, §9,
+and §10 are supported by the Program of fundamental scientiﬁc researches of the Siberian
+Branch of Russian Academy of Sciences, I.1.1, project 0314-2019-0001.
+
+
+References
+ [1] H. An, C. Bai, From Rota-Baxter Algebras to Pre-Lie Algebras, J. Phys. A (1)
+     (2008), 015201, 19 p.
+
+ [2] C. Bai, O. Bellier, L. Guo, X. Ni, Splitting of operations, Manin products, and
+     Rota—Baxter operators, Int. Math. Res. Notices 3 (2013) 485–524.
+
+ [3] G. Baxter, An analytic problem whose solution follows from a simple algebraic iden-
+     tity, Paciﬁc J. Math. 10 (1960), 731–742.
+
+ [4] A.A. Belavin, V.G. Drinfel’d. Solutions of the classical Yang—Baxter equation for
+     simple Lie algebras, Funct. Anal. Appl. (3) 16 (1982) 159–180.
+
+ [5] S.L. de Bragança, Finite Dimensional Baxter Algebras, Stud. Appl. Math. (1) 54
+     (1975), 75–89.
+
+
+
+                                            24
+ [6] D. Burde, V. Gubarev, Rota–Baxter operators and post-Lie algebra structures on
+     semisimple Lie algebras, Commun. Algebra (5) 47 (2019), 2280–2296.
+
+ [7] J. Fischer and J. McKay, The nonabelian simple groups G, |G| < 106 — maximal
+     subgroups, Math. Comp. (144) 32 (1978), 1293–1302.
+
+ [8] M. Giudici, Factorisations of sporadic simple groups, J. Algebra (1) 304 (2006),
+     311–323.
+
+ [9] M. Goncharov, Rota—Baxter operators on cocommutative Hopf algebras,
+     arXiv:2011.14390, 14 p.
+
+[10] M. E. Goncharov, P. S. Kolesnikov. Simple ﬁnite-dimensional double algebras, J. Al-
+     gebra 500 (2018) 425–438.
+
+[11] V. Gubarev, Rota-Baxter operators on a sum of ﬁelds, J. Algebra Appl. (6) 19
+     (2020), 2050118.
+
+[12] V. Gubarev, P. Kolesnikov, Embedding of dendriform algebras into Rota—Baxter
+     algebras, Cent. Eur. J. Math. (2) 11 (2013) 226–245.
+
+[13] L. Guo, An Introduction to Rota—Baxter Algebra. Surveys of Modern Mathematics,
+     vol. 4, International Press, Somerville (MA, USA); Higher education press, Beijing,
+     2012.
+
+[14] L. Guo, H. Lang, and Yu. Sheng, Integration and geometrization of Rota—Baxter
+     Lie algebras, arXiv:2009.03492, 24 p.
+
+[15] L. A. Kaluzhnin, Structure of n-Abelian groups, Math. Notes (USSR), 2 (1967),
+     768–772.
+
+[16] M. I. Kargapolov, J. I. Merzljakov, Fundamentals of the Theory of Groups. Springer,
+     New York, 1979.
+
+[17] J. Kirtland, Finding proper factorizations in ﬁnite groups. Algebra Discrete Math.
+     2 (2009), 45–59.
+
+[18] F. Levi, Notes on group theory. I, J. Indian Math. Soc. 8 (1944), 1–7.
+
+[19] P. Rowley, Finite Groups Admitting a Fixed-Point-Free Automorphism Group, J. Al-
+     gebra (2) 174 (1995), 724–727.
+
+[20] T. Schedler, Poisson algebras and Yang-Baxter equations, in: Advances in Quantum
+     Computation (Contemp. Math., Vol. 482), AMS, Providence, R.I. (2009) 91–106.
+
+[21] M.A. Semenov-Tyan-Shanskii, What is a classical r-matrix? Funct. Anal. Appl. 17
+     (1983) 259–272.
+
+
+
+
+                                           25
+Valeriy G. Bardakov
+Sobolev Institute of Mathematics
+Acad. Koptyug ave. 4, 630090 Novosibirsk, Russia
+Novosibirsk State University
+Pirogova str. 2, 630090 Novosibirsk, Russia
+Novosibirsk State Agrarian University
+Dobrolyubova str., 160, 630039 Novosibirsk, Russia
+Regional Scientiﬁc and Educational Mathematical Center of Tomsk State University
+Lenin ave. 36, 634009 Tomsk, Russia
+email: bardakov@math.nsc.ru
+Vsevolod Gubarev
+Sobolev Institute of Mathematics
+Novosibirsk State University
+e-mail: wsewolod89@gmail.com
+
+
+
+
+                                        26
+
