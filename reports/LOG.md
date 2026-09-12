@@ -2496,3 +2496,17 @@ verifies all launch bindings and replays these controls, exiting zero
 (37bc0c). Its preparation was already reproduced exactly (8bf876).
 The simple-group faithfulness argument and exact source reading scope
 are retained. General 19.61 remains open; complete candidate count 41.
+
+
+## 2026-09-12T08:05:07.548175+00:00 — G2(Z/9) exact kernel packet audited
+
+All 531,441 assignments yield 20,047 valid carpets, each already closed.
+The lifted prime-field calculation enumerates 109,693 matrix states and
+696,168 edge discrepancies. Explicit invariance and coset stability prove
+the computed congruence kernels are complete; the proof audit clarifies
+the discrepancy orientation. Independent Python multiplication checks
+219 groups, 64,648 states and 3,421 actual kernel states (cb9c51).
+The final auditor fully reproduces the input, kernels and search, and
+repeats all native and matrix controls, exiting zero (81213d). General
+19.61 remains open; complete count 41. The 08:00:05 UTC n7 snapshot
+records 36,950,000 checked nodes, all six workers live and 52,348,660 KiB RSS.
