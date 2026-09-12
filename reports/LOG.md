@@ -2535,3 +2535,24 @@ packet audit replays both checks and exits zero (d954a1). Together with
 Nuzhin 2023 Theorem 1 this gives a candidate for every commutative ring
 in type G2. The full 19.62 count is not increased. The failed certificate
 compiler warning (5a96ea) and corrected zero exit (f530db) are retained.
+
+
+## 2026-09-12T08:49:47.494250+00:00 — all-type derived-carpet theorem audited; candidate 42
+
+Every square-expansion target lies in a root subsystem of rank at most
+four. Explicit certificates cover all eleven irreducible types of ranks
+two through four: 71,056 targets and 974,165 integer derivation nodes.
+The other ten types add 68,344 targets to the frozen G2 packet. All 75
+search children and their controller exit zero (72e364); independent
+ordinary-integer checking passes (6d2cd1). Exact polynomial identities
+verify the commutator constants over Z, so the result is ring-independent.
+The known square closedness criterion is also proved directly, using
+a diagonal conformal symplectic matrix to handle every symplectic rank
+without division by two. Integral controls pass 2,592 cases (f91c62).
+The full 255-file source/coverage/preparation/certificate auditor exits
+zero (0b0e7a), with all 44 deliberate corruptions rejected. This gives
+a complete affirmative candidate for 19.62 and raises the count to 42;
+priority and outside review are pending. The already known 19.63 criterion
+is explicitly credited and adds no separate count. General 19.61 remains
+unresolved. At 08:43:54 UTC the six n7 workers have checked 38,210,000
+of 42,891,332 nodes, with no completed shard and 53,912,308 KiB RSS.
