@@ -1,0 +1,758 @@
+                                           PROPERTY (LR) AND AN EMBEDDING THEOREM FOR
+                                                      VIRTUALLY FREE GROUPS
+
+                                                                           ASHOT MINASYAN
+
+
+                                                  Abstract. We prove that every virtually free group G has property
+arXiv:2603.17596v2 [math.GR] 20 Mar 2026
+
+
+
+
+                                                  (LR) of Long and Reid: each finitely generated subgroup of G is a
+                                                  retract of a finite index subgroup. The main ingredient in the proof is a
+                                                  new embedding result stating that every countable virtually free group
+                                                  embeds in a double of a finite group.
+                                                     As a corollary, we show that any group commensurable with the
+                                                  direct product of a free group and a finitely generated abelian group has
+                                                  (LR). This applies to generalized Baumslag-Solitar groups of arbitrary
+                                                  rank n ∈ N with finite monodromy, which, in particular, include all
+                                                  non-cyclic one-relator groups with center.
+
+
+
+
+                                                                           1. Introduction
+                                              A famous theorem of M. Hall [Hal49] implies that every finitely gener-
+                                           ated subgroup of a free group is a free factor of a finite index subgroup.
+                                           Conversely, the work of Brunner and Burns [BB79], combined with the ac-
+                                           cessibility of finitely presented groups proved by Dunwoody [Dun85], tells us
+                                           that every finitely presented group satisfying the latter M. Hall’s property
+                                           must be virtually free (i.e., it has a free subgroup of finite index). However,
+                                           not all virtually free groups have this property, because finite order ele-
+                                           ments can have infinite centralizers and free factors are always malnormal
+                                           (see [Min19] for a characterization of virtually free groups with M. Hall’s
+                                           property).
+                                              The best analogue of M. Hall’s theorem that one could hope to hold in all
+                                           virtually free groups is property (LR), defined by Long and Reid in [LR08],
+                                           stating that every finitely generated subgroup is a retract of some subgroup
+                                           of finite index. Recall that a subgroup H is a retract of a group K if there is
+                                           a homomorphism ρ : K → H such that ρ(h) = h, for all h ∈ H (equivalently,
+                                           K = N ⋊ H, for some N ◁ K). A subgroup H is a virtual retract of a group
+                                           G if H is a retract of a finite index subgroup of G. Thus G has (LR) if every
+                                           finitely generated subgroup is a virtual retract.
+                                              The main result of this note is the following theorem, answering questions
+                                           of the author from [Min19, Question 11.1] and [KM26, Question 20.59].
+                                           Theorem 1.1. Virtually free groups have property (LR).
+                                              Of course, M. Hall’s theorem implies that free groups have (LR), but
+                                           this property is quite sensitive and is not always inherited by finite index
+                                           supergroups (see [Min19, Proposition 1.7]). The only other known classes
+                                           of groups with (LR) are finitely generated virtually abelian groups [Min19],
+                                             2020 Mathematics Subject Classification. 20E05, 20E25, 20E06, 20E07.
+                                             Key words and phrases. Virtually free groups, property (LR).
+                                                                                     1
+2                              ASHOT MINASYAN
+
+fundamental groups of closed surfaces [Sco78], limit groups [Wil08] and some
+lamplighter groups [Min19]; additionally, property (LR) is preserved by free
+products [GMS03] (but not by direct products).
+   Every group with (LR) is subgroup separable (a.k.a. LERF), i.e., finitely
+generated subgroups are closed in the profinite topology, see [LR08; Min19],
+but property (LR) is much more restrictive. For example, every virtually
+polycyclic group is subgroup separable but it does not have (LR) unless it is
+virtually abelian, see [Min19, Proposition 9.1]. However, (LR) is preserved
+under passing to arbitrary subgroups, so in order to prove Theorem 1.1 for
+a finitely generated virtually free group, we first embed it in a virtually free
+group of simpler form.
+   Let C be a group with a subgroup B ⩽ C. Recall that a double of C over
+B is the amalgamated product
+(1.1)         G = C ∗B C ′ = ⟨C, C ′ | b = ξ(b), for all b ∈ B⟩,
+where C ′ is a copy of C and ξ : C → C ′ is an isomorphism. If the amalga-
+mated subgroup B is not important, we will simply say that G is a double
+of C. The following, perhaps unexpected, embedding result is key to our
+proof of Theorem 1.1, and may also be of independent interest.
+Theorem 1.2. Every countable virtually free group embeds as a subgroup
+in a double of a finite group.
+   We actually prove a stronger version of Theorem 1.2 in the case when the
+virtually free group is finitely generated, see Theorem 2.10. In particular,
+we obtain the following consequence.
+Corollary 1.3. If A is a finite p-group, for some prime p ∈ N, (or a finite
+solvable group) then every finitely generated free-by-A group embeds in a
+double of a finite p-group (respectively, a finite solvable group).
+  Since a double of a finite group is virtually free, we can combine Theo-
+rem 1.1 with Theorem 1.2 to deduce the following.
+Corollary 1.4. Every finitely generated virtually free group embeds as a
+virtual retract in a double of a finite group.
+   In order to prove Theorem 1.2, we can assume that the virtually free group
+is finitely generated (by Scott’s embedding theorem [Sco74]). By a theorem
+of Karrass, Pietrowski and Solitar [KPS73], building on Stallings’ theory of
+groups with infinitely many ends [Sta70], each finitely generated virtually
+free group splits as the fundamental group of a finite graph of groups with
+finite vertex groups. Using this decomposition, in a series of lemmas we
+show that every finitely generated virtually free group embeds in a single
+special HNN-extension of a finite group A′ (Proposition 2.9). Finally, in
+Theorem 2.10 we embed this special HNN-extension in a double of A′ × Cp ,
+for any prime p ∈ N.
+   We have thus reduced the proof of Theorem 1.1, in the case when the
+virtually free group is countable, to showing (LR) for a double G, given by
+(1.1) for some finite group C. We deal with this case using an idea of Scott
+from [Sco78] (and also Haglund’s interpretation of this idea in [Hag08]),
+               PROPERTY (LR) FOR VIRTUALLY FREE GROUPS                       3
+
+where property (LR) was proved for fundamental groups of compact sur-
+faces. The group G = C ∗B C ′ admits a natural involution γ ∈ Aut(G)
+which interchanges the two factors C and C ′ and fixes B pointwise. We
+observe that the natural action of G on its Bass-Serre tree T extends to an
+action of Ge = G ⋊ ⟨γ⟩2 on T in such a way that every edge is inverted by
+a conjugate of γ. If H ⩽ G is a finitely generated subgroup then there is a
+minimal invariant subtree U on which H acts cocompactly. The subgroup
+N , generated by the inversions in the edges that are on the boundary of U ,
+will be normalized by H and will satisfy |Ge : HN | < ∞ and H ∩ N = {1}.
+The subgroup K = HN ∩ G = H(N ∩ G) is thus a finite index subgroup of
+G retracting onto H.
+   Since property (LR) is stable under taking direct products with finitely
+generated virtually abelian groups [Min19, Proposition 5.6], Theorem 1.1
+can be used to find even more groups with (LR). Recall that two groups are
+said to be commensurable if they have isomorphic subgroups of finite index.
+
+Corollary 1.5. Suppose that G is a group commensurable with the direct
+product of a free group and a finitely generated abelian group. Then G embeds
+as a finite index subgroup in the direct product of a virtually free group and
+a finitely generated virtually abelian group. Therefore,
+    (i) G has property (LR) and is subgroup separable;
+   (ii) G is hereditarily conjugacy separable;
+  (iii) G is subgroup conjugacy distinguished.
+
+   Recall that a group G is conjugacy separable if for any two non-conjugate
+elements x, y ∈ G there is a finite group M and a homomorphism φ : G → M
+such that φ(x) is not conjugate to φ(y) in M . A group is hereditarily
+conjugacy separable if every finite index subgroup is conjugacy separable.
+A subgroup H of a group G is conjugacy distinguished if for every element
+g ∈ G, not conjugate to an element of H, there is a homomorphism φ :
+G → M , where |M | < ∞, such that φ(g) is not conjugate to an element of
+φ(H) in M . A group G is subgroup conjugacy distinguished if every finitely
+generated subgroup H ⩽ G is conjugacy distinguished. In [RZ16] Ribes and
+Zalesskii proved that a hereditarily conjugacy separable group with (LR) is
+subgroup conjugacy distinguished.
+   Corollary 1.5 applies to many groups studied in Geometric Group The-
+ory. This includes unimodular generalized Baumslag-Solitar groups [Lev07,
+Proposition 2.6] and, more broadly, generalized Baumslag-Solitar groups of
+arbitrary rank n ∈ N with finite monodromy (see [But25, Theorem 3.4]). In
+particular, one-relator groups with center have (LR) and are subgroup conju-
+gacy distinguished, because they are either cyclic or unimodular generalized
+Baumslag-Solitar groups by [Pie74, Theorems 1, 3]. Finally, Corollary 1.5
+also applies to any extension of a virtually non-abelian free group A by a
+finitely generated virtually abelian group B, as long as the natural image of
+B in Out(A) is finite (e.g., this is the case for a free-by-cyclic group where
+some power of the acting automorphism is inner), see Corollary 4.5.
+   In view of Corollary 1.5, it is natural to ask for which other classes of
+groups property (LR) is invariant under commensurability.
+4                             ASHOT MINASYAN
+
+Conjecture 1.6. If a hyperbolic group G has (LR) then so does any finite
+index supergroup of G.
+   By a combination of results of Haglund–Wise [HW08], Wise [Wis21] and
+Linton [Lin25], every one-relator group with torsion has a finite index sub-
+group with (LR). So, a positive answer to Conjecture 1.6 would imply prop-
+erty (LR) for all one-relator groups with torsion.
+   In view of Wilton’s theorem [Wil08] that limit groups have (LR), it seems
+sensible to propose the following.
+Conjecture 1.7. Finite index supergroups of limit groups have (LR).
+Acknowledgements. The author would like to thank Pavel Zalesskii for
+useful discussions and Jon Merladet Urigüen for his comments on an earlier
+draft of this note.
+
+                 2. Embedding virtually free groups
+   In this section we will prove our main embedding result, Theorem 1.2.
+We will make use of the following fundamental theorem, which was proved
+by Karrass, Pietrowski and Solitar [KPS73] in the case when the group is
+finitely generated, and by Dicks and Dunwoody [DD89] in the general case.
+Theorem 2.1 ([KPS73, Theorem 1] and [DD89, Theorem 1.6 in Chap-
+ter IV]).
+    (a) A finitely generated group G is virtually free if and only if G decom-
+        poses as the fundamental group of a finite graph of groups with finite
+        vertex groups.
+    (b) An arbitrary group G is virtually free if and only if G is the funda-
+        mental group of a graph of groups such that all the vertex groups are
+        finite of uniformly bounded orders.
+Lemma 2.2. Suppose that G is the fundamental group of a graph of groups
+(G, Γ) and ρ : G → A is a group homomorphism. If ρ is injective on each
+vertex group Gv , v ∈ V Γ, then ker ρ is free.
+Proof. This is a well-known consequence of Bass-Serre theory. The group
+G acts on the Bass-Serre tree T corresponding to its given splitting and
+vertex stabilizers for this action are conjugates of the vertex groups Gv ,
+v ∈ V Γ. Since ker ρ is a normal subgroup intersecting each Gv trivially,
+we can conclude that ker ρ acts on T freely, hence ker ρ is a free group (see
+[Ser03, Theorem 4 in Section I.3.3]).                                      □
+2.1. Embedding general virtually free groups in multiple special
+HNN-extensions. We start by showing that every virtually free group
+embeds in a multiple special HNN-extension of a finite group, see Lemma 2.4.
+An analogue of this statement for virtually free pro-p groups was proved by
+Zalesskii in [Zal19].
+   Given a group A, we will say that a group G is free-by-A if G has a free
+normal subgroup F ◁ G with G/F ∼   = A.
+Lemma 2.3. If A is a finite group then every free-by-A group G embeds in
+the fundamental group H of a graph of groups (H, Θ) such that the graph
+                PROPERTY (LR) FOR VIRTUALLY FREE GROUPS                       5
+
+Θ has exactly one vertex with the corresponding vertex group A. Moreover,
+there is a retraction ρ : H → A, and if G is finitely generated then Θ is
+finite.
+Proof. By Theorem 2.1, G is the fundamental group of a graph of groups
+(G, Γ), where Γ is a connected graph and all vertex groups {Gv }v∈V Γ are
+finite; moreover if G is finitely generated then we can choose Γ to be finite.
+Let φ : G → A be a homomorphism with free kernel. Free groups are
+torsion-free, hence φ is injective on each Gv , v ∈ V Γ. Let ∆ be a new graph
+obtained from Γ by adding a single vertex u and an edge ev from u to v,
+for each v ∈ V Γ (in other words, ∆ is a cone over Γ with apex u). We set
+Gu = A, and for each of the newly added edges ev , we let Gev be Gv , whose
+embedding into the vertex group Gv is the identity map and the embedding
+into Gu is given by φ|Gv . Obviously, G embeds in the fundamental group H
+of this new graph of groups. After fixing any vertex v0 ∈ V Γ and collapsing
+all of the graph Γ to it, we see (cf. [Ser03, Lemma 6 in Section I.5.2 and
+Section I.5.1]) that H has the relative presentation
+              *                                                     +
+                                   [
+                                            −1
+         H = G, A, {tv }v∈V Γ         {tv gtv = φ(g)}g∈Gv , tv0 = 1 .
+                                v∈V Γ
+
+This presentation immediately shows that there is a retraction ρ : H → A
+such that ρ|G = φ, ρ|A = IdA and ρ(tv ) = 1, for all v ∈ V Γ.
+   Clearly, the union of the edges ev , v ∈ V Γ, is a maximal tree in ∆ and the
+subgroup of H, generated by the vertex groups for vertices in this maximal
+tree, is A, by construction. Contracting this maximal tree to the vertex u
+will result in a graph of groups (H, Θ), where the underlying graph Θ has
+a single vertex u, with Hu = A, and all edges are loops at u. As before, the
+fundamental group of (H, Θ) is isomorphic to H. Moreover, if G if finitely
+generated then Θ is a finite graph, by construction.                         □
+
+  Recall that a multiple special HNN-extension of a group A is a group G
+with presentation
+(2.1)        G = ⟨A, {ti }i∈I | {ti bt−1
+                                      i = b, for all b ∈ Bi }i∈I ⟩,
+
+where I is an index set, {Bi }i∈I is a family of subgroups of A, and {ti }i∈I
+are the stable letters of this HNN-extension. If |I| = 1 then we will say that
+G is a single special HNN-extension of A.
+Lemma 2.4. If A is a finite group then every free-by-A group G embeds in a
+multiple special HNN-extension H of A. Moreover, if G is finitely generated
+then H has finitely many stable letters.
+Proof. In view of Lemma 2.3, we know that G embeds in the group H with
+presentation
+(2.2)      H = ⟨A, {ti }i∈I | {ti bt−1
+                                    i = βi (b), for all b ∈ Bi }i∈I ⟩,
+
+where I is an index set, {Bi }i∈I is a family of subgroups of A and βi : Bi → A
+are monomorphisms, i ∈ I. Moreover, there is a retraction ρ : H → A.
+Denote si = ρ(ti ) ∈ A, for i ∈ I. Then for each i ∈ I and all b ∈ Bi we have
+6                              ASHOT MINASYAN
+
+βi (b) = ρ(βi (b)) = si bs−1
+                          i  in A. Hence, after setting ri = s−1
+                                                              i ti , i ∈ I, we
+can use Tietze transformations to re-write the presentation (2.2) as
+             H = ⟨A, {ri }i∈I | {ri bri−1 = b, for all b ∈ Bi }i∈I ⟩.
+Thus, H is a multiple special HNN-extension of the finite group A. More-
+over, if G is finitely generated then |I| < ∞, by Lemma 2.3.          □
+2.2. Embedding finitely generated virtually free groups in doubles
+of finite groups. We now aim to improve the statement of Lemma 2.4
+in the case when the virtually free group is finitely generated, see Proposi-
+tion 2.9. To this end, the following observation will be important.
+Lemma 2.5. Let G be the multiple special HNN-extension (2.1), and let N
+be the normal closure of the stable letters {ti }i∈I in G. Then N is free and
+G∼ = N ⋊ A; in particular, G/N ∼ = A. Moreover, N is generated by the set
+                              [
+(2.3)                    U = {dti d−1 | d ∈ Di },
+                                i∈I
+where Di is a left transversal for Bi in A, i ∈ I.
+Proof. As evident from (2.1), there is a retraction ρ : G → A such that
+ρ(ti ) = 1, for all i ∈ I. Thus N = ker ρ and G ∼ = N ⋊ A. From Lemma 2.2,
+we also know that N is a free group.
+   Finally, since N is the normal closure of the elements {ti }i∈I S
+                                                                   in G and A is
+a subgroup, it is easy to see that N is generated by the subset i∈I {ati a−1 |
+a ∈ A}, which is the set U from the statement of the lemma because for
+each i ∈ I, ti centralizes Bi in G.                                           □
+Remark 2.6. The subset U in Lemma 2.5 is in fact a free generating set of
+N . InPthe case when |I|
+                       P< ∞, this can be seen by observing that the rank of
+N is i∈I |A|/|Bi | = i∈I |Di |, by [KPS73, Theorem 2] (see also the Euler
+characteristic [Ser03, Section II.2.9]). When |I| = ∞, one can show this by
+adopting the argument from the proof of Proposition 2.9 below.
+  Given a prime p ∈ N and a finite group A, we will say that a finite group
+C is p-by-A if there is a normal p-subgroup N ◁ C such that C/N ∼  = A.
+Lemma 2.7. Let G be a free-by-A group, for some finite group A. Then
+for every prime p ∈ N and any finite subset S ⊆ G there is a finite p-by-A
+group C and a homomorphism φ : G → C such that φ is injective on S.
+Proof. By the assumptions, there is a normal free subgroup F ◁ G such that
+G/F ∼ = A. Since free groups are residually p-finite (see [Tak51, Theorem 6]),
+there exists a normal subgroup K ◁ F such that F/K is a finite p-group and
+K ∩ S −1 S = {1} in G (without loss of generality, we assume that S ̸= ∅).
+   Choose  any transversal g1 , . . . , gn ∈ G for F in G, where n = |A|. Then
+N = ni=1 gi Kgi−1 is a normal subgroup of G, and since F/N embeds in the
+     T
+direct power (F/K)n , it is a finite p-group. Clearly, N ∩ S −1 S = {1}, so
+the quotient map φ : G → G/N is injective on S. Moreover, C = G/N is a
+p-by-A group, as it is an extension of F/N by G/F ∼      = A.               □
+  The next statement is an easy consequence of the ping-pong lemma. It
+will be very useful for simplifying the technical arguments when dealing with
+normal forms.
+                 PROPERTY (LR) FOR VIRTUALLY FREE GROUPS                         7
+
+Lemma 2.8 ([MV25, Lemma 2.8]). Let F be a free group and let f1 , . . . , fl ∈
+F \ {1}. If ⟨fi ⟩ ∩ ⟨fj ⟩ = {1}, for all i ̸= j, then there is n ∈ N such that the
+elements f1n , . . . , fln freely generate a free subgroup of F of rank l.
+Proposition 2.9. Let A be a finite group and let p ∈ N be any prime.
+Every finitely generated free-by-A group G embeds in a single special HNN-
+extension of a finite p-by-A group.
+Proof. According to Lemma 2.4 and Theorem 2.1.(a), we can assume that
+(2.4)        G = ⟨A, t1 , . . . , tk | {ti bt−1                     k
+                                             i = b, for all b ∈ Bi }i=1 ⟩,
+where Bi ⩽ A, i = 1, . . . , k, are some subgroups. Define a finite subset
+S ⊆ G by
+                S = {t−1   i atj | i, j ∈ {1, . . . , k}, a ∈ A} ∪ A.
+By Lemma 2.7, there exist a finite p-by-A group C and a homomorphism
+φ : G → C such that φ is injective on S. Abusing the notation, we will
+identify A and B1 , . . . , Bk with their φ-images in C. We will show that G
+embeds in the single special HNN-extension
+                     H = ⟨C, t | tat−1 = a, for all a ∈ A⟩.
+   For each i = 1, . . . , k, denote si = φ(ti ) ∈ C. Consider the elements
+hi = si ts−1
+           i ∈ H, i = 1, . . . , k, and let ρ : H → C be the natural retraction
+whose kernel F is the normal closure of t in H. Then h1 , . . . , hk ∈ F and F
+is a free subgroup of H (see Lemma 2.5). Let Di be a left transversal for Bi
+in A, i = 1, . . . , k, and consider the finite subset V of F , defined by
+                                  k
+                                  [
+                            V =       {dhi d−1 | d ∈ Di }.
+                                  i=1
+   We will aim to apply Lemma 2.8 to the subset V to show that there is
+n ∈ N such that the subset W = {f n | f ∈ V } ⊆ F freely generates a
+free subgroup of F . To this end, consider two elements f1 = d1 hi d−1   1 and
+f2 = d2 hj d−1
+            2  in V such that d1 ∈  D i , d2 ∈ D j and either i ̸
+                                                                = j or d1 ̸= d2 .
+Note that both of these elements have infinite order, being conjugates of t
+in H. Suppose that f1m = f2q , for some m ∈ N and q ∈ Z \ {0}. Then in H
+we have the equation
+(2.5)   1 = f1m f2−q = d1 hm  −1    −q −1         m −1 −1       −q −1 −1
+                           i d1 d2 hj d2 = d1 si t si d1 d2 sj t sj d2 .
+
+Since H retracts onto its infinite cyclic subgroup ⟨t⟩ (with the retraction
+sending all of C to 1), we must have m − q = 0, so q = m ∈ N and (2.5)
+becomes
+(2.6)              d1 si tm s−1 −1
+                             i d1 d2 sj t
+                                         −m −1 −1
+                                           sj d2 = 1 in H.
+Now, by Britton’s Lemma for HNN-extensions [LS77, Section IV.2], we have
+(2.7)                         s−1 −1
+                               i d1 d2 sj ∈ A in C.
+Recall that we have identified A, d1 and d2 with their φ-images in C. Thus
+s−1  −1           −1 −1             −1 −1                   −1
+ i d1 d2 sj = φ(ti d1 d2 tj ), and ti d1 d2 tj ∈ S because d1 d2 ∈ A. Since
+                                                   −1 −1
+φ is injective on S and A ⊆ S, (2.7) implies that ti d1 d2 tj ∈ A in G, i.e.,
+(2.8)             t−1 −1
+                   i d1 d2 tj a
+                               −1
+                                  = 1 in G, for some a ∈ A.
+8                               ASHOT MINASYAN
+
+   Observe, from (2.4), that by taking the quotient of G by the normal clo-
+sure of A we obtain the free group of rank k, freely generated by t1 , . . . , tk .
+Therefore, in view of (2.8), we must have i = j. Once again, we can apply
+Britton’s lemma (but now in the multiple HNN-extension G), to conclude
+that d−1
+       1 d2 ∈ Bi . Since d1 , d2 ∈ Di , the latter implies that d1 = d2 , contra-
+dicting our assumption. Thus, we have shown that ⟨f1 ⟩ ∩ ⟨f2 ⟩ = {1}, for
+any two distinct elements f1 , f2 ∈ V . Therefore, we can apply Lemma 2.8
+to find n ∈ N such that the subset W = {f n | f ∈ V } freely generates a free
+subgroup M of F , of rank |W | = ki=1 |Di | = ki=1 |A : Bi |.
+                                    P              P
+   Observe that for each i = 1, . . . , k, the element hi centralizes Bi in H
+because t centralizes all of A and si is the φ-image of ti which centralizes
+Bi in G. Therefore, there is a group homomorphism ψ : G → H, given by
+       ψ(a) = φ(a), for all a ∈ A, and ψ(ti ) = hni , for i = 1, . . . , k.
+Let N ◁ G be the normal closure of {t1 , . . . , tk }. According to Lemma 2.5,
+N is generated by the set U , given by (2.3). By construction, the homomor-
+phism ψ : G → H sends U bijectively onto the set W , which is a free gener-
+ating set of M = ⟨W ⟩. It follows that N is free on U and the restriction of ψ
+to N is an isomorphism between N and M . Thus, the restrictions of ψ to N
+and to A are both injective. Since G = N A and ψ(A)∩ψ(N ) ⊆ C ∩F = {1},
+we can conclude that ψ is injective. Hence, we have shown that G embeds
+in H, and the proof is complete.                                             □
+   In [Sco74, Embedding Theorem] Scott proved that every countable virtu-
+ally free group embeds in a finitely generated virtually free group. Therefore,
+Theorem 1.2, stated in the Introduction, follows from the following result.
+Theorem 2.10. Suppose that A is a finite group. Then for every finitely
+generated free-by-A group G and each prime p ∈ N, G embeds in a double
+of a finite p-by-A group.
+Proof. In view of Proposition 2.9, we can assume that
+                    G = ⟨A′ , t | tbt−1 = b, for all b ∈ B⟩,
+for some finite p-by-A group A′ and a subgroup B ⩽ A′ . Let Y be a cyclic
+group of order p, generated by y ∈ Y . Then C = A′ × Y is again a finite
+p-by-A group, and we denote by C ′ a copy of C, with a fixed isomorphism
+ξ : C → C ′ . We will show that G embeds in the double H = C ∗B C ′ , of C
+over B, given by (1.1). To this end, we will use use an argument similar to
+the one in the proof of Proposition 2.9, even though in this case one could
+also argue by using normal forms more directly.
+   Note that there is a canonical retraction ρ : H → C which restricts to
+the identity map on C and to ξ −1 on C ′ . Let y ′ = ξ(y) ∈ C ′ and set
+h = y −1 y ′ ∈ H, so that h ∈ ker ρ. Since ker ρ ∩ C = {1} = ker ρ ∩ C ′ , we
+know that F = ker ρ is free, by Lemma 2.2. Choose a left transversal D for
+B in A′ and define
+         U = {dtd−1 | d ∈ D} ⊆ N and V = {dhd−1 | d ∈ D} ⊆ F,
+where N ◁ G is the normal closure of t.
+  Using the Normal Form Theorem for amalgamated free products [LS77,
+Theorem 2.6 in Section IV.2], we see that h has infinite order in H. Now,
+                   PROPERTY (LR) FOR VIRTUALLY FREE GROUPS                             9
+
+suppose that there are distinct d1 , d2 ∈ D such that d1 hm d−1      q −1
+                                                             1 = d2 h d2 in
+H, for some m ∈ N and q ∈ Z \ {0}. Then d−1            ′
+                                              1 d2 ∈ A \ B and we have
+
+(2.9)      1 = d−1    m −1
+                2 d1 h d1 d2 h
+                              −q
+                                 = d−1     −1 ′ m −1    −1 ′ −q
+                                    2 d1 (y y ) d1 d2 (y y )    in H.
+If q > 0 then (2.9) amounts to
+(2.10)       (d−1    −1  ′          −1  ′   −1
+               2 d1 y )(y ) . . . (y )(y )(d1 d2 )(y
+                                                     ′−1
+                                                         )(y) . . . (y ′−1 )(y) = 1,
+where we placed the brackets in such a way that each term either belongs
+to C \ B or to C ′ \ ξ(B) and consecutive terms are from different factors.
+This means that the left-hand side of (2.10) is a non-empty reduced se-
+quence in the amalgamated free product H (see [LS77, Section IV.2]), so
+equation (2.10) contradicts the Normal Form Theorem for amalgamated free
+products.
+   Thus we must have q < 0, so (2.9) becomes
+(2.11)        (d−1    −1  ′          −1  ′   −1    −1  ′          −1  ′
+                2 d1 y )(y ) . . . (y )(y )(d1 d2 y )(y ) . . . (y )(y ) = 1.
+
+As before this yields a contradiction, hence ⟨d1 hd−1             −1
+                                                      1 ⟩ ∩ ⟨d2 hd2 ⟩ = {1}
+in H. Therefore, we can apply Lemma 2.8 to find n ∈ N such that the
+set W = {f n | f ∈ V } freely generates a free subgroup M ⩽ F of rank
+|D| = |A′ : B|. Since h = y −1 y ′ centralizes B = ξ(B) in H, we can define a
+homomorphism ψ : G → H by
+                     ψ(a) = a, for all a ∈ A′ , and ψ(t) = hn .
+Just like in Proposition 2.9, one can show that ψ restricts to a bijection
+between N and M and use this to verify that ψ is injective. Thus, G
+embeds in H.                                                             □
+  Corollary 1.3 from the Introduction is an immediate consequence of The-
+orem 2.10 and the fact that finite p-groups are solvable.
+
+              3. Property (LR) for virtually free groups
+  In this section we prove the main Theorem 1.1. If G is a group, we will
+write H ⩽vr G to say that H is a virtual retract of G.
+Lemma 3.1 ([Min19, Lemma 3.2]). Suppose that G is a group and there
+are subgroups H ⩽ K ⩽ G.
+     (i) If H ⩽vr G then H ⩽vr K. In particular, every subgroup of a group
+         with (LR) has (LR).
+    (ii) If H ⩽vr K and K ⩽vr G then H ⩽vr G.
+   Let C be a finite group with a subgroup B ⩽ C, and let G be the double
+of C over B, as defined in (1.1). Let us recall the construction of the Bass-
+Serre tree T for G (see [Ser03, Theorem 7 in Section I.4]). The set vertices
+of T consists of the left cosets {gC | g ∈ G}⊔{gC ′ | g ∈ G}, and two vertices
+xC and yC ′ are adjacent if and only if there exists z ∈ G such that xC = zC
+and yC ′ = zC ′ . The group G acts on T naturally, on the left, without edge
+inversions. We denote by StabG (v) the G-stabiliser of a vertex v of T .
+   Note that the group G admits an involution γ ∈ Aut(G) defined by
+         γ(c) = ξ(c), for all c ∈ C, and γ(c′ ) = ξ −1 (c′ ), for all c′ ∈ C ′ .
+10                             ASHOT MINASYAN
+
+
+We let Ge denote the semidirect product G e = G ⋊ ⟨γ⟩2 , so that |G
+                                                                  e : G| = 2.
+The next lemma is straightforward to verify using the observation that the
+action of γ interchanges C with C ′ in G.
+Lemma 3.2. The natural action of G on the Bass-Serre T extends to an
+          e on T , where the element γ ∈ G
+action of G                              e acts as an inversion in the edge
+                                ′
+e0 joining the vertices C and C in T . In other words,
+           γ.(xC) = γ(x)C ′ and γ.(xC ′ ) = γ(x)C, for all x ∈ G.
+Moreover, for every vertex v of T we have StabGe (v) = StabG (v).
+   Let E denote the set of unoriented edges of T (any such edge is just a
+2-element set {gC, gC ′ }, for some g ∈ G). Let e0 ∈ E be the edge of T
+between the vertices C and C ′ . Then G acts on E transitively, so we can
+use γ to define the inversion in an edge e ∈ E as ie = gγg −1 ∈ G,    e where
+g ∈ G is any element such that e = g.e0 . Note that ie is well-defined because
+γ commutes with B = StabG (e0 ) in G.e We also observe that
+
+(3.1)        i2e = 1 and hie h−1 = ih.e , for all h ∈ G and e ∈ E.
+     We are now ready to prove the main result of this section.
+Theorem 3.3. Let G be a double of a finite group C over a subgroup B ⩽ C.
+Then G has property (LR).
+Proof. We will assume that G is given by (1.1). Let T , E, γ ∈ Aut(G) and
+Ge = G ⋊ ⟨γ⟩2 be as described above. Suppose that H ⩽ G is a finitely gen-
+erated subgroup. Then, by [DD89, Theorem I.4.12 and Proposition I.4.13],
+there is a non-empty H-invariant subtree U in T on which H acts with
+finitely many orbits of vertices and edges.
+   Let ∂U denote the set of all edges e ∈ E such that exactly one of the
+endpoints of e belongs to U . Since U is H-invariant, we see that the same
+is true for ∂U , so, in view of (3.1), we conclude that the subgroup
+                               N = ⟨ie | e ∈ ∂U ⟩
+is normalized by H in G. e We will show that |G     e : HN | < ∞ and H ∩N = {1},
+i.e., H is a virtual retract of G.
+                                e
+   Fix any vertex u ∈ U . Since H acts on U with finitely many orbits of
+vertices, there exist elements g1 , . . . , gk ∈ G such that G.u∩U = kj=1 Hgj .u.
+                                                                     F
+
+Consider any g ∈ G.  e We will use the induction on the edge-path distance
+dT (g.u, U ) to show that
+                                       k
+                                       [
+(3.2)                        g.u ∈ (         N Hgj ).u.
+                                       j=1
+
+If g.u ∈ U then g.u ∈ kj=1 Hgj .u by the definition of gj . Hence, we can
+                         S
+
+assume that dT (g.u, U ) > 0. Let e ∈ ∂U be the first edge of the geodesic
+path in T joining U to g.u. Evidently, dT (ie .(g.u)), U ) < dT (g.u, U ), so
+ie .(g.u) ∈ ( kj=1 N Hgj ).u, by the induction hypothesis. Since ie ∈ N , we
+             S
+
+can conclude that (3.2) holds.
+                 PROPERTY (LR) FOR VIRTUALLY FREE GROUPS                          11
+
+   Now, recall that D = StabGe (u) is a finite group isomorphic to C, by
+Lemma 3.2. Combined with (3.2), this shows that G  e = Sk N Hgj D, thus
+                                                         j=1
+|G
+ e : N H| < ∞.
+   It remains to show that N ∩ H = {1}. For each edge e ∈ ∂U , removing
+the interior of e divides T into the union of two disjoint subtrees; let Te
+denote the subtree that does not contain U . Note that U ∩ Te = ∅ and
+(3.3)           ie .(U ∪ Tf ) ⊆ Te , whenever e, f ∈ ∂U, e ̸= f.
+Now, if g ∈ N \ {1} then g = ie1 · · · ien , for n ∈ N and some e1 , . . . , en ∈ E
+satisfying ej ̸= ej+1 , for j = 1, . . . , n − 1. Then (3.3) implies that g.u ∈ Te1 ,
+hence g.u ∈ / U and so g ∈     / H (as u ∈ U and U is H-invariant). Thus
+N ∩ H = {1}. (Moreover, this also shows that N ∼            = ∗e∈∂U ⟨ie ⟩, i.e., N is
+isomorphic to the free product of cyclic groups of order 2.)
+   Therefore, we have proved that H ⩽vr G,        e and since H ⩽ G ⩽ G,  e we also
+have H ⩽vr G, by Lemma 3.1.(i). Hence G has (LR), as required.                     □
+Remark 3.4. Note that in Theorem 3.3 the kernel N , of a virtual retraction of
+Ge onto H, only depends on the choice of an H-invariant subtree U in T , such
+that H acts on U cocompactly. If H is infinite then there is a natural choice
+for U as the unique minimal H-invariant subtree of T (U will be the union
+of all the axes of hyperbolic elements in H, see [DD89, Proposition I.4.13]).
+Thus, in the case when |H| = ∞ there is a canonical choice for N . Moreover,
+as shown in the proof of Theorem 3.3, N is isomorphic to a free product of
+cyclic groups of order 2 and H acts on this free product by permuting the
+free factors.
+  We are now ready to prove Theorem 1.1 from the Introduction.
+Proof of Theorem 1.1. By Lemma 2.4, every virtually free group can be em-
+bedded in a multiple special HNN-extension G of a finite group A, given by
+(2.1). So, in view of Lemma 3.1.(i), it suffices to prove that G has (LR). Let
+H be a finitely generated subgroup of G. Then there is a finite subset J ⊆ I
+such that H is contained in the subgroup K = ⟨A, {tj }j∈J ⟩ in G. Evidently,
+there is a retraction ρ : G → K such that ρ(ti ) = 1, for all i ∈ I \ J.
+   Now, by Theorem 2.10, K embeds in a double L of some finite group, and
+L has (LR) by Theorem 3.3. Therefore, K has (LR) by Lemma 3.1.(i), so
+H ⩽vr K. Since K is a retract of G, it remains to apply Lemma 3.1.(ii) to
+conclude that H ⩽vr G. Thus G has (LR), and the proof is complete.          □
+
+                         4. More groups with (LR)
+   Property (LR) is not generally preserved by direct products (e.g., the
+direct square of the free group of rank 2 is not even subgroup separable
+[AG73]), but the situation is much better when one of the factors is finitely
+generated and virtually abelian.
+Lemma 4.1 ([Min19, Proposition 5.6]). If A is a finitely generated virtually
+abelian group and B is a group with (LR) then A × B has (LR).
+  This lemma, combined with Lemma 3.1.(i) and Theorem 1.1, allows us to
+show that a group has property (LR) by embedding it in a direct product
+12                            ASHOT MINASYAN
+
+of a virtually free group and a virtually abelian group. In this section we
+give several examples when such embeddings arise.
+Lemma 4.2. Let G be a group commensurable with the direct product of a
+free group and a free abelian group of finite rank. Then G embeds as a finite
+index subgroup in the direct product of a virtually free group and a finitely
+generated virtually abelian group.
+Proof. The assumptions imply that G has a finite index subgroup K iso-
+morphic to the direct product F × A, where F is free and A ∼  = Zn , for some
+n ∈ N0 . Let N ◁ G be the normal core of K, so that |G : N | < ∞. Without
+loss of generality, we can assume that N projects onto the direct factors F
+and A of K.
+   If rank(F ) ≤ 1 then K is abelian, so G is virtually abelian. Thus we can
+further assume that rank(F ) ≥ 2. Then F has trivial centre, so the center
+of N is Z = N ∩ A ◁ G and |A : Z| < ∞. Thus F Z ∼         = F × Z has finite
+index in K, hence Z ∼ = Zn is a normal virtual retract of G. Now, by [MM25,
+Lemma 4.3], there is a normal subgroup R ◁ G such that
+(4.1)                Z ∩ R = {1} and |G : ZR| < ∞.
+   Note that N/Z ∼ = F has finite index in G/Z, hence G/Z is virtually
+free. Moreover, the image of Z has finite index in G/R, so G/R is finitely
+generated and virtually abelian. Now, (4.1) implies that the homomorphism
+G → G/Z × G/R, g 7→ (gZ, gR), is injective and its image has finite index.
+                                                                        □
+     We can now prove Corollary 1.5 from the Introduction.
+Proof of Corollary 1.5. According to Lemma 4.2, G embeds as a finite in-
+dex subgroup in the direct product of a virtually free group with a finitely
+generated virtually abelian group. Therefore, we deduce that G has (LR)
+by combining Theorem 1.1, Lemma 4.1 and Lemma 3.1.(i). It then follows
+that G is subgroup separable, see [Min19, Lemma 5.1.(iii)].
+   Finitely generated virtually abelian groups are conjugacy separable by
+[Seg83, Proposition 1 in Section 4.C], and virtually free groups are conjugacy
+separable by Dyer’s result [Dye79, Theorem 3]. Both of these classes of
+groups are closed under taking arbitrary subgroups, hence groups in these
+classes are hereditarily conjugacy separable. So, G embeds as a finite index
+subgroup in a direct product of hereditarily conjugacy separable groups,
+hence G is itself hereditarily conjugacy separable by [MM12, Lemma 7.3],
+and (ii) holds.
+   In [RZ16, Lemma 6] it is shown that a virtual retract of a hereditarily
+conjugacy separable group is always conjugacy distinguished. Therefore,
+claim (iii) follows from claims (i) and (ii).                               □
+   Given a natural number n ∈ N, a generalized Baumslag-Solitar group of
+rank n (GBSn for short) is a group decomposing as the fundamental group
+of a finite graph of groups, where all vertex and edge groups are isomorphic
+to Zn . Such a group G will necessarily commensurate any vertex group,
+which gives rise to a modular homomorphism M : G → GL(n, Q), from G
+to the abstract commensurator GL(n, Q) of Zn , see [But25]. If the image
+                PROPERTY (LR) FOR VIRTUALLY FREE GROUPS                       13
+
+M(G) is finite in GL(n, Q), we will say that the GBSn group G has finite
+monodromy. When n = 1 we have GL(1, Q) = Q∗ , so a GBS1 group G has
+finite monodromy if and only if M(G) ⊆ {−1, 1}, i.e., G is unimodular in
+the sense of Levitt [Lev07].
+   With the help of Corollary 1.5, we can characterize property (LR) in the
+class of all GBSn groups.
+Corollary 4.3. For any n ∈ N, a GBSn group G has (LR) if and only if it
+has finite monodromy.
+Proof. If G has (LR), then, in particular, it has (VRC), which means that
+every cyclic subgroup of G is a virtual retract. The latter implies that G
+has finite monodromy, by a recent result of Wang [Wan26, Theorem 1.2].
+  Conversely, suppose that G has finite monodromy. In this case Button
+[But25, Theorem 3.4] proved that G has a finite index subgroup splitting as
+a direct product of a finite rank free group with Zn , hence G has (LR) by
+Corollary 1.5.                                                           □
+
+   Another method to generate groups satisfying the assumptions of Corol-
+lary 1.5 is by using certain extensions. If A is a normal subgroup of a
+group G then G acts on A by conjugation, giving rise to a homomorphism
+G → Aut(A). By taking a further quotient by Inn(A), we get natural ho-
+momorphism G → Out(A). Since A is contained in the kernel of the latter
+homomorphism, it induces a natural homomorphism G/A → Out(A).
+Lemma 4.4. Assume that G is an extension of a normal subgroup A by a
+group B = G/A, where A has finite center, B is virtually polycyclic and the
+natural homomorphism B → Out(A) has finite image. Then G has a finite
+index subgroup isomorphic to the direct product A × B ′ , where B ′ is a finite
+index subgroup of B.
+Proof. The assumption that the image of B in Out(A) is finite implies
+that |G : A CG (A)| < ∞ (cf. [MM25, Remark 4.6]). We also know that
+A ∩ CG (A) = Z(A) is finite and CG (A)/Z(A) is a subgroup of the vir-
+tually polycyclic group B. Therefore, CG (A) is itself virtually polycyclic
+(see [Seg83, Proposition 2 in Section 1.A]) and, in particular, it is resid-
+ually finite ([Seg83, Theorem 1 in Section 1.C]). Thus, there is a finite
+index subgroup B ′ ◁f CG (A) such that B ′ ∩ A = B ′ ∩ Z(A) = {1}. Then
+AB ′ ∼
+     = A×B ′ , |G : AB ′ | < ∞ and B ′ is isomorphic to a finite index subgroup
+of B because it maps injectively into B under the quotient homomorphism
+G → G/A = B.                                                                  □
+
+  Since virtually free groups that are not virtually cyclic have finite centers,
+we can combine Lemma 4.4 with Lemma 4.2 to obtain the following.
+Corollary 4.5. Suppose that a group G has a virtually free normal subgroup
+A ◁ G such that B = G/A is finitely generated and virtually abelian. If A is
+not virtually cyclic and the natural homomorphism B → Out(A) has finite
+image then G embeds as a finite index subgroup in the direct product of
+a virtually free group and a finitely generated virtually abelian group. In
+particular, G satisfies claims (i)–(iii) of Corollary 1.5.
+14                             ASHOT MINASYAN
+
+  In Corollary 4.5 it is indeed necessary to assume that A is not virtually
+cyclic. For example, the Heisenberg group H3 (Z) is a central extension of Z
+by Z2 but it does not have (LR) (see [Min19, Example 9.2]).
+
+                                 References
+[AG73]  R. B. J. T. Allenby and R. J. Gregorac. “On locally extended residu-
+        ally finite groups”. In: Conference on Group Theory (Univ. Wisconsin-
+        Parkside, Kenosha, Wis., 1972). Lecture Notes in Math., Vol. 319.
+        Springer, Berlin-New York, 1973, pp. 9–17.
+[BB79]  A. M. Brunner and R. G. Burns. “Groups in which every finitely gen-
+        erated subgroup is almost a free factor”. In: Canadian J. Math. 31.6
+        (1979), pp. 1329–1338.
+[But25] J. O. Button. “Generalised Baumslag-Solitar groups and hierarchically
+        hyperbolic groups”. In: Algebr. Geom. Topol. 25.4 (2025), pp. 2253–2279.
+[DD89]  W. Dicks and M. J. Dunwoody. Groups acting on graphs. Vol. 17. Cam-
+        bridge Studies in Advanced Mathematics. Cambridge University Press,
+        Cambridge, 1989, pp. xvi+283.
+[Dun85] M. J. Dunwoody. “The accessibility of finitely presented groups”. In:
+        Invent. Math. 81.3 (1985), pp. 449–457.
+[Dye79] J. L. Dyer. “Separating conjugates in free-by-finite groups”. In: J. Lon-
+        don Math. Soc. (2) 20.2 (1979), pp. 215–221.
+[GMS03] R. Gitik, S. W. Margolis, and B. Steinberg. “On the Kurosh theorem
+        and separability properties”. In: J. Pure Appl. Algebra 179.1-2 (2003),
+        pp. 87–97.
+[Hag08] F. Haglund. “Finite index subgroups of graph products”. In: Geom. Ded-
+        icata 135 (2008), pp. 167–209.
+[HW08] F. Haglund and D. T. Wise. “Special cube complexes”. In: Geom. Funct.
+        Anal. 17.5 (2008), pp. 1551–1620.
+[Hal49] M. Hall. “Coset representations in free groups”. In: Trans. Amer. Math.
+        Soc. 67 (1949), pp. 421–432.
+[KPS73] A. Karrass, A. Pietrowski, and D. Solitar. “Finite and infinite cyclic
+        extensions of free groups”. In: J. Austral. Math. Soc. 16 (1973), pp. 458–
+        466.
+[KM26]  E. I. Khukhro and V. D. Mazurov. Unsolved Problems in Group Theory.
+        The Kourovka Notebook. 2026. arXiv: 1401.0300 [math.GR].
+[Lev07] G. Levitt. “On the automorphism group of generalized Baumslag-Solitar
+        groups”. In: Geom. Topol. 11 (2007), pp. 473–515.
+[Lin25] M. Linton. The geometry of subgroups of mapping tori of free groups.
+        2025. arXiv: 2510.03145 [math.GR].
+[LR08]  D. D. Long and A. W. Reid. “Subgroup separability and virtual retrac-
+        tions of groups”. In: Topology 47.3 (2008), pp. 137–159.
+[LS77]  R. C. Lyndon and P. E. Schupp. Combinatorial group theory. Classics
+        in mathematics 89. Springer-Verlag, 1977.
+[MM12] A. Martino and A. Minasyan. “Conjugacy in normal subgroups of hy-
+        perbolic groups”. In: Forum Math. 24.5 (2012), pp. 889–910.
+[MM25] J. Merladet and A. Minasyan. “Virtual retractions in free constructions”.
+        In: Trans. Amer. Math. Soc, to appear (2025). With an appendix by
+        Merladet, Minasyan, X. Wu and S. Ye. arXiv: 2505.18054 [math.GR].
+[MV25]  A Minasyan and M. Valiunas. “Right-angled Artin subgroups and free
+        products in one-relator groups”. In: Ann. Inst. Fourier, to appear (2025).
+        arXiv: 2404.15479 [math.GR].
+                                  REFERENCES                                     15
+
+[Min19]   A. Minasyan. “Virtual Retraction Properties in Groups”. In: Int. Math.
+          Res. Notices 2021.17 (2019), pp. 13434–13477.
+[Pie74]   A. Pietrowski. “The isomorphism problem for one-relator groups with
+          non-trivial centre”. In: Math. Z. 136 (1974), pp. 95–106.
+[RZ16]    L. Ribes and P. A. Zalesskii. “Conjugacy distinguished subgroups”. In:
+          J. Group Theory 19.3 (2016), pp. 477–495.
+[Sco74]   G. P. Scott. “An embedding theorem for groups with a free subgroup of
+          finite index”. In: Bull. London Math. Soc. 6 (1974), pp. 304–306.
+[Sco78]   P. Scott. “Subgroups of surface groups are almost geometric”. In: J.
+          London Math. Soc. (2) 17.3 (1978), pp. 555–565.
+[Seg83]   D. Segal. Polycyclic groups. Vol. 82. Cambridge Tracts in Mathematics.
+          Cambridge University Press, Cambridge, 1983, pp. xiv+289.
+[Ser03]   J-P. Serre. Trees. Springer Monographs in Mathematics. Translated from
+          the French original by John Stillwell, Corrected 2nd printing of the 1980
+          English translation. Springer-Verlag, Berlin, 2003, pp. x+142.
+[Sta70]   J. Stallings. “Groups of cohomological dimension one”. In: Applications
+          of Categorical Algebra (Proc. Sympos. Pure Math., Vol. XVII, New
+          York, 1968). Proc. Sympos. Pure Math., XVII. Amer. Math. Soc., Prov-
+          idence, RI, 1970, pp. 124–128.
+[Tak51]   M. Takahasi. “Note on chain conditions in free groups”. In: Osaka Math.
+          J. 3 (1951), pp. 221–225.
+[Wan26]   D. Wang. Grothendieck rigidity and virtual retraction of higher-rank
+          GBS groups. 2026. arXiv: 2601.22477 [math.GR].
+[Wil08]   H. Wilton. “Hall’s theorem for limit groups”. In: Geom. Funct. Anal.
+          18.1 (2008), pp. 271–303.
+[Wis21]   D. T. Wise. The structure of groups with a quasiconvex hierarchy.
+          Vol. 209. Annals of Mathematics Studies. Princeton University Press,
+          Princeton, NJ, 2021, pp. x+357.
+[Zal19]   P. A. Zalesskii. “Infinitely generated virtually free pro-p groups and p-
+          adic representations”. In: J. Topol. 12.1 (2019), pp. 79–93.
+
+  CGTA, School of Mathematical Sciences, University of Southampton,
+Highfield, Southampton, SO17 1BJ, United Kingdom
+  Email address: aminasyan@gmail.com
+

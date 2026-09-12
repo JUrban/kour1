@@ -2254,3 +2254,14 @@ The full relevant proof was read and pp.21--22 viewed. A source
 archive with six hashes passes. The elementary specialization is
 recorded, with standard simple-group facts explicit and no new count.
 The STATUS timestamp formatting artifact was also corrected.
+
+
+## 2026-09-12T03:02:52.221527+00:00 — virtual retractions prior result; kernel search begun
+
+Minasyan's20 March2026 v2 Theorem1.1 gives the exact affirmative
+answer to20.59. The introduction and final proof were read, with
+the first page viewed; deeper inputs remain imported. Four archive
+hashes pass, with no new count. A separate bounded20.21 GAP pilot
+now searches orders12,24,48,96,192,384 without using the withdrawn
+claim or the unaudited minimality reduction. Up to192 there are25
+groups with both quotient types and no matching kernel type.
