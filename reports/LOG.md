@@ -2443,3 +2443,17 @@ theory remains imported. The 18-file launch manifest passes. A fresh
 preparation replay is running; the serial search has the expected
 ambient order 22,594,320,403,200. A separate four-shard control is
 being tested before splitting this larger search.
+
+
+## 2026-09-12T04:52:47.685938+00:00 — validated four-shard F9 search replaces serial pilot
+
+The new generic shard loop reproduces all 2,515 C2(F4) carpets and
+every one of the 576 frozen enlargement rows. All four control children
+and their controller exit zero (6f6d4f). The F9 serial pilot is stopped
+with SIGTERM after its ambient-order check; its actual exit is 1
+(6a1ed1), and the original log and partial changes are retained. No
+result is inferred from it. Four 2 GiB F9 workers now cover disjoint
+congruence classes of all 40,105 carpet indices. Together with six
+14 GiB n7 workers and four 512 MiB kernel exporters, GAP workspace
+ceilings total 94 GiB. The separate Python preparation replay uses
+small additional memory; actual process RSS remains much lower.

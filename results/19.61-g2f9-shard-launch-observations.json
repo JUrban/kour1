@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-09-12T04:52:06.531194+00:00",
+  "four_shard_C2_F4_control": {
+    "exit_code": 0,
+    "tool_chunk": "6f6d4f",
+    "counts": [
+      2515,
+      576,
+      0
+    ],
+    "all_change_rows_match_frozen_baseline": true
+  },
+  "serial_stop": {
+    "reason": "replace serial search by four validated shards; preserve its log and partial changes",
+    "signal": "SIGTERM",
+    "exit_observation": {
+      "exit_code": 1,
+      "tool_chunk": "6a1ed1",
+      "termination_tool_chunk": "fe5eb4"
+    }
+  },
+  "new_search": "running, four times 2 GiB"
+}
