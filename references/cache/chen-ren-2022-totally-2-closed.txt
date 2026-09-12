@@ -1,0 +1,312 @@
+                                               NOTES ON FINITE TOTALLY 2-CLOSED PERMUTATION
+                                                                  GROUPS
+arXiv:2202.09765v2 [math.GR] 22 Feb 2022
+
+
+
+
+                                                                           GANG CHEN AND QING REN
+
+
+                                                   Abstract. Let N be a normal subgroup of a finite group G. For a faith-
+                                                   ful N -set ∆, applying the university embedding theorem one can construct a
+                                                   faithful G-set Ω. In this short note, it is proved that if the 2-closure of N in
+                                                   Ω is equal to N , then the 2-closure of N in ∆ is also equal to N ; in addi-
+                                                   tion, it is proved that any abelian normal subgroup of a finite totally 2-closed
+                                                   group is cyclic; finally, it is proved that if a finite nilpotent group is a direct of
+                                                   two nilpotent subgroups where the two factors have coprime orders and both
+                                                   of them are totally 2-closed then G is totally 2-closed. As corollaries, several
+                                                   well-known results on finite totally 2-closed groups are reproved in more simple
+                                                   ways.
+                                                      Keywords: totally 2-closed group, 2-closure, normal abelian subgroup
+                                                      MSC Classification: 20B05, 20D10, 20D25.
+
+
+
+
+                                                                                 1. Introduction
+                                              Let G be a finite group acting faithfully on a finite set Ω. For a positive in-
+                                           teger k, G acts naturally on the Catesian product Ωk := Ω × . . . × Ω. In the
+                                           year 1969, Wielandt [10, Definition 5.3] introduced the definition of k-closure G(k),Ω
+                                           of G ≤ Sym(Ω), which is defined as the largest subgroup of Sym(Ω) leaving each
+                                           orbit of G on Ωk invariant. A finite group G is said to be a totally k-closed group,
+                                           if G = G(k),Ω for any faithful G-set Ω.
+                                              In recent years, finite totally k-closed groups have been studied in several papers.
+                                           In [1], it is proved that the center of every finite totally 2-closed group is cyclic;
+                                           and finite nilpotent totally 2-closed groups are characterized. In [5], for a finite
+                                           abelian group G, the minimal positive integer k for which G is totally k-closed is
+                                           given. Actually, the minimal positive integer k is proved to be 1 plus the number of
+                                           invariant factors of G. In [3], it is proved that finite soluble totally 2-closed groups
+                                           must be nilpotent; the Fitting subgroup of a totally 2-closed group is shown to
+                                           be totally 2-closed. In [2], the nontrivial finite totally 2-closed groups with trivial
+                                           Fitting subgroups are classified.
+                                              In this short note, we will focus on finite totally 2-closed groups. Our first result,
+                                           Theorem A, is a property on 2-closures, the second result, Theorem B, is a property
+                                           on finite totallly 2-closed goups, and the third result, Theorem C, is on construction
+                                           of finite nilpotent totally 2-closed groups. Applying our main results, several results
+                                           on finite totally 2-closed groups will be reproved in self-contained and more simple
+                                           ways.
+
+                                             The authors are supported by the NSFC grant No. 11971189.
+                                                                                             1
+2                            GANG CHEN AND QING REN
+
+
+   Let G be a finite group and N a normal subgroup of G. Assume ∆ is a faithful N -
+set. By university embedding theorem (ref. Theorem 3.1), we may construct a
+faithful G-set Ω. Our first result is the following:
+    Theorem A. Keep the above notation. If N (2),Ω = N , then N (2),∆ = N .
+   Theorem A captures the common features of the Fitting subgroup, the centralizer
+of any normal subgroup in a finite totally 2-closed group. And these subgroups are
+proved to be totally 2-closed in a totally 2-closed group, see Corollary 3.1.
+   Base on Theorem A and the known result that every finite totally 2-closed abelian
+group is cyclic, we have the second main result of this paper.
+   Theorem B. Every normal abelian subgroup of a finite totally 2-closed group is
+cyclic.
+   Since the classification of finite p-groups in which every normal abelian subgroup
+is cyclic is well known, applying this classification it is proved that a finite nilpo-
+tent totally 2-closed groups is either cyclic or a direct product of a generalized
+quarternion goup with a cyclic group of odd order.
+  Additionally, based on the known result that the 2-closure of any finite nilpotent
+permutation group is still nilpotent we have the following result, which is the third
+main result of the paper.
+   Theorem C. Let G = H × K be a finite nilpotent group with (|H|, |K|) = 1 and
+both H and K totally 2-closed. Then G is totally 2-closed.
+   By Theorem B and Theorem C, the result on the characterization of finite nilpo-
+tent totally 2-closed groups in [1] is reproved in a more simple way.
+  In the final section of this paper, we discuss some known results on 2-closures of
+permutation groups in contrast with some results on coherent configurations .
+    Notation. Throughout the paper, Ω denotes a finite set and the symmetric
+group of Ω is denoted by Sym(Ω). The Cartesian product Ω × Ω is written as Ω2 .
+    All groups are assumed to be finite nontrivial groups; if a finite group G acts
+on Ω faithfully, Ω is also called a faithful G-set.
+    If a group G acts on Ω, the image of α ∈ Ω under the action of g ∈ G is denoted
+by αg .
+    The center of a group G is denoted by Z(G), the centralizer of a subgroup N is
+denoted by CG (N ), and the Fitting subgroup of G is denoted by F (G).
+    If H is a subgroup of a group G, the core of H in G is dentoed by HG , i.e., HG
+is the intersection of all conjugates of H in G.
+    For a prime p, the finite p-group Mpn+1 is defined as
+                                    n                         n−1
+                   Mpn+1 = ha, b|ap = bp = 1, b−1 ab = a1+p         i.
+    The cyclic group of order n is denoted by Cn .
+
+                                 2. Preliminaries
+   Let G be a finite group and Ω a faithful G-set. The 2-closure of G is defined as
+the largest subgroup of Sym(Ω) that leaves every orbit of G on Ω2 invariant.
+
+Lemma 2.1. ( [10, Theorem 5.6]) Let Ω be a faithful G-set. Then x ∈ G(2),Ω if
+and only if for any α, β ∈ Ω there exists g ∈ G such that (α, β)x = (α, β)g .
+            NOTES ON FINITE TOTALLY 2-CLOSED PERMUTATION GROUPS                                 3
+
+
+  Note that in the above lemma for a fixed element x ∈ G(2),Ω the element g
+depends on the choice of the pair (α, β) ∈ Ω2 . Also, it is easily seen that G(2),Ω
+contains G as a subgroup.
+Lemma 2.2. ( [1, Lemma 2.2])Let G ≤ Sym(Ω) and H ≤ Sym(Γ), and let (θ, λ)
+be a permutation isomorphism from (G, Ω) to (H, Γ). Then (θ, λ) can be extended
+a permutation isomorphism (θ̃, λ̃) from (G(2),Ω , Ω) to (H (2),Γ , Γ), where λ̃ = λ and
+the restriction of θ̃ to G is equal to θ.
+Lemma 2.3. ( [1, Lemma 2.1], [3, Lemma 1.1]) Let G be a finite totally 2-closed
+group and N a subgroup of G. Then CG (N )(2),Ω = CG (N ), for any finite faithful G-
+set Ω.
+   The following lemma is a special case of Lemma 3.2 of [5]. For completeness, we
+give a proof.
+Lemma 2.4. ( [5, Lemma 3.2])Let m, n be positive integers with m divisible by n.
+Then Cn × Cm is not totally 2-closed.
+   Proof. Let Ω = {1, 2, . . . , 2n + m}. Choose two permutations in Sym(Ω) in the
+following way:
+     x1 = (1 . . . n)(n + 1, . . . , 2n), x2 = (n, n − 1, . . . , 1)(2n + 1, . . . , 2n + m).
+One can easily see that the subgroup H = hx1 , x2 i of Sym(Ω) is isomorphic to the
+direct product Cn × Cm . However, the permutation (1 . . . n) belongs to H (2),Ω but
+not to H. The lemma then follows.
+                                                                                  
+Lemma 2.5. ( [3, Lemma 2.1]) Let G = HK be a totally 2-closed group, where H
+and K are proper subgroups of G. If HG ∩ KG = 1, then G = HG × KG . Further-
+more, HG and KG are totally 2-closed. In particular, if H ∩K = 1, then G = H ×K
+and both H and K are totally 2-closed.
+
+Lemma 2.6. ( [1, Theorem 3])If G is a finite totally 2-closed abelian group, then G
+is cyclic.
+   Proof. It suffices to show that for every prime divisor p of |G|, the Sylow p-
+subgroup Sp of G is cyclic.
+   Suppose on the contrary that the Sylow p-subgroup Sp of G is not cyclic for some
+prime divisor p of |G|. Then there exist positive integers e1 ≥ e2 and a subgroup
+K of G such that
+                             G = (Cpe1 × Cpe2 ) × K.
+By Lemma 2.5, Cpe1 × Cpe2 must be totally 2-closed. This is a contradiction to
+Lemma 2.4.                                                                        
+Lemma 2.7. ( [8, Chap. 3, Theorem 7.6])Let p be a prime and G a finite nontriv-
+ial p-group such that every normal abelian subgroup of G is cyclic. Then
+     (i) If p > 2, then G is cyclic.
+    (ii) If p = 2, then G has a cyclic subgroup of index 2.
+   The following lemma is based on the fact that as permutation groups cyclic
+groups of prime power order and generalized quaternion groups have trivial one
+point stabilizers.
+4                                GANG CHEN AND QING REN
+
+
+Lemma 2.8. ( [1, Lemma 2.5]) Finite cyclic groups of prime power orders and
+generalized quaternion groups are totally 2-closed.
+Lemma 2.9. ( [3, Corollary 3.4]) Let G ≤ Sym(Ω). Then G is nilpotent if and
+only if G(2),Ω is nilpotent.
+
+                                         3. Main Results
+    The following result plays a key role in the whole theory.
+Theorem 3.1. (University embedding theorem [7, Theorem 2.6 A]) Let G be an
+arbitrary group with a normal subgroup N and put K := G/N . Let ψ : G → K
+be a homomorphism of G onto K with kernel N . Let T := {tu |u ∈ K} be a
+set of right coset representatives of N in G such that ψ(tu ) = u for each u ∈ K.
+Let x ∈ G and fx : K → N be the map with fx (u) = tu xt−1       uψ(x) for all u ∈ K.
+Then φ(x) =: (fx , ψ(x)) defines an embedding φ of G into N ≀ K. Furthermore,
+if N acts faithfully on a set ∆ then G acts faithfully on Ω := ∆× K by the following
+rule (δ, k)x = (δ fx (k) , kψ(x)).
+   In the first paragraph on page 9 of [3], it was shown that the action of N on Ω
+is permutation isomorphic to the natural action of N on a disjoint union of |G : N |
+copies of ∆. Here, for each g ∈ K, the corresponding copy may be denoted as
+                                    ∆g := {(δ, g) : δ ∈ ∆},
+and the permutation isomorphism is given by
+               (θg , λg ) : (N, ∆g ) → (N, ∆),            n 7→ tg nt−1
+                                                                    g , (δ, g) 7→ δ.
+Then N acts on Ω in the following way: for any δ ∈ ∆, g ∈ K, and x ∈ N ,
+                                      (δ, g)x = (δ θg (x) , g).
+   One can obtain a permutation isomorphism (µg , λg ) : (N (2),∆g , ∆g ) → (N (2),∆ , ∆),
+by Lemma 2.2, for each g ∈ K. Also, the restriction of µg to N is equal to θg . Fur-
+thermore, N (2),∆g acts faithfully on Ω in the following way:
+             (δ, g)x = (δ µg (x) , g),     ∀δ ∈ ∆, g ∈ K,          and x ∈ N (2),∆g .
+    For any x ∈ N (2),∆ , denote the images of x in Sym(Ω) by x̃. For any (δ, g) ∈ Ω,
+                               (δ, g)x̃ = (δ, g)µg (x) = (δ x , g).
+                                                     −1
+                                                                                        (3.1)
+   The following theorem, which is Theorem A in this paper, is a generalization
+of [3, Proposition 3.6].
+Theorem 3.2. In the context of Theorem 3.1 , if we keep the above notation and
+assume that N (2),Ω = N , then N (2),∆ = N .
+   Proof. It suffices to show that, as permutation groups on Ω, the cardinality of
+the image of N (2),∆ in Sym(Ω) is not greater than that of N .
+   For any x ∈ N (2),∆ , and any (δ1 , g1 ), (δ2 , g2 ) ∈ Ω, there exists n ∈ N such
+that (δ1 , δ2 )x = (δ1 , δ2 )n . Denote the images of x and n in Sym(Ω) by x̃ and ñ,
+respectively. By formula (3.1), one can see that
+                        ((δ1 , g1 ), (δ2 , g2 ))x̃ = ((δ1x , g1 ), (δ2x , g2 ))
+                                                  = ((δ1n , g1 ), (δ2n , g2 ))
+                                                  = ((δ1 , g1 ), (δ2 , g2 ))ñ .
+           NOTES ON FINITE TOTALLY 2-CLOSED PERMUTATION GROUPS                       5
+
+
+We conclude that x̃ ∈ N (2),Ω = N . Thus, the cardinality of the image of N (2),Ω is
+not greater than that of N , as required.
+                                                                                  
+Corollary 3.1. ( [3, Theorem B, Proposition 3.7]) Let G be a finite totally 2-closed
+group and N a normal subgroup of G. Then CG (N ), Z(G), and F (G) are totally
+2-closed group.
+  Proof. The corollary is a consequence of Lemma 2.3, Theorem 3.2, and [3,
+Lemma 3.5].
+                                                                        
+Lemma 3.1. ( [1, Theorem 1])The center of every totally 2-closed group is cyclic.
+  Proof. By Corollary 3.1, the center is totally 2-closed and thus is cyclic by
+Lemma 2.6.                                                                    
+  The following result is the second main result, Theorem B, in this paper.
+
+Theorem 3.3. Let G be a finite totally 2-closed group and N a normal abelian
+subgroup of G. Then N is cyclic.
+   Proof. By Corollary 3.1, CG (N ) is totally 2-closed. Thus the center of CG (N ) is
+cyclic by Lemma 3.1. Note that N is a central subgroup of CG (N ). It then follows
+that N is cyclic.                                                                   
+Theorem 3.4. Let p be a prime and G is a finite totally 2-closed nontrivial p-group.
+Then either G is cyclic or G is a generalized quaternion group.
+   Proof. Assume that G is a finite totally 2-closed p-group and that G is not
+cyclic.
+   By Theorem 3.3, every normal abelian subgroup of G is cyclic. By Lemma 2.7,
+we see that p = 2 and G has a cyclic subgroup of index 2. By [4, Theorem 1.2], G is
+either a dihedral group, a generalized quaternion group, M2n+1 , or a semidihedral
+group.
+   However, except for the generalized quaternion group, the other three groups
+are semidirect products of two proper subgroups. By Lemma 2.5, if G is equal to
+a semidirect product of two proper subgroups, then G must be the direct product
+of these two proper subgroups, which is a contradiction. We thus conclude that G
+is a generalized quaternion group.
+                                                                                 
+   As a consequence of Lemma 2.5 and Theorem 3.4, we obtain the following.
+Corollary 3.2. If G is a finite nilpotent totally 2-closed group, then G is cyclic or
+a direct product of a generalized quaternion group with a cyclic group of odd order.
+  The following theorem is the third main result, Theorem C, in this paper.
+Theorem 3.5. Let G = H × K be a finite nilpotent group with (|H|, |K|) = 1 and
+both H and K totally 2-closed. Then G is totally 2-closed.
+  Proof. Let Ω be a faithful G-set. By Lemma 2.9, G(2),Ω is nilpotent. We may
+write
+                                 G(2),Ω = J × L,
+where (|J|, |L|) = 1, H ≤ J, and K ≤ L.
+6                                GANG CHEN AND QING REN
+
+
+   Set j := |J| and l := |L|. For any x ∈ G(2),Ω and any (α, β) ∈ Ω2 , there
+exists g ∈ G such that (α, β)x = (α, β)g by Lemma 2.1. By the assumption, one
+can write x = yz with y ∈ J and z ∈ L, and g = hk with h ∈ H and k ∈ K. Thus,
+                             l           l           l          l
+                      (α, β)x = (α, β)g ⇒ (α, β)y = (α, β)h .
+This implies that y l ∈ H (2),Ω by Lemma 2.1. As we are assuming that H is totally 2-
+closed, y l ∈ H. In addition, the fact that (l, |H|) = 1 yields that y ∈ H. Similarly,
+one can show that z ∈ K.
+   It follows that x = yz ∈ HK = G and therefore G(2),Ω = G. Since this is true
+for any faithful G-set, G is totally 2-closed.
+                                                                                    
+Corollary 3.3. Let G be a finite cyclic group or a direct of a generalized quaternion
+group with a cyclic group of odd order. Then G is totally 2-closed.
+  Proof. By the assumption we may decompose G into a direct product of its
+Sylow subgroups, where each Sylow subgroup is totally 2-closed by Lemma 2.7.
+Thus, G is totally 2-closed by Theorem 3.5.                               
+  As consequences of Corollaries 3.2 and 3.3, we have the following.
+Corollary 3.4. ( [1, Theorem 2]) A finite nilpotent group is totally 2-closed if and
+only if it is cyclic or a direct product of a generalized quaternion group with a cyclic
+group of odd order.
+
+                             4. Concluding Remarks
+   Let G ≤ Sym(Ω). Then the action of G on Ω2 generates a combinatorial struc-
+ture, i.e., the coherent configuration associated with G, denoted by Inv(G). The 2-
+closure of (G, Ω) is then the automorphism group of the coherent configuration. In
+other words, G(2),Ω = Aut(Inv(G)), see [6, Definition 2.2.14].
+   Several known results on 2-closures of finite permutation groups have their corre-
+spondents in the theory of coherent configurations. For example, Theorem 3 in [3]
+corresponds to Theorem 3.2.21 and Theorem 3.4.6 in [6]. And Corollary 3.2 in [3]
+corresponds to Exercise 2.7.17 (4) in [6]. Finally, Lemma 1.4 in [3] or Lemma 2.9
+in [1] is a consequence of Theorem 3.2.5 in [6]. More precisely, if Gi ≤ Sym(Ωi )
+and Ω is the disjoint union of Ω′i s, i = 1, . . . , n, then G = G1 × · · · × Gn acts
+                                 (2),Ω           (2),Ω
+faithfully on Ω and G(2),Ω = G1 1 × · · · × Gn n by the cited Theorem.
+  Acknowledgements.          The authors would like to thank the refree for valuable
+comments.
+
+                                      References
+[1] A. Abdollahi and M.Arezoomand, Finite nilpotent groups that coincide with their 2-
+    closures in all of their faithful permutation representations. J. Algebra Appl. 17(4)
+    (2018), 1850065.
+[2] M.Arezoomand, M. A. Iranmanesh, C. E. Praeger and G.Tracey, Totally 2-closed
+    finite groups with trivial Fitting subgroup, arxiv preprint, arXiv:2111.02253, 2021.
+[3] A. Abdollahi, M. Arezoomand, and G.Tracey, On finite totally 2-closed groups, arxiv
+    preprint, arXiv:2001.09597, 2021.
+[4] Y. Berkovich, Groups of prime power order, Vol. 1, Expositions in Mathematics 46,
+    Walter de Gruyter GmbH & Co.KG, Berlin, 2008.
+            NOTES ON FINITE TOTALLY 2-CLOSED PERMUTATION GROUPS                         7
+
+
+ [5] D. Churikov and C. E. Praeger, Finite totally k-closed groups, Tr. Inst. Mat. Mekh.
+     27 (1)(2021), 240-246.
+ [6] G. Chen and I. Ponomarenko, Coherent Configurations, Central China Normal Uni-
+     versit Press, Wuhan, 2019.
+ [7] J.D. Dixon and B. Mortimer, Permutation groups, Springer, New York, 1996.
+ [8] B. Huppert, Endliche Gruppen. I. Die Grundlehren der Mathematischen Wis-
+     senschaften, Band 134. Spring-Verlag, Berlin-New York, 1967.
+ [9] H. Wielandt, Finite permutation groups, Academic Press, New York, 1964.
+[10] H.W. Wielandt, ‘Permutation groups through invariant relations and invariant func-
+     tions’, Lecture Notes, Ohio State University, 1969. Also published in: Wielandt, Hel-
+     mut, Mathematische Werke (Mathematical works) Vol. 1. Group theory, Walter der
+     Gruyter & Co., Berlin, 1994, pp. 237-296.
+
+   School of Mathematics and Statistics, and Hubei Key Laboratory of Mathematical
+Sciences, Central China Normal University, P.O. Box 71010, Wuhan 430079, P. R. China.
+   Email address: chengangmath@ccnu.edu.cn
+
+   School of Mathematics and Statistics, and Hubei Key Laboratory of Mathematical
+Sciences, Central China Normal University, P.O. Box 71010, Wuhan 430079, P. R. China.
+   Email address: renqing@mails.ccnu.edu.cn
+

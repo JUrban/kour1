@@ -2225,3 +2225,21 @@ explicit old version are archived; no result from it is used.
 The source hashes pass. Latest n7 snapshot at02:30:25 has
 27,630,000 checked nodes, six live workers, zero completed shards,
 38,955,764KiB RSS. A new coprime-product route to20.1 is under audit.
+
+
+## 2026-09-12T02:49:02.995526+00:00 — 20.1 affirmative candidate frozen
+
+The two factor-orbit partitions give an injective action of the2-closure
+on the two quotient sets. Coprime orders ensure singleton intersections
+and faithful quotient actions, so total2-closure of the factors forces
+the product to be totally2-closed. The published J1 theorem now gives
+J1 x C13, of order2,282,280 and Fitting subgroup exactlyC13. The original
+question has no indecomposability restriction. All177 GAP controls agree
+with independent exhaustive Python orbital-colour enumeration, including
+48 enlarged negative cases and two explicit hypothesis mutations. The
+30-file auditor actually exits0. Two initial GAP API failures remain
+archived. Nineteen internal review points found no gap; the J1 theorem
+is imported and priority remains unconfirmed. Complete candidate count
+is41, independently accepted count0. Latest n7 snapshot at02:43:33 has
+28,050,000 checked nodes, six live workers, zero completed shards and
+39,574,260KiB RSS.

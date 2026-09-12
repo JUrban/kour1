@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bin/gap",
+    "-o",
+    "2g",
+    "scripts/check_20_1_gap.g"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 5.166273642331362,
+  "stdout": "\nPRODUCT_CONTROL C2_C3 cases=10\nPRODUCT_CONTROL Q8_C3 cases=67\nPRODUCT_CONTROL S3_C5 cases=47\nPRODUCT_CONTROL A4_C5 cases=53\nSHARED_PRIME_MUTATION degree=6 order=4 closure=8\nJ1_TABLE_ORDER 175560 PRODUCT_ORDER 2282280\nPASS_201_GAP cases=177\n",
+  "stderr": "",
+  "sentinel_present": true,
+  "script_sha256": "64f2a0151b406cf1d57636f37d0e85ecfc78d34bf8888e8ac0d44545b112c553",
+  "log_sha256": "e97182e344671c108573213635b763ac0f68d962995bd558bc005daa8f77b1d9"
+}
