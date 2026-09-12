@@ -2126,3 +2126,23 @@ the Hilbert numerator 1+3t+3t^2-t^3 independently confirms failure.
 Hochster2007 pp.15–16 already give the ring and obstruction; those pages
 and the graded Cohen–Macaulay criterion on p.12 were read and viewed.
 Eight files are hash-bound. No new priority or candidate increment.
+
+
+## 2026-09-12T01:25:07.149693+00:00 — 15.76(b) complete candidate frozen
+
+The Magnus affine model and cyclic Laurent-unit specializations prove
+normalized associative-word rigidity for every full solvable variety
+S_d. The explicit category reduction and naturality formula prove all
+automorphisms inner, including the full metabelian case. The 42-file
+audit actually exits zero and replays 2,430 reduced words, 800 affine
+coefficient checks, 800 boundary identities, 28,080 usual/opposite
+associativity checks, two deeper perturbation witnesses, 289 Laurent
+pairs, and 1,000 free-group homomorphism controls. A packet-generation
+quoting error and its missing-manifest follow-up are retained. No gap
+identified internally; independent review and priority remain pending.
+Complete candidate count is 38.
+
+The exact prior affirmative theorem for 20.72 is recorded separately,
+with the 2019 source calculation limits explicit and no new count.
+The n=7 snapshot at 01:22:17 has 25,760,000 checked nodes, six live
+workers, zero completed shards, and 36,067,572 KiB combined RSS.

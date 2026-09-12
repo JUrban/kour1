@@ -1,0 +1,572 @@
+Algebra and Discrete Mathematics                              RESEARCH ARTICLE
+Volume 15 (2013). Number 1. pp. 83 – 95
+c Journal “Algebra and Discrete Mathematics”
+
+
+
+
+      Associative words in the symmetric group
+                   of degree three
+                                Ernest Płonka
+
+                       Communicated by V. I. Sushchansky
+
+
+
+           A b s t r ac t . Let G be a group. An element w(x, y) of the
+       absolutely free group on free generators x, y is called an associative
+       word in G if the equality w(w(g1 , g2 ), g3 ) = w(g1 , w(g2 , g3 )) holds
+       for all g1 , g2 ∈ G. In this paper we determine all associative words
+       in the symmetric group on three letters.
+
+
+
+1.    Introduction
+
+    Let G be a group and let F = F (x, y) be the absolutely free group on
+free generators x, y. Let V = V (G) be the subgroup of F consisting of all
+words w such that w(g1 , g2 ) = 1 for all g1 , g2 ∈ G. An element w ∈ F is
+said to be associative in G if the equality
+
+                       w(w(g1 , g2 ), g3 ) = w(g1 , w(g2 , g3 ))                   (1.1)
+
+holds for all elements g1 , g2 , g3 ∈ G. The words 1, x, y, xy and yx are,
+of course, associative (trivial words) for any group. It is known that in
+the absolutely free group ([6,7]) and in the class of all abelian groups
+([4]) there are no other associative words. In other groups (G; ·) such
+nontrivial word w can exist, however. Moreover, in some free nilpotent
+groups there are nontrivial associative words w(x, y) = x ◦ y such that
+(G; ◦) is a group and the group operation x · y can be expressed as a
+     2010 MSC: 20B30, 08A40,20F12.
+     Key words and phrases: associative words, symmetric group S3 .
+84         A s s o c i at i v e wo r d s i n t h e s y m m e t r i c g ro u p
+
+
+word in the group (G; ◦): see [1,2,5,9]. In this paper we are looking for
+the associative words in the symmetric group of degree three which is
+metabelian but not nilpotent. We show that each associative word in S3
+is equivalent modulo V (S3 ) to one of the five words mentioned above or
+to one of x3 , y 3 , x4 , y 4 , x4 y 4 , [x, y]x+y , [y, x]x+y .
+
+2.    Preliminaries
+
+     We use standard notations:
+
+x−1 yx = y x ,      [y, x] = y −1 x−1 yx,        [y, x]−1 = [x, y]         xβy = (xy )β ,
+
+
+                             xα+βy+z+0 = xα (xβ )y xz
+
+for arbitrary group elements x, y, z and all integers α, β.
+    Let us recall the following simple facts about the identities in S3 .
+    (i) The relations
+
+                   [xy, z] = [x, z]y [y, z], [x, yz] = [x, z][x, y]z
+
+are identities in any group.
+    (ii) The commutator subgroup S3′ of S3 consists of all even permuta-
+tions and the square of each element from S3 is in S3′ .
+    This yields
+    (iii) For all products C of commutators the equality
+
+                                   C (1−x)(1+x) = 1
+
+is an identity in S3 .
+    (iv) The equalities
+
+              x6 = [y, x]3 = 1, [[y, x], [u, v]] = 1, [x2 , [y, z]] = 1,
+          [y 2 , x] = [y, x]y+1 , [y 3 , x] = [y, x]y−1 , [y 4 , x] = [y, x]−y−1
+
+are identities in the group S3 .
+    From (ii) and (iv) one can derived
+    (v) The equality
+
+                               [y, x]xy = [y, x]−1−x−y
+
+is an identity in S3 .
+                                  E. Płonka                                  85
+
+    The following consequence of Corollary 2 in [8] plays very important
+role in our considerations.
+    (vi) If for some A, B, C ∈ Z3 the equality
+                                 [y, x]A+Bx+Cy = 1,
+holds for all x, y ∈ S3 , then A = B = C = 0.
+Proposition 2.1. Any 2−word in S3 is equivalent (mod V ) to some
+word of the form
+                  w(x, y) = xα y β [y, x]A+Bx+Cy            (2.1)
+where α, β ∈ Z6 and A, B, C ∈ Z3 .
+Proof. It is enough to apply Hall’s classical collection process from [3].
+
+Proposition 2.2. The word
+                        w(x, y) = xα y β [y, x]A+Bx+Cy
+is asociative in S3 , then α, β ∈ {0, 1, 3, 4}.
+Proof. By putting y = z = 1 and x = y = 1 into (2.2) we get
+                             2                    2
+                          xα = xα , and xβ = xβ                          (2.2)
+and therefore α(α − 1) ≡ β(β − 1) ≡ 0 (mod 6).
+
+Proposition 2.3. If w(x, y) is associative in a group G, then the word
+u(x, y) = w(y, x) is also associative in G.
+Proof. We have
+       u(u(x, y), z) = w(z, w(y, x)) = w(w(z, y), x) = u(x, u(y, z)).
+
+3.   Associative words
+
+    First of all we show that for some pairs (α, β) no word of the form
+(2.1) is associative in S3 . It what follows we shall always assume that
+A, B, C ∈ Z3 and sometimes we write γ(s, t) instead of A + Bs + Ct.
+Theorem 3.1. There are no associative words in the group S3 which are
+of the form
+                       xα y β [y, x]A+Bx+Cy ,                   (3.1)
+where (α, β) is one of the following pairs
+                (1, 3), (3, 1), (1, 4), (4, 1), (3, 4), (4, 3), (3, 3)
+86            A s s o c i at i v e wo r d s i n t h e s y m m e t r i c g ro u p
+
+
+Proof. Case α = 1, β = 3.
+Let us begin with an auxiliary result
+
+                      w(x, y)3 = xy 3 [y, x]γ xy 3 [y, x]γ xy 3 [y, x]γ
+                       = xy 3 x2 [y, x]γ y 3 [y 3 , x][y, x]xγ y 3 [y, x]γ
+                        = xy 3 x2 [y, x]γ [y 3 , x]y [y, x]xyγ [y, x]γ
+                = xy 3 x3 [y, x]x+1 [y, x]γ [y 3 , x](y−1)y [y, x]xyγ [y, x]γ
+                = xy 3 x3 [y, x]x+1 [y, x]γ [y 3 , x](y−1)y [y, x]xyγ [y, x]γ .
+
+We have thus established
+
+                    (xy 3 [y, x]γ )3 = x3 y 3 [y, x]−1+x−y+(1−x−y)γ .                   (3.2)
+
+Further we have
+
+  L = w(w(1, y), z) = w(y 3 , z) = y 3 z 3 [z, y 3 ]γ(y,z) = y 3 z 3 [z, y](y−1)γ(y,z) ,
+                 R = w(1, w(y, z)) = w(y, z)3 = (yz 3 [z, y]γ(y,z) )3
+     = yz 3 (z 3 y[y, z 3 ])yz 3 [z, y](yz−1)γ(y,z) = y 3 z 3 [z, y]−1−z+y+(yz−1)γ(y,z) .
+
+Thus L = R is equivalent to the equality
+
+                 [z, y](−1−A−B+C)+(1+A−C)y+(−1−A+B+C))z = 1.
+
+    By (vi) we have −1−A−B+C = 0, 1+A−C = 0 and −1−A+B+C =
+0, which has the solution B = 0, C = A + 1. Therefore the associative
+word (3.1) has to be of the form w(x, y) = xy 3 [y, x]C−1+Cy . Let us put
+z = x into the associative low (1.1). We get
+
+     L = w(w(x, y), x) = xy 3 [y, x]γ(x,y) w(x, y)x3 [x, xy 3 [y, x]γ(x,y) ]γ(xy,x)
+       x4 y 3 [y, x]x+y [y, x]xγ(x,y) [y, x](1−x+y)γ(xy,x) [y, x](1−x)γ(x,y)γ(xy,x) ,
+
+which in the case B = 0, A = C − 1 gives
+
+L = x4 y 3 [y, x]x+y+x(C−1+Cy)+(1−x+y)(C−1+Cx)+(1−x)((C+Cx)−1)(C−1+Cy)
+           x4 y 3 [y, x]x+y+x(C−1+Cy)+(1−x+y)(C−1+Cx)+(x−1)(C−1+Cy) .
+
+After some calculations we get
+
+                               L = x4 y 3 [y, x]C+C(x+1)y .
+                                    E. Płonka                                                  87
+
+   Similarly we have
+
+            R = w(x, w(y, x)) = xw(y, x)3 [yx3 [x, y]γ(y,x) , x]γ(x,xy)
+                 = xw(y, x)3 [yx3 , x]γ(x,xy) [[x, y]γ(y,x) , x]γ(x,xy)
+                 = xw(y, x)3 [y, x]xγ(x,xy) [y, x](1−x)γ(y,x)γ(x,xy) ,
+
+which in the case B = 0 and A = C − 1 implies
+
+        R = xw(y, x)3 [y, x]x(C−1+Cxy [y, x](1−x)(C+Cx−1)(C+1+Cxy)
+                         = xw(y, x)3 [y, x]−C+Cx+(1+C)y .
+
+Now from the equality L = R we obtain
+
+                               w(x, y)3 = x3 y 3 [y, x]−x .
+
+    We get a contradiction, because formula (3.2) for γ = C − 1 + Cy
+gives
+
+                       w(x, y)3 = x3 y 3 [y, x]C+1−x+(C+1)y .
+
+   Case α = 1, β = 4.
+We have
+
+ L = w(w(1, y), z) = w(y 4 , z) = y 4 z 4 [z, y 4 ]γ(1,z) = y 4 z 4 [z, y]−(y+1)γ(1,z) .
+
+Similarly
+
+             R = w(1, w(y, z)) = (yz 4 [z, y]yγ(y,z) yz 4 [z, y]γ(y,z) )2
+  = (y 2 z 4 [z 4 , y][z, y]yγ(y,z) yz 4 [z, y]γ(y,z) )2 = y 4 z 4 [z, y](z+1)−(y+1)γ(y,z) .
+
+Hence L = R yields [z, y]1+z = 1 which, by (vi), is not an identity in S3 .
+   Case α = 3, β = 4.
+We have
+
+   L = w(w(1, y), z) = w(y 4 , z) = z 4 [z, y 4 ]γ(1,z) = z 4 [z, y]−(y+1)γ(1,z) .
+
+Since y 2 commutes both z 4 and [z, y]γ(y,z) , we can use of the previous
+case. We obtain
+
+  R = w(1, w(y, z)) = w(y, z)4 = (y 2 yz 4 [z, y]γ(y,z) y 2 yz 4 [z, y]γ(y,z) )2 =
+          = y 2 (yz 4 [z, y]γ(y,z) yz 4 [z, y]γ(y,z) )2 = z 4 [z, y]−(z+1)−(y+1)γ(y,z) .
+88         A s s o c i at i v e wo r d s i n t h e s y m m e t r i c g ro u p
+
+
+Thus the condition L = R yields the equality
+
+                                     [z, y]z+1 = 1,
+
+which is not an identity in S3 .
+   Case α = 3, β = 3. We have
+
+     L = w(w(x, 1), z) = x3 z 3 [z, x3 ]γ(x,z) = x3 z 3 [z, x](x−1)(A+Bx+Cz) ,
+     R = w(x, w(1, z)) = x3 z 3 [z 3 , x]γ(x,z) = x3 z 3 [z, x](z−1)(A+Bx+Cz) .
+
+Thus the equality L = R implies, in view of (vi),
+
+             C −B ≡A−C +B ≡B−A−C ≡0                                    (mod 3)
+
+which yields A = 0 and B − C = 0. So every word of the form w(x, y) =
+x3 y 3 [x, y]B(x+y) satisfies the equation w(w(x, 1), z) = w(x, w(1, z)) but
+none of them is associative. Indeed,for such words we have
+
+             L = w(w(1, y), z) = w(y 3 , z) = y 3 z 3 [z 3 , y 3 ]B(y+z)
+                      = y 3 z 3 [z, y]B(y−1)(z−1)(y+z) = y 3 z 3 ,
+                           R = w(1, w(y, z)) = w(y, z)3
+              = y 3 z 3 [z, y]B(y+z) y 3 z 3 [z, y]B(y+z) y 3 z 3 [z, y]B(y+z)
+                 = y 3 z 3 [z, y]B(y+z) y 3 z 3 y 3 z 3 [z, y]B(yz+1)(y+z)
+                = y 3 z 3 [z, y]B(y+z) [z, y](z−1)(y−1) [z, y]−B(y+z)
+                               = y 3 z 3 [z, y](B+1)(y+z) .
+
+Thus L = R implies the equation [z, y]y+z = 1, which is not an identity
+in S3 .
+    Now by Proposition 2.3 we know that if the word w(x, y) of the form
+(2.1) is associative in S3 , then w(y, x) is also associative in S3 . Since
+                                                                   ′     ′   ′
+            w(y, x) = y i xj [x, y]A+Bx+Cz = xj y i [y, x]A +B x+C y
+
+for some A′ , B ′ , C ′ ∈ Z3 the proof of Theorem 3.1 is complete.
+
+   In the following lemmas we consider the cases of pairs (α, β) for which
+there exist associative words in S3 .
+Lemma 3.2. The word
+
+                   w(x, y) = x[y, x]A+Bx+Cy = x[y, x]γ(x,y)                      (3.3)
+
+is associative in S3 if and only if A = B = C = 0.
+                                 E. Płonka                                   89
+
+Proof. Using the identities (ii), (iv) and (v) we have
+
+                         w(x, w(y, y)) = x[y, x]γ(x,y) ,
+              w(w(x, y), y) = x[y, x]γ(x,y) [y, x[y, x]γ(x,y) ]γ(x,y)
+                = x[y, x]γ(x,y) [y, x]γ(x,y) [y, x](1−y)γ(x,y)γ(x,y) .
+
+Taking into account (iii) we see that if w is associative, then
+                                                         2
+                     [y, x]A+Bx+Cy+(1−y)(A−C+Bx) = 1,
+
+which, by (vi) ensures the following system of congruences
+          
+                      2   2
+          A + (A − C) + B + 2(A − C)B ≡ 0    (mod 3),
+          
+          
+           B + 2(A − C)B + 2(A − C)B ≡ 0 (mod 3),
+          
+          C − (A − C)2 − B 2 + 2(A − C)B ≡ 0 (mod 3).
+          
+
+
+The solution of the system are four triples (A, B, C) of the form (0, 0, 0),
+(2, 2, 0), (2, 0, 1) and (0, 1, 1). In order to exclude the last three cases we
+put y = x into (3.3). Then we get
+
+                       L = w(w(x, x), z) = x[z, x]γ(x,z)
+                R = w(x, w(x, z)) = x[x[z, x]γ(x,z) , x]γ(x,x)
+                            = x[z, x](x−1)γ(x,x)γ(x,z) .
+
+Thus the condition L = R together with (iii) gives the equality
+
+              [z, x](x−1)(A−B−C)(A+Bx+Cz) = [z, x]A+Bx+Cz .
+
+The equality is, by (vi), an identity in S3 if and only if the triples (A, B, C)
+satisfies the following system of congruences
+              
+              (A − B − C)(B − A − C) ≡ A (mod 3),
+              
+              
+               (A − B − C)(A − B − C) ≡ B (mod 3),
+              
+              (A − B − C)(B − A − C) ≡ C (mod 3).
+              
+
+
+The proof of the lemma is complete, because none of the triples (2, 2, 0),
+(2, 0, 1) and (0, 1, 1) do satisfy the system.
+
+    By Proposition 2.3 we have also
+90         A s s o c i at i v e wo r d s i n t h e s y m m e t r i c g ro u p
+
+
+Corollary 3.3. The word
+
+                                 y[y, x]A+Bx+Cy
+
+satisfies the associativity low if and only if A = B = C = 0.
+
+Lemma 3.4. The word
+
+                          w(x, y) = xy[y, x]A+Bx+Cy
+
+is associative in S3 if and only if B = C = A = 0 or A − 1 = B = C = 0.
+
+Proof. We have
+
+           w(w(x, y), z) = xy[y, x]γ(x,y) z[z, xy[y, x]γ(x,y) ]γ(xy,z)
+         = xyz[y, x]zγ(x,y)+(z−1)γ(x,y)γ(xy,z) [z, x]yγ(xy,z) [z, y]γ(xy,z)
+
+and
+
+            w(x, w(y, z)) = xyz[z, y]γ(y,z) [yz[z, y]γ(y,z) , x]γ(x,yz)
+         = xyz[y, x]zγ(x,yz) [z, x]γ(x,yz) [z, y]γ(y,z)+(x−1)γ(y,z)γ(xy,z) .
+
+Hence we get
+
+                        (w(x, w(y, z)))−1 w(w(x, y), z)                         (3.4)
+ = [y, x](1−z){−Cy+γ(x,y)γ(xy,z)} [z, x](1−y)(−A) [z, y](1−x){−By+γ(y,z)γ(xy,z)}
+
+     By putting z = y into (3.4) we obtain
+
+                      (w(x, w(y, y)))−1 w(w(x, y), y) =
+                 [y, x](1−y){−A−Cy+(A+Bx+Cy)(A+Bxy+Cy)} ,
+
+which in view of (iii) and (v) can be rewritten as
+                                           2            2
+                        [y, x](1−y){(A−C) −(A−C)−B )} .
+
+     Now we put y = x into (3.4). This gives
+
+                       w(x, w(x, z))−1 w(w(x, x), z) =
+                                            2            2
+                        [z, x](1−x){(A−B) −(A−B)−C }}
+                                 E. Płonka                                       91
+
+In view of (vi) if the word w(x, y) is associative in S3 , then the following
+system of congruences
+              (
+                (A − C)2 − (A − C) − B 2 ≡ 0 (mod 3),
+                (A − B)2 − (A − B) − C 2 ≡ 0 (mod 3).
+
+has to satisfy. The solution of the system is B = C = 0 and A = 0 or
+A = 1. Since the words xy and yx are associative, Lemma 3.4 follows.
+
+Lemma 3.5. The 2−word
+
+                          w(x, y) = x3 [y, x]A+Bx+Cy                           (3.5)
+
+is associative in S3 if and only if A = B = C = 0.
+Proof. Clearly, the word x3 is associative in the group S3 . We have
+
+                            R = w(x, w(1, z)) = x3 ,
+  L = w(w(x, 1)z) = w(x3 , z) = x3 [z, x]γ(x,z) = x3 [z, x](x−1)(A+Bx+Cz)
+                        [z, x](−A+B−C)+(A−B−C)x+Cz .
+
+So the equality R = L is equivalent to the conditions C = 0 and A = B.
+   Further we have
+
+       w(w(x, x), z) = x3 [z, x3 ]A+Bx+Cz = x3 [z, x](x−1)(A+Bx+Cz) ,
+             w(x, w(x, z)) = x3 [x3 [z, x]A+Bx+Cz , x]A+Bx+Cx
+                       = x3 [z, x](A−B−C)(x−1)(A−B+Cz)
+
+Hence the equality w(w(x, x), z) = w(x, w(x, z)) after using (v) and (vi),
+yields the system of equalities
+        
+        (A − B − C)(B − A − C) ≡ 2A + B − C
+        
+                                                             (mod 3),
+          (A − B − C)2 ≡ A − B − C (mod 3),
+        
+        C(A − B − C) ≡ C
+        
+                             (mod 3).
+
+The system has four solutions for (A, B, C):(0,0,0),(1,0,0),(1,1,0) and
+(2,2,0). We check that the last three triple do not produce associative
+words of the form w(x, y) = x3 [y, x]γ (x, y). To do this let us calculate
+
+            w(x, y)3 = x3 [y, x]γ(x,y) (x3 [y, x]γ(x,y) x3 )[y, x]γ(x,y)
+         = x3 [y, x]γ(x,y) [y, x]xγ(x,y) [y, x]γ(x,y) = x3 [y, x](x−1)γ(x,y)
+92           A s s o c i at i v e wo r d s i n t h e s y m m e t r i c g ro u p
+
+
+Taking this into account we get
+
+           L(A, B, C) = w(w(x, y), y) = w(x, y)3 [y, w(x, y)γ(x,y) =
+                        x3 [y, x](x−1)γ(x,y)+(1−y)γ(x,y)γ(x,y) ,
+      R(A, B, C) = w((x, w(y, y)) = x3 [y 3 , x]γ(x,y) = x3 [y, x](y−1)γ(x,y)
+
+Now it easy to check the following equalities
+
+                L(1, 0, 0) = x3 [y, x]x−y , R(1, 0, 0) = x3 [y, x]y−1
+                L(1, 1, 0) = x3 [y, x]x+y , R(1, 1, 0) = x3 [y, x]x+1
+              L(2, 2, 0) = x3 [y, x]−x−y , R(2, 2, 0) = x3 [y, x]−x−1 .
+
+The proof is thus complete.
+
+Lemma 3.6. The 2−word
+
+                            w(x, y) = x4 [y, x]A+Bx+Cy
+
+is associative in S3 if and only if A = B = C = 0.
+
+Proof. We put z = 1 into the associativity law and we make use of the
+formulas (i), (ii), (iii) and (iv). We have
+
+              L = w(w(x, y), 1) = w(x, y)4 = (x4 [y, x]A+Bx+Cy
+     R = w(x, w(y, 1)) = w(x, y 4 ) = x4 [y 4 , x]γ(x,y) = x4 [y, x]−(y+1)γ(x,y)
+                          = x4 [y, x](B−A−C)+y(B−A−C) .
+
+Therefore the equality L = R ensures B = 0 and A = C. Taking this into
+account we get
+
+  w(w(x, x), z) = w(x4 , z) = x4 [z, x4 ]γ(1,z) = x4 [z, x]−(x+1)(A+Az) = x4
+          w(x, w(x, z)) = x4 [x4 [z, x]γ(x,z) , x]γ(1,z) = x4 [z, x]A(1−x) ,
+
+which shows that A = B = C = 0 and Lemma 3.6 follows.
+
+Lemma 3.7. The word
+
+                           w(x, y) = x4 y 4 [y, x]A+Bx+Cy
+
+is associative in S3 if and only if A = B = C = 0.
+                                   E. Płonka                                         93
+
+Proof. We have
+
+                       L = w(w(1, y), z) = w(y 4 , z) = y 4 z 4 [z, y 4 ]γ(1,z)
+       = y 4 z 4 [z, y]−(y+1)(A+B+Cz) = y 4 z 4 [z, y](C−A−B)+(C−A−B)y
+
+and
+
+             R = w(1, w(y, z)) = w(y, z)4 = y 4 z 4 [z, y]A+By+Cz .
+
+Hence C = 0 and A = B. Taking this into account we check
+
+       L = w(w(x, y), x) = x2 y 4 [y, x]γ(x,y) [x, x4 y 4 [y, x]γ(x,y) ]γ(1,x)
+           = x2 y 4 [y, x]γ(x,y) [y, x](y+1)A(x+1)) [y, x](1−x)A(x+1)γ(x,y)
+                                 = x2 y 4 [y, x]A(1+x)
+
+and also
+
+      R = w(x, w(y, x)) = x4 y 4 x4 [x, y]γ(y,x) [y 4 x4 [x, y]γ(y,x) , x]γ(x,1)
+            x4 y 4 x4 [x, y]γ(y,x) [y, x]−(y−1)γ(x,1) [x, y](x−1)γ(x,1)γ(x,y)
+                                = x2 y 4 [y, x]A(1+y) .
+
+By (vi) L = R if and only if A = 0. Clearly, x4 y 4 is associative word in
+S3 . The proof is thus completed.
+
+Lemma 3.8. If the word
+
+                     w(x, y) = [y, x]A+Bx+Cy = [y, x]γ(x,y)
+
+is associative, then A = B − C = 0. Conversely, the word
+
+                               w(x, y) = [y, x]B(x+y)                              (3.6)
+
+satisfies the associativity law for all B ∈ Z3 .
+
+Proof. Using the identities (i), (ii),(ii) and (iv) we have
+
+L = w(w(x, y), z)) = [z, [y, x]γ(x,y) ]γ(1,z) = [y, x](1−z)(A+Bx+Cy)(A+B+Cz)
+
+and similarly
+
+                     R = w(x, w(y, z)) = [w(y, z), x]γ(x,1)
+                          = [z, y](x−1)(A+By+Cz)(A+Bx+C) .
+94           A s s o c i at i v e wo r d s i n t h e s y m m e t r i c g ro u p
+
+
+Thus if w is an associative word in S3 , then in the case y = x, we get
+
+                         [z, x](x−1)(A−B+C)(A−B+Cz) = 1,                          (3.7)
+
+because of (iii) and (v). Similarly, in the case z = y we obtain the equation
+
+                         [y, x](1−y)(A+B−C)(A−C+Bx) = 1.                          (3.8)
+
+Now (3.7), (3.8) and (vi) imply the system of congruences
+                
+                            2
+                (A + C − B) ≡ 0 (mod 3),
+                
+                
+                
+                (A + C − B)(A − B − C) ≡ 0
+                
+                                                         (mod 3),
+                
+                
+                 (A + C − B)C ≡ 0 (mod 3),
+                
+                
+                
+                
+                (A + B − C)2 ≡ 0 (mod 3),
+                
+                 (A + B − C)B ≡ 0 (mod 3),
+                
+                
+                
+                
+                
+                
+                
+                 (A + B − C)(B + C − A) ≡ 0 (mod 3),
+
+which have the solution A = B − C = 0.
+   Conversely, we check that the word w(x, y) = [y, x]Bx+By is associative.
+Indeed, by (ii) and (iii) we have
+                                                            2
+      w(w(x, y), z) = [z, [y, x]B(x+y) ]B(1+z) = [y, x]B (1−z)(1+z)(x+y) = 1
+
+and
+                                                            2
+     w(x, w(y, z)) = [[z, y]B(z+y) , x]B(1+x) = [z, y]B (y+z)(x−1)(x+1) = 1,
+
+as required.
+
+     We have thus established our main result
+
+Theorem 3.9. There are precisely (modulo V (S3 )) twelve associative
+words in the group S3 . Namely 1, x, x3 , x4 , y, y 3 , y 4 , xy, yx, x4 y 4 , [y, x]x+y
+and [x, y]x+y .
+
+                                     References
+[1] Bender, H., Über den grossten p′ −Normalteiler in p−auflösbaren Gruppen, Arch.
+    Math. 18 (1967), 15–16.
+[2] Cooper, C. D. H., Words which give rise another group operation for a given group
+    in: Proceedings of the Second International Conference on the Theory of Groups,
+    (Australian Nat. Univ., Canberra, 1973), Lecture Notes in Math. Vol. 372, Springer,
+    Berlin 1974, pp. 221–225.
+                                   E. Płonka                                         95
+
+[3] Hall, M., The theory of groups The Macmillan Company, New York, 1959.
+[4] Higman, G., Neumann, B. H.,Groups as grupoids with one law, Publ. Math. Debrecen
+    2(1951–2), 215–221.
+[5] Hulanicki, A., Świerczkowski, S., On group operations other that xy or yx, Publ.
+    Math. Debrecen 9 (1962), 142—146.
+[6] Krstić, S., On a theorem of Hanna Neumann Publ. Math. Debrecen 31 (1994),
+    71–76.
+[7] Neumann, H., On a question of Kertesz, Publ. Math. Debrecen 8 (1961), 75–78.
+[8] Płonka, E., On symmetrric words in the symmetric group of degree three, Math.
+    Scand. 99 (2006), 5-16.
+[9] Street, A. P., Subgroup-determining functions on groups, Illinois J. Math. 12 (1968),
+    99–120.
+
+
+                          C o n tac t i n f o r m at i o n
+Ernest Płonka                 Institute of Mathematics, Silesian University of
+                              Technology, ul. Kaszubska 23, 44-100 Gliwice,
+                              Poland
+                              E-Mail: eplonka@polsl.pl
+
+Received by the editors: 19.10.2011
+and in final form 26.06.2012.
+

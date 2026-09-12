@@ -1,0 +1,15 @@
+{
+  "status": "SETUP_FAILURES_RETAINED",
+  "failures": [
+    {
+      "tool_chunk": "453e88",
+      "returncode": 1,
+      "error": "SyntaxError: unterminated string literal in ephemeral packet-generation command. No code in that command ran."
+    },
+    {
+      "tool_chunk": "370597",
+      "returncode": 1,
+      "error": "FileNotFoundError for results/15.76-summary.json because preceding generation did not run."
+    }
+  ]
+}

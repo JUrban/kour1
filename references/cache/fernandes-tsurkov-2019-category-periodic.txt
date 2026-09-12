@@ -1,0 +1,1665 @@
+                                             Automorphisms of the category of finitely
+arXiv:1909.05955v1 [math.GR] 12 Sep 2019
+
+
+
+
+                                           generated free groups of the some subvariety of
+                                                       the variety of all groups
+                                                               R. Barbosa Fernandes
+                                                                     A. Tsurkov
+                                                        Mathematical Department, CCET,
+                                                Federal University of Rio Grande do Norte (UFRN),
+                                                         Av. Senador Salgado Filho, 3000,
+                                                        Campus Universitário, Lagoa Nova,
+                                                       Natal - RN - Brazil - CEP 59078-970,
+                                                         ruanbarbosafernandes@gmail.com,
+                                                             arkady.tsurkov@gmail.com
+                                                                      September 16, 2019
+
+
+                                                                              Abstract
+                                                 In universal algebraic geometry the category Θ0 of the finite generated
+                                             free algebras of some fixed variety Θ of algebras and the quotient group
+                                             A/Y are very important. Here A is a group of all automorphisms of the
+                                             category Θ0 and Y is a group of all inner automorphisms of this category.
+                                                 In the varieties of all the groups, all the abelian groups [18], all the
+                                             nilpotent groups of the class no more then n (n ≥ 2) [22] the group A/Y is
+                                             trivial. B. Plotkin posed a question: ”Is there a subvariety of the variety of
+                                             all the groups, such that the group A/Y in this subvariety is not trivial?”
+                                             A. Tsurkov hypothesized that exist some varieties of periodic groups, such
+                                             that the groups A/Y in these varieties is not trivial. In this paper we give
+                                             an example of one subvariety of this kind.
+                                                Keywords: Universal algebraic geometry, category theory, automor-
+                                             phic equivalence, nilpotent groups, periodic groups.
+                                                Mathematics Subject Classification 2010: 08A99, 08B20, 18A99, 20F18,
+                                             20F50.
+
+
+
+
+                                                                                   1
+                                        Poetry
+                                        is like mining radium.
+                                        For every gram
+                                        you work a year.
+                                        For the sake of a single word
+                                        you waste
+                                        a thousand tons
+                                        of verbal ore.
+                                        V. V. Mayakovsky
+
+
+1     Introduction
+The paper is devoted to some aspects of universal algebraic geometry, i.e., geom-
+etry over universal algebras (for definition of universal algebra see, for example
+[12, Chapter 3, 1. 3]). In fact, universal algebra is the set with the some
+list (signature) of operations. We will say shortly ”algebra” instead ”universal
+algebra”.
+    All definitions of the basic notions of the universal algebraic geometry can
+be found, for example, in [13], [14], [15] and [16]. Also, there are fundamental
+papers [2], [10] and [3], [4].
+    One of the natural question of universal algebraic geometry is as follows:
+
+Problem 1.1 When do two algebras H1 and H2 from the some variety of al-
+gebras Θ have the same algebraic geometry?
+
+    Under the sameness of geometries over H1 and H2 we mean an isomorphism
+of the categories of algebraic sets over H1 and H2 , respectively. So, Problem
+1.1 is ultimately related to the following one:
+
+Problem 1.2 What are the conditions which provide an isomorphism of the
+categories of algebraic sets over the algebras H1 and H2 ?
+
+    Notions of geometric and automorphic equivalences of algebras play here a
+crucial role.
+    In universal algebraic geometry we consider some variety Θ of universal
+algebras of the signature Ω. We denote by X0 an infinite countable set of
+symbols. By F (X0 ) we denote the set of all finite subsets of X0 . We will
+consider the category Θ0 , whose objects are all free algebras F (X) of the variety
+Θ generated by finite subsets X ∈ F (X0 ). Morphisms of the category Θ0
+are homomorphisms of such algebras. We will occasionally denote F (X) =
+F (x1 , x2 , . . . , xn ) if X = {x1 , x2 , . . . , xn }.
+    We consider a system of equations T ⊆ F × F , where F ∈ ObΘ0 , and we
+solve these equations in arbitrary algebra H ∈ Θ.
+    The set Hom (F, H) serves as an affine space over the algebra H: the solution
+of the system T is a homomorphism µ ∈ Hom (F, H) such that µ (t1 ) = µ (t2 )
+                                                          ′
+holds for every (t1 , t2 ) ∈ T or T ⊆ ker µ. TH             = {µ ∈ Hom (F, H) | T ⊆ ker µ}
+
+
+                                            2
+will be the set of all the solutions of the system T . We call these sets algebraic,
+as in the classical algebraic geometry.
+    For every set of points R ⊆ Hom  T (F, H) we consider a congruence of equa-
+                               ′
+tions defined in this way: RH     =      ker µ. This is a maximal system of equa-
+                                     µ∈R
+tions which has the set of solutions
+                               T     R. For every set of equations T we consider
+                       ′′
+its algebraic closure TH  =        ker µ with respect to the algebra H. A set
+                                 ′
+                              µ∈TH
+                                       ′′
+T ⊆ F × F is called H-closed if T = TH    . An H-closed set is always a congru-
+ence. We denote the family of all H-closed congruences in F by ClH (F ).
+
+Definition 1.1 Algebras H1 , H2 ∈ Θ are geometrically equivalent if and
+only if for every F ∈ ObΘ0 and every T ⊆ F × F the equality TH
+                                                             ′′
+                                                                1
+                                                                     ′′
+                                                                  = TH  2
+                                                                          is
+fulfilled.
+   By this definition, algebras H1 , H2 ∈ Θ are geometrically equivalent if and
+only if the families ClH1 (F ) and ClH2 (F ) coincide for every F ∈ ObΘ0 .
+Definition 1.2 [15]We say that algebras H1 , H2 ∈ Θ are automorphically
+equivalent if there exist an automorphism Φ : Θ0 → Θ0 and the bijections
+                        α(Φ)F : ClH1 (F ) → ClH2 (Φ(F ))
+for every F ∈ ObΘ0 , coordinated in the following sense: if F1 , F2 ∈ ObΘ0 ,
+µ1 , µ2 ∈ Hom (F1 , F2 ), T ∈ ClH1 (F2 ) then
+                                     τ µ 1 = τ µ2 ,
+if and only if
+                               τ Φ (µ1 ) = e
+                               e           τ Φ (µ2 ) ,
+                       τ : Φ (F2 ) → Φ (F2 ) /α(Φ)F2 (T ) are the natural epimor-
+where τ : F2 → F2 /T , e
+phisms.
+    The definition of the automorphic equivalence in the language of the category
+of coordinate algebras was considered in [15] and [24]. Intuitively we can say
+that algebras H1 , H2 ∈ Θ are automorphically equivalent if and only if the
+families ClH1 (F ) and ClH2 (Φ (F )) coincide up to a changing of coordinates.
+This changing is defined by the automorphism Φ.
+Definition 1.3 An automorphism Υ of an arbitrary category K is inner, if it
+is isomorphic as a functor to the identity automorphism of the category K.
+
+   It means that for every F ∈ ObK there exists an isomorphism σ Υ
+                                                                 F : F →
+Υ (F ) such that for every µ ∈ MorK (F1 , F2 )
+                                                 
+                                               Υ −1
+                             Υ (µ) = σ Υ
+                                       F2 µ σ F1
+
+holds. It is clear that the set Y of all inner automorphisms of an arbitrary
+category K is a normal subgroup of the group A of all automorphisms of this
+category.
+
+                                           3
+    If an inner automorphism Υ provides the automorphic equivalence of the al-
+gebras H1 and H2 , where H1 , H2 ∈ Θ, then H1 and H2 are geometrically equiv-
+alent (see [15, Proposition 9]). Therefore the quotient group A/Y measures the
+possible difference between the geometric equivalence and automorphic equiv-
+alence of algebras from the variety Θ: if the group A/Y is trivial, then the
+geometric equivalence and automorphic equivalence coincide in the variety Θ.
+The converse is not true. For example, in the variety of the all linear spaces over
+some fixed field k of characteristic 0 we have that A/Y ∼   = Autk, where Autk is
+the group of all the automorphisms of the field k. The proof of this fact can be
+achieved by the method of [23]. But all linear spaces over every fixed field k are
+geometrically equivalent. This fact is a simple conclusion from [17, Theorem 3].
+    In the varieties of all the groups, all the abelian groups [18], all the nilpotent
+groups of the class no more then n (n ≥ 2) [22] the group A/Y is trivial, so
+the geometric equivalence and the automorphic equivalence coincide in these
+varieties. B. Plotkin posed a question: ”Is there a subvariety of the variety of
+all the groups, such that the group A/Y in this subvariety is not trivial?” A.
+Tsurkov hypothesized that exist some varieties of periodic groups, such that
+the groups A/Y in these varieties is not trivial. In this article, we confirm this
+hypothesis.
+    We consider a subvariety Θ of the variety of all groups. Our subvariety is
+defined by identities
+                                        x4 = 1,                                  (1.1)
+                              ((x1 , x2 ) , (x3 , x4 )) = 1,                    (1.2)
+and
+                           ((((x1 , x2 ) , x3 ) , x4 ) , x5 ) = 1,              (1.3)
+in other words, this is a variety of all nilpotent class no more then 4, metabelian
+and Sanov [19] groups. We will use the method of the verbal operations elab-
+orated in [18] for the calculation of the quotient group A/Y for the variety Θ.
+In the next Section we will explain this method.
+
+
+2     Method of verbal operations
+In this section we will explain the method of the verbal operations for the
+computing of the quotient group A/Y in the case of arbitrary variety Θ of
+universal algebras of the signature Ω. The reader also can see the explanation
+and application of this method in [18], [21], [22], [24] and [25].
+
+2.1    First definitions and basic facts
+This method we can apply only if the following condition holds in the variety
+Θ:
+
+Condition 2.1 [18]Φ (F (x)) ∼
+                            = F (x) for every automorphism Φ of the category
+Θ0 for every x ∈ X0 .
+
+
+                                             4
+    In this case, by [24, Theorem 2.1], for every Φ ∈ A there exists a system of
+bijections                 
+                       S = sF : F → Φ (F ) | F ∈ ObΘ0 ,                     (2.1)
+such that for every ψ ∈ MorΘ0 (A, B) the diagram
+
+                                A −−−−→ Φ (A)
+                                    sA
+                                          
+                                ψ         
+                                y      Φ(ψ)y
+
+                                       s
+                                B −−−B−→ Φ (B)
+
+is commutative. It means that Φ acts on the morphisms ψ : A → B of Θ0 as
+follows:
+                             Φ (ψ) = sB ψs−1
+                                          A .                       (2.2)
+
+Definition 2.1 We say that the system of bijections (2.1) is a system of bijec-
+tions associated with the automorphism Φ ∈ A if this system fulfills the
+condition (2.2).
+
+   One automorphism of the category Θ0 in general can be associated with
+various systems of bijections and some system of bijections can be associated
+with various automorphisms.
+   In [18] the notion of the strongly stable automorphism of the category Θ0
+was defined:
+
+Definition 2.2 An automorphism Φ of the category Θ0 is called strongly sta-
+ble if it satisfies the conditions:
+
+  1. Φ preserves all objects of Θ0 ,
+  2. there exists one system of bijections associated with the automorphism Φ
+     such that
+                                     sF |X = idX                          (2.3)
+      holds for every F (X) ∈ ObΘ0 .
+
+    In other words, we can say that an automorphism of the category Θ0 is
+called strongly stable if it preserves all objects of Θ0 and there is some system
+of bijections associated with this automorphism such that all the bijections of
+this system preserve all generators of domains.
+    It is clear that the set S of all strongly stable automorphisms of the category
+Θ0 is a subgroup of the group A of all automorphisms of this category. By [24,
+Theorem 2.3], A = YS holds if in the category Θ0 fulfills the Condition 2.1. In
+this case we have that A/Y ∼    = S/S ∩ Y. So to study A/Y we must compute
+the groups S and S ∩ Y.
+
+
+
+
+                                           5
+2.2     Strongly stable automorphism and strongly stable sys-
+        tem of bijections
+We consider the strongly stable automorphism Φ ∈ S. There exists a system
+of bijections associated with this automorphism which is a subject of Definition
+2.2. This system of bijections is uniquely defined by the automorphism Φ,
+because the equality sA (a) = Φ (α) (x) holds for every A ∈ ObΘ0 and every
+a ∈ A, where α : F (x) → A is a homomorphism defined by α (x) = a (see [24,
+Proposition 3.1]). We denote this system of bijections by SΦ , and its bijections
+we denote by sΦ  F for every F ∈ ObΘ .
+                                      0
+
+                                                  
+Definition 2.3 The system of bijections S = sF : F → F | F ∈ ObΘ0 is
+called strongly stable if for every A, B ∈ ObΘ0 and every µ ∈ MorΘ0 (A, B)
+the mappings sB µs−1      −1
+                     A , sB µsA : A → B are homomorphisms and the condition
+(2.3) are fulfilled.
+
+   The set of all the strongly stable system of bijections we denote by SSSB.
+   It is clear that system of bijections SΦ is strongly stable. Hence the mapping
+A : S → SSSB such that A (Φ) = SΦ is well defined by [24, Proposition 3.1].
+This mapping is one to one and onto by [24, Proposition 3.2].
+   If Φ1 , Φ2 ∈ S then there are strongly stable systems of bijections
+                                    n                            o
+                   A (Φ1 ) = SΦ1 = sΦ  F
+                                         1
+                                           : F →  F | F ∈ ObΘ  0
+
+
+and                               n                       o
+                   A (Φ2 ) = SΦ2 = sΦ
+                                    F : F → F | F ∈ ObΘ
+                                     2                  0
+                                                            .
+                                                                   −1  −1
+For every ψ ∈ MorΘ0 (F1 , F2 ) the equality Φ2 Φ1 (ψ) = sΦ 2 Φ1
+                                                            s
+                                                          F2 F2 ψ  sΦ1
+                                                                    F1   sΦ2
+                                                                          F1  .
+It means that the system of bijections
+                       n                                 o
+                          sΦ2 Φ1
+                           F Fs    : F →  F | F ∈  ObΘ 0
+
+
+is associated with the automorphism Φ2 Φ1 . But it is clear that this system is
+strongly stable, so this system of bijections is uniquely defined strongly stable
+system of bijections corresponds to the strongly stable automorphism Φ2 Φ1 , in
+other words,                  n                               o
+                  A (Φ2 Φ1 ) = sΦ 2 Φ1
+                                 F sF : F → F | F ∈ ObΘ
+                                                            0
+                                                                .
+
+2.3     Strongly stable system of bijections and applicable
+        systems of words
+We consider the algebra F = F (x1 , . . . , xn ) ∈ ObΘ0 and take a word (element)
+w = w (x1 , . . . , xn ) ∈ F (x1 , . . . , xn ).
+
+Definition 2.4 The operation ω ∗ : ω ∗ (h1 , . . . , hn ) = w (h1 , . . . , hn ) is called
+verbal operation defined on the algebra H by the word w, where
+hi ∈ H, 1 ≤ i ≤ n, and H ∈ Θ is an arbitrary algebra of the variety Θ.
+
+                                            6
+    The reader can compare this definition with the definition of word maps,
+[20], [11] and references therein.
+    Denote the signature of our variety Θ by Ω. For every     ω ∈ Ω which has
+an arity ρω we consider the algebra Fω = F x1 , . . . , xρω ∈ ObΘ0 . Having
+                                                                            ∗
+a system of words W = {wω | ω ∈ Ω} where wω ∈ Fω , denote by HW                the
+algebra which coincides with H as a set, but instead of the original operations
+{ω | ω ∈ Ω} it possesses the system of the operations {ω∗ | ω ∈ Ω} where ω∗ is
+a verbal operation defined by word wω .
+                                            ∗
+    We can consider the algebras H and HW     as algebras with the same signature
+Ω: the realization of the operation ω ∈ Ω in the algebra H is the operation ω
+                                                               ∗
+and the realization of the operation ω ∈ Ω in the algebra HW      is the operation
+ω . So, if A and B are algebras with the original operations {ω | ω ∈ Ω}, A∗W
+  ∗
+        ∗
+and BW     are algebras with the operations {ω∗ | ω ∈ Ω}, we can consider the
+                               ∗
+homomorphisms from A to BW        , from A∗W to B and so on.
+
+Definition 2.5 The     system of words W = {wω | ω ∈ Ω} is called applicable
+if wω x1 , . . . , xρω ∈ Fω and for every F = F (X) ∈ ObΘ0 there exists an
+                            ∗
+isomorphism sF : F → FW       such that sF |X = idX .
+
+    The set of all the applicable systems of words we denote by ASW. This set
+is never empty. The trivial example of the applicable system of words, which
+always exists, give as the system W = {wω | ω ∈ Ω}, such that wω = ω for every
+ω ∈ Ω.
+    We suppose that W = {wω | ω ∈ Ω} is an      applicable ∗system of words  and
+consider the system of isomorphisms S = sF : F → FW              | F ∈ ObΘ0 men-
+tioned in Definition 2.5. The isomorphism sF as mapping from algebra F ∈
+ObΘ0 to itself is only a bijection, which fulfill conditions (2.3). The map-
+pings sB µs−1     −1
+            A , sB µsA : A → B are homomorphisms by [24, Corollary 2 from
+Proposition
+             3.4] for every A, B ∈ ObΘ0 and every µ ∈ MorΘ0 (A, B). So
+S = sF : F → F | F ∈ ObΘ0 is a strongly stable system of bijections. From
+                                                                           ∗
+[24, Proposition 3.5] we conclude that the isomorphisms sF : F → FW          such
+that (2.3) holds are uniquely defined by the system of words W . So the system
+of bijections S is uniquely defined by W . We denote this system by SW . There-
+fore the mapping B : ASW → SSSB such that B (W ) = SW is well defined.
+This mapping is one to one   and onto by [24, Proposition 3.6]. In particular, if
+system of bijections S = sF : F → F | F ∈ ObΘ0 is a strongly stable system
+of bijections, then a word wω from the applicable system of words W = B −1 (S)
+we can obtain by the formula
+                                                             
+                  wω x1 , . . . , xρω = sFω ω x1 , . . . , xρω ∈ Fω ,        (2.4)
+
+where ω ∈ Ω (see [18, Susection 2.4], [24, Equation (3.1)]).
+   Now we can conclude [24, Theorem 3.1] that there is one to one and onto
+correspondence C = B −1 A : S → ASW. We denote C (Φ) by WΦ . The systems
+of words WΦ is defined by formula (2.4) where bijections sFω = sΦ
+                                                                Fω are the
+corresponding bijections of the system A (Φ) = SΦ .
+
+
+                                        7
+   Therefore we can calculate the group S if we are able to find all applicable
+system of words.
+   If Φ1 , Φ2 ∈ S and
+                                n                          o
+                 A (Φ1 ) = SΦ1 = sΦF : F → F | F ∈ ObΘ
+                                    1                    0
+                                                             ,
+                                 n                          o
+                 A (Φ2 ) = SΦ2 = sΦF : F → F | F ∈ ObΘ
+                                     2                    0
+
+
+are strongly stable systems of bijections correspond to automorphisms Φ1 and
+Φ2 , then as we saw in the previous section, the strongly stable system of bijec-
+tions                            n                              o
+                A (Φ2 Φ1 ) = S = sΦ  2 Φ1
+                                      s
+                                    F F   : F →  F  | F ∈ ObΘ 0
+
+
+corresponds to the strongly stable automorphism Φ2 Φ1 . Hence, by (2.4), the
+applicable systems of words B −1 (S) = C (Φ2 Φ1 ) we can obtain by formula
+                                                                 
+                 wω x1 , . . . , xρω = sΦ2 Φ1
+                                        Fω sFω ω x1 , . . . , xρω    ,    (2.5)
+where ω ∈ Ω.
+
+2.4    Automorphisms, which are strongly stable and inner
+For calculation of the group S ∩ Y we also have the following
+Criterion 2.1 [18, Lemma 3]The strongly stable automorphism Φ of the cate-
+gory Θ0 , such that C (Φ) = WΦ = W , is inner if and only if for every F ∈ ObΘ0
+                                         ∗
+there exists an isomorphism cF : F → FW    such that
+                                  cB ψ = ψcA                                (2.6)
+is fulfilled for every A, B ∈ ObΘ0 and every ψ ∈ MorΘ0 (A, B).
+   Also we have
+Proposition
+            2.1 [6,     Proposition      23]The      system     of    functions
+ cA : A → A | A ∈ ObΘ0 fulfills the equality (2.6) for every A, B ∈ ObΘ0 and
+every ψ ∈ MorΘ0 (A, B) if and only if there exists c(x) ∈ F (x) such that
+                                 cA (a) = c(a),                             (2.7)
+                   0
+for every A ∈ ObΘ and every a ∈ A.
+Proof. We consider c(x) ∈ F (x) and define the system of functions
+
+ cA : A → A | A ∈ ObΘ0 by (2.7). We have for every ψ ∈ MorΘ0 (A, B) and
+every a ∈ A that the equality ψcA (a) = ψ (c (a)) = c (ψ (a)) = cB ψ (a) holds,
+because ψ ∈ MorΘ0 (A, B).                             
+    We suppose that exists a system of functions cA : A → A | A ∈ ObΘ0
+which fulfills equality (2.6) for every A, B ∈ ObΘ0 and every ψ ∈ MorΘ0 (A, B).
+We consider the algebra F = F (x) ∈ ObΘ0 . There exists c(x) = cF (x) ∈ F (x).
+For every A ∈ ObΘ0 and every a ∈ A we can consider the homomorphism
+αa : F (x) → A, such that αa (x) = a. Therefore cA (a) = cA (αa (x)) =
+αa (cF (x)) = αa (c(x)) = c(a).
+
+                                       8
+3    Application of the method of verbal opera-
+     tions
+We consider every group as universal algebra with signature which has 3 oper-
+ations:
+                               Ω = {1, −1, ·} ,
+where the 0-ary operation 1 give us an unit of a group, the 1-ary operation −1
+give us for an arbitrary element g of a group G the inverse element g −1 and the
+2-ary operation · give us for two elements of a group G its product.
+   The IBN (invariant basis number) property or invariant dimension property
+was defined initially in the theory of rings and modules, see, for example, [8,
+Definition 2.8]. But then this concept was generalized to arbitrary varieties of
+algebras:
+
+Definition 3.1 We say that the variety Θ has an IBN property if for every
+FΘ (X) , FΘ (Y ) ∈ ObΘ0 the FΘ (X) ∼
+                                   = FΘ (Y ) holds if and only if |X| = |Y |.
+
+    By [5] our variety Θ has an IBN property. It is easy to conclude from this
+fact that in the variety Θ the Condition 2.1 fulfills. So, the method of verbal
+operations is valid in our variety.
+    Thus the strategy of our research is clear. First of all we will compute the
+2-generated free group of our variety FΘ (x, y).
+    After that we will find all applicable system of words
+
+                          W = {w1 , w−1 (x) , w· (x, y)} ,                     (3.1)
+
+where w1 is a constant which correspond to the 0-ary operation 1, w−1 (x) ∈
+FΘ (x) is a word which correspond to the 1-ary operation −1 and w· (x, y) ∈
+FΘ (x, y) is a word which correspond to the 2-ary operation ”·”. We will use the
+Definition 2.5 for the finding of the applicable system of words. The necessary
+conditions for the system of words to be applicable we will conclude from the
+                                             ∗
+fact that the isomorphism sF : F → FW          , which exists for every F ∈ ObΘ0 ,
+                                                                          ∗
+provide the fulfilling of all identities of the variety Θ in the groups FW  . It will
+give us 4 systems of words of the form (3.1), which can be applicable.
+    In the next step of our research we will prove that all these systems of
+words are applicable. We will prove that for all these system W all identities
+                                                  ∗
+of the variety Θ really fulfill in the groups FW     for every F ∈ ObΘ0 . This will
+                                                                            ∗
+allow us to construct the homomorphism s = sF (X) : F (X) → (F (X))W , such
+                                             0
+that s|X = idX for every F (X) ∈ ObΘ . After that we will find the inverse
+maps for every sF (X) . It allow to conclude that all homomorphisms sF (X) are
+isomorphisms and all 4 considered systems of words are applicable and provide
+the strongly stable automorphisms of the category Θ0 .
+    And we will finish our research when we will compute for the category Θ0
+the group Y ∩ S by Criterion 2.1 and Proposition 2.1. We will see in the end
+of our research that the group A/Y of the category Θ0 contains 2 elements.
+
+
+
+                                         9
+4      Some properties of the varieties N4 and Θ
+In this paper N4 is the variety of nilpotent groups of class no more then 4. The
+free groups of this variety, generated by generators x1 , . . . , xn we will denote by
+N4 (x1 , . . . , xn ).
+    We will denote ((((x, y) , z) , . . .) , t) as (x, y, z, . . . , t). Also we will denote for
+every group G the γ 1 (G) = G and γ i+1 (G) = (γ i (G) , G). And we will denote
+by Z (G) the center of the group G.
+    In our computation we will frequently use the identities
+
+                          (xy, z) = (x, z)y (y, z) = (x, z)(x, z, y)(y, z),                                        (4.1)
+
+                          (x, yz) = (x, z)(x, y)z = (x, z)(x, y)(x, y, z),                                         (4.2)
+                                                       −1
+                            (x−1 , y) = (y, x)x             = (x, y)−1 (y, x, x−1 )                                (4.3)
+which fulfill in every group (see [7, (10.2.1.2) and (10.2.1.3)] and [9, p. 20, (3)]).
+From these identities we can conclude these facts about arbitrary group G ∈ N4 :
+
+    1. for every g1 , g2 ∈ G and every l1 , l2 ∈ γ 4 (G)
+
+                                                (g1 l1 , g2 l2 ) = (g1 , g2 ) ,                                    (4.4)
+
+    2. for every g ∈ G and every l1 , l2 ∈ γ 2 (G)
+
+                         (l1 l2 , g) = (l1 , g) (l2 , g) ,          (g, l1 l2 ) = (g, l2 ) (g, l1 ) ,              (4.5)
+
+    3. for every g1 , g2 , g3 ∈ G and every l1 , l2 , l3 ∈ γ 3 (G)
+
+                                         (g1 l1 , g2 l2 , g3 l3 ) = (g1 , g2 , g3 ) ,                              (4.6)
+
+    4. for every g1 , g2 , g3 , g4 ∈ G and every l1 , l2 , l3 , l4 ∈ γ 2 (G)
+
+                                   (g1 l1 , g2 l2 , g3 l3 , g4 l4 ) = (g1 , g2 , g3 , g4 ) ,                       (4.7)
+
+    5. every commutator of the length 4 is a multiplicative function by all its 4
+       arguments:
+
+         w (g1 , . . . , gi li , . . . , g4 ) = w (g1 , . . . , gi , . . . , g4 ) w (g1 , . . . , li , . . . , g4 ) , (4.8)
+
+       where w (x1 , . . . , x4 ) ∈ γ 4 (N4 (x1 , . . . , x4 )), 1 ≤ i ≤ 4, holds for every
+       g1 , . . . , g4 , li ∈ G.
+
+   For every G ∈ N4 we have that γ 4 (G) ⊆ Z (G) and γ 5 (G) = {1}. For every
+G ∈ Θ the group γ 2 (G) is an abelian group. We will use these facts later in our
+computations without special reminder. Also we use the identity yx = xy(y, x),
+which fulfills in an every group, and the identity (1.1) which fulfills in an every
+group of the variety Θ without special reminder.
+
+
+                                                          10
+    In this subsection we will describe the free group of our variety Θ generated
+by 2 generators. This group is a quotient group N4 (x, y) /T , where T is a
+normal subgroup of the identities with two variables of the subvariety Θ in the
+variety N4 .
+    By [9, Theorem 17.2.2], if G is finitely generated nilpotent group then there
+exist central (in particular, normal) series:
+
+                        G = G1 > G2 > ... > Gs > Gs+1 = {1}
+such that Gi /Gi+1 = hai Gi+1 i (⇐⇒ Gi = hai , Gi+1 i), ai ∈ Gi .
+hai Gi+1 i ∼
+           = Zn (n ≥ 2), or hai Gi+1 i ∼ = Z. Therefore every g ∈ G can be
+uniquely represented in the form g = aα    1 α2    αs
+                                          1 a2 ...as , where 0 ≤ αi < n, when
+hai Gi+1 i ∼
+           = Zn , and αi ∈ Z, when hai Gi+1 i ∼
+                                              = Z.
+Definition 4.1 We say that the set {a1 , a2 , ..., as } is a base of the group G
+and numbers α1 , α2 , ..., αs are coordinates of the element g in this base.
+    The base of N4 (x, y) we can denote by
+             C1 = x, C2 = y, C3 = (y, x), C4 = (y, x, y) , C5 = (y, x, x) ,                 (4.9)
+                  C6 = (y, x, x, x) , C7 = (y, x, y, y), C8 = (y, x, y, x).
+This is a base of Shirshov, which we can compute by the algorithm explained
+in [1, 2.3.5].
+    In particular, if we substitute in [7, 10.2.1.4] (y, x) instead x and x instead
+z, we obtain
+                                y                 x           −1
+                                                                      (y,x)
+               (y, x) , y −1 , x   y, x−1 , (y, x)      x, (y, x) , y        = 1.
+
+So, by (4.8), we can conclude that
+
+                  ((y, x) , y, x)−1 (y, x, (y, x))−1 (x, (y, x) , y)−1 = 1.
+We have that
+                            (y, x, (y, x)) = ((y, x) , (y, x)) = 1,
+and
+                                                             
+                                                          −1                 −1
+        (x, (y, x) , y) = ((x, (y, x)) , y) = ((y, x) , x) , y = (y, x, x, y) ,
+
+hence
+                                            −1
+                                (y, x, y, x)     (y, x, x, y) = 1
+and
+                               (y, x, y, x) = (y, x, x, y) = C8 .                         (4.10)
+Proposition 4.1 The identity
+     (xy)4 = x4 y 4 (y, x)6 (y, x, y)14 (y, x, y, y)11 (y, x, x)4 (y, x, x, y)11 (y, x, x, x),
+                                                                                            (4.11)
+fulfills in the variety N4 .
+
+                                                 11
+Proof. We will consider the group G ∈ N4 and x, y ∈ G.
+  Initially we go to compute (xy)2 . We have that
+
+                    (xy)2 = xyxy = x2 y(y, x)y = x2 y 2 (y, x)(y, x, y).
+
+   After this we compute (xy)3 by same method:
+
+                      (xy)3 = (xy)2 (xy) = x2 y 2 (y, x)(y, x, y)xy =
+                          x2 y 2 x(y, x)(y, x, x)(y, x, y)(y, x, y, x)y.
+Now we will compute y 2 x:
+
+                      y 2 x = y (yx) = yxy(y, x) = xy(y, x)y(y, x) =
+
+                       xy 2 (y, x)(y, x, y)(y, x) = xy 2 (y, x)2 (y, x, y),                  (4.12)
+because elements of γ 2 (G) commute with elements of γ 3 (G) in every G ∈ N4 .
+Hence, by (4.12) and (4.10), we have the equality
+
+                   (xy)3 = x3 y 2 (y, x)3 (y, x, y)2 (y, x, x)(y, x, y, x)y =
+
+  x3 y 3 (y, x)3 (y, x, y)3 (y, x, y)2 (y, x, y, y)2 (y, x, x)(y, x, x.y)(y, x, y, x) =      (4.13)
+                   x3 y 3 (y, x)3 (y, x, y)5 (y, x, x)(y, x, y, y)2 (y, x, x, y)2 .
+   Now we will compute (xy)4 . By (4.13) we have that
+
+ (xy)4 = xy(xy)3 = xyx3 y 3 (y, x)3 (y, x, y)5 (y, x, x)(y, x, y, y)2 (y, x, y, x)2 (4.14)
+
+After this we can compute that
+
+
+                yx3 = (yx) x2 = xy(y, x)x2 = x2 y(y, x)2 (y, x, x)x =
+
+                               x3 y (y, x)3 (y, x, x)3 (y, x, x, x) ,
+therefore
+                                                    3                3
+                       xyx3 y 3 = x4 y (y, x) (y, x, x) (y, x, x, x) y 3 .                   (4.15)
+We have that
+                                (y, x, x, x) y 3 = y 3 (y, x, x, x) .                        (4.16)
+Also we can compute that
+               3                            3            3                       3       3
+      (y, x, x) y 3 = y (y, x, x) (y, x, x, y) y 2 = y (y, x, x) y 2 (y, x, x, y) =
+                                3                   6                        3       9
+                   y 2 (y, x, x) y (y, x, x, y) = y 3 (y, x, x) (y, x, x, y)                 (4.17)
+and
+                                        3                    3           3
+                             (y, x) y 3 = y (y, x) (y, x, y) y 2 =
+                                    3           3                3               3
+                       y 2 (y, x) (y, x, y) (y, x, y) (y, x, y, y) y =
+
+                                                        12
+                                        3           6           3
+                             y 2 (y, x) (y, x, y) (y, x, y, y) y =                         (4.18)
+                         3             3           6            6           3
+               y 3 (y, x) (y, x.y) (y, x, y) (y, x, y, y) (y, x, y, y) =
+                                            3           9           9
+                                 y 3 (y, x) (y, x.y) (y, x, y, y) .
+Therefore, by (4.15), (4.16), (4.17) and (4.18),
+                             3              9               9       3           9
+   xyx3 y 3 = x4 y 4 (y, x) (y, x.y) (y, x, y, y) (y, x, x) (y, x, x, y) (y, x, x, x) .
+                                                                                   (4.19)
+After this, we have, by (4.14) and (4.19), that
+                          3             9                   9   3               9
+    (xy)4 = x4 y 4 (y, x) (y, x.y) (y, x, y, y) (y, x, x) (y, x, x, y) (y, x, x, x) ·
+
+                  (y, x)3 (y, x, y)5 (y, x, x)(y, x, y, y)2 (y, x, y, x)2 =
+       x4 y 4 (y, x)6 (y, x.y)14 (y, x, y, y)11 (y, x, x)4 (y, x, x, y)11 (y, x, x, x) .
+
+   By (4.10) we have the
+
+Corollary 1 The identity
+
+              1 = (y, x)2 (y, x, y)2 (y, x, x, x)(y, x, y, y)−1 (y, x, y, x)−1 .           (4.20)
+
+fulfills in the variety Θ.
+
+   We denote the images of elements of the base {C1 , . . . , C8 } by the nat-
+ural homomorphism N4 (x, y) → N4 (x, y) /T = FΘ (x, y) by same notation:
+{C1 , . . . , C8 }.
+
+Proposition 4.2 The relations:
+
+                                       Ci2 = 1, (4 ≤ i ≤ 8)                                (4.21)
+
+                                            C32 C6 C7 C8 = 1                               (4.22)
+in FΘ (x, y) are conclusions from the identities of Θ.
+
+Proof. The (4.20) is an identity in Θ, so in (4.20) we can substitute x instead
+y and vice versa. Therefore
+
+             1 = (x, y)2 (x, y, x)2 (x, y, y, y)(x, y, x, x)−1 (x, y, x, y)−1 =
+
+                (y, x)2 (y, x, y)2 (y, x, x, x)(y, x, y, y)−1 (y, x, y, x)−1 .             (4.23)
+
+By (4.3), (4.7), (4.8) and (4.10) we have that (y, x)2 = (x, y)2 , (y, x, x, x) =
+(x, y, x, x)−1 , (x, y, y, y) = (y, x, y, y)−1 , (y, x, y, x) = (x, y, x, y)−1 . Therefore
+we conclude from (4.23) that
+
+                    (x, y, x)2 (y, x, y, x) = (y, x, y)2 (y, x, y, x)−1 .                  (4.24)
+
+                                                  13
+Also we have by (4.3), that
+
+           (x, y, x) = (y, x, x)−1 (x, (y, x), (x, y)) = (y, x, x)−1 = C5−1 .
+
+Therefore (x, y, x)2 = C5−2 = C52 . Now we conclude from (4.24) that
+
+                                       C42 = C52 C82 .                          (4.25)
+
+   Now we substitute in (4.20) (y, x) instead x and x instead y:
+
+               1 = (x, (y, x))2 (x, (y, x), x)2 (x, (y, x), (y, x), (y, x))·
+
+                       (x, (y, x), x, x)−1 (x, (y, x), x, (y, x))−1 =
+                  (x, (y, x))2 (x, (y, x), x)2 = (y, x, x)−2 (y, x, x, x)−2
+So the relation
+                                        C52 C62 = 1                             (4.26)
+holds.
+   Analogously we substitute in (4.20) y instead x and (y, x) instead y and
+conclude that
+                                 1 = C42 .                            (4.27)
+Now by (4.25) and (4.26) we have that
+
+                                     C52 = C62 = C82 .                          (4.28)
+
+   Also, when we substitute in (4.20) (y, x, x) instead y, we obtain that
+
+                                          1 = C62 .                             (4.29)
+
+   And when we substitute in (4.20) (y, x, y) instead x, we conclude
+
+                                     1 = C7−2 = C7,2 .                          (4.30)
+
+Therefore, we conclude (4.21) from (4.27), (4.28), (4.29), (4.30). And after this
+the (4.20) has form
+
+                         1 = C32 C42 C6 C7−1 C8−1 = C32 C6 C7 C8 .
+
+
+    Now we consider in the group N4 (x, y) the minimal normal subgroup R
+which contains elements x4 , y 4 and the left parts of the relations (4.21) and
+(4.22). Here we consider the elements x = C1 , y = C2 , and C3 , . . . , C8 as
+elements of N4 (x, y). The images of the elements C1 , . . . , C8 by the natural epi-
+morphism N4 (x, y) → N4 (x, y) /R we also denote by C1 , . . . , C8 . We see from
+the Proposition 4.2 that the base of the group N4 (x, y) /R is {C1 , C2 , . . . , C7 }
+and, if 1 ≤ i ≤ 3, then |Ci | = 4, if 4 ≤ i ≤ 7, then |Ci | = 2.
+    Our goal is to prove that N4 (x, y) /R = FΘ (x, y). For this we must study
+the group N4 (x, y) /R and prove some lemmas about it’s properties. These
+lemmas we will use in the proof of the Theorem 6.1 and in other computations.
+
+                                             14
+5     Some lemmas about the group N4 (x, y) /R
+In this section we will denote the group N4 (x, y) /R by G.
+Lemma 5.1 γ 2 (G) is a commutative group.
+Proof. We have that γ 3 (N4 (x, y)) ≤ Z (γ 2 (N4 (x, y))) and quotient group
+γ 2 (N4 (x, y)) /γ 3 (N4 (x, y)) = h(y, x) γ 3 (N4 (x, y))i is a cyclic group. Therefore
+γ 2 (N4 (x, y)) is a commutative group. G is a homomorphic image of N4 (x, y),
+so, γ 2 (G) is a commutative group.
+Lemma 5.2 The group γ 3 (G) is a group of exponent 2.
+Proof. We have that γ 3 (G) = hC4 , . . . , C7 i. Lemma 5.1 and the consideration
+of relations (4.21) completes the proof.
+Lemma 5.3 For every h ∈ γ 2 (G) the inclusion h2 ∈ γ 4 (G) holds.
+Proof. We have that γ 2 (G) = hC3 , . . . , C7 i. Lemma 5.1 and the consideration
+of relations (4.21) and (4.22) completes the proof.
+Lemma 5.4 For every a, b, c ∈ G the following equalities holds:
+                                  (ab, c)2 = (a, c)2 (b, c)2 ,                             (5.1)
+                                  (a, bc)2 = (a, c)2 (a, b)2                               (5.2)
+                                          −1      2        2
+                                     (a        , b) = (a, b)                               (5.3)
+                                     (a, b−1 )2 = (a, b)2 .                                (5.4)
+Proof. We have that
+                                               2        b
+                      (ab, c)2 = (a, c)b (b, c) = (a, c)2 (b, c)2
+by (4.1) and by Lemma 5.1. And now by Lemma 5.3 we conclude (5.1). By
+similar computation we can conclude (5.1) from (4.2) and Lemma 5.3.
+   By Lemmas 5.3 and 5.2 γ 2 (G) is a group of exponent 4. Therefore, by (4.3)
+and Lemma 5.3 we have that
+                            
+                           −1 2           a−1
+      (a−1 , b)2 = (b, a)a      = (b, a)2      = (b, a)2 = (a, b)−2 = (a, b)2 .
+
+By similar computation we can conclude (5.4).
+                                                               4
+Lemma 5.5 If g ∈ G, h ∈ γ 2 (G), then the (gh) = g 4 .
+Proof. We know that the identity (4.11) holds in the variety N4 . So this
+identity holds in G. Hence we have that
+    (gh)4 = g 4 h4 (h, g)6 (h, g, h)14 (h, g, h, h)11 (h, g, g)4 (h, g, g, h)11 (h, g, g, g).
+In our case (h, g, h), (h, g, h, h), (h, g, g, h), (h, g, g, g) ∈ γ 5 (G). By Lemmas 5.3
+and 5.2 we have that h4 = (h, g)6 = (h, g, g)4 = 1. Therefore (gh)4 = g 4 .
+
+                                                  15
+6      Computation of the group FΘ (x, y)
+Theorem 6.1 N4 (x, y) /R = FΘ (x, y).
+
+Proof. In this proof we also denote the group N4 (x, y) /R by G.
+    By Proposition 4.2 the relations r = 1, where r ∈ R, are conclusions from
+the identities which define the variety Θ. So we only must prove that G ∈ Θ.
+    It is clear that the group G is a nilpotent groups of class 4.
+    As we said in the proof of the Lemma 5.3, G is a metabelian group.
+    Now we will prove that the group G fulfills the identity (1.1). By Lemma
+5.5, it remains for us to prove now that for every 0 ≤ α1 , α2 ≤ 3 the
+
+                                             (xα1 y α2 )4 = 1
+                                                                                                        4
+holds in G. We substitute in (4.11) xα1 instead x and y α2 instead y. (xα1 ) =
+(y α2 )4 = 1 holds in G. Therefore we must only prove that
+
+          (y α2 , xα1 )6 (y α2 , xα1 , y α2 )14 (y α2 , xα1 , y α2 , y α2 )11 (y α2 , xα1 , xα1 )4 ·
+
+                        (y α2 , xα1 , xα1 , y α2 )11 (y α2 , xα1 , xα1 , xα1 ) = 1
+holds in G. By Lemmas 5.3 and 5.2 we have that
+
+                                     (y α2 , xα1 )6 = (y α2 , xα1 )2 ,
+
+                                        (y α2 , xα1 , y α2 )14 = 1,
+                        (y α2 , xα1 , y α2 , y α2 )11 = (y α2 , xα1 , y α2 , y α2 ),
+                                        (y α2 , xα1 , xα1 )4 = 1,
+                        (y α2 , xα1 , xα1 , y α2 )11 = (y α2 , xα1 , xα1 , y α2 ).
+We denote
+
+v (α1 , α2 ) = (y α2 , xα1 )2 (y α2 , xα1 , y α2 , y α2 )(y α2 , xα1 , xα1 , y α2 )(y α2 , xα1 , xα1 , xα1 )
+
+So it remains for us to prove that
+
+                                             v (α1 , α2 ) = 1                                          (6.1)
+
+holds in G for every 0 ≤ α1 , α2 ≤ 3.
+    It is clear that (6.1) holds in G if α1 = 0 or α2 = 0. If α1 = α2 = 1, than by
+(4.11), we have that
+
+         v (1, 1) = (y, x)2 (y, x, y, y)(y, x, x, y)(y, x, x, x) = C32 C7 C8 C6 = 1.
+
+Now we will prove (6.1) by induction on α1 and α2 . We suppose that (6.1) holds
+for all α1 , α2 such that α1 ≤ β 1 , α2 ≤ β 2 and 0 ≤ α1 , α2 . We have by (5.2) that
+                                                         2 β β 2
+                            (y β2 , xβ 1 +1 )2 = y β2 , x   y 2, x 1 .                                 (6.2)
+
+                                                     16
+We have by (4.8) that
+
+          (y β2 , xβ 1 +1 , y β2 , y β 2 ) = (y β 2 , xβ 1 , y β2 , y β2 )(y β 2 , x, y β2 , y β2 ),   (6.3)
+                                                                                            2
+                 (y β2 , xβ 1 +1 , xβ 1 +1 , y β2 ) = (y β2 , x, x, y β 2 )(β1 +1) =
+                                           2
+                  (y β 2 , x, x, y β 2 )β 1 (y β 2 , x, x, y β2 )2β 1 (y β2 , x, x, y β 2 )
+and                                                                                         3
+                 (y β2 , xβ 1 +1 , xβ 1 +1 , xβ 1 +1 ) = (y β 2 , x, x, x)(β 1 +1) =
+                                       3
+                  (y β 2 , x, x, x)β 1 (y β 2 , x, x, x)3β 1 (β1 +1) (y β2 , x, x, x).
+By Lemma 5.2 we have that
+
+                   (y β 2 , x, x, y β 2 )2β 1 = (y β2 , x, x, x)3β 1 (β 1 +1) = 1,
+
+because β 1 (β 1 + 1) is an even number. Hence
+                                                                           2
+          (y β 2 , xβ 1 +1 , xβ 1 +1 , y β 2 ) = (y β 2 , x, x, y β 2 )β 1 (y β 2 , x, x, y β 2 ) =    (6.4)
+
+                              (y β2 , xβ 1 , xβ 1 , y β2 )(y β 2 , x, x, y β 2 )
+and                                                                            3
+           (y β2 , xβ 1 +1 , xβ 1 +1 , xβ 1 +1 ) = (y β 2 , x, x, x)β 1 (y β 2 , x, x, x) =            (6.5)
+                                  β2       β1       β1   β1    β2
+                               (y , x , x , x )(y , x, x, x).
+Therefore, by (6.2), (6.3), (6.4), (6.5) and by our hypothesis about v (β 1 , β 2 )
+and v (1, β 2 ), we have that
+
+                         v (β 1 + 1, β 2 ) = v (β 1 , β 2 ) v (1, β 2 ) = 1.
+
+   By (5.1) we have that
+                                               2                   2             2
+                            y β2 +1 , xβ 1          = y β2 , xβ 1        y, xβ 1        ,              (6.6)
+
+And now, similarly to the previous arguments, we conclude that
+
+          (y β 2 +1 , xβ 1 , xβ 1 , xβ 1 ) = (y β 2 , xβ 1 , xβ 1 , xβ1 )(y, xβ 1 , xβ 1 , xβ 1 ),     (6.7)
+
+          (y β2 +1 , xβ 1 , xβ 1 , y β2 +1 ) = (y β2 , xβ 1 , xβ 1 , y β2 )(y, xβ 1 , xβ 1 , y),       (6.8)
+and
+          (y β 2 +1 , xβ 1 , y β2 +1 , y β 2 +1 ) = (y β 2 , xβ 1 , y β2 , y β2 )(y, xβ 1 , y, y).     (6.9)
+Hence, by (6.6), (6.7), (6.8), (6.9) and by our hypothesis about v (β 1 , β 2 ) and
+v (β 1 , 1),
+                    v (β 1 , β 2 + 1) = v (β 1 , β 2 ) v (β 1 , 1) = 1.
+Therefore we prove that (6.1) holds in G for every 0 ≤ α1 , α2 ≤ 3. This
+completes our proof.
+   Now, when we know that N4 (x, y) /R = FΘ (x, y), we can prove the
+
+                                                         17
+Corollary 1 The Lemmas 5.1, 5.2, 5.3 and 5.4 hold when we consider as group
+G an arbitrary group of the variety Θ.
+
+Proof. Lemma 5.1 is fulfilled by definition of the variety Θ.
+    Now we will prove that every G ∈ Θ fulfills the conclusion of the Lemma 5.3.
+Every h ∈ γ 2 (G) is generated by commutators (a, b), such that a, b ∈ G. There
+exists the homomorphism ϕ : FΘ (x, y) → G such that ϕ (x) = b, ϕ (y) = a. We
+apply ϕ to (4.22) and conclude that (a, b)2 ∈ γ 4 (G).
+    Also every G ∈ Θ fulfills the conclusion of the Lemma 5.2, because the
+group γ 3 (G) is generated by the commutators (a, b), where a ∈ G, b ∈ γ 2 (G).
+We also consider the homomorphism ϕ : FΘ (x, y) → G from the previous part
+of the proof, apply it to (4.22) and now, because b ∈ γ 2 (G), conclude that
+      2
+(a, b) ∈ γ 5 (G).
+    The proof of the fact that every G ∈ Θ fulfills the conclusion of the Lemma
+5.4 coincides with the proof of the Lemma 5.4 for the group N4 (x, y) /R.
+
+
+7    Applicable systems of words. Necessary con-
+     ditions
+Proposition 7.1 If W (see (3.1) ) is applicable system of words in our variety
+Θ then always w1 = 1, w−1 (x) = x−1 .
+
+Proof. We suppose that W is an applicable system of words. w1 ∈ FΘ (∅) =
+{1}, so w1 = 1.
+    w−1 (x) ∈ FΘ (x) ∼ = Z4 . We denote FΘ (x) by F . Because W is applicable
+                                                                              ∗
+system of words, by Definition 2.5, there existsthe isomorphism sF : F → FW    ,
+                                              −1
+such that sF (x) = x. We have that sF x           = w−1 (sF (x)) = w−1 (x). If
+w−1 (x) = 1, then sF x−1 = 1, but sF (1) = w1 = 1, but this contradicts the
+assumption that sF is an injective
+                                  mapping.
+    If w−1 (x) = x, then sF x−1 = x = sF (x) which gives the same contradic-
+tion.                                                 −1 
+    If w−1 (x) = x2 , then x = sF (x) = sF x−1               = w−1 (w−1 (x)) =
+        2
+               
+               2 2     4
+w−1 x = x          = x = 1. It also gives us a contradiction.
+    Therefore, there is only one possibility: w−1 (x) = x3 = x−1 .
+    For studying of words w· (x, y) we need to consider the group FΘ (x, y). We
+denote this group by G.
+    Because W is applicable system of words, by Definition 2.5, there exists the
+isomorphism sG : G → G∗W , which fix x and y.
+
+Proposition 7.2 If W (see (3.1) ) is applicable system of words in our variety
+Θ then always
+                    w· (x, y) = xyC3α3 C4α4 C5α5 C6α6 C7α7 ,             (7.1)
+where 0 ≤ α3 < 4, αi ∈ {0, 1}, when 4 ≤ i ≤ 7.
+
+
+
+                                       18
+Proof. We use the considerations of [22, Proposition 2.1]. w· (x, y) ∈ G, so
+w· (x, y) = xα1 y α2 g2 (x, y), where g2 (x, y) ∈ γ 2 (G), 0 ≤ α1 , α2 < 4.
+    We have that x = sG (x · 1) = w· (sG (x) , sG (1)) = w· (x, w1 ) = w· (x, 1) =
+xα1 g2 (x, 1) = xα1 holds, because g2 (x, 1) is the result of substitution of 1
+instead y in g2 (x, y). Therefore, α1 = 1. We obtain by similar computations
+that α2 = 1.
+    In the next Proposition we will get the stronger result about word w· (x, y)
+from applicable system of words W .
+
+Proposition 7.3 If W (see (3.1) ) is applicable system of words in our variety
+Θ then always w· (x, y) = xyC3α3 , where α3 = 0, 1, 2, 3.
+
+Proof. The equalities x (xy) = (xx) y and x (yy) = (xy) y hold in G = FΘ (x, y).
+We apply the isomorphism sG : G → G∗W to the both hands of the first equality
+and have that
+                     sG (x (xy)) = w· (sG (x) , sG (xy)) =
+                 w· (sG (x) , w· (sG (x) , sG (y))) = w· (x, w· (x, y))
+and
+                        sG ((xx) y) = w· (sG (xx) , sG (y)) =
+                 w· (w· (sG (x) , sG (x)) , sG (y)) = w· (w· (x, x) , y) .
+Therefore
+                         w· (x, w· (x, y)) = w· (w· (x, x) , y) .
+We conclude be similar computations from the second equality that
+
+                          w· (x, w· (y, y)) = w· (w· (x, y) , y)
+
+holds. If we will denote the operation defined by the word (7.1) by symbol ◦,
+then we can rewrite these equalities in the form
+
+                                x ◦ (x ◦ y) = (x ◦ x) ◦ y                            (7.2)
+
+and
+                               x ◦ (y ◦ y) = (x ◦ y) ◦ y.                            (7.3)
+   Now we will compute the left hand of (7.2). We have that
+
+                     x ◦ (x ◦ y) = x ◦ xyC3α3 C4α4 C5α5 C6α6 C7α7 =
+
+                   xxyC3α3 C4α4 C5α5 C6α6 C7α7 · Lα  α4 α5 α6 α7
+                                                  3 L4 L5 L6 L7 ,
+                                                   3
+                                                                                     (7.4)
+where
+              L3 = (xyC3α3 C4α4 C5α5 C6α6 C7α7 , x) = (xyC3α3 C4α4 C5α5 , x)         (7.5)
+by (4.4),
+
+ L4 = (xyC3α3 C4α4 C5α5 C6α6 C7α7 , x, xyC3α3 C4α4 C5α5 C6α6 C7α7 ) = (xyC3α3 , x, xyC3α3 )
+                                                                                      (7.6)
+
+                                            19
+by (4.6),
+                L5 = (xyC3α3 C4α4 C5α5 C6α6 C7α7 , x, x) = (xyC3α3 , x, x)              (7.7)
+by (4.6),
+                L6 = (xyC3α3 C4α4 C5α5 C6α6 C7α7 , x, x, x) = (xy, x, x, x)             (7.8)
+by (4.7),
+
+L7 = (xyC3α3 C4α4 C5α5 C6α6 C7α7 , x, xyC3α3 C4α4 C5α5 C6α6 C7α7 , xyC3α3 C4α4 C5α5 C6α6 C7α7 ) =
+                                                                                        (7.9)
+                                      (xy, x, xy, xy)
+by (4.7).
+   By (7.5) and (4.1) we have that
+
+                 L3 = (xy, x) (xy, x, C3α3 C4α4 C5α5 ) (C3α3 C4α4 C5α5 , x) .         (7.10)
+
+By (4.1) the equality
+
+                         (xy, x) = (x, x)(x, x, y)(y, x) = (y, x)                     (7.11)
+
+holds. By (4.6) and (7.11) we conclude that
+
+         (xy, x, C3α3 C4α4 C5α5 ) = (xy, x, C3α3 ) = ((y, x), (y, x)α3 ) = 1.         (7.12)
+
+By (4.5) we have that
+                                     α
+      (C3α3 C4α4 C5α5 , x) = (C3 , x) 3 (C4 , x)α4 (C5 , x)α5 = C5α3 C8α4 C6α5 .      (7.13)
+
+Hence, by (7.10), (7.11), (7.12) and (7.13) we have that
+
+                                  L3 = C3 C5α3 C8α4 C6α5 .                            (7.14)
+
+    By (4.1), (4.5), (7.11) and (7.12) we conclude that
+
+                (xyC3α3 , x) = (xy, x) (xy, x, C3α3 ) (C3α3 , x) = C3 C5α3 .          (7.15)
+
+By (7.6), (7.15), (4.5), (4.2), (4.7) and (4.8), we have that
+                                                                           α
+               L4 = (C3 C5α3 , xyC3α3 ) = (C3 , xyC3α3 ) (C5 , xyC3α3 ) 3 =
+
+                 (C3 , C3α3 ) (C3 , xy)(C3 , xy, C3α3 ) (C5 , x)α3 (C5 , y)α3 .       (7.16)
+By (4.2) and (4.10) the equalities
+
+                    (C3 , xy) = (C3 , y) (C3 , x) (C3 , x, y) = C4 C5 C8              (7.17)
+
+fulfills. Therefore, by (7.16), (7.17), (4.10) and because (C3 , xy, C3α3 ) ∈ γ 5 (G)
+the
+                     L4 = C4 C5 C8 C6α3 C8α3 = C4 C5 C6α3 C8α3 +1             (7.18)
+holds.
+
+                                              20
+   By (7.7), (7.15) and (4.5) we have that
+                                                             α
+                  L5 = (C3 C5α3 , x) = (C3 , x) (C5 , x) 3 = C5 C6α3 .                   (7.19)
+
+   By (7.8), (7.9) and (4.8) we can conclude that
+
+                                 L6 = (y, x, x, x) = C6                                  (7.20)
+
+and
+             L7 = (y, x, x, x)(y, x, y, x)(y, x, x, y)(y, x, y, y) = C6 C7 ,             (7.21)
+because, by (4.10) and (4.21), (y, x, y, x)(y, x, x, y) = C82 = 1.
+   Therefore, by (7.4), (7.14), (7.18), (7.19), (7.20), (7.21), (4.21), we have that
+the left hand of (7.2) is equal to
+
+                       x ◦ (x ◦ y) = x2 yC3α3 C4α4 C5α5 C6α6 C7α7 ·
+                  α2                                      (α +1)α4
+           C3α3 C5 3 C8α3 α4 C6α3 α5 · C4α4 C5α4 C6α3 α4 C8 3         · C5α5 C6α3 α5 ·
+                                     C6α6 · C6α7 C7α7 =
+                                        α2 +α4
+                            x2 yC32α3 C5 3       C6α3 α4 +α7 C8α4 .                      (7.22)
+   The right hand of (7.2) is equal to
+
+                   (x ◦ x) ◦ y = x2 ◦ y = x2 yS3α3 S4α4 S5α5 S6α6 S7α7                   (7.23)
+
+where
+                                     S3 = (y, x2 ),                                      (7.24)
+                                                    
+                                    S4 = y, x2 , y ,                                     (7.25)
+                                                     
+                                   S5 = y, x2 , x2 ,                                     (7.26)
+                                                       
+                                  S6 = y, x2 , x2 , x2 ,                                 (7.27)
+                                                  2
+                                    S7 = (y, x , y, y).                                  (7.28)
+By (7.24) and (4.2) we have that
+
+                          S3 = (y, x)(y, x)(y, x, x) = C32 C5 .                          (7.29)
+
+By Lemma (5.3) C32 ∈ γ 4 (G), hence, by (7.25), (4.4) and (4.10),
+
+                             S4 = (S3 , y) = (C5 , y) = C8 .                             (7.30)
+
+By (7.26), (7.29), (4.4), (4.8) and (4.21) we have that
+                                              
+                       S5 = S3 , x2 = C5 , x2 = C62 = 1.                                 (7.31)
+
+Also by (7.27) and (7.31)                      
+                                   S6 = S5 , x2 = 1.                                     (7.32)
+
+                                             21
+By (7.28) and (7.29)
+                                   S7 = (S3 , y, y) = 1                           (7.33)
+because S3 ∈ γ 3 (G). Therefore, by (7.23), (7.29), (7.30), (7.31), (7.32) and
+(7.33) we have that
+                       (x ◦ x) ◦ y = x2 yC32α3 C5α3 C8α4                 (7.34)
+   By (7.2) we conclude from (7.22) and (7.34) that
+                            α2 +α4
+                x2 yC32α3 C5 3       C6α3 α4 +α7 C8α4 = x2 yC32α3 C5α3 C8α4 .
+
+We compare the exponents of the basic elements C5 and C6 in both sides of this
+equality and deduce these two congruences:
+
+                                 α23 + α4 ≡ α3 (mod 2) ,
+
+                                 α3 α4 + α7 ≡ 0 (mod 2) .
+When α3 ≡ 0 (mod 2) both when α3 ≡ 1 (mod 2), we conclude from these con-
+gruences that α4 ≡ 0 (mod 2) and α7 ≡ 0 (mod 2). Therefore, the word w· (x, y)
+in the applicable system of words necessary has a form
+
+                              w· (x, y) = xyC3α3 C5α5 C6α6 ,                      (7.35)
+
+where 0 ≤ α3 < 4, α5 , α6 ∈ {0, 1}.
+    Now we will compute the right hand of (7.3) when ◦ is the verbal operation
+defined by the word (7.35):
+
+      (x ◦ y) ◦ y = w· (xyC3α3 C5α5 C6α6 , y) = xyC3α3 C5α5 C6α6 yQα  α5 α6
+                                                                   3 Q5 Q6 =
+                                                                    3
+
+
+
+
+                  = xy 2 C3α3 (C3α3 , y) C5α5 (C5α5 , y) C6α6 Qα  α5 α6
+                                                               3 Q5 Q6 ,
+                                                                3
+                                                                                  (7.36)
+because C6α6 ∈ γ 4 (G). Here
+
+                    Q3 = (y, xyC3α3 C5α5 C6α6 ) = (y, xyC3α3 C5α5 ),              (7.37)
+
+by (4.4);
+
+     Q5 = (y, xyC3α3 C5α5 C6α6 , xyC3α3 C5α5 C6α6 ) = (y, xyC3α3 , xyC3α3 ) ,     (7.38)
+
+by (4.6); and
+
+            Q6 = (y, xyC3α3 C5α5 C6α6 , xyC3α3 C5α5 C6α6 , xyC3α3 C5α5 C6α6 ) =
+
+                                      = (y, xy, xy, xy)                           (7.39)
+by (4.7).
+   By (4.5) we have that
+                                            α
+                      (C3α3 , y) = (C3 , y) 3 = (y, x, y)α3 = C4α3 ,              (7.40)
+
+
+                                              22
+and
+                                             α                   α
+                      (C5α5 , y) = (C5 , y) 5 = (y, x, x, y) 5 = C8α5                      (7.41)
+by (4.10).
+   We obtain the next equality from (4.2), (4.5), (4.21) and Lemma 5.1:
+
+                      (y, xyC3α3 ) = (y, C3α3 )(y, xy)(y, xy, C3α3 ) =
+
+                        (y, C3 )α3 (y, y)(y, x)(y, x, y) = C3 C4α3 +1 .                    (7.42)
+   After this we conclude from (7.37), (4.2), (7.41), (7.42), (4.10) and (4.21)
+that
+
+   Q3 = (y, xyC3α3 C5α5 ) = (y, C5α5 )(y, xyC3α3 )(y, xyC3α3 , C5α5 ) = C3 C4α3 +1 C8α5 .
+                                                                                    (7.43)
+     By (7.38), (7.42), (4.5), (4.2), (4.8), (4.21), (4.10) and because (C3 , xy, C3α3 ) ∈
+γ 5 (G) we have that
+                                                                      α +1
+            Q5 = C3 C4α3 +1 , xyC3α3 = (C3 , xyC3α3 ) (C4 , xyC3α3 ) 3 =
+
+      (C3 , C3α3 ) (C3 , xy) (C3 , xy, C3α3 ) (C4 , xy)α3 +1 = (C3 , xy) (C4 , xy)α3 +1 =
+                                                         α +1             α +1
+                  (C3 , y) (C3 , x) (C3 , x, y) (C4 , y) 3      (C4 , x) 3       =         (7.44)
+                        C4 C5 C8 C7α3 +1 C8α3 +1 = C4 C5 C7α3 +1 C8α3
+   From (4.8), (4.10) and (4.21) we conclude that
+
+                                   Q6 = (y, xy, xy, xy) =
+
+                  (y, x, x, x) (y, x, x, y) (y, x, y, x) (y, x, y, y) = C6 C7 .            (7.45)
+   Therefore, by (7.36), (7.40), (7.41), (7.43), (7.44), (7.45), (4.21) and by
+Lemma 5.1
+                                 (x ◦ y) ◦ y =
+                                      α2 +α3
+  xy 2 C3α3 C4α3 C5α5 C8α5 C6α6 C3α3 C4 3      C8α3 α5 C4α5 C5α5 C7α3 α5 +α5 C8α3 α5 C6α6 C7α6 =
+                                        α2 +α5
+                           xy 2 C32α3 C4 3       C7α3 α5 +α5 +α6 C8α5 .                    (7.46)
+    Now we will compute the left side of (7.3). As above ◦ is the verbal operation
+defined by the word (7.35). We have that
+                                          
+                  x ◦ (y ◦ y) = w· x, y 2 = xy 2 U3α3 U5α5 U6α6 ,           (7.47)
+
+where
+                                       U3 = (y 2 , x),                                     (7.48)
+                                                      
+                                      U5 = y 2 , x, x ,                                    (7.49)
+                                                        
+                                     U6 = y 2 , x, x, x .                                  (7.50)
+
+
+
+                                                 23
+By (7.48), (4.1) and by Lemma 5.1 we conclude that
+
+                         U3 = (y, x)(y, x, y)(y, x) = C32 C4 .       (7.51)
+                                                                   
+By (7.49), (7.51), (4.5) and, because, by Lemma 5.3, C32 , x ∈ γ 5 (G), we
+deduce that                            
+                U5 = (U3 , x) = C32 , x (C4 , x) = (C4 , x) = C8 .   (7.52)
+Also by (7.50), (4.8) and (4.21) we have that
+
+                               U6 = (y, x, x, x)2 = C62 = 1.                      (7.53)
+
+Therefore, by (7.47), (7.51), (7.52), (7.53) and by Lemma 5.1 we obtain
+
+                           x ◦ (y ◦ y) = xy 2 C32α3 C4α3 C8α5 .                   (7.54)
+
+    By (7.3) we conclude from (7.46) and (7.54) that
+                         α2 +α5
+             xy 2 C32α3 C4 3      C7α3 α5 +α5 +α6 C8α5 = xy 2 C32α3 C4α3 C8α5 .
+
+We compare the exponents of the basic elements C4 and C7 in both sides of this
+equality and deduce these two congruences:
+
+                                 α23 + α5 ≡ α3 (mod 2) ,
+
+                           α3 α5 + α5 + α6 ≡ 0 (mod 2) .
+When α3 ≡ 0 (mod 2) both when α3 ≡ 1 (mod 2), we conclude from these con-
+gruences that α5 ≡ 0 (mod 2) and α6 ≡ 0 (mod 2). Therefore, the word w· (x, y)
+in the applicable system of words necessary has a form
+
+                                   w· (x, y) = xyC3α3 ,                           (7.55)
+
+where 0 ≤ α3 < 4.
+   From Propositions 7.1 and 7.3 we conclude that in the variety Θ the appli-
+cable system of words can have only these four forms
+                      
+                Wα = w1 , w−1 (x) = x−1 , w· (x, y) = xyC3α ,          (7.56)
+
+where 0 ≤ α < 4.
+
+
+8     Applicable systems of words. Sufficient con-
+      ditions
+We will prove in this section that all the systems of words mentioned in (7.56)
+are applicable.
+   It is obvious that the system of words W0 is applicable (see Subsection 2.3).
+   In the begging of this section we will prove that the systems of words W1
+and W2 are applicable and after this we will conclude that the systems of words
+W3 is applicable.
+
+                                             24
+8.1      System of words W1
+Now we consider the system of words W1 . In this system of words w· (x, y) =
+xy (y, x) = yx. We denote by ◦ the verbal operation defined by the word
+                                              1
+w· (x, y) = yx. We will prove that for every G ∈ Θ the universal algebra G∗W1
+is also a group of the variety Θ.
+    It is clear that for every G ∈ Θ and every x ∈ G the identities
+
+                                           x◦1=1◦x=x
+                                            1            1
+
+hold.
+
+Proposition 8.1 The operation ◦ is an associative operation.
+                                              1
+                                                                                      
+Proof. For every G ∈ Θ and every x, y, z ∈ G we have that                           x◦y ◦ z =
+                                                                                     1     1
+z (yx) = (zy) x = x ◦ y ◦ z .
+                        1       1
+                                                  ◦m
+   We denote for every m ∈ Z by x 1 the degree m defined system of words
+                                                        ◦m
+W1 of the element x ∈ G, where G ∈ Θ. It is clear that x 1 = xm , so for every
+G ∈ Θ and every x ∈ G the identities
+                                           ◦−1          ◦−1
+                                     x ◦ x1       = x1        ◦x=1
+                                       1                      1
+
+and
+                                                   ◦4
+                                                  x1 = 1
+hold.
+   For every G ∈ Θ and every x, y ∈ G we will denote (x, y)1 = x−1 ◦ y −1 ◦ x ◦ y.
+                                                                                      1      1    1
+
+Proposition 8.2 For every G ∈ Θ and every x1 , x2 , x3 , x4 ∈ G the identity
+
+                                    ((x1 , x2 )1 , (x3 , x4 )1 )1 = 1
+
+holds.
+
+Proof. We have that
+                                                                    −1
+      (x, y)1 = y −1 x−1 ◦ yx = yxy −1 x−1 = y −1 , x−1 = x−1 , y −1     .                       (8.1)
+                            1
+
+Therefore
+                                                                             
+               ((x1 , x2 )1 , (x3 , x4 )1 )1 =          x−1   −1
+                                                         2 , x1    , x−1   −1
+                                                                      4 , x3    1
+                                                                                  =
+                       −1                   −1                                
+             x−1   −1
+              4 , x3          , x−1   −1
+                                 2 , x1                 =    x−1   −1
+                                                              3 , x4    , x−1   −1
+                                                                           1 , x2     = 1.
+
+
+
+
+                                                      25
+Proposition 8.3 For every G ∈ Θ and every x1 , x2 , x3 , x4 , x5 ∈ G the identity
+                                                     
+                      ((x1 , x2 )1 , x3 )1 , x4 1 , x5 1 = 1
+
+holds.
+
+Proof. By (8.1) we have that
+                                                                           −1
+                  ((x1 , x2 )1 , . . .)1 , xn 1 =    x−1   −1
+                                                      1 , x2    , . . . , x−1
+                                                                           n            (8.2)
+
+holds when n = 2. We suppose that (8.2) holds. So, by (8.1), we have that
+                                                         
+                      ((x1 , x2 )1 , . . .)1 , xn 1 , xn+1 1 =
+                                 −1       −1                                 −1 −1
+       ((x1 , x2 )1 , . . .)1 , xn 1 , x−1
+                                        n+1     =       x−1   −1
+                                                         1 , x2    , . . . , x−1
+                                                                              n   , xn+1  .
+
+Therefore, we proved (8.2) for every n ≥ 2. In particular, for every G ∈ Θ and
+every x1 , x2 , x3 , x4 , x5 ∈ G we have that
+                                                                     
+                                                                     −1 −1
+                  ((x1 , x2 )1 , x3 )1 , x4 1 , x5 1 = x−1
+                                                        1 , . . . , x5     = 1.
+
+
+   Therefore, we proved that for every G ∈ Θ the universal algebra G∗W1 is also
+a group of the variety Θ.
+                                  ∗
+   In particular, we have that FW   1
+                                      ∈ Θ for every F ∈ ObΘ0 . So, for every
+                                                                   (1)
+F = FΘ (X) ∈ ObΘ0 there exists a homomorphism sF : F → FW
+                                                        ∗
+                                                          1
+                                                            such that
+ (1)
+sF |X = idX .
+
+Proposition 8.4 The system of words W1 is an applicable system of words.
+
+Proof. For every F = FΘ (X) ∈ ObΘ0 and every a, b ∈ F we have that
+               2                                          
+            (1)            (1)   (1)   (1)      (1)   (1) (1)
+           sF      (ab) = sF sF (a) ◦ sF (b) = sF sF (b) sF (a) =
+                                            1
+
+                        2           2           2         2
+                     (1)           (1)           (1)         (1)
+                    sF      (b) ◦ sF      (a) = sF      (a) sF      (b) .
+                                1
+         2                                                   2
+      (1)                                                   (1)
+So, sF        : F → F is a homomorphism. The equality sF |X = idX holds,
+             2
+          (1)                        (1)                              (1)
+hence sF         = idF . Therefore, sF is a bijection. It means that sF is an
+isomorphism. Hence W1 is a subject of Definition 2.5.
+
+
+
+
+                                                26
+8.2      System of words W2
+We will prove in this subsection that the system of words W2 is an applicable
+                                      2
+system of words. w· (x, y) = xy (y, x) in this system of words. As above we
+                                                                          2
+denote by ◦ the verbal operation defined by the word w· (x, y) = xy (y, x) . We
+           2
+will prove that for every G ∈ Θ the universal algebra G∗W2 is also a group of the
+variety Θ.
+    It is clear that for every G ∈ Θ and every x ∈ G the identities
+
+                                            x◦1=1◦x=x
+                                             2             2
+
+hold.
+
+Proposition 8.5 The operation ◦ is an associative operation.
+                                               2
+
+Proof. For every G ∈ Θ and every x, y, z ∈ G we have that
+                                                                   2
+               x ◦ y ◦ z = xy (y, x)2 ◦ z = xy (y, x)2 z z, xy (y, x)2 =
+                   2       2                     2
+
+
+                       xyz (y, x)2 (z, xy)2 = xyz (y, x)2 (z, y)2 (z, x)2 .
+In this computation we use Corollary 1 from Theorem 6.1, Lemma 5.3 and (5.2).
+By similar computation we conclude that
+                                                               2
+           x ◦ y ◦ z = x ◦ yz (z, y)2 = xyz (z, y)2 yz (z, y)2 , x =
+               2       2          2
+
+
+                       xyz (z, y)2 (yz, x)2 = xyz (z, y)2 (y, x)2 (z, x)2 .
+
+                                                                     ◦m
+    As above we denote for every m ∈ Z by x 2 the degree m defined system
+of words W2 of the element x ∈ G, where G ∈ Θ. And just as before, it is clear
+      ◦m
+that x 2 = xm , so for every G ∈ Θ and every x ∈ G the identities
+                                            ◦−1            ◦−1
+                                      x ◦ x2         = x2        ◦x=1
+                                        2                        2
+
+and
+                                                      ◦4
+                                                     x2 = 1
+hold.
+   For every G ∈ Θ and every x, y ∈ G we will denote (x, y)2 = x−1 ◦ y −1 ◦ x ◦ y.
+                                                                              2   2   2
+
+Proposition 8.6 For every G ∈ Θ and every x, y ∈ G the equality
+
+                                            (x, y)2 = (x, y)
+
+holds.
+
+
+
+                                                       27
+Proof. We have by Corollary 1 from Theorem 6.1 and Lemma 5.3, by (4.4),
+(5.1), (5.2), (5.3), (5.4) and (1.1) that
+                                                  2
+                     (x, y)2 = x−1 y −1 y −1 , x−1 ◦ xy (y, x)2 =
+                                                                                       2
+                                2                                       2 2
+                                            2            2
+            x−1 y −1 y −1 , x−1 xy (y, x) xy (y, x) , x−1 y −1 y −1 , x−1       =
+                                 4               2                 2
+                    (x, y) (y, x) xy, x−1 y −1 = (x, y) xy, x−1 y −1 =
+                                              2        2
+                               (x, y) x, y −1     y, x−1 = (x, y) .
+
+
+Corollary 1 For every G ∈ Θ and every x1 , x2 , x3 , x4 , x5 ∈ G the identities
+                                                  ((x1 , x2 )2 , (x3 , x4 )2 )2 = 1
+and                                                                          
+                                              ((x1 , x2 )2 , x3 )2 , x4 2 , x5 2 = 1
+hold.
+   Therefore, we proved that for every G ∈ Θ the universal algebra G∗W2 is also
+a group of the variety Θ.
+                                  ∗
+   In particular, we have that FW   2
+                                      ∈ Θ for every F ∈ ObΘ0 . So, for every
+                                                                                               (2)
+F = FΘ (X) ∈ ObΘ0 there exists a homomorphism sF : F → FW
+                                                        ∗
+                                                          2
+                                                            such that
+ (2)
+sF |X = idX .
+Proposition 8.7 The system of words W2 is an applicable system of words.
+Proof. It is clear, that for every G ∈ Θ, every a ∈ G and every b ∈ γ 4 (G)
+the equality a ◦ b = ab holds. Therefore, for every F = FΘ (X) ∈ ObΘ0 and
+                         2
+every a, b ∈ F we have by Proposition 8.6, by Corollary 1 from Theorem 6.1
+and Lemma 5.3, and by (1.1) that
+                        2                         
+                     (2)            (2)   (2)   (2)
+                    sF      (ab) = sF sF (a) ◦ sF (b) =
+                                                                                       2
+                                                             2 
+                                (2)   (2) (2)    (2)      (2)
+                               sF sF (a) sF (b) sF (b) , sF (a)     =
+                              2                       2                     2             2    2
+                         (2)                       (2)                      (2)               (2)
+                        sF          (a) ◦         sF          (b) ◦        sF          (b) , sF      (a) =
+                                          2                      2
+                                                                                                      2
+     2         2         2           2    2      2           2    2
+  (2)         (2)          (2)           (2)             (2)           (2)
+ sF      (a) sF      (b) sF       (b) , sF      (a) ◦ sF        (b) , sF      (a) =
+                                                                                           2
+             2                  2                   2             2    4      2         2
+        (2)                  (2)                    (2)               (2)            (2)         (2)
+       sF          (a) sF               (b)        sF          (b) , sF      (a) = sF       (a) sF      (b) .
+         2
+      (2)
+So, sF       : F → F is a homomorphism. And, as in Proposition 8.4, this
+completes the proof.
+
+                                                                      28
+8.3     System of words W3
+We proved that the systems of words W1 and W2 are applicable. So, there
+exist C −1 (W1 ) = Φ1 , C −1 (W2 ) = Φ2 ∈ S. Hence, the applicable systems of
+                                                      (1)         (2)
+words C (Φ2 Φ1 ) we can obtain by (2.5), where sΦ           Φ2
+                                                Fω = sFω , sFω = sFω , ω ∈ Ω =
+                                                 1
+
+
+{1, −1, ·}.
+
+Proposition 8.8 The equality C (Φ2 Φ1 ) = W3 holds.
+          (1)         (2)
+Proof. sFω and sFω fix the words w1 = 1 and w−1 (x) = x−1 . So, it’s enough
+                (2) (1)
+to compute sG sG (xy), where G = FΘ (x, y). This word will be w· (x, y) in the
+                                        (1)               (2)
+applicable system of words C (Φ2 Φ1 ). sG : G → G∗W1 and sG : G → G∗W2 are
+isomorphisms and they fix the generators x and y. Therefore, by (1.1),
+                       
+ (2) (1)        (2)           (2)                    2                        3
+sG sG (xy) = sG x ◦ y = sG (yx) = y◦x = yx (x, y) = xy (x, y) = xy (y, x) .
+                            1                   2
+
+
+
+    We conclude from this proposition that W3 is an applicable systems of words.
+
+
+9     Group S ∩ Y and group A/Y
+We conclude from Section 8 that group S contains 4 elements: automorphisms
+Φα = C −1 (Wα ), where 0 ≤ α < 4.
+
+Theorem 9.1 The S ∩ Y = {Φ0 , Φ1 } and |A/Y| = 2 hold.
+
+Proof. By Criterion 2.1 the automorphism Φα is inner if and only if for every
+                                                 (α)
+F ∈ ObΘ0 there exists an isomorphism cF : F → FW            ∗
+                                                              α
+                                                                , which fulfills condition
+                               0
+(2.6) for every A, B ∈ ObΘ and every ψ ∈ MorΘ0 (A, B). By Proposition 2.1,
+it means, in particular, that there exists c(x) ∈ FΘ (x) such that the equality
+(2.7) holds.
+                                             (α)
+     On the other hand isomorphisms cF , where F ∈ ObΘ0 , must be bijections.
+The group FΘ (x) contains only 4 elements: ci (x) = xi , where 0 ≤ i < 4. For
+every F ∈ ObΘ0 we consider mappings (ci )F : F → F defined for every f ∈ F
+by formula (ci )F (f ) = ci (f ) = f i . It is easy to check that im (c0 )FΘ (x) = {1} = 6
+                                   2
+FΘ (x) and im (c2 )FΘ (x) = 1, x 6= FΘ (x). When i = 1 or i = 3 then the
+mappings (ci )F : F → F , such that for every f ∈ F the (c1 )F (f ) = f and
+(c3 )F (f ) = f 3 = f −1 holds, are bijections, because for every F ∈ ObΘ0 we
+                                         2
+have that (c1 )F = idF and ((c3 )F ) = idF .
+                                (0)                  (1)
+     We will denote (c1 )F = cF and (c3 )F = cF for every F ∈ ObΘ0 . It is clear
+                                               (0)
+that for every F ∈ ObΘ0 the mapping cF = idF : F → FW              ∗
+                                                                     0
+                                                                       is an isomorphism,
+                 ∗
+because F = FW0 .
+     Also for every F ∈ ObΘ0 and every a, b ∈ F the equality
+            (1)           (1)                                  −1      (1)
+           cF (a) ◦ cF (b) = a−1 ◦ b−1 = b−1 a−1 = (ab)             = cF (ab)
+                     1               1
+
+
+                                           29
+                       (1)  ∗
+holds. Therefore, cF : F → FW 1
+                                is an isomorphism. By Proposition 2.1 we have
+                                                      ∗          (0)
+that condition (2.6) holds for isomorphisms cF : F → FW 0
+                                                          and isomorphisms
+(1)         ∗
+cF : F → FW   1
+                (F ∈ ObΘ0 ). It proves that Φ0 , Φ1 ∈ S ∩ Y.
+   We will denote FΘ (x, y) = G. We have that
+                 (0)             (0)                                         (0)
+                 cG (x) ◦ cG (y) = x ◦ y = xy (y, x)2 6= cG (xy) = xy
+                         2                        2
+
+and
+(1)        (1)                                                     2        (1)             −1
+cG (x)◦cG (y) = x−1 ◦y −1 = x−1 y −1 y −1 , x−1                          6= cG (xy) = (xy)        = y −1 x−1
+       2                     2
+
+because
+                                       2                                  2               
+      xyx−1 y −1 y −1 , x−1                 = x−1 , y −1       y −1 , x−1        = y −1 , x−1 =6 1.
+                                            (0)                    (1)
+                                                                     ∗
+Therefore, neither mapping cG nor mapping cG are isomorphisms F → FW   2
+                                                                         ,
+so the automorphism Φ2 ∈/ S ∩ Y. The Lagrange Theorem argument completes
+the proof.
+
+
+10     Open problem
+As we said in the Section 1, we can’t conclude from fact that the group A/Y
+is not trivial that in our variety Θ the difference between geometric and auto-
+morphic equivalences exists. We must construct a specific example of the two
+groups from the variety Θ, such that they are automorphically equivalent but
+are not geometrically equivalent. This construction is yet the open problem.
+
+
+11     Acknowledgement
+The first author acknowledge the support of Coordenação de Aperfeiçoamento
+de Pessoal de Nı́vel Superior - CAPES (Coordination for the Improvement of
+Higher Education Personnel, Brazil).
+   We are thankful to Prof. E. Aladova for her important remarks, which
+helped a lot in writing this article.
+   We acknowledge Prof. A. I. Reznokov from St.-Petersburg State University,
+which provide to the authors the copy of [19].
+
+
+References
+ [1] Yu. A. Bahturin. Identical Relations in Lie Algebras (VNU Science Press,
+     Utrecht, 1987).
+ [2] G. Baumslag, A. Myasnikov and V. Remeslennikov. Algebraic geometry
+     over groups I: Algebraic sets and ideal theory. Journal of Algebra. 219:1
+     (1999), 16-79. DOI: 10.1006/jabr.1999.7881.
+
+                                                      30
+ [3] E. Daniyarova, A. Myasnikov, V. Remeslennikov. Algebraic geometry over
+     algebraic structures II: Foundations. J. Math. Sci. 185:3 (2012), 389 – 416.
+     DOI: 10.1007/s10958-012-0923-z.
+ [4] E. Daniyarova, A. Myasnikov and V. Remeslennikov, Algebraic geometry
+     over algebraic structures V. The case of arbitrary signature, Algebra Logic.
+     51:1 (2012), 28 – 40. DOI: 10.1007/s10469-012-9168-7.
+ [5] T. Fujiwara. Note on the Isomorphism Problem for Free Algebraic Systems.
+     Proc. Japan Acad., 31:3 (1955), 135-136.
+ [6] M. M. Gomes de Araújo. Strongly Stable Automorphisms of the Categories
+     of finitely generated Free Algebras of the varieties of all Linear Nilpotent
+     Algebras of degree 5. M.Sc. thesis. Federal University of Rio Grande do
+     Norte (2017).
+ [7] M. Hall. The Theory of Groups (The Macmillan Company, 1959).
+ [8] Th. W. Hungerford. Algebra (Springer-Verlag, 1974).
+ [9] M.I. Kargapolov and Ju.I. Merzljakov. Fundamentals of the Theory of
+     Groups ( Springer-Verlag, 1979).
+[10] A. Myasnikov and V. Remeslennikov. Algebraic geometry over groups II:
+     Logical Foundations. Journal of Algebra. 234:1 (2000), 225–276.
+[11] A. Kanel-Belov, B. Kunyavskii and E. Plotkin. Word Equations In Simple
+     Groups And Polynomial Equations In Simple Algebras. Vestnik St. Peters-
+     burg University: Mathematics. 46(1) (2013), 3 – 13.
+[12] A. G. Kurosh. Lectures in general algebra (Pergamon Press, 1965).
+[13] B. Plotkin. Varieties of algebras and algebraic varieties. Categories of alge-
+     braic varieties. Siberian Advanced Mathematics. 7(2) (1997), 64–97.
+[14] B. Plotkin. Some notions of algebraic geometry in universal algebra. St.
+     Petersburg Math. J. 9(4) (1998), 859–879.
+[15] B. Plotkin. Algebras with the same (algebraic) geometry. Proceedings
+     of the Steklov Institute of Mathematics. 242 (2003), 17–207. DOI:
+     10.1134/S0081543812070048.
+[16] B. Plotkin and E. Plotkin. Multi-sorted logic and logical geometry: some
+     problems. Demonstratio Mathematica. XLVIII(4) (2015), 578–618. DOI:
+     10.1515/dema-2015-0042.
+[17] B. Plotkin, E. Plotkin and A. Tsurkov. Geometrical equivalence of groups.
+     Communications in Algebra. 27:8 (1999), 4015-4025.
+[18] B. Plotkin and G. Zhitomirski. On automorphisms of categories of free
+     algebras of some varieties. Journal of Algebra. 306:2 (2006), 344–367. DOI:
+     10.1016/j.jalgebra.2006.07.028.
+
+                                        31
+[19] I. Sanov. Solution of Burnside’s problem for exponent 4. Leningrad State
+     Univ. Ann. 10 (1940), 166-170. (In Russian.)
+[20] D. Segal. Words: notes on verbal width in groups. London Math. Soc.
+     Lecture Notes Ser. vol. 361 (Cambridge Univ. Press, 2009).
+[21] A. Tsurkov. Automorphic equivalence of algebras. International Jour-
+     nal of Algebra and Computation. 17(5/6) (2007), 1263–1271. DOI:
+     10.1142/S0218196707004128.
+[22] A. Tsurkov. Automorphisms of the category of the free nilpotent groups of
+     the fixed class of nilpotency. International Journal of Algebra and Compu-
+     tation. 17(5/6) (2007), DOI: 10.1142/S021819670700413X.1273–1281.
+[23] A. Tsurkov. Automorphic Equivalence of Linear Algebras. Journal of Al-
+     gebra and Its Applications. 13:7, DOI: 10.1142/S0219498814500261.
+[24] A. Tsurkov. Automorphic Equivalence of Many-Sorted Algebras. Applied
+     Categorical Structures. 24:3 (2016), 209-240. DOI: 10.1007/s10485-015-
+     9394-y.
+[25] A. Tsurkov. Automorphic Equivalence in the Classical Varieties of Linear
+     Algebras. International Journal of Algebra and Computations. 27:8 (2017),
+     973–999. DOI: 10.1142/S021819671750045X
+
+
+
+
+                                      32
+

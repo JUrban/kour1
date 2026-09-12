@@ -1,0 +1,611 @@
+arXiv:math/0509541v4 [math.GR] 14 Apr 2006
+
+
+
+
+                                             AUTOMORPHISMS OF THE CATEGORY OF
+                                              THE FREE NILPOTENT GROUPS OF THE
+                                                 FIXED CLASS OF NILPOTENCY.
+                                                                             A.Tsurkov
+                                                        Department of Mathematics and Statistics,
+                                                                 Bar Ilan University,
+                                                               Ramat Gan, 52900, Israel.
+
+                                                               Jerusalem College of Technology,
+                                                                     21 Havaad Haleumi,
+                                                                   Jerusalem, 91160, Israel.
+                                                                       tsurkov@jct.ac.il
+                                                                             July 2, 2018
+
+                                                                                Abstract
+                                                   This research was motivated by universal algebraic geometry. One
+                                               of the central questions of universal algebraic geometry is: when two
+                                               algebras have the same algebraic geometry? For answer of this question
+                                               (see [8],[10]) we must consider the variety Θ, to which our algebras belongs,
+                                               the category Θ0 of all finitely generated free algebras of Θ and research
+                                               how the group AutΘ0 of all the automorphisms of the category Θ0 are
+                                               different from the group InnΘ0 of the all inner automorphisms of the
+                                               category Θ0 . An automorphism Υ of the arbitrary category K is called
+                                               inner, if it is isomorphic as functor to the identity automorphism of the
+                                               category K, or, in details, for every A ∈ ObK there exists sΥ      A : A →
+                                               Υ (A) isomorphism of these objects of the category K and for every α ∈
+                                               MorK (A, B) the diagram
+                                                                                  −
+                                                                                  →
+                                                                           A      sΥ
+                                                                                   A       Υ (A)
+                                                                           ↓α              Υ (α) ↓
+                                                                           B      sΥ
+                                                                                   B       Υ (B)
+                                                                                  −
+                                                                                  →
+                                               is commutative. In the case when Θ is a variety of all groups we have the
+                                               classical results which let us resolve this problem by an indirect way. In
+                                               [3] proved that for every free group Fi the group Aut (AutFi ) coincides
+                                               with the group Inn (AutFi ), from this result in [4] was concluded that
+                                               Aut (EndFi ) = Inn (EndFi ) and from this fact by theorem of reduction
+                                               [2] it can be concluded that AutΘ0 = InnΘ0 . In the case when Θ = Nd
+
+
+                                                                                       1
+      is a variety of the all nilpotent class no more then d groups we know by
+      [6], that if the number of generators i of the free nilpotent
+                                                                   class d group
+                                                                                
+      N Fid are bigger enough than d, then Aut AutN Fid = Inn AutN Fid .
+                                                       
+      But we have no description of Aut EndN Fid and so can not use the
+      theorem of reduction. In this paper the method of verbal operations is
+      used. This method was established in [9]. In [9] by this method was very
+      easily proved that AutΘ0 = InnΘ0 when Θ is the variety of all groups
+      and the variety of all abelian groups. In this paper we will prove, by this
+      method, that AutN0d = InnN0d for every d ≥ 2.
+
+
+1    Introduction and methodology.
+This research was motivated by universal algebraic geometry. One of the cen-
+tral questions of universal algebraic geometry is: when two algebras have the
+same algebraic geometry? For answer of this question (see [8],[10]) we must
+consider the variety Θ, to which our algebras belongs, the category Θ0 of all
+finitely generated free algebras of Θ and research how the group AutΘ0 of all
+the automorphisms of the category Θ0 are different from the group InnΘ0 of
+the all inner automorphisms of the category Θ0 . An automorphism Υ of the
+arbitrary category K is called inner, if it is isomorphic as functor to the identity
+automorphism of the category K, or, in details, for every A ∈ ObK there exists
+sΥA : A → Υ (A) isomorphism of these objects of the category K and for every
+α ∈ MorK (A, B) the diagram
+                                    −
+                                    →
+                                 A sΥA Υ (A)
+                                 ↓α    Υ (α) ↓
+                                 B sΥB Υ (B)
+                                    −
+                                    →
+is commutative. In the case when Θ is a variety of all groups we have the classical
+results which let us resolve this problem by an indirect way. In [3] proved that for
+every free group Fi the group Aut (AutFi ) coincides with the group Inn (AutFi ),
+from this result in [4] was concluded that Aut (EndFi ) = Inn (EndFi ) and from
+this fact by theorem of reduction [2] it can be concluded that AutΘ0 = InnΘ0 . In
+the case when Θ = Nd is a variety of the all nilpotent class no more then d groups
+we know by [6], that if the number of generators i of the free   nilpotent classd d
+group N Fid are bigger enough than d, then Aut       AutN  Fi
+                                                              d
+                                                                 = Inn AutN Fi .
+                                                d
+But we have no description of Aut EndN Fi and so can not use the theorem
+of reduction. In this paper the method of verbal operations is used. This
+method was established in [9]. In [9] by this method was very easily proved that
+AutΘ0 = InnΘ0 when Θ is the variety of all groups and the variety of all abelian
+groups. In this paper we will prove, by this method, that AutN0d = InnN0d for
+every d ≥ 2.
+    We start the explanation of the method of verbal operations in the general
+situation. We consider the variety Θ of one-sorted algebras. The signature of
+our algebras we denote Ω.
+
+
+                                          2
+    For the construction of the category Θ0 we must fix a countable set of sym-
+bols X0 = {x1 , x2 , . . . , xn , . . .}. As objects of the category Θ0 we consider all
+free algebras W (X) of the variety Θ generated by the finite subsets X ⊂ X0 .
+Morphisms of the category Θ0 are homomorphisms of these algebras.
+
+Definition 1.1. We call the automorphism Φ of the category Θ0 strongly
+stable if it fulfills these three conditions:
+
+A1) Φ preserves all objects of Θ0 ,
+                                       
+A2) there exists a system of bijections sΦ
+                                         B : B → B | B ∈ ObΘ
+                                                             0
+                                                               such that Φ
+                                  0
+    acts on the morphisms of Θ by these bijections, i. e.,
+                                                        −1
+                                     Φ (α) = sΦ    Φ
+                                              B α sA                                  (1.1)
+
+      for every α : A → B (A, B ∈ ObΘ0 );
+A3) sΦ                                   0
+     B |X = idX for every B = W (X) ∈ ObΘ .
+
+      The variety Θ is called an IBN variety if for every free algebras W (X) , W (Y ) ∈
+Θ we have W (X) ∼         = W (Y ) if and only if |X| = |Y |. In the [9, Theorem 2]
+proved, that if Θ is an IBN variety of one-sorted algebras, then every automor-
+phism Ψ ∈ AutΘ0 can be decomposed: Ψ = ΥΦ, where Υ, Φ ∈ AutΘ0 , Υ is
+an inner automorphism and Φ is a strongly stable one. So, if we want to know
+the difference of the group AutΘ0 from the group InnΘ0 , we must study the
+strongly stable automorphisms of the category Θ0 .
+      Before the explanation of the notion of the verbal operation we will introduce
+the short notation, which will be widely used in this paper. In this notation
+k-tuple (c1 , . . . , ck ) ∈ C k (C is an arbitrary set) we denote by single letter c
+and we will even allow ourself to write c ∈ C instead c ∈ C k and to write
+”homomorphism α : A ∋ a → b ∈ B” instead ”homomorphism α : A → B,
+which transforms ai to the bi , where 1 ≤ i ≤ k”.
+      For every word w (x) ∈ W (X), where X = {x1 , . . . , xk } and every C ∈ Θ we
+can define a k-ary operation wC      ∗
+                                        (c) = w (c) (in full notation c = (c1 , . . . , ck ) ∈
+   k                                   k
+C , x = (x1 , . . . , xk ) ∈ (W (X)) ) or, more formal, wC    ∗
+                                                                (c) = γ c (w (x)), where
+γ c is a well defined homomorphism γ c : W (X) ∋ x → c ∈ C (in full notation:
+homomorphism γ c : W (X) → C, which transforms xi to the ci for 1 ≤ i ≤ k).
+This operation we call the verbal operation induced on the algebra C by the
+word w (x) ∈ W (X). A little more detailed discussion about definition of the
+verbal operation you can see in [10, Section 2.1].
+      Now we will consider two kinds of substances, which will be also important
+for our method:
+                                  
+     1. systems of bijections sB : B → B | B ∈ ObΘ0 which fulfills these two
+        conditions:
+
+      B1) for every homomorphism α : A → B (A, B ∈ ObΘ0 ) the mappings
+          sB αs−1
+               A and sB αsA is also a homomorphism;
+                       −1
+
+
+
+                                             3
+      B2) sB |X = idX for every B = W (X) ∈ ObΘ0 .
+
+   2. systems of words {wω (x) ∈ W (Xω ) | ω ∈ Ω} which fulfills these two con-
+      ditions:
+
+    Op1) Xω = {x1 , . . . , xk }, where k is an arity of ω, for every ω ∈ Ω;
+     Op2) for every B = W (X) ∈ ObΘ0 there exists an isomorphism σ B :
+           B → B ∗ (algebra B ∗ has the same domain as the algebra B and
+           its operations ω ∗B are induced by wω (x) for every ω ∈ Ω) such as
+           σ B |X = idX .
+                               
+    The system of bijections sΦ                         0
+                                 B : B → B | B ∈ ObΘ , described in A2) and
+A3) of the definition of the strongly stable automorphism fulfills conditions B1)
+and B2) with sB = sΦ  B.                 
+    We take a system of bijections S = sB : B → B | B ∈ ObΘ0 which fulfills
+conditions B1) and B2). If arity of ω ∈ Ω is k, we take Xω = {x1 , . . . , xk } ⊂ X0 .
+Aω = W (Xω ) - free algebra in Θ. We have that ω (x) ∈ Aω (x = (x1 , . . . , xk ))
+so there exists wω (x) ∈ Aω such that
+
+                               wω (x) = sAω (ω (x)) .                           (1.2)
+
+The system of words {wω (x) ∈ Aω | ω ∈ Ω} we denote W (S). This system
+fulfills condition Op1) by our construction, condition Op2) with σ B = sB (B ∈
+ObΘ0 ) by [9, Theorem 3]. For every C ∈ Θ we denote ω ∗C the verbal operation
+induced on the algebra C by wω (x). C ∗ will be the algebra, which has the
+same domain as the algebra C and its operations are {ω∗C | ω ∈ Ω}. By [10,
+Proposition 3.1] one can conclude that for every C ∈ Θ the algebra C ∗ belongs
+to Θ.
+    Contrariwise, if we have a system of words W = {wω (x) | ω ∈ Ω}, which
+fulfills conditions Op1) and Op2), then the isomorphisms        σ B : B → B ∗ (B ∈
+ObΘ ) are bijections. For the system of bijections σ B : B → B | B ∈ ObΘ0 ,
+       0
+
+which we denote S (W ), B1) fulfills by [5, 1.8, Lemma 8] and [10, Corollary
+from Proposition 3.2]; B2) fulfills by construction
+                                                      of these bijections.
+    If we have a system of bijections S = sB : B → B | B ∈ ObΘ0 which
+fulfills conditions B1) and B2) then we can define an automorphism Φ (S) = Φ
+of the category Θ0 : Φ preserves all objects of the category Θ0 and acts on
+its morphisms according to formula (1.1) with sΦ     B = sB . Obviously Φ fulfills
+conditions A1) - A3) with sΦ  B  : B  →  B | B  ∈   ObΘ 0
+                                                             = S, i.e. Φ is a strongly
+stable
+ Φ      automorphism.   Actually,  the two
+                                             different systems    of bijections S1 =
+  s1,B : B → B | B ∈ ObΘ0 and S2 = sΦ       2,B  : B →  B  | B ∈  ObΘ  0
+                                                                           can provide
+by formula (1.1) the same action on homomorphisms and, so, the same strongly
+stable automorphism of the category Θ0 .
+
+Proposition 1.1. Every strongly stable automorphism Φ of the category Θ0
+can be obtained as Φ (S (W )) where W = {wω (x) ∈ Aω | ω ∈ Ω} is a system of
+words which fulfills conditions Op1) and Op2).
+
+
+                                          4
+Proof. Let Φ be a strongly  Φ stable automorphism     of the category Θ0 . The
+                                                   0
+system of bijections S = sB : B → B | B ∈ ObΘ fulfills conditions B1) and
+B2). Lets consider {wω (x) ∈ Aω | ω ∈ Ω} = W (S). By [10, Proposition 3.3],
+W (S) fulfills conditions Op1) and Op2). By [10, Proposition 3.4], S (W (S)) =
+S, so Φ (S (W (S))) = Φ (S). Φ (S) and Φ both preserve all objects of Θ0 and
+act on the morphisms of Θ0 by the same system of bijections S according to
+formula (1.1). Therefore they coincide.
+   So, if we describe the strongly stable automorphisms of the category Θ0 , we
+must concentrate on finding out the systems of words, which fulfill conditions
+Op1) and Op2). However, in describing this, we must remember, that different
+systems of words which fulfill conditions Op1) and Op2) can provide us the
+same automorphism, because different systems of bijections can provide us the
+same automorphism.
+   This method we apply to the variety Nd of the all nilpotent class no more
+then d groups. The variety A2 of the abelian groups with the exponent no more
+then 2 is a subvariety of Nd for every d ∈ N. So, by the second theorem of
+Fudzivara [7, III.7.6] the variety Nd is an IBN variety.
+
+
+2     Applying the method.
+The free i-generated group in Nd is denoted as N Fid . The group signature
+is {1, −1, ·}, where 1 is a 0-ary operation of the taking of the unit, −1 is an
+unary operation of taking an inverse element and · is a binary operation of the
+multiplication. So, by our method, we must find out the systems of the words
+
+                                    {w1 , w−1 , w· }                            (2.1)
+
+such that w1 ∈ N F0d , w−1 ∈ N F1d , w· ∈ N F2d (condition Op1) ) and condition
+Op2) fulfills for all N Fid ∈ ObN0d (i ∈ N). But, as it will be clear above, we
+can consider only the word w (x, y) ∈ N F2d (x, y are generators of N F2d ) which
+fulfills this condition:
+                   ∗
+Opd ) If N F2d is a set N F2d with the binary verbal operation induced by
+                                                                                ∗
+        w (x, y) ∈ N F2d (this operation we denote as ”∗”), then in N F2d are
+                                                                                   ∗
+        fulfilled all group axioms and exists an isomorphism σ d : N F2d → N F2d ,
+        such that σ d (x) = x, σ d (y) = y (x, y are the generators of N F2d ).
+                                    ∗
+Proposition 2.1. If in N F2d  are fulfilled all group axioms then w (x, y) =
+xyg2 (x, y) (g2 (x, y) ∈ γ 2 N F2d , γ i (G) is a i-th group in the lowest central
+series
+    of the       group G), 1∗ = 1, a∗k = ak , for every a ∈ N F2d , k ∈ Z and
+              
+            d ∗
+                                                                                   ∗
+γ i N F2          ⊂ γ i N F2d for every i ∈ N (1∗ and a∗k is the unit of the N F2d
+and degree of the element a according to the new operation).
+
+Proof. Every word in N F2d can be written as w (x, y) = xt y s g2 (x, y) (t, s ∈ Z).
+So we assume that x ∗ y = xt y s g2 (x, y). Then 1 ∗ 1 = 1, so 1 = 1∗ . Therefore
+
+
+                                           5
+x = x ∗ 1 = xt , so t = 1. Analogously s = 1. For every a ∈ N F2d and every
+k1 , k2 ∈ Z we have ak1 ∗ ak2 = ak1 +k2 , because g2 ak1 , ak2 is calculated in the
+commutative group hai.                                                 
+     So, for every a, b ∈ N F2d holds   (a, b)∗ = a−1 b−1
+                                                          g2 a−1 , b−1 ∗ abg2 (a, b) =
+a−1 b−1 abl2 = (a, b) l2 ∈ γ 2 N F2d (l2 ∈ γ 2 N F2d , (a, b) is a commutator of a
+and b and (a, b)∗ is a commutator of a and b according         to the   new operation
+                                                                    
+                                                                 d ∗
+                                                                                   
+”∗”). We assume that for k < i it is proved that γ k N F2              ⊂ γ k N F2d . If
+                    ∗ 
+li−1 ∈ γ i−1 N F2d       , b ∈ N F2d , then we have
+
+                              −1 −1     −1
+                                                 
+               (li−1 , b)∗ = li−1 b g2 li−1 , b−1 ∗ li−1 bg2 (li−1 , b) =
+   −1 −1        −1
+                                                −1 −1     −1
+                                                                                         
+= li−1 b g2 li−1   , b−1 li−1 bg2 (li−1 , b) g2 li−1 b g2 li−1 , b−1 , li−1 bg2 (li−1 , b) .
+                                                                      
+g2 li−1
+    −1
+        , b−1 , g2 (li−1 , b) ∈ γ i N F2d , because li−1 ∈ γ i−1 N F2d . So
+                                                                             
+           (li−1 , b)∗ ≡ li−1 b li−1 bg2 li−1
+                          −1 −1
+                                              b , li−1 b
+                                          −1 −1
+                                                               modγ i N F2d        .
+                                                                   
+              −1 −1
+             li−1               −1
+                  b , li−1 b ≡ li−1 , b b−1 , li−1 ≡ 1 modγ i N F2d .
+                                                                    
+g2 (x, y) has the weight 2 or more, so g2 li−1 b , li−1 b ∈ γ i N F2d and (li−1 , b)∗ ∈
+                                           −1 −1
+          
+γ i N F2d .
+
+Corollary 1. If the system of words (2.1) fulfills conditions Op1) and Op2)
+then w1 = 1, w−1 = x−1 .
+
+   By this Corollary we can concentrate on a research of the verbal binary
+operations in the N F2d . We will find out the word w (x, y) ∈ N F2d , which fulfill
+condition Opd ).
+                                                                         ∗
+Corollary 2. In the condition of the Proposition 2.1 the group N F2d is also
+a nilpotent class d group.
+                                   ∗
+   By this Corollary, if in N F2d  are fulfilled
+                                                   all group axioms then the ho-
+                       d     x           x              ∗
+momorphism σ d : N F2 ∋            →           ∈ N F2d is well defined.
+                             y           y
+
+Proposition 2.2. The verbal operation induced on N F22 by the word w (x, y) =
+         m
+xy (y, x) fulfills the
+                     ∗ group axioms for every m ∈ Z, but the homomorphism
+σ 2 : N F22 → N F22 is an isomorphism if and only if m = 0 or m = 1, i.e.,
+w (x, y) = xy or w (x, y) = yx.
+                                   m
+Proof. Let x ∗ y = xy (y, x) . We have 1∗ = 1, a∗(−1) = a−1 . For every
+a, b, c ∈ N F22 we have
+                                                    m
+                             (a ∗ b) ∗ c = ab (b, a) ∗ c =
+                         m                m              m         m     m
+             = ab (b, a) c (c, ab (b, a))     = abc (b, a) (c, a) (c, b) .
+
+                                              6
+                                                              m
+                                a ∗ (b ∗ c) = a ∗ bc (c, b)       =
+                            m            m     m
+             = abc (c, b) (bc (c, b) , a)          = abc (c, b) (b, a)m (c, a)m .
+                                                                  m
+
+
+So (a ∗ b) ∗ c = a ∗ (b ∗ c).
+                                                                      m                    m
+        (y, x)∗ = y −1 ∗ x−1 ∗ y ∗ x = y −1 x−1 x−1 , y −1                 ∗ yx (x, y)          =
+            1−2m                  m           1−2m                            m                 1−2m
+ = (y, x)          yx, y −1 x−1        = (y, x)         y, x−1        x, y −1         = (y, x)               .
+     α1 α2         α3             α1          α2               α3          α1        α2                 α3
+σ 2 (x y     (y, x) ) = σ 2 (x )∗σ 2 (y )∗σ 2 ((y, x) ) = x                     ∗y        ∗((y, x)∗ )        =
+                        α                          (1−2m)α3                           α α m+(1−2m)α3
+= xα1 ∗y α2 ∗((y, x)∗ ) 3 = xα1 ∗y α2 ∗(y, x)                 = xα1 y α2 (y, x) 1 2
+                                                                             
+                                                                  / σ 2 N F22 .
+(α1 , α2 , α3 ∈ Z). If 1 − 2m 6= ±1, i.e., m 6= 0, 1, then (y, x) ∈
+                               ∗                                     
+Proposition
+             2.3. If N F2d as in the condition Opd ), then γ i N F2d =
+          ∗
+γ i N F2d      for every i ∈ N.
+
+Proof. By Corollary 1 from Proposition 2.1, the operations ”1” and ”−1” of
+                                            ∗
+the group signature in N F2d and in N F2d coincide. By [10, Proposition 3.2],
+original operations in N F2d are the verbal operations induced on N F2d by the
+words with respect to the operations ”1”, ”−1” and ”∗”. So we have a situation
+of Proposition 2.1
+                in which  the group N F2d and N F2d changed they place. Hence,
+        d
+                       
+                      d ∗
+γ i N F2 ⊂ γ i N F2        for every i ∈ N.
+
+Lemma 2.1. If the word w (x, y) fulfills conditions Opd ), then the word κ (w (x, y)) ∈
+N F2d−1 fulfills conditions Opd−1 ) (κ : N F2d → N F2d−1 is the natural epimor-
+phism).
+
+Proof. N F2d−1 ∈ Nd . So on N F2d−1 we can induce the operations of the group
+signature by words 1 ∈ N F0d , x−1 ∈ N F1d , w (x, y) ∈ N F2d . This operations we
+denote by ”1”, ”−1” and ”◦” correspondingly. N F2d−1 with this operations we
+               ◦
+denote N F2d−1 .
+                      
+        1 → γ d N F2d   ֒→                 N F2d       κ
+                                                       −
+                                                       →      N F2d−1            → 1
+               ↓ σd                        ↓ σd               ↓ σ d−1                                 (2.2)
+                                                ∗    −
+                                                       →              ◦
+        1 → γ d N F2d   ֒→                 N F2d       κ      N F2d−1            → 1
+                          ∗
+The operations in N F2d are induced by same words; κ : N F2d → N F2d−1 is
+a homomorphism, so,  ◦ by [5, 1.8, Lemma 8],◦ κ is also a homomorphism from
+(N F2n )∗ to N F2n−1 . Therefore N F2n−1 is an homomorphic image of the
+             ∗                                               d−1
+group N F2d , hence it is also a group. For every
+                                                 a,b ∈ N F2    we have a ◦ b =
+                                             x           a
+w (a, b) = αw (x, y), where α : N F2d ∋           →          ∈ N F2d−1 . We can
+                                             y          b        
+                                         d−1       κ (x)          a
+also consider a homomorphism α    e : N F2    ∋             →         ∈ N F2d−1 .
+                                                   κ (y)          b
+
+
+                                                   7
+We have α = α    e κ, so a ◦ b = αe (κw (x, y)). Therefore the operation ”◦” is
+induced in N F2d−1 by the word κw = w (κ (x) , κ (y)) ∈ N F2d−1 (κ (x) and κ (y)
+are free generators of N F2d−1 ). This operation fulfills all group axioms, hence,
+                                                  ◦
+by Corollary 2 from Proposition   2.1,  N F2d−1
+                                                 is also a nilpotent class d − 1
+                         d−1       κ (x)           κ (x)                ◦
+group. So σ d−1 : N F2        ∋             →               ∈ N F2d−1 is a well
+                                   κ (y)           κ (y)
+defined homomorphism. Our goal is to prove that it isan isomorphism.
+                                                                ∗                
+    By Proposition 2.3, we have σ d γ d N F2d ⊂ γ d N F2d              = γ d N F2d .
+                                                              d
+                                                                                 d
+                                                                                    
+By consideration of the acting of σ −1d , we achieve γ d N F2 ⊂ σ d γ d N      F2    .
+                                                                            d
+In the diagram (2.2) we have two exact rows, because ker κ = γ d N F2 . The
+left square of this diagram is commutative. The right square is commutative too,
+because σ d and σ d−1 preserve the generators of the corresponding free nilpotent
+groups. σ d is an isomorphism, so σ d−1 too.
+
+Lemma 2.2. For every d ≥ 2 there are only two words: w = xy and w = yx
+from N F2d which fulfills condition Opd ).
+
+Proof. For d = 2 it is proved in the Proposition 2.2. We will assume that it is
+proved for all natural numbers lesser then d.
+    Let w (x, y) ∈ N F2d fulfills condition Opd ) and ∗ be an operation in N F2d
+induced by w (x, y). By Lemma 2.1 and assumption of induction κw (x, y) =
+κ (x) κ (y) or κw (x, y) = κ (y) κ (x).                                             
+    In the first case we have w (x, y) = xyr (x, y), where r (x, y) ∈ γ d N F2d . For
+every a, b, c ∈ N F2n we have (a ∗ b)∗c = abr (a, b)∗c = abr (a,b) cr   (abr (a,
+                                                                                 b) , 
+                                                                                       c) =
+                                                                      x            a
+abcr (a, b) r (ab, c) (r (a, b) = α (r (x, y)) where α : N F2d ∋             →            ∈
+                                                                     y            b
+N F2d for every a, b ∈ N F2d , so r (a, b) ∈ γ d N F2d ⊂ Z N F2d ). Also we have
+a∗(b ∗ c) = a∗bcr (b, c) = abcr (b, c) r (a, bcr (b, c)) = abcr (b, c) r (a, bc). ∗ fulfills
+the axiom of associativity, so
+
+                          r (a, b) r (ab, c) = r (b, c) r (a, bc) .                  (2.3)
+
+    We will prove that for d ≥ 3 there isn’t any nontrivial word r (x, y), which
+is generated by commutators of the weight d and fulfills the condition (2.3).
+We will shift all our calculation from the free nilpotent group N F2d to the N Ld2
+- free nilpotent
+       p          class n Lie algebra p over Q with generators x and y. By [1,
+                          
+                        d ◦
+8.3.9], N F2 = N L2 , where N F2d is a Maltsev completion of the group
+              d
+                  ◦
+N F2d and N Ld2 is a group which coincides with N Ld2 as a set and has a
+multiplication defined by Campbell-Hausdorff formula. By consideration of the
+Campbell-Hausdorff formula we have that r (a, b) = q (a, b), where q (x, y) is
+the word in N Ld2 , which we achieve from r (x, y) by replacement of the circular
+brackets of the group commutators by Lie brackets and multiplication in N F2d
+by addition in N Ld2 , q (a, b) is a result of substitution of the a and b instead x
+and y correspondingly (a, b ∈ N F2d ) to the word q (x, y). Alsoby consideration
+                                                                 2
+of the Campbell-Hausdorff formula ab ≡ a + b mod N Ld2               for every a, b ∈
+
+
+                                             8
+             i
+N F2d ( N Ld2 is the i-th ideal of the lowest central series of the algebra N Ld2 ,
+1 ≤ i ≤ d) and ab = a + b if a, b ∈ γ d N F2d . Therefore the condition (2.3) we
+can write as
+                  q (a, b) + q (a + b, c) = q (b, c) + q (a, b + c) .        (2.4)
+We shall substitute a = λx, b = x, c = y - (λ ∈ Z) to (2.4) and we will achieve:
+                       q ((λ + 1) x, y) = q (x, y) + q (λx, x + y) .                     (2.5)
+N Ld2 is a direct sum of its polyhomogeneous (homogeneous as according x, as
+according y separately) components (proof of this fact is similar to the proof
+                               P
+                               d−1
+of [1, 2.2.5]). Let q (x, y) =     qi (x, y), where qi (x, y) is a polyhomogeneous
+                                  i=1
+component of q (x, y) corresponding to the degree i of x and d − i of y. By (2.5)
+we have
+              d−1
+              X                           d−1
+                                          X                   d−1
+                                                              X
+                            i
+                    (λ + 1) qi (x, y) =         qi (x, y) +         λi qi (x, x + y) .   (2.6)
+              i=1                         i=1                 i=1
+
+When we develop qi (x, x + y) by additivity, we achieve qi (x, x + y) = qi (x, y)+
+ P
+d−1
+    mi,j (x, y) where mi,j (x, y) is a polyhomogeneous component of qi (x, x + y)
+j=i+1
+with the degree j of x and d − j of y. In particular q1 (x, x + y) = q1 (x, y) +
+P
+d−1
+      m1,j (x, y). By comparison of the polyhomogeneous components of (2.6)
+j=2
+with the degree 2 of x and d − 2 of y we have
+                                   
+                         2
+                  (λ + 1) − 1 − λ2 q2 (x, y) = λ2 m1,2 (x, y) .                          (2.7)
+
+   Let {e1 (x, y) , . . . , ek (x, y)} be a linear basis of the d-th ideal of the lowest
+                                             Pk                             P
+                                                                            k
+central series of N Ld2 and q2 (x, y) =         ρs es (x, y), m1,2 (x, y) =   µs es (x, y)
+                                            s=1                                    s=1
+(ρs , µs ∈ Z). From (2.7) we have
+                                          
+                                  2
+                           (λ + 1) − 1 − λ2 ρs = λ2 µs
+
+(s ∈ {1, . . . , k}). We take two values of λ such that we will achieve ρs = 0,
+µs = 0. Hence q2 (x, y) = 0, q2 (x, x + y) = 0, m1,2 (x, y) = 0. Step by step,
+analogously we conclude, that qi (x, y) = 0, qi (x, x + y) = 0, m1,i (x, y) = 0 for
+i ∈ {3, . . . , d − 1}. Therefore q (x, y) = q1 (x, y). Now we shall substitute a = x,
+b = y, c = λy - (λ ∈ Z) to (2.4) and we will achieve:
+                      q1 (x, y) + q1 (x + y, λy) = q1 (x, (λ + 1) y)
+or                                               
+                                  d−1
+                            (λ + 1)     − λd−1 − 1 q1 (x, y) = 0,
+so q1 (x, y) = 0, q (x, y) = 0, r (x, y) = 1 and w (x, y) = xy.
+    Analogously we consider the case w (x, y) = yx.
+
+                                                9
+Theorem 2.1. All automorphisms of the category of the nilpotent class d free
+groups are inner.
+
+Proof. Let W = {w1 , w−1 , w· } be the system of words, which fulfills conditions
+Op1)  and Op2). By Lemma 2.2 there      are no more then two opportunities:
+W = 1, x−1 , xy or may also be W = 1, x−1 , yx . It is easy to check that
+both these systems actually fulfill conditions Op1) and Op2). By Proposition
+1.1, all strongly stable automorphisms of N0d can by achieved as Φ (S (W )). If
+W fulfills conditions Op1) and Op2), then S (W ) fulfills conditions B1) and
+B2) (see Section 1), so, by [9, Lemma 3 and Theorem 2], Φ (S (W )) is an inner
+automorphism if and only if for every B ∈ ObN0d exists an isomorphism cB
+from B to B ∗ , where B ∗ is an algebra which has the same domain as algebra
+B and operations induced by the W (S (W )) = W (see [10, Proposition 3.4]),
+                 −1                                                        0
+such that
+       c−1  B αcA = α for every homomorphism α : A → B (A, B ∈ ObΘ ). If
+W = 1, x ,xy , then B = B and we can take cB = idB for every B ∈ ObN0d .
+                           ∗
+
+And if W = 1, x−1 , yx , then for every B ∈ ObN0d we can take cB : B → B ∗
+such that cB (b) = b−1 for every b ∈ B.
+
+
+3    Acknowledgements.
+I dedicate this paper to the 80th birthday of Prof. B.Plotkin. He motivated
+this research and was very heedful to it. Of course, I must appreciative to Prof.
+B.Plotkin and Dr. G. Zhitomirski for theirs marvelous paper [9]. This research
+could not take place without theirs deep results. Prof. S. Margolis also was very
+heedful to my research. Very useful discussion with Prof. L. Rowen, Dr. R.
+Lipyanski, Dr. E. Plotkin and Dr. G. Zhitomirski, also help me in the writing
+of this paper.
+
+
+References
+ [1] Ju. Bahturin, Identities in Lie algebras, (Russian), Nauka, Moscow, 1985.
+ [2] A. Berzins, B. Plotkin, E. Plotkin, Algebraic geometry in varieties of alge-
+     bras with the given algebra of constants, Journal of Math. Sciences, 102:3,
+     (2000), pp. 4039 – 4070.
+ [3] J. Dyer, E.Formanek, The automorphism group of a free group is complete,
+     J. London Math. Soc. (2), 11:2 (1975), pp. 181 – 190.
+ [4] E. Formanek, A question of B.Plotkin about semigroup of endomorphisms
+     of a free group, Proc. Amer. Math.Soc., 130 (2002), pp. 935 – 937.
+ [5] G. Grätzer, Universal algebra. Second edition. Spinger-Verlag, 1979.
+ [6] M. Kassabov, On the Automorphism Tower of Free Nilpotent Groups,
+     http://arxiv.org/abs/math.GR/0311488.
+
+
+                                       10
+[7] A. Kurosh, Lectures in general algebra (Russian), Fizmatgiz, Moscow, 1962.
+[8] Plotkin B. Algebras with the same (algebraic) geometry, Proceedings of the
+    International Conference on Mathematical Logic, Algebra and Set Theory,
+    dedicated to 100 anniversary of P.S.Novikov, Proceedings of the Steklov
+    Institute of Mathematics, MIAN, v.242, (2003), pp. 17 – 207.
+[9] B. Plotkin, G. Zhitomirski, On automorphisms of categories of free algebras
+    of some varieties, http://arxiv.org/abs/math.RA/0501331.
+[10] A. Tsurkov Automorphic equivalence            of   one-sorted    algebras,
+     http://arxiv.org/abs/math.GM/0509032.
+
+
+
+
+                                     11
+
