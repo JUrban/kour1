@@ -2636,3 +2636,25 @@ At09:37:25 all six n7 verification workers remained live. The updated
 progress file is retained; no full n7 conclusion is claimed.
 A separate nonclosed-pair lift now looks promising for19.48; its plan
 is written, but it is not yet counted.
+
+## 2026-09-12 09:54 UTC — 19.48 prior answer and independent alternative
+
+The F9 finite screen led to an explicit nine-factor word producing the
+new upper parameter 2+j from levels F3 and (1+j)F3. Lifting with the
+common ideal tF9[t] gives an irreducible nonclosed net of free rank-two
+F3[t]-modules over the quadratic extension F9(t)/F3(t), in every order
+n>=3. Both native GAP and independent prime-field matrices verify the
+word; 3,024 R-module basis products also pass.
+
+Priority search then found ProofForum PF:2026.000007 v1, uploaded on
+September 1, with a different cubic example over Z. Its complete proof
+was read and its proof page viewed. A separate integer-matrix check
+confirms its unit, diagonal and conjugation identities. It is a preprint
+with no confirmed human review; its direct short proof is sound under
+this internal audit. The problem is therefore recorded as a prior
+negative answer, with no increase from 44 new complete candidates.
+The 33-file replay returned actual exit0 (tool chunk5affef).
+
+The same public archive also advertises answers to 19.9, 19.1 and
+17.113. Only their abstracts have been seen so far; no proof status is
+assigned to those three papers before a separate audit.

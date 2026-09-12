@@ -1,0 +1,12 @@
+F1948 := GF(9);;
+j1948 := Z(9)^2;;
+o1948 := One(F1948);;
+z1948 := Zero(F1948);;
+if j1948^2 <> -o1948 then Error("wrong field"); fi;
+U1948 := [[o1948,o1948],[z1948,o1948]];;
+V1948 := [[o1948,z1948],[o1948+j1948,o1948]];;
+W1948 := V1948*U1948*V1948*U1948^-1*V1948*U1948*V1948^-1*U1948^-1*V1948^-1;;
+if W1948 <> [[o1948,2*o1948+j1948],[z1948,o1948]] then Error("wrong witness"); fi;
+if 2*o1948+j1948 in GF(3) then Error("parameter is not new"); fi;
+Print("PASS_1948_GAP factors=9 upper_parameter=2+j\n");
+QUIT_GAP(0);

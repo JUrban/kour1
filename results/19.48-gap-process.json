@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bin/gap",
+    "-o",
+    "512m",
+    "scripts/check_19_48.g"
+  ],
+  "started": "2026-09-12T09:49:03.921018+00:00",
+  "ended": "2026-09-12T09:49:05.762067+00:00",
+  "returncode": 0,
+  "stdout": "\nPASS_1948_GAP factors=9 upper_parameter=2+j\n",
+  "stderr": "",
+  "sentinel_present": true,
+  "script_sha256": "9306b2a9e203c04d76aab05b65db2d3027ada360f2759c458c1516854ebaf3a4",
+  "log_sha256": "467449ad0ae5f46444943e9519f9219e8ffbc1474240dbba269d4d4cf14337d0"
+}
