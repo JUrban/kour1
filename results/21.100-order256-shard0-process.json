@@ -1,0 +1,20 @@
+{
+  "order": 256,
+  "shard": 0,
+  "shards": 4,
+  "pid": 254843,
+  "command": [
+    "bin/gap",
+    "-o",
+    "3g",
+    "-c",
+    "SearchOrder21100:=256;SearchShard21100:=0;SearchShards21100:=4;",
+    "scripts/screen_21_100.g"
+  ],
+  "started_utc": "2026-09-12T11:32:21.887874+00:00",
+  "actual_returncode": 0,
+  "ended_utc": "2026-09-12T11:38:56.005031+00:00",
+  "stdout_sha256": "436bec5f032555e36aa0583a2b42f97a370fd31c4a1fe1773f1a25b04b3c6583",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sentinel_seen": true
+}

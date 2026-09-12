@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/project/scripts/audit_21_100.py", line 92, in <module>
+    main()
+  File "/project/scripts/audit_21_100.py", line 27, in main
+    assert summarize() == json.loads((ROOT/'results/21.100-screen-summary.json').read_text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

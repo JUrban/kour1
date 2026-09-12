@@ -2702,3 +2702,15 @@ The report also records the elementary central-Frattini lifting case with no nov
 Recorded full conditional arguments: integral FP plus orientable field duality implies integral duality; finite generation of integral homology through the field-resolution bound forces equal Euler characteristics. Neither missing finiteness hypothesis is supplied by the original problems. A squarefree-denominator rank-one group and a factorial telescope isolate two invalid field-to-integral shortcuts.
 
 The2025 Fisher--Italiano--Kielak source was read on pp.1--5 and23--29, including the limited low-dimensional integral conclusion. Kropholler2021 Sections1--6 were read; its FP_2 construction contains torsion of every prime order through its displayed stabilizers and cannot have finite cohomological dimension over any finite prime field. Two theorem-page images were checked. The10-file packet binds sources and proof notes only; no computational proof or new solution is claimed.
+
+## 2026-09-12T12:01:15.229924+00:00: 21.100 coprime-action screen and independent characters
+
+The pilot plus eight completed GAP shards cover15,623 actions on32,262 catalogue groups of class at least3, with313,685 invariant characters and66,172 nonlinear correspondents. All count and pointwise tests pass. The larger orders256 and2187 include all nontrivial cyclic prime-power coprime actions; the smaller orders81,243,729 include involutions. The full screen remains dependent on GAP catalogue, automorphism and character algorithms.
+
+Thirteen independently certified actions cover orders2,3,4,5,7,8,13. A Python checker reconstructs faithful permutation models, induced character bases, exact cyclotomic restrictions and the correspondence:2,316 irreducibles,328 invariant characters,120 nonlinear correspondents with explicit zero witnesses,17,320,818 multiplication entries and22,599,799 linear-map edges. Five corruptions are rejected.
+
+The initial exporter exposed repeated characters from IrrConlon and an order-dependent Irr cache effect on SmallGroup(729,268). Both failures and the successful seven-model stage are preserved. The final exporter deduplicates against a standard basis computed first; the independent character proof does not trust the Conlon output. The initial auditor also rejected an in-memory tuple versus JSON-list comparison; that rejected run is retained. Final thirteen-model GAP returned0 (8ac84d), Python returned0 (fb17e5), and the109-file audit with byte-for-byte export replay returned0 (61debf), with clean stderr and required markers.
+
+Navarro2023 Section6 gives the prior question and the known linear-correspondent direction, which is credited. This is a bounded negative search with positive certificates, not a full solution. New complete candidates44, outside reviews0. No external messages or pushes.
+
+The n=7 progress snapshot at 2026-09-12T12:00:30.498720+00:00 has five shard pass markers and one live worker (77400). The aggregate remains pending.

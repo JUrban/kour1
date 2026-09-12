@@ -1,0 +1,1153 @@
+Publ. Mat. 67 (2023), 173–198
+DOI: 10.5565/PUBLMAT6712304
+
+
+
+
+  PROBLEMS ON CHARACTERS: SOLVABLE GROUPS
+
+
+                              Gabriel Navarro
+                   Dedicated to the memory of Carlo Casolo
+
+
+Abstract: I review some problems on characters of finite solvable groups, while
+introducing new ones.
+
+2020 Mathematics Subject Classification: Primary: 20C15.
+Key words: characters, solvable groups.
+
+
+
+
+                              1. Introduction
+   The world of representation theory of finite groups is often too much
+focused on simple groups. This is not a complaint: simple groups are fas-
+cinating objects, with an enthralling history, that have deep connections
+with important parts of mathematics, and that attract the attention of
+profound mathematicians. Furthermore, many problems on finite groups
+reduce to questions on simple groups, and most of the time these ques-
+tions are solved (using the classification of finite simple groups, CFSG
+from now on), hence settling the problems. These are often quite diffi-
+cult questions that require Deligne–Lusztig theory (in the case of groups
+of Lie type), sophisticated combinatorics (in the case of the alternating
+groups), or incredibly clever ad hoc arguments (in the sporadic groups).
+Sometimes these questions even require investigations of the covering
+groups of the simple groups (quasi-simple groups), or of their automor-
+phism groups (almost simple groups). The modular (characteristic p)
+representation theory of finite simple groups is far from understood:
+there is a vast and exciting territory on simple groups that remains to
+be discovered. If there has to be a complaint, it is that once a problem
+is solved using the CFSG it is rarely revisited to explore a CFSG-free
+proof; and if there has to be another complaint, it is that we are never
+certain that a proof that uses the CFSG is fully understood. But perhaps
+
+This research is supported by Ministerio de Ciencia e Innovación PID2019-103854GB-
+I00. The author thanks I. M. Isaacs, G. Malle, A. Moretó, G. R. Robinson, B. Sam-
+bale, and P. H. Tiep for many helpful comments. The author thanks the referees for
+a careful reading which has helped to improve the exposition of the paper.
+174                                                              G. Navarro
+
+
+this is a feature of finite group theory: certain theorems are true, almost
+surely, because simple groups satisfy certain properties.
+    Where do solvable groups fit into this picture? Certainly, the history
+of solvable groups, from E. Galois to P. Hall, from Burnside’s pa q b theo-
+rem to the Feit–Thompson odd order theorem, is no less extraordinary.
+These days the representation theory of finite groups is overwhelmed
+with a myriad of extraordinarily deep problems (from Brauer’s to the
+Alperin–Broué–Dade–McKay–Robinson conjectures, and many more),
+and it is true (particularly in the above mentioned cases) that they have
+already been solved for solvable groups. (As a matter of fact, some of
+them have already been solved for simple groups too.) A consequence
+of this is that one often has the impression that there is little left to do
+for solvable groups, or that solvable groups are easy. But this is not the
+whole story.
+    Aside from the beauty of some of the character theory of solvable
+groups (for instance, the so called Isaacs π-theory, Dolfi’s theorem on
+graphs, Berger’s characterization of primitive characters, Dade–Isaacs
+theorems on monomial groups, etc.), for me solvable groups is also the
+territory to test and develop theories and conjectures for all finite groups.
+Even to outline possible proofs for some of the most important conjec-
+tures. For instance, our approach to the McKay conjecture in [29] is
+based on the proof of the p-solvable case and the Glauberman corre-
+spondence.
+    Unfortunately, it is sometimes forgotten how difficult solvable groups
+can be. Many times, I measure the depth of a conjecture by check-
+ing how hard it is to prove it for solvable groups. Richard Brauer’s
+k(B)-conjecture—completed by D. Gluck, K. Magaard, U. Riese, and
+P. Schmid for p-solvable groups, after work of R. Gow, R. Knörr,
+G. R. Robinson, J. G. Thompson, and others—or one direction of
+Brauer’s height zero conjecture—solved by D. Gluck and T. R. Wolf for
+p-solvable groups—are examples of incredibly hard mathematics. (As
+a matter of fact, these two conjectures remain open for general finite
+groups: if a problem is difficult for solvable groups, hold no doubt that
+it is going to be very difficult to prove it for general finite groups or to
+reduce it to a question on simple groups.)
+    My purpose here is modest. For some years, I have been collecting
+what I think are interesting problems on characters of solvable (mostly
+p-solvable) groups. Some of them are false outside the realm of these
+groups. Some others are convenient reformulations of less established
+conjectures that are still open for solvable groups. If we can solve them
+for these groups, there is a good chance that they will be true in general.
+Problems on Characters: Solvable Groups                                 175
+
+
+(I always remember J. L. Alperin saying: “a conjecture is safe if it is
+true for solvable groups, symmetric groups, the general linear groups,
+and the sporadic groups.”) Hence, a conjecture on finite groups that has
+not been proven for solvable groups is either in danger or, perhaps, it is
+a promise for exciting mathematics ahead.
+   I avoid here the well-known open topics on character degrees of solv-
+able groups, such as the Isaacs–Seitz conjecture on the derived length
+and the number of character degrees; Huppert’s ρ-σ conjecture; Gluck’s
+largest character degree conjecture; and some others already mentioned
+in [48]. Let me add now that in the ten years since its publication, there
+has been spectacular progress on the problems in [48]; in fact, many have
+been solved: McKay’s conjecture for p = 2 in [41] (Problem 2.1 in [48]);
+one implication of Brauer’s height zero conjecture in [35] (Problem 4.1);
+Conjecture 4.2 on the generalized Gluck–Wolf theorem in [51]; Conjec-
+ture 7.1 on the divisibility of the Glauberman correspondents in [15];
+Problem 8.4 on character degrees in [49]; and a counterexample to Con-
+jecture 14.3 on rational groups and Sylow 2-subgroups appears in [30].
+In contrast, on solvable groups, there has been little or no progress.
+   Some of the problems below appear here for the first time. Of course,
+these new problems (let me avoid the overused term “conjecture”) are
+here because I haven’t been able to solve them. (This indicates either
+that they are not completely trivial or perhaps that they are completely
+false. In either case, an answer would be more than welcome.) I, together
+with some colleagues, have put forward some conjectures—sometimes
+questions—without having a proof even for solvable groups. As I said
+above, this is a risky business. (An anecdote: the main conjecture of
+the recent [14], proved for many classes of simple groups, is false:
+SmallGroup(192,955) is a counterexample for p = 2. This is a small
+counterexample, but as is well known, solvable counterexamples might
+be quite big and remain out of reach of the power of computers, like
+Hertweck’s counterexample on the isomorphism problem [22].) Perhaps
+only a Richard Brauer can propose the k(B)-conjecture or the height
+zero conjecture, without having a proof for solvable groups, and still be
+(most probably) right.
+   In summary, let me write down a list of these problems not only as a
+tribute to solvable groups, the area where I grew up, but with the hope
+that they can interest someone, or reactivate interest in them, perhaps
+enough to try to solve them or to provide counterexamples. Surely there
+are other interesting open problems on characters of solvable groups that
+do not appear here, either because I am overlooking them, or because
+they lie a bit outside of my main interests right now. I apologize for that.
+176                                                             G. Navarro
+
+
+              2. Problems on blocks: inequalities
+    We fix a prime p. In most of the problems in this paper we con-
+sider finite p-solvable groups, which are the natural extension of solvable
+groups from the perspective of the prime p. Recall that a finite group
+is p-solvable if the order of each of its composition factors is either p or
+not divisible by p. (Hence a finite group is solvable if and only if it is
+p-solvable for all primes p.) In any case, as a first approach, the reader
+might ignore p-solvability and focus on solvable groups throughout the
+paper. My notation for finite groups is [26], for ordinary characters [25],
+and for blocks and Brauer (modular) characters [46]. Thus Irr(G) is the
+set of complex irreducible characters of G, and IBr(G) is a set of irre-
+ducible Brauer characters of G. If G is p-solvable, then IBr(G) is uniquely
+defined (see Corollary 10.4 of [46]).
+    Brauer’s p-blocks are the subject of some famous conjectures, some
+arising as early as the 1950’s. By results of P. Fong and I. M. Isaacs, most
+of the block theory for p-solvable groups can be entirely rephrased within
+ordinary character theory. Recall that if F is an algebraic closure of the
+field of p elements, then the blocks of a finite group G are the two-sided
+indecomposable ideals into which the group algebra F G decomposes.
+Each irreducible complex or modular character of G belongs exactly to a
+p-block B, and B uniquely determines a conjugacy class of p-subgroups,
+the defect groups, which in some sense measure the complexity of B. If
+χ ∈ Irr(G) belongs to B, and B has defect group D of order pd , then it
+is a fact that
+                                        |G|p
+                              χ(1)p = d ph ,
+                                         p
+where h ≥ 0 is the height of χ. (In this paper, np is the largest power
+of p dividing the integer n, and np0 = n/np .) If B is a p-block, then
+k(B) is the number of irreducible ordinary characters in B, and l(B) is
+the number of irreducible Brauer characters in B. We have that l(B) ≤
+k(B) (see, for instance, the paragraphs after Theorem 3.3 in [46]). The
+principal block is the block containing the trivial character.
+   Brauer’s two most famous conjectures in blocks are the k(B)-conjec-
+ture, which asserts that the number of complex irreducible characters
+in B is less than or equal to pd , the order of any defect group D; and
+Brauer’s height zero conjecture, which asserts that D is abelian if and
+only if the heights of the complex irreducible characters in B are all zero.
+   The first block problems in this section are, after standard Clifford
+theoretical reductions, translations to p-solvable groups of some ques-
+tions raised by G. Malle and me in [37] (which generalize Brauer’s k(B)-
+conjecture). Affirmative answers to these have been given for classical
+Problems on Characters: Solvable Groups                                177
+
+
+families of simple groups, most recently in [36], or for certain types of
+defect groups in [57]. There is even a generalization of these problems to
+fusion systems ([34, Conjecture 2.10]). Therefore it is natural to think
+that p-solvable groups is the next territory to check the inequalities pro-
+posed. As we wrote in [37], “for p-solvable groups, however, it seems
+possible that these inequalities might be too optimistic.” In any case, it
+is frustrating that no progress (on p-solvable groups) has been made on
+this since 2006.
+    Blocks B of arbitrary finite groups with exactly one irreducible Brauer
+character (we usually write l(B) = 1) are extraordinarily important:
+these are the blocks such that B/J(B) is a matrix algebra, where J(B)
+is the Jacobson radical of the algebra B. R. Kessar and M. Linckelmann
+have conjectured that if l(B) = 1, then B is Morita equivalent to a block
+of a p-solvable group. If this is true, but even if not, Problem 2.1 below
+(which deals with this type of blocks) has interest.
+    First, some notation. If G is a finite group, N / G, and θ ∈ Irr(N ),
+then Irr(G|θ) is the set of irreducible constituents of the induced char-
+acter θG . By Frobenius reciprocity, these are also the irreducible char-
+acters χ of G that have θ as an irreducible constituent of the restriction
+character χN . In general, if N / G has order not divisible by p, B is
+a p-block of G, and Irr(B) is the set of complex irreducible characters
+in B, then it is easy to check that there exists some θ ∈ Irr(N ) such that
+Irr(B) ⊆ Irr(G|θ) (using the theory of covering blocks; see Theorem 9.2
+of [46]). Furthermore, if N = Op0 (G) is the largest normal subgroup
+of G of order not divisible by p, θ is G-invariant and G is p-solvable,
+then
+                             Irr(B) = Irr(G|θ),
+by a theorem of Fong (Theorem 10.20 of [46]). Using the theory of central
+extensions, it is no loss to assume in many problems that N is even
+contained in the center of G.
+   If G is a finite group, we write k(G) for the number of conjugacy
+classes of G, and l(G) for the number of conjugacy classes of G consisting
+of elements of order not divisible by p. (These are the p-regular elements
+of G.) A p-solvable group has a unique conjugacy class of p-complements,
+also called Hall p0 -subgroups (after P. Hall), which are the subgroups H
+of G such that |G : H| is a power of p and p does not divide |H|.
+Problem 2.1. Let G be a finite p-solvable group, P ∈ Sylp (G), and let
+H be a Hall p-complement of G. Suppose that Z = Op0 (G) is central
+in G, and let λ ∈ Irr(Z). Assume that λH = eα, for some α ∈ Irr(H)
+and e ≥ 1. Is it true that |Irr(G|λ)| ≤ k(P )?
+178                                                               G. Navarro
+
+
+   Problem 2.1 is a particular case of a projective version of a conjecture
+of Pyber–Sangróniz which I mentioned in [48]: if N is a central normal
+subgroup of G, θ ∈ Irr(N ), and G = AB for some subgroups A, B
+containing N with (|A/N |, |B/N |) = 1, then
+                     |Irr(G|θ)| ≤ |Irr(A|θ)||Irr(B|θ)|.
+Notice that Problem 2.1 is really about solvable groups since, by the
+Howlett–Isaacs theorem (Theorem 8.13 of [50]), we have that H/Z is
+solvable, and thus G is solvable.
+    If N is a normal p0 -subgroup of G (that is, of order not divisible by p),
+and λ ∈ Irr(N ), then λ ∈ IBr(N ), and we write IBr(G|λ) for the set of
+irreducible Brauer characters of G which are constituents of the induced
+Brauer character λG . If G is p-solvable and H is a p-complement of G,
+it is not difficult to show that |IBr(G|λ)| = 1 if and only if λH = eα, for
+some α ∈ Irr(H). We see then that Problem 2.1 is also a particular case
+of a more general question in [37], which for p-solvable groups reduces
+to the following:
+Problem 2.2. Let G be a finite p-solvable group, and P ∈ Sylp (G). Sup-
+pose that Z = Op0 (G) is central in G, and let λ ∈ Irr(Z). Let IBr(G|λ)
+be the set of irreducible Brauer characters of G over λ. Is it true that
+                       |Irr(G|λ)| ≤ |IBr(G|λ)|k(P )?
+  In the important case where Op0 (G) = 1, Problem 2.2 proposes an
+appealing group theoretical question.
+Problem 2.3. If G is p-solvable and Op0 (G) = 1, is it true that k(G) ≤
+l(G)k(P )?
+    In fact, at the time of this writing, I cannot even find an example of a
+finite p-solvable group G, with Op0 (G) = 1, in which k(G) > l(G)kp (G),
+where kp (G) is the number of conjugacy classes of p-elements of G.
+    After reading a draft of this paper, B. Sambale has suggested that
+the inequality in Problem 2.1 might hold “height to height.” That is, if
+ki (G|λ) denotes the number of irreducible characters of G over λ whose
+degree has p-part pi , is it true in Problem 2.1 that we have that ki (G|λ) ≤
+ki (P )? Notice that this “height to height” version certainly does not hold
+in Problems 2.2 or 2.3 (as shown by GL2 (3) and p = 2).
+    Yet another block inequality was studied in [37]. For p-solvable groups
+in the principal block case (using that the McKay conjecture is true for
+p-solvable groups) it reduces to the following group theoretical problem.
+Problems on Characters: Solvable Groups                                  179
+
+
+Problem 2.4. Let G be a finite p-solvable group, P ∈ Sylp G, and as-
+sume that Op0 (G) = 1. Is it true that
+                       k(G) ≤ k(NG (P )/P 0 )k(P 0 )?
+   Using the k(GV )-theorem (that is, the solution to Brauer’s k(B)-
+conjecture for p-solvable groups) and that Op0 (NG (P )) is contained
+in Op0 (G) = 1 (by standard but non-trivial finite group theory), notice
+that we have that
+                        k(NG (P )/P 0 ) ≤ |P/P 0 |,
+if Op0 (G) = 1. Since k(P 0 ) ≤ |P 0 |, the right hand side quantity in Prob-
+lem 2.4 is usually much smaller than |P | (the quantity with which Brauer
+bounds k(G) in the principal block case of the k(B)-conjecture).
+   We end√this section with a lower bound for k(B) proposed in [23]:
+k(B) ≥ 2 p − 1, whenever k(B) > 1. Using the usual standard reduc-
+tions, and assuming the Alperin–McKay conjecture, this is equivalent to
+the following innocent-looking problem.
+Problem 2.5. Let V be a finite-dimensional Fp H-module, where H is a
+p0 -group and Fp is the field of p elements. Let G = V H be the semidirect
+product, and set Z = Op0 (G).√Let λ ∈ Irr(Z) and assume that Z ⊆ Z(G).
+Is it true that |Irr(G|λ)| ≥ 2 p − 1?
+   A. Maróti proved
+               √     in [43] that if G is a finite group and p divides |G|,
+then k(G) ≥ 2 p − 1. This takes care of the case Z = 1, in Problem 2.5.
+
+      3. Problems on Brauer characters: inequalities
+   A totally different type of inequality was proposed in [39]. The new
+subject now is the number of modular irreducible constituents that a
+complex character has, after reducing it modulo p. It is completely open
+for p-solvable groups, even in the case where the Sylow p-subgroup is
+normal! If χ ∈ Irr(G), then we denote by IBr(χ0 ) the set of the irre-
+ducible p-Brauer characters that appear in the decomposition of χ0 , the
+restriction of χ to the p-regular elements of G. In general, recall that
+                                    X
+                            χ0 =         dχϕ ϕ,
+                                 ϕ∈IBr(G)
+
+where the non-negative integers dχϕ are the decomposition numbers.
+Therefore |IBr(χ0 )| = |{ϕ ∈ IBr(G) | dχϕ 6= 0}|.
+   We recall now that p-blocks can be characterized by linking via de-
+composition numbers. If we link χ, ψ ∈ Irr(G) if there exists ϕ ∈ IBr(G)
+such that dχϕ 6= 0 6= dψϕ , then the irreducible characters in blocks are
+the connected components of the associated graph, called the Brauer
+180                                                            G. Navarro
+
+
+graph (Theorem 3.9 of [46]). Likewise, if we link ϕ, µ ∈ IBr(G) if there
+exists χ ∈ Irr(G) such that dχϕ 6= 0 6= dχµ , then, again, the irreducible
+Brauer characters in blocks are the connected components of this graph
+(Problem 3.4 of [46]). We shall use these facts in what follows.
+Problem 3.1. Let G be a finite p-solvable group and let χ ∈ Irr(G). Is
+it true that
+                     |IBr(χ0 )| ≤ |G|p /χ(1)p ?
+    There is some evidence for an affirmative answer to this question.
+First, we claim that it follows from Brauer’s k(B)-conjecture if χ has
+height zero (for any finite group). Indeed, if χ ∈ Irr(B) and dχϕ 6= 0,
+then ϕ ∈ IBr(B). Now, we know that l(B) ≤ k(B), in general. If we
+assume Brauer’s conjecture, then k(B) ≤ pd = |G|p /χ(1)p , whenever
+χ has height zero, hence proving the claim. If |G|p /χ(1)p = 1, then we
+know that χ0 ∈ IBr(G), by the celebrated Brauer–Nesbitt theorem. Thus
+|IBr(χ0 )| = 1. We also know that Problem 3.1 has an affirmative solution
+if |G|p /χ(1)p = p (using Brauer’s defect one theory); or if |G|p /χ(1)p ≤
+p2 and G is p-solvable ([39]). Also, we know that it holds for symmetric
+groups and groups of Lie type in the defining characteristic (as shown
+in [39]).
+    It is somewhat curious that the dual question of Problem 3.1 is true
+(and easy). If Ψ is a character of G, then we write Irr(Ψ) for the set of
+the irreducible constituents of Ψ. If ϕ ∈ IBr(G), then Φϕ is the projective
+indecomposable character associated with ϕ; that is,
+                                    X
+                           Φϕ =           dχϕ χ.
+                                 χ∈Irr(G)
+
+Lemma 3.2. Suppose that G is p-solvable and let ϕ ∈ IBr(G). Then
+                         |Irr(Φϕ )| ≤ |G|p /ϕ(1)p .
+We also have that equality holds if and only if the block of ϕ is nilpotent
+with an abelian defect group.
+Proof: By Fong’s dimensional formula (Corollary 10.14 of [46]), we have
+that Φϕ (1) = |G|p ϕ(1)p0 . If χ ∈ Irr(G) and dχϕ 6= 0, notice that χ(1) ≥
+ϕ(1). Therefore
+                           Φϕ (1) ≥ |Irr(Φϕ )|ϕ(1),
+and the first part follows.
+   Notice that the equality above holds if and only if whenever dχϕ 6= 0,
+then χ0 = ϕ. Let B be the block of ϕ, and let D be a defect group of B.
+We prove now that this condition is equivalent to B being nilpotent and
+D abelian.
+Problems on Characters: Solvable Groups                                  181
+
+
+   If B is nilpotent and D is abelian, then this follows from the main
+result of [2]. For the converse, first we claim that l(B) = 1. Indeed,
+suppose that µ ∈ IBr(B) is linked to ϕ in the sense of Problem 3.4
+of [46]. Then there exists ψ ∈ Irr(G) such that dψϕ 6= 0 6= dψµ . Then
+ψ 0 = ϕ. Since µ is also an irreducible constituent of ψ 0 , it follows that
+ϕ = µ. The claim follows.
+   Once we have that l(B) = 1, then it follows by our hypothesis that
+all Irr(B) have the same degree, and then we apply Proposition 1 and
+Theorem 3 of [54] to deduce that D is abelian and B has inertial index 1.
+Now, blocks with abelian defect group and with inertial index 1 are
+nilpotent by Example (1.ex.3) of [2].
+   In general, |Irr(Φϕ )| can be bigger than |G|p /ϕ(1)p , as shown by G =
+2.A6 , and p = 2. If Q is a vertex of ϕ ∈ IBr(G) and G is p-solvable, then
+it is known that |Q| = |G|p /ϕ(1)p . Outside p-solvable groups, we only
+have that |G|p /ϕ(1)p ≤ |Q|. Perhaps, |Irr(Φϕ )| ≤ |Q|, in general.
+   In 1984, M. Murai ([45]) proposed an interesting inequality conjecture
+involving a somewhat mysterious quantity. Again, this remains open for
+p-solvable groups. Recall that if G0 is the set of p-regular elements of G,
+and if |G|p0 is the largest positive integer not divisible by p dividing |G|,
+then |G0 |/|G|p0 is an integer. (See Problem 2.3 of [46].) This is a partic-
+ular case of a well-known theorem of Frobenius. Furthermore, Frobenius
+conjectured that if |G0 |/|G|p0 = 1, then G has a normal p-complement.
+(This is now known to be a consequence of the CFSG.)
+Conjecture 3.3 (Murai). Let G be a finite group, and let B be the
+principal block of G. Then l(B) ≤ |G0 |/|G|p0 .
+    As we said, if |G0 | = |G|p0 , then G has a normal p-complement, and it
+is trivial to see that in this case l(B) = 1. Murai proved that in order to
+prove his conjecture in the p-solvable case, one can assume that G = V H,
+where V is a normal elementary abelian p-group and H has order not
+divisible by p. (Be aware that Murai also proved that Conjecture 3.3
+implies the k(GV )-conjecture.)
+    B. Sambale and I have wondered if the following natural generalization
+of Murai’s conjecture holds true. If G is a finite group and ψ, χ are class
+functions defined over G0 , we denote
+                                     1 X
+                        [ψ, χ]0 =           ψ(x)χ(x−1 ).
+                                    |G|   0
+                                    x∈G
+
+Problem 3.4. Let B be a p-block with defect group of order pd . If χ ∈
+Irr(B), is it true that
+                        l(B) ≤ pd [χ, χ]0 ?
+182                                                                             G. Navarro
+
+
+   A positive solution to Conjecture 3.3 and Problem 3.4, if there is one,
+should be quite hard to obtain, because of the following observation (by
+B. Sambale):
+Theorem 3.5. Let B be a block with defect group of order pd . If Prob-
+lem 3.4 has a positive solution for B, then k(B) ≤ pd .
+Proof: We have that
+                             X
+         k(B)l(B) ≤ pd                [χ, χ]0
+                           χ∈Irr(B)
+
+                                      "                                     #0
+                             X             X                   X
+                       d
+                   =p                               dχϕ ϕ,              dχµ µ
+                           χ∈Irr(B) ϕ∈IBr(G)                 µ∈IBr(G)
+                                                                !
+                              X                 X
+                       d
+                   =p                                 dχϕ dχµ [ϕ, µ]0
+                           ϕ,µ∈IBr(B)      χ∈Irr(B)
+                              X
+                   = pd                   cϕµ [ϕ, µ]0
+                           ϕ,µ∈IBr(B)
+
+                   = pd Trace(Il(B) ) = pd l(B),
+as desired. (In the next to last equality, we have used Theorem 2.13
+of [46], which asserts that the inverse of the Cartan matrix is pre-
+cisely ([ϕ, µ]0 ).)
+  We end this section with an inequality proposed in [7] by J. P. Cossey.
+Problem 3.6. Suppose that G is p-solvable and ϕ ∈ IBr(G) has ver-
+tex Q. Is it true that the number of irreducible lifts of ϕ is less than or
+equal to |Q/Q0 |?
+   Notice that Problem 3.6 can be stated without the p-solvability hy-
+pothesis, and, in principle, it might even hold in full generality.
+   In general, I have mixed feelings about inequalities: there is always
+the possibility that we are trying to relate quantities that are not meant
+to be related.
+
+ 4. Problems on blocks of p-solvable groups: equalities
+   Broué–Puig nilpotent blocks are ubiquitous in the block theory of fi-
+nite groups. (We already saw them in Lemma 3.2.) Their definition [2],
+however, requires knowing a good deal of the local structure of the group.
+Problems on Characters: Solvable Groups                                  183
+
+
+In [38], we proposed two easy-to-state global characterizations of nilpo-
+tent blocks. After the usual arguments, they reduce to the following
+problems (for p-solvable groups).
+Problem 4.1. Let G be a finite p-solvable group, P ∈ Sylp (G), and
+assume that Z = Op0 (G) is central in G. Let λ ∈ Irr(Z). Suppose that
+all the irreducible characters of G of degree not divisible by p that lie
+over λ have the same degree. Is G = Z × P ?
+Problem 4.2. Let G be a finite p-solvable group, P ∈ Sylp (G), and
+assume that Z = Op0 (G) is central in G. Let λ ∈ Irr(Z). Suppose that
+each irreducible character of G of degree not divisible by p that lies over λ
+lifts an irreducible Brauer character of G. Is G = Z × P ?
+   If P is abelian, then these questions have affirmative solutions by
+using the main result of [54]. As we explained in [38], a natural orbit
+problem would solve Problems 4.1 and 4.2 for p-solvable groups.
+Problem 4.3. Let G > 1 be a finite group with a normal p-complement K
+and let P ∈ Sylp (G). Suppose that V is a finite faithful completely re-
+ducible G-module over a field of characteristic p. Does there exist v ∈
+CV (P ) such that |K : CK (v)|2 > |K|?
+   D. Gluck has proved this is the case in [19] for groups of odd order.
+The case where K is nilpotent was solved in [9]. The case where K = G
+is a celebrated theorem of S. Dolfi [8] and Halasi–Podoski [20].
+   To end this short section, let us remind the reader of the Eaton–
+Moretó conjecture [11], which proposes an exciting block equality. After
+standard reductions, the following is the p-solvable principal block case.
+Conjecture 4.4 (Eaton–Moretó). Let G be a finite p-solvable group
+with Op0 (G) = 1. Suppose that P ∈ Sylp (G) is not abelian. If pa is the
+smallest non-linear character degree of P , then the smallest p-part of
+the degrees of the irreducible characters of G of degree divisible by p is
+exactly pa .
+   The Eaton–Moretó conjecture was checked for many families of quasi-
+simple groups in [3], and for symmetric groups, general linear groups in
+characteristic p and sporadic groups in [11]. Hence, if we share Alperin’s
+opinion, we have to check p-solvable groups for this conjecture to be safe.
+
+              5. Problems on zeros of characters
+   Zeros of characters is a classical topic in character theory. It probably
+starts with Burnside’s theorem stating that if G is a finite group, and
+χ ∈ Irr(G) is non-linear, then there exists g ∈ G such that χ(g) = 0. A
+184                                                             G. Navarro
+
+
+famous theorem of Brauer and Nesbitt asserts that if χ(1)p = |G|p , then
+χ(g) = 0 whenever p divides the order of g.
+   If x ∈ G, we say that x is non-vanishing (in G) if χ(x) 6= 0 for
+all χ ∈ Irr(G). If x ∈ Z(G) is a central element of G, then x is non-
+vanishing in G, because if X is any representation affording χ, then
+X (x) is a scalar (non-zero) matrix. The converse is certainly not true.
+Generically, however, one expects x to lie in a nilpotent normal subgroup
+of G ([10]). For solvable groups, this was conjectured in [32], and there
+is a great deal of literature following it. In this section, again we fix a
+prime p and consider the elements of finite p-solvable groups G on which
+the irreducible characters of G of degree not divisible by p, which we
+denote by Irrp0 (G), do not vanish. It would be interesting to know which
+elements these are. For instance:
+Problem 5.1. Let G be a finite p-solvable group with Op0 (G) = 1, where
+p is a prime, and let x ∈ G. Is it true that χ(x) 6= 0 for all χ ∈ Irrp0 (G)
+if and only if x is a p-element?
+   If χ ∈ Irrp0 (G) and x ∈ G is a p-element, it is known that χ(x) 6= 0,
+using some elementary facts on p-power roots of unity (see for instance
+Corollary 4.20 of [50]). Hence, Problem 5.1 discusses conditions for the
+converse to hold. To have an affirmative answer to Problem 5.1 some
+p-solvability hypotheses are needed, as shown, for instance, by the ele-
+ments of order 3 in S5 , with p = 2. Problem 5.1, if we do not require
+that Op0 (G) = 1, cannot have an affirmative answer. Indeed, notice
+that the intersection of the kernels of the p0 -degree characters of G is
+not necessarily a p-group (but a group with a normal p-complement);
+hence some hypothesis regarding normal p0 -subgroups is necessary. Let
+us record (without proof) the following essentially well-known result.
+Theorem 5.2. Let G be a finite group, p a prime, and P ∈ Sylp (G).
+Let                           \
+                     K=             ker(χ).
+                                χ∈Irrp0 (G)
+                       0
+Then K = coreG (N P ), where N is the largest normal subgroup of G
+such that CN (P ) = 1.
+   Notice that an affirmative answer to Problem 5.1 would easily solve
+the main problem in [32]. We denote by F(G) the Fitting subgroup of G.
+Also, recall that if x ∈ G, then x can be uniquely written as x = xp xp0 ,
+where xp , xp0 are powers of x, having orders a power of p and not divisible
+by p, respectively.
+Theorem 5.3. Let G be a finite solvable group and let x ∈ G be non-
+vanishing in G. If Problem 5.1 has an affirmative answer, then x ∈ F(G).
+Problems on Characters: Solvable Groups                                185
+
+
+Proof: If p is any prime, then xp0 ∈ Op0 (G), by Problem 5.1 applied
+in G/Op0 (G). Thus, if q 6= p is a prime, then xq ∈ Op0 (G). Hence,
+holding q fixed and varying p, we have that
+                             \
+                       xq ∈     Op0 G = Oq (G),
+                              p6=q
+as desired.
+   We should mention that the conclusion of Theorem 5.3 is still not
+known if o(x) is even, even in the case where F(G) is a Sylow subgroup
+of G. (This could be territory for a negative answer in Problem 5.1.
+Perhaps the possible groups involved are too big to be detected by com-
+puters.)
+   Next we provide some evidence for a possible affirmative answer to
+Problem 5.1, using a non-standard variation of a well-known regular
+orbit theorem, that might have some interest on its own. The proof that
+we present here is a simplification by I. M. Isaacs of our original one.
+Theorem 5.4. Suppose that G is a finite group that has an abelian nor-
+mal p-complement A, and let P ∈ Sylp (G). Let V be a finite-dimensional
+G-module in characteristic p. Then there exists v ∈ CV (P ) such that
+CA (v) = CA (V ).
+Proof: We can assume that V 6= 0, and we proceed by induction on
+the dimension of V . First, CA (V ) is normal in G, so we can replace
+G by G/CA (V ), and assume that A acts faithfully on V . Suppose that
+V = X ⊕ Y , where X and Y are non-trivial G-submodules. By the
+inductive hypothesis, there exists x ∈ CX (P ) and y ∈ CY (P ) such that
+CA (x) = CA (X) and CA (y) = CA (Y ). Writing v = x + y, we have that
+v ∈ CV (P ), and CA (v) = CA (x)∩CA (y) = CA (X)∩CA (Y ) = CA (V ) =
+1. We can thus assume that V is indecomposable as a G-module.
+   Now suppose that 1 < B ≤ A, with B / G. By Fitting’s lemma,
+                          V = CV (B) ⊕ [V, B]
+and both summands are G-invariant. It follows from the previous para-
+graph that one of these summands must be trivial. But A acts faithfully
+on V and B is non-trivial, so [V, B] > 0, and we deduce that CV = 0.
+   Now let U be a simple G-submodule of V . If we let B = CA (U ),
+then B is normal in G, and since 0 < U ⊆ CV (B), it follows from the
+previous paragraph that B = 1 and thus A acts faithfully on U . We can
+thus replace V by U , so we can assume that V is a simple G-module.
+   If V is homogeneous as an A-module, it follows from the fact that A is
+abelian and acts faithfully on V that the action of A on V is Frobenius. In
+this case, we can choose v to be an arbitrary non-zero element of CV (P ),
+and we have CA (v) = 1, as wanted.
+186                                                              G. Navarro
+
+
+   Finally, we can assume that V is not homogeneous as an A-module,
+and thus there exists H / G of index p and H-submodules Ui ⊆ V
+for 0 ≤ i < p such that
+                        V = U0 ⊕ U1 ⊕ · · · ⊕ Up−1
+and the Ui ’s are transitively permuted by G/H.
+   Let Q = H ∩ P , and apply the inductive hypothesis to the action
+of H on U0 to choose u0 ∈ CU0 (Q) such that CA (u0 ) = CA (U0 ). Let
+x ∈ P − Q, and note that xp ∈ Q. We can assume that the subspaces Ui
+are numbered so that (U0P   )xi = Ui for 0 ≤ i < p. Now write ui = u0 xi
+for 0 < i < p, and let v = i ui . Then ui ∈ Ui for 0 ≤ i < p, and since x
+normalizes Q, we see that ui ∈ CV (Q) for all i, and thus Q centralizes v.
+Since xp ∈ Q and Q centralizes u0 , it follows that (up−1 )x = u0 , and
+thus x centralizes v, so v ∈ CV (P ). Also, since CA (u0 ) = CA (U0 ), it
+follows by conjugation by powers of x that CA (ui ) = CA (Ui ) for all i.
+Since the spaces Ui are A-invariant, we have
+                       \             \
+             CA (v) =     CA (ui ) =   CA (Ui ) = CA (V ) = 1,
+                       i              i
+and the proof is complete.
+   Notice that the condition of A being abelian cannot be relaxed to A
+being nilpotent, since there are examples of nilpotent p0 -groups that do
+not have regular orbits on simple modules in characteristic p.
+   We now give an affirmative answer to Problem 5.1 in a special case.
+Theorem 5.5. Let G be a finite solvable group with Op0 (G) = 1, such
+that all the p0 -factors in the ascending p-p0 -series of G are abelian. Sup-
+pose that x ∈ G is such that χ(x) 6= 0 for all χ ∈ Irrp0 (G). Then x is a
+p-element.
+Proof: We can assume that G is not a p-group, and we proceed by in-
+duction on |G|. Write V = Op (G), and let Ḡ = G/Φ(V ), where Φ(V )
+is the Frattini subgroup of V . Then Op0 (Ḡ) = 1 using standard group
+theory, and Ḡ satisfies the hypotheses with respect to the element x̄. If
+|Ḡ| < |G|, then the inductive hypotheses guarantee that x̄ is a p-element,
+and thus x is a p-element, and there is nothing further to prove. We can
+assume, therefore, that Φ(V ) = 1, so V is elementary abelian. Now
+let M/V = Op0 (G/V ), and note that M/V is abelian by hypothesis.
+Also, since V < G, we have M > V , and thus M is not a p-group.
+Let N = Op (M ), and note that N > 1. If K/N = Op0 (G/N ), then
+K ∩ M = N , and we will have that KM/M is a p0 -group. Therefore
+K = N . It is straightforward to check that G/N satisfies the hypothesis
+of the theorem. Therefore, we deduce that N x is a p-element.
+Problems on Characters: Solvable Groups                                   187
+
+
+    Write W = N ∩ V and observe that the p0 -group N/W acts faithfully
+on W . Indeed, if U/W ⊆ N/W acts trivially on W , then [V, U/W, U/W ] =
+1 and by coprime action, [V, U ] = 1. However, CG (V ) = V , since G is
+p-solvable.
+    Let X = N hxi, and note that X/N is a cyclic p-group. Now choose
+P ∈ Sylp (G) so that X ⊆ N P , and note that P ∩ N = W . Let
+I = Irr(W ), and observe that I can be viewed as an N P/W -module on
+which N/W acts faithfully. By Theorem 5.4, there exists a P -invariant
+linear character λ ∈ I such that the stabilizer of λ in N is W , and
+thus θ = λN is irreducible and P -invariant. Also, θ(1) = |N/W | is a
+p0 -number. Now Op (N ) = N , so θ has p0 -determinantal order as well
+as p0 -degree, and thus θ extends to ψ ∈ Irr(N P ) (by Corollary 6.2
+of [50]). Since N P has p0 -index in G, it follows that ψ G has an irreducible
+constituent χ ∈ Irrp0 (G). By hypothesis, χ(x) 6= 0, so there exists some
+irreducible constituent ξ of the restriction χX such that ξ(x) 6= 0. Now
+χ lies over θ ∈ Irr(N ), so ξN is a sum of G-conjugates of θ, and all of
+these have p0 -degree.
+    First, suppose that p divides ξ(1), so ξN is reducible. Since X/N is
+cyclic, ξN cannot be homogeneous, so ξ is induced from some character
+of a subgroup T with N ⊆ T < X. Since X = N hxi, no X-conjugate
+of x lies in T , and thus ξ(x) = 0, which is a contradiction. We can now
+assume that ξ has p0 -degree, and we write Y = X ∩ P . Then |X : Y | =
+|N : W | = θ(1) ≤ ξ(1). Since Y is a p-group and ξ has p0 -degree, we
+deduce that ξY has some linear constituent β. Then ξ is a constituent
+of β X , which has degree |X : Y | ≤ ξ(1), and it follows that ξ = β X .
+Since ξ(x) 6= 0, we see that some conjugate of x lies in the p-group Y ,
+and in particular, x is a p-element. This completes the proof.
+   The following easy block-theoretical result gives a criterion for certain
+elements to have non-zero values. We let R be the ring of algebraic
+integers in C.
+Theorem 5.6. Let G be a finite group, P ∈ Sylp (G). Let x ∈ G be such
+that xp0 ∈ Op0 (NG (P )). Then χ(x) 6≡ 0 mod pR for every χ ∈ Irrp0 (G)
+in the principal p-block of G.
+Proof: Suppose that χ ∈ Irrp0 (G) in the principal p-block of G is such
+that χ(x) ≡ 0 mod pR. Let M be a maximal ideal of R containing p.
+Write y = xp0 . By Lemma 4.19(b) of [50], we have that χ(y) ≡ χ(x) ≡ 0
+mod M . Let L = y G , the conjugacy class of y. Since [P, y] = 1, we have
+that |L| 6≡ 0 mod p. However,
+                                     !
+                             |L|χ(y)
+            χ(1)|L| ≡ χ(1)             = |L|χ(y) ≡ 0 mod M.
+                               χ(1)
+Therefore p divides χ(1)|L|, and this is not possible.
+188                                                              G. Navarro
+
+
+   The conclusion in Theorem 5.6 is really about characters in the princi-
+pal block. For instance, SmallGroup(160,235) has an irreducible charac-
+ter χ of degree 5 and value 3 in an element x of order 2. Therefore if p = 3,
+then {χ} is a 3-block of maximal defect and of course x ∈ Op0 (NG (P )),
+in this case (because 3 does not divide the order of the group). The con-
+verse of Theorem 5.6 is not true, even assuming that χ(x) 6≡ 0 mod pR
+for all χ in the principal block of G (as shown by S3 , p = 2).
+
+        6. Problems on zeros of characters: natural
+                      correspondences
+   We start this section by speculating that there might exist a “row ver-
+sion” of Problem 5.1 that is related to some recent results. Suppose that
+X(G) is the character table of the finite group G. In Problem 5.1, we
+wish to infer a property of a fixed element of G (a column in X(G)) pro-
+vided that the p0 -degree characters of G do not vanish on this element.
+Once characters of p0 -degree are in the picture, due to the McKay con-
+jecture, p-Sylow normalizers show up naturally. (Recall that the McKay
+conjecture asserts that |Irrp0 (G)| = |Irrp0 (NG (P ))| if P ∈ Sylp (G).) It
+would be interesting to know the answer to the following dual question.
+Problem 6.1. Let G be a p-solvable group. Let χ ∈ Irr(G) be such that
+χ(x) 6= 0 for all x ∈ NG (P ), where P ∈ Sylp (G). Is the degree of χ not
+divisible by p?
+    Some solvability hypotheses are again needed in order to have an
+affirmative answer to Problem 6.1, as shown by PSL2 (11) for p = 2,
+or M22 for p = 3. (Certainly, Problem 6.1 does not have an affirmative
+answer in p-solvable groups if NG (P ) is replaced by P , as shown by
+a 2-Sylow normalizer of Suz(8), unless, perhaps, the hypothesis that
+    0
+Op (G) = G is added.) On the other hand, for many groups, such as the
+alternating or symmetric groups, the answer to Problem 6.1 seems to
+be affirmative, even only assuming non-zero values on p-elements. (The
+case of the symmetric and alternating groups is proved in [17].)
+    An affirmative answer to Problem 6.1 implies that if G is p-solvable,
+P ∈ Sylp (G), and NG (P ) = P , then the number of irreducible characters
+of G which are never zero on P is |P/P 0 |. (This is a particular case of
+a conjecture of this author on Carter subgroups of solvable groups that
+is mentioned in [27]. See Problem 6.7 below.) Let us now prove the
+following.
+Theorem 6.2. Let G be a p-solvable group. Let χ ∈ Irr(G) be such that
+χ(x) 6= 0 for all x ∈ NG (P ), where P ∈ Sylp (G). If P is maximal in G
+or P is abelian, then χ has degree not divisible by p.
+Problems on Characters: Solvable Groups                                 189
+
+
+Proof: The Hall–Higman lemma 1.2.3 asserts that CG (Op0 p (G)/Op0 (G))
+is contained in Op0 p (G)/Op0 (G). Hence, if P is abelian, then we have that
+G/Op0 (G) has a normal Sylow p-subgroup, and then Op0 pp0 (G) = G. Let
+us prove that χ has p0 -degree under the more general assumption that
+G has an abelian normal p-subgroup K such that Op0 pp0 (G/K) = G/K.
+Indeed, suppose that K ⊆ L ⊆ M are normal subgroups of G such
+that L/K is p0 , M/L is a p-group, and G/M is p0 . Now, G/L has a
+normal Sylow p-subgroup, and by elementary group theory, we have
+that G = LNG (P ). By Corollary C of [47], we have that χL = θ is
+irreducible. Since L has an abelian normal Sylow p-subgroup K, we have
+that θ(1) = χ(1) divides |L : K|, and therefore χ(1) is not divisible by p.
+    Suppose now that P is maximal in G. In order to prove this case, we
+heavily use the results of [27] and the McKay conjecture for p-solvable
+groups. If P is normal in G, then necessarily χ is linear by hypothesis and
+Burnside’s theorem on zeros of characters. Hence, we may assume that
+P = NG (P ) is a Carter subgroup of G. Therefore |Irrp0 (G)| = |P/P 0 | by
+Theorem 9.4 of [50], for instance. Notice that if χ ∈ Irrp0 (G), then χP
+is never zero, for instance by Corollary 4.20 of [50]. Now P is a Carter
+subgroup of G, and by Theorem A of [27], |P/P 0 | is also the number of
+the head characters of G. By hypothesis and Theorem 6.1 of [27], we
+have that the number of head characters of G is the number of irreducible
+characters which do not vanish on P . The claim follows easily now.
+    If G is p-solvable and P = NG (P ), we remind the reader that there
+is a natural bijection ∗ : Irrp0 (G) → Irrp0 (P ) (see Theorem 9.4 of [50]).
+This leads us to the main topic of this section: zeros of characters and
+natural correspondences.
+    It is my belief, as a somewhat vague general principle, that if H is a
+distinguished (up to G-conjugacy) subgroup of a finite group G, A and
+B are canonical subsets of Irr(G) and Irr(H), respectively, and ∗ : A → B
+is a natural bijection, then the image χ∗ of χ ∈ A is linear if and only if
+χH is never zero. (I shall not even attempt to make a general definition
+of when a bijection is natural, when a subgroup H is distinguished or
+when a subset is canonical—although in all the cases, I certainly mean
+choice-free.) All this is better explained with an example.
+Problem 6.3. Suppose that A acts coprimely on G, let IrrA (G) be the
+set of A-invariant irreducible characters of G, let C = CG (A), and let
+∗
+  : IrrA (G) → Irr(C) be the Glauberman–Isaacs correspondence. Let χ ∈
+IrrA (G). Is it true that χ∗ (1) = 1 if and only if χC is never zero?
+  I recognize that the evidence supporting an affirmative answer in
+Problem 6.3 is quite scarce. I do not even know how to prove the case
+where G is nilpotent, and this should be territory for counterexamples.
+190                                                           G. Navarro
+
+
+On the other hand, an argument involving roots of unity (which we shall
+use in Theorem 6.6 below) shows that if A is a p-group and χ∗ (1) = 1,
+then χC is never zero.
+   Besides the case where P = NG (P ) and G is p-solvable, there are
+some other (few but) important cases where we have McKay natural
+correspondences of characters
+                      ∗
+                          : Irrp0 (G) → Irrp0 (NG (P )).
+For instance, if p = 2 and G is solvable ([24]); if p = 2 and G = Sn ,
+G = GLn (q), or G = GUn (q), where q is odd ([16]); if p is any prime and
+G has a normal p-complement (Theorem 9.2 of [50]); or if p is any odd
+prime and P = NG (P ) ([53]). In these cases, we also believe that there
+might be a connection between non-vanishing and linear characters.
+   The following has been proved by E. Giannelli (for symmetric groups)
+and P. H. Tiep in private communication.
+Theorem 6.4. Suppose that p = 2 and G = Sn , G = GLn (q), or
+G = GUn (q), where q is odd. Let P ∈ Syl2 (G), N = NG (P ), and let
+                           ∗
+                               : Irrp0 (G) → Irrp0 (N )
+be the McKay natural correspondence. Let χ ∈ Irr(G). Then χN is never
+zero if and only if χ has p0 -degree and χ∗ (1) = 1. In particular, in all
+these cases, the number of irreducible characters of G which are never
+zero on N is |N/N 0 |.
+   In the remaining cases where we have a McKay natural correspon-
+dence, it seems natural to guess that the same is going to happen, but
+I am unable to prove it. The main obstruction is that we do not know
+much about the relationship between Clifford correspondents and zeros
+of characters.
+Problem 6.5. Let G be a finite group, let p be a prime, let P ∈ Sylp (G),
+and N = NG (P ). Assume one of the following hypotheses:
+  (a) p = 2 and G is solvable;
+  (b) G has a normal p-complement;
+  (c) p is odd and N = P .
+Let χ ∈ Irr(G). Is it true that χN is never zero if and only if χ has
+p0 -degree and χ∗ (1) = 1?
+   Notice that, in particular, this would imply that in all the cases enu-
+merated above, the number of irreducible characters of G which are never
+zero on N is |N/N 0 |.
+   There is a connection between Problem 6.5(b) and Problem 6.3. This
+follows by using properties of the Glauberman correspondence.
+Problems on Characters: Solvable Groups                                191
+
+
+Theorem 6.6. If Problem 6.3 has an affirmative answer whenever A is
+a p-group, then Problem 6.5(b) has an affirmative answer.
+Proof: Suppose that G has a normal p-complement K, and a Sylow
+p-subgroup P . Then N = NG (P ) = C × P , where C = CK (P ). Let
+χ ∈ Irr(G).
+    Suppose that χN is never zero. Then χP is never zero, and therefore
+χK = θ ∈ Irr(K), for instance by Corollary C of [47]. Therefore χ has
+p0 -degree. If θ̂ ∈ Irr(G) is the canonical extension of θ, then χ = λθ̂
+for some linear λ ∈ Irr(G/K), and χ∗ = λP × θ∗ , where θ∗ ∈ Irr(C) is
+the P -Glauberman correspondent of θ. Therefore, we only need to prove
+that θ∗ (1) = 1. Since χC is never zero by hypothesis, this follows from
+Problem 6.3.
+    Conversely, assume that χ∗ (1) = 1 and χ has p0 -degree. Write χK =
+θ ∈ Irr(K) and χ = λθ̂ for some linear λ ∈ Irr(G/K), where θ̂ ∈ Irr(G)
+is the canonical extension. Again, χ∗ = λP × θ∗ , and we have that
+θ∗ (1) = 1. We need to prove that θ̂(cx) 6= 0 for all x ∈ P and all c ∈ C.
+By the Glauberman correspondence, we can write
+                             θC = eθ∗ + p∆,
+where e ≥ 1 is an integer not divisible by p, and ∆ is a character of C
+or zero. By Theorem 13.6 and Theorem 13.14 of [25], we have that
+                              θ̂(cx) = β(c),
+where β ∈ Irr(CG (x)) is the hxi-Glauberman correspondent of θ. By the
+Glauberman correspondence, we can write
+                           θCG (x) = dβ + pΞ,
+where d ≥ 1 is an integer not divisible by p and Ξ is a character of CG (x)
+or zero. Hence
+                      χC = eθ∗ + p∆ = dβC + pΞC .
+From this equation, we deduce that
+                             βC = f θ∗ + pρ,
+where f ≥ 1 is an integer not divisible by p, and ρ is a character of C or
+zero. Now, if β(c) = 0, then (−f )θ∗ (c) = pρ(c). Now choose a maximal
+ideal M of the ring of algebraic integers R in C containing p. Then
+                         (−f )θ∗ (c) ≡ 0 mod M.
+Therefore either f ≡ 0 mod M or θ∗ (c) ≡ 0 mod M . Since p does not
+divide f , we have that f 6≡ 0 mod M . Since θ∗ (c) is a root of unity,
+θ∗ (c) 6≡ 0 mod M , and this is a contradiction.
+192                                                              G. Navarro
+
+
+   I. M. Isaacs brought to my attention the following example. Suppose
+that G is a finite group, N is a normal subgroup of G, and that θ ∈ Irr(N )
+has a canonical (choice-free) extension ψ to G. Assume now that N has
+a complement H in G. Hence, we have that the map ∗ : Irr(H) → Irr(G)
+given by α 7→ αψ is a canonical injection. Hence, according to our “prin-
+ciple” before Theorem 5.3, we should have that ψH is never zero. This
+does happen if (|N |, |H|) = 1, using the Glauberman correspondence.
+(Thus our principle is right if H happens to be a distinguished subgroup
+of G, in this case, a Hall subgroup of G.) Now, if we take G the wreath
+product of A4 with A5 , and N / G is the base group, then N has a
+G-invariant irreducible character θ of degree 35 , which extends to G, by
+well-known properties of the wreath products. Since G/N is perfect, by
+the Gallagher correspondence we have that θ has a unique (and there-
+fore) canonical extension ψ ∈ Irr(G). Now, G has five conjugacy classes
+of subgroups H isomorphic to A5 , and all of them are complements to N
+in G. It turns out that ψH is never zero exactly in one of these conjugacy
+classes of subgroups: those that are conjugate to the natural complement
+of N in G. Perhaps this is serendipity, or perhaps not.
+   Without natural correspondences, it is definitely not true that the
+number of (p0 -degree) irreducible characters of a finite group G which
+are never zero on N = NG (P ) equals |N/N 0 | (even if G is p-solvable and
+Op0 (G) = 1, as shown by (C3 × C3 ) : GL2 (3) for p = 3). In fact these
+numbers can be bigger (A5 with p = 2) or smaller (A5 with p = 5).
+   In [27], Isaacs recently constructed injections from the linear charac-
+ters of a Carter subgroup of a solvable group G into Irr(G). Although the
+injections are not totally canonical, their image is. As is written in [27],
+I have wondered if this image is the set of the irreducible characters of G
+which are never zero on C.
+Problem 6.7. Let G be a solvable group, and let C be a Carter subgroup
+of G. Is it true that the number of irreducible characters of G which do
+not vanish on C is |C/C 0 |?
+  Of course, if G has a self-normalizing Sylow p-subgroup P , then P is
+a Carter subgroup of G, and this case of Problem 6.7 is included in
+Problem 6.5.
+                 7. Problems on fields of values
+  Recall that if χ is a character of a finite group G, then
+                         Q(χ) = Q(χ(g) | g ∈ G),
+the field of values of χ, is the smallest subfield of C containing the values
+of χ. Also, the conductor c(χ) of χ is the smallest positive integer n such
+that Q(χ) is contained in the n-th cyclotomic field Qn .
+Problems on Characters: Solvable Groups                                193
+
+
+   A recent conjecture, proposed in [52], would explain the abelian ex-
+tensions Q(χ)/Q of the p0 -degree irreducible characters of finite groups.
+Conjecture 7.1. Suppose that G is a finite group, and let p be a prime.
+Let χ ∈ Irrp0 (G), and let P ∈ Sylp (G). Write c(χ) = pa m, where m is
+not divisible by p, and a ≥ 0 is an integer. Is it true that the exten-
+sion Qpa /Q(χP ) has degree not divisible by p?
+    This would imply, for instance, that if χ ∈ Irr(G) has odd degree and
+P ∈ Syl2 (G), then Q(χP ) is always a full cyclotomic field. (For instance,
+if λ is a linear character of order 8, then 1 + λ + λ3 cannot be the re-
+striction of an odd-degree irreducible character to a Sylow 2-subgroup.)
+Also, Conjecture 7.1 implies that χ ∈ Irr(G) of odd degree is 2-rational
+(i.e., c(χ) is odd) if and only if χP is a rational-valued character. There
+are many indications (see [52]) that Conjecture 7.1 has an affirmative
+answer for every finite group. Again, solvable groups seem to be blocking
+a reduction of it to a problem on simple groups. (Added in proof: Con-
+jecture 7.1 is now known to be true for p-solvable groups by unpublished
+work by I. M. Isaacs and myself [31].)
+    Brauer’s Problem 7 in [1] proposes “to study the irreducible characters
+of p-groups.” I would add the following.
+Problem 7.2. If P is a p-group, study the characters χP , where P is a
+Sylow p-subgroup of some finite group G, and χ ∈ Irr(G).
+  A small piece of information was discussed in [18]: if p divides χ(1)
+and χP has a linear constituent, then it appears that at least it should
+have p. (Now, this has been extended in [56].)
+  While checking Conjecture 7.1, we came across the following problem.
+Perhaps there is an easy explanation or a counterexample.
+Problem 7.3. Let G be a finite group, and let χ ∈ Irr(G). If χ(1) is
+odd or χ is 2-rational, is it true that there is g ∈ G such that Q(χ) =
+Q(χ(g))?
+   Suppose that Q(G) is the smallest field containing Q(χ) for all χ ∈
+Irr(G). In 1972, B. Fein and B. Gordon ([13]) proposed to study the
+abelian extensions Q(G)/Q. As far as we know, the following remains
+an open problem.
+Problem 7.4. For which finite abelian extensions F/Q does there exist
+a finite group G such that F = Q(G)?
+  It is true, by
+              √ work in [12], that there is no solvable group√G such that
+Q(G) = Q(i 11), for instance. However, Q(M12 ) = Q( 11i), where
+194                                                              G. Navarro
+
+
+M12 is the Mathieu group. I would not be surprised if “for all” is the
+answer to Problem 7.4,  √ but at this time, I cannot find a finite group G
+such that Q(G) = Q( 11).
+   In Problem 7.4, one can also restrict the families of groups under
+consideration. For √ instance, I cannot find any solvable group G such
+that Q(G) = Q( 5i).
+   Finally, it is a well-known theorem of J. G. Thompson that the values
+of any irreducible character are zeros or roots of unity for more than a
+third of the elements of the group. (See Problem 3.15 of [25].) Recently
+A. R. Miller conjectured in [44] that the following also holds.
+Conjecture 7.5 (Miller). If G is a finite group and χ ∈ Irr(G), then
+the values of χ are zeros or roots of unity for at least half of the elements
+of G.
+  Conjecture 7.5 is open for solvable groups.
+8. Problems on character degrees and conjugacy classes
+   The analogies between characters and conjugacy classes—between
+rows and columns of the character table—is a source of inspiration for
+many results in character theory. In this last section, let me remind the
+reader of a few (perhaps) not so well-known interesting open problems.
+   I have mentioned in the Introduction Dolfi’s spectacular result on
+graphs of solvable groups: if p and q are different primes dividing an
+irreducible character degree χ(1), then there exists a conjugacy class K
+of G whose size is divisible by p and q. Using the CFSG, this result was
+extended to every finite group by Casolo and Dolfi many years later ([4]).
+Inspired by Dolfi’s result, two new ideas were discussed in [28]. It is
+well known that conjugacy class sizes are, in general, much bigger than
+irreducible character degrees, if only by looking at the equations
+                     X                     X
+                            |K| = |G| =         χ(1)2 .
+                    K∈Cl(G)               χ∈Irr(G)
+
+(Here Cl(G) denotes the set of conjugacy classes of G.) But could it
+be that for each irreducible character degree χ(1) there is a conjugacy
+class size |K| such that χ(1) divides |K|? Unfortunately, there are a
+few examples where this does not happen. It seems, however, that in
+these cases χ is always induced from a proper subgroup (that is, χ is not
+primitive). This is the content of Conjecture C in [28], which is open
+even for solvable groups. (Recall that we are using g G to denote the
+conjugacy class of g in G.)
+Conjecture 8.1. Let χ be a primitive irreducible character of a finite
+group G. Then χ(1) divides |g G | for some g ∈ G.
+Problems on Characters: Solvable Groups                                     195
+
+
+   Conjecture 8.1 is true for simple groups and symmetric groups by work
+in [5]. Given the failure to prove this conjecture for solvable groups, some
+attempts have been made to try to prove a weak local version (one prime
+at a time). This was done recently in [42] for groups of odd order, and
+in [33] for solvable groups.
+   The following related problem (also from [28]) remains open. If n is
+an integer, we let π(n) be the set of primes dividing n.
+Problem 8.2. Let χ be an irreducible character of a finite group G. Is
+there a conjugacy class K of G such that π(χ(1)) ⊆ π(|K|)?
+  These problems somewhat resemble an intriguing conjecture of
+G. Qian ([55]).
+Problem 8.3. Let G be a finite group, and let g ∈ G. Is there some
+χ ∈ Irr(G) such that o(g) divides |G : ker(χ)|/χ(1)?
+  As is explained in [40], this would be a consequence of the following.
+Conjecture 8.4. Let G be a finite group, and let H be a cyclic subgroup
+of G. If θ ∈ Irr(H), then there exists an irreducible constituent χ of θG
+such that χ(1) divides |G : H|.
+   In [40], we have a strong version of Conjecture 8.4 which we have
+reduced to decorated simple groups—in particular giving a stronger so-
+lution to Problem 8.3 for solvable groups. Also, as discussed in [40], in
+Conjecture 8.4, cyclic might be replaced by abelian (or even nilpotent),
+at least in solvable groups. In [6], the modular version of this conjecture
+is studied.
+   Finally, K. Harada proposed the following in [21].
+Conjecture 8.5. Let G be a finite group. Then
+                 Y                        Y
+                      χ(1) divides            |K|.
+                   χ∈Irr(G)                   K∈Cl(G)
+
+  We are not aware that this has been solved, even for solvable groups.
+
+                                References
+ [1] R. Brauer, Representations of finite groups, in: “Lectures on Modern Mathe-
+     matics”, Vol. I, Wiley, New York, 1963, pp. 133–175.
+ [2] M. Broué and Ll. Puig, A Frobenius theorem for blocks, Invent. Math. 56(2)
+     (1980), 117–128. DOI: 10.1007/BF01392547.
+ [3] O. Brunat and G. Malle, Characters of positive height in blocks of finite
+     quasi-simple groups, Int. Math. Res. Not. IMRN 2015(17) (2015), 7763–7786.
+     DOI: 10.1093/imrn/rnu171.
+196                                                                      G. Navarro
+
+
+ [4] C. Casolo and S. Dolfi, Products of primes in conjugacy class sizes and irre-
+     ducible character degrees, Israel J. Math. 174 (2009), 403–418. DOI: 10.1007/
+     s11856-009-0120-z.
+ [5] E. J. Cassell, Conjugacy classes in finite groups, commuting graphs and char-
+     acter degrees, Thesis (Ph.D.)-University of Birmingham (2013). Available on
+     https://etheses.bham.ac.uk/id/eprint/4628/1/Cassell13PhD.pdf.
+ [6] X. Chen and G. Navarro, Brauer characters, degrees and subgroups, Bull.
+     Lond. Math. Soc. 54(3) (2022), 891–893. DOI: 10.1112/blms.12592.
+ [7] J. P. Cossey, Bounds on the number of lifts of a Brauer character in a p-solvable
+     group, J. Algebra 312(2) (2007), 699–708. DOI: 10.1016/j.jalgebra.2007.03.
+     023.
+ [8] S. Dolfi, Large orbits in coprime actions of solvable groups, Trans. Amer. Math.
+     Soc. 360(1) (2008), 135–152. DOI: 10.1090/S0002-9947-07-04155-4.
+ [9] S. Dolfi and G. Navarro, Large orbits of elements centralized by a Sy-
+     low subgroup, Arch. Math. (Basel) 93(4) (2009), 299–304. DOI: 10.1007/
+     s00013-009-0016-5.
+[10] S. Dolfi, G. Navarro, E. Pacifici, L. Sanus, and P. H. Tiep, Non-vanishing
+     elements of finite groups, J. Algebra 323(2) (2010), 540–545. DOI: 10.1016/j.
+     jalgebra.2009.08.014.
+[11] C. W. Eaton and A. Moretó, Extending Brauer’s height zero conjecture to
+     blocks with nonabelian defect groups, Int. Math. Res. Not. IMRN 2014(20)
+     (2014), 5581–5601. DOI: 10.1093/imrn/rnt131.
+[12] E. Farias e Soares, Big primes and character values for solvable groups, J.
+     Algebra 100(2) (1986), 305–324. DOI: 10.1016/0021-8693(86)90079-7.
+[13] B. Fein and B. Gordon, Fields generated by characters of finite groups, J.
+     London Math. Soc. (2) 4 (1972), 735–740. DOI: 10.1112/jlms/s2-4.4.735.
+[14] Z. Feng, Y. Liu, and J. Zhang, On heights of characters of finite groups, J.
+     Algebra 556 (2020), 106–135. DOI: 10.1016/j.jalgebra.2020.02.035.
+[15] M. Geck, Green functions and Glauberman degree-divisibility, Ann. of
+     Math. (2) 192(1) (2020), 229–249. DOI: 10.4007/annals.2020.192.1.4.
+[16] E. Giannelli, A. Kleshchev, G. Navarro, and P. H. Tiep, Restriction of
+     odd degree characters and natural correspondences, Int. Math. Res. Not. IMRN
+     2017(20) (2017), 6089–6118. DOI: 10.1093/imrn/rnw174.
+[17] E. Giannelli, S. Law, J. Long, and C. Vallejo, Sylow branching coefficients
+     and a conjecture of Malle and Navarro, Bull. Lond. Math. Soc. 54(2) (2022),
+     552–567. DOI: 10.1112/blms.12584.
+[18] E. Giannelli and G. Navarro, Restricting irreducible characters to Sylow
+     p-subgroups, Proc. Amer. Math. Soc. 146(5) (2018), 1963–1976. DOI: 10.1090/
+     proc/13970.
+[19] D. Gluck, Large p0 -orbits for p-nilpotent linear groups, Math. Z. 284(3-4)
+     (2016), 1035–1052. DOI: 10.1007/s00209-016-1686-x.
+[20] Z. Halasi and K. Podoski, Every coprime linear group admits a base of size two,
+     Trans. Amer. Math. Soc. 368(8) (2016), 5857–5887. DOI: 10.1090/tran/6544.
+[21] K. Harada, Revisiting character theory of finite groups, Bull. Inst. Math. Acad.
+     Sin. (N.S.) 13(4) (2018), 383–395. DOI: 10.21915/BIMAS.2018402.
+[22] M. Hertweck, A counterexample to the isomorphism problem for integral group
+     rings, Ann. of Math. (2) 154(1) (2001), 115–138. DOI: 10.2307/3062112.
+Problems on Characters: Solvable Groups                                          197
+
+
+[23] L. Héthelyi and B. Külshammer, On the number of conjugacy classes of a
+     finite solvable group, Bull. London Math. Soc. 32(6) (2000), 668–672. DOI: 10.
+     1112/S0024609300007499.
+[24] I. M. Isaacs, Characters of solvable and symplectic groups, Amer. J. Math.
+     95(3) (1973), 594–635. DOI: 10.2307/2373731.
+[25] I. M. Isaacs, “Character Theory of Finite Groups”, Corrected reprint of the
+     1976 original, AMS Chelsea Publishing, Providence, RI, 2006. DOI: 10.1090/
+     chel/359.
+[26] I. M. Isaacs, “Finite Group Theory”, Graduate Studies in Mathematics 92,
+     American Mathematical Society, Providence, RI, 2008. DOI: 10.1090/gsm/092.
+[27] I. M. Isaacs, Carter subgroups, characters and composition series, Trans. Amer.
+     Math. Soc. Ser. B 9 (2022), 470–498. DOI: 10.1090/btran/93.
+[28] I. M. Isaacs, T. M. Keller, U. Meierfrankenfeld, and A. Moretó, Fixed
+     point spaces, primitive character degrees and conjugacy class sizes, Proc. Amer.
+     Math. Soc. 134(11) (2006), 3123–3130. DOI: 10.1090/S0002-9939-06-08383-3.
+[29] I. M. Isaacs, G. Malle, and G. Navarro, A reduction theorem for the McKay
+     conjecture, Invent. Math. 170(1) (2007), 33–101. DOI: 10.1007/s00222-007-
+     0057-y.
+[30] I. M. Isaacs and G. Navarro, Sylow 2-subgroups of rational solvable groups,
+     Math. Z. 272(3-4) (2012), 937–945. DOI: 10.1007/s00209-011-0965-9.
+[31] I. M. Isaacs and G. Navarro, Primes and conductors of characters, Preprint
+     (2021).
+[32] I. M. Isaacs, G. Navarro, and T. R. Wolf, Finite group elements where
+     no irreducible character vanishes, J. Algebra 222(2) (1999), 413–423. DOI: 10.
+     1006/jabr.1999.8007.
+[33] P. Jin and Y. Yang, Primitive character degrees of solvable groups, J. Algebra
+     573 (2021), 532–538. DOI: 10.1016/j.jalgebra.2020.11.025.
+[34] R. Kessar, M. Linckelmann, J. Lynd, and J. Semeraro, Weight conjectures
+     for fusion systems, Adv. Math. 357 (2019), 106825, 40 pp. DOI: 10.1016/j.aim.
+     2019.106825.
+[35] R. Kessar and G. Malle, Quasi-isolated blocks and Brauer’s height zero con-
+     jecture, Ann. of Math. (2) 178(1) (2013), 321–384. DOI: 10.4007/annals.2013.
+     178.1.6.
+[36] G. Malle, On the number of characters in blocks of quasi-simple groups, Algebr.
+     Represent. Theory 23(3) (2020), 513–539. DOI: 10.1007/s10468-019-09860-0.
+[37] G. Malle and G. Navarro, Inequalities for some blocks of finite groups, Arch.
+     Math. (Basel) 87(5) (2006), 390–399. DOI: 10.1007/s00013-006-1769-8.
+[38] G. Malle and G. Navarro, Blocks with equal height zero degrees, Trans. Amer.
+     Math. Soc. 363(12) (2011), 6647–6669. DOI: 10.1090/S0002-9947-2011-05333
+     -X.
+[39] G. Malle, G. Navarro, and B. Sambale, On defects of characters and
+     decomposition numbers, Algebra Number Theory 11(6) (2017), 1357–1384.
+     DOI: 10.2140/ant.2017.11.1357.
+[40] G. Malle, G. Navarro, and P. H. Tiep, Zeros of characters and element orders,
+     in preparation.
+[41] G. Malle and B. Späth, Characters of odd degree, Ann. of Math. (2) 184(3)
+     (2016), 869–908. DOI: 10.4007/annals.2016.184.3.6.
+[42] C. Marchi, Primitive characters of odd order groups, J. Algebra 547 (2020),
+     345–357. DOI: 10.1016/j.jalgebra.2019.11.024.
+198                                                                      G. Navarro
+
+
+[43] A. Maróti, A lower bound for the number of conjugacy classes of a finite group,
+     Adv. Math. 290 (2016), 1062–1078. DOI: 10.1016/j.aim.2015.12.020.
+[44] A. R. Miller, On roots of unity and character values, Preprint (2020).
+     arXiv:2003.13238.
+[45] M. Murai, A note on the number of irreducible characters in a p-block of a finite
+     group, Osaka J. Math. 21(2) (1984), 387–398.
+[46] G. Navarro, “Characters and Blocks of Finite Groups”, London Mathematical
+     Society Lecture Note Series 250, Cambridge University Press, Cambridge, 1998.
+     DOI: 10.1017/CBO9780511526015.
+[47] G. Navarro, Irreducible restriction and zeros of characters, Proc. Amer. Math.
+     Soc. 129(6) (2001), 1643–1645. DOI: 10.1090/S0002-9939-00-05747-6.
+[48] G. Navarro, Problems in character theory, in: “Character Theory of Fi-
+     nite Groups”, Contemp. Math. 524, Amer. Math. Soc., Providence, RI, 2010,
+     pp. 97–125. DOI: 10.1090/conm/524/10350.
+[49] G. Navarro, The set of character degrees of a finite group does not determine
+     its solvability, Proc. Amer. Math. Soc. 143(3) (2015), 989–990. DOI: 10.1090/
+     S0002-9939-2014-12321-5.
+[50] G. Navarro, “Character Theory and the McKay Conjecture”, Cambridge Stud-
+     ies in Advanced Mathematics 175, Cambridge University Press, Cambridge,
+     2018. DOI: 10.1017/9781108552790.
+[51] G, Navarro and P. H. Tiep, Characters of relative p0 -degree over normal sub-
+     groups, Ann. of Math. (2) 178(3) (2013), 1135–1171. DOI: 10.4007/annals.
+     2013.178.3.7.
+[52] G, Navarro and P. H. Tiep, The fields of values of characters of degree not
+     divisible by p, Forum Math. Pi 9 (2021), Paper no. e2, 28 pp. DOI: 10.1017/
+     fmp.2021.1.
+[53] G, Navarro, P. H. Tiep, and C. Vallejo, McKay natural correspondences on
+     characters, Algebra Number Theory 8(8) (2014), 1839–1856. DOI: 10.2140/ant.
+     2014.8.1839.
+[54] T. Okuyama and Y. Tsushima, Local properties of p-block algebras of finite
+     groups, Osaka Math. J. 20(1) (1983), 33–41. DOI: 10.18910/8689.
+[55] G. Qian, Element orders and character codegrees, Bull. Lond. Math. Soc. 53(3)
+     (2021), 820–824. DOI: 10.1112/blms.12462.
+[56] D. Rossi and B. Sambale, Restrictions of characters in p-solvable groups, J.
+     Algebra 587 (2021), 130–141. DOI: 10.1016/j.jalgebra.2021.07.034.
+[57] B. Sambale, The Alperin–McKay conjecture for metacyclic, minimal non-
+     abelian defect groups, Proc. Amer. Math. Soc. 143(10) (2015), 4291–4304.
+     DOI: 10.1090/S0002-9939-2015-12637-8.
+
+Department of Mathematics, Universitat de València, 46100 Burjassot, València,
+Spain
+E-mail address: gabriel@uv.es
+
+
+
+
+Received on September 2, 2020.
+Accepted on January 20, 2021.
+

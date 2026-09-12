@@ -1,11 +1,10 @@
 {
-  "observed_utc": "2026-09-12T11:17:47.757288+00:00",
+  "observed_utc": "2026-09-12T12:00:30.498720+00:00",
   "n": 7,
   "verifier_mode": "sharded",
   "shard_count": 6,
-  "completed_shards": 4,
+  "completed_shards": 5,
   "verified_live_pids": [
-    77396,
     77400
   ],
   "status": "VERIFYING",
@@ -18,22 +17,21 @@
     {
       "index": 0,
       "pid": 77396,
-      "verified_live": true,
-      "returncode": null,
+      "verified_live": false,
+      "returncode": 0,
       "last_progress": {
         "index": 0,
-        "checked_nodes": 7100000,
-        "last_id": 42599995,
-        "edges": 130224507,
-        "cpu_ms": 86591548
-      },
-      "rss_kib": 9902644
+        "checked_nodes": 7140000,
+        "last_id": 42839995,
+        "edges": 130979688,
+        "cpu_ms": 86975278
+      }
     },
     {
       "index": 1,
       "pid": 77397,
       "verified_live": false,
-      "returncode": null,
+      "returncode": 0,
       "last_progress": {
         "index": 1,
         "checked_nodes": 7140000,
@@ -46,7 +44,7 @@
       "index": 2,
       "pid": 77398,
       "verified_live": false,
-      "returncode": null,
+      "returncode": 0,
       "last_progress": {
         "index": 2,
         "checked_nodes": 7140000,
@@ -59,7 +57,7 @@
       "index": 3,
       "pid": 77399,
       "verified_live": false,
-      "returncode": null,
+      "returncode": 0,
       "last_progress": {
         "index": 3,
         "checked_nodes": 7140000,
@@ -75,12 +73,12 @@
       "returncode": null,
       "last_progress": {
         "index": 4,
-        "checked_nodes": 6550000,
-        "last_id": 39299999,
-        "edges": 119923377,
-        "cpu_ms": 86525434
+        "checked_nodes": 6790000,
+        "last_id": 40739999,
+        "edges": 124369770,
+        "cpu_ms": 89169317
       },
-      "rss_kib": 9006128
+      "rss_kib": 9435696
     },
     {
       "index": 5,
@@ -96,6 +94,6 @@
       }
     }
   ],
-  "verified_live_rss_kib": 18908772,
+  "verified_live_rss_kib": 9435696,
   "scope": "Progress snapshot. A complete certificate has no proof status until every shard and the aggregate pass. Integrity is bound to the prior full gzip read by the checked compressed SHA256."
 }
