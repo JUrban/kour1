@@ -1,0 +1,26 @@
+
+TRIANGLE p=7 class=2 log_order=3 widths=[ 2, 1 ]
+TRIANGLE p=7 class=3 log_order=5 widths=[ 2, 1, 2 ]
+TRIANGLE p=7 class=4 log_order=8 widths=[ 2, 1, 2, 3 ]
+TRIANGLE p=7 class=5 log_order=14 widths=[ 2, 1, 2, 3, 6 ]
+TRIANGLE p=7 class=6 log_order=23 widths=[ 2, 1, 2, 3, 6, 9 ]
+TRIANGLE p=7 class=7 log_order=40 widths=[ 2, 1, 2, 3, 6, 9, 17 ]
+TRIANGLE p=7 class=8 log_order=68 widths=[ 2, 1, 2, 3, 6, 9, 17, 28 ]
+WREATH p=2 order=8 torsion=6 generating_torsion_pairs=8 bad=0
+WREATH p=3 order=81 torsion=45 generating_torsion_pairs=648 bad=0
+PASS_1993_GAP
+Syntax warning: Unbound global variable in scripts/check_19_93_gap.g:9
+  im1993:=List(GeneratorsOfGroup(T1993),x->Image(h1993,x));;
+                                                 ^^^^^
+Syntax warning: Unbound global variable in scripts/check_19_93_gap.g:10
+  Assert(0,ForAll([im1993[1],im1993[2],im1993[1]*im1993[2]],x->x^7=One(G1993))\
+);
+                                                                       ^^^^^
+Syntax warning: Unbound global variable in scripts/check_19_93_gap.g:13
+  widths1993:=List([1..Length(s1993)-1],i->LogInt(Index(s1993[i],s1993[i+1]),7\
+));;
+                                                        ^^^^^
+Syntax warning: Unbound global variable in scripts/check_19_93_gap.g:13
+  widths1993:=List([1..Length(s1993)-1],i->LogInt(Index(s1993[i],s1993[i+1]),7\
+));;
+                                                                 ^^^^^

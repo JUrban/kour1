@@ -2177,3 +2177,21 @@ The recent almost-simple maximal-subgroup paper does not settle17.91;
 a scope note retains the elementary normal/core-free cases.
 Latest n7 snapshot:26,190,000 checked nodes; six live workers, no
 completed shards,36,629,236KiB combined RSS.
+
+
+## 2026-09-12T02:16:38.564425+00:00 — 19.93 complete negative candidate frozen
+
+For every prime p>=7, the relations x^p=y^p=(xy)^p=1 exclude
+a C_p wr C_p quotient. Finite truncations of their complete algebra
+give exactly two-generator finite p-groups. Filtered Golod--Shafarevich
+growth contradicts the partition-product bound implied by uniformly
+bounded lower p-central factors. The original hypothesis is on the
+whole group, not all its sections. Ershov pp.9--10 were read and viewed.
+The 23-file audit actually exits0, replaying21,714 wreath norm checks
+and12 exact algebra truncations. Seven GAP triangle quotients reach
+order7^68 with final factor dimension28. Initial scope warnings and
+the rejected wrapper run remain archived. Nineteen internal review
+points found no gap; imported GS and unconfirmed priority are explicit.
+Complete candidate count is40; externally accepted count remains0.
+Latest n7 snapshot at02:07:13:27,040,000 checked nodes, six live workers,
+zero completed shards,37,787,380KiB RSS.

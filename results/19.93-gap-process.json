@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bin/gap",
+    "-o",
+    "2g",
+    "scripts/check_19_93_gap.g"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 2.3098147893324494,
+  "stdout": "\nTRIANGLE p=7 class=2 log_order=3 widths=[ 2, 1 ]\nTRIANGLE p=7 class=3 log_order=5 widths=[ 2, 1, 2 ]\nTRIANGLE p=7 class=4 log_order=8 widths=[ 2, 1, 2, 3 ]\nTRIANGLE p=7 class=5 log_order=14 widths=[ 2, 1, 2, 3, 6 ]\nTRIANGLE p=7 class=6 log_order=23 widths=[ 2, 1, 2, 3, 6, 9 ]\nTRIANGLE p=7 class=7 log_order=40 widths=[ 2, 1, 2, 3, 6, 9, 17 ]\nTRIANGLE p=7 class=8 log_order=68 widths=[ 2, 1, 2, 3, 6, 9, 17, 28 ]\nWREATH p=2 order=8 torsion=6 generating_torsion_pairs=8 bad=0\nWREATH p=3 order=81 torsion=45 generating_torsion_pairs=648 bad=0\nPASS_1993_GAP\n",
+  "stderr": "",
+  "sentinel_present": true,
+  "script_sha256": "1918dfd8c7e84e84fceb20ccfd646d34e527dac85fdb5b05ad3a90a37e64a249",
+  "log_sha256": "c8c08a6f0ec3f01c823357555db5d341557b50acc1bd748c4e19d0948a9f4f30"
+}

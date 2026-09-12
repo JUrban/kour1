@@ -1,0 +1,128 @@
+{
+  "wreath": [
+    {
+      "p": 2,
+      "norm_tests": 8,
+      "exhaustive": true,
+      "independent_axis_pairs": 2
+    },
+    {
+      "p": 3,
+      "norm_tests": 81,
+      "exhaustive": true,
+      "independent_axis_pairs": 8
+    },
+    {
+      "p": 5,
+      "norm_tests": 15625,
+      "exhaustive": true,
+      "independent_axis_pairs": 32
+    },
+    {
+      "p": 7,
+      "norm_tests": 3000,
+      "exhaustive": false,
+      "independent_axis_pairs": 72
+    },
+    {
+      "p": 11,
+      "norm_tests": 3000,
+      "exhaustive": false,
+      "independent_axis_pairs": 200
+    }
+  ],
+  "algebra": {
+    "p": 7,
+    "dimensions": [
+      {
+        "truncation": 1,
+        "relations_spanned": 0,
+        "ideal_rank": 0,
+        "dimension": 1
+      },
+      {
+        "truncation": 2,
+        "relations_spanned": 0,
+        "ideal_rank": 0,
+        "dimension": 3
+      },
+      {
+        "truncation": 3,
+        "relations_spanned": 0,
+        "ideal_rank": 0,
+        "dimension": 7
+      },
+      {
+        "truncation": 4,
+        "relations_spanned": 0,
+        "ideal_rank": 0,
+        "dimension": 15
+      },
+      {
+        "truncation": 5,
+        "relations_spanned": 0,
+        "ideal_rank": 0,
+        "dimension": 31
+      },
+      {
+        "truncation": 6,
+        "relations_spanned": 0,
+        "ideal_rank": 0,
+        "dimension": 63
+      },
+      {
+        "truncation": 7,
+        "relations_spanned": 0,
+        "ideal_rank": 0,
+        "dimension": 127
+      },
+      {
+        "truncation": 8,
+        "relations_spanned": 3,
+        "ideal_rank": 3,
+        "dimension": 252
+      },
+      {
+        "truncation": 9,
+        "relations_spanned": 15,
+        "ideal_rank": 12,
+        "dimension": 499
+      },
+      {
+        "truncation": 10,
+        "relations_spanned": 51,
+        "ideal_rank": 36,
+        "dimension": 987
+      },
+      {
+        "truncation": 11,
+        "relations_spanned": 147,
+        "ideal_rank": 96,
+        "dimension": 1951
+      },
+      {
+        "truncation": 12,
+        "relations_spanned": 387,
+        "ideal_rank": 240,
+        "dimension": 3855
+      }
+    ],
+    "hilbert_prefix": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      125,
+      247,
+      488,
+      964,
+      1904
+    ],
+    "gs_value": "-115/729",
+    "p5_at_same_tau": "positive"
+  },
+  "scope": "Bounded exact algebra and wreath controls; no automated proof of unbounded width."
+}
