@@ -142,3 +142,8 @@ All 46 original statements were freshly rendered and visually compared with the 
 ## 12 September, 19:52 UTC: 21.121(b), soluble groups
 
 A new partial deduction gives p-Jordan exponent at most two for groups whose finite subgroups are soluble, and for uniformly bounded soluble index. In a finite soluble G the chosen abelian p-prime subgroup is characteristic and has index at most J^3 |G_(p)|^2. The normal-Sylow case has the sharper Frattini bound; the affine family over the algebraic closure of F_p has sharp attained exponent two. All five new control/audit processes passed with empty stderr. The full part (b) is not solved, priority is unestablished, and the complete count remains 46. Start with `research/21.121b-soluble-proof.md` and `research/21.121b-report.md`.
+
+
+## 12 September, 20:04 UTC: exact nonsoluble Jordan exponent
+
+The restricted direct power of A5 has attained exponent log(60)/log(4), between two and three, with constant one. Its finite subgroups split into diagonal A5 factors and a soluble factor; no uniformly bounded soluble index is possible. Independent Goursat enumeration agrees with GAP on all 8,381 subgroups of the two-factor group and all 59 subgroups of A5. The three new control/audit runs passed. This is an additional example, with no established priority or outside acceptance, not a solution of the general bound in 21.121(b). See `research/21.121b-a5-proof.md` and `research/21.121b-a5-report.md`.

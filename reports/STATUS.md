@@ -1,7 +1,8 @@
 # Current status
 
-Updated: 2026-09-12T19:52:05.436746+00:00.
+Updated: 2026-09-12T20:04:41.562055+00:00.
 
+- **21.121(b) nonsoluble example:** the restricted direct power of A5 has exact attained 2-Jordan exponent log(60)/log(4), with constant one and no finite-index soluble subgroup. Native GAP classes and an independent Goursat reconstruction agree on all 8,381 subgroups of A5 squared and all 59 subgroups of A5. This adds partial coverage only; the full part (b) is unresolved and the count stays 46. See `research/21.121b-a5-report.md`.
 - Active phase: proof audit, exact searches, and broader problem triage.
 - **21.121(b) soluble partial:** a weak Jordan constant J gives characteristic abelian p-prime subgroups of index at most J^3 times the square of the Sylow p-order in every finite soluble subgroup. The result extends to uniformly bounded soluble index, hence every virtually soluble p-Jordan group has exponent at most two. Affine groups show two is optimal. Native and integer checks agree on 269 affine subgroups and eight further cases; A5 rejects deleting the soluble hypothesis. General (b) remains unresolved and the count stays 46. See `research/21.121b-report.md`.
 - **Fresh PDF scope review:** all 46 original candidate statements were rendered and read visually against the principal theorem statements. No new scope discrepancy requiring withdrawal was found; the full-variety qualification for 15.76(b) remains explicit. Two rendering failures were retained and corrected. This is same-agent scope review, not a replay of mathematical certificates or outside acceptance. See `reports/pdf-statement-review.md`.
