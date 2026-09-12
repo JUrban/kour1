@@ -81,6 +81,16 @@ def main():
 
     status_path = ROOT / 'reports/STATUS.md'
     status = status_path.read_text()
+    status = replace_once(status,
+        '**18.18:** A common-centralizer interpretation proves that the cofinite\n'
+        'theory of finite groups is not computably enumerable. The question\n'
+        'about its complement remains unresolved here. Partial result only,\n'
+        'with no novelty claim; see `research/18.18-partial.md`.',
+        '**18.18 (superseded partial stage):** The earlier common-centralizer\n'
+        'argument proved non-enumerability of the cofinite theory and left its\n'
+        'complement unresolved. That historical stage is retained in\n'
+        '`research/18.18-partial.md`. The complete candidate now covers both\n'
+        'questions; see `research/18.18-proof.md` and the canonical review guide.')
     lines = status.splitlines()
     assert lines[2].startswith('Updated: ')
     lines[2] = 'Updated: ' + stamp + '.'
