@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/audit_final_closeout.py",
+    "--phase",
+    "final",
+    "--output",
+    "results/final-closeout-integrity.json"
+  ],
+  "started_utc": "2026-09-12T20:56:56.441798+00:00",
+  "finished_utc": "2026-09-12T20:57:01.598962+00:00",
+  "elapsed_seconds": 5.156845465302467,
+  "actual_returncode": 0,
+  "accepted": true,
+  "script_sha256": "3634064a0048fdf436c8de09571efef37361e02654732cec7d7b8adb29dddbcc",
+  "stdout_sha256": "9a0547b89b972cc029f96596537cc5e18ef51382d718900dacaf26a587c35053",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

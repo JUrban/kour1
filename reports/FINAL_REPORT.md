@@ -1,8 +1,9 @@
 # Kourovka Notebook: final research report
 
-**Draft closeout report — research is still active until 12 September 2026,
-20:56:46 UTC.** This draft records the current results and will receive the
-actual deadline observation and final artifact audit at closeout.
+**The 48-hour research window ended on 12 September 2026 at
+20:56:46 UTC.** The actual closeout observation was 2026-09-12T20:56:56.401874+00:00.
+The final artifact audit and local commit are administrative closeout
+records; they do not extend the mathematical research window.
 
 The research window began on **10 September 2026 at 20:56:46 UTC**. The
 objective was to obtain as many rigorous resolutions of previously open
@@ -10,7 +11,7 @@ problems in the supplied [21st-edition Notebook](../docs/21tkt.pdf) as possible
 within 48 hours, with detailed local plans, proofs, computational evidence,
 and frequent Git commits.
 
-The current outcome is **46 complete solution candidates**, including
+The final outcome is **46 complete solution candidates**, including
 complete answers to separately asked subparts. This is **not a claim of 46
 accepted new solutions**. Every candidate awaits independent outside review;
 priority has not been established. Additional theorems and substantial exact
@@ -213,9 +214,11 @@ checkpoint and 2,979 manifest bindings; they are artifact checks.
 
 The latest partial packets are committed separately and leave the older
 candidate ledger and historical evidence unchanged. The final closeout
-manifest and actual terminal-state observation will be added at the deadline.
-No mathematical jobs were live at the most recent process inspection; the
-final inspection is still pending in this draft.
+records are `results/final-closeout-integrity.json`, its separate actual-
+process receipt, and `results/final-closeout-packet.json`. The accompanying
+`reports/final-closeout-audit.md` records the final outcome and process
+observation; `research/completion-audit.md` maps the deliverables to the
+authorized task. The research window is closed.
 
 ## Work conditions and handoff limits
 
@@ -230,8 +233,8 @@ continuous global peak-memory measurement.
 Nineteen unrelated historical working files remain untracked locally,
 including uncompressed exports, rejected or incomplete certificate prefixes,
 and exploratory logs. They are preserved; the selected accepted evidence and
-necessary sources are committed. The final report and artifact audit will be committed together; Git will
-identify the exact closeout commit. A historical untracked file is not
+necessary sources are committed. The final report and artifact audit are
+archived together in the closeout commit, identified by Git. A historical untracked file is not
 represented as part of an earlier commit.
 
 Independent reviewers should assess the mathematical arguments and the

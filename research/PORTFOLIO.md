@@ -157,3 +157,10 @@ The characteristic construction inside the p-prime radical works without solubil
 ## 12 September, 20:25 UTC: arbitrary finite kernels with a weak bound
 
 The finite-kernel permanence statement extends to every finite normal kernel when the ambient group is generalized p-Jordan. In particular, within the p-Jordan class all finite normal quotients preserve the entire set of admissible exponents and attainment. The proof centralizes the finite kernel in the preimage of a normal abelian p-prime subgroup and applies the soluble estimate to the resulting class-two subgroup. A Frattini--Schur--Zassenhaus argument also proves that the generalized constant passes to finite normal quotients. No full exponent-three result or new complete candidate is claimed. See `research/21.121-finite-kernels.md`.
+
+
+## Final closeout: 12 September 2026
+
+The 48-hour research window ended at 20:56:46 UTC; actual closeout was observed at 2026-09-12T20:56:56.401874+00:00. The final canonical portfolio contains 46 complete solution candidates, with zero outside reviews and no established priority. Historical counts above retain their checkpoint meaning. The last selected mathematical rereads cover 22 candidates, while the separate PDF scope review covers all 46 original statements.
+
+The final report is `reports/FINAL_REPORT.md`; the proof and source entry point is `reports/REVIEW_GUIDE.md`. The final integrity observation, actual process receipt, and closeout manifest use `results/final-closeout-` paths, and `reports/final-closeout-audit.md` records their outcome. Partial 21.121(b), positive-characteristic 20.89, arbitrary-n 20.100, and finite-rank 20.124 claims remain explicitly limited. No push or outside communication was made.

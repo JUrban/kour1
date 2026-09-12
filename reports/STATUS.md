@@ -1,11 +1,11 @@
 # Current status
 
-Updated: 2026-09-12T20:25:40.936837+00:00.
+Updated: 2026-09-12T20:56:56.401874+00:00.
 
 - **21.121(b) nonsoluble example:** the restricted direct power of A5 has exact attained 2-Jordan exponent log(60)/log(4), with constant one and no finite-index soluble subgroup. Native GAP classes and an independent Goursat reconstruction agree on all 8,381 subgroups of A5 squared and all 59 subgroups of A5. This adds partial coverage only; the full part (b) is unresolved and the count stays 46. See `research/21.121b-a5-report.md`.
 - **21.121 exponent permanence:** a p-Jordan bound can always use characteristic abelian p-prime subgroups with the same exponent and constant J cubed. Finite-index passage, extensions with bounded finite subgroups in the quotient, and quotienting by finite normal p-subgroups preserve the whole set of admissible exponents and attainment. A fixed finite central kernel at a different prime need not preserve even generalized p-Jordanity. These are partial structural deductions, not a solution of (b); count remains 46. See `research/21.121-permanence-report.md`.
 - **21.121 arbitrary finite kernels within the p-Jordan class:** if the ambient group is generalized p-Jordan, every finite normal quotient has exactly the same admissible exponents and attainment. Centralizing the finite kernel of a finite-by-abelian subgroup gives a class-two subgroup of bounded index, to which the soluble bound applies. In particular every p-Jordan group preserves its exponent under every finite normal quotient. The extra ambient hypothesis is essential for ascent across kernels of other primes. No new complete count; see `research/21.121-finite-kernels.md`.
-- Active phase: proof audit, exact searches, and broader problem triage.
+- Phase: the 48-hour research window is closed; the review handoff contains 46 complete solution candidates, with priority unestablished and no outside reviews. Start with `reports/FINAL_REPORT.md` and `reports/REVIEW_GUIDE.md`.
 - **21.121(b) soluble partial:** a weak Jordan constant J gives characteristic abelian p-prime subgroups of index at most J^3 times the square of the Sylow p-order in every finite soluble subgroup. The result extends to uniformly bounded soluble index, hence every virtually soluble p-Jordan group has exponent at most two. Affine groups show two is optimal. Native and integer checks agree on 269 affine subgroups and eight further cases; A5 rejects deleting the soluble hypothesis. General (b) remains unresolved and the count stays 46. See `research/21.121b-report.md`.
 - **Fresh PDF scope review:** all 46 original candidate statements were rendered and read visually against the principal theorem statements. No new scope discrepancy requiring withdrawal was found; the full-variety qualification for 15.76(b) remains explicit. Two rendering failures were retained and corrected. This is same-agent scope review, not a replay of mathematical certificates or outside acceptance. See `reports/pdf-statement-review.md`.
 - **Review handoff checkpoint:** `reports/REVIEW_GUIDE.md` and `research/complete-candidate-ledger.json` now index all 46 complete candidates. The inventory checks 1,870 historical bindings across 1,252 files, with no missing files or digest mismatches. Nineteen matching cached sources were added to Git after the first inventory flagged their archival omission; both runs are retained. This is an integrity check, not outside acceptance or a rerun of all mathematical verifiers.
@@ -290,10 +290,11 @@ This partial result adds no complete candidate.
 
 **18.111:** Frigerio--Sisto2023 Theorem1.2 gives the exact prior negative answer with a finitely generated example. Introductory statement and conventions read; full proof unaudited. See `research/18.111-known-resolution.md`; excluded from new-result priority.
 
-**18.18:** A common-centralizer interpretation proves that the cofinite
-theory of finite groups is not computably enumerable. The question
-about its complement remains unresolved here. Partial result only,
-with no novelty claim; see `research/18.18-partial.md`.
+**18.18 (superseded partial stage):** The earlier common-centralizer
+argument proved non-enumerability of the cofinite theory and left its
+complement unresolved. That historical stage is retained in
+`research/18.18-partial.md`. The complete candidate now covers both
+questions; see `research/18.18-proof.md` and the canonical review guide.
 
 **17.124:** Jayadevan's9 September2026 preprint arXiv:2609.10281v1
 claims the exact affirmative enumeration theorem. Theorem1.1 and early
@@ -344,11 +345,8 @@ which also contradicts its claimed uncountable analogue. A formulation
 issue is recorded in `research/12.69-formulation-audit.md`; it is not counted
 as a substantive new resolution of the intended problem.
 
-## Next work
+## Handoff after the research window
 
-1. Revalidate running jobs and certify any hits.
-2. Continue novelty and mathematical audits of all forty-six candidate resolutions.
-3. Investigate 19.20 equality beyond the completed range, using the verified reverse inequality as a structural lead.
-4. Expand beyond the initial involution graph range and continue surveying older problems.
+The authorized 48-hour window ended on **2026-09-12 at 20:56:46 UTC**. Closeout was observed at 2026-09-12T20:56:56.401874+00:00. The canonical count is 46 complete solution candidates; none has outside acceptance or established priority. The final report distinguishes full proposed resolutions, proved partial results, bounded searches, and identified prior work.
 
-Deadline: **2026-09-12 20:56:46 UTC**. The 48-hour goal remains active. No external messages, submissions, or Git pushes have been made.
+Independent mathematical and priority review remains follow-up work for the supplied portfolio. Unrestricted questions explicitly left open are not claimed solved. The final artifact and process records are indexed in `results/final-closeout-packet.json` and `reports/final-closeout-audit.md`. All commits remain local; no external messages, submissions, or Git pushes have been made.
