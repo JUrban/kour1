@@ -7,6 +7,8 @@ Updated: 2026-09-12T00:04:36.855408+00:00.
 - Externally reviewed new solutions: 0.
 - **14.26:** A finite polynomial-algebra construction gives torsion-free nilpotent local models for every finite part of G wr Z, for G in Q(all torsion-free nilpotent groups). Budkin1999 explicitly confirms finite support. Dual interpolation proves the needed independence; a refined matrix central series proves nilpotence. Four exact algebras and a37-element Heisenberg wreath table pass, with319 relations and666 separations. The23-file replay audit passes. Complete affirmative candidate; see `research/14.26-proof.md` and `research/14.26-report.md`.
 
+- **16.45 extension:** All2,435 groups of orders81,125,128,243,343,625 pass the sufficient normal-Frattini criterion. Eight added table controls reconstruct474 subgroups and check307,619,161 triples. The46-file audit replays both packets. Combined coverage is2,789 groups and1,153,563 subgroups; general problem unresolved. See `research/16.45-extension-report.md`.
+
 - **16.45 pilot:** All354 p-groups in the prescribed orders through64 have a sufficient normal-Frattini certificate for b(G)=mu'(G). The screen covers45,105 subgroups;12 independent table controls reconstruct3,243 subgroups and explicit minimal bases. The26-file audit passes. Initial GAP syntax warnings and the rejected wrapper run are retained. General problem unresolved; see `research/16.45-report.md`.
 
 - **16.14 prior deduction:** The centralizer bound in Sambale2014, Theorem1.3 proof, gives d(G)<=2d(Z(G)) under the exact central-involution hypothesis. The relevant author pages and a later restatement were read and viewed; the underlying MacWilliams theorem is not independently audited. Excluded from new candidates; see `research/16.14-prior-result.md`.

@@ -2056,3 +2056,16 @@ The n=7 snapshot at00:03:53 has23,550,000 checked nodes, six live
 workers and no completed shards. The16.45 extension remains live;
 its last progress reports2,300 groups and no missing sufficient
 certificate. No n=7 or general16.45 conclusion is claimed.
+
+
+## 2026-09-12T00:13:15.857612+00:00 — 16.45 extension frozen
+
+All2,435 groups in the six prescribed new orders have a normal-Frattini
+maximum-rank witness. The1613.97-second GAP run and outer runner
+actually exited zero with a clean sentinel. The extension covers
+619,438 subgroup classes and1,108,458 subgroups;1,010 groups have
+no abelian maximum-rank witness. Eight independently reconstructed
+tables verify474 subgroups and307,619,161 associativity triples.
+The46-file audit replays all20 pilot/extension table controls and
+passes. Combined coverage is2,789 groups and1,153,563 subgroups.
+The general question remains unresolved and the candidate count37.

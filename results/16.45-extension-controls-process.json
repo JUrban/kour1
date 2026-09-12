@@ -1,0 +1,39 @@
+{
+  "runs": [
+    {
+      "label": "export",
+      "command": [
+        "bin/gap",
+        "scripts/export_16_45_extension_controls.g"
+      ],
+      "actual_returncode": 0,
+      "elapsed_seconds": 2.7257682140916586,
+      "observed_utc": "2026-09-12T00:08:17.031780+00:00",
+      "sentinel": true,
+      "clean_log": true,
+      "sha256": {
+        "scripts/export_16_45_extension_controls.g": "058eaff9f5cb8736274331b5d936dafc98556dcce00060090e9d5cb615101b1e",
+        "results/16.45-extension-control-inputs.json": "9299eeec5ef8e132fb63b1b6d6d7b3b0b2b210f8b96fc8129a828d07aadd5870",
+        "results/16.45-extension-catalogue-counts.json": "82c0e8915c3bef8b68785a04f8d7e194462b25b8d990ecbaf3a9ec4d9df32715",
+        "results/16.45-extension-export.log": "aece7380188ce814aa2f31fc4bd8d435a58be00275e398edaec1b213e13ed6b4"
+      }
+    },
+    {
+      "label": "controls",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_16_45_extension.py"
+      ],
+      "actual_returncode": 0,
+      "elapsed_seconds": 28.37613437604159,
+      "observed_utc": "2026-09-12T00:08:45.430420+00:00",
+      "sentinel": true,
+      "clean_log": true,
+      "sha256": {
+        "scripts/check_16_45_extension.py": "cb3842f1b980155aedeb0f41b26aee2171142bc61fd743cfb25c6bdef6783341",
+        "results/16.45-extension-controls.json": "ab19e751b62f250206fd8a8f9413bec7f6fa4891ec9709d3532a962e625ce5ea",
+        "results/16.45-extension-controls.log": "13e228149eba0c63b720b371f5bf7ff2d4c0269d4b783c043b9f8ab20c5f2907"
+      }
+    }
+  ]
+}
