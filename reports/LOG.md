@@ -2114,3 +2114,15 @@ The intended connectedness convention remains unconfirmed. No new count.
 
 At 00:56:12 the n=7 verifier has 24,970,000 checked nodes, six live workers,
 zero completed shards and 35,031,796 KiB combined RSS.
+
+
+## 2026-09-12T01:02:50.398583+00:00 — 15.44(a) prior negative consequence
+
+The classical cubic-cone Segre ring is realized as the invariant ring of
+a one-dimensional torus acting on a Cohen–Macaulay hypersurface. The
+monomial weight basis supplies the exact induced-module filtration. An
+explicit three-element homogeneous parameter sequence is not regular;
+the Hilbert numerator 1+3t+3t^2-t^3 independently confirms failure.
+Hochster2007 pp.15–16 already give the ring and obstruction; those pages
+and the graded Cohen–Macaulay criterion on p.12 were read and viewed.
+Eight files are hash-bound. No new priority or candidate increment.
