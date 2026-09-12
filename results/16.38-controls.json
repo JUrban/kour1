@@ -1,0 +1,380 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite controls, not an exhaustive proof.",
+  "matrix_controls": [
+    {
+      "group": "C3",
+      "order": 3,
+      "matrices": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            -13
+          ],
+          [
+            1,
+            -4
+          ]
+        ],
+        [
+          [
+            -4,
+            13
+          ],
+          [
+            -1,
+            3
+          ]
+        ]
+      ],
+      "averaged_metric": [
+        [
+          28,
+          -98
+        ],
+        [
+          -98,
+          364
+        ]
+      ],
+      "cocycles": 49,
+      "cocycle_pairs": 441,
+      "affine_products": 441,
+      "orbit_point_checks": 147
+    },
+    {
+      "group": "S3",
+      "order": 6,
+      "matrices": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            -13
+          ],
+          [
+            1,
+            -4
+          ]
+        ],
+        [
+          [
+            3,
+            -8
+          ],
+          [
+            1,
+            -3
+          ]
+        ],
+        [
+          [
+            -4,
+            13
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        [
+          [
+            -4,
+            15
+          ],
+          [
+            -1,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            -7
+          ],
+          [
+            0,
+            -1
+          ]
+        ]
+      ],
+      "averaged_metric": [
+        [
+          56,
+          -196
+        ],
+        [
+          -196,
+          728
+        ]
+      ],
+      "cocycles": 49,
+      "cocycle_pairs": 1764,
+      "affine_products": 1764,
+      "orbit_point_checks": 294
+    },
+    {
+      "group": "C4",
+      "order": 4,
+      "matrices": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            -10
+          ],
+          [
+            1,
+            -3
+          ]
+        ],
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        [
+          [
+            -3,
+            10
+          ],
+          [
+            -1,
+            3
+          ]
+        ]
+      ],
+      "averaged_metric": [
+        [
+          22,
+          -66
+        ],
+        [
+          -66,
+          220
+        ]
+      ],
+      "cocycles": 49,
+      "cocycle_pairs": 784,
+      "affine_products": 784,
+      "orbit_point_checks": 196
+    },
+    {
+      "group": "D8",
+      "order": 8,
+      "matrices": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            -10
+          ],
+          [
+            1,
+            -3
+          ]
+        ],
+        [
+          [
+            3,
+            -8
+          ],
+          [
+            1,
+            -3
+          ]
+        ],
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        [
+          [
+            -1,
+            6
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -6
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        [
+          [
+            -3,
+            10
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        [
+          [
+            -3,
+            8
+          ],
+          [
+            -1,
+            3
+          ]
+        ]
+      ],
+      "averaged_metric": [
+        [
+          44,
+          -132
+        ],
+        [
+          -132,
+          440
+        ]
+      ],
+      "cocycles": 49,
+      "cocycle_pairs": 3136,
+      "affine_products": 3136,
+      "orbit_point_checks": 392
+    }
+  ],
+  "sign_controls": [
+    {
+      "rank": 1,
+      "scalar_order": 2,
+      "cocycle_and_product_pairs": 4,
+      "pure_translations": 2,
+      "nonzero_translations": 1
+    },
+    {
+      "rank": 2,
+      "scalar_order": 4,
+      "cocycle_and_product_pairs": 16,
+      "pure_translations": 4,
+      "nonzero_translations": 3
+    },
+    {
+      "rank": 3,
+      "scalar_order": 8,
+      "cocycle_and_product_pairs": 64,
+      "pure_translations": 8,
+      "nonzero_translations": 7
+    },
+    {
+      "rank": 4,
+      "scalar_order": 16,
+      "cocycle_and_product_pairs": 256,
+      "pure_translations": 16,
+      "nonzero_translations": 15
+    },
+    {
+      "rank": 5,
+      "scalar_order": 32,
+      "cocycle_and_product_pairs": 1024,
+      "pure_translations": 32,
+      "nonzero_translations": 31
+    },
+    {
+      "rank": 6,
+      "scalar_order": 64,
+      "cocycle_and_product_pairs": 4096,
+      "pure_translations": 64,
+      "nonzero_translations": 63
+    },
+    {
+      "rank": 7,
+      "scalar_order": 128,
+      "cocycle_and_product_pairs": 16384,
+      "pure_translations": 128,
+      "nonzero_translations": 127
+    },
+    {
+      "rank": 8,
+      "scalar_order": 256,
+      "cocycle_and_product_pairs": 65536,
+      "pure_translations": 256,
+      "nonzero_translations": 255
+    }
+  ],
+  "mutations": {
+    "torsion_module": "F3^3 with C3 cyclically permuting coordinates",
+    "cocycle_image": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "doubling_witness": [
+      2,
+      2,
+      2
+    ],
+    "nonlocally_finite_example": "C=Z acts trivially on Q; delta(n)=n"
+  }
+}

@@ -2146,3 +2146,20 @@ The exact prior affirmative theorem for 20.72 is recorded separately,
 with the 2019 source calculation limits explicit and no new count.
 The n=7 snapshot at 01:22:17 has 25,760,000 checked nodes, six live
 workers, zero completed shards, and 36,067,572 KiB combined RSS.
+
+
+## 2026-09-12T01:36:34.801711+00:00 — 16.38 complete candidate frozen
+
+A cocycle of a locally finite group into a torsion-free abelian group
+cannot contain both t and 2t in its image for nonzero t: finite
+averaging and an invariant inner product give the obstruction.
+Two periodic factors yield just such a cocycle on their common
+quotient image. Derived-length induction proves that every subgroup
+contained in their set product is periodic in a soluble ambient group.
+The original page and related source pages were viewed. The 21-file
+audit actually exits zero, replaying 6,125 matrix cocycle/product pairs
+and 87,380 sign-action pairs, with a finite-torsion mutation retained.
+An infinite finite-support example excludes an incorrect global
+coboundary assumption and the stronger false elementwise conclusion.
+No internal gap found; independent review and priority remain pending.
+Complete candidate count is 39.

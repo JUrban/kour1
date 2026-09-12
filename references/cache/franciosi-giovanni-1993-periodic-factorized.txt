@@ -1,0 +1,283 @@
+Arch. Math., Vol. 61,313-318 (1993)                               0003-889X/93/6104-0313 $ 2.70/0
+                                                                  9 1993 Birkhfiuser Verlag, Basel
+
+
+
+
+                On periodic subgroups of factorized groups
+
+                                                   By
+                         NILVANA FRANCIOSI and FRANCESCO DE GIOVANNI
+
+
+
+   1. Introduction. Let the group G = A B be the product of two subgroups A and B. If
+N is a normal subgroup of G, the f a c t o r i z e r of N in G is the subgroup X (N) = A N n B N .
+It is easy to show that X ( N ) has the triple factorization
+
+              X ( N ) = (A n B N ) ( B n A N ) =    (A n B N ) N = (B n A N ) N .
+
+Thus the investigation concerning factorized groups very often leads to the consideration
+of groups with a triple factorization of the form
+
+              G=AB=AK=BK,
+
+where K is a normal subgroup of G. It has recently been proved by Robinson and
+Stonehewer [6] that if the factors A, B and K are abelian, then the group G has a central
+series. However, an example of Sysak [7] shows that such a group G is not always locally
+nilpotent, even if K has rank 1.
+   The aim of this article is to study the behaviour of elements of finite order in groups
+with a triple factorization by locally nilpotent subgroups. An arbitrary periodic locally
+soluble group G = A B = A K = B K , factorized by three locally nilpotent subgroups
+A, B and K, with K normal in G, need not be locally nilpotent, since Sysak [7] has
+constructed a group of this type, where K is an infinite minimal normal subgroup of G.
+On the other hand Amberg [1] proved that G is locally nilpotent, provided that A and
+B are hypercentral. Improving this theorem, we shall prove that every periodic group
+G = A B = A K = B K factorized by three locally nilpotent subgroups A, B and K, with
+K normal in G, is locally nilpotent if one of the factors A and B is hyperabelian. This will
+be a consequence of results on groups having a triple factorization by subgroups with
+normal Sylow re-subgroups for a fixed set ~ of primes.
+   In the general case, information are obtained on the structure of periodic subgroups
+of groups with a locally nilpotent triple factorization. In fact, it will be proved that if
+the hyperabelian group G = A B = A K = B K is the product of two locally nilpotent
+subgroups A and B and a nilpotent normal subgroup K, then every periodic normal
+subgroup of G is locally nilpotent. This can be used to show that the set of all elements
+of finite order of G is a locally nilpotent subgroup, provided that either G is locally
+polycyclic or G is soluble and one of the factors A and B has finite torsion-free rank.
+314                             S. FRANCIOSI a n d E DE GIOVANNI                      ARCH. MATH.
+
+
+M o s t of our notation is s t a n d a r d and can be found in [5]. In particular:
+  n (G) is the set of prime divisors of orders of elements of G.
+  O~(G) is the m a x i m u m periodic n o r m a l n-subgroup of G, for a set n of primes,
+  n' is the complementary set of primes to n.
+  A group G has finite torsion-free rank if it has a series of finite length whose factors are
+  either periodic or infinite cyclic.
+  A subgroup H of a factorized group G = A B is called factorized if A n B __<H
+  and H = (A n H) (B c~ H). Thus H is a factorized subgroup if and only if X ( H ) = H.
+
+   2. Statements and proofs. Let n be a set of primes. A group G is called n-dosed if the
+set of all n-elements of G is a subgroup. In particular, if p is a prime, a group G is p-closed
+if and only if it has a unique Sylow p-subgroup. Thus a locally finite group is locally
+nilpotent if and only if it is p-closed for each prime p. If the group G contains a n-closed
+normal subgroup N such that G/N has no non-trivial n-elements, it is clear that G is
+n-closed. Moreover, if the group G is n-closed and N is a periodic n o r m a l subgroup of
+G, the factor group GIN is also n-closed.
+   In order to study products of n-closed groups, the following result of Zaicev [8] is
+needed (see also [4], L e m m a 4.6A).
+
+  Lemma 1. Let the group G = A B be the product of two subgroups A and B, and let Ao
+and B o be normal subgroups of A and B, respectively. I f A locally satisfies the maximal
+condition on subgroups and x = ab (a e A, b e B) is an element of G normalizing the
+subgroup H = ( A o, Bo), then a normalizes Z (H) n Ao.
+
+  Lemma 2. Let n be a set of primes, and let the group G = A B = A K = B K be the
+product of two n-closed subgroups A and B, and a normal subgroup K such that A n K and
+B n K are periodic and n(K) n n is empty. I f A locally satisfies the maximal condition on
+subgroups and Ao is a periodic abelian normal n-subgroup of A such that A~ is locally finite,
+then A o is normal in G and is contained in B.
+
+   P r o o f. As B is n-closed, the set B 1 of all n-elements of B is a n o r m a l subgroup of B.
+Then B 1 K is n o r m a l in G = BK, and the factor group G/B~ K ~ B/B~ (B n K) has no
+n-elements, so that A o is contained in B~ K. Since A o K is normal in G = AKi the
+subgroup Bo = Ao K n B~ is normal in B. M o r e o v e r A o K = A o K n B 1 K = B o K, with
+A o n K = B o n K = 1, and hence Bo ~ Ao is abetian. The subgroup H = ffAo, Bo) is
+contained in Ao K = Bo K, and so H = Ao (H n K) = B o (H c~ K), where H ~ K is n o r m a l
+in H.
+   Let a o be an element of A o of order a power of a prime q, a n d write ao = bo h, with bo
+in B o and h in H n K. Then ( a o ) and ( b o ) are Sylow q-subgroups of ( a o ) ( H c~ K )
+ = ( b o ) (H n K), and so also of ( % , bo). As n ( K ) n n = 0, the factor group K A oO/ A oO has
+no n-elements, so that a o and b o both belong to Aoa. It follows that (ao, bo) is a finite
+group, and hence there exists an element x of H n K such that a~ ties in ( b o ) N Bo. Let
+x = ab, with a in A and b in B. Then a "o = a~b-~ is an element of B ob-~ = Bo, so that a~
+belongs to Ao n Bo < Z(H). In particular a~ is in Z ( H ) n Ao. O n the other hand, a
+Vol. 61, 1993               Periodic subgroups of factorized groups                          315
+
+normalizes Z ( H ) n A o by Lemma 1, so that ao belongs to Z(H), and hence ao = a~ is in
+B o. Therefore A o is contained in B o < B, and so A o = B o is normal in G = AB.    []
+
+  We can now prove the following result on groups with a triple factorization by n-closed
+subgroups.
+
+   Theorem 3. Let n be a set of primes, and let the group G = A B = A K = B K be the
+product of three n-closed subgroups A, B and K, where K is a locally finite normal sub-
+group of G. I f one of the factors A and B is hyperabelian and locally polycyclic, then G
+is n-closed.
+   P r o o f. It is clearly enough to show that the factor group G/On(G) is n-closed, so that
+we may suppose On (G) = 1. In particular the n-closed locally finite normal subgroup K
+of G is a n'-group. Assume that A is hyperabelian and locally polycyclic. It follows from
+Lemma 2 that A has no non-trivial abelian normal n-subgroups, so that n (A) n n = 0, as
+A is n-closed. Then also the factor group G/K ~- A/(A c~ K ) has no n-elements, so that
+n(G) n n = 0, and G is n-closed.        []
+
+  The previous theorem has the following consequences.
+
+   Corollary 4. Let n be a set of primes, and let the locally finite group G = A B
+= A K = B K be the product of three n-closed subgroups A, B and K, where K is normal
+in G. I f one of the factors A and B is hyperabelian, then G is n-closed.
+
+   Corollary 5. Let the group G = A B = A K = B K be the product of three locally nilpo-
+tent subgroups A, B and K, where K is a periodic normal subgroup of G. I f one of the factors
+A and B is hyperabelian, then the set of all elements of finite order of G is a locally nilpotent
+subgroup. In particular, if G is periodic, it is locally nilpotent.
+  Corollary 5 can be used to obtain the following property of metanilpotent products of
+periodic locally nilpotent groups. This was already known in the case of a product of two
+periodic abelian groups (see [2]).
+
+   Corollary 6. Let the metanilpotent group G = A B be the product of two periodic locally
+nilpotent subgroups A and B. Then the Hirsch-Plotkin radical of G is a factorized subgroup.
+  P r o o f. It is well-known that the group G is periodic (see [4], Theorem 3.2.6). Let H
+be the Hirsch-Plotkin radical of G. The factorizer X = X (H) of H in G has the triple
+factorization
+                X = A'B* = A*H = B'H,
+where A* = A n B H and B* = B n A H , and hence it is locally nilpotent by Corollary 5.
+As the factor group G/H is nilpotent, the subgroup X is subnormal in G, so that X < H.
+Thus X = H, and H is a factorized subgroup of G.       []
+
+  In the above results the assumption that the normal subgroup K is periodic was used
+to produce large periodic normal subgroups. N o w we investigate the behaviour of
+316                              S. FRANCIOSI and F. DE GIOVANNI                        ARCH; MATH.
+
+
+elements of finite order in a triply factorized group G = A B = A K = B K , when the
+normal subgroup K is not periodic.
+
+
+   Proposition 7. Let the hyperabelian group G = A B = A K = B K be the product o f two
+locally nilpotent subgroups A and B, and a nilpotent normal subgroup K. Then every
+periodic normal subgroup o f G is locally nilpotent.
+
+   P r o o f. Let T be the maximum periodic normal subgroup of G. If the result holds
+for the factor group G'K'. then T K ' 'K' is locally nilpotent, so that T K K ' is locally
+nilpotent, and hence also T < T K is locally nilpotent Thus we may suppose that K is
+abelian. As locally finite residually locally nilpotent groups are locally nilpotent, it is
+enough to show that T/Op, (G) is locally nilpotent for each prime p. Hence without loss
+of generality it can be assumed that Op, (G) = 1 for some prime p, so thal in particular
+  (K) _ { p}.
+   Suppose first that A n K and B c~ K both are periodic. Let A o be a periodic abelian
+normal p'-subgroup of A which is contained in TK. The normal subgroup T K of G is
+periodic-by-abelian, so that T is the set of all elements of finite order of TK. Thus A o < T,
+and so AoG < T is locally finite. Application of Lemma 2 yields that A o is normal in G. and
+hence A o - 1. Therefore A 1 = A c~ T K does not contain periodic abelian non-trivial
+A-invariant p'-subgroups. As A t ~ K and A 1/(A 1 c~ K ) ~ A ~ K / K are periodic, it follows
+that also the normal subgroup A~ of A is periodic, so that A 1 is a p-group. Moreover
+T K = A K c~ T K = AI K, and hence T / ( T c~ K ) ~ T K / K = A 1 K / K is a p-group. There-
+fore T is a p-group, and so it is locally nilpotent.
+   In the general case. the subgroups A n K and B c~K both are normal in
+G = A K = B K , so that also N = ( A n K) (B n K) is a normal subgroup of G. It follows
+from the first part of the proof that the maximum periodic normal subgroup To/N of the
+factor group G / N is locally nilpotent. Let E be a finite subgroup of T There exists a
+finitely generated subgroup E~ of A such that E < E1 K. Then L = ( E n A ~ K, E l ) is
+a finitely generated subgroup of A, and hence xs nilpotent, so that E c~ A n K < Z, (L}
+for some positive integer n. As K is abelian, it follows that E c ~ A n K < Z , [ L K ) ,
+and thus E c ~ A n K < Z n ( E ) .     If G * = G / ( A r , K), the same argument shows
+that E * n B * ~ K * < Z , , ( E * ) for some positive integer m. On the other hand,
+E*/(E* n B* n K*} ~ E* (B* n K*)/(B* c~ K*) is isomorphic to the finite subgroup
+E N N of To~N, so that E * / ( E * n B * c ~ K * I            is nilpotent. Therefore E* =
+E f A n K)/(A c~ K ) ~ E/(E c~ A c~ KI is nilpotent, and hence also E is nilpotent. This
+proves that T is locally nilpotent.       []
+
+
+   Our last two results show that in certain cases the set of all elements of finite order of
+the triply factorized group G is a subgroup.
+
+
+   Theorem 8. Let the soluble group G = A B = A K = B K be the product o f two locally
+nilpotent subgroups A and B, and a nilpotent normal subgroup K. I f one o f the factors A
+and B has finite torsion-free rank, then the set o f all elements o f finite order o f G is a locally
+nilpotent subgroup.
+Vol. 61, 1993               Periodic subgroups of factorized groups                          317
+
+   P r o o f. Assume that A has finite torsion-free rank, and let T be the subgroup
+generated by all elements of finite order of G. If T K ' / K ' is periodic, it follows from
+Proposition 7 that T K ' / K ' is locally nilpotent. Thus T K / K ' is locally nilpotent, so that
+TK is locally nilpotent, and hence the subgroup T is periodic and locally nilpotent.
+Therefore it is enough to show that the set of all elements of finite order of the factor
+group G/K' is a subgroup, and in particular we may suppose that K is abelian. Then
+B n K is a normal subgroup of G = BK, and B/(B n K) -~ A/(A n K) has finite torsion-
+free rank. Put G = G/(B n K). The locally nilpotent group A is periodic-by-nilpotent (see
+[5] Part 2, Theorem 6.36), and hence it has a series of finite length with central or periodic
+factors. Then it follows from Theorem 4.6.1 of [4] that the factorized group G = A B has
+finite torsion-free rank. If V is the maximum periodic normal subgroup of G, the factor
+group G/V has finite Prfifer rank (see [5] Part 2, Lemma 9.34). Then G/V is locally
+nilpotent by Theorem B of [3], and hence is torsion-free, so that the subgroup V is the
+set of all elements of finite order of G. Let E be the subgroup generated by a finite set of
+elements of finite order of G, and let E 1 be a finitely generated subgroup of B such that
+E < E I K . As E / ( E n B n K ) ~ - E ( B n K ) / ( B n K ) is finite, the subgroup E n B n K is
+finitely generated, and hence L = ( E n B c~ K, E l ) is a finitely generated subgroup of B.
+Thus L is nilpotent and E n B n K < Z n (L) for some positive integer n. Since K is abelian,
+we have also that E c~ B n K is contained in Zn(LK), and so E n B n K < Z,(E). There-
+fore E/Z,(E) is finite, and E is finite-by-nilpotent (see [5] Part 1, Corollary 2 to Theo-
+rem 4.21). Then E is finite, and the set of all elements of finite order of G is a sub-
+group.      []
+
+  Theorem 9. Let the hyperabelian group G = A B = A K = B K be the product of two
+locally nilpotent subgroups A and B, and a nilpotent normal subgroup K. I f G is locally
+polycyclic, then the set of all elements of finite order G is a locally nilpotent subgroup.
+   P r o o f. As in the proof of Theorem 8 we may suppose that the subgroup K is abelian,
+and it is enough to show that the set of all elements of finite order of G is a subgroup.
+   Suppose first that A n K = B n K = 1, and without loss of generality assume that the
+abelian normal subgroup K of G is torsion-free. Let A o be an abelian normal p-subgroup
+of A, where p is a prime, and suppose that A o is not contained in B. Let a be an element
+of Ao\B, and write a = bx, with b in B and x in K \ { I } . Let q be a prime such that q 4: p,
+and put L = x G and M = (xq) ~. Assume that x belongs to M. Then there exists a finitely
+generated subgroup H of G such that x is in V = (xq) ~. Hence x q belongs to V q, and so
+V q = V. The subgroup ( x q, H ) is finitely generated, and hence polycyclic, so that
+V < ( x q, H ) n K is a finitely generated torsion-free abelian group, a contradiction since
+V q = V. Therefore x is not in M, and L / M is a non-trivial abelian group of exponent q.
+Write G = G/M, and let )~ be the factorizer of L = L / M in the factorized group G = A B.
+Then
+                = A'B* = A*L = B'L,
+where A* = A n B L and/~* = B n A L. Clearly the set of all elements of finite order of
+)~ is a subgroup, so that in particular the normal closure (Ao n A*)X is periodic. Appli-
+cation of Lemma 2 yields that Ao n A* is contained in/~*, so that ~ belongs to/~*. As
+  also is in/~*, it follows that Y is an element of/~*, so that x is in/~. Therefore x belongs
+318                                S. FRANCIOSI and F. DE GIOVANNI                            ARCH. MATH,
+
+
+to B M c~ L = M ( B c~ L) = M . This contradiction shows that Ao is contained in B. The
+subgroup A o K is normal in G = A K , so that A o K c~ B = A 0 (K c~ B) = A o is n o r m a l in
+B. Thus A 0 is a n o r m a l subgroup of G = A B . It follows that every periodic abelian
+normal subgroup of A is normal in G. The subgroup T of all elements of finite order of
+A has an ascending A-invariant series with abelian factors, and the above argument
+proves that T is a normal subgroup of G. As A ~ K                          - 1, the factor group G / T is
+torsion-free, and hence T is the set of all elements of finite order of G.
+   In the general case, the subgroups A c ~ K and B c ~ K both are normal in
+G = A K = B K , so that N = (A c~ K) (B c~ K ) also is a n o r m a l subgroup of G. It follows
+from the first part of the proof that the theorem holds for the factor group G / N . Let E
+be the subgroup generated by a finite set of elements of finite order of G, and let E 1 be
+a finitely generated subgroup of A such that E < E 1 K. As E is polycyclic, the intersection
+E ~ A c~ K is finitely generated, and hence L = ( E c~ A n K, E l ) is a finitely generated
+subgroup of A, Thus L is nilpotent, and E n A c~ K < Z , (L) for some positive integer n.
+As K is abelian, it follows that E n A ~ K < Zn ( L K ) , and so E n A c~ K < Z , ( E ) . N o w
+the last part of the p r o o f of P r o p o s i t i o n 7 can be used to show that E is finite-by-nilpotento
+Therefore E is finite, and hence the set of all elements of finite order of G is a sub-
+group.      []
+
+                                                References
+[1] B. AMBERG,Lokal endlich-aufl6sbare Produkte von zwei hyperzentralen Gruppen. Arch. Math.
+    35, 228-238 (1980).
+[2] B. AMBER6,Products of two abelian subgroups. Rocky Mountain J. Math. 14, 541-547 (1984).
+[3] B. AMBER6,S. FRANCIOSIand E DE GIOVANNI,Groups with a nilpotent triple factorisation. Bull.
+    Austral. Math. Soc. 37, 69-79 (1988).
+[4] B. AMBER6, S. FRANOOSIand F. DE GIOVANNI,Products of Groups. Oxford 1992.
+[5] D. L S. ROBINSON,Finiteness conditions and generalized soluble groups. Berlin-Heidelberg-New
+    York 1972.
+[6] D. J. S. ROBINSONand S. E. STONEHEWER,Triply factorizations by abetian groups. Arch. Math.
+    60, 223-232 (1993).
+[7] Y.P. SVSAK,Products of inifinite groups (Russian) Akad. Nauk Ukrain. SSR Inst. Mat. Kiev
+    1982.
+[8] D. I. ZAICEV,Soluble factorized groups (Russian). Structure of Groups and Subgroups Charac-
+    terizations, 15-33, Akad. Nauk Ukrain. Inst. Mat. Kiev 1984.
+
+                                      Eingegangen am 29.9. 1992
+Anschrift der Autoren:
+S. Franciosi
+E de Giovanni
+Dipartimento di Matematica e Applicazioni
+"R. Caccioppoli"
+Complesso Monte S. Angelo
+Via Cintia
+1-80126 Napoli
+Italia
+
