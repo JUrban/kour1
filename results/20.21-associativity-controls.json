@@ -1,0 +1,23 @@
+{
+  "exhaustive": [
+    {
+      "size": 2,
+      "tables": 16,
+      "associative": 8
+    },
+    {
+      "size": 3,
+      "tables": 19683,
+      "associative": 113
+    }
+  ],
+  "large_sizes": [
+    64,
+    128,
+    256
+  ],
+  "large_mutations": 3,
+  "invalid_entry_rejected": true,
+  "source_sha256": "238441640d8016d44d069166cc2c8b158db097a99727c39b31c088b9a72651b2",
+  "library_sha256": "f9a0ce9aa455dc287762560841e9161df8d3d793865678a506e0c45122d01c43"
+}

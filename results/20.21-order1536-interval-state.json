@@ -1,0 +1,170 @@
+{
+  "status": "COMPLETE_NO_CANDIDATE",
+  "order": 1536,
+  "total_groups": 408641062,
+  "interval_first": 408526598,
+  "interval_last": 408544625,
+  "interval_count": 18028,
+  "shards": 4,
+  "workspace_gib_each": 1,
+  "controller_pid": 224453,
+  "started_utc": "2026-09-12T04:21:04.430415+00:00",
+  "script_sha256": "9a3aa7b2f6a205984b39bd02737929084e902f4e1ae9574de32a88ead9fc6adc",
+  "runner_sha256": "e22a6e1f34dde2cc254c15ebb9277c9e2e89792ec2dd2db8ad61c057cbed2d9f",
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 224454,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=1536;SearchIndex2021:=0;SearchShards2021:=4;SearchRows2021:=\"/project/results/20.21-order1536-interval-shard0.grows\";SearchFirst2021:=408526598;SearchLast2021:=408544625;",
+        "/project/scripts/search_20_21_interval.g"
+      ],
+      "log": "results/20.21-order1536-interval-shard0.log",
+      "rows": "results/20.21-order1536-interval-shard0.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T04:37:54.785358+00:00",
+      "sha256": {
+        "results/20.21-order1536-interval-shard0.log": "7bce22252d755534c1df9b0ce554f0d583c9a2e13ff73179eecb5837d578ae70",
+        "results/20.21-order1536-interval-shard0.grows": "9ae44dc82303cba68319d4cb11264c7d198c62539b801a97da1f8164900c6fe1"
+      }
+    },
+    {
+      "index": 1,
+      "pid": 224455,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=1536;SearchIndex2021:=1;SearchShards2021:=4;SearchRows2021:=\"/project/results/20.21-order1536-interval-shard1.grows\";SearchFirst2021:=408526598;SearchLast2021:=408544625;",
+        "/project/scripts/search_20_21_interval.g"
+      ],
+      "log": "results/20.21-order1536-interval-shard1.log",
+      "rows": "results/20.21-order1536-interval-shard1.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T04:37:54.788584+00:00",
+      "sha256": {
+        "results/20.21-order1536-interval-shard1.log": "d180c464df6a77f9526ef0d71890d29aae0c5a2aa936bb66fecdffa6aeef00ac",
+        "results/20.21-order1536-interval-shard1.grows": "c3cf2d6bfedcaa54e215803e27d507c5436e3c1970439b34777fe970cf4fbf74"
+      }
+    },
+    {
+      "index": 2,
+      "pid": 224456,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=1536;SearchIndex2021:=2;SearchShards2021:=4;SearchRows2021:=\"/project/results/20.21-order1536-interval-shard2.grows\";SearchFirst2021:=408526598;SearchLast2021:=408544625;",
+        "/project/scripts/search_20_21_interval.g"
+      ],
+      "log": "results/20.21-order1536-interval-shard2.log",
+      "rows": "results/20.21-order1536-interval-shard2.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T04:37:54.789221+00:00",
+      "sha256": {
+        "results/20.21-order1536-interval-shard2.log": "a5cbd6bbc07b07ceef8fba77bda34a5a2963e671bc0505ff8a0851f516bf937c",
+        "results/20.21-order1536-interval-shard2.grows": "3abe4724f80296041cb2fd802cdbbbd459a288d360575309b0fddccf42fafb12"
+      }
+    },
+    {
+      "index": 3,
+      "pid": 224457,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=1536;SearchIndex2021:=3;SearchShards2021:=4;SearchRows2021:=\"/project/results/20.21-order1536-interval-shard3.grows\";SearchFirst2021:=408526598;SearchLast2021:=408544625;",
+        "/project/scripts/search_20_21_interval.g"
+      ],
+      "log": "results/20.21-order1536-interval-shard3.log",
+      "rows": "results/20.21-order1536-interval-shard3.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T04:37:54.789814+00:00",
+      "sha256": {
+        "results/20.21-order1536-interval-shard3.log": "8d003f42691c943ea0e9f4c70bc501bb0bdf0b0c80b92b8550182a0e3bb2a335",
+        "results/20.21-order1536-interval-shard3.grows": "c26e1fd5880bac500cb87e0310d335bb1ab181b10a974c8503cec1ebda5aaab9"
+      }
+    }
+  ],
+  "completed_utc": "2026-09-12T04:37:55.071507+00:00",
+  "elapsed_seconds": 1010.6410416318104,
+  "totals": {
+    "tested": 18028,
+    "eligible": 5006,
+    "both": 5006,
+    "hits": 0
+  },
+  "shard_counts": [
+    [
+      1536,
+      0,
+      4,
+      4507,
+      1247,
+      1247,
+      0
+    ],
+    [
+      1536,
+      1,
+      4,
+      4507,
+      1252,
+      1252,
+      0
+    ],
+    [
+      1536,
+      2,
+      4,
+      4507,
+      1253,
+      1253,
+      0
+    ],
+    [
+      1536,
+      3,
+      4,
+      4507,
+      1254,
+      1254,
+      0
+    ]
+  ]
+}

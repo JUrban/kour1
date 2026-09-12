@@ -2397,3 +2397,21 @@ vector witnesses establish faithful orbit actions of degrees 4095,
 byte for byte and replays the old exhaustive controls (exit zero 420c47).
 Four 1 GiB searches are running; their observed ambient orders all match
 the validation formulas. No completed four-ring result is claimed.
+
+
+## 2026-09-12T04:42:48.967642+00:00 — order-1536 search finished; kernel audit underway
+
+All four interval workers and their controller exit zero (5f82ee).
+The 18,028 groups include 5,006 with both quotient types, 30,414 kernels
+and 26,760 pairs, with no isomorphic pair. The diagnostic covers 1,102
+kernel types and 7,057 distinct type pairs: 6,972 differ in order counts,
+51 first differ in abelianization exponent and 34 in its full type.
+No additional invariant is needed at this diagnostic stage. Four exports
+are now producing every actual 128-element kernel table. A native
+associativity checker agrees with Python on all 19,699 binary/ternary
+tables and on large cyclic tables and mutations, with exit zero. The
+audited lower bound remains 1,536 until all actual-table checks pass.
+
+The staged whitespace check reports only the compiler version command
+output ending with a blank line. That raw evidence is preserved; the
+authored source/document check excludes the compiler log.

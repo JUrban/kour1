@@ -1,0 +1,22 @@
+{
+  "recorded_utc": "2026-09-12T04:42:48.967642+00:00",
+  "search_controller": {
+    "exit_code": 0,
+    "tool_chunk": "5f82ee",
+    "child_records": "results/20.21-order1536-interval-summary.json"
+  },
+  "native_compile": {
+    "exit_code": 0,
+    "tool_chunk": "34a002",
+    "command": "cc -shared -O3 -fPIC -Wall -Wextra -Werror scripts/table_associativity_20_21.c -o results/20.21-table-associativity.so"
+  },
+  "native_controls": {
+    "exit_code": 0,
+    "tool_chunk": "9d12fc"
+  },
+  "invariant_diagnostic": {
+    "exit_code": 0,
+    "tool_chunk": "7c1d0f"
+  },
+  "kernel_exports": "running; no result yet"
+}
