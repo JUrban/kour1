@@ -2350,3 +2350,16 @@ compressor completion. The65-file auditor replays the pilot and all
 kernel controls and exits0. The audited prior minimality reduction
 gives a lower bound1536 for any counterexample. General20.21 remains
 open and the complete count remains41.
+
+
+## 2026-09-12T04:20:28.456435+00:00 — G2 prime-field carpet packet audited
+
+All 174 G2(F2) and 217 G2(F3) carpets are already closed. Integral
+adjoint divided powers, 2,744 Jacobi triples, and every commutator
+factor are checked before enumerating all 4,096 assignments per field.
+The F3 orbit spans only seven dimensions; no full-span assertion is
+used. Direct matrix enumeration checks all 390 nontrivial-to-certify
+cases (126,998 states), with the full F3 assignment handled by definition.
+All seven processes exit zero. The 26-file auditor reconstructs both
+inputs and replays all controls, also exiting zero (cdbff9). This is
+a bounded negative result; complete candidate count remains 41.
