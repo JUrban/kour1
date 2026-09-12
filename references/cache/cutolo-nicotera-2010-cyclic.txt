@@ -1,0 +1,375 @@
+                                      Verbal sets and cyclic coverings
+                                          GIOVANNI CUTOLO AND CHIARA NICOTERA
+
+
+        Abstract. We consider groups G such that the set of all values of a fixed word w in G is covered by a finite set of
+        cyclic subgroups. Fernández-Alcober and Shumyatsky studied such groups in the case when w is the word [x1 , x2 ], and
+        proved that in this case the corresponding verbal subgroup G0 is either cyclic or finite. Answering a question asked by
+        them, we show that this is far from being the general rule. However, we prove a weaker form of their result in the case
+        when w is either a lower commutator word or a non-commutator word, showing that in the given hypothesis the verbal
+        subgroup w(G) must be finite-by-cyclic. Even this weaker conclusion is not universally valid: it fails for verbose words.
+
+
+
+
+In [1], Gustavo Fernández-Alcober and Pavel Shumyatsky consider a special case of the following problem: given a
+(group) word w on n variables and a group G such that the verbal set w{G} := {w(g1 , . . . , gn ) | g1 , g2 , . . . , gn ∈ G} of
+all ‘values’ of w in G
+                     S is covered by finitely many cyclic subgroups of G (in the sense that there is a finite subset F of G
+such that w{G} ⊆ {hgi | g ∈ F }), is it necessarily true that the verbal subgroup w(G) := hw{G}i is either cyclic or
+finite? A similar problem had been investigated earlier in [5].
+   When w is the word x of length one, then w{G} = G and the question translates into: ‘is it true that a group
+covered by finitely many cyclic subgroups must be either cyclic or finite?’, the answer to which is well known to be in
+the positive, as was first pointed out by Baer (see [4], p. 105). On the other hand, there are cases in which the answer
+is negative. Indeed, let w be a word which is verbose, that is, such that there are groups G with the property that
+w{G} is finite, and yet w(G) is infinite—Ivanov [2] gave examples of such words. Then, for such a group G, the direct
+square H = G × G is such that w{H} = w{G} × w{G} is finite (and hence covered by finitely many cyclic subgroups)
+but w(H) = w(G) × w(G) is neither cyclic nor finite, actually it is not even finite-by-cyclic.
+   Fernández-Alcober and Shumyatsky solved the problem, by answering the question in the positive, in the case where
+w is the commutator word [x1 , x2 ]: they showed that if the set of all commutators {[x, y] | x, y ∈ G} of a group G is
+covered by finitely many cyclic subgroups then the commutator subgroup G0 is either cyclic or finite. They asked the
+question whether the same positive answer can be obtained for an arbitrary (concise, that is: not verbose) word. We
+shall see that this is not the case. However, the following partial result holds in the positive. Recall that a commutator
+word is a word w such that w(G) = 1 for all abelian groups G. This is equivalent to the requirement that for each
+variable x appearing in w the sum of all exponents in the occurrences of x in w is zero. It is easy to show that all
+verbose words are commutator words (see, for instance, [4], Lemma 4.27).
+Theorem A. Let G be a group and w a word which is not a commutator word. If w{G} is covered by finitely many
+cyclic subgroups then w(G) is finite-by-cyclic.
+   Thus the original question has a positive answer in the case of torsion-free groups and non-commutator words.
+That this result does not hold for mixed groups is shown in Example 1.5 below: the word w is in this case the
+power word xn , where n is an arbitrary integer greater than 1 (also see Example 1.6). Moreover, even for torsion-free
+groups, the conclusion of Theorem A can fail to hold if w is a commutator word: the group H given above provides a
+counterexample.
+   In the final section we discuss the possibility of a direct generalization of the main result in [1], by considering lower
+commutator words [x1 , . . . , xn ] for n > 2. Unlike what happens for n = 2, for all larger values of n the situation is
+the same as in the case of non-commutator words: in the usual hypothesis for the group G and the lower commutator
+word of weight n, the corresponding verbal subgroup, that is, the lower central term γn (G), may be infinite and not
+cyclic (the relevant counterexamples are in Example 2.8), but we can prove that it is finite-by-cyclic.
+Theorem B. Let n be an integer greater than 1 and G be a group in which the set of all lower commutators
+[x1 , x2 , . . . , xn ] of weight n on elements of G is covered by a finite set of cyclic subgroups. Then γn (G) is finite-by-
+cyclic.
+   However, in the extra hypothesis that the group is (locally) finite-by-nilpotent the same, stronger conclusion as
+in [1] can be drawn:
+Theorem C. Let n and G be as in Theorem B, and further assume that G is locally finite-by-nilpotent. Then γn (G)
+is either finite or cyclic. Moreover, if γn (G) is infinite then G is nilpotent of class n.
+  We thank the referee for pointing to some inaccuracies in our original presentation.
+
+  Key words and phrases. Group theory, verbal subgroups, cyclic subgroups, subgroup coverings, lower central series.
+                                                                   1
+2                                      GIOVANNI CUTOLO AND CHIARA NICOTERA
+
+
+                                  1. General results and proof of Theorem A
+Let us introduce some terminology.S For a word w and group S     G we say that the set F of cyclic subgroups of G is a
+w-covering if and only if w{G} ⊆ F; in this case w(G) ≤ h Fi, as is obvious. Further, we say that F is a sharp
+w-covering in G if it is a w-covering with the extra property that every K ∈ F is generated by elements of w{G}, that
+is: K = hK ∩ w{G}i. If F is an arbitrary (finite) w-covering, by replacing each K ∈ F with hK ∩ w{G}i we obtain a
+(finite) sharp w-covering of G. We also make use of the equivalence relations defined as follows on sets of elements of
+infinite order or on sets of infinite cyclic subgroups of G (and all denoted by ∼): any two such elements x and y (or
+the infinite cyclic subgroups hxi and hyi) are dependent, and we write x ∼ y (or hxi ∼ hyi) in this case, if and only if
+hxi ∩ hyi =6 1.
+    The argument for the following lemma is essentially taken from a special case proved in [1], see Propositions 2.3
+and 2.5.
+Lemma 1.1. Suppose that w is a group word and G is a group with a finite w-covering F. Then:
+  (i) w(G) is finitely generated and G/CG (w(G)) is finite;
+ (ii) the periodic elements of w(G) form a finite subgroup. If w(G) is torsion-free then it is abelian;
+(iii) if F is sharp, for all K ∈ F the subgroup hL ∈ F | K ∩ L 6= 1i is cyclic-by-finite.
+Proof. That w(G) is finitely generated follows at once from the fact that G has a finite w-covering. Hence, by
+elementary properties of F C-groups, to prove (i) and (ii) it will be enough to show that w(G) is contained in the
+F C-centre F of G. Without loss of generality, we may assume that F is sharp. The set of all finite elements in F covers
+the (characteristic) set of all periodic elements in w{G}. Thus this latter set is finite, hence it is contained in F . Now
+consider the set W of all nonperiodic elements in w{G}, which also is a characteristic set. Since F is finite it is clear
+that W is partitioned into finitely many ∼-classes. So, these classes form a finite (Aut G)-invariant set. Let x ∈ W
+and let C be the ∼-class of x, then H := S    hCi has finitely many conjugates and N := NG (H)Thas finite index in G.
+Also let K = {K ∈ F | K ∼ hxi}, so H = h Ki, because F is sharp, and K is finite. Then 1 6= K := Z ≤ Z(H) and
+C is the set of all elements in W which are periodic modulo Z. This implies that C is a normal subset of H. Since
+K is finite {cZ | c ∈ C} is finite and so H/Z is finite by Dietzmann’s Lemma (see for instance [4], p. 45, Corollary 2).
+Therefore H is a finite, central extension of a cyclic group. Hence Aut H is finite and so N/CG (H) is finite. This
+shows that H ≤ F . Therefore W ⊆ F , hence w(G) ≤ F . Thus (i) and (ii) are proved.
+   Finally, still in the hypothesis that F is sharp, let K ∈ F and K ∗ = hL ∈ F | K ∩ L 6= 1i. If K is finite then K ∗
+is generated by finitely many periodic elements of F , hence it is finite. If K is infinite and 1 6= x ∈ K ∩ w{G} then
+x ∈ W and K ∗ is the subgroup H defined by x as in the previous paragraph. Now also part (iii) follows.                   
+   Part (ii) of the previous lemma suggests that it can be useful to consider the case when w(G) is torsion-free
+separately.
+Lemma 1.2. Let G be a group and w a word, and let F be a finite w-covering of minimal size in G. If w(G) is
+torsion-free then K ∩ L = 1 for all distinct K, L ∈ F.
+Proof. By earlier remarks, we may assume that F is sharp. Let K, L ∈ F and let H = hK, Li. Assume K 6= L and
+K ∩ L 6= 1. Parts (ii) and (iii) of Lemma 1.1 show that H is torsion-free abelian and cyclic-by-finite, hence cyclic.
+Then, by replacing L and K with H, we obtain a w-covering of size smaller than |F|, and this is a contradiction. The
+lemma follows.                                                                                                     
+Proposition 1.3. Let G be a group and w a word. If G has a finite w-covering and w(G) is torsion-free then G has
+exactly one sharp w-covering of minimal size.
+Proof. By hypothesis and by our earlier remarks G has a finite sharp w-covering F which has minimal size among all
+w-coverings of G. Let F∗ be another finite sharp w-covering in G of the same size. Lemma 1.2 shows that K ∩ L = 1
+for all distinct K, L ∈ F, and F∗ has the same property. Let K ∈ F and Y = K ∩ w{G} r 1. Choose y ∈ Y . Then
+y ∈ K ∗ for some K ∗ ∈ F∗ , because F∗ is a w-covering. By the same reason, for all g ∈ Y there exists L∗ ∈ F∗ such
+that g ∈ L∗ . But hgi ∩ hyi =
+                            6 1, hence L∗ ∩ K ∗ 6= 1 and so L∗ = K ∗ by Lemma 1.2. Thus Y ⊆ K ∗ ; as K = hY i we
+have K ≤ K . By reversing the argument, in view of Lemma 1.2 we obtain K = K ∗ . By iterating this argument we
+              ∗
+
+easily obtain F = F∗ , and the proposition is proved.                                                            
+   We are almost ready for the proof of Theorem A, which is the main result of this section. Before that, we record an
+obvious property of groups with a finite w-covering for a word w. If H is a subgroup of such a group G and H ⊆ w{G}
+then H is covered by finitely many cyclic subgroups and so it is either finite or cyclic, by the result of Baer’s cited in
+the introduction. When G is abelian w{G} = w(G) ≤ G, hence the original problem has positive solution in this case.
+Lemma 1.4. Let G be an abelian group and let w be a word. If G has a finite w-covering then w(G) is either cyclic
+or finite.
+Proof of Theorem A. The hypothesis clearly is inherited by quotients of G. The torsion subgroup T of w(G) is
+finite, and w(G/T ) = w(G)/T is torsion-free, hence abelian, by Lemma 1.1 (ii). So we may factor out T and assume
+                                             VERBAL SETS AND CYCLIC COVERINGS                                                     3
+
+
+that A := w(G) is a torsion-free (finitely generated, abelian) group. Since w is a not a commutator word, there is
+a variable x appearing in w such that the sum n of the exponents in all occurrences of x in w is not zero. Then
+w(A) ≥ An . It follows from Lemma 1.4 that An is cyclic, and therefore A is cyclic. This completes the proof.   
+   Finally, we see that Theorem A cannot be strenghtened up to stating that, in the given hypotheses, w(G) is either
+finite or cyclic. For all n ∈ Z let as call pn the nth power word xn . In our example the nontrivial values of the word
+considered are all aperiodic, this is of some relevance in view of the proof strategy developed in [1].
+   Recall that an automorphism of (finite) order p of an abelian group A is said to be splitting if and only if 1 + α +
+α2 + · · · + αp−1 = 0. We are interested here in the case when p is prime. In this case 1 + α + α2 + · · · + αi ∈ Aut A
+for all i < p − 1 (the inverse being 1 + αi+1 + α2(i+1) + · · · + αj(i+1) , where j is chosen such that (j + 1)(i + 1) ≡p 1).
+Also recall that for every integer n > 1 and every prime p, unless p = n = 2, there exists a finite abelian group A
+of exponent n having a splitting automorphism of order p. For instance, A can be a homocyclic group of rank p − 1
+and exponent n, and α can be defined as the automorphism described by the companion matrix of the polynomial
+1 + X + X 2 + · · · + X p−1 with respect to a given Zn -basis of A. (The easiest case is when p = 2; in this case α is just
+the inverting automorphism.)
+Example 1.5. For every integer n > 1 there exists a (metabelian, finite-by-cyclic) group G with a finite pn -covering,
+consisting of infinite cyclic subgroups only, such that Gn = pn (G) is neither finite nor cyclic (nor abelian, actually).
+   In fact, let p be a prime not dividing n and let A be a finite abelian group of exponent n having a splitting
+automorphism α of order p. Let G = A o hxi, where x has infinite order and ax = aα for all a ∈ A. Each element of G
+has the form xk a for some k ∈ Z and a ∈ A, and its powers can be computed as follows. Let t ∈ Z. If p divides k then
+[xk , A] = 1 and (xk a)t = xkt at . If p does not divide k then xk acts on A as the splitting automorphism αk , of order p.
+                                      k   2k     (p−1)k
+It follows that (xk a)p = xkp a1+α +α +···+α            = xkp and, after writing t = pq + r (where r is the remainder of t
+modulo p), (x a) = x (x a) = x a , where σk,t = 1 + αk + α2k + · · · + α(r−1)k . Note that σk,t ∈ Aut A, unless
+                 k t     kpq k r         kt σk,t
+
+p divides t, in which case σk,t = 0. Thus, in the case when p does not divide kt we have (xk a)t = (xt b)k , where
+           −1
+b = aσk,t σt,k . Now it is not hard to describe pn {G} = {g n | g ∈ G}: the n-th powers of elements of hxp iA form the
+subgroup hxpn i, while the remaining n-th powers in G have the form (xk a)n = (xn b)k for some integer k not divisible
+by p and some a, b ∈ A. It follows that F := {hxn bi | b ∈ A} is a finite sharp pn -covering of G; note that its elements
+are infinite. On the other hand it is now clear that Gn = A o hxn i is infinite and noncyclic.
+   Comparison between Theorem A and Lemma 1.4 on one side, and Theorems B and C on the other could suggest
+that the full conclusion that w(G) is either cyclic or finite can be obtained, at least, in the case of nilpotent groups.
+This is not the case, though. The next example also shows that the offending covering set can be of very small
+cardinality, even of size 2.
+Example 1.6. Let G = (hai × hci) o hbi, where a has infinite order, b and c = [a, b] have order 2 and c ∈ Z(G). If
+g = ai cj bk is a generic element of G, where i ∈ Z and j, k ∈ {0, 1} then g 2 = a2i if k = 0 and g 2 = a2i ci if k = 1.
+Therefore the set of all squares in G is ha2 i ∪ ha2 ci. The two cyclic subgroups appearing here form a sharp p2 -covering
+of G and G2 = ha2 , ci is neither finite nor cyclic.
+   We close this section with a very simple lemma that we shall use repeatedly in the next section.
+Lemma 1.7. Let G be a group with a finite w-covering for some word w. Let u be a nonperiodic element in w{G};
+                                                                                                  λ
+let g be a periodic element of CG (u) and q be a positive multiple of the order of g. If kλ := guq ∈ w{G} for infinitely
+many positive integers λ then g = 1.
+Proof. Let F be a finite w-covering of G. There exist K ∈ F and λ, µ ∈ N such that 0 < λ < µ and kλ , kµ ∈ K. Then
+   λ+1                                        µ
+uq     = kλq ∈ K. As λ < µ we deduce that uq ∈ K, hence g ∈ K because kµ ∈ K. But K is infinite cyclic, because u
+is aperiodic, and g is periodic. Hence g = 1.                                                                    
+
+                                                2. Lower commutator words
+Now we consider a specific family of commutator words: for all integer n > 1 let kn = [x1 , x2 , . . . , xn ] be the weight-n
+lower commutator word. In this section we specialise the problem discussed in the previous section to the case when
+w = kn for some n, aiming at proving Theorems B and C (see the introduction). So, we fix n > 1 and suppose
+that G is a group with a finite kn -covering set. Then γn (G) is finitely generated and C := CG (γn (G)) has finite
+index τ in G, by Lemma 1.1, and the torsion elements in γn (G) form a finite subgroup T . Also, C stabilises the series
+1 ≤ γn (G) ≤ γn−1 (G) ≤ · · · ≤ G0 ≤ G; it follows that [γt (G), γn−t+1 (C)] = 1 for all t ∈ {1, 2, . . . , n}. When t = 1 this
+just means γn (C) ≤ Z(G). Further, let γ{n} (G) = {[x1 , x2 , . . . , xn ] | x1 , x2 , . . . , xn ∈ G}, the set of all values of kn
+in G. We consider the notation just established as fixed throughout this section.
+Lemma 2.1. Suppose n > 2. Let s, t be integers such that 0 < s ≤ t < n and t > 1; let g1 , g2 , . . . , gs−1 , gs+1 , . . . , gt ∈ G
+and assume that at least one of these elements is in C. Also let c ∈ γn−t (C). Then the mapping
+                                    x ∈ G 7−→ [g1 , g2 , . . . , gs−1 , x, gs+1 , . . . , gt , c] ∈ γn (G)
+4                                                    GIOVANNI CUTOLO AND CHIARA NICOTERA
+
+
+is a homomorphism. When t = n − 1 its image {[g1 , g2 , . . . , gs−1 , x, gs+1 , . . . , gn−1 , c]|x ∈ G} is either cyclic or finite.
+   Moreover, for all g ∈ γn−1 (G) the mapping
+                                                                  c ∈ C 7−→ [g, c] ∈ [g, C]
+is an epimorphism, and if g ∈ γ{n−1} (G) then [g, C] is either cyclic or finite.
+Proof. Let s, t and g1 , g2 , . . . , gs−1 , gs+1 , . . . , gt , c be as in the hypothesis and consider the mapping θ : x ∈ G 7−→
+[g1 , g2 , . . . , gs−1 , x, gs+1 , . . . , gt ] ∈ C ∩ γt (G). The first mapping in the statement is then α : x ∈ G 7→ [xθ , c] ∈ γn (G).
+We know that θ is a homomorphism modulo γt+1 (G). Thus, for all x, y ∈ G there exists h ∈ γt+1 (G) such that
+(xy)θ = hxθ y θ . Now [h, c] = 1 by a remark preceding this lemma, and (xy)α = [(xy)θ , c] = [hxθ y θ , c] = [xθ y θ , c] =
+[xθ , c][xθ , c, y θ ][y θ , c]. But [xθ , c, y θ ] = 1, because [xθ , c] ∈ γn (G) and y θ ∈ C. Therefore α is a homomorphism. If
+t = n − 1 then im α is a subgroup of G contained in γ{n} (G), hence it is either cyclic or finite. That the second
+mapping in the statement is an epimorphism is straightforward, and the proof follows as in the previous case.                          
+Lemma 2.2. γn (C) is either finite or cyclic.
+Proof. In view of [1], we may assume n > 2. For every N C C we define a binary relation lN in S := γ{n} (C) r N as
+follows. For all x, y ∈ S, let x lN y if and only if hx, yi is either finite or cyclic. If g = [a1 , . . . , an ] and g 0 = [a01 , . . . , a0n ]
+are elements of S (for some a1 , . . . , an , a01 , . . . , a0n ∈ C) and ai 6= a0i for at most one of the subscripts i then g and g 0
+belong to the image X of one of the homomorphisms defined in Lemma 2.1 in one of the cases in which the same
+lemma shows that X is either finite or cyclic. Then g lN g 0 . Now let ≈N denote the transitive closure of lN . Of
+course ≈N is an equivalence relation in S. We claim that all elements of S are pairwise ≈N -equivalent. In order
+to prove that, arguing by contradiction, suppose that ā := (a1 , . . . , an ) and ā0 := (a01 , . . . , a0n ) are two n-tuples of
+elements of C such that g := [a1 , . . . , an ] and g 0 := [a01 , . . . , a0n ] are two elements in S such that g 6≈N g 0 . Also suppose
+that ā and ā0 have been chosen to have minimal distance d subject to this requirement; d is defined as the number of
+subscripts i such that ai 6= a0i ; of course d > 0. Let i be the least integer such that ai 6= a0i . There exists b ∈ C not
+belonging to the kernel of either of the homomorphisms C → γn (C)N/N defined by x 7→ [a1 , . . . , ai−1 , x, ai+1 , . . . , an ]N
+and x 7→ [a1 , . . . , ai−1 , x, a0i+1 , . . . , a0n ]N (see Lemma 2.1). So we have that g1 := [a1 , . . . , ai−1 , b, ai+1 , . . . , an ] and
+g10 := [a1 , . . . , ai−1 , b, a0i+1 , . . . , a0n ] are two elements of S which are defined by n-tuples of elements of C whose distance
+is less than d. Therefore g1 ≈N g10 . But g1 lN g and g10 lN g 0 by a remark in the early part of the proof. It follows
+that g ≈N g 0 , a contradiction. Thus our claim is established: all elements of S are ≈N -equivalent. In the case when
+N = 1 this shows that the nontrivial elements of γ{n} (C) are either all periodic or all aperiodic. In the former case
+γn (C) is finite, so we may assume the latter. Let p be a prime and N = (γn (C))p . If x, y ∈ γ{n} (C) r N and x lN y
+then hx, yi is cyclic (as x and y have infinite order); it follows that N hxi = N hyi. Then the same happens if we merely
+assume that x ≈N y rather than x lN y. Now, given any g ∈ γ{n} (C) r N , all elements of γ{n} (C) r N are ≈N
+equivalent to g. So γ{n} (C) r N ⊆ N hgi, hence γn (C) = N hgi. It follows that γn (C) is cyclic.                                            
+  We shall make use of commutator formulae holding in some nilpotent groups. We collect them here for the
+convenience of the reader.
+Lemma 2.3. Let k ∈ N, let p be a prime and let X be a nilpotent group of class k + 1 and such that γk+1 (X) has
+exponent p. Let λ be a positive integer and assume that λ > 1 if p = 2. Let i be a positive integer such that i ≤ k
+and let gi+1 , gi+2 , . . . , gk ∈ X.
+                                         λ                                                           λ
+     (i) For all a, b ∈ γi (X), [ap b, gi+1 , gi+2 , . . . , gk ] = [a, gi+1 , gi+2 , . . . , gk ]p [b, gi+1 , gi+2 , . . . , gk ].
+    (ii) If i > 1, for all g ∈ γi−1 (X) and a, b ∈ X,
+               λ                                                                  λ
+         [g, ap b, gi+1 , gi+2 , . . . , gk ] = [g, a, gi+1 , gi+2 , . . . , gk ]p [g, b, gi+1 , gi+2 , . . . , gk ].
+Proof. We will use the following standard result: if u, v, t are positive integers, x ∈ γu (X) and y ∈ γv (X) then
+                                t                                          t
+[y, xt ] ≡ [y, x]t [y, x, x](2) and [xt , y] ≡ [x, y]t [x, y, x](2) modulo γ3u+v (X) (see,          for instance, [3], Corollary 1.1.7).
+Actually, we will apply these formulae for t = pλ , in which case p divides 2t —this is where the hypothesis on λ
+                                                                       p
+becomes relevant. Also note that γi+2 (X)            p γi+1 (X) ≤ Zk−i (X), hence [ga, gi+1 , gi+2 , . . . , gk ] = [a, gi+1 , gi+2 , . . . , gk ]
+for all a ∈ X and g ∈ γi+2 (X) γi+1 (X) .
+                                                                                                               λ
+    The proof of (i) is by induction on k − i, the result being trivial if i = k. Let c = [ap b, gi+1 , gi+2 , . . . , gk ]. We
+          λ                    λ           λ
+have [ap b, gi+1 ] = [ap , gi+1 ][ap , gi+1 , b][b, gi+1 ]; in order to compute c this product can be reduced modulo N :=
+                                                                                 λ                 λ                                
+γi+3 (X) γi+2 (X) p . By the formulae in the first paragraph, [ap , gi+1 ] ≡ [a, gi+1 ]p modulo γ3i+1 (X) γ2i+1 (X) p ≤ N .
+           λ                                                         λ                    
+Also, [ap , gi+1 , b] ∈ N . Therefore c = [a, gi+1 ]p [b, gi+1 ], gi+2 , . . . , gk . By induction hypothesis now we obtain
+                                   λ                                                                                                      λ
+c = [a, gi+1 , gi+2 , . . . , gk ]p [b, gi+1 , gi+2 , . . . , gk ]. Thus (i) is proved. Now, if g, a and b are as in (ii), then [g, ap b] ≡
+        λ                                                               λ                            λ                          
+[g, a]p [g, b] modulo γi+2 (X) γi+1 (X) p . Hence [g, ap b, gi+1 , gi+2 , . . . , gk ] = [g, a]p [g, b], gi+1 , gi+2 , . . . , gk , and the
+result in (ii) follows from (i).                                                                                                                
+      Next lemma is a special case of Theorem C, and actually is a key step in proving it and Theorem B.
+Lemma 2.4. If G is nilpotent and γn (G)/T is cyclic then γn (G) is either finite or cyclic.
+                                                           VERBAL SETS AND CYCLIC COVERINGS                                                                                   5
+
+
+Proof. Assume false. Then γn (G) is infinite and T 6= 1. We may further assume that T is minimal normal in G, hence
+T has prime order, say p, and T ≤ Z(G). Since G is nilpotent and γn (G)/T is infinite cyclic this latter factor is central
+in G and γn+1 (G) ≤ T . Lemma 2.2 shows that γn (G)  Z(G), hence γn+1 (G) = T and G has class n + 1. Among the
+nontrivial commutators of weight n in G some have infinite order, because γn (G) 6= T , and some are periodic: those
+of weight n + 1. We shall see that this leads to a contradiction, by following the pattern of the proof of Lemma 2.2.
+    Let a1 , . . . , an , a01 , . . . , a0n ∈ G; suppose that g := [a1 , . . . , an ] ∈
+                                                                                      / T and g 0 := [a01 , . . . , a0n ] ∈ T . We aim at showing
+        0
+that g = 1. Let q = 4 if p = 2 and q = p otherwise. Assume first that the n-tuples ā = (a1 , . . . , an ) and
+                                                                                                                                            λ
+ā0 = (a01 , . . . , a0n ) have distance 1, that is: for some subscript i we have ai 6= a0i but aj = a0j for all j 6= i. Then g q g 0 =
+                       λ
+[a1 , . . . , ai−1 , aqi a0i , ai+1 , . . . , an ] ∈ γ{n} (G) for all λ ∈ N, by Lemma 2.3, and so g 0 = 1 by Lemma 1.7. In the general
+case, suppose that ā and ā0 are chosen to have the least possible distance d subject to g 0 6= 1. Let i be the least integer
+such that ai 6= a0i . Then (a1 , . . . , ai−1 , ai , a0i+1 , . . . , a0n ) has distance 1 from ā0 , hence [a1 , . . . , ai−1 , ai , a0i+1 , . . . , a0n ] ∈ T ,
+and distance d − 1 from ā, hence the minimality requirement on d yields [a1 , . . . , ai−1 , ai , a0i+1 , . . . , a0n ] = 1. Similarly
+[a1 , . . . , ai−1 , a0i , ai+1 , . . . , an ] = 1. Then [a1 , . . . , ai−1 , aqi a0i , a0i+1 , . . . , a0n ] = g 0 and [a1 , . . . , ai−1 , aqi a0i , ai+1 , . . . , an ] = g q
+(see Lemma 2.3). As the n-tuples used to obtain these two commutators have distance d − 1 this is a contradiction.
+Therefore g 0 = 1. Now the proof is complete.                                                                                                                                
+
+  The proof of Theorem B immediately reduces to the case when γn (G) is torsion-free, and we shall assume this
+hypothesis in the next few lemmas. In this case Lemma 1.1 (ii) shows that γn (G) is abelian, and we can draw a useful
+consequence from Lemma 2.1.
+Lemma 2.5. If γn (G) is torsion-free and s, t, k are non-negative integers such that s + t + k + 1 = n > 2 and k > 0,
+then [s G, C, t G, γk (C)] is cyclic and central in G, and it is trivial if γn (C) = 1.
+                                                                                                                           s+t
+Proof. Let X := [s G, C, t G, γk (C)]. By repeatedly using Lemma 2.1 we obtain X τ    = [s Gτ , C, t Gτ , γk (C)] ≤ γn (C).
+Since γn (G) is finitely generated torsion-free abelian and γn (C) is cyclic, by Lemma 2.2, X is cyclic and X = 1 if
+                                                     s+t       s+t
+γn (C) = 1. Next, since γn (G) is abelian, [X, G]τ       = [X τ , G] ≤ [γn (C), G] = 1, hence [X, G] = 1. The result
+follows.                                                                                                                 
+
+   We can also argue by induction on n, the case n = 2 having been settled in [1]. The next lemma isolates a special
+case in which this argument yields the result very easily.
+Lemma 2.6. Suppose that γn (G) is torsion-free but not cyclic and n is minimal for such an example to exist. If G/C
+is cyclic then γn (C) 6= 1.
+Proof. Assume, by contradiction, γn (C) = 1, and let Γ = γn−1 (G). Since G/C is cyclic we have G0 = [G, C], hence
+[Γ, C] = [C, n−2 G, C]. Then [Γ, C] = 1 by Lemma 2.5. As a consequence Γ/Z(Γ ) is cyclic and Γ is abelian. Now
+fix x ∈ G such that G = Chxi. Then K := CΓ (x) ≤ Z(G) and the mapping θ : g ∈ Γ 7→ [g, x] ∈ γn (G) is an
+epimorphism whose kernel is K. Moreover (γ{n−1} (G))θ ⊆ γ{n} (G). It follows that γn−1 (G/K) = Γ/K is torsion-free
+and γ{n−1} (G/K) is covered by finitely many cyclic subgroups. Therefore, the minimality hypothesis on n implies
+that γn−1 (G/K) is cyclic, but γn−1 (G/K) ≃ γn (G). Thus we have a contradiction and the proof is complete.     
+
+    Now we are ready for the main result of this section, from which Theorems B and C will follow.
+Proposition 2.7. Let G be a group such that γ{n} (G) is covered by a finite set of cyclic subgroups and γn (G) is
+torsion-free. Then γn (G) is cyclic.
+Proof. We continue to argue by contradiction and employ the notation in use thus far in this section. We assume that
+n is the minimal integer for which there exists a counterexample G. By Lemma 1.1 (ii) and Proposition 1.3, γn (G)
+is abelian and G has exactly one sharp kn -covering of minimal size, call it F. As a further minimality requirement
+on G we may assume that, among all counterexamples relative to the (now fixed) integer n, our group G is such that
+|G/C| + |F| has the least possible value.
+   The first step in the proof consists in showing that at least one element of F is normal in G. For all K ∈ F and
+g ∈ G we have K g ∈ F, by Proposition 1.3, and hence K ∩ K g = 1 if K 6= K g , by Lemma 1.2. Therefore either
+K C G or KG = 1. Let M be a maximal subgroup of G containing C; then M C G, because γn (G) ≤ C. Also,
+|M/CM (γn (M ))| < |G/C|, so γn (M ) is cyclic by our minimality requirement on G. If γn (M ) 6= 1 there must exist
+K ∈ F such that K ∩ γn (M ) 6= 1. But K ∩ γn (M ) C G, hence KG 6= 1 and so K C G. Therefore, we may assume
+γn (M ) = 1. In this case [γn (G), n−1 M ] = 1, because γn (G) ≤ M . Let i be the least positive integer such that
+[γn (G), i M ] = 1. If i > 1 then [γn (G), i−1 M ]τ = [γn (G), i−2 M, M τ ] = 1, as M τ ≤ C, and [γn (G), i−1 M ] = 1 because
+γn (G) is torsion-free. This contradicts the definition of i, hence i = 1, that is, [γn (G), M ] = 1. Therefore M = C.
+Then G/C is cyclic. But we have also shown that γn (M ) = 1; this is a contradiction, in view of Lemma 2.6. We
+conclude that there is a K ∈ F such that K C G. Given such a K, let N/K = tor(γn (G)/K). Then γn (G/N ) is
+torsion-free and centralised by C/N , and γ{n} (G/N ) is covered by a set of cyclic subgroups which has size |F| − 1. By
+minimality, it follows that γn (G)/N is cyclic. Of course also N is cyclic. Thus γn (G) has rank 2.
+6                                                GIOVANNI CUTOLO AND CHIARA NICOTERA
+
+
+    Now consider the conjugation action of G on γn (G). For any x ∈ G let θ : a ∈ γn (G) 7→ [a, x] ∈ γn (G). Clearly
+θ ∈ End(γn (G)) and im θn−1 ⊆ γ{n} (G), hence im θn−1 is cyclic. If im θ is not cyclic then γn (G)/ im θ is finite, and
+it follows that rk(im θn−1 ) = rk(im θ) = 2, a contradiction. Thus [γn (G), x] is cyclic for all x ∈ G. Let X and Y be
+the centralizers in G of N and γn (G)/N respectively; of course they both contain C and have index at most 2 in G.
+Moreover X ∩ Y /C embeds in the group of all automorphisms of γn (G) stabilizing the series 1 < N < γn (G). This
+latter group is torsion-free (it is infinite cyclic), while G/C is finite, hence C = X ∩ Y . Suppose X 6= G 6= Y . Then
+there exists x ∈ G inducing the inversion map on both N and γn (G)/N . Then [γn (G), x] has rank 2, but we showed
+that [γn (G), x] must be cyclic. This contradiction proves that one of X and Y must be G; therefore |G/C| = 2 (that
+G 6= C follows from Lemma 2.2). Now let x ∈ G r C, so that G = Chxi. Then γn+1 (G) = [γn (G), x] is (infinite)
+cyclic, according to what we proved earlier. Hence Ḡ¯ := G/(γn+1 (G))2 is nilpotent but γn (Ḡ)   ¯ is neither cyclic nor
+finite. This is impossible by Lemma 2.4, and we have a contradiction, thus completing the proof.                        
+   Theorem B is an immediate consequence of Proposition 2.7: in the hypothesis of the theorem, if γn (G) is infinite
+then T = tor(γn (G)) is finite and γn (G/T ) is cyclic by Proposition 2.7. The proof of Theorem C requires some more
+argument:
+Proof of Theorem C. Suppose that G is as stated in the hypothesis, and assume that γn (G) is infinite. Let T =
+tor(γn (G)). We know from Theorem B that T is finite and γn (G)/T is (infinite) cyclic. Since G is locally finite-by-
+nilpotent this factor must be central in G. So, all we have to prove is that T = 1. Arguing by contradiction, we may
+assume that T is minimal normal in G. By Lemma 2.4 we deduce that T ∩ Z(G) = 1. Fix x ∈ Zn (G) r Zn−1 (G)
+and t ∈ T r 1. The set {g ∈ G | [x, g] ∈ Zn−2 (G)} is a proper subgroup of G, and also CG (t) < G, because
+T ∩ Z(G) = 1. Thus there exists a2 ∈ G such that [x, a2 ] ∈                 / Zn−2 (G) and [t, a2 ] 6= 1. Similarly, there exists a3 ∈ G
+such that [x, a2 , a3 ] ∈ / Zn−3 (G) and [t, a2 , a3 ] 6= 1, and, by iterating the argument, we prove the existence of elements
+a2 , a3 , . . . , an ∈ G such that u := [x, a2 , a3 , . . . , an ] 6= 1 6= [t, a2 , a3 , . . . , an ] =: g. Note that u ∈ Z(G), hence u ∈
+                                                                                                                                        / T.
+For any positive integer λ divisible by the order of g we have uλ g = [xλ t, a2 , a3 , . . . , an ], hence Lemma 1.7 may be
+invoked to obtain a contradiction. This contradiction completes the proof.                                                                
+   We still have to prove that the conclusion of Theorem C does not necessarily hold in the more general hypotheses
+of Theorem B. The following example settles this point.
+Example 2.8. For every integer n > 2 there exists a metabelian, residually nilpotent group G such that γ{n} (G) is
+covered by finitely many cyclic subgroups,           although γn (G) is neither cyclic nor finite.
+   Indeed, let G = (hai × hbi) o hyi o hxi, where a and y have infinite order, b has order 2n−2 and x has order 2, and
+conjugation is defined as follows: [a, y] = b and [b, y] = 1, x acts like the inversion map on ha, bi, and [y, x] = a. Then
+                                      i−2  i−3
+G0 = ha, bi and γi (G) = ha2 , b2 i if 2 < i ≤ n, hence γn (G) is infinite but not cyclic. On the other hand γ{n} (G)
+is contained in the set of all commutators of the form c = [aλ bµ , t1 , t2 , . . . , tn−2 ], where λ, µ ∈ Z and t1 , t2 , . . . , tn−2
+are in a (fixed) transversal T of CG (G0 ) in G. Since G is metabelian and b ∈ Zn−2 (G) such a c can be written as
+c = [a, t1 , t2 , . . . , tn−2 ]λ . Now, G/CG (G0 ) is finite; it follows that the set { h[a, t1 , t2 , . . . , tn−2 ]i | t1 , t2 , . . . , tn−2 ∈ T } is
+a (sharp, and certainly redundant) kn -covering of G.
+
+                                                                   References
+[1] G.A. Fernández-Alcober and P. Shumyatsky, On groups in which commutators are covered by finitely many cyclic subgroups, J. Algebra
+    319 (2008), no. 11, 4844–4851.
+[2] S.V. Ivanov, P. Hall’s conjecture on the finiteness of verbal subgroups, Izv. Vyssh. Uchebn. Zaved. Mat. (1989), no. 6, 60–70.
+[3] C.R. Leedham-Green and S. McKay, The structure of groups of prime power order, London Mathematical Society Monographs. New
+    Series, vol. 27, Oxford University Press, Oxford, 2002, Oxford Science Publications.
+[4] D.J.S. Robinson, Finiteness conditions and generalized soluble groups, Part 1, Springer-Verlag, New York, 1972.
+[5] J.R. Rogério and P. Shumyatsky, A finiteness condition for verbal subgroups, J. Group Theory 10 (2007), no. 6, 811–815.
+
+  Università degli Studi di Napoli “Federico II”, Dipartimento di Matematica e Applicazioni “R. Caccioppoli”, Via Cintia
+— Monte S. Angelo, I-80126 Napoli, Italy
+  E-mail address: cutolo@unina.it
+  URL: http://www.dma.unina.it/~cutolo/
+
+   Università degli Studi di Salerno, Dipartimento di Matematica e Informatica, Via Ponte don Melillo, I-84084 Fisciano
+(SA), Italy
+   E-mail address: cnicotera@unisa.it
+

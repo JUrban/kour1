@@ -2676,3 +2676,13 @@ Wrote a complete deletion-lemma proof of the class-dependent bound p^(c+1), wher
 All6,561 words and19,683 generator edges in the smaller3^8 example pass an independent convolution checker, together with every cube, cyclic image and five forced corruptions. Native GAP independently builds a faithful16-dimensional matrix group and verifies its isomorphism with the pilot quotient. The35-file source/evidence replay completed with actual exit0 and terminal sentinel (tool chunk c1aad5). General p>=5 and partial-result priority remain unresolved; new complete candidates44, outside reviews0.
 
 At 2026-09-12T10:34:23.296460+00:00, the n=7 snapshot still has no complete aggregate proof status. Three workers have pass markers but their actual exit records await collection by the sequential controller; three workers remain live, combined RSS27,878,024KiB. No restart or full n=7 claim.
+
+## 2026-09-12 10:57 UTC — 21.98 nilpotent case and two source audits
+
+The missing general finite-generation/FC reduction for cyclically covered word values is exactly prior Cutolo--Nicotera2010 Lemma1.1. Its full author version was read, including the lower-central proof, and the lemma page viewed. A separate univariate polynomial path gives the finite-by-cyclic conclusion for every word in locally finite-by-nilpotent groups; torsion-free locally nilpotent groups give a cyclic verbal subgroup. Jennings1955 remains the explicit classical embedding import. No general central-verbal-subgroup extension or partial novelty is claimed.
+
+The35-file evidence replay completed with actual exit0 and terminal sentinel (tool chunk40ace6). Native GAP and independent rational polynomial arithmetic agree;48 paths,384 integer evaluations and100 explicit distinct directions pass. The initial invalid GAP Int(boolean) run had GAP exit0 but stderr and no sentinel, and its wrapper correctly returned1; that rejected evidence is retained.
+
+The complete Poss1975 PDF was finally obtained through its publisher DOI. All six pages were read and two viewed. It proves constant-embedding special cases and states one higher-rank case without proof, leaving17.115 unresolved. Both full questions remain open here. New complete candidates44, outside reviews0.
+
+n=7 snapshot 2026-09-12T10:56:12.658249+00:00: 3 shard pass markers, live PIDs [77396, 77399, 77400], status VERIFYING. No full n=7 claim before the completed aggregate.
