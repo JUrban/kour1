@@ -137,3 +137,8 @@ Thus the conjecture holds for a given permutation group exactly when representat
 ## 12 September, 19:22 UTC: fresh PDF scope review
 
 All 46 original statements were freshly rendered and visually compared with the principal proofs' stated scope. No new scope discrepancy requiring withdrawal was found. The 15.76(b) result remains restricted to the full varieties of fixed derived length. See `reports/pdf-statement-review.md` and `research/triage-2026-09-12-1920.md`. This is same-agent scope review, not outside acceptance or mathematical certificate replay; the candidate total remains 46.
+
+
+## 12 September, 19:52 UTC: 21.121(b), soluble groups
+
+A new partial deduction gives p-Jordan exponent at most two for groups whose finite subgroups are soluble, and for uniformly bounded soluble index. In a finite soluble G the chosen abelian p-prime subgroup is characteristic and has index at most J^3 |G_(p)|^2. The normal-Sylow case has the sharper Frattini bound; the affine family over the algebraic closure of F_p has sharp attained exponent two. All five new control/audit processes passed with empty stderr. The full part (b) is not solved, priority is unestablished, and the complete count remains 46. Start with `research/21.121b-soluble-proof.md` and `research/21.121b-report.md`.

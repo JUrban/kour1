@@ -1,8 +1,9 @@
 # Current status
 
-Updated: 2026-09-12T19:22:54.531578+00:00.
+Updated: 2026-09-12T19:52:05.436746+00:00.
 
 - Active phase: proof audit, exact searches, and broader problem triage.
+- **21.121(b) soluble partial:** a weak Jordan constant J gives characteristic abelian p-prime subgroups of index at most J^3 times the square of the Sylow p-order in every finite soluble subgroup. The result extends to uniformly bounded soluble index, hence every virtually soluble p-Jordan group has exponent at most two. Affine groups show two is optimal. Native and integer checks agree on 269 affine subgroups and eight further cases; A5 rejects deleting the soluble hypothesis. General (b) remains unresolved and the count stays 46. See `research/21.121b-report.md`.
 - **Fresh PDF scope review:** all 46 original candidate statements were rendered and read visually against the principal theorem statements. No new scope discrepancy requiring withdrawal was found; the full-variety qualification for 15.76(b) remains explicit. Two rendering failures were retained and corrected. This is same-agent scope review, not a replay of mathematical certificates or outside acceptance. See `reports/pdf-statement-review.md`.
 - **Review handoff checkpoint:** `reports/REVIEW_GUIDE.md` and `research/complete-candidate-ledger.json` now index all 46 complete candidates. The inventory checks 1,870 historical bindings across 1,252 files, with no missing files or digest mismatches. Nineteen matching cached sources were added to Git after the first inventory flagged their archival omission; both runs are retained. This is an integrity check, not outside acceptance or a rerun of all mathematical verifiers.
 - **20.89 / 19.83 bounded finite subgroups:** in every characteristic, uniformly bounded orders of finite subgroups imply almost Engel closure with one finite characteristic sink. If a torsion-free subgroup has index d, the exhibited kernel has order dividing d. The elementary proof and its eight-file integrity manifest add partial coverage only; count remains 46. See `research/20.89-bounded-torsion-proof.md` and its report.

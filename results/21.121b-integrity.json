@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-09-12T19:56:50.370486+00:00",
+  "scope": "Artifact/process/link integrity, not a mathematical replay or outside review",
+  "accepted": true,
+  "bound_files_before_this_record": 33,
+  "local_markdown_links_checked": 6,
+  "successful_control_records": 5,
+  "candidate_count": 46,
+  "new_complete_candidates": 0,
+  "outside_reviews": 0,
+  "first_artifact_guard": {
+    "tool_chunk": "57ec78",
+    "actual_exit": 1,
+    "reason": "git diff --check rejected raw GAP trailing spaces; raw bytes retained"
+  },
+  "whitespace_check_scope": "Authored Markdown, scripts and JSON only; raw logs and cached sources excluded",
+  "second_artifact_guard": {
+    "tool_chunk": "13958f",
+    "actual_exit": 1,
+    "reason": "Incorrect hard-coded expected staged count 33; actual intended count 34; replaced by exact path-set equality"
+  }
+}

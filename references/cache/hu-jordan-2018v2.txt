@@ -1,0 +1,466 @@
+                                              JORDAN PROPERTY FOR ALGEBRAIC GROUPS AND AUTOMORPHISM
+                                             GROUPS OF PROJECTIVE VARIETIES IN ARBITRARY CHARACTERISTIC
+
+                                                                                              FEI HU
+
+
+                                                  A BSTRACT. We show an analogue of Jordan’s theorem for algebraic groups defined over a field
+                                                  k of arbitrary characteristic. As a consequence, a Jordan-type property holds for the automor-
+                                                  phism group of any projective variety over k.
+arXiv:1804.10946v2 [math.AG] 25 Sep 2018
+
+
+
+
+                                                                                      1. I NTRODUCTION
+
+                                           In 1878, Camille Jordan [Jor78] proved the following remarkable theorem.
+
+                                           Theorem 1.1 (cf. [Jor78]). For any positive integer n, there exists a constant J(n) such that
+                                           any finite subgroup Γ of GLn over a field of characteristic zero contains a normal abelian
+                                           subgroup A of index ≤ J(n).
+
+                                              However, the above theorem is false for fields of characteristic p > 0 due to the existence
+                                           of unipotent elements of finite order. For instance, the group GLn (Fp ) contains arbitrarily
+                                           large subgroups of the form SLn (Fpr ) which are simple modulo their centers. Nevertheless, for
+                                           any finite subgroup Γ of GLn (k) of order not divisible by char(k), there still exists a normal
+                                           abelian subgroup A of Γ with [Γ : A] ≤ J(n) for the same J(n) as in Theorem 1.1 (see
+                                           e.g. [BF66, 2.9]). Later, Serre showed that the Cremona group Cr2 (k) of rank 2 over a field
+                                           k also has this property (cf. [Ser09, Theorem 5.3]). This motivates us to make the following
+                                           definition.
+
+                                           Definition 1.2. Let p a prime number or zero. A group G is called a generalized p-Jordan
+                                           group, if there exists a constant J(G), depending only on G, such that every finite subgroup Γ
+                                           of G whose order is not divisible by p contains a normal abelian subgroup A of index ≤ J(G).
+                                           We also call such a group generalized Jordan if there is no confusion caused (e.g., in practice,
+                                           p will always denote the characteristic of the ground field k).
+
+                                              Note that when p = 0, this notion coincides with Popov’s [Pop11, Definition 2.1]. The
+                                           above-mentioned results can be reformulated as follows. Both general linear groups GLn (k)
+                                           and the Cremona group Cr2 (k) of rank 2 are generalized p-Jordan, where p = char(k). Our
+                                           first result below shows that in addition to above, any algebraic group is generalized Jordan.
+
+                                             2010 Mathematics Subject Classification. 14G17, 14L10.
+                                             Key words and phrases. positive characteristic, Jordan property, algebraic group.
+                                             The author was partially supported by a UBC-PIMS Postdoctoral Fellowship.
+                                                                                                 1
+2                                             FEI HU
+
+Theorem 1.3. Any algebraic group G defined over a field k of characteristic p ≥ 0 is gener-
+alized p-Jordan. Namely, there exists a constant J(G), depending only on G, such that every
+finite subgroup Γ of G(k) whose order is not divisible by p contains a normal abelian subgroup
+of index ≤ J(G).
+
+Remark 1.4. Even in characteristic zero, Theorem 1.3 is nontrivial and has just been proved
+by Meng and Zhang recently (cf. [MZ18, Theorem 1.3]). The main obstruction is that the
+Jordan property may not be preserved under group extensions (see e.g. [Pop11, Remark 2.12]
+or [Pop14, Example 7]). See also [Zar14] for a counterexample. Note, however, that the
+argument in [MZ18] also depends on the Levi decomposition of connected algebraic groups
+(cf. [Mos56]), which is not available in prime characteristic (see e.g. [Bri15, Remark 4.9] and
+references therein). Our approach is based on the investigation of the Jordan property of quo-
+tient groups (see e.g. Lemma 2.2 and Step 2 in the proof of Theorem 1.3).
+
+   Another generalization of Jordan’s theorem to prime characteristic was due to Brauer and
+Feit [BF66] by allowing arbitrary finite subgroup Γ of GLn (k) whose order may be divisible
+by p > 0. They showed that Γ contains a normal abelian subgroup whose index is bounded by
+a constant depending on n as well as the order of the p-Sylow subgroup Γ(p) of Γ. Larsen and
+Pink [LP11] has subsequently extended Brauer–Feit [BF66] as follows.
+
+Theorem 1.5 (cf. [LP11, Theorem 0.4]). For any positive integer n, there exists a constant
+J ′ (n) such that any finite subgroup Γ of GLn over a field k of characteristic p > 0 contains a
+normal abelian p′ -subgroup A of index ≤ J ′ (n) · |Γ(p) |3 .
+
+   Here a finite group is called a p-group (resp. p′ -group) if its order is some power of p (resp.
+relatively prime to p). In an analogous way, we introduce the following notion.
+
+Definition 1.6. Let p be a prime number. A group G is called a p-Jordan group, if there exist
+constants J ′ (G) and e(G), depending only on G, such that every finite subgroup Γ of G contains
+a normal abelian p′ -subgroup A of index ≤ J ′ (G) · |Γ(p) |e(G) .
+
+    Below is our second main result extending Theorem 1.5 to arbitrary algebraic groups.
+
+Theorem 1.7. Any algebraic group G defined over a field k of characteristic p > 0 is p-Jordan.
+That is, there are constants J ′ (G) and eG , depending only on G, such that any finite subgroup
+Γ of G(k) contains a normal abelian p′ -subgroup A of index ≤ J ′ (G) · |Γ(p) |e(G) .
+
+Remark 1.8. We may think of Theorem 1.7 as a stronger version of Theorem 1.3 in positive
+characteristic, if we only care about the existence of those constants (i.e., J(G) and J ′ (G)).
+Actually, we will see in Section 3 that our constant J(G) = cG J(n)cG , where cG is the number
+of connected components of G and n is the least dimension of a faithful representation of
+(G◦ )aff over k; see §2.2 for the meaning of (G◦ )aff . But J ′ (G) is much more complicated and
+involved. Also, it will be shown that e(G) = 3(rG + 1)cG , where rG is bounded by the rank of
+(G◦ )aff .
+             JORDAN PROPERTY FOR ALGEBRAIC GROUPS AND AUTOMORPHISM GROUPS                         3
+
+   In characteristic zero, it has also been proved by Meng and Zhang that the automorphism
+group Aut(X) is Jordan for any projective variety X (cf. [MZ18, Theorem 1.6]). In this note,
+as a byproduct of our main theorems, we also deduce two Jordan-type properties for automor-
+phism groups of projective varieties in arbitrary characteristic.
+
+Theorem 1.9. Let X be a projective variety defined over a field k of characteristic p ≥ 0.
+Then there exists a constant JX , depending only on X, such that every finite p′ -subgroup Γ of
+Aut(X) contains a normal abelian subgroup A of index ≤ JX .
+
+Theorem 1.10. Let X be a projective variety defined over a field k of characteristic p > 0.
+Then there exist constants JX′ and eX , depending only on X, such that every finite subgroup Γ
+of Aut(X) contains a normal abelian p′ -subgroup A of index ≤ JX′ · |Γ(p) |eX .
+
+   We also note that in characteristic zero, Prokhorov and Shramov proved that the group
+Bir(X) of birational self-maps of any non-uniruled variety X is Jordan (cf. [PS14, Theo-
+rem 1.8(ii)]). Assuming the Borisov–Alexeev–Borisov conjecture, which was recently proved
+in Birkar’s pioneering work [Bir16], they even showed in [PS16] that Bir(X) is (uniformly)
+Jordan for any rationally connected variety X, generalizing Serre’s [Ser09, Theorem 5.3] (the
+characteristic zero side). Quite recently, as a consequence of the aforementioned Jordan prop-
+erty, Reichstein obtained new low bounds on the essential dimension of a series of finite groups
+which was not previously known even for special cases (cf. [Rei18, Theorem 3]). At the end of
+our introduction, we raise the following natural question (see also [Ser09, Question 6.1] for a
+related question).
+
+Question 1.11. Let Crn (k) be the Cremona group of rank n ≥ 2 defined over a field k of
+characteristic p > 0. Then is Crn (k) p-Jordan?
+
+                                       2. P RELIMINARIES
+
+2.1. Two group-theoretic lemmas. We need the following two group-theoretic lemmas which
+are quite useful in dealing with (generalized) p-Jordan groups (see Definitions 1.2 and 1.6).
+See [Pop11, Lemmas 2.6 and 2.8] and [Pop14, Theorem 3] for related results.
+
+Lemma 2.1. Let G1 and G2 be two groups and G their direct product G1 × G2 .
+(1) If G1 and G2 are generalized p-Jordan, then so is G1 × G2 and one can take J(G1 × G2 ) =
+    J(G1 )J(G2 ).
+(2) If G1 and G2 are p-Jordan, then so is G1 ×G2 and one can take J ′ (G1 ×G2 ) = J ′ (G1 )J ′ (G2 ),
+    e(G1 × G2 ) = e(G1 ) + e(G2 ) − 1.
+
+Proof. (1) It follows directly from [Pop14, Theorem 3(2)]. For the sake of completeness, we
+present the proof here. Let G denote the direct product G1 × G2 and πi : G → Gi the projection
+homomorphism. Let Γ be a finite p′ -subgroup of G. Then Γi := πi (Γ) ≤ Gi contains a normal
+abelian subgroup Ai such that
+                                       [Γi : Ai ] ≤ J(Gi ).
+4                                                     FEI HU
+
+             ei := π −1 (Ai ) ∩ Γ is normal in Γ and Γ/A
+The subgroup A                                             ei is isomorphic to Γi /Ai . We thus
+                    i
+have
+                               [Γ : Aei ] = [Γi : Ai ] ≤ J(Gi ).
+           e1 ∩ A
+Since A := A    e2 is the kernel of the diagonal homomorphism
+
+                                                  e1 × Γ/A
+                                           Γ −→ Γ/A      e2
+
+                                           ei , we conclude that
+defined by the canonical projections Γ → Γ/A
+                                           e1 ] · [Γ : A
+                            [Γ : A] ≤ [Γ : A           e2 ] ≤ J(G1 )J(G2 ).
+
+By the construction, A is a subgroup of the abelian group A1 × A2 , so is abelian. Hence A is a
+normal abelian subgroup of Γ of index ≤ J(G1 )J(G2 ) as claimed.
+  (2) We need to modify the above proof appropriately. More precisely, using the notation
+there, let Γ be a finite subgroup of G = G1 × G2 . Then Γi := πi (Γ) ≤ Gi contains a normal
+abelian p′ -subgroup Ai such that
+
+                                   [Γi : Ai ] ≤ J ′ (Gi ) · |(Γi )(p) |e(Gi ) .
+                                    ei )(p) | because Γ/A
+Note that |Γ(p) | = |(Γi )(p) | · |(A                   ei ≃ Γi /Ai and Ai is a p′ -subgroup of Γi . Let
+A := Ae1 ∩ Ae2 ≤ A1 × A2 as above, which is a normal abelian p′ -subgroup of Γ. It follows that
+
+                                   |Γ/Ae1 | · |Γ/A  e2 |
+           [Γ : A] = |Γ/A| =
+                                      |Γ/A e1 Ae2 |
+                       J ′ (G1 ) · |(Γ1 )(p) |e(G1 ) · J ′ (G2 ) · |(Γ2 )(p) |e(G2 )
+                   ≤
+                                           |(Γ/A  e1 A e2 )(p) |
+                                                                                    e1 A
+                                          |(Γ1 )(p) |e(G1 ) · |(Γ2 )(p) |e(G2 ) · |(A   e2 )(p) |
+                   = J ′ (G1 )J ′ (G2 )
+                                                                 |Γ(p) |
+                                                                                    e1 )(p) | · |(A
+                                          |(Γ1 )(p) |e(G1 ) · |(Γ2 )(p) |e(G2 ) · |(A             e2 )(p) |
+                   = J ′ (G1 )J ′ (G2 )
+                                                                       |Γ(p) |
+                   = J ′ (G1 )J ′ (G2 ) · |(Γ1 )(p) |e(G1 )−1 · |(Γ2 )(p) |e(G2 )−1 · |Γ(p) |
+                   ≤ J ′ (G1 )J ′ (G2 ) · |Γ(p) |e(G1 )+e(G2 )−1 ,
+
+which proves Lemma 2.1.                                                                                       
+
+Lemma 2.2. Let G be a group and K a finite normal subgroup of G.
+(1) Suppose that G is generalized p-Jordan and one of the following conditions holds:
+      (i) the order of K is not divisible by p,
+     (ii) p > 0 and K has a normal Sylow p-subgroup K(p) .
+    Then G/K is generalized p-Jordan and one can take J(G/K) = J(G).
+(2) Suppose that G is p-Jordan. Then G/K is p-Jordan and one can take
+
+                       J ′ (G/K) = J ′ (G) · |K(p) |e(G) ,           e(G/K) = e(G).
+            JORDAN PROPERTY FOR ALGEBRAIC GROUPS AND AUTOMORPHISM GROUPS                         5
+
+Proof. (1) The first case is easy; see e.g. [Pop11, Lemma 2.6]. We now consider the case that
+p > 0 and K(p) is nontrivial. Let Γ be a finite p′ -subgroup of G/K. Let H be the inverse of Γ
+in G. Since p ∤ |Γ| by the assumption, K(p) is also a Sylow p-subgroup of H. It follows from
+K E H that K(p) is also normal in H. Hence K(p) = H(p) is the normal Sylow p-subgroup of
+H. Namely, we have the following exact sequence:
+                            1 −→ K/K(p) −→ H/H(p) −→ Γ −→ 1.
+By the Schur–Zassenhaus theorem (cf. [Rob96, Theorem 9.1.2]), there is a complement KC
+(resp. HC ) of K(p) = H(p) in K (resp. H), which satisfies that K = K(p) ⋊ KC (resp.
+H = H(p) ⋊ HC ). (Their theorem also states that all complements are conjugate to each other,
+here we do not need this conjugation result though). Then we rewrite the above exact sequence
+as follows:
+                              1 −→ KC −→ HC −→ Γ −→ 1.
+Note that our HC now is a finite p′ -subgroup of G. It follows that there is a normal abelian
+subgroup AHC of HC such that [HC : AHC ] ≤ J(G). Let A be the image of AHC in Γ. Then
+[Γ : A] ≤ [HC : AHC ] ≤ J(G).
+  (2) Let Γ be a finite subgroup of G/K and H the inverse of Γ in G. Then H contains a
+normal abelian p′ -subgroup AH of index ≤ J ′ (G) · |H(p) |e(G) . Let A be the image of AH in Γ.
+Noting that |H(p) | = |K(p) | · |Γ(p) |, we thus have
+           [Γ : A] ≤ [H : AH ] ≤ J ′ (G) · |H(p) |e(G) = J ′ (G) · |K(p) |e(G) · |Γ(p) |e(G) .
+This yields the assertion (2) and hence Lemma 2.2 follows.                                       
+
+2.2. Two algebraic group-theoretic theorems. Let G be a connected algebraic group defined
+over a perfect field k. We record the following classical decomposition theorem of algebraic
+groups. By the Chevalley’s structure theorem, there is a smallest connected normal affine
+subgroup scheme Gaff of G such that the quotient G/Gaff is an abelian variety (cf. [Bri17,
+Theorem 2]). On the other hand, G has a smallest connected normal subgroup scheme Gant
+such that the quotient G/Gant is affine; moreover, Gant is smooth and contained in the center
+Z(G) of G (cf. [Ros56, §5]). We have the following Rosenlicht’s decomposition theorem (see
+e.g. [Bri17, §5.1]).
+
+Theorem 2.3 (cf. [Bri17, Theorem 5.1.1 and Remark 5.1.2]). Keep the above notation and
+assumptions. The following statements hold.
+(1) G = Gaff · Gant ≃ Gaff × Gant /(Gaff ∩ Gant ).
+(2) Gaff ∩ Gant contains (Gant )aff .
+(3) The quotient (Gaff ∩ Gant )/(Gant )aff is finite.
+(4) The multiplication map of G induces an isogeny
+                                m : (Gaff × Gant )/(Gant )aff −→ G,
+    where (Gant )aff is viewed as a subgroup scheme of Gaff × Gant via x 7→ (x, x−1 ).
+6                                                    FEI HU
+
+  The theorem below is a special case of a theorem due to Lucchini Arteche [LA17] which
+plays an important role in the proof of our main theorems. It could be regarded as an effective
+version of Brion’s theorem on the existence of the quasi-splitness of an extension of algebraic
+groups with finite quotient (cf. [Bri15, Theorem 1.1]).
+Theorem 2.4 (cf. [LA17, Theorem 3.2]). Let k be an algebraically closed field of characteristic
+p ≥ 0. Let Γ be a smooth finite k-group of order n, and G an arbitrary smooth k-group. Then
+for any group extension
+                                1 −→ G −→ H −→ Γ −→ 1,
+there exist a finite smooth k-subgroup S of G and a commutative diagram with exact rows
+                              1      / S
+                                             _
+                                                      / F
+                                                             _
+                                                                     / Γ   / 1
+
+
+                                                       
+                              1      / G             / H             / Γ   / 1.
+
+Moreover, if G is an algebraic torus with rank r, then S can be taken as a subgroup of the
+n-torsion subgroup G[n] of G. In particular, the order of S divides nr .
+
+                                  3. P ROOFS OF THEOREMS
+
+We are eventually interested only in questions concerning algebraic groups or varieties defined
+over algebraically closed fields. So from now on, we will assume that k is algebraically closed.
+
+Proof of Theorem 1.3. We may assume that G is smooth (or equivalently, reduced), since we
+only consider finite subgroups of the group G(k) of k-rational points. We first consider the
+case that G is connected. In the following Steps 1-3, we will show the theorem under this case.
+S TEP 1. Let Gaff and Gant denote the affine part and the anti-affine part of G, respectively (see
+§2.2). We claim that Gaff × Gant is generalized p-Jordan. Indeed, since both Gaff and Gant are
+generalized p-Jordan, the claim follows from Lemma 2.1(1). More precisely, let n be the least
+dimension of a faithful representation of Gaff over k. Then there is a constant J(n) which is
+essentially from Theorem 1.1 such that every finite p′ -subgroup Γ of Gaff × Gant contains a
+normal abelian subgroup of index ≤ J(n).
+S TEP 2. Let N denote (Gant )aff . Consider the following exact sequence of algebraic groups:
+                    1 −→ N −→ Gaff × Gant −→ (Gaff × Gant )/N −→ 1.
+We claim that the quotient group (Gaff × Gant )/N is generalized p-Jordan. Let Γ be a finite
+p′ -subgroup of (Gaff × Gant )/N. Let H be the inverse (or pullback) of the finite group Γ in
+Gaff × Gant (cf. [Bri17, Proposition 2.8.3]). Then according to Theorem 2.4, there exist a finite
+smooth k-subgroup S of N and a commutative diagram of algebraic groups:
+                              1       / S
+                                                 _
+                                                      / F
+                                                                 _
+                                                                     / Γ    / 1
+
+                                                                                             (3.1)
+                                                        
+                              1      / N              / H            / Γ   / 1.
+             JORDAN PROPERTY FOR ALGEBRAIC GROUPS AND AUTOMORPHISM GROUPS                             7
+
+  In characteristic zero, there is a normal abelian subgroup AF of F such that [F : AF ] ≤ J(n)
+by Step 1. It follows that the image A of AF in Γ is a normal abelian subgroup of Γ of index
+[Γ : A] ≤ [F : AF ] ≤ J(n).
+   Now we assume that p = char(k) > 0. By [Bri17, Proposition 5.5.1], any anti-affine
+group over k is a semi-abelian variety. Thus N = (Gant )aff is an algebraic torus over k. In
+particular, N is commutative and so is S. So S(p) is the unique normal Sylow p-subgroup of
+S. By the assumption on Γ that p ∤ |Γ|, S(p) is also a Sylow p-subgroup of F . It follows from
+S E F that S(p) is also normal in F . Then the Schur–Zassenhaus theorem asserts that there
+are complements SC and FC of S(p) = F(p) in S and F respectively; see also the proof of
+Lemma 2.2(1). It follows that FC is a p′ -subgroup of Gaff × Gant and hence contains a normal
+abelian subgroup AFC of index ≤ J(n) by Step 1 as in the previous case; the rest is the same.
+
+S TEP 3. By Rosenlicht’s decomposition Theorem 2.3, we have the following exact sequence
+of algebraic groups:
+                                                              m
+                          1 −→ K −→ (Gaff × Gant )/N −−→ G −→ 1,                                  (3.2)
+where N = (Gant )aff as in Step 2 and K := (Gaff ∩ Gant )/N is a finite group so that m, induced
+from the multiplication map of G, is an isogeny. Note that Gant is commutative (cf. [Bri17,
+Proposition 3.3.5]). Then K is abelian and hence K(p) is the normal Sylow p-subgroup of K.
+Let Γ be a finite p′ -subgroup of G. It follows from Lemma 2.2(1) and Step 2 that Γ contains a
+normal abelian subgroup A of index ≤ J(n).
+
+S TEP 4. Finally, with the aid of [Pop11, Lemma 2.11], we are able to deal with non-connected
+algebraic groups as well. Indeed, let G◦ be the neutral component of G. Denote by cG the order
+of the group π0 (G) := G/G◦ of connected components of G. Then any finite p′ -subgroup Γ of
+G contains a normal abelian subgroup A of index ≤ cG J(n)cG , where n is the least dimension
+of a faithful representation of (G◦ )aff over k.
+
+  We finally conclude the proof of Theorem 1.3 by letting J(G) = cG J(n)cG .                         
+
+Proof of Theorem 1.7. The proof of Theorem 1.7 basically follows the strategy of the proof of
+Theorem 1.3. Note, however, that the group Γ may be of order divisible by p now.
+    We first consider the case that G is a connected algebraic group. We may assume that k is
+algebraically closed. In Step 1, we have that J ′ (Gaff ) = J ′ (n), e(Gaff ) = 3 by Theorem 1.5, and
+J ′ (Gant ) = 1, e(Gant ) = 1 because Gant is commutative (cf. [Bri17, Proposition 3.3.5]). Here n
+is the least dimension of a faithful representation of Gaff over k as usual. Thus by Lemma 2.1(2),
+J ′ (Gaff × Gant ) = J ′ (Gaff )J ′ (Gant ) = J ′ (n) and e(Gaff × Gant ) = e(Gaff ) + e(Gant ) − 1 = 3.
+In other words, any finite subgroup Γ of Gaff × Gant contains a normal abelian p′ -subgroup of
+index ≤ J ′ (n) · |Γ(p) |3 .
+  Then in Step 2, we claim that any finite subgroup Γ of (Gaff × Gant )/N contains a normal
+abelian p′ -subgroup of index ≤ J ′ (n) · |Γ(p) |3(rG +1) , where rG is the rank of the algebraic torus
+N = (Gant )aff which is further bounded by the rank of Gaff . Indeed, we follow the argument
+8                                                   FEI HU
+
+as in the proof of Theorem 1.3 and get the commutative diagram (3.1). By the previous step,
+F contains a normal abelian p′ -subgroup AF of index ≤ J ′ (n) · |F(p) |3 . Note that Theorem 2.4
+also yields that the order of S divides |Γ|rG . In particular, |S(p) | divides |Γ(p) |rG . Hence the
+image A of AF in Γ is a normal abelian p′ -subgroup of Γ such that
+                                                                           3
+     [Γ : A] ≤ [F : AF ] ≤ J ′ (n) · |F(p) |3 = J ′ (n) · |S(p) | · |Γ(p) | ≤ J ′ (n) · |Γ(p) |3(rG +1) ,
+
+as claimed.
+  In Step 3, we consider the exact sequence (3.2). Recall that K := (Gaff ∩ Gant )/N is a finite
+group (depending on G canonically). Let Γ be a finite subgroup of G. Then it follows from the
+previous step and Lemma 2.2(2) that Γ contains a normal abelian p′ -subgroup A of index
+
+                             [Γ : A] ≤ J ′ (n) · |K(p) |3(rG +1) · |Γ(p) |3(rG +1) .
+
+  Lastly, we consider the case that G may be non-connected. As before, let π0 (G) = G/G◦
+denote the group of connected components of G and cG = |π0 (G)|. Then any finite subgroup
+Γ of G contains a normal abelian p′ -subgroup A of index at most
+                                                 cG
+         ′            3(rG +1)           3(rG +1)
+   cG J (n) · |K(p) |          · |Γ(p) |              = cG J ′ (n)cG · |K(p) |3(rG +1)cG · |Γ(p) |3(rG +1)cG ,
+
+where n is the least dimension of a faithful representation of (G◦ )aff over k.
+  Let J ′ (G) denote cG J ′ (n)cG · |K(p) |3(rG +1)cG and e(G) := 3(rG + 1)cG . We thus complete
+the proof of Theorem 1.7.                                                                     
+
+  Given a projective variety X defined over k, the automorphism group scheme AutX of
+X is locally of finite type over k and the automorphism group Aut(X) is just the rational
+k-points of AutX , i.e., Aut(X) = AutX (k); in particular, the reduced neutral component
+(Aut◦X )red of AutX is a smooth algebraic group defined over k (see e.g. [Bri17, §7]). We
+denote (Aut◦X )red (k) by Aut◦ (X).
+
+Proof of Theorem 1.9. Let G := (Aut◦X )red and Γ◦ := Γ ∩ Aut◦ (X). Applying Theorem 1.3
+to Γ◦ ≤ G(k), there is a normal abelian subgroup AΓ◦ of Γ◦ of index ≤ J(G) = J(n), where
+n is the least dimension of a faithful representation of Gaff over k. By [MZ18, Lemma 2.5],
+there is a constant ℓX depending only on X such that [Γ : Γ◦ ] ≤ ℓX (note that their proof is
+independent of the characteristic; see [MZ18, Remark 2.6]). It follows that
+                                                             |Γ/Γ◦ |
+                                         \                    \
+                                  A :=         g −1AΓ◦ g =             gi−1 AΓ◦ gi
+                                         g∈Γ                  i=1
+
+is a normal abelian subgroup of Γ, where gi ’s are representatives of Γ/Γ◦ . Note that gi−1AΓ◦ gi
+is a normal abelian group of Γ◦ of index ≤ J(n) for each i. This yields that the index of A in
+Γ◦ is at most J(n)ℓX (see also [Pop11, Lemma 2.11]). We thus have
+
+                               [Γ : A] = [Γ : Γ◦ ] · [Γ◦ : A] ≤ ℓX J(n)ℓX .
+
+To conclude the proof, we let JX := ℓX J(n)ℓX .                                                            
+               JORDAN PROPERTY FOR ALGEBRAIC GROUPS AND AUTOMORPHISM GROUPS                                      9
+
+Remark 3.1. In fact, using a theorem due to Chermak and Delgado (cf. [Isa08, Theorem 1.41]),
+there exists a characteristic (and hence normal) abelian subgroup M of Γ such that
+                      [Γ : M] ≤ [Γ : AΓ◦ ]2 = [Γ : Γ◦ ]2 · [Γ◦ : AΓ◦ ]2 ≤ ℓ2X J(n)2 .
+Note, however, that the construction of this so-called Chermak–Delgado subgroup M of Γ is
+independent of AΓ◦ (see [Isa08, Corollary 1.45]). Thus we do not know whether M is still a
+subgroup of AΓ◦ so that this argument breaks down in the proof of Theorem 1.10 (since M may
+not be a p′ -subgroup of an arbitrary finite subgroup Γ of G(k)).
+
+Proof of Theorem 1.10. Let G := (Aut◦X )red and Γ◦ := Γ ∩ Aut◦ (X) as above. Then applying
+Theorem 1.7 to Γ◦ ≤ G(k), there is a normal abelian p′ -subgroup AΓ◦ of Γ◦ such that
+                                    [Γ◦ : AΓ◦ ] ≤ J ′ (G) · |Γ◦(p) |3(rG +1) ,
+where Γ◦(p) is the Sylow p-subgroup of Γ◦ and rG is the rank of (Gant )aff . As in the proof of
+Theorem 1.9, we also have [Γ : Γ◦ ] ≤ ℓX for some constant ℓX depending only on X. Similarly,
+there is a normal abelian p′ -subgroup A of Γ of index
+                                                          ℓX
+                   ◦    ◦               ′       ◦ 3(rG +1)
+     :           :        :
+  [Γ A] = [Γ Γ ] · [Γ A] ≤ ℓX J (G) · |Γ(p) |                  ≤ ℓX J ′ (G)ℓX · |Γ(p) |3(rG +1)ℓX .
+
+The corollary follows by letting JX′ := ℓX J ′ (G)ℓX and eX = 3(rG + 1)ℓX .                                     
+
+Remark 3.2. It is known that if an algebraic torus T acting faithfully on an algebraic variety X,
+then T acts generically freely on X (cf. [Dem70, §1.6, Corollaire 1]). This yields that
+                               rG = rank(Gant )aff ≤ rank Gaff ≤ dim X.
+
+Acknowledgments. The author would like to thank Zinovy Reichstein for his support, many
+inspiring discussions and valuable comments on an earlier draft. He also thanks De-Qi Zhang
+for several helpful suggestions. He is grateful to an anonymous referee for pointing out an
+inaccuracy in a former version.
+
+                                                R EFERENCES
+[BF66]  Richard Brauer and Walter Feit, An analogue of Jordan’s theorem in characteristic p, Ann. of Math. (2)
+        84 (1966), 119–131. MR0200350 1, 2
+[Bir16] Caucher Birkar, Singularities of linear systems and boundedness of Fano varieties, preprint (2016),
+        33 pp., arXiv:1609.05543. 3
+[Bri15] Michel Brion, On extensions of algebraic groups with finite quotient, Pacific J. Math. 279 (2015), no. 1-
+        2, 135–153. MR3437773 2, 6
+[Bri17]         , Some structure theorems for algebraic groups, Algebraic groups: structure and actions, Proc.
+        Sympos. Pure Math., vol. 94, Amer. Math. Soc., Providence, RI, 2017, pp. 53–126. MR3645068 5, 6, 7,
+        8
+[Dem70] Michel Demazure, Sous-groupes algébriques de rang maximum du groupe de Cremona, Ann. Sci. École
+        Norm. Sup. (4) 3 (1970), no. 4, 507–588. MR0284446 9
+[Isa08] I. Martin Isaacs, Finite group theory, Graduate Studies in Mathematics, vol. 92, American Mathematical
+        Society, Providence, RI, 2008. MR2426855 9
+[Jor78] Camille Jordan, Mémoire sur les équations différentielles linéaires à intégrale algébrique, J. Reine
+        Angew. Math. 84 (1878), 89–215. 1
+10                                                 FEI HU
+
+[LA17]  Giancarlo Lucchini Arteche, Extensions of algebraic groups with finite quotient and nonabelian 2-
+        cohomology, J. Algebra 492 (2017), 102–129. MR3709145 6
+[LP11] Michael J. Larsen and Richard Pink, Finite subgroups of algebraic groups, J. Amer. Math. Soc. 24
+        (2011), no. 4, 1105–1158. MR2813339 2
+[Mos56] George D. Mostow, Fully reducible subgroups of algebraic groups, Amer. J. Math. 78 (1956), 200–221.
+        MR0092928 2
+[MZ18] Sheng Meng and De-Qi Zhang, Jordan property for non-linear algebraic groups and projective varieties,
+        Amer. J. Math. 140 (2018), no. 4, 1133–1145. DOI:10.1353/ajm.2018.0026. 2, 3, 8
+[Pop11] Vladimir L. Popov, On the Makar-Limanov, Derksen invariants, and finite automorphism groups of
+        algebraic varieties, Affine algebraic geometry, CRM Proc. Lecture Notes, vol. 54, Amer. Math. Soc.,
+        Providence, RI, 2011, pp. 289–311. MR2768646 1, 2, 3, 5, 7, 8
+[Pop14]          , Jordan groups and automorphism groups of algebraic varieties, Automorphisms in bira-
+        tional and affine geometry, Springer Proc. Math. Stat., vol. 79, Springer, Cham, 2014, pp. 185–213.
+        MR3229352 2, 3
+[PS14] Yuri Prokhorov and Constantin Shramov, Jordan property for groups of birational selfmaps, Compos.
+        Math. 150 (2014), no. 12, 2054–2072. MR3292293 3
+[PS16]           , Jordan property for Cremona groups, Amer. J. Math. 138 (2016), no. 2, 403–418. MR3483470
+        3
+[Rei18] Zinovy Reichstein, The Jordan property of Cremona groups and essential dimension, to appear in Arch.
+        Math. (2018), 7 pp., DOI:10.1007/s00013-018-1218-5. 3
+[Rob96] Derek J. S. Robinson, A course in the theory of groups, second ed., Graduate Texts in Mathematics,
+        vol. 80, Springer-Verlag, New York, 1996. MR1357169 5
+[Ros56] Maxwell Rosenlicht, Some basic theorems on algebraic groups, Amer. J. Math. 78 (1956), no. 2, 401–
+        443. MR0082183 5
+[Ser09] Jean-Pierre Serre, A Minkowski-style bound for the orders of the finite subgroups of the Cremona group
+        of rank 2 over an arbitrary field, Mosc. Math. J. 9 (2009), no. 1, 183–198. MR2567402 1, 3
+[Zar14] Yuri G. Zarhin, Theta groups and products of abelian and rational varieties, Proc. Edinb. Math. Soc.
+        (2) 57 (2014), no. 1, 299–304. MR3165026 2
+
+  D EPARTMENT OF M ATHEMATICS , U NIVERSITY OF B RITISH C OLUMBIA , 1984 M ATHEMATICS ROAD ,
+VANCOUVER , BC V6T 1Z2, C ANADA
+  PACIFIC I NSTITUTE FOR THE M ATHEMATICAL S CIENCES , 2207 M AIN M ALL , VANCOUVER , BC V6T
+1Z4, C ANADA
+     E-mail address: fhu@math.ubc.ca
+
