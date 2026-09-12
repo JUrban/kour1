@@ -1,0 +1,318 @@
+{
+  "observed_utc": "2026-09-12T15:20:21.032697+00:00",
+  "scope": "Complete elementary negative candidate for all of20.122, including both soluble versions. Earlier inclusion-only packet remains frozen. Priority and outside review pending.",
+  "new_complete_candidates_added": 0,
+  "completed_existing_candidate": "20.122",
+  "outside_reviews": 0,
+  "priority_established": false,
+  "summary": {
+    "independent": {
+      "status": "PASS",
+      "orders": [
+        36864,
+        72,
+        16,
+        2048,
+        512
+      ],
+      "quotient_products": 5184,
+      "a_products": 256,
+      "constructed_permutations": 36864,
+      "constructed_stabilizers": 9,
+      "stabilizer_orders": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ],
+      "quotient_two_elements": 39,
+      "quotient_normal_closure_orders": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36
+      ],
+      "quotient_derived_orders": [
+        72,
+        18,
+        9,
+        1
+      ],
+      "centralizer_of_base_order": 512,
+      "minimum_order": 2,
+      "minimum_members": 5,
+      "min_generated_order": 16,
+      "Min_generated_order": 16,
+      "rejected_corruptions": [
+        "wrong_quotient_product",
+        "omitted_conjugate",
+        "wrong_point_stabilizer",
+        "invented_trivial_intersection",
+        "inside_fitting_witness",
+        "false_fitting_order"
+      ],
+      "family_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "pair_orders": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "orbit_generator_edges": 117,
+      "generator_count": 13
+    },
+    "exploratory_grid_triples": 120,
+    "exploratory_grid_hits": 11,
+    "complete_parts": [
+      "a",
+      "b",
+      "c-minimum-order",
+      "c-inclusion-minimal"
+    ]
+  },
+  "files": [
+    {
+      "path": "research/20.122-minimum-plan.md",
+      "bytes": 1688,
+      "sha256": "5a7acdd35bba91d0175c17f41bc9b003946cc734ee4db08d8a314c0dabe713d6"
+    },
+    {
+      "path": "research/20.122-minimum-proof.md",
+      "bytes": 7536,
+      "sha256": "dae990964dfecdf5a26a4e41a14bc756c90e59f1fa6f9070f234b0d03baabea7"
+    },
+    {
+      "path": "research/20.122-minimum-report.md",
+      "bytes": 4339,
+      "sha256": "c293609ca506ee7d49f8ea8864ff3f731b4ac84d3f45da4942991e4a381f2eca"
+    },
+    {
+      "path": "research/20.122-minimum-source-audit.md",
+      "bytes": 1870,
+      "sha256": "d17de7fe54a44feb518ba20cbca840621bab12accca79be1314ea9b6bb14fd49"
+    },
+    {
+      "path": "research/20.122-source-audit.md",
+      "bytes": 2709,
+      "sha256": "a249be84bb098d77c235254ee792e3a0045fc5ebf2cf1f9a310716eb6f3af769"
+    },
+    {
+      "path": "results/20.122-affine-grid-process.json",
+      "bytes": 447,
+      "sha256": "7d5dde1784773e96e3e11328021970043c6160f651dd91c8535eb9bcebb0d8f7"
+    },
+    {
+      "path": "results/20.122-affine-grid-summary.json",
+      "bytes": 287444,
+      "sha256": "027ee3294cfc8cd4b1327c8c6c85cf20e3fcfc11663cc340eace06c911d5ce4d"
+    },
+    {
+      "path": "results/20.122-affine-grid.log",
+      "bytes": 484,
+      "sha256": "a5811fb0f8ac8360bd72c1d91d171d30cc12740e8a7d3ce53184a9fce0027586"
+    },
+    {
+      "path": "results/20.122-affine-grid.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/20.122-minimum-independent-process.json",
+      "bytes": 454,
+      "sha256": "e9d7808d3b65021535f6c014d3f9fe1a322bcd5421da3bae6fac4fb9f2dcf0f2"
+    },
+    {
+      "path": "results/20.122-minimum-independent.log",
+      "bytes": 1238,
+      "sha256": "59a2c08ce6f261be9df0c9c7d528525fb1ad3bb4e51b0a61f843b69baf47225d"
+    },
+    {
+      "path": "results/20.122-minimum-independent.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/20.122-minimum-native-model.json",
+      "bytes": 33963,
+      "sha256": "7b9c0c9802a34858ca32485840c22aa7bdb0e9aee6f15c9b2c08db8456b42900"
+    },
+    {
+      "path": "results/20.122-minimum-native-process.json",
+      "bytes": 468,
+      "sha256": "e1a18e39289b4ee3c80e494adf683c77e712a29cebeb438d27088af820fc52d1"
+    },
+    {
+      "path": "results/20.122-minimum-native.log",
+      "bytes": 98,
+      "sha256": "308e7f69fdec0cf91c8e60f2ab0297fbba25575a46eca029dc48a8bc46c52551"
+    },
+    {
+      "path": "results/20.122-minimum-native.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/20.122-minimum-permutations-summary.json",
+      "bytes": 1868,
+      "sha256": "73ac42fd0d0312305a5ebe6acaa1bc81c4ec175fdd4b8c4c531b95be63af13d7"
+    },
+    {
+      "path": "results/20.122-source-page165.png",
+      "bytes": 327988,
+      "sha256": "23becc51fe1ce189fa8c100530e8c48d9eedee069816d9579945ac9117eadeaa"
+    },
+    {
+      "path": "results/20.122-statement.json",
+      "bytes": 683,
+      "sha256": "77e2c04e64618667c3698c46b4a13b025406ee1bdf16fb16b93aa4921bb8f47b"
+    },
+    {
+      "path": "scripts/audit_20_122_minimum.py",
+      "bytes": 5244,
+      "sha256": "6ee5f5cb6a8f6c6f4d516591a811338bab44264b51006e21ecfdbdf9efab3190"
+    },
+    {
+      "path": "scripts/search_20_122_affine_grid.py",
+      "bytes": 3450,
+      "sha256": "91dd80befebf800a5f552f6b104fc1a81db4dc772a808ab3a97d72c050d9ff47"
+    },
+    {
+      "path": "scripts/verify_20_122_minimum_native.g",
+      "bytes": 2878,
+      "sha256": "5c7ae5a5768037a01091b6c54249b7abfc2cdbb528a0d02cd6b093797ed8d407"
+    },
+    {
+      "path": "scripts/verify_20_122_minimum_permutations.py",
+      "bytes": 7903,
+      "sha256": "2032311f61141eb1366ff076eff9f9b1ed7a18f0805aae64ec2d015ab70ca5cc"
+    }
+  ]
+}
