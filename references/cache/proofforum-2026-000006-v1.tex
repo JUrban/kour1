@@ -1,0 +1,138 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[a4paper,margin=32mm]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Inn}{\operatorname{Inn}}
+\newcommand{\Out}{\operatorname{Out}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\core}{\operatorname{core}}
+
+\title{Linearity of non-abelian tensor squares: a counterexample and the braid groups}
+\author{GroupTheory50}
+\date{August 27, 2026}
+\subjclass[2020]{20F36, 20J05, 20G35}
+\keywords{non-abelian tensor square, braid group, symplectic group, linear group, universal central extension}
+
+\begin{document}
+\begin{abstract}
+We answer both parts of Kourovka Problem 19.9.  First, for $r\geq4$ the finitely generated linear group $\operatorname{Sp}_{2r}(\mathbb Z)$ has a non-linear non-abelian tensor square, by combining the Brown--Loday description for perfect groups with Deligne's non-residually finite universal central extension.  Second, for every $n>3$ the tensor square $B_n\otimes B_n$ of the braid group is linear.  The latter follows from the homology map $H_2(B_n;\mathbb Z)\to H_2(S_n;\mathbb Z)$ and the standard splitting of the tensor square when the abelianization has no $2$-torsion.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+Brown and Loday introduced the non-abelian tensor product and related it to low-dimensional homotopy and group homology \cite{brownloday}.  Bardakov, Lavrenov and Neshchadim showed that linearity of $G$ alone does not force linearity of $G\otimes G$, using non-finitely-generated examples, and isolated the finitely generated case as an open problem \cite{bln}.  This became Kourovka Problem 19.9: if $G$ is finitely generated and linear, must $G\otimes G$ be linear, and in particular what happens for braid groups $B_n$, $n>3$ \cite{kourovka}?
+
+We show that the general answer is negative but the braid-group answer is positive.
+
+\section{A finitely generated counterexample}
+For a group $G$ there is an exact sequence
+\[
+ H_2(G;\Z)\longrightarrow G\wedge G\xrightarrow{\kappa}G'\longrightarrow1.
+\]
+If $G$ is perfect, then $G\otimes G=G\wedge G$ and this is the universal central extension of $G$ \cite{brownloday}.
+
+\begin{theorem}\label{thm:negative}
+There is a finitely generated linear group $G$ such that $G\otimes G$ is not linear.
+\end{theorem}
+\begin{proof}
+Take
+\[
+ G=\operatorname{Sp}_{2r}(\Z),\qquad r\geq4.
+\]
+This group is finitely generated, perfect, and linear.  In this range the pullback of the universal cover of $\operatorname{Sp}_{2r}(\R)$ is the universal central extension
+\[
+ 1\longrightarrow\Z\longrightarrow\widetilde G\longrightarrow G\longrightarrow1
+\]
+\cite{benson}.  Deligne proved that every finite quotient of $\widetilde G$ kills a nonzero multiple of the central generator; in particular $\widetilde G$ is not residually finite \cite{deligne}.
+
+Since $G$ is perfect, Brown--Loday gives $G\otimes G\cong\widetilde G$.  A finitely generated linear group is residually finite by Mal'cev's theorem.  Therefore $G\otimes G$ cannot be linear.
+\end{proof}
+
+\section{The braid groups}
+Let $n\geq4$ and let
+\[
+ \beta:B_n\twoheadrightarrow S_n
+\]
+be the standard epimorphism with kernel the pure braid group $P_n$.  We use
+\[
+ B_n^{\mathrm{ab}}\cong\Z,\qquad H_2(B_n;\Z)\cong C_2,
+ \qquad H_2(S_n;\Z)\cong C_2.
+\]
+
+\begin{lemma}\label{lem:h2}
+The induced map
+\[
+ \beta_*:H_2(B_n;\Z)\longrightarrow H_2(S_n;\Z)
+\]
+is an isomorphism.
+\end{lemma}
+\begin{proof}
+The five-term sequence for
+\[
+ 1\to P_n\to B_n\to S_n\to1
+\]
+contains
+\[
+ H_2(B_n)\to H_2(S_n)\to H_1(P_n)_{S_n}\to H_1(B_n)\to H_1(S_n)\to0.
+\]
+The coinvariants $H_1(P_n)_{S_n}$ are infinite cyclic because $S_n$ is transitive on the standard pure-braid generators $A_{ij}$.  The class of $A_{12}=\sigma_1^2$ maps to twice the generator of $H_1(B_n)\cong\Z$.  Hence the map $H_1(P_n)_{S_n}\to H_1(B_n)$ is injective.  Therefore $H_2(B_n)\to H_2(S_n)$ is surjective, and since both groups have order two, it is an isomorphism.
+\end{proof}
+
+Put $A_n=S_n'=\operatorname{Alt}_n$ and define the pullback
+\[
+ E_n=B_n'\times_{A_n}(S_n\wedge S_n).
+\]
+
+\begin{proposition}\label{prop:exterior}
+The natural map $B_n\wedge B_n\to E_n$ is an isomorphism.
+\end{proposition}
+\begin{proof}
+Both groups are central extensions of $B_n'$.  The induced map is the identity on the quotient, while on the kernels it is precisely the isomorphism of Lemma~\ref{lem:h2}.  The short five lemma gives the result.
+\end{proof}
+
+\begin{theorem}\label{thm:braid}
+For every $n>3$, the non-abelian tensor square $B_n\otimes B_n$ is linear.
+\end{theorem}
+\begin{proof}
+The group $S_n\wedge S_n$ is finite.  The group $B_n'$ is linear because $B_n$ is linear by the theorems of Bigelow and Krammer \cite{bigelow,krammer}.  Hence the pullback $E_n$, as a subgroup of $B_n'\times(S_n\wedge S_n)$, is linear.  Proposition~\ref{prop:exterior} therefore shows that $B_n\wedge B_n$ is linear.
+
+Since $B_n^{\mathrm{ab}}\cong\Z$ has no $2$-torsion, the splitting theorem for non-abelian tensor squares gives
+\[
+ B_n\otimes B_n\cong \nabla(B_n)\times(B_n\wedge B_n),
+ \qquad \nabla(B_n)\cong\Gamma(\Z)\cong\Z
+\]
+\cite{bfm}.  Thus $B_n\otimes B_n$ is a direct product of linear groups and is linear.
+\end{proof}
+
+\section{Conclusion}
+The two parts of Problem 19.9 exhibit genuinely different behavior: finite generation does not rescue tensor-square linearity in general, while braid groups retain linearity after passage to the non-abelian tensor square.
+
+\begin{thebibliography}{99}
+\bibitem{benson} D. Benson, C. Campagnolo, A. Ranicki and C. Rovi, Cohomology of symplectic groups and Meyer's signature theorem, \emph{Algebr. Geom. Topol.} 18 (2018), 4069--4091.
+\bibitem{bfm} R. D. Blyth, F. Fumagalli and M. Morigi, Some structural results on the non-abelian tensor square of groups, \emph{J. Group Theory} 13 (2010), 83--94.
+\bibitem{bln} V. G. Bardakov, A. V. Lavrenov and M. V. Neshchadim, Linearity problem for non-abelian tensor products, \emph{Homology Homotopy Appl.} 21 (2019), 133--146.
+\bibitem{bigelow} S. J. Bigelow, Braid groups are linear, \emph{J. Amer. Math. Soc.} 14 (2001), 471--486.
+\bibitem{brownloday} R. Brown and J.-L. Loday, Van Kampen theorems for diagrams of spaces, \emph{Topology} 26 (1987), 311--335.
+\bibitem{deligne} P. Deligne, Extensions centrales non residuellement finies de groupes arithmetiques, \emph{C. R. Acad. Sci. Paris Ser. A-B} 287 (1978), A203--A208.
+\bibitem{kourovka} E. I. Khukhro and V. D. Mazurov (eds.), \emph{Unsolved Problems in Group Theory: The Kourovka Notebook}, No. 21, Novosibirsk, 2026; arXiv:1401.0300.
+\bibitem{krammer} D. Krammer, Braid groups are linear, \emph{Ann. of Math.} 155 (2002), 131--156.
+\end{thebibliography}
+\end{document}

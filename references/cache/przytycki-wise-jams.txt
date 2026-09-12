@@ -1,0 +1,1867 @@
+            JOURNAL OF THE
+            AMERICAN MATHEMATICAL SOCIETY
+            Volume 31, Number 2, April 2018, Pages 319–347
+            http://dx.doi.org/10.1090/jams/886
+            Article electronically published on October 19, 2017
+
+
+
+                           MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL
+
+                                               PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+                                                                 1. Introduction
+               A compact connected oriented irreducible 3-manifold with arbitrary, possibly
+            empty boundary is mixed if it is not hyperbolic and not a graph manifold. A group
+            is special if it is a subgroup of a right-angled Artin group. Our main result is the
+            following.
+            Theorem 1.1. Let M be a mixed 3-manifold. Then π1 M is virtually special.
+            Corollary 1.2. The fundamental group of a mixed 3-manifold is linear over Z.
+                 As explained below, Theorem 1.1 has the following consequence.
+            Corollary 1.3. A mixed 3-manifold with possibly empty toroidal boundary virtually
+            ﬁbers.
+               An alternative deﬁnition of a special group is the following. A nonpositively
+            curved cube complex X is special if its immersed hyperplanes do not self-intersect,
+            are two-sided, do not directly self-osculate or interosculate (see Deﬁnition 6.1). A
+            group G is (compact) special if it is the fundamental group of a (compact) special
+            cube complex X. Then G is a subgroup of a possibly inﬁnitely generated right-
+            angled Artin group [HW08, Thm 4.2]. Conversely, a subgroup G of a right-angled
+            Artin group is the fundamental group of the corresponding cover X of the Salvetti
+            complex, which is special. Note that if the fundamental group G of a special cube
+            complex X is ﬁnitely generated, then a minimal locally convex subcomplex X  ⊂ X
+            containing a π1 -surjective ﬁnite graph in X 1 has ﬁnitely many hyperplanes and is
+            special so that G embeds in a ﬁnitely generated right-angled Artin group.
+               Special groups are residually ﬁnite. Moreover, assuming that X has ﬁnitely
+            many hyperplanes, the stabilizer in G of any hyperplane in the universal cover
+            X of X is separable (see Corollary 6.8). For 3-manifold groups, separability of a
+            subgroup corresponding to an immersed incompressible surface implies that in some
+            ﬁnite cover of the manifold the surface lifts to an embedding. There are immersed
+            incompressible surfaces in graph manifolds that do not lift to embeddings in a ﬁnite
+            cover [RW98].
+
+                Received by the editors June 6, 2012 and, in revised form, July 24, 2013, May 14, 2014, and
+            May 12, 2017.
+                2010 Mathematics Subject Classiﬁcation. Primary 20F65, 57M50.
+                The ﬁrst author was partially supported by MNiSW grant N201 012 32/0718, the Foundation
+            for Polish Science, National Science Centre DEC-2012/06/A/ST1/00259 and UMO-2015/18/M/-
+            ST1/00050, NSERC and FRQNT.
+                The second author was supported by NSERC.
+
+                                                                                                    2017
+                                                                                                    c     American Mathematical Society
+
+                                                                              319
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            320                                          P. PRZYTYCKI AND D. T. WISE
+
+
+               There are a variety of groups with the property that every ﬁnitely generated
+            subgroup is separable; for instance, this was shown for free groups by M. Hall and
+            for surface groups by Scott. A compact 3-manifold is hyperbolic if its interior is
+            homeomorphic to a quotient of H3 (equivalently to the quotient of the interior of
+            the convex hull of the limit set) by a geometrically ﬁnite Kleinian group. It was
+            recently proved that hyperbolic 3-manifolds with an embedded geometrically ﬁnite
+            incompressible surface have fundamental groups that are virtually compact spe-
+            cial [Wis17, Thm 16.1 and 16.28]. This implies separability for all geometrically
+            ﬁnite subgroups [Wis17, Thm 15.9]. By the Tameness [Ago04, CG06] and Covering
+            [Thu80, Can96] Theorems all other ﬁnitely generated subgroups correspond to vir-
+            tual ﬁbers, and hence they are separable as well. Very recently, Agol, Groves, and
+            Manning [Ago13, Thm 1.1] building on [Wis17] proved that the fundamental group
+            of every closed hyperbolic 3-manifold is virtually compact special and hence all its
+            ﬁnitely generated subgroups are separable. For more details, see the survey article
+            [AFW15].
+               Another striking consequence of virtual specialness is virtual ﬁbering. Since
+            special groups are subgroups of right-angled Artin groups, they are subgroups of
+            right-angled Coxeter groups as well [HW99, DJ00]. Agol proved that such groups
+            are virtually residually ﬁnite rationally solvable (RFRS) [Ago08, Thm 2.2]. Then he
+            proved that if the fundamental group of a compact connected oriented irreducible
+            3-manifold with toroidal boundary is RFRS, then it virtually ﬁbers [Ago08, Thm
+            5.1]. In view of these results, every hyperbolic manifold with toroidal boundary
+            virtually ﬁbers [Ago13, Thm 9.2]. Similarly, our Theorem 1.1 yields Corollary 1.3.
+               Liu proved that an aspherical graph manifold has virtually special fundamental
+            group if and only if it admits a nonpositively curved Riemannian metric [Liu13, Thm
+            1.1]. Independently and with an eye toward the results presented here, we proved
+            virtual specialness for graph manifolds with nonempty boundary [PW14, Cor 1.3].
+            Note that graph manifolds with nonempty boundary carry a nonpositively curved
+            metric by [Lee95, Thm 3.2]. Our Theorem 1.1 thus resolves the question of virtual
+            specialness for arbitrary compact 3-manifold groups.
+
+            Corollary 1.4. A compact aspherical 3-manifold has virtually special fundamental
+            group if and only if it admits a Riemannian metric of nonpositive curvature.
+
+               Corollary 1.4 was conjectured by Liu [Liu13, Conj 1.3]. As discussed above, he
+            proved the conjecture for graph manifolds while for hyperbolic manifolds this follows
+            from [Wis17] and [Ago13]. All mixed manifolds admit a metric of nonpositive
+            curvature, essentially due to [Lee95, Thm 3.3], as shown in [Bri01, Thm 4.3]. Hence
+            Theorem 1.1 resolves Liu’s conjecture in the remaining mixed case. However, the
+            equivalence in Corollary 1.4 appears to be more circumstantial than a consequence
+            of an intrinsic relationship between nonpositive curvature and virtual specialness:
+            all manifolds in question except for certain particular closed graph manifolds have
+            both of these features.
+               As a consequence of virtual specialness of mixed manifolds (Theorem 1.1), hyper-
+            bolic manifolds with nonempty boundary [Wis17, Thm 16.28] and graph manifolds
+            with nonempty boundary [PW14, Cor 1.3], we have the following.
+
+            Corollary 1.5. The fundamental group of any knot complement in S 3 has a faithful
+            representation in SL(n, Z) for some n.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          321
+
+
+              Note that existence of a nonabelian representation of any nontrivial knot comple-
+            ment group into SU(2) is a well-known result of Kronheimer and Mrowka [KM04].
+
+            Organization. As explained in Section 2, the proof of Theorem 1.1 is divided into
+            two steps. The ﬁrst step is Theorem 2.1 (Cubulation), which roughly states that
+            in any mixed manifold there is a collection of surfaces suﬃcient for cubulation. In
+            Section 3 we review the construction of surfaces in graph manifolds with boundary.
+            We discuss surfaces in hyperbolic manifolds with boundary in Section 4. We prove
+            Theorem 2.1 in Section 5 by combining the surfaces from graph manifold blocks
+            and hyperbolic blocks.
+               The second step is Theorem 2.4 (Specialization), which provides the virtual spe-
+            cialness of the nonpositively curved cube complex produced in the ﬁrst step. In
+            Section 6 we extend some separability results for special cube complexes to the non-
+            compact setting. We apply them in Section 7 to obtain cubical small cancellation
+            results for noncompact special cube complexes. This allows us to prove Theorem 2.4
+            in Section 8.
+
+            Ingredients in the proof of Theorem 1.1.
+                     • Canonical completion and retraction (Theorem 6.3) for special cube com-
+                       plexes [HW10].
+                     • Criterion 2.3 for virtual specialness [HW10].
+                     • Gitik–Minasyan double quasiconvex coset separability [Min06].
+                     • Criterion for relative quasiconvexity [BW13].
+                     • Combination Theorem 4.8 for relatively quasiconvex groups [MP09].
+                     • Relative cocompactness of cubulations of relatively hyperbolic groups
+                       [HW14].
+                     • Criterion 4.3 for WallNbd-WallNbd Separation [HW14].
+                     • Proposition 3.1 which constructs virtually embedded surfaces in graph man-
+                       ifolds with boundary [PW14].
+                     • Separability and double coset separability of embedded surfaces in graph
+                       manifolds [PW14].
+                     • Special Quotient Theorem 4.7 for groups hyperbolic relative to free-abelian
+                       subgroups [Wis17].
+                     • Theorem 2.6 on virtual specialness of hyperbolic manifolds with nonempty
+                       boundary [Wis17].
+                     • Main Theorem 7.1 of cubical small cancellation [Wis17].
+
+                                            2. Technical reduction to two steps
+               Let M be a compact connected oriented irreducible 3-manifold. By passing to a
+            double cover, we can also assume that M has no π1 -injective Klein bottles. More-
+            over, assume that M is not a Sol or Nil manifold. Up to isotopy, M then has
+            a unique minimal collection of incompressible tori not parallel to ∂M , called JSJ
+            tori, such that the complementary components called blocks are either algebraically
+            atoroidal or else Seifert ﬁbered [Bon02, Thm 3.4]. We say that M is mixed if it
+            has at least one JSJ torus and one atoroidal block. (Equivalently, by Perelman’s
+            geometrization, M is not hyperbolic and not a graph manifold.) By Thurston’s
+            hyperbolization all atoroidal blocks are hyperbolic, and we will denote them by
+            Mkh . The JSJ tori adjacent to at least one hyperbolic block are transitional. The
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            322                                          P. PRZYTYCKI AND D. T. WISE
+
+
+            complementary components of the union of the hyperbolic blocks are graph mani-
+            folds with boundary and will be called graph manifold blocks and denoted by Mig .
+            Up to a diﬀeomorphism isotopic to the identity, each of their Seifert ﬁbered blocks
+            admits a unique Seifert ﬁbration that we ﬁx. If a transitional torus is adjacent on
+            both of its sides to hyperbolic blocks, we replace it by two parallel tori (also called
+            JSJ, and transitional) and add the product region T × I bounded by them as a
+            graph manifold block to the family {Mig }. Similarly, for a boundary torus of M
+            adjacent to a hyperbolic block, we introduce its parallel copy in M (called JSJ, and
+            transitional) and add the product region to {Mig }. These Mig = T × I will be called
+            thin. We will later ﬁx one of many Seifert ﬁbrations on thin Mig .
+                Unless stated otherwise, all surfaces are embedded or immersed properly. Let
+            S → M be an immersed surface in a 3-manifold. Let M        → M be a covering map.
+                          
+            A map S → M that covers S → M and does not factor through another such map
+            is its elevation (it is a lift when S = S). A connected oriented surface S → M that
+            is not a sphere is immersed incompressible if it is π1 -injective and its elevation to
+            the universal cover M   of M is an embedding. The surface S is virtually embedded
+            if there is a ﬁnite cover M   of M with an embedded elevation of S. Given a block
+            B and an immersed surface φ : S → M , a piece of S in B is the restriction of φ to
+            a component of φ−1 (B) in S.
+                The elevations of JSJ tori, boundary tori, and transitional tori of M to the
+            universal cover M  are called JSJ planes, boundary planes, and transitional planes,
+            respectively, and we keep the term blocks (hyperbolic, graph manifold, or Seifert
+            ﬁbered ) for the elevations of blocks of M . We warn that this terminology refers to
+            graph manifold blocks in M      even though they are not compact. Having speciﬁed
+            a block Mo of M and a surface So ⊂ M
+                                                     o , we denote by T(So ) the set of JSJ and
+            boundary planes in ∂ M   o intersecting So .
+                An axis for an element g ∈ π1 M acting on M   is a copy of R in M on which g acts
+            by nontrivial translation. A cut-surface for g ∈ π1 M is an immersed incompressible
+            surface S → M covered by S ⊂ M         such that there is an axis R for g satisfying
+            
+            S ∩ R = {0}, where the intersection is transverse.
+            Theorem 2.1 (Cubulation). Let M be a mixed 3-manifold. There is a ﬁnite family
+            of immersed incompressible surfaces S in M , in general position, and such that:
+                (1) For each element of π1 M there is a cut-surface in S.
+                (2) All JSJ tori belong to S.
+                (3) Each piece of S in Mig is virtually embedded in Mig for each S ∈ S.
+                (4) Each piece of S in Mkh is geometrically ﬁnite for each S ∈ S.
+                (5) The family S satisﬁes the following Strong Separation property.
+               To make sense of the term “suﬃciently far” in what follows, we ﬁx a Riemannian
+            metric on M and lift it to the universal cover M. Note, however, that satisfying
+            Strong Separation does not depend on the choice of this metric.
+            Deﬁnition 2.2. A family S of surfaces in M satisﬁes the Strong Separation prop-
+            erty if the following hold for the family 
+                                                      S of elevations to M of the surfaces in S.
+                (a) For any S,  S ∈ 
+                                   
+                                       S intersecting a block M  covering M h , if S ∩ M
+                                                                  h                        h and
+                                                                  k             k            k
+                          h are suﬃciently far and T(S ∩ M
+                     S ∩ M k
+                                                             h ) ∩ T(S ∩ M
+                                                               k
+                                                                           h ) = ∅, then a surface
+                                                                            k
+                     from                      
+                           S separates S from S.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          323
+
+
+                             S ∈ 
+               (b) For any S,       S intersecting a block Mg covering M g , if S ∩ M
+                                                                                       g and
+                                                              i            i            i
+                        g are suﬃciently far, then a surface from 
+                   S ∩ M                                          S separates S from S.
+                                                                                         
+                          i
+            We will appeal to parts (a) and (b) above as Strong Separation (a) and Strong
+            Separation (b).
+               We consider the dual CAT(0) cube complex X      associated to S by Sageev’s con-
+                                       
+            struction. Each S ∈ S cuts M into two closed halfspaces U, V, and the collection of
+            pairs {U, V } endows M  with a Haglund–Paulin wallspace structure (we follow the
+            treatment of these ideas in [HW14, §2.1] where U ∩ V is allowed to be nonempty).
+            The group G = π1 M acting on M       preserves this structure, and hence it acts on
+            the associated dual CAT(0) cube complex X.     The stabilizer in G of a hyperplane
+                
+            in X coincides with a conjugate of π1 S for an appropriate S ∈ S by general posi-
+            tion. Note that if there is a cut-surface S ∈ S for g ∈ G, then g acts freely on X   
+            [Wis12, Lem 7.16].
+               If a group G acting freely on a CAT(0) cube complex X         has a ﬁnite index
+                                                                                             is
+            subgroup G such that G \X is special, then we say that the action of G on X
+            virtually special. This coincides with the deﬁnition used in [HW10] by the freeness
+            of the action and [HW10, Thm 3.5 and Rem 3.6]. We prove Theorem 1.1 using
+            the following criterion for virtual specialness. Disjoint hyperplanes osculate if they
+            have dual edges sharing an endpoint.
+            Criterion 2.3. Let G act freely on a CAT(0) cube complex X.  Suppose that:
+                                                                     
+               (1) there are ﬁnitely many G orbits of hyperplanes in X;
+                                             
+               (2) for each hyperplane A ⊂ X, there are ﬁnitely many Stab(A)  orbits of hy-
+                                            
+                   perplanes that intersect A;
+               (3) for each hyperplane A  ⊂ X,
+                                               there are ﬁnitely many Stab(A)
+                                                                              orbits of hy-
+                                                
+                   perplanes that osculate with A;
+               (4) for each hyperplane A ⊂ X,
+                                              the subgroup Stab(A) ⊂ G is separable; and
+                                                                 
+               (5) for each pair of intersecting hyperplanes A, B ⊂ X,    the double coset
+                                
+                   Stab(A)Stab(B) ⊂ G is separable.
+                                     is virtually special.
+            Then the action of G on X
+               Criterion 2.3 follows directly from [HW10, Thm 4.1], since in Conditions (4) and
+            (5) we require Stab(A) and Stab(A)Stab(
+                                                        to be closed in the proﬁnite topology on
+                                                       B)
+            G and not only to have closures disjoint from certain speciﬁed sets as was required
+            in [HW10, Thm 4.1].
+               For each Mig we choose one conjugate Pi of π1 Mig in G = π1 M . Then G is
+            hyperbolic relative to {Pi } (see, e.g., [BW13]) and we can discuss quasiconvexity
+            of its subgroups relative to {Pi } (see, e.g., [BW13, Def 2.1]). For each S ∈ S,
+            Theorem 2.1(4) implies that π1 S is quasiconvex in G relative to {Pi } by [Hru10, Cor
+            1.3] and [BW13, Thm 4.16].
+               Let Mg ⊂ M be the elevation of M g stabilized by Pi . We describe a convex Pi -
+                      i                              i
+            invariant subcomplex Yi ⊂ X  determined by M g . Let Ui be the family of halfspaces
+                                                             i
+            U in the wallspace M  for which there is some R > 0 with diam(U ∩ NR (M    g )) = ∞,
+                                                                                         i
+            where NR denotes the R-neighborhood. Note that Ui does not depend on the ﬁxed
+            Riemannian metric on M . Let Yi ⊂ X        be the subcomplex consisting of cubes
+            spanned by the vertices whose halfspaces are all in Ui .
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            324                                          P. PRZYTYCKI AND D. T. WISE
+
+
+                                                                    relative to {Yi } in the
+               By [HW14, Thm 7.12] the group G acts cocompactly on X
+                                                                   
+            following sense. There exists a compact subcomplex K ⊂ X such that:
+                  • X = GK ∪  GYi ;
+                                   i
+                  • g Yi ∩ Yj ⊂ GK unless j = i and g ∈ Pi ; and
+                  • Pi acts cocompactly on Yi ∩ GK.
+                                          by [HW14, Prop 8.1(1)] each Yi is superconvex in the
+               Because G acts freely on X,
+            sense that there is a uniform bound on the diameter of a rectangle [−d, d] × [0, 1],
+                                                                        with [−d, d]×{0} ⊂ Yi
+            whose 1-skeleton isometrically embeds in the 1-skeleton of X
+                                       
+            and [−d, d] × {1} outside Yi .
+               Observe that G = π1 M splits as a graph of groups with transitional tori groups
+            as edge groups. The group G is hyperbolic relative to the vertex groups Pi = π1 Mig .
+            We now explain that to prove Theorem 1.1 it suﬃces to complement Theorem 2.1
+            with the following.
+            Theorem 2.4 (Specialization). Let G be the fundamental group of a graph of
+            groups with free-abelian edge groups. Suppose that G is hyperbolic relative to some
+            collection of the vertex groups {Pi }. Suppose that G acts cocompactly on a CAT(0)
+            cube complex X   relative to superconvex {Yi }. Suppose also that:
+                  (i) the action of G on X  is free and satisﬁes ﬁniteness Conditions (1)–(3) of
+                      Criterion 2.3;
+                 (ii) for any ﬁnite index subgroup E ◦ of an edge group E ⊂ Pi , there is a ﬁnite
+                      index subgroup Pi ⊂ Pi with Pi ∩ E ⊂ E ◦ ;
+                (iii) the action of each Pi on Yi is virtually special, with ﬁnitely many orbits of
+                      codim-2-hyperplanes;
+                (iv) each nonparabolic vertex group is virtually compact special.
+            Then the action of G is virtually special.
+               A codim-2-hyperplane in a CAT(0) cube complex is the intersection of a pair of
+            intersecting hyperplanes.
+               We now derive the hypothesis of Theorem 2.4 from the conclusion of Theorem 2.1.
+            By Theorem 2.1(1), the action of π1 M on X       is free. Moreover, since the family S
+            is ﬁnite, Condition (1) of Criterion 2.3 is satisﬁed. Since S is in general position,
+            we have ﬁnitely many intersection curves between each pair of surfaces in S, which
+            gives Condition (2). We now deduce Condition (3). Disjoint hyperplanes in a
+            CAT(0) cube complex osculate (i.e., have dual edges sharing an endpoint) if and
+            only if they are not separated by another hyperplane. (The “if” part follows from
+            the observation that a hyperplane dual to an edge of a shortest path between the
+            carriers of disjoint hyperplanes separates them.) Similarly, we say that two disjoint
+                       S ∈ 
+            surfaces S,       S osculate if there is no surface in  S separating S from S.
+                                                                                             Hence
+                                                                            
+            osculating hyperplanes in X correspond to osculating S, S ∈ S. We need to show
+            that there are ﬁnitely many Stab(S)  orbits of surfaces in                      Note
+                                                                           S osculating with S.
+                                     
+            that if S osculates with S, then it must intersect one of the ﬁnitely many Stab(S)     
+            orbits of graph manifold and hyperbolic blocks intersected by S,      since otherwise it
+                                                                             
+            would be separated from S by a transitional plane T . But T ∈ S by Theorem 2.1(2),
+            so S and S would not osculate. If both S and S intersect the same block M g , then
+                                                                                              i
+            by Strong Separation (b) of Theorem 2.1(5) they are at bounded distance, and so
+            there are ﬁnitely many Stab(S)   orbits. If S and S do not intersect the same graph
+
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          325
+
+
+            manifold block but intersect the same block M h , then by Strong Separation (a) of
+                                                            k
+            Theorem 2.1(5) they are at bounded distance, hence there are ﬁnitely many Stab(S) 
+            orbits as well. This proves Condition (3) of Criterion 2.3. Hence, Hypothesis (i) of
+            Theorem 2.4 is satisﬁed.
+               Hypothesis (ii) of Theorem 2.4 coincides with [PW14, Cor 4.2], which is a par-
+            ticular case of [Ham01, Thm 1]. To verify Hypothesis (iii) we need the following.
+            Lemma 2.5. Let Sh be a ﬁnite family of geometrically ﬁnite immersed incompress-
+            ible surfaces in a compact hyperbolic 3-manifold M h . There exists R such that if
+            the stabilizer of an elevation S to Mh of a surface in Sh intersects a stabilizer of a
+                                    
+            boundary plane T ⊂ ∂ M along an inﬁnite cyclic group, then N = NR (S)
+                                        h                                                  ∩ T is
+            nonempty.
+               Moreover, assume that we have two such elevations S,       S of possibly distinct
+            surfaces. If S ∩ T and S ∩ T are nonempty and at distance ≥ R in the intrinsic
+                                        
+
+            metric on T (resp. N and N  = NR (S ) ∩ T are suﬃciently far with respect to some
+            speciﬁed r), then S and S are disjoint (resp. at distance ≥ r) and T(S) ∩ T(S ) ⊂
+              
+            {T }.
+               Note that N ⊂ T is at a ﬁnite Hausdorﬀ distance from a line, since the intersec-
+            tion of the stabilizers of S and T is inﬁnite cyclic.
+            Proof. We can assume that the Riemannian metric on M h is hyperbolic and the
+            toroidal boundary components are horospherical. Thus in M   h we have well-deﬁned
+            1-Lipschitz nearest point projections onto boundary planes. Note that these pro-
+            jections are invariant under quasi-isometry, up to a uniformly bounded error.
+               Consider an elevation S ⊂ M h of a surface in Sh and suppose that the stabilizer
+            of S intersects a stabilizer of a boundary plane T along an inﬁnite cyclic group.
+            The ﬁrst assertion saying that there exists a uniform R for which N = NR (S)  ∩ T is
+            nonempty follows from the fact that the surfaces in S have ﬁnitely many maximal
+                                                                   h
+
+            parabolic subgroups.
+               For the second assertion, let Π be the nearest point projection onto T. There
+            exists a point s ∈ S with Π(s) ∈ N . Since S is geometrically ﬁnite, s is connected
+            with any other point s of S by a geodesic γ at a uniformly bounded distance from
+             A geodesic is an α-distorted path for any α in terms of [GP16, § 2.2]. We now
+            S.
+            apply [GP16, Prop 8.2.5], which is formulated in the Cayley graph of π1 M h , but
+            all our notions are invariant under quasi-isometry. By [GP16, Prop 8.2.5] there is
+            a uniform constant d such that Π(s ) ∈ Nd (Π(s)) or Π(s ) ∈ Nd (γ). Hence after
+            increasing R, we have Π(S)   ⊂ N.
+                                    
+               Consider now S = S ∪ (T(S)
+                                             − T). For each boundary plane T = T its image
+            Π(T ) is uniformly bounded. Thus after increasing R, we have Π(S ) ⊂ N . Since
+                 
+
+            Π is 1-Lipschitz, the distance between S and S is bounded below by the distance
+            between N and N  . This proves the second assertion.                               
+               We now verify Hypothesis (iii) of Theorem 2.4, by appealing to Criterion 2.3.
+            The action of Pi on Yi is free. By the choice of Ui in the deﬁnition of Yi , any
+            hyperplane A intersecting Yi corresponds to a surface S ∈ 
+                                                                         S that for some R > 0
+                        g of inﬁnite diameter. Consequently, Stab(S)
+            has NR (S) ∩ M                                              nontrivially intersects
+                           i
+            Pi = Stab(Mg ). By Lemma 2.5 we can assume that R coincides with the one given
+                         i
+            by Lemma 2.5.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            326                                          P. PRZYTYCKI AND D. T. WISE
+
+
+                Condition (1) of Criterion 2.3 is immediate. To prove Conditions (2) and (3),
+            it suﬃces to justify the claim that any pair of surfaces S,          S ∈ 
+                                                                                        S with N =
+                        g                   g
+            NR (S) ∩ Mi , N = NR (S ) ∩ Mi suﬃciently far is separated by another surface
+            in              S intersect M
+                S. If both S,               g , then the claim follows from Strong Separation (b)
+                                             i
+            in Theorem 2.1(5). Otherwise, if one of S,    S is disjoint from Mg and they are not
+                                                                                    i
+            separated by a JSJ plane, then they both intersect a hyperbolic block M      h adjacent
+                                                                                          k
+            to M . By Lemma 2.5, for every r if N and N  are suﬃciently far, then S ∩ M
+                   g                                                                             h
+                   i                                                                               k
+                      h                                   h           
+            and S ∩ Mk are at distance ≥ r and T(S ∩ Mk ) ∩ T(S ∩ Mk ) = ∅. Then the claim
+                                                                              h
+
+            follows from Strong Separation (a). As a consequence of Condition (2) the complex
+            Yi has ﬁnitely many Pi orbits of codim-2-hyperplanes.
+                The nontrivial stabilizers in Pi of hyperplanes in Yi correspond to either fun-
+            damental groups of the pieces of S in Mig , which are virtually embedded in Mig
+            by Theorem 2.1(3) or inﬁnite cyclic subgroups of the fundamental groups of the
+            transitional tori, to which by [PW14, Cor 4.3] (or [Ham01]) we can also asso-
+            ciate virtually embedded ∂-parallel annuli. All these stabilizers are separable by
+            [PW14, Thm 1.1] and double coset separable by [PW14, Thm 1.2]. Hence we have
+            Conditions (4) and (5) of Criterion 2.3, and by Criterion 2.3 the action of Pi on Yi
+            is virtually special. This is Hypothesis (iii).
+                Hypothesis (iv) follows from the following.
+            Theorem 2.6 ([Wis17, Thm 16.28]). Let M be a compact hyperbolic manifold with
+            nonempty boundary. Then π1 M is virtually compact special.
+
+                                            3. Surfaces in graph manifold blocks
+                The goal of the next three sections is to prove Theorem 2.1 (Cubulation). We
+            ﬁrst review the existence results for surfaces in graph manifolds with boundary. Let
+            M g be a graph manifold, i.e., a compact connected oriented irreducible 3-manifold
+            with only Seifert ﬁbered blocks in its JSJ decomposition. Assume ∂M g = ∅. If M g
+            is Seifert ﬁbered, then an immersed incompressible surface S → M g is horizontal
+            if it is transverse to the ﬁbers and vertical if it is a union of ﬁbers. An immersed
+            incompressible surface S → M g that is not a ∂-parallel annulus is assumed to be
+            homotoped so that its pieces are horizontal or vertical.
+            Proposition 3.1 ([PW14, Prop 3.1]). Let M g be a graph manifold with ∂M g = ∅.
+            There exists a ﬁnite cover Mg with a ﬁnite family Sg of embedded incompressible
+            surfaces that are not ∂-parallel annuli such that:
+                                   ⊂M
+                  • for each block B    g and each torus T ⊂ ∂ B,  there is a surface S ∈ Sg
+                                                                              
+                    such that S ∩ T is nonempty and vertical with respect to B;
+                                          
+                  • for each block B ⊂ M there is a surface S ∈ S such that S ∩ B
+                                              g                          g                 is
+                    horizontal.
+            Every block B⊂M  g is a product of a circle and a surface.
+
+               Let F be a family of properly embedded essential arcs and curves in a compact
+                                with geodesic boundary. We say that F strongly ﬁlls (resp.
+            hyperbolic surface Σ
+                  
+            ﬁlls) Σ if the complementary components on Σ     of the geodesic representatives of
+            the arcs and curves in F are discs (resp. discs or annuli parallel to the components
+                  This does not depend on the choice of the hyperbolic metric on Σ.
+            of ∂ Σ).                                                                    
+
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          327
+
+
+            Construction 3.2. Let M g be a non-thin graph manifold with ∂M g = ∅. Consider
+            g and Sg satisfying Proposition 3.1. Add the following surfaces to Sg :
+            M
+                  • all JSJ tori of Mg ;
+                                                ⊂M
+                  • vertical tori in each block B   g , whose base curves ﬁll the base Σ
+                                                                                         of B.
+                                                                                             
+            Then the base arcs and curves of the vertical pieces of S in B
+                                                                      g    strongly ﬁll Σ.
+                                                                                          We
+            retain the notation Sg for the projection of this extended family to M g .
+            Remark 3.3. Let Sg be the family from Construction 3.2. Let B be a block of
+            M g . For each g ∈ π1 B, some piece of Sg in B is a cut-surface for g.
+               To prove Strong Separation in Theorem 2.1 (Cubulation), we will need the fol-
+            lowing WallNbd-WallNbd Separation property in blocks.
+            Deﬁnition 3.4 ([HW14, §8.3]). Let S be a family of immersed incompressible
+            surfaces in a compact Riemannian 3-manifold M . Let   S be the family of elevations
+                                                          
+            of the surfaces in S to the universal cover M of M . The family S has WallNbd-
+            WallNbd Separation if for any r there is d = d(r) such that if S,     S ∈ 
+                                                                                         S have
+                                                                        
+            neighborhoods Nr (S), Nr (S ) at distance ≥ d, then Nr (S), Nr (S ) are separated by
+            a surface in S. This property is independent of the choice of Riemannian metric,
+            but the value of d might vary. Similarly S has Ball-Ball Separation if for any r
+            there is d such that each pair of metric r-balls at distance ≥ d is separated by a
+            surface in 
+                       S.
+               We analogously deﬁne WallNbd-WallNbd Separation and Ball-Ball Separation
+            for a family of essential arcs and curves in a compact hyperbolic surface.
+               The following is easy to prove directly, but for uniformity of our arguments, we
+            will deduce it in Section 4 from Criterion 4.3.
+            Lemma 3.5. A strongly ﬁlling family of arcs and curves in a hyperbolic surface Σ  
+            satisﬁes WallNbd-WallNbd Separation. Consequently, if their base arcs and curves
+                                                             as well as in B satisfy WallNbd-
+            strongly ﬁll, then the vertical pieces of Sg in B
+            WallNbd Separation.
+               Let Σ be the base orbifold of a non-thin block B ⊂ M g . The fundamental groups
+            of the components of ∂Σ intersect trivially. Thus by the compactness of the base
+            arcs of the annular vertical pieces of Sg in B, we have the following analogue of
+            Lemma 2.5.
+            Remark 3.6. Let Sg be a ﬁnite family of immersed incompressible surfaces in a
+            non-thin graph manifold M g . There exists R with the following property. Let
+            B ⊂ M g be a block with elevation B      ⊂M   g , and let S,
+                                                                         S be elevations to M
+                                                                                               g of
+            surfaces in S . Suppose that So = S ∩ B
+                          g                                and So = S ∩ B
+                                                                            are both vertical, and
+            suppose that there is a plane T ⊂ ∂ B intersecting both So and So . If the distance
+                                                                         
+            between the lines So ∩ T and So ∩ T is ≥ R in the intrinsic metric on T, then So
+            and So are disjoint and T(So ) ∩ T(So ) = {T}.
+                 In [PW14] we also established the following.
+            Corollary 3.7 ([PW14, Cor 3.3]). Let M g be a graph manifold with ∂M g = ∅.
+            There exists a ﬁnite cover Mg of M g such that for each essential circle C in a
+            torus T ⊂ ∂ M  g                                                 g with SC ∩ T
+                          there is an incompressible surface SC embedded in M
+            consisting of a nonempty set of circles parallel to C.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            328                                          P. PRZYTYCKI AND D. T. WISE
+
+
+                  Finally, the following holds by [RW98, Thm 2.3].
+            Lemma 3.8. Let S be an incompressible surface embedded in a graph manifold
+            M g . Let S  → S be a ﬁnite cover. Then S  → M g is virtually embedded.
+
+                                                 4. Surfaces in hyperbolic blocks
+               We now review the existence results for surfaces in hyperbolic blocks. First we
+            establish a hyperbolic analogue of Proposition 3.1.
+            Theorem 4.1 (Compare [Wis17, Cor 16.32]). Let M h be a compact hyperbolic
+            3-manifold with nonempty boundary. There is in M h a ﬁnite family Sh of geo-
+            metrically ﬁnite immersed incompressible surfaces containing cut-surfaces for all
+            elements of π1 M h . Moreover, the surfaces have no accidental parabolics, i.e., any
+            parabolic element in π1 S with S ∈ Sh lies in π1 C for some component C of ∂S.
+            Proof. We follow the proof of [Wis17, Lem 16.31]. By Theorem 2.6, without loss
+            of generality we can assume π1 M h = π1 X for a compact special cube complex
+            X. Since π1 M h acts freely on the universal cover X       of X, for every g ∈ π1 M h
+            there is a CAT(0) geodesic axis R ⊂ X.    Let A  ⊂X    be any hyperplane intersected
+                                                           
+            transversely by γ. Since A is convex in X, the subgroup Stab(A)            ⊂ π1 M h is
+            undistorted, hence geometrically ﬁnite by [Hru10, Thm 1.5 and Cor 1.3].
+                Let Mh ⊂ H3 be the universal cover of M h . The boundary of the hyperbolic
+            convex core N of the Stab(A)    cover of M h consists of ﬁnitely many geometrically
+            ﬁnite surfaces. Suppose ﬁrst that g is hyperbolic. Since M        h and X   are quasi-
+                                                                                     
+            isometric, the geodesic axis R for g in M intersects an elevation N of N . Thus
+                                                          h
+
+            there is an elevation S ⊂ ∂ N of a surface S ⊂ ∂N intersecting R as well. Hence S
+            is a cut-surface for g.
+                Let Σ, Σ be the two noded surfaces at inﬁnity obtained from the domain of
+            discontinuity of π1 S by quotienting by π1 S. The intersection of the convex hull of
+            the limit set of π1 S with M h is contained in N   , thus lies on one side of S.
+                                                                                             Thus
+            the surface Σ on the opposite side does not have nodes, in the sense that it is
+            homeomorhpic to S. Hence parabolic elements in π1 S correspond to the nodes of
+            Σ , which form a family of essential circles Cj on S that are embedded and disjoint.
+            (See [Kap01, §4.23 p. 112] for an argument using Margulis tubes.)  Then a boundary
+            surface of the convex core for one of the components of S − j Cj is a cut-surface
+            for g and has no accidental parabolics.
+                In the case where g is parabolic, we replace in the argument above the g-invariant
+            geodesic R in M h by a g-invariant horocycle R. The rest of the argument remains
+            the same.                                                                             
+            4.1. WallNbd-WallNbd Separation. We now describe a tool from [HW14] for
+            verifying WallNbd-WallNbd Separation in relatively hyperbolic spaces.
+            Deﬁnition 4.2. Let S be a ﬁnite family of immersed incompressible surfaces in
+            a compact Riemannian 3-manifold M . Let      S be the family of elevations of the
+                                                  of M . Let T ⊂ M be a connected subspace,
+            surfaces in S to the universal cover M
+            and let T be its elevation to M
+                                           .
+               We say that S satisﬁes WallNbd-WallNbd Separation in T if for any r there is d
+                          S ∈ 
+            such that if S,      S have nonempty N = Nr (S) ∩ T, N  = Nr (S ) ∩ T at distance
+            ≥ d, then N and N are separated in T by a restriction to T of a surface in 
+                                 
+                                                                                             S.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          329
+
+
+                We say that S satisﬁes Ball-WallNbd Separation in T if for any r there is d
+            such that if S ∈                          ∩ T and m is a point of T with
+                                S has nonempty N = Nr (S)
+            N = Nr (m) ∩ T at distance ≥ d from N , then N and N  are separated in T by a
+                            
+            restriction to T of a surface in 
+                                              S.
+            Criterion 4.3 ([HW14, Cor 8.10]). Let S be a ﬁnite family of
+               (a) essential arcs and curves in a compact hyperbolic surface M satisfying Ball-
+                   Ball Separation; or
+               (b) immersed incompressible surfaces in a compact Riemannian 3-manifold M .
+                   Let Ti ⊂ M be connected subspaces. Suppose that π1 M is hyperbolic relative
+                   to Ei ⊂ π1 M that are the images of π1 Ti . Assume that π1 S is relatively
+                   quasiconvex for each S ∈ S. Suppose that S satisﬁes Ball-Ball Separation in
+                   M and WallNbd-WallNbd Separation and Ball-WallNbd Separation in all
+                   Ti .
+            Then S satisﬁes WallNbd-WallNbd Separation in M .
+                 The hypothesis of Ball-Ball Separation can be veriﬁed using the following.
+            Lemma 4.4 ([HW14, Lem 5.3]). Let S be a ﬁnite family of
+                 (a) essential arcs and curves in a compact hyperbolic surface M ; or
+                (b) immersed incompressible surfaces in a compact Riemannian 3-manifold M .
+            If the action of π1 M on the associated dual CAT(0) cube complex is free, then S
+            satisﬁes Ball-Ball Separation.
+                 Consequently, Criterion 4.3(a) and Lemma 4.4(a) yield Lemma 3.5.
+            Corollary 4.5. Let Sh be a ﬁnite family of geometrically ﬁnite surfaces in a hy-
+            perbolic 3-manifold M h . Suppose that:
+                 (i) for each g ∈ π1 M h there is a cut-surface for g in Sh ; and
+                (ii) for each parabolic element g ∈ π1 S with S ∈ Sh there is a surface S  ∈ Sh
+                     with a curve C ⊂ ∂S  such that g n is conjugate to an element of π1 C for
+                     some n = 0.
+            Then S satisﬁes WallNbd-WallNbd Separation in M h .
+                 Let ∂t M h ⊂ ∂M h denote the union of toroidal boundary components.
+            Proof. We verify the hypotheses of Criterion 4.3(b). Ball-Ball Separation in M h
+            follows from Hypothesis (i) and Lemma 4.4(b). We now verifyWallNbd-WallNbd
+            Separation and Ball-WallNbd Separation in a torus Ti , where i Ti = ∂t M h . Con-
+            sider an elevation T of Ti to the universal cover Mh of M h . For any r there is d
+                                                             
+            such that the intersections Nr (S) ∩ T or Nr (m) ∩ T from the deﬁnition of WallNbd-
+            WallNbd Separation and Ball-WallNbd Separation are either of diameter ≤ d
+            or at Hausdorﬀ distance ≤ d from a line C      in T stabilized by g ∈ π1 S ∩ π1 Ti .
+            For S ∈ S , the intersections S ∩ T are inﬁnite families of parallel lines. By
+                       h                       
+
+            Hypothesis (ii), their directions include the direction of each C above. This yields
+            WallNbd-WallNbd Separation and Ball-WallNbd Separation in Ti .                     
+
+            4.2. Capping oﬀ surfaces. We will need one more crucial piece of information
+            concerning the existence of surfaces in hyperbolic blocks with designated boundary
+            circles.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            330                                          P. PRZYTYCKI AND D. T. WISE
+
+
+            Proposition 4.6. Let M h be a compact hyperbolic 3-manifold, and let C0 , . . . , Cn
+            be essential circles in the tori T0 · · · Tn = ∂t M h . There exists a geometrically
+            ﬁnite immersed incompressible surface S → M h with S ∩ ∂t M h covering C0 and
+            such that every parabolic element of π1 S is conjugate into π1 Ci for some i.
+              In the proof we will need the following relative version of the Special Quotient
+            Theorem.
+            Theorem 4.7 ([Wis17, Lem 15.3]). Let G be a compact special group that is hyper-
+            bolic relative to free-abelian subgroups {Ei }. Then there are ﬁnite index subgroups
+            Ei◦ ⊂ Ei such that for any further subgroups Eic ⊂ Ei◦ with Ei /Eic ﬁnite or vir-
+            tually cyclic, the quotient G/ {Eic } is hyperbolic and virtually compact special.
+            Moreover, each Ei /Eic embeds into G/ {Eic }.
+                  We will also use the following combination theorem.
+            Theorem 4.8 ([MP09, Thm 1.1]). Let S ⊂ M h be an incompressible geometrically
+            ﬁnite surface in a hyperbolic manifold M h . Let Cj be components of ∂S contained
+            in boundary tori Tij of M h (some Tij may coincide). Then for all but ﬁnitely many
+            cyclic covers Tj of Tij to which Cj lift, the fundamental group π1 S  of the graph
+            of spaces S  obtained by amalgamating S with Tj along Cj embeds in π1 M h and is
+            relatively quasiconvex. Moreover, every parabolic subgroup of π1 S  is conjugate in
+            π1 S  to a subgroup of π1 S or π1 Tj .
+            Proof of Proposition 4.6. By Theorem 2.6 without loss of generality we can assume
+            that G = π1 M h is compact special. By Theorem 4.7 there are gi ∈ π1 Ci such that
+            G = G/ {gi } is hyperbolic and virtually compact special. For a subgroup F ⊂ G
+            we denote by F its image in G. Additionally, by Theorem 4.7 we obtain that for
+            each E = π1 T with T ⊂ ∂t M h the quotient E ⊂ G is inﬁnite. We will prove that
+            there is a ﬁnite index normal subgroup G ⊂ G satisfying the following.
+                 (i) For each E = π1 T the image of E ∩ G → H1 (G ) has rank 1.
+                (ii) The cover M  of M h corresponding to G has
+                                                
+                                 rk H2 (M  )/im H2 (∂M  ) → H2 (M  ) ≥ 2.
+               Properties (i) and (ii) above are preserved when passing to further ﬁnite covers,
+            so it suﬃces to achieve them separately. To obtain Property (i), let E = π1 T .
+            By canonical completion and retraction (see Theorem 6.3), there is a ﬁnite index
+                                                                                         
+            subgroup G ⊂ G that retracts onto an inﬁnite cyclic subgroup Z ⊂ E ∩ G . Thus
+                                                             
+            Z embeds in H1 (G ). The preimage G ⊂ G of G ⊂ G satisﬁes Property (i) for the
+            speciﬁed E. Property (ii) follows directly from [CLR97, Cor 1.4].
+                                                                                   
+               By Property (i), there is a map f∗ : G → Z factoring through H1 (G ) and with f∗
+                                   −1                             
+            nontrivial on each g Eg ∩ G with g ∈ G. Let f : M → S be a map inducing f∗ .
+                                                                         1
+
+            By Sard’s theorem there is a point s ∈ S 1 so that S  = f −1 (s) ⊂ M  is a properly
+            embedded surface, possibly disconnected. Then S  ∩ ∂t M  is a union of families
+            of identically oriented circles covering Ci . We compress S  to an incompressible
+            surface with the same boundary.
+               We now claim that if S  is a virtual ﬁber, thus a ﬁber since S  is embedded,
+            then without changing ∂S  , we can change S  so that it is geometrically ﬁnite.
+            In H2 (M  , ∂M  ; R) we consider the Thurston norm ball Bx ; see [Thu86]. Let
+            L ⊂ H2 (M  , ∂M  ; R) be the subspace of homology classes whose restriction to
+            H1 (∂M  ; R) is proportional to [∂S  ]. By Property (ii) the rank of the image of
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          331
+
+
+            H2 (M  ) in H2 (M  , ∂M  ) is ≥ 2. Hence the dimension of L is ≥ 2. We can take
+            S  represented by a point on a ray not passing through a maximal face of Bx ∩ L.
+            By [Thu86, Thm 3] the surface S  is not a ﬁber of M  . By the Covering [Thu80]
+            and Tameness [Bon86] Theorems the surface S  is geometrically ﬁnite, proving the
+            claim.
+                Let So be a component of S  intersecting T0 . Note that each parabolic element of
+            π1 So is conjugate into π1 C  for some component C  ⊂ ∂S  since S  intersects all the
+            boundary tori of M  . Consequently, all parabolic elements of π1 So are conjugate
+            into π1 Ci .
+                Since So is geometrically ﬁnite, Theorem 4.8 applies to So . Let {Cj } be the
+            components of ∂So outside T0 , and for each j let Tij denote the torus containing
+            Cj . Let S  be the graph of spaces obtained by amalgamating So along Cj with
+            Tj provided by Theorem 4.8. Then S  → M  extends to an immersion N → M  ,
+            where N is the regular neighborhood of S  in the π1 S  cover of M  . Let S be the
+            non-toroidal component of ∂N that is the component that can be decomposed into
+            two surfaces parallel to So and annuli parallel to Tj combined along curves parallel
+            to Cj . The immersed surface S → M  is incompressible, since π1 S embeds in π1 S  .
+            Moreover, S is not a virtual ﬁber since π1 S ∗ is relatively quasiconvex and of inﬁnite
+            index in π1 M h . By Theorem 4.8 every parabolic element of π1 S is conjugate in
+            π1 S  to a parabolic element of π1 So or into one of the π1 Tj . But each parabolic
+            element of π1 So is conjugate into some π1 Ci . Moreover, the intersection of π1 S
+            with a π1 S  conjugate of π1 Tj lies in a conjugate of π1 Cj . Thus the immersion
+            S → M  → M h has the desired property for parabolic elements.                          
+
+                                                                   5. Cubulation
+              In this section we combine the surfaces described in the graph manifold blocks
+            and hyperbolic blocks. To prove Theorem 2.1 (Cubulation) we need the following:
+            Lemma 5.1. Let S be a connected compact surface with χ(S) < 0. There exists
+            K = K(S) such that for each assignment of a positive integer nC to each boundary
+            circle C ⊂ ∂S, there is a connected ﬁnite cover S → S whose degree on each
+            component of the preimage of C equals KnC .
+              We can allow S to be disconnected. We can also allow annular components but
+            obviously require that the integers nC coincide for both boundary circles of such a
+            component.
+
+            Proof. Let K = K(S) be the degree of a cover of S with nonzero genus. The lemma
+            follows from [PW14, Lem 4.6].                                                 
+
+            Proof of Theorem 2.1. The proof has two steps. In the ﬁrst step we construct a
+            family S of surfaces satisfying Theorem 2.1(1)–(4). In the second step we prove
+            that S satisﬁes the Strong Separation property in Theorem 2.1(5).
+
+            Construction. Let Shk be the family of surfaces in Mkh given by Theorem 4.1. Let
+            C be the family of circles embedded in the transitional tori of M that are covered
+            by the boundary circles of the surfaces in {Shk } up to homotopy on the tori. Note
+            that every transitional torus contains circles of C. Let Ci ⊂ C be the circles lying
+            in ∂Mig .
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            332                                          P. PRZYTYCKI AND D. T. WISE
+
+
+                By Corollary 3.7 each circle C ∈ Ci is covered by a boundary circle of an im-
+                                                       g
+            mersed incompressible surface SC             → Mig virtually embedded in Mig . Let Sgi be the
+            family of surfaces in Mi provided by Construction 3.2, and let Sg
+                                           g                                                  g     g
+                                                                                      i = Si ∪{SC }C∈Ci .
+                Let C denote the family of circles embedded in the transitional tori of M covered
+            (up to homotopy) by the boundary circles of the surfaces in {Sg                          
+                                                                                         i }. Let Ck ⊂ C
+                                                                                                            
+
+            be the circles lying in ∂Mkh . By Proposition 4.6 for each circle C  ∈ Ck , there
+                                                                                      → Mk such that
+                                                                                   h            h
+            is a geometrically ﬁnite immersed incompressible surface SC
+                                                           
+            SC  ∩ ∂t Mk is nonempty and covers C . Moreover, we require that all the parabolic
+              h          h
+                                                                               h
+                                      are conjugate to π1 C with C ∈ C . Let Sk = Sk ∪ {SC  }C  ∈C .
+                                   h                                                     h        h
+            elements of π1 SC                                                                           k
+
+                We will apply Lemma 5.1 to produce families of surfaces {            Sh      g
+                                                                                        k }, {Si } covering
+            {Sh      g                            h    g
+               k }, {Si } such that So = {Sk } ∪ {Si } has the following property. There is a
+            uniform d such that for each circle in C , each component of its preimage in a
+            surface in So covers it with degree d. In order to arrange this for a boundary circle
+                                                 g
+            C of a surface in {Sh      k } ∪ {Si }, let dC denote the degree with which C maps onto
+                             
+            a circle in C . Let nC = dC C dC . Applying Lemma 5.1 with this choice of {nC }
+                                              1
+
+            provides the uniform d = K C dC . Note that for an annular surface the degrees
+            dC coincide and hence the numbers nC coincide. We can then take a cyclic cover.
+                We will now extend each surface So ∈ So to a surface immersed properly in M by
+            combining appropriately many copies of other surfaces in So . First assume So ∈            Sg
+                                                                                                          i .
+                          
+            Let Co ⊂ C denote the set of circles covered by the boundary components of So ,
+            and let mC  denote the number of components of So mapping to the circle C  ∈ Co .
+            Denote by SC      h
+                                  the surface in So covering SC  , and denote by lC  the number of
+                                                                   h
+
+                                               h              
+            boundary components of SC  covering C . Let L = C  ∈Co lC  . Take 2L copies of
+            So and 2mC  L copies of Sh  , for each C  , with two opposite orientations. These
+                                  lC                     C
+            surfaces combine to form a desired immersed incompressible surface extending So .
+            Note that for each C  ∈ C the surface SC h
+                                                           appears within such an extension of
+
+                                 
+            some surface So ∈ Si .g
+
+               Hence it remains to consider the case So ∈   Shk ⊂ 
+                                                                   Sh         h
+                                                                    k , where Sk is the family of
+            surfaces covering the surfaces in Sk . This case is treated similarly to the previous
+                                                 h
+
+            one. Let Co ⊂ C be the set of circles covered by the boundary components of So .
+            Consider all the surfaces SC
+                                        g            g
+                                           covering SC for C ∈ Co . Let Co ⊂ C denote the set of
+            circles covered by the boundary components of these surfaces SC  g
+                                                                                . Consider all the
+            surfaces SC  , where C ∈ Co . Gluing the appropriate number of copies of So , SC
+                       h                                                                       g
+                                                                                                   ,
+                  h
+            and SC  gives the desired extension.
+               We denote the union of both of these families of extended surfaces together with
+            the family of the JSJ tori by S. So S obviously satisﬁes Theorem 2.1(2). Observe
+            that Theorem 2.1(1) follows from Theorem 2.1(2) and the existence of cut-surfaces
+            in Theorem 4.1 and Construction 3.2. The surfaces in      Sg
+                                                                        i are virtually embedded
+            in Mi by Lemma 3.8, hence S satisﬁes Theorem 2.1(3). The surfaces in 
+                  g
+                                                                                           Sh
+                                                                                            k are
+            geometrically ﬁnite, and thus S satisﬁes Theorem 2.1(4).
+                                                                                                h
+               We also record that by the way we have applied Proposition 4.6 to construct SC     ,
+
+            the pieces of S in every hyperbolic block Mk satisfy Hypothesis (ii) of Corollary 4.5.
+                                                        h
+
+
+
+            Strong Separation. We now verify Theorem 2.1(5). We adopt the convention
+            that in thin graph manifold blocks T × I we choose the vertical direction so that all
+            the pieces in T ×I of the surfaces in S are horizontal. Let R be a constant satisfying
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          333
+
+
+            Lemma 2.5 and Remark 3.6 in all hyperbolic and non-thin graph manifold blocks
+            of M , with respect to the pieces of S.
+                We ﬁrst prove Strong Separation (b). Suppose that S,           S ∈  S intersect a graph
+            manifold block Mi ⊂ M . We need to show that if S ∩ M
+                                 g                                                g and S ∩ M
+                                                                                      i
+                                                                                                      g are
+                                                                                                        i
+            suﬃciently far, then S and S are separated by another surface in 
+                                              
+                                                                                            S.
+                First consider the case where S intersects a JSJ or boundary plane T of M               g
+                                                                                                             i
+            intersected by S.  Since by Theorem 2.1(1) the components of S ∩ M g are virtually
+                                                                                              i
+            embedded, there is h ∈ Stab(T) such that the surfaces S ∩ M           g and hS ∩ M
+                                                                                       i
+                                                                                                      g are
+                                                                                                        i
+            disjoint. Moreover, by passing to a power of h, we can assume that they are at
+            distance ≥ R. Let M    hor ⊂ M  g be the maximal graph manifold containing T such
+                                                i
+            that S is horizontal in all the blocks of M  hor . In the extreme cases M      hor can equal
+            M or T. Let N
+                g               be the union of M   hor with the adjacent hyperbolic and Seifert
+               i
+            ﬁbered blocks. By Lemma 2.5 and Remark 3.6 the surfaces S ∩ N                 and hS ∩ N  are
+                                                                      
+            disjoint and the boundary lines of S ∩ N and hS ∩ N do not intersect a common
+            JSJ plane outside M   hor . Hence the entire S and hS are disjoint.
+                For each S and T we ﬁx h as above. The surface hS ∩ M            hor is in a bounded
+            neighborhood of S ∩ M    hor . Hence if S ∩ Mg is suﬃciently far from S ∩ M
+                                                               i
+                                                                                                    g , then
+                                                                                                      i
+            S ∩ Mhor is at distance ≥ R from each of h±1 S ∩ M      hor . As before, S is disjoint
+            from both h±1 S,   and one of h±1 S separates S from S,    as desired. Since there are
+            ﬁnitely many Stab(S ∩ M      ) orbits of JSJ or boundary planes T of M
+                                          g
+                                          i
+                                                                                              g intersected
+                                                                                                i
+            by S,  this argument works for all T simultaneously.
+                To complete the proof of Strong Separation (b) it remains to consider a second
+            case where S intersects a Seifert ﬁbered block M      o ⊂ M  g intersected by S,
+                                                                               i
+                                                                                                     but is
+            disjoint from the JSJ and boundary planes of M          intersected by S.
+                                                                      g                       In that case
+                                                                     i
+                                       
+            the pieces of S and S in Mo are vertical. Since the proof for Strong Separation (a)
+            is the same, we perform it simultaneously: in that case M         o denotes the hyperbolic
+            block M h . In both cases if we denote as usual by T(S ∩ M          o ) the set of JSJ and
+                      k
+            boundary planes in ∂ Mo intersecting S, then T(S ∩ Mo ) and T(S ∩ M
+                                                                                        o ) are disjoint.
+                As before, for any JSJ or boundary plane T ∈ T(S ∩ M           o ), we ﬁx h ∈ Stab(T)
+            such that S and hS are disjoint. We do the same with S replaced by S . There is
+                                                                            
+            R such that for each T, the translate hS ∩ T is contained in the R -neighborhood
+            of S ∩ T in the intrinsic metric on T, and the same property holds with S replaced
+            by S . Let d = d(r) be a WallNbd-WallNbd Separation constant guaranteed by
+            Lemma 3.5 and Corollary 4.5 for r = R + R in all hyperbolic and non-thin Seifert
+            ﬁbered blocks with respect to the pieces of S.
+                If the piece S ∩ M o is at distance ≥ 2r + d from the piece S ∩ M           o , then by
+            WallNbd-WallNbd Separation there is a surface S∗ ∈          S such that S∗ ∩ M   o separates
+            Nr (S ∩ Mo ) from Nr (S ∩ M o ) in M
+                                                    o . If T(S∗ ∩ Mo ) is disjoint from T(S ∩ M    o ) ∪
+                               ∗                          
+            T(S ∩ Mo ), then S is disjoint from S and S and separates them, as desired.
+                Otherwise, if T(S∗ ∩M o ) intersects T(S ∩M
+                                                              o )∪T(S∩  M o ), we can assume without
+            loss of generality that there is a JSJ or boundary plane T ∈ T(S∗ ∩ M
+                                                                                           o )∩T(S ∩ Mo ).
+            By the deﬁnition of R and r = R + R , there is a translate hS disjoint from S
+                                                                                       
+
+            such that hS ∩ T separates S ∩ T from NR (S∗ ∩ T) in the intrinsic metric on
+            T. Moreover, by Remark 3.6 or Lemma 2.5 the surface hS ∩ M               o is disjoint from
+
+
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            334                                          P. PRZYTYCKI AND D. T. WISE
+
+
+            S∗ ∩ M
+                  o and T(hS ∩ Mo ) intersects T(S∗ ∩ M
+                                                           o ) only in T. Hence hS and S are
+            disjoint and hS separates S from S,
+                                                  as desired.                                 
+
+
+                                        6. Separability in special cube complexes
+              The goal of the next three sections is to prove Theorem 2.4 (Specialization). We
+            begin with reviewing the deﬁnition of a special cube complex.
+
+            6.1. Special cube complexes.
+            Deﬁnition 6.1 (Compare [HW08, Def 3.2]). Let X be a nonpositively curved
+            cube complex, possibly not compact. A midcube (resp. codim-2-midcube) of an
+            n-cube [0, 1]n = I n is the subspace obtained by restricting exactly one (resp. two)
+            coordinate to 12 . Let M denote the disjoint union of all midcubes (resp. codim-2-
+            midcubes) of X. An immersed hyperplane (resp. immersed codim-2-hyperplane) of
+            X is a connected component of the quotient of M by the inclusion maps.
+                An immersed hyperplane (resp. immersed codim-2-hyperplane) A of X self-
+            intersects if it contains two diﬀerent midcubes (resp. codim-2-midcubes) of the
+            same cube of X. If A does not self-intersect, then it embeds into X, and it is
+            called a hyperplane (resp. codim-2-hyperplane). If the hyperplanes of X do not self-
+            intersect, which happens for example when X is CAT(0), then codim-2-hyperplanes
+            are components of intersections of pairs of intersecting hyperplanes. For an im-
+            mersed hyperplane A, the map A → X is π1 -injective since it is a local isometry.
+            We shall regard π1 A as a subgroup of π1 X.
+                An edge e is dual to an immersed hyperplane A if A contains the midcube of e.
+            A hyperplane A is two-sided if one can orient all of its dual edges so that any two
+            that are parallel in a square s of X are oriented consistently within s.
+                If a hyperplane A is two-sided and we orient its dual edges as above, we say that
+            A directly self-osculates if it has two dual edges with the same initial vertex or with
+            the same terminal vertex. If A is two-sided and the initial vertex of one of its dual
+            edges coincides with the terminal vertex of another or the same dual edge, then A
+            indirectly self-osculates.
+                Distinct hyperplanes A, B interosculate if there are dual edges e1 , e2 of A and
+            f1 , f2 of B such that e1 , f1 lie in a square and e2 , f2 share a vertex but do not lie
+            in a square.
+                A nonpositively curved cube complex is special if its immersed hyperplanes do
+            not self-intersect, are two-sided, and do not directly self-osculate or interosculate.
+                A group is special if it is the fundamental group of a special cube complex.
+               Note that we do not require special cube complexes to be compact. However, in
+            this article we will always assume that they have ﬁnitely many hyperplanes.
+            Theorem 6.2 ([HW08, Thm 4.2]). A special cube complex X with ﬁnitely many
+            hyperplanes admits a local isometry X → R(X) into the Salvetti complex R(X) of
+            a ﬁnitely generated right-angled Artin group.
+               The generators of the Artin group correspond to the hyperplanes of X. Each
+            edge of X dual to a hyperplane A ⊂ X is mapped by the local isometry to an edge
+            of R(X) labeled by the generator corresponding to A. Note that R(X) is compact
+            special.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          335
+
+
+               Our goal is to revisit and strengthen hyperplane separability and double hyper-
+            plane separability established in [HW08] for compact special cube complexes. The
+            starting point and the main tool is the following.
+            Theorem 6.3 ([HW08, Cor 6.7]). Let Y → X be a local isometry from a compact
+            cube complex Y to a special cube complex X. There is a ﬁnite cover X  → X, called
+            the canonical completion of Y → X, to which Y lifts and a canonical retraction
+            map X  → Y ⊂ X, restricting to the identity on Y , which is continuous and maps
+                           
+            hyperplanes of X intersecting Y into themselves.
+               If one ﬁrst subdivides X (or takes an appropriate cover) to eliminate indirect
+            self-osculations, then the canonical retraction can be made cellular.
+               All paths that we discuss in X are assumed to be combinatorial. Let ||X|| denote
+            the minimum of the lengths of essential closed paths in X or ∞ if X is contractible.
+            Lemma 6.4. Let X be a special cube complex with ﬁnitely many hyperplanes. Then
+                                               of X with ||X||
+            for each d there is a ﬁnite cover X              > d.
+                 Note that the above property is preserved when passing to further covers.
+            Proof. Let X → R = R(X) be the local isometry into the Salvetti complex of the
+            ﬁnitely generated right-angled Artin group F coming from Theorem 6.2. Since R
+            is compact, there is a ﬁnite set F of conjugacy classes of elements of F that can be
+            represented by closed paths of length ≤ d in R. Since F is residually ﬁnite, it has a
+            ﬁnite index subgroup F disjoint from the set of elements whose classes lie in F. Let
+            R → R be the ﬁnite cover corresponding to F ⊂ F . Then ||R|| > d. Let X  → X be
+                                                
+            the pullback of R → R. Since X → R is a local isometry, it is π1 -injective, and we
+                    > d as desired.
+            have ||X||                                                                         
+            6.2. Separability. A subgroup H of a group G is separable if for each g ∈ G − H,
+            there is a ﬁnite index subgroup F of G with g ∈/ F H.
+            Deﬁnition 6.5. Let X be a nonpositively curved cube complex, and let X       be its
+            universal cover. Let A be an immersed hyperplane in X with an elevation A     in X.
+                                                                                              
+                                                                          
+            The carrier N (A) is the smallest subcomplex of X containing A. It is isomorphic
+            with A × I. The carrier N (A) is the quotient of N (A)
+                                                                   by Stab(A).  There is an
+            induced map N (A) → X. If A does not self-intersect and does not self-osculate
+            (directly or indirectly), then N (A) embeds in X and we identify it with its image.
+            We similarly deﬁne carriers of immersed codim-2-hyperplanes.
+               A path α → X starting (resp. ending) at a vertex v of N (A) is a path that starts
+            (resp. ends) at the image of v in X. The path α is in N (A) if it lifts to a path in
+            N (A). The path α is path-homotopic into N (A) if it is path-homotopic to a path
+            in N (A).
+            Deﬁnition 6.6. An immersed hyperplane A in a cube complex X has injectivity
+            radius > d if each path of length ≤ 2d in X starting and ending at N (A) is path-
+            homotopic into N (A). In particular if d = 0, then A does not self-intersect or
+                                                                                         of X are
+            self-osculate. Equivalently, all elevations of N (A) to the universal cover X
+            at distance > 2d.
+            Lemma 6.7. Let X be a special cube complex with ﬁnitely many hyperplanes. Let
+                                                                           → X such that
+            A ⊂ X be a hyperplane. Then for each d there is a ﬁnite cover X
+                          ⊂X
+            any elevation A   of A has injectivity radius > d.
+
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            336                                          P. PRZYTYCKI AND D. T. WISE
+
+
+               In the compact case, Lemma 6.7 and the following consequence was proved in
+            [HW08, Cor 9.7] using Theorem 6.3. Note that the conclusion of Lemma 6.7 is
+            preserved when passing to further covers.
+            Corollary 6.8. Let G be the fundamental group of a virtually special cube complex
+            with ﬁnitely many hyperplanes, and let H ⊂ G be the fundamental group of an
+            immersed hyperplane. Then H is separable in G.
+            Proof of Lemma 6.7. As before, let X → R = R(X) be the local isometry into the
+            Salvetti complex of the ﬁnitely generated right-angled Artin group F coming from
+            Theorem 6.2. Let T be the hyperplane in R that is the image of the hyperplane A.
+            Since R is compact, it admits ﬁnitely many paths starting and ending at N (T ) of
+            length ≤ 2d, not path-homotopic into N (T ). Let F denote the family of conjugacy
+            classes determined by closing them up by paths in N (T ). Then F is a union
+            of classes determined by ﬁnitely many nontrivial cosets of the form Hg, where
+            H = π1 T . Since hyperplane subgroups in F are separable [HW08, Cor 9.4], there
+            is a ﬁnite index subgroup F ⊂ F disjoint from the set of elements whose classes lie
+            in F. Let R  → R be the ﬁnite cover corresponding to F ⊂ F . Then elevations of T
+            to R have injectivity radius > d. Let X → X be the pullback of R  → R.
+                                                                            
+               We verify that X is the desired cover. The universal cover X of X embeds into
+            the universal cover R  of R as a convex subcomplex. Let A     be an elevation of A
+                                                                     
+            to X, and let T be the elevation of T to R containing A. The π1 X        orbit of A
+                                                                                               
+                                                                                    
+            is contained in the π1 R orbit of a T . Since π1 R translates of N (T ) in R are at
+            distance > 2d, so are the π1 X translates of N (A)
+                                                              in X.
+                                                                                              
+            6.3. Double coset separability. Let H1 , H2 ⊂ G be subgroups of a group G.
+            The double coset H1 H2 is separable if for each g ∈ G − H1 H2 there is a ﬁnite index
+            subgroup F of G with g ∈/ F H1 H2 .
+            Deﬁnition 6.9. Let A be a hyperplane in a nonpositively curved cube complex
+            X. Let A  be an elevation of A to the universal cover X
+                                                                    of X. Let A
+                                                                               +d ⊂ X be the
+            combinatorial ball of radius d around the carrier of A. We say that A is d-locally
+                     +d has ﬁnitely many Stab(A) orbits of hyperplanes.
+            ﬁnite if A
+               In particular A is 0-locally ﬁnite if there are ﬁnitely many Stab(A) orbits of
+                                       If, additionally, there are ﬁnitely many Stab(A) orbits
+            hyperplanes intersecting A.
+            of hyperplanes osculating with A, then A is 1-locally ﬁnite.
+            Lemma 6.10. Let G be the fundamental group of a special cube complex with
+            ﬁnitely many hyperplanes. Let H1 , H2 ⊂ G be conjugates of the fundamental groups
+            of hyperplanes one of which is d-locally ﬁnite for all d. Then the double coset H1 H2
+            is separable in G.
+               While Lemma 6.10 could be avoided in the proof of Theorem 1.1, we include it
+            to shed more light on double hyperplane separability.
+            Proof of Lemma 6.10. Let X   be the universal cover of the special cube complex X
+            with π1 X = G and ﬁnitely many hyperplanes. Let A,        B
+                                                                       ⊂X   be the hyperplanes
+            stabilized by H1 , H2 . Let A, B ⊂ X be the projections of A, B.   Without loss of
+            generality, we may assume that A is d-locally ﬁnite for all d. Let v be a base vertex
+                    Choose a path ρ → X
+            of N (A).                        starting at v and ending with an edge e dual to
+              Let v, e be the projections of v, e to N (A), N (B). Then ρ projects to a path ρ
+            B.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          337
+
+
+            that starts at v and ends with e. The elements of H1 H2 are represented by closed
+            paths of the form αρβρ−1 , where α, β are closed paths in N (A), N (B) based at v
+            and the endpoint of ρ. Let γ → X be a closed path based at v representing an
+            element outside H1 H2 . We want to ﬁnd a ﬁnite cover X       of X, where the based lifts
+            of γ and each path αρβρ−1 above have distinct endpoints. Equivalently, we want
+            the based lift of γρ and each lift of ρ starting at the preimage of v in the based
+            elevation of N (A) to end with edges dual to distinct elevations of B. Here a based
+                                                                                               
+            lift or elevation is a lift or elevation where v lifts to a speciﬁed basepoint of X.
+                Suppose that ρ and γρ have length ≤ d. By Lemma 6.7 we can assume that A has
+            injectivity radius > d. Then the quotient A+d = H1 \A     +d embeds into X. Since A is
+            d-locally ﬁnite, there are ﬁnitely many hyperplanes in A+d . Applying Theorem 6.2
+            to A+d , let A+d → R(A+d ) be the local isometry into the Salvetti complex R(A+d )
+            of the right-angled Artin group with generators corresponding to hyperplanes in
+            A+d . Apply Theorem 6.3 to the induced local isometry R(A+d ) → R(X). Consider
+            its canonical completion R(X) → R(X) and the retraction R(X)     → R(A+d ). Take
+                                                            
+            the pullback of the cover R(X) → R(X) to X → X. We now verify that X             is the
+            required cover.
+                Let A⊂X    be an elevation of A mapping to R(A+d ) ⊂ R(X).   Let B,     B
+                                                                                             ⊂ X 
+                                                              
+            be hyperplanes dual to the last edges e, e ⊂ A of lifts of ρ, γρ starting at some
+                                                                +d
+                               Since γ represents an element outside H1 H2 , the hyperplanes
+            lifts of v in N (A).
+            in X  dual to the last edges of any lifts of ρ, γρ starting at the H1 orbit of v
+            are distinct. Hence the hyperplanes in A+d dual to the projections of e, e are
+            distinct. Hence the projections of these hyperplanes to R(A+d ) are also distinct.
+                              → R(A+d ) shows that hyperplanes TB , T ⊂ R(X)
+            The retraction R(X)                                                     containing
+                                                                                B
+            these projections are also distinct. Since B, B map to TB , T , they are distinct as
+                                                                             
+                                                                              B
+            well.                                                                                  
+
+                 The proof of Lemma 6.10 also gives the following.
+
+            Corollary 6.11. Let X be a special cube complex with ﬁnitely many codim-2-
+            hyperplanes. Let A, B ⊂ X be hyperplanes, and let Q be a component of A ∩ B.
+            There is a ﬁnite cover X → X with the following property. If elevations A,
+                                                                                       B
+                                                                                        ⊂X
+                                                                                          
+                                                               
+            of A, B intersect along an elevation of Q, then A ∩ B projects entirely to Q.
+
+            Proof. Choose a component Q of A ∩ B distinct from Q. Let e, e be edges in
+            N (Q), N (Q ) dual to B. Note that e, e are dual to distinct hyperplanes in N (A).
+            Consider closed paths γ = αβ, where α, β are paths in N (A), N (B) and moreover
+            α starts with e and ends with e . We need to ﬁnd a cover X     where such paths γ
+            do not lift. In other words, the extremal edges of any lift of α to X  are dual to
+            distinct elevations of B.
+               Since there are ﬁnitely many codim-2-hyperplanes in X, the carrier N (A) has
+            ﬁnitely many hyperplanes. In other words, the hyperplane A is 0-locally ﬁnite. We
+            repeat the construction from the proof of Lemma 6.10 with d = 0 to obtain the
+                    Let A
+            cover X.          ⊂X                                                   Then
+                                   be an elevation of A mapping to R(N (A)) ⊂ R(X).
+                                    are dual to distinct hyperplanes in X.
+            any lifts of e, e to N (A)                                       Replacing X with
+            a further cover that is a regular cover of X, we obtain the same property for all
+            elevations of A.                                                                  
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            338                                          P. PRZYTYCKI AND D. T. WISE
+
+
+
+
+                                                                               >2d
+
+
+
+
+                                                                   Q                 Q′
+
+
+
+
+                                 Figure 1. Double injectivity radius > d at Q = {Q, Q }
+
+               When we have a map N (Q) → N (A), a path in N (A) starting (resp. ending) at
+            a vertex v of N (Q) is a path that starts (resp. ends) at the image of v in N (A).
+            Deﬁnition 6.12. Let A = B be hyperplanes in a cube complex X, and let Q be
+            a family of components of A ∩ B. Hyperplanes A, B have double injectivity radius
+            > d at Q if each path of length ≤ 2d in X starting at N (A) and ending at N (B)
+            has the following property. Such a path is path-homotopic to a concatenation at
+            a vertex of N (Q) of a pair of paths in N (A) and N (B). In particular A ∩ B = Q.
+                                              N (B)
+            In other words, if elevations N (A),     of N (A), N (B) to the universal cover of
+            X are at distance ≤ 2d, then A  ∩B  is nonempty and projects to Q. We refer the
+            reader to Figure 1.
+
+            Lemma 6.13. Let X be a special cube complex with ﬁnitely many codim-2-hyper-
+            planes. Let A, B ⊂ X be hyperplanes, and let Q be a component of A ∩ B. For each
+                                      → X with the following property. If elevations A,
+            d there is a ﬁnite cover X                                                 B⊂X  
+            of A, B intersect along an elevation of Q, then they have double injectivity radius
+            > d at the family of components of A∩B  projecting to Q.
+
+              Note that this property is preserved when passing to further covers. In particular,
+            we can arrange that it holds for all A, B and Q simultaneously.
+            Proof. By Corollary 6.11 there is a ﬁnite cover X̌ of X where the intersection of
+            some elevations Ǎ ∩ B̌ is nonempty and projects to Q. Then passing to a regular
+            cover and quotienting by the group permuting the components of Ǎ∩ B̌, we obtain a
+            cover X  of X with elevations A , B  of A, B such that the intersection Q = A ∩ B 
+            is connected and projects to Q.
+               If we ﬁnd a cover X  → X  satisfying the conclusion of the lemma with A , B  , Q
+            in place of A, B, Q, then a regular cover X    of X factoring through X   will satisfy
+            the conclusion of the lemma with A, B, Q. Thus we can replace X by X  , suppress
+            the primes, and assume that A ∩ B = Q.
+               Applying Theorem 6.2, let X → R be the local isometry into the Salvetti complex
+            R = R(X) of a ﬁnitely generated right-angled Artin group F . Let TA , TB ⊂ R
+            denote the hyperplanes that are the images of A, B, and let TQ ⊂ R denote the
+            codim-2-hyperplane TA ∩ TB . Consider paths γ → R of length ≤ 2d starting at
+            N (TA ) and ending at N (TB ) but with γ not path-homotopic to a concatenation at
+            N (TQ ) of a pair of paths in N (TA ), N (TB ). Since R is compact, there are ﬁnitely
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          339
+
+
+            many such paths γ. Let F denote the family of conjugacy classes of elements
+            of F determined by the closed paths αβγ −1 , with α in N (TA ) and β in N (TB )
+            concatenated at N (TQ ). Then F is a union of classes determined by ﬁnitely many
+            nontrivial double cosets of the form H1 H2 g, where H1 = π1 TA , H2 = π1 TB . Since
+            double cosets of hyperplane subgroups in F are separable (a case of Lemma 6.10
+            proved in [HW08, Cor 9.4]), the group F has a ﬁnite index subgroup F disjoint
+            from the set of elements whose classes lie in F. Let R    → R be the ﬁnite cover
+            corresponding to F ⊂ F . Any intersecting elevations TA , TB ⊂ R
+                                                                             of TA , TB have
+                                                          
+            double injectivity radius > d at TA ∩ TB . Let X → X be the pullback of R    → R.
+               We show that X   has the desired property. Let A,
+                                                                 B⊂X   be intersecting eleva-
+            tions of A, B. Let A, B
+                                    be their further elevations to the universal cover X of X
+                                                     
+            at distance ≤ 2d. The universal cover X embeds as a convex subcomplex of the
+            universal cover R of R. The hyperplanes TA , TB ⊂ R  containing A, B
+                                                                                     intersect,
+            since their images TA , TB ⊂ R have double injectivity radius > d at TA ∩ TB . By
+                                                                                
+            Helly’s theorem [Rol98, Thm 2.2] the combinatorial convex hull of a pair points in
+            intersecting hyperplanes contains an intersection point. Hence the hyperplanes A   
+            and B intersect as well.                                                         
+
+                                    7. Background on cubical small cancellation
+               In this section we review the main theorem of cubical small cancellation [Wis17].
+            It will be used in the proof of Theorem 2.4 (Specialization).
+
+            7.1. Pieces. Let X be a nonpositively curved cube complex. Let {Yi → X}
+            be a collection of local isometries of nonpositively curved cube complexes. The
+            pair X|{Yi → X}, or brieﬂy X|Yi , is a cubical presentation. Its group is
+            π1 X/ {π1 Yi } which equals π1 X ∗ , where X ∗ is obtained from X by attaching
+            cones along the Yi . Let X = {π1 Yi }\X        denote the cover of X in the universal
+            cover X     ∗ of X ∗ .
+                 An abstract cone-piece in Yi of Yj is the intersection P = Yi ∩Yj of some elevations
+            Yi , Yj of Yi , Yj to the universal cover X
+                                                          of X. In the case where j = i, we require
+            that the elevations are distinct in the sense that for the projections P → Yi , Yj
+            there is no automorphism Yi → Yj such that the following diagram commutes.
+                                                                       P       → Yi
+                                                                       ↓        ↓
+                                                                       Yj      → X
+
+            Note that an abstract cone-piece in Yi actually lies in Yi .
+                Let A be a hyperplane in X     disjoint from Yi . An abstract wall-piece in Yi is the
+                                     
+            intersection Yi ∩ N (A). An abstract piece is an abstract cone-piece or an abstract
+            wall-piece.
+                A path α → Yi is a piece in Yi if it lifts to Yi into an abstract piece in Yi . We
+            then denote by |α|Yi the combinatorial distance between the endpoints of a lift of
+            α to Yi , i.e., the length of a geodesic path in Yi path-homotopic to α.
+                The cubical presentation X|Yi  satisﬁes the C  ( n1 ) small cancellation condition
+            if |α|Yi < n1 ||Yi || for each piece α in Yi . Recall that ||Yi || denotes the minimum of
+            the lengths of essential closed paths in Yi .
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            340                                          P. PRZYTYCKI AND D. T. WISE
+
+
+            7.2. Ladder Theorem. A disc diagram D is a compact contractible 2-complex
+            with a ﬁxed embedding in R2 . Its boundary path ∂p D is the attaching map of
+            the cell at ∞. The diagram is spurless if D does not have a spur, i.e., a vertex
+            contained in only one edge. If X is a combinatorial complex, a disc diagram in X
+            is a combinatorial map of a disc diagram into X.
+               Let D → X    ∗ be a disc diagram with a boundary path ∂p D → X. Note that
+                            ∗ are squares or triangles, where the latter have exactly one vertex
+            the 2-cells of X
+            at a cone-point. The triangles in D are grouped together into cone-cells around
+            these cone-points. The complexity of D is the pair of numbers (# cone-cells of D,
+            # squares of D) with lexicographic order.
+               In addition to spurs, there are two other types of positive curvature features in
+            ∂p D: shells and cornsquares. A cone-cell C adjacent to ∂p D is a shell if ∂C ∩ ∂p D
+            (outer path) is connected and its complement in ∂C (inner path) is a concatenation
+            of ≤ 6 pieces. A pair of consecutive edges of ∂p D is a cornsquare if the carriers of
+            their dual hyperplanes intersect at a square and surround a square subdiagram, i.e.,
+            a subdiagram all of whose 2-cells are squares. A ladder is a disc diagram that is the
+            concatenation of cone-cells and rectangles with cone-cells or spurs at extremities,
+            as in Figure 2. A single cone-cell is not a ladder, while a single edge is a ladder.
+            The following summarizes the main results of cubical small cancellation theory.
+            Theorem 7.1 ([Wis17, Thm 3.45], see also [Jan17]). Assume that X|Yi  satisﬁes
+            the C  ( 12
+                      1
+                         ) small cancellation condition. Let D → X  ∗ be a minimal complexity disc
+            diagram for a closed path ∂p D → X. Then one of the following holds:
+                (a) D is a single vertex or a single cone-cell;
+                (b) D is a ladder; or
+                (c) D has at least three spurs and/or shells and/or cornsquares. Moreover, if
+                       there is no shell or spur, then there must be at least four cornsquares.
+                  The following consequence allows us to identify Yi with any of its lifts to X.
+            Corollary 7.2. Let X|Yi  satisfy the C  ( 12
+                                                        1
+                                                           ) small cancellation condition. Then
+            each Yi lifts to an embedding in X.
+            Proof. We argue by contradiction. Let γ → Yi be a path of minimal length that is
+            not a closed path but which projects to a closed path γ → X. Let v be the vertex
+            of γ which is the projection of the endpoints of γ. Let D → X  ∗ be a disc diagram
+            with ∂p D = γ of minimal complexity among all such paths γ. Then the boundary
+            ∂C of any cone-cell C in D is essential in Yj into which it maps.
+
+
+
+
+                          Figure 2. Two ladders are on the left. On the right are two
+                          cornsquares, a spur, and a shell within a disc diagram.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          341
+
+
+                If in γ − v, there were two consecutive edges forming a cornsquare, we could
+            homotope D so that there is a square at that exact corner [Wis17, Lem 2.6]. That
+            square would lift to Yi , and we could homotope γ through it to reduce the com-
+            plexity. The diagram D has no spur. If there is a shell C in D whose outer path
+            is contained in γ − v, then let γC = γ ∩ ∂C denote that outer path and suppose
+            that ∂C maps to Yj . If γC is a piece in Yj of Yi , then this contradicts that ∂C is
+            essential in Yi . Otherwise j = i, and there is an identiﬁcation Yj → Yi agreeing on
+            γC . We then replace inside γ the outer path γC by the inner path of C to obtain
+            γ  → Yi with the same endpoints as γ. The projection γ  → X of γ  bounds the
+            disc diagram D − C of smaller complexity than D, which is a contradiction. Hence
+            by Theorem 7.1, the diagram D is a single cone-cell C. Since ∂C is essential, the
+            path γ − v is not a piece, hence again we can identify Yj with Yi along γ − v and
+            γ. But γ − v is a closed path in Yj , a contradiction.                             
+            7.3. Small cancellation quotients. We now prove that in small cancellation quo-
+            tients we can separate elements from cosets and double cosets. We also prove a
+            convexity result for carriers.
+            Lemma 7.3. Let X|Yi  be a cubical presentation with all abstract pieces of uni-
+            formly bounded diameter. Suppose that each Yi is virtually special with ﬁnitely
+            many immersed hyperplanes. Let A    ⊂X    be a hyperplane, and let g ∈ G − H, where
+                                       
+            G = π1 X and H = Stab(A). Then there are ﬁnite index subgroups Pi ⊂ Pi = π1 Yi
+            such that the following hold.
+                (1) Letting X = {Pi }\X, the immersed hyperplane A in X that is the pro-
+                                has no self-intersections and no self-osculations.
+                    jection of A
+                (2) Any two vertices of N (A) are connected by a geodesic that lies in the union
+                    of
+                       • a uniform neighborhood of N (A), and
+                       • the translates of Y i = Pi \Yi in X intersecting A.
+                (3) g ∈/ H in the quotient G = G/ {Pi }.
+            Proof. Assume that all the abstract pieces have diameter < d. By Lemma 6.4 we
+            can choose Pi so that ||Y i || ≥ 12d. By Lemma 6.7 we can further choose Pi so that
+            all the hyperplanes of Y i have injectivity radius > 3d. We also require that Pi ⊂ Pi
+            are characteristic, so that X|Y i  satisﬁes the C  ( 12
+                                                                   1
+                                                                      ) small cancellation condition.
+                                                  
+            Note that merely requiring that Pi is normal in Pi might not suﬃce, since we need
+            that every automorphism of Yi respecting the map Yi → X elevates to Y i , thus
+            ensuring that in Yi there do not appear new abstract cone-pieces in Y i of Y i .
+                We ﬁrst prove Assertion (2). Let D → X       ∗ be a disc diagram bounded by a
+            geodesic α in the 1-skeleton of N (A) and a geodesic γ in the 1-skeleton of X.
+            We assume that D has minimal complexity among all such disc diagrams with
+            prescribed common endpoints of α and γ. Then the boundary ∂C of any cone-cell
+            C in D is essential in Y i into which it maps. Hence |∂C|Y i ≥ ||Y i || ≥ 12d, where
+            |∂C|Y i denotes the minimal length of a closed path in the free homotopy class of
+            ∂C in Y i . Consequently, since the inner path of a shell C is a concatenation of at
+            most 6 pieces, a geodesic in Y i that is path-homotopic to the inner path of C is
+            shorter than the outer path of C.
+                If in ∂p D = αγ there are two consecutive edges forming a cornsquare, they
+            cannot both lie in α or both lie in γ. Otherwise we could homotope D so that there
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            342                                          P. PRZYTYCKI AND D. T. WISE
+
+
+            is a square at that exact corner [Wis17, Lem 2.6]. Then we could homotope α or γ
+            through that square to reduce the complexity. The diagram D has no spur except
+            possibly where α and γ are concatenated. If there is a shell C in D whose outer
+            path is contained in γ, then replacing the outer path of C by a geodesic that is
+            path-homotopic to the inner path of C contradicts that γ is a geodesic.
+                Finally, suppose that the outer path of a shell C is contained in α. Let αC =
+            ∂C ∩ α denote the outer path of C, and let δ denote the inner path of C. Let Yi
+            denote the universal cover of Y i into which ∂C maps. Consider the copy of Yi in
+            X that contains a lift of α to N (A).    If A  is disjoint from Yi , then α is a piece
+                                             C                                              C
+            and ∂C is a concatenation of at most 7 pieces, which contradicts |∂C|Y i ≥ 12d.
+            Otherwise let A  i = A  ∩ Yi . Hence α projects into the quotient N (Ai ) of N (A  i ) in
+                                                     C
+            Y i . Since the injectivity radius of the hyperplane Ai in Y i is > 3d, the inner path
+                                                                                      
+            δ is path-homotopic in Y i to a path αC      in N (Ai ). If we choose αC     to be geodesic,
+                                                                                     
+            then since it is path-homotopic to the inner path δ, we have |αC | = |δ|Y i < |αC |.
+            This contradicts that α is a geodesic in N (A).
+                Thus there can be at most two spurs and/or shells and/or cornsquares in D,
+            and these are located where α and γ are concatenated. By Theorem 7.1 the disc
+            diagram D is a single cone-cell or ladder. For any of its cone-cells C let αC =
+            α ∩ ∂C, γC = γ ∩ ∂C. Let λC , δC denote the remaining, possibly trivial, arcs of
+            ∂C. Since λC , δC are pieces, we have |λC |Y i < d and |δC |Y i < d, where ∂C maps
+            to Y i . As before, if A   is disjoint from Yi containing a lift of α to N (A),    then
+                                                                                       C
+            αC is a piece. Since |∂C|Y i ≥ 12d, this contradicts that γC is a geodesic. Hence
+            A intersects Yi , as required in Assertion (2). Furthermore, if D is a ladder, then
+            each subpath γo of γ outside the cone-cells of D has endpoints at distance ≤ d from
+            N (A), and the rectangle that γo bounds in D shows that γo is contained in the
+            d-neighborhood of N (A). This ﬁnishes the proof of Assertion (2).
+                For Assertion (3), let A be the immersed hyperplane in X that is the projection
+            of A. Let γ → X be a minimal length path starting and ending at N (A) such that
+            a concatenation of γ with a path in N (A) represents the conjugacy class of g. We
+            increase d so that d ≥ |γ|, and we then choose Pi as before. If g lies in H, then
+            a lift of γ to X forms a closed path with a path α in N (A). Let D be a minimal
+            complexity disc diagram with ∂p D = αγ among all such γ. Then D cannot have
+            spurs by the minimality of |γ|. As before, there are no consecutive edges forming
+            cornsquares in α or in γ. Since d ≥ |γ|, there are no shells with outer path in γ.
+
+
+
+                                                                γ                                              γ
+
+
+                                                        δ                                        δ
+                                                            C                                        C ′ αC′
+
+                                                         αC
+
+
+
+
+                          Figure 3. The shell C is surrounded by a hyperplane and a short
+                          inner path δ. We can thus replace C by a square diagram C  as on
+                          the right.
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          343
+
+
+                If there is a shell C with outer path αC = α ∩ ∂C, then as before the inner path
+                                                      
+            δ is path-homotopic in Y i to a path αC       in N (Ai ). Then as in Figure 3, we could
+                               
+            replace αC by αC and replace C by a square diagram. This contradicts the minimal
+            complexity of D.
+                By Theorem 7.1 the disc diagram D is a single cone-cell or a ladder, and for
+            any of its cone-cells C the hyperplane A     intersects Yi containing the lift of α to
+                                                                                                 C
+                 
+            N (A). We have |λC |Y i + |γC | + |δC |Y i ≤ 3d, while the injectivity radius in Y i of
+            the projection of the hyperplane A   i = A  ∩ Yi is > 3d. Then we can replace α by
+                                                                                                 C
+              
+            αC and replace C by a square diagram to contradict the minimal complexity of D.
+                Assertion (1) follows from the same proof as Assertion (3), where we consider
+            all paths γ of length 0.                                                               
+            Lemma 7.4. Let X|Yi  be a cubical presentation with all abstract pieces of uni-
+            formly bounded diameter. Suppose that each Yi is virtually special with ﬁnitely
+            many immersed codim-2-hyperplanes. Let H1 , H2 ⊂ G = π1 X be stabilizers of in-
+                                    B
+            tersecting hyperplanes A,  ⊂ X,
+                                            and let g ∈ G − H1 H2 . There are ﬁnite index
+                        
+                                                  / H 1 H 2 in the quotient G = G/ {Pi }.
+            subgroups Pi ⊂ Pi = π1 Yi such that g ∈
+            Proof. Assume that all the abstract pieces have diameter < d. Let Q        =A  ∩ B,
+                                                                                                and
+            let A, B, Q be the immersed hyperplanes and codim-2-hyperplane in X that are the
+            projections of A,   B,
+                                   Q.
+                                      Let γ → X be a minimal length path starting at N (A) and
+            ending at N (B) such that its concatenation with a pair of paths in N (A), N (B)
+            concatenated at N (Q) represents the conjugacy class of g. We increase d so that
+            d ≥ |γ|. Let Pisp ⊂ Pi be ﬁnite index special subgroups.
+                By Lemmas 6.4, 6.7, and 6.13 we can choose ﬁnite index subgroups Pi ⊂ Pisp
+            that are characteristic in Pi and such that Y i = Pi \Yi satisfy the following:
+                   • ||Y i || ≥ 12d;
+                   • all hyperplanes in Y i have injectivity radius > 4d; and
+                   • all pairs Ai , B i of hyperplanes in Y i intersecting at a codim-2-hyperplane Qi
+                     have double injectivity radius > 3d at the family of components of Ai ∩ B i
+                     in the Pisp /Pi orbit of Qi .
+                The reason we used the Pisp /Pi orbit instead of the entire Pi /Pi orbit is the
+            following. Since Pisp is special, an element p ∈ Pisp /Pi cannot map Ai to a distinct
+            hyperplane intersecting Ai . Hence if p ∈ Pisp /Pi maps a component of Ai ∩ B i to
+            a component of Ai ∩ B i , then it cannot interchange Ai and B i , and so it stabilizes
+            Ai and B i .
+                Let X = {Pi }\X.    Let A, B, Q be the hyperplanes and codim-2-hyperplane
+            in X that are the projections of A,    B,
+                                                      Q.
+                                                        
+                We now argue by contradiction to prove the lemma. If g lies in H 1 H 2 , then there
+            is a disc diagram D → X      ∗ bounded by a closed path αγβ −1 , where α, β −1 are paths
+            in N (A), N (B) concatenated at a vertex v ∈ N (Q), and we lift γ to X. Assume
+            that D has minimal complexity among all such diagrams and γ. By minimality of
+            |γ| the diagram D has no spurs except possibly where α and β are concatenated. By
+            replacing v, we can remove such spurs and assume that D is spurless. The diagram
+            D also cannot have two consecutive edges of α, β, or γ forming cornsquares.
+                An outer path of a shell C cannot be contained entirely in α, β, or γ, as in the
+            proof of Lemma 7.3. We now prove that the outer path of a shell C with ∂C
+            mapping to Y i cannot be contained in αγ (or γβ −1 ). Otherwise, recall that |γ| ≤ d
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            344                                          P. PRZYTYCKI AND D. T. WISE
+
+
+
+                            β                                                                                        β′
+               βC
+                                             γ                                                               βC′               γ
+                  C δ                                   C δ
+               αC               α                                                                              αC′        α′
+
+
+                          Figure 4. The shell C in the ﬁrst diagram is surrounded by two
+                          hyperplanes and a short inner path δ as in the second diagram.
+                                                                                     −1
+                          We can thus replace C by a square diagram bounded by αC   δβC
+                          to obtain a smaller complexity diagram on the right.
+
+
+
+            and the length of a geodesic that is path-homotopic to the inner path of C is < 6d.
+            Hence if αC = ∂C ∩ α is a piece, then this contradicts |∂C|Y i ≥ 12d. If αC is not a
+            piece, then since the hyperplane injectivity radius in Y i is > 4d, we could replace
+                     
+            αC by αC   and replace C by a square diagram, contradicting minimal complexity.
+               Since X|Y i  satisﬁes the C  ( 12
+                                                1
+                                                   ) small cancellation condition, by Theorem 7.1
+            the disc diagram D is either:
+                  (a) a single cone-cell C; or
+                  (b) a ladder with a shell C containing v; or
+                  (c) a diagram with two cornsquares located where γ is concatenated with α
+                      and β, and with a shell C containing v as in Figure 4.
+            In each case there is a cone-cell C containing v. Let αC and βC denote the subpaths
+                                                                            −1
+            α ∩ ∂C and β ∩ ∂C. The complement δ in ∂C of βC                      αC either coincides with γ in
+            case (a), is a piece in case (b), or is an inner path of a shell, hence a concatenation
+            of at most 6 pieces in case (c). In each case we have |δ|Y i < 6d, where ∂C maps to
+            Y i.
+               Let v ∈ N (Q)    be a lift of v. Let Yi be the elevation of Yi containing v. Let
+                            
+            Ai = A ∩ Yi , Bi = B        ∩ Yi . If both A i , B
+                                                                i are empty, then both α , β are pieces
+                                                                                               C   C
+            which contradicts |∂C|Y i > 12d. If exactly one of A            i , Bi is empty, say Bi , then β
+                                                                                                                C
+            is a piece. Since the injectivity radius of A            i is > 4d, as before we could replace
+                     
+            αC by αC     and replace C by a square diagram, contradicting minimal complexity.
+            Hence both A           i are nonempty and D shows that they intersect in nonempty
+                              i , B
+            Qi = Q ∩ Yi .
+               Let Ai , B i , Qi ⊂ Y i denote the projections of A         i , B
+                                                                                i , Q
+                                                                                     i . The double injectivity
+            radius in Y i is > 3d. Hence δ is homotopic in Y i to a concatenation at pN (Qi )
+                               
+            of paths αC     , βC    in N (Ai ), N (B i ) for some p ∈ Pisp /Pi . Thus there is in Y i a
+                                                              −1
+            square diagram with boundary αC               δβ  C . We replace C by this square diagram,
+                                                                   
+            and we replace the subpath αC of α by αC                  to obtain α , and similarly we replace
+            the subpath βC of β by βC to obtain β . Since p ∈ Pisp /Pi , we have pN (Ai ) =
+                                                                
+
+            N (Ai ) and pN (B i ) = N (B i ). Translating the whole diagram by p−1 yields a
+            disc diagram bounded by p−1 (α )p−1 (γ)p−1 (β −1 ), where p−1 (α ), p−1 (β −1 ) are
+            paths in N (A), N (B) concatenated at N (Q). This diagram has a smaller number
+            of cone-cells than D, which contradicts the minimal complexity assumption. See
+            Figure 4.                                                                                          
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                          345
+
+
+                                                                8. Specialization
+                 In this section we prove Theorem 2.4 (Specialization).
+
+
+            Proof of Theorem 2.4. To prove that the action of G on X    is virtually special, we
+            will verify the conditions of Criterion 2.3. Freeness and ﬁniteness Conditions (1)–
+            (3) of Criterion 2.3 are Hypothesis (i) of Theorem 2.4. We now verify Condition (4).
+            Let H be the stabilizer of a hyperplane A   ⊂ X.
+                                                            Let g ∈ G − H. We will ﬁnd ﬁnite
+                                 
+            index subgroups Pi ⊂ Pi such that:
+                  (a) G = G/ {Pi } is hyperbolic and virtually compact special;
+                  (b) the image H is quasiconvex in G;
+                  (c) g ∈
+                        / H.
+            The result then follows from separability of quasiconvex subgroups in hyperbolic
+            virtually compact special groups [HW08, Thm 7.3].
+                By Hypothesis (iv) and Theorem 4.7, there are En◦ ⊂ En such that Pi ∩En ⊂ En◦
+            implies that G splits as a graph of hyperbolic virtually compact special groups with
+            ﬁnite edge groups. Then G is hyperbolic virtually compact special and Condi-
+            tion (a) is satisﬁed. By Hypothesis (ii), there are indeed ﬁnite index subgroups
+            Pi ⊂ Pi satisfying Pi ∩ En ⊂ En◦ .
+                To arrange Conditions (b) and (c) we apply cubical small cancelation theory.
+            Let X = G\X,     and let Yi = Pi \Yi . Consider the cubical presentation X|Yi .
+            By Hypothesis (iii), the complexes Yi are virtually special and have ﬁnitely many
+            immersed codim-2-hyperplanes. Since Yi are superconvex, there is a uniform bound
+            on the diameters of abstract wall-pieces. Let K ⊂ X     be the compact subcomplex
+            from the deﬁnition of relative cocompactness. If j = i or g  = Pi , then g  Yi ∩ Yj ⊂
+            GK. Since G is relatively hyperbolic, the intersections g  Pi g −1 ∩ Pj are ﬁnite, and
+            hence there is a uniform bound on the diameters of abstract cone-pieces g  Yi ∩ Yj .
+                We can thus apply Lemma 7.3 and replace Pi by further ﬁnite index subgroups
+            satisfying its conclusion. Condition (c) follows directly from Lemma 7.3(3). Let A
+            be the hyperplane in X that is the projection of A,  as in Lemma 7.3(1). The group
+                                                 
+            G acts cocompactly on X c = {Pi }\GK. We can assume that X c is connected
+            and contains an edge dual to A. We will prove that A ∩ X c is quasiconvex in X c ,
+            which means that its stabilizer H is quasiconvex in G, giving Condition (b). By
+            Lemma 7.3(2), any two points of N (A) ∩ X c are connected in X by a geodesic γ
+            that lies in the union of a uniform neighborhood of N (A) and the translates of Y i
+            intersecting A. Every component of γ − X c is contained in some translate of the
+            closure Zi of Y i − X c . By the last part of the deﬁnition of relative cocompactness
+            in Section 2, the group Pi acts cocompactly on Yi ∩ GK. Thus, since Pi is of
+            ﬁnite index in Pi , the intersection Zi ∩ X c is compact. Hence we can form a quasi-
+            geodesic γc by replacing in γ each component of γ − X c in a translate g  Zi by a
+            path of uniformly bounded length in g  Y i ∩ X c . The quasi-geodesic γc is contained
+            in the union of a uniform neighborhood of N (A) and the translates of Y i ∩ X c
+            intersecting A. Since Y i ∩ X c are uniformly bounded, γc is at uniform distance
+            from A, as desired. This completes the proof of Condition (4) of Criterion 2.3.
+                To prove Condition (5) we need to replace (c) above by
+                  (c ) g ∈
+                          / H 1H 2,
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+            346                                          P. PRZYTYCKI AND D. T. WISE
+
+
+                                                                          1 , A
+            where H1 , H2 are the stabilizers of intersecting hyperplanes A    2 ⊂ X
+                                                                                     and g ∈
+            G − H1 H2 . It suﬃces to consider Pi provided by Lemma 7.4. Once we have
+            (a), (b), and (c ), we appeal to [Min06, Thm 1.1], which says that in hyperbolic
+            groups with separable quasiconvex subgroups, double cosets of quasiconvex sub-
+            groups are separable as well.                                                   
+
+                                                               Acknowledgments
+               We thank Stefan Friedl for his remarks and corrections. We also thank the
+            referee for detailed comments that helped us clarify the proof.
+
+                                                                     References
+            [Ago04] Ian Agol, Tameness of hyperbolic 3-manifolds (2004), available at arXix:GT/0405568.
+            [Ago08] Ian Agol, Criteria for virtual ﬁbering, J. Topol. 1 (2008), no. 2, 269–284, DOI
+                    10.1112/jtopol/jtn003. MR2399130
+            [Ago13] Ian Agol, The virtual Haken conjecture, Doc. Math. 18 (2013), 1045–1087. With an appendix
+                    by Agol, Daniel Groves, and Jason Manning. MR3104553
+            [AFW15] Matthias Aschenbrenner, Stefan Friedl, and Henry Wilton, 3-manifold groups, EMS Series of
+                    Lectures in Mathematics, European Mathematical Society (EMS), Zürich, 2015. MR3444187
+            [BW13] Hadi Bigdely and Daniel T. Wise, Quasiconvexity and relatively hyperbolic groups that split,
+                    Michigan Math. J. 62 (2013), no. 2, 387–406, DOI 10.1307/mmj/1370870378. MR3079269
+            [Bon86] Francis Bonahon, Bouts des variétés hyperboliques de dimension 3 (French), Ann. of Math.
+                    (2) 124 (1986), no. 1, 71–158, DOI 10.2307/1971388. MR847953
+            [Bon02] Francis Bonahon, Geometric structures on 3-manifolds, Handbook of Geometric Topology,
+                    North-Holland, Amsterdam, 2002, pp. 93–164. MR1886669
+            [Bri01] Martin R. Bridson, On the subgroups of semihyperbolic groups, Essays on geometry and
+                    related topics, Vol. 1, 2, Monogr. Enseign. Math., vol. 38, Enseignement Math., Geneva,
+                    2001, pp. 85–111. MR1929323
+            [CG06]  Danny Calegari and David Gabai, Shrinkwrapping and the taming of hyperbolic 3-manifolds,
+                    J. Amer. Math. Soc. 19 (2006), no. 2, 385–446, DOI 10.1090/S0894-0347-05-00513-8.
+                    MR2188131
+            [Can96] Richard D. Canary, A covering theorem for hyperbolic 3-manifolds and its applications,
+                    Topology 35 (1996), no. 3, 751–778, DOI 10.1016/0040-9383(94)00055-7. MR1396777
+            [CLR97] D. Cooper, D. D. Long, and A. W. Reid, Essential closed surfaces in bounded 3-manifolds,
+                    J. Amer. Math. Soc. 10 (1997), no. 3, 553–563, DOI 10.1090/S0894-0347-97-00236-1.
+                    MR1431827
+            [DJ00]  Michael W. Davis and Tadeusz Januszkiewicz, Right-angled Artin groups are commensurable
+                    with right-angled Coxeter groups, J. Pure Appl. Algebra 153 (2000), no. 3, 229–235, DOI
+                    10.1016/S0022-4049(99)00175-9. MR1783167
+            [GP16]  Victor Gerasimov and Leonid Potyagailo, Quasiconvexity in relatively hyperbolic groups, J.
+                    Reine Angew. Math. 710 (2016), 95–135, DOI 10.1515/crelle-2015-0029. MR3437561
+            [HW08] Frédéric Haglund and Daniel T. Wise, Special cube complexes, Geom. Funct. Anal. 17 (2008),
+                    no. 5, 1551–1620, DOI 10.1007/s00039-007-0629-4. MR2377497
+            [HW10] Frédéric Haglund and Daniel T. Wise, Coxeter groups are virtually special, Adv. Math. 224
+                    (2010), no. 5, 1890–1903, DOI 10.1016/j.aim.2010.01.011. MR2646113
+            [Ham01] Emily Hamilton, Abelian subgroup separability of Haken 3-manifolds and closed hy-
+                    perbolic n-orbifolds, Proc. London Math. Soc. (3) 83 (2001), no. 3, 626–646, DOI
+                    10.1112/plms/83.3.626. MR1851085
+            [Hru10] G. Christopher Hruska, Relative hyperbolicity and relative quasiconvexity for countable
+                    groups, Algebr. Geom. Topol. 10 (2010), no. 3, 1807–1856, DOI 10.2140/agt.2010.10.1807.
+                    MR2684983
+            [HW14] G. C. Hruska and Daniel T. Wise, Finiteness properties of cubulated groups, Compos. Math.
+                    150 (2014), no. 3, 453–506, DOI 10.1112/S0010437X13007112. MR3187627
+            [HW99] Tim Hsu and Daniel T. Wise, On linear and residual properties of graph products, Michigan
+                    Math. J. 46 (1999), no. 2, 251–259, DOI 10.1307/mmj/1030132408. MR1704150
+            [Jan17] Kasia Jankiewicz, The fundamental theorem of cubical small cancellation theory, Trans.
+                    Amer. Math. Soc. 369 (2017), no. 6, 4311–4346, DOI 10.1090/tran/6852. MR3624411
+            [Kap01] Michael Kapovich, Hyperbolic manifolds and discrete groups, Progress in Mathematics,
+                    vol. 183, Birkhäuser Boston, Inc., Boston, MA, 2001. MR1792613
+            [KM04] P. B. Kronheimer and T. S. Mrowka, Dehn surgery, the fundamental group and SU(2), Math.
+                    Res. Lett. 11 (2004), no. 5-6, 741–754, DOI 10.4310/MRL.2004.v11.n6.a3. MR2106239
+            [Lee95] Bernhard Leeb, 3-manifolds with(out) metrics of nonpositive curvature, Invent. Math. 122
+                    (1995), no. 2, 277–289, DOI 10.1007/BF01231445. MR1358977
+            [Liu13] Yi Liu, Virtual cubulation of nonpositively curved graph manifolds, J. Topol. 6 (2013), no. 4,
+                    793–822, DOI 10.1112/jtopol/jtt010. MR3145140
+            [MP09]  Eduardo Martı́nez-Pedroza, Combination of quasiconvex subgroups of relatively hyperbolic
+                    groups, Groups Geom. Dyn. 3 (2009), no. 2, 317–342, DOI 10.4171/GGD/59. MR2486802
+
+
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+                                            MIXED 3-MANIFOLDS ARE VIRTUALLY SPECIAL                             347
+
+
+            [Min06]       Ashot Minasyan, Separable subsets of GFERF negatively curved groups, J. Algebra 304
+                          (2006), no. 2, 1090–1100, DOI 10.1016/j.jalgebra.2006.03.050. MR2264291
+            [PW14]        Piotr Przytycki and Daniel T. Wise, Graph manifolds with boundary are virtually special,
+                          J. Topol. 7 (2014), no. 2, 419–435, DOI 10.1112/jtopol/jtt009. MR3217626
+            [Rol98]       Martin Roller, Poc sets, median algebras, and group actions. An extended study of Dun-
+                          woody’s construction and Sageev’s theorem. (1998), available at www.personal.soton.ac.uk/
+                          gan/Roller.pdf.
+            [RW98]        J. Hyam Rubinstein and Shicheng Wang, π1 -injective surfaces in graph manifolds, Comment.
+                          Math. Helv. 73 (1998), no. 4, 499–515, DOI 10.1007/s000140050066. MR1639876
+            [Thu80]       William P. Thurston, The Geometry and Topology of Three-Manifolds (1980), Princeton
+                          University course notes, available at http://www.msri.org/publications/books/gt3m/.
+            [Thu86]       William P. Thurston, A norm for the homology of 3-manifolds, Mem. Amer. Math. Soc. 59
+                          (1986), no. 339, i–vi and 99–130. MR823443
+            [Wis12]       Daniel T. Wise, From riches to raags: 3-manifolds, right-angled Artin groups, and cubical
+                          geometry, CBMS Regional Conference Series in Mathematics, vol. 117, Published for the Con-
+                          ference Board of the Mathematical Sciences, Washington, DC; by the American Mathematical
+                          Society, Providence, RI, 2012. MR2986461
+            [Wis17]       Daniel T. Wise, The structure of groups with quasiconvex hierarchy, Ann. of Math. Stud. to
+                          appear.
+
+                                                                    ´
+              Institute of Mathematics, Polish Academy of Sciences, Sniadeckich 8, 00-656 Warsaw,
+            Poland; and Department of Mathematics and Statistics, McGill University, Montreal,
+            Quebec, Canada H3A 0B9
+              E-mail address: piotr.przytycki@mcgill.ca
+
+              Department of Mathematics and Statistics, McGill University, Montreal, Quebec,
+            Canada H3A 0B9
+              E-mail address: wise@math.mcgill.ca
+
+
+
+
+Licensed to McGill Univ. Prepared on Tue Aug 7 13:37:46 EDT 2018 for download from IP 132.206.150.239.
+License or copyright restrictions may apply to redistribution; see http://www.ams.org/journal-terms-of-use
+

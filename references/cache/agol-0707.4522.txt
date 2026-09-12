@@ -1,0 +1,777 @@
+                                                                 CRITERIA FOR VIRTUAL FIBERING
+
+                                                                                       IAN AGOL
+arXiv:0707.4522v2 [math.GT] 24 Feb 2008
+
+
+
+
+                                                 Abstract. We prove that an irreducible 3-manifold whose fundamental group satisfies
+                                                 a certain group-theoretic property called RFRS is virtually fibered. As a corollary, we
+                                                 show that 3-dimensional reflection orbifolds and arithmetic hyperbolic orbifolds defined
+                                                 by a quadratic form virtually fiber. These include the Seifert Weber dodecahedral space
+                                                 and the Bianchi groups. Moreover, we show that a taut sutured compression body has a
+                                                 finite-sheeted cover with a depth one taut-oriented foliation.
+
+
+
+                                                                                  1. Introduction
+                                             Thurston proposed the question of whether a hyperbolic 3-manifold has a finite-sheeted
+                                          cover fibering over S 1 [32]. A connected fibered manifold with fiber of Euler characteristic
+                                          < 0 must be irreducible. However, there exist non-fibered closed irreducible 3-manifolds
+                                          which have no cover which fibers over S 1 , the simplest example being a Seifert fibered space
+                                          with non-zero Euler class and base orbifold of non-zero Euler characteristic [29]. Since
+                                          Thurston posed this question, many classes of hyperbolic 3-manifolds have been proven
+                                          to virtually fiber. Thurston proved that the reflection group in a right-angled hyperbolic
+                                          dodecahedron virtually fibers.
+                                             Gabai gave an example of a union of two I-bundles over non-orientable surfaces, which
+                                          has a 2-fold cover which fibers, but in some sense this example is too simple since it fibers
+                                          over a mirrored interval (this example was known to Thurston). He also gave an example
+                                          of a 2 component link which is not fibered and has a 2-fold cover which fibers, which is
+                                          not of the previous type of example [13]. Aitchison and Rubinstein generalized Thurston’s
+                                          example to certain cubulated 3-manifolds [3]. Reid gave the first example of a rational
+                                          homology sphere which virtually fibers using arithmetic methods [30]. Leininger showed
+                                          that every Dehn filling on one component of the Whitehead link virtually fibers [22]. Walsh
+                                          showed that all of the non-trivial 2-bridge link complements virtually fiber [36]. There are
+                                          more recent unpublished results of DeBlois and Agol, Boyer, and Zhang exhibiting classes
+                                          of Montesinos links which virtually fiber by generalizing Walsh’s method. Most of these
+                                          examples are shown to be virtually fibered by exhibiting a fairly explicit cover of the
+                                          manifold which fibers. Button found many virtually fibered manifolds in the Snappea
+                                          census of cusped and closed hyperbolic 3-manifolds [7]. Of course, we have neglected
+                                          mention of the many papers exhibiting classes of 3-manifolds which fiber.
+                                             A characterization of virtual fibering was given by Lackenby [21]. He showed that if M is
+                                          a closed hyperbolic manifold, with a tower of regular covers such that the Heegaard genus
+                                          grows slower than the fourth root of the index of the cover, then M virtually fibers. It is
+                                            1991 Mathematics Subject Classification. Primary 57M50; Secondary 57R22.
+                                            Key words and phrases. hyperbolic, 3-manifold, fiber.
+                                            Agol partially supported by NSF grant DMS-0504975, and the J. S. Guggenheim Foundation.
+                                                                                            1
+2                                          IAN AGOL
+
+difficult, however, to apply this criterion to a specific example in order to prove it virtually
+fibers since it is difficult to estimate the Heegaard genus of covering spaces.
+   In this paper, we give a new criterion for virtual fibering which is a condition on the
+fundamental group called RFRS. Using this condition, and recent results of Haglund-Wise
+[15], we prove that hyperbolic reflection groups and arithmetic groups defined by quadratic
+forms virtually fiber. Rather than state the RFRS condition in the introduction, we state
+the following theorem, which is a corollary of Theorem 5.1 and Corollary 2.3:
+Theorem 1.1. Let M be a compact irreducible orientable 3-manifold with χ(M) = 0. If
+π1 (M) is a subgroup of a right-angled Coxeter group or right-angled Artin group, then M
+virtually fibers.
+   The strategy of the proof is intuitive. If an oriented surface F ⊂ M is non-separating,
+then M fibers over S 1 with fiber F if and only if M\\F ∼     = I × F . If F is not a fiber
+of a fibration, then there is a JSJ decomposition of M\\F [18, 19], which has a product
+part (window) and a non-product part (guts). The idea is to produce a complexity of the
+guts, and use the RFRS condition to produce a cover of M to which a component of the
+guts lifts and for which we can decrease the complexity of the guts, by “killing” it using
+non-separating surfaces coming from new homology in this cover. The natural setting for
+these ideas is sutured manifold hierarchies [12], but we choose instead to use least-weight
+taut normal surfaces introduced by Oertel [28] and further developed by Tollefson and
+Wang [35]. The replacement for sutured manifold hierarchies is branched surfaces, whose
+machinery was introduced by Floyd and Oertel [11]. We review some of the results from
+these papers, but in order to follow the proofs in this paper, one should be familiar with
+the results of [28, 35].
+   Acknowledgments: We thank Alan Reid for encouraging us to try to prove that the
+Bianchi groups virtually fiber, for sharing the preprint [23], and for letting us know of
+Theorem 8.2. We also thank Misha Kapovich for helpful comments and we thank Haglund
+and Wise for sharing their preprint [15]. We further thank the referee for helpful comments,
+and Michelle McGuinness for proofreading.
+
+                  2. Residually finite rational solvable groups
+  The rational derived series of a group G is defined inductively as follows. If G(1) = [G, G],
+       (1)                                    (n)                            (n+1)       (n) (1)
+then Gr = {x ∈ G|∃k 6= 0, xk ∈ G(1) }. If Gr has been defined, define Gr           = (Gr )r .
+                                                        (1)
+The rational derived series gets its name because Gr = ker{G → Q ⊗Z G/G(1) }. The
+              (n)
+quotients G/Gr are solvable.
+Definition 2.1. A group G is residually finite Q-solvable or RFRS if there is a sequence
+of subgroups G = G0 > G1 > G2 > · · · such that G ⊲ Gi , ∩i Gi = {1}, [G : Gi ] < ∞ and
+            (1)
+Gi+1 ≥ (Gi )r .
+                         (i)
+   By induction, Gi ≥ Gr , and thus G/Gi is solvable with derived series of length at most
+i. We remark that if G is RFRS, then any subgroup H < G is as well. Also, we remark that
+to check that G is RFRS, we need only find a cofinal sequence of finite index subgroups
+                             (1)
+G > Gi such that Gi+1 > (Gi )r . This follows because G ⊲ Core(Gi ) = ∩g∈G gGi g −1 . Then
+                             CRITERIA FOR VIRTUAL FIBERING                                  3
+
+the sequence G ⊲ Core(G1 ) ⊲ Core(G2 ) ⊲ · · · will satisfy the criterion by the following
+                            (1)                  (1)
+argument. For g ∈ G, g((Gi )r )g −1 = (gGi g −1 )r , so
+             Core(Gi+1 ) = ∩g∈G gGi+1 g −1 ≥ ∩g∈G (gGi g −1 )(1)            (1)
+                                                             r ≥ (Core(Gi ))r .
+
+Thus, the new sequence satisfies the properties of the RFRS criterion. The relevance of this
+definition may not be immediately apparent, but it was discovered by the following method.
+Suppose we have a manifold (or more generally a topological space) M with π1 M = G such
+that rkH1 (M; Q) > 0. Choose a non-trivial finite quotient H1 (M; Z)/T orsion → H0 , and
+take the cover M1 of M corresponding to ker{π1 (M) → H0 }. Suppose that rkH1 (M1 ; Q) >
+rkH1 (M; Q). Then we may take a finite index abelian cover M2 → M1 coming from a
+quotient of H1 (M1 ; Z)/T orsion which does not factor through H1 (M1 ) → H1 (M). If we
+can repeat this process to get a sequence of covers M ← M1 ← M2 ← · · · such that Mi+1
+is a finite abelian cover of Mi , and the sequence of covers is cofinal (so that the limiting
+covering space is the universal cover), then π1 (M) is RFRS. Notice that we may assume
+that rkH1 (Mi ; Q) is unbounded, unless π1 (M) is virtually abelian. Thus, we see that a
+manifold M such that π1 (M) is not virtually abelian but is RFRS has virtual infinite first
+betti number. This formulation of the RFRS condition is the characterization that we will
+apply to study 3-manifolds.
+Theorem 2.2. A finitely generated right-angled Coxeter group G has a finite index sub-
+group G′ such that G′ is RFRS.
+Proof. Let G act on a convex subset C ⊂ Rn with quotient a polyhedral orbifold D = C/G,
+such that each involution generator of G fixes a codimension one hyperplane in C. This
+is possible by taking C to be homeomorphic to the Tits cone for the group G [5, V.4],
+[16, 5.13]. We may take a subgroup G′ < G of finite index inducing a manifold cover
+D ′ → D, such that for each codimension one face F of D, the preimage of F in D ′ is
+embedded, orientable and 2-sided. For example, we may take G′ = ker{G → G/G(1) },
+since G/G(1) ∼ = (Z/2Z)rkG . Consider a cofinal sequence of finite-index covers D ← D1 ←
+D2 ← · · · such that Di+1 is a 2-fold cover of Di obtained by reflecting in a face Fi ⊂ Di
+(see Figure 1). Let Gi = π1 (Di ) ∩ G′ , with quotient manifold Di′ = C/Gi . We need to show
+that (Gi )r < Gi+1 . Clearly, (Gi )(1) < Gi+1 , since Gi /Gi+1 ∼
+           (1)
+                                                                = Z/2Z or Gi+1 = Gi . Thus,
+we need only show that any element mapping non-trivially to Gi /Gi+1 is not torsion, so
+that we have a factorization Gi → H1 (Gi )/T orsion → Z/2Z. Suppose g ∈ Gi − Gi+1 .
+Take a loop γ representing g in Di′ , and project γ down to Di generically. We see a closed
+path bouncing off the faces of Di (see Figure 1). Then the projection of γ must hit Fi an
+odd number of times, otherwise it would lift to Di+1 and therefore would be contained in
+Gi+1 . We therefore see γ intersecting the preimage of Fi in Di′ an odd number of times.
+Since the preimage of Fi is an orientable embedded 2-sided codimension 1 submanifold,
+we see that γ must represent an element of infinite order in H1 (Gi ) = Gi /(Gi )(1) , and
+                                                    (1)                              (1)
+therefore 0 6= 2[γ] ∈ H1 (Di′ ; Q) = Q ⊗ Gi /(Gi )r . This implies that g 2 ∈ / (Gi )r . But
+g 2 ∈ Gi+1 , since [Gi : Gi+1 ] ≤ 2. Therefore, we have Gi /Gi+1 ∼   = Z/2Z is a quotient of
+                                            ′
+H1 (Gi ; Z)/T orsion. Thus, we see that G is RFRS. 
+
+Corollary 2.3. The following groups are virtually RFRS:
+4                                           IAN AGOL
+
+                                D          F0     D1
+                                     γ                   γ2
+
+
+
+                                                                       F1
+    PSfrag replacements
+                                                  D2
+
+
+
+                          ···       D3
+
+
+
+
+         Figure 1. A right-angled polyhedral orbifold D and a tower of 2-covers
+
+      • surface groups
+      • reflection groups
+      • right-angled Artin groups
+      • arithmetic hyperbolic groups defined by a quadratic form
+      • direct products and free products of RFRS groups
+Proof. Surface groups are subgroups of the reflection group in a right-angled pentagon (see
+e.g. [31]). Reflection groups, right-angled Artin groups, and arithmetic hyperbolic groups
+defined by a quadratic form all have finite index subgroups which are subgroups of right-
+angled reflection groups by [15, p. 3] (this was proven for cusped arithmetic 3-manifolds
+previously in [1]), and are thus virtually RFRS by Theorem 2.2.
+   Direct products of RFRS groups are immediately seen to be RFRS. If G, H are RFRS,
+                                                       (1)
+then we have Gi ⊳ G, [G : Gi ] < ∞, such that (Gi )r < Gi+1 , and Hi ⊳ H, [H : Hi ] < ∞,
+                  (1)                                                                       (1)
+such that (Hi )r < Hi+1 . Then Gi × Hi ⊳ G × H is finite index, and (Gi × Hi )r =
+     (1)        (1)
+(Gi )r × (Hi )r ⊳ Gi+1 × Hi+1 .
+   Free products of RFRS groups are also easily seen to be RFRS. Let G and H be (non-
+trivial) RFRS as above, with G = G0 ⊲ G1 ⊲ G2 ⊲ · · · , H = H0 ⊲ H1 ⊲ H2 ⊲ · · · . We
+construct inductively groups GHi ⊳ G ∗ H such that GHi ∼        = (Hi )∗k(i) ∗ (Gi )∗j(i) ∗ Z∗l(i) .
+To obtain GHi+1 from GHi , take the kernel of the quotient of GHi onto (Hi /Hi+1 )k(i) ×
+(Gi /Gi+1 )j(i) × (Z/2Z)l(i) . This may be easily seen by induction of the action on the Bass-
+Serre tree. The free product G∗H is a graph of groups with graph a single edge with trivial
+stabilizer, and two vertices with stabilizers G and H, respectively. The Bass-Serre tree T
+is infinite bipartite. When we take the quotient T /GHi , we get a graph of groups with
+bipartite graph, and vertices corresponding to conjugates of Gi and Hi , which is how we
+see the claimed Kurosh decomposition, where the rank of the free factor l(i) corresponds to
+                               CRITERIA FOR VIRTUAL FIBERING                                     5
+
+the first betti number of the graph T /GHi . For any element f ∈ G∗H, we may write f (up
+to conjugacy) as a cyclically reduced product f = g1 h1 g2 h2 · · · gm hm , where gj 6= 1, hj 6= 1,
+unless f is conjugate into G or H, in which case it is easily seen that f ∈     / GHi for some
+i. Choose i such that gj ∈   / Gi , hj ∈/ Hi , j = 1, . . . , m. Then the projection of a loop
+representing f to the graph T /GHi will be homotopically non-trivial, since each time it
+enters a vertex of T /GHi , it will exit a distinct edge, since gj and hj are not in the vertex
+stabilizers of T /GHi . Thus, the projection of f to Z∗l(i) will be non-trivial, and since the
+free group is RFRS (with respect to 2-group quotients), we see that f will eventually not
+be in GHi . 
+
+                                   3. Sutured manifolds
+  We consider 3-manifolds that are triangulated and orientable, and PL curves and sur-
+faces. For a proper embedding Y ⊂ X, define X\\Y to be the manifold X\N (Y ), where
+N (Y ) denotes a regular neighborhood of Y .
+Definition 3.1. Let S be a compact connected orientable surface. Define χ− (S) = max{−χ(S), 0}.
+For a disconnected compact orientable surface S, let χ− (S) be the sum of χ− evaluated on
+the connected subsurfaces of S.
+  In [33], Thurston defines a pseudonorm on H2 (M, ∂M; R) and H2 (M; R), and this was
+generalized by Gabai [12].
+Definition 3.2. Let M be a compact oriented 3-manifold. Let K be a subsurface of ∂M.
+Let z ∈ H2 (M, K). Define the norm of z to be
+            x(z) = min{χ− (S) | (S, ∂S) ⊂ (M, K), and [S] = z ∈ H2 (M, K)}.
+   Thurston proved that x(nz) = nx(z), and therefore x may be extended to a norm
+x : H2 (M, K; Q) → Q. Then x is extended to x : H2 (M, K; R) → R by continuity.
+   We have the Poincaré duality isomorphisms P D : H 1 (M) → H2 (M, ∂M) and P D :
+H2 (M, ∂M) → H 1 (M), so that P D 2 = Id. We may define for α ∈ H 1 (M), x(α) =
+x(P D(α)). We say that α is a fibered cohomology class if c · P D(α) is represented by a
+fiber for some constant c. Denote by Bx (M) the unit ball of the Thurston norm on H 1 (M)
+or on H2 (M, ∂M).
+Definition 3.3. Let S be a properly embedded oriented surface in the compact oriented
+3-manifold M. Then S is taut in H2 (M, K) if ∂S ⊂ K, S is incompressible, there is no
+homologically trivial union of components of S, and χ− (S) = x([S]) for [S] ∈ H2 (M, K).
+Definition 3.4. A taut (codimension 1) foliation is a foliation which has a closed transver-
+sal going through every leaf.
+  The following theorem says that a compact leaf of a taut oriented foliation is a taut sur-
+face. This was proven by Thurston, under the assumption that the foliation is differentiable
+[33]. Gabai generalized this to deal with general foliations [14].
+Theorem 3.5. Let M be a compact oriented 3-manifold. Let F be a taut oriented foliation
+of M such that F is transverse to ∂M. If R is a compact leaf of F , then R is taut.
+6                                         IAN AGOL
+
+   If M is a 3-manifold fibering over S 1 with fiber F , then there is a cone over a face E
+of Bx (M) whose interior contains [F ] and such that every other rational homology class in
+intE is also a fibered class [33].
+   Gabai introduced the notion of a sutured manifold in order to prove the converse of the
+above theorem.
+Definition 3.6. A sutured manifold (M, γ) is a compact oriented 3-manifold M together
+with a set γ ⊂ ∂M of pairwise disjoint annuli A(γ) and tori T (γ). Furthermore, the interior
+of each component of A(γ) contains a suture, i.e., a homologically nontrivial oriented
+simple closed curve. We denote the set of sutures by s(γ). Finally, every component
+of R(γ) = ∂M\\A(γ) is oriented. Define R+ (γ) (or R− (γ)) to be those components of
+R(γ) whose normal vectors point out of (into) M. The orientations on R(γ) must be
+coherent with respect to s(γ), i.e., if δ is a component of ∂R(γ), and is given the boundary
+orientation, then δ must represent the same homology class in H1 (γ) as the suture in the
+component of A(γ) containing δ.
+Theorem 3.7. Let M be a 3-manifold, and let f ∈ H2 (M, ∂M) be a homology class which
+lies in the boundary of the cone over a fibered face E of Bx (M). Let (F, ∂F ) ⊂ (M, ∂M)
+be a taut surface representing f . Then M\\F is a taut sutured manifold which admits a
+depth one taut oriented foliation.
+Proof. Let G be a surface such that [G] ∈ intE is a surface fibering over S 1 . Since x([G] +
+[F ]) = x([G]) + x([F ]), we may make G and F transverse so that χ− (G ⊕ F ) = χ− (G) +
+χ− (F ), where G ⊕ F indicates oriented cut and paste. Then F ∩ (M\\G) gives a taut
+sutured manifold decomposition of M\\G [12]. Since G is a fibered surface, M\\G is a
+product. Any taut sutured decomposition of a product sutured manifold is also a product
+sutured manifold, so M\\(G∪F ) is a product sutured manifold, with sutures corresponding
+to G ∩ F [12]. Consider a product structure on N (F ) ∼ = [−1, 1] × F , such that G ∩ N (F ) ∼
+                                                                                             =
+[−1, 1] × (G ∩ F ). Take infinitely many copies of F , so that we have {±1/n, n ∈ N} × F ⊂
+N (F ). Then we may “spin” G about F by adding G − (G ∩ F ) to infinitely many copies
+of F . We take G − (G ∩ F ) ⊕ ({±1/n, n ∈ N} × F ) to get an infinite leaf L which spirals
+about {0} × F ⊂ N (F ) (see Figure 2). Then (M\\F )\\L ∼      = I × L, since it is obtained by
+adjoining to the product sutured manifold M\\(G ∪ F ) infinitely many copies of a product
+sutured manifold of the form I × (F \\(G ∩ F )) along annuli. Thus, M\\F has a depth
+one taut oriented foliation. 
+
+                                  4. Normal surfaces
+   We’ll follow the notation of [35]. Let M be a compact 3-manifold with a triangulation
+T with t tetrahedra. A normal surface F in M is a properly embedded surface in general
+position with the 1-skeleton T (1) and intersecting each tetrahedron ∆ of T in properly
+embedded elementary disks which intersect each face in at most one straight line. A
+normal isotopy of M is an isotopy which leaves the simplices of T invariant. If E is an
+elementary disk then ∂E is uniquely determined by the points E ∩ T (1) , and a collection
+of normal disks in ∆ is uniquely determined up to normal isotopy by the number of points
+of E ∩ ∆(1) in each edge of ∆(1) . A normal surface F is uniquely determined up to normal
+isotopy by the set of points F ∩ T (1) . An elementary disk is determined, up to normal
+                                         CRITERIA FOR VIRTUAL FIBERING                                         7
+
+
+                                                               G
+                                                                                                  {1} × F
+
+                                                                                                  {1/2} × F
+                      N (F )                       ..                                             {1/3} × F
+                                                    .
+                                                  ..                                              F
+                                                   .
+                                                                                                  {−1/3} × F
+                                                                                                  {−1/2} × F
+
+                                                                                                  {−1} × F
+PSfrag replacements
+
+
+
+
+                                                                                                 L
+
+                                                                                                 F
+
+                                                                                                  L
+
+
+
+
+                                 Figure 2. Spinning G about F to obtain L
+
+
+        isotopy, by the manner in which it separates the vertices of ∆ and we refer to the normal
+        isotopy class of an elementary disk as its disk type. There are seven possible disk types in
+        each tetrahedron corresponding to the seven possible separations of its four vertices; four
+        of which consist of triangles and three consisting of quadrilaterals. The normal isotopy
+        class of an arc in which an elementary disk meets a triangle of ∆ is called an arc type.
+           We fix an ordering (d1 , ..., d7t ) of the disk types in T and assign a 7t-tuple x = (x1 , ..., x7t ),
+        called the normal coordinates of F , to a normal surface F by letting xi denote the number
+        of elementary disks in F of type di . The normal surface F is uniquely determined, up to
+        normal isotopy, by its normal coordinates. Among 7t-tuples of nonnegative integers x =
+        (x1 , ..., x7t ), those corresponding to normal surfaces are characterized by two constraints.
+        The first constraint is that it must be possible to realize the required 4-sided disk types di
+        corresponding to nonzero xi s by disjoint elementary disks. This is equivalent to allowing no
+        more than one quadrilateral disk type to be represented in each tetrahedron. The second
+        constraint concerns the matching of the edges of elementary disks along incident triangles
+        of tetrahedra. Consider two tetrahedra meeting along a common 2-simplex and fix an arc
+        type in this 2-simplex. There are exactly two disk types from each of the tetrahedra whose
+8                                         IAN AGOL
+
+elementary disks meet this 2-simplex in arcs of the given arc type. If the 7t-tuple is to
+correspond to a normal surface then there must be the same number of elementary disks
+on both sides of the incident 2-simplex meeting it in arcs of the given type. This constraint
+can be given as a system of matching equations, one equation for each arc type in the
+2-simplices of T interior to M.
+   The matching equations are given by
+
+                                 xi + xj = xk + xl , 0 ≤ xi ,
+
+where xi , xj , xk , xl share the same arc type in a 2-simplex of T . The nonnegative solutions
+to the matching equations form an infinite linear cone ST ⊂ R7t . The normalizing equation
+P  7t
+   i=1 xi = 1 is added to form the system of normal equations for T . The solution space
+PT ⊂ ST becomes a compact, convex, linear cell and is referred to as the projective
+solution space for T . The projective class of a normal surface F is the image of the normal
+coordinates of F under the projection ST → PT . A rational point z ∈ PT is said to be
+an admissible solution if corresponding to each tetrahedron there is at most one of the
+quadrilateral variables which is nonzero. Every admissible solution is the projective class
+of an embedded normal surface.
+   Given a normal surface F , we denote by CF the unique minimal face of PT that contains
+the projective class of F . A normal surface is carried by CF if its projective class belongs
+to CF . It is easy to see that a normal surface G is carried by CF if and only if there exists
+a normal surface H such that mF = G + H for some positive integer m, where + indicates
+addition of normal surfaces, which is the unique way to perform cut and paste on G ∩ H to
+obtain another normal surface when G and H have compatible quadrilateral types. Every
+rational point in CF is an admissible solution, since it will have the same collection of
+quadrilateral types as F .
+   The weight of a normal surface F is the number of points in F ∩ T (1) , which will be
+denoted by wt(F ) (this was introduced in [10], [28], and [17] as a combinatorial substitute
+for the notion of the area of a surface). The type of a normal surface F is the collection
+of types of non-zero quadrilaterals and triangles in the surface F . Associated to a normal
+surface F is a branched surface B F , obtained by identifying normally parallel disks in each
+tetrahedron, and neighborhoods of arcs in each 2-simplex, and neighborhoods of vertices
+in each edge, and then perturbing to make generic (see Figure 3). For a branched surface
+B we will define Guts(B) = M\\B. If F is a normal surface with associated branched
+surface B, then Guts(B) consists of the non-normally product parts of M\\F , and gives a
+combinatorial substitute for Guts(M\\F ), which consists of the non-product pieces of the
+JSJ decomposition.
+   A taut surface F is said to be lw-taut (standing for least weight-taut) if it has mini-
+mal weight among all taut surfaces representing the homology class [F ]. If F is lw-taut,
+then n pairwise disjoint copies of F , denoted by nF , is an lw-taut surface representing
+the class n[F ]. Let Bx (M) ⊂ H2 (M, ∂M; R) be the unit ball of the Thurston norm on
+homology. Tollefson and Wang prove that associated to each non-trivial homology class
+f ∈ H2 (M, ∂M; Z), there is a face Cf of PT , which is called a complete lw-taut face, which
+has the following properties ([35, Theorem 3.7]). Let [Cf ] denote the set of homology
+                              CRITERIA FOR VIRTUAL FIBERING                                     9
+
+classes of all oriented normal surfaces carried by Cf . Then Cf carries every lw-taut nor-
+mal surface representing any homology class in [Cf ]. We extend the definition so that for
+α ∈ H 1 (M), Cα = CP D(α) .
+   The construction of Cf is given in the following way. For a normal surface F , the unique
+minimal face CF of PT carrying the projective class of F is said to be lw-taut if every
+surface carried by CF is lw-taut. Tollefson and Wang prove that if F is lw-taut, then
+CF is lw-taut [35, Theorem 3.3]. Then for f ∈ H2 (M, ∂M; Z), one takes the finite set
+{F1 , . . . , Fn } up to normal isotopy of all oriented, lw-taut normal surfaces representing f ,
+and let F = F1 + · · · + Fn be the lw-taut surface representing the homology class nf , which
+is canonically associated to f up to normal isotopy. The addition here is both addition of
+normal surfaces and oriented cut-and-paste addition, which preserves the homology class.
+Then define Cf ≡ CF , which will have the desired properties. One may also associate the
+branched surface B f ≡ B F canonically to the homology class f .
+   If F is a lw-taut surface, then there is canonically associated a normal branched surface
+BF , which is obtained from B F by splitting along punctured disks of contact. Tollefson
+and Wang prove that BF is a Reebless incompressible branched surface which is oriented.
+If F is the canonical lw-taut normal surface associated to f , then Bf ≡ BF has the
+property that every surface carried by CF is isotopic to a surface carried by Bf , such that
+the orientation on the surface is induced by the orientation of Bf . This follows from the
+proof of [35, Lemma 6.1], where they prove that every surface carried by CF is homologous
+to a surface carried by Bf , by cut-and-paste of normal disks. However, in the case that
+M is irreducible, cut-and-paste of disks may be achieved by an isotopy. The branched
+surface B F associated to F has a fibered neighborhood N F = N f , and BF has a fibered
+neighborhood NF = Nf . Moreover, we may isotope BF to be normally carried by N F
+so that it is transverse to the fibers. In this case Guts(Bf ) = M\\Nf is a taut-sutured
+manifold, with γ(Bf ) = ∂v (NF ), and R(γ) = ∂h (NF ), such that the orientation of each
+component of R(γ) is induced by the orientation of Bf . From the construction, suppose
+that g ∈ [Cf ], then Cg ⊆ Cf , [Cg ] ⊆ [Cf ], and B g ⊆ B f (up to normal isotopy). For each
+component Q of Guts(B f ), there is a complexity c(Q) which is the number of normal disk
+types D such that D is compatible with the disk types of Cf , and D cannot be normally
+isotoped into N f transverse to the fibers to miss Q (see Figure 3). Define
+                c(Guts(B f )) = max{c(Q)|Q is a component of Guts(B f )}.
+
+Lemma 4.1. Let M be a compact irreducible orientable 3-manifold. Suppose that f ∈
+H2 (M, ∂M) is a homology class lying in the interior of a cone E over a face of Bx (M).
+Moreover assume that F ∈ int(Cf ), where F is the canonical projective representative of
+the homology class f introduced above, and Cf is a maximal lw-taut face. Let Bf be the
+taut oriented normal branched surface associated to the cone Cf , and let Guts(Bf ) be the
+complementary regions of Nf . Then im{H 1 (M) → H 1 (Guts(Bf ))} = 0.
+Proof. Suppose that im{H 1 (M) → H 1 (Guts(Bf ))} 6= 0. Let g ∈ H2 (M, ∂M; Z) be a
+homology class dual to a cohomology class P D(g) ∈ H 1 (M) with non-zero image in
+H 1 (Guts(Bf )). Then for large enough k, we have kf + g ∈ E, since f lies in the in-
+terior of E, and we may assume that kf + g ∈ [Cf ]. But then any lw-taut surface S
+such that [S] = kf + g is isotopic to one carried by Bf by Lemma 6.1 [35]. This gives
+        10                                      IAN AGOL
+
+
+
+
+                                  0
+
+                                                                       4
+                                          1
+                        1
+                                                           0
+PSfrag replacements                                                            0
+
+                              0                                        0
+
+               Figure 3. Local contribution to complexity of the guts of a branched
+               surface obtained by pinching normal disks
+
+        a contradiction, since for any surface S carried by Bf , we must have for any oriented
+        loop α ⊂ Guts(Bf ), α ∩ S = ∅. But there is an oriented loop α ⊂ Guts(Bf ) such that
+        P D(g)(α) 6= 0, or equivalently g ∩ [α] 6= 0. But since f ∩ [α] = 0, this implies that
+        [S] ∩ [α] = (nf + g) ∩ [α] = g ∩ [α] 6= 0, a contradiction. 
+        Corollary 4.2. Under the same hypotheses as Lemma 4.1, im{H 1 (M) → H 1 (Guts(B f ))} =
+        0.
+        Proof. The branched surface Bf is obtained from B f by splitting along punctured disks of
+        contact. Thus, we have an embedding Guts(B f ) ⊂ Guts(Bf ), which gives a factorization
+        H 1 (M) → H 1 (Guts(Bf )) → H 1 (Guts(B f )). Then we apply Lemma 4.1 to see that the
+        image is 0. 
+        Lemma 4.3. Suppose that f ∈ H2 (M, ∂M; Z) is a homology class such that (Guts(Bf ), γ(Bf ))
+        is a product sutured manifold. Then f is a fibered homology class.
+        Proof. Let F be an lw-taut surface fully carried by Bf representing nf as above. Associated
+        to Bf is an I-bundle LF as described in Section 6 of [35], which is obtained by splitting
+                               CRITERIA FOR VIRTUAL FIBERING                                     11
+
+N F along 2F − int2F (∂h N F ). If (Guts(Bf ), γ(Bf )) is a product sutured manifold, then
+the I-bundle structures on LF ∪ Guts(Bf ) match together to give an I-bundle structure
+on the complement of 2F , which implies that F is a fiber. 
+                                    5. Virtual fibering
+  The following criterion for virtual fibering is the principal result in this paper.
+Theorem 5.1. Let M be a connected orientable irreducible 3-manifold with χ(M) = 0
+such that π1 (M) is RFRS. If 0 6= f ∈ H 1 (M) is a non-fibered homology class, then there
+exists a finite-sheeted cover pi,0 : Mi → M such that p∗i,0 f ∈ H 1 (Mi ) lies in the cone over
+the boundary of a fibered face of Bx (Mi ).
+Proof. Let G = π1 (M), with triangulation T . We are assuming that G is RFRS, so there
+                                                                                          (1)
+exists G = G0 ⊲ G1 ⊲ G2 ⊲ · · · such that G ⊲ Gi , [G : Gi ] < ∞, and Gi+1 > (Gi )r so that
+Gi /Gi+1 is abelian. Let Mi be the regular cover of M corresponding to the subgroup Gi ,
+so that M0 = M. First, we give an outline of the argument. Choose a norm-minimizing
+surface Σ0 in M0 so that [Σ0 ] lies in a maximal face of Bx (M0 ), and whose projective class
+is a small perturbation of P D(f ). Each component of the guts of Σ0 will lift to M1 by
+Lemma 4.1. We successively lift each component of the guts of Σ0 to Mi until a component
+of the guts has a non-trivial image in H 1 (Mi ). We perturb the projective homology class
+of the preimage of Σ0 in Mi again, to get a surface with simpler gut regions. The new gut
+regions will be obtained by sutured manifold decomposition from the original gut regions
+of Σ0 , and in fact they embed back down into M. The technical heart of the proof is the
+machinery to show that these sutured manifold decompositions terminate. Gabai showed
+that any particular taut sutured manifold hierarchy will terminate, but his complexity
+does not bound a priori the number of possible decompositions. Since we are in some sense
+performing multiple sutured manifold decompositions “in parallel” in each cover, it is not
+guaranteed that the family of decompositions will terminate. Thus we use the machinery
+of normal surfaces. The complexity measures roughly how many normal disks types are
+still available in each gut region to decompose along.
+   For j > i, let pj,i : Mj → Mi be the covering map, and let Ti = p−1      i,0 (T ) be the induced
+triangulation of Mi . Let our given cohomology class f ∈ H 1 (M0 ) be denoted by f0 . We
+construct by induction cohomology classes fi ∈ H 1 (Mi ), i > 0 such that the canonical
+lw-taut surface Fi such that [Fi ] = ni P D(fi ) lies in the interior of Cfi . Given fi , choose
+fi+1 ∈ H 1 (Mi+1 ) to satisfy the following properties:
+       • the projective class of fi+1 is a small perturbation of p∗i+1,i fi in the unit norm ball
+         Bx (Mi+1 )
+       • Cp∗i+1,i fi ⊂ Cfi+1 is a facet
+       • fi+1 lies in a maximal face of the unit norm ball Bx (Mi+1 )
+       • there is a lw-taut surface representative Fi+1 of ni+1 P D(fi+1) so that Fi+1 ∈
+         int(Cfi+1 ) and Cfi+1 is a maximal face.
+This concludes the inductive construction of the cohomology classes fi . We now prove that
+for i large enough, fi is a fibered cohomology class in H 1 (Mi ).
+   To prove this, we show that if fi is not a fibered cohomology class, then there exists
+J > i such that c(Guts(B fJ )) < c(Guts(B fi )). By Lemma 4.1 we have im{H 1 (Mi ) →
+12                                             IAN AGOL
+
+H 1 (Guts(Bfi ))} = 0. Thus each component of Guts(Bfi ) lifts to Mi+1 . Let Q ⊆ Guts(Bfi )
+be a connected component such that π1 (Q) 6= 1. Recall that since Bfi is a Reebless
+incompressible branched surface, π1 Q ֒→ π1 Mi is injective [27]. Let Q = Q ∩ Guts(B fi ),
+where we are assuming that Bfi ⊂ N fi is carried transverse to the fibers. Since ∩j Gj = 1,
+there exists j = j(Q) > i such that Gj+1 ∩ π1 (Q) 6= π1 (Q) ≤ Gj (since Gj+1 ⊳ G, notice
+that we do not need to worry about the conjugacy class of π1 Q < π1 M = G). Then there
+exists g ∈ π1 (Q) such that the projection of g to the abelian group Gj /Gj+1 is non-trivial.
+Therefore g represents a homologically non-trivial element in H1 (Mj ) of infinite order. If
+Fi ⊂ Mi is an lw-taut surface such that [Fi ] = ni P D(fi ), then the preimage p−1         j,i (Fi ) ⊂ Mj
+of Fi representing the homology class ni P D(p∗j,i fi ) ∈ H2 (Mj , ∂Mj ) is also an lw-taut surface
+by [34, Theorem 3.2]. We see that the preimage p−1      j,i (B fi ) = B p∗j,i fi ⊂ B fj ⊂ Mj .
+   Thus, Q will lift to Mj , but Q will be decomposed by B fj into Qj for which c(Qj ) < c(Q).
+Otherwise Q is a component of Guts(B fj ), which would contradict Corollary 4.2, since
+im{H 1 (Mj ) → H 1 (Q)} =    6 0. Since B fj is obtained by identifying parallel normal disks,
+and B p∗j,i fi ⊂ B fj , there must be a normal disk type of Cfj which does not appear as a
+normal disk type of Cp∗j,ifi , and thus “kills” the lift of g from Mi to Mj . In particular,
+this normal disk must lie inside of the lift of Q to Mj , in such a way that it may not be
+normally isotoped to lie inside of N p∗j,i fi . Since Mj is a regular cover of Mi , this implies
+that the same holds for every lift of Q to Mj . Now, we choose J to be the maximum of
+j(Q) over all components Q of Guts(Bi ). Thus, c(Guts(B J )) < c(Guts(B i )).
+   If π1 (Q) = 1, then Q must be a taut sutured ball. If every component Q of Guts(Bfi ) is
+a taut-sutured ball, then by Lemma 4.3, fi is a fibered cohomology class. By the induction
+above, we see that there exists I such that for all i ≥ I, c(Guts(B i )) = c(Guts(B I )). But
+this implies that for every component Q of Guts(BI ), π1 (Q) = 1, and therefore fI is a
+fibered cohomology class. 
+     The following theorem is a corollary of Theorem 5.1 and Corollary 2.3.
+Theorem 5.2. If O is a 3-dimensional hyperbolic reflection orbifold of finite volume or an
+arithmetic hyperbolic orbifold defined by a quadratic form, then there exists an orientable
+manifold cover Õ → O such that Õ fibers over S 1 .
+  Remark: Arithmetic groups defined by quadratic forms include the Bianchi groups     √
+PSL(2, Od ), where Od is the ring of integers in a quadratic imaginary number field Q( −d)
+where d is a positive integer, and the Seifert-Weber dodecahedral space. These examples
+are some of the oldest known examples of hyperbolic lattices.
+
+                                     6. Virtual depth one
+  The next theorem gives an analogue of Theorem 5.1 for taut sutured manifolds. A taut
+sutured manifold (M, γ) with χ(M) < 0 virtually fibers over an interval if and only if it is a
+product sutured manifold. If (M, γ) has a depth one taut-oriented foliation F , then F|intM
+gives a fibering of intM over S 1 if the corresponding cohomology class is rational. Thus,
+depth one seems to be the best suited analogue to fibering for taut sutured manifolds with
+boundary.
+                              CRITERIA FOR VIRTUAL FIBERING                                    13
+
+Theorem 6.1. Let (M, γ) be a connected taut sutured manifold such that π1 (M) satisfies
+the RFRS property. Then there is a finite-sheeted cover (M̃ , γ̃) → (M, γ) such that (M̃ , γ̃)
+has a depth one taut oriented foliation.
+Proof. The proof is similar to the proof of Theorem 5.1. We double M along R(γ) to
+get a manifold DMγ with (possibly empty) torus boundary, which admits an orientation
+reversing involution τ exchanging the two copies of M, and fixing R± (γ) while reversing
+their coorientations. In order that we may apply the lw-taut technology, we choose a trian-
+gulation T of DMγ for which the only lw-taut surfaces representing [R± (γ)] are isotopic to
+R± (γ). This is possible by choosing a triangulation of DMγ for which R± (γ) are normal of
+the same weight and such that R+ (γ) ∪ R− (γ) intersects each tetrahedron in at most one
+normal disk, and each tetrahedron meeting R± (γ) does not intersect any other tetrahedron
+meeting R± (γ) except in the faces containing arcs of a normal disk of R± (γ). In this case,
+if another normal surface is homologous to R± (γ), then it must meet a tetrahedron which
+does not meet R+ (γ) ∪ R− (γ), since the tetrahedra meeting R± (γ) form a product neigh-
+borhood. Now, stellar subdivide the tetrahedra not meeting R± (γ) a number of times,
+until every normal surface F homologous to R± (γ) has weight wt(F ) > wt(R± (γ)). This
+is the triangulation that we work with on DMγ in order that we may apply the lw-taut
+machinery without modification.
+   The retraction r : DMγ → M induces a retraction r# : π1 DMγ → π1 M. Choose
+orientations on the surfaces R± (γ) so that they are homologous, and call the resulting
+lw-taut surface F . Then [F ] = 2[R+ ]. Also, BF = B F = F , and Guts(BF ) = DMγ \\F .
+Notice that for each component Q of Guts(BF ), π1 (Q) < π1 (M), up to the action of τ .
+We proceed now as in the proof of Theorem 5.1. There are covers Mi → M satisfying
+                                                                              −1
+the RFRS criterion. We construct covers Ni → DMγ so that π1 (Ni ) = r#           (π1 (Mi )), that
+is induced by the retraction r : DMγ → M. We may apply the proof of Theorem 5.1 to
+find a cover p : Ni → DMγ and a cohomology class f ∈ H 1 (Ni ) which is a perturbation
+of p∗ (P D([F ])) such that f is a fibered class, by induction on c(Guts(B fi )). We also have
+that each component of N\\p−1 (F ) is a cover of M. By Theorem 3.7, N\\p−1 (F ) has a
+depth one taut oriented foliation. Thus, M has a finite sheeted cover with a depth one
+taut oriented foliation. 
+  The following theorem is a corollary of Corollary 2.3 and Theorem 6.1.
+Theorem 6.2. Let (M, γ) be a taut sutured compression body. Then there is a finite-sheeted
+cover (M̃ , γ̃) → (M, γ) such that (M̃ , γ̃) has a depth one taut oriented foliation.
+   Remark: The previous theorem is non-trivial, since there exist examples due to Brit-
+tenham of taut sutured genus 2 handlebodies which admit no depth one taut oriented
+foliation [6].
+
+                                      7. Fibered faces
+   In this section, we prove a result of Long and Reid [23], which says that a fibered arith-
+metic 3-manifold has finite index covers with arbitrarily many fibered faces of the Thurston
+norm unit ball. The first result of this type was proved by Dunfield and Ramakrishnan
+for a specific arithmetic 3-manifold [9]. It follows from Theorem 5.2 that this holds for
+14                                          IAN AGOL
+
+any arithmetic 3-manifold defined by a quadratic form (without the added assumption of
+fibering), although this will also follow from Theorem 7.2. The proof is inspired by the
+strategy of Long and Reid’s argument, where we replace their use of pseudo-Anosov flows
+with harmonic 2-forms.
+
+Theorem 7.1. For any k > 0, an arithmetic 3-manifold M which fibers over S 1 has a
+finite-sheeted cover Mk → M such that Bx (Mk ) has at least k distinct fibered faces.
+Proof. For simplicity, assume that M is closed. Let α ∈ H2 (M) be a homology class
+which fibers. Then there is an Euler class e ∈ H 2 (M) such that for any β ∈ H2 (M)
+lying in the same face of Bx (M) as α, one has e(β) = x(β) [33]. Consider a harmonic
+representative e0 ∈ H2 (M), where H2 (M) ∼     = H 2 (M; R) is the space of harmonic 2-forms
+on M with respect to the hyperbolic metric. Let ẽ0 ∈ H2 (H3 ) be the image of e0 in
+the universal cover H3 → H3 /Γ = M. By the proof of [2, Theorem 0.1], the orbit of ẽ0
+under Comm(Γ) is infinite. We finish again as in the proof of [2, Theorem 0.1]. For any
+k, choose g1 , . . . , gk ∈ Comm(Γ) such that {gj∗ (ẽ0 )|j = 1, . . . , k} are distinct. Then let
+Γk = ∩j (gj Γgj−1). The 2-forms gj∗ ẽ0 project to distinct harmonic 2-forms on Mk = H3 /Γk ,
+each of which is dual to a distinct fibered face of the Thurston norm unit ball which is the
+preimage of a fibered face on H3 /gj Γgj−1 ∼= M associated to the projection of gj∗ẽ0 . 
+
+   Next, we prove that an irreducible 3-manifold M with χ(M) = 0 and π1 (M) RFRS has
+virtually infinitely many fibered faces.
+Theorem 7.2. Let M be a compact orientable irreducible 3-manifold with χ(M) = 0 and
+π1 (M) virtually RFRS and not virtually abelian. Then for any k > 0, there exists a cover
+Mk → M such that Bx (Mk ) has at least k distinct fibered faces.
+Proof. Since π1 (M) is RFRS, we may assume that M fibers by Theorem 5.1. We will prove
+the result by induction. For k > 0, assume M has a cover Mk → M such that Bx (Mk )
+has ≥ k fibered faces. Since π1 (M) is RFRS and not virtually abelian, there exists a
+cover Mk′ → Mk such that β1 (Mk′ ) > β1 (Mk ) and Bx (Mk′ ) ⊂ H 1 (Mk′ ) has more faces than
+Bx (Mk ) ⊂ H 1 (Mk ). If Bx (Mk′ ) has all fibered faces, then Mk′ has > k fibered faces since
+by hypothesis it has more faces than Bx (Mk ). Otherwise, Bx (Mk′ ) has a non-fibered face
+U, such that there is an Euler class e ∈ H 2 (Mk′ ) so that x(z) = e(P D(z)) for z ∈ U. Fix
+z ∈ int (U) and take p : Mk′′ → Mk′ such that p∗ z lies in the boundary of a fibered face U ′
+of Bx (Mk′′ ) by Theorem 5.1. Let e′ ∈ H 2(Mk′′ ) be the Euler class associated to U ′ . Then
+e′ (P D(p∗ z)) = p∗ (e)(P D(p∗ z)). But then for any other fibered face V of Bx (Mk′ ) with
+associated Euler class f , we have x(z) 6= f (P D(z)). Thus, x(P D(p∗ z)) 6= p∗ (f )(P D(p∗z)),
+and therefore e′ 6= p∗ f . So U ′ must be a fibered face not containing p∗ (V ), and therefore
+Bx (Mk′′ ) has at least k + 1 fibered faces.
+    Geometrically, what is happening here is that the polyhedron p∗ Bx (Mk′ ) is the intersec-
+tion of the subspace p∗ H 1 (Mk′ ) ⊂ H 1 (Mk′′ ) with Bx (Mk′′ ). Each fibered face of p∗ Bx (Mk′ )
+will lie in the interior of a fibered face of Bx (Mk′′ ), whereas the non-fibered face p∗ U will
+lie in a lower dimensional skeleton of Bx (Mk′′ ) in the boundary of a fibered face. The Euler
+classes used above are linear functionals dual to each face, and therefore are useful for
+distinguishing the faces of the unit norm ball. 
+                              CRITERIA FOR VIRTUAL FIBERING                                   15
+
+                                      8. Applications
+  The following result was observed in [20, Section 5] to follow if arithmetic 3-manifolds
+defined by quadratic forms are virtually fibered.
+Theorem 8.1. All arithmetic uniform lattices of simplest type (i.e. defined by a quadratic
+form) with n ≥ 4 are not coherent.
+   A group is FD if the finite representations are dense in all unitary representations with re-
+spect to the Fell topology. The following result follows from [25, Corollary 2.5, Lemma  √ 2.6].
+This generalizes [25, Theorem 2.8 (1)], which proves that SL(2, Z[i]) and SL(2, Z[ −3])
+have property FD. The following theorem was pointed out by Alan Reid to be a corollary
+of Theorem 5.2.
+Theorem 8.2. Arithmetic Kleinian groups defined by quadratic forms and reflection groups
+are FD.
+
+                                       9. Conclusion
+  It seems natural to extend Thurston’s conjecture to the class of aspherical 3-manifolds
+which have at least one hyperbolic piece in the geometric decomposition.
+Conjecture 9.1. If M is an irreducible orientable compact 3-manifold with χ(M) = 0
+which is not a graph manifold, then there is a finite-sheeted cover M̃ → M such that M̃
+fibers over S 1 .
+   Remark: There are closed graph manifolds which do not virtually fiber over S 1 . The
+classic examples are Seifert fibered spaces for which the rational Euler class of the Seifert
+fibration is non-zero and the base orbifold has Euler characteristic non-zero [29]; see also
+[26, Theorem F] for examples of irreducible graph manifolds which do not virtually fiber.
+If an irreducible manifold with a non-trivial geometric decomposition fibers over S 1 , then
+each of the geometric factors of the torus decomposition will also fiber, so it is certainly
+necessary for the above conjecture to be true that all of the geometric pieces in the torus
+decomposition virtually fiber. However, the obstructions to virtual fibering vanish when
+a graph manifold has boundary or a metric of non-positive curvature [8]. It would be
+interesting to know if a graph manifold M which virtually fibers has π1 M virtually RFRS.
+   As mentioned before, the following conjecture is a natural analogue of the virtual fibering
+conjecture for taut sutured manifolds.
+Conjecture 9.2. Let (M, γ) be a taut sutured manifold such that χ(M) < 0. Then there
+is a finite-sheeted cover (M̃, γ̃) → (M, γ) such that (M̃ , γ̃) has a depth one taut oriented
+foliation.
+  The following conjecture is a natural generalization of the virtual fibering conjecture.
+Once a manifold M fibers and β1 (M) > 1, then M will fiber over the circle in infinitely
+many different ways. But the fibrations coming from a single face of the Thurston norm
+are closely related to each other, so one can ask how many unrelated fiberings are there?
+Clearly, the following conjecture is stronger than Conjecture 9.1.
+16                                             IAN AGOL
+
+Conjecture 9.3. If M is irreducible, compact orientable with χ(M) = 0 and not a graph
+manifold, then for any k > 0, there is a finite index cover Mk → M with k fibered faces of
+Bx (Mk ).
+
+   Question: Which 3-manifolds have RFRS or virtually RFRS fundamental group?
+Clearly Seifert fibered spaces with non-zero Euler class of fibration and non-zero Euler
+characteristic of base surface cannot have any finite cover with RFRS fundamental group.
+Boileau and Wang have examples derived from this which cannot have RFRS fundamental
+group [4]. Sol and Nil manifolds are virtually fibered, but not virtually RFRS. Also, knot
+complements cannot have RFRS fundamental group, but it is still possible that they are
+virtually RFRS. Every hyperbolic 3-manifold has a finite sheeted cover which is pro-p [24],
+but in general a tower of p-covers will not satisfy the rationality condition of the RFRS
+definition. One strategy to try to prove Conjectures 9.1 and 9.3 would be to show that an
+irreducible 3-manifold M which is not a graph manifold has π1 (M) virtually a subgroup
+of a right-angled Coxeter group, and therefore is virtually RFRS. As noted in [15], this is
+equivalent to showing that π1 (M) is LERF and that π1 (M) acts properly and cocompactly
+on a CAT(0) cube complex. Having such an action would follow from the existence of
+enough immersed π1 -injective surfaces to bind every element of π1 M.
+   It would be interesting to try to compute the index of the cover of a Bianchi group for
+which the group will virtually fiber. Similarly for all-ideal right-angled reflection groups, for
+which we suspect there is a very small finite-index cover which fibers, possibly a four-fold
+manifold cover.
+
+
+                                            References
+ [1] I. Agol, D. D. Long, and A. W. Reid, The Bianchi groups are separable on geometrically finite sub-
+     groups, Ann. of Math. (2) 153 (2001), no. 3, 599–621.
+ [2] Ian Agol, Virtual betti numbers of symmetric spaces, preprint, 2 pages, 2006, math.GT/0611828.
+ [3] I. R. Aitchison and J. H. Rubinstein, Polyhedral metrics and 3-manifolds which are virtual bundles,
+     Bull. London Math. Soc. 31 (1999), no. 1, 90–96.
+ [4] Michel Boileau and Shicheng Wang, Non-zero degree maps and surface bundles over S 1 , J. Differential
+     Geom. 43 (1996), no. 4, 789–806.
+ [5] N. Bourbaki, Éléments de mathématique. Fasc. XXXIV. Groupes et algèbres de Lie. Chapitre IV:
+     Groupes de Coxeter et systèmes de Tits. Chapitre V: Groupes engendrés par des réflexions. Chapitre
+     VI: systèmes de racines, Actualités Scientifiques et Industrielles, No. 1337, Hermann, Paris, 1968.
+ [6] Mark Brittenham, Knots with unique minimal genus seifert surface and depth of knots, preprint
+     arXiv:math/0209138, 2002.
+ [7] J. O. Button, Fibred and virtually fibred hyperbolic 3-manifolds in the censuses, Experiment. Math.
+     14 (2005), no. 2, 231–255.
+ [8] S. V. Buyalo and P. V. Svetlov, Topological and geometric properties of graph manifolds, Algebra i
+     Analiz 16 (2004), no. 2, 3–68.
+ [9] Nathan M. Dunfield and Dinakar Ramakrishnan, Increasing the number of fibered faces of arithmetic
+     hyperbolic 3-manifolds, Preprint 2007, arXiv:0712.3243.
+[10] M. J. Dunwoody, An equivariant sphere theorem, Bull. London Math. Soc. 17 (1985), no. 5, 437–448.
+[11] W. Floyd and U. Oertel, Incompressible surfaces via branched surfaces, Topology 23 (1984), no. 1,
+     117–125.
+[12] David Gabai, Foliations and the topology of 3-manifolds, J. Differential Geom. 18 (1983), no. 3,
+     445–503.
+                                  CRITERIA FOR VIRTUAL FIBERING                                          17
+
+[13]         , On 3-manifolds finitely covered by surface bundles, Low-dimensional topology and Kleinian
+     groups (Coventry/Durham, 1984), London Math. Soc. Lecture Note Ser., vol. 112, Cambridge Univ.
+     Press, Cambridge, 1986, pp. 145–155.
+[14]         , Combinatorial volume preserving flows and taut foliations, Comment. Math. Helv. 75 (2000),
+     no. 1, 109–124.
+[15] Frederic Haglund and Daniel Wise, Special cube complexes, Geom. Funct. Anal. (2007), 1–69.
+[16] James E. Humphreys, Reflection groups and Coxeter groups, Cambridge Studies in Advanced Math-
+     ematics, vol. 29, Cambridge University Press, Cambridge, 1990.
+[17] William Jaco and J. Hyam Rubinstein, PL minimal surfaces in 3-manifolds, J. Differential Geom. 27
+     (1988), no. 3, 493–524.
+[18] William Jaco and Peter B. Shalen, Peripheral structure of 3-manifolds, Invent. Math. 38 (1976), no. 1,
+     55–87.
+[19] Klaus Johannson, Homotopy equivalences of 3-manifolds with boundaries, Lecture Notes in Mathe-
+     matics, vol. 761, Springer, Berlin, 1979.
+[20] Michael Kapovich, Leonid Potyagailo, and Ernest B. Vinberg, Non-coherence of some lattices in
+     isom(Hn ), preprint, 2006, math.GR/0608415.
+[21] Marc Lackenby, The asymptotic behaviour of Heegaard genus, Math. Res. Lett. 11 (2004), no. 2-3,
+     139–149.
+[22] Christopher J. Leininger, Surgeries on one component of the Whitehead link are virtually fibered,
+     Topology 41 (2002), no. 2, 307–320.
+[23] D. D. Long and Alan W. Reid, Finding fibre faces in finite covers, Preprint 2007, to appear Math.
+     Res. Lett., http://www.ma.utexas.edu/users/areid/fiberfaces5.pdf.
+[24] Alexander Lubotzky, A group theoretic characterization of linear groups, J. Algebra 113 (1988), no. 1,
+     207–214.
+[25] Alexander Lubotzky and Yehuda Shalom, Finite representations in the unitary dual and Ramanujan
+     groups, Discrete geometric analysis, Contemp. Math., vol. 347, Amer. Math. Soc., Providence, RI,
+     2004, pp. 173–189.
+[26] Walter D. Neumann, Commensurability and virtual fibration for graph manifolds, Topology 36 (1997),
+     no. 2, 355–378.
+[27] U. Oertel, Incompressible branched surfaces, Invent. Math. 76 (1984), no. 3, 385–410.
+[28] Ulrich Oertel, Homology branched surfaces: Thurston’s norm on H2 (M 3 ), Low-dimensional topology
+     and Kleinian groups (Coventry/Durham, 1984), London Math. Soc. Lecture Note Ser., vol. 112,
+     Cambridge Univ. Press, Cambridge, 1986, pp. 253–272.
+[29] Peter Orlik and Frank Raymond, On 3-manifolds with local SO(2) action, Quart. J. Math. Oxford
+     Ser. (2) 20 (1969), 143–160.
+[30] Alan W. Reid, A non-Haken hyperbolic 3-manifold covered by a surface bundle, Pacific J. Math. 167
+     (1995), no. 1, 163–182.
+[31] Peter Scott, Subgroups of surface groups are almost geometric, Journal of the London Mathematical
+     Society. Second Series 17 (1978), no. 3, 355–565.
+[32] William P. Thurston, Three-dimensional manifolds, Kleinian groups and hyperbolic geometry, Bull.
+     Amer. Math. Soc. (N.S.) 6 (1982), no. 3, 357–381.
+[33]         , A norm for the homology of 3-manifolds, Mem. Amer. Math. Soc. 59 (1986), no. 339, i–vi
+     and 99–130.
+[34] Jeffrey L. Tollefson, Normal surfaces minimizing weight in a homology class, Topology Appl. 50
+     (1993), no. 1, 63–71.
+[35] Jeffrey L. Tollefson and Ningyi Wang, Taut normal surfaces, Topology 35 (1996), no. 1, 55–75.
+[36] Genevieve S. Walsh, Great circle links and virtually fibered knots, Topology 44 (2005), no. 5, 947–958.
+
+   University of California, Berkeley, 970 Evans Hall # 3840, Berkeley, CA 94720-3840
+   E-mail address: ianagol@gmail.com
+

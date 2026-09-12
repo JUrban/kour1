@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bin/gap",
+    "-o",
+    "512m",
+    "scripts/check_17_113.g"
+  ],
+  "started_at": "2026-09-12T10:03:28.917503+00:00",
+  "finished_at": "2026-09-12T10:06:10.689636+00:00",
+  "actual_returncode": 1,
+  "stdout_sha256": "9d58b06fed3149e405b5922739e0e4350919eba013a4f44614355bb37f998f36",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sentinel": "PASS_17113_GAP",
+  "sentinel_seen": false
+}

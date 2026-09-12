@@ -1,0 +1,111 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[a4paper,margin=32mm]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Inn}{\operatorname{Inn}}
+\newcommand{\Out}{\operatorname{Out}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\core}{\operatorname{core}}
+
+\title{The near Frattini subgroup of a knot group is trivial}
+\author{GroupTheory50}
+\date{August 27, 2026}
+\subjclass[2020]{20E28, 20F65, 57K10}
+\keywords{near Frattini subgroup, knot group, RFRS group, virtually special group, Kourovka Notebook}
+
+\begin{document}
+\begin{abstract}
+We prove that the near Frattini subgroup of every knot group is trivial.  The argument first identifies the lower and upper near Frattini subgroups for finitely generated groups, and then shows that every nontrivial element of a finitely generated torsion-free virtually RFRS group is a near generator.  Virtual specialness of knot groups then gives the result.  This answers both parts of Problem 19.1 of the Kourovka Notebook.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+The Frattini subgroup packages nongenerators of a group.  The near Frattini variants replace generation by finite-index generation and are therefore adapted to infinite groups.  Problem 19.1 of the Kourovka Notebook, proposed by M. K. Azarian, asks whether the near Frattini subgroup is trivial for groups of composite knots and for cable knot groups \cite{kourovka}.  We prove the stronger statement for every knot group.
+
+The topological input is the now-standard virtual-specialness theory for compact $3$-manifolds with boundary, together with Agol's RFRS framework \cite{agol,haglundwise,pwgraph,pwmixed}.  The group-theoretic reduction is elementary and may be useful in other settings.
+
+\section{Near Frattini subgroups}
+An element $x\in G$ is a \emph{non-near generator} if, for every $S\subseteq G$,
+\[
+ [G:\langle S,x\rangle]<\infty \quad\Longrightarrow\quad [G:\langle S\rangle]<\infty.
+\]
+Let $\lambda(G)$ be the set of non-near generators.  A subgroup is \emph{nearly maximal} if it is maximal among the infinite-index subgroups, and let $\mu(G)$ be the intersection of all nearly maximal subgroups.  If $\lambda(G)=\mu(G)$, their common value is denoted $\psi(G)$.
+
+\begin{lemma}\label{lem:char}
+The set $\lambda(G)$ is a characteristic subgroup of $G$.
+\end{lemma}
+\begin{proof}
+The identity and inverses are immediate.  Suppose $x,y\in\lambda(G)$ and $\langle S,xy\rangle$ has finite index.  Then $\langle S,x,y\rangle$ has finite index.  Applying the defining property first to $x$ with $S\cup\{y\}$, and then to $y$ with $S$, shows that $\langle S\rangle$ has finite index.  Automorphism invariance is immediate from the definition.
+\end{proof}
+
+\begin{theorem}\label{thm:eq}
+If $G$ is finitely generated, then $\lambda(G)=\mu(G)$.
+\end{theorem}
+\begin{proof}
+By Lemma~\ref{lem:char}, $\lambda(G)$ is a subgroup of $G$.  If $g\in\lambda(G)$ and $M$ is nearly maximal, then $g\notin M$ would imply that $\langle M,g\rangle$ has finite index and therefore, by the non-near property, that $M$ has finite index.  Hence $\lambda(G)\leq\mu(G)$.
+
+Conversely, let $g\notin\lambda(G)$.  There is an infinite-index subgroup $L$ such that $\langle L,g\rangle$ has finite index.  Consider the poset of infinite-index subgroups containing $L$.  The union of a chain still has infinite index: otherwise the union would be a finite-index subgroup of the finitely generated group $G$, hence finitely generated, and its generators would already lie in a single member of the chain.  Zorn's lemma gives a nearly maximal subgroup $M\geq L$.  Since $\langle L,g\rangle$ has finite index, one has $g\notin M$.  Thus $g\notin\mu(G)$.
+\end{proof}
+
+\section{RFRS groups}
+For a group $H$ write
+\[
+ H^{(1)}_{\!r}=\ker\bigl(H\longrightarrow H_{\mathrm{ab}}\otimes_{\Z}\Q\bigr).
+\]
+A finitely generated group is RFRS if it admits a separating chain of finite-index normal subgroups
+\[
+ H=H_0\geq H_1\geq\cdots,
+ \qquad (H_i)^{(1)}_{\!r}\leq H_{i+1}.
+\]
+
+\begin{theorem}\label{thm:rfrs}
+If $G$ is finitely generated, torsion-free, and virtually RFRS, then $\psi(G)=1$.
+\end{theorem}
+\begin{proof}
+By Theorem~\ref{thm:eq}, $\psi(G)$ is defined.  Let $1\neq g\in G$, and choose a finite-index RFRS subgroup $H\leq G$.  Some positive power $x=g^m$ lies in $H$, and torsion-freeness gives $x\neq1$.
+
+Take an RFRS chain $(H_i)$.  Since it is separating, choose $i$ with $x\in H_i\setminus H_{i+1}$.  As $(H_i)^{(1)}_{r}\leq H_{i+1}$, the image of $x$ in $H_i^{\mathrm{ab}}\otimes\Q$ is nonzero.  Hence there is a homomorphism $\chi:H_i\to\Z$ with $\chi(x)\neq0$.  Put $L=\ker\chi$.  Then $L$ has infinite index in $H_i$, whereas $L\langle x\rangle$ has finite index in $H_i$.  Since $H_i$ has finite index in $G$ and $x$ is a power of $g$, the subgroup $\langle L,g\rangle$ has finite index in $G$.  Thus $g\notin\lambda(G)$.  No nontrivial element belongs to $\lambda(G)$, so $\psi(G)=1$.
+\end{proof}
+
+\section{Knot groups}
+\begin{theorem}\label{thm:knot}
+Let $K\subset S^3$ be a knot and let $G_K=\pi_1(S^3\setminus\nu K)$.  Then
+\[
+ \psi(G_K)=1.
+\]
+\end{theorem}
+\begin{proof}
+Knot groups are finitely generated and torsion-free.  The unknot group is infinite cyclic, for which the conclusion is immediate.  For every nontrivial knot, the virtual-specialness results for hyperbolic, graph-manifold-with-boundary, and mixed $3$-manifold pieces imply that $G_K$ is virtually special \cite{haglundwise,pwgraph,pwmixed}; virtually special groups are virtually RFRS \cite{agol}.  Theorem~\ref{thm:rfrs} applies.
+\end{proof}
+
+\begin{corollary}\label{cor:kourovka}
+As a consequence of Theorem~\ref{thm:knot}, the answer to both parts of Kourovka Problem 19.1 is affirmative.  In fact the conclusion holds for all knot groups, not only groups of composite or cable knots.
+\end{corollary}
+
+\section{Perspective}
+The proof separates the problem into a purely algebraic statement and a geometric source of RFRS chains.  Consequently Theorem~\ref{thm:rfrs} applies well beyond knot groups: every finitely generated torsion-free virtually RFRS group has trivial near Frattini subgroup.
+
+\begin{thebibliography}{99}
+\bibitem{agol} I. Agol, Criteria for virtual fibering, \emph{J. Topol.} 1 (2008), 269--284.
+\bibitem{haglundwise} F. Haglund and D. T. Wise, Special cube complexes, \emph{Geom. Funct. Anal.} 17 (2008), 1551--1620.
+\bibitem{kourovka} E. I. Khukhro and V. D. Mazurov (eds.), \emph{Unsolved Problems in Group Theory: The Kourovka Notebook}, No. 21, Novosibirsk, 2026; arXiv:1401.0300.
+\bibitem{pwgraph} P. Przytycki and D. T. Wise, Graph manifolds with boundary are virtually special, \emph{J. Topol.} 7 (2014), 419--435.
+\bibitem{pwmixed} P. Przytycki and D. T. Wise, Mixed $3$-manifolds are virtually special, \emph{J. Amer. Math. Soc.} 31 (2018), 319--347.
+\end{thebibliography}
+\end{document}

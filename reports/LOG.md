@@ -2658,3 +2658,13 @@ The 33-file replay returned actual exit0 (tool chunk5affef).
 The same public archive also advertises answers to 19.9, 19.1 and
 17.113. Only their abstracts have been seen so far; no proof status is
 assigned to those three papers before a separate audit.
+
+## 2026-09-12T10:12:40.377728+00:00: three ProofForum prior-answer audits
+
+Read the complete PDFs and TeX of PF:2026.000002,000005,000006, with selected page-image checks. The17.113 balanced metacyclic family is sound and already prior;28 declared GAP cases and15 independent coordinate cases pass, including507,074 projection products and15,000 associativity triples. The original30-case request was stopped during p=11,n=5 after28 passing rows; its actual exit1 and missing sentinel are retained, not called a completed run. Revised runner actual exit0: tool chunk4682dd.
+
+The19.1 algebraic RFRS argument is sound; exact prior topological statements cover every knot group, removing the old convention limit. The same argument gives the largest finite normal subgroup for every finitely generated virtually RFRS group; this consequence is proved with no novelty claim. The19.9 preprint explicitly predates our deductions; its argument works after making the uniform2Z obstruction and finite generation explicit. The printed symplectic rank bound is >=4, visually confirmed despite faulty PDF text extraction. Original local proofs remain unchanged.
+
+The52-file source/evidence audit returned actual exit0 with the terminal sentinel (tool chunk5d0576); hashes, saved GAP rows, stopped prefix and byte-identical coordinate replay pass. Candidate count remains44, outside human reviews0. All cited deep topological/homological proofs remain imported within the stated reading scopes.
+
+n=7 snapshot at2026-09-12T10:09:36.749305+00:00: six workers live,0 completed shards,40,880,000 checked nodes, combined RSS57,409,780 KiB. Still no n=7 proof claim.

@@ -1,0 +1,1083 @@
+                                    Algebraic & Geometric Topology 18 (2018) 4069–4091
+ msp
+
+
+                     Cohomology of symplectic groups
+                      and Meyer’s signature theorem
+                                      DAVE B ENSON
+                                 C ATERINA C AMPAGNOLO
+                                    A NDREW R ANICKI
+                                      C ARMEN ROVI
+
+
+    Meyer showed that the signature of a closed oriented surface bundle over a surface
+
+                                C
+    is a multiple of 4, and can be computed using an element of H 2 .Sp.2g; Z/; Z/. If
+    we denote by 1 ! Z ! Sp.2g; Z/ ! Sp.2g; Z/ ! 1 the pullback of the universal
+
+     C
+    cover of Sp.2g; R/, then by a theorem of Deligne, every finite index subgroup of
+    Sp.2g; Z/ contains 2Z. As a consequence, a class in the second cohomology of
+    any finite quotient of Sp.2g; Z/ can at most enable us to compute the signature of
+    a surface bundle modulo 8. We show that this is in fact possible and investigate the
+    smallest quotient of Sp.2g; Z/ that contains this information. This quotient H is
+    a nonsplit extension of Sp.2g; 2/ by an elementary abelian group of order 22gC1 .
+
+                                                          C
+    There is a central extension 1 ! Z=2 ! H    z ! H ! 1, and H    z appears as a quotient
+    of the metaplectic double cover Mp.2g; Z/ D Sp.2g; Z/=2Z. It is an extension of
+    Sp.2g; 2/ by an almost extraspecial group of order 22gC2 , and has a faithful irre-
+    ducible complex representation of dimension 2g . Provided g > 4, the extension H    z is
+    the universal central extension of H. Putting all this together, in Section 4 we provide
+    a recipe for computing the signature modulo 8, and indicate some consequences.
+
+    20J06; 20C33, 55R10
+
+
+
+1 Introduction
+Let †g ! M ! †h be an oriented surface bundle over a surface. This is determined
+by a homotopy class of maps †h ! B AutC .†g /. If g > 2 then the connected
+components of AutC .†g / are contractible (Corollary 19 in Luke and Mason [25];
+see also Earle and Eells [9] and Hamstrom [19]), and 0 AutC .†g / D g is the
+(orientation-preserving) mapping class group of †g . So B AutC .†g / ' Bg , and the
+bundle is classified by a homotopy class of maps †h ! Bg , or equivalently by the
+monodromy homomorphism
+
+            1 .†h / D ha1 ; b1 ; : : : ; ah ; bh j Œa1 ; b1     Œah ; bh  D 1i ! g :
+
+
+Published: 11 December 2018                                         DOI: 10.2140/agt.2018.18.4069
+4070                Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+Now g acts on H 1 .†g ; Z/ Š Z2g , preserving the symplectic form given by cup
+product into H 2 .†g ; Z/ Š Z. So we have a map g ! Sp.2g; Z/, which is surjective.
+Composing, we obtain a map
+
+                           W 1 .†h / ! g ! Sp.2g; Z/;
+
+and an induced map in cohomology
+
+                      W H 2 .Sp.2g; Z/; Z/ ! H 2 .1 .†h /; Z/:
+
+Meyer [26] constructed a 2–cocycle  on Sp.2g; Z/ such that
+
+                      signature.M / D h Œ ; Œ†h i 2 4Z  Z;
+
+with Œ D4 in H 2 .Sp.2g; Z/; Z/ŠZ for g >3, and Œ =4D1 in H 2 .Sp.2g; Z/; Z/ŠZ,
+classifying the universal central extension of Sp.2g; Z/. Let
+
+                       .Œ =4/2 2 H 2 .Sp.2g; Z/; Z=2/ Š Z=2
+
+be the mod 2 reduction. The mod 2 residue
+
+           signature.M /=4 D h Œ =4; Œ†h i D h .Œ =4/2 ; Œ†h i 2 Z=2
+
+was identified by Rovi [31] with the Arf–Kervaire invariant of a Pontryagin squaring
+operation.
+
+Our main purpose in this paper is to construct a normal subgroup K of Sp.2g; Z/
+for g  1 with finite quotient H D Sp.2g; Z/=K of shape 22gC1  Sp.2g; 2/ (for notation
+describing group extensions, see Section 5.2 of the introduction to the Atlas [5]). Let
+pW Sp.2g; Z/ ! H be the projection. There is a nonzero element c 2 H 2 .H; Z=2/
+(for g > 4 we have H 2 .H; Z=2/ Š Z=2 but there are extraneous summands inflated
+from H 2 .Sp.2g; 2/; Z=2/ for small g ) which classifies a nonsplit double cover H
+                                                                                 z of H.
+The inflation p  .c/ D Œ=42 in H 2 .Sp.2g; Z/; Z=2/ Š Z=2 classifies the metaplectic
+double cover Mp.2g; Z/ of Sp.2g; Z/. Now p factors through Sp.2g; Z=4/, so that
+we obtain as a consequence that signature.M /=4 2 Z=2 only depends on the Z=4–
+coefficient monodromy 4 W 1 .†h / ! Sp.2g; Z=4/ (this was already proved by a
+different method by Korzeniewski [23]). The sequence of group homomorphisms
+
+                Sp.2g; Z/ ! Sp.2g; Z=4/ ! H ! U.2g ; QŒi/=f˙1g
+
+lifts to a sequence of double covers
+                                  E          z ! U.2g ; QŒi/;
+                   Mp.2g; Z/ ! Sp.2g; Z=4/ ! H
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                       4071
+
+
+which is used in the recipe of Section 4 for the signature modulo 8. The faithful
+               z ! U.2g ; QŒi/ is investigated in Benson [2].
+representation H
+
+            C
+Denote by Sp.2g; Z/ the central extension obtained by pulling back the universal cover
+of Sp.2g; R/:
+
+                   1    /Z         C
+                                  / Sp.2g; Z/      / Sp.2g; Z/       /1
+
+
+                                        
+                   1    /Z     D / Sp.2g; R/ / 1
+                                  / Sp.2g; R/
+
+                          C
+Then for g > 4 the group Sp.2g; Z/ is the universal central extension of Sp.2g; Z/,
+while for g D 3 there is an extra copy of Z=2 coming from the fact that Sp.6; 2/ has
+an exceptional double cover (see Lemma 6.11). Note also that the centre of Sp.2g; Z/
+                                  C
+has order two. The centre of Sp.2g; Z/ is twice as big as the subgroup Z displayed
+above; it is isomorphic to Z  Z=2 if g is even, and Z if g is odd.
+
+                                                 C
+A theorem of Deligne [6] implies that the group Sp.2g; Z/ is not residually finite. Every
+
+    C
+subgroup of finite index contains the subgroup 2Z. To rephrase, every finite quotient
+of Sp.2g; Z/ is in fact a finite quotient of the metaplectic double cover Mp.2g; Z/
+of Sp.2g; Z/ defined by
+
+                         1                  1
+
+                                           
+                        2Z             2Z
+
+                                         
+               1        /Z
+                          
+                                     C
+                                   / Sp.2g; Z/       / Sp.2g; Z/       /1
+
+
+                                        
+               1       / Z=2       / Mp.2g; Z/       / Sp.2g; Z/       /1
+
+
+                                           
+                         1                  1
+
+As a consequence, if we compose  with the map to a finite quotient of Sp.2g; Z/,
+we lose information about the signature; the best we can hope to do is compute the
+signature modulo 8. We shall discuss this in greater detail elsewhere.
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4072                Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+An outline of the paper is as follows. We describe the subgroup K 6 Sp.2g; Z/ and
+quotient H D Sp.2g; Z/=K in Section 2. Their properties are described in Theorem 2.2,
+and the proof occupies much of the rest of the paper. Section 3 contains background
+and references on extraspecial and almost extraspecial groups, and there we explain
+what this has to do with the structure of H and its double cover H.      z We describe
+a faithful unitary representation H z ! U.2g ; QŒi/, which inflates to a representation
+Mp.2g; Z/ ! U.2 ; QŒi/, and which is investigated in greater detail in [2]. Section 4
+                   g
+
+uses this representation to give a recipe for computing the signature modulo 8 of a sur-
+face bundle over a surface. The rest of the paper consists of cohomology computations.
+In preparation for this, in Section 5 we discuss the Lie algebra of the symplectic group.
+We show that as a module, it is isomorphic to the divided square of the natural module,
+and we discuss the submodule structure. This enables us in Section 6 to exploit the
+five-term sequence to compute H2 .H/ and H2 .Sp.2g; Z=2n // for n > 2. Provided
+that g > 4, these are isomorphic to Z=2.
+
+Acknowledgements Campagnolo acknowledges support by the Swiss National Sci-
+ence Foundation, grant number PP00P2-128309/1, and by the German Science Foun-
+dation via the Research Training Group 2229, under which this research was started
+and then completed.
+
+
+2 The subgroup K 6 Sp.2g; Z/ and the main theorem
+Denote by J the 2g  2g matrix
+                                              
+                                           0 I
+                                                 :
+                                           I 0
+Regarding J as a symplectic form, we have
+                                                     )
+                                  A B
+                                              ˇ
+                                              ˇ t
+                   Sp.2g; Z/ D            D X ˇ X JX D J :
+                                  C D
+
+Since J 1 D J , a matrix is symplectic if and only if its transpose is symplectic.
+Writing out the above condition explicitly, a matrix is symplectic if and only if
+  (i) AB t and CD t are symmetric and AD t           BC t D I , or equivalently
+ (ii) At C and B tD are symmetric and AtD            C tB D I .
+We write Sp.2g; 2/ for the matrices satisfying the same conditions over F2 , and note that
+reduction modulo two Sp.2g; Z/ ! Sp.2g; 2/ is surjective (Newman and Smart [28]).
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                      4073
+
+
+We write .2g; N / 6 Sp.2g; Z/ for the principal congruence subgroup consisting
+of symplectic matrices which are congruent to the identity modulo N . We write
+.2g; N; 2N / for the Igusa subgroup [22] of .2g; N / consisting of the matrices
+  A B
+  C D where the entries of Diag.AB / and Diag.CD / are divisible by 2N , or
+                                          t                t
+
+equivalently where the entries of Diag.At C / and Diag.B tD/ are divisible by 2N .
+If N D 1, this is the theta subgroup, also known as the symplectic quadratic group, and
+denoted Spq .2g; Z/. It is the inverse image in Sp.2g; Z/ of the orthogonal subgroup
+OC .2g; 2/ 6 Sp.2g; 2/.
+
+Definition 2.1 We write K for the subgroup of Sp.2g; Z/ consisting of matrices
+                                        
+                           I C 2a 2b
+                                           2 Sp.2g; Z/
+                             2c I C 2d
+satisfying the following:
+  (i) The vectors of diagonal entries Diag.b/ and Diag.c/ are even.
+ (ii) The trace Tr.a/ is even.
+
+Thus we have .2g; 4/ 6 K 6 .2g; 2/ and j.2g; 2/ W Kj D 22gC1 . The interpretation
+of the subgroup K is that it is the inverse image in Sp.2g; Z/ of the largest subspace of
+.2g; 2/= .2g; 4/ on which the quadratic form in Theorem 2.2(iv) is identically zero.
+Our main theorem is as follows. We assume that g > 4 for the purpose of simplifying
+the statements. In the appendix we include statements for all values of g . The main
+difference for low values of g is that the cohomology of Sp.2g; 2/ in degrees one and
+two contributes some further annoying complications.
+
+Theorem 2.2 Let g > 4.
+  (i) K is a normal subgroup of Sp.2g; Z/. We write H for the quotient Sp.2g; Z/=K.
+ (ii) The quotient .2g; 2/=K 6 H is an elementary abelian 2–group .Z=2/2gC1 .
+ (iii) The extension
+
+                        1 ! .Z=2/2gC1 ! H ! Sp.2g; 2/ ! 1
+      does not split.
+ (iv) The group .Z=2/2gC1 supports an invariant quadratic form q given by
+                               
+                    I C 2a 2b
+                q                 D Tr.a/ C hDiag.b/; Diag.c/i
+                      2c I C 2d
+      (see Remark 5.3 for the definition of the pointy brackets here).
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4074                Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+  (v) The action of Sp.2g; 2/ on .Z=2/2gC1 described by the extension in (iii) gives
+      the exceptional isomorphism Sp.2g; 2/ Š O.2g C 1; 2/, the orthogonal group of
+      the quadratic form q.
+ (vi) We have H 2 .H; Z=2/ Š Z=2, and an associated central extension
+                                         z ! H ! 1:
+                               1 ! Z=2 ! H
+
+(vii) For n > 2, the inflation map H 2 .H; Z=2/ ! H 2 .Sp.2g; Z=2n /; Z=2/ is an
+      isomorphism.
+(viii) The nonzero element of H 2 .Sp.2g; Z/=K; Z=2/ inflates to the reduction modulo
+       two of 14 Œ as an element of H 2 .Sp.2g; Z/; Z=2/.
+ (ix) Restricting the central extension of H to the subgroup .2g; 2/=K gives an
+                                             z
+      almost extraspecial group 21C.2gC1/ 6 H.
+
+The proof of this theorem occupies the rest of the paper.
+
+
+3 Extraspecial and almost extraspecial groups
+
+For background on extraspecial and almost extraspecial groups, we refer the reader
+to Section I.5.5 of Gorenstein [15] and Section III.13 of Huppert [21], as well as the
+papers of Bouc and Mazza [3], Carlson and Thévenaz [4], Glasby [12], Griess [16],
+Hall and Higman [17], Lam and Smith [24], Quillen [30], Schmid [36], Stancu [37],
+and the letter from Isaacs to Diaconis reproduced in the appendix of Diaconis [8].
+
+The cohomology ring H  ..Z=2/n ; Z=2/ is a polynomial ring in generators z1 ; : : : ; zn
+of degree one. Thus
+
+                       H 1 ..Z=2/n ; Z=2/ D Hom..Z=2/n ; Z=2/
+
+is an n–dimensional vector space spanned by the linear forms z1 ; : : : ; zn . An element
+of degree two is therefore a quadratic form q on .Z=2/n . Letting b be the associated
+bilinear form .Z=2/n  .Z=2/n ! Z=2, we have
+
+                          q.x C y/ D q.x/ C q.y/ C b.x; y/:
+
+In the corresponding central extension
+
+                            1 ! Z=2 ! E ! .Z=2/n ! 1
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                     4075
+
+
+the role played by q and b is as follows. If x and y are elements of .Z=2/n , choose
+preimages xy and yy in E . Then as elements of the central Z=2, we have xy2 D q.x/
+and Œy
+     x ; y
+         y D b.x; y/.
+
+Definition 3.1 We say that a quadratic form q is nonsingular if the radical b? of the
+associated bilinear form b is f0g, and nondegenerate if b? \ q 1 .0/ D f0g.
+
+If q is nonsingular then n D 2g is even; in this case there are two isomorphism classes
+of quadratic forms, distinguished by the Arf invariant. The corresponding groups E
+defined by the central extension
+
+                           1 ! Z=2 ! E ! .Z=2/2g ! 1
+
+are called extraspecial 2–groups, and are characterised by the properties
+
+                          ˆ.E/ D ŒE; E D Z.E/ Š Z=2:
+
+The two isomorphism classes of extraspecial groups are denoted 21C2g
+                                                                C    (Arf invariant
+zero) and 2 1C2g (Arf invariant one).
+
+If q is singular but nondegenerate then n D 2g C 1 is odd; in this case there is one
+isomorphism class of quadratic forms. The corresponding groups E defined by the
+central extension
+                         1 ! Z=2 ! E ! .Z=2/2gC1 ! 1
+
+are called almost extraspecial groups. The central product of Z=4 with an extraspecial
+group of either isomorphism type of order 21C2g gives the almost extraspecial group
+of order 21C.2gC1/ .
+
+If G is a group, we write Aut.G/ for the group of automorphisms of G , we write
+Out.G/ for the group of outer automorphisms, and we write Inn.G/ for the group of
+inner automorphisms. These fit into short exact sequences
+
+  1 ! Z.G/ ! G ! Inn.G/ ! 1 and            1 ! Inn.G/ ! Aut.G/ ! Out.G/ ! 1:
+
+Writing the automorphism groups of the extraspecial and almost extraspecial groups as
+extensions of the outer by the inner automorphisms in this way, we have sequences
+
+                  1 ! .Z=2/2g ! Aut.21C2g
+                                     C    / ! OC .2g; 2/ ! 1;
+                  1 ! .Z=2/2g ! Aut.21C2g / ! O .2g; 2/ ! 1;
+(3:2)        1 ! .Z=2/2g ! Aut.21C.2gC1/ / ! Sp.2g; 2/  Z=2 ! 1;
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4076                 Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+which do not split provided g > 4. It is the last case that is of interest to us: in this case
+the extra factor of Z=2 in the outer automorphism group Out.E/ acts by inverting the
+central element of order four, and for g > 3 the derived subgroup Out.E/0 is Sp.2g; 2/.
+
+It was proved by Griess [16] using representation theory that in each case, there is an
+extension of the extraspecial group by its outer automorphism group, and of the almost
+extraspecial group by the subgroup of index two in its outer automorphism group.
+
+We are interested in the almost extraspecial case. In this case, what Griess proved
+(part (b) of Theorem 5 of [16]) is that there is a group, which he denotes H0 , of shape
+21C.2gC1/ Sp.2g; 2/, with the following properties. The normal 2–subgroup O2 .H0 /
+is the almost extraspecial group 21C.2gC1/ , and the quotient H0 =Z.H0 / is isomorphic
+to the subgroup of index two in Aut.21C.2gC1/ /.
+
+Dempwolff [7] proved that for g > 2 there is a unique isomorphism class of nonsplit
+extensions of Sp.2g; 2/ by an elementary abelian group .Z=2/2g with nontrivial
+action. We shall combine the results of Griess and Dempwolff to show that the group H
+of Theorem 2.2 is isomorphic to the quotient of Griess’ group H0 by the central
+subgroup of order two. This in turn allows us to compute H 2 .H; Z=2/ and relate it
+to H 2 .Sp.2g; Z/; Z/.
+
+There is another approach to this, which we describe in a separate paper [2]. This
+avoids the use of the theorems of Griess and Dempwolff, replacing them with a
+computation showing that the group H   z has a Curtis–Tits–Steinberg type presentation.
+                                                  z on a certain 2g –dimensional space
+This approach is closely related to the action of H
+of theta functions, and shows that the following defines a projective representation
+W Sp.2g; Z/ ! U.2g ; QŒi/=f˙I g with kernel K, and then induces a 2g –dimensional
+representation Hz ! U.2g ; QŒi/.
+
+The underlying vector space for the representation has as a basis the vectors ew
+for w 2 f0; 1gg . In the following matrices, we regard det A, which is really an element
+                                                               p
+of .Z=4/ D f1; 1g, as being either C1 or 1 in C , and det A is either 1 or i:
+                                  
+                              I B
+                                    W ew 7! iw Bw ew ;
+                                              t
+                          
+                              0 I
+                                            p
+                                  
+                        A     0
+                                   W ew 7! det A e.At / 1 w ;
+                        0 .A /t  1
+                                  
+                               0 I              1
+                                                        . 1/w w ew0 :
+                                                    X          t 0
+                                   W ew 7!
+                              I 0           .1 i/g 0
+                                                       w
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                                   4077
+
+
+Note that Sp.2g; Z/ is generated by these elements, but it is not at all obvious that
+the relations in Sp.2g; Z/ hold up to sign for the linear transformations listed here;
+this is proved in [2]. Note also that in the first formula above, the matrix B may be
+interpreted as having diagonal entries in Z=4 and off-diagonal entries in Z=2, so that
+it represents a quadratic form on .Z=2/g , taking values in Z=4.
+Further references for the representation described here include Funar and Pitsch [11],
+Glasby [12], Gocho [13; 14], Nebe, Rains and Sloane [27], Runge [32; 33; 34] and
+Tsushima [41].
+
+
+4 Signature modulo eight
+
+Given an oriented surface bundle over a surface †g ! M ! †h , recall that there
+is an associated map W 1 .†h / ! Sp.2g; Z/. Composing with  W Sp.2g; Z/ !
+U.2g ; QŒi/=f˙I g, we obtain a map
+
+  W 1 .†h / D ha1 ; b1 ; : : : ; ah ; bh j Œa1 ; b1     Œah ; bh  D 1i ! U.2g ; QŒi/=f˙I g:
+
+Now the commutators Œ.ai /; .bi / are well defined in U.2g ; QŒi/, since changing
+the sign on .ai / or .bi / changes the sign twice in the commutator. Since the product
+of the commutators is in the kernel of  , we have
+
+                  Œ.a1 /; .b1 /    Œ.ah /; .bh / D ˙I 2 U.2g ; QŒi/:
+
+Theorem 4.1 We have
+                                                    if and only if signature.M /  0 .mod 8/;
+                                            
+                                                I
+Œ.a1 /; .b1 /    Œ.ah /; .bh / D
+                                                I   if and only if signature.M /  4 .mod 8/:
+
+Remarks 4.2 (1) As a method of computation, this theorem is not very useful,
+because of the large size of the matrices involved. Endo [10] provided a much more
+efficient and purely algebraic method for computing the signature, and not just modulo 8.
+On the other hand, there are consequences of the theorem that are not very apparent
+from the point of view of Endo’s method.
+(2) The following is a consequence of the theta function point of view, and will be
+discussed in a separate paper [2]. Let Spq .2g; Z/ be the theta subgroup of Sp.2g; Z/.
+If the image of  lies in Spq .2g; Z/ then we have signature.M /  0 .mod 8/. In
+particular, this holds if the action of 1 .†h / on H 1 .†g ; Z=2/ is trivial. This proves a
+special case of the Klaus–Teichner conjecture; see the introduction to [18] for details.
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4078                Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+                                                                A B
+(3) Consider next the subgroup consisting of the matrices C        D 2 Sp.2g; Z/ such
+that the entries of C are even, and those of Diag.C / are divisible by four. If the image
+of  lies in this subgroup then again we have signature.M /  0 .mod 8/. This will
+be proved in [2].
+
+
+5 Symplectic groups and their Lie algebras
+Let R be a commutative ring, and Sp.2g; R/ be the symplectic group of dimension 2g
+over R. Explicitly, this consists of matrices X with entries in R, and satisfying
+X tJX D J , where J is the symplectic form
+                                              
+                                           0 I
+                                   JD
+                                           I 0
+and I is a g  g identity matrix. Denoting by VR a free R–module of rank g , and
+setting
+                           WR D VR D HomR .VR ; R/;
+
+the matrices X act on UR D VR ˚ WR , preserving the skew-symmetric bilinear form
+
+                                  h ; iW UR  UR ! R
+given by
+                          h.v; w/; .v 0 ; w 0 /i D w 0 .v/   w.v 0 /:
+
+For the action of matrices in Sp.2g; R/, we regard .v; w/ as a column vector of
+length 2g with entries in R. The skew-symmetric bilinear form induces an isomorphism
+from UR to UR sending u to hu; i. If R D F2 , we shall write U, V and W instead
+of UF2 , VF2 and WF2 .
+The Lie algebra sp.2g; R/ consists of matrices Y with entries in R, and satisfying
+
+                                     J Y C Y tJ D 0:
+Thus                                                 
+                                          a        b
+                                     Y D                ;
+                                          c        at
+where b and c are symmetric. To say that b is symmetric is to say that as an element of
+
+                            HomR .WR ; VR / Š VR ˝R VR
+
+it is invariant under the transposition swapping the two tensor factors. Thus b is an
+element of the divided square D 2 .VR / (which may not be identified with the symmetric
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                     4079
+
+
+square S 2 .UR / unless 2 happens to be invertible in R, which will not be the case
+for us). Similarly, we have c 2 D 2 .WR / and
+
+                          a 2 HomR .VR ; VR / Š VR ˝R WR :
+
+Putting this together, we see that
+
+                Y 2 D 2 .VR / ˚ D 2 .WR / ˚ .VR ˝R WR / Š D 2 .UR /:
+
+Thus, as a module for Sp.2g; R/, we have identified the Lie algebra sp.2g; R/ with the
+divided square of the natural module. More abstractly, if u 2 UR then the symmetric
+tensor u˝u is identified with the endomorphism sending x to hu; xiu. Polarising, this
+identifies u˝u0 Cu0 ˝u with the endomorphism of UR sending x to hu; xiu0 Chu0 ; xiu.
+We have therefore proved the following.
+
+Theorem 5.1 For any commutative ring R, we have isomorphisms
+
+                         sp.2g; R/ Š D 2 .UR / Š Rg.2gC1/ :
+
+The first isomorphism is an isomorphism of Sp.2g; R/–modules, while the second is
+an isomorphism of R–modules.
+
+We are interested in the group Sp.2g; Z=4/. This sits in a short exact sequence
+
+                  1 ! sp.2g; 2/ ! Sp.2g; Z=4/ ! Sp.2g; 2/ ! 1:
+
+The elementary abelian 2–subgroup is identified with sp.2g; 2/, the symplectic Lie
+algebra over F2 , and consists of the matrices I C 2Y with Y 2 sp.2g; 2/. These have
+the form                                          
+                                     I C 2a 2b
+                                                     ;
+                                       2c I 2at
+with b and c symmetric. We have a short exact sequence
+
+                  0       / ƒ2 .U /      / D 2 .U /      /U       /0
+                                                  Š
+                                              
+                                         sp.2g; 2/
+
+where ƒ2 .U / is spanned by elements of the form u ˝ u0 C u0 ˝ u. As a submodule
+of sp.2g; 2/, this consists of the matrices where Diag.b/ D Diag.c/ D 0. The quotient U
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4080               Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+corresponds to the diagonal entries in b and c. Thus the above short exact sequence
+can be thought of as a short exact sequence of groups
+
+  1 ! .2g; 2; 4/= .2g; 4/ ! .2g; 2/= .2g; 4/ ! .2g; 2/= .2g; 2; 4/ ! 1:
+
+More generally, we have short exact sequences
+
+              1 ! sp.2g; 2/ ! Sp.2g; Z=2nC1 / ! Sp.2g; Z=2n / ! 1;
+and
+
+1 ! .2g; 2n ; 2nC1 /= .2g; 2nC1 / ! .2g; 2n /= .2g; 2nC1 /
+                                                             ! .2g; 2n /= .2g; 2n ; 2nC1 / ! 1:
+
+Proposition 5.2 As modules over Sp.2g; 2/, for g > 1 and n > 1, we have
+
+ .2g; 2n /= .2g; 2n ; 2nC1 / Š U            and     .2g; 2n ; 2nC1 /= .2g; 2nC1 / Š ƒ2 .U /:
+
+Now the symplectic form on U gives us a map ƒ2 .U / ! F2 , sending u ˝ u0 C u0 ˝ u
+to hu; u0 i. We write Y for the kernel of this map, and we write Z for D 2 .U /=Y , an
+F2 –vector space of dimension 2g C 1. Putting these together, we have the following
+diagram of modules:
+
+                              0                         0
+
+                                                        
+                              Y                         Y
+
+                                                         
+                   0      / ƒ2 .U /                 / D 2 .U /     /U       /0
+
+
+                                                        
+                   0        / F2                       /Z          /U       /0
+
+
+                                                        
+                              0                         0
+We claim that the symplectic form on U lifts to a nondegenerate orthogonal form
+on Z , invariant under Sp.2g; 2/. The quadratic form Z ! F2 is given by
+
+                 q.u ˝ u/ D 0           and    q.u ˝ u0 C u0 ˝ u/ D hu; u0 i;
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                      4081
+
+
+and the associated symmetric bilinear form is
+
+                             b.u ˝ u; u0 ˝ u0 / D hu; u0 i;
+                          b.u ˝ u0 C u0 ˝ u; u00 ˝ u00 / D 0;
+                    b.u ˝ u0 C u0 ˝ u; u00 ˝ u000 C u000 ˝ u00 / D 0:
+
+A priori, these are a quadratic form and associated bilinear form on D 2 .U /. But they
+clearly vanish identically on Y , and define a nondegenerate but singular quadratic form
+and associated bilinear form on Z . These are invariant under Sp.2g; 2/, which is
+therefore the orthogonal group on Z Š F2 2gC1 , displaying the isomorphism
+
+                              Sp.2g; 2/ Š O.2g C 1; 2/:
+
+Remark 5.3 Translating back from D 2 .U / to sp.2g; 2/, the quadratic and bilinear
+form are given as follows:
+                                
+                           a b
+                       q           D Tr.a/ C hDiag.b/; Diag.c/i;
+                           c at
+                    0
+                       a b0
+                              
+            a b
+      b             ; 0            D hDiag.b/; Diag.c0 /i C hDiag.b0 /; Diag.c/i:
+            c at       c    a0t
+Here, the pointy brackets denote the standard inner product on F2 g given by multiplying
+corresponding coordinates and summing.
+
+The normal subgroup K described in Section 2 is the inverse image of
+
+                            Y 6 sp.2g; 2/ 6 Sp.2g; Z=4/
+
+under the quotient map Sp.2g; Z/ ! Sp.2g; Z=4/. Thus there is a short exact sequence
+
+                            1 ! Z ! H ! Sp.2g; 2/ ! 1
+
+and the subgroup Z Š .Z=2/2gC1 may be viewed as the orthogonal module F2 2gC1
+for Sp.2g; 2/ via conjugation.
+
+Remark 5.4 The submodule structure of the F2 Sp.2g; 2/–modules ƒ2 .U / of dimen-
+sion g.2g 1/ and D 2 .U / Š sp.2g; 2/ of dimension g.2g C 1/ can be described
+explicitly as follows (see also Hiss [20]). There is a map ƒ2 .U / ! F2 corresponding
+to the symplectic form, given by
+
+                              u ˝ u0 C u0 ˝ u 7! hu; u0 i:
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4082                  Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+There is a dual map F2 ! ƒ2 .U / coming from the fact that the representation ƒ2 .U /
+is self-dual. In terms of the natural bases v1 ; : : : ; vg of V and w1 ; : : : ; wg of W , this
+is given by                         X
+                               1 7!    .vi ˝ wi C wi ˝ vi /:
+                                      i
+
+If g D 1 then ƒ2 .U / Š F2 is one-dimensional, Y D 0, and Z D D 2 .U / decomposes
+as a direct sum F2 ˚ U.
+If g > 2 is even then the composite F2 ! ƒ2 .U / ! F2 is zero, and the quotient of the
+kernel by the image is a simple module S of dimension g.2g 1/ 2. Thus ƒ2 .U /
+is uniserial (ie it has a unique composition series) with composition factors F2 , S , F2 .
+If g > 3 is odd, then the composite is nonzero, and ƒ2 .U / decomposes as a direct
+sum of a trivial module F2 and a simple module S of dimension g.2g 1/ 1.
+In both cases with g > 2, the unique maximal submodule of D 2 .U / is ƒ2 .U /. We
+can therefore draw diagrams for the structure of D 2 .U / Š sp.2g; 2/ as follows:
+                                              U
+
+                                             F2                                U
+       g D 1: F2 ˚ U          g > 2 even:               g > 3 odd:
+                                              S                        F2              S
+
+                                             F2
+
+For g > 2, the quotient Z of D 2 .U / has structure
+                                              U
+
+                                              F2
+and this is the orthogonal module for Sp.2g; 2/ Š O.2g C 1; 2/. The submodule Y
+is S for g > 3 odd, it is a nonsplit extension
+
+                                  0 ! F2 ! Y ! S ! 0
+
+for g > 2 even, and Y D 0 for g D 1.
+
+Lemma 5.5         (i) H0 .Sp.2g; 2/; Y / D 0 and H0 .Sp.2g; 2/; U / D 0 for g > 1.
+ (ii) H0 .Sp.2g; 2/; Z/ D 0 and H0 .Sp.2g; 2/; sp.2g; 2// D 0 for g > 2.
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                    4083
+
+
+Proof This follows immediately from the structure of Y , U, Z , and sp.2g; 2/ as
+Sp.2g; 2/–modules given in the above remark, since these modules admit no nontrivial
+homomorphisms to F2 with trivial action.
+
+
+6 Computations in degree two homology and cohomology
+
+Lemma 6.1        (i) H2 .Sp.2g; 2// D 0 for g > 4 and H2 .Sp.6; 2// Š Z=2.
+ (ii)   H 2 .Sp.2g; 2/; Z=2/ D 0 for g > 4 and H 2 .Sp.6; 2/; Z=2/ Š Z=2.
+
+Proof (i) This is computed in the paper of Steinberg [40].
+(ii) This follows from the universal coefficient theorem, because Sp.2g; 2/ is perfect
+for g > 3.
+
+Lemma 6.2 H0 Sp.2g; Z=2n /; H1 ..2g; 2n // D 0 for n > 1 and g > 2.
+                                           
+
+
+Proof Proposition 10.1 of Sato [35] computes H1 ..2g; N //, the abelianisation
+of .2g; N /, finding that the derived subgroup is .2g; N 2 / if N is odd, and
+.2g; N 2 ; 2N 2 / if N is even.
+Taking N D 2n , this gives
+
+                   H1 ..2g; 2n // Š .2g; 2n /= .2g; 22n ; 22nC1 /:
+
+As modules over Sp.2g; Z=2n / we have
+
+.2g; 2n /= .2g; 22n / Š sp.2g; Z=2n / and      .2g; 22n /= .2g; 22n ; 22nC1 / Š U
+(see Section 5). This gives us a short exact sequence
+
+(6:3)              0 ! U ! H1 ..2g; 2n // ! sp.2g; Z=2n / ! 0:
+
+We also have short exact sequences
+
+               0 ! sp.2g; 2/ ! sp.2g; Z=2n / ! sp.2g; Z=2n 1 / ! 0:
+
+By Lemma 5.5(ii), for g > 2, we have
+
+            H0 .Sp.2g; Z=2n /; sp.2g; 2// Š H0 .Sp.2g; 2/; sp.2g; 2// D 0;
+
+and so by induction on n and right exactness of H0 , we have
+
+                        H0 .Sp.2g; Z=2n /; sp.2g; Z=2n // D 0:
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4084                Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+Finally, by Lemma 5.5(i) we have
+
+                   H0 .Sp.2g; Z=2n /; U / Š H0 .Sp.2g; 2/; U / D 0:
+
+Therefore, using right exactness of H0 on the sequence (6.3), the lemma is proved.
+
+Proposition 6.4 For n > 1 and g > 2,
+
+  (i) the map H2 .Sp.2g; Z// ! H2 .Sp.2g; Z=2n // is surjective, and
+ (ii) the map H2 .Sp.2g; Z=2nC1 // ! H2 .Sp.2g; Z=2n // is surjective.
+
+Proof (i) The short exact sequence
+
+                  1 ! .2g; 2n / ! Sp.2g; Z/ ! Sp.2g; Z=2n / ! 1
+
+gives rise to a five-term sequence in homology
+
+H2 .Sp.2g; Z// ! H2 .Sp.2g; Z=2n // ! H0 Sp.2g; Z=2n /; H1 ..2g; 2n //
+                                                                            
+
+                                         ! H1 .Sp.2g; Z// ! H1 .Sp.2g; Z=2n // ! 0:
+
+The proposition therefore follows immediately from Lemma 6.2.
+
+(ii) This is similar, observing that H1 ..2g; 2n /= .2g; 2nC1 // Š sp.2g; 2/, so that
+by Lemma 5.5(ii) we have
+
+                H0 Sp.2g; Z=2n /; H1 ..2g; 2n /= .2g; 2nC1 // D 0:
+                                                                 
+
+
+Corollary 6.5 For n > 1 and g > 3, the map
+
+                     H 2 .Sp.2g; Z=2n /; A/ ! H 2 .Sp.2g; Z/; A/
+
+is injective for any abelian group of coefficients A with trivial action.
+
+Proof This follows directly from Proposition 6.4 together with the universal coeffi-
+cient theorem for cohomology, as the groups Sp.2g; Z/ and Sp.2g; Z=2n / are perfect
+for g > 3.
+
+Proposition 6.6 For g > 2, the maps H2 .Sp.2g; Z=4// ! H2 .H/ ! H2 .Sp.2g; 2//
+are surjective.
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                       4085
+
+
+Proof For the first map, we use the five-term sequence for the short exact sequence
+
+                          1 ! Y ! Sp.2g; Z=4/ ! H ! 1;
+
+and the computation
+
+                       H0 .H; H1 .Y // D H0 .Sp.2g; 2/; Y / D 0
+
+given in Lemma 5.5. Note that Y is an elementary abelian 2–group, so H1 .Y / Š Y .
+The computation for the second map is similar, using the short exact sequence
+
+                            1 ! Z ! H ! Sp.2g; 2/ ! 1
+
+and the computation H0 .Sp.2g; 2/; Z/ D 0 given in Lemma 5.5.
+
+Corollary 6.7 For g > 3, the inflation map H 2 .H; A/ ! H 2 .Sp.2g; Z=4/; A/ is
+injective for any abelian group of coefficients A with trivial action.
+
+Proof This follows directly from Proposition 6.6 and the universal coefficient theorem
+for cohomology, as the groups Sp.2g; Z=4/ are perfect for g > 3, hence all their
+quotients are perfect as well.
+
+Proposition 6.8 For g > 4, the group H D Sp.2g; Z/=K Š Sp.2g; Z=4/=Y is iso-
+morphic to the quotient H 0 of the group H0 of Griess (described in Section 3) by its
+central subgroup of order two.
+
+Proof Examine the extension
+
+(6:9)   1 ! .2g; 2/= .2g; 2; 4/ ! Sp.2g; Z=4/= .2g; 2; 4/ ! Sp.2g; 2/ ! 1:
+
+This is nonsplit, since the element of order two in Sp.2g; 2/ which swaps the first basis
+vectors of L and L and fixes the remaining basis vectors does not lift to an element
+of order two in Sp.2g; Z=4/= .2g; 2; 4/.
+Let E be the almost extraspecial group O2 .H0 / of shape 21C.2gC1/ . The action
+of Sp.2g; 2/ on .2g; 2/= .2g; 2; 4/ Š U is the same as the action of Out.E/0
+on Inn.E/ (see (3.2)), namely the natural symplectic module. It follows from the main
+theorem of Dempwolff [7] that
+
+                        H 2 Sp.2g; 2/; .2g; 2/= .2g; 2; 4/
+                                                            
+
+is one-dimensional. Thus Sp.2g; Z=4/= .2g; 2; 4/ is isomorphic to the group Aut.E/0.
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4086                Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+Since .2g; 4/  K  .2g; 2; 4/ it follows that the short exact sequence
+
+                            1 ! Z ! H ! Sp.2g; 2/ ! 1
+
+also does not split. We have .2g; 2; 4/=K Š Z=2, and since g > 4, by Lemma 6.1
+we have H 2 .Sp.2g; 2/; Z=2/ D 0. So H 2 Sp.2g; 2/; .2g; 2; 4/=Y D 0, and hence
+                                                                     
+
+H 2 .Sp.2g; 2/; Z/ is at most one-dimensional. Since we have a nonsplit extension (6.9),
+it is exactly one-dimensional. The modules E=ŒE; E and Z for Sp.2g; 2/ are both
+isomorphic to the natural orthogonal module of dimension 2g C 1, so it follows that H
+is isomorphic to H 0 .
+
+Remark 6.10 In the case g D 3, Proposition 6.8 is still true, but needs a bit more
+work. The group H 2 .Sp.6; 2/; Z=2/ is one-dimensional by Lemma 6.1, and we are
+left with the nasty possibility that H D Sp.6; Z=4/=Y is isomorphic to a quotient of the
+                                 B
+pullback of H 0 ! Sp.6; 2/ and Sp.6; 2/ ! Sp.6; 2/ by the diagonal central element of
+order two. In order to prove that H is really isomorphic to H 0 and not this other group,
+it suffices to construct a matrix representation of a double cover of H of dimension 8.
+Explicit matrices for this representation were given in Section 3. On the other hand, the
+smallest faithful irreducible complex representation in the case of the other possibility
+has dimension 64. It is worth noticing, though, that it does not matter which possibility
+is true, if we just wish to prove the next theorem.
+
+Lemma 6.11 H2 .Sp.2g; Z// Š Z for g > 4 and H2 .Sp.2g; Z// D Z˚Z=2 for g D 3.
+
+Proof See for example Stein [39, Theorem 2.2] for g D 3, and Behr [1, Korollar 3.2],
+together with Stein [38, Theorem 5.3 and Remark 5 following Corollary 5.5], for g > 4.
+See also Putman [29, Theorem 5.1] for a different proof in the case g > 4.
+
+Theorem 6.12 For g > 3, we have H1 .H/ D 0. For g > 4, we have H2 .H/ Š Z=2,
+and for g D 3, we have H2 .H/ Š Z=2 ˚ Z=2. The map
+
+                             H2 .Sp.2g; Z=2n // ! H2 .H/
+
+is an isomorphism for n > 2.
+
+Proof The computation of the abelianisation H1 .H/ is straightforward. It follows
+from Propositions 6.4 and 6.6 that for n > 2 the maps
+
+(6:13) H2 .Sp.2g; Z// ! H2 .Sp.2g; Z=2n //
+                                     ! H2 .Sp.2g; Z=4// ! H2 .H/ ! H2 .Sp.2g; 2//
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                            4087
+
+
+are surjective, and from Deligne’s theorem (see the introduction) that the kernel of the
+first map contains every element divisible by two. Consulting Lemma 6.11, we see that
+H2 .Sp.2g; Z=2n // and H2 .H/ are quotients of the groups given.
+
+By Proposition 6.8, there is a nontrivial element of H2 .H; Z=2/ which is killed by
+the map to H2 .Sp.2g; 2//. Namely, the central extension H   z ! H is not inflated
+from Sp.2g; 2/ because the kernel of Hz ! Sp.2g; 2/ is the nonabelian group E .
+
+Comparing the value of H2 .Sp.2g; Z// given in Lemma 6.11 with the value of
+H2 .Sp.2g; 2// given in Lemma 6.1, the theorem follows.
+
+Corollary 6.14 We have H 2 .H; Z=2/ Š Z=2. For g > 3 and n > 2, the map
+
+                          H 2 .H; A/ ! H 2 .Sp.2g; Z=2n /; A/
+
+is an isomorphism for any abelian group of coefficients A with trivial action.
+
+Proof This follows from Theorem 6.12 and the universal coefficient theorem.
+
+
+Appendix Summary of homology and cohomology groups
+
+Values of the homology and cohomology groups are summarized in Tables 1 and 2.
+
+
+      Group        H1 . /      H2 . /      H 2 . ; Z/     H 2 . ; Z=8/       H 2 . ; Z=2/
+        g            0           Z             Z             Z=8               Z=2
+    Sp.2g; Z/         0         Z               Z            Z=8                Z=2
+                                                                       
+                             Z ˚ Z=2                      Z=8 ˚ Z=2          Z=2 ˚ Z=2
+   P Sp.2g; Z/        0                         Z
+                             Z                            Z=8                Z=2
+   Sp.2g; Z=4/        0        Z=2              0            Z=2                Z=2
+                                                                       
+                           Z=2 ˚ Z=2                     Z=2 ˚ Z=2           Z=2 ˚ Z=2
+  P Sp.2g; Z=4/       0                         0
+                            Z=4                          Z=4                 Z=2
+        H             0        Z=2              0            Z=2                Z=2
+    Sp.2g; 2/         0           0             0               0                 0
+
+        Table 1: Values for g  4. The group H is Sp.2g; Z=4/=Y . When the value
+        is expressed in cases, the first case is for g even and the second for g odd.
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4088                  Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+          Group         H1 . /      H2 . /     H 2 . ; Z/ H 2 . ; Z=8/ H 2 . ; Z=2/
+           3              0       Z ˚ Z=2          Z           Z=8 ˚ Z=2    Z=2 ˚ Z=2
+         Sp.6; Z/          0       Z ˚ Z=2          Z           Z=8 ˚ Z=2    Z=2 ˚ Z=2
+        P Sp.6; Z/         0       Z ˚ Z=2          Z           Z=8 ˚ Z=2        Z=2
+       Sp.6; Z=4/          0      Z=2 ˚ Z=2         0           Z=2 ˚ Z=2    Z=2 ˚ Z=2
+       P Sp.6; Z=4/        0      Z=4 ˚ Z=2         0           Z=4 ˚ Z=2    Z=2 ˚ Z=2
+ H D Sp.6; Z=4/=Y          0      Z=2 ˚ Z=2         0           Z=2 ˚ Z=2    Z=2 ˚ Z=2
+         Sp.6; 2/          0         Z=2            0             Z=2            Z=2
+           2            Z=10        Z=2          Z=10           .Z=2/2        .Z=2/2
+         Sp.4; Z/        Z=2       Z ˚ Z=2      Z ˚ Z=2 Z=8 ˚ .Z=2/2           .Z=2/3
+        P Sp.4; Z/       Z=2     Z ˚ .Z=2/2 Z ˚ Z=2 Z=8 ˚ .Z=2/3               .Z=2/4
+       Sp.4; Z=4/        Z=2        .Z=2/2        Z=2            .Z=2/3        .Z=2/3
+       P Sp.4; Z=4/      Z=2        .Z=2/3        Z=2            .Z=2/4        .Z=2/4
+ H D Sp.4; Z=4/=Y        Z=2        .Z=2/2        Z=2            .Z=2/3        .Z=2/3
+         Sp.4; 2/        Z=2         Z=2          Z=2            .Z=2/2        .Z=2/2
+           1            Z=12          0          Z=12            Z=4            Z=2
+         Sp.2; Z/        Z=12          0          Z=12            Z=4            Z=2
+        P Sp.2; Z/       Z=6           0           Z=6            Z=2            Z=2
+       Sp.2; Z=4/        Z=4         Z=2           Z=4          Z=4 ˚ Z=2      .Z=2/2
+       P Sp.2; Z=4/      Z=2         Z=2          Z=2            .Z=2/2        .Z=2/2
+ H D Sp.2; Z=4/=Y        Z=4         Z=2           Z=4          Z=4 ˚ Z=2      .Z=2/2
+         Sp.2; 2/        Z=2           0          Z=2             Z=2            Z=2
+
+                                Table 2: Values for 1 6 g 6 3
+
+
+References
+  [1] H Behr, Explizite Präsentation von Chevalley-gruppen über Z, Math. Z. 141 (1975)
+      235–241 MR
+  [2] D J Benson, Theta functions and a presentation of 21C.2gC1/ Sp.2g; 2/, preprint (2017)
+      https://tinyurl.com/DJBenson-papers
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                         4089
+
+
+  [3] S Bouc, N Mazza, The Dade group of (almost) extraspecial p –groups, J. Pure Appl.
+      Algebra 192 (2004) 21–51 MR
+  [4] J F Carlson, J Thévenaz, Torsion endo-trivial modules, Algebr. Represent. Theory 3
+      (2000) 303–335 MR
+  [5] J H Conway, R T Curtis, S P Norton, R A Parker, R A Wilson, Atlas of finite groups:
+      maximal subgroups and ordinary characters for simple groups, Oxford Univ. Press,
+      Eynsham (1985) MR
+  [6] P Deligne, Extensions centrales non résiduellement finies de groupes arithmétiques, C.
+      R. Acad. Sci. Paris Sér. A-B 287 (1978) A203–A208 MR
+  [7] U Dempwolff, Extensions of elementary abelian groups of order 22n by S2n .2/ and
+      the degree 2–cohomology of S2n .2/, Illinois J. Math. 18 (1974) 451–468 MR
+  [8] P Diaconis, Threads through group theory, from “Character theory of finite groups”
+      (M L Lewis, G Navarro, D S Passman, T R Wolf, editors), Contemp. Math. 524, Amer.
+      Math. Soc., Providence, RI (2010) 33–47 MR
+  [9] C J Earle, J Eells, A fibre bundle description of Teichmüller theory, J. Differential
+      Geometry 3 (1969) 19–43 MR
+ [10] H Endo, A construction of surface bundles over surfaces with non-zero signature,
+      Osaka J. Math. 35 (1998) 915–930 MR
+ [11] L Funar, W Pitsch, Finite quotients of symplectic groups vs mapping class
+      groups, preprint (2016) http://www.maths.ed.ac.uk/~v1ranick/papers/
+      funarpitsch1.pdf
+ [12] S P Glasby, On the faithful representations, of degree 2n , of certain extensions of
+      2–groups by orthogonal and symplectic groups, J. Austral. Math. Soc. Ser. A 58 (1995)
+      232–247 MR
+ [13] T Gocho, The topological invariant of three-manifolds based on the U.1/ gauge theory,
+      Proc. Japan Acad. Ser. A Math. Sci. 66 (1990) 237–239 MR
+ [14] T Gocho, The topological invariant of three-manifolds based on the U.1/ gauge theory,
+      J. Fac. Sci. Univ. Tokyo Sect. IA Math. 39 (1992) 169–184 MR
+ [15] D Gorenstein, Finite groups, Harper & Row, New York (1968) MR
+ [16] R L Griess, Jr, Automorphisms of extra special groups and nonvanishing degree 2
+      cohomology, Pacific J. Math. 48 (1973) 403–422 MR
+ [17] P Hall, G Higman, On the p –length of p –soluble groups and reduction theorems for
+      Burnside’s problem, Proc. London Math. Soc. 6 (1956) 1–42 MR
+ [18] I Hambleton, A Korzeniewski, A Ranicki, The signature of a fibre bundle is multi-
+      plicative mod 4, Geom. Topol. 11 (2007) 251–314 MR
+ [19] M-E Hamstrom, Homotopy groups of the space of homeomorphisms on a 2–manifold,
+      Illinois J. Math. 10 (1966) 563–573 MR
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+4090                Dave Benson, Caterina Campagnolo, Andrew Ranicki and Carmen Rovi
+
+
+ [20] G Hiss, Die adjungierten Darstellungen der Chevalley–Gruppen, Arch. Math. (Basel)
+      42 (1984) 408–416 MR
+ [21] B Huppert, Endliche Gruppen, I, Grundl. Math. Wissen. 134, Springer (1967) MR
+ [22] J-i Igusa, On the graded ring of theta-constants, Amer. J. Math. 86 (1964) 219–246
+      MR
+ [23] A Korzeniewski, On the signature of fibre bundles and absolute Whitehead torsion,
+      PhD thesis, University of Edinburgh (2005) http://hdl.handle.net/1842/12106
+ [24] T Y Lam, T Smith, On the Clifford–Littlewood–Eckmann groups: a new look at
+      periodicity mod 8, Rocky Mountain J. Math. 19 (1989) 749–786 MR
+ [25] R Luke, W K Mason, The space of homeomorphisms on a compact two-manifold is
+      an absolute neighborhood retract, Trans. Amer. Math. Soc. 164 (1972) 275–285 MR
+ [26] W Meyer, Die Signatur von Flächenbündeln, Math. Ann. 201 (1973) 239–264 MR
+ [27] G Nebe, E M Rains, N J A Sloane, The invariants of the Clifford groups, Des. Codes
+      Cryptogr. 24 (2001) 99–121 MR
+ [28] M Newman, J R Smart, Symplectic modulary groups, Acta Arith. 9 (1964) 83–89 MR
+ [29] A Putman, The Picard group of the moduli space of curves with level structures, Duke
+      Math. J. 161 (2012) 623–674 MR
+ [30] D Quillen, The mod 2 cohomology rings of extra-special 2–groups and the spinor
+      groups, Math. Ann. 194 (1971) 197–212 MR
+ [31] C Rovi, The nonmultiplicativity of the signature modulo 8 of a fibre bundle is an
+      Arf–Kervaire invariant, Algebr. Geom. Topol. 18 (2018) 1281–1322 MR
+ [32] B Runge, On Siegel modular forms, I, J. Reine Angew. Math. 436 (1993) 57–85 MR
+ [33] B Runge, On Siegel modular forms, II, Nagoya Math. J. 138 (1995) 179–197 MR
+ [34] B Runge, Codes and Siegel modular forms, Discrete Math. 148 (1996) 175–204 MR
+ [35] M Sato, The abelianization of the level d mapping class group, J. Topol. 3 (2010)
+      847–882 MR
+ [36] P Schmid, On the automorphism group of extraspecial 2–groups, J. Algebra 234 (2000)
+      492–506 MR
+ [37] R Stancu, Almost all generalized extraspecial p –groups are resistant, J. Algebra 249
+      (2002) 120–126 MR
+ [38] M R Stein, Generators, relations and coverings of Chevalley groups over commutative
+      rings, Amer. J. Math. 93 (1971) 965–1004 MR
+ [39] M R Stein, The Schur multipliers of Sp6 .Z/, Spin8 .Z/, Spin7 .Z/, and F4 .Z/, Math.
+      Ann. 215 (1975) 165–172 MR
+ [40] R Steinberg, Generators, relations and coverings of algebraic groups, II, J. Algebra
+      71 (1981) 527–543 MR
+
+
+Algebraic & Geometric Topology, Volume 18 (2018)
+Cohomology of symplectic groups and Meyer’s signature theorem                              4091
+
+
+ [41] K Tsushima, On a decomposition of Bruhat type for a certain finite group, Tsukuba J.
+      Math. 27 (2003) 307–317 MR
+
+
+Institute of Mathematics, University of Aberdeen
+Aberdeen, United Kingdom
+Department of Mathematics, Karlsruhe Institute of Technology
+Karlsruhe, Germany
+School of Mathematics, University of Edinburgh
+Edinburgh, United Kingdom
+Department of Mathematics, Indiana University Bloomington
+Bloomington, IN, United States
+d.j.benson@abdn.ac.uk,            caterina.campagnolo@kit.edu,                crovi@indiana.edu
+
+Received: 26 November 2017             Revised: 30 May 2018
+
+
+
+
+Geometry & Topology Publications, an imprint of mathematical sciences publishers           msp
+

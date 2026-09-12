@@ -1,0 +1,117 @@
+         LINEARITY OF NON-ABELIAN TENSOR SQUARES: A
+           COUNTEREXAMPLE AND THE BRAID GROUPS
+
+                                         GROUPTHEORY50
+
+
+        Abstract. We answer both parts of Kourovka Problem 19.9. First, for r ≥ 4 the
+        finitely generated linear group Sp2r (Z) has a non-linear non-abelian tensor square,
+        by combining the Brown–Loday description for perfect groups with Deligne’s non-
+        residually finite universal central extension. Second, for every n > 3 the tensor square
+        Bn ⊗ Bn of the braid group is linear. The latter follows from the homology map
+        H2 (Bn ; Z) → H2 (Sn ; Z) and the standard splitting of the tensor square when the
+        abelianization has no 2-torsion.
+
+
+
+
+                                        1. Introduction
+  Brown and Loday introduced the non-abelian tensor product and related it to low-
+dimensional homotopy and group homology [5]. Bardakov, Lavrenov and Neshchadim
+showed that linearity of G alone does not force linearity of G ⊗ G, using non-finitely-
+generated examples, and isolated the finitely generated case as an open problem [3].
+This became Kourovka Problem 19.9: if G is finitely generated and linear, must G ⊗ G
+be linear, and in particular what happens for braid groups Bn , n > 3 [7]?
+  We show that the general answer is negative but the braid-group answer is positive.
+
+                      2. A finitely generated counterexample
+  For a group G there is an exact sequence
+                                                         κ
+                                                  → G′ −→ 1.
+                               H2 (G; Z) −→ G ∧ G −
+If G is perfect, then G ⊗ G = G ∧ G and this is the universal central extension of G [5].
+Theorem 2.1. There is a finitely generated linear group G such that G ⊗ G is not linear.
+Proof. Take
+                                     G = Sp2r (Z),           r ≥ 4.
+This group is finitely generated, perfect, and linear. In this range the pullback of the
+universal cover of Sp2r (R) is the universal central extension
+
+                                   1 −→ Z −→ G
+                                             e −→ G −→ 1
+
+[1]. Deligne proved that every finite quotient of Ge kills a nonzero multiple of the central
+generator; in particular Ge is not residually finite [6].
+   Since G is perfect, Brown–Loday gives G ⊗ G ∼    = G.e A finitely generated linear group
+is residually finite by Mal’cev’s theorem. Therefore G ⊗ G cannot be linear.              □
+
+   Date: August 27, 2026.
+   2020 Mathematics Subject Classification. 20F36, 20J05, 20G35.
+   Key words and phrases. non-abelian tensor square, braid group, symplectic group, linear group,
+universal central extension.
+                                                   1
+2                                           GROUPTHEORY50
+
+
+                                        3. The braid groups
+     Let n ≥ 4 and let
+                                   β : Bn ↠ Sn
+be the standard epimorphism with kernel the pure braid group Pn . We use
+                 B ab ∼
+                      = Z,
+                         n
+                                         ∼ C2 ,
+                             H2 (Bn ; Z) =        H2 (Sn ; Z) ∼
+                                                              = C2 .
+Lemma 3.1. The induced map
+                                    β∗ : H2 (Bn ; Z) −→ H2 (Sn ; Z)
+is an isomorphism.
+Proof. The five-term sequence for
+                                       1 → Pn → Bn → Sn → 1
+contains
+               H2 (Bn ) → H2 (Sn ) → H1 (Pn )Sn → H1 (Bn ) → H1 (Sn ) → 0.
+The coinvariants H1 (Pn )Sn are infinite cyclic because Sn is transitive on the standard pure-
+braid generators Aij . The class of A12 = σ12 maps to twice the generator of H1 (Bn ) ∼  = Z.
+Hence the map H1 (Pn )Sn → H1 (Bn ) is injective. Therefore H2 (Bn ) → H2 (Sn ) is
+surjective, and since both groups have order two, it is an isomorphism.                     □
+     Put An = Sn′ = Altn and define the pullback
+                                       En = Bn′ ×An (Sn ∧ Sn ).
+Proposition 3.2. The natural map Bn ∧ Bn → En is an isomorphism.
+Proof. Both groups are central extensions of Bn′ . The induced map is the identity on
+the quotient, while on the kernels it is precisely the isomorphism of Lemma 3.1. The
+short five lemma gives the result.                                                  □
+Theorem 3.3. For every n > 3, the non-abelian tensor square Bn ⊗ Bn is linear.
+Proof. The group Sn ∧ Sn is finite. The group Bn′ is linear because Bn is linear by the
+theorems of Bigelow and Krammer [4, 8]. Hence the pullback En , as a subgroup of
+Bn′ × (Sn ∧ Sn ), is linear. Proposition 3.2 therefore shows that Bn ∧ Bn is linear.
+   Since Bnab ∼
+              = Z has no 2-torsion, the splitting theorem for non-abelian tensor squares
+gives
+                Bn ⊗ Bn ∼  = ∇(Bn ) × (Bn ∧ Bn ),              ∼ Γ(Z) ∼
+                                                        ∇(Bn ) =      =Z
+[2]. Thus Bn ⊗ Bn is a direct product of linear groups and is linear.                 □
+
+                                            4. Conclusion
+   The two parts of Problem 19.9 exhibit genuinely different behavior: finite generation
+does not rescue tensor-square linearity in general, while braid groups retain linearity
+after passage to the non-abelian tensor square.
+
+                                              References
+    [1] D. Benson, C. Campagnolo, A. Ranicki and C. Rovi, Cohomology of symplectic groups and Meyer’s
+        signature theorem, Algebr. Geom. Topol. 18 (2018), 4069–4091.
+    [2] R. D. Blyth, F. Fumagalli and M. Morigi, Some structural results on the non-abelian tensor square
+        of groups, J. Group Theory 13 (2010), 83–94.
+    [3] V. G. Bardakov, A. V. Lavrenov and M. V. Neshchadim, Linearity problem for non-abelian tensor
+        products, Homology Homotopy Appl. 21 (2019), 133–146.
+    [4] S. J. Bigelow, Braid groups are linear, J. Amer. Math. Soc. 14 (2001), 471–486.
+LINEARITY OF NON-ABELIAN TENSOR SQUARES: A COUNTEREXAMPLE AND THE BRAID GROUPS
+                                                                             3
+
+
+[5] R. Brown and J.-L. Loday, Van Kampen theorems for diagrams of spaces, Topology 26 (1987),
+    311–335.
+[6] P. Deligne, Extensions centrales non residuellement finies de groupes arithmetiques, C. R. Acad.
+    Sci. Paris Ser. A-B 287 (1978), A203–A208.
+[7] E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka
+    Notebook, No. 21, Novosibirsk, 2026; arXiv:1401.0300.
+[8] D. Krammer, Braid groups are linear, Ann. of Math. 155 (2002), 131–156.
+

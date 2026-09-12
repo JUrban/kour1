@@ -1,0 +1,121 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[a4paper,margin=32mm]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Inn}{\operatorname{Inn}}
+\newcommand{\Out}{\operatorname{Out}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\core}{\operatorname{core}}
+
+\title{Balanced two-generator $p$-groups of deficiency zero and unbounded nilpotency class}
+\author{GroupTheory50}
+\date{August 27, 2026}
+\subjclass[2020]{20D15, 20F05, 20F18}
+\keywords{finite p-groups, deficiency, nilpotency class, balanced presentation, Kourovka Notebook}
+
+\begin{document}
+\begin{abstract}
+For every prime $p>3$ we construct an explicit family of finite two-generator $p$-groups of deficiency zero whose nilpotency classes tend to infinity.  The construction gives, for every $n\geq1$, a group of order $p^{2n+1}$ and class $n+1$.  This gives an affirmative answer to Problem 17.113 of the Kourovka Notebook.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+The deficiency of a finite presentation
+\[
+  \langle x_1,\dots,x_d\mid r_1,\dots,r_s\rangle
+\]
+is $d-s$, and the deficiency of a finitely presented group is the supremum of the deficiencies of its finite presentations.  A presentation with the same number of generators and relators is usually called balanced.  Balanced presentations of finite $p$-groups are constrained enough to be useful in topology and combinatorial group theory, but flexible enough to support groups of substantial nilpotency class.
+
+Problem 17.113 of the Kourovka Notebook, proposed by J. Wiegold in the 17th issue, asks whether, for a fixed prime $p>3$, there are two-generator finite $p$-groups of deficiency zero with arbitrarily high nilpotency class \cite{kourovka}.  We give a uniform metacyclic construction.
+
+\section{The family}
+Fix a prime $p>3$ and an integer $n\geq1$.  Define
+\[
+ G_n=\left\langle a,b\ \middle|\ b^{-1}ab=a^{1+p},\quad b^{p^n}=a^{p^n}\right\rangle.
+\]
+We use the commutator convention $[x,y]=x^{-1}y^{-1}xy$.
+
+\begin{theorem}\label{thm:main}
+For every $n\geq1$, the group $G_n$ is a finite two-generator $p$-group of order $p^{2n+1}$, nilpotency class $n+1$, and deficiency zero.
+\end{theorem}
+
+\begin{proof}
+Conjugating the relation $b^{p^n}=a^{p^n}$ by $b$ gives
+\[
+ b^{p^n}=a^{p^n(1+p)}.
+\]
+Comparison with the defining relation yields $a^{p^{n+1}}=1$, and then also $b^{p^{n+1}}=1$.  Using $b^{-1}ab=a^{1+p}$, every word collects to $a^ib^j$.  The relation $b^{p^n}=a^{p^n}$ allows us to choose
+\[
+ 0\leq i<p^{n+1},\qquad 0\leq j<p^n,
+\]
+so $|G_n|\leq p^{2n+1}$.
+
+For the reverse inequality, put $q=1+p$ and let
+\[
+ A_n=\langle\alpha\rangle\cong C_{p^{n+1}},\qquad
+ B_n=\langle\beta\rangle\cong C_{p^{n+1}}.
+\]
+Let $B_n$ act on $A_n$ by $\alpha^\beta=\alpha^q$.  The standard lifting-the-exponent calculation gives
+\[
+ v_p(q^{p^k}-1)=k+1,
+\]
+so this automorphism has order $p^n$.  In $S_n=A_n\rtimes B_n$ the element
+\[
+ z=\beta^{p^n}\alpha^{-p^n}
+\]
+is central of order $p$.  Moreover $\langle z\rangle$ meets both $A_n$ and $B_n$ trivially.  Hence
+\[
+ H_n=S_n/\langle z\rangle
+\]
+has order $p^{2n+1}$.  The images of $\alpha$ and $\beta$ satisfy the defining relations of $G_n$, so there is an epimorphism $G_n\twoheadrightarrow H_n$.  The upper bound already obtained forces $G_n\cong H_n$.
+
+The first defining relation gives
+\[
+ [a,b]=a^p,
+\]
+and therefore, for $k\geq0$,
+\[
+ [a^{p^k},b]=a^{p^{k+1}}.
+\]
+It follows inductively that
+\[
+ \gamma_r(G_n)=\langle a^{p^{r-1}}\rangle\qquad(2\leq r\leq n+2).
+\]
+Thus $\gamma_{n+1}(G_n)\neq1$ and $\gamma_{n+2}(G_n)=1$, so the class is $n+1$.
+
+The displayed presentation has two generators and two relators, hence $\operatorname{def}(G_n)\geq0$.  On the other hand, if a finite group has a presentation with $d$ generators and $s$ relators, abelianization and tensoring the relation matrix with $\Q$ show that $s\geq d$; thus every finite group has deficiency at most zero.  Consequently $\operatorname{def}(G_n)=0$.
+\end{proof}
+
+\begin{corollary}\label{cor:unbounded-class}
+By Theorem~\ref{thm:main}, for every prime $p>3$ there exist two-generator finite $p$-groups of deficiency zero and arbitrarily large nilpotency class.
+\end{corollary}
+
+\section{Further remarks}
+The groups $G_n$ are metacyclic central quotients of semidirect products of two cyclic $p$-groups.  In particular, the growth of nilpotency class does not require a growing number of generators or relators.  The same presentation also gives a concrete family suitable for computational experiments with balanced finite presentations.
+
+The restriction $p>3$ is the one appearing in the Kourovka problem.  The construction itself uses only the familiar $p$-adic behavior of $1+p$ for odd $p$; we have not attempted here to optimize the small-prime range.
+
+\begin{thebibliography}{99}
+\bibitem{kourovka} E. I. Khukhro and V. D. Mazurov (eds.), \emph{Unsolved Problems in Group Theory: The Kourovka Notebook}, No. 21, Novosibirsk, 2026; arXiv:1401.0300.
+\bibitem{hall} M. Hall, Jr., The theory of groups, Macmillan, New York, 1959.
+\bibitem{robinson} D. J. S. Robinson, \emph{A Course in the Theory of Groups}, 2nd ed., Springer, 1996.
+\end{thebibliography}
+\end{document}

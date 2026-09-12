@@ -1,0 +1,106 @@
+     THE NEAR FRATTINI SUBGROUP OF A KNOT GROUP IS
+                         TRIVIAL
+
+                                        GROUPTHEORY50
+
+
+        Abstract. We prove that the near Frattini subgroup of every knot group is trivial.
+        The argument first identifies the lower and upper near Frattini subgroups for finitely
+        generated groups, and then shows that every nontrivial element of a finitely generated
+        torsion-free virtually RFRS group is a near generator. Virtual specialness of knot
+        groups then gives the result. This answers both parts of Problem 19.1 of the Kourovka
+        Notebook.
+
+
+
+
+                                       1. Introduction
+   The Frattini subgroup packages nongenerators of a group. The near Frattini variants
+replace generation by finite-index generation and are therefore adapted to infinite groups.
+Problem 19.1 of the Kourovka Notebook, proposed by M. K. Azarian, asks whether the
+near Frattini subgroup is trivial for groups of composite knots and for cable knot groups
+[3]. We prove the stronger statement for every knot group.
+   The topological input is the now-standard virtual-specialness theory for compact
+3-manifolds with boundary, together with Agol’s RFRS framework [1, 2, 4, 5]. The
+group-theoretic reduction is elementary and may be useful in other settings.
+
+                               2. Near Frattini subgroups
+  An element x ∈ G is a non-near generator if, for every S ⊆ G,
+                           [G : hS, xi] < ∞      =⇒      [G : hSi] < ∞.
+Let λ(G) be the set of non-near generators. A subgroup is nearly maximal if it is
+maximal among the infinite-index subgroups, and let µ(G) be the intersection of all
+nearly maximal subgroups. If λ(G) = µ(G), their common value is denoted ψ(G).
+Lemma 2.1. The set λ(G) is a characteristic subgroup of G.
+Proof. The identity and inverses are immediate. Suppose x, y ∈ λ(G) and hS, xyi has
+finite index. Then hS, x, yi has finite index. Applying the defining property first to x
+with S ∪ {y}, and then to y with S, shows that hSi has finite index. Automorphism
+invariance is immediate from the definition.                                          
+Theorem 2.2. If G is finitely generated, then λ(G) = µ(G).
+Proof. By Lemma 2.1, λ(G) is a subgroup of G. If g ∈ λ(G) and M is nearly maximal,
+then g ∈ / M would imply that hM, gi has finite index and therefore, by the non-near
+property, that M has finite index. Hence λ(G) ≤ µ(G).
+   Conversely, let g ∈ / λ(G). There is an infinite-index subgroup L such that hL, gi has
+finite index. Consider the poset of infinite-index subgroups containing L. The union of a
+chain still has infinite index: otherwise the union would be a finite-index subgroup of the
+  Date: August 27, 2026.
+  1991 Mathematics Subject Classification. 20E28, 20F65, 57K10.
+  Key words and phrases. near Frattini subgroup, knot group, RFRS group, virtually special group,
+Kourovka Notebook.
+                                                  1
+2                                            GROUPTHEORY50
+
+
+finitely generated group G, hence finitely generated, and its generators would already lie
+in a single member of the chain. Zorn’s lemma gives a nearly maximal subgroup M ≥ L.
+Since hL, gi has finite index, one has g ∈
+                                         / M . Thus g ∈/ µ(G).                          
+
+                                            3. RFRS groups
+     For a group H write
+                              Hr(1) = ker H −→ Hab ⊗Z Q .
+                                                                       
+
+A finitely generated group is RFRS if it admits a separating chain of finite-index normal
+subgroups
+                        H = H0 ≥ H1 ≥ · · · ,     (Hi )r(1) ≤ Hi+1 .
+Theorem 3.1. If G is finitely generated, torsion-free, and virtually RFRS, then ψ(G) =
+1.
+Proof. By Theorem 2.2, ψ(G) is defined. Let 1 6= g ∈ G, and choose a finite-index RFRS
+subgroup H ≤ G. Some positive power x = g m lies in H, and torsion-freeness gives
+x 6= 1.
+   Take an RFRS chain (Hi ). Since it is separating, choose i with x ∈ Hi \ Hi+1 . As
+     (1)
+(Hi )r ≤ Hi+1 , the image of x in Hiab ⊗ Q is nonzero. Hence there is a homomorphism
+χ : Hi → Z with χ(x) 6= 0. Put L = ker χ. Then L has infinite index in Hi , whereas
+Lhxi has finite index in Hi . Since Hi has finite index in G and x is a power of g, the
+subgroup hL, gi has finite index in G. Thus g ∈/ λ(G). No nontrivial element belongs to
+λ(G), so ψ(G) = 1.                                                                   
+
+                                            4. Knot groups
+Theorem 4.1. Let K ⊂ S 3 be a knot and let GK = π1 (S 3 \ νK). Then
+                                                ψ(GK ) = 1.
+Proof. Knot groups are finitely generated and torsion-free. The unknot group is infinite
+cyclic, for which the conclusion is immediate. For every nontrivial knot, the virtual-
+specialness results for hyperbolic, graph-manifold-with-boundary, and mixed 3-manifold
+pieces imply that GK is virtually special [2, 4, 5]; virtually special groups are virtually
+RFRS [1]. Theorem 3.1 applies.                                                           
+Corollary 4.2. As a consequence of Theorem 4.1, the answer to both parts of Kourovka
+Problem 19.1 is affirmative. In fact the conclusion holds for all knot groups, not only
+groups of composite or cable knots.
+
+                                             5. Perspective
+  The proof separates the problem into a purely algebraic statement and a geometric
+source of RFRS chains. Consequently Theorem 3.1 applies well beyond knot groups:
+every finitely generated torsion-free virtually RFRS group has trivial near Frattini
+subgroup.
+
+                                               References
+    [1] I. Agol, Criteria for virtual fibering, J. Topol. 1 (2008), 269–284.
+    [2] F. Haglund and D. T. Wise, Special cube complexes, Geom. Funct. Anal. 17 (2008), 1551–1620.
+    [3] E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka
+        Notebook, No. 21, Novosibirsk, 2026; arXiv:1401.0300.
+    [4] P. Przytycki and D. T. Wise, Graph manifolds with boundary are virtually special, J. Topol. 7
+        (2014), 419–435.
+    [5] P. Przytycki and D. T. Wise, Mixed 3-manifolds are virtually special, J. Amer. Math. Soc. 31 (2018),
+        319–347.
+

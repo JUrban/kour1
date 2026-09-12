@@ -1,0 +1,879 @@
+     Journal of Topology Advance Access published September 1, 2013
+
+
+                           Journal of Topology (2013) Page 1 of 17   e 2013 London Mathematical Society
+                                                                     C
+
+                                                                               doi:10.1112/jtopol/jtt009
+
+
+
+
+          Graph manifolds with boundary are virtually special
+
+                              Piotr Przytycki and Daniel T. Wise
+
+                                              Abstract
+   Let M be a graph manifold. We prove that fundamental groups of embedded incompressible
+   surfaces in M are separable in π1 M , and that the double cosets for crossing surfaces are also
+   separable. We deduce that if there is a ‘suﬃcient’ collection of surfaces in M , then π1 M is
+   virtually the fundamental group of a special non-positively curved cube complex. We provide
+   a suﬃcient collection for graph manifolds with boundary, thus proving that their fundamental
+   groups are virtually special, and hence linear.
+
+
+
+                                           1. Introduction
+A graph manifold is an oriented compact connected 3-manifold that is irreducible and has only
+Seifert-ﬁbred pieces in its JSJ decomposition. Hempel proved that the fundamental groups of
+all Haken 3-manifolds, in particular all graph manifolds, are residually ﬁnite [9, Theorem 1.1].
+Throughout the article we assume that a graph manifold is not a single Seifert-ﬁbred space
+and not a Sol manifold. For background on graph manifolds we refer to the survey article by
+Buyalo and Svetlov [3].
+   We are interested in separability properties of surfaces properly embedded in graph
+manifolds. A subgroup F of a group G is separable if, for each g ∈ G − F , there is a ﬁnite
+index subgroup H of G with g ∈   / HF . Let S be an oriented incompressible surface embedded
+in a graph manifold M . Then π1 S embeds in π1 M by the loop theorem.
+
+
+  Theorem 1.1. Let M be a graph manifold (with or without boundary). Let S be an
+oriented incompressible surface embedded in M . Then π1 S is separable in π1 M .
+
+
+  More generally, consider subgroups F1 , F2 ⊂ G. The double coset F1 F2 is separable if, for
+each g ∈ G − F1 F2 , there is a ﬁnite index subgroup H of G with g ∈
+                                                                   / HF1 F2 .
+  We identify the group of covering transformations of the universal cover M̃ of M with π1 M .
+
+
+   Theorem 1.2. Let M be a graph manifold. Let S, P ⊂ M be oriented incompressible
+surfaces whose intersections with each block are horizontal or vertical (see Section 2). Let
+S̃, P̃ ⊂ M̃ be intersecting components of the preimages of S, P . Then Stab(S̃) Stab(P̃ ) is
+separable in π1 M .
+
+
+  We apply Theorems 1.1 and 1.2 to obtain the following corollary.
+
+
+
+  Received 19 November 2011; revised 28 November 2012.
+  2010 Mathematics Subject Classification 20F65 (primary).
+  Piotr Przytycki was partially supported by MNiSW grant N201 012 32/0718 and the Foundation for Polish
+Science. Daniel T. Wise was supported by NSERC.
+Page 2 of 17               PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+  Corollary 1.3. Let M be a graph manifold with non-empty boundary. Then π1 M is
+virtually the fundamental group of a special cube complex.
+
+   A special cube complex is a non-positively curved cube complex that admits a local isometry
+into the Salvetti complex of a right-angled Artin group (see [6, 7]). As a consequence, the
+fundamental groups of special cube complexes (which are also called special) are subgroups
+of right-angled Artin groups. The latter have various outstanding properties. To mention just
+a few, they are linear [10] and residually torsion-free nilpotent [5]. Moreover, they virtually
+satisfy Agol’s RFRS condition [1].
+   It was proved that fundamental groups of closed hyperbolic 3-manifolds are virtually
+special [2, 18]. A relative version of this theorem says that the fundamental groups of
+hyperbolic 3-manifolds with boundary are virtually special as well [18]. Our theorem treats
+the complementary case, with an eye towards eventually analysing the case of manifolds with
+both hyperbolic and Seifert-ﬁbred pieces [15].
+   The class of graph manifolds with boundary has been studied by Wang and Yu who prove
+[17, Theorem 0.1] that they all virtually ﬁbre over the circle. (Note that we do not exploit that
+result in our article.) A closed graph manifold might not virtually ﬁbre [13]. Hence, by Agol’s
+virtual ﬁbring criterion [1] such a manifold cannot have virtually special fundamental group.
+Thus some restriction is needed in Corollary 1.3.
+   In fact, we have recently learned that independently Yi Liu has proved [12, Theorem 1.1]
+that the graph manifolds with virtually special fundamental groups are exactly the ones that
+admit a non-positively curved Riemannian metric. It was proved by Leeb [11, Theorem 3.2]
+that graph manifolds with boundary admit a non-positively curved Riemannian metric (with
+geodesic boundary). Hence our Corollary 1.3 is a special case of the theorem of Liu.
+   In order to obtain Corollary 1.3 we prove, using Theorems 1.1 and 1.2, the following criterion
+involving a ‘suﬃcient’ collection of surfaces. (For deﬁnitions see Section 2.)
+
+
+  Definition 1.4. Let S be a collection of incompressible oriented surfaces embedded in a
+graph manifold M that are not ∂-parallel annuli and satisfy the property that the intersection of
+each surface from S with each block of M is vertical or horizontal. We say that S is suﬃcient if:
+  (1) for each block B ⊂ M and each torus T ⊂ ∂B, there is a surface S ∈ S such that S ∩ T
+      is non-empty and vertical with respect to B;
+  (2) for each block B ⊂ M there is a surface S ∈ S such that S ∩ B is horizontal.
+
+   Note that property (1) automatically implies property (2). Indeed, let B0 be a block and let
+B1 be any adjacent block. Let T ⊂ B0 ∩ B1 . By (1) there is a surface S ∈ S such that S ∩ T
+is vertical in B1 . Then S ∩ B0 is horizontal.
+   We have the following criterion.
+
+
+   Theorem 1.5. Assume that a graph manifold M admits a suﬃcient collection S. Then
+π1 M is virtually special.
+
+
+  Once we prove Theorem 1.5, in order to derive Corollary 1.3, it remains to construct a
+suﬃcient collection for graph manifolds with boundary.
+  In the course of his proof [12, Lemma 4.7], Liu constructs a set of cohomology classes
+giving rise to a suﬃcient collection. Hence, combining this with Theorem 1.5, one can get
+an alternate argument for Liu’s theorem that all graph manifolds admitting a non-positively
+curved Riemannian metric have virtually special fundamental groups. Liu suggests to us that
+               GRAPH MANIFOLDS WITH BOUNDARY ARE VIRTUALLY SPECIAL                   Page 3 of 17
+
+
+cut-and-paste operations on the surfaces obtained in [3, Section 5.5.3] also yield a suﬃcient
+collection.
+  The article is organized as follows: In Section 2, we discuss notation. In Section 3, we
+derive Corollary 1.3 from Theorems 1.1 and 1.2. More precisely, we ﬁrst prove Theorem 1.5
+and then prove that graph manifolds with boundary virtually have a suﬃcient collection
+(Proposition 3.1). In Section 4, we prepare the background for the proofs of Theorem 1.1
+in Section 5 and Theorem 1.2 in Section 6.
+
+
+                                          2. Notation
+A graph manifold will be denoted by M . The JSJ tori decompose M into pieces called blocks
+(denoted usually by Mv or B). By passing to a ﬁnite degree cover [13, Proposition 4.4], we can
+assume that all the blocks are products Mv = S 1 × Fv , where Fv is an oriented surface with
+at least two boundary components and non-zero genus. Then M is called simple. The induced
+quotient map π1 Mv → π1 Fv does not depend on the choice of the product structure.
+  Let S be an oriented incompressible surface embedded in M . An elevation S  → M  of the
+embedding S → M is an embedding of a cover S  of S into a cover M  of M such that the
+diagram below commutes. (A lift is an elevation with S  = S.)
+                                          S     > M
+
+                                           ∨      ∨
+                                           S     >M
+   The surface S can be homotoped so that each component of S ∩ Mv (called a piece) is either
+vertical (ﬁbred by the circles of the Seifert ﬁbration and essential) or horizontal (transverse to
+the ﬁbres thus covering Fv ). The only exception is when S is a ∂-parallel annulus. We discuss
+this case separately in Remark 6.1.
+   Since S is embedded, for each block Mv the components of S ∩ Mv are either all horizontal
+or all vertical, or else S ∩ Mv is empty. We accordingly call the block S-horizontal, S-vertical
+or S-empty. When the surface S in question is understood, we simply call the block horizontal,
+vertical or empty.
+   We shall consider (possibly non-compact) covers M  → M of graph manifolds. The connected
+components in M  of the preimage of blocks of M will also be called blocks. When a speciﬁed
+elevation of S crosses a block Mv → Mv , then this block will be called horizontal or vertical if
+Mv is such. Other blocks of M  will be called empty.
+
+
+                                         3. Cubulation
+   Proof of Theorem 1.5. Complete the collection S to S  by adding all JSJ tori, and adding
+a collection of vertical tori in each block Mv whose base curves on the surface Fv ﬁll Fv . With
+respect to some hyperbolic metric on Fv this means that the complementary regions of the
+union of the geodesic representatives of the base curves are discs or annular neighbourhoods
+of the boundary. Note that if we add to that family of curves the base arcs of the annuli
+guaranteed by property (1) of a suﬃcient collection, all the complementary regions become
+discs. We call such a family strongly ﬁlling.
+   After a homotopy we can assume that the surfaces in S  are pairwise transverse. Each
+elevation of an incompressible surface from S  to the universal cover M̃ of M splits M̃ into
+two components (up to a set of measure 0). This gives M̃ the structure of a ‘space with walls’
+(see [4] or [14]). We can consider the action of π1 M on the associated dual CAT(0) cube
+complex X.
+Page 4 of 17                PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+   We claim that π1 M acts freely on X. To justify this, pick g ∈ π1 M . If g does not stabilize
+some block B̃ ⊂ M̃ , then it acts freely on the tree that is the underlying graph of the graph
+manifold structure of M̃ . Hence g also acts freely on X, since we have included the JSJ tori
+in S  . Otherwise, suppose that g belongs to the stabilizer of B̃ identiﬁed with π1 B for some
+block B ⊂ M . If g is not central in π1 B, then by the strong ﬁlling property for the vertical
+pieces within B, the element g acts freely on the tree that is dual to the preimage in B̃ of one
+of the pieces. Since every elevation of a surface in S  to M̃ has connected intersection with B̃,
+this implies that g acts freely on X. Otherwise, g is central in π1 B and the claim follows from
+the existence of a horizontal piece in B among the surfaces in S  (property (2) of a suﬃcient
+collection). Note that in most cases the action of π1 M on X is not cocompact.
+   We now invoke [7, Theorem 4.1], which is a criterion for π1 M \ X to be virtually special. In
+the case of a cube complex X arising from a collection S  of compact π1 -injective surfaces in
+a 3-manifold M , this criterion is satisﬁed when:
+  (1) S  is ﬁnite;
+  (2) for each surface S ∈ S  , in the π1 S cover M S = π1 S \ M̃ of M , there are only ﬁnitely
+      many elevations of surfaces in S  disjoint from S, but not separated from S by another
+      elevation of a surface from S  ;
+  (3) for each S ∈ S  the subgroup π1 S is separable in π1 M ;
+  (4) for each pair of intersecting elevations S̃, P̃ ⊂ M̃ of S, P ∈ S  , the double coset
+      Stab(S̃) Stab(P̃ ) is separable in π1 M .
+  Condition (1) is immediate; conditions (3) and (4) are supplied by Theorems 1.1 and 1.2. It
+remains to discuss condition (2):
+  Fix S ∈ S  and let P S be an elevation of a surface in S  to the π1 S cover M S of M . Assume
+that P S is disjoint from (the lift of) S but not separated from S by another elevation of a
+surface from S  . Then P S must intersect at least one (of the ﬁnitely many) block B of M S
+intersecting S ⊂ M S (otherwise an elevation of a JSJ torus separates S and P S ). We ﬁx the
+block B. Assume ﬁrst that P S ∩ B is horizontal and that a component of P S ∩ B projects to
+a speciﬁed piece of the ﬁnitely many pieces of S  . Then there can be at most 2 such P S , since
+they are all nested.
+  Now assume that P S ∩ B is vertical. Thus S ∩ B is also vertical. The entire conﬁguration
+can then be analysed using the base curves on the base surface F of B. For a strongly ﬁlling
+family of curves, it is easy to check that each pair of their elevations to the universal cover of
+F not separated by a third one has to be at a uniformly bounded distance. Hence there are
+again only ﬁnitely many possible P S . This concludes the argument for condition (2).
+  Hence all the conditions of the virtual specialness criterion above are satisﬁed and the cube
+complex π1 M \ X is virtually special.
+
+
+  As an application, we will consider graph manifolds with boundary.
+
+
+  Proposition 3.1. A graph manifold M with non-empty boundary has a ﬁnite cover with
+a suﬃcient collection.
+
+
+  Note that combining Proposition 3.1 with Theorem 1.5 yields Corollary 1.3.
+  In the proof of Proposition 3.1 we will need the following lemma.
+
+
+  Lemma 3.2 (version of [17, Lemma 1.1]). Let T1 , . . . , Tn be the boundary components of
+a block Mv . Assume that we are given families of disjoint, identically oriented circles C1 ⊂
+T1 , . . . , Cn−1 ⊂ Tn−1 such that the oriented intersection number between Ci and the vertical
+                GRAPH MANIFOLDS WITH BOUNDARY ARE VIRTUALLY SPECIAL                       Page 5 of 17
+
+
+
+
+                      Figure 1. Bases of Ae in common Mw from diﬀerent i.
+
+
+
+ﬁbre is non-zero and independent
+                         n      of i. Then there is a family of disjoint, identically oriented
+circles Cn ⊂ Tn such that i=1 Ci is the boundary of an oriented horizontal surface embedded
+in Mv .
+
+
+  Proof of Proposition 3.1. Let Γ be the underlying graph of M , i.e. the graph dual to the JSJ
+decomposition. A vertex w of Γ is called a boundary vertex if its block Mw has a torus boundary
+component contained in ∂M . Note that a boundary vertex exists since ∂M is non-empty.
+  We ﬁrst pass to a ﬁnite cover of M that is simple (see Section 2). Moreover, we shall pass
+to a ﬁnite cover whose underlying graph Γ has the following property:
+  (antennas): For each pair of adjacent vertices v0 , v1 ∈ Γ there is an embedded edge path
+(v0 , v1 , v2 , . . . , vn ) such that:
+   (i) the subpath (v1 , v2 , . . . , vn ) is a full subgraph (that is, induced subgraph) of Γ;
+  (ii) vn is a boundary vertex.
+   We will ﬁrst construct a suﬃcient collection under the assumption that (antennas) property
+holds. We later explain how to pass to a cover satisfying (antennas).
+   As discussed in the introduction, it suﬃces to obtain property (1) of a suﬃcient collection.
+Let B = Mv0 be a block and T be a torus in its boundary. Let C0 be the circle on T that
+is vertical with respect to B. If T is a boundary torus of the whole M , then we put n = 0,
+otherwise we deﬁne v1 so that Mv1 is the block distinct from Mv0 containing T . Applying
+(antennas), we obtain an edge path satisfying (i) and (ii). We will ﬁnd a properly embedded
+surface Sn intersecting T along circles in the direction of C0 .
+   For i = 0 to n, we inductively deﬁne surfaces S0 ⊂ · · · ⊂ Si ⊂ · · · ⊂ Sn embedded in M , but
+not necessarily properly: Si might have boundary components in Mvi ∩ Mvi+1 .
+   We deﬁne the surface S0 to be a vertical annulus in B = Mv0 joining T to itself, not separating
+Mv0 (this uses that M is simple). If n = 0, then we are done.
+   Otherwise, let i ⩾ 1 and assume that Si−1 has already been constructed but is not proper.
+Let Ci−1 denote one of the boundary circles of Si−1 in Mvi−1 ∩ Mvi . If Ci−1 is vertical in Mvi ,
+then we can complete Si−1 immediately to Sn by adding several vertical annuli in Mvi .
+   Otherwise, let E be the family of all edges adjacent to vi , distinct from the edges joining it
+to vi−1 and vi+1 (if it is deﬁned). Since by (antennas) property the path (vj )nj=1 is full, all the
+edges in E join vi to a vertex outside the path (vj )nj=1 . Similarly as we have done for the edge
+(v1 , v0 ), for each edge e = (vi , w) ∈ E we take a vertical annulus Ae in Mw joining the boundary
+torus of Mw corresponding to e to itself. We require again that Ae does not separate Mw and
+because of that we can take it disjoint from all the annuli in Mw constructed for smaller values
+of i, assigned to other boundary components (see Figure 1).
+   The annuli Ae specify circles Ce on the tori Mw ∩ Mvi . Thus far, for all but one (or all if
+i = n) boundary tori of Mvi that are not in the boundary of M , we have constructed non-
+vertical circles Ci−1 or Ce . For all the boundary tori K of M in Mvi , except for one (call it Q)
+when i = n, we pick arbitrary horizontal circles CK .
+   By Lemma 3.2, if we take appropriate orientations on the circles Ci−1 , Ce , CK and we take
+appropriately many copies, we can ﬁnd an oriented circle Ci on the remaining boundary torus
+Page 6 of 17                 PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+
+                                     Figure 2. The surface S2 .
+
+
+
+
+                                  Figure 3. The graphs Γ and Γ̂.
+
+
+of Mvi (connecting to Mvi+1 , or being Q), such that appropriately many copies of Ci together
+with the copies of Ci−1 , Ce and CK bound an embedded horizontal surface Hi .
+   Taking appropriately many copies of Ae , Si−1 and Hi , we form the surface Si . If it is non-
+orientable, we replace it by the boundary of its regular neighbourhood.
+   Inductively, we arrive at the required surface Sn needed for property (1) of a suﬃcient
+collection; see Figure 2.
+   It remains to explain how to obtain property (antennas). Fullness is automatic if:
+    (1) Γ has no double edges or edges joining a vertex to itself (this is attained using residual
+        ﬁniteness of π1 Γ) and
+    (2) the path (vj )nj=1 is always chosen to be geodesic.
+   It thus suﬃces to pass to Γ where, for each vertex v1 , there is a geodesic terminating at a
+boundary vertex vn that does not pass through a prescribed neighbour v0 of v1 .
+   To do this, we take the following degree 2k cover M̂ of M , where k is the number of blocks of
+M . The cover M̂ is deﬁned by the mapping of H1 (M, Z) into Zk2 determined by the cohomology
+classes of closed non-separating vertical tori, one in each of the k blocks. Let Γ̂ be the underlying
+graph of the graph manifold M̂ ; see Figure 3.
+   Fix vertices v0 , v1 ∈ Γ̂ and let γ be a geodesic path in Γ̂ from v1 to a boundary vertex vn . If γ
+passes through v0 , then we alter it as follows. Let g denote the non-trivial element of the group
+of covering transformations of M̂ ﬁxing v1 . Then g maps γ to a geodesic path disjoint from v0
+terminating at a boundary vertex. This shows that M̂ satisﬁes (antennas) and completes the
+proof of Proposition 3.1.
+
+  We record the following consequence of the proof of Proposition 3.1, which will be
+used in [15].
+
+
+   Corollary 3.3. Let M be a graph manifold with non-empty boundary. There exists a
+ﬁnite cover M̂ of M such that, for each circle C0 in a boundary torus T ⊂ M̂ , there is an
+incompressible surface S embedded in M̂ that is not a ∂-parallel annulus with S ∩ T consisting
+of a non-empty set of circles parallel to C0 .
+               GRAPH MANIFOLDS WITH BOUNDARY ARE VIRTUALLY SPECIAL                   Page 7 of 17
+
+
+                                 4. Separability: preliminaries
+This section prepares the background for the proofs of Theorems 1.1 and 1.2.
+
+   Hempel’s theorem. We begin by discussing consequences of Hempel’s theorem. The results
+of this subsection follow also immediately from [8, Theorem 4.1].
+
+
+  Theorem 4.1 (special case of [9, Theorem 1.1]).       Fundamental groups of graph manifolds
+are residually ﬁnite.
+
+  Corollary 4.2. If T is an incompressible vertical torus in a block of a simple graph
+manifold M, then π1 T is separable in π1 M . If T is a JSJ or boundary torus, then any ﬁnite
+index subgroup of π1 T is separable in π1 M .
+
+
+  The proof of Corollary 4.2 uses characteristic covers. The n-characteristic cover of a manifold
+B is the ﬁnite cover corresponding to the intersection of all subgroups of π1 B of index n. For
+example, the n-characteristic cover of a torus T corresponds to nZ × nZ ⊂ Z × Z = π1 T . If
+B is a simple block, then since it retracts onto its boundary tori, its n-characteristic cover
+restricts to n-characteristic covers over its boundary tori.
+
+   Proof of Corollary 4.2. The group π1 T is separable in π1 M since it is a maximal abelian
+subgroup and π1 M is residually ﬁnite. A ﬁnite index subgroup H ⊂ π1 T = Z × Z contains
+some nZ × nZ. Hence it suﬃces to consider a ﬁnite cover M  of M formed by gluing
+n-characteristic covers of the blocks. Since nZ × nZ is separable in π1 M  , we have that H
+is separable in π1 M .
+
+  We now prove the analogous result for annuli.
+
+
+  Corollary 4.3. Let T be a JSJ or boundary torus in a graph manifold M . Then every
+cyclic subgroup of π1 T is separable in π1 M .
+
+
+  Proof. Let Z be a cyclic subgroup of π1 T and let g ∈ π1 M − Z. There is a ﬁnite index
+subgroup H ⊂ π1 T containing Z, but not g. We apply Corollary 4.2 to H.
+
+  Corollary 4.2 has two further consequences.
+
+
+   Corollary 4.4. Let S ⊂ M be an incompressible surface in a graph manifold. Then there
+is a ﬁnite cover of M where each elevation of S is straight, in the sense that its vertical annular
+pieces always join two distinct boundary components of the block.
+
+
+   Corollary 4.5. Let γ be a path in a graph manifold M such that its lift γ̃ to the universal
+cover M̃ passes through as few blocks of M̃ as possible in its path-homotopy class. Then there
+is a ﬁnite cover M  of M , where γ  (the quotient of γ̃) does not pass through the same JSJ
+torus more than once.
+
+
+  Omnipotency. In the proof of Theorem 1.2, we will need the following ‘omnipotency’
+lemma.
+Page 8 of 17                PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+
+                Figure 4. β, β2 and the lifts of α to Fd and F ∗ with d1 = 1, d2 = 2.
+
+
+
+   Lemma 4.6. Let F be a surface of non-zero genus. Assign a number ni > 0 to each boundary
+component Ci of F . Then there is a ﬁnite cover F ∗ of F having degree ni on each component
+of the preimage of Ci .
+
+
+  Proof. Since F has non-zero genus, there is a non-separating simple closed curve β ⊂ F .
+Take the double cover Fd determined by the cohomology class [β] ∈ H 1 (F, Z2 ). Each boundary
+component Ci of F lifts to a pair of boundary components Ci1 , Ci2 of Fd . Choose a family of
+                                   1     2                  ∗
+               arcs βi joining Ci to Ci . Take the cover F determined
+disjoint embedded                                                           by the mapping of
+H1 (Fd , Z) to Zni determined by the cohomology classes [βi ] ∈ H 1 (Fd , Zni ).
+
+
+   Remark 4.7. There is an extra feature to the construction in the proof of Lemma 4.6. If
+α ⊂ F is an arc joining two distinct boundary components of F , then no two lifts of α to F ∗
+join the same pair of boundary components; see Figure 4.
+
+
+   Surface-injective covers. In the proof of Theorems 1.1 and 1.2, we will need ‘surface-
+injective’ covers. As preparation, we discuss the structure of the following inﬁnite cover. As
+usual, we assume that S ⊂ M is an incompressible oriented surface embedded in a graph
+manifold M , and that each non-empty intersection of S with a block of M is either vertical or
+horizontal.
+
+
+   Definition 4.8. Let M S denote the inﬁnite cover π1 S \ M̃ of S corresponding to π1 S ⊂
+π1 M . Let us describe the topology of non-empty blocks of M S . For each horizontal component
+S0 of S ∩ Mv , there is in M S an associated horizontal block MvS0 ∼
+                                                                   = S0 × R. Similarly, for each
+vertical component S0 of S ∩ Mv , there is in M S an associated vertical block MvS0 ∼= S 1 × F̃v .
+                                   S0                             1
+The annulus S0 embeds inside Mv as a product of the factor S and a proper arc on F̃v .
+
+
+  Definition 4.9. Let S be a surface in M . A ﬁnite cover M  of M is called S-injective
+with respect to the JSJ tori if S lifts to M  and S ∩ B  is connected for each block B  of M  .
+Moreover, we require that each horizontal component of S ∩ B  maps with degree 1 onto the
+base surface of B  . We allow M  = M .
+
+
+  In particular, M  arises from M S by quotienting each non-empty block separately (though
+empty blocks are identiﬁed). Observe that the intersection of the lift of S with each JSJ
+or boundary torus of M  is connected. The property of being S-injective is not preserved
+under passage to covers. Nevertheless, in Construction 4.12 we provide (high-degree) S-injective
+covers. We need the following terminology and lemma.
+               GRAPH MANIFOLDS WITH BOUNDARY ARE VIRTUALLY SPECIAL                  Page 9 of 17
+
+
+   Definition 4.10. A semicover of a graph manifold M with respect to the JSJ tori is a
+graph manifold M̄ together with a local embedding M̄ → M restricting to a covering map over
+each JSJ torus and over each open block. We say that the semicover is ﬁnite if M̄ is compact.
+Then M̄ → M can only fail to be a covering map at a torus T̄ of ∂ M̄ that covers a JSJ torus
+of M . We refer to such a T̄ as a halt torus.
+
+  Lemma 4.11. Let p : M̄ → M be a ﬁnite semicover. Suppose that all halt tori of M̄ map
+homeomorphically onto JSJ tori of M . Then we can embed M̄ in a graph manifold M  such
+that the semicover p extends to a ﬁnite cover M  → M .
+
+
+  Proof. For each Mv let dv be the degree of the (possibly disconnected) cover p−1 (Mv ) →
+Mv . Similarly, let dv,w be the degree of p−1 (T ) → T for the torus T = Mv ∩ Mw . Let
+D = maxv,w {dv,w }. For each v, take D − dv copies of Mv and glue these copies to M̄ to
+form M  .
+
+
+  Construction 4.12. Let S be a straight incompressible surface in M (see Corollary 4.4)
+and let N > 0 be divisible by all the degrees of (possibly disconnected) covering maps S ∩ Mv →
+                                     S
+Fv . Then there is a ﬁnite cover MN    of M which is
+  (1) S-injective with respect to the JSJ tori and
+                                                  S
+  (2) such that each JSJ or boundary torus of MN    intersected by the lift of S maps to a torus
+      T of M with degree N/|S ∩ T |.
+
+
+  Here |S ∩ T | denotes the number of connected components of S ∩ T . The construction also
+works if S is disconnected and we will need this in [16].
+
+   Proof. Consider a horizontal block Mv . Let n = |S ∩ Mv |. Let S0 be a component of S ∩ Mv
+(they are all parallel). We take the unique degree N/n cover of Mv to which S0 lifts. It is the
+quotient of the MvS0 block of M S (see Deﬁnition 4.8) by the N/nth power of the generator of
+covering transformations. By the divisibility hypothesis, the result of this over the boundary
+of Mv is that: if there are k components of intersection of S with a boundary torus, then,
+in the cover, we get k tori components projecting with degree N/k. Hence, for two adjacent
+horizontal blocks we have a matching between the elevations of the JSJ tori crossed by (the
+lifts of) the various S0 .
+   Now consider a vertical block Mv . Fix a component S0 of S ∩ Mv . Let Fv be the double cover
+of Fv determined by the Z2 -cohomology class of a non-separating simple closed curve on Fv .
+Each boundary component C of Fv is covered in Fv by a pair C1 , C2 . Suppose that S0 connects
+tori T, Q with base boundary circles of Fv denoted by C T , C Q , respectively. Let t = |S ∩ T |
+and q = |S ∩ Q|. Pick disjoint embedded arcs θ and ω on Fv joining C1T with C2T and C1Q with
+C2Q , respectively. Take N/t − 1 extra copies of Fv containing copies of θ and N/q − 1 extra
+copies of Fv containing copies of ω. Cutting and regluing along these arcs in cyclic order gives
+a cover of Fv whose boundary components project homeomorphically, except two degree N/t
+covers of C T and two degree N/q covers of C Q . To get a cover of Mv , we form the product
+with S 1 .
+   We now take one such covering block for each component S0 of S ∩ Mv for vertical Mv and
+two blocks described above for horizontal Mv . All boundary components match except that
+there are some hanging boundary components giving rise to halt tori.
+   This concludes the construction of a semicover. Note that the lift of S crosses all blocks
+of this semicover that cover vertical blocks of M and half of the blocks covering a horizontal
+Page 10 of 17                PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+
+                     Figure 5. The intersection q needs to be removed from K.
+
+
+
+one. This semicover satisﬁes the hypothesis of Lemma 4.11. We use it to obtain a (non-unique)
+                   S
+S-injective cover MN .
+
+
+                                    5. Separability of a surface
+   Proof of Theorem 1.1. We can assume that M is simple (see Section 2) and S is straight
+(see Corollary 4.4).
+   If S is a vertical torus or annulus contained in a single block, then π1 S is separable by
+Corollaries 4.2 and 4.3. Otherwise, S contains a horizontal piece. Choose the basepoint m̃ of
+the universal cover M̃ of M in the interior of a horizontal piece of the elevation S̃ of S to M̃
+stabilized by π1 S ⊂ π1 M . Let g ∈ π1 M − π1 S and let γ̃ be a path in M̃ representing g, that
+is, joining m̃ to g m̃. Then γ̃ does not end on S̃. Our goal is to ﬁnd a ﬁnite cover with the same
+property.
+   We can assume that γ̃ crosses as few elevations of JSJ tori as possible in its homotopy class.
+Let B̃ denote the last non-empty block of M̃ entered by γ̃ (when all blocks crossed by γ̃ are
+non-empty, we take B̃ to be the last one).
+   We ﬁrst consider the case where B̃ is the last block of M̃ entered by γ̃. Then B̃ is horizontal
+(by the choice of m̃). In the quotient B S ⊂ M S of B̃, the projection of the endpoint of γ̃ is
+still disjoint from S and the same is true in a suﬃciently large cyclic quotient of the block B S .
+                                                                         S
+This quotient coincides with an appropriate block of the cover MN             from Construction 4.12.
+                                                S
+Hence, for N suﬃciently large, the cover MN is as desired.
+   We now consider the case where B̃ is not the last block entered by γ̃, in which case B̃ is
+vertical. By Corollary 4.5, we can pass to a ﬁnite cover M  where the projection γ  of γ̃ does not
+backtrack, that is, γ  does not cross the same JSJ torus twice. This property will be preserved
+under taking further covers.
+   Let S  denote the elevation of S to M  . For the separability of π1 S we will prove that γ 
+does not end in S  within M  or after passing to a further ﬁnite cover.
+   Let T̃ denote the universal cover of the JSJ torus through which γ̃ leaves B̃. Let T  be its
+quotient in M  . Our ﬁrst step is to guarantee that, in M  (or its ﬁnite cover), the surface S 
+does not cross T  .
+   The quotient block B  ⊂ M  of B̃ is vertical. Let p and q denote the projections to B  of the
+ﬁrst and last point of the intersection of γ̃ with B̃. Let S0 be the quotient in B  of S̃ ∩ B̃ (there
+might be some other components of S  ∩ B  ). Let K be the JSJ torus crossed by S0 other than
+                                                                         S 
+the one containing p. Any further S  -injective cover (for example, MN        from Construction 4.12)
+satisﬁes our condition S  ∩ T  = ∅ unless q ∈ K (that is, T  = K); see Figure 5. In that case,
+we ﬁrst use Corollary 4.2 to pass to a cover where (keeping the same notation) the point q
+does not lie in K, and so S0 does not cross T  . There might still be an accidental component
+of S  ∩ B  intersecting T  . We can remove it by passing to an S  -injective cover.
+                GRAPH MANIFOLDS WITH BOUNDARY ARE VIRTUALLY SPECIAL Page 11 of 17
+
+
+
+  Summarizing, we have constructed a cover M  where T  is disjoint from S  . It suﬃces now to
+pass to a degree 2 cover determined by the cohomology class [T  ] ∈ H 1 (M  , Z2 ). In that cover
+the portion of γ  after q is contained entirely in the union of empty blocks. In particular, its
+end lies outside the appropriate lift of S  , as desired.
+
+
+
+                             6. Separability of intersecting surfaces
+Outline of the argument. Let S̃ and P̃ 0 be intersecting elevations of S and P to the universal
+cover M̃ of M . We reserve the notation P̃ for a diﬀerent elevation of P . By our hypothesis,
+S̃ ∩ P̃ 0 is non-empty, and so we can choose the basepoint m̃ ∈ S̃ ∩ P̃ 0 .
+   We ﬁx g ∈ π1 M − Stab(S̃) Stab(P̃ 0 ) and take a path γ̃ starting at m̃ representing g in M̃ .
+Let P̃ denote the elevation of P through the terminal point g m̃ of γ̃. We aim to ﬁnd a ﬁnite
+quotient of M̃ , where the projections of S̃ and P̃ are ‘disjoint’ in the sense that they do not
+intersect at a basepoint-translate.
+   The main object we work with is the ‘core’ M̄ ⊂ M̃ consisting of blocks simultaneously
+intersecting S̃ and P̃ . In Step 1, we prove that, for each π1 S orbit in M̄ of a core block, we
+can quotient it to a ﬁnite block with ‘disjoint’ quotients of S̃ and P̃ .
+   In Step 2, we use Step 1 to show how to simultaneously quotient the whole core (or rather
+its extension) to a ﬁnite quotient M̂  where the images of S̃ and P̃ are ‘disjoint’ (Step 2(i)).
+Moreover, we arrange that the images of S̃ and P̃ never simultaneously intersect the same halt
+torus of the semicover (see Deﬁnition 4.10) M̂  → M (Step 2(iii)). The semicover M̂  extends
+to a ﬁnite cover M  by Step 2(ii).
+   Finally, in Step 3, we use Step 2(iii) to pass to a further cover, where the quotients of S̃ and
+P̃ can meet only inside the image of the core. But this is excluded by Step 2(i).
+
+   Proof of Theorem 1.2. We choose m̃ ∈ S̃ ∩ P̃ 0 as in the outline of the argument. Without
+loss of generality, we can assume that if m̃ lies in a vertical piece of P̃ 0 , then it also lies in
+a vertical piece of S̃. We identify Stab(S̃) ⊂ π1 M with π1 S. Note that, by Corollary 4.4, by
+passing to a ﬁnite cover we can assume that S and P are straight. As usual, M can be also
+assumed to be simple and S-injective.
+   Let g ∈ / Stab(S̃) Stab(P̃ 0 ) and let γ̃ be a path representing g in M̃ as in the outline. We can
+assume that γ̃ traverses as few blocks of M̃ as possible.
+   Recall that S̃ is the elevation of S to M̃ passing through the initial point m̃ of γ̃, and P̃ is
+the elevation of P to M̃ passing through the terminal point g m̃ of γ̃. Our hypothesis on g says
+that S̃ and P̃ do not cross at any translate of the basepoint m̃ (we will refer to such a point
+or its quotient in an intermediate cover as a basepoint-translate). Our separability goal is to
+ﬁnd a ﬁnite cover of M with the same property.
+   The core M̄ of M̃ is the union of blocks intersecting both S̃ and P̃ (see Figure 6, but note
+that the core might consist of an inﬁnite number of blocks). Assume that the core is non-empty,
+we will consider the other case at the very end of the proof.
+   Let S̄ = S̃ ∩ M̄ and P̄ = P̃ ∩ M̄ . Let M̄ S be the manifold obtained from the core by
+identifying points in the same orbit of π1 S (this is not a genuine action on M̄ , only a partial
+one). In this identiﬁcation, we treat the core as an open manifold, so we do not identify
+boundary components whose adjacent core blocks are not identiﬁed.
+   Let P S be the quotient of P̄ in M̄ S and let Ŝ be the quotient of S̄ in M̄ S . Note that P S and
+Ŝ do not go through the same basepoint-translate. The notation Ŝ instead of S S is justiﬁed by
+the fact that Ŝ is in fact a lift of a ‘core’ subsurface of S. Note that though the map M̄ → M̄ S
+is not proper in the sense that a boundary component of M̄ might be mapped into the interior
+M̄ S , its restriction to P̄ → P S is proper (see Figure 7). Equivalently, boundary components of
+P̄ are mapped onto boundary components of P S .
+Page 12 of 17                PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+
+                                Figure 6. The core of M̃ is shaded.
+
+
+
+
+                                   Figure 7. P̄ → P S is proper.
+
+
+
+   Step 1: Let B S be a block in M̄ S covering a block B of M . Then B S factors through a
+ﬁnite cover B ∗ of B where quotients of P S and Ŝ still do not intersect at a basepoint-translate.
+Moreover, in the case where B S is Ŝ-vertical let K1 , K2 ⊂ ∂B S denote the cylinders intersected
+by Ŝ, and let K1∗ , K2∗ be their quotients in B ∗ , respectively. We require that any quotient piece
+of P S in B ∗ intersecting both K1∗ and K2∗ is a quotient of a piece in B S intersecting K1 and K2 .
+
+   Loosely speaking, in Step 1 we shall achieve separability at a single core block. Note that the
+ﬁrst property of the ﬁnite cover B ∗ in Step 1 is preserved by passing to a further cover that is
+a quotient of B S . In the construction that we will give, in the case where B S is P S -horizontal,
+also the property in the second assertion of Step 1 is invariant under passing to a further cover.
+
+  Proof of Step 1. First, assume that the block B S is P S -horizontal. Let S0 = Ŝ ∩ B S . First
+consider the case where S0 is vertical. Then there are only ﬁnitely many elevations of P ∩ B ⊂
+M to B S : their number is bounded by the degree of P ∩ B → F , where F is the base surface of
+B. The action of covering transformations of B on the universal cover of the block B S factors
+to an action on B S . As there are only ﬁnitely many elevations of P ∩ B to B S , a ﬁnite index
+subgroup of the group of covering transformations preserves all of them. We quotient by this
+subgroup to obtain a desired ﬁnite cover B ∗ of B.
+  Now consider the case where S0 is horizontal. Then the action of covering transformations
+on the universal cover of the block B factors to Z = c action on B S . The easy subcase is
+where one (hence any) elevation of P ∩ B to B S is non-compact (see Figure 8). Then, as in
+the previous case, there are only ﬁnitely many elevations of P ∩ B and we can choose a ﬁnite
+cover B ∗ obtained by quotienting by a subgroup ck that maps P S ∩ B S onto itself.
+                GRAPH MANIFOLDS WITH BOUNDARY ARE VIRTUALLY SPECIAL Page 13 of 17
+
+
+
+
+           Figure 8. Non-compact components of P S ∩ B S : cross-section by a cylinder.
+
+
+   The interesting subcase is where the elevations of P ∩ B to B S are compact. Let P0 be
+any component of P S ∩ B S . Let P be the maximal connected subsurface of P S containing
+P0 consisting uniquely of horizontal pieces. First consider the situation where P0 is properly
+contained in P ∩ B S . We will show that P S ∩ B S is invariant under some ck (as in the case of
+non-compact P0 ).
+   Note that the pieces of P ∩ B S might not lie in one c -orbit. However, we can extend this
+action to another cyclic action c ⊂ c on B S by homeomorphisms for which all the pieces of
+P ∩ B S lie in one orbit.
+   Assume that, for some k = 0, the translate ck P0 lies in P. Let Bi be a sequence of blocks
+of M̄ S with Pi ⊂ Bi a sequence of pieces in P connecting P0 to ck P0 . The action of c extends
+to all blocks Bi crossed by P (some might be Ŝ-vertical). Hence, for any n there is a sequence
+of pieces that are translates of Pi joining cn P0 to ck+n P0 . Thus cn P0 lies in P S if and only if
+ck+n P0 does; in other words, P S ∩ B is ck -invariant. Then, for some k  we have that P S ∩ B
+      
+is ck -invariant, as desired.
+   It remains to consider the situation where P0 equals P ∩ B S . Then, by the c-action argument
+above, the same is true for any choice of P0 in P S ∩ B S . Moreover, since there are only ﬁnitely
+many vertical pieces of P S in M̄ S with both boundary components in the interior of M̄ S ,
+only ﬁnitely many translate copies of P are joined together contributing to P S ∩ B S . We
+conclude that P S ∩ B S is compact. Then, for any suﬃciently large k, no element of ck maps
+a basepoint-translate in S0 onto a point in P S . This completes the argument for Step 1 under
+the assumption that the block B S is P S -horizontal. If B S is P S -vertical and Ŝ-horizontal, then
+we can take any cyclic quotient, since B S does not contain a basepoint-translate.
+   Finally, assume that B S is both P S -vertical and Ŝ-vertical. Let K1 , K2 be the boundary
+cylinders of B S crossed by Ŝ. By the deﬁnition of the core, except for the exceptional situation
+where the core is a single block and hence P S ∩ B S has just one component, each piece of
+P S ∩ B S intersects some Ki . By the c-action argument applied to adjacent (P S -horizontal)
+blocks of B S , for each i = 1, 2, the intersection P S ∩ Ki is either compact or periodic. Then,
+after quotienting B S by ﬁnite index subgroups of one, both or none of the stabilizers of Ki we
+obtain B̌, in which the quotient of P S is compact and still does not intersect Ŝ in a basepoint-
+translate. Let F̌ → F be the cover induced between the base surfaces of B̌ → B. Let Ci ⊂ ∂F
+be the images of Ki under B S → B → F . By the separability of π1 F̌ and π1 Ci π1 F̌ in π1 F , the
+cover B̌ quotients further to a desired cover B ∗ . This completes the argument for Step 1.
+
+   Let M̂ denote the quotient of M̄ (and hence M̄ S ) in M . However, if there is a JSJ torus K in
+M outside the image of the interior of M̄ but with both of its adjacent blocks within the image
+of M̄ , then we put in M̂ two copies of K, each compactifying one of the adjacent blocks. In
+other words, M̂ is contained in M only in the sense of manifolds open at the boundary. Since
+Page 14 of 17                  PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+M is S-injective, each block of M̂ is covered by exactly one block of M̄ S . We note, however,
+that M̄ S → M̂ is only an inﬁnite semicover.
+
+  Step 2: There is a ﬁnite semicover M̂  of M̂ through which the map M̄ → M̂ factors, with
+the following properties. Let Ŝ  , P̂  ⊂ M̂  be the extensions of the quotients of S̄, P̄ in M̂  to
+properly embedded connected surfaces mapping to S ∩ M̂ and P ∩ M̂ .
+    (i) Each block B  of M̂  is a further cover of a cover B ∗ satisfying Step 1. Moreover, the
+images of Ŝ  ∩ B  , P̂  ∩ B  in B ∗ are contained in the quotients of P S and Ŝ.
+   (ii) Over all boundary tori the semicover M̂  → M̂ is n!-characteristic (for some uniform
+n), that is, it corresponds to the subgroup n!Z × n!Z ⊂ Z × Z.
+  (iii) Each halt torus of the semicover M̂  → M intersects at most one of Ŝ  , P̂  .
+Moreover, M̂  is Ŝ  -injective.
+
+  Note that in view of Step 1, Step 2(i) implies immediately that Ŝ  and P̂  do not intersect
+at a basepoint-translate.
+
+   Proof of Step 2. The value n is the maximum of n needed to execute the following
+construction over each of the ﬁnitely many blocks of M̂ .
+   First suppose that B ⊂ M̂ is P -horizontal and S-horizontal. Take the cyclic cover B ∗
+guaranteed by Step 1. It may be taken with any degree n! for n suﬃciently large. To make the
+quotient to B characteristic on the boundary tori, we pass from B ∗ to a cover B  induced by
+any cover of S ∩ B of degree n! on each boundary component (use Lemma 4.6).
+   Now assume that B ⊂ M̂ is P -horizontal but S-vertical. Again take the cover B ∗ guaranteed
+by Step 1. By Lemma 4.6, it may be chosen to be degree n! on boundary tori for n suﬃciently
+large. In order to make the quotient to B characteristic on the boundary tori, we pass
+from B ∗ to a cyclic cover B  of degree n! determined by an arbitrary degree 1 horizontal
+surface.
+   In the case where the block B ⊂ M̂ is both P -vertical and S-vertical, ﬁnding convenient
+B ∗ will involve several steps. First of all, there is a cover B ∗ of B satisfying Step 1. Since we
+still want to replace B ∗ by a particular ﬁnite cover, in order to simplify the notation, we will
+assume that B already has the properties from Step 1.
+   By Lemma 4.6, for suﬃciently large n we get a ﬁnite quotient B ∗ of B S of degree n! on all
+boundary components over B. By Remark 4.7, the cover B ∗ satisﬁes the second assertion in
+Step 1. As before, to get a characteristic cover over the boundary tori, we pass to a cover B  of
+B ∗ , determined by an arbitrary element of H 1 (B ∗ , Zn! ) dual to a degree 1 horizontal surface
+in B ∗ .
+   The last case is where a block B is P -vertical and S-horizontal. Here n is arbitrary. We ﬁrst
+take the degree n! cyclic cover B ∗ of B determined by [S0 ] ∈ H 1 (B ∗ , Zn! ), where S0 = S ∩ B.
+Next we pass to a cover B  induced by any cover S0 → S0 of degree n! on each boundary
+component (use Lemma 4.6).
+   We take n suﬃciently large for both the construction in Step 1 and various applications
+of Lemma 4.6 with the above data to work. Then all blocks B have covers B  that are n!-
+characteristic on the boundary. Now we will take several copies of each B  . In each of these
+copies we distinguish one elevation Σc of (connected) S ∩ B. In the case where B is S-horizontal,
+the surface Σc is of degree 1 over the base surface of B  . Hence the intersection of Σc with each
+boundary torus is at most a single curve. We take the right number of copies of each B  so
+that the degree of the disconnected cover from the union of the copies of Σc to S ∩ B does not
+depend on B. We match up these blocks along boundary tori intersected by Σc , also matching
+the Σc , to form a connected semicover M̂  of M̂ . We pick any of the maps M̄ → M̂  mapping
+S̄ to the union Σ of the Σc . We will now verify that all the required properties of M̂  hold.
+                GRAPH MANIFOLDS WITH BOUNDARY ARE VIRTUALLY SPECIAL Page 15 of 17
+
+
+
+
+                                       Figure 9. Finding p.
+
+
+   Property (ii) is clear from the construction. Note that M̂  is Ŝ  -injective, since Ŝ  = Σ.
+Moreover, obviously, for each copy Bc in M̂  of a block B  that covers the quotient B ∗ of B S
+in M̄ S , we have the following. Under the identiﬁcation of Bc with B  , the projection to B ∗
+of the intersection Ŝ  ∩ Bc is contained in the projection to B ∗ of Ŝ ∩ B S . We now claim the
+same for P̂  : the projection to B ∗ of the intersection P̂  ∩ Bc is contained in the projection to
+B ∗ of P S ∩ B S .
+   Before we justify the claim, we note that although the map M̄ → M̂ factors through M̂  ,
+the image of P̄ in M̂  might be smaller than P̂  . It is a priori unclear where the extension P̂ 
+is located. We look for a surface Π for P̂  which replaces Σ for Ŝ  in the argument above.
+   Property (i) follows from the claim since B ∗ was chosen as in Step 1.
+   To justify the claim, let H be the set of elements h ∈ π1 S preserving the elevation of Ŝ to
+M̃ containing S̄. In other words, H = π1 Ŝ. Let Π ⊂ M̂  be the union of the projections of hP̄ ,
+over h ∈ H. Obviously Π has the property that, for each Bc ≃ B  as above, the projection to
+B ∗ of the intersection Π ∩ Bc is contained in the projection of P S ∩ B S . Since the projection
+of P̄ is contained in Π, in order to justify the claim, it remains to prove that Π is a surface
+properly embedded in M̂  :
+   The quotient in M̂  of a translate hP̄ with h ∈ H might fail to be proper only at a quotient
+of a boundary line hπ of hP̄ . Then π lies in the boundary of an S̄-vertical block B̄. In one
+of the two planes of ∂ B̄ crossed by S̄ there is a boundary line ψ of the piece containing π.
+Denote by σ the boundary line of S̄ ∩ B̄ in the plane not containing ψ. The only boundary
+component of the quotient of hB̄ in M̂  that is possibly in the interior of M̂  , besides the one
+containing the quotient of hψ, is the one containing the quotient of hσ. Assume then that hπ
+and hσ, hence also π and σ are mapped into the same JSJ torus of M̂  . Let K S ⊂ ∂B S be the
+cylinder containing the quotient of σ. By the second assertion in Step 1, there is in B S a piece
+p of P S with a component of p ∩ K S identiﬁed with π upon passing to B ∗ ; see Figure 9. In
+the piece of P̄ mapped to p let πp be the boundary component identiﬁed with π in B ∗ . Note
+that we chose B  → B ∗ so that π1 B ∗ = π1 B  π1 S0 where S0 is the lift of S ∩ B to B ∗ . Hence
+there is f ∈ H such that f π and πp are identiﬁed in one of the copies of B  ⊂ M̂  as well. By
+the deﬁnition of the core, the line πp is in the interior of P̄ . Hence the quotient in M̂  of hπ is
+in the interior of the quotient of hf −1 P̄ ⊂ Π. This completes the argument for the claim and
+hence for property (i).
+   As for property (iii), we also need to use the second assertion in Step 1. Let K  be a halt
+torus of M̂  in a copy of a block B  . Let B S ⊂ M̄ S be the block mapped to the same B ∗ as B 
+and let K S be that elevation from B ∗ to B S of the quotient of K  , which crosses Ŝ. Then K S
+lies also in the boundary of M̄ S . Hence P S is disjoint from K S by the deﬁnition of the core.
+In view of Step 1, the quotient of P̄ in P̂  is disjoint from K  . The same is true for hP̄ over
+h ∈ H (H as in the proof of the claim above), and hence for the whole P̂  . Thus we have proved
+property (iii), that Ŝ  and P̂  do not cross K  simultaneously. This completes the argument for
+Step 2.
+Page 16 of 17                  PIOTR PRZYTYCKI AND DANIEL T. WISE
+
+
+
+   The graph manifold M̂  is a semicover of M . By Step 2(ii), we can complete it to a cover M 
+by taking an appropriate number of disjoint copies of any ﬁnite covers of blocks in M that are
+n!-characteristic on the boundary. We require that M̂  embed in M  as a closed submanifold:
+we do not allow accidental matching of boundary components of open M̂  . By choosing those
+covers correctly, we keep M  to be S  -injective, where S  ⊂ M  is the appropriate elevation
+of S. It remains to perform the following:
+
+   Step 3: There is a ﬁnite cover M  of M  , whose blocks B  intersecting simultaneously the
+quotients S  , P  of S̃, P̃ project to B  ⊂ M̂  so that S  ∩ B  maps into Ŝ  and P  ∩ B  maps
+into P̂  .
+
+   Proof of Step 3. Let P  ⊂ M  be the quotient of P̃ . Let M̌ be a P  -injective cover of M  . We
+keep the notation P  for the lift of P  to M̌ (quotient of P̃ ) and denote by Š the appropriate
+elevation of S (quotient of S̃). Let τ be the union of the JSJ tori of M̌ containing the boundary
+components of P̂  which are not in the boundary of P  .
+   We consider the degree 2 cover M  of M̌ deﬁned by the Z2 -cohomology class [τ ]. The union
+of tori τ is disjoint from Š, by Step 2(iii). On the other hand, by P  -injectivity, τ separates
+P  into P̂  and its complement. Hence both Š and P  lift to M  and any piece of the lifted
+P  \ P̂  is in an Š-empty block of M  . This implies that M  satisﬁes Step 3.
+
+  Conclusion. By Step 3, if surfaces S  and P  intersect in a block B  of M  , then they
+project to surfaces Ŝ  and P̂  in a block B  of M̂  . By Step 2(i), the surfaces Ŝ  and P̂  do not
+intersect in a basepoint-translate. Then the same is true for S  and P  .
+  This concludes the proof of the main theorem except for the case where the core is empty,
+which we shall now discuss. First, applying Corollary 4.5, we pass to a cover M , where the
+path γ representing g does not go through the same block twice. By possibly passing to a
+further cover, we also assume that M is S-injective. Then, instead of the core we consider
+the minimal connected graph submanifold of M̃ crossed by both S̃ and P̃ . Its blocks are in
+correspondence with some of the blocks of M crossed by γ. Steps 1 and 2 are now immediate.
+The surface Ŝ  is contained in a single block of the semicover M̂  . We extend M̂  to a cover
+M  that is S  -injective and such that S  ∩ M̂  = Ŝ  . We ﬁnally perform Step 3 as in the main
+argument.
+
+
+   Remark 6.1. Theorems 1.1 and 1.2 also hold when S and P are allowed to be ∂-parallel
+annuli. Theorem 1.1 follows directly from Corollary 4.3.
+   For Theorem 1.2, if P or S are ∂-parallel annuli, we homotope them into the boundary before
+we determine if their elevations S̃, P̃ 0 intersect. Without loss of generality we can assume that
+S is a ∂-parallel annulus, parallel to a boundary torus T . We identify Stab(S̃), Stab(P̃ 0 ) with
+π1 S, π1 P for an appropriate basepoint.
+   If P is also a ∂-parallel annulus, then it is also parallel to T , and it suﬃces to use Corollary 4.2
+for the separability of the ﬁnite index subgroup π1 S π1 P of π1 T in π1 M .
+   If P is not a ∂-parallel annulus, we can assume that π1 S is not contained in π1 P ∩ π1 T .
+Let H ⊂ π1 T be the ﬁnite index subgroup generated by π1 S and π1 P ∩ π1 T . Then Hπ1 P =
+π1 S π1 P . By the separability of H in π1 M (Corollary 4.2), there is a ﬁnite cover M  of M
+with boundary torus T  with fundamental group H. By Theorem 1.2 applied to T  and an
+appropriate elevation P  of P to M  , we have that Hπ1 P  is separable in π1 M  . Hence Hπ1 P
+is separable in π1 M , as desired.
+
+ Acknowledgements.          We thank Yi Liu for providing feedback on our preprint leading to
+many improvements.
+                 GRAPH MANIFOLDS WITH BOUNDARY ARE VIRTUALLY SPECIAL Page 17 of 17
+
+
+
+                                               References
+ 1. I. Agol, ‘Criteria for virtual fibering’, J. Topol. 1 (2008) 269–284.
+ 2. I. Agol, ‘The virtual Haken conjecture’, with an Appendix by Ian Agol and Daniel Groves, and Jason
+    Manning, Preprint, 2012, arXiv:1204.2810.
+ 3. S. V. Buyalo and P. V. Svetlov, ‘Topological and geometric properties of graph manifolds’, Algebra i
+    Analiz 16 (2004) 3–68 (Russian, with Russian summary); English translation, St. Petersburg Math. J. 16
+    (2005) 297–340.
+ 4. I. Chatterji and G. Niblo, ‘From wall spaces to CAT(0) cube complexes’, Internat. J. Algebra Comput.
+    15 (2005) 875–885.
+ 5. G. Duchamp and D. Krob, ‘The lower central series of the free partially commutative group’, Semigroup
+    Forum 45 (1992) 385–394.
+ 6. F. Haglund and D. T. Wise, ‘Special cube complexes’, Geom. Funct. Anal. 17 (2008) 1551–1620.
+ 7. F. Haglund and D. T. Wise, ‘Coxeter groups are virtually special’, Adv. Math. 224 (2010) 1890–1903.
+ 8. E. Hamilton, ‘Abelian subgroup separability of Haken 3-manifolds and closed hyperbolic n-orbifolds’,
+    Proc. London Math. Soc. 83 (2001) 626–646.
+ 9. J. Hempel, ‘Residual finiteness for 3-manifolds’, Combinatorial group theory and topology (Alta,
+    UT, 1984), Annals of Mathematics Studies 111 (Princeton University Press, Princeton, NJ, 1987)
+    379–396.
+10. S. P. Humphries, ‘On representations of Artin groups and the Tits conjecture’, J. Algebra 169 (1994)
+    847–862.
+11. B. Leeb, ‘3-manifolds with(out) metrics of nonpositive curvature’, Invent. Math. 122 (1995) 277–289.
+12. Y. Liu, ‘Virtual cubulation of nonpositively curved graph manifolds’, J. Topol. (2013), to appear.
+13. J. Luecke and Y.-Q. Wu, ‘Relative Euler number and finite covers of graph manifolds’, Geometric
+    topology (Athens, GA, 1993), AMS/IP Studies in Advanced Mathematics 2 (American Mathematical
+    Society, Providence, RI, 1997) 80–103.
+14. B. Nica, ‘Cubulating spaces with walls’, Algebr. Geom. Topol. 4 (2004) 297–309 (electronic).
+15. P. Przytycki and D. T. Wise, ‘Mixed 3-manifolds are virtually special’ Preprint, 2012, arXiv:1205.6742.
+16. P. Przytycki and D. T. Wise, ‘Separability of embedded surfaces in 3-manifolds’, Preprint, 2012,
+    arXiv:1205.6742.
+17. S. Wang and F. Yu, ‘Graph manifolds with non-empty boundary are covered by surface bundles’, Math.
+    Proc. Cambridge Philos. Soc. 122 (1997) 447–455.
+18. D. T. Wise, ‘The structure of groups with quasiconvex hierarchy’, Preprint, 2011, http://www.math.
+    mcgill.ca/wise/papers.html.
+
+
+  Piotr Przytycki                                       Daniel T. Wise
+  Institute of Mathematics                              Department of Mathematics and Statistics
+  Polish Academy of Sciences                            McGill University
+  Śniadeckich 8                                        Montreal
+  00-956 Warsaw                                         Quebec
+  Poland                                                Canada H3A 2K6
+  pprzytyc@mimuw·edu·pl                                 wise@math·mcgill·ca
+

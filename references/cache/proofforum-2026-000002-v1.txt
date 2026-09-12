@@ -1,0 +1,101 @@
+BALANCED TWO-GENERATOR p-GROUPS OF DEFICIENCY ZERO
+         AND UNBOUNDED NILPOTENCY CLASS
+
+                                          GROUPTHEORY50
+
+
+        Abstract. For every prime p > 3 we construct an explicit family of finite two-
+        generator p-groups of deficiency zero whose nilpotency classes tend to infinity. The
+        construction gives, for every n ≥ 1, a group of order p2n+1 and class n + 1. This gives
+        an affirmative answer to Problem 17.113 of the Kourovka Notebook.
+
+
+
+
+                                         1. Introduction
+  The deficiency of a finite presentation
+                                      ⟨x1 , . . . , xd | r1 , . . . , rs ⟩
+is d−s, and the deficiency of a finitely presented group is the supremum of the deficiencies
+of its finite presentations. A presentation with the same number of generators and relators
+is usually called balanced. Balanced presentations of finite p-groups are constrained
+enough to be useful in topology and combinatorial group theory, but flexible enough to
+support groups of substantial nilpotency class.
+   Problem 17.113 of the Kourovka Notebook, proposed by J. Wiegold in the 17th
+issue, asks whether, for a fixed prime p > 3, there are two-generator finite p-groups of
+deficiency zero with arbitrarily high nilpotency class [1]. We give a uniform metacyclic
+construction.
+
+                                             2. The family
+  Fix a prime p > 3 and an integer n ≥ 1. Define
+                                  D                                     n        n
+                                                                                     E
+                           Gn = a, b b−1 ab = a1+p ,                   bp = ap           .
+We use the commutator convention [x, y] = x−1 y −1 xy.
+Theorem 2.1. For every n ≥ 1, the group Gn is a finite two-generator p-group of order
+p2n+1 , nilpotency class n + 1, and deficiency zero.
+                                         n           n
+Proof. Conjugating the relation bp = ap by b gives
+                                                 n           n
+                                             bp = ap (1+p) .
+                                                                 n+1                         n+1
+Comparison with the defining relation yields ap = 1, and then also bp = 1. Using
+ −1     1+p                          i j              pn   p n
+b ab = a , every word collects to a b . The relation b = a allows us to choose
+                                 0 ≤ i < pn+1 ,                  0 ≤ j < pn ,
+so |Gn | ≤ p2n+1 .
+   For the reverse inequality, put q = 1 + p and let
+                       An = ⟨α⟩ =∼ C n+1 ,     Bn = ⟨β⟩ ∼
+                                                        = C n+1 .
+                                             p                                  p
+
+  Date: August 27, 2026.
+  2020 Mathematics Subject Classification. 20D15, 20F05, 20F18.
+  Key words and phrases. finite p-groups, deficiency, nilpotency class, balanced presentation, Kourovka
+Notebook.
+                                                         1
+2                                       GROUPTHEORY50
+
+
+Let Bn act on An by αβ = αq . The standard lifting-the-exponent calculation gives
+                                              k
+                                      vp (q p − 1) = k + 1,
+so this automorphism has order pn . In Sn = An ⋊ Bn the element
+                                                      n     n
+                                          z = β p α−p
+is central of order p. Moreover ⟨z⟩ meets both An and Bn trivially. Hence
+                                     Hn = Sn /⟨z⟩
+has order p 2n+1 . The images of α and β satisfy the defining relations of G
+                                                                    n , so there is
+                                                                    ∼
+an epimorphism Gn ↠ Hn . The upper bound already obtained forces Gn = Hn .
+  The first defining relation gives
+                                              [a, b] = ap ,
+and therefore, for k ≥ 0,
+                                              k            k+1
+                                        [ap , b] = ap            .
+It follows inductively that
+                                          r−1
+                             γr (Gn ) = ⟨ap       ⟩       (2 ≤ r ≤ n + 2).
+Thus γn+1 (Gn ) ̸= 1 and γn+2 (Gn ) = 1, so the class is n + 1.
+   The displayed presentation has two generators and two relators, hence def(Gn ) ≥ 0.
+On the other hand, if a finite group has a presentation with d generators and s relators,
+abelianization and tensoring the relation matrix with Q show that s ≥ d; thus every
+finite group has deficiency at most zero. Consequently def(Gn ) = 0.                  □
+Corollary 2.2. By Theorem 2.1, for every prime p > 3 there exist two-generator finite
+p-groups of deficiency zero and arbitrarily large nilpotency class.
+
+                                    3. Further remarks
+   The groups Gn are metacyclic central quotients of semidirect products of two cyclic
+p-groups. In particular, the growth of nilpotency class does not require a growing number
+of generators or relators. The same presentation also gives a concrete family suitable for
+computational experiments with balanced finite presentations.
+   The restriction p > 3 is the one appearing in the Kourovka problem. The construction
+itself uses only the familiar p-adic behavior of 1 + p for odd p; we have not attempted
+here to optimize the small-prime range.
+
+                                          References
+    [1] E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka
+        Notebook, No. 21, Novosibirsk, 2026; arXiv:1401.0300.
+    [2] M. Hall, Jr., The theory of groups, Macmillan, New York, 1959.
+    [3] D. J. S. Robinson, A Course in the Theory of Groups, 2nd ed., Springer, 1996.
+

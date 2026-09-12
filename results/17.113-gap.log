@@ -1,0 +1,49 @@
+CASE p=2 n=1 size=8 class=2 abelian=[ 2, 2 ] lower_sizes=[ 8, 2, 1 ]
+CASE p=2 n=2 size=32 class=3 abelian=[ 2, 4 ] lower_sizes=[ 32, 4, 2, 1 ]
+CASE p=2 n=3 size=128 class=4 abelian=[ 2, 8 ] lower_sizes=[ 128, 8, 4, 2, 1 ]
+CASE p=2 n=4 size=512 class=5 abelian=[ 2, 16 ] lower_sizes=
+[ 512, 16, 8, 4, 2, 1 ]
+CASE p=2 n=5 size=2048 class=6 abelian=[ 2, 32 ] lower_sizes=
+[ 2048, 32, 16, 8, 4, 2, 1 ]
+CASE p=2 n=6 size=8192 class=7 abelian=[ 2, 64 ] lower_sizes=
+[ 8192, 64, 32, 16, 8, 4, 2, 1 ]
+CASE p=3 n=1 size=27 class=2 abelian=[ 3, 3 ] lower_sizes=[ 27, 3, 1 ]
+CASE p=3 n=2 size=243 class=3 abelian=[ 3, 9 ] lower_sizes=[ 243, 9, 3, 1 ]
+CASE p=3 n=3 size=2187 class=4 abelian=[ 3, 27 ] lower_sizes=
+[ 2187, 27, 9, 3, 1 ]
+CASE p=3 n=4 size=19683 class=5 abelian=[ 3, 81 ] lower_sizes=
+[ 19683, 81, 27, 9, 3, 1 ]
+CASE p=3 n=5 size=177147 class=6 abelian=[ 3, 243 ] lower_sizes=
+[ 177147, 243, 81, 27, 9, 3, 1 ]
+CASE p=3 n=6 size=1594323 class=7 abelian=[ 3, 729 ] lower_sizes=
+[ 1594323, 729, 243, 81, 27, 9, 3, 1 ]
+CASE p=5 n=1 size=125 class=2 abelian=[ 5, 5 ] lower_sizes=[ 125, 5, 1 ]
+CASE p=5 n=2 size=3125 class=3 abelian=[ 5, 25 ] lower_sizes=[ 3125, 25, 5, 1 
+ ]
+CASE p=5 n=3 size=78125 class=4 abelian=[ 5, 125 ] lower_sizes=
+[ 78125, 125, 25, 5, 1 ]
+CASE p=5 n=4 size=1953125 class=5 abelian=[ 5, 625 ] lower_sizes=
+[ 1953125, 625, 125, 25, 5, 1 ]
+CASE p=5 n=5 size=48828125 class=6 abelian=[ 5, 3125 ] lower_sizes=
+[ 48828125, 3125, 625, 125, 25, 5, 1 ]
+CASE p=5 n=6 size=1220703125 class=7 abelian=[ 5, 15625 ] lower_sizes=
+[ 1220703125, 15625, 3125, 625, 125, 25, 5, 1 ]
+CASE p=7 n=1 size=343 class=2 abelian=[ 7, 7 ] lower_sizes=[ 343, 7, 1 ]
+CASE p=7 n=2 size=16807 class=3 abelian=[ 7, 49 ] lower_sizes=
+[ 16807, 49, 7, 1 ]
+CASE p=7 n=3 size=823543 class=4 abelian=[ 7, 343 ] lower_sizes=
+[ 823543, 343, 49, 7, 1 ]
+CASE p=7 n=4 size=40353607 class=5 abelian=[ 7, 2401 ] lower_sizes=
+[ 40353607, 2401, 343, 49, 7, 1 ]
+CASE p=7 n=5 size=1977326743 class=6 abelian=[ 7, 16807 ] lower_sizes=
+[ 1977326743, 16807, 2401, 343, 49, 7, 1 ]
+CASE p=7 n=6 size=96889010407 class=7 abelian=[ 7, 117649 ] lower_sizes=
+[ 96889010407, 117649, 16807, 2401, 343, 49, 7, 1 ]
+CASE p=11 n=1 size=1331 class=2 abelian=[ 11, 11 ] lower_sizes=[ 1331, 11, 1 ]
+CASE p=11 n=2 size=161051 class=3 abelian=[ 11, 121 ] lower_sizes=
+[ 161051, 121, 11, 1 ]
+CASE p=11 n=3 size=19487171 class=4 abelian=[ 11, 1331 ] lower_sizes=
+[ 19487171, 1331, 121, 11, 1 ]
+CASE p=11 n=4 size=2357947691 class=5 abelian=[ 11, 14641 ] lower_sizes=
+[ 2357947691, 14641, 1331, 121, 11, 1 ]
+PASS_17113_GAP cases=28

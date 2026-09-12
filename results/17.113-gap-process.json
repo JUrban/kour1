@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bin/gap",
+    "-o",
+    "512m",
+    "scripts/check_17_113.g"
+  ],
+  "started_at": "2026-09-12T10:06:48.944267+00:00",
+  "finished_at": "2026-09-12T10:08:16.730959+00:00",
+  "actual_returncode": 0,
+  "timed_out": false,
+  "stdout_sha256": "1c8f38a6a8802fa264ebe420a39b90368e840c7081c8fc7c1f1a28e672aa1096",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sentinel": "PASS_17113_GAP cases=28",
+  "sentinel_seen": true
+}
