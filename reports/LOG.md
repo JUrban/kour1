@@ -2726,3 +2726,15 @@ The 1,076,716,159-byte raw certificates are preserved locally; the committed det
 Recorded the semiregular-normal-subgroup lifting lemma, its nilpotent consequence and product reductions with priority unclaimed. All six pages of Muller2026 were read, with two pages viewed. An exact F8 control verifies the printed source identities and an explicit witness fixing two cosets at the stronger derangement question's obstructed pair. Full Steinberg-group identification is not independently claimed. A memory-limited Factorization probe is preserved and excluded. General21.99 remains unresolved; new complete candidates44, outside reviews0.
 
 n=7 snapshot 2026-09-12T12:27:50.028020+00:00: five pass markers, one verified-live PID [77400], worker4 checkpoint 6900000 nodes. The aggregate is pending. No external messages or Git pushes.
+
+## 2026-09-12T12:42:59.152402+00:00: 21.132 priority correction
+
+The preceding goal turn was progress: commit24eb5ec completed the degree47 word certificates. This turn revisited the unresolved radical-homogeneity issue in the earlier21.132 audit. Hong et al.2018 Proposition A explicitly states the needed classical result, with nonunital rings allowed. Sereda--Sozutov2006 Section1 was reread and its two theorem pages viewed. The1982 original proof remains imported through the explicit2018 statement.
+
+A complete written deduction shows that the graded Levitzki quotient has a two-generated infinite centreless residually p-finite adjoint subgroup. Adjoining a one-dimensional zero algebra gives an infinite three-generated Golod group with centre C_p, meeting the exact9.76 definition and21.132 wording. The elementary grading, centre, infinitude and finite-quotient steps are all proved. This is our deduction from prior published theorems; an explicit earlier publication of this final answer has not been located.
+
+The requested result is therefore reclassified as a prior consequence and excluded from the new-candidate count, which changes44 to43. The original four-generator triangular proof is retained without a mathematical defect found. Historical log entries are unchanged. The earlier21.106 and21.107 arguments were also reread during this audit turn, with no new defect identified; neither has outside independent review. No finite computation is claimed to prove the infinite-algebra deduction.
+
+The n=7 controller and worker4 remain active; no restart or aggregate proof claim. Sources, page images and proof notes are retained locally, with no external messages or Git pushes.
+
+The15-file source-and-note integrity check returned actual exit0 with its terminal marker (tool chunk6f3d2d); this checks file hashes and status consistency, not the imported radical proof. The retained download record matches the author PDF. The n=7 snapshot at2026-09-12T12:42:09.261425+00:00 has worker4 at6,980,000 checked nodes, five pass markers, and only the first four actual exits collected.

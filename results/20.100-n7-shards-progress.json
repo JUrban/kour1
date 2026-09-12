@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-09-12T12:27:50.028020+00:00",
+  "observed_utc": "2026-09-12T12:42:09.261425+00:00",
   "n": 7,
   "verifier_mode": "sharded",
   "shard_count": 6,
@@ -73,12 +73,12 @@
       "returncode": null,
       "last_progress": {
         "index": 4,
-        "checked_nodes": 6900000,
-        "last_id": 41399999,
-        "edges": 126432285,
-        "cpu_ms": 90628624
+        "checked_nodes": 6980000,
+        "last_id": 41879999,
+        "edges": 127930929,
+        "cpu_ms": 91704512
       },
-      "rss_kib": 9435696
+      "rss_kib": 9901616
     },
     {
       "index": 5,
@@ -94,6 +94,6 @@
       }
     }
   ],
-  "verified_live_rss_kib": 9435696,
+  "verified_live_rss_kib": 9901616,
   "scope": "Progress snapshot. A complete certificate has no proof status until every shard and the aggregate pass. Integrity is bound to the prior full gzip read by the checked compressed SHA256."
 }
