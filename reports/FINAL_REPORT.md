@@ -196,6 +196,13 @@ success: the recorded runners also check diagnostics, completion markers and
 coverage. The long completed n=7 run need not be repeated to inspect its proof
 or archive integrity.
 
+The broader [closeout preflight](closeout-preflight-report.md) checks 4,231
+bindings across 2,239 distinct files (about 2.01 GB), including selected
+partial-result archives. It passed after three matching GAP catalogue source
+files were added to Git. Both the initial failure and corrected observation
+are retained. These totals include 1,252 observations from the earlier
+checkpoint and 2,979 manifest bindings; they are artifact checks.
+
 The latest partial packets are committed separately and leave the older
 candidate ledger and historical evidence unchanged. The final closeout
 manifest and actual terminal-state observation will be added at the deadline.

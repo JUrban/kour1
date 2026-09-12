@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/audit_final_closeout.py",
+    "--phase",
+    "preflight",
+    "--output",
+    "results/closeout-preflight-integrity.json"
+  ],
+  "started_utc": "2026-09-12T20:29:26.655593+00:00",
+  "finished_utc": "2026-09-12T20:29:31.822970+00:00",
+  "elapsed_seconds": 5.167386337183416,
+  "actual_returncode": 1,
+  "accepted": false,
+  "script_sha256": "3634064a0048fdf436c8de09571efef37361e02654732cec7d7b8adb29dddbcc",
+  "stdout_sha256": "260f101f749f162641d4bc0ed924d7ad789b50435ee8f8e26de4a44692277699",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
