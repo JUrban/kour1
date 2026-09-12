@@ -1,0 +1,1334 @@
+{"certificate_sha256": "e1b116fa80a4b77a03256d69480b996318522c227ef48e6be7fdf62cbd8bcd8c", "checker_sha256": "a5e698d9e27d17096eff7898f93781edd607db41d47b7b500d1a0783416f29de", "command": ["/project/gap-4.16.1/gap", "-l", "/project/gap-4.16.1", "-q", "-b", "-T", "-m", "128m", "-o", "14g", "-c", "ProofShardIndex:=3;ProofShardCount:=6;", "/project/scripts/verify_20_100_shard.g", "/project/results/20.100-n7-certificate.g.gz"]}
+START n=7 prime_bound=8
+CHECK_SHARD index=3 nodes=10000 last_id=59998 edges=158928 cpu_ms=68413
+CHECK_SHARD index=3 nodes=20000 last_id=119998 edges=324198 cpu_ms=140672
+CHECK_SHARD index=3 nodes=30000 last_id=179998 edges=491736 cpu_ms=215989
+CHECK_SHARD index=3 nodes=40000 last_id=239998 edges=656733 cpu_ms=290631
+CHECK_SHARD index=3 nodes=50000 last_id=299998 edges=821373 cpu_ms=366547
+CHECK_SHARD index=3 nodes=60000 last_id=359998 edges=988113 cpu_ms=444615
+CHECK_SHARD index=3 nodes=70000 last_id=419998 edges=1158213 cpu_ms=524922
+CHECK_SHARD index=3 nodes=80000 last_id=479998 edges=1323987 cpu_ms=604181
+CHECK_SHARD index=3 nodes=90000 last_id=539998 edges=1492785 cpu_ms=688117
+CHECK_SHARD index=3 nodes=100000 last_id=599998 edges=1661310 cpu_ms=773718
+CHECK_SHARD index=3 nodes=110000 last_id=659998 edges=1828344 cpu_ms=859152
+CHECK_SHARD index=3 nodes=120000 last_id=719998 edges=1996743 cpu_ms=944256
+CHECK_SHARD index=3 nodes=130000 last_id=779998 edges=2167032 cpu_ms=1032184
+CHECK_SHARD index=3 nodes=140000 last_id=839998 edges=2333814 cpu_ms=1114280
+CHECK_SHARD index=3 nodes=150000 last_id=899998 edges=2496963 cpu_ms=1196528
+CHECK_SHARD index=3 nodes=160000 last_id=959998 edges=2659860 cpu_ms=1280561
+CHECK_SHARD index=3 nodes=170000 last_id=1019998 edges=2832606 cpu_ms=1368115
+CHECK_SHARD index=3 nodes=180000 last_id=1079998 edges=3007431 cpu_ms=1454750
+CHECK_SHARD index=3 nodes=190000 last_id=1139998 edges=3176691 cpu_ms=1540371
+CHECK_SHARD index=3 nodes=200000 last_id=1199998 edges=3348492 cpu_ms=1627970
+CHECK_SHARD index=3 nodes=210000 last_id=1259998 edges=3521385 cpu_ms=1716741
+CHECK_SHARD index=3 nodes=220000 last_id=1319998 edges=3692409 cpu_ms=1806046
+CHECK_SHARD index=3 nodes=230000 last_id=1379998 edges=3865533 cpu_ms=1896086
+CHECK_SHARD index=3 nodes=240000 last_id=1439998 edges=4037061 cpu_ms=1986414
+CHECK_SHARD index=3 nodes=250000 last_id=1499998 edges=4209849 cpu_ms=2076920
+CHECK_SHARD index=3 nodes=260000 last_id=1559998 edges=4384464 cpu_ms=2163818
+CHECK_SHARD index=3 nodes=270000 last_id=1619998 edges=4559226 cpu_ms=2264217
+CHECK_SHARD index=3 nodes=280000 last_id=1679998 edges=4736613 cpu_ms=2372189
+CHECK_SHARD index=3 nodes=290000 last_id=1739998 edges=4908519 cpu_ms=2492367
+CHECK_SHARD index=3 nodes=300000 last_id=1799998 edges=5082273 cpu_ms=2600474
+CHECK_SHARD index=3 nodes=310000 last_id=1859998 edges=5257266 cpu_ms=2696974
+CHECK_SHARD index=3 nodes=320000 last_id=1919998 edges=5429844 cpu_ms=2793056
+CHECK_SHARD index=3 nodes=330000 last_id=1979998 edges=5605656 cpu_ms=2884437
+CHECK_SHARD index=3 nodes=340000 last_id=2039998 edges=5779746 cpu_ms=2978085
+CHECK_SHARD index=3 nodes=350000 last_id=2099998 edges=5951232 cpu_ms=3071098
+CHECK_SHARD index=3 nodes=360000 last_id=2159998 edges=6124986 cpu_ms=3166058
+CHECK_SHARD index=3 nodes=370000 last_id=2219998 edges=6294351 cpu_ms=3255414
+CHECK_SHARD index=3 nodes=380000 last_id=2279998 edges=6466068 cpu_ms=3355070
+CHECK_SHARD index=3 nodes=390000 last_id=2339998 edges=6642090 cpu_ms=3442398
+CHECK_SHARD index=3 nodes=400000 last_id=2399998 edges=6816621 cpu_ms=3543582
+CHECK_SHARD index=3 nodes=410000 last_id=2459998 edges=6990396 cpu_ms=3630070
+CHECK_SHARD index=3 nodes=420000 last_id=2519998 edges=7165851 cpu_ms=3732977
+CHECK_SHARD index=3 nodes=430000 last_id=2579998 edges=7339563 cpu_ms=3829170
+CHECK_SHARD index=3 nodes=440000 last_id=2639998 edges=7515165 cpu_ms=3919248
+CHECK_SHARD index=3 nodes=450000 last_id=2699998 edges=7689066 cpu_ms=4014146
+CHECK_SHARD index=3 nodes=460000 last_id=2759998 edges=7865025 cpu_ms=4113304
+CHECK_SHARD index=3 nodes=470000 last_id=2819998 edges=8041509 cpu_ms=4205797
+CHECK_SHARD index=3 nodes=480000 last_id=2879998 edges=8217258 cpu_ms=4308654
+CHECK_SHARD index=3 nodes=490000 last_id=2939998 edges=8392923 cpu_ms=4397193
+CHECK_SHARD index=3 nodes=500000 last_id=2999998 edges=8565144 cpu_ms=4501602
+CHECK_SHARD index=3 nodes=510000 last_id=3059998 edges=8737722 cpu_ms=4586907
+CHECK_SHARD index=3 nodes=520000 last_id=3119998 edges=8913912 cpu_ms=4682381
+CHECK_SHARD index=3 nodes=530000 last_id=3179998 edges=9089199 cpu_ms=4783502
+CHECK_SHARD index=3 nodes=540000 last_id=3239998 edges=9264570 cpu_ms=4894380
+CHECK_SHARD index=3 nodes=550000 last_id=3299998 edges=9441243 cpu_ms=4980663
+CHECK_SHARD index=3 nodes=560000 last_id=3359998 edges=9615711 cpu_ms=5072788
+CHECK_SHARD index=3 nodes=570000 last_id=3419998 edges=9791460 cpu_ms=5181971
+CHECK_SHARD index=3 nodes=580000 last_id=3479998 edges=9966852 cpu_ms=5268916
+CHECK_SHARD index=3 nodes=590000 last_id=3539998 edges=10141887 cpu_ms=5363262
+CHECK_SHARD index=3 nodes=600000 last_id=3599998 edges=10320975 cpu_ms=5470562
+CHECK_SHARD index=3 nodes=610000 last_id=3659998 edges=10501785 cpu_ms=5560657
+CHECK_SHARD index=3 nodes=620000 last_id=3719998 edges=10685262 cpu_ms=5662725
+CHECK_SHARD index=3 nodes=630000 last_id=3779998 edges=10861032 cpu_ms=5768699
+CHECK_SHARD index=3 nodes=640000 last_id=3839998 edges=11036571 cpu_ms=5856854
+CHECK_SHARD index=3 nodes=650000 last_id=3899998 edges=11215302 cpu_ms=5956305
+CHECK_SHARD index=3 nodes=660000 last_id=3959998 edges=11391954 cpu_ms=6064729
+CHECK_SHARD index=3 nodes=670000 last_id=4019998 edges=11569593 cpu_ms=6161444
+CHECK_SHARD index=3 nodes=680000 last_id=4079998 edges=11747568 cpu_ms=6267701
+CHECK_SHARD index=3 nodes=690000 last_id=4139998 edges=11928903 cpu_ms=6357986
+CHECK_SHARD index=3 nodes=700000 last_id=4199998 edges=12110763 cpu_ms=6455708
+CHECK_SHARD index=3 nodes=710000 last_id=4259998 edges=12286575 cpu_ms=6575084
+CHECK_SHARD index=3 nodes=720000 last_id=4319998 edges=12465936 cpu_ms=6675323
+CHECK_SHARD index=3 nodes=730000 last_id=4379998 edges=12645066 cpu_ms=6792656
+CHECK_SHARD index=3 nodes=740000 last_id=4439998 edges=12823062 cpu_ms=6927954
+CHECK_SHARD index=3 nodes=750000 last_id=4499998 edges=13003179 cpu_ms=7066713
+CHECK_SHARD index=3 nodes=760000 last_id=4559998 edges=13184409 cpu_ms=7195874
+CHECK_SHARD index=3 nodes=770000 last_id=4619998 edges=13367991 cpu_ms=7334204
+CHECK_SHARD index=3 nodes=780000 last_id=4679998 edges=13546701 cpu_ms=7499004
+CHECK_SHARD index=3 nodes=790000 last_id=4739998 edges=13725978 cpu_ms=7615673
+CHECK_SHARD index=3 nodes=800000 last_id=4799998 edges=13906242 cpu_ms=7716602
+CHECK_SHARD index=3 nodes=810000 last_id=4859998 edges=14085225 cpu_ms=7816286
+CHECK_SHARD index=3 nodes=820000 last_id=4919998 edges=14261478 cpu_ms=7935866
+CHECK_SHARD index=3 nodes=830000 last_id=4979998 edges=14438193 cpu_ms=8023882
+CHECK_SHARD index=3 nodes=840000 last_id=5039998 edges=14619549 cpu_ms=8151614
+CHECK_SHARD index=3 nodes=850000 last_id=5099998 edges=14799288 cpu_ms=8243458
+CHECK_SHARD index=3 nodes=860000 last_id=5159998 edges=14981316 cpu_ms=8334617
+CHECK_SHARD index=3 nodes=870000 last_id=5219998 edges=15165927 cpu_ms=8432294
+CHECK_SHARD index=3 nodes=880000 last_id=5279998 edges=15347220 cpu_ms=8542517
+CHECK_SHARD index=3 nodes=890000 last_id=5339998 edges=15526707 cpu_ms=8655631
+CHECK_SHARD index=3 nodes=900000 last_id=5399998 edges=15707496 cpu_ms=8745316
+CHECK_SHARD index=3 nodes=910000 last_id=5459998 edges=15886731 cpu_ms=8838073
+CHECK_SHARD index=3 nodes=920000 last_id=5519998 edges=16066428 cpu_ms=8940884
+CHECK_SHARD index=3 nodes=930000 last_id=5579998 edges=16247742 cpu_ms=9069394
+CHECK_SHARD index=3 nodes=940000 last_id=5639998 edges=16428111 cpu_ms=9157849
+CHECK_SHARD index=3 nodes=950000 last_id=5699998 edges=16607472 cpu_ms=9249127
+CHECK_SHARD index=3 nodes=960000 last_id=5759998 edges=16787085 cpu_ms=9346674
+CHECK_SHARD index=3 nodes=970000 last_id=5819998 edges=16967097 cpu_ms=9462481
+CHECK_SHARD index=3 nodes=980000 last_id=5879998 edges=17149818 cpu_ms=9576784
+CHECK_SHARD index=3 nodes=990000 last_id=5939998 edges=17332077 cpu_ms=9666405
+CHECK_SHARD index=3 nodes=1000000 last_id=5999998 edges=17519145 cpu_ms=
+9761799
+CHECK_SHARD index=3 nodes=1010000 last_id=6059998 edges=17706486 cpu_ms=
+9864172
+CHECK_SHARD index=3 nodes=1020000 last_id=6119998 edges=17886624 cpu_ms=
+9991959
+CHECK_SHARD index=3 nodes=1030000 last_id=6179998 edges=18067854 cpu_ms=
+10093313
+CHECK_SHARD index=3 nodes=1040000 last_id=6239998 edges=18249336 cpu_ms=
+10188605
+CHECK_SHARD index=3 nodes=1050000 last_id=6299998 edges=18431742 cpu_ms=
+10336686
+CHECK_SHARD index=3 nodes=1060000 last_id=6359998 edges=18613791 cpu_ms=
+10425093
+CHECK_SHARD index=3 nodes=1070000 last_id=6419998 edges=18795063 cpu_ms=
+10515583
+CHECK_SHARD index=3 nodes=1080000 last_id=6479998 edges=18979212 cpu_ms=
+10609733
+CHECK_SHARD index=3 nodes=1090000 last_id=6539998 edges=19165461 cpu_ms=
+10710228
+CHECK_SHARD index=3 nodes=1100000 last_id=6599998 edges=19349946 cpu_ms=
+10826512
+CHECK_SHARD index=3 nodes=1110000 last_id=6659998 edges=19531071 cpu_ms=
+10951919
+CHECK_SHARD index=3 nodes=1120000 last_id=6719998 edges=19713225 cpu_ms=
+11041415
+CHECK_SHARD index=3 nodes=1130000 last_id=6779998 edges=19894875 cpu_ms=
+11133359
+CHECK_SHARD index=3 nodes=1140000 last_id=6839998 edges=20079129 cpu_ms=
+11231498
+CHECK_SHARD index=3 nodes=1150000 last_id=6899998 edges=20262543 cpu_ms=
+11340246
+CHECK_SHARD index=3 nodes=1160000 last_id=6959998 edges=20445348 cpu_ms=
+11487366
+CHECK_SHARD index=3 nodes=1170000 last_id=7019998 edges=20624730 cpu_ms=
+11574568
+CHECK_SHARD index=3 nodes=1180000 last_id=7079998 edges=20809656 cpu_ms=
+11669427
+CHECK_SHARD index=3 nodes=1190000 last_id=7139998 edges=20993616 cpu_ms=
+11764551
+CHECK_SHARD index=3 nodes=1200000 last_id=7199998 edges=21176022 cpu_ms=
+11864084
+CHECK_SHARD index=3 nodes=1210000 last_id=7259998 edges=21361326 cpu_ms=
+11979621
+CHECK_SHARD index=3 nodes=1220000 last_id=7319998 edges=21548646 cpu_ms=
+12121578
+CHECK_SHARD index=3 nodes=1230000 last_id=7379998 edges=21732249 cpu_ms=
+12211090
+CHECK_SHARD index=3 nodes=1240000 last_id=7439998 edges=21914823 cpu_ms=
+12302589
+CHECK_SHARD index=3 nodes=1250000 last_id=7499998 edges=22096032 cpu_ms=
+12396518
+CHECK_SHARD index=3 nodes=1260000 last_id=7559998 edges=22282008 cpu_ms=
+12498080
+CHECK_SHARD index=3 nodes=1270000 last_id=7619998 edges=22464666 cpu_ms=
+12613077
+CHECK_SHARD index=3 nodes=1280000 last_id=7679998 edges=22648920 cpu_ms=
+12755817
+CHECK_SHARD index=3 nodes=1290000 last_id=7739998 edges=22833888 cpu_ms=
+12846484
+CHECK_SHARD index=3 nodes=1300000 last_id=7799998 edges=23016924 cpu_ms=
+12943589
+CHECK_SHARD index=3 nodes=1310000 last_id=7859998 edges=23203152 cpu_ms=
+13072398
+CHECK_SHARD index=3 nodes=1320000 last_id=7919998 edges=23388204 cpu_ms=
+13196630
+CHECK_SHARD index=3 nodes=1330000 last_id=7979998 edges=23570337 cpu_ms=
+13286293
+CHECK_SHARD index=3 nodes=1340000 last_id=8039998 edges=23749992 cpu_ms=
+13376681
+CHECK_SHARD index=3 nodes=1350000 last_id=8099998 edges=23931117 cpu_ms=
+13471223
+CHECK_SHARD index=3 nodes=1360000 last_id=8159998 edges=24111801 cpu_ms=
+13570631
+CHECK_SHARD index=3 nodes=1370000 last_id=8219998 edges=24289692 cpu_ms=
+13678917
+CHECK_SHARD index=3 nodes=1380000 last_id=8279998 edges=24472749 cpu_ms=
+13845631
+CHECK_SHARD index=3 nodes=1390000 last_id=8339998 edges=24659355 cpu_ms=
+13935310
+CHECK_SHARD index=3 nodes=1400000 last_id=8399998 edges=24844533 cpu_ms=
+14026068
+CHECK_SHARD index=3 nodes=1410000 last_id=8459998 edges=25027065 cpu_ms=
+14117930
+CHECK_SHARD index=3 nodes=1420000 last_id=8519998 edges=25209324 cpu_ms=
+14213511
+CHECK_SHARD index=3 nodes=1430000 last_id=8579998 edges=25392549 cpu_ms=
+14320864
+CHECK_SHARD index=3 nodes=1440000 last_id=8639998 edges=25573107 cpu_ms=
+14437646
+CHECK_SHARD index=3 nodes=1450000 last_id=8699998 edges=25754652 cpu_ms=
+14609335
+CHECK_SHARD index=3 nodes=1460000 last_id=8759998 edges=25937247 cpu_ms=
+14706066
+CHECK_SHARD index=3 nodes=1470000 last_id=8819998 edges=26119926 cpu_ms=
+14804834
+CHECK_SHARD index=3 nodes=1480000 last_id=8879998 edges=26304012 cpu_ms=
+14899485
+CHECK_SHARD index=3 nodes=1490000 last_id=8939998 edges=26490135 cpu_ms=
+14996494
+CHECK_SHARD index=3 nodes=1500000 last_id=8999998 edges=26677140 cpu_ms=
+15098862
+CHECK_SHARD index=3 nodes=1510000 last_id=9059998 edges=26858307 cpu_ms=
+15208796
+CHECK_SHARD index=3 nodes=1520000 last_id=9119998 edges=27040104 cpu_ms=
+15369665
+CHECK_SHARD index=3 nodes=1530000 last_id=9179998 edges=27221733 cpu_ms=
+15473471
+CHECK_SHARD index=3 nodes=1540000 last_id=9239998 edges=27405567 cpu_ms=
+15563976
+CHECK_SHARD index=3 nodes=1550000 last_id=9299998 edges=27588687 cpu_ms=
+15656298
+CHECK_SHARD index=3 nodes=1560000 last_id=9359998 edges=27772542 cpu_ms=
+15751440
+CHECK_SHARD index=3 nodes=1570000 last_id=9419998 edges=27953394 cpu_ms=
+15848698
+CHECK_SHARD index=3 nodes=1580000 last_id=9479998 edges=28135569 cpu_ms=
+15952883
+CHECK_SHARD index=3 nodes=1590000 last_id=9539998 edges=28321377 cpu_ms=
+16076157
+CHECK_SHARD index=3 nodes=1600000 last_id=9599998 edges=28502292 cpu_ms=
+16238671
+CHECK_SHARD index=3 nodes=1610000 last_id=9659998 edges=28687932 cpu_ms=
+16328969
+CHECK_SHARD index=3 nodes=1620000 last_id=9719998 edges=28872102 cpu_ms=
+16420649
+CHECK_SHARD index=3 nodes=1630000 last_id=9779998 edges=29056230 cpu_ms=
+16529547
+CHECK_SHARD index=3 nodes=1640000 last_id=9839998 edges=29236137 cpu_ms=
+16667647
+CHECK_SHARD index=3 nodes=1650000 last_id=9899998 edges=29418837 cpu_ms=
+16801047
+CHECK_SHARD index=3 nodes=1660000 last_id=9959998 edges=29599878 cpu_ms=
+16889803
+CHECK_SHARD index=3 nodes=1670000 last_id=10019998 edges=29782662 cpu_ms=
+16980340
+CHECK_SHARD index=3 nodes=1680000 last_id=10079998 edges=29967504 cpu_ms=
+17073780
+CHECK_SHARD index=3 nodes=1690000 last_id=10139998 edges=30148608 cpu_ms=
+17167976
+CHECK_SHARD index=3 nodes=1700000 last_id=10199998 edges=30333261 cpu_ms=
+17267836
+CHECK_SHARD index=3 nodes=1710000 last_id=10259998 edges=30516633 cpu_ms=
+17373743
+CHECK_SHARD index=3 nodes=1720000 last_id=10319998 edges=30701916 cpu_ms=
+17493799
+CHECK_SHARD index=3 nodes=1730000 last_id=10379998 edges=30883503 cpu_ms=
+17680401
+CHECK_SHARD index=3 nodes=1740000 last_id=10439998 edges=31066728 cpu_ms=
+17768510
+CHECK_SHARD index=3 nodes=1750000 last_id=10499998 edges=31243338 cpu_ms=
+17855390
+CHECK_SHARD index=3 nodes=1760000 last_id=10559998 edges=31418100 cpu_ms=
+17944067
+CHECK_SHARD index=3 nodes=1770000 last_id=10619998 edges=31592862 cpu_ms=
+18036172
+CHECK_SHARD index=3 nodes=1780000 last_id=10679998 edges=31769997 cpu_ms=
+18131639
+CHECK_SHARD index=3 nodes=1790000 last_id=10739998 edges=31948077 cpu_ms=
+18232316
+CHECK_SHARD index=3 nodes=1800000 last_id=10799998 edges=32131428 cpu_ms=
+18343949
+CHECK_SHARD index=3 nodes=1810000 last_id=10859998 edges=32313813 cpu_ms=
+18476429
+CHECK_SHARD index=3 nodes=1820000 last_id=10919998 edges=32495064 cpu_ms=
+18646515
+CHECK_SHARD index=3 nodes=1830000 last_id=10979998 edges=32677953 cpu_ms=
+18737969
+CHECK_SHARD index=3 nodes=1840000 last_id=11039998 edges=32859099 cpu_ms=
+18829078
+CHECK_SHARD index=3 nodes=1850000 last_id=11099998 edges=33044214 cpu_ms=
+18923734
+CHECK_SHARD index=3 nodes=1860000 last_id=11159998 edges=33229287 cpu_ms=
+19020356
+CHECK_SHARD index=3 nodes=1870000 last_id=11219998 edges=33410958 cpu_ms=
+19125915
+CHECK_SHARD index=3 nodes=1880000 last_id=11279998 edges=33595065 cpu_ms=
+19244072
+CHECK_SHARD index=3 nodes=1890000 last_id=11339998 edges=33776295 cpu_ms=
+19373907
+CHECK_SHARD index=3 nodes=1900000 last_id=11399998 edges=33959772 cpu_ms=
+19529508
+CHECK_SHARD index=3 nodes=1910000 last_id=11459998 edges=34143522 cpu_ms=
+19737929
+CHECK_SHARD index=3 nodes=1920000 last_id=11519998 edges=34329897 cpu_ms=
+19838749
+CHECK_SHARD index=3 nodes=1930000 last_id=11579998 edges=34515915 cpu_ms=
+19937115
+CHECK_SHARD index=3 nodes=1940000 last_id=11639998 edges=34698174 cpu_ms=
+20032837
+CHECK_SHARD index=3 nodes=1950000 last_id=11699998 edges=34882512 cpu_ms=
+20131111
+CHECK_SHARD index=3 nodes=1960000 last_id=11759998 edges=35066178 cpu_ms=
+20231100
+CHECK_SHARD index=3 nodes=1970000 last_id=11819998 edges=35250075 cpu_ms=
+20337699
+CHECK_SHARD index=3 nodes=1980000 last_id=11879998 edges=35435610 cpu_ms=
+20467646
+CHECK_SHARD index=3 nodes=1990000 last_id=11939998 edges=35619150 cpu_ms=
+20617445
+CHECK_SHARD index=3 nodes=2000000 last_id=11999998 edges=35803803 cpu_ms=
+20802399
+CHECK_SHARD index=3 nodes=2010000 last_id=12059998 edges=35985558 cpu_ms=
+20963733
+CHECK_SHARD index=3 nodes=2020000 last_id=12119998 edges=36169119 cpu_ms=
+21056466
+CHECK_SHARD index=3 nodes=2030000 last_id=12179998 edges=36356229 cpu_ms=
+21156499
+CHECK_SHARD index=3 nodes=2040000 last_id=12239998 edges=36539937 cpu_ms=
+21265343
+CHECK_SHARD index=3 nodes=2050000 last_id=12299998 edges=36720096 cpu_ms=
+21385426
+CHECK_SHARD index=3 nodes=2060000 last_id=12359998 edges=36902502 cpu_ms=
+21584483
+CHECK_SHARD index=3 nodes=2070000 last_id=12419998 edges=37087239 cpu_ms=
+21673020
+CHECK_SHARD index=3 nodes=2080000 last_id=12479998 edges=37271535 cpu_ms=
+21763786
+CHECK_SHARD index=3 nodes=2090000 last_id=12539998 edges=37451085 cpu_ms=
+21856207
+CHECK_SHARD index=3 nodes=2100000 last_id=12599998 edges=37635612 cpu_ms=
+21962599
+CHECK_SHARD index=3 nodes=2110000 last_id=12659998 edges=37814910 cpu_ms=
+22064987
+CHECK_SHARD index=3 nodes=2120000 last_id=12719998 edges=37997757 cpu_ms=
+22163511
+CHECK_SHARD index=3 nodes=2130000 last_id=12779998 edges=38183838 cpu_ms=
+22267085
+CHECK_SHARD index=3 nodes=2140000 last_id=12839998 edges=38367609 cpu_ms=
+22373181
+CHECK_SHARD index=3 nodes=2150000 last_id=12899998 edges=38544639 cpu_ms=
+22483420
+CHECK_SHARD index=3 nodes=2160000 last_id=12959998 edges=38717175 cpu_ms=
+22606378
+CHECK_SHARD index=3 nodes=2170000 last_id=13019998 edges=38890698 cpu_ms=
+22796654
+CHECK_SHARD index=3 nodes=2180000 last_id=13079998 edges=39067329 cpu_ms=
+22881504
+CHECK_SHARD index=3 nodes=2190000 last_id=13139998 edges=39245703 cpu_ms=
+22968823
+CHECK_SHARD index=3 nodes=2200000 last_id=13199998 edges=39425379 cpu_ms=
+23058809
+CHECK_SHARD index=3 nodes=2210000 last_id=13259998 edges=39604425 cpu_ms=
+23150393
+CHECK_SHARD index=3 nodes=2220000 last_id=13319998 edges=39787314 cpu_ms=
+23247146
+CHECK_SHARD index=3 nodes=2230000 last_id=13379998 edges=39973395 cpu_ms=
+23347896
+CHECK_SHARD index=3 nodes=2240000 last_id=13439998 edges=40154940 cpu_ms=
+23450382
+CHECK_SHARD index=3 nodes=2250000 last_id=13499998 edges=40339152 cpu_ms=
+23559919
+CHECK_SHARD index=3 nodes=2260000 last_id=13559998 edges=40523931 cpu_ms=
+23680382
+CHECK_SHARD index=3 nodes=2270000 last_id=13619998 edges=40706673 cpu_ms=
+23828042
+CHECK_SHARD index=3 nodes=2280000 last_id=13679998 edges=40891872 cpu_ms=
+23999605
+CHECK_SHARD index=3 nodes=2290000 last_id=13739998 edges=41078772 cpu_ms=
+24088611
+CHECK_SHARD index=3 nodes=2300000 last_id=13799998 edges=41264265 cpu_ms=
+24178217
+CHECK_SHARD index=3 nodes=2310000 last_id=13859998 edges=41450136 cpu_ms=
+24269398
+CHECK_SHARD index=3 nodes=2320000 last_id=13919998 edges=41631513 cpu_ms=
+24362059
+CHECK_SHARD index=3 nodes=2330000 last_id=13979998 edges=41815410 cpu_ms=
+24457571
+CHECK_SHARD index=3 nodes=2340000 last_id=14039998 edges=41997543 cpu_ms=
+24557376
+CHECK_SHARD index=3 nodes=2350000 last_id=14099998 edges=42180411 cpu_ms=
+24661498
+CHECK_SHARD index=3 nodes=2360000 last_id=14159998 edges=42363237 cpu_ms=
+24769160
+CHECK_SHARD index=3 nodes=2370000 last_id=14219998 edges=42547890 cpu_ms=
+24885898
+CHECK_SHARD index=3 nodes=2380000 last_id=14279998 edges=42729876 cpu_ms=
+25018826
+CHECK_SHARD index=3 nodes=2390000 last_id=14339998 edges=42915138 cpu_ms=
+25225498
+CHECK_SHARD index=3 nodes=2400000 last_id=14399998 edges=43100169 cpu_ms=
+25313779
+CHECK_SHARD index=3 nodes=2410000 last_id=14459998 edges=43284129 cpu_ms=
+25403391
+CHECK_SHARD index=3 nodes=2420000 last_id=14519998 edges=43470147 cpu_ms=
+25495208
+CHECK_SHARD index=3 nodes=2430000 last_id=14579998 edges=43655367 cpu_ms=
+25587696
+CHECK_SHARD index=3 nodes=2440000 last_id=14639998 edges=43839978 cpu_ms=
+25680789
+CHECK_SHARD index=3 nodes=2450000 last_id=14699998 edges=44025051 cpu_ms=
+25778150
+CHECK_SHARD index=3 nodes=2460000 last_id=14759998 edges=44210985 cpu_ms=
+25880403
+CHECK_SHARD index=3 nodes=2470000 last_id=14819998 edges=44394042 cpu_ms=
+25986265
+CHECK_SHARD index=3 nodes=2480000 last_id=14879998 edges=44579955 cpu_ms=
+26103666
+CHECK_SHARD index=3 nodes=2490000 last_id=14939998 edges=44768094 cpu_ms=
+26238956
+CHECK_SHARD index=3 nodes=2500000 last_id=14999998 edges=44948778 cpu_ms=
+26420165
+CHECK_SHARD index=3 nodes=2510000 last_id=15059998 edges=45136665 cpu_ms=
+26701160
+CHECK_SHARD index=3 nodes=2520000 last_id=15119998 edges=45323082 cpu_ms=
+26834538
+CHECK_SHARD index=3 nodes=2530000 last_id=15179998 edges=45508785 cpu_ms=
+26964286
+CHECK_SHARD index=3 nodes=2540000 last_id=15239998 edges=45691317 cpu_ms=
+27113805
+CHECK_SHARD index=3 nodes=2550000 last_id=15299998 edges=45873912 cpu_ms=
+27271525
+CHECK_SHARD index=3 nodes=2560000 last_id=15359998 edges=46054575 cpu_ms=
+27428875
+CHECK_SHARD index=3 nodes=2570000 last_id=15419998 edges=46242315 cpu_ms=
+27611986
+CHECK_SHARD index=3 nodes=2580000 last_id=15479998 edges=46428417 cpu_ms=
+27903536
+CHECK_SHARD index=3 nodes=2590000 last_id=15539998 edges=46614918 cpu_ms=
+28034760
+CHECK_SHARD index=3 nodes=2600000 last_id=15599998 edges=46796946 cpu_ms=
+28167535
+CHECK_SHARD index=3 nodes=2610000 last_id=15659998 edges=46981179 cpu_ms=
+28313955
+CHECK_SHARD index=3 nodes=2620000 last_id=15719998 edges=47167743 cpu_ms=
+28462270
+CHECK_SHARD index=3 nodes=2630000 last_id=15779998 edges=47354265 cpu_ms=
+28598658
+CHECK_SHARD index=3 nodes=2640000 last_id=15839998 edges=47534067 cpu_ms=
+28735338
+CHECK_SHARD index=3 nodes=2650000 last_id=15899998 edges=47720484 cpu_ms=
+28874556
+CHECK_SHARD index=3 nodes=2660000 last_id=15959998 edges=47904801 cpu_ms=
+29032937
+CHECK_SHARD index=3 nodes=2670000 last_id=16019998 edges=48092877 cpu_ms=
+29185799
+CHECK_SHARD index=3 nodes=2680000 last_id=16079998 edges=48261528 cpu_ms=
+29323966
+CHECK_SHARD index=3 nodes=2690000 last_id=16139998 edges=48446622 cpu_ms=
+29481878
+CHECK_SHARD index=3 nodes=2700000 last_id=16199998 edges=48634131 cpu_ms=
+29648168
+CHECK_SHARD index=3 nodes=2710000 last_id=16259998 edges=48814752 cpu_ms=
+29851358
+CHECK_SHARD index=3 nodes=2720000 last_id=16319998 edges=49000287 cpu_ms=
+30132273
+CHECK_SHARD index=3 nodes=2730000 last_id=16379998 edges=49183344 cpu_ms=
+30255105
+CHECK_SHARD index=3 nodes=2740000 last_id=16439998 edges=49367535 cpu_ms=
+30377049
+CHECK_SHARD index=3 nodes=2750000 last_id=16499998 edges=49550487 cpu_ms=
+30496725
+CHECK_SHARD index=3 nodes=2760000 last_id=16559998 edges=49736904 cpu_ms=
+30623597
+CHECK_SHARD index=3 nodes=2770000 last_id=16619998 edges=49920234 cpu_ms=
+30760617
+CHECK_SHARD index=3 nodes=2780000 last_id=16679998 edges=50102577 cpu_ms=
+30894030
+CHECK_SHARD index=3 nodes=2790000 last_id=16739998 edges=50287482 cpu_ms=
+31032795
+CHECK_SHARD index=3 nodes=2800000 last_id=16799998 edges=50468418 cpu_ms=
+31169997
+CHECK_SHARD index=3 nodes=2810000 last_id=16859998 edges=50651202 cpu_ms=
+31306533
+CHECK_SHARD index=3 nodes=2820000 last_id=16919998 edges=50836023 cpu_ms=
+31446175
+CHECK_SHARD index=3 nodes=2830000 last_id=16979998 edges=51021012 cpu_ms=
+31581422
+CHECK_SHARD index=3 nodes=2840000 last_id=17039998 edges=51205875 cpu_ms=
+31722568
+CHECK_SHARD index=3 nodes=2850000 last_id=17099998 edges=51391851 cpu_ms=
+31920194
+CHECK_SHARD index=3 nodes=2860000 last_id=17159998 edges=51576294 cpu_ms=
+32104522
+CHECK_SHARD index=3 nodes=2870000 last_id=17219998 edges=51760065 cpu_ms=
+32199671
+CHECK_SHARD index=3 nodes=2880000 last_id=17279998 edges=51946524 cpu_ms=
+32296386
+CHECK_SHARD index=3 nodes=2890000 last_id=17339998 edges=52132185 cpu_ms=
+32395236
+CHECK_SHARD index=3 nodes=2900000 last_id=17399998 edges=52317426 cpu_ms=
+32499263
+CHECK_SHARD index=3 nodes=2910000 last_id=17459998 edges=52505187 cpu_ms=
+32620484
+CHECK_SHARD index=3 nodes=2920000 last_id=17519998 edges=52691541 cpu_ms=
+32757542
+CHECK_SHARD index=3 nodes=2930000 last_id=17579998 edges=52876803 cpu_ms=
+32916380
+CHECK_SHARD index=3 nodes=2940000 last_id=17639998 edges=53064921 cpu_ms=
+33070927
+CHECK_SHARD index=3 nodes=2950000 last_id=17699998 edges=53247495 cpu_ms=
+33221661
+CHECK_SHARD index=3 nodes=2960000 last_id=17759998 edges=53432799 cpu_ms=
+33374689
+CHECK_SHARD index=3 nodes=2970000 last_id=17819998 edges=53621946 cpu_ms=
+33538544
+CHECK_SHARD index=3 nodes=2980000 last_id=17879998 edges=53807565 cpu_ms=
+33737336
+CHECK_SHARD index=3 nodes=2990000 last_id=17939998 edges=53989131 cpu_ms=
+33971004
+CHECK_SHARD index=3 nodes=3000000 last_id=17999998 edges=54173091 cpu_ms=
+34320064
+CHECK_SHARD index=3 nodes=3010000 last_id=18059998 edges=54358248 cpu_ms=
+34450184
+CHECK_SHARD index=3 nodes=3020000 last_id=18119998 edges=54541452 cpu_ms=
+34581607
+CHECK_SHARD index=3 nodes=3030000 last_id=18179998 edges=54728604 cpu_ms=
+34706081
+CHECK_SHARD index=3 nodes=3040000 last_id=18239998 edges=54914160 cpu_ms=
+34829436
+CHECK_SHARD index=3 nodes=3050000 last_id=18299998 edges=55095621 cpu_ms=
+34957186
+CHECK_SHARD index=3 nodes=3060000 last_id=18359998 edges=55279014 cpu_ms=
+35094253
+CHECK_SHARD index=3 nodes=3070000 last_id=18419998 edges=55463373 cpu_ms=
+35238829
+CHECK_SHARD index=3 nodes=3080000 last_id=18479998 edges=55646577 cpu_ms=
+35376293
+CHECK_SHARD index=3 nodes=3090000 last_id=18539998 edges=55829067 cpu_ms=
+35511570
+CHECK_SHARD index=3 nodes=3100000 last_id=18599998 edges=56010927 cpu_ms=
+35648510
+CHECK_SHARD index=3 nodes=3110000 last_id=18659998 edges=56193186 cpu_ms=
+35792833
+CHECK_SHARD index=3 nodes=3120000 last_id=18719998 edges=56377524 cpu_ms=
+35962234
+CHECK_SHARD index=3 nodes=3130000 last_id=18779998 edges=56563668 cpu_ms=
+36145531
+CHECK_SHARD index=3 nodes=3140000 last_id=18839998 edges=56743134 cpu_ms=
+36343131
+CHECK_SHARD index=3 nodes=3150000 last_id=18899998 edges=56927787 cpu_ms=
+36697431
+CHECK_SHARD index=3 nodes=3160000 last_id=18959998 edges=57110970 cpu_ms=
+36822529
+CHECK_SHARD index=3 nodes=3170000 last_id=19019998 edges=57294300 cpu_ms=
+36947707
+CHECK_SHARD index=3 nodes=3180000 last_id=19079998 edges=57480024 cpu_ms=
+37081143
+CHECK_SHARD index=3 nodes=3190000 last_id=19139998 edges=57660918 cpu_ms=
+37213053
+CHECK_SHARD index=3 nodes=3200000 last_id=19199998 edges=57845676 cpu_ms=
+37342351
+CHECK_SHARD index=3 nodes=3210000 last_id=19259998 edges=58030350 cpu_ms=
+37478456
+CHECK_SHARD index=3 nodes=3220000 last_id=19319998 edges=58211349 cpu_ms=
+37618495
+CHECK_SHARD index=3 nodes=3230000 last_id=19379998 edges=58397619 cpu_ms=
+37787698
+CHECK_SHARD index=3 nodes=3240000 last_id=19439998 edges=58586073 cpu_ms=
+38049559
+CHECK_SHARD index=3 nodes=3250000 last_id=19499998 edges=58769277 cpu_ms=
+38255556
+CHECK_SHARD index=3 nodes=3260000 last_id=19559998 edges=58958697 cpu_ms=
+38399528
+CHECK_SHARD index=3 nodes=3270000 last_id=19619998 edges=59140473 cpu_ms=
+38534899
+CHECK_SHARD index=3 nodes=3280000 last_id=19679998 edges=59313786 cpu_ms=
+38662974
+CHECK_SHARD index=3 nodes=3290000 last_id=19739998 edges=59487897 cpu_ms=
+38780824
+CHECK_SHARD index=3 nodes=3300000 last_id=19799998 edges=59662491 cpu_ms=
+38901706
+CHECK_SHARD index=3 nodes=3310000 last_id=19859998 edges=59838786 cpu_ms=
+39036525
+CHECK_SHARD index=3 nodes=3320000 last_id=19919998 edges=60014976 cpu_ms=
+39171724
+CHECK_SHARD index=3 nodes=3330000 last_id=19979998 edges=60196038 cpu_ms=
+39300522
+CHECK_SHARD index=3 nodes=3340000 last_id=20039998 edges=60381636 cpu_ms=
+39429588
+CHECK_SHARD index=3 nodes=3350000 last_id=20099998 edges=60566310 cpu_ms=
+39567302
+CHECK_SHARD index=3 nodes=3360000 last_id=20159998 edges=60750354 cpu_ms=
+39720835
+CHECK_SHARD index=3 nodes=3370000 last_id=20219998 edges=60933411 cpu_ms=
+39876035
+CHECK_SHARD index=3 nodes=3380000 last_id=20279998 edges=61118568 cpu_ms=
+40038984
+CHECK_SHARD index=3 nodes=3390000 last_id=20339998 edges=61301163 cpu_ms=
+40221039
+CHECK_SHARD index=3 nodes=3400000 last_id=20399998 edges=61485501 cpu_ms=
+40446431
+CHECK_SHARD index=3 nodes=3410000 last_id=20459998 edges=61670154 cpu_ms=
+40744123
+CHECK_SHARD index=3 nodes=3420000 last_id=20519998 edges=61851027 cpu_ms=
+40871247
+CHECK_SHARD index=3 nodes=3430000 last_id=20579998 edges=62032677 cpu_ms=
+40999574
+CHECK_SHARD index=3 nodes=3440000 last_id=20639998 edges=62212752 cpu_ms=
+41127152
+CHECK_SHARD index=3 nodes=3450000 last_id=20699998 edges=62392260 cpu_ms=
+41255663
+CHECK_SHARD index=3 nodes=3460000 last_id=20759998 edges=62574981 cpu_ms=
+41386808
+CHECK_SHARD index=3 nodes=3470000 last_id=20819998 edges=62758689 cpu_ms=
+41526597
+CHECK_SHARD index=3 nodes=3480000 last_id=20879998 edges=62944518 cpu_ms=
+41665664
+CHECK_SHARD index=3 nodes=3490000 last_id=20939998 edges=63128835 cpu_ms=
+41805002
+CHECK_SHARD index=3 nodes=3500000 last_id=20999998 edges=63312795 cpu_ms=
+41966036
+CHECK_SHARD index=3 nodes=3510000 last_id=21059998 edges=63493773 cpu_ms=
+42281380
+CHECK_SHARD index=3 nodes=3520000 last_id=21119998 edges=63676011 cpu_ms=
+42589828
+CHECK_SHARD index=3 nodes=3530000 last_id=21179998 edges=63859782 cpu_ms=
+42918675
+CHECK_SHARD index=3 nodes=3540000 last_id=21239998 edges=64040130 cpu_ms=
+43087995
+CHECK_SHARD index=3 nodes=3550000 last_id=21299998 edges=64222830 cpu_ms=
+43211121
+CHECK_SHARD index=3 nodes=3560000 last_id=21359998 edges=64404669 cpu_ms=
+43347338
+CHECK_SHARD index=3 nodes=3570000 last_id=21419998 edges=64587579 cpu_ms=
+43527551
+CHECK_SHARD index=3 nodes=3580000 last_id=21479998 edges=64770447 cpu_ms=
+43774297
+CHECK_SHARD index=3 nodes=3590000 last_id=21539998 edges=64951572 cpu_ms=
+43861429
+CHECK_SHARD index=3 nodes=3600000 last_id=21599998 edges=65131941 cpu_ms=
+43948562
+CHECK_SHARD index=3 nodes=3610000 last_id=21659998 edges=65312226 cpu_ms=
+44037268
+CHECK_SHARD index=3 nodes=3620000 last_id=21719998 edges=65493981 cpu_ms=
+44127681
+CHECK_SHARD index=3 nodes=3630000 last_id=21779998 edges=65677941 cpu_ms=
+44221279
+CHECK_SHARD index=3 nodes=3640000 last_id=21839998 edges=65860179 cpu_ms=
+44313979
+CHECK_SHARD index=3 nodes=3650000 last_id=21899998 edges=66040128 cpu_ms=
+44406650
+CHECK_SHARD index=3 nodes=3660000 last_id=21959998 edges=66222408 cpu_ms=
+44500118
+CHECK_SHARD index=3 nodes=3670000 last_id=22019998 edges=66406389 cpu_ms=
+44595848
+CHECK_SHARD index=3 nodes=3680000 last_id=22079998 edges=66591294 cpu_ms=
+44693228
+CHECK_SHARD index=3 nodes=3690000 last_id=22139998 edges=66773154 cpu_ms=
+44792132
+CHECK_SHARD index=3 nodes=3700000 last_id=22199998 edges=66959298 cpu_ms=
+44897694
+CHECK_SHARD index=3 nodes=3710000 last_id=22259998 edges=67147437 cpu_ms=
+45008545
+CHECK_SHARD index=3 nodes=3720000 last_id=22319998 edges=67333623 cpu_ms=
+45122645
+CHECK_SHARD index=3 nodes=3730000 last_id=22379998 edges=67515714 cpu_ms=
+45243205
+CHECK_SHARD index=3 nodes=3740000 last_id=22439998 edges=67701165 cpu_ms=
+45375406
+CHECK_SHARD index=3 nodes=3750000 last_id=22499998 edges=67887855 cpu_ms=
+45533481
+CHECK_SHARD index=3 nodes=3760000 last_id=22559998 edges=68065347 cpu_ms=
+45818741
+CHECK_SHARD index=3 nodes=3770000 last_id=22619998 edges=68249265 cpu_ms=
+45935343
+CHECK_SHARD index=3 nodes=3780000 last_id=22679998 edges=68431944 cpu_ms=
+46025378
+CHECK_SHARD index=3 nodes=3790000 last_id=22739998 edges=68617332 cpu_ms=
+46117805
+CHECK_SHARD index=3 nodes=3800000 last_id=22799998 edges=68804799 cpu_ms=
+46211631
+CHECK_SHARD index=3 nodes=3810000 last_id=22859998 edges=68990523 cpu_ms=
+46305146
+CHECK_SHARD index=3 nodes=3820000 last_id=22919998 edges=69171438 cpu_ms=
+46397664
+CHECK_SHARD index=3 nodes=3830000 last_id=22979998 edges=69355860 cpu_ms=
+46493564
+CHECK_SHARD index=3 nodes=3840000 last_id=23039998 edges=69544902 cpu_ms=
+46593487
+CHECK_SHARD index=3 nodes=3850000 last_id=23099998 edges=69731634 cpu_ms=
+46693309
+CHECK_SHARD index=3 nodes=3860000 last_id=23159998 edges=69914880 cpu_ms=
+46793088
+CHECK_SHARD index=3 nodes=3870000 last_id=23219998 edges=70101654 cpu_ms=
+46896421
+CHECK_SHARD index=3 nodes=3880000 last_id=23279998 edges=70285803 cpu_ms=
+46999326
+CHECK_SHARD index=3 nodes=3890000 last_id=23339998 edges=70471863 cpu_ms=
+47106248
+CHECK_SHARD index=3 nodes=3900000 last_id=23399998 edges=70660296 cpu_ms=
+47218339
+CHECK_SHARD index=3 nodes=3910000 last_id=23459998 edges=70844256 cpu_ms=
+47332775
+CHECK_SHARD index=3 nodes=3920000 last_id=23519998 edges=71026620 cpu_ms=
+47453517
+CHECK_SHARD index=3 nodes=3930000 last_id=23579998 edges=71212197 cpu_ms=
+47587916
+CHECK_SHARD index=3 nodes=3940000 last_id=23639998 edges=71397921 cpu_ms=
+47744003
+CHECK_SHARD index=3 nodes=3950000 last_id=23699998 edges=71582007 cpu_ms=
+47956374
+CHECK_SHARD index=3 nodes=3960000 last_id=23759998 edges=71769537 cpu_ms=
+48198182
+CHECK_SHARD index=3 nodes=3970000 last_id=23819998 edges=71958432 cpu_ms=
+48296574
+CHECK_SHARD index=3 nodes=3980000 last_id=23879998 edges=72146046 cpu_ms=
+48396071
+CHECK_SHARD index=3 nodes=3990000 last_id=23939998 edges=72332820 cpu_ms=
+48496636
+CHECK_SHARD index=3 nodes=4000000 last_id=23999998 edges=72519909 cpu_ms=
+48600243
+CHECK_SHARD index=3 nodes=4010000 last_id=24059998 edges=72705339 cpu_ms=
+48706387
+CHECK_SHARD index=3 nodes=4020000 last_id=24119998 edges=72890853 cpu_ms=
+48816627
+CHECK_SHARD index=3 nodes=4030000 last_id=24179998 edges=73074246 cpu_ms=
+48931656
+CHECK_SHARD index=3 nodes=4040000 last_id=24239998 edges=73260978 cpu_ms=
+49056131
+CHECK_SHARD index=3 nodes=4050000 last_id=24299998 edges=73446387 cpu_ms=
+49194432
+CHECK_SHARD index=3 nodes=4060000 last_id=24359998 edges=73633266 cpu_ms=
+49369141
+CHECK_SHARD index=3 nodes=4070000 last_id=24419998 edges=73821909 cpu_ms=
+49701900
+CHECK_SHARD index=3 nodes=4080000 last_id=24479998 edges=74007759 cpu_ms=
+49792252
+CHECK_SHARD index=3 nodes=4090000 last_id=24539998 edges=74190123 cpu_ms=
+49882150
+CHECK_SHARD index=3 nodes=4100000 last_id=24599998 edges=74375658 cpu_ms=
+49973793
+CHECK_SHARD index=3 nodes=4110000 last_id=24659998 edges=74562243 cpu_ms=
+50067281
+CHECK_SHARD index=3 nodes=4120000 last_id=24719998 edges=74744040 cpu_ms=
+50159237
+CHECK_SHARD index=3 nodes=4130000 last_id=24779998 edges=74932221 cpu_ms=
+50255411
+CHECK_SHARD index=3 nodes=4140000 last_id=24839998 edges=75117630 cpu_ms=
+50350508
+CHECK_SHARD index=3 nodes=4150000 last_id=24899998 edges=75304215 cpu_ms=
+50447471
+CHECK_SHARD index=3 nodes=4160000 last_id=24959998 edges=75491724 cpu_ms=
+50545154
+CHECK_SHARD index=3 nodes=4170000 last_id=25019998 edges=75678897 cpu_ms=
+50643939
+CHECK_SHARD index=3 nodes=4180000 last_id=25079998 edges=75860547 cpu_ms=
+50741120
+CHECK_SHARD index=3 nodes=4190000 last_id=25139998 edges=76046334 cpu_ms=
+50841638
+CHECK_SHARD index=3 nodes=4200000 last_id=25199998 edges=76231617 cpu_ms=
+50943641
+CHECK_SHARD index=3 nodes=4210000 last_id=25259998 edges=76416165 cpu_ms=
+51048769
+CHECK_SHARD index=3 nodes=4220000 last_id=25319998 edges=76603128 cpu_ms=
+51158168
+CHECK_SHARD index=3 nodes=4230000 last_id=25379998 edges=76790742 cpu_ms=
+51271829
+CHECK_SHARD index=3 nodes=4240000 last_id=25439998 edges=76979343 cpu_ms=
+51391201
+CHECK_SHARD index=3 nodes=4250000 last_id=25499998 edges=77167125 cpu_ms=
+51517963
+CHECK_SHARD index=3 nodes=4260000 last_id=25559998 edges=77350476 cpu_ms=
+51653423
+CHECK_SHARD index=3 nodes=4270000 last_id=25619998 edges=77538846 cpu_ms=
+51813933
+CHECK_SHARD index=3 nodes=4280000 last_id=25679998 edges=77727594 cpu_ms=
+52024535
+CHECK_SHARD index=3 nodes=4290000 last_id=25739998 edges=77911260 cpu_ms=
+52333165
+CHECK_SHARD index=3 nodes=4300000 last_id=25799998 edges=78097698 cpu_ms=
+52424498
+CHECK_SHARD index=3 nodes=4310000 last_id=25859998 edges=78285711 cpu_ms=
+52517142
+CHECK_SHARD index=3 nodes=4320000 last_id=25919998 edges=78466794 cpu_ms=
+52607352
+CHECK_SHARD index=3 nodes=4330000 last_id=25979998 edges=78653946 cpu_ms=
+52701249
+CHECK_SHARD index=3 nodes=4340000 last_id=26039998 edges=78834021 cpu_ms=
+52793790
+CHECK_SHARD index=3 nodes=4350000 last_id=26099998 edges=79012185 cpu_ms=
+52885735
+CHECK_SHARD index=3 nodes=4360000 last_id=26159998 edges=79189530 cpu_ms=
+52977855
+CHECK_SHARD index=3 nodes=4370000 last_id=26219998 edges=79368219 cpu_ms=
+53071157
+CHECK_SHARD index=3 nodes=4380000 last_id=26279998 edges=79547307 cpu_ms=
+53164500
+CHECK_SHARD index=3 nodes=4390000 last_id=26339998 edges=79730049 cpu_ms=
+53261561
+CHECK_SHARD index=3 nodes=4400000 last_id=26399998 edges=79914513 cpu_ms=
+53360683
+CHECK_SHARD index=3 nodes=4410000 last_id=26459998 edges=80099733 cpu_ms=
+53462015
+CHECK_SHARD index=3 nodes=4420000 last_id=26519998 edges=80282559 cpu_ms=
+53564121
+CHECK_SHARD index=3 nodes=4430000 last_id=26579998 edges=80466813 cpu_ms=
+53669770
+CHECK_SHARD index=3 nodes=4440000 last_id=26639998 edges=80651907 cpu_ms=
+53779676
+CHECK_SHARD index=3 nodes=4450000 last_id=26699998 edges=80836707 cpu_ms=
+53894155
+CHECK_SHARD index=3 nodes=4460000 last_id=26759998 edges=81022347 cpu_ms=
+54015887
+CHECK_SHARD index=3 nodes=4470000 last_id=26819998 edges=81210927 cpu_ms=
+54148986
+CHECK_SHARD index=3 nodes=4480000 last_id=26879998 edges=81398142 cpu_ms=
+54296609
+CHECK_SHARD index=3 nodes=4490000 last_id=26939998 edges=81583425 cpu_ms=
+54475352
+CHECK_SHARD index=3 nodes=4500000 last_id=26999998 edges=81770052 cpu_ms=
+54869728
+CHECK_SHARD index=3 nodes=4510000 last_id=27059998 edges=81956532 cpu_ms=
+54961360
+CHECK_SHARD index=3 nodes=4520000 last_id=27119998 edges=82137300 cpu_ms=
+55051297
+CHECK_SHARD index=3 nodes=4530000 last_id=27179998 edges=82321050 cpu_ms=
+55143564
+CHECK_SHARD index=3 nodes=4540000 last_id=27239998 edges=82506039 cpu_ms=
+55236792
+CHECK_SHARD index=3 nodes=4550000 last_id=27299998 edges=82693989 cpu_ms=
+55331939
+CHECK_SHARD index=3 nodes=4560000 last_id=27359998 edges=82878558 cpu_ms=
+55426394
+CHECK_SHARD index=3 nodes=4570000 last_id=27419998 edges=83066907 cpu_ms=
+55523370
+CHECK_SHARD index=3 nodes=4580000 last_id=27479998 edges=83253765 cpu_ms=
+55619629
+CHECK_SHARD index=3 nodes=4590000 last_id=27539998 edges=83437368 cpu_ms=
+55716299
+CHECK_SHARD index=3 nodes=4600000 last_id=27599998 edges=83624331 cpu_ms=
+55815683
+CHECK_SHARD index=3 nodes=4610000 last_id=27659998 edges=83808648 cpu_ms=
+55913832
+CHECK_SHARD index=3 nodes=4620000 last_id=27719998 edges=83995884 cpu_ms=
+56015653
+CHECK_SHARD index=3 nodes=4630000 last_id=27779998 edges=84181818 cpu_ms=
+56119010
+CHECK_SHARD index=3 nodes=4640000 last_id=27839998 edges=84368025 cpu_ms=
+56224733
+CHECK_SHARD index=3 nodes=4650000 last_id=27899998 edges=84550599 cpu_ms=
+56330586
+CHECK_SHARD index=3 nodes=4660000 last_id=27959998 edges=84730338 cpu_ms=
+56439125
+CHECK_SHARD index=3 nodes=4670000 last_id=28019998 edges=84917700 cpu_ms=
+56555576
+CHECK_SHARD index=3 nodes=4680000 last_id=28079998 edges=85102857 cpu_ms=
+56676882
+CHECK_SHARD index=3 nodes=4690000 last_id=28139998 edges=85288014 cpu_ms=
+56803701
+CHECK_SHARD index=3 nodes=4700000 last_id=28199998 edges=85476384 cpu_ms=
+56942984
+CHECK_SHARD index=3 nodes=4710000 last_id=28259998 edges=85665363 cpu_ms=
+57103341
+CHECK_SHARD index=3 nodes=4720000 last_id=28319998 edges=85851066 cpu_ms=
+57307121
+CHECK_SHARD index=3 nodes=4730000 last_id=28379998 edges=86036412 cpu_ms=
+57669088
+CHECK_SHARD index=3 nodes=4740000 last_id=28439998 edges=86221527 cpu_ms=
+57759167
+CHECK_SHARD index=3 nodes=4750000 last_id=28499998 edges=86405340 cpu_ms=
+57850169
+CHECK_SHARD index=3 nodes=4760000 last_id=28559998 edges=86592702 cpu_ms=
+57943279
+CHECK_SHARD index=3 nodes=4770000 last_id=28619998 edges=86777481 cpu_ms=
+58035307
+CHECK_SHARD index=3 nodes=4780000 last_id=28679998 edges=86960517 cpu_ms=
+58136082
+CHECK_SHARD index=3 nodes=4790000 last_id=28739998 edges=87145737 cpu_ms=
+58247715
+CHECK_SHARD index=3 nodes=4800000 last_id=28799998 edges=87332847 cpu_ms=
+58362277
+CHECK_SHARD index=3 nodes=4810000 last_id=28859998 edges=87519012 cpu_ms=
+58474103
+CHECK_SHARD index=3 nodes=4820000 last_id=28919998 edges=87704211 cpu_ms=
+58586488
+CHECK_SHARD index=3 nodes=4830000 last_id=28979998 edges=87894177 cpu_ms=
+58699590
+CHECK_SHARD index=3 nodes=4840000 last_id=29039998 edges=88081812 cpu_ms=
+58799563
+CHECK_SHARD index=3 nodes=4850000 last_id=29099998 edges=88261572 cpu_ms=
+58896931
+CHECK_SHARD index=3 nodes=4860000 last_id=29159998 edges=88446393 cpu_ms=
+58998162
+CHECK_SHARD index=3 nodes=4870000 last_id=29219998 edges=88630983 cpu_ms=
+59100924
+CHECK_SHARD index=3 nodes=4880000 last_id=29279998 edges=88819353 cpu_ms=
+59208210
+CHECK_SHARD index=3 nodes=4890000 last_id=29339998 edges=89006295 cpu_ms=
+59317636
+CHECK_SHARD index=3 nodes=4900000 last_id=29399998 edges=89186853 cpu_ms=
+59426696
+CHECK_SHARD index=3 nodes=4910000 last_id=29459998 edges=89373837 cpu_ms=
+59541959
+CHECK_SHARD index=3 nodes=4920000 last_id=29519998 edges=89562543 cpu_ms=
+59662864
+CHECK_SHARD index=3 nodes=4930000 last_id=29579998 edges=89748204 cpu_ms=
+59788802
+CHECK_SHARD index=3 nodes=4940000 last_id=29639998 edges=89928951 cpu_ms=
+59922987
+CHECK_SHARD index=3 nodes=4950000 last_id=29699998 edges=90115935 cpu_ms=
+60055083
+CHECK_SHARD index=3 nodes=4960000 last_id=29759998 edges=90305019 cpu_ms=
+60147043
+CHECK_SHARD index=3 nodes=4970000 last_id=29819998 edges=90490575 cpu_ms=
+60237849
+CHECK_SHARD index=3 nodes=4980000 last_id=29879998 edges=90678063 cpu_ms=
+60330950
+CHECK_SHARD index=3 nodes=4990000 last_id=29939998 edges=90867063 cpu_ms=
+60426104
+CHECK_SHARD index=3 nodes=5000000 last_id=29999998 edges=91053522 cpu_ms=
+60518899
+CHECK_SHARD index=3 nodes=5010000 last_id=30059998 edges=91237734 cpu_ms=
+60611382
+CHECK_SHARD index=3 nodes=5020000 last_id=30119998 edges=91422933 cpu_ms=
+60704900
+CHECK_SHARD index=3 nodes=5030000 last_id=30179998 edges=91612437 cpu_ms=
+60800744
+CHECK_SHARD index=3 nodes=5040000 last_id=30239998 edges=91797489 cpu_ms=
+60895158
+CHECK_SHARD index=3 nodes=5050000 last_id=30299998 edges=91986006 cpu_ms=
+60992022
+CHECK_SHARD index=3 nodes=5060000 last_id=30359998 edges=92173935 cpu_ms=
+61089042
+CHECK_SHARD index=3 nodes=5070000 last_id=30419998 edges=92362368 cpu_ms=
+61187273
+CHECK_SHARD index=3 nodes=5080000 last_id=30479998 edges=92550171 cpu_ms=
+61285573
+CHECK_SHARD index=3 nodes=5090000 last_id=30539998 edges=92740494 cpu_ms=
+61386133
+CHECK_SHARD index=3 nodes=5100000 last_id=30599998 edges=92918574 cpu_ms=
+61483044
+CHECK_SHARD index=3 nodes=5110000 last_id=30659998 edges=93098334 cpu_ms=
+61582504
+CHECK_SHARD index=3 nodes=5120000 last_id=30719998 edges=93279438 cpu_ms=
+61684799
+CHECK_SHARD index=3 nodes=5130000 last_id=30779998 edges=93462138 cpu_ms=
+61792083
+CHECK_SHARD index=3 nodes=5140000 last_id=30839998 edges=93646623 cpu_ms=
+61904441
+CHECK_SHARD index=3 nodes=5150000 last_id=30899998 edges=93832830 cpu_ms=
+62025957
+CHECK_SHARD index=3 nodes=5160000 last_id=30959998 edges=94020402 cpu_ms=
+62170228
+CHECK_SHARD index=3 nodes=5170000 last_id=31019998 edges=94208142 cpu_ms=
+62322891
+CHECK_SHARD index=3 nodes=5180000 last_id=31079998 edges=94391262 cpu_ms=
+62477468
+CHECK_SHARD index=3 nodes=5190000 last_id=31139998 edges=94577532 cpu_ms=
+62651185
+CHECK_SHARD index=3 nodes=5200000 last_id=31199998 edges=94763655 cpu_ms=
+62842894
+CHECK_SHARD index=3 nodes=5210000 last_id=31259998 edges=94946838 cpu_ms=
+63165772
+CHECK_SHARD index=3 nodes=5220000 last_id=31319998 edges=95133801 cpu_ms=
+63455848
+CHECK_SHARD index=3 nodes=5230000 last_id=31379998 edges=95318349 cpu_ms=
+63557866
+CHECK_SHARD index=3 nodes=5240000 last_id=31439998 edges=95503695 cpu_ms=
+63672591
+CHECK_SHARD index=3 nodes=5250000 last_id=31499998 edges=95692170 cpu_ms=
+63793303
+CHECK_SHARD index=3 nodes=5260000 last_id=31559998 edges=95876088 cpu_ms=
+63913865
+CHECK_SHARD index=3 nodes=5270000 last_id=31619998 edges=96059397 cpu_ms=
+64030736
+CHECK_SHARD index=3 nodes=5280000 last_id=31679998 edges=96245415 cpu_ms=
+64139754
+CHECK_SHARD index=3 nodes=5290000 last_id=31739998 edges=96428850 cpu_ms=
+64246064
+CHECK_SHARD index=3 nodes=5300000 last_id=31799998 edges=96612999 cpu_ms=
+64351471
+CHECK_SHARD index=3 nodes=5310000 last_id=31859998 edges=96799920 cpu_ms=
+64457478
+CHECK_SHARD index=3 nodes=5320000 last_id=31919998 edges=96985224 cpu_ms=
+64562507
+CHECK_SHARD index=3 nodes=5330000 last_id=31979998 edges=97170612 cpu_ms=
+64668344
+CHECK_SHARD index=3 nodes=5340000 last_id=32039998 edges=97358940 cpu_ms=
+64776533
+CHECK_SHARD index=3 nodes=5350000 last_id=32099998 edges=97547730 cpu_ms=
+64886541
+CHECK_SHARD index=3 nodes=5360000 last_id=32159998 edges=97733748 cpu_ms=
+64993962
+CHECK_SHARD index=3 nodes=5370000 last_id=32219998 edges=97920312 cpu_ms=
+65099273
+CHECK_SHARD index=3 nodes=5380000 last_id=32279998 edges=98108955 cpu_ms=
+65207930
+CHECK_SHARD index=3 nodes=5390000 last_id=32339998 edges=98295939 cpu_ms=
+65318231
+CHECK_SHARD index=3 nodes=5400000 last_id=32399998 edges=98483511 cpu_ms=
+65432232
+CHECK_SHARD index=3 nodes=5410000 last_id=32459998 edges=98670474 cpu_ms=
+65549521
+CHECK_SHARD index=3 nodes=5420000 last_id=32519998 edges=98856660 cpu_ms=
+65672185
+CHECK_SHARD index=3 nodes=5430000 last_id=32579998 edges=99038331 cpu_ms=
+65796924
+CHECK_SHARD index=3 nodes=5440000 last_id=32639998 edges=99220758 cpu_ms=
+65931495
+CHECK_SHARD index=3 nodes=5450000 last_id=32699998 edges=99407931 cpu_ms=
+66082835
+CHECK_SHARD index=3 nodes=5460000 last_id=32759998 edges=99593781 cpu_ms=
+66256681
+CHECK_SHARD index=3 nodes=5470000 last_id=32819998 edges=99778014 cpu_ms=
+66484478
+CHECK_SHARD index=3 nodes=5480000 last_id=32879998 edges=99966846 cpu_ms=
+66934912
+CHECK_SHARD index=3 nodes=5490000 last_id=32939998 edges=100156875 cpu_ms=
+67030983
+CHECK_SHARD index=3 nodes=5500000 last_id=32999998 edges=100343208 cpu_ms=
+67126303
+CHECK_SHARD index=3 nodes=5510000 last_id=33059998 edges=100530402 cpu_ms=
+67221698
+CHECK_SHARD index=3 nodes=5520000 last_id=33119998 edges=100716945 cpu_ms=
+67315365
+CHECK_SHARD index=3 nodes=5530000 last_id=33179998 edges=100903698 cpu_ms=
+67410542
+CHECK_SHARD index=3 nodes=5540000 last_id=33239998 edges=101093664 cpu_ms=
+67507618
+CHECK_SHARD index=3 nodes=5550000 last_id=33299998 edges=101280165 cpu_ms=
+67603149
+CHECK_SHARD index=3 nodes=5560000 last_id=33359998 edges=101464545 cpu_ms=
+67697894
+CHECK_SHARD index=3 nodes=5570000 last_id=33419998 edges=101651571 cpu_ms=
+67794746
+CHECK_SHARD index=3 nodes=5580000 last_id=33479998 edges=101840382 cpu_ms=
+67892846
+CHECK_SHARD index=3 nodes=5590000 last_id=33539998 edges=102025812 cpu_ms=
+67990065
+CHECK_SHARD index=3 nodes=5600000 last_id=33599998 edges=102213342 cpu_ms=
+68090064
+CHECK_SHARD index=3 nodes=5610000 last_id=33659998 edges=102401313 cpu_ms=
+68190947
+CHECK_SHARD index=3 nodes=5620000 last_id=33719998 edges=102590691 cpu_ms=
+68293237
+CHECK_SHARD index=3 nodes=5630000 last_id=33779998 edges=102772572 cpu_ms=
+68392501
+CHECK_SHARD index=3 nodes=5640000 last_id=33839998 edges=102953823 cpu_ms=
+68492558
+CHECK_SHARD index=3 nodes=5650000 last_id=33899998 edges=103133751 cpu_ms=
+68594479
+CHECK_SHARD index=3 nodes=5660000 last_id=33959998 edges=103319412 cpu_ms=
+68700988
+CHECK_SHARD index=3 nodes=5670000 last_id=34019998 edges=103506228 cpu_ms=
+68809955
+CHECK_SHARD index=3 nodes=5680000 last_id=34079998 edges=103690881 cpu_ms=
+68922195
+CHECK_SHARD index=3 nodes=5690000 last_id=34139998 edges=103876059 cpu_ms=
+69037000
+CHECK_SHARD index=3 nodes=5700000 last_id=34199998 edges=104061846 cpu_ms=
+69157424
+CHECK_SHARD index=3 nodes=5710000 last_id=34259998 edges=104245155 cpu_ms=
+69281094
+CHECK_SHARD index=3 nodes=5720000 last_id=34319998 edges=104428401 cpu_ms=
+69412244
+CHECK_SHARD index=3 nodes=5730000 last_id=34379998 edges=104615385 cpu_ms=
+69556152
+CHECK_SHARD index=3 nodes=5740000 last_id=34439998 edges=104801949 cpu_ms=
+69716572
+CHECK_SHARD index=3 nodes=5750000 last_id=34499998 edges=104984061 cpu_ms=
+69903953
+CHECK_SHARD index=3 nodes=5760000 last_id=34559998 edges=105167286 cpu_ms=
+70190539
+CHECK_SHARD index=3 nodes=5770000 last_id=34619998 edges=105351918 cpu_ms=
+70535960
+CHECK_SHARD index=3 nodes=5780000 last_id=34679998 edges=105536067 cpu_ms=
+70628626
+CHECK_SHARD index=3 nodes=5790000 last_id=34739998 edges=105722358 cpu_ms=
+70721707
+CHECK_SHARD index=3 nodes=5800000 last_id=34799998 edges=105909573 cpu_ms=
+70816091
+CHECK_SHARD index=3 nodes=5810000 last_id=34859998 edges=106099812 cpu_ms=
+70912859
+CHECK_SHARD index=3 nodes=5820000 last_id=34919998 edges=106285788 cpu_ms=
+71003536
+CHECK_SHARD index=3 nodes=5830000 last_id=34979998 edges=106474536 cpu_ms=
+71096707
+CHECK_SHARD index=3 nodes=5840000 last_id=35039998 edges=106664481 cpu_ms=
+71189912
+CHECK_SHARD index=3 nodes=5850000 last_id=35099998 edges=106849617 cpu_ms=
+71281244
+CHECK_SHARD index=3 nodes=5860000 last_id=35159998 edges=107036118 cpu_ms=
+71374195
+CHECK_SHARD index=3 nodes=5870000 last_id=35219998 edges=107224383 cpu_ms=
+71468888
+CHECK_SHARD index=3 nodes=5880000 last_id=35279998 edges=107409372 cpu_ms=
+71561927
+CHECK_SHARD index=3 nodes=5890000 last_id=35339998 edges=107597637 cpu_ms=
+71657498
+CHECK_SHARD index=3 nodes=5900000 last_id=35399998 edges=107784243 cpu_ms=
+71752889
+CHECK_SHARD index=3 nodes=5910000 last_id=35459998 edges=107968476 cpu_ms=
+71849053
+CHECK_SHARD index=3 nodes=5920000 last_id=35519998 edges=108154725 cpu_ms=
+71947344
+CHECK_SHARD index=3 nodes=5930000 last_id=35579998 edges=108342444 cpu_ms=
+72048348
+CHECK_SHARD index=3 nodes=5940000 last_id=35639998 edges=108527769 cpu_ms=
+72148839
+CHECK_SHARD index=3 nodes=5950000 last_id=35699998 edges=108714102 cpu_ms=
+72252054
+CHECK_SHARD index=3 nodes=5960000 last_id=35759998 edges=108902850 cpu_ms=
+72357916
+CHECK_SHARD index=3 nodes=5970000 last_id=35819998 edges=109085781 cpu_ms=
+72463547
+CHECK_SHARD index=3 nodes=5980000 last_id=35879998 edges=109271568 cpu_ms=
+72573608
+CHECK_SHARD index=3 nodes=5990000 last_id=35939998 edges=109458594 cpu_ms=
+72687914
+CHECK_SHARD index=3 nodes=6000000 last_id=35999998 edges=109647909 cpu_ms=
+72808390
+CHECK_SHARD index=3 nodes=6010000 last_id=36059998 edges=109830840 cpu_ms=
+72930899
+CHECK_SHARD index=3 nodes=6020000 last_id=36119998 edges=110009550 cpu_ms=
+73059973
+CHECK_SHARD index=3 nodes=6030000 last_id=36179998 edges=110191284 cpu_ms=
+73204045
+CHECK_SHARD index=3 nodes=6040000 last_id=36239998 edges=110373984 cpu_ms=
+73366638
+CHECK_SHARD index=3 nodes=6050000 last_id=36299998 edges=110560317 cpu_ms=
+73567952
+CHECK_SHARD index=3 nodes=6060000 last_id=36359998 edges=110746440 cpu_ms=
+74028202
+CHECK_SHARD index=3 nodes=6070000 last_id=36419998 edges=110933277 cpu_ms=
+74116829
+CHECK_SHARD index=3 nodes=6080000 last_id=36479998 edges=111121500 cpu_ms=
+74207829
+CHECK_SHARD index=3 nodes=6090000 last_id=36539998 edges=111307182 cpu_ms=
+74297773
+CHECK_SHARD index=3 nodes=6100000 last_id=36599998 edges=111494649 cpu_ms=
+74388343
+CHECK_SHARD index=3 nodes=6110000 last_id=36659998 edges=111683103 cpu_ms=
+74479766
+CHECK_SHARD index=3 nodes=6120000 last_id=36719998 edges=111866118 cpu_ms=
+74569673
+CHECK_SHARD index=3 nodes=6130000 last_id=36779998 edges=112049700 cpu_ms=
+74659547
+CHECK_SHARD index=3 nodes=6140000 last_id=36839998 edges=112237923 cpu_ms=
+74752192
+CHECK_SHARD index=3 nodes=6150000 last_id=36899998 edges=112420455 cpu_ms=
+74842542
+CHECK_SHARD index=3 nodes=6160000 last_id=36959998 edges=112606809 cpu_ms=
+74935469
+CHECK_SHARD index=3 nodes=6170000 last_id=37019998 edges=112797153 cpu_ms=
+75030452
+CHECK_SHARD index=3 nodes=6180000 last_id=37079998 edges=112984536 cpu_ms=
+75125550
+CHECK_SHARD index=3 nodes=6190000 last_id=37139998 edges=113171835 cpu_ms=
+75247805
+CHECK_SHARD index=3 nodes=6200000 last_id=37199998 edges=113359554 cpu_ms=
+75378960
+CHECK_SHARD index=3 nodes=6210000 last_id=37259998 edges=113543367 cpu_ms=
+75520712
+CHECK_SHARD index=3 nodes=6220000 last_id=37319998 edges=113728650 cpu_ms=
+75687946
+CHECK_SHARD index=3 nodes=6230000 last_id=37379998 edges=113914668 cpu_ms=
+75921001
+CHECK_SHARD index=3 nodes=6240000 last_id=37439998 edges=114098607 cpu_ms=
+76331912
+CHECK_SHARD index=3 nodes=6250000 last_id=37499998 edges=114282588 cpu_ms=
+76421140
+CHECK_SHARD index=3 nodes=6260000 last_id=37559998 edges=114468480 cpu_ms=
+76511458
+CHECK_SHARD index=3 nodes=6270000 last_id=37619998 edges=114657081 cpu_ms=
+76603557
+CHECK_SHARD index=3 nodes=6280000 last_id=37679998 edges=114846039 cpu_ms=
+76695906
+CHECK_SHARD index=3 nodes=6290000 last_id=37739998 edges=115033527 cpu_ms=
+76788364
+CHECK_SHARD index=3 nodes=6300000 last_id=37799998 edges=115221015 cpu_ms=
+76882058
+CHECK_SHARD index=3 nodes=6310000 last_id=37859998 edges=115409133 cpu_ms=
+76976263
+CHECK_SHARD index=3 nodes=6320000 last_id=37919998 edges=115597440 cpu_ms=
+77070534
+CHECK_SHARD index=3 nodes=6330000 last_id=37979998 edges=115785936 cpu_ms=
+77165771
+CHECK_SHARD index=3 nodes=6340000 last_id=38039998 edges=115974369 cpu_ms=
+77262045
+CHECK_SHARD index=3 nodes=6350000 last_id=38099998 edges=116163075 cpu_ms=
+77358678
+CHECK_SHARD index=3 nodes=6360000 last_id=38159998 edges=116346111 cpu_ms=
+77450955
+CHECK_SHARD index=3 nodes=6370000 last_id=38219998 edges=116529315 cpu_ms=
+77544784
+CHECK_SHARD index=3 nodes=6380000 last_id=38279998 edges=116717601 cpu_ms=
+77640975
+CHECK_SHARD index=3 nodes=6390000 last_id=38339998 edges=116908680 cpu_ms=
+77739889
+CHECK_SHARD index=3 nodes=6400000 last_id=38399998 edges=117095223 cpu_ms=
+77837791
+CHECK_SHARD index=3 nodes=6410000 last_id=38459998 edges=117284958 cpu_ms=
+77937605
+CHECK_SHARD index=3 nodes=6420000 last_id=38519998 edges=117476877 cpu_ms=
+78040430
+CHECK_SHARD index=3 nodes=6430000 last_id=38579998 edges=117664722 cpu_ms=
+78142072
+CHECK_SHARD index=3 nodes=6440000 last_id=38639998 edges=117854478 cpu_ms=
+78246321
+CHECK_SHARD index=3 nodes=6450000 last_id=38699998 edges=118044339 cpu_ms=
+78352638
+CHECK_SHARD index=3 nodes=6460000 last_id=38759998 edges=118231554 cpu_ms=
+78459562
+CHECK_SHARD index=3 nodes=6470000 last_id=38819998 edges=118417677 cpu_ms=
+78567588
+CHECK_SHARD index=3 nodes=6480000 last_id=38879998 edges=118606887 cpu_ms=
+78680626
+CHECK_SHARD index=3 nodes=6490000 last_id=38939998 edges=118794816 cpu_ms=
+78795890
+CHECK_SHARD index=3 nodes=6500000 last_id=38999998 edges=118986189 cpu_ms=
+78916762
+CHECK_SHARD index=3 nodes=6510000 last_id=39059998 edges=119177961 cpu_ms=
+79043140
+CHECK_SHARD index=3 nodes=6520000 last_id=39119998 edges=119366604 cpu_ms=
+79174904
+CHECK_SHARD index=3 nodes=6530000 last_id=39179998 edges=119554197 cpu_ms=
+79315322
+CHECK_SHARD index=3 nodes=6540000 last_id=39239998 edges=119744961 cpu_ms=
+79471693
+CHECK_SHARD index=3 nodes=6550000 last_id=39299998 edges=119933100 cpu_ms=
+79649442
+CHECK_SHARD index=3 nodes=6560000 last_id=39359998 edges=120113280 cpu_ms=
+79875277
+CHECK_SHARD index=3 nodes=6570000 last_id=39419998 edges=120292263 cpu_ms=
+80336176
+CHECK_SHARD index=3 nodes=6580000 last_id=39479998 edges=120471939 cpu_ms=
+80422128
+CHECK_SHARD index=3 nodes=6590000 last_id=39539998 edges=120653505 cpu_ms=
+80510668
+CHECK_SHARD index=3 nodes=6600000 last_id=39599998 edges=120838032 cpu_ms=
+80600735
+CHECK_SHARD index=3 nodes=6610000 last_id=39659998 edges=121023399 cpu_ms=
+80690878
+CHECK_SHARD index=3 nodes=6620000 last_id=39719998 edges=121210740 cpu_ms=
+80783628
+CHECK_SHARD index=3 nodes=6630000 last_id=39779998 edges=121399341 cpu_ms=
+80876786
+CHECK_SHARD index=3 nodes=6640000 last_id=39839998 edges=121587375 cpu_ms=
+80969139
+CHECK_SHARD index=3 nodes=6650000 last_id=39899998 edges=121773162 cpu_ms=
+81062179
+CHECK_SHARD index=3 nodes=6660000 last_id=39959998 edges=121960671 cpu_ms=
+81155915
+CHECK_SHARD index=3 nodes=6670000 last_id=40019998 edges=122147655 cpu_ms=
+81250312
+CHECK_SHARD index=3 nodes=6680000 last_id=40079998 edges=122333463 cpu_ms=
+81344094
+CHECK_SHARD index=3 nodes=6690000 last_id=40139998 edges=122514987 cpu_ms=
+81437145
+CHECK_SHARD index=3 nodes=6700000 last_id=40199998 edges=122699808 cpu_ms=
+81532896
+CHECK_SHARD index=3 nodes=6710000 last_id=40259998 edges=122882298 cpu_ms=
+81625627
+CHECK_SHARD index=3 nodes=6720000 last_id=40319998 edges=123067056 cpu_ms=
+81720208
+CHECK_SHARD index=3 nodes=6730000 last_id=40379998 edges=123254082 cpu_ms=
+81816344
+CHECK_SHARD index=3 nodes=6740000 last_id=40439998 edges=123442977 cpu_ms=
+81914326
+CHECK_SHARD index=3 nodes=6750000 last_id=40499998 edges=123626496 cpu_ms=
+82010824
+CHECK_SHARD index=3 nodes=6760000 last_id=40559998 edges=123813753 cpu_ms=
+82110439
+CHECK_SHARD index=3 nodes=6770000 last_id=40619998 edges=124001808 cpu_ms=
+82212206
+CHECK_SHARD index=3 nodes=6780000 last_id=40679998 edges=124188162 cpu_ms=
+82314458
+CHECK_SHARD index=3 nodes=6790000 last_id=40739998 edges=124374306 cpu_ms=
+82418603
+CHECK_SHARD index=3 nodes=6800000 last_id=40799998 edges=124561773 cpu_ms=
+82525168
+CHECK_SHARD index=3 nodes=6810000 last_id=40859998 edges=124747434 cpu_ms=
+82633097
+CHECK_SHARD index=3 nodes=6820000 last_id=40919998 edges=124933116 cpu_ms=
+82743853
+CHECK_SHARD index=3 nodes=6830000 last_id=40979998 edges=125119512 cpu_ms=
+82858197
+CHECK_SHARD index=3 nodes=6840000 last_id=41039998 edges=125305656 cpu_ms=
+82976582
+CHECK_SHARD index=3 nodes=6850000 last_id=41099998 edges=125493186 cpu_ms=
+83100172
+CHECK_SHARD index=3 nodes=6860000 last_id=41159998 edges=125681010 cpu_ms=
+83230876
+CHECK_SHARD index=3 nodes=6870000 last_id=41219998 edges=125867049 cpu_ms=
+83368372
+CHECK_SHARD index=3 nodes=6880000 last_id=41279998 edges=126054663 cpu_ms=
+83516053
+CHECK_SHARD index=3 nodes=6890000 last_id=41339998 edges=126243621 cpu_ms=
+83683984
+CHECK_SHARD index=3 nodes=6900000 last_id=41399998 edges=126433797 cpu_ms=
+83895677
+CHECK_SHARD index=3 nodes=6910000 last_id=41459998 edges=126623553 cpu_ms=
+84408951
+CHECK_SHARD index=3 nodes=6920000 last_id=41519998 edges=126810978 cpu_ms=
+84493456
+CHECK_SHARD index=3 nodes=6930000 last_id=41579998 edges=126999663 cpu_ms=
+84579404
+CHECK_SHARD index=3 nodes=6940000 last_id=41639998 edges=127188138 cpu_ms=
+84666306
+CHECK_SHARD index=3 nodes=6950000 last_id=41699998 edges=127370061 cpu_ms=
+84749905
+CHECK_SHARD index=3 nodes=6960000 last_id=41759998 edges=127553958 cpu_ms=
+84834794
+CHECK_SHARD index=3 nodes=6970000 last_id=41819998 edges=127741383 cpu_ms=
+84920871
+CHECK_SHARD index=3 nodes=6980000 last_id=41879998 edges=127931748 cpu_ms=
+85009011
+CHECK_SHARD index=3 nodes=6990000 last_id=41939998 edges=128120706 cpu_ms=
+85095798
+CHECK_SHARD index=3 nodes=7000000 last_id=41999998 edges=128305527 cpu_ms=
+85181812
+CHECK_SHARD index=3 nodes=7010000 last_id=42059998 edges=128494464 cpu_ms=
+85270932
+CHECK_SHARD index=3 nodes=7020000 last_id=42119998 edges=128684724 cpu_ms=
+85360545
+CHECK_SHARD index=3 nodes=7030000 last_id=42179998 edges=128874480 cpu_ms=
+85449839
+CHECK_SHARD index=3 nodes=7040000 last_id=42239998 edges=129062367 cpu_ms=
+85539581
+CHECK_SHARD index=3 nodes=7050000 last_id=42299998 edges=129249519 cpu_ms=
+85629140
+CHECK_SHARD index=3 nodes=7060000 last_id=42359998 edges=129438666 cpu_ms=
+85720527
+CHECK_SHARD index=3 nodes=7070000 last_id=42419998 edges=129627477 cpu_ms=
+85812336
+CHECK_SHARD index=3 nodes=7080000 last_id=42479998 edges=129816183 cpu_ms=
+85904306
+CHECK_SHARD index=3 nodes=7090000 last_id=42539998 edges=130000458 cpu_ms=
+85994838
+CHECK_SHARD index=3 nodes=7100000 last_id=42599998 edges=130188072 cpu_ms=
+86089012
+CHECK_SHARD index=3 nodes=7110000 last_id=42659998 edges=130378626 cpu_ms=
+86184783
+CHECK_SHARD index=3 nodes=7120000 last_id=42719998 edges=130564623 cpu_ms=
+86280169
+CHECK_SHARD index=3 nodes=7130000 last_id=42779998 edges=130754463 cpu_ms=
+86379102
+CHECK_SHARD index=3 nodes=7140000 last_id=42839998 edges=130944723 cpu_ms=
+86479313
+PASS_SHARD n=7 index=3 shards=6 total_nodes=42891332 checked_nodes=
+7148555 leaves=905729 edges=131099346 relation_implications=907884384 cpu_ms=
+86561655

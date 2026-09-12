@@ -87,7 +87,7 @@ Updated: 2026-09-12T13:12:27.766471+00:00.
 - Other recent prior deductions: the SO(3,R) case of **16.68** and **16.69(b)** are negative by Thom's almost-law theorem; **14.59** is negative by Tent's sharply 3-transitive construction. These and the earlier prior consequences remain excluded from possible new priority.
 - The 21.26 search through order2000 and the 19.20 search through order511 are complete. Exact ID coverage and all completion records pass.
 - **19.20 complete:** all91,774 nonabelian groups through order511, zero equality cases and469 reverse inequalities. All356 jobs in the latest extension completed;514 omitted abelian IDs were independently reconstructed and matched exactly. The initial493 abelian equality controls remain retained. The arbitrary-group equality question is unresolved.
-- **20.100 n=7 final audit:** all six workers finished with recorded actual exit0, and the controller wrote a VERIFIED aggregate at2026-09-12T13:08:05.432891+00:00:42,891,332 nodes,5,435,268 leaves,786,577,344 edges and5,447,182,055 relation implications. A fresh full-certificate status audit is running before the final proof report. Historical tool session84653 returned143; its association with the completed controller is not established, and no zero controller exit is inferred from that handle.
+- **20.100 n=7 proved:** all six GAP workers have recorded actual exit zero, with complete coverage of 42,891,332 nodes, 5,435,268 leaves, 786,577,344 branches and 5,447,182,055 relation implications. The fresh full reporter returned zero. This proves the fixed-n assertion for all groups; arbitrary n remains unresolved. See `research/20.100-n7-report.md`. Complete-candidate count stays 43; outside reviews 0.
 - **4.55 exploratory screen complete:** all2,750 installed table names and7,573 available modular cases are covered by two disjoint audited ranges. Flags remain exploratory; the separate3.A7 proof supplies the candidate resolution.
 - GAP 4.16.1 and SmallGrp, TransGrp, CTblLib, Digraphs 1.15.0, and GRAPE work. `bin/gap` is the reproducible launcher.
 - **14.2 restricted searches complete:** 16,146,897 rational pairs give682 integral swaps, all monomial;21,646 degree-changing permutations in249 individual conductor blocks give no integral maps. Independent matrix and actual-group controls pass. General question unresolved.
@@ -254,12 +254,12 @@ unaudited. Excluded from new-result priority; see
 **20.100 partial results:** A positive-length argument proves the assertion
 for every torsion-free group, without commutativity or unique roots. The
 general conjecture at each fixed n reduces to finite abelian groups, with
-counterexample order bounded by p_n*n^(n-1). Exact
-finite certificates now prove the all-group cases n=4,5,6: independent GAP
-Smith-normal-form checks verify227,10,493 and265,104 nodes, with a total
-of19,524,681 relation implications. The earlier n=7 continuation stopped with26,317,076 closed nodes, preserved as an audited incomplete gzip. The08:40 UTC continuation has completed42,891,332 nodes and exited zero. Six independent GAP workers are checking the complete certificate; all must pass before n=7 is a proof. The full arbitrary-n
-conjecture and novelty remain open. See `research/20.100-reduction.md` and
-`research/20.100-review.md`; complete-candidate count is22 from the separately resolved entries.
+counterexample order bounded by p_n*n^(n-1). Exact certificates prove the
+all-group cases n=4,5,6,7. For n=7 the six completed GAP workers verify
+42,891,332 nodes and 5,447,182,055 relation implications. The full arbitrary-n
+conjecture and novelty remain open. See `research/20.100-reduction.md`,
+`research/20.100-review.md`, and `research/20.100-n7-report.md`.
+This partial result adds no complete candidate; the current total is 43.
 
 **20.108(c):** Caranti--Tsang2023 Theorem1.1 already gives a group of order3^10 with GL4(3) inside T(G), hence prime divisor5 outside p(p-1)=6. Prior affirmative result, excluded from new priority; see `research/20.108c-known-consequence.md`. This corrects our earlier provisional status for(c).
 

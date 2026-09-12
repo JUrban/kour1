@@ -1,0 +1,40 @@
+{
+  "totals": {
+    "checked_nodes": 42891332,
+    "leaves": 5435268,
+    "edges": 786577344,
+    "relation_implications": 5447182055
+  },
+  "worker_actual_exits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "worker_cpu_ms": [
+    87055806,
+    83953576,
+    83371675,
+    86561655,
+    93263253,
+    83200778
+  ],
+  "rejected_aggregation_controls": [
+    "nonzero_worker_exit",
+    "missing_worker_exit",
+    "missing_worker",
+    "duplicate_part",
+    "wrong_aggregate_count",
+    "wrong_command_partition",
+    "trailing_warning",
+    "wrong_progress_identifier",
+    "stale_certificate"
+  ],
+  "rejected_data_controls": 11,
+  "certificate_uncompressed_bytes": 19404331316,
+  "mathematical_scope": "20.100 holds for every eligible group at n=7; arbitrary n unresolved",
+  "new_complete_candidates_added": 0,
+  "outside_reviews": 0
+}

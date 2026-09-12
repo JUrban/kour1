@@ -1,0 +1,165 @@
+{
+  "status": "PASS_DATA_ONLY",
+  "started_utc": "2026-09-12T13:21:10.790461+00:00",
+  "ended_utc": "2026-09-12T13:23:05.171507+00:00",
+  "elapsed_seconds": 114.38105008006096,
+  "source_sha256": "2ae6f3deda00d5a4f362256214514e84e8c41b99407cf073c77febf51d0bf16f",
+  "runner_sha256": "c98ebef31010bdee5e788d6d506fa7f4b5e612c894e4603c59552fdd5a251ee6",
+  "compile": {
+    "command": [
+      "g++",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-std=c++17",
+      "/project/scripts/check_20_100_data.cpp",
+      "-lz",
+      "-lcrypto",
+      "-o",
+      "/tmp/20.100-data-n97fq_pt/checker"
+    ],
+    "actual_returncode": 0,
+    "binary_sha256": "5ae6b0f1aebcdba9d0d3fefaf35c98902262f55ad0c65e599748d059aaff0598"
+  },
+  "rejected_controls": [
+    {
+      "name": "extra_statement",
+      "actual_returncode": 1,
+      "input_sha256": "70573c9f16324165781af7ecfd39b2882475f8ab4a2d6c5c68f3575f5706a745"
+    },
+    {
+      "name": "checker_redefinition",
+      "actual_returncode": 1,
+      "input_sha256": "711918dfc953556534ddd20462e23269d74ff889e3eea1877086befcf7ec7645"
+    },
+    {
+      "name": "skipped_identifier",
+      "actual_returncode": 1,
+      "input_sha256": "05512e5e8b7ac75c6cf53890f638b4b1df785fb8008e8cab6c599639e4aa8473"
+    },
+    {
+      "name": "wrong_prime_bound",
+      "actual_returncode": 1,
+      "input_sha256": "796404d1bac93664fd2d2ab9cb2a000f36fa0536ad8e9a195a1b23ed1d5b841e"
+    },
+    {
+      "name": "wrong_root",
+      "actual_returncode": 1,
+      "input_sha256": "93b398f610a85a3552b557846f6bf66dca8ed4d47123022d4eb049bc9dbbcaa3"
+    },
+    {
+      "name": "trailing_statement",
+      "actual_returncode": 1,
+      "input_sha256": "35b3e9f9b108a0abde16b3d73999220cece2b10c287ddd49e6d9d3ce0c215052"
+    },
+    {
+      "name": "missing_footer",
+      "actual_returncode": 1,
+      "input_sha256": "4a4ea400405795b231f0c7b291ea88e14101c7478fb594318c544042bc90bef6"
+    },
+    {
+      "name": "zero_denominator",
+      "actual_returncode": 1,
+      "input_sha256": "883c3be30353cafbbd03f645d3b33e7fb38a5aec48ce11ec63bf6375361bf6f0"
+    },
+    {
+      "name": "invalid_list",
+      "actual_returncode": 1,
+      "input_sha256": "f368255dfa0f38559f216f5b93613dc3e900e6aeb2293f79523451b1377d837d"
+    },
+    {
+      "name": "scalar_overflow",
+      "actual_returncode": 1,
+      "input_sha256": "32a872630ddded75b8ef2aa149ebcb9c706515b6935550d7d04008ea26e6cd96"
+    },
+    {
+      "name": "missing_final_newline",
+      "actual_returncode": 1,
+      "input_sha256": "5593f933ad96631cd0c5760fb4629c785d27710a535954048a95c470dfb01e60"
+    }
+  ],
+  "certificates": [
+    {
+      "status": "PASS_DATA_ONLY",
+      "n": 4,
+      "nodes": 227,
+      "leaves": 51,
+      "edges": 1056,
+      "uncompressed_bytes": 25729,
+      "uncompressed_sha256": "c5c9cea0bf4ed489450ac8ff92ae9b608a2d233c086e0234706f83088e29a629",
+      "command": [
+        "/tmp/20.100-data-n97fq_pt/checker",
+        "4",
+        "/project/results/20.100-n4-certificate.g.gz"
+      ],
+      "actual_returncode": 0,
+      "started_utc": "2026-09-12T13:21:11.696802+00:00",
+      "elapsed_seconds": 0.013240581378340721,
+      "compressed_sha256": "63fedef4dfca36a5fc7c12b3f5bad577c4250a6fe12fba1ac908207f4b90238c",
+      "stdout_sha256": "07a3fc826a4b0454c2b0fa33cf0e55ec196936f084c0e1e295af1caa89ecfd8b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "status": "PASS_DATA_ONLY",
+      "n": 5,
+      "nodes": 10493,
+      "leaves": 1736,
+      "edges": 87570,
+      "uncompressed_bytes": 2019783,
+      "uncompressed_sha256": "ecedb5130dcac78fe523ff9c7a3c1387824d074f813efad141dc1f961ab2ca83",
+      "command": [
+        "/tmp/20.100-data-n97fq_pt/checker",
+        "5",
+        "/project/results/20.100-n5-certificate.g.gz"
+      ],
+      "actual_returncode": 0,
+      "started_utc": "2026-09-12T13:21:11.710544+00:00",
+      "elapsed_seconds": 0.03694481123238802,
+      "compressed_sha256": "d722ab143842e17cd48099bb7b41dd4cf34a156d4fc30e7213c93d9482dc53c1",
+      "stdout_sha256": "64271a4ab0f21671f596546b15b4cc66f22bc1e3f5db1140e6c8244ce8a0eead",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "status": "PASS_DATA_ONLY",
+      "n": 6,
+      "nodes": 265104,
+      "leaves": 48758,
+      "edges": 3245190,
+      "uncompressed_bytes": 76991970,
+      "uncompressed_sha256": "d7874f87c95915c891d579212783912387a482c176eecf8519b5a51af3fb083e",
+      "command": [
+        "/tmp/20.100-data-n97fq_pt/checker",
+        "6",
+        "/project/results/20.100-n6-certificate.g.gz"
+      ],
+      "actual_returncode": 0,
+      "started_utc": "2026-09-12T13:21:11.749527+00:00",
+      "elapsed_seconds": 0.4935772670432925,
+      "compressed_sha256": "8a5f50cef17e9a73c1c2cae8eaca8f364daf2a83682e70ba8932dba6c347efbd",
+      "stdout_sha256": "dfd5d428b07a15ad4abe9db13f410f948a43f3c4dd04146e7fa758f6c96a8a24",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "status": "PASS_DATA_ONLY",
+      "n": 7,
+      "nodes": 42891332,
+      "leaves": 5435268,
+      "edges": 786577344,
+      "uncompressed_bytes": 19404331316,
+      "uncompressed_sha256": "4c3b5dea1a375efbe672107afd6d772426c51a901118a93de289a8de91359a1f",
+      "command": [
+        "/tmp/20.100-data-n97fq_pt/checker",
+        "7",
+        "/project/results/20.100-n7-certificate.g.gz"
+      ],
+      "actual_returncode": 0,
+      "started_utc": "2026-09-12T13:21:12.279837+00:00",
+      "elapsed_seconds": 109.83681628480554,
+      "compressed_sha256": "e1b116fa80a4b77a03256d69480b996318522c227ef48e6be7fdf62cbd8bcd8c",
+      "stdout_sha256": "d126a70621b0051033e19451e11522da644cdee33ad95aeee79ac64ad77a62dd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "Full gzip integrity and strict literal syntax, consecutive node identifiers, unique header/footer, and node/leaf/edge counts. Mathematical proof remains the separate GAP localized Smith-normal-form verification."
+}

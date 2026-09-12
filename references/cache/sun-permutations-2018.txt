@@ -1,0 +1,922 @@
+                                           J. Algebraic Combin., in press.
+
+                                            ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS
+arXiv:1811.10503v6 [math.CO] 24 Mar 2021
+
+
+
+
+                                                                                     Zhi-Wei Sun
+                                                             Department of Mathematics, Nanjing University
+                                                               Nanjing 210093, People’s Republic of China
+                                                                           zwsun@nju.edu.cn
+                                                                  http://maths.nju.edu.cn/∼zwsun
+
+                                                 Abstract. In this paper we study combinatorial aspects of permutations of
+                                                 {1, . . . , n} and related topics. In particular, we prove that there is a unique
+                                                 permutation π of {1, . . . , n} such that all the numbers k + π(k) (k = 1, . . . , n)
+                                                 are powers of two. We also show that n | per[ij−1 ]1⩽i,j⩽n for any integer n > 2.
+                                                 We conjecture that if a group G contains no element of order among 2, . . . , n + 1
+                                                 then any A ⊆ G with |A| = n can be written as {a1 , . . . , an } with a1 , a22 , . . . , an
+                                                                                                                                           n
+                                                 pairwise distinct. This conjecture is confirmed when G is a torsion-free abelian
+                                                 group. We also prove that for any finite subset A of a torsion-free abelian group
+                                                 G with |A| = n > 3, there is a numbering a1 , . . . , an of all the elements of A
+                                                 such that all the n sums
+
+                                                 a1 + a2 + a3 , a2 + a3 + a4 , . . . , an−2 + an−1 + an , an−1 + an + a1 , an + a1 + a2
+
+                                                 are pairwise distinct, and conjecture that this remains valid if G is cyclic.
+
+
+
+
+                                                                                 1. Introduction
+                                               As usual, for n ∈ Z+ = {1, 2, 3, . . . } we let Sn denote the symmetric group
+                                           of all the permutation of {1, . . . , n}.
+                                               Let A = [aij ]1⩽i,j⩽n be a (0, 1)-matrix (i.e., aij ∈ {0, 1} for all i, j =
+                                           1, . . . , n). Then the permanent of A given by
+                                                                                        X
+                                                                          per(A) =            a1π(1) · · · anπ(n)
+                                                                                       π∈Sn
+
+
+                                           is just the number of permutations π ∈ Sn with akπ(k) = 1 for all k = 1, . . . , n.
+                                               In 2002, B. Cloitre proposed the sequence [Cl, A073364] on OEIS whose n-th
+                                           term a(n) is the number of permutations π ∈ Sn with k + π(k) prime for all
+                                           k = 1, . . . , n. Clearly, a(n) = per(A), where A is a matrix of order n whose
+
+                                              2020 Mathematics Subject Classification. Primary 05A05, 11B75; Secondary 11B13,
+                                           11B39, 20D60.
+                                              Keywords. Additive combinatorics, permutations, powers of two, permanents, groups.
+                                              Supported by the National Natural Science Foundation of China (grant no. 11971222).
+                                                                                              1
+2                                         ZHI-WEI SUN
+
+(i, j)-entry (1 ⩽ i, j ⩽ n) is 1 or 0 according as i + j is prime or not. In 2018
+P. Bradley [Br] proved that a(n) > 0 for all n ∈ Z+ .
+    Our first theorem is an extension of Bradley’s result.
+Theorem 1.1. Let (a1 , a2 , . . . ) be an integer sequence with a1 = 2 and ak <
+ak+1 ⩽ 2ak for all k = 1, 2, 3 . . . . Then, for any positive integer n, there exists
+a permutation π ∈ Sn with π 2 = In such that
+
+                       {k + π(k) : k = 1, . . . , n} ⊆ {a1 , a2 , . . . },                     (1.1)
+
+where In is the identity of Sn with In (k) = k for all k = 1, . . . , n.
+   Recall that the Fiboncci numbers F0 , F1 , . . . and the Lucas numbers L0 , L1 , . . .
+are defined by
+
+             F0 = 0, F1 = 1, and Fn+1 = Fn + Fn−1 (n = 1, 2, 3, . . . ),
+
+and
+             L0 = 2, L1 = 1, and Ln+1 = Ln + Ln−1 (n = 1, 2, 3, . . . ).
+If we apply Theorem 1.1 with the sequence (a1 , a2 , . . . ) equal to (F3 , F4 , . . . ) or
+(L0 , L2 , L3 , . . . ), then we immediately obtain the following consequence.
+Corollary 1.1. Let n ∈ Z+ . Then there is a permutation σ ∈ Sn with σ 2 =
+In such that all the sums k + σ(k) (k = 1, . . . , n) are Fibonacci numbers.
+Also, there is a permutation τ ∈ Sn with τ 2 = In such that all the numbers
+k + τ (k) (k = 1, . . . , n) are Lucas numbers.
+
+Remark 1.1. Let f (n) be the number of permutations σ ∈ Sn such that all the
+sums k + σ(k) (k = 1, . . . , n) are Fibonacci numbers. Via Mathematica we find
+that
+
+    (f (1), . . . , f (20)) = (1, 1, 1, 2, 1, 2, 4, 2, 1, 4, 4, 20, 4, 5, 1, 20, 24, 8, 96, 200).
+
+For example, π = (2, 3)(4, 9)(5, 8)(6, 7) is the unique permutation in S9 such
+that all the numbers k + π(k) (k = 1, . . . , 9) are Fibonacci numbers.
+   Recall that those integers Tn = n(n + 1)/2 (n = 0, 1, 2, . . . ) are called tri-
+angular numbers. Note that Tn − Tn−1 = n ⩽ Tn−1 for every n = 3, 4, . . . .
+Applying Theorem 1.1 with (a1 , a2 , a3 , . . . ) = (2, T2 , T3 , . . . ), we immediately
+get the following corollary.
+Corollary 1.2. For any n ∈ Z+ , there is a permutation π ∈ Sn with π 2 = In
+such that each of the sums k + π(k) (k = 1, . . . , n) is either 2 or a triangular
+number.
+
+Remark 1.2. When n = 4, we may take π = (2, 4) to meet the requirement in
+Corollary 1.2. Note that 1 + 1 = 3 = T2 and 2 + 4 = 3 + 3 = T3 .
+    Our next theorem focuses on permutations involving powers of two.
+           ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                                 3
+
+Theorem 1.2. Let n be any positive integer. Then there is a unique permu-
+tation πn ∈ Sn such that all the numbers k + πn (k) (k = 1, . . . , n) are powers
+of two. In other words, for the n × n matrix A whose (i, j)-entry is 1 or 0
+according as i + j is a power of two or not, we have per(A) = 1.
+
+Remark 1.3. Note that the number of 1’s in the matrix A given in Theorem 1.2
+coincides with
+  ⌊log2 n⌋+1                  ⌊log2 n⌋                    n
+     X          X              X                          X
+                                         k
+                         1=          (2 − 1) +                         1 = 2n − ⌊log2 n⌋ − 1.
+     k=0       1⩽i,j⩽n         k=0                  i=2⌊log2 n⌋+1 −n
+                i+j=2k
+
+
+  Example 1.1. Here we list πn in Theorem 1.2 for n = 1, . . . , 11:
+
+  π1 = (1), π2 = (1), π3 = (1, 3), π4 = (1, 3), π5 = (3, 5), π6 = (2, 6)(3, 5),
+      π7 = (1, 7)(2, 6)(3, 5), π8 = (1, 7)(2, 6)(3, 5), π9 = (2, 6)(3, 5)(7, 9),
+               π10 = (3, 5)(6, 10)(7, 9), π11 = (1, 3)(5, 11)(6, 10)(7, 9).
+
+  Theorem 1.2 has the following consequence.
+Corollary 1.3. For any n ∈ Z+ , there is a unique permutation π ∈ S2n such
+that k + π(k) ∈ {2a − 1 : a ∈ Z+ } for all k = 1, . . . , 2n.
+  Now we turn to our results of new types.
+Theorem 1.3. (i) Let p be any odd prime. Then there is no π ∈ Sp−1 such
+that all the p − 1 numbers kπ(k) (k = 1, . . . , p − 1) are pairwise incongruent
+modulo p. Also,
+                      per[ij−1 ]1⩽i,j⩽p−1 ≡ 0 (mod p).                      (1.2)
+  (ii) We have
+
+               per[ij−1 ]1⩽i,j⩽n ≡ 0          (mod n) for all n = 3, 4, 5, . . . .        (1.3)
+
+
+Remark 1.4. In contrast with Theorem 1.3, it is well-known that
+                                 Y
+             det[ij−1 ]1⩽i,j⩽n =      (j − i) = 1!2! . . . (n − 1)!
+                                             1⩽i<j⩽n
+
+and in particular
+
+                 det[ij−1 ]1⩽i,j⩽p−1 , det[ij−1 ]1⩽i,j⩽p 6≡ 0 (mod p)
+
+for any odd prime p.
+   In additive combinatorics, there are some interesting topics involving both
+permutations and finite abelian groups, see. e.g., [FSX] and [GS]. Below we
+present two novel theorems on permutations involving groups.
+4                                   ZHI-WEI SUN
+
+Theorem 1.4. (i) Let a1 , . . . , an be distinct elements of a torsion-free abelian
+group G. Then there is a permutation π ∈ Sn such that all those kaπ(k) (k =
+1, . . . , n) are pairwise distinct.
+    (ii) Let a, b, c be three distinct elements of a group G such that none of them
+has order 2 or 3. Then aσ(1) and bσ(2) are distinct for some σ ∈ S2 . Also,
+aτ (1) , bτ (2) , cτ (3) are pairwise distinct for some τ ∈ S3 .
+
+Remark 1.5. On the basis of this theorem, we will formulate a general conjecture
+for groups in Section 4.
+Theorem 1.5. For any n > 3 distinct elements a1 , a2 , . . . , an of a torsion-free
+abelian group G, there is a permutation π ∈ Sn such that all the n sums
+
+b1 + b2 + b3 , b2 + b3 + b4 , . . . , bn−2 + bn−1 + bn , bn−1 + bn + b1 , bn + b1 + b2
+
+are pairwise distinct, where bk = aπ(k) for k = 1, . . . , n.
+
+Remark 1.6. By Remark 1.2 of Sun [S19], for any finite subset A of a torsion-
+free abelian group with |A| = n > 2 we may write A as {a1 , . . . , an } such that
+a1 + a2 , . . . , an−1 + an , an + a1 are pairwise distinct.
+  We are going to prove Theorems 1.1-1.3 and Corollary 1.3 in the next section,
+and show Theorems 1.4-1.5 in Section 3. We will pose some conjectures in
+Section 4.
+
+           2. Proofs of Theorems 1.1-1.3 and Corollary 1.3
+
+Proof of Theorem 1.1. For convenience, we set a0 = 1 and A = {a1 , a2 , a3 , . . . }.
+We use induction on n ∈ Z+ to show the desired result.
+   For n = 1, we take π(1) = 1 and note that 1 + π(1) = 2 = a1 ∈ A.
+   Now let n ⩾ 2 and assume the desired result for smaller values of n. Choose
+k ∈ N with ak ⩽ n < ak+1 , and write m = ak+1 − n. Then 1 ⩽ m ⩽ 2ak − n ⩽
+2n − n = n. Let π(j) = ak+1 − j for j = m, . . . , n. Then
+
+                      {π(j) : j = m, . . . , n} = {m, . . . , n},
+
+and π(π(j)) = j for all j = m, . . . , n.
+   Case 1. m = 1.
+   In this case, π ∈ Sn and π 2 = In .
+   Case 2. m = n.
+   In this case, ak+1 = 2n ⩾ 2ak . On the other hand, ak+1 ⩽ 2ak . So,
+ak+1 = 2ak and ak = n. Let π(j) = n − j = ak − j for all 0 < j < n. Then
+π ∈ Sn and j + π(j) ∈ {ak , ak+1 } for all j = 1, . . . , n. Note that π 2 (k) = k for
+all k = 1, . . . , n.
+   Case 3. 1 < m < n.
+           ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                   5
+
+   In this case, by the induction hypothesis, for some σ ∈ Sm−1 with σ 2 =
+Im−1 , we have i + σ(i) ∈ A for all i = 1, . . . , m − 1. Let π(i) = σ(i) for all
+i = 1, . . . , m − 1. Then π ∈ Sn and it meets our requirement.
+   In view of the above, we have completed the induction proof. 
+Proof of Theorem 1.2. Applying Theorem 1.1 with ak = 2k for all k ∈ Z+ , we
+see that for some π ∈ Sn with π 2 = In all the numbers k + π(k) (k = 1, . . . , n)
+are powers of two.
+   Below we use induction on n to prove that the number of π ∈ Sn with
+                  {k + π(k) : k = 1, . . . , n} ⊆ {2a : a ∈ Z+ }
+is exactly one.
+   The case n = 1 is trivial.
+   Now let n > 1 and assume that for each m = 1, . . . , n − 1 there is a unique
+πm ∈ Sm such that all the numbers k +πm (k) (k = 1, . . . , m) are powers of two.
+Choose a ∈ Z+ with 2a−1 ⩽ n < 2a , and write m = 2a − n. Then 1 ⩽ m ⩽ n.
+   Suppose that π ∈ Sn and all the numbers k + π(k) (k = 1, . . . , n) are powers
+of two. If 2a−1 ⩽ k ⩽ n, then
+                     2a−1 < k + π(k) ⩽ k + n ⩽ 2n < 2a+1
+and hence π(k) = 2a − k since k + π(k) is a power of two. Thus
+                  {π(k) : k = 2a−1 , . . . , n} = {m, . . . , 2a−1 }.
+If k ∈ {1, . . . , 2a−1 − 1} and 2a−1 < π(k) ⩽ n, then
+                        2a−1 < k + π(k) ⩽ n + n < 2a+1 ,
+hence k + π(k) = 2a = m + n and thus m ⩽ k < 2a−1 . So we have
+                {π −1 (j) : 2a−1 < j ⩽ n} = {m, . . . , 2a−1 − 1}.
+(Note that n − 2a−1 = 2a − m − 2a−1 = 2a−1 − m.)
+  By the above analysis, π(k) = 2a − k for all k = m, . . . , n, and
+                     {π(k) : k = m, . . . , n} = {m, . . . , n}.
+Thus π is uniquely determined if m = 1.
+  Now assume that m > 1. As π ∈ Sn , we must have
+                 {π(k) : k = 1, . . . , m − 1} = {1, . . . , m − 1}.
+Since k + π(k) is a power of two for every k = 1, . . . , m − 1, by the induction
+hypothesis we have π(k) = πm (k) for all k = 1, . . . , m − 1. Thus π is indeed
+uniquely determined.
+   In view of the above, the proof of Theorem 1.2 is now complete. 
+Proof of Corollary 1.3. Clearly, π ∈ S2n and k + π(k) ∈ {2a − 1 : a ∈ Z+ } for
+all k = 1, . . . , 2n, if and only if there are σ, τ ∈ Sn with π(2k) = 2σ(k) − 1 and
+π(2k −1) = 2τ (k) for all k = 1, . . . , n such that k +σ(k), k +τ (k) ∈ {2a−1 : a ∈
+Z+ } for all k = 1, . . . , n. Thus we get the desired result by applying Theorem
+1.2. 
+6                                               ZHI-WEI SUN
+
+Lemma 2.1 (Alon’s Combinatorial Nullstellensatz [A]). Let A1 , . . . , An be
+finite subsets of a field F with |Ai | > ki for i = 1, . . . , n where k1 , . . . , kn ∈
+{0, 1, 2, . . . }. If the coefficient of the monomial xk11 · · · xknn in P (x1 , . . . , xn ) ∈
+F [x1 , . . . , xn ] is nonzero and k1 + · · · + kn is the total degree of P , then there
+are a1 ∈ A1 , . . . , an ∈ An such that P (a1 , . . . , an ) 6= 0.
+Lemma 2.2. Let a1 , . . . , an be elements of a field F . Then the coefficient of
+xn−1
+ 1   . . . xn−1
+            n   in the polynomial
+                          Y
+                                  (xj − xi )(aj xj − ai xi ) ∈ F [x1 , . . . , xn ]
+                        1⩽i<j⩽n
+
+
+is (−1)n(n−1)/2 per[aij−1 ]1⩽i,j⩽n .
+Proof. This is easy. In fact,
+              Y
+                         (xj − xi )(aj xj − ai xi )
+           1⩽i<j⩽n
+                    n
+         =(−1)( 2 ) det[xn−j
+                         i   ]1⩽i,j⩽n × det[aij−1 xij−1 ]1⩽i,j⩽n
+                                           n                                  n
+               n
+         =(−1)( 2 )
+                                                  n−σ(i)                             τ (i)−1 τ (i)−1
+                         X                 Y                X                 Y
+                                sign(σ)          xi                sign(τ )         ai      xi       .
+                         σ∈Sn              i=1             τ ∈Sn              i=1
+
+
+Therefore the coefficient of xn−1
+                              1   . . . xn−1
+                                         n   in this polynomial is
+
+                                          n
+             n
+        (−1)( 2 )
+                                                 σ(i)−1
+                                                          = (−1)n(n−1)/2 per[aij−1 ]1⩽i,j⩽n .
+                    X                     Y
+                                      2
+                           sign(σ)              ai
+                    σ∈Sn                  i=1
+
+
+This concludes the proof. 
+Remark 2.1. See [DKSS] and [S08, Lemma 2.2] for similar identities and argu-
+ments.
+Proof of Theorem 1.3. (i) Let g be a primitive root modulo p. Then, there is
+a permutation π ∈ Sp−1 such that the numbers kπ(k) (k = 1, . . . , p − 1) are
+pairwise incongruent modulo p, if and only if there is a permutation ρ ∈ Sp−1
+such that g i+ρ(i) (i = 1, . . . , p − 1) are pairwise incongruent modulo p (i.e., the
+numbers i + ρ(i) (i = 1, . . . , p − 1) are pairwise incongruent modulo p − 1).
+   Suppose that ρ ∈ Sp−1 and all the numbers i + ρ(i) (i = 1, . . . , p − 1) are
+pairwise incongruent modulo p − 1. Then
+
+                              p−1                    p−1
+                              X                      X
+                                    (i + ρ(i)) ≡           j   (mod p − 1),
+                              i=1                    j=1
+           ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                                        7
+
+               Pp−1
+and hence        i=1 i = p(p − 1)/2 ≡ 0 (mod p − 1) which is impossible. This
+contradiction proves the first assertion in Theorem 1.3(i).
+   Now we turn to prove the second assertion in Theorem 1.3(i). Suppose
+that per[ij−1 ]1⩽i,j⩽p−1 6≡ 0 (mod p). Then, by Lemma 2.2, the coefficient of
+x1p−2 . . . xp−1
+             p−2
+                 in the polynomial
+                                  Y
+                                          (xj − xi )(jxj − ixi )
+                            1⩽i<j⩽p−1
+
+
+is not congruent to zero modulo p. Applying Lemma 2.1 with F = Z/pZ and
+A = {k + pZ : k = 1, . . . , p − 1}, we see that there is a permutation π ∈ Sp−1
+such that all those kπ(k) (k = 1, . . . , p − 1) are pairwise incongruent modulo
+p, which contradicts the first assertion of Theorem 1.3(i) we have just proved.
+   (ii) Let n > 2 be an integer. Then
+                           n
+                         X Y
+   per[ij−1 ]1⩽i,j⩽n =               k σ(k)−1
+                         σ∈Sn k=1
+
+                          X                  n−1
+                                             Y                                X n−1
+                                                                                Y
+                                                       σ(k)−2
+                    ≡             (n − 1)!         k            = (n − 1)!                 k τ (k)−1
+                          σ∈Sn               k=1                             τ ∈Sn−1 k=1
+                         σ(n)=1
+
+                    =(n − 1)! per[ij−1 ]1⩽i,j⩽n−1 (mod n).
+
+We want to prove that n | per[ij−1 ]1≤i,j≤n . This holds when n is an odd prime
+p, because p | per[ij−1 ]1⩽i,j⩽p−1 by Theorem 1.3(i). For n = 4, we have
+                                  X
+       per[ij−1 ]1⩽i,j⩽4 ≡3!           1τ (1)−1 2τ (2)−1 3τ (3)−1
+                               τ ∈S3
+
+                          ≡6 12−1 21−1 33−1 + 13−1 21−1 32−1 ≡ 0 (mod 4).
+                                                            
+
+
+   Now assume that n > 4 is composite. By the above, it suffices to show that
+(n − 1)! ≡ 0 (mod n). Let p be the smallest prime divisor of n. Then n = pq
+for some integer q ⩾ p. If p < q, then n = pq divides (n − 1)!. If q = p, then
+p2 = n > 4 and hence 2p < p2 , thus 2n = p(2p) divides (n − 1)!.
+   In view of the above, we have completed the proof of Theorem 1.3. 
+
+                    3. Proofs of Theorems 1.4 and 1.5
+
+Proof of Theorem 1.4. (i) The case n = 1 is trivial. Below we let n > 1. Note
+that the subgroup H of G generated by a1 , . . . , an is infinite, finitely generated
+and torsion-free. Thus H is isomorphic to Zr for some positive integer r. By
+algebraic number theory (cf. [He]), we may take an algebraic number field K
+with [K : Q] = r and hence H is isomorphic to the additive group OK of
+8                                        ZHI-WEI SUN
+
+algebraic integers in K. Thus, without any loss of generality, we may simply
+assume that G is the additive group C of all complex numbers.
+   By Lemma 2.2, the coefficient of xn−1
+                                     1   . . . xn−1
+                                                n   in the polynomial
+                                     Y
+         P (x1 , . . . , xn ) :=             (xj − xi )(jxj − ixi ) ∈ C[x1 , . . . , xn ]
+                                   1⩽i<j⩽n
+
+
+is (−1)n(n−1)/2 per[ij−1 ]1⩽i,j⩽n , which is nonzero since per[ij−1 ]1⩽i,j⩽n > 0.
+Applying Lemma 2.1 we see that there are x1 , . . . , xn ∈ A = {a1 , . . . , an } with
+P (x1 , . . . , xn ) 6= 0. Thus, for some π ∈ Sn all the numbers kaσ(k) (k = 1, . . . , n)
+are distinct. This ends the proof of part (i).
+    (ii) Let e be the identity of the group G. Suppose that a = b2 and also
+a2 = b. Then a = (a2 )2 = a4 , and hence a3 = e. As the order of a is not three,
+we have a = e and hence b = a2 = e, which leads to a contradiction since a 6= b.
+Therefore aσ(1) and bσ(2) are distinct for some σ ∈ S2 .
+    To prove the second assertion in Theorem 1.4(ii), we distinguish two cases.
+    Case 1. One of a, b, c is the square of another element among a, b, c.
+    Without loss of generality, we simply assume that a = b2 . As a 6= b we have
+b 6= e. As b is not of order two, we also have a 6= e. Note that b2 = a 6= c.
+If b2 = a3 , then a = a3 which is impossible since the order of a is not two. If
+a3 6= c, then c, b2 , a3 are pairwise distinct.
+    Now assume that a3 = c. As a is not of order three, we have b 6= a2 and
+c 6= e. Note that a3 = c 6= b and also a3 = c 6= c2 . If b 6= c2 , then b, c2 , a3 are
+pairwise distinct. If b = c2 , then a = b2 = c4 = (a3 )4 and hence the order of a
+is 11, thus a2 6= (a3 )3 = c3 and hence b, a2 , c3 are pairwise distinct.
+    Case 2. None of a, b, c is the square of another one among a, b, c.
+    Suppose that there is no τ ∈ S3 with aτ (1) , bτ (2) , cτ (3) pairwise distinct.
+Then c3 ∈ {a, b2 } ∩ {a2 , b}. If c3 = a, then c3 6= b and hence a = c3 = a2 ,
+thus a = e = c which leads to a contradiction. (Recall that none of a, b, c is
+of order 3.) Therefore c3 = b2 . As c is not of order three, if b = e then we
+have c = e = b which is impossible. So c3 = b2 6= b and hence b2 = c3 = a2 .
+Similarly, a3 = b2 = c2 . Thus a3 = b2 = a2 , hence a = e and b2 = a2 = e,
+which contradicts b 6= a since b is not of order two.
+    In view of the above, we have finished the proof of Theorem 1.4. 
+Proof of Theorem 1.5. The subgroup of G generated by a1 , . . . , an is a finitely
+generated torsion-free abelian group. So we may simply assume that G = Zr
+for some positive integer r without any loss of generality. It is well known
+that there is a linear ordering ⩽ on G = Zr such that for any a, b, c ∈ G if
+a < b then −b < −a and a + c < b + c (cf. [L]). For convenience, we suppose
+a1 < a2 < . . . < an without any loss of generality.
+   If n = 4, then (b1 , b2 , b3 , b4 ) = (a1 , a2 , a3 , a4 ) meets the requirement since
+
+           a1 + a2 + a3 < a4 + a1 + a2 < a3 + a4 + a1 < a2 + a3 + a4 .
+            ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                            9
+
+Below we assume n ⩾ 5.
+  Clearly
+
+              a1 + a2 + a3 < a2 + a3 + a4 < . . . < an−2 + an−1 + an .
+
+For convenience we set
+
+                     S := {ai−1 + ai + ai+1 : i = 2, . . . , n − 1},
+
+and let min S and max S denote the least element and the largest element of S
+respectively. Note that
+
+min S = a1 +a2 +a3 < an +a1 +a2 < an−1 +an +a1 < max S = an−2 +an−1 +an .
+
+If {an + a1 + a2 , an−1 + an + a1 } ∩ S = ∅, then (b1 , . . . , bn ) = (a1 , . . . , an )
+meets the requirement. Obviously
+
+−an < −an−1 < . . . < −a2 < −a1 and (−a2 )+(−a1 )+(−an ) = −(a1 +a2 +an ).
+
+So, it suffices to find a desired permutation b1 , . . . , bn of a1 , . . . , an under the
+condition an−1 + an + a1 ∈ S.
+   Case 1. n = 5.
+   As a4 + a5 + a1 ∈ S, we have a4 + a5 + a1 = a2 + a3 + a4 and we may take
+(b1 , . . . , b5 ) = (a1 , a2 , a3 , a5 , a4 ) since
+
+a1 +a2 +a3 < a4 +a1 +a2 < a2 +a3 +a4 = a5 +a4 +a1 < a2 +a3 +a5 < a3 +a5 +a4 .
+
+   Case 2. n = 6.
+   As a5 +a6 +a1 ∈ S, the sum a5 +a6 +a1 is equal to a2 +a3 +a4 or a3 +a4 +a5 . If
+a5 +a6 +a1 = a2 +a3 +a4 , then we may take (b1 , . . . , b6 ) = (a1 , a2 , a5 , a3 , a4 , a6 )
+since
+
+   a1 + a2 + a5 <a6 + a1 + a2 < a4 + a6 + a1 < a5 + a6 + a1 = a2 + a3 + a4
+                  <a2 + a5 + a3 < a5 + a3 + a4 < a3 + a4 + a6 .
+
+If a5 + a6 + a1 = a3 + a4 + a5 , then a6 + a1 = a3 + a4 and we may take
+(b1 , . . . , b6 ) = (a1 , a2 , a3 , a4 , a6 , a5 ) since
+
+  a1 + a2 + a3 <a5 + a1 + a2 < a6 + a1 + a2 = a2 + a3 + a4
+               <a3 + a4 + a5 = a6 + a5 + a1 < a3 + a4 + a6 < a4 + a6 + a5 .
+
+   Case 3. n = 7.
+10                                           ZHI-WEI SUN
+
+   As a6 +a7 +a1 ∈ S, the sum a6 +a7 +a1 is equal to a2 +a3 +a4 or a3 +a4 +a5
+or a4 + a5 + a6 . If a6 + a7 + a1 = a4 + a5 + a6 , then a7 + a1 = a4 + a5 and we
+may take (b1 , . . . , b7 ) = (a2 , a1 , a4 , a5 , a3 , a6 , a7 ) since
+
+     a2 + a1 + a4 <a1 + a4 + a5 = a1 + a1 + a7 < a7 + a2 + a1
+                  <a7 + a1 + a3 = a4 + a5 + a3 < a5 + a3 + a6
+                    <a4 + a5 + a6 = a1 + a6 + a7 < a2 + a6 + a7 < a3 + a6 + a7 .
+
+If a6 +a7 +a1 = a2 +a3 +a4 , then we may take (b1 , . . . , b7 ) = (a1 , a2 , a3 , a5 , a4 , a6 , a7 )
+since
+
+     a1 + a2 + a3 <a7 + a1 + a2 < a5 + a7 + a1 < a6 + a7 + a1 = a2 + a3 + a4
+                    <a2 + a3 + a5 < a3 + a5 + a4 < a5 + a4 + a6 < a4 + a6 + a7 .
+
+If a6 +a7 +a1 = a3 +a4 +a5 and a5 +a6 +a1 6= a2 +a3 +a4 , then a6 +a1 < a3 +a4
+and we may take (b1 , . . . , b7 ) = (a1 , a2 , a3 , a4 , a7 , a5 , a6 ) since
+
+a1 + a2 + a3 <a6 + a1 + a2 < min{a5 + a6 + a1 , a2 + a3 + a4 }
+                 < max{a5 + a6 + a1 , a2 + a3 + a4 } < a1 + a6 + a7 = a3 + a4 + a5
+                 <a3 + a4 + a7 < a4 + a7 + a5 < a7 + a5 + a6 .
+
+If a6 +a7 +a1 = a3 +a4 +a5 and a5 +a6 +a1 = a2 +a3 +a4 , then a7 +a1 < a3 +a4
+and we may take (b1 , . . . , b7 ) = (a1 , a2 , a3 , a4 , a6 , a5 , a7 ) since
+
+             a1 + a2 + a3 <a7 + a1 + a2 < a5 + a6 + a1 = a2 + a3 + a4
+                          <a5 + a7 + a1 < a3 + a4 + a5 = a6 + a7 + a1
+                               <a3 + a4 + a6 < a4 + a6 + a5 < a6 + a5 + a7 .
+
+  Case 4. n > 7 and an + a1 + a2 6∈ S.
+  In this case, there is a unique 2 < i < n − 1 with ai−1 + ai + ai+1 =
+an−1 + an + a1 . If i < n − 3, then we may take
+
+           (b1 , . . . , bn ) = (a1 , . . . , ai−2 , ai−1 , ai , ai+2 , ai+1 , ai+3 , . . . , an )
+
+because
+
+     ai−2 + ai−1 + ai <ai−1 + ai + ai+1 = an−1 + an + a1 < ai−1 + ai + ai+2
+                      <ai + ai+2 + ai+1 < ai+2 + ai+1 + ai+3
+                           <ai+1 + ai+3 + ai+4 < . . . < an−2 + an−1 + an .
+
+When i ∈ {n − 2, n − 3}, we have i ⩾ n − 3 > 4, and hence in the case
+a1 + a2 + an 6= ai−4 + ai−3 + ai−1 we may take
+
+        (b1 , . . . , bn ) = (a1 , . . . , ai−4 , ai−3 , ai−1 , ai−2 , ai , ai+1 , ai+2 , . . . , an )
+               ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                                         11
+
+because
+
+          ai−4 + ai−3 + ai−2 <ai−4 + ai−3 + ai−1 < ai−3 + ai−1 + ai−2
+                                     <ai−1 + ai−2 + ai < ai−2 + ai + ai+1
+                                     <ai−1 + ai + ai+1 = an−1 + an + a1
+                                     <ai + ai+1 + ai+2 < . . . < an−2 + an−1 + an
+
+and
+
+      an + a1 + a2 <(ai−2 + an−1 − ai+1 ) + an + a1
+                            = ai−2 − ai+1 + (ai−1 + ai + ai+1 ) = ai−1 + ai−2 + ai .
+
+If i ∈ {n − 2, n − 3} and a1 + a2 + an = ai−4 + ai−3 + ai−1 , then we may take
+
+        (b1 , . . . , bn ) = (a1 , . . . , ai−4 , ai−3 , ai , ai−2 , ai−1 , ai+1 , ai+2 , . . . , an )
+
+because
+
+      an + a1 + a2 =ai−4 + ai−3 + ai−1
+                   <ai−4 + ai−3 + ai < ai−3 + ai + ai−2 < ai + ai−2 + ai−1
+                        <ai−2 + ai−1 + ai+1 < ai−1 + ai + ai+1 = an−1 + an + a1
+                        <ai−1 + ai+1 + ai+2 < . . . < an−2 + an−1 + an .
+
+   Case 5. n > 7 and an + a1 + a2 ∈ S.
+   In this case, for some 2 < j < i ⩽ n − 2 we have
+
+      an−1 + an + a1 = ai−1 + ai + ai+1 > aj−1 + aj + aj+1 = an + a1 + a2 .
+
+If j + 1 = i, then
+
+          an−1 − a2 =(an−1 + an + a1 ) − (an + a1 + a2 )
+                         =ai−1 + ai + ai+1 − (ai + ai−1 + ai−2 ) = ai+1 − ai−2
+
+which is impossible since i ⩾ 4 and n > 6.
+  If i − j > 5, then
+
+(b1 , . . . , bn ) = (a1 , . . . , aj−1 , aj , aj+2 , aj+1 , aj+3 , . . . , ai−3 , ai−1 , ai−2 , ai , ai+1 , . . . , an )
+
+meets the requirement since
+
+   aj−1 + aj + aj+1 = an + a1 + a2 < aj−1 + aj + aj+2
+                            < aj + aj+2 + aj+1 < aj+2 + aj+1 + aj+3
+                            < . . . < ai−3 + ai−1 + ai−2 < ai−1 + ai−2 + ai
+                            < ai−2 + ai + ai+1 < ai−1 + ai + ai+1 = an−1 + an + a1
+                            < ai + ai+1 + ai+2 < . . . < an−2 + an−1 + an .
+12                                             ZHI-WEI SUN
+
+If i − j = 5, then j + 4 = i − 1 and
+
+       (b1 , . . . , bn ) = (a1 , . . . , aj−1 , aj , aj+2 , aj+1 , ai−1 , ai−2 , ai , ai+1 , . . . , an )
+
+meets the requirement. If i − j = 4, then
+
+          (b1 , . . . , bn ) = (a1 , . . . , aj−1 , aj , aj+2 , aj+3 , aj+1 , ai , ai+1 , . . . , an )
+
+meets the requirement since
+
+     aj−1 + aj + aj+1 =an + a1 + a2
+                      <aj−1 + aj + aj+2 < aj + aj+2 + aj+3
+                             <aj+2 + aj+3 + aj+1 < aj+3 + aj+1 + ai
+                             <aj+1 + ai + ai+1 < ai−1 + ai + ai+1 = an−1 + an + a1
+                             <ai + ai+1 + ai+2 < . . . < an−2 + an−1 + an .
+
+If i − j = 3, then
+
+              (b1 , . . . , bn ) = (a1 , . . . , aj−1 , aj , aj+2 , aj+1 , ai , ai+1 , . . . , an )
+
+meets the requirement since
+
+     aj−1 + aj + aj+1 =an + a1 + a2
+                      <aj−1 + aj + aj+2 < aj + aj+2 + aj+1
+                            <aj+2 + aj+1 + ai = ai−1 + ai−2 + ai < ai−2 + ai + ai+1
+                            <ai−1 + ai + ai+1 = an−1 + an + a1
+                            <ai + ai+1 + ai+2 < . . . < an−2 + an−1 + an .
+
+If j > 4 and i = j + 2, then
+
+       (b1 , . . . , bn ) = (a1 , . . . , aj−3 , aj−1 , aj−2 , aj+1 , aj , ai , ai+1 , ai+2 , . . . , an )
+
+meets the requirement since
+
+ aj−4 + aj−3 + aj−1 < aj−3 + aj−1 + aj−2 < aj−1 + aj−2 + aj+1
+                              < aj−2 + aj+1 + aj < aj−1 + aj + aj+1 = an + a1 + a2
+                              < aj+1 + aj + ai < aj + ai + ai+1
+                              < ai−1 + ai + ai+1 = an−1 + an + a1 < ai + ai+1 + ai+2 .
+
+If i = j + 2 ⩽ n − 4, then
+
+ (b1 , . . . , bn ) = (a1 , . . . , aj−2 , aj−1 , aj , ai , ai−1 , ai+2 , ai+1 , ai+3 , ai+4 , . . . , an )
+           ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                    13
+
+meets the requirement since
+
+         aj−2 + aj−1 + aj < aj−1 + aj + aj+1 = an + a1 + a2
+                              < aj−1 + aj + ai < aj + ai + ai−1
+                              < ai−1 + ai + ai+1 = an−1 + an + a1
+                              < ai + ai−1 + ai+2 < ai−1 + ai+2 + ai+1
+                              < ai+2 + ai+1 + ai+3 < ai+1 + ai+3 + ai+4
+                              < . . . < an−2 + an−1 + an .
+
+If i ⩾ n − 3, j ⩽ 4 and i − j = 2, then 2 = i − j ⩾ n − 3 − 4 and hence n ∈ {8, 9}.
+    For n = 8, we need to consider the case i = 6 and j = 4. As a8 + a1 + a2 =
+a3 + a4 + a5 and a7 + a8 + a1 = a5 + a6 + a7 , we have a8 + a1 = a5 + a6 =
+a3 + a4 + a5 − a2 . If 2a5 6= a4 + a7 , then a5 + a8 + a1 = 2a5 + a6 6= a4 + a6 + a7
+and hence we may take
+
+                   (b1 , . . . , b8 ) = (a1 , a2 , a3 , a4 , a6 , a7 , a5 , a8 )
+
+since
+
+a1 + a2 + a3 < a2 + a3 + a4 < a3 + a4 + a5 = a8 + a1 + a2 < a3 + a4 + a6
+             < min{a4 + a6 + a7 , a5 + a8 + a1 } < max{a4 + a6 + a7 , a5 + a8 + a1 }
+             < a6 + a7 + a5 = a7 + a8 + a1 < a7 + a5 + a8 .
+
+If 2a5 = a4 + a7 , then a6 + a8 + a1 = a5 + 2a6 > a4 + a5 + a7 and we may take
+
+                   (b1 , . . . , b8 ) = (a1 , a2 , a3 , a4 , a5 , a7 , a8 , a6 )
+
+since
+
+  a1 + a2 + a3 < a1 + a3 + a4 = a1 + a2 + a6 < a2 + a3 + a4
+                < a3 + a4 + a5 = a8 + a1 + a2 < a4 + a5 + a7 < a6 + a8 + a1
+                < a5 + a7 + a8 < a7 + a8 + a6 .
+
+When n = 8, i = 5 and j = 3, it suffices to apply the result for i = 6 and j = 4
+to the sequence
+
+          a′1 = −a8 <a′2 = −a7 < a′3 = −a6 < a′4 = −a5
+                     <a′5 = −a4 < a′6 = −a3 < a′7 = −a2 < a′8 = −a1
+
+since a′7 + a′8 + a′1 = −(a1 + a2 + a8 ) = −(a2 + a3 + a4 ) = a′5 + a′6 + a′7 and
+a′8 + a′1 + a′2 = −(a1 + a7 + a8 ) = −(a4 + a5 + a6 ) = a′3 + a′4 + a′5 .
+14                                  ZHI-WEI SUN
+
+   Now it remains to consider the last case where n = 9, i = 6 and j = 4.
+As a3 + a4 + a5 = a9 + a1 + a2 and a5 + a6 + a7 = a8 + a9 + a1 , we have
+a3 + a4 < a9 + a1 and hence a3 + a4 + a6 < a3 + a4 + a7 < a7 + a9 + a1 . If
+a7 + a9 + a1 = a4 + a5 + a6 , then
+
+a8 − a7 = (a8 + a9 + a1 ) − (a7 + a9 + a1 ) = a5 + a6 + a7 − (a4 + a5 + a6 ) = a7 − a4 .
+
+When 2a7 6= a8 + a4 , we have a7 + a9 + a1 6= a4 + a5 + a6 and hence we may
+take
+               (b1 , . . . , b9 ) = (a1 , a2 , a3 , a4 , a6 , a5 , a8 , a7 , a9 )
+since
+
+a1 + a2 + a3 < a2 + a3 + a4 < a3 + a4 + a5 = a9 + a1 + a2 < a3 + a4 + a6
+               < min{a4 + a5 + a6 , a7 + a9 + a1 } < max{a4 + a5 + a6 , a7 + a9 + a1 }
+               < a6 + a5 + a7 = a8 + a9 + a1 < a6 + a5 + a8
+               < a5 + a8 + a7 < a8 + a7 + a9 .
+
+If 2a7 = a8 + a4 , then a5 + a6 + a7 < 2a7 + a6 = a4 + a6 + a8 and hence we
+may take
+                  (b1 , . . . , b9 ) = (a1 , a2 , a3 , a4 , a6 , a8 , a5 , a7 , a9 )
+since
+
+     a1 + a2 + a3 < a2 + a3 + a4 < a3 + a4 + a5 = a9 + a1 + a2 < a3 + a4 + a6
+                 < a9 + a1 + a6 < a7 + a9 + a1 < a8 + a9 + a1 = a5 + a6 + a7
+                 < a4 + a6 + a8 < a6 + a8 + a5 < a8 + a5 + a7 < a5 + a7 + a9 .
+
+     In view of the above, we have completed the proof of Theorem 1.5. 
+
+                              4. Some conjectures
+   Motivated by Theorem 1.3(i) and Theorem 1.4, we pose the following con-
+jecture for finite groups.
+Conjecture 4.1. Let n be a positive integer, and let G be a group containing
+no element of order among 2, . . . , n + 1. Then, for any A ⊆ G with |A| = n,
+we may write A = {a1 , . . . , an } with a1 , a22 , . . . , ann pairwise distinct.
+
+Remark 4.1. (a) Theorem 1.4 shows that this conjecture holds when n ⩽ 3 or
+G is a torsion-free abelian group.
+   (b) For n = 4, 5, 6, 7, 8, 9 we have verified the conjecture for cyclic groups
+G = Z/mZ with |G| = m not exceeding 100, 100, 70, 60, 30, 30 respectively.
+   (c) If G is a finite group with |G| > 1, then the least order of a non-identity
+element of G is p(G), the smallest prime divisor of |G|.
+     Inspired by Theorem 1.3, we formulate the following conjecture.
+           ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                    15
+
+Conjecture 4.2. Let n > 1 be an integer with n 6≡ 2 (mod 4).
+  (i) We have
+                   per[ij−1 ]1⩽i,j⩽n−1 ≡ 0 (mod n).                              (4.1)
+  (ii) If n ≡ 1 (mod 3), then
+
+                        per[ij−1 ]1⩽i,j⩽n−1 ≡ 0 (mod n2 ).                       (4.2)
+
+
+Remark 4.2. We have checked this conjecture via computing per[ij−1 ]1⩽i,j⩽n−1
+modulo n2 for n ⩽ 17. The sequence an = per[ij−1 ]1⩽i,j⩽n (n = 1, 2, 3, . . . ) is
+available from [S18, A322363].
+Conjecture 4.3. (i) For any n ∈ Z+ , there is a permutation σn ∈ Sn such
+that kσn (k) + 1 is prime for every k = 1, . . . , n.
+   (ii) For any integer n > 2, there is a permutation τn ∈ Sn such that kτn (k)−1
+is prime for every k = 1, . . . , n.
+
+Remark 4.3. See [S18, A321597] for related data and examples.
+Conjecture 4.4. (i) For each n ∈ Z+ , there is a permutation πn of {1, . . . , n}
+such that k 2 + kπn (k) + πn (k)2 is prime for every k = 1, . . . , n.
+   (ii) For any positive integer n 6= 7, there is a permutation πn of {1, . . . , n}
+such that k 2 + πn (k)2 is prime for every k = 1, . . . , n.
+
+Remark 4.4. See [S18, A321610] for related data and examples.
+  As usual, for k = 1, 2, 3, . . . we let pk denote the k-th prime.
+Conjecture 4.5. For any n ∈ Z+ , there is a permutation π ∈ Sn such that
+pk + pπ(k) + 1 is prime for every k = 1, . . . , n.
+
+Remark 4.5. See [S18, A321727] for related data and examples.
+   In 1973 J.-R. Chen [Ch] proved that there are infinitely many primes p with
+p + 2 a product of at most two primes; nowadays such primes p are called Chen
+primes.
+Conjecture 4.6. Let n ∈ Z+ . Then, there is an even permutation σ ∈ Sn
+with pk pσ(k) − 2 prime for all k = 1, . . . , n. If n > 2, then there is an odd
+permutation τ ∈ Sn with pk pτ (k) − 2 prime for all k = 1, . . . , n.
+
+Remark 4.6. See [S18, A321855] for related data and examples. If we let b(n)
+denote the number of even permutations σ ∈ Sn with pk pσ(k) − 2 prime for all
+k = 1, . . . , n, then
+
+               (b(1), . . . , b(11)) = (1, 1, 1, 1, 3, 6, 1, 1, 33, 125, 226).
+16                                     ZHI-WEI SUN
+
+Conjecture 2.17(ii) of Sun [S15] implies that for any odd integer n > 1 there is
+a prime p ⩽ n such that pn − 2 is prime.
+
+   In 2002, Cloitre [Cl, A073112] created the sequence A073112
+                                                        Pn       on OEIS whose
+                                                                  1
+n-th term is the number of permutations π ∈ Sn with k=1 k+π(k)         ∈ Z. Re-
+cently Sun [S18a] conjectured that for any integer n > 5 there is a permutation
+π ∈ Sn satisfying
+                                n
+                               X       1
+                                             = 1,
+                                   k + π(k)
+                                     k=1
+
+and this was later confirmed by the user Zhao Shen at Mathoverflow via clever
+induction arguments.
+   In 1982 A. Filz (cf. [G, pp. 160-162]) conjectured that for any n = 2, 4, 6, . . .
+there is a circular permutation (i1 , . . . , in ) of 1, . . . , n such that all the n adja-
+cent sums
+                     i1 + i2 , i2 + i3 , . . . , in−1 + in , in + i1
+
+are prime.
+   Motivated by this, we pose the following conjecture.
+
+Conjecture 4.7. (i) For any integer n > 6, there is a permutation π ∈ Sn
+such that
+                        n−1
+                        X          1
+                                            = 1.                    (4.3)
+                            π(k) + π(k + 1)
+                               k=1
+
+Also, for any integer n > 7, there is a permutation π ∈ Sn such that
+
+      1           1                   1             1
+            +            +...+                +            = 1. (4.4)
+ π(1) + π(2) π(2) + π(3)       π(n − 1) + π(n) π(n) + π(1)
+
+     (ii) For any integer n > 7, there is a permutation π ∈ Sn such that
+
+                              n−1
+                              X             1
+                                                      = 0.                            (4.5)
+                                    π(k)2 − π(k + 1)2
+                              k=1
+
+
+
+
+Remark 4.7. See [S18, A322070 and A322099] for related data and examples.
+For the latter assertion in Conjecture 4.7(i), the equality (4.4) with n = 8 holds
+if we take (π(1), . . . , π(8)) = (6, 1, 5, 2, 4, 3, 7, 8). In a previous version of this
+paper posted to arXiv, the author also     Pn−1conjectured that for any integer n > 5
+                                                          1
+there is a permutation π ∈ Sn with k=1 π(k)π(k+1)               = 1; this, together with
+two other conjectures of the author, was confirmed by G.-N. Han [H].
+            ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                      17
+
+Conjecture 4.8. (i) For any integer n > 1, there is a permutation π ∈ Sn
+such that    X
+                  π(k)π(k + 1) ∈ {2m + 1 : m = 0, 1, 2, . . . }.    (4.6)
+                0<k<n
+
+  (ii) For any integer n > 4, there is a unique power of two which can be
+          Pn−1
+written as k=1 π(k)π(k + 1) with π ∈ Sn and π(n) = n.
+
+Remark 4.8. Concerning part (i) of Conjecture 4.8, when n = 4 we may choose
+(π(1), . . . , π(4)) = (1, 3, 2, 4) so that
+               3
+               X
+                     π(k)π(k + 1) = 1 × 3 + 3 × 2 + 2 × 4 = 24 + 1.
+               k=1
+
+  For any π ∈ Sn , if for each k = 1, . . . , n we let
+                              π(π −1 (k) + 1) if π −1 (k) 6= n,
+                           
+                    ′
+                  π (k) =
+                              π(1)               if π −1 (k) = n,
+then π ′ ∈ Sn and
+                                                                    n
+                                                                    X
+            π(1)π(2) + . . . + π(n − 1)π(n) + π(n)π(1) =                  kπ ′ (k).
+                                                                    k=1
+
+  By the Cauchy-Schwarz inequality (cf. [N, p. 178]), for any π ∈ Sn we have
+                 Xn       2  X    n       Xn         
+                                          2             2
+                     kπ(k) ⩽            k         π(k)
+                         k=1                   k=1         k=1
+
+and hence
+                      n                n
+                      X                X            n(n + 1)(2n + 1)
+                             kπ(k) ⩽         k2 =                    .
+                                                           6
+                      k=1              k=1
+If we let σ(k) = n + 1 − π(k) for all k = 1, . . . , n, then σ ∈ Sn and
+        n
+        X                n
+                         X                                   n
+                                                             X          n
+                                                                        X
+              kπ(k) =          k(n + 1 − σ(k)) = (n + 1)           k−         kσ(k)
+        k=1              k=1                                 k=1        k=1
+                                   2
+                         n(n + 1)   n(n + 1)(2n + 1)   n(n + 1)(n + 2)
+                     ⩾            −                  =                 .
+                             2             6                  6
+Thus
+X n                                                                      
+                                    n(n + 1)(n + 2)        n(n + 1)(2n + 1)
+      kπ(k) : π ∈ Sn ⊆ T (n) :=                     ,... ,                    .
+                                           6                      6
+  k=1
+                                                                          (4.7)
+Actually equality in (4.7) holds when n 6= 3, which was first realized by M.
+Aleksevev (cf. the comments in [B]). Note that |T (n)| = n(n2 − 1)/6 + 1.
+  Inspired by the above analysis, here we pose the following conjecture in
+additive combinatorics.
+18                                   ZHI-WEI SUN
+
+Conjecture 4.9. Let n ∈ Z+ and let F be a field with p(F ) > n + 1, where
+p(F ) = p if the characteristic of F is a prime p, and p(F ) = +∞ if the
+characteristic of F is zero. Let A be any finite subset of F with |A| ⩾ n + δn,3 ,
+where δn,3 is 1 or 0 according as n = 3 or not. Then, for the set
+                   n
+                  X                                                     
+        S(A) :=          kak : a1 , . . . , an are distinct elements of A ,        (4.8)
+                   k=1
+
+we have
+                                         n(n + 1) n(n2 − 1)
+                                                             
+           |S(A)| ⩾ min p(F ), (|A| − n)         +          +1 .                   (4.9)
+                                            2         6
+
+
+Remark 4.9. One may compare this conjecture with the author’s conjectural
+linear extension of the Erdős-Heilbronn conjecture (cf. [SZ]). Perhaps, Conjec-
+ture 4.9 remains valid if we replace the field F by any finite additive group G
+with |G| > 1 and use p(G) (the least prime factor of |G|) instead of p(F ).
+     Recall that the torsion subgroup of a group G is given by
+
+                      Tor(G) = {g ∈ G : g is of finite order}.
+
+   Conjecture 3.3(i) of the author [S19] states that if A is an n-subset (with
+|A| = n > 2) of an additive abelian group G of odd order then there is a
+numbering a1 , . . . , an of all the elements of A such that a1 + a2 , . . . , an−1 +
+an , an + a1 are pairwise distinct, this was verified by Yu-Xuan Ji (a student at
+Nanjing Univ.) for |G| < 30 in 2020. Motivated by this and Theorem 1.5, we
+formulate the following conjecture.
+Conjecture 4.10. Let G be an additive abelian group with Tor(G) cyclic or
+|Tor(G)| odd. For any finite subset A of G with |A| = n > 3, there is a
+numbering a1 , . . . , an of all the elements of A such that the n sums
+
+a1 + a2 + a3 , a2 + a3 + a4 , . . . , an−2 + an−1 + an , an−1 + an + a1 , an + a1 + a2
+
+are pairwise distinct.
+
+Remark 4.10. (a) Conjecture 4.10 holds in the case A = G = Z/nZ = {ā =
+a + nZ : a ∈ Z} with n > 3 and 3 ∤ n since the natural list 0̄, 1̄, . . . , n − 1 of
+the elements of Z/nZ meets the requirement.
+    (b) In 2008 the author [S08] proved that for any three n-subsets A, B, C of an
+additive abelian group G with Tor(G) cyclic, there is a numbering a1 , . . . , an of
+the elements of A, a numbering b1 , . . . , bn of the elements of B and a numbering
+c1 , . . . , cn of the elements of C such that the n sums a1 +b1 +c1 , . . . , an +bn +cn
+are pairwise distinct.
+            ON PERMUTATIONS OF {1, . . . , n} AND RELATED TOPICS                      19
+
+                                    References
+[A]    N. Alon, Combinatorial Nullstellensatz, Combin. Probab. Comput. (1999), 7–29.
+[B]    J. Boscole, Sequence A126972 in OEIS, 2007, Website: http://oeis.org/A126972.
+[Br]   P. Bradley, Prime number sums, preprint, arXiv:1809.01012 (2018).
+[Ch]   J.-R. Chen, On the representation of a larger even integer as the sum of a prime
+       and the product of at most two primes, Sci. Sinica 16 (1973), 157–176.
+[Cl]   B. Cloitre, Sequences A073112 and A073364 in OEIS (2002), http://oeis.org.
+[DKSS] S. Dasgupta, G. Károlyi, O. Serra and B. Szegedy, Transversals of additive Latin
+       squares, Israel J. Math. 126 (2001), 17C28.
+[FSX] T. Feng, Z.-W. Sun and Q. Xiang, Exterior algebras and two conjectures on finite
+       abelian groups, Israel J. Math. 182 (2011), 425–437.
+[GS]   F. Ge and Z.-W. Sun, On a permutation problem for finite abelian groups, Electron.
+       J. Combin. 24 (2017), no. 1, #P1.17, 1–6.
+[G]    R. K. Guy, Unsolved Problems in Number Theory, 3rd Edition, Springer, 2004.
+[H]    G.-N. Han, On the existence of permutations conditioned by certain rational func-
+       tions, Electron. Res. Arch. 28 (2020), 149–156.
+[He]   E. Hecke, Lectures on the Theory of Algebraic Numbers, Grad. Texts in Math., 77,
+       Springer, New York, 1981, pp. 108C116..
+[L]    F. W. Levi, Ordered groups, Proc. Indian Acad. Sci. Sect. A 16 (1942), 256–263.
+[N]    M. B. Nathanson, Additive Number Theory: The Classical Bases, Grad. Texts in
+       Math., Vol. 164, Springer, New York, 1996.
+[S08]  Z.-W. Sun, An additive theorem and restricted sumsets, Math. Res. Lett. 15 (2008),
+       1263–1276.
+[S15]  Z.-W. Sun, Problems on combinatorial properties of primes, in: M. Kaneko, S. Kane-
+       mitsu and J. Liu (eds.), Number Theory: Plowing and Starring through High Wave
+       Forms, Proc. 7th China-Japan Seminar (Fukuoka, Oct. 28–Nov. 1, 2013), Ser. Num-
+       ber Theory Appl., Vol. 11, World Sci., Singapore, 2015, pp. 169–187.
+[S18]  Z.-W. Sun, Sequences A321597, A321610, A321611, A321727, A321855, A322070,
+       A322099, A322363 in OEIS (2018), http://oeis.org.
+                                              P        1
+[S18a] Z.-W. Sun, Permutations π ∈ Sn with n    k=1 k+π(k) = 1, Question 315648 on Math-
+       overflow, Nov. 19, 2018. Website: https://mathoverflow.net/questions/315648.
+[S19]  Z.-W. Sun, Some new problems in additive combinatorics, Nanjing Univ. J. Math.
+       Biquarterly 36 (2019), 134–155. http://maths.nju.edu.cn/∼zwsun/196a.pdf.
+[SZ]   Z.-W. Sun and L.-L. Zhao, Linear extension of the Erdős-Heilbronn conjecture, J.
+       Combin. Theory Ser. A 119 (2012), 364–381.
+
