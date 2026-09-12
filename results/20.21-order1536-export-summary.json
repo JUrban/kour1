@@ -1,0 +1,117 @@
+{
+  "status": "COMPLETE",
+  "started_utc": "2026-09-12T04:39:44.962173+00:00",
+  "script_sha256": "a3393a136a1cde0add61d2146e88b39240ac163e9232db79fc123243afcf909b",
+  "runner_sha256": "554326397a82132342d8aa02e6af1353103afcd02dfeb554385dc7ab262621b6",
+  "workspace_mib_each": 512,
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 226778,
+      "command": [
+        "/project/bin/gap",
+        "-o",
+        "512m",
+        "/project/results/20.21-order1536-export-shard0.g",
+        "/project/scripts/export_20_21_interval_kernels.g"
+      ],
+      "returncode": 0,
+      "groups": 1252,
+      "kernels": 7622,
+      "input": "results/20.21-order1536-export-shard0.g",
+      "log": "results/20.21-order1536-export-shard0.log",
+      "raw": "results/20.21-order1536-export-shard0-tables.grows",
+      "compressed": "results/20.21-order1536-export-shard0-tables.grows.gz",
+      "observed_completion_utc": "2026-09-12T04:58:52.529435+00:00",
+      "raw_sha256": "30eff36ad3eaa30822cb3cf98bbd1ff598a447e117c695916c90f66510e4721e",
+      "raw_bytes": 521328300,
+      "sha256": {
+        "results/20.21-order1536-export-shard0.g": "100f4dd90f09abcc2185066001df9e501df68b22f96c41d18c22de622896fe3a",
+        "results/20.21-order1536-export-shard0.log": "4e2c13ae838429afafe5b11a4678f98326cd32723a73ee1e4570d450b813107e",
+        "results/20.21-order1536-export-shard0-tables.grows.gz": "590d52c383a6d0b0e6ad5f7ba56718bf68fe01a7ee380cee1834c0633db5e330"
+      }
+    },
+    {
+      "index": 1,
+      "pid": 226779,
+      "command": [
+        "/project/bin/gap",
+        "-o",
+        "512m",
+        "/project/results/20.21-order1536-export-shard1.g",
+        "/project/scripts/export_20_21_interval_kernels.g"
+      ],
+      "returncode": 0,
+      "groups": 1252,
+      "kernels": 7578,
+      "input": "results/20.21-order1536-export-shard1.g",
+      "log": "results/20.21-order1536-export-shard1.log",
+      "raw": "results/20.21-order1536-export-shard1-tables.grows",
+      "compressed": "results/20.21-order1536-export-shard1-tables.grows.gz",
+      "observed_completion_utc": "2026-09-12T04:59:18.497683+00:00",
+      "raw_sha256": "9a54dcfec4ceda3f845649be1e88de34683113454a7ec480cdf5e6f28133cb49",
+      "raw_bytes": 518318743,
+      "sha256": {
+        "results/20.21-order1536-export-shard1.g": "c36f8ae640f5669a12f77ce1fc14dec28a59fe1eb305e88e068cd03a6681f25d",
+        "results/20.21-order1536-export-shard1.log": "be6997a6b3f6d2e39ad5802742418035cb020e3facbe3f09b792c90559208add",
+        "results/20.21-order1536-export-shard1-tables.grows.gz": "539fd1dd34c7a8566dfeba6e066348074b77db5fddb25c2ea3e454227f357c08"
+      }
+    },
+    {
+      "index": 2,
+      "pid": 226780,
+      "command": [
+        "/project/bin/gap",
+        "-o",
+        "512m",
+        "/project/results/20.21-order1536-export-shard2.g",
+        "/project/scripts/export_20_21_interval_kernels.g"
+      ],
+      "returncode": 0,
+      "groups": 1251,
+      "kernels": 7637,
+      "input": "results/20.21-order1536-export-shard2.g",
+      "log": "results/20.21-order1536-export-shard2.log",
+      "raw": "results/20.21-order1536-export-shard2-tables.grows",
+      "compressed": "results/20.21-order1536-export-shard2-tables.grows.gz",
+      "observed_completion_utc": "2026-09-12T04:59:43.614204+00:00",
+      "raw_sha256": "1940aca247c3cc281d3702b34a44b7cdd8bb9ad4d00c67e860dbe6f5a168d83e",
+      "raw_bytes": 522354256,
+      "sha256": {
+        "results/20.21-order1536-export-shard2.g": "fc2925bb0ceb22732d48c15f62ffb19e65333918b68ef87e394a1169b48f61e1",
+        "results/20.21-order1536-export-shard2.log": "5148d451d44519194aa3957e7003801dc897392d68178f103bf186415157d951",
+        "results/20.21-order1536-export-shard2-tables.grows.gz": "94cdc34afca7f95fde9ff879ec1afd3c38c5a2010f61a3893f0cae1e430abbf3"
+      }
+    },
+    {
+      "index": 3,
+      "pid": 226781,
+      "command": [
+        "/project/bin/gap",
+        "-o",
+        "512m",
+        "/project/results/20.21-order1536-export-shard3.g",
+        "/project/scripts/export_20_21_interval_kernels.g"
+      ],
+      "returncode": 0,
+      "groups": 1251,
+      "kernels": 7577,
+      "input": "results/20.21-order1536-export-shard3.g",
+      "log": "results/20.21-order1536-export-shard3.log",
+      "raw": "results/20.21-order1536-export-shard3-tables.grows",
+      "compressed": "results/20.21-order1536-export-shard3-tables.grows.gz",
+      "observed_completion_utc": "2026-09-12T05:00:08.706578+00:00",
+      "raw_sha256": "2be56ed7bd86280f6da7b188081eca1a3656ee2aaaba80b6df89c0972cf62009",
+      "raw_bytes": 518250342,
+      "sha256": {
+        "results/20.21-order1536-export-shard3.g": "6653651fddeea216bd6beaa2738503532a2872509608a74a1f679fa72a103882",
+        "results/20.21-order1536-export-shard3.log": "bfdfa9a404fb8e95cc5b182b27650e265e85243cb71981ef6bdf022614627356",
+        "results/20.21-order1536-export-shard3-tables.grows.gz": "005f42ac89b2c90d27fd94a37af5eb296ac192567a86aa0704afa22bb5c1ed4d"
+      }
+    }
+  ],
+  "groups": 5006,
+  "kernels": 30414,
+  "elapsed_seconds": 1248.465841894038,
+  "completed_utc": "2026-09-12T05:00:33.428169+00:00"
+}

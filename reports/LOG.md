@@ -2468,3 +2468,19 @@ controller and all four GAP children also exit zero (17e16f), exporting
 all 30,414 actual kernel tables for 5,006 groups. Each completed shard
 was compressed only after its GAP exit was observed; the independent
 table audit is now running against the completed compressed files.
+
+
+## 2026-09-12T07:45:59.274348+00:00 — order-1536 exclusion audited, lower bound 3072
+
+The independent checker validates 30,414 kernel occurrences, with
+23,096 distinct full tables and 48,435,822,592 associativity triples
+(exit zero 466d97). It separates 26,118 pairs by element orders, 434
+by abelianization exponent and 208 by abelianization element orders,
+covering all 26,760 pairs. The 67-file packet auditor checks all source
+and prior-packet bindings and replays all native controls and actual
+kernel calculations, exiting zero (925efb). Together with the audited
+minimality reduction this excludes every possible order below 3,072.
+The compressed archives total 304,007,641 bytes; uncompressed files
+remain local. General 20.21 is unresolved and the complete count is 41.
+The n7 snapshot at 07:38:35 UTC records 36,310,000 checked nodes, all
+six workers live, none complete, and 50,824,436 KiB combined RSS.
