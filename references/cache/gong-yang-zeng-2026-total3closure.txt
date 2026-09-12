@@ -1,0 +1,1342 @@
+                                               TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR
+                                                                  GROUPS
+
+
+                                                          TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+arXiv:2608.17878v1 [math.GR] 18 Aug 2026
+
+
+
+
+                                                    Abstract. A finite group is totally 3-closed if every faithful permutation rep-
+                                                    resentation of it is 3-closed. We study this property for the finite simple pro-
+                                                    jective special linear groups. We prove that PSL2 (q) is totally 3-closed if and
+                                                    only if q ≥ 7 is prime, and that PSL3 (q) is totally 3-closed if and only if either
+                                                    q = 3, or q is prime and q ≡ 2 (mod 3). We further prove that PSL4 (q) is
+                                                    never totally 3-closed and that PSLn (q) is not totally 3-closed whenever n ≥ 5
+                                                    and q > 2. Within the family PSLn (q), only the groups PSLn (2) with n ≥ 5
+                                                    remain unresolved. In particular, this answers Problem 20.2 of the Kourovka
+                                                    Notebook affirmatively.
+
+
+
+
+                                                                                   1. Introduction
+                                               Let G ≤ Sym(Ω) and let k ≥ 1. The k-closure G(k),Ω is the largest subgroup
+                                           of Sym(Ω) having the same orbits as G on Ωk . The group G is k-closed on Ω if
+                                           G(k),Ω = G. This property depends on the permutation representation. A finite
+                                           abstract group G is totally k-closed if every faithful action of G on a finite set is k-
+                                           closed. The least such k is called the closure number of G. The notion of k-closure
+                                           goes back to Wielandt [24], while total closure was introduced and developed more
+                                           recently in [10, 14].
+                                               The case k = 2 has been studied extensively. Abdollahi and Arezoomand classi-
+                                           fied the finite nilpotent totally 2-closed groups [1], and Abdollahi, Arezoomand, and
+                                           Tracey proved that the same classification holds among all finite solvable groups
+                                           [2]. Among the finite nonabelian simple groups, Arezoomand, Iranmanesh, Praeger,
+                                           and Tracey proved that exactly six are totally 2-closed:
+                                                                  J1 ,      J3 ,      J4 ,       Ly,      Th,        M.
+                                           In particular, all six are sporadic, and no finite simple group of Lie type is totally
+                                           2-closed [5].
+                                              This led to Problem 20.2 of the Kourovka Notebook [19, Problem 20.2]:
+                                                   Are there any nonabelian simple groups of Lie type which are totally
+                                                   3-closed?
+                                           Freedman, Giudici, and Praeger placed this question in the broader study of closure
+                                           numbers of finite simple groups. They proved that the closure number of An is
+                                           n − 1, established uniform upper bounds for the remaining families, and posed
+                                           further questions on the closure numbers of finite simple classical groups [14].
+
+                                             Date: August 3, 2026.
+                                             2020 Mathematics Subject Classification. Primary 20B25; Secondary 20D06.
+                                             Key words and phrases. k-closure, totally 3-closed group, projective special linear group, per-
+                                           mutation group, base size.
+                                                                                             1
+2              TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+  We answer Problem 20.2 affirmatively and determine total 3-closedness through-
+out the family of projective special linear groups, apart from one remaining infinite
+family.
+
+Theorem 1.1. Let G = PSLn (q) be a finite nonabelian simple group. Then the
+following hold.
+    (1) If n = 2, then G is totally 3-closed if and only if q ≥ 7 is a prime.
+    (2) If n = 3, then G is totally 3-closed if and only if either q = 3, or q is a
+        prime with q ≡ 2 (mod 3).
+    (3) If n = 4, then G is not totally 3-closed for any q.
+    (4) If n ≥ 5 and q > 2, then G is not totally 3-closed.
+
+Remark 1.2. Thus, within the family PSLn (q), the classification of total 3-closedness
+remains open only when n ≥ 5 and q = 2. Finite nonabelian simple groups of other
+Lie types are not considered in this paper.
+
+   Now we describe our approach. Simplicity gives an effective reduction from
+arbitrary faithful actions to coset actions. Every nonsingleton orbit of a nonabelian
+simple group is faithful, and we show that total 3-closedness can be tested on
+diagonal actions on unions G/H ⊔ G/K for pairs of proper subgroups H, K < G.
+This two-orbit criterion is the starting point for all of our positive results.
+   Most coset actions are handled by base size. An action with a base of size at
+most two is 3-closed, and such an action also governs its union with any other
+transitive 3-closed action. We therefore reduce the positive cases to the relatively
+small collection of subgroups whose coset actions do not have a base of size two.
+   For PSL2 (p), Dickson’s subgroup classification reduces the problem to torus
+normalizers, exceptional subgroups, and subgroups of a Borel subgroup. The first
+two types are handled by base-size estimates. The Borel subgroups give scalar-fiber
+actions above P1 (Fp ), whose 3-closures are determined by the projective quotient
+and by determinant classes on the fibers. The remaining small primes are treated
+using the Fano plane, the unique 2-(11, 5, 2) biplane, Paley graphs and tournaments,
+and the Perkel graph.
+   The proof for PSL3 (p) has a similar structure. Nonparabolic maximal subgroups
+are treated using the subgroup classification and explicit trivial-intersection conju-
+gates. Subgroups of point and line parabolics require a separate argument. Their
+coset actions admit projective quotients, and mixed triple orbits recover equality or
+incidence in PG(2, p). This forces the actions on different projective fibers to arise
+from one element of the group. The case PSL3 (3) is handled separately using its
+maximal-subgroup structure and one exhaustive GAP computation.
+   The negative results come from local matching. On projective points, PGLn (q)
+and PSLn (q) have the same orbits on ordered triples, and field automorphisms
+preserve these orbits. This gives the semilinear obstruction whenever q is a proper
+prime power or gcd(n, q −1) > 1. For n ≥ 4 and q > 2, we use the action on nonzero
+vectors modulo the center of SLn (q). Every element of the corresponding general
+linear quotient can be matched on any ordered k-tuple with k < n by an element
+of the special linear quotient. Finally, the exceptional isomorphism PSL4 (2) ∼  = A8
+gives the remaining negative case in dimension four.
+   The paper is organized as follows. In Section 2, we establish the general reduction
+and base-size lemmas. In Section 3, we treat PSL2 (q). In Section 4, we prove the
+            TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                           3
+
+
+classification for PSL3 (q). In Section 5, we establish the semilinear and central-
+vector obstructions and prove Theorem 1.1.
+
+                      2. Definitions and immediate results
+   We first record the general facts used in the positive classifications. Throughout
+the paper, all groups and all sets acted on are finite, actions are on the right, and
+αg denotes the image of a point α under a group element g. All coset actions are
+denoted by G/H. Only the associated transitive G-set and its point stabilizer are
+used.
+Definition 2.1. Let Ω be a finite set and let G ≤ Sym(Ω). The 3-closure of G on Ω,
+denoted by G(3),Ω , consists of all σ ∈ Sym(Ω) such that, for every (α1 , α2 , α3 ) ∈ Ω3 ,
+there exists g ∈ G, depending on the triple, with
+                               (α1σ , α2σ , α3σ ) = (α1g , α2g , α3g ).
+The action of G on Ω is 3-closed if G(3),Ω = G. A finite group G is totally 3-closed
+if every faithful action of G on a finite set is 3-closed.
+Proposition 2.2. Let S be a finite nonabelian simple group. Then S is totally
+3-closed if and only if, for every pair of proper subgroups H, K < S, with repetition
+allowed, the diagonal action of S on S/H ⊔ S/K is 3-closed.
+Proof. The forward implication is immediate. Indeed, for every proper subgroup
+H < S, the kernel of the action of S on S/H is the core of H in S. Since S is simple,
+this kernel is trivial. Thus every action appearing in the statement is faithful.
+   Conversely, let Ω be a faithful finite S-set and let σ ∈ S (3),Ω . By [14, Lemma 2.1],
+applying the definition to the constant triple (α, α, α) shows that ασ ∈ αS for every
+α ∈ Ω. Hence σ preserves every S-orbit.
+   Every nonsingleton orbit is faithful, since the kernel of the action on such an
+orbit is a proper normal subgroup of S. Let Ω1 , . . . , Ωr be the nonsingleton orbits.
+Since the action on Ω is faithful, we have r ≥ 1.
+   Suppose first that r ≥ 2. For each j ≥ 2, we have that σ|Ω1 ⊔Ωj ∈ S (3),Ω1 ⊔Ωj
+by [14, Lemma 2.2]. Since Ω1 ∼      = S/H1 and Ωj ∼     = S/Hj for proper subgroups
+H1 , Hj < S, the hypothesis implies that this restriction is induced by some sj ∈ S.
+For j, k ≥ 2, the elements sj and sk induce the same permutation on Ω1 . Since the
+action on Ω1 is faithful, we have sj = sk . Their common value induces σ on every
+nonsingleton orbit.
+   Suppose now that r = 1. By [14, Lemma 2.2], σ|Ω1 ∈ S (3),Ω1 . Consider the
+diagonal action of S on Ω1 × {1, 2}, where S acts trivially on {1, 2}. Define σ         b ∈
+Sym(Ω1 × {1, 2}) by (α, i)σb = (ασ , i). For any triple ((α1 , i1 ), (α2 , i2 ), (α3 , i3 )),
+there exists s ∈ S such that
+                               (α1σ , α2σ , α3σ ) = (α1s , α2s , α3s )
+by [14, Lemma 2.1]. Since S fixes the second coordinate, the same element s agrees
+with σ
+     b on the original triple. Hence σb ∈ S (3),Ω1 ×{1,2} . Writing Ω1 ∼
+                                                                       = S/H for some
+proper subgroup H < S, this action is equivalent to the action on S/H ⊔ S/H.
+By hypothesis, it is 3-closed. Thus σb is induced by an element of S, and the same
+element induces σ on Ω1 .
+   Finally, since σ preserves every S-orbit, it fixes every singleton orbit pointwise.
+Thus σ ∈ S, and S is totally 3-closed.                                              □
+4              TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+   A base for a faithful action of G on Ω is a tuple of points of Ω whose pointwise
+stabilizer in G is trivial. The base size of the action is the least length of a base.
+Lemma 2.3. Let G act faithfully on Ω. If the action has base size at most two,
+then it is 3-closed.
+Proof. Let b be the base size of the action. If b = 2, then G(3),Ω = G by [14,
+Lemma 3.2].
+   If b = 1, then G(2),Ω = G by [14, Lemma 3.2]. Since G ≤ G(3),Ω ≤ G(2),Ω , it
+follows that G(3),Ω = G.                                                     □
+Proposition 2.4. Let S be a finite group, and let X and Y be faithful transitive
+S-sets whose actions are 3-closed. Suppose that the action on X has base size at
+most two. Then the diagonal action of S on X ⊔ Y is 3-closed.
+Proof. Let σ ∈ S (3),X⊔Y . Constant triples show that σ preserves both X and Y
+by [14, Lemma 2.1]. Moreover, σ|X ∈ S (3),X and σ|Y ∈ S (3),Y by [14, Lemma 2.2].
+Since both actions are 3-closed, the restrictions of σ to X and Y are induced by
+elements of S.
+   Choose a base (a, b) for the action on X, allowing a = b when the action has a
+one-point base. After composing σ with an element of S, we may assume that σ
+fixes X pointwise.
+   Let y ∈ Y . By [14, Lemma 2.1], there exists s ∈ S such that
+                              (aσ , bσ , y σ ) = (as , bs , y s ).
+Since σ fixes X pointwise, we have s ∈ Sa,b = 1. Hence y σ = y. Thus σ fixes both
+X and Y pointwise after normalization, and the original permutation σ is induced
+by an element of S. Therefore the action on X ⊔ Y is 3-closed.                 □
+Proposition 2.5. Let S be a finite nonabelian simple group, and let H, K < S.
+Suppose that the coset actions on S/H and S/K are 3-closed. If S ̸= HK, then
+the diagonal action of S on S/H ⊔ S/K is 3-closed.
+Proof. Set X = S/H and Y = S/K. Since H and K are proper and S is simple,
+both coset actions are faithful. By hypothesis, both are 3-closed.
+   Let x ∈ X and y ∈ Y have stabilizers Sx = H and Sy = K. Since H and K
+are proper, H is not transitive on X and K is not transitive on Y . Moreover, H
+is transitive on Y if and only if S = HK, and K is transitive on X if and only
+if S = KH. Since S = HK if and only if S = KH, the hypothesis implies that
+neither of these actions is transitive.
+   Thus the hypotheses of [14, Lemma 2.3] are satisfied, and the diagonal action on
+X ⊔ Y is 3-closed.                                                                □
+
+                         3. The PSL2 (q) classification
+   In this section, we prove that G = PSL2 (q) is totally 3-closed if and only if q ≥ 7
+is prime.
+3.1. Prime powers and large primes. We first eliminate the proper prime pow-
+ers.
+Proposition 3.1. Let q = pf ≥ 4 with f > 1. Then the natural action of G =
+PSL2 (q) on Ω = P1 (Fq ) is not 3-closed.
+            TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                            5
+
+
+Proof. Suppose first that q is odd. For an ordered triple T = (x1 , x2 , x3 ) of distinct
+points, choose nonzero representatives vi ∈ F2q and set
+
+                ∆(T ) = det(v1 , v2 ) det(v2 , v3 ) det(v3 , v1 )   mod (F×  2
+                                                                          q ) .
+
+This is independent of the representatives, and for A ∈ GL2 (q),
+                                [∆(AT )] = [det(A)][∆(T )].
+The group PGL2 (q) is sharply 3-transitive on Ω, while G has index 2 in PGL2 (q)
+and is 2-transitive [12, p. 245]. Hence the square class of ∆(T ) distinguishes the
+two G-orbits on ordered triples of distinct points. Moreover, any two triples with
+at most two distinct entries lie in the same G-orbit whenever the same coordinates
+are equal.
+   Consider the Frobenius permutation
+                                   ϕ : [u : v] 7−→ [up : v p ].
+It preserves all equalities among the coordinates of a triple and satisfies ∆(T ϕ ) =
+∆(T )p . Since p is odd, ϕ preserves square classes. Thus ϕ ∈ G(3),Ω . However, ϕ
+fixes 0, 1, and ∞, so any element of PGL2 (q) inducing ϕ would be the identity.
+Since f > 1, ϕ is nontrivial, and hence ϕ ∈
+                                          / G.
+   Suppose now that q is even. Then G = PGL2 (q), and G acts sharply 3-
+transitively on Ω [12, p. 245]. Hence two triples lie in the same G-orbit if and
+only if the same coordinates are equal. The same holds for Sym(Ω), so
+                                   G(3),Ω = Sym(Ω) > G.
+Therefore the natural action is not 3-closed.                                              □
+
+   Next, we eliminate a small case.
+Proposition 3.2. The group PSL2 (5) is not totally 3-closed.
+Proof. Using PSL2 (5) ∼  = A5 , consider the natural action of A5 on five points. This
+action is 3-transitive [12, Section 2.9]. Since |A5 | = 5 · 4 · 3, it is sharply 3-transitive.
+Thus A5 and S5 have the same orbits on ordered triples, and hence
+                                         (3)
+                                       A5 = S5 > A5 .
+Therefore PSL2 (5) is not totally 3-closed.                                                □
+
+   We next prove that PSL2 (p) is totally 3-closed for every prime p ≥ 17 with p ̸=
+19. Together with the preceding results, this leaves the four cases p = 7, 11, 13, 19
+in the PSL2 family.
+   For the remainder of this subsection, let p ≥ 17 be prime, put G = PSL2 (p) and
+m = (p − 1)/2, and let U ∼= Cp be a Sylow p-subgroup of G. The Borel subgroup
+NG (U ) has the form U ⋊ Cm , and for each d | m we write Hd = U ⋊ Cd for the
+unique subgroup of NG (U ) containing U with |Hd /U | = d.
+Lemma 3.3. Every proper subgroup of G is contained in one of the following:
+     (i) the normalizer of a split or nonsplit torus;
+    (ii) an exceptional subgroup isomorphic to A4 , S4 , or A5 ;
+   (iii) a conjugate of Hd for some d | m.
+6               TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+Proof. By Dickson’s classification, every proper subgroup of G is contained in a
+torus normalizer, a Borel subgroup, an exceptional subgroup, or a proper subfield
+subgroup [16, Theorem A.1]. See also [18, Lemma 2.1]. Since p is prime, no proper
+subfield subgroup occurs.
+   A Borel subgroup has the form U : Cm . If L ≤ U : Cm and |LU/U | = d, then
+d | m and
+                             L ≤ LU = U : Cd = Hd .
+The result follows.                                                            □
+Lemma 3.4. Let p ≥ 17 be prime and let G = PSL2 (p). Every coset action G/H,
+where H is contained in a torus normalizer or in a subgroup isomorphic to A4 , S4 ,
+or A5 , has a base of size at most two, except possibly when p = 19 and H ∼
+                                                                          = A5 .
+Proof. It suffices to find, for each subgroup L listed above, some g ∈ G such that
+L ∩ Lg = 1.
+   A split torus normalizer is the stabilizer of an unordered pair {a, b} in P1 (Fp ).
+The stabilizers of {a, b} and {a, c}, where a, b, c are distinct, have trivial intersection.
+   Now let N be a nonsplit torus normalizer. By [16, Lemmas A.2 and A.3], |N | =
+p + 1 and N has p(p − 1)/2 conjugates. A noninvolution of N determines its unique
+nonsplit torus, so two distinct conjugates of N can intersect only in involutions.
+Counting conjugates through the involutions of N gives at most
+                         (p − 1)2
+                                  when p ≡ 1          (mod 4)
+                            4
+conjugates meeting N , and at most
+                          p2 + 4p + 7
+                                         when p ≡ 3 (mod 4).
+                                4
+Both numbers are less than p(p − 1)/2 for p > 7. Hence N ∩ N g = 1 for some
+g ∈ G.
+   Finally, let E ∼
+                  = A4 , S4 , or A5 . If E ∩ E g ̸= 1, then E ∩ E g contains a subgroup
+of prime order. For a G-conjugacy class C of prime-order subgroups, let nC be the
+number of its members contained in E. For g chosen uniformly at random in G, a
+union bound gives
+                                                    X n2
+                                                           C
+                               Pr(E ∩ E g ̸= 1) ≤            .
+                                                         |C|
+                                                     C
+Every such class has at least p(p − 1)/2 members by [16, Lemmas A.2 and A.3].
+The sums of the relevant numerators are 25, 97, 361 for A4 , S4 , and A5 , respectively.
+Thus the probability is less than one for A4 and S4 when p ≥ 17, and for A5 when
+p ≥ 29.
+   By [16, Theorem A.1], among the primes 17 ≤ p < 29, an A5 subgroup occurs
+only when p = 19. If H < A5 , then H is contained in an A4 or in a torus normalizer.
+Thus only the action with p = 19 and H ∼  = A5 remains.                               □
+Proposition 3.5. For d, e | m, the diagonal action of G on G/Hd ⊔ G/He is
+3-closed.
+Proof. Let Ed ≤ F×
+                 p have order 2d. Then −1 ∈ Ed , and
+
+                             G/Hd ∼
+                                  = Xd = (F2p \ {0})/Ed .
+Let πd : Xd −→ P1 (Fp ) be the natural projection.
+           TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                       7
+
+
+   Take σ ∈ G(3),Xd ⊔Xe . By [14, Lemma 2.1], σ preserves both constituents and
+every G-orbit on ordered pairs. For x = [v] ∈ Xd and y = [w] ∈ Xe , one has
+                       πd (x) = πe (y)       ⇐⇒        det(v, w) = 0.
+Hence σ induces the same permutation τ of P1 (Fp ) on both constituents.
+  For three distinct projective points Li = ⟨vi ⟩, the square class
+                   det(v1 , v2 ) det(v2 , v3 ) det(v3 , v1 )   mod (F×
+                                                                     p)
+                                                                        2
+
+
+is well defined and G-invariant. Thus τ preserves this square class. After composing
+with an element of G, we may assume that τ fixes ∞, 0, and 1. Its restriction f to
+Fp then satisfies
+                                  f (a) − f (b)
+                                                ∈ (F×
+                                                    p)
+                                                       2
+                                      a−b
+for all a ̸= b. By Carlitz’s theorem [9, Theorem, p. 456], f is affine. Since f (0) = 0
+and f (1) = 1, we have f = 1. Therefore τ ∈ G. Composing σ with an element of
+G, we may assume that τ = 1.
+   Fix r ∈ {d, e}. Since σ fixes every projective fiber, its action on the fiber over
+L is multiplication by some cr,L ∈ F×    p /Er . For distinct lines L and M , the class
+of det(v, w) modulo Er determines the G-orbit of the corresponding pair. Hence
+cr,L cr,M = 1. Using three distinct lines, all cr,L are equal to some cr with c2r = 1.
+   Choose points of Xr lying over three distinct projective points. By the definition
+of the 3-closure, some g ∈ G agrees with σ on these three points. Since g fixes the
+corresponding projective points, g = 1 [12, p. 245]. Hence cr = 1, and σ fixes Xr
+pointwise. Applying this for r = d, e, we obtain σ = 1 after normalization. Thus
+the original permutation belongs to G.                                               □
+Theorem 3.6. For every prime p ≥ 17 with p ̸= 19, the group PSL2 (p) is totally
+3-closed.
+Proof. Let H, K < G. By Lemma 3.3, each of H and K is either conjugate to some
+Hd , or its coset action has base size at most two by Lemma 3.4. Indeed, a subgroup
+of a Borel subgroup which does not contain U is conjugate to a subgroup of the
+split torus.
+   By Lemma 2.3, every coset action with base size at most two is 3-closed. More-
+over, Proposition 3.5, applied with d = e, implies that each action on G/Hd is
+3-closed.
+   If both H and K are conjugate to subgroups of the form Hd , then the action on
+G/H ⊔G/K is 3-closed by Proposition 3.5. Otherwise, one constituent has base size
+at most two, so the action is 3-closed by Proposition 2.4. The result now follows
+from Proposition 2.2.                                                             □
+3.2. The remaining four primes. It remains to treat the cases p = 7, 11, 13, 19.
+The four proofs are similar and rely on the subgroup structure of each group,
+particularly its maximal and nonmaximal subgroups. We begin with p = 7.
+Theorem 3.7. The group PSL2 (7) is totally 3-closed.
+Proof. Put G = PSL2 (7). The maximal subgroups of G consist of two conjugacy
+classes of subgroups isomorphic to S4 and one conjugacy class of subgroups isomor-
+phic to C7 ⋊ C3 [11, p. 3]. Thus the maximal coset actions are the point and line
+actions on the Fano plane and the natural action on P1 (F7 ).
+8              TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+    The proper nonmaximal subgroups have types
+                         C2 , C3 , C4 , C7 , V4 , S3 , D8 , A4 .
+A direct count in the subgroup lattice shows that each has a conjugate with trivial
+intersection. Hence every nonmaximal coset action has base size at most two, and
+is therefore 3-closed by Lemma 2.3.
+    Identify G ∼= GL3 (2) [8, Section 4, pp. 729–731]. In the point action on the
+Fano plane, the two orbits on ordered triples of distinct points are the collinear and
+noncollinear triples. Thus every element of the 3-closure preserves collinearity, and
+hence belongs to the full automorphism group of the Fano plane, which is G. The
+point action is therefore 3-closed, and the same holds for the line action by duality.
+    Now consider the action on Ω = P1 (F7 ). Its two orbits on ordered triples of
+distinct points are distinguished by the determinant square class. Let σ ∈ G(3),Ω .
+After composing with an element of G, we may assume that σ fixes ∞, 0, 1. For
+x ∈ F7 \{0, 1}, the triple orbits determine χ(x), χ(x−1) , where χ is the quadratic
+character of F7 . These values fix 2, 4, and 6, leaving only the possible interchange
+of 3 and 5. Indeed, ∆(∞, 2, x) = x − 2. Since 1 is a square and 3 is a nonsquare
+in F7 , the triples (∞, 2, 3) and (∞, 2, 5) lie in different G-orbits. Hence σ cannot
+interchange 3 and 5. Thus σ = 1 after normalization, and the degree-eight action
+is 3-closed.
+    It remains to consider diagonal actions on unions of two maximal coset actions.
+If |H| = |K| = 24, then G ̸= HK, since |H||K|    |G|    = 24
+                                                           7 ∈/ Z. Similarly, if |H| =
+|K| = 21, then |H||K| |G|  = 218 ∈/ Z, so again G ̸= HK. Hence every union of two
+degree-seven actions, as well as the union of two degree-eight actions, is 3-closed
+by Proposition 2.5.
+   Let X be the point set of the Fano plane and let Y = P1 (F7 ). Suppose that
+σ ∈ G(3),X⊔Y . Since both constituent actions are 3-closed, after composing with
+an element of G, we may assume that σ fixes X pointwise and acts on Y as some
+g ∈ G. For distinct a, b ∈ X, the mixed triples (a, b, y) show that y g ∈ y Ga,b for
+every y ∈ Y . Here Ga,b ∼   = V4 , and the seven such subgroups, indexed by the lines
+of the Fano plane, each have two orbits of size four on Y . Under a suitable labeling
+of Y = {∞, 0, . . . , 6}, the orbits containing ∞ are
+              {∞, 0, 2, 6},   {∞, 1, 2, 4},   {∞, 2, 3, 5},   {∞, 0, 1, 3},
+                     {∞, 0, 4, 5},   {∞, 1, 5, 6},    {∞, 3, 4, 6}.
+The membership vectors of the eight points in these seven sets are distinct. Thus
+a permutation preserving every one of these sets is trivial, so g = 1. The same
+argument applies to the line action by duality.
+   Therefore the diagonal action on every pair of maximal coset actions is 3-closed.
+Combining this with Proposition 2.4 for nonmaximal stabilizers, the result follows
+from Proposition 2.2.                                                             □
+
+Theorem 3.8. The group PSL2 (11) is totally 3-closed.
+Proof. Put G = PSL2 (11). The maximal subgroups of G are two conjugacy classes
+of subgroups isomorphic to A5 , one class of subgroups isomorphic to C11 ⋊ C5 , and
+one class of subgroups isomorphic to D12 [11]. A direct intersection calculation
+shows that every coset action other than the two actions of degree eleven and the
+           TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                        9
+
+
+action of degree twelve has a base of size at most two. Such actions are 3-closed by
+Lemma 2.3.
+    The two degree-eleven actions are the point and block actions of the unique 2-
+(11, 5, 2) biplane, whose full automorphism group is G [3, Section 3, p. 5]. Let R
+be the relation on triples of distinct points defined by requiring the three points to
+lie in a block. We claim that the blocks are exactly the five-subsets all of whose
+triples lie in R.
+    Indeed, distinct blocks meet in two points. Let C be such a five-subset, choose
+three points of C, and let B be the unique block containing them. If |B ∩ C| = 4,
+the six unordered pairs in B ∩ C give six distinct blocks through the remaining
+point of C, whereas each point lies in only five blocks. If |B ∩ C| = 3, the unique
+second blocks through the three pairs in B ∩ C all contain the other two points of
+C, contradicting the fact that two points lie in exactly two blocks. Hence C = B.
+    Thus every element of the 3-closure preserves the blocks, and hence belongs to
+G. The point action is 3-closed, and the block action is 3-closed by duality.
+    Now consider the natural action of G on P1 (F11 ), and let σ lie in its 3-closure.
+After composing with an element of G, we may assume that σ fixes ∞. For a ̸= b
+in F11 , the G-orbit of (∞, a, b) is determined by the square class of b − a. Hence
+                      b − a ∈ (F×
+                                11 )
+                                    2
+                                        ⇐⇒     bσ − aσ ∈ (F×   2
+                                                           11 ) .
+
+Therefore σ|F11 is an automorphism of the Paley tournament on F11 . The auto-
+morphism group of this tournament consists of the maps
+                      x 7−→ ux + v,       u ∈ (F×   2
+                                                11 ) ,   v ∈ F11 ,
+by [17, Section 9.7]. This is precisely the stabilizer of ∞ in G, so the projective-line
+action is 3-closed.
+   It remains to consider the diagonal actions on unions of these three coset actions.
+If H, K ∼= A5 , then
+                               |H||K|     602     60
+                                       =       =      ∈
+                                                      / Z,
+                                 |G|      660     11
+so G ̸= HK. Similarly, if |H| = |K| = 55, then
+                              |H||K|   552   605
+                                     =     =     ∈
+                                                 / Z,
+                                |G|    660   132
+and again G ̸= HK. Hence the diagonal action on any union of two degree-
+eleven actions, as well as on the union of two degree-twelve actions, is 3-closed by
+Proposition 2.5.
+   Let X = G/A5 , and let Y = P1 (F11 ). Take σ ∈ G(3),X⊔Y . Since both constituent
+actions are 3-closed, we may normalize so that σ fixes X pointwise and its restriction
+to Y is induced by some h ∈ G.
+   For each x ∈ X, choose a subgroup P ≤ Gx of order 5. Then P = Gy,z for some
+distinct y, z ∈ Y . Applying the definition of the 3-closure to (x, y, z) gives a ∈ Gx
+                                           ah−1 ∈ Gy,z = P ≤ Gx , and hence h ∈ Gx .
+such that y a = y h , and z a = z h . Thus T
+Since this holds for every x ∈ X, h ∈ x∈X Gx = 1. Therefore the mixed action
+on X ⊔ Y is 3-closed.
+   Every pair of coset actions is now 3-closed by Proposition 2.4, Proposition 2.5,
+or the preceding argument. The result follows from Proposition 2.2.                  □
+Theorem 3.9. The group PSL2 (13) is totally 3-closed.
+10              TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+Proof. Put G = PSL2 (13). By Dickson’s classification [16, Theorem A.1], the
+maximal proper subgroups of G are
+                         C13 ⋊ C6 ,      D12 ,      D14 ,     A4 .
+   The coset actions corresponding to D12 and D14 have bases of size two. For A4 ,
+there are 91 conjugates, and at most 18 of them meet A4 nontrivially. Hence the
+action on G/A4 also has a base of size two. The same holds for every subgroup
+contained in one of these groups.
+   Let U ∼= C13 and, for d | 6, put Hd = U ⋊ Cd . The action on G/H1 has a base
+of size two. It remains to consider the actions corresponding to H2 , H3 , and H6 .
+   The action on G/H6 ∼   = P1 (F13 ) is 3-closed. Indeed, after fixing ∞, the orbits
+of the triples (∞, a, b) determine whether b − a is a square. Thus a normalized
+element of the 3-closure induces an automorphism of the Paley graph on F13 . Its
+automorphism group consists of the maps
+                        x 7−→ ux + v,       u ∈ (F×   2
+                                                  13 ) ,    v ∈ F13
+[17, Theorem 9.1]. This is precisely the stabilizer of ∞ in G.
+   Now let E ≤ F×                                                   2
+                         13 have order 4 or 6, and write XE = (F13 \ {0})/E. These are
+                                                             (3),XE
+the actions corresponding to H2 and H3 . Let σ ∈ G                  . Since det(v, w) = 0 if
+and only if [v] and [w] lie over the same point of P1 (F13 ), the pair orbits recover
+the natural projection XE −→ P1 (F13 ). The induced permutation of the projective
+line belongs to G by the preceding argument, so we may normalize it to be trivial.
+   The restriction of σ to the fiber over a line L is then multiplication by some
+cL ∈ F×   13 /E. For distinct lines L and M , preservation of the determinant class
+gives cL cM = 1. Using three distinct lines, all cL are equal to some c with c2 = 1.
+   If |E| = 4, then F×      13 /E has order 3, so c = 1. If |E| = 6, suppose that c is the
+nontrivial element of F×       13 /E. Applying the definition of the 3-closure to the triple
+([e1 ], [e2 ], [e1 + e2 ]) yields an element of G which agrees with σ on this triple and
+therefore fixes the three corresponding projective points. Such an element is trivial,
+and hence cannot induce the nontrivial scalar class c. Thus c = 1 in this case as
+well, and both actions are 3-closed.
+   Every remaining pair of coset actions either contains an action with a base of
+size at most two, in which case Proposition 2.4 applies, or has stabilizers among
+H2 , H3 , H6 . No two of these subgroups factorize G, so Proposition 2.5 applies. The
+result follows from Proposition 2.2.                                                      □
+Theorem 3.10. The group PSL2 (19) is totally 3-closed.
+Proof. Put G = PSL2 (19), let U ∼    = C19 , and set Hd = U ⋊ Cd for d | 9. By
+Lemmas 3.3 and 3.4, every proper subgroup of G is either conjugate to some Hd ,
+contained in a subgroup whose coset action has a base of size at most two, or
+isomorphic to A5 . The first two types are covered by Proposition 3.5 and by
+Lemma 2.3 together with Proposition 2.4.
+   There are two conjugacy classes of A5 subgroups, each giving a degree-57 coset
+action. It remains to show that these two actions are 3-closed and to consider their
+unions with the actions on G/H3 and G/H9 . The action on G/H1 has a base of
+size two and is already covered by Proposition 2.4.
+   Let X be the coset space corresponding to either conjugacy class of A5 subgroups.
+Join two points of X when their stabilizers intersect in a subgroup isomorphic to
+D10 . The resulting graph Γ is the Perkel graph [23, pp. 163–165]. It has intersection
+           TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                     11
+
+
+array {6, 5, 2; 1, 1, 3} and full automorphism group G [4, Section 5.8.5, pp. 70–71].
+The edge set of Γ is a union of G-orbits on pairs, so G(2),X ≤ Aut(Γ) = G. Both
+degree-57 actions are therefore 2-closed, and hence 3-closed.
+   The diagonal action on any two degree-57 actions is 3-closed by Proposition 2.5.
+Indeed, if A, B ∼ = A5 , then
+                              |A||B|    602   20
+                                     =      =    ∈
+                                                 / Z,
+                                |G|    3420   19
+so G ̸= AB.
+   If one of the two coset actions has a base of size at most two, then their diagonal
+action is 3-closed by Proposition 2.4. This applies in particular to the action on
+G/H1 , where H1 ∼  = C19 , since two distinct Sylow 19-subgroups intersect trivially.
+   It remains to pair an A5 action X with Y = G/Hd , where d = 3 or 9. Both
+actions are 3-closed. Let σ ∈ G(3),X⊔Y . After composing with an element of G, we
+may assume that σ fixes Y pointwise and that its restriction to X is induced by
+some h ∈ G.
+   The subdegrees of the degree-57 action are 1, 6, 20, 30, and the two-point sta-
+bilizers on the suborbit of length 20 have order 3 [23, pp. 163–165]. Thus every
+subgroup of order 3 in G is the stabilizer of two points of X.
+   For y ∈ Y , choose P ≤ Gy of order 3 and points x1 , x2 ∈ X such that Gx1 ,x2 = P .
+Applying the definition of the 3-closure to (x1 , x2 , y) gives a ∈ G such that
+                         xa1 = xh1 ,   xa2 = xh2 ,   y a = y.
+Hence a ∈ Gy and
+                              ah−1 ∈ Gx1 ,x2 = P ≤ Gy ,
+so h ∈ Gy . Since this holds for every y ∈ Y and the action on Y is faithful, h = 1.
+Therefore the action on X ⊔ Y is 3-closed.
+   The pairs of actions on G/Hd ⊔ G/He are handled by Proposition 3.5. Hence
+every two-constituent coset action is 3-closed, and the result follows from Proposi-
+tion 2.2.                                                                         □
+
+  Combining the previous results, we obtain part (1) of Theorem 1.1.
+Theorem 3.11. Let G = PSL2 (q) be a finite nonabelian simple group. Then G is
+totally 3-closed if and only if q ≥ 7 is a prime.
+Proof. Theorems 3.6, 3.7, 3.8, 3.9, and 3.10 show that PSL2 (p) is totally 3-closed
+for every prime p ≥ 7. Proposition 3.1 excludes every proper prime power, while
+Proposition 3.2 excludes q = 5. Finally, PSL2 (2) and PSL2 (3) are not nonabelian
+simple.                                                                           □
+
+                         4. The PSL3 (q) classification
+   In this section, we prove that PSL3 (q) is totally 3-closed when q = 3 and when
+q is a prime with q ≡ 2 (mod 3). The converse direction is proved in Section 5.
+
+4.1. The case q = 3. We begin with q = 3 and put G = PSL3 (3). Since
+|Z(SL3 (3))| = gcd(3, 3 − 1) = 1, we have G = SL3 (3). Moreover, |G| = 33 (32 −
+1)(33 − 1) = 5616 = 24 · 33 · 13, and G is nonabelian simple [11]. We first record
+the maximal subgroups of G.
+12               TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+Lemma 4.1. Up to conjugacy, the maximal subgroups of G are
+               P,     P ∗,     J∼= C13 ⋊ C3 ,    M∼ = S4 ,
+where P and P ∗ are respectively a point stabilizer and a line stabilizer in PG(2, 3).
+Their orders and indices are
+                             H       P    P∗      J    M
+                            |H|     432 432 39 24
+                          [G : H] 13 13 144 234
+Proof. The maximal subgroups of G consist of two conjugacy classes of subgroups
+of type 32 :2S4 , one class of type 13:3, and one class of type S4 [25]. The two
+subgroups of order 432 are respectively the point and line stabilizers in PG(2, 3).
+The displayed orders and indices now follow from |G| = 5616.                     □
+     We first treat the J and M cases by counting conjugates.
+Lemma 4.2. If H is contained in a conjugate of J or M , then the action of G on
+G/H has a base of size at most two.
+Proof. It suffices to find g ∈ G such that
+                        J ∩ Jg = 1     and      M ∩ M g = 1.
+   There are 144 conjugates of J. Let R ∼  = C13 be its normal Sylow 13-subgroup.
+Every nonidentity element of R lies in a unique conjugate of J, since NG (R) = J.
+The other 26 elements of J have order 3 and lie in a conjugacy class of size 624 [7,
+table L3(3) and the fusion from 13:3]. Hence each lies in 144·26
+                                                              624 = 6 conjugates of
+J. Therefore at most 26(6 − 1) = 130 < 143 other conjugates meet J nontrivially.
+Thus J ∩ J g = 1 for some g ∈ G.
+   There are 234 conjugates of M . The group M ∼     = S4 contains nine involutions
+and eight elements of order 3. These lie in conjugacy classes of sizes 117 and
+624, respectively [7, table L3(3) and the fusion from s4]. Thus an involution lies in
+234·9                                                           234·8
+ 117 = 18 conjugates of M , while an element of order 3 lies in 624 = 3 conjugates.
+Every nontrivial subgroup of S4 contains an element of order 2 or 3, so at most
+9(18 − 1) + 8(3 − 1) = 169 < 233 other conjugates meet M nontrivially. Hence
+M ∩ M g = 1 for some g ∈ G.
+   Finally, if H ≤ J or H ≤ M , the same choice of g gives H ∩ H g = 1. Therefore
+the action on G/H has a base of size at most two.                                  □
+     We next treat the point and line actions.
+Lemma 4.3. The natural actions of G on the points and lines of PG(2, 3) are
+3-closed.
+Proof. Consider first the action on points. Two ordered triples of pairwise distinct
+points lie in the same G-orbit if and only if they are either both collinear or both
+noncollinear. Since G is 2-transitive, the G-orbits on triples with at most two
+distinct entries are determined by which coordinates are equal.
+   Thus every element of the 3-closure preserves collinearity, and hence acts on
+PG(2, 3) as a collineation. By the fundamental theorem of projective geometry,
+every collineation is induced by a semilinear transformation [6, Theorem 1.9.1].
+Since Aut(F3 ) = 1 and PGL3 (3) = PSL3 (3) = G, the point action is 3-closed. The
+same argument applied to the dual projective plane proves that the line action is
+3-closed.                                                                         □
+           TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                   13
+
+
+   It remains to treat the subgroups of P and P ∗ whose coset actions do not have
+a base of size two. Fix a point stabilizer P and put
+                 E(P ) = {H < P : H ∩ H g ̸= 1 for every g ∈ G}.
+Thus H < P lies outside E(P ) if and only if the action on G/H has a base of size
+at most two.
+Proposition 4.4. The set E(P ) contains exactly twenty-four subgroups, forming
+six G-conjugacy classes represented by subgroups of orders
+                  48,      54,     72,      108,       144,      216.
+Each corresponding coset action is 3-closed. The same holds for the six dual classes
+contained in a line stabilizer.
+Proof. This proposition is established by an exhaustive computation in GAP [22],
+the only such computation in the paper. The complete program is reproduced,
+together with its output, in Appendix A. The program constructs G in its degree-
+13 point action and enumerates all 646 subgroups of P by cyclic extension.
+   For each of the 645 proper subgroups H < P , the program tests one representa-
+tive of every double coset in H\G/H. Since |H ∩ H g | is constant as g ranges over a
+double coset HgH, this test is exhaustive. Of these subgroups, 621 have a conjugate
+intersecting H trivially. Conjugacy tests in G show that the remaining twenty-four
+form six G-conjugacy classes, one for each of the orders in the statement.
+   Let Ω = G/H, let x = H ∈ Ω be the point corresponding to the trivial coset,
+and let Ax be the group of permutations of Ω that fix x and preserve every Gx -
+orbit on Ω × Ω. Every element of G(3),Ω fixing x preserves each G-orbit of triples
+with first entry x, and therefore lies in Ax . The program determines Ax by exact
+backtracking and then removes every element that fails to preserve some G-orbit
+on Ω3 :
+                          |H|             48 54 72 108 144 216
+             #{K ∈ E(P ) : |K| = |H|}      9 4 3          4     3      1
+                         |Ax |            48 54 72 108 288 1944
+                      |(G(3),Ω )x |       48 54 72 108 144 216
+For the first four classes, we already have Ax = Gx = H. For the final two classes,
+the group Ax is larger, but every element of Ax \ Gx fails to preserve some G-orbit
+on Ω3 . Hence (G(3),Ω )x = H in all six cases.
+   Since G ≤ G(3),Ω , the group G(3),Ω is transitive. Therefore
+                   |G(3),Ω | = |Ω| |(G(3),Ω )x | = |G : H| |H| = |G|.
+Thus G(3),Ω = G.
+   Finally, the automorphism g 7→ (g −1 )T interchanges point and line stabilizers,
+giving the six dual classes.                                                     □
+  We now turn to diagonal actions on two coset spaces.
+Lemma 4.5. Let Ω1 and Ω2 be faithful transitive 3-closed G-sets. Suppose that
+there are surjective G-maps ρi : Ωi −→ Yi , where each Yi is either the point set or
+the line set of PG(2, 3). Then the diagonal action of G on Ω1 ⊔ Ω2 is 3-closed.
+Proof. Let σ ∈ G(3),Ω1 ⊔Ω2 . By [14, Lemma 2.2], its restrictions to Ω1 and Ω2
+lie in the corresponding 3-closures. Thus they are induced by elements a, b ∈ G.
+14             TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+After composing with the diagonal action of a−1 , we may assume that σ fixes Ω1
+pointwise and acts on Ω2 as some t ∈ G.
+   By [14, Lemma 2.1], σ preserves every G-orbit on Ω1 × Ω2 . If Y1 and Y2 are of
+the same type, apply this to the G-invariant relation ρ1 (x) = ρ2 (y). Since ρ1 and
+ρ2 are surjective, it follows that t fixes every point of Y2 .
+   If Y1 and Y2 are of opposite types, consider the G-invariant relation defined by
+requiring the point ρ1 (x) to lie on the line ρ2 (y), or vice versa. Since σ fixes Ω1
+pointwise, it follows that t preserves every point-line incidence involving an element
+of Y1 . Surjectivity of ρ1 and ρ2 then implies that t fixes every element of Y2 .
+   The point and line actions of G are faithful, so t = 1. Hence σ is induced by an
+element of G, and the diagonal action is 3-closed.                                  □
+
+Theorem 4.6. The group G = PSL3 (3) is totally 3-closed.
+Proof. Let H, K < G be proper subgroups. By Lemma 4.1, each is contained in a
+conjugate of P , P ∗ , J, or M .
+   If H is contained in a conjugate of J or M , then the action on G/H has a base
+of size at most two by Lemma 4.2. The same holds if H is contained in a conjugate
+of P or P ∗ but does not belong to one of the exceptional classes in Proposition 4.4.
+Otherwise, the action on G/H is the point action, the line action, or one of the
+exceptional parabolic actions. These actions are 3-closed by Lemmas 2.3 and 4.3
+and Proposition 4.4. The same conclusions hold for K.
+   If either action has a base of size at most two, then the diagonal action on
+G/H ⊔G/K is 3-closed by Proposition 2.4. Otherwise, both actions admit surjective
+G-maps onto the point set or the line set of PG(2, 3), so Lemma 4.5 applies.
+   Thus the diagonal action on G/H ⊔ G/K is 3-closed for every pair of proper
+subgroups H, K < G. The result follows from Proposition 2.2.                       □
+
+4.2. The primes p ≡ 2 (mod 3). In this subsection, we prove that if p is a prime
+with p ≡ 2 (mod 3), then PSL3 (p) is totally 3-closed. The remaining prime power
+cases are treated together with higher ranks in Section 5.
+   For p = 2, the result follows from PSL3 (2) ∼   = PSL2 (7) and Theorem 3.7.
+Throughout the remainder of this subsection, p denotes a prime with p ≥ 5 and
+p ≡ 2 (mod 3). Since |Z(SL3 (p))| = gcd(3, p − 1) = 1, we have G = PSL3 (p) =
+SL3 (p).
+   We begin with a rigidity statement for the scalar-fiber actions.
+Proposition 4.7. Let p ≥ 5 be a prime with p ≡ 2 (mod 3), let G = PSL3 (p) =
+SL3 (p), and let C ≤ F×
+                      p . Put
+
+                                ΩC = (F3p \ {0})/C.
+Then the natural action of G on ΩC is faithful and 3-closed.
+Proof. Let g lie in the kernel of the action. Then g fixes every point of P2 (Fp ), so
+g is scalar. Since det(g) = 1 and gcd(3, p − 1) = 1, it follows that g = 1. Thus the
+action is faithful.
+   Let π : ΩC −→ P2 (Fp ) be the natural map, and let σ ∈ G(3),ΩC . Two elements
+of ΩC have the same image under π if and only if their representatives are linearly
+dependent. Since σ preserves the G-orbits on ordered pairs, it preserves the fibers
+of π and induces a permutation of P2 (Fp ).
+           TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                     15
+
+
+   The induced permutation preserves collinearity, since three projective points
+are collinear if and only if their representatives are linearly dependent. By the
+fundamental theorem of projective geometry, it is induced by a semilinear trans-
+formation [6, Theorem 1.9.1]. Since Fp has no nontrivial field automorphisms and
+PGL3 (p) = PSL3 (p) = G, the induced permutation belongs to G. After composing
+σ with the inverse of this element, we may assume that σ fixes every fiber of π
+setwise.
+   Choose a nonzero representative vL for each L ∈ P2 (Fp ), and put A = F× p /C.
+The fiber over L is identified with A by a 7−→ [avL ]. Thus σ induces a bijection
+fL : A → A on each fiber.
+   Let L1 , L2 , L3 be noncollinear. The G-orbit of
+                               ([a1 vL1 ], [a2 vL2 ], [a3 vL3 ])
+is determined by a1 a2 a3 ∈ A. Hence
+                         fL1 (a1 )fL2 (a2 )fL3 (a3 ) = a1 a2 a3 .
+Varying one coordinate shows that fL (a) = uL a for some uL ∈ A. Moreover,
+uL1 uL2 uL3 = 1 whenever L1 , L2 , L3 are noncollinear.
+   Given L, L′ ∈ P2 (Fp ), choose distinct points M, N on a line containing neither
+L nor L′ . Comparing the triples (L, M, N ) and (L′ , M, N ) gives uL = uL′ . Thus
+all uL are equal to some u ∈ A, and u3 = 1. Since |A| | p − 1 and 3 ∤ p − 1, we have
+u = 1. Therefore σ = 1 after composition, and the original permutation belongs to
+G.                                                                                □
+  Now we treat the nonparabolic maximal subgroups.
+Proposition 4.8. Let H be contained in a nonparabolic maximal subgroup of G.
+Then the action of G on G/H has a base of size at most two.
+Proof. Let H ≤ M < G, where M is nonparabolic and maximal. It is enough to
+find g ∈ G such that M ∩ M g = 1. Indeed, this then gives H ∩ H g = 1.
+   By the subgroup classification for PSL3 (p) [20, Theorem 2.4], the subgroup M
+is one of the following:
+      (i) the stabilizer N2 of a projective triangle;
+     (ii) the normalizer N3 of a Singer cycle;
+    (iii) a subgroup isomorphic to SO3 (p);
+    (iv) a subgroup isomorphic to PSL2 (7).
+The other cases in the classification do not occur because p is prime and 3 ∤ p − 1.
+   Suppose first that M = N2 . Let ∆ = {⟨e1 ⟩, ⟨e2 ⟩, ⟨e3 ⟩}, and put
+              v1 = e1 + e2 ,      v2 = e2 + 2e3 ,           v3 = e1 + e2 + e3 .
+The matrix                                       
+                                        1 0 1
+                                 g2 = 1 1 1
+                                        0 2 1
+has determinant one, and N2 stabilizes ∆′ = {⟨v1 ⟩, ⟨v2 ⟩, ⟨v3 ⟩}. Let x ∈ N2 ∩ N2g2 .
+                            g2
+
+Write x = DPτ , where D is diagonal and τ ∈ S3 . Since ⟨v3 ⟩ is the unique point
+of ∆′ whose coordinates are all nonzero, x fixes ⟨v3 ⟩. Hence D is scalar. The only
+coordinate permutations preserving the supports of ⟨v1 ⟩ and ⟨v2 ⟩ are 1 and (1 3),
+while
+                       (1 3)⟨v1 ⟩ = ⟨e2 + e3 ⟩ ̸= ⟨e2 + 2e3 ⟩.
+16              TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+Thus τ = 1, so x = dI. Since d3 = 1 and gcd(3, p − 1) = 1, we have x = 1.
+Therefore N2 ∩ N2g2 = 1.
+  Now suppose that M = N3 . Identify F3p with K = Fp3 and put
+                           T = {x 7→ ax : NK/Fp (a) = 1}.
+If σ : x 7→ xp , then N3 = T ⋊ ⟨σ⟩. Set n = p2 + p + 1, so |T | = n and |N3 | = 3n.
+Since 3 ∤ n, every element of N3 \ T has order three.
+   For 1 ̸= x ∈ T , one has
+                       |CG (x)| = n       and         |xG ∩ N3 | = 3.
+Thus
+                    {g ∈ G : x ∈ N3g } = |xG ∩ N3 | |CG (x)| = 3n.
+For y ∈ N3 \ T ,
+                    |CG (y)| = p2 − 1         and         |y G ∩ N3 | = 2n,
+so that
+                       {g ∈ G : y ∈ N3g } = 2n(p2 − 1).
+Summing over the n − 1 nontrivial elements of T and the 2n elements of N3 \ T
+gives
+              {g ∈ G : N3 ∩ N3g ̸= 1} ≤ 3n(n − 1) + 4n2 (p2 − 1).
+Since |G| = p3 (p − 1)n(p2 − 1) and
+       |G| − 3n(n − 1) − 4n2 (p2 − 1)
+                                      = p6 − p5 − 5p4 − 3p3 − 3p2 + p + 4 > 0
+                      n
+for p ≥ 5, there exists g3 ∈ G such that N3 ∩ N3g3 = 1.
+    Suppose next that M = SO(V, B) for a nondegenerate symmetric bilinear form
+B. Identify V with K = Fp3 . After an isometry, we may write B(x, y) =
+TrK/Fp (cxy) for some c ∈ K × . Choose 1 ̸= α ∈ K × with NK/Fp (α) = 1, and
+let A be multiplication by α. Then A is self-adjoint with respect to B and has
+irreducible minimal polynomial of degree three.
+    Define BA (x, y) = B(Ax, y). The forms B and BA have the same discriminant,
+so there exists g ∈ G such that SO(BA ) = SO(B)g . If x ∈ SO(B) ∩ SO(BA ), then
+xA = Ax. Hence x is multiplication by some β ∈ K × . Preservation of B gives
+β 2 = 1, so x = ±I. Since x ∈ G and det(−I) = −1, we obtain x = I. Thus
+SO(B) ∩ SO(B)g = 1.
+    Finally, suppose that M ∼ = PSL2 (7). This case can occur only for p ≥ 11, so
+p ∤ |M | and every nonidentity element of M is semisimple. The numbers of elements
+of orders 2, 3, 4, and 7 in M are
+                             21,        56,         42,      48.
+Every noncentral semisimple element of G has centralizer of order at most p(p −
+1)2 (p + 1). Therefore
+          {g ∈ G : M ∩ M g ̸= 1} ≤ (212 + 562 + 422 + 482 )p(p − 1)2 (p + 1)
+                                   = 7645p(p − 1)2 (p + 1).
+Since 7645 < p2 (p2 + p + 1) for p ≥ 11, this number is smaller than |G| = p3 (p3 −
+1)(p2 − 1). Hence M ∩ M g = 1 for some g ∈ G.
+   Thus in every case there exists g ∈ G such that M ∩ M g = 1. It follows that
+H ∩ H g = 1, so the action on G/H has a base of size at most two.                 □
+           TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                       17
+
+
+  We next prove a lemma used in the treatment of the parabolic subgroups.
+Lemma 4.9. Let p ≥ 5, let L = GL2 (p), and let M ≤ L with SL2 (p) ≰ M . If D
+is a split maximal torus of L, then there exists g ∈ L such that
+                              D ∩ M g = D ∩ coreL (M ).
+Proof. Let Z = Z(L), let π : L −→ PGL2 (p), and put A = π(M ). We first claim
+that A does not contain PSL2 (p). Otherwise,
+                           π([M, M ]) = [A, A] ≥ PSL2 (p).
+Since [M, M ] ≤ SL2 (p), the subgroup M ∩SL2 (p) maps onto PSL2 (p). It is therefore
+either SL2 (p) or a subgroup of index two. The latter is impossible because SL2 (p)
+is perfect, while the former contradicts the hypothesis.
+   By the subgroup classification of PGL2 (p) [13, Theorem D], the group A is cyclic,
+dihedral, elementary abelian of order four, isomorphic to A4 , S4 , or A5 , or contained
+in an affine subgroup. We show that A has a base of size at most two on P1 (Fp ).
+   An affine subgroup has the base (0, 1). A subgroup of a split torus normalizer has
+the base (1, c) for any c ̸= 0, ±1. For a nonsplit torus normalizer, every nonidentity
+torus element fixes no point of P1 (Fp ), while each element outside the torus fixes
+at most two points. Since there are p + 1 such elements and 2(p + 1) < p(p + 1),
+some ordered pair of distinct points has trivial stabilizer. A subgroup of order four
+is contained in the centralizer of one of its involutions, which is a torus normalizer.
+   Finally, let E ∼= A4 , S4 , or A5 . Every nonidentity element of PGL2 (p) fixes at
+most two points, and hence at most two ordered pairs of distinct points. Thus E
+has a base of size two whenever 2(|E|−1) < p(p+1). This holds for A4 when p ≥ 5,
+for S4 when p ≥ 7, and for A5 when p ≥ 11. When p = 5, the case A5 = PSL2 (5)
+is excluded. For S4 ≤ PGL2 (5), the transformations
+                                                     z+2
+                               a(z) = 2z,     b(z) =
+                                                     z+3
+generate a subgroup isomorphic to S4 . Its stabilizer of ∞ is ⟨a⟩, and no nonidentity
+element of ⟨a⟩ fixes 1. Hence (∞, 1) is a base. Since PGL2 (5) has a unique conjugacy
+class of S4 subgroups [13, Theorem D(7)], the claim follows.
+   We now determine the core of M . The group corePGL2 (p) (A) is trivial. Indeed,
+its intersection with the simple normal subgroup PSL2 (p) is trivial, and it there-
+fore centralizes PSL2 (p). Since CPGL2 (p) (PSL2 (p)) = 1, the claim follows. Hence
+coreL (M ) = M ∩ Z.
+   Let (x, y) be a base for A on P1 (Fp ). Choose g ∈ L such that (x, y)g is the pair
+of eigenlines of D. Then π(D) ∩ π(M g ) = 1, and therefore D ∩ M g ≤ Z. Since
+M ∩ Z is central and Z ≤ D, we have M ∩ Z ≤ D ∩ M g . Consequently,
+                  D ∩ M g = M ∩ Z = coreL (M ) = D ∩ coreL (M ).
+                                                                                      □
+  Now we are ready to prove the parabolic cases.
+Lemma 4.10. Let P be a point or line stabilizer of G, and let H ≤ P . Then the
+action of G on G/H is 3-closed.
+Proof. By contragredient duality, it is enough to consider a point stabilizer. Put
+         Ω = G/H,       Gb = G(3),Ω ,      P 0 = Q ⋊ SL2 (p),    Q∼ = F2 , p
+18             TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+and set J = HP 0 . Since P 0 ⊴ P , the subgroup J is well defined.
+   The partition of Ω into the J-orbits is determined by a G-invariant relation on
+ordered pairs. Hence Gb preserves this partition and induces a permutation group
+on G/J. Moreover, this induced group is contained in the 3-closure of the action
+of G on G/J.
+   Let
+                             C = J/P 0 ≤ P/P 0 ∼= F× .p
+
+The action on G/J is isomorphic to the action on (F3p \ {0})/C. It is therefore
+3-closed by Proposition 4.7. Thus, for c ∈ G,   b we may compose c with an element
+of G and obtain k ∈ G fixing every J-orbit setwise.
+                       b
+    For each projective point x, let Xx be the corresponding J-orbit in Ω, let Px be
+                                                                                     0
+its stabilizer in G, and let Px0 be the corresponding conjugate of P 0 . Then αk ∈ αPx
+for α ∈ Xx . Choose Hx ≤ Px corresponding to the action of Px on Xx , and put
+Nx = corePx (Hx ).
+    Write Px = Qx ⋊ Lx where Lx ∼      = GL2 (p). The action of Lx on Qx , written as
+row vectors, is ρ(A)u = (det A)−1 uA−1 . The subgroup Nx ∩ Qx is Lx -invariant, so
+it is either 1 or Qx .
+    If Nx ∩ Qx = 1, then
+                              [Nx , Qx ] ≤ Nx ∩ Qx = 1.
+Thus Nx ≤ CPx (Qx ) = Qx , and hence Nx = 1.
+   Suppose that Qx ≤ Nx . Then Nx /Qx is normal in Lx . Such a normal subgroup
+either contains SL2 (p) or is scalar. Consequently, either Px0 ≤ Nx , or Nx = 1, or
+Nx = Qx ⋊ Zx for some scalar subgroup Zx ≤ Lx . We say that Nx is small in the
+latter two cases.
+   If Nx and Ny are small and x ̸= y, then Nx ∩ Ny = 1. Indeed, taking x = ⟨e1 ⟩
+and y = ⟨e2 ⟩, an element of the intersection has both forms
+                        −2                              
+                         c      u v            d   0     0
+                        0      c 0 ,      u′ d−2 v ′  .
+                           0    0 c            0   0     d
+
+Equality gives c = d = c−2 and forces the off-diagonal entries to vanish. Thus
+c3 = 1, so c = 1. Since the pairs (Px , Hx ) are G-conjugate, the same alternative
+holds for every x.
+   Suppose first that Nx is small for every x. Let F = (x, y, z) be an ordered
+projective basis, and put
+
+                     DF = Px ∩ Py ∩ Pz ,       Kx = DF ∩ Nx .
+
+We claim that there exists ηx ∈ Xx such that (DF )ηx = Kx .
+   Identify Px = Q ⋊ L, let M be the image of Hx in L, and put W = Hx ∩ Q. If
+SL2 (p) ≤ M , then the smallness of Nx gives W = 0. Since −I acts as −1 on Q,
+every complement to Q in Q ⋊ SL2 (p) is Q-conjugate to the standard complement.
+We may therefore assume that Hx ≤ L.
+   The two characters through which DF acts on Q have exponent matrix of de-
+terminant 3. Since gcd(3, p − 1) = 1, the resulting map DF −→ (F×    2
+                                                                  p ) is bijective.
+A vector whose two coordinates are nonzero therefore gives a point ηx with trivial
+DF -stabilizer.
+            TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                       19
+
+
+    Now suppose that SL2 (p) ≰ M . By Lemma 4.9, after conjugating in L we may
+assume that
+                          DF ∩ M = DF ∩ coreL (M ) =: R.
+If W = Q, the point corresponding to Hx has stabilizer DF ∩Hx = R = Kx . If W <
+Q, then Nx = 1 and R is scalar. For 1 ̸= d = cI ∈ R, the map ρ(d) − 1 = (c−3 − 1)I
+is invertible. The condition that d belong to a Q-conjugate of Hx excludes at most
+one coset of W in Q. There are at most |R| − 1 ≤ p − 2 such excluded cosets,
+whereas |Q/W | ≥ p. A conjugate outside their union gives the required point ηx .
+    Choose such points ηx , ηy , ηz for the ordered basis F . Since k preserves their
+G-orbit and fixes their three projective points, there exists tF ∈ DF such that
+                             (ηx , ηy , ηz )k = (ηx , ηy , ηz )tF .
+Set hF = kt−1F . Then hF fixes the three chosen points.
+   Since G and G b have the same orbits on Ω3 , repeated application of [21, Theo-
+rem 2.3(ii)] shows that Gηy ,ηz and G  b η ,η have the same orbits on Ω. Let u ∈ Xx .
+                                          y z
+
+There exists a ∈ Gηy ,ηz such that uhF = ua . Both points lie in Xx , so a fixes x.
+Since a also fixes ηy and ηz , it fixes y and z. Hence
+                  a ∈ DF ∩ Gηy ∩ Gηz = Ky ∩ Kz ≤ Ny ∩ Nz = 1.
+Thus hF fixes Xx pointwise. By symmetry, it fixes Xy and Xz pointwise. Therefore
+k and tF induce the same permutation on these three sets.
+   If two ordered projective bases F and F ′ agree in two entries, then tF t−1  F ′ fixes
+the corresponding two sets pointwise. Hence tF t−1F ′ ∈ N x ∩  N y =   1. The  graph   of
+ordered projective bases, in which two bases are adjacent when they agree in two
+entries, is connected. Thus all tF are equal to one element t ∈ G.
+   Every projective point occurs in an ordered projective basis, and t fixes every
+point in each such basis. Hence t fixes every point of P2 (Fp ). It is therefore scalar,
+and so t = 1 because Z(G) = 1. The sets Xx cover Ω, so k = 1.
+   Finally, suppose that Px0 ≤ Nx for every x. Since Px0 acts trivially on Xx , the
+                  0
+relation αk ∈ αPx implies αk = α for every α ∈ Xx . Again the sets Xx cover Ω, so
+k = 1.
+   Thus every element of G b belongs to G, and the action on G/H is 3-closed. □
+
+  We now combine the preceding results.
+Lemma 4.11. For every proper subgroup H < G, the action of G on G/H is 3-
+closed. If H is contained in a nonparabolic maximal subgroup, then this action has
+a base of size at most two.
+Proof. Choose a maximal subgroup M of G containing H. If M is parabolic, then
+the action on G/H is 3-closed by Lemma 4.10.
+   If M is nonparabolic, then the action on G/H has a base of size at most two by
+Proposition 4.8. It is therefore 3-closed by Lemma 2.3.                         □
+Lemma 4.12. Let H ≤ PX and K ≤ PY , where PX and PY are point or line
+parabolic subgroups of G. Then the diagonal action of G on G/H ⊔ G/K is 3-
+closed.
+Proof. By Lemma 4.10, the actions on G/H and G/K are 3-closed. There are
+surjective G-maps
+                  ρX : G/H −→ G/PX ,               ρY : G/K −→ G/PY ,
+20             TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+where G/PX and G/PY are respectively point or line sets of PG(2, p).
+   Let π ∈ G(3),G/H⊔G/K . Constant triples show that π preserves each of the two
+coset spaces. By [14, Lemma 2.2], its restrictions are induced by elements a, b ∈ G.
+After composing π with a−1 , we may assume that π fixes G/H pointwise and acts
+on G/K as δ = a−1 b ∈ G.
+   Let x ∈ G/PX and y ∈ G/PY , and choose α ∈ ρ−1                    −1
+                                                     X (x) and β ∈ ρY (y). By [14,
+Lemma 2.1], there exists t ∈ G such that α = α and β = β . Hence xt = x and
+                                             t            t    δ
+
+yt = yδ .
+   Suppose first that G/PX and G/PY are both point sets or both line sets. Since
+equality is preserved by G, we have
+                               x=y      ⇐⇒      x = yδ
+for every x. Taking x = y gives y δ = y.
+   Suppose now that one is the point set and the other is the line set. Since incidence
+is preserved by G, for every point x and line y,
+                               x∈y      ⇐⇒     x ∈ yδ .
+A line is determined by its incident points, and a point is determined by its incident
+lines. Thus again y δ = y.
+   Therefore δ fixes every point or every line of PG(2, p). Since these actions of G
+are faithful, δ = 1. Hence π is induced by the diagonal action of a ∈ G, and the
+action on G/H ⊔ G/K is 3-closed.                                                    □
+
+Theorem 4.13. Let p be a prime with p ≡ 2 (mod 3). Then PSL3 (p) is totally
+3-closed.
+Proof. For p = 2, the result follows from PSL3 (2) ∼
+                                                   = PSL2 (7) and Theorem 3.7.
+Assume that p ≥ 5.
+   Let H, K < G be proper subgroups. By Lemma 4.11, the actions on G/H and
+G/K are 3-closed. Choose maximal subgroups MH and MK containing H and K,
+respectively.
+   If either MH or MK is nonparabolic, then the corresponding coset action has a
+base of size at most two by Lemma 4.11. Hence the diagonal action on G/H ⊔ G/K
+is 3-closed by Proposition 2.4.
+   If both MH and MK are parabolic, then the diagonal action is 3-closed by
+Lemma 4.12.
+   Thus the diagonal action on G/H ⊔ G/K is 3-closed for every pair of proper
+subgroups H, K < G. The result follows from Proposition 2.2.                  □
+
+        5. Negative results and the proof of the main theorem
+   In this section, we establish the semilinear and central-vector obstructions and
+complete the proof of Theorem 1.1. In particular, we prove that PSL4 (q) is not
+totally 3-closed for any prime power q, and that PSLn (q) is not totally 3-closed
+whenever n ≥ 5 and q > 2. This leaves only the family PSLn (2) with n ≥ 5.
+Proposition 5.1. Let n ≥ 3, let q be a prime power, and let V = Fnq . Put
+                  G = PSL(V ),       K = PGL(V ),         Ω = P(V ).
+Then PΓL(V ) ≤ G(3),Ω .
+            TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                       21
+
+
+Proof. Define δ : K −→ F×          × n                        × n
+                              q /(Fq ) by δ([A]) = det(A)(Fq ) . This is well defined
+and surjective, with kernel G.
+   Let T = (L1 , L2 , L3 ) ∈ Ω3 , and let KT be its pointwise stabilizer in K. We claim
+that δ(KT ) = F×        × n
+                   q /(Fq ) . If the distinct lines in T span a subspace of dimension
+at most two, scale a complementary basis vector by an arbitrary element of F×         q .
+If L1 , L2 , L3 are independent, choose nonzero vi ∈ Li , extend them to a basis of
+V , and scale v1 . In either case, the resulting element fixes T and has arbitrary
+determinant class.
+   Suppose that U = T k for some k ∈ K. Choose s ∈ KU such that δ(s) = δ(k)−1 .
+Then ks ∈ G and T ks = U . Thus G and K have the same orbits on Ω3 .
+   Two ordered triples lie in the same K-orbit if and only if the same coordinates
+are equal and, when the three points are distinct, they are either both collinear or
+both noncollinear. Every semilinear projectivity preserves these properties. Hence
+every element of PΓL(V ) preserves every G-orbit on Ω3 , and therefore PΓL(V ) ≤
+G(3),Ω .                                                                              □
+Theorem 5.2. Let n ≥ 3 and let q = rf be a prime power. If f > 1 or
+gcd(n, q − 1) > 1, then the natural action of PSLn (q) on Pn−1 (Fq ) is not 3-closed.
+In particular, PSLn (q) is not totally 3-closed.
+Proof. Put G = PSLn (q) and Ω = Pn−1 (Fq ). By Proposition 5.1, PΓLn (q) ≤
+G(3),Ω .
+  Suppose first that d = gcd(n, q − 1) > 1. Then [PGLn (q) : G] = d > 1. Since
+                         G < PGLn (q) ≤ PΓLn (q) ≤ G(3),Ω ,
+the action is not 3-closed.
+   If f > 1, the Frobenius permutation
+                            [x1 : · · · : xn ] 7−→ [xr1 : · · · : xrn ]
+belongs to PΓLn (q) but not to PGLn (q). Thus in either case G < G(3),Ω , so the
+action is not 3-closed.                                                       □
+Theorem 5.3. Let n ≥ 4, let q > 2 be a prime power, let V = Fnq , and let
+Z = Z(SL(V )). Put
+             G = SL(V )/Z,          G
+                                    e = GL(V )/Z,                Ω = (V \ {0})/Z.
+Then the actions of G and G
+                          e on Ω are faithful, and G e ≤ G(k),Ω for every 1 ≤ k < n.
+                 ∼
+In particular, G = PSLn (q) is not totally 3-closed.
+Proof. Let A ∈ GL(V ) fix every Z-orbit in V \ {0}. For each 0 ̸= v ∈ V , write
+Av = zv v for some zv ∈ Z. If u, v are linearly independent, then
+                        zu u + zv v = A(u + v) = zu+v (u + v),
+so zu = zv = zu+v . The same scalar occurs on every nonzero multiple of a vector.
+Hence A = zI for some z ∈ Z. Thus the actions of G and G      e on Ω are faithful.
+                                           ∼   ×
+   Since Z ≤ SL(V ) and GL(V )/ SL(V ) = Fq , we have [G : G] = q − 1 > 1.
+                                                            e
+   Let 1 ≤ k < n, let A ∈ GL(V ), and consider (Zv1 , . . . , Zvk ) ∈ Ωk . Put
+W = ⟨v1 , . . . , vk ⟩. Since dim W < n, choose a basis of V extending a basis of W .
+There exists D ∈ GL(V ) which fixes W pointwise and satisfies det(D) = det(A)−1 .
+Indeed, it is enough to scale one basis vector outside W . Then AD ∈ SL(V ), and
+22               TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+AD agrees with A on the given tuple. Hence every element of G    e can be matched
+                                                         e≤G    (k),Ω
+on every ordered k-tuple by an element of G. Therefore G              .
+  Taking k = 3, we obtain G < G e ≤ G(3),Ω , so the action is not 3-closed.     □
+Proposition 5.4. The group PSL4 (2) is not totally 3-closed.
+Proof. Identify PSL4 (2) ∼      = A8 and let A8 act on the set Ω of two-subsets of
+{1, . . . , 8} [11, p. 3]. This action is faithful.
+   Let T = (X1 , X2 , X3 ) ∈ Ω3 . The union X1 ∪ X2 ∪ X3 contains at most six
+points. Let s ∈ S8 and put U = T s . Choose two points outside the union of the
+three entries of U , and let τ be the transposition of these two points. Then τ fixes
+U pointwise. If s is odd, then sτ is even and
+                                 T sτ = U τ = U = T s .
+                                                                 (3),Ω
+Hence every S8 -orbit on Ω3 is an A8 -orbit. Therefore S8 ≤ A8 . Since A8 < S8 ,
+the action is not 3-closed. Thus PSL4 (2) is not totally 3-closed.           □
+     We can now complete the classification.
+Proof of Theorem 1.1. Part (1) is Theorem 3.11.
+   For n = 3, the positive cases follow from Theorems 4.6 and 4.13. If q = rf with
+f > 1, or if q is prime and q ≡ 1 (mod 3), the group is not totally 3-closed by
+Theorem 5.2. This proves part (2).
+   Suppose that n = 4. If q > 2, the result follows from Theorem 5.3. If q = 2, it
+follows from Proposition 5.4. This proves part (3).
+   Finally, if n ≥ 5 and q > 2, the result follows from Theorem 5.3. This proves
+part (4). Hence only the cases PSLn (2) with n ≥ 5 remain.                      □
+
+                       Appendix A. The GAP verification
+   The following GAP program carries out the computation used in the proof of
+Proposition 4.4. It constructs G = PSL3 (3) in its action on the thirteen points of
+PG(2, 3), enumerates the 646 subgroups of the point stabilizer P , determines the
+twenty-four exceptional subgroups and their six G-conjugacy classes, and computes
+the groups Ax and (G(3),Ω )x for one representative of each class. The program was
+executed under GAP 4.12.1 [22] and runs in under ten seconds.
+         Listing 1. The verification program psl33 exceptional gap.txt.
+ 1    # psl33_exceptional.g
+ 2    #
+ 3    # Verification of the exceptional-subgroup classification for
+ 4    # G = PSL(3,3) = SL(3,3): enumerates all subgroups of a point
+ 5    # stabilizer P, determines the set E(P) of subgroups H < P with
+ 6    # H meeting every G-conjugate of itself, classifies E(P) up to
+ 7    # G-conjugacy, and verifies that each exceptional coset action
+ 8    # G/H is 3-closed.
+ 9    #
+10    # Run as: gap -q -A -b psl33_exceptional.g
+11
+12    # G acting on the 13 points of PG(2,3), P = stabilizer of point 1.
+13    pts := Set(Filtered(GF(3)^3, v -> not IsZero(v)), NormedRowVector);;
+14    G := Image(ActionHomomorphism(SL(3,3), pts, OnLines));;
+15    P := Stabilizer(G, 1);;
+16    Print("|G| = ", Size(G), " |P| = ", Size(P), "\n");
+17
+            TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS            23
+
+
+18   # All subgroups of P, by cyclic extension.
+19   subs := Concatenation(List(ConjugacyClassesSubgroups(
+20             LatticeByCyclicExtension(P)), AsList));;
+21   Print("subgroups of P: ", Length(subs), "\n");
+22
+23   # |H meet H^g| is constant on the double coset HgH, so one
+24   # representative per double coset is an exhaustive test.
+25   IsExceptional := function(H)
+26     local g;
+27     if Size(H) = 1 or Size(H) = Size(P) then return false; fi;
+28     for g in List(DoubleCosets(G, H, H), Representative) do
+29       if IsTrivial(Intersection(H, H^g)) then return false; fi;
+30     od;
+31     return true;
+32   end;;
+33   exc := Filtered(subs, IsExceptional);;
+34   Print("exceptional subgroups: ", Length(exc), "\n");
+35   Print("order distribution: ", Collected(List(exc, Size)), "\n");
+36
+37   # G-conjugacy classes of the exceptional subgroups.
+38   classes := [];;
+39   for H in exc do
+40     cl := First(classes, c -> Size(c[1]) = Size(H)
+41                               and IsConjugate(G, c[1], H));
+42     if cl = fail then Add(classes, [H, 1]);
+43     else cl[2] := cl[2] + 1; fi;
+44   od;
+45   Print("classes [order, members in P]: ",
+46         List(classes, c -> [Size(c[1]), c[2]]), "\n");
+47
+48   # For x = H in Omega = G/H, the group A_x of permutations of Omega
+49   # fixing x and preserving every G_x-orbit on Omega^2 contains the
+50   # stabilizer of x in G^(3). Backtracking enumerates A_x; the
+51   # transported pair coloring then filters by the G-orbits on Omega^3:
+52   # the G-orbit of (i,j,k) is determined by D[T_i(j)][T_i(k)], where
+53   # T_i carries i back to x and D is the G_x-orbit coloring of pairs.
+54   ClosureStabilizer := function(H)
+55     local act, GG, N, stab, orb, D, ncol, rp, Ti, i, o,
+56           A2, A3, img, used, search, pi, ok, j, k;
+57     act := FactorCosetAction(G, H);
+58     GG := Image(act);
+59     N := Index(G, H);
+60     stab := Stabilizer(GG, 1);
+61     orb := OrbitsDomain(stab, Cartesian([1..N], [1..N]), OnPairs);
+62     D := List([1..N], i -> []);
+63     for i in [1..Length(orb)] do
+64       for o in orb[i] do D[o[1]][o[2]] := i; od;
+65     od;
+66     ncol := Length(orb);
+67     rp := List([1..N], i -> RepresentativeAction(GG, 1, i));
+68     Ti := List([1..N], i -> List([1..N], j -> j^(rp[i]^-1)));
+69     A2 := [];
+70     img := [1];
+71     used := BlistList([1..N], [1]);
+72     search := function(v)
+73       local w, a, good;
+74       if v > N then Add(A2, PermList(ShallowCopy(img))); return; fi;
+75       for w in [1..N] do
+24                TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+ 76           if not used[w] then
+ 77             good := true;
+ 78             for a in [1..v-1] do
+ 79               if D[a][v] <> D[img[a]][w]
+ 80                   or D[v][a] <> D[w][img[a]] then
+ 81                 good := false; break;
+ 82               fi;
+ 83             od;
+ 84             if good then
+ 85               img[v] := w; used[w] := true;
+ 86               search(v+1);
+ 87               used[w] := false; Unbind(img[v]);
+ 88             fi;
+ 89           fi;
+ 90        od;
+ 91      end;
+ 92      search(2);
+ 93      if Length(A2) = Size(H) then
+ 94        A3 := A2;
+ 95      else
+ 96        A3 := [];
+ 97        for pi in A2 do
+ 98           ok := true;
+ 99           for i in [1..N] do
+100             for j in [1..N] do
+101               for k in [1..N] do
+102                 if D[Ti[i][j]][Ti[i][k]]
+103                     <> D[Ti[i^pi][j^pi]][Ti[i^pi][k^pi]] then
+104                    ok := false; break;
+105                 fi;
+106               od;
+107               if not ok then break; fi;
+108             od;
+109             if not ok then break; fi;
+110           od;
+111           if ok then Add(A3, pi); fi;
+112        od;
+113      fi;
+114      return [Size(H), N, ncol, Length(A2), Length(A3),
+115               Set(A3) = Set(Elements(stab))];
+116    end;;
+117
+118    Print("[ |H|, |Omega|, pair colors, |A_x|, |3-closure stab|, ",
+119          "= image of H ]\n");
+120    for cl in classes do
+121      Print(ClosureStabilizer(cl[1]), "\n");
+122    od;
+123    Print("total time (ms): ", Runtime(), "\n");
+124    QUIT;
+
+      The program produces the following output.
+                             Listing 2. Output of Listing 1.
+       |G| = 5616 |P| = 432
+       subgroups of P: 646
+       exceptional subgroups: 24
+       order distribution: [ [ 48, 9 ], [ 54, 4 ], [ 72, 3 ], [ 108, 4 ],
+         [ 144, 3 ], [ 216, 1 ] ]
+             TOTAL 3-CLOSURE FOR PROJECTIVE SPECIAL LINEAR GROUPS                                25
+
+
+    classes [order, members in P]: [ [ 48, 9 ], [ 54, 4 ], [ 72, 3 ], [ 108, 4 ],
+      [ 144, 3 ], [ 216, 1 ] ]
+    [ |H|, |Omega|, pair colors, |A_x|, |3-closure stab|, = image of H ]
+    [ 48, 117, 345, 48, 48, true ]
+    [ 54, 104, 264, 54, 54, true ]
+    [ 72, 78, 148, 72, 72, true ]
+    [ 108, 52, 72, 108, 108, true ]
+    [ 144, 39, 22, 288, 144, true ]
+    [ 216, 26, 16, 1944, 216, true ]
+    total time (ms): 9482
+
+    The six rows of the final output table match the table in the proof of Propo-
+sition 4.4. In each exceptional class, the stabilizer of x in the 3-closure has order
+|H| and coincides with the image of H. An independent implementation of the
+same computation in Python, produced during the Albilich run that generated the
+original argument, returns identical results.
+
+                                     Report of AI use
+   The main argument was generated with the assistance of Albilich [15], a gen-
+erative artificial-intelligence assistant for mathematical research developed by the
+authors. All arguments were subsequently fully understood, completely rewritten,
+and independently verified by the authors.
+
+                                         References
+ 1. Alireza Abdollahi and Majid Arezoomand, Finite nilpotent groups that coincide with their
+    2-closures in all of their faithful permutation representations, Journal of Algebra and Its
+    Applications 17 (2018), no. 4, 1850065.
+ 2. Alireza Abdollahi, Majid Arezoomand, and Gareth Tracey, On finite totally 2-closed groups,
+    Comptes Rendus Mathématique 360 (2022), no. G9, 1001–1008.
+ 3. Seyed Hassan Alavi, Ashraf Daneshkhah, and Cheryl E. Praeger, Symmetries of biplanes,
+    Designs, Codes and Cryptography 88 (2020), no. 11, 2337–2359.
+ 4. Monther R. Alfuraidan and Jonathan I. Hall, Imprimitive distance-transitive graphs with
+    primitive core of diameter at least three, Michigan Mathematical Journal 58 (2009), no. 1,
+    31–77.
+ 5. Majid Arezoomand, Mohammad A. Iranmanesh, Cheryl E. Praeger, and Gareth Tracey, To-
+    tally 2-closed finite groups with trivial Fitting subgroup, Bulletin of Mathematical Sciences 14
+    (2024), no. 1, 2350004.
+ 6. Simeon Ball and Zsuzsa Weiner, An introduction to finite geometry, 2011, Lecture notes,
+    https://web.mat.upc.edu/simeon.michael.ball/IFG.pdf.
+ 7. Thomas Breuer, CTblLib – The GAP Character Table Library, Version 1.3.11, 2025, https:
+    //www.math.rwth-aachen.de/~Thomas.Breuer/ctbllib/.
+ 8. Ezra Brown and Nicholas Loehr, Why is PSL(2, 7) isomorphic to GL(3, 2)?, The American
+    Mathematical Monthly 116 (2009), no. 8, 727–732.
+ 9. Leonard Carlitz, A theorem on permutations in a finite field, Proceedings of the American
+    Mathematical Society 11 (1960), no. 3, 456–459.
+10. Dmitry Churikov and Cheryl E. Praeger, Finite totally k-closed groups, Trudy Instituta
+    Matematiki i Mekhaniki UrO RAN 27 (2021), no. 1, 240–245.
+11. John H. Conway, Robert T. Curtis, Simon P. Norton, Richard A. Parker, and Robert A.
+    Wilson, Atlas of finite groups: Maximal subgroups and ordinary characters for simple groups,
+    Clarendon Press, Oxford, 1985.
+12. John D. Dixon and Brian Mortimer, Permutation groups, Graduate Texts in Mathematics,
+    vol. 163, Springer, New York, 1996.
+13. Xander Faber, Finite p-irregular subgroups of PGL2 (k), La Matematica 2 (2023), 479–522,
+    arXiv:1112.1999.
+26                TING GONG, YONG YANG, AND MICHAEL RUOFAN ZENG
+
+
+14. Saul D. Freedman, Michael Giudici, and Cheryl E. Praeger, Total closure for permutation
+    actions of finite nonabelian simple groups, Monatshefte für Mathematik 203 (2024), no. 2,
+    323–340.
+15. Ting Gong, Michael Ruofan Zeng, and Yong Yang, Albilich: steerable proof-state orchestration
+    for LLM-based mathematical research with CAS integration, 2026, arXiv:2607.27705.
+16. Robert M. Guralnick and Michael E. Zieve, Polynomials with PSL(2) monodromy, Annals of
+    Mathematics 172 (2010), no. 2, 1315–1359.
+17. Gareth A. Jones, Paley and the Paley graphs, Isomorphisms, Symmetry and Computations in
+    Algebraic Graph Theory (Gareth A. Jones, Ilia Ponomarenko, and Jozef Širáň, eds.), Springer
+    Proceedings in Mathematics and Statistics, vol. 305, Springer, Cham, 2020, pp. 155–183.
+18.         , Counting conjugacy classes of subgroups of PSL2 (p), International Journal of Group
+    Theory 15 (2026), no. 3, 123–134.
+19. Evgeny I. Khukhro and Victor D. Mazurov (eds.), Unsolved problems in group theory: The
+    kourovka notebook, no. 21, Sobolev Institute of Mathematics, Novosibirsk, 2026, July 2026
+    update, arXiv:1401.0300.
+20. Oliver H. King, The subgroup structure of finite classical groups in terms of geometric con-
+    figurations, Surveys in Combinatorics 2005 (Bridget S. Webb, ed.), London Mathematical
+    Society Lecture Note Series, vol. 327, Cambridge University Press, 2005, pp. 29–56.
+21. E. A. O’Brien, I. N. Ponomarenko, A. V. Vasil’ev, and E. P. Vdovin, The 3-closure of a
+    solvable permutation group is solvable, Journal of Algebra 607 (2022), 618–637.
+22. The GAP Group, GAP – Groups, Algorithms, and Programming, Version 4.14.0, 2024,
+    https://www.gap-system.org.
+23. Patricia Vanden Cruyce, Geometries related to PSL(2, 19), European Journal of Combina-
+    torics 6 (1985), no. 2, 163–173.
+24. Helmut Wielandt, Finite permutation groups, Academic Press, New York, 1964, Translated
+    from the German by R. Bercov.
+25. Robert A. Wilson, Richard A. Parker, John N. Bray, et al., The ATLAS of Finite Group Rep-
+    resentations, Version 3.004, 2026, https://brauer.maths.qmul.ac.uk/Atlas/v3/, accessed
+    July 2026.
+
+     Department of Mathematics, University of Washington, Seattle, WA 98195
+     Email address: tgong2@uw.edu
+
+     Department of Mathematics, Texas State University, San Marcos, TX 78666
+     Email address: yang@txstate.edu
+
+     Department of Mathematics, University of Washington, Seattle, WA 98195
+     Email address: zengrf@uw.edu
+

@@ -2243,3 +2243,14 @@ is imported and priority remains unconfirmed. Complete candidate count
 is41, independently accepted count0. Latest n7 snapshot at02:43:33 has
 28,050,000 checked nodes, six live workers, zero completed shards and
 39,574,260KiB RSS.
+
+
+## 2026-09-12T02:51:49.063174+00:00 — 20.3 prior negative consequence
+
+The determinant adjustment obstruction gives k(PSL_n(3))>=n for
+odd n>=5. This exact local matching statement already appears in
+Gong--Yang--Zeng2026 Theorem5.3, although the paper emphasizes20.2.
+The full relevant proof was read and pp.21--22 viewed. A source
+archive with six hashes passes. The elementary specialization is
+recorded, with standard simple-group facts explicit and no new count.
+The STATUS timestamp formatting artifact was also corrected.
