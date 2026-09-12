@@ -1,0 +1,2163 @@
+Pacific Journal of
+Mathematics
+
+
+   A CHARACTERIZATION OF GROUPS IN TERMS OF THE
+          DEGREES OF THEIR CHARACTERS. II
+       I. M ARTIN (I RVING ) I SAACS AND D ONALD S TEVEN PASSMAN
+
+
+
+
+Vol. 24, No. 3                                               July 1968
+                                                 PACIFIC JOURNAL OF MATHEMATICS
+                                                           Vol. 24, No. 3, 1968
+
+
+      A CHARACTERIZATION OF GROUPS IN TERMS
+      OF THE DEGREES OF THEIR CHARACTERS II
+                   I. M.   ISAACS AND D.    S.    PASSMAN
+
+
+           In this paper we continue our study of the relationship
+       between the structure of a finite group G and the set of degrees
+       of its irreducible complex characters. The following hypo-
+       theses on the degrees are considered: (A) G has r.x. e for some
+       prime p, i.e. all the degrees divide pe, (B) the degrees are
+       linearly ordered by divisibility and all except 1 are divisible
+       by exactly the same set of primes, (C) G has a.c. m, i.e., all
+       the degrees except 1 are equal to some fixed m, (D) all the
+       degrees except 1 are prime (not necessarily the same prime)
+       and (E) all the degrees except 1 are divisible by pe > p but
+       none is divisible by pe+1. In each of these situations, group
+       theoretic information is deduced from the character theoretic
+       hypothesis and in several cases complete characterizations are
+       obtained.
+
+     In situation (A), the greater complexity which can occur when
+e ^ p is explored and a conjecture concerning p-groups with e < p is
+studied and certain cases of it are proved. Detailed statements are
+made about groups G satisfying (B) for which the common set of
+prime divisors of the degrees does not consist of a single prime for
+which G has a nonabelian @p subgroup. These results are applied to
+situation (C), groups with a.c. m, and such groups are completely
+characterized when m is not a prime power corresponding to a non-
+abelian Sylow subgroup. If m = pe and an @p of G is nonabelian
+then it is shown that G must be nilpotent unless e = 1 (in which case
+G has r.x. 1 and has been completely characterized in [2]). This
+reduces the study of groups with a.c. m to p-groups and it is shown
+that a p-group G with a. c. pe must have an abelian normal subgroup
+of index pe unless G has class 2 or 3. Further information is obtained
+about these "special" class 2 and 3 groups. It is also shown that if
+e > 1 then G must have class ^ p.
+     Groups satisfying hypothesis (D) are completely characterized and
+it is shown that in this case there are at most two degrees different
+from 1. Finally it is shown that if G satisfies hypothesis (E) and has
+a nonabelian @p subgroup then G is nilpotent and has a.c. p\ In all
+the situations considered in this paper, the group in question is shown
+to be solvable.
+     We use here the notation and terminology of [2].
+
+    1* Groups with r*x* (p — 1)* In [4] we classified all groups with
+                                     467
+468                  I. M. ISAACS AND D. S. PASSMAN
+
+r.x.2. As it turned out, in that study the prime p — 2 played a
+special role. It now appears that in the general classification of groups
+with r.x. e those primes p with p ^ e will again play a special role.
+In the other direction, this means that groups G with r.x. e and p > e
+are somehow better behaved than the others. In this section we will
+attempt to justify this last statement.
+     Let G have r. x. e but not r.x. (e — 1). Then we say that e = e(G)
+is the character exponent of G. If G has a normal subgroup N of
+index p with e(N) = e(G) — 1, then in terms of the characterization
+problem, G is trivial. We say that such groups are imprimitive. Other-
+wise G is primitive. We note that since all groups with r.x. e are
+M-groups this terminology causes no confusion.
+     The following result handles the nonnilpotent case. It shows
+moreover that the nonnilpotent exceptional group of [4](Theorem A (ii))
+belongs in some sense to a series of such groups.
+
+      THEOREM 1.1. Let e(G) = e and let @P,(G) be noncentral.     If
+pφ2 and p is not a Mersenne prime or if p > e, then G is imprimi-
+tive. If p — e, then G is imprimitive unless G/Q(G) = Go where
+Go — (V xσ C) ~ C, I CI = p, V is elementary abelian and either p —
+2, I VI = 3 or p = 2a — 1 is a Mersenne prime and \V\ = 2a.
+      Conversely if e(G) = e and G/&(G) = Go given above, then p = β
+and G is primitive.
+
+      The lemma below is well known.
+
+    LEMMA 1.2. Let π be a set of primes and let arbitrary group G
+have a normal abelian @f subgroup A. Then A = Z x B where Z
+and B are characteristic in G and Z = 3(G) Π A.
+
+    Proof. Clearly A is characteristic in G and G/A acts on A. Let
+θ be the endomorphism of A which is given by θ(a) — ILe^M αβ.
+Clearly K = ker θ and I — image θ are characteristic subgroups of G
+and I K\ 11\ = \ A\. If Z = Q(G) f] A, then we see easily than Z^I
+and Z Π K — <Ί>. The latter uses the fact that A is an ©. subgroup
+of G. Hence Z = / and A = Z x K.
+
+     Proof of Theorem 1.1. Let H=®P,(G) and P = G/&(H). Let
+H be the group of linear characters of H and let Gj. = H xσ P where
+P acts faithfully in the natural manner on H. If there exists λ e f f
+with <εP(λ) = <1> then choose N with N 2 (£(#) and [ ( ? : # ] = p. By
+[5](§ 3, in particular the proofs of Theorems 3.1 and 3.2), e(N) =
+e(G) — 1. Now this occurs by Corollary 2.4 (i) of [5] if p Φ 2 and p
+is not a Mersenne prime or if p > e(G). It also occurs for p — e(G)
+                     THE DEGREES OF GROUP CHARACTERS II                               469
+
+ unless G1 has Go as a homomorphic image. This follows by Theorem
+ 2.1 of [5] and a slight modification of Lemma 1.2 of [5] since we do
+ not have to look at subgroups here. We consider this last possibility.
+ Assume G is primitive.
+        Now P has as a homomorphic imape P o , a Sylow p-subgroup of
+ Go. Since [P o - Po] — V2 we see that P o has a nonabelian group of order
+p* as a homomorphic image. Thus there exists KΔG with K 3 (£(iϊ)
+and G/K nonabelian of order p\ By [2](p. 885, equation * with m = 1)
+G has a normal subgroup JV with K < N < G, [G : N] = p2 and
+e(JV) ^ e(G) — 1. Since p = β > e(iV) we conclude by [5] that
+ [#:<£(#)] ^ pe{N).    Hence [G: <£(#)] ^ p 2 p e ( i V ) ^ p* + 1 . Since | P 0 | = pfH-\
+ it follows that [G : (£(#)] = ^ + 1 and P ~ P o .
+        Let TF be the kernel of the homomorphism Gx —» Go. By the above
+ W £ iϊ. We show that W is central in Glβ Let w eW and suppose
+that ©^(w) < G1# It is easy to see in Go that there exists <x, b eH/W
+such that I <£Po(ά) | = | <£Po(6) | = j> and P o - <©po(α), <£Po(&)>. Thus since
+Gi acts on fl/ W and KGl(tc;) < G : we cannot have both &Gl{w) 3 &Gι{a)
+and KGl(&). Say &Gl(w)ib(£ffl(a). Since | E Po (a) | = ^ we have S Gl (w) Π
+&Gi(a) = fl". Now p-group &Gl(a)/H permutes the elements of the coset
+aW = α and |αTF| is prime to p. Hence we can choose an element
+aeaW        which is centralized by KGl(a). Consider v = aweH.                          If
+x e &Gl(v) then x e Qίβι(v) = S Gl (ά). Thus a; centralizes α and hence
+x 6 Kffl(α) Π Kβjίw) = H". Therefore KGl(ι;) = J ϊ and this is a contradic-
+tion since G is primitive. Thus TΓ is central in G± and since GJW =
+Go, TΓ = BίGJ. By Lemma 1.2, H=WxR                     where β Δ G, and RP = Go.
+        Since H — W x R we have H = Q x Z. All linear characters of
+Z are fixed by P and hence Z is central in G. Also QP = Go and
+from the nature of Go we see easily that QP = Go Moreover &G(H) —
+Q x Z x S where S = ^ ( © ( J ϊ ) ) . We show now that S is central in G.
+        Choose X,μeQ with | TP(λ) | = | TP{μ) \ = p and P - <T P (λ), TP(//)>.
+Let φ be an irreducible character of S. View X,μ and ^ as characters
+of &(H). Let χ be a constituent of (λ<p)* so that χ | (£(iϊ) = a Σ5(λ<P)i
+Clearly T(λcp) = Γ(λ) Π Γ(^) so ί ^ ^ and ^ p ^ deg χ = at deg φ ^ pp
+deg <p. Thus deg ^ = 1 and t ~ pp. This shows that S is abelian and
+that T(φ) 2 T(X). Similary T(φ) 2 Γ(μ) and hence Γ(^) = G. There-
+fore S is central in G and 3(G) = Z x S. Hence G/3(G) ~ QP = GQ
+and the result follows.
+        We show conversely that all the exceptional groups discussed have
+β(G) = p and are primitive. Let A — (£(if). Since G/Q(G) ~ Go we see
+that A = H8(G) is abelian since i ί is abelian. Also [G: A] = pp+1.
+Let χ be an irreducible character of G and χ | A = a Σ ί λ»*. Then
+deg χ = αί and α2ί ^ [G : A] = p p + 1 by Lemma 1.2 of [2]. Thus deg χ ^
+p p + 1 and if deg χ = p 2 ^ 1 then α = 1 and t = p p + 1 . The latter implies
+that for λ = λx we have T(X) = A. We [show that this is not the
+470                  I. M. ISAACS AND D. S. PASSMAN
+
+case. Let λ | 3(G) = μ. Then λ is a constituent of μ (induction to
+A) and G/A permutes the linear constituents of μ since Q(G) is central.
+Now G/A is a p-group and deg μ is prime to p so there exists a con-
+stituent η of μ which is fixed by G/A. Since λ | 3(G) = η \ 3(G) it
+follows that λ = ηξ where ζ is a character with ξ \ 3(G) = 1. By
+properties of Go, T(ξ) > ^ and since Tty) = G, it follows that T{ηξ) > A.
+Thus e(G) ^ p. Since e(G0) = p we have β(G) = p.
+     Suppose G is imprimitive. Let NAG            with [G: N] = p and
+                                                        p
+e(jV) = p — l. Let χ be a character of G of degree p . Since e(iV) =
+p — 1 we have χ = 99* for some irreducible character ^> of iV. This
+shows that N 2 ,3(G). Clearly iV 2 @P, (G) = if and therefore N 2
+iί3(G) - A. Since p > e(iV) and &N(H) is abelian, it follows from § 3
+                         e(iNΓ)                  6   3    p
+of [5] that [N: A] = p . Hence [G : A] - p ^ - ^ , a contradic-
+tion. This completes the proof.
+
+     We now study ^-groups with r.x. e and p > e. Here our results
+are not conclusive.
+     Let p-group G have e(G) = e. We set Ω(G), the character kernel
+of G equal to i2(G) = n ker Θ where θ runs over all irreducible charac-
+ters of G of G of degree p\ If Ω(G) = <1>, we say G is character regular.
+In [6](Corollary 2 with n = pe~ι) we showed that | Ω(G) \ ^ i(2^e-1)!
+We conjecture that if p > e(G) than G is character regular. Reasons
+for studying this property can be seen in the following result.
+
+      PROPOSITION 1.3. Let G be a p-group with e(G) = e.
+    (i) Let NAG with e(N) = e. If N is character regular then
+&(N) S S(G).
+    (ii) Suppose G is primitive and every maximal subgroup is charac-
+ter regular. If ζeG - 3(G), then [G: K(ζ)] ^ p 2 . Thus if J is a
+central subgroup of G of order p, then 8(G/J) - 3(G)/J.
+
+      Proof. In (i) suppose 3(JV) g 3(G). Then we can choose
+  e
+® (G, S( W)) with x Φ 1. Since N AG, xeN.            Now JV is character
+regular so there exists irreducible character φ of N with deg φ = pe
+and #£ker<£>. Let χ be and irreducible constituent of φ*. Since
+d e g χ ^ pe we have clearly χ\N = φ. Thus 3(iV) is central in the
+representation associated with χ and (G,,S(JV)) C kerχ Π N = kerφ, a
+contradiction.
+     We consider (ii). Since ζ ί 8(G) we have [G: (£(ζ)] ^ p. If
+[G : <£(ζ)] = p, let N = (£(ζ). Then N A G,N is character regular and
+β(iSΓ) - e(G) since G is primitive. By (i), S(N) S 3(G) and hence
+ζ G 3(G), a contradiction. Thus [G: £(ζ)] ^ p 2 . Clearly 3(G/^) 2 8(G)/J.
+Let ζ G G be the inverse image of an element of $(G/J). Then (G, Q g J
+                  THE DEGREES OF GROUP CHARACTERS II                    471
+
+ and I J j = p so [G : &(ζ)] ^ p.   By the above ζ e $(G) and the result
+ follows.
+
+     We say p-group G has property (*) if e(G) — β and given any
+p — e nonidentity elements of G there exists an irreducible character
+                    e
+χ of G of degree p which does not contain any of these elements in
+its kernel. Note that if p > e(G) and G has property (*), than G is
+character regular. In [5] we conjectured that every p-group satisfies
+(*). If this is so the following shows that p — e is best possible.
+
+     PROPOSITION 1.4.  Given p and e. If p ^ β, there exists a p-group
+G with β(G) = e and i2(G) > <1)>. If #> > e, then there exists a p-group
+G with β(G) = β having p — e + 1 nonidentity elements with the pro-
+perty that every irreducible character of G of degree pe contains at
+least one of these elements in its kernel. Moreover in both cases we
+can take G to have class 2.
+
+     Proof. Let G be generated by x19 •••,#«, 2/1, m ,yβ,u,v       all of
+order p, such that u and v are central, (#*, ^ ) = uvi for ΐ = 1,      , e,
+and all other commutators are trivial. Set J = <v)>. Clearly G/J is
+a faithful irreducible linear group of degree p\ Since [G : 3((?)] ^ p 2 e
+we see that e(G) = e.
+     Let p S e. We show that i; e β(G). Let χ be an irreducible
+character of G with vgkβΐχ.       Then for some i = 1, « , p we have
+nvι G ker χ. Since p ^ e we see that a^, 2/{ exist and that x{ and ^ are
+central in Gjζuv^. Hence G/{uv{y has r.x. (e — 1) and degχ ^ j) e - 1 .
+Thus v e Ω(G).
+     Now let p > e. Consider the p — e + 1 elements v, ^6^?β+1,     , uvp.
+Let χ be an irreducible character of G containing none of these elements
+in its kernel. Then for some i = 1, « ,e we have ^ ^ e k e r χ . As
+                              {
+above for such i ^ e, G/^uv y has r.x. (β — 1) and hence the result
+follows.
+
+     We show now that at least in certain cases (*) holds. For possible
+later applications we use the following general setup.
+     Let £f be a class of p-groups closed under taking subgroups and
+quotient groups. Let G be a member of £f of minimal order which
+does not satisfy (*) if such exists. We consider properties of this
+minimal counterexample.
+     Let e(G) — e and let xu       , xr be r = p — e nonidentity elements
+                                                                e
+of G such that each irreducible character of G of degree p contains
+at least one of the x{ in its kernel. We of course have r > 0 and thus
+p > e. Clearly e > 0 by Proposition 4.6 of [2]. Hence r <^ p — 1.
+     We can assume that the x{ are central and have order p as
+472                    I. M. ISAACS AND D. S. PASSMAN
+
+follows. If x is one of the cc/s, then we can find elements yu                 , 2/fc
+such that h — (x, yu         , yk) is a nonidentity central element. If
+h ί ker χ for some character χ then clearly x g ker χ. Also we can
+take a suitable power of h to have order p.
+     We show now that all the x{ are contained in Φ(G), the Frattini
+subgroup of G. If not say xι g iV for some maximal subgroup JV of
+G. Since a^ is central of order p we have G = N x <#!> and clearly
+e(JV) = e(G) = e. Let ζ be an element of order p in 3(N). Then
+<ζ, #!> is central of type (p, p) and has p + 1 subgroups of order p. Since
+T <ί p — 1, we can find one such subgroup J with α^,                   , xr, ζ g J .
+Then G — N x J and 5^,            , » r are nonidentity elements of G/J = JV,
+a group with e(G/J) = e. Since G is a minimal counterexample, we
+can find a character φ of G/J of degree p e with xi £ ker 9?. Viewing
+φ as a character of G yields a contradiction.
+     Let JV be a maximal subgroup of G. Clearly e(N) ^ e — 1. If
+β(JV) = e, then since &lf       , α?r e JV there exists an irreducible character
+φ of AT of degree p e with αj4 ί ker φ for all ί. If X is a constituent of
+φ* then since degX ^ pe we have degX = pe and X\ N = φ. Thus
+&f g ker % for all i, a contradiction. Therefore e(JV) = e — 1.
+     If χ is a character of G of degree p e , then χ = <p* for some
+irreducible character φ of N since e(iV) = β — 1. Thus T(φ) = N and
+hence S(G) a N. Therefore S(G) a S(JV). We show that S(G) - &(N).
+If not, choose a;r+1 e (G, 3(-^)) with α?r+1 Φ 1. Since e(iV) = e — 1 and
+r + 1 = p — (β — 1), we can choose an irreducible character θ of JV
+of degree p 6 " 1 with c^gkertf for all i. Let χ be a constituent of θ*.
+If deg χ = p e , then x19       , xr $ ker % yields a contradiction. On the
+other hand, if degχ — pe~\ then χ\N = θ and so ,8(^0 is central in
+the representation associated with χ. Hence (G, ,8(N)) £ ker χf]N =
+ker # and this contradicts the fact that xr+1 g ker #. Thus .Sί^V) = 8(G).
+     We show now that Q(G) has two generators and is not cyclic.
+Let G have as a homomorphic image G = G/iί, a faithful irreducible
+linear group of degree pe. Suppose 3(G) Π K has a subgroup of type
+(p,p). Then we can find a central subgroup J of order p with XiίJ
+for all i and J Q K. Then e(G/J) = β and we clearly have a contra-
+diction. Thus 3(G?) n if is cyclic. Since 3(G) is cyclic we see that
+8(G) has two generators. Let ζ e &(G) - 3(G) with ζ p e 3(G). Then
+the map g —* (g, ζ) is a homomorphism of G into the elements of order
+                                                                       2
+p in 3(G). The kernel is <£(ζ) and by the above [G : <£(ζ)] ^ p . Hence
+[G: ©(ζ)] = p2 and (G, ζ) is abelian of type (p, p). Thus S(G) is not
+cyclic.
+
+      THEOREM 1.5.      If G has class at most 2, then G satisfies (*).
+
+      Proof. Let £f be the family of all ^-groups of class at most 2
+                 THE DEGREES OF GROUP CHARACTERS II                       473
+
+and let G be a minimal counterexample. Then all of the above applies.
+Let J be a central subgroup of G with x{ g J for all i. Let X be an
+irreducible character of G/J viewed as one of G and with            xxJ£kerX.
+Let K be the kernel of X. If U is the subgroup of 3(G) of type (p, p)
+then clearly J = KnU        and thus Kn 3(G) is cyclic. Let G = G/ϋΓ.
+We show that Q(G/K) = Q(G)/K. Let 5 be the complete inverse image
+of &(G) in G. Clearly 5 3 3(G). If B > 3(G), choose ζeB - 3(G)
+with ζ^eBΐG). Since ζe8(G) we have (G, ζ) ^Kf] U = J. Hence
+[G : C£(ζ)] = ί>, a contradiction. Since x{ $ ker X, it follows that deg X ^
+pe-1 and so [G : 3(G)] g p2e~2 by Lemma 2.3 of [2]. Hence [G : 3(G)] ^
+p2e~2 and G has r.x. (0 — 1), a contradiction. Thus the theorem is
+proved.
+
+       We now return to our discussion of the general minimal counter-
+example. Again let ζ e 32(G) - 3(G) with ζp e 3(G). Thus if X = S(ζ),
+then we have [G \ K] — p2 and in fact G/K = (G, ζ) is abelian of type
+(p, p). Let N be any subgroup of G with G > N > K. Since 3C*OS
+^(iV) and K is character regular we see by Proposition 1.3 (i) that
+e(K) < e(N). But e(K) ^ e(N) - 1 so β(iΓ) = e(N) - 1 = e - 2. In
+particular e ^ 2.
+       We show now that [&(K): 3(G)] - P so that 3(K(O) - <3(G), ζ>.
+Let <9 be an irreducible character of K of degree pe~2 (note that e(K) =
+β — 2) with #!,       , xr not in its kernel and let J S ker ^ where J is
+central in G of order p. Clearly J — (T, ζ) for some subgroup T with
+G > T > K.       Consider G = G/J. Since ^, ^ 1 in G we see that
+β(G) ^ e - 1. But e(£") = e - 2, where of course if = iΓ//. Also
+ζ e 3 ( f ) - 3(G). Hence β(G) > e(f) ^ e(JP). This yields e(G) = β - 1
+and e(f) = β(j^) = β - 2. By Proposition 1.3 (i) we have 3(ΪΓ) £
+3(10 £ 3 ( Γ ) and thus (Γ, 3(ίΓ)) = J . Now T - <JBΓ, α> and the map
+b —* (6, α) is a homomorphism of 3(K) onto / with kernel ®(α) n 3 ( ^ ) —
+3 ( Γ ) . Hence [Q(K): 3(T)] = P But 3(T) = 3(G) so [ 3 ( Z ) : 3(G)] =p.
+       lie = 2, then JSΓ is abelian and so Q(K) = K. Hence [G:3(G)] - p\
+a contradiction and hence e ^ 3. If we let S? be the set of p-groups
+with r.x.2, then the above yields:
+
+    PROPOSITION 1.6.     If G is a p-group with r. x. 2, then G has pro-
+perty (*).
+
+    We now discuss an application of the above. Let ^~ denote a
+family of character regular p-groups closed under taking subgroups
+and quotient groups.
+
+    PROPOSITION 1.7. Let G e ^   with e(G) = e. Let X be an irre-
+ducible character of G of degree pe and let Zχ denote the set of
+ 474                   I. M. ISAACS AND D. S. PASSMAN
+
+ elements of G central in the representation associated with X. Then
+ Zχ is abelian.
+
+     Proof. If Zχ is central the result is clear. So assume Zχ §
+and hence Zχ > 3(G). Choose ζ e Zχ - 3(G) with ζ e &(G) and ζ p e 3(G).
+Then (ζ, G) is central, elementary abelian and (ζ, G) £ ker X. Clearly
+(ζ, G) ^ <1>. If I (ζ, G) I ^ p 2 , choose J, and J 2 subgroups of (ζ, G) of order
+p with Jι[\Jι — <T>. Since J^ £ ker X, we have e(G/Ji) = e and hence
+by induction Z χ / /* is abelian. Thus Z'x £ Jλ Π / 2 = <1> and ^ χ is abelian.
+     Thus we can assume that (ζ,G) = p and hence if H =(£ (ζ), then
+[G: £Γ] = p . Since i ϊ is character regular and Q(H) g£ 3(G), Proposi-
+tion 1.3 (i) yields e(H) = e — 1. Thus X\H = Σ f ^ and X vanishes
+off £Γ. This latter fact implies that Zχ £ iJ. Now if φ — φγ, then
+deg <p = p"" 1 and e(H) — e — 1. Thus in iϊ, Z^ is abelian. Since clearly
+^ χ £ ί^, the result follows.
+
+    COROLLARY 1.8. Let G have class 2. Ifp>               e(G) = β, £/ιew G
+α normal abelian subgroup of index p2e.
+
+    Proof. Let ^ " b e the family of ^-groups of class ^ 2 with p > β(G).
+By Theorem 1.5 all members of j?~ are character regular. Let X be
+an irreducible character of G of degree p\ Then by the above Zx is
+a normal abelian subgroup of G. Since G has class 2, [G: Zχ] — p2e
+and the result follows.
+
+     2* 7Γ-Character groups. In this section we study groups whose
+irreducible characters have degrees which are powers of a fixed integer
+m. In fact we consider the more general class of groups defined below.
+Here π(n) denotes the set of prime factors of integer n.
+
+     DEFINITION 2.1. Let π be a set of primes. We say group G is a
+7Γ-character group if the following hold.
+     ( i ) The distinct degrees of the irreducible characters of G are
+d0, du ' , dk with k ^ 1.
+     (ii) For all i ^ 1, cZί—x | d< and π(di) = π.
+     (iii) If π = {p}, then @P(G) is abelian.
+
+    Condition (iii) above is included for convenience in order to avoid
+overlap with our previous study of r. x. e groups. If H is a homo-
+morphic image of G, then the degrees of the irreducible characters of
+H forms subset of those of G. Hence if G is a τr-character group,
+then either H is a π-eharaeter group or H is abelian. The main result
+here is as follows.
+                THE DEGREES OF GROUP CHARACTERS II                               475
+
+    THEOREM 2.2.     Let G be a π-character group. Suppose the distinct
+degrees of its irreducible characters are d0, du •• ,d ;k with di_1\di.
+Then G has the following       structure.
+      ( i ) G has a normal abelian ©ff, subgroup H Φ <T> with G/H =
+@π(G) abelian.
+      (ii) A — &(ίf) is a normal abelian subgroup of G of index dk.
+      (iii) There exists a subset {α0, α lf     , ar} of {0,1, , k} with
+0 — α0 < aγ <      < ar = k such that GjA is abelian of type (dajdao,
+djdaί, . . , djd^j    and (da.Jda.) \ (dajdai__) for all i.
+
+     COROLLARY 2.3. Suppose the degrees of the irreducible characters
+of G are all powers of a fixed integer m, with ms the largest such
+degree. Let π = π(m) and assume that | π | > 1. Then G has a normal
+abelian subgroup A with G/A abelian of order ms and type (ms°, m S l ,
+• • , m 5 r ) for suitable integers s{. Moreover &π(G) is abelian.
+
+      The corollary is of course an immediate consequence of the theorem.
+The proof of the latter will be in two parts. We first show that G
+satisfies (i). Then we study groups with that property and show that
+they satisfy the remaining conditions (ii) and (iii).
+     We start with a lemma. If λ is a linear character of G, then the
+order of λ, written o(λ), is its order as an element of the dual group
+G/G'. If X is any irreducible character of G we set o(X) equal to o(λ)
+where λ = det X, the determinant of the representation associated
+with X.
+
+    LEMMA    2.4. Let p be a prime and let U — QP(G) be the                  minimal
+normal   subgroup of G having a p-quotient group.  Then
+                       \U\ = Σ^o(*> X(l)2                      mod p.
+    Proof. By induction on \G\. Suppose first that G has no normal
+subgroup of index p. Then G = VLP(G) and GjGf is a p'-group. Hence
+for all λ e G/G' we have p)(o(X). Therefore the above congruence
+follows from the equation | G \ = Σ%(1)2
+     Now let G have a normal subgroup H of index p. Clearly VLP(G) —
+VLP(H) and thus by induction
+
+                        \u\ = Σ P , O < * ) W                  modi?
+where the sum runs over the irreducible characters θ of H.                  We show
+now that
+
+                 Σ>p*oix) Z ( l ) 2 Ξ   Σ P * O ( * ) #(1) 2      mod p .
+
+In both sums we can of course discard those χ and θ with p \ χ(l) and
+476                  I. M. ISAACS AND D. S. PASSMAN
+
+p I 0(1). Also if T(θ) = H, then 0 has p conjugates θu 02,            , θζ.
+Clearly 0^(1) = 0(1) and o(0J = o(β). Thus the contribution of these
+conjugates to the right hand sum is a multiple of p. Hence we need
+only consider those 0 with T(θ) — G.
+      Let SΊ = {X I X is an irreducible character of G, p | Z ( l ) , and
+p Jf o(X)} and <5^2 = {0 | 0 is an irreducible character of H,p\ 0(1),
+p \ o(0), and T(0) = G}. As we have shown above it suffices to prove
+that
+                                              mod p .
+     We will in fact show that the map χ —• χ | H is a one-to-one map
+of ^ Ί onto S^z and this will yield the result since X and X | i ϊ have
+the same degree.
+     Let X G S?x.    Since [G : £Γ] = p we have that either X \ H is
+irreducible or X | if is the sum of p conjugates. Since p \ χ(l), the
+latter cannot occur so X \ H — 0 is irreducible. Clearly 0(1) = Z(l),
+o{θ) I o(χ) and T(θ) = G and hence 0 € ^ 2 . Thus the restriction map
+sends £fx into </Ί.
+     Now let ^ e y 2 and let μ = det 0. Since Γ(0) = G we have
+T(μ) = G and thus K = ker μ is normal in G. If X is such that X | H = 0,
+then X is a constituent of 0*. Thus to show that the restriction map
+is one-to-one and onto we must find a unique constituent X of 0* with
+% e S^Ί and X\H — 0. Let r be a nonprincipal linear character of G/H
+and let X be an irreducible constituent of 0*. Since [G: H] = p and
+T(θ) = G we see that X\H = θ and that all the constituents of 0* are
+of the form X{ = τ^Z for i = 0,1,       , p — 1. Let λ = det X so that
+λ I H = μ. We have clearly
+
+                        det Xi = det τ*Z = τ ί κ ( 1 ) λ .
+Since χ(l) = 0(1) is prime to p we see that det X{ Φ det X5 for i Φ j and
+hence we obtain p distinct linear characters of G which extend μ.
+     Since T{μ) — G we see that fZ/if is central in GjK and since G/H
+is cyclic, G/if is abelian. Also H/K is a p'-group since p | o ( μ ) and
+hence G/K ~ (fί/iΓ) x (G/H). It follows easily from this that there
+are precisely p distinct linear characters of G which extend μ and that
+precisely one of these has order prime to p. Hence there is a unique
+% with o(χio) prime to p. Then p \ o(XiQ) and p \ Xio(l) since Xio(l) =
+0(1). Thus X,o e £fγ and XiQ\H = 0. This completes the proof.
+
+     The first two parts of the following theorem are due to John
+Thompson. They generalize our original result, proved under more
+restrictive assumptions.
+
+      THEOREM 2.5.   Let p be a prime and π a set of         primes.
+                  THE DEGREES OF GROUP CHARACTERS II                        477
+
+    ( i ) Suppose for every nonlinear irreducible character χ of G
+we have p | X(l). Then G has a normal p-complement.
+    (ii) If the degrees of the irreducible characters of G are linearly
+ordered by divisibility, then G has a Sylow tower.
+    (iii) Suppose for every nonlinear irreducible charactor X of G
+we have π(X(l)) = π. Then G has a normal abelian @ff, subgroup H.
+Moreover if \ π | > 1, then G/H is abelian.
+
+    Proof. ( i ) Let U be as in the preceeding lemma.            Since p | χ(l)
+if χ(l) Φ 1 we see by Lemma 2.4 that
+                                               2
+                         v\ = Σ P W J ) λ(i)
+
+where the sum runs over linear characters λ.         Clearly p \ o(λ) is equiv-
+alent to λ belonging to &P,(G/G'). Hence
+
+                                           I       moάp
+
+and so p\ \ U\. Thus U is a normal p-complement of G.
+    (ii) By induction on | G \. If G is abelian the result is clear so
+assume that G is nonabelian. Let d0 = l,d19       ,dk be the distinct
+degrees of the irreducible characters of G with d{ \ di+ί. Since k ;> 1,
+choose prime p with p\ d19 Then for all i ^ 1, p \ d{. By (i), G has a
+normal p-complement H. Let X be a character of G of degree d{
+and say
+
+                              X I H = a Σ ί θ< .
+
+If θ = #i, then αί deg # = deg % = d{. As is well known at | [G : i f ] and
+of course deg # 11 H\. Hence clearly at = | rff | p and deg # = | ^ | p / . Thus
+the degrees of the irreducible characters of H are \dQ\p,, \dx\pt\, •••,
+|ώfc|p/ and these are linearly ordered by divisibility. By induction H has
+a Sylow tower and thus the result follows here.
+       (iii) By (i), G has a normal p-complement for all peπ.             Hence
+G has a normal @ff, subgroup i ϊ with G/iJ nilpotent. Let θ be an
+irreducible character of H and let % be a constituent of θ*. Then
+deg θ I deg X and deg 5 | | H \ and so deg 0 = 1. Thus if is abelian. Now
+let 7Γ = {ply p2,    , p r } and suppose r > 1. Let G/iϊ = P1 x P2x         xPr
+where P 4 = &P.(G/H). If P 4 is nonabelian then G/ίί has a character
+Z with π(X(l)) = {pj ^ π, a contradiction. Hence for all i, P^ is abelian
+and thus G/H is abelian. This completes the proof.
+       Part (iii) of the above result yields (i) of Theorem 2.2. We now
+study groups satisfying this latter condition.
+
+    THEOREM 2.6.    Let π be a set of primes. Let G be a group with
+a normal    abelian &κ, subgroup H and with G/H =; @ff(G) abelian.
+478                   I. M. ISAACS AND D. S. PASSMAN
+
+Suppose the distinct degrees of the irreducible characters of G are
+d09 dιy     , dk with di_γ \ d{.  Then
+      ( i ) A = (£(iJ) is a normal abelian subgroup of G.
+      (ii) There exists a subset {α0, alf       , ar} of {0,1, •••,&} with
+0 == α0 < ax <        < ar = k such that G/A is abelian of type (daJdaQ,
+dajdaι,       , djd^)   so [G: A] = dk and (da.+Jda.) \ (dajda.^) for all i.
+
+     Let K be a normal subgroup of G, maximal subject to G/K being
+nonabelian. If G/K ~ E is solvable, then in the terminology of § 2
+of [2], E is extra-special. By Proposition 2.2 of [2], E is either a
+Case P or Case Q group. We will refer to these as Case P and Case
+Q quotients of G.
+     Let G satisfy the hypotheses of the above theorem. Set q{ =
+di/di_lm These degree quotients will come into play in some later
+results.
+
+      LEMMA 2.7. Let G satisfy the hypothesis of Theorem 2.6. Let
+KΛG so that G/K is an extra-special group. Then G/K is a Case Q
+quotient. Let Q/K be the normal Sylow q-subgroup of G/K with G/Q
+cyclic of order d. Then \ d \π = d and \ q \κ, = q. Also there exists a
+subset {b0, bu    , bs} of {0,1,    , k} with bo<bί<     < bs = k such
+that the distinct degrees of the irreducible characters of Q are dbjd,
+dbjd, ---,dbjd.
+      Suppose further    that qi\ d for all i > 1. Then d — dγ and the
+distinct degrees of the irreducible characters of Q are djdί9 d2/du    ,
+dk/dx. Moreover if θ is an irreducible character of Q, then θ* is either
+irreducible or it has all linear      constituents.
+
+     Proof. Let G/K be an extra-special quotient of G. If G/K is
+Case P, then G/K is a nonabelian p-group for some prime p. Since all
+Sylow subgroups of G are abelian, this cannot occur. Thus G/K is
+Case Q. By Ito's theorem we have d{ \ [G: H] for all i and hence
+1 d{ \π = di. Since d is the degree of an irreducible character of G we
+have \d\π — d. Moreover since G/K is nonabelian and &X(G) is abelian,
+we see that G/K is not a π-group. Hence \q\π> = q.
+     Let θ be an irreducible character of Q and let μ be a nonprincipal
+linear character of Q/K viewed as one of Q. Suppose θ — θμ. If L
+is the kernel of μ then Q > L =2 K and θ vanishes off L. Say θ \ L =
+a
+  Σ ί Φi Then [θ IL, θ \ L]L = aH. On the other hand since θ vanishes
+off L,[Θ\L,Θ\   L]L = [Q : L][θ, θ] = [Q : L].   Hence aH is a proper power
+of q. Since deg θ — at deg φγ we have q \ deg θ. If % is a constituent
+of θ*, then deg θ | deg X and so q \ deg X. This is a contradiction since
+I deg X \π — deg X and g g TΓ. Hence θ Φ θμ.
+     Now let λ, μ be two distinct characters of Q/K. We show that
+                   THE DEGREES OF GROUP CHARACTERS II                     479
+
+  T(ΘX) Π T(θμ) = Q.     If not we can find x e (T{ΘX) Γ) T(θμ)) - Q.   Then
+
+                  ΘX = {ΘX)X = ΘXXX           θμ = {θμ)x = 0 s μ*
+
+ and hence
+                               θ* = ΘXXX =
+
+ Now λλ* ^ μμx since cc acts fixed point free on Q/K and X Φ μ. Thus
+                       x     x
+ θ = θp where p = (μμ )(XX ) Φ 1 and this contradicts the above. Let
+ u be the number of minimal subgroups of G/Q. Then this says that
+ there are at most n characters X of QjK with T{ΘX) > Q. Clearly
+ u <ί d — 1 since each minimal subgroup is cyclic and has a nonidentity
+ generator. On the other hand G/Q acts fixed point free on Q/K so
+ there are at least d + 1 > u linear characters of Q/K. Hence there
+ exists λ with T(ΘX) = Q.
+     Since T(0λ) = Q, it follows easily that (ΘX)* is irreducible. Hence
+ for some i
+                  di - deg {ΘX)* = d deg (0\) - d deg 0 .
+ This implies that there exists a subset {b0, b19    , 6β} of {0,1,   , Λ}
+with 60 < &i <      < b8 ^ k such that the distinct degrees of the irre-
+ducible characters of Q are db0/d, dhjd,      , dbjd. We show now that
+bs = k. Let % be a character of G of degree dk and let θ be an irre-
+ducible constituent of X \ Q. Then certainly deg θ ^ dk/d. On the other
+hand by the above deg θ = dy/d for some j . Hence dό/d ^ d^/d so
+j = k and deg θ — dk/d. This completes the first half of the proof.
+      Now assume that qt \ d for all i > 1. Since q{ \ di and d > 1, it
+follows that d = dlβ Let Z be an irreducible character of G of degree
+di for i > 0 and let θ = 0X be an irreducible constituent of X | Q. We
+have Z | Q = a Σ ί ^ and thus if 6 = at then 6 ^ d and 6 deg 0 = deg X —
+d{. On the other hand we know that deg θ = djd for some i. Hence
+di/b = dy/d. Since d^b, it follows that dy ^ d£. If d^ > d4, then
+di+1\ dj and we have
+                       d = d x = b{dj/di) =     bqi+1{dά/di+ι)
+                                                                    1
+and gί+11 d, a contradiction for i > 0. Hence i = i and deg 6 = d^/d.
+ Moreover b — at ~ d and since α2ί g d, in general, we have a = 1,
+ί = d and X = 0*. Thus the distinct degrees of the irreducible characters
+of Q are djdly djd19     , dfc/dlβ
+     Finally let ^ be a character of Q and suppose that #* has a non-
+linear irreducible constituent X. Since 0 is a constituent of % | Q, the
+above yields X = θ* is irreducible. This completes the proof of the
+lemma.
+480                         I. M. ISAACS AND D. S. PASSMAN
+
+       Proof of Theorem 2.6. First A = &r(A)H, @π(A) is abelian and
+H is central in A. Hence A is abelian and (i) follows. Note that
+G is solvable. If G is abelian, then (ii) is obvious. So assume G
+is nonabelian.
+       Let K A G with G/K an extra-special group. By the preceeding
+lemma, G/K is a Case Q quotient. Using the notation of that lemma
+we have [G : Q] = di for some i. Moreover assume that K is so chosen
+that i is maximal with this occuring.
+       In G/K we have &Glκ{Q/K) = Q/K. This shows that A = &β(H) g Q
+and hence &G(H) — &Q(H) — A. Let x e G/A be such that it generates
+the cyclic quotient G/Q. We show that | ζx} | = di = djdo. Clearly
+di I I <V> |. If dt Φ I <V> I, then for some prime p e π we have | <V> \p >
+ I di \p. For this prime let J be the subgroup of <V> of order p. Now
+@π(A) centralizes H and some @ff(G) and hence @ff(A) is central in G.
+Thus by Lemma 1.2 we can write A = D x C where D — &A(J) and
+ D, C AG and J acts fixed point free on C. Clearly C Φ <1)>. Let λ
+be a nonprincipal linear character of C viewed as one of A. Then
+ (T(X)/A) n J = <1> and hence [G : Γ(λ)] p ^ |<a?>|p > | d< | p . Since C ^ 1
+ this implies that the distinct degrees of the irreducible characters of
+ G/D are 1, djy         with j > i. Hence G/D has a Case Q quotient with
+ [G : Q] = d$ > diy a contradiction. Thus |<x)>| = ώi# Setting aγ — i,
+ we have by induction applied to Q, that G/A is abelian of type (daJdaQ,
+ daβai,      , d j d ^ j w i t h α r - ft. A l s o ( d a . J d a . ) \ ( d a j / d a j j f o r j > l
+ by induction. To obtain (dajdai) \ (daJdaQ) we merely note that | <(x) \ = di
+ for all such choices of x. This implies that the period of Q/A divides
+ ^ = dajdao. This completes the proof.
+
+     The proof of Theorem 2.2 is now immediate. Part (i) follows from
+Theorem 2.5 (iii) and from the assumption that if π = {p}, then @P(G)
+is abelian. Then Theorem 2.6 yields parts (ii) and (iii).
+
+    In the remainder of this section we assume that G satisfies the
+hypothesis of Theorem 2.6 and we will use the notation of the conclu-
+sion of that theorem. We first note a few simple facts about the
+characters of G.
+
+        LEMMA     2.8.    Let X be an irreducible             character of G.           Then we
+ have
+                                           s
+    ( i ) X I H = Σ ί ^i> thut i ^here is no ramification.
+    (ii) There exists a subgroup L 3 A and a linear character λ of
+ L with X = λ*.
+    (iii) If X is faithful, then L = A and deg X = dk.
+
+        Proof.     L e t X\H = α Σ ί λ ^ and set L = TOw). Clearly L 2 (£(#) =
+                THE DEGREES OF GROUP CHARACTERS II                   481
+
+A. As is well known there exists a character θ of L with χ — θ* and
+Θ\H = αλx. Let ϋΓ be the kernel of θ. Then clearly H is central
+modulo if. Since @Γ(L) is abelian this shows that L/JK" is abelian and
+hence deg θ = 1. Thus α = 1 and (i) and (ii) are proved.
+    If X is faithful then since L /\G we have that L is abelian.
+Hence L S W ) = A. This yields deg X = [G:A] = dk and (iii) follows.
+    It is interesting to consider which subgroups L can occur in (ii) of
+the above lemma. Define a Galois connectivity between groups L with
+G Ξ2 L Ξ2 A and groups 5 with H 3 I? as follows.
+
+              L-^+(L,H)          B-^{geG\ (g, H) S 5}
+We say L is closed if Ldtt = L
+    PROPOSITION 2.9.  Using the above notation, group L has a linear
+character λ with λ* irreducible if and only if L is closed.
+     Proof. We note first that (L, if) = L\ This follows since L/(L, H)
+has a central ©^ subgroup and an abelian @.τ subgroup and hence is
+abelian.
+     Now let L have a linear character λ with λ* = X irreducible.
+Set M = Ld% so that M 2 L. Suppose that M > L. Clearly L 3 ker Z.
+Since G/A is abelian, L A G and hence L/ker Z is abelian. Thus ΊJ —
+(L,H) ^ ker X. Since degX = [G:L] and M > L it follows that
+M' = (M, H) g ker X. Thus Afd = (M, H) Φ (L, ί ί ) - ZΛ a contradic-
+tion. Hence M = L and L is closed.
+     Now assume L is closed. We consider G = G/(L, H) in which
+L — L/(L, H) is abelian. Since L is closed we see that G/L acts faith-
+fully o n S = &π>(L). Thus G/L acts faithfully on 15, the dual group of
+5 . Since these groups are abelian and have relatively prime orders,
+it follows by a trivial modification of Lemma 2.2 of [5] that there exists
+λ e S with Sjs/i(λ) = <1>. View λ as a character of L and then as
+one of L. We see that T(\) = L and hence that λ* is irreducible.
+The result follows.
+    If G/A is cyclic we can obtain additional information.
+
+     THEOREM 2.10. Suppose G/A is cyclic. Let Li he the unique sub-
+group of G with [G: LJ = d{ and Li Ξ2 A. Then we can write A =
+BQ x BL x       x Bk where each Bt is characteristic in G, Li centralizes
+Bi and G/L{ acts fixed point free on B{. Here B{ Φ <(Γ> for i Φ 0.
+Conversely a group with this structure has characters of degrees
+dOJ dιy - , dk only.
+
+    Proof. Note that A = &(H) and each Li is characteristic in G.
+ 482                   I. M. ISAACS AND D. S. PASSMAN
+
+ Note also that @*(A) is central in G.       We have
+
+                                         a      s <M£*)
+ and each of these groups is characteristic in G. By Lemma 1.2 we
+ can write for i = 1, 2, ,k
+
+
+ where each I?; is characteristic in G.      Setting Bo = K^(L0) = 3(G) we
+ have
+                          A = Bo x jBi x       x 2?Λ
+ where each I?; is characteristic in G and is centralized by L{.
+      Let i ;> 1 and let λ be a nonprincipal linear character of Bi viewed
+ as one of A. Since L{ centralizes B{ we have T(λ) 3 ^ . If T(λ) > Li9
+ then by Lemma 2.8 (i) we have T(k) ΞΞ2 L ^ . This implies that L^
+ centralizes an element of BI which is not the case by definition of Bi%
+ Hence T(λ) = L{ and G/Li acts fixed point free on B{ and hence on Bi%
+     We show now that Bi Φ ζiy for i Φ 0. Let X be an irreducible
+ character of G of degree d{ and let λ be an constituent of X\A.
+ Since there is no ramification, [G : T(X)] — d{ and hence Γ(λ) = L^
+Write λ = λoλi      Xk where λy is a character of Bά viewed as one of
+A. As we showed above, Lέ fixes no nonprincipal character of Bό for
+j > i. Hence λ = X ^       λ<. If λ< = 1, then clearly T(λ) 3 L, _! which
+is not the case. Hence λ* ^ 1 and Bi Φl. The completes the forward
+half of the proof.
+     Conversely let G have the structure described above. Since A is
+abelian and G/A is cyclic we know that there is no ramification. Let
+X be an irreducible character of G with λ = λoλ!         Xk a constituent
+of X I A. Then deg X = [G : Γ(λ)]. If λ = 1, then deg X = 1 = d0. If
+λ ^ l choose j maximal with λ, Φ 1. Clearly Γ(λ) = Lό and deg X = dά.
+This completes the proof.
+
+       We now seek sufficient conditions to guarantee that G/A is cyclic.
+
+       THEOREM 2.11.   Each of the following will guarantee that G/A
+is cyclic.
+    (i)     dk)(dkj
+    (ii) For all i <j,     q^qi.
+    (iii) For all i, qi+ί > qim
+    (iv) There exists a prime peπ such that \ qi+1 \p > | g^ \p for all i.
+
+     Proof. We consider (i) first. This is a simple corollary of Theorem
+2.6. If G/A is not cyclic, then there exists 6 < a < k with (dk/da) \ (djdb).
+                 THE DEGREES OF GROUP CHARACTERS II                  483
+
+ Thus dk I d\ and since da \ dk_x this yields dk \ d\_u a contradiction.
+      Now assume G satisfies condition (ii). We prove the result by
+induction on \G\. If k = 1, the result follows by (i) above so we
+assume k > 1. Let % be a character of G of degree dγ. By Lemma
+2.8 (iii), G/kerX has characters of degrees 1 and d1 only. Choose
+K ΛG, K 3 kerZ with G/K a Case Q quotient. Using the notation
+of Lemma 2.7, it is clear that [G: Q] — dγ = qlm Since qj\dι for all
+j > 1, it follows by Lemma 2.7 that the distinct degrees of the
+characters of Q are djd19 d2/du    , djd^ Hence Q has degree quotients
+#2> ^3,    , Qk and we can apply induction to Q. Thus Q/A is cyclic.
+     Theorem 2.10 applies to Q and thus A contains a characteristic
+subgroup B on which Q/A acts fixed point free. Then B /\G and also
+B Φ <Ί>. Let λ be a nonprincipal linear character of B viewed as one
+of A. Then λ (induction to Q) is an irreducible nonlinear character
+of Q since k > 1. By Lemma 2.7, λ* = λ* is irreducible. This shows
+that G/A acts fixed point free on B and hence G/A is cyclic.
+     Parts (iii) and (iv) follow immediately from (ii).
+
+     3* Groups with a* c* m. In this section we study nonabelian
+groups G having the property that every nonlinear irreducible character
+has degree m for some fixed integer m. We say these groups have
+a.c. m (all characters m). As an immediate consequence of Theorems
+2.2 and 2.10 we have the following.
+
+     THEOREM 3.1. Let G have a.c. m with π = π(m). Suppose that
+either \ π \ > 1 or π = {p} and an @p subgroup of G is abelian. Then
+G has the following structure.
+     ( i ) G has a normal abelian ©*, subgroup H Φ <Γ> with G/H ~
+©*((?) abelian.
+     (ii) A — &(H) is a normal abelian subgroup of G with G/A
+cyclic of order m.
+     (iii) A = 3(G) x B where B A G, B Φ <1> and G/A acts fixed
+point free on B.
+     Conversely any group G having this structure has a. c. m.
+
+     Therefore we need only consider the case in which m — pe for
+some prime p with @P(G) nonabelian. Actually the e — 1 case has
+already been studied in [2]. However there is little additional work
+involved in handling it so we will consider it again here. As we will
+see, the structure of those groups with e > 1 is much more restrictive
+than the structure with e = 1. We start with several lemmas.
+                                               e
+    LEMMA 3.2.  Let G have a.c. m with m —p and @P(G) nonabelian,
+Then we have the following.
+484                 I. M. ISAACS AND D. S. PASSMAN
+
+    ( i ) G has a normal abelian &p, subgroup H.
+    (ii) G has a Case P quotient E.
+    (iii) // E is any Case P quotient of G, then E is a p-group with
+E/Q(E) elementary abelian of order m2. Also any abelian subgroup
+B of E satisfies [E\E\^ m.
+
+      Proof Since G has r.x. e, Proposition 3.4 of [2] yields (i). Now
+G/H ~ @P(G) is nonabelian. Thus we can choose K Δ G , K 3 H and
+maximal with G/K nonabelian. Clearly G/K is a Case P quotient and
+(ii) follows. Now let E be any Case P quotient of G. Then E has
+                                                                        2
+a.c. m and hence E is a p-group and E/$(E) is abelian of order m
+by Proposition 2.2 of [2]. Since E has an irreducible character of
+degree m, it follows that E has no abelian subgroup of index less than m.
+We need only show that E/Q(E) is elementary abelian. Given x,yeE.
+                           r                          p           p
+Since E has class 2 and E has period p we have (x ,y) = (x,y) = 1.
+Thus a* e 3(J5) and E/3(E) has period p.
+
+      LEMMA 3.3. Let G have a.c. m. Tλβn we Λαi e ίΛβ following.
+      ( i ) Lei & be a permutation representation ofG with deg & <. m.
+Tλera G' S k e r ^ .
+      (ii) // IG' I ^ m, ίΛβn, G' s S(G).
+      (iii) Let L be a subgroup of G with [G: L] ^ m. T&ew Gf ξίL
+and hence LAG.         Moreover if [G : K] = m απώ K < L SG, then
+(JBΓ, L) = L' = G'.
+
+     Proof. Let ^ be the character corresponding to ^ . Then deg θ <*m.
+We have 0 = Σ α<^< where each Z^ is an irreducible character of G.
+Now if Zx = 1, then ax ^ 1 and hence for all i, deg Z^ < m. Since G
+has a.c. m, degZ; = 1 and G' £ kerZ^ and hence G' £ ker ^ . This
+yields (i).
+     Suppose I G'| ^ m. Let xeG.        Clearly | Clx | S I G'| ^ m, where
+Clx denotes the class of x. Now G permutes the elements of Clx
+by conjugation and this representation has degree ^ m. Hence by (i)
+G' is in the kernel of the representation and thus G' centralizes x.
+Since x was arbitrary, G' £ ,8(G) and (ii) follows.
+     Now let L £ G with [G: L] ^ m. We see that G permutes the
+right cosets of L by right multiplication and this representation has
+degree ^ m. Thus by (i), G' is in the kernel and hence G' £ L. Now
+let [G: K] = m and L > K. Since both if and L are normal in G so
+is H = (if, L). Ii H < G', then G/iί is nonabelian and thus has a.c. m.
+Since if' £ if, K/H is abelian and is centralized by a properly larger
+subgroup. Thus G/H has an abelian subgroup of index <[G : K] — m.
+This contradicts the existence of an irreducible character of G/H of
+degree m. Hence H = G\ Since G' 2 1/ ΞJ (if, L), the result follows.
+                THE DEGREES OF GROUP CHARACTERS II                   485
+
+                                                   e
+    LEMMA 3.4. Let G have a.c.m where m = p and @P(G) is non-
+abelian. Let A^H= @P/(G) be a normal self-centralizing subgroup
+of G. If G has a faithful irreducible character X then GjA is ele-
+mentary abelian of order m.
+
+    Proof. Since 4 3ff, G/A is a p-group and hence there exists
+subgroup L and linear character λ of L with G 3 L 2 A and X = λ*.
+Since deg X = m, [G : L] — m and hence by Lemma 3.3 (iii), L A G .
+Thus X I L has only linear constituents. Since X is faithful L is abelian
+and since A is self-centralizing L = A. Thus G/A has order m.
+    By Lemma 3.2(ii), G has a Case P quotient E = G/JBL. Let Z/JSΓ =
+£(#). Then (AZ)/K is an abelian subgroup of E so [G : AZ] ^ m by
+Lemma 3.2 (iii). Since [G : A] = m, we have A 2 Z and hence G/A is
+elementary abelian.
+
+    We now reduce the study of these groups to a study of p-groups.
+
+    THEOREM    3.5. Let G have a.c. pe with P = @P(G) nonabelian.
+Let H be the normal abelian &p, subgroup.
+    ( i ) If e > 1, then H is central and hence G = H x P.
+    (ii) 7/ β = 1, then either H is central or G has a normal abelian
+subgroup of index p.
+
+     Proof. We start with the case e > 1. Suppose first that G has
+a faithful irreducible character. By the preceeding lemma, G has
+a normal abelian subgroup A with G/A elementary abelian of order p\
+Then A = B x H where B = Θ^A) A G. We consider G/B and show
+it is abelian. If not, then G/B has a.c. p\ Now &P(G/B) ~ G/A is
+abelian and thus Theorem 3.1 applies. Hence since A/B = &P,(G/B) we
+see that (G/B)/&(A/B) is cyclic of order pe. This implies that K(A/ΰ) =
+A/B and therefore that G/A is cyclic of order pe. Since G/A is ele-
+mentary abelian this is a contradiction for e > 1. Thus G/5 is abelian.
+Since if A G this yields ( G , f f ) S ΰ Π f f = <1> and i ί is central.
+     Now let G be arbitrary with e > 1. We show that £Γ is central.
+If not choose xeP', y e (G, i ϊ ) with a?, 2/ 9^ 1. By Proposition 4.6 of
+[2] there exists an irreducible character X of G with &, 7/ g ker Z. Hence
+G/ker % has a. c. pe, a nonabelian Sylow ^-subgroup and a noncentral
+@p/ subgroup. Since G/ker % has a faithful character this contradicts
+the above and (i) is proved.
+     Now let β = 1 and suppose that H is not central. Since p > 1 = e,
+G is imprimitive by Theorem 1.1. Thus there exists A A G with [G:A\ —
+p such that e(A) = e(G) — 1 = 0. Hence A is abelian and (ii) follows.
+
+    It is easy to construct examples to show that H need not be central
+486                    I. M. ISAACS AND D. S. PASSMAN
+
+in G if e — 1. For example, let Q be an abelian g-group (q Φ p) which
+has an automorphism of order p. Let G = Q xσ P where P has order
+ 3
+p and P acts on Q in such a way that Po a subgroup of index p
+centralizes Q and P/Po corresponds to the automorphism of order p.
+Since A — QPQ is an abelian subgroup of G of index p, G has a.c. p.
+Finally Q = ®P,(G) is not central and P = @P(G) can be chosen to be
+nonabelian.
+     In the remainder of this section and in the next two sections we
+will consider only ^-groups.
+
+      LEMMA 3.6.   Let G have a. c. m. Then we have the following.
+    (i ) Φ(G), the Frattini subgroup of G, is abelian.
+    (ii) If G has two distinct abelian subgroups A and B of index
+                                                         f
+m, then \ G' | ^ m and hence G has class 2. Moreover if\G \ — m, then
+S(G) = Af]B and [G: 3(G)] = m\
+    (iii) If G' is not central, then (ϊ(G') is abelian.
+                                                                    p
+     Proof. We consider (ii) first. Choose xeB — A w i t h x e A and
+                                   e ι           e
+set L = <A, x}.    Then [G : L] — p ~ where m = p . T h u s by Lemma
+3.3 (iii), U = G'.  Clearly U = (A, x) and \G'\ = \L'\ = [A: ( £ ^ ) ] .
+Since &Λ(x) 3 i n 5 and [A:Af)B]^m,             we have \G'\^m.          By
+Lemma 3.3(ii), G has class 2. If | G'\ = m, then [A : A Π B] — m and
+so [AJB : J5] = m. Thus G = A5 and since A and J5 are abelian
+3(G) 3 A Π B. On the other hand A and I? must be maximal abelian
+subgroups so A, B 3 3(G). Thus 3(G) = i Π 5 and (ii) follows.
+     If Φ(G) is not abelian, then there exists an irreducible character
+1 of G with Φ' S ker Z. Hence Φ(G/ker X) is nonabelian. Now G = G/ker %
+has a normal abelian subgroup A with G/A elementary abelian by
+Lemma 3.4. Hence Φ(G) g A, a contradiction and (i) follows.
+     Now assume G' is not central. If K(G') is not abelian we can
+choose x,ye (£(G') with (x, y) Φ 1. Choose z e (G, G') with z Φ 1. Then
+there exists an irreducible character X of G with (α?, y), z & ker X. There-
+fore it suffices to assume that G has a faithful irreducible character.
+Since G' is abelian, we can extend normal abelian subgroups <(x, G')>
+and ζy, G')> to normal self-centralizing subgroups A and B. By Lemma
+3.4, [G: A] = [G:B] = m. Since xeA,yeB         and (a?, #) ^ 1, we see that
+A Φ B. By (ii) above G has class 2, a contradiction. This completes
+the proof of the lemma.
+
+    THEOREM 3.7. Let G be a p-group with a.c.m. Then either G
+has a normal abelian subgroup A with G/A elementary abelian of order
+m or G has class at most 3.
+
+      Proof.   By induction on | G | .   If   Q(G)   is cyclic, then G has   a
+                THE DEGREES OF GROUP CHARACTERS II                   487
+
+faithful irreducible character and the result follows by Lemma 3.4.
+Hence we can assume that $(G) is not cyclic and thus 3(G) has at least
+three distinct subgroups J x , J2, Js of order p. We can clearly assume
+that G has class > 3. Since the subgroups J{ are disjoint it follows
+that at most one quotient G/J{ has class ^ 3. Hence say G/Jx and
+G/J2 have class > 3. By induction, for i = 1, 2, G/Jt has a normal
+abelian subgroup AJJi with G/A< elementary abelian of order m. Set
+U = JJ2 so that U £ 3(G). If Aι Φ A2, then AJU and A2/?7 are two
+distinct abelian subgroups of G/U of index m. By Lemma 3.6 (ii), G/U
+has class ^ 2 and thus G has class ^ 3, a contradiction. Therefore
+A1= A2 — A. Since A</J< is abelian, A' £ J x Π J? = <1> and A is abelian.
+This completes the proof.
+
+    Let TG denote the ith term of the lower central series of G. Thus
+7°G = G, Ύi+1G = (YG, G) and the class of G is the minimal c with
+ C
+7G =
+
+    LEMMA   3.8. ( i ) Let G be an arbitrary p-group having a normal
+abelian subgroup A with G/A abelian of order m. Suppose for all
+                                                        r    f
+subgroups H with G Ξ> H > A and [H: A] = p we have H — G Φ <(Γ>.
+Then G has a.c.m.
+    (ii) Let G have a. c. m. and a normal abelian subgroup A with
+G/A abelian of order m. If Gf is not central, then K = G' xσ (G/A)
+has a.c.m. Moreover let x e G/A have order p. Then for all i > 0,
+         (1
+YG = A -<
+
+     Proof. We consider (i). Let X be an irreducible character of G.
+Since [G : A] = m we have deg 1 ^ m. We assume deg X < m. Since
+A is normal and abelian, X is induced from a linear character of some
+subgroup L 3 A. Clearly L> A and we can choose H with L 3 H> A
+and [H: A] = p. Since G/A is abelian, L A G. Thus ker X 3 L' 3 ί Γ
+and since # ' = G\ ker % 3 G\ Thus deg X = 1. Since | G'| ^ 1, G has
+a.c.m.
+     Now let G have a.c.m and a normal abelian subgroup A of index
+m. Set K — Gr xσ (G/A). Then if has a normal abelian subgroup G'
+with iί/G' = G/A abelian of order m. Let x have order p in G/A and
+set H — (A, yy where y is an inverse image of x in G. Then H Δ G
+and (α, G') = (iί, G') Δ G. Now G = G/(», G') is nonabelian since
+(», G') < G' and thus _G has a.c.m. Clearly (S(G') 3 fl/(«, <?') so
+[G : (£(G')] < m. Now G cannot have an abelian subgroup of index < m
+and hence by Lemma 3.6 (iii), G' £ £(G). Therefore (a?, Gr) = (G, G') =
+(G/A, G'). Thus we see that K satisfies the hypothesis of (i) above,
+since (G, Gf) Φ <1> by assumption. Thus K has a.c.m.
+     Let K be as above. We know that for i > 1
+488                 I. M. ISAACS AND D. S. PASSMAN
+
+                       = (A,G/A,G/A, . . .
+and                 YK = (G', G/A, G/A,    , G/A)
+where G/A occurs i times in each of the above. This follows using
+Lemma 3.3 (iii) for i = 1. Since Gf — {A, G/A) we have for i ^ 2,
+YG = Y^K.
+      Let x € G/A have order p . We show that for i ;> 1, 7*G = A(1~x)*
+by induction on i. If i — 1, the result follows from Lemma 3.3 (iii).
+                              X
+Let ί ^ 2 so that 7*G = Y~ K. By induction, since i — 1 ^ 1, we have
+T*- 1 ^ - (G'y1-**""1. Since G' - A{1~x) the result follows.
+
+      EXAMPLE 3.9. Let D be an additive elementary abelian group of
+order m — pe and let Au A2,      , Ap be p distinct groups isomorphic to
+D. Say (Xi: D—> A{ is an isomorphism.
+     Let F be a field of endomorphisms of D with | F | — m. In fact
+i*7 corresponds to the regular representation of GF(pe) on its additive
+group. For σ e F define σi: A* —> A i + 1 by o ^α^) = αi+^α^^αί) for i =
+1,2,      , p — 1 and σp: Ap —* <0>. Let A = AL + A2 +          + Ap and
+define σ on A by α = α1! + σ2 +        + σp. Clearly σp = 0.
+     Let σ, τ e F. We show that στ = τσ. Let a^A^         If i = p — 1 or
+p then ^ ( α ^ ) = 0 — τ(7(αέ). Now let i < p — 1. Then
+
+
+Since στ = τσ we have clearly στ = τσ.
+     Now for σ G F set xσ = 1 + σ. Since σp = 0 and A is elementary
+                   p
+abelian we have x σ — 1. Also for σ,τeF     we have xσxτ — xτxσ.
+     Let σly σ2,  , σe be a basis of F over GF(p) and set &< = ^ σ ί for
+convenience. Let B be the elementary abelian group of automorphisms
+of A generated by the xi9 Clearly | B \ <: pe. Set S = {#*}. Since
+                        it follows that when restricted to
+            At - (A, + A, +1 +    • + Ap)/(Aί+2 +           + Ap)
+S is a group of order pe. Here i = 1,         , p — 1 and if i = ί> — 1
+then the denominator of the quotient is the group <Ό)>. Clearly B and
+S restricted to this quotient are isomorphic and hence \B\ — p\
+    Now let xeB with x Φ 1. Then there exists σ eF, σ Φ 0 such
+that x and $σ act the same way on A< above for all i. Since σ is an
+onto map we see that
+           [(1 - x)(At + Ai+1 +     + Ap)](Ai+2     +       + Ap)
+                 = (Ai+1 +      + Ap)
+for i = 1, 2,   , p — 1. This clearly yields
+
+                  (1 - x)A = (A2 + A3 +           + A,) .
+                THE DEGREES OF GROUP CHARACTERS II                       489
+
+Thus by Lemma 3.8(i), G = A xpB         has a.c.m.    Moreover as is easily
+seen, G has class p.
+
+    The following result exhibits another difference between the e = 1
+and e > 1 cases.
+
+    THEOREM  3.10. Let G have a.c.p 6 with e > 1.           Then G has class
+at most p and Gf is elementary abelian.
+
+     Proof. By induction on | G | . If 3(G) is not cyclic choose Ju J2
+subgroups of g(G) with JLf]J2 = <T>. By induction G/Ji has class ^ p
+so ΎPG S «7i (Ί / 2 = <1>. Also (£//;)' has period p so clearly G' is ele-
+mentary abelian.
+     Now assume 3(G) is cyclic. By Lemma 3.4, G has a normal
+abelian subgroup A with G/A elementary abelian of order pe. Let
+if = G/A so that /(if), the group ring of H over the rational integers
+/, acts on A. If S is a subset of if we let S denote the sum of the
+elements of S in I(H). Let if be a nonidentity subgroup of H.
+Choose xeK with x Φ 1. By Lemma 3.8 (ii), G' = A{1~x\          Hence
+
+
+
+since (1 - x)K = 0 in I(iί). Thus J? annihilates G'.
+     Since e ^ 2 we can choose if to be a subgroup of if of order p2.
+Let iΓ0, JBLΊ, , Kp be the subgroups of K of order p. Note that K is
+elementary abelian. Now in I(H)
+
+
+
+and hence p annihilates G'. Thus G' has period p.
+     Now let J be a subgroup of H of order p with J = <(#>. Then
+as is well known
+
+           J = 1 + x + . . . + x*-1 = (1 - .τ)*-1 mod p l ( i ϊ ) .
+
+By Lemma 3.8 (ii),
+
+
+
+Since Gf has period ^ we can take (1 — x)v~ι modulo pI(H) in the above.
+Therefore 7PG = (G'Y = <1> and G has class <Ξ ^?. This completes the
+proof.
+
+    EXAMPLE 3.11. If e = 1, the above result is false.    For example,
+let A = <(αt^> x <(α:2> x   x <(^p> where each a{ has order p α . Let
+J = ζxy be cyclic of order p and let / act on A by a* = ai+1 for
+i = 1, 2,    , p — 1 and aξ = α l β If G = A x σ /, then G has a.c.p.
+490                   I. M. ISAACS AND D. S. PASSMAN
+
+                                                                    f
+     Now a2a^ e G' and hence if a > 1 we see that G is not elementary
+abelian. Moreover as we see below G has class a(p — 1) + 1. First
+in I(J)
+                                  ι
+                     (1 - xY~ - J = 0                  mod pl(j)
+and hence
+                          p   ι        a                    a
+                   [(1 - x) ~ - J] = 0                 mod p I(J) .
+                                                   2
+Since (1 — x) J = J(l — x) — 0 and (J) — p / , the above yields
+                 (1 - xyi'-v = {-p)a-ιJ                 mod paI(J) .
+Now A has period pa and hence (1 — x)aip~1] and (—pY^J act the same
+way on A. Since J(l — x) — 0 we see from the nature of the action
+of x on A that
+
+and                  rγatp-v+iQ =     il
+                                           (-p) -i7(i-.)
+
+
+Hence G has class a(p — 1) + 1 and this can be arbitrarily large.
+
+     4* Special class 3 groups* Let G be a p-group with a.c.p*.
+We say that G is special if it does not have a normal abelian subgroup
+of index p\ By Theorem 3.7 if G is special, then G has class 2 or 3.
+As is expected the structure of the special class 3 groups is quite
+restrictive. We study these latter groups in this section.
+
+     THEOREM 4.1. Let G be a special class 3 group with a.cm. Then
+we have the following.
+     ( i ) [G': 72G] - m and 72G = G' Π 3(G).
+     (ii) [G : ®(G')] = m2 emd K(G') is α normal self-centralizing sub-
+group.
+     (iii) [G;3(G)] = m\
+     (iv) If H — G/$(G), then Hr — 2(H) is elementary abelian of
+order m and H has two normal abelian subgroups of index m whose
+intersection is equal to Hr.
+
+      We start with a lemma.
+
+      LEMMA 4.2.  Let G have a.c.m and class 3.
+    (i ) // 72G is cyclic or if [Gr: 72G] > m, then G has an abelian
+subgroup A of index m.
+                                                3
+    (ii) [G': G' Π S(G)] ^ m αwd [G : 3(G)] ^ m .
+                                                                2
+      Proof. By induction on | G | . Suppose that 7 G is cyclic.        Then
+                 THE DEGREES OF GROUP CHARACTERS II                    491
+
+there exists an irreducible character X of G with 72G (Ί ker X = <(Γ>.
+By Lemma 3.4, G/kerX has an abelian subgroup A/kerl of index m
+with A 3 G'. Then (A, G') £ 72G n kerZ - <1> s o A g £(G'). Since
+G has class larger than 2, (S(G') is abelian by Lemma 3.6 (iii) and hence
+A is abelian.
+      Now suppose [Gf: 72G] > m. If 72G is cyclic, then the result
+follows by the above. Thus we can assume that 72G contains distinct
+subgroups Ji and J2 of order p. Since 72G £ B(G), Jx and J2 are
+normal in G. By induction G/Ji has an abelian subgroup AJJi of index
+m. Set U = J 1 J 2 g 7 2 G . If Λ ^ A2, then At/C7 and A2/U are two
+distinct abelian subgroups of G/U of index m. Hence | (G/U)f | ^ m by
+Lemma 3.6 (ii). Since UQΎ2G this yields [G': 72G] ^ m, a contradiction.
+Thus Aί = A2 — A and hence A' § J x n Jz — <1>. Therefore A is abelian
+and (i) follows.
+     We consider (ii). The result is obvious if m — p and hence we
+assume m = pe with e > 1. By Theorem 3.10 Gf is elementary abelian.
+If Gf Π 8(G) is not cyclic, there exists subgroup J of G' Π 3(G) with
+J g 72G. Hence G = G/J has class 3. By induction [G': G' Π S(G)] ^ m.
+Now G' = Gf\J and G' n 3(G) 2 (G' Π 3(G))/J. Thus the result follows
+in this case. Now let G' Π 3(G) be cyclic. Since G' is elementary
+abelian | G' Π 3(^) I = P Now G has class > 2 and thus by Lemma
+3.3 (ii), I G'| ^ jpm. Hence [G': Gr Π 3(G)] ^ m.
+     Let W/y2G be the center of G/72G. Since G/72G has a . c m we see
+that [G:W]^        m 2 . Clearly 3(G) £ W and Gr E W. Hence
+
+       [TΓ: 3(G)] ^ [W n G': 3(G) Π G'] - [G': &(G) n G'] ^ m .
+Therefore [G : 3(G)] - [G : T7][ W: 3(G)] ^ m 3 and the lemma is proved.
+
+     Proof of Theorem 4.1. We assume throughout that G is a special
+                                     2                           2
+class 3 group with a.c.m. Since 7 G g G ' n 3(G) we have [G': 7 G] ^ m
+                                                   f  2
+by Lemma 4.2 (ii). Moreover since G is special [G : 7 G] ^ m by Lemma
+4.2 (i). Hence [G': 72G] = m and (i) follows.
+                                                          2        2
+     Let Ku K2,     , iΓs be all the proper subgroups of 7 G with 7 G/iT^
+cyclic. Clearly Π ^ = <1>. By the preceeding lemma, G/i^ has a
+normal abelian group ^/iΓ^ of index m. By Lemma 3.3 (iii) B{ 2 G'. Since
+G/ϋΓί has class 3, Lemma 3.6 (iii) yields BJK, = ^G'/K,).    Thus for all
+                                                                 r
+i, 5, 3 A = &(G'). SetB=Π       B, so that B ^ A.     Since (B, G ) E ϋΓ*
+we have (β, G') g f l i - <1>. Thus B = A.
+     Choose LAG    with G/L a Case P quotient. Let Z/L be the center
+of G/L so that [G: Z] = m\ Clearly L 2 72G. Since ΰ,Z/L is an
+abelian subgroup of G/L of index ^ m we must have J5^ =2 Z by Lemma
+3.2 (iii). Thus B 2 £ and [G : A] rg m 2 . Now if J5 = J?lf then clearly
+B is an abelian subgroup of G of index m and this does not occur.
+492                 I. M. ISAACS AND D. S. PASSMAN
+
+                               2
+Thus say B1 Φ B2. Then G/7 G has two distinct abelian subgroups
+BJy2G and B2/72G of index ra. Since | G'/72G | = m we see that
+                    2                                        2
+[G : Bx n B2] = m by Lemma 3.6 (ii). Hence [G : A] = m . This proves
+(ii) and the part of (iv) concerning the existence of two abelian sub-
+groups of H of index m.
+                                                   2       r
+       We prove (iii) by induction on | G |. Say 17 G | = p . By the pre-
+                    2
+ceeding lemma τ G is not cyclic and hence r ^ 2. Let J be a subgroup
+       2
+of 7 G of order p. Suppose that G/J has an abelian subgroup B/J of
+index m. Then B is nonabelian so B' = J and 5 has class 2. Clearly
+B 2 K(G') and K(G') is a maximal normal abelian subgroup of B. Since
+                                                                      2
+[B: <£(G')j = m, it follows that B has a.c.m and [B: S(B)] = m by
+Lemma 2.3 of [2]. Let α e B with x Φ 1. Then there exists an
+irreducible character X of B with α?, # g ker X where J = <j/>. Hence
+X is nonlinear and deg X = m. This says that B is character regular.
+Since e(B) = e(G) = e where m = p% it follows by Proposition 1.3 (i)
+that 3(B) S 3(G). Since clearly £(G) S <E(G') S B we have 3(G) =
+                                                3
+3(B) and thus [G : 3(G)] - [G: B][JB: 3(G)] = m . Thus the result follows
+                                             2
+in this case. Note that if r = 2 the J (G/J) is cyclic so the result
+follows here.
+       We assume that r ^ 3 and that for all subgroups J of 72G of
+order p the quotient G/J is a special class 3 group. Since 72G is not
+cyclic, let Jx and J2 be two such subgroups of order p and set U = J ^ .
+Thus I £71 = p2<pr = I τ2G I and U < 72G. By induction G/Ji has center
+Zi/Ji of index m3 If Z1 Φ Z2 then we see that {ZγZ2)\Ό is central in
+G/U and has index < m3. Since 17 < 72G, G/Z7 has class 3 and a.c.m
+and this violates Lemma 4.2 (ii). Thus Zx = Z2 = Z. Since (Ziy G) S J<
+it follows that (Z, G)S-JiΓiJ2 = <X> and hence Z = 3(G). This yields
+(iii).
+       Finally we know that | H\ = m\ [H:&(H)] ^ m2, 3(£Γ) 3 i ϊ ' and
+I i f Ί ^ m. The latter follows since [G': G' Π S(G)] ^ m. Hence we
+must have equality throughout. Now H has a.c.m with m = p e . If
+e > 1, then H' is elementary abelian by Theorem 3.10. If e — 1,
+then I H'\ = p and the result is clear here. Thus the theorem is
+proved.
+
+    We used simple facts about GF(pe) to obtain Example 3.9. In
+order to construct special class 3 groups we will need the following
+interesting fact about these fields. The authors would like to thank
+Walter Feit for his help with the proof of this result.
+
+    PROPOSITION 4.3. Let E be a finite field of characteristic p > 2
+and let F be a subfield. Then there exists a basis of E over F with
+respect to which every matrix of the regular representation of E over
+F is symmetric.
+                THE DEGREES OF GROUP CHARACTERS II                    493
+
+     Proof. Let w = {wl9 w2,         , wn} be a basis of E over i*7 and let
+Rw be the matrix form of the regular representation with respect to
+this basis. Let θ e E be a primitive element so that E — F(θ). Then
+the characteristic polynomial of Rw(θ) is irreducible over F. Note that
+all matrices below are over F.
+    By Theorem 1 of [8] there exists a matrix S with S~1RW(Θ)S =
+Rw(θ)r. Here ' denotes the transpose operation. As is well known the
+norm map from E to F is onto and hence there exists a e E with
+                                                  1              ι
+det S = NElF{a) = det Rw(a).       If Γ = ΛΛer- )^, then T~ Rw{θ)T =
+jβw(0)' since i2w(α) and 22W(0) commute. Moreover det Γ = 1. By Theorem
+2 of [8], T is symmetric.
+     Now T is symmetric and det T = 1, a square in ί7. Since F is a
+finite field of characteristic p > 2, there exists a matrix Z7 with T =
+ UU'. Let A = U-'R^U. Then
+                                   1
+               A' = U'RU(Θ)'(U')- = U'T-
+                  = U-ιRw{θ)U - A .
+Hence if we let C7 be a change of basis matrix, U: w —+v, then A =
+β*(0) is symmetric. Since i? = .F(0), the result follows.
+
+    THEOREM 4.4. Special class 3 groups with a.c.p' e#is£ /or αZZ
+  > 2 α^d e. No suck groups exist for p = 2.
+
+     Proof. Let p = 2. If e > 1, then by Theorem 3.10 groups G with
+      6
+a.c.p have class <; p = 2. Hence no special class 3 groups exist. If
+e = 1 and G is a special class 3 group, then [G: 3(6?)] = 8 by Theorem
+4.1. Therefore H — G/$(G) is nonabelian of order 8. Such groups all
+have cyclic subgroups of order 4. Thus if A < G with A/Q(G) cyclic
+of order 4, then A is an abelian subgroup of G of index 2 and hence
+G is not special, a contradiction.
+     Now let p > 2 and let e be arbitrary. By the previous proposi-
+tion there exists a basis wlf     , wβ of GF(pe) over GF(p) such that for
+             e
+all /3 G GF(p ), Rw{β) is symmetric. Let a{ = [α^] be the matrix 0^ =
+Rw(Wi). These β matrices of size β x e over GF(p) have the following
+properties.
+                      }
+     (1) α«> = α« .
+     ( 2) a?} = α # and α#> = αJV.
+     ( 3 ) If Σ / Λ is singular for / 4 e GF(p)f then we must have / x =
+/. =     = Λ = 0.
+    Condition (1) follows since Rw(Wi) is symmetric and (3) follows since
+Wi, W2, •- , we are a basis of field GF(pe) over GF(p). Finally a^Wj) =
+Rw(Wi) Wj = w ^ and hence ^(wy) = o^Wi). This yields α ^ = a{r{].
+The remaining equality in (2) follows from this and symmetry.
+    Let
+494                I. M. ISAACS AND D. S. PASSMAN
+
+
+             A = gp<%» x2,           , %e, Vu Vz,          , Ve, u, v I
+                                       p         p
+                      %l = yf = u          = V = 1 ,
+                      w and v are central
+                      (»», »i) = (Vif Vά) = 1
+
+
+
+where 3^ = 0 for i ψ j and δi3- = 1 for i = j . Clearly | A \
+where m = pe and A' = <u)>. Let r< act on A by
+                         ^6Γi = %          vτi       — v
+
+
+
+
+where
+
+
+
+Here division in the exponent is performed modulo p.
+     We show first that τ< defines an automorphism of A.                     To do this
+it suffices to show the following.
+                  (xγγ = (yγγ = (^^)^ = (v^)p = l
+                  i6Tί and vTi are central in A
+                  (yγ, yV) = 1
+
+
+
+Now A has class 2 and p > 2 so A is regular. Since it is generated
+by elements of order p, it has period p. Hence the first equation
+holds. Since A has class 2, the next three equations are obvious. We
+consider the last one now. We have
+                          α
+                              (i)\                         /       α   (t)
+
+
+
+
+SO
+
+
+
+
+by (1). Thus τ{ is an automorphism of A.
+    We show now that as an automorphism r< has order p. Clearly
+                                                     •n.
+
+
+τi Φ 1. Now r< fixes u and v and y/ = y&****. Thus τf fixes yi#
+Finally
+                    THE DEGREES OF GROUP CHARACTERS II                         495
+
+
+
+
+ So for p > 2, τ\ fixes α?,- and hence τt has order p.
+     We know that r i f τά e Aut A. We show that τ{τά = τάτi9 Clearly
+ u = ΉΛΓJ = uτsvi, v = vΓ*Γi = vΓiΓ* and 2/ί<Γi = ykvSik+^k = 2/P"Γ<. Finally
+
+
+
+
+ and
+
+
+
+
+These two expressions are equal since a^ = αj$ by (2).
+      Let E — gp ζzu z2,       , ze \ z\ — (zif zά) = 1)> and set G = A x r E,
+the semidirect product of A by E, where τ : E —> Aut A is the map
+induced by z{ —> τ{. We note some elementary properties of G. Clearly
+I G I = m y , G' = <j/i, 2/2, ,2/β, w, v} and 72G = <u, v) so that G has class 3.
+We show that (£(G') = G' so that [G: £(G')] = m 2 . Since G' is abelian
+we have (£(G') 2 G'. On the other hand if
+
+                         h =
+
+ with g 6 G', then for all j , 1 = (yj9 h) = wβit;δi and hence α^ = 6y = 0.
+ Thus E(G') - G'.
+       Since [G : A] = m, we see easily by (3) and Lemma 3.8 (i) that
+     2
+G/τ G has a.c.ra. Set B = <j/x, y2,        , yβ, zu z2,      , ^e, u, v>. We see
+that 3(A) = 3(J5) - <>, v>, A' = < » and 5 ' = <^>. Since [A : &(A)] =
+[ 5 : 3(1?)] = m2 we conclude by Lemma 2.3 of [2] that both A and B
+have a.c.m. Let Z be an irreducible character of G with 72G gϋ ker Z.
+Then either w ί ker Z or v g ker Z or both. If say w ί ker Z, then Z | A
+is faithful on A' and hence deg χ ^> m. Similarly if 1; g ker Z. Thus
+in either case deg X ^> m.
+       For each integer ί set Et = (zfil, z2xl,       , zexiy and J f = <vtt'^ so
+that EQ = E. We show that E[ £ J t . Now
+
+
+
+
+where
+496                 I. M. ISAACS AND D. S. PASSMAN
+
+
+
+
+                      = (Π
+Hence
+
+
+
+
+                    = WΓ/(Πl/rJr) ^    "      ^   '   •{ I
+Since α£! = α^j* by (2) and since all terms in the last line above
+commute, it follows that the yr terms drop out. Thus
+
+
+
+Now a\γ = a1/} and oφ = a\? by (2) and so
+
+
+
+                                                                     a
+                                                                         U)
+where ί/2 is viewed as division in GF(p).   Finally using w\j =(u~1v) "
+we obtain
+
+
+
+Thus E7/ S eT".t
+     Set Bt = <G', £?,>. Then [G : Bt] = m and JB; - J t . The latter
+follows since G' is abelian, J?/ s J t and (]/<, ^a J) = (vu1)^. We show
+now that (? is a special class 3 group with a.c.m. Let χ be an irre-
+ducible nonlinear character of G. If ker X 2 τ2G, then 5ί is a character
+        2                                                       2
+of GJΊ G and hence has degree m. Assume ker χ =£ 7 G. As we
+                                                2
+showed above deg X ;> m. Let / = ker X Π 7 ί? so that G is a character
+of G/J. If J = <X>, then G/J has an abelian subgroup A/J of index
+m and if J = ^MG*)- — J e then G/J has an abelian subgroup J5β/J of
+index m. Thus deg X ^ m and hence deg X — m. This shows that G
+                                                         2
+has a.c.m. Since G has class 3 and [G : K(G')] = m , we see that G is
+a special class 3 group. This completes the proof of the theorem.
+
+     5* Special class 2 groups* In this section we study special class
+                             e
+2 groups with a.c.m (m = p ). As is to be expected, the structure of
+these groups is less restrictive than in the class 3 case. Let G have
+a.c.p' We say G is imprimitive if it has a normal subgroup H of index
+p with a.c.p " 1 . Otherwise G is primitive. We first note the following,
+Let G have a.c.p* and let HAG with [G:H] = p. If H has a.c.p- 1 .
+                THE DEGREES OF GROUP CHARACTERS II                  497
+
+then certainly e(H) = e(G) — 1. Suppose now that e(H) = e(G) — 1.
+If φ is a nonlinear irreducible character of H and if X is a constituent
+                       e             e ι                       1
+of φ*, then degX = p so deg<p = p ~ . Hence H has a.c.p*" . Thus
+the concepts of imprimitivity as an r.x.β group and as an a.e.p6 group
+are entirely equivalent. We now relate this idea to a certain chara-
+cteristic subgroup of G.
+
+    PROPOSITION 5.1.   Let G have a.c.m and class 2. Set
+                   S = S(G) =         <geG\(g,G)<
+
+Then we have the following.
+    ( i ) If [G: S(G)} < m, then G is a special class 2 group,
+    (ii) G is primitive if and only if G = S(G).
+     Proof. ( i ) Suppose that G has a normal abelian subgroup A of
+                                                              f
+index m. If x 6 G — A, then by Lemma 3.3 (iii), (x, A) = G and hence
+(x, G) = G'. Thus S(G) £ A and [G: S(G)] ^ m, a contradiction.
+     (ii) We show that G > S(G) if and only if G is imprimitive.
+Suppose first that G > S(G). Choose subgroup H with G> H^ S(G)
+and [G: H] = p. Let φ be a nonlinear irreducible character of H and
+let X be constituent of φ*. If x e G — H, then (α?, (?) = G' g= ker X and
+thus x is not in the center of the representation associated with X.
+Since x e &2(G), this yields X(x) = 0. Thus X vanishes off H and so
+X = φ*. This yields pdegφ = deg<£>* = άegX = pe and thus H has
+      e-1
+a.c.p and G is imprimitive.
+     Now let G be imprimitive so that G has a normal subgroup if of
+index p with a.c.p'"1. We show that S(G) £ iί. If not, there exists
+xeG - H with T7 = (&, G) < G'. Note that a; is central modulo W
+and we have G/W = (H/W)&(G/W). Since W< G' we see that G/T7
+has a.c.p6 and that H/W is either abelian or has a.c.p6"1. Let X be a
+nonlinear irreducible character of G/W. The above implies that X =. φ*
+for some irreducible character φ of if/ΐ^. Thus
+                H/W = T(φ) a (H/W)S(G/W) = G/W,
+a contradiction. Therefore G> H^ S(G).
+
+    We now consider an example.
+
+     EXAMPLE 5.2. Let Z be an elementary abelian group of order
+ps+ι with s > 0. Setfc= (p s+1 - l)/(p - 1) and suppose that E19 E2, ,
+                                        z
+Ek are k nonabelian groups of order p . Let Zt — <^> be the center
+of 2?;. We define a homomorphism
+                   r : = Zγ x ^ 2 x       x Zk      >Z
+498                  I. M. ISAACS AND D. S. PASSMAN
+
+by sending each zi onto a generator of the k distinct subgroups of Z
+of order p. Let N be the kernel of τ. Then N is central and hence
+normal in E = Eι x E2 x          x Ek. Set G - E/N.
+    It is clear that Z — Q(G) = G'. Let % be a nonlinear irreducible
+character of G so that X \ Z = (degX)λ with λ =£ 1. By way of the
+homomorphism E-~+G,X can be viewed as a character of E and as
+such X = #^2       0fc where 0, is a character of E{ and hence has degree
+1 or p. Moreover deg θi — p if and only if ZiN/N §£ ker λ. Thus
+                        8+1  s              s
+there are precisely (p — p )/(p — 1) = p such θ{ with deg ^ = p and
+                 p                      2 8
+hence deg X — p \ Thus G has a.c.p ' .
+    Now since | Z \ > p we have clearly JS^JV/JSΓ £ S(G) for all i. Thus
+£(G) = G and by Proposition 5.1, G is primitive and therefore special.
+Note finally that if e = p , then G has a.c.pe and [G: 3(G)] = p2fc
+with k > e.
+
+     The above example shows that special class 2 groups with arbi-
+trarily large commutator subgroups and central quotients do in fact
+exist. However the above construction required that we let m get
+arbitrarily large. We will show in Theorem 5.5 that this is typical of
+the general situation. We first obtain a generalization of Theorem B
+of [2].
+
+     THEOREM 5.3. Let G be a p-group with e(G) — e. Then either G
+has a normal abelian subgroup of index pe or G has a subgroup H
+of index p*-1 with [H:&(H)] ^ p« < +8>.
+
+      Proof. By Theorom B of [2], there exists subgroups N and A of
+                                                   5e{e+2}
+G with    [G : N] = p% A = Q(N)   and   [N   A] ^ p       .   If   ©(A) >   N,
+then we can choose subgroup H with ©(A) 3 H > N and [H: N] = p.
+With this H the result follows. So assume (£(A) = iV.
+     Suppose now that N is not normal in G. Let Nx Φ N. If J5 =
+A n A , then (£(B) 3 <JV, iV*> > iV. Since [iV: B] ^ p^*+v+% the re-
+sult follows also in this case.
+     Thus we can assume that NAG and hence that AAG.          If N =
+A, then G has a normal abelian subgroup of index p\ Hence we can
+assume that N is nonabelian. Since N is a p-group and A — ,8(^0
+we can choose subgroup J with / S ΛΓ Π A and | J | = p. Set w =
+min {[A : S4(x)] | x $ N}. We compute as in Lemma 4.4 of [2].
+     Clearly
+
+                    r ( A ) ^ |ΛΓ| + (|G| - \N\)/n .
+Now let λ be a character of A. If λ has p e conjugates, then since
+Γ(λ) 2 N we have Γ(λ) = ΛΓ. Thus if X is a constituent of λ*, then
+                  THE DEGREES OF GROUP CHARACTERS II                     499
+
+ there exists character η of N with X — ψ and λ a constituent of
+ Ύ) I A. Since deg 1 S P\ w e see that deg rj = 1. Hence λ = rj \ A and
+ ker λ 3 iV' Π 4 i X Thus we see that
+                 s(A) ^ [A : J]/p* + (I A \ - [A :
+ By Lemma 4.3 of [2], r(A) = [G : A]s(A).       Thus
+                p~e + (1 - ί9~e)M ^ P" 6 " 1 + (1 - V
+ Hence
+
+
+
+    Choose xeG - N with [A : QZA(x)] = n and set K = <iV, .τ> > N.
+Then 3(if) = e^(a ) so
+         [N:&(K)]   = [N: A][A : &A(x)] ^ p 3 ^ ^ 2 ^ ^ 1 < p^+^-^   .
+
+If ί ί is chosen with K^H>         N and [ i ϊ : N] = p, then the result
+follows.
+
+     We now return to our study of class 2 p-groups with a . c m .
+
+     LEMMA  5.4. Let G have a . c m and class 2. Tλ<m Gf and G/S(G)
+are both elementary abelian.
+
+     Proof. We show that G' is elementary abelian by induction on
+  G\. Of course G' is abelian since Gr S 3(G). If ^(G) is not cyclic,
+let Jx and J2 be two distinct subgroups of S(G) order p . By induction
+G'Ji/Ji has period p and hence so does G'. Now let 3(G) be cyclic
+By Lemma 3.4, G has a normal abelian subgroup A with G/A elementary
+abelian of order m. lί xeG — A, then Gf = (a?, A) by Lemma 3.3 (iii).
+                     p                                    p    p
+Let ?/ e A. Since x e A and G has class 2, we have (x, y) — (x , y) = 1
+and thus G' is elementary abelian.
+     We show now that G/g>(G) is elementary abelian. The quotient is
+of course abelian. Let x9 y e G. Since G has class 2 and G' has period
+p, we have (xp, y) - (a?, i/)p - 1. Thus x* e Q(G) and G/Q(G) has period
+p. This completes the proof.
+
+  We will use the following notation throughout this section. Let
+W be a subgroup of G'. Set
+
+                       Zw = lgeG\(g,G)£ W}
+so that Zw/W = 3(G/W0. We let T denote a hyperplane in G' and J
+denote a line (that is, [G': T] - p and | J\ - p). We have [G : Z Γ ] - m2
+by Lemma 2.3 of [2] and S(G) = <ZT \ all Γ>.
+500                    I. M. ISAACS AND D. S. PASSMAN
+
+      THEOREM 5.5. Let G have a.c.p 6 and class 2. Suppose that \G'\ =
+8
+p and [G : 3(G)] = p\   Then
+   ( i ) z ^ e(s + 1) and s <; J«(« — 1)
+                                        3      2           2      2
+   (ii) if G is special, then z ^ 18e (e + 3) and s < 18e (e + 3) .
+
+     Proof. ( i ) Let T^ and T2 be two hyperplanes in G'. We show
+first that \ZTχ: ZTχ Π ^ 2 1 ^ 2>e. Let X* be a nonlinear irreducible
+character of G/Tt for i = 1, 2. Since %, vanishes off Zτ., we see that
+XΛ vanishes off N = Z Γ l Π ^ 2 . Also deg Z^ = p e so that ZΛ | N = p2βλ
+where λ is a linear character of iV. Now let θ be an irreducible
+constituent of XJ2 so that θ \ N = (deg #)λ. Then
+
+      1 ^ [ZΛ, ff] = (1/[G : iSΓ])[ZΛ I iV, ^ I JVk = p2e(deg <?)/[(? : N] .
+
+Since deg θ <, pe we have [G: AT] ^ p 3 e and hence \ZTχ: Z Γ l n ZTz] ^ p e .
+     Let ϊ\, T2,         , Γw be hyperplanes. We show that [G: Γ l Γ ^ J ^
+pβ{«+D ^y i n (j u c tion on %. For u = 1, 2 we have result by the above
+so let M ^ 3. Set U = p|Γ~1 ^z- so that by induction [G: C7] ^ p e \
+Hence since ?7 £ Z Γ l we have
+
+       [G :UnZTu]    = [G : i7][Z7:C7n Zτ%\ £ [G : C7][ZΓi: ZTχ ΓΊ Z Γ J
+
+
+and this follows.
+    Since | G ' | — p% we can find s hyperplanes Tlf T2, •••, Ts with
+Π Γ* = <1>. Clearly Πi ^ Γ i - 3(G). By the above
+                                                          8 + 1)
+
+
+
+and hence 2 g β(s + 1). Now let x19 x2,        , x2eG generate the quo-
+tient G/$(G). We see easily that the commutators (xi9 xά) with i < j
+generate G'. Since G' is abelian and has period p, this yields s ^ 4«(« — 1)
+and (i) follows.
+     (ii) We apply Theorem 5.3. Since G is special we see that G has
+a subgroup H of index pe~ι with [H: $(H)] ^ p6e{e+Z).           By Lemma
+3.3 (iii), H' = G\ If [H:S(H)] = p* and | i P | = I G'| = P", then as
+above we have
+
+                     s ^ it(t - 1 ) < Jί 2 ^ 18e2(β + 3)2 .
+Finally by (i) we obtain
+                                              3       2
+                         z ^ e(β + 1) ^ 18β (β + 3)
+
+and the theorem is proved.
+
+      The above result is of course qualitative in nature. The bounds
+                 THE DEGREES OF GROUP CHARACTERS II                        501
+
+are no where near best possible. If G has an abelian subgroup of
+index m, the following example shows that | G' | and [G: 3(G)] can be
+arbitrarily large for fixed m.
+
+     EXAMPLE 5.6. Let group G have a . c m and a normal abelian
+subgroup A of index m. Given integer k, set B = A1 + A2 +       + Ak,
+the direct sum of k copies of A. Set H = B x σ(G/A) where G/A acts
+on B in the natural way. If x e G/A with x Φ 1, then (#, A) = G'.
+Hence clearly (&, JB) — JET. By Lemma 3.8 (i) we see that H has a.c.m.
+Moreover | H'\ = | G'\k and [B : 3(fΓ)] - [A : 3(G)]\
+     If we now take G to be an extra-special Case P group with
+[G : 3(G)] — m2, then G has a.c.m and \G'\ = p. Also G is nonspecial
+so the above construction yields nonspecial groups H with | H' | and
+[H: 3(iJ)] arbitrarily large.
+
+    LEMMA  5.7. Leί G and H have class 2 with \ Gr \ = | H'\. Suppose
+that G has a.c.m and H has a.c.n. Let K be the product of G and
+H with G' and Hf identified.  Then K has class 2 and a.e.mn. Also
+with G and H naturally embedded in K we have Q(K) — $(G)$(H)
+and S(K) 3 S(G)S(H).
+
+     Proof. By Lemma 5.4, G' = Hr and so K clearly exists. Let X
+be a nonlinear irreducible character of K. By way of the map E =
+G x H—>K we can view X as a character of E. As such X = Θφ where
+Θ is a character of G and φ is one of H. In K, ker XΊQ Kr and thus
+in £7, ker Z | G ' and ker χ =g f Γ . Hence both # and 9? are nonlinear.
+Thus deg 0 = m, deg φ = n and deg X — mw. Therefore if has a.c.mw.
+The remaining results are obvious.
+
+    The following proposition considers minimal special groups.
+
+    PROPOSITION 5.8.  Let G be a primitive group with a.c.p 6 and
+class 2. Suppose that for all J S G ' with \J\=p the quotient G/J
+                                   e                         2
+has an abelian subgroup of index p . Then either | G ' | = p and p \ e
+           3
+or IG'| = p . Moreover for all p, e (with p \ e in the first case) such
+groups exist.
+
+     Proof. We show first that | G; | ^ p 3 . Suppose by way of contra-
+diction that I G'| ^ 2>\ Let Tx and T2 be two not necessarily distinct
+hyperplanes in G ; . Since | G'| ^ p 4 we have | Γx Π Γ21 ^ P2. Let J x
+and J 2 be two distinct subgroups of T1 n Γ2 of order p. By assump-
+                                                              e
+tion G//i has an abelian subgroup AJJi of index m = p . This implies
+that S(G/Ji) £ Ai/Jί and so ^ / ^ = ZτJJi and ^ Γ a / t Γ ί = ^ 2 / / i are both
+contained in Ai/Ji9 This yields (ZTχ9 ZT2) £ J Ί Π Λ = <1>. Now G is
+502                  I. M. ISAACS AND D. S. PASSMAN
+
+primitive so G = S(G) = <ZT>. Since (ZTί, Zτ) = <1> for all T, and T2
+we see that G is abelian, a contradiction. Thus | G'| ^ p 3 .
+    By Lemma 3.4, we must have | G'| = p2 or p 3 . We consider the
+case \G'\= p2 now. Let To, Tx,       , T p be the subgroups of G' of
+order p and set Z, = Zτ.. Since G is primitive, G = S(G) = Z0Zλ    Zv.
+Consider
+
+
+
+Note that for i Φ j , (Zi9 Z3) g ^ n Ts = <1> so ^ and Z, commute
+elementwise. Since W £ Z< we see that (£( W) 3 JZ^Zί     ^ -i^i+i *
+Z p and since W £ ZOZX        Zi^Zi+1 --• Zp we see that K( TF) 2 ^ .
+Thus (E(TΓ) - G. Since clearly TΓ 2 8(G) we have TΓ = 3(G). This
+says that
+
+
+
+Now [G: Zt] = p2e so that \Zi\^\Zi\.         If [^ : 3(G)] = p 7 then the
+above direct product yields
+
+                   - [G : 3(G)] - [G : Z o ][^o: 8(G)] = P2ePf
+
+and hence 2e — pf. If p Φ 2, then clearly p | β. If p = 2, then / =
+e^l.     Clearly 3(Z 0 ) = Q(G) and ^ = Γo. Hence by Lemma 2.3 of
+[2], [#o: 3(^o)] = Pf is a square. Thus 2 | /, / = e and the result
+follows.
+     We show now that all such groups exist. Consider first | G'\ = p2
+and e/p = /, Example 5.2 with s = 1 yields a group JET with a.e.p p ,
+S(H) = if and | H'\ = p 2 . Let G be the product of / copies of H with
+their commutator subgroups indentified. By Lemma 5.7 and induction,
+G has a.c.p^ = a.c.p*, S(G) = G and | G'| = p2. If J £ G' with | J | = p,
+then G/ J has a cyclic commutator subgroup and hence an abelian sub-
+group of index p\ Thus G is the required example.
+     Now we consider \G'\ — p\ Let F be the group of Example 3.7
+of [2]. Then | F'\ = p\ \ F \ = p6 and S(F) - F . Also it is easy to
+see that if J is a subgroup of Ff of order p, then F/J has an abelian
+subgroup of index p. Let G be the product of e copies of F with
+their commutator subgroups identified. Since F has a.c.p, Lemma 5.7
+                                                z
+and induction show that G has a.c.p% | G'\ — p and S(G) — G. Let J
+be a subgroup of G' of order p. Then each factor in G/J has an
+abelian subgroup of index p so G/J has an abelian subgroup of index
+p\   This completes the proof.
+
+    We now apply the above results to improve the bounds in Theorem
+5.5 in case p > e.
+                   THE DEGREES OF GROUP CHARACTERS II                       503
+
+     THEOREM  5.9. Let G be a special class 2 group with &.c.pe. Sup-
+pose that I G I = ps and [G : 3(G)] = p\ If p > e, then z ^ 4e2 and
+               f
+
+
+s <: 4e - 1.
+
+      Proof. Let T be a hyperplane in Gf. We show first that p > e
+ implies that Zτ is abelian. This of course a consequence of Theorem
+ 1.5 and Proposition 1.7. However we can give an alternate inductive
+                                                       2
+ proof as follows. Suppose first that | T | ^ p . Then we can choose
+ distinct subgroups Jt and J2 of T of order p. By induction ZτlJ. =
+ ZT\J{ is abelian and hence Z'τ g Jx Π J2 = <1>. Thus we need only
+consider | T\ = 1, p. If | Γ | = 1, then certainly Z Γ - Q(G) is abelian.
+Now let \T\ = p so that | G' | — p2. Note that groups G with a.c.p 6
+and | G'| = p2 have the property that if J is any subgroup of G' of
+order p, then G/J is nonspecial. Hence since p > e, Proposition 5.8
+and induction easily imply that G is nonspecial. Therefore Zτ is
+contained in an abelian subgroup of G of index pe and thus Zτ is abelian.
+      We show now that s ^ 4β — 1. Suppose first that G is imprimi-
+tive. Choose H /\G with [G: if] = p and such that H has a.c.p 6 " 1 .
+Since G is special, H is special and hence β > 1. By Lemma 3.3 (iii),
+\H'\ = | G ' | . By induction | I Γ | ^ p 4 *- 1 *- 1 and so the result follows
+here. Now let G be primitive so that G = S(G) = ^ r ^ . We assume
+that I G'| ^ p 4 e and derive a contradiction. Let 2\ and T2 be two not
+necessarily distinct hyperplanes and let x e ZTl and y e ZT2. We show
+that x and y commute. Since each Zτ. is abelian of index p2e we see
+that I (x, G) I £ p2e and | (y, G) | ^ p 2 e . * If (x, G) n (y, G) - <1>, then
+certainly (», y) — 1. Thus we can suppose that (a?, G) Π (y, G) > <1>.
+This yields | (x, G)(yf G) \ ^ pu~ι <\G'\ and thus we can choose hyper-
+plane T with T 2 (a;, G)(τ/, G). Clearly x, y £ Zτ and so x and ?/ com-
+mute. Since G = < ^ > , the above shows that G is abelian, a contradic-
+tion. Hence | G' \ < p4e. Finally by Theorem 5.5 (i) z ^ e(s + 1) ^ 4β2
+and the result follows.
+
+     6. Additional results.      We generalize our r.x.l results in another
+direction now.
+
+     THEOREM 6.1. Let G be a group with the property that every
+nonlinear irreducible character has prime degree. Suppose further
+that at least two distinct primes occur. Then there exists primes
+p Φ q such that G has one of the following two normal series.
+    (i)      G>Q>8(G)
+
+with G/$(G) and Q both nonabelian.
+    (ii) G>Q>    A = S(G) x R
+504                  I. M. ISAACS AND D. S. PASSMAN
+
+with both G/A and Q nonabelian. Here R is elementary abelian of
+        m
+order r for some prime r and Q/A acts irreducibly on it. Also
+(r - l)/(rmlP - 1) = q.
+  m
+
+
+    Conversely if group G has either of the above structures and if
+X is an irreducible character of G, then άegX = 1, j> or q and all
+three degrees occur.
+
+      We start with two lemmas.
+
+      LEMMA 6.2.  Let G be a group with the property that every
+nonlinear irreducible character has prime degree. Then every normal
+subgroup and quotient group of G has this property.
+
+     Proof. The result is clear for quotient groups. Let NAG and
+let φ be a nonlinear irreducible character of N. If X is a constituent
+of φ*, then X \ N — a Σ ί Ψi and hence deg X — at deg φ. Since deg X
+is a prime, at — 1 and deg φ = deg X is a prime.
+
+      LEMMA 6.3.   Let G satisfy the hypothesis of Lemma 6.2. Then
+G is solvable.
+
+     Proof. Since this property is inherited by normal subgroups and
+quotient groups, it suffices to show that G cannot be a nonabelian
+simple group. Thus suppose G is nonabelian and simple. Let X be a
+nonlinear irreducible character of minimal degree p. Since G is simple,
+X is faithful. If p = 2 and if x e G is a nonidentity involution, then
+since det X = 1 we see that the eigenvalues of x in this representation
+are both —1. Hence &(G) Φ <Ί)>, a contradiction. Thus p > 2.
+     Let π = {deg φ \ φ is irreducible and deg φ > p}. Then π is a set
+of primes and qeπ implies that q > p + 1. If π is empty, then G has
+r.x.l for prime p and is therefore solvable. Hence we have \π\ Ξ> 1.
+Since X is faithful, a result of Blichfeldt ([7] Satz 196) shows that G
+has an abelian @r subgroup H Φ <(1>.
+     Let x e H*. Then | Cϊ x \ is prime to the degree of every irre-
+ducible character φ of degree different from p. By Burnside's Lemma
+([7] Satz 168) since G is simple we have φ(x) = 0. If ^o is the regular
+character of G, then we have 0 = ρ(x) = Σ Z«(l)Z*(ί») = 1 + pec where
+a is an algebraic integer. This is impossible and the result follows.
+
+      We now proceed to prove the theorem.
+
+    Proof of Theorem 6.1. We know that G is solvable. Choose
+AAG     with G/A extra-special. We show first that A is abelian. If
+not let φ be a nonlinear irreducible character of A and let % be a
+                THE DEGREES OF GROUP CHARACTERS II                  505
+
+                                             an
+constituent of φ*. Then X | A = a Σ ί Ψ% d deg X — at deg φ. Since
+degZ is a prime we must have a — t = 1. Let 0 be a nonlinear irre-
+ducible character of G/A viewed as one of G. Then Xθ is irreducible
+(see Lemma 5.5 of [2]) and deg Xθ = (deg %)(deg θ) is not a prime, a
+contradiction.
+     If G/A is a Case P quotient for prime p, then by Ito's Theorem
+the degrees of the irreducible characters of G are powers of p which
+is not the case. Thus G/A is Case Q. Let Q/A be the normal Sylow
+g-subgroup of G/A. Since G/A has an irreducible character of degree
+[G: Q] we see that G/Q is cyclic of prime order p Φ q.
+     Note that Q is nonabelian. Otherwise G would have r.x.l for
+prime p. Now G/A has trivial center so $(G) Q A Q Q. We show
+that 3(Q) = 3«?). Clearly 3 ( 6 ) S 3 ( 0 ) . If & e 3(Q) - 3(G), then
+there exists yeG with (x, y) Φ 1. Now Q is nonabelian and 2 = (x, y) Φ1
+so there exists a nonlinear irreducible character φ of Q with z g ker <£>.
+As above, there exists an irreducible character X of G with % | G = φ.
+Since as is in the center of the representation associated with φ and
+since X \ Q = φ we see that (x, y) e ker X n Q = ker φ, a contradiction.
+Hence £(G) - 3(Q).
+
+     Case 1. I Q/A | ^ q\ Let λ € A. Then clearly [G : Γ(λ)] is 1 or a
+prime. If | Q/A | ^ g2, then the only subgroup of G/A having prime
+index is Q/A. Hence T(λ) 3 ζ). This implies that (^(A) Ξ2 Q and hence
+ζ) is nilpotent of class 2. Let φ be a nonlinear irreducible character
+of Q and let W — W(φ) denote the subgroup of Q mapping into the
+center of the representation. Since clearly deg φ — q we have [Q: W] =
+q2 by Lemma 2.3 of [2] and also W 2 A. Now Γ(φ) = G so W/ AΔ G/A.
+Hence TΓ(9>) = A and [Q : A] = g2. We saw above that A £ 3(Q)
+This clearly implies that A = 3(Q) = £(G) and G satisfies (i).
+
+     We assume now that | Q/A \ = g. Since Q is nonabelian, KG(A) =2 Q
+and hence εG(A) = A. Suppose A = M x JV with MAG and NAG
+and N, M Φ <1>. We show that either Λf or JV is central in G. Say
+i\Γ g 3(G) = 8(Q). Choose λ e N so that Γ(λ) n Q = A. If peM,
+then Γ(λj«) = Γ(λ) n Γ(j") and [G: T(λμ)] is a prime. Hence Γ(^) "^ T(λ)
+and so (Eβ(Λf) a Γ(λ). Since (EG(ΛΓ) Δ G, this implies that <£Gtflf) = G
+and M S 3(^) I n particular we see that precisely one Sylow sub-
+group of A is noncentral. Hence A/Q(G) in an r-group for some
+prime r.
+
+    Case 2. q Φ r. Since Q/A is cyclic of prime order, we can write
+A = 3(Q) x R where Q/A acts fixed point free on R by Lemma 1.2.
+Also 3(Q) — 8(G) a n d -K Δ G since Q Δ G. Let λ be a nonprincipal
+ 506                      I. M. ISAACS AND D. S. PASSMAN
+
+ linear character of R. Then T(\) piQ = A and [G: T(λ)] is a prime.
+ Hence | T(X)/A | = p. Thus G/A acts half^ transitively but non fixed
+ point free on R. By Theorem I of [3], R is elementary abelian and
+ G/A acts irreducibly on it. Let G - G/A, Q = Q/A and let P = &P(G).
+ Let W be an nonidentity irreducible Q-submodule of R. If λ 6 TF*,
+ then G = Q(T(λ)/A) and thus FF is a G-module. Hence Q acts irre-
+ducibly on R.
+     We view R as a vector space over GF(r) of dimension m and we
+find dim &£(P). This dimension is clearly invariant under field exten-
+sion so we can extend to the algebraic closure F of GF(r). If Q = <V>,
+then since R is an irreducible Q-module, all eigenvalues of x are
+distinct and not equal to 1. Let S be an irreducible G-submodule of
+F(g)R. By Clifford's theorem, this representation restricted to Q
+breaks up into either p distinct conjugates or all equivalent represen-
+tations. If the latter occured then since all eigenvalues of x are dis-
+tinct, dim S — 1 and hence Q = G' is in the kernel. This contradicts the
+fact that x has no eigenvalue equal to 1. Thus the former case must
+always occur. From this we see easily that p \ m and dim E^(P) = m/p.
+     Now G contains q conjugate subgroups Plf            , Pq of order p.
+We have S^JPί) Π &*(-P;) = <1> for i ^ i and R = \J (E&(P). Since
+I (^(P;)! = r m/p we obtain from this disjoint union (rm — 1) = q(rmlP — 1).
+Finally since R is elementary abelian and Q acts irreducibly, we see
+that the same is true for R. Thus G satisfies (ii).
+
+    Case 3. q = r.         Here <J is clearly nilpotent. Let R — @r(A). As
+above we have
+
+                            £ - e*(Q) u ύ &*&).
+                                             1
+
+
+Let W = K^(G) and set
+                      w                      β                  δ
+           [jβ: PΓ] = r , [(Ei(Q): W] = r and [ ^ ( P J : ΪΓ] = r .
+       Note since all the P< are conjugate this is well defined. Now
+                (R - w) = (<EA(Q) - TF) u ύ
+
+is a disjoint union so
+                          rm - 1 = r α - 1
+and since r = q, rm — r α = r δ + 1 — r. Again since the union is disjoint,
+we have a + b <£ m and 26 ^ m. Finally m> a since KG(A) = A and
+hence the above equation yields m = & + l , α = l . Since 26 ^ m we
+have m — 2 and 6 = 1.
+    Since m = 2, α = 1 we have [ £ : <££(<?)] = ?. Thus | (Q, 22) | = q
+                  THE DEGREES OF GROUP CHARACTERS II                          507
+
+and Q' is cyclic of order g. This shows that [Q : Q(Q)] — q2 by Lemma
+2.3 of [2]. Thus G satisfies (i). (Note, the difference between Cases
+1 and 3 is that in the former G/Q acts irreducibly on Q/S(G) and in
+the latter it does not.)
+
+    We show now that groups with structure (i) or (ii) have characters
+of degree 1, p and q only. Let G satisfy (i) and let X be an irreducible
+character of G. By Ito's Theorem deg X | pq2 and also (deg Xf ^
+               2
+\G:3(G)] = pq . Since G/3(G) is nonabelian we see easily that p <Ξ* q + 1.
+This yields deg X = 1, p or q. Since G/g(G) is nonabelian, it has a
+character of degree p and since Q is nonabelian it has a character of
+degree q. Thus G does not have a.c.p or a.c.g and hence G has
+characters of degree 1, p and q.
+
+      Now let G satisfy (ii) and let X be an irreducible character of G.
+By Ito's theorem, deg X \ pq and hence deg X = 1, p, q or pq. We show
+that the latter cannot occur. If deg X — pq and X \ A — a Σ i \ then
+αί = pq and also α2£ ^ £>g. Thus α = 1 and t = pq. Let X = XΣ and
+write X = ηe where η e Q(G) and εeR. This implies that A — T(X) =
+T(ε). As in our Case 2 computation above, we see that (J? ®Λ( P<) is
+a disjoint union and | e^(Pi) | = r w / p . Hence | U? KΛ(Pί) | = g(r w / p ) + 1 =
+r w . Thus for every εeR we have T(ε) > A, a contradiction and
+deg X Φ pq. Now G/A being nonabelian has a character of degree p
+and Q has a character of degree q. Thus G has characters of degree
+1, p and g. This completes the proof of the theorem.
+
+    The following are essentially canonical examples of the above.
+
+    EXAMPLE     6.4. First let Q be a nonabelian group of order g3. If
+q = 2, let Q be the quaternion group and if q > 2, let Q have period
+q. As is well known, the group of automorphisms of Q, fixing 3(Q),
+is isomorphic to SP(2, q) = SL(2, g) and hence has order q(q — l)(g + 1).
+If we choose prime p with p \ (q — l)(g + 1) then we can find an
+appropriate automorphism group P o f Q of order p. Clearly G = Q xσP
+satisfies (i).
+     Now suppose we are given primes p, q, r with pφq and
+(rm - l)/(rmlP - 1) = q. Let R be the additive group of GF(rm).
+Since q | (τm — 1) we see that the multiplicative group of GF(rm) has
+an element ζ of order q. Since p \ m we see that GF(rm) has a field
+automorphism σ of order p. Let G be the set of automorphisms of
+R given by x-^ζ^σ^x).         We see easily that G is a group of order
+pq with a normal subgroup of order q. It is nonabelian since the
+                            mlP                  mlP
+fixed field of σ has size r     and clearly g > r . Thus G = R xPG
+satisfies (ii).
+508                  I. M. ISAACS AND D. S. PASSMAN
+
+      An interesting corollary to Theorem 6.1 is the following.
+
+     COROLLARY 6.5. Let G have r.b.3, that is every irreducible
+character of G has degree at most 3. Then either G has a normal
+abelian subgroup of index ^ 3 or G/Q(G) is isomorphic to one of the
+following groups.
+     ( i ) the elementary abelian group of order 8
+     (ii) the two groups of order 27 and period 3
+     (iii) the symmetric and alternating groups on 4 letters
+     (iv) the dihedral group of order 18 having an elementary
+abelian Sylow 3-subgroup.
+
+     Proof. If G is abelian, the result is clear. If G has a.c.2 or a.c.3,
+then by Theorem C of [2] either G has a normal abelian subgroup of
+index ^ 3 or G/Q(G) has order 8 or 27. Since we can assume that
+G/$(G) has no cyclic subgroup of index ^ 3 , we obtain (i) and (ii).
+     We assume now that G has characters of degree 2 and 3 and thus
+Theorem 6.1 applies. If p — 3, q = 2, then case (ii) of that theorem
+cannot occur since G/A is nonabelian. Since Q is nonabelian in case
+(i) we see that Q/3(G) is type (2, 2) and hence G/3(G) is isomorphic to
+the alternating group A4.
+     Now let p = 2, q = 3. If G is case (i), then as above Q/8(G) is
+type (3,3). Let x,yeQ       generate Q/S(G). Then (x,y)eg(G) and
+(x, y) Φ 1. Since the action of G/Q on G/S(G) is nontrivial and pre-
+serves this commutator, we see easily that the action must be dihedral
+and we obtain (iv). If G is case (ii), then (rm - l)/(rw/2 - 1) = 3 and
+so rmβ = 2. Thus G!S(G) is the extension of a (2, 2) group by the
+nonabelian group of order 6 acting faithfully. Since this group has
+no normal 3-complement, Burnside's transfer theorem implies that the
+normalizer of a Sylow 3-subgroup contains an element of order 2.
+Hence the extension is split and G/S(G) = S4, the symmetric group on
+4 letters.
+
+      We close with a result which generalizes Theorem 3.5(i).
+                          e
+      THEOREM 6.6.Let p be a fixed power of p with e > 1 and let
+G be a group with a nonabelian Sylow psubgroup. Suppose further
+                                                           e
+that if X is a nonlinear irreducible character of G, then p | deg X
+and pe+1 JfάegX. Then G is the direct product of @P(G) with an
+abelian pf-group.
+
+    Proof. By induction on | G |. By Theorem 2,5 (i), G has a normal
+p-complement K. Let P be a Sylow ^-subgroup of G. If PAG,
+then G = P x K and clearly K must be abelian. Suppose G has a
+                 THE DEGREES OF GROUP CHARACTERS II                    509
+
+proper normal subgroup H with p\[G:H],            Let φ be a nonlinear
+irreducible character of H and let X be a constituent of φ*. Then
+X\ H = a^Σjlψi and degX = atdeg(p.          Since at\[G: H] we have
+ I deg φ\p = \ deg X \p = p\ By induction, PAH       and since P is charac-
+teristic in H, PAG      and the result follows.
+      We assume now that K Φ <(Γ> and that G has no proper normal
+               f
+subgroups of p index and we obtain a contradiction. Let λ be a non-
+principal linear character of K which has a linear extension μ on G.
+Then G/ker μ is abelian and not a p-group and thus some H as above
+exists. Since this cannot happen, we see that if φ Φ 1 is any irre-
+ducible character of K, then φ* has no linear constituents. We show
+now that T(φ) A G and that G/T(φ) is elementary abelian of order pe.
+     Note that G/K ~ P is nonabelian and has a.c.p 6 . Let I be a
+constituent of φ*. Then X \ K = a Σ ί <pt and so t\pe.        This yields
+[G/K: T(φ)/K] ^ pe and % ) Δ G by Lemma 3.3 (iii). Now let ζ be
+an irreducible character of T(φ) with ξ\K= b(ζ)-φ. Clearly T(ξ) =
+ Γ(^>) and hence f* is irreducible. Since ξ* is a constituent of cp*, it
+is nonlinear and thus tb(~) = pe. In particular, for all such choices of
+ξ, h(ξ) is the same. Now by Theorem 6 of [1], there exists ξQ with
+b(ζQ) = 1. Thus t = pe and for all such ξ, b(ζ) = 1. Let β be an
+irreducible character of T(φ)/K viewed as one of T(φ). Then ξ = fo/9
+is irreducible and ξ\K = β(l) <p. Therefore β(l) = 1 and r ( ^ ) / i i is
+abelian. As in the latter part of the proof of Lemma 3.4, we see
+that G/T(φ) is elementary abelian of order p\
+     Now let x e K with x Φ 1 and suppose that [P: &P(x)] ^ pe. We
+show that ©p(cc) Δ P and P/QZP(x) is elementary abelian of order p e .
+Let τ be a nonprincipal linear character of <X>. Clearly (£P(cc) fixes τ
+and hence ©P(a?) fixes f (induction to K). Since the degree of τ is
+prime to p we see that (£P(a?) fixes some irreducible constituent 9? of
+τ. Clearly 9 Φ 1 so Γ(^) 3 K<S,P(x) and [G : T(φ)] = pe. Hence Γ(cp) =
+K&P(x) and G/T(φ) = P/QZP(x) is elementary abelian of order p e .
+     Let if have ά nonprincipal irreducible characters and hence k
+nonidentity classes. We have shown that in the action of P on the
+                                   e
+characters of K we have 1 + k/p orbits. Hence by Brauer's Lemma,
+the same is true for the action of P on the classes of K. In particular
+there must exist a class, say Cly, belonging to an orbit of size ^pe
+with y Φ 1. Let S be the subgroup of P fixing this class so that
+[P S] ^ p\ Since \Cly\ is prime to p, there exists xeCly             with
+S S M&). Thus [ P : <£P(α)] ^ P e and by the above P/&P(x) is elemen-
+tary abelian of order p\ Clearly S = QίP(x). Since S Δ - P w e see that
+P/S acts on ^ ( S ) ^ <1>. As above, if ze&κ(S)         with ^ ^ 1 , then
+&P(z) — S. Hence P/S acts fixed point free on &K(S), a contradiction since
+                                       e
+P/S is elementary abelian of order p ^ p\ This completes the proof.
+510                     I. M. ISAACS A N D D. S. PASSMAN
+
+                                   REFERENCES
+
+1. P. X. Gallagher, Group characters and normal Hall subgroups, Nagoya Math. J.
+2 1 (1962), 223-230.
+2. I. M. Isaacs and D. S. Passman, A characterization of groups in terms of the degrees
+of their characters, Pacific J. Math. 15 (1965), 877-903.
+3.           f Half-transitive automorphism groups, Canad. J. Math. 18 (1966), 1243-
+1250.
+4. D. S. Passman, Groups whose irreducible representations have degrees dividing p2,
+Pacific J. Math. 17 (1966), 475-496.
+5.           , Groups with normal, solvable Hall p'-subgroups, Trans. Amer. Math. Soc.
+123 (1966), 99-111.
+6.           , Character kernels of discrete groups, Proc. Amer. Math. Soc. 17 (1966),
+487-492.
+7. A. Speiser, Die Theorie der Gruppen von Endlicher Ordnung, 4 th ed., Birkhauser,
+Basel, 1956.
+8. 0. Taussky and H. Zassenhaus, On the similarity transformation between a matrix
+and its transpose, Pacific J. Math. 9 (1959), 893-896.
+
+Received December 28, 1966.
+
+UNIVERSITY OF CHICAGO
+YALE UNIVERSITY
+                    PACIFIC JOURNAL OF MATHEMATICS
+
+                                            EDITORS
+H. ROYDEN                                                 J. DUGUNDJI
+Stanford University                                       Department of Mathematics
+Stanford, California                                      Rice University
+                                                          Houston, Texas 77001
+J. P. JANS                                                RICHARD ARENS
+University of Washington                                  University of California
+Seattle, Washington 98105                                 Los Angeles, California 90024
+
+                                   ASSOCIATE EDITORS
+E. F. BECKENBACH          B. H. NEUMANN              F. WOLF                    K. YOSIDA
+
+
+                              SUPPORTING INSTITUTIONS
+UNIVERSITY OF BRITISH COLUMBIA                      STANFORD UNIVERSITY
+CALIFORNIA INSTITUTE OF TECHNOLOGY                  UNIVERSITY OF TOKYO
+UNIVERSITY OF CALIFORNIA                            UNIVERSITY OF UTAH
+MONTANA STATE UNIVERSITY                            WASHINGTON STATE UNIVERSITY
+UNIVERSITY OF NEVADA                                UNIVERSITY OF WASHINGTON
+NEW MEXICO STATE UNIVERSITY                            *      *     *
+OREGON STATE UNIVERSITY                             AMERICAN MATHEMATICAL SOCIETY
+UNIVERSITY OF OREGON                                CHEVRON RESEARCH CORPORATION
+OSAKA UNIVERSITY                                    TRW SYSTEMS
+UNIVERSITY OF SOUTHERN CALIFORNIA                   NAVAL ORDNANCE TEST STATION
+
+
+     Mathematical papers intended for publication in the Pacific Journal of Mathematics should
+be in typed form or offset-reproduced, double spaced with large margins. Underline Greek
+letters in red, German in green, and script in blue. The first paragraph or two must be capable
+of being used separately as a synopsis of the entire paper. It should not contain references
+to the bibliography. Manuscripts may be sent to any one of the four editors. All other com-
+munications to the editors should be addressed to the managing editor, Richard Arens, University
+of California, Los Angeles, California 90024.
+    Each author of each article receives 50 reprints free of charge; additional copies may be
+obtained at cost in multiples of 50.
+
+    The Pacific Journal of Mathematics is published monthly. Effective with Volume 16 the price
+per volume (3 numbers) is $8.00; single issues, $3.00. Special price for current issues to individual
+faculty members of supporting institutions and to individual members of the American Mathe-
+matical Society: $ 4.00 per volume; single issues $ 1.50. Back numbers are available.
+    Subscriptions, orders for back numbers, and changes of address should be sent to Pacific
+Journal of Mathematics, 103 Highland Boulevard, Berkeley 8, California.
+    Printed at Kokusai Bunken Insatsusha (International Academic Printing Co., Ltd.), 7-17,
+Fujimi 2-chome, Chiyoda-ku, Tokyo, Japan.
+ PUBLISHED BY PACIFIC JOURNAL OF MATHEMATICS, A NON-PROFIT CORPORATION
+    The Supporting Institutions listed above contribute to the cost of publication of this Journal,
+but they are not owners of publishers and have no responsibility for its content or policies.
+                                Pacific Journal of Mathematics
+                                Vol. 24, No. 3                                      July, 1968
+
+Duane W. Bailey, On symmetry in certain group algebras . . . . . . . . . . . . . . . . .                                          413
+Lawrence Peter Belluce and Surender Kumar Jain, Prime rings with a
+     one-sided ideal satisfying a polynomial identity . . . . . . . . . . . . . . . . . . . . .                                   421
+L. Carlitz, A note on certain biorthogonal polynomials . . . . . . . . . . . . . . . . . . .                                      425
+Charles O. Christenson and Richard Paul Osborne, Pointlike subsets of a
+     manifold . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     431
+Russell James Egbert, Products and quotients of probabilistic metric
+     spaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   437
+Moses Glasner, Richard Emanuel Katz and Mitsuru Nakai, Bisection into
+     small annuli . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       457
+Karl Edwin Gustafson, A note on left multiplication of semigroup
+     generators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     463
+I. Martin (Irving) Isaacs and Donald Steven Passman, A characterization of
+     groups in terms of the degrees of their characters. II . . . . . . . . . . . . . . . . .                                     467
+Howard Wilson Lambert and Richard Benjamin Sher, Point-like
+     0-dimensional decompositions of S 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                          511
+Oscar Tivis Nelson, Subdirect decompositions of lattices of width two . . . . . .                                                 519
+Ralph Tyrrell Rockafellar, Integrals which are convex functionals . . . . . . . . . .                                             525
+James McLean Sloss, Reflection laws of systems of second order elliptic
+     differential equations in two independent variables with constant
+     coefficients . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     541
+Bui An Ton, Nonlinear elliptic convolution equations of Wiener-Hopf type
+     in a bounded region . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .              577
+Daniel Eliot Wulbert, Some complemented function spaces in C(X ) . . . . . . . .                                                  589
+Zvi Ziegler, On the characterization of measures of the cone dual to a
+     generalized convexity cone . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                   603
+

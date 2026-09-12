@@ -1,0 +1,470 @@
+Contemporary Mathematics
+
+
+
+
+                   Character Theory and Group Rings
+
+                                       D. S. Passman
+
+                            Dedicated to Professor I. Martin Isaacs
+
+
+         Abstract. While we were graduate students, Marty Isaacs and I worked to-
+         gether on the character theory of finite groups, studying in particular the
+         character degrees of finite p-groups. Somewhat later, my interests turned to
+         ring theory and infinite group theory. On the other hand, Marty continued
+         with character theory and soon became a leader in the field. Indeed, he has
+         had a superb career as a researcher, teacher and expositor. In celebration of
+         this, it is my pleasure to discuss three open problems that connect character
+         theory to the ring-theoretic structure of group rings. The problems are fairly
+         old and may now be solvable given the present state of the subject. A general
+         reference for character theory is of course Marty’s book [6], while [10] affords
+         a general reference for group rings.
+
+
+
+
+                           1. Character Regular p-Groups
+    As is well known, the degrees of the irreducible complex characters of a finite
+p-group G are all powers of p, and we write e(G) = e if the largest such character
+degree is equal to pe . It is presumably a hopeless task to try to characterize the
+p-groups G with e(G) equal to a specific number e, but it is possible that certain
+of these groups, the ones that do not have a maximal subgroup M with e(M ) =
+e − 1, do in fact exhibit some interesting structure. One possible tool to study this
+situation is based on the following
+    Definition 1.1. If e(G) = e, then G is said to be character regular precisely
+when G is faithfully embedded in the totality of its irreducible representations of
+degree pe , or equivalently when
+                                 \
+                                      ker χ = 1.
+                                      χ(1)=pe
+
+    One can use this concept, for example, to obtain information on the center of
+certain subgroups of G. Specifically, we have
+
+    2000 Mathematics Subject Classification. 16S34, 20C15.
+    Research supported in part by an NSA grant.
+
+                                                                            c 0000 (copyright holder)
+
+                                                1
+2                                     D. S. PASSMAN
+
+
+    Lemma 1.2. Let H ⊳G be p-groups with e(H) = e(G). If H is character regular,
+then Z(H) ⊆ Z(G).
+     Proof. If h ∈ Z(H) and g ∈ G, then the commutator x = [h, g] is contained
+in H since H ⊳ G. Now let χ be any irreducible character of H of degree pe , where
+e = e(H), and let X be its corresponding representation. Since e(G) is also equal
+to e, it follows that χ is the restriction of a character χ′ of G with corresponding
+representation X′ . Now X(h) is a scalar matrix, so the same is true of X′ (h). Hence
+X′ (x) = [X′ (h), X′ (g)] = 1, and x ∈ H ∩ ker χ′ = ker χ. Since χ is an arbitrary
+character with χ(1) = pe , x is contained in the kernels of all characters of H of
+largest degree. In particular, since H is character regular, we conclude that x = 1
+and hence that [h, g] = 1. But g ∈ G is arbitrary, so h ∈ Z(G), as required.       
+    As it turns out, not all p-groups are character regular. Indeed, we have [8]
+    Lemma 1.3. For any e ≥ p, there exists a p-group G with e(G) = e that is not
+character regular.
+     Proof. Let H1 , H2 , . . . , He be e nonabelian groups of order p3 and let H be
+the direct product H = H1 × H2 × · · · × He . Since e(Hi ) = 1, it is clear that H
+has character degrees pk for k = 0, 1, . . . , e, and hence e(H) = e. Furthermore, if
+W denotes the center of H, then W = W1 × W2 × · · · × We , where Wi is the center
+of Hi and has order p.
+     Now let Z be an elementary abelian group of order p2 , so that Z has p + 1
+subgroups of order p, say Z0 , Z1 , . . . , Zp . Since e ≥ p, we can define a homomor-
+phism θ : W → Z so that θ(Wi ) = Zi for i = 1, 2, . . . , p − 1 and θ(Wi ) = Zp for
+i = p, p + 1, . . . , e. If N = ker θ, then N is a central and hence normal subgroup of
+H, and we let G = H/N . Clearly    T W/N = Z is the center of G, and we now show
+that e(G) = e and that Z0 = χ(1)=pe ker χ.
+     To this end, for i = 0, 1, . . . , p, let Ni = θ−1 (Zi ). Then the Ni are the p + 1
+subgroups of W of index p that contain N . Observe that Ni = N Wi for i =
+1, 2, . . . , p − 1 and that Np = N Wi for i = p, p + 1, . . . , e. Now suppose χ is a
+character of H with W ∩ ker χ = N0 . Then χ is a product χ = χ1 χ2 · · · χe , where
+χi is an irreducible character of Hi . Furthermore, Wi is not contained in the kernel
+of χi , since otherwise ker χ contains N0 Wi = N , a contradiction. Thus each χi has
+degree p, so χ has degree pe . Since ker χ ⊇ N , χ corresponds to a character of
+G = H/N and hence e(G) = e.
+     Conversely, let χ be a character of G of degree pe and view χ as a character of
+H. Again χ is a product χ = χ1 χ2 · · · χe and, since χ(1) = pe , it follows that each
+χi has degree p. Thus Wi is not contained in ker χi and hence Wi is not contained
+in ker χ. But, we know that W ∩ ker χ must be one of the p + 1 subgroups of W
+of index p that contain N . Since ker χ cannot contain N1 , N2 , . . . , or Np , it follows
+that ker χ ⊇ N0 . T    Viewed in G, this says that ker χ ⊇ N0 /N = Z0 and we conclude
+easily that Z0 = χ(1)=pe ker χ, as claimed.                                              
+    This leads to the problem we pose in this section, namely
+    Problem 1.4. Let G be a finite p-group with e(G) = e. If p > e, must G be
+character regular?
+    This is known to be the case at least for
+                                           T e = 1 and 2. Furthermore, one can
+show that if e(G) = e, then the subgroup χ(1)=pe ker χ has order bounded by a
+                        CHARACTER THEORY AND GROUP RINGS                                    3
+
+
+function of pe . Indeed, this is a special case of a result concerning arbitrary finite
+groups [9]. As will be apparent, the proof of the latter is totally ring theoretic.
+    Proposition 1.5. Let G T be an arbitrary finite group having an irreducible
+character of degree ≥ n. Then χ(1)≥n ker χ has order at most (2n − 2)!.
+    Proof. For each integer k ≥ 1, let
+                                           X
+              sk (x1 , x2 , . . . , xk ) =   (−)σ xσ(1) xσ(2) · · · xσ(k)
+                                         σ∈Symk
+
+denote the standard polynomial over the complex numbers K in the k noncommut-
+ing variables x1 , x2 , . . . , xk . Observe that sk is linear in each of its variables, and a
+result of Amitsur and Levitzki [1] asserts that the full matrix ring Mℓ (K) satisfies
+s2k = 0 if and only if ℓ ≤ k. In other words, if we evaluate s2k on any 2k elements
+of Mℓ (K), then we always obtain 0 precisely when ℓ ≤ k.
+    Now the complex group ring K[G] is a direct sum of full matrix rings over K
+and, since G has an irreducible representation of degree ≥ n, it is clear that K[G]
+does not vanish on s2n−2 . In particular, by the multilinearity of the polynomial,
+there exist group elements g1 , g2 , . . . , g2n−2 ∈ G such that
+                       0 6= α = s2n−2 (g1 , g2 , . . . , g2n−2 ) ∈ K[G].
+The definition of s2n−2 as a sum over σ ∈ Sym2n−2 implies that α has support
+size ≤ (2n − 2)!. In other words, at most (2n − 2)! group elements have nonzero
+coefficients in the representation of α ∈ K[G] as a K-linear sum of group elements.
+Furthermore, by the Amitsur-Levitzki result, α projects to 0 in the direct summand
+of K[G] consisting of T all matrix rings of degree < n.
+     Now write N = χ(1)≥n ker χ. If x ∈ N , then by definition, 1 − x projects
+to 0 in the direct summand of K[G] consisting of all matrix rings of degree ≥ n.
+In particular, α(1 − x) = 0 and hence α = αx. It follows that if S ⊆ G denotes
+the support of α, then S = Sx and hence N permutes the elements of S via right
+multiplication. But this multiplication action is semiregular, so we conclude that
+|N | ≤ |S| ≤ (2n − 2)! and the proposition is proved.                            
+
+     At this point, it is not clear how or if the above argument can be extended. One
+could look for a multilinear polynomial identity for Mn (K) with a small number
+of monomials, but these do not exist. On the other hand, if we are willing to
+increase the number of monomials, we could replace s2n−2 by a central polynomial
+for Mn (K). This is a polynomial in noncommuting variables that maps Mn (K)
+nontrivially to its center, and as a consequence is a polynomial identity for all matrix
+rings of smaller degree. With such a central polynomial, we would then be able
+to find an element α as above that is central in K[G], but this centrality does not
+seem to be of use here. Presumably, Problem 1.4 will require a character-theoretic
+proof of some sort assuming the conjecture turns out to be correct.
+
+                       2. Simple Twisted Group Algebras
+    Let G be a finite group and let K be a field. Then a twisted group algebra K t G
+is an associative K-algebra having basis G = {g | g ∈ G} and with multiplication
+given by x y = µx,y xy for all x, y ∈ G, where µx,y ∈ K • . For example, if all
+µx,y = 1, then K t G = K[G] is the ordinary group algebra. It is easy to check that
+4                                   D. S. PASSMAN
+
+
+the associativity of K t G is equivalent to the map µ : G × G → K • being a 2-cocycle
+on G, but associativity is the more natural condition to work with.
+     Twisted group algebras are of course related to projective representations of
+groups. Indeed, if X : K t G → Mn (K) is an irreducible representation, then the
+formula X(x) X(y) = µx,y X(xy) describes a projective representation of G. Al-
+ternatively, suppose H is a group with a cyclic central subgroup Z and suppose
+λ : Z → K • is a faithful linear character of Z. Then we can use λ to identify Z
+with the subgroup λ(Z) ⊆ K • . Indeed, if I is the ideal of K[H] generated by all
+z − λ(z), with z ∈ Z, then K[H]/I is easily seen to be a twisted group algebra of
+G = H/Z. The converse, however, is not true in general unless we assume K to be
+algebraically closed.
+     Lemma 2.1. Let K t G be a twisted group algebra of the finite group G over an
+algebraically closed field K. Then there exists a finite group H, with central cyclic
+subgroup Z, such that G ∼  = H/Z. Furthermore, there is a faithful linear character
+λ : Z → K • such that K t G ∼ = K[H]/I, where I is the ideal of K[H] generated by
+the elements z − λ(z) for all z ∈ Z.
+     Proof. Let G = {kx | x ∈ G, k ∈ K • } be the group of trivial units of K t G.
+Then the map G → G given by kx 7→ x is a group epimorphism with kernel Z = K • .
+In other words, G/Z ∼  = G and, since Z is central in G, the group G is center-by-
+finite. A result of Schur [11] now implies that the commutator subgroup G′ is finite.
+To proceed further, we need K to be algebraically closed.
+     For each x ∈ G, we know that xo(x) ∈ Z, where o(x) is the order of x. Hence,
+since K is algebraically closed, we can choose a ∈ K with ao(x) = xo(x) . It follows
+that x̃ = a−1 x ∈ G has finite order o(x), and we let H be the subgroup of G
+generated by all x̃, one for each x ∈ G. Then H is finitely generated by elements of
+finite order and, since H ′ ⊆ G′ is finite, it follows that H is a finite subgroup of G.
+Furthermore, H maps onto G via the map of the preceding paragraph, and hence
+H/Z ∼ = G where Z = H ∩ Z.
+     Certainly Z is cyclic, since it is a finite subgroup of K • , and indeed the embed-
+ding λ : Z → K • is a faithful linear character of Z. Furthermore, the embedding
+H → G gives rise to an epimorphism K[H] → K t G, and the kernel I of this map
+contains the elements z − λ(z) for all z ∈ Z. In fact, I is generated by all z − λ(z)
+since any transversal for Z in H has a linearly independent image in K t G.           
+     Some version of the algebraically closed assumption is certainly needed in the
+above. To see this, suppose G = hgi is cyclic of order n > 1 and let K be the field
+of rational numbers. Then K[x]/(xn − 2) is isomorphic to a twisted group algebra
+of G, with g corresponding to the image of the variable x. Note that gn = 2 so,
+since K is the rational field, no scalar multiple of g can have finite order in G. In
+particular, K t G cannot be a natural homomorphic image of the group ring K[H]
+for any finite group H.
+     While we have the above notation in mind, let us point out the following ob-
+servation that is usually proved by cohomological considerations.
+     Lemma 2.2. If K is an algebraically closed field of characteristic p and if G
+is a finite p-group, then any twisted group algebra K t G is naturally isomorphic to
+K[G].
+     Proof. Notice that H/Z ∼   = G, so H is also nilpotent. In particular, we can
+write H = P × Q, where P is its Sylow p-subgroup and Q its p-complement.
+                        CHARACTER THEORY AND GROUP RINGS                                     5
+
+
+Obviously P maps onto G, so we can assume that H = P . But then Z is isomorphic
+to a p-subgroup of K • , so Z = 1 and K t G ∼
+                                            = K[H] ∼
+                                                   = K[G].                   
+
+    Of course, ordinary group algebras are never simple since they always have
+a proper augmentation ideal. But twisted group algebras can be simple and the
+question of interest here is
+   Problem 2.3. When is a twisted group algebra K t G simple? In particular, is
+G necessarily a solvable group?
+     If K is an algebraically closed field of characteristic 0, then Lemma 2.1 and its
+notation imply that K t G is simple if and only if the group H is of central type.
+In other words, this occurs if and only if H has a unique irreducible character χ
+whose restriction χZ to Z has λ as a constituent. From a ring-theoretic point of
+view, this is why groups of central type are so interesting. Furthermore, we know
+from the fundamental paper [5] of Howlett and Isaacs that groups of central type
+are necessarily solvable. Thus G = H/Z is also solvable.
+     Recall that a K-algebra A is said to be central simple if A is simple and has
+center K. As is well known, if A is central simple, then so is any F -algebra F ⊗K A,
+where F is a field extension of K. In particular, if K t G is central simple and if K
+                                                       t
+is the algebraic closure of K, then K ⊗K K t G = K G is also simple and the above
+yields
+    Proposition 2.4. If K is a field of characteristic 0 and K t G is central simple,
+then G is solvable.
+    So the real problem in extending [5] to arbitrary characteristic 0 fields is the
+presence of additional central elements. Now it is easy to describe the center of any
+twisted group algebra. To this end, given K t G and x ∈ G, we define
+                              CtG (x) = {y ∈ G | x y = y x}.
+Then it is clear that CtG (x) is a subgroup of G contained in the centralizer CG (x).
+Indeed, if g ∈ CG (x), then g x = τ (g) x g, where τ : CG (x) → K • is a linear
+character with kernel CtG (x). If CtG (x) = CG (x), then the conjugacy class of x is
+said to be special, and it is easy to see that the center of K t G is the K-linear span
+of the class sums of all such special classes.
+    Of course, if K t G is simple, then its center F is a finite field extension of K,
+and the behavior of F under further field extensions of K is well known. We offer
+a quick proof below.
+     Lemma 2.5. Let F/K be a finite separable extension of fields and let L ⊇ F
+contain the Galois closure of F . Then L ⊗K F = L1 ⊕ L2 ⊕ · · · ⊕ Ln , a direct sum
+of n = |F : K| copies of L. Furthermore, the embedding of F into this direct sum
+is given by a 7→ σ1 (a) ⊕ σ2 (a) ⊕ · · · ⊕ σn (a), where σ1 , σ2 , . . . , σn : F → L are the n
+distinct K-linear embeddings of F into L.
+    Proof. The primitive element theorem tells us that F = K[α], and we let
+g(x) be the minimal monic polynomial of α overQ      K. Then F ∼  = K[x]/(g(x)), so
+         ∼
+L ⊗K F = L[x]/(g(x)). But g(x) splits in L as ni=1 (x − αi ), so L[x]/(g(x)) ∼       =
+L1 ⊕ L2 ⊕ · · · ⊕ Ln , as required. Furthermore, since the image of x in Li is αi , the
+embedding of F is determined by α 7→ α1 ⊕ α2 ⊕ · · · ⊕ αn .                          
+6                                  D. S. PASSMAN
+
+
+     As a consequence, we see that if K t G is simple, with char K = 0, and if K
+                                         t
+is the algebraic closure of K, then K G = K ⊗K K t G is a direct sum of full
+matrix rings over K that correspond to a full set of Galois conjugate projective
+representations of G. In terms of the lifted group H, where H/Z ∼     = G, this says
+that the irreducible characters of H that extend the linear character λ : Z → K • are
+all Galois conjugate. So one wonders whether the methods of [5] can be extended
+to handle this situation.
+     We briefly mention what happens in characteristic p. To start with, any simple
+algebra is certainly semisimple, so the following is relevant.
+    Lemma 2.6. Let K t G be a semisimple twisted group algebra.
+      i. If H is a subgroup of G, then K t H is semisimple.
+     ii. If K has characteristic p > 0 and if P is a Sylow p-subgroup of G, then
+         K t P is a purely inseparable field extension of K. It follows that G has a
+         normal p-complement.
+     Proof. (i) First note that there is a K-linear projection map θ : K t G → K t H
+given by θ(x) = x if x ∈ H and θ(x) = 0 if x ∈ G \ H. It is easy to see that θ
+is a (K t H, K t H)-bimodule homomorphism. Next, observe for a finite dimensional
+K-algebra A, semisimplicity is equivalent to von Neumann regularity. The latter,
+of course, asserts that for all α ∈ A, there exists α′ ∈ A with αα′ α = α. Finally,
+let α ∈ K t H. Since K t G is semisimple, there exists α′ ∈ K t G with αα′ α = α.
+Applying the bimodule map θ now yields α = θ(α) = θ(αα′ α) = α θ(α′ ) α, and
+consequently K t H is semisimple.
+     (ii) In view of (i), we know that K t P is semisimple. Furthermore, by Lemma 2.2,
+   t
+K P ∼  = K[P ], where K is the algebraic closure of K. If I denotes the copy of the
+                                                   t
+augmentation ideal of K[P ] in K t P , then K P/I ∼     = K and I is nilpotent. Thus,
+since K t P is semisimple, we have K t P ∩ I = 0 and consequently K t P embeds in
+   t
+K P/I ∼   = K. It follows that K t P is isomorphic to a subfield of K containing K.
+Since it is generated by the various x, with x ∈ P , and since xo(x) ∈ K, we see that
+K t P is purely inseparable over K.
+     Finally, let g ∈ NG (P ). Then conjugation by g induces a field automorphism
+of K t P fixing K. But K t P is purely inseparable over K, so this automorphism
+must be trivial. Clearly this implies that NG (P ) = CG (P ) and hence that G has a
+normal p-complement.                                                                
+    It is a well known character-theoretic result that Hall subgroups of groups
+of central type are also of central type. Since the proof of this fact merely uses
+dimensions of modules, it carries over to twisted group algebras over any field. We
+include the simple argument.
+    Lemma 2.7. Let K t G be a simple twisted group algebra and let H be a Hall
+π-subgroup of G. Then K t H is also simple.
+     Proof. Since K t G is simple, its regular module R(G) is equal to aV , where the
+simple module V occurs with multiplicity a. Furthermore, since K t H is semisimple,
+we have R(H) = bW +U , where the simple K t H-module W occurs with multiplicity
+b and where U denotes a sum of other simple modules. The goal is to show that
+U = 0. Now K t G is a free K t H-module of rank |G : H|, so restricting to K t H
+yields |G : H| (bW + U ) = |G : H| R(H) = R(G)H = aVH . It follows that a divides
+|G : H| b, so |a|π divides b, since |G : H| is a π ′ number.
+                       CHARACTER THEORY AND GROUP RINGS                                   7
+
+
+    Next, module induction tells us that W G = cV for some multiplicity c. Thus,
+by dimension considerations, we have c dim V = dim W G = |G : H| dim W , so
+dim V divides |G : H| dim W and hence | dim V |π divides dim W . We conclude
+that |H| = |G|π = |a dim V |π divides b dim W . But b dim W + dim U = |H|, so we
+must have U = 0 and hence K t H is simple.                                     
+     Finally, if K t G is simple and K has characteristic p > 0, then we know that
+G has a normal complement N . Furthermore, the preceding lemma implies that
+K t N is also simple. Since the ordinary and modular character theory of N agree,
+modular simplicity of K t N surely lifts to the characteristic 0 case. Thus, there may
+be nothing new to say in characteristic p.
+
+               3. The Number of Irreducible Representations
+     If K is the field of complex numbers, or any algebraically closed field of charac-
+teristic 0, then we know that the number n of irreducible representations of K[G] is
+equal to the dimension of the center of the algebra and hence equal to the number
+of conjugacy classes of the group G. Furthermore, the class equation then yields
+                                      1    1                 1
+                                 1=     +     + ···+
+                                     c1   c2                cn
+where ci is the order of the centralizer of an element in the ith conjugacy class.
+In particular, if the first class corresponds to the identity element, then c1 = |G|.
+As Landau [7] pointed out, if we are given n, then equations as above have only
+finitely many positive integer solutions c1 , c2 , . . . , cn , and as a consequence one has
+     Proposition 3.1. If K is the field of complex numbers and if K[G] has pre-
+cisely n irreducible representations, then |G| is bounded by a function of n.
+      The above proof is elementary, but it is an accident of number theory. On
+the other hand, it can presumably be replaced by a very much harder argument
+using the classification of the finite simple groups [3]. For example, suppose that
+G 6= 1 has precisely n conjugacy classes, and let us further assume that G has no
+nonidentity finite solvable normal subgroup. Then the socle H of G is a finite direct
+product H = H1 × H2 × · · · × Hk of nonabelian simple groups Hi , and G permutes
+these factors by conjugation. In particular, if 1 6= hi ∈ Hi , then the k elements
+h1 , h1 h2 , h1 h2 h3 , . . . cannot be G-conjugate and hence k ≤ n. Furthermore, if x and
+y are nonidentity elements of the same Hi and if xg = y, then g must normalize Hi
+and hence this conjugation corresponds to the action of an element of Aut(Hi ).
+      In other words, if we can use the classification of finite simple groups to bound
+the order of a simple group in terms of the number of conjugacy classes it contains in
+its automorphism group, then we can bound each |Hi | and hence |H|. Since G acts
+faithfully by conjugation on H, this therefore bounds |G|. Furthermore, solvable
+normal subgroups of G can be handled using the following simple observation.
+    Lemma 3.2. Let G have precisely n conjugacy classes and let 1 6= A ⊳ G. Then
+G/A has at most n − 1 classes. Furthermore, if A is abelian, then |A| ≤ n |G/A|.
+                              Sn
+    Proof. We have G = i=1 Ci , a union of n conjugacy classes and hence
+               Sn
+G = G/A = i=1 C i . Of course, in the latter union there may be overlap and
+indeed any class contained in A is merged with the identity class. Finally, if A
+is abelian, then the classes contained in A are precisely the orbits in A under the
+8                                    D. S. PASSMAN
+
+
+conjugation action of G/A. Since each orbit has size ≤ |G/A| and since there are
+at most n classes in A, we have |A| ≤ n |G/A|, as required.                   
+    A priori, there seems to be little virtue in the latter argument. But if we change
+the problem to deal with fields of characteristic p, then the simple number-theoretic
+observation no longer applies. As was proved by Brauer [2], if K is an algebraically
+closed field of characteristic p > 0, then the number of irreducible representations
+of K[G] is precisely the number of p-regular classes in G. So we pose the following
+    Problem 3.3. Let G have precisely n irreducible representations over an alge-
+braically closed field of characteristic p > 0. How much of the structure of G can
+be bounded by a function of n, possibly depending upon p?
+     Note that the irreducible representations of G in characteristic p are pre-
+cisely the irreducible representations of G/Op (G). Thus, we cannot hope to bound
+|Op (G)| in the above context. But there are more examples of interest. To start
+with, let q be a Fermat prime, so that q = 1 + 2m . Then the cyclic group Z2m
+of order 2m acts on Zq , and we can form the semidirect product G = Zq ⋊ Z2m .
+Here, we are taking p = 2, and it is easy to see that there are just n = 2 classes in
+G that are 2-regular. Thus, n = 2, p = 2 and O2 (G) = 1. But the order of G is
+big and so is the order of O2′ (G) = Zq . In particular, if there exist infinitely many
+Fermat primes, then we cannot hope to bound |Op′ (G)| as a function of n and p,
+when Op (G) = 1.
+     We can use other prime equations to get similar examples for all primes p. To
+this end, fix the integer d and suppose q is a prime power of the form q = 1 + dpm .
+Then Zpm acts faithfully on Eq , an elementary abelian group of order q, and we
+can form the semidirect product G = Eq ⋊ Zpm . Here, it is easy to see that there
+are just n = d + 1 classes in G that are p-regular, and of course Op (G) = 1. Again
+the order of G is big and so is the order of Op′ (G) = Eq . Thus, if the equation
+q = 1 + dpm has infinitely many solutions with q a prime power, then we cannot
+hope to bound |Op,p′ (G)/Op (G)| as a function of n and p.
+     Now, let us return to positive results and a consideration of nonabelian simple
+groups. For example, if G = Altm with m > 6, then we know that Aut(G) = Symm ,
+and consequently elements of G are conjugate in Aut(G) if and only if they have the
+same cycle structure. In particular, cycles of odd length 1, 3, 5, . . . are contained in
+G and are not conjugate in Aut(G). Furthermore, if we account for the relatively
+sparse number of cycles with length divisible by p, we see that G contains at least
+m/4 conjugacy classes in Aut(G) consisting of p-regular elements. The following
+result is due to Guralnick [4]. Part of its proof uses the obvious fact that elements
+of different order in G cannot be conjugate in Aut(G).
+    Theorem 3.4. Let G be a finite nonabelian simple group and let p be a prime.
+Suppose G contains at most n conjugacy classes of Aut(G) that are p-regular. Then
+|G| is bounded by a fixed function of n that does not depend upon p.
+    Proof. (Sketch) We can of course ignore the finitely many sporadic groups,
+so we need only assume that G is alternating or a Chevalley group. We already
+discussed the alternating groups, but it is best to mention another approach here.
+Indeed, if G = Altm , then there can be at most n primes that are less than or equal
+to m. Hence the prime number theorem bounds m and |G|.
+    Now let G be a Chevalley group of rank r over a field of size q. To start with,
+we bound the rank r. For this, note that if r ≥ 8, then the Weyl group of G involves
+                         CHARACTER THEORY AND GROUP RINGS                                       9
+
+
+Symm , where m = r or r + 1. But then m! divides |G|, so there can be at most n
+primes that are ≤ m. Again, the prime number theorem bounds m and hence r.
+Since r can now be fixed, it suffices to consider a specific family of simple groups
+of specific rank and bound the field size q. Here we note that |Aut(G)|/|G| is at
+most c· log q, for some constant c, so it suffices to show that the number of p-regular
+classes of G grows, as a function of q, more quickly than log q.
+     To this end, suppose first that G contains a copy of SL2 (q) or of PSL2 (q). If q
+is even, then it follows that G contains cyclic subgroups of relatively prime orders
+q − 1 and q + 1. On the other hand, if q is odd, then G contains cyclic subgroups
+of relatively prime orders (q − 1)/2 and (q + 1)/2. We conclude that G has a cyclic
+subgroup C of order prime to both p and q, and with |C| ≥ (q −1)/2. Now embed C
+in a maximal torus T of G. Then the number of NG (T )-conjugacy classes contained
+in C is at least (q − 1)/2|W |, where W = NG (T )/T has order bounded by the size
+of the Weyl group of G. Furthermore, it follows from the BN -pair description of G
+that any two semisimple elements in a given maximal torus T are conjugate in G
+if and only if they are conjugate in NG (T ). We conclude that G contains at least
+(q − 1)/2|W | classes of p-regular elements, and this linear function of q certainly
+increases more quickly than a logarithmic function.
+     Finally, using Dynkin diagrams, it is easy to verify that the only groups that
+do not contain a copy of SL2 (q) or of PSL2 (q) are the Suzuki groups. Indeed,
+since |Sz(q)| is prime to 3, these groups cannot possibly contain such linear groups.
+Nevertheless, one can check that the Suzuki groups have tori of relatively prime
+orders and of size linear in q. Thus the result follows in this case also.           
+     As a consequence of the above and the methods discussed previously, we obtain
+                                                                  ′
+the following partial answer to Problem 3.3. Here, of course, S/Op (S) is the largest
+homomorphic image of S that is a p′ -group.
+     Corollary 3.5. Let the finite group G have precisely n irreducible represen-
+tations over an algebraically closed field of characteristic p > 0. If S is the largest
+                                              ′
+normal solvable subgroup of G, then |G/Op (S)| is bounded by a fixed function of
+n, independent of p.
+    It remains to be seen whether this result can be improved. Finally, I would like
+to thank Prof. Guralnick for allowing me to include his Theorem 3.4 in this paper.
+
+
+                                         References
+ [1] S. A. Amitsur and J. Levitzki, Minimal identities for algebras, Proc. AMS 1 (1950), 449–463.
+ [2] R. Brauer, Zur Darstellungstheorie der Gruppen endlicher Ordnung, Math. Z. 63 (1956),
+     406–444.
+ [3] D. Gorenstein Finite Simple Groups: An Introduction to their Classification, Plenum Press,
+     New York, 1982.
+ [4] R. M. Guralnick, private communication, 2010.
+ [5] R. B. Howlett and I. M. Isaacs, On groups of central type, Math. Z. 179 (1982), 555–569.
+ [6] I. M. Isaacs, Character Theory of Finite Groups, AMS Chelsea Publishing, Providence, RI,
+     2006.
+ [7] E. Laudau, Klassenzahl binarer quadratischer Formen von negativer Discriminante, Math.
+     Annalen 56 (1903), 674–678.
+ [8] D. S. Passman, Groups whose irreducible representations have degrees dividing p2 , Pacific J.
+     Math. 17 (1966), 475–496.
+ [9]         , Character kernels of discrete groups, Proc. AMS 17 (1966), 487–492.
+10                                      D. S. PASSMAN
+
+
+[10]        , The Algebraic Structure of Group Rings, Krieger Publishing, Malabar, Florida, 1985.
+[11] I. Schur, Über die Darstellung der endlichen Gruppen durch gebrochene lineare Substitutio-
+     nen, J. Reine Angew. Math. 127 (1904), 20–50.
+
+    Department of Mathematics, University of Wisconsin-Madison, Madison, Wisconsin
+53706, USA
+    E-mail address: passman@math.wisc.edu
+

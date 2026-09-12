@@ -2085,3 +2085,20 @@ elementary partial remain unresolved; complete candidate count stays 37.
 
 The n=7 snapshot at 00:27:52 has 24,190,000 checked nodes, six live
 workers and no completed shard. No n=7 conclusion is claimed.
+
+
+## 2026-09-12T00:46:05.091615+00:00 — 18.77 small-class partial frozen
+
+A Pfaffian/interpolation proof over Z/p^k establishes that largest-degree
+characters separate every finite p-group of class less than p when e<p.
+A homogeneous-polynomial strengthening detects any p-e nonidentity
+elements simultaneously. The all-class-two consequence is prior by
+Isaacs--Passman1968, Theorem1.5; its original pages were read and viewed.
+The finite Kirillov theorem is an explicit imported input with scope
+recorded. The 32-file audit replays 22,063 initial parameter values,
+5,772 further values and 578 forbidden-hyperplane sets, plus the Z/25
+divided-Pfaffian control. All actual processes and audit exit zero.
+No general answer or priority claim; complete candidate count stays37.
+
+The 00:40:06 n=7 snapshot has24,570,000 checked nodes, six live
+workers and no completed shard. Its certificate still has no proof status.

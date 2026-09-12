@@ -1,0 +1,1161 @@
+    ENUMERATING CLASSES AND CHARACTERS OF p-GROUPS
+
+                                    E. A. O’BRIEN AND C. VOLL
+
+
+         Abstract. We develop general formulae for the numbers of conjugacy classes and
+         irreducible complex characters of finite p-groups of nilpotency class less than p. This
+         allows us to unify and generalize a number of existing enumerative results, and to
+         obtain new such results for generalizations of relatively free p-groups of exponent p.
+         Our main tools are the Lazard correspondence and the Kirillov orbit method.
+
+
+
+
+                                         1. Introduction
+   The study of the conjugacy classes and irreducible complex characters of groups is
+an active area of research. The enumeration of classes and characters of finite groups
+of Lie type, for instance, has played an important role in the work of Liebeck, Shalev
+and others; see, for instance, [25]. Motivated by a conjecture of Higman [13], the classes
+and characters of upper-unitriangular groups have been extensively studied; see, for
+example, [18, 30].
+   ‘Representation growth of groups’ is an umbrella term for the asymptotic and arith-
+metic properties of group representations as a function of their dimensions. A key tool
+in the study of representation growth is the Kirillov orbit method. Where applicable,
+it provides a parameterization of the irreducible complex representations of a group in
+terms of co-adjoint orbits. It was pioneered by Kirillov in the realm of nilpotent Lie
+groups and later adapted to other classes of groups, including p-adic analytic groups,
+finitely generated nilpotent groups, and finite p-groups; see [10, 14, 15, 20]. Under cer-
+tain conditions the linearization achieved by this method facilitates a description of the
+numbers of characters of a group in terms of geometric data attached to the dual of a
+Lie algebra associated with the group, such as the numbers of rational points of certain
+algebraic subvarieties.
+   Let p be a prime. In this paper we employ the Kirillov orbit method to study the
+classes and characters of finite p-groups of nilpotency class less than p. Let G be a finite
+p-group. For i ≥ 0, we define
+               cci (G) = #{conjugacy classes of G of cardinality pi } and
+              chi (G) = #{irreducible complex characters of G of degree pi }.
+The vectors cc(G) = (cci (G))i and ch(G) = (chi (G))i are the class vector and the
+character vector of G, respectively. We denote by cs(G) = {pi : cci (G) 6= 0} the class
+sizes of G and by cd(G) = {pi : chi (G) 6= 0} the character degrees of G. We write
+                                     X             X
+                            k(G) =       cci (G) =    chi (G)
+                                            i               i
+for the class number of G.
+
+   2000 Mathematics Subject Classification. 20C15, 20D15.
+   Key words and phrases. finite p-groups, character degrees, conjugacy class sizes, Kirillov orbit meth-
+ods, Lazard correspondence, relatively free p-groups.
+2                                      E. A. O’BRIEN AND C. VOLL
+
+   Let c be the nilpotency class of G, and assume that c < p. Let g = log(G) be the finite
+Lie ring associated to G by the Lazard correspondence. We associate to G a subset S(G)
+of g/z × gb0 , where z denotes the centre of g and gb0 = HomZ (g0 , C× ) the Pontryagin dual
+of the derived Lie ring g0 . In Theorem A we show that the class and conjugacy vectors
+of G may be described in terms of the cardinalities of fibres of the natural projections
+from S(G) onto g/z and gb0 .
+   Theorem B gives a geometric description of the class and character vectors of certain
+p-groups and describes the variation of these vectors under ‘extension of scalars’. More
+precisely, let o be a compact discrete valuation ring of characteristic zero with residue
+field k of characteristic p. Theorem B asserts that if g is a finite, nilpotent o-Lie algebra
+of class c < p, and g0 or, equivalently, g/z, is a k-vector space, then computing class and
+character vectors of the p-group exp(g) associated to g under the Lazard correspondence
+is equivalent to enumerating k-rational points of degeneracy loci of certain ‘commutator
+matrices’ associated with g. Moreover, the formulae given in Theorem B are uniformly
+valid for groups of the form exp(g ⊗o O), where O is a finite, unramified extension of o.
+   The Lie algebra g may be obtained by base change from a globally defined object,
+such as a nilpotent Z-Lie algebra. For some of the groups obtained from such Lie
+algebras, Theorem B yields formulae which are uniform under variation of both the
+cardinality and the characteristic of the residue field. Consider, for instance, the free
+Fq -Lie algebras fr,c (Fq ) on r generators and of nilpotency class c, where Fq is a finite
+field of characteristic p > c. These algebras are of the form fr,c (Fq ) = fr,c (Z) ⊗Z Fq ,
+where fr,c (Z) is the free nilpotent Z-Lie algebra of class c on r generators. Theorem B
+applies to the groups Fr,c (Fq ) := exp(fr,c (Fq )).
+   In Section 2 we state Theorems A and B, together with some applications to groups
+of the form Fr,c (Fq ). Our main tools are the Lazard correspondence for p-groups of
+nilpotency class c < p and the Kirillov orbit method for such groups. In Section 3 we
+review these tools and use them to prove Theorems A and B. In Section 4 we apply these
+results to uniformize a number of existing enumerative results on classes and characters
+of p-groups. In Section 5 we prove new results for the groups Fr,c (Fq ), including those
+stated in Section 2. They extend and generalize results of Ito and Mann [19] for the
+relatively free groups of exponent p.
+
+1.1. Notation. We denote the cardinality of a set S by either #S or |S|. We write N for
+the set {1, 2, . . . } of natural numbers. For I ⊆ N and c ∈ R, we write I0 for I ∪ {0} and
+cI0 for {ci : i ∈ I0 }. Given a, b ∈ N0 we define [a] = {1, . . . , a} and [a, b] = {a, . . . , b}.
+For x ∈ R we set bxc := max{m ∈ Z : m ≤ x}. If I is any ordered set then we write
+I = {i1 , . . . , il }< to indicate that i1 < · · · < il . Given a proposition P , the ‘Kronecker
+delta’ δP is 1 if P holds and 0 otherwise. If n1 , . . . , nr ∈ N0 and f ∈ N, we write
+(n1 , . . . , nr )f for the vector
+
+                      (n1 , 0, . . . , 0, n2 , 0, . . . , 0, . . . , nr , 0, . . . , 0) ∈ Nf0 r ;
+                            | {z }             | {z }                     | {z }
+                                f −1              f −1                     f −1
+
+if f = 1 we drop the subscript.
+   Given a ring R, an R-Lie algebra g is an R-algebra with a ‘Lie bracket’, that is to
+say an R-bilinear map [ , ] : g × g → g which is skew-symmetric and satisfies the Jacobi
+identity. A Lie ring is a Z-Lie algebra. We write [u, v, w, . . . ] for the left-normed Lie
+product [. . . [[u, v], w] . . . ] ∈ L, and [u,i v] denotes the Lie product [u, v, . . . , v] with i
+occurrences of v.
+           ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                           3
+
+   Throughout this paper, o is a compact discrete valuation ring of characteristic zero,
+viz. a finite extension of the p-adic integers Zp , with maximal ideal p and residue field
+k = o/p of characteristic p. An arbitrary field is denoted by K.
+   The centre and derived group of a group G are denoted by Z (or Z(G)) and G0
+respectively; the centre and derived ring of a Lie algebra g are z (or Z(g)) and g0 . We
+write [ , ] also for the induced map g/z × g/z → g0 , (x + z, y + z) 7→ [x, y]. Given g ∈ G
+and x ∈ g we write CG (g) and Cg (x) for the respective centralizers.
+   Given a ring R and integers m and n, we write Mat(n × m, R) for the n × m-matrices
+over R. We abbreviate Mat(n×n, R) to Mat(n, R). We denote the transpose of a matrix
+A by Atr .
+   By a character of a group we always mean a complex irreducible character.
+
+                                   2. The main results
+  The Lazard correspondence establishes an order-preserving one-to-one correspondence
+between finite p-groups of nilpotency class c < p on the one hand and finite nilpotent
+Lie rings of p-power order and class c < p on the other; cf. [23, Example 10.24]. More
+precisely, one may define a group operation on such a Lie ring g by the formula
+                                      X
+                             u ? v :=   Fi (u, v), u, v ∈ g,
+                                        i≤c
+
+where Fi (X, Y ) is the homogeneous part of degree i of the Hausdorff series F (X, Y ),
+an element in the completion of the free Q-Lie algebra on variables X and Y ; cf. [23,
+§9.2]. Then exp(g) := (g, ?) is a p-group of class c. The theorem underlying the Lazard
+correspondence asserts that the isomorphism type of every p-group G of class c < p
+arises in this manner from a Lie ring g, unique up to isomorphism. We denote the map
+underlying a fixed isomorphism exp(g) ∼ = G by exp : g → G, and write log for its inverse.
+We write g for the Pontryagin dual HomZ (g0 , C× ) of the finite abelian p-group g0 .
+           b0
+
+
+Theorem A. Let G be a finite p-group of nilpotency class c < p and let g = log(G) be
+the corresponding Lie ring. Define
+                S(G) := {(x, ω) ∈ g/z × gb0 : ω([x, z]) = 1 for all z ∈ g/z},
+
+with projections π1 : S(G) → g/z and π2 : S(G) → gb0 . For i ≥ 0,
+                            n                                 o
+                 cci (G) = # x ∈ g/z : |π1−1 (x)| = p−i |gb0 | |Z(G)|p−i ,
+                            n                                  o
+                 chi (G) = # ω ∈ gb0 : |π2−1 (ω)| = p−2i |g/z| |G/G0 |p−2i .
+
+In particular, the class number k(G) = |S(G)| |Z(G)| |G0 |−1 .
+   For a certain family of groups, Theorem B exploits this result to provide a uniform
+description of the class and character vectors in terms of the numbers of rational points
+of rank varieties of matrices of linear forms. We now formulate this more precisely.
+   Assume that o is a compact discrete valuation ring of characteristic zero and residue
+characteristic p, and that g is a finite, nilpotent o-Lie algebra of class c < p. Set
+                              a := rko (g/z),      b := rko (g0 ),
+and fix an ordered set e = (e1 , . . . , ea ) of o-module generators for g/z and an ordered set
+f = (f1 , . . . , fb ) of o-module generators for g0 . We choose ‘structure constants’ λkij ∈ o
+4                                       E. A. O’BRIEN AND C. VOLL
+
+such that
+                                              b
+                                              X
+                               [ei , ej ] =         λkij fk     and       λkij = −λkji
+                                              k=1
+for all i, j ∈ [a], k ∈ [b].
+Definition 2.1. Let X = (X1 , . . . , Xa ) and Y = (Y1 , . . . , Yb ) be independent variables.
+We define commutator matrices (with respect to e and f ) of o-linear forms in X and Y,
+namely
+                                                                          a
+                                                                          X
+          A(X) ∈ Mat(a × b, o[X]), where A(X)ik :=                              λkij Xj ,   i ∈ [a], k ∈ [b],
+                                                                          j=1
+                                                                          b
+                                                                          X
+              B(Y) ∈ Mat(a, o[Y]), where B(Y)ij :=                              λkij Yk ,   i, j ∈ [a].
+                                                                          k=1
+If g is a K-algebra with K-basis B = (e1 , . . . , eh ) such that the residue classes of the
+elements e1 , . . . , ea form a K-basis e for g/z and f = (eh−b+1 , . . . , eh ) is a K-basis for g0
+then we refer to the associated commutator matrices A and B as ‘with respect to B’.
+Remark 2.2. The commutator matrix B is clearly
+                                          p    skew-symmetric. Hence det(B) is a
+square in o[Y], whose square root Pf(B) := det(B) is the Pfaffian of B. If a is odd
+then Pf(B) = 0.
+   Assume now that g/z or, equivalently, g0 is annihilated by p, the maximal ideal of o.
+We write k for the residue field o/p of characteristic p. The set of generators f for g0
+may be regarded as a k-basis for the k-vector space g0 . Similarly, we view e as a k-basis
+for the k-vector space g/z.
+   The commutator matrices A and B may be considered as matrices of linear forms
+over k. Let K be an extension of k. For x = (x1 , . . . , xa ) ∈ Ka we write A(x) ∈
+Mat(a × b, K) for the matrix obtained by evaluating the variables Xi at xi . Likewise
+B(y) ∈ Mat(a, K) is defined for y = (y1 , . . . , yb ) ∈ Kb . We note that the ranks of
+matrices of the form B(y), for y ∈ Kb , are even integers.
+   It is well-known that every finite field k is self-dual, i.e. (noncanonically) isomorphic
+to its Pontryagin dual. Indeed, let ψ : k → C× be a nontrivial additive character
+of k. For a ∈ k define ψa (x) = ψ(ax) for x ∈ k. The map a 7→ ψa is an isomorphism
+between k and its Pontryagin dual k;   b cf., for instance, [4]. Since g0 ∼= kb , this yields
+an isomorphism between g0 and its dual gb0 . On the other hand there is, of course, a
+– likewise noncanonical – isomorphism between g0 and its linear dual Homk (g0 , k). We
+fix an isomorphism ψ1 : gb0 → Homk (g0 , k). The dual k-basis f ∨ = (fk∨ ) for Homk (g0 , k)
+gives a coordinate system
+                                                               b
+                                                               X
+                 ψ2 : Homk (g0 , k) → kb ,             y=            yk fk∨ 7→ y = (y1 , . . . , yb ).
+                                                               k=1
+
+Set ψ := ψ2 ◦ ψ1    : gb0 → kb . Similarly, the k-basis e for g/z gives a coordinate system
+                                                       a
+                                                       X
+                       ϕ : g/z → ka ,          x=             xj ej 7→ x = (x1 , . . . , xa ).
+                                                       j=1
+
+  For a finite extension O of o, we write g(O) for g ⊗o O and z(O) for z ⊗o O. By
+tensoring, the bases associated with g yield corresponding bases associated with g(O);
+           ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                             5
+
+we continue to write e for the O-basis e⊗o 1 for g(O)/z(O), and likewise f for the O-basis
+f ⊗o 1 of g(O)0 . Note that the commutator matrices A and B remain unchanged.
+   Assume further that O is an unramified extension of o, with maximal ideal P. We
+identify the residue field O/P, a finite extension of k, with Fq . The O-Lie algebra g(O)
+inherits the property that the derived algebra and the cocentre of g(O) are annihilated
+by P. We consider e and f as Fq -bases for the respective Fq -vector spaces of dimensions
+a and b. Set G(O) := exp(g(O)). Note that our assumption on g implies that both
+G(O)0 and G(O)/Z(G(O)) have exponent p. Our second main result gives a uniform
+description of the set S(G(O)) introduced in Theorem A – and therefore for the class and
+character vectors of G(O) – in terms of the numbers of Fq -rational points of degeneracy
+loci of the commutator matrices A and B.
+Theorem B. Let o be a compact discrete valuation ring of characteristic zero and
+residue field k of characteristic p, and let g be a finite, nilpotent o-Lie algebra of class
+c < p. Assume that g0 ∼  = kb and that g/z ∼ = ka as k-vector spaces. Let O be a finite,
+unramified extension of o, with residue field isomorphic to Fq . The class sizes and
+character degrees of G(O) are powers of q = pf . For i ≥ 0,
+              ccif (G(O)) = # x ∈ Faq : rk(A(x)) = i |Z(G(O))|q −i ,
+                               
+                               n                         o
+              chif (G(O)) = # y ∈ Fbq : rk(B(y)) = 2i |G(O)/G(O)0 |q −2i .
+
+We illustrate Theorem B with a well-known example.
+Example 2.3. Let G = U3 (Fq ) be the group of 3 × 3 upper-unitriangular matrices
+over Fq , where q = pf . Thus |G| = q 3 , a = 2 and b = 1. For odd p, G is isomor-
+phic to exp(f2,2 (Fq )), where f2,2 (Fq ) is the Fq -Lie algebra with Fq -basis (u, v, w), subject
+only to the relations [v, u] = w, [u, w] = [v, w] = 0. With respect to this Fq -basis
+                                                                       
+                                 −X2                                 −Y1
+                      A(X) =                  and B(Y) =                    .
+                                  X1                             Y1
+
+Theorem B confirms the well-known formulae cc(G) = (q, q 2 − 1)f and ch(G) = (q 2 , q −
+1)f . We note that S(G) may be identified with {(u, v, w) ∈ F3q : wu = wv = 0}, showing
+that k(G) = q 2 + q − 1.
+   In Section 5 we study generalizations of the relatively free p-groups of exponent p. For
+integers r ≥ 2 and c ≥ 1 we consider the free Fq -Lie algebra fr,c (Fq ) on r generators and
+nilpotency class c, where q = pf is a power of a prime p > c. The Lazard correspondence
+associates the p-group Fr,c (Fq ) = exp(fr,c (Fq )) to this Fq -Lie algebra. Our approach
+yields, for instance, a simple, geometric proof of the following generalization of [19,
+Theorem 5] and of Example 2.3.
+Proposition 2.4. Let q = pf be an odd prime power. The character degrees of Fr,2 (Fq )
+are 1, q, q 2 , . . . , q br/2c . For 0 ≤ 2i ≤ r
+                                                                 Q2i−1 r−j
+                                                        r+i2 −3i   j=0 (q   − 1)
+                                  chif (Fr,2 (Fq )) = q          Qi−1 2(i−j)      .
+                                                                  j=0 (q     − 1)
+
+Proof. We fix an Fq -basis (x1 , . . . , xr , yk` : 1 ≤ k < ` ≤ r) for f2,r (F
+                                                                              q ), subject to the
+                                                                           r
+relations [x` , xk ] = yk` for 1 ≤ k < ` ≤ r. Note that a = r and b = 2 . The commutator
+matrix B(Y) with respect to this basis is the generic skew-symmetric matrix in variables
+6                                    E. A. O’BRIEN AND C. VOLL
+
+Yk` for 1 ≤ k < ` ≤ r, so B(Y)k` = −Yk` . It is well known that, for 0 ≤ 2i ≤ r, the set
+       (n)
+{y ∈ Fq 2 : rk(B(y)) = 2i} has cardinality
+                                                     Q2i−1 r−j
+                                              i(i−1)   j=0 (q   − 1)
+                        νif (Fr,2 (Fq )) := q        Qi−1 2(i−j)      ;
+                                                      j=0 (q     − 1)
+see [6, Equation (7.5)]. Theorem B implies that chif (Fr,2 (Fq )) = q r−2i νif (Fr,2 (Fq )). 
+   Recall that the ‘Witt formula’ is defined, for i ∈ N, by
+                                           1X
+(2.1)                           Wr (i) :=        µ(d)ri/d ,
+                                           i
+                                                      d|i
+
+where µ denotes the Möbius function; cf., for example, [12, Chapter 11]. We define
+                           (P
+                              m
+                              i=1 Wr (i)                if c = 2m + 1,
+                 n(r, c) := Pm−1               Wr (m)
+                              i=1 Wr (i) + b     2    c if c = 2m.
+Theorem 2.5. Assume that (r, c) 6= (2, 3), that p > c and let q be a power of p. The
+character degrees of Fr,c (Fq ) are 1, q, q 2 , . . . , q n(r,c) .
+The character vectors of the groups F2,3 (Fq ) are given in Proposition 5.8. For i ∈ [c] we
+define
+                                                      c−i
+                                                      X
+                          k(r, c, i) := −δi<(c+1)/2 +     Wr (`).
+                                                            `=1
+
+Theorem 2.6. Assume p > c and let q be a power of p. The class sizes of Fr,c (Fq ) are
+q k(r,c,i) for 1 ≤ i ≤ c. For j ≥ 1
+                                    X                      Pc
+(2.2)           ccjf (Fr,c (Fq )) =        q Wr (i) − 1 q −j+ `=i+1 Wr (`) ,
+                                  {i∈[c−1] : k(r,c,i)=j}
+
+and cc0 (Fr,c (Fq )) = |Z(Fr,c (Fq ))| = q Wr (c) .
+Observe that the function i 7→ k(r, c, i) is injective unless r = 2 and c ∈ {3, 4}; in these
+cases the sum in (2.2) has at most two nonzero summands. Generically it has at most
+one.
+  Theorems 2.5 and 2.6 will be proven in Section 5.
+
+                              3. Proofs of Theorems A and B
+   The Lazard correspondence between p-groups and Lie rings of nilpotency class c < p
+allows us to linearize the problem of enumerating conjugacy classes and characters. Let
+G be a finite p-group of nilpotency class c < p, with associated Lie ring g = log(G).
+3.1. Counting conjugacy classes. It follows from straightforward calculations with
+the Hausdorff series that log induces an order-preserving correspondence between sub-
+groups of G and subalgebras of g, and log maps normal subgroups to ideals. In particular,
+|G/Z| = |g/z| and |G0 | = |g0 |, and centralizers in G correspond to centralizers in g. Thus
+                     cci (G) =#{conjugacy classes of G of cardinality pi }
+                             =#{g ∈ G : |G : CG (g)| = pi }p−i
+                             =#{x ∈ g : |g : Cg (x)| = pi }p−i
+                             =#{x ∈ g/z : |g/z : Cg/z (x)| = pi } |z| p−i .
+            ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                               7
+
+The last equality reflects the fact that the centralizer of an element only depends on its
+coset modulo the centre. For x ∈ g/z we define
+                               adx : g/z → g0 ,      z 7→ [z, x]
+                               ad?x : gb0 → g/z,
+                                            c        ω 7→ ω ◦ adx .
+Hence
+(3.1)
+cci (G) = #{x ∈ g/z : | im(adx )| = pi } |z| p−i = #{x ∈ g/z : | ker(ad?x )| = p−i |gb0 |} |z| p−i .
+
+3.2. Kirillov’s orbit method and counting characters. The Kirillov orbit method
+offers a linearization of the character theory of G in terms of co-adjoint orbits: characters
+of G correspond to orbits in b   g := HomZ (g, C× ), the Pontryagin dual of g, under the
+                        ?
+co-adjoint action Ad of G on b     g. The following is well-known; see, for example, [5,
+Theorem 2.6] or [10, Theorem 4.4].
+Theorem 3.1. Let G = exp(g) be a finite p-group of nilpotency class c < p. Let Ω ⊆ b
+                                                                                   g
+be a co-adjoint orbit and ω ∈ Ω.
+    (1) There exists a polarizing subalgebra h ⊆ g for the bi-additive, skew-symmetric
+        form Bω : g × g → C× , (u, v) 7→ ω([u, v]): namely, a subalgebra h that is maximal
+        with respect to the property that Bω |h×h ≡ 1. Setting
+                      Rad(Bω ) := {u ∈ g : Bω (u, v) = 1 for all v ∈ g},
+        exp(Rad(Bω )) is the Ad? -stabilizer StabG (ω), and |g : h| = |h : Rad(Bω )|. Thus,
+        with H := exp(h),
+
+             |Ω|1/2 = |G : StabG (ω)|1/2 = |g : Rad(Bω )|1/2 = |g : h| = |G : H|.
+    (2) Viewing ω as a function on G (via log), the function ω|H is a one-dimensional
+        representation of H. The induced representation UΩ := IndG   H ω of G is irre-
+        ducible, independent of ω, and has dimension |Ω|1/2 . All irreducible complex
+        representations of G have this form.
+    (3) The character of UΩ is given by |Ω|−1/2 ω∈Ω ω(g), for g ∈ G.
+                                               P
+
+Remark 3.2. A Kirillov orbit method for torsion-free finitely generated nilpotent pro-p
+groups of class 2 that holds for all primes p is presented in [27, Section 2.4]. We expect
+that it can be used to prove the conclusions of Theorem 3.1 for 2-groups of class 2.
+  Theorem 3.1 reduces the problem of enumerating the characters of G to that of
+computing the indices in g of the radicals Rad(Bω ), as ω ranges over b g. In fact, given
+ω∈b g, the form Bω only depends on the restriction of ω to g0 . Given ω ∈ gb0 we therefore
+                         e∈b
+write Bω for Bωe , where ω  g is any extension of ω. With this notation, Theorem 3.1
+implies that
+               chi (G) =#{irreducible complex characters of G of degree pi }
+                                                g of size p2i }
+                       =#{co-adjoint orbits Ω ⊆ b
+                              g : |g : Rad(Bω )| = p2i } p−2i
+                       =#{ω ∈ b
+                       =#{ω ∈ gb0 : |g : Rad(Bω )| = p2i } |g/g0 | p−2i
+(3.2)                  =#{ω ∈ gb0 : | Rad(Bω )/z| = p−2i |g/z|} |g/g0 | p−2i .
+8                                    E. A. O’BRIEN AND C. VOLL
+
+3.3. Proof of Theorem A. For i ∈ N0 we define
+                     µi (G) := #{x ∈ g/z : | ker(ad?x )| = p−i |gb0 |},
+                      νi (G) := #{ω ∈ gb0 : | Rad(Bω )/z| = p−2i |g/z|}.
+Equations (3.1) and (3.2) imply that cci (G) = µi (G)|z|p−i and chi (G) = νi (G)|g/g0 |p−2i .
+For x ∈ g/z and ω ∈ gb0 , observe that x ∈ Rad(Bω )/z if and only if ω ∈ ker(ad?x ). Thus
+                 S(G) ={(x, ω) ∈ g/z × gb0 : ω([x, z]) = 1 for all z ∈ g/z}
+                       ={(x, ω) ∈ g/z × gb0 : ω ∈ ker(ad?x )}
+(3.3)                  ={(x, ω) ∈ g/z × gb0 : x ∈ Rad(Bω )/z}.
+
+Using the natural projections π1 : S(G) → g/z and π2 : S(G) → gb0 , we see that
+                        µi (G) = #{x ∈ g/z : |π1−1 (x)| = p−i |gb0 |},
+                        νi (G) = #{ω ∈ gb0 : |π2−1 (ω)| = p−2i |g/z|}.
+We obtain two descriptions of the class number k(G):
+                               X               X
+             |g0 |k(G) = |g0 |   cci (G) = |z|   p−i |g0 |µi (G) = |z||S(G)|,
+                                 i                   i
+                             X                       X
+         |g/z|k(G) = |g/z|       chi (G) = |g/g0 |       p−2i |g/z|νi (G) = |g/g0 ||S(G)|.
+                             i              i
+We deduce that k(G) = |S(G)| |z| |g | = |S(G)| |Z(G)| |G0 |−1 . This proves Theorem A.
+                                   0 −1
+
+
+3.4. Proof of Theorem B. Recall that o is a compact discrete valuation ring with
+residue field k = o/p of characteristic p, and that g is a finite, nilpotent o-Lie algebra
+of class c < p with the property that g/z and g0 are annihilated by p. Further recall
+the isomorphisms ϕ : g/z → ka and ψ : gb0 → kb introduced in Section 2. Consider the
+p-group G = exp(g). By (3.3),
+                      S(G) = {(x, ω) ∈ g/z × gb0 : x ∈ Rad(Bω )/z}.
+The following lemma, proved analogously to [1, Lemma 3.3], characterizes membership
+of S(G) in terms of the above coordinate systems for g/z and gb0 .
+
+Lemma 3.3. Let x ∈ g/z and ω ∈ gb0 correspond to ϕ(x) = x ∈ ka and ψ(ω) = y ∈ kb .
+Then
+             x ∈ Rad(Bω )/z if and only if A(x)ytr = B(y)xtr = 0.
+   Now let O be a finite, unramified extension of o, with residue field isomorphic to
+Fq = Fpf , say. Applying Theorem A, (3.3) and Lemma 3.3 to g(O) = g ⊗o O reduces
+the computation of the class and character vector of G(O) = exp(g(O)) to the problem
+of counting the solutions to linear equations over Fq . In particular, all class sizes and
+character degrees are powers of q = pf . For i ≥ 0,
+                       µif (G(O)) = # x ∈ Faq : rk(A(x)) = i ,
+                                       
+                                       n                       o
+                       νif (G(O)) = # y ∈ Fbq : rk(B(y)) = 2i .
+
+This proves Theorem B.
+             ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                                9
+
+                          4. Consequences of Theorems A and B
+4.1. Isoclinism. Recall from [11] that two p-groups G1 and G2 are isoclinic if there
+are isomorphisms θ : G1 /Z1 → G2 /Z2 and ϕ : G01 → G02 such that, for all α, β ∈ G01 ,
+ϕ([α, β]) = [θ(αZ1 ), θ(βZ1 )]. The pair (θ, ϕ) is an isoclinism between G1 and G2 .
+   If G1 and G2 have nilpotency class less than p and (θ, ϕ) is an isoclinism between
+G1 = exp(g1 ) and G2 = exp(g2 ), then there is a pair of associated maps (Θ, Φ−1 ), where
+Θ = log ◦ θ ◦ exp, Φ−1 = log ◦ ϕ−1 ◦ exp and Φ      d−1 : gb → gb , ω 7→ ω ◦ Φ−1 . The
+                                                             1    2   1     1
+isoclinism (θ, ϕ) induces a bijection (Θ, Φ−1 ) : S(G1 ) → S(G2 ), where, for i ∈ {1, 2},
+                                           d
+S(Gi ) are as defined in Theorem A; in particular
+        S(G1 ) = {(x1 , ω1 ) ∈ (g1 /Z(g1 )) × gb01 : ω1 ([x1 , z1 ]) = 1 for all z1 ∈ g1 /Z(g1 )}.
+   By definition, ω1 ([x1 , z1 ]) = 1 if and only if ω1 (Φ−1 ([Θ(x1 ), Θ(z1 )])) = 1; this holds if
+and only if Φd−1 (ω )([Θ(x ), Θ(z )]) = 1. Therefore (Θ, Φ      d−1 )(S(G )) = S(G ). This, of
+                   1         1       1                                    1           2
+course, merely reflects the well-known fact that isoclinic groups have, up to multiplica-
+tion by p-powers, identical class (and character) vectors.
+4.2. Pfaffian hypersurfaces. Boston and Isaacs [3] studied the class vectors of some p-
+groups of class 2 and exponent p. In this section we prove a generalization and extension
+of [3, Theorem 3.2]. We first describe our broader context. Let o be a compact, discrete
+valuation ring with residue field o/p, which we identify with Fq , where q = pf is an
+odd prime power. Let g be a finite, nilpotent o-Lie algebra of class 2. Assume that
+g/z and g0 are annihilated by p, so that Theorem B applies. The coordinate systems
+introduced in Section 2 identify g/z with Faq and g0 with Fbq , where we write a for the
+o-rank of g/z and b for the o-rank of g0 . Recall from Definition 2.1 the commutator
+matrix B associated to g with respect to the chosen bases. We denote by Pb−1 (Fq )
+the (b − 1)-dimensional projective space over Fq . Note that rk(B(e      y)) is well-defined
+                                b−1
+    e = (ye1 : · · · : yeb ) ∈ P (Fq ). We write G = exp(g) and recall that, by Theorem B,
+for y
+cs(G) and ch(G) consist of powers of q = pf .
+Theorem 4.1. Assume that a > 2,
+                   n                           o
+(4.1)                rk(B(e      e ∈ Pb−1 (Fq ) = {a − 2, a}
+                           y)) : y
+
+and that, for every line L ⊂ Pb−1 (Fq ), there exists y
+                                                      e ∈ L such that rk(B(e
+                                                                           y)) = a. Let
+                                   y ∈ Pb−1 (Fq ) : rk(B(e
+                            n := #{e                     y)) = a − 2}.
+Then
+                                  
+                                  
+                                  |Z|                                if i = 0,
+                                  
+                                  |Z|q −b+1 n(q 2 − 1)
+                                  
+                                                                      if i = b − 1,
+(4.2)                ccif (G) =
+                                  |Z|q −b (q a − 1 − n(q 2 − 1))
+                                                                     if i = b,
+                                  
+                                  
+                                   0                                  otherwise,
+                                  
+
+                             
+                                  0
+                             |G/G |
+                             
+                             
+                                                                      if i = 0,
+                             |G/G0 |q −a+2 n(q − 1)
+                             
+                                                                      if i = a/2 − 1,
+(4.3)             chif (G) =
+                             
+                             
+                             |G/G0 |q −a (q b − 1 − n(q − 1))        if i = a/2,
+                             
+                              0                                       otherwise.
+                             
+10                                    E. A. O’BRIEN AND C. VOLL
+
+In particular
+
+
+                    k(G) = |G|(q −a + q −b + q −a−b (n(q 2 − 1)(q − 1) − 1)).
+
+Remark 4.2. Geometrically, the hypotheses of Theorem 4.1 imply that the projective
+Pfaffian hypersurface defined by Pf(B) contains no lines over Fq . In particular, the
+Pfaffian is not identically zero, and thus a is even; cf. Remark 2.2. Hypothesis (4.1)
+implies that b > 1 and is satisfied if (but not only if) the Pfaffian defines a smooth
+hypersurface in Pb−1 (Fq ); cf. [31, Lemma 5].
+
+Proof. Remark 4.2 shows that a is even. To prove (4.3) we observe that, by the hy-
+potheses,
+
+                                     
+                                     
+                                     1                         if i = 0
+                                     
+                                     
+                                     n(q − 1)                  if i = a/2 − 1,
+                         νif (G) =
+                                     q b − 1 − n(q − 1)
+                                                               if i = a/2,
+                                     
+                                     
+                                      0                         otherwise.
+                                     
+
+
+The claim about ch(G) then follows from Theorem B which asserts that chif (G) =
+νif (G) |G/G0 |q −2i for i ∈ [a/2]0 .
+   To prove (4.2) it suffices to show that, firstly, µif (G) = 0 for i ∈ [b − 2] and, secondly,
+                                                                  Pb
+µ(b−1)f (G) = n(q 2 − 1). Indeed, clearly µ0 (G) = 1 and                            a
+                                                                    i=0 µif (G) = q , so that
+            a           2
+µbf (G) = q − 1 − n(q − 1). The claim about cc(G) then follows from Theorem B which
+asserts that ccif (G) = µif (G) |Z|q −i for i ∈ [b]0 .
+   Given y ∈ Fbq we view B(y) as the matrix of an endomorphism of Faq , whose kernel
+we denote by ker(B(y)). Likewise, given x ∈ Faq , we view A(x) as the matrix of the
+linear map Fbq → Faq , y 7→ yA(x)tr , whose kernel we denote by ker(A(x)).
+   Let y ∈ Fbq be one of the n(q−1) elements with rk(B(y)) = a−2, so dim(ker(B(y))) =
+2. Observe that rk(A(x)) < b for all x ∈ ker(B(y)). We claim that rk(A(x)) = b − 1 for
+all such x which are nonzero. Indeed, assume that x 6= 0 with rk(A(x)) ≤ b − 2. Let
+V ≤ Fbq be a 2-dimensional subspace of ker(A(x)). For every y ∈ V we deduce using
+Lemma 3.3 that yA(x)tr = xB(y)tr = 0. Therefore V defines a line in Pb−1 (Fq ) on which
+no point ye satisfies rk(B(e  y)) = a, contradicting our hypotheses. Thus rk(A(x)) = b − 1.
+This shows that µif (G) = 0 for i ∈ [b − 2], establishing the first claim.
+   Every y ∈ Fbq \ {0} such that rk(B(y)) = a − 2 gives rise to q 2 − 1 elements x ∈
+Faq \ {0} such that rk(A(x)) = b − 1, namely the nonzero elements of the 2-dimensional
+space ker(B(y)). Likewise, every x ∈ Faq \ {0} such that rk(A(x)) = b − 1 gives rise to
+q − 1 elements y with this property, namely the nonzero elements of its nullspace. Thus
+                           2 −1)
+µ(b−1)f (G) = n(q − 1) (q(q−1)   = n(q 2 − 1), establishing the second claim.                
+
+Example 4.3. Let p be a prime and α ∈ F×                p . Let gα be the 9-dimensional nilpotent
+Fp -Lie algebra of class 2 with Fp -basis (e1 , . . . , e6 , f1 , f2 , f3 ) subject only to the relations
+[e1 , e4 ] = f1 , [e1 , e5 ] = f2 , [e1 , e6 ] = αf3 , [e2 , e4 ] = f3 , [e2 , e5 ] = f1 , [e2 , e6 ] = f2 ,
+[e3 , e4 ] = f3 , [e3 , e6 ] = f1 , where 0 6= α ∈ Fp . With respect to this basis, the commutator
+             ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                                           11
+
+matrices are:
+                                                        
+                                          −X4 −αX6 −X5
+                                        −X     −X4  −X6 
+                                             5          
+                                          −X    −X    0
+                                                        
+                                              6    4
+                                 A(X) =                 ;
+                                                        
+                                         X1 X2 + X3  0 
+                                                        
+                                         X2     0    X1 
+                                           X3   αX1   X2
+                                                                             
+                                                                  Y1 Y2 αY3
+                                 0         U (Y)
+               B(Y) =                             , where U (Y) = Y3 Y1 Y2  .
+                              −U (Y)tr       0
+                                                                    Y3 0 Y1
+Boston and Isaacs [3] study the groups Gα = exp(gα ), which satisfy the hypotheses of
+Theorem 4.1 if p is odd. They prove that k(Gα ) = p6 + p3 − 1 + nα (p2 − 1)(p − 1), where
+nα = #{e y ∈ P2 (Fp ) : rk(B(e
+                             y)) = 4}, which accords with Theorem 4.1. They also show
+                   ×
+that #{nα : α ∈ Fp } → ∞ as p → ∞. Thus they establish that the number of different
+values assumed by k(G) as G runs over all groups of order p9 tends to infinity with p.
+
+Example 4.4. Let g be the 8-dimensional nilpotent Fq -Lie algebra of class 2 with Fq -basis
+(e1 , . . . , e4 , f1 , . . . , f4 ) subject only to the relations [e1 , e3 ] = f1 , [e1 , e4 ] = f2 , [e2 , e3 ] =
+f3 , [e2 , e4 ] = f4 . The class and character vectors of G = exp(g) are the following:
+
+            (ccif (G))i∈{0,1,2,3} = (q 4 , 0, 2(q 2 − 1)q 2 , q(q 2 − 1)2 )f ,
+             (chif (G))i∈{0,1,2} = (q 4 , q 2 (q − 1)(q + 1)2 , q 4 − 1 − (q + 1)2 (q − 1))f .
+
+This follows from inspection of the commutator matrices
+                                                                    
+                  X3    X4                                       Y1 Y2
+                                X3     X4                       Y3 Y4 
+                                                                    
+       A(X) =                             , B(Y) =                  .
+                                                      
+                −X1           −X2                    −Y1 −Y3        
+                        −X1           −X2                −Y2 −Y4
+
+The class vector differs from (4.2), but the character vector agrees with (4.3). The
+hypothesis of Theorem 4.1 regarding lines in P3 (Fq ) is not satisfied. We observe that
+the factor 2(q + 1) of cc2f (G) is the number of lines on the Pfaffian hypersurface, the
+quadric surface defined by Y1 Y4 − Y2 Y3 = 0.
+
+4.3. Prescribing class sizes and character degrees. It is known that every finite
+set of p-powers containing 1 can be realized as the class sizes or character degrees of a
+finite p-group; cf. [7] and [17] respectively. Such results can be obtained readily using
+Theorems A and B. Throughout this section let p be an odd prime.
+
+4.3.1. We show how to obtain the result of [17]. Let I ⊂ N be finite and let j = max(I).
+To construct a p-group G such that cd(G) = {pi : i ∈ I0 }, consider the Fp -Lie algebra g,
+with Fp -basis consisting of x1 , . . . , x2j and yi for i ∈ I, subject only to the relations
+                                 (
+                                  yi if t − r = i ∈ I,
+                    [xr , xt ] =                               for r, t ∈ [2j].
+                                  0        otherwise,
+12                                  E. A. O’BRIEN AND C. VOLL
+
+The commutator matrix B(Y) ∈ Mat(2j, Fp [Y]) in variables Yi for i ∈ I with respect
+to this basis is the sum of the (2j × 2j)-matrices
+                                                  
+                             0      Yi Idi
+                        −Yi Idi      0             , where i ∈ I.
+                                           02(j−i)
+                              |I|
+Clearly {rk(B(y)) : y ∈ Fp } = I0 . Theorem B implies that cd(exp(g)) = {pi : i ∈ I0 }.
+
+4.3.2. Fernández-Alcober and Moretó [9] prove that for every two integers u, v > 1 there
+exists a finite p-group H of class 2 such that | cd(H)| = u and | cs(H)| = v. As part of
+their proof, they construct, for given l, n ∈ N, a p-group G with cd(G) = {1, pl }, and
+cs(G) = {1, p, . . . , pl , pn }; cf. [9, Lemma 2.2].
+   We show how to construct such a group G. Consider the Fp -Lie algebra g, with
+Fp -basis (x1 , . . . , xl , x
+                             e1 , . . . , x
+                                          el+n−1 , y1 . . . , yn ), subject only to the relations:
+                           (
+                              yj−i+1 if i ≤ j ≤ i + n − 1,
+           [xi , x
+                 ej ] =                                                    for i ∈ [l], j ∈ [l + n − 1]
+                              0              otherwise,
+With respect to this basis the commutator matrix B(Y) ∈ Mat(2l + n − 1, Fp [Y]) is
+                                                                        
+                                             Y1 Y2 · · · Yn
+                                                 Y1 Y2 · · · Yn
+                         
+            0       U (Y)
+                                                                        
+                            , where U (Y) =                              .
+                                                                        
+        −U (Y)tr      0
+                                                   .. ..        ..
+                                                      .   .        .    
+                                                                       Y1   Y2    · · · Yn
+The commutator matrix A(X) ∈ Mat((2l + n − 1) × n, Fp [X]) is
+                                                    
+                          Xl+1 Xl+2 · · ·    Xl+n
+                        Xl+2 Xl+3 · · · Xl+n+1 
+                                                    
+                         .                    ..    
+                         ..                    .    
+                                                    
+                         X2l X2l+1 · · · X2l+n−1 
+                                                    
+                                                    
+                         −X1                        
+                         ..                         .
+                                                    
+                         .    −X1                   
+                                ..    ..
+                                                     
+                         −Xl     .       .
+                                                    
+                                                     
+                                                    
+                              −X   l         −X   1 
+                                       ..       ..
+                                                    
+                                          .
+                                                    
+                                                .   
+                                              −Xl
+Note that {rk(B(y)) : y ∈ Fnp } = {0, l} and {rk(A(x)) : x ∈ Fp2l+n−1 } = {0, 1, . . . , l, n}.
+Therefore cd(exp(g)) and cs(exp(g)) are as stated.
+
+                      5. Relatively free p-groups of exponent p
+   Let p be a prime and let r ≥ 2, c ≥ 1. Ito and Mann [19] study the numbers of
+classes and characters of the relatively free p-groups in the variety of groups of exponent
+p and nilpotency class c on r generators. Our methods apply when c < p. We consider,
+more generally, the groups Fr,c (Fq ) := exp(fr,c (Fq )), where q = pf and fr,c (Fq ) is the
+free nilpotent Fq -Lie algebra of class c on r generators. The orders of the terms of the
+            ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                                    13
+
+lower central series of fr,c (Fq ), and so of Fr,c (Fq ), may be expressed in terms of the Witt
+formula (2.1): for i ∈ [c],
+(5.1)      |γi (fr,c (Fq )) : γi+1 (fr,c (Fq ))| = |γi (Fr,c (Fq )) : γi+1 (Fr,c (Fq ))| = q Wr (i) ;
+cf. [19, Proposition 1]. We often write F for Fr,c (Fq ), f for fr,c (Fq ) and W for Wr .
+
+5.1. Proof of Theorem 2.6. We first prove a lemma about free Lie algebras over
+arbitrary fields. Let K be a field and L a free K-Lie algebra of rank at least 2. We
+fix a Lie basis B for L and, for m ∈ N, define Lm as the K-linear span of m-fold Lie
+products of elements of B. The standard grading L = ⊕∞       m=1 Lm determines the lower
+central series filtration Li := ⊕∞
+                                 j=i Lj of L. By convention, Li := L for i ≤ 0.
+            P∞
+   Let u = i=1 ui ∈ L be a nonzero element in the standard grading, i.e. ui ∈ Li for
+all i. We denote by u the nonzero homogeneous component of lowest degree of u in the
+standard grading: namely, u := udeg(u) , where deg(u) := min{i ∈ N : ui 6= 0} is the
+degree of u.
+Lemma 5.1. Let u, v ∈ L with u 6= 0. If [u, v] ∈ Li+1 for some positive integer i, then
+v ∈ Ku + Li+1−deg u .
+Proof. Without loss of generality, assume v 6∈ Ku. By the Shirshov-Witt theorem [26,
+Theorem 2.5], every subalgebra of L is free, and so [u, v] 6= 0. Now [u, v] = [u, v] + z for
+some z ∈ L with deg z > deg u + deg v.
+   If [u, v] 6= 0 then it is homogeneous of degree deg u + deg v. In this case [u, v] = [u, v]
+and so [u, v] 6∈ Ldeg u+deg v+1 . By hypothesis [u, v] ∈ Li+1 , so i + 1 < deg u + deg v + 1
+or, equivalently, deg v ≥ i + 1 − deg u which implies that v ∈ Li+1−deg u .
+   If [u, v] = 0 then the Shirshov-Witt theorem implies that v = ku for some nonzero k ∈
+K. Thus deg(v − ku) > deg u. Since v − ku 6∈ Ku and so [u, v − kv] 6= 0, we may
+apply the argument of the previous paragraph to v − ku instead of v, deducing that
+v − ku ∈ Li+1−deg u .                                                                       
+The Lazard correspondence implies the following.
+Lemma 5.2. Let g ∈ F = Fr,c (Fq ) and i ∈ [c]. If g ∈ γi (F ) \ γi+1 (F ) then CF (g) =
+hg, γc−i+1 (F )i.
+   We now prove Theorem 2.6. By Lemma 5.2, the conjugacy class sizes in F = Fr,c (Fq )
+are the indices of the subgroups hg, γc−i+1 (F )i, for g ∈ γi (F ) \Pγi+1 (F ) and i ∈ [c]. If
+                                                                              c−i
+i ≥ c − i + 1 then hg, γc−i+1 (F )i = γc−i+1 (F ), which has index q j=1 W (j) in F ; see (5.1).
+If i <  c − i + 1 then |hg, γc−i+1 (F )i : γc−i+1 (F )| = q, and so |F : hg, γc−i+1 (F )i| =
+  −1+ c−i
+     P
+q      j=1 W (j) . Thus if g ∈ γ (F ) \ γ                                                   k(r,c,i) .
+                                i         i+1 (F ) then the conjugacy class of g has size q
+   The statement that cc0 (F ) = q W (c) follows immediately from (5.1), as Z(F ) = γc (F ).
+Note that 0 = k(r, c, c). To determine ccjf (F ) where j = k(r, c, i) 6= 0, it suffices to
+count the elements in each γi (F ) \ γi+1 (F ) such that k(r, c, i) = j and to observe that
+these elements fall into conjugacy classes of equal size q j . Thus
+                                     X
+                   ccjf (F ) =                     |γi (F ) \ γi+1 (F )| q −j
+                                 {i∈[c−1] : k(r,c,i)=j}
+                                         X                                    Pc
+                             =                                q Wr (i) − 1 q −j+ `=i+1 Wr (`) .
+                                 {i∈[c−1] : k(r,c,i)=j}
+
+This concludes the proof of Theorem 2.6.
+14                                       E. A. O’BRIEN AND C. VOLL
+
+Corollary 5.3. Let r ≥ 2, c ≥ 1 and q a power of p > c. The entries of the class vector
+cc(Fr,c (Fq )), and hence also the class number k(Fr,c (Fq )), are given by a polynomial in q
+which depends only on r and c. Expanded in q − 1, this polynomial has nonnegative
+coefficients.
+Proof. Theorem 2.6 shows that the relevant quantities may be written as sums of terms
+of the form q α and (q β − 1)q γ for nonnegative integers α, β, γ.                  
+Remark 5.4. Corollary 5.3 may be compared to an analogous conjecture about the class
+vectors of the groups Un (Fq ) of upper-unitriangular matrices over Fq ; cf. [30]. Isaacs [18]
+formulates a similar conjecture for the characters vectors of these groups; it is proved
+in [8] for n ≤ 13. In Remark 5.12 we note that the corresponding statement for the
+character vectors of the groups F2,5 (Fq ) is false.
+5.2. Proof of Theorem 2.5. We recall the well-known definition of a Hall basis; cf. [21].
+                                     (1)         (1)
+Definition 5.5. Let ∆ = {e1 , . . . , er } be a set of Lie algebra generators for f =
+fr,c (Fq ). If u ∈ f is a Lie product of elements from ∆ then u has weight wt(u) = i if
+u ∈ γi (f) \ γi+1 (f). A Hall basis (on ∆) for f is a well-ordered subset H of f, satisfying
+the following.
+      (1) ∆ ⊆ H.
+      (2) If u, v ∈ H then [u, v] ∈ H if and only if
+(5.2)                         u > v and (u = [u1 , u2 ] implies u2 ≤ v).
+     (3) If w ∈ H \ ∆ then w = [u, v] for some u, v ∈ H satisfying (5.2).
+     (4) If u, v ∈ H and wt(u) > wt(v) then u > v.
+Elements of H are basic commutators. For i ∈ [c], we set H(i) := {h ∈ H : wt(h) = i}
+                                                             (i)          (i)
+and label the basic commutators of weight i so that H(i) = {e1 , . . . , eW (i) }< . Observe
+               (1)      (1)
+that g (i) := [e2 ,i−1 e1 ] ∈ H(i) .
+   Choose a Hall basis H for f. It is well-known that the elements of ci=2 H(i) yield
+                                                                             S
+an Fq -basis for the derived Lie algebra f0 , and that the residue classes of the elements
+of c−1     (i) yield an F -basis for the cocentre f/Z(f). Observe that the commutator
+   S
+     i=1 H            Pq                    
+                         c−1
+matrix B(Y) ∈ Mat        j=1 W  (j), F q [Y]   with respect to H is a skew-symmetric matrix
+                           Pc
+of Z-linear forms in b = j=2 W (j) variables. We label the variables as follows. For
+                                   (k)          (k)
+k ∈ [2, c] we write Y(k) = (Y1 , . . . , YW (k) ). Thus Y = (Y(k) )k∈[2,c] and
+
+                            B1,1 (Y(2) ) B1,2 (Y(3) ) . . . B1,c−1 (Y(c) )
+                                                                            
+                          B2,1 (Y(3) ) B2,2 (Y(4) ) . . .          0        
+                B(Y) = 
+                                                                            
+                                  ..                 . .                     
+                                  .               .      0                  
+                                Bc−1,1 (Y(c) )         0
+where Bi,j (Y(i+j) ) is the zero matrix if i + j > c, and for i, j ∈ [c − 1],
+(5.3)      Bi,j := Bi,j (Y(i+j) ) = −Bj,i (Y(i+j) )tr ∈ Mat(W (i) × W (j), Fq [Y(i+j) ]).
+For each k ∈ [2, c], the variables Y(k) only occur in the matrices Bi,j with i + j = k. It
+follows from [28, Theorem 1] that
+      • if j > i and i does not divide j then Bi,j is generic: there are no linear relations
+        among its entries;
+            ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                            15
+
+      • if i = j then Bi,i is generic skew-symmetric: the only linear relations between
+                                                                   tr .
+        its entries are those resulting from the identity Bi,i = −Bi,i
+To prove Theorem 2.5 it suffices, by Theorem B, to show that
+                             n                  o
+(5.4)                         rk(B(y)) : y ∈ Fbq = 2[n(r, c)]0 .
+
+The containment ⊆ in (5.4) is clear, as the rank of B(y) is clearly bounded from above
+by 2n(r, c). We establish the containment ⊇ in (5.4) by induction on c. For c = 1 there
+is nothing to prove, and the case c = 2 is covered by Proposition 2.4, so let c > 2.
+The induction step is divided into five steps. To ensure that the induction hypothesis
+is applicable, we assume further that (r, c) 6= (2, 4). The statement of Theorem 2.5 for
+groups of the form F2,4 (Fq ) follows from Proposition 5.10.
+Step 1: By the induction hypothesis, we can obtain every rank in 2[n(r, c − 1)]0 by
+setting the ‘new’ variables Y(c) to zero, and arguing as for c − 1.
+Step 2: Let ρ ∈ 2[n(r, c − 1) + 1, n(r, c)]. If there exists a vector y = (y(k) )k∈[2,c] ∈ Fbq ,
+with y(k) = 0 for k < c, satisfying
+   (1) rk(Bc−i,i (y(c) )) = min{W (i), W (c − i)} = W (i) for i < m = bc/2c,
+                             (
+                               ρ/2 − m−1
+                                     P
+                      (c)               i=1 W (i)     if c = 2m + 1,
+   (2) rk(Bc−m,m (y )) =            Pm−1
+                               ρ − 2 i=1 W (i)        if c = 2m,
+then rk(B(y)) = ρ. Indeed, B(y) is a matrix with nonzero blocks Bi,j (y(c) ) only in the
+positions (i, j) where i + j = c. Moreover, apart from the ‘central block’ Bm,m (y(c) ) if
+c = 2m, or ‘central blocks’ Bm,m+1 (y(c) ) and Bm+1,m (y(c) ) if c = 2m + 1, all blocks have
+maximal rank.
+Step 3: We now prove that such a vector y exists. As (r, c) 6= (2, 3), W (i) < W (j)
+whenever i < j. It suffices to show that, for each i < c/2, the matrix Bc−i,i has a square
+submatrix
+                     Bec−i,i := Bec−i,i (Y(c) ) ∈ Mat(W (i), Fq [Y(c) ]),
+obtained by choosing W (i) suitable rows of Bc−i,i , with the property that there are
+no linear relations among the entries (B     ec−i,i )st , 1 ≤ s ≤ t ≤ W (i), for 1 < i < c/2,
+and, if c = 2m, the entries (Bm,m )st , 1 ≤ s ≤ t ≤ W (m). Indeed, given such matrices
+ec−i,i , it is easy to construct a vector y(c) such that, for all i < m, B
+B                                                                         ec−i,i (y(c) ) is lower-
+unitriangular (and thus, in particular, of maximal rank W (i)) and the central blocks
+have the required ranks: namely, we set the diagonal entries of B     ei,c−i equal to one, and
+all the (s, t)-entries of B
+                          ei,c−i for s < t equal to zero.
+   If c = 2m, the matrix Bm,m is generic skew-symmetric, by [28, Theorem 1], and so
+attains every rank in 2[bW (m)/2c]0 .
+Step 4: For i < c/2 we now exhibit such a submatrix B          ec−i,i of Bc−i,i . By definition of
+                                                                                   PW (c)      (c)
+the commutator matrix B, the matrix Bc−i,i is defined by (Bc−i,i )st = k=1 λkst Yk ,
+         (c−i) (i)          PW (c)     (c)
+where [es , et ] = k=1 λkst ek , where s ∈ W (c − i), t ∈ W (i). It suffices to find
+S = {s1 , . . . , sW (i) }< ⊆ [W (c − i)], indexing W (i) rows of Bc−i,i , such that
+                               (i)
+(5.5)                 [e(c−i)
+                        sl    , et ] ∈ H(c) for l ∈ [W (i)] and t ∈ [l, W (i)].
+We then set B
+            ec−i,i := ((Bc−i,i )st )s∈S, t∈[W (i)] .
+
+Step 5: To find such a subset S of [W (c − i)], we distinguish three cases.
+16                                     E. A. O’BRIEN AND C. VOLL
+
+                                                  (c−i)   (i)
+Case (i): i > (c − i)/2. Every pair (es , et ) ∈ H(c−i) × H(i) has the property that
+  (c−i) (i)                                                                     (i)   (c−i)
+[es , et ] ∈ H(c) . Indeed, since i < c/2, we deduce that i < c − i, so et < es . If
+ (c−i)                                                                                 (i)
+es     = [u1 , u2 ] for some u1 , u2 ∈ H then wt(u2 ) ≤ (c−i)/2 < i by (5.2), so u2 < et , and
+        (c−i) (i)
+hence [es , et ] ∈ H(c) . Thus every W (i)-element subset S of [W (c − i)] satisfies (5.5).
+                                                                                   (c−i)                        (i)
+Case (ii): i < (c − i)/2. Let t ∈ [W (i)]. Since i < c − 2i, clearly es := [g (c−2i) , et ] ∈
+                                (c−i) (i)
+H(c−i) ; so, if v ≥ t then [es , ev ] ∈ H(c) . Therefore the set S of indices of the W (i)
+                      (i)
+elements [g (c−2i) , et ], for t ∈ [W (i)], satisfies (5.5).
+                                                                                        (2i)        (i)         (i)
+Case (iii): i = (c − i)/2. Let t ∈ [W (i)]. If t < W (i) then we set es                        := [eW (i) , et ] ∈
+                             (2i)     (i)                                                                 (i)
+H(2i) and observe that [es , ev ] ∈ H(c) for all v ≥ t. If t = W (i) then [g (2i) , eW (i) ] ∈
+                                                                            (i)   (i)
+H(c) . The set of indices of the W (i) elements g (2i) and [eW (i) , et ], for t ∈ [W (i) − 1],
+satisfies (5.5).
+     This concludes the proof of Theorem 2.5.
+5.3. Taketa bounds for Fr,c (Fq ). The Taketa problem asks for a bound to the derived
+length dl(G) of a finite solvable group G in terms of the number of its character degrees;
+see, for example, [22]. It is known that dl(G) is bounded by a linear function in | cd(G)|.
+Isaacs conjectured that the bound for p-groups is logarithmic. It cannot be better than
+logarithmic, as the family (Un (Fq )) shows: dl(Un (Fq )) = dlog2 (n)e, but | cd(Un (Fq ))| ∼
+n2 /4; cf. [16].
+    Our results exhibit double-logarithmic Taketa bounds for the groups Fr,c (Fq ), a fam-
+ily of groups of unbounded derived length. Indeed, dl(Fr,c (Fq )) = dlog2 (c)e, whereas
+n(r, c) ∼ rbc/2c . Thus dl(Fr,c (Fq )) ≤ c1 log log(| cd(Fr,c (Fq ))|) + c2 for suitable constants
+c1 , c2 .
+    We also observe that there is a logarithmic bound to the derived length of the groups
+Fr,c (Fq ) in terms of their numbers of class sizes. In fact, | cs(Fr,c (Fq ))| = c + 1 (unless
+both r and c are very small), so dl(Fr,c (Fq )) ≤ c3 log(| cs(Fr,c (Fq ))|). The (logq of the)
+class sizes of the groups Un (Fq ) form an interval of length n−1
+                                                                         
+                                                                       2   (cf. [29]), also yielding
+a logarithmic bound for this family.
+5.4. Numbers of characters. Theorem 2.5 describes the support of the character
+vectors ch(Fr,c (Fq )), showing that the numbers chif (Fr,c (Fq )), for i ∈ [n(r, c)]0 , are
+nonzero. We make one observation on the order of magnitude of the number of characters
+of maximal degree q n(r,c) . Define
+                                                  c
+                                                  X
+                                    N (r, c) :=         Wr (i) − 2n(r, c).
+                                                  i=1
+
+Lemma 5.6. Let (r, c) 6= (2, 3), p > c and q = pf . Then
+                                            chn(r,c)f (Fr,c (Fq ))
+                                      lim                            = 1.
+                                     q→∞            q N (r,c)
+Proof. The Lang-Weil estimate (cf. [24]) for the number of rational points on varieties
+over finite fields implies that chn(r,c)f (Fr,c (Fq )) ∼ q r−2n(r,c) |Fr,c (Fq )0 | = q N (r,c) . 
+
+   By Theorem 2.5, the smallest degree of a nonlinear character of Fr,c (Fq ) is q = pf .
+We now count the number of characters of Fr,c (Fq ) having degree q = pf , so generalizing
+[19, Theorem 7].
+            ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                                  17
+
+Proposition 5.7. Let r ≥ 2, p > c > 2 and q = pf . Then
+                                  q r−2 (q r − 1)(q (r−1)(c−1)+1 + q (r−1)(c−1) − q r − 1)
+             chf (Fr,c (Fq )) =                                                            .
+                                                            q2 − 1
+Proof. Let B(Y) be the commutator matrix with respect to a Hall basis for fr,c (Fq ), and
+recall the definition (5.3) of the matrices Bi,j . For y ∈ Fbq we define
+        u(y) := max{i ∈ [2, c] : there exists j ∈ [i − 1] such that Bj,i−j (y) 6= 0}.
+For s ∈ [2, c], we now compute the quantity ns := #{y ∈ Fbq : u(y) = s, rk(B(y)) = 2}.
+This suffices, as chf (Fr,c (Fq )) = q r−2 νf (Fr,c (Fq )) = q r−2 cs=2 ns .
+                                                                  P
+  For s = 2, Proposition 2.4 for k = 1 implies that n2 = (q r − 1)(q r−1 − 1)/(q 2 − 1).
+For s > 2, we claim that
+                                       q (r−1)(s−2) (q r − 1)(q r−1 − 1)
+(5.6)                          ns =                                      .
+                                                    (q − 1)
+First note that if u(y) = s and rk(B(y)) = 2, then rk(B1,s−1 (y)) = 1 and Bi,s−i (y) = 0
+for i ∈ [2, s − 2]; see, for example, [28, Theorem 1]. In fact, after a suitable change of
+basis for fr,c (Fq ), we may assume that B(y) has zero entries everywhere except the first
+row and column. We claim that
+                                                                                  (q r − 1)(q r−1 − 1)
+#{y ∈ FW
+       q
+         (s)
+             : rk(B1,s−1 (y)) = 1, Bi,s−i (y) = 0 for i ∈ [2, s − 2]} =                                .
+                                                                                         (q − 1)
+Indeed, there are q r−1 ways to fill in a row of B1,s−1 (Y) so that all other rows are
+zero. To see this, assume without loss of generality that this is the first row, and note
+                                                                  (s−1)                (s−1)
+that exactly r − 1 of the Lie products of the form [ei                  , e1 ], where ei     is a basic
+commutator of weight s − 1, are basic, namely the ones of the form [ei ,s−2 e1 ] where
+                                                      (s−1)
+i ∈ [2, r]. All other Lie products of the form [ei          , e1 ] are linear combinations of other
+basic commutators of weight s. The variables associated to these occur in some other
+row of B1,s−1 (Y), or in some Bi,s−i (Y) for i ≥ 2, and so have the value zero. Up to
+nonzero scalars, there are thus (q r−1 − 1)/(q − 1) ways to fill a row without obtaining a
+zero row. Every row of B1,s−1 (Y) is a linear multiple of such a nonzero row, and only
+one of the q r possibilities yields the zero matrix. This establishes the claim.
+                                           W (s)
+   We also claim that, for each y ∈ Fq           such that rk(B1,s−1 (y)) = 1 and Bi,s−i (y) = 0
+for i ∈ [2, s − 2], there are q (r−1)(s−2) ways to choose y0 ∈ Fbq such that rk(B(y0 , y)) = 1.
+Indeed, again without loss we may assume that B1,s−1 (y) is supported only on its first
+row. By the arguments in the previous paragraph, each of the matrices B1,i (Y), for
+i ∈ [s − 2], has exactly r − 1 variables corresponding to basic commutators in its first
+row. All other entries in the first row are linear combinations of variables corresponding
+to basic commutators occurring in other rows. This establishes the claim, and so (5.6).
+   Summing over s = 2, . . . , c establishes the result.                                             
+
+5.5. Results on Fr,c (Fq ) for specific values of r and c. We start with a lemma
+generalizing the opening remarks of [19, Section 3], thus dealing with the exceptional
+parameter values in Theorem 2.5.
+Proposition 5.8. Let p ≥ 5 and let q = pf .
+                                    ch(F2,3 (Fq )) = (q 2 , q 3 − 1)f .
+18                                   E. A. O’BRIEN AND C. VOLL
+
+Proof. We note that W2 (1) = 2, W2 (2) = 1 and W2 (3) = 2. With respect to the Hall
+        (1) (1)                    (1)            (1)
+basis {e1 , e2 , g (2) , [g (2) , e1 ], [g (2) , e2 ]}< for f2,3 (Fq ) the commutator matrix
+                                                                       
+                                                         −Y1 −Y2
+                                     B(Y) =  Y1                  −Y3  .
+                                                      Y2 Y3
+The claim follows immediately from Theorem B.                                                           
+Proposition 5.9. Let p ≥ 5 and let q = pf .
+ch(F3,3 (Fq )) = (q 3 , q(q 3 − 1)(q 3 + q 2 + 1), q(q 3 − 1)(q 5 + q 4 − 1), q 4 (q − 1)(q 3 − q − 1))f .
+Proof. Set F = F3,3 (Fq ). We note that W3 (1) = 3, W3 (2) = 3 and W3 (3) = 8. With
+respect to a Hall basis for f3,3 (Fq ), the commutator matrix B(Y) is
+                                                    
+           −Y1     −Y2           −Y4       −Y5 −Y6
+    Y
+    1             −Y3           −Y7       −Y8 −Y9                                 !
+    Y2 Y3                    Y6 + Y8 −Y10 −Y11             B11 (Y(2) ) B12 (Y(3) )
+                                                    
+                                                     =                                .
+    Y4 Y7 −Y6 − Y8                                          B21 (Y(3) )
+   
+                                                     
+                                                    
+    Y5 Y8          Y10                              
+      Y6 Y9         Y11
+It suffices to prove our claim for ch2f (F ). Indeed, n(3, 3) = 3, the claim for ch0 (F ) is
+trivial, and that for chf (F ) follows from Proposition 5.7. Furthermore, the class number
+k(F ) = 3i=0 q 3−2i νif (F ) is q 9 − 2q 8 − q 6 − q 5 by Theorem 2.6.
+            P
+   We claim that there are q(q 3 − 1)(q 5 + q 4 − 1) vectors y ∈ F11
+                                                                   q such that rk(B(y)) = 4.
+For such y we distinguish whether rk(B12 (y)) = 1 or rk(B12 (y)) = 2. In the former case,
+by (5.4) in the proof of Proposition 5.7, there are (q + 1)(q 3 − 1) vectors (y4 , . . . , y11 ) ∈
+F8q yielding rk(B12 (y4 , . . . , y11 )) = 1, and for each of these there are q 3 − q 2 vectors
+(y1 , y2 , y3 ) ∈ F3q such that rk(B(y1 , . . . , y11 )) = 4. Thus
+              #{y ∈ F11                                    2 2       3
+                     q : rk(B(y)) = 4, rk(B12 (y)) = 1} = q (q − 1)(q − 1).
+
+On the other hand, the set N := {y ∈ F8q : rk(B12 (y)) = 2} has cardinality q(q 3 −
+1)(q 3 + q 2 − 1); cf. [2]. As every vector in N gives rise to q 3 matrices B(y) of rank 4,
+           #{y ∈ F11                                    4 3       3   2
+                  q : rk(B(y)) = 4, rk(B12 (y)) = 2} = q (q − 1)(q + q − 1)
+
+and thus
+     ν2f (F ) = q 2 (q 2 − 1)(q 3 − 1) + q 4 (q 3 − 1)(q 3 + q 2 − 1) = q 2 (q 3 − 1)(q 5 + q 4 − 1),
+which yields the claimed quantity for ch2f (F ) = q 3−4 ν2f (F ).                                       
+We obtain the following generalization of [19, Lemma 14].
+Proposition 5.10. Let p ≥ 5 and let q = pf .
+                    ch(F2,4 (Fq )) = (q 2 , q 4 + q 3 − q 2 − 1, q 4 − q 2 − q + 1)f .
+Proof. Note that n(2, 4) = 2. The formula for chf (F2,4 (Fq )) is given by Proposition 5.7
+and the class number k(F2,4 (Fq )) is given by Theorem 2.6.                             
+Proposition 5.11. Let p ≥ 7 and let q = pf . The nonzero values of chi (F2,5 (Fq )) are
+given as follows.
+           ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                             19
+
+
+                         i   chi (F2,5 (Fq ))
+                        0    q2
+                        f    (q − 1)(q 4 + 2q 3 + 2q 2 + q + 1)
+                       2f    (q − 1)(q 7 + 2q 6 + 3q 5 + 2q 4 + q 3 − q − 1)
+                       3f    q 2 (q 2 − 1)(q 4 − q − 1)
+Proof. Set F = F2,5 (Fq ), and note that n(2, 5) = 3. The statement about ch0 (F ) is
+trivial; the claim about chf (F ) is a special case of Proposition 5.7. By Theorem 2.6,
+k(F ) = 2q 8 + q 7 − q 5 − q 4 , so it suffices to compute, for instance, ch3f (F ).
+   We now describe a Hall basis for f2,5 (Fq ). We choose Lie generators x and y, where
+y < x, and omit Lie brackets in left-normed Lie products, so, for example, [[x, y], x] is
+represented by xyx. It is easily verified that the following elements form a Hall basis.
+                 j   Basis elements of weight j
+                 1   y, x
+                 2   xy
+                 3   xyy, xyx
+                 4   xyyy, xyyx, xyxx
+                 5   xyyyx, xyyxx, xyxxx, xyyyy, (xyx)(xy), (xyy)(xy)
+With respect to this basis, the commutator matrix
+                        −Y1 −Y2 −Y4 −Y5 −Y10 −Y11 − Y7 −Y12 − Y8
+                                                                
+          
+                Y1            −Y3 −Y5 −Y6 −Y7    −Y8    −Y9     
+                                                                 
+          
+                Y2       Y 3       −Y 11  −Y 12
+                                                                 
+                                                                 
+                 Y4       Y5    Y11
+                                                                
+ B(Y) =                                                         .
+                                                                
+                Y5       Y6    Y12                              
+                                                                
+          
+               Y10       Y7                                     
+                                                                 
+           Y11 + Y7 Y8                                          
+             Y12 + Y8 Y9
+  It suffices to prove that ν3f (F ) = q 6 (q 2 − 1)(q 4 − q − 1). If y ∈ F12q and rk(B(y)) = 6
+then (y11 , y12 ) 6= {0}. Fix (y11 , y12 ) ∈ F2q \ {0}. It is easily checked that
+                  #{y = (y7 , . . . , y10 ) ∈ F4q : rk(B14 (y)) = 1} = q(q + 1).
+Given y = (y7 , . . . , y10 ) ∈ F4q with rk(B14 (y)) = 1, there are q 5 (q − 1) ways to choose
+(y1 , . . . , y6 ) ∈ F6q such that rk(B(y1 , . . . , y12 )) = 6. Similarly,
+               #{y = (y7 , . . . , y10 ) ∈ F4q : rk(B14 (y)) = 2} = q 4 − q(q + 1).
+Given y = (y7 , . . . , y10 ) ∈ F4q with rk(B14 (y)) = 2, there are q 6 ways to choose
+(y1 , . . . , y6 ) ∈ F6q such that rk(B(y1 , . . . , y12 )) = 6. Thus
+ ν3f (F ) = (q 2 − 1) q 5 (q − 1) · q(q + 1) + q 6 · (q 4 − (q 2 + q)) = q 6 (q 2 − 1)(q 4 − q − 1)
+                                                                      
+
+as claimed.                                                                                     
+Remark 5.12. We note that ch3f (F2,5 (Fq )) is given by a polynomial in q and its expansion
+in v := q − 1 has both positive and negative coefficients. Indeed
+                ch3f (F2,5 (Fq )) = v(v + 2)(v + 1)2 (v 4 + 4v 3 + 6q 2 + 3v − 1).
+We observe this phenomenon only for the family of groups F2,5 (Fq ), for p ≥ 7; in all
+other families we considered the corresponding coefficients are nonnegative.
+20                                     E. A. O’BRIEN AND C. VOLL
+
+Acknowledgements. We acknowledge support from the Alexander von Humboldt Foun-
+dation, the EPSRC, the Marsden Fund of New Zealand and the Royal Society. We
+thank I. M. Isaacs, L. G. Kovács and Avinoam Mann for helpful discussions.
+
+
+                                              References
+ [1] N. Avni, B. Klopsch, U. Onn, and C. Voll, Representation zeta functions of compact p-adic Lie
+     groups and arithmetic groups, Duke Math. J. 162 (2013), no. 1, 111–197.
+ [2] E. A. Bender, On Buckhiester’s enumeration of n × n matrices, J. Combinatorial Theory Ser. A
+     17 (1974), 273–274.
+ [3] N. Boston and I. M. Isaacs, Class numbers of p-groups of a given order, J. Algebra 279 (2004),
+     no. 2, 810–819.
+ [4] M. Boyarchenko, Representations of unipotent groups over local fields and Gutkin’s conjecture, Math.
+     Res. Lett. 18 (2011), no. 3, 539–557.
+ [5] M. Boyarchenko and M. Sabitova, The orbit method for profinite groups and a p-adic analogue of
+     Brown’s theorem, Israel J. Math. 165 (2008), 67–91.
+ [6] L. Carlitz and J. H. Hodges, Distribution of bordered symmetric, skew and hermitian matrices in a
+     finite field, J. Reine Angew. Math. 195 (1955), 192–201.
+ [7] J. Cossey and T. Hawkes, Sets of p-powers as conjugacy class sizes, Proc. Amer. Math. Soc. 128
+     (2000), no. 1, 49–51.
+ [8] A. Evseev, Reduction for characters of finite algebra groups, J. Algebra 325 (2011), 321–351.
+ [9] G. A. Fernández-Alcober and A. Moretó, On the number of conjugacy class sizes and character
+     degrees in finite p-groups, Proc. Amer. Math. Soc. 129 (2001), no. 11, 3201–3204 (electronic).
+[10] J. González-Sánchez, Kirillov’s orbit method for p-groups and pro-p groups, Comm. Algebra 37
+     (2009), no. 12, 4476–4488.
+[11] P. Hall, The classification of prime-power groups, J. Reine Angew. Math. 182 (1940), 130–141.
+[12] M. Hall, Jr., The theory of groups, Chelsea Publishing Co., New York, 1976.
+[13] G. Higman, Enumerating p-groups. I. Inequalities, Proc. London Math. Soc. (3) 10 (1960), 24–30.
+[14] R. E. Howe, Kirillov theory for compact p-adic groups, Pacific J. Math. 73 (1977), no. 2, 365–381.
+[15]          , On representations of discrete, finitely generated, torsion-free, nilpotent groups, Pacific J.
+     Math. 73 (1977), no. 2, 281–305.
+[16] B. Huppert, A remark on the character-degrees of some p-groups, Arch. Math. (Basel) 59 (1992),
+     no. 4, 313–318.
+[17] I. M. Isaacs, Sets of p-powers as irreducible character degrees, Proc. Amer. Math. Soc. 96 (1986),
+     no. 4, 551–552.
+[18]          , Counting characters of upper triangular groups, J. Algebra 315 (2007), no. 2, 698–719.
+[19] N. Ito and A. Mann, Counting classes and characters of groups of prime exponent, Israel J. Math.
+     156 (2006), 205–220.
+[20] A. Jaikin-Zapirain, Zeta function of representations of compact p-adic analytic groups, J. Amer.
+     Math. Soc. 19 (2006), no. 19, 91–118.
+[21] M. Hall Jr., A basis for free Lie rings and higher commutators in free groups, Proc. Amer. Math.
+     Soc. 1 (1950), 575–581.
+[22] T. M. Keller, Derived length and conjugacy class sizes, Adv. Math. 199 (2006), no. 1, 88–103.
+[23] E. I. Khukhro, p-automorphisms of finite p-groups, London Mathematical Society Lecture Note
+     Series, vol. 246, Cambridge University Press, Cambridge, 1998.
+[24] S. Lang and A. Weil, Number of points of varieties in finite fields, Amer. J. Math. 76 (1954),
+     819–827.
+[25] M. Liebeck and A. Shalev, Character degrees and random walks in finite groups of Lie type, Proc.
+     London Math. Soc. (3) 90 (2005), no. 1, 61–86.
+[26] C. Reutenauer, Free Lie algebras, London Mathematical Society Monographs. New Series, vol. 7,
+     Oxford University Press, New York, 1993.
+[27] A. Stasinski and C. Voll, Representation zeta functions of nilpotent groups and generating functions
+     for Weyl groups of type B, to appear in Amer. J. Math., 2013.
+[28] R. Stöhr and M. Vaughan-Lee, Products of homogeneous subspaces in free Lie algebras, Internat. J.
+     Algebra Comput. 19 (2009), no. 5, 699–703.
+[29] A. Vera-López and J. M. Arregi, Conjugacy classes in Sylow p-subgroups of GL(n, q). IV, Glasgow
+     Math. J. 36 (1994), no. 1, 91–96.
+            ENUMERATING CONJUGACY CLASSES AND CHARACTERS OF p-GROUPS                                  21
+
+[30] A. Vera-López and J. M. Arregi, Conjugacy classes in unitriangular matrices, Linear Algebra Appl.
+     370 (2003), 85–124.
+[31] C. Voll, Zeta functions of nilpotent groups—singular Pfaffians, Essays in geometric group theory,
+     Ramanujan Math. Soc. Lect. Notes Ser., vol. 9, Ramanujan Math. Soc., Mysore, 2009, pp. 145–159.
+
+  E. A. O’Brien, Department of Mathematics, University of Auckland, Auckland, New
+Zealand
+  E-mail address: obrien@math.auckland.ac.nz
+
+  C. Voll, School of Mathematics, University of Southampton, University Road, Sou-
+thampton SO17 1BJ, United Kingdom
+  Current address: Fakultät für Mathematik, Universität Bielefeld, Postfach 100131, D-33501 Bielefeld,
+Germany
+  E-mail address: C.Voll.98@cantab.net
+

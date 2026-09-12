@@ -1,0 +1,896 @@
+                                                    THE ORBIT METHOD FOR PROFINITE GROUPS AND
+                                                      A p-ADIC ANALOGUE OF BROWN’S THEOREM
+arXiv:math/0608126v1 [math.RT] 4 Aug 2006
+
+
+
+
+                                                                   MITYA BOYARCHENKO AND MARIA SABITOVA
+
+                                                    Abstract. We develop an approach to the character theory of certain classes of
+                                                    finite and profinite groups based on the construction of a Lie algebra associated to
+                                                    such a group, but without making use of the notion of a polarization which is central
+                                                    to the classical orbit method. Instead, Kirillov’s character formula becomes the
+                                                    fundamental object of study. Our results are then used to produce an alternate proof
+                                                    of the orbit method classification of complex irreducible representations of p-groups
+                                                    of nilpotence class < p, where p is a prime, and of continuous complex irreducible
+                                                    representations of uniformly powerful pro-p-groups (with a certain modification for
+                                                    p = 2). As a main application, we give a quick and transparent proof of the p-adic
+                                                    analogue of Brown’s theorem, stating that for a nilpotent Lie group over Qp the Fell
+                                                    topology on the set of isomorphism classes of its irreducible representations coincides
+                                                    with the quotient topology on the set of its coadjoint orbits.
+
+
+
+
+                                                                                     Introduction
+                                              The orbit method was originally discovered in the late 1950s – early 1960s by Alexan-
+                                            dre Kirillov [Ki62] for connected and simply connected nilpotent Lie groups. If G is
+                                            such a group and g is its Lie algebra, this method provides an explicit bijection be-
+                                            tween the unitary dual G b of G, i.e., the set of equivalence classes of unitary irreducible
+                                            representations of G, and the set g∗ /G of orbits of the induced action of G on g∗
+                                            (called coadjoint orbits). A major ingredient of this theory is Kirillov’s character for-
+                                            mula. Roughly speaking, it states that if Ω ⊂ g∗ is a coadjoint orbit and ρΩ ∈ G        b is
+                                            the corresponding representation, then the character of ρΩ , viewed as a generalized
+                                            function on G, is the pullback via the logarithm map log : G −→ g of the inverse
+                                            Fourier transform of a suitably normalized G-invariant measure on g∗ supported on Ω.
+                                               Since then Kirillov’s approach has been extended to many other classes of groups:
+                                            nilpotent p-adic Lie groups [Mo65], p-groups of nilpotence class < p (beginning with
+                                            [Ka77]), and uniformly powerful (or uniform, for short) pro-p-groups [Ho77, JZ06], to
+                                            name the ones that will appear in this paper1. Each such extension usually involves
+                                               Date: July 30, 2006.
+                                               The research of M.B. was partially supported by NSF grant DMS-0401164.
+                                               1The orbit method can also be applied, with suitable changes, to solvable Lie groups; moreover,
+                                            its philosophy extends essentially to all Lie groups, and even beyond them. However, these general-
+                                            izations lie in a different direction from the ones considered in this article.
+                                                                                              1
+2                     MITYA BOYARCHENKO AND MARIA SABITOVA
+
+two modifications: one has to work with a correct analogue of a “unitary irreducible
+representation” in each context, and one has to find an appropriate version of the Lie
+algebra construction. For example, if G is a p-adic Lie group, its Lie algebra is defined
+as usual, but Gb has to be understood as the set of isomorphism classes of irreducible
+complex “algebraic” (or, in a different terminology, “smooth”) representations of G.
+On the other hand, if G is a p-group of nilpotence class < p (respectively, a uniform
+pro-p-group), then Gb has to be understood as the set of isomorphism classes of contin-
+uous complex irreducible representations of G, and the usual Lie algebra construction
+is replaced by a construction of Lazard which produces a finite Lie ring [Khu98] (re-
+spectively, a uniform Lie algebra over Zp [DDMS]) associated to G.
+   After these modifications have been made, the theory follows the pattern of Kirillov’s
+original approach (modulo various technical difficulties). Namely, in each case the
+underlying additive group of g has a natural topology, and g∗ can be identified with the
+Pontryagin dual of g. Given an element f ∈ g∗ , one looks for a polarization of g at f ,
+i.e., a Lie subalgebra h ⊆ g which has the property that f is trivial on [h, h], and which
+is maximal among all additive subgroups of g with this property. Polarizations always
+exist, and if H is the subgroup of G corresponding to a polarization h, then f induces
+a 1-dimensional character χf of H and we can form the induced representation ρf =
+IndG H χf . The theorem is that this representation is always irreducible; its isomorphism
+class depends only on the G-orbit of f ; and, finally, every ρ ∈ G    b arises in this way
+from a unique G-orbit Ω ⊂ g∗ . This description of ρf is then used to prove Kirillov’s
+character formula (or a suitable analogue thereof).
+   In reality, one needs to be more careful with uniformly powerful pro-p-groups when
+p = 2. The problem that arises here is that an element f ∈ g∗ which is trivial on
+[g, g] may not induce a 1-dimensional character of G. (We thank A. Jaikin-Zapirain
+for explaining this to us.) Thus in this case the approach to the orbit method has to
+be somewhat modified (cf. [JZ06]); however, the basic idea remains the same.
+   An important feature of all four situations mentioned above is that both G      b and
+    ∗
+g /G are equipped with a natural topology. The topology on the former is the so-
+called Fell topology (see §3.2). The topology on the latter is the quotient of the
+standard (compact-open) topology on g∗ . Moreover, in all four cases the orbit method
+bijection turns out to be a homeomorphism. This is a nontrivial result which has useful
+applications. For an interesting application in the p-adic setting we refer the reader to
+[GK92]. In the setting of real Lie groups this statement was originally conjectured by
+Kirillov, who also proved that the bijection g∗ /G −→ G  b is continuous. The proof that
+this bijection is also open is substantially more difficult, and was given by Ian Brown
+about 10 years later in [Br73]. While it may be possible to adapt Brown’s argument
+to a p-adic nilpotent Lie group G (to the best of our knowledge, this has never been
+done), we present in Section 3 a completely different proof (following a suggestion of
+V. Drinfeld) which is based on the fact that G is an increasing union of a sequence
+                        ORBIT METHOD AND BROWN’S THEOREM                                 3
+
+of open uniform pro-p-subgroups (see Lemma 3.2); this is the main new result of our
+paper. Our proof seems to be much shorter and more transparent than Brown’s proof,
+and we hope that it is easier to understand. On the other hand, it is not clear to us
+whether this approach has an analogue for real Lie groups.
+   Another new result in our paper is a theorem we call the “abstract orbit method”. It
+arose from an approach to the orbit method for finite nilpotent groups (of sufficiently
+small nilpotence class) that we also learned from V. Drinfeld. It was natural to try
+to see if this approach can be extended to uniform pro-p-groups, and, more generally,
+to find the minimal set of assumptions under which this method can be used. The
+answer is given in Section 1, and in Section 2 we show that our “abstract orbit method”
+can indeed be used to classify (continuous) complex irreducible representations of p-
+groups of nilpotence class < p and of uniform pro-p-groups (with a certain modification
+for p = 2). The main difference with the classical approach is that we never mention
+polarizations. In particular, in the abstract setting one does not even need a Lie bracket
+on g. Instead, we prove directly that a suitable analogue of Kirillov’s character formula
+produces a collection of functions on the group, parameterized by the coadjoint orbits,
+which turn out to be precisely the irreducible characters of the group.
+   This approach has its advantages and disadvantages. The main disadvantage is
+that, unlike the classical one, our method of constructing irreducible characters cannot
+be “upgraded” to yield a construction of irreducible representations. On the other
+hand, it appears to be more straightforward, since one always works directly with
+irreducible characters, whereas the motivation behind the notion of a polarization
+comes from areas of mathematics outside of representation theory. However, a much
+more significant advantage is that the method explained in our paper has an analogue
+in the geometric representation theory for unipotent groups, whereas the classical
+method does not have such an analogue (at least not in any obvious sense), for in the
+geometric setting polarizations cease to exist in general. A proper discussion of this
+remark is beyond the scope of our paper, and instead we refer the reader to [DB06].
+Acknowledgements. This paper owes its existence to lectures of Vladimir Drinfeld
+and our private discussions with him. In particular, he explained to us the approach
+to the orbit method for finite nilpotent groups which gave rise to our “abstract orbit
+method” theorem. He also motivated our main result by asking if an analogue of
+Brown’s theorem for p-adic nilpotent Lie groups can be proved using the orbit method
+for uniformly powerful pro-p-groups.
+   In addition, we would like to thank Michael Geline and George Glauberman who
+told us about Lazard’s construction in the setting of p-groups and uniformly powerful
+pro-p-groups, and suggested references [Khu98] and [DDMS], respectively. We are
+also grateful to Ben Wieland for referring us to [Ho77], to Adam Logan for drawing
+our attention to [JZ06], and especially to Andrei Jaikin-Zapirain for helpful e-mail
+correspondence and for pointing out a mistake in an earlier version of our paper.
+4                     MITYA BOYARCHENKO AND MARIA SABITOVA
+
+                            1. Abstract orbit method
+1.1. The statement. For every profinite group Π we denote by µΠ the unique Haar
+measure on Π such that µΠ (Π) = 1. We define the convolution of two complex-valued
+L2 -functions f1 and f2 on Π by the formula
+                                  Z
+                  (f1 ∗ f2 )(γ) =   f1 (h)f2 (h−1 γ) dµΠ (h), γ ∈ Π.
+                                  G
+We write Fun(Π) for the space of complex-valued functions on Π that are bi-invariant
+with respect to a sufficiently small open subgroup of Π. It is clear that Fun(Π) ⊆ L2 (Π)
+is closed under convolution, which makes Fun(Π) an associative C-algebra (it is unital if
+and only if Π is finite, and commutative if and only if Π is commutative). The subspace
+Fun(Π)Π ⊆ Fun(Π) of Π-invariant functions, where Π acts on itself by conjugation, is
+also closed under convolution (see Lemma 1.3), and in fact coincides with the center
+of Fun(Π); in particular, Fun(Π)Π is always commutative.
+Theorem 1.1 (Abstract orbit method). Let G be a profinite group, and suppose that
+there exist an abelian profinite group g and a homeomorphism exp : g −→ G such that
+the following two conditions hold:
+  (i) for each g ∈ G, the map Ad g : g −→ g given by x 7−→ log(g exp(x)g −1 ) is a
+      group automorphism, where we write log for exp−1 ; and
+                                           ≃
+ (ii) the pullback map exp∗ : Fun(G)G −→ Fun(g)G commutes with convolution.
+                                                                               b such
+Then each G-orbit Ω ⊂ g∗ is finite, and there is a bijection between g∗ /G and G
+                                                                      ∗
+that the irreducible character χ of G corresponding to an orbit Ω ⊂ g is given by
+                                                  X
+                                 χ(ex ) = |Ω|−1/2   f (x).                       (1.1)
+                                                f ∈Ω
+
+  Here, as in the introduction, g∗ denotes the Pontryagin dual of g, which, since g is
+compact, coincides with the group of continuous homomorphisms of g into C× , and
+has the discrete topology. The action of G on g∗ is induced by its action on g via
+Ad. Note that every finite group can be viewed as a profinite one (with the discrete
+topology), so our definitions and the theorem are valid for finite G and g as well.
+Remarks 1.2. (1) In practice, if one wants to apply Theorem 1.1 to a specific group
+    G, the main difficulty lies in verifying assumption (ii), as we will see in Section 2.
+(2) As we have already noted in the introduction, one should observe that g is not
+    required to have a Lie bracket in the statement of the theorem. Unfortunately,
+    we do not know of any example where the assumption of the theorem is satisfied
+    for some profinite group G, but g does not arise from some sort of a Lie algebra
+    construction. It would be very interesting to find such an example.
+(3) Formula (1.1) implies that |Ω|1/2 = χ(1) is an integer for every Ω ∈ g∗ /G, i.e., the
+    order of every coadjoint orbit is a full square. In the generality of the theorem,
+    this is the only proof of this fact known to us.
+                       ORBIT METHOD AND BROWN’S THEOREM                                5
+
+1.2. Auxiliary results. Until the end of the section we fix G, g and exp satisfying
+the assumptions of the theorem. To simplify notation, we write XG = Fun(G)G . Thus
+XG is the set of all complex-valued class functions f on G such that there exists a
+normal open subgroup K of G (depending on f ) satisfying:
+                     ∀g ∈ G,    ∀k ∈ K :       f (gk) = f (kg) = f (g).
+Similarly, we will write Xg = Fun(g)G , and we write gxg −1 in place of (Ad g)(x).
+Lemma 1.3. We have XG ⊆ L2 (G), and XG is an algebra with respect to convolution.
+Also, if χ is the character of a continuous complex irreducible representation ρ of G,
+then (dim ρ) · χ is an indecomposable idempotent of XG , and every indecomposable
+idempotent of XG has this form.
+  Let us recall that an indecomposable idempotent of a commutative ring A is a nonzero
+idempotent e ∈ A (i.e., e 6= 0 and e2 = e) which cannot be written as e = e1 + e2 for
+nonzero idempotents e1 , e2 ∈ A satisfying e1 · e2 = 0.
+
+Proof of Lemma 1.3. For any f1 , f2 ∈ XG let K be a normal open subgroup of G such
+that both f1 and f2 are constant on the cosets of K in G. (Clearly, such a K exists.)
+Then f1 and f2 can be considered as class functions on G/K (denoted respectively as
+f¯1 and f¯2 ), and for each g ∈ G, we have
+                               (f1 ∗ f2 )(g) = (f¯1 ∗ f¯2 )(ḡ),
+where ḡ denotes the image of g in G/K. On the other hand, it is well known that every
+complex irreducible representation of G is finite dimensional (because G is compact),
+and hence has finite kernel (because G is totally disconnected). This implies that it is
+enough to prove the lemma for a finite group G.
+  Let G be finite. Then clearly the set Fun(G) of all functions on G is an algebra with
+convolution as multiplication and XG ⊆ Fun(G) is the set of all class functions on G.
+Define the map ψ : C[G] −→ Fun(G) via
+                                   
+                                       0, g 6= h
+                        ψ(g)(h) =                     g, h ∈ G,
+                                      |G|, g = h
+                 P
+and for any x = g∈G ng g (ng ∈ C),
+                                          X
+                                  ψ(x) =     ng ψ(g),
+                                             g∈G
+
+where ng denotes the complex conjugate of ng . It is easy to see that ψ is a ring
+isomorphism and that the inverse image of XG in C[G] is center ZG of C[G]. This
+implies that XG ⊆ Fun(G) is a subalgebra and that e ∈ ZG is an indecomposable
+idempotent if and only if ψ(e) is one.
+6                     MITYA BOYARCHENKO AND MARIA SABITOVA
+
+   Recall that there is a one-to-one correspondence between indecomposable idempo-
+tents of ZG and irreducible representations of G, such that for every indecomposable
+idempotent e ∈ ZG, the corresponding irreducible representation ρe of G has the prop-
+erty that the left regular representation of G on e · C[G] is isomorphic to a multiple
+of ρe . Thus, it is enough to show that if e ∈ ZG is an indecomposable idempotent
+corresponding to an irreducible representation ρe of G, then (dim ρe )−1 · ψ(e) is the
+character of ρe . Moreover, since ψ(e) is a class function, it is enough to show that for
+any two indecomposable idempotents e, ẽ ∈ ZG we have
+                                            
+                                                0,     e 6= ẽ
+                             hψ(e), χẽ i =                                         (1.2)
+                                              dim ρe , e = ẽ
+where h· , ·i is the inner product on L2 (G) = Fun(G) and χẽ is the character of ρẽ .
+            P
+  Let e = g∈G ng g, ng ∈ C. Then
+                                1 X                        X
+                hψ(e), χẽ i =    ·    ψ(e)(g) · χẽ (g) =     ng χẽ (g) = χẽ (e), (1.3)
+                               |G| g∈G                     g∈G
+
+where by extending χẽ by linearity we consider χẽ as a function on C[G]. Now let Vẽ
+be a representation space for ρẽ . Then, as was mentioned above, for some n ∈ N there
+exists a C[G]-module isomorphism
+                                      ẽ · C[G] ∼
+                                                = V n, ẽ
+
+hence                                      
+                                                 0,     e 6= ẽ
+                               χẽ (e) =
+                                               dim ρe , e = ẽ
+which together with (1.3) gives (1.2).                                                  
+Lemma 1.4. Every G-orbit in g∗ is finite.
+Proof. Fix f ∈ g∗ . Since g is profinite and f : g → C× is continuous, it follows that
+f has finite image, hence Ker f is open. Thus there exists an open normal subgroup
+K ⊆ G such that log(K) ⊆ Ker f . Hence every element in the G-orbit of f vanishes
+on log(K). But the set of elements of g∗ that vanish on log(K) is finite, since there
+exists an open additive subgroup a ⊆ g such that a ⊆ log(K), and (g/a)∗ is finite. 
+Lemma 1.5. Write µ = µg. For each Ω ∈ g∗ /G define the following function on g:
+                                 1 X
+                      χΩ (x) =          f (x), x ∈ g.
+                               |Ω|1/2
+                                                f ∈Ω
+
+Then χΩ ∈ Xg, and for any two Ω, Ω′ ∈ g∗ /G we have
+                                             
+                                               1, Ω = Ω′
+                               hχΩ , χΩ′ i =
+                                               0, Ω 6= Ω′
+                   R
+where hχΩ , χΩ′ i = g χΩ (x)χΩ′ (x)dµ(x).
+                         ORBIT METHOD AND BROWN’S THEOREM                                7
+
+Proof. It is clear that χΩ ∈ Xg. Moreover, the functions f ∈ g∗ are well known to
+be orthonormal with respect to the inner product h· , ·i. Indeed, this is simply the
+orthogonality of irreducible characters for the P
+                                                compact abelian group g. This implies
+in particular that the L2 norm of the function f ∈Ω f is equal to |Ω|1/2 . Since distinct
+orbits are disjoint, the statement of the lemma follows immediately.                   
+
+1.3. Proof of Theorem 1.1. Let us write L2 (g∗ ) for the space of square-summable
+functions on g∗ (where g∗ is equipped with the counting measure). Recall that the
+Fourier transform provides an isomorphism
+                                                    ≃
+                                       F : L2 (g) −→ L2 (g∗ ),
+                                  Z
+                    (F f )(φ) =        f (h)φ(h)dµ(h),   f ∈ L2 (g), φ ∈ g∗ ,
+                                   g
+
+which intertwines convolution with pointwise multiplication (whenever the two op-
+erations are defined). Let χΩ be the functions on g defined in Lemma 1.5. Given
+Ω ∈ g∗ /G, we now show that F (|Ω|1/2 · χΩ ) is the characteristic function of Ω. Let
+Ω′ ∈ g∗ /G be a second orbit (possibly the same as Ω), and let φ ∈ Ω′ . Then we have
+                                        Z
+                          F (χΩ )(φ) = χΩ (x)φ(x)dµ(x).
+                                                g
+
+This implies that
+                                       Z
+                     hχΩ , χΩ′ i =      χΩ (x)χΩ′ (x)dµ(x) =
+                                           g
+                            1        XZ
+                                           χΩ (x)φ(g −1xg)dµ(x) =
+                      |Ω′ |1/2 |Gφ | g∈G g
+                                     Z
+                           |G|
+                                       χΩ (x)φ(x)dµ(x) = |Ω′ |1/2 · F (χΩ )(φ).
+                      |Ω′ |1/2 |Gφ | g
+
+Thus, by Lemma 1.5, F (|Ω|1/2 · χΩ ) is the characteristic function of Ω, and is therefore
+an indecomposable idempotent in the algebra of G-invariant functions on g∗ with
+respect to pointwise multiplication. Hence |Ω|1/2 · χΩ is an indecomposable idempotent
+of the algebra XG (with respect to convolution), which together with Lemma 1.3 proves
+the correspondence between irreducible representations of G and coadjoint orbits of
+g∗ . Furthermore, if χ is the irreducible character of G corresponding to Ω, then
+                                  |Ω|1/2 · χΩ = dim ρ · exp∗ (χ)
+by Lemma 1.3, hence by evaluating these functions at 0 we see that |Ω|1/2 = dim ρ,
+and consequently χΩ = exp∗ (χ). This completes the proof of Theorem 1.1.
+8                    MITYA BOYARCHENKO AND MARIA SABITOVA
+
+                       2. Application to (pro-)p-groups
+2.1. Notation and terminology. Until the end of the paper, p will denote a fixed
+prime number. Even though there exists a group-theoretic definition of a uniformly
+powerful (or, for brevity, “uniform”) pro-p-group [DDMS], for our purposes it is more
+convenient to use the Lie-theoretic definition, which is also more transparent. We
+define a uniform Lie algebra to be a Lie algebra over the ring Zp of p-adic integers
+which is free of finite rank as a Zp -module and satisfies [g, g] ⊆ p · g (respectively,
+[g, g] ⊆ 4 · g when p = 2). Given a uniform Lie algebra g, we equip it with the
+topology induced by the standard topology on Zp , and we define a topological group
+G := exp g to be the underlying topological space of g equipped with a group operation
+given by the Campbell-Hausdorff series
+                                                       ∞
+                                                  X
+                    CH(x, y) = log exp(x) exp(y) =        CHi (x, y).              (2.1)
+                                                      i=1
+
+Remarks 2.1. (1) A priori, CH(x, y) is viewed as an element of Qhhx, yii, the algebra
+    of formal noncommutative power series in the variables x and y with coefficients in
+    Q, and CHi (x, y) denotes its homogeneous component of (total) degree i. However,
+    it is well known that CH(x, y) is in fact a formal Lie series, which means that
+    each term CHi (x, y) lies in the Lie subalgebra of Qhhx, yii generated by x and y.
+(2) Since the coefficients of CH(x, y) involve positive powers of p in the denominator,
+    it is not immediately obvious that CH(x, y) can even be evaluated in a uniform
+    Lie algebra g term-by-term. However, Michel Lazard proved, cf. [DDMS], that the
+    condition imposed on g guarantees that for each x, y ∈ g, we have CHi (x, y) ∈
+    g ⊆ Qp ⊗Zp g, and, in addition, the series CH(x, y) converges uniformly on g and
+    makes it a topological group. This result justifies our construction of G = exp g.
+Definition 2.2. A uniform pro-p-group is a profinite group G which is isomorphic to
+exp g for some uniform Lie algebra g. If G ∼ = exp g is such a group, we will fix an
+                    ≃
+isomorphism exp g −→ G and denote the underlying map of sets by exp : g −→ G.
+By abuse of notation, we will also write G = exp g and g = Lie(G).
+   Suppose now that g is a finite Lie ring (i.e., a Lie algebra over Z) whose order is
+a power of p, and such that g is nilpotent of nilpotence class < p. (This means that
+any iterated commutator of length ≥ p vanishes in g.) In this case it is rather easy to
+check that the Lie series CH(x, y) can be evaluated in g term-by-term, and makes g
+a p-group (there is no issue of convergence of CH in this setting). Again, we denote
+this p-group by exp g. Michel Lazard proved, cf. [Khu98], that every p-group G of
+nilpotence class < p arises in this way from a unique g. In this situation we will also
+                                                                           ≃
+write g = Lie(G), and the underlying map of a fixed isomorphism exp g −→ G will be
+denoted by exp : g −→ G, just as for uniform pro-p-groups. We will write log = exp−1 .
+2.2. Auxiliary results on formal Lie series. Throughout the rest of the section G
+will denote a p-group of nilpotence class < p or a uniform pro-p-group, and g = Lie(G)
+                         ORBIT METHOD AND BROWN’S THEOREM                                   9
+
+its Lie algebra. In both cases we have the exponential map exp : g −→ G, which is a
+homeomorphism, and assumption (i) of Theorem 1.1 is satisfied in this situation. In
+fact, in both cases it is known that Lazard’s construction is functorial; in particular, a
+continuous set-theoretic bijection g −→ g is a Lie algebra automorphism if and only if it
+is an automorphism of the group exp g. Another fact that will often be used implicitly
+in what follows is that if x ∈ g and ad x : g −→ g denotes the additive map y 7→ [x, y],
+then ead x = Ad(ex ) as automorphisms of g. In order to classify the continuous complex
+irreducible representations of G we would like to show that assumption (ii) of Theorem
+1.1 holds in this setting as well. Unfortunately, as A. Jaikin-Zapirain pointed out to
+us, this is sometimes false when p = 2 and G is a uniform pro-2-group; thus this case
+needs to be dealt with separately (see §2.4).
+   Ignoring this issue for the moment, let us note that the main problem with verifying
+assumption (ii) arises from the fact that the convolution of functions on g is defined
+using the addition in g, while the convolution of functions on exp g is defined using
+the multiplication in exp g, or, equivalently, the Campbell-Hausdorff operation CH :
+g × g −→ g. This problem is dealt with in a very natural way, shown to us by
+V. Drinfeld: we prove that one can write CH(x, y) = x        e + ye, where xe (resp., ye) is a
+certain Lie series in the variables x, y which is conjugate to x (resp., to y). This formula
+implies that the two convolutions of conjugation-invariant functions on g, defined using
+addition and the operation CH, are in fact identical, which is the content of condition
+(ii) of Theorem 1.1. We should mention that in practice, however, the realization of
+this idea for uniform pro-p-groups involves certain technical difficulties.
+  We now turn to precise statements. Let E be a finite extension of Qp , let vp denote
+the valuation on E normalized by vp (p) = 1, and let K ⊆ E be a subfield.
+                             P
+Lemma 2.3. Let H(x, y) = ∞      n=1 Hn (x, y) ∈ Khhx, yii be a formal Lie series, where
+Hn (x, y) is homogeneous of degree n, such that H1 (x, y) = x + y and vp (Hn ) ≥ − n−2
+                                                                                    p−1
+for all n ≥ 2. Then there exist formal Lie series φ = φ(x, y), ψ = ψ(x, y) ∈ Khhx, yii
+such that
+                         H(x, y) = ead φ(x,y) (x) + ead ψ(x,y) (y),                (2.2)
+and if φn , ψn denote the degree n homogeneous components of φ, ψ, respectively, then
+vp (φn ) ≥ − n−1
+             p−1
+                 and vp (ψn ) ≥ − n−1
+                                  p−1
+                                      for all n ≥ 1.
+                                                                             
+   Here, by abuse of notation, we write vp (Hn ) resp., vp (φn ) and vp (ψn ) for the
+minimum among the valuations of all coefficients of Hn (resp., φn and ψn ).
+Proof. It is easy to see that one can construct the series φ and ψ inductively. Namely,
+for each n ≥ 0 let us compare the homogeneous components of degree n + 1 on both
+sides of (2.2). For n = 0 there is nothing to check, thanks to the assumption that
+H1 (x, y) = x + y. For each n ≥ 1, we may assume that all φj , ψj with j < n have
+                                                      j−1
+already been found and satisfy vp (φj ), vp (ψj ) ≥ − p−1 . In order to find φn and ψn we
+10                          MITYA BOYARCHENKO AND MARIA SABITOVA
+
+have to solve an equation of the form
+                       [φn , x] + [ψn , y] + (something known) = Hn+1 (x, y),                                (2.3)
+where “something known” is a sum of expressions of the form
+           1                                               1
+             · [φj1 , [φj2 , [. . . [φjk , x] . . . ]]] or    · [ψj1 , [ψj2 , [. . . [ψjk , y] . . . ]]]      (2.4)
+          k!                                               k!
+with 2 ≤ k ≤ n and j1 + j2 + · · · + jk = n. It is well known that vp (k!) ≤ k−1                         p−1
+                                                                                                             for all
+k ≥ 1 (with equality if k is a power of p), which implies that the valuation of each of
+the expressions in (2.4) is at least
+             k − 1 j1 − 1       jk − 1    k − 1 + j1 + · · · + jk − k    n−1
+         −        −       −···−        =−                             =−     .
+             p−1    p−1         p−1                 p−1                  p−1
+In addition, we have vp (Hn+1 ) ≥ − n−1
+                                      p−1
+                                           by assumption. This immediately implies that
+there exist homogeneous Lie polynomials φn = φn (x, y), ψn = ψn (x, y) of degree n
+which solve (2.3) and satisfy vp (φn ), vp (ψn ) ≥ − n−1
+                                                     p−1
+                                                         , completing the induction. 
+  This result suffices to prove the orbit method correspondence when p ≥ 5. To treat
+the case p = 3 we need the following variation:
+Lemma 2.4. In the situation of Lemma 2.3, assume that p = 3 and that
+                                      6n − 10
+                         v3 (Hn ) ≥ −            ∀ n ≥ 2.
+                                         7
+Then the conclusion of Lemma 2.3 holds with v3 (φn ), v3 (ψn ) ≥ − 6n−4
+                                                                     7
+                                                                        for n ≥ 1.
+Proof. We follow the proof of Lemma 2.3 almost word-for-word; the only step that
+needs to be changed is the estimation of the valuations of the coefficients of the expres-
+sions (2.4). We have v3 (k!) ≤ (k − 1)/2, and therefore, by the induction assumption,
+each of the valuations in question is at least
+      k − 1 6j1 − 4             6jk − 4      k − 1 6n − 4k       6n − 4 k − 1
+     −      −           −···−           =−         −         =−         +     .
+        2         7                 7          2        7           7     14
+Since k − 1 > 0, this finishes the induction in the same way as before.                                          
+
+2.3. The orbit method when p ≥ 3. In this subsection we treat the orbit method
+for a group G which is either a p-group of nilpotence class < p or a uniform pro-p-group
+with p ≥ 3. Since the orbit method obviously works for commutative 2-groups, there
+is no harm in assuming that p ≥ 3 for finite G as well.
+Proposition 2.5. Assume that p ≥ 3, let G be as above, and let g = Lie(G). Then
+there exist formal Lie series φ(x, y), ψ(x, y) ∈ Qhhx, yii which can be evaluated term-
+by-term in g, converge uniformly for x, y ∈ g when g is uniform, and satisfy
+                               
+              log exp(x) exp(y) = ead φ(x,y) (x) + ead ψ(x,y) (y) ∀ x, y ∈ g.      (2.5)
+                        ORBIT METHOD AND BROWN’S THEOREM                                 11
+
+Proof. Let us recall the Campbell-Hausdorff series CH(x, y) ∈ Qhhx, yii defined by
+(2.1). The key fact about the coefficients of CH(x, y) that we will need is the following
+result (see [DDMS], p. 123): for every prime p,
+                                            n−1
+                            vp (CHn ) ≥ −             ∀ n ≥ 1.                       (2.6)
+                                            p−1
+Suppose first that G is finite, and let H(x, y) ∈ Qhhx, yii denote the Lie polynomial
+obtained by discarding all homogeneous components of CH(x, y) of degrees ≥ p. Then
+G is isomorphic to g equipped with the operation given by H. Since vp (Hn ) ∈ Z, it
+follows from (2.6) that all coefficients of H lie in Zp ∩ Q. Thus the assumption of
+Lemma 2.3 is satisfied with K = Q. Let φ′ , ψ ′ denote formal Lie series satisfying the
+conclusion of the lemma, and let φ, ψ be the Lie polynomials obtained from φ′ and ψ ′ ,
+respectively, by discarding all homogeneous components of degrees ≥ p − 1. (Note a
+slight change of our notation!) Since the valuation of each coefficient of φ and ψ must
+be an integer, and since − n−1
+                            p−1
+                                > −1 for 1 ≤ n ≤ p − 2, we see that the coefficients of
+φ and ψ lie in Zp ∩ Q. Thus φ and ψ can be evaluated in g. In addition, since g has
+nilpotence class ≤ p − 1, the conclusion of Lemma 2.3 implies that (2.5) holds.
+  Next we assume that G is a uniform pro-p-group. By abuse of notation, we define
+                     ⊗Zp g −→ Z ∪ {∞} by vp (x) = sup r ∈ Z p−r x ∈ g . It is well
+a “valuation” vp : QpP
+known that a series ∞  n=1 xn in g converges if and only if vp (xn ) → ∞ as n → ∞.
+
+   Let us consider the case p = 3. Put H(x, y) = CH(x, y) ∈ Qhhx, yii. It follows
+from (2.6) that v3 (H2 ) ≥ 0 and v3 (Hn ) ≥ − n−1
+                                                2
+                                                  for all n ≥ 3. Since − 6n−10
+                                                                           7
+                                                                               ≤ − n−1
+                                                                                    2
+for all n ≥ 3, we see that H satisfies the assumption of Lemma 2.4 with K = Q. Let
+φ, ψ denote the formal Lie series satisfying the conclusion of the lemma. Since g is
+uniform, we see that for all x, y ∈ g and all n ≥ 1, we have
+                                                         6n − 4   n−3
+           v3 (φn (x, y)) ≥ v3 (φn ) + n − 1 ≥ n − 1 −          =     > −1.
+                                                           7       7
+Therefore v3 (φn (x, y)) ≥ 0, which means that φn (x, y) can be evaluated in g for all
+n ≥ 1, and, in addition, v3 (φn (x, y)) → ∞ as n → ∞ (independently of x, y), which
+implies that the series φ(x, y) converges uniformly in g for x, y ∈ g. Similarly, the
+series ψ(x, y) can be evaluated term-by-term and converges uniformly for all x, y ∈ g.
+   Finally, we consider the case p ≥ 5. Here an additional small trick is needed. Put
+                  √                              √ √
+K = E = Qp ( p) and H(x, y) = √1p · CH( px, py) ∈ Khhx, yii. Then (2.6) implies
+that vp (Hn ) = n/2 + vp (CHn ) − 1/2 ≥ 0 for all n ≥ 1, and we have H1 (x, y) = x + y,
+which shows that Lemma 2.3 applies to H(x, y). Changing notation again, we let
+φ′ (x, y), ψ ′ (x, y) be the formal Lie series satisfying the conclusion of the lemma. Thus
+               1        √        √          ′                 ′
+              √ log exp( px) exp( py) = ead φ (x,y) (x) + ead ψ (x,y) (y),
+                p
+12                         MITYA BOYARCHENKO AND MARIA SABITOVA
+                                         √          √
+which after a change of variables z = px, w = py can be rewritten as
+                                       
+                    log exp(z) exp(w) = ead φ(z,w)(z) + ead ψ(z,w) (w),
+                                                                       
+where we have put φ(z, w) = φ′ √zp , √wp and ψ(z, w) = ψ ′ √zp , √wp . The problem is
+                                                             √
+that the coefficients of φ and ψ lie a priori in K = Qp ( p). However, this is easy to
+fix as follows. Let us introduce a Z/2Z-grading on Khhx, yii by assigning degree 0 to
+                                                              √
+every element of Qp , and assigning degree 1 to x, y and p. With this convention, it
+is clear that H(x, y) is purely odd (i.e., each Hn (x, y) is odd). By looking at the proof
+of Lemma 2.3, it is easy to see that the formal Lie series φ′ and ψ ′ can be chosen to
+be purely even. This implies that φ(z, w) and ψ(z, w) have coefficients in Qp .
+     The rest of the proof is the same as before. For all z, w ∈ g and all n ≥ 1, we have
+                                                                  n
+                vp (φn (z, w)) ≥ vp (φn ) + (n − 1) = vp (φ′n ) − + (n − 1)
+                                                                  2
+                                     n−1 n                  n−3
+                               ≥ −         − +n−1 ≥                 > −1,
+                                     p−1      2                 4
+where we have used2 the assumption p ≥ 5. Thus φ(z, w) can be evaluated term-by-
+term in g and converges uniformly for all z, w ∈ g, and similarly for ψ(z, w). 
+Theorem 2.6. Assume that p ≥ 3, let G be either a p-group of nilpotence class < p
+or a uniform pro-p-group, and let g = Lie(G). Then there exists a bijection Ω ←→ χΩ
+between G-orbits Ω ⊂ g∗ and characters of representations ρ ∈ Gb such that Kirillov’s
+character formula holds:
+                                            X
+                       χΩ (ex ) = |Ω|−1/2 ·   f (x)  ∀ x ∈ g.                   (2.7)
+                                                         f ∈Ω
+
+Proof. We will show that hypothesis (ii) of Theorem 1.1 holds for exp : g −→ G. Let
+φ(x, y) and ψ(x, y) be the formal Lie series satisfying the conclusion of Proposition
+2.5. Then we obtain a continuous
+                                           map of g × g to itself given by (x, y) 7−→ (e
+                                                                                        x, ye) =
+ ead φ(x,y) (x), ead ψ(x,y) (y) . (This is a slight abuse of notation since x
+                                                                            e depends on both
+x and y, and so does ye.) This map satisfies the properties mentioned in §2.2: on the
+one hand, x   e and ye are conjugate to x and y, respectively, and on the other hand, we
+have CH(x, y) = x      e + ye for all x, y ∈ g. We will now use this information to show that
+exp∗ (f1 ∗ f2 ) = exp∗ (f1 ) ∗ exp∗ (f2 ) for all f1 , f2 ∈ Fun(G)G .
+     Let us first assume that G is finite. Then, due to the G-invariance of f1 , f2 , we have
+
+                        def 1
+                                       X                                  1        X
+     exp∗ (f1 ∗ f2 ) (z) =                          f1 (ex )f2 (ey ) =                          f1 (exe )f2 (eye) (2.8)
+                             |g|                                         |g|
+                                   x,y∈g : x
+                                           e+e
+                                             y =z                              x,y∈g : x
+                                                                                       e+e
+                                                                                         y =z
+
+     2Note that this argument would fail if p = 3: this is why we need Lemma 2.4.
+                         ORBIT METHOD AND BROWN’S THEOREM                                   13
+
+for all z ∈ g. On the other hand,
+                                                1       X
+                  exp∗ (f1 ) ∗ exp∗ (f2 ) (z) =                   f1 (ex )f2 (ey ).      (2.9)
+                                                |g| x,y∈g : x+y=z
+Thus it only remains to show that the map (x, y) 7−→ (e    x, ye) is a bijection ofg × g onto
+itself. However, this map is of the form (x, y) 7−→ x + A(x, y), y + B(x, y) , where A
+and B are Lie polynomials whose homogeneous components have degrees ≥ 2. Using
+induction on the nilpotence class of g, it is easy to check that this map is injective (for
+the induction step, let z be the center of g and note that the map descends to a map
+of (g/z) × (g/z) to itself). Therefore it is bijective because g is finite.
+   If G is uniform the argument is similar. We only need to recall that by the definition
+of Fun(G), there exists r ∈ N such that f1 and f2 are bi-invariant with respect to the
+                    r
+open subgroup Gp = exp(pr g). Moreover, exp descends to a bijection of g/pr g onto
+       r
+G/Gp , and the map (x, y) 7−→ (e     x, ye) descends to a bijection of (g/pr g) × (g/pr g) onto
+itself. Thus equations (2.8) and (2.9) remain valid with g replaced by g/pr g, and we
+see that exp∗ (f1 ∗ f2 ) = exp∗ (f1 ) ∗ exp∗ (f2 ), as desired.                              
+2.4. Uniform pro-2-groups. In this subsection we assume that p = 2, fix a uniform
+pro-2-group G, and put g = Lie(G). As we have already mentioned, the conclusion of
+Theorem 2.6 may fail in this case; indeed, even for an orbit Ω ⊂ g∗ of size 1 formula
+(2.7) may fail to define an irreducible character of G (cf. [JZ06]). In view of Theorem
+1.1, this means that the pullback map exp∗ : Fun(G)G −→ Fun(g∗ )G may not commute
+with convolution. However, we do have a weaker positive result:
+Proposition 2.7. (a) Assume that [g, g] ⊆ 8 · g. Given f1 , f2 ∈ Fun(G)G , we have
+    exp∗ (f1 ∗ f2 ) = exp∗ (f1 ) ∗ exp∗ (f2 ) provided either f1 or f2 is supported on G2 .
+(b) In general, we have exp∗ (f1 ∗ f2 ) = exp∗ (f1 ) ∗ exp∗ (f2 ) for all f1 , f2 ∈ Fun(G2 )G .
+Proof. (a) The argument is rather similar to the one used in the previous subsection.
+Consider the formal Lie series H(x, y) = 12 · CH(2x, 2y). We have H1 (x, y) = x + y,
+and it follows from (2.6) that v2 (Hn ) ≥ 0 for all n ≥ 1. Thus we can apply Lemma
+2.3 with K = Q, and it yields formal Lie series φ′ (x, y), ψ ′ (x, y) satisfying
+                 1                                 ′               ′ ′
+                   · log exp(2x) exp(2y) = ead φ (x,y) (x) + ead ψ(x ,y ) (y).
+                 2
+We make the change of variables z = 2x, w = 2y and rewrite the last equation as
+                                      
+                    log exp(z) exp(w) = ead φ(z,w)(z) + ead ψ(z,w) (w),
+                                                    
+where φ(z, w) = φ′ z2 , w2 and ψ(z, w) = ψ ′ z2 , w2 . Now if z, w ∈ g, then for all n ≥ 1,
+               v2 (φn (z, w)) ≥ v2 (φn ) + 3(n − 1) = v2 (φ′n ) − n + 3(n − 1)
+                                                                                        (2.10)
+                              ≥ −(n − 1) − n + 3(n − 1) = n − 2.
+Here we have used the assumptionP[g, g] ⊆ 8 · g. Similarly,
+                                                      P v2 (ψn (z, w)) ≥ n − 2 for all
+n ≥ 1. This means that the series n≥2 φn (z, w) and n≥2 ψn (z, w) can be evaluated
+14                        MITYA BOYARCHENKO AND MARIA SABITOVA
+
+term-by-term and converge uniformly for z, w ∈ g. Unfortunately, we cannot make sure
+that both φ1 (z, w) and ψ1 (z, w) are defined in g, because by definition we must have
+[φ1 (z, w), z] + [ψ1 (z, w), w] = 12 [z, w]. However, in view of the inductive construction
+of the series φ′ and ψ ′ used in the proof of Lemma 2.3, we may assume that, say,
+φ1 (z, w) = 0 and ψ1 (z, w) = z/2. This implies that φ(z, w) is defined and converges
+uniformly in g for all z, w ∈ g, while ψ(z, w) is defined and converges uniformly in g
+for z ∈ 2g and w ∈ g.
+                                                                                          
+   The rest of the proof is as before. Put (e      x, ye) = ead φ(x,y) (x), ead ψ(x,y) (y) . Then
+(x, y) 7−→ (e x, ye) is a map from (2g) × g to itself, and the argument used in the proof of
+Theorem 2.6 implies that exp∗ (f1 ∗ f2 ) = exp∗ (f1 ) ∗ exp∗ (f2 ) if f1 , f2 ∈ Fun(G)G and
+f1 is supported on G2 . Since convolution of G-invariant functions is commutative, the
+same formula holds if instead f2 is supported on G2 , completing the proof of (a).
+   The proof of (b) is almost identical, except that (2.10) has to be replaced by the
+following estimate, which is valid whenever [g, g] ⊆ 4g and z, w ∈ 2g:
+             v2 (φn (z, w)) ≥ v2 (φn ) + 2(n − 1) + n = v2 (φ′n ) − n + 2(n − 1) + n
+                            ≥ −(n − 1) + 2(n − 1) = n − 1 ≥ 0.
+This means that φ(z, w), and similarly ψ(z, w), can be evaluated in g term-by-term
+for all z, w ∈ 2g, and converges uniformly for these values of z, w.             
+  We can now prove a version of the orbit method for uniform pro-2-groups which is
+weaker than Theorem 2.6, but suffices for some applications (see Section 3).
+Theorem 2.8. Let G be a uniform pro-2-group and g = Lie(G). For every G-orbit
+Ω ⊂ (2g)∗ , let e′Ω ∈ Fun(2g)G denote the inverse Fourier transform of the characteristic
+                                                             bΩ ⊂ G
+function of Ω, put eΩ = log∗ (e′Ω ) ∈ Fun(G2 )G , and define G     b to be the collection
+of those ρ ∈ Gb on which eΩ acts nontrivially3. Then the following statements hold:
+(a) each GbΩ is finite, and G
+                            b is the disjoint union of the subsets G
+                                                                   bΩ;
+           b Ω and χρ is its character, then χρ 2 is a multiple of eΩ .
+(b) if ρ ∈ G                                                    G
+
+Proof. We use a modification of the argument that appeared in the proof of Theorem
+1.1. By construction, e′Ω is an indecomposable idempotent in the algebra Fun(2g)G
+(with respect to the convolution defined using addition in g), and Proposition 2.7(b)
+implies that eΩ is an indecomposable idempotent in Fun(G2 )G . Now we can think of
+                                       2
+Fun(G2 )G as a subalgebra of Fun(G2 )G in the obvious way, as well as a subalgebra of
+Fun(G)G using extension by zero. Therefore we can write
+                                                 m
+                                                 X              n
+                                                                X
+                                       eΩ =              ei =         fj ,
+                                                 i=1            j=1
+
+     3This means that the linear operator ρ(e
+                                                         R
+                                                Ω ) :=    G eΩ (g)ρ(g)dµG (g) is nonzero.
+                         ORBIT METHOD AND BROWN’S THEOREM                                    15
+                                                                    2
+where the ei ’s are indecomposable idempotents in Fun(G2 )G and the fj ’s are inde-
+composable idempotents in Fun(G)G . By the proof of Theorem 1.1, each ei (resp., fj )
+corresponds to some πi ∈ G   c2 (resp., ρj ∈ G)   b whose character is a multiple of ei (resp.,
+                               b then ρ(eΩ ) 6= 0 if and only if ρ ∼
+fj ). It is clear that if ρ ∈ G,                                        = ρj for some j, which
+                b
+implies that GΩ = {ρ1 , ρ2 , . . . , ρn } is finite, proving the first half of (a).
+   Next let χi ∈ Fun(G)G be the character of the induced representation ηi := IndG   G2 πi .
+         2                                                     2
+Since G is normal in G, it follows that χi is supported on G , so that we can think of it
+as an element of Fun(G2 )G , and, moreover, χi is a positive integral multiple of the sum
+of elements in the orbit of ei under the G-conjugation action. In particular, χi ∗eΩ 6= 0,
+and therefore χ ∗ eΩ = λi · eΩ for some λi ∈ C× , because eΩ is a indecomposable
+idempotent in Fun(G2 )G . Hence we must have χi ∗ fj = λi · fj for every j. Therefore
+the ρj ’s are precisely the irreducible constituents of ηi . Now the Frobenius reciprocity
+implies that for each 1 ≤ j ≤ n, the πi ’s are precisely the irreducible constituents of
+ρj G2 , which proves part (b).
+                                               b be arbitrary, and let f ∈ Fun(G)G
+  Finally, to finish the proof of (a), let ρ ∈ G
+denote the corresponding indecomposable idempotent. There exists a normal open
+subgroup K ⊂ G such that K ⊆ G2 and f is bi-invariant with respect to K. Therefore
+f is the pullback of an indecomposable idempotent f of Fun(G/K)G/K . However,
+the natural inclusion Fun(G2 /K)G/K ֒→ Fun(G/K)G/K is a homomorphism of unital
+algebras, which implies that f is a summand of an indecomposable idempotent e of
+Fun(G2 /K)G/K . Let e ∈ Fun(G2 )G be the pullback of e; it follows from Proposition
+2.7(b) that e = eΩ for some G-orbit Ω ⊂ (2g)∗ , and the proof is complete.        
+2.5. Concluding remarks. The orbit method for uniform pro-p-groups was first
+studied by Roger Howe [Ho77]; he used the classical approach based on the notion
+of a polarization. However, he did not treat the case p = 2, and his results for p ≥ 3
+are weaker than our Theorem 2.6 in that he has to impose an additional requirement
+on g: namely, the Lie algebra e g which has g as the underlying Zp -module and has
+the Lie bracket defined by [x, y]eg = p1 · [x, y]g must be pro-nilpotent (equivalently,
+e
+g/(p · e
+       g) must be a nilpotent Lie algebra over Fp ). Thus, for example, Howe’s result
+does not apply to groups such as the kernel of the reduction modulo p homomorphism
+GLn (Zp ) −→ GLn (Fp ) for any p ≥ 3, whereas our results do apply to them.
+   The problem with the classical approach is that not every polarization of g corre-
+sponds to a subgroup of G, and Howe imposed his assumption precisely to deal with
+it. However, Andrei Jaikin-Zapirain showed in [JZ06] that Howe’s assumption can be
+removed by proving the existence of polarizations satisfying some stronger conditions
+which allow the classical method to be used. His Theorem 2.9 is equivalent to our
+Theorem 2.6. Moreover, he also obtained a result in the case p = 2 (Theorem 2.12 in
+op. cit.) which is stronger than our Theorem 2.8. On the other hand, our result is
+already sufficient for some applications, as we demonstrate in the next section.
+16                    MITYA BOYARCHENKO AND MARIA SABITOVA
+
+                  3. A p-adic analogue of Brown’s theorem
+3.1. The setup. We warn the reader that our notation here will differ from that of
+the first two sections. Namely, throughout the rest of the paper we let G be a p-adic
+nilpotent Lie group, and g its Lie algebra, which is a finite dimensional nilpotent Lie
+algebra over Qp . For our purposes one does not need to know the general definition
+of a p-adic Lie group; it suffices to think of G as the underlying topological space
+of g (where the topology on g is induced by the standard topology on Qp ) equipped
+with the operation given by the Campbell-Hausdorff series CH(x, y). (Here there is
+no question of CH being well defined or convergent, because g is a Lie algebra over
+a field of characteristic zero, and is nilpotent.) Thus G is a locally compact totally
+disconnected topological group. Recall also that a choice of a nontrivial continuous
+additive character ψ : Qp → C× allows one to identify g∗ with HomQp (g, Qp ). The set
+of coadjoint orbits g∗ /G is equipped with the quotient of the natural topology of g∗ .
+   A complex representation (π, V ) of G, where V is a vector space over C and π :
+G −→ GL(V ) is a homomorphism, is said to be algebraic (or smooth) if for each
+v ∈ V the stabilizer Gv = {g ∈ G π(g)v = v} is an open subgroup of G. Note that V
+need not have finite dimension in this definition, and in fact most irreducible algebraic
+representations of G are infinite-dimensional. The isomorphism class of (π, V ) will be
+denoted by [(π, V )], and we write G b for the set of isomorphism classes of irreducible
+algebraic representations of G. It is equipped with the Fell topology, whose definition
+is recalled in §3.2 below. Calvin Moore proved [Mo65] that there is a natural bijection
+between g∗ /G and G  b (see the introduction). The main result of this section is
+                                                 b is a homeomorphism.
+Theorem 3.1. The orbit method bijection g∗ /G −→ G
+  Note that the continuity of this bijection is not difficult to check using an argument
+similar to the one for real Lie groups (but see also §3.5). On the other hand, it is
+rather nontrivial to prove that the bijection is open, and our argument is based on a
+fact (Lemma 3.2) which does not have an obvious analogue over R.
+3.2. Fell topology. We recall the definition given in [GK92]. For an irreducible
+algebraic representation (π, V ) of G, choose n ∈ N, vectors v1 , . . . , vn ∈ V , linear
+functionals ξ1 , . . . , ξn ∈ V ∗ , a compact set B ⊂ G, and a real number ǫ > 0, and define
+                                                                  b
+                                       U (π, V, B, vj , ξj , ǫ) ⊆ G
+                                                b such that there exist w1 , . . . , wn ∈ W
+to be the set of isomorphism classes [(W, ρ)] ∈ G
+                       ∗
+and η1 , . . . , ηn ∈ W with the property
+                  ξi , π(g)vi − ηi , ρ(g)wi   <ǫ      ∀ g ∈ B, 1 ≤ i ≤ n.
+Sets of the form U (π, V, B, vj , ξj , ǫ) are defined to be a basis of neighborhoods of
+                      b which uniquely determines a topology on G,
+the point [(π, V )] ∈ G,                                               b called the Fell
+topology. To understand it, we begin with the following
+                           ORBIT METHOD AND BROWN’S THEOREM                                        17
+
+Lemma 3.2. If g is a finite dimensional nilpotent Lie algebra over Qp , then g can be
+written as the union of an increasing sequence of open uniform Lie subalgebras:
+                                                        [
+                        k1 ⊆ k2 ⊆ k3 ⊆ · · · ⊆ g,   g=     kj .                 (3.1)
+                                                                               j≥1
+
+Proof. Let x1 , . . . , xN be a basis of g over Qp . For every j ∈ N, consider the set of all
+elements of g of the form
+                                 [y1 , [y2 , [y3 , [· · · [yt−1 , yt ] · · · ]]]],
+where t ≥ 1 is arbitrary and each yi is of the form p−j xk for some 1 ≤ k ≤ N. Since g
+is nilpotent, only finitely many of these iterated commutators are nonzero, and hence
+their Zp -span, call it k′j , is a free Zp -submodule of g of finite rank. Moreover, k′j is
+closed under the Lie bracket by definition. By construction, k′j ⊆ k′j+1 for all j ≥ 1,
+and g = k′1 ∪ k′2 ∪ · · · . Let kj = p · k′j (resp., kj = 4 · k′j if p = 2); this is clearly a uniform
+Lie algebra, and since g is a vector space over Qp , it follows that (3.1) holds. Finally,
+each kj is open because p1−j xm ∈ kj for all 1 ≤ m ≤ N.                                              
+3.3. Some notation. An obvious consequence of Lemma 3.2 is that one obtains the
+same topology on G   b by restricting the compact set B in the definition of the Fell
+topology to be an arbitrary open uniform subgroup K of G. Now either Theorem 2.6
+or Theorem 2.8 applies to K. In order to make the argument below independent of p,
+let us define α = 2 if p = 2 and α = 1 if p ≥ 3. Put k = Lie(K) ⊂ g, and let Ω0 ⊂ (αk)∗
+be a K-orbit. If p = 2, then a finite subset K   b Ω0 ⊂ Kb was defined in Theorem 2.8.
+For p ≥ 3, we let K  b Ω0 ⊂ Kb to be the singleton subset consisting of the irreducible
+representation of K corresponding to Ω0 ⊂ k∗ . In either of the two cases, we define
+eΩ0 ∈ Fun(K α )K be the pullback via log : K α −→ αk of the inverse Fourier transform
+of the characteristic function of Ω0 , and Theorems 2.6 and 2.8 imply that if ρ ∈ Kb Ω0
+and χρ is its character, then χρ K α is a multiple eΩ0 .
+  As the last piece of notation, if π is any complex continuous representation of K,
+we will denote by supp(π) ⊆ K b the collection of all irreducible constituents of π.
+
+3.4. Proof of the difficult part of Theorem 3.1. Given f ∈ g∗ , we will prove that
+                                    ≃  b is open at the point Ωf ∈ g∗ /G, where Ωf
+the orbit method bijection g∗ /G −→ G
+denotes the G-orbit of f . Consider an open neighborhood of f in g∗ . By shrinking it
+if necessary, we may assume, thanks to Lemma 3.2, that it is of the form
+                                     n                     o
+                          V (f, K) = f ′ ∈ g∗ f ′ αk = f αk ,
+where K ⊂ G is an open uniform subgroup with Lie algebra k and α is as in §3.3. We
+assume from now on that K is fixed. It suffices to check that the image of V (f, K)
+under the orbit method map g∗ −→ G     b contains an open neighborhood of [(πf , Vf )]
+with respect to the Fell topology, where (πf , Vf ) denotes an irreducible algebraic rep-
+resentation of G corresponding to Ωf . The proof rests on the following
+18                    MITYA BOYARCHENKO AND MARIA SABITOVA
+
+Proposition 3.3. Let Ω ⊂ g∗ be a G-orbit, let Ω0 ⊂ (αk)∗ be a K-orbit, and let
+π denote the irreducible algebraic representation of G corresponding to Ω. Then
+supp(π K ) ∩ Kb Ω0 6= ∅ if and only if Ω0 is contained in the image of Ω under the
+restriction map res : g∗ → (αk)∗ .
+Proof. We use [GK92], §1.2. Recall that the character c(π) of π is not a function on
+G, but rather a distribution, defined by
+                                  Z           
+                   hc(π), ti = tr    t(g)π(g)dg ,    t ∈ C0∞ (G),               (3.2)
+                                    G
+       ∞
+where C0 (G) is the space of locally constant functions G −→ C with compact support,
+and dg denotes a fixed Haar measure on G. (The complex conjugation appears in
+the formula above for consistency with our orbit method for uniform pro-p-groups.)
+Moreover, Kirillov’s character formula in this context implies that exp∗ (c(π)) is the
+inverse Fourier transform of a suitably normalized G-invariant measure on g∗ supported
+on Ω. Let e0 = eΩ0 ∈ Fun(K α )K ⊂ C0∞ (G) with the notation of §3.3. By definition,
+supp(π K ) ∩ Kb Ω0 6= ∅ if and only if e0 acts nontrivially on π , which in turn is
+                                                                    K
+equivalent to hc(π), e0 i =
+                          6 0 because e0 is an idempotent in Fun(K). Since the Fourier
+transform is an isometry, we see that hc(π), e0i =6 0 if and only if res−1 (Ω0 ) ∩ Ω 6= ∅,
+which proves the proposition (since res(Ω) is obviously K-stable).                      
+  Using the notation preceding the statement of the proposition, let f0 = f αk, let
+Ω0 ⊂ (αk)∗ be the K-orbit of f0 , and let e0 = eΩ0 . Then Ω0 ⊆ res(Ω), so by (the proof
+of) Proposition 3.3, we have πf (e0 ) 6= 0. In particular, there exist v ∈ Vf and ξ ∈ Vf∗
+                                          R                −1
+such that hξ, πf (e0 )vi = 1. Define ǫ = K |e0 (k)|dµK (k) , where µK is the standard
+Haar measure on K of total mass 1. It is clear that the following result implies that
+the orbit method bijection g∗ /G −→ G   b is open:
+                                                                                   b is
+Proposition 3.4. The open neighborhood U (πf , Vf , K, v, ξ, ǫ) of [(πf , Vf )] in G
+                                                        b
+contained in the image of V (f, K) under the map g∗ −→ G.
+Proof. Suppose that [(ρ, W )] ∈ U (πf , Vf , K, v, ξ, ǫ). By definition, there exist w ∈ W
+and η ∈ W ∗ such that hη, ρ(g)wi − hξ, πf (g)vi < ǫ for all g ∈ K. Multiplying by
+the function |e0 (g)|, integrating with respect to µK and using the definition of ǫ, we
+obtain hη, ρ(e0 )wi − hξ, πf (e0 )vi < 1. By construction, this forces hη, ρ(e0 )wi =  6 0,
+                                       b                                       ′
+whence ρ(e0 ) 6= 0, i.e., supp(ρ K ) ∩ KΩ0 6= ∅. By Proposition 3.3, if Ω ⊂ g is the ∗
+
+G-orbit corresponding to ρ, then res(Ω′ ) contains f0 , i.e., Ω′ meets V (f, K).         
+3.5. Proof of continuity (sketch). We conclude by briefly explaining how Lemma
+3.2 can be used to prove that the orbit method bijection g∗ /G −→ G      b is continuous.
+We use the notation of §3.2. Fix (π, V ) ∈ G,    b let Ω ⊂ g∗ be the corresponding G-
+orbit, and consider a “standard” open neighborhood of [(π, V )] of the form U =
+U (π, V, K, vj , ξj , ǫ), where K ⊂ G is a uniform pro-p-subgroup. In view of Lemma 3.2
+                           ORBIT METHOD AND BROWN’S THEOREM                                          19
+
+it suffices to show that the inverse image of U in g∗ /G contains a neighborhood of Ω.
+To this end, let W ⊆ V be a finite dimensional K-invariant subspace containing all the
+vj ’s, let ϑ denote the (possibly reducible) representation of K afforded by W , and let
+χ1 , . . . , χr ∈ Fun(K)K ⊂ C0∞ (G) denote the characters of the irreducible constituents
+                                         b is such that π ′ contains a K-subrepresentation
+of ϑ. It is clear that if (π ′ , V ′ ) ∈ G                 K
+isomorphic to ϑ, then [(π ′ , V ′ )] ∈ U .
+  Now fix a Haar measure dg on G. For every G-orbit Ω′ ⊂ g∗ , let πΩ′ be the
+corresponding representation of G, let c(πΩ′ ) be the character of πΩ′ defined by (3.2),
+and let µΩ′ denote the G-invariant measure on g∗ supported on Ω′ whose inverse Fourier
+transform is equal to exp∗ (c(πΩ′ )). Furthermore, let k = Lie(K) ⊂ g, let res : g∗ −→ k∗
+denote the restriction map, and let νi : k∗ → C denote the Fourier transform of
+exp∗ (χi ) ∈ Fun(k)K . It is not hard to check that as Ω′ ∈ g∗ /G varies, the conditions
+ νi , res∗ µΩ′ ≥ νi , res∗ µΩ , 1 ≤ i ≤ r, define an open subset V ⊆ g∗ /G. If Ω′ ∈ V ,
+then applying the inverse Fourier transform and Kirillov’s character formula for the
+group G, we see that the multiplicity of each χi in πΩ′ K is at least its multiplicity
+in π K , whence ϑ is isomorphic to a subrepresentation of πΩ′ K . By the previous
+paragraph, V is contained in the inverse image of U in g∗ /G, completing the proof.
+                                           References
+[Br73] I.D. Brown, Dual topology of a nilpotent Lie group, Ann. Sci. Éc. Norm. Sup., 4é ser. 6 (1973),
+    407–411.
+[DDMS] J.D. Dixon, M.P.F. du Sautoy, A. Mann and D. Segal, “Analytic pro-p-groups”, 2nd ed.,
+    Cambridge Studies in Advanced Mathematics 61, Cambridge University Press, 1999.
+[DB06] V. Drinfeld and M. Boyarchenko, A motivated introduction to character sheaves and the orbit
+    method for unipotent groups in positive characteristic, in preparation.
+[GK92] S. Gelfand and D. Kazhdan, Extensions of representations of p-adic nilpotent groups, Adv.
+    in Math. 94 (1992), 240–255.
+[Ho77] R.E. Howe, Kirillov theory for compact p-adic groups, Pac. J. Math. 73 (1977), no. 2, 365–381.
+[JZ06] A. Jaikin-Zapirain, Zeta-functions of representations of compact p-adic analytic groups, Jour.
+    AMS 19 (2006), no. 1, 91–118, available online from the author’s homepage.
+[Ka77] D. Kazhdan, Proof of Springer’s hypothesis, Israel J. Math. 28 (1977), no. 4, 272–286.
+[Khu98] E.I. Khukhro, “p-Automorphisms of Finite p-groups”, Lond. Math. Soc. Lect. Note Series
+    246, Cambridge University Press, 1998.
+[Ki62] A.A. Kirillov, Unitary representations of nilpotent Lie groups, Uspehi Mat. Nauk 17 (1962),
+    no. 4 (106), 57–110.
+[Mo65] C.C. Moore, Decomposition of unitary representations defined by discrete subgroups of nilpo-
+    tent groups, Ann. of Math.(2) 82 (1965), 146–182.
+
+MITYA BOYARCHENKO: DEPARTMENT OF MATHEMATICS,
+UNIVERSITY OF CHICAGO, CHICAGO, IL 60637
+E-MAIL: MITYA@MATH.UCHICAGO.EDU
+
+MARIA SABITOVA: DEPARTMENT OF MATHEMATICS,
+UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN, URBANA, IL 61801
+E-MAIL: SABITOVA@MATH.UIUC.EDU
+
