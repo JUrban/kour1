@@ -1,0 +1,349 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "label": "trivial",
+      "row": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "q": [
+        0
+      ],
+      "stats": {
+        "table_entries": 1,
+        "associativity_generator_cases": 0,
+        "representative_checks": 1,
+        "polarization_triples": 1
+      }
+    },
+    {
+      "label": "C64",
+      "row": [
+        64,
+        64,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "q": [
+        0
+      ],
+      "stats": {
+        "table_entries": 4096,
+        "associativity_generator_cases": 24576,
+        "representative_checks": 64,
+        "polarization_triples": 1
+      }
+    },
+    {
+      "label": "C2xC4xC8",
+      "row": [
+        64,
+        8,
+        3,
+        3,
+        3,
+        0,
+        0,
+        1,
+        1,
+        8
+      ],
+      "q": [
+        0
+      ],
+      "stats": {
+        "table_entries": 4096,
+        "associativity_generator_cases": 12288,
+        "representative_checks": 64,
+        "polarization_triples": 1
+      }
+    },
+    {
+      "label": "D8",
+      "row": [
+        8,
+        4,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0,
+        3,
+        6
+      ],
+      "q": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "stats": {
+        "table_entries": 64,
+        "associativity_generator_cases": 192,
+        "representative_checks": 8,
+        "polarization_triples": 64
+      }
+    },
+    {
+      "label": "Q8",
+      "row": [
+        8,
+        4,
+        2,
+        1,
+        0,
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "q": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "stats": {
+        "table_entries": 64,
+        "associativity_generator_cases": 192,
+        "representative_checks": 8,
+        "polarization_triples": 64
+      }
+    },
+    {
+      "label": "Q8xC8",
+      "row": [
+        64,
+        8,
+        3,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        4
+      ],
+      "q": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "stats": {
+        "table_entries": 4096,
+        "associativity_generator_cases": 24576,
+        "representative_checks": 64,
+        "polarization_triples": 64
+      }
+    },
+    {
+      "label": "Q8xQ8",
+      "row": [
+        64,
+        4,
+        4,
+        2,
+        0,
+        4,
+        2,
+        1,
+        1,
+        4
+      ],
+      "q": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      "stats": {
+        "table_entries": 4096,
+        "associativity_generator_cases": 24576,
+        "representative_checks": 64,
+        "polarization_triples": 4096
+      }
+    },
+    {
+      "label": "D8xC4",
+      "row": [
+        32,
+        4,
+        3,
+        2,
+        1,
+        2,
+        1,
+        0,
+        3,
+        12
+      ],
+      "q": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "stats": {
+        "table_entries": 1024,
+        "associativity_generator_cases": 5120,
+        "representative_checks": 32,
+        "polarization_triples": 64
+      }
+    },
+    {
+      "label": "coordinates_4_2",
+      "row": [
+        32,
+        4,
+        2,
+        3,
+        0,
+        2,
+        3,
+        1,
+        1,
+        8
+      ],
+      "q": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "stats": {
+        "table_entries": 1024,
+        "associativity_generator_cases": 3072,
+        "representative_checks": 32,
+        "polarization_triples": 64
+      }
+    },
+    {
+      "label": "coordinates_8_4",
+      "row": [
+        256,
+        8,
+        2,
+        3,
+        0,
+        2,
+        3,
+        1,
+        1,
+        8
+      ],
+      "q": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "stats": {
+        "table_entries": 65536,
+        "associativity_generator_cases": 196608,
+        "representative_checks": 64,
+        "polarization_triples": 64
+      }
+    }
+  ],
+  "quadratic_controls": [
+    [
+      1,
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      2,
+      4,
+      3
+    ],
+    [
+      2,
+      1,
+      8,
+      1
+    ],
+    [
+      2,
+      2,
+      64,
+      27
+    ],
+    [
+      3,
+      1,
+      64,
+      0
+    ],
+    [
+      3,
+      2,
+      4096,
+      546
+    ],
+    [
+      4,
+      1,
+      1024,
+      0
+    ],
+    [
+      4,
+      2,
+      1048576,
+      13776
+    ],
+    [
+      5,
+      1,
+      32768,
+      0
+    ]
+  ],
+  "rejected_corruptions": [
+    "wrong_product",
+    "missing_generators",
+    "wrong_centre_rank",
+    "false_central_involutions",
+    "wrong_zero_count"
+  ],
+  "rejected_cubic_control": true,
+  "stats": {
+    "table_entries": 84097,
+    "associativity_generator_cases": 291200,
+    "representative_checks": 401,
+    "polarization_triples": 4483
+  },
+  "scope": "Finite controls for an elementary class-two refinement; the original bound in all classes is a prior consequence."
+}

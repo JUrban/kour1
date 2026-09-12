@@ -1,6 +1,6 @@
 # Candidate portfolio
 
-Updated 2026-09-12T14:00:49.754354+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-12T14:31:10.626287+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
@@ -83,7 +83,7 @@ Updated 2026-09-12T14:00:49.754354+00:00. This is a research triage list, not an
 | 10.35 | Quarter-turn semidirect product and a centralizer-algebra obstruction in degree two. | Sixth complete candidate: torsion-free subgroup of GL_2(C) not residually GL_2(Q), even allowing torsion images. Exact matrix controls passed; novelty and outside review pending. |
 | 16.28(a) | Keep a nonclosed class square in a separate infinite-order scalar fiber of every higher power. | Seventh complete candidate over an algebraic closure of F_5(t); field and reducibility assumptions explicit. GAP and Python controls passed. Part (b) is a prior-literature consequence. |
 | 14.22 | Finite coefficient supports and torsion-free amalgams separate a radical commutator from every finite isolated closure. | Eighth complete candidate, with G=Q or the nonabelian linear group Q * Z. Both groups are infinitely generated; exact polynomial-matrix and normal-form controls pass. Novelty and outside review pending. |
-| 16.14 | Central involutions versus generator rank; quadratic squaring for exponent four. | All58,760 groups through order256 checked, no counterexample; 3,583 explicit exclusion witnesses replayed and340 direct small controls pass. Exponent-four positive subclass proved. General question unresolved; no novelty claim. |
+| 16.14 | Full prior centralizer bound; elementary anisotropic square map for class two. | Original question affirmative by the prior Sambale bound. The arbitrary-exponent class-two refinement gives d(G)+dim Z/(Z intersection Phi(G))<=2 rank(Z(G)); the 70-file table/quadratic replay passes. The earlier order256 search is retained; stale unresolved status corrected. No new count or priority claim. |
 | 16.20 | Finite central products of perfect groups realize every normal subgroup as a dominion. | Ninth complete candidate affirmative answer. A group of order 44,029,440 has the 15-element modular nondistributive dominion lattice; a seven-factor variant also gives exactly M3 if every target quasivariety must contain A. GAP and independent binary controls pass; novelty and outside review pending. |
 | 16.95 | Permute columns of invertible matrices to obtain a cyclic operator. | All28,082,408 unordered binary bases through dimension6 checked, with no counterexample;22,347 independent Krylov controls pass. General conjecture unresolved, and Dixon2016 was withdrawn in2017. |
 | 16.60 | Tensor flip and the projection onto invariant vectors bound twisted involutions. | Full affirmative result already claimed in May2026. Independent direct argument retained, with a source proof gap identified and repaired. Excluded from new-candidate count. |
