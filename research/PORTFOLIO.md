@@ -1,6 +1,8 @@
 # Candidate portfolio
 
-Updated 2026-09-12T18:44:58.714451+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-12T19:06:16.931202+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+
+The [46-candidate review guide](../reports/REVIEW_GUIDE.md) supplies principal proof and evidence links. Its inventory passed 1,870 historical hash bindings; independent acceptance and priority remain pending.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|

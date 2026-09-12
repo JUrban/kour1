@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "scripts/audit_candidate_handoff.py",
+    "--output",
+    "results/candidate-handoff-integrity-initial.json"
+  ],
+  "started_utc": "2026-09-12T18:59:56.548721+00:00",
+  "ended_utc": "2026-09-12T18:59:59.310951+00:00",
+  "elapsed_seconds": 2.762237668968737,
+  "actual_returncode": 1,
+  "stdout_sha256": "59050d9f1f62c0373125f585292ce960086b18d252c761b70e85a4199fa9f485",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "script_sha256": "199d8cef860d9f08ac7bce1ba8f10dbdc2cd59e599ad3f586a25ed323373a4ab"
+}
