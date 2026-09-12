@@ -1,0 +1,10 @@
+Syntax warning: Unbound global variable in scripts/verify_20_89_metabelian.g:4\
+6
+  if not ForAll(el20189,x->x^((-2)^r20189) in s20189) then Error("entry time")\
+;fi;
+                                              ^^^^^^
+Syntax warning: Unbound global variable in scripts/verify_20_89_metabelian.g:4\
+7
+  if r20189>0 and ForAll(el20189,x->x^((-2)^(r20189-1)) in s20189) then Error(\
+"sharp entry time");fi;
+                                                           ^^^^^^

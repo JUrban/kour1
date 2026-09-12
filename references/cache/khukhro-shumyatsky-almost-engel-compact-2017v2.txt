@@ -1,0 +1,716 @@
+                                                                 ALMOST ENGEL COMPACT GROUPS
+
+                                                                         E. I. KHUKHRO AND P. SHUMYATSKY
+arXiv:1610.02079v2 [math.GR] 12 May 2017
+
+
+
+
+                                                                    To Efim Zelmanov on occasion of his 60th birthday
+
+                                                   Abstract. We say that a group G is almost Engel if for every g ∈ G there
+                                                   is a finite set E (g) such that for every x ∈ G all sufficiently long commutators
+                                                   [...[[x, g], g], . . . , g] belong to E (g), that is, for every x ∈ G there is a positive
+                                                   integer n(x, g) such that [...[[x, g], g], . . . , g] ∈ E (g) if g is repeated at least n(x, g)
+                                                   times. (Thus, Engel groups are precisely the almost Engel groups for which we
+                                                   can choose E (g) = {1} for all g ∈ G.)
+                                                       We prove that if a compact (Hausdorff) group G is almost Engel, then G has
+                                                   a finite normal subgroup N such that G/N is locally nilpotent. If in addition
+                                                   there is a uniform bound |E (g)| ⩽ m for the orders of the corresponding sets,
+                                                   then the subgroup N can be chosen of order bounded in terms of m. The proofs
+                                                   use the Wilson–Zelmanov theorem saying that Engel profinite groups are locally
+                                                   nilpotent.
+
+
+
+
+                                                                                     1. Introduction
+                                              A group G is called an Engel group if for every x, g ∈ G the equation [x, g, g, . . . , g] =
+                                           1 holds, where g is repeated in the commutator sufficiently many times depending
+                                           on x and g. (Throughout the paper, we use the left-normed simple commutator
+                                           notation [a1 , a2 , a3 , . . . , ar ] = [...[[a1 , a2 ], a3 ], . . . , ar ].) A group is said to be locally
+                                           nilpotent if every finite subset generates a nilpotent subgroup. Clearly, any locally
+                                           nilpotent group is an Engel group. Wilson and Zelmanov [15] proved the converse
+                                           for profinite groups: any Engel profinite group is locally nilpotent. Later Medvedev
+                                           [11] extended this result to Engel compact (Hausdorff) groups.
+                                              In this paper we consider almost Engel groups in the following precise sense.
+
+                                           Definition 1.1. We say that a group G is almost Engel if for every g ∈ G there
+                                           is a finite set E (g) such that for every x ∈ G all sufficiently long commutators
+                                           [x, g, g, . . . , g] belong to E (g), that is, for every x ∈ G there is a positive integer
+
+
+                                              2010 Mathematics Subject Classification. 20D25, 20E18, 20F45.
+                                              Key words and phrases. Compact groups; profinite groups; finite groups; Engel condition; locally
+                                           nilpotent groups.
+                                                                                                 1
+n(x, g) such that
+
+                     [x, g, g, . . . , g ] ∈ E (g)       for all n ⩾ n(x, g).
+                         | {z }
+                               n
+
+Thus, Engel groups are precisely the almost Engel groups for which we can choose
+E (g) = {1} for all g ∈ G.
+   We prove that almost Engel compact groups are finite-by-(locally nilpotent). By
+a compact group we mean a compact Hausdorff topological group.
+
+Theorem 1.2. Suppose that G is an almost Engel compact group. Then G has a
+finite normal subgroup N such that G/N is locally nilpotent.
+
+  In Theorem 1.2 it also follows that there is a locally nilpotent subgroup of finite
+index – just consider CG (N). The proof uses the aforementioned Wilson–Zelmanov
+theorem for profinite groups. First the case of a finite group G is considered, where
+obviously the result must be quantitative: namely, given a uniform bound |E (g)| ⩽
+m for the cardinalities of the sets E (g) inTthe above definition, we prove that the
+order of the nilpotent residual γ∞ (G) = i γi (G) is bounded in terms of m only.
+Then Theorem 1.2 is proved for profinite groups. Finally, the result for compact
+groups is derived with the use of the structure theorems for compact groups.
+  As in the case of finite groups, if there is a uniform bound m for the cardinalities
+of the sets E (g) in Theorem 1.2, then the subgroup N in the conclusion can be
+chosen to be of order bounded in terms of m (Corollary 5.5).
+  In an earlier paper [10] we obtained similar results about finite and profinite
+groups with a stronger condition of “almost Engel” type. That condition means
+that every element g of the group is “almost n-Engel” for some n = n(g) depending
+on g. Note, however, that Engel groups do not necessarily satisfy that condition.
+The new Definition 1.1 of almost Engel groups in the present paper imposes a weaker
+and more natural “almost Engel” condition and includes Engel groups (when all the
+subsets E (g) consist only of 1). Thus, the results of the present paper are stronger
+than in [10] even for (pro)finite groups, and cover a wider class of compact groups.
+  First in § 2 we collect some elementary properties of minimal subsets E (g) in the
+definition of almost Engel groups. We deal with finite groups in § 3, with profinite
+groups in § 4, and consider the general case of compact groups in § 5.
+  Our notation and terminology is standard; for profinite groups, see, for example,
+[14].
+  We say for short that an element g of a group G is an Engel element if for any
+x ∈ G we have [x, g, g, . . . , g] = 1, where g is repeated in the commutator sufficiently
+many times depending on x (such elements g are often called left Engel elements).
+  A subgroup (topologically) generated by a subset S is denoted by hSi. For a
+group A acting by automorphisms on a group B we use the usual notation for
+                                                     2
+commutators [b, a] = b−1 ba and [B, A] = h[b, a] | b ∈ B, a ∈ Ai, and for centralizers
+CB (A) = {b ∈ B | ba = b for all a ∈ A} and CA (B) = {a ∈ A | ba = b for all b ∈ B}.
+  Throughout the paper we shall write, say, “(a, b, . . . )-bounded” to abbreviate
+“bounded above in terms of a, b, . . . only”.
+
+                            2. Properties of Engel sinks
+   Throughout this section we assume that G is an almost Engel group in the sense
+of Definition 1.1, so that for every g ∈ G there is a finite set E (g) such that for every
+x ∈ G there is a positive integer n(x, g) such that
+                    [x, g, g, . . . , g ] ∈ E (g)       for any n ⩾ n(x, g).        (2.1)
+                        | {z }
+                              n
+    ′
+If E (g) is another finite set with the same property for possibly different num-
+bers n′ (x, g), then E (g) ∩ E ′ (g) also satisfies the same condition with the numbers
+n′′ (x, g) = max{n(x, g), n′(x, g)}. Hence for every g ∈ G there is a minimal set
+satisfying the definition, which we again denote by E (g) and call the Engel sink for
+g, or simply g-sink for short. Henceforth we shall always use the notation E (g) to
+denote the (minimal ) Engel sinks, and n(x, g) the corresponding numbers satisfying
+(2.1).
+    For a fixed g ∈ G, consider the mapping of E (g) by the rule z → [z, g], which
+maps E (g) into itself by definition. By the minimality of E (g) this mapping is a
+permutation of E (g). Therefore we can speak of orbits (cycles) of this permutation
+on E (g). It follows that every z ∈ E (g) can be represented in the form
+                           z = [z, g, . . . , g ]       for some k ⩾ 1,             (2.2)
+                                   | {z }
+                                             k
+
+and therefore also as
+                    z = [z, g, . . . , g ]       for any positive integer j.        (2.3)
+                            | {z }
+                                  jk
+
+Conversely, elements satisfying (2.2) belong to E (g). We have thus proved the
+following.
+Lemma 2.1. For any g ∈ G the g-sink E (g) consists precisely of all elements z
+such that z = [z, g, . . . , g], where g occurs at least once.
+   Clearly, every subgroup H of G is also an almost Engel group. Moreover, by
+Lemma 2.1, for h ∈ H the h-sink constructed within H is precisely the subset
+E (h) ∩ H of the h-sink E (h) in G. If N is a normal subgroup of G, then G/N is
+also an almost Engel group. For ḡ = gN the ḡ-sink in G/N is the image of E (g)
+in this quotient group. These properties will be used throughout the paper without
+special references.
+                                                    3
+  For any element h of the centralizer CG (g) the equation z = [z, g, . . . , g] implies
+z = [z h , g h , . . . , g h ] = [z h , g, . . . , g]. Hence E (g) is invariant under conjugation by
+ h
+
+h by Lemma 2.1. If |E (g)| = m, it follows that hm! centralizes E (g). We have thus
+proved the following.
+Lemma 2.2. If h ∈ CG (g) and |E (g)| = m, then hm! centralizes E (g).
+  Engel sinks have especially nice properties in metabelian groups. We denote by
+M ′ the derived subgroup of a group M.
+Lemma 2.3. Let M be a metabelian almost Engel group.
+  (a) Every sink E (g) is a normal subgroup contained in M ′ .
+  (b) Elements of E (g) in the same orbit under the map z → [z, g] have the same
+order.
+Proof. (a) By (2.2) and (2.3), every element z ∈ E (g) can be represented as z =
+[z, g, . . . , g] with g repeated jk(z) times for k(z) ⩾ 1 and for every j = 1, 2, . . . . In
+particular, E (g) ⊆ M ′ . For z1 , z2 ∈ E (g) choose j such that jk(z1 )k(z2 ) is larger
+than n(z1 z2 , g). Then, by the standard metabelian laws,
+                                z1 z2 = [z1 , g, . . . , g][z2 , g, . . . , g]
+                                     = [z1 z2 , g, . . . , g] ∈ E (g),
+where g is repeated jk(z1 )k(z2 ) times in each commutator. Thus, the finite set
+E (g) is a subgroup. For any m ∈ M, choose jk(z) larger than n([z, m], g). Then
+[z, m] = [[z, g, . . . , g], m] = [[z, m], g, . . . , g] ∈ E (g), where g is repeated jk(z) times
+in each commutator; this means that E (g) is a normal subgroup of M.
+   (b) Let z ∈ E (g). Since z ∈ M ′ , we have [z k , g] = [z, g]k for any integer k. Hence
+the order of [z, g] divides the order of z. Going in this way over the orbit, we return
+to z, which implies that the orders of all elements in the orbit are the same.                 
+                            3. Finite almost Engel groups
+  Of course, any finite group G is almost Engel, and every element g ∈ G has finite
+(minimal) g-sink E (g). A meaningful result must be of quantitative nature, and
+this is what we prove in this section. The following theorem will also be used in the
+proof of the main results on profinite and compact groups.
+Theorem 3.1. Let G be a finite group, and m a positive integer. Suppose that for
+every g ∈ G the cardinality of the g-sink E (g) is at most m. Then G has a normal
+subgroup N of order bounded in terms of m such that G/N is nilpotent.
+   The conclusion of the theorem can also be stated as a bound in terms of m for the
+order of the nilpotent residual subgroup γ∞ (G), the intersection of all terms of the
+lower central series (which for a finite group is of course also equal to some subgroup
+γn (G)).
+                                                  4
+  First we recall or prove a few preliminary results. We shall use the following
+well-known properties of coprime actions: if α is an automorphism of a finite group
+G of coprime order, (|α|, |G|) = 1, then CG/N (α) = CG (α)N/N for any α-invariant
+normal subgroup N, the equality [G, α] = [[G, α], α] holds, and if G is in addition
+abelian, then G = [G, α] × CG (α).
+Lemma 3.2. Let P be a finite p-subgroup of a group G, and g ∈ G a p′ -element
+normalizing P . Then the order of [P, g] is bounded in terms of the cardinality of the
+g-sink E (g).
+Proof. For the abelian p-group V = [P, g]/[P, g]′ we have V = [V, g] and CV (g) = 1
+because the action of g on V is coprime. Then V = {[v, g] | v ∈ V } and therefore
+also
+                            V = {[v, g, . . . , g ] | v ∈ V }
+                                     | {z }
+                                               n
+for any n. Hence, V is contained in the image of E (g) ∩[P, g] in [P, g]/[P, g]′, whence
+|V | ⩽ |E (g)|.
+   Since [P, g] is a nilpotent group, its order is bounded in terms of |[P, g]/[P, g]′|
+and its nilpotency class. We claim that, as a crude bound, the nilpotency class of
+[P, g] is at most 2|E (g)| + 1. Let γi denote the terms of the lower central series of
+[P, g]. The number of factors of the lower central series of [P, g] on which g acts
+nontrivially is at most |E (g)|, because for any such a factor U = γi /γi+1 we have
+                            1 6= [U, g] = {[u, g, . . . , g ] | u ∈ U}
+                                               | {z }
+                                                    n
+
+for any n, since the action of g on U is coprime, and therefore there is an ele-
+ment of E (g) in γi \ γi+1 . It remains to observe that g cannot act trivially on
+two consecutive nontrivial factors of the lower central series of [P, g]. Indeed, if
+[γi , g] ⩽ γi+1 and [γi+1 , g] ⩽ γi+2 , then by the Three Subgroup Lemma the inclu-
+sions [γi , g, [P, g]] ⩽ [γi+1 , [P, g]] = γi+2 and [[P, g], γi, g] = [γi+1 , g] ⩽ γi+2 imply the
+inclusion [g, [P, g], γi] = [[P, g], γi] = γi+1 ⩽ γi+2 , and the last inclusion implies that
+γi+1 = 1.                                                                                      
+  The following lemma already appeared in [10], but we reproduce the proof for the
+benefit of the reader.
+Lemma 3.3. Let V be an elementary abelian q-group, and U a q ′ -group of auto-
+morphisms of V . If |[V, u]| ⩽ m for every u ∈ U , then |[V, U]| is m-bounded, and
+therefore |U| is also m-bounded.
+Proof. First suppose that U is abelian. We consider V as an Fq U-module. Pick
+u1 ∈ U such that [V, u1 ] 6= 0. By Maschke’s theorem, V = [V, u1 ] ⊕ CV (u1 ), and
+both summands are U-invariant, since U is abelian. If CU ([V, u1 ]) = 1, then |U|
+                                                5
+is m-bounded and [V, U] has m-bounded order being generated by [V, u], u ∈ U.
+Otherwise pick 1 6= u2 ∈ CU ([V, u1 ]); then V = [V, u1 ] ⊕ [V, u2 ] ⊕ CV (hu1 , u2i). If
+1 6= u3 ∈ CU ([V, u1 ] ⊕ [V, u2 ]), then V = [V, u1 ] ⊕ [V, u2 ] ⊕ [V, u3 ] ⊕ CV (hu1, u2 , u3 i),
+and so on. If CU ([V, u1 ] ⊕ · · · ⊕ [V, uk ]) = 1 at some m-bounded step k, then
+again [V, U] has m-bounded order. However, if there are too many steps, then
+for the element w = u1 u2 · · · uk we shall have 0 6= [V, ui ] = [[V, ui ], w], so that
+[V, w] = [V, u1 ] ⊕ · · · ⊕ [V, uk ] will have order greater than m, a contradiction.
+   We now consider the general case. Since every element u ∈ U acts faithfully on
+[V, u], the exponent of U is m-bounded. If P is a Sylow p-subgroup of U, let M
+be a maximal normal abelian subgroup of P . By the above, |[V, M]| is m-bounded.
+Since M acts faithfully on [V, M], we obtain that |M| is m-bounded. Hence |P | is
+m-bounded, since CP (M) = M and P/M embeds in the automorphism group of
+M. Since |U| has only m-boundedly
+                              P              many prime divisors, it follows that |U| is m-
+bounded. Since [V, U] = u∈U [V, u], we obtain that |[V, U]| is also m-bounded. 
+   Recall that the Fitting series starts with the Fitting subgroup F1 (G) = F (G),
+and by induction, Fk+1 (G) is the inverse image of F (G/Fk (G)). If G is a soluble
+group, then the least number h such that Fh (G) = G is the Fitting height of G. The
+following lemma is well known and is easy to prove (see, for example, [9, Lemma 10]).
+                                                                           Q
+Lemma 3.4. If G is a finite group of Fitting height 2, then γ∞ (G) = q [Fq , Gq′ ],
+where Fq is a Sylow q-subgroup of F (G), and Gq′ is a Hall q ′ -subgroup of G.
+  We now approach the proof of Theorem 3.1 with the following lemma.
+Lemma 3.5. If G is a finite group such that |E (g)| ⩽ m for all g ∈ G, then G/F (G)
+has exponent at most m!.
+Proof. Every element g ∈ G centralizes all its powers. Therefore by Lemma 2.2,
+since |E (g m! )| ⩽ m by hypothesis, g m! centralizes E (g m! ). By the minimality of the
+g m! -sink, then E (g m! ) = {1}. This means that g m! is an Engel element and therefore
+belongs to the Fitting subgroup F (G) by Baer’s theorem [7, Satz III.6.15].            
+  We are now ready to prove Theorem 3.1.
+Proof of Theorem 3.1. Recall that G is a finite group such that |E (g)| ⩽ m for every
+g ∈ G. We need to show that |γ∞ (G)| is m-bounded.
+  First suppose that G is soluble. Since G/F (G) has m-bounded exponent by
+Lemma 3.5, the Fitting height of G is m-bounded, which follows from the Hall–
+Higman theorems [5]. Hence we can use induction on the Fitting height, with trivial
+base when the group is nilpotent and γ∞ (G) = 1. When the Fitting height is
+at least 2, consider
+                Q     the second Fitting subgroup F2 (G). By Lemma 3.4 we have
+γ∞ (F2 (G)) = q [Fq , Hq′ ], where Fq is a Sylow q-subgroup of F (G), and Hq′ is a
+Hall q ′ -subgroup of F2 (G), the product taken over prime divisors of |F (G)|. For a
+                                                6
+given q, let H̄q′ = Hq′ /CHq′ (Fq ), and let V be the Frattini quotient Fq /Φ(Fq ). Note
+that H̄q′ acts faithfully on V , since the action is coprime [7, Satz III.3.18].
+   For every x ∈ H̄q′ the order |[V, x]| is m-bounded by Lemma 3.2. Then |H̄q′ | is
+m-bounded by Lemma 3.3. As a result, |[Fq , Hq′ ]| = |[Fq , H̄q′ ]| is m-bounded, since
+[Fq , H̄q′ ] is the product of m-boundedly many subgroups [Fq , h̄] for h ∈ Hq′ , each of
+which has m-bounded order by Lemma 3.2.
+   For the same reasons, there are only m-boundedly many primes q for which
+[Fq , Hq′ ] 6= 1. As a result, |γ∞ (F2 (G))| is m-bounded. Induction on the Fitting
+height applied to G/γ∞ (F2 (G)) completes the proof in the case of soluble G.
+   Now consider the general case. Most of the following arguments follow the same
+scheme as in the proof of Theorem 1.2 in [10]. First we show that the quotient
+G/R(G) by the soluble radical is of m-bounded order. Let E be the socle of G/R(G).
+It is known that E contains its centralizer in G/R(G), so it suffices to show that
+E has m-bounded order. In the quotient by the soluble radical, E = S1 × · · · × Sk
+is a direct product of non-abelian finite simple groups Si . Since the exponent of
+G/F (G) is m-bounded by Lemma 3.5, the exponent of E is also m-bounded. Now
+the classification of finite simple groups implies that every Si has m-bounded order,
+and it remains to show that the number of factors is also m-bounded. By Shmidt’s
+theorem [7, Satz III.5.1], every Si has a non-nilpotent soluble subgroup Ri , for which
+γ∞ (Ri ) 6= 1. Since we already proved our theorem for soluble groups, we can apply
+it to T = R1 × · · · × Rk . We obtain that |γ∞ (T )| is m-bounded, whence the number
+of factors is m-bounded.
+   Thus, |G/R(G)| is m-bounded. Since |γ∞ (R(G)| is m-bounded by the soluble
+case proved above, we can consider G/γ∞ (R(G)) and assume that R(G) = F (G)
+is nilpotent. Then |G/F (G)| is m-bounded. We now use induction on |G/F (G)|.
+The basis of this induction includes the trivial case G/F (G) = 1 when γ∞ (G) = 1.
+But the bulk of the proof deals with the case where G/F (G) is a non-abelian simple
+group.
+   Thus, suppose that G/F (G) is a non-abelian simple group of m-bounded order.
+Let g ∈ G be an arbitrary element. The subgroup F (G)hgi is soluble, and therefore
+|γ∞ (F (G)hgi)| is m-bounded by the above. Since γ∞ (F (G)hgi) is normal in F (G),
+its normal closure hγ∞ (F (G)hgi)G i is a product of at most |G/F (G)| conjugates,
+each normal in F (G), and therefore has m-bounded order. Choose a transversal
+{t1 , . . . , tk } of G modulo F (G) and set
+                                       Y
+                                   K=     hγ∞ (F (G)hti i)G i,
+                                     i
+which is a normal subgroup of G of m-bounded order. It is sufficient to obtain an
+m-bounded estimate for |γ∞ (G/K)|. Hence we can assume that K = 1. We remark
+that then
+                     [F (G), g, . . . , g] = 1 for any g ∈ G,                (3.1)
+                                           7
+when g is repeated sufficiently many times. Indeed, g ∈ F (G)ti for some ti , and the
+subgroup F (G)hti i is nilpotent due to our assumption that K = 1.
+  We now claim that
+                                 [F (G), G, . . . , G] = 1                      (3.2)
+if G is repeated sufficiently many times. It is sufficient to prove that [Fq , G, . . . , G] =
+1 for every Sylow q-subgroup Fq of F (G). For any q ′ -element h ∈ G we have
+[Fq , h] = [Fq , h, h] and therefore [Fq , h] = 1 in view of (3.1). Let H be the subgroup
+of G generated by all q ′ -elements. Then G = Fq H since G/F (G) is non-abelian
+simple, and [Fq , H] = 1, so that
+                           [Fq , G, . . . , G] = [Fq , Fq , . . . , Fq ] = 1
+for a sufficiently long commutator.
+   We finally show that D := γ∞ (G) has m-bounded order. First we show that
+D = [D, D]. Indeed, since G/F (G) is non-abelian simple, D is nonsoluble and we
+must have
+                                 G = F (G)[D, D].
+Taking repeatedly commutator with G on both sides and applying (3.2), we obtain
+D = γ∞ (G) ⩽ [D, D], so D = [D, D].
+   Since F (G) ∩ D is hypercentral in D by (3.2) and [D, D] = D, it follows that
+F (G) ∩ D ⩽ Z(D) ∩ [D, D] by the well-known Grün lemma [3, Satz 4]. Thus, D
+is a central covering of the simple group D/(F (G) ∩ D) ∼ = G/F (G), and therefore
+by Schur’s theorem [7, Hauptsatz V.23.5] the order of D is bounded in terms of the
+m-bounded order of G/F (G). Thus, we have proved that |γ∞ (G)| is m-bounded in
+the case where G/F (G) is a non-abelian simple group.
+   We now finish the proof of Theorem 3.1 by induction on the m-bounded order
+k = |G/F (G)| proving that |γ∞ (G)| is (m, k)-bounded. The basis of this induction
+is the case of G/F (G) being simple: nonabelian simple was considered above, and
+simple of prime order is covered by the soluble case. Now suppose that G/F (G)
+has a nontrivial proper normal subgroup with full inverse image N, so that F (G) <
+N ⊳ G. Since F (N) = F (G), by induction applied to N, the order |γ∞ (N)| is
+bounded in terms of m and |N/F (G)| < k. Since N/γ∞ (N) ⩽ F (G/γ∞ (N)), by
+induction applied to G/γ∞ (N) the order |γ∞ (G/γ∞ (N))| is bounded in terms of m
+and |G/N| < k. As a result, |γ∞ (G)| is (m, k)-bounded, as required.             
+
+                        4. Profinite almost Engel groups
+  In this and the next sections, unless stated otherwise, a subgroup of a topological
+group will always mean a closed subgroup, all homomorphisms will be continuous,
+and quotients will be by closed normal subgroups. This also applies to taking
+commutator subgroups, normal closures, subgroups generated by subsets, etc. Of
+                                                  8
+course, any finite subgroup is automatically closed. We also say that a subgroup is
+generated by a subset X if it is generated by X as a topological group.
+  In this section we prove Theorem 1.2 for profinite groups, while Corollary 5.5 for
+profinite groups is an immediate corollary of Theorem 3.1.
+Theorem 4.1. Suppose that G is an almost Engel profinite group. Then G has a
+finite normal subgroup N such that G/N is locally nilpotent.
+  Recall that pro-(finite nilpotent) groups, that is, inverse limits of finite nilpotent
+groups, are called pronilpotent groups.
+Lemma 4.2. An almost Engel profinite group is pronilpotent if and only if it is
+locally nilpotent.
+Proof. Of course, any locally nilpotent profinite group is pronilpotent. Conversely,
+suppose that G is an almost Engel pronilpotent group. We claim that all Engel
+sinks are trivial: E (g) = {1} for every g ∈ G. Indeed, otherwise by Lemma 2.1 E (g)
+contains a non-trivial element of the form z = [z, g, . . . , g] with g occurring at least
+once. Choosing an open normal subgroup N with nilpotent quotient G/N such that
+z 6∈ N, we obtain a contradiction. Thus, E (g) = {1} for every g ∈ G, which means
+that all elements of G are Engel elements, that is, G is an Engel profinite group.
+Then G is locally nilpotent by the Wilson–Zelmanov theorem [15, Theorem 5]. 
+                                                                                T
+   Recall that the pronilpotent residual of a profinite group G is γ∞ (G) = i γi (G),
+where γi (G) are the terms of the lower central series; this is the smallest normal
+subgroup with pronilpotent quotient. The following lemma is well known and is
+easy to prove. Here, element orders are understood as Steinitz numbers. The same
+results also hold in the special case of finite groups.
+Lemma 4.3. (a) The pronilpotent residual γ∞ (G) of a profinite group G is equal to
+the subgroup generated by all commutators [x, y], where x, y are elements of coprime
+orders.
+  (b) For any normal subgroup N of a profinite group G we have γ∞ (G/N) =
+γ∞ (G)N/N .
+Proof. Part (a) follows from the characterization of pronilpotent groups as profinite
+groups all of whose Sylow subgroups are normal. Part (b) follows from the fact that
+for any elements x̄, ȳ of coprime orders in a quotient G/N of a profinite group G
+one can find pre-images x, y ∈ G which also have coprime orders.                   
+  The following generalization of Hall’s criterion for nilpotency [4], which will be
+used later, already appeared in [10], but we reproduce the proof for the benefit of
+the reader. We denote the derived subgroup of a group B by B ′ .
+Proposition 4.4. (a) Suppose that B is a normal subgroup of a group A such
+that B is nilpotent of class c and γd (A/B ′ ) is finite of order k. Then the subgroup
+                                            9
+C = CA (γd (A/B ′ )) = {a ∈ A | [γd (A), a] ⩽ B ′ } has finite k-bounded index and is
+nilpotent of (c, d)-bounded class.
+   (b) Suppose that B is a normal subgroup of a profinite group A such that B is
+pronilpotent and γ∞ (A/B ′ ) is finite. Then the subgroup D = CA (γ∞ (A/B ′ )) = {a ∈
+A | [γ∞ (A), a] ⩽ B ′ } is open and pronilpotent.
+Proof. (a) Since A/C embeds into Aut γd (A/B ′ ), the order of A/C is k-bounded. We
+claim that C is nilpotent of (c, d)-bounded class. Indeed, using simple-commutator
+notation for subgroups, we have
+              [C, . . . , C , C, C, . . . ] ⩽ [[γd (A), C], C, . . . ] ⩽ [[B, B], C, . . . ],
+               | {z }
+                  d+1
+
+since [γd (A), C] ⩽ B ′ by construction. Applying repeatedly the Three Subgroup
+Lemma, we obtain
+                                            Y
+       [[B, B], C, . . . , C , C, . . . ] ⩽   [[B, C, . . . , C ], [B, C, . . . , C ], C, . . . ]
+                | {z }                             | {z }              | {z }
+                    2d−1                  i+j=2d−1              i                  j
+
+                                       ⩽ [[[B, C, . . . , C ], B], C, . . . ]
+                                               | {z }
+                                                         d
+                                       ⩽ [[[B, B], B], C, . . . ].
+Thus, γd+1 (C) ⩽ γ2 (B), then γ(d+1)+(2d−1) (C) ⩽ γ3 (B), then a similar calculation
+gives γ(d+1)+(2d−1)+(3d−2) (C) ⩽ γ4 (B), and so on. An easy induction shows that
+γ1+f (c,d) (C) ⩽ γc+1(B) = 1 for 1 + f (c, d) = 1 + dc(c + 1)/2 − c(c − 1)/2, so that C
+is nilpotent of class f (c, d).
+   (b) As a centralizer of a normal section, D is a closed normal subgroup. Since
+A/D embeds into Aut γ∞ (A/B ′ ), the subgroup D has finite index; thus, D is an
+open subgroup. We now show that the image of D = CA (γ∞ (A/B ′ )) in any finite
+quotient Ā of A is nilpotent. Let bars denote the images in Ā. Then γ∞ (Ā/B̄ ′ ) =
+γ∞ (A/B ′ ) by Lemma 4.3(b). Therefore, D̄ ⩽ CĀ (γ∞ (Ā/B̄ ′ )). In a finite group,
+γ∞ (Ā/B̄ ′ ) = γd (Ā/B̄ ′ ) for some positive integer d. Hence D̄ is nilpotent by part
+(a).                                                                                  
+  In general, the set of Engel elements in a profinite group may not be closed. But in
+an almost Engel group, Engel elements form a closed set, and moreover the following
+holds.
+Lemma 4.5. Let G be an almost Engel profinite group, and k a positive integer.
+Then the set
+                       Ek = {x ∈ G | |E (x)| ⩽ k}.
+is closed in G.
+                                                    10
+Proof. We wish to show equivalently that the complement of Ek is an open subset
+of G. Every element g ∈ (G \ Ek ) is characterized by the fact that |E (g)| ⩾ k + 1.
+Let z1 , z2 , . . . , zk+1 be some k + 1 distinct elements in E (g). Using Lemma 2.1 we
+can write for every i = 1, . . . , k + 1
+                zi = [zi , g, . . . , g],   where g is repeated ki ⩾ 1 times.      (4.1)
+Let N be an open normal subgroup of G such that the images of z1 , z2 , . . . , zk+1 are
+distinct elements in G/N. Then equations (4.1) show that for any u ∈ N the Engel
+sink E (gu) contains an element in each of the k + 1 cosets zi N. Thus, all elements in
+the coset gN are contained in G \ Ek . We have shown that every element of G \ Ek
+has a neighbourhood that is also contained in G \ Ek , which is therefore an open
+subset of G.                                                                          
+   Recall that in Theorem 4.1 we need to show that an almost Engel profinite group
+G has a finite normal subgroup such that the quotient is locally nilpotent. The first
+step is to prove the existence of an open locally nilpotent subgroup.
+Proposition 4.6. If G is an almost Engel profinite group, then it has an open
+normal pronilpotent subgroup.
+  Of course, the subgroup in question will also be locally nilpotent by Lemma 4.2;
+the result can also be stated as the openness of the largest normal pronilpotent
+subgroup.
+Proof. For every g ∈ G we choose an open normal subgroup Ng such that E (g)∩Ng =
+1. Then g is an Engel element in Ng hgi. By Baer’s theorem [7, Satz III.6.15], in
+every finite quotient of Ng hgi the image of g belongs to the Fitting subgroup. As a
+result, the subgroup [Ng , g] is pronilpotent.
+   Let Ñg be the normal closure of [Ng , g] in G. Since [Ng , g] is normal in Ng , which
+has finite index, [Ng , g] has only finitely many conjugates, so Ñg is a product of
+finitely many normal subgroups of Ng , each of which is pronilpotent. Hence, so is
+Ñg . Therefore all the subgroups Ñg are contained in the largest normal pronilpotent
+subgroup K.
+   It is easy to see that G/K is an F C-group (that is, every conjugacy class is finite):
+indeed, every ḡ ∈ G/K is centralized by the image of Ng , which has finite index in
+G. A profinite F C-group has finite derived subgroup [13, Lemma 2.6]. Hence we
+can choose an open subgroup of G/K that has trivial intersection with the finite
+derived subgroup of G/K and therefore is abelian; let H be its full inverse image in
+G. Thus, H is an open subgroup such that the derived subgroup H ′ is contained in
+K.
+   We now consider the metabelian quotient M = H/K ′ , which is also an almost
+Engel group, and temporarily use the symbols E (g) for the Engel g-sinks in M. For
+                                                 11
+every positive integer k, consider the set
+                             Ek = {x ∈ M | |E (x)| ⩽ k}.
+By Lemma 4.5, every set Ek is closed in M. Since M is an almost Engel group, we
+have                                    [
+                                   M=     Ei .
+                                              i
+By the Baire category theorem [8, Theorem 34], one of these sets contains an open
+subset; that is, there is an open subgroup U and a coset aU such that aU ⊆ Em for
+some m. In other words, |E (au)| ⩽ m for all u ∈ U.
+  We claim that |E (u)| ⩽ m2 for any u ∈ U. Indeed, by Lemma 2.3(a) both E (a)
+and E (au) are normal subgroups of M contained in M ′ . In the quotient
+                                                   
+                                M̄ = M/ E (a)E (au) ,
+both M̄ ′ hāi and M̄ ′ hāūi are normal locally nilpotent subgroups. Hence their prod-
+uct, which contains ū, is also a locally nilpotent subgroup by the Hirsch–Plotkin
+theorem [12, 12.1.2]. As a result, E (u) ⩽ E (a)E (au) and therefore |E (u)| ⩽
+|E (a)| · |E (au)| ⩽ m2 .
+   Since M ′ ⩽ K/K ′ , it is easy to see that E (u) = E (uk) for any u ∈ U and any
+k ∈ K/K ′ . Therefore, setting V = U(K/K ′ ) we have |E (v)| ⩽ m2 for any v ∈ V .
+   Thus, the Engel sinks of elements of V uniformly satisfy the inequality |E (v)| ⩽
+  2
+m for all v ∈ V . The same inequality holds in every finite quotient V̄ of V , to which
+we can therefore apply Theorem 3.1. As a result, |γ∞ (V̄ )| ⩽ n for some number
+n = n(m) depending only on m. Then also |γ∞ (V )| ⩽ n.
+   Let W be the full inverse image of V , which is an open subgroup of G containing
+K, and let Γ be the full inverse image of γ∞ (V ). Now let F = CW (γ∞ (V )) =
+{w ∈ W | [Γ, w] ⩽ K ′ }. By Proposition 4.4(b), this is an open normal pronilpotent
+subgroup, which completes the proof of Proposition 4.6.                               
+Proof of Theorem 4.1. Recall that G is an almost Engel profinite group, and we need
+to show that γ∞ (G) is finite. Henceforth we denote by F (L) the largest normal pro-
+nilpotent subgroup of a profinite group L. By Proposition 4.6 we already know that
+G has an open normal pronilpotent subgroup, so that F (G) is also open. Further
+arguments largely follow the scheme of proof of Theorem 1.1 in [10].
+   Since G/F (G) is finite, we can use induction on |G/F (G)|. The basis of this
+induction includes the trivial case G/F (G) = 1 when γ∞ (G) = 1. But the bulk of
+the proof deals with the case where G/F (G) is a finite simple group.
+   Thus, we assume that G/F (G) is a finite simple group (abelian or non-abelian).
+Let p be a prime divisor of |G/F (G)|, and g ∈ G \ F (G) an element of order pn ,
+where n is either a positive integer or ∞ (so pn is a Steinitz number). For any prime
+q 6= p, the element g acts by conjugation on the Sylow q-subgroup Q of F (G) as an
+automorphism of order dividing pn . The subgroup [Q, g] is a normal subgroup of
+                                             12
+Q and therefore also a normal subgroup of F (G). The image of [Q, g] in any finite
+quotient has order bounded in terms of |E (g)| by Lemma 3.2. It follows that [Q, g]
+is finite of order bounded in terms of |E (g)|.
+   Since [Q, g] is normal in F (G), its normal closure h[Q, g]G i in G is a product of
+finitely many conjugates and is therefore also finite. Let R be the product of these
+closures h[Q, g]G i over all Sylow q-subgroups Q of F (G) for q 6= p. Since [Q, g] is
+finite of order bounded in terms of |E (g)| as shown above, there are only finitely
+many primes q such that [Q, g] 6= 1 for the Sylow q-subgroup Q of F (G). Therefore
+R is finite, and it is sufficient to prove that γ∞ (G/R) is finite. Thus, we can assume
+that R = 1. Note that then [Q, g a ] = 1 for any conjugate g a of g and any Sylow
+q-subgroup Q of F (G) for q 6= p.
+   Choose a transversal {t1 , . . . , tk } of G modulo F (G). Let G1 = hg t1 , . . . , g tk i.
+Clearly, G1 F (G)/F (G) is generated by the conjugacy class of the image of g. Since
+G/F (G) is simple, we have G1 F (G) = G. By our assumption, the Cartesian product
+T of all Sylow q-subgroups of F (G) for q 6= p is centralized by all elements g ti . Hence,
+[G1 , T ] = 1. Let P be the Sylow p-subgroup of F (G) (possibly, trivial). Then also
+[P G1 , T ] = 1, and therefore
+                          γ∞ (G) = γ∞ (G1 F (G)) = γ∞ (P G1 ).
+The image of γ∞ (P G1 ) ∩ T in G/P is contained both in the centre and in the
+derived subgroup of P G1 /P and therefore is isomorphic to a subgroup of the Schur
+multiplier of the finite group G/F (G). Since the Schur multiplier of a finite group
+is finite [7, Hauptsatz V.23.5], we obtain that γ∞ (G) ∩ T = γ∞ (P G1 ) ∩ T is finite.
+Therefore we can assume that T = 1, in other words, that F (G) is a p-group.
+   If |G/F (G)| = p, then G is a pro-p group, so it is pronilpotent, which means that
+γ∞ (G) = 1 and the proof is complete. If G/F (G) is a non-abelian simple group, then
+we choose another prime r 6= p dividing |G/F (G)| and repeat the same arguments
+as above with r in place of p. As a result, we reduce the proof to the case F (G) = 1,
+where the result is obvious.
+   We now finish the proof of Theorem 4.1 by induction on |G/F (G)|. The basis
+of this induction where G/F (G) is a simple group was proved above. Now suppose
+that G/F (G) has a nontrivial proper normal subgroup with full inverse image N,
+so that F (G) < N ⊳ G. Since F (N) = F (G), by induction applied to N the group
+γ∞ (N) is finite. Since N/γ∞ (N) ⩽ F (G/γ∞ (N)), by induction applied to G/γ∞ (N)
+the group γ∞ (G/γ∞ (N)) is also finite. As a result, γ∞ (G) is finite, as required. 
+
+                        5. Compact almost Engel groups
+  In this section we prove the main Theorem 1.2 about compact almost Engel
+groups. We use the structure theorems for compact groups and the results of the
+preceding section on profinite almost Engel groups.
+                                             13
+   Recall that a group H is said to be divisible if for every h ∈ H and every positive
+integer k there is an element x ∈ H such that xk = h.
+Proposition 5.1. If H is an almost Engel divisible group, then H is in fact an
+Engel group.
+Proof. We need to show that E (h) = {1} for every h ∈ H. Let |E (h)| = k. Let
+g ∈ H be an element such that g k! = h. Since g centralizes h, by Lemma 2.2
+we obtain that h = g k! centralizes E (h). By the minimality of the h-sink, then
+E (h) = {1}, as required.                                                     
+  We are ready to prove Theorem 1.2.
+Proof of Theorem 1.2. Let G be an almost Engel compact group; we need to show
+that there is a finite subgroup N such that G/N is locally nilpotent. By the well-
+known structure theorems (see, for example, [6, Theorems 9.24 and 9.35]), the con-
+nected component of the identity G0 in G is a divisible group such that G0 /Z(G0)
+is a Cartesian product of simple compact Lie groups, while the quotient G/G0 is
+a profinite group. By Proposition 5.1, G0 is an Engel group. Compact Lie groups
+are linear groups, and linear Engel groups are locally nilpotent by the Garashchuk–
+Suprunenko theorem [1] (see also [2]). Hence G0 = Z(G0 ) is an abelian subgroup.
+Remark 5.2. If a compact group G is an Engel group, then by the above G is an ex-
+tension of an abelian subgroup G0 by a profinite group G/G0 . Being an Engel group,
+G/G0 is locally nilpotent by the Wilson–Zelmanov theorem [15, Theorem 5]. It is
+known that an Engel abelian-by-(locally nilpotent) group is locally nilpotent (see,
+for example, [12, 12.3.3]). This gives an alternative proof of Medvedev’s theorem
+[11].
+  We proceed with the proof of Theorem 1.2.
+Lemma 5.3. For every g ∈ G we have E (g) ∩ G0 = 1, which is equivalent to the
+fact that for any x ∈ G0 we have
+                                     [x, g, . . . , g] = 1
+if g is repeated sufficiently many times.
+Proof. Suppose the opposite and choose 1 6= z ∈ E (g) ∩ G0 . By Lemma 2.1 then
+z = [z, g, . . . , g] with g occurring at least once. Hence z belongs also to the g-
+sink within the semidirect product G0 hgi. Since this subgroup is metabelian, by
+Lemma 2.3(a) the g-sink in G0 hgi is a subgroup, which is equal to E (g) ∩ G0 .
+Therefore we can choose z1 in E (g) ∩ G0 of some prime order p = |z1 |. Again by
+Lemma 2.1 we have z1 = [z1 , g, . . . , g] with g occurring at least once. In the divisible
+                                                                             k
+group G0 for every k = 1, 2, . . . there is an element zk such that zkp = z1 . We
+have yk = [zk , g, . . . , g] ∈ E (g) ∩ G0 when g is repeated sufficiently many times.
+                                              14
+         k       k
+Then ykp = [zkp , g, . . . , g] = [z1 , g, . . . , g], which is an element of the orbit of z1 in
+E (g)∩G0 under the mapping x → [x, g] and therefore has the same order p = |z1 | by
+Lemma 2.3(b). Thus, yk is an element of E (g) of order exactly pk+1 , for k = 1, 2, . . . .
+As a result, E (g) is infinite, a contradiction with the hypothesis.                          
+   Applying Theorem 4.1 to the almost Engel profinite group Ḡ = G/G0 we obtain a
+finite normal subgroup D with locally nilpotent quotient. Then D contains all Engel
+sinks E¯(g) of elements g ∈ Ḡ and therefore the subgroup E generated by them:
+                              E := hE¯(g) | g ∈ Ḡi ⩽ D.
+Clearly, E¯(g)h = E¯(g h ) for any h ∈ Ḡ; hence E is a normal finite subgroup of Ḡ.
+We replace D by E in the sense that Ḡ/E is also locally nilpotent by the Wilson–
+Zelmanov theorem [15, Theorem 5], since this is an Engel profinite group.
+  We now consider the action of Ḡ by automorphisms on G0 induced by conjugation.
+Lemma 5.4. The subgroup E acts trivially on G0 .
+                                                                        Q
+Proof. The abelian divisible group G0 is a direct product A0 × p Ap of a torsion-free
+divisible group A0 and Sylow subgroups Ap over various primes p. Clearly, every
+Sylow subgroup is normal in G.
+   First we show that E acts trivially on each Ap . It is sufficient to show that for
+every g ∈ Ḡ every element z ∈ E¯(g) acts trivially on Ap . Consider the action of hz, gi
+on Ap . Note that hz, gi = hz hgi ihgi, where hz hgi i is a finite g-invariant subgroup, since
+it is contained in the finite subgroup E. For any a ∈ Ap the subgroup
+                               hahgi i = ha, [a, g], [a, g, g], . . . i
+is a finite p-group by Lemma 5.3, and this subgroup is g-invariant. Its images under
+the action of elements of the finite group hz hgi i generate a finite p-group B, which
+is hz, gi-invariant. Lemma 5.3 implies that the image of hz, gi in its action on B
+must be a p-group. Indeed, otherwise this image contains a p′ element y that acts
+non-trivially on the Frattini quotient V = B/Φ(B). Then V = [V, y] and CV (y) = 1,
+whence [V, y] = {[v, g] | v ∈ [V, y]} and therefore also [V, y] = {[v, y, . . . , y] | v ∈
+[V, y]} with y repeated n times, for any n, contrary to Lemma 5.3. But since z is an
+element of E¯(g), by Lemma 2.1 we have z = [z, g, . . . , g] with at least one occurrence
+of g. Since a finite p-group is nilpotent, this implies that the image of z in its action
+on B must be trivial. In particular, z centralizes a. As a result E acts trivially on
+Ap , for every prime p.                                                 Q
+   We now show that E also acts trivially on the quotient W = G0 / p Ap of G0 by its
+torsion part. Note that W can be regarded as a vector space over Q. Every element
+g ∈ E has finite order and therefore by Maschke’s theorem W = [W, g] × CW (g). If
+[W, g] 6= 1, then [W, g] = {[w, g, . . . , g] | w ∈ [W, g]} with g repeated n times, for
+any n. This contradicts Lemma 5.3.
+                                                 15
+                                              Q
+   Thus, E acts trivially both on W and on p Ap . Then any automorphism of G0
+induced by conjugation by g ∈ E acts on every element a ∈ A0 as ag = at, where
+                                                        i
+t = t(a) is an element of finite order in G0 . Since ag = ati , the order of t must
+divide the order of g. Assuming the action of E on G0 to be non-trivial, choose an
+element g ∈ E acting on G0 as an automorphism of some prime order p. Then there
+is a ∈ A0 such that ag = at, where t ∈ G0 has order p. For any k = 1, 2, . . . there
+                                     k                                 k
+is an element ak ∈ A0 such that apk = a. Then agk = ak tk , where tpk = t. Thus
+|tk | = pk+1, and therefore pk+1 divides the order of g, for every k = 1, 2, . . . . We
+arrived at a contradiction since g has finite order.                                  
+
+   Let F be the full inverse image of E in G. Recall that we have normal subgroups
+G0 ⩽ F ⩽ G such that G0 is divisible, F/G0 is finite, and G/F is locally nilpotent.
+We aim at producing a finite normal subgroup N such that G/N is locally nilpotent.
+   By Lemma 5.4 the subgroup G0 is contained in the centre of the full inverse
+image F of E, so that F has centre of finite index. Then the derived subgroup F ′
+is finite by Schur’s theorem [7, Satz IV.2.3]. We can assume that F ′ = 1, so that
+then F is abelian. In the abstract abelian group F the divisible subgroup G0 has a
+complement C, which is obviously finite, F = G0 × C. Let M be the normal closure
+of C in G.
+   Note that G/M is a locally nilpotent group. Indeed, G/F is locally nilpotent,
+while F/M is G-isomorphic to G0 /(G0 ∩ M) so that G/M is an Engel group by
+Lemma 5.3. Being an abelian-by-(locally nilpotent) Engel group, then G/M is
+locally nilpotent.
+   Consider the natural semidirect product M ⋊(G/CG (M)) with the induced topol-
+ogy, in which the action of G/CG (M) on M is continuous. Both M and G/CG (M)
+are profinite groups; therefore M ⋊ (G/CG (M)) is also a profinite group (see [14,
+Lemma 1.3.6]). Note that G/CG (M) is locally nilpotent, since M ⩽ CG (M).
+   The group M ⋊ (G/CG (M)) is also almost Engel, so by Theorem 4.1 it contains a
+finite normal subgroup with locally nilpotent quotient. This finite subgroup there-
+fore contains the subgroup K generated by all Engel sinks in M ⋊ (G/CG (M));
+since G/CG (M) is locally nilpotent, K ⩽ M. Since G/M is also locally nilpotent,
+the Engel sinks in G are all contained in M and coincide with the Engel sinks in
+M ⋊ (G/CG (M)). Renaming K by N as a subgroup of G we arrive at the required
+result. Indeed, N is a normal subgroup because E (g)h = E (g h ) for any h ∈ G. The
+group G/N is locally nilpotent being an Engel group which is an extension of an
+abelian group F/N by a locally nilpotent group G/F . The proof of Theorem 1.2 is
+complete.                                                                        
+
+Corollary 5.5. Let G be an almost Engel compact group such that for some positive
+integer m all Engel sinks E (g) have cardinality at most m. Then G has a finite
+normal subgroup N of order bounded in terms of m such that G/N is locally nilpotent.
+                                          16
+Proof. By Theorem 1.2 the group G is finite-by-(locally nilpotent). Therefore every
+abstract finitely generated subgroup H of G is finite-by-nilpotent and residually
+finite. By Theorem 3.1, every finite quotient of H has nilpotent residual of m-
+bounded order. Hence γ∞ (H) is also finite of m-bounded order, and H/γ∞ (H) is
+nilpotent. Thus, every finitely generated subgroup of G has a normal subgroup of
+m-bounded order with nilpotent quotient. By the standard inverse limit argument,
+the group G has a normal subgroup of m-bounded order with locally nilpotent
+quotient.                                                                        
+
+
+                                  Acknowledgements
+   The authors thank Gunnar Traustason and John Wilson for stimulating discus-
+sions.
+   The first author was supported by the Russian Science Foundation, project no.
+14-21-00065, and the second by the Conselho Nacional de Desenvolvimento Cientı́fico
+e Tecnológico (CNPq), Brazil. The first author thanks CNPq-Brazil and the Uni-
+versity of Brasilia for support and hospitality that he enjoyed during his visits to
+Brasilia.
+
+
+                                        References
+ [1] M. S. Garashchuk and D. A. Suprunenko, Linear nilgroups, Dokl. Akad. Nauk BSSR 4 (1960),
+     407–408. (Russian)
+ [2] K. W. Gruenberg, The Engel structure of linear groups, J. Algebra 3 (1966), 291–303.
+ [3] O. Grün, Beitrge zur Gruppentheorie. I, J. Reine Angew. Math. 174 (1935), 1–14.
+ [4] P. Hall, Some sufficient conditions for a group to be nilpotent, Illinois J. Math. 2 (1958),
+     787–801.
+ [5] P. Hall and G. Higman, The p-length of a p-soluble group and reduction theorems for Burn-
+     side’s problem, Proc. London Math. Soc. (3) 6 (1956), 1–42.
+ [6] K. H. Hofmann and S. A. Morris, The structure of compact groups, De Gruyter, Berlin, 2006.
+ [7] B. Huppert, Endliche Gruppen. I (Springer, Berlin, 1967).
+ [8] J. L. Kelley, General topology, Grad. Texts in Math., vol. 27, Springer, New York, 1975.
+ [9] E. I. Khukhro and V. D. Mazurov, Finite groups with an automorphism of prime order whose
+     centralizer has small rank, J. Algebra 301 (2006) 474–492.
+[10] E. I. Khukhro and P. Shumyatsky, Almost Engel finite and profinite groups, Int. J. Algebra
+     Comput., 26, no. 5 (2016), 973–983.
+[11] Yu. Medvedev, On compact Engel groups, Israel J. Math. 185 (2003), 147–156.
+[12] D. J. S. Robinson, A course in the theory of groups, Springer, New York, 1996.
+[13] A. Shalev, Profinite Groups with Restricted Centralizers, Proc. Amer. Math. Soc. 122, no. 4
+     (1994), 1279–1284.
+[14] J. S. Wilson, Profinite groups (Clarendon Press, Oxford, 1998).
+[15] J. S. Wilson and E. I. Zelmanov, Identities for Lie algebras of pro-p groups, J. Pure Appl.
+     Algebra 81, no. 1 (1992), 103–109.
+                                               17
+  Sobolev Institute of Mathematics, Novosibirsk, 630090, Russia, and
+University of Lincoln, U.K.
+  E-mail address: khukhro@yahoo.co.uk
+
+  Department of Mathematics, University of Brasilia, DF 70910-900, Brazil
+  E-mail address: pavel@unb.br
+
+
+
+
+                                       18
+

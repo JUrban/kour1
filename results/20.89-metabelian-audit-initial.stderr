@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/project/scripts/audit_20_89_metabelian_initial.py", line 65, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/project/scripts/audit_20_89_metabelian_initial.py", line 47, in main
+    result=summary()
+           ^^^^^^^^^
+  File "/project/scripts/audit_20_89_metabelian_initial.py", line 27, in summary
+    assert match
+           ^^^^^
+AssertionError

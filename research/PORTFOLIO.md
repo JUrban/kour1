@@ -1,11 +1,12 @@
 # Candidate portfolio
 
-Updated 2026-09-12T16:19:18.599720+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-12T16:46:14.104631+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
 | 20.124 | Use a level-lowering endomorphism with image F' and an invertible difference map. | Partial affirmative result for every infinite rank, with an explicit finite-product operator. GAP and independent free-word controls pass. Finite rank remains unresolved; no complete-count increment or priority claim. |
 | 20.89 / 19.83 | Characterize scalar layers; separate finite sinks by finite quotients. | Partial affirmative results for triangularizable and torsion-free linear groups. Finitely many almost Engel elements generate a finite-by-nilpotent subgroup; each minimal sink generates a finite subgroup. GAP/Python controls pass; finite sink subgroups need not be ambient normal. General closure remains unresolved; no complete-count increment or priority claim. |
+| 20.89 /19.83 prior cases | Commuting endomorphisms of the derived subgroup; finite characteristic kernels. | Metabelian closure is a verified rediscovery, and virtually abelian closure a prior-theorem consequence. Exact dihedral classification and26-file replay pass; no new candidate or priority claim. |
 | 20.122(a)–(c) | Use point stabilizers in C2 wr (F3^2 semidirect D8). | Complete negative candidate for all parts, including both soluble versions: minimum-order intersections generate A outside F(G). The explicit81-case stabilizer table, all36,864-permutation reconstruction and23-file replay pass. The order48 inclusion-only example remains retained. Priority and outside review pending. |
 | 20.113 | Assess installed ANUPQ limits and the four-generator exponent-seven family. | The 180-second H(7,8) probe stopped with actual exit1 after class-eight progress; no final group certificate or multiplier. Neither subpart solved. Eleven-file failure/source packet preserved; larger computation deferred. |
 | 11.115 | Centralize a proper power modulo the mixed commutator subgroup. | Complete negative candidate: X=F(a,b), N=<<a^m>>, T=ker(X->C_m) satisfy 1<[T,N]=[X,N]<N<T<X. The elementary proof is independent of the seven GAP and signed-word models; the 25-file replay passes. Priority and outside review pending. |
