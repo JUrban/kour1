@@ -1,0 +1,311 @@
+{
+  "status": "COMPLETE_NO_CANDIDATE",
+  "order": 768,
+  "total_groups": 1090235,
+  "shards": 8,
+  "workspace_gib_each": 1,
+  "controller_pid": 217965,
+  "started_utc": "2026-09-12T03:31:55.341119+00:00",
+  "script_sha256": "2050eeaf2227a3045ac659d62fe699cb4e77e91f1769096e5ac5885916bfb370",
+  "runner_sha256": "9c35f602bbc0f112e95d2240f77cca4b352fc4df195e473c069b7ccb88c03a2c",
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 217981,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=0;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-fast-shard0.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order768-fast-shard0.log",
+      "rows": "results/20.21-order768-fast-shard0.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:45:31.022492+00:00",
+      "sha256": {
+        "results/20.21-order768-fast-shard0.log": "5ca8858c99371b0f23a9d6526e21fb1769af655aca5ad911a57acd04cc8514ad",
+        "results/20.21-order768-fast-shard0.grows": "8d8d65e5661d76a74bed0c30667a23905aa0b0f5c82b8f36232e5b6b98e102a3"
+      }
+    },
+    {
+      "index": 1,
+      "pid": 217982,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=1;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-fast-shard1.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order768-fast-shard1.log",
+      "rows": "results/20.21-order768-fast-shard1.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:45:31.024821+00:00",
+      "sha256": {
+        "results/20.21-order768-fast-shard1.log": "e792710ab95e4b392c237d16cecbc64f46191e8c5f4edf1950280ce74368bd57",
+        "results/20.21-order768-fast-shard1.grows": "5c99823e6fe70a19e0cdf2f2f5ca34fd365796369b391e4ce5f3af52ea66ba9a"
+      }
+    },
+    {
+      "index": 2,
+      "pid": 217983,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=2;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-fast-shard2.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order768-fast-shard2.log",
+      "rows": "results/20.21-order768-fast-shard2.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:45:45.669628+00:00",
+      "sha256": {
+        "results/20.21-order768-fast-shard2.log": "5f91d076d644137d09c848e1cf2d3e7288199210553bf88370c2bdfe662234c9",
+        "results/20.21-order768-fast-shard2.grows": "462db49971bd82b4f64b1571a81dbef89f3303e1abcb79b1aaa21192918e763f"
+      }
+    },
+    {
+      "index": 3,
+      "pid": 217984,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=3;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-fast-shard3.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order768-fast-shard3.log",
+      "rows": "results/20.21-order768-fast-shard3.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:45:45.671442+00:00",
+      "sha256": {
+        "results/20.21-order768-fast-shard3.log": "b12d7530bda5735e94b1c0ed97e7cc100e3818a4537e226edd535b014e886fad",
+        "results/20.21-order768-fast-shard3.grows": "79f9767fb6ec851033d164808884890ca7525e0b524e7399367889b163bc17a8"
+      }
+    },
+    {
+      "index": 4,
+      "pid": 217986,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=4;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-fast-shard4.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order768-fast-shard4.log",
+      "rows": "results/20.21-order768-fast-shard4.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:45:45.672074+00:00",
+      "sha256": {
+        "results/20.21-order768-fast-shard4.log": "8a0d9d42b6ec340ba176651862e63227613518ffeac9c90fd45a3eaa12150dfd",
+        "results/20.21-order768-fast-shard4.grows": "d328233c24a18edcdae25e371b877ff01d6a3ed4319a3d86ae2653ba4fbc593a"
+      }
+    },
+    {
+      "index": 5,
+      "pid": 217987,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=5;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-fast-shard5.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order768-fast-shard5.log",
+      "rows": "results/20.21-order768-fast-shard5.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:45:45.672642+00:00",
+      "sha256": {
+        "results/20.21-order768-fast-shard5.log": "d6962ce3e6e2729f652aed22d2a5b01779521a08a246343f1f7eab9fa0e27ed2",
+        "results/20.21-order768-fast-shard5.grows": "f1e2802f19d771e215d2082119125acbb6c32a70ea54b3dff155bd5190780544"
+      }
+    },
+    {
+      "index": 6,
+      "pid": 217988,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=6;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-fast-shard6.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order768-fast-shard6.log",
+      "rows": "results/20.21-order768-fast-shard6.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:45:45.673209+00:00",
+      "sha256": {
+        "results/20.21-order768-fast-shard6.log": "ea2c056ae4fdcb9f740fa14486209b1fe58cb26ee3e352e5557d05123b3b3924",
+        "results/20.21-order768-fast-shard6.grows": "02b8d90c9fb44e865164c678fc8e6d7f09b90beee179b0886f3620b4dff3b2f0"
+      }
+    },
+    {
+      "index": 7,
+      "pid": 217989,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=768;SearchIndex2021:=7;SearchShards2021:=8;SearchRows2021:=\"/project/results/20.21-order768-fast-shard7.grows\";",
+        "/project/scripts/search_20_21_shard_fast.g"
+      ],
+      "log": "results/20.21-order768-fast-shard7.log",
+      "rows": "results/20.21-order768-fast-shard7.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T03:45:45.673807+00:00",
+      "sha256": {
+        "results/20.21-order768-fast-shard7.log": "9be841a48a49182c48681ed68a3fb03e230a7dbcfc3ebe0a0e3a1c875476d84e",
+        "results/20.21-order768-fast-shard7.grows": "2066972681e852cf1dcc337a448aee23e165eb66de0a1891b36e3109c7074e7e"
+      }
+    }
+  ],
+  "completed_utc": "2026-09-12T03:45:45.762342+00:00",
+  "elapsed_seconds": 830.4211791558191,
+  "totals": {
+    "tested": 1090235,
+    "eligible": 11562,
+    "both": 606,
+    "hits": 0
+  },
+  "shard_counts": [
+    [
+      768,
+      0,
+      8,
+      136280,
+      1447,
+      77,
+      0
+    ],
+    [
+      768,
+      1,
+      8,
+      136280,
+      1445,
+      74,
+      0
+    ],
+    [
+      768,
+      2,
+      8,
+      136280,
+      1443,
+      75,
+      0
+    ],
+    [
+      768,
+      3,
+      8,
+      136279,
+      1444,
+      75,
+      0
+    ],
+    [
+      768,
+      4,
+      8,
+      136279,
+      1446,
+      76,
+      0
+    ],
+    [
+      768,
+      5,
+      8,
+      136279,
+      1444,
+      74,
+      0
+    ],
+    [
+      768,
+      6,
+      8,
+      136279,
+      1447,
+      79,
+      0
+    ],
+    [
+      768,
+      7,
+      8,
+      136279,
+      1446,
+      76,
+      0
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/project/scripts/check_20_21_kernels.py", line 64, in <module>
+    result=run();Path('results/20.21-order768-kernel-controls.json').write_text(json.dumps(result,indent=2)+'\n')
+           ^^^^^
+  File "/project/scripts/check_20_21_kernels.py", line 24, in run
+    source_hash=hashlib.sha256(source.read_bytes()).hexdigest()
+                               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1021, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/20.21-order768-kernel-tables.grows.gz'

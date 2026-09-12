@@ -2334,3 +2334,19 @@ JSON-string histogram-key failure is retained and its corrected run
 exits0. No new complete count. The previous20.21 restart commit retains
 eight raw CR-only logs; diff-check flagged only those preserved bytes,
 and the source/document check with those raw logs excluded passed.
+
+
+## 2026-09-12T04:03:03.249723+00:00 — order768 exclusion fully audited
+
+All eight fast search children and their controller exit0:1,090,235
+groups tested,11,562 C12-eligible,606 with both quotients, no matching
+kernel pair. Every one of the2,878 kernels was exported as a64-element
+multiplication table. Independent checks separate2,341 pairs by element
+orders and27 by abelianization exponent, covering all2,368 pairs. The
+2,267 distinct tables require594,280,448 associativity triples. The first
+control invocation preceded compression completion and failed visibly;
+its log is retained, and the unchanged checker passes after actual
+compressor completion. The65-file auditor replays the pilot and all
+kernel controls and exits0. The audited prior minimality reduction
+gives a lower bound1536 for any counterexample. General20.21 remains
+open and the complete count remains41.

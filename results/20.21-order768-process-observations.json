@@ -1,0 +1,31 @@
+{
+  "recorded_utc": "2026-09-12T03:59:39.706625+00:00",
+  "search_controller": {
+    "exit_code": 0,
+    "tool_chunk": "643d13",
+    "child_records": "results/20.21-order768-fast-summary.json"
+  },
+  "kernel_export": {
+    "exit_code": 0,
+    "tool_chunk": "43e505",
+    "sentinel": "PASS_2021_KERNEL_EXPORT [ 606, 2878 ]"
+  },
+  "compression": {
+    "exit_code": 0,
+    "tool_chunk": "ca584e"
+  },
+  "initial_kernel_control": {
+    "exit_code": 1,
+    "tool_chunk": "f9d97f",
+    "reason": "Compressed input did not yet exist; compressor still running"
+  },
+  "final_kernel_control": {
+    "exit_code": 0,
+    "tool_chunk": "f6f519",
+    "sentinel": "PASS_2021_KERNEL_CONTROLS"
+  },
+  "diagnostic": {
+    "exit_code": 0,
+    "tool_chunk": "dfd281"
+  }
+}
