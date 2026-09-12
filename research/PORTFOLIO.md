@@ -1,9 +1,10 @@
 # Candidate portfolio
 
-Updated 2026-09-11T19:29:02.509591+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
+Updated 2026-09-12T14:00:49.754354+00:00. This is a research triage list, not an assertion that every unstarred entry is still open.
 
 | Problem | Current route | Status and next discriminator |
 |---|---|---|
+| 11.115 | Centralize a proper power modulo the mixed commutator subgroup. | Complete negative candidate: X=F(a,b), N=<<a^m>>, T=ker(X->C_m) satisfy 1<[T,N]=[X,N]<N<T<X. The elementary proof is independent of the seven GAP and signed-word models; the 25-file replay passes. Priority and outside review pending. |
 | 15.65, unitary cyclic component | Analytic continuation of the FNP product in inverse field size; isolate the degree-one factor. | Thirty-first complete candidate: C(U;q) is not rational, even allowing complex coefficients. Irrational local exponent proved; remainder convergence and prime-power identity argument explicit. All 14 GAP cases and degree80 series controls pass. Other components, priority and outside review remain open here. |
 | 9.45 | Centered cyclic cosets and integer tests for orthogonal rank-one summands. | Twenty-eighth complete candidate: necessary and sufficient coordinate divisibility/count criterion in every dimension, returning the orthogonal basis in O(mn+n^2) arithmetic work. All 3,520 exact cases and GAP HNF/box controls pass; prior n=2 and decomposition methods credited. Novelty and outside review pending. |
 | 9.47 | Clopen containment selectors and the Dow--Watson scattered compact counterexample. | Twenty-seventh complete negative candidate. Exact positive class also characterized and realized in discrete abelian groups. Both topological source arguments expanded in full; connection novelty and outside review pending. |

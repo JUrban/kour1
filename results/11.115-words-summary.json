@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "moduli": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    11
+  ],
+  "stats": {
+    "exhaustive_words": 91847,
+    "long_words": 7000,
+    "normal_form_products": 7000,
+    "associativity_triples": 7000
+  },
+  "rejected_corruptions": [
+    "wrong_basis_power",
+    "omitted_wrap_conjugation",
+    "wrong_inverse",
+    "wrong_index",
+    "wrong_rank"
+  ],
+  "scope": "Exact finite word controls for a separately proved infinite-subgroup counterexample."
+}
