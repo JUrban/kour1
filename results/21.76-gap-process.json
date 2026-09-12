@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bin/gap",
+    "-o",
+    "512m",
+    "scripts/check_21_76.g"
+  ],
+  "started": "2026-09-12T09:35:43.082902+00:00",
+  "ended": "2026-09-12T09:35:45.024288+00:00",
+  "returncode": 0,
+  "stdout": "\nBETA 1 ORDER 24 UPPER [ 0, 1, 2 ] LOWER [ 0, 1, 2 ]\nBETA 2 ORDER 24 UPPER [ 0, 1, 2 ] LOWER [ 0, 1, 2 ]\nBETA 3 ORDER 120 UPPER [ 0, 1, 2 ] LOWER [ 0, 3, 6 ]\nBETA 4 ORDER 720 UPPER [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ] LOWER \n[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]\nBETA 5 ORDER 720 UPPER [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ] LOWER \n[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]\nBETA 6 ORDER 120 UPPER [ 0, 1, 2 ] LOWER [ 0, 3, 6 ]\nBETA 7 ORDER 720 UPPER [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ] LOWER \n[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]\nBETA 8 ORDER 720 UPPER [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ] LOWER \n[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]\nPASS_2176_GAP cases=8 seed_order=120\n",
+  "stderr": "",
+  "sentinel_present": true,
+  "script_sha256": "3a68270a5f43d1b9956aa3961bec77e2816ad25398a94de50855eae3151016bd",
+  "log_sha256": "dd3198bd11a0c1ae0200d9ce6c33d94914db7a0a7c3f8b3ca2a0a265ec27a113"
+}

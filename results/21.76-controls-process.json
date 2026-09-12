@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_21_76.py"
+  ],
+  "started": "2026-09-12T09:35:45.025052+00:00",
+  "ended": "2026-09-12T09:35:47.116871+00:00",
+  "returncode": 0,
+  "stdout": "PASS_2176_CONTROLS {\"cosets\": 40, \"elements\": 120, \"field_operations\": 162, \"inverses\": 120, \"lower\": [0, 3, 6], \"mutations_rejected\": 7, \"products\": 14400, \"transitions\": 80, \"upper\": [0, 1, 2], \"words\": 160}\n",
+  "stderr": "",
+  "sentinel_present": true,
+  "script_sha256": "cb58577e9aae31160fe997ad02e6c0f778224e6be57dda1f4176ac5181a43be3",
+  "log_sha256": "b1f367fbab968438bc051307c423d06efce58b30fe04596e5bb81583a441893f"
+}

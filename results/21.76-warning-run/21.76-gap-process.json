@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bin/gap",
+    "-o",
+    "512m",
+    "scripts/check_21_76.g"
+  ],
+  "started": "2026-09-12T09:35:08.460294+00:00",
+  "ended": "2026-09-12T09:35:10.446288+00:00",
+  "returncode": 0,
+  "stdout": "\nBETA 1 ORDER 24 UPPER [ 0, 1, 2 ] LOWER [ 0, 1, 2 ]\nBETA 2 ORDER 24 UPPER [ 0, 1, 2 ] LOWER [ 0, 1, 2 ]\nBETA 3 ORDER 120 UPPER [ 0, 1, 2 ] LOWER [ 0, 3, 6 ]\nBETA 4 ORDER 720 UPPER [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ] LOWER \n[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]\nBETA 5 ORDER 720 UPPER [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ] LOWER \n[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]\nBETA 6 ORDER 120 UPPER [ 0, 1, 2 ] LOWER [ 0, 3, 6 ]\nBETA 7 ORDER 720 UPPER [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ] LOWER \n[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]\nBETA 8 ORDER 720 UPPER [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ] LOWER \n[ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]\nPASS_2176_GAP cases=8 seed_order=120\n",
+  "stderr": "Syntax warning: Unbound global variable in scripts/check_21_76.g:15\n  upper2176 := Filtered([0..8],a -> [[one2176,Decode2176(a)],[zero2176,one2176\\\n]] in G2176);\n                                                                              \\\n      ^^^^^\nSyntax warning: Unbound global variable in scripts/check_21_76.g:16\n  lower2176 := Filtered([0..8],a -> [[one2176,zero2176],[Decode2176(a),one2176\\\n]] in G2176);\n                                                                              \\\n      ^^^^^\n",
+  "sentinel_present": true,
+  "script_sha256": "d0195e0f5a39b625b8f04d809c900122b4bc258beb63fc27e12b3b5e43fcc0fc",
+  "log_sha256": "7d8cee490beb9a6dcfdf3de7a2d15d94663481d1133fe77b2a79c46221cfb54b"
+}

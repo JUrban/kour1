@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "word_cases": 36432,
+  "rows": [
+    {
+      "characteristic": 2,
+      "max_length": 16,
+      "coefficients": [
+        1
+      ],
+      "cases": 32
+    },
+    {
+      "characteristic": 3,
+      "max_length": 10,
+      "coefficients": [
+        1,
+        2
+      ],
+      "cases": 4092
+    },
+    {
+      "characteristic": 5,
+      "max_length": 6,
+      "coefficients": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cases": 10920
+    },
+    {
+      "characteristic": 7,
+      "max_length": 5,
+      "coefficients": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cases": 18660
+    },
+    {
+      "characteristic": 0,
+      "max_length": 5,
+      "coefficients": [
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "cases": 2728
+    }
+  ],
+  "matrix_unit_products": 5196,
+  "structural_max_length": 100,
+  "negative_constant_parameter_control": true,
+  "completion_degree_controls": 5,
+  "scope": "Finite independent controls; the proof covers arbitrary word length and every field."
+}
