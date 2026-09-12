@@ -2363,3 +2363,23 @@ cases (126,998 states), with the full F3 assignment handled by definition.
 All seven processes exit zero. The 26-file auditor reconstructs both
 inputs and replays all controls, also exiting zero (cdbff9). This is
 a bounded negative result; complete candidate count remains 41.
+
+
+## 2026-09-12T04:21:05.657787+00:00 — order-1536 structural interval launched
+
+Both quotient types force normal Sylow 2 and nonnormal Sylow 3. The
+SmallGroups source partitions 408,641,062 groups, leaving exactly the
+18,028 indices 408526598 through 408544625. Eight boundary groups have
+the expected actual Sylow-normality flags, with exit zero (726ff3).
+The separate interval runner reproduces every order-96 pilot row and
+all counts, exiting zero (f8d101). Four 1 GiB workers now search the
+complete relevant interval and assert the flags for every group. No
+order-1536 result is claimed. The n7 snapshot at 04:19:58 UTC records
+30,810,000 checked nodes, six live workers, no completed shard, and
+43,897,588 KiB combined RSS.
+
+The staged whitespace check flagged only the verbatim GAP metadata
+log and verbatim decompressed library source. Those bytes are retained
+for hash reproducibility; the source/document check excludes those two
+external evidence files. No executable or authored-document error was
+reported.

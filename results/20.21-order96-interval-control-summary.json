@@ -1,0 +1,98 @@
+{
+  "status": "COMPLETE_NO_CANDIDATE",
+  "order": 96,
+  "total_groups": 231,
+  "interval_first": 1,
+  "interval_last": 231,
+  "interval_count": 231,
+  "shards": 2,
+  "workspace_gib_each": 1,
+  "controller_pid": 223828,
+  "started_utc": "2026-09-12T04:18:31.943593+00:00",
+  "script_sha256": "9a3aa7b2f6a205984b39bd02737929084e902f4e1ae9574de32a88ead9fc6adc",
+  "runner_sha256": "e22a6e1f34dde2cc254c15ebb9277c9e2e89792ec2dd2db8ad61c057cbed2d9f",
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 223829,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=96;SearchIndex2021:=0;SearchShards2021:=2;SearchRows2021:=\"/project/results/20.21-order96-interval-control-shard0.grows\";SearchFirst2021:=1;SearchLast2021:=231;",
+        "/project/scripts/search_20_21_interval.g"
+      ],
+      "log": "results/20.21-order96-interval-control-shard0.log",
+      "rows": "results/20.21-order96-interval-control-shard0.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T04:18:34.072816+00:00",
+      "sha256": {
+        "results/20.21-order96-interval-control-shard0.log": "97c5f95ba7a5c4009a380c70617d27d76b7e924173faa0a0a13812ada54952b2",
+        "results/20.21-order96-interval-control-shard0.grows": "f61981d06049506d2e5eab0598badd857373badadab8fd472766b71063ffbbc9"
+      }
+    },
+    {
+      "index": 1,
+      "pid": 223830,
+      "command": [
+        "/project/gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "-c",
+        "SearchOrder2021:=96;SearchIndex2021:=1;SearchShards2021:=2;SearchRows2021:=\"/project/results/20.21-order96-interval-control-shard1.grows\";SearchFirst2021:=1;SearchLast2021:=231;",
+        "/project/scripts/search_20_21_interval.g"
+      ],
+      "log": "results/20.21-order96-interval-control-shard1.log",
+      "rows": "results/20.21-order96-interval-control-shard1.grows",
+      "returncode": 0,
+      "observed_completion_utc": "2026-09-12T04:18:34.105219+00:00",
+      "sha256": {
+        "results/20.21-order96-interval-control-shard1.log": "764dad49f2bd4ded713ddea9e92251fe54cffdc67b2e84ec9deaa990fc2ba796",
+        "results/20.21-order96-interval-control-shard1.grows": "7f63755ede85fb0a0944969ae14fa7983c04ee3b64a4343c2dc61cbe92c79bfc"
+      }
+    }
+  ],
+  "completed_utc": "2026-09-12T04:18:34.122173+00:00",
+  "elapsed_seconds": 2.1785346837714314,
+  "totals": {
+    "tested": 231,
+    "eligible": 31,
+    "both": 4,
+    "hits": 0
+  },
+  "shard_counts": [
+    [
+      96,
+      0,
+      2,
+      116,
+      14,
+      2,
+      0
+    ],
+    [
+      96,
+      1,
+      2,
+      115,
+      17,
+      2,
+      0
+    ]
+  ]
+}
