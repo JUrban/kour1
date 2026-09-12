@@ -1,0 +1,532 @@
+                         ТРУДЫ ИНСТИТУТА МАТЕМАТИКИ И МЕХАНИКИ УрО РАН
+
+Том 30 № 1                                                                                                             2024
+
+
+
+УДК 512.542
+    2023 URAL WORKSHOP ON GROUP THEORY AND COMBINATORICS
+
+                                                  N. V. Maslova
+
+         A review of the main events of the 2023 Ural Workshop on Group Theory and Combinatorics, held online
+      during the period 21 to 27 August 2023, is presented, and a list of open problems with comments is given. Open
+      problems were formulated by the participants at the Open Problems Session held on August 27, 2023.
+         Keywords: power graph, enhanced power graph, independence graph of a group, rank graph of a group, ﬁnite
+      group, isomorphism of groups, π-solvable group, simple group, average element order, solvable group, deﬁcient
+      element, locally ﬁnite group, distance-regular graph, Krein graph, strongly regular graph, Gruenberg–Kegel
+      graph (prime graph), almost simple group, Cayley graph, clique graph, edge-transitive graph, normal cover of
+      a graph, 2-arc-transitive graph, semisymmetric graph, complete class of groups, Baer–Suzuki width, symmetric
+      boundary of a class of groups.
+        Н. В. Маслова. Международная конференция “2023 Ural Workshop on Group Theory and
+      Combinatorics”.
+        В статье представлен обзор основных событий Международной конференции “2023 Ural Workshop on
+      Group Theory and Combinatorics”, которая прошла в онлайн формате 21–27 августа 2023 г. Также в статье
+      представлен список открытых проблем, сформулированных участниками на Часе открытых проблем,
+      прошедшем 27 августа 2023 г., и комментарии к этим проблемам.
+         Ключевые слова: граф степеней, расширенный граф степеней, граф независимости группы, ранго-
+      вый граф группы, конечная группа, изоморфизм групп, π-разрешимая группа, простая группа, средний
+      порядок элемента, разрешимая группа, дефицитный элемент, локально конечная группа, дистанционно
+      регулярный граф, граф Крейна, сильно регулярный граф, граф Грюнберга–Кегеля (граф простых чи-
+      сел), почти простая группа, граф Кэли, кликовый граф, реберно-транстранзитивный граф, нормальное
+      накрытие графа, дважды транзитивный на дугах граф, полусимметричный граф, полный класс групп,
+      ширина Бэра–Судзуки, симметрическая граница класса групп.
+
+   MSC: 20B25, 05C12, 05C25, 05C50, 05E30, 20D05, 20D06, 20D08, 20D10, 20D20, 20D25,
+        20D40, 20D60, 20D99, 20E32, 20E34, 20E45, 20F16, 20F50
+   DOI: 10.21538/0134-4889-2024-30-1-284-293
+    The 2023 Ural Workshop on Group Theory and Combinatorics [1] was held online during the
+period 21 to 27 August 2023. The workshop was organized by the N.N. Krasovskii Institute of
+Mathematics and Mechanics of the Ural Branch of the Russian Academy of Sciences [2], the Institute
+of Natural Sciences and Mathematics of the Ural Federal University [3], and the Ural Mathematical
+Center [4]. The 2023 Ural Workshop on Group Theory and Combinatorics continued the Ural
+Seminar on Group Theory and Combinatorics [5] and shared all declarations and rules of work of
+the seminar. The workshop covered modern aspects of group theory (including questions of actions
+of groups on combinatorial objects), graph theory, some combinatorial aspects of topology and
+optimization theory, and related topics, and aimed to support communications between specialists
+on group theory, combinatorics, and their applications from all over the world. The program of
+the workshop included 30 fifty-minute talks by keynote speakers and 21 twenty-minute contributed
+talks.
+   The first working day of the workshop (Monday, August 21) was mostly devoted to actions of
+groups on different combinatorial objects. Keynote speakers of the first day and their talks:
+      Cheryl Praeger (The University of Western Australia, Perth, Australia), “Group theoretic
+      constructions of normal covers of the complete bipartite graphs K2n ,2n ”.
+      Bernardo Rodrigues (University of Pretoria, Pretoria, South Africa), “On finite imprimitive
+      rank 3 permutation groups acting as permutation automorphism groups of self-dual code ”.
+                2023 Ural Workshop on Group Theory and Combinatorics                            285
+
+      Gareth Jones (University of Southampton, Southampton, UK), “Regular maps and hyper-
+      maps with primitive automorphism groups ”.
+      Anton Klyachko (Lomonosov Moscow State University, Moscow, Russia), “The cost of
+      symmetry ”.
+      Pablo Spiga (Department of Mathematics and Applications, University of Milano–Bicocca,
+      Italy), “Normal coverings of finite groups, the Isbell conjecture and the Erdős–Ko–Rado theo-
+      rem ”.
+   Also on Monday, August 21 there were 4 contributed talks.
+   The second working day of the workshop (Tuesday, August 22) was devoted to algorithms on
+groups, representations of groups, problems of coincidence of words in groups, and other questions.
+Keynote speakers of the second day and their talks:
+      Marston Conder (University of Auckland, Auckland, New Zeland), “Finding subgroups of
+      interest in finitely-presented groups ”.
+      Sergey Gorchinskiy (Steklov Mathematical Institute of RAS, Moscow, Russia), “Irreducible
+      representations of finitely generated nilpotent groups ”.
+      Mikhail Zaicev (Lomonosov Moscow State University, Moscow, Russia), “On existence of
+      PI-exponent of codimension growth ”.
+      Cristina Acciarri (University of Modena and Reggio Emilia, Italy, and University of Brasilia,
+      Brazil), “On conciseness of words in residually finite groups ”.
+      Gustavo Fernández-Alcober (University of the Basque Country, Bilbao, Spain), “Concise
+      words and conciseness on normal subgroups ”.
+   Also on Tuesday, August 22 there were 3 contributed talks.
+    The third working day of the workshop (Wednesday, August 23) was mostly devoted to graphs
+defined on groups. Keynote speakers of the third day and their talks:
+      Peter Cameron (University of St Andrews, UK), “What can graphs and algebraic structures
+      say to each other ? ”
+      Andrea Lucchini (University of Padova, Padova, Italy), “Solubilizers in profinite groups ”.
+      Carmine Monetta (University of Salerno, Fisciano (Salerno), Italy), “Group nilpotency from
+      a graph point of view ”.
+      Lev Kazarin (P.G. Demidov Yaroslavl State University, Yaroslavl, Russia), “Graphs, facto-
+      rizations and the structure of a group ”.
+      Alexandre Zalesskii (University of Brasilia, Brasilia, Brazil), “Hall–Higman type theorems,
+      Grunberg–Kegel graphs and fixed point elements in finite group representations ”.
+   Also on Wednesday, August 23 there were 2 contributed talks.
+    The fourth working day of the workshop (Thursday, August 24) was mostly devoted to investiga-
+tions on the subgroup structure and the normal structure of groups. Keynote speakers of the fourth
+day and their talks:
+      Tomasz Popiel (Monash University, Melbourne, Australia), “The maximal subgroups of the
+      Monster”.
+      Daria Lytkina (Sobolev Institute on Mathematics SB RAS, Novosibirsk State University,
+      and Mathematical Center in Akademgorodok, Novosibirsk, Russia), “Periodic Frobenius
+      groups ”.
+      Long Miao (Hohai University, Nanjing, China), “On F-abnormal subgroups of finite groups ”.
+      Marina Sorokina (I. G. Petrovsky Bryansk State University, Bryansk, Russia), “Fibered and
+      foliated formations of finite groups ”.
+286                                         N. V. Maslova
+
+      Wenting Zhang (Lanzhou University, Lanzhou, China), “Minimal non-finitely based
+      involution monoids ”.
+   Also on Thursday, August 24 there were 2 contributed talks.
+   The fifth working day of the workshop (Friday, August 25) was mostly devoted to arithmetical
+characterizations of finite groups. Keynote speakers of the fifth day and their talks:
+      Danila Revin (Sobolev Institute of Mathematics SB RAS, Novosibirsk, Russia and N.N. Kra-
+      sovskii Institute of Mathematics and Mechanics UB RAS, Yekaterinburg, Russia), “On the
+      Baer–Suzuki width of some radical classes ”.
+      Maria Grechkoseeva (Sobolev Institute on Mathematics SB RAS and Novosibirsk State
+      University, Novosibirsk, Russia), “On characterization of finite groups by the set of element
+      orders ”.
+      Patrizia Longobardi (University of Salerno, Fisciano (Salerno), Italy), “A new
+      characterization of the alternating group of degree 5 ”.
+      Mercede Maj (University of Salerno, Fisciano (Salerno), Italy), “On a problem related to
+      the conjugacy classes of a group ”.
+   Also on Friday, August 25 there were 3 contributed talks.
+   The sixth working day of the workshop (Saturday, August 26) was mostly devoted to algebraic
+combinatorics. Keynote speakers of the sixth day and their talks:
+      Yaokun Wu (Shanghai Jiao Tong University, Shanghai, China), “Unavoidable intersection
+      patterns of d-boxes ”.
+      Alexander Makhnev (N.N. Krasovskii Institute of Mathematics and Mechanics UB RAS
+      and Ural Federal University, Yekaterinburg, Russia), “On Krein graphs without triangles ”.
+      Alexander Mednykh (Sobolev Institute on Mathematics SB RAS and Novosibirsk State
+      University, Novosibirsk, Russia), “Spectral invariants of cyclic covering of graphs and their
+      applications in combinatorial analysis ”.
+      Alexander Zvonkin (University of Bordeaux, Talence, France), “Weighted trees ”.
+   Also on Saturday, August 26 there were 6 contributed talks.
+   The last working day of the workshop (Sunday, August 27) was devoted to atrithmetical
+characterizations of finite groups and to Schur rings over groups. Keynote speakers of the last
+day of the workshop and their talks:
+      Marialaura Noce (University of Salerno, Fisciano (Salerno), Italy), “On the product of
+      element orders of finite group ”.
+      Gang Chen (School of Mathematics and Statistics, Central China Normal University,
+      Wuhan, China), “Schur rings over free abelian group of rank two ”.
+    Also on Sunday, August 27 there was 1 contributed talk. Moreover, the Open Problems Session
+was held at the end of the workshop.
+    Keeping with tradition, the participants of the workshop posed a number of open problems in
+their areas of research. Here we list the problems and some comments on them. The records of all
+discussions are available on the workshop website [1] for registered participants and on the website
+of the Ural Seminar on Group Theory and Combinatorics [5] after registration. The problems below
+are ordered so as to avoid repetition of definitions and notation.
+  1. Let G be a finite group. There are four graphs defined on the vertex set G. In each case the
+     conditions for elements x and y to be adjacent are given below.
+
+           The power graph ΓP (G): x = y m or y = xm for some integer m.
+             2023 Ural Workshop on Group Theory and Combinatorics                             287
+
+        The enhanced power graph ΓE (G): there exists z with x = z k , y = z l , for some integers
+        k and l.
+        The complement of the independence graph Γ′I (G): there is no minimal (under inclusion)
+        generating set containing {x, y}.
+        The complement of the rank graph Γ′R (G): there is no generating set of minimum
+        cardinality containing {x, y}.
+
+   Under inclusion of edge sets, these are as follows.
+                                                   r Γ′ (G)
+                                                   ❅R
+                                                     ❅
+                                                        ❅r ′
+                                     ΓE (G) ❅               ΓI (G)
+                                             r
+                                                 ❅
+                                                  ❅r
+                                                       ΓP (G)
+   The inclusions of ΓP in ΓE , and of Γ′I in Γ′R , are clear. For the other two, note that
+
+        if x = y m , then we can delete x from any generating set containing {x, y}, so such a set
+        cannot be minimal;
+        if x = z k and y = z l , then we may replace x and y in any generating set containing
+        {x, y} by z, so such a set cannot have minimum cardinality.
+      • For every edge in the diagram, determine the groups G for which the two corresponding
+        graphs are equal.
+   For ΓP and ΓE , these are the groups in which every element has prime power order; they
+   were investigated by many authors, a summary of results can be found, for example, in [6,
+   Theorem 1.7]. For ΓP and Γ′I , and for ΓE and Γ′R , they are determined in a recent paper by
+   S. Freedman et al. [7]. The remaining case is open.
+
+      • In cases where the graphs are not equal, consider the difference graph on the group,
+        whose edges are those of the larger graph which are not contained in the smaller.
+        Investigate problems of these four difference graphs.
+
+   For the difference of ΓE and ΓP , work has begun, see [8]. In the other three cases, probably
+   nothing has been done.
+                                                                                    Peter Cameron
+
+2. Does there exists a finite group G with two normal subgroups K and L, each having index
+   12 in G, such that
+
+    (a) K ∼
+          = L, and
+    (b) G/K ∼
+            = C12 while G/L ∼
+                            = Alt4 ?
+
+                               by Gabriel Verret, via Marston Conder; see Problem 20.21 in [9]
+
+   Proposition (Marston Conder and Natalia Maslova). Let G be a finite group of the
+   smallest possible order with two normal subgroups K and L, each with index 12 in G, such
+   that K is isomorphic to L, but G/K is isomorphic to C12 , while G/L is isomorphic to Alt4 .
+   Let M = KL and N = L ∩ K. Then the following statements hold:
+
+    (1) There is no ψ ∈ Aut(G) with ψ(K) = ψ(L), in particular, K cannot be conjugate to
+        L in G.
+    (2) M is a 2-group with |G : M | = 3, |G : N | = 48 and G/N ∼
+                                                                = C4 × Alt4 .
+288                                         N. V. Maslova
+
+      Proof. If there is ψ ∈ Aut(G) with ψ(K) = ψ(L), then
+
+                                      G/L ∼
+                                          = ψ(G)/ψ(L) = G/K;
+
+      a contradiction. In particular, it is clear that K cannot be conjugate to L in G. Thus,
+      statement (1) holds.
+
+      For statement (2), it is clear that M and N are normal subgroups of G with
+
+                       = L/(K ∩ L) = L/N and M/L = KL/L ∼
+            M/K = KL/K ∼                                = K/(K ∩ L) = K/N.
+
+      Also K 6= L, and therefore K and L are proper normal subgroups of M , and N is a proper
+      normal subgroup of each of K and L. Moreover, because M/L ⊳ G/L ∼ = Alt4 it follows that
+      M/L ∼= Alt4 or C2 × C2 , and so M has index 1 or 3 in G.
+      Next, to show that M 6= G, suppose first that KL = M = G. Then
+
+                         = M/L = G/L ∼
+                     K/N ∼                          = M/K = G/K ∼
+                                     = Alt4 and L/N ∼           = C12
+
+      (and G/N ∼  = C12 × Alt4 ). Then because K is isomorphic to L, we find that L contains an
+      isomorphic copy of N, say R, such that L/R ∼ = Alt4 , but then L contains isomorphic normal
+      subgroups N and R with L/N ∼     C
+                                     = 12   and  L/R  ∼
+                                                      = Alt4 , and therefore L is a smaller counter-
+      example than G, which is a contradiction. Thus |G : M | = 3, M/K ∼ = C4 and M/L ∼  = C2 ×C2 ,
+                         ∼        ∼                     ∼        ∼
+      and then also K/N = M/L = C2 × C2 while L/N = M/K = C4 . In particular, it also follows
+      that |G/N | = |G/M ||M/K||K/N | = 48, and that G/N ∼    = Alt4 ×C4 and M/N ∼   = C2 ×C2 ×C4 .
+      Finally, to show that M is a 2-group, assume the contrary, and let p be any odd prime
+      divisor of |M |, and let T be the non-trivial characteristic subgroup of M generated by all
+      of its Sylow p-subgroups. Since N ⊳ M and M/N is an abelian 2-group, every Sylow p-
+      subgroup of one of the subgroups K, L, M and N is a Sylow p-subgroup of each of the
+      other three, and so T is generated by all of the Sylow p-subgroups of K, and by all of the
+      Sylow p-subgroups of L. Hence, every isomorphism from K to L preserves T . But now G/T
+      contains isomorphic normal subgroups K/T and L/T , with (G/T )/(K/T ) ∼     = G/K ∼ = C12 and
+      (G/T )/(L/T ) ∼=  G/L  ∼
+                             =  Alt 4 , again contradicting the minimality of G. Thus, statement (2)
+      holds.                                                                                      
+
+  3. Let π be a set of primes and π ′ be the complement to π in the set P of all primes. If G is a
+     finite group with a series of a normal subgroups
+
+                                 N0 = {1} ≤ N1 ≤ N2 ≤ · · · ≤ Ns = G,
+
+      where every factor group Ni /Ni−1 is either a π ′ -group, or a p-group for some p ∈ π, then G
+      is called a π-solvable group.
+
+         • Assume that π is a proper subset of P. Let G = AB = AC = BC be the product of
+           proper π-solvable subgroups A, B and C of a finite simple non-abelian group G. What
+           is G?
+
+      There are at least two examples of this situation.
+
+       (1) G = Alt6 is an alternating group of degree 6. There are subgroups A ∼
+                                                                               = Alt5 , B ∼
+                                                                                          = Alt5
+           and C, which is the normalizer in G of its Sylow 3-subgroup, such that G = AB =
+           AC = BC. Note that A and B are not conjugate in G. If π = P \ {2, 3, 5}, then G is a
+           simple π-solvable group.
+       (2) G = P Ω+
+                  8 (q) have subgroups A, B, and C, all isomorphic to P Ω7 (q), such that G =
+           AB = AC = BC.
+             2023 Ural Workshop on Group Theory and Combinatorics                                289
+
+      • Assume that π is a proper subset of P. Classify all finite simple non-abelian groups G
+        that are products G = AB of proper π-solvable subgroups A and B of G.
+   Note that if π = {2}, then the set of all π-solvable groups coincides with the set of all solvable
+   groups.
+                                                                                       Lev Kazarin
+
+4. Let G be a finite group. If x ∈ G, write |x| the order of x. If x, y ∈ G, denote by [x, y] =
+   x−1 y −1 xy the commutator of x and y, and write K(G) = {[x, y] | x, y ∈ G}, so G′ = hK(G)i.
+   Define the functions
+                               1 X                     1       X
+                      o(G) =         |x|, oK (G) =                     |[x, y]|.
+                             |G|                     |K(G)|
+                                   x∈G                          [x,y]∈K(G)
+
+
+   Answering the question posed by E. Khukhro, A. Moretó and M. Zarrin in [10], Marcel Herzog,
+   Patrizia Longobardi, and Mercede Maj proved in [11] and in [12] that if o(G) ≤ o(Alt5 ), then
+   either G is solvable or G ∼
+                             = Alt5 . Moreover, o(G) = o(Alt5 ) if and only if G ∼
+                                                                                 = Alt5 .
+      • Are there other finite simple groups S such that o(G) = o(S) if and only if G ∼   = S?
+      • If ok (G) ≤ ok (Alt5 ), is it true that either G is solvable or G ∼
+                                                                          = Alt5 ? Since in a finite
+        simple group every element is a commutator, we can assume that G is a non-simple
+        group.
+   In [11] it has been proven that if G is a finite group containing a non-trivial normal
+   subgroup N , then o(G/N ) < o(G).
+      • If N is a non-trivial normal subgroup of a finite group G, what is the relationship
+        between oK (G) and oK (G/N )?
+                                                             Patrizia Longobardi and Mercede Maj
+
+5. Let G be a group. An element x of G \ {1} will be called deficient if
+
+                                             hxi < CG (x)
+
+   and it will be called non-deficient if
+
+                                             hxi = CG (x).
+
+   Obviously if x is a deficient (non-deficient) element, then every element in the conjugacy
+   class xG of x in G is deficient (non-deficient). If x ∈ G is deficient (non-deficient), then the
+   conjugacy class xG will be also called deficient (non-deficient).
+   Let j be a non-negative integer. We shall say that the group G has defect j, denoted by
+   G ∈ D(j) or by the phrase “G is a D(j)-group”, if exactly j non-trivial conjugacy classes of G
+   are deficient.
+   In the paper [13], the authors studied D(j)-groups G, j ≥ 1, satisfying the following condition:
+   G contains an element x of order pj+1 , for some prime p. This class of groups is denoted
+   by M(j). In [13] it was proved that any group in M(j) is periodic, and the structure of all
+   locally finite M(j)-groups was determined.
+
+   Consider now the class of D(j)-groups G, where j ≥ 1, satisfying the following condition: G
+   contains an element x of order pj , for some prime p. Call N (j) this class of groups.
+      • Is a group in N (j) periodic?
+290                                               N. V. Maslova
+
+         • What is the structure of a locally finite group in N (j)?
+
+                                                                        Patrizia Longobardi and Mercede Maj
+
+  6. Let Γ be a simple graph and i be an integer with 1 ≤ i ≤ diam(Γ). Define Γi to be a simple
+     graph with the same vertex set as Γ such that two different vertices are adjacent in Γi if and
+     only if they are at distance i in Γ. It is clear that Γ1 = Γ.
+
+         • Does there exist a distance-regular graph Γ such that Γ2 and Γ3 are strongly regular?
+         • Classify distance-regular graphs Γ of diameter 5 such that Γ5 is also distance-regular of
+           diameter 5.
+
+                                                                                             Alexander Makhnev
+
+  7. A Krein graph Γ = Kre(r) is a triangle-free strongly regular with parameters
+
+                                       ((r 2 + 3r)2 , r 3 + 3r 2 + r, 0, r 2 + r).
+
+      For each vertex u, the induced subgraph Γ2 (u) on the second neighborhood of the vertex u
+      in Γ is also strongly regular with parameters
+
+                                       (r 4 + 5r 3 + 6r 2 − r, r 3 + 2r 2 , 0, r 2 ).
+
+      Denote this graph by Kre(r)′ .
+      Let r be a positive integer. Does there exist
+
+         • A strongly regular graph Kre(r)?
+         • An extendable symmetric 2-((s + 2)(s2 + 4s + 2), (s2 + 3s + 1), s) design for s = r − 1?
+         • A connected strongly regular graph such that its local subgraphs are complements to
+           Kre(r)′ ?
+         • A distance-regular graph with intersection array
+
+           {r 3 +3r 2 +r, r 3 +3r 2 +r−1, r 3 +2r 2 , r 2 +r, 1; 1, r 2 +r, r 3 +2r 2 , r 3 +3r 2 +r−1, r 3 +3r 2 +r}?
+
+                                                                                             Alexander Makhnev
+
+  8. Let G be a finite group. Denote by π(G) the set of all prime divisors of the order of G and
+     by ω(G) the spectrum of G, that is, the set of all element orders of G. The set ω(G) defines
+     the Gruenberg–Kegel graph (or the prime graph) Γ(G) of G; in this simple graph the vertex
+     set is π(G), and distinct vertices p and q are adjacent if and only if pq ∈ ω(G).
+      A finite group G is
+
+           recognizable by its Gruenberg–Kegel graph if for each finite group H, Γ(G) = Γ(H) if
+           and only if G ∼
+                         = H;
+           k-recognizable by Gruenberg–Kegel graph, where k is a positive integer, if there are
+           exactly k pairwise non-isomorphic finite groups H with Γ(H) = Γ(G);
+           almost recognizable by Gruenberg–Kegel if it is k-recognizable Gruenberg–Kegel graph
+           for some positive integer k;
+           unrecognizable by Gruenberg–Kegel graph, if there are infinitely many pairwise non-
+           isomorphic finite groups H with Γ(H) = Γ(G).
+             2023 Ural Workshop on Group Theory and Combinatorics                                   291
+
+    A finite group G is almost simple if S ∼
+                                           = Inn(S) E S ≤ Aut(S) for a finite simple non-abelian
+    group S.
+    In [6] me and Peter Cameron proved that if G is a finite group such that G is almost
+    recognizable by Gruenberg–Kegel graph, then G is almost simple.
+       • Let G be an almost simple group. Decide whether G is recognizable, k-recognizable for
+         some integer k > 1, or unrecognizable by its Gruenberg–Kegel graph.
+    At the moment there are a number of results on recognition of simple groups by Gruenberg–
+    Kegel graph; some survey of known results obtained before 2022 can be found in [6]. Recently
+    jointly with Viktor Panshin and Alexey Staroletov in [14] we proved that every simple
+    exceptional group of Lie type, which is isomorphic to neither 2 B2 (22n+1 ) with n ≥ 1 nor
+    G2 (3) and whose Gruenberg–Kegel graph has at least three connected components, is almost
+    recognizable by Gruenberg–Kegel graph; groups 2 B2 (22n+1 ), where n ≥ 1, and G2 (3) are
+    unrecognizable by Gruenberg–Kegel graph.
+
+                                                                                         Natalia Maslova
+
+ 9. Let p be an odd prime, H be a finite group with subgroups X ∼
+                                                                =Y ∼
+                                                                   = Cpn such that H = hX, Y i
+    and H/H ∼ ′
+                =X ×Y.
+    Let C(H, X, Y ) be the Cayley graph C(H, S) with S = (X ∪ Y ) \ {1}.
+    Two families of maximal cliques (complete subgraphs) in C(H, X, Y ) are
+                                   {Xh | h ∈ H} and {Y h | h ∈ H}.
+
+    These form the vertex set of its clique graph Σ(H, X, Y ) with edge set
+                                  EΣ = {{Xh, Y g} | Xh ∩ Y g 6= ∅}.
+       • Is Σ(H, X, Y ) always an edge-transitive H-normal cover of ΣH ′ = Kpn ,pn ?
+       • Under what conditions is Σ(H, X, Y ) 2-arc-transitive?
+       • Under what conditions is Σ(H, X, Y ) semisymmetric?
+       • Under what conditions is Σ(H, X, Y ) a Cayley graph?
+       • Find explicit infinite families with some of these properties.
+    Solutions of corresponding problems for p = 2 can be found in [15].
+                                                   Cheryl Praeger, Daniel Hawtin and Jin-Xin Zhou
+10. Let X be a non-empty class of groups closed under taking
+
+         homomorphic images (if G ∈ X and φ is a homomorphism with domain G, then Gφ ∈ X),
+         subgroups (if G ∈ X and H ⩽ G, then H ∈ X), and
+         (the Fitting property) products of normal subgroups (H, K E G and H, K ∈ X, then
+         HK ∈ X).
+    Then, in every group G, there is the X-radical, i. e. the largest normal X-subgroup
+                                    GX := hH | H E G and H ∈ Xi.
+
+    According to [16], the Baer–Suzuki width of X is BS(X) ∈ N∪{0}∪{∞} such that BS(X) ⩽ m
+    for m ∈ N ∪ {0} if and only if
+                 GX = {x ∈ G | hx1 , . . . , xm i ∈ X for all x1 , . . . , xm conjugate to x}
+    for every group G. If such an m ∈ N ∪ {0} does not exist then BS(X) = ∞.
+292                                             N. V. Maslova
+
+          • Let X satisfies the above assumptions. Is the Baer–Suzuki width of X finite?
+      According to [17], a non-empty class X of groups is said to be complete if X is closed under
+      taking
+
+            homomorphic images (if G ∈ X and φ is a homomorphism with domain G, then Gφ ∈ X),
+            subgroups (G ∈ X and H ⩽ G, then H ∈ X), and
+            extensions (H E G and H, G/H ∈ X, then G ∈ X).
+
+      Danila Revin has announced in his talk that the Baer–Suzuki width of a complete class X is
+      always finite.
+                                                                                              Danila Revin
+
+ 11. The symmetric boundary of a non-empty class X of groups (denoted by Υ(X)) is the largest
+     integer n such that Symn ∈ X. Let Υ(X) := ∞ if Symn ∈ X for all positive integers n.
+      Danila Revin has announced in his talk that for a complete class X of groups, if Υ(X) < ∞,
+      then
+                               Υ(X) ⩽ BS(X) ⩽ max{11, 2Υ(X) + 1}.
+          • Find the best possible function f : N → N such that BS(X) ≤ f (Υ(X)) for each complete
+            class X of groups with Υ(X) < ∞.
+                                                                                              Danila Revin
+    The work of the 2023 Ural Workshop on Group Theory and Combinatorics will be continued by
+the work of the Ural Seminar on Group Theory and Combinatorics, which will be held every other
+Tuesday with possible changes and exceptions. The list of talks of the seminar can be found on its
+website [5].
+   We are looking forward to meet you at the Ural Seminar on Group Theory and Combinatorics!
+
+                                         Acknowledgements
+
+   The author of this survey paper is thankful to the authors of the problems for their helpful
+comments which improved this text.
+    I am chairing the Ural Seminar on Group Theory and Combinatorics from its first meeting in
+December 2020 and was the chair of the 2023 Ural Workshop on Group Theory and Combinatorics. I
+express my deepest gratitude to Nokolai Minigulov and to Mikhail Golubiatnikov who work together
+with me during all this period, provide technical support for all the meetings of the Ural Seminar
+on Group Theory and Combinatorics and have also provided technical support for all the meetings
+of the 2023 Ural Workshop on Group Theory and Combinatorics. I am very thankful to them for
+their permanent hard work!
+
+                                             REFERENCES
+
+ 1. 2023 Ural Workshop on Group Theory and Combinatorics [e-resource] .
+    Available on: http://2023uwgtc.imm.uran.ru .
+ 2. N.N. Krasovskii Institute of Mathematics and Mechanics [e-resource] .
+    Available on: https://www.imm.uran.ru/eng .
+ 3. Institute of Natural Sciences and Mathematics, Ural Federal University, Russia [e-resource] (in Russian).
+    Available on: https://insma.urfu.ru/ru/ .
+ 4. Ural Mathematical Center [e-resource] . Available on: https://umc.urfu.ru/en/ .
+ 5. Ural Seminar on Group Theory and Combinatorics [e-resource] .
+    Available on: https://http://uwgtc.imm.uran.ru .
+                 2023 Ural Workshop on Group Theory and Combinatorics                                293
+
+ 6. Cameron P.J., Maslova N.V. Criterion of unrecognizability of a finite group by its Gruenberg–Kegel
+    graph. J. Algebra, 2022, vol. 607, part A, pp. 186–213. doi: 10.1016/j.jalgebra.2021.12.005
+ 7. Freedman S.D., Lucchini A., Nemmi D., Roney-Dougal C.M. Finite groups satisfying the independence
+    property. International Journal of Algebra and Computation, 2023, vol. 33, no. 3, pp. 509–545.
+    doi: 10.1142/S021819672350025X
+ 8. Biswas S., Cameron P.J., Das A., Dey H.K. On difference of enhanced power graph and power graph of
+    a finite group. Available on: arXiv:2206.12422 [math.CO]. doi: 10.48550/arXiv.2206.12422
+ 9. The Kourovka notebook. Unsolved problems in group theory, 20th ed., eds. V.D. Mazurov, E.I. Khukhro.
+    Novosibirsk, Inst. Math. SO RAN Publ., 2022, 269 p. Available at: https://kourovka-notebook.org/.
+10. Khukhro E.I., Moretó A., Zarrin M. The average element order and the number of conjugacy classes of
+    finite groups. J. Algebra, 2021, vol. 569, no. 1, pp. 1–11. doi: 10.1016/j.jalgebra.2020.11.009
+11. Herzog M., Longobardi P., Maj M. Another criterion for solvability of finite groups. J. Algebra, 2022,
+    vol. 597, pp. 1–23. doi: 10.1016/j.jalgebra.2022.01.005
+12. Herzog M., Longobardi P., Maj M. On groups with average element orders equal to the average
+    order of the alternating group of degree 5. Glasnik Matematic̆ki, 2023, vol. 58, no. 2, pp. 307–315.
+    doi: 10.3336/gm.58.2.10
+13. Herzog M., Longobardi P., Maj M. On D(j)-groups with an element of order pj+1 , in preparation.
+14. Maslova N.V., Panshin V.V., Staroletov A.M. On characterization by Gruenberg–Kegel graph of finite
+    simple exceptional groups of Lie type. European J. Math., 2023, vol. 9, art. no. 78.
+    doi: 10.1007/s40879-023-00672-7
+15. Hawtin D.R., Praeger C.E., Zhou JX. Using mixed dihedral groups to construct normal Cayley graphs
+    and a new bipartite 2-arc-transitive graph which is not a Cayley graph. J. Algebr. Comb., 2024, 14 p.
+    doi: 10.1007/s10801-024-01300-7
+16. Gordeev N., Grunewald F., Kunyavskii B., Plotkin E. A description of Baer–Suzuki type of the
+    solvable radical of a finite group. J. Pure Appl. Algebra, 2009, vol. 213, no. 2, pp. 250–258.
+    doi: 10.1016/j.jpaa.2008.06.006
+17. H. Wielandt. Zusammengesetzte Gruppen endlicher Ordnung. In: Lecture Notes, Math. Inst. Univ.
+    Tübingen, 1963/64, Mathematische Werke / Mathematical Works, vol. 1, Group Theory, Berlin: Walter
+    de Gruyter and Co., 1994, pp. 607–655.
+                                                                           Received February 18, 2024
+                                                                            Revised February 25, 2024
+                                                                           Accepted February 28, 2024
+
+Funding Agency: The author of this survey paper gratefully acknowledges the research funding
+from the Ministry of Science and Higher Education of the Russian Federation (project 075-02-2024-
+1428 for the development of the Regional Scientific and Educational Mathematical Center “Ural
+Mathematical Center”).
+Natalia Vladimirovna Maslova, Dr. Phys.-Math. Sci., Leading Research Fellow, N.N. Krasovskii
+Institute of Mathematics and Mechanics of the Ural Branch of the Russian Academy of Sciences,
+Yekaterinburg, 620108 Russia; Professor, Ural Federal University, Yekaterinburg, 620083 Russia;
+Leading Research Fellow, Ural Mathematical Center, Yekaterinburg, 620083 Russia, e-mail:
+butterson@mail.ru .
+Cite this article as: N. V. Maslova. 2023 Ural Workshop on Group Theory and Combinatorics, Trudy
+Instituta Matematiki i Mekhaniki UrO RAN, 2024, vol. 30, no. 1, pp. 284–293 .
+

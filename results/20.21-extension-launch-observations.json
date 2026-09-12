@@ -1,0 +1,27 @@
+{
+  "recorded_utc": "2026-09-12T03:23:13.837088+00:00",
+  "failed_control": {
+    "command": "python3 scripts/run_20_21_shards.py 96 --shards 2",
+    "controller_exit": 1,
+    "exit_tool_chunk": "a86328",
+    "reason": "Second GAP shard rejected noncongruent range endpoint; child exit0 was rejected by clean-log check.",
+    "preserved_script": "scripts/search_20_21_shard_initial.g"
+  },
+  "successful_control": {
+    "command": "python3 scripts/run_20_21_shards.py 96 --shards 2 --tag retry",
+    "controller_exit": 0,
+    "exit_tool_chunk": "675a29",
+    "totals": [
+      231,
+      31,
+      4,
+      0
+    ]
+  },
+  "live_extension": {
+    "command": "python3 scripts/run_20_21_shards.py 768 --shards 8",
+    "started_tool_chunk": "b6df72",
+    "exec_session": 39413,
+    "status": "RUNNING_NO_RESULT"
+  }
+}

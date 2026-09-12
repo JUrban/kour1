@@ -2277,3 +2277,18 @@ kernel pairs. A16-element coordinate mutation shows that isomorphic
 kernels with C4/V4 quotients alone are possible. The14-file audit exits0
 and replays all controls. This is bounded evidence only; no minimality
 reduction or withdrawn result is used, and the candidate count stays41.
+
+
+## 2026-09-12T03:24:20.451366+00:00 — 20.21 reduction audited and order768 launched
+
+Recovered the publisher PDF, read the full Conder--Maslova proposition
+and proof, and viewed printed pp.287–288. The prior minimality argument
+is complete; a typo in the irrelevant automorphism statement is recorded.
+It converts the pilot into exclusion of all orders below768. The first
+two-shard control failed on a GAP range endpoint; the wrapper returned1
+despite child exit0. Failed scripts and outputs are preserved. The fixed
+retry exits0 and exactly reproduces all order96 rows and counts. Eight
+1GiB GAP workers now search1,090,235 groups of order768, in addition to
+six14GiB certificate verifiers:14 compute processes,92GiB workspace
+ceiling, substantially smaller actual RSS. A24-file launch/source manifest
+passes; no order768 result is claimed while the processes run.
