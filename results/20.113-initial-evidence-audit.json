@@ -1,0 +1,10 @@
+{
+  "tool_chunk": "2f925b",
+  "scope": "Initial inline failure-evidence check, not the mathematical probe.",
+  "shell_returncode": 0,
+  "error": "AssertionError: list-of-lists progress rows compared with list-of-tuples enumerate output.",
+  "effect": "No packet or ledger edits ran. Subsequent shell commands committed the nine existing evidence files as 3a7915a.",
+  "resolution": "Normalize the expected rows to lists in the standalone auditor; rerun without repeating the probe.",
+  "python_failed": true,
+  "python_returncode_separately_collected": false
+}

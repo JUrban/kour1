@@ -1,0 +1,100 @@
+{
+  "observed_utc": "2026-09-12T14:02:44.257662+00:00",
+  "scope": "Stopped feasibility probe only: progress markers, no completed group or multiplier certificate.",
+  "summary": {
+    "progress_only_rows": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        25
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        214
+      ],
+      [
+        6,
+        654
+      ],
+      [
+        7,
+        1978
+      ],
+      [
+        8,
+        6238
+      ]
+    ],
+    "accepted_complete_probe": false,
+    "actual_probe_returncode": 1,
+    "new_complete_candidates_added": 0
+  },
+  "files": [
+    {
+      "path": "research/20.113-feasibility.md",
+      "bytes": 2996,
+      "sha256": "a1635e52220748ac2ff5bf0d767215eab22d0f3a92ccefe39a33376cc9ec0e94"
+    },
+    {
+      "path": "scripts/probe_20_113_pq.g",
+      "bytes": 1028,
+      "sha256": "d8e07369581101801c8c0bf7b54b5932c347d5a3463e3aa4caa5bd2bb577cad5"
+    },
+    {
+      "path": "scripts/audit_20_113_feasibility.py",
+      "bytes": 2145,
+      "sha256": "1dcab7f3fa13d359c394609a4aee3d465dfa660f027621548d72786cbed3b523"
+    },
+    {
+      "path": "results/20.113-initial-evidence-audit.json",
+      "bytes": 561,
+      "sha256": "aa8a44d6288baaca79a6920a8f51a08997d842cd54be0695b96ad48ea1e40828"
+    },
+    {
+      "path": "results/20.113-source-download.json",
+      "bytes": 219,
+      "sha256": "b3598569c65b46c37638f345989111ae0946485beed2fd2f01f025204336dd06"
+    },
+    {
+      "path": "references/cache/vaughan-lee-schur-II-2111.11098v3.pdf",
+      "bytes": 200894,
+      "sha256": "4135b400f7c2666bc833e3bc070377e36315119936a1eaee34fbf081ceddcfc4"
+    },
+    {
+      "path": "references/cache/vaughan-lee-schur-II-2111.11098v3.txt",
+      "bytes": 64791,
+      "sha256": "03a26b4ce6a230e345e7dc95f097e1689c5bceec3cb238bfde45884b36d1490e"
+    },
+    {
+      "path": "results/20.113-pq-probe-live.json",
+      "bytes": 229,
+      "sha256": "299019c935981b4ab8fc0efba89b89d42d5ad670f614526a32c8ccdec9dccba4"
+    },
+    {
+      "path": "results/20.113-pq-probe-process.json",
+      "bytes": 606,
+      "sha256": "c14c5a2b0c0a801bea0c3e5ccd690c2cfeea4c2c2ae24680a7abf9f14a10c604"
+    },
+    {
+      "path": "results/20.113-pq-probe.log",
+      "bytes": 685,
+      "sha256": "5f58aae877044d53aff35192b1907557ffc74875767ff7e1e90fd67429f9a91a"
+    },
+    {
+      "path": "results/20.113-pq-probe.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
