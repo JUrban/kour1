@@ -2102,3 +2102,15 @@ No general answer or priority claim; complete candidate count stays37.
 
 The 00:40:06 n=7 snapshot has24,570,000 checked nodes, six live
 workers and no completed shard. Its certificate still has no proof status.
+
+
+## 2026-09-12T00:56:50.044835+00:00 — 11.78 scope and prior results
+
+The disconnected groups Ga^n semidirect C2 give elementary counterexamples
+to both printed parts. A full argument and a six-file source binding are
+retained. Frecon2013 supplies prior positive connected cases; its exact
+hypotheses were read and pages 5,72,73 viewed, but its long proof is imported.
+The intended connectedness convention remains unconfirmed. No new count.
+
+At 00:56:12 the n=7 verifier has 24,970,000 checked nodes, six live workers,
+zero completed shards and 35,031,796 KiB combined RSS.
