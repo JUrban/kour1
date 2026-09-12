@@ -2163,3 +2163,17 @@ An infinite finite-support example excludes an incorrect global
 coboundary assumption and the stronger false elementwise conclusion.
 No internal gap found; independent review and priority remain pending.
 Complete candidate count is 39.
+
+
+## 2026-09-12 01:47 UTC — Artin D5 source deduction and triage
+
+Paris--Soroko2026 Theorem1 gives the D5 case of 17.16. Exponent sum
+is 40 on the central generator, so the centre quotient is virtually
+a linear subgroup of the original group; induction of a faithful
+representation handles both finite extensions. Pages1--4 were read
+and2--3 viewed. Six source/note hashes replayed successfully. Original
+classification and linearity inputs remain imported. No new count.
+The recent almost-simple maximal-subgroup paper does not settle17.91;
+a scope note retains the elementary normal/core-free cases.
+Latest n7 snapshot:26,190,000 checked nodes; six live workers, no
+completed shards,36,629,236KiB combined RSS.

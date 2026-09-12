@@ -1,0 +1,476 @@
+                                                              Automorphisms of the Artin group of type D5
+                                                                                            LUIS PARIS
+                                                                                          IGNAT SOROKO
+
+
+                                                Abstract For the Artin group of type D5 , we determine its automorphism group and the auto-
+arXiv:2606.26082v2 [math.GR] 25 Jun 2026
+
+
+
+
+                                                morphism group of its quotient by the center. This settles the only remaining case, n = 5, in the
+                                                classification of automorphisms of Artin groups of spherical type Dn .
+                                                AMS Subject Classification Primary: 20F36, secondary: 20F28, 57K20.
+                                                Keywords Artin groups of type Dn , automorphisms.
+
+
+
+                                           1    Introduction
+
+                                           Let S be a finite set. A Coxeter matrix over S is a square matrix M = (ms,t )s,t∈S indexed by the
+                                           elements of S, with coefficients in N ∪ {∞}, such that ms,s = 1 for all s ∈ S, and ms,t = mt,s ⩾ 2 for
+                                           all s, t ∈ S, s ̸= t. Such a matrix is usually represented by a labeled graph, Γ, called a Coxeter graph,
+                                           defined by the following data. The set of vertices of Γ is S. Two vertices s, t ∈ S are connected by an
+                                           edge if ms,t ⩾ 3, and this edge is labeled with ms,t if ms,t ⩾ 4.
+                                           If a, b are two letters and m is an integer ⩾ 2, then we denote by Π(a, b, m) the alternating word aba. . .
+                                                                                              m                                     m−1
+                                           of length m. In other words, Π(a, b, m) = (ab) 2 if m is even, and Π(a, b, m) = (ab) 2 a if m is odd.
+                                           Let Γ be a Coxeter graph and let M = (ms,t )s,t∈S be its Coxeter matrix. With Γ we associate a group,
+                                           A[Γ], called the Artin group of Γ, defined by the presentation
+                                                           A[Γ] = ⟨S | Π(s, t, ms,t ) = Π(t, s, ms,t ) for s, t ∈ S , s ̸= t , ms,t ̸= ∞⟩ .
+                                           The Coxeter group of Γ, denoted by W[Γ], is the quotient of A[Γ] by the relations s2 = 1, s ∈ S. We
+                                           say that Γ is of spherical type if W[Γ] is finite.
+                                           The natural problem of determining automorphism groups of Artin groups has been solved only for cer-
+                                           tain classes: spherical types An [DG81, CC05], Bn [CC05], I2 (m) [GHMR00, CP02], D4 [Sor21], and
+                                           Dn for n ⩾ 6 [CP25]; affine types A en and C
+                                                                                      e n [CC05]; some 2-dimensional Artin groups [Cri05, AC23];
+                                           large-type free-of-infinity Artin groups [Vas25]; some other classes of large-type Artin groups [BMV25,
+                                           HOV24]; and right-angled Artin groups, for which a uniform description and finite presentation of au-
+                                           tomorphism groups is known [Ser89, Lau95, Day09].
+                                           In this paper we fill in the missing case n = 5 in the Dn sequence, i.e. we classify automorphisms of
+                                           the Artin group A[D5 ] with the Coxeter graph given in Figure 1 on the left.
+                                           Let t1 , . . . , t5 denote the standard generators of A[D5 ], and let χ be the inversion automorphism of
+                                           A[D5 ], defined on the generators as χ(ti ) = ti−1 , for i = 1, . . . , 5. Let Z(G) denote the center of a
+                                           group G. We prove the following theorems.
+2                                                                                        L Paris and I Soroko
+
+
+                                               t4
+                  D5 :                                        A4 :
+                         t1       t2    t3                           s1    s2      s3   s4
+                                               t5
+
+                               Figure 1: The Coxeter graphs of types D5 and A4 .
+
+
+Theorem 1 Let A = A[D5 ] and C2 = Z/2Z. Then
+                                 Aut(A) = Inn(A) ⋊ ⟨χ⟩ ≃ A/Z(A) ⋊ C2 .
+In particular, Out(A) ≃ C2 .
+
+Theorem 2 Let A = A[D5 ], A = A/Z(A), and χ be the automorphism induced by χ. Then
+                                 Aut(A) = Inn(A) ⋊ ⟨χ⟩ ≃ A/Z(A) ⋊ C2 .
+In particular, Out(A) ≃ C2 .
+
+Thus the descriptions of Aut(A[D5 ]) and of Aut(A[D5 ]/Z(A[D5 ])) have the same form as the correspond-
+ing descriptions obtained by Castel and Paris for A[Dn ] with odd n ⩾ 6; see [CP25, Corollary 2.6 (2)].
+This paper is a continuation of the series of articles [CP25, PS25a, PS25b] devoted to classification of
+automorphisms and endomorphisms of Artin groups that admit geometric representations as subgroups
+of mapping class groups of surfaces. The key ingredients of the proofs are descriptions of homomor-
+phisms from braid groups to themselves and to mapping class groups, obtained in a series of earlier
+works [Cas09, Cas16, CKM23, Ore24].
+Our paper is organized as follows. In Section 2 we prove that the kernel of the natural quotient map
+A[D5 ] → A[A4 ] is fully characteristic, and use the Crisp–Paris description of automorphisms preserving
+this kernel to prove Theorem 1. In Section 3 we prove Theorem 2. The main point is to show that a lift
+of an automorphism of A[D5 ]/Z(A[D5 ]) can be modified by a central transvection so as to become an
+automorphism of A[D5 ]. Finally, in Section 4 we apply Theorem 1 to fill the missing type D5 case in
+a result of Jones–Mangioni–Sartori [JMS26] on the strong twist conjecture.
+
+Acknowledgments This work was started at the AIM workshop “Geometry and topology of Artin
+groups” organized by Ruth Charney, Kasia Jankiewicz, and Kevin Schreve in September 2023, and con-
+tinued at the SLMath workshop “Hot Topics: Artin Groups and Arrangements – Topology, Geometry,
+and Combinatorics” organized by Christin Bibby, Ruth Charney, Giovanni Paolini, and Mario Salvetti
+in March 2024, and during the second author’s visit to Université Bourgogne Europe in May–June
+2025. We thank the organizers, AIM, SLMath and Université Bourgogne Europe for hospitality. The
+first author is partially supported by the French project “CaGeT” (ANR-25-CE40-4162) of the ANR.
+The IMB receives support from the EIPHI Graduate School (contract ANR-17-EURE-0002).
+
+
+2    Automorphisms of A[D5 ]
+
+The Artin group A[A4 ] will play an important auxiliary role in our work. Its Coxeter graph A4 is shown
+on the right in Figure 1. It appears as the image of the quotient map from A[D5 ] obtained by identifying
+Automorphisms of the Artin group of type D5                                                             3
+
+
+the two terminal generators t4 and t5 of the Coxeter graph D5 , see the epimorphism π below. We
+denote the standard generators of A[A4 ] by s1 , . . . , s4 .
+Let ∆ be the Garside element of A[A4 ], and let ∆D be the Garside element of A[D5 ]. It is known that
+Z(A[A4 ]) = ⟨∆2 ⟩ and Z(A[D5 ]) = ⟨∆2D ⟩; see [BS72, Satz 7.2]. We will use the following expression
+of the element ∆2 as a product of standard generators: ∆2 = (s1 s2 s3 s4 )5 , see for example [BS72, §5.8,
+Zusatz (i)]. Moreover, the conjugation by ∆D induces the nontrivial graph automorphism of A[D5 ],
+namely
+               ∆D ti ∆−1
+                      D = ti (1 ⩽ i ⩽ 3),         ∆D t4 ∆−1
+                                                         D = t5 ,         ∆D t5 ∆−1D = t4 .
+
+We now define a few useful homomorphisms, following the notation of [CP25].
+π : A[D5 ] → A[A4 ]:      π(ti ) = si       (1 ⩽ i ⩽ 3),      π(t4 ) = π(t5 ) = s4 .
+It is known that π(∆D ) = ∆2 , see [CP25, Lemma 5.1 and the proof of Theorem 2.8].
+αp : A[D5 ] → A[A4 ]:      For p ∈ Z define
+
+                        αp (ti ) = si ∆2p     (1 ⩽ i ⩽ 3),      αp (t4 ) = αp (t5 ) = s4 ∆2p .
+Since ∆2 is central in A[A4 ], αp preserves the defining relations of A[D5 ] and hence indeed defines a
+homomorphism A[D5 ] → A[A4 ]. Observe that α0 = π .
+γp : A[A4 ] → A[A4 ]:     For p ∈ Z define
+
+                                        γp (si ) = si ∆2p      (1 ⩽ i ⩽ 4).
+By the same argument as above, γp is a homomorphism. Observe that αp = γp ◦ π .
+χ : A[D5 ] → A[D5 ]:      Recall that χ was defined as:
+                                            χ(ti ) = ti−1 ,   (1 ⩽ i ⩽ 5).
+χA : A[A4 ] → A[A4 ]:     We define χA in a similar way:
+                                        χA (si ) = s−1
+                                                    i ,        (1 ⩽ i ⩽ 4).
+
+For the rest of the paper, denote
+                                                       F := Ker π.
+By Crisp–Paris [CP05, Proposition 2.3 (2)], F is a free group of rank 4, and A[D5 ] ≃ F ⋊ A[A4 ], where
+the embedding A[A4 ] ,→ A[D5 ] is given by si 7→ ti , 1 ⩽ i ⩽ 4.
+If G is a group and g ∈ G, then we denote by conjg : G → G, h 7→ ghg−1 , the conjugation by
+g. We say that two homomorphisms φ1 , φ2 : G → H are conjugate if there exists h ∈ H such that
+φ2 = conjh ◦φ1 . A homomorphism φ : G → H is called cyclic if its image is a cyclic subgroup of H .
+If G is either A[A4 ] or A[D5 ], then a homomorphism φ : G → H is cyclic if and only if there exists
+h ∈ H such that all standard generators of G are sent by φ to h.
+
+Lemma 3 Let φ : A[D5 ] → A[A4 ] be a surjective homomorphism. Then φ is conjugate either to π or
+to π ◦ χ. In particular, Ker(φ) = F .
+4                                                                                      L Paris and I Soroko
+
+
+Proof By [CP25, Theorem 2.1], an arbitrary homomorphism φ : A[D5 ] → A[A4 ] has one of the two
+forms:
+    (1) either φ is cyclic, or
+    (2) there exist ψ ∈ ⟨χ⟩ and p ∈ Z such that φ is conjugate to αp ◦ ψ .
+Since φ is surjective, case (1) is impossible, so φ is conjugate to αp ◦ ψ for some p ∈ Z and ψ ∈ ⟨χ⟩.
+Since ψ is an automorphism of A[D5 ], it does not affect surjectivity of φ, hence it is enough to analyze
+when αp is surjective. Arguing as in the proof of [CP25, Corollary 2.5], define the exponent sum
+homomorphism ℓ : A[A4 ] → Z which sends si 7→ 1 for all i. It is known that ∆2 = (s1 s2 s3 s4 )5
+and hence ℓ(∆2 ) = 20. In particular, ℓ(αp (ti )) = ℓ(sj ∆2p ) = 1 + 20p, for all i, j. Therefore,
+Im(ℓ ◦ αp ) ⊆ (1 + 20p)Z. Since αp is assumed to be surjective, this is only possible if p = 0. Hence φ
+is conjugate to α0 ◦ ψ , which is equal to either π or π ◦ χ. Since π ◦ χ = χA ◦ π , and since conjugation
+in the codomain does not change the kernel, we conclude that Ker φ = Ker π = F .
+
+Recall that a subgroup N of a group G is called characteristic if for every automorphism Φ ∈ Aut(G)
+we have Φ(N) = N , and N is called fully characteristic if for every endomorphism φ ∈ End(G) we
+have φ(N) ⊆ N .
+
+Lemma 4 Let π : A[D5 ] → A[A4 ] be the epimorphism defined above, and let F = Ker π . Then F is
+fully characteristic in A[D5 ].
+
+Proof Let φ : A[D5 ] → A[D5 ] be an arbitrary endomorphism, and consider λ = π ◦ φ : A[D5 ] →
+A[A4 ]. By [CP25, Theorem 2.1], either λ is cyclic, or λ is conjugate to αp ◦ ψ for some p ∈ Z and
+ψ ∈ ⟨χ⟩.
+Suppose first that λ is not cyclic. Write αp = γp ◦ π , and observe that γp is injective. Indeed, consider
+again the exponent-sum homomorphism ℓ : A[A4 ] → Z, which sends si 7→ 1 for all i. Since ∆2 is
+central, for any g ∈ A[A4 ] we have γp (g) = g∆2p ℓ(g) . Suppose that γp (g) = 1. Then g = ∆−2p ℓ(g) .
+Applying ℓ and using ℓ(∆2 ) = 20, we get ℓ(g) = −20p ℓ(g). Hence (1 + 20p) ℓ(g) = 0, so ℓ(g) = 0.
+Hence g = ∆−2p·0 = 1, and γp is injective.
+We have: λ is conjugate to γp ◦ π ◦ ψ , γp is injective, ψ(F) = F (since ψ ∈ ⟨χ⟩ and π ◦ χ = χA ◦ π ),
+and conjugating the image does not change the kernel. Therefore Ker λ = Ker π = F . On the other
+hand, Ker λ = Ker(π ◦ φ) = φ−1 (F). Hence φ−1 (F) = F , and, in particular, φ(F) ⊆ F .
+Suppose now that λ is cyclic. Then there exists h ∈ A[A4 ] such that λ(ti ) = h for all i. In particular,
+λ(t5 t4−1 ) = 1. The subgroup F = Ker π is the normal closure of t5 t4−1 in A[D5 ], since π is the quotient
+map obtained by identifying t4 and t5 . Therefore λ(F) = 1, i.e. π(φ(F)) = 1, so φ(F) ⊆ F .
+Thus every endomorphism of A[D5 ] preserves F .
+
+Proof of Theorem 1 Crisp and Paris proved in [CP05, Theorem 4.9] that the subgroup Aut(A[D5 ], F)
+consisting of all automorphisms of A[D5 ] preserving F , has the form:
+                       Aut(A[D5 ], F) = Inn(A[D5 ]) ⋊ ⟨χ⟩ ≃ A[D5 ]/Z(A[D5 ]) ⋊ C2 .
+It follows from Lemma 4 that the subgroup F is characteristic, hence Aut(A[D5 ], F) = Aut(A[D5 ]),
+and the theorem follows.
+Automorphisms of the Artin group of type D5                                                            5
+
+
+Remark 5 In addition to automorphisms, Castel and Paris also give a classification of all endomor-
+phisms of A[Dn ] for n ⩾ 6. Their proof combines two ingredients:
+    • a classification of homomorphisms A[Dn ] → A[An−1 ], [CP25, Theorem 2.1],
+    • a classification of homomorphisms A[An−1 ] → A[Dn ], [CP25, Theorem 2.2].
+The first ingredient is still available for D5 , since [CP25, Theorem 2.1] applies for n ⩾ 5. It is based
+on a classification of endomorphisms of A[An−1 ], which is given for n = 5 independently in [CKM23]
+and in [Ore24]. However, the second ingredient, Theorem 2.2 of Castel–Paris, essentially uses Castel’s
+classification of maps from A[An−1 ] to the mapping class group of the surface of genus ⌊(n − 1)/2⌋
+with one or two boundary components, after applying the Perron–Vannier embedding of A[Dn ]. This
+classification is available to us only for n ⩾ 6, via the earlier work of Castel [Cas16, Theorem 1]. To
+describe endomorphisms of A[D5 ] by the same route, one would need the genus 2 analogue of Castel’s
+result: namely, the statement that every non-cyclic homomorphism from A[A4 ] to the mapping class
+group of a genus 2 surface with one boundary component is obtained from the Birman–Hilden 4-chain
+Dehn twist representation by conjugating with a homeomorphism, applying a central transvection, and
+possibly precomposing with the inversion automorphism of A[A4 ]. We do not have a proof of such a
+statement at present. However, surjective endomorphisms of A[D5 ] admit a complete description and
+are given in Theorem 1, since all of them are automorphisms. Indeed, by the results of Digne [Dig03] and
+Cohen–Wales [CW02], Artin groups of spherical type are linear, and, being finitely generated, they are
+Hopfian by Malcev’s theorem (which means that every surjective endomorphism is an automorphism).
+
+
+3    Automorphisms of A[D5 ]/Z(A[D5 ])
+
+Denote for brevity A[D5 ] = A[D5 ]/Z(A[D5 ]) and let ξ : A[D5 ] → A[D5 ]/Z(A[D5 ]) be the canonical
+projection. Note that if an endomorphism φ : A[D5 ] → A[D5 ] has the property φ(Z(A[D5 ])) ⊆
+Z(A[D5 ]), it induces a natural endomorphism φ : A[D5 ] → A[D5 ]. Let ϕ : A[D5 ] → A[D5 ] be an
+arbitrary endomorphism. If there exists an endomorphism φ : A[D5 ] → A[D5 ] making the following
+diagram commutative
+                                                   φ
+                                          A[D5 ]        A[D5 ]
+                                              ξ             ξ
+                                                   ϕ
+                                          A[D5 ]        A[D5 ]
+
+we say that ϕ lifts and that φ is a lift of ϕ. Notice that any lift φ of any endomorphism ϕ of A[D5 ]
+must have property φ(Z(A[D5 ])) ⊆ Z(A[D5 ]).
+Now let ϕ ∈ Aut(A[D5 ]) be an arbitrary automorphism. By [CP25, Proposition 2.7], ϕ admits a
+lift φ : A[D5 ] → A[D5 ], which is a priori only an endomorphism. We will show that this lift can be
+modified, without changing the induced automorphism of A[D5 ], so that it becomes an automorphism
+of A[D5 ].
+Let φ : A[D5 ] → A[D5 ] be a fixed lift of ϕ. Recall that by [CP05, Proposition 2.3 (2)] we have
+                                          A[D5 ] ≃ F ⋊ A[A4 ],
+6                                                                                      L Paris and I Soroko
+
+
+where F = Ker π is a free group of rank 4, and A[A4 ] = Im π is identified with the subgroup of
+A[D5 ] generated by t1 , . . . , t4 . By Lemma 4, the subgroup F is fully characteristic in A[D5 ]. Hence
+φ(F) ⊆ F , and φ induces an endomorphism
+                                           φA : A[A4 ] → A[A4 ]
+of A[D5 ]/F = A[A4 ] by φA (π(x)) := π(φ(x)), for all x ∈ A[D5 ].
+We claim that φA is non-cyclic. Since ϕ is surjective on A[D5 ], we have A[D5 ] = φ(A[D5 ]) Z(A[D5 ]).
+Applying π gives A[A4 ] = π(A[D5 ]) = π(φ(A[D5 ])) π(Z(A[D5 ])). The subgroup π(Z(A[D5 ])) is
+central in A[A4 ]. Thus, if π(φ(A[D5 ])) = φA (A[A4 ]) were cyclic, then A[A4 ] would be abelian, a
+contradiction. Therefore φA is non-cyclic.
+By [CKM23, Corollary 1.2], or by [Ore24, Theorem 1.6], there exist g ∈ A[A4 ], ε ∈ {0, 1}, and p ∈ Z
+such that
+(1)                                       φA = conjg ◦γp ◦ χεA ,
+where γp (si ) = si ∆2p for 1 ⩽ i ⩽ 4. The next lemma is our key observation that the exponent p in this
+representation must be even.
+
+Lemma 6 Let ϕ ∈ Aut(A[D5 ]), and let φ, φA , and p be defined as above. Then p is even.
+
+Proof We prove the lemma in three steps. First, we use the fact that ϕ is an automorphism of A[D5 ]
+to show that the restriction θ = φ|F is an automorphism of F . Second, we use the semidirect product
+structure A[D5 ] ≃ F ⋊ A[A4 ] to compare, on the abelianization Fab of F , the action of an element
+a ∈ A[A4 ] with the action of its image φA (a). Third, we apply the explicit Crisp–Paris formulas to this
+comparison: it turns out that the standard generators si act with the characteristic polynomial (X − 1)4 ,
+while an odd value of p would force φA (si ) to have characteristic polynomial (X + 1)4 on Fab , which
+yields a contradiction.
+Let θ = φ|F and denote F = ξ(F). We show that θ is an automorphism of F . Since F is fully
+characteristic by Lemma 4, and since φ is a lift of ϕ, we have ϕ(ξ(f )) = ξ(φ(f )) ∈ ξ(F) for every f ∈ F .
+Thus ϕ(F) ⊆ F . Applying the same argument to ϕ−1 (using some lift of ϕ−1 ), we get ϕ−1 (F) ⊆ F ,
+hence ϕ(F) = F . Since F ∩ Z(A[D5 ]) = 1, the restriction ξ|F : F → F is an isomorphism. Moreover,
+for every f ∈ F we have ξ(θ(f )) = ξ(φ(f )) = ϕ(ξ(f )). Therefore θ = (ξ|F )−1 ◦ ϕ|F ◦ ξ|F , and so θ is
+an automorphism of F .
+Let ρ : A[A4 ] → Aut(F) be the homomorphism underlying the semidirect product A[D5 ] ≃ F ⋊ A[A4 ],
+i.e. for any a ∈ A[A4 ] and any x ∈ F , we have
+                                            a x a−1 = ρ(a)(x).
+Write the image of a under φ in the semidirect product form as
+                                 φ(a) = fa · φA (a),      with     fa ∈ F.
+Applying φ to the identity a x a−1 = ρ(a)(x) gives
+                                     φ(a) φ(x) φ(a)−1 = φ(ρ(a)(x)).
+Automorphisms of the Artin group of type D5                                                                                        7
+
+
+Since x and ρ(a)(x) lie in F , and θ = φ|F , this becomes
+                                        fa φA (a) θ(x) φA (a)−1 fa−1 = θ(ρ(a)(x)).
+Equivalently,                                                   
+                                          conjfa ρ(φA (a))(θ(x)) = θ(ρ(a)(x)).
+Since this holds for every x ∈ F , we get an equality in Aut(F):
+                                            θ ◦ ρ(a) = conjfa ◦ ρ(φA (a)) ◦ θ,
+which is equivalent to
+                                          θ ◦ ρ(a) ◦ θ−1 = conjfa ◦ ρ(φA (a)).
+Denote by θ∗ and ρ∗ (a) the automorphisms of Fab = F/[F, F] induced by θ and ρ(a), respectively.
+Since the inner automorphisms conjfa act trivially on Fab , we get
+
+(2)                                            θ∗ ρ∗ (a) θ∗−1 = ρ∗ (φA (a)) ,
+for all a ∈ A[A4 ].
+Now we are going to apply explicit formulas for the action of A[A4 ] on F , which were computed in
+Crisp–Paris’ paper [CP05, Proposition 2.3] for arbitrary n.
+Crisp–Paris use a different notation for the standard generators of A[Dn ] and A[An−1 ], which they
+denote δ1 , . . . , δn , and α1 , . . . , αn−1 , respectively. We use their numbering after interchanging the two
+vertices of the fork in the Coxeter graph of D5 , and identify them with our generators for n = 5 by
+                            δi = t6−i ,     (1 ⩽ i ⩽ 5);         si = α5−i           (1 ⩽ i ⩽ 4).
+With this convention, the Crisp–Paris section αi 7→ δi+1 identifies A[A4 ] with our chosen subgroup
+⟨t1 , t2 , t3 , t4 ⟩ ⩽ A[D5 ].
+By the formulas for the isomorphism ψ : F ⋊ A[A4 ] → A[D5 ] in the proof of [CP05, Proposition 2.3],
+translated to our notation, F has free basis x1 , x2 , x3 , x4 , where
+      x1 = t5 t4−1 ,       x2 = t3 · x1 · t3−1 ,     x3 = t2 t3 · x1 · t3−1 t2−1 ,         x4 = t1 t2 t3 · x1 · t3−1 t2−1 t1−1 ,
+and the action ρ : A[A4 ] → Aut(F) is given by
+                
+                xr+1 ,         j = r,
+                
+                                                                                                             (
+                        −1
+                                                                                                               x1 ,         j = 1,
+ ρ(s4−r )(xj ) = xr+1 xr xr+1 , j = r + 1,      for 1 ⩽ r ⩽ 3,                       and      ρ(s4 )(xj ) =
+                                                                                                               x1−1 xj ,   j ̸= 1.
+                                j∈/ {r, r + 1},
+                
+                x ,
+                       j
+
+If we denote by ρ∗ : A[A4 ] → Aut(Fab ) the induced representation on Fab , it follows that in the basis
+[x1 ], . . . , [x4 ] of Fab , we have:
+                     1 −1 −1 −1
+                                    
+                                                                                         
+                  0 1 0 0                                                        0 −1
+  ρ∗ (s4 ) =                        , and ρ∗ (si ) (1 ⩽ i ⩽ 3) has blocks:               , [1], [1].
+                     0 0 1 0                                                      1 2
+                     0 0 0 1
+An easy computation shows that every ρ∗ (si ) has characteristic polynomial (X − 1)4 .
+8                                                                                                 L Paris and I Soroko
+
+
+Since π(∆D ) = ∆2 by [CP25, proof of Theorem 2.8], and since we view A[A4 ] as the subgroup
+⟨t1 , t2 , t3 , t4 ⟩ in the splitting A[D5 ] ≃ F ⋊ A[A4 ], the elements ∆D and ∆2 differ by an element of F .
+Thus conjugation by ∆D and the action ρ(∆2 ) differ on F by an inner automorphism of F , which is
+trivial on Fab .
+Now conjugation by ∆D fixes t1 , t2 , t3 and swaps t4 , t5 . Hence it sends each generator xj above to xj−1 .
+Therefore ρ∗ (∆2 ) sends each [xj ] to −[xj ], and so ρ∗ (∆2 ) = −I on Fab .
+Recall that φA has the form given in (1), φA = conjg ◦γp ◦ χεA , which means that for all 1 ⩽ i ⩽ 4
+we have: φA (si ) = g γp (χεA (si )) g−1 . Applying ρ∗ , we observe that the conjugation by g changes the
+matrix only by similarity, and hence does not change its characteristic polynomial.
+Assume now that p is odd.
+If ε = 0, then ρ∗ (γp (si )) = ρ∗ (si ∆2p ) = ρ∗ (si )ρ∗ (∆2 )p = ρ∗ (si ) (−I)p = −ρ∗ (si ).
+If ε = 1, then χA (si ) = s−1                                     2p −1
+                           i , and therefore γp (χA (si )) = (si ∆ ) . Hence
+
+                     ρ∗ (γp (χA (si ))) = ρ∗ ((si ∆2p )−1 ) = ρ∗ (si )−1 (−I)−p = −ρ∗ (si )−1 .
+In both cases ρ∗ (φA (si )) has characteristic polynomial (X + 1)4 .
+On the other hand, applying the identity (2), θ∗ ρ∗ (a) θ∗−1 = ρ∗ (φA (a)), to a = si , we see that ρ∗ (φA (si ))
+is similar to ρ∗ (si ). Hence it has characteristic polynomial (X − 1)4 , a contradiction. Therefore p must
+be even.
+
+Proof of Theorem 2 Let ϕ ∈ Aut(A[D5 ]). Arguing as in the beginning of this section, choose a lift
+φ : A[D5 ] → A[D5 ]. As above, φ preserves F and induces a non-cyclic endomorphism φA of A[A4 ].
+Hence, by the classification of non-cyclic endomorphisms of A[A4 ], we have
+                                              φA = conjg ◦γp ◦ χεA ,
+where g ∈ A[A4 ], ε ∈ {0, 1}, and γp (si ) = si ∆2p for all i. By Lemma 6, p is even.
+Let z = ∆2D , the central generator of A[D5 ]. By the computation in the proof of [CP25, Theorem 2.8],
+π(∆D ) = ∆2 , hence π(z) = ∆4 . Write p = 2q. Let ℓ : A[D5 ] → Z, sending ti 7→ 1 for all i, be the
+exponent-sum homomorphism, and define a new homomorphism φ′ : A[D5 ] → A[D5 ] by
+                                               φ′ (x) = φ(x) zm ℓ(x) ,
+for all x ∈ A[D5 ], where m = −q if ε = 0, and m = q if ε = 1. Since z is central, φ′ is indeed a
+homomorphism. Also φ′ induces the same automorphism ϕ of A[D5 ], because z ∈ Z(A[D5 ]).
+Let us compute the induced map φ′A on A[D5 ]/F ≃ A[A4 ]. For 1 ⩽ i ⩽ 4, the generator si is
+represented by ti , and therefore
+                     φ′A (si ) = π(φ′ (ti )) = π(φ(ti ) zm ) = π(φ(ti )) π(z)m = φA (si ) ∆4m .
+If ε = 0, then φA (si ) = gsi g−1 ∆2p , so φ′A (si ) = gsi g−1 ∆2p+4m = gsi g−1 . If ε = 1, then φA (si ) =
+gs−1  −1 −2p , so φ′ (s ) = gs−1 g−1 ∆−2p+4m = gs−1 g−1 . Thus in both cases φ′ = conj ◦χε , and
+   i g ∆            A i         i                       i                              A       g   A
+hence φ′A is an automorphism of A[A4 ].
+Automorphisms of the Artin group of type D5                                                             9
+
+
+Again, arguing as in the proof of Lemma 6, we see that φ′ preserves F , restricts to an automorphism of
+F , and induces an automorphism of A[D5 ]/F . Thus, by the five-lemma argument for group extensions,
+φ′ is an automorphism of A[D5 ] itself.
+Now, by Theorem 1, every automorphism of A[D5 ] belongs to Inn(A[D5 ]) ⋊ ⟨χ⟩. Since φ′ induces ϕ
+on A[D5 ], it follows that ϕ ∈ Inn(A[D5 ]) ⟨χ⟩, which shows that Aut(A[D5 ]) ⊆ Inn(A[D5 ]) ⟨χ⟩. The
+reverse inclusion is obvious, so
+                                     Aut(A[D5 ]) = Inn(A[D5 ]) ⟨χ⟩.
+By [CP25, Lemma 7.1], χ ∈    / Inn(A[D5 ]), so this product is semidirect. Finally, the center of A[D5 ]
+is trivial, hence Inn(A[D5 ]) ≃ A[D5 ] and Out(A[D5 ]) ≃ ⟨χ⟩ ≃ C2 . This finishes the proof of
+Theorem 2.
+
+
+4    An application
+
+We finish with an application to the strong twist conjecture of Jones–Mangioni–Sartori [JMS26]. We
+recall only the terminology needed here. An Artin system is a pair (A, S), where A is a group and
+S ⊂ A is an Artin generating set, i.e. S is identified with the standard generating set of an Artin group;
+see [JMS26, Definition 2.1]. We denote by ΓS the corresponding defining graph. In this section we
+use the convention of [JMS26]: two vertices s, t ∈ S = V(ΓS ) are joined with an edge whenever the
+corresponding Artin exponent ms,t is finite, including the case where ms,t = 2, while a missing edge
+means ms,t = ∞. This differs from the Coxeter graph convention used earlier in the paper, where edges
+labeled by ms,t = 2 are omitted. For X ⊆ S, we denote by AX the subgroup of A generated by X .
+The reflection set of (A, S) is RS = {gsg−1 | s ∈ S, g ∈ A}. An elementary twist is the operation defined
+in [JMS26, Definition 3.2]: one cuts the defining graph along a separating spherical indecomposable
+subgraph and conjugates one side by the corresponding Garside element. Two Artin generating sets are
+called twist equivalent if they are related by a finite sequence of elementary twists and conjugations.
+The Artin system (A, S) satisfies the strong twist conjecture if every Artin generating set U for A with
+RU = RS is twist equivalent to S. A 1-chunk of ΓS is a connected induced subgraph without separating
+vertices, maximal with these properties; see [JMS26, Definition 2.11].
+Jones–Mangioni–Sartori proved the strong twist conjecture for spherical-type Artin systems of type An ,
+Bn for n ⩾ 2, and Dn with n ⩾ 4, n ̸= 5. The case D5 was omitted because the automorphism group
+of A[D5 ] was not known [JMS26, Lemma 5.3]. We now fill this gap.
+
+Proposition 7 Let (A, S) be an Artin system of type D5 . Then (A, S) satisfies the strong twist
+conjecture.
+
+Proof Let U be an Artin generating set for A such that RU = RS . As in the proof of [JMS26,
+Lemma 5.3], the equality RU = RS implies that (A, U) is again of spherical type and has defining graph
+of type D5 . Hence there exists an automorphism ψ ∈ Aut(A) such that ψ(S) = U .
+Choose an isomorphism from the standard Artin group A[D5 ] onto A which sends the standard gen-
+erating set to S. Through this identification, Theorem 1 applies to ψ . Thus ψ is either inner or the
+10                                                                                       L Paris and I Soroko
+
+
+composition of an inner automorphism with the inversion automorphism χS , where χS (s) = s−1 for all
+s ∈ S.
+The second case is impossible. Indeed, if ψ = conjh ◦χS , then U = {hs−1 h−1 | s ∈ S}. Since
+RU = RS , every element of U is conjugate to some element of S. Hence, for each s ∈ S, the element
+s−1 is conjugate to some t ∈ S. This contradicts the exponent-sum homomorphism ℓ : A → Z, defined
+by ℓ(s) = 1 for all s ∈ S, because ℓ is constant on conjugacy classes, whereas ℓ(s−1 ) = −1 and
+ℓ(t) = 1. Therefore ψ is inner. Hence U is conjugate to S, and in particular U is twist equivalent
+to S.
+
+Corollary 8 The conclusion of [JMS26, Corollary E] remains true with type D5 included. More
+precisely, let (A, S) be an Artin system whose defining graph ΓS is connected. Suppose that, for every
+X ⊆ S spanning a 1-chunk in ΓS , the Artin system (AX , X) is one of the types listed in [JMS26,
+Corollary E], with item (5) replaced by spherical type An for n ⩾ 2, Bn for n ⩾ 2, or Dn for n ⩾ 4.
+Then (A, S) satisfies the strong twist conjecture.
+
+Proof The proof is the same as the proof of [JMS26, Corollary E]. The only missing input for
+including type D5 in item (5) was the strong twist conjecture for Artin systems of type D5 , supplied
+by Proposition 7.
+
+
+References
+
+[AC23]       B H An, Y Cho, The automorphism groups of Artin groups of edge-separated CLTTF graphs,
+             J. Korean Math. Soc. 60 (6) (2023), 1171–1213.
+[BMV25]      M A Blufstein, A Martin, N Vaskou, Homomorphisms between XL-type Artin groups, preprint,
+             2025, arXiv:2410.19091v2.
+[BS72]       E Brieskorn, K Saito, Artin-Gruppen und Coxeter-Gruppen, Invent. Math. 17 (1972), 245–271.
+[Cas09]      F Castel, Représentations géométriques des groupes de tresses, Ph. D. Thesis, Université de
+             Bourgogne, 2009.
+[Cas16]      F Castel, Geometric representations of the braid groups, Astérisque No. 378 (2016).
+[CP25]       F Castel, L Paris, Endomorphisms of Artin groups of type D, Algebr. Geom. Topol. 25 (2025),
+             no 7, 3975–4008.
+[CC05]       R Charney, J Crisp, Automorphism groups of some affine and finite type Artin groups, Math. Res.
+             Lett. 12 (2005), no. 2–3, 321–333.
+[CKM23]      L Chen, K Kordek, D Margalit, Homomorphisms between braid groups, preprint, 2023,
+             arXiv:1910.00712v2.
+[CW02]       A M Cohen, D B Wales, Linearity of Artin groups of finite type, Israel J. Math. 131 (2002),
+             101–123.
+[Cri05]      J Crisp, Automorphisms and abstract commensurators of 2-dimensional Artin groups, Geom.
+             Topol. 9 (2005), 1381–1441.
+[CP02]       J Crisp, L Paris, Artin groups of type B and D, preprint, 2002. arXiv:math/0210438.
+[CP05]       J Crisp, L Paris, Artin groups of type B and D, Adv. Geom. 5 (2005), no. 4, 607–636.
+Automorphisms of the Artin group of type D5                                                                11
+
+
+[Day09]      M B Day, Peak reduction and finite presentations for automorphism groups of right-angled Artin
+             groups, Geom. Topol. 13 (2009), 817–855.
+[Dig03]      F Digne, On the linearity of Artin braid groups, J. Algebra 268 (2003), no. 1, 39–57.
+[DG81]       J L Dyer, E K Grossman, The automorphism groups of the braid groups, Amer. J. Math. 103
+             (1981), no. 6, 1151–1169.
+[GHMR00]     N D Gilbert, J Howie, V Metaftsis, E Raptis, Tree actions of automorphism groups, J. Group
+             Theory 3 (2000), no. 2, 213–223.
+[HOV24]      J Huang, D Osajda, N Vaskou, Rigidity and classification results for large-type Artin groups,
+             preprint, 2024. arXiv:2407.19940.
+[JMS26]      O Jones, G Mangioni, G Sartori, A combination theorem for the twist conjecture for Artin groups,
+             J. Algebra 701 (2026), 436–476.
+[Lau95]      M R Laurence, A generating set for the automorphism group of a graph group, J. London Math.
+             Soc. (2) 52 (1995), no. 2, 318–334.
+[Ore24]      S Y Orevkov, Homomorphisms of commutator subgroups of braid groups with small number of
+             strings, Ann. Fac. Sci. Toulouse Math. (6) 33 (2024), no. 1, 105–121.
+[PS25a]      L Paris, I Soroko, Endomorphisms of Artin groups of type A   en , J. Algebra 678 (2025), 809–830.
+[PS25b]      L Paris, I Soroko, Endomorphisms of Artin groups of type Bn , J. Algebra 678 (2025), 831–861.
+[Ser89]      H Servatius, Automorphisms of graph groups, J. Algebra 126 (1989), no. 1, 34–60.
+[Sor21]      I Soroko, Artin groups of types F4 and H4 are not commensurable with that of type D4 , Topology
+             Appl. 300 (2021), Paper No. 107770, 15 pp.
+[Vas25]      N Vaskou, Automorphisms of large-type free-of-infinity Artin groups, Geom. Dedicata 219 (2025),
+             Paper No. 16, 20 pp.
+
+Luis Paris, Université Bourgogne Europe, CNRS, IMB, UMR 5584, 21000 Dijon, France
+Ignat Soroko, Department of Mathematics, Southern Methodist University, Dallas, TX 75205, USA
+lparis@u-bourgogne.fr, isoroko@smu.edu
+
