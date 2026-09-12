@@ -2577,3 +2577,27 @@ preferred review route for candidate 19.62; the earlier full proof is
 preserved unchanged. Candidate count stays 42. The stronger theorem also
 gives 2 A_p A_p B_-p inside B_p by polarization. General 19.61 is still
 unresolved, and whether this inclusion helps there is being examined.
+
+
+## 2026-09-12T09:12:22.652251+00:00 — full affirmative candidate for 19.61; candidate 43
+
+Adjoining one element a^2 b at root r preserves the original derived
+carpet. The complete preparation expands both inputs of every ordered
+commutator rule with that rule's original constant. The first-argument
+pilot (2f54b3) is retained; the full version strengthens 36 G2 target
+coefficients and passes all 300 targets (8687dc). An independent sparse
+polynomial expansion covers 416 substitutions and 600 terms and checks
+all 3,191 derivation nodes, rejecting twelve mutations. Iterating the
+single adjoining operation and taking directed unions gives a weakly
+supplemented carpet C with unchanged derived family B. The known square
+criterion closes C. The actual root closure D lies between A and C,
+so every commutator parameter for D lies in B inside A inside D.
+This proves both that D is a carpet and that its derived carpet is B.
+Independent finite completion agrees with every one of the 193,805 saved
+carpets (2087f1): 38,632 completions enlarge, and 20,300 are strictly
+larger than the actual group closure, illustrating why equality with C
+must not be assumed. The 395-file final auditor replays all foundations,
+preparation, certificates and finite controls, exiting zero (379a54).
+The complete candidate count is 43, with priority and outside review
+pending. At 09:06:11 UTC the six n7 workers have checked 38,980,000 of
+42,891,332 nodes and use 54,732,532 KiB combined RSS; none is complete.

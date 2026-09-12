@@ -1,0 +1,59 @@
+[
+  {
+    "type": "a2",
+    "cases": 12,
+    "command": [
+      "results/19.62-derive-types",
+      "results/19.61-a2-square-completion-input.txt",
+      "1",
+      "12",
+      "results/19.61-a2-square-completion-certificate.jsonl"
+    ],
+    "returncode": 0,
+    "last_lines": [
+      "TARGET 9 1 0 0 0 0",
+      "TARGET 10 1 0 0 0 0",
+      "TARGET 11 1 0 0 0 0",
+      "TARGET 12 1 0 0 0 0",
+      "PASS_1962_MONOMIAL_INTERVAL 1 12 12 0"
+    ]
+  },
+  {
+    "type": "b2",
+    "cases": 48,
+    "command": [
+      "results/19.62-derive-types",
+      "results/19.61-b2-square-completion-input.txt",
+      "1",
+      "48",
+      "results/19.61-b2-square-completion-certificate.jsonl"
+    ],
+    "returncode": 0,
+    "last_lines": [
+      "TARGET 45 1 1 0 1 0",
+      "TARGET 46 1 1 0 1 0",
+      "TARGET 47 1 0 0 0 0",
+      "TARGET 48 1 1 0 1 0",
+      "PASS_1962_MONOMIAL_INTERVAL 1 48 48 0"
+    ]
+  },
+  {
+    "type": "g2",
+    "cases": 240,
+    "command": [
+      "results/19.62-derive-types",
+      "results/19.61-g2-square-completion-input.txt",
+      "1",
+      "240",
+      "results/19.61-g2-square-completion-certificate.jsonl"
+    ],
+    "returncode": 0,
+    "last_lines": [
+      "TARGET 237 1 0 1 0 1",
+      "TARGET 238 1 0 0 0 0",
+      "TARGET 239 1 0 0 0 0",
+      "TARGET 240 1 0 0 0 0",
+      "PASS_1962_MONOMIAL_INTERVAL 1 240 240 0"
+    ]
+  }
+]
