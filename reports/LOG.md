@@ -2457,3 +2457,14 @@ congruence classes of all 40,105 carpet indices. Together with six
 14 GiB n7 workers and four 512 MiB kernel exporters, GAP workspace
 ceilings total 94 GiB. The separate Python preparation replay uses
 small additional memory; actual process RSS remains much lower.
+
+
+## 2026-09-12T05:01:54.057785+00:00 — F9 preparation replay passes; all order-1536 kernels exported
+
+The F9 preparation auditor reproduces all 40,105 inputs and the
+66,430-point orbit exactly, excluding only elapsed time (exit zero
+8bf876). Its four search workers continue. The order-1536 kernel export
+controller and all four GAP children also exit zero (17e16f), exporting
+all 30,414 actual kernel tables for 5,006 groups. Each completed shard
+was compressed only after its GAP exit was observed; the independent
+table audit is now running against the completed compressed files.
