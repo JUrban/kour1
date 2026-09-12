@@ -2556,3 +2556,24 @@ priority and outside review are pending. The already known 19.63 criterion
 is explicitly credited and adds no separate count. General 19.61 remains
 unresolved. At 08:43:54 UTC the six n7 workers have checked 38,210,000
 of 42,891,332 nodes, with no completed shard and 53,912,308 KiB RSS.
+
+
+## 2026-09-12T09:01:25.670743+00:00 — stronger rank-two proof of 19.62, with nineteen printed derivations
+
+The stronger inclusion A_p^2 B_-p inside B_p reduces each target to
+three variables in a rank-two subsystem. All 104 targets in A2, B2 and
+G2 pass (0712e7). The initial runner named a nonexistent binary and
+exited one before starting any child (1da763); its record is preserved.
+Independent ordinary-integer checks verify 763 original nodes (462962).
+Removing redundant gcd edges gives 655 nodes, at most nine per proof;
+19 representatives are written out completely (4aaf70). Determinant
+solutions enumerate every root equation without an exponent cutoff.
+The Weyl groups of orders 6, 8 and 12 preserve every absolute rule and
+transport all targets to the displayed ones; both certificate versions
+pass (b2ac3a). The 291-file audit replays integral root models, polynomial
+constants, target generation, proof shortening and the printed appendix,
+then checks every certificate, exiting zero (54242a). This is the
+preferred review route for candidate 19.62; the earlier full proof is
+preserved unchanged. Candidate count stays 42. The stronger theorem also
+gives 2 A_p A_p B_-p inside B_p by polarization. General 19.61 is still
+unresolved, and whether this inclusion helps there is being examined.
