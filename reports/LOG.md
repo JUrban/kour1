@@ -2292,3 +2292,17 @@ retry exits0 and exactly reproduces all order96 rows and counts. Eight
 six14GiB certificate verifiers:14 compute processes,92GiB workspace
 ceiling, substantially smaller actual RSS. A24-file launch/source manifest
 passes; no order768 result is claimed while the processes run.
+
+
+## 2026-09-12T03:30:17.749704+00:00 — 21.102 source and nilpotent-normal bound
+
+Olshanskii2606.04577v3 still asks the exact general existence and
+integrality questions. All group arguments in Sections1–3 and the group
+examples/questions were read; pp.1 and6 viewed. The coordinate partition
+argument extends from abelian to nilpotent normal N: boundedly many
+quotient lifts generate a bounded group K, whose conjugates of the
+remaining generators generate a nilpotent kernel of polynomial logarithmic
+size. This yields log|F_n(G)|<=A n^c [G:N]^n and an integral limit when
+G/N has a nonabelian monolith. The partial proof and six source hashes
+are archived; general21.102 and priority remain unresolved. A broader
+early-morning triage note records unproved leads and rejected shortcuts.
