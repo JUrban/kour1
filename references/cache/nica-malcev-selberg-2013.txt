@@ -1,0 +1,460 @@
+                                              LINEAR GROUPS - MALCEV’S THEOREM AND SELBERG’S
+                                                                  LEMMA
+
+                                                                                  BOGDAN NICA
+arXiv:1306.2385v1 [math.GR] 10 Jun 2013
+
+
+
+
+                                                 Abstract. These notes give an account of two fundamental facts concerning finitely
+                                                 generated linear groups: Malcev’s theorem on residual finiteness, and Selberg’s lemma
+                                                 on virtual torsion-freeness.
+
+
+
+
+                                                                                  Introduction
+                                             A group is linear if it is (isomorphic to) a subgroup of GLn (K), where K is a field.
+                                          If we want to specify the field, we say that the group is linear over K. The following
+                                          theorems are fundamental, at least from the perspective of combinatorial group theory.
+                                          Theorem (Malcev 1940). A finitely generated linear group is residually finite.
+                                          Theorem (Selberg 1960). A finitely generated linear group over a field of zero charac-
+                                          teristic is virtually torsion-free.
+                                             A group is residually finite if its elements are distinguished by the finite quotients
+                                          of the group, i.e., if each non-trivial element of the group remains non-trivial in a finite
+                                          quotient. A group is virtually torsion-free if some finite-index subgroup is torsion-
+                                          free. As a matter of further terminology, Selberg’s theorem is usually referred to as
+                                          Selberg’s lemma, and Malcev is alternatively transliterated as Mal’cev or Maltsev.
+                                          Contents. The main body of this text has three sections. In the first one we discuss
+                                          residual finiteness and virtual torsion-freeness, with emphasis on their relation to a
+                                          third property - roughly speaking, a “p-adic” refinement of residual finiteness. The
+                                          main theorem we are actually interested in, due to Platonov (1968), gives such refined
+                                          residual properties for finitely generated linear groups. Both Malcev’s theorem and
+                                          Selberg’s lemma are consequences of this more powerful, but lesser known, theorem of
+                                          Platonov. The second section is devoted to SLn (Z). This example is too important,
+                                          too interesting, too much fun to receive anything less than a scenic analysis. In the last
+                                          section we return to a proof of Platonov’s theorem.
+                                          Comments. Besides the Russian original [2], the only other source in the literature for
+                                          Platonov’s theorem that I am aware of is the account of Wehrfritz in [5, Chapter 4].
+                                          The proof presented herein is, I think, considerably simpler. It is mainly influenced by
+                                          the discussion of Malcev’s theorem in the lecture notes by Stallings [4], and it is quite
+                                          similar to Platonov’s own arguments in [2].
+                                             An alternative road to Selberg’s lemma is to use valuations. This is the approach
+                                          taken by Cassels in Local fields (Cambridge University Press 1986), and by Ratcliffe in
+                                          Foundations of hyperbolic manifolds (2nd edition, Springer 2006).
+                                            Date: June 2013.
+                                                                                          1
+2                                      BOGDAN NICA
+
+  I thank, in chronological order, Andy Putman for a useful answer via mathoverflow.net,
+Jean-François Planchat for a careful reading and constructive comments, and Vadim
+Alekseev for a translation of Platonov’s article.
+Convention. In this text, rings are commutative and unital.
+
+                 1. Virtual and residual properties of groups
+   Virtual torsion-freeness and residual finiteness are instances of the following terminol-
+ogy. Let P be a group-theoretic property. A group is virtually P if it has a finite-index
+subgroup enjoying P. A group is residually P if each non-trivial element of the group
+remains non-trivial in some quotient group enjoying P. The virtually P groups and the
+residually P groups contain the P groups. It may certainly happen that a property is
+virtually stable (e.g., finiteness) or residually stable (e.g., torsion-freeness).
+   Besides virtual torsion-freeness and residual finiteness, we are interested in the hybrid
+notion of virtual residual p-finiteness where p is a prime. This is obtained by
+residualizing the property of being a finite p-group, followed by the virtual extension.
+The notion of virtual residual p-finiteness has, in fact, the leading role in this account
+for it relates both to residual finiteness and to virtual torsion-freeness.
+Lemma 1.1 (“Going down”). If P is inherited by subgroups, then both virtually P and
+residually P are inherited by subgroups. In particular, virtual torsion-freeness, residual
+finiteness, and virtual residual p-finiteness are inherited by subgroups.
+Lemma 1.2 (“Going up”). Virtually P passes to finite-index supergroups. In partic-
+ular, both virtual torsion-freeness and virtual residual p-finiteness pass to finite-index
+supergroups. Residual finiteness passes to finite-index supergroups.
+   Observe that residual p-finiteness, just like torsion-freeness, is not virtually stable.
+Residual finiteness does pass to finite-index supergroups because of the following equiv-
+alent description: a group is residually finite if and only if every non-trivial element lies
+outside of a finite-index subgroup.
+   Residual p-finiteness trivially implies residual finiteness. Going up, we obtain:
+Proposition 1.3. Virtual residual p-finiteness for some prime p implies residual finite-
+ness.
+   On the other hand, residual p-finiteness imposes torsion restrictions. Namely, in a
+residually p-finite group, the order of a torsion element must be a p-th power. Hence,
+if a group is residually p-finite and residually q-finite for two different primes p and q,
+then it is torsion-free. Virtualizing this statement, we obtain:
+Proposition 1.4. Virtual residual p-finiteness and virtual residual q-finiteness for two
+different primes p and q imply virtual torsion-freeness.
+  In light of Propositions 1.3 and 1.4, we see that Malcev’s theorem and Selberg’s
+lemma are consequences of the following:
+Theorem (Platonov 1968). Let G be a finitely generated linear group over a field K.
+If char K = 0, then G is virtually residually p-finite for all but finitely many primes p.
+If char K = p, then G is virtually residually p-finite.
+                LINEAR GROUPS - MALCEV’S THEOREM AND SELBERG’S LEMMA                           3
+
+                                      2. Essellennzee
+  In this section we examine SLn (Z), where n ≥ 2. We start with a most familiar fact.
+Proposition 2.1. SLn (Z) is generated by the elementary matrices {1n + eij : i 6= j}.
+Proof. In general, if A is a euclidean domain then SLn (A) is generated by the elementary
+matrices {1n + a · eij : a ∈ A, i 6= j}. The first step is to turn any matrix in SLn (A)
+into a diagonal one via elementary operations. Using division with remainder, and the
+euclidean map on A as a way of measuring the decrease in complexity, we can insure
+that a single non-zero entry, say a, remains in the first row. Column swapping brings a
+in position (1, 1), and row reductions using the invertible a turn all other entries in the
+first column to 0. Now repeat this procedure for the remaining (n − 1) × (n − 1) block.
+The second step is to bring a diagonal matrix of determinant 1 to the identity matrix
+1n via elementary operations. This is done using the transition
+              a 0         a a              1      a              1 a           1 0
+                                                                              
+                                                                                    .
+              0 b         0 b          (a−1 − 1)b b              0 ab          0 ab
+Finally, if the additive group of A is generated by {a1 , . . . , ak }, then the corresponding
+matrices {1n + a1 · eij , . . . , 1n + ak · eij : i 6= j} generate all the elementary matrices. 
+
+  Let N be a positive integer. Reduction modulo N defines a group homomorphism
+SLn (Z) → SLn (Z/N ), which enjoys the following remarkable property:
+Lemma 2.2. The congruence homomorphism SLn (Z) → SLn (Z/N ) is onto.
+Proof. Since SLn (Z) is generated by the elementary matrices, and the elementary ma-
+trices are mapped to the elementary matrices by the congruence homomorphism, its
+surjectivity is equivalent to the elementary generation of SLn (Z/N ). The Chinese Re-
+                                                            si
+mainder Theorem provides     a decomposition       ≃        i into local rings, mirroring
+                                                     Q
+                           Q si
+                                               Z/N      Z/p
+the decomposition N = pi into primes. Direct products preserve elementary gen-
+eration, and we now show that it holds over local rings. This is actually easier than
+elementary generation for euclidean domains. Let A be a local ring and pick a matrix in
+SLn (A). Some first-row entry is not in π, the maximal ideal of A, so it is invertible in A.
+Column swapping brings this element in the (1, 1)-position, and then the first row and
+the first column can be cleared. The rest goes as in the proof of Proposition 2.1.        
+
+  The kernel of the congruence homomorphism
+                                                   
+         Γ(N ) := ker SLn (Z) → SLn (Z/N ) = X ∈ SLn (Z) : X ≡ 1n mod N
+is the principal congruence subgroup of level N . In particular, Γ(1) = SLn (Z).
+   The principal congruence subgroups are normal, finite-index subgroups of SLn (Z).
+The following lemma provides the formula for their index.
+Lemma 2.3. The index of Γ(N ) is given by
+                                                              n
+                                                            YY                  
+                                                        2
+                 [Γ(1) : Γ(N )] = |SLn (Z/N )| = N n −1                 (1 − p−i ) .
+                                                            p|N   i=2
+4                                          BOGDAN NICA
+
+Proof. First, recall that
+                         1                  1 n−1                  2
+                                                                       n
+                                                    (pn − pi ) = pn −1 (1 − p−i ).
+                                                Y                     Y
+        |SLn (Z/p)| =       |GLn (Z/p)| =
+                        p−1               p − 1 i=0                   i=2
+
+Next, we find the size of SLn (Z/pk ). Consider again the general case of a local ring A
+with maximal ideal π. The congruence map GLn (A) → GLn (A/π) is onto: any lift to
+A of a matrix in GLn (A/π) has determinant not in π, i.e., invertible in A. Furthermore,
+the kernel of the congruence map GLn (A) → GLn (A/π) is 1n + Mn (π) since a matrix
+congruent to 1n modulo π has determinant in 1 + π, hence invertible in A. Thus, if A
+is also finite, then
+                                                    2
+                              |GLn (A)| = |π|n · |GLn (A/π)|.
+Now |GLn | = |GL1 | · |SLn | over any ring, and |GL1 (A)| = |π| · |GL1 (A/π)|, so
+                                                2
+                              |SLn (A)| = |π|n −1 · |SLn (A/π)|.
+Returning to the particular case we are interested in, we obtain
+                                                                     n
+                                       2                        2
+              |SLn (Z/pk )| = p(k−1)(n −1) |SLn (Z/p)| = (pk )n −1       (1 − p−i ).
+                                                                     Y
+
+                                                                     i=2
+Finally, the size of SLn (Z/N ) is obtained by multiplying the above formula over the
+prime decomposition of N .                                                         
+   Bass - Lazard - Serre (Bull. Amer. Math. Soc. 1964) and Mennicke (Ann. Math.
+1965) have shown that, for n ≥ 3, every finite-index subgroup of SLn (Z) contains some
+principal congruence subgroup. This Congruence Subgroup Property is definitely not
+true for n = 2. The first one to state this failure was Klein (1880), and proofs were
+subsequently provided by Fricke (1886) and Pick (1886). It is in fact known by now that
+it is an exceptional feature for a finite-index subgroup of SL2 (Z) to contain a principal
+congruence subgroup.
+   The principal congruence subgroups are organized according to the divisibility of their
+levels: Γ(M ) ⊇ Γ(N ) ⇔ M |N , that is, “to contain is to divide”. This puts the emphasis
+on the prime stratum {Γ(p) : p prime}, and on the descending chains {Γ(pk ) : k ≥ 1}
+corresponding to each prime p. Observe that ∩p Γ(p) = {1n }, and that ∩k Γ(pk ) = {1n }
+for each prime p, meaning that the elements of SLn (Z) can be distinguished both along
+the prime stratum, as well as along each descending p-chain. Thus:
+Proposition 2.4. SLn (Z) is residually finite.
+    Clearly SLn (Z) is not torsion-free. For example,
+                                      0 −1              0 −1
+                                                         
+                                           ,
+                                      1 0               1 1
+are elements of order 4, respectively 6, in SL2 (Z). However, we have:
+Proposition 2.5. SLn (Z) is virtually torsion-free.
+    This is an immediate consequence of the following fact, due to Minkowski (1887):
+Lemma 2.6. Γ(N ) is torsion-free provided N ≥ 3.
+              LINEAR GROUPS - MALCEV’S THEOREM AND SELBERG’S LEMMA                          5
+
+Proof. It suffices to show that Γ(4) and Γ(p), where p ≥ 3 is a prime, are torsion-free.
+Let p be any prime, and assume that X ∈ Γ(p) is a non-trivial element having finite
+order. Up to replacing X by a power of itself, we may assume that X q = 1n for a prime
+q. Then
+                                            q         !
+                                            X q
+                            −q(X − 1n ) =             (X − 1n )i .
+                                            i≥2
+                                                  i
+
+Let ps , where s ≥ 1, be the highest power of p dividing all the entries of X − 1n . The
+left hand side of the displayed identity is divisible by at most ps if q 6= p, and by at most
+ps+1 if q = p. The right hand side is divisible by p2s , and even by p2s+1 if q = p ≥ 3.
+Hence q = p = 2 and s = 1. The conclusion that p = 2 and s = 1 means that Γ(2) is the
+only one in the prime stratum which harbours torsion, and that Γ(4), its successor in
+the descending 2-chain, is free of torsion. The conclusion that q = 2 means that torsion
+elements in Γ(2) have order a power of 2. As X 2 ∈ Γ(4) whenever X ∈ Γ(2), and Γ(4)
+is torsion-free, it follows that non-trivial torsion elements in Γ(2) have order 2.        
+
+   This lemma can be used to control the torsion spectrum - that is, the possible or-
+ders of torsion elements - in SLn (Z). Let us illustrate the basic idea in the simplest
+case, when n = 2. Given a group homomorphism, the torsion spectra of its domain,
+kernel, and range are trivially related by τ (dom) ⊆ τ (ker) · τ (ran). In the case of a con-
+gruence homomorphism, this reads as τ (SL2 (Z)) ⊆ τ (Γ(N )) · τ (SL2 (Z/N )). If N = 3
+then τ (Γ(3)) = {1}, and it can be checked that τ (SL2 (Z/3)) = {1, 2, 3, 4, 6}. Some-
+what easier, in fact, is to let N = 2: then τ (Γ(2)) = {1, 2}, and it is immediate that
+τ (SL2 (Z/2)) = {1, 2, 3}. We conclude that τ (SL2 (Z)) ⊆ {1, 2, 3, 4, 6}. Equality holds,
+actually, since there are elements of order 4 and 6 in SL2 (Z).
+   The presence of a torsion element with composite order, namely 6, implies that
+SLn (Z) is not residually p-finite for any prime p. As with torsion-freeness, this is easily
+remedied by passing to a finite-index subgroup:
+Proposition 2.7. SLn (Z) is virtually residually p-finite for each prime p.
+  More precisely, we show:
+Lemma 2.8. Γ(N ) is residually p-finite for each prime p dividing N .
+Proof. It suffices to prove that, for each prime p, Γ(p) is residually p-finite. To that
+end, we claim that each successive quotient Γ(pk )/Γ(pk+1 ) in the descending chain
+{Γ(pk ) : k ≥ 1} is a p-group. This is seen most directly by observing that each element
+in Γ(pk )/Γ(pk+1 ) has order p: for any matrix 1n + pk X ∈ Γ(pk ) we have
+                                            p  !
+                              k   p
+                                            X p ki
+                      (1n + p X) = 1n +               p X i ∈ Γ(pk+1 ).
+                                            i=1
+                                                  i
+
+   Another way is to use the formula for the index (Lemma 2.3), which yields that
+                           2
+Γ(pk )/Γ(pk+1 ) has size pn −1 .
+   A third, more involved argument shows that each successive quotient Γ(pk )/Γ(pk+1 )
+                            2
+is isomorphic to (Z/p, +)n −1 . Start by noting that, for any matrix 1n + pk X ∈ Γ(pk ),
+6                                        BOGDAN NICA
+
+we have 1 = det(1n + pk X) = 1 + pk tr(X) mod p2k ; in particular, p divides tr(X). Let
+sln (Z/p) denote the additive group of traceless n × n matrices over Z/p. Then the map
+                    φk : Γ(pk ) → sln (Z/p),    φk (1n + pk X) = X mod p
+is well-defined. Firstly, φk is ahomomorphism: for 1n + pk X and 1n + pk Y in Γ(pk ) we
+have φk (1n + pk X)(1n + pk Y ) = X + Y + pk XY mod p = X + Y mod p. Secondly, the
+kernel of φk is Γ(pk+1 ). Thirdly, we claim that φk is onto. The target group sln (Z/p)
+is generated by the n2 − n off-diagonal matrix units {eij : 1 ≤ i 6= j ≤ n} together with
+the n − 1 diagonal differences {eii − ei+1 i+1 : 1 ≤ i ≤ n − 1}. It is immediate that the
+off-diagonal matrix units are in the image of φk , as φk (1n + pk eij ) = eij for i 6= j. To
+obtain the diagonal differences, consider an n × n matrix having the 2 × 2-block
+                                                        !
+                                        1 + pk   pk
+                                         −p k  1 − pk
+on the diagonal, all the other non-zero entries being 1’s along the remaining diagonal
+slots. This is a matrix in Γ(pk ) which is mapped by φk to eii − ei+1 i+1 + ei i+1 − ei+1 i .
+As ei i+1 and ei+1 i are in the image of φk , the same is true for eii − ei+1 i+1 .      
+Remark 2.9. Scratch most properties of SLn (Z) and you will find a great discrepancy
+between SL2 (Z) and SLn≥3 (Z) lurking underneath. For the discussion at hand, the
+difference turns out to be the following: SL2 (Z) admits finite-index subgroups which
+are residually p-finite for all primes p, whereas in SLn≥3 (Z) every finite-index subgroup
+is residually p-finite for only finitely many primes p. The question which clarifies and
+sharpens this contrast is whether principal congruence subgroups can be residually p-
+finite for a prime p not dividing the level.
+   In SL2 (Z), the answer is that Γ(2) is residually p-finite for p = 2 only, but Γ(N ) with
+N ≥ 3 is residually p-finite for all primes p. The exceptional case is due to the 2-torsion
+in Γ(2). In the higher level case there is no torsion. Now a torsion-free subgroup of
+SL2 (Z) is free, since SL2 (Z) acts on a tree with finite vertex stabilizers and without
+inversion (see I.§4 of Serre’s Trees, Springer 1980). Thus Γ(N ) with N ≥ 3 is free. We
+may then use mutual abstract embeddings to conclude that Γ(N ) with N ≥ 3, in fact
+every free group, is residually p-finite for all primes p.
+   In SLn≥3 (Z), the answer is that Γ(N ) is residually p-finite if and only if p divides N .
+Once we know this, the Congruence Subgroup Property will imply that each finite-index
+subgroup of SLn≥3 (Z) is residually p-finite for only finitely many primes p. Now let us
+justify the answer, specifically the forward implication. The proof hinges on computing
+the abelianization of Γ(N ), and this is essentially due to Lee and Szczarba (Invent.
+Math. 1976). As in the proof of Lemma 2.8, there is a well-defined homomorphism
+                       Γ(N ) → sln (Z/N ),     1n + N X 7→ X mod N
+                                                                                  2
+which is furthermore onto. Thus Γ(N )/Γ(N 2 ) ≃ sln (Z/N ) ≃ (Z/N, +)n −1 , and the
+commutator subgroup [Γ(N ), Γ(N )] is contained in Γ(N 2 ). On the other hand, we have
+1n + N 2 eik = [1n + N eij , 1n + N ejk ] ∈ [Γ(N ), Γ(N )] for distinct i, j, k. At this point we
+use the fact that the principal congruence subgroup of level M is normally generated
+by {1n + M eij : i 6= j}, the M -th powers of the elementary matrices. This is what
+Mennicke actually proved in his approach to the Congruence Subgroup Property. As
+              LINEAR GROUPS - MALCEV’S THEOREM AND SELBERG’S LEMMA                          7
+
+pointed out soon after by Bass - Milnor - Serre (Publ. Math. IHES 1967), this fact is
+equivalent to the Congruence Subgroup Property. It follows that Γ(N 2 ) is contained
+in [Γ(N ), Γ(N )], by the normality of Γ(N ). Summarizing, [Γ(N ), Γ(N )] = Γ(N 2 ), so
+                                               2
+that the abelianization of Γ(N ) is (Z/N, +)n −1 . Finally, if Γ(N ) maps onto a non-
+trivial finite p-group then the abelianization of Γ(N ) maps onto the corresponding
+abelianization, which is a non-trivial p-group, and we conclude that p divides N .
+
+
+                          3. Proof of Platonov’s theorem
+   Let G be a finitely generated linear group over a field K, say G ≤ GLn (K). In K,
+consider the subring A generated by the multiplicative identity 1 and the matrix entries
+of a finite, symmetric set of generators for G. Thus A is a finitely generated domain,
+and G ≤ GLn (A). Platonov’s theorem is then a consequence of the following:
+
+Theorem 3.1. Let A be a finitely generated domain. If char A = 0, then GLn (A)
+is virtually residually p-finite for all but finitely many primes p. If char A = p, then
+GLn (A) is virtually residually p-finite.
+
+   The proof of Theorem 3.1 is a straightforward variation on the example of SLn (Z),
+as soon as we know the following facts:
+
+Lemma 3.2. Let A be a finitely generated domain. Then the following hold:
+      i. A is noetherian.
+     ii. ∩k I k = 0 for any ideal I 6= A.
+    iii. If A is a field, then A is finite.
+    iv. The intersection of maximal ideals of A is 0.
+     v. If char A = 0, then only finitely many primes p = p · 1 are invertible in A.
+
+  Let us postpone the proof of Lemma 3.2 for the moment, and see how to obtain
+Theorem 3.1. The principal congruence subgroup of GLn (A) corresponding to an ideal
+I of A is defined by
+                                                               
+                           Γ(I) = ker GLn (A) → GLn (A/I) .
+
+If π is a maximal ideal then A/π is a finite field, by 3.2 iii, so Γ(π) has finite index in
+GLn (A). Also ∩π Γ(π) = {1n } as π runs over the maximal ideals of A, by 3.2 iv. This
+shows that GLn (A) is residually finite, thereby proving Malcev’s theorem.
+   We claim that π k /π k+1 is finite for each k ≥ 1. In general, if M is an R-module which
+is annihilated by an ideal I – in the sense that IM = 0 – then M is also an R/I-module
+in a natural way: namely, define r · m := r · m for r ∈ R and m ∈ M . Furthermore, if
+M is finitely generated as an R-module then M is finitely generated as an R/I-module.
+In the case at hand, the A-module π k is finitely generated since A is noetherian, so the
+A-module π k /π k+1 is also finitely generated. Therefore π k /π k+1 is finite dimensional
+as an A/π-module. As A/π is finite, π k /π k+1 is finite as well.
+   The ring A/π k is finite for each k ≥ 1, so each Γ(π k ) has finite index in GLn (A). Fur-
+thermore, ∩k Γ(π k ) = {1n } by 3.2 ii. (This shows once again that GLn (A) is residually
+finite.) Let p be the characteristic of A/π, so p ∈ π. Then Γ(π k )/Γ(π k+1 ) is a p-group:
+8                                           BOGDAN NICA
+
+for X ∈ Γ(π k ) we have
+                                         p          !
+                             p
+                                         X p
+                           X = 1n +                 (X − 1n )i ∈ Γ(π k+1 ).
+                                         i=1
+                                                i
+To conclude, GLn (A) is virtually residually p-finite for each prime p not invertible in A.
+By 3.2 v, this happens for all but finitely many primes p in the zero characteristic case.
+In characteristic p, there is only such prime, namely p itself. Theorem 3.1 is proved.
+   We now return to the proof of the lemma.
+Proof of Lemma 3.2. The first two points are standard: i) follows from the Hilbert Basis
+Theorem, and ii) is the Krull Intersection Theorem for domains.
+  iii) We use the following fact:
+        Let F ⊆ F (u) be a field extension with F (u) finitely generated as a ring.
+        Then F ⊆ F (u) is a finite extension and F is finitely generated as a ring.
+Here is how we use this fact. Let F be the prime field of A and let a1 , . . . , aN be
+generators of A as a ring. Thus A = F (a1 , . . . , aN ). Going down the chain
+                      A = F (a1 , . . . , aN ) ⊇ F (a1 , . . . , aN −1 ) ⊇ . . . ⊇ F
+we obtain that F ⊆ A is a finite extension, and that F is finitely generated as a ring.
+Then F is a finite field, as Q is not finitely generated as a ring, and so A is finite.
+   Now here is how we prove the fact. Assume that u is transcendental over F , i.e., F (u)
+is the field of rational functions in u. Let P1 /Q1 , . . . , PN Q N
+                                                                     /Q generate F (u) as a ring,
+where Pi , Qi ∈ F [u]. The multiplicative inverse      of   1+u·      Qi isQa polynomial expression
+in the Pi /Qi ’s, which can be written Q        as R/ Qsi i . Therefore Qsi i = (1Q+ u · Qi )R
+                                                     Q                                     Q
+
+in F [u]. But this is impossible, since Qsi i is relatively prime to 1 + u · Qi .
+   Thus u is algebraic over F . Let X d + α1 X d−1 + · · · + αd be the minimal polynomial
+of u over F   . Let also a1 , . . . , aN be ring generators of F (u) = F [u]. We may write
+each ai as 0≤m≤d−1 βi,m um , with βi,m ∈ F . We claim that the αj ’s and the βi,m ’s are
+             P
+
+ring generators of F . Let c ∈ F . Then c is a polynomial in a1 , . . . , aN over F , hence a
+polynomial in u over the subring of F generated by the βi,m ’s, hence a polynomial in
+u of degree less than d over the subring of F generated by the αj ’s and the βi,m ’s. By
+the linear independence of {1, u, . . . , ud−1 }, the latter polynomial is actually of degree
+0. Hence c ends up in the subring of F generated by the αj ’s and the βi,m ’s.
+   iv) Let a 6= 0 in A. To find a maximal ideal of A not containing a, we rely on the basic
+avoidance: maximal ideals do not contain invertible elements. Consider the localization
+A′ = A[1/a]. Let π ′ be a maximal ideal in A′ , so a ∈        / π ′ . The restriction π = π ′ ∩ A is
+an ideal in A, and a ∈  / π. We show that π is maximal. The embedding A ֒→ A′ induces
+an embedding A/π ֒→ A′ /π ′ . As A′ /π ′ is a field which is finitely generated as a ring, in
+follows from iii) that A′ /π ′ is finite field. Therefore the subring A/π is a finite domain,
+hence a field as well.
+   v) We shall use Noether’s Normalization Theorem, which says the following.
+         Let R be a finitely generated algebra over a field F ⊆ R. Then there are
+         elements x1 , . . . , xN ∈ R algebraically independent over F such that R
+         is integral over F [x1 , . . . , xN ].
+   In our case, Z is a subring of A, and A is an integral domain which is finitely generated
+as a Z-algebra. Extending to rational scalars, we have that AQ = Q ⊗Z A is a finitely
+               LINEAR GROUPS - MALCEV’S THEOREM AND SELBERG’S LEMMA                               9
+
+generated Q-algebra. By the Normalization Theorem, there exist elements x1 , . . . , xN
+in AQ which are algebraically independent over Q, and such that AQ is integral over
+Q[x1 , . . . , xN ]. Up to replacing each xi by an integral multiple of itself, we may assume
+that x1 , . . . , xN are in A. There is some positive m ∈ Z such that each ring generator
+of A is integral over Z[1/m][x1 , . . . , xN ]. Thus A[1/m] is integral over the subring
+Z[1/m][x1 , . . . , xN ]. If a prime p is invertible in A, then it is also invertible in A[1/m]
+while at the same time p ∈ Z[1/m][x1 , . . . , xN ].
+   Now we use the following general fact. Let R be a ring which is integral over a subring
+S. If s ∈ S is invertible in R, then s is already invertible in S. The proof is easy. Let
+r ∈ R with rs = 1. We have r d + s1 r d−1 + · · · + sd−1 r + sd = 0 for some si ∈ S, since r
+is integral over S. Multiplying through by sd−1 yields r ∈ S.
+   Returning to our proof, we infer that p is invertible in Z[1/m][x1 , . . . , xN ]. By the
+algebraic independence of x1 , . . . , xN , it follows that p is actually invertible in Z[1/m].
+But only finitely many primes have this property, namely the prime factors of m.             
+Remark 3.3. Let A be an infinite, finitely generated domain with char A = p > 0.
+   If n ≥ 2 then the p-torsion group (A, +) embeds in GLn (A), and this prevents GLn (A)
+from being virtually residually ℓ-finite for any prime ℓ 6= p. So we cannot do any better
+in the positive characteristic case of Theorem 3.1.
+   Selberg’s lemma fails in positive characteristic for a similar reason. The elementary
+group En (A) = h1n +a·eij : a ∈ A, i 6= ji is linear over the fraction field of A, and it fails
+to be virtually torsion-free since it contains copies of the infinite torsion group (A, +).
+Furthermore, if n ≥ 3 then En (A) is finitely generated. This is due to the commutator
+relations [1n + a · eij , 1n + b · ejk ] = 1n + ab · eik for distinct i, j, k, which imply that
+En (A) is generated by {1n + a1 · eij , . . . , 1n + aN · eij : i 6= j} whenever a1 , . . . , aN are
+ring generators for A. For a concrete example, take A to be the polynomial ring Fp [t],
+in which case En (Fp [t]) = SLn (Fp [t]) since Fp [t] is a euclidean domain.
+Remark 3.4. Among finitely generated groups, we have the following implications:
+      linear ⇒ virtually residually p-finite for some prime p ⇒ residually finite
+The first implication, a “p-adic” refinement of Malcev’s theorem, is an immediate con-
+sequence of Platonov’s theorem. The second implication is Proposition 1.3. Neither
+implication can be reversed, as witnessed by the following examples.
+   According to the previous remark, SLn (Fp [t]) for n ≥ 3 is finitely generated and
+virtually residually ℓ-finite for ℓ = p only. Therefore SLn (Fp [t]) × SLn (Fq [t]), where
+p and q are different primes, is finitely generated, residually finite but not virtually
+residually ℓ-finite for any prime ℓ.
+   The automorphism group of the free group on n generators, Aut(Fn ), is virtually
+residually p-finite for all primes p. Indeed, as we have seen in Remark 2.9, free groups
+are residually p-finite for all primes p. Now a theorem of Lubotzky (J. Algebra 1980)
+says that Aut(G) is virtually residually p-finite whenever the finitely generated group
+G is virtually residually p-finite. This is the “p-adic” analogue of an older, simpler, and
+better known theorem of G. Baumslag (J. London Math Soc. 1963) saying that Aut(G)
+is residually finite whenever the finitely generated group G is residually finite. On the
+other hand, Formanek and Procesi (J. Algebra 1992) have shown that Aut(Fn ) is not
+linear for n ≥ 3.
+10                                         BOGDAN NICA
+
+                                           References
+ [1] A.I. Malcev: On isomorphic matrix representations of infinite groups of matrices (Russian), Mat.
+     Sb. 8 (1940), 405–422 & Amer. Math. Soc. Transl. (2) 45 (1965), 1–18
+ [2] V.P. Platonov: A certain problem for finitely generated groups (Russian), Dokl. Akad. Nauk BSSR
+     12 (1968), 492–494
+ [3] A. Selberg: On discontinuous groups in higher-dimensional symmetric spaces, in “Contributions to
+     Function Theory”, Tata Institute of Fundamental Research, Bombay (1960), 147–164
+ [4] J.R. Stallings: Commutative rings and groups, UC Berkeley lecture notes (2000), still available at
+     http://math.berkeley.edu/˜ stall/math257
+ [5] B.A.F. Wehrfritz: Infinite linear groups. An account of the group-theoretic properties of infinite
+     groups of matrices, Ergebnisse der Matematik und ihrer Grenzgebiete, Band 76, Springer 1973
+
+     Mathematisches Institut, Georg-August Universität Göttingen
+     E-mail address: bogdan.nica@gmail.com
+

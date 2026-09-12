@@ -1,0 +1,617 @@
+                                     Advances in Group Theory and Applications
+                                      c 2019 AGTA - www.advgrouptheory.com/journal
+                             7 (2019), pp. 143–157                    ISSN: 2499-1287
+                                                          DOI: 10.32037/agta-2019-006
+
+
+
+
+       Weak Engel Conditions on Linear Groups
+                              B.A.F. Wehrfritz
+
+  (Received Sept. 6, 2018; Accepted Oct. 30, 2018 — Communicated by F. de Giovanni)
+
+                                    Abstract
+We study several weak Engel conditions on linear groups, starting from the “al-
+most Engel” condition of Khukhro and Shumyatsky. There the groups were Engel
+modulo certain finite subsets. Here we replace “finite subsets” by “Chernikov sub-
+groups” in one case and “polycyclic-by-finite subgroups” in another. We also in-
+clude a shorter proof of a theorem of Shumyatsky characterizing linear almost Engel
+groups.
+
+Mathematics Subject Classification (2010): 20F45, 20H20
+Keywords: Engel condition; linear group; matrix group
+
+
+
+1 Introduction
+A group G is almost Engel if for all g ∈ G there exists a finite sub-
+set E = E(g) of G such that for all x ∈ G there is a positive integer m
+such that for all n ⩾ m we have [x,n g] ∈ E. If G is almost Engel, then
+for each g ∈ G there is a unique minimal subset E as above, which is
+denoted by E(g) and called the sink of g (or the g-sink), and
+
+               E(g) = {x ∈ G : for some n ⩾ 1, x = [x,n g]}.
+
+Subgroups and images of almost Engel groups are almost Engel. For
+all this see Khukhro and Shumyatsky’s paper [5], especially its Sec-
+tion 2.
+   Shumyatsky in his paper [8] proves the following theorem.
+144      B.A.F. Wehrfritz
+
+
+Theorem 1.1     Let G be an almost Engel linear group. Then
+   i) G is finite-by-hypercentral.
+
+  ii) If for each g ∈ G there exists m = m(g) such that for each x ∈ G and
+      n ⩾ m we have [x,n g] ∈ E(g), then G is finite-by-nilpotent.
+  If G is any group
+                           {ζi (G) : 0 ⩽ i ⩽ s},
+s some ordinal, denotes the upper central series of G with
+                                      [
+                             ζ(G) =         ζi (G)
+                                      i⩽s
+
+its hypercentre.
+   If X is a class of groups, say that a group G is X-Engel if for
+each g ∈ G there is an X-subgroup E of G such that for all x ∈ G there
+is a positive integer m such that for all n ⩾ m we have [x,n g] ∈ E.
+Clearly if X is subgroup and image closed, then so is the class X-En-
+gel. We give below a proof of Shumyatsky’s theorem above and then
+show how small modifications to that proof yields a proof of the fol-
+lowing theorem (it is not convenient to produce one proof covering
+both cases, mainly since finite-Engel as defined above is not quite the
+same as almost Engel).
+Theorem 1.2 Let G be a Chernikov-Engel linear group. Then G/ζ(G)
+is Chernikov and G is Chernikov-by-nilpotent.
+  Although if X is a group such that X/ζ(X) Chernikov, then X is Cher-
+nikov-by-hypercentral (see [13], Theorem B), the converse is false in
+general, even if X is Chernikov-by-abelian, see Example 3 of [13].
+Thus we include both conclusions in the statement of Theorem 1.2.
+However, in our context the following more than suffices.
+Proposition 1.3 Let G be a linear group of degree n. If G is Cherni-
+kov-by-hypercentral, then G/ζ(G) is Chernikov. If G/ζ(G) is Chernikov,
+then G is Chernikov-by-(nilpotent of class at most max{1, n − 1}).
+  The next obvious step is to replace the class of Chernikov groups
+by the class PF of polycyclic-by-finite groups and consider line-
+ar PF-Engel groups. This immediately presents problems. Example 2
+of [13] is a polycyclic-by-hypercentral group X with X/ζ(X) not poly-
+cyclic-by-finite. Moreover, this X has faithful linear representations
+                         Weak Engel conditions on linear groups        145
+
+
+of degree 2 in every characteristic. Example 1 of [13] is a group Y
+with Y/ζ(Y) polycyclic such that Y is not PF-by-hypercentral. As a
+further complication if G is a PF-Engel group and g ∈ G, there is no
+obvious canonical choice to play the role of the f-sink. However the
+methods of this paper do at least yield the following theorem.
+Theorem 1.4 Let G be a PF-Engel linear group of characteristic p ⩾ 0.
+Then G is soluble-by-finite. If p > 0 then G is nilpotent-by-finite
+and PF-by-hypercentral. If p = 0 then G is nilpotent-by-(PF-by-hypercen-
+tral).
+Proposition 1.5 Let G be a linear group with G/ζ(G) ∈ PF. Then G
+is PF-by-hypercentral.
+  This is a partial PF analogue to Proposition 1.3. As pointed out
+above, the converse of Proposition 1.5 is false in all characteristic. Of
+course every PF-by-hypercentral group is PF-Engel.
+
+
+
+2 Proof of Theorem 1.1, part i)
+Thus let G be an almost Engel linear group, say with G ⩽ GL(n, F),
+n a positive integer and F a field. We break the proof into a series of
+steps.
+   a) G is soluble-by-finite.
+   The free group hx, gi of rank 2 on the exhibited generators is not al-
+most Engel (the commutators [x,r g] for r ⩾ 1 are all distinct). It then
+follows from Tits’s theorem (see [10], 10.17) that G is soluble-by-pe-
+riodic. If S denotes the soluble radical of G, then S is (Zariski) closed
+and G/S is linear over F (see [10], 5.11 and 6.4). Thus to prove the
+claim we may assume G is periodic.
+   If charF = 0 then G is abelian-by-finite (e.g., [10], 9.4). Suppose
+
+                              char F = p > 0
+
+and assume G is not soluble-by-finite. With S as above, by [7], 5.1.5
+there exists a subgroup T ⩾ S of G with K = T/S infinite, simple and
+(again by [10], 6.4) linear over F. Then K is of Lie type over some in-
+finite locally finite field k0 of characteristic p (e.g. [9]). Therefore for
+some infinite subfield k of k0 the group K has a section isomorphic
+to SL(2, k), see [1], 6.3.1.
+146      B.A.F. Wehrfritz
+
+
+  PSL(2, k) ∩ Tr(2, k) is the split extension of the additive group k+
+of k by the multiplicative group k∗ of K, where for a ∈ k∗ and b ∈ k+
+the action is given by ba = ba2 . If a 6= ±1, then
+
+         |a2 − 1| = m ⩾ 1   and    b = b(a2 − 1)m = [b,m a].
+
+Therefore b ∈ E(a) for all such b, so E(a) is infinite and hence
+SL(2, k), K and G are not almost Engel. This completes the proof
+of a).
+  b) If G ⩽ Tr(n, F), then G is finite-by-nilpotent.
+  First consider a ∈ F∗ and B ⩽ F+ with Ba = B and assume the split
+extension C = haiB is almost Engel. If d ∈ E(a)\{0}, then
+
+                        d = [d,e a] = d(a − 1)e
+
+for some e ⩾ 1 and so (a − 1)e = 1. If b ∈ B, then
+
+                            b = b(a − 1)er
+
+for all r ⩾ 1, so b ∈ E(a), B ⊆ E(a) and B is finite. If E(a) = {0}
+and b ∈ B\{0}, then b(a − 1)r = 0 for some r and a = 1. Hence B is
+finite or a = 1 (when trivially a centralizes B).
+   Let U denote the unipotent radical of G, so G 0 ⩽ U. Then G has a
+normal series
+                    h1i = U0 ⩽ U1 < . . . ⩽ Ut = U
+of length t = n(n − 1)/2 such that each Ui /Ui−1 is centralized by U
+and acted upon by G via an embedding of it into F+ and a homomor-
+phism of G/U into F∗ . By our initial remark each Ui /Ui−1 is finite
+or G-central.
+  A simple induction shows that G is finite-by-nilpotent. For exam-
+ple, suppose G/U1 is finite-by-(nilpotent of class c). If U1 is finite,
+then G is finite-by-nilpotent. Suppose U1 is G-central. By Hall’s theo-
+rem ([6], 4.25) the index of ζ2c (G/U1 ) is in G/U1 is finite. Therefore
+
+                            (G : ζ2c+1 (G))
+
+is finite and consequently G is finite-by-nilpotent by Baer’s theorem
+([6], Corollary 2 to 4.21).
+  c) G is nilpotent-by-finite. If G is connected, G is nilpotent.
+  Let G◦ denote the connected component of G containing 1.
+                        Weak Engel conditions on linear groups       147
+
+
+Then G/G◦ is finite and G◦ is triangularizable (over some extension
+field of F) by a) and 5.8 and 5.11 of [10]. By b) there is a finite nor-
+mal subgroup N of G◦ with G◦ /N nilpotent. Then C = G◦ ∩ CG (N)
+is nilpotent, closed ([10], 5.4) and of finite index in the connected
+group G◦ . Consequently G◦ = C and hence G◦ is nilpotent.
+
+  d) G is finite-by-hypercentral. If G is finitely generated then G is fi-
+nite-by-nilpotent.
+  This completes the proof of part i) of Theorem 1.1, and it fol-
+lows immediately from c), the lemma below and the well-known fact
+that finitely generated hypercentral groups are nilpotent (see for in-
+stance [12], 6.2).                                                  t
+                                                                    u
+
+
+Lemma 2.1 Let G be an almost Engel, nilpotent-by-finite group. Then G
+is finite-by-hypercentral.
+
+
+Proof — Now a group X is finite-by-hypercentral if, by [3], and
+only if, by [2], X/ζ(X) is finite (alternatively see Theorems A and E
+of [13]).
+  Let N be a normal subgroup of G of finite index that is nilpo-
+tent of class c and set A = ζ1 (N). We induct on c; if c = 0 the
+claim is vacuous. Let c ⩾ 1 and assume G/A is finite-by-hypercentral.
+Then H/A = ζ(G/A) has finite index in G/A by our initial remark.
+  Let g ∈ G. Then
+
+       E(g) ∩ A = {a ∈ A : for some r = r(a) ⩾ 1, a = [a,r g]}.
+
+If also b ∈ E(g) ∩ A with b = [b,s g] and s ⩾ 1, then ab = [ab,rs g],
+since A is abelian. It follows that E(g) ∩ A is a finite subgroup of A.
+  Let T be a (finite) transversal of N to G. If g ∈ G, then g = ht for
+some h ∈ N and t ∈ T . Then [a, g] = [a, t] for all a ∈ A = ζ1 (N) and
+hence
+             E = hE(g) ∩ A : g ∈ Gi = hE(t) ∩ A : t ∈ T i
+is a finite normal subgroup of G contained in A. Also A/E consists
+of right Engel elements of G/E, so H/E also consists of right Engel
+elements of G/E. Therefore H/E ⩽ ζ(G/E), e.g. by Gruenberg’s Theo-
+rems 1.2 and 1.4 of [4]. But then G/E is finite-by-hypercentral by our
+initial remark again. Consequently so is G.                          t
+                                                                     u
+148        B.A.F. Wehrfritz
+
+
+3 Proof of Theorem 1.1, part ii)
+By part i) of Theorem 1.1 there is a finite normal subgroup L of G
+with G/L hypercentral. Then L is closed in G, so G/L is also linear
+(again [10], 6.4). By the minimal choice of E(g), for each g ∈ G,
+
+                                E(g) ⊆ L.
+
+Thus
+                              [x,m(g) g] ∈ L
+for all x and g in G. Thus G/L consists entirely of bounded left Engel
+elements. Consequently G/L is nilpotent by Gruenberg’s theorems
+([10], 8.15 and 8.2).                                               t
+                                                                    u
+
+Remark 3.1 In the above proof of ii) we use i). However, in the
+context of ii) the special case of i) needed is actually very simple. For,
+all finite subsets of G are closed and if g ∈ G and n ⩾ m(g), then
+
+                              φ : G −→ G
+
+given by
+                              xφ = [x,n g]
+is continuous. Then G◦ φ is connected, so |G◦ φ| = 1. But 1φ = 1.
+Thus G◦ φ = {1}, [x,n g] = 1 for all x ∈ G◦ and G◦ consists entirely
+of right Engel elements of G. Then by 8.15 of [10] we have G◦ ⩽ ζ(G)
+and G/G◦ is finite. Therefore G is finite-by-hypercentral.
+
+Remark 3.2 We cannot improve finite-by-hypercentral to finite-by-
+nilpotent in the lemma, even for linear groups, which is all we need.
+The infinite, locally dihedral 2-group is hypercentral, abelian-by-fi-
+nite but not finite-by-nilpotent. It is also linear of degree 2 in any
+characteristic except 2. The wreath product of a Prüfer 3-group by a
+cyclic group of order 3 has similar properties and is linear of degree 3
+and characteristic 2. If G ⩽ GL(2, F), where char F = 2 and G is fi-
+nite-by-hypercentral, then (G : ζ(G)) is finite and ζ(G) = ζ1 (G) by 8.6
+of [10]. Then G 0 is finite and G is finite-by-abelian.
+
+Remark 3.3 Let G be a subgroup of GL(n, F) and for the moment,
+and only for simplicity of notation, assume F is algebraically closed.
+Let H denote the Hirsch-Plotkin radical η(G) of G. The Fitting sub-
+group of G is nilpotent (see [10], 8.2) closed in G (see [10], 5.9
+                        Weak Engel conditions on linear groups       149
+
+
+and 5.11) and of finite index in H (see [10], 8.2). Therefore H is closed
+in G.
+   Let Hu denote the set of unipotent elements of H and Hd the set of
+diagonalizable elements of H. Then Hu and Hd are subgroups of H
+(see [10], 7.11). They are also closed in H and hence in G; for
+
+                     Hu = {x ∈ H : (x − 1)n = 0}
+
+and (Hd )◦ is diagonalizable (see [10], 5.8 and 7.1), so its closure in H
+is too. Hence (Hd )◦ and therefore Hd are closed in H.
+    If x ∈ GL(n, F), let
+                          x = xu xd = xd xu
+be the Jordan decomposition of x in GL(n, F) (see [10], 7.2). Set
+
+                         K = hxu , xd : x ∈ Hi.
+
+Then K is locally nilpotent normalized by G and
+
+                     K = Ku × Kd = Ku H = Kd H
+
+(see [10], 7.14 and 7.11). Now K ∩ G = H, so
+
+                 Ku ∩ G = Hu      and    Kd ∩ G = Hd .
+
+Hence
+              G/Hu = G/(Ku ∩ G) ≃ Ku G/Ku = KG/Ku
+and
+                         H/Hu ≃ K/Ku ≃ Kd .
+Further K is the Hirsch-Plotkin radical of KG by 7.16 of [10], so as
+above Ku and Kd are closed in KG. Thus G/Hu is isomorphic to
+a linear group over F such that the image of H/Hu is a d-group.
+Similarly, G/Hd is isomorphic to a linear group over F such that the
+image of H/Hd is unipotent (use [10], 6.4, 6.5 and 6.6).
+
+
+
+
+4 Proof of Proposition 1.3
+If G is Chernikov-by-hypercentral there exist normal subgroups
+A ⩽ T of G with A divisible, abelian and Chernikov, T/A finite
+150      B.A.F. Wehrfritz
+
+
+and G/T hypercentral. Then ζ(G/A) has finite index in G/A. Also A is
+diagonalizable, so (G : CG (A)) is finite (see [10], 7.1 and 1.12). Hence
+there is a normal subgroup L of G of finite index with A ⩽ ζ1 (L), L/A
+hypercentral in G/A and L hypercentral. Thus
+
+                  L ⩽ η(G) ∩ CG (A) = η(CG (A)) = K
+
+say, where η(X) denotes the Hirsch-Plotkin radical of X. Then K is
+a hypercentral group and, by 8.2 ii) and 5.11 ii) of [10], is closed of
+finite index in G.
+   Let Ku (resp. Kd ) denote the set of unipotent (resp. diagonalizable)
+elements of K. Then G/Ku (resp. G/Kd ) is isomorphic to a linear
+group over the algebraic closure of F, such that the image of K/Ku
+(resp. K/Kd ) consists only of diagonalizable (resp. unipotent) ele-
+ments (apply Remark 3.3 to CG (A) and extend these embeddings
+to G as in [10], 2.3).
+   Clearly A ⩽ Kd , so LKd /Kd is G-hypercentral and of finite index
+in G/Kd . Also G is soluble-by-finite. Then K/Ku contains an abelian
+normal subgroup B/Ku of finite index in G/Ku (see [10], 3.6). Now A
+is divisible, so A ⩽ B and
+
+                    B/Ku = (AKu /Ku ) × (D1 /Ku )
+
+for some D1 ⩽ G. But G/K is finite. Hence if
+                                  \
+                             D=         (D1 )g ,
+                                  g∈G
+
+then D is a normal subgroup of G containing Ku and B/D and
+hence G/D are Chernikov. Now L/A is G-hypercentral, so
+
+                         LKu /AKu ⩽ K/AKu
+
+is G-hypercentral. Clearly
+
+                             AKu ∩ D = Ku ,
+
+so
+                             (LKu ∩ D)/Ku
+is G-hypercentral and
+                              G/(LKu ∩ D)
+                        Weak Engel conditions on linear groups      151
+
+
+is Chernikov. Consequently
+
+                          H = LKd ∩ LKu ∩ D
+
+is G-hypercentral and G/H is Chernikov. Thus G/ζ(G) is Chernikov.
+   Conversely, now assume G/ζ(G) is Chernikov. Set
+
+                          n 0 = max{1, n − 1},
+
+so
+                            n − 1 ⩽ n 0 ⩽ n.
+By (2) of [11] the subgroup
+
+                            Z = [ζ(G),n 0 G]
+
+is a diagonalizable n!-group and as such is abelian and Chernikov.
+Also
+                   ζ(G/Z) = ζ(G)/Z = ζn 0 (G/Z),
+so by 4.23 and 4.21 (Corollary 2) of [6], the n 0 + 1 term
+                                    0
+                          X/Z = γn +1 (G/Z)
+
+of the lower central series of G/Z is Chernikov. Therefore X is Cher-
+nikov and G/X is clearly nilpotent of class at most n 0 .
+  This concludes the proof of Proposition 1.3.                     t
+                                                                   u
+  Recall that {γj (X) : j ⩾ 1} denotes the lower central series of the
+group X.
+
+Corollary 4.1 Let G be a linear group of degree n with T = γi+1 (G)
+a Chernikov group, i some non-negative integer. Set n 0 = max{1, n − 1}.
+                   0
+Then G/ζ2i (G), γn +1 (G) and G/ζ2n 0 (G) are all Chernikov.
+
+Proof — Basically we repeat the proof of Proposition 1.3, but here
+in view of Hall’s Theorem (see [6], 4.25) we have
+
+                           (G/A : ζ2i (G/A))
+
+finite. Thus we can choose our L as before but now with
+
+                           L/A ⩽ ζ2i (G/A).
+152      B.A.F. Wehrfritz
+
+
+Hence
+                   LKd /Kd    and   (LKu ∩ D)/Ku
+are both G-hypercentral with G-central height at most 2i. Therefore H
+here is normal in G with G/H Chernikov and H ⩽ ζ2i (G). Thus
+                                                               0
+G/ζ2i (G) is Chernikov. Finally Proposition 1.3 yields that γn +1 (G)
+is Chernikov and consequently G/ζ2n 0 (G) is Chernikov by the first
+claim of the corollary.                                             t
+                                                                    u
+  There do exist groups G for which γi+1 (G) is Chernikov while
+G/ζ2i (G) is not, even if i = 1 (see [13], Example 4). The analogue of
+the corollary for the class PF is always true, viz. if G is any group
+with γi+1 (G) ∈ PF (resp. P), then G/ζ2i (G) ∈ PF (resp. P); see [6],
+vol.1, p.119.
+
+
+
+
+5 Proof of Proposition 1.5
+Suppose G is a subgroup of GL(n, F) with G/ζ(G) ∈ PF. Then
+
+                             S/ζ(S) ∈ PF
+
+for every section S of G. By [11] the subgroup [ζ(G),n 0 G] is a dia-
+gonalizable n!-group. The latter are all Chernikov groups, so G has
+a divisible abelian Chernikov normal subgroup A ⩽ ζ(G) with G/A
+of finite central height. By 4.21 (Corollary 2) of [6] there is a normal
+subgroup N of G containing A with G/N nilpotent and N/A ∈ PF.
+  Suppose G has a diagonalizable normal subgroup D of finite index.
+Clearly A ⩽ D ∩ N, so
+                             D∩N = A×B
+for some finitely generated abelian subgroup B. Since G/D is finite,
+so
+                      BG = hBg : g ∈ Gi ⩽ D
+is also a finitely generated abelian group. Clearly
+
+                             D ∩ N = ABG
+
+and G/N is nilpotent. Hence
+
+                          D/BG ⩽ ζ(G/BG ).
+                        Weak Engel conditions on linear groups       153
+
+
+Consequently G/BG is finite-by-hypercentral by [3]. Therefore G
+is PF-by-hypercentral.
+   In general G is soluble-by-finite. Then G contains a triangulariz-
+able normal subgroup of G of finite index containing the unipotent
+radical U of G, (see [10], 3.6 and its proof). The previous paragraph
+applied to G/U yields that G/U is PF-by-hypercentral.
+   We apply Remark 3.3. With H = η(G), clearly U = Hu , and there
+is an isomorphism of G/Hd onto a linear group L (over the algebraic
+closure of F and say of degree m) such that the image of H/Hd is
+unipotent. Clearly ζ(G) ⩽ H. Hence [11] applied to L yields that
+
+                           [ζ(G),m G] ⩽ Hd .
+
+Also G/ζ(G) ∈ PF, so L has finite central height. Hence there is a
+normal subgroup M ⩾ Hd of G with G/M nilpotent and M/Hd
+a PF-group (by [6], 4.21 yet again). Finally
+
+                       U ∩ Hd = Hu ∩ Hd = h1i.
+
+Therefore G is PF-by-hypercentral.                                     t
+                                                                       u
+
+
+
+
+6 Proof of Theorem 1.2
+We copy the structure of our proof above of Shumyatsky’s theorem.
+Thus let G be a Chernikov-Engel subgroup of GL(n, F). Since Cher-
+nikov groups satisfy the minimal condition on subgroups, for each
+g ∈ G we have a unique minimal subgroup E as in the definition
+of Chernikov-Engel, which we again denote by E(g).
+   a) G is soluble-by-finite.
+   Of course, Chernikov groups are soluble-by-finite. Repeat the proof
+of the previous a). The free group hx, gi and the split extension k∗ k+
+for k an infinite locally finite field (the action being via squares) are
+not Chernikov-Engel, in the latter case since each E(g) ⩽ k+ , which
+is elementary abelian; whence the E(g) are all finite.
+   b) If G ⩽ Tr(n, F), then G is finite-by-nilpotent.
+   For if g ∈ G, then E(g) ⩽ G 0 , which here is torsion-free or of
+finite exponent. Hence each E(g) is finite, G is almost Engel and the
+previous b) applies directly.
+154      B.A.F. Wehrfritz
+
+
+  c) G is nilpotent-by-finite (and G◦ is nilpotent).
+  Just copy the proof of the earlier c), but using the new a) and b).
+   d) G/ζ(G) is Chernikov and G is Chernikov-by-nilpotent.
+   This will complete the proof of Theorem 1.2. To prove it we mod-
+ify the proof of the lemma above. By c) there is a nilpotent normal
+subgroup N of G of finite index. By 5.11 ii) of [10] we may choose N
+closed in G. Then A = ζ1 (N) is also closed in G and therefore G/A
+is isomorphic to a linear group (see [10], 6.4). Hence by induction on
+the class of N we may assume that G/A is Chernikov modulo
+
+                             H/A = ζ(G/A).
+
+If g ∈ G clearly E(g) ∩ A is Chernikov, so if T is a transversal of N
+to G, then
+
+              E = hE(g) ∩ A : g ∈ Gi = hE(t) ∩ A : t ∈ T i
+
+is a Chernikov normal subgroup of G. Therefore H/E consists of
+right Engel elements of G/E and
+
+                              H/E ⩽ ζ(G/E)
+
+by Theorems 1.2 and 1.4 of [4] again (note that we do not claim and
+do not need that G/E is necessarily isomorphic to some linear group).
+Therefore G/E is Chernikov-by-hypercentral by Theorem B of [13]
+and hence G is Chernikov-by-hypercentral. Finally G/ζ(G) is Cherni-
+kov and G is Chernikov-by-nilpotent by Proposition 1.3.            t
+                                                                   u
+
+
+
+7 Proof of Theorem 1.4
+Again we copy our proof of Theorem 1.1. Thus let G be a PF-Engel
+subgroup of GL(n, F). With the notation as in previous paragraphs
+labeled a) the groups hx, gi and k∗ k+ (with action via squares) are
+clearly not PF-Engel. Thus as previously we obtain a) as below.
+  a) G is soluble-by-finite; G is unipotent-by-abelian-by-finite.
+  b) If G ⩽ Tr(n, F), and char F > 0, then G is finite-by-nilpotent.
+  For G 0 has finite exponent and hence G here is almost Engel. Thus b)
+holds. Then exactly as in previous cases we obtain the following vari-
+ant of c)
+                          Weak Engel conditions on linear groups   155
+
+
+  c) If char F > 0, then G is nilpotent-by-finite.
+   d) If char F > 0, then G is PF-by-hypercentral.
+   As we have done twice before, we can split a nilpotent normal sub-
+group N of G of finite index given into unipotent and d-group cases.
+If N is unipotent, then N has finite exponent, every PF subgroup
+of G is finite and G is almost Engel and hence finite-by-hypercentral
+by Shumyatsky’s theorem. If N is a d-group, then N is diagonal-
+izable, so G is abelian-by-finite and hence G is PF-by-hypercentral
+by the following lemma. That G is nilpotent-by-(PF-by-hypercentral)
+if char F = 0 also follows from the lemma below and a) above.      t
+                                                                   u
+
+Lemma 7.1 Let A be an abelian normal subgroup of finite index in the
+PF-Engel group G. Then G is PF-by-hypercentral.
+
+Proof — Let T be a (finite) transversal of A to G. For each t ∈ T
+choose the subgroup E(t) ∈ PF as in the definition of PF-Engel and
+set
+                         A(t) = A ∩ E(t).
+Thus for each a ∈ A there exists m ⩾ 1 such that if n ⩾ m then
+
+                               [a,n t] ∈ A(t).
+
+Note that if g ∈ G and a ∈ A, there is m = m(g, a) ⩾ 1 such that
+if n ⩾ m then
+                        [a,n tg ] ∈ A(t)g .
+Suppose g = bu, where b ∈ A and u ∈ T . Then A(t)g = A(t)u and
+if tg ∈ At 0 where t 0 ∈ T , then
+
+                            [a,n tg ] = [a,n t 0 ].
+
+   Set A(t) equal to the intersection of the A(s)g for all s ∈ T and
+g ∈ G with sg ∈ At. Then for all a ∈ A there exists m ⩾ 1 such that
+if n ⩾ m then
+                            [a,n t] ∈ A(t).
+Now sg ∈ At if and only if su ∈ At. Hence A(t) is the intersection
+only of the A(s)u for s and u in T with su ∈ At. Clearly A(t) ∈ PF.
+Also if x ∈ G, then
+                           A(t)x = A(t 0 )
+whenever Atx = At 0 .
+156     B.A.F. Wehrfritz
+
+
+  Set
+                      B = hA(t) : t ∈ T i ⩽ A.
+Clearly B ∈ PF. Also B is normal in G. Hence A/B consists entirely
+of right Engel elements of G/B. Consequently A/B ⩽ ζ(G/B) and
+hence G/B is finite-by-hypercentral. Therefore G is PF-by-hypercen-
+tral.                                                            t
+                                                                 u
+
+
+
+
+                                                 REFERENCES
+
+
+ [1] R.W. Carter: “Simple Groups of Lie Type”, Wiley, London
+     (1972).
+ [2] C. Casolo – U. Dardano – S. Rinauro: “Variants of theorems of
+     Baer and Hall on finite-by-hypercentral groups”, J. Algebra 452
+     (2016), 279–287.
+ [3] M. de Falco – F. de Giovanni – C. Musella – Y.P. Sysak: “On
+     the upper central series of infinite groups”, Proc. Amer. Math.
+     Soc. 139 (2011), 385–389.
+ [4] K.W. Gruenberg: “The upper central series in soluble groups”,
+     Illinois J. Math. 5 (1961), 436–466.
+ [5] E.I. Khukhro – P. Shumyatsky: “Almost Engel compact groups”,
+     J. Algebra 500 (2018), 439–456.
+ [6] D.J.S. Robinson: “Finiteness Conditions and Generalized Solu-
+     ble Groups”, Springer, Berlin (1972).
+ [7] M. Shirvani – B.A.F. Wehrfritz: “Skew Linear Groups”, Cam-
+     bridge University Press, Cambridge (2008).
+ [8] P. Shumyatsky: “Almost Engel linear groups”, Monatsh. Math.
+     186 (2018), 711–719.
+ [9] S. Thomas: “The classification of the simple periodic linear
+     groups”, Arch. Math. (Basel) 41 (1983), 103–116.
+[10] B.A.F. Wehrfritz: “Infinite Linear Groups”, Springer, Berlin
+     (1973).
+                      Weak Engel conditions on linear groups   157
+
+
+[11] B.A.F. Wehrfritz: “Hypercentral unipotent subgroups of linear
+     groups”, Bull. London Math. Soc. 11 (1973), 310–313.
+[12] B.A.F. Wehrfritz: “Groups and Ring Theoretic Properties of
+     Polycyclic Groups”, Springer, Berlin (2009).
+[13] B.A.F. Wehrfritz: “Variants of theorems of Schur, Baer and
+     Hall”, Ric. Mat. 67 (2018), 331–337.
+
+
+
+
+B.A.F. Wehrfritz
+Queen Mary University of London
+London E1 4NS
+London (England)
+e-mail: b.a.f.wehrfritz@qmul.ac.uk
+

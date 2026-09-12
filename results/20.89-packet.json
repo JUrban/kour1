@@ -1,0 +1,264 @@
+{
+  "created_utc": "2026-09-12T16:02:14.264488+00:00",
+  "problem_ids": [
+    "20.89",
+    "19.83"
+  ],
+  "new_complete_candidates_added": 0,
+  "outside_reviews": 0,
+  "priority_established": false,
+  "summary": {
+    "filtration": {
+      "central_checks": 1053,
+      "conjugation_checks": 8424,
+      "layer_orders": [
+        1,
+        3,
+        9,
+        27
+      ],
+      "order": 216,
+      "products": 46656
+    },
+    "mixed_rows": [
+      [
+        1,
+        36,
+        18,
+        648,
+        3
+      ],
+      [
+        2,
+        108,
+        54,
+        5832,
+        9
+      ],
+      [
+        3,
+        324,
+        162,
+        52488,
+        27
+      ],
+      [
+        4,
+        972,
+        486,
+        472392,
+        81
+      ]
+    ],
+    "nonnormal_sink": {
+      "conjugate_union_size": 5,
+      "group_order": 72,
+      "normal_closure_order": 9,
+      "product_checks": 5184,
+      "sink_group_order": 3,
+      "sink_size": 3
+    },
+    "rational_distinct_iterates": 65,
+    "rejected_shortcuts": [
+      "wrong_diagonal_pair",
+      "reversed_filtration",
+      "trivial_common_sink",
+      "admit_infinite_reflection",
+      "sink_group_is_ambient_normal",
+      "union_of_conjugates_is_subgroup"
+    ],
+    "status": "PASS"
+  },
+  "files": [
+    {
+      "path": "docs/21tkt.pdf",
+      "bytes": 1769460,
+      "sha256": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911"
+    },
+    {
+      "path": "references/cache/nica-malcev-selberg-2013.pdf",
+      "bytes": 156337,
+      "sha256": "fdc2cb6c2a34081acd3b52eb70beea21d14e014b2771ba7b8158e5ba98b977d9"
+    },
+    {
+      "path": "references/cache/nica-malcev-selberg-2013.txt",
+      "bytes": 34450,
+      "sha256": "e1c2f27fd22a03b25b7da1f44802f392a81217140f1ad1aba8daafd1742da97b"
+    },
+    {
+      "path": "references/cache/shumyatsky-almost-engel-linear-2016.pdf",
+      "bytes": 147594,
+      "sha256": "5ec00b8009c1ca9b0a0077b3fd0210b565c16b9e6ba4e1950c394a8254c9f53c"
+    },
+    {
+      "path": "references/cache/shumyatsky-almost-engel-linear-2016.txt",
+      "bytes": 28495,
+      "sha256": "a0282069f3450fa1f4a0bcbe12ddbf700fbdf87a4425c0d38286c607f7f6b814"
+    },
+    {
+      "path": "references/cache/wehrfritz-weak-engel-2019.pdf",
+      "bytes": 284592,
+      "sha256": "85285eb341f4959b000908b36102c19e2a88e34b9f9a2e2d1ccf564f0b371c7e"
+    },
+    {
+      "path": "references/cache/wehrfritz-weak-engel-2019.txt",
+      "bytes": 26983,
+      "sha256": "bfe938ee25101b1b86c93a97c09a18031801e99e15665c3a6bc6873166c3e0cb"
+    },
+    {
+      "path": "research/20.89-plan.md",
+      "bytes": 1560,
+      "sha256": "7b4611cdb6c6b37f238f69e55422d0a50250f5d8b643f648c8f10cb2fa99b5e7"
+    },
+    {
+      "path": "research/20.89-report.md",
+      "bytes": 4219,
+      "sha256": "e1779bb4a59fb106088a7c23442cb54addd61809229db62c9416b2f65d23c7e3"
+    },
+    {
+      "path": "research/20.89-residual-reduction.md",
+      "bytes": 5016,
+      "sha256": "aa696069bf642cdb885655e13d3772097367c0958821ddd69df19ac6ec534e8a"
+    },
+    {
+      "path": "research/20.89-source-audit.md",
+      "bytes": 3793,
+      "sha256": "e46ccefed46fcb7b4b5394bdd6728d5ae96c64c745712050c1ca1d284de73189"
+    },
+    {
+      "path": "research/20.89-triangular-proof.md",
+      "bytes": 5922,
+      "sha256": "b63af6ec738aa08d79b6bcba88d72c333076d88d48fa252c25a37bdb3278a852"
+    },
+    {
+      "path": "research/problem-index.json",
+      "bytes": 801926,
+      "sha256": "4d2ffec3637a2c9c283ce642cac80dae8b4670415d9d098b868c7e55bbc5138a"
+    },
+    {
+      "path": "research/triage-2026-09-12-1545.md",
+      "bytes": 2406,
+      "sha256": "e79e97f7152a9106f425ad5c55d92d9d5247eef66df47d1d9ad3a42770dd6ac9"
+    },
+    {
+      "path": "results/20.89-expanded-independent-process.json",
+      "bytes": 533,
+      "sha256": "9f24759ad4188bf790ec9fb55c55c086a35d026dbd3642188284e1376fa0c2e7"
+    },
+    {
+      "path": "results/20.89-expanded-independent.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/20.89-expanded-independent.stderr",
+      "bytes": 544,
+      "sha256": "4274a4ed965845a567a88acca67aee3d9adca3d38045838ab2d2e0d9894b8926"
+    },
+    {
+      "path": "results/20.89-expanded-native-process.json",
+      "bytes": 549,
+      "sha256": "459b6235e934c5dc77b2303200452e82745cb88faf99de0563cd791e07a95a18"
+    },
+    {
+      "path": "results/20.89-expanded-native.log",
+      "bytes": 191,
+      "sha256": "fb3143b42489170702bd2c502951b9b3a3ff58595e4b75e5514254b3edbf8c9f"
+    },
+    {
+      "path": "results/20.89-expanded-native.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/20.89-final-independent-process.json",
+      "bytes": 534,
+      "sha256": "f3f79dbd73829e33554d3c918df758ff9e2581f9909ff6c812935a516a44c691"
+    },
+    {
+      "path": "results/20.89-final-independent.log",
+      "bytes": 666,
+      "sha256": "0d395f98a0aef9107642e504f39328b8a1ca5a13d5ded15a8ea8d1b375132052"
+    },
+    {
+      "path": "results/20.89-final-independent.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/20.89-independent-process.json",
+      "bytes": 447,
+      "sha256": "1cdc0484b64e613ca1d8d46348bf6b35f8534e2f3249fc35afa222fdd828b41a"
+    },
+    {
+      "path": "results/20.89-independent.log",
+      "bytes": 443,
+      "sha256": "5d659bfa5a2eeebe79cd02cd7bff54046fb890c1b8e37253873fc866cc688e72"
+    },
+    {
+      "path": "results/20.89-independent.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/20.89-native-process.json",
+      "bytes": 462,
+      "sha256": "18655541f4da90703409ed718216e73b5defe32a7c172dc982561cfdde902faf"
+    },
+    {
+      "path": "results/20.89-native.log",
+      "bytes": 165,
+      "sha256": "6ecd153b1922b7399be91c1e11d9874d1cdb01aaecb2c24856652a2db51aed31"
+    },
+    {
+      "path": "results/20.89-native.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/20.89-nica-download.json",
+      "bytes": 484,
+      "sha256": "e6aa3377b78a11d6d73acdd471655c0abc0559616b6974bec31501a178050a54"
+    },
+    {
+      "path": "results/20.89-source-download.json",
+      "bytes": 569,
+      "sha256": "69c45034f7b97caff667f22649a7cb3b25a675618ef60c50dcf773a3fb0a565a"
+    },
+    {
+      "path": "results/20.89-source-page142.png",
+      "bytes": 244977,
+      "sha256": "265fbe45901ab60c57ebf31d1afbeb87d94e6cb9d94b987f1e40fe4155624775"
+    },
+    {
+      "path": "results/20.89-source-page160.png",
+      "bytes": 165082,
+      "sha256": "aa1096311d6cbca7d572f806a3097817668742b72d024e0a072249295cc6d179"
+    },
+    {
+      "path": "results/20.89-statements.json",
+      "bytes": 1683,
+      "sha256": "4bd1bcf09df0383c388ea1097f622ea9596520e16e39d0299692fa9278f60ca7"
+    },
+    {
+      "path": "scripts/audit_20_89.py",
+      "bytes": 4514,
+      "sha256": "364117e4e0cc435a940f716a78317b25072959e0a6e025aadb9d5b5676184a0a"
+    },
+    {
+      "path": "scripts/verify_20_89_independent.py",
+      "bytes": 6933,
+      "sha256": "2b2446c33444669bbab01ee76d8198dc8f6bfe8e0fc62bc6356bc76b95ac0f05"
+    },
+    {
+      "path": "scripts/verify_20_89_independent_failed_union.py",
+      "bytes": 6453,
+      "sha256": "6c99d030f51bd8e692439cf2dce0d4fc717b7102cd2ad081d82d809269183a64"
+    },
+    {
+      "path": "scripts/verify_20_89_native.g",
+      "bytes": 2935,
+      "sha256": "b5833daa4b2dd1ca362d7b79dd34a074eae2151f5f7e223a277bd7c0bd2b61ea"
+    }
+  ]
+}

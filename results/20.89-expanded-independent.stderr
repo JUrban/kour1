@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/project/scripts/verify_20_89_independent.py", line 175, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/project/scripts/verify_20_89_independent.py", line 166, in main
+    nonnormal_sink=nonnormal_sink(),
+                   ^^^^^^^^^^^^^^^^
+  File "/project/scripts/verify_20_89_independent.py", line 156, in nonnormal_sink
+    assert len(normal_closure)==9 and normal_closure!=sink
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
