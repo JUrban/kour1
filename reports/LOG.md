@@ -2484,3 +2484,15 @@ The compressed archives total 304,007,641 bytes; uncompressed files
 remain local. General 20.21 is unresolved and the complete count is 41.
 The n7 snapshot at 07:38:35 UTC records 36,310,000 checked nodes, all
 six workers live, none complete, and 50,824,436 KiB combined RSS.
+
+
+## 2026-09-12T07:58:47.418791+00:00 — G2(F9) packet audited
+
+The four search children and controller exit zero (e05d94), covering all
+40,105 carpets with 4,032 enlargements and no failed carpet closure.
+Independent 14-dimensional matrix enumeration checks 1,114 cases, 99
+enlargements and 110,305 states (77b49c). The 62-file final auditor
+verifies all launch bindings and replays these controls, exiting zero
+(37bc0c). Its preparation was already reproduced exactly (8bf876).
+The simple-group faithfulness argument and exact source reading scope
+are retained. General 19.61 remains open; complete candidate count 41.

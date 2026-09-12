@@ -1,0 +1,35 @@
+{
+  "recorded_utc": "2026-09-12T07:47:38.270617+00:00",
+  "successful_processes": [
+    {
+      "task": "preparation",
+      "exit_code": 0,
+      "tool_chunk": "7754fb"
+    },
+    {
+      "task": "preparation replay",
+      "exit_code": 0,
+      "tool_chunk": "8bf876"
+    },
+    {
+      "task": "C2 F4 shard control",
+      "exit_code": 0,
+      "tool_chunk": "6f6d4f"
+    },
+    {
+      "task": "final F9 search and children",
+      "exit_code": 0,
+      "tool_chunk": "e05d94"
+    },
+    {
+      "task": "matrix controls",
+      "exit_code": 0,
+      "tool_chunk": "77b49c"
+    }
+  ],
+  "stopped_serial": {
+    "exit_code": 1,
+    "tool_chunk": "6a1ed1",
+    "excluded_from_result": true
+  }
+}

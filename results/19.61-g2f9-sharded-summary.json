@@ -1,0 +1,133 @@
+{
+  "status": "COMPLETE_NO_FAILURE",
+  "label": "g2f9",
+  "carpets": 40105,
+  "expected_order": 22594320403200,
+  "shards": 4,
+  "workspace_gib_each": 2,
+  "started_utc": "2026-09-12T04:52:05.297698+00:00",
+  "input_sha256": "bab4bded23680059e6cc4f7675f857b450ceb514cf5d75380cad4c35628cfd70",
+  "script_sha256": "7383bb2c7e142579b75f8b9e13b5f715d82280f65538f50614868159b48a125f",
+  "runner_sha256": "5de26ad81b2f9fed64427c03a71769fca2259e15fd1ddbeccad829943af172e3",
+  "jobs": [
+    {
+      "index": 0,
+      "pid": 229450,
+      "tag": "g2f9-shard0",
+      "command": [
+        "/project/bin/gap",
+        "-o",
+        "2g",
+        "/project/results/19.61-g2f9-input.g",
+        "/project/results/19.61-g2f9-shard0-setup.g",
+        "/project/scripts/search_19_61_roots_shard.g"
+      ],
+      "returncode": 0,
+      "setup": "results/19.61-g2f9-shard0-setup.g",
+      "log": "results/19.61-g2f9-shard0-search.log",
+      "changes": "results/19.61-g2f9-shard0-changes.grows",
+      "observed_completion_utc": "2026-09-12T06:56:32.682336+00:00",
+      "counts": [
+        10027,
+        1013,
+        0
+      ],
+      "sha256": {
+        "results/19.61-g2f9-shard0-setup.g": "58ac8b04b7952d7a0169bdec7187a7db35abece4624dd1db17c38dcfdd19def5",
+        "results/19.61-g2f9-shard0-search.log": "40c569b26677e312758d5d22218a446129482508a2141deb8a08b0aa28930a19",
+        "results/19.61-g2f9-shard0-changes.grows": "696c3d0b95afca0c7a3111f1f373711f464eb838652caa987de384615a432eae"
+      }
+    },
+    {
+      "index": 1,
+      "pid": 229451,
+      "tag": "g2f9-shard1",
+      "command": [
+        "/project/bin/gap",
+        "-o",
+        "2g",
+        "/project/results/19.61-g2f9-input.g",
+        "/project/results/19.61-g2f9-shard1-setup.g",
+        "/project/scripts/search_19_61_roots_shard.g"
+      ],
+      "returncode": 0,
+      "setup": "results/19.61-g2f9-shard1-setup.g",
+      "log": "results/19.61-g2f9-shard1-search.log",
+      "changes": "results/19.61-g2f9-shard1-changes.grows",
+      "observed_completion_utc": "2026-09-12T06:56:32.682475+00:00",
+      "counts": [
+        10026,
+        1027,
+        0
+      ],
+      "sha256": {
+        "results/19.61-g2f9-shard1-setup.g": "4c5583ba18b825c628ea9304d955acc77302c8544dced7e85bd70545dd5dd7ac",
+        "results/19.61-g2f9-shard1-search.log": "d1862dc05ed87165d2c309b1bcf39311048b4b7f71bce875c70f8bfb40de3fb9",
+        "results/19.61-g2f9-shard1-changes.grows": "fdd986ba65939ce38e4b7353837f73aa1aa8311eb81e394c6bf2411a9934e3c9"
+      }
+    },
+    {
+      "index": 2,
+      "pid": 229452,
+      "tag": "g2f9-shard2",
+      "command": [
+        "/project/bin/gap",
+        "-o",
+        "2g",
+        "/project/results/19.61-g2f9-input.g",
+        "/project/results/19.61-g2f9-shard2-setup.g",
+        "/project/scripts/search_19_61_roots_shard.g"
+      ],
+      "returncode": 0,
+      "setup": "results/19.61-g2f9-shard2-setup.g",
+      "log": "results/19.61-g2f9-shard2-search.log",
+      "changes": "results/19.61-g2f9-shard2-changes.grows",
+      "observed_completion_utc": "2026-09-12T06:56:32.682555+00:00",
+      "counts": [
+        10026,
+        965,
+        0
+      ],
+      "sha256": {
+        "results/19.61-g2f9-shard2-setup.g": "f17a998e925655789ebf17d58ab16a50667f718aa54b8224b4e6ac9bfe1ac174",
+        "results/19.61-g2f9-shard2-search.log": "a18feda8e3cd53d94b24121b4312eac6c662e009267024ea1c377a4470b94e77",
+        "results/19.61-g2f9-shard2-changes.grows": "9772c7bc9e846132fa9e8265ddeb45124600e0d9cdb09b3a4d21e490c18bf49d"
+      }
+    },
+    {
+      "index": 3,
+      "pid": 229453,
+      "tag": "g2f9-shard3",
+      "command": [
+        "/project/bin/gap",
+        "-o",
+        "2g",
+        "/project/results/19.61-g2f9-input.g",
+        "/project/results/19.61-g2f9-shard3-setup.g",
+        "/project/scripts/search_19_61_roots_shard.g"
+      ],
+      "returncode": 0,
+      "setup": "results/19.61-g2f9-shard3-setup.g",
+      "log": "results/19.61-g2f9-shard3-search.log",
+      "changes": "results/19.61-g2f9-shard3-changes.grows",
+      "observed_completion_utc": "2026-09-12T06:56:32.682664+00:00",
+      "counts": [
+        10026,
+        1027,
+        0
+      ],
+      "sha256": {
+        "results/19.61-g2f9-shard3-setup.g": "81104c834931e754dcc2e529ffa4c1efaae426b3e436c6643babdb6130972fef",
+        "results/19.61-g2f9-shard3-search.log": "16c3097a9ec7d067c2a9abb5ab10bd02037993ce347c63374e380c73b6a57b55",
+        "results/19.61-g2f9-shard3-changes.grows": "60c0e957c507a231ade452efb62c5b3ca87738bb4a90dd281473bbbfa8ca2cfc"
+      }
+    }
+  ],
+  "counts": [
+    40105,
+    4032,
+    0
+  ],
+  "elapsed_seconds": 7467.615613997914,
+  "completed_utc": "2026-09-12T06:56:33.055959+00:00"
+}
