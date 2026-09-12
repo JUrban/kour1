@@ -1,0 +1,1613 @@
+                                                 VIRTUAL FIBRING OF POINCARÉ-DUALITY
+                                                               GROUPS
+
+                                                 SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+                                                        Dedicated to Martin R. Bridson, on his 60th birthday
+arXiv:2506.14666v1 [math.GR] 17 Jun 2025
+
+
+
+
+                                                  Abstract. We show that a RFRS Poincaré-duality group G ad-
+                                                  mits a virtual epimorphism to the integers whose kernel is itself
+                                                  a Poincaré-duality group over every field if and only if the L2 -
+                                                  homology of G vanishes and so do the positive-characteristic vari-
+                                                  ants thereof.
+                                                     Our investigations yield a more general relationship between
+                                                  cohomology at infinity of groups that algebraically fibre and their
+                                                  fibres. In particular, we show that if the fundamental group of an
+                                                  aspherical manifold of dimension at least three algebraically fibres,
+                                                  then the fibre is one ended.
+
+
+
+                                                                        1. Introduction
+                                              A smooth manifold that fibres over the circle can be understood
+                                           not only as a static object, but also as a manifold of codimension
+                                           one, the fibre, changing over time, with the dynamics controlled by
+                                           the monodromy. This description is indeed helpful in many cases, for
+                                           example in three-manifolds, where our understanding of the fibres and
+                                           their homeomorphisms is very detailed.
+                                              If a compact connected smooth manifold M fibres over the circle with
+                                           fibre N (which then is also a manifold), on the level of fundamental
+                                           groups there is a short exact sequence
+                                                                1 → π1 (N ) → π1 (M ) → Z → 1.
+                                           In particular, we get a surjective homomorphism π1 (M ) → Z whose
+                                           kernel K = π1 (N ) is the fundamental group of a compact manifold.
+                                           If M is additionally aspherical, then so is N and we deduce that the
+                                           kernel K is a group admitting a compact classifying space (a group of
+                                           type F), and hence the cellular chain complex of the universal cover
+                                           of the classifying space is a finite resolution by finitely generated pro-
+                                           jective ZK-modules of the trivial module Z (that is, K is of type FP).
+                                           Hence, admitting a fibration over the circle is reflected in the algebraic
+                                           structure of π1 (M ).
+                                              This statement has a strong converse in the realm of three-manifolds:
+                                           as proved by Stallings [Sta62], if the fundamental group of a compact
+                                           irreducible three-manifold maps onto the integers with a finitely gen-
+                                           erated kernel that is not Z/2Z, then the three-manifold fibres over the
+                                                                                   1
+2        SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+circle in a way inducing the given epimorphism. The condition on the
+kernel not being Z/2Z can now be dropped thanks to the resolution of
+the Poincaré Conjecture.
+   In higher dimensions, there is a result of Farrell [Far67]: if M is
+a closed aspherical smooth manifold of dimension at least six, then
+an epimorphism π1 (M ) → Z is induced by a fibration if and only if its
+kernel admits a model for its classifying space that is finitely dominated,
+and a certain K-theoretic obstruction vanishes. The first condition can
+be rephrased by asking for the kernel to be finitely presented and of
+type FP.
+   The situation changes if instead of asking whether a specific epimor-
+phism to the integers comes from fibring, we ask if such an epimorphism
+exists at all. Going back to three-manifolds, a central theme in their
+study that emerged due to the groundbreaking insights of Thurston
+was that it is often interesting not only to understand when a given
+manifold fibres over the circle, but also when it virtually fibres, that is,
+admits a finite-sheeted covering that fibres. Thurston conjectured that
+this should be the case for all finite-volume hyperbolic three-manifolds,
+and this conjecture was confirmed by Wise [Wis12] in the cusped case
+and Agol [Ago13] in the closed case.
+   Both proofs consist of two main steps. The first step shows that
+fundamental groups of hyperbolic three-manifolds virtually (i.e. up to
+finite index) have the RFRS property. For a finitely generated group,
+the RFRS condition is equivalent to being residually {virtually abelian
+and locally indicable}, and so it is a strong residual property. To estab-
+lish that a group is virtually RFRS, one usually goes via the Haglund–
+Wise theory of special cube complexes [HW08], and this is indeed how
+Wise and Agol proceed, in the cusped case using in fundamental ways
+the work of Culler–Shalen [CS84], and in the closed case that of Kahn–
+Marković [KM12] and Bergeron–Wise [BW12].
+   The second step of the proofs is an application of another theo-
+rem of Agol [Ago08], stating that a compact irreducible three-manifold
+with RFRS fundamental group virtually fibres if and only if its Euler
+characteristic is zero. There are many ways of computing the Euler
+characteristic; for our purpose, we will focus on its being the alternat-
+ing sum of Betti numbers, and thus a homological invariant. Hence,
+Agol established that for RFRS three-manifold groups, virtual fibring
+is controlled by a homological invariant.
+   This statement has algebraic counterparts: first it was shown in
+[Kie20] that if G is an infinite RFRS group, then G admits a virtual
+epimorphism to the integers with a finitely generated kernel if and only
+if the first L2 -Betti number of G vanishes. Soon afterwards, Jaikin-
+Zapirain [JZ21, Appendix] introduced the theory of L2 -Betti numbers
+over ground fields other than Q for RFRS groups. This was then used
+by the first author, who in [Fis24a] showed that G admits a virtual
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                   3
+
+epimorphism to Z with kernel of type FPn (K) if and only if the L2 -
+Betti numbers of G over K vanish up to degree n. We will introduce
+all of these notions in the main text – the key point for now is that,
+as in Agol’s case, virtual algebraic fibring is controlled by homological
+invariants, namely various versions of L2 -homology.
+   The question motivating our investigations here is: do homologi-
+cal invariants control virtual fibring of compact aspherical manifolds
+with RFRS fundamental groups also beyond dimension three? In view
+of Farrell’s result, one has to find ways of controlling finiteness prop-
+erties of kernels of virtual epimorphisms to Z, and the K-theoretic
+obstruction. Thanks to the work of Siebenmann [Sie70], we see that
+this obstruction lives in the Whitehead group of the manifold, and this
+group is known to vanish in many cases of interest for us, most notably
+when the fundamental group of the manifold is compact special in the
+sense of Haglund–Wise – such groups are CAT(0), and hence satisfy the
+Farrell–Jones Conjecture, as proved by Bartels–Lück [BL12]. There-
+fore, it is reasonable to focus first on securing the relevant finiteness
+properties.
+   Establishing finite presentability seems to be out of reach of current
+methods. We therefore focus on type FP. Since this is a solely homo-
+logical property, it would be too restrictive to stay within the realm of
+compact aspherical manifolds. A more natural setting is provided by
+Poincaré-duality groups – they are of type FP, and their homology is
+related to their cohomology precisely in the same way as in the case
+of compact aspherical manifolds. More generally, given a field K we
+can talk about Poincaré duality over K, where the group is of type
+FP(K) and the duality between homology and cohomology only applies
+to KG-modules as coefficients. In this generality, we offer the following
+result.
+Theorem A. Let K be a field and G be a RFRS orientable Poincaré-
+duality group of dimension n > 0 over K. The following are equivalent:
+   (1) There exists a finite-index subgroup G0 in G and an epimor-
+        phism ϕ : G0 → Z such that ker ϕ is an orientable Poincaré-
+        duality group of dimension n − 1 over K;
+                                  (2)
+   (2) For every i ⩽ n we have βi (G; K) = 0.
+  In fact, we can also deal with all fields simultaneously, but this re-
+quires a stronger assumption on G.
+Theorem B. Let G be a RFRS orientable Poincaré-duality group of
+dimension n > 0. The following are equivalent:
+   (1) There exists a finite-index subgroup G0 in G and an epimor-
+       phism ϕ : G0 → Z such that ker ϕ is an orientable Poincaré-
+       duality group of dimension n − 1 over all fields;
+                                                       (2)
+   (2) For all i ⩽ n and all prime fields K, we have βi (G; K) = 0.
+4        SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+   Using coincidences of small dimensions, we obtain a sharper result
+in dimension four.
+Corollary C. Let G be a RFRS Poincaré-duality group of dimension
+four. The following are equivalent:
+   (1) There exists a finite-index subgroup G0 ⩽ G and an epimor-
+       phism ϕ : G0 → Z such that ker ϕ is an orientable Poincaré-
+       duality group of dimension three;
+                  (2)          (2)
+   (2) We have β1 (G; Q) = β2 (G; Q) = 0.
+                        (2)
+   The Betti numbers βi (G; Q) appearing above are the usual L2 -Betti
+            (2)
+numbers βi (G).
+   In the process of proving the results above, we establish a relationship
+between cohomology at infinity of any group G and algebraic fibres
+sitting within.
+Theorem D. Let R be a ring. Let G be a group with an epimorphism
+ϕ : G → Z. If K = ker ϕ is of type FPn (R) then
+                    Hi+1 (G; RG) ∼ = Hi (K; RK)
+as RK-modules for all i < n and Hn (K; RK) is isomorphic as an
+RK-module to a submodule of Hn+1 (G; RG).
+    Applying the theorem with i = 1 yields the following.
+Corollary E. Let M be a closed aspherical manifold of dimension at
+least three. If ϕ : π1 (M ) → Z is an epimorphism with finitely generated
+kernel, then the kernel has only one end.
+Outline of the arguments. The key technical tool is Novikov ho-
+mology, that is group homology with coefficients in a Novikov ring. If
+we have a homomorphism ϕ : G → Z and a ring R, the Novikov ring
+d ϕ is the ring of twisted Laurent power series in t with coefficients in
+RG
+ker ϕ, where t ∈ G is such that ϕ(t) is the positive generator of Z, and
+the twisting comes from the conjugation action of t on ker ϕ. Novikov
+homology controls the homological finiteness properties of ker ϕ.
+   The first observation we make is that vanishing of Novikov homology
+also gives vanishing of Novikov cohomology (Corollary 3.2). This has
+already been used in a more restricted form in [BKK25]. Then we
+formulate a long exact sequence relating the Novikov cohomology of
+G, and the cohomology at infinity of G and ker ϕ (Proposition 3.4).
+This is essentially enough to prove Theorem D. A similar long exact
+sequence appeared already in [Fis24b].
+   The final technical novelty is Proposition 3.6, in which we show that
+having vanishing Novikov homology over Q gives analogous vanishing
+for finite prime fields Fp , except possibly for finitely many primes.
+   We then turn our attention to a RFRS group G. We fix a collection
+                                               (2)
+of fields K, and prove that vanishing of βi (G; K) for all i ⩽ n and
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                    5
+
+all fields K ∈ K is equivalent to virtual algebraic fibring with kernel
+of type FPn (K) for every K ∈ K simultaneously (Theorem 5.3). This
+holds when K satisfies a certain property – the two key cases are that
+of a single field, or all prime fields. In the latter case, this relies on
+Proposition 3.6; in both cases we need the virtual algebraic fibring
+theorems of the first and third authors.
+   Finally, for RFRS Poincaré-duality groups, we combine Theorem 5.3,
+the vanishing of Novikov cohomology, and Theorem D, and obtain The-
+orem B as a result.
+   The entire paper is written in the generality of group pairs (G, H).
+This makes the arguments perhaps a little less transparent, but is natu-
+ral, since for both aspherical manifolds and Poincaré-duality groups one
+often wants to argue by using manifolds with boundary or Poincaré-
+duality pairs.
+
+Acknowledgements. The first author is grateful to Andrei Jaikin-
+Zapirain for a useful correspondence and is supported by the National
+Science and Engineering Research Council of Canada (ref. no. 567804-
+2022).
+   The second author gratefully acknowledges support from the Royal
+Society through the Newton International Fellowship (award number:
+NIF\R1\231857).
+   The third author is grateful to Sami Douba for raising the question
+of one-endedness of algebraic fibres.
+   This work has received funding from the European Research Council
+(ERC) under the European Union’s Horizon 2020 research and innova-
+tion programme (Grant agreement No. 850930).
+   For the purpose of Open Access, the authors have applied a CC BY
+public copyright licence to any Author Accepted Manuscript (AAM)
+version arising from this submission.
+
+                          2. Preliminaries
+2.1. Modules. Throughout, all rings will be associative, unital, and
+non-zero. The symbol R will always denote such a ring.
+   In Sections 2.7 and 5.2 we will be more restrictive, and will only look
+at commutative rings. In fact, the true focus of the paper is the ring
+Z and various fields.
+   We will have a preference for left modules; in particular, resolu-
+tions will be by left modules. This means that the natural modules
+to consider as coefficients in cohomology will be left modules, but in
+homology one should use right modules. It is however customary to
+follow [Bro82], and to put left modules as coefficients in homology as
+well: when computing homology with coefficients in a left module M ,
+we tensor a resolution on the left with M ∗ , the right module obtained
+from M by twisting the group action of G by the anti-automorphism
+6       SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+g 7→ g −1 . When M is a bimodule, its left-module structure is used in
+the computation of homology, but its right-module structure remains
+– after twisting, it turns into a left-module structure and descends to
+a left-module structure for the homology.
+2.2. Characters. Let G be a finitely generated group. The character
+cone of G is the set S(G) of non-zero characters ϕ : G → R; alterna-
+tively,
+                      S(G) = H1 (G; R) ∖ {0}.
+Then S(G) inherits a topology by viewing it as a subspace of
+                        H1 (G; R) ∼
+                                  = Rβ1 (G) .
+The elements of S(G) will be called characters.
+  When G0 is a finite-index subgroup of G then S(G) is naturally a
+subspace of S(G0 ). For a general subgroup H ⩽ G we have the induced
+continuous map H1 (G; R) → H1 (H; R), which we may restrict to S(G),
+but its image is not guaranteed to lie in S(H).
+2.3. Novikov rings. Given a group G we denote the group ring of G
+with coefficients in R by RG. We will identify RG with the abelian
+group of functions G → R of finite support, where the support supp x of
+x : G → R is x−1 (R∖{0}). Multiplication is then given by convolution.
+   Given a homomorphism ϕ : G → R, we define the Novikov ring of
+G with respect to ϕ, denoted RG d ϕ , to be the abelian group of those
+functions G → R whose support intersected with ϕ−1 ((−∞, κ]) is finite
+for every κ ∈ R. Convolution endows this abelian group with a ring
+structure.
+                     d ϕ contains RG, and hence is naturally an RG-
+   The Novikov ring RG
+bimodule.
+   Given an element x : G → R of the Novikov ring RG d ϕ and a constant
+κ ∈ R, we define the truncation of x at κ to be the function G → R
+with                       
+                              x(g) if ϕ(g) ⩽ κ,
+                      g 7→
+                                0    otherwise.
+It follows immediately from the definition of the Novikov ring that
+such a truncation is actually a function of finite support, and hence an
+element of the group ring RG.
+              d ϕ , we say that it has positive support if
+   Given x ∈ RG
+                         ϕ(supp x) ⊆ (0, ∞).
+For every x, the truncation x of x at 0 has the property that x − x has
+positive support.
+  There is an alternative way of viewing Novikov rings when im(ϕ) ∼= Z:
+take t ∈ G such that ϕ(t) is the positive generator of im(ϕ), with
+the ordering inherited from im(ϕ) < R. As an R(ker ϕ)-module, the
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                       7
+
+                   ϕ
+Novikov ring RG
+              d is isomorphic to the ring of twisted Laurent series
+over R(ker ϕ) with variable t, with twisting induced by conjugation.
+                                                                  dϕ
+                          as an R ker ϕ-module, the Novikov ring RG
+  Either way, we see that Q
+embeds into the module i∈Z (R ker ϕ)ti , the module of all functions
+G → R whose support intersected with ϕ−1 ([−κ, κ]) is finite for every
+κ ∈ R. This latter module is easily seen to be an RG-bimodule.
+  If H ⩽ G is a finite-index subgroup, it is easy to see that RG  dϕ
+coincides as an RG-module with the RG-module induced from the
+RH-module RH d ϕ|H .
+  For general subgroups, we have the following.
+Lemma 2.1. Let G be a group, let R be a ring, and let H ⩽ G be a
+                    d ϕ ) = 0 for some ϕ : G → R and n ⩾ 0, then
+subgroup. If Hn (H; RG
+       d ϕ|H ) = 0.
+Hn (H; RH
+                         d ϕ are functions G → R, we can restrict
+Proof. Since elements of RG
+them to H to obtain an RH-module homomorphism RG d ϕ → RHd ϕ|H .
+                      d ϕ|H ,→ RG
+The natural inclusion RH        d ϕ splits this homomorphism, which
+           d ϕ|H is a direct summand of RG
+shows that RH                            d ϕ ; the result then follows
+at once.                                                            □
+
+2.4. Finiteness properties. We will follow the standard (that is,
+Bieri’s [Bie81]) notation for finiteness properties. In particular, a group
+G will be of type FPn (R) if the trivial RG-module R admits a resolution
+by left projective RG-modules
+                        · · · → P 1 → P0 → R → 0
+with Pi finitely generated for every i ⩽ n (we allow n = ∞ here); the
+group will be of type FP(R) if there is a finite resolution of R by finitely
+generated projective modules.
+   If the ring R is not specified, then we are taking the respective prop-
+erty over Z; this is reasonable, since being of type FPn (Z) implies being
+of type FPn (R) for every ring R. More generally, if S is an R-algebra,
+then being of type FPn (R) implies being of type FPn (S).
+   All of the finiteness properties listed here pass to subgroups of finite
+index.
+   We say that a group G has cohomological dimension n over R if the
+trivial RG-module R admits a projective resolution of length n, but
+does not admit such a resolution of length n−1. We write cdR (G) = n.
+   We always have cdR (G) ⩽ n if Hi (G; M ) = 0 for every RG-module M
+and all i > n – this follows from [Bro82, Sections III.7 and VIII.2]. In
+fact, an alternative definition of cdR (G) is that it is the supremal integer
+n for which there exists an RG-module M such that Hn (G; M ) ̸= 0.
+8             SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+   If G is a group of type FP(R), we have cdR (G) = n if and only if
+H (G; RG) = 0 for all i > n and Hn (G; RG) ̸= 0. This is proved pre-
+    i
+
+cisely like [Bro82, Proposition VIII.6.7] by changing coefficients from
+Z to R.
+   As before, cd stands for cdZ , which is again sensible notation since
+cdZ (G) ⩾ cdR (G) for every group G and every ring R.
+2.5. Chain contractions. Throughout the article, we will make mul-
+tiple uses of chain contractions, which we introduce here. Let R be a
+ring and let
+                          · · · → C1 → C0 → 0
+be a chain complex of free R-modules with boundary maps
+                                  ∂i : Ci → Ci−1 .
+A chain contraction of C• is a collection of R-module homomorphisms
+si : Ci → Ci+1 such that
+                               idCi = ∂i si−1 + si ∂i+1
+for all i ⩾ 0, with s−1 = 0. If there only exist maps si satisfying the
+same condition for 0 ⩽ i ⩽ n, then we call the collection s0 , s1 , . . . , sn
+a partial chain contraction of length n of C• . By a slight abuse of
+terminology, we will also refer to the individual maps si as chain con-
+tractions. It is clear that if there exists a partial chain contraction of
+length n, then Hi (C• ) = 0 for all i ⩽ n. An easy exercise in homological
+algebra shows that the converse is also true.
+Lemma 2.2. Let C• be a chain complex of free R-modules with no
+negative terms. Then Hi (C• ) = 0 for all i ⩽ n if and only if C• admits
+a partial chain contraction of length n.
+        We will often use this result in the following guise.
+Corollary 2.3. Let G be a group, let R be a ring, and let S be an
+RG-algebra. Let C• → R be a free resolution of the trivial RG-module
+R. Then Hi (G; S) = 0 for all i ⩽ n if and only if the chain complex
+S ⊗RG C• of free left S-modules admits a partial chain contraction of
+length n.
+   As an immediate consequence we see that if S ′ is another RG-algebra
+and there is a morphism σ : S → S ′ of RG-algebras, then vanishing of
+Hi (G; S) for all i ⩽ n implies the vanishing of Hi (G; S ′ ) for all i ⩽ n.
+To see this, apply σ to a partial chain contraction over S.
+2.6. Generalised Sikorav’s theorem. In his thesis [Sik87, Chapter
+IV], Sikorav proved that if ϕ : G → Z is an epimorphism with finitely
+generated domain, then ker ϕ is finitely generated if and only if
+                                   ϕ                      −ϕ
+                         H1 (G; ZG
+                                ” ) = 0 = H1 (G; ZG
+                                                 ”             ).
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                   9
+
+Throughout the article, we will abbreviate such vanishing by writing
+                                     ±ϕ
+                           H1 (G; ZG
+                                  ”       ) = 0,
+and similarly for Novikov rings over other coefficients.
+   Sikorav formulated his theorem in the language of Bieri–Neumann–
+Strebel (BNS) invariants [BNS87], which has the advantage of giving
+                                                          ϕ
+meaning to the vanishing of Novikov homology for ZG   ” only; we are
+not going to do that, since the introduction of the BNS-invariants is not
+necessary, and we will always have the vanishing of Novikov homologies
+         ±ϕ
+over ZG
+      ” .
+   A related result was proved by Ranicki [Ran95, Theorem 1] – here
+the statement connects the vanishing of Novikov homologies in all di-
+mensions to higher finiteness properties of the kernel, but only applies
+in the very restricted situation where G ∼= ker ϕ × im(ϕ).
+   Combining the initial insight of Sikorav with the work of Bieri, Renz,
+and Schweitzer [BR88, Bie07], the first author proved the following
+result.
+Theorem 2.4 (Generalised Sikorav’s Theorem, [Fis24a, Theorems 5.3
+and 6.5]). Let G be a group of type FPn (R) for some ring R, and let
+ϕ : G → Z be an epimorphism. The following are equivalent:
+   (1) ker ϕ is of type FPn (R);
+              d ±ϕ ) = 0 for all i ⩽ n.
+   (2) Hi (G; RG
+  A character ϕ satisfying any of the two equivalent conditions will be
+called FPn (R)-fibred.
+Remark 2.5. Being FPn (R)-fibred is an open condition, that is, if ϕ
+is FPn (R)-fibred then there exists an open neighbourhood U of ϕ in
+S(G) such that every character in U is FPn (R)-fibred. For a proof, see
+[BR88, Theorems A and B].
+2.7. Poincaré duality and group pairs. Throughout this subsec-
+tion, R will be a commutative ring. This assumption seems necessary
+to ensure that the theory of Poincaré duality behaves well under pass-
+ing to finite-index overgroups. However, we will never perform the
+operation of passing to such an overgroup, and hence it is possible (in-
+deed, likely) that our discussion holds verbatim for rings R that are
+not necessarily commutative.
+Definition 2.6 (Poincaré-duality group). We will say that a group G
+is a Poincaré-duality group of dimension n over R, or a PDnR -group for
+short, if the group is of type FP(R) and
+                                   
+                                      0 if i ̸= n,
+                     H (G; RG) ∼
+                       i
+                                 =
+                                      R if i = n,
+10      SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+where the isomorphism is one of R-modules. The action of RG on
+R = Hn (G; RG) is the orientation action; if it is trivial, the PDnR
+group is orientable.
+
+   It follows immediately from the definition that cdR (G) = n.
+   The definition above follows that of Bieri [Bie72, Bie81] for R = Z,
+and that of Dicks–Dunwoody [DD89, Chapter V] for arbitrary commu-
+tative coefficients (though [Bie72, Section 3.2] briefly discusses the case
+of a general R, quickly focusing on R = Q).
+   We are not requiring the group G above to be finitely presented –
+this way we deviate from the alternative definition of Poincaré-duality
+groups due to Wall [Wal67]. Also, when R = Z, the underlying ring is
+often purged from the notation, and one talks simply about (orientable)
+Poincaré-duality groups in dimension n.
+   By a group pair (G, H) we will understand a pair of a group G and
+a tuple H of subgroups of G (formally, a function from some possibly
+infinite indexing set to the set of subgroups of G). If H is non-empty, we
+defineL the associated module ∆G/H to be the kernel of the augmentation
+map H∈H RG/H → R, with
+
+                          RG/H = RG ⊗RH R
+
+being the free abelian group on the left cosets of H, with the obvious
+G action.
+  Let (G, H) be a group pair and let M be an RG-module. The ho-
+mology and cohomology of the pair (G, H) with coefficients in M are
+defined by
+
+                   Hi (G, H; M ) = TorRG
+                                      i−1 (∆G/H , M )
+
+                   Hi (G, H; M ) = ExtRG
+                                      i−1
+                                          (∆G/H , M )
+
+respectively, provided H ̸= ∅ (see [BE78, Section I.1] and [DD89, Sec-
+tion V.7]). By convention, Hi (G, ∅; M ) = Hi (G; M ), and similarly for
+cohomology. This definition is quite useful, because one immediately
+sees that given a short exact sequence 0 → M1 → M2 → M3 → 0 of
+RG-modules, there are associated long exact sequences in the homology
+and cohomology of pairs.
+   Group pairs appear naturally, as they correspond to the notion of
+a pair of spaces. Crucially, group pairs satisfy the familiar long ex-
+act sequence in cohomology, which is just the long exact sequence in
+Ext•RG (−, M ) associated to the short exact sequence
+                                 M
+                  0 → ∆G/H →           RG/H → R → 0.
+                                 H∈H
+          VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                 11
+
+Proposition 2.7. Let (G, H) be a group pair, and let M be an RG-
+module. We have the following long exact sequence in cohomology
+            Hn (G, H; M )     Hn (G; M )            n
+                                           Q
+      ···                                    H∈H H (H; M )
+
+
+
+
+            Hn+1 (G, H; M )    ···
+where M is an RH-module by restriction.
+   When R = Z, the above is [BE78, Proposition 1.1]. For general R,
+one easily obtains an analogous long exact sequence in homology.
+   Given a subgroup G0 ⩽ G, we define HG0 to be the tuple ob-
+tained from H by replacing each H ∈ H by the subgroups of the
+form x−1 Hx ∩ G0 where x runs over the double-coset representatives of
+H\G/G0 . One readily checks that ∆G/H restricted to being an RG0 -
+module is isomorphic to ∆G0 /HG0 .
+   When G0 = ker ϕ for a homomorphism ϕ with domain G, we refer
+to Hker ϕ as Hϕ .
+Definition 2.8 (Poincaré-duality pair). Following [BE78,DD89], given
+a group G and a non-empty tuple H of subgroups of G, we say that
+(G, H) is an orientable Poincaré-duality pair of dimension n over R (or
+orientable PDnR -pair ) if the group G is of type FP(R) and
+                                 
+                   i          ∼      0      if i ̸= n − 1,
+                 H (G; RG) =
+                                   ∆G/H if i = n − 1,
+where the isomorphism is that of RG-modules.
+  For convenience, we define (G, ∅) to be an orientable Poincaré-
+duality pair of dimension n over R if G is an orientable PDnR -group.
+  If R is not specified, then it is taken to be Z.
+  Again, directly from the definition follows that cdR (G) = n − 1.
+  Replacing Z by R in the proof of [BE78, Theorem 6.2], and noting
+that we are in the orientable case, yields that (G, H) for H =
+                                                             ̸ ∅ is an
+              n
+orientable PDR -pair if and only if
+                                    
+                                       0 if i ̸= n,
+                   H (G, H; RG) ∼
+                     i
+                                  =
+                                       R if i = n,
+as RG-modules, where the action on R is trivial, and the pair (G, H) is
+of type FP(R), meaning that ∆G/H admits a finite resolution by finitely
+generated projective RG-modules (see also [DD89, Definition V.7.1]).
+Proposition 2.9. If (G, H) is an orientable PDnR -pair with H = ̸ ∅,
+                                                            n−1
+then H is finite, and every H ∈ H is itself an orientable PDR -group.
+Proof. When R = Z, this is [BE78, Theorem 4.2(ii) and (iii)]. For gen-
+eral commutative R, the second assertion is covered by [DD89, Theorem
+V.7.11].
+12       SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+   Since the RG-module ∆G/H admits a finite resolution by finitely
+generated projective RG-modules, it must be finitely generated, which
+is only possible if H is finite.                                   □
+Remark 2.10. Somewhat unsurprisingly, Poincaré-duality groups and
+pairs have the familiar duality between between homology and coho-
+mology. Concretely, given an RG-module M , a possibly empty H, and
+an orientable PDnR -pair (G, H) we have natural isomorphisms
+                      Hi (G, H; M ) ∼
+                                    = Hn−i (G; M ),
+for all integers i, and similarly starting from homology of the pair, see
+[BE78, Definition 4.1 and Theorem 6.2] and [DD89, Definition V.7.1].
+  As in the case of finiteness properties, if (G, H) is an orientable PDnR -
+pair and S is an R-algebra, then (G, H) is an orientable PDnS -pair (see
+[DD89, Proposition V.3.7]). We will use this fact in a situation where
+R is a prime field and S is another field of the same characteristic.
+2.8. RFRS. A group G is residually finite rationally solvable (RFRS)
+if it admits a normal residual chain G = G0 ⩾ G1 ⩾ G2 ⩾ . . . of
+finite-index subgroups such that
+                  ker(Gi → Q ⊗Z Gi /[Gi , Gi ]) ⩽ Gi+1
+for all i ⩾ 0. For finitely generated groups, a simpler characterisation
+was recently obtained by Okun, Schreve, and the first and third au-
+thors: a finitely generated group G is RFRS if and only if it is residually
+{virtually abelian and locally indicable} [OS25, Theorem 6.3]. Since for
+finitely generated groups being virtually abelian and locally indicable
+is the same as being virtually abelian and poly-Z, we see that a finitely
+generated group G is RFRS if and only if it is residually {virtually
+abelian and poly-Z} as well.
+   The RFRS condition was introduced by Agol in [Ago08], where he
+proved that a compact, irreducible 3-manifold M with virtually RFRS
+fundamental group virtually fibres over S 1 if and only if χ(M ) = 0.
+2.9. L2 -Betti numbers over fields. Since our focus in this paper
+is on RFRS groups, we will present the algebraic approach to L2 -
+homology via Linnell skew-fields. We will also need the positive char-
+acteristic version of L2 -homology, that is (for now) only defined in an
+algebraic way.
+   When G is RFRS and K is a field, Jaikin-Zapirain in [JZ21] con-
+structs a skew-field DKG that contains KG as a subring, and has two
+additional properties: the embedding KG ⊆ DKG is Hughes-free, and
+the skew-field DKG is universal. The precise meaning of these adjec-
+tives is not really essential for us here; one important consequence of
+Hughes-freeness is that DKG is unique up to isomorphisms of skew-fields
+containing KG that fix KG (this result is due to Hughes [Hug70]). We
+will therefore treat DKG as well-defined unique objects.
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                    13
+
+  When K = Q, the construction of DQG is older, as it goes back to
+Linnell [Lin93], and it works in a much greater generality than that of
+RFRS groups. Jaikin-Zapirain’s definition also covers a larger class of
+groups.
+Definition 2.11. Given a RFRS group G and a field K, we define
+               (2)
+             βi (G; K) = dimDKG Hi (G; DKG ) ∈ N ⊔ {∞}
+to be the ith L2 -Betti number of G over K.
+                                             (2)
+   The notation stems from the fact that βi (G; Q) coincides with the
+                                (2)
+classical ith L2 -Betti number βi (G). More information about this can
+be found in [Lin93] and [Lüc02, Chapter 10].
+   One of the key properties of L2 -Betti numbers over fields is the way
+they behave under passing to finite index.
+Lemma 2.12 ([Fis24a, Lemma 6.3]). Let G0 be a finite-index subgroup
+of a RFRS group G. For all i and all fields K we have
+                      (2)                   (2)
+                     βi (G0 ; K) = |G : G0 |βi (G; K).
+   Another important property of L2 -Betti numbers is that they vanish
+for mapping tori.
+Theorem 2.13 (Mapping Torus Theorem, [Fis24a, Theorem 6.4]).
+Suppose that G is a RFRS group, that ϕ : G → Z is an epimorphism,
+                                                         (2)
+and let K be a field. If ker ϕ is of type FPn (K), then βi (G; K) = 0 for
+every i ⩽ n.
+   For K = Q this is a celebrated theorem of Lück [Lüc94] (see also
+[Lüc02, Theorem 7.2]), which holds for many more groups.
+   The stated theorem can be generalised also in another way: instead
+                                                         (2)
+of requiring ker ϕ to be of type FP(K), if we insist on βi (ker ϕ; K) < ∞
+for all i, then the conclusion holds even when the quotient Z is replaced
+by any infinite amenable group [FK24, Proposition 3.18] – when K = Q,
+this result is due to Gaboriau [Gab02, Théorème 6.6].
+   The Mapping Torus Theorem has a partial inverse, the Virtual Al-
+gebraic Fibring Theorem. We will need more than the final statement,
+and to this end we need to introduce a couple of additional objects.
+   There are a number of consequences of Hughes-freeness: when H is
+a subgroup of G, we have a natural embedding DKH ⊆ DKG . If H
+is normal, the conjugation action of G on H induces an action of G
+on DKH , and this can be used to define a crossed product DKH G/H.
+The crossed product naturally sits inside DKG , and when H is of finite
+index, the two rings coincide [JZ21, Proposition 2.2].
+   Let G0 be a finite-index normal subgroup of G, and let ϕ : G0 → R be
+a non-trivial homomorphism. We may view KG0 as a crossed product
+(K ker ϕ) im(ϕ). This ring sits inside DK ker ϕ (im ϕ), and its Ore locali-
+sation, which is DKG0 , lies inside the Malcev–Neumann completion of
+14            SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+DK ker ϕ (im ϕ) with respect to the biorder on im ϕ inherited from R.
+                                        id                            ϕ
+This last ring contains D¤ K ker ϕ im(ϕ) , which in turn contains KG0 .
+                                                                  ‘
+All of this yoga shows that it makes sense to consider the intersection
+                   ϕ
+of DKG and KG
+          0
+               ‘0 . For an element of DKG , we will say that it lies in
+                                                 0
+      ϕ
+‘0 if it is contained in this intersection.
+KG
+  Given a subset U ⊆ S(G0 ), we will say that an element of DKG0 lies
+      U                  ϕ
+in KG                ‘0 for all ϕ ∈ U . All such elements form a
+   ‘0 if it lies in KG
+                                             U
+ring that we will denote by DKG0 ∩ KG‘0 . The key point here is that
+                                                             ϕ
+for different characters ϕ, we are intersecting DKG0 and KG
+                                                         ‘0 inside
+different ambient rings.
+   When U is invariant under the conjugation action of G (or, equiva-
+lently, of G/G0 ), then we may form a crossed product
+                                         U
+                            (DKG0 ∩ KG
+                                    ‘0 )G/G0 .
+
+Since DKG = DKG0 G/G0 , we may again talk about elements of DKG
+                   U
+lying in (DKG ∩ KG
+                ‘0 )G/G0 .
+                  0
+
+
+Theorem 2.14. Let G be a finitely generated RFRS group, and let
+K be a field. For every finite subset S ⊆ DKG there exists a normal
+subgroup G0 ⩽ G of finite index and an open subset U ⊆ S(G0 ) such
+that
+     (1) U is invariant under the conjugation action of G and under the
+         antipodal map;
+         ˚, the interior of the closure of U , contains S(G);
+     (2) U
+                                                    U
+     (3) all the elements of S lie in (DKG ∩ KG
+                                             0
+                                                ‘0 )G/G0 .
+
+   The theorem is not stated this way anywhere. It is a slight weakening
+of [Kie20, Theorem 4.13] and [JZ21, Theorem 5.10], see also [Fis24a,
+OS25].
+   The Virtual Algebraic Fibring Theorem is a direct consequence.
+Theorem 2.15 (Virtual Algebraic Fibring Theorem, [Fis24a, Theorem
+6.6]). Let K be a field and let G be a virtually RFRS group of type
+FPn (K). The following are equivalent.
+     (1) There exists a finite-index subgroup G0 in G and an epimor-
+         phism ϕ : G0 → Z such that ker ϕ is of type FPn (K);
+          (2)
+     (2) βi (G; K) = 0 for all i ⩽ n.
+
+                               3. Main tools
+3.1. Novikov cohomology. The following observation appeared al-
+ready in [BKK25].
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                 15
+
+Proposition 3.1. Let C• be a chain complex of free left RG-modules
+                               d ϕ ⊗RG C• ) = 0 for all i ⩽ n then
+without negative terms. If Hi (RG
+                                             ϕ
+                        Hi (HomRG (C• , RG
+                                        d )) = 0
+
+for all i ⩽ n.
+                                                 d ϕ ⊗RG C• ) allows us
+Proof. Let C• = (Ci , ∂i ). The vanishing of Hi (RG
+                                                  d ϕ -homomorphisms
+to construct a partial chain contraction, that is RG
+     d ϕ ⊗RG Ci → RG
+si : RG             d ϕ ⊗RG Ci+1 for i ⩽ n such that
+
+                      ∂i si−1 + si ∂i+1 = idRG
+                                            d ϕ⊗     RG Ci
+
+
+for i ⩽ n, with s−1 = 0. (We are abusing notation slightly, since we use
+                                         d ϕ ⊗RG Ci → RG
+∂i here to mean its natural extension to RG            d ϕ ⊗RG Ci−1 .)
+                                      d ϕ . Since RG
+ Take i ⩽ n and an i-cocycle z : Ci → RG          d ϕ is a left
+d ϕ -module, the cocycle z extends to
+RG
+                     d ϕ ⊗RG Ci → RG
+                 z : RG           d ϕ , ξ ⊗ c 7→ ξ.z(c).
+
+We get
+                    z = (∂i si−1 + si ∂i+1 )z = ∂i si−1 z,
+and restricting both sides to Ci gives
+                            z = ∂i ◦ (si−1 z)|Ci ,
+showing that z is a coboundary.                                       □
+
+   Applying the above to C• being a free resolution of R yields the
+following.
+Corollary 3.2. Let G be a group and ϕ : G → R a homomorphism. If
+                                            d −ϕ ) = 0 for all i ⩽ n.
+       d ϕ ) = 0 for all i ⩽ n, then Hi (G; RG
+Hi (G; RG
+
+  The change of coefficients from RG        d −ϕ is an artifact of no-
+                                    d ϕ to RG
+                                                d ϕ in Hi (G; RG
+tation: as explained in Section 2.1, the module RG            d ϕ ) is
+a left RG-module. But when computing homology, we tensor C• on
+                                                      d −ϕ as a right
+                               d ϕ )∗ , isomorphic to RG
+the left by the right module (RG
+RG-module.
+  Combining the above with Theorem 2.4 yields the following.
+Corollary 3.3. Let G be a group and ϕ : G → Z an epimorphism. The
+following are equivalent:
+   (1) ker ϕ is of type FPn (R);
+              d ±ϕ ) = 0 = Hi (G; RG
+   (2) Hi (G; RG                  d ±ϕ ) for all i ⩽ n.
+16      SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+3.2. Long exact sequence. We will now introduce the key tool.
+Proposition 3.4. Let R be a ring. Let G be a group with an epimor-
+phism ϕ : G → Z with kernel K. Suppose that H is a (possibly empty)
+tuple of subgroups of G. The following long sequence of RK-modules
+is exact.
+
+···    Hn (G, H; RG)     Hn (G, H; RG    d −ϕ )
+                                   d ϕ ⊕ RG          Hn (K, Hϕ ; RK)
+
+
+
+      Hn+1 (G, H; RG)    ···
+Proof. Using the notation of Section 2.3, consider the short exact se-
+quence of RG-bimodules
+                                d −ϕ →
+                         d ϕ ⊕ RG
+                                          Y
+             0 → RG → RG                     RKti → 0,
+                                           i∈Z
+where the second map is the diagonal embedding, and the third map
+is the difference of the embeddings. If H is empty, then an applica-
+tion of Shapiro’s lemma shows that the desired long exact sequence
+is just the long exact sequence in cohomology associated to the short
+exact sequence above. If H is non-empty, then the long exact sequence
+in the statement of the theorem is just the long exact sequence in
+Ext•RG (∆G/H , −) associated to the short exact sequence above. This is
+because
+                                    !
+                              RKti ∼
+                           Y
+            Ext•RG ∆G/H ,              = Ext•RK (∆G/H , RK)
+                          i∈Z
+by Shapiro’s lemma, and since the restricted RK-module ∆G/H is just
+∆K/Hϕ , we have
+               Extn (∆G/H , RK) ∼
+                  RK             = Hn+1 (K, Hϕ ; RK),
+as desired.                                                            □
+Remark 3.5. There is a more general long exact sequence that is useful
+to study the cohomological dimension of co-abelian subgroups, which
+was used in [Fis24b]. Let (G, H) be a group pair, let ϕ : G → R be a
+                   Q K. Moreover, let M be any left RK-module.
+character with kernel
+                                                          ±ϕ
+                                                                  The
+coinduced module t∈G/K M t has a pair of submodules L consisting
+of the sequences (mt t) for which there exists α ∈ R such that mt = 0
+for all ±t
+         Q< ±α (where the order is taken in R ⊇ G/K). The inclusions
+  ±ϕ
+L ,→ t∈G/K M t induce a short exact sequence
+                                          Y
+                0 → N → Lϕ ⊕ L−ϕ →             Mt → 0
+                                        t∈G/K
+
+with N being the RG-module induced from M , whence we obtain long
+exact sequences in Hn (G; −) and Hn (G, H; −).
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                     17
+
+3.3. Reduction to finitely many primes. Suppose that P is a col-
+lection of primes. We denote by ZP the ring obtained by localising Z
+at the multiplicative set
+                    (m                               )
+                      Y
+                          pi ni | m, ni , ∈ N, pi ∈ P .
+                       i=1
+A more pedestrian description of ZP is as the subring of Q whose ele-
+ments can be expressed as fractions with denominators being products
+of powers of primes in P.
+   Given a matrix M over QGd ϕ , we say that M involves finitely many
+primes if and only if there is a finite set of primes P such that the
+                           ϕ
+entries of M are all in Z‘
+                         PG .
+
+Proposition 3.6. Let G be a group, let φ : G → R be a non-trivial
+character, and let C• be a chain complex of finitely generated projective
+left ZG-modules without negative terms. If Hi (QG   d ϕ ⊗ZG C• ) = 0 for
+all i ⩽ n, then there is a finite collection of primes P such that
+                                  ϕ
+                               P G ⊗ZG C• ) = 0
+                          Hi (Z‘
+for all i ⩽ n.
+Proof. By taking direct sums with projective modules, we can mod-
+ify the chain complex (without changing its homology over arbitrary
+coefficients) so that it consists of finitely generated free modules. We
+fix bases for the free modules and identify the boundary maps with
+matrices over the appropriate rings. We will inductively define chain
+contractions
+                              d ϕ ⊗ZG Ci → QG
+                         si : QG             d ϕ ⊗ZG Ci+1
+for i = 0, . . . , n involving finitely many primes.
+   We set s−1 to be the zero map, which trivially involves finitely many
+primes. For some 0 ⩽ i ⩽ n, suppose we have defined chain con-
+tractions s0 , . . . , si−1 involving finitely many primes. By acyclicity of
+d ϕ ⊗ZG C• , there is a chain contraction
+QG
+                        d ϕ ⊗ZG Ci → QG
+                   σi : QG           d ϕ ⊗ZG Ci+1 ,
+such that ∂i si−1 + σi ∂i+1 = id. We will modify σi to obtain a new
+chain contraction involving only finitely many primes. We form σi by
+truncating the entries of σi at a real number sufficiently large so that
+                         A = id −∂i si−1 − σi ∂i+1
+has all entries of positive support. We have A = (σi − σi )∂i+1 , and
+σi − σi is a matrix over QG, so the matrix A involves finitely many
+                        P ofi the entries of A are positive, id −A is
+primes. Since the supports
+invertible with inverse ∞  i=0 A . Note that
+                       A∂i = (σi − σi )∂i+1 ∂i = 0,
+18        SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+so
+       id = (id −A)−1 (∂i si−1 + σi ∂i+1 ) = ∂i si−1 + (id −A)−1 σi ∂i+1 .
+Thus, we put si = (id −A)−1 σi , and observe that si involves only
+finitely many primes. Letting P be the collection of primes involved in
+the chain contractions s0 , . . . , sn , we conclude that
+                                     ϕ
+                                P G ⊗ZG C• ) = 0
+                           Hi (Z‘
+for i ⩽ n.                                                                   □
+Corollary 3.7. Let G be a group of type FPn and let ϕ : G → R be a
+non-trivial homomorphism.
+                 d ϕ ) = 0 for i ⩽ n, then there is a finite collection of
+   (1) If Hi (G; QG
+                                            ϕ
+         primes P such that Hi (G; Z‘
+                                    P G ) = 0.
+     (2) If cd(G) = n and there is an integer 0 ⩽ j ⩽ n such that
+                                      dϕ) = 0
+                               Hi (G; QG
+         for j ⩽ i ⩽ n, then there is a finite collection of primes P such
+                         ϕ
+         that Hi (G; Z‘
+                      P G ) = 0 for j ⩽ i ⩽ n.
+
+Proof. Item (1) is an immediate consequence of Proposition 3.6. In the
+situation of item (2), there is a resolution 0 → Pn → · · · → P0 → Z → 0
+by finitely generated projective ZG-modules. The Novikov cohomology
+of G is
+                      d ϕ ) = Hi (HomZG (P• , ZG) ⊗ZG RG
+               Hi (G; RG                               dϕ)
+for any ring R, because the modules Pi are finitely generated. The
+result then follows by applying Proposition 3.6 to the chain complex
+             · · · → HomZG (Pn−1 , ZG) → HomZG (Pn , ZG) → 0
+of finitely generated projective ZG-modules.                                 □
+
+                       4. Acyclicity at infinity
+ We will now apply the tools from the previous section to study ho-
+mology at infinity of algebraic fibres.
+Theorem 4.1. Let R be a ring. Let G be a group and ϕ : G → Z an
+epimorphism. If K = ker ϕ is of type FPn (R) then
+                   Hi+1 (G; RG) ∼ = Hi (K; RK)
+as RK-modules for all i < n and Hn (K; RK) is isomorphic as an
+RK-module to a submodule of Hn+1 (G; RG).
+Proof. This follows immediately from Corollary 3.3 and Proposition 3.4,
+taking H = ∅ and noting that
+           Hi (G; RG    d −ϕ ) = Hi (G; RG
+                  d ϕ ⊕ RG                             d −ϕ ).
+                                        d ϕ ) ⊕ Hi (G; RG                    □
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                     19
+
+Remark 4.2. While we find the approach using Novikov rings more
+straightforward, there is also a spectral sequence argument, which we
+sketch here. The Lyndon–Hochschild–Serre spectral sequence associ-
+ated to the extension 1 → K → G → Z → 1 is
+               E2p,q = Hp (Z; Hq (K; RG)) ⇒ Hp+q (G; RG).
+Because K is of type FPn (R), we have
+
+        Hq (K; RG) ∼              RKti ) ∼
+                              M            M
+                     = Hq (K;            =   Hq (K; RK)ti
+                                 i∈Z            i∈Z
+
+for all q ⩽ n. Thus,
+   H0 (Z; Hq (K; RG)) = 0 and          H1 (Z; Hq (K; RG)) ∼
+                                                          = Hq (K; RK)
+for 0 ⩽ q ⩽ n by an easy cohomology computation. The page E2p,q is
+concentrated in the columns 0 and 1, so it follows immediately that
+Hq (K; RK) ∼
+           = Hq+1 (G; RG) for q < n and that
+                       Hn (K; RK) ⩽ Hn+1 (G; RG).
+Corollary 4.3. Let K be a field. Let G be a group with H2 (G; KG) = 0.
+If ϕ : G → Z is an epimorphism with finitely generated kernel, then
+ker ϕ has at most one end.
+Proof. Since ker ϕ is finitely generated, it is of type FP1 (K). Hence
+H1 (ker ϕ; K ker ϕ) = 0. By [Swa69, Lemma 3.5], this statement being
+true for one field implies it being true for all fields, and in particular
+for the field of two elements F2 . Finally, H1 (ker ϕ; F2 ker ϕ) = 0 implies
+that ker ϕ has at most one end – this is due to Specker [Spe49].          □
+Corollary E. Let M be a closed aspherical manifold of dimension at
+least three. If ϕ : π1 (M ) → Z is an epimorphism with finitely generated
+kernel, then the kernel has only one end.
+Proof. The fact that H2 (π1 (M ); Qπ1 (M )) = 0 follows directly from
+Poincaré duality and the fact that Hi (π1 (M ); Qπ1 (M )) = 0 for all
+i > 0, which follows from Shapiro’s lemma.
+   We conclude that ker ϕ has at most one end. If it had zero ends,
+it would be finite, but π1 M is torsion free, and hence ker ϕ would
+be trivial, forcing π1 M ∼
+                         = Z. But this implies that the cohomological
+dimension of π1 M is one, contradicting the existence of the fundamental
+class of M .                                                          □
+
+   This confirms the intuition of Douba, expressed after the statement
+of [Dou24, Theorem 1], that his Zariski-dense subgroup of SL5 (Z) that
+is finitely generated but not finitely presented has one end – the sub-
+group arises precisely as a kernel of an epimorphism ϕ : π1 (M ) → Z
+where M is a closed four-dimensional hyperbolic manifold.
+20      SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+Remark 4.4. A natural source of examples of groups with
+                             H2 (G; KG) = 0,
+with K being a field, is provided by the class of duality groups. A group
+G of type FP is an n-dimensional duality group if Hi (G; ZG) = 0 for all
+i ̸= n and Hn (G; ZG) is torsion-free as a Z-module. Examples of dual-
+ity groups include Poincaré-duality groups, and therefore fundamental
+group of closed aspherical manifolds, but they also include the torsion-
+free finite-index subgroups of arithmetic groups [BS73], mapping class
+groups [Har86], and outer automorphism groups of free groups [BF00].
+Note also that if (G, H) is a Poincaré-duality pair of dimension at least
+4 over some field K, then H2 (G; KG) vanishes. Thus, algebraic fibres
+in any of the groups listed above are one-ended.
+
+                  5. Virtual algebraic fibring
+5.1. RFRS groups. We now give a sharpening of Theorem 2.14 which
+holds for group pairs.
+Proposition 5.1. Let G be a RFRS group of type FPn (K) for some
+field K and let H be a (possibly empty) finite tuple of subgroups of G,
+where each H ∈ H is of type FPn (K). If
+                       (2)             (2)
+                      βi (G; K) = βi (H; K) = 0
+for all i ⩽ n and each H ∈ H, then there is a finite-index normal
+subgroup G0 ⩽ G and an antipodally symmetric open set U ⊆ S(G0 ),
+                                                       ˚ ⊇ S(G) and
+invariant under the conjugation action of G, such that U
+                              ϕ
+                  Hi (G0 ; KG            d ϕ|H ) = 0
+                           ‘0 ) = Hi (H; KH
+
+for all i ⩽ n, H ∈ HG0 , and ϕ ∈ U .
+Proof. We pick a free resolution of the trivial KG-module K in which
+the modules up to degree n are finitely generated, and endow the free
+modules with bases; we pick analogous resolutions for every group
+H ∈ H. Since the homologies of the groups G and H over DKG
+and DKH , respectively, vanish up to degree n, we may build partial
+chain contractions witnessing this vanishing. Each such partial chain
+contraction consists of n + 1 finite matrices over DKG , since DKH is nat-
+urally a sub-skew-field of DKG ; since H is finite, altogether this gives
+finitely many finite matrices over DKG . By Theorem 2.14, there exists
+a finite-index normal subgroup G0 of G and an antipodally symmetric
+open set U ⊆ S(G0 ) such that all of the entries of the matrices lie over
+              U
+(DKG0 ∩ KG ‘0 )G/G0 . Moreover, U    ˚ ⊇ S(G) and U is invariant under
+the conjugation action of G on S(G0 ).
+               VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                    21
+
+                                                                       ϕ
+      We take a map ϕ : G0 → R from U , and obtain Hi (G0 ; KG
+                                                            ‘0 ) = 0
+   for every i ⩽ n, and
+                                                 ϕ
+                          Hi (G0 ∩ g −1 Hg; KG
+                                            ‘0 ) = 0
+   for every H ∈ H, g ∈ G, and i ⩽ n (the fact that we may conjugate H
+                                                             ϕ
+   comes from conjugacy-invariance of U ). Hence, Hi (H; KG
+                                                         ‘0 ) = 0 for
+                                                        d ϕ|H ) = 0
+   every i ⩽ n and every H ∈ HG0 . By Lemma 2.1, Hi (H; KH
+   for every i ⩽ n and every H ∈ HG0 .                           □
+      Since we are interested in both virtual algebraic fibring over a specific
+   field, and over all fields simultaneously, for notational convenience let
+   us consider a set K of fields with a specific property.
+   Definition 5.2. We say that a set of fields K is small if K is finite or
+   if it contains Q and for every prime p it contains only finitely many
+   fields of characteristic p.
+      If K is finite, we will say that a group is of type FPn (K) if it is of
+   type FPn (K) for every K ∈ K; similarly, we define PDnK to mean PDnK
+   for every K ∈ K.
+      When K is infinite, we will say that a group is of type FPn (K) if it is
+   of type FPn ; similarly, we define PDnK to mean PDn .
+   Theorem 5.3. Let K be a small set of fields. Let G be a RFRS group
+   of type FPn (K), and let H be a possibly empty finite tuple of subgroups
+   of G, all of type FPm (K). The following are equivalent:
+       (1) There exists a finite-index subgroup G0 of G and an epimor-
+           phism ϕ : G0 → Z that does not vanish on any of the subgroups
+           in HG0 , such that for all K ∈ K the group ker ϕ is of type
+           FPn (K), and ker ϕ|H ′ is of type FPm (K) for every H ′ ∈ HG0 ;
+                       (2)
+       (2) We have βi (G; K) = 0 for all i ⩽ n and all K ∈ K, and
+             (2)
+           βi (H; K) = 0 for all i ⩽ m, all K ∈ K, and all H ∈ H.
+   Proof. We will prove both implications in turn.
+(1) ⇒ (2) This follows immediately from Theorem 2.13 and Lemma 2.12.
+(2) ⇒ (1) We first suppose that K is infinite, and so Q ∈ K. By Theo-
+          rem 2.4 and Proposition 5.1, there exists a finite-index subgroup
+          G0 ⩽ G and an epimorphism ϕ : G0 → Z such that ker ϕ is of
+          type FPn (Q) and ker ϕ|H is of type FPm (Q) for every H ∈ HG0 .
+            Applying Proposition 3.6 to G0 and each group in HG0 in
+          turn for ϕ and −ϕ, and then using Theorem 2.4, there exists
+          a finite collection of primes P such that all the kernels above
+          are of type FPn (ZP ) or FPm (ZP ), respectively, and hence of type
+          FPn (Fp ) or FPm (Fp ) for all primes not in P, since there is a ring
+          epimorphism ZP → Fp for all primes p ∈        / P. (It is precisely
+          Proposition 3.6 that forces us to assume that G is of type FPn
+          and every H ∈ H is of type FPm .)
+22      SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+          Being of type FPn (Fp ) or FPm (Fp ), the kernels are automati-
+       cally of type FPn (K) or FPm (K), respectively, for every field K
+       of characteristic p. Similarly, being of type FPn (Q) or FPm (Q)
+       takes care of all fields of characteristic 0.
+          Let L be the subset of K consisting of the fields of charac-
+       teristics lying in P. Since K is small, the set L is finite. Our
+       goal now is to show that, up to passing to a further finite-index
+       subgroup, we may arrange for our kernels to also be of type
+       FPn (K) or FPm (K) for every field K ∈ L. If K were finite, then
+       we would have been in this situation to start with, by taking
+       any ϕ and L = K. Hence, from now on we may ignore the case
+       distinction of whether K is infinite.
+          Take L ∈ L. Note that each H ∈ HG0 is commensurable
+                                        (2)
+       to some subgroup in H, so βi (H; K) = 0 for each K ∈ K
+       and i ⩽ m. By Proposition 5.1, there is a finite-index normal
+       subgroup G1 of G0 and an open set V ⊆ S(G1 ) such that
+                               ψ
+                 Hi (G1 ; LG            d ψ|H ) = 0
+                          ‘1 ) = Hj (H; LH
+       for all i ⩽ n, j ⩽ m, ψ ∈ V , and H ∈ HG1 . Moreover,
+       ˚ ⊇ S(G ) and V is invariant under the conjugation action
+       V          0
+       of G0 on S(G1 ) and under the antipodal map.
+          Since vanishing of Novikov homology is an open property for
+       characters, there exists an antipodally symmetric open set W
+       in S(G1 ) containing ϕ|G1 such that for every ψ ∈ W we have
+                               ψ
+                 Hi (G1 ; KG            d ψ|H ) = 0
+                          ‘1 ) = Hj (H; KH
+       for every i ⩽ n, j ⩽ m, H ∈ HG1 , and K ∈ K ∖ L. We easily
+       arrange for W to be invariant under the action of G0 on S(G1 ),
+       since this action factors through the finite group G0 /G1 ; we also
+       easily arrange for W to be invariant under the antipodal map.
+       Fix an integral character ψ ∈ W ∩ V . We obtain
+                              ±ψ                   ±ψ|H
+                Hi (G1 ; LG
+                         ‘1        ) = Hj (H; LH
+                                              d           )=0
+       for every i ⩽ n, j ⩽ m, and H ∈ HG1 ; we also have ψ not
+       vanishing on the groups H. Hence, by passing to a deeper
+       finite-index subgroup G1 , replacing HG0 by a potentially more
+       numerous, but still finite, tuple HG1 , and replacing ϕ by ψ, we
+       have guaranteed that all the relevant kernels are of type FPn (K)
+       or FPm (K) for all fields K ∈ K ∖ L, and for the field L. Since
+       L is finite, repeating this process finitely many times yields the
+       desired finite-index subgroup and homomorphism.                 □
+  The arguments above also show the following: if G is a RFRS group
+                                   (2)
+of type FP with cd(G) = n and βn (G; K) = 0 for all fields K in a
+small set of fields K, then there is a finite-index subgroup G0 ⩽ G
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                  23
+
+                                                         ±ϕ
+and an epimorphism ϕ : G0 → Z such that Hn (G0 ; KG‘0 ) = 0 for all
+K ∈ K. This uses Corollary 3.7(2) (see also [Fis24b, Proposition 3.2]).
+Applying [Fis24b, Theorem 3.5] yields the following corollary.
+Corollary 5.4. Let G be a RFRS group of type FP and suppose that
+cd(G) = n.
+           (2)
+   (1) If βn (G; K) = 0 for all fields K in some small set of fields
+       K, then there exists a subgroup G0 ⩽ G of finite index and an
+       epimorphism ϕ : G0 → Z such that cdK (ker ϕ) = n − 1 for all
+       K ∈ K.
+           (2)
+   (2) If βn (G; K) = 0 for all prime fields K, then there exists a sub-
+       group G0 ⩽ G of finite index and an epimorphism ϕ : G0 → Z
+       such that cdK (ker ϕ) = n − 1 for all fields K.
+5.2. Poincaré-duality groups. In this section we will work with ori-
+entable Poincaré-duality pairs (G, H). Recall that we allow H = ∅, in
+which case by our convention we are dealing with an orientable Poincaré
+duality group G. Again, we will insist on R being a commutative ring
+in this subsection.
+Lemma 5.5. Let (G, H) be an orientable PDnR -pair, and let ϕ : G → Z
+be a non-trivial homomorphism. If ker ϕ is of type FP⌊n/2⌋ (R), and
+ker ϕ|H is a proper subgroup of H of type FP⌊(n−1)/2⌋ (R) for each H ∈ H,
+then
+                           d ±ϕ ) = Hi (G; RG
+                    Hi (G; RG              d ±ϕ ) = 0
+for all i.
+Proof. By Corollary 3.3, the fact that ker ϕ is of type FP⌊n/2⌋ (R) is
+equivalent to
+                        d ±ϕ ) = Hi (G; RG
+                 Hi (G; RG              d ±ϕ ) = 0
+for all i ⩽ ⌊n/2⌋. Poincaré duality of (G, H) gives
+                                    d ±ϕ ) = 0
+                          Hi (G, H; RG
+for all i ⩾ n − ⌊n/2⌋ = ⌈n/2⌉, see Remark 2.10.
+   At this point we split the proof into two cases. First, suppose that
+H = ∅. Since the homology of the pair (G, H) coincides with the
+homology of G in this case, we have established that
+                                  d ±ϕ ) = 0
+                           Hi (G; RG
+for all i. The cohomology statement follows from Corollary 3.2, or from
+Remark 2.10.
+   Now suppose that H ̸= ∅. Since every H ∈ H is itself an orientable
+PDn−1
+    R -group by Proposition 2.9, we may apply the previous case and
+conclude that
+                                d ±ϕ|H ) = 0
+                         Hi (H; RH
+24      SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+for every H ∈ H and every i (we are using the fact that ϕ|H is non-
+trivial here).
+                        d ±ϕ ) = 0 for all H ∈ H and every i as
+   We claim that Hi (H; RG
+well. Indeed, the vanishing of Hi (H; RH   d ±ϕ|H ) for all i is witnessed
+by chain contractions, which can be viewed as matrices with entries in
+d ±ϕ|H . But RH
+RH              d ±ϕ|H ⩽ RG d ±ϕ , so the same chain contractions witness
+                         d ±ϕ ) for all i.
+the vanishing of Hi (H; RG
+   The long exact homology sequence for the pair (G, H) now tells us
+that
+                            d ±ϕ ) ∼
+                     Hi (G; RG                  d ±ϕ )
+                                    = Hi (G, H; RG
+for all i, and hence both are zero. The vanishing of Novikov cohomology
+follows from Corollary 3.2.                                             □
+   When H = ∅ and R = Z, the following result is a special case
+of a theorem of Hillman–Kochloukova [HK07, Corollary 6.1]; see also
+[Bie81, Theorem 9.11]. Both Hillman–Kochloukova and Bieri use spec-
+tral sequences, whereas our proof avoids that, making use of Novikov
+rings instead.
+Theorem 5.6. Let (G, H) be an orientable Poincaré-duality pair over
+R in dimension n with a non-trivial homomorphism ϕ : G → Z that
+does not vanish on any of the subgroups in H. If ker ϕ is of type
+FP⌊n/2⌋ (R) and ker ϕ|H is of type FP⌊(n−1)/2⌋ (R) for every H ∈ H, then
+(ker ϕ, Hϕ ) is an orientable Poincaré-duality pair over R in dimension
+n − 1.
+Proof. The combination of Lemma 5.5, Poincaré duality, and Proposi-
+tion 3.4 immediately gives an isomorphism of R ker ϕ-modules
+                                             
+     i                      ∼  i+1         ∼    R if i = n − 1,
+    H (ker ϕ, Hϕ ; R ker ϕ) = H (G, H; RG) =
+                                                0 otherwise.
+  Combining the vanishing of Novikov homology that we obtained in
+Lemma 5.5 with Theorem 2.4 immediately yields that ker ϕ is of type
+FP∞ (R). Since G is of finite cohomological dimension over R, so is
+ker ϕ, and therefore ker ϕ is of type FP(R) by a suitable adaptation of
+[Bro82, Proposition VIII.6.1] from Z to R.
+  We split the proof into two cases. First, if H = ∅, then the above
+facts tell us immediately that ker ϕ is an orientable Poincaré-duality
+group over R in dimension n − 1.
+  Now let us suppose that H ̸= ∅. Since every H ∈ H is an orientable
+PDn−1
+    R -group by Proposition 2.9, we may apply the previous case and
+conclude that Hϕ consists solely of orientable PDn−2
+                                                  R -groups. Hence for
+every H ′ ∈ Hϕ we have
+                                            R ker ϕ/H ′ if i = n − 2,
+                                          
+                 ∼                    ′ ∼
+                    M
+  i   ′                     i   ′
+ H (H ; R ker ϕ) =         H (H ; RH ) =
+                         ′
+                                                 0        otherwise.
+                   ker ϕ/H
+              VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                    25
+
+   The long exact cohomology sequence for the pair (ker ϕ, Hϕ ) now tells
+   us that
+                                   
+                                     ∆ker ϕ/Hϕ if i = n − 2,
+              H (ker ϕ; R ker ϕ) ∼
+               i
+                                 =
+                                        0      otherwise,
+   as required – note that we had to change a direct product over Hϕ to
+   a direct sum. This is possible since Hϕ is finite, as ϕ does not vanish
+   on any of the groups in H, and as H is finite by Proposition 2.9.    □
+     Hillman–Kochloukova offer a similar result [HK07, Corollary 6.1]
+   when R = Z and H = ∅, where they only require ker ϕ to be of type
+   FP⌊(n−1)/2⌋ (R), and additionally ask for the Euler characteristic of G to
+   be zero. In fact, it is not difficult to see that the additional assumption
+                                                                 ±ϕ
+   χ(G) = 0 is equivalent to requiring that H⌊m/2⌋ (G; ZG    ” ) = 0 using
+                    ±ϕ
+   the fact that ZG
+                 ” is von Neumann finite by [Koc06] (see the proof of
+   [HK07, Theorem 6]). Note that we will only use the stated version of
+   Theorem 5.6 in our proof of Theorem 5.7 below.
+   Theorem 5.7. Let K be a small set of fields. Let (G, H) be an ori-
+   entable PDnK -pair, and suppose that G is RFRS. The following are
+   equivalent:
+      (1) There exists a finite-index subgroup G0 ⩽ G and an epimor-
+           phism ϕ : G0 → Z that does not vanish on any of the groups in
+                                                              n−1
+           HG0 such that (ker ϕ, (HG0 )ϕ ) is an orientable PDK   -pair for
+           every K ∈ K.
+                      (2)
+      (2) We have βi (G; K) = 0 for all i and all K ∈ K.
+                      (2)
+      (3) We have βi (G; K) = 0 for all i ⩽ ⌊n/2⌋ and all K ∈ K, and
+            (2)
+           βi (H; K) = 0 for all i ⩽ ⌊(n − 1)/2⌋, K ∈ K, and H ∈ H.
+    Proof. We will prove a cycle of implications.
+(1) ⇒ (2) In this case, G virtually algebraically fibres with kernel of type
+           FP(K) for all K ∈ K, so item (2) follows by Theorem 2.13
+           and Lemma 2.12.
+ (2) ⇒(3) The assumption implies that Hi (G, H; DKG ) = 0 for all i by
+           Poincaré duality. The vanishing of homology of G with coeffi-
+           cients in DKG gives the vanishing of cohomology, for example
+           using chain contractions. The long exact sequence of Proposi-
+           tion 2.7 now gives vanishing of the cohomology of H with coef-
+           ficients in DKG . Since DKG contains DKH , and since skew-fields
+           are flat over one another, this gives vanishing of the cohomology
+           of H with coefficients in DKH . Poincaré duality of H now gives
+             (2)
+           βi (H; K) = 0 for all i and all K, showing that item (3) holds.
+ (3)⇒ (1) By Proposition 2.9, the tuple H is finite, and it consists of
+           groups of type FP(K). Theorem 5.3 gives us a finite-index
+           subgroup G0 and an epimorphism ϕ : G0 → Z that does not
+           vanish on any of the subgroups in HG0 , such that ker ϕ is of
+26      SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+       type FP⌊n/2⌋ (K), and ker ϕ|H ′ is of type FP⌊(n−1)/2⌋ (K) for every
+       H ′ ∈ HG0 and every K ∈ K. Also, (G0 , HG0 ) is an orientable
+       PDnK -pair for every K ∈ K; indeed, the cohomology of G0 with
+       coefficients in KG0 behaves as required by Shapiro’s lemma,
+       and G0 is of type FP(K), being a finite-index subgroup of G.
+       Now Theorem 5.6 finishes the argument.                            □
+   Taking H = ∅ and K to be a single field immediately implies our
+first main result.
+Theorem A. Let K be a field and G be a RFRS orientable Poincaré-
+duality group of dimension n > 0 over K. The following are equivalent:
+   (1) There exists a finite-index subgroup G0 in G and an epimor-
+        phism ϕ : G0 → Z such that ker ϕ is an orientable Poincaré-
+        duality group of dimension n − 1 over K;
+                                  (2)
+   (2) For every i ⩽ n we have βi (G; K) = 0.
+   Being a Poincaré-duality group over a prime field immediately im-
+plies being a Poincaré-duality group over all fields of the same charac-
+teristic [DD89, Proposition V.3.7].
+   Taking H = ∅ and K to be the set of prime fields yields the version
+that deals with all fields simultaneously.
+Theorem B. Let G be a RFRS orientable Poincaré-duality group of
+dimension n > 0. The following are equivalent:
+   (1) There exists a finite-index subgroup G0 in G and an epimor-
+       phism ϕ : G0 → Z such that ker ϕ is an orientable Poincaré-
+       duality group of dimension n − 1 over all fields;
+                                                       (2)
+   (2) For all i ⩽ n and all prime fields K, we have βi (G; K) = 0.
+5.3. Low dimensions. In dimension three, Theorem 5.7 can give a
+topological conclusion.
+Theorem 5.8. Let (G, H) be a PD3 -pair and suppose that G is RFRS.
+The following are equivalent:
+   (1) There exists a finite-index subgroup G0 ⩽ G such that G0 is the
+       fundamental group of a fibred three-manifold, and HG0 is the
+       collection of fundamental groups of the boundary components of
+       the manifold;
+                   (2)
+   (2) We have β1 (G; Q) = 0.
+Sketch proof. Fibred three-manifolds have vanishing first L2 -Betti num-
+bers, so it is clear that item (1) implies item (2). Thus, we focus on
+the converse implication.
+       (2)
+  If β1 (G; Q) = 0, then H2 (G, H; DQG ) = 0 by Poincaré duality.
+Moreover, the groups H ∈ H are all PD2 groups. This implies that
+H2 (H; DQG ) vanishes for all H ∈ H. The long exact sequence of
+                                      (2)
+Proposition 2.7 then implies that β2 (G; Q) = 0, since vanishing of
+           VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                  27
+
+L2 -homology in a degree is equivalent to the vanishing of the L2 -
+                                             (2)
+cohomology in the same degree; hence βi (G; Q) = 0 for all i. By
+Theorem 5.7, there exists a finite-index subgroup G0 ⩽ G and an epi-
+morphism ϕ : G0 → Z with (ker ϕ, (HG0 )ϕ ) being an orientable PD2Q -
+pair.
+   Every such pair is geometric by [DD89, Theorem V.10.2] if H ̸= ∅.
+If H = ∅, then by a result of Bowditch [Bow04] we know that ker ϕ is
+virtually the fundamental group of a closed orientable surface of genus
+at least one; using the Nielsen realisation theorem, we obtain that ker ϕ
+itself is the fundamental group of a closed orientable surface of genus
+at least one.
+   In either event, ker ϕ is a surface group, and if H =  ̸ ∅ then the
+surface has boundary and the action of Z = im ϕ on ker ϕ preserves the
+peripheral structure which is encoded in (HG0 )ϕ .
+   Orientable surface-by-Z groups are always realised as fundamental
+groups of fibred 3-manifolds [Nie27,ZVC80], and therefore G is virtually
+a 3-manifold group. The details of this argument can be found in
+[BKK25].                                                               □
+
+  We also offer the following result in dimension four, where we can
+conclude that the kernel of the virtual algebraic fibration is in fact a
+Poincaré-duality group over Z.
+
+Theorem 5.9. Let (G, H) be a PD4 -pair and suppose that G is RFRS.
+The following are equivalent:
+   (1) There exist a finite-index subgroup G0 ⩽ G and an epimorphism
+       ϕ : G0 → Z that does not vanish on any of the groups in HG0
+       such that (ker ϕ, (HG0 )ϕ ) is an orientable PD3 -pair.
+                  (2)            (2)
+   (2) We have β1 (G; Q) = β2 (G; Q) = 0.
+
+Proof. Item (1) implies item (2) by Theorem 2.13 and Lemma 2.12,
+noting that the group ker ϕ and the groups in (HG0 )ϕ are all of type FP
+– for the latter groups this follows from Proposition 2.9.
+   We now focus on the converse implication. By potentially passing to
+an index-two subgroup, we may assume that (G, H) is orientable. The
+group G is of cohomological dimension 3 or 4 (depending on whether
+H=  ̸ ∅), and so it is infinite. Similarly, the groups in H are all PD3 -
+groups by Proposition 2.9, and so they are also of cohomological di-
+                                                      (2)
+mension 3, and thus infinite. We conclude that β0 (G; Q) = 0 and
+  (2)
+β0 (H; Q) = 0 for every H ∈ H, see [Lüc02, Theorem 6.54(8)(b)].
+                    (2)
+   We claim that β1 (H; Q) = 0 for all H ∈ H. Indeed, the long exact
+sequence of Proposition 2.7 gives an isomorphism
+
+                        H1 (H; DQG ) ∼
+                    Y
+                                     = H2 (G, H; DQG ).
+                  H∈H
+28       SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+But H2 (G, H; DQG ) ∼= H2 (G; DQG ) = 0 by Poincaré duality and by as-
+sumption, proving that H1 (H; DQG ) = 0 for every H ∈ H. Since DQG is
+a flat DQH -module, as both are skew-fields, we obtain H1 (H; DQH ) = 0
+for every H ∈ H. Finally, vanishing of L2 -homology and L2 -cohomology
+                                           (2)
+in a given degree is equivalent, and so β1 (H; Q) = 0 for all H ∈ H,
+as claimed.
+   By Theorem 5.3 with K = {Q}, n = 2, and m = 1, there is a finite-
+index subgroup G0 ⩽ G and an epimorphism φ : G0 → Z that does not
+vanish on any of the groups in HG0 such that ker ϕ is of type FP2 (Q),
+and ker ϕ|H is of type FP1 (Q) for every H ∈ HG0 .
+   Being of type FP1 (Q) is equivalent to being finitely generated, which
+is in turn the same as being of type FP1 . Applying Theorem 2.4 now
+yields
+                           ±ϕ
+             Hi (G0 ; ZG
+                      ‘0        ) = 0 and               d ±ϕ|H ) = 0
+                                                 Hi (H; ZH
+for all H ∈ HG0 and i ∈ {0, 1}. By Theorems 2.4 and 5.6, it is therefore
+enough to prove that
+                                            ±ϕ
+                            H2 (G0 ; ZG
+                                     ‘0          ) = 0.
+Using Poincaré duality, this is equivalent to showing that
+                                                 ±ϕ
+                       H2 (G0 , HG0 ; ZG
+                                      ‘0              ) = 0,
+which we will now do.
+  The portion of the long exact sequences in homology associated to
+the pair (G0 , HG0 )
+                ±ϕ                   ±ϕ      M              ±ϕ
+             ‘0 ) → H1 (G0 , HG ; ZG
+    H1 (G0 ; ZG                   ‘0 ) →         H0 (H; ZG
+                                                        ‘0 )
+                               0
+                                                          H∈HG0
+
+                                  ±ϕ
+shows that H1 (G0 , HG0 ; ZG
+                          ‘0   ) = 0. Similarly, the portion
+                 ±ϕ                     ±ϕ      M               ±ϕ
+              ‘0 ) → H2 (G0 , HG ; QG
+     H2 (G0 ; QG                   ‘0 ) →             H1 (H; QG
+                                                             ‘0 )
+                                 0
+                                                          H∈HG0
+
+                                   ±ϕ                              ±ϕ
+shows that H2 (G0 , HG0 ; QG‘0 ) = 0, since H2 (G0 ; QG ‘0 ) = 0 by
+Theorem 2.4.
+   Suppose that HG0 ̸= ∅. The pair (G0 , HG0 ) is a PD4 -pair, and hence
+is of type FP, which means precisely that ∆G0 /HG0 defined over Z admits
+a finite resolution by finitely generated projective ZG0 -modules. Thus,
+fix a resolution
+                 · · · → C2 → C1 → C0 → ∆G0 /HG0 → 0
+of ∆G0 /HG0 by finitely generated free ZG0 -modules (passing from pro-
+jective to free modules potentially makes this resolution infinite in
+            VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                           29
+
+length). The previous paragraph implies that there is a partial chain
+contraction
+                    ±ϕ                    ±ϕ
+          si : QG
+               ‘0        ⊗ZG0 Ci → QG
+                                   ‘0          ⊗ZG0 Ci+1 ,       i ∈ {0, 1},
+                               ±ϕ
+                     ‘0 ⊗ZG C• . Moreover, viewed as a matrix
+of the chain complex QG        0
+         ±ϕ
+over QG0 , the chain contraction s0 can be chosen to have entries in
+     ‘
+    ±ϕ
+‘0 . (Here, we are really carrying out two arguments, one for ϕ and
+ZG
+one for −ϕ; we use ±ϕ for convenience.)
+                   ±ϕ
+  Let z : C1 → ZG
+               ‘0 be a 1-cocycle, and consider its extension
+                                  ±ϕ                    ±ϕ
+                         z : QG
+                             ‘0        ⊗ZG0 C1 → QG
+                                                 ‘0          .
+Then z = (∂1 s0 + s1 ∂2 )z = ∂1 s0 z. Restricting both sides to C1 , we see
+                                                           ±ϕ
+that z is the coboundary of the cochain s0 z : C0 → ZG ‘0 . Hence,
+                              ±ϕ                                  ±ϕ
+          H2 (G0 , HG0 ; ZG
+                         ‘0        ) = Ext1ZG0 (∆G0 /HG0 ; ZG
+                                                           ‘0          ) = 0,
+as desired.
+   When HG0 = ∅, the argument is completely analogous with the
+trivial ZG-module Z used instead of ∆G0 /HG0 , and with indices of the
+chain contractions increased by one.                                □
+   Restricting to the case H = ∅, we obtain the statement advertised
+in the introduction.
+Corollary C. Let G be a RFRS Poincaré-duality group in dimension
+four. The following are equivalent:
+   (1) There exists a finite-index subgroup G0 ⩽ G and an epimor-
+       phism ϕ : G0 → Z such that ker ϕ is an orientable Poincaré-
+       duality group of dimension three;
+                  (2)          (2)
+   (2) We have β1 (G; Q) = β2 (G; Q) = 0.
+
+                                   References
+ [Ago08] I. Agol, Criteria for virtual fibering, J. Topol. 1 (2008), no. 2, 269–284.
+          MR2399130 (2009b:57033)
+ [Ago13]         , The virtual Haken conjecture, Doc. Math. 18 (2013), 1045–
+          1087. With an appendix by Agol, Daniel Groves, and Jason Manning.
+          MR3104553
+  [BE78] R. Bieri and B. Eckmann, Relative homology and Poincaré duality for
+          group pairs, J. Pure Appl. Algebra 13 (1978), no. 3, 277–319. MR509165
+  [BF00] M. Bestvina and M. Feighn, The topology at infinity of Out(Fn ), Invent.
+          Math. 140 (2000), no. 3, 651–692. MR1760754
+  [Bie07] R. Bieri, Deficiency and the geometric invariants of a group, J. Pure
+          Appl. Algebra 208 (2007), no. 3, 951–959. With an appendix by Pascal
+          Schweitzer. MR2283437
+  [Bie72]        , Gruppen mit Poincaré-Dualität, Comment. Math. Helv. 47
+          (1972), 373–396. MR352290
+30          SAM P. FISHER, GIOVANNI ITALIANO, AND DAWID KIELAK
+
+  [Bie81]            , Homological dimension of discrete groups, Second, Queen Mary
+             College Mathematical Notes, Queen Mary College, Department of Pure
+             Mathematics, London, 1981. MR715779
+[BKK25] M. R. Bridson, D. Kielak, and M. Kudlinska, Stallings’s fibring theorem
+             and PD3 -pairs, Topology at infinity of discrete groups, 2025, pp. 125–132.
+             MR4861506
+    [BL12] A. Bartels and W. Lück, The Borel Conjecture for hyperbolic and CAT(0)-
+             groups, Annals of Mathematics 175 (2012), no. 2, 631–689. MR2993750
+ [BNS87] R. Bieri, W. D. Neumann, and R. Strebel, A geometric invariant of
+             discrete groups, Invent. Math. 90 (1987), no. 3, 451–477. MR914846
+             (89b:20108)
+ [Bow04] B. H. Bowditch, Planar groups and the Seifert conjecture, J. Reine Angew.
+             Math. 576 (2004), 11–62. MR2099199
+    [BR88] R. Bieri and B. Renz, Valuations on free resolutions and higher geometric
+             invariants of groups, Comment. Math. Helv. 63 (1988), no. 3, 464–497.
+             MR960770
+   [Bro82] K. S. Brown, Cohomology of groups, Graduate Texts in Mathematics,
+             vol. 87, Springer-Verlag, New York-Berlin, 1982. MR672956
+     [BS73] A. Borel and J.-P. Serre, Corners and arithmetic groups, Comment. Math.
+             Helv. 48 (1973), 436–491. MR387495
+  [BW12] N. Bergeron and D. T. Wise, A boundary criterion for cubulation, Amer.
+             J. Math. 134 (2012), no. 3, 843–859. MR2931226
+     [CS84] M. Culler and P. B. Shalen, Bounded, separating, incompressible surfaces
+             in knot manifolds, Invent. Math. 75 (1984), no. 3, 537–545. MR735339
+   [DD89] W. Dicks and M. J. Dunwoody, Groups acting on graphs, Cambridge
+             Studies in Advanced Mathematics, vol. 17, Cambridge University Press,
+             Cambridge, 1989. MR1001965
+  [Dou24] S. Douba, A novel witness to incoherence of SL5 (Z), Proc. Amer. Math.
+             Soc. 152 (2024), no. 4, 1451–1455. MR4709217
+    [Far67] F. T. Farrell, The obstruction to fibering a manifold over a circle,
+             ProQuest LLC, Ann Arbor, MI, 1967. Thesis (Ph.D.)–Yale University.
+             MR2616856
+  [Fis24a] S. P. Fisher, Improved algebraic fibrings, Compos. Math. 160 (2024),
+             no. 9, 2203–2227. MR4797112
+ [Fis24b]            , On the cohomological dimension of kernels of maps to Z (Mar.
+             2024), available at arXiv:2403.18758.
+    [FK24] S. P. Fisher and K. Klinge, Dimension drop in residual chains (Oct. 2024),
+             available at arXiv:2410.08153.
+  [Gab02] D. Gaboriau, Invariants l2 de relations d’équivalence et de groupes, Publ.
+             Math. Inst. Hautes Études Sci. 95 (2002), 93–150. MR1953191
+   [Har86] J. L. Harer, The virtual cohomological dimension of the mapping class
+             group of an orientable surface, Invent. Math. 84 (1986), no. 1, 157–176.
+             MR830043
+   [HK07] J. A. Hillman and D. H. Kochloukova, Finiteness conditions and PDr -
+             group covers of PDn -complexes, Math. Z. 256 (2007), no. 1, 45–56.
+             MR2282258
+  [Hug70] I. Hughes, Division rings of fractions for group rings, Comm. Pure Appl.
+             Math. 23 (1970), 181–188. MR0263934 (41 #8533)
+  [HW08] F. Haglund and D. T. Wise, Special cube complexes, Geom. Funct. Anal.
+             17 (2008), no. 5, 1551–1620. MR2377497 (2009a:20061)
+      [JZ21] A. Jaikin-Zapirain, The universality of Hughes-free division rings, Selecta
+             Mathematica. New Series 27 (2021), no. 4, Paper No. 74, 33. MR4292784
+            VIRTUAL FIBRING OF POINCARÉ-DUALITY GROUPS                             31
+
+  [Kie20] D. Kielak, Residually finite rationally solvable groups and virtual fibring,
+            J. Amer. Math. Soc. 33 (2020), no. 2, 451–486. MR4073866
+ [KM12] J. Kahn and V. Markovic, Immersing almost geodesic surfaces in a closed
+            hyperbolic three manifold, Ann. of Math. (2) 175 (2012), no. 3, 1127–1190.
+            MR2912704
+ [Koc06] D. H. Kochloukova, Some Novikov rings that are von Neumann finite
+            and knot-like groups, Comment. Math. Helv. 81 (2006), no. 4, 931–943.
+            MR2271229
+  [Lüc94] W. Lück, L2 -Betti numbers of mapping tori and groups, Topology 33
+            (1994), no. 2, 203–214. MR1273782
+   [Lin93] P. A. Linnell, Division rings and group von Neumann algebras, Forum
+            Math. 5 (1993), no. 6, 561–576. MR1242889
+  [Lüc02] W. Lück, L2 -invariants: theory and applications to geometry and K-
+            theory, Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge. A
+            Series of Modern Surveys in Mathematics [Results in Mathematics and
+            Related Areas. 3rd Series. A Series of Modern Surveys in Mathematics],
+            vol. 44, Springer-Verlag, Berlin, 2002. MR1926649 (2003m:58033)
+   [Nie27] J. Nielsen, Untersuchungen zur Topologie der geschlossenen zweiseitigen
+            Flächen, Acta Math. 50 (1927), no. 1, 189–358. MR1555256
+   [OS25] B. Okun and K. Schreve, Orders and fibering, Groups, Geometry, and
+            Dynamics (Feb. 2025).
+ [Ran95] A. Ranicki, Finite domination and Novikov rings, Topology 34 (1995),
+            no. 3, 619–632. MR1341811
+    [Sie70] L. C. Siebenmann, A total Whitehead torsion obstruction to fibering over
+            the circle, Comment. Math. Helv. 45 (1970), 1–48. MR287564
+   [Sik87] J.-C. Sikorav, Homologie de Novikov associée à une classe de cohomologie
+            réelle de degré un, Thèse Orsay (1987).
+  [Spe49] E. Specker, Die erste Cohomologiegruppe von überlagerungen und
+            Homotopie-Eigenschaften dreidimensionaler Mannigfaltigkeiten, Com-
+            ment. Math. Helv. 23 (1949), 303–333. MR33520
+   [Sta62] J. Stallings, On fibering certain 3-manifolds, Topology of 3-manifolds and
+            related topics (Proc. The Univ. of Georgia Institute, 1961), 1962, pp. 95–
+            100. MR0158375
+ [Swa69] R. G. Swan, Groups of cohomological dimension one, Journal of Algebra
+            12 (1969), 585–610. MR240177
+ [Wal67] C. T. C. Wall, Poincaré complexes. I, Ann. of Math. (2) 86 (1967), 213–
+            245. MR0217791
+ [Wis12] D. T. Wise, From riches to raags: 3-manifolds, right-angled Artin groups,
+            and cubical geometry, CBMS Regional Conference Series in Mathemat-
+            ics, vol. 117, Published for the Conference Board of the Mathematical
+            Sciences, Washington, DC; by the American Mathematical Society, Prov-
+            idence, RI, 2012. MR2986461
+[ZVC80] H. Zieschang, E. Vogt, and H.-D. Coldewey, Surfaces and planar discon-
+            tinuous groups, Lecture Notes in Mathematics, vol. 835, Springer, Berlin,
+            1980. Translated from the German by John Stillwell. MR606743
+
+
+  Email address: fisher@maths.ox.ac.uk
+  Email address: italiano@maths.ox.ac.uk
+  Email address: kielak@maths.ox.ac.uk
+
+  Mathematical Institute, Andrew Wiles Building, Observatory Quar-
+ter, University of Oxford, Oxford, OX2 6GG, United Kingdom
+

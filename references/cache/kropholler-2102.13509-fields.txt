@@ -1,0 +1,608 @@
+                                           Constructing groups of type F P2 over fields but not over the
+                                                                     integers
+arXiv:2102.13509v1 [math.GR] 26 Feb 2021
+
+
+
+
+                                                                                    Robert Kropholler
+                                                                                      March 1, 2021
+
+                                                                                          Abstract
+                                                     We construct examples of groups that are F P2 (Q) and F P2 (Z/pZ) for all primes p but not
+                                                 of type F P2 (Z).
+
+
+                                           1    Introduction
+                                           We begin with a definition:
+                                           Definition 1.1. A group G is of type F Pn (R) if there is an exact sequence:
+                                                                           Pn → · · · → P2 → P1 → P0 → R → 0
+                                           of projective RG-modules such that Pi is finitely generated and R is the trivial RG-module.
+                                               Using the chain complex of the universal cover of a presentation 2-complex we see that finitely
+                                           presented groups are of type F P2 (Z). Moreover, if a group is of type F P2 (Z), then it is of type
+                                           F P2 (R) for any ring R.
+                                               In [1], the first examples of groups that are of type F P2 (Z) but not finitely presented are given.
+                                           More recently, there have been many new constructions of groups of type F P2 with interesting
+                                           properties, see [1, 10, 9, 8, 7, 4]. In particular, there are various constructions of uncountable
+                                           families of groups of type F P2 (Z) [10, 7, 4].
+                                               It is also possible to use the examples of [1, 10] to give examples of groups that are of type
+                                           F P2 (R) but not F P2 (Z) for certain rings R. The construction of [1], takes in a connected flag
+                                           complex L and constructs a group BBL that is of type F P2 (R) if and only if H1 (L; R) = 0. Since
+                                           these flag complexes are finite, it follows that if H1 (L; Z/pZ) = 0 for all primes p, then H1 (L; Z) = 0.
+                                           Thus, if BBL is F P2 (Z/pZ) for all primes p, then it is type F P2 (Z). Similar results can be obtained
+                                           for the groups constructed in [10].
+                                               In this paper we build on the work of [10]. Leary built uncountably many groups of type F P2
+                                           by taking branched covers of a cube complex X. Leary’s construction takes as input a flag complex
+                                                                                                   (S)
+                                           L and a set S ⊂ Z. It outputs a cube complex XL with a height function f (S) . These have the
+                                           property that if a vertex has height in S, then the ascending and descending links at v are L. If the
+                                           height of a vertex is not in S, then the ascending and descending links are L̃, the universal cover of
+                                           L.
+                                               We build on this construction by varying the covers that can be taken at each height. Our
+                                           construction is the following:
+
+                                                                                               1
+Construction 1.2. Let L be a flag complex. Let σ : Z → C be a function, where C is the collection
+of normal covers of L. Then there is a cube complex XLσ and a height function fσ such that if
+fσ (v) = n, then the ascending and descending links of v are exactly σ(n).
+   This cube complex arises as a branched cover and there is a group of deck tranformations GL (σ).
+Thus we can use the cube complex XLσ to investigate the finiteness properties of GL (σ). We obtain
+the following theorem:
+Theorem 3.4. Let σ, L, C be as above. Suppose that π1 (L)/π1 (σ(n)) is of type F Pk (R) for all n.
+Then GL (σ) is type F Pk (R) if and only if H̃i (σ(n); R) vanishes for all but finitely pairs (i, n) with
+n ∈ Z and i < k.
+   Similarly, suppose π1 (L)/π1 (σ(n)) is of type F P (R) for all n. Then GL (σ) is type F P (R) if
+and only if H̃i (σ(n), R) vanishes for all but finitely pairs (i, n) with n ∈ Z and i ∈ N.
+   We can use this to construct new examples of groups of type F P2 (R) over various rings R. Here
+we detail two such constructions.
+   As pointed out previously, if G is of type F P2 (Z), then G is of type F P2 (R) for all rings R.
+One may hope that there is a collection of rings R such that if G is of type F P2 (R) for all R ∈ R,
+then G is of type F P2 (Z). One possible candidate is the collection of fields. We show that this is
+not the case, proving the following.
+Theorem 1.3. There are groups that are of type F P2 (F ) for all fields F , but not of type F P2 (Z).
+    In fact, it is enough to study Q and Z/pZ for all primes p. Since if P is the prime subfield of
+F , then F P2 (P ) implies F P2 (F ). Thus, we prove the following:
+Theorem 6.1. There exist groups that are of type F P2 (Q) and F P2 (Z/pZ) for all primes p that
+are not F P2 (Z).
+   Moreover, we are able to prove the above theorem for arbitrary sets of primes.
+Theorem 6.2. Let S be a set of primes. Then there exists a group which is type F P2 (Z/pZ) if
+and only if p ∈
+              / S.
+   We highlight one particularly novel corollary to this theorem:
+Corollary 1.4. There exists a group G that is type F P2 (Q) but not of type F P2 (Z/pZ) for any
+prime p.
+    The second theorem of this paper concerns the constructions from [10, 7]. In both papers,
+uncountably many groups of type F P2 (Z) are constructed by considering subpresentations of an
+initial group that is known to be of type F P2 (Z). One may believe removing relators from an almost
+finitely presented group should result in an almost finitely presented group. It is clear that one has
+to be careful when removing relations from a group. Indeed, every n generated group appears as a
+subpresentation of the trivial group presented as hx1 , . . . , xn | F (x1 , . . . , xn )i.
+    However, in the examples from [10, 7] care is taken when considering subpresentations. In both
+cases a generating set for the relation module of the initial group is retained and this is enough to
+ensure the resulting group is of type F P2 (Z). For finitely presented groups, it is true that there is
+a finite set of relations, that if retained ensure that the subpresentation gives a finitely presented
+group.
+    It is then of interest to know whether if one retains an appropriate finite set of relations, say
+generators for the relation module, does one retain the property of being of type F P2 (Z)? We show
+that this is not the case:
+
+                                                   2
+Theorem 5.3. There exists a presentation G = hX | Ri of a group of type F P2 (Z) such that for
+any finite subset T ⊂ R, we can find S with T ⊂ S ⊂ R and hX | Si is not of type F P2 (R) for any
+ring R.
+    Acknowledgements: The author is thankful to Kevin Schreve for posing questions leading
+to this article. The author is also grateful to Peter Kropholler and Ian Leary for helpful conversa-
+tions. The author was funded by the Deutsche Forschungsgemeinschaft (DFG, German Research
+Foundation) under Germany’s Excellence Strategy EXC 2044–390685587, Mathematics Münster:
+Dynamics–Geometry–Structure.
+
+
+2     Preliminaries
+2.1     Flag complexes and spherical doubles
+Definition 2.1. Let L be flag complex. The spherical double of L, denoted S(L), is defined by
+replacing every simplex of L by an appropriately triangulated sphere of the same dimension, in the
+following way.
+    Let {v1 , . . . , vn } be the vertices of L. The vertex set of S(L) is a set {v1+ , v1− , . . . , vn+ , vn− }. Thus,
+each 0–simplex {vi } of L corresponds to a 0–sphere {vi+ , vi− } in S(L). If τ ⊂ L is an m–dimensional
+simplex of L, it can be represented as the join τ = {vi0 } ∗ · · · ∗ {vim } of a collection of m + 1 vertices
+of L. Let S(τ ) be the join S(τ ) = {vi+0 , vi−0 } ∗ · · · S
+                                                           ∗ {vi+m , vi−m }. We have that, S(τ ) is homeomorphic
+to an m–dimensional sphere. We define S(L) = τ ⊆L S(τ ), where τ ranges through all simplices of
+L.
+   It can be shown that S(L) is a simplicial complex, which is flag if and only if L is flag [1,
+Lemma 5.8]. Also the map vit 7→ vi , gives a retraction S(L) → L.
+   The following two results are analogous to Proposition 7.1 and Corollary 7.2 of [10], we include
+the proofs for completeness.
+Proposition 2.2. Let L be a flag complex. Let L̄ be a cover of L. Then S(L̄) is a cover of S(L).
+Proof. This follows since S(L̄) can be seen as the pullback in the square:
+
+                                                 S(L̄)          S(L)
+                                                                   r
+
+                                                   L̄             L
+
+The lower map is a covering this, we have a pull back of a covering map which is also a covering
+map.
+Corollary 2.3. Let r : S(L) → L be the retraction above. Then π1 (S(L̄)) = r∗−1 (π1 (L̄)).
+Proof. Since the diagram in the proof of Proposition 2.2 commutes we see that π1 (S(L̄)) ⊂ r∗−1 (π1 (L̄)).
+     Let γ be a loop in S(L) such that r ◦ γ is an element of π1 (L̄). Then we can lift r ◦ γ to a loop
+γ ′ in L̄. Then (γ, γ ′ ) defines a loop in S(L̄) which maps to γ. Thus π1 (S(L̄)) ⊃ r∗−1 (π1 (L̄)).
+
+
+
+
+                                                           3
+2.2    Morse theory
+For full details, we refer the reader to [1].
+   A map f : X → R defined on a cube complex X is a Morse function if
+    • for every cell e of X, with characteristic map χe : [0, 1]m → e, the composition f ◦χe : [0, 1]m →
+      R extends to an affine map Rm → R and f ◦ χe is constant only when dim e = 0;
+    • the image of the 0–skeleton of X is discrete in R.
+    Suppose X is a cube complex, f : X → R a Morse function. The ascending link of a vertex v,
+denoted Lk↑ (v, X) is the subcomplex of Lk(v, X) corresponding to cubes C such that f |C attains
+its minimum at v. The descending link, Lk↓ (v, X), is defined similarly replacing minimum with
+maximum.
+
+2.3    Right-angled Artin and Bestvina-Brady groups
+Definition 2.4. Let L be a flag complex. The right-angled Artin group, or RAAG, associated to
+L is given by the presentation:
+
+                   AL = hv ∈ Vertices(L) | [ai , aj ] = 1 if {ai , aj } is an edge of Li.
+
+    Given a right-angled Artin group AL , the Salvetti complex, SL associated to AL is a cube
+complex SL defined as follows. For each v ∈ Vertices(L) let Sv1 be a circle
+                                                                         Q endowed with a structure
+of a CW complex having a single 0–cell and a single 1–cell. Let T = v Sv1 be an n–dimensional
+torus with the product CW structure. For every simplex    K ⊂ L, define a k–dimensional torus TK
+as a Cartesian product of CW complexes: TK = v∈K Sv1 and observe that TK can be identified
+                                                  Q
+as a combinatorial subcomplex of T . Then the Salvetti complex is
+                                  [
+                            SL =      TK ⊂ T | K is a simplex of L .
+
+    The link of the single vertex of SL is S(L). This is a flag simplicial complex, and hence SL is a
+non-positively curved cube complex. It follows that the universal cover XL = S̃L is a CAT(0) cube
+complex.
+    We can define a homomorphism φ : AL → Z by sending each generator to 1. We can realise
+this topologically as a map f : SL → S 1 by restricting the map fˆ: T → S 1 given by (x1 , . . . , xn ) 7→
+x1 + · · · + xn . Let BBL := ker(φ). We can lift f to a map which we also call f : XL /BBL → R.
+This is a Morse function. The ascending and decending links are copies of L spanned by vi+ and
+vi− respectively.
+
+
+3     New sequences of covers
+In [10], branched covers of XL /BBL were taken to obtain uncountably many groups GL (S) de-
+pending on S ⊂ Z, whose finiteness properties are controlled by the topology of L. In this section,
+we generalise this machinery to construct various new groups.
+    Throughout, let L be a flag complex. Let C be the set of normal covers of L. Let Z = C Z be
+the set of functions σ : Z → C. Define a partial ordering on Z by σ  σ ′ if σ(n) is a cover of σ ′ (n).
+    We will associate to each element σ ∈ Z a group as follows.
+
+                                                     4
+    Construction of GL (σ): For each integer n there is a single vertex v of XL /BBL such that
+f (v) = n. Let γi,n be a sequence of loops in S(L) that normally generate Gn = π1 (S(σ(n))) ≤
+π1 (S(L)). Let V be the vertex set of XL /BBL and let V (σ) := {v ∈ XL /BBL | σ(f (v)) 6= L} ⊂ V .
+By identifying Lk(v, X) with the boundary of the 41 neighbourhood of v we can consider γi,n as
+loops in XL /BBL . Let YL (σ) be the complex obtained from (XL /BBL ) r V (σ) by attaching disks
+to all the loops γi,n . Let GL (σ) = π1 (YL (σ)).
+    We can also view the group GL (σ) as a group of deck transformations of a branched cover of
+cube complexes.
+Theorem 3.1. There is a CAT(0) cube complex XLσ with a branched covering map b : XLσ →
+XL /BBL such that GL (σ) is the group of deck transformations of this branched cover.
+
+Proof. We construct XLσ as follows. Let Y^    L (σ) be the universal cover of YL (σ). Let D be the
+collection of open disks added to (XL /BBL ) r V (σ) to obtain YL (σ) and let D̃ be the collection of
+lifts of D to Y^                    ^                                         ^
+               L (σ). Let ZL (σ) be YL (σ) r D̃. Then the covering map p : YL (σ) → YL (σ) restricts
+to a covering map ZL → (XL /BBL ) r V (σ). We can now lift the metric and complete to obtain
+a branched cover b : XLσ → XL /BBL . The deck group is exactly the deck group of the covering
+Y^L (σ) → YL (σ), this is GL (σ).
+     Given a vertex v ∈ XLσ we obtain a covering map bv : Lk(v, XLσ ) → Lk(b(v), XL ). Since the
+cover of a flag complex is a flag complex we see that XLσ is non-positively curved.
+     Taking the completion adds in the missing vertices of ZL . The vertices added cone off their
+links. As such the boundary of each disk in D̃ is trivial in XLσ and thus π1 (Y^                    σ
+                                                                               L (σ)) surjects π1 (XL ).
+We conclude, XLσ is simply connected. Thus, XLσ is non-positively curved and simply connected
+and hence CAT(0).
+    There is a Morse function fσ : XLσ → R given by composition f ◦ b. Since GL (σ) is the covering
+group of ZL → XL r V (XL ), we see that it acts on XLσ cellularly and freely away from the vertex
+set. Moreover, GL (σ) acts properly, freely and cocompactly on fσ−1 ( 12 ). Thus by understanding
+this level set we can understand finiteness properties of GL (σ). We will proceed by understanding
+the ascending and descending links of the Morse function fσ .
+Lemma 3.2. Let v be a vertex of XLσ such that fσ (v) = n. Then Lk(v, XLσ ) = S(σ(n)) and
+Lk↑ (v, XLσ ) = Lk↓ (v, XLσ ) = σ(n).
+
+Proof. Let Dv be the collection of disks glued at v in Y^     L (σ). There is a retraction XL r {v} →
+                                                                                               σ
+
+N (v, XL ) r {v} where N (v, XL ) is a neighbourhood of v. Let γ be the attaching map of a disk in
+        σ                           σ
+
+D̃ r Dv , then this bounds a disk in XLσ r {v}. Thus we can extend the retraction over elements of
+D̃ r Dv . This gives a retraction Y^   L (σ) → YL (σ, v), where YL (σ, v) = (N (v, XL ) r {v}) ∪ Dv Since
+                                                                                    σ
+
+the former is simply connected, so is the latter.
+    We see that YL (σ, v) is homotopy equivalent to a cover S(L) of S(L) together with disks glued to
+each lift of γi,n . Since this is simply connected we see that S(L) is the cover corresponding hhγi,n ii.
+Since {γi,n } normally generates π1 (S(σ(n))) we see that S(L) = S(σ(n)) and the ascending link is
+the preimage of L which is exactly σ(n). Similarly the descending link is σ(n).
+   This allows us to understand the finiteness properties of GL (σ).
+   Firstly, we recall a simplified version of Brown’s criterion [3] (from [10]) for a group to be of
+type F Pk (R).
+
+                                                   5
+Theorem 3.3. Suppose that X is a finite-dimensional R-acyclic G-CW-complex, and that G acts
+freely except possibly that some vertices have isotropy subgroups that are of type F P (R) (resp.
+F Pk (R)). Suppose also that X = ∪m∈N X(m) where X(m) ⊂ X(m + 1) ⊂ · · · ⊂ X is an ascending
+sequence of G-subcomplexes, each of which contains only finitely many orbits of cells. In this case
+G is F P (R) (resp. F Pk (R)) if and only if for all i (resp. for all i < k) the sequence H̃i (X(m); R)
+of reduced homology groups is essentially trivial.
+Theorem 3.4. Let σ, L, C be as above. Suppose that π1 (L)/π1 (σ(n)) is of type F Pk (R) for all n.
+Then GL (σ) is type F Pk (R) if and only if H̃i (σ(n), R) vanishes for all but finitely pairs (i, n) with
+n ∈ Z and i < k.
+   Similarly, suppose π1 (L)/π1 (σ(n)) is of type F P (R) for all n. Then GL (σ) is type F P (R) if
+and only if H̃i (σ(n), R) vanishes for all but finitely pairs (i, n) with n ∈ Z and i ∈ N.
+Proof. We focus on the proof for F Pk (R), the proof for F P (R) is similar.
+    The group GL (σ) acts on XLσ freely away from vertices. For vertices at height n, the stabiliser is
+the deck group of the covering σ(n) → L. This is exactly π1 (L)/π1 (σ(n)) which is of type F Pk (R).
+    Let X(m) = fσ−1 ([−m − 12 , m + 21 ]). We are now in the situation of Theorem 3.3, thus GL (σ) is
+of type F Pk (R) if and only if for all i < k the sequence H̃i (X(m); R) of reduced homology groups
+is essentially trivial.
+    If H̃i (σ(n), R) vanishes for all but finitely pairs (i, n) with n ∈ Z and i < k, then by [1, Corollary
+2.6] we can find an l such that for all m > l the inclusion X(l) → X(m) induces an isomorphism on
+all Hi for i < k. Since homology commutes with direct limits we see that Hi (X(l)) = Hi (XLσ ) = 0
+for all i < k. Thus the system is essentially trivial.
+    Now conversely suppose that there are infinitely many n such that Hi (σ(n), R) 6= 0 for some
+i < k. Thus for each l > 0 we can find l′ > l + 1 and v such that Hi (σ(l′ ); R) or Hi (σ(−l′ ); R)
+is non-trivial for some i < k. We will assume that σ(l′ ) has the non-trivial homology group. Let
+v be a vertex at height l′ . There is a map from X(l′ − 1) to Lk(v, XLσ ). We can further compose
+with the retraction Lk(v, XLσ ) → σ(l′ ). By extending geodesics from v downwards, we can view
+σ(l′ ) as a subspace of X(l′ − 1) and this composition will be a retraction. However, the inclusion
+σ(l′ ) → X(l′ ) induces the trivial map on homology, thus we have an element in the kernel of the
+map Hi (X(l′ − 1); R) → Hi (X(l′ ); R). Thus the system of homology groups is not essentially trivial
+and GL (σ) is not of type F Pk (R).
+   We can also prove similar results about finite presentability of GL (σ).
+Theorem 3.5. Suppose that π1 (L)/π1 (σ(n)) is finitely presented for all n. Then GL (σ) is finitely
+presented if and only if π1 (σ(n)) vanishes for all but finitely many n.
+
+Proof. For one direction, suppose that GL (σ) is finitely presented. Since it acts freely and cocom-
+pactly on fσ−1 ( 12 ), there are finitely many orbits of loops which normally generate π1 (fσ−1 ( 12 )). Since
+the limit of X(m) is simply connected, we see that there is an l such that each of these loops is
+trivial in X(l). Thus the inclusion fσ−1 ( 21 ) → X(l) is trivial on fundamental groups. By [1, Corol-
+lary 2.6], we have that fσ−1 ( 21 ) → X(l) is also a surjection. Thus, X(l) is simply connected. Now
+using the retraction from the proof of Theorem 3.4 we obtain a π1 -surjective map X(l) → σ(m)
+for all m such that |m| > l. Thus, we see that for all m such that |m| > l, we must have σ(m) is
+simply connected.
+    For the other direction, suppose that there is an l such that if |m| > l we have that σ(m) is
+simply connected. Then, by [1, Corollary 2.6], X(l) is simply connected and has a cocompact action
+
+
+                                                      6
+by GL (σ). We now have a cocompact action of GL (σ) on a simply connected CW complex where
+stabilisers of cells are finitely presented. Thus GL (σ) is finitely presented.
+
+
+4    Presentations for GL (σ)
+This section closely follows Section 14 of [10].
+   We begin by describing presentations of the groups GL (σ) obtained in the previous section.
+Definition 4.1. Let L be a simplicial complex. Let E be the set of edges of L. For a loop
+c = (e1 , . . . , el ) in L. Let c[k] denote the word ek1 ek2 . . . ekl in F (E).
+Theorem 4.2. Let γi,n be a collection of loops that normally generate π1 (σ(n)). Let E be the edges
+of L. Suppose that σ(0) = L. Then GL (σ) has the following presentation:
+                                                                 [n]
+                hE | ef g, gf e for each triangle e, f, g in L , γi,n for n ∈ Z and all ii.
+
+Proof. Recall that we have a Morse function f : XL /BBL → R. Let Y0 = f −1 (0). Since σ(0) = L
+we have that Y0 ⊂ YL (σ) By [10, Corollary 10.4], we have that the inclusion Y0 → YL (σ) is a
+surjection on π1 . From [10, Theorem 14.1], we have a presentation for π1 (Y0 ) which is exactly,
+
+                             hE | ef g, gf e for each triangle e, f, g in L i.
+                       (0)
+Let Z = XL r {v ∈ XL | f (v) 6= 0}. Then π1 (Z) = π1 (Y0 ).
+   Thus to obtain a presentation of GL (σ) we add in the relations coming from the disks in YL (σ).
+By [10, Lemma 14.3], we see that if D is the disk glued to the word γi,n , then this corresponds
+                         [n]
+exactly to the relation γi,n . Thus we arrive at the desired presentation.
+   Later we will show that there are uncountably many such groups. For this purpose it will be
+useful to know the following:
+Lemma 4.3. Let γ be an edge loop in L. Then γ [n] is trivial in GL (σ) if and only if γ lifts to a
+loop in σ(n).
+Proof. The loop γ [n] in YL (σ) is homotopic to the loop γ in the link of the vertex v of XL at height
+n. We will label this γn . Note that γn belongs to the ascending or descending link of v (depending
+on the sign of n) and this subspace is exactly L.
+    If γ lifts to a loop in σ(n), then γ defines an element of π1 (σ(n)) and is homotopic to a product
+of the loops γi,n . Thus together with the triangle relations we see that γ [n] is trivial in π1 (YL (σ)).
+    Now suppose that γ [n] is trivial in π1 (YL (σ)), then the loop γ [n] lifts to a loop in Y^L (σ). We
+can now lift the homotopy and see that γn also lifts to a loop in Y^
+                                                                   L (σ) which we will call λn . This
+loop must be in the ascending or descending link of some vertex w of Y^  L (σ). However, this link is
+exactly σ(n), thus λn is a loop in σ(n) which is a lift of γ.
+
+
+
+
+                                                    7
+5     Maps between GL (σ)
+Recall that we partially order the set Z by σ  σ ′ if σ(n) is a cover of σ ′ (n). Let γi,n be the set of
+                                    ′
+loops that generate π1 (σ(n)) and γi,n be the set of loops that normally generate π1 (σ ′ (n)). In the
+                              ′                                     ′
+case that σ(n) is a cover of σ (n) we can assume that {γi,n } ⊂ {γi,n  }. Thus, one can see from the
+presentations in Theorem 4.2 that there are surjective maps GL (σ) → GL (σ ′ ) whenever, σ  σ ′ .
+This map can also be realised at the level of cube complexes.
+Theorem 5.1. Let σ, σ ′ ∈ Z. Suppose that σ(n)  σ ′ (n). Then there is a branched cover of cube
+                   ′
+complexes XLσ → XLσ which preserves level sets.
+Proof. To see this recall YL (σ) is obtained from XL by removing all vertices and gluing disks in
+the link at level n to generators for π1 (S(σ(n))). Thus take as our generating set for π1 (S(σ(n)))
+a generating set for π1 (S(σ ′ (n))) along with extra generators. This way we obtain an inclusion
+YL (σ) → YL (σ ′ ).
+    Let D be the set of disks added to obtain YL (σ). Let D′ be the set of disks added to YL (σ) to
+obtain YL (σ ′ ).
+    Let Y^     ′                                 ′                                           ^′
+          L (σ ) be the universal cover of YL (σ ). Let Y1 be the space obtained from YL (σ ) by
+                                  ′
+removing the lifts of disks in D . Then Y1 is the cover of YL (σ) corresponding to the kernel of the
+surjection GL (σ) → GL (σ ′ ). Thus, the universal cover of Y1 is the universal cover of YL (σ). When
+                                                                                             ′
+we remove the disks and complete we get a branched cover of cube complexes XLσ → XLσ .
+Corollary 5.2. Let σ, σ ′ ∈ Z with σ ≺ σ ′ . Suppose that σ(0) = σ ′ (0) = L. Then the Cayley graph
+of GL (σ) is a cover of the Cayley graph for GL (σ ′ ), where both groups have as generating sets the
+edges of L.
+Proof. In the case that σ(0) = L we have that GL (σ) acts freely on fσ−1 (0). Moreover, it acts
+transitively on vertices. Thus, the 1-skeleton of fσ−1 (0) is the Cayley graph for GL (σ). Similar
+statements hold for GL (σ ′ ).
+    Now Theorem 5.1, we have a covering map XLσ → XL (σ ′ ) which preserves level sets. Thus we
+get a covering of Cayley graphs.
+Theorem 5.3. There exists a presentation G = hX | Ri of a group of type F P2 (Z) such that for
+any finite subset T ⊂ R, we can find S such that T ⊂ S ⊂ R and hX | Si is not of type F P2 (R) for
+any ring R.
+Proof. Throughout the proof let G = Z3 ⋊ SL3 (Z) and N = Z3 ⊳ G. There are two properties of
+this pair we will use namely, that G is perfect (see for instance [5]) and so H1 (G; R) = 0 for all
+rings R and H1 (N ; R) = R3 for all rings R.
+    Let L be a flag complex with no local cut points and fundamental group G. Let K be the cover
+corresponding to N . Let E be the set of edges of L. Let αi = (e1,i , . . . , eni ,i ) be a sequence of loops
+in L that generate N . Let βi = (f1,i , . . . , fmi ,i ) be a sequence of loops in L that generate G. We
+can obtain the following presentation for BBL from [6]:
+                                                                [n]   [n]
+              hE | ef g, gf e for each triangle e, f, g in L , αi , βi      for n ∈ Z and all ii.
+
+Since G is perfect, we obtain from [1] that BBL is of type F P2 (Z).
+                                                                                 [n]
+   Let T be a finite subset of the relations of BBL . Let F = {n | ∃i such that βi ∈ T }. Let S be
+the the union of the following sets of relations:
+
+                                                     8
+    • T,
+    • all triangle relations,
+        [n]
+    • αi      for all n ∈ Z,
+        [n]
+    • βi      for n ∈ F
+    Consider the subpresentation
+                                                hE | Si
+This is a presentation of GL (σ), where
+                                                (
+                                                    K,   if n ∈
+                                                              / F,
+                                       σ(n) =
+                                                    L,   if n ∈ F.
+
+Since F is a finite set there are infinitely many vertices such that the ascending and descending
+link have non-trivial first homology with coefficients in R. Thus GL (σ) is not of type F P2 (R) by
+Theorem 3.4.
+
+
+6     Groups that are F P2 over fields
+We are now ready to prove the following theorem.
+Theorem 6.1. There exists groups that are of type F P2 (Q) and F P2 (Z/pZ) for all p but not of
+type F P2 (Z).
+Proof. To do this we find a finitely presented group G with a sequence of subgroups Gn such that
+                                            (
+                                              Zmn,  if n is prime,
+                              H1 (Gn ; Z) =
+                                              0,    if n is not prime.
+
+    Let G = SL3 (Z). Let Gp be the level p congruence subgroup. By [11], we have that H1 (Gp ; Z) =
+Z/pZ8 .
+    Now let L be a flag complex with no local cut points with fundamental group G. Let Gn be the
+level n congruence subgroup if n > 2 is prime and the trivial subgroup otherwise. Let Ln be the
+cover corresponding to Gn . Let σ be the function assigning n to Ln .
+    In this case Ln is a trivial or finite cover of L. In either case, the quotient is finitely presented
+and hence of type F P2 over any ring.
+    Since all the homology groups considered are finite we see that H1 (σ(n); Q) vanishes for all n.
+Also H1 (σ(n); Z/pZ) is non-trivial if and only if n = p. Thus we can apply Theorem 3.4 to see that
+GL (σ) is of type F P2 (Q) and F P2 (Z/pZ) for all p.
+    However, there are infinitely many n with H1 (σ(n); Z) non-trivial. Thus, by Theorem 3.4 we
+see that GL (σ) is not of type F P2 (Z).
+   One would imagine that it is possible to prove the corresponding result for F Pk or even F P .
+The above theorem gives a template for how to do this. To prove the above theorem for type
+F Pk one would need a flag complex L and a sequence of normal covers Ln satisfying the following
+conditions:
+
+                                                     9
+    • For infinitely many n, there is an i < k such that Hi (Ln ; Z) does not vanish.
+    • For all but finitely many pairs (i, n) with i < k, we have that Hi (Ln ; Q) vanishes.
+    • For each prime p, we have that for all but finitely many pairs (i, n), with i < k, we have that
+      Hi (Ln ; Z/pZ) vanishes.
+    • For all n and all p the quotient π1 (L)/π1 (Ln ) is of type F Pk (Q) and F Pk (Z/pZ).
+For the F P result replace F Pk by F P and remove the i < k assumption throughout.
+   In a similar way to Theorem 6.1, we can prove the following theorem.
+
+Theorem 6.2. Let P be the set of primes. For each subset S of P there is a group which is type
+F P2 (Z/pZ) if and only if p ∈
+                             / S.
+   Moreover, we can construct such a group that has a proper action on a 3-dimensional CAT(0)
+cube complex.
+Proof. Let L be a flag complex with fundamental group GL3 (Z). For p > 2, let Gp denote the
+level p congruence subgroup in SL3 (Z). Note that Gp is still finite index and normal in GL3 (Z).
+Let G2 = GL3 (Z). Let L̄ be the cover of L corresponding to SL3 (Z). Let Lp be the cover of L
+corresponding to Gp . Thus H1 (Lp ; Z) is a finite p-group.
+    Let S = {p1 , p2 , p3 , . . . } Let (an )n∈N be any sequence which contains pi infinitely many times
+for each pi ∈ S. For instance, we can take the sequence
+
+                               p1 , p1 , p2 , p1 , p2 , p3 , p1 , p2 , p3 , p4 , p1 , . . . .
+
+    Define σ : Z → C as follows                       (
+                                                          L̄,   if n < 0,
+                                          σ(n) =
+                                                          Lan , if n ≥ 0.
+Since each pi appears infinitely many times in (an ) we have by Theorem 3.4, that GL (σ) is
+F P2 (Z/pZ) if and only if p ∈
+                             / S.
+   Since all the covers taken were finite index we see that all the vertex stabilisers are finite. Thus
+the action of GL (σ) on XLσ is proper.
+
+
+7     Uncountably many quasi-isometry classes
+We can show that there are uncountably many quasi-isometry classes of groups as in Theorem 6.2.
+The proof given here closely follows that of [8]. The idea of the proof is to interleave the sequence
+of covers from Theorem 6.2, with the sequences of universal covers as in [8]. Thus, we can use the
+sequence from covers from Theorem 6.2 to obtain the desired finiteness properties and we use the
+relations (or lack thereof) from the universal covers to obtain uncountably many quasi-isometry
+classes.
+    Let σ, σ ′ ∈ Z with σ ≺ σ ′ . Let M (σ, σ ′ ) = min{|n| | σ(n) 6= σ ′ (n)}.
+Lemma 7.1. Suppose that L is d-dimensional and σ, σ ′ ∈ Z with σ ≺ σ ′ and σ(0) = σ ′ (0) = L,
+and take the standard generating set for GL (σ) and GL (σ ′ ). The word    plength of any non-identity
+element in the kernel of the map GL (σ) → GL (σ ′ ) is at least M (σ, σ ′ ) 2/d + 1.
+
+
+                                                            10
+Proof. This follows from Lemmas 3.1 and 3.2 of [8].
+   We will use the taut loop length spectrum of Bowditch [2].
+Definition 7.2. Let Γ be a graph and l ∈ N. Let Γl denote the 2-complex with 1-skeleton Γ and a
+2-cell attached to each loop of length < l. An edge loop of length l is taut if it is not null-homotopic
+in Γl . Bowditch’s taut loop length spectrum, H(Γ) is the set of lengths of taut loops.
+Definition 7.3. Let H, H ′ be two sets of natural numbers. We say that H and H ′ are k-related if
+for all l ≥ k 2 + 2k + 2, whenever l ∈ H then there is some l′ ∈ H ′ such that kl ≤ l′ ≤ lk and vice
+versa.
+   The key element from [2] is the following relating the taut loop length spectrum to quasi-
+isometries.
+Lemma 7.4. If (connected) graphs Γ and Λ are k-quasi-isometric, then H(Γ) and H(Λ) are k-
+related.
+   We are now ready to prove the main theorem of this section. The proof is similar to that of
+Theorem 5.2 in [8]. Here is a brief outline. For each F ⊂ N we will construct a function σF . We will
+then give a rough computation of the taut loop length spectrum for the Cayley graph for GL (σF ).
+This will show that if GL (σF ) is quasi-isometric to GL (σF ′ ), then F △F ′ is finite and conclude the
+desired result. The key change from [8] is that due to the sequence of covers we cannot take a single
+constant C and must take a sequence of constants Ci satisfying certain conditions relating to the
+function σF . Comparing to the proof of Theorem 5.2 in [8] we have replaced the constant β by the
+sequence of constants rp and chosen Ci to ensure the arguments contained there still work.
+Theorem 7.5. Let S be a set of primes. Then there are uncountably many quasi-isometry classes
+of groups that are of type F P2 (Z/pZ) if and only if p ∈ S.
+Proof. Let L be a flag complex with fundamental group GL3 (Z). For each prime p, let Lp be
+the cover of L corresponding to the level-p congruence subgroup in SL3 (Z). Let L1 be the cover
+corresponding to SL3 (Z). Let L0 be the universal cover L̃ of L.
+    Given a finite set Ω of loops that normally generate π1 (Lp ), define rp (Ω) as the maximum length
+of a loop in Ω. Define rp to be the minimum of rp (Ω) as Ω runs over all possible normal generating
+sets for π1 (Lp ).
+    Let (bn ) be the following sequence:
+                                           (
+                                             am , if n = 2m + 1,
+                                      bn =
+                                             1,    if n = 2m,
+            p
+   Let α = 2/(d + 1), where d is the dimension of L. Let Cn be a sequence of integers satisfying
+the following conditions:
+   • C1 α > 3,
+   • Cn α > rbn−1 ,
+   • Cn α > rbn
+   • Cn > Cn−1 .
+
+                                                  11
+                                         n           n−1
+                                            2
+From this we can deduce that αCn2 > rbn−1 Cn−1    .
+   Let F ⊂ N. Let F = {2n | n ∈ F } ∪ {2n + 1 | n ∈ N}. Define σF as follows:
+                                                        2i
+                                     
+                                     Lbi , if n = Ci and i ∈ F ,
+                                     
+                            σF (n) = L,       if n = 0,
+                                     
+                                       L0 , otherwise.
+                                     
+
+    Let ΓF be the Cayley graph of GL (σF ) with generating set the edges of L. We will prove the
+following two propositions about H(ΓF ):
+                                     k           k
+   • If k ∈ F , then H(ΓF ) ∩ [Ck2 α, Ck2 rbk ] 6= ∅.
+                                 l           l
+                    / ∪l∈F [Cl2 α, Cl2 rbl ], then k ∈
+   • If k > 3 and k ∈                                / H(ΓF ).
+
+   Suppose k ∈ F , let F ′ = F r {k}. There is a surjection GL (σF ) → GL (σF ′ ). Let K be the
+                                                                                                        k
+kernel of this surjection. By Lemma 7.1, any non-identity element of K has length at least αCk2 .
+                                                          k
+We also know that there is an element of length rk Ck2 in K. The length of the shortest element of
+K defines a member of H(ΓF ). Thus we obtain the first statement.
+                                                                                            n
+   For the second statement, let k ∈   / F . Choose n ∈ N maximal such that rbn Cn2 < k or −1
+otherwise. Let F ′ = F ∩ [0, n]. Let K be the kernel of the map GL (σF ′ ) → GL (σF ). Consider the
+                                                                                                        n
+covering map ΓF ′ → ΓF coming from Theorem 5.1. Every relator in GL (σF ′ ) has length ≤ rbn Cn2 .
+   Now suppose that γ is a loop of length k in ΓF . We can lift γ to ΓF ′ . If γ lifts to a loop in ΓF ′ ,
+                                                               n
+then it must be a consequence of loops of length ≤ rbn Cn2 . Thus, γ cannot be taut.
+   Now suppose that γ lifts to a non-closed path. In this case γ defines an element of K. The
+                                         2m
+shortest such element has length ≥ αCm       where m = M (σF , σF ′ ). By choice of n we have that
+           m
+          2                                  2m         2m
+k ≤ rm Cm . Thus, we obtain that k ∈ [αCm       , rbm Cm    ]. However, this contradicts the choice of k
+and thus γ is not taut.
+                                                     2m          2m               2m+n          2m+n
+   To complete the proof, suppose that l ∈ [αCm         , rbm Cm    ] and l′ ∈ [αCm+n  , rbm+n Cm+n  ] for
+some n > 0. Then
+                                   2m+n        2m+n            2m −1
+                           l′   αCm+n       αCm            αCm            2m −2
+                              ≥      2m  >         2m ≥               > Cm      .
+                           l    rbm Cm      rbm Cm            rbm
+                                                                               2n
+    Suppose that H(ΓF ) and H(ΓF ′ ) are k-related. If n ∈ F △F ′ , then Cn2 −2 ≤ k. Thus if F △F ′
+is infinite, then H(ΓF ) and H(ΓF ′ ) are not k-related. Hence, GL (σF ) is not quasi-isometric to
+GL (σF ′ ).
+   While we have used the framework of Bowditch’s taut loop length spectrum it is also possible to
+use the work of [12]. Let G be the space of marked groups. Combining Lemma 4.3 and Lemma 7.1
+we see that Z → G given by σ 7→ GL (σ) is a continuous injection with perfect image. Thus, by [12,
+Theorem 1.1] we obtain uncountably many quasi-isometry classes of groups of the form GL (σ). By
+carefully choosing subsets of Z to ensure that the image is still perfect one can proves analogues of
+Theorem 7.5 for other properties satisfied by the GL (σ).
+
+
+References
+ [1] Mladen Bestvina and Noel Brady. Morse theory and finiteness properties of groups. Invent.
+     Math., 129(3):445–470, 1997.
+
+                                                      12
+ [2] B. H. Bowditch. Continuously many quasi-isometry classes of 2-generator groups. Comment.
+     Math. Helv., 73(2):232–236, 1998.
+ [3] Kenneth S. Brown. Finiteness properties of groups. Journal of Pure and Applied Algebra,
+     44(1):45 – 75, 1987.
+ [4] Thomas Brown and Ian J Leary. Groups of type F P via graphical small cancellation, 2020.
+     arXiv:2004.04550.
+ [5] Marston Conder, Edmund Robertson, and Peter Williams. Presentations for 3-dimensional
+     special linear groups over integer rings. Proceedings of the American Mathematical Society,
+     115(1):19–26, 1992.
+ [6] Warren Dicks and Ian J. Leary. Presentations for subgroups of Artin groups. Proc. Amer.
+     Math. Soc., 127(2):343–348, 1999.
+ [7] Robert Kropholler.   Hyperbolic groups with almost finitely presented subgroups, 2018.
+     arXiv:1809.10594.
+ [8] Robert P. Kropholler, Ian J. Leary, and Ignat Soroko. Uncountably many quasi-isometry
+     classes of groups of type F P . Amer. J. Math., 142(6):1931–1944, 2020.
+ [9] Ian J. Leary. Subgroups of almost finitely presented groups. Math. Ann., 372(3-4):1383–1391,
+     2018.
+[10] Ian J. Leary. Uncountably many groups of type F P . Proc. Lond. Math. Soc. (3), 117(2):246–
+     276, 2018.
+[11] Ronnie Lee and R. H. Szczarba. On the homology and cohomology of congruence subgroups.
+     Invent. Math., 33(1):15–53, 1976.
+[12] Ashot Minasyan, Denis Osin, and Stefan Witzel. Quasi-isometric diversity of marked groups,
+     2020.
+
+
+
+
+                                               13
+

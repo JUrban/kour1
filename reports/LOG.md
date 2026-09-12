@@ -2696,3 +2696,9 @@ A separate Python checker reconstructs all15 groups from faithful permutations a
 The initial GAP run returned0 with a sentinel but six syntax warnings; its wrapper correctly returned1 and its exact evidence is retained. The corrected GAP runner returned0 (7d80d3), independent Python returned0 (140c43), and the full28-file audit plus exact dual replay returned0 (59a581). General20.112 remains unresolved. New complete candidates44, outside reviews0.
 
 The report also records the elementary central-Frattini lifting case with no novelty claim. All original screen files and source hashes remain unchanged. The n=7 controller continues; at this update shard3 has ended, and workers0 and4 remain active. No aggregate proof claim.
+
+## 2026-09-12: integral finiteness reductions for21.70--21.71
+
+Recorded full conditional arguments: integral FP plus orientable field duality implies integral duality; finite generation of integral homology through the field-resolution bound forces equal Euler characteristics. Neither missing finiteness hypothesis is supplied by the original problems. A squarefree-denominator rank-one group and a factorial telescope isolate two invalid field-to-integral shortcuts.
+
+The2025 Fisher--Italiano--Kielak source was read on pp.1--5 and23--29, including the limited low-dimensional integral conclusion. Kropholler2021 Sections1--6 were read; its FP_2 construction contains torsion of every prime order through its displayed stabilizers and cannot have finite cohomological dimension over any finite prime field. Two theorem-page images were checked. The10-file packet binds sources and proof notes only; no computational proof or new solution is claimed.
