@@ -95,6 +95,11 @@ is uniform in dimension but deliberately very large. The 15.65 proof handles
 the Notebook's squarefree **minimal** polynomial definition and separately
 the source's squarefree **characteristic** polynomial definition.
 
+For 20.90, the [two-generator CA construction](../research/20.90-proof.md)
+proves the stronger result named in the table. The table's first proof
+link opens its separate four-generator 2-adic CN companion. Both answer
+the printed question; the ledger indexes both texts.
+
 ## Selected proved partial results
 
 These entries do not add to the complete-candidate count.
@@ -147,10 +152,11 @@ qualification for 15.76(b) remains explicit. This was a statement-scope review,
 not a new mathematical replay of all 46 proofs. See the
 [PDF review](pdf-statement-review.md).
 
-The final-phase [selected proof reread](../research/closeout-proof-review.md)
-and [addendum](../research/closeout-proof-review-addendum.md) record complete
-rereads of selected proof texts for seventeen candidates and several partial
-proofs, with the particular points checked. This is same-agent review.
+The final-phase [selected proof reread](../research/closeout-proof-review.md),
+the [addendum](../research/closeout-proof-review-addendum.md), and the
+[construction review](../research/closeout-construction-review.md) record
+complete rereads of selected proof texts for twenty-two candidates and
+several partial proofs, with the particular points checked. This is same-agent review.
 Imported classical and published results
 remain dependencies; the per-candidate source audits distinguish a theorem
 statement read from a full source proof audited.
