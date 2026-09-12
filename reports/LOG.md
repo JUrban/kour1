@@ -2195,3 +2195,19 @@ points found no gap; imported GS and unconfirmed priority are explicit.
 Complete candidate count is40; externally accepted count remains0.
 Latest n7 snapshot at02:07:13:27,040,000 checked nodes, six live workers,
 zero completed shards,37,787,380KiB RSS.
+
+
+## 2026-09-12T02:19:03.919320+00:00 — 18.84 screen archived; 18.65 source scope
+
+The corrected14-test pilot,12-test exceptional follow-up and87-test
+catalogue over78 table identifiers all complete with actual exit0.
+No ambient positive certificate appeared; every catalogue prime set
+has an involution obstruction. There are87 missing/class-capped entries
+and possible duplicate isomorphism types under different identifiers.
+The conclusions remain conditional on character-table and extension
+metadata. Initial display and scope-warning logs are retained.
+The source/packet archive hash and sentinel check passes; no new count.
+Guralnick--Malle's2014 author version was distinguished from its2013
+submission date; p.2 was viewed. Theorem1.2 has a stronger closure
+hypothesis than18.65, and the stated Ree reduction is not independently
+proved in this packet. The general conjecture remains unresolved.

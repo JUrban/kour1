@@ -1,0 +1,46 @@
+{
+  "observed_utc": "2026-09-12T02:19:03.751025+00:00",
+  "status": "BOUNDED_EXPLORATION_NO_CANDIDATE",
+  "actual_exit_observations": [
+    {
+      "log": "results/18.84-table-pilot.log",
+      "returncode": 0,
+      "sentinel": "PASS_1884_PILOT tests=14 candidates=0",
+      "tool_chunk": "f23a46"
+    },
+    {
+      "log": "results/18.84-exceptional.log",
+      "returncode": 0,
+      "sentinel": "PASS_1884_EXCEPTIONAL",
+      "tool_chunk": "18b5c1"
+    },
+    {
+      "log": "results/18.84-catalogue.log",
+      "returncode": 0,
+      "sentinel": "PASS_1884_CATALOGUE groups=78 tests=87 skipped=87",
+      "tool_chunk": "5c6df7"
+    }
+  ],
+  "table_pairs": 78,
+  "catalogue_tests": 87,
+  "skipped": 87,
+  "pilot_tests": 14,
+  "exceptional_tests": 12,
+  "scope": "Conditional on GAP character tables and extension metadata; not independently reconstructed",
+  "sha256": {
+    "references/cache/18.65-guralnick-malle-02.png": "dacabf8e40e54da7d97f17f0b4d8b45459705c565162a4ff1ace5f927e8dee7f",
+    "references/cache/guralnick-malle-2013-baer-suzuki.pdf": "957baea3aff09ad82c9cf6a1a8ccf6fc9f976e35b7413c82e2c78453df7353f5",
+    "references/cache/guralnick-malle-2013-baer-suzuki.txt": "f3e374ab7d1138b49904c295297ad571ab68f7995ca1a5d3d6a06d15b0f2be1e",
+    "research/18.65-source-triage.md": "c1e27375fe79a8a959dd657ef2c27e4a7245bd6053410f678430836213702757",
+    "research/18.84-plan.md": "e7ba31f06d94b5347be0b332b2f25002ab4e7f87c6b662360abdd613d611464b",
+    "research/18.84-report.md": "6869247507a35a0c38fcb2063254f0704447e99a610b37b27da07fa014a9ab08",
+    "results/18.84-catalogue.log": "817caed95f4c20a7b79c26671241d65838ff3d9f06092ca27a96ecd18ce4f9e3",
+    "results/18.84-exceptional-initial.log": "3f257ff6a7b0a92ba8a05a60ec2fc8aeb267aa7f0975e76403adc8e9d7c4bb12",
+    "results/18.84-exceptional.log": "171b154470d4f47ec87c641ea71cf117cb21893b90cae8c2028e243d6abe2366",
+    "results/18.84-table-pilot-initial.log": "bef7f2ea0fb9e0db934242577d8145bc458a8aa447561be570a2a89c40a44f56",
+    "results/18.84-table-pilot.log": "57bf8e0e39807c760db30cc695405e80dc2862355c3d7f0a177b965eddf45b6e",
+    "scripts/screen_18_84_catalogue.g": "69926e8b1a23420d5fba3cfac04d902e5df5a3cf41e58698d173d11177ef222b",
+    "scripts/screen_18_84_exceptional.g": "5e17b386e4555503c61fe2cfb712186d6dfb5b782946375525bc3e3d266becab",
+    "scripts/screen_18_84_tables.g": "25e622abb588470fbb0282c20208f73dd27181e8fb8e12279a9ea62669126b05"
+  }
+}
