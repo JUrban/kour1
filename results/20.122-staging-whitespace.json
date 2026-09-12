@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-09-12T15:05:02.162923+00:00",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "actual_returncode": 2,
+  "initial_collection_tool_chunk": "5ae637",
+  "stdout_sha256": "fb7463eb7f6ec1eda8b3d56579d1c6bafd78ada661d328044b6fbc441b2058bf",
+  "scope": "Only byte-preserved GAP diagnostic stdout/stderr has whitespace. Raw evidence was not rewritten. The authored code and reports pass the scoped whitespace check."
+}

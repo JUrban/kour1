@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "order": 48,
+  "all_subgroups": 98,
+  "normal_subgroups": 9,
+  "normal_nilpotent_subgroups": 4,
+  "nilpotency_orders": [
+    [
+      1,
+      4,
+      16
+    ],
+    [
+      1,
+      2,
+      8
+    ],
+    [
+      1,
+      8
+    ]
+  ],
+  "derived_orders": [
+    48,
+    12,
+    4,
+    1
+  ],
+  "multiplication_entries": 2304,
+  "associativity_triples": 110592,
+  "conjugating_pairs": 2304,
+  "b_orbit": 3,
+  "c_orbit": 3,
+  "intersection_orders": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    4
+  ],
+  "Min_order": 16,
+  "min_order": 8,
+  "fitting_order": 8,
+  "outside_element": [
+    2,
+    3,
+    4,
+    1,
+    6,
+    5
+  ],
+  "outside_normal_closure_order": 24,
+  "rejected_corruptions": [
+    "wrong_B",
+    "omitted_intersection",
+    "invented_minimal_member",
+    "false_fitting_member",
+    "conflated_minima"
+  ]
+}
