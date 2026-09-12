@@ -1,0 +1,24 @@
+Syntax warning: Unbound global variable in scripts/verify_20_89_normal_algebra.g:30
+            repeat old:=e;e:=Set(old,x->Comm(x,a));until e=old;
+                                               ^
+Syntax warning: Unbound global variable in scripts/verify_20_89_normal_algebra.g:39
+            eigenvalues:=Number([1..p-1],s->DeterminantMat(a-s*identity)=Zero(field));
+                                                           ^
+Syntax warning: Unbound global variable in scripts/verify_20_89_normal_algebra.g:39
+            eigenvalues:=Number([1..p-1],s->DeterminantMat(a-s*identity)=Zero(field));
+                                                               ^^^^^^^^
+Syntax warning: Unbound global variable in scripts/verify_20_89_normal_algebra.g:43
+                e0:=First(encoded,v->Comm([v{[1,2]}*one,v{[3,4]}*one],a)<>identity);
+                                                    ^^^
+Syntax warning: Unbound global variable in scripts/verify_20_89_normal_algebra.g:43
+                e0:=First(encoded,v->Comm([v{[1,2]}*one,v{[3,4]}*one],a)<>identity);
+                                                                 ^^^
+Syntax warning: Unbound global variable in scripts/verify_20_89_normal_algebra.g:43
+                e0:=First(encoded,v->Comm([v{[1,2]}*one,v{[3,4]}*one],a)<>identity);
+                                                                      ^
+Syntax warning: Unbound global variable in scripts/verify_20_89_normal_algebra.g:43
+                e0:=First(encoded,v->Comm([v{[1,2]}*one,v{[3,4]}*one],a)<>identity);
+                                                                          ^^^^^^^^
+Syntax warning: Unbound global variable in scripts/verify_20_89_normal_algebra.g:45
+                orbit:=List(params,c->e0^c);
+                                      ^^

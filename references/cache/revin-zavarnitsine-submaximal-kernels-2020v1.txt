@@ -1,0 +1,464 @@
+                                              THE BEHAVIOR OF π-SUBMAXIMAL SUBGROUPS UNDER
+                                                 HOMOMORPHISMS WITH π-SEPARABLE KERNELS
+arXiv:2006.09752v1 [math.GR] 17 Jun 2020
+
+
+
+
+                                                             DANILA O. REVIN AND ANDREI V. ZAVARNITSINE
+
+
+
+                                                   Abstract. We explore the extent to which constructing the inductive
+                                                   theory of X-submaximal subgroups is possible. To this end, we study
+                                                   the behavior of π-submaximal subgroups under homomorphisms with
+                                                   π-separable kernels and construct examples where such behavior is ir-
+                                                   regular.
+                                                   Keywords: X-maximal subgroup, X-submaximal subgroup, complete
+                                                   class, π-separable group
+                                                   MSC2010: 20E28, 20E34
+
+                                                                 In honor of the 50th birthday of Professor Andrey V. Vasil’ev
+
+                                                                             1. Introduction
+                                               The present paper is concerned with the extent to which constructing the induc-
+                                           tive theory of X-submaximal subgroups is possible. This concept was introduced by
+                                           H. Wielandt during his talk at the Santa Cruz Conference on Finite Groups in [14]
+                                           as a tool to study X-maximal subgroups of ﬁnite groups. We recall the background
+                                           and formulate the main deﬁnitions and problems.
+                                               All groups considered throughout the text are assumed to be ﬁnite.
+                                               Since its inception in the papers by É. Galois and C. Jordan [2, 7, 8], group theory
+                                           has had the following as one of its central problems. Given a group G, ﬁnd its sub-
+                                           groups possessing a speciﬁc property or, equivalently, belonging to a speciﬁc class X
+                                           of groups (for example, solvable, nilpotent, abelian, p-groups, etc.). If X has good
+                                           properties resembling those of solvable groups then to solve the general problem
+                                           it suﬃces to know the so-called maximal X-subgroups (or X-maximal subgroups),
+                                           i. e. the maximal by inclusion subgroup belonging to X. At the famous group
+                                           theory conference held in Santa Cruz as early as 1979, H. Wielandt put forward
+                                           the program to study the X-maximal subgroups in ﬁnite groups for the so-called
+                                           complete classes X [14]. According to his deﬁnition, a nonempty class X of ﬁnite
+                                           groups is complete if X is closed with respect to taking subgroups, homomorphic
+                                           images, and extensions. The latter means that X includes every group G with a
+                                           normal subgroup A such that A, G/A ∈ X. Other than the class of solvable groups,
+                                           an important example of a complete class is the class of π-groups for any set π
+                                           of primes, i. e. the groups all whose prime divisors of the order belong to π. Un-
+                                           less otherwise stated, we will henceforth assume that X is a ﬁxed complete class.
+                                           Wielandt viewed his program as a development of Hölder’s program which replaced
+                                           the study of an arbitrary ﬁnite group G with the study of quotients of a subnormal
+                                           (e. g., composition) series
+                                                                       G = G0 ≥ G1 ≥ · · · ≥ Gn = 1
+                                                                                      1
+2                  DANILA O. REVIN AND ANDREI V. ZAVARNITSINE
+
+
+and, in place of a subgroup H of G, its projections
+
+                              H i = (H ∩ Gi−1 )Gi /Gi
+
+on the corresponding quotients Gi = Gi−1 /Gi were considered. Clearly, if all
+projections H i are X-maximal in Gi then H itself is X-maximal in G. The problem
+is to see if the reverse holds, which is equivalent to asking whether the subgroups
+H ∩ A and HA/A are X-maximal in a normal subgroup A and the quotient G/A
+if H is X-maximal in G. The answer depends on the class X and determines the
+extent to which the problem of ﬁnding X-maximal subgroups is inductive. The
+classes for which the answer is in the aﬃrmative are listed in [9]: such is the class
+of all ﬁnite groups, the class of groups of order 1, and the class of all p-groups for
+any prime p. For all the remaining cases, there exists a group A with nonconjugate
+X-maximal subgroups. Wielandt proposed [14, 4.3] a rather general construction
+showing that, whichever ﬁnite group G is, there exists an epimorphism from the
+regular wreath product G∗ = A ≀ G onto G such that every (not only maximal!)
+X-subgroup of G is the image of an X-maximal subgroup of G.
+   Wielandt’s idea [14] was to consider instead of X-maximal subgroups the broader,
+yet substantial, concept of X-submaximal subgroups which “behave well” under
+intersections with normal and subnormal subgroups. A subgroup H of G is X-
+submaximal (or a submaximal X-subgroup) if there exists an embedding of G as a
+subnormal subgroup into a group G∗ (in which case we say that G is subnormally
+embedded in G∗ ) such that H coincides with the intersection of G and K for a
+suitable X-maximal subgroup K of G∗ . Clearly, every X-maximal subgroup is also
+X-submaximal. The converse is not true, see [4, p. 13]. X-submaximal subgroups
+have the obvious inductive property: if H is X-maximal and A is subnormal (in
+particular, normal) in G then H ∩ A is X-submaximal in A. Not every X-subgroup
+is submaximal. An obstruction here is the following
+
+Theorem (Wielandt–Hartley, [14, 5.4(a)], [10, Theorem 2]). If H is an X-sub-
+maximal subgroup of G then NG (H)/H includes no nontrivial X-subgroups.
+
+   It is due to this theorem that the concept of an X-submaximal subgroup be-
+comes useful and eﬃcient. For example, it helps to easily see that the X-maximal
+subgroups are determined uniquely up to conjugacy by their projections on the
+quotients of a subnormal series [14, 5.4(c)], [10, Corollary 1]. In comparison, the
+similarly deﬁned dual concept of an X-epimaximal subgroup which ensures “good
+behaviour” under homomorphisms turns out to lack content, because in any non-
+trivial situation it is equivalent to the concept of an X-subgroup [9]. It was shown
+in [4, 5] that the knowledge of X-submaximal subgroups in simple groups for a given
+class X would make it possible to inductively construct the X-maximal subgroups
+in an arbitrary ﬁnite group and, consequently, would make great progress in solving
+the general problem.
+   One can naturally ask to what extent the problem of ﬁnding X-submaximal
+subgroups is inductive. By this, we mean the following. Besides the fact that X-
+submaximal subgroups “behave well” with respect to intersections with (sub)normal
+subgroups, it is important to determine how they behave under homomorphisms.
+Due to the above, we cannot expect the image of an X-submaximal subgroup in
+a factor group to be X-submaximal: this fails even for the images of X-maximal
+subgroups. At the same time, generalizing a famous result by S. A. Chunikhin (see
+                  THE BEHAVIOR OF π-SUBMAXIMAL SUBGROUPS                           3
+
+
+[13, Ch. 5, Theorem 3.7]) Wielandt showed that the following reduction theorem
+holds:
+Theorem (Wielandt, [15, 12.9]). If A is an X-separable normal subgroup of a
+group G (i.e., A has a subnormal series with every factor either belonging to X
+or to the class X′ that consists of all groups none of whose nonidentity subgroups
+belongs to X), then the canonical epimorphism G → G/A maps an X-maximal
+subgroup to an X-maximal one and, furthermore, induces a bijection between the
+conjugacy classes of X-maximal subgroups in G and G/A.
+   Therefore, the presence of a normal X-separable subgroup A in G enables us
+to replace the study of X-maximal subgroups in G with a similar problem for
+the smaller group G/A. The inductiveness of the problem of ﬁnding X-subnormal
+subgroups depends, to a large extent, on whether a similar reduction theorem for
+X-submaximal subgroups holds, i. e. whether the following is true.
+Conjecture A. If A is an X-separable normal subgroup of a finite group G then
+the canonical epimorphism G → G/A always maps an X-submaximal subgroup of G
+to an X-submaximal subgroup of G/A and vice versa, every X-submaximal subgroup
+of G/A is the image of an X-submaximal subgroup of G.
+  This conjecture takes central place in the present paper. The original idea of the
+authors was to attempt conﬁrming both Conjecture A and
+Conjecture B. If A is a normal and H an X-submaximal subgroups of a finite
+group G then H is X-submaximal in NG (H ∩ A).
+   In relation to Conjecture B, we note that if H is an X-submaximal subgroup of G
+and H is contained in a subgroup M of G then H is not necessarily X-submaximal
+in M . Say, an X-submaximal but not X-maximal subgroup H which is contained
+in a strictly larger X-subgroup M is not X-submaximal in M .
+   If both Conjectures A and B turned out to be true, the problem of ﬁnding X-
+submaximal subgroups in an arbitrary ﬁnite group could be considered inductive.
+Let us explain why. Suppose G is not simple and we know how to ﬁnd the X-
+submaximal subgroups in all groups whose order is smaller than the order of G.
+Let A be a proper normal subgroup of G. For any X-submaximal subgroup H of
+G, the intersection H ∩ A is X-submaximal in A and is therefore known. We may
+consider the subgroup NG (H ∩ A) in which the X-subgroup H is submaximal due
+to Conjecture B. Furthermore, NG (H ∩ A) includes the normal subgroup NA (H ∩
+A) which is X-separable by the Wielandt–Hartley theorem. Thus, the validity of
+Conjecture A would reduce ﬁnding the X-submaximal subgroups in NG (H ∩A) to a
+similar problem for NG (H ∩ A)/NA (H ∩ A) ≃ ANG (H ∩ A)/A. The quotient G/A
+acts naturally on the set of conjugacy classes of X-submaximal subgroups of A,
+and ANG (H ∩ A)/A is the stabilizer of the class containing H ∩ A. Therefore, the
+problem of ﬁnding X-submaximal subgroups of G is reduced to a similar problem for
+the stabilizers in G/A of the conjugacy classes of X-submaximal subgroups of A.
+We note that, for a simple group S, the X-submaximal subgroups are precisely
+the intersections of S = Inn(S) and X-maximal subgroups of Aut(S) [14, 5.3], [3,
+Proposition 7].
+   The fact that Conjecture A does not hold was established in [11], where an
+example was constructed of a group G with a normal abelian 2-subgroup A and a
+submaximal but not maximal {2, 3}-subgroup H whose image with respect to the
+4                 DANILA O. REVIN AND ANDREI V. ZAVARNITSINE
+
+
+canonical epimorphism G → G/A is not {2, 3}-submaximal in G/A. The kernel of
+this homomorphism is an X-subgroup for the class X of all {2, 3}-groups. In the
+same paper, it was announced that there exist epimorphisms whose kernel belongs
+to X′ and the image of an X-submaximal subgroup is not X-submaximal. We
+construct an inﬁnite series of such examples in the ﬁnal section of this paper. The
+situation with the preimages of X-submaximal subgroups is completely analogous,
+which makes Conjecture A invalid in both directions.
+   When constructing the examples, we consider a group G with a unique minimal
+normal subgroup V which is abelian, is not contained in the center of G, and is
+such that G/V is a nonabelian simple group. In order to justify the examples,
+we need to show that some π-subgroup of G is not submaximal. We make use of
+Proposition 1 stated and proved in Section 3, which implies that the π-submaximal
+subgroups of G are exhausted by the intersections of G with π-maximal subgroups
+of the groups G∗ satisfying G = Inn(G) P G∗ ⩽ Aut(G). We emphasize that the
+subnormal embedding of G into G∗ in the deﬁnition of an X-submaximal subgroup
+cannot in general be substituted with a normal embedding. An appropriate series of
+examples was pointed out by A.V. Vasil’ev, see [10, Section 2]. Thus, Proposition 1
+is of interest in its own right and can be considered as one of the main results of
+this paper.
+   Although the problem of whether Conjecture B is true loses its relevance in light
+of the present results along with [11], it still remains open.
+   Undoubtedly, the examples constructed in [11] and in this paper by no means
+imply that the study of X-submaximal subgroups is futile. Instead, they lead to
+the realization as to why the central problem in Wielandt’s program and in the
+topic related to the search of X-maximal subgroups for a given complete class X is
+the description of X-submaximal subgroups in simple groups or, equivalently, the
+description of X-maximal subgroups in almost simple groups. Such a description
+would make it possible to ﬁnd the X-maximal subgroup in arbitrary ﬁnite groups.
+
+                                2. Preliminaries
+   To simplify the exposition, we restrict ourselves to the case where X is the class
+of π-groups for an arbitrary set π of primes.
+   The following lemma was ﬁrst formulated in [14, Statement 5.4(a)]. A proof can
+be found in [10, Theorem 2].
+Lemma 1 (The Wielandt–Hartley theorem, strong form). Let A be a subnormal
+and K a π-maximal subgroup of a finite group G. Then NA (K ∩ A)/(K ∩ A) is a
+π ′ -group.
+Lemma 2 ([15, Theorems 12.4 and 12.7]). If U is a normal π- or π ′ -subgroup of a
+group G then KU/U is π-maximal in G/U for every π-maximal subgroup K of G
+Lemma 3. Let G PP G∗ and let H = K ∩ G for some π-maximal subgroup K
+of G∗ . Suppose that U is a normal π ′ -subgroup of G∗ and : G∗ → G∗ /U is the
+canonical epimorphism. Then H = K ∩ G.
+Proof. Clearly, H = K ∩ G ⩽ K ∩ G. Suppose that H < K ∩ G. Since G PP G∗ ,
+we have H PP K, H PP K, and H PP K ∩ G.
+  Since H < K ∩ G, the index of H in NG (H) is divisible by a prime p ∈ π. We
+have
+                       NG (H) = NG (H)U/U = NG (H).
+                   THE BEHAVIOR OF π-SUBMAXIMAL SUBGROUPS                            5
+
+
+Indeed, we clearly have NG (H) ⩽ NG (H). Suppose x ∈ NG (HU ) (equivalently,
+x ∈ NG (H)). Then H x U = HU and the Schur–Zassenhaus theorem implies that
+there is u ∈ U such that H x = H u , i. e. xu−1 ∈ NG (H), x ∈ NG (H)U , and
+x ∈ NG (H). Now, we have
+                       NG (H)U   |NG (H)|   |H|      NG (H) |NU (H)|
+   p | NG (H) : H =            =          :        =        :          .
+                         HU      |NU (H)| |H ∩ U |     H      |H ∩ U |
+Since |NU (H)| is a π ′ -number, we have p | |NG (H)/H| contrary to Lemma 1.        
+   Let X be a linear representation of a group G. Given γ ∈ Aut(G), the conjugate
+representation X γ is deﬁned by X γ (g γ ) = X (g) for all g ∈ G.
+Lemma 4. Let G be a finite group such that Z(G) = 1. Let X : G → GLn (F ) be a
+faithful absolutely irreducible representation of G over a field F . Suppose that X is
+not equivalent to X γ for every γ ∈ Aut(G)\Inn(G). Then NGLn (F ) (Im X ) ∼    = C×G
+where C ∼ = F × is the scalar subgroup of GLn (F ).
+Proof. Denote M = Im X ∼    = G and N = NGLn (F ) (M ). Since X is absolutely
+irreducible, we have C = CGLn (F ) (M ) by Schur’s lemma. Clearly, C P N and
+C ∩ M = 1 due to Z(G) = 1. Therefore, G ⩽ N ⩽ Aut(G), where we denote by
+   : N → N/C the canonical epimorphism. It remains to see that G = N .
+   Assume to the contrary that there is γ ∈ Aut(G) \ Inn(G) such that t = γ for
+some t ∈ N . The identiﬁcation of G and Inn(G) shows that X and are mutually
+inverse isomorphisms between M and G. Namely, x = X (x) for every x ∈ M and
+X (g) = g for every g ∈ L. Since t normalizes M , we have X (g)t ∈ M and so
+                                                t                  −1
+             X (g)t = X (X (g)t ) = X (X (g) ) = X (g γ ) = X γ         (g)
+                                                       −1
+which implies that the conjugate representation X γ is equivalent to X . This
+contradicts the hypothesis, because γ −1 ∈ Aut(G) \ Inn(G). The claim follows. 
+
+                                  3. Proposition
+  The following result includes [11, Proposition 1] as a particular case.
+Proposition 1. Suppose a finite group G has a unique minimal normal subgroup V
+which is abelian and V  Z(G). Suppose also that L = G/V is a nonabelian simple
+group. Let H be a π-submaximal subgroup of G and let G∗ have minimal order
+among the groups such that G PP G∗ and H = K ∩ G for a π-maximal subgroup
+K of G∗ . Then G P G∗ and CG∗ (G) = 1.
+Proof. Since V is abelian minimal normal, it is an elementary abelian p-group for
+a prime p. Denote W = hV g | g ∈ G∗ i, the normal closure of V in G∗ . Note that
+W is a p-group as the subgroup generated by subnormal p-subgroups. If p ∈ π
+then W ⩽ K, and if p 6∈ π then W ∩ K = 1. Denote by : G∗ → G∗ /W the
+canonical epimorphism. Set X = hGg | g ∈ G∗ i. The minimality of |G∗ | implies
+that G∗ = KX. Moreover, X is minimal normal in G∗ . In particular, GW P X.
+   We show that every minimal normal subgroup U of G∗ such that U         W is a
+                                              ∼
+π-group. Indeed, we have U ∩ W = 1 and U = U . Also, U is minimal normal in
+G∗ , for if M P G∗ and M ⩽ U then
+                      [M, G∗ ] ⩽ U ∩ M W = (U ∩ W )M = M
+6                  DANILA O. REVIN AND ANDREI V. ZAVARNITSINE
+
+
+and M P G∗ . Therefore, either U = X or U ∩ X = 1. In the former case, we have
+X = UW ∼   = U × W , which is impossible in view of the structure of G. In the latter
+case, U ∩ X ⩽ U ∩ W = 1 and U can be embedded into G∗ /X ∼       = K/(K ∩ X), i. e.
+U is a π-group.
+   Consequently, every minimal normal subgroup U of G∗ is either a π- or a π ′ -
+group, for we have either U W or U ⩽ W , and W is a π- or a π ′ -group depending
+on whether p ∈ π.
+   We show that W is a unique minimal normal subgroup of G∗ . Let U be a
+minimal normal subgroup of G∗ . It suﬃces to show that U ∩ V 6= 1 and so V ⩽ U
+and W = hV g | g ∈ G∗ i ⩽ U . Assume to the contrary that U ∩ V = 1.
+   Denote by e : G∗ → G∗ /U the canonical epimorphism. By Lemma 2, K          e is a
+                           f
+π-maximal subgroup of G . We have G ∩ U ⩽ V ∩ U = 1 as V is the unique
+                            ∗
+
+minimal normal subgroup of G. It follows that G ∩ U = 1 and G ∼         e We show
+                                                                     = G.
+       e    e    e                                        ′
+that H = K ∩ G. This follows from Lemma 3 if U is a π -group. If U is a π-group,
+we have U ⩽ K and GU ∩ K = (G ∩ K)U = HU . This again implies H         e =K  e ∩ G.
+                                                                                   e
+                                                            ∗
+We now have a contradiction with the minimality of |G |, and so U ∩ V 6= 1 as
+claimed.
+   Let us now show that W = V CW (G). By Cliﬀord’s theorem and the subnormal-
+ity of G in G∗ , the Fp G-module W is completely reducible. An arbitrary irreducible
+submodule U of W that is not contained in CW (G) must be contained in V . This
+follows since W normalizes G, see [6, Theorem 2.6], and
+                        U = [U, G] ⩽ U ∩ G ⩽ W ∩ G = V.
+Therefore, W = V CW (G).
+   We now prove that CG∗ (X) = 1. Assuming the contrary we have W ⩽ CG∗ (X) P
+G, because W is the unique minimal normal subgroup of G∗ . Then V ⩽ W ∩ G ⩽
+CG (G) = Z(G) which contradicts the assumption that V            Z(G).
+   Denote N = NK (GW ), G0 = NG∗ (GW ). We have G0 = N X, since X ⩽ G0
+and G∗ = KX.
+   We show that if M is a π-maximal subgroup of G0 that contains N then H =
+G ∩ M . Firstly, we have H = G ∩ N , because H ⩽ N and G ∩ N ⩽ G ∩ K = H.
+Secondly, G0 = N X = M X by the above.
+   Let 1 = g1 , . . . , gm be a right transversal of N in K which will also be a right
+transversal of G0 in G∗ . We set Mi = (M ∩ GW )gi . For every g ∈ K, there exists
+σ ∈ Symm and t1 , . . . , tm ∈ N such that gi g = ti giσ . Therefore,
+          Mig = (M ∩ GW )gi g = (M ∩ GW )ti giσ = (M ∩ GW )giσ = Miσ .
+It follows that K normalizes the subgroup MX = hMi | i = 1, . . . , mi. Hence, K
+normalizes MX . Note that MX is a π-group, since [Mi , Mj ] = 1 for i 6= j and the
+Mi ’s are π-groups. Also, MX ⩽ K, because K is π-maximal in G∗ .
+   Now, if W is a π-group, we have MX ⩽ K and
+                       M ∩ G ⩽ M ∩ GW = M1 ⩽ MX ⩽ K,
+which yields
+                        H =N ∩G⩽M ∩G⩽K ∩G=H
+as claimed. Suppose W is a π ′ -group. Then Lemma 2 implies
+               K ∩ G = H ⩽ N ∩ G ⩽ M ∩ G ⩽ MX ∩ G ⩽ K ∩ G,
+                   THE BEHAVIOR OF π-SUBMAXIMAL SUBGROUPS                           7
+
+
+which yields H = M ∩ G. Another application of Lemma 2 gives M ∩ G = M ∩ G,
+hence HW = (M ∩ G)W . Therefore, |H| = |M ∩ G|. Since H = N ∩ G ⩽ M ∩ G,
+we have H = M ∩ G as claimed.
+  The minimality of G∗ now gives X = GW and X/W ∼  = L. Therefore, CW (G) =
+CW (X) ⩽ CG∗ (X) = 1 and W = V CW (G) = V . Consequently, X = GV = G and
+G P G∗ .                                                                  
+
+                                    4. Examples
+   In this section, we construct an inﬁnite series of examples where the image of a π-
+submaximal subgroup under an epimorphism φ whose kernel is an abelian π ′ -group
+is not π-submaximal in Im φ. Conversely, we give examples where a π-submaximal
+subgroup of Im φ is the image of no π-submaximal in the domain of φ. In these
+examples, π = {2, 3}.
+   The simple group L = PSL2 (7) has presentation
+                     L = ha, b | a2 = b3 = (ab)7 = [a, b]4 = 1i,                  (1)
+see [1]. Let F be a ﬁnite ﬁeld of characteristic coprime with |L| = 23 .3.7 in which
+the polynomial x2 + x + 2 has distinct roots, say, α and β. For example, such is
+every ﬁeld Fp for an odd prime p ≡ 1, 2, 4 (mod 7). It can be readily seen that the
+matrices                                                     
+                         1 α       β                   0 1 0
+                  A =  0 −1 0  ,             B= 0 0 1 
+                         0 0 −1                        1 0 0
+satisfy the deﬁning relations in (1) so that the map a 7→ A, b 7→ B determines an
+absolutely irreducible faithful representation X : L → GL3 (F ) whose F -character
+χ is shown in Table 1.
+
+                         Table 1. The F -character of X
+
+                               1a   2a   3a   4a 7a 7b
+                           χ    3   −1    0    1   α    β
+
+   We identify L with the subgroup Inn(L) of Aut(L) ∼= PGL2 (7). It is known that
+Aut(L) is the extension Lhδi, where δ is a diagonal automorphism of L of order 2.
+   Observe that the conjugate representation X δ is not equivalent to X , because
+δ permutes the two conjugacy classes of L of order 7 while χ has distinct values on
+these classes.
+   Let V be the 3-dimensional F L-module corresponding to X and let G be the
+natural semidirect product of V and L. Note that Z(G) = 1 and so we may identify
+G with Inn(G) inside Aut(G).
+Lemma 5. Aut(G)/V ∼
+                  = C × L, where C ∼
+                                   = F ×.
+Proof. Observe that V is characteristic in G and so every automorphism of G
+leaves V invariant. Hence, we may apply the general theory of automorphisms of
+group extensions. By [12, (4.4)], there is an exact sequence of groups
+            0 → Z 1 (L, V ) → Aut(G) → NGL3 (F ) (Im X ) → H 2 (L, V ).
+8                  DANILA O. REVIN AND ANDREI V. ZAVARNITSINE
+
+
+Since the characteristic of F is coprime to |L|, we have H 2 (L, V ) = H 1 (L, V ) = 0.
+Also, H 1 (L, V ) = Z 1 (L, V )/B 1 (L, V ) and B 1 (L, V ) ∼
+                                                            = V /CV (L). Therefore, we
+have Z 1 (L, V ) = B 1 (L, V ) ∼
+                               = V due to CV (L) = 0.
+   As we observed above, X δ is not equivalent to X . Also, Z(L) = 1, since L
+is simple. Hence, NGL3 (F ) (Im X ) ∼ = C × L by Lemma 4. The claim follows from
+these remarks.                                                                       
+  Let π = {2, 3}. As was observed in [13, Example 2, p. 170], the 2-Sylow
+subgroups of L are not π-maximal, because L includes subgroups of order 23 · 3,
+however they are π-submaximal, because they are intersections of L with the 2-
+Sylow subgroups of Aut(L) which are maximal.
+Lemma 6. In the above notation, the 2-Sylow subgroups of G are not π-submaxi-
+mal.
+Proof. Let S be a 2-Sylow subgroup of G and suppose to the contrary that S is
+π-submaximal. Let G∗ be a ﬁnite group of minimal order such that G PP G∗ and
+there is a π-maximal subgroup K of G∗ satisfying S = G∩K. Proposition 1 implies
+that G P G∗ and CG∗ (G) = 1, i. e. G∗ ⩽ Aut(G). Let : Aut(G) → Aut(G)/V be
+the canonical epimorphism. Since V is a π ′ -group, we have S = G∩K by Lemma 3,
+S is a 2-Sylow subgroup of G ∼= L, and K is π-maximal in G∗ by Lemma 2.
+                             ∼
+   By Lemma 5, we have G = C0 ×L, where C0 is a subgroup of F × . In particular,
+                           ∗
+
+K is the direct product of a π-maximal subgroup of C0 and a π-maximal subgroup
+of G ∼= L. Thus, S is π-maximal in L contrary to the observation above. This
+completes the proof.                                                          
+  The following example shows that the homomorphic image of a π-submaximal
+subgroup is not necessarily π-submaximal.
+   Example 1. Let V ∗ denote the F L-module contragredient to V . Since δ in-
+terchanges V and V ∗ , it naturally acts on V ⊕ V ∗ . Hence, the semidirect product
+H = (V ⊕ V ∗ )L can be extended to H ∗ = Hhδi. As above, let π = {2, 3}. The
+2-Sylow subgroup of H ∗ is π-maximal, because its homomorphic image in Lhδi is
+2-Sylow which is a maximal subgroup. Thus, the 2-Sylow subgroup S of H is π-
+submaximal. Let     : H → H/V ∗ be the canonical epimorphism. The image H is
+isomorphic to the semidirect product G = V L, and Lemma 6 implies that S is not
+π-submaximal.
+   A π-submaximal subgroup of a homomorphic image need not be the homomor-
+phic image of a π-submaximal subgroup as shows the next example.
+   Example 2. Consider the canonical epimorphism         : G → G/V ∼  = L. We
+noted above that a 2-Sylow subgroup S of L is π-submaximal. However, there
+is no π-submaximal subgroup T of G such that T = S, because T would clearly
+need to be 2-Sylow in G, but the 2-Sylow subgroups of G are not π-submaximal by
+Lemma 6.
+   In connection with the study of π-submaximal subgroups in minimal nonsolvable
+groups begun in [3], the paper [11] gives an example of a minimal nonsolvable
+group G such that the Frattini subgroup Φ(G) is a π-group, where π = {2, 3},
+and a π-submaximal subgroup of the minimal simple group G/Φ(G) ∼   = PSL2 (7) is
+not the homomorphic image of any π-submaximal subgroup of G. Furthermore,
+it was shown in [3] that, for every minimal nonsolvable group G, the image of a
+                      THE BEHAVIOR OF π-SUBMAXIMAL SUBGROUPS                                       9
+
+
+π-submaximal subgroup in G/Φ(G) is always π-submaximal in the minimal simple
+group G/Φ(G). In the same paper, the π-submaximal subgroups in minimal simple
+groups were classiﬁed. It would be interesting to see if there exists a minimal
+nonsolvable group G such that Φ(G) is a π ′ -group and G/Φ(G) has a π-submaximal
+subgroup that is not the image of any π-submaximal subgroup of G.
+   Acknowledgment. This work was funded by RFBR and BRFBR, project № 20-
+51-00007 and by the Program of Fundamental Scientiﬁc Research of the SB RAS
+№ I.1.1., project № 0314-2016-0001.
+
+                                          References
+ [1] J. H. Conway, R. T. Curtis, S. P. Norton, R. A. Parker, R. A. Wilson, Atlas of finite groups,
+     Oxford: Clarendon Press, 1985.
+ [2] É. Galois, Mémoire sur les conditions de résolubilité des équations par radicaux, J. Math.
+     Pures Appl. (Liouville) 11 (1846), 417–433.
+ [3] W. Guo and D. O. Revin, Classification and properties of the π-submaximal subgroups in
+     minimal nonsolvable groups, Bull. Math. Sci. 13 (2018), no. 2, 325–351.
+ [4]         , On maximal and submaximal X-subgroups, Algebra Logic 57 (2018), no. 1, 9–28.
+ [5]         , Pronormality and submaximal X-subgroups on finite groups, Commun. Math. Stat.
+     6 (2018), no. 3, 289–317.
+ [6] I. M. Isaacs, Finite group theory, Graduate studies in mathematics, American Mathematical
+     Society, 2008.
+ [7] C. M. Jordan, Commentaire sur le Mémoire de Galois. Comptes rendus 60 (1865), 770–774.
+ [8] C. M. Jordan, Traité des substitutions et des équations algébriques, Paris: Gauthier-Villars,
+     1870.
+ [9] D. O. Revin, Submaximal and Epimaximal X-Subgroups, Algebra and Logic, 58:6 (2019),
+     475–479.
+[10] D. Revin, S. Skresanov, A. Vasil’ev, The Wielandt–Hartley theorem for submaximal X-
+     subgroups, Monat. Math. (2020). https://doi.org/10.1007/s00605-020-01425-4
+[11] D. O. Revin, A. V. Zavarnitsine, On the behavior of π-submaximal subgroups under homo-
+     morphisms, Communications in Algebra, 48:2 (2020), 702–707.
+[12] D. J. S. Robinson, Applications of cohomology to the theory of groups, Proceedings of the
+     Conference “Groups St Andrews 1981” in London Mathematical Society Lecture Note Series,
+     vol. 71 (1982), 46–80.
+[13] M. Suzuki, Group theory II, Grundlehren der Mathematischen Wissenschaften, vol. 248,
+     Springer-Verlag, New York etc., 1986.
+[14] H. Wielandt, Zusammengesetzte Gruppen: Hölders Programm heute, Finite groups, Santa
+     Cruz Conf. 1979, Proc. Symp. Pure Math. 37, 161–173, 1980.
+[15]         , Zusammengesetzte Gruppen endlicher Ordnung, Lecture notes prepared by J. Bre-
+     uninger, Math. Inst. Univ. Tübingen (1963/64); in Helmut Wielandt, Mathematische Werke.
+     Mathematical works. Ed. by B. Huppert and H. Schneider. Vol 1. Group theory (1994),
+     607–655.
+
+   Danila O. Revin
+   Sobolev Institute of Mathematics,
+   4, Koptyug av.
+   630090, Novosibirsk, Russia
+   E-mail address: revin@math.nsc.ru
+
+   Andrei V. Zavarnitsine
+   Sobolev Institute of Mathematics,
+   4, Koptyug av.
+   630090, Novosibirsk, Russia
+   E-mail address: zav@math.nsc.ru
+
