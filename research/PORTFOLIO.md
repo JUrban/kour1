@@ -147,3 +147,8 @@ A new partial deduction gives p-Jordan exponent at most two for groups whose fin
 ## 12 September, 20:04 UTC: exact nonsoluble Jordan exponent
 
 The restricted direct power of A5 has attained exponent log(60)/log(4), between two and three, with constant one. Its finite subgroups split into diagonal A5 factors and a soluble factor; no uniformly bounded soluble index is possible. Independent Goursat enumeration agrees with GAP on all 8,381 subgroups of the two-factor group and all 59 subgroups of A5. The three new control/audit runs passed. This is an additional example, with no established priority or outside acceptance, not a solution of the general bound in 21.121(b). See `research/21.121b-a5-proof.md` and `research/21.121b-a5-report.md`.
+
+
+## 12 September, 20:16 UTC: p-Jordan exponent permanence
+
+The characteristic construction inside the p-prime radical works without solubility. It preserves an admissible exponent, changing J to J cubed. Hence finite-index subgroups and normal subgroups with bounded finite subgroup orders in the quotient have exactly the same admissible exponents as their ambient groups. Quotienting by a finite normal p-subgroup also preserves the exponent and attainment. A classical infinite extraspecial example excludes arbitrary finite central kernels. The source comparison reads Chen--Shramov 2024 Lemma 2.8, whose existing bound multiplies the exponent by the finite quotient bound. No priority is established, and unrestricted 21.121(b) remains unresolved. See `research/21.121-permanence-proof.md` and its report.

@@ -1,0 +1,2225 @@
+                                                 GG T T T T
+                                              GG     T G    T
+                                             G     T    G    T
+                                             G    T     G    T
+                                             G    T          T
+                                              G    T GG T
+                                               GG G G T T T
+
+
+
+
+Geometry &
+        Topology
+                     Volume 28 (2024)
+
+
+
+Automorphisms of surfaces over fields of positive characteristic
+                           Y IFEI C HEN
+                      C ONSTANTIN S HRAMOV
+
+
+
+
+                            msp
+                                                                  Geometry & Topology 28:6 (2024) 2747–2791
+ msp                                                                                  DOI : 10.2140/gt.2024.28.2747
+                                                                                        Published: 21 October 2024
+
+
+        Automorphisms of surfaces over fields of positive characteristic
+                                                    Y IFEI C HEN
+                                               C ONSTANTIN S HRAMOV
+
+
+     We study automorphism and birational automorphism groups of varieties over fields of positive character-
+     istic from the point of view of Jordan and p–Jordan property. In particular, we show that the Cremona
+     group of rank 2 over a field of characteristic p > 0 is p–Jordan, and the birational automorphism group
+     of an arbitrary geometrically irreducible algebraic surface is nilpotently p–Jordan of class at most 2.
+     Also, we show that the automorphism group of a smooth geometrically irreducible projective variety of
+     nonnegative Kodaira dimension is Jordan in the usual sense.
+
+     14E07, 14J50
+
+
+
+         1.    Introduction                                                                         2748
+
+         2.    Preliminaries                                                                        2752
+
+         3.    Automorphism groups                                                                  2759
+
+         4.    Group of connected components                                                        2762
+
+         5.    Minimal models                                                                       2764
+
+         6.    Abelian varieties                                                                    2768
+
+         7.    Varieties of nonnegative Kodaira dimension                                           2771
+
+         8.    Jordan property for curves                                                           2774
+
+         9.    Cremona group                                                                        2776
+
+         10.    Jordan property for surfaces                                                        2778
+
+         11.    Surfaces of zero Kodaira dimension                                                  2779
+
+         12.    Fixed points in arbitrary dimension                                                 2782
+
+         13.    Nilpotent groups                                                                    2783
+
+         14.    Conclusion                                                                          2785
+
+         References                                                                                 2787
+
+
+
+© 2024 The Authors, under license to MSP (Mathematical Sciences Publishers). Distributed under the Creative Commons
+Attribution License 4.0 (CC BY). Open Access made possible by subscribing institutions via Subscribe to Open.
+2748                                                                       Yifei Chen and Constantin Shramov
+
+1 Introduction
+Birational automorphism groups of algebraic varieties sometimes have extremely complicated structure.
+Also, their finite subgroups may be hard to classify explicitly. To obtain an approach to the description of
+finite subgroups, the following definition was introduced by V Popov [60, Definition 2.1].
+
+Definition 1.1 A group  is called Jordan (alternatively, one says that  has the Jordan property) if
+there exists a constant J D J./, depending only on , such that any finite subgroup of  contains a
+normal abelian subgroup of index at most J .
+
+A classical theorem of C Jordan [36, Section 40] asserts that the general linear group, and thus also every
+linear algebraic group, over a field of characteristic zero is Jordan; see also Bieberbach [3], Frobenius [24],
+Curtis and Reiner [17, Theorem 36.13], Robinson [68, Theorem A], Tao [80, Section 4], Breuillard [12],
+Breuillard and Green [13, Section 2], Mundet i Riera [58, Section 3], or Serre [71, Theorem 9.9]. Serre
+proved in [70, Theorem 5.3] that the same property holds for the Cremona group of rank 2, that is, for
+the group Bir.P 2 / of birational automorphisms of the projective plane, over fields of characteristic zero.
+Popov classified in [60, Theorem 2.32] all surfaces over fields of characteristic zero whose birational
+automorphism group is Jordan. Sh Meng and D-Q Zhang proved in [53, Theorem 1.6] that the Jordan
+property holds for automorphism groups of projective varieties over fields of characteristic zero.
+However, all this fails miserably over fields of positive characteristic. Indeed, let p be a prime number, let
+Fpk denote the field of p k elements, and let Fxp be the algebraic closure of the field Fp . Then the group
+PGL2 .Fxp / contains the groups PSL2 .Fpk / for all positive integers k; the latter finite groups are simple
+apart from a (small) finite number of exceptions; see Wilson [84, Section 3.3.1]. This means that the
+group PGL2 .Fxp / not only fails to be Jordan, but moreover, its finite subgroups cannot contain any proper
+subgroups of bounded index. In particular, no straightforward generalizations of the Jordan property,
+like the nilpotent Jordan property (see Guld [27]) or the solvable Jordan property (see Prokhorov and
+Shramov [62, Section 8]), can hold in this case.
+The above observation naturally leads to the following definitions.
+
+Definition 1.2 (Hu [32, Definition 1.2]) Let p be a prime number. A group  is called generalized
+p–Jordan if there is a constant J./, depending only on , such that every finite subgroup G of  whose
+order is not divisible by p contains a normal abelian subgroup of index at most J./.
+
+Definition 1.3 (Hu [32, Definition 1.6] and Brauer and Feit [11]) Let p be a prime number. A group 
+is called p–Jordan if there exist constants J./ and e./, depending only on , such that every finite
+subgroup G of  contains a normal abelian subgroup which has order coprime to p and index at most
+J./  jGp je./ , where Gp is a p–Sylow subgroup of G.
+
+Note that every Jordan group is p–Jordan (see Corollary 2.6), and every p–Jordan group is generalized
+p–Jordan, but the converse statements do not hold. It was proved in [70, Theorem 5.3] that the Cremona
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                          2749
+
+group of rank 2 over a field of characteristic p > 0 is generalized p–Jordan. As for the p–Jordan property,
+the following analog of the theorem of Jordan is known.
+
+Theorem 1.4 (Brauer and Feit [11] and Larsen and Pink [42, Theorem 0.4]) Let n be a positive integer.
+Then there exists a constant J.n/ such that for every prime p and every field k of characteristic p, every
+finite subgroup G of GLn .k/ contains a normal abelian subgroup of order coprime to p and index at
+most J.n/  jGp j3 , where Gp is a p–Sylow subgroup of G. In particular, for every field k of characteristic
+p > 0, the group GLn .k/ is p–Jordan.
+
+It immediately follows from Theorem 1.4 that (the group of k–points of) every linear algebraic group
+over a field k of characteristic p > 0 is p–Jordan.
+
+It appears that the p–Jordan property is useful to study automorphism groups and birational automorphism
+groups of algebraic varieties (by which we mean geometrically reduced separated schemes of finite
+type) over fields of positive characteristic. The following analog of a theorem of Meng and Zhang
+[53, Theorem 1.6] was proved by F Hu.
+
+Theorem 1.5 [32, Theorem 1.10] Let k be a field of characteristic p > 0, and let X be a projective
+variety over k. Then the automorphism group Aut.X / is p–Jordan.
+
+The purpose of this paper is to initiate a systematic study of p–Jordan and generalized p–Jordan properties
+for groups of birational automorphisms of varieties over fields of positive characteristic, and to generalize
+to this setting the relevant results for surfaces over fields of characteristic zero (as usual, by a surface we
+mean a variety of dimension 2). Our first goal is to prove an analog of [70, Theorem 5.3].
+
+Theorem 1.6 There exists a constant J such that for every prime p and every field k of characteristic p,
+every finite subgroup G of the birational automorphism group Bir.P 2 / contains a normal abelian subgroup
+of order coprime to p and index at most J  jGp j3 , where Gp is a p–Sylow subgroup of G. In particular,
+for every field k of characteristic p > 0, the group Bir.P 2 / is p–Jordan.
+
+Moreover, we obtain an analog of [60, Theorem 2.32]; see also Prokhorov and Shramov [66, Theorem 1.7].
+
+Theorem 1.7 Let k be an algebraically closed field of characteristic p > 0, and let S be an irreducible
+algebraic surface over k. The following assertions hold.
+
+  (i) If S is birational to a product E  P 1 for some elliptic curve E, then the group Bir.S/ is not
+      generalized p–Jordan.
+ (ii) If the Kodaira dimension of S is negative but S is not birational to a product E  P 1 for any elliptic
+      curve E, then the group Bir.S/ is p–Jordan but not Jordan.
+ (iii) If the Kodaira dimension of S is nonnegative, then the group Bir.S/ is Jordan.
+
+Geometry & Topology, Volume 28 (2024)
+2750                                                                       Yifei Chen and Constantin Shramov
+
+In the proof of Theorem 1.7 we use the following assertion, which makes Theorem 1.5 more precise in
+one important particular case.
+
+Proposition 1.8 Let k be an arbitrary field , and let X be a smooth geometrically irreducible projective
+variety of nonnegative Kodaira dimension over k. Then the group Aut.X / is Jordan.
+
+Our next result is an analog of Prokhorov and Shramov [65, Proposition 1.6]. It can be regarded as (a
+slightly more precise version of) a particular subcase of Theorem 1.7(iii).
+
+Proposition 1.9 There exists a constant J such that for every field k and every geometrically irreducible
+algebraic surface S of Kodaira dimension 0 over k, every finite subgroup of Bir.S/ contains a normal
+abelian subgroup of index at most J .
+
+Using the terminology of [62, Definition 1.6], one can reformulate Proposition 1.9 by saying that the set
+of automorphism groups of all geometrically irreducible algebraic surfaces of Kodaira dimension 0 over
+all fields is uniformly Jordan.
+Given a variety X and a point P 2 X , we denote by Aut.X I P / the stabilizer of P in the group Aut.X /.
+The following result is an analog of [65, Proposition 1.3].
+
+Proposition 1.10 There exists a constant B such that for every field k, every smooth geometrically
+irreducible projective surface S of Kodaira dimension 0 over k, every k–point P 2 S, and every finite
+subgroup G  Aut.SI P / the order of the group G is at most B.
+
+We point out that the assertion of Proposition 1.10 fails in general for stabilizers of closed points on
+varieties over algebraically nonclosed fields which are not k–points; see Example 6.7. However, it holds if
+one replaces the stabilizers by the inertia groups; see Corollary 11.5. Also, there is the following (partial)
+generalization of Proposition 1.10, which holds for varieties of arbitrary dimension over arbitrary fields.
+It is an analog of [65, Theorem 1.5].
+
+Theorem 1.11 Let k be a field , and let X be a smooth geometrically irreducible projective variety of
+nonnegative Kodaira dimension over k. Then there exists a constant B D B.X / such that for every closed
+point P 2 X and every finite subgroup G  Aut.X I P / the order of the group G is at most B.
+
+Since some of the birational automorphism groups are not Jordan, one can weaken it by considering
+nilpotent subgroups instead of abelian ones in Definition 1.1. Recall that a group G is said to be nilpotent
+of class at most c if its upper central series has length at most c; see [34, Section 1D] for details. In
+particular, nilpotent groups of class at most 1 are exactly abelian groups, and the only nilpotent group of
+class at most 0 is the trivial group. This leads to the notion of nilpotently Jordan groups.
+
+Definition 1.12 [27, Definition 1] A group  is nilpotently Jordan of class at most c if there exists a
+constant J./, depending only on , such that any finite subgroup of  contains a normal subgroup N
+of index at most J./, where N is nilpotent of class at most c.
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                       2751
+
+We introduce the analogs of this definition suitable for automorphism groups of varieties over fields of
+positive characteristic.
+
+Definition 1.13 Let p be a prime number. A group  is generalized nilpotently p–Jordan of class at
+most c if there is a constant J./, depending only on , such that every finite subgroup of  whose order
+is not divisible by p contains a normal subgroup N of index at most J./, where N is nilpotent of class
+at most c.
+
+Definition 1.14 Let p be a prime number. A group  is nilpotently p–Jordan of class at most c if there
+exist constants J./ and e./, depending only on , such that every finite subgroup G of  contains a
+normal subgroup N of order coprime to p and index at most J./  jGp je./ , where N is nilpotent of
+class at most c, and Gp denotes a p–Sylow subgroup of G.
+
+Similarly to the situation with the usual Jordan property, every nilpotently Jordan group of class at most c
+is nilpotently p–Jordan of class at most c (see Corollary 2.6), and every nilpotently p–Jordan group of
+class at most c is generalized nilpotently p–Jordan of class at most c, while the converse statements do
+not hold. Note also that a group is generalized nilpotently p–Jordan of class at most 1 (resp. nilpotently
+p–Jordan group of class at most 1) if and only if it is generalized p–Jordan (resp. p–Jordan).
+According to [27, Theorem 2], the birational automorphism group of any (geometrically irreducible)
+variety over a field of characteristic zero is nilpotently Jordan of class at most 2. We prove an analog of
+this assertion for surfaces over fields of positive characteristic.
+
+Theorem 1.15 Let k be a field of characteristic p > 0. Let S be a geometrically irreducible algebraic
+surface over k. Then the group Bir.S/ is nilpotently p–Jordan of class at most 2.
+
+The plan of our paper is as follows. In Section 2 we collect some elementary assertions about groups
+and lattices used in the rest of the paper. In Section 3 we recall the basic concepts and facts concerning
+automorphism groups and schemes of projective varieties. In Section 4 we discuss the group of connected
+components of the automorphism group scheme of a projective variety following [53]. In Section 5 we re-
+call the basics of the Minimal Model Program in dimension 2, including some theorems from its equivariant
+version. In Section 6 we collect auxiliary facts about automorphism groups of abelian varieties. In Section 7
+we make some observations on automorphism groups of varieties of nonnegative Kodaira dimension and
+prove Proposition 1.8. In Section 8 we discuss automorphism groups of smooth projective curves. In
+Section 9 we prove Theorem 1.6. In Section 10 we prove Theorem 1.7. In Section 11 we study automor-
+phism groups of surfaces of zero Kodaira dimension and prove Propositions 1.9 and 1.10. In Section 12
+we prove Theorem 1.11. In Section 13 we prove Theorem 1.15. In Section 14 we discuss some open
+questions concerning (birational) automorphism groups of varieties over fields of positive characteristic.
+In some cases, the proofs of our main results go along the same lines as the proofs of the corresponding
+results in characteristic 0. This applies to Propositions 1.9 and 1.10, Theorem 1.11 and, to a certain
+extent, to Theorem 1.7. The proof of Theorem 1.6 mostly follows the proof of [70, Theorem 5.3] but
+
+Geometry & Topology, Volume 28 (2024)
+2752                                                                        Yifei Chen and Constantin Shramov
+
+contains additional arguments needed to treat finite subgroups of Bir.P 2 / whose orders are divisible by the
+characteristic of the field. Proposition 1.8 and its proof look new in the context of positive characteristic.
+Theorem 1.15 (as well as the accompanying Definitions 1.13 and 1.14) and its proof are also entirely
+new; we point out that the proof does not follow the ideas of [27], but is rather inspired by the approach
+of Serre [70, Theorem 5.3]. Many statements collected in the preliminary sections of our paper are well
+known to experts and are widely used at least over fields of characteristic zero, but are not readily available
+in the literature in the positive characteristic setup. Since one of the goals of our paper is to provide a
+survey of the methods of studying finite groups of birational automorphisms in arbitrary characteristic, in
+such cases we take the opportunity to spell out the details of the proofs. This allows us either to emphasize
+that the proofs do not depend on the characteristic of the base field, see eg Lemmas 3.6 and 4.1 and
+Corollary 7.4; or to be able to mention the (minor) differences in the proofs appearing in the case of
+positive characteristic; see eg Theorem 3.7.
+Throughout the paper, we use the following standard notation. Given a field k, we denote by k     x its
+algebraic closure. If k  K is a field extension, and X is a scheme defined over k, we denote by XK the
+extension of scalars of X to K. By a k–point of a scheme X over k we mean its closed point of degree 1;
+the set of all k–points of X is denoted by X.k/.
+We are grateful to Yi Gu, Yuri Prokhorov, Dmitry Timashev, Vadim Vologodsky and Jinsong Xu for
+useful discussions. Chen was partially supported by NSFC grants 11688101 and 11771426. The work of
+Shramov was performed at the Steklov International Mathematical Center and supported by the Ministry of
+Science and Higher Education of the Russian Federation agreement 075-15-2022-265. Shramov was also
+supported by the HSE University Basic Research Program, Russian Academic Excellence Project “5-100”,
+and by the Foundation for the Advancement of Theoretical Physics and Mathematics “BASIS”.
+
+
+2 Preliminaries
+In this section we collect auxiliary facts about groups and lattices.
+
+Group theory Recall that a subgroup of a group G is called characteristic if it is preserved by all
+automorphisms of G.
+
+Example 2.1 Let G be a finite group that has a normal p–Sylow subgroup Gp . Then Gp is characteristic
+in G. Indeed, it consists of all elements of G whose order is a power of p.
+
+Example 2.2 Let G Š G 0 ÌG 00 be a finite group. Suppose that the orders of G 0 and G 00 are coprime. Then
+G 0 is a characteristic subgroup of G. Indeed, it consists of all elements of G whose order divides jG 0 j.
+
+Example 2.3 Let H be an abelian group generated by its elements h1 ; : : : ; hk , and let r be a positive
+integer. Then the subgroup H 0 generated by hr1 ; : : : ; hrk coincides with the subgroups that consists of r th
+powers of elements of H . Therefore, H 0 is a characteristic subgroup of index at most r k in H .
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                           2753
+
+Remark 2.4 Let G be a group, let H be its normal subgroup, and let F be a normal subgroup of H .
+Then F is not necessarily normal in G. However, if F is characteristic in H , then it is normal in G.
+
+It appears that the Jordan property implies the p–Jordan property for every p. To see this, we make an
+auxiliary observation.
+
+Lemma 2.5 Let p be a prime number, let J be a positive integer, and let G be a finite group. Let Az be a
+normal subgroup of index at most J in G. Suppose that Az is abelian (resp. nilpotently Jordan of class at
+most c). Then G contains a normal subgroup A such that the minimal number of elements that generate A
+                        z the order of A is coprime to p, the index of A in G is at most J  jGp j, where
+does not exceed that of A,
+Gp is a p–Sylow subgroup of G, and A is abelian (resp. nilpotently Jordan of class at most c).
+
+Proof Let Azp be the p–Sylow subgroup of A.
+                                         z Then
+
+                                                  Az Š Azp  A;
+where the group A is isomorphic to the product of the q–Sylow subgroups of Az for all prime numbers q
+different from p; see [34, Theorem 1.26]. In particular, the group A is abelian (resp. nilpotent of class
+at most c), and its order is coprime to p. Also, if Az can be generated by the elements az1 ; : : : ; azr , then
+the projections of these elements to A generate A. Note that A is a characteristic subgroup of Az by
+Example 2.2. Thus, A is normal in G. Finally, one can see that the index of A in G is at most
+                                              J  jAzp j 6 J  jGp j:
+
+Corollary 2.6 Let p be a prime number, and let  be a group. Suppose that  is Jordan (resp. nilpotently
+Jordan of class at most c). Then  is p–Jordan (resp. nilpotently p–Jordan of class at most c).
+
+Proof Let G be a finite subgroup of . Then G contains a normal subgroup Az such that its index is
+bounded by some constant J D J./ independent of G, and Az is abelian (resp. nilpotent of class at
+most c). Therefore, the assertion follows from Lemma 2.5.
+
+The following fact is standard.
+
+Lemma 2.7 Let G be a finite group, and let G 0 be its normal subgroup. Let A0  G 0 be a subgroup that
+is normal in G 0 . Denote by B the index of G 0 in G, and by J the index of A0 in G 0 . Then A0 contains a
+subgroup A such that A is normal in G, and the index of A in G is at most BJ B .
+
+Proof The group G acts on G 0 by conjugation, and the conjugation by the elements of G 0 preserve A0 .
+Let A01 D A0 ; : : : ; A0r be the orbit of A0 under this action. Then r 6 jG=G 0 j 6 B, so that the index of the
+intersection                                              \r
+                                                    AD        A0i
+                                                        iD1
+
+in G 0 is at most J r 6 J B . Thus, A is a normal subgroup of index at most BJ B in G.
+
+Geometry & Topology, Volume 28 (2024)
+2754                                                                         Yifei Chen and Constantin Shramov
+
+Lemma 2.7 can be applied to find normal subgroups of a given group with the properties that are inherited
+by subgroups, like the properties of being abelian or nilpotent. Moreover, if under the assumptions of
+Lemma 2.7 the group A0 is abelian, then one can find a normal abelian subgroup A in G such that the
+index of A in G is at most BJ 2 ; see [34, Theorem 1.41]. However, as is pointed out in [32, Remark 3.1],
+in the latter case we cannot guarantee that A is contained in A0 , and thus have no control on divisibility
+properties of the order of A (which is essential for the notions of a p–Jordan group or a nilpotently
+p–Jordan group).
+
+One says that a group  has bounded finite subgroups if there exists a constant B D B./ such that every
+finite subgroup of  has order at most B. The next lemma allows one to check Jordan-type properties for
+certain extensions of groups.
+
+Lemma 2.8 (cf [60, Lemma 2.11]) Let p be a prime number, and let
+
+                                             1 !  0 !  !  00
+
+be an exact sequence of groups. Suppose that  00 has bounded finite subgroups. Suppose also that
+the group  0 is Jordan (resp. p–Jordan, generalized p–Jordan, nilpotently Jordan of class at most c,
+nilpotently p–Jordan of class at most c, generalized nilpotently p–Jordan of class at most c). Then the
+group  is Jordan (resp. p–Jordan, generalized p–Jordan, nilpotently Jordan of class at most c, nilpotently
+p–Jordan of class at most c, generalized nilpotently p–Jordan of class at most c).
+
+Proof By assumption, we know that there exists a constant B such that every finite subgroup of  00 has
+order at most B. Let G be a finite subgroup of , and let G 0 D G \  0 . Then the index of G 0 in G is at
+most B.
+
+Suppose that  0 is Jordan, or that  0 is generalized p–Jordan and the order of G is coprime to p. Then
+G 0 contains a normal abelian subgroup of index at most J for some constant J D J. 0 / that does not
+depend on G 0 . Therefore, G contains a normal abelian subgroup of index at most BJ B by Lemma 2.7.
+
+Similarly, suppose that  0 is nilpotently Jordan of class at most c, or that  0 is generalized nilpotently
+p–Jordan of class at most c, and the order of G is coprime to p. Then G 0 contains a normal nilpotent
+subgroup of class at most c that has index at most J for some constant J D J. 0 /. Therefore, G contains
+a normal nilpotent subgroup of class at most c that has index at most BJ B by Lemma 2.7.
+
+Now suppose that  0 is p–Jordan (resp. nilpotently p–Jordan of class at most c). Let Gp and Gp0 be
+p–Sylow subgroups of G and G 0 . The group G 0 contains a normal subgroup A0 of order coprime to p and
+index at most J jGp0 je for some constants J D J. 0 / and e D e. 0 / such that A0 is abelian (resp. nilpotent
+of class at most c). Applying Lemma 2.7, we find a normal subgroup A in G such that A is abelian
+(resp. nilpotent of class at most c), its order is coprime to p, and its index in G is at most
+
+                            B  .J  jGp0 je /B D BJ B  jGp0 jBe 6 BJ B  jGp jBe :
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                        2755
+
+The next results are partial analogs of [62, Lemma 2.8] for p–Jordan groups.
+
+Lemma 2.9 Let p be a prime number, and let
+                                                     x !1
+                                             1!F !H !H
+
+be an exact sequence of finite groups such that H  x is abelian and generated by r elements. Suppose that
+jF j 6 B  jFp je for some positive constants B and e, where Fp is a p–Sylow subgroup of F , and suppose
+that F is generated by s elements. Then H contains a characteristic abelian subgroup of order coprime
+to p and index at most B r Cs  jHp je.r Cs/C1 , where Hp is a p–Sylow subgroup of H .
+
+Proof First, let us bound the index of the center Z of the group H . Let K  H be the commutator
+subgroup. Since H x is abelian, we see that K is contained in F . For every element x 2 H , denote by
+Z.x/ the centralizer of x in H , and by K.x/ the set of elements of the form hxh 1 x 1 for various
+h 2 H . Then the index of Z.x/ does not exceed jK.x/j 6 jKj.
+
+By assumption, one can choose r C s elements x1 ; : : : ; xr Cs generating H . Thus
+
+                                          Z D Z.x1 / \    \ Z.xr Cs /:
+Hence
+                     ŒH W Z 6 ŒH W Z.x1 /    ŒH W Z.xr Cs / 6 jK.x1 /j    jK.xr Cs /j
+                              6 jKjr Cs 6 jF jr Cs 6 B r Cs  jFp je.r Cs/ :
+Now let Z 0 be the maximal subgroup in Z whose order is coprime to p. Then Z 0 is a characteristic
+abelian subgroup of H , and the index of Z 0 in Z equals the order of the p–Sylow subgroup Zp of Z.
+Therefore, we have
+                        ŒH W Z 0  D ŒH W Z  ŒZ W Z 0  6 .B r Cs  jFp je.r Cs/ /  jZp j
+                                  6 B r Cs  jFp je.r Cs/  jHp j 6 B r Cs  jHp je.r Cs/C1 :
+
+Corollary 2.10 Let p be a prime number, and let
+
+                                                1 !  0 !  !  00
+
+be an exact sequence of groups. Suppose that  00 is p–Jordan, and that there exist positive constants r , B,
+e and s such that
+
+       every finite abelian subgroup of  00 whose order is coprime to p is generated by at most r elements,
+       for every finite subgroup F of  0 , one has jF j 6 B  jFp je , where Fp is a p–Sylow subgroup of F ,
+        and F is generated by at most s elements.
+
+Then the group  is p–Jordan.
+
+Geometry & Topology, Volume 28 (2024)
+2756                                                                            Yifei Chen and Constantin Shramov
+
+Proof Let G be a finite subgroup of . Then G fits into an exact sequence
+                                                   x ! 1;
+                                            1!F !G!G
+where F   0 and G x   00 . By assumption, there exist positive constants Bx and ex that do not depend
+on Gx such that G
+                x contains a normal abelian subgroup H  x whose order is coprime to p and whose index
+is bounded by Bx  jG
+                    xp j , where G
+                        e
+                        x          xp is a p–Sylow subgroup of G.  x Moreover, H  x can be generated by
+r elements. Let H be the preimage of H  x in G. According to Lemma 2.9, there is a characteristic abelian
+subgroup A in H whose order is coprime to p and whose index is at most B r Cs  jHp je.r Cs/C1 , where
+Hp is a p–Sylow subgroup of H . Therefore, A is a normal abelian subgroup of G of index at most
+                            xp jex/  .B r Cs  jHp je.r Cs/C1 / 6 BB
+                     .Bx  jG                                      x r Cs  jGp jexCe.r Cs/C1 ;
+
+where Gp is a p–Sylow subgroup of G.
+
+We will use the following general fact.
+
+Lemma 2.11 Let p be a prime number, and let m be a nonnegative integer. Let F be a group containing a
+normal subgroup F 0 Š .Z=pZ/m , and let g be an element of F . Then for some positive integer t 6 p m 1,
+the element g t commutes with F 0 .
+
+Proof Let L  F be the subgroup generated by g. The action of L on F 0 defines a homomorphism
+                                        W L ! Aut.F 0 / Š GLm .Fp /:
+It is known that the order of any element in GLm .Fp / does not exceed p m 1; see eg [18, Corollary 2].
+Therefore, g t is contained in the kernel of  for some t 6 p m 1, and the required assertion follows.
+
+Lemma 2.11 allows us to obtain a version of Lemma 2.9 that is applicable for a certain class of groups
+without a bound on the number of generators.
+
+Lemma 2.12 Let p be a prime number, and let
+                                                    x !1
+                                            1!F !H !H
+                                                x is abelian and is generated by r elements. Suppose that
+be an exact sequence of finite groups such that H
+the p–Sylow subgroup Fp of F is normal in F , and Fp Š .Z=pZ/m for some nonnegative integer m.
+Furthermore, suppose that jF j 6 B  jFp je for some positive constants B and e, and suppose that F is
+generated by Fp and s additional elements. Then H contains a characteristic abelian subgroup of order
+coprime to p and index at most B r CsC1  jHp je.r CsC1/Cr C1 , where Hp is a p–Sylow subgroup of H .
+
+Proof Let us use the notation of the proof of Lemma 2.9. We are going to estimate the index of the
+center Z of H , and its maximal subgroup Z 0 of order coprime to p.
+Let x1 ; : : : ; xr be the elements of H such that their images in H          x , and let y1 ; : : : ; ys be the
+                                                                   x generate H
+elements of F such that Fp and y1 ; : : : ; ys generate F . Set
+                             R D Z.x1 / \    \ Z.xr / \ Z.y1 / \    \ Z.ys /:
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                                     2757
+
+Then
+
+        ŒH W R 6 jK.x1 /j    jK.xr /j  jK.y1 /j    jK.ys /j 6 jKjr Cs 6 jF jr Cs 6 B r Cs  jFp je.r Cs/ :
+
+Let Rx be the image of R in H     x . Being a subgroup of an abelian group generated by r elements, R  x can
+be generated by r elements as well. Let z1 ; : : : ; zr be elements of R whose images in H    x generate R.x
+Then z1 ; : : : ; zr normalize the group Fp by Example 2.1. According to Lemma 2.11, there exist positive
+integers ti 6 p m 1, 1 6 i 6 r , such that the elements ziti commute with the subgroup Fp . Therefore, the
+group R0 generated by ziti , 1 6 i 6 r , is contained in the center Z of H . On the other hand, the image R
+                                                                                                          x0
+of R0 in H x is a subgroup of index at most t1    tr in R,
+                                                           x which implies that
+
+                             ŒR W R0  6 t1    tr  jF j < p mr  B  jFp je D B  jFp jeCr :
+
+Finally, as in the proof of Lemma 2.9, we have
+                 ŒH W Z 0  D ŒH W Z  ŒZ W Z 0  6 ŒH W R0   ŒZ W Z 0  D ŒH W R  ŒR W R0   ŒZ W Z 0 
+                                                   6 .B r Cs  jFp je.r Cs/ /  .B  jFp jeCr /  jHp j
+                                                   6 B r CsC1  jHp je.r CsC1/Cr C1 :
+
+Automorphisms of lattices Given a prime number `, we denote by Z` the ring of `–adic integers. The
+following assertion is well known, and is proved similarly to the classical theorem of H Minkowski
+[54, Section 1]; see also Serre [69, Lemma 1] or [71, Theorem 9.9].
+
+Lemma 2.13 Let n be a positive integer, let ` be a prime, and let G be a finite subgroup of GLn .Z` /.
+Then G is isomorphic to a subgroup of GLn .Z=`Z/ if ` ¤ 2, and to a subgroup of GLn .Z=4Z/ if ` D 2.
+In particular, the group GLn .Z` / has bounded finite subgroups.
+
+Proof First assume that ` ¤ 2. Let
+                                               W GLn .Z` / ! GLn .Z=`Z/
+be the natural homomorphism. We claim that its kernel does not contain nontrivial elements of finite
+order. Indeed, denote by 1 the identity matrix in GLn .Z` /, and suppose that
+                                                      M D 1 C`M 0
+is an element of GLn .Z` / such that M r D 1 for some positive integer r . Set
+                                            .`M 0 /2                   .`M 0 /k
+(2-1)                      log M D `M 0              C    C . 1/k 1          C :
+                                               2                          k
+It is easy to see that the series on the right-hand side of (2-1) converges in GLn .Z` /, and so log M is a
+well-defined element of GLn .Z` /; also, we see that log M is divisible by ` in GLn .Z` /. Now let L be
+an arbitrary element divisible by ` in GLn .Z` /. Set
+                                                                Lk
+(2-2)                                 exp L D 1 CL C    C        C :
+                                                                 k!
+
+Geometry & Topology, Volume 28 (2024)
+2758                                                                    Yifei Chen and Constantin Shramov
+
+Note that the `–adic valuation of Lk is at least k, while the `–adic valuation of k! equals
+                                                            
+                          k       k                 1    1              k      k
+                              C 2 C 6 k            C 2 C D            6 :
+                          `       `                 ` `               ` 1 2
+Thus the series on the right-hand side of (2-2) converges in GLn .Z` /, and so exp L is a well-defined
+element of GLn .Z` /. We conclude that
+                            exp log M D M      and r log M D log M r D 0:
+Hence log M D 0 and M D 1.
+Now assume that ` D 2. Arguing as above, one shows that the kernel of the natural homomorphism
+                                       W GLn .Z2 / ! GLn .Z=4Z/
+does not contain nontrivial elements of finite order.
+
+Lemma 2.13 allows us to deduce more traditional versions of Minkowski’s theorem.
+
+Corollary 2.14 Let ƒ be a finitely generated abelian group. Then the group Aut.ƒ/ has bounded finite
+subgroups.
+
+Proof There is an exact sequence of groups
+
+                        1 ! .ƒtors /n  Aut.ƒtors / ! Aut.ƒ/ ! GLn .Z/ ! 1;
+
+where ƒtors is the torsion subgroup of ƒ, and n is the rank of the free abelian group ƒ=ƒtors . The group
+GLn .Z/ is a subgroup of GLn .Z` / for any prime `. Thus, it has bounded finite subgroups by Lemma 2.13.
+On the other hand, the group Aut.ƒtors / is finite, and the required assertion follows.
+
+Corollary 2.15 (cf [23, Theorem F]) For every positive integer n, the group GLn .Q/ has bounded finite
+subgroups.
+
+Proof If G is a finite subgroup of GLn .Q/, then it acts by automorphisms of some sublattice Zn  Qn .
+This means that G is isomorphic to a subgroup of GLn .Z/, and thus GLn .Q/ has bounded finite by
+Corollary 2.14.
+
+Projective general linear groups We conclude this section by an easy consequence of Theorem 1.4.
+
+Corollary 2.16 Let n be a positive integer. Then there exists a constant JPGL .n/ such that every finite
+subgroup G of PGLn .k/, where k is an arbitrary field of characteristic p > 0, contains a normal abelian
+subgroup of order coprime to p and index at most JPGL .n/  jGp j3 , where Gp is a p–Sylow subgroup
+of G.
+
+Proof The adjoint representation embeds the group PGLn .k/ into GLn2 .k/, so Theorem 1.4 applies.
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                           2759
+
+3 Automorphism groups
+In this section we recall the basic concepts and facts about varieties and their automorphisms.
+General settings The following terminology is standard (although not universally accepted); see for
+example [10, Chapters AG.12 and I.1], and compare [14, Definition 2.1.5].
+
+Definition 3.1 An algebraic group over a field k is a geometrically reduced group scheme of finite type
+over k.
+
+In other words, an algebraic group is a variety with a structure of a group scheme. Note that any algebraic
+group is smooth; see for instance [14, Proposition 2.1.12].
+If X is an arbitrary algebraic variety over a field k, then its automorphisms form a group, which we
+denote by Aut.X /. If K  k is a field extension, and XK is the extension of scalars of X to K, then
+every automorphism of X defines an automorphism of XK ; in other words, one has
+                                             Aut.X /  Aut.XK /:
+If X is irreducible, then one can consider its birational automorphism group Bir.X /; one has a natural
+embedding Aut.X /  Bir.X /. If XK is still irreducible, then Bir.X /  Bir.XK /. In this paper, we will
+not be interested in any additional structures on the group Bir.X /; the reader can find a discussion of
+these in some particular cases over fields of characteristic zero in [29] and [30]; see also [7]. However,
+we will need some structure related to the automorphism group.
+Let X be a projective variety over a field k. Then the automorphism functor of X is represented by
+the automorphism group scheme AutX which is locally of finite type; see eg [14, Theorem 7.1.1]. The
+automorphism group Aut.X / is just the group of k–points of AutX , that is,
+                                             Aut.X / D AutX .k/:
+       0                                            0
+Let AutX be the neutral component of AutX ; then AutX is a connected group scheme of finite type over k,
+but it may be nonreduced, even if k is algebraically closed and X is smooth; see eg [14, Example 7.1.5].
+         0                                                      0                                       0
+Let AutX   ;red be the maximal reduced subscheme of AutX . If the field k is perfect, then AutX ;red is a
+group scheme; see [14, Section 2.5]. (Note that over a nonperfect field the maximal reduced subscheme
+of a group scheme is not necessarily a group scheme itself [14, Example 2.5.3].) Furthermore, in this case
+                   0                                                                       0
+the fact that AutX   ;red is reduced implies that it is geometrically reduced, and thus AutX ;red is an algebraic
+                                              0
+group; in particular, this means that AutX      ;red is smooth. We set
+
+                                     Aut0 .X / D AutX
+                                                    0               0
+                                                      ;red .k/ D AutX .k/:
+
+Note that Aut0 .X / always has a group structure, regardless of whether the field k is perfect or not.
+                                                                                            0
+Anyway, in this paper we will need to deal with the group Aut0 .X / and the group scheme AutX only in
+the case when the base field is algebraically closed.
+The reader is referred to the surveys [14, Section 7.1] and [15, Section 2.1] for more details on automor-
+phism groups and automorphism group schemes.
+
+Geometry & Topology, Volume 28 (2024)
+2760                                                                        Yifei Chen and Constantin Shramov
+
+Resolution of singularities and regularization of birational maps Resolution of singularities is
+available in arbitrary dimension over fields of characteristic 0, and in small dimensions over fields of
+positive characteristic. We will need it in the classical case of surfaces.
+
+Theorem 3.2 [46, Theorem; 45, Corollary 27.3] Let S be a geometrically irreducible algebraic surface
+over a field k. Then there exists a minimal resolution of singularities of S. More precisely, there exists a
+regular surface Sz over k with a proper birational morphism  W Sz ! S such that any proper birational
+morphism from a regular projective surface to S factors through . In particular, if the field k is perfect,
+then the surface Sz is smooth.
+
+Remark 3.3 If in the notation of Theorem 3.2 the surface S is projective, then the surface Sz is projective
+as well. Indeed, Sz is complete and regular. Hence Szkx is projective according to [39, Corollary IV.2.4],
+which implies that Sz is projective; see eg [25, Corollaire 9.1.5].
+
+In particular, Theorem 3.2 and Remark 3.3 tell us that every geometrically irreducible algebraic surface
+has a regular projective birational model.
+
+Corollary 3.4 Let S be a geometrically irreducible algebraic surface over a field k. Then there exists a
+regular projective surface Sz over k birational to S. In particular, if the field k is perfect, then the surface
+Sz is smooth.
+
+Proof Replace S by its affine open subset, then replace the latter by a projective completion, and take a
+resolution of singularities.
+
+The factorization property provided by Theorem 3.2 implies that the minimal resolution of singularities
+behaves well with respect to the automorphism group.
+
+Corollary 3.5 Let S be a geometrically irreducible algebraic surface, and let  W Sz ! S be the minimal
+resolution of singularities. Then there is an action of the group Aut.S/ on Sz such that the morphism  is
+Aut.S/–equivariant.
+
+The following version of Corollary 3.4 taking into account a birational action of a finite group is classical
+and widely used, at least in the case of zero characteristic; see eg [20, Lemma 3.5] or [62, Lemma–
+Definition 3.1]; cf [83; 16]. We recall its proof for the convenience of the reader.
+
+Lemma 3.6 Let S be a geometrically irreducible algebraic surface over a field k, and let G  Bir.S/
+be a finite group. Then there exists a regular projective surface Sz with a biregular action of G and a
+G–equivariant birational map Sz Ü S. In particular, if the field k is perfect, then the surface Sz is smooth.
+
+Proof Let Vy be a normal projective model of the field of invariants k.S/G , and let Sy be the normalization
+of Vy in the field k.S/. Then there is a regular action of G on Sy and a G–equivariant birational
+map  W Sy Ü S.
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                     2761
+
+Let  W Sz ! Sy be the minimal resolution of singularities provided by Theorem 3.2. Then Sz is a regular
+geometrically irreducible surface; also, Sz is projective by Remark 3.3. According to Corollary 3.5, the
+action of G lifts to Sz so that the morphism  is G–equivariant. Therefore, we obtain a G–equivariant
+birational map  ı  W Sz Ü S.
+
+Stabilizer of a point Let us recall an auxiliary result on fixed points of automorphisms of finite order
+which is well known and widely used (especially in characteristic 0). We provide its proof to be self-
+contained. Given an algebraic variety X over a field k and a k–point P 2 X , denote by TP .X / the
+Zariski tangent space to X at P .
+
+Theorem 3.7 Let X be an irreducible algebraic variety over a field k of characteristic p. Let G be a
+finite group acting on X with a fixed k–point P . Suppose that jGj is not divisible by p. Then the natural
+representation
+                                         d W G ! GL.TP .X //
+is an embedding.
+
+Proof Suppose that d is not an embedding. Replacing G by the kernel of d , we may assume that G acts
+trivially on TP .X /. So G acts trivially on
+                                                  2
+                                             mP =mP Š TP .X /_ ;
+where mP  OP is the maximal ideal in the local ring of the point P on X . The quotient morphism
+OP ! OP =mP Š k admits a natural section, which gives a G–invariant decomposition OP Š k ˚ mP
+into a direct sum of vector subspaces.
+Consider the G–invariant filtration
+                                                  2    3
+                                            mP  mP  mP   :
+Recall that mP is generated by elements of degree 1, ie generated by a collection of elements whose
+                                                                   nC1
+images form a basis in mP =mP  2
+                                 . Hence G acts trivially on mPn
+                                                                 =mP   for every positive integer n. Since
+the order of G is not divisible by p, every representation of G is completely reducible. Therefore, we
+have an isomorphism of G–representations
+                                                 M1
+                                                        n    nC1
+                                         mP Š         mP  =mP    :
+                                                    nD1
+Thus, the action of G on mP and OP is trivial.
+Let U  X be an affine open subset containing the point P . Then U 0 D  .U / is also an affine open
+subset of X containing P . Let R and R0 be the coordinate rings of U and U 0 , respectively. Then R
+and R0 are subalgebras of OP , and one has   R0 D R. Since the action of  on OP is trivial, we conclude
+that R D R0 , and  acts trivially on R. This means that U is  –invariant, and  acts trivially on U .
+Finally, since X is irreducible, U is dense in X ; hence  acts trivially on the whole X .
+
+Geometry & Topology, Volume 28 (2024)
+2762                                                                       Yifei Chen and Constantin Shramov
+
+4 Group of connected components
+In this section we recall the following assertion established in [53, Lemma 2.5]; compare with the proof
+of [32, Theorem 1.9].
+
+Lemma 4.1 Let X be a (possibly reducible) projective variety. Then the group Aut.X /=Aut0 .X / has
+bounded finite subgroups.
+
+We provide the proof of Lemma 4.1 for the reader’s convenience. The argument below is mostly taken
+from [53, Remark 2.6]. Let us start with a simple observation.
+
+Lemma 4.2 Let X be a projective variety over a field k. Then there is an embedding
+                               W Aut.X /=Aut0 .X / ,! Aut.Xkx /=Aut0 .Xkx /:
+
+Proof Let gy be an element of the quotient group Aut.X /=Aut0 .X /, and let g be its preimage in Aut.X /.
+                                                                      x
+Thus, g is a k–point of the group scheme AutX . Considering it as a k–point     of AutX , we obtain the
+map .
+To show that  is injective, suppose that gy is a nontrivial element, so that g is not contained in Aut0 .X /.
+                                                                                                    0
+In other words, the corresponding k–point of AutX is not contained in the closed subgroup AutX        , which
+                                                                     x                0
+is also defined over k. Therefore, g is not contained in the set of k–points of AutX , which means that it
+defines a nontrivial element of the quotient group Aut.Xkx /=Aut0 .Xkx / as well.
+
+To prove Lemma 4.1, we will use the following standard fact.
+
+Theorem 4.3 [39, Theorem II.2.1] Let X be a projective variety over an algebraically closed field. Let
+F be a coherent sheaf , and let G be a numerically trivial line bundle on X . Then the Euler characteristic
+of F equals the Euler characteristic of F ˝ G.
+
+Given a projective variety X over an algebraically closed field k, let NS.X / denote Neron–Severi group
+of line bundles on X modulo algebraic equivalence. Recall from [40, Théorème 5.1] that NS.X / is a
+finitely generated abelian group. If L is a line bundle on X , we define the group scheme AutX IŒL as
+                                                                               0
+the stabilizer in AutX of the class of L in NS.X /. Obviously, one has AutX       AutX IŒL ; this means
+         0
+that AutX is the neutral component of AutX IŒL .
+
+Lemma 4.4 Let X be a projective variety over an algebraically closed field , and let L be an ample line
+bundle on X . Then AutX IŒL is a group scheme of finite type.
+
+Proof One can identify AutX with an open subscheme of the Hilbert scheme Hilb.X X / by associating
+with each automorphism f its graph f  X  X ; see [22, Theorem 5.23], and the exercise after this
+theorem. Set
+                                      LX X D p1 L ˝ p2 L;
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                     2763
+
+where p1 ; p2 W X  X ! X are the projections to the first and the second factor, respectively. Then LX X
+is an ample line bundle on X  X . Its restriction to f (identified with X via the projection p1 ) is the
+line bundle
+                                            Lf Š L ˝ f  L:
+
+If f preserves the class ŒL 2 NS.X /, then Lf is algebraically equivalent to L2 ; in particular, these
+line bundles are numerically equivalent. Therefore, by Theorem 4.3 the Hilbert polynomial of f (with
+respect to the ample line bundle LX X on X ) is independent of f provided that f 2 AutX IŒL .
+Let P be this polynomial. Then AutX IŒL is contained in the Hilbert scheme HilbP .X  X /. Recall that
+HilbP .X  X / is projective; see for instance [41, Theorem I.1.4]. Set
+                                 P
+                              AutX D AutX \ HilbP .X  X /  Hilb.X  X /:
+          P
+Then AutX    is an open subscheme of HilbP .X  X /, and so it is quasiprojective. Furthermore, AutX IŒL
+                              P
+is a closed subscheme of AutX   . Hence, AutX IŒL is quasiprojective as well, thus it is of finite type.
+
+Denote by AutŒL .X / the group of k–points of AutX IŒL . The following assertion is implied by Lemma 4.4.
+
+Corollary 4.5 Let X be a projective variety over an algebraically closed field k, and let L be an ample
+line bundle on X . Then AutŒL .X /=Aut0 .X / is a finite group.
+
+                                                   0
+Proof It follows from Lemma 4.4 that AutX IŒL =AutX is a finite group scheme. Therefore, its group of
+k–points
+                                         0
+                          .AutX IŒL =AutX /.k/ Š AutŒL .X /=Aut0 .X /
+is finite.
+
+Proof of Lemma 4.1 By Lemma 4.2, we may assume that X is defined over an algebraically closed
+field. Choose an ample line bundle L on X . Let G be a finite subgroup of the group Aut.X /=Aut0 .X /.
+Since Aut0 .X / acts trivially on the Neron–Severi group NS.X /, there is a natural action of G on NS.X /.
+One has an exact sequence of groups
+                                                  x ! 1;
+                                            1!K!G!G
+
+where Gx is the image of the representation of G in NS.X /, and K is the kernel of this representation.
+Since NS.X / is a finitely generated abelian group, by Corollary 2.14 there is a constant M D M.X /
+such that every finite subgroup of Aut.NS.X // has order at most M ; in particular, one has jGj
+                                                                                             x 6 M . On
+the other hand, the group K preserves the ample divisor class ŒL 2 NS.X /, and hence
+
+                                          K  AutŒL .X /=Aut0 .X /:
+
+By Corollary 4.5 the group AutŒL .X /=Aut0 .X / is finite. Therefore, we have
+                                       x  jKj 6 M  j AutŒL .X /=Aut0 .X /j:
+                                jGj D jGj
+
+Geometry & Topology, Volume 28 (2024)
+2764                                                                      Yifei Chen and Constantin Shramov
+
+To conclude this section, let us make the following remark. For every projective variety X defined over a
+field k, there exists a natural embedding of groups
+                                Aut.X /=Aut0 .X / ,! .AutX =AutX
+                                                               0
+                                                                 /.k/:
+However, over an algebraically nonclosed field this embedding may fail to be an isomorphism.
+
+Example 4.6 Let k D Q.!/, where ! is a nontrivial cubic root of unity. Let E be the curve given in P 2
+with homogeneous coordinates x, y and z by equation
+                                             y 2z D x3 C z3;
+and choose .0 W 1 W 0/ to be the marked point on E. Then E is an elliptic curve such that
+                                         AutE Š Aut0E Ì Z=6Z;
+            x
+and all six k–points   of the group scheme AutE =Aut0E are defined over k. Note that all the 2–torsion
+x
+k–points  of Aut0E are also defined over k; let  be one of the nontrivial 2–torsion k–points of Aut0E .
+                                                           p
+Choose an auxiliary quadratic extension K of k, say, K D k. 7/. Let  be the 1–cocycle corresponding to
+the homomorphism Gal.K=k/ ! Aut.E/ that sends the generator of Gal.K=k/ Š Z=2Z to  2 Aut.E/.
+Let E 0 be the twist of E by . Then E 0 is a smooth geometrically irreducible projective curve of genus 1
+over k. One can check that E 0 .k/ D ¿. Moreover, the Jacobian J.E 0 / is the twist of the Jacobian J.E/
+by the same cocycle . However,  acts trivially on J.E/, and thus J.E 0 / Š J.E/. Since E has a
+k–point, we also have an isomorphism J.E/ Š E.
+Now observe that the group scheme AutE 0 acts on the curve E Š J.E 0 /, and Aut0E 0 is contained in the
+kernel of this action. This gives rise to a homomorphism
+                                     AutE 0 =Aut0E 0 ! AutE =Aut0E ;
+which becomes an isomorphism after the extension of scalars to k.  x Thus, this homomorphism is actually
+an isomorphism. Since AutE =Aut0E has six k–points, we conclude that AutE 0 =Aut0E 0 has six k–points
+as well. On the other hand, the group Aut.E 0 /=Aut0 .E 0 / does not contain elements of order 6. Indeed, it
+follows from the Lefschetz fixed-point formula that any preimage of such an element in Aut.E 0 / would
+have a unique fixed point on E 0x Š Ekx , and so this point would be defined over k.
+                                k
+
+
+5 Minimal models
+
+In this section, we recall the notion of the Kodaira dimension, and discuss some facts concerning
+classification of surfaces and the Minimal Model Program in dimension 2.
+
+Kodaira dimension One of the most important birational invariants of projective varieties is the Kodaira
+dimension. Given a smooth geometrically irreducible projective variety, we will denote by !X the
+canonical sheaf on X , and by KX the canonical class of X , ie the class of !X in Pic.X /.
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                        2765
+
+Definition 5.1 [1, Definition 5.6] Let X be a smooth irreducible projective variety over an algebraically
+closed field. The Kodaira dimension .X / of X is defined by
+                             L1             ˝n                   L1                ˝n
+                                nD0 H .X; !X /                       nD0 H .X; !X / > 0;
+                     (
+                                      0                                    0
+                                                                                      
+                      tr deg                       1 if tr deg
+             .X / D
+                         1                              if H 0 .X; !X˝n / D 0 for all n > 1:
+Remark 5.2 Alternatively, one can define .X / as the maximal dimension of an image of X with respect
+to the rational map given by the pluricanonical linear systems jmKX j for all m > 1; see [33, Section 10.5].
+
+For an arbitrary field k, we define the Kodaira dimension .X / of a smooth geometrically irreducible
+projective variety X as the Kodaira dimension of Xkx . One has
+                                              1 6 .X / 6 dim X I
+see eg [1, Lemma 5.5]. Kodaira dimension is a birational invariant for smooth geometrically irreducible
+projective varieties; see [33, Section 10.5]. Moreover, the following assertion holds.
+
+Lemma 5.3 [41, Corollary IV.1.11] Let X be a smooth geometrically irreducible projective variety.
+Suppose X is birational to Y  P 1 , where Y is a (possibly singular) algebraic variety. Then .X / D 1.
+
+In the case of surfaces (and in other cases when the resolution of singularities is available) one can extend
+the definition of Kodaira dimension a little further. Namely, for an irreducible algebraic surface S over
+an algebraically closed field, the Kodaira dimension of S is defined as the Kodaira dimension of (any)
+smooth projective birational model of S (which exists by Corollary 3.4). Note that due to birational
+invariance of Kodaira dimension, this definition does not depend on the choice of a birational model. If S
+is a geometrically irreducible algebraic surface over an arbitrary field k, we set .S/ D .Skx /.
+
+Minimal surfaces Among all smooth projective surfaces, there is a special class of the so-called minimal
+surfaces. They are the most important ones for studying automorphism groups.
+
+Definition 5.4 [1, Definition 6.1] Let S be a smooth geometrically irreducible projective surface. We
+say that S is minimal if every birational morphism S ! Y , where Y is a smooth projective surface, is an
+isomorphism.
+
+Example 5.5 Let S be a smooth geometrically irreducible projective surface over a field k. Suppose that
+the canonical class KS is numerically trivial. Then S is minimal. Indeed, if S is not minimal, then Skx
+contains a smooth rational curve with self-intersection 1; see eg [72, Theorem IV.3.4.5] or [1, Section 6].
+On the other hand, computing the self-intersection by adjunction formula, we see that such a curve cannot
+exist on Skx .
+
+Minimal surfaces are representatives of the birational equivalent classes of all smooth geometrically
+irreducible projective surfaces. Indeed, since every birational morphism between smooth projective
+surfaces over an algebraically closed field is a composition of contractions of smooth rational curves with
+self-intersection 1 (see [72, Theorem IV.3.4.5]), the number of such consecutive contractions from a
+
+Geometry & Topology, Volume 28 (2024)
+2766                                                                     Yifei Chen and Constantin Shramov
+
+given surface S is bounded by the Picard rank of S . Thus, we can replace every smooth geometrically
+irreducible projective surface S over an arbitrary field by a minimal surface S 0 such that there exists a
+birational morphism from S to S 0 .
+Birational automorphism groups of minimal surfaces of nonnegative Kodaira dimension are easy to study
+due to the following well known result.
+
+Lemma 5.6 [1, Corollary 10.22, Theorem 10.21] Let S be a minimal surface such that .S/ > 0. Then
+S is the unique minimal surface in its birational equivalence class, and Bir.S/ D Aut.S /.
+
+Remark 5.7 In [1], the proof of Lemma 5.6 is given over an algebraically closed field. However, the
+general case easily follows from this.
+
+Similarly to the case of characteristic zero, over fields of positive characteristic there exists a Kodaira–
+Enriques classification of minimal surfaces due to E Bombieri and D Mumford [56; 9; 8]; see also [1]
+and [44]. We recall its part that will be used in this paper. The definitions of the particular classes of
+surfaces can be found for instance in [44, Sections 6 and 7].
+
+Theorem 5.8 Let S be a smooth irreducible projective surface over an algebraically closed field. The
+following assertions hold.
+  (i) If .S/ D 1, then S is birational either to P 2 , or to C  P 1 , where C is a (irreducible smooth
+      projective) curve of positive genus.
+ (ii) If .S/ D 0 and S is minimal , then S is either a K3 surface, or an Enriques surface, or an abelian
+      surface, or a hyperelliptic surface, or a quasihyperelliptic surface.
+
+G –minimal surfaces There exists a version of the Minimal Model Program that takes into account an
+action of a group. Below we recall some of its implications in the case of geometrically rational surfaces.
+
+Definition 5.9 A smooth geometrically irreducible projective surface S with an action of a group G is
+called G–minimal if every G–equivariant birational morphism S ! T , where T is a smooth geometrically
+irreducible projective surface with an action of G, is an isomorphism.
+
+Similarly to the case of the trivial group action, for every smooth geometrically irreducible projective
+surface with an action of a group G there is a G–equivariant birational morphism to a G–minimal surface.
+Thus, it is interesting to know the properties of G–minimal surfaces.
+
+Definition 5.10 Let S be a smooth geometrically irreducible projective surface, and let  W S ! C be a
+surjective morphism to a smooth curve. One says that  (or S) is a conic bundle, if the fiber of  over
+the scheme-theoretic generic point of C is smooth and geometrically irreducible, and the anticanonical
+line bundle !S 1 is very ample over C .
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                       2767
+
+Remark 5.11 Let S be a smooth geometrically irreducible projective surface, and let  W S ! C be
+a conic bundle. Denote by S the fiber of  over the scheme-theoretic generic point of C . Then S is
+smooth and geometrically irreducible. Moreover, the anticanonical line bundle !S1 is very ample. This
+implies that S is a smooth conic over the field k.C / of rational functions on C .
+
+Example 5.12 Let k be an algebraically closed field of characteristic 2. Consider the surface S Š P 1 P 1 ,
+and let  0 W S ! P 1 be the projection to the second factor. Then  0 is a conic bundle. On the other hand,
+let  W S ! P 1 be the composition of  0 with an inseparable double cover P 1 ! P 1 . Then  is not a
+conic bundle. Indeed, its scheme-theoretic generic fiber S is not smooth over the field k.P 1 /. Moreover,
+for every point P of S , the scheme S is regular at P , but fails to be smooth at this point, because S is
+not geometrically reduced (although it is reduced over k). Note that  satisfies the second requirement of
+Definition 5.10, ie the anticanonical sheaf !S 1 is very ample over P 1 ; also, each geometric fiber of  is
+isomorphic to a nonreduced conic in P 2 .
+
+Recall that a del Pezzo surface is a smooth geometrically irreducible projective surface S with ample
+anticanonical class. For the following result, we refer the reader to [35, Theorem 1G] or [55, Theorem 2.7];
+compare also with [1, Corollary 7.3].
+
+Theorem 5.13 Let G be a finite group, and let S be a geometrically rational G–minimal surface. Then S
+is either a del Pezzo surface, or a G–equivariant conic bundle over a smooth curve of genus zero.
+
+If the base field is perfect, one can use Lemma 3.6 together with Theorem 5.13 to produce nice regular-
+izations of birational actions of finite groups on geometrically rational surfaces (note however that we
+will use this only over algebraically closed fields in our paper).
+
+Theorem 5.14 Let S be a geometrically rational algebraic surface over a perfect field. Let G be a finite
+subgroup of Bir.S/. Then there exists a smooth geometrically irreducible projective surface S 0 with a
+regular action of G and a G–equivariant map S Ü S 0 , such that S 0 is either a del Pezzo surface, or a
+G–equivariant conic bundle over a curve of genus zero.
+
+Proof First, there exists a regular projective surface Sz with an action of G and a G–equivariant birational
+map Sz Ü S; see Lemma 3.6. Since the base field is perfect, Sz is actually smooth. Thus there exists a
+G–minimal surface S 0 that is G–equivariantly birational to Sz (and thus to S). Now the assertion about
+the geometrically rational case follows from Theorem 5.13.
+
+The next fact is well known.
+
+Theorem 5.15 Let S be a del Pezzo surface over a field k. Then the linear system j 3KS j defines an
+embedding S ,! P N , where N 6 54.
+
+Proof The divisor 3KS is very ample; see [41, Proposition III.3.4.2]. Thus it defines an embedding
+S ,! P N , where
+                                N D h0 .S; OS . 3KS // 1:
+
+Geometry & Topology, Volume 28 (2024)
+2768                                                                      Yifei Chen and Constantin Shramov
+
+On the other hand, one has 1 6 KS2 6 9; see eg [48, Theorem IV.2.5] or [41, Exercise III.3.9]. Hence
+                                   h0 .S; OS . 3KS //    1 D 6KS2 6 54
+by [41, Corollary III.3.2.5].
+
+Nonrational ruled surfaces Birational automorphism groups of nonrational surfaces covered by rational
+curves have simpler structure than those of geometrically rational surfaces.
+
+Definition 5.16 Given a morphism  W X ! Y between varieties X and Y , and an automorphism (or a
+birational automorphism) g of X , we will say that g is fiberwise with respect to  if it maps every point
+of X to a point in the same fiber of  (provided that g is well defined at this point). The action of a
+subgroup  of Aut.X / or Bir.X / is fiberwise with respect to  if every element of  is fiberwise with
+respect to .
+
+Lemma 5.17 Let k be a field. Let C be a smooth geometrically irreducible projective curve of positive
+genus over k, and set S D C  P 1 . Then there is an exact sequence of groups
+(5-1)                                 1 ! Bir.S/ ! Bir.S/ ! ;
+where Bir.S /  PGL2 .k.C // and   Aut.C /.
+
+Proof Consider the projection  W S ! C . If g 2 Bir.S/, and F Š P 1 is a general fiber of , then the
+map
+                                           ı gW F ! C
+is either surjective, or maps F to a point. The former option is impossible, because a rational curve cannot
+dominate a curve of positive genus; see for instance [31, Corollary IV.2.4] and [31, Proposition IV.2.5].
+This means that an image of F under g is again a fiber of , so that  is equivariant with respect to the
+whole group Bir.S/.
+Hence there is an exact sequence (5-1), where the action of the group Bir.S/ is fiberwise with respect
+to , and  is a subgroup of Bir.C / D Aut.C /. Thus, the group Bir.S/ is a subgroup of Bir.S /, where
+S is the scheme-theoretic generic fiber of the map . Since S is isomorphic to the projective line over
+the field k.C /, we have
+                                  Bir.S / D Aut.S / Š PGL2 .k.C //:
+
+
+6 Abelian varieties
+
+In this section we collect auxiliary facts about automorphism groups of abelian varieties. The latter groups
+are usually infinite, but are rather easy to understand. Here we regard an abelian variety just as a variety,
+and do not take the group structure into account. Also, if the base field is not algebraically closed, it is
+not necessary for us to assume that an abelian variety has a point.
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                        2769
+
+Theorem 6.1 Let k be an algebraically closed field of characteristic p > 0, and let ` ¤ p be a prime
+number. Let X be an n–dimensional abelian variety over k. Then
+(6-1)                                   Aut.X / Š X.k/ Ì Aut.X I P /;
+where X.k/ is the group of k–points of X , and Aut.X I P / is the stabilizer of a k–point P 2 X in Aut.X /.
+Furthermore, Aut.X I P / is isomorphic to a subgroup of GL2n .Z` /.
+
+Proof The isomorphism (6-1) is obvious. Note that Aut.X I P / can be identified with the group of
+automorphisms that preserve the group structure of X .
+Let T` .X / Š Z2n`
+                    be the Tate module of X ; see [57, Section 18] for the definition. Let Hom.X; X / be
+the Z–algebra of endomorphisms of the abelian variety X . According to [57, Section 19, Theorem 3],
+there is an injective homomorphism
+                                  Hom.X; X / ,! HomZ` .T` .X /; T` .X //:
+The group Aut.X I P / is the multiplicative group of invertible elements in Hom.X; X /. Thus, it embeds
+into the group of invertible elements in HomZ` .T` .X /; T` .X //, which is
+                                     AutZ` .T` .X /; T` .X // Š GL2n .Z` /:
+
+Remark 6.2 In the notation of Theorem 6.1, if the characteristic of the field k is zero, one can check
+that Aut.X I P / is a subgroup of GL2n .Z/. It is well known that this also holds if X is a complex
+torus of dimension n; see eg [66, Theorem 8.4]. However, one can produce an example of an elliptic
+curve X over a field of characteristic 2 such that the stabilizer of a point on X is a group of order 24; see
+[75, Exercise A.1(b)]. Such a group cannot be embedded into GL2 .Z/; see [79, Section 1].
+
+The next two results are consequences of Theorem 6.1. To formulate them, we set
+(6-2)           JA .n/ D jGL2n .Z=4Z/j D .24n          22n /  .24n   22nC1 /    .24n   24n 1 /:
+Note that
+                     JA .n/ > .32n     1/  .32n   3/    .32n   32n 1 / D jGL2n .Z=3Z/j
+for every positive integer n.
+
+Corollary 6.3 Let n be a positive integer. For every field k, every abelian variety X of dimension n
+over k, every finite subgroup G  Aut.X / contains a normal abelian subgroup of index at most JA .n/
+that can be generated by at most 2n elements. In particular, for every abelian variety X the group Aut.X /
+is Jordan.
+
+Proof Let X be an abelian variety over a field k of characteristic p > 0, and let G be a finite subgroup
+of Aut.X /. It is enough to consider the case when k is algebraically closed. Set ` D 2 if p ¤ 2, and ` D 3
+if p D 2. Note that the intersection GX of G with the subgroup X.k/  Aut.X / of k–points of X is
+
+Geometry & Topology, Volume 28 (2024)
+2770                                                                     Yifei Chen and Constantin Shramov
+
+abelian and normal in G. Moreover, GX can be generated by at most 2n elements; see eg [57, Section 15].
+On the other hand, by Theorem 6.1 the quotient G=GX is isomorphic to a subgroup of GL2n .Z` /. Thus,
+by Lemma 2.13 the order of G=GX does not exceed
+
+                             maxfjGL2n .Z=3Z/j; jGL2n .Z=4Z/jg D JA .n/:
+
+Applying Corollary 6.3 together with Lemma 2.5, we obtain:
+
+Corollary 6.4 Let p be a prime number, and let n be a positive integer. For every field k, every
+abelian variety X of dimension n over k, every finite subgroup G  Aut.X / contains a normal abelian
+subgroup A such that A can be generated by at most 2n elements, the order of A is coprime to p, and the
+index of A in G is at most JA .n/  jGp j, where Gp is a p–Sylow subgroup of G.
+
+Arguing as in the proof of Corollary 6.3, we can obtain restrictions on stabilizers of points on abelian
+varieties.
+
+Corollary 6.5 Let n be a positive integer. For every algebraically closed field k, every abelian variety X
+of dimension n over k, every k–point P on X , and every finite subgroup G of the stabilizer Aut.X I P /
+of P , the order of G is at most JA .n/.
+
+Proof Let k be an algebraically closed field of characteristic p > 0, and let X be an n–dimensional abelian
+variety over k. Set ` D 2 if p ¤ 2, and ` D 3 if p D 2. According to Theorem 6.1, the group Aut.X I P /
+is isomorphic to a subgroup of GL2n .Z` /. Therefore, the assertion follows from Lemma 2.13.
+
+Remark 6.6 In the notation of Corollaries 6.3, 6.4 and 6.5, one can replace the constant JA .1/ by 24; see
+[75, Theorem III.10.1] and [75, Proposition A.1.2(c)] — actually, in this case the whole group Aut.X I P /
+is finite. This bound is stronger than the bound given by Corollaries 6.3, 6.4 and 6.5.
+
+The assertion of Corollary 6.5 does not hold for stabilizers of closed points over algebraically nonclosed
+fields, as shown by the following example.
+
+Example 6.7 Let k be an algebraically closed field of characteristic p > 0, let A be a positive-dimensional
+abelian variety over k (with a chosen group structure), and let m be a positive integer not divisible by p.
+Choose a primitive mth root of unity  2 k, and a point c 2 A.k/ whose order m in the group A.k/
+equals m. Consider the action of the group  Š Z=mZ on A1  A such that the generator of  acts by
+the transformation
+                                          .t; a/ 7! .t; a C c/;
+
+where t is a coordinate on A1 , and a 2 A. Set X D .A1  A/= . Then there is a morphism
+
+                                         W X ! A1 Š Spec kŒt m 
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                        2771
+
+that fits into the commutative diagram
+                                                 A1  A           /X
+
+                                                                        
+                                                                   
+                                                     A1           / A1
+
+Let X be the scheme-theoretic generic fiber of . Then X is an abelian variety over the field K D k.t m /.
+Let Q be a k–point of A, and let P be the closed point of X corresponding to the image of the
+section A1  fQg of the projection A1  A ! A1 ; thus, P is not a K–point of X if m > 1. The translation
+by c defines a faithful action of the group Z=mZ on X , and this action preserves the point P . Taking m
+arbitrarily large, we obtain a series of varieties and their closed points preserved by automorphisms of
+arbitrarily large finite orders.
+
+
+7 Varieties of nonnegative Kodaira dimension
+In this section we make some general observations on automorphism groups of varieties of nonnegative
+Kodaira dimension and prove Proposition 1.8. The following assertions (and the arguments that prove
+them) are well known to experts. We provide their proofs to be self-contained.
+
+Theorem 7.1 (cf [43, Section 2.2]) Let X be a smooth geometrically irreducible projective variety such
+that .X / D dim X . Then for some positive integer n, the rational map defined by the linear system jnKX j
+is birational onto its image.
+
+Proof Since .X / D dim X , there exists a positive integer m such that dim ˆm .X / D dim X , where
+ˆm W X Ü P N is the rational map given by the linear system jmKX j. By elimination of indeterminacy
+(see for instance [31, Example II.7.17.3]), there is a commutative diagram
+                                                    Xz
+                                                                 ẑ m
+
+                                                            ˆm
+                                             X                      / PN
+
+Here  is the blow-up of the indeterminacy locus of ˆm . Let E  Xz be the exceptional divisor of the
+morphism . Then E is an effective Cartier divisor, and
+                                             .mKX /  ẑ m H C E;
+where H is a hyperplane in P N.
+Let W D ẑ m .Xz /. Since ẑ m is surjective, we conclude that ẑ m induces an injective map
+                                H 0 .W; OW .H jW // ,! H 0 .Xz ; OXz . ẑ m H //:
+Therefore, one has
+       h0 .X; OX .mKX // D h0 Xz ; OXz .  .mKX // > h0 .Xz ; OXz . ẑ m H // > h0 .W; OW .H jW //:
+                                                   
+
+Geometry & Topology, Volume 28 (2024)
+2772                                                                   Yifei Chen and Constantin Shramov
+
+Write r D dim W D dim X D dim Xz . Since h0 .W; OW .m0 H jW // is a polynomial in m0 for m0  0,
+there exists a positive constant C such that
+
+                                   h0 .W; OW .m0 H jW // > C.m0 /r :
+Hence for m0  0 we have
+
+(7-1)                              h0 .X; OX .m0 mKX // > C.m0 /r :
+
+Let A be a very ample divisor on X . Consider the exact sequence
+
+                                   0 ! OX . A/ ! OX ! OA ! 0:
+It gives the exact sequence
+
+                   0 ! OX .m0 mKX       A/ ! OX .m0 mKX / ! OA .m0 mKX jA / ! 0:
+
+Since dim A D r 1, we know that h0 .X; OA .m0 mKX jA // grows as a polynomial of degree at most r     1
+in m0 . Therefore, from (7-1) we get
+
+                              h0 .X; OX .m0 mKX    A// ¤ 0   for m0  0:
+
+Let F 2 jm0 mKX Aj be an effective divisor, so that m0 mKX  A C F . Over the open subset
+U D X n F  X , the linear system jAj can be viewed as a linear subsystem of jm0 mKX j, where the
+embedding is given by L 7! L C F for L 2 jAj. By assumption, A is very ample, so the rational map
+ˆm0 m induced by jm0 mKX j is an embedding on U . Therefore, the map ˆm0 m is birational.
+
+Lemma 7.2 Let  be a nontrivial connected linear algebraic group over an algebraically closed field.
+Then  contains a subgroup isomorphic either to Gm or to Ga .
+
+Proof Let R be the radical of , ie a maximal closed, connected, normal, solvable subgroup of . First,
+suppose that R is nontrivial. If R is not a torus, then it contains a subgroup isomorphic to Ga by [76,
+Lemma 6.3.4]. If R is a torus, then it contains a subgroup isomorphic to Gm . Thus, we may assume that
+R is trivial, so that  is semisimple. In this case  is generated by its maximal torus T and a certain
+collection fU˛ g of subgroups isomorphic to Ga ; see [76, Proposition 8.1.1]. Since  is nontrivial, we
+conclude that either the torus T is positive-dimensional, or the collection fU˛ g is nonempty. Thus, one
+finds a subgroup of  isomorphic to Gm or to Ga , respectively.
+
+Proposition 7.3 (cf [81, Theorem 14.1] and [14, Proposition 7.1.4]) Suppose that X is a smooth
+geometrically irreducible projective variety of nonnegative Kodaira dimension over a field k. Then the
+group scheme AutX does not contain nontrivial connected linear algebraic subgroups.
+
+Proof Since a connected algebraic group is geometrically connected, we may assume that the field k is
+algebraically closed. Suppose that AutX contains a nontrivial connected linear algebraic group. Then
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                         2773
+
+it contains a linear algebraic group G isomorphic either to Gm or to Ga ; see Lemma 7.2. Hence X is
+birational to Y  P 1 , where Y is the geometric quotient of some open subset of X by the action of G;
+see [61] or [73, Lemma A.5]. By Lemma 5.3 one has
+
+                                                 .X / D 1;
+which contradicts our assumptions.
+
+The following corollary of Theorem 7.1 and Proposition 7.3 will be used only in dimensions 1 and 2 in
+this paper. However, we state it for arbitrary dimension because its proof is essentially the same.
+
+Corollary 7.4 (see [51] and [49, Corollaire 4]; cf [81, Corollary 14.3]) Let X be a smooth geometrically
+irreducible projective variety over a field k such that .X / D dim X . Then AutX is a finite group scheme,
+and Aut.X / is a finite group.
+
+Proof We may assume that the field k is algebraically closed. For some m > 0, the rational map
+
+                                              m W X Ü Z  P n
+
+defined by the linear system jmKX j is birational; see Theorem 7.1. This realizes the group scheme AutX
+as the stabilizer of Z in the linear algebraic group PGLnC1 . Therefore, AutX is a group scheme of finite
+                                               0                                                        0
+type, and the reduced neutral component AutX     ;red of AutX is a linear algebraic group. Moreover, AutX ;red
+is trivial by Proposition 7.3. This implies that AutX is a finite group scheme, and in particular Aut.X / is
+a finite group.
+
+We will need the following general fact concerning algebraic groups.
+
+Theorem 7.5 [14, Lemma 4.3.1] Let  be a connected algebraic group. Suppose that  does not
+contain nontrivial connected linear algebraic subgroups. Then  is an abelian variety.
+
+Corollary 7.6 Let X be a smooth geometrically irreducible projective variety over a perfect field.
+                                0
+Suppose that .X / > 0. Then AutX ;red is an abelian variety.
+
+                                           0
+Proof The connected algebraic group AutX     ;red does not contain nontrivial connected linear algebraic
+subgroups by Proposition 7.3. Therefore, the required assertion follows from Theorem 7.5.
+
+Now we are ready to prove Proposition 1.8.
+
+Proof of Proposition 1.8 We may assume that X is defined over an algebraically closed field. Then the
+group Aut0 .X / is the group of points of some abelian variety by Corollary 7.6. In particular, it is abelian,
+On the other hand, the quotient group Aut.X /=Aut0 .X / has bounded finite subgroups by Lemma 4.1.
+Hence the group Aut.X / is Jordan by Lemma 2.8.
+
+Geometry & Topology, Volume 28 (2024)
+2774                                                                        Yifei Chen and Constantin Shramov
+
+8 Jordan property for curves
+
+In this section we describe the Jordan properties for automorphism groups of smooth projective curves.
+
+Lemma 8.1 Let k be a field of characteristic p > 0, and let C be a smooth geometrically irreducible
+projective curve of genus g over k. The following assertions hold.
+  (i) If g D 0, then the group Aut.C / is p–Jordan.
+ (ii) If g D 1, then the group Aut.C / is Jordan.
+(iii) If the g > 2, then the group Aut.C / is finite.
+
+Proof We may assume that k is algebraically closed. Now assertion (i) follows from Theorem 1.5.
+Assertion (ii) is given by Corollary 6.3. Assertion (iii) is given by Corollary 7.4.
+
+Similarly to the Hurwitz bound over fields of characteristic zero, there exists a bound on the order of the
+automorphism group of a curve of genus g > 2 over a field of positive characteristic that depends only
+on g, but not on the characteristic of the field; see [78]. In the case of elliptic curves, the constant arising
+in Lemma 8.1(ii) is always bounded by 24; see Remark 6.6. For a more explicit version of Lemma 8.1(i),
+one can use a classification of finite groups acting on P 1 .
+
+Theorem 8.2 [19, Theorem 2.1] Let k be a field of characteristic p > 0, let G  PGL2 .k/ be a finite
+group, and let Gp be a p–Sylow subgroup of G. Then G is one of the following groups:
+  (i) A dihedral group of order 2n, where n > 1 is coprime to p.
+ (ii) One of the groups A4 , S4 or A5 .
+(iii) The group PSL2 .Fpk / for some k > 1.
+ (iv) The group PGL2 .Fpk / for some k > 1.
+ (v) A group of the form Gp Ì Z=nZ, where n > 1 is coprime to p, and Gp is a p–subgroup of the
+     additive group of k.
+
+Remark 8.3 Let k be a field of characteristic p > 0, and let g 2 PGL2 .k/ be a nontrivial element
+of finite order n coprime to p. Then g is semisimple, and thus is contained in some algebraic torus
+T  PGL2 .k/. Moreover, if n > 3, then the centralizer of g coincides with T . In particular, every finite
+group that commutes with g is cyclic. Moreover, the order of such a group is coprime to p, because an
+algebraic torus over k does not contain elements of order p. This provides additional restrictions for the
+possible structure of the groups of type (v) in Theorem 8.2.
+
+Remark 8.4 Any group of one of types (i)–(iv) in the notation of Theorem 8.2 can be generated by
+two elements. Indeed, this clearly holds for a dihedral group. Also, it is well known that the symmetric
+group on n elements is generated by a cycle of length 2 and a cycle of length n. Furthermore, any
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                      2775
+
+nonabelian finite simple group is generated by two elements; see eg [38]. In particular, this holds for
+an alternating group A5 . A similar assertion for the group A4 can be checked directly. The groups
+PSL2 .Fpk / are simple except for PSL2 .F2 / Š S3 and PSL2 .F3 / Š A4 ; see [84, Section 3.3.1]. Thus,
+any group of this type can be generated by two elements. Finally, for the group PGL2 .Fpk /, the required
+assertion follows from [82].
+
+Now we can give an explicit bound for the index of a normal abelian subgroup in a finite group acting
+on P 1 .
+
+Lemma 8.5 For every prime p and every field k of characteristic p, every finite subgroup
+                                          G  Aut.P 1 / Š PGL2 .k/
+contains a characteristic cyclic subgroup of order coprime to p and index at most 60jGp j3 , where Gp is a
+p–Sylow subgroup of G.
+
+Proof Let k be a field of characteristic p > 0, let G  PGL2 .k/ be a finite group, and let Gp be a
+p–Sylow subgroup of G. Then G is a group of one of types (i)–(v) in the notation of Theorem 8.2.
+If G is a dihedral group of type (i), then the commutator subgroup of G is a characteristic cyclic subgroup
+of index at most 4 in G, and its order is coprime to p. If G is one of the groups A4 , S4 or A5 , then the
+trivial subgroup has index at most 60 in G. If G Š PSL2 .Fpk / and p ¤ 2, then the trivial subgroup of G
+has index
+                          jGj D 21 jSL2 .Fpk /j D 12 p k .p 2k 1/ < p 3k D jGp j3 :
+If G Š PSL2 .F2k /, then the trivial subgroup of G has index
+                              jGj D jSL2 .F2k /j D 2k .22k         1/ < 23k D jG2 j3 :
+If G Š PGL2 .Fpk /, then the trivial subgroup of G has index
+
+                                     jGj D p k .p 2k    1/ < p 3k D jGp j3 :
+Now suppose that G is of type (v). Then G contains a cyclic group L Š Z=nZ such that G Š Gp Ì L,
+and Gp Š .Z=pZ/m for some positive integer m. Let L0 be the centralizer of Gp in L. By Lemma 2.11,
+the index of L0 in L is at most p m 1. Thus, L0 is a cyclic subgroup of G of index at most
+                                            jGp j.p m    1/ < jGp j2 ;
+and the order of L0 is coprime to p.
+We claim that L0 is a characteristic subgroup of G. Indeed, Gp is characteristic in G by Example 2.2.
+Thus its centralizer C.Gp / in G is also a characteristic subgroup of G. On the other hand, one has
+                                              C.Gp / Š Gp  L0 :
+Therefore, L0 is characteristic in C.Gp / (cf Example 2.2), and hence also characteristic in G.
+
+Geometry & Topology, Volume 28 (2024)
+2776                                                                        Yifei Chen and Constantin Shramov
+
+9 Cremona group
+In this section we prove Theorem 1.6. Our proof is (nearly) identical to that presented in [70].
+We start by recalling the assertion proved in [70, Lemma 5.2]. We provide its detailed proof for the
+convenience of the reader.
+
+Lemma 9.1 Let n be a positive integer, and let k be a field of characteristic p such that p does not
+divide n and k contains a primitive nth root of 1. Let S be a smooth geometrically irreducible projective
+surface over k, and let H  Aut.S / be a finite group. Suppose that there exists an H –equivariant conic
+bundle  W S ! C . Denote by F the subgroup of H that consists of automorphisms that are fiberwise with
+respect to ; see Definition 5.16. Let R  F be a cyclic group of order n, and let ˛ 2 H be an element
+normalizing R. Then ˛ 2 commutes with R.
+
+Proof Let S be the fiber of  over the scheme-theoretic generic point  of C . Then S is a smooth
+conic over the field K D k.C /. The group F can be considered as a subgroup of Aut.S /  PGL2 .K/.         x
+                                                   x
+Thus, the cyclic group R has exactly two fixed K–points on the conic S;K              1
+                                                                              x Š PK   x . Denote them by PC
+and P . Recall that the action of R in the Zariski tangent spaces TP˙ .S;K    x / is faithful by Theorem 3.7.
+Thus, there is a primitive n root  of 1 such that a generator g of R acts on TP˙ .S;K
+                              th
+                                                                                               x / Š K by 
+                                                                                                     x      ˙1 .
+
+For any positive integer r , the element g r acts on TP˙ .S;K
+                                                             x / by 
+                                                                      ˙r ; thus, an element of R is uniquely
+
+defined by its action in any of these two Zariski tangent spaces.
+One can consider ˛ as an automorphism of the scheme S;Kx (of nonfinite type) over the field k. Write
+˛g˛ D g . Since the fixed points of g on S;K
+     1     r                           r
+                                                x are PC and P , we see that ˛.PC / 2 fPC ; P g.
+Hence ˛ .PC / D PC , and
+       2
+                                            2
+                                         g r D ˛ 2 g˛ 2
+                           2
+acts on TPC .S;Kx / by 
+                          r D˛x2 ./, where ˛
+                                            x is the automorphism of the field K over k induced by ˛.
+However,  is contained in k, so ˛
+                                 x./ D . Therefore, we see that r 2 is congruent to 1 modulo n, which
+means that ˛ 2 commutes with g.
+
+The next lemma allows one to deal with finite groups acting on surfaces with conic bundle structure. It
+also provides an additional observation concerning the number of generators of abelian subgroups in such
+groups.
+
+Lemma 9.2 Let k be a field of characteristic p > 0, and let S be a smooth geometrically rational
+projective surface over k. Let G  Aut.S/ be a finite group, and let  W S ! C be a G–equivariant conic
+bundle. Then G contains a normal abelian subgroup generated by at most two elements that has order
+coprime to p and index at most 7200jGp j3 , where Gp is a p–Sylow subgroup of G.
+
+Proof We can assume that the field k is algebraically closed; in particular, one has C Š P 1 .
+There is an exact sequence of groups
+                                                 x ! 1;
+                                          1!F !G!G
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                        2777
+
+where the action of F is fiberwise with respect to , while G
+                                                            x acts faithfully on P 1 . By Lemma 8.5
+                                      x in G
+there exists a normal cyclic subgroup H    x of order coprime to p whose index in Gx does not exceed
+    x  3          x                           x                             x
+60jGp j , where Gp is a p–Sylow subgroup of G. Let H be the preimage of H in G, so that there is an
+exact sequence of groups
+                                       1!F !H !H        x ! 1:
+
+In particular, H is a normal subgroup of G.
+By Lemma 8.5 there exists a characteristic cyclic subgroup R of order coprime to p and index at most
+60jFp j3 in F , where Fp is a p–Sylow subgroup of F . The group H acts on F by conjugation, and this
+action preserves the characteristic subgroup R.
+Pick an element ˛ of H such that its image ˛     x generates H
+                                            x in H                        x j is coprime to p, the element ˛
+                                                               x . Since jH                                xp
+generates H x as well. Hence, replacing ˛ by its appropriate power, we may assume that the order of ˛
+is coprime to p. Since ˛ normalizes the subgroup R, and the (algebraically closed) field k contains a
+primitive root of 1 or degree jRj, by Lemma 9.1 the element ˛ 2 commutes with R. Let Az be the subgroup
+of H generated by R and ˛ 2 . Then Az is abelian, and its order is coprime to p. Note that the subgroup
+Hx˛x2  Hx generated by ˛                          x , or has index 2 in H
+                          x2 either coincides with H                       x.
+
+The subgroup R is characteristic in F , and hence normal in G. Also, the subgroup H   x˛x2 is characteristic
+in H x , because the cyclic group Hx contains at most one subgroup of given order; cf Example 2.3. Hence
+Hx˛x2 is normal in G. x Still we cannot conclude from this that Az is normal in G. However, let A be the
+intersection of all subgroups of G conjugate to A.z Then A is an abelian group of order coprime to p, and
+it is normal in G. Since Az is generated by two elements, the same holds for A. Also, we know that A
+contains the subgroup R, because R is normal in G. Similarly, the image of A in H   x coincides with H x˛x2 ,
+because H   x˛x2 is normal in G.
+                              x Therefore, the index of A in G is
+
+                 jGj     x
+                        jGj      jF j       x jF j
+                                           jGj
+                     D                 62                 xp j3  jFp j3 D 7200 jGp j3 :
+                                                    6 7200 jG
+                 jAj    x˛x2 j jA \ F j
+                       jH                   x j jRj
+                                           jH
+
+Finally, we are ready to prove our main result.
+
+Proof of Theorem 1.6 Let k be a field of characteristic p > 0. We may assume that k is algebraically
+closed. Let G be a finite subgroup of Bir.P 2 /. By Theorem 5.14 there exists a surface S with a faithful
+regular action of G, such that S is either a del Pezzo surface or a G–equivariant conic bundle.
+
+Suppose that S is a del Pezzo surface. By Theorem 5.15 the linear system j 3KS j defines an embedding
+W S ,! P N , where N 6 54. Since the linear system j 3KS j is G–invariant, we see that the map  is
+G–equivariant, and thus G can be realized as a subgroup of PGL55 .k/. By Corollary 2.16 there exists
+a constant JdP , independent of p, k and G, such that G contains a normal abelian subgroup of order
+coprime to p and index at most JdP  jGp j3 , where Gp is a p–Sylow subgroup of G.
+
+Now we are left with the case when S is a G–equivariant conic bundle, which is covered by Lemma 9.2.
+
+Geometry & Topology, Volume 28 (2024)
+2778                                                                       Yifei Chen and Constantin Shramov
+
+10 Jordan property for surfaces
+
+In this section we prove Theorem 1.7. The proof of the following assertion is identical to that in [86].
+
+Lemma 10.1 Let k be an algebraically closed field of characteristic p > 0. Let A be an abelian variety
+of positive dimension n over k, and let S D A  P 1 . Then the group Bir.S/ is not generalized p–Jordan.
+
+Proof Choose a prime number ` ¤ p. Fix a k–point O 2 A to define a group structure on A. For every
+k–point x 2 A, let tx W A ! A be the translation by x.
+
+Let L0 be an ample line bundle on A, and set L D L0˝` . Let K.L / denote the group of k–points x 2 A
+such that tx L Š L , and let K.L /` be its subgroup that consists of all elements whose order is a power
+of `. According to [57, Section 23, Theorem 3], the group K.L / contains all the `–torsion k–points of A.
+Since ` ¤ p, the group of `–torsion k–points of A is isomorphic to .Z=`Z/2n ; see eg [57, Section 6].
+Thus, the group K.L /` is nontrivial. Furthermore, since L is ample, the groups K.L / and K.L /` are
+finite by [57, Section 23, Theorem 4].
+
+Let Tot.L / be the total space of L . For every x 2 K.L /, there exists a (nonunique) fiberwise linear
+isomorphism ztx W Tot.L / ! Tot.L / that fits into a commutative diagram
+                                                     tx
+                                                     z
+                                       Tot.L /               / Tot.L /
+
+
+                                                    tx           
+                                          A                     /A
+
+Moreover, there exists an exact sequence of groups
+
+                                     1 ! k ! G .L / ! K.L / ! 1;
+
+where G .L / is a central extension of K.L / acting by automorphisms of Tot.L / of the form z    tx . The
+preimage of K.L /` in G .L / contains a finite group H` that is a central extension of K.L /` by a cyclic
+group Z of order `k for some nonnegative integer k.
+
+For every two elements x; y 2 K.L /` , let .x; y/ be their commutator pairing; in other words, write
+
+                                          xzyzxz 1 yz 1 D .x; y/z;
+
+where xz and yz are (arbitrary) preimages of x and y in H` , and z is a generator of the cyclic group Z  H` .
+According to [57, Section 23, Theorem 4], the commutator pairing is nontrivial on K.L /` . Hence H` is
+a nonabelian group whose order is a power of the prime number `. Thus every abelian subgroup of H`
+has index at least ` in H` .
+
+It remains to notice that the A1 –bundle Tot.L / ! A is birational to S D A  P 1 . Therefore, the group
+Bir.S / contains a group H` for every prime ` ¤ p, and the required assertion follows.
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                      2779
+
+Lemma 10.2 Let k be an algebraically closed field of characteristic p > 0. Let C be a smooth
+geometrically irreducible projective curve of genus at least 2 over k, and set S D C  P 1 . Then the
+group Bir.S / is p–Jordan.
+
+Proof According to Lemma 5.17, the group Bir.S / fits into the exact sequence
+                                        1 ! Bir.S/ ! Bir.S/ ! ;
+where Bir.S/  PGL2 .k.C // and   Aut.C /. Since the genus of C is at least 2, the group  is
+finite by Lemma 8.1(iii). On the other hand, the group PGL2 .k.C //, and thus also the group Bir.S/ , is
+p–Jordan by Corollary 2.16. Therefore, the required assertion follows from Lemma 2.8.
+
+Now we can prove the main result of this section.
+
+Proof of Theorem 1.7 Assertion (i) is given by Lemma 10.1. In the rest of the proof we may assume that
+S is smooth and projective by Corollary 3.4. If .S/ D 1, then S is birational to a product C  P 1 for
+some irreducible smooth projective curve C ; see Theorem 5.8(i). Therefore, if C is not an elliptic curve,
+then it is either rational, or has genus at least 2, and so the group Bir.S/ is p–Jordan by Theorem 1.6
+and Lemma 10.2. On the other hand, in each of these cases Bir.S/ is not Jordan because it contains
+a subgroup isomorphic to Aut.P 1 / Š PGL2 .k/ which is not Jordan. This proves assertion (ii). Thus,
+we may assume that the Kodaira dimension of S is nonnegative, and replace S by its minimal model.
+Then Bir.S/ D Aut.S / by Lemma 5.6, so that assertion (iii) follows from Proposition 1.8.
+
+Remark 10.3 There are alternative ways that do not use Proposition 1.8 to prove Theorem 1.7(iii)
+for many birational classes of surfaces appearing in the Kodaira–Enriques classification. For .S / D 0
+the assertion follows from Proposition 1.9 (which we will prove later in Section 11 independently of
+Theorem 1.7). For elliptic surfaces with .S/ D 1, the assertion is given by [26, Corollary 1.6]. It was
+communicated to us by Yi Gu that a result similar to [26, Corollary 1.6] can be established also for
+quasielliptic surfaces with .S/ D 1. Finally, for  D 2 the assertion follows from Corollary 7.4.
+
+
+11 Surfaces of zero Kodaira dimension
+In this section we study automorphism groups of surfaces of zero Kodaira dimension and prove Propositions
+1.9 and 1.10. We start with the case of K3 and Enriques surfaces.
+
+Lemma 11.1 There exists a constant BK 3 such that for every algebraically closed field k, every surface S
+over k such that S is either a K3 surface or an Enriques surface, and for every finite subgroup G  Aut.S/,
+the order of G is at most BK 3 .
+
+Proof Let S be either a K3 surface or an Enriques surface over a field k of characteristic p. By
+[65, Corollary 2.8] we may assume that p > 0. Set ` D 2 if p ¤ 2, and ` D 3 if p D 2. Set
+                                           H .S/ D Hét2 .S; Z` /=T;
+
+Geometry & Topology, Volume 28 (2024)
+2780                                                                        Yifei Chen and Constantin Shramov
+
+where T is the torsion subgroup of Hét2 .S; Z` /; note that T is trivial in the K3 case. Then H .S/ Š Zb` ,
+where b D 22 if S is a K3 surface (see [44, Section 7.2]), and b D 10 if S is an Enriques surface (see
+[44, Section 7.3]).
+Consider the representation
+                                           W Aut.S/ ! GL H.S / :
+                                                               
+
+By Lemma 2.13, the order of every finite subgroup in the image of  is bounded by the constant JA .11/;
+see (6-2). On the other hand, the kernel of the homomorphism  is trivial in the case when S is a K3
+surface; see [37, Theorem 1.4]; cf [59, Corollary 2.5]. This kernel has order at most 4 if S is an Enriques
+surface; see [21, Theorem].
+
+Next, we deal with hyperelliptic and quasihyperelliptic surfaces. Recall that a minimal surface S over an
+algebraically closed field k (of arbitrary characteristic) is called hyperelliptic, if .S / D 0, and the fibers
+of the Albanese map of S are smooth elliptic curves. Similarly, S is called quasihyperelliptic if .S / D 0
+and the fibers of the Albanese map of S are singular rational curves. The latter case is possible only if
+the characteristic of k equals 2 or 3.
+
+Lemma 11.2 There exists a constant Bhyp with the following property. Let k be an algebraically closed
+field , let S be a hyperelliptic or a quasihyperelliptic surface over k, and let G be a (possibly infinite)
+subgroup of Aut.S /. Then the following assertions hold.
+  (i) The group G contains a normal abelian subgroup of index at most Bhyp .
+ (ii) If G fixes a k–point on S, then jGj 6 Bhyp .
+
+Proof Let S be a hyperelliptic or a quasihyperelliptic surface over an algebraically closed field k. The
+Albanese morphism  W S ! C maps S to an elliptic curve C ; see [1, Theorem 8.6]. Furthermore, there
+exists an elliptic curve E, a curve F that is either an elliptic curve or a cuspidal rational curve, and a
+finite group scheme  acting faithfully on E by translations and acting faithfully on F , such that S is
+included in the commutative diagram
+                                            E F          /S
+
+                                                                  
+                                                             
+                                                 E          /C
+
+We refer the reader to [9, Section 3] and [8, Section 2] for details. In particular, this construction implies
+that the group C.k/ of k–points of the elliptic curve C Š E=  is a normal subgroup of Aut.S/, and its
+action on S agrees with the action of C.k/ on C by translations.
+By the classification of automorphism groups of hyperelliptic and quasihyperelliptic surfaces provided
+in [50], there is a constant Bhyp independent of k and S such that the index of C.k/ in Aut.S/ does not
+exceed Bhyp . This means that every subgroup G of Aut.S/ has a normal abelian subgroup of index at
+most Bhyp , which gives assertion (i).
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                       2781
+
+Now suppose that a subgroup G  Aut.S / fixes a k–point on S . Since  is equivariant with respect to
+Aut.S/, we conclude that G acts on C with a fixed k–point. Therefore, the intersection of G with C.k/
+is trivial. Hence jGj 6 Bhyp , which proves assertion (ii).
+
+Proof of Proposition 1.9 Let S be a geometrically irreducible algebraic surface of Kodaira dimension 0
+over a field k of characteristic p. We may assume that k is algebraically closed. By Corollary 3.4 we
+can also assume that S is smooth and projective. Furthermore, by [65, Proposition 1.6] it is enough to
+consider the case when p > 0.
+We can replace S by its minimal model, so that Bir.S/ D Aut.S / by Lemma 5.6. By Theorem 5.8(ii),
+we need to provide bounds for the indices of normal abelian subgroups of Aut.S/ in the cases when S
+is a K3 surface, an Enriques surface, an abelian surface, a hyperelliptic surface, or a quasihyperelliptic
+surface. In the first two cases this is done by Lemma 11.1. In the third case this is done by Corollary 6.3.
+In the last two cases this is done by Lemma 11.2(i).
+
+Proof of Proposition 1.10 Let S be a smooth irreducible projective surface of Kodaira dimension 0 over
+a field k of characteristic p, and let P be a k–point on S. Replacing the surface S by the surface Skx , and
+                        x
+the k–point P by the k–point     Pkx of Skx , we may assume that the field k is algebraically closed. By [65,
+Proposition 1.3] it is enough to deal with the case when p > 0.
+Consider the minimal model S 0 of the surface S. Then Aut.S/  Bir.S 0 /; hence by Lemma 5.6 there
+is an embedding Aut.S/  Aut.S 0 /. Consider the birational morphism  W S ! S 0 . Since the minimal
+model S 0 is unique by Lemma 5.6, the morphism  is equivariant with respect to the group Aut.S/.
+Therefore, the image .P / of the point P is invariant under the group Aut.SI P /. Thus we can assume
+from the very beginning that the surface S is minimal. By Theorem 5.8(ii), we need to provide bounds
+for the order of Aut.SI P / in the cases when S is a K3 surface, an Enriques surface, an abelian surface,
+a hyperelliptic surface, or a quasihyperelliptic surface. In the first two cases this is done by Lemma 11.1.
+In the third case this is done by Corollary 6.5. In the last two cases this is done by Lemma 11.2(ii).
+
+There is a partial analog of Proposition 1.10 that is valid over arbitrary fields, suggested to us by Yi Gu.
+
+Definition 11.3 Let X be an algebraic variety over a field k, and let P be a closed point of X . The inertia
+group Ine.X I P / of P is the kernel of the action of the stabilizer Aut.X I P / on the residue field k.P /.
+
+Lemma 11.4 Let X be an algebraic variety over a field k, and let P be a closed point of X . Let P1 be
+           x
+one of the k–points of Pkx . Then Ine.X I P /  Aut.Xkx I P1 /.
+
+Proof The action of Ine.X I P /  Aut.Xkx / on
+                                           Pkx Š Spec.k.P / ˝k k/
+                                                               x
+is trivial.
+
+Geometry & Topology, Volume 28 (2024)
+2782                                                                     Yifei Chen and Constantin Shramov
+
+Corollary 11.5 There exists a constant B such that for every field k, every smooth geometrically
+irreducible projective surface S of Kodaira dimension 0 over k, every closed point P 2 S, and every
+finite subgroup G  Ine.S I P / the order of the group G is at most B.
+
+Proof Apply Proposition 1.10 together with Lemma 11.4.
+
+
+12 Fixed points in arbitrary dimension
+
+In this section we prove Theorem 1.11. We start by recalling the rigidity theorem for projective varieties;
+see [72, Section III.4.3] or [14, Lemma 3.3.3].
+
+Theorem 12.1 Let U , V and W be varieties over an algebraically closed field k. Suppose that U is
+irreducible, and V is irreducible and projective. Let
+
+                                            f W U V ! W
+
+be a morphism. Suppose that for some k–point u0 2 U the subvariety
+
+                                           fu0 g  V  U  V
+
+is mapped to a point by f . Then for every k–point u 2 U , the subvariety fug  V is also mapped to a
+point.
+
+Corollary 12.2 Let X be a geometrically irreducible projective variety over a field k, and let A  AutX
+be a positive-dimensional abelian variety. Then A has no fixed (closed ) points on X .
+
+Proof Suppose that A acts on X with a fixed closed point P . Since A is (geometrically) connected, and
+                         x
+Pkx is a finite union of k–points, one can see that Akx acts on Xkx with a fixed point as well. Hence, we
+may assume that the field k is algebraically closed.
+The action of A on X is given by a morphism
+
+                                            ‰ W A  X ! X:
+
+The image ‰.A  fP g/ is a point. On the other hand, since the action of A on X is nontrivial, for
+a general k–point Q 2 X the image ‰.A  fQg/ is not a point. This is impossible by Theorem 12.1
+because A is projective.
+
+We will need the following simple but convenient fact.
+
+Lemma 12.3 Let Z and X be projective schemes over a field k, and let  W Z ! X be a morphism such
+that every fiber of  is finite. Then there is a constant C D C.Z; X; / such that the number of k–points
+in every fiber of  is at most C .
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                        2783
+
+Proof The number of irreducible components of Z is finite, so to bound the number of k–points
+in the fibers we may replace Z by its irreducible component. Furthermore, we can assume that Z
+and X are reduced (so that they are projective varieties). Since Z is projective, the morphism  is
+projective; see eg [47, Corollary 3.3.32(e)]. Thus we conclude that  is a finite morphism; see for instance
+[47, Corollary 4.4.7]. By generic flatness (see for instance [77, Tag 052B]), there exists a dense open
+subset X 0  X such that the restriction  0 of  to Z 0 D  1 .X 0 / is flat. Thus the number of k–points
+in the fibers of  0 is bounded by the degree of  0 ; see [31, Corollary III.9.10]. Replacing Z and X by
+Z n Z 0 and X n X 0 and proceeding by Noetherian induction, we obtain the assertion of the lemma.
+
+Proof of Theorem 1.11 The proof is identical to that of [65, Theorem 1.5]. The reduced neutral
+                0                                                                                0
+component AutX    ;red of the group scheme AutX is an abelian variety by Corollary 7.6. Let AutX IP be the
+                        0                0
+stabilizer of P in AutX   ;red . Then AutX IP is a group scheme of finite type over k (note however that it
+                                                                                               0
+may be nonreduced and not connected). Denote by Aut0 .X I P / the group of k–points of AutX      IP , so that
+Aut .X I P / is the stabilizer of P in Aut .X /.
+    0                                       0
+
+                                   0                                       0
+We claim that the group scheme AutX  IP is finite. Indeed, suppose that AutX IP is infinite. Then it contains
+some positive-dimensional abelian variety A. Thus A acts on X with the fixed point P . This is impossible
+by Corollary 12.2.
+                                       0
+                                         IP is finite. We claim that the order of the group Aut .X I P /
+                                                                                               0
+Now we know that the group scheme AutX
+is bounded by some constant C.X / that does not depend on P . Consider the incidence relation
+                                                               0
+                                 Z D f.; Q/ j  .Q/ D Qg  AutX ;red X;
+
+and denote by  W Z ! X the projection to the second factor. Then Z is a projective scheme, and a fiber
+                                                      0
+of  over a point Q is exactly the group scheme AutX     IQ . Thus, the fibers of  are finite. Therefore,
+according to Lemma 12.3, the number of k–points in the fibers of , ie the order of the groups Aut0 .X I Q/,
+is bounded by a constant C.X /.
+
+Finally, we recall from Lemma 4.1 that the quotient Aut.X /=Aut0 .X / has bounded finite subgroups.
+Hence the orders of the finite subgroups of the group
+
+                                Aut.X I P /=Aut0 .X I P /  Aut.X /=Aut0 .X /
+
+are bounded by some constant B.X / that does not depend on P . This implies the required assertion
+about the group Aut.X I P /.
+
+
+13 Nilpotent groups
+
+In this section we study finite nilpotent subgroups of birational automorphism groups and prove Theorem
+1.15. Let us start with the case of ruled surfaces over elliptic curves.
+
+Geometry & Topology, Volume 28 (2024)
+2784                                                                             Yifei Chen and Constantin Shramov
+
+Lemma 13.1 Let k be a field of characteristic p > 0, and let S be a geometrically irreducible algebraic
+surface over k birational to E  P 1 , where E is an elliptic curve. Let G  Bir.S/ be a finite subgroup,
+and let Gp denote a p–Sylow subgroup of G. Then G contains either a normal abelian subgroup of order
+coprime to p and index at most 215  35  54  jGp j15 , or a normal nilpotent subgroup of class at most 2,
+order coprime to p, and index at most 29  32  5  jGp j3 .
+
+Proof We may assume that k is algebraically closed. According to Lemma 5.17, the group Bir.S/ fits
+into the exact sequence
+                                 1 ! Bir.S/ ! Bir.S/ ! ;
+where Bir.S/  PGL2 .k.E// and   Aut.E/. Thus, we obtain an exact sequence of finite groups
+                                                   x ! 1;
+                                            1!F !G!G
+where F is a subgroup of PGL2 .k.E//, and G   x acts faithfully on E. By Corollary 6.4 and Remark 6.6
+there exists a normal subgroup Hx in Gx such that Hx is generated by at most two elements, the order of
+Hx is coprime to p, and the index of H
+                                     x in G
+                                          x does not exceed 24jG              xp is a p–Sylow subgroup
+                                                                  xp j, where G
+   x Let H be the preimage of H
+of G.                            x in G, so that there is an exact sequence of groups
+                                                   x ! 1:
+                                           1!F !H !H
+In particular, H is a normal subgroup of G. By Lemma 8.5 there exists a characteristic cyclic subgroup R
+of order n coprime to p and index at most 60jFp j3 in F , where Fp is a p–Sylow subgroup of F .
+Suppose that n 6 2. Then jF j 6 120jFp j3 . If F is a group of one of types (i)–(iv) in the notation
+of Theorem 8.2, then it is generated by at most two elements by Remark 8.4. Hence H contains a
+characteristic abelian subgroup A of order coprime to p and index at most 1204  jHp j13 by Lemma 2.9.
+Thus A is normal in G, and its index in G is at most
+                  24  1204  jG
+                               xp j  jHp j13 6 215  35  54  jGp j13 6 215  35  54  jGp j15 :
+
+If F is a group of type (v) in the notation of Theorem 8.2, then H contains a characteristic abelian
+subgroup A of order coprime to p and index at most 1204  jHp j15 by Lemma 2.12. Thus A is normal
+in G, and its index in G is at most
+                               24  1204  jG
+                                            xp j  jHp j15 6 215  35  54  jGp j15 :
+
+Therefore, we can assume that n > 3. The group H acts on F by conjugation, and this action preserves
+the characteristic subgroup R. Pick two elements ˛1 and ˛2 of H such that their images ˛ x1 and ˛     x
+                                                                                                x2 in H
+generate Hx . Since each of the elements ˛i normalizes the subgroup R, and the (algebraically closed)
+field k contains a primitive root of 1 or degree n D jRj, by Lemma 9.1 the elements ˛i2 commute with R.
+Let A be the subgroup of H generated by ˛12 and ˛22 . Then AF D A \ F is contained in the centralizer
+of R. Since n > 3, the group AF is cyclic and has order coprime to p by Remark 8.3. In particular,
+this means that the order of A is coprime to p. Furthermore, since AF is normalized by ˛i2 , we can use
+Lemma 9.1 once again and conclude that AF commutes with ˛14 and ˛24 .
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                           2785
+
+Denote by A0 the subgroup of H generated by ˛14 and ˛24 , and set A0F D A0 \ F . Then A0F  AF . Hence
+A0F is a cyclic central subgroup of A0 . Thus A0 is a central extension of an abelian group, which implies
+that it is a nilpotent group of class at most 2. Let Nz be the subgroup of H generated by A0 and R. Since R
+is abelian and commutes with A0 , we see that Nz is a nilpotent group of class at most 2. Moreover, its
+order is coprime to p. We want to replace Nz by a subgroup with similar properties that is normal in G.
+The subgroup R is characteristic in F , and hence normal in G. Also, the subgroup H       x˛x4 ;x˛4 generated
+                                                                                             1 2
+by ˛
+   x14 and ˛                         x , and its index in H
+            x14 is characteristic in H                    x is at most 16; see Example 2.3. Thus H   x˛x4 ;x˛4 is
+                                                                                                        1 2
+normal in G. x Let N be the intersection of all subgroups of G conjugate to Nz . Then N is a nilpotent
+group of class at most 2; moreover, its order is coprime to p, and it is normal in G. Also, we know
+that N contains the subgroup R, because R is normal in G. Similarly, the image of N in H          x coincides
+with Hx 4 4 , because H  x 4 4 is normal in G.  x Therefore, the index of N in G is
+       ˛x ;x
+         1 ˛ 2            ˛
+                          x ;x
+                            1 ˛ 2
+
+     jGj      x
+            jGj          jF j        x jF j
+                                    jGj
+         D                    6 16                   xp j3 /.60jFp j3 / D 29 32 5jFp j3 jG
+                                             6 16.24jG                                         xp j3
+           x˛x4 ;x˛4 j jN \F j
+     jN j jH                         x j jRj
+                                    jH
+                  1   2
+                                                                                 D 29 32 5jGp j3 :
+
+Proof of Theorem 1.15 We may assume that the field k is algebraically closed. If S is not birational to
+the product E  P 1 , where E is an elliptic curve, then the group Bir.S / is p–Jordan by Theorem 1.7; in
+particular, this means that Bir.S/ is nilpotently p–Jordan of class at most 2. On the other hand, if S is
+birational to such a product, then Bir.S / is nilpotently p–Jordan of class at most 2 by Lemma 13.1.
+
+
+14 Conclusion
+In this section we discuss some open questions concerning birational automorphism groups of varieties
+over fields of positive characteristic.
+
+Cremona groups of higher rank In [70, 6.1] Serre asked whether the groups Bir.P n / over a field of
+characteristic p are generalized p–Jordan for arbitrary n. Fei Hu [32, Question 1.11] strengthened this
+question by asking whether these groups are actually p–Jordan. The answer to both questions is not
+known, but Theorem 1.6 gives a hope that it should be positive. Over fields of characteristic zero, we
+know from [63] that all the groups Bir.P n / — and more generally, all birational automorphism groups of
+rationally connected varieties — are Jordan. However, the proof of this fact given in [63] relies on several
+theorems that are not known to hold in positive characteristic. Most importantly (except for resolution of
+singularities, which people are used to routinely assume), it uses boundedness of terminal Fano varieties,
+which is a particular case of the result of C Birkar [5]. Except for this, the proof uses the Minimal Model
+Program, which is available only up to dimension 3 over fields of characteristic p > 5 (see [28; 4; 6]), and
+some properties of minimal centers of log canonical singularities. It may be interesting to try to generalize
+this proof to the case of positive characteristic assuming resolution of singularities, boundedness of Fanos,
+and the Minimal Model Program. Even in this setup we expect it to be a complicated problem.
+
+Geometry & Topology, Volume 28 (2024)
+2786                                                                     Yifei Chen and Constantin Shramov
+
+Nonuniruled varieties The case of nonuniruled varieties looks much more accessible. Based on
+[62, Theorem 1.8(ii)], we ask the following.
+
+Question 14.1 Let X be a nonuniruled geometrically irreducible algebraic variety over a field of
+characteristic p > 0. Is it true that the group Bir.X / is p–Jordan?
+
+Note that the approach to birational automorphism groups of nonuniruled varieties over fields of char-
+acteristic zero used in [62] does not require boundedness of Fanos, and also does not use much of the
+Minimal Model Program (that is, does not require termination of flips). Therefore, we expect that the
+answer to Question 14.1 may be obtained using the method of [62].
+
+Nilpotent groups Based on [27] and Theorem 1.15, one can ask:
+
+Question 14.2 Let X be a geometrically irreducible algebraic variety over a field of characteristic p > 0.
+Is it true that the group Bir.X / is nilpotently p–Jordan?
+
+The approach to nilpotent Jordan property used in [27] is based on many features specific to characteristic
+zero. In particular, it uses the results of [63], which in turn require boundedness of Fanos etc.
+
+Complete varieties One can wonder if the analog of Theorem 1.5 holds for automorphism groups of
+complete algebraic varieties.
+
+Question 14.3 Let X be a complete algebraic variety over a field of characteristic p > 0. Is it true that
+the group Aut.X / is p–Jordan?
+
+The difficulty here is that an analog of Lemma 4.1 is not known in this case, even in characteristic 0.
+However, according to [52, Corollary 1.2] the answer to an analog of Question 14.3 is positive over fields
+of characteristic 0; compare with [67] for an alternative proof in the three-dimensional case.
+
+Quasiprojective varieties Similarly to [60, Question 2.30], one can ask the following.
+
+Question 14.4 Let X be a quasiprojective variety over a field of positive characteristic p. Is it true that
+the group Aut.X / is p–Jordan?
+
+Note that the answer to a similar question is known to be positive for quasiprojective surfaces over fields
+of zero characteristic; see [2].
+
+Explicit estimates It would be interesting to find the precise value of the constant J appearing in
+Theorem 1.6, similarly to what was done in [64, Proposition 1.2.3] and [85]. As in the case of zero
+characteristic, this will amount to accurate analysis of finite groups acting on del Pezzo surfaces. Note
+that some automorphism groups of del Pezzo surfaces over fields of small positive characteristic do not
+appear in large characteristics and characteristic zero; see for instance [19, Lemma 5.1]. Thus it may
+happen that the resulting constants are different for small and large values of the characteristic.
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                         2787
+
+Exponents It would be interesting to find the exact values of the constants e./ of Definition 1.3 for
+various groups  that enjoy the p–Jordan property. This applies to algebraic groups and automorphism
+groups of projective varieties; see [32, Theorems 1.7 and 1.10] and cf [32, Remark 1.8] for a (possibly
+nonsharp) upper bound for e./ in these cases. Also, this applies to our Theorem 1.7(ii). Similarly, we
+do not know the values of the constants e./ of Definition 1.14 for birational automorphism groups
+of surfaces; see Theorem 1.15. Provided that one understands an analogous bound for Theorem 1.7,
+computing or bounding these values will boil down to analyzing the proof of Lemma 13.1. Some of the
+progress in this direction may be made by optimizing the bounds provided by Lemmas 2.9 and 2.12.
+
+Generalized p–Jordan property We are not aware of examples of algebraic varieties over a field
+of positive characteristic p whose birational automorphism group is not p–Jordan, but is generalized
+p–Jordan. Theorem 1.7 shows that there are no such varieties in dimension 2. It would be interesting to
+find out if examples of this kind exist in higher dimensions.
+
+Multiplicative bounds In certain cases it is useful to consider multiplicative bounds for indices of
+normal abelian subgroups in finite subgroups of a given group (ie the least common multiples of such
+indices); see Serre [69; 70], and Shramov and Vologodsky [74, Theorem 1.2(ii)]. We point out that in
+the context of p–Jordan groups such bounds fail to exist already in the most simple situations, even if
+we consider such numbers up to the powers of p. For instance, if k is an algebraically closed field of
+positive characteristic p, the p–Jordan group PGL2 .k/ contains a subgroup PSL2 .Fpk / for every positive
+integer k. The latter group is simple if p k > 3, so that the largest normal abelian subgroup therein is the
+trivial group, whose index equals jPSL2 .Fpk /j D nk p k . Here nk D 12 .p 2k 1/ if p > 3, and nk D 22k 1
+if p D 2; thus, nk is coprime to p. We see that the numbers nk , k > 1, are unbounded, and so they do
+not have a finite common multiple. That being said, it would be interesting to find examples of p–Jordan
+groups of geometric origin where the multiplicative bounds for the arising constants do exist.
+
+
+References
+   [1] L Bădescu, Algebraic surfaces, Springer (2001) MR Zbl
+   [2] T Bandman, Y G Zarhin, Jordan groups and algebraic surfaces, Transform. Groups 20 (2015) 327–334
+       MR Zbl
+   [3] L Bieberbach, Über einen Satz des Hrn. C Jordan in der Theorie der endlichen Gruppen linearer Substitu-
+       tionen, Berl. Ber. 1911 (1911) 231–240 Zbl
+   [4] C Birkar, Existence of flips and minimal models for 3–folds in char p, Ann. Sci. École Norm. Sup. 49
+       (2016) 169–212 MR Zbl
+   [5] C Birkar, Singularities of linear systems and boundedness of Fano varieties, Ann. of Math. 193 (2021)
+       347–405 MR Zbl
+   [6] C Birkar, J Waldron, Existence of Mori fibre spaces for 3–folds in char p, Adv. Math. 313 (2017) 62–101
+       MR Zbl
+
+Geometry & Topology, Volume 28 (2024)
+2788                                                                         Yifei Chen and Constantin Shramov
+
+  [7] J Blanc, J-P Furter, Topologies and structures of the Cremona groups, Ann. of Math. 178 (2013) 1173–1198
+      MR Zbl
+  [8] E Bombieri, D Mumford, Enriques’ classification of surfaces in char p, III, Invent. Math. 35 (1976)
+      197–232 MR Zbl
+  [9] E Bombieri, D Mumford, Enriques’ classification of surfaces in char p, II, from “Complex analysis and
+      algebraic geometry” (W L Baily, Jr, T Shioda, editors), Iwanami Shoten, Tokyo (1977) 23–42 MR Zbl
+ [10] A Borel, Linear algebraic groups, 2nd edition, Graduate Texts in Math. 126, Springer (1991) MR Zbl
+ [11] R Brauer, W Feit, An analogue of Jordan’s theorem in characteristic p, Ann. of Math. 84 (1966) 119–131
+      MR Zbl
+ [12] E Breuillard, An exposition of Jordan’s original proof of his theorem on finite subgroups of GLn .C/, Model
+      Theory 2 (2023) 429–447 MR Zbl
+ [13] E Breuillard, B Green, Approximate groups, III: The unitary case, Turkish J. Math. 36 (2012) 199–215
+      MR Zbl
+ [14] M Brion, Some structure theorems for algebraic groups, from “Algebraic groups: structure and actions”,
+      Proc. Sympos. Pure Math. 94, Amer. Math. Soc., Providence, RI (2017) 53–126 MR Zbl
+ [15] M Brion, Notes on automorphism groups of projective varieties, lecture notes (2018) Available at
+      https://www-fourier.univ-grenoble-alpes.fr/~mbrion/autos_final.pdf
+ [16] M Brion, On models of algebraic group actions, Proc. Indian Acad. Sci. Math. Sci. 132 (2022) art. id. 61
+      MR Zbl
+ [17] C W Curtis, I Reiner, Representation theory of finite groups and associative algebras, Pure Appl. Math.
+      11, Wiley, New York (1962) MR Zbl
+ [18] M R Darafsheh, Order of elements in the groups related to the general linear group, Finite Fields Appl. 11
+      (2005) 738–747 MR Zbl
+ [19] I Dolgachev, A Duncan, Automorphisms of cubic surfaces in positive characteristic, Izv. Ross. Akad. Nauk
+      Ser. Mat. 83 (2019) 15–92 MR Zbl
+ [20] I V Dolgachev, V A Iskovskikh, Finite subgroups of the plane Cremona group, from “Algebra, arithmetic,
+      and geometry: in honor of Yu I Manin, I” (Y Tschinkel, Y Zarhin, editors), Progr. Math. 269, Birkhäuser,
+      Boston, MA (2009) 443–548 MR Zbl
+ [21] I Dolgachev, G Martin, Numerically trivial automorphisms of Enriques surfaces in characteristic 2, J.
+      Math. Soc. Japan 71 (2019) 1181–1200 MR Zbl
+ [22] B Fantechi, L Göttsche, L Illusie, S L Kleiman, N Nitsure, A Vistoli, Fundamental algebraic geometry:
+      Grothendieck’s FGA explained, Math. Surv. Monogr. 123, Amer. Math. Soc., Providence, RI (2005) MR
+      Zbl
+ [23] W Feit, Finite linear groups and theorems of Minkowski and Schur, Proc. Amer. Math. Soc. 125 (1997)
+      1259–1262 MR Zbl
+ [24] G Frobenius, Über den von L Bieberbach gefundenen Beweis eines Satzes von C Jordan, Berl. Ber. 1911
+      (1911) 241–248 Zbl
+ [25] A Grothendieck, Éléments de géométrie algébrique, IV: Étude locale des schémas et des morphismes de
+      schémas, III, Inst. Hautes Études Sci. Publ. Math. 28 (1966) 5–255 MR Zbl
+ [26] Y Gu, Surface fibrations with large equivariant automorphism group, preprint (2020) arXiv 2004.12656
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                            2789
+
+ [27] A Guld, Finite subgroups of the birational automorphism group are “almost” nilpotent of class at most
+      two, preprint (2020) arXiv 2004.11715
+ [28] C D Hacon, C Xu, On the three dimensional minimal model program in positive characteristic, J. Amer.
+      Math. Soc. 28 (2015) 711–744 MR Zbl
+ [29] M Hanamura, On the birational automorphism groups of algebraic varieties, Compos. Math. 63 (1987)
+      123–142 MR Zbl
+ [30] M Hanamura, Structure of birational automorphism groups, I: Nonuniruled varieties, Invent. Math. 93
+      (1988) 383–403 MR Zbl
+ [31] R Hartshorne, Algebraic geometry, Graduate Texts in Math. 52, Springer (1977) MR Zbl
+ [32] F Hu, Jordan property for algebraic groups and automorphism groups of projective varieties in arbitrary
+      characteristic, Indiana Univ. Math. J. 69 (2020) 2493–2504 MR Zbl
+ [33] S Iitaka, Algebraic geometry: an introduction to birational geometry of algebraic varieties, North-Holland
+      Math. Library 24, Springer (1982) MR Zbl
+ [34] I M Isaacs, Finite group theory, Graduate Stud. in Math. 92, Amer. Math. Soc., Providence, RI (2008) MR
+      Zbl
+ [35] V A Iskovskih, Minimal models of rational surfaces over arbitrary fields, Izv. Akad. Nauk SSSR Ser. Mat.
+      43 (1979) 19–43 MR Zbl In Russian; translated in Math. USSR-Izv. 14 (1980) 17–39
+ [36] M C Jordan, Mémoire sur les équations différentielles linéaires à intégrale algébrique, J. Reine Angew.
+      Math. 84 (1878) 89–215 MR Zbl
+ [37] J Keum, Orders of automorphisms of K3 surfaces, Adv. Math. 303 (2016) 39–87 MR Zbl
+ [38] C S H King, Generation of finite simple groups by an involution and an element of prime order, J. Algebra
+      478 (2017) 153–173 MR Zbl
+ [39] S L Kleiman, Toward a numerical theory of ampleness, Ann. of Math. 84 (1966) 293–344 MR Zbl
+ [40] S Kleiman, Les théorèmes de finitude pour le foncteur de Picard, from “Théorie des intersections et
+      théorème de Riemann–Roch (SGA 6)” (A Grothendieck, P Berthelot, L Illusie, editors), Lecture Notes in
+      Math. 225, Springer (1971) exposé 13, 616–666 MR Zbl
+ [41] J Kollár, Rational curves on algebraic varieties, Ergebnisse der Math. 32, Springer (1996) MR Zbl
+ [42] M J Larsen, R Pink, Finite subgroups of algebraic groups, J. Amer. Math. Soc. 24 (2011) 1105–1158 MR
+      Zbl
+ [43] R Lazarsfeld, Positivity in algebraic geometry, I: Classical setting: line bundles and linear series, Ergeb-
+      nisse der Math. 48, Springer (2004) MR Zbl
+ [44] C Liedtke, Algebraic surfaces in positive characteristic, from “Birational geometry, rational curves, and
+      arithmetic” (F Bogomolov, B Hassett, Y Tschinkel, editors), Springer (2013) 229–292 MR Zbl
+ [45] J Lipman, Rational singularities, with applications to algebraic surfaces and unique factorization, Inst.
+      Hautes Études Sci. Publ. Math. 36 (1969) 195–279 MR Zbl
+ [46] J Lipman, Desingularization of two-dimensional schemes, Ann. of Math. 107 (1978) 151–207 MR Zbl
+ [47] Q Liu, Algebraic geometry and arithmetic curves, Oxford Graduate Texts in Math. 6, Oxford Univ. Press
+      (2002) MR Zbl
+ [48] Y I Manin, Cubic forms: algebra, geometry, arithmetic, 2nd edition, North-Holland Math. Library 4,
+      North-Holland, Amsterdam (1986) MR Zbl
+
+Geometry & Topology, Volume 28 (2024)
+2790                                                                      Yifei Chen and Constantin Shramov
+
+ [49] M Martin-Deschamps, R Lewin-Ménégaux, Applications rationnelles séparables dominantes sur une
+      variété de type général, Bull. Soc. Math. France 106 (1978) 279–287 MR Zbl
+ [50] G Martin, Automorphism group schemes of bielliptic and quasi-bielliptic surfaces, Épijournal Géom.
+      Algébrique 6 (2022) art. id. 9 MR Zbl
+ [51] H Matsumura, On algebraic groups of birational transformations, Atti Accad. Naz. Lincei Rend. Cl. Sci.
+      Fis. Mat. Nat. 34 (1963) 151–155 MR Zbl
+ [52] S Meng, F Perroni, D-Q Zhang, Jordan property for automorphism groups of compact spaces in Fujiki’s
+      class C , J. Topol. 15 (2022) 806–814 MR Zbl
+ [53] S Meng, D-Q Zhang, Jordan property for non-linear algebraic groups and projective varieties, Amer. J.
+      Math. 140 (2018) 1133–1145 MR Zbl
+ [54] H Minkowski, Zur Theorie der positiven quadratischen Formen, J. Reine Angew. Math. 101 (1887)
+      196–202 MR Zbl
+ [55] S Mori, Threefolds whose canonical bundles are not numerically effective, Ann. of Math. 116 (1982)
+      133–176 MR Zbl
+ [56] D Mumford, Enriques’ classification of surfaces in char p, I, from “Global analysis” (D C Spencer, S
+      Iyanaga, editors), Univ. Tokyo Press (1969) 325–339 MR Zbl
+ [57] D Mumford, Abelian varieties, 2nd edition, Tata Inst. Fund. Res. Stud. Math. 5, Tata Inst. Fund. Res.,
+      Bombay (2008) MR Zbl
+ [58] I Mundet i Riera, Jordan’s theorem for the diffeomorphism group of some manifolds, Proc. Amer. Math.
+      Soc. 138 (2010) 2253–2262 MR Zbl
+ [59] A Ogus, Supersingular K3 crystals, from “Journées de Géométrie Algébrique de Rennes, II”, Astérisque
+      64, Soc. Math. France, Paris (1979) 3–86 MR Zbl
+ [60] V L Popov, On the Makar-Limanov, Derksen invariants, and finite automorphism groups of algebraic
+      varieties, from “Affine algebraic geometry” (D Daigle, R Ganong, M Koras, editors), CRM Proc. Lecture
+      Notes 54, Amer. Math. Soc., Providence, RI (2011) 289–311 MR Zbl
+ [61] V L Popov, Birational splitting and algebraic group actions, Eur. J. Math. 2 (2016) 283–290 MR Zbl
+ [62] Y Prokhorov, C Shramov, Jordan property for groups of birational selfmaps, Compos. Math. 150 (2014)
+      2054–2072 MR Zbl
+ [63] Y Prokhorov, C Shramov, Jordan property for Cremona groups, Amer. J. Math. 138 (2016) 403–418 MR
+      Zbl
+ [64] Y Prokhorov, C Shramov, Jordan constant for Cremona group of rank 3, Mosc. Math. J. 17 (2017)
+      457–509 MR Zbl
+ [65] Y G Prokhorov, C A Shramov, Bounded automorphism groups of compact complex surfaces, Mat. Sb. 211
+      (2020) 105–118 MR Zbl In Russian; translated in Sb. Math. 211 (2020) 1310–1322
+ [66] Y Prokhorov, C Shramov, Automorphism groups of compact complex surfaces, Int. Math. Res. Not. 2021
+      (2021) 10490–10520 MR Zbl
+ [67] Y G Prokhorov, K A Shramov, Automorphism groups of Moishezon threefolds, Mat. Zametki 106 (2019)
+      636–640 MR Zbl In Russian; translated in Math. Notes 106 (2019) 651–655
+ [68] G R Robinson, On linear groups, J. Algebra 131 (1990) 527–534 MR Zbl
+ [69] J-P Serre, Bounds for the orders of the finite subgroups of G.k/, from “Group representation theory” (M
+      Geck, D Testerman, J Thévenaz, editors), EPFL Press, Lausanne, Switzerland (2007) 405–450 MR Zbl
+
+Geometry & Topology, Volume 28 (2024)
+Automorphisms of surfaces over fields of positive characteristic                                            2791
+
+ [70] J-P Serre, A Minkowski-style bound for the orders of the finite subgroups of the Cremona group of rank 2
+      over an arbitrary field, Mosc. Math. J. 9 (2009) 193–208 MR Zbl
+ [71] J-P Serre, Finite groups: an introduction, Surv. Modern Math. 10, International, Somerville, MA (2016)
+      MR Zbl
+ [72] I R Shafarevich, Basic algebraic geometry, Grundl. Math. Wissen. 213, Springer (1974) MR Zbl
+ [73] C Shramov, V Vologodsky, Automorphisms of pointless surfaces, preprint (2018) arXiv 1807.06477
+ [74] C Shramov, V Vologodsky, Boundedness for finite subgroups of linear algebraic groups, Trans. Amer.
+      Math. Soc. 374 (2021) 9029–9046 MR Zbl
+ [75] J H Silverman, The arithmetic of elliptic curves, Graduate Texts in Math. 106, Springer (1986) MR Zbl
+ [76] T A Springer, Linear algebraic groups, 2nd edition, Progr. Math. 9, Birkhäuser, Boston, MA (1998) MR
+      Zbl
+ [77] The Stacks project, electronic reference (2005–) Available at http://stacks.math.columbia.edu
+ [78] H Stichtenoth, Über die Automorphismengruppe eines algebraischen Funktionenkörpers von Primzahl-
+      charakteristik, I: Eine Abschätzung der Ordnung der Automorphismengruppe, Arch. Math. (Basel) 24
+      (1973) 527–544 MR Zbl
+ [79] K-i Tahara, On the finite subgroups of GL.3; Z/, Nagoya Math. J. 41 (1971) 169–209 MR Zbl
+ [80] T Tao, A proof of Gromov’s theorem, blog post (2010) Available at https://terrytao.wordpress.com/
+      2010/02/18/a-proof-of-gromovs-theorem
+ [81] K Ueno, Classification theory of algebraic varieties and compact complex spaces, Lecture Notes in Math.
+      439, Springer (1975) MR Zbl
+ [82] W C Waterhouse, Two generators for the general linear groups over finite fields, Linear Multilinear Algebra
+      24 (1989) 227–230 MR Zbl
+ [83] A Weil, On algebraic groups of transformations, Amer. J. Math. 77 (1955) 355–391 MR Zbl
+ [84] R A Wilson, The finite simple groups, Graduate Texts in Math. 251, Springer (2009) MR Zbl
+ [85] E Yasinsky, The Jordan constant for Cremona group of rank 2, Bull. Korean Math. Soc. 54 (2017)
+      1859–1871 MR Zbl
+ [86] Y G Zarhin, Theta groups and products of abelian and rational varieties, Proc. Edinb. Math. Soc. 57 (2014)
+      299–304 MR Zbl
+
+
+YC: Hua Loo-Keng Key Laboratory of Mathematics, Academy of Mathematics and Systems Science
+Chinese Academy of Sciences
+Beijing, China
+CS: Steklov Mathematical Institute of Russian Academy of Sciences
+Moscow, Russia
+Laboratory of Algebraic Geometry, National Research University Higher School of Economics
+Moscow, Russia
+yifeichen@amss.ac.cn,            costya.shramov@gmail.com
+
+Proposed: Dan Abramovich                                                               Received: 23 July 2021
+Seconded: Mark Gross, Yakov Eliashberg                                               Revised: 25 October 2022
+
+
+Geometry & Topology Publications, an imprint of mathematical sciences publishers                            msp
+                                           G EOMETRY & T OPOLOGY
+                                                                 msp.org/gt
+
+                                                            M ANAGING E DITOR
+                                      András I Stipsicz    Alfréd Rényi Institute of Mathematics
+                                                           stipsicz@renyi.hu
+
+                                                            B OARD OF E DITORS
+Mohammed Abouzaid       Stanford University                                             Mark Gross    University of Cambridge
+                        abouzaid@stanford.edu                                                         mgross@dpmms.cam.ac.uk
+    Dan Abramovich      Brown University                                                 Rob Kirby    University of California, Berkeley
+                        dan_abramovich@brown.edu                                                      kirby@math.berkeley.edu
+            Ian Agol    University of California, Berkeley                            Bruce Kleiner   NYU, Courant Institute
+                        ianagol@math.berkeley.edu                                                     bkleiner@cims.nyu.edu
+        Arend Bayer     University of Edinburgh                                      Sándor Kovács    University of Washington
+                        arend.bayer@ed.ac.uk                                                          skovacs@uw.edu
+       Mark Behrens     University of Notre Dame                                           Urs Lang   ETH Zürich
+                        mbehren1@nd.edu                                                               urs.lang@math.ethz.ch
+     Mladen Bestvina    University of Utah                                             Marc Levine    Universität Duisburg-Essen
+                        bestvina@math.utah.edu                                                        marc.levine@uni-due.de
+    Martin R Bridson    University of Oxford                                     Ciprian Manolescu    University of California, Los Angeles
+                        bridson@maths.ox.ac.uk                                                        cm@math.ucla.edu
+           Jim Bryan    University of British Columbia                                Haynes Miller   Massachusetts Institute of Technology
+                        jbryan@math.ubc.ca                                                            hrm@math.mit.edu
+       Dmitri Burago    Pennsylvania State University                               Tomasz Mrowka     Massachusetts Institute of Technology
+                        burago@math.psu.edu                                                           mrowka@math.mit.edu
+    Tobias H Colding    Massachusetts Institute of Technology                          Aaron Naber    Northwestern University
+                        colding@math.mit.edu                                                          anaber@math.northwestern.edu
+    Simon Donaldson     Imperial College, London                                      Peter Ozsváth   Princeton University
+                        s.donaldson@ic.ac.uk                                                          petero@math.princeton.edu
+    Yasha Eliashberg    Stanford University                                      Leonid Polterovich   Tel Aviv University
+                        eliash-gt@math.stanford.edu                                                   polterov@post.tau.ac.il
+         Benson Farb    University of Chicago                                          Colin Rourke   University of Warwick
+                        farb@math.uchicago.edu                                                        gt@maths.warwick.ac.uk
+      David M Fisher    Rice University                                               Roman Sauer     Karlsruhe Institute of Technology
+                        davidfisher@rice.edu                                                          roman.sauer@kit.edu
+      Mike Freedman     Microsoft Research                                          Stefan Schwede    Universität Bonn
+                        michaelf@microsoft.com                                                        schwede@math.uni-bonn.de
+         David Gabai    Princeton University                                          Natasa Sesum    Rutgers University
+                        gabai@princeton.edu                                                           natasas@math.rutgers.edu
+ Stavros Garoufalidis   Southern U. of Sci. and Tech., China                             Gang Tian    Massachusetts Institute of Technology
+                        stavros@mpim-bonn.mpg.de                                                      tian@math.mit.edu
+    Cameron Gordon      University of Texas                                         Ulrike Tillmann   Oxford University
+                        gordon@math.utexas.edu                                                        tillmann@maths.ox.ac.uk
+        Jesper Grodal   University of Copenhagen                                      Nathalie Wahl   University of Copenhagen
+                        jg@math.ku.dk                                                                 wahl@math.ku.dk
+      Misha Gromov      IHÉS and NYU, Courant Institute                             Anna Wienhard     Universität Heidelberg
+                        gromov@ihes.fr                                                                wienhard@mathi.uni-heidelberg.de
+
+See inside back cover or msp.org/gt for submission instructions.
+The subscription price for 2024 is US $805/year for the electronic version, and $1135/year (C$70, if shipping outside the US) for print and
+electronic. Subscriptions, requests for back issues and changes of subscriber address should be sent to MSP. Geometry & Topology is indexed
+by Mathematical Reviews, Zentralblatt MATH, Current Mathematical Publications and the Science Citation Index.
+Geometry & Topology (ISSN 1465-3060 printed, 1364-0380 electronic) is published 9 times per year and continuously online, by Mathematical
+Sciences Publishers, c/o Department of Mathematics, University of California, 798 Evans Hall #3840, Berkeley, CA 94720-3840. Periodical
+rate postage paid at Oakland, CA 94615-9651, and additional mailing offices. POSTMASTER: send address changes to Mathematical Sciences
+Publishers, c/o Department of Mathematics, University of California, 798 Evans Hall #3840, Berkeley, CA 94720-3840.
+                                  GT peer review and production are managed by EditF LOW® from MSP.
+                                                                PUBLISHED BY
+                                                 mathematical sciences publishers
+                                                     nonprofit scientific publishing
+                                                             http://msp.org/
+                                                 © 2024 Mathematical Sciences Publishers
+                 G EOMETRY & T OPOLOGY
+                 Volume 28     Issue 6 (pages 2483–2999)     2024
+
+Intersection theory on moduli of disks, open KdV and Virasoro              2483
+     R AHUL PANDHARIPANDE , JAKE P S OLOMON and R AN J T ESSLER
+Cluster categories and rational curves                                     2569
+     Z HENG H UA and B ERNHARD K ELLER
+Limits of manifolds with a Kato bound on the Ricci curvature               2635
+     G ILLES C ARRON , I LARIA M ONDELLO and DAVID T EWODROSE
+Automorphisms of surfaces over fields of positive characteristic           2747
+    Y IFEI C HEN and C ONSTANTIN S HRAMOV
+Moduli spaces of residueless meromorphic differentials and the KP hierarchy 2793
+     A LEXANDR B URYAK , PAOLO ROSSI and D IMITRI Z VONKINE
+Homological mirror symmetry for hypersurfaces in .C  /n                   2825
+     M OHAMMED A BOUZAID and D ENIS AUROUX
+Stable cuspidal curves and the integral Chow ring of M2;1                  2915
+     A NDREA D I L ORENZO , M ICHELE P ERNICE and A NGELO V ISTOLI
+Thurston’s bounded image theorem                                           2971
+     C YRIL L ECUIRE and K EN ’ ICHI O HSHIKA
+
