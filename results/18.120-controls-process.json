@@ -1,0 +1,47 @@
+{
+  "runs": [
+    {
+      "label": "export",
+      "command": [
+        "gap-4.16.1/gap",
+        "-l",
+        "/project/gap-4.16.1",
+        "-q",
+        "-b",
+        "-T",
+        "-m",
+        "128m",
+        "-o",
+        "1g",
+        "scripts/export_18_120_controls.g"
+      ],
+      "actual_returncode": 0,
+      "elapsed_seconds": 3.3780718790367246,
+      "observed_utc": "2026-09-12T00:21:44.148183+00:00",
+      "clean_log": true,
+      "sentinel": true,
+      "sha256": {
+        "scripts/export_18_120_controls.g": "df519f72220dd1c8c55084a5de41a6a2fc76ff171f8ed65df56e84dc03fedfcd",
+        "results/18.120-control-inputs.json": "37c2e23dfb9ef84c8cf3be60d74576a72b2f6582ae3f23822fba62e88fa115fe",
+        "results/18.120-export.log": "11c10b6971a954fe4c501031b78abd42750a58342647a7eb0a0a0242ff53acc6"
+      }
+    },
+    {
+      "label": "controls",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/check_18_120.py"
+      ],
+      "actual_returncode": 0,
+      "elapsed_seconds": 96.18838612176478,
+      "observed_utc": "2026-09-12T00:23:20.367783+00:00",
+      "clean_log": true,
+      "sentinel": true,
+      "sha256": {
+        "scripts/check_18_120.py": "e1b85c62d6817db5fe7a2a2f8266cb2862236aaef886a91948b267a4f812c3cb",
+        "results/18.120-controls.json": "f14409bf97c3386c679fb4f943bc1136b5903d56974bacba9ee1daff863e0980",
+        "results/18.120-controls.log": "7b0bbdc5c9c8eb8181332d740b7e8648ea9dc579aeb9ac74daf2909482f87736"
+      }
+    }
+  ]
+}

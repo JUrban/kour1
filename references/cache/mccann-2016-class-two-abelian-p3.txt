@@ -1,0 +1,394 @@
+Rend. Sem. Mat. Univ. Padova, Vol. 136 (2016), 1–10
+DOI 10.4171/RSMUP/136-1
+
+
+
+
+On finite p-groups that are the product of a subgroup of class
+           two and an abelian subgroup of order p3
+
+                               Brendan McCann ()
+
+
+Abstract – In this note it is shown that if G D AB is a finite p -group that is the product
+   of an abelian subgroup A of order p 3 and a subgroup B of nilpotency class two, then
+   G can have derived length at most three.
+
+
+Mathematics Subject Classification (2010). 20 D 40, 20 D 15.
+
+Keywords. Products of groups, factorised groups, finite p -groups.
+
+The question of the relationship between the derived length of a finite group that
+is the product of two nilpotent subgroups and the nilpotency classes of the factors
+goes back to the well-known conjecture, mentioned by Scott in [8] (p. 385) and
+by Kegel in [6], that the derived length of the product should be bounded by the
+sum of the classes of the factors. The examples of Cossey and Stonehewer [2]
+eventually showed that the derived length of a product can exceed the sum of the
+classes of the factors. In particular, Cossey and Stonehewer constructed examples
+of finite p -groups of derived length four that can be expressed as the product of
+an abelian subgroup and a subgroup of class two. In these examples the abelian
+                                            3
+factor is quite large, being of order p p for p odd, and the question arises as
+to how small the abelian factor can be in such a product of derived length four.
+Another significant result concerning factorised finite p -groups G D AB , where
+A is abelian, is that of Morigi ([7], Theorem 2, or [1], Theorem 3.3.11), which shows
+that if jB 0 j D p n then G can have derived length at most n C 2, while the results
+of Jabara ([4], [5] or [1], Corollary 3.3.25) show that if B has rank 2 and class k
+then G .2k/ D 1, whereas if B has an abelian subgroup of index p n 1 then G has
+derived length at most 2n.
+
+   () Indirizzo dell’A.: Brendan McCann, Department of Mathematics and Computing,
+Waterford Institute of Technology, Cork Road, Waterford, Ireland
+E-mail: bmccann@wit.ie
+2                                       B. McCann
+
+    The purpose of the present note is to consider one very particular case, namely
+finite p -groups G D AB that are the product of an abelian subgroup A of order p 3
+and a subgroup B of class two. It will be shown that such groups can have derived
+length at most three. Taken in conjunction with Morigi’s result, this shows in
+particular that a finite p -group of derived length four that factorises as the product
+of an abelian subgroup and a subgroup of class two will require an abelian factor
+of order at least p 4 and a factor of class two whose derived subgroup is of order
+at least p 2 .
+    We first examine a rather restricted normal product of two subgroups of class
+at most two.
+
+   Lemma 1. Let the finite group G be the product G D HK , for subgroups H
+and K such that
+    (i) H E G and K E G ;
+(ii) jG W H j D jG W Kj D p , where p is a prime;
+(iii) H and K are nilpotent of class at most two.
+Then G .2/ D 1 and jG 0 j  pjH 0 K 0 j.
+
+     Proof. We have
+                                  G=H Š G=K Š Cp ;
+which is abelian, so H 0 K 0 6 G 0 6 H \ K . Since H and K both have class at
+most two we have H 0 6 Z.H / and K 0 6 Z.K/, whence H 0 K 0 6 Z.H \ K/. In
+addition we see that ŒG; H \ K D ŒH; H \ KŒK; H \ K 6 H 0 K 0 . Thus
+
+                           .H \ K/=H 0 K 0 6 Z.G=H 0 K 0 /:
+
+Now H=.H \ K/ Š HK=K D G=K Š Cp , so
+
+                    jG W H \ Kj D jG W H jjH W H \ Kj D p 2 :
+
+Since G=.H \ K/ can be embedded in G=H  G=K (Š Cp  Cp ) we have, by
+comparison of orders,
+
+              G=.H \ K/ D H=.H \ K/  K=.H \ K/ Š Cp  Cp :
+
+We let 1 ¤ x 2 H n.H \K/ and 1 ¤ y 2 Kn.H \K/. Then G D hx; y; H \Ki and
+G 0 =H 0 K 0 D hŒx; yiH 0 K 0 =H 0 K 0 6 .H \ K/=H 0 K 0 6 Z.G=H 0 K 0 /. In addition
+x p H 0 K 0 2 .H \ K/=H 0 K 0 . Thus, since Œx; yH 0 K 0 2 Z.G=H 0 K 0 /, we have
+
+                      Œx; yp H 0 K 0 D Œx p ; yH 0 K 0 D 1G=H 0 K 0 :
+        Product of a subgroup of class two and an abelian subgroup of order p 3        3
+
+Furthermore, since Œx; y 2 H \ K and H 0 K 0 6 Z.H \ K/, we see that
+G 0 D hŒx; y; H 0 K 0 i is abelian, whence G .2/ D 1. Finally we observe that
+G 0 =H 0 K 0 D hŒx; yiH 0 K 0 =H 0 K 0 is cyclic of order at most p , so it follows that
+jG 0 j  pjH 0 K 0 j.                                                                  
+
+   Corollary 2. Let G be a finite p -group and let H be a subgroup of G such
+that
+
+ (i) jG W H j  p 2 ;
+
+(ii) H has class at most two.
+
+Then G .3/ D 1.
+
+    Proof. If H E G then G=H is abelian and the result follows. If H 6E G then,
+since G is a finite p -group and jG W H j  p 2 , we must have jG W NG .H /j D
+jNG .H / W H j D p , so H E NG .H / E G . In addition, for x 2 GnNG .H / we
+have, by comparison of orders, NG .H / D HH x . Since H and H x have class at
+most two and are (normal) subgroups of index p in NG .H /, we see by Lemma 1
+that NG .H / has derived length at most two. Since G=NG .H / Š Cp is abelian, it
+follows that G .3/ D 1.                                                      
+
+    An easy, and no doubt well-known, consequence of Corollary 2 is that a finite
+p -group that is the product of a subgroup of class two and an abelian subgroup of
+order p 2 can have derived length at most three.
+    We note the following elementary consequence of the famous Theorem of Itô
+([3], Satz 1, or [1], Theorem 3.1.7):
+
+   Lemma 3. Let the group G D AB be the product of the subgroups A and B
+such that
+ (i) A is abelian;
+
+(ii) .B 0 /G is abelian.
+
+Then G .3/ D 1.
+
+     Proof. We see that G=.B 0 /G D .A.B 0/G =.B 0 /G /.B.B 0/G =.B 0 /G / is the prod-
+uct of two abelian subgroups. By Itô’s Theorem we have G .2/ 6 .B 0 /G . Since
+.B 0 /G is abelian, we conclude that G .3/ D 1.                                      
+
+   We will use the next lemma in the proof of our main result, Theorem 5.
+4                                   B. McCann
+
+   Lemma 4. Let the group G D AB be the product of the subgroups A and B
+such that
+    (i) A is abelian;
+(ii) B 0 6 Z.B/;
+(iii) B is subnormal of defect at most two in G .
+Then .B 0 /G is abelian (so G .3/ D 1 by Lemma 3).
+
+    Proof. Since B has defect at most two, there exists a normal subgroup N E G
+such that B E N E G . Then N=B D .N \ A/B=B is isomorphic to a
+factor group of A, so N 0 6 B . But N 0 E G so .B 0 /G 6 N 0 (6 B ). Hence
+B 0 6 Z.B/ \ .B 0 /G 6 Z..B 0 /G / E G , so we conclude that .B 0 /G is abelian. 
+
+   Our main result provides some information about the structure of a finite p -
+group that is the product of an abelian subgroup of order p 3 and a subgroup of
+class two.
+
+      Theorem 5. Let G D AB be a finite p -group for subgroups A and B such that
+    (i) A is abelian;
+(ii) jAj D p 3 ;
+(iii) A \ B D 1;
+(iv) B 0 6 Z.B/.
+Then one of the following holds:
+    1. G has a subgroup B1 (with possibly B1 D B ) such that
+         (a) G D AB1 and A \ B1 D 1;
+         (b) B10 6 Z.B1 /;
+         (c) .B1 /0 6 B 0 ;
+         (d) .B10 /G is abelian;
+or
+    2. G has a subgroup B2 such that
+         (a) B20 6 Z.B2 /;
+         (b) jB2G W B2 j D p ;
+         (c) jG W B2G j D p 2 .
+         Product of a subgroup of class two and an abelian subgroup of order p 3      5
+
+    Proof. We use induction on jB 0 j and note that if .B 0 /G is abelian (in particular
+if B 0 D 1) then we may let B1 D B and see that the result is trivial. We therefore
+assume that .B 0 /G is non-abelian. By Lemma 4 we may also assume that B has
+defect three in G . Now jAj D p 3 , so we may further assume that there exist
+elements w; x; y 2 A for which the following is satisfied:
+                                 A D hw; x; yi
+                            hwi D NA .B/ Š Cp I
+                         hw; xi D NA .hwiB/I
+                                y p 2 hw; xi;    but y … hw; xiI
+                                 p
+                                x 2 hwi;         but x … hwi:
+We may further assume that hwiB D NG .B/ and hw; xiB D NG .hwiB/ E G .
+Thus B 0 6 .hw; xiB/0 E G , so .B 0 /G 6 .hw; xiB/0 . But hw; xiB=hwiB is abelian,
+so .hw; xiB/0 6 hwiB . Hence, in particular, we have .B 0 /G 6 hwiB and, by
+conjugation, .B 0 /G 6 .hwiB/y D hwiB y .
+    If CA .B 0 / ¤ 1, then B is a proper subgroup of CG .B 0 /, and thus also
+of NCG .B 0 / .B/ D NG .B/ \ CG .B 0 /. By comparison of orders it follows that
+NG .B/ D hwiB 6 CG .B 0 /. Hence B 0 6 Z.hwiB/. But .B 0 /G 6 hwiB , so
+B 0 6 Z.hwiB/ \ .B 0 /G 6 Z..B 0 /G / and .B 0 /G is in fact abelian, in contradiction
+to our assumption. Hence we may assume that CA .B 0 / D 1 so, in particular, we
+have B D CG .B 0 / (and, for g 2 G , B g D CG ..B 0 /g /).
+    If .B 0 /G 6 B then B 0 6 Z.B/ \ .B 0 /G 6 Z..B 0 /G / and .B 0 /G is again abelian
+(which is excluded). Thus, since .B 0 /hw;xiB 6 ..hwiB/0 /hw;xiB D .hwiB/0 6
+B , we may further assume that .B 0 /y 66 B . Now, if B y 6 hwiB , then we
+obtain .B 0 /y 6 .hwiB/0 6 B , which has been ruled out. Hence it follows that
+B y 66 hwiB .
+    Since jhwiB W Bj D jhw; xiB W hwiBj D p; we then have, by comparison of
+orders:
+                              hwiB D BB x D B.B 0 /y
+and
+                     hw; xiB D hwiBB y D B.B 0 /y B y D BB y :
+In particular it follows that
+                                            jBjjB y j      jBj
+                p 2 jBj D jhw; xiBj D                 D            jB y j;
+                                           jB \ B y j   jB \ B y j
+and so
+                                                   jBj
+                          jB W B \ B y j D                 D p2:
+                                                jB \ B y j
+6                                          B. McCann
+
+  Now j.B 0 /y W .B 0 /y \ Bj D jB.B 0/y W Bj D jhwiB W Bj D p . Therefore, since
+B D CG .B 0 /, we have
+
+    j.B 0 /y W C.B 0 /y .B 0 /j D j.B 0 /y W .B 0 /y \ CG .B 0 /j D j.B 0 /y W .B 0 /y \ Bj D p:
+
+In particular we see that B 0 and .B 0 /y do not centralise each other. Thus, since
+CG ..B 0 /y / D B y , we have B 0 66 B y , so hwiB y D B y B 0 . It then similarly follows
+that
+                                     jB 0 W B 0 \ B y j D p:
+
+In addition since .B 0 /G 6 hwiB D NG .B/, we have B 0 E .B 0 /G . By conjugation
+.B 0 /y is also normal in .B 0 /G , so B 0 and .B 0 /y normalise each other. We note that
+
+         .B 0 /y \ B D .B 0 /y \ B \ B y 6 .B 0 /y \ B 0 .B \ B y / 6 .B 0 /y \ B;
+
+and so
+                            .B 0 /y \ B 0 .B \ B y / D .B 0 /y \ B:
+
+  We let H D hB 0 ; .B 0/y ; B \ B y i . Then H can be expressed as the product
+H D .B 0 /y B 0 .B \ B y / and we have
+
+                                          j.B 0 /y jjB 0 .B \ B y /j
+                                jH j D
+                                         j.B 0 /y \ B 0 .B \ B y /j
+                                         j.B 0 /y jjB 0 .B \ B y /j
+                                     D
+                                               j.B 0 /y \ Bj
+                                     D pjB 0 .B \ B y /j
+                                            jB 0 jjB \ B y j
+                                     Dp
+                                           jB 0 \ B \ B y j
+                                               jB 0 j
+                                     Dp                 jB \ B y j
+                                           jB 0 \ B y j
+                                     D p 2 jB \ B y j:
+
+But jB W B \ B y j D p 2 , so it follows that
+                                                 jBj 
+                                   jH j D p 2             D jBj:
+                                                  p2
+         Product of a subgroup of class two and an abelian subgroup of order p 3         7
+
+   Now B 0 and .B 0 /y normalise each other, so
+
+     ŒB 0 ; .B 0 /y  6 B 0 \ .B 0 /y 6 Z.B/ \ Z.B y / 6 Z.BB y / D Z.hw; xiB/:
+
+We similarly have
+
+                      .B \ B y /0 6 B 0 \ .B 0 /y 6 Z.hw; xiB/:
+
+Hence, bearing in mind that both B 0 and .B 0 /y are centralised by B \ B y , we have
+
+                     H 0 D hB 0 ; .B 0 /y ; B \ B y i0
+                         D ŒB 0 ; .B 0 /y .B \ B y /0
+                         6 Z.hw; xiB/ \ .B 0 /y \ B 0 .6 Z.H //:
+
+Thus H has class at most two. In addition we see that w centralises H 0 and that
+H 0 6 B 0 . However w does not centralise B 0 , so we further conclude that H 0 is a
+proper subgroup of B 0 .
+    If A \ H D 1 then, since jH j D jBj, we have G D AH . As jH 0 j < jB 0 j and
+H 6 B 0 , we can then use induction on jB 0 j to show that the result holds. Thus we
+  0
+
+may assume that A \ H ¤ 1. Since H D hB 0 ; .B 0/y ; B \ B y i 6 B.B 0 /y D hwiB ,
+we have A \ H 6 A \ hwiB D hwi. But hwi has order p , so
+
+                                      A \ H D hwi:
+
+We further have jhwiB W H j D jhwiB W Bj D p , so H E hwiB . There-
+fore hwiB D HB is the (normal) product of the subgroups H and B , both of
+class at most two and of index p in hwiB . Hence, by Lemma 1, we have
+j.hwiB/0 j  pjH 0 B 0 j. But H 0 6 B 0 , so we conclude
+
+                                   j.hwiB/0 j  pjB 0 j:
+
+   If .B 0 /x D B 0 then x 2 NG .B 0 /, so x normalises CG .B 0 / D B , which is ruled
+out. Thus B 0 is a proper subgroup of B 0 .B 0 /x . Now B 0 .B 0 /x 6 .hwiB/0 .D .BB x /0 /
+and, from above, j.hwiB/0 j  pjB 0 j, so, by comparison of orders, we have
+
+                                  .hwiB/0 D B 0 .B 0 /x :
+
+Hence CG ..hwiB/0 / D CG .B 0 .B 0 /x / D CG .B 0 / \ CG ..B 0 /x / D B \ B x .
+But .hwiB/0 E hw; xiB , so B \ B x E hw; xiB . Since both B and B x have index
+p in hwiB , we have B 0 6 B \ B x . Thus if B \ B x E G , then .B 0 /G 6 B , which
+has already been have ruled out. Therefore we may assume that B \ B x 6E G , so
+hw; xiB D NG .B \ B x /.
+8                                     B. McCann
+
+     We have B y 6 hw; xiB D NG .B \ B x / and, since .B 0 /y 66 B , we also have
+.B 0 /y 66 B \ B x . Hence B y .B \ B x /=.B \ B x / is a non-abelian group. But, since
+jB W B \ B x j D jBB x W B x j D jhwiB W B x j D p , we have
+
+         jhw; xiB W B \ B x j D jhw; xiB W BjjB W B \ B x j D p 2 p D p 3 :
+
+Therefore, since B y .B \ B x /=.B \ B x / is non-abelian, we have by comparison
+of orders:
+                    B y .B \ B x /=.B \ B x / D hw; xiB=.B \ B x /;
+
+or, equivalently:
+                              hw; xiB D B y .B \ B x /:
+
+   Now .hwiB/0 D B 0 Œhwi; B and, from above, .hwiB/0 D B 0 .B 0 /x . Hence
+if B 6 CG .Œhwi; B/ then B centralises .hwiB/0 and, in particular, one gets
+B 6 CG ..B 0 /x / D B x , which is ruled out. Thus B 66 CG .Œhwi; B/. But we
+have Œhwi; B D Œhwi; AB D Œhwi; G E G and B \ B x D CG ..hwiB/0/ 6
+CG .Œhwi; B/ so, by normality, .B \ B x /G 6 CG .Œhwi; B/. It then follows that
+B 66 .B \ B x /G .
+   We now let
+                                  T D .B \ B x /G :
+
+Then T 6 hw; xiB but, since B 66 T , we have T ¤ hw xiB . Now,
+
+                    hw; xiB=.B \ B x / D B y .B \ B x /=.B \ B x /
+
+is a non-abelian group of order p 3 , so Z.hw; xiB=.B \ B x // Š Cp . In addition
+jhwiB=.B \ B x /j D jhw; xi.B \ B x /=.B \ B x /j D p 2 . Hence, by comparison of
+orders:
+
+      Z.hw; xiB=.B \ B x // D hwiB=.B \ B x / \ hw; xi.B \ B x /=.B \ B x /
+                              D hwi.B \ B x /=.B \ B x /.Š Cp /:
+
+Now B \ B x 6E G , so B \ B x is a proper subgroup of T (D .B \ B x /G ). Thus,
+by normality,
+                     1 ¤ T =.B \ B x / \ Z.hw; xiB=.B \ B x //;
+
+so:
+                       hwi.B \ B x /=.B \ B x / 6 T =.B \ B x /:
+        Product of a subgroup of class two and an abelian subgroup of order p 3       9
+
+    Since B 66 T we see, by comparison of orders, that B \ T D B \ B x .
+Thus BT =T Š B=.B \T / Š B=.B \B x / Š Cp . We then also have .BT =T /yT D
+B y T =T Š Cp . Hence if T D hwi.B \ B x /, then jhw; xiB W T j D p 2 , so B y T
+is a proper subgroup of hw; xiB . But hw; xiB D B y .B \ B x / 6 B y T and a
+contradiction ensues. Therefore hwi.B \ B x / is a proper subgroup of T and,
+since T ¤ hw; xiB , we conclude that jhw; xiB W T j D p . In particular we see
+that jG W T j D p 2 .
+    Since w 2 T D .B \ B x /G 6 CG .Œhwi; B/ 6 CG .Œhwi; B \ B x , we see that
+hwi.B \ B x / centralises Œhwi; B \ B x . We further have .B \ B x /0 6 B 0 \ .B 0 /x ,
+which is centralised by BB x D hwiB so, in particular, hwi.B \ B x / centralises
+.B \ B x /0 . Hence
+                    .hwi.B \ B x //0 D .B \ B x /0 Œhwi; B \ B x 
+                                      6 Z.hwi.B \ B x //:
+Thus hwi.B \ B x / has class at most two. Now hwi.B \ B x /=.B \ B x / Š Cp ,
+so hwi.B \ B x / is a (normal) subgroup of index p in T . Thus, letting
+                                B2 D hwi.B \ B x /;
+we have B20 6 Z.B2 / and, since T D .B \ B x /G D .hwi.B \ B x //G D B2G ,
+we conclude that jB2G W B2 j D p and jG W B2G j D p 2 , as desired.    
+
+   Corollary 6. Let the finite p -group G D AB be the product of an abelian
+subgroup A of order p 3 and a subgroup B of class two. Then G .3/ D 1.
+
+    Proof. If A \ B ¤ 1 then jG W Bj  p 2 , and the result follows from
+Corollary 2. If A \ B D 1 then, by Theorem 5, either G D AB1 where .B10 /G
+is abelian and the result follows from Lemma 3, or G has a subgroup B2 , of class
+at most two, such that jB2G W B2 j D p and jG W B2G j D p 2 . In the latter case
+B2 E B2G and, letting y 2 GnNG .B2 /, we see that B2G D B2 B2y is the normal
+product of two subgroups of class at most two and index p . Thus Lemma 1 applies
+and we have .B2G /.2/ D 1. But jG W B2G j D p 2 so G=B2G is abelian and we
+conclude that G .3/ D 1.                                                       
+   The following elementary example shows that G will not necessarily have
+derived length three if the factor A of order p 3 , as in Corollary 6, is non-abelian.
+We let H be be a p -group of class two and let K be a non-abelian p -group of
+order p 3 . We then let G D H wrK be the regular wreath product of H by K .
+Since the regular wreath product of two groups of derived length two has derived
+length four, G is thus a p -group of derived length four that is the product of the
+base group H K , which has class two, and K which has order p 3 and is non-abelian.
+10                                      B. McCann
+
+                                       References
+
+[1] A. Ballester-Bolinches – R. Esteban-Romero – M. Asaad, Products of finite
+    groups, de Gruyter Expositions in Mathematics, 53, Walter de Gruyter, Berlin, 2010.
+[2] J. Cossey – S. Stonehewer, On the derived length of finite dinilpotent groups, Bull.
+    London Math. Soc. 30 (1998), pp. 247–250.
+[3] N. Itô, Über das Produkt von zwei abelschen Gruppen, Math. Z. 63 (1955), pp. 400–
+    401.
+[4] E. Jabara, A note on finite products of nilpotent groups, Ricerche di Mat. 54 (2005),
+    pp. 205–209.
+[5] E. Jabara, A note on a class of factorized p-groups, Czechoslovak Math. J. 55 (2005),
+    pp. 993–996.
+[6] O. H. Kegel, On the solvability of some factorized linear groups, Illinois J. Math. 9
+    (1965), pp. 535–547.
+[7] M. Morigi, A Note on Factorized (Finite) p -Groups, Rend. Sem. Mat. Univ. Padova 98
+    (1997), pp. 101-105.
+[8] W. R. Scott, Group theory, Prentice-Hall, Englewood Cliffs, N.J., 1964.
+
+
+     Manoscritto pervenuto in redazione il 21 luglio 2014.
+

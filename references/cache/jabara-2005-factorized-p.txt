@@ -1,0 +1,202 @@
+                       Czechoslovak Mathematical Journal
+
+
+
+
+Enrico Jabara
+A note on a class of factorized p-groups
+
+
+Czechoslovak Mathematical Journal, Vol. 55 (2005), No. 4, 993–996
+
+Persistent URL: http://dml.cz/dmlcz/128040
+
+
+
+
+Terms of use:
+© Institute of Mathematics AS CR, 2005
+
+Institute of Mathematics of the Czech Academy of Sciences provides access to digitized documents
+strictly for personal use. Each copy of any part of this document must contain these Terms of use.
+
+
+                    This document has been digitized, optimized for electronic delivery and
+                    stamped with digital signature within the project DML-CZ: The Czech Digital
+                    Mathematics Library http://dml.cz
+              Czechoslovak Mathematical Journal, 55 (130) (2005), 993–996
+
+
+
+
+             A NOTE ON A CLASS OF FACTORIZED p-GROUPS
+
+                                      
+                                                  , Venezia
+
+                              (Received March 14, 2003)
+
+
+
+  Abstract. In this note we study finite p-groups G = AB admitting a factorization by an
+Abelian subgroup A and a subgroup B. As a consequence of our results we prove that if
+B contains an Abelian subgroup of index pn−1 then G has derived length at most 2n.
+  Keywords: factorizable groups, products of subgroups, p-groups
+  MSC 2000 : 20D40, 20D15
+
+
+
+
+                                  1. Introduction
+
+   A group G is called (properly) factorizable if it contains two (proper) subgroups A
+and B such that G = AB, namely G = {ab | a ∈ A, b ∈ B}. A classical problem in
+the theory of factorizable groups is to determine how the structure of the factors A
+and B determines that of the whole group G. If, for example, A and B are finite
+and nilpotent, a well-known result by Wielandt and Kegel (see [1, Theorem 2.4.3])
+states that such a group is solvable. Several examples show that the Wielandt-Kegel
+theorem cannot be extended to infinite groups; indeed, a more satisfactory result on
+factorizable groups is Itô’s theorem (see [1, Theorem 2.1.1]): if A and B are Abelian
+then G is metabelian.
+   In the light of the previous and several other results the following conjecture has
+been stated:
+   Conjecture. Let G = AB where A and B are finite and nilpotent of class, α and
+β, respectively. Then, there exists a function f depending only on α and β such that
+the derived length of G is bounded by f (α, β).
+   By Itô’s theorem f (1, 1) = 2; moreover it has been conjectured by some authors
+that f (α, β) = α + β. This conjecture has been disproved by some examples con-
+structed by Cossey and Stonehewer in [2].
+
+                                                                                    993
+   In [5] Pennington has proved that the conjecture holds whenever A and B have
+coprime orders, and in fact f (α, β) = α + β (see [1, Theorem 2.5.3]). As a conse-
+quence, it is enough to consider p-groups in order to bound the derived length of G.
+Recently Morigi [4] and Mann [3] show that if G = AB is a p-group, A Abelian and
+|B 0 | = pm , then the derived length of G is bounded by a function of m (m + 2 and
+2·log2 (m+2)+3, respectively). In this paper we continue the study of finite p-groups
+with a factorization where one of the factors is Abelian. In particular we study the
+case in which B has an Abelian subgroup of small index (in a certain sense, a dual of
+the situation considered in [4] and [3]). Then we define, for every natural number n,
+the class An of finite p-groups as follows. Let A1 be the class of Abelian p-groups,
+and B ∈ An if and only if for every principal series
+
+                   {1} = K0 < K1 < . . . < Kr = B        (|B| = pr )
+
+there exists an Abelian term Ki with B/Ki ∈ An−1 .
+  We will prove:
+
+  Theorem. If G = AB is a finite p-group, where A is Abelian and B ∈ An , then
+G has derived length at most 2n.
+
+  Corollary. Let G = AB be a finite p-group. If A is Abelian and B contains an
+Abelian subgroup of index pn−1 , then G has derived length at most 2n.
+
+
+                    2. Notations and preliminary results
+
+  All groups considered will be finite p-groups where p is a fixed prime number; if
+B is a group and {1} = K0 < K1 < . . . < Kr = B is a principal series for B, we
+shall denote by K∗ the largest Abelian term of the series.
+  The rest of the notation will be standard (see, for example, [1]).
+  It is clear that, in order to prove B ∈ An , it suffices to show that, for every
+principal series of B, B/K∗ ∈ An−1 .
+  The following lemma from [4] is very useful.
+
+  Lemma 1. Let {1} 6= G = AB where A is Abelian. Then AG 6= {1} or BG 6= {1}.
+  
+           ([4]). Let ab be a nontrivial element of Z(G), a ∈ A, b ∈ B. Without
+loss of generality we may assume a 6= 1 6= b since otherwise the result is trivial.
+Then for every x ∈ A we have 1 = [ab, x] = [a, x]b [b, x] = [b, x] and then [A, b] = 1.
+Therefore hbiG = hbiAB = hbiB ⩽ B is a nontrivial normal subgroup of G contained
+in B.                                                                                
+
+994
+  We will also use the following two observations:
+
+  Lemma 2. The class An is closed under homomorphic images.
+
+  Lemma 3. If B contains a subgroup E of index pk such that E ∈ An , then
+B ∈ An+k .
+  
+            . We argue by induction on k.
+   I) Let k = 1 and 1 = K0 < K1 < . . . < Kr = B be a principal series of B; it
+suffices to show that B/K∗ ∈ An .
+   We can distinguish three cases:
+   a) K∗+1 ⩽ E. We prove this point arguing by induction on r.
+   If r = 1 then |B| = p and the initial step is trivial. Since K∗+1 is not Abelian and
+E ∈ An it is clear that n > 1. Since E ∈ An it follows that E/K∗ ∈ An−1 and in
+B = B/K∗ the subgroup E has index p. Thus, by induction on r, B ∈ An .
+   b) K∗ 6⩽ E. Since E is a maximal subgroup of B we have B = EK∗ and so
+B/K∗ = EK∗ /K∗ ∼    = E/(E ∩ K∗ ) ∈ An .
+   c) K∗ ⩽ E and K∗+1 6⩽ E. Then K∗+1 = K∗ hti where t 6∈ E and tp ∈ K∗ ; in
+B = B/K∗ , t̄ ∈ Z(B) and t̄p = 1 so that B = Eht̄i = E × ht̄i. Since E ∈ An it is
+clear that B ∈ An .
+   II) Suppose k > 1 and x ∈ NB (E), x 6∈ E, xp ∈ E. Let E1 = Ehxi; by induction
+it follows that E1 ∈ An+1 . Since |B : E1 | = pk−1 the induction hypothesis gives
+B ∈ A(n+1)+(k−1) = An+k .                                                             
+
+  It follows from the previous lemma that if B0 is an Abelian group and hbi a cyclic
+group of prime order p, then the standard wreath product B = B0 o hbi belongs to
+the class A2 . Note that the nilpotency class of B is not bounded and that |B 0 | is not
+bounded, not even as a function of p.
+  There are groups in A2 with no Abelian maximal subgroup, as the following ex-
+ample shows:
+                                     4          2            2
+                       B = hx, y | xp = 1 = y p , xy = x1+p i.
+
+
+
+                                   3. The proofs
+
+  In this section we prove the results stated in the introduction.
+  
+           of the Theorem. We argue by induction on n, observing that the first
+induction step follows from Itô’s theorem. We can distinguish two cases.
+  I) X = A ∩ B = {1}.
+
+                                                                                    995
+   Let {1} = G0 < G1 < . . . < Gt = G be a principal series of G, built up as
+follows: if in G = G/Gi there exists an element a ∈ Z(G) ∩ AG of order p, then
+we define Gi+1 = ha, Gi i. Otherwise Lemma 1 shows that B G 6= {1} and we define
+Gi+1 = hb, Gi i, where b̄ is some element of order p of Z(G) ∩ B G .
+   Since for every i ∈ {1, 2, . . . , t}, we have A ∩ B = {1} in G = G/Gi , each Gi is
+factorized, namely Gi = (A ∩ Gi )(B ∩ Gi ).
+   Let G? be the maximal element of the above series such that B ∩ G? is Abelian.
+Then G? = (A ∩ G? )(B ∩ G? ) is metabelian by Itô’s theorem. Since in the principal
+series Ki = B ∩ Gi of B, we have K∗ = B ∩ G? , then in G = G/G? we have
+B = BG? /G? ∼  = B/(B ∩ G? ) = B/K∗ ∈ An−1 (clearly A is Abelian). The induction
+hypothesis implies that G has derived length at most 2(n − 1). Therefore G has
+derived length at most 2n.
+   II) X = A ∩ B 6= {1}.
+   Then X G = X AB = X B ⩽ B. Therefore X G is factorized and in G = G/X G
+we have A ∩ B = {1}. Let {1} = G0 < G1 < . . . < Gk = X G be any principal
+series with Gi C G for all i ∈ {1, 2, . . . , k}. Such a series can be extended to a
+principal series of G by constructing a principal series of G/X G as in the case of
+A ∩ B = {1}. With the same notation as before, if G? contains X G , then G? is
+factorized and the conclusion follows. Otherwise, if G? < X G ⩽ B, then G? is an
+Abelian subgroup of B and, since the term G?+1 ⩽ X G ⩽ B is nonabelian, we must
+have B/G? ∈ An−1 . Therefore G/G? has derived length at most 2(n − 1) and G has
+derived length at most 1 + 2(n − 1) < 2n.                                           
+  
+             of the Corollary.   It is an easy consequence of the Theorem and of our
+Lemma 3.                                                                          
+
+
+                                       References
+[1] B. Amberg, S. Franciosi and F. de Giovanni: Products of Groups. Clarendon Press,
+    Oxford, 1992.
+[2] J. Cossey and S. Stonehewer: On the derived length of finite dinilpotent groups. Bull.
+    London Math. Soc. 30 (1998), 247–250.
+[3] A. Mann: The derived length of p-groups. J. Algebra 224 (2000), 263–267.
+[4] M. Morigi: A note on factorized (finite) groups. Rend. Sem. Mat. Padova 98 (1997),
+    101–105.
+[5] E. A. Pennington: On products of finite nilpotent groups. Math. Z. 134 (1973), 81–83.
+
+   Author’s address: Università di Ca’ Foscari, Dipartimento di Matematica Applicata,
+Dorsoduro 3825/E, 30123 Venezia, Italy; e-mail: jabara@unive.it.
+
+
+
+
+996
+

@@ -2069,3 +2069,19 @@ tables verify474 subgroups and307,619,161 associativity triples.
 The46-file audit replays all20 pilot/extension table controls and
 passes. Combined coverage is2,789 groups and1,153,563 subgroups.
 The general question remains unresolved and the candidate count37.
+
+
+## 2026-09-12T00:32:18.499610+00:00 — 18.120 partial and bounded search frozen
+
+The elementary abelian-normal-closure criterion settles class at most four,
+even with overlapping factors. The pilot and order-256 extension cover
+59,349 groups: 58,946 by the theorem and 403 by subgroup enumeration.
+All 28,155 tested disjoint factorizations in higher class pass. Six table
+controls reconstruct 2,791 subgroups and verify 812,589,714 associativity
+triples. All child processes, runners and the 37-file replay audit actually
+exit zero with clean completion evidence. Root-partition exploration
+through UT_6 adds no obstruction. General problem and priority of the
+elementary partial remain unresolved; complete candidate count stays 37.
+
+The n=7 snapshot at 00:27:52 has 24,190,000 checked nodes, six live
+workers and no completed shard. No n=7 conclusion is claimed.
