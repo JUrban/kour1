@@ -152,3 +152,8 @@ The restricted direct power of A5 has attained exponent log(60)/log(4), between 
 ## 12 September, 20:16 UTC: p-Jordan exponent permanence
 
 The characteristic construction inside the p-prime radical works without solubility. It preserves an admissible exponent, changing J to J cubed. Hence finite-index subgroups and normal subgroups with bounded finite subgroup orders in the quotient have exactly the same admissible exponents as their ambient groups. Quotienting by a finite normal p-subgroup also preserves the exponent and attainment. A classical infinite extraspecial example excludes arbitrary finite central kernels. The source comparison reads Chen--Shramov 2024 Lemma 2.8, whose existing bound multiplies the exponent by the finite quotient bound. No priority is established, and unrestricted 21.121(b) remains unresolved. See `research/21.121-permanence-proof.md` and its report.
+
+
+## 12 September, 20:25 UTC: arbitrary finite kernels with a weak bound
+
+The finite-kernel permanence statement extends to every finite normal kernel when the ambient group is generalized p-Jordan. In particular, within the p-Jordan class all finite normal quotients preserve the entire set of admissible exponents and attainment. The proof centralizes the finite kernel in the preimage of a normal abelian p-prime subgroup and applies the soluble estimate to the resulting class-two subgroup. A Frattini--Schur--Zassenhaus argument also proves that the generalized constant passes to finite normal quotients. No full exponent-three result or new complete candidate is claimed. See `research/21.121-finite-kernels.md`.
