@@ -1,0 +1,21 @@
+{
+  "shard": 6,
+  "shards": 8,
+  "command": [
+    "bin/gap",
+    "-o",
+    "3g",
+    "-c",
+    "WordShard2199:=6;WordShards2199:=8;",
+    "scripts/search_21_99_words.g"
+  ],
+  "pid": 259324,
+  "started_utc": "2026-09-12T12:14:45.027626+00:00",
+  "actual_returncode": 0,
+  "ended_utc": "2026-09-12T12:19:09.002937+00:00",
+  "stdout_sha256": "8709ab4629ebb204e19e8fa02f501b4350f1c353d16faf1cd8b37bd50cf1d4e2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "certificate_sha256": "a6bd8a7e3c850772b12171ca9a5777a0b586c596a08f3a1ea49d4f1ac6769565",
+  "certificate_bytes": 134576966,
+  "sentinel_seen": true
+}

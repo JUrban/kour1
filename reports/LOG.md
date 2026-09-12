@@ -2714,3 +2714,15 @@ The initial exporter exposed repeated characters from IrrConlon and an order-dep
 Navarro2023 Section6 gives the prior question and the known linear-correspondent direction, which is credited. This is a bounded negative search with positive certificates, not a full solution. New complete candidates44, outside reviews0. No external messages or pushes.
 
 The n=7 progress snapshot at 2026-09-12T12:00:30.498720+00:00 has five shard pass markers and one live worker (77400). The aggregate remains pending.
+
+## 2026-09-12T12:29:21.787883+00:00: 21.99 degree47 with complete independent word certificates
+
+The previous turn was progress: commit519fe8a completed the21.100 packet. Current work revalidated the live n=7 process and extended21.99 from the initial degree20 screen. A Sylow-subgroup proof covers every prime-power degree; eight completed GAP workers supply generator-word witnesses for all496,284 catalogue actions in the remaining degrees through47. No action is unresolved.
+
+The independent proof evaluates18,404,612 witnesses,64,329,817 circuit products and2,484,321,676 point-composition entries. The485-group pilot passed (8a2046 and a37a2f). All eight producer exits were collected, and the controller returned0 (2e091f). The full raw verifier returned0 (dc4451); all archives verified losslessly (ef1090), and the independent archived proof returned0 (00762f). Five corruption types were rejected separately in each archive shard. The116-file audit with complete archive replay, exact pilot regeneration and matrix replay returned0 (cf3ae6), with empty stderr and the required marker.
+
+The 1,076,716,159-byte raw certificates are preserved locally; the committed deterministic archives contain224,198,201 bytes and reproduce the producer hashes. Catalogue completeness remains imported, while every supplied action is checked only by permutation word evaluation. Prime-power degree32 is handled theoretically, not by a missing catalogue.
+
+Recorded the semiregular-normal-subgroup lifting lemma, its nilpotent consequence and product reductions with priority unclaimed. All six pages of Muller2026 were read, with two pages viewed. An exact F8 control verifies the printed source identities and an explicit witness fixing two cosets at the stronger derangement question's obstructed pair. Full Steinberg-group identification is not independently claimed. A memory-limited Factorization probe is preserved and excluded. General21.99 remains unresolved; new complete candidates44, outside reviews0.
+
+n=7 snapshot 2026-09-12T12:27:50.028020+00:00: five pass markers, one verified-live PID [77400], worker4 checkpoint 6900000 nodes. The aggregate is pending. No external messages or Git pushes.

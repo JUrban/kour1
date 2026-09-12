@@ -1,0 +1,9 @@
+{
+  "command": "bin/gap -c 'g:=TransitiveGroup(24,24998);; c:=Representative(First(ConjugacyClasses(g),cl->Number([1..24],i->i^Representative(cl)=i)=0));; w:=Factorization(g,c);; Print(\"WORD \",Length(w),\" \",ExtRepOfObj(w),\" \",MappedWord(w,GeneratorsOfGroup(g))=c,\"\\n\"); QUIT_GAP(0);'",
+  "actual_returncode": 0,
+  "tool_launch_chunk": "978cc3",
+  "tool_completion_chunk": "184036",
+  "combined_tool_output": "Error, reached the pre-set memory limit\n(change it with the -o command line option)\n",
+  "accepted": false,
+  "scope": "Exploratory probe, no split stdout/stderr capture; no successful word or certificate. The wrapper's configured workspace cap was 4 GiB."
+}

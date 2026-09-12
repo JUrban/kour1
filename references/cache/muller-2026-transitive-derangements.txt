@@ -1,0 +1,282 @@
+Arch. Math. 126 (2026), 551–556
+c 2026 The Author(s)
+
+0003-889X/26/060551-6
+published online April 20, 2026
+https://doi.org/10.1007/s00013-026-02240-3
+
+Archiv der Mathematik
+
+On transitive sets of derangements in primitive groups
+Peter Müller
+
+Abstract. We construct a primitive permutation action of the Steinberg
+triality group 3 D4 (2) of degree 4,064,256 and show that there are distinct
+points α, β such that there is no derangement g ∈ 3 D4 (2) with αg = β.
+This answers a question by John G. Thompson (Problem 8.75 in the
+Kourovka Notebook) in the negative.
+Mathematics Subject Classification. 20B15.
+Keywords. Primitive permutation groups, Derangements, Steinberg triality group.
+
+1. Introduction. Beginning with the 8th edition in 1982, the Kourovka Notebook [9], which collects unsolved problems in group theory, has included the following question—attributed to John G. Thompson and designated “A known
+problem”—as Problem 8.75:
+Question 1.1. Suppose G is a finite primitive permutation group on Ω, and α,
+β are distinct points of Ω. Does there exist an element g ∈ G such that αg = β
+and g fixes no point of Ω?
+A potential interest of this is that if the answer were aﬃrmative with a
+proof not using character theory, then Frobenius’ theorem that the kernel of a
+ﬁnite Frobenius group is a subgroup would admit a proof devoid of character
+theory. Such a proof still does not exist, despite some progress like [4] and
+[14]. See the argument in [8, Assertion 2] (which relies on [4]) how Frobenius’
+theorem would follow from a positive answer of Question 1.1.
+We refer to the survey [2] for more open problems (like this one in [2,
+Remark 1.1.3(iii)]) and results about derangements in permutation groups.
+For most Aschbacher–ONan–Scott types of primitive groups the answer
+to Question 1.1 is trivially yes in view of the presence of regular subgroups.
+As we considered it unlikely to ﬁnd a counterexample for primitive groups of
+
+552
+
+P. Müller
+
+Arch. Math.
+
+product type (Class III in [11]), our search focused on the almost simple action
+of groups and eventually produced a counterexample:
+Theorem 1.2. The Steinberg triality group G = 3 D4 (2) of order 211,341,312 =
+212 ·34 ·72 ·13 admits a primitive permutation action on a set Ω of size 4,064,256
+with the following property: There exist distinct elements α, β ∈ Ω such that
+every g ∈ G with αg = β has at least one fixed point in Ω.
+This counterexample is the only one we know of. Let soc(G) be the socle of
+an almost simple group G. There are 584 nonabelian simple groups S of order
+less than or equal 20,158,709,760. A brute force computation using Magma [1],
+where S = soc(G) is one of these simple groups, resulted in the only example
+from Theorem 1.2. (The cases S = PSL(2, q) were only checked for prime
+powers q ≤ 1789. But this case can be ruled out anyway, see Remark (g).) We
+also used the data base of primitive permutation groups in Magma [1] to check
+that there is no counterexample of degree less than 8192.
+In contrast to the demanding search for a counterexample, the proof of
+Theorem 1.2 will require little computation. We will work with 3 D4 (2) as a
+subgroup of GL8 (F8 ). Except for some general group theoretic arguments and
+the known fact that 3 D4 (2) has a maximal subgroup isomorphic to C13  C4 ,
+the veriﬁcation of Theorem 1.2 is reduced to check some identities for speciﬁc
+matrices from GL8 (F8 ).
+2. Proof of Theorem 1.2. The proof will be based on the following lemma.
+Lemma 2.1. The Steinberg triality group G = 3 D4 (2) contains elements s, x,
+and y with the following properties:
+(1) x, y, and yx are conjugate in G,
+(2) xy = x−1 ,
+(3) x2 = y 2 ,
+(4) s has order 13,
+(5) sy = s8 ,
+(6) x ∈
+/ s, y,
+(7) (hx)13 = 1 for every h ∈ s, y\y.
+Before proving this lemma, we show how Theorem 1.2 follows from it. By
+(4) and (5), y acts as an automorphism of order 4 on the Sylow 13-subgroup
+S = s. According to [10], G has a maximal subgroup isomorphic to C13  C4 .
+Thus y has order 4, and G acts primitively on the |G|/52 = 4,064,256 right
+cosets of H = s, y = s  y in G.
+Note that H = Hx by (6). We claim that every g ∈ Hx ﬁxes a right coset
+of H. Write g = hx for some h ∈ H. We need to show that hx is contained in
+some conjugate H z of H, for then Hzg = Hzhx = Hz.
+If h ∈ s, y\y, then hx lies in a conjugate of S < H by (7).
+It remains to look at the case h ∈ y, that is, hx ∈ {x, yx, y 2 x, y −1 x}. By
+(1), x and yx are conjugate to y ∈ H. From (2), we get y −1 x = x−1 y −1 =
+(yx)−1 , so y −1 x is conjugate to y −1 ∈ H by (1). Finally, y 2 x = x3 by (3), so
+y 2 x is conjugate to y 3 ∈ H by (1).
+
+Vol. 126 (2026)
+
+On transitive sets of derangements in primitive groups
+
+553
+
+2.1. Proof of Lemma 2.1. We work with a representation of G = 3 D4 (2) as a
+subgroup of GL8 (F8 ) as given in [7, Section 4.2]: Pick ω ∈ F8 with ω 3 +ω +1 =
+0. Note that ω has multiplicative order 7. Let Ei,j be the 8 × 8 matrix over F8
+with 1 in the ith row and jth column and 0 elsewhere. Furthermore, let E be
+the 8 × 8 identity matrix. Using the notation from [7], we set
+xR (1) = E + E1,2 + E3,4 + E3,5 + E3,6 + E4,6 + E5,6 + E7,8 ,
+n = E1,3 + E2,1 + E3,7 + E4,5 + E5,4 + E6,2 + E7,8 + E8,6 ,
+hR (ω) = diagonal matrix with diagonal (ω 4 , ω 3 , ω 3 , ω, ω 6 , ω 4 , ω 4 , ω 3 ).
+Then G = a, b, where a = xR (1) · n and b = hR (ω).
+Essentially the same generators a and b are given in [15, Abstract group
+211341312.a], the only diﬀerence is that the fourth and ﬁfth rows and columns
+are switched there.
+With these matrices a and b, set
+x = b · (a2 · b2 · a)2 · b−2 · a · b−2 ,
+t = a−3 · b · (b · a)2 · b−2 · a2 · b,
+y = xt ,
+s = a · ab ,
+d = x · s · y · s · a · y · s2 · t.
+With these settings, the following SageMath [16] code veriﬁes all the claims
+instantly (in less than a second). The comments indicate the respective items
+from Lemma 2.1. If one wants to conﬁrm that the matrices a and b are correctly
+copied (and correctly given in [7]), one may uncomment the last line. Note that
+except for the last line, the code merely does simple matrix operations which
+in principle could be done by hand.
+F.<w> = GF(8, modulus=[1, 1, 0, 1])
+e = matrix.identity(F, 8)
+xr1_ij = [(1, 2), (3, 4), (3, 5), (3, 6), (4, 6), (5, 6), (7, 8)]
+n_ij = [(1, 3), (2, 1), (3, 7), (4, 5), (5, 4), (6, 2), (7, 8), (8, 6)]
+xr1 = e + matrix(F, 8, {(i-1, j-1): 1 for i, j in xr1_ij})
+n = matrix(F, 8, {(i-1, j-1): 1 for i, j in n_ij})
+a = xr1 * n
+b = matrix.diagonal(F, [wˆz for z in [4, 3, 3, 1, 6, 4, 4, 3]])
+x = b * (aˆ2 * bˆ2 * a)ˆ2 * bˆ-2 * a * bˆ-2
+t = aˆ-3 * b * (b * a)ˆ2 * bˆ-2 * aˆ2 * b
+y = tˆ-1 * x * t
+# one part of (1)
+s = a * bˆ-1 * a * b
+d = x * s * y * s * a * y * sˆ2 * t
+S = [sˆi for i in range(13)]
+Y = [yˆi for i in range(4)]
+H = [u * v for u in S for v in Y]
+assert dˆ-1 * x * d == y * x
+# other part of (1)
+assert yˆ-1 * x * y == xˆ-1
+# (2)
+assert xˆ2 == yˆ2
+# (3)
+assert s != e and sˆ13 == e
+# (4)
+assert yˆ-1 * s * y == sˆ8
+# (5)
+
+554
+
+P. Müller
+
+Arch. Math.
+
+assert x not in H
+# (6)
+assert all(h in Y or (h * x)ˆ13 == e for h in H) # (7)
+print(’All claims verified’)
+# Uncomment to optionally check that a and b indeed generate 3D(4,2):
+# assert MatrixGroup([a, b]).structure_description() == ’3D(4,2)’
+
+This SageMath code is provided at [12], where it can be downloaded and run
+online.
+3. Remarks.
+(a) If we replace G by its automorphism group 3 D4 (2).3, then the primitive
+action of degree 4,064,256 has a transitive set of derangements, so it is
+not a counterexample to Question 1.1.
+(b) Let H be a subgroup of a ﬁnite group G. Then the inclusion Hx ⊆
+∪g∈G H g holds for x ∈ G if and only if HxH ⊆ ∪g∈G H g . For G and a
+point stabilizer H as in Theorem 1.2, there are precisely 78,366 double
+cosets HxH diﬀerent from H, and it turns out that exactly one of these
+double cosets accounts for the counterexample!
+(c) In hindsight, this kind of uniqueness of the counterexample helped to derive some of the structural properties in Lemma 2.1. For instance, if HxH
+gives a counterexample, then so does Hx−1 H, thus HxH = Hx−1 H
+by uniqueness. So x−1 = h1 xh2 for hi ∈ H. This gives (xh1 )−1 =
+2
+(xh1 )(h−1
+1 h2 ). So upon replacing x with xh1 , we may assume x ∈ H.
+2 7
+Now x has order = 13, for otherwise x = (x ) ∈ H. Thus x has order
+2 or 4. One can rule out the former case. Again, let S be the Sylow 13subgroup of H. The normalizer of S in the automorphism group 3 D4 (2).3
+of G has the form S  σ with σ of order 12. Clearly, σ normalizes H,
+and we may assume that σ 6 = x2 . Here σ 3 plays the role of y in Lemma
+2.1. From Hxσ H = HxH, we get further properties from Lemma 2.1.
+(d) I have tried to extend the counterexample to the bigger twisted triality
+groups G = 3 D4 (q) for q = 3 and q = 4 and the maximal subgroup
+H = Cq4 −q2 +1  C4 . Here, G is far too large for it to be feasible to
+compute representatives x of the double cosets of H in G. I was only
+able to verify that the elements x of order 4 with x2 ∈ H do not produce
+counterexamples (unlike in the case q = 2).
+(e) Initially, I had tried to explore a vast generalization of Question 1.1. The
+primitivity of a group can not be read oﬀ from the permutation character, see the negative answer [5] by Guralnick and Saxl to a question of
+Wielandt. However, by a result of Higman (see [6] or [3, Theorem 3.2A]),
+primitivity is encoded in the orbital graphs: The group G is primitive if
+and only if each non-diagonal orbital graph is connected.
+Now there was some experimental evidence that the following generalization of Question 1.1 could hold: Let G act transitively on the ﬁnite set
+Ω. Pick distinct α, β in Ω. If the orbital graph which contains the edge
+(α, β) is connected, then there is a derangement g ∈ G with αg = β. The
+smallest counterexample which I found is G = PSL3 (4) acting on 4032
+points (so the point stabilizer has order 5).
+
+Vol. 126 (2026)
+
+On transitive sets of derangements in primitive groups
+
+555
+
+(f) I have some evidence (and partial results) that the following could hold:
+Let G act transitively on the ﬁnite set Ω, and pick distinct α, β in Ω.
+Then there is an element g ∈ G with αg = β whose number of ﬁxed
+points is diﬀerent from 1. This is now Problem 21.99 in the 21st edition
+(2026) of the Kourovka Notebook [9].
+Applied to a ﬁnite Frobenius permutation group acting on a ﬁnite set
+Ω, this would mean that for any distinct α, β ∈ Ω, there is a unique
+derangement g ∈ G with αg = β. But then Frobenius’ theorem follows
+immediately from a simple counting argument (see e.g. [8, Assertion 1]).
+(g) It would still be interesting to decide for which primitive groups Question
+1.1 has a positive answer. With some eﬀort, one can show that this is the
+case if G is almost simple with socle soc(G) = PSL2 (Fq ). See [13].
+Funding Open Access funding enabled and organized by Projekt DEAL.
+Open Access. This article is licensed under a Creative Commons Attribution 4.0
+International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the
+original author(s) and the source, provide a link to the Creative Commons licence,
+and indicate if changes were made. The images or other third party material in
+this article are included in the article’s Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the article’s
+Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this licence, visit http://creativecommons.
+org/licenses/by/4.0/.
+
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional aﬃliations.
+References
+[1] Bosma, W., Cannon, J., Playoust, C.: The Magma algebra system. I. The user
+language. Computational algebra and number theory (London, 1993). J. Symbolic Comput. 24(3–4), 235–265 (1997)
+[2] Burness, T.C., Giudici, M.: Classical Groups, Derangements and Primes. Austral. Math. Soc. Lect. Ser., 25. Cambridge University Press, Cambridge (2016)
+[3] Dixon, J.D., Mortimer, Permutation Groups. Grad. Texts in Math., 163.
+Springer, New York (1996)
+[4] Flavell, P.: A note on Frobenius groups. J. Algebra 228(1), 367–376 (2000)
+[5] Guralnick, R.M., Saxl, J.: Primitive permutation characters. In: Groups, Combinatorics & Geometry (Durham, 1990), pp. 364–367. London Math. Soc. Lecture
+Note Ser., 165. Cambridge University Press, Cambridge (1992)
+[6] Higman, D.G.: Intersection matrices for finite permutation groups. J. Algebra
+6, 22–42 (1967)
+[7] Howlett, R.B., Rylands, L.J., Taylor, D.E.: Matrix generators for exceptional
+groups of Lie type. J. Symb. Comput. 31(4), 429–445 (2001)
+
+556
+
+P. Müller
+
+Arch. Math.
+
+[8] Kaplan, G., Lev, A.: Transversals in permutation groups and factorisations of
+complete graphs. Bull. Austral. Math. Soc. 65(2), 277–288 (2002)
+[9] Khukhro, E.I., Mazurov, V.D.: Unsolved Problems in Group Theory. The
+Kourovka Notebook. arXiv:1401.0300 (2026)
+[10] Kleidman, P.B.: The maximal subgroups of the Steinberg triality groups 3 D4 (q)
+and of their automorphism groups. J. Algebra 115(1), 182–199 (1988)
+[11] Liebeck, M.W., Praeger, C.E., Saxl, J.: On the O’Nan–Scott theorem for finite
+primitive permutation groups. J. Austral. Math. Soc. Ser. A 44(3), 389–396
+(1988)
+[12] Müller, P.: SageMath Verification Script. https://ypfmde.github.io/dera 3d42.
+html (2026)
+[13] Müller, P.: Transitive Sets of Derangements in Primitive Actions of PSL2 (q).
+arXiv:2512.19500 (2025)
+[14] Tao, T.: A Fourier-Analytic Proof of Frobenius’ Theorem. https://terrytao.
+wordpress.com/2013/05/24/a-fourier-analytic-proof-of-frobeniuss-theorem/
+(2013)
+[15] The LMFDB Collaboration. The L-Functions and Modular Forms Database.
+(2025). https://www.lmfdb.org [Accessed 23 Nov 2025]
+[16] The Sage Developers. SageMath. The Sage Mathematics Software System.
+https://www.sagemath.org (2022)
+
+Peter Müller
+Institute of Mathematics
+University of Würzburg
+Würzburg
+Germany
+e-mail: peter.mueller@uni-wuerzburg.de
+
+Received: 30 November 2025
+Revised: 13 January 2026
+Accepted: 11 February 2026
+
+
