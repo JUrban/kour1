@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bin/gap",
+    "-o",
+    "512m",
+    "scripts/check_17_118_matrices.g"
+  ],
+  "started_at": "2026-09-12T10:33:13.493793+00:00",
+  "finished_at": "2026-09-12T10:33:19.603420+00:00",
+  "actual_returncode": 0,
+  "stdout_sha256": "1b58a885cdef46233dd88304f5d597c1e49714ff727e305735e7b1dcfa91c73d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sentinel": "PASS_17118_MATRICES",
+  "sentinel_seen": true
+}

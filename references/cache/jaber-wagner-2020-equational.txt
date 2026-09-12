@@ -1,0 +1,816 @@
+          ANNALES MATHÉMATIQUES
+
+
+
+
+         BLAISE PASCAL
+Khaled Jaber & Frank O. Wagner
+Largeness and equational probability in groups
+
+Volume 27, no 1 (2020), p. 1-17.
+<http://ambp.centre-mersenne.org/item?id=AMBP_2020__27_1_1_0>
+
+
+
+                      Cet article est mis à disposition selon les termes de la licence
+     Creative Commons attribution 4.0.
+     https://creativecommons.org/licenses/4.0/
+
+     L’accès aux articles de la revue « Annales mathématiques Blaise Pascal »
+     (http://ambp.centre-mersenne.org/ ), implique l’accord avec les conditions
+     générales d’utilisation (http://ambp.centre-mersenne.org/legal/ ).
+
+
+
+         Publication éditée par le laboratoire de mathématiques Blaise Pascal
+               de l’université Clermont Auvergne, UMR 6620 du CNRS
+                              Clermont-Ferrand — France
+
+
+
+
+                                   Publication membre du
+                      Centre Mersenne pour l’édition scientifique ouverte
+                                http://www.centre-mersenne.org/
+Annales mathématiques Blaise Pascal 27, 1-17 (2020)
+
+
+
+
+                   Largeness and equational probability in groups
+
+                                                 Khaled Jaber
+                                               Frank O. Wagner
+
+                                                      Abstract
+
+       We define k-genericity and k-largeness for a subset of a group, and determine the value of k for which
+   a k-large subset of G n is already the whole of G n , for various equationally defined subsets. We link this
+   with the inner measure of the set of solutions of an equation in a group, leading to new results and/or
+   proofs in equational probabilistic group theory.
+
+
+
+1. Introduction
+
+In probabilistic group theory we are interested in what proportion of (tuples of) elements
+of a group have a particular property; if this property is given by an equation, we talk
+about equational probability. In [9] a notion of largeness was introduced for a subset of a
+group, and it was shown that certain equational properties of a group hold everywhere
+as soon as they hold largely. In this paper, we shall introduce a quantitative version of
+largeness, and deduce some results in equational probabilistic group theory.
+   Throughout this paper, G will be a group and µ a left-invariant probability measure on
+some algebra of subsets of G.
+Example 1.1.
+
+      (1) G finite, µ the counting measure.
+
+      (2) G1 a group, µ1 a left-invariant measure on G1 , and G = G1n with the product
+          measure µ = µ1n .
+
+      (3) More generally, G1 a group, G ≤ G1n and µ a left-invariant measure on G.
+
+      (4) G arbitrary and the measure algebra reduced to {∅, G}. While this set-up trivialises
+          the probability statements, the largeness results remain meaningful.
+
+   If X is a measurable subset of G we can interpret µ(X) as the probability that a random
+element of G lies in X. If H is another group, f : G → H is a function and c ∈ H some
+constant, we put µ( f (x) = c) = µ({g ∈ G : f (g) = c}).
+
+The second author was partially supported by the ANR-DFG project AAPG2019 GeoMod.
+Keywords: probabilistic group theory, largeness.
+2020 Mathematics Subject Classification: 20A15, 03C60, 20P99.
+
+
+                                                         1
+K. Jaber & F.O. Wagner
+
+
+Example 1.2. Let G1 be a group, G ≤ G1n a subgroup, ḡ ∈ G1m constants, and w( x̄, ȳ) a
+word in x̄ ȳ and their inverses, with | x̄| = n and | ȳ| = m. Then w( x̄, ḡ) induces a function
+from G to G1 .
+    We shall now list some known results, starting with Frobenius in 1895.
+Fact 1.3. Let G be a finite group.
+
+      • Frobenius 1895 [5] If n divides |G| then the number of solutions of x n = 1 is a
+        multiple of n. In particular, µ(x n = 1) ≥ |Gn | .
+
+      • Miller 1907 [14] If G is non-abelian, then µ(x 2 = 1) ≤ 34 .
+
+      • Laffey 1976 [11] If G is a 3-group not of exponent 3 then µ(x 3 = 1) ≤ 79 .
+
+      • Laffey 1976 [12] If p is prime and divides |G|, but G is not a p-group, then
+                      p
+        µ(x p = 1) ≤ p+1 .
+
+      • Laffey 1979 [13] If G is not a 2-group, then µ(x 4 = 1) ≤ 98 .
+
+      • Iiyori, Yamaki 1991 [8] If n divides |G| and X = {g ∈ G : g n = 1} has cardinality
+        n, then X forms a subgroup of G.
+
+      • Erdős, Turan, 1968 [3] If k(G) is the number of conjugacy classes in G, then
+        µ([x, y] = 1) = k(G)
+                         |G | .
+
+      • Joseph 1977 [10], Gustafson 1973 [6] If G is non-abelian, then µ([x, y] = 1) ≤ 58 .
+
+      • Neumann, 1989 [16] For any real r > 0 there are n1 (r) and n2 (r) such that if
+        µ([x, y] = 1) ≥ r then G contains normal subgroups H ≤ K such that K/H is
+        abelian, |G : K | ≤ n1 (r) and |H| ≤ n2 (r).
+
+      • Barry, MacHale, Ní Shé, 2006 [1] If µ([x, y] = 1) > 31 then G is supersoluble.
+
+      • Heffernan, MacHale, Ní Shé, 2014 [7] If µ([x, y] = 1) > 24
+                                                                7
+                                                                   then G is metabelian.
+        If µ([x, y] = 1) > 675 then G is abelian-by-nilpotent.
+                           83
+
+
+   In Section 2 we shall introduce largeness and prove the main connection between
+largeness and measure, Lemma 2.5, which will be used throughout the rest of the paper.
+Section 3 deals with central elements, or more generally FC and BFC groups. We shall
+treat equations of the form x n = c for arbitrary c in Section 4, recovering Miller’s result
+
+2
+                                                                   Largeness and equational probability
+
+
+for n = 2, and a weaker bound than Laffey for n = 3 (namely 67 ). In Section 5 we
+shall consider commutator equations; while our methods allow us to deal with more
+complicated commutators, they are too general to obtain the bounds from Fact 1.3.
+Section 6 deals with nilpotent groups via linearisation, and the short Section 7 places
+Sherman’s autocommutativity degree in our context.
+Notation. We shall write x y = y −1 xy, x −y = (x −1 )y = y −1 x −1 y and [x, y] = x −1 y −1 x y =
+y −x y = x −1 x y .
+
+2. Largeness and Probability
+
+The following notion of largeness was introduced in [9].
+Definition 2.1. If X ⊆ G, we say that X is k-large in G if the intersection of any k left
+translates of X is non-empty, and X is k-generic in G if k left translates of X cover G. A
+subset X is large if it is k-large for all k; it is generic if it is k-generic for some k.
+    Of course, analogous notions exist for right and two-sided genericity/largeness. Both
+genericity and largeness are notions of prominence, increasing with k for largeness and
+decreasing with k for genericity. Clearly, if X ⊆ G and X is (k-)large/generic, so is any
+left or right translate or superset of X. Largeness and genericity are co-complementary:
+Lemma 2.2. Let X ⊆ G. Then X is 1-large if and only if X , ∅, and X is 1-generic if
+and only if X = G. More generally, X is k-large if and only if G \ X is not k-generic.
+Finally, X is k-generic/large if and only if X ∩ Y , ∅ for all k-large/generic Y ⊆ G.
+Proof. We only show the last assertion. If X is not k-generic/large, then Y := G \ X is
+k-large/generic, and X ∩ Y = ∅. Conversely, if X is k-generic, say G = i<k gi X, and Y
+                                                                       Ð
+is k-large, then
+                   Ù             Ù         Ø          Ù
+               ∅,     giY = G ∩    giY =       gi X ∩    giY
+                      i<k                  i<k         i<k   i<k
+                                                 !
+                      Ø              Ù           Ø                Ø
+                  =         gi X ∩         giY ⊆  (gi X ∩ giY ) =   gi (X ∩ Y ).
+                      i<k            i<k             i<k            i<k
+Thus X ∩ Y , ∅.                                                                                      
+Remark 2.3. If φ : G → H is an epimorphism and X ⊆ G is (k-)large/generic, so is
+φ(X) ⊆ H. Conversely, if Y ⊆ H is (k-)large/generic in H, so is φ−1 [X] in G.
+   In particular, if X ⊆ G×H is (k-)large/generic, so are the projections to each coordinate.
+Conversely, if X ⊆ G and Y ⊆ H are (k-)large, so is X × Y ⊆ G × H; if X is k-generic
+and Y is `-generic, X × Y is k`-generic.
+
+                                                                                                     3
+K. Jaber & F.O. Wagner
+
+
+Lemma 2.4. Suppose X is k`-large in G and H ≤ G is a subgroup of index k. Then
+X ∩ H is `-large in H.
+
+Proof. Let (gi : i < k) be coset representatives of H in G, and consider (h j : j < `) in
+H. By k`-largeness of X in G there is x ∈ i<k, j<` gi h j X. As i<k gi H = G, there is
+                                               Ñ                Ð
+i0 < k with x ∈ gi0 H. But then
+                            Ù                        Ù        Ù
+            gi−1
+              0
+                 x∈H∩            gi−1
+                                   0
+                                      gi h j X ⊆ H ∩   hj X =   h j (X ∩ H),
+                          i<k, j<`                       j<`    j<`
+
+so X ∩ H is `-large.                                                                       
+
+   The link between largeness and probability is given by the following lemma, which
+will be used throughout the paper. Recall that the inner measure of an arbitrary subset X
+of a measurable group G is
+
+                         µ∗ (X) = sup{µ(Y ) : Y ⊆ X measurable},
+
+and the outer measure is given by
+
+                         µ∗ (X) = inf{µ(Y ) : Y ⊇ X measurable}.
+
+Clearly the inner measure is superadditive, the outer measure is subadditive, and µ∗ (X) +
+µ∗ (G \ X) = 1.
+
+Lemma 2.5. If X is k-generic in G, then µ∗ (X) ≥ k1 . If µ∗ (X) > 1 − k1 then X is k-large
+in G.
+
+Proof. If X is k-generic there are g1, . . . , gk in G with G = i ≤k gi X. Hence
+                                                                  Ð
+                                                !
+                                    Ø                Õ
+                  1 = µ (G) = µ
+                        ∗        ∗
+                                          gi X ≤        µ∗ (gi X) = k µ∗ (X)
+                                     i ≤k         i ≤k
+
+by left invariance, whence µ∗ (X) ≥ k1 .
+    Now if X is not k-large, its complement is k-generic, so µ∗ (G \ X) ≥ k1 . But then
+µ∗ (X) ≤ 1 − k1 .                                                                     
+
+    These bounds are strict, as we can take X a subgroup of index k (resp. its complement).
+
+Remark 2.6. For any group G the set (G × {1}) ∪ ({1} × G) is 2-large in G2 ; if G is infinite
+it is of measure 0.
+
+   We shall now prove some results about finite groups, which owing to their non-linearity
+do not generalise easily to the measurable context.
+
+4
+                                                                Largeness and equational probability
+
+
+Remark 2.7. Let G be a finite group of order n, and X ⊆ G a non-empty proper subset of
+size m. Then X is (n − m + 1)-generic and at most m-large, since we can form the union of
+X with n − m translates of X to cover all the n − m points of G \ X, and we can intersect
+X with m translates of X to remove all m points of X.
+
+Theorem 2.8. Let G be aqfinite group of order n, and X ⊆ G a non-emptyqproper subset
+of size m. If m > n − 12 − n − 34 , then X is 2-generic. Hence if m < 12 +          n − 34 then X
+is not 2-large.
+                         q
+Proof. If m > n − 12 − n − 34 , then
+
+                          3           1                         1
+                     n−     > (n − m − )2 = (n − m)(n − m − 1) + .
+                          4           2                         4
+Put Z = {x y −1 : x, y ∈ G \ X }. Then
+
+                               |Z | ≤ (n − m)(n − m − 1) + 1 < n,
+
+so there is g ∈ G\ Z. But if h ∈ G\(X ∪gX), then h, g −1 h ∈ G\ X, and g = h(g −1 h)−1 ∈ Z,
+a contradiction. Thus G = X ∪ gX and X is 2-generic.
+    The second assertion follows by taking complements.                                  
+
+Theorem 2.9. Let G be a finite group of order n. If the exponent of G does not divide `
+then µ(x ` = 1) ≤ 1 − √1 , where µ is the counting measure.
+                          2n
+
+Proof. Put X = {g ∈ G : g` = 1}, of size m < n, and take any g ∈ G \ X. Note that
+X ∩ gX ∩ CG (g) is empty, as otherwise there would be y ∈ CG (g) with y ` = 1 = (gy)` ,
+whence g` = 1 and g ∈ X.
+  Thus |CG (g)| ≤ 2 |G \ X |. Moreover g G ∩ X = ∅, and
+
+                              |G|/|CG (g)| = |g G | ≤ |G \ X |.
+
+Thus n = |G| ≤ 2 |G \ X | 2 and n2 ≤ n − m, whence
+                                p
+
+
+                                            n − n2
+                                                 p
+                             `         m                        1
+                       µ(x = 1) =         ≤           =1− √ .                                     
+                                       n        n               2n
+Definition 2.10. Let f : G → H be a function, and c ∈ H. The equation f (x) = c is
+k-largely satisfied in G if {g ∈ G : f (g) = c} is k-large in G. By abuse of notation,
+if G = G1n and x = (x1, . . . , xn ), we shall also say that f (x1, . . . , xn ) = c is k-largely
+satisfied in G1 .
+
+                                                                                                  5
+K. Jaber & F.O. Wagner
+
+
+3. FC-Groups
+
+In this section we shall work in the set-up of Example 1.2: G1 will be a group, G ≤ G1n ,
+w( x̄, ȳ) a word in x̄ ȳ and their inverses with n = | x̄| and m = | ȳ|, ḡ ∈ G1m and c ∈ G1
+constants, and f ( x̄) = w( x̄, ḡ).
+     Recall that a group is FC if the centraliser of any element has finite index; it is BFC if
+the index is bounded independently of the element.
+     We shall first need a preparatory lemma. For two tuples ḡ = (gi : i < k) and
+ḡ 0 = (gi0 : i < k) in G1k we shall put ḡ −1 = (gi−1 : i < k) and ḡ · ḡ 0 = (gi gi0 : i < k).
+Lemma 3.1. Suppose ḡ, ḡ 0 ∈ G1m and h̄, h̄ 0 ∈ G1n are such that all elements from ḡ h̄
+commute with all elements from ḡ 0 h̄ 0. Then
+                                w( h̄ · h̄ 0, ḡ · ḡ 0) = w( h̄, ḡ) w( h̄ 0, ḡ 0).
+Proof. Obvious.                                                                                    
+Theorem 3.2. Let G1 be an FC-group. If the equation w( x̄, ḡ) = c is largely satisfied in
+G then it is identically satisfied in G.
+Proof. Consider h̄ ∈ G, and C = CG1 (ḡ, h̄), a subgroup of finite index in G1 . Put
+H = C n ∩ G, a subgroup of finite index in G, and X = { h̄ 0 ∈ G : w( h̄ 0, ḡ) = c}. Then
+X ∩ h̄−1 X ∩ H is large in H, whence non-empty. So there is x̄ ∈ H with
+                w(1̄, ḡ) w( x̄, 1̄) = w( x̄, ḡ) = c = w( h̄ · x̄, ḡ) = w( h̄, ḡ) w( x̄, 1̄).
+Hence w( h̄, ḡ) = w(1̄, ḡ) for all h̄ ∈ G, and w(1̄, ḡ) = w( x̄, ḡ) = c.                       
+    For a BFC-group, we can bound the degree of largeness needed:
+Theorem 3.3. Suppose every centraliser of a single element has index at most k in G1 . If
+the equation w( x̄, ḡ) = c is 2k n +mn -largely satisfied in G then it is identically satisfied
+                                   2
+
+
+in G.
+Proof. In the notation of the previous proof, C = CG1 (ḡ, h̄) has index at most k n+m in
+G1 , so
+          |G : H| = |G : G ∩ C n | ≤ |G1n : C n | = |G1 : C| n ≤ (k n+m )n = k n +mn .
+                                                                                               2
+
+
+
+Now 2k n +mn -largeness of X in G implies k n +mn -largeness of X ∩ h̄−1 X in G, whence
+          2                                                 2
+
+
+1-largeness of X ∩ h̄−1 X ∩ H in H. So we can find the x̄ required to finish the proof. 
+Corollary 3.4. Suppose every centraliser of a single element has index at most k in G1 .
+If w( x̄, ḡ) = c is not an identity on G, then
+                                                             1
+                                µ∗ (w( x̄, ḡ) = c) ≤ 1 −          .
+                                                          2k 2 +mn
+                                                            n
+
+
+6
+                                                                        Largeness and equational probability
+
+
+Proof. If µ∗ (w( x̄, ḡ) = c) > 1 − n21+mn , then { x̄ ∈ G : w( x̄, ḡ) = c} is 2k n +mn -large in
+                                                                                            2
+
+                                   2k
+G by Lemma 2.5, and w( x̄, ḡ) = c is identically satisfied in G by Theorem 3.3.                
+
+Remark 3.5. This holds in particular for the equation x ` = c, with n = 1 and m = 0.
+
+   If the group is central-by-finite, the largeness needed does not depend on the number
+of parameters.
+
+Corollary 3.6. Suppose Z(G1 ) has index k in G1 . If the equation w( x̄, ḡ) = c is 2k n -
+largely satisfied in G then it is identically satisfied in G.
+
+Proof. H = G ∩ Z(G1 )n has index at most k n in G. We finish as in Theorem 3.3.                           
+
+Corollary 3.7. If |G1 : Z(G1 )| ≤ k and w( x̄, ḡ) = c is not an identity in G, then
+µ∗ (w( x̄, ḡ) = 1) ≤ 1 − 2k1n .
+
+   Of course, for an abelian group G1 we have k = 1 in the above results.
+
+Remark 3.8. If w( x̄, ḡ) = c is 2-largely satisfied in G n , then it is identically satisfied
+in the abelian quotient G/G 0. If moreover G is a BFC-group, then G 0 is finite by B.H.
+Neumann’s Lemma [15], and G n satisfies a finite disjunction c0 ∈G0 w( x̄, ḡ) = cc 0.
+                                                                 Ô
+
+   We can also deduce results for central elements just from 2-largeness (although for
+infinite index |G1 : Z(G1 )| there is no reason that if X is large in G the intersection X ∩
+Z(G1 )n is still large in G ∩ Z(G1 )n ).
+
+Theorem 3.9. If w( x̄, ḡ) = c is 2-largely satisfied in G, then w( x̄, 1̄) = 1 identically on
+G ∩ Z(G1 )n .
+
+Proof. Consider h̄ ∈ G ∩ Z(G1 )n . Put X = { h̄ 0 ∈ G : w( h̄ 0, ḡ) = 1}. Then X ∩ h̄−1 X is
+non-empty, so there is x̄ ∈ G with
+                         w( x̄, ḡ) = c = w( h̄ · x̄, ḡ) = w( h̄, 1̄) w( x̄, ḡ).
+Hence w( h̄, 1̄) = 1.                                                                                     
+
+Corollary 3.10. If x1k1 . . . xnkn = c is 2-largely satisfied in G n and k = gcd(k1, . . . , k n ),
+then x k = 1 identically on Z(G).
+
+Proof. We have x1k1 . . . xnkn = 1 on Z(G). Putting xi = g ∈ Z(G) and x j = 1 for j , i we
+have g ki = 1 for all 1 ≤ i ≤ n. The result follows.                                     
+
+Corollary 3.11. If the exponent of Z(G) does not divide gcd(k1, . . . , k n ), then
+                                                                  1
+                                     µ∗ (x1k1 . . . xnkn = c) ≤     .
+                                                                  2
+
+                                                                                                          7
+K. Jaber & F.O. Wagner
+
+
+4. Burnside and Engel Equations
+
+In Remark 3.5 we have already seen that if every centraliser of a single element has index
+at most k in G, then µ∗ (x m = c) ≤ 1 − 2k
+                                         1
+                                            unless the exponent of G divides m. In this
+case necessarily c = x = 1.
+                       m
+
+   We shall first prove Miller’s Theorem mentioned in the introduction.
+Theorem 4.1. Let c ∈ G. If x 2 = c is 4-largely satisfied in G, then G is abelian of
+exponent 2, and c = 1.
+Proof. Fix g, h ∈ G. Then there is x with c = x 2 = (gx)2 = (hx)2 = (ghx)2 . But this
+implies x −1 gx = g −1 , x −1 hx = h−1 and x −1 ghx = (gh)−1 . On the other hand,
+                         x −1 ghx = x −1 gx x −1 hx = g −1 h−1 = (hg)−1 .
+Hence gh = hg and G is abelian. But now c = x 2 = (gx)2 = g 2 x 2 = g 2 c, whence
+g 2 = 1.                                                                        
+  If G satisfies 4-largely xax = b for some a, b ∈ G, then it satisfies 4-largely (ax)2 = ab,
+whence x 2 = ab. Hence G is abelian of exponent 2, and a = b.
+Corollary 4.2. If G is not of exponent 2 or a , b, then µ∗ (xax = b) ≤ 34 .
+   Recall that the nth Engel condition is the condition [x,n y] = 1, where [x,1 y] = [x, y]
+and [x,n+1 y] = [[x,n y], y]. Note that
+                    [x, y, y] = [y −x y, y] = y −1 y x y −1 y −x yy = [y −x, y]y .
+Thus the 2-Engel condition [x, y, y] = 1 is equivalent to [y −x, y] = 1, that is all conjugacy
+classes being commutative.
+Theorem 4.3. If G satisfies 7-largely x 3 = 1 then G is 2-Engel.
+Proof. Put X = {g ∈ G : g 3 = 1}. For g, h ∈ G consider
+              x ∈ X ∩ g −1 X ∩ h−1 X ∩ gX ∩ (gh)−1 X ∩ gh−1 X ∩ gh−1 g −1 X.
+Then (yx)3 = 1 for y ∈ {1, g, h, g −1, gh, hg −1, ghg −1 }, which means that x yx =
+y −1 x −1 y −1 . We calculate the product xhx 2 gx in two ways:
+                 xhx 2 gx = (xhx)(xgx) = h−1 (x −1 h−1 g −1 x −1 )g −1
+                           = h−1 ghxghg −1
+
+and
+
+                 xhx 2 gx = xh(g −1 x)−1 x = xh(g −1 x)2 x = (xhg −1 x)g −1 x 2
+                           = gh−1 (x −1 gh−1 g −1 x −1 ) = gh−1 ghg −1 xghg −1 .
+
+
+8
+                                                                               Largeness and equational probability
+
+
+Thus h−1 gh = gh−1 ghg −1 and g h g = gg h . As h ∈ G was arbitrary, the conjugacy class
+of g is commutative; as g was arbitrary, all conjugacy classes are commutative.       
+Theorem 4.4. Let G be 2-Engel. If G satisfies 2-largely x 3 = 1 then G has exponent 3.
+Proof. For any g ∈ G there is x ∈ G with x 3 = (gx)3 = 1. As x G is commutative,
+                          −1
+           g x g −1 g x        = x −1 gxg −1 xgx −1 = gx −g x x g x −1 = gx −g x g x x −1 = g.
+Since g G is commutative, we have
+                                                        −1              −1
+                               g 3 = g 2 g x g −1 g x        = g 2 g −1 g x g x = (gx)3 = 1.                     
+Corollary 4.5. If G satisfies 7-largely x 3 = 1, then G has exponent 3. If G is not of
+exponent 3 then µ∗ (x 3 = 1) ≤ 67 . If moreover G is 2-Engel, then µ∗ (x 3 = 1) ≤ 12 .
+
+   Note that the bound 67 is not as good as Laffey’s bound 97 cited in the introduction.
+
+Problem 4.6. A group which satisfies 5-largely x 3 = 1, is it 2-Engel? This would improve
+our bound to 45 .
+Corollary 4.7. If |G : Z(G)| ≤ 7 and G satisfies 7-largely x 3 = c for some c ∈ G, then
+c = 1 and G has exponent 3.
+Proof. {x ∈ G : x 3 = c} ∩ Z(G) is 1-large, whence non-empty, and contains an element
+z. But now there is x ∈ G with x 3 = 1 = (zx)3 = z3 x 3 = cx 3 , whence c = 1. We finish by
+Corollary 4.5.                                                                            
+   If |G : Z(G)| is prime, then G is abelian, and 2-largeness is sufficient by Corollary 3.10.
+
+5. Commutator Equations
+
+Consider the equation [x, g] = c for some c, g ∈ G. Since {x ∈ G : [x, g] = c} is a coset
+of CG (g) or empty, and a coset of a proper subgroup cannot be 2-large, it follows that
+if G satisfies 2-largely [x, g] = c then g ∈ Z(G) and c = 1. The following argument
+generalises this result.
+Theorem 5.1. Suppose f : G → H satisfies f (x x 0) = f (x)h f (x 0) for some h ∈ H which
+depends on x, x 0 ∈ G. If G0 and G1 are groups, f0 : G0 → H and f1 : G1 → H are
+functions such that G0 × G × G1 satisfies k-largely f0 (x0 ) f (x) f1 (x1 ) = c for some k ≥ 2,
+then f (G) = 1 and G0 × G1 satisfies k-largely f0 (x0 ) f1 (x1 ) = c.
+Proof. Fix g ∈ G. By 2-largeness there is (x0, x, x1 ) ∈ G0 × G × G1 such that
+                               f0 (x0 ) f (x) f (x1 ) = c = f0 (x0 ) f (gx) f (x1 ).
+
+                                                                                                                 9
+K. Jaber & F.O. Wagner
+
+
+Thus f (x) = f (gx) = f (g)h f (x) and f (g) = 1. It follows that f0 (x0 ) f (x) f1 (x1 ) =
+ f0 (x0 ) f1 (x1 ) on G0 × G × G1 . The result follows.                                       
+
+Corollary 5.2. If G satisfies 2-largely i<n [xi, gi ] = c for some gi ∈ G, then gi ∈ Z(G)
+                                           Î
+for all i < n and c = 1. If not all gi are central or c , 1 then µ∗ ( i<n [xi, gi ] = c) ≤ 12 .
+                                                                     Î
+
+                                        0
+Proof. We have [x x 0, y] = [x, y]x [x 0, y]. Now use Theorem 5.1.                             
+
+Remark 5.3. Theorem 5.1 also holds if f (x x 0) = f (x 0) f (x)h , with almost the same proof.
+Hence Corollary 5.2 also holds if some factors are of the form [gi, xi ].
+
+   Gustafson [6] has shown that µ2 ([x, y] = 1) ≤ 12 (1 + µ(Z(G)) ≤ 58 for a non-abelian
+compact topological group G, where µ is the Haar measure on G and µ2 the product
+measure on G2 . Pournaki and Sobhani [17] have generalised this to calculate that
+µ([x, y] = g) < 12 for any g , 1 in a finite group, using Rusin’s classification [18] of all
+finite groups with µ([x, y] = 1) > 11
+                                    32 (see also [4]). We have only been able to establish
+results using 4-largeness, giving the bound of 34 in Corollary 5.7, so the following two
+problems remain open:
+
+Problem 5.4.
+
+     (1) If G satisfies 2-largely [x, y] = 1, is G 0 = C2 and G/Z(G) of exponent 2, or
+         G 0 = C3 and G/Z(G) = S3 ?
+
+     (2) If G satisfies 2-largely [x, y] = c for some c ∈ G, is c = 1?
+
+Theorem 5.5. If w( x̄, ḡ)[x, y] = c is satisfied 4-largely in G n+1 , where x ∈ x̄ and y < x̄,
+then G is abelian and w( x̄, ḡ) = c.
+
+Proof. For any h ∈ G the set
+                         {( x̄, x, y) : w( x̄, ḡ)[x, y] = c = w( x̄, ḡ)[x, hy]}
+is 2-large in G n+1 . Hence {(x, y) ∈ G2 : [x, y] = [x, hy]} is 2-large in G2 . Now
+[x, hy] = [x, y][x, h]y , so [x, h] = 1 is satisfied 2-largely in G, whence h ∈ Z(G). It
+follows that G is abelian. But then w( x̄, ḡ) = c is satisfied 4-largely in G n , and must be an
+identity in G by commutativity and Corollary 3.6.                                               
+
+Corollary 5.6. If G is a group with µ∗ (w( x̄, ḡ)[x, y] = c) > 34 , then G is abelian satisfying
+w( x̄, ḡ) = c.
+
+Corollary 5.7. If G satisfies 4-largely [x, y] = c, then G is abelian and c = 1. If G is not
+abelian or c , 1, then µ∗ ([x, y] = c) ≤ 34 .
+
+10
+                                                                   Largeness and equational probability
+
+
+Remark 5.8. The same holds for the equation xcy = yc 0 x with c , c 0: putting x 0 = xc
+and y 0 = yc 0, this is equivalent to [x 0, y 0] = c−1 c 0.
+
+Theorem 5.9. Let g, h ∈ G and k = min{|G : CG (g)|, |G : CG (h)|}. If G satisfies
+k-largely [g, h x ] = 1, then g G and hG commute.
+
+Proof. If k = |G : CG (h)|, then {x ∈ G : [g, h x ] = 1} ∩ CG (h) is 1-large, whence
+non-empty, and [g, h] = 1. Now note that for any a ∈ G also |G : CG (h a )| = k and
+[g, h ax ] = 1 is satisfied k-largely, whence [g, h a ] = 1 and [g, hG ] = 1.
+                                            −1
+    If k = |G : CG (g)|, then {x ∈ G : [g x , h] = 1} ∩ CG (g) is 1-large (still on the left)
+and non-empty, whence [g, h] = 1 and we finish as above.                                   
+
+Corollary 5.10. If [g G, hG ] is non-trivial for some g, h ∈ G, then µ∗ ([g, h x ] = 1) ≤ 1 − k1 ,
+where k = min{|G : CG (g)|, |G : CG (h)|}.
+
+Theorem 5.11. If g, h, c ∈ G and [x, g, h] = c is 2k-largely satisfied, where k = |G :
+CG (h)|, then [G, g, h] = 1. Similarly, if [g, x, h] = c is 2k-largely satisfied for some
+c ∈ Z(G), then [g, G, h] = 1.
+
+Proof. Choose a ∈ G. Then the set X = {x ∈ G : [x, g, h] = c = [ax, g, h]} is k-large,
+and for x ∈ X we have
+           [x, g, h] = c = [ax, g, h] = [[a, g]x [x, g], h] = [[a, g]x, h][x,g] [x, g, h],
+whence [[a, g]x, h] = 1. By Theorem 5.9 we have [a, g, h] = 1.
+  If [g, x, h] = c is 2k-largely satisfied with c ∈ Z(G), then for a ∈ G we obtain a k-large
+X ⊆ G such that for x ∈ X we have
+                                                                             x
+          [g, x, h] = c = [g, ax, h] = [[g, x][g, a]x, h] = [g, x, h][g,a] [[g, a]x, h],
+whence [[g, a]x, h] = 1, and [g, a, h] = 1 by Theorem 5.9.                                           
+
+Corollary 5.12. If g, h ∈ G and k = |G : CG (h)|, then [G,g, h] , 1 implies µ∗ ([x,g, h] = c) ≤
+     1
+1 − 2k for any c ∈ G, and [g, G, h] , c implies µ∗ ([g, x, h] = c) ≤ 1 − 2k
+                                                                          1
+                                                                            for any c ∈ Z(G).
+
+   We shall now generalise Corollary 5.7 to higher nilpotency classes. However, the proof
+requires an additional assumption.
+
+Theorem 5.13. Suppose s < ω is such that for all i < k there is a set Ai of size at most s
+such that Z(G/Zi (G)) = CG/Zi (G) (Ai ). If G satisfies 2(s + 1)k -largely [x0, x1, . . . , xk ] = c,
+then c = 1 and G is nilpotent of class at most k.
+
+Proof. We use induction on k. For k = 1 note that s ≥ 1 (otherwise G is abelian and we
+are done), so the result follows from Corollary 5.7.
+
+                                                                                                   11
+K. Jaber & F.O. Wagner
+
+
+     Now suppose the assertion is true for k, and
+                               X = { x̄ ∈ G k+2 : [x0, x1, . . . , xk+1 ] = c}
+is 2(s + 1)k+1 -large in G k+2 . If A0 = {ai : i < s} consider the projection Y of X ∩
+  i<s (1, . . . , 1, ai )X to the first k + 1 coordinates, and note that it is 2(s + 1) -large. Then
+Ñ                     −1                                                               k
+
+for all (x0, . . . , xk ) ∈ Y there is y ∈ G such that
+          [x0, . . . , xk , y] = c = [x0, . . . , xk , ai y] = [x0, . . . , xk , y] [x0, . . . , xk , ai ]y
+for all i < s, whence [x0, . . . , xk ] ∈ Z(G). By inductive assumption G/Z(G) is nilpotent
+of class at most k, and we are done.                                                     
+
+Corollary 5.14. Let s be as above. If G is not nilpotent of class at most k or c , 1, then
+µ∗ ([x0, x1, . . . , xk ] = c) ≤ 1 − 12 (s + 1)−k .
+
+Remark 5.15. Recall that an Mc-group is a group G such that for every subset A there
+is a finite subset A0 ⊆ A such that CG (A) = CG (A0 ). Equivalently, G satisfies the
+ascending (or the descending) chain condition on centralisers. Roger Bryant [2] has
+shown that in an Mc-group, for every iterated centre Zi (G) there is a finite set Ai such
+that Z(G/Zi (G)) = CG/Zi (G) (Ai ). So in an Mc-group we can find some s as needed for
+Theorem 5.13 and Corollary 5.14.
+
+Problem 5.16. To what extent do we need the Mc-condition (or similar) in Theorem 5.13
+and Corollary 5.13? It is not needed for nilpotency class 1 (Corollary 5.7). In general,
+assuming just 2k+1 -largeness of [x0, . . . , xk ] = c, we obtain that { x̄ ∈ G k : [x0, . . . , xk−1 ] ∈
+CG (g)} is 2k -large in G k for any g ∈ G. Does this imply γk (G) ≤ CG (g), or even
+γk (G) ≤ Z(G)?
+
+6. Nilpotent groups
+
+We shall first introduce the notion of a supercommutator from [9].
+
+Definition 6.1. Any variable and any constant from G is a supercommutator; if v and w
+are supercommutators, then v −1 and [v, w] are supercommutators.
+
+   Alternatively, we could have said that x, x −1 and g are supercommutators for any
+variable x and any g ∈ G, and that if v and w are supercommutators, so is [v, w].
+
+Definition 6.2. The set Var(v) of variables of a supercommutator v is defined by
+Var(x) = {x}, Var(g) = ∅, Var(v −1 ) = Var(v), and Var([v, w] = Var(v) ∪ Var(w). We
+put var(v) = |Var(v)|, the variable number of v. If x̄ is a tuple of variables, we put
+Var x̄ = Var(v) ∩ x̄, Var 0x̄ (v) = Var(v) \ x̄, var x̄ (v) = |Var x̄ (v)| and var 0x̄ (v) = |Var 0x̄ (v)|.
+
+12
+                                                                                      Largeness and equational probability
+
+
+   Clearly var([v, v 0]) ≥ max{var(v), var(v 0)}, and similarly for var x̄ and var 0x̄ .
+Lemma 6.3. Let H E G and v( x̄, z̄) a supercommutator.
+
+     (1) v defines a function from H | x̄ z̄ | to γvar(v) (H).
+
+     (2) If var x̄ (v) > 0 and x̄, ȳ and z̄ are pairwise disjoint, then
+                                    v( ȳ · x̄, z̄) = v( x̄, z̄) v( ȳ, z̄) Φ( x̄, ȳ, z̄),
+          where Φ is a product of supercommutators whose factors w satisfy
+          (†) Varz̄ (w) = Varz̄ (v), and if xi ∈ Var x̄ (v) then xi ∈ Var(w) or yi ∈ Var(w),
+              and both possibilities occur for at least one i.
+
+     (3) If v( x̄, z̄) is a product of supercommutators whose factors w satisfy var x̄ (w) > 0
+         and var 0x̄ (w) ≥ n, then
+                                    v( ȳ · x̄, z̄) = v( x̄, z̄) v( ȳ, z̄) Φ( x̄, ȳ, z̄),
+          where Φ is a product of supercommutators whose factors w satisfy var x̄ (w) > 0
+          and var 0x̄ (w) > n.
+
+Proof. (1) is proved as in [9, Lemme 6 (1)] by induction, using that γn (H) is characteristic
+in H, whence normal in G, and [γn (H), γm (H)] ≤ γn+m (H). We shall show (2) by
+induction on the construction of v.
+    If v = x ∈ x̄ we have v(yx) = yx = xy[y, x] = v(x)v(y)[y, x]; if v = x −1 we have
+v(yx) = x −1 y −1 = v(x)v(y). This leaves the case v = [v1, v2 ] for two supercommutators
+v1 and v2 . We shall assume var x̄ (v1 ) > 0 and var x̄ (v2 ) > 0 (the case var x̄ (v1 ) var x̄ (v2 ) = 0
+is analogous, but simpler).
+    By inductive hypothesis, there are Φi for i = 1, 2, products of supercommutators
+satisfying (†) relative to vi , such that
+                                       vi ( ȳ · x̄, z̄) = vi ( x̄, z̄) vi ( ȳ, z̄) Φi .
+Then
+           v( ȳ · x̄, z̄) = [v1 ( ȳ · x̄, z̄), v2 ( ȳ · x̄, z̄)]
+                          = [v1 ( x̄, z̄) v1 ( ȳ, z̄) Φ1, v2 ( x̄, z̄) v2 ( ȳ, z̄) Φ2 ]
+                          = [v1 ( x̄, z̄), v2 ( x̄, z̄)] [v1 ( ȳ, z̄), v2 ( ȳ, z̄)] Φ = v( x̄, z̄) v( ȳ, z̄) Φ,
+where Φ is a product of supercommutators [w, w 0]
+
+     (i) where w ∈ Φ1 ∪ {v1 ( x̄, z̄), v1 ( ȳ, z̄)} and w 0 ∈ Φ2 ∪ {v2 ( x̄, z̄), v2 ( ȳ, z̄)}, except for
+         [v1 ( x̄, z̄), v2 ( x̄, z̄)] and [v1 ( ȳ, z̄), v2 ( ȳ, z̄)]; it is clear that these must satisfy (†).
+
+                                                                                                                      13
+K. Jaber & F.O. Wagner
+
+
+     (ii) where one of w, w 0 is from (i), so [w, w 0] satisfies (†).
+
+     (iii) where one of w, w 0 is equal to v( x̄, z̄) and the other contains at least one yi , or one
+           is equal to v( ȳ, z̄) and the other contains at least one xi ; again [w, w 0] satisfies (†).
+
+     (iv) which are obtained iteratively from supercommutators from (ii) and (iii) by
+          commutation with other supercommutators, thus satisfying (†).
+
+Here (i) takes care of the commutators of various factors of the two products, while (ii)–(iv)
+takes care of the correct order. Note that the only factor without a variable yi is v( x̄, z̄)
+and the only factor without a variable x j is v( ȳ, z̄).
+   To show (3) note first that for a single supercommutator v the factorisation given in (2)
+satisfies the requirement. So for a product of supercommutators, we apply (2) to every
+factor, and then use commutators to get them into the right order. Note that we never have
+to commute a w( x̄, z̄) with a w 0( x̄, z̄), or a w( ȳ, z̄) with a w 0( ȳ, z̄), as they already appear
+in the correct order with respect to one another. It follows that all new commutators
+satisfy (†), whence var 0x̄ > n.                                                                      
+
+Theorem 6.4. If G is nilpotent of class k and v is a product of supercommutators w with
+var x̄ (w) > 0 and var 0x̄ (w) ≥ n such that G satisfies max{2k−n, 1}-largely v( x̄, ḡ) = c, then
+c = 1.
+
+Proof. This is true for n ≥ k, as then var(w) = var x̄ (w) + var 0x̄ (w) ≥ 1 + n, and
+                              c = w( x̄, ḡ) ∈ γvar(w) G ≤ γn+1 G = {1}
+for some x̄ ∈ G.
+   Now suppose it is true for n + 1 ≤ k, and let v( x̄, z̄) be a product of supercommutators
+w with var x̄ (w) > 0 and var 0x̄ ≥ n, such that H satisfies 2k−n -largely v( x̄, ḡ) = c. By
+Lemma 6.3 there is Φ, a product of supercommutators whose factors w satisfy var x̄ (w) > 0
+and var 0x̄ (w) > n, such that
+                                v( ȳ · x̄, z̄) = v( x̄, z̄) v( ȳ, z̄) Φ( x̄, ȳ, z̄).
+Choose h̄ ∈ G with v( h̄, ḡ) = c. If X = { x̄ ∈ G : v( x̄, ḡ) = c}, then X is 2k−n -large, and
+Y = X ∩ h̄−1 X is 2k−n−1 -large. Moreover, for x̄ ∈ Y we have
+                  Φ( x̄, h̄, ḡ) = v( h̄, ḡ)−1 v( x̄, ḡ)−1 v( h̄ · x̄, ḡ) = c−1 c−1 c = c−1 .
+By hypothesis c−1 = 1 and we are done.                                                               
+
+Theorem 6.5. If G is nilpotent of class k and satisfies 2k -largely an equation v( x̄, ḡ) = c,
+then it satisfies v( x̄, ḡ) = c.
+
+14
+                                                                             Largeness and equational probability
+
+
+Proof. Bringing all the constants to the right-hand side, we may assume that v( x̄, z̄) is a
+product of supercommutators w with var x̄ (w) > 0. By Lemma 6.3 there is Φ, a product
+of supercommutators whose factors w satisfy var x̄ (w) > 0 and var 0x̄ (w) > 0, such that
+                            v( ȳ · x̄, z̄) = v( x̄, z̄) v( ȳ, z̄) Φ( x̄, ȳ, z̄).
+Fix h̄ ∈ G. Then
+                           Φ( x̄, h̄, ḡ) = v( h̄, ḡ)−1 c−1 c = v( h̄, ḡ)−1
+2k−1 -largely on G. By Theorem 6.4 we have v( h̄, ḡ) = 1. So v( x̄, ḡ) is constant.                          
+
+Corollary 6.6. If G is nilpotent of class k and x n = c is true 2k -largely, then c = 1 and
+the exponent of G divides n.
+
+Proof. Immediate from Theorem 6.5.                                                                             
+
+Corollary 6.7. If G is nilpotent of class k and µ∗ (x n = c) > 1 − 2−k , then c = 1 and the
+exponent of G divides n.
+
+
+7. Autocommutativity
+
+The notion of autocommutativity has been introduced by Sherman in 1975 [19].
+
+Definition 7.1. Let G be a finite group, Σ a group of automorphisms of G, and H a
+subgroup of G. The degree of autocommutativity relative to (H; Σ) is given by
+                                         |{(σ, g) ∈ Σ × H : σ(g) = g}|
+                        ac(H; Σ) =                                     .
+                                                    |Σ| · |H|
+It gives the probability that a random element of H is fixed by a random automorphism
+in Σ.
+
+   Note that ac(H; Σ) = µ({(σ, g) ∈ Σ × H : σ(g) = g}), where µ is the counting measure
+on Σ × H.
+
+Theorem 7.2. Let H ≤ G be finite groups, Σ a group of automorphisms of G, and suppose
+that {(σ, g) ∈ Σ × H : σ(g) = g} is 4-large in Σ × H. Then H ≤ Fix(Σ).
+
+Proof. Given σ ∈ Σ and g ∈ H, by 4-largeness there are x ∈ H and τ ∈ Σ with
+          τ(x) = x,    (σ ◦ τ)(x) = x,           τ(gx) = gx           and (σ ◦ τ)(gx) = gx.
+Then
+             gx = σ(τ(gx)) = σ(gx) = σ(g)σ(x) = σ(g)σ(τ(x)) = σ(g)x,
+whence g = σ(g).                                                                                               
+
+                                                                                                             15
+K. Jaber & F.O. Wagner
+
+
+Corollary 7.3. If H ≤ G are finite groups and Σ is a group of automorphisms of G with
+H 6 ≤ Fix(Σ), then ac(H; Σ) ≤ 34 .
+Proof. If ac(H; Σ) > 34 then {(σ, g) ∈ Σ×H : σ(g) = g} is 4-large in Σ×H by Lemma 2.5.
+Hence H ≤ Fix(Σ) by Theorem 7.2.                                                    
+
+References
+
+ [1] Fran Barry, Des MacHale, and Á. Ní Shé. Some supersolvability conditions for
+     finite groups. Math. Proc. R. Ir. Acad., 106(2):163–177, 2006.
+ [2] Roger Bryant. Groups with the minimal condition on centralizers. J. Algebra,
+     60:371–383, 1979.
+ [3] Paul Erdős and Pál Turan. On some problems of a statistical group theory. IV. Acta
+     Math. Acad. Sci. Hung., 19:413–435, 1968.
+ [4] D. G. Farrokhi. On the probability that a group satisfies a law: A survey. Kyoto Univ.
+     Res. Inform. Repos., 1965:158–179, 2015.
+ [5] Georg Frobenius. Verallgemeinerung des Sylowschen Satzes. Sitzungsber. K. Preuss.
+     Akad. Wiss. Berlin, II:981–993, 1895.
+ [6] William H. Gustafson. What is the probability that two group elements commute?
+     Am. Math. Mon., 80:1031–1034, 1973.
+ [7] Robert Heffernan, Des MacHale, and Á. Ní Shé. Restrictions on commutativity
+     ratios in finite groups. Int. J. Group Theory, 3(4):1–12, 2014.
+ [8] Nobuo Iiyori and Hiroyoshi Yamaki. On a conjecture of Frobenius. Bull. Am. Math.
+     Soc., 25(2):413–416, 1991.
+ [9] Khaled Jaber and Frank O. Wagner. Largeur et nilpotence. Commun. Algebra,
+     28(6):2869–2885, 2000.
+[10] Keith S. Joseph. Several conjectures on commutativity in algebraic structures. Am.
+     Math. Mon., 84:550–551, 1977.
+[11] Thomas J. Laffey. The number of solutions of x 3 = 1 in a 3-group. Math. Z.,
+     149:43–45, 1976.
+[12] Thomas J. Laffey. The number of solutions of x p = 1 in a finite group. Proc. Camb.
+     Philos. Soc., 80:229–231, 1976.
+[13] Thomas J. Laffey. The number of solutions of x 4 = 1 in finite groups. Math. Proc.
+     R. Ir. Acad., 79:29–36, 1979.
+
+16
+                                                           Largeness and equational probability
+
+
+[14] George A. Miller. Note on the possible number of operators of order 2 in a group of
+     order 2m . Ann. Math., 7:55–60, 1906.
+[15] Bernhard H. Neumann. Groups covered by permutable subsets. J. Lond. Math. Soc.,
+     29:236–248, 1954.
+[16] Peter M. Neumann. Two combinatorial problems in group theory. Bull. Lond. Math.
+     Soc., 21(5):456–458, 1989.
+[17] Mohammad R. Pournaki and Reza Sobhani. Probability that the commutator of two
+     group elements is equal to a given element. J. Pure Appl. Algebra, 212(4):727–734,
+     2008.
+[18] David J. Rusin. What is the probability that two elements of a finite group commute?
+     Pac. J. Math., 82:237–247, 1979.
+[19] Gary J. Sherman. What is the probability an automorphism fixes a group element?
+     Am. Math. Mon., 82:261–264, 1975.
+
+
+
+ Khaled Jaber                                 Frank O. Wagner
+ Department of Mathematics                    Université de Lyon; Université Lyon 1
+ Faculty of Sciences                          CNRS UMR 5208, Institut Camille Jordan
+ Lebanese University, Lebanon                 21 avenue Claude Bernard
+ kjaber@ul.edu.lb                             69622 Villeurbanne-cedex, France
+                                              wagner@math.univ-lyon1.fr
+
+
+
+
+                                                                                           17
+

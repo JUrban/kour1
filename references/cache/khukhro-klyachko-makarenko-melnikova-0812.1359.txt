@@ -1,0 +1,533 @@
+                                          UDC 512.544.44+512.543.22+512.552.16+512.552.4                                                  MSC: 20E36, 20E10, 17A30, 17A36
+
+                                                                                    AUTOMORPHISM INVARIANCE AND IDENTITIES
+                                                                                ♯
+                                                           Evgenii I. Khukhro        Anton A. Klyachko♭ Natalia Yu. Makarenko♯♮ Yulia B. Melnikova♭
+                                                              ♯
+                                                                  Sobolev Institute of Mathematics, Novosibirsk 630090, prospekt akademika Koptyuga 4.
+                                                   ♭
+                                                       Faculty of Mechanics and Mathematics, Moscow State University, Moscow 119991, Leninskie gory, MSU.
+                                                                                      ♮
+                                                                                        Université de Haute Alsace (UHA)
+                                                         khukhro@yahoo.co.uk        klyachko@mech.math.msu.su          makarenk@math.nsc.ru          yuliamel@mail.ru
+
+                                              If an outer (multilinear) commutator identity holds in a large subgroup of a group, then it holds also in a large characteristic
+                                              subgroup. Similar assertions are valid for algebras and their ideals or subspaces. Varying the meaning of the word “large”, we
+                                              obtain many interesting facts. These results cannot be extended to arbitrary (non-multilinear) identities. As an application, we
+arXiv:0812.1359v2 [math.GR] 31 Aug 2010
+
+
+
+
+                                              give a sharp estimate for the ‘virtual derived length’ of (virtually solvable)-by-(virtually solvable) groups.
+
+
+                                          0. Introduction
+                                          In [KhM07a], it was shown that each group virtually satisfying an outer commutator identity contains a finite-index
+                                          characteristic subgroup satisfying this identity. A similar result was obtained in [KhM08] for ideals in arbitrary algebras
+                                          (with codimension taking the role of index). Another similar result can be found in [KhM07b]: if a finite p-group G
+                                          contains a normal class t nilpotent subgroup N , then it also contains a characteristic class t nilpotent subgroup H
+                                          whose co-rank is bounded by a function of the co-rank of N and the number t. The paper [KlM09] contains a new
+                                          much shorter proof of the theorem about index and a better estimate for the index of the characteristic subgroup.
+                                                In this note, we extend and generalize the new proof in [KlM09] to a wide class of algebraic systems. In this
+                                          generalization the property of having finite index is replaced by a certain abstract property of “smallness”, and index
+                                          is replaced by a certain abstract “codimension”. This general theorem includes all the aforementioned results as special
+                                          cases. Moreover, there are many other new applications, which include, for example, the case of finite p-groups with
+                                          subgroups of bounded co-rank satisfying arbitrary outer commutator identity (rather than just nilpotency identity as
+                                          in [KhM07b]).
+                                                On the other hand, we show that the original proofs in [KhM07a], [KhM07b], and [KhM08] yield a bit more.
+                                          Namely, each group contains only finitely many finite-index subgroups which are maximal (by inclusion) among all
+                                          normal subgroups satisfying a given outer commutator identity. In particular, this implies that each finite-index
+                                          subgroup which is maximal among all normal subgroups satisfying a given outer commutator identity contains a
+                                          finite-index characteristic subgroup. Similar stronger results are valid for algebras over fields.
+                                                To complete the picture, we mention earlier known results on this subject. Let G be a group and let N be its
+                                          finite-index subgroup. Then
+                                              - N contains a normal in G subgroup of finite index (dividing |G : N |!);
+                                              - if G is finitely generated, then N contains a fully invariant (and even verbal) in G subgroup of finite index;
+                                              - if N is abelian, then G contains a characteristic abelian subgroup of finite index.
+                                          These facts are well known and can be found in textbooks on group theory (see, e.g., [KaM82]). Note also that in
+                                          [BeK03] it was proved that the existence of a solvable finite-index subgroup of derived length t implies the existence
+                                          of a characteristic solvable finite-index subgroup of derived length ⩽ t2 . In [BrNa04], it was shown that any virtually
+                                          nilpotent group contains a characteristic nilpotent finite-index subgroup.
+                                                As an application of the obtained results, in Section 5 we obtain a sharp estimate for the ‘virtual derived length’
+                                          of extensions of virtually solvable groups by virtually solvable groups. This answers a question of J. Button.
+                                                In Section 6, we consider the periodicity law xp = 1. We show that the theorem about finite-index characteristic
+                                          subgroup does not hold for this identity (if p is a large prime).
+
+                                          1. The results
+
+                                          Theorem 1 [KhM07a], [KlM09]. If a group G contains a normal finite-index subgroup N satisfying an outer commuta-
+                                          tor identity w(x1 , . . . , xt ) = 1, then G contains a characteristic and even invariant under all surjective endomorphisms
+                                          subgroup H satisfying the same identity and such that log2 |G : H| ⩽ f t−1 (log2 |G : N |).
+                                               Henceforth, f k (x) means the k-th iteration of the function f (x) = x(x + 1). An outer (or multilinear) commuta-
+                                          tor identity is an identity of the form [. . . [x1 , . . . , xt ] . . .] = 1 with some meaningful arrangement of brackets, where
+                                          all letters x1 , . . . , xt are different. Examples of such identities are solvability, nilpotency, centre-by-metabelianity,
+                                          etc. A formal definition looks as follows. Let F (x1 , x2 , . . .) be a free group of countable rank. An outer commuta-
+                                          tor of weight 1 is just a letter xi . An outer commutator of weight t > 1 is a word of the form w(x1 , . . . , xt ) =
+
+                                           The work of the second author was supported by the Russian Foundation for Basic Research, project no. 08-01-00573.
+                                           The work of the third author was supported by the Council on Grants of the President of the Russian Federation,
+                                          program of support of the leading scientific schools, grant NSh-344.2008.1.
+
+                                                                                                               1
+[u(x1 , . . . , xr ), v(xr+1 , . . . , xt )], where u and v are outer commutators of weights r and t − r, respectively. An outer
+commutator identity is an identity of the form w = 1, where w is an outer commutator.
+Remark 1. The condition that the subgroup N be normal is not essential. It is well known that any finite-index
+                                                   e such that |G : N
+subgroup N contains a normal finite-index subgroup N                e | does not exceed (and even divides) |G : N |!
+(see, e.g., [KaM82]). Therefore, Theorem 1 remains valid for non-normal subgroups N , but with worse estimate
+log2 |G : H| ⩽ f t−1 (log2 |G : N |!).
+Remark 2. Theorem 1′ (see below) implies that, under the conditions of Theorem 1, a characteristic (and even
+invariant under all surjective endomorphisms) finite-index subgroup can be found inside any finite-index subgroup
+which is maximal (by inclusion) among all normal subgroups satisfying the outer commutator identity.
+Remark 3. Theorem 4 (see below), which is a generalization of Theorem 1, implies that the group G/H lies in the
+variety generated by G/N (and even in the formation generated by this group).
+Theorem 2 (cf. [KhM08]). Let G be an algebra (possibly, non-associative) over a field. If G contains a finite-
+codimensional subspace N satisfying a multilinear identity w(x1 , . . . , xt ) = 0, then G contains a subspace H satisfying
+the same identity, invariant under all surjective endomorphisms, and such that codim H ⩽ f t−1 (codim N ). This
+subspace H is left, right, or two-sided ideal if the subspace N is left, right, or two-sided ideal, respectively.
+Remark. Theorem 2′ (see below) implies that, under the conditions of Theorem 2, a finite-codimensional subspace
+invariant under all surjective endomorphisms can be found inside any finite-codimensional subspace which is maximal
+(by inclusion) among all subspaces satisfying the multilinear identity. A similar fact is valid for ideals (left, right, and
+two-sided).
+Theorem 3 (cf. [KhM07b]). If a finite p-group G contains a normal subgroup N satisfying an outer commutator
+identity w(x1 , . . . , xt ) = 1, then G contains a characteristic subgroup H satisfying the same identity and such that
+rank G/H ⩽ f t−1 (rank G/N ).
+    Here, rank G is the minimal positive integer n such that any finitely generated subgroup of G is generated by at
+most n elements.
+Theorem 4. If a group G contains a normal subgroup N satisfying an outer commutator identity w(x1 , . . . , xt ) = 1
+and G/N has a smallness property P, then G contains a characteristic and even invariant under all surjective endo-
+morphisms subgroup H, satisfying the same identity and such that G/H has the property P.
+A smallness property in Theorem 4 is any abstract group property P satisfying the following conditions:
+  1) a quotient group of a group with property P also has this property;
+  2) a subdirect product of two groups with property P also has this property;
+  3) each group with property P satisfies the maximality (ACC) condition for normal subgroups.
+Examples of such properties are the maximality condition, the maximality condition for normal subgroups, polycyclic-
+ity, finiteness, etc.
+      Theorem 1 was proved in [KhM07a], but with a worse estimate for the index. A simpler proof and the estimate
+presented above was obtained in [KlM09]. Theorem 2 was proved in [KhM08] with a worse estimate for the codimen-
+sion. An important particular case of Theorem 3 corresponding to the nilpotency identity was proved in [KhM07b].
+Theorem 4 is new. All these theorems turn out to be special cases of a general fact concerning multi-operator groups.
+      The methods developed in [KhM07a], [KhM07b], and [KhM08] allows us to prove assertions stronger than Theo-
+rems 1 and 2, but with worse estimates.
+Theorem 1′ . Let w(x1 , . . . , xt ) be an outer commutator. Then, in any group, the number of finite-index subgroups
+which are maximal (by inclusion) among all normal subgroups satisfying the identity w(x1 , . . . , xt ) = 1 is finite.
+Moreover, the number of such subgroups of index ⩽ n does not exceed
+                            t−1                                                                            x
+                       2F         (n)
+                                        ,   where F k (x) is the k-th iteration of the function F (x) = xn2 .
+
+Remark. This theorem consists of two independent assertions. On the one hand, the number of subgroups of index
+⩽ n which are maximal among all normal subgroups with the identity w(x1 , . . . , xt ) = 1 is bounded by an explicit
+function of n and t. This function grows very fast, but on the other hand, the total number of finite-index subgroups
+which are maximal among all normal subgroups with given identity is finite. The following theorem shows that a
+similar statement is valid for subspaces (or ideals) in algebras.
+Theorem 2′ . Let w(x1 , . . . , xt ) be a multilinear element of the free (non-associative) algebra over a field F . Then,
+in any algebra over F , the intersection of all finite-codimensional ideals which are maximal (by inclusion) among all
+ideals satisfying the identity w(x1 , . . . , xt ) = 0 has finite codimension. Moreover, the intersection of such ideals of
+
+                                                                     2
+codimension ⩽ n has codimension not larger than some number depending only on n and t. Here, the word “ideal”
+means left, right, two-sided ideal, or simply subspace (zero-side ideal).
+    Theorem 1 makes it possible to give the most exact answer to a question of J. O. Button ([But08], Problem 3)
+on extensions of virtually solvable groups by virtually solvable groups.
+Theorem 5. Any extension of a virtually solvable of derived length s group by a virtually solvable of derived length t
+group is virtually solvable of derived length ⩽ t + s + 1.
+     In section 5, we prove this theorem and give a simple example showing that the obtained estimate is best possible.
+     The following assertion shows that neither Theorem 1 nor other versions of Theorem 4 can be extended to arbitrary
+identities.
+Theorem 6. For any sufficiently large prime p, there exists a group G of exponent p2 with a finite-index subgroup
+of exponent p, but without characteristic finite-index subgroups of exponent p. Moreover, any quotient of G by
+a characteristic subgroup of exponent p satisfies neither the maximality condition for normal subgroups nor the
+minimality condition for normal subgroups and, therefore, has no smallness properties.
+
+
+2. Multi-operator groups
+Recall that, according to [Kur62], an Ω-group is a group (G, +) (not necessarily commutative) with a family of
+operations Ω. Each operation f ∈ Ω is a mapping f : Gnf → G from a finite Cartesian power of G to G such that
+f (0, . . . , 0) = 0.
+Examples.
+ 1. Any group can be considered as an Ω-group with empty set of operations Ω.
+ 2. A ring is an Ω-group with commutative addition and the set of operations Ω consisting of one binary operation
+      (multiplication), satisfying the distributivity law.
+ 3. An algebra over a fixed field F can be considered as an Ω-group with commutative addition and the set of
+      operations Ω consisting of one binary operation (multiplication) and |F | unary operations (multiplication by
+      scalars) satisfying the well-known laws.
+Let V be a variety of Ω-groups and let w(x1 , . . . , xt ) be an element of the free (in the variety V) algebra FV (x1 , . . . , xt ).
+For additive normal subgroups A1 , . . . , At of an Ω-group G ∈ V, we define w(A1 , . . . , At ) as the normal subgroup
+generated by all elements of the form w(a1 , . . . , at ), where ai ∈ Ai .
+      An element w(x1 , . . . , xt ) ∈ FV (x1 , . . . , xt ) is called multilinear if
+
+                       w(A1 , . . . , Ai + A′i , . . . , At ) = w(A1 , . . . , Ai , . . . , At ) + w(A1 , . . . , A′i , . . . , At )
+
+for all i = 1, . . . , t and any normal subgroups A1 , . . . , Ai , A′i , . . . , At of any Ω-group of the variety V.
+     The outer commutators are multilinear elements of the absolutely free group. The multilinear (in usual sense)
+expressions are multilinear elements of the free algebra over a field.
+     Let C be a class of normal subgroups of an Ω-group G such that
+  1) C is closed with respect to the images under surjective endomorphisms of the Ω-group G, finite sums and finite
+     intersections;
+  2) any subfamily N ⊆ C of the class C contains a finite subfamily F ⊆ N such that
+                                                                     X             X
+                                                                           N=             N.
+                                                                    N ∈N          N ∈F
+
+
+In this case, we say that C is a class of large normal subgroups. A function codim : C → R is called a (generalized)
+codimension if it has the following properties:
+ 0) codim N1 ⩽ codim N2 if N1 ⊇ N2 ;
+ 1) codim ϕ(N ) ⩽ codim N for each subgroup N ∈ C and each surjective endomorphism of the Ω-group G;
+ 2) codim (N1 ∩ N2 ) ⩽ codim N1 + codim N2 for all subgroups N1 , N2 ∈ C;
+ 3) in any family N of subgroups from the class C, there exist r ⩽ max codim N + 1 subgroups N1 , . . . , Nr such that
+                                                                                          N ∈N
+
+
+                                                                     X             r
+                                                                                   X
+                                                                           N=            Ni .
+                                                                    N ∈N           i=1
+
+
+      If G is an algebra over a field and the class C consists of all subspaces or all ideals (one-sided or two-sided) of
+finite codimension, then the usual codimension can be regarded as a generalized codimension.
+
+                                                                            3
+     If G is a group and the class C consists of all normal finite-index subgroups, then, as a generalized codimension,
+we can take the binary logarithm of the index. If the class C consists of all normal subgroups whose index is a power
+of a fixed prime p, then, as a codimension of a subgroup N , we can take the rank of the quotient G/N (Property 3
+holds by virtue of the Burnside basis theorem).
+     The class of all normal subgroups such that the corresponding quotient groups satisfy a fixed smallness property P
+can also be regarded as a class of large subgroups. However, no codimension is defined in this case.
+
+3. Main theorem
+In the proof of the main theorem, we follow the argument in [KlM09] generalizing it to multi-operator groups.
+Lemma 1. Suppose that w(x1 , . . . , xt ) is a multilinear element of the free Ω-group of some variety V, m is a positive
+integer, G ∈ V is an Ω-group, and N is a finite family of its normal subgroups such that
+
+                                          w(N, N, . . . , N , G, G, . . . , G) = 0         for all N ∈ N .
+                                            |   {z         }
+                                                  m times
+
+Then                                                                                           \                    X
+                           w(Nb, N
+                                 b, . . . , N   b G,
+                                            b , G, b . . . , G)
+                                                             b = 0,                   b=
+                                                                                where N                    b=
+                                                                                                     N and G            N.
+                             |     {z        }
+                                 m−1 times                                                     N ∈N                N ∈N
+
+Proof.
+                                                                            X                         X
+         w(Nb, N
+               b, . . . , N   b G,
+                          b , G, b . . . , G)
+                                           b = w(Nb, N
+                                                     b, . . . , N
+                                                                b,                   b . . . , G)
+                                                                                  N, G,        b =        w(Nb, N
+                                                                                                                b, . . . , N      b . . . , G).
+                                                                                                                           b , N, G,        b
+           |     {z        }                     |     {z        }                                          |     {z        }
+              m−1 times                                   m−1 times        N ∈N                       N ∈N     m−1 times
+
+    b ⊆ N and G
+But N         b ⊆ G; therefore each term of the last sum is contained in the normal subgroup
+
+                                 w(N, N, . . . , N , G, G, . . . , G),            which is trivial by assumption.
+                                   |   {z         }
+                                        m times
+
+As a corollary, we obtain the main theorem.
+Main theorem. Suppose that G is an Ω-group belonging to a variety V, C is a class of its large normal subgroups,
+w(x1 , . . . , xt ) ∈ FV (x1 , . . . , xt ) is a multilinear element, N ∈ C, and w(N, . . . , N ) = 0. Then G contains an invariant
+under all surjective endomorphisms normal subgroup H ∈ C satisfying the same identity w(H, . . . , H) = 0. In addition,
+if codim : C → R is a generalized codimension, then
+
+                                                           codim H ⩽ f t−1 (codim N ),
+
+where f k (x) is the k-th iteration of the function f (x) = x(x + 1).
+Proof. Let
+        P Ends G be the semigroup of all surjective endomorphisms of the Ω-group G. Consider the normal subgroup
+G1 =       ϕ(N ). This subgroup is invariant under all surjective endomorphisms, is large (i.e. belongs to C), and
+       ϕ∈Ends G
+codim G1 ⩽ codim N (if codim is defined). Clearly, G1 is the sum of a finite number of the images of N (because N
+is large) and this finite number does not exceed codim N + 1 (by the definition of the codimension). Thus,
+                                        p1
+                                        X                                                               def
+                                 G1 =         ϕ′k (N ),        where ϕ′k ∈ Ends G and p1 ⩽ l0 = codim N .
+                                        k=0
+
+                                                          p1
+                                                          T
+Now, consider the normal subgroup N1 =                         ϕ′k (N ). Clearly, this subgroup is large too. By Properties 1) and 2) of
+                                                      k=0
+the codimension codim , we have
+                                 def
+                            l1 = codim N1 ⩽ (p1 + 1)codim N = (p1 + 1)l0 ⩽ (l0 + 1)l0 = f (l0 ).
+
+According to Lemma 1,
+                                                               w(N1 , . . . , N1 , G1 ) = 0.
+     Similarly, we construct the large normal subgroups
+           X               p2
+                           X                                     p2
+                                                                 \
+  G2 =          ϕ(N1 ) =         ϕ′′k (N1 )   and N2 =                 ϕ′′k (N1 ),   where ϕ′′k ∈ Ends G and p2 ⩽ codim N1 = l1 ⩽ f (l0 ).
+         ϕ∈Ends G          k=0                                   k=0
+
+
+                                                                              4
+Clearly, G2 is invariant under all surjective endomorphisms of the Ω-group G,
+
+                                                    def
+     codim G2 ⩽ codim N1 = l1 ⩽ f (l0 ), and l2 = codim N2 ⩽ (p2 + 1)codim N1 = (p2 + 1)l1 ⩽ f (l1 ) ⩽ f (f (l0 )).
+
+According to Lemma 1,
+                                                 w(N2 , . . . , N2 , G2 , G2 ) = 0.
+     Continuing in the same manner, at the t-th step, we obtain in G an invariant under all surjective endomorphisms
+large normal subgroup
+                                 X                 pt
+                                                   X    (t)                 (t)
+                           Gt =       ϕ(Nt−1 ) =       ϕk (Nt−1 ), where ϕk ∈ Ends G.
+                                   ϕ∈Ends G               k=0
+
+For this subgroup, we have
+
+          w(Gt , . . . , Gt ) = 0 and codim Gt ⩽ codim Nt−1 = lt−1 ⩽ f (lt−2 ) ⩽ f (f (lt−3 )) ⩽ . . . ⩽ f t−1 (l0 ).
+
+Thus, the subgroup H = Gt is as required and the theorem is proved.
+Theorems 1 – 4 are special cases of the main theorem:
+
+          Theorem 1: V = {Groups},   C = {Normal subgroups of finite index},                  codim N = log2 |G : N |;
+                                                              
+                                          Subspaces or ideals
+          Theorem 2: V = {Algebras}, C =                         ,                            codim = codim ;
+                                          of finite codimension
+          Theorem 3: V = {Groups},            C = {N ⊳ G ; G/N is a p-group},                 codim N = rank G/N ;
+
+          Theorem 4: V = {Groups},            C = {N ⊳ G ; G/N has the property P}, codim is not defined.
+
+
+
+4. Proof of Theorems 1′ and 2′
+Theorem 1′ follows from the following proposition.*)
+Proposition 1. Suppose that a group G contains sufficiently many normal subgroups N1 , . . . , Nm of index n satisfying
+an outer commutator identity w(x1 , . . . , xt ) = 1 (where m is a sufficiently large number depending only on n and t). If
+                                          \           \
+                                              Nj 6=          Nj   for all k = 1, . . . , m,
+                                                      j6=k
+
+
+then the group G has a normal subgroup X satisfying the same identity and strictly containing one of the subgroups Nj
+(and, hence, the index of X is strictly less than n).
+Proof. This proposition was, actually, proved in [KhM07a]. The subgroup X constructed in the proof of Proposition 1
+of [KhM07a] contains one of the subgroups Nj .
+    Theorem 2′ similarly follows from the following proposition in [KhM08].*)
+Proposition 2 ([KhM08], Proposition 3). Let N1 , . . . , Nm be ideals of an algebra A over a field K and let
+f (x1 , . . . , xc ) ∈ K hx1 , . . . , xc i be a multilinear polynomial. Suppose that
+ (a) Teach idealTNi satisfies the identity f = 0 and dim A/Ni ⩽ r;
+(b)       Nj 6=          Nj for all k = 1, . . . , m.
+                    j6=k                                                                                             T
+If m ⩾ s(r, c) for some (r, c)-bounded number s(r, c), then there exists k ∈ {1, . . . , m} such that the ideal Nk +   Nj
+                                                                                                                         j6=k
+satisfies the identity f = 0.
+    For the reader’s convenience, we give an independent and simpler proof of Theorem 1′ .
+Proof of Theorem 1′ . Let N be a set of finite-index subgroups of G that are maximal by inclusion among all normal
+subgroups satisfying the outer commutator identity w(x1 , . . . , xt ) = 1. We must prove that N is finite.
+
+  *) To be more precise, Proposition 1 implies the assertion of Theorem 1′ on subgroups of bounded index. The
+finiteness of the total number of finite-index maximal normal subgroups with given identity follows from the proof of
+this proposition. The relations between Proposition 2 and Theorem 2′ are similar.
+
+                                                                  5
+     If the family N is empty, then we have nothing to prove. Otherwise, consider a subgroup G0 ∈ N . This subgroup
+satisfies the identity
+                                        wσ (G0 , . . . , G0 ) = 1 for all σ ∈ St .                               (0)
+
+Henceforth, wσ (x1 , . . . , xt ) denotes w(xσ(1) , . . . , xσ(t) ), where σ is a permutation of degree t.
+     The subgroup G0 has finite index. Therefore, the family of subgroups {N G0 | N ∈ N } is finite and coincides with
+the family {N G0 | N ∈ N1 }, where N1 is a finite subfamily of the family N . The subgroup
+                                                                                   \
+                                                                   G1 = G0 ∩           N
+                                                                               N ∈N1
+
+
+has finite index and satisfies the equality
+
+                                wσ (G1 , . . . , G1 , N G0 ) = 1        for all σ ∈ St       and for all N ∈ N .                                  (1)
+
+Indeed, by the choice of the family N1 , each product N G0 , where N ∈ N , coincides with a product N1 G0 for some
+group N1 ∈ N1 and N1 ⊇ G1 ⊆ G0 . Therefore,
+
+              wσ (G1 , . . . , G1 , N G0 ) = wσ (G1 , . . . , G1 , N1 G0 ) =wσ (G1 , . . . , G1 , N1 )wσ (G1 , . . . , G1 , G0 ) ⊆
+                                                                              ⊆wσ (N1 , . . . , N1 , N1 )wσ (G0 , . . . , G0 , G0 ) = 1.
+
+     The subgroup G1 has finite index. Therefore, the family of subgroups {N G1 | N ∈ N } is finite and coincides with
+the family {N G1 | N ∈ N2 }, where N2 is a finite subfamily of the family N . The subgroup
+                                                                                   \
+                                                                   G2 = G1 ∩           N
+                                                                               N ∈N2
+
+
+has finite index and satisfies the equality
+
+                            wσ (G2 , . . . , G2 , N G1 , N G1 ) = 1        for all σ ∈ St        and for all N ∈ N .                              (2)
+
+Indeed, by the choice of the family N2 , each product N G1 , where N ∈ N , coincides with a product N2 G1 for some
+group N2 ∈ N2 and N2 ⊇ G2 ⊆ G1 ⊆ G0 . Therefore,
+
+            wσ (G2 , . . . , G2 , N G1 , N G1 ) = wσ (G2 , . . . , G2 , N2 G1 , N2 G1 ) =
+           =wσ (G2 , . . . , G2 , N2 , N2 )wσ (G2 , . . . , G2 , N2 , G1 )wσ (G2 , . . . , G2 , G1 , N2 )wσ (G2 , . . . , G2 , G1 , G1 ) ⊆
+           ⊆wσ (N2 , . . . , N2 , N2 , N2 )wσ (G1 , . . . , G1 , N2 , G1 )wσ (G1 , . . . , G1 , G1 , N2 )wσ (G0 , . . . , G0 , G0 , G0 ).
+
+The first factor of the last product is trivial, because the group N2 satisfies the identity w = 1. The second and the
+third factors are trivial by (1). The fourth factor is trivial by (0).
+     Continuing in the same manner, we finally obtain a finite index subgroup Gt−1 such that
+
+                               wσ (N Gt−1 , . . . , N Gt−1 ) = 1         for all σ ∈ St       and for all N ∈ N .                                   (t)
+                                                                                                                                              T
+By virtue of the maximality of all these subgroups N , this means that Gt−1 ⊆ N for all N ∈ N , i.e. Gt−1 ⊆                                         N
+                                                                                                                                             N ∈N
+and, therefore, this intersection has finite index. The finiteness of this index implies the finiteness of the family N , as
+required.
+     To obtain an estimate, it is sufficient to note that, if all subgroups from the family N have index not larger than n,
+then
+                  |G : Gk | ⩽ |G : Gk−1 |n|Nk | and |Nk | ⩽ 2|G : Gk−1 | (this is a very rough estimate).
+
+Therefore,
+                                                   |G:Gk−1 |                                                              t−1
+                   |G : Gk | ⩽ |G : Gk−1 | · n2                ,    i.e. |G : Gt−1 | ⩽ F t−1 (n) and |N | ⩽ 2F                  (n)
+                                                                                                                                      ,
+                                                                               x
+where F k (x) is the kth iteration of the function F (x) = xn2 .
+
+
+
+                                                                          6
+5. Meta-virtually-solvable groups
+In this section, we prove Theorem 5, i.e. we obtain the best possible estimate on the ‘virtual derived length’ of a
+group G containing a normal virtually solvable of derived length s subgroup A such that the quotient G/A is virtually
+solvable of derived length t. The second “virtually” can easily be removed. Indeed, replacing the group G by its
+finite-index subgroup (the preimage of the solvable finite-index subgroup of the quotient G/A), we can assume that
+the quotient G/A is solvable of derived length t.
+      Next, by Theorem 1, the solvable of derived length s finite-index subgroup N of A can be assumed to be charac-
+teristic in A and, hence, normal in G. To prove Theorem 5, it remains to show that the quotient H = G/N contains a
+finite-index subgroup which is solvable of derived length ⩽ t + 1. But H is an extension of the finite group K = A/N
+by the solvable of derived length t group G/A.
+      A finite group K has only finite number of automorphisms. Therefore, the centralizer of this group in H is of
+finite index. Thus, passing to a finite-index subgroup, we can assume that K is contained in the centre of H. The
+central quotient of H has derived length t and, therefore, H itself is solvable of derived length ⩽ t + 1, as required.
+      It is easy to see that the estimate in Theorem 5 cannot be improved. Indeed, consider, e.g., the central product G
+(i.e. the direct product with amalgamated centres) of infinitely many copies of the quaternion group of order 8. This
+group G is an extension of its finite (central) subgroup (of order 2) by the elementary abelian 2-group of infinite rank.
+It is easy to verify that this group has no abelian subgroups of finite index. (To show this, one can use Theorem 1 once
+again: if there is an abelian finite-index subgroup, then there exists a characteristic abelian finite-index subgroup).
+      Thus, an extension of a finite group (i.e. a virtually trivial group, or a virtually solvable of derived length zero
+group) by an abelian group is not necessarily virtually abelian. This example can be modified to construct an extension
+of a virtually abelian group by an abelian group which is not virtually metabelian. Indeed, take a faithful complex
+representation ϕ: G → GL(V ) (e.g., the regular one) of the group G described above. The corresponding semidirect
+product G1 = V ⋋ G is an extension of the virtually abelian group A = V ⋋{±1} by an (elementary) abelian group
+G1 /A ≃ G/{±1}. Suppose that H is a finite-index subgroup of G1 . Let us show that H cannot be metabelian.
+Indeed, H must contain V (because V , being a complex vector space, has no proper finite-index subgroups). The
+quotient G1 /V ≃ G contains a finite-index subgroup H/V . Therefore, H/V is nonabelian (since G has no finite-index
+abelian subgroups). Therefore, the commutator subgroup (H/V )′ contains a nontrivial element g of order 2. Hence,
+the commutator subgroup H ′ of H contains an element x = ug (for some u ∈ V ) and all elements of the form
+
+                                    [x, v] = xvx−1 (−v) = ϕ(g)v − v,        where v ∈ V .
+
+Since the representation ϕ is faithful, the space V contains a vector v not lying in the kernel of the operator ϕ(g) − id.
+Thus, H ′ contains a nonzero vector w = ϕ(g)v − v such that ϕ(g)w = v − ϕ(g)v = −w. So, [x, w] = −2w 6= 0, i.e. H ′
+is nonabelian and H is not metabelian, as required.
+     Examples of higher derived lengths can be constructed in similar fashion.
+
+6. The Burnside identity
+In this section, we prove Theorem 6, i.e. we present a group virtually satisfying the identity xp = 1, but having no
+large characteristic subgroups of period p. To construct such a group G, we use the well-known technique dealing
+with periodic relations. We follow the book [Olsh89]. A similar construction can be implemented on the base of the
+book [Adyan75].
+     Consider an infinite alphabet X = {a, x1 , x2 , . . .} and the free group G(0) = F (X) with basis X. The groups
+G(i) = hX Ri i, where i ⩾ 1, are defined inductively as follows. Choose a set Pi of words of length i in the group F (X)
+having the following properties:
+  1) no word in the set Pi is conjugate in G(i − 1) to a power of a shorter word;
+  2) different words in the set Pi are not conjugate in G(i − 1) to each other and to the inverses of each other;
+  3) the set Pi is maximal (by inclusion) among all sets satisfying conditions 1) and 2).
+The words in the set Pi are called periods of rank i. Let us define a group G(i) = hX Ri i by setting
+
+                               R0 = ∅    and Ri = Ri−1 ∪ {unu = 1 | u ∈ Pi } for i ⩾ 1,
+
+where nu are some positive integers (depending on u).
+    Clearly, each nonidentity element of the group
+                                                             *       ∞
+                                                                                +
+                                                                     [
+                                              G = G(∞) =         X         Ri
+                                                                     i=1
+
+is conjugated to a power of a period (of some rank). It is known that, if all numbers nu are sufficiently large and odd,
+then, in the group G(∞), the order of each period u is precisely nu (see, e.g., [Olsh89], Theorem 26.4).
+
+                                                            7
+    Choose a sufficiently large prime p and put
+                                                    
+                                                        p    if ϕ(u) ∈
+                                                                     / hai \ {1};
+                                             nu =
+                                                        p2   if ϕ(u) ∈ hai \ {1},
+
+where ϕ: F (X) → haip × hx1 ip × hx2 ip × . . . is the natural homomorphism of the free group onto the elementary abelian
+p-group. Thus, in the group G = G(∞), the order of each period u is either p or p2 depending on the value of ϕ(u).
+Lemma 2. If the prime p is sufficiently large, then
+ 1) the group G is periodic of exponent p2 ;
+ 2) the homomorphism ϕ induces a homomorphism (denoted by the same letter) of the group G onto the elementary
+    abelian p-group;
+ 3) an element g of G has order p2 if and only if ϕ(g) ∈ hai \ {1} (the orders of other nonidentity elements are p);
+ 4) for each positive integer i and each integer k, the mapping fi,k : X → G that maps letter xi to ak xi and fixes the
+    other letters of the alphabet X extends to an automorphism of G.
+Proof. The first assertion is true, because each element is conjugate to a power of a period and the periods have
+orders p and p2 . The second assertion follows from the form up = 1 of the defining relations.
+     To prove the third assertion, consider an element g of the group G. This element is conjugate to a power of a
+                                                         2
+period: g = t−1 uk t. If p divide k, then the equality up = 1 (valid for any period u) implies that the order of g is either
+p or 1. On the other hand, ϕ(g) = ϕ(uk ) = 1. So, in this case, the assertion 3) is true. If p does not divide k, then the
+order of g coincides with the order of the period u. On the other hand, the inclusion ϕ(g) ∈ hai \ {1} is equivalent to
+the inclusion ϕ(u) ∈ hai \ {1} and the assertion follows from the above remark on the orders of periods.
+     Let us prove the fourth assertion. Note that it is sufficient to show that the mappings under consideration extend
+to endomorphisms, because, if this is true, then the endomorphisms fi,k and fi,−k are mutually inverse.
+     To verify that the mapping fi,k can be extended to an endomorphism, it is sufficient to show that fi,k transforms
+the defining relations into valid equalities in G. Consider a defining relation ul = 1, where l is either p or p2 depending
+on the value of ϕ(u). The mapping fi,k induces an automorphism of the elementary abelian p-group that fixes each
+element of the subgroup hai. Therefore, ϕ(fi,k (u)) ∈ hai \ {1} if and only if ϕ(u) ∈ hai \ {1}. Thus, by assertion 3),
+the element fi,k (u) has the same order l as the period u. Hence, the mapping fi,k transforms all the defining relations
+into valid equalities and Lemma 2 is proved.
+Proof of Theorem 6. The group G constructed above contains the subgroup N = hx1 , x2 , . . .i ker ϕ of index p.
+According to Lemma 2(3), this subgroup satisfies the identity xp = 1.
+    Now, consider a characteristic subgroup H of G. This subgroup is invariant, in particular, under the automor-
+phisms fi,k . The automorphisms fi,k induce automorphisms of the elementary abelian p-group
+
+                                            E = haip × hx1 ip × hx2 ip × . . . .
+
+Therefore, the image ϕ(H) of H is a subgroup of E invariant under all automorphisms fi,k . But any such invariant
+subgroup of E is either trivial or containing a. Therefore, H is either contained in ker ϕ (and, hence, the quotient G/H
+is infinite and even has both-side infinite chains of normal subgroups) or containing an element of order p2 (by
+Lemma 2(3)) and H does not satisfy the identity xp = 1. This completes the proof of Theorem 6.
+
+REFERENCES
+[Adyan75]Adyan S.I. The Burnside problem and identities in groups. Moscow: “Nauka”, 1975.
+[BeK03] Belyaev V.V., Kuzucuoğlu M. Locally finite barely transitive group //Algebra i Logika. 2003. V.42. no.3.
+         P.261–270.
+[KaM82] Kargapolov M.I., Merzlyakov Yu.I. Fundamentals of group theory. Moscow: “Nauka”, 1982.
+[KlM09] Klyachko Ant. A., Melnikova Yu.B. A short proof of the Khukhro–Makarenko theorem on large characteristic
+         subgroups with laws // Mat. Sbornik (to appear). See also arXiv:0805.2747 .
+[Kur62] Kurosh A.G. Lectures on general algebra. Moscow: “Fiz.-Mat.Lit.”, 1962.
+[Olsh89] Olshanskii A.Yu. Geometry of defining relations in groups. Moscow: “Nauka”, 1989.
+[BrNa04] Bruno B., Napolitani F. A note on nilpotent-by-Černikov groups // Glasgow Math. J. 2004. 46, 211-215.
+[But08] Button J.O. Largeness of LERF and 1-relator groups // arXiv:0803.3805 , 2008.
+[KhM07a] Khukhro E.I., Makarenko N.Yu. Large characteristic subgroups satisfying multilinear commutator identities
+         // J. London Math. Soc. 2007. V.75. no.3. P.635–646.
+[KhM07b] Khukhro E.I., Makarenko N.Yu. Characteristic nilpotent subgroups of bounded co-rank and automorphically-
+         invariant ideals of bounded codimension in Lie algebras // Quart. J. Math. 2007. V.58. P.229–247.
+[KhM08] Khukhro E.I., Makarenko N.Yu. Automorphically-invariant ideals satisfying multilinear identities, and group-
+         theoretic applications // J. Algebra 2008. V.320. no.4. P.1723–1740.
+
+                                                                8
+

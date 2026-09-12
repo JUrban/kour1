@@ -2668,3 +2668,11 @@ The19.1 algebraic RFRS argument is sound; exact prior topological statements cov
 The52-file source/evidence audit returned actual exit0 with the terminal sentinel (tool chunk5d0576); hashes, saved GAP rows, stopped prefix and byte-identical coordinate replay pass. Candidate count remains44, outside human reviews0. All cited deep topological/homological proofs remain imported within the stated reading scopes.
 
 n=7 snapshot at2026-09-12T10:09:36.749305+00:00: six workers live,0 completed shards,40,880,000 checked nodes, combined RSS57,409,780 KiB. Still no n=7 proof claim.
+
+## 2026-09-12 10:37 UTC — 17.118 sharp partial bounds
+
+Wrote a complete deletion-lemma proof of the class-dependent bound p^(c+1), where c is the class of the given exponent-p maximal subgroup. An explicit finite squarefree-word algebra example has a characteristic exponent-p subgroup of index exactly p^p and none of smaller index; the proof identifies that subgroup intrinsically and uses a cyclic permutation of p letters. This makes the class bound sharp at c=p-1. The optimal small-prime answers are4 and27; the latter upper bound imports Laffey1976, whose full short source was read with its classical dependencies explicitly left imported. The known2009 infinite counterexample does not settle the finite question.
+
+All6,561 words and19,683 generator edges in the smaller3^8 example pass an independent convolution checker, together with every cube, cyclic image and five forced corruptions. Native GAP independently builds a faithful16-dimensional matrix group and verifies its isomorphism with the pilot quotient. The35-file source/evidence replay completed with actual exit0 and terminal sentinel (tool chunk c1aad5). General p>=5 and partial-result priority remain unresolved; new complete candidates44, outside reviews0.
+
+At 2026-09-12T10:34:23.296460+00:00, the n=7 snapshot still has no complete aggregate proof status. Three workers have pass markers but their actual exit records await collection by the sequential controller; three workers remain live, combined RSS27,878,024KiB. No restart or full n=7 claim.

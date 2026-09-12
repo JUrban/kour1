@@ -1,0 +1,106 @@
+Math. Z. 149, 43 -45 (1976)                                           Uathematische
+                                                                         zeitschrift
+                                                                     9 by Springer-Verlag 1976
+
+
+
+
+The N u m b e r of Solutions of x 3 = 1 in a 3 - G r o u p
+
+Thomas J. Laffey
+Department of Mathematics, University College, Belfield,Dublin 4, Ireland
+
+
+Let G be a finite group and let p be a prime divisor of [G[. Let T = {xeGlxP= 1}.
+It is known ([2]) that if G is not a p-group then irf<
+                                                     = )plGr
+                                                        - ~ and this inequality
+is, for Mersenne primes, best possible. For p = 2 it is easy to check that if G is a
+2-group not of exponent 2, then [TI<3[Gt and this bound is attained e.g. in
+the dihedral group of order 8. In this note we show that rTI<~IGI when G is
+a 3-group not of exponent 3 and again this bound is best possible. This answers
+a question posed by MacHale. The negative solution to the Hughes Hp-problem
+([3]) suggests that no result of this type (i.e. IT[ < k lGI where k < 1 (k independent
+of G)) is likely for G a p-group not of exponent p for p > 3.
+     The notation is standard (c.f. [1]).
+     Our result is:
+
+Theorem. Let G be a finite 3-group not of exponent 3 and let T={x~Glx3= 1}.
+Then   Irl<7~GI.
+    This inequality is best possible, for let
+
+
+
+    G=           1 0          a,b,c,d,e, f e Z 3 and a + c + f = O . .
+                 c 1
+                 e   f
+
+Then G has order 243, exponent 9 and JT] = 189 =~ ]G[.
+
+Proof of Theorem. We assume the theorem is false and let G be a minimal counter-
+example. Let N be a normal subgroup of G of order 3. Then GIN has exponent 3
+since, otherwise,
+
+    r{gNIg3EN}I~=~IG/N]
+44                                                                             Th. J. Laffey
+
+forcing
+
+     ]TI~}[G],
+
+a contradiction. Next, if N14:N is a normal subgroup of G of order 3, then G
+can be embedded in (G/N) • (G/Nt) which has exponent 3, giving a contradiction.
+So N is the unique minimal normal subgroup of G. In particular Z(G) is cyclic.
+Since [TI >89IGI, Z ( G ) h a s exponent 3.
+   We thus have
+   I. IX (G)[ = 3 and G/Z(G) has exponent 3.
+   By results of Levi and van der Waerden ([1], III, (6.5), (6.6)) we have
+   II. (a) For x, yaG,
+    (i) Ix, y, y-I EZ(G)
+   (it) (xy) a =X3y 3 I-X,2-113 IX, y-l, X] IX, y-t, y-l']
+   (b) G has (nilpotency) class at most 4.
+   Now II(a)(ii), (b) imply that if ws[G',G], then (wg)S=w3g 3 for all gaG.
+Hence, since Ir l > 89
+                     IG I,
+   III. [G', G] has exponent 3.
+   Let g, h~G. Using II(b), we have
+
+     1 = Eg, h 3] = Eg, hi 3 r h, h y .
+
+Hence III implies
+    IV. [ g , h ] 3 = l for all g, haG.
+    Let xaG'•T. By II(b), [ - x , w , x ] = l for all waG. Let Y = T ~ x - t T . Then
+Y={yaT[[x,y,y]=l}. Let w ~ T - Y . Then xw and xZw belong to G - T . Also
+if w e T - Y , x w ~ T - Y , so x ( T - Y ) c ~ x Z ( T - Y ) is empty. Thus [T-YI<=
+89                     Hence IY[>2[GI. Now let y a Y and let U = Y ~ y - I Y . Note
+that IUI>89          Let u~U. Then [ x , u , y ] Ex, y , u ] = 1.
+    The map: g ~ Ix, g, y] Ix, y, g] (g~G) is a homomorphism of G whose kernel
+contains U. Hence l-x, g, y] Ix, y, g] = 1 for all g a G.
+    For fixed g~G, the map: w~[x,g,w][x,w,g] (w~G) is a homomorphism
+with Y in its kernel, so it is the identity. Hence we have
+    V. For x~G'c~ T, g, hEG, [x,g,h][x,h,g]=l.
+    In particular
+    VI. For x~G'~T, g~G, [ x , g , g ] = l .
+    Now IV, VI and II(a)(i) imply that G satisfies the hypotheses of a theorem
+of Heineken (I-l], III (6.9)), so
+    VII. G has class at most 3.
+    Now let g a G and let h~Tc~gT~g2T. Then, by II(a)(ii), [g, h -~, g] = 1. The
+map: w ~ [g, w, g] (w~G) is a homomorphism, so
+    VIII. [g, w, g] = 1 for all g, w~G.
+    But now II (a)(it) implies (u v)3 = u 3 vs for all u, v ~ G and we get a contradiction
+immediately.
+The Number of Solutions of x 3= 1 in a 3-Group                                                  45
+
+
+References
+
+1. Huppert, B.: Endliche Gruppen, Bd. I, Berlin-Heidelberg-New York: Springer 1967
+2. Laffey, T.J.: The number of solutions of x p= 1 in a finite group. Math. Proc. Cambridge philos.
+   Soc., to appear
+3. Wall, G.E.: On Hughes' Hp problem: In: Proceedings of the International Conference on the
+   Theory of Groups (Canberra 1965), pp. 357-362. New York-London-Paris: Gordon and Breach
+   1967
+
+
+Received December 12, 1975
+
