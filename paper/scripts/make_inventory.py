@@ -8,8 +8,8 @@ import argparse
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-PAPER = ROOT / "paper"
+PAPER = Path(__file__).resolve().parents[1]
+ROOT = PAPER.parent
 SPECIAL = {
     "21.106": ("subsec:concise", None),
     "21.68": ("subsec:semiabelian", None),
@@ -29,15 +29,18 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--require-complete", action="store_true")
     args = ap.parse_args()
-    rows = json.loads((ROOT / "research/complete-candidate-ledger.json").read_text())["candidates"]
+    frozen = PAPER / "data/frozen-candidate-ledger.json"
+    rows = json.loads(frozen.read_text())["candidates"]
     inventory = [r"""\section{The deadline candidate inventory}
 \label{app:inventory}
 This table preserves all 46 entries on the deadline ledger, including its
 covered subparts. It is not a list of independently accepted new results.
 Several entries share imported ingredients. The mathematical discussions
 give the relevant scope and dependencies; the frozen ledger supplies the
-original statement and evidence paths. Problems 19.62 and 19.63 are
-duplicates and are counted once.
+original statement and evidence paths. The historical entry for 19.62
+also groups 19.63 with it; the latter's square-closedness criterion was
+already published before the experiment, as explained in
+Section~\ref{cand:19.62}. This grouping contributes one ledger entry.
 
 \small
 \begin{longtable}{@{}p{0.10\textwidth}p{0.10\textwidth}>{\raggedright\arraybackslash}p{0.62\textwidth}p{0.09\textwidth}@{}}

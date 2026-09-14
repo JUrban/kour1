@@ -125,3 +125,161 @@ Add precise primary-source records for the later candidate and partial
 appendices as they are written. Check all load-bearing imported theorem
 statements and versions. Do not turn the historical limited novelty search
 into a claim of established priority.
+
+## Completion of the first mathematical writing pass, 14 September
+
+All 46 candidate proofs have now been read and rewritten. This is a
+first pass, not the final review or outside acceptance. The later source
+work includes the following concrete checks.
+
+- Bray: reread the main irreducibility statement and the full short
+  heart argument. Only that modular irreducibility input is imported
+  into 12.40, not a first-cohomology claim.
+- Ershov: reread the complete filtered Golod--Shafarevich setup and
+  inequalities 2.6/2.7 used in 19.93. The published survey is in IJAC,
+  not an AMS survey volume.
+- The J1 paper's main theorem and Conder's cycle constructions and
+  parity choices were reread in retained primary texts. Their large
+  existence inputs are credited; no new proof of those inputs is claimed.
+- Myasnikov--Remeslennikov: reread the unrestricted A-group axioms and
+  tensor-completion universal property. Jennings 5.2 was reread for the
+  finite-dimensional unipotent embedding used in the wreath argument.
+- FNP: reread count-polynomial Lemmas 1.3.12/1.3.16, cyclic limits
+  2.1.9/2.2.9/2.3.11, regular-semisimple limits 2.1.3/2.2.3/2.3.4,
+  and semisimple limits 3.1.13/3.1.15/3.1.18 in the author's primary
+  chapter. These match the manuscript's field-size products. The
+  intermediate M-star index discrepancy is distinguished from the
+  theorem formula. The analytic argument is written out independently.
+- Nuzhin 2026: reopened the primary Russian PDF and reread the definitions,
+  Theorems 1/2, and root-action formulas. The all-type square criterion
+  and prior answer to 19.63 are explicit. Troyanskaya's primary 2024
+  statement has exactly the odd-characteristic/G2 exception recorded
+  in the manuscript. The final source pass will not imply that its
+  entire proof was newly audited in this writing phase.
+- The 19.61/19.62 auxiliary proof files are byte-identical copies.
+  Fresh executions from paper/ancillary passed both complete target
+  suites, twelve corruptions for each suite, and all 120 G2 integer
+  polynomial matrix identities. The mathematical reduction and the
+  square-completion sandwich were separately read.
+- All five primary 20.89 proof notes and their local reduction were
+  reread before writing the partial appendix. The manuscript preserves
+  the order of the Shumyatsky applications, torsion-free lift, and
+  ambient finite-sink quantifier. Imported theorem statements remain
+  identified for final source review.
+- All p-Jordan soluble, normal-Sylow, A5, permanence, and finite-kernel
+  arguments were reread. The mixed-order characteristic-subgroup trap
+  is avoided by working in O_(p'). The normal finite-kernel theorem
+  retains its generalized p-Jordan hypothesis.
+- The complete 20.100 reduction, fixed-n proof calculus, 17.118
+  characteristic-index argument, 19.108 orbit argument, 18.120
+  normal-closure criterion, class-two 6.47 argument, and central-product
+  21.114 construction were read for their stated restricted scopes.
+  The historical 26-hour n=7 verification is not a new replay.
+- The prior-results appendix was written from the actual retained
+  arguments: 13.19, 17.34, 21.115, 16.60, 21.132, 21.42, 20.33,
+  20.8, 20.11, 19.9, 16.14, 19.48, and the 12.69 formulation audit.
+  The prior citations and original source-audit depths remain explicit.
+- Current primary arXiv records for Sun v6, Shumyatsky v1, Hu v2, Wilde,
+  Sambale's September 2026 preprint, and the May 2026 twisted-character
+  paper were opened. The ProofForum tensor-square landing page confirms
+  the pre-experiment September 1 upload; its AI review label is not
+  mathematical evidence. Primary MathNet corrected the 2015 Shakhova
+  initials to S. A. The prior net preprint remains version-qualified.
+
+## Final source and application pass, 14 September
+
+The earlier pending items above are historical checkpoints. This pass
+closes them at the following explicitly limited levels; it does not
+claim to have independently proved the imported literature.
+
+- BCGLO Lemma 2.2 and its preceding definition were reread exactly:
+  the coprime commutators generating the hyperfocal subgroup match
+  the application in 19.56.
+- CGG Claims 3.1 and 3.2 and their proofs were reread for 9.45.
+  The normalized-dual and binary Construction A inputs remain credited.
+- Gvaramiya 1985, Section 3, Theorem 8, and Krapez--Marinkovic's
+  ordinary versus three-sorted conventions were reread for 9.4.
+  The corrected infinite example works over the same prime field
+  as the finite-group isotope in the main argument.
+- The fresh GAP check in scripts/check_character_input.g exited zero
+  on 14 September (tool observation 5b0eed). It verifies the 3.A7
+  order, four Frobenius pairs, the five modular decomposition rows,
+  their conjugates, projective dimensions, and ordinary Galois orbits.
+  This closes the input-assignment question for 4.55. It does not
+  replace the historical permutation/MeatAxe reconstruction with a
+  claim of a new full reconstruction.
+- Johnston--Rumynin's published metadata were verified through primary
+  publisher content and the Warwick institutional record: Journal of
+  Algebra 687 (2026), 776--791, DOI 10.1016/j.jalgebra.2025.09.014.
+  The full published text was unavailable (publisher HTTP 403;
+  accepted manuscript still embargoed). The manuscript therefore
+  restricts the explicit conflict to arXiv:2507.21316v2, 9 October
+  2025, whose definitions and Ext display were read. Equivalence to
+  the published text is not asserted.
+- Jennings's characteristic-zero, finitely generated torsion-free
+  hypotheses and Theorem 5.2 were reread, as was the finite-dimensional
+  augmentation-quotient application used in 14.26.
+- Fernandes--Tsurkov's exact exponent-four, metabelian, class-at-most-four
+  variety and Theorem 9.1 were reread. The prior counterexample is
+  confined to that proper subvariety.
+- Ballester-Bolinches et al., Theorem B and Corollary 6, were reread:
+  their soluble-group statement assumes trivial Frattini subgroup.
+  The manuscript's 17.39 groups have a nontrivial Frattini subgroup.
+- Arezoomand et al., Theorem 1.1 and Proposition 4.8, including the
+  proposition's proof, were reread for J1. Its cited base-size
+  computation remains an imported input. Abdollahi--Arezoomand--Tracey,
+  Lemma 7, was read in the primary 2022 PDF; it is a transitive-action
+  result. The manuscript provides its own extension to arbitrary
+  faithful actions.
+- Bergman's primary Lie-epimorphism manuscript title page and abstract
+  were visually inspected. The title is Epimorphisms of Lie Algebras;
+  it remains cited as an unpublished manuscript. No invented journal
+  placement or publication date is supplied.
+- Sun's Theorem 1.4 and Conjecture 4.1, Shumyatsky's Lemma 3.2 and
+  Theorems 3.3 and 4.2, and Wehrfritz's triangular scalar-orbit and
+  Hall--Baer induction were reread for the almost-Engel partial.
+  The ambient sink quantifier, normality, characteristic-zero
+  reduction and order of applications match the stated hypotheses.
+- Kearnes--Mayr--Ruskuc, Theorem 4.2 and proof, and d'Elbee et al.,
+  Theorem 4.35 and its construction setting, were reread. Their
+  prior subdirect-product and amalgamation results remain explicit.
+- Hong et al., Proposition A, was reread for the cancellative
+  torsion-free positive grading. Mathieu, Proposition 6 and the
+  preceding lattice-preservation argument, and Dekimpe--Dere's
+  explicit three-step/three-generator and four-step/two-generator
+  statements were reread for the prior-result consequences.
+- Jaikin-Zapirain's Corollaries 1.2 and 1.5 were reread with the
+  finitely generated subgroup hypothesis intact. The manuscript's
+  reduction from an arbitrary initial free group is supplied separately.
+- Wilde's Theorem C and Lemma 2.7 were reread. The 19.108 partial
+  now spells out the nonfaithful quotient reduction, faithful degree,
+  induced linear character, and abelian subgroup of type C_(p^3)^2.
+- Yerrapati--Dixit--Shukla's Theorem 3.1 and proof were reread;
+  the tensor-square result is prior. The alternative proof in the
+  appendix does not rely on their problematic intermediate Lemma 2.19.
+  Sambale's 8 September 2026 Theorem 1 applies to arbitrary groups
+  and mixed left/right cosets, and already implies the finite bound.
+- The symplectic central-extension source introduction and the
+  Akita--Kawasaki--Satoh braid-group Schur-cover presentation were
+  reread for 19.9. The Bardakov--Lavrenov--Neshchadim primary PDF
+  header verifies volume 21(1), pages 269--281, DOI
+  10.4310/HHA.2019.v21.n1.a12.
+- Nuzhin 2023, Theorem 1 and Section 3, were reread against the
+  primary full issue and MathNet record
+  https://www.mathnet.ru/eng/jsfu1119. The quoted prior m!-triple
+  inclusion and the criterion cover the simply laced cases;
+  Corollary 2 explicitly gives the stated good-characteristic cases.
+  Added this earlier coverage to 19.62 (E017). The 2026 all-type
+  criterion remains separately credited for 19.63.
+- All 46 candidate scopes were compared again with their transcribed
+  Notebook statements and actual proofs. Selected difficult original
+  typography (9.4, 15.65, 16.20, 19.62, 20.92) was viewed again.
+  All partial and prior-result expositions were reread mathematically.
+  The per-candidate final ledger records the concrete checks.
+
+The final source pass leaves no unsupported application identified in
+the revised text. Historical proof audits, primary theorem-statement
+checks, and full proof readings are distinguished above. Novelty search
+remains bounded, outside reviews remain zero, and the inaccessible
+Johnston--Rumynin publication is handled by an explicit version limit.
+Build, layout and source-bundle checks are in completion-audit.md.

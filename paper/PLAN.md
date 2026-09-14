@@ -67,13 +67,14 @@ analysis with input digests and precise limitations.
 - Compile and validate the final PDF and standalone source bundle;
   perform a requirement-by-requirement completion audit and commit locally.
 
-## Current questions
+## Publication metadata
 
-Author names/affiliations and the experimental model/reasoning setting
-have been requested from the user. The Git remote names
+Author names and affiliations remain pending. The user confirmed the
+historical model and reasoning setting as gpt-6-astra xhigh; this is
+attributed metadata, not a measurement from the export. The Git remote names
 `https://github.com/JUrban/kour1.git`; public availability and the precise
 archival revision must be checked before describing it as published.
-The supplied session identifies Codex 0.153.4 but currently no model ID
+The supplied session identifies Codex 0.153.4 but no model ID
 has been found in that export. Do not substitute the current model or
 current configuration for the historical run.
 

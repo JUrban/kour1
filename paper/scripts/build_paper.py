@@ -40,6 +40,14 @@ def main():
         "started_utc": started.isoformat(),
         "finished_utc": datetime.now(timezone.utc).isoformat(),
         "version": subprocess.check_output([tectonic, "--version"], text=True).strip(),
+        "source_sha256": {
+            str(path.relative_to(PAPER)): hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in sorted(
+                [PAPER / "main.tex", PAPER / "references.bib",
+                 PAPER / "figures/trajectory.pdf"]
+                + list((PAPER / "sections").rglob("*.tex"))
+                + list((PAPER / "appendices").rglob("*.tex")))
+        },
     }
     pdf = build / "main.pdf"
     if result.returncode == 0 and pdf.is_file():

@@ -9,6 +9,20 @@ We therefore describe observable transitions---a proof being saved, a
 certificate being completed, a claim being withdrawn---rather than
 assigning precise discovery times to unobserved reasoning.
 
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/trajectory.pdf}
+\caption{Two observable aspects of the frozen trajectory.
+The upper panel counts the 198 commits within the research window;
+the closeout commit 16 seconds later is excluded.
+The lower panel retrospectively follows the first committed principal
+proof file for each family retained on the final candidate list.
+It excludes withdrawn candidates and does not measure the contemporaneous
+candidate count, proof completion, novelty, or outside acceptance.
+Both panels are derived from the committed CSV measurements.}
+\label{fig:trajectory}
+\end{figure}
+
 \subsection{Selection, short arguments, and early corrections}
 
 The initial plan favored finite counterexamples, explicit constructions,
@@ -157,4 +171,3 @@ These integrity checks establish that the named artifacts existed and
 matched recorded digests. They do not establish the truth or novelty of
 their contents. The research deadline and the subsequent administrative
 closeout are kept separate in the chronology.
-

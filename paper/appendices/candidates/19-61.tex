@@ -1,0 +1,120 @@
+\subsection{19.61: root closure preserves the derived carpet}
+\label{cand:19.61}
+
+Use the notation of Section~\ref{cand:19.62}. For a carpet \(A\), put
+\[
+ H=\langle x_r(A_r):r\in\Phi\rangle,\qquad
+ D_r=\{t\in K:x_r(t)\in H\}.
+\]
+The candidate asserts that \(D\) is a carpet and
+\(\partial D=\partial A\), over every commutative ring.
+Troyanskaya previously proved carpet closedness of this root
+closure in odd characteristic, with characteristic divisible by
+three also excluded in type \(G_2\) \cite{troyanskaya}.
+The argument here uses Nuzhin's known square criterion and a
+universally valid finite adjoining lemma. Priority of the stronger
+statement is not established by those source comparisons.
+
+\begin{lemma}
+Let \(B=\partial A\), fix \(a\in A_r,b\in A_{-r}\), and replace
+\(A_r\) by \(A_r+\Z a^2b\), leaving all other entries unchanged.
+The resulting family \(A'\) is a carpet and \(\partial A'=B\).
+\end{lemma}
+\begin{proof}
+Consider an ordered Chevalley rule whose first input changes from
+\(x\) to \(x+na^2b\). Its parameter expands as
+\[
+ c(x+na^2b)^iu^j
+   =\sum_{k=0}^i c\binom ik n^k x^{i-k}a^{2k}b^ku^j.
+\]
+The \(k=0\) term lies in \(B_{ir+js}\) by definition. For every
+other term, the required universal implication is
+\begin{equation}
+ c\binom ik x^{i-k}a^{2k}b^ku^j\in B_{ir+js},
+ \quad x,a\in A_r,\ b\in A_{-r},\ u\in A_s.
+ \label{eq:adjoin-target}
+\end{equation}
+The variables \(x,a\) are independent even though their root
+labels coincide. Multiplication by any integer \(n^k\) is allowed
+in the additive subgroup \(B_{ir+js}\).
+The analogous substitution into the second input is checked
+separately, retaining the constant of the original ordered rule;
+reversing an ordered source pair in \(G_2\) can change its absolute
+constant. A nontrivial rule has distinct nonopposite source roots,
+so only one input subgroup changes.
+
+The same root-plane argument as in Section~\ref{cand:19.62}
+reduces \eqref{eq:adjoin-target} to types \(A_2,B_2,G_2\).
+The ancillary certificates apply exactly the integer proof
+calculus explained there. Their complete sizes are
+\[
+\begin{array}{c|rrr}
+ \text{type}&\text{targets}&\text{nodes}&\text{largest derivation}\\ \hline
+ A_2&12&72&6\\
+ B_2&48&380&12\\
+ G_2&240&2739&19\\ \hline
+ \text{total}&300&3191&19
+\end{array}
+\]
+Every noninitial node lies in \(B\) by a carpet application and,
+where needed, a Bezout combination of two such applications.
+The last coefficient divides the coefficient in
+\eqref{eq:adjoin-target}. Thus each certificate is a finite
+integer algebraic proof valid under every substitution in \(K\).
+They prove all 300 implications. For example, in type \(A_2\)
+with \(p=r+s\), the only changed first-input term is \(a^2bu\).
+The rules give \(au\in B_p\), then \(abu\in B_s\), and then
+\(a^2bu\in B_p\). The longer certificates perform the same
+operation where coefficients two and three intervene.
+
+The coverage checker reconstructs the requests by repeated sparse
+polynomial multiplication, independently of the binomial formula
+used by the target generator. It covers both inputs of all ordered
+rules: 416 substitutions and 600 nonconstant terms, giving the
+300 requests after coincident requests are combined by gcd.
+The checked rule tables and the complete derivations accompany
+this paper; their search procedure is not a mathematical premise.
+
+Expansion now gives \(\partial A'\subseteq B\); monotonicity gives
+the reverse inclusion. Since \(B\subseteq A\subseteq A'\), every
+defining parameter of \(A'\) lies in its designated entry.
+This is precisely the carpet condition.
+\end{proof}
+
+Starting with \(C^{(0)}=A\), define
+\[
+ C^{(n+1)}_r=C^{(n)}_r+
+ \langle u^2v:u\in C^{(n)}_r,\ v\in C^{(n)}_{-r}\rangle_{\Z}.
+\]
+Each \(C^{(n)}\) is a carpet with derived family \(B\).
+Indeed, adjoin any finite collection of the displayed generators
+one at a time. Its parameters remain available after earlier
+adjoinings, so the lemma applies throughout. These finite
+extensions form a directed family whose union is \(C^{(n+1)}\).
+A carpet condition involves finitely many elements, and a derived
+parameter uses only two input elements. Hence directed union
+preserves both carpet membership and equality of the derived family.
+
+Put \(C_r=\bigcup_n C^{(n)}_r\). Again \(C\) is a carpet and
+\(\partial C=B\). Any \(u\in C_r,v\in C_{-r}\) lie in a common
+stage, so \(u^2v\) lies in the next stage. Thus \(C_r^2C_{-r}\subseteq
+C_r\), and the known square criterion makes \(C\) closed.
+Since \(A\subseteq C\), one has \(H\subseteq E(\Phi,C)\);
+closedness yields
+\[
+ A\subseteq D\subseteq C.
+\]
+The root-group addition law makes each \(D_r\) additive.
+Every commutator parameter formed from \(D\) belongs to
+\(\partial C=B\subseteq A\subseteq D\), proving that \(D\) is
+a carpet. Finally monotonicity gives
+\[
+ B=\partial A\subseteq\partial D\subseteq\partial C=B.
+\]
+The constructed square completion \(C\) need not equal \(D\);
+the proof only requires the displayed sandwich. It does not assert
+that the adjoined root elements already belong to \(H\).
+In rank one there are no nonopposite commutator conditions and
+all derived families are zero, so the conclusion is immediate.
+See \artifact{research/19.61-proof.md} and
+\artifact{results/19.61-square-completion-packet.json}.

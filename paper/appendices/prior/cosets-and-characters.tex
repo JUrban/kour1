@@ -1,0 +1,101 @@
+\subsection{21.115: Fourier support and class-two linearization}
+\label{prior:21.115}
+
+Sambale's preprint of 8 September 2026, two days before the
+experiment, proves the general complement bound for unions
+of cosets, including mixed left and right cosets
+\cite{sambale-cosets}. The experiment first developed the
+following restricted arguments, then found that resolution
+and excluded the problem from its candidate count.
+The earlier Sambale--T\u arn\u auceanu paper treated several
+special cases \cite{sambale-tarnauceanu}; the character-product
+method below also appears in Szegedy's work \cite{szegedy}.
+
+If cosets \(g_iH_i\), \(1\le i\le n\), do not cover a finite
+abelian group \(A\), choose \(x_0\) outside their union.
+Characters separate points in \(A/H_i\), so choose \(\chi_i\)
+trivial on \(H_i\) with \(\chi_i(x_0)\ne\chi_i(g_i)\).
+The nonzero function
+\[
+ f(x)=\prod_{i=1}^n(\chi_i(x)-\chi_i(g_i))
+\]
+vanishes on the union and is a linear combination of at most
+\(2^n\) distinct characters. For a nonzero combination
+\(f=\sum_{\chi\in T}a_\chi\chi\), orthogonality and
+Cauchy--Schwarz give
+\[
+ |A|\sum|a_\chi|^2=\|f\|_2^2
+ \le|\operatorname{supp}f|\|f\|_\infty^2
+ \le|\operatorname{supp}f|\,|T|\sum|a_\chi|^2.
+\]
+Thus the complement has at least \(|A|/2^n\) elements.
+
+The same deduction applies to a class-two finite group
+whose derived subgroup has odd order. On its underlying
+set define \(x+y=xy[x,y]^{-1/2}\), taking the unique half
+only in the central odd-order derived subgroup.
+Class-two commutator identities show this is abelian:
+both triple sums equal
+\(xyz[x,y]^{-1/2}[x,z]^{-1/2}[y,z]^{-1/2}\).
+Every original subgroup is additive, since the half of
+its commutator is a power of that commutator.
+For fixed \(g\), \(T_g(x)=[g,x]\) is an additive central-valued
+map with \(T_g^2=0\); hence \(L_g=1+\frac12T_g\) is an
+additive automorphism, and \(gx=g+L_g(x)\).
+Every original coset is therefore an affine coset in the
+same abelian group. Applying the Fourier argument proves
+the bound. This avoids any assumption that the whole
+group has odd order, but does not cover every class-two
+2-group. The general theorem is credited to the earlier
+preprint, not inferred from these restricted cases.
+See \artifact{research/21.115-partial-proof.md}.
+
+\subsection{16.60: a tensor proof of an existing character bound}
+\label{prior:16.60}
+
+The full affirmative answer was stated in the May 2026
+preprint of Yerrapati--Dixit--Shukla
+\cite[Theorem~3.1]{yerrapati-dixit-shukla}.
+For a finite group \(G\) and any automorphism \(\alpha\),
+the number of elements inverted by \(\alpha\) is at most
+\(T(G)=\sum_{\chi\in\operatorname{Irr}(G)}\chi(1)\).
+The following proof supplies the needed estimate without
+treating a character value on a product as a product of
+character values.
+
+For a unitary irreducible representation \(\rho\) on \(V\),
+put
+\[
+ E=\frac1{|G|}\sum_{g\in G}\rho(g)\otimes\rho(\alpha(g)),
+ \qquad F(v\otimes w)=w\otimes v.
+\]
+The operator \(E\) is the orthogonal projection onto invariants
+of \(V\otimes(V\circ\alpha)\). Its rank is
+\(\dim\operatorname{Hom}_G(V^*,V\circ\alpha)\), at most one
+by Schur's lemma. The trace identity
+\(\tr((A\otimes B)F)=\tr(AB)\) gives
+\[
+ \iota_\alpha(\chi)
+ =\frac1{|G|}\sum_g\chi(g\alpha(g))=\tr(EF),\qquad
+ |\iota_\alpha(\chi)|\le\operatorname{rank}E\le1.
+\]
+The inequality uses an orthonormal basis of \(\operatorname{im}E\)
+and unitarity of \(F\); \(E\) need not commute with \(F\).
+The regular-character identity now yields
+\[
+ |\{g:\alpha(g)=g^{-1}\}|
+   =\sum_\chi\chi(1)\iota_\alpha(\chi)\le T(G).
+\]
+No involutivity of \(\alpha\) is needed.
+Alternatively, every inverted element lies in
+\(\operatorname{Fix}(\alpha^2)\), where the restriction of
+\(\alpha\) is involutive. The classical twisted indicator
+bound there and \(T(H)\le T(G)\) for \(H\le G\) imply the
+same result; the latter inequality follows by restricting
+the direct sum of all irreducible \(G\)-modules and using
+Frobenius reciprocity.
+The source audit identifies an unexplained scalar
+Cauchy--Schwarz passage in its Lemma~2.19; this tensor
+argument establishes the needed statement independently of
+that passage, without assigning priority to the answer.
+See \artifact{research/16.60-known-consequence.md}.

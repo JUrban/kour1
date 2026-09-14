@@ -1,28 +1,42 @@
 # Manuscript status
 
-The manuscript goal is active. No manuscript is yet represented as final.
+The requested manuscript and local handoff are complete: 94 pages,
+99 cited works, all 46 deadline candidate expositions, substantial
+partial results, prior-result comparisons, the experimental narrative,
+and reproducibility appendices. The paper is dated 14 September 2026.
 
-Completed: inspected the frozen research archive, session exports,
-existing TeX binaries, Git remote, and the original research plan/log;
-created the manuscript branch and full-scope work plan; generated and
-checked exact export/Git measurements with two extraction methods.
+All 46 candidates have two manuscript-phase mathematical reading passes.
+The partial and prior-result appendices were also reread. The final
+revised arguments have no unresolved finding from this internal review.
+This is same-agent review, not outside acceptance, formal verification,
+or established priority. E001--E018 in reviews/issue-log.md document the
+measurement, attribution, mathematical and typesetting corrections.
 
-Key findings: the two session files are different projections of the
-session, not a complete raw event log. The HTML contains cumulative
-token counters. Its final total includes cached input, so it must not be
-described as newly generated tokens. The final experimental repository
-has 199 commits through its closeout, of which 198 fall within the
-48-hour window. Principal proof texts total about 65,000 words. The user
-confirmed the historical model as `gpt-6-astra` with `xhigh` reasoning.
-Anonymous GitHub access is unverified; the local and remote HEADs differ.
+The final PDF compiled with Tectonic 0.17.0, exit zero, without undefined
+references, bibliography warnings or overfull boxes. All 94 rendered
+pages were visually inspected. The standalone source archive compiled
+outside the repository using only cached TeX resources and produced
+identical extracted PDF text. The full archive's inventory regenerated
+unchanged outside the repository.
 
-The main narrative and three representative proofs are drafted, together
-with 30 further candidate expositions: 33 of 46 entries now have arguments.
-A local Tectonic toolchain compiles the manuscript. The latest PDF has
-50 pages and includes all 33 current expositions; it is a working draft.
-The result review ledger separates first reading from final review.
+Fresh portable checks passed all 104 rank-two carpet targets, all 300
+square-adjoining targets, their deliberate-corruption controls, and all
+120 G2 integer polynomial identities. All 23 original ancillary files
+remain byte-identical to the frozen research artifacts. A separate fresh
+GAP check verified the character-table input assignments for 4.55.
+Large historical research computations were not all rerun.
 
-Next: develop the remaining 13 candidate expositions, the partial-result
-and prior-result appendices, and the chronology figure; complete source,
-mathematical, empirical, and rendered-page reviews; then validate a portable
-source bundle. Author and affiliation metadata remain pending.
+The measurement analyzer's final --check run passed, including the
+4,439 exported events, 3,616 token snapshots and 199 frozen commits
+(198 in the 48-hour window). Cached and uncached input remain separate;
+the reported total is not newly generated text. The historical model
+setting is user-supplied metadata, absent from the retained export.
+
+See reviews/completion-audit.md for scope, commands, outcomes and limits;
+see dist/manifest.json for the handoff file hashes. The manuscript source
+is saved locally on paper/arxiv-experiment. The frozen experimental
+archive, raw session inputs and unrelated research results are unchanged.
+
+Human author names and affiliations remain to be supplied before
+submission. Anonymous access to the frozen repository is unverified.
+No submission, external upload or Git push was performed.
