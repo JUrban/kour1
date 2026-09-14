@@ -1,0 +1,67 @@
+\subsection{16.38: periodic subgroups in a set product}
+\label{cand:16.38}
+\begin{proposition}
+If \(G\) is soluble and \(A,B\le G\) are periodic, every subgroup
+contained in the set \(AB\) is periodic.
+\end{proposition}
+\begin{proof}
+First, periodic soluble groups are locally finite. A finitely generated
+one has finite quotient by its last nontrivial derived subgroup,
+by induction on derived length. That subgroup is finitely generated
+by Schreier's theorem, and abelian periodic, hence finite.
+
+We need a cocycle observation. Let a locally finite group \(C\) act on
+a torsion-free abelian group \(D\), and let
+\(\delta(cd)=\delta(c)+c\delta(d)\).
+The image of \(\delta\) cannot contain both \(t\) and \(2t\) for \(t\ne0\).
+Indeed, choose preimages \(c_1,c_2\), and put \(H=\langle c_1,c_2\rangle\),
+which is finite. In \(\Q\otimes D\), averaging gives
+\[
+ v=|H|^{-1}\sum_{h\in H}\delta(h),\qquad
+ \delta(h)=v-hv.
+\]
+Average an inner product on the finite-dimensional real span of \(Hv\).
+The vectors \(v,v-t,v-2t\) then have equal norm. Expanding the last two
+equalities yields
+\(2\langle v,t\rangle=\|t\|^2\) and
+\(4\langle v,t\rangle=4\|t\|^2\), so \(t=0\).
+This averaging is over the finite group \(H\), not over all of \(C\).
+
+Suppose now that \(D\trianglelefteq E\) is torsion-free abelian and
+\(A,B\le E\) are locally finite. For \(\pi:E\to E/D\), let
+\(C=\pi(A)\cap\pi(B)\). The preimages of \(C\) in \(A,B\) map
+isomorphically to \(C\), since their intersections with \(D\) are trivial.
+Write their inverse sections as \(a,b\). In
+\(\pi^{-1}(C)=D\rtimes a(C)\), put \(b(c)=\delta(c)a(c)\);
+then \(\delta\) is a cocycle and \(C\) is locally finite.
+A factorization lying in \(D\) must have inverse quotient coordinates,
+and hence
+\[
+ D\cap AB=\{a(c)b(c)^{-1}:c\in C\}=-\delta(C).
+\]
+The observation shows that this set cannot contain both \(g\) and
+\(g^2\) for any \(1\ne g\in D\).
+
+It suffices to prove that \(\langle g\rangle\subseteq AB\) implies
+that \(g\) has finite order. Induct on the derived length of \(G\).
+The abelian case is immediate. Otherwise let \(D\) be its last
+nontrivial derived subgroup. Induction in \(G/D\) gives \(g^r\in D\)
+for some \(r>0\). The torsion subgroup \(T\) of \(D\) is normal in \(G\),
+and \(D/T\) is torsion-free abelian. Apply the preceding observation
+in \(G/T\) to \(g^rT\) and \(g^{2r}T\), both of which belong to the
+appropriate set product. It gives \(g^r\in T\), proving the claim.
+\end{proof}
+
+The set \(AB\) itself can contain elements of infinite order.
+For example, let \(D=\bigoplus_{i\ge1}\Z\), let
+\(C=\bigoplus_{i\ge1}C_2\) act by coordinate sign changes, and set
+\(\delta(c)_i=c_i\) for \(c_i\in\{0,1\}\).
+This is a cocycle. In \(D\rtimes C\), the two complements
+\[
+ A=\{(0,c)\},\qquad B=\{(\delta(c),c)\}
+\]
+are elementary abelian, whereas \(D\cap AB=-\delta(C)\) contains
+nonzero infinite-order elements and excludes their doubles.
+The theorem concerns subgroups contained in \(AB\).
+It also does not assert the locally soluble version of Problem~9.65.
+See \artifact{research/16.38-proof.md}.

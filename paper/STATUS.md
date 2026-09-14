@@ -16,7 +16,13 @@ has 199 commits through its closeout, of which 198 fall within the
 confirmed the historical model as `gpt-6-astra` with `xhigh` reasoning.
 Anonymous GitHub access is unverified; the local and remote HEADs differ.
 
-Next: write the methods and trajectory from those measurements; establish
-the paper build and result-by-result review ledger. The system has TeX
-binaries but lacks the required LaTeX packages, so a local toolchain is
-being prepared. Author and affiliation metadata remain pending.
+The main narrative and three representative proofs are drafted, together
+with 30 further candidate expositions: 33 of 46 entries now have arguments.
+A local Tectonic toolchain compiles the manuscript. The latest PDF has
+50 pages and includes all 33 current expositions; it is a working draft.
+The result review ledger separates first reading from final review.
+
+Next: develop the remaining 13 candidate expositions, the partial-result
+and prior-result appendices, and the chronology figure; complete source,
+mathematical, empirical, and rendered-page reviews; then validate a portable
+source bundle. Author and affiliation metadata remain pending.

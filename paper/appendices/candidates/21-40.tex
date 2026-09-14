@@ -1,0 +1,82 @@
+\subsection{Finitely many automorphism orbits in a rational linear group}
+\label{cand:21.40}
+
+For \kn{21.40}, let \(G\leq\GL_n(\Q)\) have finitely
+many orbits under its abstract automorphism group.
+Then \(G\) has a normal torsion-free nilpotent subgroup
+of class at most \(n-1\) and index at most
+\((2n+1)^{n^2}\).
+
+Fix \(g\in G\). Two members of \(g,g^2,g^4,\ldots\)
+are in one orbit. Thus some \(h=g^{2^i}\) and
+automorphism \(\alpha\) satisfy \(\alpha(h)=h^r\)
+for \(r=2^{j-i}>1\). The matrices
+\(\alpha^{-k}(h)\) are \(r^k\)-th roots of \(h\).
+We first show this forces every eigenvalue of \(h\)
+to be a root of unity.
+
+For an eigenvalue \(\lambda\) of \(h\), choose an
+eigenvalue \(\mu_k\) of its \(r^k\)-th root with
+\(\mu_k^{r^k}=\lambda\); its degree over \(\Q\)
+is at most \(n\). Choose an integer \(D>0\) clearing
+the entries of \(h\) and let \(M\geq1\) bound the
+absolute values of all its eigenvalues. Every conjugate
+of \(\mu_k\) has absolute value at most \(M\).
+Also
+\[
+ (D\mu_k)^{r^k}=D^{r^k-1}(D\lambda)
+\]
+is an algebraic integer, so \(D\mu_k\) is one by
+transitivity of integrality. Algebraic integers of
+bounded degree with all conjugates bounded form a
+finite set: their monic minimal polynomials have
+integer coefficients bounded by the elementary
+symmetric-function estimates. Thus some
+\(\mu_k=\mu_l\), \(k<l\), giving
+\(\mu_k^{r^l-r^k}=1\). It follows that \(\lambda\)
+is a root of unity, and then the same is true for
+each eigenvalue of \(g\).
+
+Consequently \(\tr(g)\) is a rational algebraic integer
+of absolute value at most \(n\), so
+\(\tr(G)\subseteq\{-n,\ldots,n\}\).
+Let \(A=\operatorname{span}_{\Q}G\), a unital algebra
+of dimension \(d\leq n^2\), and define its trace radical
+\[
+ R=\{a\in A:\tr(ab)=0\text{ for all }b\in A\}.
+\]
+Cyclicity of trace makes \(R\) a two-sided ideal.
+For \(a\in R\), all \(\tr(a^s)\) vanish. Newton's
+identities and Cayley--Hamilton give \(a^n=0\).
+
+In fact \(R^n=0\). On \(V=\Q^n\), the chain
+\(V\supseteq RV\supseteq R^2V\supseteq\cdots\)
+cannot stabilize at a nonzero module \(W=RW\).
+If it did, choose a smallest finite \(A\)-generating
+list \(w_1,\ldots,w_s\) of \(W\) and express
+\(w_s=\sum_i a_iw_i\) with \(a_i\in R\).
+Since \(a_s\) is nilpotent, \(1-a_s\) is invertible,
+allowing deletion of \(w_s\), a contradiction.
+Thus there are at most \(n\) strict dimension drops,
+and faithfulness gives \(R^n=0\).
+
+The group \(1+R\) is nilpotent of class at most \(n-1\),
+using \([1+R^a,1+R^b]\subseteq1+R^{a+b}\).
+It is torsion-free: a finite-order unipotent matrix
+in characteristic zero has minimal polynomial
+dividing both \((X-1)^n\) and the squarefree
+polynomial \(X^m-1\), and is the identity.
+Set \(U=G\cap(1+R)\), a normal subgroup.
+Choose a basis \(g_1,\ldots,g_d\) of \(A\) from \(G\).
+The tuples
+\[
+ (\tr(gg_1),\ldots,\tr(gg_d))
+\]
+take at most \((2n+1)^d\) values. Equality of tuples
+for \(g,h\) is equivalent to \(g-h\in R\), hence
+to \(gh^{-1}\in U\). They distinguish exactly the
+cosets of \(U\), proving the index bound.
+No finite-generation hypothesis or matrix realization
+of the abstract automorphisms was used. Source:
+\artifact{research/21.40-proof.md}.
+

@@ -1,0 +1,144 @@
+\subsection{The cofinite theory of finite groups: Problem 18.18}
+\label{cand:18.18}
+
+Let \(T_{\rm fin}\) consist of group-language sentences true
+in every finite group, and \(T_{\rm cof}\) those true in
+all but finitely many finite groups up to isomorphism.
+The latter is equivalent to truth in all sufficiently
+large finite groups. Both \(T_{\rm cof}\) and its
+complement fail to be computably enumerable.
+The input theorem is Mal'cev's undecidability of
+\(T_{\rm fin}\) \cite{malcev-finite}: finite
+countermodels can be enumerated, so \(T_{\rm fin}\)
+is co-computably-enumerable and cannot also be
+computably enumerable.
+
+For a sentence \(\phi\), effectively relativize every
+quantifier to the definable subgroup
+\[
+ C(x;a,b):\quad xa=ax\ \wedge\ xb=bx,
+\]
+renaming bound variables first. Write the resulting
+formula as \(\phi^C(a,b)\). Formula induction gives
+its truth exactly when \(C_G(a,b)\models\phi\).
+Then \(P_\phi=\forall a\,\forall b\,\phi^C(a,b)\)
+satisfies
+\[
+ \phi\in T_{\rm fin}\quad\Longleftrightarrow\quad
+ P_\phi\in T_{\rm cof}.
+\]
+The forward direction is immediate. For the reverse,
+if finite \(H\not\models\phi\), use \(H\times S_n\),
+\(n\geq3\), and two generators of the symmetric factor.
+Their common centralizer is \(H\times1\), giving
+countermodels of unbounded order. This proves the
+first non-enumerability assertion.
+
+For the complement we need a fixed first-order
+sentence \(\sigma\) whose finite models are exactly
+the \(S_n\), \(n\geq5\). The following explicit
+interpretation supplies it. Choose an involution
+\(t\ne1\), let \(C_t\) be its conjugacy class,
+and let \(Q(\boldsymbol u)\) say that four entries
+of \(\boldsymbol u\) are distinct members of \(C_t\)
+and pairwise noncommuting. Put
+\[
+ \begin{split}
+ M(c,\boldsymbol u)&:\quad c\in C_t\ \wedge\
+   \bigwedge_{i=1}^4(c=u_i\ \vee\ cu_i\ne u_ic),\\
+ E(\boldsymbol u,\boldsymbol v)&:\quad
+   \forall c\in C_t\
+   \bigl(M(c,\boldsymbol u)\leftrightarrow
+                    M(c,\boldsymbol v)\bigr).
+ \end{split}
+\]
+On \(Q\)-tuples, \(E\) is equality of the incidence
+sets and hence an equivalence relation. Call these
+classes vertices. This is abbreviation only:
+vertex quantifiers use four group variables and
+vertex equality uses \(E\).
+Require that there be at least five vertices; that
+each \(c\in C_t\) be incident with exactly two
+vertices; that every pair of distinct vertices have
+exactly one common incident \(c\); that
+\[
+ E(c\boldsymbol u c^{-1},\boldsymbol u)
+       \quad\Longleftrightarrow\quad
+       \neg M(c,\boldsymbol u);
+\]
+and that the common centralizer of \(C_t\) be trivial.
+These are finitely many fixed first-order assertions;
+their conjunction, existentially quantifying \(t\),
+defines \(\sigma\).
+
+In a finite model, conjugation acts faithfully on
+the finite vertex set: an element fixing all vertices
+fixes their unique edges and therefore all \(C_t\).
+Each \(c\) preserves its incident pair, moves both
+endpoints by the displayed assertion, and fixes
+every other vertex. Its action is that pair's
+transposition. Every pair occurs, so the faithful
+image is the full symmetric group.
+Conversely, in \(S_n\), take \(t\) a transposition.
+Four distinct pairwise intersecting two-element
+subsets have a common point: the only alternative
+for three is a triangle, which admits no fourth
+distinct edge meeting all three. The sets defined
+by \(M\) are therefore exactly the stars at points.
+Every point supplies a four-tuple when \(n\geq5\).
+All the assertions hold, including trivial
+centralizer because transpositions generate
+centerless \(S_n\). This proves the claim about
+\(\sigma\).
+
+We also need every finite \(H\) as a common
+centralizer in \emph{every sufficiently large}
+\(S_n\). Write \(h=|H|\), enumerate
+\(H=\{h_0=1,h_1,\ldots,h_{h-1}\}\), and on
+\(\Omega=H\times\{0,\ldots,h-1\}\) define
+\[
+ a(g,j)=(g,j+1\bmod h),\qquad b(g,j)=(gh_j,j).
+\]
+The fixed points of \(b\) form precisely level zero.
+A commuting permutation must therefore have form
+\((g,j)\mapsto(u(g),j)\) by commutation with \(a\);
+commutation with \(b\) gives
+\(u(gh_j)=u(g)h_j\), hence \(u(g)=u(1)g\).
+The common centralizer is exactly the left regular
+copy of \(H\). The action of \(\langle a,b\rangle\)
+is transitive, by moving between levels to realize
+all right multiplications.
+
+For \(n\geq2h^2+3\), add a disjoint orbit of
+\(k=n-h^2>h^2\) points, extending \(a,b\) by
+a \(k\)-cycle and a transposition of consecutive
+points. Their action there is \(S_k\), with
+trivial centralizer. The two orbit sizes differ,
+so no commuting permutation exchanges them.
+The total common centralizer in \(S_n\) is
+therefore \(H\), as required.
+
+Finally form the effective sentence
+\[
+ R_\phi=(\neg\sigma)\ \vee\
+             \exists a\,\exists b\,\neg\phi^C(a,b).
+\]
+If \(\phi\in T_{\rm fin}\), the second disjunct
+is false in every finite group, and \(R_\phi\)
+fails in every \(S_n\), \(n\geq5\). If a finite
+\(H\) refutes \(\phi\), all nonsymmetric groups
+satisfy the first disjunct, and every sufficiently
+large symmetric group satisfies the second by
+the construction. Thus
+\[
+ \phi\in T_{\rm fin}\quad\Longleftrightarrow\quad
+ R_\phi\notin T_{\rm cof}.
+\]
+Computable enumerability of the complement would
+give it for \(T_{\rm fin}\), a contradiction.
+The syntactic transformation does not search for
+\(H\); the witness is needed only for its correctness
+proof. No asymptotic-density interpretation of
+\emph{almost all} is asserted. Source:
+\artifact{research/18.18-proof.md}.
+

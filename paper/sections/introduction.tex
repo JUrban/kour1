@@ -1,0 +1,86 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Research mathematics rarely arrives as an isolated request for a proof.
+A researcher must decide which question to pursue, determine what is
+already known, interpret the statement correctly, choose representations
+that make computation useful, and decide when an approach has stopped
+being productive. An experiment that permits these choices studies a
+different object from a fixed collection of independently graded proof
+problems. Its output is a research process and a collection of artifacts,
+and evaluating it requires more than counting final answers.
+
+The Kourovka Notebook~\cite{kourovka21} provides a demanding setting for
+such an experiment. It is a long-running collection of problems in group
+theory and neighboring areas. Its statements vary substantially in
+generality, technical prerequisites, and computational accessibility.
+Some have separately posed subparts; some have already been resolved
+without an immediately obvious indication in the statement; and some
+admit useful partial results without a complete answer. The supplied
+September 2026 version of the twenty-first edition was therefore treated
+as a source to interpret and investigate, rather than as a benchmark
+with a ready-made binary answer key.
+
+The user asked an agent to solve as many previously unsolved Notebook
+problems as possible within 48 hours, using a supplied GAP installation,
+generally staying within 20 CPU cores and 100\,GB of memory, and keeping
+detailed plans, reports, and frequent local Git commits. The agent was
+allowed to choose problems, consult the literature, write programs, and
+change direction. The research window ran from 10 September 2026,
+20:56:46 UTC, to 12 September 2026, 20:56:46 UTC. The final archive was
+committed 16 seconds later, after its administrative integrity check.
+The manuscript is a separate, later activity.
+
+At the deadline the canonical ledger contained 46 problem entries
+labeled complete solution candidates. Several entries cover specified
+subparts rather than an entire multipart problem. Multiple covered
+subparts of one entry are counted once, and the duplicate \kn{19.63}
+is not counted separately from \kn{19.62}. No entry had received outside
+review, and priority was unestablished. We retain these qualifications
+throughout: a historically recorded candidate is an observable outcome
+of the experiment, whereas a correct and new mathematical theorem
+requires further judgments.
+
+Three aspects of the experiment are of particular interest. First,
+the artifact collection contains explicit mathematical constructions
+whose correctness can be considered separately from the agent that
+produced them. Second, the session and Git history expose practical
+interactions between proof development, computation, and correction.
+Third, the experiment produced substantial work that a binary
+solved/unsolved classification would obscure: smaller examples of
+known phenomena, alternative deductions, sharp bounds in restricted
+classes, and complete searches within clearly stated finite ranges.
+
+\subsection{Relation to other experimental settings}
+
+FunSearch combines language-model proposals with executable evaluation
+to search for programs producing improved mathematical
+constructions~\cite{funsearch}. Formal proof systems provide a different
+kind of feedback: AlphaProof, for example, develops proofs within a
+formal environment whose accepted derivations can be checked by a
+proof assistant~\cite{alphaproof}. The First Proof projects instead use
+research-level problems and emphasize the assessment of mathematical
+solutions, with the second batch publishing methodology, solutions,
+and referee materials~\cite{firstproof,firstproof2}.
+
+The present experiment is an observational case study of a broad
+portfolio search. It had neither a fixed executable evaluator for all
+targets nor a formal proof kernel accepting the resulting prose
+arguments. The agent could also read public sources, including results
+relevant to the questions it selected. Consequently, the experiment
+does not estimate a held-out success rate, establish an advantage over
+another model or a human baseline, or isolate the effect of any
+individual tool. Its value lies in the mathematical material and in
+the inspectable record of how that material was produced and checked.
+
+\subsection{Reading the paper}
+
+Section~\ref{sec:methods} describes the setting and the limits of the
+retained evidence. Section~\ref{sec:trajectory} reconstructs the workflow
+and selected changes of direction. Section~\ref{sec:examples} gives
+complete representative arguments, including a definability
+counterexample and two finite group constructions.
+The appendices organize the wider candidate portfolio, partial results,
+prior-result deductions, and reproducibility material.
+Section~\ref{sec:discussion} discusses what this single run can support
+and what a more controlled follow-up should measure.

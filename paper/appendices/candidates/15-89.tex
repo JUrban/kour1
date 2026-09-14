@@ -1,0 +1,42 @@
+\subsection{An invertible adjacency operator on all functions: Problem 15.89}
+\label{cand:15.89}
+
+Let \(G=C_3*C_2=\langle a,b:a^3=b^2=1\rangle\) and
+\[
+ S=\{aba,aba^2,a^2ba,a^2ba^2\}.
+\]
+Its Cayley graph, with edges \(g\sim gs\), is simple
+and four-regular: free-product normal form gives four
+distinct nonidentity words, and \(S=S^{-1}\).
+It is connected because, for \(s_1=aba,s_2=a^2ba\),
+\(s_1s_2^{-1}=a^2\) and \(a^2s_1a^2=b\).
+The group is infinite by the distinct reduced words
+\((ab)^n\), and left translation is vertex-transitive.
+
+On the space \(\C^G\) of all functions, put
+\((R_gf)(x)=f(xg)\), \(U=R_a+R_{a^2}\), and
+\(B=R_b\). Then \(R_gR_h=R_{gh}\), and
+\[
+ U^2=U+2I,\qquad U^{-1}=(U-I)/2,\qquad B^2=I.
+\]
+The adjacency operator is exactly \(A=UBU\), hence
+\[
+ A^{-1}=\frac14(U-I)B(U-I).
+\]
+Both products with \(A\) equal the identity.
+All these expressions are finite sums of translations,
+so they act on arbitrary, even unbounded, functions.
+There is no support or convergence condition.
+In particular zero is not an eigenvalue, answering
+the question negatively.
+
+The factorization has the familiar zig-zag form:
+a move within a triangle, across a matching edge,
+and within the next triangle. The general operation
+is due to \cite{zigzag}; the invertibility of finite
+factors also occurs in \cite{permutational-powers}.
+The proposed contribution is this particular infinite
+simple vertex-transitive example and its use for
+the printed question, not the graph-product operation.
+Source: \artifact{research/15.89-proof.md}.
+

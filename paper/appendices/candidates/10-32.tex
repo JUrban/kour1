@@ -1,0 +1,85 @@
+\subsection{10.32: a logarithmic bound for symmetric-group power words}
+\label{cand:10.32}
+\begin{proposition}
+Let \(r,s\ne0\), with at least one odd, and
+\(m=\prod_{\ell\mid rs}\ell\), the product of the distinct prime divisors
+of \(|rs|\). The word \(x^ry^s\) is universal on \(S_n\) whenever
+\[
+ n\ge\max\{1126,16\log m\}.
+\]
+More generally, every real \(c>8\) admits \(N_0(c)\) for which
+\(n\ge\max\{N_0(c),c\log m\}\) suffices.
+\end{proposition}
+\begin{proof}
+We use two permutation-covering results. First, if two classes in
+\(S_d\) have \(h,k\) cycles, counting fixed points, and
+\[
+ h+k+1\le L\le d,\qquad L\equiv h+k-1\pmod2,
+\]
+some representatives have product an \(L\)-cycle.
+This is Boccara's positive-genus three-partition result in the form
+reproved by Song--Xu--Ye \cite[Propositions~1.4 and~2.1]{song-xu-ye}.
+Second, if \(u,v\ge4\) and
+\(\lfloor3n/4\rfloor+1\le u+v\le n\), every even permutation is
+a product of two permutations each consisting of a disjoint
+\(u\)-cycle and \(v\)-cycle \cite[Lemma~5]{brenner-evans-silberger}.
+
+Suppose an odd \(q\) satisfies \(3n/8+1<q\le n/2\).
+Every odd \(g\in S_n\) is a product of a \(2q\)-cycle and two disjoint
+\(q\)-cycles. For a transposition \(g\), choose the two \(q\)-cycles
+with its letters in different supports; multiplying their inverse
+by \(g\) merges them.
+Otherwise let \(s_0\) be the support size, \(t\) its number of nontrivial
+cycles, and \(e=s_0-t\), an odd integer at least three.
+Restrict to an invariant subset of size \(d=\max\{s_0,2q\}\).
+The class of \(g\) there has \(h=t+d-s_0\) cycles; the class of two
+\(q\)-cycles has \(k=d-2q+2\).
+If \(s_0\le2q\), then \(h+k+1=2q-e+3\le2q\).
+Otherwise, using \(t\le s_0/2\),
+\[
+ h+k+1=s_0+t-2q+3\le3n/2-2q+3<2q.
+\]
+Also \(h+k-1=2d-e-2q+1\) is even.
+The first covering result, followed by inversion of its second factor
+and simultaneous conjugation, gives the assertion. Removing the
+unneeded fixed points before applying it is essential.
+
+Now let \(q\ge5\) be prime in that interval with \(q\nmid rs\), and
+suppose \(r\) is odd. For odd targets the factors just obtained have
+orders \(2q,q\); for even targets the second covering result with
+\(u=v=q\) supplies two factors of order \(q\).
+Their orders are coprime to \(r,s\), respectively, so taking inverse
+exponents modulo those orders gives \(g=x^ry^s\).
+If \(s\) is the odd exponent, reverse the argument's factor order
+using \(U^sV^r=V^r(V^{-r}UV^r)^s\).
+Negative exponents cause no change.
+
+It remains to find a prime in the interval missing from \(m\).
+Let \(\vartheta(x)=\sum_{\ell\le x}\log\ell\).
+Rosser--Schoenfeld \cite[Theorems~4 and~9]{rosser-schoenfeld} give
+\[
+ \vartheta(x)>x\left(1-\frac1{2\log x}\right)\quad(x\ge563),
+ \qquad \vartheta(y)<1.01624y\quad(y>0).
+\]
+For \(n\ge1126\), \(\log(n/2)>6\), and \(1.01624<49/48\).
+Consequently
+\[
+ \vartheta(n/2)-\vartheta(3n/8+1)
+ >\frac{29n}{384}-\frac{49}{48}>\frac n{16}.
+\]
+If all primes in the interval divided \(m\), this would contradict
+\(\log m\le n/16\). The explicit bound follows.
+The same source gives \(\vartheta(x)=x+o(x)\), so the interval's
+prime-log sum is \(n/8+o(n)\), eventually exceeding \(n/c\)
+for any \(c>8\). This proves the second statement.
+\end{proof}
+
+If both exponents are odd, every degree works: every permutation is
+a product of two involutions, by reversing each cycle.
+An exponent \(1\) or \(-1\) also makes universality immediate.
+The stated constants are sufficient, not optimal.
+The candidate contribution is this symmetric-group deduction from
+the credited covering and prime estimates, rather than new versions
+of those imported theorems.
+See \artifact{research/10.32-proof.md} and
+\artifact{results/10.32-summary.json}.

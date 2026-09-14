@@ -1,0 +1,142 @@
+\subsection{9.47: a scattered compact space excluded by the E-topology}
+\label{cand:9.47}
+The E-topology on the closed subgroups \(L(G)\) of a locally compact
+Hausdorff group is the full Vietoris topology, with subbasic sets
+\[
+ D_1(O)=\{H:H\subseteq O\},\qquad D_2(O)=\{H:H\cap O\ne\varnothing\}
+\]
+for arbitrary open \(O\subseteq G\). In particular its upper subbasis
+is more extensive than that of the Chabauty topology.
+A \emph{clopen selector} on \(X\) assigns a clopen neighborhood \(U_x\)
+to every \(x\), with
+\[
+ x\in U_y,\ y\in U_x\Longrightarrow x=y,\qquad
+ y\in U_x\Longrightarrow U_y\subseteq U_x.
+\]
+We prove that a compact Hausdorff space embeds in the E-space of closed
+noncompact subgroups of some locally compact group exactly when it
+has such a selector. A known height-four compact space fails this test.
+The ingredients are Protasov's neighborhood lemma
+\cite{protasov-compacts,komarov-protasov} and the Dow--Watson example
+\cite{dow-watson}; their use here does not make either ingredient new.
+
+\begin{lemma}
+If \(\mathcal F\subseteq L(G)\) is compact and \(H\in\mathcal F\)
+is noncompact, then \(\{K\in\mathcal F:K\subseteq H\}\) is a
+neighborhood of \(H\) in \(\mathcal F\).
+\end{lemma}
+\begin{proof}
+The space \(L(G)\) is Hausdorff: if \(g\in H\setminus K\), choose an
+open \(V\ni g\) with \(\overline V\cap K=\varnothing\), and use
+\(D_2(V)\) and \(D_1(G\setminus\overline V)\).
+Suppose the conclusion fails, so \(H\) is in the closure of
+\(\mathcal A=\{K\in\mathcal F:K\nsubseteq H\}\).
+For each neighborhood \(W\) of \(H\) in \(\mathcal F\), let
+\[
+ E_W=\bigcup_{K\in\mathcal A\cap W}(K\setminus H).
+\]
+This set is not relatively compact. Otherwise its closure \(C\)
+is compact; choose \(h\in H\setminus(C\cup C^{-1}C)\) and an identity
+neighborhood \(V\) so that \(Vh\) misses both sets.
+Some \(K\in\mathcal A\cap W\) meets \(Vh\), at \(x\).
+Since \(Vh\cap C=\varnothing\), \(x\in H\).
+For \(z\in K\setminus H\), both \(z,zx\) belong to \(C\), contradicting
+\(CVh\cap C=\varnothing\).
+
+Fix a compact identity neighborhood \(U\). Inductively choose
+\(K_i\in\mathcal A\), \(x_i\in K_i\setminus H\), and a compact
+neighborhood \(V_i\) of \(x_i\) disjoint from \(H\), with
+\[
+ K_i\cap V_j=\varnothing\ (j<i),\qquad
+ x_iU\cap x_jU=\varnothing\ (j<i).
+\]
+The first condition restricts \(K_i\) to an open neighborhood \(W_i\)
+of \(H\); the second follows by choosing \(x_i\in E_{W_i}\)
+outside the compact union \(\bigcup_{j<i}x_jUU^{-1}\).
+Local compactness supplies \(V_i\).
+The set \(\mathcal B=\{K_i\}\) is discrete, because
+\(D_2(\operatorname{int}V_i)\) meets it in finitely many points,
+which Hausdorff separation reduces to \(K_i\).
+
+Also \(D=\{x_i\}\) is closed discrete in \(G\): choose open \(Q\ni1\)
+with \(Q^{-1}Q\subseteq UU^{-1}\); every translate \(gQ\) contains
+at most one \(x_i\). If \(K\in\overline{\mathcal B}\setminus\mathcal B\),
+it cannot meet \(\operatorname{int}V_i\), whose associated lower
+neighborhood meets \(\mathcal B\) only finitely.
+Thus \(K\cap D=\varnothing\), but the open upper neighborhood
+\(D_1(G\setminus D)\) contains no \(K_i\), a contradiction.
+Hence \(\mathcal B\) is closed as well as discrete, impossible
+inside compact \(\mathcal F\).
+\end{proof}
+
+If every member of \(\mathcal F\) is noncompact, set
+\(U_H=\{K\in\mathcal F:K\subseteq H\}\).
+It is closed, since its complement is \(D_2(G\setminus H)\).
+At each \(K\in U_H\) the lemma gives a neighborhood contained in
+\(U_K\subseteq U_H\), so it is also open. Subgroup inclusion supplies
+the selector axioms.
+
+Here is the counterexample, including the obstruction.
+For every \(f:\omega\to\omega\), choose an infinite \(A_f\subseteq\omega\)
+so that distinct \(A_f\)'s meet finitely. Such a family is obtained by
+coding finite initial segments of the distinct binary branches
+\(0^{f(0)}1\,0^{f(1)}1\cdots\).
+Start with \(Y=(\omega+1)\times\omega\), a disjoint union of convergent
+sequences. Write \(u_n=(\omega,n)\), \(v_{m,n}=(m,n)\), and set
+\[
+ B_f=\{u_n:n\in A_f\}\cup
+       \{v_{m,n}:n\in A_f,\ m>f(n)\}.
+\]
+Adjoin a point \(a_f\) with basic neighborhoods consisting of \(a_f\)
+and the part of \(B_f\) in rows \(n\ge N\).
+Call the resulting space \(Z\). These neighborhoods are compact:
+after covering \(a_f\), only finitely many compact row tails remain.
+Almost disjointness separates different \(a_f\)'s; omission of a row
+separates them from points of \(Y\). Thus \(Z\) is locally compact
+Hausdorff, and these compact neighborhoods are clopen.
+The infinite set \(\{a_f\}\) is closed discrete, so \(Z\) is noncompact.
+Let \(X=Z\cup\{\infty\}\) be its one-point compactification.
+Its successive derived sets are
+\[
+ X'=\{u_n\}\cup\{a_f\}\cup\{\infty\},\quad
+ X''=\{a_f\}\cup\{\infty\},\quad
+ X'''=\{\infty\},\quad X''''=\varnothing.
+\]
+It is consequently scattered of height four.
+
+Suppose \(X\) had a selector. Choose \(t(n)\) so that
+\(v_{m,n}\in U_{u_n}\) whenever \(m>t(n)\).
+For any \(f\) with \(f(n)>t(n)\) for all \(n\), the neighborhood
+\(U_{a_f}\) contains \(u_n\) for all sufficiently large \(n\in A_f\).
+Transitivity makes it contain the infinite set
+\[
+ D_f=\{v_{t(n)+1,n}:n\in A_f,\ n\ge N\}.
+\]
+This is closed discrete in \(Z\): each row meets it at most once,
+the neighborhood based on \(B_f\) misses it, and every other \(a_g\)
+has a neighborhood omitting the finitely many common rows.
+Thus no compact subset of \(Z\) contains \(D_f\), so
+\(\infty\in\overline{D_f}\subseteq U_{a_f}\).
+There are infinitely many such \(f\), for example \(f_j(n)=t(n)+j\),
+\(j\ge1\). Every neighborhood of \(\infty\), including \(U_\infty\),
+contains all but finitely many \(a_{f_j}\), since compact subsets of
+\(Z\) meet the closed discrete set \(\{a_f\}\) finitely.
+For some \(j\), both \(a_{f_j}\in U_\infty\) and
+\(\infty\in U_{a_{f_j}}\), contradicting antisymmetry.
+The necessary condition above now answers 9.47 negatively.
+
+For completeness, the condition is also sufficient.
+Given a compact \(X\) with selector, take the discrete abelian group
+\[
+ G=\Z\oplus\bigoplus_{y\in X}C_2,\qquad
+ H_x=\Z\oplus\bigoplus_{\{y:x\notin U_y\}}C_2.
+\]
+Each \(H_x\) is closed and noncompact, and antisymmetry makes
+\(x\mapsto H_x\) injective.
+Membership of any fixed element in \(H_x\) is a finite intersection
+of clopen conditions, proving continuity for the lower subbasis.
+If \(z\in U_x\), transitivity implies \(H_z\subseteq H_x\);
+this proves continuity for the upper subbasis.
+A continuous injection from compact \(X\) to Hausdorff \(L(G)\)
+is an embedding. The full archive proof is
+\artifact{research/9.47-proof.md}.

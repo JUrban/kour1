@@ -1,0 +1,71 @@
+\subsection{A nonsplit additive division-ring extension: Problem 18.76}
+\label{cand:18.76}
+
+Let \(F=F(a,b)\), \(L=F(c,d)\), and \(G=F\times L\).
+Free groups and their direct products admit two-sided
+invariant orders. The Mal'cev--Neumann theorem therefore
+embeds \(kG\) in a division ring for \(k=\Q\) or any
+prime field; see \cite{sakarovitch,bergman}.
+Let \(D\) be its division closure there. This is countable,
+and \(G\leq D^\times\). Only elements from different
+free factors are assumed to commute.
+
+Define a derivation \(\delta:F\to kF\) by
+\[
+ \delta(xy)=\delta(x)+x\delta(y),\qquad
+ \delta(a)=0,\quad\delta(b)=1.
+\]
+The prefix-sum formula on reduced words gives it
+explicitly; contributions from adjacent inverse letters
+cancel, with \(\delta(b^{-1})=-b^{-1}\).
+In \(N=(D,+)\rtimes F\), with
+\((r,x)(s,y)=(r+xs,xy)\), the maps
+\[
+ \gamma_c(r,x)=(cr,x),\qquad
+ \gamma_d(r,x)=(dr+\delta(x),x)
+\]
+are automorphisms. The derivation law proves the
+homomorphism identity; multiplication by \(c^{-1}\) and
+the map \((r,x)\mapsto(d^{-1}(r-\delta(x)),x)\) give
+their inverses. Freeness of \(L\) extends them to an
+action, giving the actual group \(E=N\rtimes_\gamma L\).
+
+Its quotient by \((D,+)\) is \(G=F\times L\), and the
+conjugation action on the kernel is left multiplication
+in \(D\). To check this and nonsplitting, define similarly
+\(\eta:L\to kL\) by \(\eta(c)=0,\eta(d)=1\). Then
+\[
+ (r,x,h)(s,y,l)
+   =(r+xhs+x\eta(h)\delta(y),\,xy,\,hl).
+\]
+This follows by composing the generator automorphisms;
+the two derivations take values in commuting factor
+algebras.
+
+If a section existed, its values on \(a,b,c,d\) would
+have arbitrary kernel coordinates \(u,v,w,z\in D\).
+Put \(A_0=a-1,B_0=b-1,C_0=c-1,D_0=d-1\).
+The four cross-factor commutations would imply
+\[
+ A_0w-C_0u=0,\quad A_0z-D_0u=0,\quad
+ B_0w-C_0v=0,\quad B_0z-D_0v=1_D.
+\]
+Here \(1_D\) is a nonzero additive kernel element.
+Since \(A_0,C_0\) are nonzero and invertible,
+the first three equations give
+\[
+ w=A_0^{-1}C_0u,\qquad
+ z=A_0^{-1}D_0u,\qquad
+ v=B_0A_0^{-1}u.
+\]
+The left side of the fourth is then
+\[
+ B_0A_0^{-1}D_0u-D_0B_0A_0^{-1}u=0,
+\]
+because the two free factors commute, contradicting
+\(1_D\ne0\). Thus the extension does not split, in any
+of the stated characteristics. Its description as a
+nested semidirect product does not split this particular
+extension by \((D,+)\). Source:
+\artifact{research/18.76-proof.md}.
+

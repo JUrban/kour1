@@ -1,0 +1,81 @@
+\section{Artifacts and reproduction}
+\label{app:reproduction}
+
+The configured repository address is
+\url{https://github.com/JUrban/kour1}.
+Anonymous access could not be established during manuscript
+preparation: unauthenticated API requests returned HTTP~404.
+A local Git query obtained a remote head different from
+the frozen experimental revision. These observations
+do not establish that either revision is anonymously
+available or that the two histories are equivalent.
+Readers need the frozen archive identified in
+Appendix~\ref{app:protocol} to reproduce repository-based
+measurements. The mathematical exposition in the paper
+does not require executing that archive.
+
+The main entry points in the archive are
+\artifact{reports/FINAL_REPORT.md},
+\artifact{reports/REVIEW_GUIDE.md}, and
+\artifact{research/complete-candidate-ledger.json}.
+The last file records the transcribed question, covered
+parts, proof paths, review paths, and evidence entry
+points for every candidate. The original PDF remains
+authoritative if an extraction differs from its typography.
+
+The later \artifact{paper/} directory contains manuscript
+source, generated measurements, and a review ledger.
+From the repository root, the measurement command is
+\begin{quote}\small
+\texttt{python3 paper/scripts/analyze\_experiment.py --check}
+\end{quote}
+It uses Python's standard library and Git, reads the
+supplied HTML and text exports, and recomputes the
+statistics from the frozen history. It checks agreement
+with committed outputs rather than modifying them.
+Without \texttt{--check}, it regenerates the five
+measurement files.
+
+\begin{center}\small
+\begin{tabular}{p{0.45\textwidth}p{0.47\textwidth}}
+\toprule
+File in \artifact{paper/data/} & Meaning\\
+\midrule
+\artifact{experiment-metrics.json} &
+Input hashes, event counts, cumulative counters,
+Git totals, and measurement limitations\\
+\artifact{session-tokens.csv} &
+All retained token observations, including repeated
+and unitemized records\\
+\artifact{session-visible-messages.jsonl} &
+Visible assistant, final, and human messages with
+event identifiers; excludes directive bodies\\
+\artifact{research-commits.csv} &
+Commit identifiers, UTC timestamps, subjects,
+and inclusion in the research interval\\
+\artifact{proof-artifact-timeline.csv} &
+First committed principal proof artifact for each
+problem family on the final candidate list\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Raw session exports are supplied evidence separate from
+the paper's source bundle. Their hashes and sizes allow
+an authorized holder to identify the exact inputs.
+The visible-message projection is not a substitute for
+the omitted raw tool events. Mathematical scripts
+likewise have different purposes: some generate examples,
+some check certificates, and some summarize existing
+results. Reproducing a summary is not rerunning a proof
+check. Each result's archive entry identifies its
+commands and the limits of the computation.
+
+Large computations need substantial time and storage.
+In particular, the \(n=7\) certificate for \kn{20.100}
+is distinct from smaller diagnostic and intermediate
+files. The retained report and manifest specify the
+complete input and all completed checker shards.
+The manuscript's review does not silently replace that
+historical verification with a fresh abbreviated run.
+

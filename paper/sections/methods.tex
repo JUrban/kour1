@@ -1,0 +1,190 @@
+\section{Setting, protocol, and evidence}
+\label{sec:methods}
+
+\subsection{Task and problem source}
+
+The full user objective is reproduced in Appendix~\ref{app:protocol}.
+It specifies an overall time limit and a research objective, rather
+than a list of preselected questions or a target number of outputs.
+The agent's initial plan explicitly prioritized precise statements,
+literature checks, finite counterexamples, elementary reductions, and
+independent implementations of computational checks. It also required
+partial results and unsuccessful searches to be recorded.
+
+The input file \artifact{docs/21tkt.pdf} has SHA-256 digest
+\begin{center}
+\small\path{2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911}.
+\end{center}
+The agent extracted a main-body index with 1,308 entries, including
+all 150 entries of Issue 21. This is an index of problem statements,
+not a verified count of open problems. Editorial stars, solved
+subparts, duplicates, and literature published after a problem was
+posed all affect the open status of individual assertions.
+The source PDF, rather than its text extraction, was treated as
+authoritative for mathematical notation and scope.
+
+\subsection{Agent and computational environment}
+
+The experiment used \texttt{gpt-6-astra} with reasoning effort
+\texttt{xhigh}. These two settings were supplied by the user during
+manuscript preparation on 14 September 2026; the supplied session
+export does not itself retain them. The export identifies the
+application as Codex 0.153.4. Official documentation identifies
+\texttt{xhigh} as a supported Astra reasoning setting~\cite{astra},
+but documentation of a product's capabilities is not evidence that
+every such capability was exercised in this particular run.
+
+The agent worked in a persistent Linux workspace with shell access,
+file editing, Git, internet source retrieval, and tools for inspecting
+PDF pages. GAP 4.16.1 supplied the main finite-group computations.
+The retained scripts also use Python and C/C++ for exact arithmetic,
+word calculations, independent finite models, enumeration, and
+certificate parsing. The source and report files record which
+libraries or catalogues each computation depends on. Versions not
+retained in the experimental records cannot be reconstructed merely
+by inspecting the later manuscript environment.
+
+The user initially supplied an inaccessible GAP path and repaired it
+during setup. The visible human message is \emph{sorry, gap is now here}.
+The subsequent reports establish that GAP was available with the
+required packages. The initial suggestion that a replacement
+installation might be needed is therefore not evidence that such an
+installation actually occurred.
+
+The working limits were generally 20 CPU cores and 100\,GB of memory.
+The repository contains bounded launchers and process observations,
+but not a continuous, comprehensive record of global peak resource
+use. In the largest retained certificate check, six GAP workers each
+had a 14\,GiB workspace ceiling, for a combined configured ceiling of
+84\,GiB. A workspace ceiling is not an observed resident-memory peak.
+Likewise, local CPU limits do not measure the remote compute used by
+the language model.
+
+The research plan prohibited delegation to other agents without
+authorization, and the reports record no delegated agents. Parallel
+GAP or C++ processes were computational workers, not separate language
+model researchers. The same agent developed the arguments, wrote
+checkers, and conducted the internal reviews. The phrase
+\emph{independent implementation} below therefore refers to a separate
+representation or algorithm, not to an independent human author or
+an independently trained reviewing model.
+
+\subsection{Persistence and local records}
+
+The workspace served as external memory. Plans and status files recorded
+the next steps; proof drafts preserved mathematical arguments; scripts
+and logs preserved computations; and Git recorded successive states.
+The visible export contains 53 goal-continuation directives and 52
+assistant final messages. These observations are consistent with a
+long task continued across many turns, rather than a single uninterrupted
+response. They do not reveal the full underlying context-management
+implementation.
+
+There were 198 commits during the 48-hour window. The first, at
+21:00:37 UTC on 10 September, initialized the investigation.
+The 199th commit, \snapshot{}, completed the local handoff at
+20:57:02 UTC on 12 September. Commit times date repository checkpoints;
+they do not directly date the discovery of an idea or establish when
+its full final scope was proved.
+
+At \snapshot{}, the Git tree contains 4,147 tracked files with a total
+logical size of 2,440,677,642 bytes. This includes 430 files under
+\artifact{research/}, 456 under \artifact{scripts/}, and 2,755 under
+\artifact{results/}, as well as references, the source Notebook, and
+other records. Logical file size is not compressed repository size.
+The manuscript analysis reads this fixed revision, so later writing
+and review do not increase the experimental counts.
+
+\subsection{What the session export retains}
+
+Two files were supplied after the experiment: \artifact{session.html}
+and \artifact{session.txt}. Their digests, exact aggregate measurements,
+and a standard-library parser are included with the manuscript's data.
+The HTML header advertises 34,102 events. Its actual retained event
+elements comprise 709 assistant commentaries, 52 assistant final
+messages, one human message, 61 directives, and 3,616 token records:
+4,439 elements in total. The text export agrees on the visible message
+counts.
+
+No tool-call bodies or internal-analysis event bodies occur as exported
+event elements. Thus the export is not a complete raw execution trace,
+and it cannot establish an exact tool-call count. Nor does its single
+human-message element prove that there was only one human instruction:
+the initial research objective is preserved inside a directive.
+Most retained events have sequence identifiers but no individual
+wall-clock timestamp. Narrative ordering can use these identifiers;
+precise time claims require a dated repository or process record.
+
+\subsection{Token accounting}
+
+Table~\ref{tab:tokens} gives the final cumulative counters displayed by
+the session renderer. The parser checks that the cumulative counters
+are monotone, that total tokens equal input plus output, and that the
+cached-input and reasoning-output counters are contained in their
+respective parent counters. A second extraction of the final HTML
+usage section gives the same values.
+
+\begin{table}[ht]
+\centering
+\caption{Final cumulative token counters in the supplied export.
+Subcounters are indented and must not be added to their parent counters.}
+\label{tab:tokens}
+\begin{tabular}{lr}
+\toprule
+Reported counter & Tokens\\
+\midrule
+Input & 473,526,483\\
+\quad Cached input & 453,222,656\\
+\quad Cache-write input & 0\\
+Output & 3,807,698\\
+\quad Reasoning output & 1,845,520\\
+Total (input plus output) & 477,334,181\\
+\midrule
+Derived input minus cached input & 20,303,827\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Cached input accounts for approximately 95.71\% of reported input.
+The 477 million total is therefore neither a count of newly generated
+text nor a count of distinct tokens read for the first time.
+The distinction between cached input and input, and between reasoning
+output and output, follows the usage conventions described in the
+official documentation~\cite{promptcaching,reasoning}.
+
+There are 96 identical successive cumulative snapshots. In addition,
+80 \emph{Last} records contain a positive total but zero for every
+itemized component. The analysis retains these records without
+assigning an undocumented request type to them. It does not sum
+these records to reconstruct usage. These limitations, and the
+absence of a reconciliation with provider invoices, prevent an
+audited monetary-cost estimate from being inferred from the export
+alone.
+
+\subsection{Outcome categories and checks}
+
+We distinguish five questions about an artifact:
+\begin{enumerate}
+\item Does its mathematical statement match the question being addressed?
+\item Is the argument correct under its stated assumptions and imported results?
+\item Do the computations establish the particular finite claims assigned to them?
+\item Is the assertion already known or an immediate consequence of prior work?
+\item Has someone independent of the producing agent accepted the argument?
+\end{enumerate}
+These questions require different evidence. A digest match answers
+none of the mathematical questions. A finite check cannot establish
+an unrestricted infinite-group theorem without a proved reduction.
+Failure to find a paper in a literature search does not establish
+priority. A second implementation can expose an error in a first
+program while sharing the same mistaken mathematical specification.
+
+The deadline ledger uses \emph{complete candidate} for an argument
+presented as answering the recorded scope and surviving the internal
+checks conducted during the run. A \emph{partial result} proves a
+restricted assertion while leaving the full question open.
+A \emph{rediscovery} reproduces a known phenomenon or proof after
+independent work, whereas a \emph{prior-result deduction} applies an
+identified theorem. A bounded search without a hit remains
+\emph{computational evidence} for its exact range.
+These are reporting categories, not interchangeable levels on a
+single scale of confidence.

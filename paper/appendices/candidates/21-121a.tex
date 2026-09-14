@@ -1,0 +1,141 @@
+\subsection{An unattained 2-Jordan exponent: Problem 21.121(a)}
+\label{cand:21.121}
+
+A group \(\Gamma\) is \(p\)-Jordan if some constants \(J,e\) have
+the following property: every finite \(H\leq\Gamma\) has a normal
+abelian \(p'\)-subgroup of index at most \(J|H_{(p)}|^e\), where
+\(H_{(p)}\) is a Sylow \(p\)-subgroup. The question asks whether the
+infimum of the admissible exponents must itself be admissible.
+
+\begin{proposition}
+There is a countable \(2\)-Jordan group with exponent
+\[
+ e_0=\frac{\log24}{\log8}
+\]
+for which no constant works at exponent \(e_0\).
+\end{proposition}
+
+\begin{proof}
+For \(k\geq1\), put \(n=2^k-1\) and index the coordinates of
+\(\F_2^n\) by nonzero \(v\in\F_2^k\). Use the simplex code
+\[
+ C_k=\{(a\cdot v)_{v\ne0}:a\in\F_2^k\}.
+\]
+It has dimension \(k\). We need a small intersection estimate:
+if \(L\) is spanned by \(r\) nonzero vectors with disjoint supports
+and \(c=\dim(C_k\cap L)\), then
+\begin{equation}\label{eq:simplex-intersection}
+ 2^c\leq r+1.
+\end{equation}
+Indeed, a basis of the intersection corresponds to \(c\) independent
+linear forms on \(\F_2^k\), so its coordinate columns include all
+\(2^c-1\) nonzero columns in \(\F_2^c\). Vectors in \(L\) are
+constant on each of the \(r\) disjoint supports and zero elsewhere,
+giving at most \(r\) different nonzero columns.
+
+Let \(S=Q_8\rtimes C_3\), where a generator of \(C_3\) cycles
+\(i,j,ij\) in \(Q_8\). Identify the center of \(Q_8^n\) with
+\(\F_2^n\), and form
+\[
+ G_k=S^n/C_k,\qquad P_k=Q_8^n/C_k,\qquad T_k=C_3^n.
+\]
+The code is central and fixed by \(T_k\), so
+\[
+ G_k=P_k\rtimes T_k,\qquad
+ |G_k|=24^n/2^k,\qquad |P_k|=8^n/2^k.
+\]
+Write \(Z_0\) for the image of \(Z(Q_8^n)\). Then
+\(V=P_k/Z_0=\bigoplus_{i=1}^n V_i\), with each \(V_i\)
+two-dimensional over \(\F_2\); the \(i\)-th \(C_3\) factor acts
+irreducibly on \(V_i\) and trivially on the other coordinates.
+
+We claim that every \(H\leq G_k\) contains a normal abelian
+odd-order subgroup \(A_0\) for which, with \(u=|H_{(2)}|\),
+\begin{equation}\label{eq:jordan-subgroup}
+ [H:A_0]=u3^r,\qquad u\geq\frac{8^r}{r+1}
+\end{equation}
+for some integer \(r\geq0\).
+Put \(U=H\cap P_k\), its normal Sylow \(2\)-subgroup. A Sylow
+\(3\)-subgroup \(A\) complements \(U\), simply by comparing
+orders. Conjugating into the Sylow subgroup \(T_k\), we may assume
+\(H=U\rtimes A\) with \(A\leq T_k\). Set \(A_0=C_A(U)\);
+it is normal abelian of odd order, since it centralizes \(U\)
+and \(A\) is abelian. Write \(|A/A_0|=3^r\).
+
+Let \(W\) be the image of \(U\) in \(V\). The kernel of the
+action of \(A\) on \(W\) is exactly \(A_0\). To check the
+nontrivial inclusion, an element \(a\) in that kernel satisfies
+\(x^a=xz_x\), with \(z_x\in U\cap Z_0\), for every \(x\in U\).
+It fixes \(z_x\), and \(a^3=1\), so
+\(x=x^{a^3}=xz_x^3=xz_x\), whence \(z_x=1\).
+
+The representation of \(A\) on \(W\) is completely reducible.
+Over \(\F_4\), its commuting operators diagonalize, since
+\(X^3-1\) has distinct roots. Nontrivial irreducibles over
+\(\F_2\) therefore have dimension two and correspond to pairs
+\(\{\alpha,-\alpha\}\) of nonzero homomorphisms
+\(\alpha:A\to\F_3\). The occurring characters span a space of
+dimension \(r\), because their common kernel is \(A_0\).
+Choose \(r\) independent occurring characters and nonzero vectors
+\(w_j\) in their respective isotypic components of \(W\).
+Their coordinate supports are disjoint: a coordinate \(V_i\)
+belongs to only one character pair.
+
+Choose \(a_j\in A\) acting nontrivially on the character of \(w_j\)
+and lift \(w_j\) to \(x_j\in U\). In each nonzero quaternion
+coordinate, \(w_j\) and \(w_j^{a_j}\) are distinct nonzero vectors
+of \(Q_8/Z(Q_8)\), so the commutator of their lifts is the central
+involution. Thus \([x_j,x_j^{a_j}]\) is the image of the binary
+support vector \(d_j\) of \(w_j\). The \(d_j\) are disjoint and
+independent before quotienting by \(C_k\). If \(L\) is their
+span, \eqref{eq:simplex-intersection} shows that their images span
+a space of dimension at least \(r-\log_2(r+1)\) in
+\([U,U]\leq U\cap Z_0\). Also \(\dim W\geq2r\).
+Consequently
+\[
+ u=|W|\,|U\cap Z_0|
+   \geq2^{2r}2^{r-c}
+   \geq 8^r/(r+1).
+\]
+Together with \([H:A_0]=|U||A/A_0|\), this proves
+\eqref{eq:jordan-subgroup}, including \(r=0\).
+
+For \(e>e_0>1\), it follows that
+\[
+ \frac{[H:A_0]}{|H_{(2)}|^e}
+ \leq (r+1)^{e-1}
+       \left(\frac{3}{8^{e-1}}\right)^r.
+\]
+The right-hand side has a finite supremum over \(r\geq0\),
+independent of \(k\) and \(H\), since its exponential base is
+less than one.
+
+On the other hand, every normal odd-order subgroup of \(G_k\)
+centralizes \(P_k\): their commutator is in their trivial
+intersection. Its image in \(T_k\) must then act trivially on
+\(V\), because inner automorphisms from \(P_k\) act trivially
+on \(P_k/Z_0\). The action of \(T_k\) is faithful, so that
+normal subgroup is trivial. Hence the smallest permissible
+index for \(G_k\) itself is \(|G_k|\), and
+\[
+ \frac{|G_k|}{|P_k|^{e_0}}=2^{k(e_0-1)}\longrightarrow\infty.
+\]
+
+Finally take \(\Gamma=*_{k\geq1}G_k\). Every finite subgroup
+of a free product is conjugate into a factor. One proof uses
+the free-product tree: a finite group fixes the center of the
+finite subtree spanned by an orbit, and the action has no edge
+inversions. Vertex stabilizers are trivial or conjugate to
+factors. The uniform estimates therefore give every exponent
+\(e>e_0\) for \(\Gamma\), while its embedded factors rule out
+\(e_0\). A smaller admissible exponent would imply admissibility
+of \(e_0\), so the infimum is exactly \(e_0\).
+\end{proof}
+
+The use of a free product is material; a direct sum would introduce
+additional finite products not covered by the argument. No finite
+generation assumption appears in the question. The construction
+does not resolve part~(b). The archive contains GAP checks on all
+subgroup conjugacy classes for \(k=1,2\), and direct code and
+quaternion controls; the uniform argument above supplies the
+unbounded quantifiers. Source: \artifact{research/21.121a-proof.md}.
