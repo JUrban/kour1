@@ -50,8 +50,8 @@ def main():
         "when the TeX packages are installed.\n\n"
         "The anc directory contains the complete portable carpet proof "
         "certificates. Run its three checks from anc; see README.md.\n\n"
-        "Author names and affiliations must be supplied by the human "
-        "authors before submission. This archive has not been uploaded. "
+        "The title page includes the author order and affiliations supplied "
+        "by the organizers. This archive has not been uploaded. "
         "The companion full source archive includes measurements, review "
         "records, and reproducibility scripts.\n"
     ).encode()

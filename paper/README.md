@@ -37,17 +37,30 @@ computations remain in the frozen research archive and were not all
 rerun during manuscript preparation.
 
 To reproduce the session and Git measurements, use the full frozen
-research repository and the supplied session exports:
+research repository and the supplied HTML/text and full JSONL session inputs:
 
 ~~~sh
 python3 paper/scripts/analyze_experiment.py --check
+python3 paper/scripts/analyze_rollout.py --check
 ~~~
 
-Without --check, this regenerates the measurement files. The analyzer
-uses Python's standard library and Git. It does not run mathematical
-verifiers or contact the network. Raw session exports remain separate;
-their sizes and hashes are recorded. The included visible-message
-projection excludes directives and omitted internal event bodies.
+Without --check, these regenerate five legacy and six full-trace files.
+The parsers use Python's standard library; the first also uses Git. They
+do not run mathematical verifiers or contact the network. Raw inputs remain
+separate and are identified by size and SHA-256. The full JSONL includes
+research, closeout and initial manuscript preparation. Request IDs reconcile
+the legacy cumulative ledger with separately recorded compaction requests;
+data/ccusage-supplied.json preserves the organizers' exact row and the flat
+rate assumptions. Included projections exclude internal reasoning, compaction
+summaries, and system/developer instruction bodies.
+
+Regenerate the three-panel chronology source with:
+
+~~~sh
+python3 paper/scripts/make_trajectory_figure.py
+cd paper
+tectonic --outdir figures figures/trajectory.tex
+~~~
 
 The same-agent review is documented in reviews/candidate-review-ledger.json,
 reviews/issue-log.md, reviews/source-notes.md and reviews/completion-audit.md.
@@ -55,8 +68,10 @@ Internal review and targeted replay are distinct from outside acceptance,
 formal verification and priority. All 46 entries preserve their historical
 candidate status.
 
-Author names and affiliations must be supplied before submission. The
-configured repository URL does not establish anonymous availability of
+The title page credits Codex gpt-6-astra (OpenAI), Michael Kinyon
+(University of Denver), and Josef Urban (AI4REASON; University of Gothenburg),
+in the order supplied by the organizers. Kinyon and Urban conceived and
+oversaw the experiment. The configured repository URL does not establish anonymous availability of
 the frozen snapshot. No arXiv submission, external upload or Git push
 was performed. PLAN.md preserves the requested scope; STATUS.md records
 the handoff state.

@@ -21,7 +21,8 @@ September 2026 version of the twenty-first edition was therefore treated
 as a source to interpret and investigate, rather than as a benchmark
 with a ready-made binary answer key.
 
-The user asked an agent to solve as many previously unsolved Notebook
+Michael Kinyon and Josef Urban conceived the prompt and oversaw the
+experiment. They asked the agent to solve as many previously unsolved Notebook
 problems as possible within 48 hours, using a supplied GAP installation,
 generally staying within 20 CPU cores and 100\,GB of memory, and keeping
 detailed plans, reports, and frequent local Git commits. The agent was
@@ -53,27 +54,28 @@ solved/unsolved classification would obscure: smaller examples of
 known phenomena, alternative deductions, sharp bounds in restricted
 classes, and complete searches within clearly stated finite ranges.
 
-\subsection{Relation to other experimental settings}
+\subsection{Motivation and related work}
 
-FunSearch combines language-model proposals with executable evaluation
-to search for programs producing improved mathematical
-constructions~\cite{funsearch}. Formal proof systems provide a different
-kind of feedback: AlphaProof, for example, develops proofs within a
-formal environment whose accepted derivations can be checked by a
-proof assistant~\cite{alphaproof}. The First Proof projects instead use
-research-level problems and emphasize the assessment of mathematical
-solutions, with the second batch publishing methodology, solutions,
-and referee materials~\cite{firstproof,firstproof2}.
+Urban's motivation for the shared time budget was the 2006/7
+MPTPChallenge: attempt many related problems and reuse discoveries
+across them~\cite{mptpchallenge}. MaLARea implemented this approach
+through repeated proving and learned premise selection~\cite{malarea-2015}.
+The present experiment adopts the broad portfolio setting, with a
+48-hour wall-clock limit, informal mathematical targets, and adaptation
+through the agent's context and files. It does not include observed
+online training of the model's weights.
 
-The present experiment is an observational case study of a broad
-portfolio search. It had neither a fixed executable evaluator for all
-targets nor a formal proof kernel accepting the resulting prose
-arguments. The agent could also read public sources, including results
-relevant to the questions it selected. Consequently, the experiment
-does not estimate a held-out success rate, establish an advantage over
-another model or a human baseline, or isolate the effect of any
-individual tool. Its value lies in the mathematical material and in
-the inspectable record of how that material was produced and checked.
+Related approaches include learned tactical proof search in
+TacticToe~\cite{tactictoe-2017}, program-library and search-policy
+learning in DreamCoder~\cite{dreamcoder}, and iterative program
+synthesis and neural training in Alien Coding~\cite{alien-coding}.
+Later examples include AlphaProof's formal reinforcement-learning
+results~\cite{alphaproof} and FunSearch's language-model-guided
+program search~\cite{funsearch}. First Proof studies research-level
+mathematical problems with explicit assessment of proposed
+solutions~\cite{firstproof,firstproof2}. These settings differ in their
+targets, training, evaluators and access to prior results; their
+reported outcomes are not directly comparable to the present run.
 
 \subsection{Reading the paper}
 

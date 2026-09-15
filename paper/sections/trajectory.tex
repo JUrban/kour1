@@ -2,8 +2,7 @@
 \label{sec:trajectory}
 
 The chronology has two complementary sources. Commits give dated,
-recoverable states of the repository. The exported messages give a
-selective account of what the agent believed it had established at each
+recoverable states of the repository. The timestamped session messages give an account of what the agent believed it had established at each
 stage. Neither records the instant at which an idea first occurred.
 We therefore describe observable transitions---a proof being saved, a
 certificate being completed, a claim being withdrawn---rather than
@@ -12,14 +11,17 @@ assigning precise discovery times to unobserved reasoning.
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/trajectory.pdf}
-\caption{Two observable aspects of the frozen trajectory.
+\caption{Repository and recorded tool activity during the research window.
 The upper panel counts the 198 commits within the research window;
 the closeout commit 16 seconds later is excluded.
-The lower panel retrospectively follows the first committed principal
+The middle panel retrospectively follows the first committed principal
 proof file for each family retained on the final candidate list.
 It excludes withdrawn candidates and does not measure the contemporaneous
 candidate count, proof completion, novelty, or outside acceptance.
-Both panels are derived from the committed CSV measurements.}
+The lower panel counts completed command/polling, web, file-change
+and image-view observations in one-hour bins. It excludes context
+compaction and sleep operations; counts are not independent experiments.
+All panels are derived from the supplied CSV measurements.}
 \label{fig:trajectory}
 \end{figure}
 
@@ -35,9 +37,9 @@ it in this experiment, and the initial index was not a promise to attempt
 every entry.
 
 The first retained mathematical lead was \kn{21.106}. Message~95
-announced a possible formula selecting generators of the infinite cyclic
+(10 September, 21:00:51 UTC) announced a possible formula selecting generators of the infinite cyclic
 center of the integral Heisenberg group; message~152 reported a written
-candidate and local commit. Section~\ref{subsec:concise} gives the
+candidate and local commit at 21:06:04 UTC. Section~\ref{subsec:concise} gives the
 argument. At the same time the agent launched finite screens for
 other questions, including transitive groups, character tables, and
 positive binary words. This pattern continued: short symbolic tasks
@@ -107,7 +109,8 @@ the reduction, prototype searches, and completed checks for
 
 For \(n=7\), generation produced a certificate with \(42{,}891{,}332\)
 nodes. Message~10686 reports its completion and immediately notes that
-verification remained outstanding. Six GAP processes subsequently
+verification remained outstanding at 11 September, 11:08:29 UTC.
+Six GAP processes subsequently
 checked the separate parts. The final records account for
 \(786{,}577{,}344\) collision cases and \(5{,}447{,}182{,}055\)
 relation implications; the complete compressed certificate occupies
@@ -115,6 +118,13 @@ relation implications; the complete compressed certificate occupies
 approximately 26 hours of elapsed time. A parser restricted to the
 certificate's data grammar was also used, avoiding reliance on
 executing arbitrary certificate text as GAP code.
+
+The last workers were still active on 12 September at 12:45 UTC.
+Message~28901, at 13:10:31 UTC, reports all six workers finished with
+zero exits and a successful aggregate check, while explicitly retaining
+a discrepant exit from the historical launcher. Message~29167 reports
+the committed proof packet at 13:31:41 UTC. These dated observations
+connect the long-running process records to the final mathematical claim.
 
 This distinction between generation and checking matters. Intermediate
 messages report how many nodes had been checked, how many workers were

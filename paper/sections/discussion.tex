@@ -60,25 +60,26 @@ The experiment had browsing access, so retrieval and mathematical
 reasoning were deliberately interwoven. We make no claim to have
 isolated either capability.
 
-The retained export limits behavioral reconstruction. It lacks raw
-tool-call bodies, internal-analysis events, complete human-message
-history, and per-event wall-clock times. Repository artifacts supply
-many commands and outcomes, but they do not turn the export into a
-complete interaction trace. The model setting is human-supplied
-metadata; the renderer version is observed in the export. Remote
-inference hardware, actual peak local resource consumption, provider
-invoices, and a complete historical sampling configuration are
-unavailable. Reported tokens and elapsed time should not be converted
-into an audited monetary or energy cost.
+The full JSONL improves behavioral reconstruction through dated tool
+observations, request identifiers, compaction records and corroborated
+model settings. It remains a client-side record: remote inference
+hardware, actual peak local resource consumption, provider invoices,
+and a complete historical sampling configuration are unavailable.
+The cost reconstruction in Section~\ref{sec:methods} makes its rates
+and counter scope explicit; it does not measure actual billing or
+energy use. Human oversight outside the recorded interaction is also
+not observable from the trace.
 
 Finally, manuscript review is still review by the same agent that
 produced the research. Repeated rereading and fresh calculations can
 find errors, but they do not provide authorial independence. The
 deadline archive contains zero outside reviews. Neither a preserved
 PASS message nor the absence of a finding in an internal review
-substitutes for specialist assessment. Authorship and responsibility
-for any submitted paper belong to the human authors; the use of the
-agent in research and manuscript preparation should remain explicit.
+substitutes for specialist assessment. Codex \texttt{gpt-6-astra} is
+credited as the principal author for research execution, proof and code
+drafting, manuscript preparation, and internal review. Michael Kinyon
+and Josef Urban conceived the prompt and experiment and oversaw the
+work. These contributions do not constitute outside mathematical review.
 
 \subsection{A more informative follow-up experiment}
 
@@ -106,8 +107,9 @@ success claims.
 Save model identifiers, reasoning settings, harness and package
 versions, continuation instructions, tool permissions, and retrieval
 dates. Capture raw event logs with timestamps and request identifiers,
-along with local CPU time and peak memory. Keep reported usage counters
-and billing records separate until reconciled.
+along with local CPU time and peak memory. Retain response-level usage, including compaction, and separate the
+research interval from subsequent writing. Keep usage estimates and
+billing records separate until reconciled.
 
 \item \textbf{Treat verification as a research task.}
 For a search, specify the exact predicate and its relation to the

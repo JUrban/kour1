@@ -11,6 +11,7 @@
 \usepackage{microtype,enumitem,xurl,xcolor}
 \usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
 \hypersetup{pdftitle={Forty-eight hours with the Kourovka Notebook},
+ pdfauthor={Codex gpt-6-astra; Michael Kinyon; Josef Urban},
  pdfsubject={An agentic mathematical research experiment}}
 \setlist{topsep=4pt,itemsep=2pt}
 \setlength{\emergencystretch}{2em}
@@ -40,8 +41,10 @@
 \newcommand{\snapshot}{\texttt{cff2c37}}
 \title{Forty-eight hours with the Kourovka Notebook:\\
 an experiment in agentic mathematical research}
-\author{Author information pending}
-\date{14 September 2026}
+\author{Codex \texttt{gpt-6-astra}\\OpenAI
+\and Michael Kinyon\\University of Denver
+\and Josef Urban\\AI4REASON\\University of Gothenburg}
+\date{15 September 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -58,13 +61,16 @@ deductions from prior results, and bounded negative searches. This
 number describes the agent's documented outcome; it is not a count of
 independently accepted new theorems. We present mathematical arguments
 and their dependencies, reconstruct the observable trajectory from
-session exports and 199 local commits, and distinguish mathematical
+a timestamped session log and 199 local commits, and distinguish mathematical
 verification from artifact integrity and priority assessment.
 The case study illustrates both the productivity of a persistent
 tool-using workflow and the review obligations it creates. It supports
 recommendations for future experiments, including separate novelty and
 correctness ledgers, independent checking of search predicates, explicit
 coverage boundaries, and preservation of failures and resource records.
+Reconciliation of the detailed usage log
+also separates research from later writing and identifies compaction
+requests omitted from the session summary counters.
 \end{abstract}
 \tableofcontents
 \input{sections/introduction}

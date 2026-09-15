@@ -25,14 +25,14 @@ authoritative for mathematical notation and scope.
 
 \subsection{Agent and computational environment}
 
-The experiment used \texttt{gpt-6-astra} with reasoning effort
-\texttt{xhigh}. These two settings were supplied by the user during
-manuscript preparation on 14 September 2026; the supplied session
-export does not itself retain them. The export identifies the
-application as Codex 0.153.4. Official documentation identifies
-\texttt{xhigh} as a supported Astra reasoning setting~\cite{astra},
-but documentation of a product's capabilities is not evidence that
-every such capability was exercised in this particular run.
+The experiment used Codex 0.153.4 with \texttt{gpt-6-astra} and
+reasoning effort \texttt{xhigh}. The full JSONL record corroborates the
+settings supplied during manuscript preparation: all 139 retained
+turn-context records identify this model and effort, including 133 in
+the research window. The session metadata records the OpenAI provider
+and the CLI application version. These observations identify the
+recorded configuration, without establishing every provider-side
+implementation detail.
 
 The agent worked in a persistent Linux workspace with shell access,
 file editing, Git, internet source retrieval, and tools for inspecting
@@ -74,11 +74,13 @@ an independently trained reviewing model.
 The workspace served as external memory. Plans and status files recorded
 the next steps; proof drafts preserved mathematical arguments; scripts
 and logs preserved computations; and Git recorded successive states.
-The visible export contains 53 goal-continuation directives and 52
-assistant final messages. These observations are consistent with a
-long task continued across many turns, rather than a single uninterrupted
-response. They do not reveal the full underlying context-management
-implementation.
+The research window contains 54 task-start events, 52 task-completion
+events, one aborted turn, and 79 context compactions. One further task
+completion occurs during closeout. The opening task was paused during
+setup; after the GAP correction at 20:58:51 UTC it resumed at
+20:59:58 UTC. The wall-clock budget includes this interval. Repeated
+continuations and compactions are visible in the record; the work was
+not a single uninterrupted model response.
 
 There were 198 commits during the 48-hour window. The first, at
 21:00:37 UTC on 10 September, initialized the investigation.
@@ -95,71 +97,123 @@ other records. Logical file size is not compressed repository size.
 The manuscript analysis reads this fixed revision, so later writing
 and review do not increase the experimental counts.
 
-\subsection{What the session export retains}
+\subsection{Session records and observable operations}
 
-Two files were supplied after the experiment: \artifact{session.html}
-and \artifact{session.txt}. Their digests, exact aggregate measurements,
-and a standard-library parser are included with the manuscript's data.
-The HTML header advertises 34,102 events. Its actual retained event
-elements comprise 709 assistant commentaries, 52 assistant final
-messages, one human message, 61 directives, and 3,616 token records:
-4,439 elements in total. The text export agrees on the visible message
-counts.
+The full JSONL session supplied on 15 September contains 36,016
+records, from 10 September 20:56:46.325 UTC through 14 September
+17:05:09.077 UTC. It includes the research run, its closeout, and
+initial manuscript preparation. We separate these phases before
+counting operations or usage. Manuscript preparation begins with the
+new goal recorded at 14 September 14:12:56.892 UTC.
 
-No tool-call bodies or internal-analysis event bodies occur as exported
-event elements. Thus the export is not a complete raw execution trace,
-and it cannot establish an exact tool-call count. Nor does its single
-human-message element prove that there was only one human instruction:
-the initial research objective is preserved inside a directive.
-Most retained events have sequence identifiers but no individual
-wall-clock timestamp. Narrative ordering can use these identifiers;
-precise time claims require a dated repository or process record.
+The earlier \artifact{session.html} and \artifact{session.txt} files
+are projections ending at research closeout. The HTML advertises
+34,102 events and retains 4,439 event elements, including 3,616 token
+notifications. Every one of those token observations matches the
+corresponding JSONL line, including all cumulative and last-use fields.
+The full record adds individual timestamps, tool observations,
+configuration records and request-level usage. Its digest and the
+reconciliation procedure are supplied in Appendix~\ref{app:reproduction}.
 
-\subsection{Token accounting}
+Within the research window, completed-item notifications record
+4,350 command or polling observations, 676 file-change items, 357
+image views, and 1,293 web-tool observations. The web count includes
+searches and page retrieval; it is not a count of search queries.
+There are also four completed sleep-tool observations. We count each
+completed item once by its identifier, keeping these counts separate
+from the outer code-tool calls that can contain several operations.
+Of the command observations, 251 have nonzero exit status; these include
+expected no-match results and interrupted processes, and cannot be
+interpreted as 251 failed mathematical experiments.
 
-Table~\ref{tab:tokens} gives the final cumulative counters displayed by
-the session renderer. The parser checks that the cumulative counters
-are monotone, that total tokens equal input plus output, and that the
-cached-input and reasoning-output counters are contained in their
-respective parent counters. A second extraction of the final HTML
-usage section gives the same values.
+The dated visible messages support the narrative below. Completed
+human-message items record the GAP correction during research and the
+model confirmation during manuscript preparation; the original
+objectives also occur in goal records. These counts do not measure
+oversight outside the recorded interaction. The derived public data
+omit internal reasoning and system/developer instruction bodies.
+
+\subsection{Token and cost accounting}
+
+The JSONL contains two distinct usage ledgers. Its 3,829 unique
+\texttt{token\_usage\_record} responses sum exactly to every running
+\texttt{thread\_token\_usage} value. Of these responses, 84 match
+context-compaction identifiers. Removing those responses gives exactly
+the final cumulative \texttt{event\_msg/token\_count} counters, which
+are the counter stream used by ccusage~\cite{ccusage-docs}.
+Embedded copies of history and usage are not new requests.
+
+The organizers supplied the ccusage row reproduced in
+Table~\ref{tab:tokens}. It agrees exactly with the second ledger for
+the \emph{whole supplied session}, including manuscript preparation.
+Its input column counts uncached input; the renderer's input counter
+includes cached input. Reasoning tokens are a subset of output, and
+are not added a second time~\cite{promptcaching,reasoning}.
 
 \begin{table}[ht]
 \centering
-\caption{Final cumulative token counters in the supplied export.
-Subcounters are indented and must not be added to their parent counters.}
+\caption{Supplied ccusage row and its full-session reconciliation.
+The row excludes the separately recorded compaction requests.}
 \label{tab:tokens}
 \begin{tabular}{lr}
 \toprule
-Reported counter & Tokens\\
+Counter & Tokens\\
 \midrule
-Input & 473,526,483\\
-\quad Cached input & 453,222,656\\
-\quad Cache-write input & 0\\
-Output & 3,807,698\\
-\quad Reasoning output & 1,845,520\\
-Total (input plus output) & 477,334,181\\
+Uncached input & 21,605,689\\
+Cached input & 482,598,400\\
+Output & 4,055,235\\
+\quad Of which reasoning output & 1,894,719\\
+Total (uncached input plus cached input plus output) & 508,259,324\\
 \midrule
-Derived input minus cached input & 20,303,827\\
+Additional input and output in 84 compaction requests & 21,569,265\\
+All recorded requests, including compactions & 529,828,589\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Cached input accounts for approximately 95.71\% of reported input.
-The 477 million total is therefore neither a count of newly generated
-text nor a count of distinct tokens read for the first time.
-The distinction between cached input and input, and between reasoning
-output and output, follows the usage conventions described in the
-official documentation~\cite{promptcaching,reasoning}.
+Using flat rates of USD 10 per million uncached input tokens, USD 1
+per million cached input tokens, and USD 50 per million output tokens
+reproduces the supplied USD 901.42 estimate:
+\[
+ \frac{10(21{,}605{,}689)+482{,}598{,}400+50(4{,}055{,}235)}{10^6}
+ =901.41704.
+\]
+These rates match the model documentation consulted on 15 September
+2026~\cite{astra}. The maximum recorded request input is 259,244
+tokens, below its 272,000-token long-input threshold. We use the same
+flat rates throughout Table~\ref{tab:phase-usage}; this is a transparent
+API-equivalent reconstruction, not an invoice or an inference about
+the organizers' subscription bill, discounts, or additional tool charges.
+The exact ccusage version and invocation were not supplied.
 
-There are 96 identical successive cumulative snapshots. In addition,
-80 \emph{Last} records contain a positive total but zero for every
-itemized component. The analysis retains these records without
-assigning an undocumented request type to them. It does not sum
-these records to reconstruct usage. These limitations, and the
-absence of a reconciliation with provider invoices, prevent an
-audited monetary-cost estimate from being inferred from the export
-alone.
+\begin{table}[ht]
+\centering\small
+\caption{Usage by phase, assigned by request-record timestamp.
+``Other'' means responses other than context compactions.
+USD estimates are rounded independently to cents.}
+\label{tab:phase-usage}
+\begin{tabular}{lrrr}
+\toprule
+ & Research & Closeout & Manuscript\\
+\midrule
+Other responses & 3,515 & 5 & 225\\
+Compaction responses & 79 & 0 & 5\\
+All input and output tokens & 497,160,051 & 460,875 & 32,207,663\\
+Other-response estimate (USD) & 846.09 & 0.56 & 54.77\\
+Compaction estimate (USD) & 64.52 & 0.00 & 3.85\\
+All-response estimate (USD) & 910.61 & 0.56 & 58.62\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the full-session estimate including compactions is USD 969.78,
+of which USD 910.61 is assigned to the 48-hour research window.
+The earlier HTML total of 477,334,181 tokens equals research plus
+closeout usage excluding compactions. A delayed token notification
+straddles the deadline, so phase assignment uses request-record times,
+not notification times. These are logging boundaries, not exact
+provider execution intervals. Cached input dominates both ledgers;
+neither total measures distinct text read or newly generated text.
 
 \subsection{Outcome categories and checks}
 

@@ -1,0 +1,1445 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "session/rollout-2026-09-10T20-55-36-01a08d1a-c2b6-7ee2-809a-e5211944e0c5.jsonl",
+    "bytes": 540278152,
+    "sha256": "f316fb63957f3ec50895088537786a4946a15601e54da5dac86ec0e4fcdd21d8",
+    "records": 36016,
+    "first_timestamp": "2026-09-10T20:56:46.325Z",
+    "last_timestamp": "2026-09-14T17:05:09.077Z"
+  },
+  "phase_boundaries": {
+    "start": "2026-09-10T20:56:46.000Z",
+    "deadline": "2026-09-12T20:56:46.000Z",
+    "manuscript_start": "2026-09-14T14:12:56.892Z",
+    "assignment": "Top-level record timestamp; half-open intervals."
+  },
+  "session_metadata": {
+    "id": "01a08d1a-c2b6-7ee2-809a-e5211944e0c5",
+    "timestamp": "2026-09-10T20:55:36.375Z",
+    "originator": "codex-tui",
+    "cli_version": "0.153.4",
+    "source": "cli",
+    "model_provider": "openai",
+    "history_mode": "paginated",
+    "context_window": {
+      "window_id": "01a08d1a-c2b6-7ee2-809a-e53592c91efd"
+    }
+  },
+  "model_context_records": [
+    {
+      "line": 10,
+      "timestamp": "2026-09-10T20:56:46.706Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 53,
+      "timestamp": "2026-09-10T20:58:51.523Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 405,
+      "timestamp": "2026-09-10T21:22:03.306Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 470,
+      "timestamp": "2026-09-10T21:30:10.432Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 709,
+      "timestamp": "2026-09-10T21:43:29.587Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 939,
+      "timestamp": "2026-09-10T22:03:57.202Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 968,
+      "timestamp": "2026-09-10T22:09:42.047Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 1295,
+      "timestamp": "2026-09-10T22:32:10.727Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 1404,
+      "timestamp": "2026-09-10T22:44:21.313Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 1673,
+      "timestamp": "2026-09-10T23:01:13.182Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 1802,
+      "timestamp": "2026-09-10T23:13:48.424Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 2127,
+      "timestamp": "2026-09-10T23:36:35.294Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 2193,
+      "timestamp": "2026-09-10T23:45:07.361Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 2464,
+      "timestamp": "2026-09-11T00:04:51.864Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 2568,
+      "timestamp": "2026-09-11T00:13:06.813Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 2889,
+      "timestamp": "2026-09-11T00:31:05.983Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 2939,
+      "timestamp": "2026-09-11T00:37:59.179Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 3075,
+      "timestamp": "2026-09-11T00:48:21.048Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 3299,
+      "timestamp": "2026-09-11T01:14:06.208Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 3541,
+      "timestamp": "2026-09-11T01:29:02.002Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 3753,
+      "timestamp": "2026-09-11T01:49:49.541Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 3972,
+      "timestamp": "2026-09-11T02:06:20.480Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 4179,
+      "timestamp": "2026-09-11T02:25:55.353Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 4483,
+      "timestamp": "2026-09-11T02:45:15.560Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 4546,
+      "timestamp": "2026-09-11T02:54:32.174Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 4793,
+      "timestamp": "2026-09-11T03:11:27.190Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 4924,
+      "timestamp": "2026-09-11T03:21:44.098Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 5258,
+      "timestamp": "2026-09-11T03:40:13.953Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 5273,
+      "timestamp": "2026-09-11T03:45:08.159Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 5526,
+      "timestamp": "2026-09-11T04:03:05.557Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 5698,
+      "timestamp": "2026-09-11T04:20:54.620Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 6060,
+      "timestamp": "2026-09-11T04:47:47.349Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 6154,
+      "timestamp": "2026-09-11T04:58:13.917Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 6352,
+      "timestamp": "2026-09-11T05:11:07.317Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 6678,
+      "timestamp": "2026-09-11T05:38:16.948Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 6740,
+      "timestamp": "2026-09-11T06:04:21.089Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 7030,
+      "timestamp": "2026-09-11T06:26:30.994Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 7233,
+      "timestamp": "2026-09-11T06:48:31.294Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 7493,
+      "timestamp": "2026-09-11T07:09:17.413Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 7592,
+      "timestamp": "2026-09-11T07:19:56.128Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 7916,
+      "timestamp": "2026-09-11T07:45:42.077Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 8386,
+      "timestamp": "2026-09-11T08:20:07.391Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 8438,
+      "timestamp": "2026-09-11T08:27:43.706Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 8813,
+      "timestamp": "2026-09-11T08:49:17.553Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 8917,
+      "timestamp": "2026-09-11T09:03:31.698Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 9141,
+      "timestamp": "2026-09-11T09:17:04.544Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 9263,
+      "timestamp": "2026-09-11T09:30:42.511Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 9637,
+      "timestamp": "2026-09-11T09:50:33.187Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 9756,
+      "timestamp": "2026-09-11T10:03:42.763Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 10339,
+      "timestamp": "2026-09-11T10:41:30.938Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 10373,
+      "timestamp": "2026-09-11T10:47:08.726Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 10668,
+      "timestamp": "2026-09-11T11:07:50.740Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 10969,
+      "timestamp": "2026-09-11T11:35:08.759Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 11255,
+      "timestamp": "2026-09-11T11:55:21.375Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 11367,
+      "timestamp": "2026-09-11T12:08:39.363Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 11680,
+      "timestamp": "2026-09-11T12:34:16.369Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 11762,
+      "timestamp": "2026-09-11T12:44:01.499Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 12062,
+      "timestamp": "2026-09-11T13:09:26.461Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 12329,
+      "timestamp": "2026-09-11T13:30:03.374Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 12608,
+      "timestamp": "2026-09-11T13:52:54.198Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 12900,
+      "timestamp": "2026-09-11T14:13:13.658Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 13260,
+      "timestamp": "2026-09-11T14:45:09.330Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 13530,
+      "timestamp": "2026-09-11T15:09:32.816Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 13949,
+      "timestamp": "2026-09-11T15:52:50.170Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 14312,
+      "timestamp": "2026-09-11T16:17:39.187Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 14673,
+      "timestamp": "2026-09-11T16:49:46.854Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 15093,
+      "timestamp": "2026-09-11T17:20:55.857Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 15448,
+      "timestamp": "2026-09-11T17:43:22.924Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 15762,
+      "timestamp": "2026-09-11T18:04:13.744Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 16140,
+      "timestamp": "2026-09-11T18:29:25.633Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 16392,
+      "timestamp": "2026-09-11T18:46:58.377Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 16800,
+      "timestamp": "2026-09-11T19:13:00.520Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 17135,
+      "timestamp": "2026-09-11T19:39:39.113Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 17593,
+      "timestamp": "2026-09-11T20:12:04.993Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 17910,
+      "timestamp": "2026-09-11T20:36:21.654Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 18370,
+      "timestamp": "2026-09-11T21:02:49.098Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 18746,
+      "timestamp": "2026-09-11T21:26:26.759Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 19067,
+      "timestamp": "2026-09-11T21:51:39.462Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 19521,
+      "timestamp": "2026-09-11T22:23:10.695Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 19814,
+      "timestamp": "2026-09-11T22:42:20.913Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 20392,
+      "timestamp": "2026-09-11T23:22:51.866Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 20826,
+      "timestamp": "2026-09-11T23:52:15.092Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 21294,
+      "timestamp": "2026-09-12T00:26:24.643Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 21708,
+      "timestamp": "2026-09-12T00:55:52.942Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 21977,
+      "timestamp": "2026-09-12T01:14:39.739Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 22343,
+      "timestamp": "2026-09-12T01:43:30.324Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 22750,
+      "timestamp": "2026-09-12T02:06:43.839Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 23088,
+      "timestamp": "2026-09-12T02:40:09.050Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 23433,
+      "timestamp": "2026-09-12T03:09:57.590Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 24238,
+      "timestamp": "2026-09-12T04:15:31.809Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 24900,
+      "timestamp": "2026-09-12T07:37:52.499Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 25025,
+      "timestamp": "2026-09-12T07:57:20.976Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 25556,
+      "timestamp": "2026-09-12T08:48:01.752Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 25897,
+      "timestamp": "2026-09-12T09:14:15.170Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 26080,
+      "timestamp": "2026-09-12T09:31:36.641Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 26418,
+      "timestamp": "2026-09-12T09:55:39.384Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 26441,
+      "timestamp": "2026-09-12T10:00:08.826Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 26657,
+      "timestamp": "2026-09-12T10:13:17.328Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 26812,
+      "timestamp": "2026-09-12T10:28:23.676Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 27229,
+      "timestamp": "2026-09-12T11:02:50.877Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 27242,
+      "timestamp": "2026-09-12T11:06:49.813Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 27416,
+      "timestamp": "2026-09-12T11:18:17.719Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 27717,
+      "timestamp": "2026-09-12T11:47:26.346Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 27992,
+      "timestamp": "2026-09-12T12:02:12.296Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 28371,
+      "timestamp": "2026-09-12T12:30:40.098Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 28435,
+      "timestamp": "2026-09-12T12:38:12.742Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 28579,
+      "timestamp": "2026-09-12T12:45:10.103Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 28962,
+      "timestamp": "2026-09-12T13:13:55.805Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 28974,
+      "timestamp": "2026-09-12T13:17:25.356Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 29173,
+      "timestamp": "2026-09-12T13:31:41.235Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 29431,
+      "timestamp": "2026-09-12T13:58:06.035Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 29543,
+      "timestamp": "2026-09-12T14:03:42.348Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 29837,
+      "timestamp": "2026-09-12T14:32:03.129Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 29956,
+      "timestamp": "2026-09-12T14:51:02.864Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 30304,
+      "timestamp": "2026-09-12T15:21:59.916Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 30436,
+      "timestamp": "2026-09-12T15:41:54.991Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 30705,
+      "timestamp": "2026-09-12T16:03:44.576Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 30895,
+      "timestamp": "2026-09-12T16:19:56.059Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 30923,
+      "timestamp": "2026-09-12T16:24:17.742Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 31214,
+      "timestamp": "2026-09-12T16:46:56.089Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 31336,
+      "timestamp": "2026-09-12T17:01:11.431Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 31499,
+      "timestamp": "2026-09-12T17:12:48.275Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 31683,
+      "timestamp": "2026-09-12T17:35:36.781Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 31874,
+      "timestamp": "2026-09-12T17:50:03.348Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 32154,
+      "timestamp": "2026-09-12T18:20:38.115Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 32189,
+      "timestamp": "2026-09-12T18:26:41.840Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 32428,
+      "timestamp": "2026-09-12T18:45:32.408Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 32707,
+      "timestamp": "2026-09-12T19:07:05.666Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 32745,
+      "timestamp": "2026-09-12T19:12:58.235Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 33051,
+      "timestamp": "2026-09-12T19:24:57.036Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 33320,
+      "timestamp": "2026-09-12T19:55:49.519Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 33799,
+      "timestamp": "2026-09-12T20:33:16.890Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 33826,
+      "timestamp": "2026-09-12T20:41:23.900Z",
+      "phase": "research",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 34108,
+      "timestamp": "2026-09-14T14:12:56.946Z",
+      "phase": "manuscript",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 34411,
+      "timestamp": "2026-09-14T14:48:29.084Z",
+      "phase": "manuscript",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 34728,
+      "timestamp": "2026-09-14T15:21:40.177Z",
+      "phase": "manuscript",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 35108,
+      "timestamp": "2026-09-14T15:55:47.972Z",
+      "phase": "manuscript",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 35471,
+      "timestamp": "2026-09-14T16:32:04.902Z",
+      "phase": "manuscript",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    },
+    {
+      "line": 35804,
+      "timestamp": "2026-09-14T16:52:52.744Z",
+      "phase": "manuscript",
+      "model": "gpt-6-astra",
+      "effort": "xhigh"
+    }
+  ],
+  "record_types": {
+    "closeout": {
+      "event_msg": 22,
+      "response_item": 17,
+      "token_usage_record": 5
+    },
+    "manuscript": {
+      "compacted": 5,
+      "event_msg": 939,
+      "response_item": 727,
+      "token_usage_record": 230,
+      "turn_context": 6,
+      "world_state": 6
+    },
+    "research": {
+      "compacted": 79,
+      "event_msg": 16872,
+      "response_item": 13298,
+      "session_meta": 1,
+      "token_usage_record": 3594,
+      "turn_context": 133,
+      "world_state": 82
+    }
+  },
+  "completed_item_types": {
+    "closeout": {
+      "AgentMessage": 3,
+      "CommandExecution": 6,
+      "Extension": 1,
+      "Reasoning": 5
+    },
+    "manuscript": {
+      "AgentMessage": 36,
+      "CommandExecution": 285,
+      "ContextCompaction": 5,
+      "Extension": 31,
+      "FileChange": 58,
+      "ImageView": 42,
+      "Reasoning": 242,
+      "UserMessage": 1
+    },
+    "research": {
+      "AgentMessage": 758,
+      "CommandExecution": 4350,
+      "ContextCompaction": 79,
+      "Extension": 1297,
+      "FileChange": 676,
+      "ImageView": 357,
+      "Reasoning": 5552,
+      "UserMessage": 1
+    }
+  },
+  "extension_types": {
+    "closeout": {
+      "clock.sleep": 1
+    },
+    "manuscript": {
+      "web.search": 31
+    },
+    "research": {
+      "clock.sleep": 4,
+      "web.search": 1293
+    }
+  },
+  "outer_tool_calls": {
+    "closeout": {
+      "exec": 4
+    },
+    "manuscript": {
+      "exec": 222,
+      "request_user_input_async": 2
+    },
+    "research": {
+      "clock.sleep": 5,
+      "exec": 3459
+    }
+  },
+  "model_effort_counts": {
+    "manuscript": {
+      "gpt-6-astra/xhigh": 6
+    },
+    "research": {
+      "gpt-6-astra/xhigh": 133
+    }
+  },
+  "task_event_counts": {
+    "closeout": {
+      "task_complete": 1
+    },
+    "manuscript": {
+      "task_complete": 1,
+      "task_started": 1
+    },
+    "research": {
+      "task_complete": 52,
+      "task_started": 54,
+      "turn_aborted": 1
+    }
+  },
+  "command_status_counts": {
+    "closeout": {
+      "completed/exit=0": 6
+    },
+    "manuscript": {
+      "completed/exit=0": 270,
+      "failed/exit=1": 13,
+      "failed/exit=2": 2
+    },
+    "research": {
+      "completed/exit=0": 4099,
+      "failed/exit=1": 189,
+      "failed/exit=128": 3,
+      "failed/exit=143": 1,
+      "failed/exit=2": 49,
+      "failed/exit=22": 7,
+      "failed/exit=28": 1,
+      "failed/exit=60": 1
+    }
+  },
+  "visible_message_counts": {
+    "closeout": {
+      "commentary": 2,
+      "final_answer": 1
+    },
+    "manuscript": {
+      "commentary": 33,
+      "final_answer": 3,
+      "human": 1
+    },
+    "research": {
+      "commentary": 707,
+      "final_answer": 51,
+      "human": 1
+    }
+  },
+  "goal_events": [
+    {
+      "line": 3,
+      "timestamp": "2026-09-10T20:56:46.326Z",
+      "phase": "research",
+      "status": "active",
+      "created_at": 1789073806,
+      "objective_sha256": "30d4fcd339aa8e287066dbc1b7d7097690fb6d02ed8707e43fe10c3696cbdc40"
+    },
+    {
+      "line": 48,
+      "timestamp": "2026-09-10T20:57:32.737Z",
+      "phase": "research",
+      "status": "paused",
+      "created_at": 1789073806,
+      "objective_sha256": "30d4fcd339aa8e287066dbc1b7d7097690fb6d02ed8707e43fe10c3696cbdc40"
+    },
+    {
+      "line": 76,
+      "timestamp": "2026-09-10T20:59:58.778Z",
+      "phase": "research",
+      "status": "active",
+      "created_at": 1789073806,
+      "objective_sha256": "30d4fcd339aa8e287066dbc1b7d7097690fb6d02ed8707e43fe10c3696cbdc40"
+    },
+    {
+      "line": 24898,
+      "timestamp": "2026-09-12T07:37:52.453Z",
+      "phase": "research",
+      "status": "active",
+      "created_at": 1789073806,
+      "objective_sha256": "30d4fcd339aa8e287066dbc1b7d7097690fb6d02ed8707e43fe10c3696cbdc40"
+    },
+    {
+      "line": 34104,
+      "timestamp": "2026-09-14T14:12:56.892Z",
+      "phase": "manuscript",
+      "status": "active",
+      "created_at": 1789395176,
+      "objective_sha256": "daa06712469bef04d284b2b0b626ebc836eb90b1e4c41012f55f4ba08605b83f"
+    }
+  ],
+  "usage": {
+    "phases": {
+      "research": {
+        "ordinary": {
+          "input_tokens": 473066765,
+          "cached_input_tokens": 452767104,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3806541,
+          "reasoning_output_tokens": 1844896,
+          "total_tokens": 476873306,
+          "uncached_input_tokens": 20299661,
+          "flat_estimate_usd": "846.090764"
+        },
+        "compaction": {
+          "input_tokens": 19689335,
+          "cached_input_tokens": 18027392,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 597410,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 20286745,
+          "uncached_input_tokens": 1661943,
+          "flat_estimate_usd": "64.517322"
+        },
+        "all_requests": {
+          "input_tokens": 492756100,
+          "cached_input_tokens": 470794496,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4403951,
+          "reasoning_output_tokens": 1844896,
+          "total_tokens": 497160051,
+          "uncached_input_tokens": 21961604,
+          "flat_estimate_usd": "910.608086"
+        },
+        "request_count": 3594,
+        "compaction_count": 79
+      },
+      "closeout": {
+        "ordinary": {
+          "input_tokens": 459718,
+          "cached_input_tokens": 455552,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1157,
+          "reasoning_output_tokens": 624,
+          "total_tokens": 460875,
+          "uncached_input_tokens": 4166,
+          "flat_estimate_usd": "0.555062"
+        },
+        "compaction": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 0,
+          "uncached_input_tokens": 0,
+          "flat_estimate_usd": "0"
+        },
+        "all_requests": {
+          "input_tokens": 459718,
+          "cached_input_tokens": 455552,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1157,
+          "reasoning_output_tokens": 624,
+          "total_tokens": 460875,
+          "uncached_input_tokens": 4166,
+          "flat_estimate_usd": "0.555062"
+        },
+        "request_count": 5,
+        "compaction_count": 0
+      },
+      "manuscript": {
+        "ordinary": {
+          "input_tokens": 30677606,
+          "cached_input_tokens": 29375744,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 247537,
+          "reasoning_output_tokens": 49199,
+          "total_tokens": 30925143,
+          "uncached_input_tokens": 1301862,
+          "flat_estimate_usd": "54.771214"
+        },
+        "compaction": {
+          "input_tokens": 1237267,
+          "cached_input_tokens": 1198848,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 45253,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 1282520,
+          "uncached_input_tokens": 38419,
+          "flat_estimate_usd": "3.845688"
+        },
+        "all_requests": {
+          "input_tokens": 31914873,
+          "cached_input_tokens": 30574592,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 292790,
+          "reasoning_output_tokens": 49199,
+          "total_tokens": 32207663,
+          "uncached_input_tokens": 1340281,
+          "flat_estimate_usd": "58.616902"
+        },
+        "request_count": 230,
+        "compaction_count": 5
+      }
+    },
+    "full_ordinary": {
+      "input_tokens": 504204089,
+      "cached_input_tokens": 482598400,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4055235,
+      "reasoning_output_tokens": 1894719,
+      "total_tokens": 508259324,
+      "uncached_input_tokens": 21605689,
+      "flat_estimate_usd": "901.41704"
+    },
+    "full_compaction": {
+      "input_tokens": 20926602,
+      "cached_input_tokens": 19226240,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 642663,
+      "reasoning_output_tokens": 0,
+      "total_tokens": 21569265,
+      "uncached_input_tokens": 1700362,
+      "flat_estimate_usd": "68.36301"
+    },
+    "full_all_requests": {
+      "input_tokens": 525130691,
+      "cached_input_tokens": 501824640,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4697898,
+      "reasoning_output_tokens": 1894719,
+      "total_tokens": 529828589,
+      "uncached_input_tokens": 23306051,
+      "flat_estimate_usd": "969.78005"
+    },
+    "unique_response_records": 3829,
+    "compaction_response_ids_matched": 84,
+    "max_single_request_input": 259244,
+    "legacy_notifications": 3847,
+    "legacy_identical_cumulative_snapshots": 102,
+    "legacy_unitemized_last_lines": [
+      472,
+      970,
+      1406,
+      1804,
+      2195,
+      2570,
+      2941,
+      3301,
+      3755,
+      4181,
+      4548,
+      4926,
+      5275,
+      5700,
+      5702,
+      6156,
+      6742,
+      7235,
+      7594,
+      7918,
+      8440,
+      8919,
+      9265,
+      9758,
+      10375,
+      10971,
+      11369,
+      11764,
+      12064,
+      12331,
+      12610,
+      12902,
+      13262,
+      13532,
+      13951,
+      14314,
+      14675,
+      15095,
+      15450,
+      15764,
+      16142,
+      16394,
+      16802,
+      17137,
+      17595,
+      17912,
+      18372,
+      18748,
+      19069,
+      19523,
+      19816,
+      20394,
+      20828,
+      21296,
+      21710,
+      21979,
+      22345,
+      22752,
+      23090,
+      23435,
+      24240,
+      25027,
+      25558,
+      26082,
+      26443,
+      26814,
+      27244,
+      27719,
+      28437,
+      28976,
+      29433,
+      29958,
+      30438,
+      30925,
+      31338,
+      31685,
+      32191,
+      32747,
+      33322,
+      33828,
+      34413,
+      34730,
+      35110,
+      35473,
+      35806
+    ],
+    "last_predeadline_legacy_notification": {
+      "line": 34057,
+      "timestamp": "2026-09-12T20:56:40.047Z",
+      "phase": "research",
+      "total_token_usage": {
+        "input_tokens": 472976249,
+        "cached_input_tokens": 452676864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3806522,
+        "reasoning_output_tokens": 1844896,
+        "total_tokens": 476782771
+      },
+      "last_token_usage": {
+        "input_tokens": 90456,
+        "cached_input_tokens": 90112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 90475
+      },
+      "model_context_window": 258400
+    },
+    "html_notifications_matched": 3616,
+    "html_final_line": 34102,
+    "html_final_timestamp": "2026-09-12T20:57:38.656Z",
+    "ccusage_supplied_row_matches_full_ordinary": true
+  },
+  "limitations": [
+    "Counts describe the supplied top-level record stream, not all provider internals.",
+    "Mirrored response items and completed-item notifications are not summed as separate executions.",
+    "A CommandExecution completion can be a shell command or polling observation; it is not a count of independent experiments.",
+    "No command, hidden reasoning, compaction-summary or system/developer instruction bodies are exported by this parser.",
+    "Recorded phase times are logging times, not exact provider execution or billing intervals.",
+    "Costs are flat-rate reconstructions, not invoices; no inference about subscription allocation, discounts, service tier or additional tool charges.",
+    "The legacy cumulative stream omits precisely the separately recorded compaction requests.",
+    "The full supplied trace includes initial manuscript preparation after the research closeout."
+  ]
+}

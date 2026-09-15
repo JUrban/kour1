@@ -1,3 +1,10 @@
+# Plan history
+
+The original plan below records the 14 September task. The active revision
+was requested on 15 September; see reviews/revision-2026-09-15/PLAN.md.
+Its full JSONL corroborates the model settings and supersedes the earlier
+HTML-only evidence limits. Author names and affiliations are now supplied.
+
 # ArXiv manuscript plan
 
 Requested on 14 September 2026: write a substantial paper about the 48-hour

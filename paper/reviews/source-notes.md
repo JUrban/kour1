@@ -283,3 +283,14 @@ checks, and full proof readings are distinguished above. Novelty search
 remains bounded, outside reviews remain zero, and the inaccessible
 Johnston--Rumynin publication is handled by an explicit version limit.
 Build, layout and source-bundle checks are in completion-audit.md.
+
+## Revision source pass, 15 September
+
+The full JSONL now corroborates the historical model and effort, supplies
+dated completed tool observations and reconciles request-level usage.
+The earlier HTML-only limits above remain statements about that projection.
+See revision-2026-09-15/source-checks.md for the new primary-source reading
+and bibliographic checks. At the user's request the related-work text was
+reduced to two short paragraphs. The detailed CASC/GRUNGE and additional
+historical checks remain review notes, rather than expanding the paper's
+bibliography solely to include every consulted source.

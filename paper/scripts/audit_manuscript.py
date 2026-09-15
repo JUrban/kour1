@@ -75,8 +75,7 @@ def main():
         "ancillary_original_files": 23, "printed_carpet_derivations": 19,
         "pages": int(re.search(r"Pages:\s+(\d+)", info)[1]),
         "pdf_sha256": receipt["pdf_sha256"],
-        "pending_publication_metadata": ["human author names", "affiliations",
-                                         "public frozen-repository access"],
+        "pending_publication_metadata": ["public frozen-repository access"],
     }
     (PAPER / "reviews/structure-audit.json").write_text(
         json.dumps(result, indent=2) + "\n")

@@ -32,3 +32,19 @@ parse of the final cumulative usage section; message-class counts are also
 compared with the text export. These checks establish properties of the
 exports. They do not recover missing tool events, prove the renderer's
 accounting against invoices, or validate any mathematical argument.
+
+## Revision, 15 September 2026
+
+E001--E018 above record the original manuscript phase. The full JSONL,
+supplied subsequently, changes the available evidence without changing the
+frozen mathematical results.
+
+| ID | Finding | Action and evidence | Status |
+|---|---|---|---|
+| E019 | The new full session includes manuscript preparation after the research closeout. | Divide by research deadline and the recorded new manuscript goal; assign requests by their own timestamps. Preserve the old HTML as a closeout projection. | Resolved; exact aggregate reconciliation. |
+| E020 | The supplied ccusage row omits compactions, while the raw request ledger includes them. | Match all 84 compaction response IDs; their usage exactly equals the difference of the two ledgers in every component. The supplied $901.42 matches full ordinary usage; flat reconstruction including compactions is $969.78, with $910.61 assigned to research. | Resolved; not represented as actual billing. |
+| E021 | The HTML-only model and tool-history caveats are obsolete for the fuller evidence. | All 139 turn contexts corroborate gpt-6-astra/xhigh. Count unique completed operations, without summing outer wrappers or mirrored records. | Resolved; remote implementation/resource limits remain explicit. |
+| E022 | Request and notification timestamps can fall on opposite sides of the deadline. | A 90,535-token request recorded at 20:56:42.957 is notified at 20:56:49.929. Use request times and document the boundary example. | Resolved. |
+| E023 | Author placeholders and the human-only authorship statement conflict with the supplied author list. | Credit Codex gpt-6-astra (OpenAI), Michael Kinyon (Denver), Josef Urban (AI4REASON; Gothenburg), and state their respective execution and conception/oversight roles. | Resolved in title, PDF metadata, text and source packaging. |
+| E024 | The related-work account overemphasized recent industrial systems, then became too long in revision. | Read the requested primary sources; retain two brief paragraphs on MPTPChallenge motivation, MaLARea and nearby approaches, including TacticToe, DreamCoder and Alien Coding. Remove the extended historical discussion and redundant citations following user steering. | Resolved; detailed reading retained in source-checks.md. |
+| E025 | Three-panel figure preview showed adjacent long vertical labels touching. | Shorten axis labels to Commits, Families and Observations; retain exact count definitions in caption and narrative. | Corrected; final rendered figure reviewed with the PDF. |

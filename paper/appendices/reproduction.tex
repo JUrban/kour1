@@ -60,16 +60,45 @@ problem family on the final candidate list\\
 \end{tabular}
 \end{center}
 
-Raw session exports are supplied evidence separate from
-the paper's source bundle. Their hashes and sizes allow
-an authorized holder to identify the exact inputs.
-The visible-message projection is not a substitute for
-the omitted raw tool events. Mathematical scripts
-likewise have different purposes: some generate examples,
-some check certificates, and some summarize existing
-results. Reproducing a summary is not rerunning a proof
-check. Each result's archive entry identifies its
-commands and the limits of the computation.
+The full JSONL is analyzed separately:
+\begin{quote}\small
+\texttt{python3 paper/scripts/analyze\_rollout.py --check}
+\end{quote}
+This standard-library parser reads the single supplied
+\artifact{session/rollout-*.jsonl}, whose size is 540,278,152 bytes
+and whose SHA-256 digest is
+\begin{center}\small
+\nolinkurl{f316fb63957f3ec50895088537786a4946a15601e54da5dac86ec0e4fcdd21d8}.
+\end{center}
+It checks unique response and completed-item identifiers, timestamp
+order, usage identities, the exact compaction reconciliation, every
+HTML token observation, and agreement with
+\artifact{ccusage-supplied.json}. Its six outputs are
+\artifact{rollout-metrics.json}, \artifact{rollout-usage.csv},
+\artifact{rollout-observations.csv}, \artifact{rollout-tasks.csv},
+\artifact{rollout-hourly.csv}, and
+\artifact{rollout-visible-messages.jsonl}. These retain aggregate
+metrics, request usage, completed-operation metadata, task events,
+hourly activity and timestamped visible messages, respectively.
+Without \texttt{--check}, the parser regenerates them.
+
+The phase boundary uses the logged request timestamp. For example,
+a 90,535-token request is recorded at 12 September 20:56:42.957 UTC,
+before the deadline, but its cumulative notification appears at
+20:56:49.929 UTC after a tool completes. Using only the last
+pre-deadline notification would omit that request from research usage.
+The separately identified compaction requests likewise cannot be
+reconstructed by summing the legacy ``Last'' display fields.
+
+The raw session inputs remain separate from both source bundles.
+Their hashes and sizes identify the evidence for an authorized holder;
+the included projections are not substitutes for the full trace.
+No internal reasoning, compaction-summary or system/developer
+instruction bodies are included in the derived data. Mathematical
+scripts have different purposes: some generate examples, some check
+certificates, and some summarize existing results. Reproducing a
+summary is not rerunning a proof check. Each result's archive entry
+identifies its commands and the limits of the computation.
 
 Large computations need substantial time and storage.
 In particular, the \(n=7\) certificate for \kn{20.100}

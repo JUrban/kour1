@@ -1,106 +1,89 @@
-# Manuscript completion audit — 14 September 2026
+# Manuscript revision audit — 15 September 2026
 
-The requested writing and internal-review task is complete. The final
-revised manuscript has no unresolved finding from this same-agent review.
-This assessment is limited to the work described here; it does not imply
-outside acceptance, formal verification, or exhaustive novelty search.
+The revision incorporates the full JSONL, reconciles the supplied ccusage
+row, supplies the requested author order and roles, and shortens the related
+work following the user's further direction. The manuscript is 96 pages
+with 105 cited works. No mathematical exposition was changed in this
+revision. The original two-pass mathematical review and its limits remain
+in revision-2026-09-15/previous-completion-audit-2026-09-14.md; its build,
+structure and portable receipts are preserved alongside that record.
 
-## Scope delivered
+## Revision coverage
 
-| Requested content | Location and evidence |
+| Request | Delivered evidence |
 |---|---|
-| Experiment, setting and technology | Sections 1--2 and Appendix A: original objective, selection policy, Codex/GAP setting, resources, persistence, retained-event limits, and token accounting. |
-| How the run proceeded | Section 3: chronology figure from frozen CSVs, early corrections, literature-guided constructions, long 20.100 computation, late structural results, and deadline review. |
-| Proofs and counterexamples | Section 4 contains three complete representative arguments; Appendix C supplies the other 43 deadline candidates. Appendix B preserves all 46 historical entries and subparts. |
-| Partial results | Appendix D: 20.100, almost-Engel groups, p-Jordan bounds, Rota--Baxter construction, characteristic exponent subgroups, restricted character/derived-length results, and bounded exclusions. |
-| Rediscoveries and alternative proofs | Appendix E: subdirect quotients, nilpotent Lie amalgamation, Fourier and tensor arguments, and further deductions from prior results, with priority and formulation limits. |
-| Finite proof material | Appendix F prints 19 representative carpet derivations. Ancillary files supply all integer certificates and checkers for 19.61/19.62. |
-| Outlook and recommendations | Section 5: selection bias, dependence among claims, absence of a baseline, possible training overlap, missing logs/resources, independent evaluation, selective formalization and review burden. |
-| Reproduction and bibliography | Appendix G, 99 references, measurements, source/build scripts, portable archives, manifests and review records. |
+| Use full JSONL | Sections 2–3 and Appendices A/G; new analyzer and six derived data files. The source has 36,016 records; exact size and digest are retained. |
+| Explain usage and cost | Section 2.5 and two tables; all 3,829 request records, 84 compaction identifiers and 3,616 old HTML token observations reconcile. The user-supplied row is preserved separately. |
+| Separate experimental scope | Research, closeout and manuscript phases use recorded timestamps. A delayed notification crossing the deadline is documented. |
+| Improve workflow account | Observed configuration, task starts/completions, compactions, command/polling and web activity, dated proof/checking landmarks, and a three-panel chronology figure. |
+| Author list and conception | Codex gpt-6-astra (OpenAI), Michael Kinyon (University of Denver), Josef Urban (AI4REASON; University of Gothenburg), in that order. Title, PDF metadata, structured metadata and contribution paragraph agree. Kinyon/Urban conceived and oversaw the experiment. |
+| Motivation and academic credit | Two brief related-work paragraphs connect the budget to MPTPChallenge/MaLARea and mention TacticToe, DreamCoder and Alien Coding alongside later systems. The extended history and additional citations were removed at the user's request. Primary-source reading is documented separately, including all specifically requested CASC/GRUNGE sources. |
+| Preserve mathematics | The representative arguments, 46-candidate inventory/expositions, partials, prior-result appendices and all ancillary original files are unchanged against baseline commit faa320e. |
 
-## Mathematical and source review
+## Usage result and limits
 
-Each of the 46 entries was read and rewritten, then read again against
-its stated scope and load-bearing argument. The per-entry ledger gives
-concrete final-pass notes; every entry retains zero outside reviews and
-unestablished priority. The seven files containing the partial and
-prior-result appendices were also read in full. Their original general
-questions are not represented as solved by restricted results.
+The supplied $901.42 is reproduced exactly, to the cent, using its full
+session counter scope. It includes manuscript preparation and excludes
+separately logged compaction requests. Including those requests yields a
+flat API-equivalent estimate of $969.78, of which $910.61 is assigned to
+the 48-hour research interval. These estimates are not provider invoices.
+Reasoning output is already included in output; cached input is a subset
+of the renderer's input counter but a separate column in the supplied row.
 
-The last mathematical finding was the supplementary 9.4 example's use
-of F2 when the generating finite group might have odd order. It now uses
-the same Fp selected in the principal argument; the shift, generation and
-addition construction were checked again for arbitrary p. The main
-finite-identity obstruction did not change. The 19.108 partial's quotient
-and induction reduction was expanded for clarity. These revised passages
-were reread with no further finding.
+The full trace corroborates the model and reasoning effort in 139 turn
+contexts. It does not establish remote hardware, actual peak local memory,
+all historical sampling settings or oversight outside the interaction.
+Completed tool observations are not independent experiments. Derived
+public data omit internal reasoning and system/developer instruction bodies;
+the raw session remains outside both source packages.
 
-The last attribution finding was missing explicit prior coverage for
-19.62. The exposition now credits the earlier simply laced and specified
-good-characteristic cases, as well as Nuzhin's prior all-type 19.63
-criterion. Its integer derivations make no novelty claim for those
-already covered cases. The added paragraph was checked against the exact
-2023 theorem and triple-product inclusion.
+## Checks actually completed
 
-Source-notes.md records the exact reading depth and imported statements.
-In particular, the explicit Johnston--Rumynin conflict is restricted to
-the read arXiv v2; the unavailable published text is not asserted to be
-equivalent. Standard and deep imported results remain imports. A bounded
-source search and same-agent proof reading cannot establish priority or
-substitute for specialist refereeing.
+- `python3 paper/scripts/analyze_experiment.py --check`: passed against
+  the frozen Git history and HTML/text projections; all five outputs agree.
+- `python3 paper/scripts/analyze_rollout.py --check`: passed all timestamp,
+  identifier, running-counter, phase, compaction, old-HTML and supplied-row
+  assertions; all six outputs agree. A compact receipt is in the revision
+  directory, with the detailed accounting explanation.
+- `python3 paper/scripts/build_paper.py --require-complete`: Tectonic 0.17.0,
+  exit zero, 96 pages and 632,253 bytes. No undefined references,
+  bibliography warnings, duplicate labels or overfull boxes.
+- `python3 paper/scripts/audit_manuscript.py`: passed source/PDF binding,
+  46 expositions, 63 TeX files, 79 labels, 105 cited bibliography entries,
+  23 original ancillary files and 19 printed carpet derivations.
+- `python3 paper/scripts/validate_source_bundle.py`: both archives
+  extracted outside /project; manifests passed; portable inventory
+  regenerated unchanged; a cache-only standalone TeX build produced
+  identical extracted PDF text. All five execution commands exited zero.
+- Fresh checks in the extracted archive passed all 104 rank-two targets,
+  all 300 square-adjoining targets, the deliberate-corruption controls,
+  and all 120 G2 integer polynomial identities. Original proof file
+  hashes remained intact. These checks do not re-run the large historical
+  research computations.
+- `git diff --check`: passed. Only paper/ is included in this revision.
 
-## Recorded checks
+The final PDF SHA-256 is
+171a68d941d6c579c3b359e33c7d9e7d1211a7ca2a65bd7854b54d04e465d7f8.
 
-All commands below actually completed with exit code zero.
+## Visual and source review
 
-| Check | Command / record | Result and scope |
-|---|---|---|
-| Measurements | python3 paper/scripts/analyze_experiment.py --check; final run completed at 16:58 UTC | Five generated files agree with the frozen repository and supplied exports; 4,439 exported events, 3,616 snapshots, 199 commits, 198 in the window. |
-| Character input | /project/bin/gap --quitonbreak paper/scripts/check_character_input.g; observation 5b0eed | Exact 3.A7 modular rows, Frobenius pairs, ordinary Galois orbits and projective dimensions agree. This is not a fresh full MeatAxe reconstruction. |
-| Final TeX build | python3 paper/scripts/build_paper.py --require-complete; 16:58:30 UTC | Tectonic 0.17.0; 94 pages; 610,531 bytes. Source hashes and PDF hash are bound in build-receipt.json. |
-| Structural audit | python3 paper/scripts/audit_manuscript.py | 46 expositions, 63 TeX files, 78 unique labels, 99 cited bibliography entries, 23 intact original ancillary files and 19 printed derivations. No undefined references, duplicate labels or bibliography warnings; no overfull boxes. This checks structure and records, not proof validity. |
-| Portable source | python3 paper/scripts/validate_source_bundle.py; 17:01:02 UTC | Both source archives extracted under /tmp outside /project. Manifests passed; inventory regenerated unchanged; cached standalone TeX compilation passed; extracted PDF text is identical. |
-| Rank-two carpet proofs | python3 scripts/verify_19_62_rank_two.py, run from extracted anc/ | All 104 targets, representative/Weyl coverage, short derivations and 12 deliberate corruptions passed. |
-| Square completion | python3 scripts/verify_19_61_square_completion.py, run from extracted anc/ | All 300 targets and 12 deliberate corruptions passed. |
-| G2 structure constants | python3 scripts/check_19_62_g2_integer_constants.py, run from extracted anc/ | All 120 integer polynomial matrix identities passed. |
+Inspected rendered pages 1–12, 15–19 and 88–96, covering the title,
+contents, shortened introduction, methods, both usage tables, chronology,
+discussion, protocol, inventory boundary, reproduction and bibliography.
+The figure's long vertical labels were shortened after an initial preview
+showed them touching. The final figure has clear separation. A page-break
+adjustment keeps the administrative commit's introductory sentence and
+hash together; pages 17–19 were rechecked afterward. No clipping,
+overlapping text or missing content was found on the inspected pages.
+The unchanged mathematical sections retain their prior reading audit;
+this is not a claim to have performed a third full mathematical review.
 
-The portable-validation receipt binds the mathematical TeX inputs and
-original ancillary manifest. Final packaging adds these review records
-without changing the tested manuscript or certificate inputs. The final
-archive manifests and dist/validation.json separately record integrity
-of the actual handoff files.
+The final package adds current review notes after the portable replay.
+Its TeX inputs, figure and ancillary originals are bound to that replay;
+the final handoff manifests are checked separately without repeating
+unchanged mathematical computations.
 
-The final PDF SHA-256 is:
-
-ad804339ad686a1c85aa1fafb1d7519edf1fd010b8aaa91eac9e461efaee1146
-
-## Visual review
-
-All 94 pages of the final PDF were rendered and inspected in 16 contact
-sheets, including the title and contents, chronology plot, inventory,
-displayed proofs, all 19 carpet tables, reproduction table and bibliography.
-The earlier figure-label crowding and inconsistent table placement are
-fixed. No clipped, overlapping or missing content was found. The figure
-occupies its own float page. The author line deliberately remains a
-visible placeholder for missing human publication metadata.
-
-## Remaining publication inputs and evidence limits
-
-Human author names and affiliations must be supplied before submission.
-Anonymous availability of the exact frozen Git snapshot is unverified;
-the paper gives the configured address and exact local revision without
-claiming public equivalence. These publication inputs do not conceal an
-unfinished mathematical exposition or an unresolved finding in this
-internal review.
-
-Raw session exports, absent internal event bodies, audited invoices,
-remote hardware and actual peak memory are not supplied by the source
-bundle. Their absence and the difference between configured limits and
-measured usage are explicit. The long historical n=7 verification and
-other large searches were not all rerun during writing. Certificate
-integrity, successful execution, theorem validity, priority and outside
-acceptance remain separate claims throughout the manuscript.
-
-Only paper/ was changed for manuscript preparation. The frozen research
-revision is cff2c37b9bf6b737e8ad5f7ead12291a551b5201. No external upload,
-submission, message or repository push was performed.
+No outside mathematical review or priority determination is claimed.
+Anonymous access to the exact frozen research snapshot remains unverified.
+There was no submission, upload, external message or Git push. User-supplied
+raw session files, the root PDF and unrelated research files are preserved.

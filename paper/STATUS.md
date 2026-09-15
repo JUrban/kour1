@@ -1,42 +1,27 @@
 # Manuscript status
 
-The requested manuscript and local handoff are complete: 94 pages,
-99 cited works, all 46 deadline candidate expositions, substantial
-partial results, prior-result comparisons, the experimental narrative,
-and reproducibility appendices. The paper is dated 14 September 2026.
+The 15 September revision is typeset at 96 pages with 105 cited works.
+All 46 candidate expositions, the partial and prior-result appendices,
+and the 23 portable original proof files remain mathematically unchanged.
+The baseline mathematical review is recorded in
+reviews/revision-2026-09-15/previous-completion-audit-2026-09-14.md.
 
-All 46 candidates have two manuscript-phase mathematical reading passes.
-The partial and prior-result appendices were also reread. The final
-revised arguments have no unresolved finding from this internal review.
-This is same-agent review, not outside acceptance, formal verification,
-or established priority. E001--E018 in reviews/issue-log.md document the
-measurement, attribution, mathematical and typesetting corrections.
+The revision incorporates the 36,016-record full JSONL, corroborates
+model/effort, separates research from closeout and manuscript writing,
+and reconciles all 3,829 request records and 84 compactions. The supplied
+$901.42 ccusage row exactly matches full-session usage excluding compactions.
+The flat estimate including them is $969.78; $910.61 is assigned to the
+research window. These are API-equivalent estimates, not provider invoices.
 
-The final PDF compiled with Tectonic 0.17.0, exit zero, without undefined
-references, bibliography warnings or overfull boxes. All 94 rendered
-pages were visually inspected. The standalone source archive compiled
-outside the repository using only cached TeX resources and produced
-identical extracted PDF text. The full archive's inventory regenerated
-unchanged outside the repository.
+The requested author order and affiliations are included. Kinyon and Urban
+receive conception/oversight credit. At the user's request related work is
+two short paragraphs on the experimental motivation and nearby methods;
+detailed primary-source checks remain in the revision review directory.
 
-Fresh portable checks passed all 104 rank-two carpet targets, all 300
-square-adjoining targets, their deliberate-corruption controls, and all
-120 G2 integer polynomial identities. All 23 original ancillary files
-remain byte-identical to the frozen research artifacts. A separate fresh
-GAP check verified the character-table input assignments for 4.55.
-Large historical research computations were not all rerun.
-
-The measurement analyzer's final --check run passed, including the
-4,439 exported events, 3,616 token snapshots and 199 frozen commits
-(198 in the 48-hour window). Cached and uncached input remain separate;
-the reported total is not newly generated text. The historical model
-setting is user-supplied metadata, absent from the retained export.
-
-See reviews/completion-audit.md for scope, commands, outcomes and limits;
-see dist/manifest.json for the handoff file hashes. The manuscript source
-is saved locally on paper/arxiv-experiment. The frozen experimental
-archive, raw session inputs and unrelated research results are unchanged.
-
-Human author names and affiliations remain to be supplied before
-submission. Anonymous access to the frozen repository is unverified.
-No submission, external upload or Git push was performed.
+The revision and local handoff are complete. Build, data checks, the
+structure audit, visual review of affected pages, and portable archive
+validation passed. The standalone build produced identical extracted PDF
+text; all three portable certificate checks passed. See
+reviews/completion-audit.md and dist/manifest.json for evidence and hashes. No external
+upload, submission or push is part of this task. Anonymous availability of
+the frozen research snapshot remains unverified.
