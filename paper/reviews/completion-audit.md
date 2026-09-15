@@ -1,5 +1,9 @@
 # Manuscript revision audit — 15 September 2026
 
+The audit below records the earlier revision. The final editorial follow-up
+is recorded at the end; it supersedes the related-work description, cited-work
+count and PDF digest below.
+
 The revision incorporates the full JSONL, reconciles the supplied ccusage
 row, supplies the requested author order and roles, and shortens the related
 work following the user's further direction. The manuscript is 96 pages
@@ -87,3 +91,22 @@ No outside mathematical review or priority determination is claimed.
 Anonymous access to the exact frozen research snapshot remains unverified.
 There was no submission, upload, external message or Git push. User-supplied
 raw session files, the root PDF and unrelated research files are preserved.
+
+## Final editorial follow-up: motivation only
+
+At the user's request Section 1.1 is now titled Motivation. The paragraph
+listing related systems was removed completely. The retained motivation
+ends with one sentence explaining that the breadth and rapid development
+of learning-guided proving and LLM-based AI for mathematics preclude a
+comprehensive related-work survey here. The seven citations used only in
+the removed paragraph no longer appear in the typeset bibliography.
+
+The rebuilt PDF has 96 pages and 98 cited works. The existing bibliography
+database retains unused entries, which BibTeX omits from the paper.
+Build and structural checks passed without warnings or overfull boxes;
+page 4 was visually checked. Both rebuilt source archives passed standalone
+validation, with identical extracted PDF text and all portable checks
+passing. Mathematical and session-analysis inputs were unchanged.
+
+Current PDF SHA-256:
+ec9a5482cdfb9ee2b3937fd1980eed6448ab5f954454c9d5287d06aa8a4c3c25

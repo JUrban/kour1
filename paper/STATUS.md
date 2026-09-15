@@ -1,6 +1,6 @@
 # Manuscript status
 
-The 15 September revision is typeset at 96 pages with 105 cited works.
+The 15 September revision is typeset at 96 pages with 98 cited works.
 All 46 candidate expositions, the partial and prior-result appendices,
 and the 23 portable original proof files remain mathematically unchanged.
 The baseline mathematical review is recorded in
@@ -14,9 +14,10 @@ The flat estimate including them is $969.78; $910.61 is assigned to the
 research window. These are API-equivalent estimates, not provider invoices.
 
 The requested author order and affiliations are included. Kinyon and Urban
-receive conception/oversight credit. At the user's request related work is
-two short paragraphs on the experimental motivation and nearby methods;
-detailed primary-source checks remain in the revision review directory.
+receive conception/oversight credit. Following the user's final editorial
+request, Section 1.1 is titled Motivation and retains only the experimental
+motivation plus one sentence explaining that no comprehensive related-work
+survey is attempted. Earlier source checks remain historical review notes.
 
 The revision and local handoff are complete. Build, data checks, the
 structure audit, visual review of affected pages, and portable archive

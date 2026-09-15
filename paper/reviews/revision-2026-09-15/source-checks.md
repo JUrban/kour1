@@ -1,5 +1,9 @@
 # Sources checked for the 15 September revision
 
+Historical source-pass record: a later editorial follow-up removed the
+related-work paragraph altogether, retaining only Motivation and a brief
+survey-scope sentence. The descriptions below precede that final decision.
+
 The user requested a shorter, drier related-work section during revision.
 The main text therefore retains only two short paragraphs on motivation
 and nearby methods. The fuller checks below document what was consulted;
