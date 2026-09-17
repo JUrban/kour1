@@ -126,3 +126,8 @@ the mathematical arguments. Add Kinyon's research-visit footnote and the
 organizer-supplied acknowledgement of ERC NextReason (Grant Agreement
 No. 101200949) and the AI4REASON institute's sponsors. Update navigation,
 rebuild the PDF and source bundles, check the layout, and commit.
+
+Shorten the abstract by removing its repeated review/count assessment.
+State the mathematical outcome categories and partial-result count precisely
+in the introduction, and explain the explicit time/resource budget and the
+MPTPChallenge/IMO evaluation analogy without expanding the related-work survey.

@@ -23,6 +23,13 @@ chronology and study design are in appendices. The bibliography follows the
 main discussion. The four verbatim correspondence documents remain at the
 end, preceded by the historical change record and editorial provenance.
 
+The subsequent opening polish removes the requested redundant abstract
+sentence and explicitly states 46 entries or specified subparts, nine
+partial-result questions, and rediscoveries/deductions. It brings the deadline
+and requested local resource budget into the introduction and adds a brief
+competition analogy. Counting conventions and checked sources are recorded
+in `opening-polish-2026-09-17.md`; the inventory still begins on page 4.
+
 Validation:
 
 - The Tectonic 0.17.0 build passed without TeX/BibTeX warnings, undefined
@@ -52,6 +59,11 @@ Validation:
   title-page footnote, reading routes, inventory placement, renumbering,
   acknowledgement and editorial change record. The inventory source and
   all mathematical arguments are unchanged from `6c8cbb4`.
+- The subsequent opening polish inspected pages 1–4, 82 and 110. Its nine
+  partial-result groups match the selected table in the frozen final report;
+  the five bounded-search questions match the manuscript. The new IMO
+  reference was checked against the official regulations. Build and bundle
+  receipts describe the current PDF and sources.
 
 The existing source checks and exact 14.72 algebra check from the first
 review revision remain under `revision-2026-09-17/`. The public filtered

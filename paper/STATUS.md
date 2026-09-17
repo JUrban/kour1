@@ -16,6 +16,11 @@ ERC NextReason (Grant Agreement No. 101200949) and the institute's sponsors. Det
 configuration, accounting, chronology and study-design material are in
 appendices. The bibliography follows the main mathematical discussion.
 
+The abstract's repeated assessment sentence has been removed. The introduction
+now states the 46-entry coverage, nine selected partial-result questions and
+rediscoveries, followed by the deadline and requested local resource limits.
+The motivation briefly relates the shared budget to the MPTPChallenge and IMO.
+
 The 46-entry historical ledger, usage records, mathematical arguments and
 verbatim correspondence are preserved. The first review revision and its
 PDF are frozen separately so that the exact before/after record stays tied

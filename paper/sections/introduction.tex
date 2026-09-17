@@ -4,19 +4,22 @@
 The Kourovka Notebook~\cite{kourovka21} collects open problems in group
 theory and neighboring areas, ranging from concrete questions about finite
 groups to structural and logical problems about infinite ones. We present
-a collection of arguments for its entries, developed in a 48-hour research
-experiment and subsequently subjected to independent review by a second
-language model. The work includes explicit counterexamples, structural
-arguments, algorithms, finite certificates and deductions from earlier
-theorems. We give the mathematics together with an account of its
-development and review.
+solutions covering 46 problem entries or specified subparts, partial
+results on nine questions, and rediscoveries and deductions from earlier
+work, obtained in a 48-hour experiment with an AI research agent.
+The results include explicit counterexamples, structural theorems,
+algorithms and finite certificates. A second language model subsequently
+reviewed the mathematical work independently.
 
 Michael Kinyon and Josef Urban conceived and oversaw the experiment.
-They gave OpenAI's GPT-6 Astra, running through Codex, access to GAP and
-the literature and allowed it to choose which previously unsolved problems
-to pursue. This setting tests a research process: selecting a useful
-question, interpreting its hypotheses, finding a construction or reduction,
-and deciding what has actually been proved.
+They gave OpenAI's GPT-6 Astra, running through Codex, an explicit
+48-hour deadline and requested local resource limits of generally
+20 CPU cores and 100\,GB of memory. With access to GAP, further software
+and the literature, the agent could choose which previously unsolved
+problems to pursue. The aim was to evaluate current AI and automated
+reasoning capabilities on open research problems under a shared budget:
+selecting questions, interpreting hypotheses, developing arguments and
+checking the resulting claims.
 
 The experiment has two phases. During 10--12 September 2026, Codex
 selected problems, developed arguments and checked its own work. After
@@ -32,16 +35,12 @@ Section~\ref{sec:external-review}.
 
 \subsection{Mathematical outcomes}
 
-Table~\ref{tab:highlights} gives a selection of the results; the full
-inventory follows immediately in Section~\ref{app:inventory}, before
-the proofs. Four complete arguments appear in
-Section~\ref{sec:examples}; the remaining candidate
-proofs, partial results and prior-work deductions follow in
-Sections~\ref{app:candidates}--\ref{app:prior}. The statements range from
-a two-element definable set in the integral Heisenberg group to
-constructions using geometric group theory and universal integer
-identities for Chevalley groups. Their imported ingredients are credited
-where they enter the proofs.
+Table~\ref{tab:highlights} highlights selected results; the full inventory
+follows in Section~\ref{app:inventory}. Four representative arguments
+appear in Section~\ref{sec:examples}; further proofs, partial results and
+prior-work deductions follow in
+Sections~\ref{app:candidates}--\ref{app:prior}. Each proof states its
+hypotheses and imported ingredients.
 
 \begin{table}[htbp]
 \centering\small
@@ -69,17 +68,22 @@ The inventory in Section~\ref{app:inventory} gives the covered parts and
 convention-sensitive hypotheses. Subsequent review provides evidence of
 correctness; novelty is a separate question. In particular, we acknowledge
 contemporaneous work on 21.106, and retain known results and deductions
-under their prior-work status. Several substantial partial theorems,
-including the distinct-powers results, are outside the 46-entry count.
+under their prior-work status. The nine partial-result questions treated
+in Section~\ref{app:partials} are 20.100, 20.89/19.83, 21.121(b), 20.124,
+17.118, 21.114, 19.108, 18.120 and 6.47. Here 20.89/19.83 is one repeated
+question, and 21.121(a) is already among the 46 entries. That section also
+records bounded searches on five other questions.
 
 \subsection{Motivation and reading routes}
 
-Urban's motivation for the shared time budget was the 2006/7
-MPTPChallenge: attempt related problems and reuse discoveries across
-them~\cite{mptpchallenge}. MaLARea pursued this approach through repeated
-proving and learned premise selection~\cite{malarea-2015}. Here the agent
-could also interpret informal statements, choose representations, consult
-sources and abandon unproductive approaches. Given the breadth and rapid
+The design follows the use of explicit time and resource budgets in ATP
+competitions and human mathematical contests such as the International
+Mathematical Olympiad~\cite{imo-regulations}. Urban's specific inspiration
+was the MPTPChallenge, designed in 2006, twenty years before this
+experiment~\cite{mptpchallenge}: attempt related problems under a shared
+budget and reuse discoveries across them. Here the challenge concerns
+open research problems, with freedom to select questions, consult sources
+and choose computational tools. Given the breadth and rapid
 development of learning-guided proving and LLM-based AI for mathematics,
 we do not attempt a comprehensive related-work survey.
 
@@ -89,6 +93,5 @@ automated reasoning can continue to the review and research accounts in
 Sections~\ref{sec:external-review}--\ref{sec:trajectory}, then the
 discussion in Section~\ref{sec:discussion}. Mathematical readers can
 use the inventory to select arguments or begin with the four representative
-proofs in Section~\ref{sec:examples}. Exact instructions, detailed chronology,
-usage accounting and reproduction procedures are collected in the
-appendices, followed by the change record and review correspondence.
+proofs in Section~\ref{sec:examples}. Detailed records, reproduction
+procedures and review correspondence appear in the appendices.
