@@ -1,152 +1,47 @@
-\section{Interpretation, limitations, and recommendations}
+\section{What the experiment shows}
 \label{sec:discussion}
 
-The principal outcome is a reviewable mathematical archive produced
-under a broad, fixed-duration instruction. It contains explicit
-constructions, arbitrary-size arguments, finite certificates, and
-records of reclassification. The experiment demonstrates that this
-particular configured agent could sustain such a workflow across many
-continuations. It does not by itself establish a general success rate
-for open problems, a comparison with professional mathematicians, or
-the causal contribution of any single component.
+The experiment produced a substantial body of mathematical work in a
+fixed time, and a second model was able to assess much of it by detailed
+reading and independent reconstruction. Explicit small examples made
+some arguments particularly accessible. Structural reductions and finite
+certificates made other claims checkable despite a much larger search
+behind them. The mathematical contribution of the run includes partial
+theorems and useful deductions from prior work, as well as candidate
+answers to the selected Notebook questions.
 
-\subsection{What the evidence can support}
+The review phase adds a different contribution. Claude confirmed many
+arguments and computations, exposed gaps in what had been supplied to
+readers, and prompted a stronger geometric example. Codex's response
+also corrected mistaken objections. Preserving that exchange shows how
+two different language models can contribute to mathematical scrutiny:
+checking a result, challenging its hypotheses, consulting the original
+source, and revising a judgment. The resulting evidence is stronger than
+the producing agent's initial self-assessment.
 
-The strongest local evidence is a short argument whose hypotheses and
-conclusion can be inspected directly. The examples in
-Section~\ref{sec:examples} are included for that reason. Finite
-computations can add exact evidence, especially when their output is a
-certificate checked in a different representation. However, two
-implementations written by the same agent may share a mistaken
-mathematical interpretation. A passing checker establishes only what
-its implemented predicate and coverage justify. The corrected
-\kn{21.52} test supplies a concrete instance of this limitation.
+The scope of the experiment remains specific. The agent chose its own
+problems, so the 46 entries do not estimate a success rate on a random
+sample of open questions. Shared inputs link several answers, and
+prior exposure through training or literature is not fully observable.
+Independent checking supports correctness of the claims examined;
+discovery priority needs its own source assessment. The public archive
+also has a stated limit for the largest certificate. These qualifications
+accompany the mathematical statements and the review record without
+changing their value as inspectable results.
 
-Likewise, an explicit reduction from the printed question to an
-imported theorem may be more informative than a long new calculation.
-Its obligations are to cite the correct version, check every
-hypothesis, and account for conventions. It should be described as a
-deduction from prior work when that is what it is. The \kn{17.34}
-episode shows that further literature review can change the novelty
-classification without invalidating the mathematics. Such changes
-belong in the results of a research experiment.
+For a further experiment, the main improvements would be a predetermined
+comparison set, separate records for correctness and novelty, and
+measurement of the time needed for independent review. Selected
+formalizations could strengthen the most consequential reductions and
+finite checks. Appendix~\ref{app:evaluation} develops these design and
+measurement questions; the present paper supplies the arguments and
+review history on which such work can build.
 
-The archive also shows practical value in persistent written state.
-Proofs, process records, and explicit boundaries survived between
-turns; unfinished checks remained identifiable; later source findings
-could be propagated into a consolidated ledger. This is an observation
-about how the run proceeded. Without an ablation, it cannot quantify
-how much persistence, Git, browsing, or GAP improved the outcome.
-The repeated user-facing references to GAP in continuation messages
-also suggest that the conversation's local cues affected the wording
-of updates; they should not be read as independent installation events.
-
-\subsection{Limits of the case study}
-
-Selection was highly nonuniform. The agent had access to the entire
-public Notebook and chose entries opportunistically. It could recognize
-a familiar construction, find an implication in a recent paper, or
-abandon an expensive line. The 46-entry list is therefore an outcome
-inventory, not 46 successes in a prespecified sample of 1,308 trials.
-The number of meaningfully attempted targets cannot be recovered simply
-by counting indexed entries or occurrences of problem numbers in logs.
-
-Training-data overlap is unknown. Many questions and ingredients were
-public long before the run. Even a proof that does not quote a source
-may use knowledge learned from it. Conversely, an elementary argument
-can be independently rediscovered after its ingredients become familiar.
-Neither possibility can be decided from the wording of an answer.
-The experiment had browsing access, so retrieval and mathematical
-reasoning were deliberately interwoven. We make no claim to have
-isolated either capability.
-
-The full JSONL improves behavioral reconstruction through dated tool
-observations, request identifiers, compaction records and corroborated
-model settings. It remains a client-side record: remote inference
-hardware, actual peak local resource consumption, provider invoices,
-and a complete historical sampling configuration are unavailable.
-The cost reconstruction in Section~\ref{sec:methods} makes its rates
-and counter scope explicit; it does not measure actual billing or
-energy use. Human oversight outside the recorded interaction is also
-not observable from the trace.
-
-The initial manuscript review was performed by the same agent that
-produced the research. The deadline archive contains zero outside
-reviews. A later external review and follow-up checked arguments and
-finite inputs, identified scope and packaging issues, and withdrew
-several initial objections. We preserve the correspondence in
-Appendices~\ref{app:review-original}--\ref{app:reply-final}, with a
-change record in Appendix~\ref{app:review-changes}. The reviewer's
-scripts and logs are separately versioned; their reported outcomes
-are distinguished from checks rerun during this revision.
-The revised 14.72 construction makes the fixed divisor globally
-principal, and the portable bundle now includes the missing small
-certificate. These are later changes, not deadline achievements.
-Neither a preserved PASS message nor a reviewer's acceptance
-recommendation substitutes for specialist assessment or establishes
-priority. Codex \texttt{gpt-6-astra} is
-credited as the principal author for research execution, proof and code
-drafting, manuscript preparation, and internal review. Michael Kinyon
-and Josef Urban conceived the prompt and experiment and oversaw the
-work. These contributions do not constitute outside mathematical review.
-
-\subsection{A more informative follow-up experiment}
-
-A follow-up should retain the broad research setting while improving
-the measurements that this run could not provide. A practical protocol
-would have the following components.
-
-\begin{enumerate}
-\item \textbf{Define the unit of evaluation in advance.}
-Use a dated set of problems with explicit subparts and a documented
-editorial status. Record every substantive attempt, including abandoned
-ones, with the reason for stopping. A randomized target subset or
-matched target sets would support comparisons that an opportunistic
-portfolio cannot.
-
-\item \textbf{Separate discovery from assessment.}
-Maintain different fields for statement coverage, proof validity,
-computational verification, prior-art status, and outside review.
-Freeze proposed answers before specialist assessment, and preserve
-later corrections as new versions. Reviewers should receive the
-original question and the mathematical argument before seeing aggregate
-success claims.
-
-\item \textbf{Record the experimental configuration.}
-Save model identifiers, reasoning settings, harness and package
-versions, continuation instructions, tool permissions, and retrieval
-dates. Capture raw event logs with timestamps and request identifiers,
-along with local CPU time and peak memory. Retain response-level usage, including compaction, and separate the
-research interval from subsequent writing. Keep usage estimates and
-billing records separate until reconciled.
-
-\item \textbf{Treat verification as a research task.}
-For a search, specify the exact predicate and its relation to the
-question. Include a small direct implementation that checks examples
-without reusing the search representation. For a large certificate,
-make coverage and the checking rules explicit, retain malformed-input
-and negative controls, and distinguish successful generation from
-successful verification.
-
-\item \textbf{Use formalization selectively.}
-Small algebraic identities, finite certificates, and critical reduction
-lemmas are plausible first targets. Formalizing the entire archive at
-once would create a large translation project. Any formal account must
-also justify that its statement matches the Notebook, including
-quantifiers and conventions; a kernel-checked proof of a different
-statement would leave the original task unanswered.
-
-\item \textbf{Measure the review burden.}
-Record expert time, corrections, changes in status, and which claims
-depend on the same imported theorem. Report a short, fully reviewed
-core alongside the larger exploratory archive. This would make it
-possible to compare output volume with the work needed to establish
-reliable mathematical contributions.
-\end{enumerate}
-
-The present archive is suited to such a second phase. Its most useful
-next product would be a set of independently assessed individual
-results, with corrected proofs and precise attribution, followed by
-formal certificates where they materially reduce the remaining trust.
-The current paper provides the experimental context and mathematical
-entry points for that work.
+\paragraph{Contributions and reviewer credit.}
+Codex \texttt{gpt-6-astra} carried out the research, drafted proofs and
+programs, prepared the manuscript, and conducted internal checks.
+Michael Kinyon and Josef Urban conceived and oversaw the experiment.
+Anthropic's Claude Opus[1m], through Claude Code, provided the independent
+mathematical review, wrote separate checking programs, examined sources,
+and proposed the strengthening of 14.72. We thank Claude for the detailed
+reports and constructive mathematical exchange.

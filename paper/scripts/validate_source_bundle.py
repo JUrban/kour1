@@ -63,10 +63,14 @@ def main():
         arxiv_manifest = check_manifest(arxiv, "anc/SOURCE-MANIFEST.json")
         full_manifest = check_manifest(full, "SOURCE-MANIFEST.json")
         inventory = {name: sha(full / name) for name in
-                     ["appendices/inventory.tex", "appendices/candidate-proofs.tex"]}
+                     ["sections/inventory.tex", "sections/candidate-proofs.tex"]}
         run([sys.executable, "scripts/make_inventory.py", "--require-complete"],
             full, "portable-inventory.log")
         assert all(sha(full / name) == expected for name, expected in inventory.items())
+        run([sys.executable, "scripts/render_review_changes.py", "--check"],
+            full, "portable-change-record.log")
+        run([sys.executable, "scripts/audit_reader_revision.py"],
+            full, "portable-reader-preservation.log")
         run([tectonic, "--only-cached", "--keep-logs", "main.tex"],
             arxiv, "portable-tex.log")
         log = (arxiv / "main.log").read_text()
@@ -93,7 +97,7 @@ def main():
         result = {
             "status": "PASS",
             "checked_utc": datetime.now(timezone.utc).isoformat(),
-            "scope": "Both archives extracted outside the repository; manifests checked; standalone cached TeX build; PDF text equality; portable inventory regeneration; all four ancillary proof checks.",
+            "scope": "Both archives extracted outside the repository; manifests checked; standalone cached TeX build; PDF text equality; portable inventory and change-record checks; mathematical-source preservation; all four ancillary proof checks.",
             "arxiv_members_checked": len(arxiv_manifest),
             "full_members_checked": len(full_manifest),
             "pages": int(re.search(r"Pages:\s+(\d+)", info)[1]),
@@ -106,7 +110,7 @@ def main():
         json.dumps(result, indent=2) + "\n")
     print(json.dumps({k: v for k, v in result.items()
                       if k not in {"tex_input_sha256", "commands"}}, indent=2))
-    print("All six execution commands exited zero.")
+    print("All eight execution commands exited zero.")
 
 
 if __name__ == "__main__":

@@ -49,50 +49,55 @@ an experiment in agentic mathematical research}
 \date{17 September 2026}
 \begin{document}
 \maketitle
+\begin{center}\small
+Independent mathematical review: Claude Opus[1m] (Anthropic), via Claude Code
+\end{center}
 \begin{abstract}
-We report a single, time-bounded experiment in which a general-purpose
-coding agent was asked to investigate previously unsolved problems in
-the Kourovka Notebook. The agent used GPT-6 Astra with \texttt{xhigh}
-reasoning, a local GAP installation, exact auxiliary programs, access
-to mathematical literature, and a persistent Git repository. It chose
-its own targets and alternated symbolic arguments with finite searches,
-counterexample construction, source checking, and revision. The
-48-hour deadline archive contains 46 entries labeled complete solution
-candidates, together with partial theorems, rediscovered arguments,
-deductions from prior results, and bounded negative searches. This
-number describes the agent's documented outcome; it is not a count of
-independently accepted new theorems. We present mathematical arguments
-and their dependencies, reconstruct the observable trajectory from
-a timestamped session log and 199 local commits, and distinguish mathematical
-verification from artifact integrity and priority assessment.
-The case study illustrates both the productivity of a persistent
-tool-using workflow and the review obligations it creates. It supports
-recommendations for future experiments, including separate novelty and
-correctness ledgers, independent checking of search predicates, explicit
-coverage boundaries, and preservation of failures and resource records.
-Reconciliation of the detailed usage log
-also separates research from later writing and identifies compaction
-requests omitted from the session summary counters.
+We report an experiment in mathematical research and independent review
+by two language models. OpenAI's GPT-6 Astra, running through Codex, had
+48 hours to investigate previously unsolved problems in the Kourovka
+Notebook, using GAP, exact programs and mathematical literature. The
+resulting archive contains 46 entries classified as complete solution
+candidates, together with partial theorems, rediscoveries and bounded
+searches. We present explicit counterexamples, structural arguments and
+finite certificates, with their hypotheses and imported ingredients.
+Anthropic's Claude Opus[1m], running through Claude Code, subsequently
+reviewed all 46 entries, verified a majority in detail, and independently
+reconstructed many finite examples and calculations. Its two reports
+and the exchange with Codex confirmed substantial portions of the work,
+corrected interpretations and attribution, and led to a stronger
+counterexample with a globally principal fixed divisor. This external
+review adds substantial evidence for the results; the deadline count
+remains distinct from a count of established new theorems. The paper
+presents both the mathematical portfolio and the research-and-review
+process, with exact records and verbatim correspondence in the appendices.
 \end{abstract}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \input{sections/introduction}
+\input{sections/external-review}
 \input{sections/methods}
-\input{sections/trajectory}
 \input{sections/representative}
+\input{sections/inventory}
+\input{sections/candidate-proofs}
+\input{sections/partial-results}
+\input{sections/prior-results}
 \input{sections/discussion}
-\appendix
-\input{appendices/protocol}
-\input{appendices/inventory}
-\input{appendices/candidate-proofs}
-\input{appendices/partial-results}
-\input{appendices/prior-results}
-\input{appendices/carpet-tables}
-\input{appendices/reproduction}
-\input{appendices/review-changes}
-\input{appendices/review-correspondence}
+\phantomsection
+\addcontentsline{toc}{section}{References}
 \begingroup
 \raggedright
 \bibliographystyle{abbrv}
 \bibliography{references}
 \endgroup
+\appendix
+\input{appendices/protocol}
+\input{appendices/technical-methods}
+\input{appendices/detailed-chronology}
+\input{appendices/evaluation-notes}
+\input{appendices/carpet-tables}
+\input{appendices/reproduction}
+\input{appendices/review-changes}
+\input{appendices/review-correspondence}
+
 \end{document}

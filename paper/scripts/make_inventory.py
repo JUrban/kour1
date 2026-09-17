@@ -34,24 +34,23 @@ def main():
     rows = json.loads(frozen.read_text())["candidates"]
     annotations = json.loads((PAPER / "data/review-annotations.json").read_text())["entries"]
     assert set(annotations) == {r["problem"] for r in rows}
-    inventory = [r"""\section{The deadline candidate inventory}
+    inventory = [r"""\section{The mathematical portfolio: scope and index}
 \label{app:inventory}
-This table preserves all 46 entries on the deadline ledger, including its
-covered subparts. It is not a list of independently accepted new results.
-Several entries share imported ingredients. The mathematical discussions
-give the relevant scope and dependencies; the frozen ledger supplies the
-original statement and evidence paths. The historical entry for 19.62
+The table indexes all 46 deadline candidates and their proofs, preserving
+the covered subparts and original descriptions. The external assessment
+is described in Section~\ref{sec:external-review}; the additional column
+highlights scope qualifications and shared ingredients. The arguments
+are grouped by subject in Section~\ref{app:candidates}. The historical entry for 19.62
 also groups 19.63 with it; the latter's square-closedness criterion was
 already published before the experiment, as explained in
 Section~\ref{cand:19.62}. This grouping contributes one ledger entry.
-The additional review column records selected scope qualifications and
-imported dependencies; an em dash means no additional note here, not
-that the proof has no imports. Priority remains unestablished for all
-46 candidates. These annotations supplement the historical descriptions.
+An em dash in the review column means no additional note here, not that
+the proof has no imported ingredients. The count records deadline coverage;
+the independent review does not by itself establish discovery priority.
 
 
 \small
-\begin{longtable}{@{}p{0.065\textwidth}p{0.065\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}p{0.055\textwidth}@{}}
+\begin{longtable}{@{}p{0.065\textwidth}p{0.065\textwidth}>{\raggedright\arraybackslash}p{0.35\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}p{0.065\textwidth}@{}}
 \toprule
 No. & Parts & Deadline description & Scope / dependency note & Sec.\\
 \midrule
@@ -63,30 +62,32 @@ No. & Parts & Deadline description & Scope / dependency note & Sec.\\
 \bottomrule
 \endfoot
 """]
-    proofs = [r"""\section{Further candidate arguments}
+    proofs = [r"""\section{Further mathematical arguments}
 \label{app:candidates}
-The following expositions develop the remaining deadline candidates.
-The four examples proved in Section~\ref{sec:examples} are not repeated.
-Statements below retain their mathematical force, while the experimental
-classification and unresolved priority status remain those explained in
-Sections~\ref{sec:methods} and~\ref{sec:discussion}.
+The remaining 42 candidate arguments are organized by subject below.
+The four representative proofs in Section~\ref{sec:examples} are not
+repeated. Each entry states the relevant scope and imported ingredients;
+Section~\ref{app:inventory} provides the complete problem index.
 """]
+    groups = json.loads((PAPER / "data/portfolio-groups.json").read_text())
+    grouped = [p for group in groups for p in group["problems"]]
+    further = {r["problem"] for r in rows if SPECIAL.get(r["problem"], (None, "proof"))[1] is not None}
+    assert len(grouped) == len(set(grouped)) == 42
+    assert set(grouped) == further
     missing = []
     for row in rows:
         problem = row["problem"]
         label, stem = SPECIAL.get(problem, ("cand:" + problem, problem.replace(".", "-")))
-        exists = stem is None or (PAPER / "appendices/candidates" / (stem + ".tex")).exists()
+        exists = stem is None or (PAPER / "sections/candidates" / (stem + ".tex")).exists()
         scope = row["covered_subparts"].split(";")[0]
         loc = r"\ref{" + label + "}" if exists else r"\emph{Draft}"
         inventory.append(f'{tex(problem)} & {tex(scope)} & {tex(row["result"])} & {tex(annotations[problem]["review_note"]) or "---"} & {loc} \\\\\n')
-        if stem is not None and exists:
-            proofs.append(r"\input{appendices/candidates/" + stem + "}\n")
         if not exists:
             missing.append(problem)
     inventory.append("\\end{longtable}\n\\normalsize\n")
     inventory.append(r"""
 \paragraph{Answers retained under prior-work status.}
-The following entries in Appendix~\ref{app:prior} answer the printed
+The following entries in Section~\ref{app:prior} answer the printed
 questions but remain outside the historical candidate count. They are
 shown here to make that classification visible, not to increase 46.
 \begin{center}\small
@@ -97,11 +98,23 @@ Problem & Prior-work status\\\midrule
 20.33 & Effective universal-group construction from standard embeddings, with oracle bookkeeping; Mikaelian improves the generator bound.\\
 \bottomrule\end{tabular}\end{center}
 """)
+    for group in groups:
+        proofs.append("\n\\subsection{" + tex(group["title"]) + "}\n" +
+                      "\\label{portfolio:" + group["label"] + "}\n" +
+                      tex(group["introduction"]) + "\n")
+        # Preserve each exposition's source heading while giving it the
+        # appropriate depth inside the thematic subsection.
+        proofs.append("\\begingroup\n\\let\\subsection\\subsubsection\n")
+        for problem in group["problems"]:
+            _, stem = SPECIAL.get(problem, (None, problem.replace(".", "-")))
+            if (PAPER / "sections/candidates" / (stem + ".tex")).is_file():
+                proofs.append(r"\input{sections/candidates/" + stem + "}\n")
+        proofs.append("\\endgroup\n")
     if missing:
         proofs.append("\n\\paragraph{Working-draft coverage.} Expositions still to be added: "
                       + ", ".join(missing) + ".\n")
-    (PAPER / "appendices/inventory.tex").write_text("".join(inventory))
-    (PAPER / "appendices/candidate-proofs.tex").write_text("".join(proofs))
+    (PAPER / "sections/inventory.tex").write_text("".join(inventory))
+    (PAPER / "sections/candidate-proofs.tex").write_text("".join(proofs))
     print(f"Inventory: {len(rows)} entries; {len(rows)-len(missing)} expositions present; "
           f"{len(missing)} remain.")
     if args.require_complete and missing:

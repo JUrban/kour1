@@ -1,29 +1,26 @@
 # Manuscript status
 
-The 17 September external-review revision is typeset at 125 pages, with
-100 cited works, four main examples and 42 further candidate expositions.
-The original 46-entry deadline ledger and usage measurements are unchanged.
+The polished 17 September paper has 127 pages and 100 cited works. It now
+credits Anthropic's Claude Opus[1m] (`claude-opus-5[1m]`, xhigh, Claude Code)
+as the independent mathematical reviewer on the opening page, in the
+abstract, in an early review section and in the contribution statement.
+That configuration was supplied by the organizer.
 
-Problem 14.72 now has a globally principal reduced fixed divisor on an
-invariant affine open, with a singular quotient. This is explicitly a
-post-review strengthening. The inventory has neutral scope/dependency notes;
-15.92 explains the prime choice; 21.106 acknowledges contemporaneous work
-without assigning priority. The 1994 exponential-groups reference, exact
-prime-bound formula, character-table version and rounding explanation are
-included. Section 1.1 remains Motivation, without a related-work survey.
+The introduction starts with the Notebook and mathematical outcomes.
+The independent-review account is on page 3 and the representative proofs
+begin on page 6. The inventory, further proofs grouped by subject, partial
+results and prior-work deductions are main-text Sections 5–8. Detailed
+configuration, accounting, chronology and study-design material are in
+appendices. The bibliography follows the main mathematical discussion.
 
-The change appendix precedes the four correspondence documents. Their raw
-originals and the partial-update diff are retained. The old reviewed PDF
-is preserved under versions/ and the current PDF remains at the paper root.
+The 46-entry historical ledger, usage records, mathematical arguments and
+verbatim correspondence are preserved. The first review revision and its
+PDF are frozen separately so that the exact before/after record stays tied
+to the version it describes. The prior 14.72 strengthening and the missing
+small-certificate repair remain included.
 
-Both source bundles include the missing 2.2 MB G2 monomial certificate,
-bringing the original ancillary manifest to 24 files and enabling all four
-documented checks. The 1.27 GB 20.100 certificate is not distributed; the
-paper identifies this limit explicitly. Public filtered and local unfiltered
-commit identifiers are documented separately.
-
-The exact algebra check, structural audit, correspondence/excerpt checks,
-portable archive validation and visual inspection passed. The extracted
-source builds to identical PDF text; all four ancillary checks pass. See
-reviews/completion-audit.md for the final record. This task does not
-include a Git push, submission or external upload.
+The second reader-focused pass checked emphasis, repetition, subject grouping,
+mathematical scope and navigation. Mathematical-source, structural, portable
+and visual checks passed. The standalone build gives identical PDF text and
+all four ancillary checks pass; see the completion audit. The public filtered snapshot and undistributed large-certificate
+boundary remain documented. No external upload or push is part of this task.

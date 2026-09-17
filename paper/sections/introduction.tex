@@ -1,82 +1,90 @@
 \section{Introduction}
 \label{sec:introduction}
 
-Research mathematics rarely arrives as an isolated request for a proof.
-A researcher must decide which question to pursue, determine what is
-already known, interpret the statement correctly, choose representations
-that make computation useful, and decide when an approach has stopped
-being productive. An experiment that permits these choices studies a
-different object from a fixed collection of independently graded proof
-problems. Its output is a research process and a collection of artifacts,
-and evaluating it requires more than counting final answers.
+The Kourovka Notebook~\cite{kourovka21} collects open problems in group
+theory and neighboring areas, ranging from concrete questions about finite
+groups to structural and logical problems about infinite ones. We present
+a collection of arguments for its entries, developed in a 48-hour research
+experiment and subsequently subjected to independent review by a second
+language model. The work includes explicit counterexamples, structural
+arguments, algorithms, finite certificates and deductions from earlier
+theorems. We give the mathematics together with an account of its
+development and review.
 
-The Kourovka Notebook~\cite{kourovka21} provides a demanding setting for
-such an experiment. It is a long-running collection of problems in group
-theory and neighboring areas. Its statements vary substantially in
-generality, technical prerequisites, and computational accessibility.
-Some have separately posed subparts; some have already been resolved
-without an immediately obvious indication in the statement; and some
-admit useful partial results without a complete answer. The supplied
-September 2026 version of the twenty-first edition was therefore treated
-as a source to interpret and investigate, rather than as a benchmark
-with a ready-made binary answer key.
+Michael Kinyon and Josef Urban conceived and oversaw the experiment.
+They gave OpenAI's GPT-6 Astra, running through Codex, access to GAP and
+the literature and allowed it to choose which previously unsolved problems
+to pursue. This setting tests a research process: selecting a useful
+question, interpreting its hypotheses, finding a construction or reduction,
+and deciding what has actually been proved.
 
-Michael Kinyon and Josef Urban conceived the prompt and oversaw the
-experiment. They asked the agent to solve as many previously unsolved Notebook
-problems as possible within 48 hours, using a supplied GAP installation,
-generally staying within 20 CPU cores and 100\,GB of memory, and keeping
-detailed plans, reports, and frequent local Git commits. The agent was
-allowed to choose problems, consult the literature, write programs, and
-change direction. The research window ran from 10 September 2026,
-20:56:46 UTC, to 12 September 2026, 20:56:46 UTC. The final archive was
-committed 16 seconds later, after its administrative integrity check.
-The manuscript is a separate, later activity.
+The experiment has two phases. During 10--12 September 2026, Codex
+selected problems, developed arguments and checked its own work. After
+manuscript preparation, Anthropic's Claude Opus[1m], running through
+Claude Code, independently reviewed the paper and then responded to the
+authors' reply and supporting material. Claude examined all 46 entries
+on the deadline candidate list, verified a majority in detail, and
+independently rebuilt many of the finite constructions and calculations.
+This substantial external review strengthens the evidence for the
+mathematical results. Its corrections, confirmations and exchanges with
+Codex form a second part of the experiment, described in
+Section~\ref{sec:external-review}.
 
-At the deadline the canonical ledger contained 46 problem entries
-labeled complete solution candidates. Several entries cover specified
-subparts rather than an entire multipart problem. Multiple covered
-subparts of one entry are counted once. The ledger groups \kn{19.63}
-with \kn{19.62}; the former's square-closedness criterion was already
-published before the experiment and is credited below.
-No entry had received outside
-review, and priority was unestablished. We retain these qualifications
-throughout: a historically recorded candidate is an observable outcome
-of the experiment, whereas a correct and new mathematical theorem
-requires further judgments.
+\subsection{Mathematical outcomes}
 
-Three aspects of the experiment are of particular interest. First,
-the artifact collection contains explicit mathematical constructions
-whose correctness can be considered separately from the agent that
-produced them. Second, the session and Git history expose practical
-interactions between proof development, computation, and correction.
-Third, the experiment produced substantial work that a binary
-solved/unsolved classification would obscure: smaller examples of
-known phenomena, alternative deductions, sharp bounds in restricted
-classes, and complete searches within clearly stated finite ranges.
+Table~\ref{tab:highlights} gives a selection of the results. Four complete
+arguments appear in Section~\ref{sec:examples}; the remaining candidate
+proofs, partial results and prior-work deductions follow in
+Sections~\ref{app:candidates}--\ref{app:prior}. The statements range from
+a two-element definable set in the integral Heisenberg group to
+constructions using geometric group theory and universal integer
+identities for Chevalley groups. Their imported ingredients are credited
+where they enter the proofs.
 
-\subsection{Motivation}
+\begin{table}[htbp]
+\centering\small
+\caption{Selected mathematical outcomes. The last two rows distinguish a
+post-review strengthening and partial results.}
+\label{tab:highlights}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.115\textwidth}>{\raggedright\arraybackslash}p{0.705\textwidth}>{\raggedright\arraybackslash}p{0.08\textwidth}@{}}
+\toprule
+Problem & Result & Section\\\midrule
+21.106 & A parameter-free formula defines two elements generating an infinite subgroup of the residually finite integral Heisenberg group. & \ref{subsec:concise}\\[3pt]
+21.68 & A semi-abelian group of order 2,592 has a non-monomial irreducible representation of degree eight. & \ref{subsec:semiabelian}\\[3pt]
+20.108 & A centerless group of order 605 has an element of order four in its multiple-holomorph quotient. & \ref{subsec:holomorph}\\[3pt]
+19.56 & A coprime-order inequality on commutators of prime-power inputs forces a finite group to be soluble. & \ref{cand:19.56}\\[3pt]
+19.61--19.62 & Carpet closure and derived-carpet assertions are reduced to explicit universal integer derivations. & \ref{cand:19.61}, \ref{cand:19.62}\\[3pt]
+14.72 & A smooth affine surface has a smooth fixed divisor but a singular cyclic quotient; the review led to a globally principal fixed divisor. & \ref{cand:14.72}\\[3pt]
+20.100 & A distinct-powers theorem for torsion-free groups, a finite abelian reduction, and certified cases \(n=4,5,6,7\); arbitrary \(n\) remains open. & \ref{partial:20.100}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The number 46 records the problem entries classified as complete solution
+candidates at the deadline. It counts specified subparts once per entry,
+and some entries share a construction or a substantial imported theorem.
+The inventory in Section~\ref{app:inventory} gives the covered parts and
+convention-sensitive hypotheses. Subsequent review provides evidence of
+correctness; novelty is a separate question. In particular, we acknowledge
+contemporaneous work on 21.106, and retain known results and deductions
+under their prior-work status. Several substantial partial theorems,
+including the distinct-powers results, are outside the 46-entry count.
+
+\subsection{Motivation and reading routes}
 
 Urban's motivation for the shared time budget was the 2006/7
-MPTPChallenge: attempt many related problems and reuse discoveries
-across them~\cite{mptpchallenge}. MaLARea implemented this approach
-through repeated proving and learned premise selection~\cite{malarea-2015}.
-The present experiment adopts the broad portfolio setting, with a
-48-hour wall-clock limit, informal mathematical targets, and adaptation
-through the agent's context and files. It does not include observed
-online training of the model's weights.
-Given the breadth and rapid development of learning-guided proving
-and LLM-based AI for mathematics, we do not attempt a comprehensive
-survey of related work here.
+MPTPChallenge: attempt related problems and reuse discoveries across
+them~\cite{mptpchallenge}. MaLARea pursued this approach through repeated
+proving and learned premise selection~\cite{malarea-2015}. Here the agent
+could also interpret informal statements, choose representations, consult
+sources and abandon unproductive approaches. Given the breadth and rapid
+development of learning-guided proving and LLM-based AI for mathematics,
+we do not attempt a comprehensive related-work survey.
 
-\subsection{Reading the paper}
-
-Section~\ref{sec:methods} describes the setting and the limits of the
-retained evidence. Section~\ref{sec:trajectory} reconstructs the workflow
-and selected changes of direction. Section~\ref{sec:examples} gives
-complete representative arguments, including a definability
-counterexample, two finite group constructions, and a coprime-order
-criterion for solubility.
-The appendices organize the wider candidate portfolio, partial results,
-prior-result deductions, and reproducibility material.
-Section~\ref{sec:discussion} discusses what this single run can support
-and what a more controlled follow-up should measure.
+Mathematical readers can proceed from the review account to the four
+representative proofs and use the inventory to find their areas of interest.
+Readers interested in AI and automated reasoning will find the research
+process in Section~\ref{sec:trajectory} and its implications in
+Section~\ref{sec:discussion}. Exact instructions, detailed chronology,
+usage accounting and reproduction procedures are collected in the
+appendices, followed by the change record and review correspondence.

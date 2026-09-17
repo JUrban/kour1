@@ -1,0 +1,77 @@
+\section{Measurement limits and further experimental design}
+\label{app:evaluation}
+
+The configuration and usage measurements in Appendix~\ref{app:methods}
+identify the retained client-side record. They do not recover remote
+inference hardware, actual peak local resource use, provider invoices,
+or all historical sampling settings. The cost estimates are explicitly
+rate-based reconstructions; they are not measurements of billing or
+energy use. Human oversight outside the logged interaction is likewise
+not observable from the trace.
+
+An opportunistic portfolio also limits comparisons. Counting indexed
+questions or mentions in a log does not recover a reliable denominator
+of substantive attempts. Training-data overlap and prior familiarity
+with constructions remain unknown. Without an ablation or a comparison
+run, the experiment cannot isolate the effect of persistence, tools,
+browsing, model choice or human oversight.
+
+The separate Claude review provides stronger evidence of mathematical
+correctness than the initial internal checks. It does not remove these
+measurement limitations or determine discovery priority. The following
+protocol would make a further study more informative.
+
+\subsection{Designing a comparative experiment}
+
+A follow-up should retain the broad research setting while improving
+the measurements that this run could not provide. A practical protocol
+would have the following components.
+
+\begin{enumerate}
+\item \textbf{Define the unit of evaluation in advance.}
+Use a dated set of problems with explicit subparts and a documented
+editorial status. Record every substantive attempt, including abandoned
+ones, with the reason for stopping. A randomized target subset or
+matched target sets would support comparisons that an opportunistic
+portfolio cannot.
+
+\item \textbf{Separate discovery from assessment.}
+Maintain different fields for statement coverage, proof validity,
+computational verification, prior-art status, and outside review.
+Freeze proposed answers before specialist assessment, and preserve
+later corrections as new versions. Reviewers should receive the
+original question and the mathematical argument before seeing aggregate
+success claims.
+
+\item \textbf{Record the experimental configuration.}
+Save model identifiers, reasoning settings, harness and package
+versions, continuation instructions, tool permissions, and retrieval
+dates. Capture raw event logs with timestamps and request identifiers,
+along with local CPU time and peak memory. Retain response-level usage, including compaction, and separate the
+research interval from subsequent writing. Keep usage estimates and
+billing records separate until reconciled.
+
+\item \textbf{Treat verification as a research task.}
+For a search, specify the exact predicate and its relation to the
+question. Include a small direct implementation that checks examples
+without reusing the search representation. For a large certificate,
+make coverage and the checking rules explicit, retain malformed-input
+and negative controls, and distinguish successful generation from
+successful verification.
+
+\item \textbf{Use formalization selectively.}
+Small algebraic identities, finite certificates, and critical reduction
+lemmas are plausible first targets. Formalizing the entire archive at
+once would create a large translation project. Any formal account must
+also justify that its statement matches the Notebook, including
+quantifiers and conventions; a kernel-checked proof of a different
+statement would leave the original task unanswered.
+
+\item \textbf{Measure the review burden.}
+Record expert time, corrections, changes in status, and which claims
+depend on the same imported theorem. Report a short, fully reviewed
+core alongside the larger exploratory archive. This would make it
+possible to compare output volume with the work needed to establish
+reliable mathematical contributions.
+\end{enumerate}
+

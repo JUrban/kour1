@@ -1,0 +1,246 @@
+\section{Configuration, records and accounting}
+\label{app:methods}
+
+\subsection{Task and problem source}
+
+The full user objective is reproduced in Appendix~\ref{app:protocol}.
+It specifies an overall time limit and a research objective, rather
+than a list of preselected questions or a target number of outputs.
+The agent's initial plan explicitly prioritized precise statements,
+literature checks, finite counterexamples, elementary reductions, and
+independent implementations of computational checks. It also required
+partial results and unsuccessful searches to be recorded.
+
+The input file \artifact{docs/21tkt.pdf} has SHA-256 digest
+\begin{center}
+\small\path{2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911}.
+\end{center}
+The agent extracted a main-body index with 1,308 entries, including
+all 150 entries of Issue 21. This is an index of problem statements,
+not a verified count of open problems. Editorial stars, solved
+subparts, duplicates, and literature published after a problem was
+posed all affect the open status of individual assertions.
+The source PDF, rather than its text extraction, was treated as
+authoritative for mathematical notation and scope.
+
+\subsection{Agent and computational environment}
+
+The experiment used Codex 0.153.4 with \texttt{gpt-6-astra} and
+reasoning effort \texttt{xhigh}. The full JSONL record corroborates the
+settings supplied during manuscript preparation: all 139 retained
+turn-context records identify this model and effort, including 133 in
+the research window. The session metadata records the OpenAI provider
+and the CLI application version. These observations identify the
+recorded configuration, without establishing every provider-side
+implementation detail.
+
+The agent worked in a persistent Linux workspace with shell access,
+file editing, Git, internet source retrieval, and tools for inspecting
+PDF pages. GAP 4.16.1 supplied the main finite-group computations.
+The retained scripts also use Python and C/C++ for exact arithmetic,
+word calculations, independent finite models, enumeration, and
+certificate parsing. The source and report files record which
+libraries or catalogues each computation depends on. Versions not
+retained in the experimental records cannot be reconstructed merely
+by inspecting the later manuscript environment.
+
+The user initially supplied an inaccessible GAP path and repaired it
+during setup. The visible human message is \emph{sorry, gap is now here}.
+The subsequent reports establish that GAP was available with the
+required packages. The initial suggestion that a replacement
+installation might be needed is therefore not evidence that such an
+installation actually occurred.
+
+The working limits were generally 20 CPU cores and 100\,GB of memory.
+The repository contains bounded launchers and process observations,
+but not a continuous, comprehensive record of global peak resource
+use. In the largest retained certificate check, six GAP workers each
+had a 14\,GiB workspace ceiling, for a combined configured ceiling of
+84\,GiB. A workspace ceiling is not an observed resident-memory peak.
+Likewise, local CPU limits do not measure the remote compute used by
+the language model.
+
+The research plan prohibited delegation to other agents without
+authorization, and the reports record no delegated agents. Parallel
+GAP or C++ processes were computational workers, not separate language
+model researchers. The same agent developed the arguments, wrote
+checkers, and conducted the internal reviews. Within that research phase, \emph{independent implementation} means a
+separate representation or algorithm written by the same agent. The later
+independent review by Claude Opus[1m] is a separate phase, described in
+Section~\ref{sec:external-review}.
+
+\subsection{Persistence and local records}
+
+The workspace served as external memory. Plans and status files recorded
+the next steps; proof drafts preserved mathematical arguments; scripts
+and logs preserved computations; and Git recorded successive states.
+The research window contains 54 task-start events, 52 task-completion
+events, one aborted turn, and 79 context compactions. One further task
+completion occurs during closeout. The opening task was paused during
+setup; after the GAP correction at 20:58:51 UTC it resumed at
+20:59:58 UTC. The wall-clock budget includes this interval. Repeated
+continuations and compactions are visible in the record; the work was
+not a single uninterrupted model response.
+
+There were 198 commits during the 48-hour window. The first, at
+21:00:37 UTC on 10 September, initialized the investigation.
+The 199th commit, \snapshot{}, completed the local handoff at
+20:57:02 UTC on 12 September. Commit times date repository checkpoints;
+they do not directly date the discovery of an idea or establish when
+its full final scope was proved.
+
+At \snapshot{}, the Git tree contains 4,147 tracked files with a total
+logical size of 2,440,677,642 bytes. This includes 430 files under
+\artifact{research/}, 456 under \artifact{scripts/}, and 2,755 under
+\artifact{results/}, as well as references, the source Notebook, and
+other records. Logical file size is not compressed repository size.
+The manuscript analysis reads this fixed revision, so later writing
+and review do not increase the experimental counts.
+
+\subsection{Session records and observable operations}
+
+The full JSONL session supplied on 15 September contains 36,016
+records, from 10 September 20:56:46.325 UTC through 14 September
+17:05:09.077 UTC. It includes the research run, its closeout, and
+initial manuscript preparation. We separate these phases before
+counting operations or usage. Manuscript preparation begins with the
+new goal recorded at 14 September 14:12:56.892 UTC.
+
+The earlier \artifact{session.html} and \artifact{session.txt} files
+are projections ending at research closeout. The HTML advertises
+34,102 events and retains 4,439 event elements, including 3,616 token
+notifications. Every one of those token observations matches the
+corresponding JSONL line, including all cumulative and last-use fields.
+The full record adds individual timestamps, tool observations,
+configuration records and request-level usage. Its digest and the
+reconciliation procedure are supplied in Appendix~\ref{app:reproduction}.
+
+Within the research window, completed-item notifications record
+4,350 command or polling observations, 676 file-change items, 357
+image views, and 1,293 web-tool observations. The web count includes
+searches and page retrieval; it is not a count of search queries.
+There are also four completed sleep-tool observations. We count each
+completed item once by its identifier, keeping these counts separate
+from the outer code-tool calls that can contain several operations.
+Of the command observations, 251 have nonzero exit status; these include
+expected no-match results and interrupted processes, and cannot be
+interpreted as 251 failed mathematical experiments.
+
+The dated visible messages support the narrative below. Completed
+human-message items record the GAP correction during research and the
+model confirmation during manuscript preparation; the original
+objectives also occur in goal records. These counts do not measure
+oversight outside the recorded interaction. The derived public data
+omit internal reasoning and system/developer instruction bodies.
+
+\subsection{Token and cost accounting}
+
+The JSONL contains two distinct usage ledgers. Its 3,829 unique
+\texttt{token\_usage\_record} responses sum exactly to every running
+\texttt{thread\_token\_usage} value. Of these responses, 84 match
+context-compaction identifiers. Removing those responses gives exactly
+the final cumulative \texttt{event\_msg/token\_count} counters, which
+are the counter stream used by ccusage~\cite{ccusage-docs}.
+Embedded copies of history and usage are not new requests.
+
+The organizers supplied the ccusage row reproduced in
+Table~\ref{tab:tokens}. It agrees exactly with the second ledger for
+the \emph{whole supplied session}, including manuscript preparation.
+Its input column counts uncached input; the renderer's input counter
+includes cached input. Reasoning tokens are a subset of output, and
+are not added a second time~\cite{promptcaching,reasoning}.
+
+\begin{table}[ht]
+\centering
+\caption{Supplied ccusage row and its full-session reconciliation.
+The row excludes the separately recorded compaction requests.}
+\label{tab:tokens}
+\begin{tabular}{lr}
+\toprule
+Counter & Tokens\\
+\midrule
+Uncached input & 21,605,689\\
+Cached input & 482,598,400\\
+Output & 4,055,235\\
+\quad Of which reasoning output & 1,894,719\\
+Total (uncached input plus cached input plus output) & 508,259,324\\
+\midrule
+Additional input and output in 84 compaction requests & 21,569,265\\
+All recorded requests, including compactions & 529,828,589\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Using flat rates of USD 10 per million uncached input tokens, USD 1
+per million cached input tokens, and USD 50 per million output tokens
+reproduces the supplied USD 901.42 estimate:
+\[
+ \frac{10(21{,}605{,}689)+482{,}598{,}400+50(4{,}055{,}235)}{10^6}
+ =901.41704.
+\]
+These rates match the model documentation consulted on 15 September
+2026~\cite{astra}. The maximum recorded request input is 259,244
+tokens, below its 272,000-token long-input threshold. We use the same
+flat rates throughout Table~\ref{tab:phase-usage}; this is a transparent
+API-equivalent reconstruction, not an invoice or an inference about
+the organizers' subscription bill, discounts, or additional tool charges.
+The exact ccusage version and invocation were not supplied.
+
+\begin{table}[ht]
+\centering\small
+\caption{Usage by phase, assigned by request-record timestamp.
+``Other'' means responses other than context compactions.
+USD estimates are rounded independently to cents.}
+\label{tab:phase-usage}
+\begin{tabular}{lrrr}
+\toprule
+ & Research & Closeout & Manuscript\\
+\midrule
+Other responses & 3,515 & 5 & 225\\
+Compaction responses & 79 & 0 & 5\\
+All input and output tokens & 497,160,051 & 460,875 & 32,207,663\\
+Other-response estimate (USD) & 846.09 & 0.56 & 54.77\\
+Compaction estimate (USD) & 64.52 & 0.00 & 3.85\\
+All-response estimate (USD) & 910.61 & 0.56 & 58.62\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the full-session estimate including compactions is USD 969.78,
+of which USD 910.61 is assigned to the 48-hour research window.
+Adding the independently rounded phase totals gives USD 969.79;
+the one-cent difference comes from rounding after aggregation.
+The earlier HTML total of 477,334,181 tokens equals research plus
+closeout usage excluding compactions. A delayed token notification
+straddles the deadline, so phase assignment uses request-record times,
+not notification times. These are logging boundaries, not exact
+provider execution intervals. Cached input dominates both ledgers;
+neither total measures distinct text read or newly generated text.
+
+\subsection{Outcome categories and checks}
+
+We distinguish five questions about an artifact:
+\begin{enumerate}
+\item Does its mathematical statement match the question being addressed?
+\item Is the argument correct under its stated assumptions and imported results?
+\item Do the computations establish the particular finite claims assigned to them?
+\item Is the assertion already known or an immediate consequence of prior work?
+\item Has someone independent of the producing agent accepted the argument?
+\end{enumerate}
+These questions require different evidence. A digest match answers
+none of the mathematical questions. A finite check cannot establish
+an unrestricted infinite-group theorem without a proved reduction.
+Failure to find a paper in a literature search does not establish
+priority. A second implementation can expose an error in a first
+program while sharing the same mistaken mathematical specification.
+
+The deadline ledger uses \emph{complete candidate} for an argument
+presented as answering the recorded scope and surviving the internal
+checks conducted during the run. A \emph{partial result} proves a
+restricted assertion while leaving the full question open.
+A \emph{rediscovery} reproduces a known phenomenon or proof after
+independent work, whereas a \emph{prior-result deduction} applies an
+identified theorem. A bounded search without a hit remains
+\emph{computational evidence} for its exact range.
+These are reporting categories, not interchangeable levels on a
+single scale of confidence.

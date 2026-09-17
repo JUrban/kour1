@@ -1,0 +1,318 @@
+\section{Representative mathematical arguments}
+\label{sec:examples}
+
+The following arguments illustrate four different kinds of output.
+Each can be assessed without accepting the agent's overall candidate
+count. Their relation to earlier work is stated separately from
+their mathematical content. Throughout, $[x,y]=x^{-1}y^{-1}xy$.
+
+\subsection{A finite definable set generating an infinite subgroup}
+\label{subsec:concise}
+
+Following Conte and Petschick~\cite{contepetschick}, a formula
+$\varphi(x)$ is \emph{concise} in a class of groups if every finite
+truth set in that class generates a finite subgroup.
+Petschick's \kn{21.106} asks whether every first-order formula with
+one free variable is concise in residually finite groups.
+Here formulas may have alternating quantifiers; restricting to
+group words or to existential formulas gives different questions.
+
+\begin{theorem}
+\label{thm:concise}
+There is a parameter-free first-order formula whose truth set in
+the integral Heisenberg group is $\{z,z^{-1}\}$, where $z$ generates
+its infinite cyclic center. In particular, the formula is not
+concise in residually finite groups.
+\end{theorem}
+
+\begin{proof}
+Use the following abbreviations in the language of groups:
+\begin{align*}
+\operatorname{Cent}(z)&:\quad \forall t\;[z,t]=1,\\
+P(u)&:\quad \forall z\,
+ \bigl(\operatorname{Cent}(z)\Longrightarrow
+                  \exists t\;[u,t]=z\bigr),\\
+Q(u,v)&:\quad \forall g\,\exists h\,\exists k\,
+ \bigl(g=hk\ \wedge\ [h,u]=1\ \wedge\ [k,v]=1\bigr).
+\end{align*}
+Define
+\[
+\varphi(x):\quad \exists u\,\exists v\,
+ \bigl(x=[u,v]\ \wedge\ P(u)\ \wedge\ P(v)\ \wedge\ Q(u,v)\bigr).
+\]
+After renaming bound variables and expanding the abbreviations,
+this is a parameter-free formula with exactly one free variable.
+All its quantifiers range over group elements.
+
+Write the integral Heisenberg group as
+\[
+H=\Z^3,\qquad
+(a,b,c)(d,e,f)=(a+d,b+e,c+f+ae).
+\]
+Matrix multiplication, or direct calculation, gives
+\[
+(a,b,c)^{-1}=(-a,-b,ab-c),\qquad
+[(a,b,c),(d,e,f)]=(0,0,ae-db).
+\]
+Thus $Z(H)=\{(0,0,c):c\in\Z\}=\langle z\rangle$ with
+$z=(0,0,1)$. Reduction of coordinates modulo $m$ is a homomorphism
+to a finite group of order $m^3$. Choosing $m$ larger than the
+absolute value of a nonzero coordinate separates any nonidentity
+element, so $H$ is residually finite.
+
+Let $\pi:H\to\Z^2$ be projection onto the first two coordinates.
+For $u=(a,b,c)$, the third coordinates of $[u,t]$ form the ideal
+$a\Z+b\Z$. Consequently
+\[
+H\models P(u)\quad\Longleftrightarrow\quad \gcd(a,b)=1.
+\]
+If $(a,b)$ is primitive, the solutions of $as-br=0$ in
+$(r,s)\in\Z^2$ are precisely the multiples of $(a,b)$.
+For example, choose $\alpha a+\beta b=1$ and put
+$k=\alpha r+\beta s$; the determinant relation gives
+$ka=r$ and $kb=s$. Hence
+\[
+\pi(C_H(u))=\Z(a,b),
+\]
+and the centralizer is the full inverse image of this subgroup.
+
+Suppose $P(u)$ and $P(v)$ hold, with
+$\pi(u)=(a,b)$ and $\pi(v)=(d,e)$.
+Both centralizers contain $Z(H)$, so their set product is all of
+$H$ exactly when their projected subgroups sum to $\Z^2$.
+Indeed, a factorization after projection can be lifted, and its
+central error absorbed into the second factor. It follows that
+\[
+H\models Q(u,v)
+\quad\Longleftrightarrow\quad
+\Z(a,b)+\Z(d,e)=\Z^2
+\quad\Longleftrightarrow\quad ae-db=\pm1.
+\]
+Thus any value satisfying $\varphi$ is $z$ or $z^{-1}$.
+Conversely, the ordered pairs
+$((1,0,0),(0,1,0))$ and $((0,1,0),(1,0,0))$
+witness the two values. Therefore
+$H_\varphi=\{z,z^{-1}\}$, but
+$\langle H_\varphi\rangle\cong\Z$.
+\end{proof}
+
+The counterexample is already two-generated, torsion-free, and
+nilpotent of class two. It is residually a finite $p$-group for
+each prime $p$, by reduction modulo powers of $p$.
+The elements used to describe witnesses do not occur as parameters
+in the formula. No assertion that first-order truth commutes with
+finite quotients is needed. The existential-formula theorem of
+Conte and Petschick does not apply to this alternating formula.
+The experimental controls checked commutator arithmetic and finite
+interpretations, while the proof above establishes the infinite
+statement.
+
+Contemporaneous work recorded in a public repository credits Lily Zhang
+with a counterexample and proof and Evan Li with a Heisenberg
+simplification; it also supplies a Lean formalisation\cite{zhang-li-concise}.
+Our first local proof commit is dated 10 September 2026, 21:05:23 UTC;
+the commit adding those Lean files is dated 11 September, 10:54:21 UTC.
+These are artifact timestamps, not discovery or verified upload times,
+and do not establish priority. We have not built that Lean development.
+The retrieval index in Appendix~\ref{app:reproduction} provides a limited
+record of source access, not a test of independence.
+
+\subsection{A semi-abelian group which is not monomial}
+\label{subsec:semiabelian}
+
+A finite group is \emph{monomial} if each irreducible complex
+representation is induced from a one-dimensional representation of
+a subgroup. In the definition used in \kn{21.68}, semi-abelian
+groups are obtained along a subgroup chain by abelian semidirect
+extensions and quotients. The construction below uses only split
+extensions with abelian kernels.
+
+\begin{theorem}
+\label{thm:semiabelian}
+There is a semi-abelian group of order $2,592$ with a non-monomial
+irreducible complex representation of degree eight.
+\end{theorem}
+
+\begin{proof}
+Let $E$ be the even-weight subspace of $\F_2^4$ and let $A_4$
+permute its coordinates. Put $K=E\rtimes A_4$, with multiplication
+$(v,g)(w,h)=(v+g(w),gh)$. In $K$, set
+\[
+z=(1111,1),\quad
+x=(1010,(12)(34)),\quad
+y=(1001,(13)(24)),\quad
+r=(0000,(234)).
+\]
+Direct multiplication gives
+\[
+x^2=y^2=(xy)^2=z,\qquad
+z^2=1,\qquad r^3=1,\qquad
+rxr^{-1}=y,\qquad ryr^{-1}=xy.
+\]
+The eight elements $1,z,x,zx,y,zy,xy,zxy$ are distinct:
+their permutation parts form the Klein four group, with two
+distinct vectors above each part. Thus $\langle x,y\rangle$
+is quaternion of order eight and
+$H=\langle x,y,r\rangle$ has order 24.
+Its abelianization is $C_3$: in an abelian quotient the
+conjugation relations give $x=y=xy$, whence $x=y=1$.
+In particular, $H$ has no subgroup of index two.
+
+The group $H$ has an irreducible complex representation $\rho$
+of degree two. To see this explicitly, represent $x,y$ by the
+quaternion units $i,j$ and $r$ by
+$(-1-i-j-k)/2$. The latter has order three and conjugates
+$i$ to $j$ and $j$ to $k=ij$.
+The usual two-dimensional complex representation of the
+quaternions is irreducible: $i$ has the two coordinate
+eigenlines and $j$ interchanges them.
+
+Let $\Omega=K/H$, a set of four left cosets, and put
+\[
+B=\left\{b\in\F_3^\Omega:\sum_{\omega\in\Omega}b_\omega=0\right\},
+\qquad G=B\rtimes K.
+\]
+Then $|G|=27\cdot96=2,592$. The chain
+\[
+1<C_3<A_4<K<G
+\]
+exhibits the required abelian split extensions.
+Fix $\omega_0=H$ and a primitive cube root of unity $\zeta$.
+The character $\lambda(b)=\zeta^{b_{\omega_0}}$ has stabilizer
+exactly $H$ in $K$. Indeed, the four coordinate characters on
+$B$ are distinct: for distinct coordinates $u,v$, choose a
+third coordinate $w$ and take $b_u=1$, $b_w=-1$, with all
+other coordinates zero. Hence the inertia subgroup of
+$\lambda$ in $G$ is $I=B\rtimes H$.
+
+The representation
+$\tau(b,h)=\lambda(b)\rho(h)$ of $I$ is well-defined because
+$H$ fixes $\lambda$. Let $V=\Ind_I^G\tau$. Its restriction
+to $B$ has four distinct weights, each of multiplicity two.
+The group $G$ permutes their weight spaces transitively,
+and the stabilizer acts irreducibly on each such space.
+Every invariant subspace splits into $B$-weight spaces,
+using the averaging projections for the finite abelian
+group $B$. Therefore $V$ is irreducible and has dimension
+eight.
+
+Suppose $V\cong\Ind_L^G\mu$ with $\mu$ one-dimensional.
+Then $[G:L]=8$. Since $B$ is a normal 3-group,
+$[B:B\cap L]=[BL:L]$ is a power of three dividing eight;
+thus $B\le L$. The character $\mu|_B$ must be one of the
+four weights of $V|_B$. After conjugation, assume it is
+$\lambda$. A linear character is invariant under
+conjugation by its own domain, so $L$ stabilizes $\lambda$.
+Thus $L\le I$ and
+\[
+[I:L]=[G:L]/[G:I]=8/4=2.
+\]
+Because $B\le L$, this gives an index-two subgroup of
+$I/B\cong H$, a contradiction.
+\end{proof}
+
+Kida's paper~\cite{kida} provided the small order-96 configuration
+and posed the monomiality conjecture. The abelian extension and
+the character obstruction are the proposed additional argument
+in the experimental archive. The proof does not rely on a
+SmallGroups identifier. That identifier and separate finite
+checks are useful for reproduction, not for the logical
+existence of the example.
+
+\subsection{An order-four element in a multiple holomorph quotient}
+\label{subsec:holomorph}
+
+For a group $G$, write $\Hol(G)$ for the normalizer of its
+left regular action in the permutation group on its underlying
+set, and $\NHol(G)$ for the normalizer of $\Hol(G)$.
+Tsang's \kn{20.108}(a,b) asks whether a centerless group,
+and specifically a finite one, can have
+$T(G)=\NHol(G)/\Hol(G)$ which is not elementary abelian of
+exponent two.
+
+\begin{theorem}
+\label{thm:holomorph}
+For $G=(C_{11}\times C_{11})\rtimes C_5$, where a generator
+of $C_5$ acts by $\operatorname{diag}(3,9)$ over $\F_{11}$,
+the group $G$ is centerless and $T(G)$ contains an element
+of order four.
+\end{theorem}
+
+\begin{proof}
+Put $\lambda=3\in\F_{11}$, of order five, and represent
+$G$ by triples with multiplication
+\[
+(x,y,k)(x',y',k')
+ =\bigl(x+\lambda^kx',\,y+\lambda^{2k}y',\,k+k'\bigr),
+\]
+where $k,k'\in\Z/5\Z$. Commuting with all translations
+forces a central element to have $k=0$; commuting with
+$(0,0,1)$ then forces $x=y=0$. Thus $Z(G)=1$.
+
+The unique Sylow 11-subgroup $V=\F_{11}^2$ is
+characteristic. An automorphism induces a matrix $M$
+on $V$ and multiplication by
+$u\in(\Z/5\Z)^\times$ on $G/V$. Compatibility requires
+\[
+M\operatorname{diag}(\lambda,\lambda^2)
+ =\operatorname{diag}(\lambda^u,\lambda^{2u})M.
+\]
+Equality of the eigenvalue sets gives
+$\{u,2u\}=\{1,2\}$ modulo five, so $u=1$ and $M$ is
+diagonal. The image of a quotient generator can have
+any translation part. Conversely, the resulting maps
+\[
+(x,y,k)\longmapsto
+\bigl(ax+b(1-\lambda^k),\,
+dy+e(1-\lambda^{2k}),\,k\bigr),
+\qquad a,d\ne0,
+\]
+are automorphisms.
+
+A normalizer of the left regular group, after a
+translation making it fix the identity, is an
+automorphism. Consequently the full holomorph consists
+exactly of the permutations
+\[
+h(x,y,k)=
+\bigl(Ax+B+C\lambda^k,\,
+Dy+E+F\lambda^{2k},\,k+j\bigr),
+\tag{$*$}
+\]
+with $A,D\ne0$ and all remaining parameters arbitrary.
+Define
+\[
+\theta(x,y,k)=(y,\lambda^{-k}x,2k),\qquad
+\theta^{-1}(X,Y,K)=(\lambda^{3K}Y,X,3K).
+\]
+Direct composition gives
+\begin{align*}
+(\theta h\theta^{-1})(X,Y,K)
+ =\bigl(&DX+E+F\lambda^K,\\
+        &\lambda^{-j}AY+\lambda^{-j}C+
+                    \lambda^{-j}B\lambda^{2K},\ K+2j\bigr).
+\end{align*}
+This again has form $(*)$. Since the holomorph is finite,
+the resulting containment is equality, so $\theta$ normalizes it.
+Moreover,
+\[
+\theta^2(x,y,k)=(\lambda^{-k}x,\lambda^{-2k}y,-k),
+\qquad \theta^4=1.
+\]
+Every holomorph element acts on the final coordinate
+by a translation, whereas $\theta^2$ acts by negation.
+These are different functions on $\Z/5\Z$. Therefore
+$\theta^2\notin\Hol(G)$ and the coset of $\theta$ has
+order exactly four.
+\end{proof}
+
+Tsang's paper~\cite{tsang} singled out this group among
+exceptions to its computational coverage. The proof
+above uses that lead but not the paper's general
+classification argument. The experimental checks
+compare the explicit holomorph with GAP's automorphism
+group and evaluate the normalizer identity separately.
+Determining all of $T(G)$ is unnecessary for the stated
+conclusion.
+
+\input{appendices/candidates/19-56}

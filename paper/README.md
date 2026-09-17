@@ -1,9 +1,19 @@
 # Forty-eight hours with the Kourovka Notebook
 
 [Read the revised paper (PDF)](kourovka-experiment.pdf) ·
-[Reviewed 15 September version (PDF)](versions/kourovka-experiment-2026-09-15.pdf).
+[Reviewed 15 September version (PDF)](versions/kourovka-experiment-2026-09-15.pdf) ·
+[First review revision (PDF)](versions/kourovka-experiment-2026-09-17-review.pdf).
 
-This is the 17 September revision, on branch `paper/review-revision`.
+This is the polished 17 September revision, on branch `paper/review-revision`.
+Anthropic's **Claude Opus[1m]** (`claude-opus-5[1m]`, `xhigh`, via Claude Code)
+provided the independent mathematical review. The abstract and early review
+section describe its confirmations, corrections and dialogue with Codex.
+
+The paper now opens with selected mathematical outcomes. Sections 4–8 contain
+the representative proofs, full inventory, further proofs grouped by subject,
+partial results and prior-work deductions. Detailed configuration, accounting,
+chronology and reproduction material follow in appendices. The bibliography
+precedes those appendices.
 The original unfiltered research snapshot is
 `cff2c37b9bf6b737e8ad5f7ead12291a551b5201`; the accessible
 [public filtered snapshot](https://github.com/JUrban/kour1/tree/bbfac1ac810117da37f01716d4594dc2b2e96980)
@@ -83,6 +93,13 @@ acknowledgement of contemporaneous 21.106 work. The deadline ledger and
 usage data retain their historical status.
 
 The change appendix precedes four verbatim correspondence appendices.
+Its original before/after pairs are bound to the 15 September version and
+the first review revision (`f9e1956`); the later editorial reorganization is
+recorded separately. The originals and both earlier PDFs remain available.
+`reviews/polish-2026-09-17/` documents the two reader-focused passes and checks.
+`python3 paper/scripts/audit_reader_revision.py` checks that the 50 relocated
+mathematical source files preserve their proofs and that every live TeX file
+is included exactly once.
 Raw originals, the partial update of the first report, its exact diff, and
 our final reply are in [external-reviews/](external-reviews/).
 [reviews/revision-2026-09-17/](reviews/revision-2026-09-17/) holds exact

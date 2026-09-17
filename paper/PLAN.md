@@ -107,3 +107,14 @@ Document the filtered public snapshot and the undistributed large input;
 do not make a large-file deposit a condition of completing the revision.
 Validate correspondence preservation, source bundles and PDF, then commit
 the paper revision and PDF without pushing.
+
+## Reader-focused polishing
+
+Credit Claude Opus[1m] (Anthropic), claude-opus-5[1m], xhigh, via Claude Code,
+using the organizer's identification. Bring independent review and the
+mathematical outcomes into the abstract and opening sections. Integrate
+the candidate inventory/proofs, partials and prior-work deductions into
+the main text; group proofs by subject. Move detailed configuration, usage,
+chronology and evaluation design to appendices. Preserve exact historical
+correspondence and review changes. Reread the reorganized paper for both
+mathematical and AI/TP audiences, validate the sources/PDF and commit.

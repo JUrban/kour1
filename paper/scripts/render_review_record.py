@@ -69,14 +69,23 @@ raw text alongside an exact unified diff, rather than repeat the near-duplicate
 report here. The originals, diff, and digest manifest are under
 \artifact{paper/external-reviews/} in the repository and the full source archive.
 
+The reviewer was Anthropic's Claude Opus[1m], model
+\artifact{claude-opus-5[1m]}, with \texttt{xhigh} reasoning through
+Claude Code. The organizers supplied this identification during the
+subsequent editorial revision. Claude is credited with the independent
+mathematical review and its computational and source checks; Codex wrote
+the author replies. Section~\ref{sec:external-review} describes the process
+and its mathematical outcomes.
+
 The reviewer artifacts are in a separate repository,
 \url{https://github.com/JUrban/kour1cl/tree/0d76dc7fc947a89a6f02e37b81da2320450efab6/review-other1}.
 That pinned tree contains 83 files under \artifact{checks/} and five under
 \artifact{checks2/}, together with the working notes. We inspected the
 artifact index and follow-up logs; we have not rerun all the reviewer's
 scripts. The reports distinguish external checking from the deadline record.
-Their production account describes additional agent instances; we make no
-inference of human expert validation from the term ``external review''.
+Claude's production account describes additional agent instances whose
+findings it treated as leads and checked itself. This is separate-model
+review, rather than an assertion of human specialist endorsement.
 '''
  wrappers=[intro]
  for name,title,label in DOCS:

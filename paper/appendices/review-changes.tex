@@ -1,7 +1,12 @@
 \section{Changes following external review}
 \label{app:review-changes}
 This appendix compares the reviewed 15 September version with the
-17 September revision. The baseline PDF is preserved as
+first review revision of 17 September (local commit \artifact{f9e1956}).
+The later reorganization of the paper is recorded at the end of this
+appendix. Quotations and file locations refer to their respective historical
+versions, before that reorganization. The first review revision's PDF is
+preserved as \artifact{paper/versions/kourovka-experiment-2026-09-17-review.pdf}.
+The 15 September baseline PDF is preserved as
 \artifact{paper/versions/kourovka-experiment-2026-09-15.pdf}; its SHA-256 is
 \begin{center}\small
 \nolinkurl{ec9a5482cdfb9ee2b3937fd1980eed6448ab5f954454c9d5287d06aa8a4c3c25}.
@@ -11,7 +16,7 @@ filtered counterpart is \artifact{315e6c4ddf3b67aca8c97506f078cdc98d5413c1}.
 Before/after quotations below are exact source excerpts, typeset with
 this paper's macros. Their file locations are relative to \artifact{paper/};
 section numbers can change when material moves. The structured change
-record and baseline source copies are in
+record and source copies of both versions are in
 \artifact{paper/reviews/revision-2026-09-17/}. A validation script checks
 each quotation against its version. The deadline candidate ledger,
 research artifacts and usage measurements have not been rewritten.
@@ -548,3 +553,32 @@ standalone typesetting comparison. The supplemental symbolic check of
 the 14.72 restriction is an exact algebra check, not a formalisation of
 the geometric proof. None of these checks is a fresh replay of the
 undistributed 20.100 certificate or of all the reviewer's programs.
+
+\subsection{Subsequent editorial reorganization and reviewer credit}
+After the first review revision, the organizers identified the external
+reviewer as Anthropic's Claude Opus[1m], model
+\artifact{claude-opus-5[1m]}, with \texttt{xhigh} reasoning through Claude
+Code. This identification is now credited on the opening page and in
+Section~\ref{sec:external-review}; it is not inserted into the historical
+reports or replies.
+
+The abstract and introduction now summarize both the mathematical results
+and the independent review. A new early section describes Claude's checks,
+the exchange with Codex, and its confirmations and corrections. The
+original instruction is summarized in the account of the research process.
+Detailed configuration, accounting, chronology and study-design material
+are in Appendices~\ref{app:protocol}--\ref{app:evaluation}.
+
+The former mathematical Appendices B--E are now
+Sections~\ref{app:inventory}--\ref{app:prior}. The 42 further candidate
+proofs are grouped by subject, and the opening table points to selected
+results. Their hypotheses, arguments, imported dependencies and historical
+classifications are preserved. The contents lists major sections so that
+technical indexing does not delay the mathematical narrative.
+
+The 18 before/after pairs above remain tied to the actual first review
+revision, rather than being silently replaced by later wording.
+Source copies bind both historical sides; the preserved PDF fixes the
+then-current layout. The subsequent changes to organization and exposition
+are recorded here and in the Git revision, with a second reading pass and
+validation notes in \artifact{paper/reviews/polish-2026-09-17/}.

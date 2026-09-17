@@ -7,11 +7,16 @@ PAPER=Path(__file__).resolve().parents[1]
 REV=PAPER/'reviews/revision-2026-09-17'
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--check',action='store_true');args=ap.parse_args()
- baseline=json.loads((REV/'baseline.json').read_text());changes=json.loads((REV/'changes.json').read_text())
+ baseline=json.loads((REV/'baseline.json').read_text());revised=json.loads((REV/'revised-version.json').read_text());changes=json.loads((REV/'changes.json').read_text())
  out=[r'''\section{Changes following external review}
 \label{app:review-changes}
 This appendix compares the reviewed 15 September version with the
-17 September revision. The baseline PDF is preserved as
+first review revision of 17 September (local commit \artifact{f9e1956}).
+The later reorganization of the paper is recorded at the end of this
+appendix. Quotations and file locations refer to their respective historical
+versions, before that reorganization. The first review revision's PDF is
+preserved as \artifact{paper/versions/kourovka-experiment-2026-09-17-review.pdf}.
+The 15 September baseline PDF is preserved as
 \artifact{paper/versions/kourovka-experiment-2026-09-15.pdf}; its SHA-256 is
 \begin{center}\small
 \nolinkurl{ec9a5482cdfb9ee2b3937fd1980eed6448ab5f954454c9d5287d06aa8a4c3c25}.
@@ -21,14 +26,15 @@ filtered counterpart is \artifact{315e6c4ddf3b67aca8c97506f078cdc98d5413c1}.
 Before/after quotations below are exact source excerpts, typeset with
 this paper's macros. Their file locations are relative to \artifact{paper/};
 section numbers can change when material moves. The structured change
-record and baseline source copies are in
+record and source copies of both versions are in
 \artifact{paper/reviews/revision-2026-09-17/}. A validation script checks
 each quotation against its version. The deadline candidate ledger,
 research artifacts and usage measurements have not been rewritten.
 ''']
  for i,r in enumerate(changes,1):
-  old=REV/'baseline-source'/r['path'];current=PAPER/r['path']
+  old=REV/'baseline-source'/r['path'];current=REV/'revised-source'/r['path']
   assert hashlib.sha256(old.read_bytes()).hexdigest()==baseline['inputs'][r['path']]['sha256'],r['path']
+  assert hashlib.sha256(current.read_bytes()).hexdigest()==revised['source_sha256'][r['path']],r['path']
   assert r['before'] in old.read_text(),('before',r['title']);assert r['after'] in current.read_text(),('after',r['title'])
   out.append('\\subsection{'+tex(r['title'])+'}\n\\noindent\\textbf{Review point.} '+tex(r['issue'])+'.\\par\n\\noindent\\textbf{Location.} \\artifact{'+r['path']+'}.\n')
   out.append('\\paragraph{Original text.}\n\\begin{quote}\\small\n'+r['before']+'\n\\end{quote}\n')
@@ -83,6 +89,7 @@ the 14.72 restriction is an exact algebra check, not a formalisation of
 the geometric proof. None of these checks is a fresh replay of the
 undistributed 20.100 certificate or of all the reviewer's programs.
 ''')
+ out.append((PAPER/'reviews/polish-2026-09-17/editorial-changes.tex').read_text())
  result='\n'.join(out);dest=PAPER/'appendices/review-changes.tex'
  if args.check:assert dest.read_text()==result,'stale change appendix'
  else:dest.write_text(result)
