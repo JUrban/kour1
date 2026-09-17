@@ -1,7 +1,7 @@
 # Completion audit: reader-focused revision, 17 September 2026
 
 Completed on `paper/review-revision`, following the first review revision
-`f9e1956`. Both earlier PDFs remain under `versions/`; the current 127-page
+`f9e1956`. Both earlier PDFs remain under `versions/`; the current 130-page
 PDF is `kourovka-experiment.pdf`. Previous handoff receipts are preserved
 under `polish-2026-09-17/previous-handoff/`.
 
@@ -22,8 +22,9 @@ https://ai4reason.eu/sponsors.html; the separate acknowledgement paragraph
 before the references has been removed.
 Detailed configuration, accounting,
 chronology and study design are in appendices. The bibliography follows the
-main discussion. The four verbatim correspondence documents remain at the
-end, preceded by the historical change record and editorial provenance.
+main discussion. The four verbatim correspondence documents remain together,
+preceded by the historical change record and editorial provenance. The later
+Fable comparison follows them as Appendix M.
 
 The subsequent opening polish removes the requested redundant abstract
 sentence and explicitly states 46 entries or specified subparts, nine
@@ -35,8 +36,8 @@ in `opening-polish-2026-09-17.md`; the inventory still begins on page 4.
 Validation:
 
 - The Tectonic 0.17.0 build passed without TeX/BibTeX warnings, undefined
-  references or overfull boxes. The structure audit binds 72 TeX source
-  files, 114 unique labels, 100 cited works, 46 candidate entries, 24
+  references or overfull boxes. The structure audit binds 73 TeX source
+  files, 115 unique labels, 101 cited works, 46 candidate entries, 24
   original ancillary files and 19 printed carpet derivations.
 - `audit_reader_revision.py` checks all 50 relocated mathematical source
   files against their f9e1956 hashes. The sole permitted textual change
@@ -70,6 +71,19 @@ Validation:
   sentence occurs once, on page 1, attached to Urban's surname. `pdfinfo -url`
   confirms the page-1 annotation targets https://ai4reason.eu/sponsors.html.
   The separate acknowledgement paragraph is absent before the references.
+
+- The parallel-experiment addition cites the Fable paper at an immutable
+  repository snapshot, adds a short introduction mention, and appends a
+  three-page preliminary review (pages 128–130). Its programs independently
+  check 18.46 and the finite 13.19 example, and spot-check seven members of
+  the 2.78 family. The latter construction's threshold improves from 86 to
+  78 by a residue-class argument. The new appendix records the
+  missing nonsolubility hypothesis in a supplementary 2.78 statement,
+  prior-work classification of 13.19/16.60, complementary mathematical
+  progress, reported large searches, and the limits of a score comparison.
+  Its check receipt and source manifest are in
+  `parallel-fable-2026-09-17/`. The new pages and introduction layout were
+  inspected, and the complete build, preservation and portable checks passed.
 
 The existing source checks and exact 14.72 algebra check from the first
 review revision remain under `revision-2026-09-17/`. The public filtered

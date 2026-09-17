@@ -16,6 +16,12 @@ arguments, further proofs grouped by subject, partial results and prior-work
 deductions. Detailed configuration, accounting,
 chronology and reproduction material follow in appendices. The bibliography
 precedes those appendices.
+Appendix M adds a preliminary review and comparison of the parallel
+Claude Fable 5.1 experiment by the same organizers on the same machine and
+local budget. It includes three targeted checks and a small strengthening
+of the Fable construction for 2.78. The pinned sources and reproducible
+review programs are in [reviews/parallel-fable-2026-09-17/](reviews/parallel-fable-2026-09-17/).
+
 The original unfiltered research snapshot is
 `cff2c37b9bf6b737e8ad5f7ead12291a551b5201`; the accessible
 [public filtered snapshot](https://github.com/JUrban/kour1/tree/bbfac1ac810117da37f01716d4594dc2b2e96980)

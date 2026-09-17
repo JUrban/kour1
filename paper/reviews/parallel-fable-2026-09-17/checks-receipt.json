@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-17T17:53:15.447364+00:00",
+  "scope": "Independent targeted programs for 18.46, 13.19, finite 2.78 family examples and a counterexample to the unqualified supplementary 2.78 statement; not a complete review or priority check.",
+  "executions": [
+    {
+      "command": "gap-4.16.1/gap -q -b --quitonbreak paper/reviews/parallel-fable-2026-09-17/checks.g",
+      "exit_code": 0,
+      "output": "checks-output.txt"
+    },
+    {
+      "command": "python3 paper/reviews/parallel-fable-2026-09-17/check_13_19.py",
+      "exit_code": 0,
+      "output": "check-13-19.json"
+    }
+  ],
+  "files": {
+    "checks.g": {
+      "sha256": "a210cfe3605dc7c6f818d0b998706c12e4c6ece74e7ba6d4675f50567c17f9ab",
+      "bytes": 4313
+    },
+    "checks-output.txt": {
+      "sha256": "a385331afad967657fc728a53ae0cd3a104151e992a9b2204f36e539ef976898",
+      "bytes": 1403
+    },
+    "check_13_19.py": {
+      "sha256": "3d7d32d9674490900887caa197b3618d95d4c5a05c479d01df674d4041bbf7a8",
+      "bytes": 3113
+    },
+    "check-13-19.json": {
+      "sha256": "4027f395656ac2e8003a1518cdbab31b398869cc18366799d48403f035896a93",
+      "bytes": 315
+    }
+  },
+  "output_normalization": "GAP output: universal newlines, trailing whitespace removed, leading blank lines omitted."
+}

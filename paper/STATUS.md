@@ -1,6 +1,6 @@
 # Manuscript status
 
-The polished 17 September paper has 127 pages and 100 cited works. It now
+The polished 17 September paper has 130 pages and 101 cited works. It now
 credits Anthropic's Claude Opus[1m] (`claude-opus-5[1m]`, xhigh, Claude Code)
 as the independent mathematical reviewer on the opening page, in the
 abstract, in an early review section and in the contribution statement.
@@ -32,3 +32,16 @@ mathematical scope and navigation. Mathematical-source, structural, portable
 and visual checks passed. The standalone build gives identical PDF text and
 all four ancillary checks pass; see the completion audit. The public filtered snapshot and undistributed large-certificate
 boundary remain documented. No external upload or push is part of this task.
+
+Appendix M (pages 128–130) now reviews the parallel Claude Fable 5.1 run,
+with a short introduction mention. The comparison records the common
+organizers, machine, task and local resource budget, while distinguishing
+model settings, delegation, prior-work status and review coverage. Three
+targeted checks pass: the 18.46 catalogue calculation, the 13.19 finite
+example, and seven instances of the 2.78 family. The same family also
+lowers the reported sufficient threshold from 86 to 78. A missing
+nonsolubility hypothesis in a supplementary 2.78 claim and two minor
+exposition corrections are recorded. The external snapshot is pinned at
+`290fc829d2be01cab8a1784d006bfc0250d7f11c`; the full Fable session and
+large searches have not been re-audited. Small review programs, outputs
+and source hashes are retained under `reviews/parallel-fable-2026-09-17/`.
