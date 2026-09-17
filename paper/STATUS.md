@@ -7,9 +7,12 @@ abstract, in an early review section and in the contribution statement.
 That configuration was supplied by the organizer.
 
 The introduction starts with the Notebook and mathematical outcomes.
-The independent-review account is on page 3 and the representative proofs
-begin on page 6. The inventory, further proofs grouped by subject, partial
-results and prior-work deductions are main-text Sections 5–8. Detailed
+The full inventory is Section 2, beginning on page 4 immediately after the
+introduction. The independent-review account is on page 7 and the
+representative proofs begin on page 9. Proofs, partial results and prior-work
+deductions are main-text Sections 5–8. Kinyon's title-page footnote records
+his research visit to the AI4REASON institute; the acknowledgements credit
+ERC NextReason (Grant Agreement No. 101200949) and the institute's sponsors. Detailed
 configuration, accounting, chronology and study-design material are in
 appendices. The bibliography follows the main mathematical discussion.
 

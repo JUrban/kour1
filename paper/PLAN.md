@@ -118,3 +118,11 @@ the main text; group proofs by subject. Move detailed configuration, usage,
 chronology and evaluation design to appendices. Preserve exact historical
 correspondence and review changes. Reread the reorganized paper for both
 mathematical and AI/TP audiences, validate the sources/PDF and commit.
+
+## Final placement and acknowledgements
+
+Move the full result inventory immediately after the introduction and before
+the mathematical arguments. Add Kinyon's research-visit footnote and the
+organizer-supplied acknowledgement of ERC NextReason (Grant Agreement
+No. 101200949) and the AI4REASON institute's sponsors. Update navigation,
+rebuild the PDF and source bundles, check the layout, and commit.

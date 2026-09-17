@@ -9,9 +9,11 @@ Anthropic's **Claude Opus[1m]** (`claude-opus-5[1m]`, `xhigh`, via Claude Code)
 provided the independent mathematical review. The abstract and early review
 section describe its confirmations, corrections and dialogue with Codex.
 
-The paper now opens with selected mathematical outcomes. Sections 4–8 contain
-the representative proofs, full inventory, further proofs grouped by subject,
-partial results and prior-work deductions. Detailed configuration, accounting,
+The paper opens with selected mathematical outcomes and the full results
+inventory in Section 2, immediately after the introduction. The independent
+review and research accounts precede the proofs in Sections 5–8: representative
+arguments, further proofs grouped by subject, partial results and prior-work
+deductions. Detailed configuration, accounting,
 chronology and reproduction material follow in appendices. The bibliography
 precedes those appendices.
 The original unfiltered research snapshot is
@@ -136,7 +138,9 @@ candidate status.
 
 The title page credits Codex gpt-6-astra (OpenAI), Michael Kinyon
 (University of Denver), and Josef Urban (AI4REASON; University of Gothenburg),
-in the order supplied by the organizers. Kinyon and Urban conceived and
-oversaw the experiment. No arXiv submission, external upload or Git push
+in the order supplied by the organizers. Kinyon's title-page footnote records
+his research visit to the AI4REASON institute. The acknowledgements credit
+ERC NextReason (Grant Agreement No. 101200949) and the institute's sponsors.
+Kinyon and Urban conceived and oversaw the experiment. No arXiv submission, external upload or Git push
 was performed. PLAN.md preserves the requested scope; STATUS.md records
 the handoff state.

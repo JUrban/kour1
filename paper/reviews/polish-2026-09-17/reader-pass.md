@@ -1,5 +1,9 @@
 # Two reader-focused passes, 17 September 2026
 
+This record describes commit `6c8cbb4`. A subsequent final polish moved the
+inventory to Section 2 and added the author footnote and funding acknowledgement;
+the current layout and checks are recorded in `../completion-audit.md`.
+
 Baseline: first external-review revision, local commit f9e1956. The preceding
 PDF and audit receipts are preserved separately. This is an editorial and
 structural revision, not a new mathematical search or new external review.

@@ -11,10 +11,14 @@ via Claude Code). These settings were supplied by the organizer. The early
 account explains the detailed independent checks and the exchange with Codex,
 including confirmations, corrected objections and the 14.72 strengthening.
 
-The introduction foregrounds the mathematical outcomes. The independent
-review account begins on page 3 and the representative proofs on page 6.
-The inventory, further proofs grouped by subject, partials and prior-work
-deductions are in main-text Sections 5–8. Detailed configuration, accounting,
+The introduction foregrounds the mathematical outcomes. In the final polish
+following `6c8cbb4`, the full inventory moved to Section 2, beginning on page 4
+immediately after the introduction. The independent review begins on page 7;
+the representative proofs begin on page 9. Main-text Sections 5–8 contain the
+proofs, partials and prior-work deductions. Kinyon's title-page footnote records
+his AI4REASON research visit. The acknowledgement before the references credits
+ERC NextReason (Grant Agreement No. 101200949) and the institute's sponsors.
+Detailed configuration, accounting,
 chronology and study design are in appendices. The bibliography follows the
 main discussion. The four verbatim correspondence documents remain at the
 end, preceded by the historical change record and editorial provenance.
@@ -41,10 +45,13 @@ Validation:
   coverage, square completion, integer constants and the formerly missing
   G2 monomial certificate. The original proof-input hashes are unchanged.
   No new large-certificate replay or external model review was performed.
-- A second reader-focused pass checked emphasis, repetition, grouping and
-  navigation. Visual inspection covered 41 rendered pages across the
-  document. Details and actual short execution logs are retained under
-  `polish-2026-09-17/`.
+- The preceding second reader-focused pass checked emphasis, repetition,
+  grouping and navigation, with 41 rendered pages inspected. Details and
+  short execution logs for that pass remain under `polish-2026-09-17/`.
+  The final polish inspected pages 1, 3, 4, 6, 7, 9, 79 and 110 for the
+  title-page footnote, reading routes, inventory placement, renumbering,
+  acknowledgement and editorial change record. The inventory source and
+  all mathematical arguments are unchanged from `6c8cbb4`.
 
 The existing source checks and exact 14.72 algebra check from the first
 review revision remain under `revision-2026-09-17/`. The public filtered
