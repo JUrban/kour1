@@ -131,3 +131,7 @@ Shorten the abstract by removing its repeated review/count assessment.
 State the mathematical outcome categories and partial-result count precisely
 in the introduction, and explain the explicit time/resource budget and the
 MPTPChallenge/IMO evaluation analogy without expanding the related-work survey.
+
+Place the funding acknowledgement in a first-page footnote on Urban's surname,
+with the AI4REASON sponsors hyperlinked to https://ai4reason.eu/sponsors.html,
+and remove the separate acknowledgement paragraph.

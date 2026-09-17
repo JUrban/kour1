@@ -11,8 +11,8 @@ The full inventory is Section 2, beginning on page 4 immediately after the
 introduction. The independent-review account is on page 7 and the
 representative proofs begin on page 9. Proofs, partial results and prior-work
 deductions are main-text Sections 5–8. Kinyon's title-page footnote records
-his research visit to the AI4REASON institute; the acknowledgements credit
-ERC NextReason (Grant Agreement No. 101200949) and the institute's sponsors. Detailed
+his research visit to the AI4REASON institute; Urban's title-page footnote credits
+ERC NextReason (Grant Agreement No. 101200949) and hyperlinks the institute's sponsors. Detailed
 configuration, accounting, chronology and study-design material are in
 appendices. The bibliography follows the main mathematical discussion.
 

@@ -139,8 +139,9 @@ candidate status.
 The title page credits Codex gpt-6-astra (OpenAI), Michael Kinyon
 (University of Denver), and Josef Urban (AI4REASON; University of Gothenburg),
 in the order supplied by the organizers. Kinyon's title-page footnote records
-his research visit to the AI4REASON institute. The acknowledgements credit
-ERC NextReason (Grant Agreement No. 101200949) and the institute's sponsors.
+his research visit to the AI4REASON institute. Urban's title-page footnote credits
+ERC NextReason (Grant Agreement No. 101200949) and links to the
+[institute's sponsors](https://ai4reason.eu/sponsors.html).
 Kinyon and Urban conceived and oversaw the experiment. No arXiv submission, external upload or Git push
 was performed. PLAN.md preserves the requested scope; STATUS.md records
 the handoff state.

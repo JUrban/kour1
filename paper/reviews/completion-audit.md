@@ -16,8 +16,10 @@ following `6c8cbb4`, the full inventory moved to Section 2, beginning on page 4
 immediately after the introduction. The independent review begins on page 7;
 the representative proofs begin on page 9. Main-text Sections 5–8 contain the
 proofs, partials and prior-work deductions. Kinyon's title-page footnote records
-his AI4REASON research visit. The acknowledgement before the references credits
-ERC NextReason (Grant Agreement No. 101200949) and the institute's sponsors.
+his AI4REASON research visit. Urban's title-page footnote credits ERC NextReason
+(Grant Agreement No. 101200949) and hyperlinks the institute's sponsors at
+https://ai4reason.eu/sponsors.html; the separate acknowledgement paragraph
+before the references has been removed.
 Detailed configuration, accounting,
 chronology and study design are in appendices. The bibliography follows the
 main discussion. The four verbatim correspondence documents remain at the
@@ -64,6 +66,10 @@ Validation:
   the five bounded-search questions match the manuscript. The new IMO
   reference was checked against the official regulations. Build and bundle
   receipts describe the current PDF and sources.
+- The funding-footnote pass inspected pages 1 and 79. The full funding
+  sentence occurs once, on page 1, attached to Urban's surname. `pdfinfo -url`
+  confirms the page-1 annotation targets https://ai4reason.eu/sponsors.html.
+  The separate acknowledgement paragraph is absent before the references.
 
 The existing source checks and exact 14.72 algebra check from the first
 review revision remain under `revision-2026-09-17/`. The public filtered
