@@ -1,5 +1,7 @@
 # Forty-eight hours with the Kourovka Notebook
 
+[Read the paper (PDF)](kourovka-experiment.pdf).
+
 This is the later manuscript about the experiment frozen at
 cff2c37b9bf6b737e8ad5f7ead12291a551b5201. It contains the experimental
 narrative, all 46 deadline candidate expositions, substantial partial
