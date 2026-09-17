@@ -1,0 +1,65 @@
+--- review.md
++++ review-update1.md
+@@ -2,7 +2,9 @@
+ 
+ Paper: `review-other1/kourovka-experiment.pdf` (Codex gpt-6-astra, M. Kinyon, J. Urban; 15 September 2026; 96 pp.).
+ Scripts and logs written for this report are in `review-other1/checks/`; `review-other1/notes_progress.md` is the
+-working log. No file outside `review-other1/` was created or changed, and no git command was used.
++working log. The first round created no file outside `review-other1/` and ran no git command. A response to
++the authors' reply, with corrections to two items in this report, is in `review2.md`, and that round's
++scripts are in `checks2/`.
+ 
+ ## 1. Summary judgement
+ 
+@@ -14,9 +16,9 @@
+ 
+ The problems I do see are of five kinds, and all but the third concern the framing rather than the algebra:
+ 
+-1. **Literal versus intended readings.** A handful of entries answer the printed sentence in a way that the proposer
+-   almost certainly did not intend, and the paper does not always say so loudly enough (18.92 is the clearest case;
+-   16.28(a), 14.22, 16.20 and 12.40 are milder).
++1. **Convention-sensitive readings.** A few entries turn on a stated convention that the reader must notice to
++   judge the result (18.92 is the clearest case; 14.22 and 16.20 are milder). My first draft also listed 16.28(a)
++   and 12.40 here; both were withdrawn after the authors' reply, see `review2.md`.
+ 2. **Novelty.** The paper is careful to say that priority is unestablished, but at least one flagship result
+    (Theorem 4.1, Problem 21.106) was duplicated publicly, with a Lean 4 proof, within the run window itself.
+ 3. **One hypothesis-reading problem with substance.** In the surface example for Problem 14.72 the fixed locus is a
+@@ -253,11 +255,11 @@
+   correct and takes a page, but it makes a long-standing question of Skiba's trivial, which is strong evidence that
+   the intended object is the lattice of all formations closed under some operation, not an arbitrary family. I would
+   not count this entry without stating that explicitly.
+-- **16.28(a) (C.4).** The construction needs an element of infinite multiplicative order in the field, so it lives
+-  over F5(t) rather than over an algebraically closed field. Under the usual convention that a linear algebraic
+-  group is considered over an algebraically closed field, the question is untouched; over the algebraic closure of
+-  F_p every unit is a root of unity and the trick fails. The paper notes the ingredients used but does not say that
+-  the natural reading is left open.
++- **16.28(a) (C.4). RETRACTED.** I claimed the construction lived over a non-closed field. It does not: the paper
++  sets the field to be the algebraic closure of the rational function field over the field of five elements, and the
++  bar was lost in my text extraction. The field is algebraically closed and its transcendental element still has
++  infinite multiplicative order, so the entry meets the usual convention and my objection was simply wrong. See
++  `review2.md`.
+ - **14.22 (C.5).** The counterexample uses the additive rationals, a coefficient group that is not finitely
+   generated; the cited positive result for free groups is in the finitely generated setting. Again correct as
+   printed, and again a different question from the one the proposers were probably asking.
+@@ -303,8 +305,8 @@
+   (as a subgroup and as a normal subgroup), and the paper covers the variant where T is also not maximal. Such a
+   short refutation of a 1990 problem is a priority risk rather than a mathematical one.
+ 
+-None of these is an error. But a reader counting 46 solved problems should be told that roughly a sixth of them are
+-answers to the letter of a question whose spirit is still open.
++None of these is an error, and after the authors' reply I no longer put a number on the group; see `review2.md`.
++What stands is that a reader counting 46 solved problems should be told which entries turn on a stated convention.
+ 
+ ## 7. Reproducibility and the unprinted certificates
+ 
+@@ -334,8 +336,8 @@
+ - Section 2.5: the phase estimates 846.09 + 64.52, 0.56 and 54.77 + 3.85 add to USD 969.79, not the 969.78 stated.
+   The paper does say estimates are rounded independently, so this is a rounding artefact, but it reads as an error.
+ - Appendix C.4 asserts that part (b) of 16.28 also follows from the same class, and then excludes it as prior work.
+-  Since the paper does count part (a), it should state that (b) holds for the same Y over any field, which is what
+-  its own sentence implies.
++  If that is spelled out, it must be restricted to odd characteristic: in characteristic two the argument that the
++  square omits minus the identity collapses. (My earlier suggestion said "any field" and was wrong.)
+ - C.16 states the four projective covers have dimensions 90, 60, 90, 90 and lists GAP ordinary indices 10, 16, 18,
+   20, 22. Both match the character table library exactly; it would cost one sentence to say which table version was
+   used, since the indices are library-dependent and the paper already warns about this.

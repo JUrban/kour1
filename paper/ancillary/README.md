@@ -12,13 +12,17 @@ From this directory, with standard Python 3 (do not use optimization):
 python3 scripts/verify_19_62_rank_two.py
 python3 scripts/verify_19_61_square_completion.py
 python3 scripts/check_19_62_g2_integer_constants.py
+python3 scripts/verify_19_62_monomial_certificates.py
 ~~~
 
 The first two commands check target coverage, every derivation, and
 deliberate corruptions; the first also checks Weyl coverage and the
 short derivations printed in the paper. The third verifies all G2
 commutator polynomial matrix identities over the integers against
-the retained integral model. They write small verification receipts
+the retained integral model. The fourth verifies the G2 monomial
+certificate (2,712 requests and 62,835 nodes), including its negative
+controls. That 2,194,486-byte file was missing from the first source
+bundles and is included in this revision. They write small verification receipts
 under results/. A2 and B2 use their standard integral Chevalley
 constants; their original GAP model audits remain in the full archive.
 

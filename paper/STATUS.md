@@ -1,28 +1,29 @@
 # Manuscript status
 
-The 15 September revision is typeset at 96 pages with 98 cited works.
-All 46 candidate expositions, the partial and prior-result appendices,
-and the 23 portable original proof files remain mathematically unchanged.
-The baseline mathematical review is recorded in
-reviews/revision-2026-09-15/previous-completion-audit-2026-09-14.md.
+The 17 September external-review revision is typeset at 125 pages, with
+100 cited works, four main examples and 42 further candidate expositions.
+The original 46-entry deadline ledger and usage measurements are unchanged.
 
-The revision incorporates the 36,016-record full JSONL, corroborates
-model/effort, separates research from closeout and manuscript writing,
-and reconciles all 3,829 request records and 84 compactions. The supplied
-$901.42 ccusage row exactly matches full-session usage excluding compactions.
-The flat estimate including them is $969.78; $910.61 is assigned to the
-research window. These are API-equivalent estimates, not provider invoices.
+Problem 14.72 now has a globally principal reduced fixed divisor on an
+invariant affine open, with a singular quotient. This is explicitly a
+post-review strengthening. The inventory has neutral scope/dependency notes;
+15.92 explains the prime choice; 21.106 acknowledges contemporaneous work
+without assigning priority. The 1994 exponential-groups reference, exact
+prime-bound formula, character-table version and rounding explanation are
+included. Section 1.1 remains Motivation, without a related-work survey.
 
-The requested author order and affiliations are included. Kinyon and Urban
-receive conception/oversight credit. Following the user's final editorial
-request, Section 1.1 is titled Motivation and retains only the experimental
-motivation plus one sentence explaining that no comprehensive related-work
-survey is attempted. Earlier source checks remain historical review notes.
+The change appendix precedes the four correspondence documents. Their raw
+originals and the partial-update diff are retained. The old reviewed PDF
+is preserved under versions/ and the current PDF remains at the paper root.
 
-The revision and local handoff are complete. Build, data checks, the
-structure audit, visual review of affected pages, and portable archive
-validation passed. The standalone build produced identical extracted PDF
-text; all three portable certificate checks passed. See
-reviews/completion-audit.md and dist/manifest.json for evidence and hashes. No external
-upload, submission or push is part of this task. Anonymous availability of
-the frozen research snapshot remains unverified.
+Both source bundles include the missing 2.2 MB G2 monomial certificate,
+bringing the original ancillary manifest to 24 files and enabling all four
+documented checks. The 1.27 GB 20.100 certificate is not distributed; the
+paper identifies this limit explicitly. Public filtered and local unfiltered
+commit identifiers are documented separately.
+
+The exact algebra check, structural audit, correspondence/excerpt checks,
+portable archive validation and visual inspection passed. The extracted
+source builds to identical PDF text; all four ancillary checks pass. See
+reviews/completion-audit.md for the final record. This task does not
+include a Git push, submission or external upload.

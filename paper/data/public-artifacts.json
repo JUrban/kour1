@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-09-17",
+  "public_repository": "https://github.com/JUrban/kour1",
+  "filter_reported_by_owner": "--strip-blobs-bigger-than 90M",
+  "local_unfiltered_research_commit": "cff2c37b9bf6b737e8ad5f7ead12291a551b5201",
+  "public_filtered_research_commit": "bbfac1ac810117da37f01716d4594dc2b2e96980",
+  "local_baseline_manuscript_commit": "8a59409",
+  "public_baseline_manuscript_commit": "315e6c4ddf3b67aca8c97506f078cdc98d5413c1",
+  "retained_blobs": 4146,
+  "retained_blob_git_ids_match": true,
+  "comparison_scope": "Final research trees; not an assertion that commit hashes or complete histories are identical.",
+  "omitted_blobs": [
+    {
+      "path": "results/20.100-n7-certificate.g.gz",
+      "sha": "61447abd6e56aa48cf998eaec32d4a0328f81374",
+      "bytes": 1271256410
+    }
+  ],
+  "byte_checked_public_files": [
+    {
+      "path": "research/complete-candidate-ledger.json",
+      "bytes": 54527,
+      "sha256": "cbcf6198b413127bc6b73d3304395af934f1765b2f93d3a054a33601d8c1ea28"
+    },
+    {
+      "path": "reports/FINAL_REPORT.md",
+      "bytes": 20389,
+      "sha256": "0a4c4411134889e8f9ed83dcdefe8342d6e7a4c5d8addade07f54b077a3c3e78"
+    },
+    {
+      "path": "results/19.62-g2-monomial-certificates.jsonl",
+      "bytes": 2194486,
+      "sha256": "29550181fd180ecf906395614398c8500f85d5fed950fa72efc8e0e424abbf68"
+    },
+    {
+      "path": "results/15.92-summary.json",
+      "bytes": 9771,
+      "sha256": "008809ff809a9963d5de356f17877dbb6cae4f1d020b9899dec18677789e08d0"
+    },
+    {
+      "path": "results/20.100-n7-integrity.json",
+      "bytes": 447,
+      "sha256": "60c879d6de13fdb88c7617edb62244e0eb954d107ccb69036c5fb19c69e45840"
+    }
+  ],
+  "baseline_pdf_sha256": "ec9a5482cdfb9ee2b3937fd1980eed6448ab5f954454c9d5287d06aa8a4c3c25",
+  "undistributed_n7": {
+    "path": "results/20.100-n7-certificate.g.gz",
+    "bytes": 1271256410,
+    "sha256": "e1b116fa80a4b77a03256d69480b996318522c227ef48e6be7fdf62cbd8bcd8c"
+  }
+}

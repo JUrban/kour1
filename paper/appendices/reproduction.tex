@@ -1,18 +1,31 @@
 \section{Artifacts and reproduction}
 \label{app:reproduction}
 
-The configured repository address is
-\url{https://github.com/JUrban/kour1}.
-Anonymous access could not be established during manuscript
-preparation: unauthenticated API requests returned HTTP~404.
-A local Git query obtained a remote head different from
-the frozen experimental revision. These observations
-do not establish that either revision is anonymously
-available or that the two histories are equivalent.
-Readers need the frozen archive identified in
-Appendix~\ref{app:protocol} to reproduce repository-based
-measurements. The mathematical exposition in the paper
-does not require executing that archive.
+The public repository is \url{https://github.com/JUrban/kour1}.
+Its research snapshot is
+\begin{center}\small
+\href{https://github.com/JUrban/kour1/tree/bbfac1ac810117da37f01716d4594dc2b2e96980}{\texttt{bbfac1ac810117da37f01716d4594dc2b2e96980}}.
+\end{center}
+The owner filtered the history with
+\artifact{--strip-blobs-bigger-than 90M}. Its commit identifiers therefore
+differ from those of the original unfiltered archive, including
+\snapshot{} in Appendix~\ref{app:protocol}. The unfiltered identifiers
+in the historical timelines are provenance identifiers, not public
+checkout instructions. On 17 September we compared the two final research
+trees: all 4,146 retained file blobs have identical Git object IDs;
+the sole omitted blob at that snapshot is the 1.27\,GB compressed
+\kn{20.100} certificate discussed below. This comparison does not
+assert equivalence of the full histories.
+\artifact{paper/data/public-artifacts.json} records both snapshots,
+the omitted file and byte comparisons of selected public artifacts.
+The public baseline manuscript commit is
+\artifact{315e6c4ddf3b67aca8c97506f078cdc98d5413c1}; its PDF is byte-identical
+to the reviewed version preserved with this revision.
+
+Recomputing Git measurements by the original scripts requires the
+unfiltered history, or an explicit mapping to the rewritten commits.
+The included frozen measurements retain their original identifiers.
+Typesetting and the portable carpet checks require neither history.
 
 The main entry points in the archive are
 \artifact{reports/FINAL_REPORT.md},
@@ -93,6 +106,18 @@ reconstructed by summing the legacy ``Last'' display fields.
 The raw session inputs remain separate from both source bundles.
 Their hashes and sizes identify the evidence for an authorized holder;
 the included projections are not substitutes for the full trace.
+The additional \artifact{extract_retrievals.py} parser exports
+\artifact{retrieval-observations.jsonl}, \artifact{retrieval-urls.csv}
+and \artifact{retrieval-metrics.json}. These index 1,324 completed
+web-tool observations (1,293 during research and 31 during manuscript
+preparation), preserving timestamps, action types, queries and returned
+links. They distinguish a requested page action from a URL appearing
+among search results. Shell downloads are outside this index; neither
+kind of record establishes that a source was used in an argument.
+The exact URL of the contemporaneous 21.106 repository has zero literal
+occurrences in the supplied raw JSONL. That narrow check cannot exclude
+exposure through other URLs, sources or training data, and the derived
+index alone cannot independently establish an absence in the raw trace.
 No internal reasoning, compaction-summary or system/developer
 instruction bodies are included in the derived data. Mathematical
 scripts have different purposes: some generate examples, some check
@@ -100,21 +125,29 @@ certificates, and some summarize existing results. Reproducing a
 summary is not rerunning a proof check. Each result's archive entry
 identifies its commands and the limits of the computation.
 
-Large computations need substantial time and storage.
-In particular, the \(n=7\) certificate for \kn{20.100}
-is distinct from smaller diagnostic and intermediate
-files. The retained report and manifest specify the
-complete input and all completed checker shards.
-The manuscript's review does not silently replace that
-historical verification with a fresh abbreviated run.
+The \(n=7\) certificate for \kn{20.100},
+\artifact{results/20.100-n7-certificate.g.gz}, is not distributed in the
+filtered public repository or either paper source bundle. Its compressed
+size is 1,271,256,410 bytes and its SHA-256 digest is
+\begin{center}\small
+\nolinkurl{e1b116fa80a4b77a03256d69480b996318522c227ef48e6be7fdf62cbd8bcd8c}.
+\end{center}
+The public archive retains the checker, generator and shard-verifier
+logs, and final report. They document the historical verification;
+without the certificate they do not permit a fresh complete replay.
+The early \artifact{20.100-n7-integrity.json} receipt predates completion
+of verification and must not be read as the final status.
+No separate large-file deposit or new \(n=7\) verification is claimed.
+A later deposit could supply this missing input without rewriting the
+research record.
 
 The portable source includes the complete integer derivations for
 Problems~19.61--19.62, their target-coverage checkers, and the integral
 \(G_2\) matrix-identity check. In the arXiv source archive these are
 under \artifact{anc/}; in the full manuscript project they are under
-\artifact{ancillary/}. Their README gives three standard-Python
+\artifact{ancillary/}. Their README gives four standard-Python
 commands, which require neither GAP nor network access. A manifest
-binds the 23 original files to their byte-identical research versions.
+binds the 24 original files to their byte-identical research versions.
 The 19 short representative derivations are also printed above.
 
 The main file is \artifact{main.tex}. The source archives include

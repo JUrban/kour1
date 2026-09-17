@@ -79,7 +79,7 @@ def main():
         assert portable_text == source_text, "portable PDF text differs"
         info = subprocess.check_output(["pdfinfo", str(arxiv / "main.pdf")], text=True)
         for script in ["verify_19_62_rank_two.py", "verify_19_61_square_completion.py",
-                       "check_19_62_g2_integer_constants.py"]:
+                       "check_19_62_g2_integer_constants.py", "verify_19_62_monomial_certificates.py"]:
             run([sys.executable, "scripts/" + script], arxiv / "anc",
                 "portable-" + script.removesuffix(".py") + ".log")
         # Checkers may write receipts but must preserve all original proof files.
@@ -89,11 +89,11 @@ def main():
         # Bind this replay to the mathematical inputs, not to changing review notes.
         core_hashes = {n: r["sha256"] for n, r in arxiv_manifest.items()
                        if n.endswith((".tex", ".bib", ".bbl")) or
-                       n == "figures/trajectory.pdf"}
+                       n == "figures/trajectory.pdf" or n.startswith("external-reviews/")}
         result = {
             "status": "PASS",
             "checked_utc": datetime.now(timezone.utc).isoformat(),
-            "scope": "Both archives extracted outside the repository; manifests checked; standalone cached TeX build; PDF text equality; portable inventory regeneration; all three ancillary proof checks.",
+            "scope": "Both archives extracted outside the repository; manifests checked; standalone cached TeX build; PDF text equality; portable inventory regeneration; all four ancillary proof checks.",
             "arxiv_members_checked": len(arxiv_manifest),
             "full_members_checked": len(full_manifest),
             "pages": int(re.search(r"Pages:\s+(\d+)", info)[1]),
@@ -106,7 +106,7 @@ def main():
         json.dumps(result, indent=2) + "\n")
     print(json.dumps({k: v for k, v in result.items()
                       if k not in {"tex_input_sha256", "commands"}}, indent=2))
-    print("All five execution commands exited zero.")
+    print("All six execution commands exited zero.")
 
 
 if __name__ == "__main__":

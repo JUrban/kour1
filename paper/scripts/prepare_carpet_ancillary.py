@@ -29,6 +29,7 @@ def main():
         for suffix in ["input.json", "certificate.jsonl"]:
             paths.append(Path(f"results/19.61-{kind}-square-completion-{suffix}"))
     paths.append(Path("results/19.61-g2-integral.grows"))
+    paths.append(Path("results/19.62-g2-monomial-certificates.jsonl"))
     manifest = []
     for path in paths:
         destination = ANC / path

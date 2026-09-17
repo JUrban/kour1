@@ -1,112 +1,66 @@
-# Manuscript revision audit — 15 September 2026
+# Completion audit: external-review revision, 17 September 2026
 
-The audit below records the earlier revision. The final editorial follow-up
-is recorded at the end; it supersedes the related-work description, cited-work
-count and PDF digest below.
+Completed on `paper/review-revision`, branched from local manuscript commit
+`8a59409`. The reviewed PDF remains at
+`versions/kourovka-experiment-2026-09-15.pdf`; the current PDF is
+`kourovka-experiment.pdf`. Previous handoff receipts are preserved under
+`revision-2026-09-17/previous-handoff/`.
 
-The revision incorporates the full JSONL, reconciles the supplied ccusage
-row, supplies the requested author order and roles, and shortens the related
-work following the user's further direction. The manuscript is 96 pages
-with 105 cited works. No mathematical exposition was changed in this
-revision. The original two-pass mathematical review and its limits remain
-in revision-2026-09-15/previous-completion-audit-2026-09-14.md; its build,
-structure and portable receipts are preserved alongside that record.
+The revised paper has 125 pages, 100 cited works, all 46 historical candidate
+expositions (four main examples and 42 further expositions), a change
+appendix and four verbatim correspondence appendices. The 18 exact
+before/after pairs are checked against baseline sources whose hashes bind
+them to the reviewed version. Withdrawn objections and retained scope are
+listed separately. The raw original report, first reply, follow-up and
+partial update remain byte-identical to the supplied versions. Pandoc
+conversion preserves their word streams; inline-code spaces are retained.
 
-## Revision coverage
+The mathematical strengthening is the globally principal reduced fixed
+divisor in 14.72 after localization at x^2+1. Its explicit proof is in the
+paper. `check_14_72_principal.py` passed exact Groebner and polynomial
+checks over Q(i), including the fixed ideal, invariance of the localization
+and survival of the quotient node. This supplements the geometric proof.
+The 16.28 and 19.56 proof source files are unchanged, as are the frozen
+candidate ledger and all prior usage/accounting outputs.
 
-| Request | Delivered evidence |
-|---|---|
-| Use full JSONL | Sections 2–3 and Appendices A/G; new analyzer and six derived data files. The source has 36,016 records; exact size and digest are retained. |
-| Explain usage and cost | Section 2.5 and two tables; all 3,829 request records, 84 compaction identifiers and 3,616 old HTML token observations reconcile. The user-supplied row is preserved separately. |
-| Separate experimental scope | Research, closeout and manuscript phases use recorded timestamps. A delayed notification crossing the deadline is documented. |
-| Improve workflow account | Observed configuration, task starts/completions, compactions, command/polling and web activity, dated proof/checking landmarks, and a three-panel chronology figure. |
-| Author list and conception | Codex gpt-6-astra (OpenAI), Michael Kinyon (University of Denver), Josef Urban (AI4REASON; University of Gothenburg), in that order. Title, PDF metadata, structured metadata and contribution paragraph agree. Kinyon/Urban conceived and oversaw the experiment. |
-| Motivation and academic credit | Two brief related-work paragraphs connect the budget to MPTPChallenge/MaLARea and mention TacticToe, DreamCoder and Alien Coding alongside later systems. The extended history and additional citations were removed at the user's request. Primary-source reading is documented separately, including all specifically requested CASC/GRUNGE sources. |
-| Preserve mathematics | The representative arguments, 46-candidate inventory/expositions, partials, prior-result appendices and all ancillary original files are unchanged against baseline commit faa320e. |
+Validation completed:
 
-## Usage result and limits
+- Tectonic 0.17.0 build: exit zero, no undefined references, duplicate labels,
+  overfull boxes or TeX/BibTeX warnings. The structure audit binds the PDF
+  and 69 TeX source files, with 104 unique labels and 24 original ancillary
+  files. `build-receipt.json` identifies every typesetting input, including
+  the correspondence sources and manifest.
+- Both archives extracted outside the checkout; all member manifests
+  matched. Inventory regeneration was byte-identical. The cached standalone
+  TeX build produced identical extracted PDF text. The full bundle's
+  before/after validation also passed outside Git.
+- All four ancillary commands passed from the extracted arXiv source:
+  rank-two coverage (104 targets), square completion (300 targets), the
+  G2 integer constants (120 matrix identities, 156 rule entries), and the
+  formerly missing G2 monomial input (2,712 requests, 62,835 nodes).
+  Negative/corruption controls included in the checkers passed. All
+  original input hashes remained unchanged after execution.
+- GAP 4.16.1 / CTblLib 1.3.11 character-table input check passed.
+- The retrieval parser regenerated identical outputs from the identified
+  540,278,152-byte JSONL: 1,324 structured web observations. It exports
+  no reasoning, compaction, system/developer or shell-command bodies.
+- Visual inspection covered 42 rendered pages: title and contents; main
+  example/discussion pages; the inventory; 14.72; reproduction; the entire
+  change appendix and correspondence; and the end of the bibliography.
+  Long code fragments, hashes, table columns and the new equations fit.
+- Python syntax checks and `git diff --check` passed.
 
-The supplied $901.42 is reproduced exactly, to the cent, using its full
-session counter scope. It includes manuscript preparation and excludes
-separately logged compaction requests. Including those requests yields a
-flat API-equivalent estimate of $969.78, of which $910.61 is assigned to
-the 48-hour research interval. These estimates are not provider invoices.
-Reasoning output is already included in output; cached input is a subset
-of the renderer's input counter but a separate column in the supplied row.
+The public filtered research snapshot and original unfiltered one share
+all 4,146 retained blob IDs. Selected public files and the baseline PDF
+were byte-compared. The sole omitted research blob at that snapshot is
+the 1,271,256,410-byte 20.100 certificate. Neither this revision nor the
+public logs supply a full independent replay of it. No large-file deposit
+was made, and the entire reviewer script collection was not rerun.
 
-The full trace corroborates the model and reasoning effort in 139 turn
-contexts. It does not establish remote hardware, actual peak local memory,
-all historical sampling settings or oversight outside the interaction.
-Completed tool observations are not independent experiments. Derived
-public data omit internal reasoning and system/developer instruction bodies;
-the raw session remains outside both source packages.
-
-## Checks actually completed
-
-- `python3 paper/scripts/analyze_experiment.py --check`: passed against
-  the frozen Git history and HTML/text projections; all five outputs agree.
-- `python3 paper/scripts/analyze_rollout.py --check`: passed all timestamp,
-  identifier, running-counter, phase, compaction, old-HTML and supplied-row
-  assertions; all six outputs agree. A compact receipt is in the revision
-  directory, with the detailed accounting explanation.
-- `python3 paper/scripts/build_paper.py --require-complete`: Tectonic 0.17.0,
-  exit zero, 96 pages and 632,253 bytes. No undefined references,
-  bibliography warnings, duplicate labels or overfull boxes.
-- `python3 paper/scripts/audit_manuscript.py`: passed source/PDF binding,
-  46 expositions, 63 TeX files, 79 labels, 105 cited bibliography entries,
-  23 original ancillary files and 19 printed carpet derivations.
-- `python3 paper/scripts/validate_source_bundle.py`: both archives
-  extracted outside /project; manifests passed; portable inventory
-  regenerated unchanged; a cache-only standalone TeX build produced
-  identical extracted PDF text. All five execution commands exited zero.
-- Fresh checks in the extracted archive passed all 104 rank-two targets,
-  all 300 square-adjoining targets, the deliberate-corruption controls,
-  and all 120 G2 integer polynomial identities. Original proof file
-  hashes remained intact. These checks do not re-run the large historical
-  research computations.
-- `git diff --check`: passed. Only paper/ is included in this revision.
-
-The final PDF SHA-256 is
-171a68d941d6c579c3b359e33c7d9e7d1211a7ca2a65bd7854b54d04e465d7f8.
-
-## Visual and source review
-
-Inspected rendered pages 1–12, 15–19 and 88–96, covering the title,
-contents, shortened introduction, methods, both usage tables, chronology,
-discussion, protocol, inventory boundary, reproduction and bibliography.
-The figure's long vertical labels were shortened after an initial preview
-showed them touching. The final figure has clear separation. A page-break
-adjustment keeps the administrative commit's introductory sentence and
-hash together; pages 17–19 were rechecked afterward. No clipping,
-overlapping text or missing content was found on the inspected pages.
-The unchanged mathematical sections retain their prior reading audit;
-this is not a claim to have performed a third full mathematical review.
-
-The final package adds current review notes after the portable replay.
-Its TeX inputs, figure and ancillary originals are bound to that replay;
-the final handoff manifests are checked separately without repeating
-unchanged mathematical computations.
-
-No outside mathematical review or priority determination is claimed.
-Anonymous access to the exact frozen research snapshot remains unverified.
-There was no submission, upload, external message or Git push. User-supplied
-raw session files, the root PDF and unrelated research files are preserved.
-
-## Final editorial follow-up: motivation only
-
-At the user's request Section 1.1 is now titled Motivation. The paragraph
-listing related systems was removed completely. The retained motivation
-ends with one sentence explaining that the breadth and rapid development
-of learning-guided proving and LLM-based AI for mathematics preclude a
-comprehensive related-work survey here. The seven citations used only in
-the removed paragraph no longer appear in the typeset bibliography.
-
-The rebuilt PDF has 96 pages and 98 cited works. The existing bibliography
-database retains unused entries, which BibTeX omits from the paper.
-Build and structural checks passed without warnings or overfull boxes;
-page 4 was visually checked. Both rebuilt source archives passed standalone
-validation, with identical extracted PDF text and all portable checks
-passing. Mathematical and session-analysis inputs were unchanged.
-
-Current PDF SHA-256:
-ec9a5482cdfb9ee2b3937fd1980eed6448ab5f954454c9d5287d06aa8a4c3c25
+Machine-readable receipts are adjacent to this audit; revision-specific
+source checks, actual short execution outputs, artifact provenance and
+baseline bindings are under `revision-2026-09-17/`. Portable validation
+binds the mathematical/typesetting inputs rather than recursively hashing
+its own later documentation. Final archive manifests include the completed
+receipts and are checked again after packaging. No submission, upload or
+Git push is part of this handoff.

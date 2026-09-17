@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "coefficient_field": "Q(i)",
+  "fixed_ideal_groebner_basis": [
+    "x",
+    "y",
+    "u",
+    "t - 1"
+  ],
+  "checks": [
+    "ideal (f) equals (x,y,u) in the localized coordinate ring",
+    "fixed quotient is Q(i)[v]",
+    "factorization and unit inverse",
+    "surface relations and localization preserved by sigma",
+    "quotient point (1,0,0) survives and has zero gradient"
+  ],
+  "scope": "Supplemental exact algebra; the geometric proof and invariant-ring completeness remain in the manuscript."
+}

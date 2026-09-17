@@ -1,0 +1,124 @@
+\subsection{15.92: continuum many alternating-residual triangle quotients}
+\label{cand:15.92}
+For every \(r>6\), the triangle group
+\[
+ \Gamma_r=\langle x,y\mid x^2=y^3=(xy)^r=1\rangle
+\]
+has continuum many pairwise nonisomorphic infinite quotients in which
+every nonidentity element survives an epimorphism onto a finite
+alternating group. The proof combines Conder's finite permutation
+constructions with the following separating-kernel argument.
+
+\begin{lemma}
+Suppose a finitely generated group \(\Gamma\) has epimorphisms
+\(\theta_i:\Gamma\to A_{n_i}\), with \(n_i\to\infty\), and one
+element \(v\) whose image is always nontrivial and moves at most
+a fixed number \(S\) of points. Then \(\Gamma\) has continuum many
+pairwise nonisomorphic infinite alternating-residual quotients.
+\end{lemma}
+\begin{proof}
+By diagonal subsequence selection, arrange that each element of the
+countable group \(\Gamma\) is eventually always trivial or eventually
+always nontrivial under \(\theta_i\).
+The eventually trivial elements form a normal subgroup \(R\);
+let \(G=\Gamma/R\), with \(1\ne\bar v\in G\).
+The action on a nonprincipal ultraproduct of the underlying finite
+sets is faithful: a word eventually nontrivial has a sequence of
+moved points. The support of \(\bar v\) has at most \(S\) elements,
+since \(S+1\) distinct moved ultraproduct points would contradict the
+coordinate support bound on an ultrafilter-large set.
+
+Let \(N=\langle\bar v^G\rangle\). On the union \(\Omega_*\) of all
+translates of \(\operatorname{supp}(\bar v)\), the group \(N\) acts
+faithfully by finitary permutations. There are at most \(S\) \(G\)-orbits.
+Because \(N\trianglelefteq G\), its orbits within each \(G\)-orbit have
+equal size. Thus a finite \(M\) bounds all finite \(N\)-orbit sizes.
+Let \(\eta\) be the action of \(N\) on the union of its finite orbits,
+and put \(L=\ker\eta\). The exponent of \(\eta(N)\) divides \(M!\).
+
+Suppose \(\phi:G\to A_m\) is onto, \(m\ge5\), and
+\(\phi(\bar v)\ne1\). Then \(\phi(N)=A_m\).
+Set \(H=\ker(\phi|_N)\), a finite-index normal subgroup of \(N\).
+Every \(H\)-orbit inside an infinite \(N\)-orbit is infinite, since
+the latter is a finite union of translates of the former.
+For \(x\in L\) and \(y\in N\), there is \(h\in H\) moving
+\(\operatorname{supp}(x)\) disjoint from \(\operatorname{supp}(y)\).
+Indeed \(H\) is locally finite as a finitary permutation group.
+For finite sets \(A=\operatorname{supp}(x)\), \(B=\operatorname{supp}(y)\),
+choose finitely many elements of \(H\) so that the finite subgroup
+they generate has every orbit of \(a\in A\) larger than \(|A||B|\).
+A uniform element of this finite subgroup avoids all equalities
+\(h(a)=b\) by the union bound. Empty supports are immediate.
+Thus \(hxh^{-1}\) commutes with \(y\), and \(\phi(h)=1\) gives
+\(\phi(x)\in Z(\phi(N))=1\).
+Therefore \(A_m\) is a quotient of \(\eta(N)\), of exponent dividing
+\(M!\). For \(m\) at least an odd prime greater than \(M\), this is
+impossible because \(A_m\) contains a cycle of that prime length.
+All sufficiently large alternating quotients of \(G\) consequently
+kill \(\bar v\).
+
+For sufficiently large \(i\), \(\theta_i\) cannot factor through \(G\).
+Hence \(\theta_i(R)\ne1\), and normality and simplicity give
+\(\theta_i(R)=A_{n_i}\).
+Inductively select indices \(i_j\) and elements \(r_j\in R\) so that
+\[
+ \theta_{i_k}(r_j)\ne1\quad\Longleftrightarrow\quad k=j.
+\]
+At step \(j\), choose \(i_j\) beyond the cutoffs for all preceding
+\(r_k\), with
+\(|A_{n_{i_j}}|>\prod_{k<j}|A_{n_{i_k}}|\).
+The subgroup
+\(L_j=R\cap\bigcap_{k<j}\ker\theta_{i_k}\) has index in \(R\)
+at most this product, so it cannot be killed by the surjection
+\(\theta_{i_j}|_R\). Choose \(r_j\in L_j\) with nontrivial image.
+Since \(r_j\in R\), all sufficiently late maps kill it, supplying
+the next cutoff.
+
+For each infinite \(I\subseteq\mathbb N\), put
+\(K_I=\bigcap_{j\in I}\ker\theta_{i_j}\).
+The witnesses give \(r_j\notin K_I\) exactly when \(j\in I\);
+hence there are continuum many different kernels.
+Each quotient embeds in the corresponding product of alternating
+groups with onto coordinates, and is infinite because their orders
+are unbounded. For each fixed countable quotient isomorphism type,
+there are only countably many epimorphisms from a finitely generated
+\(\Gamma\), as images of a finite generating tuple determine a map.
+The continuum many kernels therefore give continuum many types.
+\end{proof}
+
+We specify the finite input, which is stronger than mere existence
+of alternating quotients.
+Write \(r=h+6d\), \(h\in\{7,8,9,10,11,12\}\), \(d\ge0\), and choose
+\[
+ p=\begin{cases}11&h=7,8,11,\\13&h=9,10,12.\end{cases}
+\]
+Conder's thesis \cite[Chapter~5, pp.~117--120]{conder-thesis}
+constructs arbitrarily large actions of the extended triangle group
+with generators \(x_n,y_n,t_n\) satisfying
+\[
+ x_n^2=y_n^3=(x_ny_n)^r=t_n^2=(x_nt_n)^2=(y_nt_n)^2=1.
+\]
+The parity choice makes \(\langle x_n,y_n\rangle=A_n\), including
+when \(r\) is even. In these same actions \(w_n=x_ny_nt_n\) has
+one \(p\)-cycle, no other cycle length divisible by \(p\), and all
+cycle lengths divide \(720720=2^4\,3^2\,5\,7\,11\,13\).
+These cycle and parity facts are read from the construction,
+not inferred from its headline generation theorem.
+
+The relations give \(w_n^2=x_ny_nx_ny_n^{-1}\).
+The even integer \(E=720720/p\) is coprime to \(p\) and divisible
+by every other occurring cycle length, so \(w_n^E\) is a single
+nontrivial \(p\)-cycle. Thus the one fixed word
+\[
+ v_r=(xyxy^{-1})^{32760}\quad(p=11),\qquad
+ v_r=(xyxy^{-1})^{27720}\quad(p=13)
+\]
+has nontrivial support at most \(13\) in all the selected alternating
+images of the ordinary triangle group.
+The lemma proves the result.
+The presentation printed in the Notebook omits the final \(=1\);
+that literal group also surjects onto \(\Gamma_r\), so the same
+quotients answer it.
+See \artifact{research/15.92-proof.md} and its source-data controls.
+Neither residual alternatingness of \(\Gamma_r\) itself under the
+chosen family nor independence of arbitrary quotient kernels is assumed.

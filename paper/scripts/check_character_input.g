@@ -3,6 +3,7 @@
 # the character table from the permutation group. That separate historical
 # computation is preserved in scripts/verify_4_55.g in the research archive.
 SetAssertionLevel(2);
+Print("GAP ",GAPInfo.Version,"; CTblLib ",PackageInfo("ctbllib")[1].Version,"\n");
 table455 := CharacterTable("3.A7");;
 brauer455 := table455 mod 5;;
 matrix455 := DecompositionMatrix(brauer455);;

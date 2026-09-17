@@ -1,0 +1,185 @@
+\hypertarget{review2-md-response-to-the-authors-reply}{%
+\subsection*{Response to the authors\textquotesingle{}
+reply}\label{review2-md-response-to-the-authors-reply}}
+
+17 September 2026. This responds to \nolinkurl{review1-reply/reply.md},
+records corrections to my first report, and reports a second round of
+checking made possible by the material the authors supplied and by the
+now-public repository \nolinkurl{github.com/JUrban/kour1}. Scripts and
+logs for this round are in \nolinkurl{review-other1/checks2/}; the first
+round is in \nolinkurl{review-other1/checks/} and
+\nolinkurl{review-other1/review.md}.
+
+\hypertarget{review2-md-corrections-to-my-report}{%
+\subsubsection*{1. Corrections to my
+report}\label{review2-md-corrections-to-my-report}}
+
+\textbf{Problem 16.28(a): my objection was wrong, and I withdraw it.}
+The authors are right. Section C.4 sets K equal to the algebraic closure
+of the rational function field in one variable over the field of five
+elements, and I rendered a page image to confirm the bar is there. My
+text extraction dropped it, and I built a criticism on the result
+without checking the typeset page. That field is algebraically closed,
+so the example meets the usual convention for a connected reductive
+algebraic group, and its transcendental element still has infinite
+multiplicative order, which is all the argument needs. Nothing in the
+entry depends on a non-closed field. Please delete that bullet from
+Section 6 of my report; I have marked it retracted there.
+
+A second error of mine follows from the same place. In Section 8 I
+suggested the paper should say that part (b) holds for the same
+conjugacy class over any field. The authors\textquotesingle{}
+qualification is correct: in characteristic two the step that the square
+omits minus the identity collapses, since minus the identity is the
+identity and the trace condition no longer separates. The suggestion
+should read "over any field of odd characteristic", if it is made at
+all.
+
+\textbf{The count of convention-sensitive entries.} I withdraw the
+figure of roughly seven entries, and with it the phrase about readings
+the proposer probably did not intend. Two of my examples do not survive:
+16.28 for the reason above, and 12.40, where showing that no
+finite-valued bound of the requested shape exists is a direct negative
+answer to the printed request, as the authors say. What I should have
+written is narrower and I still hold it. Three entries turn on a stated
+convention that a reader must notice to judge the result: 18.92 on the
+printed definition of a complete lattice of formations, 14.22 on the
+coefficient group not being finitely generated, and 16.20 on whether the
+ambient group must lie in the quasivariety whose dominions are taken.
+Naming the convention in the entry is enough; speculating about intent
+was not my business.
+
+\textbf{Proof length.} I accept the point. A short proof, or a
+formalisation completed quickly by others, says nothing about how hard
+the question was or whether it was misread. My recommendation should be
+read only as asking that the reader be told which entries are short,
+because a bare count of 46 invites the opposite assumption.
+
+\textbf{Problem 21.106.} I adopt the authors\textquotesingle{}
+formulation. The artifact record shows their proof file committed on 10
+September at 21:05:23 UTC and the Lean files pushed on 11 September at
+10:54:21 UTC, and artifact times are not discovery times. My report
+should not have said the agent was first, only that this is the recorded
+order. I also cannot check their statement that the repository URL is
+absent from the session record: no session log is public. The
+repository\textquotesingle s \nolinkurl{state/session.json} is 155 bytes
+and no rollout file appears anywhere in the tree.
+
+\hypertarget{review2-md-where-i-hold-the-position-with-one-refinement}{%
+\subsubsection*{2. Where I hold the position, with one
+refinement}\label{review2-md-where-i-hold-the-position-with-one-refinement}}
+
+\textbf{Problem 14.72.} We agree on the mathematics and the authors have
+sharpened it. Their observation is the right one: the function x
+vanishes on the fixed locus to order two, so it cuts out twice the fixed
+divisor, not its reduced scheme. In divisor-class terms the class of the
+reduced fixed divisor is a nonzero two-torsion class, which is exactly
+why twice it is principal while it is not. So the entry establishes the
+smooth Cartier-divisor reading and leaves the globally principal reading
+open, and the distinction between a set-theoretic equation, a
+scheme-theoretic equation for twice the divisor, and a global equation
+for the reduced divisor is worth one sentence in the paper. The repair I
+suggested still looks available: deleting a suitable orbit of
+four-torsion fibres kills the class while keeping both the fixed divisor
+and the singular quotient point.
+
+\textbf{The remaining archive gap is small and concrete.} Three of the
+four ancillary scripts run and pass here, and those three are the ones
+the README documents. The fourth,
+\nolinkurl{verify_19_62_monomial_certificates.py}, aborts immediately
+because \nolinkurl{results/19.62-g2-monomial-certificates.jsonl} is not
+in the bundle. It is absent from the supplied directory, from the thirty
+entries under \nolinkurl{anc/} in the arXiv tarball, and from the
+twenty-eight entries under \nolinkurl{ancillary/} in the full-source
+zip; neither archive contains any file whose name matches
+"monomial-certificates". Either ship the data or drop the script.
+
+\textbf{Problem 20.100.} Unchanged, and I read the authors as agreeing.
+The public repository holds 88 files for this problem totalling 7.5
+megabytes. The n = 7 certificate is not among them; the largest file is
+the n = 6 certificate at 6.4 megabytes. What is public is the generator
+log, which records the certificate\textquotesingle s digest, and the
+shard verifier logs, which record their PASS lines. The claim is
+therefore documented but not independently checkable, which is what the
+paper already says.
+
+\textbf{Problem 15.92.} I downgrade my flag rather than withdraw it. The
+data is now inspectable, and I checked it. See the next section: the
+choice of prime is forced by the transcribed cycle structures, not
+arbitrary. What the paper should add is one clause saying so, because as
+printed the assignment of 11 or 13 to residue classes looks like an
+unexplained stipulation.
+
+\hypertarget{review2-md-second-round-of-verification}{%
+\subsubsection*{3. Second round of
+verification}\label{review2-md-second-round-of-verification}}
+
+Everything below is new since my first report.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{The carpet certificates now check out from the supplied bundle
+  as well as from my own re-derivation.} The three documented commands
+  pass: rank-two certificates for the three rank-two types with 6, 20
+  and 78 targets; square-completion certificates with 12, 48 and 240
+  targets and 72, 380 and 2,739 nodes; and the integer-constant check
+  reporting 156 rule entries for the exceptional rank-two type. Every
+  one of those counts agrees with what I computed independently in the
+  first round, including the 156 rule entries, which I had obtained from
+  a Chevalley basis without seeing their table.
+\item
+  \textbf{Problem 21.114 is now verified.} Working from the
+  archive\textquotesingle s own permutation models, GAP confirms both
+  retained models have order 512 with derived series orders 512, 32, 2,
+  1, centre cyclic of order four with a unique cyclic central subgroup
+  of that order, quotient of order 128 whose abelianisation has order
+  16, that quotient weakly ab-maximal, and derived length three. These
+  were the numbers I could not check from the paper.
+\item
+  \textbf{Problem 15.92 is largely resolved.} The
+  archive\textquotesingle s two replay scripts run here: the cycle
+  controls finish with their sentinel over 150 rows, and the diagram
+  reconstruction completes under GAP with exit code zero. I then checked
+  their receipt myself: in all 150 rows the chosen prime occurs exactly
+  once as a cycle length, no other cycle length is divisible by it,
+  every length divides 720720, and dividing that number by the prime
+  kills every other cycle. The prime is 11 exactly for the residue
+  classes 7, 8, 11 and 13 exactly for 9, 10, 12. The thesis itself is in
+  the archive with its page images, and its digest matches the receipt.
+\item
+  \textbf{The ledger matches the paper.} The frozen ledger records 46
+  candidates, zero outside reviews, priority unestablished on every
+  entry, and the same problems in the same order as Appendix B.
+\item
+  \textbf{The handoff is internally consistent.} The two archives and
+  the PDF match the supplied manifest and validation digests, and the
+  PDF I reviewed is the one they validated.
+\end{itemize}
+
+\hypertarget{review2-md-on-the-authors-requests}{%
+\subsubsection*{4. On the authors\textquotesingle{}
+requests}\label{review2-md-on-the-authors-requests}}
+
+The external checks are already committed. They are on branch
+\nolinkurl{review/kourovka-other1}, commit \nolinkurl{2b5bfe4}, in
+\nolinkurl{review-other1/checks/} with
+\nolinkurl{review-other1/notes_progress.md}; this round adds
+\nolinkurl{review-other1/checks2/}. Each log names the entry it belongs
+to, and the index at the end of the working notes maps logs to entries.
+I agree these are later external checks and not part of the deadline
+record, and that they do not change the historical statement that there
+were no outside reviews at the deadline.
+
+\hypertarget{review2-md-revised-judgement}{%
+\subsubsection*{5. Revised
+judgement}\label{review2-md-revised-judgement}}
+
+Unchanged in direction and slightly stronger. Accept after revision. The
+mathematical picture is better than at my first pass: three items I had
+recorded as unverifiable are now verified, one criticism of mine was
+wrong and is withdrawn, and the remaining defects are editorial. The
+revisions I would still ask for are the convention fields in the ledger,
+the one missing certificate file, the clause explaining the choice of
+prime in 15.92, the reduced versus non-reduced distinction in 14.72, and
+the acknowledgement of the contemporaneous work on 21.106.

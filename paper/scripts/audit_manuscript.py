@@ -59,7 +59,7 @@ def main():
 
     ancillary = PAPER / "ancillary"
     manifest = json.loads((ancillary / "manifest.json").read_text())
-    assert len(manifest["files"]) == 23
+    assert len(manifest["files"]) == 24
     for row in manifest["files"]:
         path = ancillary / row["path"]
         assert path.stat().st_size == row["bytes"] and sha(path) == row["sha256"]
@@ -72,10 +72,10 @@ def main():
         "candidate_entries": 46, "tex_files": len(paths),
         "labels": len(labels), "cited_works": len(cites),
         "bibliography_entries": len(bibkeys),
-        "ancillary_original_files": 23, "printed_carpet_derivations": 19,
+        "ancillary_original_files": 24, "printed_carpet_derivations": 19,
         "pages": int(re.search(r"Pages:\s+(\d+)", info)[1]),
         "pdf_sha256": receipt["pdf_sha256"],
-        "pending_publication_metadata": ["public frozen-repository access"],
+        "undistributed_large_artifacts": ["20.100-n7-certificate.g.gz"],
     }
     (PAPER / "reviews/structure-audit.json").write_text(
         json.dumps(result, indent=2) + "\n")

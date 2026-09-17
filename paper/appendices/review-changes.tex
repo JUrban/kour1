@@ -1,0 +1,550 @@
+\section{Changes following external review}
+\label{app:review-changes}
+This appendix compares the reviewed 15 September version with the
+17 September revision. The baseline PDF is preserved as
+\artifact{paper/versions/kourovka-experiment-2026-09-15.pdf}; its SHA-256 is
+\begin{center}\small
+\nolinkurl{ec9a5482cdfb9ee2b3937fd1980eed6448ab5f954454c9d5287d06aa8a4c3c25}.
+\end{center}
+The local baseline manuscript commit is \artifact{8a59409}; its public
+filtered counterpart is \artifact{315e6c4ddf3b67aca8c97506f078cdc98d5413c1}.
+Before/after quotations below are exact source excerpts, typeset with
+this paper's macros. Their file locations are relative to \artifact{paper/};
+section numbers can change when material moves. The structured change
+record and baseline source copies are in
+\artifact{paper/reviews/revision-2026-09-17/}. A validation script checks
+each quotation against its version. The deadline candidate ledger,
+research artifacts and usage measurements have not been rewritten.
+
+\subsection{14.72: reduced and doubled divisors}
+\noindent\textbf{Review point.} First report, section 6; follow-up, section 2.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/14-72.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+It is therefore a smooth effective
+Cartier divisor, of the codimension one required in
+the question.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+It is therefore a smooth effective Cartier divisor \(D\).
+The equation \(x=0\) defines \(D\) set-theoretically but defines
+\(2D\) as a Cartier divisor. The reduced divisor is not globally
+principal on \(X\): on the zero section its class is the nonzero
+order-two class of \((0,0)-\infty\) on the elliptic curve.
+The restriction below supplies a global equation.
+\end{quote}
+
+\noindent\textbf{Reason.} Separate the original Cartier assertion from the stronger principal assertion.
+
+\noindent\textbf{Validation.} Local equation x=y\textasciicircum{}2/(x\textasciicircum{}2-1); the zero-section restriction detects the nonzero two-torsion class.
+
+\subsection{14.72: a globally principal fixed divisor}
+\noindent\textbf{Review point.} Follow-up, section 2.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/14-72.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+The full fixed divisor
+does not control this additional stabilizer.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+Thus \(U\) answers the question negatively even
+when ``regular hypersurface'' requires a single global equation for
+the reduced fixed scheme. This restriction was obtained during revision;
+it is not part of the deadline construction.
+\end{quote}
+
+\noindent\textbf{Reason.} The invariant open removes the obstruction while preserving the singular quotient. This is a post-deadline strengthening.
+
+\noindent\textbf{Validation.} Exact ideal and invariant-localization argument in the revised proof; symbolic verification recorded in the revision audit.
+
+\subsection{15.92: the prime is selected by the diagram}
+\noindent\textbf{Review point.} Follow-up, sections 2 and 3.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/15-92.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+These cycle and parity facts are read from the construction,
+not inferred from its headline generation theorem.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+The displayed choice of \(11\) or \(13\) is the length of the unique
+exceptional prime cycle in the respective diagram; it is not a free
+choice. These cycle and parity facts are read from the construction,
+not inferred from its headline generation theorem.
+The finite transcription, diagram reconstruction and 150 cycle controls
+are indexed in \artifact{results/15.92-summary.json} in the public
+snapshot (Appendix~\ref{app:reproduction}); the external follow-up
+reports replaying both controls.
+\end{quote}
+
+\noindent\textbf{Reason.} Explain the residue-class split and make the finite input locatable.
+
+\noindent\textbf{Validation.} Checked the retained source-data paths and the reviewer's reported 150-row replay; the finite controls do not replace the all-size argument.
+
+\subsection{21.106: contemporaneous work and artifact chronology}
+\noindent\textbf{Review point.} First report, section 5; follow-up, sections 1 and 2.\par
+\noindent\textbf{Location.} \artifact{sections/representative.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+The experimental controls checked commutator arithmetic and finite
+interpretations, while the proof above establishes the infinite
+statement.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+Contemporaneous work recorded in a public repository credits Lily Zhang
+with a counterexample and proof and Evan Li with a Heisenberg
+simplification; it also supplies a Lean formalisation\cite{zhang-li-concise}.
+Our first local proof commit is dated 10 September 2026, 21:05:23 UTC;
+the commit adding those Lean files is dated 11 September, 10:54:21 UTC.
+These are artifact timestamps, not discovery or verified upload times,
+and do not establish priority. We have not built that Lean development.
+\end{quote}
+
+\noindent\textbf{Reason.} Credit the parallel construction and formalisation without assigning discovery priority.
+
+\noindent\textbf{Validation.} Inspected the public repository and commit metadata; no claim of a local Lean build.
+
+\subsection{10.62/4.75: the prescribed relation and initial scale}
+\noindent\textbf{Review point.} First author reply, item 6.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/10-62.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+All choices are made before choosing \(p\).
+For a sufficiently large odd prime \(p\), use the exponent family
+\(\{p\}\) and include \(w\) in the first maximal admissible family
+of primitive loxodromic elements.
+Proposition~6.1 then kills \(w^p\).
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+All choices are made before choosing \(p\).
+Explicitly, the source's Remark~6.8 illustrates the extra condition
+\(2\lambda\le L_S\delta_1\); the word \(abc\) requires
+\(3\lambda\le L_S\delta_1\) instead. The permission to decrease
+\(\lambda\) is the part we use. For a sufficiently large odd prime
+\(p\), use the exponent family \(\{p\}\). The primitive cyclic
+subgroup \(\langle abc\rangle\) is eligible for the first family;
+start with it and extend to a maximal admissible selection, choosing
+one representative for each eligible maximal loxodromic subgroup
+up to conjugacy. Proposition~6.1 kills \(w^p\).
+Neither the extra relation nor the scale \(3\lambda\) is asserted
+as part of the headline statement of Theorem~6.7.
+\end{quote}
+
+\noindent\textbf{Reason.} Identify the precise use of the source construction shared by the two candidates.
+
+\noindent\textbf{Validation.} Rechecked arXiv:2509.11958v2, Proposition 6.1 and the initialization of Theorem 6.7 with Remark 6.8.
+
+\subsection{10.32: retain the correct lower-bound attribution}
+\noindent\textbf{Review point.} First report, section 8.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/10-32.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+Rosser--Schoenfeld \cite[Theorems~4 and~9]{rosser-schoenfeld} give
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+Rosser--Schoenfeld \cite[Theorem~4, (3.14), and Theorem~9]{rosser-schoenfeld} give
+\end{quote}
+
+\noindent\textbf{Reason.} The suggested formula (3.16) is a different inequality. Add the correct formula number while retaining Theorem 4.
+
+\noindent\textbf{Validation.} Visually checked printed page 70 of Rosser--Schoenfeld: (3.14) has denominator 2 log x and threshold 563; (3.16) has denominator log x and threshold 41.
+
+\subsection{13.42: foundational reference and the version used}
+\noindent\textbf{Review point.} First report, section 8.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/13-42.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+Here an \(A\)-group satisfies the power, conjugation, and
+commuting-product axioms in Myasnikov--Remeslennikov
+\cite[Definitions~1--2]{exponential-groups}.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+The Notebook refers to Myasnikov--Remeslennikov's foundational paper
+\cite{exponential-groups-1}. Here we use the power, conjugation,
+commuting-product axioms and tensor-completion universal property
+as restated in \cite[Definitions~1--2]{exponential-groups}.
+\end{quote}
+
+\noindent\textbf{Reason.} Add the original reference while preserving the precise definitions actually used.
+
+\noindent\textbf{Validation.} Checked the bibliographic record of the 1994 paper and the retained definitions in Exponential groups 2.
+
+\subsection{Usage: explain the one-cent difference}
+\noindent\textbf{Review point.} First report, section 8.\par
+\noindent\textbf{Location.} \artifact{sections/methods.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+Thus the full-session estimate including compactions is USD 969.78,
+of which USD 910.61 is assigned to the 48-hour research window.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+Thus the full-session estimate including compactions is USD 969.78,
+of which USD 910.61 is assigned to the 48-hour research window.
+Adding the independently rounded phase totals gives USD 969.79;
+the one-cent difference comes from rounding after aggregation.
+\end{quote}
+
+\noindent\textbf{Reason.} Make the effect of independent rounding explicit; no counters or rates change.
+
+\noindent\textbf{Validation.} The exact usage outputs and their hashes are unchanged.
+
+\subsection{Distinguish deadline review from later external review}
+\noindent\textbf{Review point.} Follow-up, sections 3 and 4.\par
+\noindent\textbf{Location.} \artifact{sections/discussion.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+Finally, manuscript review is still review by the same agent that
+produced the research. Repeated rereading and fresh calculations can
+find errors, but they do not provide authorial independence. The
+deadline archive contains zero outside reviews. Neither a preserved
+PASS message nor the absence of a finding in an internal review
+substitutes for specialist assessment.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+The initial manuscript review was performed by the same agent that
+produced the research. The deadline archive contains zero outside
+reviews. A later external review and follow-up checked arguments and
+finite inputs, identified scope and packaging issues, and withdrew
+several initial objections. We preserve the correspondence in
+Appendices~\ref{app:review-original}--\ref{app:reply-final}, with a
+change record in Appendix~\ref{app:review-changes}. The reviewer's
+scripts and logs are separately versioned; their reported outcomes
+are distinguished from checks rerun during this revision.
+The revised 14.72 construction makes the fixed divisor globally
+principal, and the portable bundle now includes the missing small
+certificate. These are later changes, not deadline achievements.
+Neither a preserved PASS message nor a reviewer's acceptance
+recommendation substitutes for specialist assessment or establishes
+priority.
+\end{quote}
+
+\noindent\textbf{Reason.} Retain the historical zero-review count and add the subsequent review process.
+
+\noindent\textbf{Validation.} Frozen candidate and usage ledgers remain byte-identical; the new correspondence has separate provenance.
+
+\subsection{4.55: version the character-table indices}
+\noindent\textbf{Review point.} First report, section 8.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/4-55.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+All other rows are zero in these columns.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+These indices use \artifact{CharacterTable("3.A7")} and its 5-modular
+table in GAP~4.16.1 with the character-table library \texttt{CTblLib}
+version~1.3.11. All other rows are zero in these columns.
+\end{quote}
+
+\noindent\textbf{Reason.} Tie the row indices to the library used for the manuscript check.
+
+\noindent\textbf{Validation.} The revised GAP checker prints the GAP and CTblLib versions and checks the decomposition rows, Galois orbits and projective dimensions.
+
+\subsection{15.76(b): identify the contrasting subvariety}
+\noindent\textbf{Review point.} First report, sections 4 and 8.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/15-76.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+for every proper subvariety of soluble groups: the proper metabelian
+variety studied by Fernandes--Tsurkov provides a counterexample
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+for every proper subvariety of soluble groups: the proper metabelian
+subvariety of exponent four studied by Fernandes--Tsurkov provides a counterexample
+\end{quote}
+
+\noindent\textbf{Reason.} State the exponent restriction on the cited counterexample.
+
+\noindent\textbf{Validation.} Checked the retained Fernandes--Tsurkov source; the full soluble varieties remain the scope of the proposition.
+
+\subsection{20.90: reconcile CA and CN terminology}
+\noindent\textbf{Review point.} First report, section 8.\par
+\noindent\textbf{Location.} \artifact{appendices/candidates/20-90.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+It is not necessary that finite quotients be CN-groups.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+Thus the example is a CA-group (its nonidentity centralizers are
+abelian), hence a CN-group (those centralizers are pronilpotent).
+It is not necessary that finite quotients be CN-groups.
+\end{quote}
+
+\noindent\textbf{Reason.} Explain why the inventory description and section title both apply.
+
+\noindent\textbf{Validation.} The proof already establishes abelian centralizers; no additional computation is needed.
+
+\subsection{Public filtered and local unfiltered snapshots}
+\noindent\textbf{Review point.} Follow-up, section 2; repository clarification from the organizers.\par
+\noindent\textbf{Location.} \artifact{appendices/reproduction.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+The configured repository address is
+\url{https://github.com/JUrban/kour1}.
+Anonymous access could not be established during manuscript
+preparation: unauthenticated API requests returned HTTP~404.
+A local Git query obtained a remote head different from
+the frozen experimental revision. These observations
+do not establish that either revision is anonymously
+available or that the two histories are equivalent.
+Readers need the frozen archive identified in
+Appendix~\ref{app:protocol} to reproduce repository-based
+measurements. The mathematical exposition in the paper
+does not require executing that archive.
+
+
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+The public repository is \url{https://github.com/JUrban/kour1}.
+Its research snapshot is
+\begin{center}\small
+\href{https://github.com/JUrban/kour1/tree/bbfac1ac810117da37f01716d4594dc2b2e96980}{\texttt{bbfac1ac810117da37f01716d4594dc2b2e96980}}.
+\end{center}
+The owner filtered the history with
+\artifact{--strip-blobs-bigger-than 90M}. Its commit identifiers therefore
+differ from those of the original unfiltered archive, including
+\snapshot{} in Appendix~\ref{app:protocol}. The unfiltered identifiers
+in the historical timelines are provenance identifiers, not public
+checkout instructions. On 17 September we compared the two final research
+trees: all 4,146 retained file blobs have identical Git object IDs;
+the sole omitted blob at that snapshot is the 1.27\,GB compressed
+\kn{20.100} certificate discussed below. This comparison does not
+assert equivalence of the full histories.
+\artifact{paper/data/public-artifacts.json} records both snapshots,
+the omitted file and byte comparisons of selected public artifacts.
+The public baseline manuscript commit is
+\artifact{315e6c4ddf3b67aca8c97506f078cdc98d5413c1}; its PDF is byte-identical
+to the reviewed version preserved with this revision.
+
+Recomputing Git measurements by the original scripts requires the
+unfiltered history, or an explicit mapping to the rewritten commits.
+The included frozen measurements retain their original identifiers.
+Typesetting and the portable carpet checks require neither history.
+
+
+\end{quote}
+
+\noindent\textbf{Reason.} Replace the obsolete access failure and separate public checkout references from historical local hashes.
+
+\noindent\textbf{Validation.} Compared all 4,146 retained Git blob IDs; byte-checked five selected public files and the baseline PDF.
+
+\subsection{A dated retrieval index}
+\noindent\textbf{Review point.} First author reply, item 4; follow-up, section 1.\par
+\noindent\textbf{Location.} \artifact{appendices/reproduction.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+The raw session inputs remain separate from both source bundles.
+Their hashes and sizes identify the evidence for an authorized holder;
+the included projections are not substitutes for the full trace.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+The raw session inputs remain separate from both source bundles.
+Their hashes and sizes identify the evidence for an authorized holder;
+the included projections are not substitutes for the full trace.
+The additional \artifact{extract_retrievals.py} parser exports
+\artifact{retrieval-observations.jsonl}, \artifact{retrieval-urls.csv}
+and \artifact{retrieval-metrics.json}. These index 1,324 completed
+web-tool observations (1,293 during research and 31 during manuscript
+preparation), preserving timestamps, action types, queries and returned
+links. They distinguish a requested page action from a URL appearing
+among search results. Shell downloads are outside this index; neither
+kind of record establishes that a source was used in an argument.
+The exact URL of the contemporaneous 21.106 repository has zero literal
+occurrences in the supplied raw JSONL. That narrow check cannot exclude
+exposure through other URLs, sources or training data, and the derived
+index alone cannot independently establish an absence in the raw trace.
+\end{quote}
+
+\noindent\textbf{Reason.} Expose structured source-access observations without treating retrieval as mathematical use.
+
+\noindent\textbf{Validation.} Reparsed the identified 540,278,152-byte input; all output records come from completed web observations. Raw reasoning and directive bodies are excluded.
+
+\subsection{20.100: name the undistributed input}
+\noindent\textbf{Review point.} Follow-up, section 2; repository clarification from the organizers.\par
+\noindent\textbf{Location.} \artifact{appendices/reproduction.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+Large computations need substantial time and storage.
+In particular, the \(n=7\) certificate for \kn{20.100}
+is distinct from smaller diagnostic and intermediate
+files. The retained report and manifest specify the
+complete input and all completed checker shards.
+The manuscript's review does not silently replace that
+historical verification with a fresh abbreviated run.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+The \(n=7\) certificate for \kn{20.100},
+\artifact{results/20.100-n7-certificate.g.gz}, is not distributed in the
+filtered public repository or either paper source bundle. Its compressed
+size is 1,271,256,410 bytes and its SHA-256 digest is
+\begin{center}\small
+\nolinkurl{e1b116fa80a4b77a03256d69480b996318522c227ef48e6be7fdf62cbd8bcd8c}.
+\end{center}
+The public archive retains the checker, generator and shard-verifier
+logs, and final report. They document the historical verification;
+without the certificate they do not permit a fresh complete replay.
+The early \artifact{20.100-n7-integrity.json} receipt predates completion
+of verification and must not be read as the final status.
+No separate large-file deposit or new \(n=7\) verification is claimed.
+A later deposit could supply this missing input without rewriting the
+research record.
+\end{quote}
+
+\noindent\textbf{Reason.} State exactly what the public archive does and does not permit a reader to replay.
+
+\noindent\textbf{Validation.} Public tree comparison confirms the omitted 1,271,256,410-byte blob; the retained generator and final verification records identify it.
+
+\subsection{Inventory: scope, dependencies and prior-work status}
+\noindent\textbf{Review point.} Follow-up, sections 1 and 5.\par
+\noindent\textbf{Location.} \artifact{appendices/inventory.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+Several entries share imported ingredients. The mathematical discussions
+give the relevant scope and dependencies; the frozen ledger supplies the
+original statement and evidence paths.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+The additional review column records selected scope qualifications and
+imported dependencies; an em dash means no additional note here, not
+that the proof has no imports. Priority remains unestablished for all
+46 candidates.
+\end{quote}
+
+\noindent\textbf{Reason.} Preserve all historical descriptions and covered parts while adding neutral qualifications. A separate table makes 21.132, 21.42 and 20.33 visible under prior-work status.
+
+\noindent\textbf{Validation.} The generator checks exactly the same 46 keys; annotations are stored separately. No count is inferred from proof length or presumed proposer intent.
+
+\subsection{19.56 as a fourth main example}
+\noindent\textbf{Review point.} First author reply, item 6.\par
+\noindent\textbf{Location.} \artifact{sections/representative.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+The following arguments illustrate three different kinds of output.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+The following arguments illustrate four different kinds of output.
+\end{quote}
+
+\noindent\textbf{Reason.} Move the existing 19.56 exposition from the candidate appendix into Section 4. The hyperfocal, minimal-simple and Baer--Suzuki dependencies remain explicit.
+
+\noindent\textbf{Validation.} The 19.56 source is byte-identical; generated input lists include it once, giving four main examples and 42 further candidate expositions.
+
+\subsection{Portable carpet bundle: supply the fourth checker input}
+\noindent\textbf{Review point.} Follow-up, sections 2 and 5.\par
+\noindent\textbf{Location.} \artifact{appendices/reproduction.tex}.
+
+\paragraph{Original text.}
+\begin{quote}\small
+Their README gives three standard-Python
+commands, which require neither GAP nor network access. A manifest
+binds the 23 original files to their byte-identical research versions.
+\end{quote}
+
+\paragraph{Revised text.}
+\begin{quote}\small
+Their README gives four standard-Python
+commands, which require neither GAP nor network access. A manifest
+binds the 24 original files to their byte-identical research versions.
+\end{quote}
+
+\noindent\textbf{Reason.} Add results/19.62-g2-monomial-certificates.jsonl (2,194,486 bytes) to the ancillary directory and both source bundles; retain and document the fourth checker. The first reply overstated the completeness of the bundled data.
+
+\noindent\textbf{Validation.} Check all four commands after extraction outside the repository, and verify each original file against the ancillary manifest.
+
+
+\subsection{Withdrawn objections and retained scope}
+The follow-up withdraws the algebraic-closedness objection to 16.28(a):
+the original field was already the algebraic closure of \(\F_5(t)\).
+That proof is unchanged. We retain characteristic five in part (b),
+without asserting the identical conjugacy-class argument over every odd
+characteristic. The suggested unrestricted extension is unnecessary;
+in characteristic three its trace-one class does not have the same
+semisimple description.
+
+For 12.40, the follow-up accepts that nonexistence of any finite-valued
+bound is a negative answer to the printed question. No proof change is
+needed. The estimated count of ``roughly seven'' unintended readings,
+the speculation about proposer intent, and the priority inference from
+artifact dates are withdrawn in the follow-up and are not adopted here.
+Proof length and speed of formalisation are not measures of discovery
+difficulty. The original reports retain those earlier statements solely
+as part of the correspondence record.
+
+For 15.65, the source-index discrepancy discussed in its proof remains
+explicit. The revision does not claim a new resolution of that discrepancy.
+For 21.114, the external follow-up checks the retained order-512 inputs,
+their central quotients and derived series. The order-8,192 construction
+in the paper still uses the subsequent central-product argument; the
+report is not described as a direct enumeration of that final group.
+The 46 historical candidate classifications and their unresolved priority
+status remain unchanged.
+
+\subsection{Correspondence, packaging and validation records}
+The four documents reproduced next were added to the manuscript without
+rewriting their words. The lightly updated first report is retained as
+\artifact{external-reviews/review-update1.md}, with its exact diff in
+\artifact{external-reviews/review-update1.diff}. The final reply corrects
+our first reply's claims about bundle completeness and large-certificate
+availability. The digest manifest binds the raw documents and their
+rendered counterparts. Markdown headings and tables have print formatting;
+this does not change the review text or its historical references.
+
+Both source bundles include the correspondence and the missing small
+certificate. The full source additionally includes the retrieval index,
+structured change record, baseline excerpts and PDF, and revision checks.
+The build receipt, structure audit and portable-validation receipt bind
+the resulting sources, PDF and ancillary inputs. The latter records all
+four documented ancillary executions after archive extraction, and a
+standalone typesetting comparison. The supplemental symbolic check of
+the 14.72 restriction is an exact algebra check, not a formalisation of
+the geometric proof. None of these checks is a fresh replay of the
+undistributed 20.100 certificate or of all the reviewer's programs.

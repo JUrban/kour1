@@ -94,3 +94,16 @@ repair it or explicitly revise its status and explain the effect on the
 paper. Preserve the historical 46-entry outcome independently of that
 later assessment. Imported theorems may be cited normally, but an exact
 source statement must support the application.
+
+## External-review revision, 17 September 2026
+
+Work on a new paper branch. Preserve the deadline record and reviewed PDF.
+Apply the substantive and editorial review changes; test the suggested
+principal-divisor repair for 14.72. Include the original report, first
+author reply, follow-up and final reply verbatim, preceded by exact
+before/after changes. Preserve the lightly updated original and its diff.
+Ship the missing small certificate with all four documented checks.
+Document the filtered public snapshot and the undistributed large input;
+do not make a large-file deposit a condition of completing the revision.
+Validate correspondence preservation, source bundles and PDF, then commit
+the paper revision and PDF without pushing.

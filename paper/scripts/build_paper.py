@@ -21,6 +21,13 @@ def main():
     if args.require_complete:
         command.append("--require-complete")
     subprocess.run(command, cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(PAPER / "scripts/render_review_changes.py"), "--check"], cwd=ROOT, check=True)
+    correspondence = json.loads((PAPER / "external-reviews/manifest.json").read_text())
+    for record in correspondence["documents"]:
+        for path_key, hash_key in [("path", "sha256"), ("rendered_path", "rendered_sha256")]:
+            if path_key in record:
+                actual = hashlib.sha256((PAPER / record[path_key]).read_bytes()).hexdigest()
+                assert actual == record[hash_key], ("stale correspondence", record[path_key])
     tectonic = os.environ.get("PAPER_TECTONIC") or shutil.which("tectonic")
     if not tectonic:
         local = ROOT / "software/paper-toolchain/tectonic"
@@ -46,7 +53,8 @@ def main():
                 [PAPER / "main.tex", PAPER / "references.bib",
                  PAPER / "figures/trajectory.pdf"]
                 + list((PAPER / "sections").rglob("*.tex"))
-                + list((PAPER / "appendices").rglob("*.tex")))
+                + list((PAPER / "appendices").rglob("*.tex"))
+                + [p for p in (PAPER / "external-reviews").iterdir() if p.is_file()])
         },
     }
     pdf = build / "main.pdf"

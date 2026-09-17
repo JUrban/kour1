@@ -1,0 +1,127 @@
+\section{Artifacts and reproduction}
+\label{app:reproduction}
+
+The configured repository address is
+\url{https://github.com/JUrban/kour1}.
+Anonymous access could not be established during manuscript
+preparation: unauthenticated API requests returned HTTP~404.
+A local Git query obtained a remote head different from
+the frozen experimental revision. These observations
+do not establish that either revision is anonymously
+available or that the two histories are equivalent.
+Readers need the frozen archive identified in
+Appendix~\ref{app:protocol} to reproduce repository-based
+measurements. The mathematical exposition in the paper
+does not require executing that archive.
+
+The main entry points in the archive are
+\artifact{reports/FINAL_REPORT.md},
+\artifact{reports/REVIEW_GUIDE.md}, and
+\artifact{research/complete-candidate-ledger.json}.
+The last file records the transcribed question, covered
+parts, proof paths, review paths, and evidence entry
+points for every candidate. The original PDF remains
+authoritative if an extraction differs from its typography.
+
+The later \artifact{paper/} directory contains manuscript
+source, generated measurements, and a review ledger.
+From the repository root, the measurement command is
+\begin{quote}\small
+\texttt{python3 paper/scripts/analyze\_experiment.py --check}
+\end{quote}
+It uses Python's standard library and Git, reads the
+supplied HTML and text exports, and recomputes the
+statistics from the frozen history. It checks agreement
+with committed outputs rather than modifying them.
+Without \texttt{--check}, it regenerates the five
+measurement files.
+
+\begin{center}\small
+\begin{tabular}{p{0.45\textwidth}p{0.47\textwidth}}
+\toprule
+File in \artifact{paper/data/} & Meaning\\
+\midrule
+\artifact{experiment-metrics.json} &
+Input hashes, event counts, cumulative counters,
+Git totals, and measurement limitations\\
+\artifact{session-tokens.csv} &
+All retained token observations, including repeated
+and unitemized records\\
+\artifact{session-visible-messages.jsonl} &
+Visible assistant, final, and human messages with
+event identifiers; excludes directive bodies\\
+\artifact{research-commits.csv} &
+Commit identifiers, UTC timestamps, subjects,
+and inclusion in the research interval\\
+\artifact{proof-artifact-timeline.csv} &
+First committed principal proof artifact for each
+problem family on the final candidate list\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The full JSONL is analyzed separately:
+\begin{quote}\small
+\texttt{python3 paper/scripts/analyze\_rollout.py --check}
+\end{quote}
+This standard-library parser reads the single supplied
+\artifact{session/rollout-*.jsonl}, whose size is 540,278,152 bytes
+and whose SHA-256 digest is
+\begin{center}\small
+\nolinkurl{f316fb63957f3ec50895088537786a4946a15601e54da5dac86ec0e4fcdd21d8}.
+\end{center}
+It checks unique response and completed-item identifiers, timestamp
+order, usage identities, the exact compaction reconciliation, every
+HTML token observation, and agreement with
+\artifact{ccusage-supplied.json}. Its six outputs are
+\artifact{rollout-metrics.json}, \artifact{rollout-usage.csv},
+\artifact{rollout-observations.csv}, \artifact{rollout-tasks.csv},
+\artifact{rollout-hourly.csv}, and
+\artifact{rollout-visible-messages.jsonl}. These retain aggregate
+metrics, request usage, completed-operation metadata, task events,
+hourly activity and timestamped visible messages, respectively.
+Without \texttt{--check}, the parser regenerates them.
+
+The phase boundary uses the logged request timestamp. For example,
+a 90,535-token request is recorded at 12 September 20:56:42.957 UTC,
+before the deadline, but its cumulative notification appears at
+20:56:49.929 UTC after a tool completes. Using only the last
+pre-deadline notification would omit that request from research usage.
+The separately identified compaction requests likewise cannot be
+reconstructed by summing the legacy ``Last'' display fields.
+
+The raw session inputs remain separate from both source bundles.
+Their hashes and sizes identify the evidence for an authorized holder;
+the included projections are not substitutes for the full trace.
+No internal reasoning, compaction-summary or system/developer
+instruction bodies are included in the derived data. Mathematical
+scripts have different purposes: some generate examples, some check
+certificates, and some summarize existing results. Reproducing a
+summary is not rerunning a proof check. Each result's archive entry
+identifies its commands and the limits of the computation.
+
+Large computations need substantial time and storage.
+In particular, the \(n=7\) certificate for \kn{20.100}
+is distinct from smaller diagnostic and intermediate
+files. The retained report and manifest specify the
+complete input and all completed checker shards.
+The manuscript's review does not silently replace that
+historical verification with a fresh abbreviated run.
+
+The portable source includes the complete integer derivations for
+Problems~19.61--19.62, their target-coverage checkers, and the integral
+\(G_2\) matrix-identity check. In the arXiv source archive these are
+under \artifact{anc/}; in the full manuscript project they are under
+\artifact{ancillary/}. Their README gives three standard-Python
+commands, which require neither GAP nor network access. A manifest
+binds the 23 original files to their byte-identical research versions.
+The 19 short representative derivations are also printed above.
+
+The main file is \artifact{main.tex}. The source archives include
+\artifact{main.bbl} and the compiled chronology figure, so ordinary
+XeLaTeX/BibTeX or Tectonic can typeset the paper without regenerating
+the data or running mathematical computations. The full-source archive
+additionally contains the aggregate measurements, the frozen candidate
+ledger, figure source, build scripts, and manuscript review records.
+Recomputing the original session/Git measurements still requires the
+separately retained experimental archive and session inputs.

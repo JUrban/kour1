@@ -8,7 +8,9 @@
 \usepackage[a4paper,margin=28mm]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{array,booktabs,longtable,graphicx}
-\usepackage{microtype,enumitem,xurl,xcolor}
+\PassOptionsToPackage{obeyspaces}{url}
+\usepackage{microtype,enumitem,xurl,xcolor,calc}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
 \hypersetup{pdftitle={Forty-eight hours with the Kourovka Notebook},
  pdfauthor={Codex gpt-6-astra; Michael Kinyon; Josef Urban},
@@ -44,7 +46,7 @@ an experiment in agentic mathematical research}
 \author{Codex \texttt{gpt-6-astra}\\OpenAI
 \and Michael Kinyon\\University of Denver
 \and Josef Urban\\AI4REASON\\University of Gothenburg}
-\date{15 September 2026}
+\date{17 September 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -86,6 +88,8 @@ requests omitted from the session summary counters.
 \input{appendices/prior-results}
 \input{appendices/carpet-tables}
 \input{appendices/reproduction}
+\input{appendices/review-changes}
+\input{appendices/review-correspondence}
 \begingroup
 \raggedright
 \bibliographystyle{abbrv}

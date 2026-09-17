@@ -39,6 +39,9 @@ def main():
         for path in sorted((PAPER / folder).rglob("*.tex")):
             tex[str(path.relative_to(PAPER))] = path.read_bytes()
 
+    for path in sorted((PAPER / "external-reviews").iterdir()):
+        if path.is_file():
+            tex[str(path.relative_to(PAPER))] = path.read_bytes()
     upload = dict(tex)
     for path in sorted((PAPER / "ancillary").rglob("*")):
         if path.is_file() and "__pycache__" not in path.parts:
@@ -49,7 +52,7 @@ def main():
         "are included. No shell escape or network retrieval is required "
         "when the TeX packages are installed.\n\n"
         "The anc directory contains the complete portable carpet proof "
-        "certificates. Run its three checks from anc; see README.md.\n\n"
+        "certificates. Run its four checks from anc; see README.md.\n\n"
         "The title page includes the author order and affiliations supplied "
         "by the organizers. This archive has not been uploaded. "
         "The companion full source archive includes measurements, review "
@@ -71,7 +74,7 @@ def main():
     full = dict(tex)
     for name in ("README.md", "PLAN.md", "STATUS.md"):
         full[name] = (PAPER / name).read_bytes()
-    for folder in ("scripts", "data", "reviews", "ancillary", "figures"):
+    for folder in ("scripts", "data", "reviews", "ancillary", "figures", "versions"):
         for path in sorted((PAPER / folder).rglob("*")):
             if path.is_file() and "__pycache__" not in path.parts and path.suffix not in {
                     ".log", ".aux", ".synctex", ".xdv"}:
@@ -89,6 +92,7 @@ def main():
             archive.writestr(info, data)
     handoff = dist / "kourovka-experiment.pdf"
     shutil.copyfile(pdf, handoff)
+    shutil.copyfile(pdf, PAPER / "kourovka-experiment.pdf")
     result = {p.name: {"bytes": p.stat().st_size, "sha256": digest(p.read_bytes())}
               for p in (handoff, target, complete)}
     (dist / "manifest.json").write_text(json.dumps(result, indent=2) + "\n")
