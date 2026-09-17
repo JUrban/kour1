@@ -1,35 +1,60 @@
-# Kourovka Notebook research
+# Forty-eight hours with the Kourovka Notebook
 
-Objective: solve as many previously unsolved problems in `docs/21tkt.pdf` as possible during a 48-hour research period. This is a local working repository; no remote publication or push is authorized.
+**[Read the paper (PDF)](paper/kourovka-experiment.pdf)** ·
+[Paper source and reproduction guide](paper/README.md) ·
+[Notebook used in the experiment (PDF)](docs/21tkt.pdf)
 
-Research started 2026-09-10 20:56:46 UTC (active-goal creation). Deadline: 2026-09-12 20:56:46 UTC. Target resource limits: at most 20 computational cores and 100 GB RAM in total.
+This repository records a 48-hour mathematical research experiment conceived
+and overseen by Michael Kinyon and Josef Urban. OpenAI's GPT-6 Astra, running
+through Codex, used GAP, exact programs and mathematical literature to
+investigate open problems in the
+[Kourovka Notebook](https://arxiv.org/abs/1401.0300), a collection of problems
+in group theory and neighboring areas edited by E. I. Khukhro and V. D. Mazurov.
+The supplied input is the September 2026 revision of its 21st edition.
 
-Thirty-three complete candidate resolutions are recorded in
-[`reports/STATUS.md`](reports/STATUS.md), each with a separate internal
-audit. All await independent review and further novelty checks. An additional small counterexample to 13.19 is
-retained as a rediscovery: a prior paper already implies a negative answer. The independent positive proof
-of 17.34 is also retained as a consequence of an existing amalgamation theorem
-and excluded from the new-candidate count.
-The 14.22 examples use infinitely generated torsion-free linear
-coefficient groups, as permitted by the printed question.
-Candidate31 now covers all the stated classical limits in Problem15.65;
-the original unitary cyclic packet and its complete extension are retained
-separately. Candidate 32 proves the alternating-residual quotient assertion
-of Problem 15.92 for every triangle parameter r>6. Candidate 33 gives a
-negative answer to 4.75 using the group already constructed for 10.62;
-those two candidates share the same geometric existence dependency.
-See `reports/STATUS.md`, `research/PLAN.md`, and `reports/LOG.md` for current
-evidence and next actions.
+The research ran from **10 September 2026, 20:56:46 UTC**, to
+**12 September 2026, 20:56:46 UTC**, with requested local limits of generally
+20 CPU cores and 100 GB RAM.
 
-The supplied Notebook is the 21st edition, updated through September 2026. SHA-256: `2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911`. Its searchable text was extracted with `pdftotext -layout`. Mathematical notation in extracted text must be checked against the PDF before relying on a statement.
+The final ledger contains **46 complete solution candidates**, covering
+problem entries or specified subparts. The paper also presents partial
+results on nine questions, rediscoveries, deductions from prior work and
+bounded computations. The 46-entry total records the deadline classification;
+it is not a count of established new theorems.
 
-Repository layout:
+Anthropic's **Claude Opus[1m]**, running through Claude Code, subsequently
+reviewed all 46 entries, verified a majority in detail, and independently
+reconstructed many finite examples and calculations. The revised paper
+incorporates corrections and a strengthened counterexample, and includes
+the [review correspondence](paper/external-reviews/) verbatim in appendices.
 
-- `research/`: problem selection, mathematical work, proof drafts, and failed approaches.
-- `scripts/`: reproducible exact computations and verification tools.
-- `results/`: retained computation output and certificates.
-- `reports/`: dated progress and reviewable reports.
-- `references/`: bibliography and literature-status evidence.
-- `state/`: research clock and job bookkeeping; live processes must be verified independently of these files.
+Start with **Section 2 of the paper** for the full results inventory and
+**Section 3** for the independent review. **Appendix M** gives a preliminary
+review and comparison of the
+[parallel Claude Fable experiment](https://github.com/JUrban/kour1cl), run
+by the same organizers on the same machine and local resource budget.
 
-GAP is supplied in `gap-4.16.1/` and excluded from version control. Research artifacts and the input Notebook are tracked. Claims are labeled conjectural, computational evidence, proved partial result, candidate solution, or reviewed solution; a finite negative search is never called a general proof.
+## Research records
+
+The [final research report](reports/FINAL_REPORT.md),
+[review guide](reports/REVIEW_GUIDE.md), and
+[candidate ledger](research/complete-candidate-ledger.json) preserve the
+deadline record. Dated progress reports retain their original counts and
+review status; use the revised paper for the subsequent assessment.
+
+- [paper/](paper/): current PDF, LaTeX sources, review records and reproduction instructions.
+- [docs/](docs/): the supplied Notebook and searchable text.
+- [research/](research/): proofs, partial results, source audits and unsuccessful approaches.
+- [scripts/](scripts/): exact computations and verification programs.
+- [results/](results/): retained computation outputs and certificates.
+- [reports/](reports/): dated progress, final report and review guide.
+- [references/](references/): literature and attribution records.
+- [state/](state/): historical research-clock and job bookkeeping.
+
+The public repository was filtered to remove blobs larger than 90M, so its
+commit hashes differ from the original local archive. In particular, the
+1.27 GB certificate for the final 20.100 case is omitted: retained logs
+document its historical verification, but do not enable a complete new replay.
+See the [artifact notes](paper/README.md) for the precise boundary and the
+accessible research snapshot. The computations used GAP 4.16.1; the full
+software installation is not bundled.
