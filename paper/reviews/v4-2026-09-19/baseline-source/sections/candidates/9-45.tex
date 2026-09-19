@@ -1,0 +1,87 @@
+\subsection{9.45: a coordinate test for orthogonal lattice bases}
+\label{cand:9.45}
+For \(a\in\Q^n\), let \(S(a)=\Z^n+\Z a\).
+Subtracting an integer vector, write
+\[
+ a=r/m,\quad 0\le r_j<m,\quad \gcd(m,r_1,\ldots,r_n)=1.
+\]
+The following finite test uses \(O(mn)\) integer arithmetic operations;
+no polynomial bound in the binary length of \(m\) is asserted.
+
+For each \(1\le k<m\), center every coordinate of \(kr\bmod m\) in
+\([-m/2,m/2]\). At a half-coordinate retain both signs; discard a coset
+with more than two such ties. Among the resulting at most four vectors
+\(w\), retain those with first nonzero coordinate positive which satisfy,
+with \(Q(w)=\sum_jw_j^2\),
+\[
+ Q(w)\mid mw_j\quad\hbox{for every }j,\qquad
+ Q(w)\mid\sum_jr_jw_j.                              \tag{**}
+\]
+Call their list \(\mathcal W\), and let \(z\) count the zero coordinates
+of \(r\).
+
+\begin{proposition}
+The lattice \(S(a)\) has an orthogonal basis if and only if
+\(z+|\mathcal W|=n\). In that case a basis is
+\(\{e_j:r_j=0\}\cup\{w/m:w\in\mathcal W\}\).
+\end{proposition}
+\begin{proof}
+For a Euclidean lattice \(L\), a vector \(b\ne0\) spans an orthogonal
+rank-one direct summand exactly when \(c_b=b/\|b\|^2\in L^*\):
+subtract the integer multiple \((x\cdot c_b)b\) from each \(x\in L\).
+Call such a vector splitting. For splitting vectors \(b,v\), both
+\[
+ \frac{b\cdot v}{\|b\|^2},\qquad
+ \frac{b\cdot v}{\|v\|^2}
+\]
+are integers. Their product is the squared cosine. If the lines differ,
+it is less than one and hence zero; if they coincide, the ratio and its
+reciprocal are integers, so \(v=\pm b\). All splitting lines are
+therefore mutually orthogonal. There are at most \(n\), and if there are
+\(n\), the orthogonal expansion of every \(x\in L\) has integer
+coefficients, proving that their generators form a basis.
+
+Now \(L=S(r/m)\) contains \(\Z^n\), so \(L^*\subseteq\Z^n\).
+For a splitting vector write \(c=c_b\), \(d=\|c\|^2\).
+Then \(c\in\Z^n\), \(d\) is a positive integer, and \(b=c/d\).
+If \(d=1\), \(b=\pm e_j\), which splits precisely when \(r_j=0\).
+If \(d\ge2\), then \(2|c_j|\le d\) in every coordinate, so
+\(|b_j|\le1/2\). If \(h\) coordinates attain equality, then
+\(hd^2/4\le d\), giving \(h\le2\).
+Moreover \(\|b\|^2=1/d<1\), so \(b\notin\Z^n\).
+The gcd condition shows that \(r/m\) has order exactly \(m\) modulo
+\(\Z^n\). Thus every remaining splitting vector, up to its unique
+first-positive sign, occurs in the centered enumeration.
+
+For a listed \(w\), \(b=w/m\) lies in \(L\), and \(c_b=mw/Q(w)\).
+Membership in \(L^*\) says that its coordinates and its scalar product
+with \(r/m\) are integers, which is exactly (**).
+Different cosets or tie choices give different vectors. The test
+therefore lists all splitting lines exactly once, proving the result.
+\end{proof}
+
+Half-coordinate signs matter: for \(a=(1/6,1/6)\), the vector
+\((3,-3)\) passes (**) while \((3,3)\) fails. For
+\(a=(1/2,1/2,1/2)\), there are no splitting lines.
+A three-dimensional positive example is \(a=(1,5,2)/6\), with basis
+\[
+ (1,-1,2)/6,\qquad (1,-1,-1)/3,\qquad (1,1,0)/2.
+\]
+The archive also proves that when \(m=p^k\), at most two coordinates
+of \(r\) can be nonzero in an orthogonal example. Indeed an integral
+orthogonal basis matrix \(C\) of \(L^*\) has determinant \(p^k\),
+Smith form \(\operatorname{diag}(1,\ldots,1,p^k)\), and diagonal
+\(CC^t\) whose entries are powers of \(p\).
+The rank inequality modulo \(p\) gives
+\(\operatorname{rank}(CC^t)\ge n-2\).
+All but at most two row norms are therefore one, forcing the other
+residue coordinates to vanish.
+
+Bardakov already solved the two-dimensional case and gave a
+higher-dimensional sufficient condition \cite{bardakov-lattices}.
+Normalized-dual arguments and orthogonal decomposition are prior
+methods; compare \cite{cgg-orthogonality,hemkemeier-vallentin}.
+The candidate contribution is this particular cyclic-coset criterion
+in arbitrary dimension. The archive
+\artifact{research/9.45-proof.md} contains the prime-power classification;
+\artifact{results/9.45-summary.json} binds independent finite controls.

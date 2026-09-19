@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\usepackage{iftex}
+\ifPDFTeX
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\fi
+\usepackage{lmodern}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{array,booktabs,longtable,graphicx}
+\PassOptionsToPackage{obeyspaces}{url}
+\usepackage{microtype,enumitem,xurl,xcolor,calc}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\hypersetup{pdftitle={Forty-eight hours with the Kourovka Notebook},
+ pdfauthor={Codex gpt-6-astra; Michael Kinyon; Josef Urban},
+ pdfsubject={An agentic mathematical research experiment}}
+\setlist{topsep=4pt,itemsep=2pt}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\Hol}{Hol}
+\DeclareMathOperator{\NHol}{NHol}
+\DeclareMathOperator{\Ind}{Ind}
+\DeclareMathOperator{\tr}{tr}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\kn}[1]{Problem~#1}
+\newcommand{\artifact}[1]{\nolinkurl{#1}}
+\newcommand{\snapshot}{\texttt{cff2c37}}
+\title{Forty-eight hours with the Kourovka Notebook:\\
+an experiment in agentic mathematical research}
+\author{Codex \texttt{gpt-6-astra}\\OpenAI
+\and Michael Kinyon\thanks{Work carried out during a research visit to the AI4REASON institute.}\\University of Denver
+\and Josef Urban\thanks{This work was supported by the ERC grant NextReason
+(Grant Agreement No.\ 101200949) and the
+\href{https://ai4reason.eu/sponsors.html}{sponsors of the AI4REASON institute}.}\\AI4REASON\\University of Gothenburg}
+\date{Version 3 --- 19 September 2026}
+\begin{document}
+\maketitle
+\begin{center}\small
+Independent mathematical review: Claude Opus[1m] (Anthropic), via Claude Code
+\end{center}
+\begin{abstract}
+We report an experiment in mathematical research and independent review
+by two language models. OpenAI's GPT-6 Astra, running through Codex, had
+48 hours to investigate questions listed as open in the supplied Kourovka
+Notebook, using GAP, exact programs and mathematical literature. The
+resulting archive records 46 entries classified as complete solution
+candidates at the deadline, together with partial theorems, rediscoveries
+and bounded searches. Version~3 withdraws one claimed resolution after
+the Notebook's editor identified a misread field, leaving 45 candidates.
+We present explicit counterexamples, structural arguments and
+finite certificates, with their hypotheses and imported ingredients.
+We compare eleven entries with contemporary solutions, identifying shared
+arguments, different constructions and stronger alternatives.
+Anthropic's Claude Opus[1m], running through Claude Code, subsequently
+reviewed all 46 entries, reported verifying a majority in detail, and independently
+reconstructed many finite examples and calculations. Its two reports
+and the exchange with Codex confirmed substantial portions of the work,
+corrected interpretations and attribution, and led to a stronger
+counterexample with a globally principal fixed divisor. Both model reviews
+missed the field error; its correction illustrates the need to check
+problem transcription separately from the resulting argument. The paper
+presents both the mathematical portfolio and the research-and-review
+process, with exact records and verbatim correspondence in the appendices.
+\end{abstract}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\input{sections/introduction}
+\input{sections/inventory}
+\input{sections/external-review}
+\input{sections/methods}
+\input{sections/representative}
+\input{sections/candidate-proofs}
+\input{sections/partial-results}
+\input{sections/prior-results}
+\input{sections/discussion}
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\begingroup
+\raggedright
+\bibliographystyle{abbrv}
+\bibliography{references}
+\endgroup
+\appendix
+\input{appendices/protocol}
+\input{appendices/technical-methods}
+\input{appendices/detailed-chronology}
+\input{appendices/evaluation-notes}
+\input{appendices/carpet-tables}
+\input{appendices/reproduction}
+\input{appendices/review-changes}
+\input{appendices/review-correspondence}
+\input{appendices/parallel-fable}
+\input{appendices/contemporary-comparison}
+\input{appendices/statement-correction}
+
+\end{document}

@@ -1,0 +1,31 @@
+\documentclass[11pt]{article}
+\input{shared/preamble}
+\iffullpaper
+\title{Forty-eight hours with the Kourovka Notebook:\\
+an experiment in agentic mathematical research}
+\else
+\title{Results on problems from the Kourovka Notebook}
+\hypersetup{pdftitle={Results on problems from the Kourovka Notebook},
+ pdfsubject={Mathematical edition: statements, proofs and attribution}}
+\fi
+\input{shared/authors}
+\date{Version 4 --- 19 September 2026\\[3pt]
+\small\iffullpaper Full research-and-review edition\else Mathematical edition\fi}
+\begin{document}
+\maketitle
+\iffullpaper
+\begin{center}\small
+Independent mathematical review: Claude Opus[1m] (Anthropic), via Claude Code
+\end{center}
+\input{editions/full-abstract}
+\else
+\input{editions/math-abstract}
+\fi
+\setcounter{tocdepth}{1}
+\tableofcontents
+\iffullpaper
+\input{editions/full-body}
+\else
+\input{editions/math-body}
+\fi
+\end{document}

@@ -1,0 +1,147 @@
+\subsection{13.19: a small subdirect-quotient counterexample}
+\label{prior:13.19}
+
+The question asks whether \(Q/H\) must be a regular \(p\)-group
+when \(H\lhd Q\) and both are subdirect in the same finite
+direct product. An earlier construction of Kearnes--Mayr--Ru\v{s}kuc
+already implies a negative answer \cite{kearnes-mayr-ruskuc}.
+Specifically, their Section~6 has a finite perfect group \(G=HM\),
+with \(M\) a 2-group and normal \(N\le M\), satisfying
+\([N,N]>[G,N,N]\). In their construction with \(d=2\),
+Theorem~4.2 gives \(S=\Gamma_1(G,N)\le G^4\) and
+\(T=\Gamma_3(G,N)=\gamma_3(S)\), with \(S/T\) nonabelian
+of class two. Both contain the diagonal \(G\), hence are
+subdirect. All nondiagonal generators lie in \(M^4\);
+since the diagonal is killed in \(S/T\), this quotient is
+a finite 2-group. A nonabelian 2-group is irregular.
+This is the prior implication used to remove 13.19 from the count.
+
+The experiment's smaller example is transparent.
+Let \(D=\operatorname{UT}_3(\F_2)\), writing its elements as
+\[
+ d(a,b,c)d(a',b',c')
+   =d(a+a',b+b',c+c'+ab').
+\]
+It is dihedral of order eight. In \(D^4\) put
+\[
+ Q=\{(d(a_i,b_j,c_{ij}))_{1\le i,j\le2}:
+                 a,b\in\F_2^2,\ C\in M_2(\F_2)\}.
+\]
+Its multiplication on the eight coordinates is
+\[
+ (a,b,C)(a',b',C')=(a+a',b+b',C+C'+a(b')^{\mathsf T}),
+\]
+so \(|Q|=256\). The map
+\[
+ \phi(a,b,C)=d(a_1+a_2,b_1+b_2,\textstyle\sum_{i,j}c_{ij})
+\]
+is onto and multiplicative, since the sum of the entries of
+\(a(b')^{\mathsf T}\) is
+\((a_1+a_2)(b'_1+b'_2)\).
+Its kernel \(H\) has order \(32\) and contains the entire
+diagonal \(D\). Both \(H\) and \(Q\) thus project onto all
+four factors, with \(Q/H\cong D\).
+For \(s=d(1,0,0)\), \(t=d(0,1,0)\), one has
+\(s^2=t^2=1\), but \((st)^2=d(0,0,1)\ne1\).
+Every derived-subgroup square is trivial, so no correction
+allowed in the regularity identity can repair this failure.
+The original question permits \(p=2\).
+
+There is also a direct universal construction: every finite
+\(p\)-group \(K\) is such a quotient when the factors may vary.
+Let \(m=|K|\), choose generators \(g_1,\ldots,g_d\), and let
+\(I\) be the augmentation ideal in \(\F_p[K]\).
+Induction on \(|K|\) gives \(I^m=0\): choose central \(z\) of
+order \(p\); the kernel of the map to
+\(\F_p[K/\langle z\rangle]\) is \((z-1)\F_p[K]\), whose
+\(p\)th power is zero, and use induction in the quotient.
+Let \(A\) be the nonunital free associative algebra on symbols
+\(x_{ij}\), \(1\le i\le m,1\le j\le d\), truncated at degree
+\(m\). In \(1+A\) take \(Q=\langle1+x_{ij}\rangle\).
+Substitution \(x_{ij}\mapsto g_j-1\) maps \(Q\) onto \(K\).
+For each \(i\), delete the \(i\)th block of symbols and let
+\(G_i\) be the image of \(Q\). These maps jointly embed \(Q\):
+each surviving monomial has length less than \(m\), omits some
+block, and retains its coefficient when that block is deleted.
+The kernel \(H\) of the map onto \(K\) projects onto every
+\(G_i\), since
+\((1+x_{kj})(1+x_{ij})^{-1}\in H\) projects to \(1+x_{kj}\)
+for \(k\ne i\).
+This proves the assertion, including simultaneous subdirectness.
+The trivial \(K\) is handled by \(Q=H=C_p\).
+The construction is not claimed to be small or new.
+See \artifact{research/13.19-proof.md},
+\artifact{research/13.19-universality.md}, and the source comparison
+in \artifact{research/13.19-review.md}.
+
+\subsection{17.34: a bounded-class separation proof using PBW}
+\label{prior:17.34}
+
+Let \(\mathcal N_c\) be the full quasivariety of torsion-free
+nilpotent groups of class at most \(c\). If \(H\le G\in\mathcal N_c\)
+is divisible, then its dominion is exactly \(H\).
+The fixed-class strong amalgamation theorem of
+d'Elb\'ee--M\"uller--Ramsey--Siniora already implies this
+\cite[Theorem~4.35]{delbee-amalgamation}.
+Use the lower-central filtration on the rational Lie algebra
+of the Malcev completion of \(G\), and its intersection
+filtration on the subalgebra corresponding to \(H\).
+These are compatible Lazard series even if the latter is
+not the intrinsic lower-central series of the subalgebra.
+Strong amalgamation separates the two copies outside \(H\).
+Finite-dimensional amalgamation suffices in arbitrary rank:
+every finite set of constraints lies in a finitely generated,
+hence finite-dimensional, nilpotent Lie subalgebra; compactness
+then supplies the full pair of embeddings.
+
+Here is the retained alternative proof.
+For a rational Lie algebra \(L\) of class at most \(c\) and
+subalgebra \(\mathfrak h\), let \(U=U(L)\), \(I\) its
+augmentation ideal, and \(J=U\mathfrak h\), a left ideal.
+Set
+\[
+ M=I/(J+I^{c+1}),\qquad d(x)=x+J+I^{c+1}.
+\]
+This is a left \(U\)-module and
+\(d([x,y])=xd(y)-yd(x)\).
+Choose a basis of \(L\) adapted both to the lower-central
+filtration and to \(\mathfrak h\), weighting a basis element
+by its largest filtration index. Order the basis with
+the complementary vectors before the \(\mathfrak h\)-vectors.
+PBW monomials of weight at least \(n\) span exactly \(I^n\).
+One inclusion follows since a vector of weight \(w\) lies
+in \(I^w\); the other follows by reordering, because brackets
+do not decrease total weight.
+Also \(J\) is spanned exactly by ordered monomials containing
+a nonempty terminal \(\mathfrak h\)-block: multiplication on
+the right by an \(\mathfrak h\)-vector only reorders that block.
+Thus the complementary single-letter vectors all survive
+independently in \(M\), while the \(\mathfrak h\)-vectors vanish.
+This proves \(\ker d=\mathfrak h\), in any dimension.
+
+In \(P=L\ltimes M\), with \(M\) abelian, the two maps
+\[
+ f(x)=(x,0),\qquad g(x)=(x,d(x))
+\]
+are injective Lie homomorphisms agreeing exactly on
+\(\mathfrak h\). Induction gives
+\(\gamma_r(P)\subseteq\gamma_r(L)+I^{r-1}M\).
+Since \(I^cM=0\), the class remains at most \(c\).
+The numerator \(I\) is essential: replacing it by \(U\)
+would generally allow an unwanted extra nilpotency step.
+
+Embed \(G\) in its rational Malcev completion and use the
+BCH correspondence, which preserves the class bound and
+works in arbitrary rank \cite{bahturin-olshanskii}.
+Unique roots make the divisible subgroup \(H\) a rational
+Lie subalgebra there. The BCH group of \(P\) lies in
+\(\mathcal N_c\), and the restrictions of \(f,g\) to \(G\)
+agree exactly on \(H\). This is precisely the required
+dominion separation. The result concerns the full
+\(\mathcal N_c\), with no assertion for every proper
+subquasivariety. The class-two predecessor is Shakhova's
+explicit 2015 result \cite{shakhova-2015}.
+PBW separation in unrestricted Lie algebras is also prior
+work of Bergman \cite{bergman-lie}.
+See \artifact{research/17.34-proof.md} and
+\artifact{research/17.34-known-consequence.md}.

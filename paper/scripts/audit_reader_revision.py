@@ -3,6 +3,7 @@
 import hashlib,json,re,subprocess,sys
 from pathlib import Path
 from revision_sources import preserved_mathematical_source
+from edition_sources import sources
 PAPER=Path(__file__).resolve().parents[1]
 R=PAPER/'reviews/polish-2026-09-17'
 def sha(b):return hashlib.sha256(b).hexdigest()
@@ -16,16 +17,11 @@ def main():
   assert sha(raw)==digest,('mathematical source changed',old,new)
   checked.append({'old':old,'new':new,'baseline_sha256':digest})
  assert len(checked)==50,len(checked)
- # Every live TeX source is reachable exactly once from main.tex. This also
- # checks that relocation did not leave an unused proof or double inclusion.
- seen={}
- def visit(path):
-  seen[path]=seen.get(path,0)+1;assert seen[path]==1,('duplicate input',path)
-  text=(PAPER/path).read_text()
-  for target in re.findall(r'\\input\{([^}]+)\}',text):visit(target+'.tex')
- visit('main.tex')
- actual={'main.tex'}|{str(p.relative_to(PAPER)) for d in ['sections','appendices'] for p in (PAPER/d).rglob('*.tex')}
- assert set(seen)==actual,('unreachable source',actual-set(seen))
+ # Both wrappers use a common source tree; check their union for orphaned files.
+ seen=set(sources(PAPER,'full'))|set(sources(PAPER,'mathematics'))
+ actual={str(p.relative_to(PAPER)) for d in ['sections','appendices','editions','shared'] for p in (PAPER/d).rglob('*.tex')}
+ actual|={'main.tex','mathematics.tex','document.tex','data/problem-statements.tex'}
+ assert seen==actual,('unreachable source',actual-seen)
  # Supplied correspondence remains identical to the inputs from the first revision.
  historical=json.loads((PAPER/'reviews/revision-2026-09-17/baseline.json').read_text())
  for name in ['review.md','review-update1.md','review2.md','reply.md']:
@@ -46,6 +42,9 @@ def main():
   result['unchanged_mathematical_source_files']=49
   result['declared_corrected_source_files']=1
   dest=PAPER/'reviews/v3-2026-09-19/reader-preservation-audit.json'
+ if (PAPER/'reviews/v4-2026-09-19/baseline.json').exists():
+  result['scope']='Historical proof bindings checked against preserved v3; current proofs checked by audit_v4.py. Both current edition input graphs checked.'
+  dest=PAPER/'reviews/v4-2026-09-19/reader-preservation-audit.json'
  dest.write_text(json.dumps(result,indent=2)+'\n')
  print('PASS: 50 mathematical source bindings checked, including declared later corrections; TeX navigation, historical correspondence and data preserved.')
 if __name__=='__main__':main()

@@ -1,0 +1,104 @@
+\subsection{A semi-abelian group which is not monomial: Problem 21.68}
+\label{subsec:semiabelian}
+\problemstatement{21.68}
+
+A finite group is \emph{monomial} if each irreducible complex
+representation is induced from a one-dimensional representation of
+a subgroup. In the definition used in \kn{21.68}, semi-abelian
+groups are obtained along a subgroup chain by abelian semidirect
+extensions and quotients. The construction below uses only split
+extensions with abelian kernels.
+
+\begin{theorem}
+\label{thm:semiabelian}
+There is a semi-abelian group of order $2,592$ with a non-monomial
+irreducible complex representation of degree eight.
+\end{theorem}
+
+\begin{proof}
+Let $E$ be the even-weight subspace of $\F_2^4$ and let $A_4$
+permute its coordinates. Put $K=E\rtimes A_4$, with multiplication
+$(v,g)(w,h)=(v+g(w),gh)$. In $K$, set
+\[
+z=(1111,1),\quad
+x=(1010,(12)(34)),\quad
+y=(1001,(13)(24)),\quad
+r=(0000,(234)).
+\]
+Direct multiplication gives
+\[
+x^2=y^2=(xy)^2=z,\qquad
+z^2=1,\qquad r^3=1,\qquad
+rxr^{-1}=y,\qquad ryr^{-1}=xy.
+\]
+The eight elements $1,z,x,zx,y,zy,xy,zxy$ are distinct:
+their permutation parts form the Klein four group, with two
+distinct vectors above each part. Thus $\langle x,y\rangle$
+is quaternion of order eight and
+$H=\langle x,y,r\rangle$ has order 24.
+Its abelianization is $C_3$: in an abelian quotient the
+conjugation relations give $x=y=xy$, whence $x=y=1$.
+In particular, $H$ has no subgroup of index two.
+
+The group $H$ has an irreducible complex representation $\rho$
+of degree two. To see this explicitly, represent $x,y$ by the
+quaternion units $i,j$ and $r$ by
+$(-1-i-j-k)/2$. The latter has order three and conjugates
+$i$ to $j$ and $j$ to $k=ij$.
+The usual two-dimensional complex representation of the
+quaternions is irreducible: $i$ has the two coordinate
+eigenlines and $j$ interchanges them.
+
+Let $\Omega=K/H$, a set of four left cosets, and put
+\[
+B=\left\{b\in\F_3^\Omega:\sum_{\omega\in\Omega}b_\omega=0\right\},
+\qquad G=B\rtimes K.
+\]
+Then $|G|=27\cdot96=2,592$. The chain
+\[
+1<C_3<A_4<K<G
+\]
+exhibits the required abelian split extensions.
+Fix $\omega_0=H$ and a primitive cube root of unity $\zeta$.
+The character $\lambda(b)=\zeta^{b_{\omega_0}}$ has stabilizer
+exactly $H$ in $K$. Indeed, the four coordinate characters on
+$B$ are distinct: for distinct coordinates $u,v$, choose a
+third coordinate $w$ and take $b_u=1$, $b_w=-1$, with all
+other coordinates zero. Hence the inertia subgroup of
+$\lambda$ in $G$ is $I=B\rtimes H$.
+
+The representation
+$\tau(b,h)=\lambda(b)\rho(h)$ of $I$ is well-defined because
+$H$ fixes $\lambda$. Let $V=\Ind_I^G\tau$. Its restriction
+to $B$ has four distinct weights, each of multiplicity two.
+The group $G$ permutes their weight spaces transitively,
+and the stabilizer acts irreducibly on each such space.
+Every invariant subspace splits into $B$-weight spaces,
+using the averaging projections for the finite abelian
+group $B$. Therefore $V$ is irreducible and has dimension
+eight.
+
+Suppose $V\cong\Ind_L^G\mu$ with $\mu$ one-dimensional.
+Then $[G:L]=8$. Since $B$ is a normal 3-group,
+$[B:B\cap L]=[BL:L]$ is a power of three dividing eight;
+thus $B\le L$. The character $\mu|_B$ must be one of the
+four weights of $V|_B$. After conjugation, assume it is
+$\lambda$. A linear character is invariant under
+conjugation by its own domain, so $L$ stabilizes $\lambda$.
+Thus $L\le I$ and
+\[
+[I:L]=[G:L]/[G:I]=8/4=2.
+\]
+Because $B\le L$, this gives an index-two subgroup of
+$I/B\cong H$, a contradiction.
+\end{proof}
+
+Kida's paper~\cite{kida} provided the small order-96 configuration
+and posed the monomiality conjecture. The abelian extension and
+the character obstruction are the proposed additional argument
+in the experimental archive. The proof does not rely on a
+SmallGroups identifier. That identifier and separate finite
+checks are useful for reproduction, not for the logical
+existence of the example.
+\input{sections/attribution/21-68}
+

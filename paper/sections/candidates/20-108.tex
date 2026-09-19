@@ -1,0 +1,97 @@
+\subsection{An order-four element in a multiple holomorph quotient: Problem 20.108}
+\label{subsec:holomorph}
+\problemstatement{20.108}
+
+For a group $G$, write $\Hol(G)$ for the normalizer of its
+left regular action in the permutation group on its underlying
+set, and $\NHol(G)$ for the normalizer of $\Hol(G)$.
+Tsang's \kn{20.108}(a,b) asks whether a centerless group,
+and specifically a finite one, can have
+$T(G)=\NHol(G)/\Hol(G)$ which is not elementary abelian of
+exponent two.
+
+\begin{theorem}
+\label{thm:holomorph}
+For $G=(C_{11}\times C_{11})\rtimes C_5$, where a generator
+of $C_5$ acts by $\operatorname{diag}(3,9)$ over $\F_{11}$,
+the group $G$ is centerless and $T(G)$ contains an element
+of order four.
+\end{theorem}
+
+\begin{proof}
+Put $\lambda=3\in\F_{11}$, of order five, and represent
+$G$ by triples with multiplication
+\[
+(x,y,k)(x',y',k')
+ =\bigl(x+\lambda^kx',\,y+\lambda^{2k}y',\,k+k'\bigr),
+\]
+where $k,k'\in\Z/5\Z$. Commuting with all translations
+forces a central element to have $k=0$; commuting with
+$(0,0,1)$ then forces $x=y=0$. Thus $Z(G)=1$.
+
+The unique Sylow 11-subgroup $V=\F_{11}^2$ is
+characteristic. An automorphism induces a matrix $M$
+on $V$ and multiplication by
+$u\in(\Z/5\Z)^\times$ on $G/V$. Compatibility requires
+\[
+M\operatorname{diag}(\lambda,\lambda^2)
+ =\operatorname{diag}(\lambda^u,\lambda^{2u})M.
+\]
+Equality of the eigenvalue sets gives
+$\{u,2u\}=\{1,2\}$ modulo five, so $u=1$ and $M$ is
+diagonal. The image of a quotient generator can have
+any translation part. Conversely, the resulting maps
+\[
+(x,y,k)\longmapsto
+\bigl(ax+b(1-\lambda^k),\,
+dy+e(1-\lambda^{2k}),\,k\bigr),
+\qquad a,d\ne0,
+\]
+are automorphisms.
+
+A normalizer of the left regular group, after a
+translation making it fix the identity, is an
+automorphism. Consequently the full holomorph consists
+exactly of the permutations
+\[
+h(x,y,k)=
+\bigl(Ax+B+C\lambda^k,\,
+Dy+E+F\lambda^{2k},\,k+j\bigr),
+\tag{$*$}
+\]
+with $A,D\ne0$ and all remaining parameters arbitrary.
+Define
+\[
+\theta(x,y,k)=(y,\lambda^{-k}x,2k),\qquad
+\theta^{-1}(X,Y,K)=(\lambda^{3K}Y,X,3K).
+\]
+Direct composition gives
+\begin{align*}
+(\theta h\theta^{-1})(X,Y,K)
+ =\bigl(&DX+E+F\lambda^K,\\
+        &\lambda^{-j}AY+\lambda^{-j}C+
+                    \lambda^{-j}B\lambda^{2K},\ K+2j\bigr).
+\end{align*}
+This again has form $(*)$. Since the holomorph is finite,
+the resulting containment is equality, so $\theta$ normalizes it.
+Moreover,
+\[
+\theta^2(x,y,k)=(\lambda^{-k}x,\lambda^{-2k}y,-k),
+\qquad \theta^4=1.
+\]
+Every holomorph element acts on the final coordinate
+by a translation, whereas $\theta^2$ acts by negation.
+These are different functions on $\Z/5\Z$. Therefore
+$\theta^2\notin\Hol(G)$ and the coset of $\theta$ has
+order exactly four.
+\end{proof}
+
+Tsang's paper~\cite{tsang} singled out this group among
+exceptions to its computational coverage. The proof
+above uses that lead but not the paper's general
+classification argument. The experimental checks
+compare the explicit holomorph with GAP's automorphism
+group and evaluate the normalizer identity separately.
+Determining all of $T(G)$ is unnecessary for the stated
+conclusion.
+

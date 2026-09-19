@@ -20,7 +20,7 @@ def v2_source(paper, relative):
 
 def preserved_mathematical_source(paper, relative):
     """Return the old source only for a hash-bound, explicitly recorded change."""
-    raw = (paper / relative).read_bytes()
+    raw = v3_source(paper, relative)
     record = paper / 'reviews/v3-2026-09-19/source-change.json'
     if record.exists():
         correction = json.loads(record.read_text())
@@ -29,4 +29,16 @@ def preserved_mathematical_source(paper, relative):
             old = v2_source(paper, relative)
             assert digest(old) == correction['before_sha256'], relative
             return old
+    return raw
+
+
+def v3_source(paper, relative):
+    """Read preserved v3 for a historical check; current v4 is audited separately."""
+    revision = paper / 'reviews/v4-2026-09-19'
+    if not (revision / 'baseline.json').exists():
+        return (paper / relative).read_bytes()
+    baseline = json.loads((revision / 'baseline.json').read_text())
+    bindings = {row['path']: row['sha256'] for row in baseline['sources']}
+    raw = (revision / 'baseline-source' / relative).read_bytes()
+    assert digest(raw) == bindings[relative], ('changed v3 baseline', relative)
     return raw

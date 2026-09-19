@@ -1,0 +1,64 @@
+\subsection{Order dimension of Chernikov subgroup lattices: Problem 11.116}
+\label{cand:11.116}
+
+Suppose \(D\trianglelefteq G\), \([G:D]=m<\infty\), and
+\[
+ D=C_{p_1^\infty}\times\cdots\times C_{p_r^\infty},
+\]
+with distinct primes \(p_i\) and \(r\geq1\).
+Then the order dimension of the entire subgroup lattice of
+\(G\) is at most \(2rm\).
+
+Here is a coordinate proof. Write \(C_{p^\infty}\)
+additively as \(\Z[1/p]/\Z\). Its unique terminating
+base-\(p\) expansion
+\(x=\sum_{i\geq1}d_i p^{-i}\), \(0\leq d_i<p\),
+defines a bijection to \(\mathbb N_0\) by
+\[
+ b_p(x)=\sum_{i\geq1}d_i p^{i-1}.
+\]
+A coset of the subgroup of order \(p^n\) has all
+digits beyond \(n\) fixed. Its image is an integer
+interval \([ap^n,(a+1)p^n-1]\); the whole group maps
+to \(\mathbb N_0\). Inclusion is therefore determined
+by two endpoint inequalities, left endpoints ordered
+in reverse and right endpoints in the usual order.
+
+Every subgroup of \(D\) is the product of its primary
+components: Chinese remaindering recovers each component
+as an integer multiple of an element. Thus the product
+of these bijections sends every coset of a subgroup of
+\(D\) to a nonempty box. Its inclusion order is determined
+by \(2r\) endpoint coordinates. Include the empty set
+by giving it left endpoints \(+\infty\) and right
+endpoints \(-\infty\).
+
+Fix representatives \(t_q\) of the \(m\) cosets of \(D\).
+For \(H\leq G\), its fiber
+\[
+ S_q(H)=\{d\in D:dt_q\in H\}
+\]
+is empty or a coset of \(H\cap D\). If \(d_0\) lies
+in the fiber, multiplying \(dt_q\) by
+\((d_0t_q)^{-1}\) proves that the fiber is
+\((H\cap D)d_0\). The fibers partition \(H\), and
+\(H\leq K\) exactly when every fiber of \(H\) is
+contained in the corresponding fiber of \(K\).
+This embeds the subgroup lattice into a product of
+\(2rm\) chains.
+
+For clarity, a poset embedded in \(d\) chains has order
+dimension at most \(d\): use the full coordinate
+lexicographic order to break ties, and for each
+coordinate order first by that coordinate. All \(d\)
+orders extend the poset, and any failure of comparison
+is detected in at least one coordinate. Their
+intersection is exactly the original order.
+
+A Chernikov group has such a finite-index divisible
+subgroup. The question's exclusion of two quasicyclic
+factors for the same prime ensures the required distinct
+primes. Finite groups have finite subgroup lattices
+and cause no exception. The extension need not split.
+Source: \artifact{research/11.116-proof.md}.
+

@@ -1,0 +1,91 @@
+\subsection{Grothendieck classes and semiperfectness: Problem 21.60}
+\label{cand:21.60}
+
+Let \(G=C_3\rtimes C_4=\langle a,b:a^3=b^4=1,\
+bab^{-1}=a^{-1}\rangle\), \(R=\Z_{(2)}\), and
+\(k=\F_2\). Every simple \(kG\)-module is the reduction
+of a simple rational module, but \(RG\) is not
+semiperfect. Thus the nonnegative-combination criterion
+in the question does not suffice.
+
+The central involution \(b^2\) acts trivially on a
+simple \(kG\)-module: its difference from the identity
+is nilpotent with a nonzero invariant kernel.
+Every such module factors through \(S_3\). In \(kS_3\),
+the central idempotent \(e=1+a+a^2\) cuts out \(kC_2\),
+whose only simple module is \(k\). The complementary
+four-dimensional algebra is \(M_2(k)\), via
+\[
+ A=\begin{pmatrix}0&1\\1&1\end{pmatrix},\qquad
+ B=\begin{pmatrix}1&1\\0&1\end{pmatrix}.
+\]
+These satisfy the relations, and \(I,A,B,AB\) are
+linearly independent, proving the identification.
+Its only simple module is the natural module \(V\).
+This lifts to the rational representation with matrices
+\[
+ A_{\Q}=\begin{pmatrix}0&-1\\1&-1\end{pmatrix},\qquad
+ B_{\Q}=\begin{pmatrix}1&-1\\0&-1\end{pmatrix}.
+\]
+The \(a\)-matrix has irreducible polynomial
+\(X^2+X+1\), proving rational simplicity, and the
+stable lattice \(R^2\) reduces to \(V\).
+The trivial module lifts trivially. Hence every
+finite-dimensional \(kG\)-module has Grothendieck
+class a nonnegative combination of reductions of
+simple rational modules, by a composition series.
+
+For the obstruction to semiperfectness, let
+\(E=\Q(\omega)\), \(\omega^2+\omega+1=0\), and
+form the quaternion algebra
+\[
+ D=E+Ej,\qquad j^2=-1,\qquad ju=\bar u j.
+\]
+The norm of \(u+vj\) is \(u\bar u+v\bar v\).
+For \(u=x+y\omega\), its summand is
+\(x^2-xy+y^2\); the norm is positive on nonzero
+elements. The conjugate divided by the norm gives
+an inverse, so \(D\) is a division algebra.
+The order \(O=R[\omega]+R[\omega]j\) is a quotient
+of \(RG\) by \(a\mapsto\omega,b\mapsto j\).
+Its reduction is \(M_2(k)\), since \(\omega,j\)
+map to the matrices \(A,B\) above and their four
+basis images are independent.
+
+Moreover \(J(O)=2O\). For every \(y\in O\), the norm
+of \(1-2y\) is congruent to one modulo \(2R\),
+and quaternion conjugation preserves \(O\);
+the inverse formula shows \(1-2y\) is a unit.
+The radical unit criterion gives \(2O\subseteq J(O)\),
+and the semisimplicity of \(O/2O\) gives the reverse
+inclusion. The nontrivial idempotents of \(M_2(k)\)
+cannot lift to \(O\), because a subring of a division
+ring has only idempotents zero and one.
+Thus \(O\) is not semiperfect.
+
+A quotient of a semiperfect ring is semiperfect:
+its quotient by its Jacobson radical is a quotient
+of the original semisimple quotient; idempotents
+lift first to that semisimple ring, then to the
+original ring, and finally to the quotient.
+Consequently \(RG\) is not semiperfect either.
+The coefficient ring is the rational localization,
+not the \(2\)-adic completion.
+
+The question is Conjecture~9 in the retained version
+of \cite{johnston-rumynin}. The example also conflicts
+with its Proposition~3.3 as written. The extension-lifting
+step there cannot hold for arbitrary chosen lattices:
+with trivial \(C_2\)-actions,
+\[
+ \operatorname{Ext}^1_{RC_2}(R,R)=0,\qquad
+ \operatorname{Ext}^1_{kC_2}(k,k)=k.
+\]
+Directly, an extension with fixed trivial submodule
+and quotient has generator matrix
+\(\left(\begin{smallmatrix}1&t\\0&1\end{smallmatrix}\right)\);
+its square forces \(2t=0\) over \(R\), whereas
+\(t=1\) gives a nonsplit extension over \(k\).
+This concerns the cited version and step, and does
+not import the proposition as a valid premise.
+Source: \artifact{research/21.60-proof.md}.

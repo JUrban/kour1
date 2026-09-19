@@ -1,0 +1,127 @@
+\section{Independent review and mathematical dialogue}
+\label{sec:external-review}
+
+The external reviewer was \textbf{Anthropic's Claude Opus[1m]}
+(\artifact{claude-opus-5[1m]}), with \texttt{xhigh} reasoning, running
+through \textbf{Claude Code}. The organizers supplied this identification
+and configuration. Claude reviewed the manuscript as a separate model
+from a different provider, wrote its own checking programs, and discussed
+its findings with Codex. We credit Claude with the independent mathematical
+review, computational reconstructions, source checks and the suggestion
+that led to the strengthened surface example below.
+
+\subsection{What was checked}
+
+In the first report, Claude reported comparing all 46 candidate entries
+with the Notebook and verifying a majority of the proofs in full detail.
+It also examined the partial results and prior-work deductions.
+Much of the finite checking was reconstructed from the mathematical
+descriptions before the authors' programs were available to the reviewer.
+The resulting checks therefore provided evidence beyond rerunning the
+same implementation. They included finite groups and their characters,
+permutation and matrix constructions, polynomial identities, word
+algorithms and source-dependent estimates.
+
+Some of the most substantial confirmations concern the carpet results
+19.61--19.62. Claude independently rebuilt Chevalley constants and used
+its own saturation computation to recover all 104 derived-carpet targets
+and all 300 square-completion targets. It also checked the 19 displayed
+derivations. For the main examples, it reconstructed the order-2,592
+non-monomial group and the order-605 multiple-holomorph example in GAP.
+These confirmations support both the displayed arguments and their
+finite computational inputs.
+
+After receiving the authors' reply and accessible source material, Claude
+conducted a second round. It replayed the documented carpet checks,
+verified the order-512 inputs used for 21.114, and checked the finite
+cycle data for 15.92. Its final assessment remained acceptance after
+revision, with increased confidence in the mathematical content.
+The first report stated that it found no false theorem among the claims it could settle;
+the follow-up resolved several items that had initially lacked sufficient
+accessible evidence. The reports give the assessment of each entry.
+
+\subsection{What changed through discussion}
+
+The exchange improved the mathematics as well as its presentation.
+Three examples illustrate the different roles of review.
+
+\paragraph{A stronger counterexample: 14.72.}
+The original surface had a smooth fixed Cartier divisor, but the reduced
+divisor was not globally principal. Claude identified the distinction
+and suggested removing a suitable orbit of fibres. Codex worked out
+the invariant open \(x^2+1\ne0\), on which
+\(f=y-(1+i)x\) generates the fixed ideal while the quotient singularity
+survives. Section~\ref{cand:14.72} proves this strengthening and credits
+the suggestion. Codex checked the new argument during revision; the exchanged reports
+concern the original surface.
+
+\paragraph{An objection corrected: 16.28.}
+Claude's first text extraction lost the algebraic-closure bar in
+\(\overline{\F_5(t)}\), leading to an objection to the field used in
+the example. The authors pointed to the original notation, and Claude
+checked the rendered page and withdrew the objection. The argument did
+not need repair. The exchange also replaced speculation about proposers'
+intentions with explicit convention statements for other entries.
+
+\paragraph{Evidence made accessible.}
+Claude confirmed the prime-cycle input to 15.92 once the finite data
+were available, and identified the missing small input for the fourth
+ancillary carpet checker. The revision supplies that file and explains
+the choice of prime. Claude also identified contemporaneous work on
+21.106, now acknowledged alongside the proof. These changes improve
+what readers can check and how they can assess attribution.
+
+The review provides substantial evidence for the arguments examined,
+but missed the statement error in 10.35 described below.
+Its independence concerns the reviewing model and the separately written
+checks; it is not a proof of discovery independence, human specialist
+endorsement or formal verification. One sizeable verification input,
+the \(n=7\) certificate for 20.100, remains outside the public repository,
+so the public logs cannot support a fresh complete replay of that case.
+We preserve the reports and replies verbatim in
+Appendices~\ref{app:review-original}--\ref{app:reply-final}, including
+withdrawn assertions. Appendix~\ref{app:review-changes} records the changes.
+
+\subsection{Contemporary solutions identified during revision}
+
+On 18 September, Evgeny Khukhro drew our attention to other AI-assisted
+work on questions in the paper. The full list overlaps eleven deadline
+entries. He reported that group theorists had confirmed alternative
+solutions for 21.68, 16.28(a) and 15.89; many other drafts remained
+unverified. This information concerns those alternatives, and does not
+constitute specialist review of our whole portfolio.
+
+For version~2, Codex read the eleven cited papers, compared their
+constructions and hypotheses with our proofs, checked additional primary
+references, and carried out targeted algebraic and GAP checks.
+Appendix~\ref{app:contemporary-comparison} records the results and the
+available chronology. This later comparison is separate from Claude's
+earlier assessment. In particular, the reported Lean formalizations in
+the alternative papers have not been built here. We thank Khukhro for
+the information and acknowledge the authors alongside the affected proofs.
+
+\subsection{A missed statement error: withdrawal of 10.35}
+\label{sec:withdrawal-10-35}
+
+On 19 September, Khukhro pointed out that 10.35 asks about residuality
+in torsion-free subgroups of \(\GL_n(\overline{\Q})\), not
+\(\GL_n(\Q)\). The bar is present in the supplied PDF, although
+text extraction drops it. Codex's original audit incorrectly stated
+that visual inspection had confirmed its absence. Claude subsequently
+accepted the entry, including its matrix lemma. Both reviews therefore
+failed to detect that the argument addressed a different question.
+
+The example already embeds over \(\Q(i)\), so the claimed resolution
+is withdrawn. The valid obstruction over \(\Q\) and \(\R\) is retained
+in Section~\ref{cand:10.35}. The historical ledger still has 46 entries;
+45 remain candidates after this correction. Khukhro described his reading
+as cursory and proposed listing the submissions as unverified AI solutions;
+this communication is not specialist validation of the remaining entries.
+
+Codex then checked rendered statements for all 46 historical candidates
+against the manuscript's stated scope. This pass found no further
+transcription mismatch requiring withdrawal, with the existing convention
+qualifications retained. It is a statement audit, not a fresh proof or
+priority verification. Appendix~\ref{app:statement-correction} gives
+the evidence and limits. Checking the original question, the proof of
+the stated theorem, and its novelty are separate obligations.

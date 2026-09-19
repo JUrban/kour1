@@ -1,0 +1,131 @@
+\subsection{Solubility from restricted coprime commutators: Problem 19.56}
+\label{cand:19.56}
+
+For finite \(G\), let
+\[
+ X(G)=\{[x,y]: |x|,\ |y|\text{ are powers of distinct primes}\}.
+\]
+Suppose \(|ab|\geq|a||b|\) for \(a,b\in X(G)\) of
+coprime orders. Then \(G\) is soluble. In fact it
+suffices to impose the inequality when the outputs
+\(a,b\) also have prime-power orders.
+The prime-power restrictions on the \emph{inputs}
+are the additional issue here, compared with nearby
+commutator criteria \cite{monakhov-derived,bastos-monetta}.
+
+First, a primary element \(a\in X(G)\) normalizing a
+subgroup \(R\) of different prime-power order must
+centralize \(R\). For \(z\in R\), the element
+\(b=[a,z]\) lies in \(R\cap X(G)\), while
+\(ab=a^z\). If \(b\ne1\), the hypothesis gives
+\(|a|=|ab|\geq|a||b|>|a|\), a contradiction.
+This adapts the normalizer argument in
+\cite{monakhov-derived}, with the required input
+orders checked explicitly.
+
+For \(P\in\operatorname{Syl}_p(G)\), let \(O^p(G)\)
+be the \(p\)-residual, the intersection of normal
+subgroups with \(p\)-group quotient. The hyperfocal
+theorem in the finite-group form of
+\cite[Lemma 2.2]{bcglo} gives
+\[
+ P\cap O^p(G)=
+ \langle [x,g]:x\in Q\leq P,\ g\in N_G(Q),\
+                                      (|g|,p)=1\rangle.
+\]
+Decompose \(g\) into its commuting primary
+components inside \(\langle g\rangle\).
+They still normalize \(Q\), and
+\([x,uv]=[x,v][x,u]^v\) expresses each generator
+as a product of elements of \(P\cap X(G)\).
+Conversely, every \(X(G)\)-value vanishes in
+a \(p\)-group quotient because at least one input
+does. Hence
+\[
+ P\cap O^p(G)=\langle P\cap X(G)\rangle.
+\]
+For perfect \(G\), its \(p\)-group quotient is
+trivial, so these primary \(X(G)\)-values generate
+every Sylow subgroup.
+
+Take a nonsoluble counterexample of least order.
+The condition passes to subgroups, so every proper
+subgroup is soluble and \(G=G'\).
+Its soluble radical \(R\) is contained in every
+maximal subgroup: otherwise \(G=RM\) makes
+\(G/R\) soluble. Thus \(R\leq\Phi(G)\).
+The Frattini subgroup of a finite group is
+nilpotent: the Frattini argument for any of
+its Sylow subgroups gives
+\(G=\Phi(G)N_G(P)\), forcing \(N_G(P)=G\).
+Thus \(R=\Phi(G)\), and \(G/R\) is minimal
+nonabelian simple.
+
+For a Sylow subgroup \(R_p\) of \(\Phi(G)\),
+the normalizer observation makes every primary
+\(X(G)\)-value of another prime centralize
+\(R_p\). The generation result makes its
+centralizer contain all the corresponding
+Sylow subgroups of \(G\). That normal
+centralizer has \(p\)-power index, and
+perfection forces it to be \(G\). It follows that
+\[
+ \Phi(G)=Z(G),\qquad S=G/Z(G)\text{ is minimal simple}.
+\]
+The order condition has not been passed to a
+quotient at any point.
+
+We use the standard local consequence of Thompson's
+minimal-simple classification recorded in
+\cite[Proposition 18]{bastos-monetta}: a finite
+minimal simple group contains a nontrivial
+elementary abelian \(2\)-subgroup \(V\) with
+a nontrivial action by an odd-order subgroup
+normalizing it. Choose an element of that subgroup
+acting nontrivially and decompose it into primary
+components; at least one component \(\bar y\),
+of odd prime-power order, acts nontrivially.
+This weaker primary-order choice suffices here.
+The archive also supplies explicit local matrices
+for all five minimal-simple families, giving an
+odd-prime-order choice.
+
+The preimage of \(V\) in \(G\) has central derived
+subgroup, hence is nilpotent of class at most two.
+Its unique Sylow \(2\)-subgroup \(P\) maps onto
+\(V\). Choose a primary lift \(y\) of \(\bar y\)
+by taking the appropriate primary component of
+any lift; it normalizes \(P\). For some \(u\in P\),
+\[
+ a=[u,y]\in P\cap X(G)
+\]
+has nonidentity image \(\bar a\in V\), an involution.
+
+The Baer--Suzuki theorem, in its usual \(p\)-element
+form recalled in \cite{guralnick-malle-baer}, gives
+a conjugate \(\bar a^{\bar g}\) such that
+\(\langle\bar a,\bar a^{\bar g}\rangle\) is not a
+\(2\)-group, since \(O_2(S)=1\).
+Two involutions generate a dihedral group.
+Their product has order divisible by an odd
+prime \(r\), and its appropriate power \(c\)
+has order \(r\) and is inverted by \(\bar a\).
+
+The preimage of \(\langle c\rangle\) is abelian,
+as its quotient modulo the central kernel is
+cyclic. Its unique Sylow \(r\)-subgroup \(R_r\)
+maps onto \(\langle c\rangle\) and is normalized
+by \(a\), in the preimage of the dihedral group.
+The normalizer observation therefore makes \(a\)
+centralize \(R_r\). In the quotient this says
+that \(\bar a\) centralizes \(c\), contradicting
+its inversion action on an element of odd order.
+This proves the theorem.
+
+The hyperfocal theorem, minimal-simple local
+structure, and Baer--Suzuki theorem are imported
+dependencies. The normalizer and central-extension
+strategy has precedents in the cited works;
+the required replacement is generation and
+witness construction with coprime primary
+inputs. Source: \artifact{research/19.56-proof.md}.

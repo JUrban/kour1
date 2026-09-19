@@ -1,0 +1,55 @@
+\subsection{A resolvable group without an expansive sequence: Problem 21.107}
+\label{cand:21.107}
+
+As usual, the open sets in the definition of an expansive
+sequence are understood to be nonempty: every such open
+set must meet all sufficiently late terms of a sequence
+of pairwise disjoint finite subsets.
+Take a free ultrafilter \(\mathcal U\) on \(\mathbb N\),
+obtained by extending the cofinite filter, and the countable
+Boolean group \(B=[\mathbb N]^{<\omega}\) under symmetric
+difference. For \(A\in\mathcal U\), put
+\(H_A=[A]^{<\omega}\) and use these subgroups as an
+identity neighborhood base. Intersections are
+\(H_A\cap H_C=H_{A\cap C}\), so this defines a group
+topology. It is Hausdorff by deleting a coordinate
+on which two elements differ, and nondiscrete because
+every \(A\in\mathcal U\) is infinite.
+
+The sets
+\[
+ D_k=\{s\in B:v_2(|s|+1)=k\},\qquad k\geq0,
+\]
+partition \(B\) into dense subsets. Given \(x+H_A\)
+and \(k\), choose an arbitrarily large
+\(r=2^k(2q+1)-1\geq|x|\), and add to \(x\) a
+subset of \(A\setminus x\) of size \(r-|x|\).
+This gives a point of the coset in \(D_k\).
+
+Suppose \((F_n)\) is any sequence of pairwise disjoint
+finite subsets of \(B\). Infinitely many empty terms
+already preclude expansiveness. Otherwise discard
+the finitely many empty terms and the at most one
+term containing the identity, leaving an infinite
+sequence of nonempty finite families of nonempty
+supports. Put \(S_n=\{\max s:s\in F_n\}\).
+For every \(r\), only finitely many \(S_n\) meet
+\(\{1,\ldots,r\}\), since there are just \(2^r-1\)
+nonempty supports with maximum at most \(r\) and
+the \(F_n\) are disjoint.
+Choose a subsequence with
+\(\max S_{n_j}<\min S_{n_{j+1}}\).
+Let \(E\) be the union of its even-indexed \(S_{n_j}\).
+Either \(E\in\mathcal U\) or its complement is in
+\(\mathcal U\). Whichever belongs to \(\mathcal U\)
+misses all \(S_{n_j}\) of the opposite parity.
+The corresponding open subgroup \(H_A\) therefore
+misses infinitely many \(F_{n_j}\), a contradiction.
+
+Thus countable resolvability does not imply existence
+of an expansive sequence. Only an ordinary free
+ultrafilter is used, with no selectivity assumption.
+The underlying filter topology is standard; the
+dense partition and obstruction are given explicitly.
+Source: \artifact{research/21.107-proof.md}.
+

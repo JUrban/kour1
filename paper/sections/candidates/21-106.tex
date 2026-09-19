@@ -1,0 +1,118 @@
+\subsection{A finite definable set generating an infinite subgroup: Problem 21.106}
+\label{subsec:concise}
+\problemstatement{21.106}
+
+Following Conte and Petschick~\cite{contepetschick}, a formula
+$\varphi(x)$ is \emph{concise} in a class of groups if every finite
+truth set in that class generates a finite subgroup.
+Petschick's \kn{21.106} asks whether every first-order formula with
+one free variable is concise in residually finite groups.
+Here formulas may have alternating quantifiers; restricting to
+group words or to existential formulas gives different questions.
+
+\begin{theorem}
+\label{thm:concise}
+There is a parameter-free first-order formula whose truth set in
+the integral Heisenberg group is $\{z,z^{-1}\}$, where $z$ generates
+its infinite cyclic center. In particular, the formula is not
+concise in residually finite groups.
+\end{theorem}
+
+\begin{proof}
+Use the following abbreviations in the language of groups:
+\begin{align*}
+\operatorname{Cent}(z)&:\quad \forall t\;[z,t]=1,\\
+P(u)&:\quad \forall z\,
+ \bigl(\operatorname{Cent}(z)\Longrightarrow
+                  \exists t\;[u,t]=z\bigr),\\
+Q(u,v)&:\quad \forall g\,\exists h\,\exists k\,
+ \bigl(g=hk\ \wedge\ [h,u]=1\ \wedge\ [k,v]=1\bigr).
+\end{align*}
+Define
+\[
+\varphi(x):\quad \exists u\,\exists v\,
+ \bigl(x=[u,v]\ \wedge\ P(u)\ \wedge\ P(v)\ \wedge\ Q(u,v)\bigr).
+\]
+After renaming bound variables and expanding the abbreviations,
+this is a parameter-free formula with exactly one free variable.
+All its quantifiers range over group elements.
+
+Write the integral Heisenberg group as
+\[
+H=\Z^3,\qquad
+(a,b,c)(d,e,f)=(a+d,b+e,c+f+ae).
+\]
+Matrix multiplication, or direct calculation, gives
+\[
+(a,b,c)^{-1}=(-a,-b,ab-c),\qquad
+[(a,b,c),(d,e,f)]=(0,0,ae-db).
+\]
+Thus $Z(H)=\{(0,0,c):c\in\Z\}=\langle z\rangle$ with
+$z=(0,0,1)$. Reduction of coordinates modulo $m$ is a homomorphism
+to a finite group of order $m^3$. Choosing $m$ larger than the
+absolute value of a nonzero coordinate separates any nonidentity
+element, so $H$ is residually finite.
+
+Let $\pi:H\to\Z^2$ be projection onto the first two coordinates.
+For $u=(a,b,c)$, the third coordinates of $[u,t]$ form the ideal
+$a\Z+b\Z$. Consequently
+\[
+H\models P(u)\quad\Longleftrightarrow\quad \gcd(a,b)=1.
+\]
+If $(a,b)$ is primitive, the solutions of $as-br=0$ in
+$(r,s)\in\Z^2$ are precisely the multiples of $(a,b)$.
+For example, choose $\alpha a+\beta b=1$ and put
+$k=\alpha r+\beta s$; the determinant relation gives
+$ka=r$ and $kb=s$. Hence
+\[
+\pi(C_H(u))=\Z(a,b),
+\]
+and the centralizer is the full inverse image of this subgroup.
+
+Suppose $P(u)$ and $P(v)$ hold, with
+$\pi(u)=(a,b)$ and $\pi(v)=(d,e)$.
+Both centralizers contain $Z(H)$, so their set product is all of
+$H$ exactly when their projected subgroups sum to $\Z^2$.
+Indeed, a factorization after projection can be lifted, and its
+central error absorbed into the second factor. It follows that
+\[
+H\models Q(u,v)
+\quad\Longleftrightarrow\quad
+\Z(a,b)+\Z(d,e)=\Z^2
+\quad\Longleftrightarrow\quad ae-db=\pm1.
+\]
+Thus any value satisfying $\varphi$ is $z$ or $z^{-1}$.
+Conversely, the ordered pairs
+$((1,0,0),(0,1,0))$ and $((0,1,0),(1,0,0))$
+witness the two values. Therefore
+$H_\varphi=\{z,z^{-1}\}$, but
+$\langle H_\varphi\rangle\cong\Z$.
+\end{proof}
+
+The counterexample is already two-generated, torsion-free, and
+nilpotent of class two. It is residually a finite $p$-group for
+each prime $p$, by reduction modulo powers of $p$.
+The elements used to describe witnesses do not occur as parameters
+in the formula. No assertion that first-order truth commutes with
+finite quotients is needed. The existential-formula theorem of
+Conte and Petschick does not apply to this alternating formula.
+The experimental controls checked commutator arithmetic and finite
+interpretations, while the proof above establishes the infinite
+statement.
+
+Contemporaneous work recorded in a public repository credits Lily Zhang
+with a counterexample and proof and Evan Li with a Heisenberg
+simplification; it also supplies a Lean formalisation\cite{zhang-li-concise}.
+\iffullpaper
+Our first local proof commit is dated 10 September 2026, 21:05:23 UTC;
+the commit adding those Lean files is dated 11 September, 10:54:21 UTC.
+These are artifact timestamps, not discovery or verified upload times,
+and do not establish priority. We have not built that Lean development.
+The retrieval index in \reproductionlocation{} provides a limited
+record of source access, not a test of independence.
+\else
+These related constructions are credited without a claim of discovery
+priority. The reported Lean formalisation has not been built here.
+\fi
+\input{sections/attribution/21-106}
+

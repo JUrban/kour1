@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 from public_review_files import public_review_files
 from render_v3_changes import render
+from revision_sources import v3_source
 
 PAPER = Path(__file__).resolve().parents[1]
 REV = PAPER / 'reviews/v3-2026-09-19'
@@ -24,9 +25,9 @@ def main():
     correction = json.loads((REV / 'source-change.json').read_text())
     assert correction['path'] == 'sections/candidates/10-35.tex'
     assert correction['before_sha256'] == bindings[correction['path']]
-    assert sha(PAPER / correction['path']) == correction['after_sha256']
+    assert hashlib.sha256(v3_source(PAPER, correction['path'])).hexdigest() == correction['after_sha256']
     old = (REV / 'baseline-source' / correction['path']).read_text()
-    new = (PAPER / correction['path']).read_text()
+    new = v3_source(PAPER, correction['path']).decode()
     # The lemma and its proof, including the field hypothesis, remain verbatim.
     pattern = r'\\begin\{lemma\}.*?\\end\{proof\}'
     assert re.search(pattern, old, re.S)[0] == re.search(pattern, new, re.S)[0]
@@ -39,10 +40,10 @@ def main():
                  and name != correction['path']]
     assert len(unchanged) == 49
     for name in unchanged + ['sections/representative.tex']:
-        assert sha(PAPER / name) == bindings[name], name
+        assert hashlib.sha256(v3_source(PAPER, name)).hexdigest() == bindings[name], name
     for name in bindings:
         if name.startswith('appendices/correspondence/'):
-            assert sha(PAPER / name) == bindings[name], name
+            assert hashlib.sha256(v3_source(PAPER, name)).hexdigest() == bindings[name], name
 
     frozen = json.loads((PAPER / 'data/frozen-candidate-ledger.json').read_text())['candidates']
     current = json.loads((PAPER / 'data/current-assessment.json').read_text())
@@ -76,7 +77,7 @@ def main():
     for row in originals:
         assert sha(REV / row['copy']) == row['sha256']
     assert (PAPER / 'appendices/v3-changes.tex').read_text() == render()
-    assert r'\date{Version 3 --- 19 September 2026}' in (PAPER / 'main.tex').read_text()
+    assert r'\date{Version 3 --- 19 September 2026}' in v3_source(PAPER, 'main.tex').decode()
     for name in ['editors-reply1.md', 'editors-reply2.md']:
         assert PAPER / 'external-reviews' / name not in public_review_files(PAPER)
     result = {
@@ -90,7 +91,11 @@ def main():
         'representative_proofs_and_verbatim_correspondence_preserved': True,
         'v2_pdf_and_source_baseline_preserved': True,
     }
-    (REV / 'audit.json').write_text(json.dumps(result, indent=2) + '\n')
+    dest = REV / 'audit.json'
+    if (PAPER / 'reviews/v4-2026-09-19/baseline.json').exists():
+        result['scope'] += ' Historical v3 texts are checked against their preserved snapshot; current shared proofs are checked by audit_v4.py.'
+        dest = PAPER / 'reviews/v4-2026-09-19/v3-preservation-audit.json'
+    dest.write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
 
 

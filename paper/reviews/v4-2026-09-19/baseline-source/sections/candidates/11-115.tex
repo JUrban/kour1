@@ -1,0 +1,42 @@
+\subsection{11.115: equal commutator subgroups from a proper power}
+\label{cand:11.115}
+Let \(X=F(a,b)\), fix \(m\ge2\), and put
+\[
+ N=\langle\!\langle a^m\rangle\!\rangle_X,\qquad
+ T=\ker(X\longrightarrow C_m),\quad a\mapsto1,\ b\mapsto0.
+\]
+Then \(1<N<T<X\): \(a^m\) is nontrivial, \(a\notin T\), and
+\(b\in T\setminus N\), as the exponent-sum map to \(\Z\) in \(b\)
+shows. In particular \(N\) is not maximal in \(X\).
+Nevertheless
+\[
+ [T,N]=[X,N].
+\]
+To prove this, set \(K=[T,N]\). Both \(T,N\) are normal in \(X\),
+so \(K\trianglelefteq X\). In \(X/K\), the image of \(a^m\) commutes
+with \(b\in T\), and it already commutes with \(a\).
+It is therefore central. Its normal closure, the image of \(N\),
+is central too, giving \([X,N]\le K\). The reverse inclusion is immediate.
+This disproves the proposed strict containment.
+
+More explicitly,
+\[
+ K=\langle\!\langle[a^m,b]\rangle\!\rangle_X,\qquad
+ X/K=\langle a,b\mid[a^m,b]=1\rangle.
+\]
+This quotient is \(F(s_0,\ldots,s_{m-1})\rtimes\Z\), where a generator
+of \(\Z\) cyclically permutes the \(s_i\)'s:
+send \(a\) to that generator and \(b\) to \(s_0\).
+The inverse map uses \(s_i=a^iba^{-i}\); the final cyclic step is
+just \([a^m,b]=1\).
+Thus \(N/K\cong\Z\) is central and \(X/N\cong C_m*\Z\).
+The common subgroup \(K\) is nontrivial because \([a^m,b]\) is
+a nonempty reduced word, and \(K<N\) by exponent sum in \(a\).
+For the optional stronger condition that \(T\) itself not be maximal,
+take \(m=4\) and insert the kernel of the map to \(C_2\).
+
+The supplied question imposes no torsion-free quotient or
+primitive-element assumption. Those extra conditions would exclude
+this example. The short proof is self-contained; its intended scope
+and historical priority still warrant outside scrutiny.
+The full packet is \artifact{research/11.115-proof.md}.

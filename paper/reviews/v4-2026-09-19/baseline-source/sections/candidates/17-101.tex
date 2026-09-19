@@ -1,0 +1,72 @@
+\subsection{Homogeneous extensions of representations: Problem 17.101}
+\label{cand:17.101}
+
+Fix a commutative ring \(k\) with identity. A representation
+is a left \(kG\)-module \(V\) with its acting group \(G\);
+an embedding is injective on both sorts. The relevant
+homogeneity extends isomorphisms of subrepresentations
+whose group is finitely generated and whose module is
+finitely generated over that group's algebra. The coefficient
+ring remains fixed; compare the category in \cite{gvaramia-plotkin}.
+
+Given any set of partial isomorphisms
+\((f_i,\theta_i):(U_i,A_i)\to(U_i',B_i)\) in \((V,G)\),
+form the multiple HNN extension
+\[
+ H=\langle G,t_i:t_iat_i^{-1}=\theta_i(a),\
+                         a\in A_i,\text{ all }i\rangle.
+\]
+The HNN embedding theorem embeds \(G\) in \(H\)
+\cite{hnn}. Define
+\[
+ M=kH\otimes_{kG}V,\qquad
+ E=\bigoplus_i kH\otimes_{kA_i}U_i,\qquad
+ \delta_i(h\otimes u)=h\otimes u-ht_i^{-1}\otimes f_i(u),
+\]
+and \(W=M/\operatorname{im}\delta\).
+The map \(\delta_i\) is well-defined because
+\(at_i^{-1}=t_i^{-1}\theta_i(a)\) and \(f_i\) is equivariant.
+
+We verify that no vector of \(V\) is lost. The HNN
+Bass--Serre tree has vertices \(hG\) and edges \(hA_i\)
+with endpoints \(hG,ht_i^{-1}G\). Its being a tree follows
+from HNN normal form: a reduced closed path would be a
+reduced stable-letter word lying in \(G\). As \(k\)-modules,
+\(M\) is the direct sum of one copy of \(V\) at each
+vertex, and \(E\) the direct sum of the edge modules.
+Each edge maps injectively into both incident vertex
+modules, using the original inclusion and \(f_i\).
+
+If \(\delta(z)\) were supported at a single vertex \(v_0\)
+for a nonzero \(z\in E\), the finitely many nonzero edge
+components of \(z\) would form a finite forest with an edge.
+It has a leaf other than \(v_0\). The single incident
+nonzero edge contributes a nonzero vector at that leaf,
+by injectivity, a contradiction. Hence
+\(\operatorname{im}\delta\) intersects each vertex module
+trivially, and \(V\hookrightarrow W\).
+This argument uses no semisimplicity, purity, or
+finite-dimensionality.
+
+In \(W\), the edge relation gives \(t_i u=f_i(u)\).
+The automorphism of \((W,H)\) with components
+\[
+ w\mapsto t_iw,\qquad h\mapsto t_iht_i^{-1}
+\]
+therefore extends the prescribed partial isomorphism.
+Now repeat the construction at stages \(0,1,2,\ldots\),
+each time including all isomorphisms between finitely
+generated subrepresentations, and take the union.
+The domain and range of any such isomorphism in the
+union lie in a common stage: finitely many group and
+module generators suffice. A stable letter at the next
+stage realizes it, and its action continues to be an
+automorphism of the union. This proves homogeneity.
+
+If \(\kappa=\max(\aleph_0,|k|,|G|,|V|)\), there are at
+most \(\kappa\) relevant finite tuples and maps at each
+stage; induction, quotients, and the countable union
+preserve that bound. Thus a countable input over a
+countable ring has a countable homogeneous extension.
+Source: \artifact{research/17.101-proof.md}.
+

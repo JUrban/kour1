@@ -1,12 +1,29 @@
 # Forty-eight hours with the Kourovka Notebook
 
-[Read version 3 (PDF)](kourovka-experiment.pdf) ·
+[Mathematical edition (PDF)](kourovka-mathematics.pdf) ·
+[Full research-and-review account (PDF)](kourovka-experiment.pdf) ·
+[Preserved version 3 (PDF)](versions/kourovka-experiment-2026-09-19-v3.pdf) ·
 [Preserved version 2 (PDF)](versions/kourovka-experiment-2026-09-19-v2.pdf) ·
 [Final pre-v2 paper (PDF)](versions/kourovka-experiment-2026-09-17-v1.pdf) ·
 [Reviewed 15 September version (PDF)](versions/kourovka-experiment-2026-09-15.pdf) ·
 [First review revision (PDF)](versions/kourovka-experiment-2026-09-17-review.pdf).
 
-This is **version 3, dated 19 September 2026**, on branch `paper/v3`.
+This is **version 4, dated 19 September 2026**, on branch `paper/v4`.
+The two entry points, `main.tex` and `mathematics.tex`, select their
+presentation through `document.tex`. They share all mathematical proof
+files, the bibliography, author footnotes and
+[question-and-author metadata](data/problem-statements.json).
+The [v4 record](reviews/v4-2026-09-19/) documents the changes and checks.
+
+The mathematical edition starts with a current result index and presents
+the 45 remaining candidate arguments in Notebook-number order. Partial
+results and prior-work deductions follow. Each entry includes a concise
+statement and its original author. Experimental narrative, review
+correspondence and bounded unsuccessful searches belong to the full
+account. Both editions preserve attribution and scope qualifications.
+The general centralizer fact used by 20.90 now has a shared lemma,
+independent of the omitted 10.35 application.
+
 Anthropic's **Claude Opus[1m]** (`claude-opus-5[1m]`, `xhigh`, via Claude Code)
 provided the independent mathematical review. The abstract and early review
 section describe its confirmations, corrections and dialogue with Codex.
@@ -19,13 +36,12 @@ question. Both model reviews had accepted the entry; the revision records
 this failure in the abstract, introduction and review account.
 The current status is **46 historical deadline candidates, one withdrawal,
 45 remaining candidates**, without certifying correctness or novelty.
-Appendix O (pages 141–142) explains the correction and a visual statement
+Appendix O of the full account explains the correction and a visual statement
 audit of all 46 entries. Its [review record](reviews/v3-2026-09-19/)
 includes the rendered statements, individual scope comparisons and v2 baseline.
 
 The comparison added in version 2 covers eleven entries with contemporary solutions
-identified by the Notebook's editor, Evgeny Khukhro. Appendix N (pages
-138–140) compares their results and arguments; attribution notes follow
+identified by the Notebook's editor, Evgeny Khukhro. Appendix N of the full account compares their results and arguments; attribution notes follow
 all eleven affected proofs. It credits Achyuth Jayadevan's eleven papers
 and Aluna Rizzoli's separate 21.68 note, while retaining the earlier
 Zhang–Li acknowledgment for 21.106. The 16.9 discussion also identifies
@@ -37,7 +53,7 @@ pinned sources, chronology, exact algebra checks and a GAP reconstruction
 of the smaller alternative 4.55 example. The accompanying Lean developments
 were downloaded but not built.
 
-The paper opens with selected mathematical outcomes and the full results
+The full account opens with selected mathematical outcomes and the full results
 inventory in Section 2, immediately after the introduction. The independent
 review and research accounts precede the proofs in Sections 5–8: representative
 arguments, further proofs grouped by subject, partial results and prior-work
@@ -57,7 +73,7 @@ is `bbfac1ac810117da37f01716d4594dc2b2e96980`. The owner removed blobs over
 90M with `--strip-blobs-bigger-than 90M`, rewriting commit identifiers.
 `data/public-artifacts.json` records the comparison: all 4,146 retained
 research blobs match; the sole omitted file at that snapshot is the
-1.27 GB 20.100 certificate. That certificate is not in either paper bundle;
+1.27 GB 20.100 certificate. That certificate is not in any paper bundle;
 the public logs document its historical verification but do not permit a
 complete new replay. No separate large-file deposit is claimed.
 
@@ -68,12 +84,15 @@ results, prior-result comparisons, and reproduction information.
 
 The local handoff files are:
 
-- dist/kourovka-experiment.pdf
-- dist/kourovka-experiment-arxiv-source.tar.gz: main.tex, bibliography,
-  compiled figure, and portable integer carpet proofs under anc/.
-- dist/kourovka-experiment-full-source.zip: the complete manuscript
-  project, measurements, review records, scripts, and ancillary proofs.
-- dist/manifest.json: SHA-256 digests and sizes of those three files.
+- `dist/kourovka-experiment.pdf`: full edition.
+- `dist/kourovka-mathematics.pdf`: mathematical edition.
+- `dist/kourovka-experiment-arxiv-source.tar.gz`: standalone full edition;
+  compile `main.tex`.
+- `dist/kourovka-mathematics-arxiv-source.tar.gz`: standalone mathematical
+  edition; compile `mathematics.tex`.
+- `dist/kourovka-experiment-full-source.zip`: the common source project,
+  measurements, review records, scripts and ancillary proofs for both editions.
+- `dist/manifest.json`: SHA-256 digests and sizes of these five products.
 
 The source archives can be generated with:
 
@@ -82,10 +101,12 @@ python3 paper/scripts/build_paper.py --require-complete
 python3 paper/scripts/package_paper.py
 ~~~
 
-The build script uses Tectonic on PATH, PAPER_TECTONIC, or the local
+The build script defaults to both editions; use `--edition full` or
+`--edition mathematics` to select one. It uses cached TeX resources and Tectonic on PATH, PAPER_TECTONIC, or the local
 software/paper-toolchain/tectonic binary. A standard LaTeX installation
-can instead compile main.tex with XeLaTeX and BibTeX. The source archives
-include main.bbl and the compiled trajectory figure; compiling the paper
+can instead compile the selected entry point with XeLaTeX and BibTeX.
+Each source archive includes its matching `.bbl`; the full edition also
+includes the compiled trajectory figure; compiling the paper
 does not require GAP, the full research repository, or raw session files.
 The full archive's inventory generator uses the included frozen ledger.
 The --require-complete option checks exposition coverage; it does not
@@ -134,11 +155,13 @@ Its original before/after pairs are bound to the 15 September version and
 the first review revision (`f9e1956`); the later editorial reorganization is
 recorded separately. The originals and both earlier PDFs remain available.
 `reviews/polish-2026-09-17/` documents the two reader-focused passes and checks.
-`python3 paper/scripts/audit_reader_revision.py` checks that the 50 relocated
-mathematical source files preserve their proofs, allowing the explicitly
-bound v3 correction to 10.35, and that every live TeX file is included
-exactly once. Forty-nine separate mathematical source files remain
-byte-identical to v2; the original 10.35 lemma and construction also remain.
+`python3 paper/scripts/audit_v4.py` checks preservation of 61 prior proof
+and attribution files and the three extracted representative arguments,
+allowing only the stated editorial transformations. It also checks the
+shared proof coverage, original-statement image bindings and edition
+separation. The older audits check their own preserved source versions;
+they do not assert that the v4 files are byte-identical to v2 or v3.
+Both current input graphs are checked for unused or duplicate inputs.
 Raw originals, the partial update of the first report, its exact diff, and
 our final reply are in [external-reviews/](external-reviews/).
 [reviews/revision-2026-09-17/](reviews/revision-2026-09-17/) holds exact
@@ -163,13 +186,16 @@ python3 paper/scripts/render_review_record.py
 python3 paper/scripts/render_review_changes.py
 python3 paper/scripts/render_v2_changes.py --check
 python3 paper/scripts/render_v3_changes.py --check
+python3 paper/scripts/render_v4_changes.py --check
+python3 paper/scripts/render_editions.py --check
 ~~~
 
 Appendix G records five further literal before/after pairs for version 2,
 bound to the preserved pre-v2 source. The earlier eighteen pairs and four
 verbatim review appendices are unchanged. Five additional v3 pairs are bound
-to the preserved complete v2 source. Builds and bundles include the
-correspondence listed in its public manifest; both raw editor emails remain
+to the preserved complete v2 source. Three v4 pairs bind the preserved v3
+source to the shared-source reorganization. Builds and bundles include the
+correspondence listed in its public manifest; all three raw editor emails remain
 local and are excluded from the source archives.
 
 After building and packaging, validate the portable sources with:
@@ -177,16 +203,17 @@ After building and packaging, validate the portable sources with:
 ~~~sh
 python3 paper/scripts/audit_v2.py
 python3 paper/scripts/audit_v3.py
+python3 paper/scripts/audit_v4.py
 python3 paper/scripts/audit_reader_revision.py
 python3 paper/scripts/audit_manuscript.py
 python3 paper/scripts/validate_source_bundle.py
 ~~~
 
-The portable validation extracts both archives outside the repository,
-checks their manifests, runs eleven commands, and compares the standalone
-PDF text with the working build. Its checks cover inventory regeneration,
+The portable validation extracts all three archives outside the repository,
+checks their manifests, runs fourteen commands, and compares both standalone
+PDF texts with their working builds. Its checks cover inventory regeneration,
 change records, source preservation, the v2 comparison and exact identities,
-v3 correction and statement-image bindings, and the four ancillary carpet
+v3 correction, v4 shared sources and statement-image bindings, and the four ancillary carpet
 proofs. It does not rerun the historical
 large computations or the alternative Lean projects.
 

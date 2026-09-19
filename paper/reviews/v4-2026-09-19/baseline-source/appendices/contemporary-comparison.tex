@@ -1,0 +1,178 @@
+\clearpage
+\section{Contemporary solutions: comparison and attribution}
+\label{app:contemporary-comparison}
+
+This appendix retains the comparison prepared for version~2.
+The later withdrawal of 10.35, which is outside these eleven entries,
+is recorded in Appendix~\ref{app:statement-correction}.
+
+\subsection{Scope and sources}
+
+This comparison was prepared by Codex on 19 September 2026 following
+Evgeny Khukhro's communication of 18 September. Nine overlaps were
+named in the message and two more, 16.9 and 17.101, appeared in its
+appended index. Its 17.34 entry is already treated under prior-work
+status in Section~\ref{prior:17.34} and is outside the 46 candidates.
+
+We read the eleven papers at the supplied Zenodo DOIs, all attributed
+there to Achyuth Jayadevan, and compared them with the arguments in
+this paper. For 21.68 we also read Aluna Rizzoli's separate note in the
+Notebook repository. The two papers must not be conflated. We retain
+the earlier acknowledgment of Zhang and Li for 21.106. Source URLs,
+PDF and source-archive hashes, repository metadata, individual review
+notes and new checking programs are recorded in
+\artifact{paper/reviews/v2-2026-09-19/}.
+
+The assessment below concerns mathematical statements and arguments.
+No error was found in the alternatives on this reading, with the
+imported theorems and character data retaining their stated roles.
+Our new executions cover the specific algebraic identities and finite
+character inputs described below. The papers report Lean developments;
+we downloaded the eleven accompanying source archives but did not
+build them. This comparison is therefore not a kernel verification or
+an audit of those projects' full theorem statements and dependencies.
+Khukhro reports specialist confirmation of alternative solutions for
+21.68, 16.28(a) and 15.89; that report is distinct from our reading.
+
+\subsection{The eleven entries}
+
+\small
+\begin{longtable}{@{}p{0.10\textwidth}>{\raggedright\arraybackslash}p{0.80\textwidth}@{}}
+\toprule
+Problem & Relationship to the argument in this paper\\\midrule
+\endfirsthead
+\toprule Problem & Relationship to the argument in this paper\\\midrule
+\endhead
+\bottomrule\endfoot
+4.55 & Jayadevan's different example uses \(\Z_{(11)}[\operatorname{PSL}_2(\F_{11})]\),
+with total rank 88 and indecomposable rank-44 summands. Our rank is
+55,440 over \(\Z_{(5)}[3.A_7]\). Both use completion and rational-character
+obstructions to descent~\cite{jayadevan-4-55}.\\[5pt]
+14.22 & A different Laurent-polynomial construction gives the radical
+obstruction over a two-generated torsion-free polycyclic subgroup of
+\(\SL_3(\Z)\). Our coefficient groups are infinitely generated;
+the alternative removes that feature~\cite{jayadevan-14-22}.\\[5pt]
+15.89 & The same Cayley graph and inverse formula occur, with the stronger
+point-spectrum assertion \(\C\setminus\{0\}\) on all functions.
+Two-dimensional representations supply the additional eigenfunctions~\cite{jayadevan-15-89}.\\[5pt]
+16.9 & The same palindrome-to-reflection reduction, matching recurrence
+and cubic operation bound occur. Reconstruction is presented differently.
+Qualitative computability and the recurrence also have older sources,
+discussed below~\cite{jayadevan-16-9}.\\[5pt]
+16.28(a) & The alternative uses a triangular \(\GL_3\) construction
+containing the identity. Our trace-one \(\SL_2\) class and central
+marker give a different closed set. Both use an algebraically closed
+field of characteristic five with a transcendental element~\cite{jayadevan-16-28}.\\[5pt]
+17.101 & The HNN-induced-module construction, forest injectivity argument
+and cardinal bound agree. Adding regular modules during the iteration
+also gives a faithful extension over a nonzero coefficient ring~\cite{jayadevan-17-101}.\\[5pt]
+18.76 & The free-factor derivations and commuting-lift obstruction agree.
+The characteristic-zero constructions are isomorphic by the explicit
+change below, which inverts the kernel. Our argument also permits
+positive characteristic~\cite{jayadevan-18-76}.\\[5pt]
+21.40 & The bounded-root argument, trace radical and index bound
+\((2n+1)^d\), \(d=\dim_{\Q}\operatorname{span}_{\Q}G\), agree.
+The alternative separately states the finite-trace-set theorem and a
+number-field corollary~\cite{jayadevan-21-40}.\\[5pt]
+21.68 & Rizzoli and Jayadevan give the same order-2,592 extension of
+Kida's configuration, the same degree-eight representation, and the
+same index-two obstruction, in separate accounts~\cite{rizzoli-21-68,jayadevan-21-68}.\\[5pt]
+21.106 & Jayadevan gives a different positive formula defining the same
+two central generators in the integral Heisenberg group; over a
+commutative ring it defines central units. Zhang--Li attribution remains
+separate~\cite{jayadevan-21-106,zhang-li-concise}.\\[5pt]
+21.121(a) & A different cyclotomic construction gives every prime \(p\),
+a locally finite metabelian subgroup of \(\GL_2(\overline{\F_p})\),
+and exponent set \((1,\infty)\). Our quaternion/code construction
+uses a free product, \(p=2\), and infimum
+\(\log24/\log8\)~\cite{jayadevan-21-121a}.\\
+\end{longtable}
+\normalsize
+
+\subsection{Mathematical checks and prior ingredients}
+
+\paragraph{The smaller projective example, 4.55.}
+We reconstructed \(\operatorname{PSL}_2(\F_{11})\) and the displayed
+subgroups of orders 12 and 60 from matrices. Induction and removal of
+the Steinberg constituent give the three projective characters in the
+alternative paper. The fourth follows by subtracting the chosen
+completed summand. The ranks are 44, and the involution traces
+\(0,-4,4\) distinguish the required modules. GAP's character-table
+library agrees with the displayed decomposition data and the irrational
+order-five traces of the individual completed projectives. The descent
+and indecomposability steps were checked by reading their proofs;
+the computation does not replace them.
+
+\paragraph{An explicit comparison of extensions, 18.76.}
+Identify the two division closures and write \(g=(x,y)\),
+\(h=(x',y')\). Let \(\alpha,\beta\) be the derivations on the first
+and second free factors. The cocycles in our coordinates and the
+alternative coordinates are respectively
+\[
+ C_o(g,h)=x\beta(y)\alpha(x'),\qquad
+ C_a(g,h)=\alpha(x)y\beta(y').
+\]
+For \(f(g)=\alpha(x)\beta(y)\), expansion of the derivation laws gives
+\[
+ (\delta f)(g,h)=g f(h)-f(gh)+f(g)=-C_o(g,h)-C_a(g,h).
+\]
+Consequently \((r,g)\mapsto(-r+f(g),g)\) is an isomorphism from
+the first extension to the second, inducing the identity on the quotient
+and negation on the additive kernel. Our exact polynomial check allows
+commutation between the two factor algebras only. Thus the difference
+between the displayed factor sets does not give a different abstract
+group in characteristic zero.
+
+\paragraph{Additional formulas and older algorithms.}
+For 15.89 we checked the characteristic polynomial
+\(\lambda^2-3s\lambda-4\) and the eigenvector used for every
+\(\lambda\ne0\). For 21.106 we checked the determinant identity
+that forces the central coordinate to be a unit; the explicit converse
+witnesses respect the formula's quantifier order.
+
+For 16.9, Jayadevan's source discussion led us to check
+Dahmani--Guirardel\cite[Theorem~4]{dahmani-guirardel-equations} directly.
+Their twisted-equation decision procedure gives qualitative computability
+of palindromic length, by testing products of at most \(|w|\) palindromes.
+The interval recurrence specializes the cancellation-norm algorithm of
+Brandenbursky--Gal--K\k{e}dra--Marcinkowski\cite[Section~2.I]{cancellation-norm};
+their 2023 erratum establishes word independence in the Coxeter case.
+The explicit reflection-length reduction and its application to optimal
+palindrome factors are shared with the contemporary paper. Neither
+qualitative computability nor the recurrence should be counted as a new
+discovery of this experiment.
+
+\subsection{Chronology and what it establishes}
+
+\input{appendices/contemporary-chronology}
+
+The local proof-file commits precede the corresponding DOI registrations.
+This comparison concerns those artifacts only. In particular, the Zenodo
+publication-date field can differ from record creation and DOI
+registration: the 17.101 record lists 12 September, while both technical
+timestamps are on 14 September. The 16.28(a) record lists 13 September
+but was created and registered on 12 September. Rizzoli's note is dated
+11 September; we have not established its first public upload time.
+The earlier Zhang--Li artifact dates are discussed in
+Section~\ref{subsec:concise}.
+
+These dates do not exclude an earlier draft or discovery, nor do they
+establish which sources another AI run could access. The eleven DOI
+records expose first-version metadata at retrieval, but we cannot infer
+the entire history of the underlying work. The research-repository URL
+listed in those records returned HTTP 404 during this comparison, so
+we could not inspect its development history.
+
+Our retained structured retrieval index contains no matching URLs for
+the eleven supplied DOIs or the compared paper filenames. The exact
+patterns and input hash accompany the review. That index omits some
+forms of access, including shell downloads, and says nothing conclusive
+about training exposure or another run's sources. It is a limited record,
+not proof of discovery independence. We accordingly assign no priority
+direction and make no copying inference from the similarities.
+
+The historical total remains 46 deadline candidates. The eleven
+overlaps are not a uniform category of prior solutions, and the other
+35 entries are not thereby established as new. The original mathematical
+expositions remain available in version~2, with the individual attribution
+notes above; the pre-v2 PDF and source baseline are preserved separately.

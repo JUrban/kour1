@@ -1,53 +1,57 @@
 # Manuscript status
 
-Version 3 is dated **19 September 2026**, on branch `paper/v3`, based on
-`deeecb6`. It has 142 pages and 115 cited works. The complete v2 PDF is
-preserved at `versions/kourovka-experiment-2026-09-19-v2.pdf`, with its
-source snapshot under `reviews/v3-2026-09-19/baseline-source/`.
+Version 4, dated **19 September 2026**, is prepared on `paper/v4`, based
+on `5ee9816`. It provides a [mathematical edition](kourovka-mathematics.pdf)
+and a [full research-and-review account](kourovka-experiment.pdf).
+The v3 PDF is preserved in `versions/kourovka-experiment-2026-09-19-v3.pdf`;
+its source baseline is under `reviews/v4-2026-09-19/baseline-source/`.
 
-**10.35 is withdrawn.** The original Notebook asks about residuality in
-same-degree torsion-free matrix groups over the algebraic numbers. Our
-argument instead concerns rational numbers; the example itself already
-embeds over Q(i). Its valid rational-field observation and matrix lemma
-remain, with the withdrawal stated before the construction and conclusion.
+Both editions use the same statements, proofs, bibliography, attribution
+notes and author footnotes. `main.tex` and `mathematics.tex` are small
+wrappers around `document.tex`; the edition switch selects introductions,
+indexes and experimental material. The mathematical edition presents the
+45 remaining candidate arguments in problem-number order, then partial
+results and prior-work deductions. It retains the carpet derivations and
+a short explanation of computational proof inputs.
 
-The abstract, introduction, inventory, review account and discussion now
-state **46 historical deadline candidates, one withdrawal and 45 remaining
-candidates**. Neither count certifies theorem correctness or novelty.
-Khukhro receives explicit credit for the correction. The account records
-that Codex's claimed visual inspection was wrong and that Claude also
-accepted the entry. The four historical correspondence appendices remain
-verbatim, with a notice that their acceptance of 10.35 is superseded.
+**10.35 remains withdrawn.** The example embeds over Q(i), an allowed
+target for the original problem over the algebraic numbers. The full
+account retains the rational-field observation and withdrawal history;
+the mathematical edition discloses the withdrawal and omits the failed
+application. The general matrix-centralizer fact used by 20.90 is now a
+shared lemma with a proof valid over every field.
 
-The full inventory begins on page 4; the withdrawn row is on page 5.
-The independent-review account begins on page 8, its new correction
-subsection is on page 9, and representative proofs begin on page 11.
-The corrected 10.35 exposition starts on page 25. Appendix O (141–142)
-explains the error, review failure, statement audit and interpretation.
-Appendix G adds five exact v2/v3 before/after pairs, starting on page 116.
+The current count remains **46 historical candidates, one withdrawal,
+45 remaining candidates**. No new correctness, novelty, formal-verification
+or human-endorsement claim accompanies the editorial revision.
+The 69 shared question records include the withdrawn question, partial
+and prior-work entries, the repeated almost Engel question and the known
+19.63 criterion. They are not 69 claimed solutions. Their concise
+restatements and author credits were checked against rendered Notebook
+pages; 46 earlier crops are reused and 23 additional crops are recorded.
 
-Codex visually inspected all 46 original candidate statements and compared
-their hypotheses, quantifiers and counted subparts with the manuscript's
-scope. No additional transcription mismatch requiring withdrawal was found.
-The individual notes retain existing convention qualifications. The audit
-is not a new proof, imported-source or priority verification. All 46 source
-crops, source coordinates, hashes and assessments are included in the v3
-review record. The source PDF remains available in the research repository.
+Source checks compare the current text of 61 proof and attribution files
+and three extracted representative arguments with v3, allowing only
+explicit metadata, heading, reference and edition-selection changes.
+The mathematical text is preserved; the new standalone centralizer lemma
+states and explains the fact already used in v3. Old review reports,
+source baselines, literal change pairs and `reports/FINAL_REPORT.md` retain
+their historical content. Appendix G adds three literal v3/v4 changes;
+Appendix P explains the two editions.
 
-Forty-nine separate mathematical source files and the representative proofs
-are unchanged from v2. The only corrected mathematical source is 10.35;
-its lemma and construction are unchanged. The general centralizer-algebra
-fact used by 20.90 remains applicable in characteristic two. Historical
-ledgers, usage records and the eighteen first-revision and five v2 change
-pairs are preserved and checked against their own versions.
+The full account retains the preliminary Fable comparison (Appendix M),
+the eleven-entry contemporary comparison (Appendix N), the 10.35 correction
+(Appendix O), and all four verbatim review documents. Contemporary
+attribution also accompanies the proofs in the mathematical edition.
+The alternative Lean projects and omitted large historical computations
+have not been rerun.
 
-The Fable comparison in Appendix M (135–137) and the eleven-entry
-contemporary comparison in Appendix N (138–140) retain their earlier scopes,
-with notices of the v3 withdrawal. Their mathematical comparisons and checks
-are unchanged. The alternative Lean developments have not been built here.
+Build and structure receipts cover each edition separately. Portable
+validation checks two standalone TeX archives and the shared source ZIP,
+including both PDF text comparisons and all four ancillary proof programs.
+The detailed completion evidence is recorded in
+`reviews/v4-2026-09-19/completion.md`.
 
-Both raw editor emails remain local and are excluded from publication
-bundles. No large certificate, raw session or unrelated output is added.
-No external upload, email, submission or Git push is part of this revision.
-Build, portable-validation and visual evidence are recorded in
-`reviews/v3-2026-09-19/completion.md`.
+All three raw editor emails remain local and excluded from source bundles.
+No large certificate, raw session or unrelated output is added. Master and
+v3 remain unchanged; no remote push, email or external submission is made.

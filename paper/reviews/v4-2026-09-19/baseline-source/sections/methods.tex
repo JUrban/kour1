@@ -1,0 +1,69 @@
+\section{How the research proceeded}
+\label{sec:methods}
+\label{sec:trajectory}
+
+\subsection{A shared research budget}
+
+Kinyon and Urban asked Codex to solve as many previously unsolved Notebook
+problems as possible in 48 hours, using GAP and any further useful
+software, while keeping plans, proofs and frequent local commits.
+The supplied twenty-first edition was updated through September 2026.
+The agent used GPT-6 Astra with \texttt{xhigh} reasoning, GAP 4.16.1,
+exact Python and C/C++ programs, and internet access to mathematical
+sources. It worked within requested local limits of generally 20 CPU
+cores and 100\,GB of memory. The research phase used one language-model
+agent; parallel computational workers handled searches and certificate
+checks. Claude's independent review came later.
+
+The shared budget allowed the agent to choose problems opportunistically
+and to reuse constructions. Written state preserved promising leads,
+proof drafts, failed approaches and unfinished checks between work
+sessions. Nearly two hundred local commits record the progression.
+The original instruction and the exact configuration, counts and
+accounting appear in Appendices~\ref{app:protocol}--\ref{app:methods}.
+
+\subsection{From a lead to an argument}
+
+The first retained lead was the definability counterexample to 21.106.
+While developing short symbolic arguments, the agent launched finite
+screens for other questions. Literature frequently supplied a productive
+starting point: Kida's order-96 configuration led to the non-monomial
+semi-abelian group, and an exception in Tsang's computational coverage
+led to the multiple-holomorph example. Other questions shared deeper
+inputs, notably Amelio's geometric construction for 10.62 and 4.75.
+The proofs identify which steps are imported and which deductions the
+experiment supplied.
+
+Validation changed the direction of the work. In the graph-symmetry
+search for 21.52, a permutation normalizing an inner-automorphism action
+was initially treated as evidence for a group automorphism. The agent
+replaced that weaker test by constructing an actual automorphism and
+checking its action. A program can compute its specified predicate
+correctly while that predicate fails to express the mathematical question.
+This example explains the value of reviewing the specification as well
+as the calculation.
+
+Source checks also changed the classification of results. The agent's
+argument for 17.34 was ultimately covered by an existing
+strong-amalgamation theorem. A small construction for 13.19 likewise
+became a rediscovery after an earlier result was found. Those arguments
+remain in Section~\ref{app:prior}, with their prior-work status, because
+they help explain both the mathematics and the course of the experiment.
+
+\subsection{Long computations and partial theorems}
+
+For 20.100, a structural reduction made each fixed distinct-powers case
+amenable to a finite certificate. Generating the \(n=7\) certificate
+was only an intermediate step: checking it took approximately 26 hours.
+Other work continued during that computation. The resulting fixed cases
+and torsion-free theorem are presented in Section~\ref{partial:20.100};
+the unrestricted question for arbitrary \(n\) remained open.
+
+Almost Engel elements and \(p\)-Jordan bounds supplied further substantial
+partials. Some broad finite searches ended with useful coverage but no
+complete answer. This variety of outcomes is why we retain the proofs
+and their boundaries, rather than report only a solved-problem total.
+Appendix~\ref{app:chronology} gives the dated sequence, the larger search
+counts and the distinction between generation, checking and closeout.
+The research record ends with internal review; the separate model review
+in Section~\ref{sec:external-review} tests the resulting mathematical work.

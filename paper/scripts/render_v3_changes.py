@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 from make_inventory import tex
+from revision_sources import v3_source
 
 PAPER = Path(__file__).resolve().parents[1]
 REV = PAPER / 'reviews/v3-2026-09-19'
@@ -24,7 +25,7 @@ remain tied to their own preserved versions. The v2 PDF is retained as
         raw = (REV / 'baseline-source' / row['before_path']).read_bytes()
         assert hashlib.sha256(raw).hexdigest() == row['baseline_sha256']
         assert row['before'] in raw.decode(), row['title']
-        assert row['after'] in (PAPER / row['after_path']).read_text(), row['title']
+        assert row['after'] in v3_source(PAPER, row['after_path']).decode(), row['title']
         out.append('\\paragraph{' + tex(row['title']) + '}\n')
         for key, label in [('before', 'Version 2'), ('after', 'Version 3')]:
             out.append('\\noindent\\textbf{' + label + '.}\n\\begin{quote}\\small\n'

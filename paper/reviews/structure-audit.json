@@ -1,22 +1,32 @@
 {
   "status": "PASS",
-  "checked_utc": "2026-09-19T11:22:57.777406+00:00",
-  "scope": "Structure, source/build binding, recorded review completeness, and artifact integrity only; not an automated mathematical proof check.",
-  "candidate_entries": 46,
-  "historical_candidate_entries": 46,
+  "checked_utc": "2026-09-19T12:48:10.429886+00:00",
+  "scope": "Both edition input graphs, references, bibliography, actual rendered question coverage, source/build bindings and ancillary integrity. Not a mathematical theorem verification.",
+  "historical_candidates": 46,
   "withdrawn_claims": [
     "10.35"
   ],
-  "remaining_candidate_entries": 45,
-  "tex_files": 89,
-  "labels": 121,
-  "cited_works": 115,
-  "bibliography_entries": 123,
+  "remaining_candidates": 45,
+  "editions": {
+    "full": {
+      "status": "PASS",
+      "pages": 150,
+      "tex_files": 101,
+      "labels": 137,
+      "cited_works": 115,
+      "rendered_question_blocks": 69,
+      "pdf_sha256": "7850aefc307c46aa24174e1e1b86e7308a734e381b4f2f4816fc628d92fe64d9"
+    },
+    "mathematics": {
+      "status": "PASS",
+      "pages": 92,
+      "tex_files": 78,
+      "labels": 85,
+      "cited_works": 108,
+      "rendered_question_blocks": 68,
+      "pdf_sha256": "eb095248a64ebe4a52ea2cd32b40012cefc03b18475c5432c58747febc4e5de7"
+    }
+  },
   "ancillary_original_files": 24,
-  "printed_carpet_derivations": 19,
-  "pages": 142,
-  "pdf_sha256": "5af57c7959dc391401f0e54f20befba036be84fbeac317118ee34b8a6e21ea55",
-  "undistributed_large_artifacts": [
-    "20.100-n7-certificate.g.gz"
-  ]
+  "printed_carpet_derivations": 19
 }

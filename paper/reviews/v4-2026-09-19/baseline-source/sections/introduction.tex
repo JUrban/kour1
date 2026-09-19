@@ -1,0 +1,113 @@
+\section{Introduction}
+\label{sec:introduction}
+
+The Kourovka Notebook~\cite{kourovka21} collects open problems in group
+theory and neighboring areas, ranging from concrete questions about finite
+groups to structural and logical problems about infinite ones. We present
+candidate answers for 45 problem entries or specified subparts, partial
+results on nine questions, and rediscoveries and deductions from earlier
+work, obtained in a 48-hour experiment with an AI research agent.
+The archive includes finite certificates and computational checks.
+A second language model subsequently reviewed the mathematical work
+independently. The deadline ledger contained 46 candidates; version~3
+withdraws the claimed answer to 10.35, which misread
+\(\overline{\Q}\) as \(\Q\). Evgeny Khukhro, the Notebook's editor,
+identified this error after both model reviews had accepted the entry.
+The eleven-entry comparison with contemporary solutions added in
+version~2 is retained.
+
+Michael Kinyon and Josef Urban conceived and oversaw the experiment.
+They gave OpenAI's GPT-6 Astra, running through Codex, an explicit
+48-hour deadline and requested local resource limits of generally
+20 CPU cores and 100\,GB of memory. With access to GAP, further software
+and the literature, the agent could choose which questions listed as open
+in that edition to pursue. The aim was to evaluate current AI and automated
+reasoning capabilities on open research problems under a shared budget:
+selecting questions, interpreting hypotheses, developing arguments and
+checking the resulting claims.
+
+The experiment has two phases. During 10--12 September 2026, Codex
+selected problems, developed arguments and checked its own work. After
+manuscript preparation, Anthropic's Claude Opus[1m], running through
+Claude Code, independently reviewed the paper and then responded to the
+authors' reply and supporting material. Claude examined all 46 entries
+on the deadline candidate list, reported verifying a majority in detail, and
+independently rebuilt many of the finite constructions and calculations.
+These checks provide evidence for the arguments examined, but the later
+10.35 correction shows that agreement between the models did not ensure
+that each argument answered the original question.
+The corrections, confirmations and exchanges with
+Codex form a second part of the experiment, described in
+Section~\ref{sec:external-review}.
+
+\subsection{Mathematical outcomes}
+
+Table~\ref{tab:highlights} highlights selected results; the full inventory
+follows in Section~\ref{app:inventory}. Four representative arguments
+appear in Section~\ref{sec:examples}; further proofs, partial results and
+prior-work deductions follow in
+Sections~\ref{app:candidates}--\ref{app:prior}. Each proof states its
+hypotheses and imported ingredients.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Selected mathematical outcomes. The last two rows distinguish a
+post-review strengthening and partial results.}
+\label{tab:highlights}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.115\textwidth}>{\raggedright\arraybackslash}p{0.705\textwidth}>{\raggedright\arraybackslash}p{0.08\textwidth}@{}}
+\toprule
+Problem & Result & Section\\\midrule
+21.106 & A parameter-free formula defines two elements generating an infinite subgroup of the residually finite integral Heisenberg group. & \ref{subsec:concise}\\[3pt]
+21.68 & A semi-abelian group of order 2,592 has a non-monomial irreducible representation of degree eight. & \ref{subsec:semiabelian}\\[3pt]
+20.108 & A centerless group of order 605 has an element of order four in its multiple-holomorph quotient. & \ref{subsec:holomorph}\\[3pt]
+19.56 & A coprime-order inequality on commutators of prime-power inputs forces a finite group to be soluble. & \ref{cand:19.56}\\[3pt]
+19.61--19.62 & Carpet closure and derived-carpet assertions are reduced to explicit universal integer derivations. & \ref{cand:19.61}, \ref{cand:19.62}\\[3pt]
+14.72 & A smooth affine surface has a smooth fixed divisor but a singular cyclic quotient; the review led to a globally principal fixed divisor. & \ref{cand:14.72}\\[3pt]
+20.100 & A distinct-powers theorem for torsion-free groups, a finite abelian reduction, and certified cases \(n=4,5,6,7\); arbitrary \(n\) remains open. & \ref{partial:20.100}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The number 46 records the problem entries classified as complete solution
+candidates at the deadline. One of these, 10.35, is withdrawn in this
+version, leaving 45 other candidates. Neither total is a count of
+established new solutions. The ledger counts specified subparts once per entry,
+and some entries share a construction or a substantial imported theorem.
+The inventory in Section~\ref{app:inventory} gives the covered parts and
+convention-sensitive hypotheses. Subsequent review provides evidence of
+correctness; novelty is a separate question. The comparison in
+Appendix~\ref{app:contemporary-comparison} identifies overlapping work
+on eleven entries, including the previously acknowledged 21.106.
+Some constructions agree closely; others differ or yield stronger results.
+We assign no discovery priority from the available chronology, and do not
+infer that the remaining entries are new. Known results and deductions
+retain their prior-work status; the qualitative computability assertion
+in 16.9 is now explicitly identified as a consequence of older work.
+The nine partial-result questions treated
+in Section~\ref{app:partials} are 20.100, 20.89/19.83, 21.121(b), 20.124,
+17.118, 21.114, 19.108, 18.120 and 6.47. Here 20.89/19.83 is one repeated
+question, and 21.121(a) is already among the 46 entries. That section also
+records bounded searches on five other questions.
+
+\subsection{Motivation and reading routes}
+
+The design follows the use of explicit time and resource budgets in ATP
+competitions and human mathematical contests such as the International
+Mathematical Olympiad~\cite{imo-regulations}. Urban's specific inspiration
+was the MPTPChallenge, designed in 2006, twenty years before this
+experiment~\cite{mptpchallenge}: attempt related problems under a shared
+budget and reuse discoveries across them. Here the challenge concerns
+open research problems, with freedom to select questions, consult sources
+and choose computational tools. We omit a comprehensive survey of the
+rapidly growing work on learning-guided proving and LLM-based AI for
+mathematics.
+
+The same experimenters subsequently ran Anthropic's Claude Fable~5.1
+on the same machine, task, 48-hour budget and requested local resource
+limits~\cite{fable-kourovka}. Appendix~\ref{app:parallel-fable} gives
+a preliminary mathematical review and comparison of the two efforts.
+
+After the inventory, AI and automated reasoning readers can continue to
+Sections~\ref{sec:external-review}--\ref{sec:trajectory} and
+\ref{sec:discussion}. Mathematical readers can select proofs from the
+inventory or begin with Section~\ref{sec:examples}.

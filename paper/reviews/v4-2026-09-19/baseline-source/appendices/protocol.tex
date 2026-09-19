@@ -1,0 +1,74 @@
+\section{The instruction and experimental record}
+\label{app:protocol}
+
+The original goal record in the JSONL and the first expanded goal
+directive in the HTML retain the following user-provided objective,
+reproduced verbatim:
+
+\begin{quote}\small
+Solve as many previously unsolved problems from THE KOUROVKA
+NOTEBOOK (docs/21tkt.pdf) as you can within an overall time limit
+of 48 hours. The gap system is installed in gap-4.16.1 but you
+can also download and install further SW if useful. In general,
+try to limit yourself to 20 CPU cores and 100G RAM on this
+machine while working. Write detailed plans and reports,
+iterate fast and create a local git repo keeping your work
+and documenting your progress, commit often there (but don't
+try to push). Work rigorously - your solutions will be
+independently reviewed.
+\end{quote}
+
+The surrounding continuation instruction told the agent to
+keep the full goal active across turns, use the current
+worktree and external state as authoritative, and base
+process status on observed handles and exit records.
+The JSONL records the continuations and context compactions described
+in Appendix~\ref{app:methods}. The human message during setup says
+that GAP is now present.
+The initial availability issue and subsequent working
+installation are documented separately in the early
+repository records.
+
+The original local plan,
+\artifact{research/PLAN.md}, divided work into overlapping
+selection, experiment, concentration, and review phases.
+It called for exact statement transcription, source checks,
+bounded searches, second representations, and explicit
+separation of partials from complete candidates. It
+prohibited delegation without authorization; no model
+subagents are reported in the retained research record.
+Independent operating-system processes were allowed for
+computational partitions.
+
+The original research interval was
+\[
+ \text{2026-09-10 20:56:46 UTC}\quad\text{to}\quad
+ \text{2026-09-12 20:56:46 UTC}.
+\]
+\begin{samepage}
+The final administrative commit is
+\begin{center}\small
+\nolinkurl{cff2c37b9bf6b737e8ad5f7ead12291a551b5201}.
+\end{center}
+\end{samepage}
+All measurements of the research Git history stop at this
+revision; later manuscript commits are excluded. The final research
+response was logged at 20:57:38 UTC, approximately 52 seconds after
+the deadline. We distinguish this closeout from the 48-hour interval.
+The supplied Notebook file has SHA-256 digest
+\begin{center}\small
+\nolinkurl{2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911}.
+\end{center}
+This distinguishes the input from later updates at the
+editors' public download address.
+
+The paper was prepared in a separate phase beginning
+14 September 2026, with the same agent drafting and internally
+reviewing the manuscript. The model designation \texttt{gpt-6-astra}
+and reasoning setting \texttt{xhigh}, confirmed by the user during
+that phase, are corroborated by the JSONL turn-context records.
+The typesetting toolchain is a later addition, not software used
+to obtain the mathematical results. On 15 September, the organizers
+supplied the full JSONL, the ccusage row, author names and affiliations,
+and the historical motivation used in this revision. These later
+contributions do not change the frozen experimental outcomes.

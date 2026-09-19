@@ -1,0 +1,145 @@
+Reply to the referee report on \emph{Forty-eight hours with the Kourovka
+Notebook}
+
+17 September 2026
+
+Thank you for the detailed report and, especially, for independently
+rebuilding the finite examples and re-deriving the carpet certificates.
+The checks and the distinctions between mathematical validity, statement
+coverage, and priority are useful. We agree that the paper should make
+its scope and dependencies easier to assess. Below we clarify several
+points and describe proposed revisions; these revisions have not yet
+been incorporated into the manuscript.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Repository and certificates.} Josef Urban will publish the
+  full repository and send you the link. The frozen experimental
+  revision is \nolinkurl{cff2c37b9bf6b737e8ad5f7ead12291a551b5201};
+  subsequent manuscript work is separate from that snapshot.
+
+  The complete certificates for 19.61 and 19.62, their inputs, and their
+  checkers already accompany the manuscript source. They are under
+  \nolinkurl{paper/ancillary/} in the repository and under
+  \nolinkurl{anc/} in
+  \nolinkurl{paper/dist/kourovka-experiment-arxiv-source.tar.gz}. The
+  README gives the checking commands. We inspected the archive and
+  confirmed that these files are included. Your report indicates that
+  the source bundle was not supplied with the PDF; we agree that the
+  review materials should include it explicitly. The larger 20.100
+  certificate belongs to the research archive and requires separate
+  handling. Public access will make it available for examination, but
+  will not itself constitute a fresh verification.
+\item
+  \textbf{Problem 16.28(a).} The objection concerning algebraic
+  closedness appears to overlook the bar in the first line of C.4. The
+  field used there is \nolinkurl{K = algebraic closure of F_5(t)}, not
+  \nolinkurl{F_5(t)} or the algebraic closure of \nolinkurl{F_5}. It is
+  algebraically closed, and its transcendental element \nolinkurl{t} has
+  infinite multiplicative order. The construction therefore does meet
+  the usual algebraically closed-field convention. It uses a reducible
+  closed set and a field not algebraic over a finite field; the printed
+  question excludes neither. We would consequently not classify this
+  entry as failing the algebraically closed-field reading.
+
+  We will also check the field restrictions when clarifying part (b).
+  The suggestion that the identical class works over any field needs
+  qualification: in characteristic two, for example, the argument that
+  its square omits \nolinkurl{-I} no longer applies.
+\item
+  \textbf{Problem 14.72.} We agree that the distinction between a smooth
+  effective Cartier divisor and a globally principal divisor should be
+  made explicit. There is, however, a further distinction between a
+  set-theoretic equation and a scheme-theoretic equation. In the
+  displayed surface, \nolinkurl{x = 0} forces \nolinkurl{y = u = 0}, so
+  it already cuts out the fixed locus set-theoretically. On the chart
+  containing that locus, \nolinkurl{x = y^2/(x^2 - 1)}: this equation
+  defines twice the fixed divisor, rather than its reduced scheme.
+
+  Thus the issue is whether ``regular hypersurface'' requires the
+  reduced fixed divisor itself to have a single global defining
+  equation. The current proof establishes the smooth Cartier-divisor
+  reading. We propose clarifying this and investigating the suggested
+  strengthening to the globally principal reading. A construction over
+  the complex numbers is sufficient to disprove the unrestricted
+  assertion over fields of arbitrary characteristic; treating the wild
+  case would be a further result.
+\item
+  \textbf{Problem 21.106 and priority.} Thank you for identifying the
+  related Heisenberg construction and Lean formalisation. We checked the
+  \href{https://github.com/TPColor/kourovka-notebook-problem-21.106}{repository},
+  which credits Lily Zhang with the original counterexample and proof
+  and Evan Li with the Heisenberg simplification. This work should be
+  acknowledged in the discussion of Theorem 4.1.
+
+  Our local proof file was first committed on 10 September at 21:05:23
+  UTC. The other repository\textquotesingle s initial README contained
+  only its title; the
+  \href{https://github.com/TPColor/kourovka-notebook-problem-21.106/commit/f32b72719e07}{commit
+  adding the Lean files} is dated 11 September at 10:54:21 UTC. These
+  are facts about the recorded artifacts, not proof of discovery
+  priority. We therefore would not adopt the report\textquotesingle s
+  stronger conclusion that the agent was first. We propose reporting the
+  chronology and acknowledging the contemporaneous work without
+  assigning priority.
+
+  The exact repository URL does not occur in the supplied session JSONL.
+  This limited check does not establish the absence of exposure through
+  another source. The JSONL retains web queries, actions, and results,
+  from which a dated source-access index can be prepared. Such an index
+  should distinguish recorded retrieval from evidence that a source was
+  actually used in an argument.
+\item
+  \textbf{The ledger and intended readings.} We agree that scope and
+  conventions should be visible in the inventory. We suggest separate
+  fields for covered parts, convention-sensitive hypotheses, prior-work
+  status, and imported dependencies. The 46-entry deadline ledger is a
+  historical record; a subsequent assessment can supplement it without
+  altering what was classified at the deadline. Likewise, the complete
+  answers and deductions in Appendix E can be made more visible while
+  retaining their prior-work classification.
+
+  We would avoid labeling approximately seven entries as answers the
+  proposers probably did not intend without firmer evidence. The
+  objection to 16.28 above does not apply. For 12.40, showing that no
+  finite-valued bound of the requested form exists is a direct negative
+  answer to the printed request. For 18.92 and 14.22, the stated
+  definitions and hypotheses permit the constructions, although
+  identifying any intended additional restrictions would be valuable. We
+  agree that 16.20\textquotesingle s convention and the scope of its
+  alternative construction should be especially clear.
+
+  Proof length, discovery difficulty, and novelty should also remain
+  separate. A short proof or a rapidly completed formalisation does not
+  by itself establish that the question was easy or was misread.
+\item
+  \textbf{Dependencies and choice of examples.} We agree that the finite
+  input used for 15.92 should be easier to inspect. C.28 already states
+  the required cycle and parity properties and points to Chapter 5,
+  pages 117--120 of Conder\textquotesingle s thesis; exposing the
+  relevant finite construction data would strengthen that presentation.
+  The scale and prescribed-relation steps used in 10.62/4.75 also merit
+  a more explicit parameter justification tied to the exact source
+  version.
+
+  Promoting 19.56 is a useful suggestion. Its adaptation to coprime
+  prime-power inputs gives a substantial example of the work performed.
+  Its exposition should retain the imported hyperfocal theorem,
+  minimal-simple structure, and Baer--Suzuki theorem rather than
+  describe the proof as self-contained without qualification.
+\item
+  \textbf{Smaller corrections and review records.} We will check the
+  cited equation/theorem numbers, the exponential-group reference, the
+  characteristic assumptions in C.4, and the character-table version;
+  clarify the CA/CN terminology; and make the one-cent rounding
+  difference explicit. These are useful presentation and attribution
+  checks rather than grounds for changing the exact usage totals.
+
+  Please also send \nolinkurl{review-other1/checks/} and
+  \nolinkurl{notes_progress.md}, which were not included with the copy
+  of the report we received. They will let us preserve the external
+  checks with their exact inputs, implementations, and outcomes. We will
+  distinguish these later checks from the historical statement that
+  there were no outside reviews at the research deadline.
+\end{enumerate}

@@ -1,0 +1,237 @@
+\subsection{15.65: nonrational classical-group limits}
+\label{cand:15.65}
+For the full families \(U(n,q)\), \(\mathrm{Sp}(2m,q)\),
+\(O(2m+1,q)\), \(O^+(2m,q)\), and \(O^-(2m,q)\), both limiting
+proportions asked about are nonrational functions of \(q\).
+For symplectic and orthogonal groups the assertion holds separately
+on even and on odd prime powers.
+The Notebook calls a matrix separable when its \emph{minimal}
+polynomial is squarefree; this is semisimplicity.
+The enumeration source uses separable for squarefree
+\emph{characteristic} polynomial. We distinguish the two and prove
+nonrationality for both, as well as for cyclic matrices.
+This is a statement about functions of field size, not about
+irrationality of an individual probability.
+
+All enumeration and limit-existence formulas below are those of
+Fulman--Neumann--Praeger (FNP) \cite{fnp}.
+The proposed additional deduction is their analytic continuation
+in inverse field size and the obstruction to rational interpolation.
+Let \(t=1/q\). The count polynomials for unitary factors are
+\[
+\begin{aligned}
+ N_d(q)&=\frac1d\sum_{a\mid d}\mu(a)(q^{d/a}+1)
+                       &&(d\text{ odd}),\\
+ M_1(q)&=(q^2-q-2)/2,\\
+ M_d(q)&=\frac1{2d}\sum_{a\mid d}\mu(a)(q^{2d/a}-q^{d/a})
+                       &&(d>1\text{ odd}),\\
+ M_d(q)&=\frac1{2d}\sum_{a\mid d}\mu(a)q^{2d/a}
+                       &&(d\text{ even}).
+\end{aligned}
+\]
+For symplectic and orthogonal factors fix \(e=1\) for even \(q\)
+or \(e=2\) for odd \(q\), and use
+\[
+\begin{aligned}
+ J_d(q)&=\frac1{2d}\sum_{\substack{a\mid d\\a\text{ odd}}}
+                  \mu(a)(q^{d/a}+1-e),\\
+ K_1(q)&=(q-e-1)/2,\\
+ K_d(q)&=\tfrac12 N(q;d)&& (d>1\text{ odd}),\\
+ K_d(q)&=\tfrac12\bigl(N(q;d)-J_{d/2}(q)\bigr)&& (d\text{ even}),\\
+ N(q;d)&=\frac1d\sum_{a\mid d}\mu(a)q^{d/a}&& (d>1).
+\end{aligned}
+\]
+These are FNP Lemmas~1.3.12 and~1.3.16. In particular
+\[
+ N_1(1/t)=1+1/t,\qquad J_1(1/t)=(1/t+1-e)/2.
+\]
+For \(0<|t|<1\), their explicit formulas give bounds by a constant
+times \(|t|^{-d}\) for \(N_d,J_d,K_d\), and \(|t|^{-2d}\) for \(M_d\).
+For instance, bounding the number of divisors by \(d\) suffices.
+These estimates will justify the infinite products as analytic functions.
+
+\paragraph{The analytic obstruction.}
+Suppose a holomorphic function \(a(t)\) has a zero of multiplicity
+\(h>0\) at \(b\ne0\), \(P(t)\) is holomorphic and nonconstant near
+\(b\), and \(K(t)\) is a nonzero single-valued meromorphic germ there.
+Then a branch of \(K(t)\exp(P(t)\log a(t))\) cannot continue a rational
+germ. One circuit around \(b\) multiplies it by
+\(\exp(2\pi i hP(t))\). Rational single-valuedness would make this
+identically one on an open set, forcing \(P'=0\).
+An integer-order zero or pole of \(K\) cannot cancel this monodromy.
+
+Each germ constructed below has a finite nonzero value at \(t=0\)
+and agrees with the indicated probability at sufficiently small
+positive \(t=1/q\). If a rational function of \(q\) agreed on all
+powers of a fixed prime, its transform in \(t\) would have no pole
+at zero and would agree with the germ by the identity theorem.
+The analytic obstruction therefore excludes even that restricted
+form of rational interpolation.
+
+\paragraph{Cyclic limits.}
+Put
+\[
+ A(u)=\frac{1+u-u^2}{1+u},\qquad
+ B(u)=\frac{1-u+u^2}{1-u}=\frac{1+u^3}{1-u^2}.
+\]
+FNP Theorems~2.1.9 and~2.2.9 give
+\[
+\begin{aligned}
+ C(U;q)&=(1+t)
+   \prod_{\substack{d\ge1\\d\text{ odd}}}A(t^d)^{N_d(1/t)}
+   \prod_{d\ge1}B(t^{2d})^{M_d(1/t)},\\
+ C(\mathrm{Sp};q)&=
+   \prod_{d\ge1}A(t^d)^{J_d(1/t)}B(t^d)^{K_d(1/t)}.
+\end{aligned}
+\]
+Powers mean exponentials of logarithms initially vanishing at zero.
+The first \(A\)-factor has a simple zero at
+\(\alpha=(1-\sqrt5)/2\).
+Remove it. On \(|t|<3/4\), every remaining \(A\)-factor has
+degree \(d\ge2\), and
+\[
+ \left|\frac{t^{2d}}{1+t^d}\right|
+ \le\frac{(3/4)^4}{1-(3/4)^2}=\frac{81}{112}<1.
+\]
+The logarithms of all \(B\)-factors are single-valued on \(|t|<1\)
+by the second expression for \(B\).
+Their logarithms vanish to order at least \(2d\), or \(4d\) after
+substitution \(t^{2d}\). Multiplication by the count polynomials
+therefore leaves summable bounds by constant multiples of
+\(|t|^d\) or \(|t|^{2d}\), uniformly on compact subdiscs.
+All apparent singularities at zero are removable.
+The remaining product is consequently holomorphic and nonvanishing
+on \(|t|<3/4\). The first exponents \(N_1(1/t)\) and \(J_1(1/t)\)
+are nonconstant, so the obstruction at \(\alpha\) proves
+nonrationality. In the unitary case the real local exponent is
+\(1+1/\alpha=\alpha\), also giving a direct noninteger-order proof.
+FNP Theorem~2.3.11 gives
+\[
+ C(O_{\mathrm{odd}};q)=(1-t)C(\mathrm{Sp};q),\qquad
+ C(O^\pm;q)=\frac{(1-t)^e+1}{2}C(\mathrm{Sp};q).
+\]
+These nonzero rational multipliers transfer the conclusion to all
+full orthogonal families.
+
+\paragraph{A zero needed for the literal separability question.}
+Define holomorphic functions on \(|u|<1\) by
+\[
+ \mathcal U(u)=\sum_{m\ge0}
+       \frac{u^{m^2}}{\prod_{i=1}^m(1-(-u)^i)},\qquad
+ \mathcal L(u)=\sum_{m\ge0}
+       \frac{u^{m^2}}{\prod_{i=1}^m(1-u^i)}.
+\]
+On \(|u|\le r<1\), denominator products are bounded below by
+\(\prod_{i\ge1}(1-r^i)>0\), proving normal convergence.
+Set
+\(a_m(r)=r^{m^2}/\prod_{i=1}^m(1-r^i)\).
+For \(m\ge1\),
+\[
+ \frac{a_{m+1}(r)}{a_m(r)}
+ \le\frac{r^3}{1-r^2},\qquad
+ \sum_{m\ge1}a_m(3/7)\le\frac{210}{253}<1.
+\]
+Hence both functions are nonzero on \(|u|\le3/7\).
+On the negative real axis,
+\(\mathcal U(-r)=1-a_1(r)+a_2(r)-\cdots\).
+For \(r\le3/5\) these positive terms decrease. Alternating bounds
+give positivity for \(r\le1/2\), a lower bound \(9/56\) at \(1/2\),
+and the following negative upper bound at \(3/5\):
+\[
+ 1-a_1+a_2-a_3+a_4
+ =-\frac{1128797279}{26656000000}<0.
+\]
+Thus there is a first negative zero \(b\in(-3/5,-1/2)\), of finite
+positive multiplicity, with \(\mathcal U(t)>0\) for \(b<t\le0\).
+Also \(\mathcal L(-r)>1-r/(1+r)>0\) for \(0<r\le13/20\):
+its alternating term ratios are bounded by \(r^3/(1-r^2)<1\).
+No simplicity or exact location of \(b\) is needed.
+
+Put
+\[
+ E(u)=(1-u)\mathcal U(u),\qquad
+ D(u)=(1-u)\mathcal L(u).
+\]
+They are nonzero on \(|u|\le3/7\), and both are \(1+O(u^2)\).
+Let \(SS\) denote semisimplicity, namely squarefree minimal polynomial.
+FNP Theorems~3.1.13 and~3.1.15 give
+\[
+\begin{aligned}
+ SS(U;q)&=(1+t)
+  \prod_{\substack{d\ge1\\d\text{ odd}}}E(t^d)^{N_d(1/t)}
+  \prod_{d\ge1}D(t^{2d})^{M_d(1/t)},\\
+ SS(\mathrm{Sp};q)&=(1-t)^e\mathcal P(t)^e T_e(t),\\
+ T_e(t)&=\prod_{d\ge1}E(t^d)^{J_d(1/t)}D(t^d)^{K_d(1/t)},\\
+ \mathcal P(t)&=1+\sum_{m\ge1}
+       \frac{t^{m(2m+1)}}{\prod_{i=1}^m(1-t^{2i})}.
+\end{aligned}
+\]
+The function \(\mathcal P\) is single-valued holomorphic on the unit
+disc, with value one at zero.
+Take \(R=13/20\). All arguments of factors of degree at least two
+lie in \(|u|\le R^2=169/400<3/7\).
+Their logarithms and the count-polynomial bounds thus give normally
+convergent, nonvanishing remainders on \(|t|<R\).
+For \(T_e\), separate also the degree-one \(D(t)\)-factor.
+It has a holomorphic logarithm near \([b,0]\), by the positivity
+just proved; multiplication by \(K_1(1/t)\) is removable at zero
+since \(\log D(t)=O(t^2)\).
+The only required branching at \(b\) comes from \(E(t)\), with
+nonconstant exponent \(N_1(1/t)\) or \(J_1(1/t)\).
+The prefactors can have only integer-order zeros there.
+The obstruction proves both nonrationality claims.
+
+For the orthogonal case put
+\[
+ \mathcal Q(t)=1+\sum_{m\ge1}
+       \frac{t^{m(2m-1)}}{\prod_{i=1}^m(1-t^{2i})}.
+\]
+It is likewise holomorphic on the unit disc, with value one at zero.
+The reciprocal orders of the two even-dimensional full orthogonal
+groups sum to the terms of \(\mathcal Q(1/q)-1\).
+FNP Theorem~3.1.18 gives
+\[
+\begin{aligned}
+ SS(O_{\mathrm{odd}};q)&=
+   (1-t)^e\mathcal Q(t)^{e-1}\mathcal P(t)T_e(t),\\
+ SS(O^\pm;q)&=
+   \frac{(1-t)^e}{2}
+   \bigl(\mathcal Q(t)^e+(e-1)\mathcal P(t)^2\bigr)T_e(t).
+\end{aligned}
+\]
+The extra factors are single-valued and not identically zero:
+at zero they equal \(1\) and \(e/2\).
+Their possible finite-order zeros cannot cancel the monodromy of
+\(E(t)^{J_1(1/t)}\). This proves the literal Notebook assertion for
+all the stated families.
+
+\paragraph{The other meaning of separability.}
+For completeness let \(RS\) mean squarefree characteristic polynomial,
+and set \(V(u)=(1-u)(1+2u)/(1+u)\).
+FNP Theorems~2.1.3, 2.2.3 and~2.3.4 give
+\[
+\begin{aligned}
+ RS(U;q)&=(1+t)
+       \prod_{\substack{d\ge1\\d\text{ odd}}}V(t^d)^{N_d(1/t)},\\
+ RS(\mathrm{Sp};q)&=(1-t)^e
+       \prod_{d\ge1}V(t^d)^{J_d(1/t)},\\
+ RS(O_{\mathrm{odd}};q)&=RS(\mathrm{Sp};q),\\
+ RS(O^\pm;q)&=2^{e-2}RS(\mathrm{Sp};q).
+\end{aligned}
+\]
+The first \(V\)-factor vanishes at \(-1/2\).
+All higher factors have zero-free logarithms on \(|t|<13/20\),
+and the same estimates prove normal convergence.
+The first exponents are nonconstant, so the branching obstruction
+applies even when their values at \(-1/2\) happen to be integers.
+This proves nonrationality for the source's convention too.
+
+The symplectic semisimple formula uses \(M^*(q;d)\), as in FNP
+Theorem~3.1.15 and its underlying product; an intermediate display
+in Lemma~3.1.9(e) prints \(M^*(q;2d)\).
+The archive records that index discrepancy and a separate coefficient
+discrepancy. No numerical coefficient table is a premise here.
+The distinction between the dimension variable of FNP's generating
+functions and our field-size variable \(t\) is essential.
+See \artifact{research/15.65-proof.md},
+\artifact{research/15.65-classical-proof.md}, and their source audits.

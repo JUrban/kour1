@@ -1,8 +1,16 @@
 # Forty-eight hours with the Kourovka Notebook
 
-**[Read the paper (PDF)](paper/kourovka-experiment.pdf)** ·
+**[Mathematical edition (PDF)](paper/kourovka-mathematics.pdf)** ·
+**[Full research-and-review account (PDF)](paper/kourovka-experiment.pdf)** ·
 [Paper source and reproduction guide](paper/README.md) ·
 [Notebook used in the experiment (PDF)](docs/21tkt.pdf)
+
+**Version 4 (19 September 2026)** provides two editions from the same
+mathematical sources. The mathematical edition gives a current index,
+problem statements and authors, proofs, partial results and attribution.
+The full account also contains the experiment and review history.
+The [v4 revision record](paper/reviews/v4-2026-09-19/) documents the shared
+sources and preservation checks.
 
 This repository records a 48-hour mathematical research experiment conceived
 and overseen by Michael Kinyon and Josef Urban. OpenAI's GPT-6 Astra, running
@@ -17,7 +25,7 @@ The research ran from **10 September 2026, 20:56:46 UTC**, to
 20 CPU cores and 100 GB RAM.
 
 The deadline ledger recorded **46 complete solution candidates**, covering
-problem entries or specified subparts. **Version 3 withdraws the claim for
+problem entries or specified subparts. **Version 3 withdrew the claim for
 10.35, leaving 45 candidates**: the original problem concerns algebraic
 numbers, while our argument concerns rational numbers. The Notebook's
 editor, Evgeny Khukhro, identified the error after both model reviews had
@@ -38,8 +46,8 @@ different constructions and stronger alternatives, and identifies older
 sources for the qualitative computability result in 16.9. The comparison
 does not assign discovery priority or establish novelty of the other entries.
 
-Start with **Section 2 of the paper** for the full results inventory and
-**Section 3** for the independent review. **Appendix M** gives a preliminary
+Start with **Section 2 of either edition** for the full results inventory and
+**Section 3 of the full account** for the independent review. **Appendix M** gives a preliminary
 review and comparison of the
 [parallel Claude Fable experiment](https://github.com/JUrban/kour1cl), run
 by the same organizers on the same machine and local resource budget.
@@ -59,7 +67,7 @@ The [final research report](reports/FINAL_REPORT.md),
 deadline record. Dated progress reports retain their original counts and
 review status; use the revised paper for the subsequent assessment.
 
-- [paper/](paper/): current PDF, LaTeX sources, review records and reproduction instructions.
+- [paper/](paper/): both current PDFs, LaTeX sources, review records and reproduction instructions.
 - [docs/](docs/): the supplied Notebook and searchable text.
 - [research/](research/): proofs, partial results, source audits and unsuccessful approaches.
 - [scripts/](scripts/): exact computations and verification programs.

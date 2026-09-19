@@ -1,0 +1,58 @@
+\usepackage{iftex}
+\ifPDFTeX
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\fi
+\usepackage{lmodern}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{array,booktabs,longtable,graphicx}
+\PassOptionsToPackage{obeyspaces}{url}
+\usepackage{microtype,enumitem,xurl,xcolor,calc}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\hypersetup{pdftitle={Forty-eight hours with the Kourovka Notebook},
+ pdfauthor={Codex gpt-6-astra; Michael Kinyon; Josef Urban},
+ pdfsubject={An agentic mathematical research experiment}}
+\setlist{topsep=4pt,itemsep=2pt}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\Hol}{Hol}
+\DeclareMathOperator{\NHol}{NHol}
+\DeclareMathOperator{\Ind}{Ind}
+\DeclareMathOperator{\tr}{tr}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\kn}[1]{Problem~#1}
+\newcommand{\artifact}[1]{\nolinkurl{#1}}
+\newcommand{\snapshot}{\texttt{cff2c37}}
+
+\newcommand{\problemstatement}[1]{%
+  \typeout{KNSTATEMENT:#1}%
+  \par\medskip\noindent\textbf{Question #1.}\enspace\emph{\csname knauthor@#1\endcsname.}\par\noindent
+  \csname knquestion@#1\endcsname\par
+  \csname knscope@#1\endcsname\par\medskip}
+\iffullpaper
+\newcommand{\comparisonlocation}{Appendix~\ref{app:contemporary-comparison}}
+\newcommand{\Comparisonlocation}{\comparisonlocation}
+\newcommand{\reproductionlocation}{Appendix~\ref{app:reproduction}}
+\else
+\newcommand{\comparisonlocation}{the comparison in the full account}
+\newcommand{\Comparisonlocation}{The comparison in the full account}
+\newcommand{\reproductionlocation}{Appendix~\ref{app:math-artifacts}}
+\fi
+\input{data/problem-statements}

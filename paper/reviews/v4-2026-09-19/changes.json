@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Version identity",
+    "before_path": "main.tex",
+    "after_path": "document.tex",
+    "before": "Version 3 --- 19 September 2026",
+    "after": "Version 4 --- 19 September 2026",
+    "reason": "Both entry points now use the shared version identity; the v3 PDF is preserved."
+  },
+  {
+    "title": "A shared mathematical dependency",
+    "before_path": "sections/candidates/20-90.tex",
+    "after_path": "sections/candidates/20-90.tex",
+    "before": "The cyclic-vector argument of Section~\\ref{cand:10.35}",
+    "after": "The cyclic-vector argument of Lemma~\\ref{lem:matrix-centralizer}",
+    "reason": "The general centralizer fact has its own shared lemma, so omitting the withdrawn application removes no premise of 20.90."
+  },
+  {
+    "title": "Attribution in both editions",
+    "before_path": "sections/attribution/16-9.tex",
+    "after_path": "sections/attribution/16-9.tex",
+    "before": "Version 2 attribution.",
+    "after": "Related work.",
+    "reason": "The existing attribution and its mathematical content remain shared; the heading no longer requires the reader to follow the revision history."
+  }
+]

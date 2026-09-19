@@ -1,0 +1,116 @@
+\subsection{Computing minimum palindromic length: Problem 16.9}
+\label{cand:16.9}
+
+In the free group \(F_n\) with specified basis \(x_1,\ldots,x_n\),
+let \(\operatorname{pl}(w)\) be the minimum number of palindromes
+whose product is \(w\), with \(\operatorname{pl}(1)=0\).
+The following algorithm uses \(O(L^3)\) arithmetic operations
+and \(O(L^2)\) integer storage for an input word of length \(L\).
+Its stored integers have magnitude \(O(L)\).
+
+Let \(\tau(x_i)=x_i^{-1}\), and form
+\(H=F_n\rtimes\langle t\rangle\), with \(t^2=1\)
+acting by \(\tau\). The substitutions \(s_0=t,s_i=x_it\)
+give the presentation
+\[
+ H=\langle s_0,\ldots,s_n:s_i^2=1\text{ for all }i\rangle.
+\]
+The subgroup \(F_n\) is its even-parity subgroup.
+An element \(p\in F_n\) is a palindrome exactly when
+\(\tau(p)=p^{-1}\), hence when \(pt\) is an involution.
+Every nonidentity involution of this free product
+is conjugate to an \(s_i\), by cyclic reduction,
+and has odd parity. Thus the involutions, or
+reflections, are precisely the elements \(pt\)
+for palindromes \(p\).
+
+If \(r(h)\) is reflection length in \(H\), then
+\begin{equation}\label{eq:palindrome-reflection}
+ \operatorname{pl}(w)=\min\{r(w),r(wt)\}.
+\end{equation}
+Indeed, a product \(w=p_1\cdots p_k\) gives
+\[
+ wt^k=(p_1t)(\tau(p_2)t)\cdots
+                   (\tau^{k-1}(p_k)t).
+\]
+Conversely, write a reflection factorization of
+\(wt^j\), \(j=0,1\), as
+\((q_1t)\cdots(q_mt)\). Parity gives \(m\equiv j\pmod2\),
+so
+\(w=q_1\tau(q_2)\cdots\tau^{m-1}(q_m)\);
+each factor is a palindrome. This proves both
+inequalities in \eqref{eq:palindrome-reflection}.
+
+For a word \(V\) on the involution alphabet, let
+\(d(V)\) be the minimum number of unmatched positions
+in a noncrossing partial pairing of equal letters.
+This is unchanged by insertion or deletion of two
+adjacent equal letters. Pairing the inserted letters
+gives one inequality. For the reverse, start with
+a pairing before deletion. If the deleted positions
+are paired together, remove that pair. If neither
+has a partner, remove them. If just one has another
+partner, leave that partner unmatched. If both have
+other partners, pair those partners to each other.
+Their labels agree, and noncrossing is preserved:
+the old arcs joined along the short deleted interval
+give a new arc disjoint from the others. None of
+these repairs increases the number unmatched.
+
+It follows from free-product reduction that \(d\)
+depends only on the represented element. Moreover
+\(d(h)=r(h)\). A conjugate \(vs_iv^{-1}\) has a
+pairing leaving only its central letter unmatched,
+so a product of \(k\) reflections has \(d\leq k\).
+Conversely, delete the unmatched letters of a
+pairing. The remaining fully paired word reduces
+to the identity by successively removing innermost
+pairs. Deleting one letter uses the identity
+\[
+ Xs_iY=(Xs_iX^{-1})(XY).
+\]
+Successive deletions express the original word
+as a product of that many reflections. This
+proves equality. The general Coxeter deletion
+principle is prior work of Dyer~\cite{dyer};
+the special case needed here has been proved directly.
+
+Replace each \(x_i\) in the input by \(i0\) and each
+\(x_i^{-1}\) by \(0i\), obtaining \(W\) of length
+at most \(2L\). Then
+\[
+ \operatorname{pl}(w)=\min\{d(W),d(W0)\}.
+\]
+For half-open intervals of \(V=W0\), set \(D(i,i)=0\) and compute
+\[
+ D(i,j)=\min\left\{
+ \begin{aligned}
+ &1+D(i+1,j),\\
+ &\min_{\substack{i<k<j\\V_i=V_k}}
+       \bigl(D(i+1,k)+D(k+1,j)\bigr)
+ \end{aligned}
+ \right\}.
+\]
+The minimum over an empty set is \(+\infty\).
+The first option leaves position \(i\) unmatched.
+Pairing it with \(k\) separates the remaining
+positions into the inside and the following
+interval, by noncrossing. This exhausts all
+possibilities, proving the recurrence. There
+are \(O(L^2)\) intervals with \(O(L)\) choices each.
+
+Stored minimizing choices recover the unmatched
+positions, whose successive deletions recover
+reflection factors \(r_i\). Put \(q_i=r_it\),
+rewrite their even-parity words in the \(x_i\),
+and apply \(\tau\) to every second factor as above.
+This gives a minimum palindrome factorization.
+The total output length is \(O(L^2)\), since
+each conjugating prefix has length \(O(L)\)
+and there are \(O(L)\) factors. Bit complexity
+adds the usual \(O(\log(L+1))\) overhead for
+the stored integers; encoding generator indices
+is separate. This computes group palindromic
+length, allowing cancellation between factors,
+not merely a partition of the reduced word.
+Source: \artifact{research/16.9-proof.md}.

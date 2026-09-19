@@ -1,0 +1,48 @@
+\subsection{A closed set with no closed higher power: Problem 16.28(a)}
+\label{cand:16.28}
+
+Let \(K=\overline{\F_5(t)}\), \(H=\SL_2(K)\), and
+\(Y=\{A\in H:\tr A=1\}\). This is a closed conjugacy class:
+the polynomial \(X^2-X+1\) has distinct roots, and a
+\(\GL_2(K)\)-conjugating matrix can be made to have determinant
+one by multiplying it by a scalar.
+
+The square \(Y^2\) omits \(-I\), since \(AB=-I\) would
+give \(B=-A^{-1}\) and \(\tr B=-1\). Nevertheless, for
+\(s\ne0,-1\), put
+\[
+ u=\frac{s}{1+s},\quad w=u(1-u)-1,\quad
+ A_s=\begin{pmatrix}u&1\\w&1-u\end{pmatrix},\quad
+ D_s=\operatorname{diag}(s,s^{-1}).
+\]
+Both \(A_s\) and \(A_s^{-1}D_s\) have determinant one and
+trace one; for the latter the trace is
+\((1-u)s+us^{-1}=1\). Thus \(D_s\in Y^2\).
+The curve \(s\mapsto D_s\) shows that \(-I=D_{-1}\)
+is in its closure, and \(Y^2\) is not closed.
+
+In the connected reductive group \(G=H\times K^\times\),
+take the closed set
+\[
+ X=(Y\times\{1\})\cup\{(I,t)\}.
+\]
+Since \((I,t)\) is central,
+\[
+ X^n=\bigcup_{k=0}^n Y^k\times\{t^{n-k}\}.
+\]
+The powers of \(t\) are distinct. For every \(n\geq2\),
+intersection with the closed fiber
+\(H\times\{t^{n-2}\}\) is therefore exactly
+\(Y^2\times\{t^{n-2}\}\), which is not closed in that fiber.
+Hence no \(X^n\), \(n>1\), is closed.
+
+This answers part~(a) as printed. It uses a reducible \(X\)
+and a field with an element of infinite multiplicative order;
+neither is excluded by the statement. The same class \(Y\)
+also gives the negative answer to part~(b), since \(Y^2\)
+contains the open set \(\tr(C)^2\ne4\) and omits \(-I\).
+The experiment classified that part as already implied by
+prior class-product results, so it is excluded from this
+candidate's counted coverage. Source:
+\artifact{research/16.28-proof.md}.
+

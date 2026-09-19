@@ -1,0 +1,261 @@
+\subsection{20.124: a Rota--Baxter operator in every infinite free rank}
+\label{partial:rb}
+
+The question asks for a weight-one Rota--Baxter operator on a
+nonabelian free group with image its derived subgroup.
+The experiment constructs one in every infinite rank.
+The bijective-cocycle framework is prior work
+\cite{bardakov-gubarev,guo-lang-sheng}; the construction and
+identity can be given directly.
+
+For an infinite cardinal \(\kappa\), partition a free basis
+into levels \(X_0,X_1,\ldots\), each of size \(\kappa\).
+Let \(F_m\) be free on levels through \(m\).
+Both \(F_m\) and \(F_m'\) have cardinality \(\kappa\); for
+the lower bound on \(F_m'\), use the distinct commutators
+with one fixed basis element. Choose a surjection
+\(X_{m+1}\to F_m'\) and define an endomorphism \(\phi\)
+by those maps, killing \(X_0\).
+It lowers levels, so each element is killed by an iterate.
+Moreover \(\phi(F)=\bigcup_m F_m'=F'\).
+
+For any locally terminating endomorphism of any group put
+\[
+ D(g)=g\phi(g)^{-1},\qquad
+ T(g)=g\phi(g)\phi^2(g)\cdots.
+\]
+Each product is finite for its particular \(g\).
+Cancellation gives \(D(T(g))=g=T(D(g))\), so these are inverse
+set bijections. Define \(B(g)=\phi(T(g))\), whence
+\(B(D(u))=\phi(u)\). For \(g=D(u),h=D(v)\),
+\[
+ gB(g)hB(g)^{-1}=uv\phi(uv)^{-1}=D(uv).
+\]
+Therefore
+\[
+ B(gB(g)hB(g)^{-1})=\phi(uv)=B(g)B(h),
+\]
+the required identity, and \(\operatorname{im}B=\operatorname{im}\phi=F'\).
+If \(\phi(x)=w\), the explicit preimage is \(B(xw^{-1})=w\).
+The descendant multiplication is carried from the original
+free group by \(D\).
+In finite rank an endomorphism image is finitely generated
+whereas \(F'\) has infinite rank. This limits this particular
+method; it does not rule out another Rota--Baxter map.
+See \artifact{research/20.124-infinite-rank-proof.md}.
+
+\subsection{17.118: characteristic exponent subgroups}
+\label{partial:17.118}
+
+Let a finite \(p\)-group \(G\) have an exponent-\(p\) subgroup
+\(H\) of index \(p\). The question asks for a characteristic
+exponent-\(p\) subgroup of index bounded solely in terms of \(p\).
+The experiment proves bounds \(p^{c+1}\) if \(H\) has class
+at most \(c\), and \(p^c\) if \(G\) has class at most \(c\).
+The optimal universal bounds for \(p=2,3\) are \(4,27\).
+
+Here is the class argument. Intersect all automorphic images
+of \(H\), obtaining characteristic exponent-\(p\) subgroup
+\(K\) with \(G/K\cong\F_p^r\).
+Choose \(r\) images \(H_i\) defining independent coordinate
+hyperplanes and lifts \(x_i\) of the dual coordinate basis.
+Together with generators of \(K\), they generate \(G\), and
+omitting \(x_i\) leaves a subgroup inside \(H_i\).
+For a class-\(c\) group with this deletion property, \(r>c\)
+forces exponent \(p\).
+To justify deletion without assuming it is an endomorphism
+of \(G\), form the free class-\(c\) group and impose \(w^p=1\)
+for every word omitting a distinguished \(x_i\).
+The deletion maps descend as commuting idempotents \(e_i\).
+Every \(p\)th power lies in \(\bigcap_i\ker e_i\).
+On the weight-\(k\) lower-central factor, \(k<r\), the product
+\(\prod_i(1-e_i)\) kills each generating bracket, since it
+omits some \(x_i\). It is the identity on the common kernel.
+Induction thus places that kernel in \(\gamma_r=1\).
+This proves the deletion assertion and the bound for \(G\).
+If only \(H\) has class \(c\) and \(r>c+1\), every generating
+commutator of weight \(c+1\) omits one \(x_i\), hence vanishes
+in its \(H_i\). So \(G\) has class at most \(c\), and the same
+argument applies.
+
+For \(p=2\), \(H\) is abelian, giving \(4\).
+For \(p=3\), Laffey's theorem says that a finite 3-group not
+of exponent three has at most a \(7/9\) proportion of cube roots
+of one \cite{laffey}.
+The union of the independent hyperplanes \(H_i\) has proportion
+\(1-(2/3)^r\). At \(r\ge4\) this exceeds \(7/9\).
+Thus \(r\le3\), proving \(27\).
+
+For every prime \(p\), a uniform bound must be at least \(p^p\).
+Take the associative \(\F_p\)-algebra with basis all words
+without repeated letters in \(p\) letters \(x_0,\ldots,x_{p-1}\),
+including the empty word, and multiply by concatenation when
+the supports are disjoint and by zero otherwise.
+Let \(J\) be its positive-degree ideal and \(G=1+J\).
+Then \(J^{p+1}=0\). If \(u\) has linear part \(\sum a_ix_i\),
+\[
+ (1+u)^p=1+\Bigl(\prod_i a_i\Bigr)\Omega,
+\]
+where \(\Omega\ne0\) is the sum of the distinct length-\(p\)
+basis words. The preimage of any coordinate hyperplane
+has index \(p\) and exponent \(p\), with class exactly \(p-1\).
+The subgroup \(K=1+J^2\) has exponent \(p\) and index \(p^p\).
+It is intrinsically characterized by
+\[
+ K=\{g:(gh)^p=h^p\text{ for every }h\in G\}.
+\]
+For a nonzero linear part \(a\), choose \(b_j=0\) where
+\(a_j\ne0\) and \(b_i\ne-a_i\) for all other coordinates;
+then \(\prod b_i=0\ne\prod(a_i+b_i)\), proving the characterization.
+Cycling the letters induces a \(p\)-cycle on \(\F_p^p\).
+Any nonzero invariant subspace contains a nonzero constant
+vector, by taking the last nonzero iterate of \(\sigma-1\).
+That vector has a lift with nontrivial \(p\)th power.
+The image of a characteristic exponent-\(p\) subgroup must
+therefore be zero, forcing it inside \(K\).
+This proves sharpness for \(p=2,3\) and the general lower bound.
+It does not give unbounded index at a fixed \(p\).
+See \artifact{research/17.118-partial-proof.md}; the bounded-class
+parameter is not known here to depend only on \(p\ge5\).
+
+\subsection{Other proved restrictions and a lower-bound construction}
+
+For \kn{21.114}, write \(a(X)=|X/X'|\); a finite group is
+weakly ab-maximal if \(a(H)\le a(X)\) for all \(H\le X\).
+The prior general framework is due to Lisi--Sabatini
+\cite{lisi-sabatini}. A central-product construction in the
+experiment yields order \(8192\) and derived length three,
+so a universal derived-length bound, if it exists, is at least three.
+Let \(P\) have cyclic central subgroup \(Z\) of order \(p^k\)
+with \(Q=P/Z\) weakly ab-maximal. Form the Heisenberg group
+\(E\) on \((\Z/p^k\Z)^r\times(\Z/p^k\Z)^r\times\Z/p^k\Z\),
+where \(r\ge1\),
+with central cross term \(u\cdot v'\), and identify \(E'=Z(E)\)
+with \(Z\) in the central product \(G\).
+Then \(|G|=|P|p^{2rk}\), \(a(G)=a(Q)p^{2rk}\), and its
+derived length is \(\max(2,\operatorname{dl}P)\).
+For \(H\le G\), enlarge to \(HZ\), which can only increase \(a(H)\).
+In \(H/Z\le Q\times V\), let \(U=(H/Z)\cap V\) and let \(T\)
+be the projection on \(Q\). Write
+\(|Z/(H'\cap Z)|=p^t\). Then
+\[
+ a(H)\le p^t|U|a(T)\le p^t|U|a(Q).
+\]
+The reduction of \(U\) modulo \(p^t\) is isotropic in the
+nondegenerate alternating pairing on
+\((\Z/p^t\Z)^{2r}\). Character orthogonality gives its size
+at most \(p^{rt}\), even when it is not a free module.
+Hence \(|U|\le p^{2rk-rt}\), proving \(a(H)\le a(G)\).
+Literal finite permutation models supply \(P\) of order \(512\),
+derived-series orders \(512,32,2,1\), and central \(Z\) of order
+four, with \(Q\) of order \(128\) and \(a(Q)=16\).
+Taking \(r=1\) gives the stated group and \(a(G)=256\).
+The exact input checks enumerate every subgroup of the two
+retained \(Q\)-models; they are recorded in
+\artifact{research/21.114-central-products.md}.
+That file also proves that central extensions of these particular
+outputs still have derived length at most three. Iteration of
+this construction does not establish unboundedness.
+
+For \kn{19.108}, let \(p\) be odd and \(|P|=p^{10}\), with
+abelian normal subgroup \(A\) of order at least \(p^6\).
+Then for every irreducible complex \(\chi\) and every
+\(\chi(x)\ne0\), one has \(|x|\mid |P|/\chi(1)^2\).
+Wilde's prior results cover degree at most \(p^3\), groups
+of order at most \(p^9\), and give, for a faithful violating
+character, a conjugate of \(\langle x\rangle\) intersecting it
+trivially \cite{wilde-supports}.
+If \(\chi\) has nontrivial kernel, the order-at-most-\(p^9\)
+theorem in the quotient lifts the bound: the order of \(x\)
+is at most its quotient order times the kernel order.
+Thus a violation requires faithful \(\chi\) of degree \(p^4\).
+The bound \(\chi(1)\le[P:A]\) forces \(|A|=p^6\),
+and equality in Clifford theory gives \(\chi=\lambda^P\).
+Nonvanishing puts \(x\) in the normal subgroup \(A\).
+The disjoint conjugate cyclic subgroups then force \(|x|=p^3\)
+and \(A=\langle x\rangle\times\langle x\rangle^g
+\cong C_{p^3}^2\). The dual orbit of \(\lambda\) has size \(p^4\).
+Such an orbit of a \(p\)-subgroup of
+\(\GL_2(\Z/p^3\Z)\) is invariant under translation by \(p^2\F_p^2\).
+To see this, its image modulo \(p\) has size at most \(p\).
+If its image modulo \(p^2\) had size \(p^3\), the congruence
+kernel would supply \(I+pM_1,I+pM_2\) with independent
+directions at a point. Their \(p\)th powers are
+\(I+p^2M_i\) modulo \(p^3\), forcing full \(p^2\)-fibers and
+an orbit of size \(p^5\), a contradiction. The image modulo
+\(p^2\) thus has size at most \(p^2\); the size \(p^4\)
+forces every fiber full. Translation in a coordinate where
+\(x\) is primitive multiplies the orbit character sum by a
+nontrivial \(p\)th root of unity, so it vanishes, the final
+contradiction. Nonsplit extensions are included.
+Groups with no such large abelian normal subgroup remain
+uncovered; see \artifact{research/19.108-partial.md}.
+
+For \kn{18.120}, suppose \(G=AB\), \(A\) abelian and \(B\)
+of class at most two. Put \(C=(B')^G=\langle(B')^a:a\in A\rangle\)
+and \(K=\langle A,B'\rangle=AC\).
+If \(C\) is abelian, \(B_0=K\cap B\) is abelian and \(K=AB_0\).
+Indeed an element \(ac\in K\cap B\) centralizes \(B'\);
+as \(c\) does too, \(a\) centralizes \(B'\), and commutativity
+of \(A\) makes it centralize all its \(A\)-conjugates.
+Two such elements commute. The product assertion follows
+by writing an element of \(K\) in \(AB\).
+If \(G\) has class at most four, conjugates of elements of
+\(B'\subseteq\gamma_2(G)\) differ from them by elements
+of \(\gamma_3(G)\); all cross brackets have weight at least
+five, while \(B'\) is abelian. Thus \(C\) is abelian.
+This proves the class-four case without finiteness or
+\(A\cap B=1\). The defect-two subnormal case is also a direct
+deduction from McCann's earlier lemma \cite{mccann};
+see \artifact{research/18.120-partial.md}.
+
+For \kn{6.47}, if a binary word defines another group operation
+on a class-two group \(G\), collection and the two identity laws
+give \(x*y=xy[x,y]^k\). This is associative, with unchanged
+inverses and powers and with new commutator
+\([x,y]_*=[x,y]^{2k+1}\).
+Collect an identity in the free class-two group as a product
+of unary powers and binary commutator powers. Setting all but
+one, and then all but two, variables equal to one shows that
+each collected factor is separately an identity of \(G\).
+Unchanged powers and the commutator formula transfer them all
+to the new group, which therefore lies in \(\operatorname{var}(G)\).
+This is a direct proof of a restricted case within the subject
+already studied by Cooper \cite{cooper}, without a novelty claim;
+see \artifact{research/6.47-class-two.md}.
+
+\subsection{Bounded exclusions with no general conclusion}
+
+The following completed searches are useful negative evidence,
+with the stated coverage boundaries.
+
+\begin{itemize}
+\item For \kn{20.21}, structural reductions and catalogue
+exclusions through order \(1536\) force any counterexample
+to have order at least \(3072\). All 26,760 retained kernel
+pairs at order \(1536\) were separated from their multiplication
+tables; catalogue and subgroup-enumeration coverage remain
+dependencies.
+\item For \kn{19.20}, all 91,774 nonabelian groups through
+order \(511\) gave no equality case and 469 reverse inequalities.
+This does not decide the arbitrary-group equality question.
+\item For \kn{21.113}, 2,750 ordinary character tables provided
+9,850 table/prime cases. Of the corresponding modular cases,
+7,573 were available and 2,277 were unavailable. No
+counterexample appeared in the available cases.
+\item For \kn{21.99}, the retained coverage includes all
+4,722 transitive groups of degrees \(2\)--\(20\); direct
+word-certificate checks cover the 86 groups of degrees
+\(2\)--\(8\). These are different scopes, not interchangeable
+verification counts.
+\item For \kn{18.43}, exact matrix-trace fingerprints screened
+all 3,933,931,043 positive binary necklaces of lengths
+\(1\)--\(36\), with no identity candidate.
+A future collision would require symbolic certification;
+larger lengths remain outside the search.
+\end{itemize}
+
+The corresponding reports and scripts are indexed in
+\artifact{reports/FINAL_REPORT.md} and \artifact{reports/STATUS.md}.
+The absence of a witness in these finite domains is not a
+proof for unbounded orders, dimensions, or word lengths.

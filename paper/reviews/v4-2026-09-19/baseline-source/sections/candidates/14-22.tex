@@ -1,0 +1,88 @@
+\subsection{A coefficient-support obstruction: Problem 14.22}
+\label{cand:14.22}
+
+Write the additive rational group multiplicatively as
+\(G=\{a_q:q\in\Q\}\), with \(a_qa_r=a_{q+r}\).
+It is torsion-free and linear via \(a_q\mapsto U(q)\)
+in \(\SL_2(\Q)\). The solution set of
+\(S=\{[x,a_1]=1\}\) is all of \(G\), and is irreducible
+in the group-equation Zariski topology. Indeed, evaluating
+a word \(w\in G*\langle x\rangle\) at \(x=a_t\)
+gives \(a_{m(w)t+b(w)}\), where \(m(w)\in\Z\)
+is its exponent sum and \(b(w)\in\Q\) its coefficient sum.
+An equation therefore has zero, one, or all points as
+solutions. Proper closed sets in this one-variable topology
+are finite, and \(G\) is infinite.
+
+Let \(T\) be any finite system equivalent to \(S\).
+Every word in \(T\) has \(m(w)=b(w)=0\). Choose \(d>0\)
+such that all its coefficients lie in the cyclic group
+\(C=\langle a_{1/d}\rangle\). Form
+\[
+ K=G*_C(C\times\langle x\rangle)
+\]
+and the natural epimorphism
+\(\pi:G*\langle x\rangle\to K\).
+Each word of \(T\) vanishes in the second factor, since
+both exponent sums are zero. The group \(K\) is torsion-free:
+normal form in an amalgamated free product conjugates a
+torsion element into a factor, and both factors are
+torsion-free. Thus \(\ker\pi\) is a normal isolated
+subgroup containing \(T\), and contains the least such
+subgroup \(\sqrt T\).
+
+But \([x,a_{1/(2d)}]\) vanishes at every point of \(G\),
+so belongs to \(\operatorname{Rad}_G(T)\). Its image in
+\(K\) is a reduced alternating word of length four:
+\(x\notin C\) and \(a_{1/(2d)}\notin C\). It is nontrivial
+by normal form. Hence
+\[
+ \sqrt T\ <\ \operatorname{Rad}_G(T)
+\]
+for every finite equivalent \(T\). The radical is isolated
+because it is an intersection of kernels of maps into a
+torsion-free group, which also justifies the displayed
+inclusion.
+
+The coefficient group is not finitely generated, as permitted
+by the printed question. The separating quotient need only
+be torsion-free; isolatedness does not mean unique roots.
+In particular, commuting with a square does not imply
+commuting with its root in that quotient.
+
+For completeness, the archive also avoids the possible concern
+that the intended geometry uses nonabelian coefficients.
+Take \(G=\Q*\langle b\rangle\), represented faithfully by
+\(a_q\mapsto U(q)\), \(b\mapsto
+\left(\begin{smallmatrix}1&0\\t&1\end{smallmatrix}\right)\)
+over \(\Q(t)\). For a cyclically reduced alternating word,
+the trace has nonzero leading coefficient
+\(\prod_j q_j n_j\), where the nonzero rational syllables
+are \(q_j\) and the \(b\)-syllables are \(b^{n_j}\).
+Thus the representation is faithful. The solution set of
+\([x,a_1]=1\) is the factor \(\Q\), since free factors are
+malnormal.
+
+The coordinate group is
+\((\Q\times\langle x\rangle)*\langle b\rangle\).
+To verify this and irreducibility directly, represent \(x\)
+by \(U(z)\) with \(z\) a second indeterminate. The same
+leading-coefficient argument is faithful. Every nontrivial
+word remains nontrivial under all but finitely many rational
+specializations \(z=q\): a nonzero coefficient polynomial
+has only finitely many roots. These evaluations discriminate
+the coordinate group and make every proper relative algebraic
+subset of the solution set finite.
+
+For a finite equivalent system, choose a common denominator
+for all rational syllables in its coefficients. Its words
+already vanish in
+\((C\times\langle x\rangle)*\langle b\rangle\), which
+embeds in the coordinate group by normal form. They
+therefore vanish in the torsion-free group
+\[
+ \bigl(\Q*_C(C\times\langle x\rangle)\bigr)*\langle b\rangle,
+\]
+while \([x,a_{1/(2d)}]\) again survives. This gives the same
+strict radical obstruction with nonabelian linear coefficients.
+Source: \artifact{research/14.22-proof.md}.

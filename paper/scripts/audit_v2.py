@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 from public_review_files import public_review_files
 from render_v2_changes import render
-from revision_sources import preserved_mathematical_source, v2_source
+from revision_sources import preserved_mathematical_source, v2_source, v3_source
 
 PAPER = Path(__file__).resolve().parents[1]
 REV = PAPER / 'reviews/v2-2026-09-19'
@@ -28,7 +28,7 @@ def main():
             assert hashlib.sha256(preserved_mathematical_source(PAPER, name)).hexdigest() == row['sha256'], name
             preserved.append(name)
     assert len(preserved) == 50
-    raw = (PAPER / 'sections/representative.tex').read_text()
+    raw = v3_source(PAPER, 'sections/representative.tex').decode()
     for stem in ['21-106', '21-68']:
         line = r'\input{sections/attribution/' + stem + '}\n'
         assert raw.count(line) == 1
@@ -40,14 +40,14 @@ def main():
     source_data = json.loads((REV / 'sources.json').read_text())
     sources = {r['problem']: r for r in source_data['sources']}
     annotations = json.loads((PAPER / 'data/review-annotations.json').read_text())['entries']
-    wrappers = ((PAPER / 'sections/candidate-proofs.tex').read_text()
-                + (PAPER / 'sections/representative.tex').read_text())
+    wrappers = (v3_source(PAPER, 'sections/candidate-proofs.tex').decode()
+                + v3_source(PAPER, 'sections/representative.tex').decode())
     appendix = (PAPER / 'appendices/contemporary-comparison.tex').read_text()
     bib = (PAPER / 'references.bib').read_text()
     for r in rows:
         assert r['result_comparison'] and r['argument_comparison'] and r['review_scope']
         assert 'Unassigned' in r['priority']
-        note = (PAPER / r['note_path']).read_text()
+        note = v3_source(PAPER, r['note_path']).decode()
         assert wrappers.count(r'\input{' + r['note_path'].removesuffix('.tex') + '}') == 1
         assert r'\ref{app:contemporary-comparison}' in note
         assert annotations[r['ledger_problem']]['contemporary_sources'] == r['bibliography_keys']
@@ -95,6 +95,9 @@ def main():
         result['declared_v3_corrections'] = ['10.35 withdrawal; preserved v2 source checked separately']
         result['scope'] += ' V2 change excerpts and version date checked against the preserved v2 snapshot.'
         dest = PAPER / 'reviews/v3-2026-09-19/v2-preservation-audit.json'
+    if (PAPER / 'reviews/v4-2026-09-19/baseline.json').exists():
+        result['scope'] += ' Historical sources checked against the preserved v3 snapshot; current shared proofs are checked by audit_v4.py.'
+        dest = PAPER / 'reviews/v4-2026-09-19/v2-preservation-audit.json'
     dest.write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
 
