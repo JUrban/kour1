@@ -1,13 +1,28 @@
 # Forty-eight hours with the Kourovka Notebook
 
-[Read the revised paper (PDF)](kourovka-experiment.pdf) ·
+[Read version 2 (PDF)](kourovka-experiment.pdf) ·
+[Final pre-v2 paper (PDF)](versions/kourovka-experiment-2026-09-17-v1.pdf) ·
 [Reviewed 15 September version (PDF)](versions/kourovka-experiment-2026-09-15.pdf) ·
 [First review revision (PDF)](versions/kourovka-experiment-2026-09-17-review.pdf).
 
-This is the polished 17 September revision, on branch `paper/review-revision`.
+This is **version 2, dated 19 September 2026**, on branch `paper/v2`.
 Anthropic's **Claude Opus[1m]** (`claude-opus-5[1m]`, `xhigh`, via Claude Code)
 provided the independent mathematical review. The abstract and early review
 section describe its confirmations, corrections and dialogue with Codex.
+
+Version 2 adds a comparison of eleven entries with contemporary solutions
+identified by the Notebook's editor, Evgeny Khukhro. Appendix N (pages
+136–138) compares their results and arguments; attribution notes follow
+all eleven affected proofs. It credits Achyuth Jayadevan's eleven papers
+and Aluna Rizzoli's separate 21.68 note, while retaining the earlier
+Zhang–Li acknowledgment for 21.106. The 16.9 discussion also identifies
+older sources for qualitative computability and the matching recurrence.
+The 46-entry deadline ledger is preserved. Artifact dates do not establish
+discovery priority, and the remaining entries are not thereby certified new.
+The [v2 review record](reviews/v2-2026-09-19/) includes individual comparisons,
+pinned sources, chronology, exact algebra checks and a GAP reconstruction
+of the smaller alternative 4.55 example. The accompanying Lean developments
+were downloaded but not built.
 
 The paper opens with selected mathematical outcomes and the full results
 inventory in Section 2, immediately after the introduction. The independent
@@ -130,7 +145,30 @@ To regenerate the correspondence (Pandoc 3.1.3) and change appendix:
 ~~~sh
 python3 paper/scripts/render_review_record.py
 python3 paper/scripts/render_review_changes.py
+python3 paper/scripts/render_v2_changes.py --check
 ~~~
+
+Appendix G records five further literal before/after pairs for version 2,
+bound to the preserved pre-v2 source. The earlier eighteen pairs and four
+verbatim review appendices are unchanged. Builds and bundles include the
+correspondence listed in its public manifest; the newly received raw editor
+email remains local and is excluded from both source archives.
+
+After building and packaging, validate the portable sources with:
+
+~~~sh
+python3 paper/scripts/audit_v2.py
+python3 paper/scripts/audit_reader_revision.py
+python3 paper/scripts/audit_manuscript.py
+python3 paper/scripts/validate_source_bundle.py
+~~~
+
+The portable validation extracts both archives outside the repository,
+checks their manifests, runs ten commands, and compares the standalone
+PDF text with the working build. Its checks cover inventory regeneration,
+change records, source preservation, the v2 comparison and exact identities,
+and the four ancillary carpet proofs. It does not rerun the historical
+large computations or the alternative Lean projects.
 
 The supplemental 14.72 algebra check uses SymPy:
 `python3 paper/scripts/check_14_72_principal.py`. It is separate from the

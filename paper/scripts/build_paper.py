@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import sys
 from datetime import datetime, timezone
+from public_review_files import public_review_files
 
 PAPER = Path(__file__).resolve().parents[1]
 ROOT = PAPER.parent
@@ -22,6 +23,7 @@ def main():
         command.append("--require-complete")
     subprocess.run(command, cwd=ROOT, check=True)
     subprocess.run([sys.executable, str(PAPER / "scripts/render_review_changes.py"), "--check"], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(PAPER / "scripts/render_v2_changes.py"), "--check"], cwd=ROOT, check=True)
     correspondence = json.loads((PAPER / "external-reviews/manifest.json").read_text())
     for record in correspondence["documents"]:
         for path_key, hash_key in [("path", "sha256"), ("rendered_path", "rendered_sha256")]:
@@ -54,7 +56,7 @@ def main():
                  PAPER / "figures/trajectory.pdf"]
                 + list((PAPER / "sections").rglob("*.tex"))
                 + list((PAPER / "appendices").rglob("*.tex"))
-                + [p for p in (PAPER / "external-reviews").iterdir() if p.is_file()])
+                + public_review_files(PAPER))
         },
     }
     pdf = build / "main.pdf"

@@ -28,11 +28,20 @@ reconstructed many finite examples and calculations. The revised paper
 incorporates corrections and a strengthened counterexample, and includes
 the [review correspondence](paper/external-reviews/) verbatim in appendices.
 
+**Version 2 (19 September 2026)** compares eleven entries with contemporary
+solutions identified by the Notebook's editor. It credits shared arguments,
+different constructions and stronger alternatives, and identifies older
+sources for the qualitative computability result in 16.9. The comparison
+does not assign discovery priority or establish novelty of the other entries.
+
 Start with **Section 2 of the paper** for the full results inventory and
 **Section 3** for the independent review. **Appendix M** gives a preliminary
 review and comparison of the
 [parallel Claude Fable experiment](https://github.com/JUrban/kour1cl), run
 by the same organizers on the same machine and local resource budget.
+**Appendix N** presents the eleven-entry comparison; its
+[review records](paper/reviews/v2-2026-09-19/) include source hashes,
+artifact chronology and new mathematical checks.
 
 ## Research records
 

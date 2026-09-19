@@ -1,47 +1,54 @@
 # Manuscript status
 
-The polished 17 September paper has 130 pages and 101 cited works. It now
-credits Anthropic's Claude Opus[1m] (`claude-opus-5[1m]`, xhigh, Claude Code)
-as the independent mathematical reviewer on the opening page, in the
-abstract, in an early review section and in the contribution statement.
-That configuration was supplied by the organizer.
+Version 2 is dated **19 September 2026**, on branch `paper/v2`, based on
+`5fcdfdf`. The paper has 138 pages and 115 cited works. The complete pre-v2
+PDF is preserved in `versions/kourovka-experiment-2026-09-17-v1.pdf`;
+the two earlier archived PDFs also remain available.
 
-The introduction starts with the Notebook and mathematical outcomes.
-The full inventory is Section 2, beginning on page 4 immediately after the
-introduction. The independent-review account is on page 7 and the
-representative proofs begin on page 9. Proofs, partial results and prior-work
-deductions are main-text Sections 5–8. Kinyon's title-page footnote records
-his research visit to the AI4REASON institute; Urban's title-page footnote credits
-ERC NextReason (Grant Agreement No. 101200949) and hyperlinks the institute's sponsors. Detailed
-configuration, accounting, chronology and study-design material are in
-appendices. The bibliography follows the main mathematical discussion.
+The full results inventory starts on page 4, the independent review on
+page 7, and the representative proofs on page 10. Proofs, partial results
+and prior-work deductions remain in main-text Sections 5–8. The reviewer
+credit, author affiliations and title-page funding and research-visit
+footnotes are preserved.
 
-The abstract's repeated assessment sentence has been removed. The introduction
-now states the 46-entry coverage, nine selected partial-result questions and
-rediscoveries, followed by the deadline and requested local resource limits.
-The motivation briefly relates the shared budget to the MPTPChallenge and IMO.
+Appendix N (pages 136–138) compares eleven entries identified in Evgeny
+Khukhro's 18 September correspondence. All eleven alternative papers were
+read, together with Aluna Rizzoli's separate 21.68 note and two older
+sources relevant to 16.9. The abstract, introduction, inventory and all
+eleven affected proofs now carry the appropriate comparison or attribution.
+Shared arguments, different constructions and stronger alternatives are
+distinguished individually. The older qualitative computability result
+and recurrence for 16.9 are explicitly credited.
 
-The 46-entry historical ledger, usage records, mathematical arguments and
-verbatim correspondence are preserved. The first review revision and its
-PDF are frozen separately so that the exact before/after record stays tied
-to the version it describes. The prior 14.72 strengthening and the missing
-small-certificate repair remain included.
+The comparison assigns no discovery priority or copying inference.
+Local Git timestamps, publication-date fields and DOI registration are
+reported separately; none proves discovery independence. The eleven
+Lean source archives were downloaded and checksum-verified but not built.
+Khukhro's report of specialist confirmation is attributed specifically
+to alternative solutions of 21.68, 16.28(a) and 15.89.
 
-The second reader-focused pass checked emphasis, repetition, subject grouping,
-mathematical scope and navigation. Mathematical-source, structural, portable
-and visual checks passed. The standalone build gives identical PDF text and
-all four ancillary checks pass; see the completion audit. The public filtered snapshot and undistributed large-certificate
-boundary remain documented. No external upload or push is part of this task.
+New executable checks cover the alternative 4.55 character input and exact
+identities for 15.89, 18.76 and 21.106. In particular, the 18.76 comparison
+gives an explicit isomorphism between the characteristic-zero constructions,
+negating the additive kernel. Programs, outputs, source hashes and public
+metadata are in `reviews/v2-2026-09-19/`.
 
-Appendix M (pages 128–130) now reviews the parallel Claude Fable 5.1 run,
-with a short introduction mention. The comparison records the common
-organizers, machine, task and local resource budget, while distinguishing
-model settings, delegation, prior-work status and review coverage. Three
-targeted checks pass: the 18.46 catalogue calculation, the 13.19 finite
-example, and seven instances of the 2.78 family. The same family also
-lowers the reported sufficient threshold from 86 to 78. A missing
-nonsolubility hypothesis in a supplementary 2.78 claim and two minor
-exposition corrections are recorded. The external snapshot is pinned at
-`290fc829d2be01cab8a1784d006bfc0250d7f11c`; the full Fable session and
-large searches have not been re-audited. Small review programs, outputs
-and source hashes are retained under `reviews/parallel-fable-2026-09-17/`.
+The historical 46-entry ledger and usage records are unchanged. All 50
+separate mathematical exposition files are byte-identical to the pre-v2
+version; the representative-proof file changes only by adding two
+attribution-note inputs. The four verbatim review appendices and eighteen
+earlier before/after pairs are preserved. Appendix G adds five literal
+v2 pairs bound to the preserved pre-v2 source.
+
+Appendix M (pages 133–135) retains the preliminary review of the parallel
+Fable experiment, pinned at `290fc829d2be01cab8a1784d006bfc0250d7f11c`.
+Its checks and assessments remain those of 17 September. The new
+eleven-entry comparison is a separate later review.
+
+The raw editor email remains local and is excluded from both publication
+bundles. The public filtered snapshot and omitted 1.27 GB certificate
+boundary remain documented; no large certificate is added. No external
+upload, submission or Git push is part of this revision.
+
+Final build, preservation, portable-source and visual inspection results
+are recorded in `reviews/v2-2026-09-19/completion.md`.

@@ -90,6 +90,7 @@ the geometric proof. None of these checks is a fresh replay of the
 undistributed 20.100 certificate or of all the reviewer's programs.
 ''')
  out.append((PAPER/'reviews/polish-2026-09-17/editorial-changes.tex').read_text())
+ out.append('\\input{appendices/v2-changes}\n')
  result='\n'.join(out);dest=PAPER/'appendices/review-changes.tex'
  if args.check:assert dest.read_text()==result,'stale change appendix'
  else:dest.write_text(result)

@@ -1,28 +1,42 @@
 {
-  "date": "2026-09-17",
-  "scope": "Post-review annotations; the deadline ledger is unchanged. A blank note does not assert absence of imported dependencies.",
+  "date": "2026-09-19",
+  "scope": "V2 annotations of contemporary overlaps and prior ingredients; deadline classifications unchanged. All eleven overlaps are compared in Appendix N. Other entries are not thereby established as new.",
   "entries": {
     "21.106": {
       "covered_parts": "all",
-      "review_note": "Contemporaneous Heisenberg construction and Lean work acknowledged; priority unassigned.",
+      "review_note": "Heisenberg work by Zhang-Li and a different positive formula by Jayadevan acknowledged; priority unassigned.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-21-106",
+        "zhang-li-concise"
+      ]
     },
     "21.121": {
       "covered_parts": "a",
-      "review_note": "",
+      "review_note": "Different contemporary construction works for every prime in a locally finite triangular group.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-21-121a"
+      ]
     },
     "21.68": {
       "covered_parts": "all",
-      "review_note": "Kida supplies the order-96 starting configuration.",
+      "review_note": "Kida supplies the order-96 input; Rizzoli and Jayadevan give the same extension and character obstruction.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
       "selected_imported_dependencies": [
         "Kida's order-96 configuration"
+      ],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-21-68",
+        "rizzoli-21-68"
       ]
     },
     "16.87": {
@@ -41,17 +55,25 @@
     },
     "16.28": {
       "covered_parts": "a",
-      "review_note": "Uses the algebraic closure of F_5(t), a reducible closed set, and characteristic five.",
+      "review_note": "Our reducible set uses the algebraic closure of F_5(t); a different contemporary example also contains the identity.",
       "prior_work_status": "priority unestablished",
       "convention_note": "Uses the algebraic closure of F_5(t), a reducible closed set, and characteristic five.",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-16-28"
+      ]
     },
     "14.22": {
       "covered_parts": "all",
-      "review_note": "The coefficient group is infinitely generated; no finite-generation conclusion is claimed.",
+      "review_note": "Our coefficients are infinitely generated; a different contemporary example has two-generated polycyclic coefficients.",
       "prior_work_status": "priority unestablished",
       "convention_note": "The coefficient group is infinitely generated; no finite-generation conclusion is claimed.",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-14-22"
+      ]
     },
     "16.20": {
       "covered_parts": "all",
@@ -69,17 +91,25 @@
     },
     "17.101": {
       "covered_parts": "all",
-      "review_note": "",
+      "review_note": "HNN-module method shared with contemporary work, which additionally obtains faithfulness.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-17-101"
+      ]
     },
     "18.76": {
       "covered_parts": "all",
-      "review_note": "",
+      "review_note": "Contemporary characteristic-zero construction is isomorphic up to inversion of the additive kernel.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-18-76"
+      ]
     },
     "18.92": {
       "covered_parts": "a,b",
@@ -120,10 +150,14 @@
     },
     "21.40": {
       "covered_parts": "all",
-      "review_note": "",
+      "review_note": "Root-and-trace proof and quantitative bound shared with contemporary work.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-21-40"
+      ]
     },
     "21.60": {
       "covered_parts": "all",
@@ -134,10 +168,14 @@
     },
     "4.55": {
       "covered_parts": "all",
-      "review_note": "",
+      "review_note": "Different rank-88 PSL2(11) example in contemporary work; see the v2 attribution after the proof.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-4-55"
+      ]
     },
     "21.107": {
       "covered_parts": "all",
@@ -148,17 +186,27 @@
     },
     "15.89": {
       "covered_parts": "all",
-      "review_note": "",
+      "review_note": "Same graph and inverse in contemporary work, with the stronger full punctured point spectrum.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-15-89"
+      ]
     },
     "16.9": {
       "covered_parts": "all",
-      "review_note": "",
+      "review_note": "Qualitative computability and cancellation recurrence are prior ingredients; explicit reduction and cubic algorithm shared with contemporary work.",
       "prior_work_status": "priority unestablished",
       "convention_note": "",
-      "selected_imported_dependencies": []
+      "selected_imported_dependencies": [],
+      "contemporary_comparison": "reviews/v2-2026-09-19/comparison.json",
+      "contemporary_sources": [
+        "jayadevan-16-9",
+        "dahmani-guirardel-equations",
+        "cancellation-norm"
+      ]
     },
     "18.18": {
       "covered_parts": "all",

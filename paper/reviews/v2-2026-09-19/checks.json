@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Three exact polynomial identities and the alternative 4.55 finite character input. No Lean build or full-portfolio computational replay.",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "paper/reviews/v2-2026-09-19/check_identities.py"
+      ],
+      "exit_code": 0,
+      "program_sha256": "5f60be26e48d07591d6a8624f9f2a5f01f264ee16dacb4540341dd76b69a8893",
+      "output": "identities-output.txt",
+      "output_sha256": "eadacc243ffa49a2f0135ede1d3d9abf3bb5dadc1d82b9e63f1dd22d74b33057"
+    },
+    {
+      "command": [
+        "gap-4.16.1/gap",
+        "-q",
+        "-b",
+        "-T",
+        "paper/reviews/v2-2026-09-19/check_4_55.g"
+      ],
+      "exit_code": 0,
+      "program_sha256": "df21630304932ac241225bb94f0da118698eb9f0ba973415fee9b3752f6080eb",
+      "output": "4.55-output.txt",
+      "output_sha256": "90b5f73dcd1a742aa1db0cbb1e2d25602d0b4bdabb193ca83b4d13aa2129a7b3"
+    }
+  ]
+}

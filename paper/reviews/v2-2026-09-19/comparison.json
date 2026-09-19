@@ -1,0 +1,176 @@
+{
+  "date": "2026-09-19",
+  "reviewer": "Codex gpt-6-astra; this comparison is separate from the earlier Claude review.",
+  "scope": "All eleven editor-supplied alternative papers, with the separate Rizzoli note and retained Zhang-Li attribution; mathematical reading and selected new checks, not a Lean kernel replay.",
+  "entries": [
+    {
+      "problem": "4.55",
+      "ledger_problem": "4.55",
+      "source_id": "4.55",
+      "note_path": "sections/attribution/4-55.tex",
+      "bibliography_keys": [
+        "jayadevan-4-55"
+      ],
+      "relationship": "Different group; smaller alternative",
+      "result_comparison": "Our module over Z_(5)[3.A7] has rank 55440 and incompatible indecomposable refinements. Jayadevan uses PSL2(F11) over Z_(11), with a rank-88 module and four explicitly indecomposable rank-44 summands.",
+      "argument_comparison": "Both exploit completion and rational-character obstructions to descent. The alternative constructs three projectives by induction from D12 and A5, removes the Steinberg summand, and descends the fourth by approximation of split maps.",
+      "review_scope": "Read all six pages, checked the descent and indecomposability arguments, and reconstructed the group, subgroups and induced-character calculations in GAP; the modular decomposition matrix was checked against CTblLib, not rederived from modular matrices.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "14.22",
+      "ledger_problem": "14.22",
+      "source_id": "14.22",
+      "note_path": "sections/attribution/14-22.tex",
+      "bibliography_keys": [
+        "jayadevan-14-22"
+      ],
+      "relationship": "Different construction; finitely generated coefficients",
+      "result_comparison": "Our coefficient groups Q and Q*Z are infinitely generated. Jayadevan gives a two-generated torsion-free polycyclic subgroup of SL3(Z), with an infinite irreducible centralizer whose radical has no finite isolated generating set.",
+      "argument_comparison": "Our finite-coefficient-support obstruction uses amalgamation. The alternative identifies the radical by Laurent collection and separates any finite set by an alternating bilinear extension with interactions beyond its finite support.",
+      "review_scope": "Read all nine pages; checked coefficient injectivity, cofinite irreducibility, the radical-kernel identification, and the finite-support argument yielding a surviving commutator in a torsion-free target. This strengthens the coefficient-group hypotheses.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "15.89",
+      "ledger_problem": "15.89",
+      "source_id": "15.89",
+      "note_path": "sections/attribution/15-89.tex",
+      "bibliography_keys": [
+        "jayadevan-15-89"
+      ],
+      "relationship": "Same graph and inverse; stronger spectral conclusion",
+      "result_comparison": "Both use the same four-regular Cayley graph on C3*C2 and the inverse (U-I)T(U-I)/4. Jayadevan additionally obtains every nonzero complex number as an eigenvalue on all functions.",
+      "argument_comparison": "Two-dimensional representations produce a matrix with characteristic polynomial lambda^2-3s*lambda-4. Choosing s=(lambda^2-4)/(3lambda) yields a nonzero matrix-coefficient eigenfunction.",
+      "review_scope": "Read all five pages, including the graph properties and eigenfunctions. Exact polynomial checks confirm the characteristic polynomial and eigenvector defect. The operator acts on arbitrary functions, with no boundedness condition.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "16.9",
+      "ledger_problem": "16.9",
+      "source_id": "16.9",
+      "note_path": "sections/attribution/16-9.tex",
+      "bibliography_keys": [
+        "jayadevan-16-9",
+        "dahmani-guirardel-equations",
+        "cancellation-norm"
+      ],
+      "relationship": "Same reduction and algorithm; additional prior attribution",
+      "result_comparison": "Both reduce palindromic length to the smaller of two reflection lengths in a universal Coxeter group and use noncrossing pairings, with cubic operation count, quadratic storage and quadratic output.",
+      "argument_comparison": "Reconstruction is written differently but transports the same reflection factorization with alternating inversion. Jayadevan explicitly attributes qualitative computability to Dahmani-Guirardel and the interval recurrence to Brandenbursky-Gal-Kedra-Marcinkowski.",
+      "review_scope": "Read all sixteen pages, including cancellation surgery, reconstruction and complexity. Checked Dahmani-Guirardel Theorem 4 and the older cancellation-norm recurrence and 2023 erratum directly. The qualitative answer must be identified as a prior consequence.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "16.28(a)",
+      "ledger_problem": "16.28",
+      "source_id": "16.28a",
+      "note_path": "sections/attribution/16-28.tex",
+      "bibliography_keys": [
+        "jayadevan-16-28"
+      ],
+      "relationship": "Different construction; identity-containing alternative",
+      "result_comparison": "Our trace-one class in SL2, with a central multiplicative marker, gives a reducible closed set with no closed higher power. Jayadevan instead uses scalar multiples of a triangular GL3 family and the scalar subgroup.",
+      "argument_comparison": "Both use characteristic five and an element of infinite multiplicative order. The alternative contains the identity and has a single omitted diagonal matrix in the closure of every higher power.",
+      "review_scope": "Read all three pages. Checked defining equations for closedness, the diagonal-degree constraint forcing exactly two nonscalar factors, the nonzero remaining entry, and the polynomial degenerating curve. The algebraic closure is explicit in the field definition.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "17.101",
+      "ledger_problem": "17.101",
+      "source_id": "17.101",
+      "note_path": "sections/attribution/17-101.tex",
+      "bibliography_keys": [
+        "jayadevan-17-101"
+      ],
+      "relationship": "Same HNN-module method; faithful extension added",
+      "result_comparison": "Both construct inner homogeneous extensions over a fixed commutative coefficient ring by adjoining stable letters and relations in an induced module. Both give the same cardinal bound.",
+      "argument_comparison": "The shared injectivity argument uses a finite forest leaf in the Bass-Serre tree. Jayadevan adds a regular module at each stage to guarantee faithfulness over a nonzero ring and supplies fuller historical references for HNN module constructions.",
+      "review_scope": "Read all nine pages. Checked balancing, endpoint injections, the quotient-module embedding and preservation through directed limits. Adding R[H] at intermediate stages is important: adding it only after forming a homogeneous limit need not preserve homogeneity.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "18.76",
+      "ledger_problem": "18.76",
+      "source_id": "18.76",
+      "note_path": "sections/attribution/18-76.tex",
+      "bibliography_keys": [
+        "jayadevan-18-76"
+      ],
+      "relationship": "Equivalent constructions up to inversion of the kernel",
+      "result_comparison": "Both use the division closure of a group algebra of F2 x F2, free-group derivations and the same four commuting-lift equations. Our statement also permits positive characteristic; the alternative emphasizes a torsion-free total group in characteristic zero.",
+      "argument_comparison": "Writing g=(x,y), h=(x1,y1), our cocycle is x*beta(y)*alpha(x1); the alternative is alpha(x)*y*beta(y1). For f(g)=alpha(x)*beta(y), delta f is minus their sum. The map (r,g) -> (-r+f(g),g) is an isomorphism.",
+      "review_scope": "Read all four pages and checked both cocycle constructions and the nonsplitting argument. The comparison identity is verified in a tensor product of free associative algebras, so it does not assume commutativity within either factor.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "21.40",
+      "ledger_problem": "21.40",
+      "source_id": "21.40",
+      "note_path": "sections/attribution/21-40.tex",
+      "bibliography_keys": [
+        "jayadevan-21-40"
+      ],
+      "relationship": "Same root-and-trace argument and bound",
+      "result_comparison": "Both obtain a torsion-free normal nilpotent subgroup of class at most n-1 and index at most (2n+1)^d, where d is the dimension of the rational matrix algebra spanned by G.",
+      "argument_comparison": "Both use bounded-degree roots of algebraic numbers, a nilpotent trace radical, and trace tuples that distinguish cosets. Jayadevan separately states the finite-trace-set theorem and the number-field corollary.",
+      "review_scope": "Read all four pages. Checked bounded polynomial coefficients, the ideal and nilpotence argument, and the equivalence between equal trace tuples and coset equality. The alternative proves elementwise nilpotence via a polynomial Fitting projection; ours uses Newton identities.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "21.68",
+      "ledger_problem": "21.68",
+      "source_id": "21.68",
+      "note_path": "sections/attribution/21-68.tex",
+      "bibliography_keys": [
+        "jayadevan-21-68",
+        "rizzoli-21-68"
+      ],
+      "relationship": "Same group and character obstruction in two alternatives",
+      "result_comparison": "Rizzoli and Jayadevan both give the same order-2592 construction from Kida's order-96 configuration, a four-coset augmentation module, and a degree-eight induced character.",
+      "argument_comparison": "All three proofs exclude induction from a linear character by forcing an index-two subgroup of Q8 semidirect C3. Rizzoli's WordPress note and Jayadevan's Zenodo paper are separate works and must not be identified with each other.",
+      "review_scope": "Read the three-page Rizzoli note and four-page Jayadevan paper; compared the signed-quaternion and even-weight coordinate realizations, the four weights, irreducibility and the index-two obstruction. The editor reports specialist confirmation for an alternative solution to this problem, without identifying a formal replay here.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "21.106",
+      "ledger_problem": "21.106",
+      "source_id": "21.106",
+      "note_path": "sections/attribution/21-106.tex",
+      "bibliography_keys": [
+        "jayadevan-21-106",
+        "zhang-li-concise"
+      ],
+      "relationship": "Same Heisenberg witness; different positive formula",
+      "result_comparison": "Our formula and the already acknowledged Zhang-Li work use the integral Heisenberg group. Jayadevan gives a different parameter-free positive formula, defining precisely central units over any commutative ring.",
+      "argument_comparison": "Over Z the truth set is the same two central generators. The new formula uses only conjunctions of equations in its quantifier-free part; a determinant identity supplies necessity and explicit witnesses give sufficiency.",
+      "review_scope": "Read all four pages and checked the quantifier order, determinant identity, converse witnesses and residual finiteness. The polynomial identity was verified exactly. Retain the Zhang-Li credit as well as this additional comparison.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    },
+    {
+      "problem": "21.121(a)",
+      "ledger_problem": "21.121",
+      "source_id": "21.121a",
+      "note_path": "sections/attribution/21-121a.tex",
+      "bibliography_keys": [
+        "jayadevan-21-121a"
+      ],
+      "relationship": "Different family; every prime and locally finite",
+      "result_comparison": "Our quaternion/simplex-code factors, assembled by a free product, give p=2 and unattained infimum log(24)/log(8). Jayadevan gives, for every prime p, a locally finite metabelian subgroup of GL2 over the algebraic closure of F_p, with exponent set (1,infinity).",
+      "argument_comparison": "The alternative uses cyclotomic values at factorial indices to restrict scalar orders, and an estimate log(M_k)/k! -> 0 to bound all finite affine subgroups uniformly.",
+      "review_scope": "Read all four pages. Checked the cyclotomic reduction rule, coprimality and exact order for every nontrivial divisor, the subexponential estimate, finite subgroup indices and the unbounded witnesses at exponent one. The two families have different infima and hypotheses.",
+      "assessment": "No mathematical error found in the cited alternative on this reading; imported theorems and table data retain their stated dependencies.",
+      "priority": "Unassigned: artifact chronology does not establish discovery order or independence."
+    }
+  ]
+}

@@ -4,19 +4,21 @@
 The Kourovka Notebook~\cite{kourovka21} collects open problems in group
 theory and neighboring areas, ranging from concrete questions about finite
 groups to structural and logical problems about infinite ones. We present
-solutions covering 46 problem entries or specified subparts, partial
+counterexamples, theorems and algorithms covering 46 problem entries or
+specified subparts, partial
 results on nine questions, and rediscoveries and deductions from earlier
 work, obtained in a 48-hour experiment with an AI research agent.
-The results include explicit counterexamples, structural theorems,
-algorithms and finite certificates. A second language model subsequently
-reviewed the mathematical work independently.
+The archive includes finite certificates and computational checks.
+A second language model subsequently reviewed the mathematical work
+independently. Version~2 compares eleven entries with contemporary
+solutions brought to our attention by the Notebook's editor.
 
 Michael Kinyon and Josef Urban conceived and oversaw the experiment.
 They gave OpenAI's GPT-6 Astra, running through Codex, an explicit
 48-hour deadline and requested local resource limits of generally
 20 CPU cores and 100\,GB of memory. With access to GAP, further software
-and the literature, the agent could choose which previously unsolved
-problems to pursue. The aim was to evaluate current AI and automated
+and the literature, the agent could choose which questions listed as open
+in that edition to pursue. The aim was to evaluate current AI and automated
 reasoning capabilities on open research problems under a shared budget:
 selecting questions, interpreting hypotheses, developing arguments and
 checking the resulting claims.
@@ -66,9 +68,15 @@ candidates at the deadline. It counts specified subparts once per entry,
 and some entries share a construction or a substantial imported theorem.
 The inventory in Section~\ref{app:inventory} gives the covered parts and
 convention-sensitive hypotheses. Subsequent review provides evidence of
-correctness; novelty is a separate question. In particular, we acknowledge
-contemporaneous work on 21.106, and retain known results and deductions
-under their prior-work status. The nine partial-result questions treated
+correctness; novelty is a separate question. The comparison in
+Appendix~\ref{app:contemporary-comparison} identifies overlapping work
+on eleven entries, including the previously acknowledged 21.106.
+Some constructions agree closely; others differ or yield stronger results.
+We assign no discovery priority from the available chronology, and do not
+infer that the other 35 entries are new. Known results and deductions
+retain their prior-work status; the qualitative computability assertion
+in 16.9 is now explicitly identified as a consequence of older work.
+The nine partial-result questions treated
 in Section~\ref{app:partials} are 20.100, 20.89/19.83, 21.121(b), 20.124,
 17.118, 21.114, 19.108, 18.120 and 6.47. Here 20.89/19.83 is one repeated
 question, and 21.121(a) is already among the 46 entries. That section also

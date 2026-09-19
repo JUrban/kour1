@@ -8,6 +8,7 @@ from pathlib import Path
 import shutil
 import tarfile
 import zipfile
+from public_review_files import public_review_files
 
 PAPER = Path(__file__).resolve().parents[1]
 
@@ -39,9 +40,8 @@ def main():
         for path in sorted((PAPER / folder).rglob("*.tex")):
             tex[str(path.relative_to(PAPER))] = path.read_bytes()
 
-    for path in sorted((PAPER / "external-reviews").iterdir()):
-        if path.is_file():
-            tex[str(path.relative_to(PAPER))] = path.read_bytes()
+    for path in public_review_files(PAPER):
+        tex[str(path.relative_to(PAPER))] = path.read_bytes()
     upload = dict(tex)
     for path in sorted((PAPER / "ancillary").rglob("*")):
         if path.is_file() and "__pycache__" not in path.parts:

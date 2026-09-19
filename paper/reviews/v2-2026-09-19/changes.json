@@ -1,0 +1,47 @@
+[
+  {
+    "title": "The task input",
+    "before_path": "main.tex",
+    "after_path": "main.tex",
+    "before": "48 hours to investigate previously unsolved problems in the Kourovka\nNotebook",
+    "after": "48 hours to investigate questions listed as open in the supplied Kourovka\nNotebook",
+    "reason": "State what the supplied edition listed; later attribution does not establish that every question was still open at the time of the run.",
+    "baseline_sha256": "62bb62fbafad56421d0d5c09907121ce49091638a5a0c284df5a5bd4005cc548"
+  },
+  {
+    "title": "The abstract now reports the comparison",
+    "before_path": "main.tex",
+    "after_path": "main.tex",
+    "before": "finite certificates, with their hypotheses and imported ingredients.",
+    "after": "We compare eleven entries with contemporary solutions, identifying shared\narguments, different constructions and stronger alternatives.",
+    "reason": "Add the principal outcome of the second version immediately after the mathematical summary.",
+    "baseline_sha256": "62bb62fbafad56421d0d5c09907121ce49091638a5a0c284df5a5bd4005cc548"
+  },
+  {
+    "title": "Coverage and novelty",
+    "before_path": "sections/introduction.tex",
+    "after_path": "sections/introduction.tex",
+    "before": "In particular, we acknowledge\ncontemporaneous work on 21.106, and retain known results and deductions\nunder their prior-work status.",
+    "after": "We assign no discovery priority from the available chronology, and do not\ninfer that the other 35 entries are new.",
+    "reason": "Replace the single-overlap discussion with an eleven-entry comparison while retaining 46 as a historical classification.",
+    "baseline_sha256": "9334ff3378a4321dbdc19d65ca0415a03fd2ad5abc2ae84ccac02c497c2bc442"
+  },
+  {
+    "title": "16.9: prior qualitative computability",
+    "before_path": "sections/introduction.tex",
+    "after_path": "sections/introduction.tex",
+    "before": "novelty is a separate question.",
+    "after": "the qualitative computability assertion\nin 16.9 is now explicitly identified as a consequence of older work.",
+    "reason": "The new attribution note credits Dahmani-Guirardel for the decision procedure and Brandenbursky-Gal-Kedra-Marcinkowski for the interval recurrence, following the contemporary paper's source discussion.",
+    "baseline_sha256": "9334ff3378a4321dbdc19d65ca0415a03fd2ad5abc2ae84ccac02c497c2bc442"
+  },
+  {
+    "title": "Specialist confirmation has a specific scope",
+    "before_path": "sections/external-review.tex",
+    "after_path": "sections/external-review.tex",
+    "before": "Its independence concerns the reviewing model and the separately written\nchecks; it is not a proof of discovery independence, human specialist\nendorsement or formal verification.",
+    "after": "He reported that group theorists had confirmed alternative\nsolutions for 21.68, 16.28(a) and 15.89; many other drafts remained\nunverified.",
+    "reason": "Add the editor's report about particular alternatives without changing the scope of Claude's earlier review.",
+    "baseline_sha256": "82499fb81f533510ddd39bd7cd0a7ab88a7bc4207005af03dc24ec870806dcee"
+  }
+]

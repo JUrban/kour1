@@ -33,6 +33,8 @@ def main():
     frozen = PAPER / "data/frozen-candidate-ledger.json"
     rows = json.loads(frozen.read_text())["candidates"]
     annotations = json.loads((PAPER / "data/review-annotations.json").read_text())["entries"]
+    comparisons = json.loads((PAPER / "reviews/v2-2026-09-19/comparison.json").read_text())["entries"]
+    attribution = {r["ledger_problem"]: r["note_path"].removesuffix(".tex") for r in comparisons}
     assert set(annotations) == {r["problem"] for r in rows}
     inventory = [r"""\section{The mathematical portfolio: scope and index}
 \label{app:inventory}
@@ -47,6 +49,11 @@ Section~\ref{cand:19.62}. This grouping contributes one ledger entry.
 An em dash in the review column means no additional note here, not that
 the proof has no imported ingredients. The count records deadline coverage;
 the independent review does not by itself establish discovery priority.
+Version~2 adds individual attribution notes for eleven entries, compared
+in Appendix~\ref{app:contemporary-comparison}. The other entries have not
+thereby been established as new. For 16.9, qualitative computability is
+a prior consequence; the displayed construction gives the explicit
+reflection-length reduction and polynomial operation bound.
 
 
 \small
@@ -109,6 +116,8 @@ Problem & Prior-work status\\\midrule
             _, stem = SPECIAL.get(problem, (None, problem.replace(".", "-")))
             if (PAPER / "sections/candidates" / (stem + ".tex")).is_file():
                 proofs.append(r"\input{sections/candidates/" + stem + "}\n")
+                if problem in attribution:
+                    proofs.append(r"\input{" + attribution[problem] + "}\n")
         proofs.append("\\endgroup\n")
     if missing:
         proofs.append("\n\\paragraph{Working-draft coverage.} Expositions still to be added: "
