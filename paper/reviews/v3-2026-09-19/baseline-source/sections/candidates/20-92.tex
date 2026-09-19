@@ -1,0 +1,127 @@
+\subsection{20.92(a): the printed brace average for large primes}
+\label{cand:20.92}
+For a left brace write \(a*b=a\circ b-a-b\). The question asks whether
+the specific operation
+\[
+ a\cdot b=-\sum_{i=0}^{p-2}2^{-i}\bigl((2^ia)*b\bigr)
+\]
+is pre-Lie on every \(k\)-dimensional \(\F_p\)-brace when \(p\) is
+sufficiently large relative to \(k\). The following bound is coarse but uniform.
+
+\begin{proposition}
+For \(k\ge2\), put \(E=k^{2k-2}\) and \(D=(k-1)E\).
+The displayed operation is bilinear and pre-Lie if
+\(p>k\) and \(\operatorname{ord}_p(2)>D\).
+In particular \(p>\max\{k,2^D\}\) suffices.
+For \(k=1\) every odd prime works, with zero product.
+\end{proposition}
+\begin{proof}
+Let \(V=(A,+)\), and set \(\lambda_a(b)=-a+a\circ b\).
+The brace identities make
+\[
+ \Gamma=\left\{
+ G_a=\begin{pmatrix}\lambda_a&a\\0&1\end{pmatrix}:a\in A
+ \right\}
+\]
+a regular affine group of order \(p^k\). The \(p\)-group \(\lambda(A)\)
+has a full invariant flag with trivial action on successive quotients:
+the orbit equation gives a nonzero fixed vector in every nonzero
+\(\F_p\)-module of a finite \(p\)-group, and one repeats on the quotient.
+In a suitable basis \(\Gamma\le\mathrm{UT}_{k+1}(\F_p)\).
+Write \(J\) for the strictly upper triangular matrix algebra.
+Then \(J^{k+1}=0\), and truncated exponential and logarithm are inverse
+when \(p>k\).
+
+The subgroup assertion of Lazard's correspondence
+\cite[pp.~178--180]{lazard} implies that
+\(\mathfrak g=\log\Gamma\) is a Lie subring of \(J\), hence an
+\(\F_p\)-linear Lie subalgebra of dimension \(k\).
+Projection \(\pi\) onto the translation column is injective on
+\(\mathfrak g\): zero translation in \(X\) gives zero translation in
+\(\exp X\), and regularity forces \(\exp X=1\). Thus \(\pi\) is an
+isomorphism, and
+\[
+ \mathfrak g=\left\{
+ X_x=\begin{pmatrix}L_x&x\\0&0\end{pmatrix}:x\in V
+ \right\}
+\]
+for a linear map \(x\mapsto L_x\), all \(L_x\) strictly upper triangular.
+Lie closure gives
+\[
+ [L_x,L_y]=L_{L_xy-L_yx}.
+\]
+Therefore \(x\mathbin{\triangleright}y=L_xy\) is a bilinear pre-Lie
+product; the equation is precisely the symmetry of its associator.
+
+The translation of \(\exp X_x\) is the polynomial
+\[
+ W(x)=\sum_{j=0}^{k-1}\frac{L_x^jx}{(j+1)!}.
+\]
+It has degree at most \(k\), constant term zero, and linear term \(x\).
+Regularity makes \(W:V\to V\) bijective. If \(\Omega\) denotes its inverse
+as a function, then \(\lambda_a=\exp L_{\Omega(a)}\).
+We need a polynomial representative of \(\Omega\) of degree independent
+of \(p\); finite-set interpolation would not provide that.
+
+Define the polynomial
+\[
+ C(x,y)=\pi\log(\exp X_x\exp X_y).
+\]
+Every surviving associative monomial has length at most \(k\), so
+\(\deg C\le k\). Truncated BCH is a Lie polynomial over \(\F_p\)
+in this class. Consequently, after scalar extension to the polynomial
+ring, Lie closure gives the formal identities
+\[
+ X_{C(x,y)}=\log(\exp X_x\exp X_y),\qquad
+ W(C(x,y))=W(x)+\exp(L_x)W(y).                 \tag{*}
+\]
+This step uses a polynomial identity, not an inference from equality
+on finite-field points.
+
+Put \(V_i=\langle e_1,\ldots,e_{k+1-i}\rangle\) for \(1\le i\le k+1\).
+For every \(x\), \(L_xV_i\subseteq V_{i+1}\). Thus for \(r\in V_i\),
+\[
+ W(r)-r\in V_{i+1},\qquad
+ (\exp L_x-I)W(r)\in V_{i+1}.
+\]
+These inclusions hold after any scalar extension. Starting with
+\(x_0(a)=0\), set
+\[
+ r_{i-1}(a)=a-W(x_{i-1}(a)),\qquad
+ x_i(a)=C(x_{i-1}(a),r_{i-1}(a)).
+\]
+Inductively \(r_{i-1}\in V_i\), because (*) changes the residual to
+\(r_{i-1}-\exp(L_{x_{i-1}})W(r_{i-1})\in V_{i+1}\).
+Hence \(W(x_k(a))=a\) formally. Since \(x_1(a)=a\) and every subsequent
+step multiplies the previous degree bound by at most \(k^2\),
+\(\deg x_k\le E\). On \(V\), \(x_k=\Omega\). It has zero constant term
+and linear term \(a\), the latter by comparison in \(W(x_k(a))=a\).
+
+It follows that
+\[
+ P(a)=\exp(L_{\Omega(a)})-I=\sum_{j=1}^{D}P_j(a)
+\]
+has a polynomial representative of degree at most \(D\), with homogeneous
+linear part \(P_1(a)=L_a\). If \(\operatorname{ord}_p(2)>D\), then
+\[
+ \sum_{i=0}^{p-2}2^{i(j-1)}
+ =\begin{cases}-1&j=1,\\0&2\le j\le D.\end{cases}
+\]
+The stated average is therefore \(L_ab=a\mathbin{\triangleright}b\)
+in the original additive coordinates. The scalar \(2\) need not be a
+primitive root. Finally, if \(p>2^D\), an order \(d\le D\) would force
+\(p\mid2^d-1<p\), a contradiction. In dimension one,
+\(\lambda(A)\le\F_p^\times\) is a \(p\)-group and is trivial.
+\end{proof}
+
+The affine correspondence, residual correction, and weighted coefficient
+extraction have prior antecedents, especially Trappeniers
+\cite[Proposition~5.5 and Section~6]{trappeniers}.
+The additional step here is the dimension-only polynomial bound using
+the common triangular flag. It does not assume the stronger condition
+\(L_{V_i}V_j\subseteq V_{i+j}\), or strong nilpotence of the brace.
+Part (b), the correspondence itself, is recorded as prior work in the
+Notebook. The retained proof and exact controls are
+\artifact{research/20.92a-proof.md} and
+\artifact{results/20.92a-summary.json}; the controls include actual braces
+which are not right nilpotent.

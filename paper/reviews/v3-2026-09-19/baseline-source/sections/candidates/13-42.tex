@@ -1,0 +1,110 @@
+\subsection{13.42: a tensor completion that is not locally nilpotent}
+\label{cand:13.42}
+Let \(A=\Z[t]\) and \(N=F(x,y)/\gamma_4F(x,y)\).
+Its unrestricted tensor \(A\)-completion is not locally nilpotent.
+The Notebook refers to Myasnikov--Remeslennikov's foundational paper
+\cite{exponential-groups-1}. Here we use the power, conjugation,
+commuting-product axioms and tensor-completion universal property
+as restated in \cite[Definitions~1--2]{exponential-groups}.
+The universal category allows scalar torsion and does not restrict
+targets to nilpotent groups. This distinction is part of the claim.
+
+Let \(L\) be the rational BCH group of the Lie algebra with basis
+\(X,Y,U,V,W\), brackets
+\[
+ [X,Y]=U,\qquad [X,U]=V,\qquad [Y,U]=W,
+\]
+and all other basic brackets zero.
+Coordinates \((a,b,c,d,e)\) denote
+\(\exp(aX+bY+cU+dV+eW)\), and \(\beta(a,b,c,d,e)=b\) is a
+homomorphism \(L\to(\Q,+)\).
+These are finite polynomial operations: realize the Lie algebra in
+the free associative algebra on \(X,Y\) truncated above degree three
+and use \(\exp Z=1+Z+Z^2/2+Z^3/6\).
+For \(l=(a,b,c,d,e)\), \(h=(A,B,C,D,E)\), BCH gives the first
+three coordinates of \(l^h=h^{-1}lh\) as
+\[
+ (a,b,c+aB-bA).
+\]
+It also gives the commuting criterion
+\[
+ [l,h]=1\quad\Longleftrightarrow\quad
+ aB-bA=aC-cA=bC-cB=0.
+\]
+For example, equality of the degree-two coordinates in the two
+products first gives \(aB-bA=0\); then equality in degree three
+gives the other two minors. Thus commuting elements have proportional
+triples \((a,b,c)\), \((A,B,C)\), including the zero cases.
+
+Let \(M=\Q[\Q]\) additively, with basis \(T^q\), \(q\in\Q\).
+Give it the right \(L\)-action \(v^l=vT^{\beta(l)}\), and define
+\[
+ F(a,b,c,d,e)=
+ \begin{cases}aT^{c/a}&b=0,\ a\ne0,\\0&\text{otherwise}.\end{cases}
+\]
+The conjugation formula, coordinate powers, and proportional-triple
+criterion prove, respectively,
+\[
+ \begin{aligned}
+ F(l^h)&=F(l)T^{\beta(h)},&
+ F(l^n)&=nF(l),\\
+ F(lh)&=F(l)+F(h)\quad([l,h]=1),&
+ F(l)T^{\beta(l)}&=F(l).
+ \end{aligned}
+\]
+For the third assertion, the defining function of a triple is
+homogeneous over \(\Q\), hence additive on any line.
+It is not asserted to be additive on arbitrary pairs.
+
+Form the right-action semidirect product with multiplication
+\[
+ H=L\ltimes M,\qquad (l,v)(h,w)=(lh,vT^{\beta(h)}+w),
+\]
+write \(i(v)=(1,v)\), and put \(f(l,v)=i(F(l))\).
+Then
+\[
+ f(g^h)=f(g)^h,\quad [g,f(g)]=1,\quad
+ f(gh)=f(g)f(h)\ \text{if }[g,h]=1,
+\]
+and, for all integers \(n,m\),
+\[
+ f(g^nf(g)^m)=f(g)^n.
+\]
+The last identity follows by projecting to \(L\).
+If \(g,h\) commute, equivariance also gives
+\([f(g),h]=[g,f(h)]=1\).
+
+For \(P(t)\in\Z[t]\), define
+\[
+ g^P=g^{P(0)}f(g)^{P'(0)}.
+\]
+This supplies all the \(A\)-group axioms. Unit, zero and addition
+follow from \([g,f(g)]=1\).
+If \(P(0)=a,P'(0)=b,Q(0)=c,Q'(0)=d\), then
+\[
+ (g^P)^Q=g^{ac}f(g)^{bc+ad}=g^{PQ},
+\]
+using \(f(g^P)=f(g)^a\).
+Equivariance proves the conjugation axiom. For commuting \(g,h\),
+the cross-commutations just established allow rearrangement to give
+\((gh)^P=g^Ph^P\).
+Thus \(H\) is an \(A\)-group in the required unrestricted category.
+It is torsion-free as an ordinary group, being an extension of
+torsion-free groups, although its scalar action factors through
+\(A/(t^2)\).
+
+Set \(x=(\exp X,0)\), \(y=(\exp Y,0)\).
+They generate a group of class at most three, so the map from the
+free nilpotent group \(N\) extends by the tensor-completion universal
+property to an \(A\)-homomorphism \(N^A\to H\).
+But \(x^t=i(T^0)\), and direct multiplication gives
+\[
+ [i(v),y]=i(v(T-1)).
+\]
+For every \(r\ge1\), the image of \([x^t,y,\ldots,y]\), with \(r\)
+copies of \(y\), is \(i((T-1)^r)\ne1\): its coefficient at \(T^r\)
+is one. The fixed pair \(x^t,y\) therefore generates a nonnilpotent
+subgroup of \(N^A\), proving the claim.
+The map need not be onto \(H\), and injectivity of \(N\to H\) is
+unnecessary. Completion within nilpotent \(A\)-groups would be a
+different construction. See \artifact{research/13.42-proof.md}.

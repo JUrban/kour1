@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Version identity",
+    "before_path": "main.tex",
+    "baseline_sha256": "a85e59d2c611e0090ef137fc441947903a5bc0e80b7f7e2ec6f8db19c25deec6",
+    "before": "Version 2 --- 19 September 2026",
+    "after_path": "main.tex",
+    "after": "Version 3 --- 19 September 2026",
+    "reason": "Preserve the complete v2 PDF and sources; identify this correction as a new version."
+  },
+  {
+    "title": "The current candidate count",
+    "before_path": "main.tex",
+    "baseline_sha256": "a85e59d2c611e0090ef137fc441947903a5bc0e80b7f7e2ec6f8db19c25deec6",
+    "before": "resulting archive contains 46 entries classified as complete solution\ncandidates, together with partial theorems, rediscoveries and bounded\nsearches.",
+    "after_path": "main.tex",
+    "after": "resulting archive records 46 entries classified as complete solution\ncandidates at the deadline, together with partial theorems, rediscoveries\nand bounded searches. Version~3 withdraws one claimed resolution after\nthe Notebook's editor identified a misread field, leaving 45 candidates.",
+    "reason": "Keep the deadline classification as history while stating the withdrawal and current count in the abstract."
+  },
+  {
+    "title": "The false application to 10.35",
+    "before_path": "sections/candidates/10-35.tex",
+    "baseline_sha256": "462d0f84d64ef218261a4b344e7fa8eb392fbbfc42cc2c6854c920ffed880d3f",
+    "before": "This disproves the required residual property.",
+    "after_path": "sections/candidates/10-35.tex",
+    "after": "This disproves residuality over \\(\\Q\\) or \\(\\R\\)\nin degree two, but not the property asked for in 10.35.",
+    "reason": "The printed question concerns algebraic numbers. The example already embeds over Q(i); the rational-field observation is retained without claiming a solution to 10.35."
+  },
+  {
+    "title": "What independent review establishes",
+    "before_path": "sections/introduction.tex",
+    "baseline_sha256": "8013115d9007e73c441c386dd9c898784eeda833f98406f9cb487d6dc646d261",
+    "before": "This substantial external review strengthens the evidence for the\nmathematical results.",
+    "after_path": "sections/introduction.tex",
+    "after": "These checks provide evidence for the arguments examined, but the later\n10.35 correction shows that agreement between the models did not ensure\nthat each argument answered the original question.",
+    "reason": "Credit the actual review and computations while recording the shared failure to detect the statement mismatch."
+  },
+  {
+    "title": "The historical correspondence",
+    "before_path": "appendices/review-correspondence.tex",
+    "baseline_sha256": "f6eec3266826a6a425acb44cf9e2b1f2c1defa00a3d9aabbef213174e55f8305",
+    "before": "These are review records, not additional mathematical premises.",
+    "after_path": "appendices/review-correspondence.tex",
+    "after": "In particular, their acceptance of the 10.35 entry is superseded by\nthe version~3 withdrawal in Section~\\ref{sec:withdrawal-10-35}; the\noriginal reports and replies below remain unchanged.",
+    "reason": "Add this qualification after the existing sentence. Preserve all four exchanged documents verbatim, including their mistaken acceptance."
+  }
+]

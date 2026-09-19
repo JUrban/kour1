@@ -1,0 +1,48 @@
+\subsection{Maximal test rank in a nonabelian variety: Problem 16.87}
+\label{cand:16.87}
+
+A test set in a group is a set whose pointwise stabilizer among
+endomorphisms consists of automorphisms. The test rank is the least
+size of such a set. Both parts of the question have a negative answer
+for the variety
+\[
+ \mathcal M_p=\{G:[[x,y],z]=1,\ [x,y]^p=1\},
+\]
+where \(p\) is any prime. It is nonabelian because it contains
+\(\operatorname{UT}_3(\F_p)\), and nonperiodic because it contains
+\(\Z\).
+
+\begin{proposition}
+The relatively free group \(G_r\) of rank \(r\geq1\) in
+\(\mathcal M_p\) has test rank \(r\).
+\end{proposition}
+\begin{proof}
+Its abelianization is \(\Z^r\): the generator maps to and from
+\(\Z^r\) give inverse maps on abelianization, since \(\Z^r\)
+belongs to the variety. Denote the resulting map by
+\(v:G_r\to\Z^r\). If \(S\) has fewer than \(r\) elements,
+choose a primitive nonzero integral row vector \(w\) annihilating
+all \(v(s)\), \(s\in S\), by solving the corresponding homogeneous
+linear equations over \(\Q\). Then \(f=wv:G_r\to\Z\) is onto
+and vanishes on \(S\).
+
+Each free generator \(x_i\) has central \(p\)-th power, because
+\([x_i^p,g]=[x_i,g]^p=1\). Choose \(i\) with \(w_i\ne0\)
+and put \(c=x_i^{p\,\operatorname{sign}(w_i)}\). The map
+\[
+ \phi(g)=g c^{f(g)}
+\]
+is an endomorphism by centrality of \(c\), and fixes \(S\)
+pointwise. But
+\(f(\phi(G_r))=(1+p|w_i|)\Z\) is proper in \(\Z\), so
+\(\phi\) is not surjective. Thus no smaller set is a test set.
+The \(r\) free generators themselves form one. For \(r=1\)
+the same argument excludes the empty set.
+\end{proof}
+
+The free groups here have torsion in their commutator subgroups;
+nonperiodicity of the variety does not mean that its free groups
+are torsion-free. No such torsion-free hypothesis is printed in
+the problem. The proof uses only central powers and integer
+linear algebra. Source: \artifact{research/16.87-proof.md}.
+

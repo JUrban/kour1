@@ -38,8 +38,10 @@ def main():
     assert set(annotations) == {r["problem"] for r in rows}
     inventory = [r"""\section{The mathematical portfolio: scope and index}
 \label{app:inventory}
-The table indexes all 46 deadline candidates and their proofs, preserving
-the covered subparts and original descriptions. The external assessment
+The table preserves the descriptions and claimed subparts of all 46
+deadline candidates. \textbf{The claim for 10.35 is withdrawn in version~3},
+leaving 45 other candidates; its row is retained as a historical record,
+with the correction marked in the review column. The external assessment
 is described in Section~\ref{sec:external-review}; the additional column
 highlights scope qualifications and shared ingredients. The arguments
 are grouped by subject in Section~\ref{app:candidates}. The historical entry for 19.62
@@ -71,7 +73,9 @@ No. & Parts & Deadline description & Scope / dependency note & Sec.\\
 """]
     proofs = [r"""\section{Further mathematical arguments}
 \label{app:candidates}
-The remaining 42 candidate arguments are organized by subject below.
+The following 42 expositions are organized by subject: 41 further candidate
+arguments and the rational-field observation whose application to 10.35
+is withdrawn. That entry is explicitly marked and retained for the record.
 The four representative proofs in Section~\ref{sec:examples} are not
 repeated. Each entry states the relevant scope and imported ingredients;
 Section~\ref{app:inventory} provides the complete problem index.

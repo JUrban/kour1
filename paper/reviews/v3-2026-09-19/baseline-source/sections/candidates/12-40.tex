@@ -1,0 +1,69 @@
+\subsection{12.40: unbounded Brauer-degree parts at fixed Sylow order}
+\label{cand:12.40}
+\begin{proposition}
+For every \(k\ge3\), some odd positive integer \(a\) gives an
+irreducible \(2\)-Brauer character \(\varphi\) of
+\(G=\mathrm{PSL}_6(5^a)\) with
+\[
+ |G|_2=8192,\qquad \varphi(1)_2=2^k.
+\]
+Thus no finite-valued bound \(\varphi(1)_p\le f(|G|_p)\) exists,
+already for the fixed prime \(p=2\).
+\end{proposition}
+\begin{proof}
+Bray's projective-point module \cite[Main Theorem]{bray-cohomology}
+has an absolutely irreducible heart in characteristic two of dimension
+\[
+ F(q)=\frac{q^6-1}{q-1}-2=q^5+q^4+q^3+q^2+q-1.
+\]
+Here \(q=5^a\). To recall why the assertion applies, let \(P\) be the
+projective permutation module over an algebraically closed field of
+characteristic two, \(U\) its constant line, and \(W\) its augmentation
+kernel. Its even permutation degree puts \(U\subseteq W\).
+Perfectness of \(\mathrm{SL}_6(q)\) excludes a trivial submodule of
+\(W/U\): its preimage would be an extension of two trivial modules,
+which splits, contradicting the one-dimensional invariant space of \(P\).
+The permutation form makes \(W/U\) self-dual, so there is no trivial
+quotient either. Each nontrivial simple factor has dimension at least
+\(q^5-1\): on the elementary abelian unipotent subgroup \(\F_q^5\)
+it has a nontrivial weight, and the Levi subgroup
+\(\mathrm{SL}_5(q)\) permutes all nontrivial weights transitively.
+The unipotent subgroup normally generates \(\mathrm{SL}_6(q)\), so
+it cannot act trivially on a nontrivial simple factor.
+Since \(2(q^5-1)>F(q)\), there is only one nontrivial factor.
+Absence of trivial submodules and quotients now makes the heart simple.
+Scalars fix projective points, so it descends to \(\mathrm{PSL}_6(q)\).
+
+For odd \(a\), \(q\equiv5\pmod8\) and \(q\equiv-1\pmod3\);
+hence \(\gcd(6,q-1)=2\). The order formula is
+\[
+ |G|=\frac{q^{15}}2\prod_{i=2}^{6}(q^i-1).
+\]
+The five factors have \(2\)-adic valuations \(3,2,4,2,3\).
+Their sum, less the central factor of two, is \(13\), independently
+of \(a\).
+
+It remains to obtain arbitrarily prescribed degree valuations at
+actual prime powers. Repeated squaring gives
+\(v_2(5^{2^j}-1)=j+2\), so for \(k\ge3\),
+\[
+ 5^{2^{k-2}}\equiv1+2^k\pmod{2^{k+1}}.
+\]
+For odd \(x\), \(F'(x)\) is odd, and the binomial theorem gives
+\[
+ F(x+2^k)\equiv F(x)+2^k\pmod{2^{k+1}}.
+\]
+Therefore, whenever odd \(a\) satisfies \(2^k\mid F(5^a)\),
+exactly one of \(a\) and \(a+2^{k-2}\) gives divisibility by
+\(2^{k+1}\); the other gives valuation exactly \(k\).
+Start with \(a=1\), since \(F(5)=3904\) is divisible by eight,
+and continue using the divisible choice. The unused choice at each
+step supplies the required odd exponent and exact valuation.
+\end{proof}
+
+The representation family and its irreducibility are prior mathematics;
+the fixed group-order valuation and unbounded degree valuation are the
+deduction proposed here. No assertion about ordinary character degrees
+is being made. See \artifact{research/12.40-proof.md};
+finite module and integer controls corroborate the formulas without
+replacing the arbitrary-\(k\) argument.

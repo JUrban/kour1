@@ -1,0 +1,85 @@
+\subsection{17.39: no uniform number of system normalizers}
+\label{cand:17.39}
+For every odd prime \(p\) and \(d\ge1\), there is a supersoluble
+metabelian group \(G\) of order \(2p^{2d+1}\), with trivial hypercenter,
+for which the least number of system normalizers having trivial
+intersection is exactly \(d+1\). Its Frattini subgroup has order \(p\).
+Fixing \(p=3\) disproves a uniform bound even at fixed Frattini order.
+
+Write \(V=\F_p^d\), and define
+\[
+ P=V\times V\times\F_p,\qquad
+ (u,v,z)(a,b,c)=(u+a,v+b,z+c+u\cdot b).
+\]
+These are upper unitriangular block matrices of block sizes \(1,d,1\).
+The automorphism \(\alpha(u,v,z)=(u,-v,-z)\) has order two.
+Set \(G=P\rtimes\langle t\rangle\), with \(x^t=\alpha(x)\).
+The commutator formula is
+\[
+ [(u,v,z),(a,b,c)]=(0,0,u\cdot b-a\cdot v),
+\]
+so \(Z(P)=P'=\{(0,0,z)\}=:Z\).
+The element \(t\) inverts \(Z\), and every element outside \(P\)
+does too. Thus \(Z(G)=1\), and its entire hypercenter is trivial.
+The subgroup \(\{(0,v,z)\}\) is abelian normal with abelian quotient,
+making \(G\) metabelian.
+Coordinate flags in the two copies of \(V\) in \(G/Z\), preceded
+by \(Z\), give a normal series of prime-order cyclic factors,
+so \(G\) is supersoluble.
+
+A Sylow system consists here of the normal Sylow \(p\)-subgroup
+\(P\) and a Sylow \(2\)-subgroup.
+Its system normalizer is a conjugate of
+\[
+ D=N_G(\langle t\rangle)=C_G(t)
+   =\{(u,0,0):u\in V\}\times\langle t\rangle.
+\]
+All such conjugates occur, by Sylow conjugacy, and \(G=DP\)
+allows conjugators in \(P\).
+Represent an element of \(G\) as \((u,v,z,e)\), meaning
+\((u,v,z)t^e\), \(e=0,1\).
+For \(g=(a,b,c)\) and \(q=c-a\cdot b\), direct multiplication gives
+\[
+\begin{split}
+ D^g=D_{b,q}
+ ={}&\{(u,0,u\cdot b,0):u\in V\}\\
+ &{}\cup\{(u,-2b,-2q-u\cdot b,1):u\in V\}.
+\end{split}
+\]
+Every pair \(b,q\) occurs, and different pairs give different subgroups.
+Thus there are exactly \(p^{d+1}\) system normalizers.
+
+For \(k\) arbitrary normalizers \(D_{b_i,q_i}\), their intersection
+with \(P\) consists of
+\[
+ \{(u,0,u\cdot b_1,0):
+       u\cdot(b_i-b_1)=0,\ 2\le i\le k\}.
+\]
+At most \(k-1\) independent equations are imposed on \(V\);
+for \(k\le d\) this intersection is nontrivial.
+Conversely take \(D_{0,0}\) and \(D_{e_i,0}\) for all \(d\) standard
+basis vectors. Their common part in \(P\) is trivial.
+Already the first two have no common element outside \(P\), whose
+second coordinates would have to be both \(0\) and \(-2e_1\).
+Their full intersection is therefore trivial, proving the exact minimum.
+
+To locate the example relative to the known Frattini-free positive
+case \cite{system-normalizers}, note that \(\Phi(G)=Z\).
+Indeed \(P^p=1\), by
+\[
+ (u,v,z)^m=(mu,mv,mz+\tbinom m2u\cdot v),
+\]
+so \(\Phi(P)=P'P^p=Z\).
+If a maximal subgroup \(M\) of \(G\) missed this normal subgroup,
+then \(G=M\Phi(P)\) and
+\(P=(P\cap M)\Phi(P)\), contrary to the nongenerator property
+of \(\Phi(P)\). Thus \(Z\le\Phi(G)\).
+On the other hand
+\(G/Z\cong V\times(V\rtimes C_2)\), with inversion on the second
+copy. The coordinate-hyperplane subgroups in either copy, extended
+by the other factors, and the index-two subgroup \(V\times V\),
+are maximal with trivial total intersection.
+Their preimages give \(\Phi(G)\le Z\).
+The fixed nontrivial Frattini subgroup therefore explains why
+the prior positive result does not apply.
+See \artifact{research/17.39-proof.md}.

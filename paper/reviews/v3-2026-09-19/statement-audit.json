@@ -1,0 +1,1067 @@
+{
+  "scope": "Visual statement-fidelity check of all 46 historical candidates against the manuscript scope. This is not a fresh proof, dependency, intended-convention or priority certification. Explicit convention qualifications remain in force.",
+  "notebook": {
+    "path": "docs/21tkt.pdf",
+    "sha256": "2fcce9b98a4df10267fe120229217bfe556c70510704e311540da0cef438f911"
+  },
+  "entries": [
+    {
+      "problem": "21.106",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 183,
+          "bbox_points": [
+            109.52,
+            121.85995600000001,
+            488.027875,
+            228.181956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/21.106-p183.png",
+          "sha256": "fda0c641fae057f69a9c4bc06bd28e93538b51eaa8767ce0b3587eef49bf3c24"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/representative.tex",
+      "comparison": "One free variable, arbitrary first-order formula, finite truth set and residual finiteness. The parameter-free Heisenberg formula has precisely that scope.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "21.121",
+      "covered_parts": "a",
+      "source_crops": [
+        {
+          "pdf_page": 185,
+          "bbox_points": [
+            109.52,
+            443.297956,
+            488.026645,
+            569.111956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/21.121-p185.png",
+          "sha256": "cf13df97f6e1257fb13be0ffde0ac4e9e731cc6186386c43b288cca968c93b71"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/21-121a.tex",
+      "comparison": "Only part (a) is counted. The normal abelian subgroup must have order prime to p; the infimum is over exponents with a separate constant J. The free-product example treats p=2 and nonattainment, without claiming part (b).",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "21.68",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 177,
+          "bbox_points": [
+            109.52,
+            567.680956,
+            488.028121,
+            637.972956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/21.68-p177.png",
+          "sha256": "7845fcab0876d818d154f2f32da5b30455ada38b4e52d49b1ed0037388030d53"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/representative.tex",
+      "comparison": "The subgroup-chain definition permits abelian semidirect extensions and quotients. The displayed order-2592 example and degree-eight nonmonomial character use this definition.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "16.87",
+      "covered_parts": "a,b",
+      "source_crops": [
+        {
+          "pdf_page": 103,
+          "bbox_points": [
+            109.52,
+            652.797956,
+            488.028181,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/16.87-p103.png",
+          "sha256": "18e816ebbd72934639ec157901011c5e58f96e360a3bac0e23cf81da5c1698db"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/16-87.tex",
+      "comparison": "Both parts concern every relatively free rank r>=1. Nonperiodicity is a property of the variety, not a torsion-freeness assumption on its free groups; the chosen variety contains Z.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "10.35",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 40,
+          "bbox_points": [
+            109.52,
+            475.755956,
+            488.028046,
+            527.813956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/10.35-p40.png",
+          "sha256": "5d36441c5c460dec4ecbbb6b1ac8be7c283aa52979356f69740d1f06842de9c0"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/10-35.tex",
+      "comparison": "WITHDRAWN. The printed target is GL_n(Qbar), not GL_n(Q). The displayed torsion-free example already embeds over Q(i). The field assumption in the obstruction lemma fails for Qbar.",
+      "assessment": "withdrawn_wrong_problem"
+    },
+    {
+      "problem": "16.28",
+      "covered_parts": "a",
+      "source_crops": [
+        {
+          "pdf_page": 99,
+          "bbox_points": [
+            109.52,
+            293.360956,
+            488.026292,
+            388.080956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/16.28-p99.png",
+          "sha256": "bf7db745008e24f64a4b6470fd8667c4a6ba58d64ac545f157f091b8dbc9bbfb"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/16-28.tex",
+      "comparison": "Part (a) permits any positive-characteristic field, a reducible closed set, and c>1. No finite-field or identity-membership restriction is printed. The algebraic closure of F_5(t) example fits this scope; part (b) remains outside counted coverage.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "14.22",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 75,
+          "bbox_points": [
+            109.52,
+            265.377956,
+            488.028594,
+            406.625956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/14.22-p75.png",
+          "sha256": "ec43885ee565cf22b37c2c7d50aeaf96be91dbc1c4484dd3139955037dcf4758"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/14-22.tex",
+      "comparison": "The printed radical is the normal isolated closure, with coefficients in a torsion-free linear group, without finite generation. The infinite rational coefficient group and all finite equivalent systems are addressed.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "16.20",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 98,
+          "bbox_points": [
+            109.52,
+            625.688956,
+            488.027983,
+            706.475956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/16.20-p98.png",
+          "sha256": "d6d3ffe475fc861403b407de716e7798553b4fff34b522026d609e37054cb5a7"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/16-20.tex",
+      "comparison": "The printed ambient group is in M, while target quasivarieties N range within M. The smaller construction has A in M and uses the cited convention allowing A outside N. The paper also describes the larger construction under the additional A-in-N convention; this distinction remains explicit.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "17.33",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 108,
+          "bbox_points": [
+            109.52,
+            388.615956,
+            488.023623,
+            447.908956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/17.33-p108.png",
+          "sha256": "69b65d3406f32bd1665405db412d24c19e24576d20fb7d985ad0214d6c4bf407"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/17-33.tex",
+      "comparison": "The question concerns a finite bound on variables in all axiomatizing quasiidentities for the Klein bottle quasivariety. The construction disproves every such bound, not merely a finite basis.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "17.101",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 115,
+          "bbox_points": [
+            109.52,
+            121.30595600000001,
+            488.027608,
+            213.832956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/17.101-p115.png",
+          "sha256": "1dbf4bf71172fa27f480e32ef416e03b07094030688dd98c227088c12c60b7df"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/17-101.tex",
+      "comparison": "Finite generation is required on both the acting subgroup and the module over that subgroup algebra. The paper defines its two-sort embeddings and the fixed coefficient ring explicitly.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "18.76",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 125,
+          "bbox_points": [
+            109.52,
+            698.680956,
+            488.024122,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/18.76-p125.png",
+          "sha256": "ff24c9a0af85a2f1c83b4259271325deae834f895996b3a8d372ea8fcd3f71e6"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/18-76.tex",
+      "comparison": "The kernel is the additive group of a division ring and the quotient is a subgroup of its units acting by multiplication. The specified extension, rather than an unrelated semidirect decomposition, is proved nonsplit.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "18.92",
+      "covered_parts": "a,b",
+      "source_crops": [
+        {
+          "pdf_page": 128,
+          "bbox_points": [
+            109.52,
+            121.30595600000001,
+            488.027017,
+            268.015956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/18.92-p128.png",
+          "sha256": "d3744c13dc8847424ddb15710465077a5a991b7c3246cb54c2ea2565c5b3d2e6"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/18-92.tex",
+      "comparison": "Both (a) and (b) use the printed intersection-closed families with largest member and internal joins. The examples concern selected families, not the whole lattice of all formations.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "20.108",
+      "covered_parts": "a,b",
+      "source_crops": [
+        {
+          "pdf_page": 163,
+          "bbox_points": [
+            109.52,
+            360.060956,
+            488.026414,
+            507.575956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/20.108-p163.png",
+          "sha256": "c6861216c2047aba9124991da458d3934fba1dac522d7a1e14a33f54e62f0fe2"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/representative.tex",
+      "comparison": "Only (a) and (b) are counted. The example is finite and centerless and has an order-four element in the multiple-holomorph quotient; it does not claim the p-group assertion (c).",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "20.90",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 160,
+          "bbox_points": [
+            109.52,
+            486.210956,
+            488.025543,
+            647.640956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/20.90-p160.png",
+          "sha256": "f5266ecafc7121a38cec9210aa7a510d270e0431195b155fcf24f640f02e3da5"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/20-90.tex",
+      "comparison": "The question requires an infinite finitely generated profinite CN-group that is not prosoluble. The closed two-generator matrix group has abelian, hence pronilpotent, nonidentity centralizers. Finite quotients need not be CN. Its use of the general centralizer fact in the retained 10.35 section is unaffected.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "11.116",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 56,
+          "bbox_points": [
+            109.52,
+            366.922956,
+            488.02601,
+            447.371956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/11.116-p56.png",
+          "sha256": "542631ecb2754d0ab2f52e53467db7d714b75d1c04274030460b3088e7a6e0a1"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/11-116.tex",
+      "comparison": "The same-prime pair of quasicyclic subgroups is excluded. The proof uses distinct primary quasicyclic factors in a finite-index divisible subgroup and handles the finite case separately.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "14.72",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 80,
+          "bbox_points": [
+            109.52,
+            216.711956,
+            488.028127,
+            292.653956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/14.72-p80.png",
+          "sha256": "9283df37f4c29427a683f809dd1b3c6be2362851161abbcd7c57b77c5b071ba0"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/14-72.tex",
+      "comparison": "The fixed variety must be a regular codimension-one hypersurface for a cyclic action. The current invariant-open strengthening makes the reduced fixed divisor globally principal, retaining the singular quotient.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "21.40",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 173,
+          "bbox_points": [
+            109.52,
+            516.978956,
+            488.027742,
+            576.963956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/21.40-p173.png",
+          "sha256": "760b0272f0efb8945f26035df2a32eec9411a7bffdcd51554f38334e1d716022"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/21-40.tex",
+      "comparison": "The printed field is Q without an algebraic-closure bar. The proof assumes rational matrices and finitely many abstract automorphism orbits; it does not introduce finite generation.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "21.60",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 176,
+          "bbox_points": [
+            109.52,
+            514.030956,
+            488.026376,
+            635.265956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/21.60-p176.png",
+          "sha256": "a77c51841d6adfe85b3538483d9ea8c7975dd2e63574ab893331944d9c920bc7"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/21-60.tex",
+      "comparison": "The statement uses Z localized at p, simple rational modules, reductions and nonnegative combinations in the modular Grothendieck group. The counterexample targets the unproved sufficient direction.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "4.55",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 14,
+          "bbox_points": [
+            109.52,
+            207.316956,
+            488.025879,
+            311.057956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/4.55-p14.png",
+          "sha256": "71ee9a91e5b6f6d547c47c8365ad603f4ec26aac203b785899cb2e1220ca5cec"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/4-55.tex",
+      "comparison": "The statement asks uniqueness of indecomposable projective decompositions over Z localized at p. The construction addresses uniqueness itself, rather than just failure of local endomorphism rings.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "21.107",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 183,
+          "bbox_points": [
+            109.52,
+            223.181956,
+            488.027982,
+            329.504956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/21.107-p183.png",
+          "sha256": "68258874dc20eedad93e055c361ff76453c019827edb4f293f8abdb70d7aa675"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/21-107.tex",
+      "comparison": "The sequence is pairwise disjoint and finite, and must eventually meet every nonempty open set. The paper states that standard nonempty-open convention and supplies a countably dense partition but no expansive sequence.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "15.89",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 94,
+          "bbox_points": [
+            109.52,
+            523.356956,
+            488.023623,
+            609.976956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/15.89-p94.png",
+          "sha256": "fd3214d0299980b5c3f1dc95096eebbfb911f87fde5931259089355d4e2e1826"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/15-89.tex",
+      "comparison": "The graph must be infinite, undirected, connected, vertex-symmetric, locally finite and simple. The operator acts on all complex-valued functions. The invertible adjacency example meets these hypotheses and excludes zero as an eigenvalue.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "16.9",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 97,
+          "bbox_points": [
+            109.52,
+            662.815956,
+            488.02744,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/16.9-p97.png",
+          "sha256": "384927eeb41de31f7dd56c87ab527717435f4084e3805e85346220d70242ddfb"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/16-9.tex",
+      "comparison": "Palindromes are defined using the specified free basis, and the requested length is a product length permitting cancellation. The algorithm computes that group length, not a word partition; older qualitative computability remains credited.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "18.18",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 119,
+          "bbox_points": [
+            109.52,
+            461.899956,
+            488.02163,
+            531.795956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/18.18-p119.png",
+          "sha256": "f534e1227afd6227fdfc24d1218ad3ef560797674b4aeff8ed108292f2a611d6"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/18-18.tex",
+      "comparison": "The paper explicitly reads almost all as all but finitely many isomorphism types, equivalent here to all sufficiently large finite groups. It addresses both non-enumerability assertions and claims no density interpretation.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "19.56",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 139,
+          "bbox_points": [
+            109.52,
+            206.796956,
+            488.024741,
+            260.867956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/19.56-p139.png",
+          "sha256": "ab6050b2bb6e25a01f24218ad2100075b86ea070c1070da33040362f6bc905e4"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/19-56.tex",
+      "comparison": "The star-commutator inputs have coprime prime-power orders; the inequality applies to coprime-order outputs. Both levels of restriction are distinguished in the proof.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "20.92",
+      "covered_parts": "a",
+      "source_crops": [
+        {
+          "pdf_page": 161,
+          "bbox_points": [
+            109.52,
+            121.30595600000001,
+            488.026843,
+            464.226956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/20.92-p161.png",
+          "sha256": "145f33fbc12f4a7d5372befad455082a4261abc2facc7d97a0411234f4867a95"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/20-92.tex",
+      "comparison": "Only (a) is counted. The printed negative sum with coefficients 2^(-i), i=0,...,p-2, is reproduced exactly. The bound is uniform in the additive dimension and does not assume strong nilpotence. Part (b) is already starred as solved.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "9.47",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 35,
+          "bbox_points": [
+            109.52,
+            121.30595600000001,
+            488.027982,
+            180.517956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/9.47-p35.png",
+          "sha256": "27e9139810041a275134e12d56917c9523ff36602200846d1cd925b4809a93ee"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/9-47.tex",
+      "comparison": "The statement concerns closed noncompact subgroups with E-topology of a locally compact group. The paper explicitly uses full Vietoris E-topology and a scattered compact counterexample, not Chabauty topology.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "9.45",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 34,
+          "bbox_points": [
+            109.52,
+            651.468956,
+            488.023664,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/9.45-p34.png",
+          "sha256": "583618bca97ced25e537cd78c19435772ce63324a49b1000474b71b1ab0ca954"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/9-45.tex",
+      "comparison": "The lattice is Z^n+Za with rational a and the standard Euclidean product. The finite coordinate criterion concerns orthogonal bases in arbitrary dimension; its operation bound is not a binary-input polynomial bound.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "10.62",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 43,
+          "bbox_points": [
+            109.52,
+            523.922956,
+            488.028357,
+            590.850956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/10.62-p43.png",
+          "sha256": "235aa80730f84469c6d451dbda75d5ecf3fcf17f42b21cd47de0e08b1593e1cc"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/10-62.tex",
+      "comparison": "Periodicity, no index-two subgroup, generation by one involution class and odd orders of pairwise products are all required. The exponent-2p perfect example addresses all four conditions via imported geometric construction.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "10.32",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 40,
+          "bbox_points": [
+            109.52,
+            205.613956,
+            488.027902,
+            356.098956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/10.32-p40.png",
+          "sha256": "55cf6a6d6b383504627a078f58799ee1c9044c60e04058bb17aacf30c322b6e9"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/10-32.tex",
+      "comparison": "At least one nonzero exponent is odd, and the degree bound is sought for symmetric groups. The logarithmic sufficient bound is stated with these restrictions and includes the exponent +/-1 cases.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "15.65",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 91,
+          "bbox_points": [
+            109.52,
+            616.931956,
+            488.028119,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/15.65-p91.png",
+          "sha256": "e3cdfc9760d9848c72a46475ffa769b664b0acbc3db841f422788d4009c2e7be"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/15-65.tex",
+      "comparison": "Separable means squarefree minimal polynomial, not squarefree characteristic polynomial. The paper distinguishes both and treats cyclic matrices as well; rationality is as a function of field size, not a single probability.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "15.92",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 95,
+          "bbox_points": [
+            109.52,
+            190.815956,
+            488.027628,
+            277.667956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/15.92-p95.png",
+          "sha256": "1a10effac1c84cdc71af3066e95b174a4b4baa3e68b84cc7f26b6687a24f0764"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/15-92.tex",
+      "comparison": "The printed presentation equates the three powers without writing =1. The paper explicitly notes that this literal group surjects onto the usual triangle group, so its uncountably many pairwise nonisomorphic alternating-residual quotients also apply.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "4.75",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 14,
+          "bbox_points": [
+            109.52,
+            657.506956,
+            488.024383,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/4.75-p14.png",
+          "sha256": "71d922313a438a354e875be6a6e1a6d417b2b1a571c2004000d90eef32504aca"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/4-75.tex",
+      "comparison": "The printed group is periodic, and its Sylow 2-subgroups are locally cyclic or generalized quaternion. The example uses maximal 2-subgroups of order two and the odd-order radical, as required.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "9.4",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 32,
+          "bbox_points": [
+            109.52,
+            242.032956,
+            488.028363,
+            324.393956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/9.4-p32.png",
+          "sha256": "67d3ce26edd38a384d16369cc016cf89531d95e570a5d0583ec762e63e71f545"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/9-4.tex",
+      "comparison": "The paper states ordinary one-sorted quasigroup generation in the three-operation signature and treats varieties, quasivarieties and pseudovarieties. Generation with isotopy closure would be different and is not claimed.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "12.40",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 60,
+          "bbox_points": [
+            109.52,
+            700.617956,
+            488.024037,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/12.40-p60.png",
+          "sha256": "2a2c40da925d41e1dcbb69acd3421f9ac7593bbdb4fc141f6855445e90f760a4"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/12-40.tex",
+      "comparison": "Both displayed subscripts p mean p-parts, and the character is modular. The counterexample fixes |G|_2 while making the degree 2-part unbounded; it does not concern ordinary characters.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "13.42",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 69,
+          "bbox_points": [
+            109.52,
+            397.610956,
+            488.021833,
+            458.201956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/13.42-p69.png",
+          "sha256": "5ed9900eed5d4b9f36847c185c1a3100a31b43a81cc76ea75004f8d5de819ec2"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/13-42.tex",
+      "comparison": "The printed tensor A-completion refers to the stated source. The manuscript makes explicit that its universal category permits scalar torsion and unrestricted target A-groups; completion within nilpotent A-groups is a different convention.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "14.26",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 75,
+          "bbox_points": [
+            109.52,
+            615.528956,
+            488.028604,
+            681.707956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/14.26-p75.png",
+          "sha256": "d228446fca2f950fb70f2daa60b809891b1a44f77f81a629b7ebd049e0986415"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/14-26.tex",
+      "comparison": "Direct Z-wreath product is used with the proposer\u2019s cited finite-support definition. The theorem concerns the quasivariety generated by all torsion-free nilpotent groups, with no uniform nilpotency-class bound.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "15.76",
+      "covered_parts": "b",
+      "source_crops": [
+        {
+          "pdf_page": 93,
+          "bbox_points": [
+            109.52,
+            296.286956,
+            488.028614,
+            441.426956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/15.76-p93.png",
+          "sha256": "e79d77fdafd579499a6ac27dce5ec0d567f926822c562e8cf8579b6f45ef5614"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/15-76.tex",
+      "comparison": "Part (b) is printed here; the manuscript treats full soluble varieties of each derived-length bound and the full metabelian variety. Its explicit exclusion of arbitrary proper subvarieties and cited counterexample remain necessary scope qualifications.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "16.38",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 100,
+          "bbox_points": [
+            109.52,
+            213.079956,
+            488.02462,
+            284.558956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/16.38-p100.png",
+          "sha256": "6dc611d14e6c984649c5405382426a4d980c6990d844040b244e18044048cd8e"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/16-38.tex",
+      "comparison": "Solubility of G and periodicity of A,B are printed. The conclusion concerns subgroups contained in the set AB, not individual elements of AB or the locally soluble variant.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "19.93",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 143,
+          "bbox_points": [
+            109.52,
+            394.356956,
+            488.02173,
+            493.743956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/19.93-p143.png",
+          "sha256": "4970027b9f9768ec3b66995226054630e7aeb41d25c363abb8c0cade048c156f"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/19-93.tex",
+      "comparison": "The prohibited wreath product is an epimorphic image of G itself. The construction has two generators at fixed prime and unbounded p-lower-central factors; no stronger restriction on quotients of every subgroup is assumed.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "20.1",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 146,
+          "bbox_points": [
+            109.52,
+            189.113956,
+            488.028388,
+            321.781956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/20.1-p146.png",
+          "sha256": "a849021ae01cf3dcb7ea8c7d3ebcef811e0e0d21d836b98c19fc382936d0ee23"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/20-1.tex",
+      "comparison": "The definition quantifies over every faithful permutation representation, including intransitive actions. No direct-indecomposability condition is printed; the J_1 times C_13 example treats the stated Fitting-subgroup requirement.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "19.62",
+      "covered_parts": "all; duplicate 19.63 not counted",
+      "source_crops": [
+        {
+          "pdf_page": 139,
+          "bbox_points": [
+            109.52,
+            616.931956,
+            488.025615,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/19.62-p139.png",
+          "sha256": "950b9dc7f5e7da8520649ceedb28695869d90930f4edac2d1fdd7821d6ec2274"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/19-62.tex",
+      "comparison": "The sum uses positive commutator indices and roots whose combination is the destination root. The claim concerns derived-carpet closedness over a commutative ring; the separately grouped 19.63 criterion remains credited as prior work.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "19.61",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 139,
+          "bbox_points": [
+            109.52,
+            543.396956,
+            488.023672,
+            621.931956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/19.61-p139.png",
+          "sha256": "86095f38f247c27b355b610228cd5335768f431053035ff2649b92dc98145b62"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/19-61.tex",
+      "comparison": "The closure bars on the carpet and its root subgroups are visible and match the manuscript root-closure construction. The paper treats arbitrary commutative rings and states the additional derived-carpet equality separately.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "21.76",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 178,
+          "bbox_points": [
+            109.52,
+            422.215956,
+            488.028604,
+            574.110956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/21.76-p178.png",
+          "sha256": "d6b225ae2ad0c9c5b9d6906a6b0cbd7e9a0096c7ba7201516a3ff8c7a840867c"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/21-76.tex",
+      "comparison": "The question asks existence of closed irreducible noncompletable nets in odd characteristic, of order at least three. The two-variable construction supplies all these orders and characteristics without relying on the optional finite table.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "11.115",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 56,
+          "bbox_points": [
+            109.52,
+            312.893956,
+            488.024993,
+            371.922956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/11.115-p56.png",
+          "sha256": "0ae49e26e63fb573836030cb38fa5ddea0d7763a5b01fdaaf5ad892963a5176b"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/11-115.tex",
+      "comparison": "N is nontrivial normal in a noncyclic free group, with N<=T<X, and N is not maximal. The proper-power construction has a strict chain and equal commutator subgroups; no torsion-free quotient assumption is printed.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "20.122",
+      "covered_parts": "a,b,c",
+      "source_crops": [
+        {
+          "pdf_page": 165,
+          "bbox_points": [
+            109.52,
+            263.188956,
+            488.025834,
+            376.539956
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/20.122-p165.png",
+          "sha256": "c5d0098d9a4baab8cf6ae57f4ea5629588d51bbd4fa0d2b55314739851a0b5b5"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/20-122.tex",
+      "comparison": "The two capitalizations distinguish inclusion-minimal intersections and minimum-order intersections. The soluble counterexample addresses both and therefore all counted parts (a)--(c).",
+      "assessment": "no_additional_statement_mismatch_identified"
+    },
+    {
+      "problem": "17.39",
+      "covered_parts": "all",
+      "source_crops": [
+        {
+          "pdf_page": 108,
+          "bbox_points": [
+            109.52,
+            662.814956,
+            488.025065,
+            757.0
+          ],
+          "render_path": "reviews/v3-2026-09-19/statement-crops/17.39-p108.png",
+          "sha256": "c280b4e288ac7fabd4670ce446e95678e2113c85dd7188ce96158a5a0f0baea3"
+        }
+      ],
+      "reviewer": "Codex gpt-6-astra",
+      "review_date": "2026-09-19",
+      "visual_statement_read": true,
+      "manuscript_path": "sections/candidates/17-39.tex",
+      "comparison": "The bound would be uniform over finite soluble groups; the known comment only handles trivial Frattini subgroup. The family needs arbitrarily many system normalizers and has nontrivial Frattini subgroup.",
+      "assessment": "no_additional_statement_mismatch_identified"
+    }
+  ]
+}

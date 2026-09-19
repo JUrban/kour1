@@ -12,8 +12,8 @@ that led to the strengthened surface example below.
 
 \subsection{What was checked}
 
-In the first report, Claude compared all 46 candidate entries with the
-Notebook and read the proofs, verifying a majority in full detail.
+In the first report, Claude reported comparing all 46 candidate entries
+with the Notebook and verifying a majority of the proofs in full detail.
 It also examined the partial results and prior-work deductions.
 Much of the finite checking was reconstructed from the mathematical
 descriptions before the authors' programs were available to the reviewer.
@@ -36,7 +36,7 @@ conducted a second round. It replayed the documented carpet checks,
 verified the order-512 inputs used for 21.114, and checked the finite
 cycle data for 15.92. Its final assessment remained acceptance after
 revision, with increased confidence in the mathematical content.
-The first report found no false theorem among the claims it could settle;
+The first report stated that it found no false theorem among the claims it could settle;
 the follow-up resolved several items that had initially lacked sufficient
 accessible evidence. The reports give the assessment of each entry.
 
@@ -71,7 +71,8 @@ the choice of prime. Claude also identified contemporaneous work on
 21.106, now acknowledged alongside the proof. These changes improve
 what readers can check and how they can assess attribution.
 
-The review substantially increases confidence in the arguments examined.
+The review provides substantial evidence for the arguments examined,
+but missed the statement error in 10.35 described below.
 Its independence concerns the reviewing model and the separately written
 checks; it is not a proof of discovery independence, human specialist
 endorsement or formal verification. One sizeable verification input,
@@ -98,3 +99,29 @@ available chronology. This later comparison is separate from Claude's
 earlier assessment. In particular, the reported Lean formalizations in
 the alternative papers have not been built here. We thank Khukhro for
 the information and acknowledge the authors alongside the affected proofs.
+
+\subsection{A missed statement error: withdrawal of 10.35}
+\label{sec:withdrawal-10-35}
+
+On 19 September, Khukhro pointed out that 10.35 asks about residuality
+in torsion-free subgroups of \(\GL_n(\overline{\Q})\), not
+\(\GL_n(\Q)\). The bar is present in the supplied PDF, although
+text extraction drops it. Codex's original audit incorrectly stated
+that visual inspection had confirmed its absence. Claude subsequently
+accepted the entry, including its matrix lemma. Both reviews therefore
+failed to detect that the argument addressed a different question.
+
+The example already embeds over \(\Q(i)\), so the claimed resolution
+is withdrawn. The valid obstruction over \(\Q\) and \(\R\) is retained
+in Section~\ref{cand:10.35}. The historical ledger still has 46 entries;
+45 remain candidates after this correction. Khukhro described his reading
+as cursory and proposed listing the submissions as unverified AI solutions;
+this communication is not specialist validation of the remaining entries.
+
+Codex then checked rendered statements for all 46 historical candidates
+against the manuscript's stated scope. This pass found no further
+transcription mismatch requiring withdrawal, with the existing convention
+qualifications retained. It is a statement audit, not a fresh proof or
+priority verification. Appendix~\ref{app:statement-correction} gives
+the evidence and limits. Checking the original question, the proof of
+the stated theorem, and its novelty are separate obligations.

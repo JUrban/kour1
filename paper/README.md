@@ -1,18 +1,31 @@
 # Forty-eight hours with the Kourovka Notebook
 
-[Read version 2 (PDF)](kourovka-experiment.pdf) ·
+[Read version 3 (PDF)](kourovka-experiment.pdf) ·
+[Preserved version 2 (PDF)](versions/kourovka-experiment-2026-09-19-v2.pdf) ·
 [Final pre-v2 paper (PDF)](versions/kourovka-experiment-2026-09-17-v1.pdf) ·
 [Reviewed 15 September version (PDF)](versions/kourovka-experiment-2026-09-15.pdf) ·
 [First review revision (PDF)](versions/kourovka-experiment-2026-09-17-review.pdf).
 
-This is **version 2, dated 19 September 2026**, on branch `paper/v2`.
+This is **version 3, dated 19 September 2026**, on branch `paper/v3`.
 Anthropic's **Claude Opus[1m]** (`claude-opus-5[1m]`, `xhigh`, via Claude Code)
 provided the independent mathematical review. The abstract and early review
 section describe its confirmations, corrections and dialogue with Codex.
 
-Version 2 adds a comparison of eleven entries with contemporary solutions
+**The claimed resolution of 10.35 is withdrawn.** Evgeny Khukhro pointed
+out that the Notebook asks about the algebraic closure of Q, while our
+argument concerns Q. The example already embeds over Q(i). The valid
+rational-field observation remains, clearly separated from the original
+question. Both model reviews had accepted the entry; the revision records
+this failure in the abstract, introduction and review account.
+The current status is **46 historical deadline candidates, one withdrawal,
+45 remaining candidates**, without certifying correctness or novelty.
+Appendix O (pages 141–142) explains the correction and a visual statement
+audit of all 46 entries. Its [review record](reviews/v3-2026-09-19/)
+includes the rendered statements, individual scope comparisons and v2 baseline.
+
+The comparison added in version 2 covers eleven entries with contemporary solutions
 identified by the Notebook's editor, Evgeny Khukhro. Appendix N (pages
-136–138) compares their results and arguments; attribution notes follow
+138–140) compares their results and arguments; attribution notes follow
 all eleven affected proofs. It credits Achyuth Jayadevan's eleven papers
 and Aluna Rizzoli's separate 21.68 note, while retaining the earlier
 Zhang–Li acknowledgment for 21.106. The 16.9 discussion also identifies
@@ -49,7 +62,8 @@ the public logs document its historical verification but do not permit a
 complete new replay. No separate large-file deposit is claimed.
 
 The manuscript contains the experimental
-narrative, all 46 deadline candidate expositions, substantial partial
+narrative, expositions for all 46 historical entries (including the corrected
+10.35 observation), substantial partial
 results, prior-result comparisons, and reproduction information.
 
 The local handoff files are:
@@ -121,8 +135,10 @@ the first review revision (`f9e1956`); the later editorial reorganization is
 recorded separately. The originals and both earlier PDFs remain available.
 `reviews/polish-2026-09-17/` documents the two reader-focused passes and checks.
 `python3 paper/scripts/audit_reader_revision.py` checks that the 50 relocated
-mathematical source files preserve their proofs and that every live TeX file
-is included exactly once.
+mathematical source files preserve their proofs, allowing the explicitly
+bound v3 correction to 10.35, and that every live TeX file is included
+exactly once. Forty-nine separate mathematical source files remain
+byte-identical to v2; the original 10.35 lemma and construction also remain.
 Raw originals, the partial update of the first report, its exact diff, and
 our final reply are in [external-reviews/](external-reviews/).
 [reviews/revision-2026-09-17/](reviews/revision-2026-09-17/) holds exact
@@ -146,28 +162,32 @@ To regenerate the correspondence (Pandoc 3.1.3) and change appendix:
 python3 paper/scripts/render_review_record.py
 python3 paper/scripts/render_review_changes.py
 python3 paper/scripts/render_v2_changes.py --check
+python3 paper/scripts/render_v3_changes.py --check
 ~~~
 
 Appendix G records five further literal before/after pairs for version 2,
 bound to the preserved pre-v2 source. The earlier eighteen pairs and four
-verbatim review appendices are unchanged. Builds and bundles include the
-correspondence listed in its public manifest; the newly received raw editor
-email remains local and is excluded from both source archives.
+verbatim review appendices are unchanged. Five additional v3 pairs are bound
+to the preserved complete v2 source. Builds and bundles include the
+correspondence listed in its public manifest; both raw editor emails remain
+local and are excluded from the source archives.
 
 After building and packaging, validate the portable sources with:
 
 ~~~sh
 python3 paper/scripts/audit_v2.py
+python3 paper/scripts/audit_v3.py
 python3 paper/scripts/audit_reader_revision.py
 python3 paper/scripts/audit_manuscript.py
 python3 paper/scripts/validate_source_bundle.py
 ~~~
 
 The portable validation extracts both archives outside the repository,
-checks their manifests, runs ten commands, and compares the standalone
+checks their manifests, runs eleven commands, and compares the standalone
 PDF text with the working build. Its checks cover inventory regeneration,
 change records, source preservation, the v2 comparison and exact identities,
-and the four ancillary carpet proofs. It does not rerun the historical
+v3 correction and statement-image bindings, and the four ancillary carpet
+proofs. It does not rerun the historical
 large computations or the alternative Lean projects.
 
 The supplemental 14.72 algebra check uses SymPy:
@@ -177,8 +197,9 @@ four standard-library carpet checks. The proof itself requires no software.
 The initial same-agent review is documented in reviews/candidate-review-ledger.json,
 reviews/issue-log.md, reviews/source-notes.md and reviews/completion-audit.md.
 Internal review and targeted replay are distinct from outside acceptance,
-formal verification and priority. All 46 entries preserve their historical
-candidate status.
+formal verification and priority. The historical records include the
+mistaken acceptance of 10.35; `data/current-assessment.json` records its
+withdrawal separately.
 
 The title page credits Codex gpt-6-astra (OpenAI), Michael Kinyon
 (University of Denver), and Josef Urban (AI4REASON; University of Gothenburg),

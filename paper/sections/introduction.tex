@@ -4,14 +4,17 @@
 The Kourovka Notebook~\cite{kourovka21} collects open problems in group
 theory and neighboring areas, ranging from concrete questions about finite
 groups to structural and logical problems about infinite ones. We present
-counterexamples, theorems and algorithms covering 46 problem entries or
-specified subparts, partial
+candidate answers for 45 problem entries or specified subparts, partial
 results on nine questions, and rediscoveries and deductions from earlier
 work, obtained in a 48-hour experiment with an AI research agent.
 The archive includes finite certificates and computational checks.
 A second language model subsequently reviewed the mathematical work
-independently. Version~2 compares eleven entries with contemporary
-solutions brought to our attention by the Notebook's editor.
+independently. The deadline ledger contained 46 candidates; version~3
+withdraws the claimed answer to 10.35, which misread
+\(\overline{\Q}\) as \(\Q\). Evgeny Khukhro, the Notebook's editor,
+identified this error after both model reviews had accepted the entry.
+The eleven-entry comparison with contemporary solutions added in
+version~2 is retained.
 
 Michael Kinyon and Josef Urban conceived and oversaw the experiment.
 They gave OpenAI's GPT-6 Astra, running through Codex, an explicit
@@ -28,10 +31,12 @@ selected problems, developed arguments and checked its own work. After
 manuscript preparation, Anthropic's Claude Opus[1m], running through
 Claude Code, independently reviewed the paper and then responded to the
 authors' reply and supporting material. Claude examined all 46 entries
-on the deadline candidate list, verified a majority in detail, and
+on the deadline candidate list, reported verifying a majority in detail, and
 independently rebuilt many of the finite constructions and calculations.
-This substantial external review strengthens the evidence for the
-mathematical results. Its corrections, confirmations and exchanges with
+These checks provide evidence for the arguments examined, but the later
+10.35 correction shows that agreement between the models did not ensure
+that each argument answered the original question.
+The corrections, confirmations and exchanges with
 Codex form a second part of the experiment, described in
 Section~\ref{sec:external-review}.
 
@@ -64,7 +69,9 @@ Problem & Result & Section\\\midrule
 \end{table}
 
 The number 46 records the problem entries classified as complete solution
-candidates at the deadline. It counts specified subparts once per entry,
+candidates at the deadline. One of these, 10.35, is withdrawn in this
+version, leaving 45 other candidates. Neither total is a count of
+established new solutions. The ledger counts specified subparts once per entry,
 and some entries share a construction or a substantial imported theorem.
 The inventory in Section~\ref{app:inventory} gives the covered parts and
 convention-sensitive hypotheses. Subsequent review provides evidence of
@@ -73,7 +80,7 @@ Appendix~\ref{app:contemporary-comparison} identifies overlapping work
 on eleven entries, including the previously acknowledged 21.106.
 Some constructions agree closely; others differ or yield stronger results.
 We assign no discovery priority from the available chronology, and do not
-infer that the other 35 entries are new. Known results and deductions
+infer that the remaining entries are new. Known results and deductions
 retain their prior-work status; the qualitative computability assertion
 in 16.9 is now explicitly identified as a consequence of older work.
 The nine partial-result questions treated

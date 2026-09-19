@@ -1,0 +1,68 @@
+\subsection{20.1: a totally 2-closed insoluble group with nontrivial Fitting subgroup}
+\label{cand:20.1}
+The example is \(J_1\times C_{13}\).
+The imported input is that \(J_1\) is totally \(2\)-closed
+\cite[Theorem~1.1 and Proposition~4.8]{totally-two-closed}.
+We give the product argument for arbitrary faithful actions, including
+intransitive ones.
+
+For \(X\le\operatorname{Sym}(\Omega)\), its \(2\)-closure consists
+exactly of permutations \(s\) such that each ordered pair
+\((\alpha,\beta)\) has an \(x\in X\) agreeing with \(s\) at both points.
+In particular \(s\) preserves every point orbit.
+For a finite group, total closure for finite faithful sets implies
+the same for arbitrary sets: choose a finite invariant faithful subset
+\(\Omega_0\), using one moved point for each nonidentity group element.
+The restriction of \(s\) agrees with a unique group element there.
+Applying finite closure to \(\Omega_0\cup\alpha^X\) for every \(\alpha\)
+forces the same element everywhere.
+
+\begin{lemma}
+If finite groups \(A,B\) are totally \(2\)-closed and have coprime
+orders, then \(A\times B\) is totally \(2\)-closed.
+\end{lemma}
+\begin{proof}
+In any faithful action, \(\alpha^A\cap\alpha^B=\{\alpha\}\).
+Indeed, \(\alpha^a=\alpha^b\) makes \(ab^{-1}\) fix \(\alpha\).
+Since \(a,b\) commute and have coprime orders, the Chinese remainder
+theorem expresses \(a\) as a power of \(ab^{-1}\), so \(a\) fixes
+\(\alpha\).
+
+Let \(\Delta_B\) be the set of \(B\)-orbits. The induced \(A\)-action
+is faithful: an element fixing every such orbit moves each \(\alpha\)
+within \(\alpha^A\cap\alpha^B\), so fixes every point.
+Similarly \(B\) acts faithfully on \(\Delta_A\).
+If \(s\) is in the \(2\)-closure of \(A\times B\), it preserves both
+orbit equivalence relations, since each is a union of ordered-pair
+orbits. For two \(B\)-orbits, choose representatives and apply the
+pair criterion; the witnessing element \(ab\) induces the \(A\)-element
+\(a\) on the pair of blocks.
+Thus \(s\) induces an element of the \(2\)-closure of \(A\) on
+\(\Delta_B\), and total closure gives one \(a_0\in A\) for all blocks.
+Similarly one \(b_0\in B\) gives its action on \(\Delta_A\).
+The permutation \(s(a_0b_0)^{-1}\) fixes every orbit of both factors
+setwise, hence every singleton intersection, and is the identity.
+\end{proof}
+
+A prime cyclic group is totally \(2\)-closed: in a faithful action
+choose a point with trivial stabilizer; pairing it with every other
+point forces one common group element to realize a \(2\)-closure
+permutation.
+Now
+\[
+ |J_1|=175560=2^3\cdot3\cdot5\cdot7\cdot11\cdot19
+\]
+is coprime to \(13\), so the lemma proves the claim about closure.
+The group is insoluble because it has the simple quotient \(J_1\).
+Every normal nilpotent subgroup projects trivially to \(J_1\),
+whereas the central \(C_{13}\) is nilpotent. Thus
+\[
+ F(J_1\times C_{13})=C_{13}\ne1.
+\]
+The supplied question imposes no direct-indecomposability restriction.
+Prior related results include the nilpotent product case of
+Chen--Ren and coprime transitive-action decompositions
+\cite{chen-ren,abdollahi-arezoomand-tracey}; the lemma above handles
+all faithful actions of the stated factors.
+The \(J_1\) theorem retains its classification and computational
+dependencies. See \artifact{research/20.1-proof.md}.

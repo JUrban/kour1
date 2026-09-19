@@ -72,10 +72,12 @@ def main():
         run([sys.executable, "scripts/audit_reader_revision.py"],
             full, "portable-reader-preservation.log")
         run([sys.executable, "scripts/audit_v2.py"], full, "portable-v2.log")
+        run([sys.executable, "scripts/audit_v3.py"], full, "portable-v3.log")
         run([sys.executable, "reviews/v2-2026-09-19/check_identities.py"],
             full, "portable-v2-identities.log")
-        assert not (full / 'external-reviews/editors-reply1.md').exists()
-        assert not (arxiv / 'external-reviews/editors-reply1.md').exists()
+        for name in ['editors-reply1.md', 'editors-reply2.md']:
+            assert not (full / 'external-reviews' / name).exists()
+            assert not (arxiv / 'external-reviews' / name).exists()
         run([tectonic, "--only-cached", "--keep-logs", "main.tex"],
             arxiv, "portable-tex.log")
         log = (arxiv / "main.log").read_text()
@@ -102,7 +104,7 @@ def main():
         result = {
             "status": "PASS",
             "checked_utc": datetime.now(timezone.utc).isoformat(),
-            "scope": "Both archives extracted outside the repository; manifests checked; standalone cached TeX build; PDF text equality; portable inventory and change-record checks; mathematical-source preservation; v2 comparison audit and algebraic identities; local editor email excluded; all four ancillary proof checks.",
+            "scope": "Both archives extracted outside the repository; manifests checked; standalone cached TeX build; PDF text equality; portable inventory and versioned change records; mathematical-source preservation with the declared 10.35 correction; v2 comparison and exact identities; v3 counts, correction and statement-image bindings; both local editor emails excluded; all four ancillary proof checks.",
             "arxiv_members_checked": len(arxiv_manifest),
             "full_members_checked": len(full_manifest),
             "pages": int(re.search(r"Pages:\s+(\d+)", info)[1]),

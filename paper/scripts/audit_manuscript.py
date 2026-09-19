@@ -47,6 +47,12 @@ def main():
     assert all(r["final_pass"] == "passed_internal_review" and
                r["final_pass_notes"] and r["outside_reviews"] == 0 and
                r["priority"] == "unestablished" for r in review["entries"])
+    # That ledger records the historical internal review, including 10.35.
+    # Current status must be checked separately rather than silently rewriting it.
+    current = json.loads((PAPER / 'data/current-assessment.json').read_text())
+    assert current['historical_candidates'] == 46
+    assert current['withdrawn_candidates'] == ['10.35']
+    assert current['remaining_candidates'] == 45
     special = {"21.106": "subsec:concise", "21.68": "subsec:semiabelian",
                "20.108": "subsec:holomorph"}
     assert all(special.get(r["problem"], "cand:" + r["problem"]) in labels
@@ -69,7 +75,10 @@ def main():
     result = {
         "status": "PASS", "checked_utc": datetime.now(timezone.utc).isoformat(),
         "scope": "Structure, source/build binding, recorded review completeness, and artifact integrity only; not an automated mathematical proof check.",
-        "candidate_entries": 46, "tex_files": len(paths),
+        "candidate_entries": 46, "historical_candidate_entries": 46,
+        "withdrawn_claims": current['withdrawn_candidates'],
+        "remaining_candidate_entries": current['remaining_candidates'],
+        "tex_files": len(paths),
         "labels": len(labels), "cited_works": len(cites),
         "bibliography_entries": len(bibkeys),
         "ancillary_original_files": 24, "printed_carpet_derivations": 19,

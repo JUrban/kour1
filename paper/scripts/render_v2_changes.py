@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 from make_inventory import tex
+from revision_sources import v2_source
 
 PAPER = Path(__file__).resolve().parents[1]
 REV = PAPER / 'reviews/v2-2026-09-19'
@@ -27,7 +28,7 @@ statement and its replacement or the additional qualification.
         old = (REV / 'baseline-source' / row['before_path']).read_bytes()
         assert hashlib.sha256(old).hexdigest() == row['baseline_sha256']
         assert row['before'] in old.decode(), row['title']
-        assert row['after'] in (PAPER / row['after_path']).read_text(), row['title']
+        assert row['after'] in v2_source(PAPER, row['after_path']).decode(), row['title']
         out.append('\\paragraph{' + tex(row['title']) + '}\n')
         for key, label in [('before', 'Before'), ('after', 'Version 2')]:
             out.append('\\noindent\\textbf{' + label + '.}\n\\begin{quote}\\small\n'

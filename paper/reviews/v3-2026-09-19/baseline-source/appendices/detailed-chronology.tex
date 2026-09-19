@@ -1,0 +1,183 @@
+\section{Detailed chronology and computation record}
+\label{app:chronology}
+
+The chronology has two complementary sources. Commits give dated,
+recoverable states of the repository. The timestamped session messages give an account of what the agent believed it had established at each
+stage. Neither records the instant at which an idea first occurred.
+We therefore describe observable transitions---a proof being saved, a
+certificate being completed, a claim being withdrawn---rather than
+assigning precise discovery times to unobserved reasoning.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/trajectory.pdf}
+\caption{Repository and recorded tool activity during the research window.
+The upper panel counts the 198 commits within the research window;
+the closeout commit 16 seconds later is excluded.
+The middle panel retrospectively follows the first committed principal
+proof file for each family retained on the final candidate list.
+It excludes withdrawn candidates and does not measure the contemporaneous
+candidate count, proof completion, novelty, or outside acceptance.
+The lower panel counts completed command/polling, web, file-change
+and image-view observations in one-hour bins. It excludes context
+compaction and sleep operations; counts are not independent experiments.
+All panels are derived from the supplied CSV measurements.}
+\label{fig:trajectory}
+\end{figure}
+
+\subsection{Selection, short arguments, and early corrections}
+
+The initial plan favored finite counterexamples, explicit constructions,
+linear algebra, and questions that could admit short certificates.
+This was an adaptive search policy over the whole Notebook. It helps
+explain the eventual collection: the agent repeatedly moved to another
+entry when a search became expensive or the required generalization
+remained unclear. A problem's age was not a measure of the time spent on
+it in this experiment, and the initial index was not a promise to attempt
+every entry.
+
+The first retained mathematical lead was \kn{21.106}. Message~95
+(10 September, 21:00:51 UTC) announced a possible formula selecting generators of the infinite cyclic
+center of the integral Heisenberg group; message~152 reported a written
+candidate and local commit at 21:06:04 UTC. Section~\ref{subsec:concise} gives the
+argument. At the same time the agent launched finite screens for
+other questions, including transitive groups, character tables, and
+positive binary words. This pattern continued: short symbolic tasks
+occupied the foreground while finite searches ran in separate processes.
+
+The early graph-symmetry search exposed a substantive validation error.
+For \kn{21.52}, normalizing a permutation representation of inner
+automorphisms did not by itself certify that a permutation of involutions
+came from an automorphism of the original group. Message~653 records
+the replacement of that condition by construction of an actual group
+automorphism and verification of its action on every involution.
+The lesson concerns the mathematical predicate being checked: a correct
+program for a weaker predicate can still give a misleading answer to the
+research question.
+
+Literature searches also changed the accounting. A graded nil-algebra
+construction for \kn{21.132} initially appeared on the candidate list,
+but was later excluded as prior work. For \kn{13.19}, a small explicit
+quotient construction passed exact checks before a 2018 result was
+confirmed to imply the negative answer. Message~1155 explicitly
+removed it from the new-solution count while retaining the construction.
+The longer episode around \kn{17.34} is particularly informative.
+The agent wrote a PBW-based argument and ran thirteen exact controls;
+it first found prior coverage in nilpotency class two, then found a
+strong-amalgamation theorem with the full required scope. Messages~2729
+and~2859 document the intervening increase and subsequent decrease in
+the working candidate count. These are rediscoveries or alternative
+deductions with potential expository value, but they cannot support a
+claim of new priority.
+
+\subsection{Constructions guided by the literature}
+
+Two examples in Section~\ref{sec:examples} illustrate how source reading
+and explicit calculation interacted. For \kn{21.68}, the order-96
+configuration in Kida's work suggested an extension by an abelian
+group that could preserve a nonmonomial character. The resulting
+group has order \(2592\). Its membership in the class of semi-abelian
+groups and its failure to be monomial require different arguments;
+checking only one would not settle the conjecture.
+
+For \kn{20.108}, exceptions in a multiple-holomorph theorem suggested
+a group of order \(605\). The retained proof describes its entire
+automorphism group, its holomorph as explicit permutations, and a
+normalizing permutation whose coset has order four. The source supplied
+a productive place to look; the final certificate does not ask a reader
+to trust a SmallGroups identifier or an unexplained normalizer
+calculation. In both examples the finite checks are useful controls on
+conventions and coordinates, while the displayed construction explains
+why the claimed property holds.
+
+Other entries depended more substantially on imported theorems.
+The constructions for Problems~10.62 and~4.75 share the same geometric
+existence theorem, and the carpet arguments for Problems~19.61 and~19.62
+share structural machinery. The inventory retains separate Notebook
+questions, but they are not independent pieces of evidence about
+discovery ability. The mathematical sections identify these dependencies.
+
+\subsection{A long computation and the meaning of completion}
+
+Problem~20.100 became the largest verification task. A structural
+reduction transformed a statement about arbitrary groups into an exact
+finite problem for each fixed value of \(n\). Small values could then be
+established by certificates of integer relations, without imposing a
+bound on the order of the original group. Messages~6458--6763 distinguish
+the reduction, prototype searches, and completed checks for
+\(n=4,5,6\).
+
+For \(n=7\), generation produced a certificate with \(42{,}891{,}332\)
+nodes. Message~10686 reports its completion and immediately notes that
+verification remained outstanding at 11 September, 11:08:29 UTC.
+Six GAP processes subsequently
+checked the separate parts. The final records account for
+\(786{,}577{,}344\) collision cases and \(5{,}447{,}182{,}055\)
+relation implications; the complete compressed certificate occupies
+\(1{,}271{,}256{,}410\) bytes. The retained full verification took
+approximately 26 hours of elapsed time. A parser restricted to the
+certificate's data grammar was also used, avoiding reliance on
+executing arbitrary certificate text as GAP code.
+
+The last workers were still active on 12 September at 12:45 UTC.
+Message~28901, at 13:10:31 UTC, reports all six workers finished with
+zero exits and a successful aggregate check, while explicitly retaining
+a discrepant exit from the historical launcher. Message~29167 reports
+the committed proof packet at 13:31:41 UTC. These dated observations
+connect the long-running process records to the final mathematical claim.
+
+This distinction between generation and checking matters. Intermediate
+messages report how many nodes had been checked, how many workers were
+still running, and which shards had completed. They do not convert
+partial progress into a full theorem. At the deadline the fixed cases
+\(n=4,5,6,7\) were recorded as established for all eligible groups.
+The general problem for arbitrary \(n\) remained open and contributed
+zero entries to the complete-candidate count.
+
+Several other large searches ended with bounded information. The
+endomorphism-count investigation of \kn{19.20} checked \(91{,}774\)
+nonabelian groups of order at most \(511\), found no equality example,
+and found \(469\) cases contradicting a stronger inequality. The
+character-table screen for \kn{21.113} involved \(9{,}850\) cases:
+\(7{,}573\) had the needed modular tables and \(2{,}277\) did not.
+For \kn{21.99}, all \(4{,}722\) transitive groups of degrees \(2\)
+through \(20\) in the installed catalogue were screened, with a separate
+direct control on \(86\) groups in degrees \(2\) through \(8\).
+The word search associated with \kn{18.43} processed
+\(3{,}933{,}931{,}043\) positive binary necklaces of lengths \(1\)
+through \(36\) without producing an identity candidate. These are
+coverage statements. They do not establish the unrestricted assertions.
+
+\subsection{Late structural results and deadline review}
+
+The later work included structural progress on almost Engel elements
+and \(p\)-Jordan bounds. For Problems~20.89/19.83 the deadline result
+covers all linear groups in characteristic zero and several further
+classes; the unrestricted positive-characteristic question remains
+unresolved. For \kn{21.121}(b), the archive contains bounds for
+soluble finite subgroups, examples with exactly computed exponents,
+and permanence results. The universal proposed bound of three remains
+unproved. These partials illustrate why a single binary solved/unsolved
+label would discard much of the experiment's mathematical output.
+
+Statement checking remained necessary even when a construction was
+correct. For \kn{20.122}, an early treatment of inclusion-minimal
+intersections did not settle the question about intersections of
+minimum order. The final construction addresses the latter condition.
+For \kn{15.76}(b), the retained claim concerns the full varieties of
+fixed derived length, with a material distinction from arbitrary proper
+subvarieties. The fixed representation degree in \kn{10.35} and the
+minimal-polynomial convention in \kn{15.65} are similarly essential
+parts of the claims.
+
+The final review separated statement coverage from deeper proof review.
+All 46 candidate entries received a fresh comparison with the supplied
+PDF; 22 selected candidate proofs received additional late rereading.
+This is not evidence that all 46 underwent a new, exhaustive
+mathematical and literature audit in the final phase. The closeout audit
+also checked \(4{,}231\) file bindings, covering \(2{,}242\) distinct
+files totaling \(2{,}008{,}448{,}358\) bytes, and 92 local links.
+These integrity checks establish that the named artifacts existed and
+matched recorded digests. They do not establish the truth or novelty of
+their contents. The research deadline and the subsequent administrative
+closeout are kept separate in the chronology.

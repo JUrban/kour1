@@ -1,0 +1,26 @@
+--- v2/sections/candidates/10-35.tex
++++ v3/sections/candidates/10-35.tex
+@@ -1 +1 @@
+-\subsection{Residual rationality in a fixed degree: Problem 10.35}
++\subsection{Residual rationality: withdrawal of the claim for 10.35}
+@@ -4 +4,13 @@
+-The same representation degree occurs on both sides of this question.
++\paragraph{Correction in version 3.}
++The claimed resolution of 10.35 is withdrawn. The Notebook asks about
++torsion-free subgroups of \(\GL_n(\overline{\Q})\), with the same
++degree \(n\), whereas the argument below concerns \(\GL_2(\Q)\).
++Evgeny Khukhro identified the misreading on 19 September. In fact the
++displayed torsion-free group already embeds in
++\(\GL_2(\Q(i))\leq\GL_2(\overline{\Q})\), so it has the required
++residual property. We retain the rational-field result as a separate
++observation; it supplies no resolution of the printed question.
++Appendix~\ref{app:statement-correction} records the review failure and
++the subsequent statement audit.
++
++\paragraph{The rational-field observation.}
+@@ -49 +61,2 @@
+-\(a^2=U(2)\). This disproves the required residual property.
++\(a^2=U(2)\). This disproves residuality over \(\Q\) or \(\R\)
++in degree two, but not the property asked for in 10.35.
+@@ -57 +69,0 @@
+-

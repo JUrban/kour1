@@ -16,19 +16,23 @@ The research ran from **10 September 2026, 20:56:46 UTC**, to
 **12 September 2026, 20:56:46 UTC**, with requested local limits of generally
 20 CPU cores and 100 GB RAM.
 
-The final ledger contains **46 complete solution candidates**, covering
-problem entries or specified subparts. The paper also presents partial
+The deadline ledger recorded **46 complete solution candidates**, covering
+problem entries or specified subparts. **Version 3 withdraws the claim for
+10.35, leaving 45 candidates**: the original problem concerns algebraic
+numbers, while our argument concerns rational numbers. The Notebook's
+editor, Evgeny Khukhro, identified the error after both model reviews had
+accepted the entry. The paper also presents partial
 results on nine questions, rediscoveries, deductions from prior work and
 bounded computations. The 46-entry total records the deadline classification;
 it is not a count of established new theorems.
 
 Anthropic's **Claude Opus[1m]**, running through Claude Code, subsequently
-reviewed all 46 entries, verified a majority in detail, and independently
+reviewed all 46 entries, reported verifying a majority in detail, and independently
 reconstructed many finite examples and calculations. The revised paper
 incorporates corrections and a strengthened counterexample, and includes
 the [review correspondence](paper/external-reviews/) verbatim in appendices.
 
-**Version 2 (19 September 2026)** compares eleven entries with contemporary
+The comparison added in **version 2 (19 September 2026)** covers eleven entries with contemporary
 solutions identified by the Notebook's editor. It credits shared arguments,
 different constructions and stronger alternatives, and identifies older
 sources for the qualitative computability result in 16.9. The comparison
@@ -42,6 +46,10 @@ by the same organizers on the same machine and local resource budget.
 **Appendix N** presents the eleven-entry comparison; its
 [review records](paper/reviews/v2-2026-09-19/) include source hashes,
 artifact chronology and new mathematical checks.
+**Appendix O** records the 10.35 withdrawal and the subsequent visual
+statement audit. The [v3 review record](paper/reviews/v3-2026-09-19/)
+includes the rendered Notebook statements for all 46 historical candidates
+and individual scope notes. This audit does not certify the remaining proofs.
 
 ## Research records
 

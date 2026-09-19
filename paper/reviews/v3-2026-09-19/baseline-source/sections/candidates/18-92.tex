@@ -1,0 +1,53 @@
+\subsection{Complete lattices of formations: Problem 18.92}
+\label{cand:18.92}
+
+The question defines a complete lattice of formations as
+an intersection-closed nonempty family with a largest
+member. Joins are internal to that family. Under this
+definition both requested examples follow from prime sets.
+
+Let \(\mathcal P\) be the set of primes and let
+\(\mathcal F_S\) be the finite groups whose order has
+all prime divisors in \(S\subseteq\mathcal P\).
+This is a formation: quotients and finite subdirect
+products introduce no new prime divisor. Moreover
+\[
+ \mathcal F_S\subseteq\mathcal F_T\iff S\subseteq T,\qquad
+ \bigcap_i\mathcal F_{S_i}=\mathcal F_{\cap_iS_i}.
+\]
+The cyclic group of order \(p\) witnesses the reverse
+implication in the first assertion.
+
+For part~(a), take
+\(\Theta=\{\mathcal F_S:S\text{ finite}\}\cup
+\{\mathcal F_{\mathcal P}\}\).
+Its joins are union of prime sets when that union is
+finite and the top otherwise. Every nonbottom element
+fails to be compact. Choose a prime \(q\) in its set
+and enumerate \(\mathcal P\setminus\{q\}\).
+The formations for successive finite initial segments
+have join the top in \(\Theta\), whereas no finite
+subjoin contains the cyclic group of order \(q\).
+The bottom is therefore the only compact element,
+and \(\Theta\) is not algebraic.
+
+For part~(b), use the five formations with prime sets
+\[
+ \varnothing,\quad\{2\},\quad\{2,3\},\quad\{5\},
+ \quad\mathcal P.
+\]
+They are closed under intersections, and their order is
+the pentagon \(N_5\). Explicitly, writing
+\(A=\mathcal F_{\{2\}},B=\mathcal F_{\{2,3\}},
+C=\mathcal F_{\{5\}}\), we have \(A<B\) but
+\[
+ A\vee(C\wedge B)=A,\qquad (A\vee C)\wedge B=B.
+\]
+Thus the lattice is not modular.
+
+Both examples contain the formation of all finite groups
+as top, so the empty-intersection convention causes no
+problem. These statements concern the chosen families;
+they do not assert either property for the full lattice
+of all formations. Source:
+\artifact{research/18.92-proof.md}.

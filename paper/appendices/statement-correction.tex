@@ -1,0 +1,83 @@
+\clearpage
+\section{Version 3: a withdrawn claim and a statement audit}
+\label{app:statement-correction}
+
+\subsection{Problem 10.35 and the correction}
+
+On 19 September 2026, Evgeny Khukhro identified a statement error in
+our claimed answer to 10.35. The supplied Notebook, page~40, asks whether
+every finitely generated torsion-free subgroup of \(\GL_n(\C)\) is
+residually in the class of torsion-free subgroups of
+\(\GL_n(\overline{\Q})\). Our transcription replaced
+\(\overline{\Q}\), the algebraic numbers, by \(\Q\).
+The closure bar is visible in the PDF but absent from its extracted text.
+
+The proposed example cannot refute the printed assertion. Its generators
+\[
+ U(1)=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad
+ T=\operatorname{diag}(2i,2)
+\]
+lie in \(\GL_2(\Q(i))\). The generated group is torsion-free,
+as proved in Section~\ref{cand:10.35}, and already embeds in a permitted
+target. Its inclusion therefore separates every nonidentity element.
+The matrix lemma used for the rational-field obstruction assumes that
+the field contains no square root of \(-1\); it does not apply over
+\(\overline{\Q}\).
+
+We withdraw the claimed resolution and retain the valid result over
+\(\Q\) and \(\R\) as a separate observation. This is not a partial
+solution of 10.35. The elementary fact that a nonscalar two-dimensional
+matrix has a commutative centralizer algebra remains valid over any
+field. Its use in the characteristic-two construction for 20.90 is
+unaffected; that argument does not use the failed application to 10.35.
+
+The error passed two stages of review. Codex's original statement audit
+incorrectly asserted that the supplied page had been inspected and that
+neither field had a closure bar. Claude's report subsequently accepted
+the 10.35 entry and checked its matrix lemma. Verifying the lemma did
+not verify that its field hypothesis matched the question. The reports
+remain reproduced as historical documents, with this correction taking
+precedence over their acceptance of the entry.
+
+\subsection{What was rechecked}
+
+Following the correction, Codex inspected rendered excerpts for all
+46 historical candidate statements and compared their hypotheses,
+quantifiers and counted subparts with the manuscript's stated scope.
+The record in \artifact{paper/reviews/v3-2026-09-19/} contains a separate
+assessment for each entry, the source PDF hash, page coordinates and
+the rendered statements. It preserves the v2 source baseline and PDF,
+and the original erroneous audit as evidence of the review failure.
+
+This pass found no further transcription mismatch requiring withdrawal.
+Existing scope qualifications remain explicit. For example, 16.28(a)
+allows a reducible closed set and a field of positive characteristic
+with a transcendental element; 15.65 defines separability by the minimal
+polynomial; 18.92 defines joins within the chosen family of formations;
+and 20.92(a) specifies a particular brace average. Convention-dependent
+entries, including 9.4, 13.42, 14.26 and 16.20, retain their cited
+definitions and stated limits. The audit is a check of statement fidelity,
+not a new verification of every proof, its imported theorems or its novelty.
+
+Khukhro described his own reading as cursory and proposed listing the
+submissions as unverified AI solutions. We credit the specific correction;
+we do not treat that communication as human specialist acceptance of
+the remaining portfolio. It also does not change the separately reported
+specialist confirmations of alternative papers discussed in Appendix~\ref{app:contemporary-comparison}.
+
+\subsection{Counts and interpretation}
+
+The frozen ledger retains 46 candidates submitted at the deadline.
+The current assessment is one withdrawn claim and 45 remaining candidates.
+These are distinct from counts of correct new theorems or independently
+discovered solutions. The eleven contemporary overlaps studied in
+version~2 remain credited; 10.35 is not among them. The abstract,
+introduction, inventory and review discussion now state the withdrawal.
+Appendix~\ref{app:review-changes} records the exact v3 changes.
+
+The correction limits the conclusions drawn from model agreement.
+The independently reconstructed calculations remain evidence for their
+stated claims, but neither their success nor agreement between models
+ensures that the original problem was transcribed correctly. A future
+evaluation should record statement fidelity, proof checking and novelty
+separately, with the original typeset question available at each stage.

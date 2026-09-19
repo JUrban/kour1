@@ -1,6 +1,6 @@
 {
   "date": "2026-09-19",
-  "scope": "V2 annotations of contemporary overlaps and prior ingredients; deadline classifications unchanged. All eleven overlaps are compared in Appendix N. Other entries are not thereby established as new.",
+  "scope": "V3 current assessment: 46 historical deadline candidates, one withdrawn claim (10.35), 45 remaining candidates. V2 attribution and convention notes retained; neither count certifies correctness or novelty.",
   "entries": {
     "21.106": {
       "covered_parts": "all",
@@ -47,11 +47,12 @@
       "selected_imported_dependencies": []
     },
     "10.35": {
-      "covered_parts": "all",
-      "review_note": "",
+      "covered_parts": "none; historical claim withdrawn",
+      "review_note": "WITHDRAWN in v3: the question uses algebraic numbers. Our example already embeds over Q(i); only the rational-field observation survives.",
       "prior_work_status": "priority unestablished",
-      "convention_note": "",
-      "selected_imported_dependencies": []
+      "convention_note": "The printed target field is the algebraic closure of Q; the original transcription lost the bar.",
+      "selected_imported_dependencies": [],
+      "current_status": "withdrawn_wrong_problem"
     },
     "16.28": {
       "covered_parts": "a",

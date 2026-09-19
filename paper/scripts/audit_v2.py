@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 from public_review_files import public_review_files
 from render_v2_changes import render
+from revision_sources import preserved_mathematical_source, v2_source
 
 PAPER = Path(__file__).resolve().parents[1]
 REV = PAPER / 'reviews/v2-2026-09-19'
@@ -24,7 +25,7 @@ def main():
     preserved = []
     for name, row in records.items():
         if re.match(r'sections/(candidates|partials|prior)/', name):
-            assert sha(PAPER / name) == row['sha256'], name
+            assert hashlib.sha256(preserved_mathematical_source(PAPER, name)).hexdigest() == row['sha256'], name
             preserved.append(name)
     assert len(preserved) == 50
     raw = (PAPER / 'sections/representative.tex').read_text()
@@ -82,13 +83,19 @@ def main():
         assert sha(REV / row['output']) == row['output_sha256']
         assert row['exit_code'] == 0
     assert (PAPER / 'appendices/v2-changes.tex').read_text() == render()
-    assert r'\date{Version 2 --- 19 September 2026}' in (PAPER / 'main.tex').read_text()
+    assert r'\date{Version 2 --- 19 September 2026}' in v2_source(PAPER, 'main.tex').decode()
     assert PAPER / 'external-reviews/editors-reply1.md' not in public_review_files(PAPER)
     result = {'status': 'PASS', 'scope': 'V2 coverage, source and check bindings, version identity and preservation; not an automated theorem or priority verification.',
               'compared_entries': len(rows), 'doi_records': len(sources), 'unchanged_mathematical_sources': len(preserved),
               'representative_proofs_preserved': True, 'previous_pdf_preserved': True,
               'raw_editor_email_excluded_from_bundle': True}
-    (REV / 'audit.json').write_text(json.dumps(result, indent=2) + '\n')
+    dest = REV / 'audit.json'
+    if (PAPER / 'reviews/v3-2026-09-19/source-change.json').exists():
+        result['unchanged_mathematical_sources'] = 49
+        result['declared_v3_corrections'] = ['10.35 withdrawal; preserved v2 source checked separately']
+        result['scope'] += ' V2 change excerpts and version date checked against the preserved v2 snapshot.'
+        dest = PAPER / 'reviews/v3-2026-09-19/v2-preservation-audit.json'
+    dest.write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
 
 

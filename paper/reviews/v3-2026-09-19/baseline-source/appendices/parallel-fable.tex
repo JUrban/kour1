@@ -1,0 +1,200 @@
+\clearpage
+\section{The parallel Fable experiment: preliminary review and comparison}
+\label{app:parallel-fable}
+
+\subsection{Scope and common setting}
+
+Kinyon and Urban also ran Anthropic's Claude Fable~5.1 through Claude
+Code on 13--15 September 2026~\cite{fable-kourovka}. The organizers
+confirm that this used the same machine and experimental conditions:
+the Kourovka Notebook, a 48-hour task, access to GAP and further software,
+and requested local limits of generally 20 CPU cores and 100\,GB RAM.
+This was a separate research run, later than the Codex run of
+10--12 September. Fable is distinct from the Claude Opus[1m] agent that
+reviewed this paper.
+
+The comparison below was prepared by Codex on 17 September from the
+29-page Fable paper and selected research reports and programs at
+\href{https://github.com/JUrban/kour1cl/tree/290fc829d2be01cab8a1784d006bfc0250d7f11c}{repository commit \texttt{290fc829d2be}}.
+It combines a preliminary reading of the arguments with three targeted
+computational checks. It is smaller in scope than the external review
+reported in Section~\ref{sec:external-review}; it does not establish
+priority or certify the whole Fable portfolio. Configuration and large
+search totals below are taken from that paper, rather than from a new
+audit of its complete session.
+
+\begin{center}\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.21\textwidth}>{\raggedright\arraybackslash}p{0.35\textwidth}>{\raggedright\arraybackslash}p{0.35\textwidth}@{}}
+\toprule
+ & Codex experiment & Fable experiment\\\midrule
+Research window (UTC) & 10 September 20:56 to 12 September 20:56 & 13 September 08:03 to 15 September 08:03\\[3pt]
+Agent and harness & GPT-6 Astra; Codex; \texttt{xhigh} & Claude Fable~5.1; Claude Code~2.1.270; \texttt{xhigh} initially, then \texttt{high}\\[3pt]
+LM delegation & One LM research agent & Six sub-agent calls for Notebook triage\\[3pt]
+Reported answer entries & 46 deadline candidates; prior-work deductions listed separately & Five answer entries, including the main question of 2.78\\[3pt]
+Further outcomes & Nine selected partial-result questions and bounded searches & Seven partial-result topics and a table of about 45 bounded verifications\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The bounded-verification table overlaps the Fable partial-result list,
+so those counts should not be added. Nor are the two answer totals
+normalized scores: 13.19 and 16.60 appear among Fable's five but outside
+our 46, under prior-work status. The common local budget also does not
+equate model inference expenditure, reasoning settings or delegation.
+Fable records final consolidation at 09:44 on 15 September, about
+101 minutes after its deadline, and reports that it added no new
+mathematics then; that closeout included further verification and table
+generation. A strict deadline comparison would need to separate those
+activities in both archives.
+
+\subsection{Reading the five answer entries}
+
+\paragraph{21.32: finite derived-subgroup witnesses.}
+Fable gives an explicit bound for a finite witness to \(G\cong H'\):
+\[
+ |H|\le |\Aut G|\,|Z(G)|^2
+       \bigl(2\exp Z(G)\bigr)^{2\lceil\log_2|G|\rceil}.
+\]
+The argument bounds the index of a central subgroup and then replaces
+that subgroup by its intersection with the derived subgroup. The
+important step is the latter replacement: the universal coefficient
+sequence and a Baer-sum argument preserve the isomorphism type of the
+derived subgroup, not merely its order. The supplied proof addresses
+this point explicitly and appears sound on this reading. With a
+multiplication-table input, the bound yields decidability and a
+nondeterministic quasi-polynomial upper bound. We have not undertaken
+a literature search sufficient to determine priority for this result.
+
+\paragraph{2.78: finiteness of two sets of group-theoretic numbers.}
+Let \(f(G)\) count the subgroup orders that support a nonnormal subgroup.
+Fable's construction gives
+\[
+ f\bigl(A_5\times M_{p^n}\times C_{p^r}\bigr)=7n+9r+9,
+ \qquad p\ge7,\quad n\ge3,\quad r\ge0,
+\]
+where \(M_{p^n}\) is the modular \(p\)-group in its presentation.
+The coprime-product formula and the subgroup argument for this family
+give a convincing proof of the claimed finiteness. Our GAP spot checks
+confirmed the family invariant in seven small parameter choices and
+the subgroup-order count for \(A_5\).
+
+The stated threshold \(k\ge86\) can be sharpened to \(k\ge78\)
+without changing the construction. Taking \(n=3,\ldots,11\), the base
+values \(7n+9\) are
+\[
+30,37,44,51,58,65,72,79,86.
+\]
+They represent every residue class modulo nine. In each class the
+largest integer below its base value is at most \(86-9=77\), and
+adding \(9r\) gives every subsequent value. Thus every \(k\ge78\)
+occurs for a nonsoluble, nonsimple group. This small strengthening was
+noticed during the present comparison. The further question in 2.78
+about composite nonsoluble numbers, and the distribution question
+3.57, remain open in the Fable report. Its additional classification
+of the values \(0,\ldots,8\) uses deeper group theory and was not
+independently verified in this review.
+
+One statement in that classification needs the hypothesis that \(G\)
+is nonsoluble: the assertion \(f(G)=7\) if and only if \(G\cong A_5\)
+is false without it. The soluble dihedral group of order 512 has
+nonnormal subgroups of exactly the seven orders
+\(2,4,8,16,32,64,128\), as also confirmed by our check.
+The Fable proof already assumes nonsolubility at this step; adding
+it to the statement preserves the intended conclusion about
+absolutely simple numbers.
+
+\paragraph{18.46: a sharp square-root overgroup bound.}
+The dihedral group \(D_8\) of order eight needs an overgroup of order
+at least \(128=2|D_8|^2\) in which all its elements are squares.
+We independently programmed a search for generators \(r,s\) with
+\(|r|=4\), \(|s|=2\), \(r^s=r^{-1}\) and all eight elements of
+\(\langle r,s\rangle\) in the square set. Unlike Fable's subgroup
+enumeration, this uses element conjugacy classes and multiplication.
+It excludes all 880 catalogue groups whose orders are
+multiples of eight below 128, reproduces exactly the 14 successful
+groups of order 128, and checks the witness \(D_8\wr C_2\).
+This confirms the finite calculation, conditional on GAP and the
+SmallGroups catalogue; the two implementations share that dependency.
+The diagonal embedding in the wreath product also proves the upper
+bound directly, since \(((g,1)\sigma)^2=(g,g)\), where \(\sigma\)
+interchanges the two factors.
+
+\paragraph{13.19: subdirect quotients.}
+Fable constructs a group \(Q\) of order 512, with a normal subgroup
+\(H\) of order 64 and three normal subgroups \(N_i\) of order 16,
+such that \(\bigcap_iN_i=1\), \(HN_i=Q\) and \(Q/H\cong D_8\).
+We rebuilt the multiplication from its bilinear formula over \(\F_2\)
+in a separate Python program, checked the cocycle identity on all
+\(64^3\) triples, and verified these subgroup and quotient properties.
+Our example in Section~\ref{prior:13.19} has smaller \(Q\), of order
+256, but uses four factors; Fable's uses three. These are different
+size tradeoffs.
+
+Both papers also give universal constructions for finite \(p\)-group
+quotients. Fable's tagged-generator argument uses \(c+1\) factors for
+a quotient of nilpotency class \(c\), whereas ours uses \(|P|\)
+factors for a quotient \(P\). That factor bound is a useful additional
+feature. The negative answer to the original regularity question
+already follows from Kearnes--Mayr--Ru\v{s}kuc
+\cite{kearnes-mayr-ruskuc}, as explained in
+Section~\ref{prior:13.19}; this prior implication does not settle
+the novelty of Fable's particular construction or factor bound.
+
+\paragraph{16.60: the character-degree bound.}
+The reduction to \(C_G(\alpha^2)\), followed by the twisted
+Frobenius--Schur formula and monotonicity of the sum of character
+degrees on subgroups, is a short, sound argument. An affirmative
+answer was already stated in May 2026 by
+Yerrapati--Dixit--Shukla~\cite[Theorem~3.1]{yerrapati-dixit-shukla}.
+This is a rediscovery at the level of the problem's answer, with a
+proof worth retaining; see also Section~\ref{prior:16.60}.
+
+\subsection{Overlap, differences and useful corrections}
+
+The overlapping questions show progress in both directions.
+For 19.56, Fable excludes minimal simple groups and leaves a Frattini
+lifting step; our proof in Section~\ref{cand:19.56} handles the
+general finite-group question. For 20.21, Fable reports the stronger
+lower bound \(|G|\ge6144\), compared with our deadline bound
+\(|G|\ge3072\). We read its structural reductions but did not rerun
+the large catalogue exclusions behind the stronger bound. For 20.100,
+its finite search covers \(n=4\) in 85 groups of order at most 300
+coprime to 30; Section~\ref{partial:20.100} gives the torsion-free
+argument, the finite abelian reduction and certificates for
+\(n=4,5,6,7\), with the previously stated public-artifact limitation
+for \(n=7\). Fable also develops substantial partial work on 16.14
+and 20.37 that is not part of our selected mathematical portfolio.
+
+Two small corrections would improve the Fable exposition. Its
+Appendix~B definition of \(L(G)\) for 20.37 should include
+\(|A||B|=|G|\); without that condition, taking \(B=G\) makes the
+definition trivial. In the proof for 21.111, the normalizer of a
+cyclic subgroup generated by a unipotent element is \emph{contained
+in} the indicated Borel subgroup, generally not equal to it. The
+containment suffices for the subsequent involution argument. These
+are local corrections, rather than objections to the stated results.
+
+The two archives illustrate complementary research choices under
+the same local constraints: Fable emphasizes finite computations and
+constructions, while Codex's larger candidate list includes more
+structural arguments and reuse of literature. The Fable results on
+21.32, 2.78 and 18.46 deserve further review on their own merits.
+A useful comparison should match exact problem parts, prior status
+and verification scope, rather than interpret the headline totals
+as a model ranking. Neither the shared organizers nor this later
+cross-reading establishes a blind experimental comparison.
+
+\paragraph{Version 2 attribution update.}
+The eleven overlaps with further contemporary papers examined in
+Appendix~\ref{app:contemporary-comparison} concern our deadline portfolio.
+They are additional to the Fable comparison above. The figure 46 in
+this appendix retains its historical meaning; it is not a count of new
+solutions to compare with Fable's five answer entries. The checks and
+assessments above remain those of the 17 September comparison.
+
+The pinned source manifest, new check programs and their outputs
+accompany this paper in
+\begin{center}\small
+\artifact{paper/reviews/parallel-fable-2026-09-17/}.
+\end{center}
+The large Fable searches are available through its referenced repository.

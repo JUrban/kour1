@@ -1,0 +1,182 @@
+\subsection{21.121(b): sharp soluble bounds and permanence}
+\label{partial:jordan}
+
+Use the definition of admissible \(p\)-Jordan exponents from
+Section~\ref{cand:21.121}. The unresolved part asks for a universal
+upper bound three. The following arguments prove exponent two
+under a soluble-subgroup hypothesis, give a nonsoluble example
+with exact exponent strictly between two and three, and preserve
+the entire set of admissible exponents under specified operations.
+The definition and prior general framework are those in
+\cite{hu-jordan,chen-shramov}.
+
+\paragraph{A characteristic abelian subgroup lemma.}
+If a finite group \(X\) has an abelian subgroup of index at most
+\(j\), it has a characteristic abelian subgroup of index at most
+\(j^2\). Recall the Chermak--Delgado argument in this form.
+For \(H\le X\) put \(m(H)=|H||C_X(H)|\).
+The product-size formula and centralizer inclusions give
+\[
+ m(H)m(K)\le m(H\cap K)m(\langle H,K\rangle).
+\]
+Thus the intersection \(D\) of all subgroups of maximum measure
+also has maximum measure and is characteristic. Its centralizer
+has maximum measure as well, since \(D\subseteq C_X(C_X(D))\).
+Minimality of the intersection implies \(D\subseteq C_X(D)\),
+so \(D\) is abelian. For the given abelian \(A\),
+\[
+ |X||D|\ge m(D)\ge m(A)\ge |A|^2\ge |X|^2/j^2,
+\]
+proving the bound. The lemma does not force \(D\subseteq A\).
+It will be applied inside a \(p'\)-group when prime-to-\(p\)
+order is required.
+
+An abelian \(p'\)-subgroup \(C\le\Aut(P)\), for a nontrivial
+finite \(p\)-group \(P\), satisfies
+\[
+ |C|\le |P/\Phi(P)|-1.
+\]
+Indeed the kernel of \(\Aut(P)\to\Aut(P/\Phi(P))\) is a \(p\)-group:
+it acts freely on the \(|\Phi(P)|^d\) tuples lifting a fixed
+basis of \(P/\Phi(P)\), because each lift tuple generates \(P\).
+Thus \(C\) acts faithfully on \(\F_p^d\). Complete reducibility
+and commutativity embed it in a product of multiplicative groups
+of finite fields of orders \(p^{d_i}\), with \(\sum d_i=d\).
+Their orders have product at most \(p^d-1\).
+
+\paragraph{The soluble theorem.}
+Suppose every finite \(p'\)-subgroup of \(\Gamma\) has a normal
+abelian subgroup of index at most \(J\), and every finite
+subgroup of \(\Gamma\) is soluble. For each finite \(G\le\Gamma\)
+there is a characteristic abelian \(p'\)-subgroup \(B\) with
+\[
+ [G:B]\le J^3|G_{(p)}|^2.
+\]
+First let \(R\ne1\) be finite soluble with \(O_{p'}(R)=1\).
+Its Fitting subgroup \(F(R)\ne1\) is a \(p\)-group and
+\(C_R(F(R))\subseteq F(R)\).
+For the latter standard fact, if the centralizer modulo \(Z(F(R))\)
+were nontrivial, choose a minimal normal elementary abelian
+subgroup there. Its preimage is a normal class-two nilpotent
+subgroup strictly exceeding the centralizer's intersection with
+\(F(R)\), contradicting the Fitting theorem.
+A Hall \(p'\)-subgroup \(H\) therefore acts faithfully on \(F(R)\).
+Choose \(A\lhd H\) abelian of index at most \(J\) and apply the
+coprime-action bound:
+\[
+ |R|=|R_{(p)}||H|
+ \le J|R_{(p)}|(|R_{(p)}|-1).
+\]
+Hall-subgroup existence here is the soluble Hall theorem,
+obtainable by induction with Schur--Zassenhaus.
+
+For general \(G\), set \(N=O_{p'}(G)\) and \(R=G/N\).
+Then \(O_{p'}(R)=1\); the same \(J\) works for its \(p'\)-subgroups,
+whose full preimages are \(p'\)-groups. The characteristic lemma
+gives \(B\mathrel{\mathrm{char}} N\) abelian with \([N:B]\le J^2\).
+Since \(N\mathrel{\mathrm{char}} G\), also \(B\mathrel{\mathrm{char}} G\), and the preceding estimate
+proves the assertion, with \(R=1\) handled directly.
+If every finite subgroup instead has a soluble subgroup of
+index at most \(d\), take its core, of index at most \(d!\).
+The bound becomes \(d!J^3|G_{(p)}|^2\), with \(B\) normal in \(G\).
+
+When every finite subgroup has normal Sylow \(p\)-subgroup \(P\),
+a sharper bound is available without solubility.
+Write \(G=P\rtimes H\) by Schur--Zassenhaus, choose
+\(A\lhd H\) abelian with \([H:A]\le J\), and put \(B=C_A(P)\).
+Both \(P\) and \(H\) normalize \(B\), so \(B\lhd G\).
+For \(P\ne1\),
+\[
+ [G:B]\le J|P|(|P/\Phi(P)|-1)<J|P|^2;
+\]
+for \(P=1\), use \(A\). Exponent two is sharp for every \(p\):
+the locally finite affine group \(\operatorname{AGL}_1(\overline{\F}_p)\)
+has these hypotheses with \(J=1\). Its subgroups
+\(\operatorname{AGL}_1(\F_q)\), \(q=p^n\), have order \(q(q-1)\)
+and no nontrivial normal \(p'\)-subgroup.
+Such a subgroup would centralize the normal translations, whose
+centralizer is the translation group itself.
+Hence their least normal abelian \(p'\)-indices are \(q(q-1)\),
+excluding every exponent less than two.
+
+\paragraph{An exact nonsoluble exponent.}
+Let \(\Gamma=\bigoplus_{\mathbb N}A_5\), the finite-support direct
+product, and \(\rho=\log(60)/\log(4)\).
+Then its \(2\)-Jordan exponent is exactly \(\rho\), attained with
+constant one. For a subgroup \(H\le A_5^n\), separate coordinates
+with full projection from those with proper projection.
+The first projection \(T\) is a product of diagonal simple
+factors, hence \(A_5^r\); induction proves this by projecting off
+the last coordinate, whose kernel is either \(A_5\) or trivial.
+In the latter case a surjection \(A_5^r\to A_5\) is supported
+on exactly one factor because its factor images commute and
+are normal. The second projection \(B\) is soluble, since
+all proper subgroups of \(A_5\) are soluble.
+Goursat's argument gives a common quotient of \(T\) and \(B\);
+it is perfect and soluble, hence trivial. Thus \(H=T\times B\).
+Every odd-order subgroup of \(B\) is abelian, since its coordinate
+projections are cyclic subgroups of orders \(1,3,5\).
+The soluble theorem with \(J=1\) gives a normal abelian odd-order
+\(D\le B\) of index at most \(|B_{(2)}|^2\). Therefore
+\[
+ [H:1\times D]\le60^r|B_{(2)}|^2
+ \le(4^r|B_{(2)}|)^\rho=|H_{(2)}|^\rho.
+\]
+Every finite subgroup of \(\Gamma\) has finite support, so this
+is a uniform bound. Full powers \(A_5^r\) have no nontrivial
+abelian normal subgroup and exclude every smaller exponent.
+Since \(16<60<64\), one has \(2<\rho<3\).
+This example is not virtually soluble: a soluble subgroup of
+\(A_5^r\) has index at least \(5^r\).
+
+\paragraph{Preserving exponents.}
+Suppose \(e\) is admissible for \(\Gamma\) with constant \(J\).
+For any finite \(G\le\Gamma\), apply the characteristic lemma
+inside \(N=O_{p'}(G)\). The original abelian normal subgroup
+lies in \(N\), giving \([G:N]\le J|G_{(p)}|^e\), and the
+\(p'\)-subgroup bound gives a characteristic abelian \(D\le N\)
+of index at most \(J^2\). Thus
+\[
+ [G:D]\le J^3|G_{(p)}|^e.
+\]
+Replacing normal by characteristic in the definition does not
+change its admissible exponents or attainment.
+If \(\Lambda\lhd\Gamma\) and finite subgroups of
+\(\Gamma/\Lambda\) have order at most \(b\), apply this form
+to \(G\cap\Lambda\); its characteristic subgroup is normal in
+\(G\). For a real \(e\), the constant
+\(bJ^3\max(1,b^{-e})\) works in \(\Gamma\).
+Restriction gives the reverse implication. Taking a core proves
+the same invariance for any finite-index subgroup.
+
+More generally, assume a fixed generalized \(p\)-Jordan constant
+\(J_0\) for \(\Gamma\), and let \(N\lhd\Gamma\) be finite.
+Then \(\Gamma\) and \(\Gamma/N\) have exactly the same admissible
+exponents. Downward passage uses finite full preimages.
+For upward passage, take finite \(G\le\Gamma\), \(K=G\cap N\),
+and the preimage \(M\) of a normal abelian \(p'\)-subgroup
+in \(G/K\). Put \(C=C_M(K)\). It is normal in \(G\),
+\([M:C]\le|N|!\), and \(C'\subseteq K\subseteq C_G(C)\);
+so \(C\) has class at most two.
+The soluble theorem supplies \(D\mathrel{\mathrm{char}} C\), abelian of \(p'\)-order,
+with \([C:D]\le J_0^3|K_{(p)}|^2\).
+If the quotient bound has constant \(J\), then
+\[
+ [G:D]\le
+ JJ_0^3|N|!\max(1,|N|^{2-e})\,|G_{(p)}|^e.
+\]
+This preserves the exponent and its attainment.
+For a finite normal \(p\)-kernel the generalized hypothesis
+follows from the quotient bound, since \(p'\)-subgroups inject
+into the quotient. For other finite kernels it is necessary:
+the infinite extraspecial group at a prime \(q\ne p\) has
+central kernel \(C_q\) and abelian quotient, but contains finite
+extraspecial groups with unbounded least abelian index.
+
+These results leave the unrestricted bound three unresolved.
+The full arguments and constants are in
+\artifact{research/21.121b-soluble-proof.md},
+\artifact{research/21.121b-normal-sylow-proof.md},
+\artifact{research/21.121b-a5-proof.md},
+\artifact{research/21.121-permanence-proof.md}, and
+\artifact{research/21.121-finite-kernels.md}.

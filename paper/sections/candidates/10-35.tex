@@ -1,7 +1,19 @@
-\subsection{Residual rationality in a fixed degree: Problem 10.35}
+\subsection{Residual rationality: withdrawal of the claim for 10.35}
 \label{cand:10.35}
 
-The same representation degree occurs on both sides of this question.
+\paragraph{Correction in version 3.}
+The claimed resolution of 10.35 is withdrawn. The Notebook asks about
+torsion-free subgroups of \(\GL_n(\overline{\Q})\), with the same
+degree \(n\), whereas the argument below concerns \(\GL_2(\Q)\).
+Evgeny Khukhro identified the misreading on 19 September. In fact the
+displayed torsion-free group already embeds in
+\(\GL_2(\Q(i))\leq\GL_2(\overline{\Q})\), so it has the required
+residual property. We retain the rational-field result as a separate
+observation; it supplies no resolution of the printed question.
+Appendix~\ref{app:statement-correction} records the review failure and
+the subsequent statement audit.
+
+\paragraph{The rational-field observation.}
 Consider
 \[
  U(z)=\begin{pmatrix}1&z\\0&1\end{pmatrix},\qquad
@@ -46,7 +58,8 @@ Put \(a=U(1)\). The relations of the lemma hold for \(a,T\)
 in \(G\). Consequently every homomorphism
 \(\phi:G\to\GL_2(\Q)\), and even every homomorphism into
 \(\GL_2(\mathbb R)\), kills the fixed nonidentity element
-\(a^2=U(2)\). This disproves the required residual property.
+\(a^2=U(2)\). This disproves residuality over \(\Q\) or \(\R\)
+in degree two, but not the property asked for in 10.35.
 If the image is torsion-free it kills \(a\) itself, and hence
 the whole normal subgroup \(U(\Z[i])\).
 The common scalar factor in \(T\) is essential to
@@ -54,4 +67,3 @@ torsion-freeness: \(T^4=16I\). The example does embed in
 \(\GL_3(\Q)\), so it does not address a version allowing the
 target degree to increase. Source:
 \artifact{research/10.35-proof.md}.
-

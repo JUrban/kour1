@@ -1,0 +1,57 @@
+\subsection{Residual rationality in a fixed degree: Problem 10.35}
+\label{cand:10.35}
+
+The same representation degree occurs on both sides of this question.
+Consider
+\[
+ U(z)=\begin{pmatrix}1&z\\0&1\end{pmatrix},\qquad
+ T=\operatorname{diag}(2i,2),\qquad
+ G=\langle U(1),T\rangle\leq\GL_2(\C).
+\]
+Since \(TU(z)T^{-1}=U(iz)\), its unique normal forms are
+\(U(z)T^k\), \(z\in\Z[i]\), \(k\in\Z\). Uniqueness follows
+from the lower diagonal entry \(2^k\) and then the upper-right
+entry. This is \(\Z^2\rtimes\Z\), with the generator acting
+by a quarter turn, and is torsion-free because its kernel
+\(\Z^2\) and quotient \(\Z\) are torsion-free.
+
+\begin{lemma}
+Let \(F\) have characteristic zero and contain no square root
+of \(-1\). If \(X,Y\in\GL_2(F)\) satisfy
+\[
+ [X,YXY^{-1}]=I,\qquad Y^2XY^{-2}=X^{-1},
+\]
+then \(X^2=I\).
+\end{lemma}
+\begin{proof}
+Assume \(X^2\ne I\). A scalar \(X\) contradicts the second
+relation, so \(X\) is nonscalar. Conjugacy to its inverse gives
+\(\det(X)^2=1\). If \(\det(X)=-1\), equality of traces gives
+\(\tr X=0\), and Cayley--Hamilton gives \(X^2=I\). Thus
+\(\det(X)=1\) and \(X^{-1}=(\tr X)I-X\).
+
+The centralizer algebra of a nonscalar \(2\)-by-\(2\) matrix
+is \(E=F[I,X]\). Indeed, a vector \(v\) with \(v,Xv\)
+independent is cyclic, and a commuting operator is determined
+by its value on \(v\). Now \(YXY^{-1}\) is a nonscalar member
+of \(E\), so it too generates \(E\) with \(I\).
+Conjugation by \(Y\) therefore normalizes \(E\) and fixes
+its scalar subspace. On the one-dimensional quotient \(E/FI\)
+it acts by a scalar \(q\in F^\times\). Its square sends the
+nonzero class of \(X\) to its negative, so \(q^2=-1\),
+a contradiction.
+\end{proof}
+
+Put \(a=U(1)\). The relations of the lemma hold for \(a,T\)
+in \(G\). Consequently every homomorphism
+\(\phi:G\to\GL_2(\Q)\), and even every homomorphism into
+\(\GL_2(\mathbb R)\), kills the fixed nonidentity element
+\(a^2=U(2)\). This disproves the required residual property.
+If the image is torsion-free it kills \(a\) itself, and hence
+the whole normal subgroup \(U(\Z[i])\).
+The common scalar factor in \(T\) is essential to
+torsion-freeness: \(T^4=16I\). The example does embed in
+\(\GL_3(\Q)\), so it does not address a version allowing the
+target degree to increase. Source:
+\artifact{research/10.35-proof.md}.
+

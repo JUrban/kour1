@@ -24,6 +24,7 @@ def main():
     subprocess.run(command, cwd=ROOT, check=True)
     subprocess.run([sys.executable, str(PAPER / "scripts/render_review_changes.py"), "--check"], cwd=ROOT, check=True)
     subprocess.run([sys.executable, str(PAPER / "scripts/render_v2_changes.py"), "--check"], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(PAPER / "scripts/render_v3_changes.py"), "--check"], cwd=ROOT, check=True)
     correspondence = json.loads((PAPER / "external-reviews/manifest.json").read_text())
     for record in correspondence["documents"]:
         for path_key, hash_key in [("path", "sha256"), ("rendered_path", "rendered_sha256")]:

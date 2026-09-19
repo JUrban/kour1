@@ -1,0 +1,124 @@
+\subsection{15.76(b): automorphisms of categories of free soluble groups}
+\label{cand:15.76}
+Let \(\mathcal S_d\) be the full variety of groups of derived length
+at most \(d\ge1\). Every automorphism of its category of finite-rank
+free groups is naturally isomorphic to the identity.
+This includes the full metabelian variety. It does not assert the same
+for every proper subvariety of soluble groups: the proper metabelian
+subvariety of exponent four studied by Fernandes--Tsurkov provides a counterexample
+\cite{fernandes-tsurkov}.
+The reduction of category automorphisms to verbal operations is an
+established method, used in the nilpotent predecessor
+\cite{tsurkov-nilpotent}. The additional step here is the affine
+coefficient induction for the full soluble varieties.
+
+We first recall the affine coefficient model. For an absolutely free
+group \(F=F(x_1,\ldots,x_n)\), a normal subgroup \(N\), and \(Q=F/N\),
+map \(x_i\) to \((\bar x_i,e_i)\) in
+\[
+ Q\ltimes\Z[Q]^n,\qquad(q,U)(r,V)=(qr,U+qV).
+\]
+Its kernel is \([N,N]\). Indeed the covering graph of the rose
+corresponding to \(N\) has vertices \(Q\) and edges
+\(q\to q\bar x_i\). The two affine coordinates of a word are its
+endpoint and signed integral edge chain. A loop has zero chain
+exactly when its class in the first homology of this graph is zero,
+which is its image in \(N/[N,N]\).
+Finite support makes the argument valid for infinite covering graphs.
+
+For a word \(w(x,y)\), write its affine value as
+\[
+ w((a,U),(b,V))=(w(a,b),f(a,b)U+g(a,b)V).
+\]
+The boundary of its edge chain gives the ordered group-ring identity
+\[
+ f(a,b)(a-1)+g(a,b)(b-1)=w(a,b)-1.                 \tag{b}
+\]
+We prove by induction on \(d\) that a normalized associative word in
+\(\mathcal S_d\), meaning
+\[
+ w(x,1)=x,\quad w(1,y)=y,\quad
+ w(w(x,y),z)=w(x,w(y,z)),
+\]
+must equal \(xy\) or \(yx\) as an identity.
+For \(d=1\), exponent sums suffice.
+For \(d\ge2\), induction and, if necessary, reversal of the two
+arguments allow us to assume \(w(a,b)=ab\) in \(\mathcal S_{d-1}\).
+Let \(Q\) be free in that variety on \(a,b,c\).
+The affine group \(Q\ltimes\Z[Q]^3\) belongs to \(\mathcal S_d\).
+Associativity, evaluated at its three module basis vectors, gives
+\[
+ f(ab,c)f(a,b)=f(a,bc),\qquad
+ g(ab,c)=g(a,bc)g(b,c).
+\]
+Set \(h(t)=f(1,t)\in\Z[t,t^{-1}]\).
+The first equation gives \(f(b,c)h(b)=h(bc)\);
+putting \(c=b^{-1}\) shows that \(h\) is a Laurent unit with
+\(h(1)=1\). Hence \(h=t^k\) for an integer \(k\), and
+\[
+ f(a,b)=(ab)^ka^{-k}.
+\]
+Only the units of the ordinary cyclic Laurent ring are used:
+highest and lowest powers in a product show that a unit is
+\(\pm t^k\). Likewise, using \(q(t)=g(t,1)\), the second equation gives
+\[
+ g(a,b)=(ab)^lb^{-l}
+\]
+for an integer \(l\).
+Map (b) to the free abelian quotient, with variables \(X,Y\).
+It becomes
+\[
+ Y^k(X-1)+X^l(Y-1)=XY-1.
+\]
+Differentiate in \(X\) and set \(X=1\), obtaining
+\(Y^k=l+(1-l)Y\).
+Coefficient comparison gives exactly \((k,l)=(0,1)\) or \((1,0)\).
+
+In the first case \(f=1,g=a\), the affine coefficients of \(xy\).
+Apply the kernel model to \(F(x,y)\) with \(N=F^{(d-1)}\):
+equality of affine values proves \(w=xy\) modulo \(F^{(d)}\).
+In the second case \(f=aba^{-1},g=1\); equation (b) forces
+\(aba^{-1}=b\) in \(Q\).
+For \(d\ge3\), \(Q\) maps onto the nonabelian metabelian group \(S_3\),
+so this is impossible. For \(d=2\), \(Q\) is abelian and these are
+exactly the affine coefficients and scalar coordinate of \(yx\).
+The same kernel model gives \(w=yx\).
+Undoing any initial reversal proves the induction.
+
+We finish the categorical reduction explicitly.
+Rank one is recognized by its infinite commutative endomorphism
+monoid: rank zero has a one-element monoid, and ranks at least two
+have noncommuting basis projection and interchange endomorphisms.
+Coproducts of rank-one objects then recognize every finite rank.
+Conjugate the given functor by chosen object isomorphisms to fix
+objects, and by basis automorphisms to fix the maps
+\(\iota_i:F_1\to F_n\) selecting the basis. Their images form a
+coproduct diagram and hence a free basis, justifying the second step.
+At \(F_1\) this normalization is the identity.
+
+For \(a\in F_n\), let \(f_a:F_1\to F_n\) send the generator to \(a\),
+and set \(s_n(a)=\Psi(f_a)(x)\).
+These are bijections fixing the basis and identity.
+Functoriality gives, for every homomorphism \(u:F_n\to F_m\),
+\[
+ \Psi(u)=s_mus_n^{-1}.
+\]
+With \(w=s_2(xy)\), it also gives
+\(s_n(ab)=w(s_n(a),s_n(b))\).
+Thus \(w\) transports a group law and is normalized associative on
+all free objects, hence throughout \(\mathcal S_d\).
+The word result applies.
+If \(w=xy\), every \(s_n\) is a basis-fixing homomorphism and is
+the identity. If \(w=yx\), let \(\eta_n\) invert each basis generator
+as an ordinary automorphism, and let \(j_n\) be the inversion set map.
+Then \(s_n=j_n\eta_n\).
+Every group homomorphism commutes with the inversion maps, so
+\(\Psi(u)=\eta_mu\eta_n^{-1}\), an inner functor.
+Undoing the earlier object and basis conjugations supplies a natural
+isomorphism for the original functor on every object and morphism.
+The argument works equally with all named free objects or a skeleton;
+rank zero contributes its unique maps.
+The affine kernel model is the classical Magnus method, proved here
+from graph homology. No general group-ring unit theorem or classification
+of automorphisms of free soluble groups is imported.
+See \artifact{research/15.76-proof.md}.
